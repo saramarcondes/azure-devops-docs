@@ -91,11 +91,11 @@ The **tf rollback** command negates the effect of each changeset that you specif
 
 The following list provides some examples of changes that result from the rollback command:
 
-* If you are rolling back a changeset in which an **add** change occurred, the rollback operation causes a **rollback** change and a **delete** change.
+- If you are rolling back a changeset in which an **add** change occurred, the rollback operation causes a **rollback** change and a **delete** change.
 
-* If you are rolling back changeset 521 in which an **edit** change occurred, the rollback operation causes a **rollback** change and an **edit** change that negates the changes encompassed by the **edit** change in changeset 521.
+- If you are rolling back changeset 521 in which an **edit** change occurred, the rollback operation causes a **rollback** change and an **edit** change that negates the changes encompassed by the **edit** change in changeset 521.
 
-* In changeset 132, you merged from **$/BranchA/File1.txt** to **$/BranchB/File1.txt**. The changes included in that merge included **edit** changes in changesets 92 and 104. In changeset 162, you roll back changeset 132, which results in a **rollback** change and an **edit** change to **$/BranchB/File1.txt** that negates the edit changes in changesets 92 and 104.
+- In changeset 132, you merged from **\$/BranchA/File1.txt** to **\$/BranchB/File1.txt**. The changes included in that merge included **edit** changes in changesets 92 and 104. In changeset 162, you roll back changeset 132, which results in a **rollback** change and an **edit** change to **\$/BranchB/File1.txt** that negates the edit changes in changesets 92 and 104.
 
 ### Exit Codes
 
@@ -139,7 +139,7 @@ When you roll back a changeset that includes a branch or a merge change, you usu
 
 For example, you can use this command in the following situation:
 
-1.  In On June 30, 2009, you perform a full merge of all items from **$/BranchA/** to **$/BranchB/**:
+1.  In On June 30, 2009, you perform a full merge of all items from **\$/BranchA/** to **\$/BranchB/**:
 
     ```
     c:\workspace> tf merge $/BranchA $/BranchB
@@ -147,39 +147,39 @@ For example, you can use this command in the following situation:
 
     You check in this merge as part of changeset 292.
 
-2.  In July, you make several changes **$/BranchA/Util.cs**. These changes are encompassed in changesets 297, 301, and 305.
+2.  In July, you make several changes **\$/BranchA/Util.cs**. These changes are encompassed in changesets 297, 301, and 305.
 
-3.  On August 1, 2009, you merge **$/BranchA/Util.cs** to **$/BranchB/Util.cs**:
+3.  On August 1, 2009, you merge **\$/BranchA/Util.cs** to **\$/BranchB/Util.cs**:
 
     ```
     c:\workspace> tf merge $/BranchA/Util.cs $/BranchB/Util.cs
     ```
 
-    You check in the change as part of changeset 314. The result of this operation is that the edits that you made in changesets 297, 301, and 305 to **$/BranchA/Util.cs** are now also applied to **$/BranchB/Util.cs**.
+    You check in the change as part of changeset 314. The result of this operation is that the edits that you made in changesets 297, 301, and 305 to **\$/BranchA/Util.cs** are now also applied to **\$/BranchB/Util.cs**.
 
-4.  A week later, you realize that the edits that you made to **$/BranchA/Util.cs** in July are not appropriate for **$/BranchB/Util.cs**. You can use the rollback command to negate these changes. When you use the rollback command to roll back a **merge** change or a **branch** change, you have a decision to make.
+4.  A week later, you realize that the edits that you made to **\$/BranchA/Util.cs** in July are not appropriate for **\$/BranchB/Util.cs**. You can use the rollback command to negate these changes. When you use the rollback command to roll back a **merge** change or a **branch** change, you have a decision to make.
 
-    * If you want the changes that you made in July to **$/BranchA/Util.cs** to be re-applied to **$/BranchB/Util.cs** in future merges, you should type the following command:
+    - If you want the changes that you made in July to **\$/BranchA/Util.cs** to be re-applied to **\$/BranchB/Util.cs** in future merges, you should type the following command:
 
       ```
       c:\workspace> tf rollback /changeset:314
       ```
 
-    * If you want the changes that you made in July to **$/BranchA/Util.cs** to never be re-applied to **$/BranchB/Util.cs** in future merges, you should type the following command:
+    - If you want the changes that you made in July to **\$/BranchA/Util.cs** to never be re-applied to **\$/BranchB/Util.cs** in future merges, you should type the following command:
 
       ```
       c:\workspace> tf rollback /changeset:314 /keepmergehistory
       ```
 
-5.  A few weeks later, you merge **$/BranchA/** into **$/BranchB/**:
+5.  A few weeks later, you merge **\$/BranchA/** into **\$/BranchB/**:
 
     ```
     c:\workspace> tf merge $/BranchA $/BranchB
     ```
 
-    * If you omitted the **/keepmergehistory** option, the **merge** change will apply to **$/BranchB/Util.cs** all changesets that were applied to **$/BranchA/Util.cs** since changeset 292, including changesets 297, 301, 305. In other words, a future merge will undo the **rollback** change.
+    - If you omitted the **/keepmergehistory** option, the **merge** change will apply to **\$/BranchB/Util.cs** all changesets that were applied to **\$/BranchA/Util.cs** since changeset 292, including changesets 297, 301, 305. In other words, a future merge will undo the **rollback** change.
 
-    * If you included the **/keepmergehistory** option, the merge operation will apply to **$/BranchB/Util.cs** all changesets that were applied to **$/BranchA/Util.cs** since changeset 292, excluding changesets 297, 301, and 305. In other words, a future merge will not undo the rollback change. Therefore, the content on **BranchA** might not match the content on **BranchB**.
+    - If you included the **/keepmergehistory** option, the merge operation will apply to **\$/BranchB/Util.cs** all changesets that were applied to **\$/BranchA/Util.cs** since changeset 292, excluding changesets 297, 301, and 305. In other words, a future merge will not undo the rollback change. Therefore, the content on **BranchA** might not match the content on **BranchB**.
 
 ## See Also
 

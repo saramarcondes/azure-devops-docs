@@ -16,8 +16,8 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Members
 
-* `error`: string.
+- `error`: string.
 
-* `responses`: [Response](../../../TFS/TestManagement/Contracts/Response.md)[].
+- `responses`: [Response](../../../TFS/TestManagement/Contracts/Response.md)[].
 
-* `status`: string.
+- `status`: string.

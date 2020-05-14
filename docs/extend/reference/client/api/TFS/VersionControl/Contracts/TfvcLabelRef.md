@@ -15,18 +15,18 @@ Module path: `TFS/VersionControl/Contracts`
 
 ### Members
 
-* `_links`: any.
+- `_links`: any.
 
-* `description`: string.
+- `description`: string.
 
-* `id`: number.
+- `id`: number.
 
-* `labelScope`: string.
+- `labelScope`: string.
 
-* `modifiedDate`: Date.
+- `modifiedDate`: Date.
 
-* `name`: string.
+- `name`: string.
 
-* `owner`: [VSS_Common_Contracts.IdentityRef](../../../VSS/WebApi/Contracts/IdentityRef.md).
+- `owner`: [VSS_Common_Contracts.IdentityRef](../../../VSS/WebApi/Contracts/IdentityRef.md).
 
-* `url`: string.
+- `url`: string.

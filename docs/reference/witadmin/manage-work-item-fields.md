@@ -17,20 +17,20 @@ ms.date: 03/20/2018
 
 You can manage the fields defined for work item types (WITs) that are defined for a project collection (On-premises XML) by using the following **witadmin** commands. If you want to add a global field (valid for On-premises XML) you can do so by [modifying the global workflow file](../xml/global-workflow-xml-element-reference.md) and [importing it to the collection](witadmin-import-export-global-workflow.md).
 
-* **changefield**: Changes one or more attributes of a field. When you change one of the following attributes, you change it for all work item types and projects within the project collection:
+- **changefield**: Changes one or more attributes of a field. When you change one of the following attributes, you change it for all work item types and projects within the project collection:
 
-  * **Data type** for `PlainText` or `HTML` fields.
+  - **Data type** for `PlainText` or `HTML` fields.
 
     > [!IMPORTANT]  
     >  When you upgrade Team Foundation Server from an earlier version to the current version, the type assignment for the **Description** (System.Description) field is automatically converted from `PlainText` to `HTML`. With the `changefield` command, you can restore the content of this field to display plain text.
 
-  * **Friendly name** that displays in the work item query. This name may differ from that displayed on the work item form.
-  * **Reporting attributes** which includes the name of the field as it appears in a report, the reference report name, and the reporting type.
-  * **Synchronization** with Active Directory - you can enable/disable synchronization of person name fields.
+  - **Friendly name** that displays in the work item query. This name may differ from that displayed on the work item form.
+  - **Reporting attributes** which includes the name of the field as it appears in a report, the reference report name, and the reporting type.
+  - **Synchronization** with Active Directory - you can enable/disable synchronization of person name fields.
 
-* **deletefield**: Deletes the specified field.
-* **indexfield**: Turns indexing on or off for the specified field. When you enable indexing for a field, you may increase the performance of finding work items whose queries specify that field. If you add a custom field that you use in many of your work item queries, you may want to enable indexing for that field.
-* **listfields**: Lists the attributes for all fields or a specified field.
+- **deletefield**: Deletes the specified field.
+- **indexfield**: Turns indexing on or off for the specified field. When you enable indexing for a field, you may increase the performance of finding work items whose queries specify that field. If you add a custom field that you use in many of your work item queries, you may want to enable indexing for that field.
+- **listfields**: Lists the attributes for all fields or a specified field.
 
 [!INCLUDE [temp](../../includes/witadmin-run-tool.md)]
 
@@ -40,8 +40,8 @@ For an overview of the fields defined within a default process template, see [Wo
 
 ## Prerequisites
 
-* To list fields, you must have your **View project-level information** permission for the project in the collection set to **Allow**.
-* To delete or rename fields or change an attribute of a field, you must be a member of the **Team Foundation Administrators** security group or the **Project Collection Administrators** security group.
+- To list fields, you must have your **View project-level information** permission for the project in the collection set to **Allow**.
+- To delete or rename fields or change an attribute of a field, you must be a member of the **Team Foundation Administrators** security group or the **Project Collection Administrators** security group.
 
 For more information, see [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md).
 
@@ -51,13 +51,13 @@ For more information, see [Add an administrator](../../organizations/security/se
 ## Syntax
 
 ```
-witadmin changefield /collection:CollectionURL /n:RefName   [/name:NewName]    [/syncnamechanges:true | false]   [/reportingname:ReportingName]    [/reportingrefname:ReportingRefName]   [/reportingtype:Type]   [/reportingformula:Formula]   [/type:PlainText | HTML]   [/noprompt]  
+witadmin changefield /collection:CollectionURL /n:RefName   [/name:NewName]    [/syncnamechanges:true | false]   [/reportingname:ReportingName]    [/reportingrefname:ReportingRefName]   [/reportingtype:Type]   [/reportingformula:Formula]   [/type:PlainText | HTML]   [/noprompt]
 
-witadmin deletefield /collection:CollectionURL /n:RefName [/noprompt]  
+witadmin deletefield /collection:CollectionURL /n:RefName [/noprompt]
 
 witadmin indexfield /collection:CollectionURL /n:Name /index:on|off
 
-witadmin listfields /collection:CollectionURL /n:RefName [/unused]  
+witadmin listfields /collection:CollectionURL /n:RefName [/unused]
 ```
 
 ### Parameters
@@ -94,9 +94,9 @@ After synchronization is enabled, the field no longer shows a static string. Ins
 
 When you assign the `syncnamechanges` attribute to a String field, the field always accepts valid user names. However, the field does not allow group names that are stored in Team Foundation Server or in Active Directory if any one of the following conditions is `true`:
 
-* The `VALIDUSER` rule is specified across all work item types
-* The `VALIDUSER` rule is specified for a work item type
-* The `ALLOWEDVALUES` rule is specified for a work item type, and that rule has a filter criteria that excludes groups
+- The `VALIDUSER` rule is specified across all work item types
+- The `VALIDUSER` rule is specified for a work item type
+- The `ALLOWEDVALUES` rule is specified for a work item type, and that rule has a filter criteria that excludes groups
 
   For more information, see [All FIELD elements](../xml/field-definition-element-reference.md).
 
@@ -104,17 +104,17 @@ When you assign the `syncnamechanges` attribute to a String field, the field alw
 
 You change the following attributes or values defined for a field by changing the work item type definition in which the field appears:
 
-* **Name** that displays on the work item form. See [WebLayout and Control elements](../xml/weblayout-xml-elements.md) or [Control XML element reference](../xml/control-xml-element-reference.md).
-* **Help text**. See [Apply a field rule](../xml/apply-rule-work-item-field.md).
-* **Allowed values** or items within a pick list or drop-down menu. See [ALLOWEDVALUES, SUGGESTEDVALUES, and PROHIBITEDVALUES XML elements](../xml/define-pick-lists.md).
+- **Name** that displays on the work item form. See [WebLayout and Control elements](../xml/weblayout-xml-elements.md) or [Control XML element reference](../xml/control-xml-element-reference.md).
+- **Help text**. See [Apply a field rule](../xml/apply-rule-work-item-field.md).
+- **Allowed values** or items within a pick list or drop-down menu. See [ALLOWEDVALUES, SUGGESTEDVALUES, and PROHIBITEDVALUES XML elements](../xml/define-pick-lists.md).
 
 ## Examples
 
 Unless otherwise specified, the following values apply in each example:
 
-* URI for the project collection: http://AdventureWorksServer:8080/tfs/DefaultCollection
-* Work item field name: AdventureWorks.Field
-* Default encoding: UTF-8
+- URI for the project collection: http://AdventureWorksServer:8080/tfs/DefaultCollection
+- Work item field name: AdventureWorks.Field
+- Default encoding: UTF-8
 
 ### List fields
 
@@ -122,66 +122,66 @@ Use **witadmin listfields** to see the set of fields in use, to select one to ad
 
 ### View the attributes of a work item field
 
-* Enter the following command to list the attributes defined for a specified field, such as Microsoft.VSTS.Common.Issue.
+- Enter the following command to list the attributes defined for a specified field, such as Microsoft.VSTS.Common.Issue.
 
   ```
-  witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:Microsoft.VSTS.Common.Issue  
+  witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:Microsoft.VSTS.Common.Issue
   ```
 
   Field and attribute information appears for the named field, as shown in this example.
 
   ```
-  Field: Microsoft.VSTS.Common.Issue  
-  Name: Issue  
-  Type: String  
-  Reportable As: dimension  
-  Use: Adventure Works (Shared Steps), AW Future (Shared Steps), AW Current (Shared Steps)  
-  Indexed: False  
+  Field: Microsoft.VSTS.Common.Issue
+  Name: Issue
+  Type: String
+  Reportable As: dimension
+  Use: Adventure Works (Shared Steps), AW Future (Shared Steps), AW Current (Shared Steps)
+  Indexed: False
   ```
 
   The **Use** parameter indicates the name of each project and the work item type where the field is used. For more information about field attributes, see [Index of work item fields](../../boards/work-items/guidance/work-item-field.md).
 
 ### List all fields in a project collection
 
-* Enter the following command to list all fields defined for a project collection.
+- Enter the following command to list all fields defined for a project collection.
 
   ```
-  witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection  
+  witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection
   ```
 
   Field information for all the fields for the named project collection appears. See [Index of work item fields](../../boards/work-items/guidance/work-item-field.md).
 
 ### List fields that are not being used
 
-* Enter the following command to list the fields that are no longer being used in the project collection by any work item type.
+- Enter the following command to list the fields that are no longer being used in the project collection by any work item type.
 
   ```
-  witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /unused  
+  witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /unused
   ```
 
   Field and attribute information appears for each field that is not being used, as shown in this example.
 
   ```
-  Field: Microsoft.VSTS.CMMI.TaskType  
-  Name: Task Type  
-  Type: String  
-  Reportable As: dimension  
-  Use: Not In Use  
-  Indexed: False  
+  Field: Microsoft.VSTS.CMMI.TaskType
+  Name: Task Type
+  Type: String
+  Reportable As: dimension
+  Use: Not In Use
+  Indexed: False
 
-  Field: Microsoft.VSTSUE.Common.Flag  
-  Name: Flag  
-  Type: String  
-  Reportable As: dimension  
-  Use: Not In Use  
-  Indexed: False  
+  Field: Microsoft.VSTSUE.Common.Flag
+  Name: Flag
+  Type: String
+  Reportable As: dimension
+  Use: Not In Use
+  Indexed: False
 
-  Field: Microsoft.VSTSUE.Common.Progress  
-  Name: Progress  
-  Type: String  
-  Reportable As: dimension  
-  Use: Not In Use  
-  Indexed: False  
+  Field: Microsoft.VSTSUE.Common.Progress
+  Name: Progress
+  Type: String
+  Reportable As: dimension
+  Use: Not In Use
+  Indexed: False
   ```
 
 ### Rename a field
@@ -193,7 +193,7 @@ You can change the friendly name of a work item field to meet the naming convent
 1.  Enter the following command to rename the friendly name assigned to `Microsoft.VSTS.Common.Rank` to **Important Rank**.
 
     ```
-    witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:Microsoft.VSTS.Common.Rank /name:"Important Rank"  
+    witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:Microsoft.VSTS.Common.Rank /name:"Important Rank"
     ```
 
 2.  At the confirmation prompt type **y** and then press ENTER. Wait until you receive the following message:
@@ -242,13 +242,13 @@ You can change the friendly name of a work item field to meet the naming convent
 The following command specifies the ability to report the type of the DateTime field AdventureWorks.CreatedOn to dimension. This field's data enters the warehouse and Analysis Services databases so that it can be used to filter reports.
 
 ```
-witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:AdventureWorks.CreatedOn /reportingtype:dimension  
+witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:AdventureWorks.CreatedOn /reportingtype:dimension
 ```
 
 The following command specifies the ability to report the type of the Double field AdventureWorks.Field to measure. All measures are aggregated by sum.
 
 ```
-witadmin reportfield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:AdventureWorks.Field /reportingtype:measure  
+witadmin reportfield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:AdventureWorks.Field /reportingtype:measure
 ```
 
 ### Enable synchronization of a custom person-name field
@@ -260,7 +260,7 @@ The following command enables synchronization for the work item field AW.Custome
 1.  Verify the data type assigned to the field, such as MyCompany.CustomerName, that you want to synchronize by entering the following command:
 
     ```
-    witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:MyCompany.CustomerName  
+    witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:MyCompany.CustomerName
     ```
 
 #### Enable synchronization
@@ -268,7 +268,7 @@ The following command enables synchronization for the work item field AW.Custome
 1.  To enable synchronization for a person-named field, type the following command, substituting your data for the arguments that are shown here:
 
     ```
-    witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:MyCompany.CustomerName /syncnamechanges:true  
+    witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:MyCompany.CustomerName /syncnamechanges:true
     ```
 
 2.  The following confirmation prompt appears:
@@ -288,7 +288,7 @@ The following command enables synchronization for the work item field AW.Custome
 Before you delete a field, verify that the field is not in use. If the field is in use, you must first remove the field from the work item types that use it prior to deleting it from the project collection. The following command deletes the field AdventureWorks.Field from Collection1:
 
 ```
-witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:AdventureWorks.Field  
+witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:AdventureWorks.Field
 ```
 
 #### Verify a field is not in use
@@ -296,29 +296,29 @@ witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCol
 1.  Enter the following command, specifying the reference name for the work item field, such as MyCompany.MyProcess.MyField.
 
     ```
-    witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:MyCompany.MyProcess.MyField  
+    witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:MyCompany.MyProcess.MyField
     ```
 
     In the information displayed for the field, verify that the value for **Use** is "**Not In Use**" as follows in this example.
 
     ```
-    Field: MyCompany.MyProcess.MyField  
-    Name: MyField  
-    Type: String  
-    Reportable As: dimension  
-    Use: Not In Use  
-    Indexed: False  
+    Field: MyCompany.MyProcess.MyField
+    Name: MyField
+    Type: String
+    Reportable As: dimension
+    Use: Not In Use
+    Indexed: False
     ```
 
 2.  If the **Use** field indicates that the field is in use, then you must delete it from each work item type for each project that is listed. For example, the Microsoft.VSTS.TCM.SystemInfo field indicates that it is being used by the Bug and Code Defect work item types for four projects: Arroyo, Desert, Palm, and Springs.
 
     ```
-    Field: Microsoft.VSTS.TCM.SystemInfo  
-    Name: System Info  
-    Type: Html  
-    Reportable As: None  
-    Use: Arroyo (Bug), Desert (Bug), Palm (Bug), Springs (Bug, Code Defect)  
-    Indexed: False  
+    Field: Microsoft.VSTS.TCM.SystemInfo
+    Name: System Info
+    Type: Html
+    Reportable As: None
+    Use: Arroyo (Bug), Desert (Bug), Palm (Bug), Springs (Bug, Code Defect)
+    Indexed: False
     ```
 
     Before you can delete this field, you must remove it from each of the work item types listed for each project for which it is defined. To remove the field, you modify the definition for the work item type by deleting the `FIELD` and `Control` elements that contain the field reference name. See [Import, export, and manage work item types](witadmin-import-export-manage-wits.md), [FIELD (Definition) element reference](../xml/field-definition-element-reference.md), and [Control](../xml/control-xml-element-reference.md).
@@ -328,7 +328,7 @@ witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCol
 Enter the following command to delete the MyCompany.MyProcess.MyField field, and then choose Enter.
 
 ```
-witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:RefName  
+witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:RefName
 ```
 
 Enter **y** at the confirmation prompt to complete this step.
@@ -343,6 +343,6 @@ Changing field attributes is not recommended. To learn about which customization
 
 ## Related articles
 
-* [Customizing your work tracking experience](../customize-work.md)
-* [Work item field index](../../boards/work-items/guidance/work-item-field.md)
-* [witAdmin: Customize and manage objects for tracking work](witadmin-customize-and-manage-objects-for-tracking-work.md)
+- [Customizing your work tracking experience](../customize-work.md)
+- [Work item field index](../../boards/work-items/guidance/work-item-field.md)
+- [witAdmin: Customize and manage objects for tracking work](witadmin-customize-and-manage-objects-for-tracking-work.md)

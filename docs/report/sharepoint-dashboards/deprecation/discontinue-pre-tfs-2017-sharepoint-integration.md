@@ -28,9 +28,9 @@ As we reposition to the future, our integration story will support both Azure De
 
 Discontinuing support for the TFS Extension for SharePoint removes support for the following three features:
 
-* Creation of a team project will no longer support creation of a SharePoint portal
-* The TFS Web Parts on Classic SharePoint sites
-* The Documents pane within Team Explorer
+- Creation of a team project will no longer support creation of a SharePoint portal
+- The TFS Web Parts on Classic SharePoint sites
+- The Documents pane within Team Explorer
 
 For a detailed description and suggested replacements, read [Features removed when disabling SharePoint integration](./features-removed-when-disabling-sharepoint-integration.md)
 

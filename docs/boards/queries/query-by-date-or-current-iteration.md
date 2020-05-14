@@ -418,9 +418,9 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 1.  For these fields to be defined for a WIT, they must be included in the `WORKFLOW` section of the WIT definition. For example, this syntax is included within the `FIELDS` definition when transitioning to a Resolved state:
 
     ```xml
-    <FIELD refname="Microsoft.VSTS.Common.ResolvedDate" />  
-       <SERVERDEFAULT from="clock"  />  
-    </FIELD >  
+    <FIELD refname="Microsoft.VSTS.Common.ResolvedDate" />
+       <SERVERDEFAULT from="clock"  />
+    </FIELD >
     ```
 
 1.  Start and Finish Date fields are calculated if you create a project plan in Microsoft Project and then synchronize that plan with tasks that are stored in Azure Boards. These fields do not appear on the work item form, but they are calculated for those backlog items and tasks that are linked to backlog items. You can view their read-only values in results from a query or from Microsoft Excel or Project. For more information, see [Create your backlog and tasks using Project](../backlogs/office/create-your-backlog-tasks-using-project.md).
@@ -432,10 +432,10 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 
 You can use the <strong>@CurrentIteration</strong> in a query from the following clients:
 
-* Web portal that connects to Azure Boards
-* Web portal that connects to an on-premises Azure DevOps 2015 or later version
-* Visual Studio 2015 or Team Explorer 2015 or later versions connected to Azure Boards or TFS 2015 or later versions.
-* Using the REST API
+- Web portal that connects to Azure Boards
+- Web portal that connects to an on-premises Azure DevOps 2015 or later version
+- Visual Studio 2015 or Team Explorer 2015 or later versions connected to Azure Boards or TFS 2015 or later versions.
+- Using the REST API
 
 You can use the <b>@CurrentIteration +/- <i>n</i></b> macro in a query against Azure Boards, Azure DevOps Server 2019 and later versions, and with a REST API which includes the team as a parameter, for example, `@CurrentIteration('[Project]/Team')`.
 
@@ -445,12 +445,12 @@ An error occurs if you open a query that contains the <strong>@CurrentIteration<
 
 To query for items based on text entered in the History field, see [History and auditing](history-and-auditing.md).
 
-* [Query by assignment or workflow changes](query-by-workflow-changes.md)
-* [Query quick reference](query-index-quick-ref.md)
-* [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
-* [Create managed queries with the query editor](using-queries.md)
-* [Query operators & macros](query-operators-variables.md)
-* [Work item field index](../work-items/guidance/work-item-field.md)
-* [Query permissions](set-query-permissions.md)
+- [Query by assignment or workflow changes](query-by-workflow-changes.md)
+- [Query quick reference](query-index-quick-ref.md)
+- [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
+- [Create managed queries with the query editor](using-queries.md)
+- [Query operators & macros](query-operators-variables.md)
+- [Work item field index](../work-items/guidance/work-item-field.md)
+- [Query permissions](set-query-permissions.md)
 
 [!INCLUDE [temp](../includes/rest-apis-queries.md)]

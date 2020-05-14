@@ -39,8 +39,8 @@ Artifacts can be published at any stage of pipeline. You can use two methods for
     artifactName: drop
 ```
 
-* **pathToPublish**: the folder or file path to publish. It can be an absolute or a relative path, and wildcards are not supported.
-* **artifactName**: the name of the artifact that you want to create.
+- **pathToPublish**: the folder or file path to publish. It can be an absolute or a relative path, and wildcards are not supported.
+- **artifactName**: the name of the artifact that you want to create.
 
 ::: moniker-end
 
@@ -55,19 +55,19 @@ YAML is not supported in TFS.
 
 ![icon](../tasks/utility/media/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
 
-* Path to publish:
+- Path to publish:
 
   ```
   $(Build.SourcesDirectory)/environment-variables.txt
   ```
 
-* Artifact name:
+- Artifact name:
 
   ```
   drop
   ```
 
-* Artifact publish location: Azure Pipelines/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
+- Artifact publish location: Azure Pipelines/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
 
 ---
 
@@ -90,8 +90,8 @@ YAML is not supported in TFS.
     artifactName: drop2
 ```
 
-* **pathToPublish**: the folder or file path to publish. It can be an absolute or a relative path, and wildcards are not supported.
-* **artifactName**: the name of the artifact that you want to create.
+- **pathToPublish**: the folder or file path to publish. It can be an absolute or a relative path, and wildcards are not supported.
+- **artifactName**: the name of the artifact that you want to create.
 
 ::: moniker-end
 
@@ -105,35 +105,35 @@ You can create multiple artifact items. For example:
 
 ![icon](../tasks/utility/media/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
 
-* Path to publish:
+- Path to publish:
 
   ```
   $(Build.SourcesDirectory)/environment-variables.txt
   ```
 
-* Artifact name:
+- Artifact name:
 
   ```
   drop1
   ```
 
-* Artifact publish location: Azure Pipelines/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
+- Artifact publish location: Azure Pipelines/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
 
 ![icon](../tasks/utility/media/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
 
-* Path to publish:
+- Path to publish:
 
   ```
   $(Build.SourcesDirectory)/environment-variables.txt
   ```
 
-* Artifact name:
+- Artifact name:
 
   ```
   drop2
   ```
 
-* Artifact publish location: Azure Pipelines/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
+- Artifact publish location: Azure Pipelines/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
 
 The completed build delivers two sets of artifacts.
 
@@ -163,11 +163,11 @@ The completed build delivers two sets of artifacts.
     artifactName: drop
 ```
 
-* **sourceFolder**: the folder that contains the files you want to copy. If you leave this value empty, copying will be done from the root folder of your repo (`$(Build.SourcesDirectory)`).
-* **contents**: location(s) of the file(s) that will be copied to the destination folder.
-* **targetFolder**: destination folder.
-* **pathToPublish**: the folder or file path to publish. It can be an absolute or a relative path, and wildcards are not supported.
-* **artifactName**: the name of the artifact that you want to create.
+- **sourceFolder**: the folder that contains the files you want to copy. If you leave this value empty, copying will be done from the root folder of your repo (`$(Build.SourcesDirectory)`).
+- **contents**: location(s) of the file(s) that will be copied to the destination folder.
+- **targetFolder**: destination folder.
+- **pathToPublish**: the folder or file path to publish. It can be an absolute or a relative path, and wildcards are not supported.
+- **artifactName**: the name of the artifact that you want to create.
 
 ::: moniker-end
 
@@ -179,19 +179,19 @@ YAML is not supported in TFS.
 
 ![icon](../tasks/utility/media/copy-files.png) **Utility: Copy Files**
 
-* Source folder:
+- Source folder:
 
   ```
   $(Build.SourcesDirectory)
   ```
 
-* Contents:
+- Contents:
 
   ```
   /$(BuildConfiguration)//?(*.exe|*.dll|*.pdb)
   ```
 
-* Target folder:
+- Target folder:
 
   ```
   $(Build.ArtifactStagingDirectory)
@@ -199,19 +199,19 @@ YAML is not supported in TFS.
 
 ![icon](../tasks/utility/media/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
 
-* Path to publish:
+- Path to publish:
 
   ```
   $(Build.ArtifactStagingDirectory)
   ```
 
-* Artifact name:
+- Artifact name:
 
   ```
   drop
   ```
 
-* Artifact publish location: Azure Pipelines/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
+- Artifact publish location: Azure Pipelines/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
 
 ---
 
@@ -244,10 +244,10 @@ You can download an artifact directly from a pipeline for use in debugging.
     downloadPath: '$(System.ArtifactsDirectory)'
 ```
 
-* **buildType**: specify which build artifacts will be downloaded: `current` (the default value) or from a specific build.
-* **downloadType**: choose whether to download a single artifact or all artifacts of a specific build.
-* **artifactName**: the name of the artifact that will be downloaded.
-* **downloadPath**: path on the agent machine where the artifacts will be downloaded.
+- **buildType**: specify which build artifacts will be downloaded: `current` (the default value) or from a specific build.
+- **downloadType**: choose whether to download a single artifact or all artifacts of a specific build.
+- **artifactName**: the name of the artifact that will be downloaded.
+- **downloadPath**: path on the agent machine where the artifacts will be downloaded.
 
 ::: moniker-end
 
@@ -259,17 +259,17 @@ YAML is not supported in TFS.
 
 ![icon](../tasks/utility/media/downloadbuildartifacts.png) **Utility: Download Build Artifacts**
 
-* Download artifacts produced by: Current build
+- Download artifacts produced by: Current build
 
-* Download type: Specific artifact
+- Download type: Specific artifact
 
-* Artifact name:
+- Artifact name:
 
   ```
   drop
   ```
 
-* Destination directory:
+- Destination directory:
 
   ```
   $(System.ArtifactsDirectory)
@@ -282,25 +282,25 @@ YAML is not supported in TFS.
 
 ## Tips
 
-* **Artifact publish location** argument: **Azure Pipelines/TFS** (**TFS 2018 RTM and older**: Artifact type: Server) is the best and simplest choice in most cases. This choice causes the artifacts to be stored in Azure Pipelines or TFS. But if you're using a private Windows agent, you've got the option to [drop to a UNC file share](#unc-file-share).
+- **Artifact publish location** argument: **Azure Pipelines/TFS** (**TFS 2018 RTM and older**: Artifact type: Server) is the best and simplest choice in most cases. This choice causes the artifacts to be stored in Azure Pipelines or TFS. But if you're using a private Windows agent, you've got the option to [drop to a UNC file share](#unc-file-share).
 
-* Use forward slashes in file path arguments so that they work for all agents. Backslashes don't work for macOS and Linux agents.
+- Use forward slashes in file path arguments so that they work for all agents. Backslashes don't work for macOS and Linux agents.
 
-* Build artifacts are stored on a Windows filesystem, which causes all UNIX permissions to be lost, including the execution bit. You might need to restore the correct UNIX permissions after downloading your artifacts from Azure Pipelines or TFS.
+- Build artifacts are stored on a Windows filesystem, which causes all UNIX permissions to be lost, including the execution bit. You might need to restore the correct UNIX permissions after downloading your artifacts from Azure Pipelines or TFS.
 
-* On Azure Pipelines and some versions of TFS, two different [variables](../build/variables.md) point to the staging directory: `Build.ArtifactStagingDirectory` and `Build.StagingDirectory`. These are interchangeable.
+- On Azure Pipelines and some versions of TFS, two different [variables](../build/variables.md) point to the staging directory: `Build.ArtifactStagingDirectory` and `Build.StagingDirectory`. These are interchangeable.
 
-* The directory referenced by `Build.ArtifactStagingDirectory` is cleaned up after each build.
+- The directory referenced by `Build.ArtifactStagingDirectory` is cleaned up after each build.
 
-* You can [get build artifacts from the REST API](/rest/api/vsts/build/artifacts).
+- You can [get build artifacts from the REST API](/rest/api/vsts/build/artifacts).
 
 ## Related tasks for publishing artifacts
 
 Use these tasks to publish artifacts:
 
-* ![icon](../tasks/utility/media/copy-files.png) [Utility: Copy Files](../tasks/utility/copy-files.md) By copying files to `$(Build.ArtifactStagingDirectory)`, you can publish multiple files of different types from different places specified by your [matching patterns](../tasks/file-matching-patterns.md).
-* ![icon](../tasks/utility/media/delete-files.png) [Utility: Delete Files](../tasks/utility/delete-files.md) You can prune unnecessary files that you copied to the staging directory.
-* ![icon](../tasks/utility/media/publish-build-artifacts.png) [Utility: Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md)
+- ![icon](../tasks/utility/media/copy-files.png) [Utility: Copy Files](../tasks/utility/copy-files.md) By copying files to `$(Build.ArtifactStagingDirectory)`, you can publish multiple files of different types from different places specified by your [matching patterns](../tasks/file-matching-patterns.md).
+- ![icon](../tasks/utility/media/delete-files.png) [Utility: Delete Files](../tasks/utility/delete-files.md) You can prune unnecessary files that you copied to the staging directory.
+- ![icon](../tasks/utility/media/publish-build-artifacts.png) [Utility: Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md)
 
 ## Explore, download, and deploy your artifacts
 
@@ -336,9 +336,9 @@ If you're using a private Windows agent, you can set the **artifact publish loca
 
 Choose **file share** to copy the artifact to a file share. Common reasons to do this:
 
-* The size of your drop is large and consumes too much time and bandwidth to copy.
+- The size of your drop is large and consumes too much time and bandwidth to copy.
 
-* You need to run some custom scripts or other tools against the artifact.
+- You need to run some custom scripts or other tools against the artifact.
 
 If you use a file share, specify the UNC file path to the folder. You can control how the folder is created for each build by using [variables](../build/variables.md). For example: `\\my\share\$(Build.DefinitionName)\$(Build.BuildNumber)`.
 

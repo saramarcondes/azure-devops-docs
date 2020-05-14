@@ -21,19 +21,19 @@ You set manual test permissions for area paths and at the project-level. You set
 
 ::: moniker range=">= tfs-2017"
 
-* **Object-level, Area path level**  
-   - Manage test plans - Manage test suites
-* **Project-level** - Manage test configurations - Manage test environments - Create test runs - Delete test runs
-* **Organization or collection-level** - Manage test controllers
+- **Object-level, Area path level**
+  - Manage test plans - Manage test suites
+- **Project-level** - Manage test configurations - Manage test environments - Create test runs - Delete test runs
+- **Organization or collection-level** - Manage test controllers
 
 ::: moniker-end
 
 ::: moniker range="< tfs-2017"
 
-* **Object-level, Area path level**  
-   - Manage test plans - Manage test suites
-* **Project-level** - Manage test configurations - Manage test environments - Create test runs
-* **Organization or collection-level** - Manage test controllers
+- **Object-level, Area path level**
+  - Manage test plans - Manage test suites
+- **Project-level** - Manage test configurations - Manage test environments - Create test runs
+- **Organization or collection-level** - Manage test controllers
 
 ::: moniker-end
 
@@ -156,7 +156,7 @@ In this example, we grant members assigned to the Team Collection Admin group pe
 
 ## Related articles
 
-* [Grant or restrict access](restrict-access.md)
-* [Permissions and access for work tracking](permissions-access-work-tracking.md)
-* [Set permissions and access for work tracking](set-permissions-access-work-tracking.md)
-* [Permissions and groups reference](permissions.md)
+- [Grant or restrict access](restrict-access.md)
+- [Permissions and access for work tracking](permissions-access-work-tracking.md)
+- [Set permissions and access for work tracking](set-permissions-access-work-tracking.md)
+- [Permissions and groups reference](permissions.md)

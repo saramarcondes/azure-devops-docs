@@ -24,17 +24,17 @@ The most common numeric fields track effort for items in the Requirements catego
 
 Query clauses that specify a numeric field can use the operators listed below.
 
-* = , <> , > , < , >= , <=
-* =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field]
-* In, Not In
-* Was Ever
+- = , <> , > , < , >= , <=
+- =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field]
+- In, Not In
+- Was Ever
 
 ## Tips for developing chart-based-queries:
 
-* You can only add charts for flat-list queries
-* Chart options reference either query filters or fields displayed through column options
-* Save changes you make to your query prior to adding or modifying a chart.
-* To group one or more clauses, select them and then choose the ![Group Query Clause icon](../media/icons/group-clauses-icon.png) group clauses icon. To ungroup, click on the grouped clause.
+- You can only add charts for flat-list queries
+- Chart options reference either query filters or fields displayed through column options
+- Save changes you make to your query prior to adding or modifying a chart.
+- To group one or more clauses, select them and then choose the ![Group Query Clause icon](../media/icons/group-clauses-icon.png) group clauses icon. To ungroup, click on the grouped clause.
 
 For additional details on creating queries and chart-based-queries, see [Use the query editor to list and manage queries](using-queries.md) and [Charts](../../report/dashboards/charts.md). If you want to add a custom field to track and generate sums of other numeric values, see [Add or modify a field](../../reference/add-modify-field.md).
 
@@ -79,7 +79,7 @@ Unestimated user stories
 <code>Story Points <em> &lt;&gt; </em> (leave Value field blank)</code><br/></td>
 </tr>
 </tbody>
-</table>  
+</table>
 
 <a id="counts"/>
 
@@ -196,7 +196,7 @@ Based on the process your project references, you can assign the following field
 
 If you follow Scrum practices and estimate Remaining Work for your tasks and bugs, you can get a roll up of the amount of work remaining for each developer with the following query and chart. By using the In operator and including both Task and Bug, you include any bugs that are being tracked as tasks.
 
-<img src="media/query-effort-tasks-bugs-list.png" alt="Query of tasks and bugs for sprint" style="border: 1px solid #C3C3C3;" />  
+<img src="media/query-effort-tasks-bugs-list.png" alt="Query of tasks and bugs for sprint" style="border: 1px solid #C3C3C3;" />
 
 Add Remaining Work as a column option to the query and save. To view a sum of the remaining work, add a pivot chart as shown.
 
@@ -337,19 +337,19 @@ For information on adding custom fields, see [Customize your work tracking exper
 
 The main tools you use to plan and track work are described here:
 
-* [Create your backlog](../backlogs/create-your-backlog.md)
-* [Sprint planning](../sprints/assign-work-sprint.md)
-* [Capacity planning](../sprints/set-capacity.md)
-* [Taskboard](../sprints/task-board.md)
-* [Kanban board](../boards/kanban-basics.md)
+- [Create your backlog](../backlogs/create-your-backlog.md)
+- [Sprint planning](../sprints/assign-work-sprint.md)
+- [Capacity planning](../sprints/set-capacity.md)
+- [Taskboard](../sprints/task-board.md)
+- [Kanban board](../boards/kanban-basics.md)
 
 For more information on using work items and queries, see:
 
-* [Query editor](using-queries.md)
-* [Query fields, operators, and macros](query-operators-variables.md)
-* [Add work items](../backlogs/add-work-items.md)
-* [Work item field index](../work-items/guidance/work-item-field.md)
-* [Create managed queries](example-queries.md)
+- [Query editor](using-queries.md)
+- [Query fields, operators, and macros](query-operators-variables.md)
+- [Add work items](../backlogs/add-work-items.md)
+- [Work item field index](../work-items/guidance/work-item-field.md)
+- [Create managed queries](example-queries.md)
 
 <a id="show-bugs"/>
 
@@ -359,9 +359,9 @@ For more information on using work items and queries, see:
 
 Rollup provides summed values of select fields for all child work items of a parent. Natively, Azure Boards and TFS provide rollup of Remaining Work for tasks on the taskboard. For other rollup requirements, see the following topics:
 
-* [Support rollup of work and other fields](../../reference/xml/support-rollup-of-work-and-other-fields.md)
-* [Rollup estimated and actual work using Project](../backlogs/office/rollup-estimated-and-actual-work-using-project.md)
-* [Create rollup charts with Power BI](../../report/powerbi/create-rollup-charts.md)
+- [Support rollup of work and other fields](../../reference/xml/support-rollup-of-work-and-other-fields.md)
+- [Rollup estimated and actual work using Project](../backlogs/office/rollup-estimated-and-actual-work-using-project.md)
+- [Create rollup charts with Power BI](../../report/powerbi/create-rollup-charts.md)
 
 <a id="category"/>
 

@@ -18,11 +18,11 @@ ms.date: 03/02/2020
 
 From your profile page, you can change your information and account preferences. In this article, learn how to complete the following tasks:
 
-* Change your picture
-* Change your display name
-* Change your preferred email
-* Change your directory
-* Change your locale settings - Locale settings include language, date and time pattern, time zone, and user interface theme.
+- Change your picture
+- Change your display name
+- Change your preferred email
+- Change your directory
+- Change your locale settings - Locale settings include language, date and time pattern, time zone, and user interface theme.
 
 > [!IMPORTANT]
 > You can't change your user interface theme in Azure DevOps if you're using Internet Explorer (IE).
@@ -66,10 +66,10 @@ From your profile page, you can change your information and account preferences.
 
 2.  From the **General** tab, you can change the following information:
 
-    * profile picture
-    * display name
-    * contact information
-    * whether borders appear for fields on work item forms
+    - profile picture
+    - display name
+    - contact information
+    - whether borders appear for fields on work item forms
 
       ```
       		![General user settings](media/general-user-settings-2019.png)
@@ -103,11 +103,11 @@ From your profile page, you can change your information and account preferences.
 
 4.  From the **Preferences** page, you can change the following information:
 
-    * preferred language
-    * date and time pattern
-    * time zone
-    * UI theme
-    * whether borders appear for fields on work item forms
+    - preferred language
+    - date and time pattern
+    - time zone
+    - UI theme
+    - whether borders appear for fields on work item forms
 
     > [!div class="mx-imgBorder"]  
     > ![Choose Edit ](../../media/settings/edit-profile-preferences-dialog.png)
@@ -116,9 +116,9 @@ From your profile page, you can change your information and account preferences.
 
 ## Related articles
 
-* [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md)
-* [Enable preview features](../../project/navigation/preview-features.md)
-* [Set favorites](../../notifications/howto-manage-personal-notifications.md)
+- [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md)
+- [Enable preview features](../../project/navigation/preview-features.md)
+- [Set favorites](../../notifications/howto-manage-personal-notifications.md)
 
 <!---
 <table width="80%">

@@ -39,26 +39,26 @@ This report is based on a PivotChart report that shows the most recent four week
 
 The system examines each configuration on which the Test Case was executed and tries to identify the predecessor result for the same configuration for the Test Case. The failure type that is assigned to the Test Case/configuration is determined based on the following criteria:
 
-* **Regression**: When the immediate predecessor result had an outcome of **Passed**.
+- **Regression**: When the immediate predecessor result had an outcome of **Passed**.
 
-* **New Issue**: When no immediate predecessor result can be found.
+- **New Issue**: When no immediate predecessor result can be found.
 
-* **Known Issue**: When the immediate predecessor result had an outcome of **Failed**.
+- **Known Issue**: When the immediate predecessor result had an outcome of **Failed**.
 
 ### Required activities for monitoring regressions
 
 For the Failure Analysis report to be useful and accurate, the team must perform the following activities:
 
-* Define Test Cases and Test Plans, and assign Test Cases to Test Plans.
+- Define Test Cases and Test Plans, and assign Test Cases to Test Plans.
 
-* For manual tests, mark the results of each validation step in the Test Case as passed or failed.
+- For manual tests, mark the results of each validation step in the Test Case as passed or failed.
 
   > [!IMPORTANT]
   > Testers must mark a test step with a status if it is a validation test step. The overall result for a Test Case reflects the status of all the test steps that the tester marked. Therefore, the Test Case will have a status of failed if the tester marked any test step as failed or not marked.
 
   For automated tests, each Test Case is automatically marked as passed or failed.
 
-* (Optional) To support filtering, assign **Iteration** and **Area** paths to each Test Case.
+- (Optional) To support filtering, assign **Iteration** and **Area** paths to each Test Case.
 
 <a name="Interpreting"></a>
 
@@ -66,11 +66,11 @@ For the Failure Analysis report to be useful and accurate, the team must perform
 
 You should expect the Failure Analysis report to vary depending on where you are in your product development cycle. Early iterations should show little, if any, regression activity. Later in the development cycle, you should expect some regressions. Specifically, you should review the report to find answers to the following questions:
 
-* How many tests overall are regressing?
+- How many tests overall are regressing?
 
-* Is the team keeping the overall number of regressions or test failures within expected ranges or team goals?
+- Is the team keeping the overall number of regressions or test failures within expected ranges or team goals?
 
-* Is the team addressing issues as they are identified? Are the known issues being addressed in a timely manner?
+- Is the team addressing issues as they are identified? Are the known issues being addressed in a timely manner?
 
   A healthy Failure Analysis report will show moderate numbers of new issues, known issues, and regressions. If spikes occur in one or more of these areas, the team might need to investigate further. Spikes may indicate problems in either the test activity or the quality of code that the team is checking in.
 
@@ -91,5 +91,5 @@ You can update the Failure Analysis report by opening it in Office Excel and cha
 
 ## Related articles
 
-* [Excel reports](excel-reports.md)
-* [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)
+- [Excel reports](excel-reports.md)
+- [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)

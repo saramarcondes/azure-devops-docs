@@ -38,25 +38,25 @@ If your team project was created using the Basic configuration, you won't have a
 
 Choose one of the following options based on your deployment configuration and team requirements:
 
-* [Determine if your team project portal is enabled](#portal_enabled).
+- [Determine if your team project portal is enabled](#portal_enabled).
 
   Choose this option if you're not sure if your team project is already configured.
 
-* [Configure a Web site for your portal](#simple).
+- [Configure a Web site for your portal](#simple).
 
   Choose this option if you want to use a website that doesn't require SharePoint integration.
 
-* [Configure a prepared SharePoint site for your portal](#validtfs).
+- [Configure a prepared SharePoint site for your portal](#validtfs).
 
   Choose this option if you have already configured TFS to integrate with a SharePoint Web application.
 
-* [Add a SharePoint server and upload portal contents from the process template](#addsp)
+- [Add a SharePoint server and upload portal contents from the process template](#addsp)
 
   Choose this option to prepare a SharePoint Web application, and add all portal artifacts and process guidance for a team project that was created using the Basic configuration.
 
 ## Prerequisites
 
-* To enable a team project portal, you must be a member of the Project Collection Administrators group.
+- To enable a team project portal, you must be a member of the Project Collection Administrators group.
 
 <a name="portal_enabled"></a>
 
@@ -127,7 +127,7 @@ Choose this option to gain access to Excel reports, dashboards, and process guid
 3.  Open a Command Prompt in administrative mode and change to the directory where you installed the power tools.
 
     ```
-    cd %programfiles%\TFS 2013 Power Tools  
+    cd %programfiles%\TFS 2013 Power Tools
     ```
 
     On a 64-bit edition of Windows, replace `%programfiles%` with %`programfiles(x86)%`.
@@ -140,9 +140,9 @@ Choose this option to gain access to Excel reports, dashboards, and process guid
 
     These are the names of the process templates available with TFS 2013:
 
-    * Microsoft Visual Studio Scrum 2013
-    * MSF for Agile Software Development 2013
-    * MSF for CMMI Process Improvement 2013
+    - Microsoft Visual Studio Scrum 2013
+    - MSF for Agile Software Development 2013
+    - MSF for CMMI Process Improvement 2013
 
 5.  Open Portal Settings and verify that the SharePoint site is configured as expected.
 
@@ -159,7 +159,7 @@ Choose this option to gain access to Excel reports, dashboards, and process guid
     <td><img src="media/tracking_teamproject.png" alt="Team Explorer Home page w&#47; TFVC as source control" title="Tracking_TeamProject"/></td>
     </tr>
     </tbody>
-    </table>  
+    </table>
 
 7.  Open the project portal.
 
@@ -177,8 +177,8 @@ The artifacts you'll have access to depend on the process template created with 
 
 ## Related articles
 
-* [Choose a process](../boards/work-items/guidance/choose-process.md)
-* [About SharePoint integration](../report/sharepoint-dashboards/about-sharepoint-integration.md)
-* [Discontinue SharePoint integration: TFS 2017 and earlier versions](../report/sharepoint-dashboards/deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md)
+- [Choose a process](../boards/work-items/guidance/choose-process.md)
+- [About SharePoint integration](../report/sharepoint-dashboards/about-sharepoint-integration.md)
+- [Discontinue SharePoint integration: TFS 2017 and earlier versions](../report/sharepoint-dashboards/deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md)
 
 ::: moniker-end

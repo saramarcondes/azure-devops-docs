@@ -16,18 +16,18 @@ Module path: `TFS/DistributedTask/Contracts`
 
 ### Members
 
-* `_links`: any.
+- `_links`: any.
 
-* `createdOn`: Date.
+- `createdOn`: Date.
 
-* `lastChangedBy`: string.
+- `lastChangedBy`: string.
 
-* `lastChangedOn`: Date.
+- `lastChangedOn`: Date.
 
-* `name`: string.
+- `name`: string.
 
-* `recordId`: string.
+- `recordId`: string.
 
-* `timelineId`: string.
+- `timelineId`: string.
 
-* `type`: string.
+- `type`: string.

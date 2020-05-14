@@ -59,10 +59,10 @@ az devops extension uninstall --extension-name
 
 #### Parameters
 
-* **extension-name**: The name of the extension to uninstall.
-* **publisher-name**: The name of the extension publisher.
-* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-* **yes**: Optional. Don't prompt for confirmation.
+- **extension-name**: The name of the extension to uninstall.
+- **publisher-name**: The name of the extension publisher.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **yes**: Optional. Don't prompt for confirmation.
 
 #### Example
 
@@ -86,9 +86,9 @@ az devops extension disable --extension-name
 
 #### Parameters
 
-* **extension-name**: The name of the extension to disable.
-* **publisher-name**: The name of the extension publisher.
-* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **extension-name**: The name of the extension to disable.
+- **publisher-name**: The name of the extension publisher.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 
 #### Example
 
@@ -146,9 +146,9 @@ az devops extension enable --extension-name
 
 ### Parameters
 
-* **extension-name**: The name of the extension to enable.
-* **publisher-name**: The name of the extension publisher.
-* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **extension-name**: The name of the extension to enable.
+- **publisher-name**: The name of the extension publisher.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 
 ### Example
 
@@ -174,9 +174,9 @@ az devops extension list [--include-built-in {false, true}]
 
 ### Optional parameters
 
-* **include-built-in**: Include the built-in extensions. Accepted values are _true_ (default) and _false_.
-* **include-disabled**: Include the disabled extensions. Accepted values are _true_ (default) and _false_.
-* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **include-built-in**: Include the built-in extensions. Accepted values are _true_ (default) and _false_.
+- **include-disabled**: Include the disabled extensions. Accepted values are _true_ (default) and _false_.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 
 ### Example
 
@@ -219,9 +219,9 @@ az devops extension show --extension-name
 
 ### Parameters
 
-* **extension-name**: The name of the extension.
-* **publisher-name**: The name of the extension publisher.
-* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **extension-name**: The name of the extension.
+- **publisher-name**: The name of the extension publisher.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 
 ### Example
 

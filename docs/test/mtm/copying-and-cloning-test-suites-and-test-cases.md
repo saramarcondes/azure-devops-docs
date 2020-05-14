@@ -94,9 +94,9 @@ Cloning is useful if you want to branch your application into two versions: afte
 
     Check **Clone Requirements** if you want to make new user stories or requirements that you will maintain separately. For example:
 
-    * If you plan to merge the two branches eventually, you'll want to keep the same requirements for functionality that has already been implemented and tested. Don't check Clone Requirements.
+    - If you plan to merge the two branches eventually, you'll want to keep the same requirements for functionality that has already been implemented and tested. Don't check Clone Requirements.
 
-    * If you plan to diverge into two similar but separate applications, you might want to change the user stories of one without changing the stories of the other. Check Clone Requirements to create an independent set of requirements for the new test cases.
+    - If you plan to diverge into two similar but separate applications, you might want to change the user stories of one without changing the stories of the other. Check Clone Requirements to create an independent set of requirements for the new test cases.
 
 1.  [Update any query-based suites](../create-a-test-plan.md) that you copied to use the new area and iteration paths.
 
@@ -141,12 +141,12 @@ Tcm.exe can be used to copy test suites. Open a command prompt and change direct
 Open the Developer Command Prompt. Alternatively, use a standard command prompt and change directory to **%VS110COMNTOOLS%..\IDE**. Use tcm.exe:
 
 ```MS-DOS
-cd %VS110COMNTOOLS%..\IDE  
+cd %VS110COMNTOOLS%..\IDE
 
 tcm suites /clone
    /collection:http://Server:8080/tfs/Collection
-   /teamproject:"Project"  
-   [/destinationteamproject: "DestinationProject"]  
+   /teamproject:"Project"
+   [/destinationteamproject: "DestinationProject"]
    /suiteid:sourceId
    /destinationsuiteid:targetId
    [/clonerequirements]
@@ -155,29 +155,29 @@ tcm suites /clone
 
 Parameters:
 
-* _Server, Collection, Project:_ The names of your team foundation server, project collection, and project.
+- _Server, Collection, Project:_ The names of your team foundation server, project collection, and project.
 
-* `destinationProject`: Specify this if the destination test suite is in a different project. It must be in the same project collection. You must specify override field values for `"Iteration Path"` and `"Area Path"`.
+- `destinationProject`: Specify this if the destination test suite is in a different project. It must be in the same project collection. You must specify override field values for `"Iteration Path"` and `"Area Path"`.
 
-* `suiteId` and `destinationSuiteId`: The ID of the suite to be copied, and the ID of the suite into which the new copy will be added. If you want to copy a whole test plan, use the ID of the suite at the root of the test plan.
+- `suiteId` and `destinationSuiteId`: The ID of the suite to be copied, and the ID of the suite into which the new copy will be added. If you want to copy a whole test plan, use the ID of the suite at the root of the test plan.
 
   The ID of a suite is displayed in the details pane when you select it in the test plan.
 
   You can also get a list of suites by using `tcm suites /list`.
 
-* `/clonerequirements`: Clone requirements work items that are attached to requirements-based test suites. If you omit this parameter, requirements-based test suites are converted to static suites.
+- `/clonerequirements`: Clone requirements work items that are attached to requirements-based test suites. If you omit this parameter, requirements-based test suites are converted to static suites.
 
-* `/overridefield:"field name"="new value"`: Change the value of a field in each cloned work item. You can use multiple occurrences of this parameter to change as many fields as you want.
+- `/overridefield:"field name"="new value"`: Change the value of a field in each cloned work item. You can use multiple occurrences of this parameter to change as many fields as you want.
 
   Examples:
 
 ```MS-DOS
-tcm suites /clone /collection:http://tfs.fabrikam.com:8080/tfs/DefaultCollection  
-   /teamproject:IceCream /destinationteamproject:ToyStore  
-   /clonerequirements  
+tcm suites /clone /collection:http://tfs.fabrikam.com:8080/tfs/DefaultCollection
+   /teamproject:IceCream /destinationteamproject:ToyStore
+   /clonerequirements
    /suiteid:234 /destinationsuiteid:567
-   /overridefield:"Iteration Path"="ToyStore\sprint3"  
-   /overridefield:"Area Path"="ToyStore\catalog"  
+   /overridefield:"Iteration Path"="ToyStore\sprint3"
+   /overridefield:"Area Path"="ToyStore\catalog"
 
 ```
 

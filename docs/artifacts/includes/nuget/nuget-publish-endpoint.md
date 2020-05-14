@@ -12,8 +12,7 @@ ms.date: 04/06/2020
 
 1.  Select **Connect to feed**:
 
-    > [!div class="mx-imgBorder"]
-    > ![Connect to feed button on the upper right of the page](../../media/connect-to-feed-azure-devops-newnav.png)
+    > [!div class="mx-imgBorder"] > ![Connect to feed button on the upper right of the page](../../media/connect-to-feed-azure-devops-newnav.png)
 
 1.  Select **NuGet.exe** under the **NuGet** header.
 
@@ -27,22 +26,21 @@ ms.date: 04/06/2020
 
 1.  To publish your package to your feed, run the command in the **Restore packages** section in an elevated PowerShell window. Don't forget to specify your local package path (for example: ..\HelloWorld\NuGetPackage\HelloWorld1.0.0.nupkg).
 
-    > [!div class="mx-imgBorder"]
-    > ![NuGet publish instructions in Connect to feed dialog box](../../media/nuget-azure-devops-newnav.png)
+    > [!div class="mx-imgBorder"] > ![NuGet publish instructions in Connect to feed dialog box](../../media/nuget-azure-devops-newnav.png)
 
 > [!NOTE]
 >
-> * The NuGet push command requires an API key. You can use any non-empty string for this variable. In our example, we used the string `key`.
-> * For more information on using credential providers with NuGet, see [Creating a NuGet credential provider](/nuget/reference/extensibility/nuget-exe-credential-providers#creating-a-nugetexe-credential-provider).
-> * For more information on using personal access tokens, see [Authenticate access with personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+> - The NuGet push command requires an API key. You can use any non-empty string for this variable. In our example, we used the string `key`.
+> - For more information on using credential providers with NuGet, see [Creating a NuGet credential provider](/nuget/reference/extensibility/nuget-exe-credential-providers#creating-a-nugetexe-credential-provider).
+> - For more information on using personal access tokens, see [Authenticate access with personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 ## Publish a NuGet package by using the NuGet CLI
 
 To publish your package by using the NuGet CLI, you need the following variables:
 
-* **SourceName**: The name of your feed created in step 1 of this article.
-* **SourceURL**: The feed URL (step 6). You can find it in the **Project setup** section, under `value`. In the Azure DevOps portal, go to **Artifact** > **Your feed name** > **Connect to feed** > **Project setup**.
-* **UserName** and **PAT**: Your username and personal access token. For help with setting up your credentials, see [Authenticate access with personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+- **SourceName**: The name of your feed created in step 1 of this article.
+- **SourceURL**: The feed URL (step 6). You can find it in the **Project setup** section, under `value`. In the Azure DevOps portal, go to **Artifact** > **Your feed name** > **Connect to feed** > **Project setup**.
+- **UserName** and **PAT**: Your username and personal access token. For help with setting up your credentials, see [Authenticate access with personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 ::: moniker-end
 

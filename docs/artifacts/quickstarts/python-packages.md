@@ -21,13 +21,13 @@ This quickstart guides you through using Azure Artifacts to consume and publish 
 
 3.  In the **Create new feed** dialog box:
 
-    * In the **Name** field, give the feed a name.
+    - In the **Name** field, give the feed a name.
 
       _PyPI_ is the default repository name for `twine`, which is a tool for publishing Python packages. It's best not to name your feed _PyPI_, because if you don't use `-r` to specify a repository name when pushing, you might accidentally push to the wrong repository.
 
-    * Under **Visibility**, select who can read and contribute, or update, packages in your feed. The recommended **People in \<your organization>** setting lets all members in the organization see and use your feed.
+    - Under **Visibility**, select who can read and contribute, or update, packages in your feed. The recommended **People in \<your organization>** setting lets all members in the organization see and use your feed.
 
-    * Under **Packages from public sources**, select **Use packages from public sources through this feed** to add the public `npm`, `NuGet`, and `PyPI` registries as upstreams to your feed.
+    - Under **Packages from public sources**, select **Use packages from public sources through this feed** to add the public `npm`, `NuGet`, and `PyPI` registries as upstreams to your feed.
 
       When these upstreams are enabled, your client will be able to fetch packages from the public registry through your private feed, and your private feed will cache those packages for you. If you select **Only use packages published to this feed**, your feed won't be connected to public registries, but you can connect to them later if you want.
 
@@ -41,8 +41,8 @@ To edit your feed settings, select the gear icon at upper right on the feed page
 
 There are two primary ways to connect to a feed to push or pull Python packages:
 
-* Install and use the [Python Credential Provider (artifacts-keyring) (preview)](https://github.com/microsoft/artifacts-keyring), which sets up authentication for you.
-* Manually set up credentials for `pip.ini`/`pip.conf` for pushes, or `.pypirc` for pulls, through a personal access token (PAT).
+- Install and use the [Python Credential Provider (artifacts-keyring) (preview)](https://github.com/microsoft/artifacts-keyring), which sets up authentication for you.
+- Manually set up credentials for `pip.ini`/`pip.conf` for pushes, or `.pypirc` for pulls, through a personal access token (PAT).
 
 ### Option 1: Use Python Credential Provider (preview) to automate authentication
 
@@ -79,8 +79,7 @@ The Python Credential Provider is a manual interaction. If you want to set up au
 
 1.  From your feed in **Azure Artifacts**, select **Connect to feed**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Connect to feed button on the upper right of the page](../media/connect-to-feed-azure-devops-newnav.png)
+    > [!div class="mx-imgBorder"] > ![Connect to feed button on the upper right of the page](../media/connect-to-feed-azure-devops-newnav.png)
 
 2.  Choose either **pip** or **twine** under the Python header.
 

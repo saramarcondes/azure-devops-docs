@@ -15,8 +15,8 @@ Module path: `TFS/VersionControl/UIContracts`
 
 ### Members
 
-* `gitBranchDiff`: [VCContracts.GitCommitDiffs](../../../TFS/VersionControl/Contracts/GitCommitDiffs.md).
+- `gitBranchDiff`: [VCContracts.GitCommitDiffs](../../../TFS/VersionControl/Contracts/GitCommitDiffs.md).
 
-* `repository`: [VCContracts.GitRepository](../../../TFS/VersionControl/Contracts/GitRepository.md).
+- `repository`: [VCContracts.GitRepository](../../../TFS/VersionControl/Contracts/GitRepository.md).
 
-* `view`: (): void.
+- `view`: (): void.

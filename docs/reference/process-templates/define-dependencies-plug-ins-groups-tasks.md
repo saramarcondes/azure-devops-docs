@@ -52,13 +52,13 @@ Use the dependency element in tasks and groups to indicate when a dependency exi
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <group id="WorkItemTracking" description="Workitem definitions uploading." completionMessage="Workitem definitions uploaded.">  
+> <group id="WorkItemTracking" description="Workitem definitions uploading." completionMessage="Workitem definitions uploaded.">
 >    <dependencies>
 >       <dependency groupId="Classification"/>
 >       <dependency groupId="Groups"/>
->    </dependencies>  
->    <taskList filename="WorkItem Tracking\WorkItems.xml"/>  
-> </group>  
+>    </dependencies>
+>    <taskList filename="WorkItem Tracking\WorkItems.xml"/>
+> </group>
 > ```
 >
 > [!NOTE]
@@ -80,10 +80,10 @@ The following example shows how to use the **dependency** element to specify tha
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <task id="WIs" name="WorkItems" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work items uploaded"  completionDescription="Processing the actual work items used by work item tracking">  
+> <task id="WIs" name="WorkItems" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work items uploaded"  completionDescription="Processing the actual work items used by work item tracking">
 >    <dependencies>
 >       <dependency taskId="WITs" />
->    </dependencies>  
+>    </dependencies>
 > ```
 
 The following table describes the elements that you use to define task dependencies. For more information about how to define tasks, see [Define the tasks to process a plug-in](define-tasks-to-process-a-plug-in.md).
@@ -95,6 +95,6 @@ The following table describes the elements that you use to define task dependenc
 
 ## Related articles
 
-* [Customize a process](customize-process.md)
-* [Define the tasks to process a plug-in](define-tasks-to-process-a-plug-in.md)
-* [Define the root tasks](define-root-tasks-process-template-plug-in.md)
+- [Customize a process](customize-process.md)
+- [Define the tasks to process a plug-in](define-tasks-to-process-a-plug-in.md)
+- [Define the root tasks](define-root-tasks-process-template-plug-in.md)

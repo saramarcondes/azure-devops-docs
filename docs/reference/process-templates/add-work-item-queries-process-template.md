@@ -48,13 +48,13 @@ The following example shows the high-level syntax structure that defines a work 
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <WorkItemQuery Version="1">  
-> <TeamFoundationServer>collectionURL</TeamFoundationServer>  
-> <TeamProject>TeamProjectName</TeamProject>  
->   <Wiql>  
->       WorkItemQueryLanguage  
->   </Wiql>  
-> </WorkItemQuery>  
+> <WorkItemQuery Version="1">
+> <TeamFoundationServer>collectionURL</TeamFoundationServer>
+> <TeamProject>TeamProjectName</TeamProject>
+>   <Wiql>
+>       WorkItemQueryLanguage
+>   </Wiql>
+> </WorkItemQuery>
 > ```
 
 For more information about how to create a work item query to add to a process template, see [Define a work item query](define-work-item-query-process-template.md).
@@ -84,10 +84,10 @@ The following example shows how to specify a task to create a query folder that 
 >    </dependencies
 >    <taskXml
 >       <QUERIES
->          <QueryFolder name="Product Management"  
+>          <QueryFolder name="Product Management"
 >                <Query name="All User Stories" fileName="WorkItem Tracking\Queries\AllUserStories.wiq" /
 >          </QueryFolder
->          . . .  
+>          . . .
 >       </QUERIES
 >    </taskXml
 > </task
@@ -106,7 +106,7 @@ The following syntax shows the structure of the **QUERIES** element and its chil
 > ```XML
 > <QUERIES
 >       <Permission /
->       <QueryFolder  
+>       <QueryFolder
 >       <Query /
 >       </QueryFolder
 > </QUERIES
@@ -123,5 +123,5 @@ The following table describes the elements that you use to specify the query fol
 
 ## Related articles
 
-* [Use the query editor to list and manage queries](../../boards/queries/using-queries.md)
-* [Define objects for tracking work items](define-objects-track-work-items-plug-in.md)
+- [Use the query editor to list and manage queries](../../boards/queries/using-queries.md)
+- [Define objects for tracking work items](define-objects-track-work-items-plug-in.md)

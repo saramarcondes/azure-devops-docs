@@ -102,7 +102,7 @@ Items I&#39;ve been associated with
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>History <em> Contains Words </em> MyName</code><br/><code>Or <em> Assigned To </em> Was Ever _ <xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref></code><br/></td>
 </tr>
 </tbody>
-</table>  
+</table>
 
 ### Tips for using the query editor
 
@@ -296,18 +296,18 @@ All
 1.  For these fields to be defined for a WIT, they must be included in the `WORKFLOW` section of the WIT definition. For example, this syntax is included within the `FIELDS` definition when transitioning to a Resolved state:
 
     ```xml
-    <FIELD refname="Microsoft.VSTS.Common.ResolvedDate">  
-       <SERVERDEFAULT from="clock" />  
-    </FIELD>  
+    <FIELD refname="Microsoft.VSTS.Common.ResolvedDate">
+       <SERVERDEFAULT from="clock" />
+    </FIELD>
     ```
 
 ## Related articles
 
 To learn more about creating and saving queries, see also:
 
-* [Query editor](using-queries.md)
-* [Query fields, operators, and macros](query-operators-variables.md)
-* [Query by date or current iteration](query-by-date-or-current-iteration.md)
+- [Query editor](using-queries.md)
+- [Query fields, operators, and macros](query-operators-variables.md)
+- [Query by date or current iteration](query-by-date-or-current-iteration.md)
 
 ### Get history programmatically
 

@@ -19,13 +19,13 @@ Requirements describe what the stakeholders expect from the product. You should 
 
 By creating requirements in TFS, you gain the following benefits:
 
-* Verify that requirements have been satisfied by linking them to test cases.
+- Verify that requirements have been satisfied by linking them to test cases.
 
-* Monitor progress toward implementing the requirements by linking them to task work items.
+- Monitor progress toward implementing the requirements by linking them to task work items.
 
-* Structure the requirements into overall and more detailed requirements so that you can manage them more easily and so that progress reports can summarize the information.
+- Structure the requirements into overall and more detailed requirements so that you can manage them more easily and so that progress reports can summarize the information.
 
-* Model the requirements in Visual Studio Ultimate, linking model elements to requirements in Team Foundation Server.
+- Model the requirements in Visual Studio Ultimate, linking model elements to requirements in Team Foundation Server.
 
   this article does not attempt to replicate the very large body of literature that is available on the subject of determining requirements. Instead, it focuses on the aspects that are important for using the Visual Studio tools in a manner that conforms to CMMI. For more information about CMMI, see [Background to CMMI](guidance-background-to-cmmi.md).
 
@@ -39,29 +39,29 @@ This flexibility must be balanced against the need to give firm commitments to y
 
 To a controlled extent, therefore, requirements are developed and refined throughout the project. Because the detailed requirements are likely to change during the project, determining them in full before the appropriate implementation is likely to result in wasted effort.
 
-* In Iteration 0, develop a set of requirements that describe of the main features, with just enough detail to form a product plan. The product plan assigns requirements to iterations and states what requirement will be fulfilled at the end of each iteration. Create a domain model of the major concepts and activities, and define the vocabulary that will be used for those concepts both in discussion with the users and in the implementation. Determine broad requirements that pervade every feature, such as security and other quality of service requirements.
+- In Iteration 0, develop a set of requirements that describe of the main features, with just enough detail to form a product plan. The product plan assigns requirements to iterations and states what requirement will be fulfilled at the end of each iteration. Create a domain model of the major concepts and activities, and define the vocabulary that will be used for those concepts both in discussion with the users and in the implementation. Determine broad requirements that pervade every feature, such as security and other quality of service requirements.
 
-* At or near the start of each iteration, develop the requirements for those features in more detail. Determine the steps that the users will follow, defining them with the help of activity or sequence diagrams. Define what happens in exceptional cases.
+- At or near the start of each iteration, develop the requirements for those features in more detail. Determine the steps that the users will follow, defining them with the help of activity or sequence diagrams. Define what happens in exceptional cases.
 
-* Verify as often as possible all the requirements that have been implemented. Pervasive requirements, such as security, must be verified with tests that are extended for each new feature. If possible, automate the tests because automatic tests can be performed continuously.
+- Verify as often as possible all the requirements that have been implemented. Pervasive requirements, such as security, must be verified with tests that are extended for each new feature. If possible, automate the tests because automatic tests can be performed continuously.
 
 ### Managing requirements changes
 
 The following guidelines let you operate an incremental process while monitoring it to satisfy CMMI requirements.
 
-* Do not change the requirements that are set for an iteration. In the rare case of an abrupt change in circumstances, you might have to cancel an iteration, review the product plan, and start a new iteration.
+- Do not change the requirements that are set for an iteration. In the rare case of an abrupt change in circumstances, you might have to cancel an iteration, review the product plan, and start a new iteration.
 
-* Look for uncertainties in the requirements. Try to arrange the plan so that user experience with early iterations yields information that reduces the uncertainties.
+- Look for uncertainties in the requirements. Try to arrange the plan so that user experience with early iterations yields information that reduces the uncertainties.
 
-* Use change request work items to record requests to change behavior that has already been implemented, unless the requested improvement is already part of the plan. Link each change request to the appropriate requirement work items.
+- Use change request work items to record requests to change behavior that has already been implemented, unless the requested improvement is already part of the plan. Link each change request to the appropriate requirement work items.
 
-* Review change requests when you review the product before each iteration. Examine the impact of the request on dependent projects and users, and estimate the cost with regard to changes in your code. If a change request is accepted, update the requirement.
+- Review change requests when you review the product before each iteration. Examine the impact of the request on dependent projects and users, and estimate the cost with regard to changes in your code. If a change request is accepted, update the requirement.
 
-* Update the tests to conform to every requirements change.
+- Update the tests to conform to every requirements change.
 
-* Designate a cut-off date (for example, after iteration 2 or 3) after which requirements changes must be much more strongly justified. If your project is for a paying customer, this is the date to have the customer approve a baseline set of requirements and switch from hourly payment to fixed price.
+- Designate a cut-off date (for example, after iteration 2 or 3) after which requirements changes must be much more strongly justified. If your project is for a paying customer, this is the date to have the customer approve a baseline set of requirements and switch from hourly payment to fixed price.
 
-* Use bug work items to record implemented behavior that does not perform according to the explicit or implicit requirements. Where practical, create a new test that would have caught the bug.
+- Use bug work items to record implemented behavior that does not perform according to the explicit or implicit requirements. Where practical, create a new test that would have caught the bug.
 
 ## <a name="Vision"></a> Write a vision statement
 
@@ -83,24 +83,24 @@ Customer buys a meal.
 
 You can write a scenario in the following forms. Sometimes it can help to use more than one form:
 
-* One or two sentences in the work item description:
+- One or two sentences in the work item description:
 
   A customer orders a meal on a Web site and pays with a credit card. The order is passed to a restaurant, which prepares and delivers the meal.
 
-* Numbered steps in the work item description:
+- Numbered steps in the work item description:
 
   1.  A customer visits the Web site and creates an order for a meal.
   2.  The Web site redirects the customer to a payment site to make payment.
   3.  The order is added to the restaurant's work list.
   4.  The restaurant prepares and delivers the meal.
 
-* Storyboard. A storyboard is essentially a cartoon strip that tells the story. You can draw it in PowerPoint. Attach the storyboard file to the requirement work item, or upload the file to the team portal, and add a hyperlink to the work item.
+- Storyboard. A storyboard is essentially a cartoon strip that tells the story. You can draw it in PowerPoint. Attach the storyboard file to the requirement work item, or upload the file to the team portal, and add a hyperlink to the work item.
 
   A storyboard is especially useful for showing user interactions. But for a business scenario, it is recommended to use a sketch style that makes it clear that this is not the final design for the user interface.
 
-* Requirement documents. Requirement documents give you the freedom to provide the appropriate level of detail for each requirement. If you decide to use documents, create a Word document for each requirement, and attach the document to the requirement work item, or upload the file to the team portal and add a hyperlink to the work item.
+- Requirement documents. Requirement documents give you the freedom to provide the appropriate level of detail for each requirement. If you decide to use documents, create a Word document for each requirement, and attach the document to the requirement work item, or upload the file to the team portal and add a hyperlink to the work item.
 
-* Unified Markup Language (UML) sequence diagram. A sequence diagram is especially useful where several parties interact. For example, ordering the meal requires the customer, the DinnerNow Web site, the payment system, and the restaurant to interact in a specific sequence. Draw the sequence diagram in a UML model, check it into Team Foundation Server, and enter a link in the requirement work item. For more information, see [UML Sequence Diagrams: Guidelines](https://msdn.microsoft.com/library/dd409389).
+- Unified Markup Language (UML) sequence diagram. A sequence diagram is especially useful where several parties interact. For example, ordering the meal requires the customer, the DinnerNow Web site, the payment system, and the restaurant to interact in a specific sequence. Draw the sequence diagram in a UML model, check it into Team Foundation Server, and enter a link in the requirement work item. For more information, see [UML Sequence Diagrams: Guidelines](https://msdn.microsoft.com/library/dd409389).
 
 ### Specific scenarios
 
@@ -124,17 +124,17 @@ The more detailed scenarios that you develop at the start of an iteration can de
 
 You can organize scenarios by using the following methods:
 
-* Draw use case diagrams that show each scenario as a use case. This method is recommended because it makes the scenarios very easy to present and discuss. For more information, see [UML Use Case Diagrams: Guidelines](https://msdn.microsoft.com/library/dd409432).
+- Draw use case diagrams that show each scenario as a use case. This method is recommended because it makes the scenarios very easy to present and discuss. For more information, see [UML Use Case Diagrams: Guidelines](https://msdn.microsoft.com/library/dd409432).
 
-  * Link each use case to the work item that defines the scenario. For more information, see [Link model elements and work items](https://msdn.microsoft.com/library/dd465152).
+  - Link each use case to the work item that defines the scenario. For more information, see [Link model elements and work items](https://msdn.microsoft.com/library/dd465152).
 
-  * Draw Extends relationships to show that one scenario is a variation of another. For example, "Customer specifies separate payment and delivery addresses" is an extension of the basic "Customer makes an order" use case. Extensions are particularly useful to separate out scenarios that will be implemented in a later iteration.
+  - Draw Extends relationships to show that one scenario is a variation of another. For example, "Customer specifies separate payment and delivery addresses" is an extension of the basic "Customer makes an order" use case. Extensions are particularly useful to separate out scenarios that will be implemented in a later iteration.
 
-  * Draw Includes relationships to separate a procedure such as "Customer logs on," which is common to several use cases.
+  - Draw Includes relationships to separate a procedure such as "Customer logs on," which is common to several use cases.
 
-  * Draw generalization relationships between general scenarios such as "Customer pays" and specific variants such as "Customer pays by card."
+  - Draw generalization relationships between general scenarios such as "Customer pays" and specific variants such as "Customer pays by card."
 
-* Create parent-child links between scenario work items. You can view the hierarchy in Team Explorer. For more information, see [Arrange requirements into a product plan](arrange-requirements-into-a-product-plan.md).
+- Create parent-child links between scenario work items. You can view the hierarchy in Team Explorer. For more information, see [Arrange requirements into a product plan](arrange-requirements-into-a-product-plan.md).
 
 ## <a name="Model"></a> Model the business domain
 
@@ -184,11 +184,11 @@ Add to the class diagrams constraints that govern the attributes and relationshi
 
 Ensure that the model and scenarios are consistent. One of the most powerful uses for a model is to resolve ambiguities.
 
-* The scenario descriptions use the terms that are defined in the model and are consistent with the relations that it defines. If the model defines menu items, the scenarios should not refer to the same thing as products. If the class diagram shows that a menu item belongs to exactly one menu, the scenarios should not talk of sharing an item between menus.
+- The scenario descriptions use the terms that are defined in the model and are consistent with the relations that it defines. If the model defines menu items, the scenarios should not refer to the same thing as products. If the class diagram shows that a menu item belongs to exactly one menu, the scenarios should not talk of sharing an item between menus.
 
-* Every scenario describes a series of steps that are allowed by the activity diagrams.
+- Every scenario describes a series of steps that are allowed by the activity diagrams.
 
-* Scenarios or activities describe how each class and relationship in the class diagram is created and destroyed. For example, what scenario creates a menu item? When is an order destroyed?
+- Scenarios or activities describe how each class and relationship in the class diagram is created and destroyed. For example, what scenario creates a menu item? When is an order destroyed?
 
 ## <a name="QofS"></a> Develop Quality of Service Requirements
 
@@ -212,21 +212,21 @@ Create a review work item to track the review. This item provides important evid
 
 Review each scenario for the following characteristics:
 
-* The scenario is written in the context of what task users must perform, what they already know, and how they expect to interact with the product.
+- The scenario is written in the context of what task users must perform, what they already know, and how they expect to interact with the product.
 
-* The scenario outlines a problem and is not obscured by proposed solutions to the problem.
+- The scenario outlines a problem and is not obscured by proposed solutions to the problem.
 
-* All relevant user interactions with the product are identified.
+- All relevant user interactions with the product are identified.
 
-* The subject matter expert, the business analyst, and the user experience architect review each scenario in the context of the project to validate that all scenarios can be implemented successfully. If a scenario is not valid, it is revised so that it is valid.
+- The subject matter expert, the business analyst, and the user experience architect review each scenario in the context of the project to validate that all scenarios can be implemented successfully. If a scenario is not valid, it is revised so that it is valid.
 
-* The scenario can be implemented with the available techniques, tools, and resources and within budget and schedule.
+- The scenario can be implemented with the available techniques, tools, and resources and within budget and schedule.
 
-* The scenario has a single interpretation that is easily understood.
+- The scenario has a single interpretation that is easily understood.
 
-* The scenario does not conflict with another scenario.
+- The scenario does not conflict with another scenario.
 
-* The scenario is testable.
+- The scenario is testable.
 
 ## <a name="Validate"></a> Validation
 
@@ -246,14 +246,14 @@ Your team should create most requirements in the early iterations of the project
 
 For more information, see the following Web resources:
 
-* [Modern Requirements Suite 4TFS](https://www.modernrequirements.com/), a requirement management software platform that bi-directionally connects Microsoft Office technologies with Azure Boards and TFS to increase stakeholder engagement and provide end-to-end traceability.
+- [Modern Requirements Suite 4TFS](https://www.modernrequirements.com/), a requirement management software platform that bi-directionally connects Microsoft Office technologies with Azure Boards and TFS to increase stakeholder engagement and provide end-to-end traceability.
 
-* [A Practical Guide to Feature Driven Development](https://go.microsoft.com/fwlink/?LinkId=179031), Stephen R. Palmer and Malcolm J. Felsing; Prentice-Hall PTR, 2002.
+- [A Practical Guide to Feature Driven Development](https://go.microsoft.com/fwlink/?LinkId=179031), Stephen R. Palmer and Malcolm J. Felsing; Prentice-Hall PTR, 2002.
 
-* [Streamlined Object Modeling: Patterns, Rules and Implementation](https://go.microsoft.com/fwlink/?LinkId=179032), Jill Nicola, Mark Mayfield, and Mike Abney; Prentice Hall PTR, 2001.
+- [Streamlined Object Modeling: Patterns, Rules and Implementation](https://go.microsoft.com/fwlink/?LinkId=179032), Jill Nicola, Mark Mayfield, and Mike Abney; Prentice Hall PTR, 2001.
 
-* [Agile Modeling: Effective Practices for Extreme Programming and the Unified Process, Scott Ambler](https://go.microsoft.com/fwlink/?LinkId=179033); Wiley, 2002.
+- [Agile Modeling: Effective Practices for Extreme Programming and the Unified Process, Scott Ambler](https://go.microsoft.com/fwlink/?LinkId=179033); Wiley, 2002.
 
-* [Domain Driven Design: Tackling Complexity in the Heart of Software](https://go.microsoft.com/fwlink/?LinkId=179034), Eric Evans; Addison Wesley Professional, 2003.
+- [Domain Driven Design: Tackling Complexity in the Heart of Software](https://go.microsoft.com/fwlink/?LinkId=179034), Eric Evans; Addison Wesley Professional, 2003.
 
-* [Object Design: Roles, Responsibilities and Collaborations, Rebecca Wirfs-Brock and Alan McKean](https://go.microsoft.com/fwlink/?LinkId=179035); Addison Wesley Professional, 2002.
+- [Object Design: Roles, Responsibilities and Collaborations, Rebecca Wirfs-Brock and Alan McKean](https://go.microsoft.com/fwlink/?LinkId=179035); Addison Wesley Professional, 2002.

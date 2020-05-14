@@ -131,7 +131,7 @@ If you signed up for Azure DevOps with an existing MSA or GitHub identity, you'r
     > [!div class="mx-imgBorder"]  
     > ![Create new project dialog](media/sign-up/nf-create-project.png)
 
-    The name can't contain special characters (such as / : \ ~ & % ; @ ' " ? < > | # $ \* } { , + = [ ]), can't begin with an underscore, can't begin or end with a period, and must be 64 characters or less. Visibility can be either public or private. With public visibility, anyone on the internet can view your project. With private visibility, only people who you give access to can view your project.
+    The name can't contain special characters (such as / : \ ~ & % ; @ ' " ? < > | # \$ \* } { , + = [ ]), can't begin with an underscore, can't begin or end with a period, and must be 64 characters or less. Visibility can be either public or private. With public visibility, anyone on the internet can view your project. With private visibility, only people who you give access to can view your project.
 
 2.  When your project has been created, the Kanban board automatically appears.
 
@@ -183,15 +183,15 @@ For more information, see [Add organization users for Azure DevOps Services](../
 
 You can rename and delete your organization, or change the organization location. To learn more, see the following articles:
 
-* [Manage organizations](../../organizations/accounts/organization-management.md)
-* [Rename an organization](../../organizations/accounts/rename-organization.md)
-* [Change the location of your organization](../../organizations/accounts/change-organization-location.md)
+- [Manage organizations](../../organizations/accounts/organization-management.md)
+- [Rename an organization](../../organizations/accounts/rename-organization.md)
+- [Change the location of your organization](../../organizations/accounts/change-organization-location.md)
 
 You can rename your project or change it's visibility. To learn more about managing projects, see the following articles:
 
-* [Manage projects](../../organizations/projects/about-projects.md)
-* [Rename a project](../../organizations/projects/rename-project.md)
-* [Change the project visibility, public or private](../../organizations/public/make-project-public.md)
+- [Manage projects](../../organizations/projects/about-projects.md)
+- [Rename a project](../../organizations/projects/rename-project.md)
+- [Change the project visibility, public or private](../../organizations/public/make-project-public.md)
 
 > [!NOTE]  
 > Your first project was created using the Basic process which uses Epics, Issues, and Tasks to track work. If you want a project that uses the Agile, Scrum, or CMMI process, then you can [add another project](../../organizations/projects/create-project.md) and specify the process through advanced setting options. See [Choose a process for a comparison of processes](../work-items/guidance/choose-process.md).
@@ -202,7 +202,7 @@ You can rename your project or change it's visibility. To learn more about manag
 
 ## Related articles
 
-* [Manage projects](../../organizations/projects/about-projects.md)
-* [Manage organizations](../../organizations/accounts/organization-management.md)
-* [About access levels](../../organizations/security/access-levels.md)
-* [Define organizations and projects](../../user-guide/define-organizations-and-projects.md)
+- [Manage projects](../../organizations/projects/about-projects.md)
+- [Manage organizations](../../organizations/accounts/organization-management.md)
+- [About access levels](../../organizations/security/access-levels.md)
+- [Define organizations and projects](../../user-guide/define-organizations-and-projects.md)

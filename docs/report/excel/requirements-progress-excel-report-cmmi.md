@@ -37,11 +37,11 @@ You can use the Requirements report to understand how well the team is completin
 
 For the Requirements report to be useful and accurate, the team must perform the following activities:
 
-* define requirements.
+- define requirements.
 
-* Update the **State** of each requirement as it transitions from **Active** to **Resolved** to **Closed**.
+- Update the **State** of each requirement as it transitions from **Active** to **Resolved** to **Closed**.
 
-* (optional) Specify the **Iteration** path, **Area** path, or both of each requirement if you want to filter by those fields.
+- (optional) Specify the **Iteration** path, **Area** path, or both of each requirement if you want to filter by those fields.
 
 <a name="Interpreting"></a>
 
@@ -65,5 +65,5 @@ You can update the Requirements report by opening the report in Office Excel and
 
 ## Related articles
 
-* [Excel reports](excel-reports.md)
-* [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)
+- [Excel reports](excel-reports.md)
+- [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)

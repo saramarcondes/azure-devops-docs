@@ -15,4 +15,4 @@ Module path: `TFS/VersionControl/Contracts`
 
 ### Members
 
-* `path`: string.
+- `path`: string.

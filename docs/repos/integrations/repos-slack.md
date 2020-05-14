@@ -24,23 +24,23 @@ Read this article to learn how to:
 
 > [!div class="checklist"]
 >
-> * Add the Azure Repos app to your Slack workspace
-> * Connect Azure Repos app to your repositories
-> * Manage subscriptions to repository related events in your Slack channel
-> * Using filters effectively to customize subscriptions
-> * Get notifications in private Slack channels
+> - Add the Azure Repos app to your Slack workspace
+> - Connect Azure Repos app to your repositories
+> - Manage subscriptions to repository related events in your Slack channel
+> - Using filters effectively to customize subscriptions
+> - Get notifications in private Slack channels
 
 ## Prerequisites
 
-* To create subscriptions in a Slack channel for repository-related events, you must be a member of the Azure Project Administrators group or Team Administrators group.
+- To create subscriptions in a Slack channel for repository-related events, you must be a member of the Azure Project Administrators group or Team Administrators group.
   To get added, see [Set permissions at the project or collection level](../../organizations/security/set-project-collection-level-permissions.md) or [Add Team Administrator](../../organizations/settings/add-team-administrator.md).
-* To receive notifications, the **Third-party application access via OAuth** setting must be enabled for the organization. See [Change application
+- To receive notifications, the **Third-party application access via OAuth** setting must be enabled for the organization. See [Change application
   access policies for your organization](../../organizations/accounts/change-application-access-policies.md).
 
 > [!NOTE]
 >
-> * Notifications are currently not supported inside direct messages.
-> * You can only link the Azure Repos app for Slack to a project hosted on Azure DevOps Services at this time.
+> - Notifications are currently not supported inside direct messages.
+> - You can only link the Azure Repos app for Slack to a project hosted on Azure DevOps Services at this time.
 
 ## Add the Azure Repos app to your Slack workspace
 
@@ -135,8 +135,8 @@ The following steps demonstrate how to customize subscriptions.
 
 > [!NOTE]
 >
-> * All the filters are typically drop-downs. However if the drop-down were to have greater than 100 items, then users are asked to enter the values manually.
-> * For the TFVC **Code Checked in** event, the filter **Under path** must be of the format `$/myproject/path`.
+> - All the filters are typically drop-downs. However if the drop-down were to have greater than 100 items, then users are asked to enter the values manually.
+> - For the TFVC **Code Checked in** event, the filter **Under path** must be of the format `$/myproject/path`.
 
 ## Previews of pull request URLs
 
@@ -148,7 +148,7 @@ For this feature to work, users have to be signed-in. Once they are signed in, t
 
 ## Remove subscriptions and repositories from a channel
 
-* Many a time, users want to clean up their channel by removing repositories and subscriptions. Use the below command to achieve the same.
+- Many a time, users want to clean up their channel by removing repositories and subscriptions. Use the below command to achieve the same.
 
       ```
       /azrepos unsubscribe all [project url]
@@ -196,6 +196,6 @@ If these steps don't resolve your authentication issue, reach out to us at [Deve
 
 ## Related articles
 
-* [Azure Boards with Slack](https://aka.ms/AzureBoardsSlackIntegration)
-* [Azure Pipelines with Slack](https://aka.ms/AzurePipelinesSlackIntegration)
-* [Create a service hook for Azure DevOps with Slack](../../service-hooks/services/slack.md)
+- [Azure Boards with Slack](https://aka.ms/AzureBoardsSlackIntegration)
+- [Azure Pipelines with Slack](https://aka.ms/AzurePipelinesSlackIntegration)
+- [Create a service hook for Azure DevOps with Slack](../../service-hooks/services/slack.md)

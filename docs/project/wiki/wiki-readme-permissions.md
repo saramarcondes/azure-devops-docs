@@ -27,19 +27,19 @@ Stakeholders have limited access to view charts and dashboards. To learn more, s
 
 To manage permissions for a collaboration tool, see the following articles:
 
-* [Manage README & Wiki permissions (security)](manage-readme-wiki-permissions.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json)
-* [Set feedback permissions](../feedback/give-permissions-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/wiki/project/feedback/toc.json)
+- [Manage README & Wiki permissions (security)](manage-readme-wiki-permissions.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json)
+- [Set feedback permissions](../feedback/give-permissions-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/wiki/project/feedback/toc.json)
 
 To manage notifications, see the following articles:
 
-* [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json)
-* [Manage team notifications](../../notifications/howto-manage-team-notifications.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json)
+- [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json)
+- [Manage team notifications](../../notifications/howto-manage-team-notifications.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json)
 
 > [!NOTE]
 > There are no UI permissions associated with managing notifications. Instead, you can manage them using the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions).
 
 ## Related articles
 
-* [Work across projects](../navigation/work-across-projects.md)
-* [Add a team administrator](../../organizations/settings/add-team-administrator.md)
-* [Permissions and groups reference](../../organizations/security/permissions.md)
+- [Work across projects](../navigation/work-across-projects.md)
+- [Add a team administrator](../../organizations/settings/add-team-administrator.md)
+- [Permissions and groups reference](../../organizations/security/permissions.md)

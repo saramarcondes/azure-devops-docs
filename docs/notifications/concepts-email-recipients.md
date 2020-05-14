@@ -66,9 +66,9 @@ Within Organization settings, select **Global notifications** > **Subscribers** 
 
 The following delivery settings are available for a group or team:
 
-* **Deliver to email address:** notifications are delivered to a specific email address.
-* **Deliver to individual members:** notifications are delivered to each member of the group or team. This is usually the default option. See the section on "team expansion" below for more details on how this option works.
-* **Do not deliver:** notifications are not delivered by default.
+- **Deliver to email address:** notifications are delivered to a specific email address.
+- **Deliver to individual members:** notifications are delivered to each member of the group or team. This is usually the default option. See the section on "team expansion" below for more details on how this option works.
+- **Do not deliver:** notifications are not delivered by default.
 
 If a delivery setting is not explicitly set for a team or group, the value is determined from the [organization-level delivery setting](manage-organization-notifications-settings.md) and is either _Deliver to individual members_ or _Do not deliver_.
 
@@ -85,10 +85,10 @@ The recipients for a custom team or group subscription are controlled by the sub
 
 The following delivery options are available for a group or team subscription:
 
-* **Members of team by role:** recipients are members of the team or group that have one of the selected roles (e.g. work item assignee)
-* **Team preference:** recipients are determined by the delivery setting of the team or group (_Do not deliver_, _preferred email address_, or _members of team_)
-* **Custom email address:** recipient is the specified email address
-* **Members of team:**: recipients are all members of the team or group, except members that have opted out of the subscription.
+- **Members of team by role:** recipients are members of the team or group that have one of the selected roles (e.g. work item assignee)
+- **Team preference:** recipients are determined by the delivery setting of the team or group (_Do not deliver_, _preferred email address_, or _members of team_)
+- **Custom email address:** recipient is the specified email address
+- **Members of team:**: recipients are all members of the team or group, except members that have opted out of the subscription.
   > [!NOTE]
   > The default delivery setting of each member is honored, including groups that are members of the team or group.
 
@@ -100,10 +100,10 @@ The following delivery options are available for a group or team subscription:
 
 The following delivery options are available for a group or team subscription:
 
-* **Member of team by role:** recipients are members of the team or group that have one of the selected roles (e.g. work item assignee)
-* **Team preference:** recipients are determined by the delivery setting of the team or group (_Do not deliver_, _preferred email address_, or _members of team_)
-* **Custom email address:** recipient is the specified email address
-* **Members of team:**: recipients are all members of the team or group, except members that have opted out of the subscription.
+- **Member of team by role:** recipients are members of the team or group that have one of the selected roles (e.g. work item assignee)
+- **Team preference:** recipients are determined by the delivery setting of the team or group (_Do not deliver_, _preferred email address_, or _members of team_)
+- **Custom email address:** recipient is the specified email address
+- **Members of team:**: recipients are all members of the team or group, except members that have opted out of the subscription.
   > [!NOTE]
   > The default delivery setting of each member is honored, including groups that are members of the team or group.
 
@@ -121,9 +121,9 @@ The option _Skip initiator_, which appears for most event types, controls whethe
 
 The delivery option is taken from the team's delivery setting. It can be one of the following:
 
-* **Deliver to email address:** The email is delivered to the team's preferred email address.
-* **Deliver to individual members:** See section below for details of _Members of team_.
-* **Do not deliver:** No email is delivered.
+- **Deliver to email address:** The email is delivered to the team's preferred email address.
+- **Deliver to individual members:** See section below for details of _Members of team_.
+- **Do not deliver:** No email is delivered.
 
 ![email-team-delivery-option-preference](media/email-team-delivery-option-preference.png)
 
@@ -156,15 +156,15 @@ When a team (or group) is the recipient of a notification and either the subscri
 
 First, only members that have not opted out of the subscription are considered for the final recipient list. Next, any member that is an individual user or mail-enabled group is added to the recipient list. This leaves only Azure DevOps Services groups remaining. For each group, the group's delivery preferences are examined:
 
-* "Do not deliver": no further evaluation is performed on this group and the next member group is evaluated
-* "Deliver to email address": the email address is added to the final recipient list
-* "Deliver to individual members": the group is expanded (like its parent group) and the same rules for evaluating its members are followed
+- "Do not deliver": no further evaluation is performed on this group and the next member group is evaluated
+- "Deliver to email address": the email address is added to the final recipient list
+- "Deliver to individual members": the group is expanded (like its parent group) and the same rules for evaluating its members are followed
 
 Let's look at a few scenarios. For these examples, we use the following symbols to denote the types of members:
 
-* `I`: individual user
-* `T`: nested team or group
-* `A`: mail-enabled Azure Active Directory (Azure AD) group.
+- `I`: individual user
+- `T`: nested team or group
+- `A`: mail-enabled Azure Active Directory (Azure AD) group.
 
 ### Scenario 1: A member with _Do not deliver_ preference
 

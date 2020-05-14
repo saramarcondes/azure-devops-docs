@@ -43,7 +43,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/
 | objectId | string | | SHA1 hash of the folder. You can get the objectId of a folder by [getting its metadata](./items.md#afolder).
 | Query
 | api-version| string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| $format | enum | | Use `zip`. If not set, defaults to the MIME type set in the Accept header.
+| \$format | enum | | Use `zip`. If not set, defaults to the MIME type set in the Accept header.
 | fileName | string | object ID | Provide a name to use if a .zip file is returned. If omitted, the zip file is named after the object ID.
 
 [!INCLUDE [ID_vs_Name](_data/id_or_name.md)]
@@ -67,7 +67,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git[/{projectId}/reposi
 | objectId | string | | SHA1 hash of the folder. You can get the objectId of a folder by [getting its metadata](./items.md#afolder).
 | Query
 | api-version| string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| $format | enum | | Use `json`. If not set, defaults to the MIME type set in the Accept header.
+| \$format | enum | | Use `json`. If not set, defaults to the MIME type set in the Accept header.
 | recursive | bool | false | Recursively fetch items from each child tree.
 
 #### Sample request

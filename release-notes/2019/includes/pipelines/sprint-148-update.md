@@ -39,12 +39,12 @@ See the full announcement and instructions [here](https://devblogs.microsoft.com
 
 Previously, you didn't have the option to use `[skip ci]` to skip a build when using the Azure Pipeline GitHub app. You can now tell Azure Pipelines to ignore a commit and skip running a pipeline that the commit would normally trigger. Just include `[skip ci]` in the commit message of the HEAD commit and Azure Pipelines will skip CI. You can also use any of the variations listed below. This is supported for commits to Azure Repos Git, Bitbucket Cloud, GitHub, and GitHub Enterprise Server.
 
-* `[skip ci]` or `[ci skip]`
-* `skip-checks: true` or `skip-checks:true`
-* `[skip azurepipelines]` or `[azurepipelines skip]`
-* `[skip azpipelines]` or `[azpipelines skip]`
-* `[skip azp]` or `[azp skip]`
-* `***NO_CI***`
+- `[skip ci]` or `[ci skip]`
+- `skip-checks: true` or `skip-checks:true`
+- `[skip azurepipelines]` or `[azurepipelines skip]`
+- `[skip azpipelines]` or `[azpipelines skip]`
+- `[skip azp]` or `[azp skip]`
+- `***NO_CI***`
 
 ### Updates to hosted pipelines images
 
@@ -52,9 +52,9 @@ We're excited to announce that we've added a new VM image that you can use with 
 
 In addition, we've made updates to the Azure Pipelines hosted images. The following images were changed as part of this update:
 
-* VS2017
-* Ubuntu 16.04
-* Windows Container 1803
+- VS2017
+- Ubuntu 16.04
+- Windows Container 1803
 
 For more details on the tools and versions available on our image content, visit our image generation repo on GitHub [here](https://github.com/Microsoft/azure-pipelines-image-generation).
 
@@ -78,8 +78,8 @@ Previously, when you had a scheduled release trigger, a release would get trigge
 
 We are rolling out enhancements to the log viewer for build and release. With this update, we are including the following changes:
 
-* Do not show timestamps on every line of log, hence making it easy to parse the logs.
-* Better support for ANSI color codes and special characters.
+- Do not show timestamps on every line of log, hence making it easy to parse the logs.
+- Better support for ANSI color codes and special characters.
 
 > [!div class="mx-imgBorder"] > ![Badge](../../media/148_14.png)
 
@@ -102,18 +102,18 @@ By default, your pipeline will infer the test output for a few popular test runn
 
 Currently, the following languages and test runners are supported:
 
-* Javascript - Mocha
-* Javascript - Jest
-* Javascript - Jasmine
-* Python - Unittest
+- Javascript - Mocha
+- Javascript - Jest
+- Javascript - Jasmine
+- Python - Unittest
 
 > [!NOTE]
 > The test report is a preview of the full test report and Insights experience. The following features are not available at this time:
 >
-> * Associate a test failure with a new bug or see a list of associated work items for the failure.
-> * Group the test results by test file, owner, priority etc.
-> * Search and filter the test results.
-> * Preview attachments generated during the test runs in the web UI.
+> - Associate a test failure with a new bug or see a list of associated work items for the failure.
+> - Group the test results by test file, owner, priority etc.
+> - Search and filter the test results.
+> - Preview attachments generated during the test runs in the web UI.
 
 For more details on analyzing test results see the documentation [here](https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops).
 

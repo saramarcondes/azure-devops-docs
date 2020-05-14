@@ -57,8 +57,8 @@ Or you can reduce the amount of time taken to run the tests even further by usin
 The step that runs the tests in a job needs to know which test slice should be
 run. The variables `System.JobPositionInPhase` and `System.TotalJobsInPhase` can be used for this purpose:
 
-* `System.TotalJobsInPhase` indicates the total number of slices (you can think of this as "totalSlices")
-* `System.JobPositionInPhase` identifies a particular slice (you can think of this as "sliceNum")
+- `System.TotalJobsInPhase` indicates the total number of slices (you can think of this as "totalSlices")
+- `System.JobPositionInPhase` identifies a particular slice (you can think of this as "sliceNum")
 
 If you represent all test files as a single dimensional array, each job can run a test file indexed at
 [sliceNum + totalSlices], until all the test files are run.

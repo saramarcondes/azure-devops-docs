@@ -25,7 +25,7 @@ You can specify the conditions under which each job runs. By default, a job runs
 You can specify conditions under which a step, job, or stage will run.
 [!INCLUDE [include](includes/task-run-built-in-conditions.md)]
 
-* Custom conditions
+- Custom conditions
 
 By default, steps, jobs, and stages run if all previous steps/jobs have succeeded.
 It's as if you specified "condition: succeeded()" (see [Job status functions](expressions.md#job-status-functions)).
@@ -56,7 +56,7 @@ you can specify the conditions under which the task or job will run:
 
 [!INCLUDE [include](includes/task-run-built-in-conditions.md)]
 
-* Custom conditions
+- Custom conditions
 
 ---
 
@@ -218,5 +218,5 @@ jobs:
 
 ## Related articles
 
-* [Specify jobs in your pipeline](../process/phases.md)
-* [Add stages, dependencies, & conditions](../process/stages.md)
+- [Specify jobs in your pipeline](../process/phases.md)
+- [Add stages, dependencies, & conditions](../process/stages.md)

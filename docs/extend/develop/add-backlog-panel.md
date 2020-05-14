@@ -70,9 +70,9 @@ Update your [extension manifest](../develop/manifest.md) file with the following
 
 For each contribution in your extension, the manifest defines
 
-* the type of contribution (backlog panel in this case),
-* the contribution target (the requirements, portfolio, and iteration backlogs in this case),
-* and the properties that are specific to each type of contribution. For panels, we have
+- the type of contribution (backlog panel in this case),
+- the contribution target (the requirements, portfolio, and iteration backlogs in this case),
+- and the properties that are specific to each type of contribution. For panels, we have
 
 | Property           | Description                                                                     |
 | ------------------ | ------------------------------------------------------------------------------- |

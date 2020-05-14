@@ -19,15 +19,15 @@ Using OData queries is the recommended approach for pulling data into Power BI. 
 
 Power BI can run OData queries, which can return a filtered or aggregated set of data to Power BI. OData queries have two advantages:
 
-* All filtering is done server-side. Only the data you need is returned, which leads to shorter refresh times.
-* You can pre-aggregate data server-side. An OData query can perform aggregations such as work item rollup and build failure rates. The aggregations are accomplished server-side, and only the aggregate values are returned to Power BI. With pre-aggregation, you can perform aggregations across large data sets, without needing to pull all the detail data into Power BI.
+- All filtering is done server-side. Only the data you need is returned, which leads to shorter refresh times.
+- You can pre-aggregate data server-side. An OData query can perform aggregations such as work item rollup and build failure rates. The aggregations are accomplished server-side, and only the aggregate values are returned to Power BI. With pre-aggregation, you can perform aggregations across large data sets, without needing to pull all the detail data into Power BI.
 
 In this article, you learn how to:
 
 > [!div class="checklist"]
 >
-> * Write and test OData queries.
-> * Run an OData query from Power BI.
+> - Write and test OData queries.
+> - Run an OData query from Power BI.
 
 [!INCLUDE [temp](../includes/analytics-prerequisites.md)]
 
@@ -145,19 +145,19 @@ Replace `[Implementation="2.0"]` with the following string:
 >
 > To prevent this issue:
 >
-> * Instruct Power BI to reference OData v4.
-> * Instruct the Analytics service to omit any values that are null, which improves query performance.
+> - Instruct Power BI to reference OData v4.
+> - Instruct the Analytics service to omit any values that are null, which improves query performance.
 
 > [!NOTE]
 > The following action is required for Power BI to successfully run an OData query against the Azure DevOps Analytics Service.
 >
 > Select **OK** to close the Advanced Editor and return to the Power BI Power Query Editor. You can use Power Query Editor to perform these optional actions:
 >
-> * Rename the "Query1" query as something more specific.
-> * Transform columns to a specific type. Power BI auto-detects the type, but you might want to convert column to a specific data type.
-> * Add computed columns.
-> * Remove columns.
-> * Expand columns into specific fields.
+> - Rename the "Query1" query as something more specific.
+> - Transform columns to a specific type. Power BI auto-detects the type, but you might want to convert column to a specific data type.
+> - Add computed columns.
+> - Remove columns.
+> - Expand columns into specific fields.
 
 ### 4. Create a report by using the data
 
@@ -167,7 +167,7 @@ Select **Close & Apply** to save your settings and pull the data into Power BI. 
 
 ## Related articles
 
-* [Sample Power BI Reports by using OData queries](sample-odata-overview.md)
-* [Data available from Analytics](data-available-in-analytics.md)
-* [Grant permissions to access Analytics](./analytics-security.md)
-* [Power BI integration overview](overview.md)
+- [Sample Power BI Reports by using OData queries](sample-odata-overview.md)
+- [Data available from Analytics](data-available-in-analytics.md)
+- [Grant permissions to access Analytics](./analytics-security.md)
+- [Power BI integration overview](overview.md)

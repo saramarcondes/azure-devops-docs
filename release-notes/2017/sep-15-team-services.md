@@ -15,12 +15,12 @@ In the **Sprint 123 Update** of Visual Studio Team Services (VSTS) we’re annou
 
 Some of the other key feature highlights include:
 
-* [New Queries experience](#new-queries-experience) - Use favorites and a simplified directory to get to the queries that are important to you.
-* [Personalized notifications for releases](#personalized-notifications-for-releases) - Keep the release pipeline moving with automated notifications for interventions.
-* [Run webtests using the VSTest task](#run-webtests-using-the-vstest-task) - Include webtests in your CI/CD pipeline.
-* [Gulp, Yarn, and more authenticated feed support](#gulp-yarn-and-more-authenticated-feed-support) - Use authenticated feeds in subsequent build tasks.
-* [Burndown and Burnup widgets](#burndown-and-burnup-widgets) - Answer the question: Will we complete this project on time?
-* [Deep linking](#wiki-page-deep-linking), [preview content side-by-side](#preview-content-as-you-edit-wiki-pages), and [paste rich HTML content](#paste-rich-content-as-html) in Wiki.
+- [New Queries experience](#new-queries-experience) - Use favorites and a simplified directory to get to the queries that are important to you.
+- [Personalized notifications for releases](#personalized-notifications-for-releases) - Keep the release pipeline moving with automated notifications for interventions.
+- [Run webtests using the VSTest task](#run-webtests-using-the-vstest-task) - Include webtests in your CI/CD pipeline.
+- [Gulp, Yarn, and more authenticated feed support](#gulp-yarn-and-more-authenticated-feed-support) - Use authenticated feeds in subsequent build tasks.
+- [Burndown and Burnup widgets](#burndown-and-burnup-widgets) - Answer the question: Will we complete this project on time?
+- [Deep linking](#wiki-page-deep-linking), [preview content side-by-side](#preview-content-as-you-edit-wiki-pages), and [paste rich HTML content](#paste-rich-content-as-html) in Wiki.
 
 ## Work
 
@@ -41,10 +41,10 @@ Alternatively, browse all your personal and shared queries in the new directory 
 
 The directory pages highlight new metadata for each query, including:
 
-* The type of query
-* The path within the hierarchy
-* Who last modified it
-* When it was last modified
+- The type of query
+- The path within the hierarchy
+- Who last modified it
+- When it was last modified
 
 The pages also include a filter bar that lets you quickly search for any query you care about.
 
@@ -52,11 +52,11 @@ The pages also include a filter bar that lets you quickly search for any query y
 
 We’ve also made the following improvements:
 
-* Create and edit followed work item queries with the @Follows macro
-* Query for work items you were mentioned in with the @Mentions macro
-* **Save as** now copies charts to the new query
-* Simplified command bars for **Results** and **Editor**
-* Expanded filter capabilities in the result grid
+- Create and edit followed work item queries with the @Follows macro
+- Query for work items you were mentioned in with the @Mentions macro
+- **Save as** now copies charts to the new query
+- Simplified command bars for **Results** and **Editor**
+- Expanded filter capabilities in the result grid
 
 ### Keyboard shortcuts in the work item form
 
@@ -120,8 +120,8 @@ You will observe similar behavior in all code navigation panes as well. For exam
 
 **Wiki** now supports deep linking sections within a page and across pages, which is really useful for creating a table of contents. You can reference a heading in the same page or another page by using the following syntax:
 
-* Same page: `[text to display](#section-name)`
-* Another page: `[text to display](/page-name#section-name)`
+- Same page: `[text to display](#section-name)`
+- Another page: `[text to display](/page-name#section-name)`
 
 See the [documentation for Markdown syntax guidance](/azure/devops/reference/markdown-guidance#links) for more information.
 
@@ -159,9 +159,9 @@ When this feature reaches your account, you’ll notice that all your current bu
 
 We’re still working on a few features, including:
 
-* Ability to select a different queue in each phase.
-* Ability to consume output variables from one phase in a subsequent phase.
-* Ability to run phases in parallel. (For now, all the phases you define run sequentially).
+- Ability to select a different queue in each phase.
+- Ability to consume output variables from one phase in a subsequent phase.
+- Ability to run phases in parallel. (For now, all the phases you define run sequentially).
 
 ## Release
 
@@ -257,11 +257,11 @@ The **Burndown** widget helps you answer the question: Will we complete this pro
 
 To help you answer that question, it provides these features:
 
-* Displays percentage complete
-* Computes average burndown
-* Shows you when you have items not estimated with story points
-* Tracks your scope increase over the course of the project
-* Projects your project’s completion date based on historical burndown and scope increase trends
+- Displays percentage complete
+- Computes average burndown
+- Shows you when you have items not estimated with story points
+- Tracks your scope increase over the course of the project
+- Projects your project’s completion date based on historical burndown and scope increase trends
 
 You can burndown on any work item type based on count of work items or by the sum of a specific field (e.g.: Story Points). You can burndown using daily/weekly/monthly intervals or based on an iteration schedule. You can even add additional filter criteria to fine tune the exact scope of work you are burning down.
 

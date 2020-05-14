@@ -24,10 +24,10 @@ You rank and prioritize work items when you [Create your backlog](../backlogs/cr
 
 Query clauses that specify a string or integer field can use the operators listed below.
 
-* = , <> , > , < , >= , <=
-* =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field]
-* In, Not In
-* Was Ever
+- = , <> , > , < , >= , <=
+- =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field]
+- In, Not In
+- Was Ever
 
 ## Pick list queries
 
@@ -64,7 +64,7 @@ Features and stories that address Architectural areas<br/>
 </tr>
 
 </tbody>
-</table>  
+</table>
 
 ## Fields used to plan and prioritize work
 
@@ -163,9 +163,9 @@ The following table describes the fields that you can use to plan and prioritize
 
 ## Related articles
 
-* [Query by a numeric field](query-numeric.md)
-* [Work item field index](../work-items/guidance/work-item-field.md)
-* [Work item fields and attributes](../work-items/work-item-fields.md).
+- [Query by a numeric field](query-numeric.md)
+- [Work item field index](../work-items/guidance/work-item-field.md)
+- [Work item fields and attributes](../work-items/work-item-fields.md).
 
 ### More on Backlog Priority or Stack Rank fields
 

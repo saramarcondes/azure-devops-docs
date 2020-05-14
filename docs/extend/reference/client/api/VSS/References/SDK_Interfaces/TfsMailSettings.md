@@ -17,6 +17,6 @@ Defined in vss.d.ts
 
 ### Members
 
-* `enabled`: boolean.
+- `enabled`: boolean.
 
-* `from`: string.
+- `from`: string.

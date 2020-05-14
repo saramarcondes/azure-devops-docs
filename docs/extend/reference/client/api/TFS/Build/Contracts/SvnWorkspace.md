@@ -16,4 +16,4 @@ Module path: `TFS/Build/Contracts`
 
 ### Members
 
-* `mappings`: [SvnMappingDetails](./SvnMappingDetails.md)[].
+- `mappings`: [SvnMappingDetails](./SvnMappingDetails.md)[].

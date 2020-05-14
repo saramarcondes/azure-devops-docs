@@ -44,9 +44,9 @@ The data about work item count is derived from the cube, and other parameter inf
 
 You can filter the report in the following ways:
 
-* Change the start and end dates for the report.
+- Change the start and end dates for the report.
 
-* Filter the tasks, stories, test cases, and bugs that are counted in the report by specifying one or more iterations, area paths, and types of work items.
+- Filter the tasks, stories, test cases, and bugs that are counted in the report by specifying one or more iterations, area paths, and types of work items.
 
   For more information, see [Filtering the Report and Changing the Display](#Changing) later in this article.
 
@@ -54,11 +54,11 @@ You can filter the report in the following ways:
 
 For the Unplanned Work report to be useful and accurate, the team must perform the following activities to track work items:
 
-* At the start of an iteration, review the backlog of user stories, test cases, tasks, and bugs, and assign each to the iteration during which the team will work on them.
+- At the start of an iteration, review the backlog of user stories, test cases, tasks, and bugs, and assign each to the iteration during which the team will work on them.
 
-* As work is identified and added to the iteration, update the **Iteration** field of the work item to match the current iteration.
+- As work is identified and added to the iteration, update the **Iteration** field of the work item to match the current iteration.
 
-* (Optional) To support filtering, assign the **Area** that represents the product area to which the work item belongs.
+- (Optional) To support filtering, assign the **Area** that represents the product area to which the work item belongs.
 
   > [!NOTE]
   > For information about how to define iteration and area paths, see [Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) .
@@ -83,20 +83,20 @@ You can use the Unplanned Work report to understand how well the team is estimat
 
 You can review the report to determine the amount of scope creep that has occurred throughout an iteration or over time. Specifically, you can find answers to these questions:
 
-* What is the delta between planned work at the start of the iteration and work performed?
+- What is the delta between planned work at the start of the iteration and work performed?
 
-* Is too much work being added during the iteration? Is the team expanding the scope of the work?
+- Is too much work being added during the iteration? Is the team expanding the scope of the work?
 
 ## <a name="Changing"></a> Filtering the Report and Changing the Display
 
 You can filter the Unplanned Work report or change its display in the following ways:
 
-* Change the plan completion date and start dates for the report.
+- Change the plan completion date and start dates for the report.
 
   > [!IMPORTANT]
   > The plan completion date refers to the date when your team finishes planning for the iteration.
 
-* Filter the user stories, bugs, and tasks that appear in the report by specifying iteration and area paths and types of work items.
+- Filter the user stories, bugs, and tasks that appear in the report by specifying iteration and area paths and types of work items.
 
   The following illustration shows the available filters and display options:
 
@@ -106,9 +106,9 @@ You can filter the Unplanned Work report or change its display in the following 
 
 1.  Perform one or more of the following actions:
 
-    * In the **Iteration** or **Area** list, select the check box of each iteration or product area to include.
+    - In the **Iteration** or **Area** list, select the check box of each iteration or product area to include.
 
-    * In the **Work Item Type** list, select the check box of each work item type to include.
+    - In the **Work Item Type** list, select the check box of each work item type to include.
 
 2.  Click **View Report**.
 

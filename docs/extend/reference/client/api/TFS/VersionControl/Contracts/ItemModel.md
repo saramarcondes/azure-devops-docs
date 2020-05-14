@@ -15,14 +15,14 @@ Module path: `TFS/VersionControl/Contracts`
 
 ### Members
 
-* `_links`: any.
+- `_links`: any.
 
-* `contentMetadata`: [FileContentMetadata](../../../TFS/VersionControl/Contracts/FileContentMetadata.md).
+- `contentMetadata`: [FileContentMetadata](../../../TFS/VersionControl/Contracts/FileContentMetadata.md).
 
-* `isFolder`: boolean.
+- `isFolder`: boolean.
 
-* `isSymLink`: boolean.
+- `isSymLink`: boolean.
 
-* `path`: string.
+- `path`: string.
 
-* `url`: string.
+- `url`: string.

@@ -52,15 +52,15 @@ The **Pipeline pass rate** report provides a granular view of the pipeline pass 
 
 The report contain the following sections:
 
-* **Summary**: Provides the key metrics of pass rate of the pipeline over the specified period. The default view shows data for 14 days, which you can modify.
+- **Summary**: Provides the key metrics of pass rate of the pipeline over the specified period. The default view shows data for 14 days, which you can modify.
 
   > [!div class="mx-imgBorder"] > ![View Top Failing Task](media/pipelines-reports/top-failing.png)
 
-* **Failure trend**: Shows the number of failures per day. This data is divided by stages if multiple stages are applicable for the pipeline.
+- **Failure trend**: Shows the number of failures per day. This data is divided by stages if multiple stages are applicable for the pipeline.
 
   > [!div class="mx-imgBorder"] > ![View pass rate](media/pipelines-reports/pass-rate.png)
 
-* **Top failing tasks & their failed runs**: Lists the top failing tasks, their trend and provides pointers to their failed runs. Analyze the failures in the build to fix your failing task and improve the pass rate of the pipeline.
+- **Top failing tasks & their failed runs**: Lists the top failing tasks, their trend and provides pointers to their failed runs. Analyze the failures in the build to fix your failing task and improve the pass rate of the pipeline.
   > [!div class="mx-imgBorder"] > ![View Task Failure Details](media/pipelines-reports/failing-tasks.png)
 
 ## Pipeline duration report
@@ -77,18 +77,17 @@ The **Pipeline duration** report shows how long your pipeline typically takes to
 
 The **Test failures** report provides a granular view of the top failing tests in the pipeline, along with the failure details. For more information on this report, see [Test failures](../test/test-analytics.md#test-failures).
 
-> [!div class="mx-imgBorder"]
-> ![Test analytics detail view](../test/media/test-analytics/test-failures.png)
+> [!div class="mx-imgBorder"] > ![Test analytics detail view](../test/media/test-analytics/test-failures.png)
 
 ## Filters
 
 Pipelines reports can be further filtered by date range or branch.
 
-* **Date range**: The default view shows data from the last 14 days. The filter helps change this range.
+- **Date range**: The default view shows data from the last 14 days. The filter helps change this range.
 
   > [!div class="mx-imgBorder"] > ![View days filter](media/pipelines-reports/days-filter.png)
 
-* **Branch filter**: View the report for a particular branch or a set of branches.
+- **Branch filter**: View the report for a particular branch or a set of branches.
 
   > [!div class="mx-imgBorder"] > ![View branch filter](media/pipelines-reports/branch-filter.png)
 

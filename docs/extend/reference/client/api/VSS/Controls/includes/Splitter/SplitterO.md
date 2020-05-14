@@ -1,17 +1,17 @@
 [!INCLUDE [styleoverrides](../../../../_data/style-overrides.md)]
 
-* [setMinWidth()](#method_setMinWidth)
-* [setMaxWidth()](#method_setMaxWidth)
-* [resize()](#method_resize)
-* [expand()](#method_expand)
-* [collapse()](#method_collapse)
-* [isExpanded()](#method_isExpanded)
-* [getFixedSidePixels()](#method_getFixedSidePixels)
-* [noSplit()](#method_noSplit)
-* [split()](#method_split)
-* [vertical()](#method_vertical)
-* [horizontal()](#method_horizontal)
-* [setCollapsedLabel()](#method_setCollapsedLabel)
+- [setMinWidth()](#method_setMinWidth)
+- [setMaxWidth()](#method_setMaxWidth)
+- [resize()](#method_resize)
+- [expand()](#method_expand)
+- [collapse()](#method_collapse)
+- [isExpanded()](#method_isExpanded)
+- [getFixedSidePixels()](#method_getFixedSidePixels)
+- [noSplit()](#method_noSplit)
+- [split()](#method_split)
+- [vertical()](#method_vertical)
+- [horizontal()](#method_horizontal)
+- [setCollapsedLabel()](#method_setCollapsedLabel)
 
 <a name="method_setMinWidth"></a>
 
@@ -25,7 +25,7 @@ void
 
 #### Parameters
 
-* `minWidth`: number. minimum number of pixels the fixed side fills.
+- `minWidth`: number. minimum number of pixels the fixed side fills.
 
 <a name="method_setMaxWidth"></a>
 
@@ -39,7 +39,7 @@ void
 
 #### Parameters
 
-* `maxWidth`: number. maximum number of pixels the fixed side fills.
+- `maxWidth`: number. maximum number of pixels the fixed side fills.
 
 <a name="method_resize"></a>
 
@@ -53,9 +53,9 @@ void
 
 #### Parameters
 
-* `newSize`: any. New fixed side size in px.
-* `suppressFireResize`: boolean. Optional. Determines whether to suppress firing resize event or not.
-* `useAnimation`: boolean. Optional. Determines whether to use animation during resize or not.
+- `newSize`: any. New fixed side size in px.
+- `suppressFireResize`: boolean. Optional. Determines whether to suppress firing resize event or not.
+- `useAnimation`: boolean. Optional. Determines whether to use animation during resize or not.
 
 <a name="method_expand"></a>
 
@@ -109,7 +109,7 @@ void
 
 #### Parameters
 
-* `animate`: boolean. Optional.
+- `animate`: boolean. Optional.
 
 <a name="method_split"></a>
 
@@ -123,8 +123,8 @@ void
 
 #### Parameters
 
-* `animate`: boolean. Optional. Determines split operation is animated or not (default false).
-* `defaultExpandToPixels`: number. Optional. Specified value used for split amount. If not specified default value is used.
+- `animate`: boolean. Optional. Determines split operation is animated or not (default false).
+- `defaultExpandToPixels`: number. Optional. Specified value used for split amount. If not specified default value is used.
 
 <a name="method_vertical"></a>
 
@@ -158,4 +158,4 @@ void
 
 #### Parameters
 
-* `labelText`: string. Text displayed when the splitter is collapsed (null/empty for none)
+- `labelText`: string. Text displayed when the splitter is collapsed (null/empty for none)

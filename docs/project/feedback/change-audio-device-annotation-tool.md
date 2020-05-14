@@ -46,4 +46,4 @@ To change a setting, first launch Microsoft Feedback Client. For more informatio
 
 ## Related articles
 
-* [Provide feedback](give-feedback.md)
+- [Provide feedback](give-feedback.md)

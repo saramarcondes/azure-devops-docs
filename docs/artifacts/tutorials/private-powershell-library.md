@@ -22,10 +22,10 @@ In this tutorial, you'll learn how to use Azure Artifacts as a private PowerShel
 
 > [!div class="checklist"]
 >
-> * Create a Personal Access Token (PAT) to authenticate other services with Azure DevOps Services
-> * Create a feed within Azure Artifacts that will be used to store your PowerShell modules
-> * Create, package, and send a PowerShell module to your Azure Artifacts Feed
-> * Connect to the feed from PowerShell to see and download your modules
+> - Create a Personal Access Token (PAT) to authenticate other services with Azure DevOps Services
+> - Create a feed within Azure Artifacts that will be used to store your PowerShell modules
+> - Create, package, and send a PowerShell module to your Azure Artifacts Feed
+> - Connect to the feed from PowerShell to see and download your modules
 
 ## Prerequisites
 
@@ -70,9 +70,9 @@ A feed is a central repository that can store multiple packages of different typ
 
 3.  In the dialog:
 
-    * **Name**: Give the feed a name.
-    * **Visibility**: Choose who can use your feed. The options are either: all people in your organization or, only you. Choose People in your organization for this scenario.
-    * **Packages from public sources**: This is for enabling upstream sources like NuGet or NPM registries, this option is not applicable in this scenario, you can keep the default choice.
+    - **Name**: Give the feed a name.
+    - **Visibility**: Choose who can use your feed. The options are either: all people in your organization or, only you. Choose People in your organization for this scenario.
+    - **Packages from public sources**: This is for enabling upstream sources like NuGet or NPM registries, this option is not applicable in this scenario, you can keep the default choice.
 
 4.  Click _Create_.
 
@@ -168,9 +168,9 @@ We now have the module and the module manifest. We are ready to package it and s
 
     The `spec` command will create a `Get-Hello.nuspec` file. This specifies the information that NuGet needs when we package our module in the next few steps. There are two key things we need to do to this file:
 
-    * _A key part here: WE NEED THE VERSION NUMBER TO HAVE 3 PLACES. (EX: 1.0.0) and match as described below_
-    * The version number on the Module Manifest and the version number on the .nuspec file _must be the same_, use `1.0.0` for this tutorial.
-    * By default, if we leave the sample dependencies, NuGet will install jQuery, we should take that out. Here is a sample `Get-Hello.nuspec` file:
+    - _A key part here: WE NEED THE VERSION NUMBER TO HAVE 3 PLACES. (EX: 1.0.0) and match as described below_
+    - The version number on the Module Manifest and the version number on the .nuspec file _must be the same_, use `1.0.0` for this tutorial.
+    - By default, if we leave the sample dependencies, NuGet will install jQuery, we should take that out. Here is a sample `Get-Hello.nuspec` file:
 
       ```xml
       <?xml version="1.0"?>

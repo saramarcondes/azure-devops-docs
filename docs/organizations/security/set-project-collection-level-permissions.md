@@ -52,13 +52,13 @@ For a description of each group and each permission, see [Permissions and groups
 
 ::: moniker range="azure-devops"
 
-* You must be a member of a project. If you don't have a project yet, create one in [Azure DevOps](../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../accounts/add-organization-users.md).
+- You must be a member of a project. If you don't have a project yet, create one in [Azure DevOps](../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../accounts/add-organization-users.md).
   ::: moniker-end  
   ::: moniker range="<= azure-devops-2019"
-* You must be a member of a project. If you don't have a project yet, create one in an [on-premises TFS](../projects/create-project.md). If you haven't been added as a team member, [get added now](../../organizations/security/add-users-team-project.md).
+- You must be a member of a project. If you don't have a project yet, create one in an [on-premises TFS](../projects/create-project.md). If you haven't been added as a team member, [get added now](../../organizations/security/add-users-team-project.md).
   ::: moniker-end
-* To manage permissions or groups at the project level, you must be a member of the Project Administrators Group or have your **Edit project-level information** set to Allow. If you created the project, you are automatically added as a member of this group.
-* To manage permissions or groups at the collection or instance level, you must be a member of the Project Collection Administrators Group or have your **Edit instance-level information** set to Allow. If you created the organization or collection, you are automatically added as a member of this group.
+- To manage permissions or groups at the project level, you must be a member of the Project Administrators Group or have your **Edit project-level information** set to Allow. If you created the project, you are automatically added as a member of this group.
+- To manage permissions or groups at the collection or instance level, you must be a member of the Project Collection Administrators Group or have your **Edit instance-level information** set to Allow. If you created the organization or collection, you are automatically added as a member of this group.
 
 <a id="project-level" />
 
@@ -466,8 +466,8 @@ You can change a group name, description, add a group image, or delete a group.
 
 For on-premises deployments, see these additional topics:
 
-* [Add a user as a TFS server administrator](/azure/devops/server/admin/add-administrator)
-* [TFS service account groups](/azure/devops/server/admin/service-accounts-dependencies)
+- [Add a user as a TFS server administrator](/azure/devops/server/admin/add-administrator)
+- [TFS service account groups](/azure/devops/server/admin/service-accounts-dependencies)
 
 ::: moniker-end
 
@@ -480,8 +480,8 @@ If your on-premises deployment is integrated with SQL Server Reports, you'll nee
 ::: moniker range="<= tfs-2017"
 If your on-premises deployment is integrated with a SharePoint product or SQL Server Reports, you'll need to manage membership for those products separately from their websites.
 
-* [Set SharePoint site permissions](../../organizations/security/set-sharepoint-permissions.md)
-* [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md)
+- [Set SharePoint site permissions](../../organizations/security/set-sharepoint-permissions.md)
+- [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md)
 
 ::: moniker-end
 
@@ -491,10 +491,10 @@ If your on-premises deployment is integrated with a SharePoint product or SQL Se
 
 ## Related articles
 
-* [About permissions and groups](about-permissions.md)
-* [Permissions lookup reference](permissions-lookup-guide.md)
-* [Permissions and groups reference](permissions.md)
-* [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)
+- [About permissions and groups](about-permissions.md)
+- [Permissions lookup reference](permissions-lookup-guide.md)
+- [Permissions and groups reference](permissions.md)
+- [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)
 
 ## Frequently asked questions (FAQs) about adding administrators to projects and project collections
 
@@ -506,21 +506,21 @@ A: It varies. For most organizations that use Azure DevOps, Project Collection A
 
 A: Project collection administrators must be members of the following groups or have the following permissions:
 
-* Team Foundation Server: A member of the **Project Collection Administrators** group, or have the appropriate [collection-level permissions](../../organizations/security/permissions.md#collection) set to **Allow**.
+- Team Foundation Server: A member of the **Project Collection Administrators** group, or have the appropriate [collection-level permissions](../../organizations/security/permissions.md#collection) set to **Allow**.
 
-* SharePoint Products: If the collection is configured with a site collection resource, then a member of the **Site Collection Administrators** group.
+- SharePoint Products: If the collection is configured with a site collection resource, then a member of the **Site Collection Administrators** group.
 
-* Reporting Services: If the collection is configured with reporting resources, then a member of the **Team Foundation Content Manager** group.
+- Reporting Services: If the collection is configured with reporting resources, then a member of the **Team Foundation Content Manager** group.
 
 ### Q: I'm an admin, but I don't have permission to add a Project Collection Administrator. What do I need?
 
 A: The following permissions are required:
 
-* You must be a **Project Collection Administrator**, or your **View Server-Level Information** and **Edit Server-Level Information** permissions must be set to **Allow**.
+- You must be a **Project Collection Administrator**, or your **View Server-Level Information** and **Edit Server-Level Information** permissions must be set to **Allow**.
 
-* To add permissions for SharePoint Products, you must be a member of the **Site Collection Administrators** or **Farm Administrators** groups for SharePoint Products.
+- To add permissions for SharePoint Products, you must be a member of the **Site Collection Administrators** or **Farm Administrators** groups for SharePoint Products.
 
-* To add permissions for Reporting Services, you must be a member of the **Content Managers** or **Team Foundation Content Managers** groups for Reporting Services.
+- To add permissions for Reporting Services, you must be a member of the **Content Managers** or **Team Foundation Content Managers** groups for Reporting Services.
 
 > [!Important]
 > To perform administrative tasks like creating project collections, your user requires administrative permissions. The service account that the Team Foundation Background Job Agent uses must have certain permissions granted to it. For more information, see [Service accounts and dependencies in Team Foundation Server](/azure/devops/server/admin/service-accounts-dependencies) and [Team Foundation Background Job Agent](/azure/devops/server/architecture/background-job-agent).

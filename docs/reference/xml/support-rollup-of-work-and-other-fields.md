@@ -77,9 +77,9 @@ From the sprint backlog, the sum of all **Remaining Work** defined for all tasks
 
 From a sprint task board, there are three types of rollup:
 
-* The rollup of Remaining Work displays on the card for the parent work item
-* The sum of all Remaining Work defined for all tasks within a column displays at the top of each column
-* The sum of all Remaining Work defined for all tasks for a backlog item displays within each row, grouped by column.
+- The rollup of Remaining Work displays on the card for the parent work item
+- The sum of all Remaining Work defined for all tasks within a column displays at the top of each column
+- The sum of all Remaining Work defined for all tasks for a backlog item displays within each row, grouped by column.
 
 ::: moniker range="azure-devops"
 
@@ -171,8 +171,8 @@ To learn how, see [Rollup estimated and actual work](../../boards/backlogs/offic
 
 There are several extensions available from the [Marketplace](https://marketplace.visualstudio.com/vsts) that provide rollup. Here are a few that may support your needs:
 
-* [VSTS Rollup](https://marketplace.visualstudio.com/items?itemName=canarysautomationspvtltd.vstsrollup), supports Azure DevOps Services only
-* [TFS Aggregator](https://marketplace.visualstudio.com/items?itemName=tfsaggregatorteam.tfs-aggregator-server-plugin), supports Azure DevOps Services and TFS
+- [VSTS Rollup](https://marketplace.visualstudio.com/items?itemName=canarysautomationspvtltd.vstsrollup), supports Azure DevOps Services only
+- [TFS Aggregator](https://marketplace.visualstudio.com/items?itemName=tfsaggregatorteam.tfs-aggregator-server-plugin), supports Azure DevOps Services and TFS
 
 Or, you can write an extension using the [REST API for work tracking](/rest/api/azure/devops/wit/work%20items) to get rollup. A code sample available on github that can get you started is [TFS Aggregator](https://tfsaggregator.github.io/).
 
@@ -196,9 +196,9 @@ Several OOB reports provide rollup. Here's an example of rollup of completed and
 
 If you have SQL Server Analysis Services deployed, you can get rollup for backlog items from these reports. The refresh frequency for these reports is 2 hours.
 
-* [Backlog Overview](../../report/sql-reports/backlog-overview-scrum.md)
-* [Stories Overview](../../report/sql-reports/stories-overview-report-agile.md)
-* [Requirements Overview](../../report/sql-reports/requirements-overview-report-cmmi.md)
+- [Backlog Overview](../../report/sql-reports/backlog-overview-scrum.md)
+- [Stories Overview](../../report/sql-reports/stories-overview-report-agile.md)
+- [Requirements Overview](../../report/sql-reports/requirements-overview-report-cmmi.md)
 
 If you need to add reports to your on-premises TFS deployment, see [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md).
 
@@ -221,20 +221,20 @@ Like Project, Project Server natively supports rollup of summary tasks. If you h
 
 To support rollup, structure your work items according to the following recommendations:
 
-* Use parent-child links to link work items that contain values that you want to rollup.
+- Use parent-child links to link work items that contain values that you want to rollup.
 
-* Add required fields to the WITs that will capture the rollup values. Default fields used to schedule work are only present on the task work item. These fields are:
+- Add required fields to the WITs that will capture the rollup values. Default fields used to schedule work are only present on the task work item. These fields are:
 
-  * Original Estimate (Microsoft.VSTS.Scheduling.OriginalEstimate): The amount of work required to complete a task. (Agile and CMMI)
-  * Completed Work (Microsoft.VSTS.Scheduling.CompletedWork): The amount of work that has been spent implementing a task. (Agile and CMMI)
-  * Remaining Work (Microsoft.VSTS.Scheduling.RemainingWork): This field is used to support burndown charts.
+  - Original Estimate (Microsoft.VSTS.Scheduling.OriginalEstimate): The amount of work required to complete a task. (Agile and CMMI)
+  - Completed Work (Microsoft.VSTS.Scheduling.CompletedWork): The amount of work that has been spent implementing a task. (Agile and CMMI)
+  - Remaining Work (Microsoft.VSTS.Scheduling.RemainingWork): This field is used to support burndown charts.
 
     If your project was created using the Visual Studio Scrum process template, only Remaining Work is defined in the task.
 
     To learn more about adding fields, see [Modify a field or add a custom field](../add-modify-field.md).
 
-* Determine the unit of time used to track work and make sure it is used consistently across your team or organization. For example, you can track tasks using hours or days.
-* Determine if you want to make rollup values read-only on the work item form. By making them read-only you prevent users from entering inaccurate data. You make fields read-only using the `Control` field `Readonly` attribute.
+- Determine the unit of time used to track work and make sure it is used consistently across your team or organization. For example, you can track tasks using hours or days.
+- Determine if you want to make rollup values read-only on the work item form. By making them read-only you prevent users from entering inaccurate data. You make fields read-only using the `Control` field `Readonly` attribute.
 
 ## Q & A
 

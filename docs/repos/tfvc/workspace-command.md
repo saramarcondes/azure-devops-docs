@@ -82,7 +82,7 @@ When you create a new workspace, you can specify a _template workspace_ as part 
 
 ### Single Folder Mapping
 
-You can choose to map only the immediate children of a version control folder to a local workspace. To do this, add an asterisk wild-card character in the **Source Control Folder** box in the **Add Workspace** dialog box. For example, $/folder/\*. Otherwise, by default, all the children of the version control folder are recursively mapped to the local workspace.
+You can choose to map only the immediate children of a version control folder to a local workspace. To do this, add an asterisk wild-card character in the **Source Control Folder** box in the **Add Workspace** dialog box. For example, \$/folder/\*. Otherwise, by default, all the children of the version control folder are recursively mapped to the local workspace.
 
 Single folder mapping within a version control hierarchy is useful because it limits the number of items downloaded to the client computer. Another way to limit downloaded files is to cloak files that you do not need to have in your workspace. For more information, see [Cloak and Uncloak Folders in a Workspace](optimize-your-workspace.md). This provides faster download times and saves disk space on the client computer.
 
@@ -97,9 +97,9 @@ If you delete a workspace that contains pending changes, Team Foundation cancels
 
 You can change the following workspace attributes:
 
-* Workspace Name
-* Comment
-* Working folder mappings
+- Workspace Name
+- Comment
+- Working folder mappings
 
 If no workspace specification is provided, the workspace for the current folder is used.
 

@@ -82,10 +82,10 @@ Analytics via Excel.
 As an alternative to loading the data into Power Query, you can choose the drop-down arrow next to **Load** and select **Load To** instead.
 This action allows the following options:
 
-* Load the data to table which is Power Query
-* Create a connection without loading the data (essentially deferring the data load until later)
-* To a worksheet which will just load the one entity per worksheet
-* To a model (which you can select in addition to the other options) that loads the data into PowerPivot
+- Load the data to table which is Power Query
+- Create a connection without loading the data (essentially deferring the data load until later)
+- To a worksheet which will just load the one entity per worksheet
+- To a model (which you can select in addition to the other options) that loads the data into PowerPivot
 
 More information on these options can be found in the [Excel documentation](https://support.office.com/article/Add-a-query-to-an-Excel-worksheet-Power-Query-ca69e0f0-3db1-4493-900c-6279bef08df4?ui=en-US&rs=en-US&ad=US#querytoworksheet).
 
@@ -107,6 +107,6 @@ which is not allowed.
 
 ## Related articles
 
-* [Client authentication options](client-authentication-options.md)
-* [Microsoft Power Query for Excel](https://www.microsoft.com/download/details.aspx?id=39379&CorrelationId=3f2bb5d7-8db9-4e8f-ad58-bfa2789c877c)
-* [Excel documentation](https://support.office.com/article/Add-a-query-to-an-Excel-worksheet-Power-Query-ca69e0f0-3db1-4493-900c-6279bef08df4?ui=en-US&rs=en-US&ad=US#querytoworksheet)
+- [Client authentication options](client-authentication-options.md)
+- [Microsoft Power Query for Excel](https://www.microsoft.com/download/details.aspx?id=39379&CorrelationId=3f2bb5d7-8db9-4e8f-ad58-bfa2789c877c)
+- [Excel documentation](https://support.office.com/article/Add-a-query-to-an-Excel-worksheet-Power-Query-ca69e0f0-3db1-4493-900c-6279bef08df4?ui=en-US&rs=en-US&ad=US#querytoworksheet)

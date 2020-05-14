@@ -45,23 +45,23 @@ The team can use the Build dashboard to monitor the quality of builds and determ
 
 For the reports shown in the Build dashboard to be useful and accurate, the team must perform the following activities:
 
-* **Configure a build system**. To use Team Foundation Build, you must set up a build system.
+- **Configure a build system**. To use Team Foundation Build, you must set up a build system.
 
   For more information, see [Build and Release agents](../../pipelines/agents/agents.md).
 
-* **Create build pipelines**. You can create several build pipelines and then run each of them to produce code for a different platform. Also, you can run each build for a different configuration.
+- **Create build pipelines**. You can create several build pipelines and then run each of them to produce code for a different platform. Also, you can run each build for a different configuration.
 
   For more information, see [Get started with CI/CD](../../pipelines/get-started-designer.md).
 
-* **Define tests to run automatically as part of the build**. As part of the build pipeline, you can define tests to run as part of the build or to fail if the tests fail.
+- **Define tests to run automatically as part of the build**. As part of the build pipeline, you can define tests to run as part of the build or to fail if the tests fail.
 
   For more information, see [Set up continuous testing for your builds](../../pipelines/test/set-up-continuous-testing-builds.md).
 
-* **Configure tests to gather code coverage data**. For code coverage data to appear in the report, team members must instrument tests to gather that data.
+- **Configure tests to gather code coverage data**. For code coverage data to appear in the report, team members must instrument tests to gather that data.
 
   For more information, see [Run tests in your build process](../../pipelines/test/test-build.md).
 
-* **Run builds regularly**. You can run builds at regular intervals or after every check-in. You can create regular builds when you use the schedule trigger.
+- **Run builds regularly**. You can run builds at regular intervals or after every check-in. You can create regular builds when you use the schedule trigger.
 
   For more information, see [Build triggers](../../pipelines/build/triggers.md).
 
@@ -74,19 +74,19 @@ The team can use the Build dashboard to monitor the quality of builds and the le
 
 You can use the Code Coverage and Code Churn reports to answer the questions that are listed in the following table.
 
-* Which builds succeeded?
+- Which builds succeeded?
 
-* Which builds have a significant number of changes to the code?
+- Which builds have a significant number of changes to the code?
 
-* How often are builds succeeding?
+- How often are builds succeeding?
 
-* How volatile is the code base?
+- How volatile is the code base?
 
-* How much of the code is the team testing?
+- How much of the code is the team testing?
 
-* How high is the quality of the builds?
+- How high is the quality of the builds?
 
-* Is the quality increasing, decreasing, or staying constant?
+- Is the quality increasing, decreasing, or staying constant?
 
   For more information, see [Code Coverage](../excel/code-coverage-excel-report.md) and [Code Churn](../excel/code-churn-excel-report.md).
 

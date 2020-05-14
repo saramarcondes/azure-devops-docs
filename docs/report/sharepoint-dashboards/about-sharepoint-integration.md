@@ -22,17 +22,17 @@ Since its inception in 2005, TFS has integrated with SharePoint. That integratio
 
 With TFS 2013, TFS-SharePoint integration required you to install the TFS Extension for SharePoint on the SharePoint server and configure both servers to recognize each other. This integration provided the following features:
 
-* Automatically create a SharePoint site when creating a team project
-* Provision dashboard pages on that SharePoint site
-* Install SharePoint web parts that display TFS information such as work item query results and latest build results.
-* Support for browsing your SharePoint document libraries directly from Visual Studio Team Explorer.
+- Automatically create a SharePoint site when creating a team project
+- Provision dashboard pages on that SharePoint site
+- Install SharePoint web parts that display TFS information such as work item query results and latest build results.
+- Support for browsing your SharePoint document libraries directly from Visual Studio Team Explorer.
 
 However, you should consider the following before moving forward with this integration:
 
-* You can create your SharePoint site using SharePoint itself. Microsoft Teams also creates a team SharePoint site for sharing information
-* TFS 2017 Update 2 and later versions support [Dashboards](../../report/dashboards.md). Dashboards provide a very practical replacement for the TFS-SharePoint dashboards.
-* TFS dashboards offer an extensive [catalog of widgets](../../report/widget-catalog.md) which replace all of the SharePoint web parts offered by this integration. Additionally, you can find widgets developed by our partners from the [VSTS Marketplace](https://marketplace.visualstudio.com/search?term=widgets&target=VSTS&category=All%20categories&sortBy=Relevance).
-* Starting with TFS 2018, we are deprecating the tightly-coupled TFS-SharePoint integration in favor of integration using public APIs and extensibility frameworks.
+- You can create your SharePoint site using SharePoint itself. Microsoft Teams also creates a team SharePoint site for sharing information
+- TFS 2017 Update 2 and later versions support [Dashboards](../../report/dashboards.md). Dashboards provide a very practical replacement for the TFS-SharePoint dashboards.
+- TFS dashboards offer an extensive [catalog of widgets](../../report/widget-catalog.md) which replace all of the SharePoint web parts offered by this integration. Additionally, you can find widgets developed by our partners from the [VSTS Marketplace](https://marketplace.visualstudio.com/search?term=widgets&target=VSTS&category=All%20categories&sortBy=Relevance).
+- Starting with TFS 2018, we are deprecating the tightly-coupled TFS-SharePoint integration in favor of integration using public APIs and extensibility frameworks.
 
 You may want to ask yourself whether the integration benefits outweigh the costs of configuration.
 
@@ -69,17 +69,17 @@ You can configure the TFS extension for SharePoint Products on your SharePoint s
 >
 > Here are your main options:
 >
-> * You can use TFS standard or advanced configuration wizards to install SharePoint Foundation 2013 on the same server as Team Foundation Server. The Team Foundation Server extensions for SharePoint Products are installed automatically during Team Foundation Server installation.
-> * You can use the Team Foundation Server extensions for SharePoint Products configuration wizard to install SharePoint Foundation 2013 on a different server from the one running Team Foundation Server.
-> * You can use SharePoint Server. If you use the Enterprise edition of SharePoint Server, you must configure it for dashboard compatibility.
-> * You can use a different version of SharePoint Foundation than the one that ships with TFS.
+> - You can use TFS standard or advanced configuration wizards to install SharePoint Foundation 2013 on the same server as Team Foundation Server. The Team Foundation Server extensions for SharePoint Products are installed automatically during Team Foundation Server installation.
+> - You can use the Team Foundation Server extensions for SharePoint Products configuration wizard to install SharePoint Foundation 2013 on a different server from the one running Team Foundation Server.
+> - You can use SharePoint Server. If you use the Enterprise edition of SharePoint Server, you must configure it for dashboard compatibility.
+> - You can use a different version of SharePoint Foundation than the one that ships with TFS.
 
 ## Dashboard requirements
 
 TFS contains dashboards that use SharePoint Products features to display team data. The dashboards that are available to you depend on the version of SharePoint Products you use:
 
-* If you use any supported Enterprise edition of SharePoint Server, you get five dashboards that are based on Microsoft Excel.
-* If you use any other SharePoint Products (including the Standard editions of SharePoint Server), you get two dashboards that are based on SQL Server Reporting Services.
+- If you use any supported Enterprise edition of SharePoint Server, you get five dashboards that are based on Microsoft Excel.
+- If you use any other SharePoint Products (including the Standard editions of SharePoint Server), you get two dashboards that are based on SQL Server Reporting Services.
 
 ## SharePoint hardware requirements
 
@@ -87,9 +87,9 @@ If you install SharePoint Products, you must have more robust hardware than what
 
 For complete SharePoint hardware requirements, see the following articles:
 
-* [Hardware and software requirements for SharePoint 2013 (SharePoint Foundation 2013/SharePoint Server 2013)](https://technet.microsoft.com/library/cc262485.aspx)
-* [Hardware and software requirements (SharePoint Foundation 2010)](https://go.microsoft.com/fwlink/?LinkId=231850)
-* [Hardware and software requirements (SharePoint Server 2010)](<https://technet.microsoft.com/library/cc262485(v=office.14).aspx>)
+- [Hardware and software requirements for SharePoint 2013 (SharePoint Foundation 2013/SharePoint Server 2013)](https://technet.microsoft.com/library/cc262485.aspx)
+- [Hardware and software requirements (SharePoint Foundation 2010)](https://go.microsoft.com/fwlink/?LinkId=231850)
+- [Hardware and software requirements (SharePoint Server 2010)](<https://technet.microsoft.com/library/cc262485(v=office.14).aspx>)
 
 ## TFS 2018, Azure DevOps Server 2019, and later versions
 
@@ -99,9 +99,9 @@ Starting with TFS 2018, we no longer offer the TFS Extension for SharePoint. Add
 
 ## Referenced topics
 
-* [Add and manage dashboards](../../report/dashboards.md)
-* [Widget catalog](../../report/widget-catalog.md)
-* [Configure SharePoint Integration: TFS 2017 and earlier versions](./configure-sharepoint-tfs-2017-earlier.md)
-* [Discontinue SharePoint integration: TFS 2017 and earlier versions](./deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md)
-* [Upgrade from SharePoint 2013 with TFS integration to SharePoint 2016](./deprecation/upgrade-from-sharepoint2013-to-sharepoint-2106.md)
-* [VSTS Marketplace](https://marketplace.visualstudio.com/search?term=widgets&target=VSTS&category=All%20categories&sortBy=Relevance)
+- [Add and manage dashboards](../../report/dashboards.md)
+- [Widget catalog](../../report/widget-catalog.md)
+- [Configure SharePoint Integration: TFS 2017 and earlier versions](./configure-sharepoint-tfs-2017-earlier.md)
+- [Discontinue SharePoint integration: TFS 2017 and earlier versions](./deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md)
+- [Upgrade from SharePoint 2013 with TFS integration to SharePoint 2016](./deprecation/upgrade-from-sharepoint2013-to-sharepoint-2106.md)
+- [VSTS Marketplace](https://marketplace.visualstudio.com/search?term=widgets&target=VSTS&category=All%20categories&sortBy=Relevance)

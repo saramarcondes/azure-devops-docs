@@ -11,9 +11,9 @@ monikerRange: '>= azure-devops-2019'
 
 Runtime parameters let you have more control over what values can be passed to a pipeline. With runtime parameters you can:
 
-* Supply different values to scripts and tasks at runtime
-* Control parameter types, ranges allowed, and defaults
-* Dynamically select jobs and stages with template expressions
+- Supply different values to scripts and tasks at runtime
+- Control parameter types, ranges allowed, and defaults
+- Dynamically select jobs and stages with template expressions
 
 You can specify [parameters in templates](templates.md) and in the pipeline. Parameters have data types such as number and string, and they can be restricted to a subset of values. The `parameters` section in a YAML defines what parameters are available.
 

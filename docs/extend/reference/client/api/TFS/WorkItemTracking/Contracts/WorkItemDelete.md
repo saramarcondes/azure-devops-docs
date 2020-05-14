@@ -17,4 +17,4 @@ Extends: [WorkItemDeleteReference](../../../TFS/WorkItemTracking/Contracts/WorkI
 
 ### Members
 
-* `resource`: [WorkItem](../../../TFS/WorkItemTracking/Contracts/WorkItem.md).
+- `resource`: [WorkItem](../../../TFS/WorkItemTracking/Contracts/WorkItem.md).

@@ -92,9 +92,9 @@ None
 
 This task has a couple of known issues:
 
-* Some minimatch patterns don't work.
+- Some minimatch patterns don't work.
 
-* It eliminates the most common root path for all paths matched.
+- It eliminates the most common root path for all paths matched.
 
 You can avoid these issues by instead using the [Copy Files task](copy-files.md) and the [Publish Build Artifacts task](publish-build-artifacts.md).
 

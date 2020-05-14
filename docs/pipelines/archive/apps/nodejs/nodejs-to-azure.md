@@ -20,9 +20,9 @@ Here we'll show you how to define a continuous integration (CI) build pipeline f
 
 2.  Do you have your own code?
 
-    * No: Upload the sample app to Azure Pipelines or your on-premises Team Foundation Server. Either push your code to Git or check in your code to TFVC.
+    - No: Upload the sample app to Azure Pipelines or your on-premises Team Foundation Server. Either push your code to Git or check in your code to TFVC.
 
-    * Yes:
+    - Yes:
 
       1.  Copy the **gulpfile.js** and **web.config** files from the sample app to the root folder of your app.
 
@@ -68,6 +68,7 @@ On the **Tasks** or **Build** tab, add these tasks.
 <img src="../../../tasks/package/media/npm.png" alt="Package: npm install"/>
 
 <br/><strong>Package: npm install</strong></td>
+
 <td>
 
 <p>Install your npm package dependencies.</p>
@@ -82,6 +83,7 @@ On the **Tasks** or **Build** tab, add these tasks.
 <img src="../../../tasks/build/media/gulp.png" alt="Build: gulp"/>
 
 <br/><strong>Build: gulp</strong></td>
+
 <td>
 
 <p>Pack your files into a .zip file.</p>
@@ -104,6 +106,7 @@ On the **Tasks** or **Build** tab, add these tasks.
 <img src="../../../tasks/package/media/npm.png" alt="Package: npm test"/>
 
 <br/><strong>Package: npm test</strong></td>
+
 <td>
 
 <p>(Optional) Test your application.</p>
@@ -119,6 +122,7 @@ On the **Tasks** or **Build** tab, add these tasks.
 <img src="../../../tasks/build/media/publish-build-artifacts.png" alt="Build: Publish Build Artifacts"/>
 
 <br/><strong>Build: Publish Build Artifacts</strong></td>
+
 <td>
 
 <p>(Optional) Drop some of the build outputs, such as the .zip file as we do in the example below.</p>
@@ -143,11 +147,11 @@ Save and queue the build. Once the build is done, click the link to the complete
 
 After you've run the CI build, you're ready to create a continuous deployment (CD) release pipeline so that you can deploy your app to:
 
-* [![Azure Web App Deploy](../../../tasks/deploy/media/azure-web-app-deployment-icon.png) An Azure web site](../../../apps/cd/deploy-webdeploy-webapps.md)
+- [![Azure Web App Deploy](../../../tasks/deploy/media/azure-web-app-deployment-icon.png) An Azure web site](../../../apps/cd/deploy-webdeploy-webapps.md)
 
-* [![IIS Web App Deploy](../../../tasks/deploy/media/iis-web-application-deployment-icon.png) An IIS server](../../../apps/cd/deploy-webdeploy-iis-deploygroups.md)
+- [![IIS Web App Deploy](../../../tasks/deploy/media/iis-web-application-deployment-icon.png) An IIS server](../../../apps/cd/deploy-webdeploy-iis-deploygroups.md)
 
-* [![Build Machine Image](../../../tasks/deploy/media/build-machine-image.png) An Azure Scale Set](../../../apps/cd/azure/deploy-azure-scaleset.md)
+- [![Build Machine Image](../../../tasks/deploy/media/build-machine-image.png) An Azure Scale Set](../../../apps/cd/azure/deploy-azure-scaleset.md)
 
 ## Q&A
 

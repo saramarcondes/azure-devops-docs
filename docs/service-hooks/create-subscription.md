@@ -15,12 +15,12 @@ Using the [Subscriptions](https://docs.microsoft.com/rest/api/vsts/hooks/?view=v
 
 Supported events:
 
-* build completed
-* code pushed (for Git projects)
-* pull request create or updated (for Git projects)
-* code checked in (TFVC projects)
-* work item created, updated, deleted, restored or commented on
-* message posted to a team room
+- build completed
+- code pushed (for Git projects)
+- pull request create or updated (for Git projects)
+- code checked in (TFVC projects)
+- work item created, updated, deleted, restored or commented on
+- message posted to a team room
 
 You can configure filters on your subscriptions to control which events trigger an action. For example, you can filter the build completed event based on the build status. For a complete set of supported events and filter options, see the [event reference](./events.md).
 
@@ -36,9 +36,9 @@ take for the subscription.
 
 To create a subscription, the following data will be required:
 
-* project ID (use the [Project REST API](https://docs.microsoft.com/rest/api/vsts/core/projects?view=vsts-rest-4.1) to get the project ID)
-* event ID and settings (see the [event reference](./events.md))
-* consumer and action IDs and settings (see the [consumer reference](./consumers.md))
+- project ID (use the [Project REST API](https://docs.microsoft.com/rest/api/vsts/core/projects?view=vsts-rest-4.1) to get the project ID)
+- event ID and settings (see the [event reference](./events.md))
+- consumer and action IDs and settings (see the [consumer reference](./consumers.md))
 
 ### Create the request
 

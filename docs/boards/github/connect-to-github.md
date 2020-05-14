@@ -41,9 +41,9 @@ By connecting your Azure DevOps Server project with your GitHub Enterprise Serve
 
 ::: moniker range="azure-devops"
 
-* You must connect to an Azure Boards or Azure DevOps project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md).
-* You must be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) and the project's [Contributors group](../../organizations/security/add-users-team-project.md). If you created the project, then you have permissions.
-* You must be an administrator or owner of the GitHub repository you'll be connecting to.
+- You must connect to an Azure Boards or Azure DevOps project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md).
+- You must be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) and the project's [Contributors group](../../organizations/security/add-users-team-project.md). If you created the project, then you have permissions.
+- You must be an administrator or owner of the GitHub repository you'll be connecting to.
 
 > [!IMPORTANT]  
 > You can connect to multiple GitHub repositories so long as you are an administrator for those repositories.
@@ -52,9 +52,9 @@ By connecting your Azure DevOps Server project with your GitHub Enterprise Serve
 
 ::: moniker range="azure-devops-2019"
 
-* You must connect to an Azure Boards or Azure DevOps project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
-* You must be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) and the project's [Contributors group](../../organizations/security/add-users-team-project.md). If you created the project, then you have permissions.
-* You must be an administrator of the GitHub Enterprise Server you'll be connecting to.
+- You must connect to an Azure Boards or Azure DevOps project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
+- You must be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) and the project's [Contributors group](../../organizations/security/add-users-team-project.md). If you created the project, then you have permissions.
+- You must be an administrator of the GitHub Enterprise Server you'll be connecting to.
 
 ::: moniker-end
 
@@ -104,7 +104,6 @@ Depending on the platform you work from to connect to GitHub, you have a choice 
 </tbody>
 </table>
 
-
 ::: moniker range="azure-devops"
 
 ## Add a GitHub connection
@@ -118,7 +117,7 @@ Depending on the platform you work from to connect to GitHub, you have a choice 
 
     If connecting using PAT, see [Add a GitHub connection using PAT](#github-pat). If connecting to a GitHub Enterprise Server, see [Register Azure DevOps in GitHub as an OAuth App](#server-github-ent-oauth-register).
 
-1.      If this is your first time connecting to GitHub from Azure Boards, you will be asked to sign in using your GitHub credentials. Choose an account for which you are an administrator for the repositories you want to connect to.
+1.       If this is your first time connecting to GitHub from Azure Boards, you will be asked to sign in using your GitHub credentials. Choose an account for which you are an administrator for the repositories you want to connect to.
 
     > [!div class="mx-imgBorder"]  
     > ![GitHub sign in dialog](media/github/github-dialog-sign-in.png)  
@@ -165,7 +164,7 @@ Depending on the platform you work from to connect to GitHub, you have a choice 
 
 1. Choose (1) <strong>Project Settings</strong>, choose (2) <strong>GitHub connections</strong> and then (3) <strong>Connect your GitHub Account</strong>.
 
-	> [!div class="mx-imgBorder"]  
+	> [!div class="mx-imgBorder"]
 	> ![Project Settings>Integrations](media/github/open-project-settings-github-connections.png)
 
 	If connecting using PAT, see [Add a GitHub connection using PAT](#github-pat).
@@ -173,26 +172,26 @@ Depending on the platform you work from to connect to GitHub, you have a choice 
 
 2. Enter your GitHub account credentials. Choose an account for which you are an administrator for the repositories you want to connect to.
 
-	> [!div class="mx-imgBorder"]  
-	> ![GitHub sign in dialog](media/github/github-dialog-sign-in.png)  
+	> [!div class="mx-imgBorder"]
+	> ![GitHub sign in dialog](media/github/github-dialog-sign-in.png)
 3. If you have enabled two-factor authentication, enter the authentication code that GitHub sent you and choose <strong>Verify</strong>.
 
-	> [!div class="mx-imgBorder"]  
-	> ![GitHub two-factor authentication dialog](media/github/github-dialog-two-factor.png)  
+	> [!div class="mx-imgBorder"]
+	> ![GitHub two-factor authentication dialog](media/github/github-dialog-two-factor.png)
 
 4. Review the GitHub authorization dialog that appears which indicates the information you'll allow Azure Boards to access from GitHub. Choose <strong>Authorize AzureBoards</strong> when ready.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Project Settings>Integrations](media/github/git-dialog-authorize-boards.png)  
+	> [!div class="mx-imgBorder"]
+	> ![Project Settings>Integrations](media/github/git-dialog-authorize-boards.png)
 
 5. In the Add GitHub repositories dialog, you'll see the list of repositories for which you are an administrator.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Add GitHub repositories dialog](media/github/add-all-repos.png)  
+	> [!div class="mx-imgBorder"]
+	> ![Add GitHub repositories dialog](media/github/add-all-repos.png)
 
-	 Check the ones that you want to add and then choose <strong>Save</strong>. When done, you should see the new connection with the selected repository listed.  
+	 Check the ones that you want to add and then choose <strong>Save</strong>. When done, you should see the new connection with the selected repository listed.
 
-	> [!div class="mx-imgBorder"]  
+	> [!div class="mx-imgBorder"]
 	> ![List of GitHub repositories connected](media/github/repos-list.png)
 
 > [!TIP]
@@ -502,7 +501,7 @@ See [Troubleshoot GitHub repository connection](troubleshoot-github-connection.m
 
 ## Related articles
 
-* [What is Azure Boards?](../../boards/get-started/what-is-azure-boards.md)
-* [Install and configure the Azure Boards app for GitHub](install-github-app.md)
-* [Configure status badges to add to GitHub README files](configure-status-badges.md)
-* [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md)
+- [What is Azure Boards?](../../boards/get-started/what-is-azure-boards.md)
+- [Install and configure the Azure Boards app for GitHub](install-github-app.md)
+- [Configure status badges to add to GitHub README files](configure-status-badges.md)
+- [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md)

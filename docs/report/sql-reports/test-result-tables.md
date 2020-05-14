@@ -42,8 +42,8 @@ You can use the DimTeamProject, DimArea, and DimIteration tables to obtain detai
 
 ## Related notes
 
-* [Test results](perspective-test-analyze-report-test-results.md)
-* [Test Management Reports](../excel/test-management-reports.md)
-* [Testing overview](../../test/index.yml)
-* [Work Item Test Result tables](work-item-test-result-tables.md)
-* [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)
+- [Test results](perspective-test-analyze-report-test-results.md)
+- [Test Management Reports](../excel/test-management-reports.md)
+- [Testing overview](../../test/index.yml)
+- [Work Item Test Result tables](work-item-test-result-tables.md)
+- [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)

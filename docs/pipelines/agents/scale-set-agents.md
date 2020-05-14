@@ -20,22 +20,22 @@ Azure virtual machine scale set agents, hereafter referred to as scale set agent
 
 If you like Microsoft-hosted agents but are limited by what they offer, you should consider scale set agents. Here are some examples:
 
-* You need more memory, more processor, more storage, or more IO than what we offer in native Microsoft-hosted agents.
-* You need NCv2 VM with particular instruction sets for machine learning.
-* You need to deploy to a private Azure App Service in a private VNET with no inbound connectivity.
-* You need to open corporate firewall to specific IP addresses so that Microsoft-hosted agents can communicate with your servers.
-* You need to restrict network connectivity of agent machines and allow them to reach only approved sites.
-* You can't get enough agents from Microsoft to meet your needs.
-* Your jobs exceed the Microsoft-hosted agent timeout.
-* You can't partition Microsoft-hosted parallel jobs to individual projects or teams in your organization.
-* You want to run several consecutive jobs on an agent to take advantage of incremental source and machine-level package caches.
-* You want to run additional configuration or cache warmup before an agent begins accepting jobs.
+- You need more memory, more processor, more storage, or more IO than what we offer in native Microsoft-hosted agents.
+- You need NCv2 VM with particular instruction sets for machine learning.
+- You need to deploy to a private Azure App Service in a private VNET with no inbound connectivity.
+- You need to open corporate firewall to specific IP addresses so that Microsoft-hosted agents can communicate with your servers.
+- You need to restrict network connectivity of agent machines and allow them to reach only approved sites.
+- You can't get enough agents from Microsoft to meet your needs.
+- Your jobs exceed the Microsoft-hosted agent timeout.
+- You can't partition Microsoft-hosted parallel jobs to individual projects or teams in your organization.
+- You want to run several consecutive jobs on an agent to take advantage of incremental source and machine-level package caches.
+- You want to run additional configuration or cache warmup before an agent begins accepting jobs.
 
 If you like self-hosted agents but wish that you could simplify managing them, you should consider scale set agents. Here are some examples:
 
-* You don't want to run dedicated agents around the clock. You want to de-provision agent machines that are not being used to run jobs.
-* You run untrusted code in your pipeline and want to re-image agent machines after each job.
-* You want to simplify periodically updating the base image for your agents.
+- You don't want to run dedicated agents around the clock. You want to de-provision agent machines that are not being used to run jobs.
+- You run untrusted code in your pipeline and want to re-image agent machines after each job.
+- You want to simplify periodically updating the base image for your agents.
 
 > [!NOTE]
 > You cannot run Mac agents using scale sets. You can only run Windows or Linux agents this way.
@@ -88,10 +88,10 @@ In the following example, a new resource group and virtual machine scale set are
 
     Because Azure Pipelines manages the scale set, the following settings are required:
 
-    * `--disable-overprovision`
-    * `--upgrade-policy-mode manual`
-    * `--load-balancer ""`
-    * `--instance-count 2` - this setting is not required, but it will give you an opportunity to verify that the scale set is fully functional before you create an agent pool. Creation of the two VMs can take several minutes. Later, when you create the agent pool, Azure Pipelines will delete these two VMs and create new ones.
+    - `--disable-overprovision`
+    - `--upgrade-policy-mode manual`
+    - `--load-balancer ""`
+    - `--instance-count 2` - this setting is not required, but it will give you an opportunity to verify that the scale set is fully functional before you create an agent pool. Creation of the two VMs can take several minutes. Later, when you create the agent pool, Azure Pipelines will delete these two VMs and create new ones.
 
     > [!IMPORTANT]
     > If you run this script using Azure CLI on Windows, you must enclose the `""` in `--load-balancer ""` with single quotes like this: `--load-balancer '""'`
@@ -105,7 +105,7 @@ In the following example, a new resource group and virtual machine scale set are
 
 5.  After creating your scale set, navigate to your scale set in the Azure portal and verify the following settings:
 
-    * **Upgrade policy - Manual**
+    - **Upgrade policy - Manual**
 
       :::image type="content" source="media/scale-set-agents/upgrade-policy.png" alt-text="Verify upgrade policy." :::
 
@@ -119,7 +119,7 @@ In the following example, a new resource group and virtual machine scale set are
       vmssagentspool  vmssagents       westus               0           False            Manual
       ```
 
-    * **Scaling - Manual scale**
+    - **Scaling - Manual scale**
 
       :::image type="content" source="media/scale-set-agents/manual-scale.png" alt-text="Verify upgrade policy." :::
 
@@ -143,16 +143,16 @@ In the following example, a new resource group and virtual machine scale set are
 
 5.  Configure the following options:
 
-    * **Maximum number of virtual machines in the scale set** - Azure Pipelines will automatically scale-up the number of agents, but won't exceed this limit.
-    * **Number of agents to keep on standby** - Azure Pipelines will automatically scale-down the number of agents, but will ensure that there are always this many agents available to run new jobs. If you set this to **0**, for example to conserve cost for a low volume of jobs, Azure Pipelines will start a VM only when it has a job.
-    * **Automatically tear down virtual machines after every use** - If you select this option, a new VM instance is used for every job.
+    - **Maximum number of virtual machines in the scale set** - Azure Pipelines will automatically scale-up the number of agents, but won't exceed this limit.
+    - **Number of agents to keep on standby** - Azure Pipelines will automatically scale-down the number of agents, but will ensure that there are always this many agents available to run new jobs. If you set this to **0**, for example to conserve cost for a low volume of jobs, Azure Pipelines will start a VM only when it has a job.
+    - **Automatically tear down virtual machines after every use** - If you select this option, a new VM instance is used for every job.
 
     :::image type="content" source="media/scale-set-agents/agent-pool-settings.png" alt-text="Create agent pool." :::
 
     > [!IMPORTANT]
     > During the preview, scale set agents have the following limitations:
     >
-    > * You may not select **Preserve machines with failed runs for diagnostics**.
+    > - You may not select **Preserve machines with failed runs for diagnostics**.
 
 6.  When your settings are configured, choose **Create** to create the agent pool.
 
@@ -163,8 +163,8 @@ Using a scale set agent pool is similar to any other agent pool. You can use it 
 > [!IMPORTANT]
 > Caution must be exercised when making changes directly to the scale set in the Azure portal.
 >
-> * You may not change many of the the scale set configuration settings in the Azure portal. Azure Pipelines updates the configuration of the scale set. Any manual changes you make to the scale set may interfere with the operation of Azure Pipelines.
-> * You may not rename or delete a scale set without first deleting the scale set pool in Azure Pipelines.
+> - You may not change many of the the scale set configuration settings in the Azure portal. Azure Pipelines updates the configuration of the scale set. Any manual changes you make to the scale set may interfere with the operation of Azure Pipelines.
+> - You may not rename or delete a scale set without first deleting the scale set pool in Azure Pipelines.
 
 ## How Azure Pipelines manages the scale set
 
@@ -187,16 +187,16 @@ Due to the sampling size of 5 minutes, it is possible that all agents can be run
 
 ## Q & A
 
-* [Are there any limitations during the preview?](#are-there-any-limitations-during-the-preview)
-* [How do I create a scale set with custom software and custom disk size?](#how-do-i-create-a-scale-set-with-custom-software-and-custom-disk-size)
-* [Where can I find the images used for Microsoft-hosted agents?](#where-can-i-find-the-images-used-for-microsoft-hosted-agents)
+- [Are there any limitations during the preview?](#are-there-any-limitations-during-the-preview)
+- [How do I create a scale set with custom software and custom disk size?](#how-do-i-create-a-scale-set-with-custom-software-and-custom-disk-size)
+- [Where can I find the images used for Microsoft-hosted agents?](#where-can-i-find-the-images-used-for-microsoft-hosted-agents)
 
 ### Are there any limitations during the preview?
 
 During the preview, scale set agent pools have some limitations that you need to be aware of. We are actively working on removing these limitations.
 
-* Azure Pipelines cannot preserve a machine for debugging if you have a job that fails.
-* You should not enable or disable agents in the scale set agent pool using Azure Pipelines project settings. This can lead to unexpected behavior.
+- Azure Pipelines cannot preserve a machine for debugging if you have a job that fails.
+- You should not enable or disable agents in the scale set agent pool using Azure Pipelines project settings. This can lead to unexpected behavior.
 
 ### How do I create a scale set with custom software and custom disk size?
 
@@ -206,13 +206,13 @@ If you just want to create a scale set with the default 128GiB OS disk using a p
 
 1.  Create a VM with your desired OS image and optionally expand the OS disk size from 128GiB to <myDiskSizeGb>.
 
-    * If starting with an available Azure Image, for example <myBaseImage> = (Win2019DataCenter, UbuntuLTS):
+    - If starting with an available Azure Image, for example <myBaseImage> = (Win2019DataCenter, UbuntuLTS):
 
       ```azurecli
       az vm create --resource-group <myResourceGroup> --name <MyVM> --image <myBaseImage> --os-disk-size-gb <myDiskSize>  --admin-username myUserName --admin-password myPassword
       ```
 
-    * If starting with a generalized VHD, first create the VM with an unmanaged disk of the desired size and then convert to a managed disk:
+    - If starting with a generalized VHD, first create the VM with an unmanaged disk of the desired size and then convert to a managed disk:
 
       ```azurecli
       az vm create --resource-group <myResourceGroup> --name <MyVM> --image <myVhdUrl> --os-type windows --os-disk-size-gb <myDiskSizeGb> --use-unmanaged-disk --admin-username <myUserName> --admin-password <myPassword> --storage-account <myVhdStorageAccount>
@@ -245,22 +245,22 @@ If you just want to create a scale set with the default 128GiB OS disk using a p
 2.  Remote Desktop (or SSH) to the VM's public IP address to customize the image.
     You may need to open ports in the firewall to unblock the RDP (3389) or SSH (22) ports.
 
-    * [Windows] If <MyDiskSizeGb> is greater than 128Gb, extend the OS disk size to fill the disk size you declared above.
+    - [Windows] If <MyDiskSizeGb> is greater than 128Gb, extend the OS disk size to fill the disk size you declared above.
 
       Open DiskPart tool as administrator and run these DiskPart commands:
 
-      * `list volume` (to see the volumes)
-      * `select volume 2` (depends on which volume is the OS drive)
-      * `extend size 72000` (to extend the drive by 72 GiB, from 128GiB to 200GiB)
+      - `list volume` (to see the volumes)
+      - `select volume 2` (depends on which volume is the OS drive)
+      - `extend size 72000` (to extend the drive by 72 GiB, from 128GiB to 200GiB)
 
-    * Install any additional software on the VM
+    - Install any additional software on the VM
 
-    * Reboot the VM when finished with customizations
+    - Reboot the VM when finished with customizations
 
-    * Generalize the VM.
+    - Generalize the VM.
 
-      * [Windows] From an admin console window: `C:\Windows\System32\sysprep\sysprep.exe /generalize /oobe /shutdown`
-      * [Linux] `sudo waagent -deprovision+user -force`
+      - [Windows] From an admin console window: `C:\Windows\System32\sysprep\sysprep.exe /generalize /oobe /shutdown`
+      - [Linux] `sudo waagent -deprovision+user -force`
 
       > [!IMPORTANT]
       > Wait for the VM to finish generalization and shutdown the VM! Do not proceed until the VM has stopped. Allow 60 minutes.

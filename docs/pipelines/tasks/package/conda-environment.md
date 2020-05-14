@@ -43,8 +43,8 @@ None
 
 ## Prerequisites
 
-* A Microsoft-hosted agent, or a self-hosted agent with Anaconda or Miniconda installed.
-* If using a self-hosted agent, you must either add the `conda` executable to `PATH` or set the `CONDA` environment variable to the root of the Conda installation.
+- A Microsoft-hosted agent, or a self-hosted agent with Anaconda or Miniconda installed.
+- If using a self-hosted agent, you must either add the `conda` executable to `PATH` or set the `CONDA` environment variable to the root of the Conda installation.
 
 ::: moniker range="> tfs-2018"
 

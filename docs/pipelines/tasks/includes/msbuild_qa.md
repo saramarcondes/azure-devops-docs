@@ -11,9 +11,9 @@ ms.technology: devops-cicd-tasks
 
 If you are building a solution, in most cases you should use the [Visual Studio Build task](../build/visual-studio-build.md). This task automatically:
 
-* Sets the `/p:VisualStudioVersion` property for you. This forces MSBuild to use a particular set of targets that increase the likelihood of a successful build.
+- Sets the `/p:VisualStudioVersion` property for you. This forces MSBuild to use a particular set of targets that increase the likelihood of a successful build.
 
-* Specifies the MSBuild version argument.
+- Specifies the MSBuild version argument.
 
 In some cases you might need to use the [MSBuild task](../build/msbuild.md). For example, you should use it if you are building code projects apart from a solution.
 

@@ -28,15 +28,15 @@ instead.
 
 Before you start, you'll need:
 
-* **An Azure DevOps organization**.
-* **A project**.
-* **Azure VMs**. If you need to create them,
+- **An Azure DevOps organization**.
+- **A project**.
+- **Azure VMs**. If you need to create them,
   **[here's how](https://azure.microsoft.com/documentation/articles/virtual-machines-windows-tutorial/)**.
-* **An Azure storage account.** Create one
+- **An Azure storage account.** Create one
   **[here](https://azure.microsoft.com/documentation/articles/storage-create-storage-account/)**.
-* **Release Management for Visual Studio extension.** To install in Visual Studio,
+- **Release Management for Visual Studio extension.** To install in Visual Studio,
   go to **Tools**, **Extensions and Updates**, and search for **Release Management for Visual Studio**.
-* **A deployment script.** Find out how to set up and check-in this script
+- **A deployment script.** Find out how to set up and check-in this script
   **[here](https://devblogs.microsoft.com/devops/deploying-and-testing-web-applications-using-release-management/)**.
 
 ## Create a release definition
@@ -56,11 +56,11 @@ along with the environments. You can add stages and environments, too.
 
 3.  If you don't see any environments:
 
-    * Add an Azure subscription.
+    - Add an Azure subscription.
 
     ![Add Azure subscription](media/deploy-continuously-03.png)
 
-    * Provide Azure subscription details. If you have an Azure subscription file
+    - Provide Azure subscription details. If you have an Azure subscription file
       (.publishsettings file) on your computer, you can browse to that file.
       If you do not have a local copy of this file, you can
       **[download a subscription file](https://manage.windowsazure.com/publishsettings)**.
@@ -71,10 +71,10 @@ along with the environments. You can add stages and environments, too.
 
     ![Azure subscription details](media/deploy-continuously-04.png)
 
-    * You can update to the latest VSIX by selecting **Tools** and then **Extensions
+    - You can update to the latest VSIX by selecting **Tools** and then **Extensions
       and Updates** and searching for **Release Management**.
 
-    * Then set your environments.
+    - Then set your environments.
 
     ![Set environments for Azure](media/deploy-continuously-05.png)
 
@@ -113,12 +113,12 @@ Learn more **[here](release-without-agents.md)**.
 
 ## Related topics
 
-* [Overview of Release Management](release-management-overview.md)
-* [Install Release Management](install-release-management.md)
-* [Manage your release](manage-your-release.md)
-* [Release without deployment agents](release-without-agents.md)
-* [Release with deployment agents](release-with-agents.md)
-* [Trigger a release from a build](trigger-a-release.md)
+- [Overview of Release Management](release-management-overview.md)
+- [Install Release Management](install-release-management.md)
+- [Manage your release](manage-your-release.md)
+- [Release without deployment agents](release-without-agents.md)
+- [Release with deployment agents](release-with-agents.md)
+- [Trigger a release from a build](trigger-a-release.md)
 
 [!INCLUDE [wpfver-back-to-index-shared](../includes/wpfver-back-to-index-shared.md)]
 

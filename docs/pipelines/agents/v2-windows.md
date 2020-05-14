@@ -23,9 +23,9 @@ To build and deploy Windows, Azure, and other Visual Studio solutions you'll nee
 
 > Before you begin:
 >
-> * If your code is in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a self-hosted Windows agent.
-> * If your code is in an on-premises Team Foundation Server (TFS) 2015 server, see [Deploy an agent on Windows for on-premises TFS 2015](v1-windows.md).
-> * Otherwise, you've come to the right place to set up an agent on Windows. Continue to the next section.
+> - If your code is in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a self-hosted Windows agent.
+> - If your code is in an on-premises Team Foundation Server (TFS) 2015 server, see [Deploy an agent on Windows for on-premises TFS 2015](v1-windows.md).
+> - Otherwise, you've come to the right place to set up an agent on Windows. Continue to the next section.
 
 [!INCLUDE [include](includes/concepts.md)]
 
@@ -33,17 +33,17 @@ To build and deploy Windows, Azure, and other Visual Studio solutions you'll nee
 
 Make sure your machine has these prerequisites:
 
-* Windows 7, 8.1, or 10 (if using a client OS)
-* Windows 2008 R2 SP1 or higher (if using a server OS)
-* [PowerShell 3.0](https://docs.microsoft.com/powershell/scripting/install/installing-windows-powershell) or higher
-* [.NET Framework](https://docs.microsoft.com/dotnet/framework/install/) 4.6.2 or higher
+- Windows 7, 8.1, or 10 (if using a client OS)
+- Windows 2008 R2 SP1 or higher (if using a server OS)
+- [PowerShell 3.0](https://docs.microsoft.com/powershell/scripting/install/installing-windows-powershell) or higher
+- [.NET Framework](https://docs.microsoft.com/dotnet/framework/install/) 4.6.2 or higher
 
 > [!IMPORTANT]
 > Starting December 2019, the minimum required .NET version for build agents is 4.6.2 or higher.
 
 Recommended:
 
-* [Visual Studio build tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) (2015 or higher)
+- [Visual Studio build tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) (2015 or higher)
 
 If you're building from a Subversion repo, you must install the [Subversion client](https://subversion.apache.org/) on the machine.
 
@@ -171,13 +171,13 @@ Then paste the [PAT token you created](#permissions) into the command prompt win
 
 When you configure your agent to connect to TFS, you've got the following options:
 
-* **Alternate** Connect to TFS using Basic authentication. After you select Alternate you'll be prompted for your credentials.
+- **Alternate** Connect to TFS using Basic authentication. After you select Alternate you'll be prompted for your credentials.
 
-* **Negotiate** Connect to TFS as a user other than the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. After you select Negotiate you'll be prompted for credentials.
+- **Negotiate** Connect to TFS as a user other than the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. After you select Negotiate you'll be prompted for credentials.
 
-* **Integrated** (Default) Connect a Windows agent to TFS using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. You won't be prompted for credentials after you choose this method.
+- **Integrated** (Default) Connect a Windows agent to TFS using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. You won't be prompted for credentials after you choose this method.
 
-* **PAT** Supported only on Azure Pipelines and TFS 2017 and newer. After you choose PAT, paste the [PAT token you created](#permissions) into the command prompt window. Use a personal access token (PAT) if your TFS instance and the agent machine are not in a trusted domain. PAT authentication is handled by your TFS instance instead of the domain controller.
+- **PAT** Supported only on Azure Pipelines and TFS 2017 and newer. After you choose PAT, paste the [PAT token you created](#permissions) into the command prompt window. Use a personal access token (PAT) if your TFS instance and the agent machine are not in a trusted domain. PAT authentication is handled by your TFS instance instead of the domain controller.
 
 > [!NOTE]
 > When using PAT as the authentication method, the PAT token is used only for the initial configuration of the agent. If the PAT needs to be regenerated, no further changes are needed to the agent.
@@ -219,9 +219,9 @@ Agents in this mode will accept only one job and then spin down gracefully (usef
 
 If you configured the agent to run as a service, it starts automatically. You can view and control the agent running status from the services snap-in. Run `services.msc` and look for one of:
 
-* "Azure Pipelines Agent (_name of your agent_)".
-* "VSTS Agent (_name of your agent_)".
-* "vstsagent.(_organization name_).(_name of your agent_)".
+- "Azure Pipelines Agent (_name of your agent_)".
+- "VSTS Agent (_name of your agent_)".
+- "vstsagent.(_organization name_).(_name of your agent_)".
 
 To restart the agent, right-click the entry and choose **Restart**.
 

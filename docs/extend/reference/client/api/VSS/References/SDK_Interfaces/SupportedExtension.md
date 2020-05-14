@@ -19,8 +19,8 @@ Information about the extension
 
 ### Members
 
-* `extension`: string. Unique Identifier for this extension
+- `extension`: string. Unique Identifier for this extension
 
-* `publisher`: string. Unique Identifier for this publisher
+- `publisher`: string. Unique Identifier for this publisher
 
-* `version`: string. Supported version for this extension
+- `version`: string. Supported version for this extension

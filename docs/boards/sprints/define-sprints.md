@@ -23,10 +23,10 @@ Many teams choose a two or three week cadence. However, you can specify shorter 
 
 ## Prerequisites
 
-* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
-* To modify work tracking project configuration, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
-* You must be added to a project as a member of the **Project Administrators** security group. To get added, see [Set permissions at the project- or collection-level](../../security/set-project-collection-level-permissions.md).
-* Or, to add, edit, and manage Iteration Paths under a node, you must have one or more of the following permissions set to **Allow** for the node you want to manage: **Create child nodes**, **Delete this node**, and **Edit this node**, and **View permissions for this node**. By default, the user who created the project has these permissions set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).
+- You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
+- To modify work tracking project configuration, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+- You must be added to a project as a member of the **Project Administrators** security group. To get added, see [Set permissions at the project- or collection-level](../../security/set-project-collection-level-permissions.md).
+- Or, to add, edit, and manage Iteration Paths under a node, you must have one or more of the following permissions set to **Allow** for the node you want to manage: **Create child nodes**, **Delete this node**, and **Edit this node**, and **View permissions for this node**. By default, the user who created the project has these permissions set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).
 
 <a id="quick-start-schedule"> </a>
 
@@ -107,7 +107,7 @@ To quickly get started, you can use the default sprints, also referred to as ite
 
 1.  Choose the sprint listed under **Current** and then choose **Set dates**.
 
-    <img src="media/define-sprints/set-sprint-dates.png" alt="Sprint 1 backlog, Set dates" style="border: 1px solid #C3C3C3;" />  
+    <img src="media/define-sprints/set-sprint-dates.png" alt="Sprint 1 backlog, Set dates" style="border: 1px solid #C3C3C3;" />
 
     > [!NOTE]
     > If you don't see any sprints listed or the **Set dates** link, then no sprints have been selected for the team context you've selected. To select sprints for the team context, see [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). To switch team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md).

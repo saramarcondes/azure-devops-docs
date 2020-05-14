@@ -73,7 +73,7 @@ The process that you're updating doesn't include the named WIT that exists in th
 
 1.  [Create](../../../../reference/customize-wit-form.md) new work item type called "LSI"
     ```xml
-    <WORKITEMTYPE name="LSI" refname="My.LSI">  
+    <WORKITEMTYPE name="LSI" refname="My.LSI">
     ```
 2.  [Import process](import-process.md)
 3.  Remove the LSI work item type from the process
@@ -94,12 +94,12 @@ As part of updating the existing process, the system renames the WIT in the curr
 
 1.  [Create](../../../../reference/customize-wit-form.md) new work item type called "LSI"
     ```xml
-    <WORKITEMTYPE name="LSI" refname="My.LSI">  
+    <WORKITEMTYPE name="LSI" refname="My.LSI">
     ```
 2.  [Import process](import-process.md)
 3.  Rename the LSI work item type to Live Site Incident
     ```xml
-    <WORKITEMTYPE name="Live Site Incident" refname="My.LSI">  
+    <WORKITEMTYPE name="Live Site Incident" refname="My.LSI">
     ```
 4.  [Import updated process](import-process.md)
 
@@ -445,19 +445,19 @@ The Categories.xml definition file must conform to the syntax and rules describe
 All categories that are referenced in the ProcessConfiguration.xml file must be defined in the Categories.xml file.
 In addition, the system requires that the Categories.xml file contain definitions for the following categories:
 
-* Bug Category
-* Code Review Request Category
-* Code Review Response Category
-* Feedback Request Category
-* Feedback Response Category
-* Hidden Types Category
-* Requirement Category
-* Shared Step Category
-* Shared Parameter Category
-* Task Category
-* Test Case Category
-* Test Plan Category
-* Test Suite Category
+- Bug Category
+- Code Review Request Category
+- Code Review Response Category
+- Feedback Request Category
+- Feedback Response Category
+- Hidden Types Category
+- Requirement Category
+- Shared Step Category
+- Shared Parameter Category
+- Task Category
+- Test Case Category
+- Test Plan Category
+- Test Suite Category
 
 Update your Categories.xml file to define the missing _[name]_ category.
 
@@ -555,8 +555,8 @@ Add `PortfolioBacklog` to ProcessConfiguration to reference Microsoft.EpicCatego
 
 Reference topics:
 
-* [ProcessConfiguration XML element reference](../../../../reference/xml/process-configuration-xml-element.md)
-* [Categories XML element reference](../../../../reference/xml/categories-xml-element-reference.md)
+- [ProcessConfiguration XML element reference](../../../../reference/xml/process-configuration-xml-element.md)
+- [Categories XML element reference](../../../../reference/xml/categories-xml-element-reference.md)
 
 <a id="classification"></a>
 
@@ -1550,7 +1550,7 @@ ProcessConfiguration.xml
       <TypeFieldValue value="Remote machine" type="RemoteMachine" />
       <TypeFieldValue value="Client application" type="ClientApp" />
     </TypeFieldValues>
-  </TypeField>  
+  </TypeField>
 ```
 
 FeedbackRequest.xml is using the Microsoft.VSTS.Feedback.ApplicationType field when it should be using the Custom.ApplicationType field.
@@ -1662,7 +1662,7 @@ one way in Process A and another way in Process B. All `FIELD` element attribute
 Process A, Bug.xml
 
 ```xml
-  <FIELDS>  
+  <FIELDS>
     ...
     <FIELD name="Foo" refname="MyCompany.CustomFields.Foo" type="String" reportable="dimension" />
     ...
@@ -1672,7 +1672,7 @@ Process A, Bug.xml
 Process B, Bug.xml
 
 ```xml
-  <FIELDS>  
+  <FIELDS>
     ...
     <FIELD name="Bar" refname="MyCompany.CustomFields.Foo" type="Double" reportable="dimension" />
     ...
@@ -1936,14 +1936,14 @@ To resolve this, create two separate groups that contain one control each.
 #### Resolution example
 
 ```xml
-  <Control Type="FieldControl" FieldName="System.Title" LabelPosition="Left" Label="Title 1"  
-    <LabelText>  
-        <Text>  
-          <Link UrlRoot="http://www.visualstudio.microsoft.com/team-services/" />  
-              Title 2  
-        </Text>  
-    </LabelText>  
-  </Control>  
+  <Control Type="FieldControl" FieldName="System.Title" LabelPosition="Left" Label="Title 1"
+    <LabelText>
+        <Text>
+          <Link UrlRoot="http://www.visualstudio.microsoft.com/team-services/" />
+              Title 2
+        </Text>
+    </LabelText>
+  </Control>
 ```
 
 <a id="wit-workflow-definitions"></a>
@@ -1991,13 +1991,13 @@ Fields referencing the same `refname="MyCompany.FieldName"` must have the same f
 Process A, Bug.xml
 
 ```xml
-  <FIELD name="Foo" refname="MyCompany.CustomFields.Foo" type="String" reportable="dimension" />  
+  <FIELD name="Foo" refname="MyCompany.CustomFields.Foo" type="String" reportable="dimension" />
 ```
 
 Process B, Bug.xml
 
 ```xml
-  <FIELD name="Bar" refname="MyCompany.CustomFields.Foo" type="String" reportable="dimension" />  
+  <FIELD name="Bar" refname="MyCompany.CustomFields.Foo" type="String" reportable="dimension" />
 ```
 
 Because both fields share the same reference name, `refname="MyCompany.CustomFields.Foo"`,

@@ -353,7 +353,7 @@ Displays the list of work items currently assigned to the currently logged in us
 
 ### Burndown chart
 
-<a id="burndown-analytics-widget"></a>  
+<a id="burndown-analytics-widget"></a>
 
 ![Burndown chart widget](media/widget-burndown-chart.png)
 
@@ -454,18 +454,18 @@ Requires TFS 2015.1 or later version.
 
 Provides links to the following features:
 
-* Opens a form to initiate a [request to provide feedback](/azure/devops/project/feedback/get-feedback?toc=/azure/devops/project/feedback/toc.json).
-* Opens the team's quick dialog to add or modify the active sprints or iteration paths for your team. To learn more see [Define sprints](../../boards/sprints/define-sprints.md).
-* Opens the team's quick dialog to modify your [team's area path](../../organizations/settings/set-area-paths.md).
+- Opens a form to initiate a [request to provide feedback](/azure/devops/project/feedback/get-feedback?toc=/azure/devops/project/feedback/toc.json).
+- Opens the team's quick dialog to add or modify the active sprints or iteration paths for your team. To learn more see [Define sprints](../../boards/sprints/define-sprints.md).
+- Opens the team's quick dialog to modify your [team's area path](../../organizations/settings/set-area-paths.md).
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 The following links are displayed when the corresponding resource is configured for the project:
 
 ![Other links widget](media/widget-other-links-tfs.png)
 
-* [View project portal](../sharepoint-dashboards/share-information-using-the-project-portal.md) (opens either a SharePoint site or URL that's been configured as the project's portal.
-* [View process guidance](../../project/configure-or-redirect-process-guidance.md) (opens either a SharePoint site or URL that's been configured as the project's process guidance.
-* [View reports](../sql-reports/reporting-services-reports.md) (opens SQL Server Reporting Services). To add or update reports for a project, see [Add reports to a project](../admin/add-reports-to-a-team-project.md).
+- [View project portal](../sharepoint-dashboards/share-information-using-the-project-portal.md) (opens either a SharePoint site or URL that's been configured as the project's portal.
+- [View process guidance](../../project/configure-or-redirect-process-guidance.md) (opens either a SharePoint site or URL that's been configured as the project's process guidance.
+- [View reports](../sql-reports/reporting-services-reports.md) (opens SQL Server Reporting Services). To add or update reports for a project, see [Add reports to a project](../admin/add-reports-to-a-team-project.md).
 
 ::: moniker-end
 
@@ -587,10 +587,10 @@ For additional guidance, see [Velocity](team-velocity.md).
 ![Work links widget](media/widget-work-links.png)  
 Provides quick access to open the following Agile tools and team resources:
 
-* [Backlog](../../boards/backlogs/create-your-backlog.md)
-* [Kanban Board](../../boards/boards/kanban-basics.md)
-* [Task board](../../boards/sprints/task-board.md)
-* [Queries](../../boards/queries/using-queries.md)
+- [Backlog](../../boards/backlogs/create-your-backlog.md)
+- [Kanban Board](../../boards/boards/kanban-basics.md)
+- [Task board](../../boards/sprints/task-board.md)
+- [Queries](../../boards/queries/using-queries.md)
 
 ---
 
@@ -912,6 +912,6 @@ Using the REST API service, you can [create a dashboard widget](../../extend/dev
 
 ## Related articles
 
-* [Add, rename, and delete dashboards](dashboards.md)
-* [Add charts and widgets to a dashboard](add-widget-to-dashboard.md)
-* [Add Markdown to a dashboard](add-markdown-to-dashboard.md)
+- [Add, rename, and delete dashboards](dashboards.md)
+- [Add charts and widgets to a dashboard](add-widget-to-dashboard.md)
+- [Add Markdown to a dashboard](add-markdown-to-dashboard.md)

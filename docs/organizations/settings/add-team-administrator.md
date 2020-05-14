@@ -28,12 +28,12 @@ As a team administrator, you can configure, customize, and manage all team-relat
 
 ::: moniker range="azure-devops"
 
-* You must be a member of a project. If you don't have a project yet, [create one](../projects/create-project.md).
-* You must be a [member of the Project Administrators group](../security/set-project-collection-level-permissions.md), or a team administrator for the team you want to update.  
+- You must be a member of a project. If you don't have a project yet, [create one](../projects/create-project.md).
+- You must be a [member of the Project Administrators group](../security/set-project-collection-level-permissions.md), or a team administrator for the team you want to update.  
   ::: moniker-end
   ::: moniker range="<= azure-devops-2019"
-* You must be a member of a project. If you don't have a project yet, [create one](../projects/create-project.md).
-* You must be a [member of the Project Administrators group](../security/set-project-collection-level-permissions.md), or a team administrator for the team you want to update.  
+- You must be a member of a project. If you don't have a project yet, [create one](../projects/create-project.md).
+- You must be a [member of the Project Administrators group](../security/set-project-collection-level-permissions.md), or a team administrator for the team you want to update.  
   ::: moniker-end
 
 To get added as a team administrator, ask another team admin, or a member of the [Project Administrators group](../security/set-project-collection-level-permissions.md) to add you.
@@ -59,7 +59,7 @@ If you need to add a team, see [Add teams](add-teams.md).
 
     > [!div class="mx-imgBorder"] > ![Team profile, Add a team admin](media/add-team-admin/settings-add-team-administrator-preview.png)
 
-3.  Enter the identities you want to add to the administrator role, and then select **Save**.  
+3.  Enter the identities you want to add to the administrator role, and then select **Save**.
 
     > [!div class="mx-imgBorder"] > ![Add team administrator dialog](media/add-team-admin/add-team-administrator-dialog-preview.png)
 
@@ -75,7 +75,7 @@ From the web portal, open the admin page for the team.
 
     > [!div class="mx-imgBorder"] > ![Team profile, Add a team admin](media/add-team-admin/settings-add-team-administrator.png)
 
-3.  Enter the identities you want to add to the administrator role, and then select **Save**.  
+3.  Enter the identities you want to add to the administrator role, and then select **Save**.
 
     > [!div class="mx-imgBorder"] > ![Add team administrator dialog](media/add-team-admin/add-administrators-dialog.png)
 
@@ -93,8 +93,7 @@ From the web portal, open the admin page for the team.
 
     > [!div class="mx-imgBorder"] > ![Team profile, Add a team admin](media/add-team-admin/team-profile-choose-add-admin.png)
 
-3.  Enter the identities you want to add to the team administrator role.  
-
+3.  Enter the identities you want to add to the team administrator role.
 
     > [!div class="mx-imgBorder"] > ![Add team administrator dialog](media/add-team-admin/add-team-admin-dialog.png)
 
@@ -178,7 +177,7 @@ From the Administrators section, choose the ![delete icon](../../media/icons/del
 
 ## Related articles
 
-* [Add teams](add-teams.md)
-* [About teams & Agile tools](../../organizations/settings/about-teams-and-settings.md)
-* [Configure and customize Azure Boards](../../boards/configure-customize.md)
-* [Set team favorites](../../project/navigation/set-favorites.md)
+- [Add teams](add-teams.md)
+- [About teams & Agile tools](../../organizations/settings/about-teams-and-settings.md)
+- [Configure and customize Azure Boards](../../boards/configure-customize.md)
+- [Set team favorites](../../project/navigation/set-favorites.md)

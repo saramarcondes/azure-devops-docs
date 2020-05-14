@@ -25,9 +25,9 @@ We also have an [example repository](https://github.com/Microsoft/vsts-nuget-sam
 
 The bootstrapper package takes care of several things for you:
 
-* Ensures that each developer has a compatible version of nuget.exe and the Azure DevOps Services authentication extension in their environment
-* Separates feed configuration from credential management so you don't have to share passwords among developers
-* Allows build and continuous integration systems to seamlessly use the same configuration as individual developers
+- Ensures that each developer has a compatible version of nuget.exe and the Azure DevOps Services authentication extension in their environment
+- Separates feed configuration from credential management so you don't have to share passwords among developers
+- Allows build and continuous integration systems to seamlessly use the same configuration as individual developers
 
 The bootstrapping tools work regardless of your version control system.
 Both Git and TFVC are supported.

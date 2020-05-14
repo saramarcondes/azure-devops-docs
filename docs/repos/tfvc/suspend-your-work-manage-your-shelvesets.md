@@ -17,20 +17,20 @@ monikerRange: '>= tfs-2015'
 
 For a variety of reasons, sometimes you need to set aside some or all of your work in progress. Shelvesets are useful when you want to stop work for:
 
-* **Interruption:** You have pending changes that are not ready for check in, but you need to work on a different task.
+- **Interruption:** You have pending changes that are not ready for check in, but you need to work on a different task.
 
-* **Collaboration:** You have pending changes that are not ready for check in but you need to share them with another team member.
+- **Collaboration:** You have pending changes that are not ready for check in but you need to share them with another team member.
 
-* **Code Review:** You want another team member to perform a code review of your pending changes.
+- **Code Review:** You want another team member to perform a code review of your pending changes.
 
   > [!TIP]
   > If you are using Visual Studio Premium or a more powerful edition, you can use the [Code Review](day-life-alm-developer-write-new-code-user-story.md) feature.
 
-* **Private Build:** Before you check in your changes, you can use your automated build system to build and test your code.
+- **Private Build:** Before you check in your changes, you can use your automated build system to build and test your code.
 
-* **Backup:** You have work in progress that you cannot finish now so you want a backup copy that is stored on your server and available to other team members who might need to access it.
+- **Backup:** You have work in progress that you cannot finish now so you want a backup copy that is stored on your server and available to other team members who might need to access it.
 
-* **Handoff:** You have work in progress that you want to hand off to another team member.
+- **Handoff:** You have work in progress that you want to hand off to another team member.
 
 You can move your [pending changes](develop-code-manage-pending-changes.md) to a shelveset on the server and then clean your [workspace](create-work-workspaces.md). The shelveset saves and stores not only your file revisions, but also the Comment, the list of Related Work Items, and check-in notes (if you evaluate policies before shelving).
 
@@ -72,11 +72,11 @@ When you are ready to resume the work, go the **Suspended & Shelved Work** secti
 
 5.  (Optional) Select either of the following check boxes:
 
-    * **Preserve pending change locally**
+    - **Preserve pending change locally**
 
       By default, this check box is selected. When this check box is selected, your pending changes (including the comment and the Related Work Items list) are not removed from your workspace. If you want to clean your workspace to work on another task, you should clear this check box.
 
-    * **Evaluate Policies and check-in notes before shelving**
+    - **Evaluate Policies and check-in notes before shelving**
 
       When you select this check box, all check-in policies are evaluated before the shelveset is created. For more information about check-in policies, see [Set and Enforce Quality Gates](set-enforce-quality-gates.md).
 
@@ -107,11 +107,11 @@ The **Shelveset Details** page appears.
 
 ![Shelveset details](media/suspend-your-work-manage-your-shelvesets/IC612903.png)
 
-* You can toggle between list and tree view from the **Actions** menu.
+- You can toggle between list and tree view from the **Actions** menu.
 
-* To get more information about a change to a file, open its context menu, and then choose **Open**, **View History**, or one of the **Compare** options.
+- To get more information about a change to a file, open its context menu, and then choose **Open**, **View History**, or one of the **Compare** options.
 
-* Choose **Unshelve Changes** if you want to retrieve the changes in the shelveset into your workspace:
+- Choose **Unshelve Changes** if you want to retrieve the changes in the shelveset into your workspace:
 
   1.  For any file changes that you do not want to unshelve, open the context menu of the file, and then choose **Exclude**.
 
@@ -123,23 +123,23 @@ The **Shelveset Details** page appears.
 
   If there are conflicts between changes in the shelveset and the file versions in your workspace, the system will prompt you to [resolve them](resolve-team-foundation-version-control-conflicts.md).
 
-* Choose **Delete Shelveset** if you want to delete the shelveset.
+- Choose **Delete Shelveset** if you want to delete the shelveset.
 
   > **Caution:**  
   > Be sure you do not need any of the work stored in a shelveset before you delete it. There is no way to recover a deleted shelveset.
 
 ## Work from the command prompt
 
-* [Shelve Command](shelve-command.md) : Create or delete a shelveset.
+- [Shelve Command](shelve-command.md) : Create or delete a shelveset.
 
-* [Shelvesets Command](shelvesets-command.md) : List shelvesets.
+- [Shelvesets Command](shelvesets-command.md) : List shelvesets.
 
-* [Unshelve Command](unshelve-command.md) : Unshelve a shelveset.
+- [Unshelve Command](unshelve-command.md) : Unshelve a shelveset.
 
-* [Difference Command](difference-command.md) : Compare the changes to a file in a shelveset with another version.
+- [Difference Command](difference-command.md) : Compare the changes to a file in a shelveset with another version.
 
 ## Tips
 
-* ![Tips](media/suspend-your-work-manage-your-shelvesets/IC572374.png) Unlike a changeset, a shelveset is a non-versioned entity. If you or another user unshelve the items of which a shelveset consists, edit several files, and then later reshelve the shelveset, the system does not create a new version of the items for future comparison and maintains no record of who revised the items, when, or in what manner. The original shelveset is completely replaced.
+- ![Tips](media/suspend-your-work-manage-your-shelvesets/IC572374.png) Unlike a changeset, a shelveset is a non-versioned entity. If you or another user unshelve the items of which a shelveset consists, edit several files, and then later reshelve the shelveset, the system does not create a new version of the items for future comparison and maintains no record of who revised the items, when, or in what manner. The original shelveset is completely replaced.
 
-* ![Tips](media/suspend-your-work-manage-your-shelvesets/IC572374.png) Conflicts can occur and prevent you from resuming suspended work. If this happens, see [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md).
+- ![Tips](media/suspend-your-work-manage-your-shelvesets/IC572374.png) Conflicts can occur and prevent you from resuming suspended work. If this happens, see [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md).

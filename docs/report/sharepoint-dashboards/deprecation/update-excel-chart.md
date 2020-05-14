@@ -19,9 +19,9 @@ Excel charts continue to work, even after disabling SharePoint integration. Disp
 
 The TFS Extension for SharePoint did install a SharePoint timer job. When executed, this timer job would detect if:
 
-* The TFS Warehouse or Cube location or name had change
-* The TFS collection name had changed
-* The name of the team project associated with a SharePoint site had changed
+- The TFS Warehouse or Cube location or name had change
+- The TFS collection name had changed
+- The name of the team project associated with a SharePoint site had changed
 
 If any of these changes were made, then it will update the Excel workbook's filters and Data Connection string so that the Excel charts will continue to work.
 
@@ -53,4 +53,4 @@ Provider=MSOLAP.7;Integrated Security=SSPI;Persist Security Info=True;User ID=""
 
 ## Related articles
 
-* [Upload and refresh Excel reports in the team project portal](../upload-refresh-excel-reports.md)
+- [Upload and refresh Excel reports in the team project portal](../upload-refresh-excel-reports.md)

@@ -39,11 +39,11 @@ You can use the Issue Trends report to understand the volume of Issues that the 
 
 For the Issue Trends report to be useful and accurate, the team must perform the following activities:
 
-* Define Issues.
+- Define Issues.
 
-* Close the **State** of each Issue as the team addresses it.
+- Close the **State** of each Issue as the team addresses it.
 
-* (optional) Specify the **Iteration** and **Area** paths for each Issue if you want to filter by that field.
+- (optional) Specify the **Iteration** and **Area** paths for each Issue if you want to filter by that field.
 
 <a name="Interpreting"></a>
 
@@ -51,9 +51,9 @@ For the Issue Trends report to be useful and accurate, the team must perform the
 
 You can review the Issue Trends report to determine whether the team is addressing the Issues that it is identifying. Specifically, you can find answers to the following questions:
 
-* How often is the team identifying Issues?
+- How often is the team identifying Issues?
 
-* Is the team resolving Issues as quickly as they are identifying them?
+- Is the team resolving Issues as quickly as they are identifying them?
 
   If the team identifies more Issues than it can address, the Issue Trends report will show that the team is closing Issues more slowly. The team might need to reexamine priorities to determine whether the Issues are actually problems that it should address or if the team can ignore them.
 
@@ -71,5 +71,5 @@ You can update the Issue Trends report by opening it in Office Excel and changin
 
 ## Related articles
 
-* [Excel reports](excel-reports.md)
-* [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)
+- [Excel reports](excel-reports.md)
+- [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)

@@ -26,11 +26,11 @@ In this article you'll learn:
 
 > [!div class="checklist"]
 >
-> * How to remove work items from the backlog by changing the State to Removed
-> * How to delete work items
-> * How to restore or permanently delete work items (web portal)
-> * How to permanently delete work items (command-line tool)
-> * What permissions are required to delete work items
+> - How to remove work items from the backlog by changing the State to Removed
+> - How to delete work items
+> - How to restore or permanently delete work items (web portal)
+> - How to permanently delete work items (command-line tool)
+> - What permissions are required to delete work items
 
 ::: moniker-end
 
@@ -38,9 +38,9 @@ In this article you'll learn:
 
 > [!div class="checklist"]
 >
-> * How to remove work items from the backlog by changing the State to Removed
-> * How to permanently delete work items (command-line tool)
-> * What permissions are required to delete work items
+> - How to remove work items from the backlog by changing the State to Removed
+> - How to permanently delete work items (command-line tool)
+> - What permissions are required to delete work items
 
 ::: moniker-end
 
@@ -133,8 +133,8 @@ You can access the following actions for which you have permissions. If you are 
 
 ::: moniker range="tfs-2013"
 
-* **Contributors & Stakeholders**: [Remove work items (change State)](#remove)
-* **Project Administrators**: [Permanently delete work items (command-line)](#perm-delete)
+- **Contributors & Stakeholders**: [Remove work items (change State)](#remove)
+- **Project Administrators**: [Permanently delete work items (command-line)](#perm-delete)
 
 ::: moniker-end
 
@@ -149,11 +149,11 @@ You can access the following actions for which you have permissions. If you are 
 
 ::: moniker range="azure-devops"
 
-* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/boards/get-started/sign-up-invite-teammates).
-* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).
-* To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).
-* To delete or remove work items, you must be granted **Stakeholder** access or higher For details, see [About access levels](/azure/devops/organizations/security/access-levels).
-* To delete work items, you must be a member of the **Project Administrators** group or have the **Delete work items in this project** permission set to Allow. By default, the Contributors group has **Delete and restore work items** set to **Allow**.
+- You must connect to a project. If you don't have a project yet, [create one](/azure/devops/boards/get-started/sign-up-invite-teammates).
+- You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).
+- To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).
+- To delete or remove work items, you must be granted **Stakeholder** access or higher For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+- To delete work items, you must be a member of the **Project Administrators** group or have the **Delete work items in this project** permission set to Allow. By default, the Contributors group has **Delete and restore work items** set to **Allow**.
 
 > [!NOTE]  
 > Users with **Stakeholder** access for a public project have full access to all work tracking features just like users with **Basic** access. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
@@ -162,21 +162,21 @@ You can access the following actions for which you have permissions. If you are 
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
-* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
-* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).
-* To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).
-* To remove or delete work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
-* To delete work items, you must be a member of the **Project Administrators** group or have the **Delete work items in this project** permission set to Allow. The **Contributors** group has **Delete and restore work items** at the project-level set to **Allow** by default.
+- You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
+- You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).
+- To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).
+- To remove or delete work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+- To delete work items, you must be a member of the **Project Administrators** group or have the **Delete work items in this project** permission set to Allow. The **Contributors** group has **Delete and restore work items** at the project-level set to **Allow** by default.
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015"
 
-* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
-* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).
-* To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).
-* To delete or remove work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
-* To delete work items, you must be a member of the <strong>Project Administrators <strong>group or have the **Delete work items in this project</strong> permission set to **Allow</strong>. By default, for TFS 2015.1 and earlier versions, the Contributors group has **Delete work items in this project** set to **Not set**. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set.
+- You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
+- You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).
+- To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).
+- To delete or remove work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+- To delete work items, you must be a member of the <strong>Project Administrators <strong>group or have the **Delete work items in this project</strong> permission set to **Allow</strong>. By default, for TFS 2015.1 and earlier versions, the Contributors group has **Delete work items in this project** set to **Not set**. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set.
 
 ::: moniker-end
 
@@ -293,11 +293,11 @@ az boards work-item delete --id
 
 #### Parameters
 
-* **id**: Required. The ID of the work item.
-* **destroy**: Optional. Permanently delete this work item.
-* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-* **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
-* **yes**: Optional. Do not prompt for confirmation.
+- **id**: Required. The ID of the work item.
+- **destroy**: Optional. Permanently delete this work item.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **yes**: Optional. Do not prompt for confirmation.
 
 #### Example
 
@@ -450,8 +450,7 @@ Use the `witadmin destroywi` command to permanently remove work items from the d
 
     `cd %programfiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE`
 
-    > [!NOTE]
-    > **Required permissions:** For TFS 2015.2 or later versions, you must have [Permanently delete work items permission set to Allow](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions). For TFS 2015.1 or earlier versions, you must be a member of the Project Administrators group of have Edit project-level information permissions set to Allow.
+    > [!NOTE] > **Required permissions:** For TFS 2015.2 or later versions, you must have [Permanently delete work items permission set to Allow](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions). For TFS 2015.1 or earlier versions, you must be a member of the Project Administrators group of have Edit project-level information permissions set to Allow.
 
     On a 32-bit edition of Windows, replace %programfiles(x86)% with %programfiles%.
 
@@ -491,29 +490,29 @@ Use the `witadmin destroywi` command to permanently remove work items from the d
 
 ::: moniker range=">= tfs-2018"
 
-* [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)
-* [View and add work items using the Work Items page](../work-items/view-add-work-items.md)
-* [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)
-* [Delete test artifacts](delete-test-artifacts.md)
-* [Create a test plan](../../test/create-a-test-plan.md)
-* [Control how long to keep test results](../../test/how-long-to-keep-test-results.md)
+- [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)
+- [View and add work items using the Work Items page](../work-items/view-add-work-items.md)
+- [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)
+- [Delete test artifacts](delete-test-artifacts.md)
+- [Create a test plan](../../test/create-a-test-plan.md)
+- [Control how long to keep test results](../../test/how-long-to-keep-test-results.md)
 
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
 
-* [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)
-* [Delete test artifacts](delete-test-artifacts.md)
-* [Add, update, and follow a work item](../backlogs/add-work-items.md)
-* [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)
+- [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)
+- [Delete test artifacts](delete-test-artifacts.md)
+- [Add, update, and follow a work item](../backlogs/add-work-items.md)
+- [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015"
 
-* [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)
-* [Add and update a work item](../backlogs/add-work-items.md)
-* [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)
+- [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)
+- [Add and update a work item](../backlogs/add-work-items.md)
+- [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)
 
 ::: moniker-end
 
@@ -525,28 +524,28 @@ Use the `witadmin destroywi` command to permanently remove work items from the d
 
 When you delete a work item, the following actions occur:
 
-* Generates a new revision of the work item
-* Updates the Changed By/Changed Date fields to support traceability
-* Preserves the work item completely, including all field assignments, attachments, tags, and links
-* Causes work item to become non-queryable and therefore can't appear in any work tracking experience, query result, or report
-* Updates charts accordingly, CFD, velocity, burndown and lightweight charts are updated to remove deleted work items
-* Removes WIT extensions
-* Preserves trend data except for the latest value
-* Removes the work item from the data warehouse/cube similar to as if it was permanently removed.
+- Generates a new revision of the work item
+- Updates the Changed By/Changed Date fields to support traceability
+- Preserves the work item completely, including all field assignments, attachments, tags, and links
+- Causes work item to become non-queryable and therefore can't appear in any work tracking experience, query result, or report
+- Updates charts accordingly, CFD, velocity, burndown and lightweight charts are updated to remove deleted work items
+- Removes WIT extensions
+- Preserves trend data except for the latest value
+- Removes the work item from the data warehouse/cube similar to as if it was permanently removed.
 
 #### Restore work items
 
 When you restore a work item, the following actions occur:
 
-* Causes a new revision of the work item to be made
-* Updates the Changed By/Changed Date fields to support traceability
-* Becomes queryable
-* All fields remain unchanged
-* History contains 2 new revisions, one for deletion, and one for restore
-* Reattaches WIT extensions
-* Updates charts accordingly, CFD, velocity, burndown and lightweight charts are updated to include the restored work items
-* Restores trend data
-* Adds the work item back to the data warehouse/cube similar
-* Sets the area or iteration path fields to the root node if the previous area path or iteration paths were deleted.
+- Causes a new revision of the work item to be made
+- Updates the Changed By/Changed Date fields to support traceability
+- Becomes queryable
+- All fields remain unchanged
+- History contains 2 new revisions, one for deletion, and one for restore
+- Reattaches WIT extensions
+- Updates charts accordingly, CFD, velocity, burndown and lightweight charts are updated to include the restored work items
+- Restores trend data
+- Adds the work item back to the data warehouse/cube similar
+- Sets the area or iteration path fields to the root node if the previous area path or iteration paths were deleted.
 
 ::: moniker-end

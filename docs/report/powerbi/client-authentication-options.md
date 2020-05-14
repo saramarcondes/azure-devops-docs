@@ -33,9 +33,9 @@ When connecting from Power BI or Excel to Analytics using the OData feed, choose
 
 For these three reasons:
 
-* As part of good password management, these tokens automatically expire so you don't have to remember to change your password
-* Since PATs are a generated password, you won't use a common password as part of your AAC, which means a more limited surface area for attack
-* If you need to provide a diagnostic trace and forget to replace the value, you can simply revoke the credential thereby maintaining secure access to Azure DevOps.
+- As part of good password management, these tokens automatically expire so you don't have to remember to change your password
+- Since PATs are a generated password, you won't use a common password as part of your AAC, which means a more limited surface area for attack
+- If you need to provide a diagnostic trace and forget to replace the value, you can simply revoke the credential thereby maintaining secure access to Azure DevOps.
 
 ::: moniker range="azure-devops"
 
@@ -77,11 +77,11 @@ To change an existing URL to use Windows instead of a PAT, see [Change authentic
 
 1.  Enter the required information:
 
-    * Add a description
-    * Set the expiration period
-    * Select the organization
-    * Choose Selected scopes
-    * Check the **Analytics (read)**
+    - Add a description
+    - Set the expiration period
+    - Select the organization
+    - Choose Selected scopes
+    - Check the **Analytics (read)**
       And, then choose **Create Token**.
 
       > [!div class="mx-imgBorder"]  
@@ -122,18 +122,18 @@ authentication screens are identical. This walkthrough is done using Power BI De
 
 5.  In the authentication dialog, choose <strong>Basic</strong>, enter your credentials, and then choose <strong>Connect</strong>:
 
-    * If you are using an AAC, enter your username and password
-    * If you are using a PAT, enter a text string, such as "test" or "user" for the username and enter the token in the password field.
+    - If you are using an AAC, enter your username and password
+    - If you are using a PAT, enter a text string, such as "test" or "user" for the username and enter the token in the password field.
 
       ::: moniker range="azure-devops"
 
-      <img src="media/authentication-7.png" alt="Authentication information" style="border: 2px solid #C3C3C3;" />  
+      <img src="media/authentication-7.png" alt="Authentication information" style="border: 2px solid #C3C3C3;" />
 
       ::: moniker-end
 
       ::: moniker range="azure-devops-2019"
 
-      <img src="media/authentication-7-onprem.png" alt="Authentication information" style="border: 2px solid #C3C3C3;" />  
+      <img src="media/authentication-7-onprem.png" alt="Authentication information" style="border: 2px solid #C3C3C3;" />
 
       ::: moniker-end
 
@@ -222,13 +222,13 @@ the **oAuth2** option.
 
 ## Related articles
 
-* [Authenticate your identity with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
-* [Access data through Excel](access-analytics-excel.md)
-* [Access data through Power BI desktop](access-analytics-power-bi.md)
-* [Publish a Power BI Desktop file to PowerBI.com](publish-power-bi-desktop-to-power-bi.md)
+- [Authenticate your identity with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
+- [Access data through Excel](access-analytics-excel.md)
+- [Access data through Power BI desktop](access-analytics-power-bi.md)
+- [Publish a Power BI Desktop file to PowerBI.com](publish-power-bi-desktop-to-power-bi.md)
 
 <!---
-From the Personal access tokens page, choose **Add**:  
+From the Personal access tokens page, choose **Add**:
 
-<img src="../../media/security-personal-access-tokens.png" alt="Personal Access Tokens, Added" style="border: 2px solid #C3C3C3;" />  
+<img src="../../media/security-personal-access-tokens.png" alt="Personal Access Tokens, Added" style="border: 2px solid #C3C3C3;" />
 -->

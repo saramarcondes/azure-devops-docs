@@ -16,9 +16,9 @@ One of our goals is to keep lowering the barrier to entry for automating your ap
 
 This sprint brings a bunch of new capabilities toward realizing that goal. We have significantly expanded the breadth of app type we support:
 
-* We now support using the automation agent on the VMs to which you deploy and using it to drive your application deployment. This has easily been our most requested feature for Release Management and we’re excited for it go live.
-* We continue to give more and more focus to containers. This sprint, we introduce native support for Kubernetes and Service Fabric, the latter being a great option for Windows containers.
-* We already have great support for deploying to Azure Web Apps, but we’ve expanded the app types we support with our native task to include Node, PHP & Linux Web Apps with containers. We’ve also expanded the entry point for setting up CI/CD with more options in the Azure portal configuration UI and introduced the ability to set up CI/CD for Azure Web Apps from the AZ CLI.
+- We now support using the automation agent on the VMs to which you deploy and using it to drive your application deployment. This has easily been our most requested feature for Release Management and we’re excited for it go live.
+- We continue to give more and more focus to containers. This sprint, we introduce native support for Kubernetes and Service Fabric, the latter being a great option for Windows containers.
+- We already have great support for deploying to Azure Web Apps, but we’ve expanded the app types we support with our native task to include Node, PHP & Linux Web Apps with containers. We’ve also expanded the entry point for setting up CI/CD with more options in the Azure portal configuration UI and introduced the ability to set up CI/CD for Azure Web Apps from the AZ CLI.
 
 Let’s dive in!
 
@@ -52,18 +52,18 @@ Another common pattern being use for deployment is to create a full machine imag
 
 With this release we have pulled most of the tasks in our Docker extension into the product by default, improved them, and introduced a set of new tasks and templates for making a set of container scenarios easier.
 
-* **Docker:** Build, push, or run Docker images, or run a Docker command. This task can be used with Docker or Azure Container registry. You can now use our built-in service principal authentication with ACR to make it even easier to use.
-* **Docker-Compose:** Build, push, or run multi-container Docker applications. This task can be used with Docker or Azure Container registry.
-* **Kubernetes:** Deploy, configure, or update your Kubernetes cluster in Azure Container Service by running kubectl commands.
-* **Service Fabric:** Deploy containers to a Service Fabric Cluster. Service Fabric is the best choice today for running Windows Containers in the cloud. In fact, this is where more and more of VSTS itself is running each sprint.
+- **Docker:** Build, push, or run Docker images, or run a Docker command. This task can be used with Docker or Azure Container registry. You can now use our built-in service principal authentication with ACR to make it even easier to use.
+- **Docker-Compose:** Build, push, or run multi-container Docker applications. This task can be used with Docker or Azure Container registry.
+- **Kubernetes:** Deploy, configure, or update your Kubernetes cluster in Azure Container Service by running kubectl commands.
+- **Service Fabric:** Deploy containers to a Service Fabric Cluster. Service Fabric is the best choice today for running Windows Containers in the cloud. In fact, this is where more and more of VSTS itself is running each sprint.
 
 ## Azure Web App deployment updates
 
 We have made many enhancements for Azure Web Applications:
 
-* Azure App Service deployment task supports Node.js, Python applications to be deployed.
-* Azure App Service deployment task supports deploying to Azure Web App for Linux using containers.
-* Azure portal Continuous Delivery is expanded now support Node applications.
+- Azure App Service deployment task supports Node.js, Python applications to be deployed.
+- Azure App Service deployment task supports deploying to Azure Web App for Linux using containers.
+- Azure portal Continuous Delivery is expanded now support Node applications.
 
 We have also introduced CI/CD support into the latest version of the Azure CLI for configuring CI/CD. Here is an example:
 
@@ -93,11 +93,11 @@ We’re changing this behavior. Now the build will fail if you select **Visual S
 
 We made this change for the following reasons:
 
-* Newer app types such as .NET Core do not compile with older build tools. They explicitly require Visual Studio 2017 or newer.
+- Newer app types such as .NET Core do not compile with older build tools. They explicitly require Visual Studio 2017 or newer.
 
-* You get more consistent and predictable results when you use the same exact version of Visual Studio.
+- You get more consistent and predictable results when you use the same exact version of Visual Studio.
 
-* Whenever build tasks fall back, you may get compilation errors that are difficult to understand.
+- Whenever build tasks fall back, you may get compilation errors that are difficult to understand.
 
 > [!TIP]
 >
@@ -249,12 +249,12 @@ Learn more about [combining email recipients](/azure/devops/notifications/howto-
 
 The out-of-the-box notifications feature is now out of preview and available on all accounts. Users and teams are now automatically notified via email when there is activity in the account directly relevant to them, such as:
 
-* when a work item is assigned to a user
-* when a user or team is added as a reviewer to a pull request
-* when a user or team is a reviewer on a pull request that is updated
-* when another user responds to a pull request comment
-* when a build requested by a user completes
-* when an extension is installed or requested (admins only)
+- when a work item is assigned to a user
+- when a user or team is added as a reviewer to a pull request
+- when a user or team is a reviewer on a pull request that is updated
+- when another user responds to a pull request comment
+- when a build requested by a user completes
+- when an extension is installed or requested (admins only)
 
 Users can unsubscribe from any of these subscriptions by going to Notification settings under the user profile menu and then switching off the appropriate toggle(s). Note: These default subscriptions apply to the current account only.
 

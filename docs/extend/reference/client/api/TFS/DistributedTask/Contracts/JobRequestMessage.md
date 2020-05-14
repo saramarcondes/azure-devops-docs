@@ -16,20 +16,20 @@ Module path: `TFS/DistributedTask/Contracts`
 
 ### Members
 
-* `environment`: [JobEnvironment](../../../TFS/DistributedTask/Contracts/JobEnvironment.md).
+- `environment`: [JobEnvironment](../../../TFS/DistributedTask/Contracts/JobEnvironment.md).
 
-* `jobId`: string.
+- `jobId`: string.
 
-* `jobName`: string.
+- `jobName`: string.
 
-* `lockedUntil`: Date.
+- `lockedUntil`: Date.
 
-* `lockToken`: string.
+- `lockToken`: string.
 
-* `plan`: [TaskOrchestrationPlanReference](../../../TFS/DistributedTask/Contracts/TaskOrchestrationPlanReference.md).
+- `plan`: [TaskOrchestrationPlanReference](../../../TFS/DistributedTask/Contracts/TaskOrchestrationPlanReference.md).
 
-* `requestId`: number.
+- `requestId`: number.
 
-* `tasks`: [TaskInstance](../../../TFS/DistributedTask/Contracts/TaskInstance.md)[].
+- `tasks`: [TaskInstance](../../../TFS/DistributedTask/Contracts/TaskInstance.md)[].
 
-* `timeline`: [TimelineReference](../../../TFS/DistributedTask/Contracts/TimelineReference.md).
+- `timeline`: [TimelineReference](../../../TFS/DistributedTask/Contracts/TimelineReference.md).

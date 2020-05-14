@@ -201,11 +201,11 @@ Requires TFS 2015.1 or later version.
 
 ## Related articles
 
-* [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)
-* [Use the query editor to list and manage queries](using-queries.md)
-* [Show tags on cards](../../boards/boards/customize-cards.md)
-* [Bulk modify work items from the web portal](../backlogs/bulk-modify-work-items.md)
-* [Bulk modify work items from Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)
+- [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)
+- [Use the query editor to list and manage queries](using-queries.md)
+- [Show tags on cards](../../boards/boards/customize-cards.md)
+- [Bulk modify work items from the web portal](../backlogs/bulk-modify-work-items.md)
+- [Bulk modify work items from Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)
 
 ### Limits on number of tags
 

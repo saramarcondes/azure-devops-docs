@@ -20,28 +20,28 @@ Manage the steps in the process with approvals for each step.
 
 ## Before you start
 
-* **How many stages do you need?** You might need only test and production.
+- **How many stages do you need?** You might need only test and production.
   But if you need a different environment for a pre-production stage that needs testing,
   consider adding a pre-production stage.
   And if it's important to track who approves that the dev work is ready to test, you might
   want to add a dev stage, too.
-* **Who needs to approve each stage?** You can have multiple approvers for each stage.
+- **Who needs to approve each stage?** You can have multiple approvers for each stage.
   You must add each approver as a user and assign them permissions.
-* **What environments do you need for each of these stages to deploy your app?**
+- **What environments do you need for each of these stages to deploy your app?**
   How many servers do you need for each environment to host your app?
   Do you need multiple web servers? Do you need a database server?
-* **Do you want to use PowerShell, DSC or Chef to deploy your app?** Do you already
+- **Do you want to use PowerShell, DSC or Chef to deploy your app?** Do you already
   have scripts that you can use? Do you want to use Windows Azure for your servers in your environment?
   Or, do you want to use deployment agents?
-* **What are the necessary steps to set up each server?** Do you need to configure
+- **What are the necessary steps to set up each server?** Do you need to configure
   the web app each time? Do you need to stop and start services?
   Do you need to run a script from the command line? Think through all of these steps.
   You'll add actions that perform these steps.
-* **Are a set of these actions common to servers?** If so, you can set up these actions
+- **Are a set of these actions common to servers?** If so, you can set up these actions
   once for each of these servers.
-* **Have you set up a build definition for your app using Team Build?** Go
+- **Have you set up a build definition for your app using Team Build?** Go
   **[here](../../../overview.md)** to learn how.
-* **Do you want to use an on-premises server or the cloud to manage your releases?**
+- **Do you want to use an on-premises server or the cloud to manage your releases?**
   You can maintain your own Release Management server on-premises,
   or you can skip buying and maintaining a server and use Release Management as a service
   on Azure Pipelines instead.
@@ -56,10 +56,10 @@ Manage the steps in the process with approvals for each step.
 
 You have the following options for managing your releases:
 
-* **Using Release Management as a service on Azure Pipelines**:
+- **Using Release Management as a service on Azure Pipelines**:
   You need an organization in Azure DevOps.
   You cannot use Chef and you can deploy only to vNext environments based on Azure IaaS services
-* **Using an on-premises server**: You need to install Release Management Server;
+- **Using an on-premises server**: You need to install Release Management Server;
   do that **[here](install-release-management/install-server-and-client.md#installserver)**.
 
 In both options, you'll use the Release Management Client to set up and run your releases.
@@ -134,8 +134,8 @@ deployment actions based on tags and not server names.
 
 You have the following options for setting up environments:
 
-* [Set up environments without deployment agents](release-without-agents.md#SetupEnv)
-* [Set up environments with deployment agents](release-with-agents.md#SetupEnv)
+- [Set up environments without deployment agents](release-without-agents.md#SetupEnv)
+- [Set up environments with deployment agents](release-with-agents.md#SetupEnv)
 
 <a name="CreateReleaseTemplate"></a>
 
@@ -147,8 +147,8 @@ actions needed to deploy your app.
 
 You have the following options for creating release templates:
 
-* [Create a release template for environments without deployment agents](release-without-agents.md#CreateReleaseTemplate)
-* [Create a release template for environments with deployment agents](release-with-agents.md#CreateReleaseTemplate)
+- [Create a release template for environments without deployment agents](release-without-agents.md#CreateReleaseTemplate)
+- [Create a release template for environments with deployment agents](release-with-agents.md#CreateReleaseTemplate)
 
 <a name="StartRelease"></a>
 
@@ -293,12 +293,12 @@ for hands-on labs to try Release Management and other devops products.
 
 ## Related topics
 
-* [Overview of Release Management](release-management-overview.md)
-* [Install Release Management](install-release-management.md)
-* [Release without deployment agents](release-without-agents.md)
-* [Release with deployment agents](release-with-agents.md)
-* [Trigger a release from a build](trigger-a-release.md)
-* [Deploy continuously to Azure](deploy-continuously-to-azure.md)
+- [Overview of Release Management](release-management-overview.md)
+- [Install Release Management](install-release-management.md)
+- [Release without deployment agents](release-without-agents.md)
+- [Release with deployment agents](release-with-agents.md)
+- [Trigger a release from a build](trigger-a-release.md)
+- [Deploy continuously to Azure](deploy-continuously-to-azure.md)
 
 [!INCLUDE [wpfver-back-to-index-shared](../includes/wpfver-back-to-index-shared.md)]
 

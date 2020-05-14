@@ -23,10 +23,10 @@ In this tutorial you learn how to:
 
 > [!div class="checklist"]
 >
-> * Use gitignore to prevent tracking of files
-> * Ignore files only on your system
-> * Ignore files across all repos on your system
-> * Ignore changes to committed files
+> - Use gitignore to prevent tracking of files
+> - Ignore files only on your system
+> - Ignore files across all repos on your system
+> - Ignore changes to committed files
 
 ## Use gitignore to prevent tracking of files
 

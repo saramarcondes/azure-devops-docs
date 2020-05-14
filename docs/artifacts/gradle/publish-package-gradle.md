@@ -135,10 +135,10 @@ publishing and downloading to use separate organizations, if you prefer.
 
 Replace the following fields with your own values:
 
-* `groupId`: A group ID you associate with your artifact. Give it a team or organization name so consumers can identify the origin easier.
-* `artifactId`: An artifact ID used when publishing your artifact. Again, give it a meaningful name that aptly describes the intent of the APIs in the artifact.
-* `version`: The version of the artifact you're publishing. Update this when you've made changes.
-* `artifact`: The path from the root of the repo to the JAR file that is the artifact to publish. For example, _./target/myJavaClasses.jar_.
+- `groupId`: A group ID you associate with your artifact. Give it a team or organization name so consumers can identify the origin easier.
+- `artifactId`: An artifact ID used when publishing your artifact. Again, give it a meaningful name that aptly describes the intent of the APIs in the artifact.
+- `version`: The version of the artifact you're publishing. Update this when you've made changes.
+- `artifact`: The path from the root of the repo to the JAR file that is the artifact to publish. For example, _./target/myJavaClasses.jar_.
 
 ## Publish your Gradle artifact
 

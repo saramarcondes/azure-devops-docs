@@ -20,9 +20,9 @@ ms.date: 12/30/2016
 
 Teams who are responsible for testing software can use the Build Quality report to help monitor the success or failure rate of test activity with each build. The Build Quality report provides the following reports, which show the test results for all build pipelines for a team project.
 
-* **Build Verification Testing**: Helps the team monitor the quality of builds by showing test results for all automated tests that are marked as Build Verification Test (BVT) that are run during the build process.
+- **Build Verification Testing**: Helps the team monitor the quality of builds by showing test results for all automated tests that are marked as Build Verification Test (BVT) that are run during the build process.
 
-* **Test Activity Per Build**: Helps the team monitor the quality of builds by showing test results for all tests that have been run against the build for all or selected test plans.
+- **Test Activity Per Build**: Helps the team monitor the quality of builds by showing test results for all tests that have been run against the build for all or selected test plans.
 
   > [!NOTE]
   > You can view the Build Quality report if you open Team Explorer, open the team project, open the **Excel Reports** folder, and open the **Test Team Management** folder. You can access this folder only if your team project portal has been enabled and is configured to use SharePoint Server Enterprise Edition. For more information, see [Share information using the project portal](../sharepoint-dashboards/share-information-using-the-project-portal.md).
@@ -61,19 +61,19 @@ The following table describes the report filters and fields that are used in the
 
 For the Build Quality report to be useful and accurate, the team must perform the following activities:
 
-* Define test cases and test plans, and assign test cases to the test plans.
+- Define test cases and test plans, and assign test cases to the test plans.
 
-* **Define tests to run automatically as part of the build**. As part of the build pipeline, you can define tests to run as part of the build or to fail if the tests fail.
+- **Define tests to run automatically as part of the build**. As part of the build pipeline, you can define tests to run as part of the build or to fail if the tests fail.
 
   For more information, see [Run tests in your build process](../../pipelines/test/test-build.md).
 
-* **Run builds regularly**. You can run builds at set intervals or after every check-in. You can create regular builds when you use the schedule trigger.
+- **Run builds regularly**. You can run builds at set intervals or after every check-in. You can create regular builds when you use the schedule trigger.
 
   For more information, see [Get started with CI/CD](../../pipelines/get-started-designer.md).
 
-* **Run tests**. For more information, see [Run your tests](../../test/run-manual-tests.md).
+- **Run tests**. For more information, see [Run your tests](../../test/run-manual-tests.md).
 
-* (Optional) To support filtering, assign **Iteration** and **Area** paths to each test case.
+- (Optional) To support filtering, assign **Iteration** and **Area** paths to each test case.
 
   > [!NOTE]
   > The project administrator for each team project defines area and iteration paths for that project so that the team can track progress by those designations. For more information, see[Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) .
@@ -93,5 +93,5 @@ You can update the Build Quality report by opening it in Office Excel and changi
 
 ## Related articles
 
-* [Excel reports](excel-reports.md)
-* [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)
+- [Excel reports](excel-reports.md)
+- [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)

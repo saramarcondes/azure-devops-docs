@@ -16,4 +16,4 @@ Module path: `VSS/WebApi/Contracts`
 
 ### Members
 
-* `href`: string.
+- `href`: string.

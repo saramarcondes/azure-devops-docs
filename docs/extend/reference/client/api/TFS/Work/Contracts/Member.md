@@ -15,12 +15,12 @@ Module path: `TFS/Work/Contracts`
 
 ### Members
 
-* `displayName`: string.
+- `displayName`: string.
 
-* `id`: string.
+- `id`: string.
 
-* `imageUrl`: string.
+- `imageUrl`: string.
 
-* `uniqueName`: string.
+- `uniqueName`: string.
 
-* `url`: string.
+- `url`: string.

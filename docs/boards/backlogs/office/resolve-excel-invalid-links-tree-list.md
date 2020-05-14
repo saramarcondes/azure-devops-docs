@@ -90,12 +90,12 @@ You cannot publish your changes until you re-establish the tree hierarchy. You c
 
 #### To resolve sorted tree list issues
 
-* Choose **Refresh** to discard your changes and restore the tree hierarchy.
+- Choose **Refresh** to discard your changes and restore the tree hierarchy.
 
   > [!NOTE]
   > If you refresh the tree list, you remove all your changes other than the sort. To refresh the tree list, on the **Team** tab, in the **Work Items** group, choose **Refresh**.
 
-* Manually restore the tree hierarchy by moving the row entries of child items under their parent items. Then, on the **Team** tab, in the **Work Items** group, choose **Publish**.
+- Manually restore the tree hierarchy by moving the row entries of child items under their parent items. Then, on the **Team** tab, in the **Work Items** group, choose **Publish**.
 
 <a name="tf208102"></a>
 
@@ -133,15 +133,15 @@ To modify hierarchical links that are locked, make your changes in the enterpris
 
 #### To publish changes to links that are not locked
 
-* For work items that are not synchronized, you can modify the hierarchical link relationship from Team Explorer or the web portal. For more information, see [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md).
+- For work items that are not synchronized, you can modify the hierarchical link relationship from Team Explorer or the web portal. For more information, see [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md).
 
-* To modify hierarchical link relationships that are not locked in Excel, revise the query that you use to export the work items to exclude all work items whose links are locked. For example, you can add a clause to the filter criteria to omit items whose **Project Server Is Linked** field is set to **Yes**.
+- To modify hierarchical link relationships that are not locked in Excel, revise the query that you use to export the work items to exclude all work items whose links are locked. For example, you can add a clause to the filter criteria to omit items whose **Project Server Is Linked** field is set to **Yes**.
 
 ## Related articles
 
-* [Resolve data validation errors](resolve-excel-data-validation-errors.md)
-* [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md)
-* [Work in Excel or Project](track-work.md)
+- [Resolve data validation errors](resolve-excel-data-validation-errors.md)
+- [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md)
+- [Work in Excel or Project](track-work.md)
 
 ### Required permissions
 

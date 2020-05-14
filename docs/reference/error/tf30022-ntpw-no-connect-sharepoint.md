@@ -16,13 +16,13 @@ ms.date: 01/20/2017
 
 This error occurs when the New Team Project Wizard is unable to connect to the server {_name_} that hosts SharePoint Products while creating a project. An active connection cannot be made due to one of the following conditions:
 
-* The local computer is not connected to the network.
+- The local computer is not connected to the network.
 
-* The network is not operational.
+- The network is not operational.
 
-* The server {name} that hosts SharePoint Products is offline.
+- The server {name} that hosts SharePoint Products is offline.
 
-* A critical file from the server {name} is missing.
+- A critical file from the server {name} is missing.
 
   Because the connection to Team Foundation Server failed, the wizard could not create the SharePoint site on the server.
 
@@ -40,7 +40,7 @@ This error occurs when the New Team Project Wizard is unable to connect to the s
 
     2.  On the **File** menu, click **Open**.
 
-    3.  Navigate to $:\Documents and Settings\\_user name_\Local Settings\Temp\Team Services_TeamProjectCreation_yyyy_mm_dd_hh_mm_ss.log.
+    3.  Navigate to \$:\Documents and Settings\\_user name_\Local Settings\Temp\Team Services_TeamProjectCreation_yyyy_mm_dd_hh_mm_ss.log.
 
     4.  Click **Open**.
 

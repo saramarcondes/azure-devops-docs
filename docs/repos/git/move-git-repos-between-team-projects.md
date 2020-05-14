@@ -16,9 +16,9 @@ monikerRange: '>= tfs-2013'
 
 If you're planning to consolidate multiple Team Projects into one, you're probably wondering:
 
-* What to do with all the repositories?
-* Move or merge them?
-* Keep history or just the tip of the iceberg?
+- What to do with all the repositories?
+- Move or merge them?
+- Keep history or just the tip of the iceberg?
 
 In this article you will learn how to move your Git repositories to another team project, with full-fidelity history.
 

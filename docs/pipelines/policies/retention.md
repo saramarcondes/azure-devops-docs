@@ -71,15 +71,15 @@ You can specify build retention policy defaults and maximums for a project colle
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-* TFS 2017 and newer: `https://{your_server}/tfs/DefaultCollection/_admin/_buildQueue`
+- TFS 2017 and newer: `https://{your_server}/tfs/DefaultCollection/_admin/_buildQueue`
 
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
 
-* TFS 2015.3: `http://{your_server}:8080/tfs/DefaultCollection/_admin/_buildQueue`
+- TFS 2015.3: `http://{your_server}:8080/tfs/DefaultCollection/_admin/_buildQueue`
 
-* TFS 2015 RTM: `http://{your_server}:8080/tfs/DefaultCollection/_admin/_buildQueue#_a=settings`
+- TFS 2015 RTM: `http://{your_server}:8080/tfs/DefaultCollection/_admin/_buildQueue#_a=settings`
 
 ::: moniker-end
 
@@ -96,15 +96,15 @@ The **Permanently destroy releases** helps you keep the runs for a certain perio
 
 If your [repository type](../repos/index.md) is one of the following, you can define multiple retention policies with branch filters:
 
-* Azure Repos Git or TFS Git
-* GitHub
-* Other/external Git
+- Azure Repos Git or TFS Git
+- GitHub
+- Other/external Git
 
 For example, your team may want to keep:
 
-* User branch builds for five days, with a minimum of a single successful or partially successful build for each branch.
-* Master and feature branch builds for 10 days, with a minimum of three successful or partially successful builds for each of these branches. You exclude a special feature branch that you want to keep for a longer period of time.
-* Builds from the special feature branch and all other branches for 15 days, with a minimum of a single successful or partially successful build for each branch.
+- User branch builds for five days, with a minimum of a single successful or partially successful build for each branch.
+- Master and feature branch builds for 10 days, with a minimum of three successful or partially successful builds for each of these branches. You exclude a special feature branch that you want to keep for a longer period of time.
+- Builds from the special feature branch and all other branches for 15 days, with a minimum of a single successful or partially successful build for each branch.
 
 The following example retention policy for a build pipeline
 meets the above requirements:
@@ -143,15 +143,15 @@ The "All" branches policy is automatically added as the last policy in the evalu
 
 When the retention policies mark a build for deletion, you can control which information related to the build is deleted:
 
-* Build record: You can choose to delete the entire build record or keep basic information about the build even after the build is deleted.
-* Source label: If you label sources as part of the build, then you can choose to delete the tag (for Git) or the label (for TFVC) created by a build.
-* Automated test results: You can choose to delete the automated test results associated with the build (for example, results published by the Publish Test Results build task).
+- Build record: You can choose to delete the entire build record or keep basic information about the build even after the build is deleted.
+- Source label: If you label sources as part of the build, then you can choose to delete the tag (for Git) or the label (for TFVC) created by a build.
+- Automated test results: You can choose to delete the automated test results associated with the build (for example, results published by the Publish Test Results build task).
 
 The following information is deleted when a build is deleted:
 
-* Logs
-* [Published artifacts](../tasks/utility/publish-build-artifacts.md)
-* [Published symbols](../tasks/build/index-sources-publish-symbols.md)
+- Logs
+- [Published artifacts](../tasks/utility/publish-build-artifacts.md)
+- [Published symbols](../tasks/build/index-sources-publish-symbols.md)
 
 ::: moniker-end
 
@@ -159,12 +159,12 @@ The following information is deleted when a build is deleted:
 
 The following information is deleted when a run is deleted:
 
-* Logs
-* [All artifacts](../tasks/utility/publish-build-artifacts.md)
-* [All symbols](../tasks/build/index-sources-publish-symbols.md)
-* Binaries
-* Test results
-* Run metadata
+- Logs
+- [All artifacts](../tasks/utility/publish-build-artifacts.md)
+- [All symbols](../tasks/build/index-sources-publish-symbols.md)
+- Binaries
+- Test results
+- Run metadata
 
 ::: moniker-end
 
@@ -213,8 +213,8 @@ If you are using Azure Pipelines, you can view but not change these settings for
 
 Global release retention policy settings can be managed from the **Release** settings of your project:
 
-* Azure Pipelines: `https://dev.azure.com/{organization}/{project}/_settings/release?app=ms.vss-build-web.build-release-hub-group`
-* On-premises: `https://{your_server}/tfs/{collection_name}/{project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
+- Azure Pipelines: `https://dev.azure.com/{organization}/{project}/_settings/release?app=ms.vss-build-web.build-release-hub-group`
+- On-premises: `https://{your_server}/tfs/{collection_name}/{project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
 
 The **maximum retention policy** sets the upper limit for how long releases can be retained
 for all release pipelines. Authors of release pipelines cannot
@@ -233,10 +233,10 @@ The **destruction policy** helps you keep the releases for a certain period of t
 You may want to retain more releases that have been deployed to specific stages.
 For example, your team may want to keep:
 
-* Releases deployed to Production stage for 60 days, with a minimum of three last deployed releases.
-* Releases deployed to Pre-production stage for 15 days, with a minimum of one last deployed release.
-* Releases deployed to QA stage for 30 days, with a minimum of two last deployed releases.
-* Releases deployed to Dev stage for 10 days, with a minimum of one last deployed release.
+- Releases deployed to Production stage for 60 days, with a minimum of three last deployed releases.
+- Releases deployed to Pre-production stage for 15 days, with a minimum of one last deployed release.
+- Releases deployed to QA stage for 30 days, with a minimum of two last deployed releases.
+- Releases deployed to Dev stage for 10 days, with a minimum of one last deployed release.
 
 The following example retention policy for a release pipeline meets the above requirements:
 

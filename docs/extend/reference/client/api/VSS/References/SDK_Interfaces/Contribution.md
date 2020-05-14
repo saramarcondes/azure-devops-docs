@@ -19,14 +19,14 @@ An individual contribution made by an extension
 
 ### Members
 
-* `constraints`: [ContributionConstraint](../../../VSS/References/SDK_Interfaces/ContributionConstraint.md)[]. List of constraints (filters) that should be applied to the availability of this contribution
+- `constraints`: [ContributionConstraint](../../../VSS/References/SDK_Interfaces/ContributionConstraint.md)[]. List of constraints (filters) that should be applied to the availability of this contribution
 
-* `description`: string.
+- `description`: string.
 
-* `id`: string.
+- `id`: string.
 
-* `properties`: any. Properties/attributes of this contribution
+- `properties`: any. Properties/attributes of this contribution
 
-* `targets`: string[]. The IDs of the contribution(s) that this contribution targets. (parent contributions)
+- `targets`: string[]. The IDs of the contribution(s) that this contribution targets. (parent contributions)
 
-* `type`: string. ID of the Contribution Type
+- `type`: string. ID of the Contribution Type

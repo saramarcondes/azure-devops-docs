@@ -30,12 +30,12 @@ The following example shows the syntax structure that defines a category that is
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <CATEGORIES>  
->       <CATEGORY refname="Microsoft.RequirementCategory" name="Requirement Category">  
->       <DEFAULTWORKITEMTYPE name="User Story" />  
->       </CATEGORY>  
+> <CATEGORIES>
+>       <CATEGORY refname="Microsoft.RequirementCategory" name="Requirement Category">
+>       <DEFAULTWORKITEMTYPE name="User Story" />
+>       </CATEGORY>
 >       . . .
-> </CATEGORIES>  
+> </CATEGORIES>
 > ```
 
 <a name="upload"></a>
@@ -47,7 +47,7 @@ To upload a set of category definitions, you specify the **CATEGORIES** element 
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <CATEGORIES fileName="WorkItem Tracking\categories.xml" />  
+> <CATEGORIES fileName="WorkItem Tracking\categories.xml" />
 > ```
 
 The following example shows how to specify a task that uploads a categories file. Because each category specifies a default work item type, the task to upload the category definition file depends on the successful completion of the **WITs** task which uploads the type definitions for work items.
@@ -55,14 +55,14 @@ The following example shows how to specify a task that uploads a categories file
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <task id="Categories" name="Categories definitions" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work item type categories created">  
->       <dependencies>  
->       <dependency taskId="WITs" />  
->       </dependencies>  
->       <taskXml>  
->       <CATEGORIES fileName="WorkItem Tracking\Categories.xml" />  
->       </taskXml>  
-> </task>  
+> <task id="Categories" name="Categories definitions" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work item type categories created">
+>       <dependencies>
+>       <dependency taskId="WITs" />
+>       </dependencies>
+>       <taskXml>
+>       <CATEGORIES fileName="WorkItem Tracking\Categories.xml" />
+>       </taskXml>
+> </task>
 > ```
 
 <a name="elements"></a>
@@ -80,7 +80,7 @@ The following table describes the **CATEGORIES** element that you use to upload 
 
 ## Related articles
 
-* [Use categories to group work item types](../xml/use-categories-to-group-work-item-types.md)
-* [CATEGORIES XML reference](../xml/categories-xml-element-reference.md)
-* [Import and export categories](../witadmin/witadmin-import-export-categories.md)
-* [Define objects for tracking work items](define-objects-track-work-items-plug-in.md)
+- [Use categories to group work item types](../xml/use-categories-to-group-work-item-types.md)
+- [CATEGORIES XML reference](../xml/categories-xml-element-reference.md)
+- [Import and export categories](../witadmin/witadmin-import-export-categories.md)
+- [Define objects for tracking work items](define-objects-track-work-items-plug-in.md)

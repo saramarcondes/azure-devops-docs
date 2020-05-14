@@ -16,4 +16,4 @@ Module path: `TFS/WorkItemTracking/ExtensionContracts`
 
 ### Members
 
-* `id`: number. ID of the work item.
+- `id`: number. ID of the work item.

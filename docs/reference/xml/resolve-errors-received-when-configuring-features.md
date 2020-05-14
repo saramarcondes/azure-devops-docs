@@ -20,9 +20,9 @@ You may be able to resolve errors and warnings that the [Configure Features](../
 
 ## Required permissions
 
-* To download and upload process templates, you must be a member of the **Project Collection Administrators** group. If security permissions are set explicitly, your **Manage process template** permission for the project collection must be set to **Allow**.
+- To download and upload process templates, you must be a member of the **Project Collection Administrators** group. If security permissions are set explicitly, your **Manage process template** permission for the project collection must be set to **Allow**.
 
-* To run the **witadmin** command-line tool, you must be a member of one of the following groups: **Team Foundation Administrators**, **Project Collection Administrators**, or **Project Administrators** for the project.
+- To run the **witadmin** command-line tool, you must be a member of one of the following groups: **Team Foundation Administrators**, **Project Collection Administrators**, or **Project Administrators** for the project.
 
   For more information, see [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md).
 
@@ -69,10 +69,10 @@ To resolve the errors listed in the following table, take the corresponding corr
 
 To learn more, see the following topics:
 
-* [Overview of process template files](../process-templates/overview-process-template-files.md)
-* [About work item fields and attributes](../../boards/work-items/work-item-fields.md)
-* [Change the workflow](change-workflow-wit.md)
-* [Add or modify work item fields to support reporting](add-or-modify-work-item-fields-to-support-reporting.md)
+- [Overview of process template files](../process-templates/overview-process-template-files.md)
+- [About work item fields and attributes](../../boards/work-items/work-item-fields.md)
+- [Change the workflow](change-workflow-wit.md)
+- [Add or modify work item fields to support reporting](add-or-modify-work-item-fields-to-support-reporting.md)
 
 ## <a name="warnings"></a> Resolve warnings reported by the Configure Features wizard
 
@@ -94,10 +94,10 @@ To resolve the warnings, review the workflow for the indicated WIT. As needed, m
 
 To learn more, see the following topics:
 
-* [Export and import work item types](../witadmin/witadmin-import-export-manage-wits.md)
-* [Change the workflow](change-workflow-wit.md)
-* [Download the latest process template](../../boards/work-items/guidance/manage-process-templates.md)
-* [Support bug update status using My Work](support-bug-update-status-using-my-work.md)
+- [Export and import work item types](../witadmin/witadmin-import-export-manage-wits.md)
+- [Change the workflow](change-workflow-wit.md)
+- [Download the latest process template](../../boards/work-items/guidance/manage-process-templates.md)
+- [Support bug update status using My Work](support-bug-update-status-using-my-work.md)
 
 ### <a name="storyboard"></a> Add the Storyboard links control tab
 
@@ -111,15 +111,15 @@ With the addition of [Storyboarding](../../boards/backlogs/office/storyboard-you
 1.  Export the type definition file for the backlog item by substituting your data for the arguments shown:
 
     ```
-    witadmin exportwitd  /collection:CollectionURL /p:"ProjectName" /n:"TypeName" /f:"DirectoryPath\FileName.xml"  
+    witadmin exportwitd  /collection:CollectionURL /p:"ProjectName" /n:"TypeName" /f:"DirectoryPath\FileName.xml"
 
-    Where:  
-          CollectionURL specifies the URL of the project collection  
-          ProjectName specifies the name of your project defined within the collection  
-          TypeName specifies the name of your backlog item, for example User Story or Product Backlog Item.  
+    Where:
+          CollectionURL specifies the URL of the project collection
+          ProjectName specifies the name of your project defined within the collection
+          TypeName specifies the name of your backlog item, for example User Story or Product Backlog Item.
 
-    Use the following format for CollectionURL:      http://ServerName:Port/VirtualDirectoryName/CollectionName  
-    For example: http://srvalm:8080/tfs/DefaultCollection.  
+    Use the following format for CollectionURL:      http://ServerName:Port/VirtualDirectoryName/CollectionName
+    For example: http://srvalm:8080/tfs/DefaultCollection.
     ```
 
 1.  Open the file using a text editor, such as Notepad.
@@ -129,7 +129,7 @@ With the addition of [Storyboarding](../../boards/backlogs/office/storyboard-you
     > [!div class="tabbedCodeSnippets"]
     >
     > ```XML
-    > <TabGroup>  
+    > <TabGroup>
     > <Tab Label="Storyboards">
     >       <Control Name="StoryboardsControl" Type="LinksControl">
     >       <LinksControlOptions>
@@ -144,7 +144,7 @@ With the addition of [Storyboarding](../../boards/backlogs/office/storyboard-you
     >       </LinksControlOptions>
     >       </Control>
     > </Tab>
-    > </TabGroup>  
+    > </TabGroup>
     > ```
 
 1.  Save and close the file.
@@ -152,11 +152,11 @@ With the addition of [Storyboarding](../../boards/backlogs/office/storyboard-you
 1.  Import the type definition file by typing this command, substituting your data for the arguments that are shown:
 
     ```
-    witadmin importwitd /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\FileName.xml"  
+    witadmin importwitd /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\FileName.xml"
     ```
 
 1.  Verify that the tab shows up in the backlog item.
 
 ## Related articles
 
-* [Update a customized process template to access new features](../update-customized-process-template.md)
+- [Update a customized process template to access new features](../update-customized-process-template.md)

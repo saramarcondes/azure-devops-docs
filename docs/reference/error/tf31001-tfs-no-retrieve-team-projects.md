@@ -52,15 +52,15 @@ If the previous resolutions do not solve the problem, check the forum for admini
 
 3.  Open a browser, and browse to one of the following folders, depending on the operating system that is running on the client computer:
 
-    * **Windows 8**
+    - **Windows 8**
 
       _Drive_ **:\Users\\** _UserName_ **\AppData\Local\Microsoft\Team Foundation\4.0\Cache**
 
-    * **Windows Vista or Windows 7**
+    - **Windows Vista or Windows 7**
 
       _Drive_ **:\Users\\** _UserName_ **\AppData\Local\Microsoft\Team Foundation\2.0\Cache**
 
-    * **Windows XP or Windows Server 2003**
+    - **Windows XP or Windows Server 2003**
 
       _Drive_ **:\Documents and Settings\\** _UserName_ **\Local Settings\Application Data\Microsoft\Team Foundation\2.0\Cache**
 
@@ -68,4 +68,4 @@ If the previous resolutions do not solve the problem, check the forum for admini
 
 ## Related articles
 
-* [TF31002: Unable to connect to this Team Foundation Server {0}. Team Foundation Server URL: {1}.](tf31002-unable-connect-tfs.md)
+- [TF31002: Unable to connect to this Team Foundation Server {0}. Team Foundation Server URL: {1}.](tf31002-unable-connect-tfs.md)

@@ -29,8 +29,8 @@ As your team grows, you can easily move from one team to two. In this example, w
 
 ## Prerequisites
 
-* If you don't have a project yet, [create one](../projects/create-project.md).
-* If you're not a Project Administrator, [get added as one](../../organizations/security/set-project-collection-level-permissions.md). Only members of the Project Administrators group can add and delete teams.
+- If you don't have a project yet, [create one](../projects/create-project.md).
+- If you're not a Project Administrator, [get added as one](../../organizations/security/set-project-collection-level-permissions.md). Only members of the Project Administrators group can add and delete teams.
 
 ## Add two feature teams
 
@@ -56,15 +56,15 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
         	> [!div class="mx-imgBorder"]
         	> ![Team profile, choose Iterations and areas link](media/add-team/team-profile-choose-iterations-and-areas.png)
 
-        	> [!IMPORTANT]  
+        	> [!IMPORTANT]
         	> Team tools aren't available until the team's default area path is set. If you haven't created one or more Area Paths for the team to use, then [do that now](set-area-paths.md). Area Paths must be created for the project first, then assigned to the team.
 
-        	From the team profile, you can do these additional tasks:  
+        	From the team profile, you can do these additional tasks:
 
-    * [Add team administrators](add-team-administrator.md)
-    * [Add team members](#add-team-members)
-    * [Navigate to team notifications](../../notifications/howto-manage-team-notifications.md)
-    * [Navigate to and set default team dashboard permissions](../../report/dashboards/dashboard-permissions.md)
+    - [Add team administrators](add-team-administrator.md)
+    - [Add team members](#add-team-members)
+    - [Navigate to team notifications](../../notifications/howto-manage-team-notifications.md)
+    - [Navigate to and set default team dashboard permissions](../../report/dashboards/dashboard-permissions.md)
 
 To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
 
@@ -87,15 +87,15 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
         	> [!div class="mx-imgBorder"]
         	> ![Team profile, choose Iterations and areas link](media/add-team/team-profile-choose-iterations-and-areas.png)
 
-        	> [!IMPORTANT]  
+        	> [!IMPORTANT]
         	> Team tools aren't available until the team's default area path is set. If you haven't created one or more Area Paths for the team to use, then [do that now](set-area-paths.md). Area Paths must be created for the project first, then assigned to the team.
 
-        	From the team profile, you can do these additional tasks:  
+        	From the team profile, you can do these additional tasks:
 
-    * [Add team administrators](add-team-administrator.md)
-    * [Add team members](#add-team-members)
-    * [Navigate to team notifications](../../notifications/howto-manage-team-notifications.md)
-    * [Navigate to and set default team dashboard permissions](../../report/dashboards/dashboard-permissions.md)
+    - [Add team administrators](add-team-administrator.md)
+    - [Add team members](#add-team-members)
+    - [Navigate to team notifications](../../notifications/howto-manage-team-notifications.md)
+    - [Navigate to and set default team dashboard permissions](../../report/dashboards/dashboard-permissions.md)
 
 To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
 
@@ -121,9 +121,9 @@ az devops team list [--project]
 
 #### Parameters
 
-* **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber". You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
-* **skip**: Optional. Number of teams to skip.
-* **top**: Optional. Maximum number of teams to return.
+- **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber". You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
+- **skip**: Optional. Number of teams to skip.
+- **top**: Optional. Maximum number of teams to return.
 
 > [!NOTE]  
 > If you don't specify a **top** number, 100 teams are returned. To list all teams in a project, specify a number for **top** which is greater than the current number of teams defined.
@@ -169,9 +169,9 @@ az devops team create --name
 
 #### Parameters
 
-* **name**: Required. Name of the new team.
-* **description**: Optional. Description of the new team.
-* **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".
+- **name**: Required. Name of the new team.
+- **description**: Optional. Description of the new team.
+- **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".
 
 #### Example
 
@@ -282,15 +282,15 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
         	> [!div class="mx-imgBorder"]
         	> ![Team profile, choose Iterations and areas link](media/add-team/team-profile-choose-iterations-and-areas.png)
 
-        	> [!IMPORTANT]  
+        	> [!IMPORTANT]
         	> Team tools aren't available until the team's default area path is set. If you haven't created one or more Area Paths for the team to use, then [do that now](set-area-paths.md). Area Paths must be created for the project first, then assigned to the team.
 
-        	From the team profile, you can do these additional tasks:  
+        	From the team profile, you can do these additional tasks:
 
-    * [Add team administrators](add-team-administrator.md)
-    * [Add team members](#add-team-members)
-    * [Navigate to team notifications](../../notifications/howto-manage-team-notifications.md)
-    * [Navigate to and set default team dashboard permissions](../../report/dashboards/dashboard-permissions.md)
+    - [Add team administrators](add-team-administrator.md)
+    - [Add team members](#add-team-members)
+    - [Navigate to team notifications](../../notifications/howto-manage-team-notifications.md)
+    - [Navigate to and set default team dashboard permissions](../../report/dashboards/dashboard-permissions.md)
 
 To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
 
@@ -423,17 +423,17 @@ az boards work-item update --id
 
 #### Parameters
 
-* **id**: Required. The ID of the work item to update.
-* **area**: Optional. Absolute path of an area. Example: --path \ProjectName\Area\AreaName.
-* **assigned-to**: Optional. Name of the person the work item is assigned to _Jamal_.
-* **description**: Optional. Description of the work item.
-* **discussion**: Optional. Comment to add to a discussion in a work item.
-* **fields**: Optional. Space separated "field=value" pairs for custom fields you want to set.
-* **iteration**: Optional. Absolute path of an iteration. Example: \ProjectName\Iteration\IterationName.
-* **open**: Optional. Open the work item in the default web browser.
-* **reason**: Optional. Reason for the state of the work item.
-* **state**: Optional. State of the work item, for example, _Active_.
-* **title**: Optional. Title of the work item.
+- **id**: Required. The ID of the work item to update.
+- **area**: Optional. Absolute path of an area. Example: --path \ProjectName\Area\AreaName.
+- **assigned-to**: Optional. Name of the person the work item is assigned to _Jamal_.
+- **description**: Optional. Description of the work item.
+- **discussion**: Optional. Comment to add to a discussion in a work item.
+- **fields**: Optional. Space separated "field=value" pairs for custom fields you want to set.
+- **iteration**: Optional. Absolute path of an iteration. Example: \ProjectName\Iteration\IterationName.
+- **open**: Optional. Open the work item in the default web browser.
+- **reason**: Optional. Reason for the state of the work item.
+- **state**: Optional. State of the work item, for example, _Active_.
+- **title**: Optional. Title of the work item.
 
 #### Example
 
@@ -612,11 +612,11 @@ az boards area team add --path  --team
 
 #### Parameters
 
-* **path**: Required. Absolute path of an area. Example: --path \ProjectName\Area\AreaName.
-* **team**: Required. Name or ID of the team.
-* **include-sub-areas**: Optional. Include child nodes of the area path. Accepted values: false, true.
-* **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".
-* **set-as-default**: Optional. Specify as the default area path for the team. Default: False.
+- **path**: Required. Absolute path of an area. Example: --path \ProjectName\Area\AreaName.
+- **team**: Required. Name or ID of the team.
+- **include-sub-areas**: Optional. Include child nodes of the area path. Accepted values: false, true.
+- **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".
+- **set-as-default**: Optional. Specify as the default area path for the team. Default: False.
 
 #### Example
 
@@ -682,9 +682,9 @@ Fabrikam Fiber\Voice                   True                 True
 
 For teams to work autonomously, you may want to provide them with permissions that they don't have by default. Suggested tasks include providing team administrators or team leads permissions to:
 
-* Create and edit child nodes under their default area path
-* Create and edit child nodes under an existing iteration node
-* Create shared queries and folders under the Shared Queries folder
+- Create and edit child nodes under their default area path
+- Create and edit child nodes under an existing iteration node
+- Create shared queries and folders under the Shared Queries folder
 
 For more information on setting the above permissions or restricting access for select users, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md).
 
@@ -698,8 +698,8 @@ If your Azure DevOps Server or TFS deployment is integrated with SQL Server Repo
 
 If your TFS deployment is integrated with a SharePoint product or SQL Server Reports, you'll need to manage membership for those products separately from their websites.
 
-* [Set SharePoint site permissions](../security/set-sharepoint-permissions.md)
-* [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md).
+- [Set SharePoint site permissions](../security/set-sharepoint-permissions.md)
+- [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md).
 
 ::: moniker-end
 
@@ -713,8 +713,8 @@ Once you've created a team, you'll want to configure your Agile tools to support
 
 ## Related articles
 
-* [Rename or remove a team](rename-remove-team.md)
-* [About teams and Agile tools](about-teams-and-settings.md)
-* [Azure DevOps Teams CLI](/cli/azure/ext/azure-devops/devops/team)
-* [Teams (REST API)](/rest/api/azure/devops/core/teams)
-* [Work Items (REST API)](/rest/api/azure/devops/wit)
+- [Rename or remove a team](rename-remove-team.md)
+- [About teams and Agile tools](about-teams-and-settings.md)
+- [Azure DevOps Teams CLI](/cli/azure/ext/azure-devops/devops/team)
+- [Teams (REST API)](/rest/api/azure/devops/core/teams)
+- [Work Items (REST API)](/rest/api/azure/devops/wit)

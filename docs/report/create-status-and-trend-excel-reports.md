@@ -43,13 +43,13 @@ Here's an example of a status report generated from a flat-list query.
 
 You can generate these reports only when you work with an on-premises TFS that has been configured with reporting services.
 
-* Your deployment needs to be integrated with reporting services. If your on-premises TFS application-tier server hasn't been configured to support reporting services, you can add that functionality by following the steps provided here: [Add reports to a team project](./admin/add-reports-to-a-team-project.md).
+- Your deployment needs to be integrated with reporting services. If your on-premises TFS application-tier server hasn't been configured to support reporting services, you can add that functionality by following the steps provided here: [Add reports to a team project](./admin/add-reports-to-a-team-project.md).
 
-- You must be a member of the **TfsWarehouseDataReader** security roles. To get added, see [Grant permissions to view or create reports in TFS](./admin/grant-permissions-to-reports.md).
+* You must be a member of the **TfsWarehouseDataReader** security roles. To get added, see [Grant permissions to view or create reports in TFS](./admin/grant-permissions-to-reports.md).
 
-- A version of Excel that is compatible with Office 2007, Office 2010, or Office 2013. If you don't have Excel, [install it now](https://office.microsoft.com/excel/).
+* A version of Excel that is compatible with Office 2007, Office 2010, or Office 2013. If you don't have Excel, [install it now](https://office.microsoft.com/excel/).
 
-- Either Visual Studio or the Team Explorer plug-in for Visual Studio, which you can [install from this download site](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs). Team Explorer is free and requires a Windows OS.
+* Either Visual Studio or the Team Explorer plug-in for Visual Studio, which you can [install from this download site](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs). Team Explorer is free and requires a Windows OS.
 
   You need to install Team Explorer to get the Team Foundation add-in for Excel.
 
@@ -106,9 +106,9 @@ Use this procedure when you work from the web portal or the Team Explorer plug-i
 
 **A:** Even though you can include non-reportable fields in your query field criteria or as a column option, they won't be used to generate a report.
 
-* Description, History, and other HTML data-type fields. These fields won't be added to the PivotTable or used to generate a report. Excel does not support generating reports on these fields.
+- Description, History, and other HTML data-type fields. These fields won't be added to the PivotTable or used to generate a report. Excel does not support generating reports on these fields.
 
-* Fields with filter criteria that specify the **Contains**, **Contains Words**, **Does Not Contain**, or **Does Not Contain Words** operators will not be added to the PivotTable. Excel does not support these operators.
+- Fields with filter criteria that specify the **Contains**, **Contains Words**, **Does Not Contain**, or **Does Not Contain Words** operators will not be added to the PivotTable. Excel does not support these operators.
 
 ### Q: Can I create reports if I'm working in Azure DevOps?
 

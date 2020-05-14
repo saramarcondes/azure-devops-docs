@@ -105,9 +105,9 @@ If you want to integrate shelved revisions into your current workspace in order 
 
 You can also unshelve a shelveset in order to review changes from another user's workspace. To unshelve for this reason, you have two options.
 
-* If the shelved items and the items with which they are related have not been revised, or have only been revised lightly since the shelveset was created, you can retrieve the base version of all related items from the shelveset owner's workspace. To do this, use some variation of the following command: `tf get \* /version;Wworkspacename`, where _workspacename_ is the name of the workspace from which the other user created the shelveset.
+- If the shelved items and the items with which they are related have not been revised, or have only been revised lightly since the shelveset was created, you can retrieve the base version of all related items from the shelveset owner's workspace. To do this, use some variation of the following command: `tf get \* /version;Wworkspacename`, where _workspacename_ is the name of the workspace from which the other user created the shelveset.
 
-* If a significant amount of time has passed or if multiple revisions have been in the workspace since the shelveset was created, retrieve the version of all related items from the server as of the date and time when the shelveset was created.
+- If a significant amount of time has passed or if multiple revisions have been in the workspace since the shelveset was created, retrieve the version of all related items from the server as of the date and time when the shelveset was created.
 
 You can unshelve another user's shelved change by appending the username to the shelveset name. However, you can only remove a shelveset from the Team Foundation Server that was created by another user if you have the AdminShelvedChangesets permission.
 

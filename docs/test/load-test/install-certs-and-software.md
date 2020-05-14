@@ -22,20 +22,20 @@ To do this you can include artifact deployments, setup, and cleanup scripts in t
 
 Some examples are:
 
-* Install client certificates on agent machines; for example, when you are using HTTP client authentication the web server authenticates the
+- Install client certificates on agent machines; for example, when you are using HTTP client authentication the web server authenticates the
   client using the client's public key certificate. You can use a setup script to install the relevant certificate on the agent
   machines that run your load tests.
 
-* Install an Azure Management Certificate; for example, if your unit tests must perform operations such as
+- Install an Azure Management Certificate; for example, if your unit tests must perform operations such as
   creating a new storage subscription or deploying an Azure website by using Windows Azure Management API. You can use a setup script to
   install the certificate.
 
-* Install software on the machines running the load test agents in the cloud to collect data or metrics;
+- Install software on the machines running the load test agents in the cloud to collect data or metrics;
   for example, installing [Network Monitor](https://blogs.technet.com/b/netmon/) to capture network traffic statistics.
   You can use a setup script to install it on the agent machine and use a cleanup script to save the data to remote storage
   such as Azure Storage (by using a SAS key).
 
-* Change settings on the agent machine before and after running the test; for example, you can use a setup script and a cleanup
+- Change settings on the agent machine before and after running the test; for example, you can use a setup script and a cleanup
   script to modify and reset values such as registry entries or other settings as required.
 
 ## Add certificates and scripts to deploy
@@ -89,8 +89,8 @@ in the cloud, assuming you have added `WebDeploy_x64_en-US.msi` to the deploymen
 
 ## See also
 
-* [Load test with Visual Studio](getting-started-with-performance-testing.md)
-* [Load test with Azure DevOps](get-started-simple-cloud-load-test.md)
-* [Load test with Azure portal](app-service-web-app-performance-test.md)
+- [Load test with Visual Studio](getting-started-with-performance-testing.md)
+- [Load test with Azure DevOps](get-started-simple-cloud-load-test.md)
+- [Load test with Azure portal](app-service-web-app-performance-test.md)
 
 [!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)]

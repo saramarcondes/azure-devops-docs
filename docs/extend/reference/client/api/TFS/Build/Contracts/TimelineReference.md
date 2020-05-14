@@ -16,8 +16,8 @@ Module path: `TFS/Build/Contracts`
 
 ### Members
 
-* `changeId`: number.
+- `changeId`: number.
 
-* `id`: string.
+- `id`: string.
 
-* `url`: string.
+- `url`: string.

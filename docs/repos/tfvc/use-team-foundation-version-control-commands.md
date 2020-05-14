@@ -208,15 +208,15 @@ tf checkout [/lock:( none|checkin|checkout)] [/recursive] itemspec [/login: user
 
 Let's review the arguments from this example:
 
-* _itemspec_: You must replace this argument with an [itemspec](use-team-foundation-version-control-commands.md#itemspec) that specifies the items you are checking out.
+- _itemspec_: You must replace this argument with an [itemspec](use-team-foundation-version-control-commands.md#itemspec) that specifies the items you are checking out.
 
-* **/lock:(none|checkin|checkout)**: You are not required to specify the **/lock** option. If you do not specify it, then the system by default specifies **/lock:none**. Otherwise, you can specify one of the lock options.
+- **/lock:(none|checkin|checkout)**: You are not required to specify the **/lock** option. If you do not specify it, then the system by default specifies **/lock:none**. Otherwise, you can specify one of the lock options.
 
-* The following arguments are optional and if you do not supply them, none of their effects apply to the command:
+- The following arguments are optional and if you do not supply them, none of their effects apply to the command:
 
-  * **/recursive**: If you want to recursively check out multiple items in a folder, you must specify this option verbatim.
+  - **/recursive**: If you want to recursively check out multiple items in a folder, you must specify this option verbatim.
 
-  * **/login**:_username_<em>,password</em>: If you want to run the command as another user, you must specify the **/login** option verbatim, replace _username_ with the name of the user, and if necessary, you can supply the password.
+  - **/login**:_username_<em>,password</em>: If you want to run the command as another user, you must specify the **/login** option verbatim, replace _username_ with the name of the user, and if necessary, you can supply the password.
 
 ## Specify the items affected by a command
 
@@ -234,13 +234,13 @@ A client itemspec argument specifies a path to items on a client machine such as
 
 #### Server itemspec arguments
 
-A server itemspec argument specifies a path to items on your Team Foundation Server such as a folder (for example, **$/SiteApp/Main/SolutionA**) a file (for example, **$/SiteApp/Main/SolutionA/Project1/program.cs** or multiple files (for example, **$/SiteApp/Main/SolutionA/\*.cs**.
+A server itemspec argument specifies a path to items on your Team Foundation Server such as a folder (for example, **\$/SiteApp/Main/SolutionA**) a file (for example, **\$/SiteApp/Main/SolutionA/Project1/program.cs** or multiple files (for example, **\$/SiteApp/Main/SolutionA/\*.cs**.
 
 You typically use server itemspec arguments when you need run a command on items not on the client machine. For example, you are working on a dev machine and need to get some revision history data about some items that are in a project collection you don't work in:
 
 ```
 c:\>tf history /collection:http://fabrikam-3:8080/tfs/DefaultCollection
-$/SiteApp/Main/SolutionA/Project1/* /recursive  
+$/SiteApp/Main/SolutionA/Project1/* /recursive
 /noprompt
 ```
 
@@ -258,9 +258,9 @@ Checks out program.cs and program2.c.
 
 You use a _versionspec_ (version specification) to specify the version of items affected by a command. To provide a _versionspec_ you can:
 
-* Use the **/version** option. For example: **/version:C44**.
+- Use the **/version** option. For example: **/version:C44**.
 
-* Append the versionspec to an itemspec with a semicolon. For example: **program1.cs;C44**.
+- Append the versionspec to an itemspec with a semicolon. For example: **program1.cs;C44**.
 
 When you use the [History command](history-command.md) or the [Difference Command](difference-command.md), you can specify a range of versions by separating the versions with a tilde (~). For example:
 
@@ -404,13 +404,13 @@ Use the **/noprompt** option to suppress requests for data input and redirect ou
 
 When you use this option, the system:
 
-* Suppresses all requests for input:
+- Suppresses all requests for input:
 
-  * Questions are not asked in the command prompt window. For example, when you use the [Undo command](undo-command.md) with this option, the system does not prompt you to confirm if you want to proceed with undoing the changes.
+  - Questions are not asked in the command prompt window. For example, when you use the [Undo command](undo-command.md) with this option, the system does not prompt you to confirm if you want to proceed with undoing the changes.
 
-  * Windows and dialog boxes are not presented. For example, you use this option with the [Checkin command](checkin-command.md). Instead of displaying the **Check In** dialog box for you to confirm your options (which items you want to check in or which work items to associate), the system proceeds with the check in without confirmation.
+  - Windows and dialog boxes are not presented. For example, you use this option with the [Checkin command](checkin-command.md). Instead of displaying the **Check In** dialog box for you to confirm your options (which items you want to check in or which work items to associate), the system proceeds with the check in without confirmation.
 
-* Redirects output data to the command prompt. For example, you use this option with the [History command](history-command.md). The data is displayed in the command prompt window instead of the [History window](get-history-item.md).
+- Redirects output data to the command prompt. For example, you use this option with the [History command](history-command.md). The data is displayed in the command prompt window instead of the [History window](get-history-item.md).
 
 ### Use /login option to specify credentials when running a command
 
@@ -451,15 +451,15 @@ Use the **/lock** option to apply or remove a lock at the same time you run anot
 /lock:(none|checkin|checkout)
 ```
 
-* **None**: No lock is placed on an item. If a lock is already in place, it is removed.
+- **None**: No lock is placed on an item. If a lock is already in place, it is removed.
 
-* **Checkin** or **Checkout**: Applies a lock. See [Understand lock types](understand-lock-types.md).
+- **Checkin** or **Checkout**: Applies a lock. See [Understand lock types](understand-lock-types.md).
 
 > [!NOTE]
 > In a few cases, the lock operation can fail:
 >
-> * If any other users have locked any of the specified items, the lock operation will fail.
-> * The system ignores this switch if there is already a pending change to the item. In this case, you must use the [Lock Command](lock-command.md) to change a lock on an item.
+> - If any other users have locked any of the specified items, the lock operation will fail.
+> - The system ignores this switch if there is already a pending change to the item. In this case, you must use the [Lock Command](lock-command.md) to change a lock on an item.
 
 ### Use option shortcuts
 

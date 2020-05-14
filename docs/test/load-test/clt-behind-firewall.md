@@ -21,10 +21,10 @@ of an app by generating load from Azure. This type of load generation can only a
 generate load on an Internet-located or publicly accessible app. However, you may want
 to load test an app which is not publicly accessible, perhaps to:
 
-* **Test an app that runs only on an internal network**. In many large-scale enterprises
+- **Test an app that runs only on an internal network**. In many large-scale enterprises
   there are apps and websites that cater for the needs of the whole enterprise and it is
   crucial to test it with peak load to discover any performance or stress-related issues.
-* **Test an app internally before releasing it on the Internet** Before going public,
+- **Test an app internally before releasing it on the Internet** Before going public,
   enterprises typically want to ensure there are no performance issues that may affect
   the app under high user load.
 
@@ -66,8 +66,8 @@ This topic discusses only scenarios **3** and **4**.
 The following sections describe how you can provision load agents using Azure IaaS VMs
 (you will need an Azure subscription). This approach is primarily useful when:
 
-* You want to test a private app that is not accessible through the CLT service or over the Internet.
-* You have your own Azure subscription and you want to use it for load testing. You can also use any Azure free credits you may have.
+- You want to test a private app that is not accessible through the CLT service or over the Internet.
+- You have your own Azure subscription and you want to use it for load testing. You can also use any Azure free credits you may have.
 
 Azure also allows you to spread the load testing across different geographical locations to measure response times from different locations.
 
@@ -99,10 +99,10 @@ VNet identification requires the resource group name.
 You can use [this ARM template](https://github.com/Azure/azure-quickstart-templates/tree/master/101-vsts-cloudloadtest-rig)
 if you don't want to use a VNet. This may be because:
 
-* You don't have ExpressRoute in Azure but want to perform load testing using your own subscription.
+- You don't have ExpressRoute in Azure but want to perform load testing using your own subscription.
   This ARM template deploys a rig with its own VNet. If you need to test a private app, you can deploy
   the rig with static IP addresses (provided as an option), then open the firewall for these IPs to enable routing for load agents.
-* You want to be able to control the load generation agents (CLT auto-provisioned agents can't be accessed by the user).
+- You want to be able to control the load generation agents (CLT auto-provisioned agents can't be accessed by the user).
   You can choose to have static or dynamic IP addresses for these VMs.
 
 Alternatively, you can
@@ -142,10 +142,10 @@ Then select the test rig you have configured with the ARM template, and optional
 
 Add the following context parameters to your Visual Studio Load Test file:
 
-* Context parameter name: **UseStaticLoadAgents**
-* Context parameter value: **true**
-* Context parameter name: **StaticAgentsGroupName**
-* Context parameter value: **[name of your agent group]**
+- Context parameter name: **UseStaticLoadAgents**
+- Context parameter value: **true**
+- Context parameter name: **StaticAgentsGroupName**
+- Context parameter value: **[name of your agent group]**
 
 ![Adding context parameters to your Visual Studio Load Test file](media/clt-behind-firewall/contextparam.png)
 
@@ -171,28 +171,28 @@ to manage self-provisioned agents. Download the script and unblock the file befo
 
 **Script parameters**
 
-* **TeamServicesAccountName**. The name of your Azure DevOps subscription you want to manage. Specify just the name.
+- **TeamServicesAccountName**. The name of your Azure DevOps subscription you want to manage. Specify just the name.
 
-* **PATToken**. Required for authentication. Obtain a PAT token for your Azure DevOps subscription [as described here](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+- **PATToken**. Required for authentication. Obtain a PAT token for your Azure DevOps subscription [as described here](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
   Ensure the selected scope is **Load Test (read and write)**.
 
 The available operations and the switches for the script are:
 
-* **Get agent groups**. Lists all the registered agent groups within the Azure DevOps subscription. Example:
+- **Get agent groups**. Lists all the registered agent groups within the Azure DevOps subscription. Example:
 
 ```PowerShell
 .\ManageVSTSCloudLoadAgent.ps1 -TeamServicesAccountName [your-Azure-DevOps-url]
   -PATToken olxpldk2...wi3rbaq -GetAgentGroups
 ```
 
-* **Get agents**. Lists all the agents and their current status for a specified agent group. Example:
+- **Get agents**. Lists all the agents and their current status for a specified agent group. Example:
 
 ```PowerShell
 .\ManageVSTSCloudLoadAgent.ps1 -TeamServicesAccountName [your-Azure-DevOps-url]
   -PATToken olxpldk2...wi3rbaq -AgentGroupName test -GetAgents
 ```
 
-* **Delete an agent**. Deletes the agent reference from the service. The agent must be in the offline
+- **Delete an agent**. Deletes the agent reference from the service. The agent must be in the offline
   state. The agent group name is mandatory. Example:
 
 ```PowerShell
@@ -260,11 +260,11 @@ allow the URL `https://<subscription name>.vsclt.visualstudio.com`.
 
 ## See also
 
-* [FAQs for load testing](reference-qa.md#jmeter-tests)
-* [Load test with Visual Studio](getting-started-with-performance-testing.md)
-* [Load test with Azure DevOps](get-started-simple-cloud-load-test.md)
-* [Load test with Azure portal](app-service-web-app-performance-test.md)
-* [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md)
-* [Analyze load test results using the Load Test Analyzer](/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
+- [FAQs for load testing](reference-qa.md#jmeter-tests)
+- [Load test with Visual Studio](getting-started-with-performance-testing.md)
+- [Load test with Azure DevOps](get-started-simple-cloud-load-test.md)
+- [Load test with Azure portal](app-service-web-app-performance-test.md)
+- [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md)
+- [Analyze load test results using the Load Test Analyzer](/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
 
 [!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)]

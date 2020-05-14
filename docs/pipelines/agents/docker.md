@@ -33,8 +33,8 @@ Hyper-V is not enabled by default on Windows.
 In order to provide isolation between containers, it must be enabled.
 Otherwise, Docker for Windows won't start.
 
-* [Enable Hyper-V on Windows 10](/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
-* [Enable Hyper-V on Windows Server 2016](/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server)
+- [Enable Hyper-V on Windows 10](/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
+- [Enable Hyper-V on Windows Server 2016](/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server)
 
 > [!NOTE]
 > Virtualization must be enabled on your machine.
@@ -382,9 +382,9 @@ You must also use some kind of container orchestration system like Kubernetes or
 In this walkthrough, you created a basic build agent.
 You can extend the Dockerfile to include additional tools and their dependencies, or build your own container using this one as a base layer. Just make sure that the following things are left untouched:
 
-* The `start.sh` script is called by the Dockerfile
-* The `start.sh` script is the last command that the Dockerfile
-* Ensure that derivative containers do not remove any of the dependencies stated by the Dockerfile
+- The `start.sh` script is called by the Dockerfile
+- The `start.sh` script is the last command that the Dockerfile
+- Ensure that derivative containers do not remove any of the dependencies stated by the Dockerfile
 
 ## Using Docker within a Docker container
 

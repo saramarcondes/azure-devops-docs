@@ -61,7 +61,7 @@ In order to view the code coverage results in the pipeline, see [Review code cov
 
 ## Related tasks
 
-* [Publish Test Results](publish-test-results.md)
+- [Publish Test Results](publish-test-results.md)
 
 ## Open source
 

@@ -19,13 +19,13 @@ Now you get to see the magic of a release pipeline at work! You'll make a change
 
 1.  Save the file, push/check-in the changes to the project:
 
-    * If you're using Git in Visual Studio, click the changes icon on the status bar:
+    - If you're using Git in Visual Studio, click the changes icon on the status bar:
 
       ![Location of the changes button on the Visual Studio status bar](../media/commit-change-in-vs.png)
 
       Then enter a commit message, click **Commit All**, click the **Sync** link, then click **Outgoing Commits > Push**. This will push the changes to a repository in Azure Repos.
 
-    * If you're using Team Foundation version control (TFVC), switch to the Team Explorer pane, then to Pending Changes where you should see About.cshtml listed. Enter a comment and click **Check In**.
+    - If you're using Team Foundation version control (TFVC), switch to the Team Explorer pane, then to Pending Changes where you should see About.cshtml listed. Enter a comment and click **Check In**.
 
 1.  Once the push/check-in is complete, switch to Azure Pipelines in your browser.
 1.  Navigate to **Builds** and click on your build pipeline. You should see a build in progress:

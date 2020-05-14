@@ -42,24 +42,24 @@ In order to create a Power BI report that references an Analytics view, you must
 
 ::: moniker range="azure-devops"
 
-* You must be a member of a project. If you don't have a project yet, create one. See [Sign up for free](/azure/devops/user-guide/sign-up-invite-teammates).
-* If you haven't been added as a project member, [get added now](/azure/devops/organizations/accounts/add-organization-users). Anyone with access to the project, except Stakeholders, can view Analytics views.
-* Have the **View Analytics** permission set to **Allow**. See [Grant permissions to access Analytics](/azure/devops/report/powerbi/analytics-security).
-* **Boards** must be enabled. If disabled, **Analytics views** won't display. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
-* Have installed _Power BI Desktop_ _October 2018 Update_ or later version. You can download this client application from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).
-* Have tracked work items for some period of time on which to generate a trend report.
+- You must be a member of a project. If you don't have a project yet, create one. See [Sign up for free](/azure/devops/user-guide/sign-up-invite-teammates).
+- If you haven't been added as a project member, [get added now](/azure/devops/organizations/accounts/add-organization-users). Anyone with access to the project, except Stakeholders, can view Analytics views.
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions to access Analytics](/azure/devops/report/powerbi/analytics-security).
+- **Boards** must be enabled. If disabled, **Analytics views** won't display. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
+- Have installed _Power BI Desktop_ _October 2018 Update_ or later version. You can download this client application from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).
+- Have tracked work items for some period of time on which to generate a trend report.
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-* You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
-* If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project). Anyone with access to the project, except Stakeholders, can view Analytics views.
-* Have [enabled or installed Analytics](../dashboards/analytics-extension.md). You must be an account owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions or enable the service.
-* **Boards** must be enabled. If disabled, **Analytics views** won't display. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
-* Have the **View Analytics** permission set to **Allow**. See [Grant permissions to access Analytics](/azure/devops/report/powerbi/analytics-security).
-* Have installed _Power BI Desktop_ _October 2018 Update_ or later version. You can download this client application from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).
-* Have tracked work items for some period of time on which to generate a trend report.
+- You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
+- If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project). Anyone with access to the project, except Stakeholders, can view Analytics views.
+- Have [enabled or installed Analytics](../dashboards/analytics-extension.md). You must be an account owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions or enable the service.
+- **Boards** must be enabled. If disabled, **Analytics views** won't display. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions to access Analytics](/azure/devops/report/powerbi/analytics-security).
+- Have installed _Power BI Desktop_ _October 2018 Update_ or later version. You can download this client application from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).
+- Have tracked work items for some period of time on which to generate a trend report.
 
 ::: moniker-end
 
@@ -166,7 +166,7 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 
 ## Group and filter the trend by State
 
-* To group your user stories by State, drag the **State** field into the Legend area. Optionally, filter the set of States to show in the chart.
+- To group your user stories by State, drag the **State** field into the Legend area. Optionally, filter the set of States to show in the chart.
 
       	Here we've filtered the list to show work items in the Active, Committed, and In Progress states.
 
@@ -175,7 +175,7 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
       	The chart now shows a daily distinct count of user stories, grouped by Active, Committed, and In Progress.
 
       	> [!TIP]
-      	> If you need to modify your Analytics view, you can do so and then return to your Power BI report and refresh the data. Simply click the **Refresh** option as shown.  
+      	> If you need to modify your Analytics view, you can do so and then return to your Power BI report and refresh the data. Simply click the **Refresh** option as shown.
       	>
       	> ![Refresh report data](media/active-bugs-report/refresh-report-updated-view.png)
 
@@ -209,8 +209,8 @@ The reports shown in this quickstart illustrate how easy it is to generate repor
 
 ## Related articles
 
-* [Get started with Power BI Desktop](/power-bi/desktop-getting-started)
-* [Power BI integration overview](overview.md)
-* [Create Analytics views](analytics-views-create.md)
-* [Connect with Power BI Data Connector](./data-connector-connect.md)
-* [Dataset design for the Power BI Data Connector](data-connector-dataset.md)
+- [Get started with Power BI Desktop](/power-bi/desktop-getting-started)
+- [Power BI integration overview](overview.md)
+- [Create Analytics views](analytics-views-create.md)
+- [Connect with Power BI Data Connector](./data-connector-connect.md)
+- [Dataset design for the Power BI Data Connector](data-connector-dataset.md)

@@ -22,8 +22,7 @@ This article shows you how to get the number of runs for different pipeline outc
 
 An example is shown in the following image.
 
-> [!div class="mx-imgBorder"]
-> ![Sample - Pipelines Outcome Summary - Report](media/odatapowerbi-pipelines/outcomesummary-report.png)
+> [!div class="mx-imgBorder"] > ![Sample - Pipelines Outcome Summary - Report](media/odatapowerbi-pipelines/outcomesummary-report.png)
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
@@ -128,8 +127,7 @@ The following table describes each part of the query.
 
 1.  Change the type of column TotalCount to **Whole Number**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI + OData - change column type](media/odatapowerbi-pipelines/outcomesummary-changecolumntype.png)
+    > [!div class="mx-imgBorder"] > ![Power BI + OData - change column type](media/odatapowerbi-pipelines/outcomesummary-changecolumntype.png)
 
 ### Rename fields and query, then Close & Apply
 
@@ -137,18 +135,15 @@ When finished, you may choose to rename columns.
 
 1.  Right-click a column header and select **Rename...**
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI Rename Columns](media/odatapowerbi-pipelines/outcomesummary-renamerightclick.png)
+    > [!div class="mx-imgBorder"] > ![Power BI Rename Columns](media/odatapowerbi-pipelines/outcomesummary-renamerightclick.png)
 
 1.  You also may want to rename the query from the default **Query1**, to something more meaningful.
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI Rename Query](media/odatapowerbi-pipelines/renamequery.png)
+    > [!div class="mx-imgBorder"] > ![Power BI Rename Query](media/odatapowerbi-pipelines/renamequery.png)
 
 1.  Once done, choose **Close & Apply** to save the query and return to Power BI.
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI Close & Apply](media/odatapowerbi-pipelines/closeandapply.png)
+    > [!div class="mx-imgBorder"] > ![Power BI Close & Apply](media/odatapowerbi-pipelines/closeandapply.png)
 
 ## Create the report
 
@@ -157,26 +152,24 @@ Power BI shows you the fields you can report on.
 > [!NOTE]  
 > The example below assumes that no one renamed any columns.
 
-> [!div class="mx-imgBorder"]
-> ![Sample - Pipelines Outcome Summary - Fields](media/odatapowerbi-pipelines/outcomesummary-fields.png)
+> [!div class="mx-imgBorder"] > ![Sample - Pipelines Outcome Summary - Fields](media/odatapowerbi-pipelines/outcomesummary-fields.png)
 
 For a simple report, do the following steps:
 
 1.  Select Power BI Visualization **Donut Chart**.
 1.  Add the field "SucceededCount" to **Values**.
-    * Right-click "SucceededCount" field and ensure **Sum** is selected.
+    - Right-click "SucceededCount" field and ensure **Sum** is selected.
 1.  Add the field "FailedCount" to **Values**.
-    * Right-click "FailedCount" field and ensure **Sum** is selected.
+    - Right-click "FailedCount" field and ensure **Sum** is selected.
 1.  Add the field "CanceledCount" to **Values**.
-    * Right-click "CanceledCount" field and ensure **Sum** is selected.
+    - Right-click "CanceledCount" field and ensure **Sum** is selected.
 1.  Add the field "PartiallySucceededCount " to **Values**.
 
-    * Right-click "PartiallySucceededCount " field and ensure **Sum** is selected.
+    - Right-click "PartiallySucceededCount " field and ensure **Sum** is selected.
 
 Your report should look like this.
 
-> [!div class="mx-imgBorder"]
-> ![Sample - Pipelines Outcome Summary - Report](media/odatapowerbi-pipelines/outcomesummary-report.png)
+> [!div class="mx-imgBorder"] > ![Sample - Pipelines Outcome Summary - Report](media/odatapowerbi-pipelines/outcomesummary-report.png)
 
 [!INCLUDE [temp](includes/sample-multipleteams.md)]
 
@@ -238,9 +231,9 @@ $apply=filter(
 
 You may want to view the outcome summary of a pipeline for a particular **branch**. To create the report, perform the following additional steps along with what is defined previously in this article.
 
-* Expand Branch into Branch.BranchName
-* Select Power BI Visualization **Slicer** and add the field Branch.BranchName to the slicer's **Field**
-* Select the pipeline from the slicer for which you need to see the outcome summary
+- Expand Branch into Branch.BranchName
+- Select Power BI Visualization **Slicer** and add the field Branch.BranchName to the slicer's **Field**
+- Select the pipeline from the slicer for which you need to see the outcome summary
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -294,8 +287,8 @@ aggregate(
 
 You may want to view the outcome summary of a pipeline for a particular **Build Reason** (Manual / BatchedCI, Pull Request etc.) only. To create the report, follow the below additional steps along with what is defined previously in this article.
 
-* Select Power BI Visualization **Slicer** and add the field RunReason to the slicer's **Field**
-* Select the pipeline from the slicer for which you need to see the outcome summary
+- Select Power BI Visualization **Slicer** and add the field RunReason to the slicer's **Field**
+- Select the pipeline from the slicer for which you need to see the outcome summary
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -349,9 +342,9 @@ aggregate(
 
 You may want to view the pipeline outcome summary for all project pipelines in a single report. To create the report, perform the following additional steps along with those provided previously in this article.
 
-* Expand Pipeline into Pipeline.PipelineName
-* Select Power BI Visualization **Slicer** and add the field Pipeline.PipelineName to the slicer's **Field**
-* Select the pipeline from the slicer for which you need to see the outcome summary.
+- Expand Pipeline into Pipeline.PipelineName
+- Select Power BI Visualization **Slicer** and add the field Pipeline.PipelineName to the slicer's **Field**
+- Select the pipeline from the slicer for which you need to see the outcome summary.
 
 Refer [Outcome summary for all pipelines](sample-pipelines-allpipelines.md) sample report for detailed steps.
 

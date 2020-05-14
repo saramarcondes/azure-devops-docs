@@ -46,11 +46,11 @@ While creating a pipeline, to choose the repository to build, first select the p
 
 To clone additional repositories as part of your pipeline:
 
-* If the repo is in the same project as your pipeline, or if the access token (explained below) has access to the repository in a different project, use the following command:
+- If the repo is in the same project as your pipeline, or if the access token (explained below) has access to the repository in a different project, use the following command:
 
   `git clone -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" <clone URL>`
 
-* If the access token (explained below) does not have access to the repository:
+- If the access token (explained below) does not have access to the repository:
 
   1.  Get a [personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with `Code (read)` scope, and prefix it with `pat:`
   2.  Base64-encode this string to create a basic auth token.
@@ -113,12 +113,12 @@ You can also tell Azure Pipelines to skip running a pipeline that a commit would
 
 You can also tell Azure Pipelines to skip running a pipeline that a commit would normally trigger. Just include `[skip ci]` in the commit message or description of the HEAD commit and Azure Pipelines will skip running CI. You can also use any of the variations below.
 
-* `[skip ci]` or `[ci skip]`
-* `skip-checks: true` or `skip-checks:true`
-* `[skip azurepipelines]` or `[azurepipelines skip]`
-* `[skip azpipelines]` or `[azpipelines skip]`
-* `[skip azp]` or `[azp skip]`
-* `***NO_CI***`
+- `[skip ci]` or `[ci skip]`
+- `skip-checks: true` or `skip-checks:true`
+- `[skip azurepipelines]` or `[azurepipelines skip]`
+- `[skip azpipelines]` or `[azpipelines skip]`
+- `[skip azp]` or `[azp skip]`
+- `***NO_CI***`
 
 ::: moniker-end
 
@@ -170,34 +170,34 @@ fatal: repository 'XYZ' not found
 ##[error]Git fetch failed with exit code: 128
 ```
 
-* First, check if the repository still exists.
-* Determine the [job authorization scope](../process/access-tokens.md#q-a) of the pipeline.
-  * If the scope is **collection**:
-    * This may be an intermittent error. Re-run the pipeline.
-    * Someone may have removed the access to **Project Collection Build Service account**.
-      * Go to the **project settings** of the project in which the repository exists. Select Repos -> Repositories -> specific repository.
-      * Check if **Project Collection Build Service (your-collection-name)** exists in the list of users.
-      * Check if that account has **Create tag** and **Read** access.
-  * If the scope is **project**:
-    * Is the repo in the same project as the pipeline?
-      * Yes:
-        * This may be an intermittent error. Re-run the pipeline.
-        * Someone may have removed the access to **Project Build Service account**.
-          * Go to the **project settings** of the project in which the repository exists. Select Repos -> Repositories -> specific repository.
-          * Check if **your-project-name Build Service (your-collection-name)** exists in the list of users.
-          * Check if that account has **Create tag** and **Read** access.
-      * No:
-        * Is your pipeline in a public project?
-          * Yes: You cannot access resources outside of your public project. Make the project private.
-          * No: You need to take additional steps to grant access. Let us say that your pipeline exists in project **A** and that your repository exists in project **B**.
-            * Go to the project settings of the project in which the repository exists (B). Select Repos -> Repositories -> specific repository.
-            * Add **your-project-name Build Service (your-collection-name)** to the list of users, where your-project-name is the name of the project in which your pipeline exists (A).
-            * Give **Create tag** and **Read** access to the account.
+- First, check if the repository still exists.
+- Determine the [job authorization scope](../process/access-tokens.md#q-a) of the pipeline.
+  - If the scope is **collection**:
+    - This may be an intermittent error. Re-run the pipeline.
+    - Someone may have removed the access to **Project Collection Build Service account**.
+      - Go to the **project settings** of the project in which the repository exists. Select Repos -> Repositories -> specific repository.
+      - Check if **Project Collection Build Service (your-collection-name)** exists in the list of users.
+      - Check if that account has **Create tag** and **Read** access.
+  - If the scope is **project**:
+    - Is the repo in the same project as the pipeline?
+      - Yes:
+        - This may be an intermittent error. Re-run the pipeline.
+        - Someone may have removed the access to **Project Build Service account**.
+          - Go to the **project settings** of the project in which the repository exists. Select Repos -> Repositories -> specific repository.
+          - Check if **your-project-name Build Service (your-collection-name)** exists in the list of users.
+          - Check if that account has **Create tag** and **Read** access.
+      - No:
+        - Is your pipeline in a public project?
+          - Yes: You cannot access resources outside of your public project. Make the project private.
+          - No: You need to take additional steps to grant access. Let us say that your pipeline exists in project **A** and that your repository exists in project **B**.
+            - Go to the project settings of the project in which the repository exists (B). Select Repos -> Repositories -> specific repository.
+            - Add **your-project-name Build Service (your-collection-name)** to the list of users, where your-project-name is the name of the project in which your pipeline exists (A).
+            - Give **Create tag** and **Read** access to the account.
 
 [!INCLUDE [qa](includes/qa1.md)]
 
 [!INCLUDE [qa](includes/qa2.md)]
 
-* For an Azure Repos Git repo, you cannot configure a PR trigger in the YAML file. You need to use [branch policies](../../repos/git/branch-policies.md).
+- For an Azure Repos Git repo, you cannot configure a PR trigger in the YAML file. You need to use [branch policies](../../repos/git/branch-policies.md).
 
 [!INCLUDE [qa](includes/qa3.md)]

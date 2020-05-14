@@ -125,51 +125,51 @@ When you enable a feature at the organization level, you essentially turn it on 
 
 ### General
 
-* [New PAT experience](/azure/devops/release-notes/2018/sprint-140-update#manage-your-personal-access-tokens-with-filtering-and-paging)
-* [New Navigation](https://devblogs.microsoft.com/devops/new-navigation/)
+- [New PAT experience](/azure/devops/release-notes/2018/sprint-140-update#manage-your-personal-access-tokens-with-filtering-and-paging)
+- [New Navigation](https://devblogs.microsoft.com/devops/new-navigation/)
 
 ### Azure Pipelines
 
-* [Test tab in new web platform](../../pipelines/test/review-continuous-test-results-after-build.md)
-* [Test analytics in new web platform](../../pipelines/test/test-analytics.md)
-* [New builds hub](/azure/devops/release-notes/2018/sep-10-azure-devops-launch#manage-build-pipelines-using-the-new-builds-page)
-* [Build with multiple queues](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted.md)
-* [New Releases Hub](/azure/devops/release-notes/2018/jun-19-vsts#organize-your-release-definitions-in-folders)<br/>
-* [Approval gates in releases](../../pipelines/release/approvals/index.md) - [New Release Definition Editor](../../pipelines/release/define-multistage-release-process.md)
-* [Symbol server](../../pipelines/artifacts/symbols.md)
-* [Task tool installers](../../pipelines/process/tasks.md#tool-installers)
+- [Test tab in new web platform](../../pipelines/test/review-continuous-test-results-after-build.md)
+- [Test analytics in new web platform](../../pipelines/test/test-analytics.md)
+- [New builds hub](/azure/devops/release-notes/2018/sep-10-azure-devops-launch#manage-build-pipelines-using-the-new-builds-page)
+- [Build with multiple queues](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted.md)
+- [New Releases Hub](/azure/devops/release-notes/2018/jun-19-vsts#organize-your-release-definitions-in-folders)<br/>
+- [Approval gates in releases](../../pipelines/release/approvals/index.md) - [New Release Definition Editor](../../pipelines/release/define-multistage-release-process.md)
+- [Symbol server](../../pipelines/artifacts/symbols.md)
+- [Task tool installers](../../pipelines/process/tasks.md#tool-installers)
 
 ### Azure Boards
 
-* [New Rich Text Editor](../../boards/queries/share-plans.md#rich-text)- [New Queries Experience](../../boards/queries/view-run-query.md)
-* [New Work Items](../../boards/work-items/view-add-work-items.md)
+- [New Rich Text Editor](../../boards/queries/share-plans.md#rich-text)- [New Queries Experience](../../boards/queries/view-run-query.md)
+- [New Work Items](../../boards/work-items/view-add-work-items.md)
 
 ### Azure Repos
 
-* [Pull Request Status Policy](../../repos/git/pr-status-policy.md)
+- [Pull Request Status Policy](../../repos/git/pr-status-policy.md)
 
 ### Azure Artifacts
 
-* [NuGet.org upstream sources](../../artifacts/nuget/upstream-sources.md)
-* [Updated package experience](../../artifacts/index.yml)
+- [NuGet.org upstream sources](../../artifacts/nuget/upstream-sources.md)
+- [Updated package experience](../../artifacts/index.yml)
 
 ### Azure Test Plans
 
-* [New Test Plan Experience](/azure/devops/release-notes/2018/jun-19-vsts#test-1)
+- [New Test Plan Experience](/azure/devops/release-notes/2018/jun-19-vsts#test-1)
 
 ### Dashboards and Analytics
 
-* [Analytics Views](../../report/powerbi/what-are-analytics-views.md)
-* [New Dashboards Experience](../../report/dashboards/dashboards.md)
+- [Analytics Views](../../report/powerbi/what-are-analytics-views.md)
+- [New Dashboards Experience](../../report/dashboards/dashboards.md)
 
 ### Social tools
 
-* [Wiki](../wiki/add-edit-wiki.md)
-* [Combine email recipients](../../notifications/howto-manage-team-notifications.md)
-* [New experience in Code, Work Item, & Wiki search](/azure/devops/release-notes/2017/oct-06-vsts#code)
-* [Out of the box notifications](../../notifications/howto-manage-personal-notifications.md)
-* [Team expansion for notifications](../../notifications/howto-manage-team-notifications.md)
+- [Wiki](../wiki/add-edit-wiki.md)
+- [Combine email recipients](../../notifications/howto-manage-team-notifications.md)
+- [New experience in Code, Work Item, & Wiki search](/azure/devops/release-notes/2017/oct-06-vsts#code)
+- [Out of the box notifications](../../notifications/howto-manage-personal-notifications.md)
+- [Team expansion for notifications](../../notifications/howto-manage-team-notifications.md)
 
 ### Organization, project, and billing management
 
-* [Streamlined User Management](../../accounts/add-account-users-assign-access-levels.md)
+- [Streamlined User Management](../../accounts/add-account-users-assign-access-levels.md)

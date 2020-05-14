@@ -19,9 +19,9 @@ You can now define output variables in a deployment job's [lifecycle hooks](http
 
 While executing deployment strategies, you can access output variables across jobs using the following syntax.
 
-* For **runOnce** strategy: `$[dependencies.<job-name>.outputs['<lifecycle-hookname>.<step-name>.<variable-name>']]`
-* For **canary** strategy: `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<increment-value>.<step-name>.<variable-name>']]`
-* For **rolling** strategy : `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<resource-name>.<step-name>.<variable-name>']]`
+- For **runOnce** strategy: `$[dependencies.<job-name>.outputs['<lifecycle-hookname>.<step-name>.<variable-name>']]`
+- For **canary** strategy: `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<increment-value>.<step-name>.<variable-name>']]`
+- For **rolling** strategy : `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<resource-name>.<step-name>.<variable-name>']]`
 
 ```yaml
 // Set an output variable in a lifecycle hook of a deployment job executing canary strategy
@@ -61,9 +61,9 @@ In classic release pipelines, it is common to rely on scheduled deployments for 
 
 On March 23, 2020, we will remove the following images from our Azure Pipelines hosted pools.
 
-* Windows Server 2012 R2 with Visual Studio 2015 (vs2015-win2012r2)
-* Mac OS High Sierra 10.13 (macOS-10.13)
-* Windows Server Core 1803 (win1803)
+- Windows Server 2012 R2 with Visual Studio 2015 (vs2015-win2012r2)
+- Mac OS High Sierra 10.13 (macOS-10.13)
+- Windows Server Core 1803 (win1803)
 
 By removing these images, we will continue to roll out newer image versions more efficiently.
 

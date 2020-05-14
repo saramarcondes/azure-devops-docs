@@ -32,16 +32,16 @@ of deployment tasks.
 
 Deployment groups:
 
-* Specify the security context and runtime
+- Specify the security context and runtime
   targets for the agents. As you create a deployment group, you
   add users and give them appropriate permissions to administer,
   manage, view, and use the group.
 
-* Let you view live logs for each server as a
+- Let you view live logs for each server as a
   deployment takes place, and download logs for all servers to
   track your deployments down to individual machines.
 
-* Enable you to use machine tags to limit deployment to specific
+- Enable you to use machine tags to limit deployment to specific
   sets of target servers.
 
 ## Create a deployment group
@@ -90,9 +90,9 @@ use the links in the **Releases** tab.
 Each deployment group is a member of a **deployment pool**, and you can share
 the deployment pool and groups across projects provided that:
 
-* The user sharing the deployment pool has [User permission](../../agents/pools-queues.md#security) for the pool containing the group.
-* The user sharing the deployment pool has permission to create a deployment group in the project where it is being shared.
-* The project does not already contain a deployment group that is a member of the same deployment pool.
+- The user sharing the deployment pool has [User permission](../../agents/pools-queues.md#security) for the pool containing the group.
+- The user sharing the deployment pool has permission to create a deployment group in the project where it is being shared.
+- The project does not already contain a deployment group that is a member of the same deployment pool.
 
 The tags you assign to each machine in the pool are scoped at project level,
 so you can specify a different tag for the same machine in each deployment group.
@@ -118,9 +118,9 @@ will see the deployment group you added and you can assign project-specific mach
 
 ## Related topics
 
-* [Run on machine group job](../../process/deployment-group-phases.md)
-* [Deploy an agent on Windows](../../agents/v2-windows.md)
-* [Deploy an agent on macOS](../../agents/v2-osx.md)
-* [Deploy an agent on Linux](../../agents/v2-linux.md)
+- [Run on machine group job](../../process/deployment-group-phases.md)
+- [Deploy an agent on Windows](../../agents/v2-windows.md)
+- [Deploy an agent on macOS](../../agents/v2-osx.md)
+- [Deploy an agent on Linux](../../agents/v2-linux.md)
 
 [!INCLUDE [rm-help-support-shared](../../includes/rm-help-support-shared.md)]

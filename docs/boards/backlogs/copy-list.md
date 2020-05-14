@@ -81,5 +81,5 @@ The formatted table contains a link to each work item included in your selected 
 
 ## Related articles
 
-* [Email or print work items](../work-items/email-work-items.md)
-* [Share information within work items and social tools](../queries/share-plans.md)
+- [Email or print work items](../work-items/email-work-items.md)
+- [Share information within work items and social tools](../queries/share-plans.md)

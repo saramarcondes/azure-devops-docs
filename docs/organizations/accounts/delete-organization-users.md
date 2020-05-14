@@ -20,7 +20,7 @@ If users no longer require access to a team, project, or your organization, you 
 
 ## Prerequisites
 
-* You need [Project Collection Administrator or organization Owner permissions](../../organizations/security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).
+- You need [Project Collection Administrator or organization Owner permissions](../../organizations/security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).
 
 ## Remove users from your organization
 
@@ -58,8 +58,8 @@ If users no longer require access to a team, project, or your organization, you 
 
 > [!NOTE]
 >
-> * Azure Active Directory (Azure AD)-backed organizations: After you remove a user from Azure AD, you can't assign artifacts to that user anymore. Examples are work items and pull requests. However, we preserve the history of artifacts that were already assigned to the user.
-> * Managed service account (MSA)-backed organizations: After you remove a user from your MSA-backed organization, the user remains within the tenant and can be re-added at any time.
+> - Azure Active Directory (Azure AD)-backed organizations: After you remove a user from Azure AD, you can't assign artifacts to that user anymore. Examples are work items and pull requests. However, we preserve the history of artifacts that were already assigned to the user.
+> - Managed service account (MSA)-backed organizations: After you remove a user from your MSA-backed organization, the user remains within the tenant and can be re-added at any time.
 
 #### [Current page](#tab/current-page)
 
@@ -92,8 +92,8 @@ If users no longer require access to a team, project, or your organization, you 
 
 > [!NOTE]
 >
-> * Azure Active Directory (Azure AD)-backed organizations: After you remove a user from Azure AD, you can't assign artifacts to that user anymore. Examples are work items and pull requests. However, we preserve the history of artifacts that were already assigned to the user.
-> * Managed service account (MSA)-backed organizations: After you remove a user from your MSA-backed organization, the user remains within the tenant and can be re-added at any time.
+> - Azure Active Directory (Azure AD)-backed organizations: After you remove a user from Azure AD, you can't assign artifacts to that user anymore. Examples are work items and pull requests. However, we preserve the history of artifacts that were already assigned to the user.
+> - Managed service account (MSA)-backed organizations: After you remove a user from your MSA-backed organization, the user remains within the tenant and can be re-added at any time.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
@@ -113,9 +113,9 @@ az devops user add --user
 
 #### Parameters
 
-* **user**: The email address or ID of the user.
-* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-* **yes**: Don't prompt for confirmation.
+- **user**: The email address or ID of the user.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **yes**: Don't prompt for confirmation.
 
 #### Example
 
@@ -135,8 +135,8 @@ To remove users from a project, remove them from the **Teams** groups they belon
 
 ## Related articles
 
-* [Set permissions at the project level or project collection level](../../organizations/security/set-project-collection-level-permissions.md).
-* [Change individual permissions and grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
-* [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
-* [Troubleshoot adding and deleting organization users](faq-user-and-permissions-management.md)
-* [Export a list of users and their access levels](../security/export-users-audit-log.md)
+- [Set permissions at the project level or project collection level](../../organizations/security/set-project-collection-level-permissions.md).
+- [Change individual permissions and grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
+- [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
+- [Troubleshoot adding and deleting organization users](faq-user-and-permissions-management.md)
+- [Export a list of users and their access levels](../security/export-users-audit-log.md)

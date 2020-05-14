@@ -28,22 +28,22 @@ You can use the Bugs by Priority report to understand the distribution of active
 
 You can review the Bugs by Priority report to determine the overall distribution of Bugs by priority. Specifically, you can find answers to the following questions:
 
-* How many priority 1, 2, and 3 Bugs are active?
+- How many priority 1, 2, and 3 Bugs are active?
 
-* Is the team resolving priority 1 Bugs before resolving priority 2 and 3 Bugs?
+- Is the team resolving priority 1 Bugs before resolving priority 2 and 3 Bugs?
 
 ### Required activities for tracking bugs
 
 For the Bugs by Priority report to be useful and accurate, the team must perform the following activities:
 
-* Define Bugs, and specify their **Iteration** and **Area** paths.
+- Define Bugs, and specify their **Iteration** and **Area** paths.
 
   > [!NOTE]
   > For information about how to define area and iteration paths, see [Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) .
 
-* Specify the **Priority** of each Bug.
+- Specify the **Priority** of each Bug.
 
-* Update the **State** of each Bug as the team fixes, verifies, and closes it.
+- Update the **State** of each Bug as the team fixes, verifies, and closes it.
 
 <a name="Updating"></a>
 
@@ -61,5 +61,5 @@ You can customize the Bugs by Priority report by opening it in Office Excel and 
 
 ## Related articles
 
-* [Excel reports](excel-reports.md)
-* [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)
+- [Excel reports](excel-reports.md)
+- [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)

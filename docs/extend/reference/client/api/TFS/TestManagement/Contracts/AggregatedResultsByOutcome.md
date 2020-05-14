@@ -16,8 +16,8 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Members
 
-* `count`: number.
+- `count`: number.
 
-* `duration`: any.
+- `duration`: any.
 
-* `outcome`: [TestOutcome](../../../TFS/TestManagement/Contracts/TestOutcome.md).
+- `outcome`: [TestOutcome](../../../TFS/TestManagement/Contracts/TestOutcome.md).

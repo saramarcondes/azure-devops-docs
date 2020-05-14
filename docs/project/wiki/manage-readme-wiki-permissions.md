@@ -65,5 +65,5 @@ Users with [Stakeholder access](../../organizations/security/get-started-stakeho
 
 ## Related articles
 
-* [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md)
-* [Get Started with Git](../../repos/git/gitquickstart.md)
+- [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md)
+- [Get Started with Git](../../repos/git/gitquickstart.md)

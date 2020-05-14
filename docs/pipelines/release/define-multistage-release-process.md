@@ -29,24 +29,24 @@ In this tutorial, you learn about:
 
 > [!div class="checklist"]
 >
-> * Configuring triggers within the release pipeline
-> * Extending a release pipeline by adding stages
-> * Configuring the stages as a multi-stage release pipeline
-> * Adding approvals to your release pipeline
-> * Creating a release and monitoring the deployment to each stage
+> - Configuring triggers within the release pipeline
+> - Extending a release pipeline by adding stages
+> - Configuring the stages as a multi-stage release pipeline
+> - Adding approvals to your release pipeline
+> - Creating a release and monitoring the deployment to each stage
 
 ## Prerequisites
 
 You'll need:
 
-* A release pipeline that contains at least one stage. If you don't already have one,
+- A release pipeline that contains at least one stage. If you don't already have one,
   you can create it by working through any of the following quickstarts and tutorials:
 
-  * [Deploy to an Azure Web App](../apps/cd/deploy-webdeploy-webapps.md)
-  * [Azure DevOps Project](../get-started-azure-devops-project.md)
-  * [Deploy to IIS web server on Windows](../apps/cd/deploy-webdeploy-iis-deploygroups.md)
+  - [Deploy to an Azure Web App](../apps/cd/deploy-webdeploy-webapps.md)
+  - [Azure DevOps Project](../get-started-azure-devops-project.md)
+  - [Deploy to IIS web server on Windows](../apps/cd/deploy-webdeploy-iis-deploygroups.md)
 
-* Two separate targets where you will deploy the app. These could be virtual machines,
+- Two separate targets where you will deploy the app. These could be virtual machines,
   web servers, on-premises physical deployment groups, or other types of deployment target.
   In this example, we are using Azure App Services website instances.
   If you decide to do the same, you will have to choose names that are unique, but it's a good idea to include

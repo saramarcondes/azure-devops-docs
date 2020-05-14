@@ -26,19 +26,19 @@ Because days off and time available for each team member can vary from sprint to
 
 > [!div class="checklist"]
 >
-> * Set team capacity for a sprint
-> * Copy capacity from the previous sprint to the current sprint
-> * Track capacity when performing multiple activities
-> * Add or remove user accounts from capacity planning for a sprint
-> * Track capacity when working on more than one team
+> - Set team capacity for a sprint
+> - Copy capacity from the previous sprint to the current sprint
+> - Track capacity when performing multiple activities
+> - Add or remove user accounts from capacity planning for a sprint
+> - Track capacity when working on more than one team
 
 If you haven't set up sprints yet for your team, go [here to do that now](define-sprints.md).
 
 ## Prerequisites
 
-* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
-* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).
-* To view or set capacity, you must be granted **Basic** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels). Users with **Stakeholder** access can't view or set capacity.
+- You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
+- You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).
+- To view or set capacity, you must be granted **Basic** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels). Users with **Stakeholder** access can't view or set capacity.
 
 <a id="customize-activity-list"> </a>
 
@@ -304,8 +304,7 @@ Here, Jamal divides his time between Deployment and Development.
 If you work on more than one team, you'll want to specify your sprint capacity for each team. For example, both Christie and Raisa split their time between the Web and Phone teams. They therefore allocate 3 hours a day to the Web team, and 3 hours a day to the Phone team.
 
 > [!div class="mx-imgBorder"]  
-> ![Allocate capacity for team Web](media/capacity/set-capacity-web-team.png)
-> <br/> > [!div class="mx-imgBorder"]  
+> ![Allocate capacity for team Web](media/capacity/set-capacity-web-team.png) > <br/> > [!div class="mx-imgBorder"]  
 > ![Allocate capacity for team Phone](media/capacity/set-capacity-phone-team.png)
 
 If your name isn't listed in the capacity view, you need to be added as a team member.
@@ -318,7 +317,7 @@ If your name isn't listed in the capacity view, you need to be added as a team m
 
 Setting capacity and [estimating remaining work for each task](assign-work-sprint.md) provides you with the tools you need to track the amount of work and resources you have allocated sprint over sprint.
 
-* [Sprint burndown](../../report/dashboards/configure-sprint-burndown.md)
-* [Velocity](../../report/dashboards/team-velocity.md)
-* [Forecasting](../sprints/forecast.md)
-* [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)
+- [Sprint burndown](../../report/dashboards/configure-sprint-burndown.md)
+- [Velocity](../../report/dashboards/team-velocity.md)
+- [Forecasting](../sprints/forecast.md)
+- [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)

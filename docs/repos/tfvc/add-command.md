@@ -77,9 +77,9 @@ Adds all C\# code files (.cs) in the current directory and any subdirectories.
 
 ## Work in Visual Studio
 
-* [Add files to the server](add-files-server.md) Use Visual Studio to add files to the server.
+- [Add files to the server](add-files-server.md) Use Visual Studio to add files to the server.
 
 ## Tips
 
-* The results of this command are queued as pending changes (see [Status command](status-command.md)) and do not take effect on the server until you check in (see [Checkin command](checkin-command.md)).
-* If you need to set aside changes (and perhaps also want to clean your workspace for another task), use the [Shelve Command](shelve-command.md).
+- The results of this command are queued as pending changes (see [Status command](status-command.md)) and do not take effect on the server until you check in (see [Checkin command](checkin-command.md)).
+- If you need to set aside changes (and perhaps also want to clean your workspace for another task), use the [Shelve Command](shelve-command.md).

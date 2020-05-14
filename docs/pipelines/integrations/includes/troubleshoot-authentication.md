@@ -9,8 +9,8 @@ author: atinb
 ms.date: 02/13/2020
 ---
 
-* [Sorry, something went wrong. Please try again.](#sorry-something-went-wrong-please-try-again)
-* [Configuration failed. Please make sure that the organization '{organization name}' exists and that you have sufficient permissions.](#configuration-failed-please-make-sure-that-the-organization-organization-name-exists-and-that-you-have-sufficient-permissions)
+- [Sorry, something went wrong. Please try again.](#sorry-something-went-wrong-please-try-again)
+- [Configuration failed. Please make sure that the organization '{organization name}' exists and that you have sufficient permissions.](#configuration-failed-please-make-sure-that-the-organization-organization-name-exists-and-that-you-have-sufficient-permissions)
 
 ### Sorry, something went wrong. Please try again.
 

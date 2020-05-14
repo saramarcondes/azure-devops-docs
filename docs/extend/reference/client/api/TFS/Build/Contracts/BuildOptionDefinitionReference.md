@@ -16,4 +16,4 @@ Module path: `TFS/Build/Contracts`
 
 ### Members
 
-* `id`: string.
+- `id`: string.

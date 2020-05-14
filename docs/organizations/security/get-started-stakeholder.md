@@ -54,13 +54,13 @@ Use this tutorial to learn how to do the following tasks:
 
 > [!div class="checklist"]
 >
-> * Sign in to a project
-> * Understand which work item types are available to your project
-> * Open the Kanban board and add a work item
-> * Add details, tags, or comments to a work item
-> * View the product backlog
-> * Find work assigned to you, or query for other work items
-> * Understand what features are and aren't available to users with Stakeholder access
+> - Sign in to a project
+> - Understand which work item types are available to your project
+> - Open the Kanban board and add a work item
+> - Add details, tags, or comments to a work item
+> - View the product backlog
+> - Find work assigned to you, or query for other work items
+> - Understand what features are and aren't available to users with Stakeholder access
 
 ## Connect to the web portal of a project
 
@@ -615,56 +615,56 @@ If a Stakeholder needs access to one or more of the following features&mdash;whi
 
 #### For Private projects:
 
-* Change the priority of an item within a backlog
-* Delete work items or move work items to another project
-* Create shared queries, view charts, and modify the home page
-* View Delivery Plans (a Marketplace extension)
-* Access the full set of features under <strong>Pipelines</strong>, <strong>Repos</strong> or <strong>Test Plans</strong>.
+- Change the priority of an item within a backlog
+- Delete work items or move work items to another project
+- Create shared queries, view charts, and modify the home page
+- View Delivery Plans (a Marketplace extension)
+- Access the full set of features under <strong>Pipelines</strong>, <strong>Repos</strong> or <strong>Test Plans</strong>.
 
 #### For Public projects:
 
-* View Delivery Plans (a Marketplace extension)
-* Access the full set of features under <strong>Repos</strong> or <strong>Test Plans</strong>.
+- View Delivery Plans (a Marketplace extension)
+- Access the full set of features under <strong>Repos</strong> or <strong>Test Plans</strong>.
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-* Change the priority of an item within a backlog
-* Delete work items or move work items to another project
-* Create shared queries, view charts, and modify dashboards
-* View Delivery Plans (a Marketplace extension)
-* Access the full set of features under <strong>Pipelines</strong>, <strong>Repos</strong>, <strong>Test Plans</strong>, or <strong>Artifacts</strong>.
+- Change the priority of an item within a backlog
+- Delete work items or move work items to another project
+- Create shared queries, view charts, and modify dashboards
+- View Delivery Plans (a Marketplace extension)
+- Access the full set of features under <strong>Pipelines</strong>, <strong>Repos</strong>, <strong>Test Plans</strong>, or <strong>Artifacts</strong>.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 
-* Change the priority of an item within a backlog
-* Delete work items
-* Create shared queries, view charts, and modify dashboards
-* View Delivery Plans (a Marketplace extension)
-* Access the full set of features under <strong>Code</strong>, <strong>Build and Release</strong> or <strong>Test</strong>.  
+- Change the priority of an item within a backlog
+- Delete work items
+- Create shared queries, view charts, and modify dashboards
+- View Delivery Plans (a Marketplace extension)
+- Access the full set of features under <strong>Code</strong>, <strong>Build and Release</strong> or <strong>Test</strong>.  
   ::: moniker-end
 
 ::: moniker range="tfs-2017"
 
-* Change the priority of an item within a backlog
-* Delete work items
-* Create shared queries, view charts, and modify dashboards
-* View Delivery Plans (a Marketplace extension)
-* Access the full set of features provided under <strong>Code</strong>, <strong>Build and Release</strong> or <strong>Test</strong>
-* Participate in team rooms, which capture interactive, detailed conversations about the project.
+- Change the priority of an item within a backlog
+- Delete work items
+- Create shared queries, view charts, and modify dashboards
+- View Delivery Plans (a Marketplace extension)
+- Access the full set of features provided under <strong>Code</strong>, <strong>Build and Release</strong> or <strong>Test</strong>
+- Participate in team rooms, which capture interactive, detailed conversations about the project.
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015"
 
-* Change the priority of an item within a backlog
-* Delete work items
-* Create shared queries, view charts, and modify the home page
-* Access the full set of features provided under <strong>Code</strong>, <strong>Build and Release</strong> or <strong>Test</strong>
-* Participate in team rooms, which capture interactive, detailed conversations about the project.
+- Change the priority of an item within a backlog
+- Delete work items
+- Create shared queries, view charts, and modify the home page
+- Access the full set of features provided under <strong>Code</strong>, <strong>Build and Release</strong> or <strong>Test</strong>
+- Participate in team rooms, which capture interactive, detailed conversations about the project.
 
 ::: moniker-end
 
@@ -674,8 +674,8 @@ If a Stakeholder needs access to one or more of the following features&mdash;whi
 
 For a comparison chart of Stakeholder vs Basic access, see this [feature matrix](https://azure.microsoft.com/services/devops/compare-features/). See also these quickstart guides:
 
-* [Add work items](../../boards/backlogs/add-work-items.md)
-* [Create your backlog](../../boards/backlogs/create-your-backlog.md)
-* [Kanban quickstart](../../boards/boards/kanban-quickstart.md)
-* [Access levels](access-levels.md)
-* [Change access levels](change-access-levels.md)
+- [Add work items](../../boards/backlogs/add-work-items.md)
+- [Create your backlog](../../boards/backlogs/create-your-backlog.md)
+- [Kanban quickstart](../../boards/boards/kanban-quickstart.md)
+- [Access levels](access-levels.md)
+- [Change access levels](change-access-levels.md)

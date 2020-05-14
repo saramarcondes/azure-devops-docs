@@ -30,9 +30,9 @@ Use a local workspace if there is not a reliable connection between your compute
 
 Use a server workspace when the specific conditions are not met for using a local workspace, or if...
 
-* You want to use Visual Studio 2010 or earlier versions to work with the workspace.
+- You want to use Visual Studio 2010 or earlier versions to work with the workspace.
 
-* You need to use the **Enable get latest on check-out** option.
+- You need to use the **Enable get latest on check-out** option.
 
 ### Working in a server workspace while disconnected
 
@@ -57,7 +57,7 @@ Visual Studio does not put the solution back online automatically, the user must
 
 1.  In **Solution Explorer**, open the context menu for the solution or file, and then choose **Go Online**.
 
-    * or -
+    - or -
       In the **File** menu, under Source Control, choose **Go Online**.
 
     The **Go Online** dialog box appears and shows the changes that you made offline.
@@ -80,13 +80,13 @@ If you are an [administrator](https://msdn.microsoft.com/library/ms253077), you 
 
 3.  You can reduce the time the system takes to check out files to server workspaces by selecting **Enable asynchronous checkout in server workspaces**. If you select this option:
 
-    * The PendChange permission is no longer enforced.
+    - The PendChange permission is no longer enforced.
 
-    * Checkout locks are disabled
+    - Checkout locks are disabled
 
 ## Work from the command prompt
 
-* [Workspace Command](workspace-command.md) and [Workspaces Command](workspaces-command.md): Create and manage your workspaces from the command prompt.
+- [Workspace Command](workspace-command.md) and [Workspaces Command](workspaces-command.md): Create and manage your workspaces from the command prompt.
 
 ## Q & A
 

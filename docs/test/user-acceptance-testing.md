@@ -35,8 +35,8 @@ or Product Backlog items as their requirements.
 You must have already created work items and
 a test plan. If not, follow the steps in:
 
-* [Create your backlog](../boards/backlogs/create-your-backlog.md)
-* [Create a test plan](create-a-test-plan.md)
+- [Create your backlog](../boards/backlogs/create-your-backlog.md)
+- [Create a test plan](create-a-test-plan.md)
 
 ## Assign and invite testers
 

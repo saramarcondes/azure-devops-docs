@@ -617,6 +617,6 @@ For additional information, see [Team Foundation Server Administration Documenta
 
 ## Related articles
 
-* [Resources granted to project members](../accounts/resources-granted-to-project-members.md)
-* [Permissions and groups reference](../security/permissions.md)
-* [Rate limits](../../integrate/concepts/rate-limits.md)
+- [Resources granted to project members](../accounts/resources-granted-to-project-members.md)
+- [Permissions and groups reference](../security/permissions.md)
+- [Rate limits](../../integrate/concepts/rate-limits.md)

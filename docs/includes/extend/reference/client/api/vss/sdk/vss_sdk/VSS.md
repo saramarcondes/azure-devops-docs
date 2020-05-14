@@ -12,23 +12,23 @@ ms.date: 08/25/2016
 
 ### Methods
 
-* [getAccessToken()](#method_getAccessToken)
-* [getAppToken()](#method_getAppToken)
-* [getConfiguration()](#method_getConfiguration)
-* [getContribution()](#method_getContribution)
-* [getExtensionContext()](#method_getExtensionContext)
-* [getRegisteredObject()](#method_getRegisteredObject)
-* [getService&lt;T&gt;()](#method_getService)
-* [getServiceContribution()](#method_getServiceContribution)
-* [getServiceContributions()](#method_getServiceContributions)
-* [getWebContext()](#method_getWebContext)
-* [init()](#method_init)
-* [notifyLoadFailed()](#method_notifyLoadFailed)
-* [notifyLoadSucceeded()](#method_notifyLoadSucceeded)
-* [ready()](#method_ready)
-* [register()](#method_register)
-* [require()](#method_require)
-* [resize()](#method_resize)
+- [getAccessToken()](#method_getAccessToken)
+- [getAppToken()](#method_getAppToken)
+- [getConfiguration()](#method_getConfiguration)
+- [getContribution()](#method_getContribution)
+- [getExtensionContext()](#method_getExtensionContext)
+- [getRegisteredObject()](#method_getRegisteredObject)
+- [getService&lt;T&gt;()](#method_getService)
+- [getServiceContribution()](#method_getServiceContribution)
+- [getServiceContributions()](#method_getServiceContributions)
+- [getWebContext()](#method_getWebContext)
+- [init()](#method_init)
+- [notifyLoadFailed()](#method_notifyLoadFailed)
+- [notifyLoadSucceeded()](#method_notifyLoadSucceeded)
+- [ready()](#method_ready)
+- [register()](#method_register)
+- [require()](#method_require)
+- [resize()](#method_resize)
 
 <a name="method_init"></a>
 
@@ -44,7 +44,7 @@ Initiates the handshake with the host window.
 
 ### Parameters
 
-* `options`: [IExtensionInitializationOptions](/azure/devops/extend/reference/client/api/vss/references/vss_sdk_interfaces/iextensioninitializationoptions). Initialization options for the extension.
+- `options`: [IExtensionInitializationOptions](/azure/devops/extend/reference/client/api/vss/references/vss_sdk_interfaces/iextensioninitializationoptions). Initialization options for the extension.
 
 <a name="method_require"></a>
 
@@ -68,8 +68,8 @@ VSS.require([&quot;VSS/Controls&quot;, &quot;VSS/Controls/Grids&quot;], function
 
 ### Parameters
 
-* `modules`: string[] or string. A single module path (string) or array of paths (string[])
-* `callback`: Function. Optional. Method called once the modules have been loaded.
+- `modules`: string[] or string. A single module path (string) or array of paths (string[])
+- `callback`: Function. Optional. Method called once the modules have been loaded.
 
 <a name="method_ready"></a>
 
@@ -86,7 +86,7 @@ If the initial setup is already completed, the callback is invoked at the end of
 
 ### Parameters
 
-* `callback`: (): void.
+- `callback`: (): void.
 
 <a name="method_notifyLoadSucceeded"></a>
 
@@ -114,7 +114,7 @@ Notifies the host that the extension failed to load
 
 ### Parameters
 
-* `e`: any.
+- `e`: any.
 
 <a name="method_getWebContext"></a>
 
@@ -130,7 +130,7 @@ Get the web context from the parent host
 
 ### Returns
 
-* [WebContext](/azure/devops/extend/reference/client/api/vss/references/sdk_interfaces/webcontext)
+- [WebContext](/azure/devops/extend/reference/client/api/vss/references/sdk_interfaces/webcontext)
 
 <a name="method_getConfiguration"></a>
 
@@ -146,7 +146,7 @@ Get the configuration data passed in the initial handshake from the parent frame
 
 ### Returns
 
-* any
+- any
 
 <a name="method_getExtensionContext"></a>
 
@@ -162,7 +162,7 @@ Get the context about the extension that owns the content that is being hosted
 
 ### Returns
 
-* [IExtensionContext](/azure/devops/extend/reference/client/api/vss/references/vss_sdk_interfaces/iextensioncontext)
+- [IExtensionContext](/azure/devops/extend/reference/client/api/vss/references/vss_sdk_interfaces/iextensioncontext)
 
 <a name="method_getContribution"></a>
 
@@ -178,7 +178,7 @@ Gets the information about the contribution that first caused this extension to 
 
 ### Returns
 
-* [Contribution](/azure/devops/extend/reference/client/api/vss/references/sdk_interfaces/contribution)
+- [Contribution](/azure/devops/extend/reference/client/api/vss/references/sdk_interfaces/contribution)
 
 <a name="method_getService"></a>
 
@@ -194,12 +194,12 @@ Get a contributed service from the parent host.
 
 ### Parameters
 
-* `contributionId`: string.
-* `context`: Object. Optional.
+- `contributionId`: string.
+- `context`: Object. Optional.
 
 ### Returns
 
-* [IPromise](/azure/devops/extend/reference/client/api/vss/references/vss_webplatform_interfaces/ipromise)&lt;T&gt;
+- [IPromise](/azure/devops/extend/reference/client/api/vss/references/vss_webplatform_interfaces/ipromise)&lt;T&gt;
 
 <a name="method_getServiceContribution"></a>
 
@@ -215,11 +215,11 @@ Get the contribution with the given contribution id. The returned contribution h
 
 ### Parameters
 
-* `contributionId`: string. ID of the contribution to get
+- `contributionId`: string. ID of the contribution to get
 
 ### Returns
 
-* [IPromise](/azure/devops/extend/reference/client/api/vss/references/vss_webplatform_interfaces/ipromise)&lt;[IServiceContribution](/azure/devops/extend/reference/client/api/vss/references/vss_sdk_interfaces/iservicecontribution)&gt;
+- [IPromise](/azure/devops/extend/reference/client/api/vss/references/vss_webplatform_interfaces/ipromise)&lt;[IServiceContribution](/azure/devops/extend/reference/client/api/vss/references/vss_sdk_interfaces/iservicecontribution)&gt;
 
 <a name="method_getServiceContributions"></a>
 
@@ -235,11 +235,11 @@ Get contributions that target a given contribution id. The returned contribution
 
 ### Parameters
 
-* `targetContributionId`: string. Contributions that target the contribution with this ID are returned
+- `targetContributionId`: string. Contributions that target the contribution with this ID are returned
 
 ### Returns
 
-* [IPromise](/azure/devops/extend/reference/client/api/vss/references/vss_webplatform_interfaces/ipromise)&lt;[IServiceContribution](/azure/devops/extend/reference/client/api/vss/references/vss_sdk_interfaces/iservicecontribution)[]&gt;
+- [IPromise](/azure/devops/extend/reference/client/api/vss/references/vss_webplatform_interfaces/ipromise)&lt;[IServiceContribution](/azure/devops/extend/reference/client/api/vss/references/vss_sdk_interfaces/iservicecontribution)[]&gt;
 
 <a name="method_register"></a>
 
@@ -255,8 +255,8 @@ Register an object (instance or factory method) that this extension exposes to t
 
 ### Parameters
 
-* `instanceId`: string. unique ID of the registered object
-* `instance`: Object or &lt;unknown_object_signature_kind&gt;. Either: (1) an object instance, or (2) a function that takes optional context data and returns an object instance.
+- `instanceId`: string. unique ID of the registered object
+- `instance`: Object or &lt;unknown_object_signature_kind&gt;. Either: (1) an object instance, or (2) a function that takes optional context data and returns an object instance.
 
 <a name="method_getRegisteredObject"></a>
 
@@ -272,12 +272,12 @@ Get an instance of an object registered with the given id
 
 ### Parameters
 
-* `instanceId`: string. unique ID of the registered object
-* `contextData`: Object. Optional. Optional context data to pass to the constructor of an object factory method
+- `instanceId`: string. unique ID of the registered object
+- `contextData`: Object. Optional. Optional context data to pass to the constructor of an object factory method
 
 ### Returns
 
-* Object
+- Object
 
 <a name="method_getAccessToken"></a>
 
@@ -293,7 +293,7 @@ Fetch an access token which allows calls to be made to other Azure DevOps Servic
 
 ### Returns
 
-* [IPromise](/azure/devops/extend/reference/client/api/vss/references/vss_webplatform_interfaces/ipromise)&lt;[ISessionToken](/azure/devops/extend/reference/client/api/vss/references/vss_sdk_interfaces/isessiontoken)&gt;
+- [IPromise](/azure/devops/extend/reference/client/api/vss/references/vss_webplatform_interfaces/ipromise)&lt;[ISessionToken](/azure/devops/extend/reference/client/api/vss/references/vss_sdk_interfaces/isessiontoken)&gt;
 
 <a name="method_getAppToken"></a>
 
@@ -309,7 +309,7 @@ Fetch an token which can be used to identify the current user
 
 ### Returns
 
-* [IPromise](/azure/devops/extend/reference/client/api/vss/references/vss_webplatform_interfaces/ipromise)&lt;[ISessionToken](/azure/devops/extend/reference/client/api/vss/references/vss_sdk_interfaces/isessiontoken)&gt;
+- [IPromise](/azure/devops/extend/reference/client/api/vss/references/vss_webplatform_interfaces/ipromise)&lt;[ISessionToken](/azure/devops/extend/reference/client/api/vss/references/vss_sdk_interfaces/isessiontoken)&gt;
 
 <a name="method_resize"></a>
 

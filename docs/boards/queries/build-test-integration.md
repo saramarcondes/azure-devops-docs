@@ -17,12 +17,12 @@ ms.date: 02/06/2019
 
 Work item fields that support build and test integration support the following actions:
 
-* Associate bugs with the builds where they were found or fixed
-* Query for bugs associated with a build
-* Mark test cases as either manual or automated, and store information to support automated test cases
-* For test cases and shared steps, define the action and validation steps and the data that are used to perform tests.
+- Associate bugs with the builds where they were found or fixed
+- Query for bugs associated with a build
+- Mark test cases as either manual or automated, and store information to support automated test cases
+- For test cases and shared steps, define the action and validation steps and the data that are used to perform tests.
 
-<!--- include information on limits of querying by test case -->  
+<!--- include information on limits of querying by test case -->
 
 ## Supported operators and macros
 
@@ -86,7 +86,7 @@ Most build and test integration fields have a data type of String, PlainText, or
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Work Item Type <em> = </em> Test Suite</code><br/><code>And Test Suite Type <em> = </em> Requirement Based</code><br/></td>
 </tr>
 </tbody>
-</table>  
+</table>
 
 <a id="linked-bugs" />
 
@@ -373,10 +373,10 @@ For more information about Actions, see [Automate field assignments based on Sta
 
 ## Related articles
 
-* [Work item field index](../work-items/guidance/work-item-field.md)
-* [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md)
-* [Linking, traceability, and managing dependencies](link-work-items-support-traceability.md)
-* [Link and attachment queries](linking-attachments.md)
+- [Work item field index](../work-items/guidance/work-item-field.md)
+- [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md)
+- [Linking, traceability, and managing dependencies](link-work-items-support-traceability.md)
+- [Link and attachment queries](linking-attachments.md)
 
 ::: moniker range="tfs-2013"
 

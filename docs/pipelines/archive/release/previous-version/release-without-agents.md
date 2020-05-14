@@ -25,13 +25,13 @@ for instructions.
 
 **Why deploy my app this way?**
 
-* If you already deploy your app with PowerShell or DSC,
+- If you already deploy your app with PowerShell or DSC,
   use the same scripts with Release Management.
-* You don't have to install a deployment agent on any machine
+- You don't have to install a deployment agent on any machine
   that you use for the environment.
-* Create complex scripts to deploy using all the features of
+- Create complex scripts to deploy using all the features of
   PowerShell or DSC.
-* If you want to deploy your app to a server machine that is
+- If you want to deploy your app to a server machine that is
   not running a Windows operating system, you can use Chef to do that.
   (In this version, Chef is supported if you manage your release with
   an on-premises Release Management server,
@@ -60,9 +60,9 @@ If you haven't already done so,
 and **[add stages](manage-your-release.md#AddStages)**
 for your release.
 
-* [Prerequisites for computers](#prereq)
-* [Set up Microsoft Azure environments](#SetupAzure)
-* [Set up on-premises (standard) environments](#SetupOnPrem)
+- [Prerequisites for computers](#prereq)
+- [Set up Microsoft Azure environments](#SetupAzure)
+- [Set up on-premises (standard) environments](#SetupOnPrem)
 
 <a name="prereq"></a>
 
@@ -73,29 +73,29 @@ for any computer you plan on using in your environment.
 
 **Windows PowerShell**
 
-* PowerShell 4.0: Install
+- PowerShell 4.0: Install
   [Windows Management Framework 4.0](https://www.microsoft.com/download/details.aspx?id=40855)
   which includes PowerShell 4.0.
 
 **DSC**
 
-* Windows 8.1, Windows Server 2012 R2: DSC is already installed.
-* Windows Server 2012, Windows Server 2008 R2, Windows 8 and Windows 7: Install
+- Windows 8.1, Windows Server 2012 R2: DSC is already installed.
+- Windows Server 2012, Windows Server 2008 R2, Windows 8 and Windows 7: Install
   [Windows Management Framework 4.0](https://www.microsoft.com/download/details.aspx?id=40855)
   which includes DSC.
 
 **Chef**
 
-* Target node must be bootstrapped and registered with your Chef server.
-* Add an attribute to the cookbook that maps to build drop location.
-* Upload cookbooks to the Chef server.
-* Assign recipes to the target node.
-* Set up your Release Management Server as a Chef Workstation.
+- Target node must be bootstrapped and registered with your Chef server.
+- Add an attribute to the cookbook that maps to build drop location.
+- Upload cookbooks to the Chef server.
+- Assign recipes to the target node.
+- Set up your Release Management Server as a Chef Workstation.
   Instructions are **[here](https://learn.chef.io/)**.
-* Release Management uses Knife to communicate with Chef. Run
+- Release Management uses Knife to communicate with Chef. Run
   the following commands to install the Windows plugin for Knife:
-  * `gem install knife-windows --no-ri --no-rdoc`
-  * `gem install knife-reporting --no-ri --no-rdoc`
+  - `gem install knife-windows --no-ri --no-rdoc`
+  - `gem install knife-reporting --no-ri --no-rdoc`
 
 <a name="SetupAzure"></a>
 
@@ -202,8 +202,8 @@ Use on-premises environments if you want to deploy using Chef.
     Run these commands from a PowerShell session with administrator privileges on
     all the server machines in your environment:
 
-    * `Enable-PSRemoting -Force`
-    * `winrm quickconfig -transport:http`
+    - `Enable-PSRemoting -Force`
+    - `winrm quickconfig -transport:http`
 
     More details about how to configure Windows Remote Management can be found
     **[here](https://msdn.microsoft.com/library/aa384372%28v=vs.85%29.aspx)**,
@@ -292,11 +292,11 @@ You also need a build definition that builds your app.
 
     **For on-premises environments:** Open the **Standard** section in the toolbox.
 
-    * To deploy with Powershell or DSC, drag the **Deploy to Standard Environment**
+    - To deploy with Powershell or DSC, drag the **Deploy to Standard Environment**
       action into the deployment sequence.
       Parameter details for this action are
       **[here](#StandardActions)**.
-    * To deploy with Chef, drag the **Deploy Using
+    - To deploy with Chef, drag the **Deploy Using
       Chef** action into the deployment sequence.
       Parameter details for this action are
       **[here](#ChefActions)**.
@@ -321,10 +321,10 @@ You also need a build definition that builds your app.
     ```DSC
     configuration FileCopy
     {
-      Node $AllNodes.NodeName  
+      Node $AllNodes.NodeName
       {
         File CopyDeploymentBits
-        {  
+        {
           Ensure = "Present"
           Type = "Directory"
           Recurse = $true
@@ -368,11 +368,11 @@ You also need a build definition that builds your app.
 
 **A**: Apart from not needing deployment agents, these are the other differences:
 
-* You cannot drag components and servers into the deployment sequence editor.
+- You cannot drag components and servers into the deployment sequence editor.
   These are parameters to deployment actions only.
-* The vNext components are not associated with tools.
-* You cannot use custom tools, or custom actions for your deployment.
-* Flow control is not supported, so if an action fails all previous actions will be rolled back.
+- The vNext components are not associated with tools.
+- You cannot use custom tools, or custom actions for your deployment.
+- Flow control is not supported, so if an action fails all previous actions will be rolled back.
   It is recommended to handle this in your scripts.
 
 <a name="StandardActions"></a>
@@ -381,22 +381,22 @@ You also need a build definition that builds your app.
 
 **A**: Here are the details:
 
-* **ServerName:** On-premises machine where you want to deploy this component.
+- **ServerName:** On-premises machine where you want to deploy this component.
 
-* **UserName:** Account name to connect to the server. This user must be a domain
+- **UserName:** Account name to connect to the server. This user must be a domain
   user and also a member of the Administrators group on the server.
 
-* **Password:** Password for the user account.
+- **Password:** Password for the user account.
 
-* **PSScriptPath:** Path and filename of PowerShell or DSC script to deploy this component.
+- **PSScriptPath:** Path and filename of PowerShell or DSC script to deploy this component.
   This path is relative to the package path for the component.
 
-* **PSConfigurationPath:** Path and filename of PowerShell or DSC script to configure the
+- **PSConfigurationPath:** Path and filename of PowerShell or DSC script to configure the
   server before deployment of this component. This script is optional. It will be run before
   the script in the PSScriptPath parameter.
   This path is relative to the package path for the component.
 
-* **UseCredSSP:** If set to true, the scripts use the same PowerShell session as Release
+- **UseCredSSP:** If set to true, the scripts use the same PowerShell session as Release
   Management when it connects remotely to the server.
   You must manually enable CredSSP. Run the following PowerShell command on the server with
   administrator privileges.
@@ -405,10 +405,10 @@ You also need a build definition that builds your app.
 
   By default, this value is false.
 
-* **UseHTTPS:** Set to true to use a secure connection. To do this, check that WinRM is
+- **UseHTTPS:** Set to true to use a secure connection. To do this, check that WinRM is
   enabled for HTTPS on the target server. The default value is false.
 
-* **SkipCACheck:** The Release Management Server and the deployment machine use an SSL
+- **SkipCACheck:** The Release Management Server and the deployment machine use an SSL
   connection to communicate if UseHTTPS is set to true.
   This parameter determines if certificate verification is required to set up this connection.
   If it is true, the verification is skipped.
@@ -420,26 +420,26 @@ You also need a build definition that builds your app.
 
 **A**: Here are the details:
 
-* **ServerName:** Name of the Azure virtual machine where you want to deploy this component.
+- **ServerName:** Name of the Azure virtual machine where you want to deploy this component.
 
-* **UserName:** Account name to connect to the virtual machine. This user must be a domain
+- **UserName:** Account name to connect to the virtual machine. This user must be a domain
   user and also a member of the Administrators group on the server.
 
-* **Password:** Password for the user account.
+- **Password:** Password for the user account.
 
-* **PSScriptPath:** Path and filename of PowerShell or DSC script to deploy this component.
+- **PSScriptPath:** Path and filename of PowerShell or DSC script to deploy this component.
   This path is relative to the package path for the component.
 
-* **PSConfigurationPath:** Path and filename of PowerShell or DSC script to configure the VM
+- **PSConfigurationPath:** Path and filename of PowerShell or DSC script to configure the VM
   before deployment of this component.
   This script is optional. It will be run before the script in the PSScriptPath parameter.
   This path is relative to the package path for the component.
 
-* **UseHTTPS:** This is always set to true for the connection to the Azure VM. A secure
+- **UseHTTPS:** This is always set to true for the connection to the Azure VM. A secure
   connection is always used, so you must check that WinRM is
   enabled for HTTPS on the virtual machine.
 
-* **SkipCACheck:** The Release Management Server and the Azure VM use an SSL connection to
+- **SkipCACheck:** The Release Management Server and the Azure VM use an SSL connection to
   communicate because UseHTTPS is always set to true.
   This parameter determines if certificate verification is required to set up this connection.
   If it is true, the verification is skipped.
@@ -451,35 +451,35 @@ You also need a build definition that builds your app.
 
 **A**: Here are the details:
 
-* **NodeName:** Name of the Chef Node where you want to deploy the application. This must
+- **NodeName:** Name of the Chef Node where you want to deploy the application. This must
   match the name of the server in the on-premises environment.
 
-* **IsUnixNode:** Set this parameter to true if it is a UNIX based machine.
+- **IsUnixNode:** Set this parameter to true if it is a UNIX based machine.
 
-* **UserName:** Account name to connect to the node. For UNIX based systems this should be a
+- **UserName:** Account name to connect to the node. For UNIX based systems this should be a
   user that has sudo privileges with ssh permissions.
   For Windows based systems this should be a user with winRM permissions, or a local administrator.
 
-* **Password:** Password for the user account.
+- **Password:** Password for the user account.
 
-* **ComponentName:** Name of the component to be deployed.
+- **ComponentName:** Name of the component to be deployed.
 
-* **AttributeName:** Name of the Chef node attribute which is used by the cookbooks to get the
+- **AttributeName:** Name of the Chef node attribute which is used by the cookbooks to get the
   application package. Nested attributes are supported.
   The format of this name is: &#91;'AttributeLevel1'&#93;&#91;'AttributeLevel2'&#93;&#91;...&#93;
 
-* **KnifeInstallationPath:** The absolute path to the knife.bat file on the Release Management Server.
+- **KnifeInstallationPath:** The absolute path to the knife.bat file on the Release Management Server.
 
-* **ChefRepoPath:** The absolute path to the chef repo directory on the Release Management Server.
+- **ChefRepoPath:** The absolute path to the chef repo directory on the Release Management Server.
 
 ## Related topics
 
-* [Overview of Release Management](release-management-overview.md)
-* [Install Release Management](install-release-management.md)
-* [Manage your release](manage-your-release.md)
-* [Release with deployment agents](release-with-agents.md)
-* [Trigger a release from a build](trigger-a-release.md)
-* [Deploy continuously to Azure](deploy-continuously-to-azure.md)
+- [Overview of Release Management](release-management-overview.md)
+- [Install Release Management](install-release-management.md)
+- [Manage your release](manage-your-release.md)
+- [Release with deployment agents](release-with-agents.md)
+- [Trigger a release from a build](trigger-a-release.md)
+- [Deploy continuously to Azure](deploy-continuously-to-azure.md)
 
 [!INCLUDE [wpfver-back-to-index-shared](../includes/wpfver-back-to-index-shared.md)]
 

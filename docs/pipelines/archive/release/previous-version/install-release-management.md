@@ -40,20 +40,20 @@ ready to manage releases.
 
 ## To install Release Management and set up an environment
 
-* Verify that your operating system and hardware meet the requirements for
+- Verify that your operating system and hardware meet the requirements for
   Release Management. Release Management Server requires a SQL Server
   instance but has no dependency on using the same SQL Server instance for
   TFS-it's just convenient. For more information, see
   [System requirements for Release Management](install-release-management/system-requirements.md)
 
-* If you are upgrading to the latest version of Release Management, first
+- If you are upgrading to the latest version of Release Management, first
   uninstall the previous update of the Release Management server, client and
   deployment agents. No data will be lost when you uninstall because the SQL
   Server instance is not removed. When you configure the latest update for your Release
   Management server, use the same SQL Server instance that you used before for
   the database server.
 
-* Consider your Release Management topology, especially if you will use TFS.
+- Consider your Release Management topology, especially if you will use TFS.
   You should install the server separately from
   the application tier of the TFS server (as we will) although nothing prevents
   you from installing the Release Management server together with TFS. If you
@@ -62,7 +62,7 @@ ready to manage releases.
   the build server can create releases automatically as part of its execution,
   which is especially practical for continuous integration and deployment.
 
-* Download Release Management Server, its client, and the deployment agent from
+- Download Release Management Server, its client, and the deployment agent from
   [VisualStudio.com](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs)
   and then
   **[install the server and client](install-release-management/install-server-and-client.md)**.
@@ -75,12 +75,12 @@ ready to manage releases.
   If you are an MSDN subscriber, you can download a non-trial version from the
   [MSDN Subscriber website](https://msdn.microsoft.com/subscriptions/downloads/)._
 
-* On computers that will make up the environments where you will deploy
+- On computers that will make up the environments where you will deploy
   your release,
   **[install the deployment agent](install-release-management/install-deployment-agent.md)**.
   These computers can be test, QA, or production environments.
 
-* In the Release Management client, you can
+- In the Release Management client, you can
   **[configure the connection](install-release-management/connect-to-tfs.md)**
   between Release Management and TFS, but this isn't necessary. You can run
   Release Management separately from TFS. You might also want to tackle some
@@ -92,13 +92,13 @@ ready to manage releases.
 
 ## Related topics
 
-* [Overview of Release Management](release-management-overview.md)
-* [System requirements for Release Management](install-release-management/system-requirements.md)
-* [Install Release Management server and client](install-release-management/install-server-and-client.md)
-* [Install deployment agents](install-release-management/install-deployment-agent.md)
-* [Connect Release Management to TFS](install-release-management/connect-to-tfs.md)
-* [Manage users, groups, and permissions](add-users-and-groups.md)
-* [Manage your release](manage-your-release.md)
+- [Overview of Release Management](release-management-overview.md)
+- [System requirements for Release Management](install-release-management/system-requirements.md)
+- [Install Release Management server and client](install-release-management/install-server-and-client.md)
+- [Install deployment agents](install-release-management/install-deployment-agent.md)
+- [Connect Release Management to TFS](install-release-management/connect-to-tfs.md)
+- [Manage users, groups, and permissions](add-users-and-groups.md)
+- [Manage your release](manage-your-release.md)
 
 [!INCLUDE [wpfver-back-to-index-shared](../includes/wpfver-back-to-index-shared.md)]
 

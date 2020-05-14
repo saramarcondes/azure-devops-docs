@@ -2,15 +2,15 @@
 
 A: Who to contact depends on the support you need:
 
-* Billing questions - [Azure billing support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade).
+- Billing questions - [Azure billing support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade).
 
-* Visual Studio subscriptions - [subscriptions support](https://visualstudio.microsoft.com/subscriptions/support).
+- Visual Studio subscriptions - [subscriptions support](https://visualstudio.microsoft.com/subscriptions/support).
 
-* Help with Azure DevOps - [Azure DevOps support](https://azure.microsoft.com/support/devops-visual-studio-team-services).
+- Help with Azure DevOps - [Azure DevOps support](https://azure.microsoft.com/support/devops-visual-studio-team-services).
 
-* Help with Microsoft Team Foundation Server (TFS) - [TFS support](https://visualstudio.microsoft.com/team-services/tfs_support).
+- Help with Microsoft Team Foundation Server (TFS) - [TFS support](https://visualstudio.microsoft.com/team-services/tfs_support).
 
-* General marketplace help - [the Visual Studio Marketplace team](mailto:vsmarketplace@microsoft.com).
+- General marketplace help - [the Visual Studio Marketplace team](mailto:vsmarketplace@microsoft.com).
 
 ### Q: Can I use an Enterprise Agreement to buy from the Visual Studio Marketplace?
 

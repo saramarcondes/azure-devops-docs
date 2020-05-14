@@ -146,13 +146,13 @@ If your paid BYOL extension offers a trial period (we recommend so), then you ca
 
 ### Details page example
 
-* 1 - description
-* 2 - icon
-* 3 - categories
-* 4 - screenshots
-* 5 - content (details)
-* 6 - links
-* 7 - branding
+- 1 - description
+- 2 - icon
+- 3 - categories
+- 4 - screenshots
+- 5 - content (details)
+- 6 - links
+- 7 - branding
 
 ![card](./media/extension-details-page.png)
 
@@ -164,8 +164,8 @@ All extensions on the Visual Studio Marketplace have a Q&A section to allow one-
 
 **Default experience** (No changes to manifest are required)
 
-* For extension with GitHub repository, Marketplace redirects users in the Q&A section to the associated GitHub issues.
-* For extension without GitHub repository, Marketplace Q&A is enabled.
+- For extension with GitHub repository, Marketplace redirects users in the Q&A section to the associated GitHub issues.
+- For extension without GitHub repository, Marketplace Q&A is enabled.
 
 For a different experience than one of the default options use the **CustomerQnASupport** property in the manifest.
 
@@ -182,8 +182,8 @@ For a different experience than one of the default options use the **CustomerQnA
 
 Properties for the Customer Q & A Support section:
 
-* **enableqna** - boolean field, set to true for marketplace or custom Q&A; false for disabling Q&A
-* **url** - string, URL for custom Q&A
+- **enableqna** - boolean field, set to true for marketplace or custom Q&A; false for disabling Q&A
+- **url** - string, URL for custom Q&A
 
 ### Examples showing usage of Q & A support
 
@@ -248,15 +248,15 @@ The installation targets for an extension or integration are specified via the `
 
 Supported identifiers for **extensions**:
 
-* `Microsoft.VisualStudio.Services.Cloud`: installs into Azure DevOps Services
-* `Microsoft.TeamFoundation.Server`: installs into Team Foundation Server
-* `Microsoft.VisualStudio.Services`: installs into both. Shortcut for `Microsoft.VisualStudio.Services.Cloud` and `Microsoft.TeamFoundation.Server` version `[14.2,)`
+- `Microsoft.VisualStudio.Services.Cloud`: installs into Azure DevOps Services
+- `Microsoft.TeamFoundation.Server`: installs into Team Foundation Server
+- `Microsoft.VisualStudio.Services`: installs into both. Shortcut for `Microsoft.VisualStudio.Services.Cloud` and `Microsoft.TeamFoundation.Server` version `[14.2,)`
 
 Supported identifiers for **integrations** (tools or services that integrate with Azure DevOps Services or Team Foundation Server):
 
-* `Microsoft.VisualStudio.Services.Cloud.Integration`: integrates with Azure DevOps Services
-* `Microsoft.TeamFoundation.Server.Integration`: integrates with Team Foundation Server
-* `Microsoft.VisualStudio.Services.Integration`: integrates with both. Shortcut for `Microsoft.VisualStudio.Services.Cloud.Integration` and `Microsoft.TeamFoundation.Server.Integration`
+- `Microsoft.VisualStudio.Services.Cloud.Integration`: integrates with Azure DevOps Services
+- `Microsoft.TeamFoundation.Server.Integration`: integrates with Team Foundation Server
+- `Microsoft.VisualStudio.Services.Integration`: integrates with both. Shortcut for `Microsoft.VisualStudio.Services.Cloud.Integration` and `Microsoft.TeamFoundation.Server.Integration`
 
 For more information, see [Azure DevOps Services extensibility points](../reference/targets/overview.md).
 
@@ -318,12 +318,12 @@ Some installation target identifiers, like `Microsoft.TeamFoundation.Server` and
 
 The version or version range is specified via the `version` field on the installation target object. This value can be either:
 
-* A specific version, for example: `15.0` (2017 RTM only)
-* A range of supported versions, for example: `[14.0)` (2015 RTM and later), `[14.3,15.1]` (2015 Update 3 through 2017 Update 1). Range values are refined using the following:
-  * `[`: minimum version inclusive
-  * `]`: maximum version inclusive
-  * `(`: minimum version exclusive
-  * `)`: maximum version exclusive
+- A specific version, for example: `15.0` (2017 RTM only)
+- A range of supported versions, for example: `[14.0)` (2015 RTM and later), `[14.3,15.1]` (2015 Update 3 through 2017 Update 1). Range values are refined using the following:
+  - `[`: minimum version inclusive
+  - `]`: maximum version inclusive
+  - `(`: minimum version exclusive
+  - `)`: maximum version exclusive
 
 Version numbers for Team Foundation Server:
 
@@ -481,8 +481,8 @@ In this example, the extension demands version 3.0 of the APIs, which means it c
 
 #### Notes
 
-* `environment/cloud` and `environment/onprem` should only be used when your extension has topology-related requirements that require running in that particular environment.
-* `extension`, `contribution`, and `contributionType` demands are evaluated at install time, and requires that the specified extension is already installed and enabled in the organization/collection.
+- `environment/cloud` and `environment/onprem` should only be used when your extension has topology-related requirements that require running in that particular environment.
+- `extension`, `contribution`, and `contributionType` demands are evaluated at install time, and requires that the specified extension is already installed and enabled in the organization/collection.
 
 ## Files
 
@@ -512,22 +512,22 @@ The `files` section is where you reference any files you wish to include in your
 
 Properties for the Files section:
 
-* **path** - Path to resource on disk, which can be relative to your root directory.
-* **addressable** – (optional) Set to **true** if you want your file to be URL-addressable. Defaults to **false**.
-* **packagePath** – (optional) Path to the resource within the package. Defaults to the relative path on disk from your root directory.
-* **contentType** – (optional) MIME type of the file. Defaults to a best guess based on the file extension and OS settings.
-* **assetType** – (optional) Specify the value of the Type attribute of the <Asset> entry in the VSIX manifest. Can also be an array of strings, in which case multiple <Asset> entries will be added for this file. Defaults to the packagePath.
-* **lang** – (optional) Language of this asset. Localized files are served based on the Accept-Language header. Leave blank to signify this file is in the default (or fallback) language. Localized versions of the same file should have the same assetType.
+- **path** - Path to resource on disk, which can be relative to your root directory.
+- **addressable** – (optional) Set to **true** if you want your file to be URL-addressable. Defaults to **false**.
+- **packagePath** – (optional) Path to the resource within the package. Defaults to the relative path on disk from your root directory.
+- **contentType** – (optional) MIME type of the file. Defaults to a best guess based on the file extension and OS settings.
+- **assetType** – (optional) Specify the value of the Type attribute of the <Asset> entry in the VSIX manifest. Can also be an array of strings, in which case multiple <Asset> entries will be added for this file. Defaults to the packagePath.
+- **lang** – (optional) Language of this asset. Localized files are served based on the Accept-Language header. Leave blank to signify this file is in the default (or fallback) language. Localized versions of the same file should have the same assetType.
 
 ## Contributions
 
 Each contribution entry has the following properties:
 
-* **id** - A reference ID (string) for the contribution. Each contribution's ID must be unique within an extension. See [referencing contributions and types](#contributionIds) below.
-* **type** - The ID of the contributionType of this contribution.
-* **description** - (Optional) A string describing what the contribution is providing.
-* **targets** - An array of contribution IDs that the contribution is targeting (contributing to). See [Targeting contributions](#contributionTargets).
-* **properties** - (Optional) An object that includes properties for the contribution as defined in the contribution type.
+- **id** - A reference ID (string) for the contribution. Each contribution's ID must be unique within an extension. See [referencing contributions and types](#contributionIds) below.
+- **type** - The ID of the contributionType of this contribution.
+- **description** - (Optional) A string describing what the contribution is providing.
+- **targets** - An array of contribution IDs that the contribution is targeting (contributing to). See [Targeting contributions](#contributionTargets).
+- **properties** - (Optional) An object that includes properties for the contribution as defined in the contribution type.
 
 For more information, see the [contribution model overview](contributions-overview.md).
 
@@ -537,16 +537,16 @@ For more information, see the [contribution model overview](contributions-overvi
 
 Each contribution entry has the following properties:
 
-* **id** - A reference ID (string) for the contribution type. Each contribution type's ID must be unique within an extension. See [referencing contributions and types](#contributionIds) below.
-* **name** - The friendly name of the contribution type.
-* **description** - (Optional) A string describing in more detail what the contribution type is for.
-* **properties** - (Optional) A dictionary that maps property names to property descriptions. These properties describe the required and optional properties that can be used by contributions of this type.
+- **id** - A reference ID (string) for the contribution type. Each contribution type's ID must be unique within an extension. See [referencing contributions and types](#contributionIds) below.
+- **name** - The friendly name of the contribution type.
+- **description** - (Optional) A string describing in more detail what the contribution type is for.
+- **properties** - (Optional) A dictionary that maps property names to property descriptions. These properties describe the required and optional properties that can be used by contributions of this type.
 
 Property descriptions have the following properties:
 
-* **description** - (Optional) A string describing what the property is used for.
-* **required** - (Optional) A boolean value which if true indicates that the property is required for all contributions of this type.
-* **type** - The type of value that the property can have. This may be: string, uri, guid, boolean, integer, double, dateTime, array, or object.
+- **description** - (Optional) A string describing what the property is used for.
+- **required** - (Optional) A boolean value which if true indicates that the property is required for all contributions of this type.
+- **type** - The type of value that the property can have. This may be: string, uri, guid, boolean, integer, double, dateTime, array, or object.
 
 For more information, see the [contribution model overview](contributions-overview.md).
 
@@ -586,30 +586,30 @@ For information on adding an icon to your hub, check out the [hub icon guidance]
 
 The Marketplace only supports badges from the following trusted services:
 
-* api.travis-ci.org/
-* badge.fury.io/
-* badges.frapsoft.com/
-* badges.gitter.im/
-* badges.greenkeeper.io/
-* cdn.travis-ci.org/
-* ci.appveyor.com/
-* codeclimate.com/
-* codecov.io/
-* coveralls.io/
-* david-dm.org/
-* gemnasium.com/
-* img.shields.io/
-* isitmaintained.com/
-* marketplace.visualstudio.com/
-* snyk.io/
-* travis-ci.com/
-* travis-ci.org/
-* vsmarketplacebadge.apphb.com/
-* bithound.io/
-* deepscan.io/
-* githost.io/
-* gitlab.com/
-* opencollective.co/
+- api.travis-ci.org/
+- badge.fury.io/
+- badges.frapsoft.com/
+- badges.gitter.im/
+- badges.greenkeeper.io/
+- cdn.travis-ci.org/
+- ci.appveyor.com/
+- codeclimate.com/
+- codecov.io/
+- coveralls.io/
+- david-dm.org/
+- gemnasium.com/
+- img.shields.io/
+- isitmaintained.com/
+- marketplace.visualstudio.com/
+- snyk.io/
+- travis-ci.com/
+- travis-ci.org/
+- vsmarketplacebadge.apphb.com/
+- bithound.io/
+- deepscan.io/
+- githost.io/
+- gitlab.com/
+- opencollective.co/
 
 If you want to show a badge from another service, please contact vsmarketplace@microsoft.com.
 

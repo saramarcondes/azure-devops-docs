@@ -75,4 +75,4 @@ You'll need an Azure subscription. You can get one free through [Visual Studio D
 
 ## Next steps
 
-* [Set up multi-stage release](../../release/define-multistage-release-process.md)
+- [Set up multi-stage release](../../release/define-multistage-release-process.md)

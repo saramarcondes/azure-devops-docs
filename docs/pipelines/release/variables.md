@@ -26,13 +26,13 @@ monikerRange: '>= tfs-2015'
 
 As you compose the tasks for deploying your application into each stage in your DevOps CI/CD processes, variables will help you to:
 
-* Define a more generic deployment pipeline once, and then
+- Define a more generic deployment pipeline once, and then
   customize it easily for each stage. For example, a variable
   can be used to represent the connection string for web deployment,
   and the value of this variable can be changed from one stage
   to another. These are **custom variables**.
 
-* Use information about the context of the particular release,
+- Use information about the context of the particular release,
   [stage](../process/stages.md), [artifacts](artifacts.md), or
   [agent](../agents/agents.md) in which the deployment pipeline is
   being run. For example, your script may need access to the location
@@ -46,13 +46,13 @@ As you compose the tasks for deploying your application into each stage in your 
 
 Custom variables can be defined at various scopes.
 
-* Share values across all of the definitions
+- Share values across all of the definitions
   in a project by using [variable groups](../library/variable-groups.md). Choose a variable
   group when you need to use the same values across all
   the definitions, stages, and tasks in a project, and you want to be able to change
   the values in a single place. You define and manage variable groups in the **Library** tab.
 
-* Share values across all of the stages by using
+- Share values across all of the stages by using
   **release pipeline variables**. Choose a release pipeline
   variable when you need to use the same value across all
   the stages and tasks in the release pipeline, and you
@@ -61,7 +61,7 @@ Custom variables can be defined at various scopes.
   In the Pipeline Variables page, open the Scope drop-down list and select "Release".
   By default, when you add a variable, it is set to Release scope.
 
-* Share values across all of the tasks within one specific stage by using **stage variables**.
+- Share values across all of the tasks within one specific stage by using **stage variables**.
   Use a stage-level variable for values that vary from stage to stage (and are the same for
   all the tasks in an stage). You define and manage these variables in the **Variables** tab of a release pipeline.
   In the Pipeline Variables page, open the Scope drop-down list and select the required stage.
@@ -69,10 +69,10 @@ Custom variables can be defined at various scopes.
 
 Using custom variables at project, release pipeline, and stage scope helps you to:
 
-* Avoid duplication of values, making it easier to update
+- Avoid duplication of values, making it easier to update
   all occurrences as one operation.
 
-* Store sensitive values in a way that they cannot be seen
+- Store sensitive values in a way that they cannot be seen
   or changed by users of the release pipelines. Designate a configuration property to be a secure (secret) variable by selecting the ![padlock](media/padlock-icon.png) (padlock) icon next to the variable.
 
   > The values of hidden (secret) variables are stored securely on
@@ -87,7 +87,7 @@ Using custom variables at project, release pipeline, and stage scope helps you t
 ### Using custom variables
 
 To use custom variables in your build and release tasks, simply enclose the
-variable name in parentheses and precede it with a **$** character. For example,
+variable name in parentheses and precede it with a **\$** character. For example,
 if you have a variable named **adminUserName**, you can insert the current
 value of that variable into a parameter of a task as `$(adminUserName)`.
 
@@ -289,16 +289,16 @@ Show additional information as a release executes and in the log files
 by running the entire release, or just the tasks in an individual
 release stage, in debug mode. This can help you resolve issues and failures.
 
-* To initiate debug mode for an entire release, add a variable
+- To initiate debug mode for an entire release, add a variable
   named `System.Debug` with the value `true` to the **Variables**
   tab of a release pipeline.
 
-* To initiate debug mode for a single stage, open the
+- To initiate debug mode for a single stage, open the
   **Configure stage** dialog from the shortcut menu
   of the stage and add a variable named `System.Debug`
   with the value `true` to the **Variables** tab.
 
-* Alternatively, create a [variable group](../library/variable-groups.md)
+- Alternatively, create a [variable group](../library/variable-groups.md)
   containing a variable named `System.Debug` with the value `true`
   and link this variable group to a release pipeline.
 

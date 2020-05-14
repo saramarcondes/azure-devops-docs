@@ -21,8 +21,8 @@ Permissions are set at the collection, project, and object level as described in
 
 ## Prerequisites
 
-* You must have a project to connect to. If you don't have a project yet, [create one](../projects/create-project.md).
-* You must be a member of the Project Valid Users Group or Project Collection Valid Users Group to view permissions.
+- You must have a project to connect to. If you don't have a project yet, [create one](../projects/create-project.md).
+- You must be a member of the Project Valid Users Group or Project Collection Valid Users Group to view permissions.
 
 > [!NOTE]
 > This article shows how to view permissions assigned to a user at the project-level or collection-level. However, the steps are similar when you work from the Security dialog of an object.

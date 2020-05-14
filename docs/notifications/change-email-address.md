@@ -73,6 +73,6 @@ You can change your preferred email address for notifications from your organiza
 
 ## Related articles
 
-* [Manage personal notifications](manage-personal-notifications.md)
-* [Manage team notifications](manage-team-group-notifications.md)
-* [Manage organization notifications](manage-organization-notifications.md)
+- [Manage personal notifications](manage-personal-notifications.md)
+- [Manage team notifications](manage-team-group-notifications.md)
+- [Manage organization notifications](manage-organization-notifications.md)

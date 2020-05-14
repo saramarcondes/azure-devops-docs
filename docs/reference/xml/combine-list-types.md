@@ -18,9 +18,9 @@ You can specify multiple types of lists for a single field. This topic defines h
 
 The following descriptions use these conventions:
 
-* All values for an `ALLOWEDVALUES` list are identified as {set A}.
-* All values for a `SUGGESTEDVALUES` list are identified as {set S}.
-* All values for a `PROHIBITEDVALUES` list are identified as {set P}.
+- All values for an `ALLOWEDVALUES` list are identified as {set A}.
+- All values for a `SUGGESTEDVALUES` list are identified as {set S}.
+- All values for a `PROHIBITEDVALUES` list are identified as {set P}.
 
 ## Valid value determination
 
@@ -33,16 +33,16 @@ The valid values allowed for a field are obtained by subtracting {set P} from {s
 The following rules use the content of the ALLOWEDVALUES, SUGGESTEDVALUES, and PROHIBITEDVALUES sets to determine the values that populate a drop-down list.
 
 ```
-If {set S} AND {set A} have no entries  
-  Result: Empty list  
-If {set S} has entries and {set A} has no entries  
-  Result: The values are obtained by subtracting {set P} from {set S}  
-If {set S} AND {set A} have entries  
-  Result: The list of values are obtained by:  
-                a. Intersecting {set A} with {set S} to get {intermediate set I}  
-                b. Subtracting {set P} from {intermediate set I}  
-If {set S} has no entries and {set A} has entries  
-  Result: The list of values are obtained by subtracting {set P} from {set A}  
+If {set S} AND {set A} have no entries
+  Result: Empty list
+If {set S} has entries and {set A} has no entries
+  Result: The values are obtained by subtracting {set P} from {set S}
+If {set S} AND {set A} have entries
+  Result: The list of values are obtained by:
+                a. Intersecting {set A} with {set S} to get {intermediate set I}
+                b. Subtracting {set P} from {intermediate set I}
+If {set S} has no entries and {set A} has entries
+  Result: The list of values are obtained by subtracting {set P} from {set A}
 ```
 
 ## Specify multiple lists
@@ -53,5 +53,5 @@ If you specify multiple `<SUGGESTEDVALUES>` sets or `<PROHIBITEDVALUES>` sets, t
 
 ## Related articles
 
-* [Define pick lists](define-pick-lists.md)
-* [Expand list items and exclude groups from lists](expand-list-items-and-exclude-groups-from-lists.md)
+- [Define pick lists](define-pick-lists.md)
+- [Expand list items and exclude groups from lists](expand-list-items-and-exclude-groups-from-lists.md)

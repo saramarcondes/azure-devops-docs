@@ -17,10 +17,10 @@ We’ve got quite a few things to cover in this week’s deployment. Let’s jum
 
 I’m happy to announce that, with our deployment this week, all customers now have the ability to customize work items. This new capability includes:
 
-* Adding new fields (date/time, string, integer, decimal)
-* Rearranging work item layouts
-* Process inheritance
-* Process security
+- Adding new fields (date/time, string, integer, decimal)
+- Rearranging work item layouts
+- Process inheritance
+- Process security
 
 ![Customizing a work item](media/12_10_01.png)
 
@@ -36,12 +36,12 @@ One of the most common requests from users of our new work item form has been th
 
 Today’s update also includes some improvements to the history experience for all work item types.
 
-* Pagination and revision count
-* Separation of the state graph from history
-* Auto-expansion of the most recent revision
-* Absolute timestamps
-* Some UX styling improvements
-* Performance improvements
+- Pagination and revision count
+- Separation of the state graph from history
+- Auto-expansion of the most recent revision
+- Absolute timestamps
+- Some UX styling improvements
+- Performance improvements
 
 Most of these changes are cosmetic, but you’ll see more coming to improve work item history next year.
 

@@ -25,8 +25,8 @@ Follow instructions in [Create your first pipeline](create-first-pipeline.md) to
 
 A pipeline is defined using a YAML file in your repo. Usually, this file is named `azure-pipelines.yml` and is located at the root of your repo.
 
-* Navigate to the **Pipelines** page in Azure Pipelines and select the pipeline you created.
-* Select **Edit** in the context menu of the pipeline to open the YAML editor for the pipeline. Examine the contents of the YAML file.
+- Navigate to the **Pipelines** page in Azure Pipelines and select the pipeline you created.
+- Select **Edit** in the context menu of the pipeline to open the YAML editor for the pipeline. Examine the contents of the YAML file.
 
   ```yaml
    trigger:
@@ -57,16 +57,16 @@ This pipeline runs whenever your team pushes a change to the master branch of yo
 
 You can build your project on [Microsoft-hosted agents](../pipelines/agents/hosted.md) that already include SDKs and tools for various development languages. Or, you can use [self-hosted agents](../pipelines/agents/agents.md#install) with specific tools that you need.
 
-* Navigate to the editor for your pipeline by selecting **Edit pipeline** action on the build, or by selecting **Edit** from the pipeline's main page.
+- Navigate to the editor for your pipeline by selecting **Edit pipeline** action on the build, or by selecting **Edit** from the pipeline's main page.
 
-* Currently the pipeline runs on a Linux agent:
+- Currently the pipeline runs on a Linux agent:
 
   ```yaml
   pool:
     vmImage: "ubuntu-16.04"
   ```
 
-* To choose a different platform like Windows or Mac, change the `vmImage` value:
+- To choose a different platform like Windows or Mac, change the `vmImage` value:
 
   ```yaml
   pool:
@@ -78,15 +78,15 @@ You can build your project on [Microsoft-hosted agents](../pipelines/agents/host
     vmImage: "macos-latest"
   ```
 
-* Select **Save** and then confirm the changes to see your pipeline run on a different platform.
+- Select **Save** and then confirm the changes to see your pipeline run on a different platform.
 
 ## Add steps
 
 You can add additional **scripts** or **tasks** as steps to your pipeline. A task is a pre-packaged script. You can use tasks for building, testing, publishing, or deploying your app. For Java, the Maven task we used handles testing and publishing results, however, you can use a task to publish code coverage results too.
 
-* Open the YAML editor for your pipeline.
+- Open the YAML editor for your pipeline.
 
-* Add the following snippet to the end of your YAML file.
+- Add the following snippet to the end of your YAML file.
 
   ```yaml
   - task: PublishCodeCoverageResults@1
@@ -97,15 +97,15 @@ You can add additional **scripts** or **tasks** as steps to your pipeline. A tas
       failIfCoverageEmpty: true
   ```
 
-* Select **Save** and then confirm the changes.
+- Select **Save** and then confirm the changes.
 
-* You can view your test and code coverage results by selecting your build and going to the **Test** and **Coverage** tabs.
+- You can view your test and code coverage results by selecting your build and going to the **Test** and **Coverage** tabs.
 
 ## Build across multiple platforms
 
 You can build and test your project on multiple platforms. One way to do it is with `strategy` and `matrix`. You can use variables to conveniently put data into various parts of a pipeline. For this example, we'll use a variable to pass in the name of the image we want to use.
 
-* In your `azure-pipelines.yml` file, replace this content:
+- In your `azure-pipelines.yml` file, replace this content:
 
   ```yaml
   pool:
@@ -129,7 +129,7 @@ You can build and test your project on multiple platforms. One way to do it is w
     vmImage: $(imageName)
   ```
 
-* Select **Save** and then confirm the changes to see your build run up to three jobs on three different platforms.
+- Select **Save** and then confirm the changes to see your build run up to three jobs on three different platforms.
 
 > Each agent can run only one job at a time. To run multiple jobs in parallel you must configure multiple agents. You also need sufficient [parallel jobs](../pipelines/licensing/concurrent-jobs.md).
 
@@ -137,7 +137,7 @@ You can build and test your project on multiple platforms. One way to do it is w
 
 To build a project using different versions of that language, you can use a `matrix` of versions and a variable. In this step you can either build the Java project with two different versions of Java on a single platform or run different versions of Java on different platforms.
 
-* If you want to build on a single platform and multiple versions, add the following matrix to your `azure-pipelines.yml` file before the Maven task and after the vmImage.
+- If you want to build on a single platform and multiple versions, add the following matrix to your `azure-pipelines.yml` file before the Maven task and after the vmImage.
 
   ```yaml
   strategy:
@@ -149,7 +149,7 @@ To build a project using different versions of that language, you can use a `mat
     maxParallel: 2
   ```
 
-* Then replace this line in your maven task:
+- Then replace this line in your maven task:
 
   ```yaml
   jdkVersionOption: "1.11"
@@ -161,9 +161,9 @@ To build a project using different versions of that language, you can use a `mat
   jdkVersionOption: $(jdk_version)
   ```
 
-* Make sure to change the `$(imageName)` variable back to the platform of your choice.
+- Make sure to change the `$(imageName)` variable back to the platform of your choice.
 
-* If you want to build on multiple platforms and versions, replace the entire content in your `azure-pipelines.yml` file before the publishing task with the following snippet:
+- If you want to build on multiple platforms and versions, replace the entire content in your `azure-pipelines.yml` file before the publishing task with the following snippet:
 
   ```yaml
   trigger:
@@ -195,13 +195,13 @@ To build a project using different versions of that language, you can use a `mat
       goals: "package"
   ```
 
-* Select **Save** and then confirm the changes to see your build run two jobs on three different platforms and SDKs.
+- Select **Save** and then confirm the changes to see your build run two jobs on three different platforms and SDKs.
 
 ## Customize CI triggers
 
 You can use a `trigger:` to specify the events when you want to run the pipeline. YAML pipelines are configured by default with a CI trigger on your default branch (which is usually master). You can set up triggers for specific branches or for pull request validation. For a pull request validation trigger just replace the `trigger:` step with `pr:` as shown in the two examples below.
 
-* If you'd like to set up triggers, add either of the following snippets at the beginning of your `azure-pipelines.yml` file.
+- If you'd like to set up triggers, add either of the following snippets at the beginning of your `azure-pipelines.yml` file.
 
   ```yaml
   trigger:
@@ -229,24 +229,24 @@ There are pipeline settings that you wouldn't want to manage in your YAML file. 
 
 Sometimes you'll want to prevent new runs from starting on your pipeline.
 
-* By default, the processing of new run requests is **Enabled**. This setting allows standard processing of all trigger types, including manual runs.
-* **Paused** pipelines allow run requests to be processed, but those requests are queued without actually starting. When new request processing is enabled, run processing resumes starting with the first request in the queue.
-* **Disabled** pipelines prevent users from starting new runs. All triggers are also disabled while this setting is applied.
+- By default, the processing of new run requests is **Enabled**. This setting allows standard processing of all trigger types, including manual runs.
+- **Paused** pipelines allow run requests to be processed, but those requests are queued without actually starting. When new request processing is enabled, run processing resumes starting with the first request in the queue.
+- **Disabled** pipelines prevent users from starting new runs. All triggers are also disabled while this setting is applied.
 
 ### Other settings
 
-* **YAML file path.** If you ever need to direct your pipeline to use a different YAML file, you can specify the path to that file. This setting can also be useful if you need to move/rename your YAML file.
-* **Automatically link work items included in this run.** The changes associated with a given pipeline run may have work items associated with them. Select this option to link those work items to the run. When this option is selected, you'll need to specify a specific branch. Work items will only be associated with runs of that branch.
-* To get notifications when your runs fail, see how to [Manage notifications for a team](../notifications/howto-manage-team-notifications.md)
+- **YAML file path.** If you ever need to direct your pipeline to use a different YAML file, you can specify the path to that file. This setting can also be useful if you need to move/rename your YAML file.
+- **Automatically link work items included in this run.** The changes associated with a given pipeline run may have work items associated with them. Select this option to link those work items to the run. When this option is selected, you'll need to specify a specific branch. Work items will only be associated with runs of that branch.
+- To get notifications when your runs fail, see how to [Manage notifications for a team](../notifications/howto-manage-team-notifications.md)
 
 You've just learned the basics of customizing your pipeline. Next we recommend that you learn more about customizing a pipeline for the language you use:
 
-* [.NET Core](ecosystems/dotnet-core.md)
-* [Containers](ecosystems/containers/build-image.md)
-* [Go](ecosystems/go.md)
-* [Java](ecosystems/java.md)
-* [Node.js](ecosystems/javascript.md)
-* [Python](ecosystems/python.md)
+- [.NET Core](ecosystems/dotnet-core.md)
+- [Containers](ecosystems/containers/build-image.md)
+- [Go](ecosystems/go.md)
+- [Java](ecosystems/java.md)
+- [Node.js](ecosystems/javascript.md)
+- [Python](ecosystems/python.md)
 
 Or, to grow your CI pipeline to a CI/CD pipeline, include a [deployment job](../pipelines/process/deployment-jobs.md) with steps to deploy your app to an [environment](../pipelines/process/environments.md).
 

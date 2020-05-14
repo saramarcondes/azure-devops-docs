@@ -29,53 +29,53 @@ Module path: `TFS/WorkItemTracking/RestClient`
 
 ### Methods
 
-* [createAttachment()](#method_createAttachment)
-* [createOrUpdateClassificationNode()](#method_createOrUpdateClassificationNode)
-* [createQuery()](#method_createQuery)
-* [createWorkItem()](#method_createWorkItem)
-* [deleteClassificationNode()](#method_deleteClassificationNode)
-* [deleteQuery()](#method_deleteQuery)
-* [deleteWorkItem()](#method_deleteWorkItem)
-* [destroyWorkItem()](#method_destroyWorkItem)
-* [evaluateRulesOnField()](#method_evaluateRulesOnField)
-* [exportWorkItemTypeDefinition()](#method_exportWorkItemTypeDefinition)
-* [getAttachmentContent()](#method_getAttachmentContent)
-* [getAttachmentZip()](#method_getAttachmentZip)
-* [getClassificationNode()](#method_getClassificationNode)
-* [getDeletedWorkItem()](#method_getDeletedWorkItem)
-* [getDeletedWorkItems()](#method_getDeletedWorkItems)
-* [getDependentFields()](#method_getDependentFields)
-* [getField()](#method_getField)
-* [getFields()](#method_getFields)
-* [getHistory()](#method_getHistory)
-* [getHistoryById()](#method_getHistoryById)
-* [getQueries()](#method_getQueries)
-* [getQuery()](#method_getQuery)
-* [getRelationType()](#method_getRelationType)
-* [getRelationTypes()](#method_getRelationTypes)
-* [getReportingLinks()](#method_getReportingLinks)
-* [getRevision()](#method_getRevision)
-* [getRevisions()](#method_getRevisions)
-* [getRootNodes()](#method_getRootNodes)
-* [getUpdate()](#method_getUpdate)
-* [getUpdates()](#method_getUpdates)
-* [getWorkItem()](#method_getWorkItem)
-* [getWorkItems()](#method_getWorkItems)
-* [getWorkItemTemplate()](#method_getWorkItemTemplate)
-* [getWorkItemType()](#method_getWorkItemType)
-* [getWorkItemTypeCategories()](#method_getWorkItemTypeCategories)
-* [getWorkItemTypeCategory()](#method_getWorkItemTypeCategory)
-* [getWorkItemTypes()](#method_getWorkItemTypes)
-* [queryById()](#method_queryById)
-* [queryByWiql()](#method_queryByWiql)
-* [readReportingRevisionsGet()](#method_readReportingRevisionsGet)
-* [readReportingRevisionsPost()](#method_readReportingRevisionsPost)
-* [restoreWorkItem()](#method_restoreWorkItem)
-* [updateClassificationNode()](#method_updateClassificationNode)
-* [updateQuery()](#method_updateQuery)
-* [updateWorkItem()](#method_updateWorkItem)
-* [updateWorkItemTemplate()](#method_updateWorkItemTemplate)
-* [updateWorkItemTypeDefinition()](#method_updateWorkItemTypeDefinition)
+- [createAttachment()](#method_createAttachment)
+- [createOrUpdateClassificationNode()](#method_createOrUpdateClassificationNode)
+- [createQuery()](#method_createQuery)
+- [createWorkItem()](#method_createWorkItem)
+- [deleteClassificationNode()](#method_deleteClassificationNode)
+- [deleteQuery()](#method_deleteQuery)
+- [deleteWorkItem()](#method_deleteWorkItem)
+- [destroyWorkItem()](#method_destroyWorkItem)
+- [evaluateRulesOnField()](#method_evaluateRulesOnField)
+- [exportWorkItemTypeDefinition()](#method_exportWorkItemTypeDefinition)
+- [getAttachmentContent()](#method_getAttachmentContent)
+- [getAttachmentZip()](#method_getAttachmentZip)
+- [getClassificationNode()](#method_getClassificationNode)
+- [getDeletedWorkItem()](#method_getDeletedWorkItem)
+- [getDeletedWorkItems()](#method_getDeletedWorkItems)
+- [getDependentFields()](#method_getDependentFields)
+- [getField()](#method_getField)
+- [getFields()](#method_getFields)
+- [getHistory()](#method_getHistory)
+- [getHistoryById()](#method_getHistoryById)
+- [getQueries()](#method_getQueries)
+- [getQuery()](#method_getQuery)
+- [getRelationType()](#method_getRelationType)
+- [getRelationTypes()](#method_getRelationTypes)
+- [getReportingLinks()](#method_getReportingLinks)
+- [getRevision()](#method_getRevision)
+- [getRevisions()](#method_getRevisions)
+- [getRootNodes()](#method_getRootNodes)
+- [getUpdate()](#method_getUpdate)
+- [getUpdates()](#method_getUpdates)
+- [getWorkItem()](#method_getWorkItem)
+- [getWorkItems()](#method_getWorkItems)
+- [getWorkItemTemplate()](#method_getWorkItemTemplate)
+- [getWorkItemType()](#method_getWorkItemType)
+- [getWorkItemTypeCategories()](#method_getWorkItemTypeCategories)
+- [getWorkItemTypeCategory()](#method_getWorkItemTypeCategory)
+- [getWorkItemTypes()](#method_getWorkItemTypes)
+- [queryById()](#method_queryById)
+- [queryByWiql()](#method_queryByWiql)
+- [readReportingRevisionsGet()](#method_readReportingRevisionsGet)
+- [readReportingRevisionsPost()](#method_readReportingRevisionsPost)
+- [restoreWorkItem()](#method_restoreWorkItem)
+- [updateClassificationNode()](#method_updateClassificationNode)
+- [updateQuery()](#method_updateQuery)
+- [updateWorkItem()](#method_updateWorkItem)
+- [updateWorkItemTemplate()](#method_updateWorkItemTemplate)
+- [updateWorkItemTypeDefinition()](#method_updateWorkItemTypeDefinition)
 
 <a name="method_createAttachment"></a>
 
@@ -91,13 +91,13 @@ Creates an attachment.
 
 ### Parameters
 
-* `content`: string. Content to upload
-* `fileName`: string. Optional.
-* `uploadType`: string. Optional.
+- `content`: string. Content to upload
+- `fileName`: string. Optional.
+- `uploadType`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.AttachmentReference](../../../TFS/WorkItemTracking/Contracts/AttachmentReference.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.AttachmentReference](../../../TFS/WorkItemTracking/Contracts/AttachmentReference.md)&gt;
 
 <a name="method_createOrUpdateClassificationNode"></a>
 
@@ -111,14 +111,14 @@ Creates an attachment.
 
 ### Parameters
 
-* `postedNode`: [Contracts.WorkItemClassificationNode](../../../TFS/WorkItemTracking/Contracts/WorkItemClassificationNode.md).
-* `project`: string.
-* `structureGroup`: [Contracts.TreeStructureGroup](../../../TFS/WorkItemTracking/Contracts/TreeStructureGroup.md).
-* `path`: string. Optional.
+- `postedNode`: [Contracts.WorkItemClassificationNode](../../../TFS/WorkItemTracking/Contracts/WorkItemClassificationNode.md).
+- `project`: string.
+- `structureGroup`: [Contracts.TreeStructureGroup](../../../TFS/WorkItemTracking/Contracts/TreeStructureGroup.md).
+- `path`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemClassificationNode](../../../TFS/WorkItemTracking/Contracts/WorkItemClassificationNode.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemClassificationNode](../../../TFS/WorkItemTracking/Contracts/WorkItemClassificationNode.md)&gt;
 
 <a name="method_createQuery"></a>
 
@@ -134,13 +134,13 @@ Creates a query, or moves a query.
 
 ### Parameters
 
-* `postedQuery`: [Contracts.QueryHierarchyItem](../../../TFS/WorkItemTracking/Contracts/QueryHierarchyItem.md). The query to create.
-* `project`: string. Project ID or project name
-* `query`: string. The parent path for the query to create.
+- `postedQuery`: [Contracts.QueryHierarchyItem](../../../TFS/WorkItemTracking/Contracts/QueryHierarchyItem.md). The query to create.
+- `project`: string. Project ID or project name
+- `query`: string. The parent path for the query to create.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.QueryHierarchyItem](../../../TFS/WorkItemTracking/Contracts/QueryHierarchyItem.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.QueryHierarchyItem](../../../TFS/WorkItemTracking/Contracts/QueryHierarchyItem.md)&gt;
 
 <a name="method_createWorkItem"></a>
 
@@ -154,15 +154,15 @@ Creates a query, or moves a query.
 
 ### Parameters
 
-* `document`: [VSS_Common_Contracts.JsonPatchDocument](../../../VSS/WebApi/Contracts/JsonPatchDocument.md).
-* `project`: string.
-* `type`: string.
-* `validateOnly`: boolean. Optional.
-* `bypassRules`: boolean. Optional.
+- `document`: [VSS_Common_Contracts.JsonPatchDocument](../../../VSS/WebApi/Contracts/JsonPatchDocument.md).
+- `project`: string.
+- `type`: string.
+- `validateOnly`: boolean. Optional.
+- `bypassRules`: boolean. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItem](../../../TFS/WorkItemTracking/Contracts/WorkItem.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItem](../../../TFS/WorkItemTracking/Contracts/WorkItem.md)&gt;
 
 <a name="method_deleteClassificationNode"></a>
 
@@ -176,14 +176,14 @@ Creates a query, or moves a query.
 
 ### Parameters
 
-* `project`: string. Project ID or project name
-* `structureGroup`: [Contracts.TreeStructureGroup](../../../TFS/WorkItemTracking/Contracts/TreeStructureGroup.md).
-* `path`: string. Optional.
-* `reclassifyId`: number. Optional.
+- `project`: string. Project ID or project name
+- `structureGroup`: [Contracts.TreeStructureGroup](../../../TFS/WorkItemTracking/Contracts/TreeStructureGroup.md).
+- `path`: string. Optional.
+- `reclassifyId`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
 
 <a name="method_deleteQuery"></a>
 
@@ -197,12 +197,12 @@ Creates a query, or moves a query.
 
 ### Parameters
 
-* `project`: string. Project ID or project name
-* `query`: string.
+- `project`: string. Project ID or project name
+- `query`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
 
 <a name="method_deleteWorkItem"></a>
 
@@ -216,12 +216,12 @@ Creates a query, or moves a query.
 
 ### Parameters
 
-* `id`: number.
-* `destroy`: boolean. Optional.
+- `id`: number.
+- `destroy`: boolean. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemDelete](../../../TFS/WorkItemTracking/Contracts/WorkItemDelete.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemDelete](../../../TFS/WorkItemTracking/Contracts/WorkItemDelete.md)&gt;
 
 <a name="method_destroyWorkItem"></a>
 
@@ -235,12 +235,12 @@ Creates a query, or moves a query.
 
 ### Parameters
 
-* `id`: number.
-* `project`: string. Optional.
+- `id`: number.
+- `project`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
 
 <a name="method_evaluateRulesOnField"></a>
 
@@ -256,11 +256,11 @@ Validates the fields values.
 
 ### Parameters
 
-* `ruleEngineInput`: [Contracts.FieldsToEvaluate](../../../TFS/WorkItemTracking/Contracts/FieldsToEvaluate.md).
+- `ruleEngineInput`: [Contracts.FieldsToEvaluate](../../../TFS/WorkItemTracking/Contracts/FieldsToEvaluate.md).
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
 
 <a name="method_exportWorkItemTypeDefinition"></a>
 
@@ -276,13 +276,13 @@ Export work item type
 
 ### Parameters
 
-* `project`: string. Optional. Project ID or project name
-* `type`: string. Optional.
-* `exportGlobalLists`: boolean. Optional.
+- `project`: string. Optional. Project ID or project name
+- `type`: string. Optional.
+- `exportGlobalLists`: boolean. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemTypeTemplate](../../../TFS/WorkItemTracking/Contracts/WorkItemTypeTemplate.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemTypeTemplate](../../../TFS/WorkItemTracking/Contracts/WorkItemTypeTemplate.md)&gt;
 
 <a name="method_getAttachmentContent"></a>
 
@@ -298,12 +298,12 @@ Returns an attachment
 
 ### Parameters
 
-* `id`: string.
-* `fileName`: string. Optional.
+- `id`: string.
+- `fileName`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
 
 <a name="method_getAttachmentZip"></a>
 
@@ -319,12 +319,12 @@ Returns an attachment
 
 ### Parameters
 
-* `id`: string.
-* `fileName`: string. Optional.
+- `id`: string.
+- `fileName`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
 
 <a name="method_getClassificationNode"></a>
 
@@ -338,14 +338,14 @@ Returns an attachment
 
 ### Parameters
 
-* `project`: string. Project ID or project name
-* `structureGroup`: [Contracts.TreeStructureGroup](../../../TFS/WorkItemTracking/Contracts/TreeStructureGroup.md).
-* `path`: string. Optional.
-* `depth`: number. Optional.
+- `project`: string. Project ID or project name
+- `structureGroup`: [Contracts.TreeStructureGroup](../../../TFS/WorkItemTracking/Contracts/TreeStructureGroup.md).
+- `path`: string. Optional.
+- `depth`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemClassificationNode](../../../TFS/WorkItemTracking/Contracts/WorkItemClassificationNode.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemClassificationNode](../../../TFS/WorkItemTracking/Contracts/WorkItemClassificationNode.md)&gt;
 
 <a name="method_getDeletedWorkItem"></a>
 
@@ -359,12 +359,12 @@ Returns an attachment
 
 ### Parameters
 
-* `id`: number.
-* `project`: string. Optional.
+- `id`: number.
+- `project`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemDelete](../../../TFS/WorkItemTracking/Contracts/WorkItemDelete.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemDelete](../../../TFS/WorkItemTracking/Contracts/WorkItemDelete.md)&gt;
 
 <a name="method_getDeletedWorkItems"></a>
 
@@ -378,12 +378,12 @@ Returns an attachment
 
 ### Parameters
 
-* `project`: string. Optional. Project ID or project name
-* `ids`: number[]. Optional.
+- `project`: string. Optional. Project ID or project name
+- `ids`: number[]. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemDeleteReference](../../../TFS/WorkItemTracking/Contracts/WorkItemDeleteReference.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemDeleteReference](../../../TFS/WorkItemTracking/Contracts/WorkItemDeleteReference.md)[]&gt;
 
 <a name="method_getDependentFields"></a>
 
@@ -399,13 +399,13 @@ Returns the dependent fields for the corresponding workitem type and fieldname
 
 ### Parameters
 
-* `project`: string. Project ID or project name
-* `type`: string.
-* `field`: string.
+- `project`: string. Project ID or project name
+- `type`: string.
+- `field`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.FieldDependentRule](../../../TFS/WorkItemTracking/Contracts/FieldDependentRule.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.FieldDependentRule](../../../TFS/WorkItemTracking/Contracts/FieldDependentRule.md)&gt;
 
 <a name="method_getField"></a>
 
@@ -419,11 +419,11 @@ Returns the dependent fields for the corresponding workitem type and fieldname
 
 ### Parameters
 
-* `field`: string.
+- `field`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemField](../../../TFS/WorkItemTracking/Contracts/WorkItemField.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemField](../../../TFS/WorkItemTracking/Contracts/WorkItemField.md)&gt;
 
 <a name="method_getFields"></a>
 
@@ -439,7 +439,7 @@ Returns the dependent fields for the corresponding workitem type and fieldname
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemField](../../../TFS/WorkItemTracking/Contracts/WorkItemField.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemField](../../../TFS/WorkItemTracking/Contracts/WorkItemField.md)[]&gt;
 
 <a name="method_getHistory"></a>
 
@@ -455,13 +455,13 @@ Returns history of all revision for a given work item ID
 
 ### Parameters
 
-* `id`: number.
-* `top`: number. Optional.
-* `skip`: number. Optional.
+- `id`: number.
+- `top`: number. Optional.
+- `skip`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemHistory](../../../TFS/WorkItemTracking/Contracts/WorkItemHistory.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemHistory](../../../TFS/WorkItemTracking/Contracts/WorkItemHistory.md)[]&gt;
 
 <a name="method_getHistoryById"></a>
 
@@ -477,12 +477,12 @@ Returns the history value of particular revision
 
 ### Parameters
 
-* `id`: number.
-* `revisionNumber`: number.
+- `id`: number.
+- `revisionNumber`: number.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemHistory](../../../TFS/WorkItemTracking/Contracts/WorkItemHistory.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemHistory](../../../TFS/WorkItemTracking/Contracts/WorkItemHistory.md)&gt;
 
 <a name="method_getQueries"></a>
 
@@ -498,14 +498,14 @@ Retrieves all queries the user has access to in the current project
 
 ### Parameters
 
-* `project`: string. Project ID or project name
-* `expand`: [Contracts.QueryExpand](../../../TFS/WorkItemTracking/Contracts/QueryExpand.md). Optional.
-* `depth`: number. Optional.
-* `includeDeleted`: boolean. Optional.
+- `project`: string. Project ID or project name
+- `expand`: [Contracts.QueryExpand](../../../TFS/WorkItemTracking/Contracts/QueryExpand.md). Optional.
+- `depth`: number. Optional.
+- `includeDeleted`: boolean. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.QueryHierarchyItem](../../../TFS/WorkItemTracking/Contracts/QueryHierarchyItem.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.QueryHierarchyItem](../../../TFS/WorkItemTracking/Contracts/QueryHierarchyItem.md)[]&gt;
 
 <a name="method_getQuery"></a>
 
@@ -521,15 +521,15 @@ Retrieves a single query by project and either ID or path
 
 ### Parameters
 
-* `project`: string. Project ID or project name
-* `query`: string.
-* `expand`: [Contracts.QueryExpand](../../../TFS/WorkItemTracking/Contracts/QueryExpand.md). Optional.
-* `depth`: number. Optional.
-* `includeDeleted`: boolean. Optional.
+- `project`: string. Project ID or project name
+- `query`: string.
+- `expand`: [Contracts.QueryExpand](../../../TFS/WorkItemTracking/Contracts/QueryExpand.md). Optional.
+- `depth`: number. Optional.
+- `includeDeleted`: boolean. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.QueryHierarchyItem](../../../TFS/WorkItemTracking/Contracts/QueryHierarchyItem.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.QueryHierarchyItem](../../../TFS/WorkItemTracking/Contracts/QueryHierarchyItem.md)&gt;
 
 <a name="method_getRelationType"></a>
 
@@ -545,11 +545,11 @@ Gets the work item relation types.
 
 ### Parameters
 
-* `relation`: string.
+- `relation`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemRelationType](../../../TFS/WorkItemTracking/Contracts/WorkItemRelationType.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemRelationType](../../../TFS/WorkItemTracking/Contracts/WorkItemRelationType.md)&gt;
 
 <a name="method_getRelationTypes"></a>
 
@@ -565,7 +565,7 @@ Gets the work item relation types.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemRelationType](../../../TFS/WorkItemTracking/Contracts/WorkItemRelationType.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemRelationType](../../../TFS/WorkItemTracking/Contracts/WorkItemRelationType.md)[]&gt;
 
 <a name="method_getReportingLinks"></a>
 
@@ -581,14 +581,14 @@ Get a batch of work item links
 
 ### Parameters
 
-* `project`: string. Optional. Project ID or project name
-* `types`: string[]. Optional. A list of types to filter the results to specific work item types. Omit this parameter to get work item links of all work item types.
-* `watermark`: number. Optional. Specifies the watermark to start the batch from. Omit this parameter to get the first batch of links.
-* `startDateTime`: Date. Optional. Date/time to use as a starting point for link changes. Only link changes that occurred after that date/time are returned. Cannot be used in conjunction with &#x27;watermark&#x27; parameter.
+- `project`: string. Optional. Project ID or project name
+- `types`: string[]. Optional. A list of types to filter the results to specific work item types. Omit this parameter to get work item links of all work item types.
+- `watermark`: number. Optional. Specifies the watermark to start the batch from. Omit this parameter to get the first batch of links.
+- `startDateTime`: Date. Optional. Date/time to use as a starting point for link changes. Only link changes that occurred after that date/time are returned. Cannot be used in conjunction with &#x27;watermark&#x27; parameter.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.ReportingWorkItemLinksBatch](../../../TFS/WorkItemTracking/Contracts/ReportingWorkItemLinksBatch.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.ReportingWorkItemLinksBatch](../../../TFS/WorkItemTracking/Contracts/ReportingWorkItemLinksBatch.md)&gt;
 
 <a name="method_getRevision"></a>
 
@@ -604,13 +604,13 @@ Returns a fully hydrated work item for the requested revision
 
 ### Parameters
 
-* `id`: number.
-* `revisionNumber`: number.
-* `expand`: [Contracts.WorkItemExpand](../../../TFS/WorkItemTracking/Contracts/WorkItemExpand.md). Optional.
+- `id`: number.
+- `revisionNumber`: number.
+- `expand`: [Contracts.WorkItemExpand](../../../TFS/WorkItemTracking/Contracts/WorkItemExpand.md). Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItem](../../../TFS/WorkItemTracking/Contracts/WorkItem.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItem](../../../TFS/WorkItemTracking/Contracts/WorkItem.md)&gt;
 
 <a name="method_getRevisions"></a>
 
@@ -626,14 +626,14 @@ Returns the list of fully hydrated work item revisions, paged.
 
 ### Parameters
 
-* `id`: number.
-* `top`: number. Optional.
-* `skip`: number. Optional.
-* `expand`: [Contracts.WorkItemExpand](../../../TFS/WorkItemTracking/Contracts/WorkItemExpand.md). Optional.
+- `id`: number.
+- `top`: number. Optional.
+- `skip`: number. Optional.
+- `expand`: [Contracts.WorkItemExpand](../../../TFS/WorkItemTracking/Contracts/WorkItemExpand.md). Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItem](../../../TFS/WorkItemTracking/Contracts/WorkItem.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItem](../../../TFS/WorkItemTracking/Contracts/WorkItem.md)[]&gt;
 
 <a name="method_getRootNodes"></a>
 
@@ -647,12 +647,12 @@ Returns the list of fully hydrated work item revisions, paged.
 
 ### Parameters
 
-* `project`: string. Project ID or project name
-* `depth`: number. Optional.
+- `project`: string. Project ID or project name
+- `depth`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemClassificationNode](../../../TFS/WorkItemTracking/Contracts/WorkItemClassificationNode.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemClassificationNode](../../../TFS/WorkItemTracking/Contracts/WorkItemClassificationNode.md)[]&gt;
 
 <a name="method_getUpdate"></a>
 
@@ -668,12 +668,12 @@ Returns a single update for a work item
 
 ### Parameters
 
-* `id`: number.
-* `updateNumber`: number.
+- `id`: number.
+- `updateNumber`: number.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemUpdate](../../../TFS/WorkItemTracking/Contracts/WorkItemUpdate.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemUpdate](../../../TFS/WorkItemTracking/Contracts/WorkItemUpdate.md)&gt;
 
 <a name="method_getUpdates"></a>
 
@@ -689,13 +689,13 @@ Returns a the deltas between work item revisions
 
 ### Parameters
 
-* `id`: number.
-* `top`: number. Optional.
-* `skip`: number. Optional.
+- `id`: number.
+- `top`: number. Optional.
+- `skip`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemUpdate](../../../TFS/WorkItemTracking/Contracts/WorkItemUpdate.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemUpdate](../../../TFS/WorkItemTracking/Contracts/WorkItemUpdate.md)[]&gt;
 
 <a name="method_getWorkItem"></a>
 
@@ -711,14 +711,14 @@ Returns a single work item
 
 ### Parameters
 
-* `id`: number.
-* `fields`: string[]. Optional.
-* `asOf`: Date. Optional.
-* `expand`: [Contracts.WorkItemExpand](../../../TFS/WorkItemTracking/Contracts/WorkItemExpand.md). Optional.
+- `id`: number.
+- `fields`: string[]. Optional.
+- `asOf`: Date. Optional.
+- `expand`: [Contracts.WorkItemExpand](../../../TFS/WorkItemTracking/Contracts/WorkItemExpand.md). Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItem](../../../TFS/WorkItemTracking/Contracts/WorkItem.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItem](../../../TFS/WorkItemTracking/Contracts/WorkItem.md)&gt;
 
 <a name="method_getWorkItems"></a>
 
@@ -734,14 +734,14 @@ Returns a list of work items
 
 ### Parameters
 
-* `ids`: number[].
-* `fields`: string[]. Optional.
-* `asOf`: Date. Optional.
-* `expand`: [Contracts.WorkItemExpand](../../../TFS/WorkItemTracking/Contracts/WorkItemExpand.md). Optional.
+- `ids`: number[].
+- `fields`: string[]. Optional.
+- `asOf`: Date. Optional.
+- `expand`: [Contracts.WorkItemExpand](../../../TFS/WorkItemTracking/Contracts/WorkItemExpand.md). Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItem](../../../TFS/WorkItemTracking/Contracts/WorkItem.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItem](../../../TFS/WorkItemTracking/Contracts/WorkItem.md)[]&gt;
 
 <a name="method_getWorkItemTemplate"></a>
 
@@ -757,15 +757,15 @@ Returns a single work item from a template
 
 ### Parameters
 
-* `project`: string. Project ID or project name
-* `type`: string.
-* `fields`: string. Optional.
-* `asOf`: Date. Optional.
-* `expand`: [Contracts.WorkItemExpand](../../../TFS/WorkItemTracking/Contracts/WorkItemExpand.md). Optional.
+- `project`: string. Project ID or project name
+- `type`: string.
+- `fields`: string. Optional.
+- `asOf`: Date. Optional.
+- `expand`: [Contracts.WorkItemExpand](../../../TFS/WorkItemTracking/Contracts/WorkItemExpand.md). Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItem](../../../TFS/WorkItemTracking/Contracts/WorkItem.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItem](../../../TFS/WorkItemTracking/Contracts/WorkItem.md)&gt;
 
 <a name="method_getWorkItemType"></a>
 
@@ -781,12 +781,12 @@ Returns a the deltas between work item revisions
 
 ### Parameters
 
-* `project`: string. Project ID or project name
-* `type`: string.
+- `project`: string. Project ID or project name
+- `type`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemType](../../../TFS/WorkItemTracking/Contracts/WorkItemType.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemType](../../../TFS/WorkItemTracking/Contracts/WorkItemType.md)&gt;
 
 <a name="method_getWorkItemTypeCategories"></a>
 
@@ -800,11 +800,11 @@ Returns a the deltas between work item revisions
 
 ### Parameters
 
-* `project`: string. Project ID or project name
+- `project`: string. Project ID or project name
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemTypeCategory](../../../TFS/WorkItemTracking/Contracts/WorkItemTypeCategory.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemTypeCategory](../../../TFS/WorkItemTracking/Contracts/WorkItemTypeCategory.md)[]&gt;
 
 <a name="method_getWorkItemTypeCategory"></a>
 
@@ -820,12 +820,12 @@ Returns a the deltas between work item revisions
 
 ### Parameters
 
-* `project`: string. Project ID or project name
-* `category`: string.
+- `project`: string. Project ID or project name
+- `category`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemTypeCategory](../../../TFS/WorkItemTracking/Contracts/WorkItemTypeCategory.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemTypeCategory](../../../TFS/WorkItemTracking/Contracts/WorkItemTypeCategory.md)&gt;
 
 <a name="method_getWorkItemTypes"></a>
 
@@ -839,11 +839,11 @@ Returns a the deltas between work item revisions
 
 ### Parameters
 
-* `project`: string. Project ID or project name
+- `project`: string. Project ID or project name
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemType](../../../TFS/WorkItemTracking/Contracts/WorkItemType.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemType](../../../TFS/WorkItemTracking/Contracts/WorkItemType.md)[]&gt;
 
 <a name="method_queryById"></a>
 
@@ -859,13 +859,13 @@ Gets the results of the query by id.
 
 ### Parameters
 
-* `id`: string. The query id.
-* `project`: string. Optional. Project ID or project name
-* `team`: string. Optional. Team ID or team name
+- `id`: string. The query id.
+- `project`: string. Optional. Project ID or project name
+- `team`: string. Optional. Team ID or team name
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemQueryResult](../../../TFS/WorkItemTracking/Contracts/WorkItemQueryResult.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemQueryResult](../../../TFS/WorkItemTracking/Contracts/WorkItemQueryResult.md)&gt;
 
 <a name="method_queryByWiql"></a>
 
@@ -881,13 +881,13 @@ Gets the results of the query.
 
 ### Parameters
 
-* `wiql`: [Contracts.Wiql](../../../TFS/WorkItemTracking/Contracts/Wiql.md). The query containing the wiql.
-* `project`: string. Optional. Project ID or project name
-* `team`: string. Optional. Team ID or team name
+- `wiql`: [Contracts.Wiql](../../../TFS/WorkItemTracking/Contracts/Wiql.md). The query containing the wiql.
+- `project`: string. Optional. Project ID or project name
+- `team`: string. Optional. Team ID or team name
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemQueryResult](../../../TFS/WorkItemTracking/Contracts/WorkItemQueryResult.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemQueryResult](../../../TFS/WorkItemTracking/Contracts/WorkItemQueryResult.md)&gt;
 
 <a name="method_readReportingRevisionsGet"></a>
 
@@ -903,17 +903,17 @@ Get a batch of work item revisions
 
 ### Parameters
 
-* `project`: string. Optional. Project ID or project name
-* `fields`: string[]. Optional. A list of fields to return in work item revisions. Omit this parameter to get all reportable fields.
-* `types`: string[]. Optional. A list of types to filter the results to specific work item types. Omit this parameter to get work item revisions of all work item types.
-* `watermark`: number. Optional. Specifies the watermark to start the batch from. Omit this parameter to get the first batch of revisions.
-* `startDateTime`: Date. Optional. Date/time to use as a starting point for revisions, all revisions occur after this date/time. Cannot be used in conjunction with &#x27;watermark&#x27; parameter.
-* `includeIdentityRef`: boolean. Optional. Return an identity reference instead of a string value for identity fields.
-* `includeDeleted`: boolean. Optional. Specify if the deleted item should be returned.
+- `project`: string. Optional. Project ID or project name
+- `fields`: string[]. Optional. A list of fields to return in work item revisions. Omit this parameter to get all reportable fields.
+- `types`: string[]. Optional. A list of types to filter the results to specific work item types. Omit this parameter to get work item revisions of all work item types.
+- `watermark`: number. Optional. Specifies the watermark to start the batch from. Omit this parameter to get the first batch of revisions.
+- `startDateTime`: Date. Optional. Date/time to use as a starting point for revisions, all revisions occur after this date/time. Cannot be used in conjunction with &#x27;watermark&#x27; parameter.
+- `includeIdentityRef`: boolean. Optional. Return an identity reference instead of a string value for identity fields.
+- `includeDeleted`: boolean. Optional. Specify if the deleted item should be returned.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.ReportingWorkItemRevisionsBatch](../../../TFS/WorkItemTracking/Contracts/ReportingWorkItemRevisionsBatch.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.ReportingWorkItemRevisionsBatch](../../../TFS/WorkItemTracking/Contracts/ReportingWorkItemRevisionsBatch.md)&gt;
 
 <a name="method_readReportingRevisionsPost"></a>
 
@@ -929,14 +929,14 @@ Get a batch of work item revisions
 
 ### Parameters
 
-* `filter`: [Contracts.ReportingWorkItemRevisionsFilter](../../../TFS/WorkItemTracking/Contracts/ReportingWorkItemRevisionsFilter.md). An object that contains request settings: field filter, type filter, identity format
-* `project`: string. Optional. Project ID or project name
-* `watermark`: number. Optional. Specifies the watermark to start the batch from. Omit this parameter to get the first batch of revisions.
-* `startDateTime`: Date. Optional. Date/time to use as a starting point for revisions, all revisions occur after this date/time. Cannot be used in conjunction with &#x27;watermark&#x27; parameter.
+- `filter`: [Contracts.ReportingWorkItemRevisionsFilter](../../../TFS/WorkItemTracking/Contracts/ReportingWorkItemRevisionsFilter.md). An object that contains request settings: field filter, type filter, identity format
+- `project`: string. Optional. Project ID or project name
+- `watermark`: number. Optional. Specifies the watermark to start the batch from. Omit this parameter to get the first batch of revisions.
+- `startDateTime`: Date. Optional. Date/time to use as a starting point for revisions, all revisions occur after this date/time. Cannot be used in conjunction with &#x27;watermark&#x27; parameter.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.ReportingWorkItemRevisionsBatch](../../../TFS/WorkItemTracking/Contracts/ReportingWorkItemRevisionsBatch.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.ReportingWorkItemRevisionsBatch](../../../TFS/WorkItemTracking/Contracts/ReportingWorkItemRevisionsBatch.md)&gt;
 
 <a name="method_restoreWorkItem"></a>
 
@@ -950,13 +950,13 @@ Get a batch of work item revisions
 
 ### Parameters
 
-* `payload`: [Contracts.WorkItemDeleteUpdate](../../../TFS/WorkItemTracking/Contracts/WorkItemDeleteUpdate.md).
-* `id`: number.
-* `project`: string. Optional.
+- `payload`: [Contracts.WorkItemDeleteUpdate](../../../TFS/WorkItemTracking/Contracts/WorkItemDeleteUpdate.md).
+- `id`: number.
+- `project`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemDelete](../../../TFS/WorkItemTracking/Contracts/WorkItemDelete.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemDelete](../../../TFS/WorkItemTracking/Contracts/WorkItemDelete.md)&gt;
 
 <a name="method_updateClassificationNode"></a>
 
@@ -970,14 +970,14 @@ Get a batch of work item revisions
 
 ### Parameters
 
-* `postedNode`: [Contracts.WorkItemClassificationNode](../../../TFS/WorkItemTracking/Contracts/WorkItemClassificationNode.md).
-* `project`: string.
-* `structureGroup`: [Contracts.TreeStructureGroup](../../../TFS/WorkItemTracking/Contracts/TreeStructureGroup.md).
-* `path`: string. Optional.
+- `postedNode`: [Contracts.WorkItemClassificationNode](../../../TFS/WorkItemTracking/Contracts/WorkItemClassificationNode.md).
+- `project`: string.
+- `structureGroup`: [Contracts.TreeStructureGroup](../../../TFS/WorkItemTracking/Contracts/TreeStructureGroup.md).
+- `path`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemClassificationNode](../../../TFS/WorkItemTracking/Contracts/WorkItemClassificationNode.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItemClassificationNode](../../../TFS/WorkItemTracking/Contracts/WorkItemClassificationNode.md)&gt;
 
 <a name="method_updateQuery"></a>
 
@@ -991,14 +991,14 @@ Get a batch of work item revisions
 
 ### Parameters
 
-* `queryUpdate`: [Contracts.QueryHierarchyItem](../../../TFS/WorkItemTracking/Contracts/QueryHierarchyItem.md).
-* `project`: string.
-* `query`: string.
-* `undeleteDescendants`: boolean. Optional.
+- `queryUpdate`: [Contracts.QueryHierarchyItem](../../../TFS/WorkItemTracking/Contracts/QueryHierarchyItem.md).
+- `project`: string.
+- `query`: string.
+- `undeleteDescendants`: boolean. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.QueryHierarchyItem](../../../TFS/WorkItemTracking/Contracts/QueryHierarchyItem.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.QueryHierarchyItem](../../../TFS/WorkItemTracking/Contracts/QueryHierarchyItem.md)&gt;
 
 <a name="method_updateWorkItem"></a>
 
@@ -1012,14 +1012,14 @@ Get a batch of work item revisions
 
 ### Parameters
 
-* `document`: [VSS_Common_Contracts.JsonPatchDocument](../../../VSS/WebApi/Contracts/JsonPatchDocument.md).
-* `id`: number.
-* `validateOnly`: boolean. Optional.
-* `bypassRules`: boolean. Optional.
+- `document`: [VSS_Common_Contracts.JsonPatchDocument](../../../VSS/WebApi/Contracts/JsonPatchDocument.md).
+- `id`: number.
+- `validateOnly`: boolean. Optional.
+- `bypassRules`: boolean. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItem](../../../TFS/WorkItemTracking/Contracts/WorkItem.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItem](../../../TFS/WorkItemTracking/Contracts/WorkItem.md)&gt;
 
 <a name="method_updateWorkItemTemplate"></a>
 
@@ -1033,15 +1033,15 @@ Get a batch of work item revisions
 
 ### Parameters
 
-* `document`: [VSS_Common_Contracts.JsonPatchDocument](../../../VSS/WebApi/Contracts/JsonPatchDocument.md).
-* `project`: string.
-* `type`: string.
-* `validateOnly`: boolean. Optional.
-* `bypassRules`: boolean. Optional.
+- `document`: [VSS_Common_Contracts.JsonPatchDocument](../../../VSS/WebApi/Contracts/JsonPatchDocument.md).
+- `project`: string.
+- `type`: string.
+- `validateOnly`: boolean. Optional.
+- `bypassRules`: boolean. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItem](../../../TFS/WorkItemTracking/Contracts/WorkItem.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WorkItem](../../../TFS/WorkItemTracking/Contracts/WorkItem.md)&gt;
 
 <a name="method_updateWorkItemTypeDefinition"></a>
 
@@ -1057,9 +1057,9 @@ Add/updates a work item type
 
 ### Parameters
 
-* `updateModel`: [Contracts.WorkItemTypeTemplateUpdateModel](../../../TFS/WorkItemTracking/Contracts/WorkItemTypeTemplateUpdateModel.md).
-* `project`: string. Optional.
+- `updateModel`: [Contracts.WorkItemTypeTemplateUpdateModel](../../../TFS/WorkItemTracking/Contracts/WorkItemTypeTemplateUpdateModel.md).
+- `project`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.ProvisioningResult](../../../TFS/WorkItemTracking/Contracts/ProvisioningResult.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.ProvisioningResult](../../../TFS/WorkItemTracking/Contracts/ProvisioningResult.md)&gt;

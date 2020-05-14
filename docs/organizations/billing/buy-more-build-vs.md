@@ -21,8 +21,8 @@ In this article, learn how to buy self-hosted or Microsoft-hosted CI/CD and chan
 With Azure Pipelines, you can run builds and deploy releases by using the Microsoft-hosted agents, your own machines, or both.
 We offer a _free tier_ for each. The _free tier_ includes:
 
-* Free tier of Microsoft-hosted CI/CD (one concurrent job, up to 30 hours per month)
-* One self-hosted CI/CD concurrent job
+- Free tier of Microsoft-hosted CI/CD (one concurrent job, up to 30 hours per month)
+- One self-hosted CI/CD concurrent job
 
 [!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
 
@@ -41,8 +41,8 @@ Pipelines in a [public project](../public/about-public-projects.md) can run up t
 
 Azure Pipelines also offers you a way to run the agent on machines that you manage, whether your machines are on-premises or in the cloud. Typically, you'll choose this option in either of the following situations:
 
-* Custom software that runs in your build process isn't included in the Microsoft-hosted option.
-* You already have an Azure DevOps Server build server running, and you aren't ready to move your build definitions to Azure Pipelines.
+- Custom software that runs in your build process isn't included in the Microsoft-hosted option.
+- You already have an Azure DevOps Server build server running, and you aren't ready to move your build definitions to Azure Pipelines.
 
 ### Self-hosted public projects
 
@@ -56,8 +56,8 @@ The _free tier_ is one parallel job. You also get one free parallel job for each
 
 ## Prerequisites
 
-* [Billing must be set up for your organization](set-up-billing-for-your-organization-vs.md)
-* You need [Project Collection Administrator or organization Owner permissions](../security/lookup-organization-owner-admin.md)
+- [Billing must be set up for your organization](set-up-billing-for-your-organization-vs.md)
+- You need [Project Collection Administrator or organization Owner permissions](../security/lookup-organization-owner-admin.md)
 
 ## Increase quantity of CI/CD
 

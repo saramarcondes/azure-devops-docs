@@ -24,12 +24,12 @@ In this article you'll learn how to perform the following tasks:
 
 > [!div class="checklist"]
 >
-> * Connect to a project from Excel
-> * Add or edit work items and publish your changes to Azure Boards or Azure DevOps
-> * Refresh your Excel worksheet with the latest changes made to the work tracking data store
-> * Select user accounts
-> * Add hierarchically linked backlog items and tasks
-> * Work with different list types
+> - Connect to a project from Excel
+> - Add or edit work items and publish your changes to Azure Boards or Azure DevOps
+> - Refresh your Excel worksheet with the latest changes made to the work tracking data store
+> - Select user accounts
+> - Add hierarchically linked backlog items and tasks
+> - Work with different list types
 
 ::: moniker range="azure-devops"
 
@@ -58,31 +58,31 @@ For answers to specific questions about the integration of Microsoft Excel and A
 
 Integration of Microsoft Excel with the cloud service for Azure Boards is fully supported.
 
-* First you need to connect your Excel worksheet to a particular project, if you don't have an Azure Boards Project yet, you can [create one](/azure/devops/boards/get-started/sign-up-invite-teammates).
-* You'll need [permissions to connect to the project](../../../organizations/security/add-users-team-project.md) in Azure Boards.
-* To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
-* To view or modify work items, you must have these permissions set to **Allow**: **View work items in this node** and **Edit work items in this node**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).
-* Microsoft Excel 2010 or later version, including Microsoft Office Excel 365
-* Installed [Azure DevOps Office Integration 2019 (free)](https://visualstudio.microsoft.com/downloads/#other-family).
+- First you need to connect your Excel worksheet to a particular project, if you don't have an Azure Boards Project yet, you can [create one](/azure/devops/boards/get-started/sign-up-invite-teammates).
+- You'll need [permissions to connect to the project](../../../organizations/security/add-users-team-project.md) in Azure Boards.
+- To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+- To view or modify work items, you must have these permissions set to **Allow**: **View work items in this node** and **Edit work items in this node**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).
+- Microsoft Excel 2010 or later version, including Microsoft Office Excel 365
+- Installed [Azure DevOps Office Integration 2019 (free)](https://visualstudio.microsoft.com/downloads/#other-family).
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 < azure-devops"
 
-* First you need to connect your Excel worksheet to a particular project, if you don't have an project yet, you can [create one](/azure/devops/organizations/projects/create-project).
-* [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md) in Azure Boards.
-* To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
-* To view or modify work items, you must have these permissions set to **Allow**: **View work items in this node** and **Edit work items in this node**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).
-* Microsoft Excel 2010 or later version, including Microsoft Office Excel 365
-* Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
+- First you need to connect your Excel worksheet to a particular project, if you don't have an project yet, you can [create one](/azure/devops/organizations/projects/create-project).
+- [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md) in Azure Boards.
+- To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+- To view or modify work items, you must have these permissions set to **Allow**: **View work items in this node** and **Edit work items in this node**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).
+- Microsoft Excel 2010 or later version, including Microsoft Office Excel 365
+- Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
-* Microsoft Excel 2007, Microsoft Excel 2010, or Microsoft Excel 2013
-* Visual Studio 2013 or Visual Studio 2015 or [Team Foundation Server Standalone Office Integration (free)](https://go.microsoft.com/fwlink/?LinkId=832491&clcid=0x409)
-* [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md).
+- Microsoft Excel 2007, Microsoft Excel 2010, or Microsoft Excel 2013
+- Visual Studio 2013 or Visual Studio 2015 or [Team Foundation Server Standalone Office Integration (free)](https://go.microsoft.com/fwlink/?LinkId=832491&clcid=0x409)
+- [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md).
 
 ::: moniker-end
 
@@ -227,10 +227,10 @@ You can make changes to work items in Excel, Project, the web portal, or Visual 
 
 > [!TIP] > **Follow these tips to keep your work in sync:**
 >
-> * When you first open a saved worksheet, use ![Refresh icon in Excel on Team ribbon](media/bulk-modify-excel-refresh-inline.png) (**Refresh**) to download the latest data from the data store.
-> * Enter data for additional fields by adding columns to the worksheet using ![Choose Column icon in Excel on Team ribbon](media/bulk-modify-excel-choose-columns-inline.png) <strong>Choose Columns</strong>.
-> * To avoid data conflicts, publish your additions and modifications often.
-> * To prevent loss of data before you publish or refresh, save your workbook periodically.
+> - When you first open a saved worksheet, use ![Refresh icon in Excel on Team ribbon](media/bulk-modify-excel-refresh-inline.png) (**Refresh**) to download the latest data from the data store.
+> - Enter data for additional fields by adding columns to the worksheet using ![Choose Column icon in Excel on Team ribbon](media/bulk-modify-excel-choose-columns-inline.png) <strong>Choose Columns</strong>.
+> - To avoid data conflicts, publish your additions and modifications often.
+> - To prevent loss of data before you publish or refresh, save your workbook periodically.
 
 <a id="select-user"></a>
 
@@ -303,12 +303,12 @@ To import a hierarchical list, perform the following steps:
 
 ## Useful tips when working with a tree list
 
-* The plug-in interprets the data in the **Title** columns to determine the pattern of links between work items. When you publish changes, any of the following conditions can result in an error, an invalid link, or a tree link to be created between incorrect work items: - A row between parent and child work items is blank. - The Title of a work item is in the wrong column. Make sure you enter a title for each child work item. - Within a row, multiple **Title** columns contain data. Enter text in only one of the title columns within each row. - The list was sorted. Don't sort a tree list. Sorting a tree list can change the hierarchical link relationships. If you do sort a tree list, you can recover from this operation by immediately refreshing.
-* To resolve an error, see [Resolve invalid links in an Excel tree list](resolve-excel-invalid-links-tree-list.md).
-* You can use the ![indent item in tree](media/bulk-modify-excel-indent-inline.png) or ![Outdent item in tree](media/bulk-modify-excel-outdent-inline.png) indent/outdent icons to demote or promote a work item within the tree hierarchy. Verify that the column to the left or right of the parent work item's title is a **Title** column. The header at the top of the column should read **Title** &lt;number&gt;, if it does not, add a tree level.
-* A parent-child linked work item can only have one parent. You can't add the same work item task to two backlog items. Instead, you need to define distinct work item tasks.
-* If you receive error TF208104, changes you made to the fields are published, but all changes you made to the link hierarchy are not published. At least one of the link relationships defined for the work item is locked by another process, such as Project Server integration. For more information, see [Addressing Error TF208104: Hierarchical Link Relationship Is Locked](resolve-excel-invalid-links-tree-list.md#tf208104).
-* When you move a work item, make sure that you select the entire table row.
+- The plug-in interprets the data in the **Title** columns to determine the pattern of links between work items. When you publish changes, any of the following conditions can result in an error, an invalid link, or a tree link to be created between incorrect work items: - A row between parent and child work items is blank. - The Title of a work item is in the wrong column. Make sure you enter a title for each child work item. - Within a row, multiple **Title** columns contain data. Enter text in only one of the title columns within each row. - The list was sorted. Don't sort a tree list. Sorting a tree list can change the hierarchical link relationships. If you do sort a tree list, you can recover from this operation by immediately refreshing.
+- To resolve an error, see [Resolve invalid links in an Excel tree list](resolve-excel-invalid-links-tree-list.md).
+- You can use the ![indent item in tree](media/bulk-modify-excel-indent-inline.png) or ![Outdent item in tree](media/bulk-modify-excel-outdent-inline.png) indent/outdent icons to demote or promote a work item within the tree hierarchy. Verify that the column to the left or right of the parent work item's title is a **Title** column. The header at the top of the column should read **Title** &lt;number&gt;, if it does not, add a tree level.
+- A parent-child linked work item can only have one parent. You can't add the same work item task to two backlog items. Instead, you need to define distinct work item tasks.
+- If you receive error TF208104, changes you made to the fields are published, but all changes you made to the link hierarchy are not published. At least one of the link relationships defined for the work item is locked by another process, such as Project Server integration. For more information, see [Addressing Error TF208104: Hierarchical Link Relationship Is Locked](resolve-excel-invalid-links-tree-list.md#tf208104).
+- When you move a work item, make sure that you select the entire table row.
 
 ## Work with different list types
 
@@ -383,18 +383,18 @@ If you're working with a non-query input list, you can add work items by choosin
 
 ::: moniker range="azure-devops"
 
-* [Bulk modify work items (web portal)](../../backlogs/bulk-modify-work-items.md)
-* [Azure DevOps Office integration issues](tfs-office-integration-issues.md)
-* [FAQs: Work in Excel connected to Azure Boards](faqs.md)
-* [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md)
-* [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca)
+- [Bulk modify work items (web portal)](../../backlogs/bulk-modify-work-items.md)
+- [Azure DevOps Office integration issues](tfs-office-integration-issues.md)
+- [FAQs: Work in Excel connected to Azure Boards](faqs.md)
+- [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md)
+- [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca)
   ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-* [Bulk modify work items (web portal)](../../backlogs/bulk-modify-work-items.md)
-* [Azure DevOps Office integration issues](tfs-office-integration-issues.md)
-* [FAQs: Work in Excel connected to Azure Boards](faqs.md)
-* [Create Excel reports from a work item query](../../../report/create-status-and-trend-excel-reports.md)
-* [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca)
+- [Bulk modify work items (web portal)](../../backlogs/bulk-modify-work-items.md)
+- [Azure DevOps Office integration issues](tfs-office-integration-issues.md)
+- [FAQs: Work in Excel connected to Azure Boards](faqs.md)
+- [Create Excel reports from a work item query](../../../report/create-status-and-trend-excel-reports.md)
+- [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca)
   ::: moniker-end

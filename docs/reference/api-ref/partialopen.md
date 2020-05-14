@@ -79,7 +79,7 @@ Opens this work item for modification by loading only the latest revision of thi
 
 <a data-toggle="collapse" href="#expando-agent-pools">C++ ▼</a>
 <div class="collapse" id="expando-queues">
-```public:  
+```public:
 void PartialOpen()```
 </div>
 
@@ -97,7 +97,7 @@ void PartialOpen()```
 
 <a data-toggle="collapse" href="#expando-agent-pools">VB ▼</a>
 <div class="collapse" id="expando-queues">
-```'Declaration  
+```'Declaration
 Public Sub PartialOpen```
 </div>
 
@@ -201,9 +201,9 @@ private static void UpdateWorkItemsUsingPartialOpen()
 
 ## .NET Framework Security
 
-* Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](https://msdn.microsoft.com/library/8skskf63%28v=vs.120%29.aspx).
+- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](https://msdn.microsoft.com/library/8skskf63%28v=vs.120%29.aspx).
 
 ## Related articles
 
-* [WorkItem Class](</previous-versions/visualstudio/visual-studio-2013/bb179831(v=vs.120)>)
-* [Microsoft.TeamFoundation.WorkItemTracking.Client Namespace](</previous-versions/visualstudio/visual-studio-2013/bb141853(v=vs.120)>)
+- [WorkItem Class](</previous-versions/visualstudio/visual-studio-2013/bb179831(v=vs.120)>)
+- [Microsoft.TeamFoundation.WorkItemTracking.Client Namespace](</previous-versions/visualstudio/visual-studio-2013/bb141853(v=vs.120)>)

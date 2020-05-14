@@ -18,10 +18,10 @@ Work item types (WITs) provide the foundation for all tracking, monitoring, and 
 
 When you customize a process template, you can make the following WIT customizations:
 
-* Add fields
-* Customize the workflow
-* Modify the work item form
-* Add or remove WITs
+- Add fields
+- Customize the workflow
+- Modify the work item form
+- Add or remove WITs
 
 You specify the type definitions for a process template for several work items as a task within the WorkItemTracking plug-in. This task is required because work item types support tracking and reporting work. You specify each type definition file to upload within the **taskXml** element. The plug-ins for test management, reports, and the portal depend on the successful upload of the definitions for WITs.
 
@@ -42,15 +42,15 @@ The following example shows the high-level syntax structure that defines a work 
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <WITD application="work item type editor" version="1.0">  
->     <WORKITEMTYPE name="Bug">  
->         <DESCRIPTION>Bug work items are used to track defects in the code.</DESCRIPTION>  
->         <GLOBALLISTS> . . . </GLOBALLISTS>  
->         <FIELDS> . . . </FIELDS>  
->         <WORKFLOW> . . . </WORKFLOW>  
->         <FORM> . . . </FORM>  
->     </WORKITEMTYPE>  
-> </WITD>  
+> <WITD application="work item type editor" version="1.0">
+>     <WORKITEMTYPE name="Bug">
+>         <DESCRIPTION>Bug work items are used to track defects in the code.</DESCRIPTION>
+>         <GLOBALLISTS> . . . </GLOBALLISTS>
+>         <FIELDS> . . . </FIELDS>
+>         <WORKFLOW> . . . </WORKFLOW>
+>         <FORM> . . . </FORM>
+>     </WORKITEMTYPE>
+> </WITD>
 > ```
 
 You can customize or create type definition files in the TypeDefinitions folder. For more information about how to define a type of work item, see [All WITD elements](../xml/all-witd-xml-elements-reference.md).
@@ -64,7 +64,7 @@ To upload a WIT definition, you specify the **WORKITEMTYPE** element. The filena
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\filename.xml"/>  
+> <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\filename.xml"/>
 > ```
 
 The following example shows how to specify a task that creates the following WITS: bug, issue, shared steps, task, test case, and user story. Because the definitions for several WITs contain filters for the **TestedBy** link type, the **LinkTypes** task must be completed before the **WITs** task can be completed.
@@ -72,26 +72,26 @@ The following example shows how to specify a task that creates the following WIT
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <task id="WITs" name="WorkItemType definitions" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work item types created">  
->       <dependencies>  
->       <dependency taskId="LinkTypes" />  
->       </dependencies>  
->       <taskXml>  
->       <WORKITEMTYPES>  
->        <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\Bug.xml" />  
->        <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\Issue.xml" />  
->        <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\CodeReviewRequest.xml" />  
->         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\CodeReviewResponse.xml" />  
->         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\Feature.xml" />  
->         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\FeedbackRequest.xml" />  
+> <task id="WITs" name="WorkItemType definitions" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work item types created">
+>       <dependencies>
+>       <dependency taskId="LinkTypes" />
+>       </dependencies>
+>       <taskXml>
+>       <WORKITEMTYPES>
+>        <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\Bug.xml" />
+>        <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\Issue.xml" />
+>        <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\CodeReviewRequest.xml" />
+>         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\CodeReviewResponse.xml" />
+>         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\Feature.xml" />
+>         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\FeedbackRequest.xml" />
 >         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\FeedbackResponse.xml" />
->         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\SharedStep.xml" />  
->        <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\Task.xml" />  
->        <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\TestCase.xml" />  
->        <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\UserStory.xml" />  
->       </WORKITEMTYPES>  
->       </taskXml>  
-> </task>  
+>         <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\SharedStep.xml" />
+>        <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\Task.xml" />
+>        <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\TestCase.xml" />
+>        <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\UserStory.xml" />
+>       </WORKITEMTYPES>
+>       </taskXml>
+> </task>
 > ```
 
 <a name="elements"></a>
@@ -110,8 +110,8 @@ The following table describes the elements that you use to upload the type defin
 
 ## Related articles
 
-* [All WITD elements](../xml/all-witd-xml-elements-reference.md)
-* [Modify a field or add a custom field](../add-modify-field.md)
-* [Add or modify a work item type](../add-modify-wit.md)
-* [Import, export, and manage work item types](../witadmin/witadmin-import-export-manage-wits.md)
-* [Define objects for tracking work items](define-objects-track-work-items-plug-in.md)
+- [All WITD elements](../xml/all-witd-xml-elements-reference.md)
+- [Modify a field or add a custom field](../add-modify-field.md)
+- [Add or modify a work item type](../add-modify-wit.md)
+- [Import, export, and manage work item types](../witadmin/witadmin-import-export-manage-wits.md)
+- [Define objects for tracking work items](define-objects-track-work-items-plug-in.md)

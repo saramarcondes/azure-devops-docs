@@ -38,8 +38,8 @@ Settings and document collections can be scoped to either the:
 
 The two primary functions for interacting with settings are getValue() and setValue():
 
-* `getValue()` takes a string key (and other options such as scope) and returns an IPromise. The resolution of this promise will contain a value for the provided key.
-* `setValue()` take a string key and a value (and other options such as scope) and returns an IPromise. The resolution this promise will contain the new value of the setting.
+- `getValue()` takes a string key (and other options such as scope) and returns an IPromise. The resolution of this promise will contain a value for the provided key.
+- `setValue()` take a string key and a value (and other options such as scope) and returns an IPromise. The resolution this promise will contain the new value of the setting.
 
 Here is an example of how to set a value:
 
@@ -88,15 +88,15 @@ For interacting with richer data beyond key-value pairs, you can use the concept
 
 The following document operations are available:
 
-* Get a document
-* Create a document
-* Set a document (create or update)
-* Update a document
-* Delete a document
+- Get a document
+- Create a document
+- Set a document (create or update)
+- Update a document
+- Delete a document
 
 There is also a single operation that can be performed on a collection:
 
-* Get all documents
+- Get all documents
 
 ### Get a document by ID
 
@@ -227,7 +227,7 @@ This call will return all documents within a scoped collection. If the collectio
 
 This call wraps the setDocument client method, passing it several pieces of information. As previously mentioned, settings are stored as documents internally, so a simple document is created on the fly, where the ID of the document, is the key that was provided in the setValue() method. There are two additional properties on the document. One is 'value', which contains value passed to the method. The other is 'revision', which is set to -1. The revision property will be discussed in more detail in the "Working with Documents" section, but in the context of settings, by passing revision: -1 in the document, we are indicating that we do not care about the versioning of this setting document.
 
-Because settings are stored as documents, we need to provide a collection name, indicating where to store the document. To keep things simple, when working with the setValue()/getValue() methods, the collection name will always be the special name '$settings'. The call above would issue a PUT Request at the following endpoint:
+Because settings are stored as documents, we need to provide a collection name, indicating where to store the document. To keep things simple, when working with the setValue()/getValue() methods, the collection name will always be the special name '\$settings'. The call above would issue a PUT Request at the following endpoint:
 
 ```httprequest
 GET _apis/ExtensionManagement/InstalledExtensions/{publisherName}/{extensionName}/Data/Scopes/User/Me/Collections/%24settings/Documents

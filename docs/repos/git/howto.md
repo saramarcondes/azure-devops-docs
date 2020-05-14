@@ -66,9 +66,9 @@ want you to accidentally lose your changes, so it prevents the checkout from hap
 
 ---
 
-* Abandoning the changes and return to the most recent commit. See [undoing changes in Git](undo.md) for instructions on how to roll back to the most recent commit.
-* Committing the changes. See [saving your work in Git with commits](commits.md).
-* [Stashing](howto.md#stash) your current work, saving the changes for later and cleaning up the workspace to the last commit.
+- Abandoning the changes and return to the most recent commit. See [undoing changes in Git](undo.md) for instructions on how to roll back to the most recent commit.
+- Committing the changes. See [saving your work in Git with commits](commits.md).
+- [Stashing](howto.md#stash) your current work, saving the changes for later and cleaning up the workspace to the last commit.
 
 ---
 

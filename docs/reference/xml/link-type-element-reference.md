@@ -28,8 +28,8 @@ You can customize an existing link type or create a link type to meet your proje
 
 You may want to modify or create a link type for one of the following reasons:
 
-* Change the link labels that are used to match your team's naming conventions.
-* Add a link type to track a particular relationship that is unique to your team's process.
+- Change the link labels that are used to match your team's naming conventions.
+- Add a link type to track a particular relationship that is unique to your team's process.
 
 The link type is specified in a type definition XML file that you import to a project collection. To customize or create a link type, use **witadmin importlinktype** to import the link type definition file to the project collection that hosts your project. With the **witadmin** command-line tool, you can deactivate, delete, export, import, list, and reactivate link types. See [Manage link types](../witadmin/manage-link-types.md).
 
@@ -44,9 +44,9 @@ You can define valid link types for use in your process based on the structure t
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <LinkTypes>  
->       <LinkType ReferenceName="LinkTypeName" ForwardName="ForwardName" ReverseName="ReverseName" Topology="TopologyType" />  
-> </LinkTypes>  
+> <LinkTypes>
+>       <LinkType ReferenceName="LinkTypeName" ForwardName="ForwardName" ReverseName="ReverseName" Topology="TopologyType" />
+> </LinkTypes>
 > ```
 
 The descriptions in the following table apply to the previous syntax:
@@ -66,11 +66,11 @@ Link directionality is determined by the assignments made to the **ForwardName**
 
 Each link type has a reference name and two optional friendly names, or name labels, which must be unique within the project collection. Each link type name must meet the following requirements:
 
-* Names can have up to 254 Unicode characters
-* Names must not be empty
-* Names cannot have leading or trailing white spaces
-* Names cannot contain backslash (\\) characters
-* Names cannot contain two consecutive white spaces.
+- Names can have up to 254 Unicode characters
+- Names must not be empty
+- Names cannot have leading or trailing white spaces
+- Names cannot contain backslash (\\) characters
+- Names cannot contain two consecutive white spaces.
 
 <a id="topology"></a>
 
@@ -111,7 +111,6 @@ The topology types described in the following table determine the restrictions p
 </tbody>
 </table>
 
-
 <a id="custom-link-type"></a>
 
 ## Create a custom link type
@@ -144,8 +143,8 @@ In addition to defining link types, you can customize the work item type definit
 
 ## Related articles
 
-* [Link type reference](../../boards/queries/link-type-reference.md)
-* [Link work items to track dependencies](../../boards/queries/link-work-items-support-traceability.md)
-* [Customizing your work tracking experience](../customize-work.md)
+- [Link type reference](../../boards/queries/link-type-reference.md)
+- [Link work items to track dependencies](../../boards/queries/link-work-items-support-traceability.md)
+- [Customizing your work tracking experience](../customize-work.md)
 
 To programmatically interact with link types, see [Artifact Link Types API](/rest/api/azure/devops/wit/artifact%20link%20types/list).

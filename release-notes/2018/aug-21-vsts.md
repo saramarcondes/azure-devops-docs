@@ -23,21 +23,21 @@ Read about the new features below and head over to VSTS to try them for yourself
 
 Wiki:
 
-* [Create table of contents for wiki pages](#create-table-of-contents-for-wiki-pages)
+- [Create table of contents for wiki pages](#create-table-of-contents-for-wiki-pages)
 
 Work:
 
-* [Ease customization by migrating projects to the Inheritance process model](#ease-customization-by-migrating-projects-to-the-inheritance-process-model)
-* [Chat about the latest status using the improved Microsoft Teams integration](#chat-about-the-latest-status-using-the-improved-microsoft-teams-integration)
+- [Ease customization by migrating projects to the Inheritance process model](#ease-customization-by-migrating-projects-to-the-inheritance-process-model)
+- [Chat about the latest status using the improved Microsoft Teams integration](#chat-about-the-latest-status-using-the-improved-microsoft-teams-integration)
 
 Code:
 
-* [Standardize pull request descriptions using templates](#standardize-pull-request-descriptions-using-templates)
+- [Standardize pull request descriptions using templates](#standardize-pull-request-descriptions-using-templates)
 
 Build and release:
 
-* [Perform additional testing using a pull request release trigger](#perform-additional-testing-using-a-pull-request-release-trigger)
-* [Deploy Go apps to Azure Kubernetes Service (AKS) using Azure DevOps Projects](#deploy-go-apps-to-azure-kubernetes-service-aks-using-azure-devops-projects)
+- [Perform additional testing using a pull request release trigger](#perform-additional-testing-using-a-pull-request-release-trigger)
+- [Deploy Go apps to Azure Kubernetes Service (AKS) using Azure DevOps Projects](#deploy-go-apps-to-azure-kubernetes-service-aks-using-azure-devops-projects)
 
 ## Wiki
 

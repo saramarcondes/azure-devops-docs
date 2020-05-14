@@ -16,12 +16,12 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Members
 
-* `codeCoverageFileUrl`: string.
+- `codeCoverageFileUrl`: string.
 
-* `configuration`: [BuildConfiguration](../../../TFS/TestManagement/Contracts/BuildConfiguration.md).
+- `configuration`: [BuildConfiguration](../../../TFS/TestManagement/Contracts/BuildConfiguration.md).
 
-* `lastError`: string.
+- `lastError`: string.
 
-* `modules`: [ModuleCoverage](../../../TFS/TestManagement/Contracts/ModuleCoverage.md)[].
+- `modules`: [ModuleCoverage](../../../TFS/TestManagement/Contracts/ModuleCoverage.md)[].
 
-* `state`: string.
+- `state`: string.

@@ -32,12 +32,12 @@ The **Layout** element is a required child element of the **FORM** element. For 
 >
 > ```XML
 > <Layout Target="ClientName" MinimumSize="(width,height)" Padding="(left, top, right, bottom)"
-> Margin="(left, top, right, bottom)" ControlSpacing="distance" LabelSpacing="distance" HideControlBorders="True | False" HideReadOnlyEmptyFields="True | False">  
->        <Group> . . . </Group>  
->        <Control> . . . </Control>  
->        <TabGroup> . . . </TabGroup>  
->        <Splitter> . . . </Splitter>  
-> </Layout >  
+> Margin="(left, top, right, bottom)" ControlSpacing="distance" LabelSpacing="distance" HideControlBorders="True | False" HideReadOnlyEmptyFields="True | False">
+>        <Group> . . . </Group>
+>        <Control> . . . </Control>
+>        <TabGroup> . . . </TabGroup>
+>        <Splitter> . . . </Splitter>
+> </Layout >
 > ```
 
 ## Attributes and elements
@@ -49,9 +49,9 @@ The following sections describe attributes, child elements, and parent elements.
 | Attribute                 | Description                                                                                                                                                                                                                                                                                         |
 | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `Target`                  | Optional `Layout` attribute.<br /> Specifies the name of the client to which the layout applies. The type is xs:string. Specify one of the following strings:<br /> - `WinForms`: Applies the form to Team Explorer and Team Explorer Everywhere.<br />- `Web`: Applies the form to the web portal. |
-| `MinimumSize`             | Optional `Layout` attribute.<br /> Specifies the minimum size in pixels for the form. The syntax is specified in (_width, height_). The attribute type is `SizeType`.<br />Pattern value: ^\\(\d+\\,\d+\\)$<br /> Pattern value example: (100,100)                                                  |
-| `Padding`                 | Optional `Layout` attribute.<br />Specifies the amount of space in pixels around the inside border of the form. The attribute type is `SizeType`.<br /> Pattern value: ^\\(\d+\\,\d+\\,\d+\\,\d+\\)$<br />Pattern value example: (2,0,2,0)                                                          |
-| `Margin`                  | Optional `Layout` attribute.<br />Specifies the amount of space in pixels around the outside border of the form. The attribute type is `SizeType`.<br /> Pattern value: ^\\(\d+\\,\d+\\,\d+\\,\d+\\)$<br /> Pattern value example: (2,0,2,0)                                                        |
+| `MinimumSize`             | Optional `Layout` attribute.<br /> Specifies the minimum size in pixels for the form. The syntax is specified in (_width, height_). The attribute type is `SizeType`.<br />Pattern value: ^\\(\d+\\,\d+\\)\$<br /> Pattern value example: (100,100)                                                 |
+| `Padding`                 | Optional `Layout` attribute.<br />Specifies the amount of space in pixels around the inside border of the form. The attribute type is `SizeType`.<br /> Pattern value: ^\\(\d+\\,\d+\\,\d+\\,\d+\\)\$<br />Pattern value example: (2,0,2,0)                                                         |
+| `Margin`                  | Optional `Layout` attribute.<br />Specifies the amount of space in pixels around the outside border of the form. The attribute type is `SizeType`.<br /> Pattern value: ^\\(\d+\\,\d+\\,\d+\\,\d+\\)\$<br /> Pattern value example: (2,0,2,0)                                                       |
 | `ControlSpacing`          | Optional `Layout` attribute.<br />Specifies the vertical offset of controls defined in the form.                                                                                                                                                                                                    |
 | `LabelSpacing`            | Optional `Layout` attribute.<br />Specifies the number of pixels between the label and the edit region of the control.                                                                                                                                                                              |
 | `HideControlBorders`      | Optional `Layout` attribute.<br />Specify a value of `True` to hide control borders, and `False` to display control borders.                                                                                                                                                                        |
@@ -81,40 +81,40 @@ The `Layout` element is a required child element of `FORM`. The `Layout` element
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <FORM>  
->    <Layout>  
->       <Group>  
->           <Column PercentWidth="36">  
->             <Group>  
->             <Control FieldName="System.Title" Type="FieldControl" Label="Title" LabelPosition="Left" />  
->             <Control FieldName="System.AreaPath" Type="WorkItemClassificationControl" Label="Area" LabelPosition="Left" />  
->             <Control FieldName="Microsoft.VSTS.Common.ProductUnit" Type="FieldControl" Label="Product Unit" LabelPosition="Left" />  
->             <Control FieldName="Microsoft.DevDiv.BusinessUnit" Type="FieldControl" Label="Business Unit" LabelPosition="Left" />  
->             </Group>  
->           </Column>  
->           <Column PercentWidth="33">  
->             <Group>  
->             <Control FieldName="Microsoft.DevDiv.SubTitle" Type="FieldControl" Label="Sub Title" LabelPosition="Left" />  
->             <Control FieldName="System.IterationPath" Type="WorkItemClassificationControl" Label="Iteration" LabelPosition="Left" />  
->             <Control FieldName="Microsoft.DevDiv.Other" Type="FieldControl" Label="Other" LabelPosition="Left" />  
->             </Group>  
->           </Column>  
->           <Column PercentWidth="31">  
->             <Group>  
->             <Control FieldName="Microsoft.DevDiv.Type" Type="FieldControl" Label="Type" LabelPosition="Left" />  
->             <Control FieldName="System.AssignedTo" Type="FieldControl" Label="Assigned To" LabelPosition="Left" />  
->             <Control FieldName="System.State" Type="FieldControl" Label="State" LabelPosition="Left" />  
->             </Group>  
->           </Column>  
->       </Group>  
-> . . .  
->    </Layout>  
-> </FORM>  
+> <FORM>
+>    <Layout>
+>       <Group>
+>           <Column PercentWidth="36">
+>             <Group>
+>             <Control FieldName="System.Title" Type="FieldControl" Label="Title" LabelPosition="Left" />
+>             <Control FieldName="System.AreaPath" Type="WorkItemClassificationControl" Label="Area" LabelPosition="Left" />
+>             <Control FieldName="Microsoft.VSTS.Common.ProductUnit" Type="FieldControl" Label="Product Unit" LabelPosition="Left" />
+>             <Control FieldName="Microsoft.DevDiv.BusinessUnit" Type="FieldControl" Label="Business Unit" LabelPosition="Left" />
+>             </Group>
+>           </Column>
+>           <Column PercentWidth="33">
+>             <Group>
+>             <Control FieldName="Microsoft.DevDiv.SubTitle" Type="FieldControl" Label="Sub Title" LabelPosition="Left" />
+>             <Control FieldName="System.IterationPath" Type="WorkItemClassificationControl" Label="Iteration" LabelPosition="Left" />
+>             <Control FieldName="Microsoft.DevDiv.Other" Type="FieldControl" Label="Other" LabelPosition="Left" />
+>             </Group>
+>           </Column>
+>           <Column PercentWidth="31">
+>             <Group>
+>             <Control FieldName="Microsoft.DevDiv.Type" Type="FieldControl" Label="Type" LabelPosition="Left" />
+>             <Control FieldName="System.AssignedTo" Type="FieldControl" Label="Assigned To" LabelPosition="Left" />
+>             <Control FieldName="System.State" Type="FieldControl" Label="State" LabelPosition="Left" />
+>             </Group>
+>           </Column>
+>       </Group>
+> . . .
+>    </Layout>
+> </FORM>
 > ```
 
 ## Related articles
 
-* [Control](control-xml-element-reference.md)
-* [Specify work item form controls](specify-work-item-form-controls.md)
-* [All FORM elements](all-form-xml-elements-reference.md)
-* [Design the work item form](design-work-item-form.md)
+- [Control](control-xml-element-reference.md)
+- [Specify work item form controls](specify-work-item-form-controls.md)
+- [All FORM elements](all-form-xml-elements-reference.md)
+- [Design the work item form](design-work-item-form.md)

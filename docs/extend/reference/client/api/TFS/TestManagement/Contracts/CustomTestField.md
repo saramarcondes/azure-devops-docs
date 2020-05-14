@@ -16,6 +16,6 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Members
 
-* `fieldName`: string.
+- `fieldName`: string.
 
-* `value`: any.
+- `value`: any.

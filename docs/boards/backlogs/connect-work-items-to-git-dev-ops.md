@@ -19,13 +19,13 @@ ms.date: 12/04/2018
 One of the ways your team can drive their development and stay in sync is to link your work items to the objects created during development, such as branches, commits, pull requests, and builds. You can begin that linking by creating a branch from one or more work items. Later, you can create pull requests, quickly open commits, and maintain a record of development operations performed to complete specific work.
 
 <!---
-Review this article to learn:  
+Review this article to learn:
 
 >[!div class="checklist"]
 > * How to create a new branch or pull request from a work item
-> * Complete the pull request  
-> * Perform a squash merge  
-> * Create a branch for several work items  
+> * Complete the pull request
+> * Perform a squash merge
+> * Create a branch for several work items
 > * Link a work item to existing development and build objects
 -->
 
@@ -38,7 +38,7 @@ Review this article to learn:
 
 The Development section records all Git development processes that support completion of the work item. This section can show your team information needed to take the next development step and minimize navigational steps to accomplish common development tasks. It also supports traceability, providing visibility into all the branches, commits, pull requests, and builds related to the work item.
 
-<img src="media/drive-git-development-dev-section.png" alt="Work item form, Development section" style="border: 1px solid #C3C3C3;" />  
+<img src="media/drive-git-development-dev-section.png" alt="Work item form, Development section" style="border: 1px solid #C3C3C3;" />
 
 ::: moniker range="tfs-2017"
 
@@ -67,7 +67,7 @@ Consider creating a new branch when there are no linked code artifacts. If there
 
     Name the branch and select the repository on which it's based.
 
-    <img src="media/git-dev-create-branch.png" alt="Create a branch dialog box" style="border: 1px solid #C3C3C3;" />  
+    <img src="media/git-dev-create-branch.png" alt="Create a branch dialog box" style="border: 1px solid #C3C3C3;" />
 
     Branches you create are automatically linked to the work item.
 
@@ -96,7 +96,7 @@ Consider creating a new branch when there are no linked code artifacts. If there
 
 5.  Your view will switch to **Code**, Pull Requests page. Complete creating the pull request as shown.
 
-    <img src="media/git-dev-create-pull-request.png" alt="Pull Request page, Create pull request" style="border: 1px solid #C3C3C3;" />  
+    <img src="media/git-dev-create-pull-request.png" alt="Pull Request page, Create pull request" style="border: 1px solid #C3C3C3;" />
 
     > [!NOTE]  
     > Once you've created a pull request, you can't create a new pull request for the same branch until you complete the previous pull request.
@@ -157,20 +157,20 @@ Learn more about tracking work with work items and developing with Git from thes
 
 ::: moniker range="azure-devops"
 
-* [Add work items](add-work-items.md)
-* [Git overview](../../repos/git/index.yml)
-* [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md)
-* [TFVC overview](../../repos/tfvc/overview.md)
-* [Create your backlog](create-your-backlog.md)
+- [Add work items](add-work-items.md)
+- [Git overview](../../repos/git/index.yml)
+- [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md)
+- [TFVC overview](../../repos/tfvc/overview.md)
+- [Create your backlog](create-your-backlog.md)
 
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
 
-* [Add work items](add-work-items.md)
-* [Git overview](../../repos/git/index.yml)
-* [TFVC overview](../../repos/tfvc/overview.md)
-* [Create your backlog](create-your-backlog.md)
+- [Add work items](add-work-items.md)
+- [Git overview](../../repos/git/index.yml)
+- [TFVC overview](../../repos/tfvc/overview.md)
+- [Create your backlog](create-your-backlog.md)
 
 ::: moniker-end
 
@@ -180,7 +180,7 @@ Keep in mind that the Development section only appears within the web portal wor
 
 With Git commits, any work items that have been linked to a commit will be listed under the Associated work items in the build summary page.
 
-<img src="media/developer-associated-work-items-build.png" alt="Work item form, Development section" style="border: 1px solid #C3C3C3;" />  
+<img src="media/developer-associated-work-items-build.png" alt="Work item form, Development section" style="border: 1px solid #C3C3C3;" />
 
 <!--- Add info about option to set build linking; link to release notes if needed -->
 
@@ -188,9 +188,9 @@ With Git commits, any work items that have been linked to a commit will be liste
 
 Links shown in this section appear as a result of these actions:
 
-* Creating a branch, commit, or pull request from the work item
-* Specifying the work item ID during a commit, pull request, or other supported Git or TFVC operation
-* Specifically linking the work item from the Development section or ![Links tab icon](media/icon-links-tab-wi.png) Links tab to a source code branch, build, or other supported Git or TFVC operation.
+- Creating a branch, commit, or pull request from the work item
+- Specifying the work item ID during a commit, pull request, or other supported Git or TFVC operation
+- Specifically linking the work item from the Development section or ![Links tab icon](media/icon-links-tab-wi.png) Links tab to a source code branch, build, or other supported Git or TFVC operation.
 
 Hovering over any entry listed under the Development section activates the hyperlink to the associated object.
 

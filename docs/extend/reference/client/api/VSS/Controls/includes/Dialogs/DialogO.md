@@ -1,10 +1,10 @@
 [!INCLUDE [styleoverrides](../../../../_data/style-overrides.md)]
 
-* [setTitle()](#method_setTitle)
-* [getTitle()](#method_getTitle)
-* [getDialogResult()](#method_getDialogResult)
-* [setDialogResult()](#method_setDialogResult)
-* [close()](#method_close)
+- [setTitle()](#method_setTitle)
+- [getTitle()](#method_getTitle)
+- [getDialogResult()](#method_getDialogResult)
+- [setDialogResult()](#method_setDialogResult)
+- [close()](#method_close)
 
 <a name="method_setTitle"></a>
 
@@ -18,7 +18,7 @@ void
 
 #### Parameters
 
-* `title`: string. New title value.
+- `title`: string. New title value.
 
 <a name="method_getTitle"></a>
 
@@ -52,7 +52,7 @@ void
 
 #### Parameters
 
-* `dialogResult`: any. Result object used when the ok button is selected.
+- `dialogResult`: any. Result object used when the ok button is selected.
 
 <a name="method_close"></a>
 

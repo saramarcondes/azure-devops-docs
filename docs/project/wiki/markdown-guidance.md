@@ -28,24 +28,24 @@ You can provide guidance in the following areas using Markdown:
 
 ::: moniker range=">= azure-devops-2019"
 
-* [Project wiki](add-edit-wiki.md)
-* [Publish code as wiki](publish-repo-to-wiki.md)
-* [Markdown widget added to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)
-* [Project page or Welcome pages](../../organizations/projects/project-vision-status.md)
-* [Repository README files](../../repos/git/create-a-readme.md)
-* [Pull request comments](../../repos/git/pull-requests.md)
-* [Definition of Done (Kanban board)](../../boards/boards/definition-of-done.md)
+- [Project wiki](add-edit-wiki.md)
+- [Publish code as wiki](publish-repo-to-wiki.md)
+- [Markdown widget added to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)
+- [Project page or Welcome pages](../../organizations/projects/project-vision-status.md)
+- [Repository README files](../../repos/git/create-a-readme.md)
+- [Pull request comments](../../repos/git/pull-requests.md)
+- [Definition of Done (Kanban board)](../../boards/boards/definition-of-done.md)
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 
-* [Project wiki](add-edit-wiki.md)
-* [Markdown widget added to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)
-* [Project page or Welcome pages](../../organizations/projects/project-vision-status.md)
-* [Repository README files](../../repos/git/create-a-readme.md)
-* [Pull request comments](../../repos/git/pull-requests.md)
-* [Definition of Done (Kanban board)](../../boards/boards/definition-of-done.md)
+- [Project wiki](add-edit-wiki.md)
+- [Markdown widget added to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)
+- [Project page or Welcome pages](../../organizations/projects/project-vision-status.md)
+- [Repository README files](../../repos/git/create-a-readme.md)
+- [Pull request comments](../../repos/git/pull-requests.md)
+- [Definition of Done (Kanban board)](../../boards/boards/definition-of-done.md)
 
 > [!NOTE]
 > Rich Markdown rendering in code repositories is supported for TFS 2018.2 and later versions. You can create rich README.md files in the code repositories. The Markdown rendering of the MD files in code repositories supports HTML tags, block quotes, emojis, image resizing, and mathematical formulas. There is parity in Markdown rendering in Wiki and MD files in code.
@@ -54,11 +54,11 @@ You can provide guidance in the following areas using Markdown:
 
 ::: moniker range="tfs-2017"
 
-* [Markdown widget added to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)
-* [Project page or Welcome pages](../../organizations/projects/project-vision-status.md)
-* [Repository README files](../../repos/git/create-a-readme.md)
-* [Pull request comments](../../repos/git/pull-requests.md)
-* [Definition of Done (Kanban board)](../../boards/boards/definition-of-done.md)
+- [Markdown widget added to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)
+- [Project page or Welcome pages](../../organizations/projects/project-vision-status.md)
+- [Repository README files](../../repos/git/create-a-readme.md)
+- [Pull request comments](../../repos/git/pull-requests.md)
+- [Definition of Done (Kanban board)](../../boards/boards/definition-of-done.md)
 
 > [!NOTE]
 > With TFS 2017.1, welcome pages, the Markdown widget on team dashboards, and the Definition of Done on Kanban boards no longer supports file links in their Markdown. As a workaround, you can include your file link as text in the Markdown.
@@ -67,10 +67,10 @@ You can provide guidance in the following areas using Markdown:
 
 ::: moniker range="tfs-2015"
 
-* [Markdown widget added to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)
-* [Project page or Welcome pages](../../organizations/projects/project-vision-status.md)
-* [Repository README files](../../repos/git/create-a-readme.md)
-* [Definition of Done (Kanban board)](../../boards/boards/definition-of-done.md)
+- [Markdown widget added to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)
+- [Project page or Welcome pages](../../organizations/projects/project-vision-status.md)
+- [Repository README files](../../repos/git/create-a-readme.md)
+- [Definition of Done (Kanban board)](../../boards/boards/definition-of-done.md)
 
 ::: moniker-end
 
@@ -205,9 +205,9 @@ below
 
 You can emphasize text by applying bold, italics, or strikethrough to characters:
 
-* To apply italics: surround the text with an asterisk `*` or underscore `_`
-* To apply bold: surround the text with double asterisks `**`.
-* To apply strikethrough: surround the text with double tilde characters `~~`.
+- To apply italics: surround the text with an asterisk `*` or underscore `_`
+- To apply bold: surround the text with double asterisks `**`.
+- To apply strikethrough: surround the text with double tilde characters `~~`.
 
 Combine these elements to apply emphasis to text.
 
@@ -279,7 +279,7 @@ To indicate a span of code, wrap it with three backtick quotes (<code>&#96;&#96;
 <pre>&#96;&#96;&#96;
 sudo npm install vsoagent-installer -g  
 &#96;&#96;&#96;
-</pre>  
+</pre>
 
 <br/>
 
@@ -350,13 +350,13 @@ Console.WriteLine("Hello, World!");
 Organize structured data with tables. Tables are especially useful for describing function parameters, object methods, and other data that has
 a clear name to description mapping. You can format tables in pull requests, wiki, and Markdown files such as README files and Markdown widgets.
 
-* Place each table row on its own line
-* Separate table cells using the pipe character `|`
-* The first two lines of a table set the column headers and the alignment of elements in the table
-* Use colons (`:`) when dividing the header and body of tables to specify column alignment (left, center, right)
-* To start a new line, use the HTML break tag (`<br/>`) (Works within a Wiki but not elsewhere)
-* Make sure to end each row with a CR or LF.
-* A blank space is required before and after work item or pull request (PR) mentions inside a table cell.
+- Place each table row on its own line
+- Separate table cells using the pipe character `|`
+- The first two lines of a table set the column headers and the alignment of elements in the table
+- Use colons (`:`) when dividing the header and body of tables to specify column alignment (left, center, right)
+- To start a new line, use the HTML break tag (`<br/>`) (Works within a Wiki but not elsewhere)
+- Make sure to end each row with a CR or LF.
+- A blank space is required before and after work item or pull request (PR) mentions inside a table cell.
 
 **Example:**
 
@@ -410,9 +410,9 @@ Ordered lists start with a number followed by a period for each list item. Unord
 
 **Result:**
 
-* Item 1
-* Item 2
-* Item 3
+- Item 1
+- Item 2
+- Item 3
 
 ### Nested lists
 
@@ -432,13 +432,13 @@ Ordered lists start with a number followed by a period for each list item. Unord
 **Result:**
 
 1.  First item.
-    * Item 1
-    * Item 2
-    * Item 3
+    - Item 1
+    - Item 2
+    - Item 3
 2.  Second item.
-    * Nested item 1
-    * Nested item 2
-    * Nested item 3
+    - Nested item 1
+    - Nested item 2
+    - Nested item 3
 
 <a id="link-work-items" />
 
@@ -460,10 +460,10 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 
 **Supported links for Welcome pages:**
 
-* Relative path: `[text to display](/target.md)`
-* Absolute path in Git: `[text to display](/folder/target.md)`
-* Absolute path in TFVC: `[text to display]($/project/folder/target.md)`
-* URL: `[text to display](http://address.com)`
+- Relative path: `[text to display](/target.md)`
+- Absolute path in Git: `[text to display](/folder/target.md)`
+- Absolute path in TFVC: `[text to display]($/project/folder/target.md)`
+- URL: `[text to display](http://address.com)`
 
 **Supported links for Markdown widget:**
 
@@ -501,23 +501,23 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 
 Links to source control files are interpreted differently depending on whether you specify them in a Welcome page or a Markdown widget. The system interprets relative links as follows:
 
-* **Welcome page:** relative to the root of the source control repository in which the welcome page exists
-* **Markdown widget:** relative to the team project collection URL base
+- **Welcome page:** relative to the root of the source control repository in which the welcome page exists
+- **Markdown widget:** relative to the team project collection URL base
 
 For example:
 
-| Welcome page                                  | Markdown widget equivalent                                                                                          |
-| --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| /BuildTemplates/AzureContinuousDeploy.11.xaml | /DefaultCollection/Fabrikam Fiber/\_versionControl#path=$/Tfvc Welcome/BuildTemplates/AzureContinuousDeploy.11.xaml |
-| ./page-2.md                                   | /DefaultCollection/Fabrikam Fiber/\_versionControl#path=$/Tfvc Welcome/page-2.md                                    |
+| Welcome page                                  | Markdown widget equivalent                                                                                           |
+| --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| /BuildTemplates/AzureContinuousDeploy.11.xaml | /DefaultCollection/Fabrikam Fiber/\_versionControl#path=\$/Tfvc Welcome/BuildTemplates/AzureContinuousDeploy.11.xaml |
+| ./page-2.md                                   | /DefaultCollection/Fabrikam Fiber/\_versionControl#path=\$/Tfvc Welcome/page-2.md                                    |
 
 ### Anchor links
 
 Within Markdown files, anchor IDs are assigned to all headings when rendered as HTML. The ID is the heading text, with the spaces replaced by dashes (-) and all lower case. In general, the following conventions apply:
 
-* Punctuation marks and leading white spaces within a file name are ignored
-* Upper case letters are converted to lower
-* Spaces between letters are converted to dashes (-).
+- Punctuation marks and leading white spaces within a file name are ignored
+- Upper case letters are converted to lower
+- Spaces between letters are converted to dashes (-).
 
 **Example:**
 
@@ -559,9 +559,9 @@ In wiki, you can also reference heading in another page:
 
 To highlight issues or make things more interesting, you can add images and animated GIFs to the following in your pull requests:
 
-* Comments
-* Markdown files
-* Wiki pages
+- Comments
+- Markdown files
+- Wiki pages
 
 Use the following syntax to add an image: <div id="do_not_render"><pre>&#33;&#91;Text](URL)</pre></div> The text in the brackets describes the image being linked and the URL points to the image location.
 
@@ -581,10 +581,10 @@ Use the following syntax to add an image: <div id="do_not_render"><pre>&#33;&#91
 
 The path to the image file can be a relative path or the absolute path in Git or TFVC, just like the path to another Markdown file in a link.
 
-* Relative path: `![Image alt text](./image.png)`
-* Absolute path in Git: `![Image alt text](/media/markdown-guidance/image.png)`
-* Absolute path in TFVC: `![Image alt text]($/project/folder/media/markdown-guidance/image.png)`
-* Resize image: `![Image alt text]($/project/folder/media/markdown-guidance/image.png =WIDTHxHEIGHT)`
+- Relative path: `![Image alt text](./image.png)`
+- Absolute path in Git: `![Image alt text](/media/markdown-guidance/image.png)`
+- Absolute path in TFVC: `![Image alt text]($/project/folder/media/markdown-guidance/image.png)`
+- Resize image: `![Image alt text]($/project/folder/media/markdown-guidance/image.png =WIDTHxHEIGHT)`
 
 ::: moniker-end
 
@@ -798,12 +798,12 @@ Attachments support the following file formats.
 
 Both inline and block [KaTeX](https://khan.github.io/KaTeX/function-support.html) notation is supported in wiki pages and pull requests. The following supported elements are included:
 
-* Symbols
-* Greek letters
-* Mathematical operators
-* Powers and indices
-* Fractions and binomials
-* Other KaTeX supported elements
+- Symbols
+- Greek letters
+- Mathematical operators
+- Powers and indices
+- Fractions and binomials
+- Other KaTeX supported elements
 
 To include mathematical notation, surround the mathematical notation with a `$` sign, for inline, and `$$` for block, as shown in the following examples:
 
@@ -823,7 +823,7 @@ To include mathematical notation, surround the mathematical notation with a `$` 
 ```KaTeX
 $
 \alpha, \beta, \gamma, \delta, \epsilon, \zeta, \eta, \theta, \kappa, \lambda, \mu, \nu, \omicron, \pi, \rho, \sigma, \tau, \upsilon, \phi, ...
-$  
+$
 
 
 $\Gamma,  \Delta,  \Theta, \Lambda, \Xi, \Pi, \Sigma, \Upsilon, \Phi, \Psi, \Omega$
@@ -870,9 +870,9 @@ $$
 
 ## Related articles
 
-* [Project page or Welcome pages](../../organizations/projects/project-vision-status.md)
-* [README files](../../repos/git/create-a-readme.md)
-* [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md)
-* [Dashboards](../../report/dashboards/dashboards.md)
-* [Widget catalog](../../report/dashboards/widget-catalog.md)
-* [Add and edit Wiki pages](add-edit-wiki.md)
+- [Project page or Welcome pages](../../organizations/projects/project-vision-status.md)
+- [README files](../../repos/git/create-a-readme.md)
+- [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md)
+- [Dashboards](../../report/dashboards/dashboards.md)
+- [Widget catalog](../../report/dashboards/widget-catalog.md)
+- [Add and edit Wiki pages](add-edit-wiki.md)

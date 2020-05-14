@@ -26,7 +26,7 @@ In the plug-in file, you specify one or more tasks and their dependencies. In ge
 
 ## Plug-in name and location
 
-The names of the file, the folder, and the plug-in for the default process templates are as follows:  
+The names of the file, the folder, and the plug-in for the default process templates are as follows:
 
 **File name**: WorkItems.xml  
 **Folder name**: WorkItem Tracking folder
@@ -37,11 +37,11 @@ The names of the file, the folder, and the plug-in for the default process templ
 
 For specific information about each type of object that you can define, see one of the following topics:
 
-* [Add type definitions for work items](add-wit-definitions-process-template.md)
-* [Add link type definitions](add-link-type-definitions-to-a-process-template.md)
-* [Add type definitions for work item categories](add-type-wit-category-definitions-process-template.md)
-* [Add work item queries](add-work-item-queries-process-template.md)
-* [Add work items](add-work-item-instance-process-template.md)
+- [Add type definitions for work items](add-wit-definitions-process-template.md)
+- [Add link type definitions](add-link-type-definitions-to-a-process-template.md)
+- [Add type definitions for work item categories](add-type-wit-category-definitions-process-template.md)
+- [Add work item queries](add-work-item-queries-process-template.md)
+- [Add work items](add-work-item-instance-process-template.md)
 
 <a name="syntax"></a>
 
@@ -56,52 +56,52 @@ For a description of each element, see [Element reference](#elements) later in t
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <?xml version="1.0" encoding="utf-8"?>  
-> <tasks>  
->   <task id="LinkTypes" name="LinkType definitions" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work item link types created">  
->     <taskXml>  
->       <LINKTYPES>  
->         <LINKTYPE />  
+> <?xml version="1.0" encoding="utf-8"?>
+> <tasks>
+>   <task id="LinkTypes" name="LinkType definitions" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work item link types created">
+>     <taskXml>
+>       <LINKTYPES>
+>         <LINKTYPE />
 >       . . .
->       </LINKTYPES>  
->     </taskXml>  
->   </task>  
->   <task id="WITs" name="WorkItemType definitions" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work item types created">  
->     <dependencies>  
->       <dependency taskId="LinkTypes" />  
->     </dependencies>  
->     <taskXml>  
->       <WORKITEMTYPES>  
->         <WORKITEMTYPE />  
+>       </LINKTYPES>
+>     </taskXml>
+>   </task>
+>   <task id="WITs" name="WorkItemType definitions" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work item types created">
+>     <dependencies>
+>       <dependency taskId="LinkTypes" />
+>     </dependencies>
+>     <taskXml>
+>       <WORKITEMTYPES>
+>         <WORKITEMTYPE />
 >       . . .
->       </WORKITEMTYPES>  
->     </taskXml>  
->   </task>  
->   <task id="Queries" name="Stored Query Definitions" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work item queries uploaded">  
->     <dependencies>  
->       <dependency taskId="WITs" />  
->     </dependencies>  
->     <taskXml>  
->       <QUERIES>  
->         <Permission />  
+>       </WORKITEMTYPES>
+>     </taskXml>
+>   </task>
+>   <task id="Queries" name="Stored Query Definitions" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work item queries uploaded">
+>     <dependencies>
+>       <dependency taskId="WITs" />
+>     </dependencies>
+>     <taskXml>
+>       <QUERIES>
+>         <Permission />
 >       . . .
->         <QueryFolder >  
->           <Query />  
+>         <QueryFolder >
+>           <Query />
 >       . . .
->         </QueryFolder>  
+>         </QueryFolder>
 >       . . .
->       </QUERIES>  
->     </taskXml>  
->   </task>  
->   <task id="Categories" name="Categories definitions" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work item type categories created">  
->     <dependencies>  
->       <dependency taskId="WITs" />  
->     </dependencies>  
->     <taskXml>  
->       <CATEGORIES fileName="WorkItem Tracking\Categories.xml" />  
->     </taskXml>  
->   </task>  
-> </tasks>  
+>       </QUERIES>
+>     </taskXml>
+>   </task>
+>   <task id="Categories" name="Categories definitions" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work item type categories created">
+>     <dependencies>
+>       <dependency taskId="WITs" />
+>     </dependencies>
+>     <taskXml>
+>       <CATEGORIES fileName="WorkItem Tracking\Categories.xml" />
+>     </taskXml>
+>   </task>
+> </tasks>
 > ```
 
 ## <a name="elements"></a> Element reference

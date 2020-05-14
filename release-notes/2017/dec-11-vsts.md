@@ -16,10 +16,10 @@ In the **Sprint 127 Update** of Visual Studio Team Services (VSTS), you’ll fin
 
 Other key feature highlights include:
 
-* [Generate YAML templates from existing build definitions](#generate-yaml-templates-from-existing-build-definitions) - Generate the corresponding YAML build logic from builds in the build definition editor.
-* [Enhancements to multi-phase builds](#enhancements-to-multi-phase-builds) - Different agents, parallel tests, and conditional execution for better builds.
-* [Skip scheduled builds if nothing has changed in the repo](#skip-scheduled-builds-if-nothing-has-changed-in-the-repo) - Conserve resources and avoid noise of extra builds.
-* [Cloud Solution Provider (CSP) purchasing now generally available](#cloud-solution-provider-purchasing-now-generally-available) - Enable the deeper engagement that comes by working through the CSP program.
+- [Generate YAML templates from existing build definitions](#generate-yaml-templates-from-existing-build-definitions) - Generate the corresponding YAML build logic from builds in the build definition editor.
+- [Enhancements to multi-phase builds](#enhancements-to-multi-phase-builds) - Different agents, parallel tests, and conditional execution for better builds.
+- [Skip scheduled builds if nothing has changed in the repo](#skip-scheduled-builds-if-nothing-has-changed-in-the-repo) - Conserve resources and avoid noise of extra builds.
+- [Cloud Solution Provider (CSP) purchasing now generally available](#cloud-solution-provider-purchasing-now-generally-available) - Enable the deeper engagement that comes by working through the CSP program.
 
 ## What’s new in VSTS
 
@@ -61,16 +61,16 @@ This can also be used as a good way to learn YAML quickly. You can create a new 
 
 A few weeks ago, we added phases to build definitions. You’ve been able to use phases to organize your build steps and to target different agents using different demands for each phase. In this Update, we’ve added several capabilities to build phases so that you can now:
 
-* Specify a different agent queue for each phase. This means you can, for example:
+- Specify a different agent queue for each phase. This means you can, for example:
 
-  * Run one phase of a build on a macOS agent and another phase on a Windows agent. To see a cool example of how useful this can be, see this Connect(); 2017 video: [CI/CD DevOps Pipeline for mobile apps and services](https://channel9.msdn.com/events/Connect/2017/B102).
-  * Run build steps on a build agent pool and test steps on a test agent pool.
+  - Run one phase of a build on a macOS agent and another phase on a Windows agent. To see a cool example of how useful this can be, see this Connect(); 2017 video: [CI/CD DevOps Pipeline for mobile apps and services](https://channel9.msdn.com/events/Connect/2017/B102).
+  - Run build steps on a build agent pool and test steps on a test agent pool.
 
-* Run tests faster by running them in parallel. Any phase that has parallelism configured as “Multi-agent” and contains a “VSTest” task will now automatically parallelize test execution across the configured agent count.
+- Run tests faster by running them in parallel. Any phase that has parallelism configured as “Multi-agent” and contains a “VSTest” task will now automatically parallelize test execution across the configured agent count.
 
-* Permit or deny scripts to access the OAuth token each phase. This means, for example, you can now allow scripts running in your build phase to communicate with VSTS over REST APIs, and in the same build definition block the scripts running in your test phase.
+- Permit or deny scripts to access the OAuth token each phase. This means, for example, you can now allow scripts running in your build phase to communicate with VSTS over REST APIs, and in the same build definition block the scripts running in your test phase.
 
-* Run a phase only under specific conditions. For example, you can configure a phase to run only when previous phases succeed, or only when you are building code in the master branch.
+- Run a phase only under specific conditions. For example, you can configure a phase to run only when previous phases succeed, or only when you are building code in the master branch.
 
 To learn more, see [Phases in Build and Release Management](/azure/devops/pipelines/process/phases).
 
@@ -149,13 +149,13 @@ When running automated tests in the CI/CD pipeline using Test Plan/Test Suite or
 To use this, you need Visual Studio 2017.5 or higher.
 This includes:
 
-* \_\_Tfs_TestPlanId\_\_
-* \_\_Tfs_TestCaseId\_\_
-* \_\_Tfs_TestPointId\_\_
-* \_\_Tfs_TestConfigurationId\_\_
-* \_\_Tfs_TestConfigurationName\_\_
-* \_\_Tfs_TfsServerCollectionUrl\_\_
-* \_\_Tfs_TeamProject\_\_
+- \_\_Tfs_TestPlanId\_\_
+- \_\_Tfs_TestCaseId\_\_
+- \_\_Tfs_TestPointId\_\_
+- \_\_Tfs_TestConfigurationId\_\_
+- \_\_Tfs_TestConfigurationName\_\_
+- \_\_Tfs_TfsServerCollectionUrl\_\_
+- \_\_Tfs_TeamProject\_\_
 
 ### Automated tests that use TestCase as a data source can now be run using the VSTest task
 
@@ -177,20 +177,20 @@ We have enabled tabs on extension description pages in the [Visual Studio Market
 
 We have also revamped how you acquire (or purchase) VSTS extensions and Visual Studio Subscriptions from the Marketplace.
 
-* The install/purchase wizard now better adjusts the actions available to you as you progress - login, select a VSTS account, etc. We believe this will make acquiring extensions easier and more intuitive.
+- The install/purchase wizard now better adjusts the actions available to you as you progress - login, select a VSTS account, etc. We believe this will make acquiring extensions easier and more intuitive.
 
 > [!div class="mx-imgBorder"] > ![Already installed](media/127_02.png)
 
-* All relevant information required to change paid quantity and its billing implication is presented within the flow to make an informed purchase.
+- All relevant information required to change paid quantity and its billing implication is presented within the flow to make an informed purchase.
 
 > [!div class="mx-imgBorder"] > ![User summary](media/127_03.png)
 
-* A progress bar displays acquisition progress and allows navigation across steps.
-* We’ve made it easier for people who don’t have permission to purchase by submitting a request that will go to the account administrator.
+- A progress bar displays acquisition progress and allows navigation across steps.
+- We’ve made it easier for people who don’t have permission to purchase by submitting a request that will go to the account administrator.
 
 > [!div class="mx-imgBorder"] > ![Request](media/127_10.png)
 
-* An Account Administrator can now change the Azure subscription associated with a VSTS account when they do not have required permissions on the existing associated Azure subscription.
+- An Account Administrator can now change the Azure subscription associated with a VSTS account when they do not have required permissions on the existing associated Azure subscription.
 
 ### Refreshed publisher management portal
 

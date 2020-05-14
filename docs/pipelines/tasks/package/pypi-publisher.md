@@ -38,10 +38,10 @@ A generic service connection for a PyPI index.
 > [!TIP]
 > To configure a new generic service connection, go to Settings -> Services -> New service connection -> Generic.
 >
-> * **Connection Name**: A friendly connection name of your choice
-> * **Server URL**: PyPI package server (for example: https://upload.pypi.org/legacy/)
-> * **User name**: username for your PyPI account
-> * **Password/Token Key**: password for your PyPI account
+> - **Connection Name**: A friendly connection name of your choice
+> - **Server URL**: PyPI package server (for example: https://upload.pypi.org/legacy/)
+> - **User name**: username for your PyPI account
+> - **Password/Token Key**: password for your PyPI account
 
 ::: moniker range="> tfs-2018"
 

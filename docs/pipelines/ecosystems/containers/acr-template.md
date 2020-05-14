@@ -63,9 +63,9 @@ When the **Configure** tab appears, select **Docker**.
 
     As Azure Pipelines creates your pipeline, it:
 
-    * Creates a _Docker registry service connection_ to enable your pipeline to push images into your container registry.
+    - Creates a _Docker registry service connection_ to enable your pipeline to push images into your container registry.
 
-    * Generates an _azure-pipelines.yml_ file, which defines your pipeline.
+    - Generates an _azure-pipelines.yml_ file, which defines your pipeline.
 
 4.  When your new pipeline appears, take a look at the YAML to see what it does (for more information, see [How we build your pipeline](#how) below). When you're ready, select **Save and run**.
 
@@ -86,7 +86,7 @@ The build stage uses the _Docker task_ to build and push the image to the contai
 ```YAML
 - stage: Build
   displayName: Build and push stage
-  jobs:  
+  jobs:
   - job: Build
     displayName: Build job
     pool:
@@ -109,13 +109,13 @@ The build stage uses the _Docker task_ to build and push the image to the contai
 
 We invite you to learn more about:
 
-* The services:
-  * [Azure Container Registry](https://azure.microsoft.com/services/container-registry/)
-* The template used to create your pipeline: [docker-container](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/docker-container.yml)
-* The method your pipeline uses to connect to the service: [Docker registry service connections](../../library/service-endpoints.md#sep-docreg)
-* Some of the tasks used in your pipeline, and how you can customize them:
-  * [Docker task](../../tasks/build/docker.md)
-  * [Kubernetes manifest task](../../tasks/deploy/kubernetes-manifest.md)
-* Some of the key concepts for this kind of pipeline:
-  * [Jobs](../../process/phases.md)
-  * [Docker registry service connections](../../library/service-endpoints.md#sep-docreg) (the method your pipeline uses to connect to the service)
+- The services:
+  - [Azure Container Registry](https://azure.microsoft.com/services/container-registry/)
+- The template used to create your pipeline: [docker-container](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/docker-container.yml)
+- The method your pipeline uses to connect to the service: [Docker registry service connections](../../library/service-endpoints.md#sep-docreg)
+- Some of the tasks used in your pipeline, and how you can customize them:
+  - [Docker task](../../tasks/build/docker.md)
+  - [Kubernetes manifest task](../../tasks/deploy/kubernetes-manifest.md)
+- Some of the key concepts for this kind of pipeline:
+  - [Jobs](../../process/phases.md)
+  - [Docker registry service connections](../../library/service-endpoints.md#sep-docreg) (the method your pipeline uses to connect to the service)

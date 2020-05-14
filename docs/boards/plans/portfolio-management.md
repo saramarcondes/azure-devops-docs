@@ -21,10 +21,10 @@ In this article you'll learn:
 
 > [!div class="checklist"]
 >
-> * How to support a management view of multiple team progress
-> * How feature teams can focus on their team backlog progress
-> * How to assign work from a common backlog
-> * How to set up a hierarchical set of teams and backlogs
+> - How to support a management view of multiple team progress
+> - How feature teams can focus on their team backlog progress
+> - How to assign work from a common backlog
+> - How to set up a hierarchical set of teams and backlogs
 
 [!INCLUDE [configure-customize](../includes/note-configure-customize.md)]
 
@@ -34,9 +34,9 @@ By setting up a team structure like the one shown, you provide each feature team
 
 [Set up a hierarchical team and backlog structure](configure-hierarchical-teams.md) when you want to support the following elements:
 
-* Autonomous feature teams that can organize and manage their backlog of work
-* Portfolio management views for planning epics and features and monitoring progress of subordinate feature teams
-* Assign backlog items to feature teams from a common backlog
+- Autonomous feature teams that can organize and manage their backlog of work
+- Portfolio management views for planning epics and features and monitoring progress of subordinate feature teams
+- Assign backlog items to feature teams from a common backlog
 
 [!INCLUDE [image differences](../includes/image-differences.md)]
 
@@ -224,8 +224,8 @@ To view feature progress based on linked requirements, you can view the Feature 
 
 ## Related articles
 
-* [Create your backlog](../backlogs/create-your-backlog.md)
-* [Kanban quickstart](../boards/kanban-quickstart.md)
-* [Assign work to sprints](../sprints/assign-work-sprint.md)
-* [Organize your backlog](../backlogs/organize-backlog.md)
-* [Limitations of multi-team Kanban board views](../boards/kanban-overview.md#limits-multi-team)
+- [Create your backlog](../backlogs/create-your-backlog.md)
+- [Kanban quickstart](../boards/kanban-quickstart.md)
+- [Assign work to sprints](../sprints/assign-work-sprint.md)
+- [Organize your backlog](../backlogs/organize-backlog.md)
+- [Limitations of multi-team Kanban board views](../boards/kanban-overview.md#limits-multi-team)

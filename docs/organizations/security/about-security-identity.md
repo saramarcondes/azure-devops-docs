@@ -27,20 +27,20 @@ This article introduces the main security concepts employed by Azure DevOps. To 
 
 The main security concepts to understand are
 
-* Authentication
-* Authorization
-* Security groups
-* Security roles
-* Permission levels and permissions
-* Access levels
+- Authentication
+- Authorization
+- Security groups
+- Security roles
+- Permission levels and permissions
+- Access levels
 
 ## Authentication
 
 Authentication verifies a user's identity based on the credentials provided when they sign into Azure DevOps. These systems integrate with and rely upon the security features provided by these additional systems:
 
-* Azure Active Directory (Azure AD)
-* Microsoft account (MSA)
-* Active Directory (AD)
+- Azure Active Directory (Azure AD)
+- Microsoft account (MSA)
+- Active Directory (AD)
 
 Azure AD and MSA support cloud authentication. We recommend Azure AD when you need to manage a large group of users. Otherwise, if you have a small user base accessing your organization in Azure DevOps, you can simply use Microsoft accounts. For additional information, see [About accessing Azure DevOps with Azure Active Directory (Azure AD)](../accounts/access-with-azure-ad.md).
 
@@ -50,29 +50,28 @@ For on-premises deployments, AD is recommended when managing a large group of us
 
 Other applications and services can integrate with services and resources in Azure DevOps. To access your account without asking for user credentials multiple times, apps can use the following authentication methods.
 
-* [Alternate credentials](../../repos/git/auth-overview.md)
+- [Alternate credentials](../../repos/git/auth-overview.md)
   as a single set of credentials across all tools that don't have
   plug-in, extension, or native support. For example,
   you can use basic authentication to access
   [REST APIs for Azure DevOps](../../integrate/get-started/rest/basics.md),
   but you must turn on alternate credentials.
 
-* [Personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md)
+- [Personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md)
   to generate tokens for:
 
+  - Accessing specific resources or activities, like builds or work items
+  - Clients like Xcode and Nuget that require usernames and passwords
+    as basic credentials and don't support Microsoft account
+    and Azure Active Directory features like multi-factor authentication
+  - Accessing [Azure DevOps REST APIs](../../integrate/get-started/rest/basics.md)
 
-    *    Accessing specific resources or activities, like builds or work items
-    *    Clients like Xcode and Nuget that require usernames and passwords
-        as basic credentials and don't support Microsoft account
-        and Azure Active Directory features like multi-factor authentication
-    *    Accessing [Azure DevOps REST APIs](../../integrate/get-started/rest/basics.md)
-
-* [OAuth](/azure/devops/integrate/get-started/Authentication/oauth)
+- [OAuth](/azure/devops/integrate/get-started/Authentication/oauth)
   to generate tokens for accessing [REST APIs](/azure/devops/integrate/get-started/rest/basics). The [Accounts](/rest/api/azure/devops/account)
   and [Profiles](/rest/api/azure/devops/profile)
   APIs support only OAuth.
 
-* [SSH authentication](../../repos/git/use-ssh-keys-to-authenticate.md)
+- [SSH authentication](../../repos/git/use-ssh-keys-to-authenticate.md)
   to generate encryption keys when you use Linux, macOS,
   or Windows running [Git for Windows](https://www.git-scm.com/download/win)
   and can't use
@@ -157,15 +156,15 @@ You can populate these groups by using individual users. However, for ease of ma
 
 Azure DevOps controls access through these three inter-connected functional areas:
 
-* **Membership management** supports adding individual Windows user accounts and groups to default security groups. Also, you can create Azure DevOps security groups. Each default group is associated with a set of default permissions. All users added to any security group are added to the Valid Users group. A valid user is someone who can connect to the project.
+- **Membership management** supports adding individual Windows user accounts and groups to default security groups. Also, you can create Azure DevOps security groups. Each default group is associated with a set of default permissions. All users added to any security group are added to the Valid Users group. A valid user is someone who can connect to the project.
 
-* **Permission management** controls access to specific functional tasks at different levels of the system. Object-level permissions set permissions on a file, folder, build pipeline, or a shared query. Permission settings correspond to **Allow**, **Deny**, **Inherited allow**, **Inherited deny**, and **Not set**. To learn more about inheritance, see [About permissions and groups](about-permissions.md#inheritance).
+- **Permission management** controls access to specific functional tasks at different levels of the system. Object-level permissions set permissions on a file, folder, build pipeline, or a shared query. Permission settings correspond to **Allow**, **Deny**, **Inherited allow**, **Inherited deny**, and **Not set**. To learn more about inheritance, see [About permissions and groups](about-permissions.md#inheritance).
 
-* **Access level management** controls access to features provided via the web portal, the web application for Azure DevOps. Based on what has been purchased for a user, administrators set the user's access level to Basic, VS Enterprise (previously Advanced), or Stakeholder.
+- **Access level management** controls access to features provided via the web portal, the web application for Azure DevOps. Based on what has been purchased for a user, administrators set the user's access level to Basic, VS Enterprise (previously Advanced), or Stakeholder.
 
 Each functional area uses groups to simplify management across the deployment. You add users and groups through the web administration context. Permissions are automatically set based on the security group that you add users to, or based on the object, project, collection, or server level to which you add groups. On the other hand, access level management controls access for all users and groups at the server level.
 
-<img src="media/access-groups-permissions.png" alt="Access levels, membership management, and permissions management" style="border: 1px solid #C3C3C3;" />  
+<img src="media/access-groups-permissions.png" alt="Access levels, membership management, and permissions management" style="border: 1px solid #C3C3C3;" />
 
 You can create local groups or Active Directory (AD) [groups to manage your users](/azure/devops/server/admin/setup-ad-groups). If you decide to use groups, make sure that membership in those groups is limited to valid users. Because group membership can be altered by their owners at any time, if those owners did not consider Azure DevOps Server access when they created those groups, their changes to membership can cause unwanted side effects within the server.
 
@@ -233,11 +232,11 @@ Certain features are only available to users who have the appropriate licensing 
 
 ## Related articles
 
-* [Permissions and groups reference](permissions.md)
-* [Default permissions and access for Azure DevOps](permissions-access.md)
-* [Access with Azure Active Directory (Azure AD)](../accounts/add-users-to-azure-ad.md)
-* [Set up groups for use in on-premises deployments](/azure/devops/server/admin/setup-ad-groups)
-* [Setting up HTTPS with Secure Sockets Layer (SSL)](/azure/devops/server/admin/setup-secure-sockets-layer)
+- [Permissions and groups reference](permissions.md)
+- [Default permissions and access for Azure DevOps](permissions-access.md)
+- [Access with Azure Active Directory (Azure AD)](../accounts/add-users-to-azure-ad.md)
+- [Set up groups for use in on-premises deployments](/azure/devops/server/admin/setup-ad-groups)
+- [Setting up HTTPS with Secure Sockets Layer (SSL)](/azure/devops/server/admin/setup-secure-sockets-layer)
 
 <!-- TODO: Cover how to set permissions for Reporting Services and SharePoint as mainline sections.
 

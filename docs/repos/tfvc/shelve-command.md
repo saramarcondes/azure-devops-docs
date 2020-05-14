@@ -64,17 +64,17 @@ The **shelve** command of the **tf** command-line utility backs up pending chang
 
 Shelving is an alternative to checking in pending changes that have not been tested sufficiently. Use shelving when you want to interrupt you work:
 
-* Share a set of local working files together with another developer or tester without checking in your changes to the version control server.
+- Share a set of local working files together with another developer or tester without checking in your changes to the version control server.
 
-* Set aside a group of pending changes temporarily without checking them in so that you can instead work on a higher priority issue. After you complete work on the high priority task, you can restore your shelved changes using the [Unshelve Command](unshelve-command.md).
+- Set aside a group of pending changes temporarily without checking them in so that you can instead work on a higher priority issue. After you complete work on the high priority task, you can restore your shelved changes using the [Unshelve Command](unshelve-command.md).
 
 If you include the **/move** option, the **shelve** command rolls back all shelved file revisions to their _base workspace versions_ that is the last version retrieved from the server to the current workspace. Specifically, the **/move** option makes sure that for all the items that you shelve:
 
-* Uses **Undo** to undo the changes that were shelved. The files that were pending additions are deleted from the workspace.
+- Uses **Undo** to undo the changes that were shelved. The files that were pending additions are deleted from the workspace.
 
-* The base workspace versions of all files for which pending editions exist are retrieved from the server into the current workspace.
+- The base workspace versions of all files for which pending editions exist are retrieved from the server into the current workspace.
 
-* All items in the current workspace are marked read-only.
+- All items in the current workspace are marked read-only.
 
 If you include the **/delete** option, Team Foundation permanently removes the specified shelveset from the Team Foundation server.
 

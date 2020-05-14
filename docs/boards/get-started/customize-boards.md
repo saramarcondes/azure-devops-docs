@@ -20,10 +20,10 @@ This article shows how to customize a Kanban board. You have one Kanban board fo
 
 You can configure your Kanban board in several ways to support specific tracking needs. For example:
 
-* Update fields directly from the card
-* Highlight cards based on field assignments
-* Add columns to track other workflow states
-* Add swimlanes to expedite work or differentiate work assigned to different service classes.
+- Update fields directly from the card
+- Highlight cards based on field assignments
+- Add columns to track other workflow states
+- Add swimlanes to expedite work or differentiate work assigned to different service classes.
 
 ## Open Settings for the board
 
@@ -253,10 +253,10 @@ Here we show the customizations made in this article. The following image also s
 
 ## Related articles
 
-* [Customize cards](../boards/customize-cards.md) (addresses **Styles**, **Tag colors**, **Annotations** and **Tests**)
-* [Card reordering](../boards/reorder-cards.md)
-* [Work in Progress limits](../boards/wip-limits.md)
-* [Split columns](../boards/split-columns.md)
-* [Definition of Done](../boards/definition-of-done.md)
-* [Set working days](../../organizations/settings/set-working-days.md)
-* [Cumulative flow](../../report/dashboards/cumulative-flow.md)
+- [Customize cards](../boards/customize-cards.md) (addresses **Styles**, **Tag colors**, **Annotations** and **Tests**)
+- [Card reordering](../boards/reorder-cards.md)
+- [Work in Progress limits](../boards/wip-limits.md)
+- [Split columns](../boards/split-columns.md)
+- [Definition of Done](../boards/definition-of-done.md)
+- [Set working days](../../organizations/settings/set-working-days.md)
+- [Cumulative flow](../../report/dashboards/cumulative-flow.md)

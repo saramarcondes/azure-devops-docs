@@ -20,11 +20,11 @@ ms.date: 11/04/2019
 
 Service endpoints are a way for Azure DevOps Services to connect to external systems or services. They are a bundle of properties securely stored by Azure DevOps Services which includes but is not limited to:
 
-* Service name
-* Description
-* Server URL
-* Certificates or tokens
-* User names and passwords
+- Service name
+- Description
+- Server URL
+- Certificates or tokens
+- User names and passwords
 
 Extensions are then able to leverage the service endpoint to acquire the stored details to perform the necessary operations on that service.
 Follow this guide to create a new Service Point contribution and leverage it in your extension.
@@ -35,15 +35,15 @@ Follow this guide to create a new Service Point contribution and leverage it in 
 
 This article walks through developing a service endpoint by creating an example extension for Azure DevOps Services that includes:
 
-* A custom service endpoint with data sources. This enables a build task or dashboard widget to call a REST endpoint on the service/server defined by the endpoint.
-* A build task which defines 2 properties: The service endpoint & a picklist which has values populated from the REST endpoint data source.
+- A custom service endpoint with data sources. This enables a build task or dashboard widget to call a REST endpoint on the service/server defined by the endpoint.
+- A build task which defines 2 properties: The service endpoint & a picklist which has values populated from the REST endpoint data source.
 
 > Note: Service endpoints created by users are created at the project level, not the organization level.
 
 The steps involved in completing this task are:
 
-* [Step 1: Creating the extension manifest file](#step1)
-* [Step 2: The build task pipeline, in the task.json file](#step2)
+- [Step 1: Creating the extension manifest file](#step1)
+- [Step 2: The build task pipeline, in the task.json file](#step2)
 
 > [!NOTE]
 > This tutorial refers to the home directory for your project as "home".
@@ -56,9 +56,9 @@ The [manifest file](./manifest.md) defines the custom endpoint and links to the 
 
 In this article, the manifest file creation is separated into three parts:
 
-* [Create the basic manifest file](#createbasic)
-* [Add a custom endpoint contribution](#customendpoint)
-* [Add a build task](#buildtask)
+- [Create the basic manifest file](#createbasic)
+- [Add a custom endpoint contribution](#customendpoint)
+- [Add a build task](#buildtask)
 
 <a name="createbasic" />
 
@@ -195,7 +195,7 @@ Note that the datasource endpointUrl is usually computed from the url of the end
 For this tutorial this REST call returns nothing and is meant to be replaced by any REST calls you wish to make to your service.
 
 It's possible to use other parameters than the endpoint url for the REST URL, for instance some endpoint properties.
-For instance, assuming that we had a property in the endpoint named subscriptionId, the REST URL could use it with the following syntax: $(endpoint.subscription)
+For instance, assuming that we had a property in the endpoint named subscriptionId, the REST URL could use it with the following syntax: \$(endpoint.subscription)
 
 <a name="step2" />
 
@@ -278,12 +278,12 @@ and Fabrikam is simply the name of the object.
 <br>
 This is the second field. It's a picklist
 
-* This field is populated by a REST call.
-* The values from the field "project" are taken from the "Projects" REST data source of the custom endpoint.
-* This is expressed in the `dataSourceBindings` array
-  * The target is the name of the build task field to be populated ("project")
-  * The endpointId is the name of the build task field containing the custom endpoint type
-  * The REST call is chosen by the dataSourceName
+- This field is populated by a REST call.
+- The values from the field "project" are taken from the "Projects" REST data source of the custom endpoint.
+- This is expressed in the `dataSourceBindings` array
+  - The target is the name of the build task field to be populated ("project")
+  - The endpointId is the name of the build task field containing the custom endpoint type
+  - The REST call is chosen by the dataSourceName
 
 If you've added the Build Task successfully, you should now see the Build Task when adding tasks to a build pipeline
 <img alt="Service endpoint build task selector" src="./media/service-endpoint-build-task-selector.png" style="padding:10px;display:block;margin-left:auto;margin-right:auto">
@@ -298,15 +298,15 @@ Once you replace Fabrikam with your service, replace the Projects call with your
 The authentication scheme in a service endpoint determines the credentials that would be used to connect to the external service. Check out the
 [authentication schemes documentation](./auth-schemes.md) for more information and to see the following authentication schemes:
 
-* Basic authentication
-* Token based authentication
-* Certificate based authentication
-* No authentication
+- Basic authentication
+- Token based authentication
+- Certificate based authentication
+- No authentication
 
 ## Next Steps
 
 Now that you've written your extension, the next steps are to Package, Publish, and Install your extension. You can also check out the
 documentation for Testing and Debugging your extension.
 
-* [Package, publish, and install extensions](../publish/overview.md)
-* [Testing and debugging extensions](../test/debug-in-browser.md)
+- [Package, publish, and install extensions](../publish/overview.md)
+- [Testing and debugging extensions](../test/debug-in-browser.md)

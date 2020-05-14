@@ -49,8 +49,8 @@ At any time, you can export custom storyboard shapes that you've created and sha
 3.  Complete the next two steps and add your contribution.  
 
  In addition, you can author storyboard shapes with custom resize logic using the Storyboard Shapes Authoring Tool. To get this tool, download [Visual Studio Team Foundation Server Power Tools](https://go.microsoft.com/fwlink/?LinkId=248625).  
--->  
+-->
 
 ## Related articles
 
-* [Storyboard your ideas using PowerPoint Storyboarding](storyboard-your-ideas-using-powerpoint.md).
+- [Storyboard your ideas using PowerPoint Storyboarding](storyboard-your-ideas-using-powerpoint.md).

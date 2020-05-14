@@ -201,9 +201,9 @@ The updates bring your project up to date with the workflow settings that are de
 
 You might want to update the workflow of specific WITs to support missing transitions, additional reasons, and field assignments. Making this update revises the workflow for the following WITs to the latest version of their process template workflow:
 
-* Scrum 2.0 to Scrum 2013: Product Backlog Item and Bug
-* Agile 6.0 to Agile 2013: User Story
-* CMMI 6.0 to CMMI 2013: Requirement
+- Scrum 2.0 to Scrum 2013: Product Backlog Item and Bug
+- Agile 6.0 to Agile 2013: User Story
+- CMMI 6.0 to CMMI 2013: Requirement
 
 If you haven't customized your work item types or process configuration, you can update the items quickly by using **witadmin**. Just [download the latest version of the process template](../boards/work-items/guidance/manage-process-templates.md) that is compatible with the one used to create your project and then [import the updated WITs](witadmin/witadmin-import-export-manage-wits.md).
 

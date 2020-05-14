@@ -94,5 +94,5 @@ This will also inform Power BI that these requests are referencing the same data
 
 ## Related articles
 
-* [Power Query (M) Formula Reference](https://msdn.microsoft.com/library/mt270235.aspx)
-* [Power Query (M) Formula Reference - Accessing data functions](https://msdn.microsoft.com/query-bi/m/accessing-data-functions)
+- [Power Query (M) Formula Reference](https://msdn.microsoft.com/library/mt270235.aspx)
+- [Power Query (M) Formula Reference - Accessing data functions](https://msdn.microsoft.com/query-bi/m/accessing-data-functions)

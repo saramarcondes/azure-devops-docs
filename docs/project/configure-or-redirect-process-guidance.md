@@ -26,27 +26,27 @@ If your team project was created using the Basic configuration or is hosted on A
 
 To configure a project portal, see [Configure or add a project portal](configure-or-add-a-project-portal.md). If you want to configure process guidance, choose from one of the following options based on your deployment configuration and team requirements:
 
-* [Determine if process guidance is enabled for your team project](#guid_enabled).
+- [Determine if process guidance is enabled for your team project](#guid_enabled).
   Choose this option to determine if process guidance is enabled.
 
-* [Specify a website that hosts your custom process guidance](#simple).
+- [Specify a website that hosts your custom process guidance](#simple).
 
   Choose this option if you want to use a website that doesn't require SharePoint integration. Note that with this option, F1 help links within work item forms will not be redirected to your custom process guidance.
 
-* [Specify a SharePoint document library that contains your process guidance](#sp).  
+- [Specify a SharePoint document library that contains your process guidance](#sp).  
    Choose this option if you have already configured TFS to integrate with a SharePoint Web application, and you want F1 help links within work item forms to open to process guidance content. Also, choose this option when you want to share process guidance across several team projects within an organization.
 
-* [Upload process guidance support files from a process template](#upload)
+- [Upload process guidance support files from a process template](#upload)
 
   Choose this option when your SharePoint document library doesn't contain the support files used to redirect help links to process guidance content.
 
-* [Modify support files that redirect process guidance to your custom guidance](#redirect)
+- [Modify support files that redirect process guidance to your custom guidance](#redirect)
 
   Choose this option when you have a SharePoint site configured as your project portal and you want to modify the support files to redirect process guidance links to your custom process guidance.
 
 ## Prerequisites
 
-* To configure process guidance, you must be a member of the Project Collection Administrators group.
+- To configure process guidance, you must be a member of the Project Collection Administrators group.
 
 <a name="guid_enabled"></a>
 
@@ -123,7 +123,7 @@ These files must be uploaded to a folder labeled `Supporting Files`, within the 
 
 #### Upload .aspx content pages
 
-* For each work item type for which you want to provide process guidance, upload the .aspx content page that you named to match the work item type to your process guidance website.
+- For each work item type for which you want to provide process guidance, upload the .aspx content page that you named to match the work item type to your process guidance website.
 
   You must name the `.aspx` file to match the WORKITEMTYPE value in the type definition. For example, if the process guidance content is about the bug type of work item, which has `<WORKITEMTYPE name="Bug">` within its type definition, name the file `Bug.aspx`.
 
@@ -134,13 +134,13 @@ These files must be uploaded to a folder labeled `Supporting Files`, within the 
 2.  In each file, locate the `meta` statement that specifies the URL. For example:
 
     ```html
-    <meta http-equiv="Refresh" content="0;URL=https://go.microsoft.com/fwlink/?LinkId=190653" />  
+    <meta http-equiv="Refresh" content="0;URL=https://go.microsoft.com/fwlink/?LinkId=190653" />
     ```
 
 3.  Replace the value specified for the URL with the URL of the customized guidance stored on your configured process guidance website. For example:
 
     ```html
-    <meta http-equiv="Refresh" content="0;URL=http://YourPortal/Process Guidance/scrum/html/Bug.html" />  
+    <meta http-equiv="Refresh" content="0;URL=http://YourPortal/Process Guidance/scrum/html/Bug.html" />
     ```
 
 4.  Save and close each file.
@@ -193,6 +193,6 @@ To embed a webpage or html content within a work item form, see [WebpageControlO
 
 ## Related articles
 
-* [Choose a process](../boards/work-items/guidance/choose-process.md)
-* [About SharePoint integration](../report/sharepoint-dashboards/about-sharepoint-integration.md)
-* [Discontinue SharePoint integration: TFS 2017 and earlier versions](../report/sharepoint-dashboards/deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md)
+- [Choose a process](../boards/work-items/guidance/choose-process.md)
+- [About SharePoint integration](../report/sharepoint-dashboards/about-sharepoint-integration.md)
+- [Discontinue SharePoint integration: TFS 2017 and earlier versions](../report/sharepoint-dashboards/deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md)

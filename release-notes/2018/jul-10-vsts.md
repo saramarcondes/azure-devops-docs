@@ -27,32 +27,32 @@ Read about the new features below and head over to VSTS to try them for yourself
 
 Code:
 
-* [Create pull requests without a default team as reviewer](#create-pull-requests-without-a-default-team-as-reviewer)
-* [Allow bypassing branch policies without giving up push protection](#allow-bypassing-branch-policies-without-giving-up-push-protection)
+- [Create pull requests without a default team as reviewer](#create-pull-requests-without-a-default-team-as-reviewer)
+- [Allow bypassing branch policies without giving up push protection](#allow-bypassing-branch-policies-without-giving-up-push-protection)
 
 Wiki:
 
-* [Link to headings within a page](#link-to-headings-within-a-page)
-* [View broken links](#view-broken-links)
-* [Attach files and images in folders](#attach-files-and-images-in-folders)
-* [Open page in new tab](#open-page-in-new-tab)
+- [Link to headings within a page](#link-to-headings-within-a-page)
+- [View broken links](#view-broken-links)
+- [Attach files and images in folders](#attach-files-and-images-in-folders)
+- [Open page in new tab](#open-page-in-new-tab)
 
 Build and release:
 
-* [Build and release with Microsoft-hosted Linux and macOS agents](#build-and-release-with-microsoft-hosted-linux-and-macos-agents)
-* [Automatically deploy to new targets in a deployment group](#automatically-deploy-to-new-targets-in-a-deployment-group)
-* [Hold deployments until gates succeed consistently](#hold-deployments-until-gates-succeed-consistently)
-* [Azure DevOps Projects now generally available](#azure-devops-projects-now-generally-available)
+- [Build and release with Microsoft-hosted Linux and macOS agents](#build-and-release-with-microsoft-hosted-linux-and-macos-agents)
+- [Automatically deploy to new targets in a deployment group](#automatically-deploy-to-new-targets-in-a-deployment-group)
+- [Hold deployments until gates succeed consistently](#hold-deployments-until-gates-succeed-consistently)
+- [Azure DevOps Projects now generally available](#azure-devops-projects-now-generally-available)
 
 Package:
 
-* [Get started with pre-installed Package Management](#get-started-with-pre-installed-package-management)
+- [Get started with pre-installed Package Management](#get-started-with-pre-installed-package-management)
 
 Admin:
 
-* [Connect or disconnect Azure Active Directory as a Project Collection Admin](#connect-or-disconnect-azure-active-directory-as-a-project-collection-admin)
-* [Public projects available in preview for all organizations](#public-projects-available-in-preview-for-all-organizations)
-* [Adopt the word "organization" when referring to a collection of projects in VSTS](#adopt-the-word-organization-when-referring-to-a-collection-of-projects-in-vsts)
+- [Connect or disconnect Azure Active Directory as a Project Collection Admin](#connect-or-disconnect-azure-active-directory-as-a-project-collection-admin)
+- [Public projects available in preview for all organizations](#public-projects-available-in-preview-for-all-organizations)
+- [Adopt the word "organization" when referring to a collection of projects in VSTS](#adopt-the-word-organization-when-referring-to-a-collection-of-projects-in-vsts)
 
 ## Code
 

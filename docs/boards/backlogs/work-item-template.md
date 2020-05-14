@@ -28,20 +28,20 @@ For example usage of work item templates, see [Sample work item templates](../wo
 
 ::: moniker range=">= azure-devops-2019"
 
-* To add, capture, edit, or delete work item templates through the web portal, you must be a member of the team under which you add them.
-* To apply a work item template, you must be a Contributor of the project and a member of the team under which the work item template is defined.
+- To add, capture, edit, or delete work item templates through the web portal, you must be a member of the team under which you add them.
+- To apply a work item template, you must be a Contributor of the project and a member of the team under which the work item template is defined.
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-* To add, capture, edit, or delete work item templates through the web portal, you must be a team administrator.
-* To apply a team template, you must be a Contributor of the project and a member of the team under which the work item template is defined.
+- To add, capture, edit, or delete work item templates through the web portal, you must be a team administrator.
+- To apply a team template, you must be a Contributor of the project and a member of the team under which the work item template is defined.
   ::: moniker-end
 
 ::: moniker range="<= tfs-2015"
 
-* To add, capture, or edit work item templates through Visual Studio Team Explorer, you must install the [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). These templates only appear in your view of Team Explorer.
+- To add, capture, or edit work item templates through Visual Studio Team Explorer, you must install the [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). These templates only appear in your view of Team Explorer.
 
 ::: moniker-end
 
@@ -304,7 +304,7 @@ You can apply a template to a single work item or perform a bulk update of sever
 ```
 <img src="media/wi-templates-apply-user-story-template-vsts.png" alt="Apply a template to an existing work item within the form" style="border: 1px solid #CCCCCC;" />
 
-> [!TIP]  
+> [!TIP]
 > Refresh your browser to discover the latest templates that have been added. If you don't see any templates, it may be that there are none defined for the work item type.
 ```
 
@@ -415,11 +415,11 @@ You manage templates from team settings. All templates are defined for a team. I
 
     Here we open the admin page for the Web team.
 
-    <img src="media/wit-templates-open-team-admin-context.png" alt="Open team admin context" style="border: 1px solid #CCCCCC;" />  
+    <img src="media/wit-templates-open-team-admin-context.png" alt="Open team admin context" style="border: 1px solid #CCCCCC;" />
 
 1.  Choose **Work>Templates**.
 
-    <img src="media/wit-templates-work-templates-page.png" alt="Open Work - Templates page for team" style="border: 1px solid #CCCCCC;" />  
+    <img src="media/wit-templates-work-templates-page.png" alt="Open Work - Templates page for team" style="border: 1px solid #CCCCCC;" />
 
     From here, you can click any work item type to view or add templates for that type.
 
@@ -435,7 +435,7 @@ For example, choose User Story to view templates defined to capture user stories
 
 1.  From the work item type page, choose the ![green plus icon](../media/icons/green_plus_icon.png) **New template** to create a template from scratch.
 
-    <img src="media/wi-templates-new-template.png" alt="Add a user story template" style="border: 1px solid #CCCCCC;" />  
+    <img src="media/wi-templates-new-template.png" alt="Add a user story template" style="border: 1px solid #CCCCCC;" />
 
 2.  Name the template and optionally add and remove fields. Save the template when finished.
 
@@ -445,13 +445,13 @@ For example, choose User Story to view templates defined to capture user stories
 
 From the work item type page, choose ![ ](../media/icons/actions-icon.png) the actions icon for an existing template to access the menu options to **Edit**, **Delete**, or **Copy link**.
 
-<img src="media/wi-templates-template-action-menu.png" alt="Open template action menu" style="border: 1px solid #CCCCCC;" />  
+<img src="media/wi-templates-template-action-menu.png" alt="Open template action menu" style="border: 1px solid #CCCCCC;" />
 
 ### Copy or duplicate a template
 
 1.  To duplicate an existing template, choose ![ ](../media/icons/actions-icon.png) the actions icon for an existing template and select the **Create copy** option.
 
-    <img src="media/wi-templates-copy-template.png" alt="Copy an existing template" style="border: 1px solid #CCCCCC;" />  
+    <img src="media/wi-templates-copy-template.png" alt="Copy an existing template" style="border: 1px solid #CCCCCC;" />
 
 2.  Name the template and optionally add and remove fields. Save the template when finished.
 
@@ -461,11 +461,11 @@ From the work item type page, choose ![ ](../media/icons/actions-icon.png) the a
 
 Managing work item templates from the web portal is only supported from TFS 2017 and later versions. For TFS 2013 and TFS 2015, you can manage work item templates in Visual Studio 2013 or Visual Studio 2015 by downloading [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). With the Work Item Templates power tool add-in, you can:
 
-* Create and edit work item templates
-* Create and update work items using a template
-* Create a template from an existing work item
-* Bulk-edit work items by applying a template
-* Use templates created in Visual Studio to create work items through the Visual Studio client.
+- Create and edit work item templates
+- Create and update work items using a template
+- Create a template from an existing work item
+- Bulk-edit work items by applying a template
+- Use templates created in Visual Studio to create work items through the Visual Studio client.
 
 > [!NOTE]  
 > Visual Studio 2015 is the last version in which you can install TFS power tools. You can use the Work Item Templates tool whenever you connect to TFS 2015 version or an earlier version. Templates you define through the power tool are separate from those defined through the web portal for TFS.
@@ -489,11 +489,11 @@ You can cut, copy, paste, rename, and delete templates and folders using the con
 
 1.  From the Templates section, right-click Templates and choose to create a template from scratch.
 
-    <img src="media/wi-templates-new-template-te.png" alt="Add a new template, Visual Studio " style="border: 1px solid #CCCCCC;" />  
+    <img src="media/wi-templates-new-template-te.png" alt="Add a new template, Visual Studio " style="border: 1px solid #CCCCCC;" />
 
 2.  Save the template, provide a Name in the dialog provided.
 
-    <img src="media/wi-templates-new-template-save-as-te.png" alt="Add a new template, Visual Studio " style="border: 1px solid #CCCCCC;" />  
+    <img src="media/wi-templates-new-template-save-as-te.png" alt="Add a new template, Visual Studio " style="border: 1px solid #CCCCCC;" />
 
     Once you've saved the template, click Copy link to capture the URL for the template that you can use to add work items using the template.
 
@@ -501,7 +501,7 @@ You can cut, copy, paste, rename, and delete templates and folders using the con
 
 To edit, delete, or perform another action on a template, open its context menu (right-click) and choose the option you want.
 
-<img src="media/wi-templates-context-menu-te.png" alt="Open template action menu" style="border: 1px solid #CCCCCC;" />  
+<img src="media/wi-templates-context-menu-te.png" alt="Open template action menu" style="border: 1px solid #CCCCCC;" />
 
 To make frequently-used templates more accessible, you can set a default template for each work item type. To do so, right-click on a template in Team Explorer and click **Set As Default**. A checkmark will appear on the icon to indicate that it is now the default.
 
@@ -626,9 +626,9 @@ From the Work Item Templates tool, you can set a default for each work item type
 
 Or, you can use a Kanban board to add child tasks, backlog items, or features. To learn more, see:
 
-* [Add task checklists](../boards/add-task-checklists.md)
-* [Add, run, and update inline tests](../boards/add-run-update-tests.md)
-* [Add features and epics](../boards/kanban-epics-features-stories.md)
+- [Add task checklists](../boards/add-task-checklists.md)
+- [Add, run, and update inline tests](../boards/add-run-update-tests.md)
+- [Add features and epics](../boards/kanban-epics-features-stories.md)
 
 Otherwise, you can quickly copy tasks, bugs, and other items using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to apply parent-child links in a tree list.
 
@@ -640,12 +640,12 @@ You can't create templates that contain default links to work items. However, yo
 
 Or, you can use a Kanban board to add child tasks, backlog items, or features. To learn more, see:
 
-* [Add task checklists](../boards/add-task-checklists.md)
-* [Add, run, and update inline tests](../boards/add-run-update-tests.md)
-* [Add features and epics](../boards/kanban-epics-features-stories.md)
+- [Add task checklists](../boards/add-task-checklists.md)
+- [Add, run, and update inline tests](../boards/add-run-update-tests.md)
+- [Add features and epics](../boards/kanban-epics-features-stories.md)
 
 ::: moniker-end
 
 ## Related articles
 
-* [Sample work item templates](../work-items/work-item-template-examples.md)
+- [Sample work item templates](../work-items/work-item-template-examples.md)

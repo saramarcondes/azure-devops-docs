@@ -28,12 +28,12 @@ In this tutorial you'll learn how to view your personal favorites and to favorit
 
 > [!div class="checklist"]
 >
-> * Project or team
-> * Dashboard
-> * Team backlog, board, shared query, or other Azure Boards view
-> * Repository
-> * Build and release definition
-> * Test plans
+> - Project or team
+> - Dashboard
+> - Team backlog, board, shared query, or other Azure Boards view
+> - Repository
+> - Build and release definition
+> - Test plans
 
 ::: moniker-end
 
@@ -41,11 +41,11 @@ In this tutorial you'll learn how to view your personal favorites and to favorit
 
 > [!div class="checklist"]
 >
-> * Project
-> * Shared query
-> * Repository
-> * Build and release definition
-> * Test plans
+> - Project
+> - Shared query
+> - Repository
+> - Build and release definition
+> - Test plans
 
 ::: moniker-end
 
@@ -53,21 +53,21 @@ In this tutorial you'll learn how to view your personal favorites and to favorit
 
 ::: moniker range="azure-devops"
 
-* You must connect to a project through the web portal. If you don't have a project yet, [create one](/azure/devops/boards/get-started/sign-up-invite-teammates). To connect to the web portal, see [Connect to a project](../../organizations/projects/connect-to-projects.md).
-* You must be a member of the **Contributors** or an administrators security group of the project. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).
-* To favorite projects, backlogs, boards, queries, dashboards, or pipeline views, you must have **Stakeholder** access or higher.
-* To favorite repositories, or delivery plans, you must have **Basic** access or higher.
-* To favorite test plans, you must have **Basic + Test Plans** access level or equivalent.
+- You must connect to a project through the web portal. If you don't have a project yet, [create one](/azure/devops/boards/get-started/sign-up-invite-teammates). To connect to the web portal, see [Connect to a project](../../organizations/projects/connect-to-projects.md).
+- You must be a member of the **Contributors** or an administrators security group of the project. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).
+- To favorite projects, backlogs, boards, queries, dashboards, or pipeline views, you must have **Stakeholder** access or higher.
+- To favorite repositories, or delivery plans, you must have **Basic** access or higher.
+- To favorite test plans, you must have **Basic + Test Plans** access level or equivalent.
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
-* You must connect to a project through the web portal. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project). To connect to the web portal, see [Connect to a project](../../organizations/projects/connect-to-projects.md).
-* You must be a member of the **Contributors** or an administrators security group of the project. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).
-* To favorite projects, backlogs, boards, queries, dashboards, or pipeline views, you must have **Stakeholder** access or higher.
-* To favorite repositories, or delivery plans, you must have **Basic** access or higher.
-* To favorite test plans, you must have **Basic + Test Plans** access level or equivalent.
+- You must connect to a project through the web portal. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project). To connect to the web portal, see [Connect to a project](../../organizations/projects/connect-to-projects.md).
+- You must be a member of the **Contributors** or an administrators security group of the project. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).
+- To favorite projects, backlogs, boards, queries, dashboards, or pipeline views, you must have **Stakeholder** access or higher.
+- To favorite repositories, or delivery plans, you must have **Basic** access or higher.
+- To favorite test plans, you must have **Basic + Test Plans** access level or equivalent.
 
 ::: moniker-end
 
@@ -313,8 +313,8 @@ Similarly, you can unfavorite an artifact from the same page where you favorited
 
 ## Related articles
 
-* [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md)
-* [Set your preferences](../../organizations/settings/set-your-preferences.md)
+- [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md)
+- [Set your preferences](../../organizations/settings/set-your-preferences.md)
 
 <!---
 
@@ -327,7 +327,7 @@ You can set favorites for the following artifacts from the indicated page.
 > [!div class="mx-tdCol2BreakAll"]
 > |Service/area |     Artifacts        | Page |
 > |---------------|---------|---------|
-> | Organization & projects | Projects | **Projects**  (personal favorites only)  |  
+> | Organization & projects | Projects | **Projects**  (personal favorites only)  |
 > | Dashboard | Team dashboards  | **Overview>Dashboards**  |
 > | Code | Repositories | **Repos>Branches**  (personal favorites only) |
 > | Work, Agile tools for a team | Backlogs, boards, sprint backlogs, sprint taskboards | **Boards>Boards** or **Backlogs**, or **Sprints** |
@@ -336,15 +336,15 @@ You can set favorites for the following artifacts from the indicated page.
 > | Build and Release | Pipeline definitions | **Pipelines>Builds** or **Releases**  |
 > | Test | Test plans | **Test Plans>Test Plans** (personal favorites only) |
 
-::: moniker-end  
+::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
 
-> [!div class="mx-tdCol2BreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]
 > > |Service/area |  Artifacts  | Page |
 > |---------------|---------|---------|
-> | Organization & projects | Projects and teams | **Projects**  (personal favorites only)  |  
+> | Organization & projects | Projects and teams | **Projects**  (personal favorites only)  |
 > | Code | Repositories | **Code>Branches**  (personal favorites only) |
 > | Work  | Queries | **Work>Queries** |
 > | Work | Delivery plans |  **Work>Plans** (personal favorites only, requires installation of the [Delivery Plans extension](../../boards/plans/review-team-plans.md)) |

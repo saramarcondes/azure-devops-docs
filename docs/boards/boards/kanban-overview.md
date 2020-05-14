@@ -28,12 +28,12 @@ Boards present work items as cards and support quick status updates through drag
 
 #### In a nutshell you use boards to:
 
-* Implement [Kanban methods](kanban-basics.md)
-* Define work your team is tasked with by [defining user stories, product backlog items, or requirements](kanban-quickstart.md)
-* Monitor progress and update the status of work items by [drag-and-drop to a column](#update)
-* [Add details and estimates](../backlogs/create-your-backlog.md#estimates) to your backlog items
-* Quickly [define tasks for backlog items](add-task-checklists.md)
-* [Add, run, and update inline tests](add-run-update-tests.md)
+- Implement [Kanban methods](kanban-basics.md)
+- Define work your team is tasked with by [defining user stories, product backlog items, or requirements](kanban-quickstart.md)
+- Monitor progress and update the status of work items by [drag-and-drop to a column](#update)
+- [Add details and estimates](../backlogs/create-your-backlog.md#estimates) to your backlog items
+- Quickly [define tasks for backlog items](add-task-checklists.md)
+- [Add, run, and update inline tests](add-run-update-tests.md)
 
 To get started, you'll want to follow the steps outlined below.
 
@@ -70,29 +70,29 @@ Your Kanban board is highly configurable to support your team's workflow. Each t
 
 ::: moniker range=">= tfs-2017"
 
-* Configure boards: - [Add columns](add-columns.md)  
-   - [Set WIP limits](wip-limits.md)  
-   - [Set Definition of Done](definition-of-done.md)  
-   - [Add swimlanes](expedite-work.md) - [Define card reordering](reorder-cards.md) - [Enable backlog and board levels](../../organizations/settings/select-backlog-navigation-levels.md) - [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md)
-* Configure card displays: - [Add or remove fields from cards](customize-cards.md) - [Define card styles](customize-cards.md#style-rule) - [Apply tag colors](customize-cards.md#color-tags) - [Enable/disable annotations](customize-cards.md#annotations) - [Define inline test behavior on cards](customize-cards.md#tests)
+- Configure boards: - [Add columns](add-columns.md)
+  - [Set WIP limits](wip-limits.md)
+  - [Set Definition of Done](definition-of-done.md)
+  - [Add swimlanes](expedite-work.md) - [Define card reordering](reorder-cards.md) - [Enable backlog and board levels](../../organizations/settings/select-backlog-navigation-levels.md) - [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md)
+- Configure card displays: - [Add or remove fields from cards](customize-cards.md) - [Define card styles](customize-cards.md#style-rule) - [Apply tag colors](customize-cards.md#color-tags) - [Enable/disable annotations](customize-cards.md#annotations) - [Define inline test behavior on cards](customize-cards.md#tests)
 
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
 
-* Configure boards: - [Add columns](add-columns.md) - [Set WIP limits](wip-limits.md)  
-   - [Set Definition of Done](definition-of-done.md)  
-   - [Add swimlanes](expedite-work.md) - [Define card reordering](reorder-cards.md) - [Enable backlog and board levels](../../organizations/settings/select-backlog-navigation-levels.md) - [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md)
-* Configure card displays: - [Add or remove fields from cards](customize-cards.md) - [Define card styles](customize-cards.md#style-rule) - [Apply tag colors](customize-cards.md#color-tags)
+- Configure boards: - [Add columns](add-columns.md) - [Set WIP limits](wip-limits.md)
+  - [Set Definition of Done](definition-of-done.md)
+  - [Add swimlanes](expedite-work.md) - [Define card reordering](reorder-cards.md) - [Enable backlog and board levels](../../organizations/settings/select-backlog-navigation-levels.md) - [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md)
+- Configure card displays: - [Add or remove fields from cards](customize-cards.md) - [Define card styles](customize-cards.md#style-rule) - [Apply tag colors](customize-cards.md#color-tags)
 
 ::: moniker-end
 
 ::: moniker range="tfs-2013"
 
-* [Add columns](add-columns.md)
-* [Set WIP limits](wip-limits.md)
-* [Set Definition of Done](definition-of-done.md)
-* [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md)
+- [Add columns](add-columns.md)
+- [Set WIP limits](wip-limits.md)
+- [Set Definition of Done](definition-of-done.md)
+- [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md)
   ::: moniker-end
 
 In addition to these team configurations, you can [customize a project](#customize) by adding or modifying work item types, the workflow, and add customized portfolio backlogs and boards.
@@ -138,9 +138,9 @@ By monitoring these metrics, you can gain insight into how to optimize your proc
 
 To learn more, see the following articles:
 
-* [Configure a cumulative flow chart](../../report/dashboards/cumulative-flow.md)
-* [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow-cycle-lead-time-guidance.md)
-* [Lead time and cycle time widgets](../../report/dashboards/cycle-time-and-lead-time.md)
+- [Configure a cumulative flow chart](../../report/dashboards/cumulative-flow.md)
+- [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow-cycle-lead-time-guidance.md)
+- [Lead time and cycle time widgets](../../report/dashboards/cycle-time-and-lead-time.md)
 
 ## Display of leaf node work items
 
@@ -188,9 +188,9 @@ Take these tools for a test run by [signing up for free](../get-started/index.md
 
 ## Related articles
 
-* [Kanban key concepts](kanban-key-concepts.md)
-* [Web portal navigation](../../project/navigation/index.md)
-* [Backlogs, portfolios, and Agile project management](../backlogs/backlogs-overview.md)
-* [About work items](../work-items/about-work-items.md)
-* [What is Agile?](/azure/devops/learn/agile/what-is-agile)
-* [What is Agile development?](/azure/devops/learn/agile/what-is-agile-development)
+- [Kanban key concepts](kanban-key-concepts.md)
+- [Web portal navigation](../../project/navigation/index.md)
+- [Backlogs, portfolios, and Agile project management](../backlogs/backlogs-overview.md)
+- [About work items](../work-items/about-work-items.md)
+- [What is Agile?](/azure/devops/learn/agile/what-is-agile)
+- [What is Agile development?](/azure/devops/learn/agile/what-is-agile-development)

@@ -22,19 +22,19 @@ Use the <strong>@mention</strong> control to start or continue a discussion with
 
 ::: moniker range="azure-devops"
 
-* A work item discussion or any rich-text field
-* A pull request discussion
-* Commit comments
-* Changeset or shelveset comments
+- A work item discussion or any rich-text field
+- A pull request discussion
+- Commit comments
+- Changeset or shelveset comments
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 < azure-devops"
 
-* A work item discussion
-* A pull request discussion
-* Commit comments
-* Changeset or shelveset comments
+- A work item discussion
+- A pull request discussion
+- Commit comments
+- Changeset or shelveset comments
 
 ::: moniker-end
 
@@ -85,5 +85,5 @@ Use the **\@mention** control in pull request discussions, commit comments, chan
 
 ## Related articles
 
-* [Work item form controls](../boards/work-items/work-item-form-controls.md)
-* [Pull requests](../repos/git/pullrequest.md)
+- [Work item form controls](../boards/work-items/work-item-form-controls.md)
+- [Pull requests](../repos/git/pullrequest.md)

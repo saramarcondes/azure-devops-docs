@@ -26,7 +26,6 @@ as well as detailed request/response data
 
        <img alt="View the activity" src="./media/troubleshoot/devops-service-hooks.png" />
 
-
 2.  To view detailed activity for a subscription, including full request, response,
     and event payload data, select a subscription in the table and click **History**.
 
@@ -54,9 +53,9 @@ as well as detailed request/response data
 
 Failures from a Service Hooks notification can be grouped into three categories:
 
-* Terminal Failures
-* Transient Failures
-* Enduring Failures.
+- Terminal Failures
+- Transient Failures
+- Enduring Failures.
 
 #### Terminal Failures
 
@@ -68,10 +67,10 @@ When a subscription sees a Transient Failure, it will attempt to resend the noti
 
 #### Transient Failures include
 
-* 408 (Request Timeout)
-* 502 (Bad Gateway)
-* 503 (Service Unavailable)
-* 504 (Gateway Timeout)
+- 408 (Request Timeout)
+- 502 (Bad Gateway)
+- 503 (Service Unavailable)
+- 504 (Gateway Timeout)
 
 #### Sequence of retries for transient failures
 
@@ -120,9 +119,9 @@ A: A subscription becomes restricted if too many failures occur. Enabled (restri
 
 A: A subscription is automatically disabled after a series of consecutive failures over a prolonged period or a _terminal failure_ is encountered. _Transient failures_ types are retried several times before being declared a failure. _Enduring failure_ types aren't retried. The following are examples of each type of failure.
 
-* Transient: 408 (Request Timeout), 502 (Bad Gateway), 503 (Service Unavailable), 504 (Gateway Timeout)
-* Terminal: 410 (Gone)
-* Enduring: All failures that are not transient or terminal
+- Transient: 408 (Request Timeout), 502 (Bad Gateway), 503 (Service Unavailable), 504 (Gateway Timeout)
+- Terminal: 410 (Gone)
+- Enduring: All failures that are not transient or terminal
 
 #### Q: What does the status Disabled (user left project) mean?
 
@@ -132,11 +131,11 @@ A: The user who created the subscription is no longer a member of the team.
 
 A: Check these things:
 
-* Confirm the subscription is enabled.
+- Confirm the subscription is enabled.
 
-* Confirm the subscription settings are correct (both event filters and actions).
+- Confirm the subscription settings are correct (both event filters and actions).
 
-* Look at the History, especially if there are failures.
+- Look at the History, especially if there are failures.
 
 #### Q: Can I grant a regular project user the ability to view and manage service hook subscriptions for a project?
 

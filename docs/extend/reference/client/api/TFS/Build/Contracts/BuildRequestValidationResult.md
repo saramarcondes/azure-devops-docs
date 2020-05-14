@@ -16,6 +16,6 @@ Module path: `TFS/Build/Contracts`
 
 ### Members
 
-* `message`: string.
+- `message`: string.
 
-* `result`: [ValidationResult](./ValidationResult.md).
+- `result`: [ValidationResult](./ValidationResult.md).

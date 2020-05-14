@@ -16,6 +16,6 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Members
 
-* `count`: number.
+- `count`: number.
 
-* `testResults`: [ShallowReference](../../../TFS/TestManagement/Contracts/ShallowReference.md)[].
+- `testResults`: [ShallowReference](../../../TFS/TestManagement/Contracts/ShallowReference.md)[].

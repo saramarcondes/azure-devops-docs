@@ -11,12 +11,12 @@
 
 4.  Complete the form:
 
-    * Name your token.
-    * Select your organization.
-    * Select an expiration time frame for your token. This is required because the Visual Studio Marketplace publishing APIs work outside of the context of an organization.
-    * Set the scope of access associated with this token. Be sure to select the **Marketplace (publish)** scope. This scope limits the token to only being able
+    - Name your token.
+    - Select your organization.
+    - Select an expiration time frame for your token. This is required because the Visual Studio Marketplace publishing APIs work outside of the context of an organization.
+    - Set the scope of access associated with this token. Be sure to select the **Marketplace (publish)** scope. This scope limits the token to only being able
       to publish extensions to the Marketplace.
-    * Select **Create**.
+    - Select **Create**.
 
     :::image type="content" source="../../media/create-pat-final-steps.png" alt-text="..":::
 

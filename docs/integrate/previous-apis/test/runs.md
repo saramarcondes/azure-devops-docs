@@ -739,7 +739,7 @@ Content-Type: application/json
   "completedDate": { DateTime },
   "owner": {
      "displayName": { string }
-  },  
+  },
   "buildDropLocation": { string },
   "buildPlatform": { string },
   "buildFlavor": { string },
@@ -1145,7 +1145,7 @@ Content-Type: application/json
 
 ```json
 {
-  "name": { string },  
+  "name": { string },
   "iteration": { string } ,
   "build": {
     "id": { int }
@@ -1163,7 +1163,7 @@ Content-Type: application/json
   "testEnvironmentId": { Guid },
   "startedDate": { DateTime },
   "completedDate": { DateTime },
-  "deleteUnexecutedResults": { bool },  
+  "deleteUnexecutedResults": { bool },
   "logEntries": [
       { "entryId": { int },   "dateCreated":  { DateTime }, "message": { string } }
   ]

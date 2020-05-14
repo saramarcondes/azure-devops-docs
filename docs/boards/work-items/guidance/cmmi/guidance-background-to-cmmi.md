@@ -24,11 +24,11 @@ The most important thing to understand about the CMMI-DEV is that it is a model.
 
 Without a model of how our organizations work, which functions they need, and how those functions interact, it is difficult to lead efforts to improve. A model gives us an understanding of discrete elements in our organizations and helps us formulate language and discussion of what needs to be improved and how such improvement might be achieved. A model offers the following benefits:
 
-* provides a common framework and language to help communicate
-* leverages years of experience
-* helps users keep the big picture in mind while focusing specifically on improvement
-* is often supported by trainers and consultants
-* can provide a standard to help solve disagreements
+- provides a common framework and language to help communicate
+- leverages years of experience
+- helps users keep the big picture in mind while focusing specifically on improvement
+- is often supported by trainers and consultants
+- can provide a standard to help solve disagreements
 
 ## <a name="What"></a> What is the purpose of the CMMI model?
 

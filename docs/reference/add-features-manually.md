@@ -309,11 +309,11 @@ To learn more about managing process templates, see, [Upload or download a proce
 
 Here's a checklist of WITs to import to support new features:
 
-* **Portfolio Backlogs**: Epic and Feature
-* **Code Review**: Code Review Request and Code Review Response
-* **Feedback**: Feedback Request and Feedback Response
-* **Shared Parameters**: Shared Parameters
-* **Test Plan and Test Suite**: Test Plan and Test Suite
+- **Portfolio Backlogs**: Epic and Feature
+- **Code Review**: Code Review Request and Code Review Response
+- **Feedback**: Feedback Request and Feedback Response
+- **Shared Parameters**: Shared Parameters
+- **Test Plan and Test Suite**: Test Plan and Test Suite
 
 <a id="edit-wit"> </a>
 
@@ -441,12 +441,12 @@ Depending on the customizations that you've made and the features you want to en
 2.  Make the updates required to support your project and add new features.
     Here's a checklist of categories to import to add or verify to support new features:
 
-    * **Code Review**: Code Review Request Category and Code Review Response Category
-    * **Feedback**: Feedback Request Category and Feedback Response Category
-    * **Planning Tools**: Requirement Category, Task Category, Bug Category, and Hidden Types Category
-    * **Shared Parameters**: Shared Parameters Category
-    * **Portfolio Backlogs**: Epic Category and Feature Category
-    * **Test Plan and Test Suite**: Test Plan Category and Test Suite Category
+    - **Code Review**: Code Review Request Category and Code Review Response Category
+    - **Feedback**: Feedback Request Category and Feedback Response Category
+    - **Planning Tools**: Requirement Category, Task Category, Bug Category, and Hidden Types Category
+    - **Shared Parameters**: Shared Parameters Category
+    - **Portfolio Backlogs**: Epic Category and Feature Category
+    - **Test Plan and Test Suite**: Test Plan Category and Test Suite Category
 
     If you use custom WITs to support requirements or tasks, then you'll want to add or modify the Requirement Category and Task Category. For example, Fabrikam Fiber uses the following definitions to support their requirement tracking:
 
@@ -630,9 +630,9 @@ See [Additional configuration options](additional-configuration-options.md) for 
 
 You can learn more about the objects used to track work and support Agile tools from these topics:
 
-* [Choose a process](../boards/work-items/guidance/choose-process.md)
-* [Customize your work tracking experience](customize-work.md)
-* [Customize a process template](process-templates/customize-process.md)
-* [Overview of process template files](process-templates/overview-process-template-files.md)
+- [Choose a process](../boards/work-items/guidance/choose-process.md)
+- [Customize your work tracking experience](customize-work.md)
+- [Customize a process template](process-templates/customize-process.md)
+- [Overview of process template files](process-templates/overview-process-template-files.md)
 
 If you need to rename a WIT, use **witadmin renamewitd** command to change the name, and then update the Categories definition file. See [Add or modify a work item type](add-modify-wit.md).

@@ -24,29 +24,29 @@ Share your feedback and ideas with us, or join our communities. We're always wor
 
 Do you need to do any of the following?
 
-* **Get advice** Visit StackOverflow for [Azure DevOps Services](https://stackoverflow.com/questions/tagged/vsts) or [Azure DevOps Server](https://stackoverflow.com/questions/tagged/tfs).
+- **Get advice** Visit StackOverflow for [Azure DevOps Services](https://stackoverflow.com/questions/tagged/vsts) or [Azure DevOps Server](https://stackoverflow.com/questions/tagged/tfs).
 
-* **Report a bug** Submit it through our Developer Community for [Azure DevOps Services](https://developercommunity.visualstudio.com/spaces/21/index.html) or [Azure DevOps Server](https://developercommunity.visualstudio.com/spaces/22/index.html).
+- **Report a bug** Submit it through our Developer Community for [Azure DevOps Services](https://developercommunity.visualstudio.com/spaces/21/index.html) or [Azure DevOps Server](https://developercommunity.visualstudio.com/spaces/22/index.html).
 
-* **Suggest a feature or a fix** Submit your idea or issue through our Developer Community for [Azure DevOps Services](https://developercommunity.visualstudio.com/content/idea/post.html?space=21) or [Azure DevOps Server](https://developercommunity.visualstudio.com/content/idea/post.html?space=22).
+- **Suggest a feature or a fix** Submit your idea or issue through our Developer Community for [Azure DevOps Services](https://developercommunity.visualstudio.com/content/idea/post.html?space=21) or [Azure DevOps Server](https://developercommunity.visualstudio.com/content/idea/post.html?space=22).
 
-* **Find out what's new in Azure DevOps** Check out the [current Azure DevOps Release Notes](https://visualstudio.microsoft.com/team-services/release-notes/). These notes are updated every three weeks.
+- **Find out what's new in Azure DevOps** Check out the [current Azure DevOps Release Notes](https://visualstudio.microsoft.com/team-services/release-notes/). These notes are updated every three weeks.
 
 ## Azure DevOps product support
 
 The primary support venues for Azure DevOps are as follows:
 
-* [Azure DevOps Services Support](https://azure.microsoft.com/support/devops/)
-* [Azure DevOps Server Support](https://visualstudio.microsoft.com/team-services/tfs-support/)
+- [Azure DevOps Services Support](https://azure.microsoft.com/support/devops/)
+- [Azure DevOps Server Support](https://visualstudio.microsoft.com/team-services/tfs-support/)
 
 For technical support:
 
-* [Basic support](https://support.microsoft.com/oas/default.aspx?prid=15339)
-* [Premium support](https://support.microsoft.com/oas/default.aspx?prid=15367)
+- [Basic support](https://support.microsoft.com/oas/default.aspx?prid=15339)
+- [Premium support](https://support.microsoft.com/oas/default.aspx?prid=15367)
 
 For billing support:
 
-* [Azure DevOps](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)
+- [Azure DevOps](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)
 
 ### Get live help
 
@@ -62,14 +62,14 @@ Add more detailed feedback by selecting the **Tell us more** link after selectin
 
 If you just want to vent about the product or the docs, that's okay. It helps us a lot to know when you're happy or unhappy with an experience. For the most impact, though, provide details so we can better understand what we're doing right or wrong.
 
-* Provide a little context. What problem were you trying to solve? At what point did it go wrong?
-* What's your role? We don't need personal or professional details. Are you a dev? A manager? A business owner? When we understand our audience, we can come up with better solutions for you and other customers doing similar work.
-* What version of the product were you using? What other products were you using with it?
+- Provide a little context. What problem were you trying to solve? At what point did it go wrong?
+- What's your role? We don't need personal or professional details. Are you a dev? A manager? A business owner? When we understand our audience, we can come up with better solutions for you and other customers doing similar work.
+- What version of the product were you using? What other products were you using with it?
 
 The best feedback we get is clear and precise. For example:
 
-* Product feedback: "I'm a project manager for a small start-up. I'm using Azure DevOps. I'm trying to create work item templates through the UI, but my changes don't seem to persist. It's not clear what I'm doing wrong."
-* Doc feedback: "I'm a dev in a large organization that works on Java apps. I tried to use Maven with your build system in Azure DevOps Server 2017 Update 1 (15.112.26307.0), but I couldn't get the configuration shown in the docs to work."
+- Product feedback: "I'm a project manager for a small start-up. I'm using Azure DevOps. I'm trying to create work item templates through the UI, but my changes don't seem to persist. It's not clear what I'm doing wrong."
+- Doc feedback: "I'm a dev in a large organization that works on Java apps. I tried to use Maven with your build system in Azure DevOps Server 2017 Update 1 (15.112.26307.0), but I couldn't get the configuration shown in the docs to work."
 
 The more details, the better!
 
@@ -161,5 +161,5 @@ A page similar to the following example opens showing the version number.
 
 ## Related articles
 
-* [Azure DevOps features timeline](/azure/devops/release-notes/features-timeline)
-* [Report a problem with Visual Studio](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)
+- [Azure DevOps features timeline](/azure/devops/release-notes/features-timeline)
+- [Report a problem with Visual Studio](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)

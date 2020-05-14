@@ -52,10 +52,10 @@ Having Azure DevOps Services host your extension's static content is useful when
 
 Keep in mind:
 
-* The value specified by the `path` attribute can be a folder or individual file. If a folder, the entire folder (and any sub-folders) are included.
-* The `addressable` attribute is important and is what tells Visual Studio Online to make the file(s) URL addressable.
-* All `addressable` asset requests are case sensitive. If the request for an asset has a different case than the actual uploaded asset, it results in a HTTP 404 (Not found) error.
-* Not specifying a baseUri (or setting an empty value) tells Visual Studio Online at runtime to calculate the base URI as if your static content is hosted by Azure DevOps Services.
+- The value specified by the `path` attribute can be a folder or individual file. If a folder, the entire folder (and any sub-folders) are included.
+- The `addressable` attribute is important and is what tells Visual Studio Online to make the file(s) URL addressable.
+- All `addressable` asset requests are case sensitive. If the request for an asset has a different case than the actual uploaded asset, it results in a HTTP 404 (Not found) error.
+- Not specifying a baseUri (or setting an empty value) tells Visual Studio Online at runtime to calculate the base URI as if your static content is hosted by Azure DevOps Services.
 
 ## Host on your own service (or a third-party service)
 

@@ -26,18 +26,18 @@ For information about the measures and dimensions that are associated with these
 
 FactBuildCoverage is associated with the following dimension tables:
 
-* DimAssembly
-* DimBuild
-* DimBuildFlavor
-* DimBuildPlatform
-* DimCodeElement
-* DimDate
-* DimTeamProject
+- DimAssembly
+- DimBuild
+- DimBuildFlavor
+- DimBuildPlatform
+- DimCodeElement
+- DimDate
+- DimTeamProject
 
 ## Related notes
 
-* [Builds](perspective-build-analyze-report-build-details-coverage.md)
-* [Code Churn](../excel/code-coverage-excel-report.md)
-* [Run Coverage tables](run-coverage-tables.md)
-* [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)
-* [Continuous integration on any platform](../../pipelines/overview.md)
+- [Builds](perspective-build-analyze-report-build-details-coverage.md)
+- [Code Churn](../excel/code-coverage-excel-report.md)
+- [Run Coverage tables](run-coverage-tables.md)
+- [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)
+- [Continuous integration on any platform](../../pipelines/overview.md)

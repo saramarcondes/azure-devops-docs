@@ -17,24 +17,24 @@ monikerRange: '>= tfs-2013'
 
 In this quickstart, you learn how to connect to a project to share code, build apps, track work, and collaborate with team members. You can use any of the following clients:
 
-* [Web portal](#web-portal)
-* [Visual Studio or Team Explorer](#visual-studio)
-* [Eclipse/Team Explorer Everywhere](../../repos/git/share-your-code-in-git-eclipse.md)
-* [Android Studio with the Azure DevOps Services Plugin for Android Studio](../../java/download-android-studio-plug-in.md)
-* [IntelliJ with the Azure DevOps Services Plugin for IntelliJ](../../java/download-intellij-plug-in.md)
-* [Visual Studio Code](../../java/vscode-extension.md)
+- [Web portal](#web-portal)
+- [Visual Studio or Team Explorer](#visual-studio)
+- [Eclipse/Team Explorer Everywhere](../../repos/git/share-your-code-in-git-eclipse.md)
+- [Android Studio with the Azure DevOps Services Plugin for Android Studio](../../java/download-android-studio-plug-in.md)
+- [IntelliJ with the Azure DevOps Services Plugin for IntelliJ](../../java/download-intellij-plug-in.md)
+- [Visual Studio Code](../../java/vscode-extension.md)
 
 A project defines a process and data storage in which you manage your software projects from planning to deployment. When you connect to a project, you connect to an organization or project collection. One or more projects may be defined within a collection. There must be at least one project. For more information, see [About projects and scaling your organization](about-projects.md).
 
 ## Prerequisites
 
-* If you don't have a project yet, [create one](create-project.md).
+- If you don't have a project yet, [create one](create-project.md).
 
-* If you need to add a team, see [Add teams](../../organizations/settings/add-teams.md). If you don't have access to the project, [get invited to the team](../security/add-users-team-project.md).
+- If you need to add a team, see [Add teams](../../organizations/settings/add-teams.md). If you don't have access to the project, [get invited to the team](../security/add-users-team-project.md).
 
-* From each of these clients, you can switch context to a different project and connect as a different user. If you work remotely, configure your client to [connect to an Azure DevOps Proxy Server](#proxy).
+- From each of these clients, you can switch context to a different project and connect as a different user. If you work remotely, configure your client to [connect to an Azure DevOps Proxy Server](#proxy).
 
-* To get started with a code base, [set up Git](../../repos/git/gitquickstart.md) or [set up TFVC](../../repos/tfvc/overview.md).
+- To get started with a code base, [set up Git](../../repos/git/gitquickstart.md) or [set up TFVC](../../repos/tfvc/overview.md).
 
 <a id="web-portal"> </a>
 
@@ -304,11 +304,11 @@ To associate a file type with a compare or merge tool, see [Associate a file typ
 
 Besides connecting through a web browser, Visual Studio, Eclipse, Excel, and Project you can connect to a project from these clients:
 
-* [Visual Studio Code](https://code.visualstudio.com/Docs)
-* [Visual Studio Community](https://visualstudio.microsoft.com/products/visual-studio-community-vs.aspx)
-* [Eclipse: Team Explorer Everywhere](/azure/devops/java/download-eclipse-plug-in)
-* [Azure Test Plans](../../test/mtm/guidance-mtm-usage.md) (formerly Test Manager)
-* [Microsoft Feedback Client](../../project/feedback/give-feedback.md)
+- [Visual Studio Code](https://code.visualstudio.com/Docs)
+- [Visual Studio Community](https://visualstudio.microsoft.com/products/visual-studio-community-vs.aspx)
+- [Eclipse: Team Explorer Everywhere](/azure/devops/java/download-eclipse-plug-in)
+- [Azure Test Plans](../../test/mtm/guidance-mtm-usage.md) (formerly Test Manager)
+- [Microsoft Feedback Client](../../project/feedback/give-feedback.md)
 
 ### Requirements and client compatibility
 
@@ -322,10 +322,10 @@ See [Feedback and support](../../user-guide/provide-feedback.md#platform-version
 
 Learn more about how to:
 
-* [Work in web portal](../../project/navigation/index.md)
-* [Work in Team Explorer](../../user-guide/work-team-explorer.md)
-* [Work in Office Excel or Project](../../boards/backlogs/office/track-work.md)
-* [Troubleshoot connection](../../user-guide/troubleshoot-connection.md)
+- [Work in web portal](../../project/navigation/index.md)
+- [Work in Team Explorer](../../user-guide/work-team-explorer.md)
+- [Work in Office Excel or Project](../../boards/backlogs/office/track-work.md)
+- [Troubleshoot connection](../../user-guide/troubleshoot-connection.md)
 
 If all you need is a code repository and bug tracking solution, then start with the [Get Started with Azure Repos](../../repos/git/gitquickstart.md) and [Manage bugs](../../boards/backlogs/manage-bugs.md).
 

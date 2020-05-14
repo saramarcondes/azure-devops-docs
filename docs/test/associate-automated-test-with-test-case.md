@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 Consider using Visual Studio to associate automated tests with a test case when:
 
-* You created a manual test case that you later decide is a good test
+- You created a manual test case that you later decide is a good test
   to automate, but you still want to be able to run that test as part of a test plan.
   Tests can be run in the CI/CD pipeline by choosing the test plan or test suite
   in the settings of the [Visual Studio Test](../pipelines/tasks/test/vstest.md) task.
@@ -24,7 +24,7 @@ Consider using Visual Studio to associate automated tests with a test case when:
   If you are using XAML builds you can also
   [run these automated tests by using Microsoft Test Manager](mtm/run-automated-tests-with-microsoft-test-manager.md).
 
-* You want to enable end-to-end traceability of requirements.
+- You want to enable end-to-end traceability of requirements.
   If your test cases are linked to requirements or user stories,
   the results of the test execution can be used to establish the quality of those requirements.
 
@@ -74,13 +74,13 @@ parameters are for manual tests only.
 
     **If you are using Visual Studio 2017 or later**, follow these steps to associate your tests.
 
-    * If the **Test Explorer** window is not displayed, open it from the **Test | Windows** menu.
+    - If the **Test Explorer** window is not displayed, open it from the **Test | Windows** menu.
 
-    * If your tests are not displayed in **Test Explorer**, build the solution.
+    - If your tests are not displayed in **Test Explorer**, build the solution.
 
-    * In **Test Explorer**, select the test method you want to associate and choose **Associate to Test Case**.
+    - In **Test Explorer**, select the test method you want to associate and choose **Associate to Test Case**.
 
-    * In the dialog that opens, type the test case identifier and choose **Add Association**, then choose **Save**.
+    - In the dialog that opens, type the test case identifier and choose **Add Association**, then choose **Save**.
 
     ![Associate Automation With Test Case](media/associate-automated-test-with-test-case/test-explorer-associate.png)
 
@@ -98,19 +98,19 @@ parameters are for manual tests only.
 
 **A**: These are the limitations for each type of test:
 
-* Coded UI test, Selenium tests, and unit tests written using
+- Coded UI test, Selenium tests, and unit tests written using
   Version 1 of the MSTest framework **can** be associated with a test case.
-* Tests that use MSTest v2, NUnit, and xUnit frameworks **can** be associated
+- Tests that use MSTest v2, NUnit, and xUnit frameworks **can** be associated
   with a test case workitem when using Visual Studio 15.9 Preview 2 or later.
   However, these tests cannot be run using Microsoft Test Manager and XAML builds.
-* Tests that use the .NET core framework **can** be associated with a test case
+- Tests that use the .NET core framework **can** be associated with a test case
   workitem when using Visual Studio 15.9 Preview 2 or later.
   To run the .NET core tests the appropriate target framework must be specified
   in a [runsettings file](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file).
   However, these tests cannot be run using Microsoft Test Manager and XAML builds.
-* Tests that use other test frameworks such as Chutzpah (for JavaScript tests
+- Tests that use other test frameworks such as Chutzpah (for JavaScript tests
   such as Mocha or QUnit), or Jest **cannot** be associated with a test case.
-* Associating generic tests **may** work, but running these tests is not supported.
+- Associating generic tests **may** work, but running these tests is not supported.
 
 <a name="xaml-build"></a>
 
@@ -134,8 +134,8 @@ change the **Work Items | General** setting from the **Tools | Options** menu in
 
 ## See Also
 
-* [Associate automated test results with requirements](associate-automated-results-with-requirements.md)
-* [Run automated tests from test plans](run-automated-tests-from-test-hub.md)
-* [Run automated tests with Microsoft Test Manager](mtm/run-automated-tests-with-microsoft-test-manager.md)
+- [Associate automated test results with requirements](associate-automated-results-with-requirements.md)
+- [Run automated tests from test plans](run-automated-tests-from-test-hub.md)
+- [Run automated tests with Microsoft Test Manager](mtm/run-automated-tests-with-microsoft-test-manager.md)
 
 [!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

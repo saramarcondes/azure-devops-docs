@@ -71,11 +71,11 @@ In addition, you can link work items within a hierarchy or by simple related lin
 
 As your project grows, the number of work items used to track it grows. To support your ability to quickly find a specific work item, Azure Boards provides you with easy-to-use tools:
 
-* A follow feature so you can [follow work items](../work-items/follow-work-items.md) to monitor updates and changes
-* [Pivot views](../work-items/view-add-work-items.md) that show you work items assigned to you, that you elected to follow, were recently modified, and more
-* A powerful [query engine](../queries/example-queries.md) that filters work item lists based on any field and used to update or triage work items
-* Fast, flexible [ad-hoc search](../queries/search-box-queries.md) with quick inline filters
-* Alert management settings so you can [personalize the alerts](../../notifications/howto-manage-personal-notifications.md) you receive when work items are assigned to you or are changed, or other filter criteria
+- A follow feature so you can [follow work items](../work-items/follow-work-items.md) to monitor updates and changes
+- [Pivot views](../work-items/view-add-work-items.md) that show you work items assigned to you, that you elected to follow, were recently modified, and more
+- A powerful [query engine](../queries/example-queries.md) that filters work item lists based on any field and used to update or triage work items
+- Fast, flexible [ad-hoc search](../queries/search-box-queries.md) with quick inline filters
+- Alert management settings so you can [personalize the alerts](../../notifications/howto-manage-personal-notifications.md) you receive when work items are assigned to you or are changed, or other filter criteria
 
 ## 7. Monitor status and progress with built-in dashboards and analytics
 
@@ -92,8 +92,8 @@ In addition to dashboards, you have access to the [Analytics service](../../repo
 
 Project managers who want to use familiar tools can import and export work item queries to and from Microsoft Office Excel and Project. To learn more, see:
 
-* [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)
-* [Create your backlog and tasks by using Project](../backlogs/office/create-your-backlog-tasks-using-project.md)
+- [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)
+- [Create your backlog and tasks by using Project](../backlogs/office/create-your-backlog-tasks-using-project.md)
 
 ## 9. Extensions and extensibility
 
@@ -121,4 +121,4 @@ Get started today. To learn how, see [Sign up for free and invite others to coll
 
 ## Related articles
 
-* [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)
+- [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)

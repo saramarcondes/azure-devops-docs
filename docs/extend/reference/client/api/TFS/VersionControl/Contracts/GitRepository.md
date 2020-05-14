@@ -15,16 +15,16 @@ Module path: `TFS/VersionControl/Contracts`
 
 ### Members
 
-* `_links`: any.
+- `_links`: any.
 
-* `defaultBranch`: string.
+- `defaultBranch`: string.
 
-* `id`: string.
+- `id`: string.
 
-* `name`: string.
+- `name`: string.
 
-* `project`: [TFS_Core_Contracts.TeamProjectReference](../../../TFS/DistributedTask/Contracts/TeamProjectReference.md).
+- `project`: [TFS_Core_Contracts.TeamProjectReference](../../../TFS/DistributedTask/Contracts/TeamProjectReference.md).
 
-* `remoteUrl`: string.
+- `remoteUrl`: string.
 
-* `url`: string.
+- `url`: string.

@@ -11,11 +11,11 @@ description: The single service that was Visual Studio Team Services (VSTS) is n
 
 The single service that was Visual Studio Team Services (VSTS) is now becoming our new set of [Azure DevOps](https://azure.microsoft.com/services/devops/) services. Throughout our documentation, websites, and in-product you'll start to notice new icons and names for Azure DevOps all up and each of our services within Azure DevOps.
 
-* [**Azure Pipelines**](https://azure.microsoft.com/services/devops/pipelines/) to continuously build, test, and deploy to any platform and cloud.
-* [**Azure Boards**](https://azure.microsoft.com/services/devops/boards/) for powerful work management.
-* [**Azure Artifacts**](https://azure.microsoft.com/services/devops/artifacts/) for Maven, npm, and NuGet package feeds.
-* [**Azure Repos**](https://azure.microsoft.com/services/devops/repos/) for unlimited cloud-hosted private Git repos.
-* [**Azure Test Plans**](https://azure.microsoft.com/services/devops/test-plans/) for planned and exploratory testing.
+- [**Azure Pipelines**](https://azure.microsoft.com/services/devops/pipelines/) to continuously build, test, and deploy to any platform and cloud.
+- [**Azure Boards**](https://azure.microsoft.com/services/devops/boards/) for powerful work management.
+- [**Azure Artifacts**](https://azure.microsoft.com/services/devops/artifacts/) for Maven, npm, and NuGet package feeds.
+- [**Azure Repos**](https://azure.microsoft.com/services/devops/repos/) for unlimited cloud-hosted private Git repos.
+- [**Azure Test Plans**](https://azure.microsoft.com/services/devops/test-plans/) for planned and exploratory testing.
 
 With the launch of Azure Pipelines, we've introduced a [new app to the GitHub Marketplace](#add-azure-pipelines-from-the-github-marketplace), refreshed a number of the experiences to help you get started, and offers [unlimited CI/CD minutes and 10 parallel jobs](#build-open-source-projects-with-azure-pipelines-for-free) for open source projects.
 
@@ -25,26 +25,26 @@ Check out the [Features](#features) list below for more.
 
 Azure Pipelines:
 
-* [Add Azure Pipelines from the GitHub Marketplace](#add-azure-pipelines-from-the-github-marketplace)
-* [Build open source projects with Azure Pipelines for free](#build-open-source-projects-with-azure-pipelines-for-free)
-* [Configure builds using YAML](#configure-builds-using-yaml)
-* [Create YAML build pipelines using the new wizard](#create-yaml-build-pipelines-using-the-new-wizard)
-* [Manage build pipelines using the new Builds page](#manage-build-pipelines-using-the-new-builds-page)
-* [Rebuild GitHub pull request builds](#rebuild-github-pull-request-builds)
-* [New build status badge URL](#new-build-status-badge-url)
-* [Leverage even more tools on Microsoft-hosted Linux agents](#leverage-even-more-tools-on-microsoft-hosted-linux-agents)
-* [Track GitHub commits and associated issues in releases](#track-github-commits-and-associated-issues-in-releases)
-* [Manage build and deployment completion emails better using improved formatting](#manage-build-and-deployment-completion-emails-better-using-improved-formatting)
-* [Follow the new unified Azure Pipelines terminology](#follow-the-new-unified-azure-pipelines-terminology)
+- [Add Azure Pipelines from the GitHub Marketplace](#add-azure-pipelines-from-the-github-marketplace)
+- [Build open source projects with Azure Pipelines for free](#build-open-source-projects-with-azure-pipelines-for-free)
+- [Configure builds using YAML](#configure-builds-using-yaml)
+- [Create YAML build pipelines using the new wizard](#create-yaml-build-pipelines-using-the-new-wizard)
+- [Manage build pipelines using the new Builds page](#manage-build-pipelines-using-the-new-builds-page)
+- [Rebuild GitHub pull request builds](#rebuild-github-pull-request-builds)
+- [New build status badge URL](#new-build-status-badge-url)
+- [Leverage even more tools on Microsoft-hosted Linux agents](#leverage-even-more-tools-on-microsoft-hosted-linux-agents)
+- [Track GitHub commits and associated issues in releases](#track-github-commits-and-associated-issues-in-releases)
+- [Manage build and deployment completion emails better using improved formatting](#manage-build-and-deployment-completion-emails-better-using-improved-formatting)
+- [Follow the new unified Azure Pipelines terminology](#follow-the-new-unified-azure-pipelines-terminology)
 
 Marketplace:
 
-* [Leverage the latest extension categories](#leverage-the-latest-extension-categories)
+- [Leverage the latest extension categories](#leverage-the-latest-extension-categories)
 
 Administration:
 
-* [Switch existing organizations to use the new domain name URL](#switch-existing-organizations-to-use-the-new-domain-name-url)
-* [Add Stakeholder users to save on Azure Pipelines license costs](#add-stakeholder-users-to-save-on-azure-pipelines-license-costs)
+- [Switch existing organizations to use the new domain name URL](#switch-existing-organizations-to-use-the-new-domain-name-url)
+- [Add Stakeholder users to save on Azure Pipelines license costs](#add-stakeholder-users-to-save-on-azure-pipelines-license-costs)
 
 ## Next steps
 
@@ -114,23 +114,23 @@ Build badges embedded into the homepage of a repository are a common way to show
 
 In this update, several build, test, and deployment tools have been added to the [Microsoft-hosted Linux agents](/azure/devops/pipelines/agents/hosted?view=azure-devops#software), which removes the need to install them yourself during a build or release.
 
-* Erlang/OTP
-* Firefox
-* Haskell
-* Heroku CLI
-* ImageMagick
-* Mercurial
-* Microsoft SQL Server Client Tools
-* MySQL Server
-* PhantomJS
-* Pollinate
-* PyPy2 and PyPy3
-* rebar
-* rsync
-* ShellCheck
-* Sphinx
-* Terraform
-* Xvfb
+- Erlang/OTP
+- Firefox
+- Haskell
+- Heroku CLI
+- ImageMagick
+- Mercurial
+- Microsoft SQL Server Client Tools
+- MySQL Server
+- PhantomJS
+- Pollinate
+- PyPy2 and PyPy3
+- rebar
+- rsync
+- ShellCheck
+- Sphinx
+- Terraform
+- Xvfb
 
 ### Track GitHub commits and associated issues in releases
 
@@ -144,13 +144,13 @@ Build and deployment completion emails have been updated to be more filterable b
 
 Elements of the new format are:
 
-* `[Build result] [pipeline name] - [repository:branch] - [project name] - [commit]`
-* `[Deployment result] [pipeline name] > [release name] : [stage name]`
+- `[Build result] [pipeline name] - [repository:branch] - [project name] - [commit]`
+- `[Deployment result] [pipeline name] > [release name] : [stage name]`
 
 Here are a few examples:
 
-* `[Build succeeded] IdentityService.CI - MyRepo:master - MyProject - d3b90b80`
-* `[Deployment succeeded] New release pipeline > NotificationSpecialRelease-1 : Stage 1`
+- `[Build succeeded] IdentityService.CI - MyRepo:master - MyProject - d3b90b80`
+- `[Deployment succeeded] New release pipeline > NotificationSpecialRelease-1 : Stage 1`
 
 ### Follow the new unified Azure Pipelines terminology
 
@@ -201,10 +201,10 @@ We will make the move to the new URL gradually based on customer feedback. It wi
 
 Good news! If you are only using the Azure Pipelines service, you do not have to pay for users anymore through Basic licenses. All features of Azure Pipelines are available for free to all users. As you add more users to your project, let them remain as Stakeholders for free, and they will be able to create, view, update, and approve pipelines, provided they have the appropriate permissions. Here are some additional notes on this licensing change:
 
-* You only pay for additional parallel jobs in Azure Pipelines. Users are unlimited.
-* All access to Azure Pipelines features is still governed through a security and permissions model.
-* If you use other Azure DevOps services, you still have to pay a per-user license for those services after the free limits.
-* In existing organizations, Stakeholders do not get the free Azure Pipelines benefit by default. Your organization administrator (Project Collection Administrator) has to explicitly enable this preview feature. Enabling this preview feature will change the behavior of what Stakeholders can do. Currently, they cannot manage builds or releases. But, once the preview feature is enabled, there is no difference between Basic users and Stakeholders in Azure Pipelines. It is for this reason that the choice of allowing Stakeholders to be treated as free Azure Pipelines users is left to your administrator.
+- You only pay for additional parallel jobs in Azure Pipelines. Users are unlimited.
+- All access to Azure Pipelines features is still governed through a security and permissions model.
+- If you use other Azure DevOps services, you still have to pay a per-user license for those services after the free limits.
+- In existing organizations, Stakeholders do not get the free Azure Pipelines benefit by default. Your organization administrator (Project Collection Administrator) has to explicitly enable this preview feature. Enabling this preview feature will change the behavior of what Stakeholders can do. Currently, they cannot manage builds or releases. But, once the preview feature is enabled, there is no difference between Basic users and Stakeholders in Azure Pipelines. It is for this reason that the choice of allowing Stakeholders to be treated as free Azure Pipelines users is left to your administrator.
 
 See the [Provide Stakeholders access to edit build and release pipelines](/azure/devops/organizations/security/provide-stakeholder-pipeline-access) documentation for more information.
 

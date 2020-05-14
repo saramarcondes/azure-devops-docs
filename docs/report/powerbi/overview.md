@@ -78,11 +78,11 @@ You can pull data from Analytics into Power BI in one of three ways. It is impor
 
 ### Sample reports using Analytics View
 
-* [Active bugs report](active-bugs-sample-report.md)
-* [Get a count of work items](data-connector-examples.md)
-* [Add a last refresh date](add-last-refresh-time.md)
-* [Filter on teams](create-team-filter.md)
-* [Calculate time-in-state for an existing Analytics view](create-timeinstate-report.md)
+- [Active bugs report](active-bugs-sample-report.md)
+- [Get a count of work items](data-connector-examples.md)
+- [Add a last refresh date](add-last-refresh-time.md)
+- [Filter on teams](create-team-filter.md)
+- [Calculate time-in-state for an existing Analytics view](create-timeinstate-report.md)
 
 ### Sample reports using OData Queries
 
@@ -96,7 +96,7 @@ For specific examples, see one of the following articles:
 
 ## Related articles
 
-* [Extend Analytics with OData](../extend-analytics/quick-ref.md)
-* [Dashboards, charts, reports & widgets](../dashboards/overview.md)
-* [Power BI Desktop](/power-bi/desktop-get-the-desktop)
-* [Power BI documentation](/power-bi)
+- [Extend Analytics with OData](../extend-analytics/quick-ref.md)
+- [Dashboards, charts, reports & widgets](../dashboards/overview.md)
+- [Power BI Desktop](/power-bi/desktop-get-the-desktop)
+- [Power BI documentation](/power-bi)

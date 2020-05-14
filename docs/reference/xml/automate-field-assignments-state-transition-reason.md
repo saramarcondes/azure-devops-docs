@@ -35,7 +35,7 @@ The following syntax is used for the **ACTION** element. The value attribute spe
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <ACTION value="NameOfAction" />  
+> <ACTION value="NameOfAction" />
 > ```
 
 <a name="RequiredSteps"></a>
@@ -66,14 +66,14 @@ The author can automatically transition the work item from the "Working" state t
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <TRANSITION from="Working" to="Ready To Build">  
+> <TRANSITION from="Working" to="Ready To Build">
 >    <REASONS>
 >       ...
 >    </REASONS>
->       <ACTIONS>  
->       <ACTION value="microsoft.vsts.actions.checkin"/>  
->       </ACTIONS>  
-> </TRANSITION>  
+>       <ACTIONS>
+>       <ACTION value="microsoft.vsts.actions.checkin"/>
+>       </ACTIONS>
+> </TRANSITION>
 > ```
 
 <a name="TransactionDetails"></a>
@@ -82,33 +82,33 @@ The author can automatically transition the work item from the "Working" state t
 
 Use state transition actions to automate transitions of work items at various points in their workflow. You might consider the following usage details about transition actions:
 
-* Transition actions are optional. If the current state of the work item instance has an action entry for the specified action, it returns the "to" state. If not, the return value is Null. Integrations should handle Null return values gracefully. That is:
+- Transition actions are optional. If the current state of the work item instance has an action entry for the specified action, it returns the "to" state. If not, the return value is Null. Integrations should handle Null return values gracefully. That is:
 
-  * Do not fail.
+  - Do not fail.
 
-  * Leave a trace or log that indicates that the integration did not auto-transition because it required an action that was not found.
+  - Leave a trace or log that indicates that the integration did not auto-transition because it required an action that was not found.
 
-* For each work item type, actions must be unique for From State/Action pairs. This means that work item type authors cannot specify multiple "to" states for the same action.
+- For each work item type, actions must be unique for From State/Action pairs. This means that work item type authors cannot specify multiple "to" states for the same action.
 
-* However, multiple actions on the same transition are supported to allow for multiple auto-transition integrations as shown in the following example:
+- However, multiple actions on the same transition are supported to allow for multiple auto-transition integrations as shown in the following example:
 
   > [!div class="tabbedCodeSnippets"]
   >
   > ```XML
-  > <TRANSITION from="Working" to="Ready To Build">  
+  > <TRANSITION from="Working" to="Ready To Build">
   >    <REASONS>
   >       <DEFAULTREASON value="Fixed" />
   >    </REASONS>
-  >       <ACTIONS>  
-  >       <ACTION value="Microsoft.VSTS.Actions.Checkin"/>  
-  >       <ACTION value="ADatum.Actions.Complete"/>  
-  >       </ACTIONS>  
-  > </TRANSITION>  
+  >       <ACTIONS>
+  >       <ACTION value="Microsoft.VSTS.Actions.Checkin"/>
+  >       <ACTION value="ADatum.Actions.Complete"/>
+  >       </ACTIONS>
+  > </TRANSITION>
   > ```
 
-* Action names are programmatic names for which you can use only English characters.
+- Action names are programmatic names for which you can use only English characters.
 
-* Action names should follow the same reference namespace convention as field reference names, to avoid action name conflicts between vendors and customers. However, this convention is not enforced by the tool. Visual Studio ALM uses **Microsoft.VSTS.Actions.\<your action>**.
+- Action names should follow the same reference namespace convention as field reference names, to avoid action name conflicts between vendors and customers. However, this convention is not enforced by the tool. Visual Studio ALM uses **Microsoft.VSTS.Actions.\<your action>**.
 
 <a name="ErrorChecking"></a>
 
@@ -116,23 +116,23 @@ Use state transition actions to automate transitions of work items at various po
 
 Integrators can try two types of auto-transitions. The first is an auto-transition that occurs because of a user action. The second is an auto-transition that occurs by unattended automation, such as a nightly build.
 
-* **User action auto-transitions** For this kind of auto-transition, a user is present to react to any rule-related issues that appear. You must make sure that you support the situation that occurs when the author of a work item type adds a required field that the integration does not recognize. To support this situation, perform the auto-transition and then inspect the work item type for rule violations. If you find any, display the form for the user to resolve.
+- **User action auto-transitions** For this kind of auto-transition, a user is present to react to any rule-related issues that appear. You must make sure that you support the situation that occurs when the author of a work item type adds a required field that the integration does not recognize. To support this situation, perform the auto-transition and then inspect the work item type for rule violations. If you find any, display the form for the user to resolve.
 
-* **Unattended automation auto-transitions** You must assume that no user is present to resolve these issues. In this case, the integration should fail gracefully. An error log should state that the auto-transition was tried, and it should give a reason for the failure.
+- **Unattended automation auto-transitions** You must assume that no user is present to resolve these issues. In this case, the integration should fail gracefully. An error log should state that the auto-transition was tried, and it should give a reason for the failure.
 
   When defining either type of auto-transition, define the transition so that each work item reaches a valid state at the end of the transition without requiring user intervention. In other words, all the rules that are defined for the state being transitioned to are met by providing defaults or copied values for all fields. If any field becomes invalid after the transition, the state transition will fail.
 
   In order to keep fields from becoming invalid, do the following:
 
-* Define a **DEFAULTREASON** for the state transition.
+- Define a **DEFAULTREASON** for the state transition.
 
-* For fields that would become required after the state transition, use the **DEFAULT** or **COPY** rule elements to specify a value for the field.
+- For fields that would become required after the state transition, use the **DEFAULT** or **COPY** rule elements to specify a value for the field.
 
   For example, you have created the transition action Check-In, which transitions the state of a work item from "Working" to "Ready to Build". The work item's rules for "Ready to Build" require that the "Resolved By" field be set. You would then define a **DEFAULT** or **COPY** rule element for "ResolvedBy" in the **TRANSITION** section. Additionally, you would define a **DEFAULTREASON** to make sure that the required field can be set without user intervention.
 
 ## Related articles
 
-* [Customize your work tracking experience](../customize-work.md)
-* [Control](control-xml-element-reference.md)
-* [Apply a field rule](apply-rule-work-item-field.md)
-* [Change the workflow](change-workflow-wit.md)
+- [Customize your work tracking experience](../customize-work.md)
+- [Control](control-xml-element-reference.md)
+- [Apply a field rule](apply-rule-work-item-field.md)
+- [Change the workflow](change-workflow-wit.md)

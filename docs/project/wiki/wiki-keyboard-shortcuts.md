@@ -27,6 +27,6 @@ ms.date: 12/17/2018
 
 ## Related articles
 
-* [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../reference/markdown-guidance.md)
-* [Keyboard shortcuts](../navigation/keyboard-shortcuts.md)
-* [Manage README and Wiki permissions](manage-readme-wiki-permissions.md)
+- [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../reference/markdown-guidance.md)
+- [Keyboard shortcuts](../navigation/keyboard-shortcuts.md)
+- [Manage README and Wiki permissions](manage-readme-wiki-permissions.md)

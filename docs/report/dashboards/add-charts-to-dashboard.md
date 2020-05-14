@@ -37,20 +37,20 @@ You can add the charts described in this article to a dashboard from their corre
 
 ::: moniker range="azure-devops"
 
-* You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/accounts/set-up-vs).
-* You must have [created the team dashboard](dashboards.md) to which you want to add a chart to.
-* If you haven't been added as a project member, [get added now](/azure/devops/organizations/accounts/add-organization-users).
-* Anyone with access to a project, including [stakeholders](/azure/devops/organizations/security/get-started-stakeholder), can view dashboards.
-* To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be a [team admin](/azure/devops/organizations/settings/add-team-administrator), a project admin, or have [dashboard permissions](/azure/devops/report/dashboards/dashboard-permissions). In general, you need to be a member of the team to edit a team dashboard.
+- You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/accounts/set-up-vs).
+- You must have [created the team dashboard](dashboards.md) to which you want to add a chart to.
+- If you haven't been added as a project member, [get added now](/azure/devops/organizations/accounts/add-organization-users).
+- Anyone with access to a project, including [stakeholders](/azure/devops/organizations/security/get-started-stakeholder), can view dashboards.
+- To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be a [team admin](/azure/devops/organizations/settings/add-team-administrator), a project admin, or have [dashboard permissions](/azure/devops/report/dashboards/dashboard-permissions). In general, you need to be a member of the team to edit a team dashboard.
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018 <= azure-devops-2019"
 
-* You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
-* You must have [created the team dashboard](dashboards.md) to which you want to add a chart to.
-* If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project).
-* To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be a team admin, a project admin, or have [dashboard permissions](/azure/devops/report/dashboards/dashboard-permissions). In general, you need to be a member of the team to edit a team dashboard.
+- You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
+- You must have [created the team dashboard](dashboards.md) to which you want to add a chart to.
+- If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project).
+- To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be a team admin, a project admin, or have [dashboard permissions](/azure/devops/report/dashboards/dashboard-permissions). In general, you need to be a member of the team to edit a team dashboard.
   Request your current team or project admin to add you as a [team admin](/azure/devops/organizations/settings/add-team-administrator).
 
 ::: moniker-end
@@ -64,10 +64,10 @@ You can add the charts described in this article to a dashboard from their corre
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 
-* You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
-* You must have [created the team dashboard](dashboards.md) to which you want to add a chart to.
-* If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project).
-* To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be added to the [team administrator role for the team](/azure/devops/organizations/settings/add-team-administrator).
+- You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
+- You must have [created the team dashboard](dashboards.md) to which you want to add a chart to.
+- If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project).
+- To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be added to the [team administrator role for the team](/azure/devops/organizations/settings/add-team-administrator).
 
 ::: moniker-end
 
@@ -99,10 +99,10 @@ You can add each of the in-context Analytics reports to a dashboard.
 
 There are a number of in-context reports that you can access from the web portal, but can't add to a dashboard. However, you may find a comparable widget listed in the [widget catalog](widget-catalog.md) that tracks the same or similar data which you can add to the dashboard. These include:
 
-* [Add Markdown to a dashboard](add-markdown-to-dashboard.md)
-* [Team velocity](../guidance/team-velocity.md)
-* [View/configure sprint burndown](configure-sprint-burndown.md), see [Sprint burndown widget](widget-catalog.md#sprint-burndown-widget)
-* [Cumulative flow](../guidance/cumulative-flow.md), see [CFD widget](widget-catalog.md)
+- [Add Markdown to a dashboard](add-markdown-to-dashboard.md)
+- [Team velocity](../guidance/team-velocity.md)
+- [View/configure sprint burndown](configure-sprint-burndown.md), see [Sprint burndown widget](widget-catalog.md#sprint-burndown-widget)
+- [Cumulative flow](../guidance/cumulative-flow.md), see [CFD widget](widget-catalog.md)
 
 ::: moniker-end
 
@@ -184,7 +184,7 @@ As you create and run tests, you can track your status by defining [lightweight 
 
 1.  Open **Test>Test Plans** and then **Charts** and select the dashboard to add the test chart to.
 
-        	![Add a test plan chart to a dashboard](media/add-a-chart-test-plan.png)  
+        	![Add a test plan chart to a dashboard](media/add-a-chart-test-plan.png)
 
     ::: moniker-end
 
@@ -240,9 +240,9 @@ You add work item queries and charts to a dashboard from the Queries page. Queri
 
 4.  From the charts Actions menu, choose the team dashboard.
 
-        ![Chart context menu, add to a dashboard](media/pin-chart-to-a-dashboard.png)  
+        ![Chart context menu, add to a dashboard](media/pin-chart-to-a-dashboard.png)
 
-        You can only add charts associated with shared queries. Charts associated with queries under My Queries folder won't display the add to dashboard option.  
+        You can only add charts associated with shared queries. Charts associated with queries under My Queries folder won't display the add to dashboard option.
 
     ::: moniker-end
 
@@ -271,15 +271,15 @@ Requires TFS 2015.2 or later version.
 
 ::: moniker range=">= azure-devops-2019"
 
-* [Analyze test results](../../pipelines/test/test-analytics.md)
-* [Burndown guidance](burndown-guidance.md)
-* [Cumulative flow & lead/cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)
-* [Velocity guidance](velocity-guidance.md)
+- [Analyze test results](../../pipelines/test/test-analytics.md)
+- [Burndown guidance](burndown-guidance.md)
+- [Cumulative flow & lead/cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)
+- [Velocity guidance](velocity-guidance.md)
   ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
-* [Burndown guidance](burndown-guidance.md)
-* [Cumulative flow & lead/cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)
-* [Velocity guidance](velocity-guidance.md)
+- [Burndown guidance](burndown-guidance.md)
+- [Cumulative flow & lead/cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)
+- [Velocity guidance](velocity-guidance.md)
   ::: moniker-end

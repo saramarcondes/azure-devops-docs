@@ -14,8 +14,8 @@ ms.date: 08/31/2018
 
 With the introduction of Azure DevOps Services, organizational resources and APIs are now accessible via either of the following URLs:
 
-* `https://dev.azure.com/{organization}` (new)
-* `https://{organization}.visualstudio.com` (legacy)
+- `https://dev.azure.com/{organization}` (new)
+- `https://{organization}.visualstudio.com` (legacy)
 
 Regardless of when the organization was created, users, tools, and integrations can interact with organization-level REST APIs using either URL. As the developer of an extension, integration, or tool that interacts with Azure DevOps Services, it is important to understand how to properly work with URLs made available to your code and how to properly form URLs when calling REST APIs.
 
@@ -34,9 +34,9 @@ Each organization has a designated **primary** URL that is either the new form o
 
 The primary URL is the base URL for all URLs constructed by Azure DevOps in background jobs and other automated scenarios, like:
 
-* URLs provided to Azure Pipelines tasks via environment variables (like `SYSTEM_TEAMFOUNDATIONCOLLECTIONURI`)
-* URLs included in service hooks event payloads (like URLs in `resourceContainers`)
-* URLs in email, Slack, Microsoft Teams, and similar notifications
+- URLs provided to Azure Pipelines tasks via environment variables (like `SYSTEM_TEAMFOUNDATIONCOLLECTIONURI`)
+- URLs included in service hooks event payloads (like URLs in `resourceContainers`)
+- URLs in email, Slack, Microsoft Teams, and similar notifications
 
 For example, the following task snippet displays the organization URL provided to the task:
 

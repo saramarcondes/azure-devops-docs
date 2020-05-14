@@ -19,18 +19,18 @@ ms.date: 01/08/2018
 
 Using a work item query you can quickly review and update work items. Oftentimes team use the triage mode for a query to perform the following tasks:
 
-* Set the priority of a bug or work item
-* Assign a work item to a sprint or team member
-* Add details to the description, acceptance criteria, or repo steps
-* Link related work items
-* Update the status of work items
+- Set the priority of a bug or work item
+- Assign a work item to a sprint or team member
+- Add details to the description, acceptance criteria, or repo steps
+- Link related work items
+- Update the status of work items
 
 In this article you'll learn how to:
 
 > [!div class="checklist"]
 >
-> * Use triage query mode to update a list of work items
-> * Bulk save work items that you've updated
+> - Use triage query mode to update a list of work items
+> - Bulk save work items that you've updated
 
 [!INCLUDE [temp](../includes/prerequisites-queries.md)]
 
@@ -104,6 +104,6 @@ Choose the ![double-save-icon](../media/icons/icon-double-save.png) double-save 
 
 ## Related articles
 
-* [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)
-* [Manage bugs](../backlogs/manage-bugs.md)
-* [Create a query](using-queries.md)
+- [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)
+- [Manage bugs](../backlogs/manage-bugs.md)
+- [Create a query](using-queries.md)

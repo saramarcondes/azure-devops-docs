@@ -60,18 +60,18 @@ For the Quality Dashboard to be useful and accurate, the team must perform the a
 
 For the Test Plan Progress report to be useful and accurate, the team must perform the following activities:
 
-* Define test cases and user stories, and create **Tested By** links between test cases and user stories.
+- Define test cases and user stories, and create **Tested By** links between test cases and user stories.
 
-* [Define test plans](../../test/create-test-cases.md), and assign test cases to test plans.
+- [Define test plans](../../test/create-test-cases.md), and assign test cases to test plans.
 
-* For manual tests, mark the results of each validation step in the test case as passed or failed.
+- For manual tests, mark the results of each validation step in the test case as passed or failed.
 
   > [!IMPORTANT]
   > Testers must mark a test step with a status if it is a validation test step. The overall result for a test case reflects the status of all the test steps that the tester marked. Therefore, the test case will have a status of failed if the tester marked any test step as failed or did not mark it.
 
   For automated tests, each test case is automatically marked as passed or failed.
 
-* (Optional) To support filtering, assign **Iteration** and **Area** paths to each test case.
+- (Optional) To support filtering, assign **Iteration** and **Area** paths to each test case.
 
   > [!NOTE]
   > For information about how to define area and iteration paths, see [Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) .
@@ -80,33 +80,33 @@ For the Test Plan Progress report to be useful and accurate, the team must perfo
 
 For the Bug Progress and Bug Reactivations reports to be useful and accurate, the team must perform the following activities:
 
-* Define Bugs.
+- Define Bugs.
 
-* Update the **State** of each Bug as the team fixes, verifies, closes, or reactivates it.
+- Update the **State** of each Bug as the team fixes, verifies, closes, or reactivates it.
 
-* (Optional) Specify the **Iteration** and **Area** paths of each Bug if you want to filter by those fields.
+- (Optional) Specify the **Iteration** and **Area** paths of each Bug if you want to filter by those fields.
 
 ### Required activities for tracking build status, code coverage, and code churn
 
 For the Build Status, Code Coverage, and Code Churn reports to be useful and accurate, team members must perform the following activities:
 
-* **Configure a build system**. To use Team Foundation Build, you must set up a build system.
+- **Configure a build system**. To use Team Foundation Build, you must set up a build system.
 
   For more information, see [Build and Release agents](../../pipelines/agents/agents.md).
 
-* **Create build pipelines**. You can create several build pipelines and then run each of them to produce code for a different platform. Also, you can run each build for a different configuration.
+- **Create build pipelines**. You can create several build pipelines and then run each of them to produce code for a different platform. Also, you can run each build for a different configuration.
 
   For more information, see [Get started with CI/CD](../../pipelines/get-started-designer.md).
 
-* **Define tests to run automatically as part of the build**. As part of the build pipeline, you can define tests to run as part of the build or to fail if the tests fail.
+- **Define tests to run automatically as part of the build**. As part of the build pipeline, you can define tests to run as part of the build or to fail if the tests fail.
 
   For more information, see [Set up continuous testing for your builds](../../pipelines/test/set-up-continuous-testing-builds.md).
 
-* **Configure tests to gather code coverage data**. For code coverage data to appear in the report, team members must instrument tests to gather that data.
+- **Configure tests to gather code coverage data**. For code coverage data to appear in the report, team members must instrument tests to gather that data.
 
   For more information, see [Run tests in your build process](../../pipelines/test/test-build.md).
 
-* **Run builds regularly**. You can run builds at regular intervals or after every check-in. You can create regular builds when you use the schedule trigger.
+- **Run builds regularly**. You can run builds at regular intervals or after every check-in. You can create regular builds when you use the schedule trigger.
 
   For more information, see [Build triggers](../../pipelines/build/triggers.md).
 

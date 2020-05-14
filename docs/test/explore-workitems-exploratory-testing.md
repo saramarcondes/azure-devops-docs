@@ -23,8 +23,8 @@ and management of issues.
 
 You can explore:
 
-* Work items belonging to a requirement category, a feature category, or an epic category
-* Requirements-based test suites and test cases.
+- Work items belonging to a requirement category, a feature category, or an epic category
+- Requirements-based test suites and test cases.
 
 You can explore a work item from the [Kanban board](#kanban) or from the [extension](#extension).
 You can also explore [multiple work items in the same session](#multipleitems).
@@ -98,16 +98,16 @@ To explore another work item, you must first dissociate the current work item fr
 
 After you file bugs, create tasks, or create test cases, all these show up in the "Recent exploratory sessions" page in Azure Test Plans or TFS.
 
-* See how you can [view your sessions and get insights](insights-exploratory-testing.md).
+- See how you can [view your sessions and get insights](insights-exploratory-testing.md).
 
 ## See Also
 
-* [FAQs for manual testing](reference-qa.md#tandfext)
-* [Use the Test &amp; Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
-* [Add findings to existing bugs with exploratory testing](add-to-bugs-exploratory-testing.md)
-* [Get insights across your exploratory testing sessions](insights-exploratory-testing.md)
-* [Use the Test &amp; Feedback extension in Standalone mode](standalone-mode-exploratory-testing.md)
-* [Exploratory testing with Microsoft Test Manager](mtm/exploratory-testing-using-microsoft-test-manager.md)
-* [Overview of manual and exploratory testing](index.yml)
+- [FAQs for manual testing](reference-qa.md#tandfext)
+- [Use the Test &amp; Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
+- [Add findings to existing bugs with exploratory testing](add-to-bugs-exploratory-testing.md)
+- [Get insights across your exploratory testing sessions](insights-exploratory-testing.md)
+- [Use the Test &amp; Feedback extension in Standalone mode](standalone-mode-exploratory-testing.md)
+- [Exploratory testing with Microsoft Test Manager](mtm/exploratory-testing-using-microsoft-test-manager.md)
+- [Overview of manual and exploratory testing](index.yml)
 
 [!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

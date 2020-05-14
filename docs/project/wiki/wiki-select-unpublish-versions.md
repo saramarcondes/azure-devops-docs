@@ -69,6 +69,6 @@ If you no longer want a repository to be published as a wiki, you can choose to 
 
 ## Related articles
 
-* [Provisioned wiki vs. publish code as wiki](provisioned-vs-published-wiki.md)
-* [Update wiki pages offline](wiki-update-offline.md)
-* [Manage README and Wiki permissions](manage-readme-wiki-permissions.md)
+- [Provisioned wiki vs. publish code as wiki](provisioned-vs-published-wiki.md)
+- [Update wiki pages offline](wiki-update-offline.md)
+- [Manage README and Wiki permissions](manage-readme-wiki-permissions.md)

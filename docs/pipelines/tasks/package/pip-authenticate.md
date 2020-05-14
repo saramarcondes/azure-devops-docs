@@ -119,8 +119,8 @@ No. While this task itself will work behind a web proxy <a href="~/pipelines/age
 
 To do so, you can either:
 
-* Set the environment variable `http_proxy`, `https_proxy` and optionally `no_proxy` to your proxy settings. See [Pip official guidelines](https://pip.pypa.io/en/stable/user_guide/#using-a-proxy-server) for details. These are commonly used variables which other non-Python tools (e.g. curl) may also use.
+- Set the environment variable `http_proxy`, `https_proxy` and optionally `no_proxy` to your proxy settings. See [Pip official guidelines](https://pip.pypa.io/en/stable/user_guide/#using-a-proxy-server) for details. These are commonly used variables which other non-Python tools (e.g. curl) may also use.
   > **Caution:**
   > The `http_proxy` and `no_proxy` variables are case-sensitive on Linux and Mac operating systems and must be lowercase. Attempting to use an Azure Pipelines variable to set the environment variable will not work, as it will be converted to uppercase. Instead, set the environment variables on the self-hosted agent's machine and restart the agent.
-* Add the proxy settings to the [pip config file](https://pip.pypa.io/en/stable/user_guide/#config-file) file using `proxy` key.
-* Use the `--proxy` command-line option to specify proxy in the form `[user:passwd@]proxy.server:port`.
+- Add the proxy settings to the [pip config file](https://pip.pypa.io/en/stable/user_guide/#config-file) file using `proxy` key.
+- Use the `--proxy` command-line option to specify proxy in the form `[user:passwd@]proxy.server:port`.

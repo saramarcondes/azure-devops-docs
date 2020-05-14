@@ -54,30 +54,30 @@ To start your search, choose **Repos>Files** or other page under **Code**, enter
 1.  The search page shows a list of the matching code files. The selected file has all
     instances of the search string highlighted. If you see a list of work items, ensure that **Code** is selected in the top left.
 
-        	> [!div class="mx-imgBorder"]  
+        	> [!div class="mx-imgBorder"]
         	> ![Code search results example](media/search/code-search-example.png)
 
 1.  Try assembling more complex search strings using the operators and functions listed in the handy
     drop-down list. Select the filter function or code type you want to include in your search string from the
     list, and type the criteria value.
 
-        	> [!div class="mx-imgBorder"]  
+        	> [!div class="mx-imgBorder"]
         	> ![Code search bar](media/search/code-search-filters.png)
 
-    * You can find all instances of "ToDo" comments in your code simply by selecting `comment:` and typing `todo`.
+    - You can find all instances of "ToDo" comments in your code simply by selecting `comment:` and typing `todo`.
 
-    * You can search in specific locations, such as within a particular path, by using a search string such as `Driver path:MyShuttle/Server`.
+    - You can search in specific locations, such as within a particular path, by using a search string such as `Driver path:MyShuttle/Server`.
 
-    * You can search for files by name, such as `Driver file:GreenCabs.cs`, or just by file extension. For example, the search string
+    - You can search for files by name, such as `Driver file:GreenCabs.cs`, or just by file extension. For example, the search string
       `error ext:resx` could be useful when you want to review all error strings in your code.
       But even if your plain text search string (without specific file type functions)
       matches part of a filename, the file appears in the list of found files.
 
-    * You can combine two or more words by using Boolean operators; for example, `validate OR release`.
+    - You can combine two or more words by using Boolean operators; for example, `validate OR release`.
 
-    * You can find an exact match to a set of words by enclosing your search terms in double-quotes. For example, `"Client not found"`.
+    - You can find an exact match to a set of words by enclosing your search terms in double-quotes. For example, `"Client not found"`.
 
-    * You can use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET.
+    - You can use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET.
 
 To learn more, see [Search code](../search/code-search.md).
 
@@ -143,15 +143,15 @@ To learn more, see [Search code](../search/code-search.md).
 1.  Fine tune your search by specifying the fields to search. Enter `a:` and a user name
     to search for all items assigned to that user.
 
-        	> [!div class="mx-imgBorder"]  
+        	> [!div class="mx-imgBorder"]
         	> ![Search from the title bar](media/search/search-work-vert.png)
 
     The quick filters you can use are:
 
-    * `a:` for **Assigned to:**
-    * `c:` for **Created by:**
-    * `s:` for **State**
-    * `t:` for **Work item type**<p />
+    - `a:` for **Assigned to:**
+    - `c:` for **Created by:**
+    - `s:` for **State**
+    - `t:` for **Work item type**<p />
 
 1.  Start typing the name of a field in your work items; for example, type `ta`.
 
@@ -176,15 +176,15 @@ To learn more, see [Search code](../search/code-search.md).
 1.  Fine tune your search by specifying the fields to search. Enter `a:` and a user name
     to search for all items assigned to that user.
 
-        	> [!div class="mx-imgBorder"]  
+        	> [!div class="mx-imgBorder"]
         	> ![Search from the title bar](media/search/work-item-search-filters.png)
 
     The quick filters you can use are:
 
-    * `a:` for **Assigned to:**
-    * `c:` for **Created by:**
-    * `s:` for **State**
-    * `t:` for **Work item type**<p />
+    - `a:` for **Assigned to:**
+    - `c:` for **Created by:**
+    - `s:` for **State**
+    - `t:` for **Work item type**<p />
 
 1.  Start typing the name of a field in your work items; for example, type `ta`.
 
@@ -249,6 +249,6 @@ The search feature quickly returns wiki pages by title or page content. English 
 
 ## Related articles
 
-* [Search code](../search/code-search.md)
-* [Search work items](../search/work-item-search.md)
-* [Create a wiki for your project](../wiki/wiki-create-repo.md)
+- [Search code](../search/code-search.md)
+- [Search work items](../search/work-item-search.md)
+- [Create a wiki for your project](../wiki/wiki-create-repo.md)

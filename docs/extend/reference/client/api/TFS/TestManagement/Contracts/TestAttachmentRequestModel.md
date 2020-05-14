@@ -16,10 +16,10 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Members
 
-* `attachmentType`: string.
+- `attachmentType`: string.
 
-* `comment`: string.
+- `comment`: string.
 
-* `fileName`: string.
+- `fileName`: string.
 
-* `stream`: string.
+- `stream`: string.

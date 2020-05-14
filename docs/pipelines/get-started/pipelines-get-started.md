@@ -52,9 +52,9 @@ You define your pipeline in a YAML file called `azure-pipelines.yml` with the re
 
 ![Pipelines YAML intro image](../media/pipelines-image-yaml.png)
 
-* The pipeline is versioned with your code. It follows the same branching structure. You get validation of your changes through code reviews in pull requests and branch build policies.
-* Every branch you use can modify the build policy by modifying the `azure-pipelines.yml` file.
-* A change to the build process might cause a break or result in an unexpected outcome. Because the change is in version control with the rest of your codebase, you can more easily identify the issue.
+- The pipeline is versioned with your code. It follows the same branching structure. You get validation of your changes through code reviews in pull requests and branch build policies.
+- Every branch you use can modify the build policy by modifying the `azure-pipelines.yml` file.
+- A change to the build process might cause a break or result in an unexpected outcome. Because the change is in version control with the rest of your codebase, you can more easily identify the issue.
 
 Follow these basic steps:
 
@@ -154,4 +154,4 @@ TFS 2015 through TFS 2018 supports the Classic interface only. The following tab
 
 ## Related articles
 
-* [Key concepts for new Azure Pipelines users](key-pipelines-concepts.md)
+- [Key concepts for new Azure Pipelines users](key-pipelines-concepts.md)

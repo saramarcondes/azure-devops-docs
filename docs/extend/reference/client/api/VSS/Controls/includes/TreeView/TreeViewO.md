@@ -1,10 +1,10 @@
 [!INCLUDE [styleoverrides](../../../../_data/style-overrides.md)]
 
-* [getSelectedNode()](#method_getSelectedNode)
-* [setSelectedNode()](#method_setSelectedNode)
-* [removeNode()](#method_removeNode)
-* [updateNode()](#method_updateNode)
-* [getNodeFromElement()](#method_getNodeFromElement)
+- [getSelectedNode()](#method_getSelectedNode)
+- [setSelectedNode()](#method_setSelectedNode)
+- [removeNode()](#method_removeNode)
+- [updateNode()](#method_updateNode)
+- [getNodeFromElement()](#method_getNodeFromElement)
 
 <a name="method_getSelectedNode"></a>
 
@@ -28,8 +28,8 @@ void
 
 #### Parameters
 
-* `node`: TreeNode. Node to be selected.
-* `suppressChangeEvent`: boolean. Optional. If specified true, &quot;selectionChanged&quot; event doesn't fire.
+- `node`: TreeNode. Node to be selected.
+- `suppressChangeEvent`: boolean. Optional. If specified true, &quot;selectionChanged&quot; event doesn't fire.
 
 <a name="method_removeNode"></a>
 
@@ -43,7 +43,7 @@ void
 
 #### Parameters
 
-* `node`: TreeNode. Node to be removed.
+- `node`: TreeNode. Node to be removed.
 
 <a name="method_updateNode"></a>
 
@@ -57,7 +57,7 @@ void
 
 #### Parameters
 
-* `node`: TreeNode. Node to be updated.
+- `node`: TreeNode. Node to be updated.
 
 <a name="method_getNodeFromElement"></a>
 
@@ -71,4 +71,4 @@ TreeNode
 
 #### Parameters
 
-* `element`: any. Element to get the node for.
+- `element`: any. Element to get the node for.

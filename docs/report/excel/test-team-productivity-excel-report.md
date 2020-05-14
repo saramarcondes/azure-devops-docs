@@ -16,10 +16,10 @@ ms.date: 12/30/2016
 
 Teams who are responsible for testing software can use the Test Team Productivity report to help track the overall activity of the team and individual team members in testing the product and finding and reporting bugs. The Test Team Productivity report provides four reports that show test and bug activity:
 
-* **Test Activity**: Helps the team monitor the volume of tests it has run over the past four weeks.
-* **Test Activity Per User**: Helps the team track the volume of tests that individual team members have run over the past eight weeks. The team can use this to help load balance the test activity across team members.
-* **Bugs Created By User**: Helps the team track how many bugs each team member creates.
-* **Bug Effectiveness**: Supports the team in determining how effective it is in defining bugs that are useful and that help build a quality product.
+- **Test Activity**: Helps the team monitor the volume of tests it has run over the past four weeks.
+- **Test Activity Per User**: Helps the team track the volume of tests that individual team members have run over the past eight weeks. The team can use this to help load balance the test activity across team members.
+- **Bugs Created By User**: Helps the team track how many bugs each team member creates.
+- **Bug Effectiveness**: Supports the team in determining how effective it is in defining bugs that are useful and that help build a quality product.
 
   > [!NOTE]
   > You can view the Test Team Productivity report from the **Test Team Management** folder that is located under the **Excel Reports** folder for the team project in Team Explorer. You can access this folder only if your team project portal has been enabled and is configured to use SharePoint Products. For more information, see [Share information using the project portal](../sharepoint-dashboards/share-information-using-the-project-portal.md).
@@ -78,18 +78,18 @@ The following table describes the report filters and fields that are used in the
 
 For the test activity reports to be useful and accurate, the team must perform the following activities:
 
-* [Define test cases and test plans](../../test/create-test-cases.md), and assign test cases to the test plans.
-* [Run tests](../../test/run-manual-tests.md).
-* (Optional) To filter the reports by product area and iteration, specify the **Area** and **Iteration** paths of each test case.
+- [Define test cases and test plans](../../test/create-test-cases.md), and assign test cases to the test plans.
+- [Run tests](../../test/run-manual-tests.md).
+- (Optional) To filter the reports by product area and iteration, specify the **Area** and **Iteration** paths of each test case.
 
   > [!NOTE]
   > The project administrator for each team project [defines area and iteration paths](../../organizations/settings/set-area-paths.md) for that project so that the team can track progress by those designations.
 
   For the bug activity reports to be useful and accurate, the team must perform the following activities:
 
-* Create a bug for each code defect that was found by testing.
-* Update the **State** of each bug as the team fixes, verifies, closes, or reactivates it and accurately set the **Reason** field every time that the bug changes state.
-* (Optional) To filter the reports by product area and iteration, specify the **Area** and **Iteration** paths of each bug.
+- Create a bug for each code defect that was found by testing.
+- Update the **State** of each bug as the team fixes, verifies, closes, or reactivates it and accurately set the **Reason** field every time that the bug changes state.
+- (Optional) To filter the reports by product area and iteration, specify the **Area** and **Iteration** paths of each bug.
 
 <a name="Updating"></a>
 
@@ -107,5 +107,5 @@ You can update the Test Team Productivity report by opening it in Office Excel a
 
 ## Related articles
 
-* [Excel reports](excel-reports.md)
-* [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)
+- [Excel reports](excel-reports.md)
+- [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)

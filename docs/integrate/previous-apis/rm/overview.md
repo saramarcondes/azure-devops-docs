@@ -21,9 +21,9 @@ ms.date: 06/01/2017
 New [release](./releases.md) references a [release definition](./definitions.md) to deploy an application comprising of one/more artifacts.
 A release process goes through a set of [approval requests](./approvals.md).
 
-* [Definitions](./definitions.md)
-* [Releases](./releases.md)
-* [Approvals](./approvals.md)
+- [Definitions](./definitions.md)
+- [Releases](./releases.md)
+- [Approvals](./approvals.md)
 
 ## Common tasks
 

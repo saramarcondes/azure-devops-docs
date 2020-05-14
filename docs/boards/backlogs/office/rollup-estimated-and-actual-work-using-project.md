@@ -30,11 +30,11 @@ To learn about other methods that support rollup, see [Support rollup of work an
 
 The following default fields used to schedule work are only present on the task work item.
 
-* Original Estimate (Microsoft.VSTS.Scheduling.OriginalEstimate): The amount of work required to complete a task. (Agile and CMMI)
+- Original Estimate (Microsoft.VSTS.Scheduling.OriginalEstimate): The amount of work required to complete a task. (Agile and CMMI)
 
-* Completed Work (Microsoft.VSTS.Scheduling.CompletedWork): The amount of work that has been spent implementing a task. (Agile and CMMI)
+- Completed Work (Microsoft.VSTS.Scheduling.CompletedWork): The amount of work that has been spent implementing a task. (Agile and CMMI)
 
-* Remaining Work (Microsoft.VSTS.Scheduling.RemainingWork): This field is used to support burndown charts.
+- Remaining Work (Microsoft.VSTS.Scheduling.RemainingWork): This field is used to support burndown charts.
 
   If your project was created using the Visual Studio Scrum process template, only Remaining Work is defined in the task.
 
@@ -43,12 +43,12 @@ The following default fields used to schedule work are only present on the task 
     For example, to rollup Original Estimate or Completed Work for user stories, add the following fields to the WIT definition for user story:
 
     ```xml
-    <FIELD name="Original Estimate" refname="Microsoft.VSTS.Scheduling.OriginalEstimate" type="Double" reportable="measure" formula="sum">  
-       <HELPTEXT>Initial value for Remaining Work - set once, when work begins</HELPTEXT>  
-    </FIELD>  
-    <FIELD name="Completed Work" refname="Microsoft.VSTS.Scheduling.CompletedWork" type="Double" reportable="measure" formula="sum">  
-        <HELPTEXT>The number of units of work that have been spent on this task</HELPTEXT>  
-    </FIELD>  
+    <FIELD name="Original Estimate" refname="Microsoft.VSTS.Scheduling.OriginalEstimate" type="Double" reportable="measure" formula="sum">
+       <HELPTEXT>Initial value for Remaining Work - set once, when work begins</HELPTEXT>
+    </FIELD>
+    <FIELD name="Completed Work" refname="Microsoft.VSTS.Scheduling.CompletedWork" type="Double" reportable="measure" formula="sum">
+        <HELPTEXT>The number of units of work that have been spent on this task</HELPTEXT>
+    </FIELD>
     ```
 
     To learn more about adding fields, see [Modify a field or add a custom field](../../../reference/add-modify-field.md).
@@ -66,11 +66,11 @@ The following default fields used to schedule work are only present on the task 
     Depending on the process template used to create your project, some of these mappings may be there already. Here's an example of fields to include:
 
     ```xml
-    <Mapping WorkItemTrackingFieldReferenceName=" Microsoft.VSTS.Scheduling.OriginalEstimate" ProjectField="pjTaskBaselineWork" ProjectUnits="pjHour" PublishOnly="false" IfSummaryRefreshOnly="false" />  
+    <Mapping WorkItemTrackingFieldReferenceName=" Microsoft.VSTS.Scheduling.OriginalEstimate" ProjectField="pjTaskBaselineWork" ProjectUnits="pjHour" PublishOnly="false" IfSummaryRefreshOnly="false" />
     <Mapping WorkItemTrackingFieldReferenceName=" Microsoft.VSTS.Scheduling.CompletedWork" ProjectField="pjTaskActualWork" ProjectUnits="pjHour" PublishOnly="false" IfSummaryRefreshOnly="false" />
     <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.RemainingWork" ProjectField="pjTaskRemainingWork" ProjectUnits="pjHour" PublishOnly="false" IfSummaryRefreshOnly="false" />
     <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.StartDate" ProjectField="pjTaskStart" PublishOnly="true" IfSummaryRefreshOnly="false" />
-    <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.FinishDate" ProjectField="pjTaskFinish" PublishOnly="true" IfSummaryRefreshOnly="false" />  
+    <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.FinishDate" ProjectField="pjTaskFinish" PublishOnly="true" IfSummaryRefreshOnly="false" />
     ```
 
     Don't map Original Estimate or any other field to pjTaskDuration. This mapping is not supported.
@@ -78,7 +78,7 @@ The following default fields used to schedule work are only present on the task 
 2.  If you want to map Effort, Story Points, or Size, use a pjTaskNumber field, for example:
 
     ```xml
-    <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.StoryPoints" ProjectField="pjTaskNumber12" PublishOnly="false" IfSummaryRefreshOnly="false" />  
+    <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.StoryPoints" ProjectField="pjTaskNumber12" PublishOnly="false" IfSummaryRefreshOnly="false" />
     ```
 
 3.  Assign `PublishOnly="false"` and `IfSummaryRefreshOnly="false"` in the mapping file so that the rollup summary values are published to the TFS database.

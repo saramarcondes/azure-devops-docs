@@ -16,4 +16,4 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Members
 
-* `query`: string.
+- `query`: string.

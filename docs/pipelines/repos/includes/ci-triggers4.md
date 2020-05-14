@@ -25,11 +25,11 @@ If your Git repo is in Azure Repos or TFS, you can also specify path filters to 
 
 > **Tips:**
 >
-> * Paths are always specified relative to the root of the repository.
-> * If you don't set path filters, then the root folder of the repo is implicitly included by default.
-> * If you exclude a path, you cannot also include it unless you qualify it to a deeper folder. For example if you exclude _/tools_ then you could include _/tools/trigger-runs-on-these_
-> * The order of path filters doesn't matter.
-> * Paths in Git are case-sensitive. Be sure to use the same case as the real folders.
+> - Paths are always specified relative to the root of the repository.
+> - If you don't set path filters, then the root folder of the repo is implicitly included by default.
+> - If you exclude a path, you cannot also include it unless you qualify it to a deeper folder. For example if you exclude _/tools_ then you could include _/tools/trigger-runs-on-these_
+> - The order of path filters doesn't matter.
+> - Paths in Git are case-sensitive. Be sure to use the same case as the real folders.
 
 #### Example
 

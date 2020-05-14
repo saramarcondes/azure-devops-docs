@@ -16,4 +16,4 @@ Module path: `VSS/WebApi/Contracts`
 
 ### Members
 
-* `count`: number.
+- `count`: number.

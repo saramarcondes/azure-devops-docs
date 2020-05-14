@@ -16,24 +16,24 @@ monikerRange: '>= tfs-2015'
 
 Extensions are simple add-ons that can be used to customize and extend your experience with Azure DevOps. The [Marketplace](https://marketplace.visualstudio.com/azuredevops) is home to hundreds of extensions that can be installed to help with the following tasks:
 
-* Planning and tracking of work items, sprints, scrums, and so on
-* Pipeline build and release flows
-* Code testing and tracking
-* Collaboration among team members
+- Planning and tracking of work items, sprints, scrums, and so on
+- Pipeline build and release flows
+- Code testing and tracking
+- Collaboration among team members
 
 In the Azure DevOps Marketplace you can do the following tasks:
 
-* Discover and install extensions for Azure DevOps, Visual Studio, and Visual Studio Code
-* Purchase Visual Studio subscriptions
+- Discover and install extensions for Azure DevOps, Visual Studio, and Visual Studio Code
+- Purchase Visual Studio subscriptions
 
 ![Extensions Marketplace](../organizations/billing/media/shared/extensions-marketplace.png)
 
 Most extensions are available for free.
 For information on purchasing, see the following articles:
 
-* [Azure DevOps billing overview](../organizations/billing/overview.md)
-* [How to pay for TFS users](../organizations/billing/buy-access-tfs-test-hub.md)
-* [How to buy Visual Studio cloud subscriptions](/visualstudio/subscriptions/vscloud-overview)
+- [Azure DevOps billing overview](../organizations/billing/overview.md)
+- [How to pay for TFS users](../organizations/billing/buy-access-tfs-test-hub.md)
+- [How to buy Visual Studio cloud subscriptions](/visualstudio/subscriptions/vscloud-overview)
 
 ## Add an extension
 
@@ -66,7 +66,7 @@ az devops extension search --search-query
 
 #### Parameters
 
-* **search-query**: Specify a term to search in the marketplace.
+- **search-query**: Specify a term to search in the marketplace.
 
 #### Example
 
@@ -97,8 +97,8 @@ Publisher Id    Extension Id    Name
 
 ## Related articles
 
-* [Install extensions](install-extension.md)
-* [Request extensions and approve extension requests](request-extensions.md)
-* [Manage extension permissions](how-to/grant-permissions.md)
-* [Uninstall or disable extensions](uninstall-disable-extensions.md)
-* [Extension FAQs](faq-extensions.md)
+- [Install extensions](install-extension.md)
+- [Request extensions and approve extension requests](request-extensions.md)
+- [Manage extension permissions](how-to/grant-permissions.md)
+- [Uninstall or disable extensions](uninstall-disable-extensions.md)
+- [Extension FAQs](faq-extensions.md)

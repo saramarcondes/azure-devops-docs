@@ -171,5 +171,5 @@ Valid users are users that are recognized by Azure DevOps as being able to conne
 
 ## Related articles
 
-* [Permissions lookup guide](permissions-lookup-guide.md)
-* [REST API Security](/rest/api/azure/devops/security)
+- [Permissions lookup guide](permissions-lookup-guide.md)
+- [REST API Security](/rest/api/azure/devops/security)

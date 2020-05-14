@@ -18,10 +18,10 @@ A VSTS organization has one or more [projects](./projects.md). Each project has 
 
 ![Project and team resources](./media/projects-and-teams.png)
 
-* [Project Collections](./project-collections.md)
-* [Projects](./projects.md)
-* [Teams](./teams.md)
-* [Processes](./processes.md)
+- [Project Collections](./project-collections.md)
+- [Projects](./projects.md)
+- [Teams](./teams.md)
+- [Processes](./processes.md)
 
 ## Common tasks
 

@@ -92,11 +92,11 @@ To start filtering, click the ![Kanban filter icon](../media/icons/kanban-filter
 
 Choose one or more values from the multi-select drop-down menu for each field. The values for these fields are populated as follows:
 
-* **Assigned To**: All users who are currently assigned to work items on the board plus Unassigned
-* **Iteration**: All Iteration Paths [selected for the current team](../sprints/define-sprints.md) and for which there are work items assigned to that iteration
-* **Work item type**: Work item types defined for the Requirements Category (product backlog) or Features or Epic categories (feature or epic portfolio backlogs), subject to work items being assigned to the work item types
-* **Tags**: All tags assigned to work items on the board
-* **Parent Work Items**: All features defined for the team, or all epics defined for the team when viewing the Features board (The Parent Work Items field doesn't appear when viewing the Epic or top-level Kanban board)
+- **Assigned To**: All users who are currently assigned to work items on the board plus Unassigned
+- **Iteration**: All Iteration Paths [selected for the current team](../sprints/define-sprints.md) and for which there are work items assigned to that iteration
+- **Work item type**: Work item types defined for the Requirements Category (product backlog) or Features or Epic categories (feature or epic portfolio backlogs), subject to work items being assigned to the work item types
+- **Tags**: All tags assigned to work items on the board
+- **Parent Work Items**: All features defined for the team, or all epics defined for the team when viewing the Features board (The Parent Work Items field doesn't appear when viewing the Epic or top-level Kanban board)
 
 > [!NOTE]  
 > Filter options are dependent on the work items that meet the filter criteria. For example, if you don't have any work items assigned to Sprint 4, then the Sprint 4 option won't appear in the filter options for the Iteration Path.
@@ -151,5 +151,5 @@ Cards are filtered based on the assignments made in the following order and logi
 
 ## Related articles
 
-* [Tags](../queries/add-tags-to-work-items.md)
-* [Customize cards](../../boards/boards/customize-cards.md)
+- [Tags](../queries/add-tags-to-work-items.md)
+- [Customize cards](../../boards/boards/customize-cards.md)

@@ -8,12 +8,12 @@ Up to now, while using the Azure DevOps apps with Slack, customers have had to s
 
 Here are some example scenarios where users are @mentioned:
 
-* Failed builds will @mention the creator of the build
-* Release deployments waiting for approval will @mention approver
-* Work items assignments will @mention the new owner
-* Work item state changes will @mention the owner
-* Pull requests waiting for approval will @mention the approver
-* Pull requests being approved or rejected will @mention the pull request creator
+- Failed builds will @mention the creator of the build
+- Release deployments waiting for approval will @mention approver
+- Work items assignments will @mention the new owner
+- Work item state changes will @mention the owner
+- Pull requests waiting for approval will @mention the approver
+- Pull requests being approved or rejected will @mention the pull request creator
 
 Kyle gets @mentioned when a release deployment is waiting for her approval
 

@@ -27,16 +27,16 @@ In each ProcessTemplate.xml file, you define metadata and task groups. The metad
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <metadata>  
->     <name>MSF for Agile Software Development 2013</name>  
->     <description>This template is flexible and will work great for most teams using Agile planning methods, including those practicing Scrum.</description>  
->     <plugins>  
->       <plugin name="Microsoft.ProjectCreationWizard.Classification" wizardPage="false" />  
->       <plugin name="Microsoft.ProjectCreationWizard.Reporting" wizardPage="false" />  
->       <plugin name="Microsoft.ProjectCreationWizard.Portal" wizardPage="true" />  
-> . . .  
->     </plugins>  
-> </metadata>  
+> <metadata>
+>     <name>MSF for Agile Software Development 2013</name>
+>     <description>This template is flexible and will work great for most teams using Agile planning methods, including those practicing Scrum.</description>
+>     <plugins>
+>       <plugin name="Microsoft.ProjectCreationWizard.Classification" wizardPage="false" />
+>       <plugin name="Microsoft.ProjectCreationWizard.Reporting" wizardPage="false" />
+>       <plugin name="Microsoft.ProjectCreationWizard.Portal" wizardPage="true" />
+> . . .
+>     </plugins>
+> </metadata>
 > ```
 
 The task groups specify the dependencies and tasks to be performed for each plug-in, as the following example shows:
@@ -44,19 +44,19 @@ The task groups specify the dependencies and tasks to be performed for each plug
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <groups>  
->     <group id="Classification" description="Structure definition for the project." completionMessage="Project Structure uploaded.">  
->       <dependencies></dependencies>  
->       <taskList filename="Classification\Classification.xml" />  
->     </group>  
->     <group id="Groups" description="Create groups and assign permissions." completionMessage="Groups created and permissions assigned.">  
->       <dependencies>  
->         <dependency groupId="Classification" />  
->       </dependencies>  
->       <taskList filename="Groups and Permissions\GroupsandPermissions.xml" />  
->     </group>  
-> . . .  
-> </groups>  
+> <groups>
+>     <group id="Classification" description="Structure definition for the project." completionMessage="Project Structure uploaded.">
+>       <dependencies></dependencies>
+>       <taskList filename="Classification\Classification.xml" />
+>     </group>
+>     <group id="Groups" description="Create groups and assign permissions." completionMessage="Groups created and permissions assigned.">
+>       <dependencies>
+>         <dependency groupId="Classification" />
+>       </dependencies>
+>       <taskList filename="Groups and Permissions\GroupsandPermissions.xml" />
+>     </group>
+> . . .
+> </groups>
 > ```
 
 <a name="defining"></a>
@@ -72,7 +72,7 @@ You define the plug-ins and root tasks to be processed by specifying the followi
     > [!div class="tabbedCodeSnippets"]
     >
     > ```XML
-    > <name>Simplified Process</name>  
+    > <name>Simplified Process</name>
     > ```
 
     This element is required. The name appears not only in the process template list in the New Team Project Wizard but also in the Process Template Manager dialog box. The name of each process template must be unique within a project collection, and each template name must contain no more than 254 Unicode characters. If you upload a template that is the same name as an existing template, the existing template will be overwritten.
@@ -82,7 +82,7 @@ You define the plug-ins and root tasks to be processed by specifying the followi
     > [!div class="tabbedCodeSnippets"]
     >
     > ```XML
-    > <description>Choose the simple process for projects that require little or no overhead and have very low cost.</description>  
+    > <description>Choose the simple process for projects that require little or no overhead and have very low cost.</description>
     > ```
 
     This text appears on the **Select a Process Template** screen in the New Team Project Wizard when a project lead or administrator is deciding which process template to use. In general, try to describe what kinds of projects for which the process template is useful in terms of team size, length, cost, and other factors.
@@ -109,7 +109,7 @@ You define the plug-ins and root tasks to be processed by specifying the followi
     >    <plugin name="Microsoft.ProjectCreationWizard.TestManagement" wizardPage="false" />
     >    <plugin name="Microsoft.ProjectCreationWizard.Build" wizardPage="false" />
     >    <plugin name="Microsoft.ProjectCreationWizard.Lab" wizardPage="false" />
-    > </plugins>  
+    > </plugins>
     > ```
 
 4.  **Task Groups**. You use the **groups** and **group** elements to define task groups. Each task group defines information that is necessary to process each plug-in. Each task group specifies the file that contains the set of tasks to process and optional dependencies that the group has on other task groups. The most common and easiest strategy is to create one **taskList** element per group per plug-in.
@@ -124,7 +124,7 @@ You define the plug-ins and root tasks to be processed by specifying the followi
     >       <dependency groupId="Classification" />
     >       </dependencies>
     >       <taskList filename="Groups and Permissions\GroupsandPermissions.xml" />
-    > </group>  
+    > </group>
     > ```
 
     For each task group, you define the following information:
@@ -150,91 +150,91 @@ The following syntax lists the contents of the Scrum ProcessTemplate.xml file.
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <?xml version="1.0" encoding="utf-8"?>  
-> <ProcessTemplate>  
->   <metadata>  
->     <name>Microsoft Visual Studio Scrum 2013</name>  
->     <description>This template is for teams who follow the Scrum methodology and use Scrum terminology.</description>  
-> <version type="6B724908-EF14-45CF-84F8-768B5384DA45" major="3" minor="6" />  
->     <plugins>  
->       <plugin name="Microsoft.ProjectCreationWizard.Classification" wizardPage="false" />  
->       <plugin name="Microsoft.ProjectCreationWizard.Reporting" wizardPage="false" />  
->       <plugin name="Microsoft.ProjectCreationWizard.Portal" wizardPage="true" />  
->       <plugin name="Microsoft.ProjectCreationWizard.Groups" wizardPage="false" />  
->       <plugin name="Microsoft.ProjectCreationWizard.WorkItemTracking" wizardPage="false" />  
->       <plugin name="Microsoft.ProjectCreationWizard.VersionControl" wizardPage="true" />  
->       <plugin name="Microsoft.ProjectCreationWizard.TestManagement" wizardPage="false" />  
->       <plugin name="Microsoft.ProjectCreationWizard.Build" wizardPage="false" />  
->       <plugin name="Microsoft.ProjectCreationWizard.Lab" wizardPage="false" />  
->     </plugins>  
->   </metadata>  
->   <groups>  
->     <group id="Classification" description="Structure definition for the project." completionMessage="Project structure uploaded.">  
->       <dependencies>  
-> </dependencies>  
->       <taskList filename="Classification\Classification.xml" />  
->     </group>  
->     <group id="Groups" description="Create groups and assign permissions." completionMessage="Groups created and permissions assigned.">  
->       <dependencies>  
->         <dependency groupId="Classification" />  
->       </dependencies>  
->       <taskList filename="Groups and Permissions\GroupsAndPermissions.xml" />  
->     </group>  
->     <group id="WorkItemTracking" description="Work item definitions uploading." completionMessage="Work item tracking tasks completed.">  
->       <dependencies>  
->         <dependency groupId="Classification" />  
->         <dependency groupId="Groups" />  
->       </dependencies>  
->       <taskList filename="WorkItem Tracking\WorkItems.xml" />  
->     </group>  
->     <group id="VersionControl" description="Creating version control." completionMessage="Version control task completed.">  
->       <dependencies>  
->         <dependency groupId="Classification" />  
->         <dependency groupId="Groups" />  
->         <dependency groupId="WorkItemTracking" />  
->       </dependencies>  
->       <taskList filename="Version Control\VersionControl.xml" />  
->     </group>  
->     <group id="Build" description="Build default processes uploading." completionMessage="Build default processes uploaded.">  
->       <dependencies>  
->         <dependency groupId="VersionControl" />  
->         <dependency groupId="Groups" />  
->       </dependencies>  
->       <taskList filename="Build\Build.xml" />  
->     </group>  
->     <group id="Lab" description="Creating Lab." completionMessage="Lab task completed.">  
->       <dependencies>  
->         <dependency groupId="Classification" />  
->         <dependency groupId="Groups" />  
->         <dependency groupId="WorkItemTracking" />  
->         <dependency groupId="Build" />  
->       </dependencies>  
->       <taskList filename="Lab\Lab.xml" />  
->     </group>  
->     <group id="TestManagement" description="Test Management default configurations uploading." completionMessage="Test Management default configurations uploaded.">  
->       <dependencies>  
->         <dependency groupId="Classification" />  
->         <dependency groupId="Groups" />  
->         <dependency groupId="WorkItemTracking" />  
->       </dependencies>  
->       <taskList filename="Test Management\TestManagement.xml" />  
->     </group>  
->     <group id="Reporting" description="Project reports uploading." completionMessage="Project reporting tasks completed.">  
->       <dependencies>  
->         <dependency groupId="Classification" />  
->         <dependency groupId="WorkItemTracking" />  
->         <dependency groupId="VersionControl" />  
->       </dependencies>  
->       <taskList filename="Reports\ReportsTasks.xml" />  
->     </group>  
->     <group id="Portal" description="Creating project portal site" completionMessage="Project portal tasks completed.">  
->       <dependencies>  
->         <dependency groupId="Classification" />  
->         <dependency groupId="Reporting" />  
->       </dependencies>  
->       <taskList filename="Windows SharePoint Services\WssTasks.xml" />  
->     </group>  
->   </groups>  
+> <?xml version="1.0" encoding="utf-8"?>
+> <ProcessTemplate>
+>   <metadata>
+>     <name>Microsoft Visual Studio Scrum 2013</name>
+>     <description>This template is for teams who follow the Scrum methodology and use Scrum terminology.</description>
+> <version type="6B724908-EF14-45CF-84F8-768B5384DA45" major="3" minor="6" />
+>     <plugins>
+>       <plugin name="Microsoft.ProjectCreationWizard.Classification" wizardPage="false" />
+>       <plugin name="Microsoft.ProjectCreationWizard.Reporting" wizardPage="false" />
+>       <plugin name="Microsoft.ProjectCreationWizard.Portal" wizardPage="true" />
+>       <plugin name="Microsoft.ProjectCreationWizard.Groups" wizardPage="false" />
+>       <plugin name="Microsoft.ProjectCreationWizard.WorkItemTracking" wizardPage="false" />
+>       <plugin name="Microsoft.ProjectCreationWizard.VersionControl" wizardPage="true" />
+>       <plugin name="Microsoft.ProjectCreationWizard.TestManagement" wizardPage="false" />
+>       <plugin name="Microsoft.ProjectCreationWizard.Build" wizardPage="false" />
+>       <plugin name="Microsoft.ProjectCreationWizard.Lab" wizardPage="false" />
+>     </plugins>
+>   </metadata>
+>   <groups>
+>     <group id="Classification" description="Structure definition for the project." completionMessage="Project structure uploaded.">
+>       <dependencies>
+> </dependencies>
+>       <taskList filename="Classification\Classification.xml" />
+>     </group>
+>     <group id="Groups" description="Create groups and assign permissions." completionMessage="Groups created and permissions assigned.">
+>       <dependencies>
+>         <dependency groupId="Classification" />
+>       </dependencies>
+>       <taskList filename="Groups and Permissions\GroupsAndPermissions.xml" />
+>     </group>
+>     <group id="WorkItemTracking" description="Work item definitions uploading." completionMessage="Work item tracking tasks completed.">
+>       <dependencies>
+>         <dependency groupId="Classification" />
+>         <dependency groupId="Groups" />
+>       </dependencies>
+>       <taskList filename="WorkItem Tracking\WorkItems.xml" />
+>     </group>
+>     <group id="VersionControl" description="Creating version control." completionMessage="Version control task completed.">
+>       <dependencies>
+>         <dependency groupId="Classification" />
+>         <dependency groupId="Groups" />
+>         <dependency groupId="WorkItemTracking" />
+>       </dependencies>
+>       <taskList filename="Version Control\VersionControl.xml" />
+>     </group>
+>     <group id="Build" description="Build default processes uploading." completionMessage="Build default processes uploaded.">
+>       <dependencies>
+>         <dependency groupId="VersionControl" />
+>         <dependency groupId="Groups" />
+>       </dependencies>
+>       <taskList filename="Build\Build.xml" />
+>     </group>
+>     <group id="Lab" description="Creating Lab." completionMessage="Lab task completed.">
+>       <dependencies>
+>         <dependency groupId="Classification" />
+>         <dependency groupId="Groups" />
+>         <dependency groupId="WorkItemTracking" />
+>         <dependency groupId="Build" />
+>       </dependencies>
+>       <taskList filename="Lab\Lab.xml" />
+>     </group>
+>     <group id="TestManagement" description="Test Management default configurations uploading." completionMessage="Test Management default configurations uploaded.">
+>       <dependencies>
+>         <dependency groupId="Classification" />
+>         <dependency groupId="Groups" />
+>         <dependency groupId="WorkItemTracking" />
+>       </dependencies>
+>       <taskList filename="Test Management\TestManagement.xml" />
+>     </group>
+>     <group id="Reporting" description="Project reports uploading." completionMessage="Project reporting tasks completed.">
+>       <dependencies>
+>         <dependency groupId="Classification" />
+>         <dependency groupId="WorkItemTracking" />
+>         <dependency groupId="VersionControl" />
+>       </dependencies>
+>       <taskList filename="Reports\ReportsTasks.xml" />
+>     </group>
+>     <group id="Portal" description="Creating project portal site" completionMessage="Project portal tasks completed.">
+>       <dependencies>
+>         <dependency groupId="Classification" />
+>         <dependency groupId="Reporting" />
+>       </dependencies>
+>       <taskList filename="Windows SharePoint Services\WssTasks.xml" />
+>     </group>
+>   </groups>
 > </ProcessTemplate>
 > ```
 

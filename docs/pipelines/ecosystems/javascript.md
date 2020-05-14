@@ -15,13 +15,13 @@ monikerRange: '>= tfs-2017'
 
 Use a pipeline to build and test JavaScript and Node.js apps, and then deploy or publish to targets. Learn how to:
 
-* Set up your build environment with [Microsoft-hosted](../agents/hosted.md) or [self-hosted](../agents/agents.md) agents.
-* Use the [npm task](../tasks/package/npm.md) or a [script](../scripts/cross-platform-scripting.md) to download packages for your build.
-* Implement [JavaScript frameworks](#javascript-frameworks): Angular, React, or Vue.
-* Run unit tests and publish them with the [publish test results task](../tasks/test/publish-test-results.md).
-* Use the [publish code coverage task](../tasks/test/publish-code-coverage-results.md) to publish code coverage results.
-* Publish [npm packages](../artifacts/npm.md) with Azure artifacts.
-* Create a .zip file archive that is ready for publishing to a web app with the [Archive Files task](../tasks/utility/archive-files.md) and [deploy to Azure](../targets/webapp.md).
+- Set up your build environment with [Microsoft-hosted](../agents/hosted.md) or [self-hosted](../agents/agents.md) agents.
+- Use the [npm task](../tasks/package/npm.md) or a [script](../scripts/cross-platform-scripting.md) to download packages for your build.
+- Implement [JavaScript frameworks](#javascript-frameworks): Angular, React, or Vue.
+- Run unit tests and publish them with the [publish test results task](../tasks/test/publish-test-results.md).
+- Use the [publish code coverage task](../tasks/test/publish-code-coverage-results.md) to publish code coverage results.
+- Publish [npm packages](../artifacts/npm.md) with Azure artifacts.
+- Create a .zip file archive that is ready for publishing to a web app with the [Archive Files task](../tasks/utility/archive-files.md) and [deploy to Azure](../targets/webapp.md).
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -185,31 +185,31 @@ pool: Default
 
 1.  Select **Process** under the **Tasks** tab in the pipeline editor and change the properties as follows:
 
-    * **Agent queue:** `Hosted Ubuntu 1604`
+    - **Agent queue:** `Hosted Ubuntu 1604`
 
 1.  Add the following tasks to the pipeline in the specified order:
 
-    * **npm**
+    - **npm**
 
-      * **Command:** `install`
+      - **Command:** `install`
 
-    * **npm**
+    - **npm**
 
-      * **Display name:** `npm test`
-      * **Command:** `custom`
-      * **Command and arguments:** `test`
+      - **Display name:** `npm test`
+      - **Command:** `custom`
+      - **Command and arguments:** `test`
 
-    * **Publish Test Results**
+    - **Publish Test Results**
 
-      * Leave all the default values for properties
+      - Leave all the default values for properties
 
-    * **Archive Files**
+    - **Archive Files**
 
-      * **Root folder or file to archive:** `$(System.DefaultWorkingDirectory)`
-      * **Prepend root folder name to archive paths:** Unchecked
+      - **Root folder or file to archive:** `$(System.DefaultWorkingDirectory)`
+      - **Prepend root folder name to archive paths:** Unchecked
 
-    * **Publish Build Artifacts**
-      * Leave all the default values for properties
+    - **Publish Build Artifacts**
+      - Leave all the default values for properties
 
 1.  Save the pipeline and queue a build to see it in action.
 
@@ -357,9 +357,9 @@ In your build, use [Yarn](https://yarnpkg.com) or Azure Artifacts/TFS to downloa
 
 You can use NPM in a few ways to download packages for your build:
 
-* Directly run `npm install` in your pipeline. This is the simplest way to download packages from a registry that does not need any authentication. If your build doesn't need development dependencies on the agent to run, you can speed up build times with the `--only=prod` option to `npm install`.
-* Use an [npm task](../tasks/package/npm.md). This is useful when you're using an authenticated registry.
-* Use an [npm Authenticate task](../tasks/package/npm-authenticate.md). This is useful when you run `npm install` from inside your task runners - Gulp, Grunt, or Maven.
+- Directly run `npm install` in your pipeline. This is the simplest way to download packages from a registry that does not need any authentication. If your build doesn't need development dependencies on the agent to run, you can speed up build times with the `--only=prod` option to `npm install`.
+- Use an [npm task](../tasks/package/npm.md). This is useful when you're using an authenticated registry.
+- Use an [npm Authenticate task](../tasks/package/npm-authenticate.md). This is useful when you run `npm install` from inside your task runners - Gulp, Grunt, or Maven.
 
 If you want to specify an npm registry, put the URLs in an `.npmrc` file in your repository.
 If your feed is authenticated, manage its credentials by creating an npm service connection on the **Services** tab under **Project Settings**.
@@ -583,18 +583,18 @@ For Angular apps, you can include Angular-specific commands such as **ng test**,
 
 Add the following tasks to your pipeline:
 
-* **npm**
+- **npm**
 
-  * **Command:** `custom`
-  * **Command and arguments:** `install -g @angular/cli`
+  - **Command:** `custom`
+  - **Command and arguments:** `install -g @angular/cli`
 
-* **npm**
+- **npm**
 
-  * **Command:** `install`
+  - **Command:** `install`
 
-* **bash**
-  * **Type:** `inline`
-  * **Script:** `ng build --prod`
+- **bash**
+  - **Type:** `inline`
+  - **Script:** `ng build --prod`
 
 ::: moniker-end
 
@@ -674,14 +674,14 @@ You can use a webpack configuration file to specify a compiler (such as Babel or
 
 Add the following tasks to your pipeline:
 
-* **npm**
+- **npm**
 
-  * **Command:** `custom`
-  * **Command and arguments:** `install -g webpack webpack-cli --save-dev`
+  - **Command:** `custom`
+  - **Command and arguments:** `install -g webpack webpack-cli --save-dev`
 
-* **bash**
-  * **Type:** `inline`
-  * **Script:** `npx webpack --config webpack.config.js`
+- **bash**
+  - **Type:** `inline`
+  - **Script:** `npx webpack --config webpack.config.js`
 
 ::: moniker-end
 
@@ -874,17 +874,17 @@ Once your source code is building successfully and your unit tests are in place 
 
 If you can build your project on your development machine but are having trouble building it on Azure Pipelines or TFS, explore the following potential causes and corrective actions:
 
-* Check that the versions of **Node.js** and the task runner on your development machine match those on the agent.
+- Check that the versions of **Node.js** and the task runner on your development machine match those on the agent.
   You can include command-line scripts such as `node --version` in your pipeline to check what is installed on the agent.
   Either use the **Node Tool Installer** (as explained in this guidance) to deploy the same version on the agent,
   or run `npm install` commands to update the tools to desired versions.
 
-* If your builds fail intermittently while you're restoring packages, either the npm registry is having issues or there are
+- If your builds fail intermittently while you're restoring packages, either the npm registry is having issues or there are
   networking problems between the Azure datacenter and the registry. These factors are not under our control, and you might
   need to explore whether using Azure Artifacts with an npm registry as an upstream source improves the reliability
   of your builds.
 
-* If you're using [`nvm`](https://github.com/nvm-sh/nvm) to manage different versions of Node.js, consider switching to the [**Node Tool Installer**](#use-a-specific-version-of-nodejs) task instead.
+- If you're using [`nvm`](https://github.com/nvm-sh/nvm) to manage different versions of Node.js, consider switching to the [**Node Tool Installer**](#use-a-specific-version-of-nodejs) task instead.
   (`nvm` is installed for historical reasons on the macOS image.)
   `nvm` manages multiple Node.js versions by adding shell aliases and altering `PATH`, which interacts poorly with the way [Azure Pipelines runs each task in a new process](../process/runs.md).
   The **Node Tool Installer** task handles this model correctly.

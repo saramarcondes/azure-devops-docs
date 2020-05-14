@@ -8,9 +8,9 @@ You can configure automated tests to run as part of a build or release. The publ
 
 The sharing levels include:
 
-* Run level
-* Result level
-* Individual tab selected within test run
-* Sharing is also compatible with any extension tabs configured
+- Run level
+- Result level
+- Individual tab selected within test run
+- Sharing is also compatible with any extension tabs configured
 
 When you share the URL, viewers will see the test run results in the full screen view.

@@ -26,47 +26,47 @@ For each transition, you specify a set of reasons for changing the state of the 
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <WORKFLOW>  
-> <STATES>  
->   <STATE value="Active">  
->     <FIELDS> . . . </FIELDS>  
->   </STATE>  
->   <STATE value="Resolved">  
->     <FIELDS> . . . </FIELDS>  
->   </STATE>  
->   <STATE value="Closed" />  
-> </STATES>  
-> <TRANSITIONS>  
->   <TRANSITION from="" to="Active">  
->     <REASONS>  
->       <DEFAULTREASON value="New" />  
->     </REASONS>  
->     <FIELDS> . . . </FIELDS>  
->   </TRANSITION>  
->   <TRANSITION from="Active" to="Resolved">  
->     <REASONS> . . . </REASONS>  
->     <FIELDS> . . . </FIELDS>  
->     <ACTIONS > . . . </ACTIONS >  
-> </TRANSITION>  
-> <TRANSITION from="Resolved" to="Closed">  
->     <REASONS> . . . </REASONS>  
->     <FIELDS> . . . </FIELDS>  
->     <ACTIONS > . . . </ACTIONS >  
-> </TRANSITION>  
-> <TRANSITION from="Resolved" to="Active">  
->     <REASONS> . . . </REASONS>  
->     <FIELDS> . . . </FIELDS>  
-> </TRANSITION>  
-> <TRANSITION from="Active" to="Closed ">  
->     <REASONS> . . . </REASONS>  
->     <FIELDS> . . . </FIELDS>  
-> </TRANSITION>  
-> <TRANSITION from="Closed" to="Active">  
->     <REASONS> . . . </REASONS>  
->     <FIELDS> . . . </FIELDS>  
-> </TRANSITION>  
-> </TRANSITIONS>  
-> </WORKFLOW>  
+> <WORKFLOW>
+> <STATES>
+>   <STATE value="Active">
+>     <FIELDS> . . . </FIELDS>
+>   </STATE>
+>   <STATE value="Resolved">
+>     <FIELDS> . . . </FIELDS>
+>   </STATE>
+>   <STATE value="Closed" />
+> </STATES>
+> <TRANSITIONS>
+>   <TRANSITION from="" to="Active">
+>     <REASONS>
+>       <DEFAULTREASON value="New" />
+>     </REASONS>
+>     <FIELDS> . . . </FIELDS>
+>   </TRANSITION>
+>   <TRANSITION from="Active" to="Resolved">
+>     <REASONS> . . . </REASONS>
+>     <FIELDS> . . . </FIELDS>
+>     <ACTIONS > . . . </ACTIONS >
+> </TRANSITION>
+> <TRANSITION from="Resolved" to="Closed">
+>     <REASONS> . . . </REASONS>
+>     <FIELDS> . . . </FIELDS>
+>     <ACTIONS > . . . </ACTIONS >
+> </TRANSITION>
+> <TRANSITION from="Resolved" to="Active">
+>     <REASONS> . . . </REASONS>
+>     <FIELDS> . . . </FIELDS>
+> </TRANSITION>
+> <TRANSITION from="Active" to="Closed ">
+>     <REASONS> . . . </REASONS>
+>     <FIELDS> . . . </FIELDS>
+> </TRANSITION>
+> <TRANSITION from="Closed" to="Active">
+>     <REASONS> . . . </REASONS>
+>     <FIELDS> . . . </FIELDS>
+> </TRANSITION>
+> </TRANSITIONS>
+> </WORKFLOW>
 > ```
 
 ## <a name="WORKFLOW"></a> Syntax structure
@@ -177,6 +177,6 @@ By using the elements that the following table describes, you can specify to whi
 
 ## Related articles
 
-* [FIELD (Workflow)](field-workflow-element-reference.md)
-* [Change the workflow](change-workflow-wit.md)
-* [Customize the work tracking experience](../customize-work.md)
+- [FIELD (Workflow)](field-workflow-element-reference.md)
+- [Change the workflow](change-workflow-wit.md)
+- [Customize the work tracking experience](../customize-work.md)

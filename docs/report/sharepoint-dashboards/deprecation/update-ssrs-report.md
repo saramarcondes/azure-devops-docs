@@ -29,9 +29,9 @@ PATHTOCURRENTSITE/_layouts/TfsRedirect.aspx?tf:Type=Report&tf:ReportName=REPORTN
 
 Installing TFS Disconnector for SharePoint replaces _tfsRedirect.aspx_ with a version that will continue to work until you do one of the following:
 
-* Move the location of your SQL Services Reporting Server
-* Rename your team project
-* Rename your collection
+- Move the location of your SQL Services Reporting Server
+- Rename your team project
+- Rename your collection
 
 If any of these changes are made, then you must replace the URL in the Page Viewer web part with the **full URL to the SSRS Report**.
 
@@ -54,4 +54,4 @@ Follow these steps to replace the URL:
 
 ## Related articles
 
-* [SSRS Report URL Access Parameter Reference](/sql/reporting-services/url-access-parameter-reference)
+- [SSRS Report URL Access Parameter Reference](/sql/reporting-services/url-access-parameter-reference)

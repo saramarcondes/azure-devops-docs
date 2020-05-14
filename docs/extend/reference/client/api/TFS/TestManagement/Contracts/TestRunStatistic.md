@@ -16,6 +16,6 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Members
 
-* `run`: [ShallowReference](../../../TFS/TestManagement/Contracts/ShallowReference.md).
+- `run`: [ShallowReference](../../../TFS/TestManagement/Contracts/ShallowReference.md).
 
-* `runStatistics`: [RunStatistic](../../../TFS/TestManagement/Contracts/RunStatistic.md)[].
+- `runStatistics`: [RunStatistic](../../../TFS/TestManagement/Contracts/RunStatistic.md)[].

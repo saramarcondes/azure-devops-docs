@@ -40,31 +40,31 @@ You can use work items to track anything you need to track. Each work item repre
 
 ::: moniker range=">= tfs-2018"
 
-* You use different [work item types (WITs)](#wit) to track different types of information. Specific tools - [Add backlog items](../backlogs/create-your-backlog.md), such as Issues (Basic process), User Stories (Agile), Product Backlog Items (Scrum), Requirements (CMMI) - [Define Features and Epics](../backlogs/define-features-epics.md) - [Define, triage, and manage Bugs](../backlogs/manage-bugs.md) - [Add Tasks to backlog items](../sprints/add-tasks.md)
-* You update the [work item form](#form) to add information, update status, reassign to another project member or sprint, and to link work items, attach files, and add comments
-* You can add and modify work items using the [web portal and other supported clients](#portal-clients)
-* You can [assign a work item](#assign) to one and only one project member
-* You [assign work items to a sprint](#assign-to-sprint) via the iteration path
-* You can use [ad hoc search or queries to find or list work items](#queries)
-* You can [use work item templates](#templates) to quickly fill in work item fields
-* Teams can [choose how they track bugs](#track), either as requirements or as tasks
-* You or a project administrator can [add and customize work item types](#customize)
-* [To add or modify work items](#permissions-access), you need to be a project member with Contributor permissions and Basic or Stakeholder access.
+- You use different [work item types (WITs)](#wit) to track different types of information. Specific tools - [Add backlog items](../backlogs/create-your-backlog.md), such as Issues (Basic process), User Stories (Agile), Product Backlog Items (Scrum), Requirements (CMMI) - [Define Features and Epics](../backlogs/define-features-epics.md) - [Define, triage, and manage Bugs](../backlogs/manage-bugs.md) - [Add Tasks to backlog items](../sprints/add-tasks.md)
+- You update the [work item form](#form) to add information, update status, reassign to another project member or sprint, and to link work items, attach files, and add comments
+- You can add and modify work items using the [web portal and other supported clients](#portal-clients)
+- You can [assign a work item](#assign) to one and only one project member
+- You [assign work items to a sprint](#assign-to-sprint) via the iteration path
+- You can use [ad hoc search or queries to find or list work items](#queries)
+- You can [use work item templates](#templates) to quickly fill in work item fields
+- Teams can [choose how they track bugs](#track), either as requirements or as tasks
+- You or a project administrator can [add and customize work item types](#customize)
+- [To add or modify work items](#permissions-access), you need to be a project member with Contributor permissions and Basic or Stakeholder access.
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2017"
 
-* You use different [work item types (WITs)](#wit) to track different types of information, such as user stories, bugs, and tasks
-* You update the [work item form](#form) to add information, update status, reassign to another project member or sprint, and to link work items and attach files
-* You can add and modify work items using the [web portal and other supported clients](#portal-clients)
-* You can [assign a work item](#assign) to one and only one project member
-* You [assign work items to a sprint](#assign-to-sprint) via the iteration path
-* Teams can [choose how they track bugs](#track), either as requirements or as tasks
-* You can use [ad hoc search or queries to find or list work items](#queries)
-* You can [use work item templates](#templates) to quickly fill in work item fields
-* You can [add and customize work item types and your backlog](#customize)
-* [To add or modify work items](#permissions-access), you need to be a project member with Contributor permissions and Basic or Stakeholder access.
+- You use different [work item types (WITs)](#wit) to track different types of information, such as user stories, bugs, and tasks
+- You update the [work item form](#form) to add information, update status, reassign to another project member or sprint, and to link work items and attach files
+- You can add and modify work items using the [web portal and other supported clients](#portal-clients)
+- You can [assign a work item](#assign) to one and only one project member
+- You [assign work items to a sprint](#assign-to-sprint) via the iteration path
+- Teams can [choose how they track bugs](#track), either as requirements or as tasks
+- You can use [ad hoc search or queries to find or list work items](#queries)
+- You can [use work item templates](#templates) to quickly fill in work item fields
+- You can [add and customize work item types and your backlog](#customize)
+- [To add or modify work items](#permissions-access), you need to be a project member with Contributor permissions and Basic or Stakeholder access.
 
 ::: moniker-end
 
@@ -153,12 +153,12 @@ Anyone who has write access to a project can assign work items, including users 
 
 **Note the following:**
 
-* You can assign a work item only to users that have been [added to a project or team](../../organizations/security/add-users-team-project.md)
-* You can assign a work item to one and only one user at a time. If work is split across two or more users, then you should consider creating additional work items that you'll assign to each user responsible for the work to be completed
-* Over time, the drop-down menu of person-name fields will display the names you have most recently selected
-* Some drop-down menus that support assignment from a team backlog or board are automatically limited to users assigned to the team
-* The system shows the display name and adds the user name when required to disambiguate identical display names
-* You can assign several work items at once from the backlog or query results, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md) for details.
+- You can assign a work item only to users that have been [added to a project or team](../../organizations/security/add-users-team-project.md)
+- You can assign a work item to one and only one user at a time. If work is split across two or more users, then you should consider creating additional work items that you'll assign to each user responsible for the work to be completed
+- Over time, the drop-down menu of person-name fields will display the names you have most recently selected
+- Some drop-down menus that support assignment from a team backlog or board are automatically limited to users assigned to the team
+- The system shows the display name and adds the user name when required to disambiguate identical display names
+- You can assign several work items at once from the backlog or query results, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md) for details.
 
 ::: moniker range="azure-devops"
 
@@ -209,10 +209,10 @@ You can use the search box to perform an ad hoc search to find specific work ite
 
 To learn more, see these topics:
 
-* [Create managed queries to list, update, or chart work items](../queries/example-queries.md)
-* [View, run, or email a query](../queries/view-run-query.md)
-* [Ad hoc vs managed queries](../queries/adhoc-vs-managed-queries.md)
-* [Work item query charts](../../report/dashboards/charts.md)
+- [Create managed queries to list, update, or chart work items](../queries/example-queries.md)
+- [View, run, or email a query](../queries/view-run-query.md)
+- [Ad hoc vs managed queries](../queries/adhoc-vs-managed-queries.md)
+- [Work item query charts](../../report/dashboards/charts.md)
 
 <a id="templates" />
 
@@ -235,8 +235,8 @@ You can add or modify the fields contained within a WIT or add a custom WIT. To 
 ::: moniker range="azure-devops-2019"
 You can add or modify the fields contained within a WIT or add a custom WIT. To learn more, see:
 
-* For project collections that use the Inheritance process model: [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md).
-* For project collections that use the On-premises XML process model: [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md).
+- For project collections that use the Inheritance process model: [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md).
+- For project collections that use the On-premises XML process model: [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md).
   ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
@@ -259,9 +259,9 @@ To add users to a project, see [Add users to a project or team](../../organizati
 
 ## Related articles
 
-* [Web portal navigation](../../project/navigation/index.md)
-* [Backlogs, portfolios, and Agile project management](../backlogs/backlogs-overview.md)
-* [About Kanban and Agile project management](../boards/kanban-overview.md)
-* [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
-* [Agile, Scrum, and CMMI processes](./guidance/choose-process.md)
-* [Work item field index](./guidance/work-item-field.md)
+- [Web portal navigation](../../project/navigation/index.md)
+- [Backlogs, portfolios, and Agile project management](../backlogs/backlogs-overview.md)
+- [About Kanban and Agile project management](../boards/kanban-overview.md)
+- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
+- [Agile, Scrum, and CMMI processes](./guidance/choose-process.md)
+- [Work item field index](./guidance/work-item-field.md)

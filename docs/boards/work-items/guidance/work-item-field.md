@@ -47,11 +47,11 @@ To support additional tracking needs, you can [modify or add a custom field](../
 
 Values in parenthesis indicate the following:
 
-* **System**: Core system field assigned to all work item types for all processes
-* **Agile**: Used only by the [Agile process](agile-process.md)
-* **CMMI**: Used only by the [CMMI process](cmmi-process.md)
-* **Scrum**: Used only by the [Scrum process](scrum-process.md)
-* **TCM**: Used to support Test case management
+- **System**: Core system field assigned to all work item types for all processes
+- **Agile**: Used only by the [Agile process](agile-process.md)
+- **CMMI**: Used only by the [CMMI process](cmmi-process.md)
+- **Scrum**: Used only by the [Scrum process](scrum-process.md)
+- **TCM**: Used to support Test case management
 
 <table>
 <tbody valign="top">
@@ -253,37 +253,37 @@ The following articles describe fields that are used in common by several WITs, 
 
 ### Fields common to many work types
 
-* [Titles, IDs, and descriptive fields](../../queries/titles-ids-descriptions.md)
-* [History and revision changes](../../queries/history-and-auditing.md)
-* [Areas and iterations](../../../organizations/settings/set-area-paths.md)
-* [Assignments and account-specific fields](../../queries/query-by-workflow-changes.md)
-* [Planning, ranking, and priorities](../../queries/planning-ranking-priorities.md)
-* [Work estimates, activity, and other numeric fields](../../queries/query-numeric.md)
-* [Build and test integration fields](../../queries/build-test-integration.md)
-* [Links and attachment related fields](../../queries/linking-attachments.md)
+- [Titles, IDs, and descriptive fields](../../queries/titles-ids-descriptions.md)
+- [History and revision changes](../../queries/history-and-auditing.md)
+- [Areas and iterations](../../../organizations/settings/set-area-paths.md)
+- [Assignments and account-specific fields](../../queries/query-by-workflow-changes.md)
+- [Planning, ranking, and priorities](../../queries/planning-ranking-priorities.md)
+- [Work estimates, activity, and other numeric fields](../../queries/query-numeric.md)
+- [Build and test integration fields](../../queries/build-test-integration.md)
+- [Links and attachment related fields](../../queries/linking-attachments.md)
 
 ### Fields used by specific work item types
 
-* [Code Review Request](guidance-code-review-feedback-field-reference.md)
-* [Code Review Response](guidance-code-review-feedback-field-reference.md)
-* [Feedback Request](guidance-code-review-feedback-field-reference.md)
-* [Feedback Response](guidance-code-review-feedback-field-reference.md)
-* [Shared Steps](../../queries/build-test-integration.md)
-* [Test Case](../../queries/build-test-integration.md)
+- [Code Review Request](guidance-code-review-feedback-field-reference.md)
+- [Code Review Response](guidance-code-review-feedback-field-reference.md)
+- [Feedback Request](guidance-code-review-feedback-field-reference.md)
+- [Feedback Response](guidance-code-review-feedback-field-reference.md)
+- [Shared Steps](../../queries/build-test-integration.md)
+- [Test Case](../../queries/build-test-integration.md)
 
 ### Fields used to track CMMI work items
 
-* [Requirements](cmmi/guidance-requirements-field-reference-cmmi.md)
-* [Bugs](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)
-* [Change Requests](cmmi/guidance-change-request-field-reference-cmmi.md)
-* [Issues](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)
-* [Review Meetings](cmmi/guidance-review-meeting-field-reference-cmmi.md)
-* [Risks](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)
+- [Requirements](cmmi/guidance-requirements-field-reference-cmmi.md)
+- [Bugs](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)
+- [Change Requests](cmmi/guidance-change-request-field-reference-cmmi.md)
+- [Issues](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)
+- [Review Meetings](cmmi/guidance-review-meeting-field-reference-cmmi.md)
+- [Risks](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)
 
 ## Related articles
 
-* [About work item fields](../work-item-fields.md)
-* [Create managed queries](../../queries/example-queries.md)
-* [Define a query](../../queries/using-queries.md)
-* [Choose a process](choose-process.md)
-* [Reportable fields reference](../../../reference/xml/reportable-fields-reference.md) (on-premises Azure DevOps only)
+- [About work item fields](../work-item-fields.md)
+- [Create managed queries](../../queries/example-queries.md)
+- [Define a query](../../queries/using-queries.md)
+- [Choose a process](choose-process.md)
+- [Reportable fields reference](../../../reference/xml/reportable-fields-reference.md) (on-premises Azure DevOps only)

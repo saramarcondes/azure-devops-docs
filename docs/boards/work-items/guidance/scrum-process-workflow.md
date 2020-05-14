@@ -90,10 +90,10 @@ By updating the State, teams know which items are new, in progress, or completed
 
 PBIs and bugs follow this typical workflow progression:
 
-* The product owner creates a PBI or a tester creates a bug in the **New** state with the default reason, **New backlog item**
-* The product owner moves the item to **Approved** after it is sufficiently described and ready for the team to estimate the level of effort. Most of the time, items near the top of the Product Backlog are in the Approved state, while items toward the middle and bottom are in a New state
-* The team updates the status to **Committed** when they decide to commit to working on it during the sprint
-* The item is moved to the **Done** state when the team has completed all its associated tasks and the product owner agrees that it has been implemented according to the Acceptance Criteria.
+- The product owner creates a PBI or a tester creates a bug in the **New** state with the default reason, **New backlog item**
+- The product owner moves the item to **Approved** after it is sufficiently described and ready for the team to estimate the level of effort. Most of the time, items near the top of the Product Backlog are in the Approved state, while items toward the middle and bottom are in a New state
+- The team updates the status to **Committed** when they decide to commit to working on it during the sprint
+- The item is moved to the **Done** state when the team has completed all its associated tasks and the product owner agrees that it has been implemented according to the Acceptance Criteria.
 
 ### Update status with Kanban or taskboards
 
@@ -117,7 +117,7 @@ When your team manages their work in sprints, they can use the sprint backlog pa
 
 Name the task and estimate the work it will take.
 
-<img src="media/scrum-task-form.png" alt="Scrum process, Task work item form" style="border: 1px solid #C3C3C3;" />  
+<img src="media/scrum-task-form.png" alt="Scrum process, Task work item form" style="border: 1px solid #C3C3C3;" />
 
 Using Scrum, teams forecast work and define tasks at the start of each sprint, and each team member performs a subset of those tasks. Tasks can include development, testing, and other kinds of work. For example, a developer can define tasks to implement PBIs, and a tester can define tasks to write and run test cases.
 
@@ -133,7 +133,7 @@ When teams estimate work using hours or days, they define tasks and the **Remain
     <td><p><a href="../../queries/query-numeric.md" data-raw-source="[Activity](../../queries/query-numeric.md)">Activity</a> </p></td>
     <td><p>Select the type of activity this task represents when your team estimates sprint capacity by activity.</p></td></tr>
 </tbody>
-</table>  
+</table>
 
 ## Track test progress
 

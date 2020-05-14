@@ -62,9 +62,7 @@ Setup an Azure DevOps project and make sure it is ready to be extracted. The ext
 
     ![ImportFromGitHub](media/uploadfromGithub.png)
 
-
     ![ImportFromHttps](media/uploadfromurl.png)
-
 
     > If the URL needs authentication, please provide **Access Token** or **Username & Password**
 

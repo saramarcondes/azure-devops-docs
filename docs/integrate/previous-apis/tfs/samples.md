@@ -285,7 +285,7 @@ public void UpdateTeam()
         if (response.IsSuccessStatusCode)
         {
             WebApiTeam teamResponse = response.Content.ReadAsAsync<WebApiTeam>().Result;
-        }  
+        }
     }
 }
 ```
@@ -494,7 +494,7 @@ public DeleteTeam()
     VssBasicCredential _credentials = new VssBasicCredential("", _personalAccessToken);
 
     string _project = "My project name";
-    string _team = "My team";  
+    string _team = "My team";
 
     using (TeamHttpClient teamHttpClient = new TeamHttpClient(_uri, _credentials))
     {

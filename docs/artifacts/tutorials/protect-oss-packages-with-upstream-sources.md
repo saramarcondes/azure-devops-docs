@@ -17,10 +17,10 @@ In this tutorial, you will:
 
 > [!div class="checklist"]
 >
-> * Create a new feed using upstream sources
-> * Replace the public registry in your configuration files
-> * Run an initial package restore to populate your feed
-> * Check your feed to see the saved copy of everything you used from the public registry
+> - Create a new feed using upstream sources
+> - Replace the public registry in your configuration files
+> - Run an initial package restore to populate your feed
+> - Check your feed to see the saved copy of everything you used from the public registry
 
 ## Create a feed with upstream sources enabled
 
@@ -28,8 +28,7 @@ In this tutorial, you will:
 
 ::: moniker range=">= azure-devops-2019"
 
-> [!div class="mx-imgBorder"]
-> ![Go to Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
+> [!div class="mx-imgBorder"] > ![Go to Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
 
 ::: moniker-end
 
@@ -43,8 +42,7 @@ In this tutorial, you will:
 
 ::: moniker range=">= azure-devops-2019"
 
-> [!div class="mx-imgBorder"]
-> ![New feed button](../media/new-feed-button-azure-devops-newnav.png)
+> [!div class="mx-imgBorder"] > ![New feed button](../media/new-feed-button-azure-devops-newnav.png)
 
 ::: moniker-end
 
@@ -58,8 +56,7 @@ In this tutorial, you will:
 
 ::: moniker range=">= azure-devops-2019"
 
-> [!div class="mx-imgBorder"]
-> ![New feed dialog](../media/new-feed-dialog.png)
+> [!div class="mx-imgBorder"] > ![New feed dialog](../media/new-feed-dialog.png)
 
 ::: moniker-end
 
@@ -81,10 +78,10 @@ In this tutorial, you will:
 
 1.  In the dialog:
 
-    * Give the feed a name.
-    * Choose who can read and contribute (or update) packages in your feed.
-    * Select _Use packages from public sources through this feed_
-    * When you're done, choose **Create**.
+    - Give the feed a name.
+    - Choose who can read and contribute (or update) packages in your feed.
+    - Select _Use packages from public sources through this feed_
+    - When you're done, choose **Create**.
 
     ![New feed dialog](../media/new-feed-dialog.png)
 
@@ -105,8 +102,7 @@ The next step is to update your configuration file to point to the new Azure Art
 
 1.  From your **Packages** page, click _Connect to Feed_
 
-    > [!div class="mx-imgBorder"]
-    > ![Connect to feed button in Azure Artifacts](../media/connect-to-feed-azure-devops-newnav.png)
+    > [!div class="mx-imgBorder"] > ![Connect to feed button in Azure Artifacts](../media/connect-to-feed-azure-devops-newnav.png)
 
 2.  Select the **npm** tab under the **npm** header
 
@@ -115,8 +111,7 @@ The next step is to update your configuration file to point to the new Azure Art
 
 3.  Follow the instructions under **Project setup** :
 
-    > [!div class="mx-imgBorder"]
-    > ![Connect to feed from Azure Artifacts](../media/connect-to-feed-npm-registry-azure-devops-newnav.png)
+    > [!div class="mx-imgBorder"] > ![Connect to feed from Azure Artifacts](../media/connect-to-feed-npm-registry-azure-devops-newnav.png)
 
 ::: moniker-end
 
@@ -140,8 +135,7 @@ After you've got the feed URL, create a new text file named `.npmrc` in the root
 
 2.  Select **Connect to feed**:
 
-    > [!div class="mx-imgBorder"]
-    > ![Connect to feed button on the upper right of the page](../media/connect-to-feed-nuget-exe-config-azure-devops-newnav.png)
+    > [!div class="mx-imgBorder"] > ![Connect to feed button on the upper right of the page](../media/connect-to-feed-nuget-exe-config-azure-devops-newnav.png)
 
 3.  Select the **NuGet.exe** tab under the **NuGet** header
 
@@ -150,8 +144,7 @@ After you've got the feed URL, create a new text file named `.npmrc` in the root
 
 4.  Copy the XML snippet under **Project Setup** to your clipboard.
 
-    > [!div class="mx-imgBorder"]
-    > ![Connect to feed button on the upper right of the page](../media/connect-to-feed-azure-devops-newnav.png)
+    > [!div class="mx-imgBorder"] > ![Connect to feed button on the upper right of the page](../media/connect-to-feed-azure-devops-newnav.png)
 
 5.  Create a new file named `nuget.config` in the root of your project.
 

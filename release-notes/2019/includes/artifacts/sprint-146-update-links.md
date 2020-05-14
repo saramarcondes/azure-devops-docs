@@ -2,4 +2,4 @@
 ms.topic: include
 ---
 
-* [Package usage stats](#package-usage-stats)
+- [Package usage stats](#package-usage-stats)

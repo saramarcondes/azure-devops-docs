@@ -91,9 +91,9 @@ These users are invited to your organization, but aren't required to use Azure D
 
 A: You get many benefits, for example:
 
-* Paying via Azure DevOps Services gives your users the flexibility to access both Azure DevOps Server and Azure DevOps Services for the same price.
-* You can pay monthly for users who need temporary access.
-* You get all the purchasing capabilities that Azure offers like payment via credit card, through a Cloud Solution Provider (CSP) partner, through the Enterprise Agreement, and more.
+- Paying via Azure DevOps Services gives your users the flexibility to access both Azure DevOps Server and Azure DevOps Services for the same price.
+- You can pay monthly for users who need temporary access.
+- You get all the purchasing capabilities that Azure offers like payment via credit card, through a Cloud Solution Provider (CSP) partner, through the Enterprise Agreement, and more.
 
 ### Q: Where can I learn more about Azure DevOps Server CALs and access levels for Azure Test Plans?
 
@@ -103,5 +103,5 @@ A: See [Change access levels](../security/change-access-levels.md).
 
 ## Related articles
 
-* [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
-* [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)
+- [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
+- [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)

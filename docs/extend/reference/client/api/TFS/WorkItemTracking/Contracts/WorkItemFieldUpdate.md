@@ -15,6 +15,6 @@ Module path: `TFS/WorkItemTracking/Contracts`
 
 ### Members
 
-* `newValue`: any.
+- `newValue`: any.
 
-* `oldValue`: any.
+- `oldValue`: any.

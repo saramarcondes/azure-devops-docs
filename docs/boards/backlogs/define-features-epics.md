@@ -22,18 +22,18 @@ Or, you've got an existing backlog and now need to organize it.
 No matter your starting point, you can use portfolio backlogs to bring more order to your backlog.
 Use your backlogs to plan your project and to:
 
-* Manage a portfolio of features that are supported by different development and management teams
-* Group items into a release train
-* Minimize size variability of your deliverables by breaking down a large feature into smaller backlog items
+- Manage a portfolio of features that are supported by different development and management teams
+- Group items into a release train
+- Minimize size variability of your deliverables by breaking down a large feature into smaller backlog items
 
 Use this article to learn how to:
 
 > [!div class="checklist"]
 >
-> * Determine what is a good feature or epic
-> * View a backlog or portfolio backlog
-> * Add features and epics
-> * Add child items
+> - Determine what is a good feature or epic
+> - View a backlog or portfolio backlog
+> - Add features and epics
+> - Add child items
 
 With portfolio backlogs you can quickly add and group items into a hierarchy, drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views. Portfolio backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](backlogs-boards-plans.md). To learn how to track progress across teams, see [Visibility across teams](../plans/visibility-across-teams.md).
 
@@ -49,19 +49,19 @@ A feature typically represents a shippable component of software. An epic repres
 
 **Features**
 
-* Add view options to the new work hub
-* Add mobile shopping cart
-* Support text alerts
-* Refresh the web portal with new look and feel
+- Add view options to the new work hub
+- Add mobile shopping cart
+- Support text alerts
+- Refresh the web portal with new look and feel
 
 **Epics**
 
-* Increase customer engagement
-* Improve and simplify the user experience
-* Implement new architecture to improve performance
-* Engineer the application to support future growth
-* Support integration with external services
-* Support mobile apps
+- Increase customer engagement
+- Improve and simplify the user experience
+- Implement new architecture to improve performance
+- Engineer the application to support future growth
+- Support integration with external services
+- Support mobile apps
 
 <a id="view-portfolio-backlog" />
 
@@ -297,9 +297,9 @@ Portfolio backlogs are not only a great way to organize your project plan, but a
 
 ## Related articles
 
-* [Product backlog controls](product-backlog-controls.md)
-* [Filter product and portfolio backlogs](filter-backlogs.md)
-* [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)
-* [Work with multi-team ownership of backlog items](backlogs-overview.md#multi-team)
-* [Product backlog controls](product-backlog-controls.md)
-* [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
+- [Product backlog controls](product-backlog-controls.md)
+- [Filter product and portfolio backlogs](filter-backlogs.md)
+- [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)
+- [Work with multi-team ownership of backlog items](backlogs-overview.md#multi-team)
+- [Product backlog controls](product-backlog-controls.md)
+- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)

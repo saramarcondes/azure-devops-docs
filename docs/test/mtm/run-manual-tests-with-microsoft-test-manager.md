@@ -30,14 +30,14 @@ Microsoft Test Runner sits at the side of the screen while you test your applica
 
 1.  **Get ready to test.** Here are a few things you might need to do before running your tests:
 
-    * Install the latest version of your app.
+    - Install the latest version of your app.
 
-    * [Create some test cases.](plan-manual-tests-with-microsoft-test-manager.md) Typically you create them at the start of a sprint, and aim to have them all pass by the end of the sprint. You can create them either with the web portal or Microsoft Test Manager.
+    - [Create some test cases.](plan-manual-tests-with-microsoft-test-manager.md) Typically you create them at the start of a sprint, and aim to have them all pass by the end of the sprint. You can create them either with the web portal or Microsoft Test Manager.
 
-    * Install Microsoft Test Manager on the machine where you want to run your tests.
+    - Install Microsoft Test Manager on the machine where you want to run your tests.
       To get Microsoft Test Manager, install [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/) or [Visual Studio Test Professional](https://visualstudio.microsoft.com/vs/test-professional/).
 
-    * [Connect Microsoft Test Manager to your test plan](connect-microsoft-test-manager-to-your-team-project-and-test-plan.md)
+    - [Connect Microsoft Test Manager to your test plan](connect-microsoft-test-manager-to-your-team-project-and-test-plan.md)
 
 1.  Run a test case.
 
@@ -123,10 +123,10 @@ see [Enable coded UI testing of your controls](/visualstudio/test/enable-coded-u
 
 ## See Also
 
-* [Repeat a test with different data](../repeat-test-with-different-data.md)
-* [Test configurations: specifying test platforms](../test-different-configurations.md)
-* [Record and play back manual tests](record-play-back-manual-tests.md)
-* [Collect more diagnostic data](collect-more-diagnostic-data-in-manual-tests.md)
-* [Testing Microsoft Store apps](testing-microsoft-store-apps.md)
+- [Repeat a test with different data](../repeat-test-with-different-data.md)
+- [Test configurations: specifying test platforms](../test-different-configurations.md)
+- [Record and play back manual tests](record-play-back-manual-tests.md)
+- [Collect more diagnostic data](collect-more-diagnostic-data-in-manual-tests.md)
+- [Testing Microsoft Store apps](testing-microsoft-store-apps.md)
 
 [!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)]

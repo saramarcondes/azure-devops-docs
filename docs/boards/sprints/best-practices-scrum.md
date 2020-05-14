@@ -31,10 +31,10 @@ After you've planned your sprint, you may want to [share the plan](share-plan.md
 
 You can learn more from these resources:
 
-* [What is Scrum?](/azure/devops/learn/agile/what-is-scrum)
-* [Sprint planning](https://msdn.microsoft.com/library/hh765982.aspx) white paper
-* [The Scrum Guide](https://www.scrumguides.org/scrum-guide.html)
-* [Build and manage the product backlog](https://msdn.microsoft.com/library/hh765982.aspx) white paper
+- [What is Scrum?](/azure/devops/learn/agile/what-is-scrum)
+- [Sprint planning](https://msdn.microsoft.com/library/hh765982.aspx) white paper
+- [The Scrum Guide](https://www.scrumguides.org/scrum-guide.html)
+- [Build and manage the product backlog](https://msdn.microsoft.com/library/hh765982.aspx) white paper
 
 <a id="set-sprint-goals"> </a>
 
@@ -54,9 +54,9 @@ Sprint goals can be feature oriented, but might also have a large process compon
 
 For example:
 
-* This sprint we will focus on a very simple user story and we will use it to prove that the proposed solution will work.
-* This sprint will revolve around implementing the security features that will properly secure the administration section of the website.
-* This sprint will be about integrating the most important payment gateways so that we can start collecting money.
+- This sprint we will focus on a very simple user story and we will use it to prove that the proposed solution will work.
+- This sprint will revolve around implementing the security features that will properly secure the administration section of the website.
+- This sprint will be about integrating the most important payment gateways so that we can start collecting money.
 
 Setting the sprint goals helps the team to stay focused.
 It will make it easier to define priority of tasks within a sprint and it will probably
@@ -71,17 +71,17 @@ _Contributed by [Jesse Houwing](https://blog.jessehouwing.nl/), Visual Studio de
 
 Fixing bugs represents a trade-off with regards to other work. Use your triage meeting to determine how important fixing each bug is against other priorities related to meeting the project scope, budget, and schedule.
 
-* Establish the team's criteria for evaluating which bugs to fix and how to assign priority and severity. Bugs associated with features of significant value (or significant opportunity cost of delay), or other project risks, should be assigned higher priority and severity. Store your triage criteria with other team documents and update as needed.
-* Use your triage criteria to determine which bugs to fix and how to set their State, Priority, Severity, and other fields.
-* Adjust your triage criteria based on where you are in your development cycle. Early on, you may decide to fix most of the bugs that you triage. However, later in the cycle, you may raise the triage criteria (or bug bar) to reduce the number of bugs that you need to fix.
-* Once you've triaged and prioritized a bug, assign it to a developer for further investigation and to determine how to implement a fix.
+- Establish the team's criteria for evaluating which bugs to fix and how to assign priority and severity. Bugs associated with features of significant value (or significant opportunity cost of delay), or other project risks, should be assigned higher priority and severity. Store your triage criteria with other team documents and update as needed.
+- Use your triage criteria to determine which bugs to fix and how to set their State, Priority, Severity, and other fields.
+- Adjust your triage criteria based on where you are in your development cycle. Early on, you may decide to fix most of the bugs that you triage. However, later in the cycle, you may raise the triage criteria (or bug bar) to reduce the number of bugs that you need to fix.
+- Once you've triaged and prioritized a bug, assign it to a developer for further investigation and to determine how to implement a fix.
 
 ## Manage your technical debt
 
 Consider managing your bug bar and technical debt as part of your team's overall set of continuous improvement activities. You may find these additional resources of interest:
 
-* [Good and Bad Technical Debt (and how TDD helps)](https://blog.crisp.se/2013/10/11/henrikkniberg/good-and-bad-technical-debt) by Henrik Kniberg
-* [Managing Technical Debt](https://www.infoq.com/articles/managing-technical-debt) posted by Sven Johann & Eberhard Wolff
+- [Good and Bad Technical Debt (and how TDD helps)](https://blog.crisp.se/2013/10/11/henrikkniberg/good-and-bad-technical-debt) by Henrik Kniberg
+- [Managing Technical Debt](https://www.infoq.com/articles/managing-technical-debt) posted by Sven Johann & Eberhard Wolff
 
 ## Tips from the trenches: [Agile Bug Management: Not an Oxymoron](https://visualstudiomagazine.com/articles/2012/10/12/agile-bug-management.aspx)
 
@@ -115,17 +115,17 @@ Scrum Masters help build and maintain healthy teams by employing Scrum processes
 
 Core responsibilities of Scrum Masters include:
 
-* Support the team to adopt and follow Scrum processes.
+- Support the team to adopt and follow Scrum processes.
   For example, you should not let the daily Scrum meeting become an open discussion that lasts 45 minutes.
-* Guard against the product owner or team members from adding work after the sprint begins.
+- Guard against the product owner or team members from adding work after the sprint begins.
 
-* Clear blocking issues that prevent the team from making forward progress.
+- Clear blocking issues that prevent the team from making forward progress.
   This might require you to perform small tasks, such as approving a purchase order for a new build computer or resolving a conflict within your team.
-* Help the team work to resolve conflicts and issues that arise and learn from the process.
-* Ask questions that reveal hidden issues and confirm that what people are communicating is well understood by the entire team.
-* Identify and safeguard the team from potential issues becoming major issues. Just as it's cheaper to fix a bug soon after it's discovered, it's also easier and less disruptive to fix a team issue when it's small and manageable.
-* Prevent the team from presenting incomplete user stories during a [sprint review meeting](#sprint-review-meeting).
-* Gather, analyze, and present data to business stakeholders in a way that
+- Help the team work to resolve conflicts and issues that arise and learn from the process.
+- Ask questions that reveal hidden issues and confirm that what people are communicating is well understood by the entire team.
+- Identify and safeguard the team from potential issues becoming major issues. Just as it's cheaper to fix a bug soon after it's discovered, it's also easier and less disruptive to fix a team issue when it's small and manageable.
+- Prevent the team from presenting incomplete user stories during a [sprint review meeting](#sprint-review-meeting).
+- Gather, analyze, and present data to business stakeholders in a way that
   demonstrates how the team is improving and growing. For example, if your team has significantly increased the amount of value that it has delivered while generating fewer bugs, make the value visible through regular communications to business stakeholders.
 
 Good Scrum Masters possess or develop excellent communication, negotiation, and conflict resolution skills. They actively listen to not only the words that people say and write but also how they deliver their messages (their body language, facial expressions, vocal pace, and other nonverbal communication).
@@ -140,12 +140,12 @@ Daily Scrum meetings help keep a team focused on what it needs to do the next da
 
 Three aspects of successful Scrum meetings are:
 
-* Everyone stands up (this helps to keep the meetings focused and short)
-* They start and end on time and occur at the same time in the same location each day
-* Everyone participates, each team member answers the three Scrum questions:
-  * _What have I accomplished since the most recent Scrum?_
-  * _What will I accomplish before the next Scrum?_
-  * _What blocking issues or impediments might affect my work?_
+- Everyone stands up (this helps to keep the meetings focused and short)
+- They start and end on time and occur at the same time in the same location each day
+- Everyone participates, each team member answers the three Scrum questions:
+  - _What have I accomplished since the most recent Scrum?_
+  - _What will I accomplish before the next Scrum?_
+  - _What blocking issues or impediments might affect my work?_
 
 Team members should strive to answer their questions quickly and concisely. For example:
 
@@ -187,9 +187,9 @@ Based on discussions, your team might decide to change one or more processes to 
 
 Look to address these areas during your team sprint retrospectives:
 
-* Issues that affected your team's general effectiveness, productivity, and quality.
-* Elements that impacted your team's overall satisfaction and project flow.
-* What happened to cause incomplete backlog items? What actions will the team take to prevent these issues in the future?
+- Issues that affected your team's general effectiveness, productivity, and quality.
+- Elements that impacted your team's overall satisfaction and project flow.
+- What happened to cause incomplete backlog items? What actions will the team take to prevent these issues in the future?
 
   For example, consider a team that had several tasks that only one individual on the team could perform. The isolated expertise created a critical path that threatened the sprint's success. The individual team member put in extra hours while other team members were frustrated that they could not do more to help. Going forward, the team decided to practice [eXtreme Programming](http://www.extremeprogramming.org) to help correct this problem over time.
 
@@ -199,5 +199,5 @@ In some cases, your team may need to do some work to implement an improvement. F
 
 ## Related articles
 
-* [What is Scrum?](/azure/devops/learn/agile/what-is-scrum)
-* [Agile Retrospectives: Making Good Teams Great](https://www.amazon.com/Agile-Retrospectives-Making-Teams-Great/dp/0977616649/)
+- [What is Scrum?](/azure/devops/learn/agile/what-is-scrum)
+- [Agile Retrospectives: Making Good Teams Great](https://www.amazon.com/Agile-Retrospectives-Making-Teams-Great/dp/0977616649/)

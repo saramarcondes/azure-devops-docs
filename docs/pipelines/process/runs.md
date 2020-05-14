@@ -17,15 +17,15 @@ When you run a pipeline, a lot of things happen under the covers.
 While you often won't need to know about them, once in a while it's useful to have the big picture.
 At a high level, Azure Pipelines will:
 
-* [Process the pipeline](#process-the-pipeline)
-* [Request one or more agents to run jobs](#request-an-agent)
-* Hand off jobs to agents and collect the results
+- [Process the pipeline](#process-the-pipeline)
+- [Request one or more agents to run jobs](#request-an-agent)
+- Hand off jobs to agents and collect the results
 
 On the agent side, for each job, an agent will:
 
-* [Get ready for the job](#prepare-to-run-a-job)
-* [Run each step in the job](#run-each-step)
-* [Report results to Azure Pipelines](#report-and-collect-results)
+- [Get ready for the job](#prepare-to-run-a-job)
+- [Run each step in the job](#run-each-step)
+- [Report results to Azure Pipelines](#report-and-collect-results)
 
 Jobs may [succeed, fail, or be canceled](#state-and-conditions).
 There are also situations where a job [may not complete](#timeouts-and-disconnects).
@@ -188,9 +188,9 @@ Using the Azure DevOps CLI, you can list the pipeline runs in your project and v
 
 ### Prerequisites
 
-* You must have installed the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](/azure/devops/cli/index).
-* Sign into Azure DevOps using `az login`.
-* For the examples in this article, set the default organization using `az devops configure --defaults organization=YourOrganizationURL`.
+- You must have installed the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](/azure/devops/cli/index).
+- Sign into Azure DevOps using `az login`.
+- For the examples in this article, set the default organization using `az devops configure --defaults organization=YourOrganizationURL`.
 
 ### List pipeline runs
 
@@ -212,17 +212,17 @@ az pipelines runs list [--branch]
 
 #### Optional parameters
 
-* **branch**: Filter by builds for this branch.
-* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-* **pipeline-ids**: Space-separated IDs of definitions for which to list builds.
-* **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
-* **query-order**: Define the order in which pipeline runs are listed. Accepted values are _FinishTimeAsc_, _FinishTimeDesc_, _QueueTimeAsc_, _QueueTimeDesc_, _StartTimeAsc_, and _StartTimeDesc_.
-* **reason**: Only list builds for this specified reason. Accepted values are _batchedCI_, _buildCompletion_, _checkInShelveset_, _individualCI_, _manual_, _pullRequest_, _schedule_, _triggered_, _userCreated_, and _validateShelveset_.
-* **requested-for**: Limit to the builds requested for a specified user or group.
-* **result**: Limit to the builds with a specified result. Accepted values are _canceled_, _failed_, _none_, _partiallySucceeded_, and _succeeded_.
-* **status**: Limit to the builds with a specified status. Accepted values are _all_, _cancelling_, _completed_, _inProgress_, _none_, _notStarted_, and _postponed_.
-* **tags**: Limit to the builds with each of the specified tags. Space separated.
-* **top**: Maximum number of builds to list.
+- **branch**: Filter by builds for this branch.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **pipeline-ids**: Space-separated IDs of definitions for which to list builds.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **query-order**: Define the order in which pipeline runs are listed. Accepted values are _FinishTimeAsc_, _FinishTimeDesc_, _QueueTimeAsc_, _QueueTimeDesc_, _StartTimeAsc_, and _StartTimeDesc_.
+- **reason**: Only list builds for this specified reason. Accepted values are _batchedCI_, _buildCompletion_, _checkInShelveset_, _individualCI_, _manual_, _pullRequest_, _schedule_, _triggered_, _userCreated_, and _validateShelveset_.
+- **requested-for**: Limit to the builds requested for a specified user or group.
+- **result**: Limit to the builds with a specified result. Accepted values are _canceled_, _failed_, _none_, _partiallySucceeded_, and _succeeded_.
+- **status**: Limit to the builds with a specified status. Accepted values are _all_, _cancelling_, _completed_, _inProgress_, _none_, _notStarted_, and _postponed_.
+- **tags**: Limit to the builds with each of the specified tags. Space separated.
+- **top**: Maximum number of builds to list.
 
 #### Example
 
@@ -251,10 +251,10 @@ az pipelines runs show --id
 
 #### Parameters
 
-* **id**: Required. ID of the pipeline run.
-* **open**: Optional. Opens the build results page in your web browser.
-* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-* **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **id**: Required. ID of the pipeline run.
+- **open**: Optional. Opens the build results page in your web browser.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
 
 #### Example
 
@@ -281,10 +281,10 @@ az pipelines runs tag add --run-id
 
 #### Parameters
 
-* **run-id**: Required. ID of the pipeline run.
-* **tags**: Required. Tags to be added to the pipeline run (comma-separated values).
-* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-* **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **run-id**: Required. ID of the pipeline run.
+- **tags**: Required. Tags to be added to the pipeline run (comma-separated values).
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
 
 #### Example
 
@@ -310,9 +310,9 @@ az pipelines runs tag list --run-id
 
 #### Parameters
 
-* **run-id**: Required. ID of the pipeline run.
-* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-* **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **run-id**: Required. ID of the pipeline run.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
 
 #### Example
 
@@ -339,10 +339,10 @@ az pipelines runs tag delete --run-id
 
 #### Parameters
 
-* **run-id**: Required. ID of the pipeline run.
-* **tag**: Required. Tag to be deleted from the pipeline run.
-* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-* **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **run-id**: Required. ID of the pipeline run.
+- **tag**: Required. Tag to be deleted from the pipeline run.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
 
 #### Example
 

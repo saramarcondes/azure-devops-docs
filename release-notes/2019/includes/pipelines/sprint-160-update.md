@@ -37,7 +37,7 @@ jobs:
       increments: [10,20]
       preDeploy:
         steps:
-        - script: initialize, cleanup....  
+        - script: initialize, cleanup....
       deploy:
         steps:
         - script: echo deploy updates...
@@ -51,11 +51,11 @@ jobs:
       postRouteTaffic:
         pool: server
         steps:
-        - script: echo monitor application health...  
+        - script: echo monitor application health...
       on:
         failure:
           steps:
-	  - script: echo clean-up, rollback...  
+	  - script: echo clean-up, rollback...
         success:
           steps:
           - script: echo checks passed, notify...
@@ -129,17 +129,17 @@ We ensure full E2E traceability when pipelines and ACR container resources are u
 
 In the pipeline run summary view, you can see:
 
-* The **resource version that triggered the run**. Now, your pipeline can be triggered upon completion of another Azure pipeline run or when a container image is pushed to ACR.
+- The **resource version that triggered the run**. Now, your pipeline can be triggered upon completion of another Azure pipeline run or when a container image is pushed to ACR.
 
   > [!div class="mx-imgBorder"] > ![Badge](../../media/160_16.png)
 
-* The **commits** that are consumed by the pipeline. You can also find the breakdown of the commits by each resource consumed by the pipeline.
+- The **commits** that are consumed by the pipeline. You can also find the breakdown of the commits by each resource consumed by the pipeline.
 
   > [!div class="mx-imgBorder"] > ![Badge](../../media/160_09.png)
 
-* The **work items** that are associated with each resource consumed by the pipeline.
+- The **work items** that are associated with each resource consumed by the pipeline.
 
-* The **artifacts** that are available to be used by the run.
+- The **artifacts** that are available to be used by the run.
 
   > [!div class="mx-imgBorder"] > ![Badge](../../media/160_10.png)
 
@@ -159,7 +159,7 @@ We are now making it easier to manage resource authorizations. Instead of failin
 
 Every job that runs in Azure Pipelines gets an access token. The access token is used by the tasks and by your scripts to call back into Azure DevOps. For example, we use the access token to get source code, upload logs, test results, artifacts, or to make REST calls into Azure DevOps. A new access token is generated for each job, and it expires once the job completes. With this update, we added the following enhancements.
 
-* **Prevent the token from accessing resources outside a team project**
+- **Prevent the token from accessing resources outside a team project**
 
   Until now, the default scope of all pipelines was the team project collection. You could change the scope to be the team project in classic build pipelines. However, you did not have that control for classic release or YAML pipelines. With this update we are introducing an organization setting to force every job to get a project-scoped token no matter what is configured in the pipeline. We also added the setting at the project level. Now, every new project and organization that you create will automatically have this setting turned on.
 
@@ -168,7 +168,7 @@ Every job that runs in Azure Pipelines gets an access token. The access token is
 
   Turning this setting on in existing projects and organizations may cause certain pipelines to fail if your pipelines access resources that are outside the team project using access tokens. To mitigate pipeline failures, you can explicitly grant _Project Build Service Account_ access to the desired resource. We strongly recommend that you turn on these security settings.
 
-* **Remove certain permissions for the access token**
+- **Remove certain permissions for the access token**
 
   By default, we grant a number of permissions to the access token, one of this permission is **Queue builds**. With this update, we removed this permission to the access token. If your pipelines need this permission, you can explicitly grant it to the _Project Build Service Account_ or _Project Collection Build Service Account_ depending on the token that you use.
 

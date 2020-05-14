@@ -51,11 +51,11 @@ When you add members to projects without setting up billing, they automatically 
 
 ### _Which email addresses can I add?_
 
-* If your organization is connected to Azure Active Directory, you can add only email addresses that are internal to the directory.
+- If your organization is connected to Azure Active Directory, you can add only email addresses that are internal to the directory.
 
-* Add email addresses of users who have ["personal" Microsoft accounts](https://www.microsoft.com/account) unless you [use your organization's directory](faq-azure-access.md) to authenticate users and control access through [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis).
+- Add email addresses of users who have ["personal" Microsoft accounts](https://www.microsoft.com/account) unless you [use your organization's directory](faq-azure-access.md) to authenticate users and control access through [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis).
 
-* If your organization is connected to your directory, all users must be directory members. They must sign in to Azure DevOps with work or school accounts that are managed by your directory. If they aren't members, they need to be [added to the directory](add-external-user.md).
+- If your organization is connected to your directory, all users must be directory members. They must sign in to Azure DevOps with work or school accounts that are managed by your directory. If they aren't members, they need to be [added to the directory](add-external-user.md).
 
 ![Add members' sign-in addresses or display names](media/add-team-members/add-user-or-group-to-project.png)
 
@@ -63,9 +63,9 @@ After you add members to your project, each member gets an invitation email that
 
 ### _What if they don't get or lose the invitation email?_
 
-* **Organizations connected to Azure AD**: If you're [inviting users from outside your Azure AD](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b), they must use the email. Removing users from the organization removes both their access and their license. However, any artifacts that were assigned to them remain unchanged. You can always invite users back into the organization if they exist in the Azure AD tenant. After they're removed from Azure AD, you can't assign any artifacts (work items, pull requests, and so forth) to them. We preserve the history of artifacts that have already been assigned to the users.
+- **Organizations connected to Azure AD**: If you're [inviting users from outside your Azure AD](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b), they must use the email. Removing users from the organization removes both their access and their license. However, any artifacts that were assigned to them remain unchanged. You can always invite users back into the organization if they exist in the Azure AD tenant. After they're removed from Azure AD, you can't assign any artifacts (work items, pull requests, and so forth) to them. We preserve the history of artifacts that have already been assigned to the users.
 
-* **Organizations with Microsoft accounts**: You can send a link to the project page, which the email contains, to the new team members. Removing users from the organization removes both their access and their licenses. You can no longer assign any artifacts (work items, pull requests, and so forth) to these users. However, any artifacts that were assigned to them remain unchanged.
+- **Organizations with Microsoft accounts**: You can send a link to the project page, which the email contains, to the new team members. Removing users from the organization removes both their access and their licenses. You can no longer assign any artifacts (work items, pull requests, and so forth) to these users. However, any artifacts that were assigned to them remain unchanged.
 
 ### _Why can't I add any more members?_
 
@@ -77,7 +77,7 @@ See [Q: Why can't I add any more members to my project?](faq-user-and-permission
 
 ## Related articles
 
-* [Change individual permissions, and grant access to specific functions](../../organizations/security/change-individual-permissions.md)
-* [Grant or restrict access to specific features and functions](../../organizations/security/restrict-access.md)
-* [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
-* [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)
+- [Change individual permissions, and grant access to specific functions](../../organizations/security/change-individual-permissions.md)
+- [Grant or restrict access to specific features and functions](../../organizations/security/restrict-access.md)
+- [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
+- [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)

@@ -16,6 +16,6 @@ Module path: `TFS/Work/Contracts`
 
 ### Members
 
-* `defaultValue`: string.
+- `defaultValue`: string.
 
-* `values`: [TeamFieldValue](../../../TFS/Work/Contracts/TeamFieldValue.md)[].
+- `values`: [TeamFieldValue](../../../TFS/Work/Contracts/TeamFieldValue.md)[].

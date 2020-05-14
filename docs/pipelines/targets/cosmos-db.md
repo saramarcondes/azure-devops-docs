@@ -19,17 +19,17 @@ You will:
 
 > [!div class="checklist"]
 >
-> * Clone a sample Cosmos DB and Azure Web App to your repository
-> * Create a Cosmos DB collection and database
-> * Set up CI for your app
-> * Set up CD to Azure for your app
-> * Review the CI/CD pipeline
+> - Clone a sample Cosmos DB and Azure Web App to your repository
+> - Create a Cosmos DB collection and database
+> - Set up CI for your app
+> - Set up CD to Azure for your app
+> - Review the CI/CD pipeline
 
 ## Prerequisites
 
-* An Azure subscription. You can get one free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
-* An Azure DevOps organization. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137). If your team already has one, then make sure you are an administrator of the project you want to use.
-* A SQL API based Cosmos DB instance. If you don't have one, you can follow the initial steps in [this tutorial](/azure/cosmos-db/create-sql-api-dotnet) to create a Cosmos DB instance and collection.
+- An Azure subscription. You can get one free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
+- An Azure DevOps organization. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137). If your team already has one, then make sure you are an administrator of the project you want to use.
+- A SQL API based Cosmos DB instance. If you don't have one, you can follow the initial steps in [this tutorial](/azure/cosmos-db/create-sql-api-dotnet) to create a Cosmos DB instance and collection.
 
 ## Clone a sample Cosmos DB and Azure Web App to your repository
 
@@ -128,11 +128,11 @@ You can optionally modify these build and release definitions to meet the needs 
 
 > [!div class="checklist"]
 >
-> * Clone a sample Cosmos DB and Azure Web App to your repository
-> * Create a Cosmos DB collection and database
-> * Set up CI for your app
-> * Set up CD to Azure for your app
-> * Review the CI/CD pipeline
+> - Clone a sample Cosmos DB and Azure Web App to your repository
+> - Create a Cosmos DB collection and database
+> - Set up CI for your app
+> - Set up CD to Azure for your app
+> - Review the CI/CD pipeline
 
 To learn more about Azure Pipelines, see this tutorial:
 

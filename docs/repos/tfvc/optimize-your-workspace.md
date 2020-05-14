@@ -17,11 +17,11 @@ monikerRange: '>= tfs-2015'
 
 Does your team have a large and complex codebase? Do you want your workspace to contain only the files you need to improve performance, reduce network traffic, and reduce the disk space required on your dev machine?
 
-* [Optimize your folder names](optimize-your-workspace.md#folder_name)
+- [Optimize your folder names](optimize-your-workspace.md#folder_name)
 
-* [Optimize your workspace using explicit, implicit, cloaked, and non-recursive folder mappings](optimize-your-workspace.md#mappings)
+- [Optimize your workspace using explicit, implicit, cloaked, and non-recursive folder mappings](optimize-your-workspace.md#mappings)
 
-* [Use workspaces to isolate and manage work among different branches](optimize-your-workspace.md#isolate)
+- [Use workspaces to isolate and manage work among different branches](optimize-your-workspace.md#isolate)
 
 <a name="folder_name"></a>
 
@@ -31,9 +31,9 @@ If you don't yet use branches, on your server, you should put all your code in a
 
 Some more tips on effective folder names:
 
-* Keep all folder, sub-folder, and file names short to simplify your work and avoid potential long-path issues that can occur with some types of code projects.
+- Keep all folder, sub-folder, and file names short to simplify your work and avoid potential long-path issues that can occur with some types of code projects.
 
-* Avoid whitespace if you want to make command-line operations a little easier to perform.
+- Avoid whitespace if you want to make command-line operations a little easier to perform.
 
 <a name="mappings"></a>
 

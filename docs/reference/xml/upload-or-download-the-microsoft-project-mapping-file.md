@@ -67,7 +67,7 @@ TFSFieldMapping upload | download /collection:CollectionURL /teamproject:Project
 2.  Download the mapping file by entering the following command:
 
     ```
-    TFSFieldMapping download /collection:CollectionURL /teamproject:ProjectName /mappingfile:MappingFile  
+    TFSFieldMapping download /collection:CollectionURL /teamproject:ProjectName /mappingfile:MappingFile
     ```
 
     > [!TIP]  
@@ -81,10 +81,10 @@ TFSFieldMapping upload | download /collection:CollectionURL /teamproject:Project
     >
     > ```XML
     > <Mapping WorkItemTrackingFieldReferenceName="System.Id"
-    >    ProjectField=""  
-    >    ProjectName=""  
-    >    ProjectUnits=""  
-    >    PublishOnly=""  
+    >    ProjectField=""
+    >    ProjectName=""
+    >    ProjectUnits=""
+    >    PublishOnly=""
     >    IfSummaryRefreshOnly=""/>
     > ```
 
@@ -93,9 +93,9 @@ TFSFieldMapping upload | download /collection:CollectionURL /teamproject:Project
     > [!div class="tabbedCodeSnippets"]
     >
     > ```XML
-    > <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.StartDate" ProjectField="pjTaskStart" PublishOnly="true" />  
-    > <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.FinishDate" ProjectField="pjTaskFinish" PublishOnly="true" />  
-    > <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.OriginalEstimate" ProjectField="pjTaskBaselineWork" ProjectUnits="pjHour" IfSummaryRefreshOnly="true" />  
+    > <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.StartDate" ProjectField="pjTaskStart" PublishOnly="true" />
+    > <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.FinishDate" ProjectField="pjTaskFinish" PublishOnly="true" />
+    > <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.OriginalEstimate" ProjectField="pjTaskBaselineWork" ProjectUnits="pjHour" IfSummaryRefreshOnly="true" />
     > <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.CompletedWork" ProjectField="pjTaskActualWork" ProjectUnits="pjHour" IfSummaryRefreshOnly="true" />
     > ```
 
@@ -113,10 +113,10 @@ TFSFieldMapping upload | download /collection:CollectionURL /teamproject:Project
     > [!div class="tabbedCodeSnippets"]
     >
     > ```
-    > TFSFieldMapping upload /collection:CollectionURL /teamproject:ProjectName /mappingfile:MappingFile  
+    > TFSFieldMapping upload /collection:CollectionURL /teamproject:ProjectName /mappingfile:MappingFile
     > ```
 
 ## Related articles
 
-* [Customize the Microsoft Project field mapping file](customize-project-field-mapping-file.md)
-* [Field mappings in Microsoft Project](field-mappings-in-microsoft-project.md)
+- [Customize the Microsoft Project field mapping file](customize-project-field-mapping-file.md)
+- [Field mappings in Microsoft Project](field-mappings-in-microsoft-project.md)

@@ -57,10 +57,10 @@ Storing the full file versions of these files causes repo size to increase over 
 
 ## Strategies for working with large binary source files
 
-* Don't commit compressed archives of data. It's better to uncompress the files and commit the diffable sources, letting Git handle compressing the data in your repo.
-* Avoid committing compiled code and other binary dependencies. Commit the source and build the dependencies, or use a package management solution to version and supply these files
+- Don't commit compressed archives of data. It's better to uncompress the files and commit the diffable sources, letting Git handle compressing the data in your repo.
+- Avoid committing compiled code and other binary dependencies. Commit the source and build the dependencies, or use a package management solution to version and supply these files
   to your system.
-* Store configuration and other structured data in diffable plain text formats, such as JSON.
+- Store configuration and other structured data in diffable plain text formats, such as JSON.
 
 ## Use Git Large File Storage (LFS)
 

@@ -26,41 +26,41 @@ If you're just starting out, read [Add, rename, and delete dashboards](dashboard
 
 ::: moniker range="azure-devops"
 
-* <strong>Dashboards</strong> are customizable interactive signboards that provide real-time information. Dashboards are associated with a team or a project and display configurable charts and widgets.
-* <strong>Charts</strong> are query-based status or trend charts derived from a work item query or test results.
-* <strong>Widgets</strong> display configurable information and charts on dashboards. The widget catalog provides brief descriptions of those widgets available to you. In addition, you can add widgets provided through the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops).
-* <strong>In-context reports</strong> are system-generated charts that support specific services. Examples are team velocity, sprint burndown, and the Cumulative Flow Diagram (CFD), and the Test Failures Report. These reports are displayed on the **Analytics** tab for a specific service and derive data from Analytics.
-* <strong>Power BI reports</strong> allow users to create rich, customized Power BI reports or other reports using OData queries of Analytics data and the returned JSON data.
+- <strong>Dashboards</strong> are customizable interactive signboards that provide real-time information. Dashboards are associated with a team or a project and display configurable charts and widgets.
+- <strong>Charts</strong> are query-based status or trend charts derived from a work item query or test results.
+- <strong>Widgets</strong> display configurable information and charts on dashboards. The widget catalog provides brief descriptions of those widgets available to you. In addition, you can add widgets provided through the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops).
+- <strong>In-context reports</strong> are system-generated charts that support specific services. Examples are team velocity, sprint burndown, and the Cumulative Flow Diagram (CFD), and the Test Failures Report. These reports are displayed on the **Analytics** tab for a specific service and derive data from Analytics.
+- <strong>Power BI reports</strong> allow users to create rich, customized Power BI reports or other reports using OData queries of Analytics data and the returned JSON data.
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-* <strong>Dashboards</strong> are customizable interactive signboards that provide real-time information. Dashboards are associated with a team and display configurable charts and widgets to show information.
-* <strong>Charts</strong> are query-based status or trend charts derived from a work item query or test results.
-* <strong>In-context reports</strong> are system-generated charts that support specific services. Examples are team velocity, sprint burndown, and the Cumulative Flow Diagram (CFD), and the Test Failures Report.
-* <strong>Widgets</strong> display configurable information and charts on dashboards. The widget catalog provides brief descriptions of those widgets available to you. In addition, you can add widgets provided through the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops).
-* <strong>Reports</strong> - <strong>Power BI reports</strong>: For project collections that support the Inherited process, allow users to create rich, customized Power BI reports or other reports using OData queries of Analytics data and the returned JSON data.  
-   - <strong>SQL Server reports</strong>: For project collections that support the On-premises XML process model, allow users access to out-of-the-box SQL Server reports as well as support to create customized SQL Reports or Excel reports. This requires that the project is [configured to support SQL Server reporting](../admin/add-a-report-server.md).
+- <strong>Dashboards</strong> are customizable interactive signboards that provide real-time information. Dashboards are associated with a team and display configurable charts and widgets to show information.
+- <strong>Charts</strong> are query-based status or trend charts derived from a work item query or test results.
+- <strong>In-context reports</strong> are system-generated charts that support specific services. Examples are team velocity, sprint burndown, and the Cumulative Flow Diagram (CFD), and the Test Failures Report.
+- <strong>Widgets</strong> display configurable information and charts on dashboards. The widget catalog provides brief descriptions of those widgets available to you. In addition, you can add widgets provided through the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops).
+- <strong>Reports</strong> - <strong>Power BI reports</strong>: For project collections that support the Inherited process, allow users to create rich, customized Power BI reports or other reports using OData queries of Analytics data and the returned JSON data.
+  - <strong>SQL Server reports</strong>: For project collections that support the On-premises XML process model, allow users access to out-of-the-box SQL Server reports as well as support to create customized SQL Reports or Excel reports. This requires that the project is [configured to support SQL Server reporting](../admin/add-a-report-server.md).
 
 ::: moniker-end
 
 ::: moniker range=">=tfs-2015 <= tfs-2018"
 
-* <strong>Dashboards</strong> are customizable interactive signboards that provide real-time information. Dashboards are associated with a team and display configurable charts and widgets to show information.
-* <strong>Charts</strong> are query-based status or trend charts derived from a work item query or test results.
-* <strong>Widgets</strong> display configurable information and charts on dashboards. The widget catalog provides brief descriptions of those widgets available to you. In addition, you can add widgets provided through the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops).
-* <strong>In-context reports\*\* are system-generated charts that support specific services. Examples are team velocity, sprint burndown, and the Cumulative Flow Diagram (CFD).
-* <strong>Reports</strong> correspond to out-of-the-box SQL Server reports as well as support to create customized SQL Reports or Excel reports. This requires that the project is [configured to support SQL Server reporting](../admin/add-a-report-server.md).
+- <strong>Dashboards</strong> are customizable interactive signboards that provide real-time information. Dashboards are associated with a team and display configurable charts and widgets to show information.
+- <strong>Charts</strong> are query-based status or trend charts derived from a work item query or test results.
+- <strong>Widgets</strong> display configurable information and charts on dashboards. The widget catalog provides brief descriptions of those widgets available to you. In addition, you can add widgets provided through the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops).
+- <strong>In-context reports\*\* are system-generated charts that support specific services. Examples are team velocity, sprint burndown, and the Cumulative Flow Diagram (CFD).
+- <strong>Reports</strong> correspond to out-of-the-box SQL Server reports as well as support to create customized SQL Reports or Excel reports. This requires that the project is [configured to support SQL Server reporting](../admin/add-a-report-server.md).
 
 ::: moniker-end
 
 ::: moniker range="tfs-2013"
 
-* <strong>Dashboards</strong> are customizable interactive signboards that provide real-time information. Dashboards are associated with a team and display configurable charts that you pin to the dashboard.
-* <strong>Charts</strong> are query-based status or trend charts derived from a work item query or test results.
-* <strong>In-context reports</strong> are system-generated charts that support specific services. Examples are team velocity, sprint burndown, and the Cumulative Flow Diagram (CFD).
-* <strong>Reports</strong> correspond to out-of-the-box SQL Server reports as well as support to create customized SQL Reports or Excel reports. This requires that the project is [configured to support SQL Server reporting](../admin/add-a-report-server.md).
+- <strong>Dashboards</strong> are customizable interactive signboards that provide real-time information. Dashboards are associated with a team and display configurable charts that you pin to the dashboard.
+- <strong>Charts</strong> are query-based status or trend charts derived from a work item query or test results.
+- <strong>In-context reports</strong> are system-generated charts that support specific services. Examples are team velocity, sprint burndown, and the Cumulative Flow Diagram (CFD).
+- <strong>Reports</strong> correspond to out-of-the-box SQL Server reports as well as support to create customized SQL Reports or Excel reports. This requires that the project is [configured to support SQL Server reporting](../admin/add-a-report-server.md).
 
 ::: moniker-end
 
@@ -393,8 +393,8 @@ Analytics widgets provide rich data based on the Analytics data. Analytics is av
 
 To learn more, see the following articles:
 
-* [What is Analytics?](../powerbi/what-is-analytics.md)
-* [Widgets based on Analytics data](../dashboards/analytics-widgets.md)
+- [What is Analytics?](../powerbi/what-is-analytics.md)
+- [Widgets based on Analytics data](../dashboards/analytics-widgets.md)
   ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
@@ -409,9 +409,9 @@ Analytics is in preview for Azure DevOps Server 2019.
 
 To learn more, see the following articles:
 
-* [Widgets based on Analytics](../dashboards/analytics-widgets.md)
-* [Add an Analytics widget to a dashboard](../dashboards/add-widget-to-dashboard.md#add-analytics-widget)
-* [What is Analytics?](../powerbi/what-is-analytics.md)
+- [Widgets based on Analytics](../dashboards/analytics-widgets.md)
+- [Add an Analytics widget to a dashboard](../dashboards/add-widget-to-dashboard.md#add-analytics-widget)
+- [What is Analytics?](../powerbi/what-is-analytics.md)
 
 ::: moniker-end
 
@@ -488,13 +488,13 @@ Each sprint provides access to two charts. The first [tracks capacity](../../boa
 
 To learn more about these reports, see one of the following articles:
 
-* [Cumulative flow](cumulative-flow.md)
-* [Team velocity](team-velocity.md)
-* [View/configure sprint burndown](configure-sprint-burndown.md)
+- [Cumulative flow](cumulative-flow.md)
+- [Team velocity](team-velocity.md)
+- [View/configure sprint burndown](configure-sprint-burndown.md)
 
 ::: moniker range="azure-devops"
 
-<a id="incontext-reports" />  
+<a id="incontext-reports" />
 
 ## In-context reports: Pipeline Failures and Test Failures
 

@@ -26,6 +26,6 @@ You might receive this error when you try to connect to Azure DevOps Services or
 
 ## Related articles
 
-* [Add users to projects](../../organizations/security/add-users-team-project.md)
-* [Assign licenses to users](../../organizations/accounts/add-organization-users.md)
-* [Connect to projects](../../organizations/projects/connect-to-projects.md)
+- [Add users to projects](../../organizations/security/add-users-team-project.md)
+- [Assign licenses to users](../../organizations/accounts/add-organization-users.md)
+- [Connect to projects](../../organizations/projects/connect-to-projects.md)

@@ -16,9 +16,9 @@ We have a lot of new features rolling out this sprint!
 
 In mid-August, we enabled an opt-in mode allowing customers to preview our new navigation experience as detailed by Brian Harry on his [blog](https://blogs.msdn.microsoft.com/bharry/2016/08/18/new-navigation-for-team-services/). We’ve collected feedback and made refinements since then, preparing the feature for broad availability. I am happy to announce that with this sprint’s deployment, we will be defaulting to the new navigation experience on all accounts. We’ve made this decision based on the following data:
 
-* 93% of users that opted into the new nav did not return to the previous version, aligning with the positive user feedback we received
-* 30%+ of the web traffic is now serving the new nav, and this number continues to grow. This gives us both confidence on quality and significant coverage of use cases
-* Since the opt-in release, over 20 usability and bug fixes have reported by users and all have been addressed
+- 93% of users that opted into the new nav did not return to the previous version, aligning with the positive user feedback we received
+- 30%+ of the web traffic is now serving the new nav, and this number continues to grow. This gives us both confidence on quality and significant coverage of use cases
+- Since the opt-in release, over 20 usability and bug fixes have reported by users and all have been addressed
 
 The most constructive feedback we have received is that users want to manage this change, and we need to be respectful of that. In this sprint, we are still allowing users to opt out of the new experience. This provides admins and users with a window to prepare and accommodate their teams for the change. Our current plan is to remove the previous nav next sprint, and continue to innovate our navigation using the new navigation experience as the base going forward.
 
@@ -120,13 +120,13 @@ The 2.107.x build agent now supports Git shallow clone and git-lfs. More details
 
 The hosted build pool has been updated:
 
-* Azure SDK 2.9.1
-* WIX 3.10
-* SQL lite for Windows Phone 8.1
-* Xamarin Stable Cycle 8 SR 0
-* Windows 10 SDK 14393
-* .NET 4.6.2
-* Git 2.10.1
+- Azure SDK 2.9.1
+- WIX 3.10
+- SQL lite for Windows Phone 8.1
+- Xamarin Stable Cycle 8 SR 0
+- Windows 10 SDK 14393
+- .NET 4.6.2
+- Git 2.10.1
 
 ### New places to search
 

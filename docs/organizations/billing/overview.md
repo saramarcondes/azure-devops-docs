@@ -26,8 +26,8 @@ The _free tier_ includes:
 
 All charges appear on your monthly Azure bill. Azure supports payment by credit card as well as invoiced billing through the Enterprise Agreement (EA), Cloud Solution Providers (CSP), and more.
 
-* [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
-* [Azure DevOps billing overview](overview.md)
+- [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
+- [Azure DevOps billing overview](overview.md)
 
 ::: moniker-end
 
@@ -35,8 +35,8 @@ All charges appear on your monthly Azure bill. Azure supports payment by credit 
 
 Make some purchases for Azure DevOps Server on your monthly Azure bill.
 
-* [Azure DevOps Server pricing](https://visualstudio.microsoft.com/team-services/tfs-pricing/)
-* [How to buy CALs or access to the Test Services page](buy-access-tfs-test-hub.md)
+- [Azure DevOps Server pricing](https://visualstudio.microsoft.com/team-services/tfs-pricing/)
+- [How to buy CALs or access to the Test Services page](buy-access-tfs-test-hub.md)
 
 ::: moniker-end
 
@@ -46,11 +46,11 @@ During your first purchase for your organization, you're prompted to select the 
 
 The following links take you to the paid services that are offered by Microsoft:
 
-* [Buy Basic access for users](buy-basic-access-add-users.md)
-* [Buy Azure Test Plans](buy-basic-access-add-users.md)
-* [Buy CI/CD](buy-more-build-vs.md)
-* [Sign up for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)
-* [Buy cloud-based load testing](buy-load-testing-vs.md). You're charged based on the load tests that you run. By default, paid usage is turned off for your organization.
+- [Buy Basic access for users](buy-basic-access-add-users.md)
+- [Buy Azure Test Plans](buy-basic-access-add-users.md)
+- [Buy CI/CD](buy-more-build-vs.md)
+- [Sign up for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)
+- [Buy cloud-based load testing](buy-load-testing-vs.md). You're charged based on the load tests that you run. By default, paid usage is turned off for your organization.
 
 Enable paid usage via the **Billing** tab within **Organization settings** in Azure DevOps.
 
@@ -62,22 +62,22 @@ Enable paid usage via the **Billing** tab within **Organization settings** in Az
 
 Ensure the following is true for the user who's [setting up billing](set-up-billing-for-your-organization-vs.md) for the first time:
 
-* User has [Project Collection Administrator or organization Owner permissions](../security/lookup-organization-owner-admin.md)
-* User has [an Azure subscription that you can use to purchase](add-backup-billing-managers.md)
+- User has [Project Collection Administrator or organization Owner permissions](../security/lookup-organization-owner-admin.md)
+- User has [an Azure subscription that you can use to purchase](add-backup-billing-managers.md)
 
 To make subsequent changes to the amount of paid resources, you only need to have [access to the Azure subscription](add-backup-billing-managers.md).
 
 ## Next steps
 
-* [Set up billing](set-up-billing-for-your-organization-vs.md)
-* [Add user who can make purchases or backup billing manager](add-backup-billing-managers.md)
-* [Change the Azure subscription for billing](change-azure-subscription.md)
+- [Set up billing](set-up-billing-for-your-organization-vs.md)
+- [Add user who can make purchases or backup billing manager](add-backup-billing-managers.md)
+- [Change the Azure subscription for billing](change-azure-subscription.md)
 
 ## Related articles
 
-* [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
-* [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)
-* [Get Started using Azure DevOps](../../get-started/index.yml)
-* [Marketplace & Extensibility](../../marketplace-extensibility/index.yml)
-* [Azure DevOps Server Administration](/azure/devops/server/server/index)
-* [Buy Visual Studio cloud subscriptions](/visualstudio/subscriptions/vscloud-overview)
+- [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
+- [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)
+- [Get Started using Azure DevOps](../../get-started/index.yml)
+- [Marketplace & Extensibility](../../marketplace-extensibility/index.yml)
+- [Azure DevOps Server Administration](/azure/devops/server/server/index)
+- [Buy Visual Studio cloud subscriptions](/visualstudio/subscriptions/vscloud-overview)

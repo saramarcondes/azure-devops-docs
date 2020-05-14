@@ -79,10 +79,10 @@ Diffusing skills and knowledge makes your team stronger and more resilient.
 High quality reviews start with high quality feedback.
 The keys to great feedback in a pull request are:
 
-* Have the right people review the pull request
-* Make sure that reviewers know what the code does
-* Give actionable, constructive feedback
-* Reply to comments in a timely manner
+- Have the right people review the pull request
+- Make sure that reviewers know what the code does
+- Give actionable, constructive feedback
+- Reply to comments in a timely manner
 
 When assigning reviewers to your pull request, make sure you select the right set of reviewers.
 You want reviewers that will know how your code works, but try to also include developers working in other areas so they can share their ideas.

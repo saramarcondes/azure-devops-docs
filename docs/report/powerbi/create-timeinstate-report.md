@@ -19,27 +19,27 @@ The time a work item spends in a specific state or series of states is an import
 
 This article provides a series of recipes using DAX calculations to evaluate time spent by work items in any combination of states. Specifically, you'll learn how to add the following calculated columns and one measure and use them to generate various trend charts. (All fields are calculated columns except the first one listed.)
 
-* _Work Items Count_ (measure)
-* _State Sort Order_
-* _Date Previous_
-* _Date Diff in Days_
-* _Is Last Day in State_
-* _State Time in Days_
-* _State Previous_
-* _State Changed_
-* _State Flow_
-* _State Change Count_
-* _State Change Count - Last Proposed_
-* _State Restart Time in Days_
-* _State Time in Days - In Progress_
+- _Work Items Count_ (measure)
+- _State Sort Order_
+- _Date Previous_
+- _Date Diff in Days_
+- _Is Last Day in State_
+- _State Time in Days_
+- _State Previous_
+- _State Changed_
+- _State Flow_
+- _State Change Count_
+- _State Change Count - Last Proposed_
+- _State Restart Time in Days_
+- _State Time in Days - In Progress_
 
 > [!IMPORTANT]
 >
-> * When adding a calculated column or measure per the examples shown in this article, replace _View Name_ with the table name for the Analytics view. For example, replace _View Name_ with _Stories - Last 30 days_.<br/><br/>![Analytics view name table](media/view-name.png))
-> * Analytics views do not support intra-day revisions. These examples have the most precision when using a Daily interval for the Analytics view.
-> * All intra-day or intra-period (weekly/monthly) revisions are ignored by the calculations. This can result in unexpected results for specific scenarios like a work item showing no time "In Progress" when a work item is "In Progress" for less than a day.
-> * Power BI default aggregations are used whenever possible instead of building measures.
-> * Some calculations will include +0 to ensure that a numeric value is included for every row instead of BLANK.
+> - When adding a calculated column or measure per the examples shown in this article, replace _View Name_ with the table name for the Analytics view. For example, replace _View Name_ with _Stories - Last 30 days_.<br/><br/>![Analytics view name table](media/view-name.png))
+> - Analytics views do not support intra-day revisions. These examples have the most precision when using a Daily interval for the Analytics view.
+> - All intra-day or intra-period (weekly/monthly) revisions are ignored by the calculations. This can result in unexpected results for specific scenarios like a work item showing no time "In Progress" when a work item is "In Progress" for less than a day.
+> - Power BI default aggregations are used whenever possible instead of building measures.
+> - Some calculations will include +0 to ensure that a numeric value is included for every row instead of BLANK.
 >   You may need to revise some of the calculated column definitions based on the workflow states used by your project. For example, if your project uses 'New", 'Active' and 'Closed' in place of 'Proposed', 'In Progress', and 'Completed'.
 
 ## Add the _Work Items Count_ measure
@@ -96,14 +96,14 @@ The following steps will help you resolve this issue.
 2.  Choose **New Column** and replace the default text with the following code and then click the ![ ](media/checkmark.png) checkmark.
 
     ```DAX
-    State Sort Order =  
-    SWITCH (  
-        'View Name'[State Category],  
-        "Proposed", 1,  
-        "InProgress", 2,  
-        "Resolved", 3,  
-        4  
-    )  
+    State Sort Order =
+    SWITCH (
+        'View Name'[State Category],
+        "Proposed", 1,
+        "InProgress", 2,
+        "Resolved", 3,
+        4
+    )
     ```
 
     > [!NOTE]  
@@ -134,8 +134,8 @@ The next step for calculating time-in-state requires mapping the previous interv
 
 However, this approach has two main problems:
 
-* It works only for daily periods.
-* It does not handle gaps in the data. For example, if a work item is moved between projects.
+- It works only for daily periods.
+- It does not handle gaps in the data. For example, if a work item is moved between projects.
 
 To resolve these problems, the calculated column should find the previous day by scanning the _Date_ field.
 
@@ -345,8 +345,8 @@ And, the last parameter, `'View Name'[Date], 'View Name'[Date Previous]`, specif
 
 Using the _State Previous_ column, we can flag the rows for each work item where a state transition has occurred. The _Stage Changed_ calculated column you'll add has two special considerations:
 
-* Blank values of _State Previous_ will be set to the _Created Date_ of the work item
-* Creation of a work item is considered a state transition
+- Blank values of _State Previous_ will be set to the _Created Date_ of the work item
+- Creation of a work item is considered a state transition
 
 > [!IMPORTANT]  
 > Requires that you have added the [_State Previous_](#add-state-previous) calculated column to the table.
@@ -475,28 +475,28 @@ From the **Modeling** tab, choose **New Column** and then replace the default te
 
 Additional information is provided in this section for the DAX functions used to created the calculated columns and measure added in this article.
 
-* [`CALCULATE`](https://msdn.microsoft.com/query-bi/dax/calculate-function-dax): This function is the basis for nearly all examples. The basic structure is an expression followed by a series of filters which are applied to the expression.
+- [`CALCULATE`](https://msdn.microsoft.com/query-bi/dax/calculate-function-dax): This function is the basis for nearly all examples. The basic structure is an expression followed by a series of filters which are applied to the expression.
 
-* [`COUNTROWS`](https://msdn.microsoft.com/query-bi/dax/countrows-function-dax): This function, `COUNTROWS ( 'View Name' )`, simply counts the number of rows which remain after the filters are applied.
-* [`LASTDATE`](https://msdn.microsoft.com/query-bi/dax/lastdate-function-dax): We apply the `LASTDATE` filter to an expression, for example `LASTDATE ( 'View Name'[Date] )`, to find the newest date across all rows in the table and eliminate the rows that do not share the same date. With the snapshot table generated by an Analytics view this filter effectively picks the last day of the selected period.
+- [`COUNTROWS`](https://msdn.microsoft.com/query-bi/dax/countrows-function-dax): This function, `COUNTROWS ( 'View Name' )`, simply counts the number of rows which remain after the filters are applied.
+- [`LASTDATE`](https://msdn.microsoft.com/query-bi/dax/lastdate-function-dax): We apply the `LASTDATE` filter to an expression, for example `LASTDATE ( 'View Name'[Date] )`, to find the newest date across all rows in the table and eliminate the rows that do not share the same date. With the snapshot table generated by an Analytics view this filter effectively picks the last day of the selected period.
 
-* [`MAX`](https://msdn.microsoft.com/query-bi/dax/max-function-dax): Returns the largest numeric value in a column, or between two scalar expressions. We apply `MAX ( 'View Name'[Date] )`, to determine the most recent date after all filters have been applied.
+- [`MAX`](https://msdn.microsoft.com/query-bi/dax/max-function-dax): Returns the largest numeric value in a column, or between two scalar expressions. We apply `MAX ( 'View Name'[Date] )`, to determine the most recent date after all filters have been applied.
 
-* [`ALLEXCEPT`](https://msdn.microsoft.com/query-bi/dax/allexcept-function-dax): Removes all context filters in the table except filters that have been applied to the specified columns. Essentially, `ALLEXCEPT ('View Name'', 'View Name'[Work Item Id])` reduces the rows in the table down to only those that share the same work item ID as the current row.
+- [`ALLEXCEPT`](https://msdn.microsoft.com/query-bi/dax/allexcept-function-dax): Removes all context filters in the table except filters that have been applied to the specified columns. Essentially, `ALLEXCEPT ('View Name'', 'View Name'[Work Item Id])` reduces the rows in the table down to only those that share the same work item ID as the current row.
 
-* [`EARLIER`](https://msdn.microsoft.com/query-bi/dax/earlier-function-dax): Returns the current value of the specified column in an outer evaluation pass of the mentioned column. For example, `'View Name'[Date] < EARLIER ( 'View Name'[Date] )`, further reduces the data set to only those rows that occurred before the date for the current row which is referenced by using the `EARLIER` function. `EARLIER` does not refer to previous dates, it specifically defines the row context of the calculated column
+- [`EARLIER`](https://msdn.microsoft.com/query-bi/dax/earlier-function-dax): Returns the current value of the specified column in an outer evaluation pass of the mentioned column. For example, `'View Name'[Date] < EARLIER ( 'View Name'[Date] )`, further reduces the data set to only those rows that occurred before the date for the current row which is referenced by using the `EARLIER` function. `EARLIER` does not refer to previous dates, it specifically defines the row context of the calculated column
 
-* [`ISBLANK`](https://msdn.microsoft.com/query-bi/dax/isblank-function-dax): Checks whether a value is blank, and returns TRUE or FALSE. `ISBLANK` evaluates the current row to determine if _Date Previous_ has a value. If it does not, the If statement sets _Date Diff in Days_ to 1.
+- [`ISBLANK`](https://msdn.microsoft.com/query-bi/dax/isblank-function-dax): Checks whether a value is blank, and returns TRUE or FALSE. `ISBLANK` evaluates the current row to determine if _Date Previous_ has a value. If it does not, the If statement sets _Date Diff in Days_ to 1.
 
-* [`DATEDIFF`](https://msdn.microsoft.com/query-bi/dax/datediff-function-dax): Returns the count of interval boundaries crossed between two dates. `DATEDIFF` subtracts _Date Previous_ from _Date_ to determine the number of days between them.
+- [`DATEDIFF`](https://msdn.microsoft.com/query-bi/dax/datediff-function-dax): Returns the count of interval boundaries crossed between two dates. `DATEDIFF` subtracts _Date Previous_ from _Date_ to determine the number of days between them.
 
-* [`LOOKUPVALUE`](https://msdn.microsoft.com/query-bi/dax/lookupvalue-function-dax): Returns the value in _result_columnName_ for the row that meets all criteria specified by _search_columnName_ and _search_value_.
+- [`LOOKUPVALUE`](https://msdn.microsoft.com/query-bi/dax/lookupvalue-function-dax): Returns the value in _result_columnName_ for the row that meets all criteria specified by _search_columnName_ and _search_value_.
 
 ## Related articles
 
-* [Power BI integration overview](overview.md)
-* [Create Analytics views](analytics-views-create.md)
-* [Get started with Power BI Desktop](/power-bi/desktop-getting-started)
-* [Dataset design for the Power BI Connector](data-connector-dataset.md)
-* [Workflow states and state categories](/azure/devops/boards/work-items/workflow-and-state-categories)
-* [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)
+- [Power BI integration overview](overview.md)
+- [Create Analytics views](analytics-views-create.md)
+- [Get started with Power BI Desktop](/power-bi/desktop-getting-started)
+- [Dataset design for the Power BI Connector](data-connector-dataset.md)
+- [Workflow states and state categories](/azure/devops/boards/work-items/workflow-and-state-categories)
+- [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)

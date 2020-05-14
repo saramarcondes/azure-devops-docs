@@ -31,12 +31,12 @@ The Azure file copy task can be used in a build or release pipeline to copy file
 
 The `azcopy copy` command supports only the [arguments](https://docs.microsoft.com/azure/storage/common/storage-ref-azcopy-copy?toc=/azure/storage/blobs/toc.json#options) associated with it. Because of the change in syntax of AzCopy, some of the existing capabilities are not available in AzCopy V10. These include:
 
-* Specifying log location
-* Cleaning log and plan files after the copy
-* Resume copy if job fails
+- Specifying log location
+- Cleaning log and plan files after the copy
+- Resume copy if job fails
 
 The additional capabilities supported in this version of the task are:
 
-* Wildcard symbols in the file name/path of the source
-* Inferring the content type based on file extension when no arguments are provided
-* Defining the log verbosity for the log file by passing an argument
+- Wildcard symbols in the file name/path of the source
+- Inferring the content type based on file extension when no arguments are provided
+- Defining the log verbosity for the log file by passing an argument

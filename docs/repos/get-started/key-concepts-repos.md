@@ -26,12 +26,12 @@ Learn more: [branches](../git/branches.md), [branch organization](../git/git-bra
 
 Branch policies are an important part of the Git workflow. You use them to help protect the important branches in your development, like `master`. Branch policies enable you to:
 
-* Isolate work in progress from the completed work in your master branch.
-* Guarantee that changes build before they get to master.
-* Limit who can contribute to specific branches.
-* Enforce who can create branches and the naming guidelines for the branches.
-* Automatically include the right reviewers for every code change.
-* Enforce best practices with required code reviewers.
+- Isolate work in progress from the completed work in your master branch.
+- Guarantee that changes build before they get to master.
+- Limit who can contribute to specific branches.
+- Enforce who can create branches and the naming guidelines for the branches.
+- Automatically include the right reviewers for every code change.
+- Enforce best practices with required code reviewers.
 
 Learn more: [branch policies](../git/branch-policies-overview.md).
 

@@ -27,33 +27,33 @@ Read about the new features below and head over to VSTS to try them for yourself
 
 Wiki:
 
-* [Surface metadata for wiki pages and code preview using YAML tags](#surface-metadata-for-wiki-pages-and-code-preview-using-yaml-tags)
+- [Surface metadata for wiki pages and code preview using YAML tags](#surface-metadata-for-wiki-pages-and-code-preview-using-yaml-tags)
 
 Work:
 
-* [View work for your team in the Work Items hub](#view-work-for-your-team-in-the-work-items-hub)
+- [View work for your team in the Work Items hub](#view-work-for-your-team-in-the-work-items-hub)
 
 Build and release:
 
-* [Check installed software on Microsoft-hosted agent pools](#check-installed-software-on-microsoft-hosted-agent-pools)
+- [Check installed software on Microsoft-hosted agent pools](#check-installed-software-on-microsoft-hosted-agent-pools)
 
 Test:
 
-* [Review summarized test results](#review-summarized-test-results)
+- [Review summarized test results](#review-summarized-test-results)
 
 Package:
 
-* [View package download and user metrics](#view-package-download-and-user-metrics)
-* [Browse dependencies in npm packages](#browse-dependencies-in-npm-packages)
+- [View package download and user metrics](#view-package-download-and-user-metrics)
+- [Browse dependencies in npm packages](#browse-dependencies-in-npm-packages)
 
 Reporting:
 
-* [View VSTS dashboards within Microsoft Teams](#view-vsts-dashboards-within-microsoft-teams)
-* [Investigate build history through a new build dashboard widget](#investigate-build-history-through-a-new-build-dashboard-widget)
+- [View VSTS dashboards within Microsoft Teams](#view-vsts-dashboards-within-microsoft-teams)
+- [Investigate build history through a new build dashboard widget](#investigate-build-history-through-a-new-build-dashboard-widget)
 
 Admin:
 
-* [Manage billing for your organization directly through the Azure Portal](#manage-billing-for-your-organization-directly-through-the-azure-portal)
+- [Manage billing for your organization directly through the Azure Portal](#manage-billing-for-your-organization-directly-through-the-azure-portal)
 
 ## Wiki
 

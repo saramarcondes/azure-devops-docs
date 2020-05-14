@@ -20,12 +20,12 @@ To debug compiled executables, especially executables compiled from native code 
 
 Symbols contain a set of useful debugging information, including:
 
-* publics and exports
-* global symbols
-* local symbols
-* type data
-* source indexes
-* line numbers
+- publics and exports
+- global symbols
+- local symbols
+- type data
+- source indexes
+- line numbers
 
 ## Publishing symbol files
 

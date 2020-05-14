@@ -24,4 +24,4 @@ The New Team Project Wizard encountered an unexpected error while creating the p
 
 ## Related articles
 
-* [Create a project](../../organizations/projects/create-project.md)
+- [Create a project](../../organizations/projects/create-project.md)

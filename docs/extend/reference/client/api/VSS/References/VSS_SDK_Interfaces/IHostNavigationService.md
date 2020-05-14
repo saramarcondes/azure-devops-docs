@@ -19,10 +19,10 @@ Service which allows interaction with the browser location and navigation of the
 
 ### Members
 
-* `reload`: (): any. Reloads the parent frame
+- `reload`: (): any. Reloads the parent frame
 
-* `onHashChanged`: (callback: (hash: string): void): any. Add a callback to be invoked each time the hash navigation has changed
+- `onHashChanged`: (callback: (hash: string): void): any. Add a callback to be invoked each time the hash navigation has changed
 
-* `getHash`: (): IPromise&lt;string&gt;. Gets the current hash.
+- `getHash`: (): IPromise&lt;string&gt;. Gets the current hash.
 
-* `setHash`: (hash: string): any. Sets the provided hash from the hosted content.
+- `setHash`: (hash: string): any. Sets the provided hash from the hosted content.

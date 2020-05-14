@@ -15,8 +15,8 @@ Module path: `TFS/WorkItemTracking/Contracts`
 
 ### Members
 
-* `attributes`: {[key: string]: any}.
+- `attributes`: {[key: string]: any}.
 
-* `rel`: string.
+- `rel`: string.
 
-* `url`: string.
+- `url`: string.

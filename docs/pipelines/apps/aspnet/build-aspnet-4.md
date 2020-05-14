@@ -72,8 +72,8 @@ Your `azure-pipelines.yml` file needs to run from within the `dotnet/aspnet/weba
 
 The sample app is a Visual Studio solution that has two projects:
 
-* An ASP.NET Web Application project that targets .NET Framework 4.5
-* A Unit Test project
+- An ASP.NET Web Application project that targets .NET Framework 4.5
+- A Unit Test project
 
 ::: moniker range="azure-devops"
 
@@ -91,9 +91,9 @@ The sample app is a Visual Studio solution that has two projects:
 > This scenario works on TFS, but some of the following instructions might not exactly match the version of TFS that you are using. Also, you'll need to set up a self-hosted agent, possibly also installing software. If you are a new user, you might have a better learning experience by trying this procedure out first using a free Azure DevOps organization. Then change the selector in the upper-left corner of this page from Team Foundation Server to **Azure DevOps**.
 > ::: moniker-end
 
-* After you have the sample code in your own repository, create a pipeline using the instructions in [Create your first pipeline](../../create-first-pipeline.md) and select the **ASP.NET** template. This automatically adds the tasks required to build the code in the sample repository.
+- After you have the sample code in your own repository, create a pipeline using the instructions in [Create your first pipeline](../../create-first-pipeline.md) and select the **ASP.NET** template. This automatically adds the tasks required to build the code in the sample repository.
 
-* Save the pipeline and queue a build to see it in action.
+- Save the pipeline and queue a build to see it in action.
 
 ## Build environment
 
@@ -101,8 +101,8 @@ The sample app is a Visual Studio solution that has two projects:
 
 You can use Azure Pipelines to build your .NET Framework projects without needing to set up any infrastructure of your own. The [Microsoft-hosted agents](../../agents/hosted.md) in Azure Pipelines have several released versions of Visual Studio pre-installed to help you build your projects.
 
-* Use `windows-2019` for Windows Server 2019 with Visual Studio 2019
-* Use `vs2017-win2016` for Windows Server 2016 with Visual Studio 2017
+- Use `windows-2019` for Windows Server 2019 with Visual Studio 2019
+- Use `vs2017-win2016` for Windows Server 2016 with Visual Studio 2017
 
 You can also use a [self-hosted agent](../../agents/agents.md#install) to run your builds. This is particularly helpful if you have a large repository and you want to avoid downloading the source code to a fresh machine for every build.
 
@@ -119,13 +119,13 @@ It is often required to build your app in multiple configurations. The following
 
 1.  Click the **Variables** tab and modify these variables:
 
-    * `BuildConfiguration` = `debug, release`
-    * `BuildPlatform` = `x86, x64`
+    - `BuildConfiguration` = `debug, release`
+    - `BuildPlatform` = `x86, x64`
 
 2.  Select **Tasks** and click on the **agent job** to change the options for the job:
 
-    * Select **Multi-configuration**.
-    * Specify **Multipliers:** `BuildConfiguration, BuildPlatform`
+    - Select **Multi-configuration**.
+    - Specify **Multipliers:** `BuildConfiguration, BuildPlatform`
 
 3.  Select **Parallel** if you have multiple build agents and want to build your configuration/platform pairings in parallel.
     ::: moniker-end

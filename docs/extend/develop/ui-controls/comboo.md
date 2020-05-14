@@ -71,7 +71,7 @@ If the second combo doesn't have any source, its mode is changed to text to hide
 import Controls = require("VSS/Controls");
 import Combos = require("VSS/Controls/Combos");
 
-var container = $(".sample-container");
+var container = \$(".sample-container");
 
 var makeOptions = &lt;Combos.IComboOptions&gt;{
 width: "400px",
@@ -103,11 +103,11 @@ mode: "text"
 };
 
 // Make combo
-$("&lt;label /&gt;").text("Make:").appendTo(container);
+\$("&lt;label /&gt;").text("Make:").appendTo(container);
 Controls.create(Combos.Combo, container, makeOptions);
 
 // Model combo
-$("&lt;label /&gt;").text("Model:").appendTo(container);
+\$("&lt;label /&gt;").text("Model:").appendTo(container);
 var modelCombo = Controls.create(Combos.Combo, container, modelOptions);
 </code></pre>
 
@@ -144,14 +144,15 @@ VSS.require(["VSS/Controls", "VSS/Controls/Combos"], function(Controls, Combos) 
     mode: "text"
   };
 
- // Create the combo in a container element
- $("&lt;label /&gt;").text("Make:").appendTo(container);
- var makeCombo = Controls.create(Combos.Combo, container, makeOptions);
+// Create the combo in a container element
+\$("&lt;label /&gt;").text("Make:").appendTo(container);
+var makeCombo = Controls.create(Combos.Combo, container, makeOptions);
 
- // Create the combo in a container element
- $("&lt;label /&gt;").text("Model:").appendTo(container);
- var modelCombo = Controls.create(Combos.Combo, container, modelOptions);
- </code></pre>
+// Create the combo in a container element
+\$("&lt;label /&gt;").text("Model:").appendTo(container);
+var modelCombo = Controls.create(Combos.Combo, container, modelOptions);
+</code></pre>
+
   </div>
 </div>
 
@@ -177,7 +178,7 @@ import Controls = require("VSS/Controls");
 import Combos = require("VSS/Controls/Combos");
 import TreeView = require("VSS/Controls/TreeView");
 
-var container = $(".sample-container");
+var container = \$(".sample-container");
 
 var treeOptions: Combos.IComboOptions = {
 type: TreeView.SearchComboTreeBehaviorName,
@@ -198,7 +199,7 @@ text: "build"
 }
 ],
 change: function () {
-commandArea.prepend($("&lt;div /&gt;").text(this.getText()));
+commandArea.prepend(\$("&lt;div /&gt;").text(this.getText()));
 }
 };
 
@@ -264,7 +265,7 @@ This sample shows the usage of combo by type `date-time`. Please note that selec
 import Controls = require("VSS/Controls");
 import Combos = require("VSS/Controls/Combos");
 
-var container = $(".sample-container");
+var container = \$(".sample-container");
 
 var dateTimeOptions:Combos.IDateTimeComboOptions = {
 value: "Tuesday, September 29, 1982 8:30:00 AM",
@@ -272,14 +273,14 @@ type: "date-time",
 dateTimeFormat: "F",
 width: 300,
 change: function () {
-commandArea.prepend($("&lt;div /&gt;").text(dateTimeCombo.getValue<Date>().toString()));
+commandArea.prepend(\$("&lt;div /&gt;").text(dateTimeCombo.getValue<Date>().toString()));
 }
 };
 
-$("&lt;label /&gt;").text("Select your birthday:").appendTo(container);
+\$("&lt;label /&gt;").text("Select your birthday:").appendTo(container);
 
 var dateTimeCombo = Controls.create(Combos.Combo, container, dateTimeOptions);
-var commandArea = $("&lt;div style='margin:10px' /&gt;").appendTo(container);
+var commandArea = \$("&lt;div style='margin:10px' /&gt;").appendTo(container);
 </code></pre>
 
   </div>
@@ -294,14 +295,14 @@ type: "date-time",
 dateTimeFormat: "F",
 width: 300,
 change: function () {
-commandArea.prepend($("&lt;div /&gt;").text(dateTimeCombo.getValue().toString()));
+commandArea.prepend(\$("&lt;div /&gt;").text(dateTimeCombo.getValue().toString()));
 }
 };
 
-$("&lt;label /&gt;").text("Select your birthday:").appendTo(container);
+\$("&lt;label /&gt;").text("Select your birthday:").appendTo(container);
 
 var dateTimeCombo = Controls.create(Combos.Combo, container, dateTimeOptions);
-var commandArea = $("&lt;div style='margin:10px' /&gt;").appendTo(container);
+var commandArea = \$("&lt;div style='margin:10px' /&gt;").appendTo(container);
 });
 </code></pre>
 
@@ -329,7 +330,7 @@ This sample shows the usage of combo by type `multi-value`.
 import Controls = require("VSS/Controls");
 import Combos = require("VSS/Controls/Combos");
 
-var container = $(".sample-container");
+var container = \$(".sample-container");
 
 var multiValueOptions: Combos.IComboOptions = {
 type: "multi-value",
@@ -340,14 +341,14 @@ source: [
 "Italian", "Arabic"],
 change: function () {
 // Displaying the selected value
-commandArea.prepend($("&lt;div /&gt;").text(this.getText()));
+commandArea.prepend(\$("&lt;div /&gt;").text(this.getText()));
 }
 };
 
-$("&lt;label /&gt;").text("Select the supported languages:").appendTo(container);
+\$("&lt;label /&gt;").text("Select the supported languages:").appendTo(container);
 
 var multiValueCombo = Controls.create(Combos.Combo, container, multiValueOptions);
-var commandArea = $("&lt;div style='margin:10px' /&gt;").appendTo(container);
+var commandArea = \$("&lt;div style='margin:10px' /&gt;").appendTo(container);
 </code></pre>
 
   </div>
@@ -365,14 +366,14 @@ source: [
 "Italian", "Arabic"],
 change: function () {
 // Displaying the selected value
-commandArea.prepend($("&lt;div /&gt;").text(this.getText()));
+commandArea.prepend(\$("&lt;div /&gt;").text(this.getText()));
 }
 };
 
-$("&lt;label /&gt;").text("Select the supported languages:").appendTo(container);
+\$("&lt;label /&gt;").text("Select the supported languages:").appendTo(container);
 
 var multiValueCombo = Controls.create(Combos.Combo, container, multiValueOptions);
-var commandArea = $("&lt;div style='margin:10px' /&gt;").appendTo(container);
+var commandArea = \$("&lt;div style='margin:10px' /&gt;").appendTo(container);
 });
 </code></pre>
 

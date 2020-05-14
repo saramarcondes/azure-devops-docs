@@ -34,9 +34,9 @@ when you sign in to Visual Studio on any computer.
 Sign in to Visual Studio during the 30-day
 trial period for these benefits:
 
-* Visual Studio Enterprise: Extend your trial for 90 days. When your trial expires,
+- Visual Studio Enterprise: Extend your trial for 90 days. When your trial expires,
   learn [how to unlock Visual Studio](https://msdn.microsoft.com/library/dn950037.aspx).
-* Visual Studio Express or Community: Continue to use this edition for free.
+- Visual Studio Express or Community: Continue to use this edition for free.
 
 When you create your profile, you can also create an organization.
 
@@ -56,15 +56,15 @@ that's managed by Azure Active Directory.
 
 A: You can use the following versions:
 
-* Visual Studio 2019
-* Visual Studio 2017
-* Visual Studio 2015
-* Visual Studio 2013
-* Visual Studio 2012
-* Visual Studio 2010,
+- Visual Studio 2019
+- Visual Studio 2017
+- Visual Studio 2015
+- Visual Studio 2013
+- Visual Studio 2012
+- Visual Studio 2010,
   which requires [Service Pack 1](https://www.microsoft.com/download/details.aspx?id=29082)
   and [KB2662296](https://support.microsoft.com/kb/2662296)
-* Visual Studio 2008 SP1, which requires a [GDR update](https://support.microsoft.com/kb/2673642)
+- Visual Studio 2008 SP1, which requires a [GDR update](https://support.microsoft.com/kb/2673642)
 
 To connect to Azure DevOps with Visual Studio 2008 through Visual Studio 2012:
 
@@ -102,14 +102,14 @@ try [Subscription Support](https://visualstudio.microsoft.com/support/subscripti
 
 A: Learn more about:
 
-* [Installing Visual Studio](https://msdn.microsoft.com/library/e2h7fzkw.aspx).
-* [Signing in to Visual Studio](https://msdn.microsoft.com/library/dn457348.aspx).
-* [Managing multiple user organizations](https://msdn.microsoft.com/library/dn872465.aspx).
+- [Installing Visual Studio](https://msdn.microsoft.com/library/e2h7fzkw.aspx).
+- [Signing in to Visual Studio](https://msdn.microsoft.com/library/dn457348.aspx).
+- [Managing multiple user organizations](https://msdn.microsoft.com/library/dn872465.aspx).
 
 Or contact [Visual Studio Support](https://visualstudio.microsoft.com/support/support-overview-vs).
 
 ## Related articles
 
-* [Access with Azure AD FAQs](faq-azure-access.md)
-* [Configure and customize organization FAQs](faq-configure-customize-organization.md)
-* [User and permissions management FAQs](faq-user-and-permissions-management.md)
+- [Access with Azure AD FAQs](faq-azure-access.md)
+- [Configure and customize organization FAQs](faq-configure-customize-organization.md)
+- [User and permissions management FAQs](faq-user-and-permissions-management.md)

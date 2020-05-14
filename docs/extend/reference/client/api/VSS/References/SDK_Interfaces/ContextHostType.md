@@ -17,10 +17,10 @@ Defined in vss.d.ts
 
 ### Values
 
-* `Unknown`
+- `Unknown`
 
-* `Deployment` The Deployment Host
+- `Deployment` The Deployment Host
 
-* `Application` The Application Host
+- `Application` The Application Host
 
-* `ProjectCollection` The Project Collection
+- `ProjectCollection` The Project Collection

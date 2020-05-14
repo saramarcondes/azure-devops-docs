@@ -210,7 +210,7 @@ There is no way to use Visual Studio 2019 to update a work item at this time.
 
 [Update work item](#update-work-item) | [Show work item details](#show-work-item)
 
-<a id="update-work-item" />  
+<a id="update-work-item" />
 
 ### Update a work item
 
@@ -233,21 +233,21 @@ az boards work-item update --id
 
 #### Parameters
 
-* **id**: Required. The ID of the work item.
+- **id**: Required. The ID of the work item.
 
 #### Optional parameters
 
-* **area**: Area the work item is assigned to (for example, **Demos**).
-* **assigned-to**: Name of the person the work item is assigned-to (for example, **fabrikam**).
-* **description**: Description of the work item.
-* **discussion**: Comment to add to a discussion in a work item.
-* **fields**: Space separated "field=value" pairs for custom fields you would like to set.
-* **iteration**: Iteration path of the work item (for example, **DemosIteration 1**).
-* **open**: Open the work item in the default web browser.
-* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-* **reason**: Reason for the state of the work item. Must be a valid workflow Reason for the work item type.
-* **state**: State of the work item (for example, **Active**). Must be a valid workflow State for the work item type.
-* **title**: Title of the work item.
+- **area**: Area the work item is assigned to (for example, **Demos**).
+- **assigned-to**: Name of the person the work item is assigned-to (for example, **fabrikam**).
+- **description**: Description of the work item.
+- **discussion**: Comment to add to a discussion in a work item.
+- **fields**: Space separated "field=value" pairs for custom fields you would like to set.
+- **iteration**: Iteration path of the work item (for example, **DemosIteration 1**).
+- **open**: Open the work item in the default web browser.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **reason**: Reason for the state of the work item. Must be a valid workflow Reason for the work item type.
+- **state**: State of the work item (for example, **Active**). Must be a valid workflow State for the work item type.
+- **title**: Title of the work item.
 
 #### Example
 
@@ -261,7 +261,7 @@ ID    Type    Title                Assigned To          State
 864   Bug     Fix security issues  contoso@contoso.com  New
 ```
 
-<a id="show-work-item" />  
+<a id="show-work-item" />
 
 #### Add comments to a discussion
 
@@ -283,9 +283,9 @@ az boards work-item show --id
 
 #### Parameters
 
-* **id**: Required. The ID of the work item.
-* **open**: Open the work item in the default web browser.
-* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **id**: Required. The ID of the work item.
+- **open**: Open the work item in the default web browser.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 
 #### Example
 

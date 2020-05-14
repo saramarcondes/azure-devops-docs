@@ -113,18 +113,18 @@ use the following steps.
 
 1.  **Run tests in parallel using multiple agents**:
 
-    * Add an **agent job**
+    - Add an **agent job**
 
       ![AddAgentJobBuild](media/parallel-testing-vstest/add-agent-job-build.png)
 
-    * Configure the job to use **multiple agents in parallel**. The example here uses three agents.
+    - Configure the job to use **multiple agents in parallel**. The example here uses three agents.
 
       ![ParallelTestJobBuild](media/parallel-testing-vstest/parallel-test-job-build.png)
 
       > [!TIP]
       > For massively parallel testing, you can specify as many as 99 agents.
 
-    * Add a **Download Build Artifacts** task to the job.
+    - Add a **Download Build Artifacts** task to the job.
       This step is the link between the build job and the test job, and is necessary to ensure that the binaries
       generated in the build job are available on the agents used by the test job to run tests.
       Ensure that the task is set to download artifacts produced by the 'Current build' and the artifact name
@@ -132,7 +132,7 @@ use the following steps.
 
       ![DownloadBuildArtifacts](media/parallel-testing-vstest/download-build-artifacts.png)
 
-    * Add the **Visual Studio Test** task and configure it to use the required [slicing strategy](#strategy).
+    - Add the **Visual Studio Test** task and configure it to use the required [slicing strategy](#strategy).
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -168,18 +168,18 @@ to validate the app functionality.
 
 2.  **Run tests in parallel using multiple agents**:
 
-    * Add an **agent job**
+    - Add an **agent job**
 
       ![AddAgentJobRM](media/parallel-testing-vstest/add-agent-job-rm.png)
 
-    * Configure the job to use **multiple agents in parallel**. The example here uses three agents.
+    - Configure the job to use **multiple agents in parallel**. The example here uses three agents.
 
       ![ParallelTestJobRM](media/parallel-testing-vstest/parallel-test-job-rm.png)
 
       > [!TIP]
       > For massively parallel testing, you can specify as many as 99 agents.
 
-    * Add any **additional tasks** that must run before the Visual Studio test task is run.
+    - Add any **additional tasks** that must run before the Visual Studio test task is run.
       For example, run a PowerShell script to set up any data required by your tests.
 
       > [!TIP]
@@ -188,7 +188,7 @@ to validate the app functionality.
       > For example, web app binaries are not required to run Selenium tests and downloading these can be
       > skipped if the app and test artifacts are published separately by your build pipeline.
 
-    * Add the **Visual Studio Test** task and configure it to use the required [slicing strategy](#strategy).
+    - Add the **Visual Studio Test** task and configure it to use the required [slicing strategy](#strategy).
 
       > [!TIP]
       > If the test machines do not have Visual Studio installed, you can use the
@@ -223,16 +223,16 @@ In the context of the [Visual Studio Test task](../tasks/test/vstest.md), parall
     The three different [slicing strategies](#strategy), when combined with the parallelism offered by the test platform and
     test framework (as described above), result in the following:
 
-    * Slicing based on the number of tests and agents. Simple slicing where tests are grouped in equally sized slices.
+    - Slicing based on the number of tests and agents. Simple slicing where tests are grouped in equally sized slices.
       A slice contains tests from one or more assemblies.
       Test execution on the agent then conforms to the parallelism described in **1** and **2** above.
 
-    * Slicing based on past running time. Based on the previous timings for running tests, and the number of available agents,
+    - Slicing based on past running time. Based on the previous timings for running tests, and the number of available agents,
       tests are grouped into slices such that each slice requires approximately equal execution time.
       A slice contains tests from one or more assemblies.
       Test execution on the agent then conforms to the parallelism described in **1** and **2** above.
 
-    * Slicing based on assemblies. A slice is a test assembly, and so contains tests that all belong to the same assembly.
+    - Slicing based on assemblies. A slice is a test assembly, and so contains tests that all belong to the same assembly.
       Execution on the agent then conforms to the parallelism described in **1** and **2** above.
       However, **2** may not occur if an agent receives only one assembly to run.
 

@@ -53,8 +53,8 @@ Create events and metrics in Datadog in response to events from Azure DevOps Ser
 
 A: Yes. See details on configuring service hooks programmatically [here](https://docs.microsoft.com/azure/devops/service-hooks/create-subscription?view=azure-devops). Submit to either of the following Datadog endpoints:
 
-* **US:** `https://app.datadoghq.com/intake/webhook/azuredevops?api_key=<API_KEY>`
-* **EU:** `https://app.datadoghq.eu/intake/webhook/azuredevops?api_key=<API_KEY>`
+- **US:** `https://app.datadoghq.com/intake/webhook/azuredevops?api_key=<API_KEY>`
+- **EU:** `https://app.datadoghq.eu/intake/webhook/azuredevops?api_key=<API_KEY>`
 
 ### Q: How can I use these events in Datadog?
 

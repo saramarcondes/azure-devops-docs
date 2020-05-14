@@ -144,10 +144,10 @@ steps:
 
 You've just learned the basics of using multiple platforms with Azure Pipelines. From here, you can learn more about:
 
-* [Jobs](process/phases.md?tabs=yaml)
-* [Cross-platform scripting](scripts/cross-platform-scripting.md)
-* [Templates](process/templates.md) to remove the duplication
-* Building [Node.js](ecosystems/javascript.md) apps
-* Building [.NET Core](ecosystems/dotnet-core.md), [Go](ecosystems/go.md), [Java](ecosystems/java.md), or [Python](ecosystems/python.md) apps
+- [Jobs](process/phases.md?tabs=yaml)
+- [Cross-platform scripting](scripts/cross-platform-scripting.md)
+- [Templates](process/templates.md) to remove the duplication
+- Building [Node.js](ecosystems/javascript.md) apps
+- Building [.NET Core](ecosystems/dotnet-core.md), [Go](ecosystems/go.md), [Java](ecosystems/java.md), or [Python](ecosystems/python.md) apps
 
 For details about building GitHub repositories, see [Build GitHub repositories](repos/github.md).

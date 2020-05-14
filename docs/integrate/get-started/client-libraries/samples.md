@@ -22,9 +22,9 @@ There are many samples with instructions on how to run them on our [.NET Sample 
 
 REST examples on this page require the following NuGet packages:
 
-* [Microsoft.TeamFoundationServer.Client](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.Client/)
-* [Microsoft.VisualStudio.Services.Client](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Client/)
-* [Microsoft.VisualStudio.Services.InteractiveClient](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.InteractiveClient/)
+- [Microsoft.TeamFoundationServer.Client](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.Client/)
+- [Microsoft.VisualStudio.Services.Client](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Client/)
+- [Microsoft.VisualStudio.Services.InteractiveClient](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.InteractiveClient/)
 
 > [!NOTE]
 > The Work Item Tracking (WIT) and Test Client OM are scheduled to be deprecated in 2020. For more information, see [Deprecation of WIT and Test Client OM](../../concepts/wit-client-om-deprecation.md).
@@ -50,7 +50,7 @@ public static void SampleREST()
     // Connection object could be created once per application and we will use it to get httpclient objects.
     // Httpclients have been reused between callers and threads.
     // Their lifetime has been managed by connection (we don't have to dispose them).
-    // This is more robust then newing up httpclient objects directly.  
+    // This is more robust then newing up httpclient objects directly.
 
     // Be sure to send in the full collection uri, i.e. http://myserver:8080/tfs/defaultcollection
     // We are using default VssCredentials which uses NTLM against a Team Foundation Server.  See additional provided

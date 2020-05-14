@@ -25,32 +25,32 @@ The default name filters are as follows:
 
 The following wildcard characters have special meaning when they are used in a name filter:
 
-* ? - Matches exactly one character.
+- ? - Matches exactly one character.
 
-* \* - Matches zero or more characters.
+- \* - Matches zero or more characters.
 
-* ! - Specifies an exclusion name filter.
+- ! - Specifies an exclusion name filter.
 
-* \\ - Specifies a folder name filter.
+- \\ - Specifies a folder name filter.
 
-* ; - Name filter delimiter.
+- ; - Name filter delimiter.
 
 > [!IMPORTANT]  
 > The following characters are not allowed in name filters: &quot; &lt; &gt; | \b \0 \t and characters 0-31.
 
 The name filters are applied to the file and folder names by using the following rules:
 
-* When **Compare** evaluates a file or folder name, it compares the name to each filter in the order that you specified the filters. As soon as the file or folder name matches a filter, the name is a match and it is not compared against the remaining filters.
+- When **Compare** evaluates a file or folder name, it compares the name to each filter in the order that you specified the filters. As soon as the file or folder name matches a filter, the name is a match and it is not compared against the remaining filters.
 
-* A folder filter must end with the \\ wildcard character.
+- A folder filter must end with the \\ wildcard character.
 
-* An exclusion filter must begin with the ! wildcard character.
+- An exclusion filter must begin with the ! wildcard character.
 
-* If you specify any filters that are not the exclusion filter, only files or folders that match the specified filters are included in the results.
+- If you specify any filters that are not the exclusion filter, only files or folders that match the specified filters are included in the results.
 
-* If you specify an exclusion filter, all files or folders that do not match the exclusion filter are included in the results.
+- If you specify an exclusion filter, all files or folders that do not match the exclusion filter are included in the results.
 
-* If you want to exclude a subset of file or folder names, you must specify the filter for the file or folder name that you want to match first and then specify the exclusion filter.
+- If you want to exclude a subset of file or folder names, you must specify the filter for the file or folder name that you want to match first and then specify the exclusion filter.
 
 ## Examples
 

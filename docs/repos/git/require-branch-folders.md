@@ -27,17 +27,17 @@ Azure Repos and TFS can enforce the correct use of branch folders.
 Decide on the folder structure you want to allow.
 As an example, we'll set our repository to enforce the following rules:
 
-* Only `master` can exist at the repository root.
-* All users will be allowed to create branches under the `features/` and `users/` folders.
-* Administrators will be able to create branches under the `releases/` folder.
+- Only `master` can exist at the repository root.
+- All users will be allowed to create branches under the `features/` and `users/` folders.
+- Administrators will be able to create branches under the `releases/` folder.
 
 > [!NOTE]
 > For more examples and information about branch naming strategies, see [Adopt a Git branching strategy](git-branching-guidance.md).
 
 ## Preparation
 
-* You will need the Team Foundation version control command (`tf.exe`).
-* You will need the URL of your account or collection, the name of the project, and the name of the repository. For this example, we'll use `https://fabrikam-fiber.visualstudio.com`, `FabrikamProject`, and `FabrikamRepo`.
+- You will need the Team Foundation version control command (`tf.exe`).
+- You will need the URL of your account or collection, the name of the project, and the name of the repository. For this example, we'll use `https://fabrikam-fiber.visualstudio.com`, `FabrikamProject`, and `FabrikamRepo`.
 
 > [!NOTE]
 > The command `tf.exe` is installed by default with Visual Studio. For additional options, download [Team Explorer](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=TeamExplorer).

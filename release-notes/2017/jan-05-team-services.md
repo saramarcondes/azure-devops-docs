@@ -150,10 +150,10 @@ Learn more about [managing team subscriptions](https://aka.ms/vststeamnotificati
 
 Prior to this feature, users would need to manually opt in to any notifications they wanted to receive. With out-of-the-box notifications (which currently must be enabled by an account administrator), users automatically receive notifications for events such as:
 
-* The user is assigned a work item
-* The user is added or removed as a reviewer to a pull request
-* The user has a pull request that is updated
-* The user has a build that completes
+- The user is assigned a work item
+- The user is added or removed as a reviewer to a pull request
+- The user has a pull request that is updated
+- The user has a build that completes
 
 These subscriptions appear in the new user notifications experience, and users can easily choose to opt out of any of them.
 
@@ -169,19 +169,19 @@ Learn more about [out of the box subscriptions](https://aka.ms/vstsoobnotificati
 
 We have deployed a new hosted build image with the following updates:
 
-* .NET Core 1.1
-* Android SDK v25
-* Azure CLI 0.10.7
-* Azure PS 3.1.0
-* Azure SDK 2.9.6
-* Cmake 3.7.1
-* Git for Windows 2.10.2
-* Git LFS 1.5.2
-* Node 6.9.1
-* Service Fabric SDK 2.3.311
-* Service Fabric 5.3.311
-* Typescript 2.0.6 for Visual Studio 2015
-* Permissions changes to allow building of .NET 3.5 ASP.NET Web Forms projects
+- .NET Core 1.1
+- Android SDK v25
+- Azure CLI 0.10.7
+- Azure PS 3.1.0
+- Azure SDK 2.9.6
+- Cmake 3.7.1
+- Git for Windows 2.10.2
+- Git LFS 1.5.2
+- Node 6.9.1
+- Service Fabric SDK 2.3.311
+- Service Fabric 5.3.311
+- Typescript 2.0.6 for Visual Studio 2015
+- Permissions changes to allow building of .NET 3.5 ASP.NET Web Forms projects
 
 ## Firefox support for Test & Feedback extension
 
@@ -213,12 +213,12 @@ SonarQube MSBuild tasks are now available from an extension provided by SonarSou
 
 There have been improvements to the Code Search results pane:
 
-* The filename is more prominent and clickable
-* We've added contextual actions:
-  * Browse file
-  * Download
-  * Copy path
-  * Get link to file
+- The filename is more prominent and clickable
+- We've added contextual actions:
+  - Browse file
+  - Download
+  - Copy path
+  - Get link to file
 
 ![code search](media/01_05_15.png)
 
@@ -228,8 +228,8 @@ Release Management now supports a parallel execution option for a phase. Select 
 
 ![parallel execution](media/01_05_12.png)
 
-* **Multi-configuration**: Select this option to run the phase for each multi-configuration value. For example, if you wanted to deploy to two different geos at the same time, using a variable **ReleasePlatform** defined on the Variables tab with values "east-US, west-US" would run the phase in parallel, one with a value of "east-US" and the other "west-US”.
-* **Multi-agent**: Select this option to run the phase with one or more tasks on multiple agents in parallel.
+- **Multi-configuration**: Select this option to run the phase for each multi-configuration value. For example, if you wanted to deploy to two different geos at the same time, using a variable **ReleasePlatform** defined on the Variables tab with values "east-US, west-US" would run the phase in parallel, one with a value of "east-US" and the other "west-US”.
+- **Multi-agent**: Select this option to run the phase with one or more tasks on multiple agents in parallel.
 
 ## Inline service endpoints
 

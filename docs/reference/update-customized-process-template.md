@@ -20,23 +20,23 @@ ms.date: 02/26/2018
 
 When the Configure Features wizard can't update your project, it's because your project was created from a process template other than those TFS provides, or you've customized your project in ways that conflict with its ability to apply the updates. In these situations, you have these options to update your existing projects:
 
-* **Option A**: Add features to your customized process template, and then run the Configure Features wizard
+- **Option A**: Add features to your customized process template, and then run the Configure Features wizard
 
   Do steps: ![Step 1](../boards/media/icons/ProcGuid_1.png), ![Step 2](../boards/media/icons/ProcGuid_2.png), ![Step 4](../boards/media/icons/ProcGuid_4.png), and ![Step 5](../boards/media/icons/ProcGuid_5.png)
 
   Choose this option when you have made extensive customizations to your process template.
 
-* **Option B**: Apply your customizations to the latest process template, and then run the Configure Features wizard
+- **Option B**: Apply your customizations to the latest process template, and then run the Configure Features wizard
 
   Do steps: ![Step 1](../boards/media/icons/ProcGuid_1.png), ![Step 3](../boards/media/icons/ProcGuid_3.png), ![Step 4](../boards/media/icons/ProcGuid_4.png), and ![Step 5](../boards/media/icons/ProcGuid_5.png)
 
   Choose this option when you have made very few customizations to your process template.
 
-* **Option C**: [Manually update your project to add features](add-features-manually.md)
+- **Option C**: [Manually update your project to add features](add-features-manually.md)
 
   Choose this option when you've made customizations to your project that aren't present in any of your process templates.
 
-* **Option D**: Programmatically update many projects. First, choose **Option A** or **Option B** to update your customized process template. Then, batch update all projects defined for a project collection using the following information and resources: [How to Configure Features for dozens of projects](https://devblogs.microsoft.com/devops/how-to-configure-features-for-dozens-of-team-projects/) and [Features4tfs CodePlex solution](https://features4tfs.codeplex.com/).
+- **Option D**: Programmatically update many projects. First, choose **Option A** or **Option B** to update your customized process template. Then, batch update all projects defined for a project collection using the following information and resources: [How to Configure Features for dozens of projects](https://devblogs.microsoft.com/devops/how-to-configure-features-for-dozens-of-team-projects/) and [Features4tfs CodePlex solution](https://features4tfs.codeplex.com/).
 
   Choose this option when you have dozens of projects that were created from the same process template.
 
@@ -100,17 +100,17 @@ Perform the following steps for each WIT that you add to your process template. 
 
 1.  Apply the customizations that you've made to the new process template folder:
 
-    * Apply customizations you've made to the default work item type (WIT) definitions. This could include additions of fields or modifications to the workflow or form.
+    - Apply customizations you've made to the default work item type (WIT) definitions. This could include additions of fields or modifications to the workflow or form.
 
-    * Add custom WITs to the work tracking folder, and update the **WorkItems** definition file as needed. See [Add type definitions for work items to a process template](process-templates/add-wit-definitions-process-template.md).
+    - Add custom WITs to the work tracking folder, and update the **WorkItems** definition file as needed. See [Add type definitions for work items to a process template](process-templates/add-wit-definitions-process-template.md).
 
       If you want to use a customized WIT that contains the same name as those in the default process template, then make sure that you swap out the WIT definition files. If you want to use a customized WIT with a different name than that provided in the default process template, then you'll need to modify the categories and process configuration definition files prior to import to reflect the different naming.
 
-    * Apply customizations to the **Categories** definition file.
+    - Apply customizations to the **Categories** definition file.
 
-    * Apply customizations to the **ProcessConfiguration** definition file. Check that the WITs that you want are represented in the correct categories and that all workflow states are mapped to metastates.
+    - Apply customizations to the **ProcessConfiguration** definition file. Check that the WITs that you want are represented in the correct categories and that all workflow states are mapped to metastates.
 
-    * Copy any additional process template files that you've customized to the appropriate process template folder. For a complete list of process template files and information about customizing them, see [Overview of process template files](process-templates/overview-process-template-files.md).
+    - Copy any additional process template files that you've customized to the appropriate process template folder. For a complete list of process template files and information about customizing them, see [Overview of process template files](process-templates/overview-process-template-files.md).
 
 2.  Review your changes against this checklist to make sure that you have applied all the required customizations:
     <table>
@@ -461,17 +461,17 @@ Perform the following steps for each WIT that you add to your process template. 
 
 Keep these tips in mind when modifying process template files:
 
-* See [Overview of process template files](process-templates/overview-process-template-files.md) for information about each folder and file contained within the interdependent set of files.
-* Don't remove a file or a task from the set unless you know what the file is and that you will have no use for it.
-* To locate the customizations that you have made, you can perform a diff operation on comparable files that exist in the two templates. However, you could receive some false positives because the sequence of element definitions might have changed between two versions.
-* You can search for the **dependency** element across all plug-in files to learn what tasks depend on other tasks that are being completed. For example, Microsoft Test Manager and Lab Management require the SharedSteps and TestCase work item types, the SharedSteps and TestedBy links types, and categories. See [Define dependencies for task groups and tasks in plug-in files](https://msdn.microsoft.com/library/ms243800.aspx).
+- See [Overview of process template files](process-templates/overview-process-template-files.md) for information about each folder and file contained within the interdependent set of files.
+- Don't remove a file or a task from the set unless you know what the file is and that you will have no use for it.
+- To locate the customizations that you have made, you can perform a diff operation on comparable files that exist in the two templates. However, you could receive some false positives because the sequence of element definitions might have changed between two versions.
+- You can search for the **dependency** element across all plug-in files to learn what tasks depend on other tasks that are being completed. For example, Microsoft Test Manager and Lab Management require the SharedSteps and TestCase work item types, the SharedSteps and TestedBy links types, and categories. See [Define dependencies for task groups and tasks in plug-in files](https://msdn.microsoft.com/library/ms243800.aspx).
 
 You can learn more about each process template definition files from these resources:
 
-* [Customize a process template](process-templates/customize-process.md)
-* [All WITD XML Elements Reference](xml/all-witd-xml-elements-reference.md)
-* [Categories XML Element Reference](https://msdn.microsoft.com/library/dd286631.aspx)
-* [Process Configuration XML Element Reference](xml/process-configuration-xml-element.md)
+- [Customize a process template](process-templates/customize-process.md)
+- [All WITD XML Elements Reference](xml/all-witd-xml-elements-reference.md)
+- [Categories XML Element Reference](https://msdn.microsoft.com/library/dd286631.aspx)
+- [Process Configuration XML Element Reference](xml/process-configuration-xml-element.md)
 
 You can post a question or search for answers to your update questions in one of these forums: [Team Foundation Server - work tracking](https://social.msdn.microsoft.com/Forums/tfsworkitemtracking/threads) or [the web portal](https://go.microsoft.com/fwlink/?LinkId=257843).
 
@@ -483,9 +483,9 @@ What types of customizations stop the Configure Features wizard from being able 
 
 The following changes made to a process template can interfere with the Configure Features wizard's ability to run:
 
-* Renamed or removed WITs that belong to the Requirement Category or Task Category.
-* Renamed states or customized workflow states defined for WITs that belong to the Requirement Category or Task Category. Metastates define how planning tools treat each workflow state. At least one workflow state must map to the **InProgress** and to the **Completed** metastates
-* Removal of fields defined for WITs that belong to the Requirement Category or Task Category. These fields are defined in the ProcessConfiguration definition file and include the fields used to manage backlog priority, effort, task activity or discipline, and remaining work.
+- Renamed or removed WITs that belong to the Requirement Category or Task Category.
+- Renamed states or customized workflow states defined for WITs that belong to the Requirement Category or Task Category. Metastates define how planning tools treat each workflow state. At least one workflow state must map to the **InProgress** and to the **Completed** metastates
+- Removal of fields defined for WITs that belong to the Requirement Category or Task Category. These fields are defined in the ProcessConfiguration definition file and include the fields used to manage backlog priority, effort, task activity or discipline, and remaining work.
 
 To learn more, see [Process configuration XML element reference](xml/process-configuration-xml-element.md).
 

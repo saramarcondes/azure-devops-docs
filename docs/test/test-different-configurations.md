@@ -31,10 +31,10 @@ You might draw up a schematic matrix of the combinations that you want to test:
 
 Then you can:
 
-* [Create the configurations and variables](#create-configs)
-* [Assign the configurations to test plans and test suites](#assign-configs)
-* [Run tests with each of the configurations](#run-configs)
-* [Track your test results for each configuration](#track-configs)
+- [Create the configurations and variables](#create-configs)
+- [Assign the configurations to test plans and test suites](#assign-configs)
+- [Run tests with each of the configurations](#run-configs)
+- [Track your test results for each configuration](#track-configs)
 
 > [!NOTE]
 > This feature is available only in Azure DevOps.
@@ -160,7 +160,7 @@ or test suite apply to all tests or suites within it.
 
 ## See also
 
-* [Overview of manual and exploratory testing](index.yml)
-* [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
+- [Overview of manual and exploratory testing](index.yml)
+- [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
 
 [!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

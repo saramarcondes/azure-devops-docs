@@ -117,9 +117,9 @@ steps:
 
 In the YAML file, you can set a variable at various scopes:
 
-* At the root level, to make it available to all jobs in the pipeline.
-* At the stage level, to make it available only to a specific stage.
-* At the job level, to make it available only to a specific job.
+- At the root level, to make it available to all jobs in the pipeline.
+- At the stage level, to make it available only to a specific stage.
+- At the job level, to make it available only to a specific job.
 
 When a variable is defined at the top of a YAML, it will be available to all jobs and stages in the pipeline and is a global variable. Global variables defined in a YAML are not visible in the pipeline settings UI.
 
@@ -207,9 +207,9 @@ Using the Azure DevOps CLI, you can create and update variables for the pipeline
 
 ### Prerequisites
 
-* You must have installed the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](/azure/devops/cli/index).
-* Sign into Azure DevOps using `az login`.
-* For the examples in this article, set the default organization using `az devops configure --defaults organization=YourOrganizationURL`.
+- You must have installed the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](/azure/devops/cli/index).
+- Sign into Azure DevOps using `az login`.
+- For the examples in this article, set the default organization using `az devops configure --defaults organization=YourOrganizationURL`.
 
 <a id="create-variable" />
 
@@ -230,14 +230,14 @@ az pipelines variable create --name
 
 #### Parameters
 
-* **name**: Required. Name of the variable.
-* **allow-override**: Optional. Indicates whether the value can be set at queue time. Accepted values are _false_ and _true_.
-* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-* **pipeline-id**: Required if **pipeline-name** is not supplied. ID of the pipeline.
-* **pipeline-name**: Required if **pipeline-id** is not supplied, but ignored if **pipeline-id** is supplied. Name of the pipeline.
-* **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
-* **secret**: Optional. Indicates whether the variable's value is a secret. Accepted values are _false_ and _true_.
-* **value**: Required for non secret variable. Value of the variable. For secret variables, if **value** parameter is not provided, it is picked from environment variable prefixed with `AZURE_DEVOPS_EXT_PIPELINE_VAR_` or user is prompted to enter it via standard input. For example, a variable named **MySecret** can be input using the environment variable `AZURE_DEVOPS_EXT_PIPELINE_VAR_MySecret`.
+- **name**: Required. Name of the variable.
+- **allow-override**: Optional. Indicates whether the value can be set at queue time. Accepted values are _false_ and _true_.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **pipeline-id**: Required if **pipeline-name** is not supplied. ID of the pipeline.
+- **pipeline-name**: Required if **pipeline-id** is not supplied, but ignored if **pipeline-id** is supplied. Name of the pipeline.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **secret**: Optional. Indicates whether the variable's value is a secret. Accepted values are _false_ and _true_.
+- **value**: Required for non secret variable. Value of the variable. For secret variables, if **value** parameter is not provided, it is picked from environment variable prefixed with `AZURE_DEVOPS_EXT_PIPELINE_VAR_` or user is prompted to enter it via standard input. For example, a variable named **MySecret** can be input using the environment variable `AZURE_DEVOPS_EXT_PIPELINE_VAR_MySecret`.
 
 #### Example
 
@@ -272,16 +272,16 @@ az pipelines variable update --name
 
 #### Parameters
 
-* **name**: Required. Original name of the variable.
-* **allow-override**: Optional. Indicates whether the value can be set at queue time. Accepted values are _false_ and _true_.
-* **new-name**: Optional. Specify to change the name of the variable.
-* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-* **pipeline-id**: Required if **pipeline-name** is not supplied. ID of the pipeline.
-* **pipeline-name**: Required if **pipeline-id** is not supplied, but ignored if **pipeline-id** is supplied. Name of the pipeline.
-* **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
-* **prompt-value**: Set to **true** to update the value of a secret variable using environment variable or prompt via standard input. Accepted values are _false_ and _true_.
-* **secret**: Indicates whether the variable's value is a secret. Accepted values are _false_ and _true_.
-* **value**: Updates the value of the variable. For secret variables, use the **prompt-value** parameter to be prompted to enter it via standard input. For non-interactive consoles, it can be picked from environment variable prefixed with `AZURE_DEVOPS_EXT_PIPELINE_VAR_`. For example, a variable named **MySecret** can be input using the environment variable `AZURE_DEVOPS_EXT_PIPELINE_VAR_MySecret`.
+- **name**: Required. Original name of the variable.
+- **allow-override**: Optional. Indicates whether the value can be set at queue time. Accepted values are _false_ and _true_.
+- **new-name**: Optional. Specify to change the name of the variable.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **pipeline-id**: Required if **pipeline-name** is not supplied. ID of the pipeline.
+- **pipeline-name**: Required if **pipeline-id** is not supplied, but ignored if **pipeline-id** is supplied. Name of the pipeline.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **prompt-value**: Set to **true** to update the value of a secret variable using environment variable or prompt via standard input. Accepted values are _false_ and _true_.
+- **secret**: Indicates whether the variable's value is a secret. Accepted values are _false_ and _true_.
+- **value**: Updates the value of the variable. For secret variables, use the **prompt-value** parameter to be prompted to enter it via standard input. For non-interactive consoles, it can be picked from environment variable prefixed with `AZURE_DEVOPS_EXT_PIPELINE_VAR_`. For example, a variable named **MySecret** can be input using the environment variable `AZURE_DEVOPS_EXT_PIPELINE_VAR_MySecret`.
 
 #### Example
 
@@ -312,12 +312,12 @@ az pipelines variable delete --name
 
 #### Parameters
 
-* **name**: Required. Name of the variable you want to delete.
-* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-* **pipeline-id**: Required if **pipeline-name** is not supplied. ID of the pipeline.
-* **pipeline-name**: Required if **pipeline-id** is not supplied, but ignored if **pipeline-id** is supplied. Name of the pipeline.
-* **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
-* **yes**: Optional. Does not prompt for confirmation.
+- **name**: Required. Name of the variable you want to delete.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **pipeline-id**: Required if **pipeline-name** is not supplied. ID of the pipeline.
+- **pipeline-name**: Required if **pipeline-id** is not supplied, but ignored if **pipeline-id** is supplied. Name of the pipeline.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **yes**: Optional. Does not prompt for confirmation.
 
 #### Example
 
@@ -546,10 +546,10 @@ az pipelines variable list [--org]
 
 #### Parameters
 
-* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-* **pipeline-id**: Required if **pipeline-name** is not supplied. ID of the pipeline.
-* **pipeline-name**: Required if **pipeline-id** is not supplied, but ignored if **pipeline-id** is supplied. Name of the pipeline.
-* **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up by using `git config`.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **pipeline-id**: Required if **pipeline-name** is not supplied. ID of the pipeline.
+- **pipeline-name**: Required if **pipeline-id** is not supplied, but ignored if **pipeline-id** is supplied. Name of the pipeline.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up by using `git config`.
 
 #### Example
 
@@ -648,8 +648,8 @@ If you're setting a variable from a [matrix](phases.md?tab=yaml#parallelexec)
 or [slice](phases.md?tab=yaml#slicing), then, to reference the variable when you access it from a downstream job,
 you must include:
 
-* The name of the job.
-* The step.
+- The name of the job.
+- The step.
 
 ```yaml
 jobs:
@@ -821,7 +821,7 @@ YAML is not supported in TFS.
 
 You can use any of the supported expressions for setting a variable. Here's an example of setting a variable to act as a counter that starts at 100, gets incremented by 1 for every run, and gets reset to 100 every day.
 
-* In the variables of a build pipeline, set a variable `a` to this value: `$[counter(format('{0:yyyyMMdd}', pipeline.startTime), 100)]`
+- In the variables of a build pipeline, set a variable `a` to this value: `$[counter(format('{0:yyyyMMdd}', pipeline.startTime), 100)]`
 
 For more information about counters and other expressions, see [expressions](expressions.md).
 
@@ -1007,8 +1007,8 @@ When you set a variable with the same name in multiple scopes, the following pre
 
 Variables are expanded once when the run is started, and again at the beginning of each step. Here's an example to demonstrate this:
 
-* You set a variable called `a` to 10 in a pipeline.
-* In one of the steps (a bash script step), run the following script:
+- You set a variable called `a` to 10 in a pipeline.
+- In one of the steps (a bash script step), run the following script:
 
   ```bash
   echo $(a)            # This will be 10
@@ -1016,7 +1016,7 @@ Variables are expanded once when the run is started, and again at the beginning 
   echo $(a)            # This will also be 10, since the expansion of $(a) happens before the step
   ```
 
-* In the next step (another bash script step), run the following script:
+- In the next step (another bash script step), run the following script:
 
   ```bash
   echo $(a)            # This will be 20, since the variables are expanded just before the step

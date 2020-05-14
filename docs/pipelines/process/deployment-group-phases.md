@@ -77,5 +77,5 @@ You can also set the timeout for each task individually - see [task control opti
 
 ## Related topics
 
-* [Jobs](phases.md)
-* [Conditions](conditions.md)
+- [Jobs](phases.md)
+- [Conditions](conditions.md)

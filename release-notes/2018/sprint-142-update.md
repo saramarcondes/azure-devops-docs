@@ -17,47 +17,47 @@ Check out the [Features](#features) list below for more.
 
 General:
 
-* [New navigation is on for all users](#new-navigation-is-on-for-all-users)
-* [Dark Theme](#dark-theme)
+- [New navigation is on for all users](#new-navigation-is-on-for-all-users)
+- [Dark Theme](#dark-theme)
 
 Azure Boards:
 
-* [Organize reference materials with richer work item attachments](#organize-reference-materials-with-richer-work-item-attachments)
-* [Manage dependencies by linking work items across your organizations](#manage-dependencies-by-linking-work-items-across-your-organizations)
-* [Open work items from search](#open-work-items-from-search)
+- [Organize reference materials with richer work item attachments](#organize-reference-materials-with-richer-work-item-attachments)
+- [Manage dependencies by linking work items across your organizations](#manage-dependencies-by-linking-work-items-across-your-organizations)
+- [Open work items from search](#open-work-items-from-search)
 
 Azure Repos:
 
-* [Extension authors can query context about the current repo](#extension-authors-can-query-context-about-the-current-repo)
+- [Extension authors can query context about the current repo](#extension-authors-can-query-context-about-the-current-repo)
 
 Azure Pipelines:
 
-* [Add custom build counters to your builds](#add-custom-build-counters-to-your-builds)
-* [Use YAML to specify branches to build for pull requests](#use-yaml-to-specify-branches-to-build-for-pull-requests)
-* [Use YAML template expressions inline](#use-yaml-template-expressions-inline)
-* [Improve troubleshooting with the pipeline initialization log](#improve-troubleshooting-with-the-pipeline-initialization-log)
-* [Default retention for YAML pipelines](#default-retention-for-yaml-pipelines)
-* [Build on Linux/ARM and Windows 32-bit platforms](#build-on-linuxarm-and-windows-32-bit-platforms)
-* [Clone variable groups](#clone-variable-groups)
-* [See commits and work items for all linked sources](#see-commits-and-work-items-for-all-linked-sources)
-* [Run from Package supported in Azure App Service deployments](#run-from-package-supported-in-azure-app-service-deployments)
-* [Deploy Linux containers with the App Server Deploy task](#deploy-linux-containers-with-the-app-server-deploy-task)
+- [Add custom build counters to your builds](#add-custom-build-counters-to-your-builds)
+- [Use YAML to specify branches to build for pull requests](#use-yaml-to-specify-branches-to-build-for-pull-requests)
+- [Use YAML template expressions inline](#use-yaml-template-expressions-inline)
+- [Improve troubleshooting with the pipeline initialization log](#improve-troubleshooting-with-the-pipeline-initialization-log)
+- [Default retention for YAML pipelines](#default-retention-for-yaml-pipelines)
+- [Build on Linux/ARM and Windows 32-bit platforms](#build-on-linuxarm-and-windows-32-bit-platforms)
+- [Clone variable groups](#clone-variable-groups)
+- [See commits and work items for all linked sources](#see-commits-and-work-items-for-all-linked-sources)
+- [Run from Package supported in Azure App Service deployments](#run-from-package-supported-in-azure-app-service-deployments)
+- [Deploy Linux containers with the App Server Deploy task](#deploy-linux-containers-with-the-app-server-deploy-task)
 
 Azure Test Plans:
 
-* [Azure Test Runner client to run manual tests for desktop applications](#azure-test-runner-client-to-run-manual-tests-for-desktop-applications)
+- [Azure Test Runner client to run manual tests for desktop applications](#azure-test-runner-client-to-run-manual-tests-for-desktop-applications)
 
 Azure Artifacts:
 
-* [Public preview of Pipeline Artifacts](#public-preview-of-pipeline-artifacts)
+- [Public preview of Pipeline Artifacts](#public-preview-of-pipeline-artifacts)
 
 Wiki:
 
-* [Publish code as wiki with Contribute permissions](#publish-code-as-wiki-with-contribute-permissions)
+- [Publish code as wiki with Contribute permissions](#publish-code-as-wiki-with-contribute-permissions)
 
 Administration:
 
-* [PATs enforce CAP](#pats-enforce-cap)
+- [PATs enforce CAP](#pats-enforce-cap)
 
 ## General
 
@@ -102,8 +102,8 @@ Previously, a work item couldn't be opened from the search results page if the w
 
 One of the challenges for an author of a version control extension is to get the context of the repository being displayed to the user, such as the name, ID and URL. To help with this, we added the VersionControlRepositoryService as an extension-accessible service. Using this, an extension author can query for information about the current Git repository context within the Web UI. It currently has one method, getCurrentGitRepository().
 
-* If a Git repository is selected, a GitRepository object is returned with basic data about the repository (name, ID, and URL)
-* If a TFVC repository is selected or the service is accessed outside the Azure Repos pages, null will be returned.
+- If a Git repository is selected, a GitRepository object is returned with basic data about the repository (name, ID, and URL)
+- If a TFVC repository is selected or the service is accessed outside the Azure Repos pages, null will be returned.
 
 Here is a [sample extension](https://github.com/eldarerathis/vsts-extension-samples/commit/e9935324046846c23973fca284661d2b767985a3) that uses this service.
 
@@ -111,12 +111,12 @@ Here is a [sample extension](https://github.com/eldarerathis/vsts-extension-samp
 
 ### Add custom build counters to your builds
 
-Build counters provide a way to uniquely number and label builds. Previously, you could use the $(rev:r) special variable to accomplish this. Now you can define your own counter variables in your build definition that are auto-incremented every time you run a build. You do this on the variables tab of a definition. This new feature gives you more power in the following ways:
+Build counters provide a way to uniquely number and label builds. Previously, you could use the \$(rev:r) special variable to accomplish this. Now you can define your own counter variables in your build definition that are auto-incremented every time you run a build. You do this on the variables tab of a definition. This new feature gives you more power in the following ways:
 
-* You can define a custom counter and set its seed value. For instance you can start your counter at 100. $(rev:r) always starts at 0.
-* You can use your own custom logic to reset a counter. $(rev:r) is tied to build number generation, and it is auto-reset whenever there is a new prefix in the build number.
-* You can define multiple counters per definition.
-* You can query for the value of a counter outside of a build. For instance, you can count the number of builds that have run since last reset using a counter.
+- You can define a custom counter and set its seed value. For instance you can start your counter at 100. \$(rev:r) always starts at 0.
+- You can use your own custom logic to reset a counter. \$(rev:r) is tied to build number generation, and it is auto-reset whenever there is a new prefix in the build number.
+- You can define multiple counters per definition.
+- You can query for the value of a counter outside of a build. For instance, you can count the number of builds that have run since last reset using a counter.
 
 See the documentation on [User-defined variables](https://docs.microsoft.com/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch) for more information about build counters.
 
@@ -192,11 +192,11 @@ App Service supports a number of different techniques to deploy your files such 
 
 With Run From Package, there is no longer a deployment step which copies the individual files to wwwroot. Instead, you just point it to a zip file, and the zip gets mounted on wwwroot as a read-only file system. This has several benefits:
 
-* Reduces the risk of file copy locking issues.
-* Can be deployed to a production app (with restart).
-* You can be certain of the files that are running in your app.
-* Improves the performance of Azure App Service deployments.
-* May reduce cold-start times, particularly for JavaScript functions with large npm package trees.
+- Reduces the risk of file copy locking issues.
+- Can be deployed to a production app (with restart).
+- You can be certain of the files that are running in your app.
+- Improves the performance of Azure App Service deployments.
+- May reduce cold-start times, particularly for JavaScript functions with large npm package trees.
 
 ### Deploy Linux containers with the App Server Deploy task
 

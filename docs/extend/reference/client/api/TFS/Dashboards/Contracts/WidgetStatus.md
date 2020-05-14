@@ -17,4 +17,4 @@ Module path: `TFS/Dashboards/WidgetContracts`
 
 ### Properties
 
-* `message`: string. In case of failures, a user friendly message returned by the widget to explain why it wasn't successful in an operation. In case of success, an empty message is returned.
+- `message`: string. In case of failures, a user friendly message returned by the widget to explain why it wasn't successful in an operation. In case of success, an empty message is returned.

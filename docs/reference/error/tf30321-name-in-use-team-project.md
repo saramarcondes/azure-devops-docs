@@ -16,17 +16,17 @@ ms.date: 01/20/2017
 
 This error occurs when you type a name for the new project that duplicates the name already being used by another project in the same collection. There are two likely causes for this problem:
 
-* There is actually a project with the same name.
+- There is actually a project with the same name.
 
-* Someone previously attempted to create a project with the same name, but the wizard did not complete the creation and failed to remove all records of that project.
+- Someone previously attempted to create a project with the same name, but the wizard did not complete the creation and failed to remove all records of that project.
 
 ### To correct this error
 
-* Type a different name for the new project.
+- Type a different name for the new project.
 
 > [!NOTE]
 > If you are sure that the name you typed is not being used by a project on Team Foundation Server, contact your administrator for the server and ask him or her to run the **TFSDeleteProject** command-line utility to free the name.
 
 ## Related articles
 
-* [Create a project](../../organizations/projects/create-project.md)
+- [Create a project](../../organizations/projects/create-project.md)

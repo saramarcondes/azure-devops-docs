@@ -78,7 +78,7 @@ tf branch olditem newitem [/version:versionspec] [/noget] [/lock:(none|checkin|c
 
 If you specify a local path such as c:\\00101 but do not specify a _versionspec_, Team Foundation uses the local workspace version as the basis for creating the new branch.
 
-However, if you specify a server path such as $/00101/\*.cs and do not specify a _versionspec_, Team Foundation uses the latest Team Foundation version control server version as the basis for creating the new branch instead.
+However, if you specify a server path such as \$/00101/\*.cs and do not specify a _versionspec_, Team Foundation uses the latest Team Foundation version control server version as the basis for creating the new branch instead.
 
 For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
 

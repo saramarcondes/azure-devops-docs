@@ -36,8 +36,8 @@ Make sure to set each user's access level based on what you've purchased for tha
 
 ## Prerequisites
 
-* You must be a member of the Administrators group. If you aren't a member, [get added now](https://docs.microsoft.com/azure/devops/server/admin/add-administrator?view=azure-devops).
-* <a id="add-user" />If you're managing access for a large group of users, it's a best practice to first create either a [Windows group, a group in Active Directory, or Azure DevOps security group](/azure/devops/server/admin/setup-ad-groups), and then add individuals to those groups.
+- You must be a member of the Administrators group. If you aren't a member, [get added now](https://docs.microsoft.com/azure/devops/server/admin/add-administrator?view=azure-devops).
+- <a id="add-user" />If you're managing access for a large group of users, it's a best practice to first create either a [Windows group, a group in Active Directory, or Azure DevOps security group](/azure/devops/server/admin/setup-ad-groups), and then add individuals to those groups.
 
 > [!NOTE]  
 > The images you see from your web portal may differ from the images you see in this article. These differences result from updates made to your on-premises Azure DevOps. Make sure you have selected the version of this article using the content version selector. However, the basic functionality available to you remains the same unless explicitly mentioned.
@@ -80,7 +80,7 @@ From a user context, open **Server Settings** by choosing the ![ ](../../boards/
 
 1.  From the web portal home page for a project (for example, `http://MyServer:8080/tfs/DefaultCollection/MyProject/`), open **Server settings**.
 
-    <img src="media/access-levels-2017-open-admin-context.png" alt="TFS 2017, Web portal, open the Server settings admin context" style="border: 1px solid #C3C3C3;" />  
+    <img src="media/access-levels-2017-open-admin-context.png" alt="TFS 2017, Web portal, open the Server settings admin context" style="border: 1px solid #C3C3C3;" />
 
 1.  From **Access levels**, select the access level you want to manage. For example, here we choose **Stakeholder**, and then **Add** to add a group to Stakeholder access.
 
@@ -146,7 +146,7 @@ For details on the features available to each access level, see [About access le
 
 ## Related articles
 
-* [About access levels](access-levels.md)
-* [Export a list of users and their access levels](export-users-audit-log.md)
-* [Default permissions and access](permissions-access.md)
-* [Web portal navigation](../../project/navigation/index.md)
+- [About access levels](access-levels.md)
+- [Export a list of users and their access levels](export-users-audit-log.md)
+- [Default permissions and access](permissions-access.md)
+- [Web portal navigation](../../project/navigation/index.md)

@@ -108,7 +108,7 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber/_apis/work/teamsettings
 
 #### Sample code
 
-* [C# (GetTeamSettings method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/Work/TeamSettingsSample.cs#L15)
+- [C# (GetTeamSettings method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/Work/TeamSettingsSample.cs#L15)
 
 ## Update a team's settings
 
@@ -214,4 +214,4 @@ PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber/_apis/work/teamsettin
 
 #### Sample code
 
-* [C# (UpdateTeamSettings method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/Work/TeamSettingsSample.cs#L34)
+- [C# (UpdateTeamSettings method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/Work/TeamSettingsSample.cs#L34)

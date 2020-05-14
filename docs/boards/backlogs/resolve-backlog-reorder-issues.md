@@ -23,10 +23,10 @@ When a product, portfolio, or sprint backlog contains same-category nested work 
 
 In addition to the information provided in this article, you may find the following articles helpful as well:
 
-* [Set up your Backlogs and Boards](set-up-your-backlog.md)
-* [About Boards and Kanban, Limitations of multi-team Kanban board views](../boards/kanban-overview.md#limits-multi-team)
-* [Tasks supported by Backlogs, Boards, Taskboards, and Plans](backlogs-boards-plans.md)
-* [Best tool to add, update, and link work items ](../work-items/best-tool-add-update-link-work-items.md)
+- [Set up your Backlogs and Boards](set-up-your-backlog.md)
+- [About Boards and Kanban, Limitations of multi-team Kanban board views](../boards/kanban-overview.md#limits-multi-team)
+- [Tasks supported by Backlogs, Boards, Taskboards, and Plans](backlogs-boards-plans.md)
+- [Best tool to add, update, and link work items ](../work-items/best-tool-add-update-link-work-items.md)
 
 <a id="nested" > </a>
 
@@ -153,4 +153,4 @@ Is there a workaround to display intermediate nodes within a hierarchy? Not at t
 
 ## Related articles
 
-* [Backlogs, boards, and plans](backlogs-boards-plans.md)
+- [Backlogs, boards, and plans](backlogs-boards-plans.md)

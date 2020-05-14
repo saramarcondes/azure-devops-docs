@@ -21,36 +21,36 @@ A new version of the [VSTS Demo Generator](#vsts-demo-generator) is also availab
 
 ### Work
 
-* [Query for empty rich text fields](#query-for-empty-rich-text-fields)
+- [Query for empty rich text fields](#query-for-empty-rich-text-fields)
 
 ### Build
 
-* [Build Ruby apps based on a variety of Ruby versions](#build-ruby-apps-based-on-a-variety-of-ruby-versions)
-* [Build, test, and publish Python apps based on a variety of Python versions](#build-test-and-publish-python-apps-based-on-a-variety-of-python-versions)
-* [Build Java apps on hosted agents with Java 10](#build-java-apps-on-hosted-agents-with-java-10)
-* [Leverage improved Xcode build and test output from xcpretty](#leverage-improved-xcode-build-and-test-output-from-xcpretty)
+- [Build Ruby apps based on a variety of Ruby versions](#build-ruby-apps-based-on-a-variety-of-ruby-versions)
+- [Build, test, and publish Python apps based on a variety of Python versions](#build-test-and-publish-python-apps-based-on-a-variety-of-python-versions)
+- [Build Java apps on hosted agents with Java 10](#build-java-apps-on-hosted-agents-with-java-10)
+- [Leverage improved Xcode build and test output from xcpretty](#leverage-improved-xcode-build-and-test-output-from-xcpretty)
 
 ### Release
 
-* [Progressively expose and phase deployments using release gates, now generally available](#progressively-expose-and-phase-deployments-using-release-gates-now-generally-available)
-* [Deploy to Azure Kubernetes Service (AKS) and Azure Service Fabric using Azure DevOps Projects](#deploy-to-azure-kubernetes-service-aks-and-azure-service-fabric-using-azure-devops-projects)
-* [Deploy to Azure SQL Database using Azure DevOps Projects](#deploy-to-azure-sql-database-using-azure-devops-projects)
-* [Release hybrid applications to Azure Stack](#release-hybrid-applications-to-azure-stack)
-* [Control Helm version used in Release](#control-helm-version-used-in-release)
+- [Progressively expose and phase deployments using release gates, now generally available](#progressively-expose-and-phase-deployments-using-release-gates-now-generally-available)
+- [Deploy to Azure Kubernetes Service (AKS) and Azure Service Fabric using Azure DevOps Projects](#deploy-to-azure-kubernetes-service-aks-and-azure-service-fabric-using-azure-devops-projects)
+- [Deploy to Azure SQL Database using Azure DevOps Projects](#deploy-to-azure-sql-database-using-azure-devops-projects)
+- [Release hybrid applications to Azure Stack](#release-hybrid-applications-to-azure-stack)
+- [Control Helm version used in Release](#control-helm-version-used-in-release)
 
 ### Package
 
-* [Follow packages](#follow-packages)
-* [Control who can pull packages from upstream sources](#control-who-can-pull-packages-from-upstream-sources)
-* [Change feed settings without having to manually save](#change-feed-settings-without-having-to-manually-save)
+- [Follow packages](#follow-packages)
+- [Control who can pull packages from upstream sources](#control-who-can-pull-packages-from-upstream-sources)
+- [Change feed settings without having to manually save](#change-feed-settings-without-having-to-manually-save)
 
 ### Test
 
-* [Manage test plans using the new Test Plans hub](#manage-test-plans-using-the-new-test-plans-hub)
+- [Manage test plans using the new Test Plans hub](#manage-test-plans-using-the-new-test-plans-hub)
 
 ### Wiki
 
-* [Fix broken links when moving pages](#fix-broken-links-when-moving-pages)
+- [Fix broken links when moving pages](#fix-broken-links-when-moving-pages)
 
 ## Work
 

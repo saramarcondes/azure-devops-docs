@@ -85,8 +85,8 @@ The `TryMatchOobProcesses.log` should only be reviewed if you're trying to impor
 
 By this point you will have run the data migration tool **validate** against the collection and it is returning "All collection validations passed". Before you take a collection offline to migrate, you need to generate the import files. Upon running the prepare step, you generate two import files:
 
-* `IdentityMapLog.csv` which outlines your identity map between Active Directory (AD) and Azure Active Directory (Azure AD)
-* `import.json` which requires you to fill out the import specification you want to use to kick off your migration.
+- `IdentityMapLog.csv` which outlines your identity map between Active Directory (AD) and Azure Active Directory (Azure AD)
+- `import.json` which requires you to fill out the import specification you want to use to kick off your migration.
 
 ### Prepare command
 
@@ -280,13 +280,13 @@ Data-tier Application Component Packages ([DACPAC](/sql/relational-databases/dat
 
 There are multiple versions of SqlPackage.exe installed with SQL Server Data Tools, located under folders with names such as 120, 130, and 140. When using SqlPackage.exe it is important to use the right version to prepare the DACPAC.
 
-* TFS 2018 imports need to use SqlPackage.exe from the 140 folder or higher.
+- TFS 2018 imports need to use SqlPackage.exe from the 140 folder or higher.
 
 If you installed SQL Server Data Tools (SSDT) for Visual Studio, you can find SqlPackage.exe in one of the following locations.
 
-* If you installed SSDT and integrated it with an existing installation of Visual Studio, SqlPackage.exe is located in a folder similar to: `C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\130\`
-* If you installed SSDT and did a stand-alone installation, SqlPackage.exe is located in a folder similar to: `C:\Program Files (x86)\Microsoft Visual Studio\2017\SQL\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\130\`
-* If you already have an installation of SQL Server, SqlPackage.exe may already be present, and located in a folder similar to: `%PROGRAMFILES%\Microsoft SQL Server\130\DAC\bin\`
+- If you installed SSDT and integrated it with an existing installation of Visual Studio, SqlPackage.exe is located in a folder similar to: `C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\130\`
+- If you installed SSDT and did a stand-alone installation, SqlPackage.exe is located in a folder similar to: `C:\Program Files (x86)\Microsoft Visual Studio\2017\SQL\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\130\`
+- If you already have an installation of SQL Server, SqlPackage.exe may already be present, and located in a folder similar to: `%PROGRAMFILES%\Microsoft SQL Server\130\DAC\bin\`
 
 Both of the versions of SSDT that you can download from [SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt) include both the 130 and 140 folders with their respective versions of SqlPackage.exe.
 
@@ -318,9 +318,9 @@ Now that you've identified the target location for the DACPAC and ensured that y
 SqlPackage.exe /sourceconnectionstring:"Data Source={database server name};Initial Catalog={Database Name};Integrated Security=True" /targetFile:{Location & File name} /action:extract /p:ExtractAllTableData=true /p:IgnoreUserLoginMappings=true /p:IgnorePermissions=true /p:Storage=Memory
 ```
 
-* **Data Source** - SQL Server instance hosting your Azure DevOps Server collection database.
-* **Initial Catalog** - Name of the collection database.
-* **targetFile** - Location on disk + name of DACPAC file.
+- **Data Source** - SQL Server instance hosting your Azure DevOps Server collection database.
+- **Initial Catalog** - Name of the collection database.
+- **targetFile** - Location on disk + name of DACPAC file.
 
 Below is an example of the DACPAC generation command that is running on the Azure DevOps Server data tier itself:
 
@@ -621,7 +621,7 @@ While Azure DevOps Services is available in multiple regions in the United State
 
 [Create a blob container](/azure/storage/common/storage-create-storage-account) can be done from the Azure portal. Once the container has been created you will need to upload the following file:
 
-* Collection DACPAC
+- Collection DACPAC
 
 After the import has been completed you can delete the blob container and accompanying storage account.
 
@@ -641,22 +641,22 @@ The recommended way to generate a SAS Key is the [Microsoft Azure Storage Explor
 
 After installing Storage Explorer you can complete the following steps to generate a SAS Key:
 
-* Open the Microsoft Azure Storage Explorer after installation
-* Add an account
-* Choose "Use a storage account name and key"
+- Open the Microsoft Azure Storage Explorer after installation
+- Add an account
+- Choose "Use a storage account name and key"
 
 ![Connect a new storage account](media/migration-import/StorageExplorerAddAccount.png)
 
-* Enter your storage account name, provide one of your two [primary access keys](/azure/storage/common/storage-create-storage-account), and connect
+- Enter your storage account name, provide one of your two [primary access keys](/azure/storage/common/storage-create-storage-account), and connect
 
 ![Enter information about the storage account to connect](media/migration-import/StorageExplorerConnectAccount.png)
 
-* Expand out the blob containers, select the container with your import files, and choose to generate a "Shared Access Signature"
+- Expand out the blob containers, select the container with your import files, and choose to generate a "Shared Access Signature"
 
 ![Selecting the container to create an SAS Key](media/migration-import/StorageExplorerGetSAS.png)
 
-* Ensure that your SAS Key has read and list permissions. Write and delete permissions are NOT required
-* Set the expiration for 7 days into the future
+- Ensure that your SAS Key has read and list permissions. Write and delete permissions are NOT required
+- Set the expiration for 7 days into the future
 
 ![Set the required properties and create the SAS Key](media/migration-import/StorageExplorerCreateSAS.png)
 
@@ -668,8 +668,8 @@ Copy and hold onto this SAS Key as you will need to place it in your import spec
 
 Earlier in the process you partially filled out the import specification file generally known as `import.json`. At this point you have enough information to fill out all of the remaining fields expect for the import type. The import type will be covered in the import section below. Open your import specification file and fill out the following fields.
 
-* **Location** - Place the SAS Key generated from the script in the last step here.
-* **Dacpac** - Ensure the name in field is the same as the DACPAC file you uploaded to the storage account. Including the ".dacpac" extension.
+- **Location** - Place the SAS Key generated from the script in the last step here.
+- **Dacpac** - Ensure the name in field is the same as the DACPAC file you uploaded to the storage account. Including the ".dacpac" extension.
 
 Using the Fabrikam example, the final import specification file should look like the following:
 
@@ -682,8 +682,8 @@ Using the Fabrikam example, the final import specification file should look like
 
 Imports can either be queued as a dry or production run. The **ImportType** parameter determines the import type:
 
-* **DryRun**: Use for test purposes. The system deletes dry runs after 21 days.
-* **ProductionRun**: Use when you want to keep the resulting import and use the organization full time in Azure DevOps Services once the import completes.
+- **DryRun**: Use for test purposes. The system deletes dry runs after 21 days.
+- **ProductionRun**: Use when you want to keep the resulting import and use the organization full time in Azure DevOps Services once the import completes.
 
 > [!TIP]  
 > We always recommended that you complete a dry run import first.
@@ -750,5 +750,5 @@ Upon initiating an import, an email is sent to the user that queued the import. 
 
 ## Related articles
 
-* [Migrate options](migration-overview.md)
-* [Post-import](migration-post-import.md)
+- [Migrate options](migration-overview.md)
+- [Post-import](migration-post-import.md)

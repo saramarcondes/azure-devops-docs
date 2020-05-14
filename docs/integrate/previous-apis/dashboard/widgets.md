@@ -245,9 +245,9 @@ Update the widget.
 
 Note the following:
 
-* You must populate the eTag field of the **Widget** to participate in widget settings versioning.
-* You must populate **dashboard** property of **Widget** with **eTag** field to participate in dashboard versioning.
-* This is not compliant with the JSON PATCH standard, and as such, nulling of the fields is not supported (null/missing value is considered no change).
+- You must populate the eTag field of the **Widget** to participate in widget settings versioning.
+- You must populate **dashboard** property of **Widget** with **eTag** field to participate in dashboard versioning.
+- This is not compliant with the JSON PATCH standard, and as such, nulling of the fields is not supported (null/missing value is considered no change).
 
 See [data versioning](./overview.md#dataversioning).
 
@@ -353,8 +353,8 @@ Replace the widget.
 
 Note the following:
 
-* You must populate the eTag field of the **Widget** to participate in widget settings versioning.
-* You must populate **dashboard** property of **Widget** with **eTag** field to participate in dashboard versioning.
+- You must populate the eTag field of the **Widget** to participate in widget settings versioning.
+- You must populate **dashboard** property of **Widget** with **eTag** field to participate in dashboard versioning.
 
 See [data versioning](./overview.md#dataversioning).
 
@@ -835,8 +835,8 @@ If any of provided widgets doesn't already exist in the dashboard an exception w
 
 Note the following:
 
-* You must provide ETag header when updating the list. See [data versioning](./overview.md#dataversioning).
-* This is not compliant with JSON PATCH standard, and as such adding/removing widgets is not supported.
+- You must provide ETag header when updating the list. See [data versioning](./overview.md#dataversioning).
+- This is not compliant with JSON PATCH standard, and as such adding/removing widgets is not supported.
 
 ```no-highlight
 PATCH https://{account}.VisualStudio.com/DefaultCollection/{project}/{teamId}/_apis/dashboard/dashboards/{dashboardId}/widgets/?api-version={version}

@@ -25,7 +25,7 @@ In this tutorial you learn how to:
 
 > [!div class="checklist"]
 >
-> * Share your code with push
+> - Share your code with push
 
 ## Video overview
 

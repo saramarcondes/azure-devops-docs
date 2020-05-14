@@ -24,18 +24,18 @@ You can use the [work item query language](./wiql.md) to get to each work item t
 Work items retain a full history, and you can get each full [revision](./revisions.md) of the work item, or just the [updates](./updates.md) that were made in each revision.
 Work items can also be [tagged](./tags.md).
 
-* [Attachments](./attachments.md)
-* [Batch](./batch.md)
-* [Comments](./comments.md)
-* [Queries](./queries.md)
-* [Recycle Bin](./recycle-bin.md)
-* [Reporting Work Item Links](./reporting-work-item-links.md)
-* [Reporting Work Item Revisions](./reporting-work-item-revisions.md)
-* [Revisions](./revisions.md)
-* [Tags](./tags.md)
-* [Updates](./updates.md)
-* [WIQL](./wiql.md)
-* [Work items](./work-items.md)
+- [Attachments](./attachments.md)
+- [Batch](./batch.md)
+- [Comments](./comments.md)
+- [Queries](./queries.md)
+- [Recycle Bin](./recycle-bin.md)
+- [Reporting Work Item Links](./reporting-work-item-links.md)
+- [Reporting Work Item Revisions](./reporting-work-item-revisions.md)
+- [Revisions](./revisions.md)
+- [Tags](./tags.md)
+- [Updates](./updates.md)
+- [WIQL](./wiql.md)
+- [Work items](./work-items.md)
 
 ## Work item metadata resources
 
@@ -48,16 +48,16 @@ Your project has a set of [work item types](./work-item-types.md). Each work ite
 "bug" to define its role in the project.
 [Classification nodes](./classification-nodes.md) define the set of values that can be used in the area and iteration fields for the work items in the project.
 
-* [Categories](./categories.md)
-* [Classification nodes](./classification-nodes.md) (areas and iterations)
-* [Work Item Types](./work-item-types.md)
+- [Categories](./categories.md)
+- [Classification nodes](./classification-nodes.md) (areas and iterations)
+- [Work Item Types](./work-item-types.md)
 
 ### Collection-scoped metadata
 
 Work item types share [fields](./fields.md) and [relation types (links and attachments)](./relation-types.md) with other types of work items.
 
-* [Fields](./fields.md)
-* [Relation types](./relation-types.md)
+- [Fields](./fields.md)
+- [Relation types](./relation-types.md)
 
 ## Common tasks
 

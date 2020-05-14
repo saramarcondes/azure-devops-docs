@@ -22,8 +22,8 @@ To run your jobs, you'll need at least one agent. A Linux agent can build and de
 
 > Before you begin:
 >
-> * If your pipelines are in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a private Linux agent.
-> * Otherwise, you've come to the right place to set up an agent on Linux. Continue to the next section.
+> - If your pipelines are in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a private Linux agent.
+> - Otherwise, you've come to the right place to set up an agent on Linux. Continue to the next section.
 
 [!INCLUDE [include](includes/concepts.md)]
 
@@ -35,19 +35,19 @@ The agent is based on .NET Core 2.1.
 You can run this agent on several Linux distributions.
 We support the following subset of .NET Core supported distributions:
 
-* x64
-  * CentOS 7, 6 (see note 1)
-  * Debian 9
-  * Fedora 30, 29
-  * Linux Mint 18, 17
-  * openSUSE 42.3 or later
-  * Oracle Linux 7
-  * Red Hat Enterprise Linux 8, 7, 6 (see note 1)
-  * SUSE Enterprise Linux 12 SP2 or later
-  * Ubuntu 18.04, 16.04
-* ARM32 (see note 2)
-  * Debian 9
-  * Ubuntu 18.04
+- x64
+  - CentOS 7, 6 (see note 1)
+  - Debian 9
+  - Fedora 30, 29
+  - Linux Mint 18, 17
+  - openSUSE 42.3 or later
+  - Oracle Linux 7
+  - Red Hat Enterprise Linux 8, 7, 6 (see note 1)
+  - SUSE Enterprise Linux 12 SP2 or later
+  - Ubuntu 18.04, 16.04
+- ARM32 (see note 2)
+  - Debian 9
+  - Ubuntu 18.04
 
 > [!NOTE]
 > Note 1: RHEL 6 and CentOS 6 require installing the specialized `rhel.6-x64` version of the agent.
@@ -75,8 +75,8 @@ See [Azure Pipelines agent prereqs](?view=azure-devops#check-prerequisites) for 
 
 If you must stay on the older agent, make sure your machine is prepared with our prerequisites for either of the supported distributions:
 
-* [Ubuntu systems](https://aka.ms/vstsagentubuntusystem)
-* [Red Hat/CentOS systems](https://aka.ms/vstsagentredhatsystem)
+- [Ubuntu systems](https://aka.ms/vstsagentubuntusystem)
+- [Red Hat/CentOS systems](https://aka.ms/vstsagentredhatsystem)
 
 ::: moniker-end
 
@@ -245,8 +245,8 @@ Agents in this mode will accept only one job and then spin down gracefully (usef
 
 If your agent is running on these operating systems you can run the agent as a systemd service:
 
-* Ubuntu 16 LTS or newer
-* Red Hat 7.1 or newer
+- Ubuntu 16 LTS or newer
+- Red Hat 7.1 or newer
 
 > [!IMPORTANT]
 > If you run your agent as a service, you cannot run the agent service as `root` user.
@@ -338,9 +338,9 @@ A systemd service file is created:
 
 For example, you have configured an agent (see above) with the name `our-linux-agent`. The service file will be either:
 
-* **Azure Pipelines**: the name of your organization. For example if you connect to `https://dev.azure.com/fabrikam`, then the service name would be `/etc/systemd/system/vsts.agent.fabrikam.our-linux-agent.service`
+- **Azure Pipelines**: the name of your organization. For example if you connect to `https://dev.azure.com/fabrikam`, then the service name would be `/etc/systemd/system/vsts.agent.fabrikam.our-linux-agent.service`
 
-* **TFS or Azure DevOps Server**: the name of your on-premises server. For example if you connect to `http://our-server:8080/tfs`, then the service name would be `/etc/systemd/system/vsts.agent.our-server.our-linux-agent.service`
+- **TFS or Azure DevOps Server**: the name of your on-premises server. For example if you connect to `http://our-server:8080/tfs`, then the service name would be `/etc/systemd/system/vsts.agent.our-server.our-linux-agent.service`
 
 `sudo ./svc.sh install` generates this file from this template: `./bin/vsts.agent.service.template`
 

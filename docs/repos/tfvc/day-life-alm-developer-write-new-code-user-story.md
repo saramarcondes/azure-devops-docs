@@ -108,9 +108,9 @@ Usually you would create a new test project for each project that is being teste
 
 This procedure uses the Visual Studio Unit Test Framework, but you can also use frameworks from other providers. Test Explorer works equally well with other frameworks, provided you install the appropriate adapter.
 
-* Create a Test project, if it does not already exist.
-  * In the **New Project** dialog box, choose a language such as **Visual Basic**, **Visual C++** or **Visual C\#**. Choose **Test** and then **Unit Test Project**.
-* Add your tests to the test class that is provided. Each unit test is one method.
+- Create a Test project, if it does not already exist.
+  - In the **New Project** dialog box, choose a language such as **Visual Basic**, **Visual C++** or **Visual C\#**. Choose **Test** and then **Unit Test Project**.
+- Add your tests to the test class that is provided. Each unit test is one method.
 
   Each unit test must be prefixed by the `TestMethod` attribute, and the unit test method should have no parameters. You can use any name that you want for a unit test method:
 
@@ -127,7 +127,7 @@ This procedure uses the Visual Studio Unit Test Framework, but you can also use 
   End Sub
   ```
 
-* Each test method should call a method of the `Assert` class, to indicate whether it has passed or failed. Typically, you verify that the expected and actual results of an operation are equal:
+- Each test method should call a method of the `Assert` class, to indicate whether it has passed or failed. Typically, you verify that the expected and actual results of an operation are equal:
 
   ```csharp
   Assert.AreEqual(expectedResult, actualResult);
@@ -137,8 +137,8 @@ This procedure uses the Visual Studio Unit Test Framework, but you can also use 
   Assert.AreEqual(expectedResult, actualResult)
   ```
 
-* Your test methods can call other ordinary methods that do not have the `TestMethod` attribute.
-* You can organize your tests into more than one class. Each class must be prefixed by the `TestClass` attribute.
+- Your test methods can call other ordinary methods that do not have the `TestMethod` attribute.
+- You can organize your tests into more than one class. Each class must be prefixed by the `TestClass` attribute.
 
   ```csharp
   [TestClass]
@@ -181,7 +181,7 @@ First, create the project where you want to add the new class, unless it already
 
 #### To generate a method
 
-* Place the cursor on a call to the method, for example, `SquareRoot`. On the shortcut menu, choose **Generate Code**, **Method Stub**.
+- Place the cursor on a call to the method, for example, `SquareRoot`. On the shortcut menu, choose **Generate Code**, **Method Stub**.
 
 ## Run the first test
 
@@ -206,12 +206,12 @@ He runs the test again and it passes:
 
 ![Test Explorer showing Run All button](media/day-life-alm-developer-write-new-code-user-story/IC675819.png)
 
-* On the **Test** menu, choose **Run**, **All Tests**.
-  * * or -
-* If Test Explorer is open, choose **Run All**.
-  * * or -
-* Place the cursor in a test code file and press **CTRL+R, T**.
-* If a test appears under **Failed Tests**:
+- On the **Test** menu, choose **Run**, **All Tests**.
+  - - or -
+- If Test Explorer is open, choose **Run All**.
+  - - or -
+- Place the cursor in a test code file and press **CTRL+R, T**.
+- If a test appears under **Failed Tests**:
 
   Open the test, for example, by double-clicking the name.
 
@@ -325,8 +325,8 @@ He verifies that the tests still pass:
 > [!TIP]
 > Every change you make while you are developing the code should be either a refactoring or an extension:
 >
-> * Refactoring means that you do not change the tests because you are not adding new functionality.
-> * Extension means adding tests and making the code changes that are necessary to pass both existing and new tests.
+> - Refactoring means that you do not change the tests because you are not adding new functionality.
+> - Extension means adding tests and making the code changes that are necessary to pass both existing and new tests.
 >
 > If you are updating existing code to requirements that have changed, you will also delete old tests that no longer represent the current requirements.
 >
@@ -464,13 +464,13 @@ To verify that a specific test reaches into specific branches of the code, you c
 
 Peter continues to update the code in small steps until he is satisfied that:
 
-* All the available unit tests pass.
+- All the available unit tests pass.
 
   In a project with a very large set of unit tests, it can be impractical for a developer to wait for them all to run. Instead, the project operates a gated check-in service, in which all the automated tests are run for each checked-in shelveset before it is merged into the source tree. The check-in is rejected if the run fails. This allows the developer to run a minimal set of unit tests on his own machine, and then proceed with other work, without running the risk of breaking the build. For more information, see [Use a gated check-in build process to validate changes](../../pipelines/build/repository.md).
 
-* Code coverage meets the team's standard. 75% is a typical project requirement.
-* His unit tests simulate every aspect of the behavior that is required, including both typical and exceptional inputs.
-* His code is easy to understand and extend.
+- Code coverage meets the team's standard. 75% is a typical project requirement.
+- His unit tests simulate every aspect of the behavior that is required, including both typical and exceptional inputs.
+- His code is easy to understand and extend.
 
 When all these criteria are met, Peter is ready to check his code into source control.
 
@@ -478,11 +478,11 @@ When all these criteria are met, Peter is ready to check his code into source co
 
 Peter applies the following principles while developing code:
 
-* Develop unit tests along with the code, and run them frequently during development. The unit tests represent the specification of your component.
-* Don't change unit tests, unless the requirements have changed or the tests were wrong. Add new tests gradually as you extend the functionality of the code.
-* Aim for at least 75% of your code to be covered by the tests. Look at the code coverage results at intervals, and before you check in source code.
-* Check in your unit tests along with the code, so that they will be run by the continuous or regular server builds.
-* Where practical, for each piece of functionality, write the unit test first. Do this before you develop the code that satisfies it.
+- Develop unit tests along with the code, and run them frequently during development. The unit tests represent the specification of your component.
+- Don't change unit tests, unless the requirements have changed or the tests were wrong. Add new tests gradually as you extend the functionality of the code.
+- Aim for at least 75% of your code to be covered by the tests. Look at the code coverage results at intervals, and before you check in source code.
+- Check in your unit tests along with the code, so that they will be run by the continuous or regular server builds.
+- Where practical, for each piece of functionality, write the unit test first. Do this before you develop the code that satisfies it.
 
 ## Check in the changes
 
@@ -504,9 +504,9 @@ Peter is notified when the build is completed. In the build results window, he s
 
 4.  Review the contents of the **Pending Changes** page to make sure that:
 
-    * All relevant changes are listed in **Included Changes**
+    - All relevant changes are listed in **Included Changes**
 
-    * All relevant work items are listed in **Related Work Items**.
+    - All relevant work items are listed in **Related Work Items**.
 
 5.  Specify a **Comment** to help your team understand the purpose of these changes when they look at the version control history of the changed files and folders.
 

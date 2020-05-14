@@ -62,7 +62,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
     Adding inline tests is the same as adding test cases to a test suite. A default test plan and test suite are automatically created under which the manual test cases are grouped.
 
-        	For example, a test suite is created for the following user story, and inline tests are added to that suite. User story 314 is highlighted. It has two manual tests defined with the IDs 337 and 341.  
+        	For example, a test suite is created for the following user story, and inline tests are added to that suite. User story 314 is highlighted. It has two manual tests defined with the IDs 337 and 341.
 
     ![Manual test plan](media/manual-test-plan.png)
 
@@ -125,7 +125,7 @@ Microsoft Test Runner starts in a new browser instance. For information on how t
 
 Run the test by selecting ![Run icon](../boards/media/icons/run_query.png) **Run test** from the ![Actions icon](../boards/media/icons/actions-icon.png) actions menu for the inline test.
 
-<img src="../boards/boards/media/i-test-run-test.png" alt="Run a test" style="border: 2px solid #C3C3C3;" />  
+<img src="../boards/boards/media/i-test-run-test.png" alt="Run a test" style="border: 2px solid #C3C3C3;" />
 
 Microsoft Test Runner starts in a new browser instance. For information on how to run a test, see [Run manual tests](../test/run-manual-tests.md).
 ::: moniker-end

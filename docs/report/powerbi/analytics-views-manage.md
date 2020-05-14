@@ -25,13 +25,13 @@ Use this article to learn how to:
 
 > [!div class="checklist"]
 >
-> * Meet prerequisites to access Analytics views
-> * Open **Analytics views**
-> * Edit an existing view
-> * Share a view
-> * Favorite a view
-> * Manage permissions for a shared view
-> * Delete a view
+> - Meet prerequisites to access Analytics views
+> - Open **Analytics views**
+> - Edit an existing view
+> - Share a view
+> - Favorite a view
+> - Manage permissions for a shared view
+> - Delete a view
 
 [!INCLUDE [temp](../includes/analytics-prerequisites.md)]
 
@@ -97,10 +97,10 @@ To delete a view, click the ![ ](../media/icons/actions-icon.png) actions icon a
 
 ## Related articles
 
-* [Create an Analytics view](analytics-views-create.md)
-* [Data available from Analytics](data-available-in-analytics.md)
-* [Grant permissions to access Analytics](./analytics-security.md)
-* [Power BI integration overview](overview.md)
+- [Create an Analytics view](analytics-views-create.md)
+- [Data available from Analytics](data-available-in-analytics.md)
+- [Grant permissions to access Analytics](./analytics-security.md)
+- [Power BI integration overview](overview.md)
 
 <!---
 ## Copy a view

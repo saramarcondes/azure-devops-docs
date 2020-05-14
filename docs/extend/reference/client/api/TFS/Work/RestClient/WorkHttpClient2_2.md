@@ -29,36 +29,36 @@ Module path: `TFS/Work/RestClient`
 
 ### Methods
 
-* [deleteTeamIteration()](#method_deleteTeamIteration)
-* [getBoard()](#method_getBoard)
-* [getBoardCardRuleSettings()](#method_getBoardCardRuleSettings)
-* [getBoardCardSettings()](#method_getBoardCardSettings)
-* [getBoardChart()](#method_getBoardChart)
-* [getBoardCharts()](#method_getBoardCharts)
-* [getBoardColumns()](#method_getBoardColumns)
-* [getBoardRows()](#method_getBoardRows)
-* [getBoards()](#method_getBoards)
-* [getCapacities()](#method_getCapacities)
-* [getCapacity()](#method_getCapacity)
-* [getColumnSuggestedValues()](#method_getColumnSuggestedValues)
-* [getRowSuggestedValues()](#method_getRowSuggestedValues)
-* [getTeamDaysOff()](#method_getTeamDaysOff)
-* [getTeamFieldValues()](#method_getTeamFieldValues)
-* [getTeamIteration()](#method_getTeamIteration)
-* [getTeamIterations()](#method_getTeamIterations)
-* [getTeamSettings()](#method_getTeamSettings)
-* [postTeamIteration()](#method_postTeamIteration)
-* [replaceCapacities()](#method_replaceCapacities)
-* [setBoardOptions()](#method_setBoardOptions)
-* [updateBoardCardRuleSettings()](#method_updateBoardCardRuleSettings)
-* [updateBoardCardSettings()](#method_updateBoardCardSettings)
-* [updateBoardChart()](#method_updateBoardChart)
-* [updateBoardColumns()](#method_updateBoardColumns)
-* [updateBoardRows()](#method_updateBoardRows)
-* [updateCapacity()](#method_updateCapacity)
-* [updateTeamDaysOff()](#method_updateTeamDaysOff)
-* [updateTeamFieldValues()](#method_updateTeamFieldValues)
-* [updateTeamSettings()](#method_updateTeamSettings)
+- [deleteTeamIteration()](#method_deleteTeamIteration)
+- [getBoard()](#method_getBoard)
+- [getBoardCardRuleSettings()](#method_getBoardCardRuleSettings)
+- [getBoardCardSettings()](#method_getBoardCardSettings)
+- [getBoardChart()](#method_getBoardChart)
+- [getBoardCharts()](#method_getBoardCharts)
+- [getBoardColumns()](#method_getBoardColumns)
+- [getBoardRows()](#method_getBoardRows)
+- [getBoards()](#method_getBoards)
+- [getCapacities()](#method_getCapacities)
+- [getCapacity()](#method_getCapacity)
+- [getColumnSuggestedValues()](#method_getColumnSuggestedValues)
+- [getRowSuggestedValues()](#method_getRowSuggestedValues)
+- [getTeamDaysOff()](#method_getTeamDaysOff)
+- [getTeamFieldValues()](#method_getTeamFieldValues)
+- [getTeamIteration()](#method_getTeamIteration)
+- [getTeamIterations()](#method_getTeamIterations)
+- [getTeamSettings()](#method_getTeamSettings)
+- [postTeamIteration()](#method_postTeamIteration)
+- [replaceCapacities()](#method_replaceCapacities)
+- [setBoardOptions()](#method_setBoardOptions)
+- [updateBoardCardRuleSettings()](#method_updateBoardCardRuleSettings)
+- [updateBoardCardSettings()](#method_updateBoardCardSettings)
+- [updateBoardChart()](#method_updateBoardChart)
+- [updateBoardColumns()](#method_updateBoardColumns)
+- [updateBoardRows()](#method_updateBoardRows)
+- [updateCapacity()](#method_updateCapacity)
+- [updateTeamDaysOff()](#method_updateTeamDaysOff)
+- [updateTeamFieldValues()](#method_updateTeamFieldValues)
+- [updateTeamSettings()](#method_updateTeamSettings)
 
 <a name="method_deleteTeamIteration"></a>
 
@@ -72,12 +72,12 @@ Module path: `TFS/Work/RestClient`
 
 ### Parameters
 
-* `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md). The team context for the operation
-* `id`: string.
+- `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md). The team context for the operation
+- `id`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
 
 <a name="method_getBoard"></a>
 
@@ -93,12 +93,12 @@ Get board
 
 ### Parameters
 
-* `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md). The team context for the operation
-* `id`: string. identifier for board, either category plural name (Eg:&quot;Stories&quot;) or guid
+- `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md). The team context for the operation
+- `id`: string. identifier for board, either category plural name (Eg:&quot;Stories&quot;) or guid
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Board](../../../TFS/Work/Contracts/Board.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Board](../../../TFS/Work/Contracts/Board.md)&gt;
 
 <a name="method_getBoardCardRuleSettings"></a>
 
@@ -114,12 +114,12 @@ Get board card Rule settings for the board ID or board by name
 
 ### Parameters
 
-* `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md). The team context for the operation
-* `board`: string.
+- `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md). The team context for the operation
+- `board`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BoardCardRuleSettings](../../../TFS/Work/Contracts/BoardCardRuleSettings.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BoardCardRuleSettings](../../../TFS/Work/Contracts/BoardCardRuleSettings.md)&gt;
 
 <a name="method_getBoardCardSettings"></a>
 
@@ -135,12 +135,12 @@ Get board card settings for the board ID or board by name
 
 ### Parameters
 
-* `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md). The team context for the operation
-* `board`: string.
+- `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md). The team context for the operation
+- `board`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BoardCardSettings](../../../TFS/Work/Contracts/BoardCardSettings.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BoardCardSettings](../../../TFS/Work/Contracts/BoardCardSettings.md)&gt;
 
 <a name="method_getBoardChart"></a>
 
@@ -156,13 +156,13 @@ Get a board chart
 
 ### Parameters
 
-* `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md). The team context for the operation
-* `board`: string. Identifier for board, either category plural name (Eg:&quot;Stories&quot;) or Guid
-* `name`: string. The chart name
+- `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md). The team context for the operation
+- `board`: string. Identifier for board, either category plural name (Eg:&quot;Stories&quot;) or Guid
+- `name`: string. The chart name
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BoardChart](../../../TFS/Work/Contracts/BoardChart.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BoardChart](../../../TFS/Work/Contracts/BoardChart.md)&gt;
 
 <a name="method_getBoardCharts"></a>
 
@@ -178,12 +178,12 @@ Get board charts
 
 ### Parameters
 
-* `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md). The team context for the operation
-* `board`: string. Identifier for board, either category plural name (Eg:&quot;Stories&quot;) or Guid
+- `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md). The team context for the operation
+- `board`: string. Identifier for board, either category plural name (Eg:&quot;Stories&quot;) or Guid
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BoardChartReference](../../../TFS/Work/Contracts/BoardChartReference.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BoardChartReference](../../../TFS/Work/Contracts/BoardChartReference.md)[]&gt;
 
 <a name="method_getBoardColumns"></a>
 
@@ -197,12 +197,12 @@ Get board charts
 
 ### Parameters
 
-* `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md). The team context for the operation
-* `board`: string.
+- `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md). The team context for the operation
+- `board`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BoardColumn](../../../TFS/Work/Contracts/BoardColumn.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BoardColumn](../../../TFS/Work/Contracts/BoardColumn.md)[]&gt;
 
 <a name="method_getBoardRows"></a>
 
@@ -216,12 +216,12 @@ Get board charts
 
 ### Parameters
 
-* `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md). The team context for the operation
-* `board`: string.
+- `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md). The team context for the operation
+- `board`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BoardRow](../../../TFS/Work/Contracts/BoardRow.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BoardRow](../../../TFS/Work/Contracts/BoardRow.md)[]&gt;
 
 <a name="method_getBoards"></a>
 
@@ -235,11 +235,11 @@ Get board charts
 
 ### Parameters
 
-* `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md). The team context for the operation
+- `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md). The team context for the operation
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BoardReference](../../../TFS/Work/Contracts/BoardReference.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BoardReference](../../../TFS/Work/Contracts/BoardReference.md)[]&gt;
 
 <a name="method_getCapacities"></a>
 
@@ -253,12 +253,12 @@ Get board charts
 
 ### Parameters
 
-* `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md). The team context for the operation
-* `iterationId`: string.
+- `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md). The team context for the operation
+- `iterationId`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamMemberCapacity](../../../TFS/Work/Contracts/TeamMemberCapacity.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamMemberCapacity](../../../TFS/Work/Contracts/TeamMemberCapacity.md)[]&gt;
 
 <a name="method_getCapacity"></a>
 
@@ -272,13 +272,13 @@ Get board charts
 
 ### Parameters
 
-* `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md). The team context for the operation
-* `iterationId`: string.
-* `teamMemberId`: string.
+- `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md). The team context for the operation
+- `iterationId`: string.
+- `teamMemberId`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamMemberCapacity](../../../TFS/Work/Contracts/TeamMemberCapacity.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamMemberCapacity](../../../TFS/Work/Contracts/TeamMemberCapacity.md)&gt;
 
 <a name="method_getColumnSuggestedValues"></a>
 
@@ -292,11 +292,11 @@ Get board charts
 
 ### Parameters
 
-* `project`: string. Optional. Project ID or project name
+- `project`: string. Optional. Project ID or project name
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BoardSuggestedValue](../../../TFS/Work/Contracts/BoardSuggestedValue.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BoardSuggestedValue](../../../TFS/Work/Contracts/BoardSuggestedValue.md)[]&gt;
 
 <a name="method_getRowSuggestedValues"></a>
 
@@ -310,11 +310,11 @@ Get board charts
 
 ### Parameters
 
-* `project`: string. Optional. Project ID or project name
+- `project`: string. Optional. Project ID or project name
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BoardSuggestedValue](../../../TFS/Work/Contracts/BoardSuggestedValue.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BoardSuggestedValue](../../../TFS/Work/Contracts/BoardSuggestedValue.md)[]&gt;
 
 <a name="method_getTeamDaysOff"></a>
 
@@ -328,12 +328,12 @@ Get board charts
 
 ### Parameters
 
-* `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md). The team context for the operation
-* `iterationId`: string.
+- `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md). The team context for the operation
+- `iterationId`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamSettingsDaysOff](../../../TFS/Work/Contracts/TeamSettingsDaysOff.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamSettingsDaysOff](../../../TFS/Work/Contracts/TeamSettingsDaysOff.md)&gt;
 
 <a name="method_getTeamFieldValues"></a>
 
@@ -347,11 +347,11 @@ Get board charts
 
 ### Parameters
 
-* `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md). The team context for the operation
+- `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md). The team context for the operation
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamFieldValues](../../../TFS/Work/Contracts/TeamFieldValues.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamFieldValues](../../../TFS/Work/Contracts/TeamFieldValues.md)&gt;
 
 <a name="method_getTeamIteration"></a>
 
@@ -365,12 +365,12 @@ Get board charts
 
 ### Parameters
 
-* `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md). The team context for the operation
-* `id`: string.
+- `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md). The team context for the operation
+- `id`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamSettingsIteration](../../../TFS/Work/Contracts/TeamSettingsIteration.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamSettingsIteration](../../../TFS/Work/Contracts/TeamSettingsIteration.md)&gt;
 
 <a name="method_getTeamIterations"></a>
 
@@ -384,12 +384,12 @@ Get board charts
 
 ### Parameters
 
-* `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md). The team context for the operation
-* `timeframe`: string. Optional.
+- `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md). The team context for the operation
+- `timeframe`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamSettingsIteration](../../../TFS/Work/Contracts/TeamSettingsIteration.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamSettingsIteration](../../../TFS/Work/Contracts/TeamSettingsIteration.md)[]&gt;
 
 <a name="method_getTeamSettings"></a>
 
@@ -403,11 +403,11 @@ Get board charts
 
 ### Parameters
 
-* `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md). The team context for the operation
+- `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md). The team context for the operation
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamSetting](../../../TFS/Work/Contracts/TeamSetting.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamSetting](../../../TFS/Work/Contracts/TeamSetting.md)&gt;
 
 <a name="method_postTeamIteration"></a>
 
@@ -421,12 +421,12 @@ Get board charts
 
 ### Parameters
 
-* `iteration`: [Contracts.TeamSettingsIteration](../../../TFS/Work/Contracts/TeamSettingsIteration.md).
-* `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md).
+- `iteration`: [Contracts.TeamSettingsIteration](../../../TFS/Work/Contracts/TeamSettingsIteration.md).
+- `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md).
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamSettingsIteration](../../../TFS/Work/Contracts/TeamSettingsIteration.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamSettingsIteration](../../../TFS/Work/Contracts/TeamSettingsIteration.md)&gt;
 
 <a name="method_replaceCapacities"></a>
 
@@ -440,13 +440,13 @@ Get board charts
 
 ### Parameters
 
-* `capacities`: [Contracts.TeamMemberCapacity](../../../TFS/Work/Contracts/TeamMemberCapacity.md)[].
-* `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md).
-* `iterationId`: string.
+- `capacities`: [Contracts.TeamMemberCapacity](../../../TFS/Work/Contracts/TeamMemberCapacity.md)[].
+- `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md).
+- `iterationId`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamMemberCapacity](../../../TFS/Work/Contracts/TeamMemberCapacity.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamMemberCapacity](../../../TFS/Work/Contracts/TeamMemberCapacity.md)[]&gt;
 
 <a name="method_setBoardOptions"></a>
 
@@ -462,13 +462,13 @@ Update board options
 
 ### Parameters
 
-* `options`: {[key: string]: string}. options to updated
-* `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md).
-* `id`: string.
+- `options`: {[key: string]: string}. options to updated
+- `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md).
+- `id`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;{[key: string]: string}&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;{[key: string]: string}&gt;
 
 <a name="method_updateBoardCardRuleSettings"></a>
 
@@ -484,13 +484,13 @@ Update board card Rule settings for the board ID or board by name
 
 ### Parameters
 
-* `boardCardRuleSettings`: [Contracts.BoardCardRuleSettings](../../../TFS/Work/Contracts/BoardCardRuleSettings.md).
-* `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md).
-* `board`: string.
+- `boardCardRuleSettings`: [Contracts.BoardCardRuleSettings](../../../TFS/Work/Contracts/BoardCardRuleSettings.md).
+- `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md).
+- `board`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BoardCardRuleSettings](../../../TFS/Work/Contracts/BoardCardRuleSettings.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BoardCardRuleSettings](../../../TFS/Work/Contracts/BoardCardRuleSettings.md)&gt;
 
 <a name="method_updateBoardCardSettings"></a>
 
@@ -506,13 +506,13 @@ Update board card settings for the board ID or board by name
 
 ### Parameters
 
-* `boardCardSettingsToSave`: [Contracts.BoardCardSettings](../../../TFS/Work/Contracts/BoardCardSettings.md).
-* `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md).
-* `board`: string.
+- `boardCardSettingsToSave`: [Contracts.BoardCardSettings](../../../TFS/Work/Contracts/BoardCardSettings.md).
+- `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md).
+- `board`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BoardCardSettings](../../../TFS/Work/Contracts/BoardCardSettings.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BoardCardSettings](../../../TFS/Work/Contracts/BoardCardSettings.md)&gt;
 
 <a name="method_updateBoardChart"></a>
 
@@ -528,14 +528,14 @@ Update a board chart
 
 ### Parameters
 
-* `chart`: [Contracts.BoardChart](../../../TFS/Work/Contracts/BoardChart.md).
-* `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md).
-* `board`: string.
-* `name`: string.
+- `chart`: [Contracts.BoardChart](../../../TFS/Work/Contracts/BoardChart.md).
+- `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md).
+- `board`: string.
+- `name`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BoardChart](../../../TFS/Work/Contracts/BoardChart.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BoardChart](../../../TFS/Work/Contracts/BoardChart.md)&gt;
 
 <a name="method_updateBoardColumns"></a>
 
@@ -549,13 +549,13 @@ Update a board chart
 
 ### Parameters
 
-* `boardColumns`: [Contracts.BoardColumn](../../../TFS/Work/Contracts/BoardColumn.md)[].
-* `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md).
-* `board`: string.
+- `boardColumns`: [Contracts.BoardColumn](../../../TFS/Work/Contracts/BoardColumn.md)[].
+- `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md).
+- `board`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BoardColumn](../../../TFS/Work/Contracts/BoardColumn.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BoardColumn](../../../TFS/Work/Contracts/BoardColumn.md)[]&gt;
 
 <a name="method_updateBoardRows"></a>
 
@@ -569,13 +569,13 @@ Update a board chart
 
 ### Parameters
 
-* `boardRows`: [Contracts.BoardRow](../../../TFS/Work/Contracts/BoardRow.md)[].
-* `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md).
-* `board`: string.
+- `boardRows`: [Contracts.BoardRow](../../../TFS/Work/Contracts/BoardRow.md)[].
+- `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md).
+- `board`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BoardRow](../../../TFS/Work/Contracts/BoardRow.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BoardRow](../../../TFS/Work/Contracts/BoardRow.md)[]&gt;
 
 <a name="method_updateCapacity"></a>
 
@@ -589,14 +589,14 @@ Update a board chart
 
 ### Parameters
 
-* `patch`: [Contracts.CapacityPatch](../../../TFS/Work/Contracts/CapacityPatch.md).
-* `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md).
-* `iterationId`: string.
-* `teamMemberId`: string.
+- `patch`: [Contracts.CapacityPatch](../../../TFS/Work/Contracts/CapacityPatch.md).
+- `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md).
+- `iterationId`: string.
+- `teamMemberId`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamMemberCapacity](../../../TFS/Work/Contracts/TeamMemberCapacity.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamMemberCapacity](../../../TFS/Work/Contracts/TeamMemberCapacity.md)&gt;
 
 <a name="method_updateTeamDaysOff"></a>
 
@@ -610,13 +610,13 @@ Update a board chart
 
 ### Parameters
 
-* `daysOffPatch`: [Contracts.TeamSettingsDaysOffPatch](../../../TFS/Work/Contracts/TeamSettingsDaysOffPatch.md).
-* `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md).
-* `iterationId`: string.
+- `daysOffPatch`: [Contracts.TeamSettingsDaysOffPatch](../../../TFS/Work/Contracts/TeamSettingsDaysOffPatch.md).
+- `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md).
+- `iterationId`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamSettingsDaysOff](../../../TFS/Work/Contracts/TeamSettingsDaysOff.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamSettingsDaysOff](../../../TFS/Work/Contracts/TeamSettingsDaysOff.md)&gt;
 
 <a name="method_updateTeamFieldValues"></a>
 
@@ -630,12 +630,12 @@ Update a board chart
 
 ### Parameters
 
-* `patch`: [Contracts.TeamFieldValuesPatch](../../../TFS/Work/Contracts/TeamFieldValuesPatch.md).
-* `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md).
+- `patch`: [Contracts.TeamFieldValuesPatch](../../../TFS/Work/Contracts/TeamFieldValuesPatch.md).
+- `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md).
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamFieldValues](../../../TFS/Work/Contracts/TeamFieldValues.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamFieldValues](../../../TFS/Work/Contracts/TeamFieldValues.md)&gt;
 
 <a name="method_updateTeamSettings"></a>
 
@@ -649,9 +649,9 @@ Update a board chart
 
 ### Parameters
 
-* `teamSettingsPatch`: [Contracts.TeamSettingsPatch](../../../TFS/Work/Contracts/TeamSettingsPatch.md).
-* `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md).
+- `teamSettingsPatch`: [Contracts.TeamSettingsPatch](../../../TFS/Work/Contracts/TeamSettingsPatch.md).
+- `teamContext`: [TFS_Core_Contracts.TeamContext](../../../TFS/Core/Contracts/TeamContext.md).
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamSetting](../../../TFS/Work/Contracts/TeamSetting.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamSetting](../../../TFS/Work/Contracts/TeamSetting.md)&gt;

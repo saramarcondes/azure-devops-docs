@@ -31,13 +31,13 @@ If you are tasked with managing Azure Boards settings, review [Manage your Azure
 
 ## Related articles
 
-* [Why use Azure Boards?](why-use-azure-boards.md)
-* [Default permissions & access (Security)](permissions-access-boards.md)
-* [Agile glossary](../work-items/agile-glossary.md)
+- [Why use Azure Boards?](why-use-azure-boards.md)
+- [Default permissions & access (Security)](permissions-access-boards.md)
+- [Agile glossary](../work-items/agile-glossary.md)
 
 ## Additional resources
 
-* [Best tool for the job](../work-items/best-tool-add-update-link-work-items.md)
-* [Work items](../work-items/about-work-items.md)
-* [Sprints (Scrum)](../sprints/scrum-overview.md)
-* [Web portal navigation](../../project/navigation/index.md)
+- [Best tool for the job](../work-items/best-tool-add-update-link-work-items.md)
+- [Work items](../work-items/about-work-items.md)
+- [Sprints (Scrum)](../sprints/scrum-overview.md)
+- [Web portal navigation](../../project/navigation/index.md)

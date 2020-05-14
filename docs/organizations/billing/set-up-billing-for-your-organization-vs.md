@@ -24,8 +24,8 @@ _All services are billed via Azure_. You're not required to use any other Azure 
 
 ## Prerequisites
 
-* If you don't have an Azure subscription, [create one](https://azure.microsoft.com/pricing/purchase-options/).
-* To set up billing, you must have [Project Collection Administrator or organization Owner permissions](../security/lookup-organization-owner-admin.md).
+- If you don't have an Azure subscription, [create one](https://azure.microsoft.com/pricing/purchase-options/).
+- To set up billing, you must have [Project Collection Administrator or organization Owner permissions](../security/lookup-organization-owner-admin.md).
 
 > [!NOTE]
 > The Azure Free Trial isn't supported.
@@ -58,7 +58,7 @@ Billing is set up.
 
 ## Related articles
 
-* [Buy Azure Test Plans](buy-basic-access-add-users.md)
-* [Buy CI/CD](buy-more-build-vs.md)
-* [Sign up for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)
-* [Buy cloud-based load testing](buy-load-testing-vs.md).
+- [Buy Azure Test Plans](buy-basic-access-add-users.md)
+- [Buy CI/CD](buy-more-build-vs.md)
+- [Sign up for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)
+- [Buy cloud-based load testing](buy-load-testing-vs.md).

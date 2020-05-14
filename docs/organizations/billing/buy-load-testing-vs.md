@@ -60,14 +60,14 @@ You're charged for only the virtual user minutes of cloud-based load testing use
 
 [!INCLUDE [free-tier](../../includes/free-tier.md)]
 
-* The _free tier_ resets on the first day of the month.
+- The _free tier_ resets on the first day of the month.
 
-* Visual Studio subscriptions don't include any additional virtual user minutes. The free amounts are per organization, not per user.
+- Visual Studio subscriptions don't include any additional virtual user minutes. The free amounts are per organization, not per user.
 
-* For cloud-based load testing, you're charged for each
+- For cloud-based load testing, you're charged for each
   [virtual user minute](../../test/load-test/reference-qa.md#VUM) that exceeds the free monthly usage.
 
-* Graduated discounts for cloud-based load testing are calculated based on your Azure subscription billing cycle.
+- Graduated discounts for cloud-based load testing are calculated based on your Azure subscription billing cycle.
 
 ## Limits on load test runs
 

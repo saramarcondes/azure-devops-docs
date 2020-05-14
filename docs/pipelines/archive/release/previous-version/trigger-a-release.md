@@ -52,11 +52,11 @@ Also, if you haven't yet set up your build system,
 
     If the **Release** section doesn't appear:
 
-    * [Q: I use the default template. Which build pipeline template should I use for Release Management and how do I add it to TFS?](#add_template)
+    - [Q: I use the default template. Which build pipeline template should I use for Release Management and how do I add it to TFS?](#add_template)
 
-    * [Q: I use the upgrade template. Which build pipeline template should I use for Release Management?](#upgrade_template)
+    - [Q: I use the upgrade template. Which build pipeline template should I use for Release Management?](#upgrade_template)
 
-    * [Q: I use a custom build pipeline template. How do I add the workflow logic to trigger a release?](#custom_build_template)
+    - [Q: I use a custom build pipeline template. How do I add the workflow logic to trigger a release?](#custom_build_template)
 
     If you have components with configuration files that need different values
     based on the target environment, you can
@@ -97,15 +97,15 @@ Also, if you haven't yet set up your build system,
 
 **A**: See these blog posts:
 
-* [Trigger Release from build with Release Management for Visual Studio 2013 Update 3](https://devblogs.microsoft.com/devops/trigger-release-from-build-with-release-management-for-visual-studio-2013-update-3/)
+- [Trigger Release from build with Release Management for Visual Studio 2013 Update 3](https://devblogs.microsoft.com/devops/trigger-release-from-build-with-release-management-for-visual-studio-2013-update-3/)
 
-* [Deploy Azure Cloud Service using Release Management](https://devblogs.microsoft.com/devops/deploying-azure-cloud-service-using-release-management/)
+- [Deploy Azure Cloud Service using Release Management](https://devblogs.microsoft.com/devops/deploying-azure-cloud-service-using-release-management/)
 
-* [Announcing DevOps style deployments using Visual Studio 2015 and Azure](https://devblogs.microsoft.com/devops/announcing-devops-style-deployments-using-visual-studio-2015-preview-and-azure/)
+- [Announcing DevOps style deployments using Visual Studio 2015 and Azure](https://devblogs.microsoft.com/devops/announcing-devops-style-deployments-using-visual-studio-2015-preview-and-azure/)
 
-* [Using Release Management service to manage releases](https://devblogs.microsoft.com/devops/using-release-management-vso-service-to-manage-releases/)
+- [Using Release Management service to manage releases](https://devblogs.microsoft.com/devops/using-release-management-vso-service-to-manage-releases/)
 
-* [How to trigger deployments to Chef managed environments from Release Management 2013 with Update 3 RC](https://devblogs.microsoft.com/devops/how-to-trigger-deployments-to-chef-managed-environments-from-release-management-2013-with-update-3-rc/)
+- [How to trigger deployments to Chef managed environments from Release Management 2013 with Update 3 RC](https://devblogs.microsoft.com/devops/how-to-trigger-deployments-to-chef-managed-environments-from-release-management-2013-with-update-3-rc/)
 
 <a name="add_template"></a>
 
@@ -124,17 +124,17 @@ with the corresponding release management process template.
 1.  In the folder **\Program Files (x86)\ Microsoft Visual Studio 12.0\ReleaseManagement\bin**
     locate the template that you need.
 
-    * TFS 2013 and 2015
-      * **TFVC**: ReleaseTfvcTemplate.12.xaml.
-      * **Git**: ReleaseGitTemplate.12.xaml
-    * TFS 2012: ReleaseDefaultTemplate.11.1.xaml
-    * TFS 2010: ReleaseDefaultTemplate.xaml
+    - TFS 2013 and 2015
+      - **TFVC**: ReleaseTfvcTemplate.12.xaml.
+      - **Git**: ReleaseGitTemplate.12.xaml
+    - TFS 2012: ReleaseDefaultTemplate.11.1.xaml
+    - TFS 2010: ReleaseDefaultTemplate.xaml
 
 1.  Add the template to version control. It is a good idea to put the template
     in the **BuildProcessTemplates** folder of your project.
 
-    * **TFVC**: Add files to the server
-    * **Git**: Manage files on your dev machine
+    - **TFVC**: Add files to the server
+    - **Git**: Manage files on your dev machine
 
 1.  From the ![Builds icon](media/trigger-release-09.png)&nbsp;**Builds** page,
     (Keyboard Ctrl + 0, B), create or edit a build definition.
@@ -196,27 +196,27 @@ package location at the time of deployment.
 
 **A**: Here are some possible issues:
 
-* If you configure your build to trigger a release (**Release Build=True**)
+- If you configure your build to trigger a release (**Release Build=True**)
   and you don't select the **Can Trigger a Release from a Build?** check box
   for your release template. This actually causes the build to fail and
   consequently the release is not started either.
 
-* If you configure your release template to use a build definition that isn't
+- If you configure your release template to use a build definition that isn't
   set to trigger a release **Release Build=False**) or doesn't contain the
   correct release logic.
 
-* If a release template contains any component that is configured to build
+- If a release template contains any component that is configured to build
   independently.
 
-* If you don't set the **Acceptance Step** and the **Deployment Step**
+- If you don't set the **Acceptance Step** and the **Deployment Step**
   to **Automated** for the stage that you selected to trigger from the release,
   the release will not start. You must set these steps to be automated for
   this release path.
 
-* If you haven't installed the Release Management client on the machine that
+- If you haven't installed the Release Management client on the machine that
   is running your Team Foundation Build server.
 
-* If the time it takes for a deployment to complete exceeds 10 minutes. You
+- If the time it takes for a deployment to complete exceeds 10 minutes. You
   can change the value assigned to the **TFS-Triggered Deployment Timeout**
   from the **Administration** tab, **Settings** page.
 
@@ -257,12 +257,12 @@ or more file extensions using a semi-colon (**;**).
 
 ## Related topics
 
-* [Overview of Release Management](release-management-overview.md)
-* [Install Release Management](install-release-management.md)
-* [Manage your release](manage-your-release.md)
-* [Release without deployment agents](release-without-agents.md)
-* [Release with deployment agents](release-with-agents.md)
-* [Deploy continuously to Azure](deploy-continuously-to-azure.md)
+- [Overview of Release Management](release-management-overview.md)
+- [Install Release Management](install-release-management.md)
+- [Manage your release](manage-your-release.md)
+- [Release without deployment agents](release-without-agents.md)
+- [Release with deployment agents](release-with-agents.md)
+- [Deploy continuously to Azure](deploy-continuously-to-azure.md)
 
 [!INCLUDE [wpfver-back-to-index-shared](../includes/wpfver-back-to-index-shared.md)]
 

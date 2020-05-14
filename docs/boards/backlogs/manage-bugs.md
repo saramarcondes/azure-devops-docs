@@ -23,10 +23,10 @@ In a nutshell, you manage bugs through the following tasks:
 
 > [!div class="checklist"]
 >
-> * Capture information using the bug work item type
-> * Triage bugs by assigning a priority
-> * Update bug status throughout the bug lifecycle
-> * Monitor bug assignments and trends
+> - Capture information using the bug work item type
+> - Triage bugs by assigning a priority
+> - Update bug status throughout the bug lifecycle
+> - Monitor bug assignments and trends
 
 Each team can choose how [bugs show up on their backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md).
 
@@ -44,18 +44,18 @@ You can review bugs defined for your project by creating a query and specifying 
 
 ::: moniker range=">= azure-devops-2019"
 
-* [View, run, or email a work item query](../../boards/queries/view-run-query.md)
-* [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md)
-* [Triage work items](../../boards/queries/triage-work-items.md)
-* [Query by assignment or workflow changes](../../boards/queries/query-by-workflow-changes.md)
+- [View, run, or email a work item query](../../boards/queries/view-run-query.md)
+- [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md)
+- [Triage work items](../../boards/queries/triage-work-items.md)
+- [Query by assignment or workflow changes](../../boards/queries/query-by-workflow-changes.md)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-* [View, run, or email a work item query](../../boards/queries/view-run-query.md)
-* [Triage work items](../../boards/queries/triage-work-items.md)
-* [Query by assignment or workflow changes](../../boards/queries/query-by-workflow-changes.md)
+- [View, run, or email a work item query](../../boards/queries/view-run-query.md)
+- [Triage work items](../../boards/queries/triage-work-items.md)
+- [Query by assignment or workflow changes](../../boards/queries/query-by-workflow-changes.md)
 
 ::: moniker-end
 
@@ -199,8 +199,8 @@ For information about fields specific to the CMMI process, see [Bugs, issues, an
 
 You can create bugs during test sessions using one of the following tools:
 
-* **Test & Feedback extension**: see [Exploratory testing with the Test & Feedback extension](../../test/connected-mode-exploratory-testing.md)
-* **Test Runner**: see [Update an existing bug while using Test Runner](https://msdn.microsoft.com/library/dd286731.aspx).
+- **Test & Feedback extension**: see [Exploratory testing with the Test & Feedback extension](../../test/connected-mode-exploratory-testing.md)
+- **Test Runner**: see [Update an existing bug while using Test Runner](https://msdn.microsoft.com/library/dd286731.aspx).
 
 <a id="triage"> </a>
 
@@ -214,10 +214,10 @@ The project owner can create or open a shared query for new and reopened bugs to
 
 Open a shared query or [use the query editor](../queries/using-queries.md) to create useful bug queries, such as the following:
 
-* Active bugs by priority (`State <> Done` or `State <> Closed`)
-* In Progress bugs (`State = Committed` or `State = Active`)
-* Bugs to fix for a target release (`Tags Contains RTM`)
-* Recent bugs - bugs opened within the last 3 weeks (`Created Date > @Today-21`)
+- Active bugs by priority (`State <> Done` or `State <> Closed`)
+- In Progress bugs (`State = Committed` or `State = Active`)
+- Bugs to fix for a target release (`Tags Contains RTM`)
+- Recent bugs - bugs opened within the last 3 weeks (`Created Date > @Today-21`)
 
 Once you have the queries of interest to your team, you can [create status or trend charts](../../report/dashboards/charts.md) that you can also add the chart to a [dashboard](../../report/dashboards/dashboards.md).
 
@@ -288,12 +288,12 @@ To learn more about running test from the web portal, see [Run tests for web app
 
 You close a bug once it's verified as fixed. However, you may also close a bug for one of these reasons:
 
-* Deferred - deferring a fix until the next product release
-* Duplicate - bug has already been reported, you can link each bug with the Duplicate/Duplicate of link type and close one of the bugs
-* As Designed - feature works as designed
-* Cannot Reproduce - tests prove that the bug can't be reproduced
-* Obsolete - the bug's feature is no longer in the product
-* Copied to Backlog - a PBI or user story has been opened to track the bug
+- Deferred - deferring a fix until the next product release
+- Duplicate - bug has already been reported, you can link each bug with the Duplicate/Duplicate of link type and close one of the bugs
+- As Designed - feature works as designed
+- Cannot Reproduce - tests prove that the bug can't be reproduced
+- Obsolete - the bug's feature is no longer in the product
+- Copied to Backlog - a PBI or user story has been opened to track the bug
 
 It's always a good idea to describe any additional details for closing a bug in the Discussion field (new web form) or the History field (old web form) to avoid future confusion as to why the bug was closed.
 
@@ -321,20 +321,20 @@ To learn more about queries, charts, and dashboards; see [Create managed queries
 
 To track your bugs and integrate with other resources available to you, see these topics:
 
-* [Scrum and working with sprints best practices](../sprints/best-practices-scrum.md)
-* [Follow a work item or pull request](../work-items/follow-work-items.md)
-* [Move, change type, or delete work items](remove-delete-work-items.md)
-* [Pre-populate fields using a template](work-item-template.md)
-* [Copy or clone a work item](copy-clone-work-items.md#copy-clone)
+- [Scrum and working with sprints best practices](../sprints/best-practices-scrum.md)
+- [Follow a work item or pull request](../work-items/follow-work-items.md)
+- [Move, change type, or delete work items](remove-delete-work-items.md)
+- [Pre-populate fields using a template](work-item-template.md)
+- [Copy or clone a work item](copy-clone-work-items.md#copy-clone)
 
 <a id="integrate"> </a>
 
 ### Integrate & Test resources
 
-* [UserVoice](../../service-hooks/services/uservoice.md)
-* [Zendesk](../../service-hooks/services/zendesk.md)
-* [Developer testing tools scenarios and capabilities](/visualstudio/test/developer-testing-scenarios)
-* [Run tests for desktop apps](../../test/run-manual-tests.md#run-desktop)
+- [UserVoice](../../service-hooks/services/uservoice.md)
+- [Zendesk](../../service-hooks/services/zendesk.md)
+- [Developer testing tools scenarios and capabilities](/visualstudio/test/developer-testing-scenarios)
+- [Run tests for desktop apps](../../test/run-manual-tests.md#run-desktop)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -350,9 +350,9 @@ You can use Power BI to create more complex reports than what you can get from a
 
 If you work from an on-premises Azure DevOps Server or TFS and you have SQL Server Analysis Services and SQL Server Reporting Services configured for your project, you have access to the following reports (Agile and CMMI processes only).
 
-* [Bug Status](../../report/sql-reports/bug-status-report.md)
-* [Bug Trends](../../report/sql-reports/bug-trends-report.md)
-* [Reactivations](../../report/sql-reports/reactivations-report.md)
+- [Bug Status](../../report/sql-reports/bug-status-report.md)
+- [Bug Trends](../../report/sql-reports/bug-trends-report.md)
+- [Reactivations](../../report/sql-reports/reactivations-report.md)
 
 To learn how to add SQL Server reports for a project, see [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md).
 
@@ -364,9 +364,9 @@ SonarQube provides a way of automatically measuring some technical debt. SonarQu
 
 By integrating your on-premises Azure DevOps with a SonarQube server, you can get the following data:
 
-* Results of .NET and JavaScript code analysis
-* Code clone analysis
-* Code coverage data from tests
-* Metrics for .NET and JavaScript
+- Results of .NET and JavaScript code analysis
+- Code clone analysis
+- Code coverage data from tests
+- Metrics for .NET and JavaScript
 
 See [Technical Debt Management: Announcing SonarQube integration with MSBuild and Team Build](https://devblogs.microsoft.com/devops/technical-debt-management-announcing-sonarqube-integration-with-msbuild-and-team-build/) for details.

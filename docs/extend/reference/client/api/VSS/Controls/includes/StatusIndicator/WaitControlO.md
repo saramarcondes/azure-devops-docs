@@ -1,10 +1,10 @@
 [!INCLUDE [styleoverrides](../../../../_data/style-overrides.md)]
 
-* [startWait()](#method_startWait)
-* [endWait()](#method_endWait)
-* [cancelWait()](#method_cancelWait)
-* [setMessage()](#method_setMessage)
-* [isCancelled()](#method_isCancelled)
+- [startWait()](#method_startWait)
+- [endWait()](#method_endWait)
+- [cancelWait()](#method_cancelWait)
+- [setMessage()](#method_setMessage)
+- [isCancelled()](#method_isCancelled)
 
 <a name="method_startWait"></a>
 
@@ -18,7 +18,7 @@ void
 
 #### Parameters
 
-* `cancellable`: Utils_Core.Cancelable. Optional.
+- `cancellable`: Utils_Core.Cancelable. Optional.
 
 <a name="method_endWait"></a>
 
@@ -52,7 +52,7 @@ void
 
 #### Parameters
 
-* `message`: string. Message to be displayed.
+- `message`: string. Message to be displayed.
 
 <a name="method_isCancelled"></a>
 

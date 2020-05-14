@@ -91,13 +91,13 @@ If you don't restart the client, then operations that use the cached project nam
 
 For the following clients, save your work in each and restart:
 
-* Visual Studio/Team Explorer
+- Visual Studio/Team Explorer
 
-* Eclipse, if your team uses the Team Foundation Server plugin (Team Explorer Everywhere)
+- Eclipse, if your team uses the Team Foundation Server plugin (Team Explorer Everywhere)
 
-* Microsoft Excel, PowerPoint, or Project, if your team uses the Team Foundation Server Extension for these Office products
+- Microsoft Excel, PowerPoint, or Project, if your team uses the Team Foundation Server Extension for these Office products
 
-* Any additional clients which use the .NET Team Foundation Server Client Object Model
+- Any additional clients which use the .NET Team Foundation Server Client Object Model
 
 <a id="git"></a>
 
@@ -162,11 +162,11 @@ If you use an older version of Visual Studio or work with Git from the command p
 If your project uses TFVC with [server workspaces](../../repos/tfvc/decide-between-using-local-server-workspace.md), these workspaces need to be updated with the new project name.
 For the following clients, execute a get or check-in and the workspace mapping is corrected to use the new project name:
 
-* Visual Studio 2015 (RC or newer)
-* Visual Studio 2013
-* Visual Studio 2012
-* Visual Studio 2010 (Only supports server workspaces)
-* Team Explorer Everywhere (2012 or later versions)
+- Visual Studio 2015 (RC or newer)
+- Visual Studio 2013
+- Visual Studio 2012
+- Visual Studio 2010 (Only supports server workspaces)
+- Team Explorer Everywhere (2012 or later versions)
 
 ![Source control explorer, get latest version](media/rename-project/tfvc-get.png)
 
@@ -177,9 +177,9 @@ For the following clients, execute a get or check-in and the workspace mapping i
 If your team uses TFVC with [local workspaces](../../repos/tfvc/decide-between-using-local-server-workspace.md), these workspaces need to be updated with the new project name.
 For the following clients, execute a get or check-in and the workspace mapping is corrected to use the new project name:
 
-* Visual Studio 2015 (RC or later versions)
-* Visual Studio 2012 with [Update 5](https://go.microsoft.com/fwlink/?LinkId=615776) (RC or later versions)
-* Team Foundation Server plugin [Team Explorer Everywhere 2015](https://go.microsoft.com/fwlink/?LinkID=617042)
+- Visual Studio 2015 (RC or later versions)
+- Visual Studio 2012 with [Update 5](https://go.microsoft.com/fwlink/?LinkId=615776) (RC or later versions)
+- Team Foundation Server plugin [Team Explorer Everywhere 2015](https://go.microsoft.com/fwlink/?LinkID=617042)
 
 We recommend that you update your clients to the latest update or release, if possible. For all other supported Visual Studio versions,
 except for Visual Studio 2010 which only supports server workspaces,
@@ -204,13 +204,13 @@ Both SharePoint and Reporting Services integrations continue to work, but some r
 The old project name is still present until caches are updated with the new name.
 The reporting and SharePoint server administrator can manually run these jobs to immediately populate the new name.
 
-* If your team uses reports, they reflect the new names after the next incremental analysis job runs for the data warehouse. By default it runs every two hours. To expedite the process,[manually run the warehouse jobs and incremental analysis job](../../report/admin/manually-process-data-warehouse-and-cube.md), so the new name is synced to warehouse and reports start using the new name. Reports don't work as expected until the jobs have run.
+- If your team uses reports, they reflect the new names after the next incremental analysis job runs for the data warehouse. By default it runs every two hours. To expedite the process,[manually run the warehouse jobs and incremental analysis job](../../report/admin/manually-process-data-warehouse-and-cube.md), so the new name is synced to warehouse and reports start using the new name. Reports don't work as expected until the jobs have run.
 
-* If your team uses SharePoint Integration and has custom queries or web parts which directly reference the project name,
+- If your team uses SharePoint Integration and has custom queries or web parts which directly reference the project name,
   update the name in each to the new project name. All default queries and web parts don't need to be updated and continue to work.
   Use of <em>@project</em> also continues to work after a project rename and also don't need to be updated.
 
-* Excel reports and Excel web parts on MOSS don't show the right data until you execute the following.
+- Excel reports and Excel web parts on MOSS don't show the right data until you execute the following.
 
   1.  Warehouse job - [Run the warehouse jobs](../../report/admin/manually-process-data-warehouse-and-cube.md)
       so that Excel reports contain the correct data.

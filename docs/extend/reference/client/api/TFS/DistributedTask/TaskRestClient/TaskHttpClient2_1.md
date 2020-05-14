@@ -30,23 +30,23 @@ Module path: `TFS/DistributedTask/TaskRestClient`
 
 ### Methods
 
-* [appendLogContent()](#method_appendLogContent)
-* [appendTimelineRecordFeed()](#method_appendTimelineRecordFeed)
-* [createAttachment()](#method_createAttachment)
-* [createLog()](#method_createLog)
-* [createTimeline()](#method_createTimeline)
-* [deleteTimeline()](#method_deleteTimeline)
-* [getAttachment()](#method_getAttachment)
-* [getAttachmentContent()](#method_getAttachmentContent)
-* [getAttachments()](#method_getAttachments)
-* [getLog()](#method_getLog)
-* [getLogs()](#method_getLogs)
-* [getPlan()](#method_getPlan)
-* [getPlanAttachments()](#method_getPlanAttachments)
-* [getRecords()](#method_getRecords)
-* [getTimeline()](#method_getTimeline)
-* [getTimelines()](#method_getTimelines)
-* [updateRecords()](#method_updateRecords)
+- [appendLogContent()](#method_appendLogContent)
+- [appendTimelineRecordFeed()](#method_appendTimelineRecordFeed)
+- [createAttachment()](#method_createAttachment)
+- [createLog()](#method_createLog)
+- [createTimeline()](#method_createTimeline)
+- [deleteTimeline()](#method_deleteTimeline)
+- [getAttachment()](#method_getAttachment)
+- [getAttachmentContent()](#method_getAttachmentContent)
+- [getAttachments()](#method_getAttachments)
+- [getLog()](#method_getLog)
+- [getLogs()](#method_getLogs)
+- [getPlan()](#method_getPlan)
+- [getPlanAttachments()](#method_getPlanAttachments)
+- [getRecords()](#method_getRecords)
+- [getTimeline()](#method_getTimeline)
+- [getTimelines()](#method_getTimelines)
+- [updateRecords()](#method_updateRecords)
 
 <a name="method_appendLogContent"></a>
 
@@ -60,15 +60,15 @@ Module path: `TFS/DistributedTask/TaskRestClient`
 
 ### Parameters
 
-* `content`: string. Content to upload
-* `scopeIdentifier`: string. The project GUID to scope the request
-* `hubName`: string. The name of the server hub: &quot;build&quot; for the Build server or &quot;rm&quot; for the Release Management server
-* `planId`: string.
-* `logId`: number.
+- `content`: string. Content to upload
+- `scopeIdentifier`: string. The project GUID to scope the request
+- `hubName`: string. The name of the server hub: &quot;build&quot; for the Build server or &quot;rm&quot; for the Release Management server
+- `planId`: string.
+- `logId`: number.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_DistributedTask_Contracts.TaskLog](../../../TFS/DistributedTask/Contracts/TaskLog.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_DistributedTask_Contracts.TaskLog](../../../TFS/DistributedTask/Contracts/TaskLog.md)&gt;
 
 <a name="method_appendTimelineRecordFeed"></a>
 
@@ -82,16 +82,16 @@ Module path: `TFS/DistributedTask/TaskRestClient`
 
 ### Parameters
 
-* `lines`: [VSS_Common_Contracts.VssJsonCollectionWrapperV](../../../VSS/WebApi/Contracts/VssJsonCollectionWrapperV.md)&lt;string[]&gt;.
-* `scopeIdentifier`: string.
-* `hubName`: string.
-* `planId`: string.
-* `timelineId`: string.
-* `recordId`: string.
+- `lines`: [VSS_Common_Contracts.VssJsonCollectionWrapperV](../../../VSS/WebApi/Contracts/VssJsonCollectionWrapperV.md)&lt;string[]&gt;.
+- `scopeIdentifier`: string.
+- `hubName`: string.
+- `planId`: string.
+- `timelineId`: string.
+- `recordId`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
 
 <a name="method_createAttachment"></a>
 
@@ -105,18 +105,18 @@ Module path: `TFS/DistributedTask/TaskRestClient`
 
 ### Parameters
 
-* `content`: string. Content to upload
-* `scopeIdentifier`: string. The project GUID to scope the request
-* `hubName`: string. The name of the server hub: &quot;build&quot; for the Build server or &quot;rm&quot; for the Release Management server
-* `planId`: string.
-* `timelineId`: string.
-* `recordId`: string.
-* `type`: string.
-* `name`: string.
+- `content`: string. Content to upload
+- `scopeIdentifier`: string. The project GUID to scope the request
+- `hubName`: string. The name of the server hub: &quot;build&quot; for the Build server or &quot;rm&quot; for the Release Management server
+- `planId`: string.
+- `timelineId`: string.
+- `recordId`: string.
+- `type`: string.
+- `name`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_DistributedTask_Contracts.TaskAttachment](../../../TFS/DistributedTask/Contracts/TaskAttachment.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_DistributedTask_Contracts.TaskAttachment](../../../TFS/DistributedTask/Contracts/TaskAttachment.md)&gt;
 
 <a name="method_createLog"></a>
 
@@ -130,14 +130,14 @@ Module path: `TFS/DistributedTask/TaskRestClient`
 
 ### Parameters
 
-* `log`: [TFS_DistributedTask_Contracts.TaskLog](../../../TFS/DistributedTask/Contracts/TaskLog.md).
-* `scopeIdentifier`: string.
-* `hubName`: string.
-* `planId`: string.
+- `log`: [TFS_DistributedTask_Contracts.TaskLog](../../../TFS/DistributedTask/Contracts/TaskLog.md).
+- `scopeIdentifier`: string.
+- `hubName`: string.
+- `planId`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_DistributedTask_Contracts.TaskLog](../../../TFS/DistributedTask/Contracts/TaskLog.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_DistributedTask_Contracts.TaskLog](../../../TFS/DistributedTask/Contracts/TaskLog.md)&gt;
 
 <a name="method_createTimeline"></a>
 
@@ -151,14 +151,14 @@ Module path: `TFS/DistributedTask/TaskRestClient`
 
 ### Parameters
 
-* `timeline`: [TFS_DistributedTask_Contracts.Timeline](../../../TFS/DistributedTask/Contracts/Timeline.md).
-* `scopeIdentifier`: string.
-* `hubName`: string.
-* `planId`: string.
+- `timeline`: [TFS_DistributedTask_Contracts.Timeline](../../../TFS/DistributedTask/Contracts/Timeline.md).
+- `scopeIdentifier`: string.
+- `hubName`: string.
+- `planId`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_DistributedTask_Contracts.Timeline](../../../TFS/DistributedTask/Contracts/Timeline.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_DistributedTask_Contracts.Timeline](../../../TFS/DistributedTask/Contracts/Timeline.md)&gt;
 
 <a name="method_deleteTimeline"></a>
 
@@ -172,14 +172,14 @@ Module path: `TFS/DistributedTask/TaskRestClient`
 
 ### Parameters
 
-* `scopeIdentifier`: string. The project GUID to scope the request
-* `hubName`: string. The name of the server hub: &quot;build&quot; for the Build server or &quot;rm&quot; for the Release Management server
-* `planId`: string.
-* `timelineId`: string.
+- `scopeIdentifier`: string. The project GUID to scope the request
+- `hubName`: string. The name of the server hub: &quot;build&quot; for the Build server or &quot;rm&quot; for the Release Management server
+- `planId`: string.
+- `timelineId`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
 
 <a name="method_getAttachment"></a>
 
@@ -193,17 +193,17 @@ Module path: `TFS/DistributedTask/TaskRestClient`
 
 ### Parameters
 
-* `scopeIdentifier`: string. The project GUID to scope the request
-* `hubName`: string. The name of the server hub: &quot;build&quot; for the Build server or &quot;rm&quot; for the Release Management server
-* `planId`: string.
-* `timelineId`: string.
-* `recordId`: string.
-* `type`: string.
-* `name`: string.
+- `scopeIdentifier`: string. The project GUID to scope the request
+- `hubName`: string. The name of the server hub: &quot;build&quot; for the Build server or &quot;rm&quot; for the Release Management server
+- `planId`: string.
+- `timelineId`: string.
+- `recordId`: string.
+- `type`: string.
+- `name`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_DistributedTask_Contracts.TaskAttachment](../../../TFS/DistributedTask/Contracts/TaskAttachment.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_DistributedTask_Contracts.TaskAttachment](../../../TFS/DistributedTask/Contracts/TaskAttachment.md)&gt;
 
 <a name="method_getAttachmentContent"></a>
 
@@ -217,17 +217,17 @@ Module path: `TFS/DistributedTask/TaskRestClient`
 
 ### Parameters
 
-* `scopeIdentifier`: string. The project GUID to scope the request
-* `hubName`: string. The name of the server hub: &quot;build&quot; for the Build server or &quot;rm&quot; for the Release Management server
-* `planId`: string.
-* `timelineId`: string.
-* `recordId`: string.
-* `type`: string.
-* `name`: string.
+- `scopeIdentifier`: string. The project GUID to scope the request
+- `hubName`: string. The name of the server hub: &quot;build&quot; for the Build server or &quot;rm&quot; for the Release Management server
+- `planId`: string.
+- `timelineId`: string.
+- `recordId`: string.
+- `type`: string.
+- `name`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
 
 <a name="method_getAttachments"></a>
 
@@ -241,16 +241,16 @@ Module path: `TFS/DistributedTask/TaskRestClient`
 
 ### Parameters
 
-* `scopeIdentifier`: string. The project GUID to scope the request
-* `hubName`: string. The name of the server hub: &quot;build&quot; for the Build server or &quot;rm&quot; for the Release Management server
-* `planId`: string.
-* `timelineId`: string.
-* `recordId`: string.
-* `type`: string.
+- `scopeIdentifier`: string. The project GUID to scope the request
+- `hubName`: string. The name of the server hub: &quot;build&quot; for the Build server or &quot;rm&quot; for the Release Management server
+- `planId`: string.
+- `timelineId`: string.
+- `recordId`: string.
+- `type`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_DistributedTask_Contracts.TaskAttachment](../../../TFS/DistributedTask/Contracts/TaskAttachment.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_DistributedTask_Contracts.TaskAttachment](../../../TFS/DistributedTask/Contracts/TaskAttachment.md)[]&gt;
 
 <a name="method_getLog"></a>
 
@@ -264,16 +264,16 @@ Module path: `TFS/DistributedTask/TaskRestClient`
 
 ### Parameters
 
-* `scopeIdentifier`: string. The project GUID to scope the request
-* `hubName`: string. The name of the server hub: &quot;build&quot; for the Build server or &quot;rm&quot; for the Release Management server
-* `planId`: string.
-* `logId`: number.
-* `startLine`: number. Optional.
-* `endLine`: number. Optional.
+- `scopeIdentifier`: string. The project GUID to scope the request
+- `hubName`: string. The name of the server hub: &quot;build&quot; for the Build server or &quot;rm&quot; for the Release Management server
+- `planId`: string.
+- `logId`: number.
+- `startLine`: number. Optional.
+- `endLine`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;string[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;string[]&gt;
 
 <a name="method_getLogs"></a>
 
@@ -287,13 +287,13 @@ Module path: `TFS/DistributedTask/TaskRestClient`
 
 ### Parameters
 
-* `scopeIdentifier`: string. The project GUID to scope the request
-* `hubName`: string. The name of the server hub: &quot;build&quot; for the Build server or &quot;rm&quot; for the Release Management server
-* `planId`: string.
+- `scopeIdentifier`: string. The project GUID to scope the request
+- `hubName`: string. The name of the server hub: &quot;build&quot; for the Build server or &quot;rm&quot; for the Release Management server
+- `planId`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_DistributedTask_Contracts.TaskLog](../../../TFS/DistributedTask/Contracts/TaskLog.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_DistributedTask_Contracts.TaskLog](../../../TFS/DistributedTask/Contracts/TaskLog.md)[]&gt;
 
 <a name="method_getPlan"></a>
 
@@ -307,13 +307,13 @@ Module path: `TFS/DistributedTask/TaskRestClient`
 
 ### Parameters
 
-* `scopeIdentifier`: string. The project GUID to scope the request
-* `hubName`: string. The name of the server hub: &quot;build&quot; for the Build server or &quot;rm&quot; for the Release Management server
-* `planId`: string.
+- `scopeIdentifier`: string. The project GUID to scope the request
+- `hubName`: string. The name of the server hub: &quot;build&quot; for the Build server or &quot;rm&quot; for the Release Management server
+- `planId`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_DistributedTask_Contracts.TaskOrchestrationPlan](../../../TFS/DistributedTask/Contracts/TaskOrchestrationPlan.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_DistributedTask_Contracts.TaskOrchestrationPlan](../../../TFS/DistributedTask/Contracts/TaskOrchestrationPlan.md)&gt;
 
 <a name="method_getPlanAttachments"></a>
 
@@ -327,14 +327,14 @@ Module path: `TFS/DistributedTask/TaskRestClient`
 
 ### Parameters
 
-* `scopeIdentifier`: string. The project GUID to scope the request
-* `hubName`: string. The name of the server hub: &quot;build&quot; for the Build server or &quot;rm&quot; for the Release Management server
-* `planId`: string.
-* `type`: string.
+- `scopeIdentifier`: string. The project GUID to scope the request
+- `hubName`: string. The name of the server hub: &quot;build&quot; for the Build server or &quot;rm&quot; for the Release Management server
+- `planId`: string.
+- `type`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_DistributedTask_Contracts.TaskAttachment](../../../TFS/DistributedTask/Contracts/TaskAttachment.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_DistributedTask_Contracts.TaskAttachment](../../../TFS/DistributedTask/Contracts/TaskAttachment.md)[]&gt;
 
 <a name="method_getRecords"></a>
 
@@ -348,15 +348,15 @@ Module path: `TFS/DistributedTask/TaskRestClient`
 
 ### Parameters
 
-* `scopeIdentifier`: string. The project GUID to scope the request
-* `hubName`: string. The name of the server hub: &quot;build&quot; for the Build server or &quot;rm&quot; for the Release Management server
-* `planId`: string.
-* `timelineId`: string.
-* `changeId`: number. Optional.
+- `scopeIdentifier`: string. The project GUID to scope the request
+- `hubName`: string. The name of the server hub: &quot;build&quot; for the Build server or &quot;rm&quot; for the Release Management server
+- `planId`: string.
+- `timelineId`: string.
+- `changeId`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_DistributedTask_Contracts.TimelineRecord](../../../TFS/DistributedTask/Contracts/TimelineRecord.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_DistributedTask_Contracts.TimelineRecord](../../../TFS/DistributedTask/Contracts/TimelineRecord.md)[]&gt;
 
 <a name="method_getTimeline"></a>
 
@@ -370,16 +370,16 @@ Module path: `TFS/DistributedTask/TaskRestClient`
 
 ### Parameters
 
-* `scopeIdentifier`: string. The project GUID to scope the request
-* `hubName`: string. The name of the server hub: &quot;build&quot; for the Build server or &quot;rm&quot; for the Release Management server
-* `planId`: string.
-* `timelineId`: string.
-* `changeId`: number. Optional.
-* `includeRecords`: boolean. Optional.
+- `scopeIdentifier`: string. The project GUID to scope the request
+- `hubName`: string. The name of the server hub: &quot;build&quot; for the Build server or &quot;rm&quot; for the Release Management server
+- `planId`: string.
+- `timelineId`: string.
+- `changeId`: number. Optional.
+- `includeRecords`: boolean. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_DistributedTask_Contracts.Timeline](../../../TFS/DistributedTask/Contracts/Timeline.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_DistributedTask_Contracts.Timeline](../../../TFS/DistributedTask/Contracts/Timeline.md)&gt;
 
 <a name="method_getTimelines"></a>
 
@@ -393,13 +393,13 @@ Module path: `TFS/DistributedTask/TaskRestClient`
 
 ### Parameters
 
-* `scopeIdentifier`: string. The project GUID to scope the request
-* `hubName`: string. The name of the server hub: &quot;build&quot; for the Build server or &quot;rm&quot; for the Release Management server
-* `planId`: string.
+- `scopeIdentifier`: string. The project GUID to scope the request
+- `hubName`: string. The name of the server hub: &quot;build&quot; for the Build server or &quot;rm&quot; for the Release Management server
+- `planId`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_DistributedTask_Contracts.Timeline](../../../TFS/DistributedTask/Contracts/Timeline.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_DistributedTask_Contracts.Timeline](../../../TFS/DistributedTask/Contracts/Timeline.md)[]&gt;
 
 <a name="method_updateRecords"></a>
 
@@ -413,12 +413,12 @@ Module path: `TFS/DistributedTask/TaskRestClient`
 
 ### Parameters
 
-* `records`: [VSS_Common_Contracts.VssJsonCollectionWrapperV](../../../VSS/WebApi/Contracts/VssJsonCollectionWrapperV.md)&lt;[TFS_DistributedTask_Contracts.TimelineRecord](../../../TFS/DistributedTask/Contracts/TimelineRecord.md)[]&gt;.
-* `scopeIdentifier`: string.
-* `hubName`: string.
-* `planId`: string.
-* `timelineId`: string.
+- `records`: [VSS_Common_Contracts.VssJsonCollectionWrapperV](../../../VSS/WebApi/Contracts/VssJsonCollectionWrapperV.md)&lt;[TFS_DistributedTask_Contracts.TimelineRecord](../../../TFS/DistributedTask/Contracts/TimelineRecord.md)[]&gt;.
+- `scopeIdentifier`: string.
+- `hubName`: string.
+- `planId`: string.
+- `timelineId`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_DistributedTask_Contracts.TimelineRecord](../../../TFS/DistributedTask/Contracts/TimelineRecord.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_DistributedTask_Contracts.TimelineRecord](../../../TFS/DistributedTask/Contracts/TimelineRecord.md)[]&gt;

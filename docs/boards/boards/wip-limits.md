@@ -32,9 +32,9 @@ While [setting WIP limits](#Set) is simple, adhering to the limits takes a team 
 
 To get started, have your team determine the initial WIP limits to set and how they'll use and monitor them. Beyond that, few rules apply to what numbers to set as they can vary based on several factors. Here are two guidelines to help you determine what limits to set:
 
-* Set limits based on current works in progress. Count the items present in your existing Kanban columns.
+- Set limits based on current works in progress. Count the items present in your existing Kanban columns.
 
-* Set limits that don't exceed 2 or 3 items per team member that works within a stage. For example, if you have three team members and each team member can work on no more than two tasks at a time, the resulting WIP limit is 6 (= 3 developers X 2 tasks/developer).
+- Set limits that don't exceed 2 or 3 items per team member that works within a stage. For example, if you have three team members and each team member can work on no more than two tasks at a time, the resulting WIP limit is 6 (= 3 developers X 2 tasks/developer).
 
 Starting low may help your team discover bottlenecks more quickly and identify process issues to address.
 
@@ -75,10 +75,10 @@ Taking periodic snapshots of your Kanban board can visually catalog where work f
 
 Such snapshots can show your team:
 
-* How many items on average reside within a workflow stage/column
-* How many items are being worked versus team members who work within a workflow stage/column
-* How many and which items remained in a workflow stage/column for long periods of time
-* How many items did the team complete at the end of a one, two, or three week period?
+- How many items on average reside within a workflow stage/column
+- How many items are being worked versus team members who work within a workflow stage/column
+- How many and which items remained in a workflow stage/column for long periods of time
+- How many items did the team complete at the end of a one, two, or three week period?
 
 <a id="Eliminate waste" />
 
@@ -88,12 +88,12 @@ Because bottlenecks signal waste in your workflow process, you'll want to identi
 
 Common wastes in software development include:
 
-* Unused code or features
-* Defects that lead to re-work
-* Delays or time spent waiting for something
-* Handoffs from one person, team, or business process to another
-* Insufficient requirements
-* Slow or poor communication
+- Unused code or features
+- Defects that lead to re-work
+- Delays or time spent waiting for something
+- Handoffs from one person, team, or business process to another
+- Insufficient requirements
+- Slow or poor communication
 
 Eliminating waste calls for team discussions to identify causes and solutions acceptable to the team. In addition to addressing the [challenges and solutions posed by WIP limits](best-practices-kanban.md#practices), the team may decide to adjust their workflow process or WIP limits.
 
@@ -182,17 +182,17 @@ With an understanding of how you'll use WIP limits, here's how you set them. If 
 
 ::: moniker range=">= tfs-2015"
 
-* [Split columns](split-columns.md)
-* [Expedite work](expedite-work.md)
-* [Definition of Done](definition-of-done.md)
-* [Customize cards](../../boards/boards/customize-cards.md)
-* [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)
+- [Split columns](split-columns.md)
+- [Expedite work](expedite-work.md)
+- [Definition of Done](definition-of-done.md)
+- [Customize cards](../../boards/boards/customize-cards.md)
+- [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)
 
 ::: moniker-end
 
 ::: moniker range="tfs-2013"
 
-* [Definition of Done](definition-of-done.md)
-* [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)
+- [Definition of Done](definition-of-done.md)
+- [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)
 
 ::: moniker-end

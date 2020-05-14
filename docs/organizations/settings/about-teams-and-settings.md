@@ -68,11 +68,11 @@ Teams are associated with one or more area paths and a backlog iteration path, w
 
 When you define a team, you define the team's:
 
-* Selected area path(s)
-* Default area path
-* Selected iteration path(s)
-* Backlog iteration path
-* Default iteration path
+- Selected area path(s)
+- Default area path
+- Selected iteration path(s)
+- Backlog iteration path
+- Default iteration path
 
 All Agile tools reference the area path(s) defined for a team. The set of work items that appear on a backlog or board depend on the current State of a work item or its parent-child status.
 
@@ -137,8 +137,8 @@ Although there's no concept of subteams, you can create teams whose area paths a
 
 Also, the following articles walk you through the steps for configuring teams, area paths, and iterations to support portfolio management or enterprise organizations:
 
-* [Portfolio management](../../boards/plans/portfolio-management.md)
-* [Implement Scaled Agile Framework to support epics, release trains, and multiple backlogs](../../boards/plans/scaled-agile-framework.md)
+- [Portfolio management](../../boards/plans/portfolio-management.md)
+- [Implement Scaled Agile Framework to support epics, release trains, and multiple backlogs](../../boards/plans/scaled-agile-framework.md)
 
 <a id="team-group"> </a>
 
@@ -170,19 +170,19 @@ You can choose to limit access to select features by making a user a [Stakeholde
 
 ## Summary
 
-* Every team owns their own backlog, to create a new backlog you [create a new team](../../organizations/settings/add-teams.md)
-* Every backlog has a corresponding [Kanban board](../../boards/boards/kanban-basics.md) you can use to track progress and update status
-* The team's specified area and iteration paths determine which work items appear on the backlog and Kanban board&mdash;you can easily decide to include or exclude work items under a specific area path
-* Each team can control how [bugs show up on their backlogs and boards](show-bugs-on-backlog.md)
-* For an overview of all team assets and how to configure them, see [Manage teams and configure team tools](manage-teams.md)
-* To have work done by several teams roll up in to a portfolio backlog, you'll want to [setup the team hierarchy](../../boards/plans/portfolio-management.md)
-* To add fields or work item types, see [Customize your work tracking experience](../../reference/customize-work.md).
+- Every team owns their own backlog, to create a new backlog you [create a new team](../../organizations/settings/add-teams.md)
+- Every backlog has a corresponding [Kanban board](../../boards/boards/kanban-basics.md) you can use to track progress and update status
+- The team's specified area and iteration paths determine which work items appear on the backlog and Kanban board&mdash;you can easily decide to include or exclude work items under a specific area path
+- Each team can control how [bugs show up on their backlogs and boards](show-bugs-on-backlog.md)
+- For an overview of all team assets and how to configure them, see [Manage teams and configure team tools](manage-teams.md)
+- To have work done by several teams roll up in to a portfolio backlog, you'll want to [setup the team hierarchy](../../boards/plans/portfolio-management.md)
+- To add fields or work item types, see [Customize your work tracking experience](../../reference/customize-work.md).
 
 ## Related articles
 
-* [Add another team](add-teams.md)
-* [Configure team settings](manage-teams.md)
-* [Work across projects](../../project/navigation/work-across-projects.md)
+- [Add another team](add-teams.md)
+- [Configure team settings](manage-teams.md)
+- [Work across projects](../../project/navigation/work-across-projects.md)
 
 <!--- IN ADDITION: Favorites (query, build); assigned to <team> PRs, Default reviewers for PRs, @CurrentIteration, @Mention a group, team is a group  -->
 

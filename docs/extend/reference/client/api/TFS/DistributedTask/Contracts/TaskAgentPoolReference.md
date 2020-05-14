@@ -16,8 +16,8 @@ Module path: `TFS/DistributedTask/Contracts`
 
 ### Members
 
-* `id`: number.
+- `id`: number.
 
-* `name`: string.
+- `name`: string.
 
-* `scope`: string.
+- `scope`: string.

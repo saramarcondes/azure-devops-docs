@@ -19,4 +19,4 @@ Registry of XDM channels kept per target frame/window
 
 ### Members
 
-* `addChannel`: (window: Window, targetOrigin: string): [IXDMChannel](../../../VSS/References/VSS_SDK_Interfaces/IXDMChannel.md). Add an XDM channel for the given target window/iframe
+- `addChannel`: (window: Window, targetOrigin: string): [IXDMChannel](../../../VSS/References/VSS_SDK_Interfaces/IXDMChannel.md). Add an XDM channel for the given target window/iframe

@@ -29,8 +29,8 @@ To use an Azure Artifacts feed with a scope, follow the instructions below, but 
 
 Then, replace:
 
-* `registry=<your feed URL>` with
-* `@fabrikam:registry=<your feed URL>`
+- `registry=<your feed URL>` with
+- `@fabrikam:registry=<your feed URL>`
 
 > [!NOTE]
 > Make sure you add the scope and package names to your `package.json` file: `{ "name": "@fabrikam/package-name" }`.

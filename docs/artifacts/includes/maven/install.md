@@ -38,8 +38,8 @@ See the [Maven CLI docs](https://maven.apache.org/plugins/maven-install-plugin/u
 
 2.  From the **Connect to feed** dialog box in TFS, copy the `<repository>` information. Paste it into your pom.xml file twice (see the preceding sample file):
 
-    * Between the `<repositories>` tags
-    * Between the `<distributionManagement>` tags
+    - Between the `<repositories>` tags
+    - Between the `<distributionManagement>` tags
 
 3.  From the **Packages** page, browse to the artifact that you want to install and copy the contents of the `<dependency>` element.
 

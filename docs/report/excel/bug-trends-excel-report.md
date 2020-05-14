@@ -34,12 +34,12 @@ For information about healthy and unhealthy versions of the report, see [Bug Tre
 
 For the Bug Trends report to be useful and accurate, the team must perform the following activities:
 
-* Define Bugs, and specify their **Iteration** and **Area** paths.
+- Define Bugs, and specify their **Iteration** and **Area** paths.
 
   > [!NOTE]
   > For information about how to define area and iteration paths, see [Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) .
 
-* Update the **State** of each Bug as it is fixed, verified, and closed.
+- Update the **State** of each Bug as it is fixed, verified, and closed.
 
 <a name="Updating"></a>
 
@@ -55,5 +55,5 @@ You can customize the Bug Trends report by opening the report in Office Excel an
 
 ## Related articles
 
-* [Excel reports](excel-reports.md)
-* [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)
+- [Excel reports](excel-reports.md)
+- [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)

@@ -22,17 +22,17 @@ For a description of the measures and dimensions that are associated with these 
 
 FactCodeChurn is associated with the following dimension tables:
 
-* DimChangeset
+- DimChangeset
 
-* DimDate
+- DimDate
 
-* DimFile
+- DimFile
 
-* DimTeamProject
+- DimTeamProject
 
 ## Related notes
 
-* [Code churn and code coverage](perspective-code-analyze-report-code-churn-coverage.md)
-* [Code Churn](../excel/code-churn-excel-report.md)
-* [Run Coverage tables](run-coverage-tables.md)
-* [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)
+- [Code churn and code coverage](perspective-code-analyze-report-code-churn-coverage.md)
+- [Code Churn](../excel/code-churn-excel-report.md)
+- [Run Coverage tables](run-coverage-tables.md)
+- [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)

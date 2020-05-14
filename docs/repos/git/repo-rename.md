@@ -148,8 +148,8 @@ A: Yes
 
 A: If you are using:
 
-* Visual Studio 2015, then edit the remote with the name you used.
+- Visual Studio 2015, then edit the remote with the name you used.
 
-* An older version of Visual Studio or the command prompt, then run this command: `git remote set-url {remote_name} {URL_you_copied_from_the_remote_repo}`
+- An older version of Visual Studio or the command prompt, then run this command: `git remote set-url {remote_name} {URL_you_copied_from_the_remote_repo}`
 
 <!-- ENDSECTION -->

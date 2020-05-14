@@ -40,4 +40,4 @@ To change your organization region, use [Azure DevOps Virtual Support Agent](htt
 
 ## Related articles
 
-* [Worldwide data regions for Azure DevOps](../security/data-location.md).
+- [Worldwide data regions for Azure DevOps](../security/data-location.md).

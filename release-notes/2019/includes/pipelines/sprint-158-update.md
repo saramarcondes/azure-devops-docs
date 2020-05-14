@@ -63,10 +63,10 @@ The Azure Pipelines app for Slack and Microsoft Teams now supports multi-stage Y
 
 Events supported for multi-stage YAML pipelines
 
-* Run state changed
-* Run stage state changed
-* Run stage waiting for approval
-* Run stage approval completed
+- Run state changed
+- Run stage state changed
+- Run stage waiting for approval
+- Run stage approval completed
 
 > [!div class="mx-imgBorder"] > ![Badge](../../media/158_07.png)
 
@@ -80,10 +80,10 @@ We've added a [messaging extension](https://docs.microsoft.com/microsoftteams/pl
 
 We've updated several of the Azure Pipelines hosted VM images. The following are some the highlights in this update:
 
-* Added Go 1.13 to Ubuntu 16.04, Ubuntu 18.04, VS2017, and VS2019. Go 1.12 remains the default.
-* Added Android SDK and Build Tools 29 to Ubuntu 16.04, Ubuntu 18.04, VS2017, and VS2019.
-* Added Az Module 2.6.0 to VS2017 and VS2019.
-* Various bug fixes.
+- Added Go 1.13 to Ubuntu 16.04, Ubuntu 18.04, VS2017, and VS2019. Go 1.12 remains the default.
+- Added Android SDK and Build Tools 29 to Ubuntu 16.04, Ubuntu 18.04, VS2017, and VS2019.
+- Added Az Module 2.6.0 to VS2017 and VS2019.
+- Various bug fixes.
 
 You can find more details about the latest releases [here](https://github.com/microsoft/azure-pipelines-image-generation/releases).
 

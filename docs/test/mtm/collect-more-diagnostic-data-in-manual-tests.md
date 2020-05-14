@@ -45,9 +45,9 @@ You need test settings only if you want to collect more data than the default. T
 
 1.  If the application you are testing is a website or has a server component, and you want to collect data from the servers:
 
-    * Create a lab environment. It can be a standard environment or an SCVMM environment.
+    - Create a lab environment. It can be a standard environment or an SCVMM environment.
 
-    * In the Properties of your test plan, set the test environment you want to use for manual tests.
+    - In the Properties of your test plan, set the test environment you want to use for manual tests.
 
     ![In test plan properties, choose a lab environment.](media/collect-more-diagnostic-data-in-manual-tests/almt_ws91chooseenv.png)
 

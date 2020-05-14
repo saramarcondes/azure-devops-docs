@@ -251,7 +251,7 @@ See [Restrict access, Restrict modification of work items based on a user or gro
 
 ## Related articles
 
-* [Grant or restrict access](restrict-access.md)
-* [Set permissions on queries and query folders](../../boards/queries/set-query-permissions.md)
-* [Permissions and access for work tracking](permissions-access-work-tracking.md)
-* [Permissions and groups reference](permissions.md)
+- [Grant or restrict access](restrict-access.md)
+- [Set permissions on queries and query folders](../../boards/queries/set-query-permissions.md)
+- [Permissions and access for work tracking](permissions-access-work-tracking.md)
+- [Permissions and groups reference](permissions.md)

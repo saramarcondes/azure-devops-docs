@@ -19,12 +19,12 @@ Model representing a hub group in Azure DevOps Services pages&#x27; navigation m
 
 ### Members
 
-* `hasHubs`: boolean.
+- `hasHubs`: boolean.
 
-* `id`: string.
+- `id`: string.
 
-* `name`: string.
+- `name`: string.
 
-* `order`: any.
+- `order`: any.
 
-* `uri`: string.
+- `uri`: string.

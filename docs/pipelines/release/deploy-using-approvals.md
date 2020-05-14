@@ -27,9 +27,9 @@ In this tutorial, you learn about:
 
 > [!div class="checklist"]
 >
-> * Extending the approval process with gates
-> * Extending the approval process with manual intervention
-> * Viewing and monitoring approvals and gates
+> - Extending the approval process with gates
+> - Extending the approval process with manual intervention
+> - Viewing and monitoring approvals and gates
 
 ## Prerequisites
 

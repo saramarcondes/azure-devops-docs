@@ -24,8 +24,8 @@ In this article, you'll learn:
 
 > [!div class="checklist"]
 >
-> * How to add epics and features using your portfolio backlogs
-> * Keyboard shortcuts for working with the Kanban board
+> - How to add epics and features using your portfolio backlogs
+> - Keyboard shortcuts for working with the Kanban board
 
 For information on managing features and epics as a list and examples for features and epics, see [Define features and epics](../backlogs/define-features-epics.md).
 
@@ -125,13 +125,13 @@ If you're new to working with the Kanban board, see [Kanban basics](kanban-basic
 
 For additional guidance on working with a checklist on a Kanban board, see [Add task checklists](add-task-checklists.md). You can perform the same operations for the features and epics Kanban boards as you do with the Kanban board for the product backlog. This includes:
 
-* Mark an item as done
-* Reorder and reparent work items
+- Mark an item as done
+- Reorder and reparent work items
 
 To customize the columns, swimlanes, or cards for each Kanban board, make sure you first select the board and then choose the ![ ](../../media/icons/blue-gear.png) or ![ ](../../media/icons/gear_icon.png) gear icon to open the Settings dialog. See these topics for details:
 
-* [Add columns](add-columns.md)
-* [Customize cards](../../boards/boards/customize-cards.md)
+- [Add columns](add-columns.md)
+- [Customize cards](../../boards/boards/customize-cards.md)
 
 ### REST API resources
 

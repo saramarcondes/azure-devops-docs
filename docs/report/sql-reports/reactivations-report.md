@@ -37,9 +37,9 @@ The Reactivations report shows an area graph of the number of bugs or stories th
 
 You can filter the Reactivations report in the following ways:
 
-* Change the start and end dates for the report.
+- Change the start and end dates for the report.
 
-* Filter the bugs and stories that are counted in the report by specifying iteration and area paths, work item types, and previous state of the work items.
+- Filter the bugs and stories that are counted in the report by specifying iteration and area paths, work item types, and previous state of the work items.
 
   For more information, see [Filtering the Report](#Changing) later in this article.
 
@@ -47,9 +47,9 @@ You can filter the Reactivations report in the following ways:
 
 For the Reactivations report to be useful and accurate, the team must perform the following activities:
 
-* Define user stories and bugs, and specify their **Iteration** and **Area** paths.
+- Define user stories and bugs, and specify their **Iteration** and **Area** paths.
 
-* Update the **State** of stories and bugs as they progress from active to closed.
+- Update the **State** of stories and bugs as they progress from active to closed.
 
 ## <a name="Duration"></a> Setting the Duration of the Iteration
 
@@ -71,11 +71,11 @@ The Reactivations report displays information that you can use to detect whether
 
 You can review the report to answer these questions:
 
-* How many bugs have been reactivated in the current iteration?
+- How many bugs have been reactivated in the current iteration?
 
-* How many user stories have been reactivated in the current iteration?
+- How many user stories have been reactivated in the current iteration?
 
-* Is the team resolving and closing reactivated bugs and stories at an acceptable rate?
+- Is the team resolving and closing reactivated bugs and stories at an acceptable rate?
 
 ### Healthy Version of Report
 
@@ -101,9 +101,9 @@ The following table describes the indications of an unhealthy version of this re
 
 You can filter the Reactivations report in the following ways:
 
-* Change the start and end dates for the report.
+- Change the start and end dates for the report.
 
-* Filter the bugs or stories that the report represents by specifying iteration and area paths, work item types, and the previous states for the work items.
+- Filter the bugs or stories that the report represents by specifying iteration and area paths, work item types, and the previous states for the work items.
 
   The following illustration shows the available filters:
 
@@ -113,9 +113,9 @@ You can filter the Reactivations report in the following ways:
 
 1.  Perform one or more of the following actions:
 
-    * In the **Iteration** and **Area** lists, select the check box of each iteration or product area to include.
+    - In the **Iteration** and **Area** lists, select the check box of each iteration or product area to include.
 
-    * In the **Work Item Type** and **Previous State** lists, select the check box of each work item type and state to include.
+    - In the **Work Item Type** and **Previous State** lists, select the check box of each work item type and state to include.
 
 2.  Click **View Report**.
 

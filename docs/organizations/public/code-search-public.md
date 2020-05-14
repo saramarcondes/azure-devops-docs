@@ -30,27 +30,27 @@ To start your search, choose **Repos > Files** or other page under **Repos**, en
 1.  The search page shows a list of the matching code files. The selected file has all
     instances of the search string highlighted. If you see a list of work items, ensure that **Code** is selected in the top left.
 
-        	> [!div class="mx-imgBorder"]  
+        	> [!div class="mx-imgBorder"]
         	> ![Code search results example](media/search/code-search-example.png)
 
 2.  Assemble more complex search strings using the operators and functions listed in the drop-down list. Select the filter function or code type you want to include in your search string, and then enter the criteria value.
 
-        	> [!div class="mx-imgBorder"]  
+        	> [!div class="mx-imgBorder"]
         	> ![Search from the title bar](media/search/code-search-filters.png)
 
-    * You can find all instances of "ToDo" comments in your code simply by selecting `comment:` and typing `todo`.
+    - You can find all instances of "ToDo" comments in your code simply by selecting `comment:` and typing `todo`.
 
-    * You can search in specific locations, such as within a particular path, by using a search string such as `Driver path:MyShuttle/Server`.
+    - You can search in specific locations, such as within a particular path, by using a search string such as `Driver path:MyShuttle/Server`.
 
-    * You can search for files by name, such as `Driver file:GreenCabs.cs`, or just by file extension. For example, the search string
+    - You can search for files by name, such as `Driver file:GreenCabs.cs`, or just by file extension. For example, the search string
       `error ext:resx` could be useful when you want to review all error strings in your code.
       But even if your plain text search string, without specific file type functions, matches part of a filename, the file appears in the list of found files.
 
-    * You can combine two or more words by using Boolean operators; for example, `validate OR release`.
+    - You can combine two or more words by using Boolean operators; for example, `validate OR release`.
 
-    * You can find an exact match to a set of words by enclosing your search terms in double-quotes. For example, `"Client not found"`.
+    - You can find an exact match to a set of words by enclosing your search terms in double-quotes. For example, `"Client not found"`.
 
-    * You can use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET.
+    - You can use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET.
 
 ## Fine-tune your search
 

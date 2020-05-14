@@ -16,4 +16,4 @@ Module path: `TFS/Build/Contracts`
 
 ### Members
 
-* `triggerType`: [DefinitionTriggerType](./DefinitionTriggerType.md).
+- `triggerType`: [DefinitionTriggerType](./DefinitionTriggerType.md).

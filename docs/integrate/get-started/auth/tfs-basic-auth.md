@@ -18,9 +18,9 @@ ms.date: 03/10/2017
 
 ## If you know you want IIS basic authentication, then you'll need ...
 
-* The latest version of **node**, which can be downloaded [here](https://nodejs.org/en/download/)
-* **TFS Cross Platform Command Line Interface (tfx)**
-  * **tfx** can be installed using `npm`, a component of Node.js by running:
+- The latest version of **node**, which can be downloaded [here](https://nodejs.org/en/download/)
+- **TFS Cross Platform Command Line Interface (tfx)**
+  - **tfx** can be installed using `npm`, a component of Node.js by running:
     ```no-highlight
     npm i -g tfx-cli
     ```

@@ -16,12 +16,12 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Members
 
-* `blocksCovered`: number.
+- `blocksCovered`: number.
 
-* `blocksNotCovered`: number.
+- `blocksNotCovered`: number.
 
-* `linesCovered`: number.
+- `linesCovered`: number.
 
-* `linesNotCovered`: number.
+- `linesNotCovered`: number.
 
-* `linesPartiallyCovered`: number.
+- `linesPartiallyCovered`: number.

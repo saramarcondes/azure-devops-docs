@@ -35,11 +35,11 @@ The Status on All Iterations report presents a snapshot of work that the team ac
 
 For each iteration that is defined for the product areas that you specify, this report displays the following information:
 
-* **Stories Closed**: The number of user stories that have been closed. These values are derived from the current values specified for the iteration and the state of each user story.
+- **Stories Closed**: The number of user stories that have been closed. These values are derived from the current values specified for the iteration and the state of each user story.
 
-* **Progress (Hours)**: A two-bar numeric and visual representation that represents the values for **Original Estimate** (grey), **Completed** (green) and **Remaining** (light blue) based on the rollup of hours that are defined for all tasks. These values are derived from the current values that are specified for the iteration and the hours for each task.
+- **Progress (Hours)**: A two-bar numeric and visual representation that represents the values for **Original Estimate** (grey), **Completed** (green) and **Remaining** (light blue) based on the rollup of hours that are defined for all tasks. These values are derived from the current values that are specified for the iteration and the hours for each task.
 
-* **Bugs**: A numeric value and visual representation for all bugs, grouped by their current states of **Active** (blue), **Resolved** (gold) and **Closed** (green). These values are derived from the current values that are specified for the iteration and the state of each bug.
+- **Bugs**: A numeric value and visual representation for all bugs, grouped by their current states of **Active** (blue), **Resolved** (gold) and **Closed** (green). These values are derived from the current values that are specified for the iteration and the state of each bug.
 
   In addition, you can choose an iteration to access the Burndown and Burn Rate report for that iteration. For more information, see [Burndown and Burn Rate](burndown-and-burn-rate-report.md).
 
@@ -47,17 +47,17 @@ For each iteration that is defined for the product areas that you specify, this 
 
 For the Status on All Iterations report to be useful and accurate, the team must perform the following activities for tracking work items:
 
-* Define user stories, tasks, and bugs, and specify the **Iteration** and **Area** paths for each.
+- Define user stories, tasks, and bugs, and specify the **Iteration** and **Area** paths for each.
 
   > [!NOTE]
   > For information about how to define iteration and area paths, see [Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) .
 
-* Specify the **Original Estimate**, **Completed**, and **Remaining** fields for each task or subtask, and update the **Completed** and **Remaining** fields during the iteration.
+- Specify the **Original Estimate**, **Completed**, and **Remaining** fields for each task or subtask, and update the **Completed** and **Remaining** fields during the iteration.
 
   > [!IMPORTANT]
   > If you subdivide a task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent task and the user story. For more information, see [Address inaccuracies published for summary values](address-inaccuracies-published-for-summary-values.md).
 
-* Update the **State** of each story, task, and bug as it progresses from active to closed.
+- Update the **State** of each story, task, and bug as it progresses from active to closed.
 
 ## <a name="Interpreting"></a> Interpret the report
 
@@ -67,13 +67,13 @@ The Status on All Iterations report shows work progress across iterations that a
 
 You can review the report to determine how many stories are ready to release and to better understand the rate of the team's progress. For example, you can find answers to the following questions:
 
-* Did the scope of work for each iteration closely match the team capacity?
+- Did the scope of work for each iteration closely match the team capacity?
 
-* Does the number of stories closed in each iteration correspond to your expectations?
+- Does the number of stories closed in each iteration correspond to your expectations?
 
-* Is the team resolving and closing more bugs with successive iterations?
+- Is the team resolving and closing more bugs with successive iterations?
 
-* How many stories can the team ship today?
+- How many stories can the team ship today?
 
 ### Healthy version of report
 
@@ -85,19 +85,19 @@ A healthy Status on All Iterations report shows more progress with each successi
 
 An unhealthy Status on All Iterations report might show one or more of the following indicators:
 
-* **No stories were closed in one or more iterations**.
+- **No stories were closed in one or more iterations**.
 
   You might want to review the story size and determine whether the team can define smaller stories.
 
-* **The number of estimated and completed hours vary widely within or across iterations**.
+- **The number of estimated and completed hours vary widely within or across iterations**.
 
   You might want to review how well you are sizing your stories and how well the team is estimating work. When the estimated and completed hours match closely within an iteration, it indicates that the team is well positioned to progress at a known rate.
 
-* **Inconsistent progress made across past iterations**.
+- **Inconsistent progress made across past iterations**.
 
   You might want to determine whether any blocking issues have not been identified or tracked.
 
-* **Number of bugs being found is not increasing with each successive iteration**.
+- **Number of bugs being found is not increasing with each successive iteration**.
 
   ![Unhealthy version of Status on All Iterations](media/procguid_unhealthy.png "ProcGuid_Unhealthy")  
   Unhealthy Version of a Status on All Iterations Report
@@ -106,7 +106,7 @@ An unhealthy Status on All Iterations report might show one or more of the follo
 
 You can filter the Status on All Iterations report to show progress only for product areas that you specify.
 
-* In the **Area** list, select the check box of each product area to include, and then choose **View Report**.
+- In the **Area** list, select the check box of each product area to include, and then choose **View Report**.
 
 ## Related notes
 

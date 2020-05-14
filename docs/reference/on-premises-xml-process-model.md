@@ -184,20 +184,20 @@ In addition, changes you make to WITs or the workflow could require updates to o
 
 You should avoid making the following customizations because they can result in schema conflicts in the data warehouse or cause problems when updating projects after a TFS upgrade.
 
-* Fields:
-  * Change the friendly name of a field (a field specified within a WIT definition file)
-  * Change one or more reporting attributes, or the attribute to synchronize person names with Active Directory of a default field
-* WITs: Rename or delete WITs
-* Categories: Change the name of default categories, or change the WITs specified within default categories
+- Fields:
+  - Change the friendly name of a field (a field specified within a WIT definition file)
+  - Change one or more reporting attributes, or the attribute to synchronize person names with Active Directory of a default field
+- WITs: Rename or delete WITs
+- Categories: Change the name of default categories, or change the WITs specified within default categories
 
 To learn more about reporting attributes, see [Add or modify work item fields to support reporting](xml/add-or-modify-work-item-fields-to-support-reporting.md).
 
 ### Recommended practices
 
-* Identify the best options for customizing WITs that support your tracking requirements. When you change objects that track work items, you should identify how these changes will affect existing and future projects.
-* Put processes and all XML definition files under version control. Do not deploy objects that you define but have not stored in a repository.
-* Test your customized objects just as you would test your software.
-* Minimize the number of custom fields that you introduce. Minimize the number of fields that you make reportable.
+- Identify the best options for customizing WITs that support your tracking requirements. When you change objects that track work items, you should identify how these changes will affect existing and future projects.
+- Put processes and all XML definition files under version control. Do not deploy objects that you define but have not stored in a repository.
+- Test your customized objects just as you would test your software.
+- Minimize the number of custom fields that you introduce. Minimize the number of fields that you make reportable.
 
 ## Replace team area path with a team field
 
@@ -207,5 +207,5 @@ The default configuration for projects associates each team with an area path. I
 
 ## Related articles
 
-* [Customize work](customize-work.md)
-* [witAdmin: Customize and manage objects for tracking work](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
+- [Customize work](customize-work.md)
+- [witAdmin: Customize and manage objects for tracking work](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)

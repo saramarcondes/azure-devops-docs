@@ -69,5 +69,5 @@ Even if you have show parents turned on, the **Create query** and mail ![mail ic
 
 ## Related articles
 
-* [Backlogs, portfolios, and Agile project management](backlogs-overview.md)
-* [Workflow states and state categories](../work-items/workflow-and-state-categories.md)
+- [Backlogs, portfolios, and Agile project management](backlogs-overview.md)
+- [Workflow states and state categories](../work-items/workflow-and-state-categories.md)

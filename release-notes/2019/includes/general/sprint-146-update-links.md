@@ -2,4 +2,4 @@
 ms.topic: include
 ---
 
-* [Restore deleted projects](#restore-deleted-projects)
+- [Restore deleted projects](#restore-deleted-projects)

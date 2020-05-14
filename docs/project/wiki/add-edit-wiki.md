@@ -23,12 +23,12 @@ In this quickstart, learn how to do the following tasks:
 
 > [!div class="checklist"]
 >
-> * Open wiki
-> * Add a wiki page
-> * View revisions for a page
-> * Edit and delete wiki pages
-> * Reorder wiki pages
-> * Make a page the wiki home page
+> - Open wiki
+> - Add a wiki page
+> - View revisions for a page
+> - Edit and delete wiki pages
+> - Reorder wiki pages
+> - Make a page the wiki home page
 
 While you author pages using [Markdown format](../../reference/markdown-guidance.md), you can also use the format pane for rich-text formatting and inserting images, attachments, and links.
 
@@ -65,8 +65,8 @@ As you edit the page, save it by entering **Ctrl+S**. To save with a custom revi
 
 ## Prerequisites
 
-* You must have a provisioned wiki. If your wiki hasn't yet been created, [do that now](wiki-create-repo.md).
-* You must be a member of the team project as a contributor to add or update wiki pages.
+- You must have a provisioned wiki. If your wiki hasn't yet been created, [do that now](wiki-create-repo.md).
+- You must be a member of the team project as a contributor to add or update wiki pages.
 
 <a id="open-wiki"> </a>
 
@@ -92,12 +92,12 @@ az devops wiki page show --path
 
 ### Parameters
 
-* **--path**: Required. Path of the wiki page.
-* **--wiki**: Required. Name or ID of the wiki.
-* **--include-content**: Optional. Include content of the page.
-* **--open**: Optional. Open the wiki page in your web browser.
-* **--project -p**: Optional. Name or ID of the project.
-* **--version -v**: Optional. Version (ETag) of the wiki page.
+- **--path**: Required. Path of the wiki page.
+- **--wiki**: Required. Name or ID of the wiki.
+- **--include-content**: Optional. Include content of the page.
+- **--open**: Optional. Open the wiki page in your web browser.
+- **--project -p**: Optional. Name or ID of the project.
+- **--version -v**: Optional. Version (ETag) of the wiki page.
 
 ### Example
 
@@ -147,14 +147,14 @@ az devops wiki page create --path
 
 ### Parameters
 
-* **--path**: Required. Path of the wiki page.
-* **--wiki**: Required. Name or ID of the wiki.
-* **--comment**: Optional. Comment in the commit message of file add operation. Default value: Added a new page using Azure DevOps CLI.
-* **--content**: Optional. Content of the wiki page. Ignored if --file-path is specified.
-* **--encoding**: Optional. Encoding of the file. Used in conjunction with --file-path parameter.
+- **--path**: Required. Path of the wiki page.
+- **--wiki**: Required. Name or ID of the wiki.
+- **--comment**: Optional. Comment in the commit message of file add operation. Default value: Added a new page using Azure DevOps CLI.
+- **--content**: Optional. Content of the wiki page. Ignored if --file-path is specified.
+- **--encoding**: Optional. Encoding of the file. Used in conjunction with --file-path parameter.
   accepted values: ascii, utf-16be, utf-16le, utf-8
-* **--file-path**: Optional. Path of the file input if content is specified in the file.
-* **--project -p**: Required if not configured as default or picked up via git config. Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID.
+- **--file-path**: Optional. Path of the file input if content is specified in the file.
+- **--project -p**: Required if not configured as default or picked up via git config. Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID.
 
 ### Examples
 
@@ -232,13 +232,13 @@ az devops wiki page update --path
 
 ### Parameters
 
-* **--path**: Required. Path of the wiki page.
-* **--version -v**: Required. Version (ETag) of file to edit.
-* **--wiki**: Required. Name of ID of the wiki.
-* **--comment**: Optional. Comment in the commit message of delete operation.
-* **--file-path**: Optional. Path of the file input if content is specified in the file.
-* **--project -p**: Optional. Name or ID of the project.
-* **--subscription**: Optional. Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+- **--path**: Required. Path of the wiki page.
+- **--version -v**: Required. Version (ETag) of file to edit.
+- **--wiki**: Required. Name of ID of the wiki.
+- **--comment**: Optional. Comment in the commit message of delete operation.
+- **--file-path**: Optional. Path of the file input if content is specified in the file.
+- **--project -p**: Optional. Name or ID of the project.
+- **--subscription**: Optional. Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
 
 ### Examples
 
@@ -276,12 +276,12 @@ az devops wiki page delete --path
 
 ### Parameters
 
-* **--path**: Required. Path of the wiki page.
-* **--wiki**: Required. Name or ID of the wiki.
-* **--comment**: Optional. Comment in the commit message of delete operation.
-* **--project -p**: Optional. Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
-* **--subscription**: Optional. Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-* **--yes -y**: Optional. Do not prompt for confirmation.
+- **--path**: Required. Path of the wiki page.
+- **--wiki**: Required. Name or ID of the wiki.
+- **--comment**: Optional. Comment in the commit message of delete operation.
+- **--project -p**: Optional. Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
+- **--subscription**: Optional. Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+- **--yes -y**: Optional. Do not prompt for confirmation.
 
 [!INCLUDE [note-cli-not-supported](../../includes/note-cli-not-supported.md)]
 
@@ -309,8 +309,8 @@ az devops wiki page delete --path 'my wiki' --wiki 'myprojectwiki'
 
 You can reorder pages within the wiki tree view to have pages appear in the order and hierarchy you want. You can drag-and-drop a page title in the tree view to perform the following operations:
 
-* Change the parent-child relationship of a page
-* Change the order of the page within the hierarchy
+- Change the parent-child relationship of a page
+- Change the order of the page within the hierarchy
 
 > [!NOTE]  
 > Moving a page in the hierarchy may break links to it from other pages. You can always fix the links manually after you move. Reordering a page within a hierarchy has no impact on page links.

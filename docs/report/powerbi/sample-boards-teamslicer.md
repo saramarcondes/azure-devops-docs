@@ -21,7 +21,7 @@ Often Power BI reports include data from multiple teams for aggregation and comp
 > [!IMPORTANT]
 > The Team filter requires that the **"AreaSK"** field is included in the query used by the report you want to filter.
 > All of the queries provided in the sample reports already include **"AreaSK"**.
-> If you have created your own query, make sure it returns "AreaSK" in either the $select or groupby() clauses.
+> If you have created your own query, make sure it returns "AreaSK" in either the \$select or groupby() clauses.
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
@@ -61,7 +61,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v1.0/Areas?
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
-* {areapath} - Your Area Path. Example format: Project\Level1\Level2
+- {areapath} - Your Area Path. Example format: Project\Level1\Level2
 
 ### Query breakdown
 
@@ -82,18 +82,15 @@ The following table describes each part of the query.
 
 1.  Choose the expand button.
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI + OData - expanding team column](media/odatapowerbi-expandteam.png)
+    > [!div class="mx-imgBorder"] > ![Power BI + OData - expanding team column](media/odatapowerbi-expandteam.png)
 
 1.  Select the fields to flatten.
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI + OData - expanding team column](media/odatapowerbi-expandteam2.png)
+    > [!div class="mx-imgBorder"] > ![Power BI + OData - expanding team column](media/odatapowerbi-expandteam2.png)
 
 1.  Table will now contain entity field(s).
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI + OData - expanding team column](media/odatapowerbi-expandteam3.png)
+    > [!div class="mx-imgBorder"] > ![Power BI + OData - expanding team column](media/odatapowerbi-expandteam3.png)
 
 [!INCLUDE [temp](includes/sample-finish-query.md)]
 
@@ -105,8 +102,7 @@ After selecting Close & Apply, and returning to Power BI, follow these steps:
 1.  Select **Manage Relationships**
 1.  Create a relationship between your Report query and the Teams query. It is likely that Power BI will auto-detect and create the relationship for you. Here is an example of a relationship between the query in the [Open Bugs](sample-boards-openbugs.md) report and the Teams query:
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI + OData - expanding an entity column](media/odatapowerbi-timeslicer-relationships.png)
+    > [!div class="mx-imgBorder"] > ![Power BI + OData - expanding an entity column](media/odatapowerbi-timeslicer-relationships.png)
 
 ## Add the Team Filter to an existing report
 
@@ -115,8 +111,7 @@ Power BI shows you the fields you can report on.
 > [!NOTE]  
 > The example below assumes that no one renamed any columns.
 
-> [!div class="mx-imgBorder"]
-> ![Power BI + OData - expanding an entity column](media/odatapowerbi-timeslicer-fields.png)
+> [!div class="mx-imgBorder"] > ![Power BI + OData - expanding an entity column](media/odatapowerbi-timeslicer-fields.png)
 
 To add a team filter to the Power BI report, follow these steps:
 
@@ -125,8 +120,7 @@ To add a team filter to the Power BI report, follow these steps:
 
 The example below shows the [Open Bugs](sample-boards-openbugs.md) report with a Team filter added. Selecting a team in the slicer filters the results of the Open Bugs report. This will work for any report, as long as its query returns AreaSK.
 
-> [!div class="mx-imgBorder"]
-> ![Team Slicer report](media/odatapowerbi-timeslicer-report.png)
+> [!div class="mx-imgBorder"] > ![Team Slicer report](media/odatapowerbi-timeslicer-report.png)
 
 ## Additional queries
 

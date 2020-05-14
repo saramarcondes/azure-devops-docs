@@ -29,11 +29,11 @@ For information about how to access this report, see [Excel reports](excel-repor
 
 ## Prerequisites
 
-* You can view the Test Plan Progress from the Test or Quality dashboards. You can access these dashboards only if your team project portal has been enabled and is provisioned to use Microsoft Office SharePoint Server 2007. For more information, see [Configure or redirect process guidance](../../project/configure-or-redirect-process-guidance.md).
+- You can view the Test Plan Progress from the Test or Quality dashboards. You can access these dashboards only if your team project portal has been enabled and is provisioned to use Microsoft Office SharePoint Server 2007. For more information, see [Configure or redirect process guidance](../../project/configure-or-redirect-process-guidance.md).
 
-* To view the report, you must be assigned or belong to a group that has been assigned the **Read** permissions in SharePoint Products for the team project. See [Add users to team projects](../../organizations/security/add-users-team-project.md).
+- To view the report, you must be assigned or belong to a group that has been assigned the **Read** permissions in SharePoint Products for the team project. See [Add users to team projects](../../organizations/security/add-users-team-project.md).
 
-* To modify or customize the report, you must be a member of the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services. You must also be assigned or belong to a group that has been assigned the **Members** permissions in SharePoint Products for the team project. For more information, see [Grant Access to the Databases of the Data Warehouse for Team System](../admin/grant-permissions-to-reports.md).
+- To modify or customize the report, you must be a member of the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services. You must also be assigned or belong to a group that has been assigned the **Members** permissions in SharePoint Products for the team project. For more information, see [Grant Access to the Databases of the Data Warehouse for Team System](../admin/grant-permissions-to-reports.md).
 
 <a name="Data"></a>
 
@@ -51,16 +51,16 @@ The chart is based on a PivotTable report from data that is stored in the data w
 
 For the Test Plan Progress report to be useful and accurate, the team must perform the following activities:
 
-* [Define test plans, and assign test cases to test plans](../../test/create-test-cases.md).
+- [Define test plans, and assign test cases to test plans](../../test/create-test-cases.md).
 
-* For manual tests, mark the results of each validation step in the test case as passed or failed.
+- For manual tests, mark the results of each validation step in the test case as passed or failed.
 
   > [!IMPORTANT]
   > Testers must mark a test step with a status if it is a validation test step. The overall result for a test case reflects the status of all the test steps that were marked. Therefore, the test case will have a status of failed if any test step is marked as failed or not marked.
 
   For automated tests, each test is automatically marked as passed or failed.
 
-* (Optional) To support filtering, assign **Iteration** and **Area** paths to each test case.
+- (Optional) To support filtering, assign **Iteration** and **Area** paths to each test case.
 
 <a name="Interpreting"></a>
 
@@ -68,13 +68,13 @@ For the Test Plan Progress report to be useful and accurate, the team must perfo
 
 You should expect the Test Plan Progress report to vary depending on where you are in your product development cycle. Early iterations should show a gradual increase in the number of test cases that pass. The team can review the report to find answers to the following questions:
 
-* How many tests are passing?
-* How many tests are failing?
-* How many tests are blocked?
-* How many tests have never run?
-* What percentage of tests are passing across all test plans?
-* How much testing has the team completed?
-* Is the team likely to finish the testing on time?
+- How many tests are passing?
+- How many tests are failing?
+- How many tests are blocked?
+- How many tests have never run?
+- What percentage of tests are passing across all test plans?
+- How much testing has the team completed?
+- Is the team likely to finish the testing on time?
 
 An ideal trend would show a steady increase in the number of **Passed** tests and a steady decrease in the number of **Failed**, **Never Run**, or **Blocked** tests. For information about healthy and unhealthy versions of the report, see [Test Plan Progress](../sql-reports/test-plan-progress-report.md).
 
@@ -92,13 +92,13 @@ You can update the Test Plan Progress report by opening it in Office Excel and c
 
 For more information about how to work with and customize PivotTable and PivotChart reports, see the following pages on the Microsoft Web site:
 
-* [Ways to customize PivotTable reports](https://go.microsoft.com/fwlink/?LinkId=165722)
+- [Ways to customize PivotTable reports](https://go.microsoft.com/fwlink/?LinkId=165722)
 
-* [Edit or remove a workbook from Excel Services](https://go.microsoft.com/fwlink/?LinkId=165723)
+- [Edit or remove a workbook from Excel Services](https://go.microsoft.com/fwlink/?LinkId=165723)
 
-* [Publish a workbook to Excel Services](https://go.microsoft.com/fwlink/?LinkId=165724)
+- [Publish a workbook to Excel Services](https://go.microsoft.com/fwlink/?LinkId=165724)
 
-* [Save a file to a SharePoint library or another Web location](https://go.microsoft.com/fwlink/?LinkId=165725)
+- [Save a file to a SharePoint library or another Web location](https://go.microsoft.com/fwlink/?LinkId=165725)
 
 ## Related notes
 

@@ -17,13 +17,13 @@ ms.date: 04/18/2019
 
 Package Search is automatically available to users of Azure DevOps Services. By using Package Search you can:
 
-* **Search package by title and description**: You can quickly and easily find relevant packages by using
+- **Search package by title and description**: You can quickly and easily find relevant packages by using
   free text search on title and description.
   You can also narrow your search by using Boolean operators and combine search criteria.
 
 > [!div class="mx-imgBorder"][web portal package search](media/shared/pkg-srch-u2.png)
 
-* **Search across all of your organization feeds**:
+- **Search across all of your organization feeds**:
   Search in your and your team's feeds across the organization. Narrow your search by using feed, view
   and package type filters. Use wildcards to widen your search and
   Boolean operators to fine-tune it.
@@ -57,12 +57,12 @@ words you entered.
 
 For example:
 
-* `xml AND parser` finds packages that contain both the words **xml** and
+- `xml AND parser` finds packages that contain both the words **xml** and
   **parser**. Note that `AND` is the default operator, and so this is equivalent to
   the search string `xml parser`.
-* `xml OR parser` finds packages that contain either of the words **xml** or **parser**.
-* `xml NOT parser` finds packages that contain the word **xml** but not the word **parser**.
-* `(xml NOT parser)` OR `lib` finds packages that contain the word **xml**
+- `xml OR parser` finds packages that contain either of the words **xml** or **parser**.
+- `xml NOT parser` finds packages that contain the word **xml** but not the word **parser**.
+- `(xml NOT parser)` OR `lib` finds packages that contain the word **xml**
   but not the word **parser** or packages that contain the word **lib**.
 
 ## Broaden your search by using wildcards
@@ -70,10 +70,10 @@ For example:
 Use the wildcard character `*` and `?` to broaden your search criteria. For
 example:
 
-* `xmlparser*` finds packages containing words that start with **xmlparser**,
+- `xmlparser*` finds packages containing words that start with **xmlparser**,
   such as **xmlparsersdk** and **xmlparserlib**.
 
-* `mypackage?` finds packages containing words that start with **mypackage** and have any one alphanumeric
+- `mypackage?` finds packages containing words that start with **mypackage** and have any one alphanumeric
   character next, such as **mypackage1**, **mypackage2** and **mypackage3**
 
 You can use more than one wildcard to match more than one character.
@@ -85,6 +85,6 @@ to perform a _phrase search_. For example, `"package for markup files"`.
 
 Within a phrase:
 
-* Boolean operators are treated as literal text.
+- Boolean operators are treated as literal text.
 
 [!INCLUDE [shared-got-feedback](includes/shared-got-feedback.md)]

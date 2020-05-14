@@ -27,7 +27,7 @@ and it should target the `ms.vss-work-web.work-item-form` contribution.
 
 ```json
 "contributions": [
-    {  
+    {
         "id": "sample-work-item-form-control",
         "type": "ms.vss-work-web.work-item-form-control",
         "description": "Custom work item form control",
@@ -88,31 +88,31 @@ To define the inputs for your control contribution, use `inputs` property in the
 
 These properties define a user input that the contribution can use:
 
-* **id** - A unique id for the input.
-* **description** - A few sentences describing the input.
-* **type (optional)** - The type of input. Only supported on Azure DevOps Services and TFS 15 RC2 and later.
-  * Valid values:
-    * `WorkItemField` - Indicates that the input is a Work Item field. This means that the value provided by the user for this input should be a valid work item field's reference name.
-* **properties (optional)** - Custom properties for the input. Only supported on Azure DevOps Services and TFS 15 RTM.
-  * Valid keys:
-    * `workItemFieldTypes` - Defines an array of field types that this input supports. Valid values are -
-      * `String`
-      * `Integer`
-      * `Double`
-      * `HTML`
-      * `PlainText`
-      * `Boolean`
-      * `Guid`
-      * `DateTime`
-      * `TreePath`
-* **validation** - A set of properties that defines which values are considered valid for the input.
-  * Valid keys:
-    * `dataType` - Defines the data type of the input value. Valid values for this property are -
-      * `String`
-      * `Number`
-      * `Boolean`
-      * `Field` - Only supported in TFS 15 RC1 and RC2 and not in Azure DevOps Services.
-    * `isRequired` - A boolean value which indicates if the input is required to have a value or not
+- **id** - A unique id for the input.
+- **description** - A few sentences describing the input.
+- **type (optional)** - The type of input. Only supported on Azure DevOps Services and TFS 15 RC2 and later.
+  - Valid values:
+    - `WorkItemField` - Indicates that the input is a Work Item field. This means that the value provided by the user for this input should be a valid work item field's reference name.
+- **properties (optional)** - Custom properties for the input. Only supported on Azure DevOps Services and TFS 15 RTM.
+  - Valid keys:
+    - `workItemFieldTypes` - Defines an array of field types that this input supports. Valid values are -
+      - `String`
+      - `Integer`
+      - `Double`
+      - `HTML`
+      - `PlainText`
+      - `Boolean`
+      - `Guid`
+      - `DateTime`
+      - `TreePath`
+- **validation** - A set of properties that defines which values are considered valid for the input.
+  - Valid keys:
+    - `dataType` - Defines the data type of the input value. Valid values for this property are -
+      - `String`
+      - `Number`
+      - `Boolean`
+      - `Field` - Only supported in TFS 15 RC1 and RC2 and not in Azure DevOps Services.
+    - `isRequired` - A boolean value which indicates if the input is required to have a value or not
 
 ## JavaScript sample
 

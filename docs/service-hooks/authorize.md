@@ -16,16 +16,16 @@ secure access to your resources by those other services.
 With OAuth, you grant a service the authorization to access your Azure DevOps Services
 resources such as work items, source code, build results.
 
-* Authorizations are bound to your credentials,
+- Authorizations are bound to your credentials,
   so the service can use the authorization to access resources
   in any Azure DevOps Services account that you have access to.
 
-* Use your Microsoft account (like `me@live.com`) or your work account
+- Use your Microsoft account (like `me@live.com`) or your work account
   (your account in Azure AD - like `me@my-workplace.com`) to authorize the service.
 
-* The service that you authorize never has access to your Azure DevOps Services credentials.
+- The service that you authorize never has access to your Azure DevOps Services credentials.
 
-* Revoke any authorizations that you've granted to other services.
+- Revoke any authorizations that you've granted to other services.
 
 ## Authorize a service
 
@@ -50,13 +50,13 @@ A typical authorization flow might go like this:
 
 To ensure an authorization request is legitimate:
 
-* Look for the Azure DevOps Services branding across the top of the authorization approval page.
+- Look for the Azure DevOps Services branding across the top of the authorization approval page.
 
-* Ensure the authorization approval page URL begins with `https://app.vssps.visualstudio.com/`.
+- Ensure the authorization approval page URL begins with `https://app.vssps.visualstudio.com/`.
 
-* Pay attention to any HTTPS-related security warnings in your browser.
+- Pay attention to any HTTPS-related security warnings in your browser.
 
-* Remember that other services don't ask for your credentials directly. They let you provide them to Azure DevOps Services through the authorization approval page.
+- Remember that other services don't ask for your credentials directly. They let you provide them to Azure DevOps Services through the authorization approval page.
 
 ## Manage authorizations
 

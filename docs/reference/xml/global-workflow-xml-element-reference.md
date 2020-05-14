@@ -33,12 +33,12 @@ You define the global workflow by using the `GLOBALWORKFLOW` element, which supp
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <?xml version="1.0" encoding="utf-8"?>  
-> <GLOBALWORKFLOW>  
+> <?xml version="1.0" encoding="utf-8"?>
+> <GLOBALWORKFLOW>
 >       <FIELDS>
->       <FIELD> . . . </FIELD>  
->       </FIELDS>  
-> </GLOBALWORKFLOW>  
+>       <FIELD> . . . </FIELD>
+>       </FIELDS>
+> </GLOBALWORKFLOW>
 > ```
 
 **Specify GLOBALLISTS**:
@@ -46,12 +46,12 @@ You define the global workflow by using the `GLOBALWORKFLOW` element, which supp
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <?xml version="1.0" encoding="utf-8"?>  
-> <GLOBALWORKFLOW>  
+> <?xml version="1.0" encoding="utf-8"?>
+> <GLOBALWORKFLOW>
 >       <GLOBALLISTS>
->       <GLOBALLIST> . . . </GLOBALLIST>  
->       </GLOBALLISTS>  
-> </GLOBALWORKFLOW>  
+>       <GLOBALLIST> . . . </GLOBALLIST>
+>       </GLOBALLISTS>
+> </GLOBALWORKFLOW>
 > ```
 
 <a name="FIELD"></a>
@@ -66,28 +66,28 @@ You use the following syntax to define the data fields within a global workflow.
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <FIELD name="fieldDisplayName" refname="fieldReferenceName" type="String | Integer | Double | DateTime | PlainText | HTML | History | TreePath | GUID "  
-> syncnamechanges="true | false" reportingname="reportingDisplayName" reportingrefname="reportingReferenceName"  
-> reportable="Dimension | Detail | Measure" formula="avg" >  
->       <ALLOWEDVALUES> . . . </ALLOWEDVALUES>  
->       <ALLOWEXISTINGVALUE />  
->       <CANNOTLOSEVALUE />  
->       <COPY />  
->       <DEFAULT />  
->       <EMPTY />  
->       <FROZEN />      <MATCH />  
->       <NOTSAMEAS />  
->       <PROHIBITEDVALUES /> . . . </PROHIBITEDVALUES>  
->       <READONLY />  
->       <REQUIRED />  
->       <SERVERDEFAULT />  
->       <SUGGESTEDVALUES /> . . . </SUGGESTEDVALUES>  
->       <VALIDUSER />  
->       <WHEN>> . . . </WHEN>  
->       <WHENNOT> . . . </WHENNOT>  
->       <WHENCHANGED> . . . </WHENCHANGED>  
->       <WHENNOTCHANGED> . . . </WHENNOTCHANGED>  
-> </FIELD>  
+> <FIELD name="fieldDisplayName" refname="fieldReferenceName" type="String | Integer | Double | DateTime | PlainText | HTML | History | TreePath | GUID "
+> syncnamechanges="true | false" reportingname="reportingDisplayName" reportingrefname="reportingReferenceName"
+> reportable="Dimension | Detail | Measure" formula="avg" >
+>       <ALLOWEDVALUES> . . . </ALLOWEDVALUES>
+>       <ALLOWEXISTINGVALUE />
+>       <CANNOTLOSEVALUE />
+>       <COPY />
+>       <DEFAULT />
+>       <EMPTY />
+>       <FROZEN />      <MATCH />
+>       <NOTSAMEAS />
+>       <PROHIBITEDVALUES /> . . . </PROHIBITEDVALUES>
+>       <READONLY />
+>       <REQUIRED />
+>       <SERVERDEFAULT />
+>       <SUGGESTEDVALUES /> . . . </SUGGESTEDVALUES>
+>       <VALIDUSER />
+>       <WHEN>> . . . </WHEN>
+>       <WHENNOT> . . . </WHENNOT>
+>       <WHENCHANGED> . . . </WHENCHANGED>
+>       <WHENNOTCHANGED> . . . </WHENNOTCHANGED>
+> </FIELD>
 > ```
 
 <a name="LISTElements"></a>
@@ -103,5 +103,5 @@ The following table describes the **GLOBALLIST** and **LISTITEM** elements. You 
 
 ## Related articles
 
-* [FIELD (Definition) element reference](field-definition-element-reference.md)
-* [Customize your work tracking experience](../customize-work.md)
+- [FIELD (Definition) element reference](field-definition-element-reference.md)
+- [Customize your work tracking experience](../customize-work.md)

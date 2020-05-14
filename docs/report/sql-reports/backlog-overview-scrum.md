@@ -27,9 +27,9 @@ Use this report to answer the following questions:
 
 **Requirements**
 
-* This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](media/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.
+- This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](media/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.
 
-* To view the report, you must be assigned or belong to a group that has been assigned a **Browser** or **Content Manager** role in Reporting Services. For more information, see [Grant permissions to view or create reports in TFS](../admin/grant-permissions-to-reports.md).
+- To view the report, you must be assigned or belong to a group that has been assigned a **Browser** or **Content Manager** role in Reporting Services. For more information, see [Grant permissions to view or create reports in TFS](../admin/grant-permissions-to-reports.md).
 
 ## <a name="Data"></a> Data in the report
 
@@ -49,26 +49,26 @@ An unhealthy report indicates progress on PBIs that have a lower rank than on PB
 
 The report lists and highlights PBIs according to the following criteria:
 
-* PBIs appear in order of their importance, based on their assigned ranking (Backlog Priority field).
+- PBIs appear in order of their importance, based on their assigned ranking (Backlog Priority field).
 
-* PBIs appear in bold type when they are in the New, Approved, or Committed states.
+- PBIs appear in bold type when they are in the New, Approved, or Committed states.
 
-* PBIs appear in normal type when they are in the Done state.
+- PBIs appear in normal type when they are in the Done state.
 
-* PBIs appear in gray type when their assigned iteration or area is outside the filtered set, but they have tasks or child PBIs that are within the filtered set of iterations or product areas.
+- PBIs appear in gray type when their assigned iteration or area is outside the filtered set, but they have tasks or child PBIs that are within the filtered set of iterations or product areas.
 
 ### Required activities to track the backlog
 
 To populate the report with useful data, the team performs the following activities:
 
-* Define PBIs and tasks. Make sure that tasks are linked to their parent PBIs through a **Child** link. Also, create a **Child** link from any subtasks to its parent task. For more information, see [Define the tasks required to implement PBIs and bugs](https://msdn.microsoft.com/34c866ea-a130-4371-bfc4-a3d9f87dccca).
+- Define PBIs and tasks. Make sure that tasks are linked to their parent PBIs through a **Child** link. Also, create a **Child** link from any subtasks to its parent task. For more information, see [Define the tasks required to implement PBIs and bugs](https://msdn.microsoft.com/34c866ea-a130-4371-bfc4-a3d9f87dccca).
 
   If you subdivide a task into subtasks, specify hours only for the subtasks. Hours are roll up as summary values for the parent task and PBI.
 
-* Define and update the **State** and **Remaining** fields for each task or subtask during the iteration or release.
+- Define and update the **State** and **Remaining** fields for each task or subtask during the iteration or release.
 
-* Define test cases and link test cases to their parent PBIs using the **Tested By** link. See [Create your tests](../../test/create-test-cases.md).
+- Define test cases and link test cases to their parent PBIs using the **Tested By** link. See [Create your tests](../../test/create-test-cases.md).
 
-* Specify the **Iteration** and **Area** paths for each PBI, task, and test case.
+- Specify the **Iteration** and **Area** paths for each PBI, task, and test case.
 
   For information about how to define iteration and area paths, see [Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) .

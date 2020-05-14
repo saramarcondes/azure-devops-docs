@@ -81,7 +81,7 @@ You can add fields and specify the group and page where they should appear. Also
 
 1.  (Optional) On the <strong>Options</strong> tab, indicate if the field is required and specify a default value. Or leave the values blank. By making a field **Required**, users must specify a value for the field to save the work item. When you create a work item as well as every time someone opens a work item and the field is empty, the default value is set.
 
-    <img src="media/process/cpfield-bug-customer-ticket-options.png" alt="Add a field to Use story, specify options" style="border: 1px solid #C3C3C3;" />  
+    <img src="media/process/cpfield-bug-customer-ticket-options.png" alt="Add a field to Use story, specify options" style="border: 1px solid #C3C3C3;" />
 
     <a id="layout"> </a>
 
@@ -89,7 +89,7 @@ You can add fields and specify the group and page where they should appear. Also
 
     Here, we add the Customer Ticket field to a new group labeled Customer focus.
 
-    <img src="media/process/cpfield-customer-ticket-layout.png" alt="Add a field to Use story, specify layout" style="border: 1px solid #C3C3C3;" />  
+    <img src="media/process/cpfield-customer-ticket-layout.png" alt="Add a field to Use story, specify layout" style="border: 1px solid #C3C3C3;" />
 
     > [!NOTE]  
     > While you can change the form label, you must use the field name whyou areen adding fields to cards ([Kanban](../../../boards/boards/customize-cards.md#fields), [task board](../../../boards/sprints/customize-taskboard.md)) or [creating queries](../../../boards/queries/using-queries.md) based on the field.
@@ -115,7 +115,7 @@ You can add a new field and define a pick list or customize the pick list of an 
 
 1.  Start by choosing ![add new field icon](media/process/new-field-icon.png) <strong>New field</strong>, then specify the picklist type&mdash;integer or string&mdash;and then add the items to appear in the picklist. You can simply add an item and then press **Enter** to add another item.
 
-    <img src="media/process/add-a-field-pick-list-up1.png" alt="Add a custom picklist" style="border: 1px solid #C3C3C3;" />  
+    <img src="media/process/add-a-field-pick-list-up1.png" alt="Add a custom picklist" style="border: 1px solid #C3C3C3;" />
 
     To delete an item in the list, highlight the item and then click the ![Delete icon](../../../media/icons/delete_icon.png) delete icon.
 
@@ -129,7 +129,7 @@ You can add a new field and define a pick list or customize the pick list of an 
 
 2.  (Optional) Choose the <strong>Options</strong> tab to define the field as required, specify a default, or allow users to enter their own values.
 
-    <img src="media/process/add-a-field-pick-list-options.png" alt="Allow values in a custom picklist" style="border: 1px solid #C3C3C3;" />  
+    <img src="media/process/add-a-field-pick-list-options.png" alt="Allow values in a custom picklist" style="border: 1px solid #C3C3C3;" />
 
 3.  (Optional) See previous [step 5](#layout) to specify where you want the field to appear on the form (<strong>Layout</strong> tab).
 
@@ -274,16 +274,16 @@ Deleting a field deletes all data associated with that field, including historic
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
-* [Add or modify a custom work item type](customize-process-wit.md)
-* [Customize the web layout](customize-process-form.md)
-* [Customize a project using an inherited process](customize-process.md)
-* [Customize cards on boards](../../../boards/boards/customize-cards.md)
-* [Show bugs on backlogs and boards](../show-bugs-on-backlog.md)
+- [Add or modify a custom work item type](customize-process-wit.md)
+- [Customize the web layout](customize-process-form.md)
+- [Customize a project using an inherited process](customize-process.md)
+- [Customize cards on boards](../../../boards/boards/customize-cards.md)
+- [Show bugs on backlogs and boards](../show-bugs-on-backlog.md)
 
 If you're working with test plans or test cases, see these articles:
 
-* [Create a test plan](../../../manual-test/getting-started/create-a-test-plan.md)
-* [Create manual test cases](../../../manual-test/getting-started/create-test-cases.md)
+- [Create a test plan](../../../manual-test/getting-started/create-a-test-plan.md)
+- [Create manual test cases](../../../manual-test/getting-started/create-test-cases.md)
 
 <!---
 Commenting this out as it is in the process of changing
@@ -291,7 +291,7 @@ Commenting this out as it is in the process of changing
 
 The reference name for any new field you add is prefixed with the name of the inherited process for which it was created. For example, if you add Custom 1 field to MyAgile process, the reference name  is `MyAgile.Custom1`. If you add Custom 2 field to MyAgile-Copy process, the reference name assigned to it is `MyAgile-Copy.Custom2`.
 
-By adding all customizations to the same base inherited process, you simplify the naming conventions that get applied to a custom fields. This is useful particularly when REST APIs are employed.  
+By adding all customizations to the same base inherited process, you simplify the naming conventions that get applied to a custom fields. This is useful particularly when REST APIs are employed.
 
 Each ![locked icon](media/process/locked-icon.png) system process&mdash;[Agile](../../../boards/work-items/guidance/agile-process.md), [Scrum](../../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../../boards/work-items/guidance/cmmi-process.md)&mdash;contains 100 or more work item fields.
 

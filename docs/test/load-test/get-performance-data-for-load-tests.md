@@ -37,7 +37,7 @@ is causing performance problems.
 1.  Sign in to Azure DevOps from your web browser to refresh the Azure Resources Manager access token.
     The token is valid for 12 hours in the context of Azure DevOps.
 
-    * If you have already signed, you must sign out and then sign in again.<p />
+    - If you have already signed, you must sign out and then sign in again.<p />
 
 1.  [Set up your load test project to run in the cloud](getting-started-with-performance-testing.md#LoadTestVSIDE),
     if you haven't already done so.
@@ -78,11 +78,11 @@ is causing performance problems.
 
 ## See also
 
-* [FAQs for load testing](reference-qa.md#qaappinsights)
-* [Load test with Visual Studio](getting-started-with-performance-testing.md)
-* [Load test with Azure DevOps](get-started-simple-cloud-load-test.md)
-* [Load test with Azure portal](app-service-web-app-performance-test.md)
-* [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md)
-* [Analyze load test results using the Load Test Analyzer](/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
+- [FAQs for load testing](reference-qa.md#qaappinsights)
+- [Load test with Visual Studio](getting-started-with-performance-testing.md)
+- [Load test with Azure DevOps](get-started-simple-cloud-load-test.md)
+- [Load test with Azure portal](app-service-web-app-performance-test.md)
+- [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md)
+- [Analyze load test results using the Load Test Analyzer](/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
 
 [!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)]

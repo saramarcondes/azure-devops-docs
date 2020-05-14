@@ -18,4 +18,4 @@ Extends: [Deployment](./Deployment.md)
 
 ### Members
 
-* `buildId`: number.
+- `buildId`: number.

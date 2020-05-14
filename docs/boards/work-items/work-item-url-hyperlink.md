@@ -19,12 +19,12 @@ You can define the URL for a work item using the syntax provided based on the ve
 
 Examples in this article use the following conventions:
 
-* _OrganizationName_ specifies the name of the Azure Boards organization
-* _ServerName_ specifies the name of the TFS application tier server
-* _Port_ specifies the port, default=8080
-* _CollectionName_ specifies the name of the project collection.
-* _TeamProjectName_ specifies the project name
-* _WorkItemNumber_ specifies the ID of the bug, task, or other work item.
+- _OrganizationName_ specifies the name of the Azure Boards organization
+- _ServerName_ specifies the name of the TFS application tier server
+- _Port_ specifies the port, default=8080
+- _CollectionName_ specifies the name of the project collection.
+- _TeamProjectName_ specifies the project name
+- _WorkItemNumber_ specifies the ID of the bug, task, or other work item.
 
 ::: moniker range="azure-devops"
 

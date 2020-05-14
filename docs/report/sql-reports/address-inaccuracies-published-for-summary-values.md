@@ -43,9 +43,9 @@ To perform this procedure, you must be a member of the **Contributors** group or
 
 6.  In the Excel document, for the area and iteration paths that you are managing, clear the values in the following three columns:
 
-    * **Original Estimate**
-    * **Remaining Work**
-    * **Completed Work**
+    - **Original Estimate**
+    - **Remaining Work**
+    - **Completed Work**
 
 7.  (Optional) Save the Excel file.
 

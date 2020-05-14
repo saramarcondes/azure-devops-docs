@@ -20,25 +20,25 @@ Categories associate one or more WITs as belonging to the same category. The [Ag
 Here's an example of the feature and bug category entries within the Categories XML definition file:
 
 ```xml
-<CATEGORY name="Bug Category" refname="Microsoft.BugCategory">  
-    <DEFAULTWORKITEMTYPE name="Bug" />  
-  </CATEGORY>  
-  <CATEGORY name="Feature Category" refname="Microsoft.FeatureCategory">  
-    <DEFAULTWORKITEMTYPE name="Feature" />  
-  </CATEGORY>  
+<CATEGORY name="Bug Category" refname="Microsoft.BugCategory">
+    <DEFAULTWORKITEMTYPE name="Bug" />
+  </CATEGORY>
+  <CATEGORY name="Feature Category" refname="Microsoft.FeatureCategory">
+    <DEFAULTWORKITEMTYPE name="Feature" />
+  </CATEGORY>
 ```
 
 You use categories to accomplish the following operations:
 
-* To add WITs to appear on the backlog page, you add them to the Requirement Category. To add WITs to appear on the task board page, add them to the Task Category. See [Add bugs to the task board or backlog](../add-wits-to-backlogs-and-boards.md).
+- To add WITs to appear on the backlog page, you add them to the Requirement Category. To add WITs to appear on the task board page, add them to the Task Category. See [Add bugs to the task board or backlog](../add-wits-to-backlogs-and-boards.md).
 
-* To add WITs that you use in similar ways that the Bug type is used, add them to the Bug Category. See [Support bug update status using My Work](support-bug-update-status-using-my-work.md).
+- To add WITs that you use in similar ways that the Bug type is used, add them to the Bug Category. See [Support bug update status using My Work](support-bug-update-status-using-my-work.md).
 
-* To support portfolio backlogs. A category is defined for each WIT that supports a portfolio backlog, such as the Feature Category and Epic Category. See [Add a backlog to Agile portfolio management](../add-portfolio-backlogs.md).
+- To support portfolio backlogs. A category is defined for each WIT that supports a portfolio backlog, such as the Feature Category and Epic Category. See [Add a backlog to Agile portfolio management](../add-portfolio-backlogs.md).
 
-* To prevent users from creating WITs that should be created through a form or a tool, and not manually, add them to the [Hidden Types Category](#hiddentypes).
+- To prevent users from creating WITs that should be created through a form or a tool, and not manually, add them to the [Hidden Types Category](#hiddentypes).
 
-* To query for different WITs that have different names based on locale, assign them to the same category and use the **In Group** operator.
+- To query for different WITs that have different names based on locale, assign them to the same category and use the **In Group** operator.
 
 <a name="process"></a>
 
@@ -46,19 +46,19 @@ You use categories to accomplish the following operations:
 
 Process configuration references the default categories defined for a project. Here are the default categories that are defined in the [default process template](../../boards/work-items/guidance/choose-process.md):
 
-* Bug Category
-* Code Review Request Category and Code Review Response Category
-* Epic Category (Controls which WITs appear on the Epic portfolio backlog and Kanban board)
-* Feature Category (Controls which WITs appear on the Feature portfolio backlog and Kanban board)
-* Feedback Request Category and Feedback Response Category
-* Requirement Category (Controls which WITs appear on the product backlog, sprint backlogs, and Kanban board)
-* Shared Step Category
-* Shared Parameter Category
-* Task Category (Controls which WITs appear on the task board)
-* Test Case Category
-* Test Plan Category
-* Test Suite Category
-* Hidden Types Category
+- Bug Category
+- Code Review Request Category and Code Review Response Category
+- Epic Category (Controls which WITs appear on the Epic portfolio backlog and Kanban board)
+- Feature Category (Controls which WITs appear on the Feature portfolio backlog and Kanban board)
+- Feedback Request Category and Feedback Response Category
+- Requirement Category (Controls which WITs appear on the product backlog, sprint backlogs, and Kanban board)
+- Shared Step Category
+- Shared Parameter Category
+- Task Category (Controls which WITs appear on the task board)
+- Test Case Category
+- Test Plan Category
+- Test Suite Category
+- Hidden Types Category
 
 Most of these categories are self-explanatory, and mostly contain one WIT within the category. The exception to this rule is the Hidden Types Category.
 
@@ -70,26 +70,26 @@ If you have created WITs that act in similar ways and you want to treat them in 
 
 The Hidden Types Category specifies the set of WITs that you do not want users to create manually. By default this set includes:
 
-* [Code Review Request and Code Review Response](../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)
-* [Feedback Request and Feedback Response](../../project/feedback/get-feedback.md)
-* [Shared Steps and Shared Parameter](../../test/create-test-cases.md)
-* [Test Plan and Test Suite](../../test/create-a-test-plan.md)
+- [Code Review Request and Code Review Response](../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)
+- [Feedback Request and Feedback Response](../../project/feedback/get-feedback.md)
+- [Shared Steps and Shared Parameter](../../test/create-test-cases.md)
+- [Test Plan and Test Suite](../../test/create-a-test-plan.md)
 
 ### Process configuration
 
 Process configuration defines the layout and fields used in the display of the product backlog, sprint backlogs, and portfolio backlogs. You view these pages through the web portal. Process configuration uses categories to [configure and customize these functions](process-configuration-xml-element.md). Also, note the following restrictions:
 
-* To use the backlog and task boards, you must assign at least one WIT to the Requirement Category and one WIT to the Task Category.
-* You cannot assign the same WIT to both the Requirement Category and to the Task Category.
-* If you include more than one WIT in the Requirement Category or the Task Category, the type assigned to the `DEFAULTWORKITEMTYPE` element appears as the default type on the Agile backlog and board pages.
+- To use the backlog and task boards, you must assign at least one WIT to the Requirement Category and one WIT to the Task Category.
+- You cannot assign the same WIT to both the Requirement Category and to the Task Category.
+- If you include more than one WIT in the Requirement Category or the Task Category, the type assigned to the `DEFAULTWORKITEMTYPE` element appears as the default type on the Agile backlog and board pages.
 
-* For all WITs that you assign to a category that is referenced in the ProcessConfiguration file, you must assign the workflow states to a valid metastate as described in [Process Configuration XML element reference](process-configuration-xml-element.md).
+- For all WITs that you assign to a category that is referenced in the ProcessConfiguration file, you must assign the workflow states to a valid metastate as described in [Process Configuration XML element reference](process-configuration-xml-element.md).
 
 ## Related articles
 
-* [Categories XML element reference](categories-xml-element-reference.md)
-* [Import and export categories](../witadmin/witadmin-import-export-categories.md)
-* [Visual Studio TFS forum for Project Management and Work item tracking](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsworkitemtracking).
+- [Categories XML element reference](categories-xml-element-reference.md)
+- [Import and export categories](../witadmin/witadmin-import-export-categories.md)
+- [Visual Studio TFS forum for Project Management and Work item tracking](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsworkitemtracking).
 
 ### Category names
 

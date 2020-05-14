@@ -37,9 +37,9 @@ To use Release Management, create release definitions, in which you specify the 
 
 This Release Management update has a number of improvements over our previous version:
 
-* Manage releases from the Team Services Web UI rather than installing a desktop app.
-* Use the same agents, task model, and extensibility model as the new Build system, enabling seamless migration from continuous delivery to staged release practices.
-* It has fewer concepts and is easier to get started.
+- Manage releases from the Team Services Web UI rather than installing a desktop app.
+- Use the same agents, task model, and extensibility model as the new Build system, enabling seamless migration from continuous delivery to staged release practices.
+- It has fewer concepts and is easier to get started.
 
 For more information, and to get started, see the full documentation at [https://aka.ms/rmpreview](https://aka.ms/rmpreview).
 

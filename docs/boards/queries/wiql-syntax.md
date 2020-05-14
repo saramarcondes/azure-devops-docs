@@ -87,7 +87,7 @@ The WIQL length of queries made against Azure Boards must not exceed 32K charact
 
 <!---
 
-> [!WARNING]  
+> [!WARNING]
 > You can use a WorkItem that was returned by a query to get the value of a Field, even if the query did not return the value. If you do this, another round trip to the server will occur. For more information, see Performance Considerations.
 
 -->
@@ -121,10 +121,10 @@ OR [Closed by] = @Me )
 
 Each filter condition is composed of three parts, each of which must conform to the following rules:
 
-* **Field**: You can specify either the reference name or friendly name. The following examples are valid WIQL syntax: - Reference name with spaces: `SELECT [System.AssignedTo] ...` - Friendly name with spaces: `SELECT [Assigned To] ...` - Names without spaces don't require square brackets: `SELECT ID, Title ...`
-* **Comparison operator**: Valid values are specified in the [Operators](#operators) section later in this article. -
-* **Field value**: You can specify one of the following three values depending on the field specified.  
-   - A _literal value_ must match the data type of the field value. - A _variable or macro_ which indicates a certain value. For example, @Me indicates the person who is running the query. For more information, see [Macros and variables](#macros) later in this article. - The name of another _field_. For example, you can use `[Assigned to] = [Changed by]` to find work items that are assigned to the person who changed the work item most recently.
+- **Field**: You can specify either the reference name or friendly name. The following examples are valid WIQL syntax: - Reference name with spaces: `SELECT [System.AssignedTo] ...` - Friendly name with spaces: `SELECT [Assigned To] ...` - Names without spaces don't require square brackets: `SELECT ID, Title ...`
+- **Comparison operator**: Valid values are specified in the [Operators](#operators) section later in this article. -
+- **Field value**: You can specify one of the following three values depending on the field specified.
+  - A _literal value_ must match the data type of the field value. - A _variable or macro_ which indicates a certain value. For example, @Me indicates the person who is running the query. For more information, see [Macros and variables](#macros) later in this article. - The name of another _field_. For example, you can use `[Assigned to] = [Changed by]` to find work items that are assigned to the person who changed the work item most recently.
 
 For a description and reference names of all system-defined fields, see [Work item field index](../work-items/guidance/work-item-field.md).
 
@@ -139,7 +139,7 @@ Some simple query operations are listed below.
 > [!div class="tabbedCodeSnippets"]
 
 ```WIQL
-WHERE [System.AssignedTo] = 'joselugo'  
+WHERE [System.AssignedTo] = 'joselugo'
 WHERE [Adatum.CustomMethodology.Severity] >= 2
 ```
 
@@ -491,11 +491,11 @@ You can specify one of the following system link type names.
 You can specify one of the system link type names, listed below, or [a custom link type you've defined with the On-premises XML process](../../reference/xml/link-type-element-reference.md).
 ::: moniker-end
 
-* `System.LinkTypes.Hierarchy-Forward`
-* `System.LinkTypes.Related`
-* `System.LinkTypes.Dependency-Predecessor`
-* `System.LinkTypes.Dependency-Successor`
-* `Microsoft.VSTS.Common.Affects-Forward` (CMMI process)
+- `System.LinkTypes.Hierarchy-Forward`
+- `System.LinkTypes.Related`
+- `System.LinkTypes.Dependency-Predecessor`
+- `System.LinkTypes.Dependency-Successor`
+- `Microsoft.VSTS.Common.Affects-Forward` (CMMI process)
 
 For additional information, see [Link type reference](link-type-reference.md).
 
@@ -592,8 +592,8 @@ ORDER BY System.ID asc
 
 You specify the date-time pattern according to one of two patterns:
 
-* The Date Pattern and Time Pattern you set under your personal profile settings ([Set personal preferences](../../organizations/settings/set-your-preferences.md)).
-* The pattern specified by UTC which follows this pattern (with Z appended to the date-time):
+- The Date Pattern and Time Pattern you set under your personal profile settings ([Set personal preferences](../../organizations/settings/set-your-preferences.md)).
+- The pattern specified by UTC which follows this pattern (with Z appended to the date-time):
 
 `AND System.ChangedDate >= '1/1/2019 00:00:00Z'`
 
@@ -740,9 +740,9 @@ WHERE [Assigned To] EVER 'joselugo'
 
 ## Related articles
 
-* [Query fields, operators, values, and variables](query-operators-variables.md)
-* [Work item fields and attributes](../work-items/work-item-fields.md)
-* [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)
+- [Query fields, operators, values, and variables](query-operators-variables.md)
+- [Work item fields and attributes](../work-items/work-item-fields.md)
+- [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)
 
 <!---
 

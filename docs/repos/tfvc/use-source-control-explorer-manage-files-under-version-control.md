@@ -28,9 +28,9 @@ Use Source Control Explorer to browse file versions and work with your codebase 
 
 Source Control Explorer is available in both Visual Studio 2013 and 2015, but isn't opened by default when working with a project managed in TFVC. You can open the Source Control Explorer window:
 
-* From the Team Explorer home page (Keyboard: Ctrl + 0, H), choose **Source Control Explorer**.
+- From the Team Explorer home page (Keyboard: Ctrl + 0, H), choose **Source Control Explorer**.
 
-* From the menu bar. Select **View**, **Other Windows**, **Source Control Explorer**.
+- From the menu bar. Select **View**, **Other Windows**, **Source Control Explorer**.
 
 ![Source Control Explorer](media/use-source-control-explorer-manage-files-under-version-control/IC612245.png)
 

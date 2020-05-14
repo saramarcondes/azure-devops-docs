@@ -17,13 +17,13 @@ ms.date: 12/30/2016
 
 You can monitor Bug activity for a team project by using the Bugs dashboard, which shows the following charts:
 
-* Bug burndown
+- Bug burndown
 
-* The rate at which the team is finding, resolving, and closing Bugs over time
+- The rate at which the team is finding, resolving, and closing Bugs over time
 
-* The count of priority Bugs over time
+- The count of priority Bugs over time
 
-* The current count of active Bugs that are assigned to each team member
+- The current count of active Bugs that are assigned to each team member
 
   You access dashboards through your team project portal. You can access the Bugs dashboard only if that portal has been enabled and is provisioned to use SharePoint Server Enterprise Edition. For more information, see [Project portal dashboards](project-portal-dashboards.md).
 
@@ -60,13 +60,13 @@ For more information about how to interpret, update, or customize the charts tha
 
 For the reports that appear in the Bugs dashboard to be useful and accurate, the team must perform the following activities:
 
-* Define Bugs, and specify their **Iteration** and **Area** paths.
+- Define Bugs, and specify their **Iteration** and **Area** paths.
 
-* Assign each Bug to the team member who is working to resolve or close it.
+- Assign each Bug to the team member who is working to resolve or close it.
 
-* Specify the **Priority** of each Bug.
+- Specify the **Priority** of each Bug.
 
-* Update the **State** of each Bug as the team fixes, verifies, and closes it.
+- Update the **State** of each Bug as the team fixes, verifies, and closes it.
 
 ## <a name="Using"></a> Monitor active bugs and bug trends
 
@@ -74,13 +74,13 @@ Team members can use the Bugs dashboard to determine whether they are managing t
 
 By using the Bugs dashboard, the team can answer the following questions:
 
-* Is the number of active Bugs acceptable based on team goals? Is the team postponing too many Bugs?
+- Is the number of active Bugs acceptable based on team goals? Is the team postponing too many Bugs?
 
-* Is the team finding, fixing, and closing Bugs quickly enough to meet expectations and at a rate that matches previous development cycles?
+- Is the team finding, fixing, and closing Bugs quickly enough to meet expectations and at a rate that matches previous development cycles?
 
-* Is the team addressing high priority bugs before lower priority bugs?
+- Is the team addressing high priority bugs before lower priority bugs?
 
-* Does any team member need help in resolving bugs?
+- Does any team member need help in resolving bugs?
 
 ### <a name="Progress"></a> Bug progress indicators
 

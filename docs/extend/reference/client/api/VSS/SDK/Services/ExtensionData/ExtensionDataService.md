@@ -21,17 +21,17 @@ Provides a wrapper around the REST client for getting and saving extension setti
 
 ## Methods
 
-* [getServiceInstance()](#method_getServiceInstance)
-* [getValue&lt;T&gt;()](#method_getValue)
-* [setValue&lt;T&gt;()](#method_setValue)
-* [getDocument()](#method_getDocument)
-* [getDocuments()](#method_getDocuments)
-* [createDocument()](#method_createDocument)
-* [setDocument()](#method_setDocument)
-* [updateDocument()](#method_updateDocument)
-* [deleteDocument()](#method_deleteDocument)
-* [queryCollectionNames()](#method_queryCollectionNames)
-* [queryCollections()](#method_queryCollections)
+- [getServiceInstance()](#method_getServiceInstance)
+- [getValue&lt;T&gt;()](#method_getValue)
+- [setValue&lt;T&gt;()](#method_setValue)
+- [getDocument()](#method_getDocument)
+- [getDocuments()](#method_getDocuments)
+- [createDocument()](#method_createDocument)
+- [setDocument()](#method_setDocument)
+- [updateDocument()](#method_updateDocument)
+- [deleteDocument()](#method_deleteDocument)
+- [queryCollectionNames()](#method_queryCollectionNames)
+- [queryCollections()](#method_queryCollections)
 
 <a name="method_getServiceInstance"></a>
 
@@ -47,14 +47,14 @@ Factory method for creating/getting an instance of the extension settings servic
 
 #### Parameters
 
-* `publisherName`: string.
-* `extensionName`: string.
-* `registrationId`: string.
-* `webContext`: [Contracts_Platform.WebContext](../../../References/SDK_Interfaces/WebContext.md). Optional.
+- `publisherName`: string.
+- `extensionName`: string.
+- `registrationId`: string.
+- `webContext`: [Contracts_Platform.WebContext](../../../References/SDK_Interfaces/WebContext.md). Optional.
 
 #### Returns
 
-* [ExtensionDataService](../../../../VSS/SDK/Services/ExtensionData/ExtensionDataService.md)
+- [ExtensionDataService](../../../../VSS/SDK/Services/ExtensionData/ExtensionDataService.md)
 
 <a name="method_getValue"></a>
 
@@ -70,12 +70,12 @@ Returns a promise for retrieving a setting at the provided key and scope
 
 #### Parameters
 
-* `key`: string.
-* `documentOptions`: [IDocumentOptions](../../../../VSS/References/VSS_SDK_Interfaces/IDocumentOptions.md). Optional.
+- `key`: string.
+- `documentOptions`: [IDocumentOptions](../../../../VSS/References/VSS_SDK_Interfaces/IDocumentOptions.md). Optional.
 
 #### Returns
 
-* [IPromise](../../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;T&gt;
+- [IPromise](../../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;T&gt;
 
 <a name="method_setValue"></a>
 
@@ -91,13 +91,13 @@ Returns a promise for saving a setting at the provided key and scope
 
 #### Parameters
 
-* `key`: string.
-* `value`: T.
-* `documentOptions`: [IDocumentOptions](../../../../VSS/References/VSS_SDK_Interfaces/IDocumentOptions.md). Optional.
+- `key`: string.
+- `value`: T.
+- `documentOptions`: [IDocumentOptions](../../../../VSS/References/VSS_SDK_Interfaces/IDocumentOptions.md). Optional.
 
 #### Returns
 
-* [IPromise](../../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;T&gt;
+- [IPromise](../../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;T&gt;
 
 <a name="method_getDocument"></a>
 
@@ -113,13 +113,13 @@ Returns a promise for getting a document with the provided ID in the provided co
 
 #### Parameters
 
-* `collectionName`: string. The name of the collection where the document lives
-* `id`: string. The ID of the document in the collection
-* `documentOptions`: [IDocumentOptions](../../../../VSS/References/VSS_SDK_Interfaces/IDocumentOptions.md). Optional. The scope in which the value is stored - default value is organization-wide
+- `collectionName`: string. The name of the collection where the document lives
+- `id`: string. The ID of the document in the collection
+- `documentOptions`: [IDocumentOptions](../../../../VSS/References/VSS_SDK_Interfaces/IDocumentOptions.md). Optional. The scope in which the value is stored - default value is organization-wide
 
 #### Returns
 
-* [IPromise](../../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;any&gt;
+- [IPromise](../../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;any&gt;
 
 <a name="method_getDocuments"></a>
 
@@ -135,12 +135,12 @@ Returns a promise for getting all of the documents in the provided collection
 
 #### Parameters
 
-* `collectionName`: string. The name of the collection where the document lives
-* `documentOptions`: [IDocumentOptions](../../../../VSS/References/VSS_SDK_Interfaces/IDocumentOptions.md). Optional. The scope in which the value is stored - default value is organization-wide
+- `collectionName`: string. The name of the collection where the document lives
+- `documentOptions`: [IDocumentOptions](../../../../VSS/References/VSS_SDK_Interfaces/IDocumentOptions.md). Optional. The scope in which the value is stored - default value is organization-wide
 
 #### Returns
 
-* [IPromise](../../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;any[]&gt;
+- [IPromise](../../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;any[]&gt;
 
 <a name="method_createDocument"></a>
 
@@ -156,13 +156,13 @@ Returns a promise for creating a document in the provided collection
 
 #### Parameters
 
-* `collectionName`: string. The name of the collection where the document lives
-* `doc`: any. The document to store
-* `documentOptions`: [IDocumentOptions](../../../../VSS/References/VSS_SDK_Interfaces/IDocumentOptions.md). Optional. The scope in which the value is stored - default value is organization-wide
+- `collectionName`: string. The name of the collection where the document lives
+- `doc`: any. The document to store
+- `documentOptions`: [IDocumentOptions](../../../../VSS/References/VSS_SDK_Interfaces/IDocumentOptions.md). Optional. The scope in which the value is stored - default value is organization-wide
 
 #### Returns
 
-* [IPromise](../../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;any&gt;
+- [IPromise](../../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;any&gt;
 
 <a name="method_setDocument"></a>
 
@@ -179,13 +179,13 @@ Creates the document if it doesn't exist, otherwise updates the existing documen
 
 #### Parameters
 
-* `collectionName`: string. The name of the collection where the document lives
-* `doc`: any. The document to store
-* `documentOptions`: [IDocumentOptions](../../../../VSS/References/VSS_SDK_Interfaces/IDocumentOptions.md). Optional. The scope in which the value is stored - default value is organization-wide
+- `collectionName`: string. The name of the collection where the document lives
+- `doc`: any. The document to store
+- `documentOptions`: [IDocumentOptions](../../../../VSS/References/VSS_SDK_Interfaces/IDocumentOptions.md). Optional. The scope in which the value is stored - default value is organization-wide
 
 #### Returns
 
-* [IPromise](../../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;any&gt;
+- [IPromise](../../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;any&gt;
 
 <a name="method_updateDocument"></a>
 
@@ -202,13 +202,13 @@ A document with the ID provided must exist
 
 #### Parameters
 
-* `collectionName`: string. The name of the collection where the document lives
-* `doc`: any. The document to store
-* `documentOptions`: [IDocumentOptions](../../../../VSS/References/VSS_SDK_Interfaces/IDocumentOptions.md). Optional. The scope in which the value is stored - default value is organization-wide
+- `collectionName`: string. The name of the collection where the document lives
+- `doc`: any. The document to store
+- `documentOptions`: [IDocumentOptions](../../../../VSS/References/VSS_SDK_Interfaces/IDocumentOptions.md). Optional. The scope in which the value is stored - default value is organization-wide
 
 #### Returns
 
-* [IPromise](../../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;any&gt;
+- [IPromise](../../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;any&gt;
 
 <a name="method_deleteDocument"></a>
 
@@ -224,13 +224,13 @@ Returns a promise for deleting the document at the provided scope, collection an
 
 #### Parameters
 
-* `collectionName`: string. The name of the collection where the document lives
-* `id`: string. The ID of the document in the collection
-* `documentOptions`: [IDocumentOptions](../../../../VSS/References/VSS_SDK_Interfaces/IDocumentOptions.md). Optional. The scope in which the value is stored - default value is organization-wide
+- `collectionName`: string. The name of the collection where the document lives
+- `id`: string. The ID of the document in the collection
+- `documentOptions`: [IDocumentOptions](../../../../VSS/References/VSS_SDK_Interfaces/IDocumentOptions.md). Optional. The scope in which the value is stored - default value is organization-wide
 
 #### Returns
 
-* [IPromise](../../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
+- [IPromise](../../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
 
 <a name="method_queryCollectionNames"></a>
 
@@ -246,11 +246,11 @@ Returns a promise for querying a set of collections
 
 #### Parameters
 
-* `collectionNames`: string[].
+- `collectionNames`: string[].
 
 #### Returns
 
-* [IPromise](../../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ExtensionManagement_Contracts.ExtensionDataCollection[]&gt;
+- [IPromise](../../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ExtensionManagement_Contracts.ExtensionDataCollection[]&gt;
 
 <a name="method_queryCollections"></a>
 
@@ -266,8 +266,8 @@ Returns a promise for querying a set of collections
 
 #### Parameters
 
-* `collections`: ExtensionManagement_Contracts.ExtensionDataCollection[]. The list of collections to query. Each collection contains its collectionName, scopeType, and scopeValue
+- `collections`: ExtensionManagement_Contracts.ExtensionDataCollection[]. The list of collections to query. Each collection contains its collectionName, scopeType, and scopeValue
 
 #### Returns
 
-* [IPromise](../../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ExtensionManagement_Contracts.ExtensionDataCollection[]&gt;
+- [IPromise](../../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ExtensionManagement_Contracts.ExtensionDataCollection[]&gt;

@@ -36,7 +36,7 @@ GET https://{instance}/DefaultCollection/{project}/{team}/_apis/work/TeamSetting
 | team | string | Name or ID of the team.
 | Query
 | api-version| string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| $timeframe | enum { current } | A filter for which iterations are returned based on relative time.
+| \$timeframe | enum { current } | A filter for which iterations are returned based on relative time.
 
 #### Sample request
 

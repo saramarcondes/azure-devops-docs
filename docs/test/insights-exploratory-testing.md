@@ -21,12 +21,12 @@ at team or individual level, and for a specific period.
 
 1.  Open the **Recent exploratory sessions** page. You can do this:
 
-    * From the Test &amp; Feedback extension by choosing the "view" icon on
+    - From the Test &amp; Feedback extension by choosing the "view" icon on
       the **Session timeline** page.
 
       ![Opening the insights page from the extension](media/insights-exploratory-testing/insights-exploratory-testing-01.png)
 
-    * From [!INCLUDE [test-hub-include](includes/test-hub-include.md)] by opening the **Runs** page and choosing **Recent exploratory sessions**.
+    - From [!INCLUDE [test-hub-include](includes/test-hub-include.md)] by opening the **Runs** page and choosing **Recent exploratory sessions**.
 
       ![Opening the insights page](media/insights-exploratory-testing/insights-exploratory-testing-02.png)
 
@@ -56,8 +56,8 @@ app from the information collected during your exploratory testing sessions.
     Use it to get insights into the overall effort and results of the
     exploratory testing sessions.
 
-    * Use the **View** filter to scope the summary view to all sessions or just your own sessions.
-    * Use the **Period** filter to scope the summary view to sessions in the period from the last 7 to the last 90 days.
+    - Use the **View** filter to scope the summary view to all sessions or just your own sessions.
+    - Use the **Period** filter to scope the summary view to sessions in the period from the last 7 to the last 90 days.
 
     ![Set the scope for the data](media/insights-exploratory-testing/insights-exploratory-testing-04.png)
 
@@ -66,11 +66,11 @@ app from the information collected during your exploratory testing sessions.
     in your exploratory testing sessions, or just on bugs, tasks, or test cases;
     and group the results in different ways.
 
-    * Use the **Pivot** filter to group the work items as a
+    - Use the **Pivot** filter to group the work items as a
       nested list based on those that have been explored,
       those that have not been explored (requires a [query](#not-explored)),
       by the session in which they were created, or by session owner.
-    * Use the **Show** filter to show all items; or just bugs, tasks, or test cases.<p />
+    - Use the **Show** filter to show all items; or just bugs, tasks, or test cases.<p />
 
     ![Pivot the data on the type of work item](media/insights-exploratory-testing/insights-exploratory-testing-06.png)
 
@@ -79,11 +79,11 @@ app from the information collected during your exploratory testing sessions.
     in Pivot view. Depending on the type of item you select,
     you see the work item as an editable form, or a series of charts.
 
-    * Select a row in Pivot view to see a summary of
+    - Select a row in Pivot view to see a summary of
       all the related information in Details view. For example, if you have pivoted the
       list based on sessions, select a session to see a
       summary of all the information from the work items in just that session.
-    * Select a child row in Pivot view to display the work item
+    - Select a child row in Pivot view to display the work item
       form for that individual item. For example, if you have pivoted
       the list based on explored work items, expand a work
       item and select a child bug, task, or test case to see
@@ -132,11 +132,11 @@ Use a query to explore the work items that users have not yet explored.
 
 ## See Also
 
-* [Use the Test &amp; Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
-* [Add findings to existing bugs with exploratory testing](add-to-bugs-exploratory-testing.md)
-* [Explore work items with exploratory testing](explore-workitems-exploratory-testing.md)
-* [Use the Test &amp; Feedback extension in Standalone mode](standalone-mode-exploratory-testing.md)
-* [Exploratory testing with Microsoft Test Manager](mtm/exploratory-testing-using-microsoft-test-manager.md)
-* [Overview of manual and exploratory testing](index.yml)
+- [Use the Test &amp; Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
+- [Add findings to existing bugs with exploratory testing](add-to-bugs-exploratory-testing.md)
+- [Explore work items with exploratory testing](explore-workitems-exploratory-testing.md)
+- [Use the Test &amp; Feedback extension in Standalone mode](standalone-mode-exploratory-testing.md)
+- [Exploratory testing with Microsoft Test Manager](mtm/exploratory-testing-using-microsoft-test-manager.md)
+- [Overview of manual and exploratory testing](index.yml)
 
 [!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

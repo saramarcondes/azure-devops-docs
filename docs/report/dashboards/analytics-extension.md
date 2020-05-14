@@ -23,9 +23,9 @@ Analytics supports access to Analytics widgets for all projects defined in the p
 
 ## Prerequisites (Azure DevOps Server 2019.1)
 
-* You must have installed and configured your Azure DevOps Server. For details, see [Install and configure Azure DevOps on-premises](/azure/devops/server/install/get-started).
-* You must have added at least one project collection. To add project collections, see [Manage project collections](/azure/devops/server/admin/manage-project-collections).
-* To enable, pause, disable, or resume Analytics, you must be a member of the [Project collection administrators](../../organizations/security/set-project-collection-level-permissions.md) group with [**Edit collection-level information** permissions](../../organizations/security/permissions.md#collection).
+- You must have installed and configured your Azure DevOps Server. For details, see [Install and configure Azure DevOps on-premises](/azure/devops/server/install/get-started).
+- You must have added at least one project collection. To add project collections, see [Manage project collections](/azure/devops/server/admin/manage-project-collections).
+- To enable, pause, disable, or resume Analytics, you must be a member of the [Project collection administrators](../../organizations/security/set-project-collection-level-permissions.md) group with [**Edit collection-level information** permissions](../../organizations/security/permissions.md#collection).
 
 <a name="enable-analytics"></a>
 
@@ -94,10 +94,10 @@ For Azure DevOps Server 2019.1, you can resume Analytics after you've paused it 
 
 Pausing Analytics (2019.1) or disabling the Analytics extension (2019), disables the following features:
 
-* [Analytics widgets](analytics-widgets.md)
-* [Analytics in-context reports, such as pipeline and test reports](overview.md)
-* [Power BI integration using Analytics views](../powerbi/what-are-analytics-views.md)
-* [OData endpoint queries](../extend-analytics/quick-ref.md)
+- [Analytics widgets](analytics-widgets.md)
+- [Analytics in-context reports, such as pipeline and test reports](overview.md)
+- [Power BI integration using Analytics views](../powerbi/what-are-analytics-views.md)
+- [OData endpoint queries](../extend-analytics/quick-ref.md)
 
 Pausing Analytics preserves your data but stops staging jobs from updating your data. You can resume the service later and your data will then be updated.
 
@@ -105,8 +105,8 @@ Disabling Analytics (2019.1) or removing the Analytics extension (2019), turns o
 
 With Analytics disabled or removed, the following actions occur:
 
-* No staging jobs are run, and the Analytics tables won't have updated information.
-* Table data is deleted, and if Analytics is re-enabled, all data will have to be repopulated from scratch.
+- No staging jobs are run, and the Analytics tables won't have updated information.
+- Table data is deleted, and if Analytics is re-enabled, all data will have to be repopulated from scratch.
 
 > [!NOTE]
 > Disabling Analytics in Azure DevOps Server 2019.1 is the same as uninstalling the Analytics extension for Azure DevOps Server 2019.
@@ -117,10 +117,10 @@ To learn more about the data tables, see [Analytics data model](../extend-analyt
 
 ## Prerequisites (Azure DevOps Server 2019)
 
-* You must have installed and configured your Azure DevOps Server. For details, see [Install and configure Azure DevOps on-premises](/azure/devops/server/install/get-started).
-* You must have added at least one project collection. To add project collections, see [Manage project collections](/azure/devops/server/admin/manage-project-collections).
-* To install an extension, you must be a member of the [Project collection administrators](../../organizations/security/set-project-collection-level-permissions.md) group with [**Edit collection-level information** permissions](../../organizations/security/permissions.md#collection) If you don't have permissions, you can [request extensions](../../marketplace/request-extensions.md) instead.
-* To upload an extension, you must be a member of the [Azure DevOps Server Administrators](/azure/devops/server/admin/add-administrator) group with [**Edit instance-level information** permissions](../../organizations/security/permissions.md#server).
+- You must have installed and configured your Azure DevOps Server. For details, see [Install and configure Azure DevOps on-premises](/azure/devops/server/install/get-started).
+- You must have added at least one project collection. To add project collections, see [Manage project collections](/azure/devops/server/admin/manage-project-collections).
+- To install an extension, you must be a member of the [Project collection administrators](../../organizations/security/set-project-collection-level-permissions.md) group with [**Edit collection-level information** permissions](../../organizations/security/permissions.md#collection) If you don't have permissions, you can [request extensions](../../marketplace/request-extensions.md) instead.
+- To upload an extension, you must be a member of the [Azure DevOps Server Administrators](/azure/devops/server/admin/add-administrator) group with [**Edit instance-level information** permissions](../../organizations/security/permissions.md#server).
 
 <a name="install-analytics"></a>
 
@@ -226,8 +226,8 @@ To resolve this issue, you can install the extension from a machine that hosts t
 
 ## Related articles
 
-* [What is Analytics](../powerbi/what-is-analytics.md)
-* [Data available from Analytics](../powerbi/data-available-in-analytics.md)
-* [Grant permissions to access Analytics](../powerbi/analytics-security.md)
-* [The Reporting Roadmap](../powerbi/reporting-roadmap.md)
-* [Extension FAQs](../../marketplace/faq-extensions.md)
+- [What is Analytics](../powerbi/what-is-analytics.md)
+- [Data available from Analytics](../powerbi/data-available-in-analytics.md)
+- [Grant permissions to access Analytics](../powerbi/analytics-security.md)
+- [The Reporting Roadmap](../powerbi/reporting-roadmap.md)
+- [Extension FAQs](../../marketplace/faq-extensions.md)

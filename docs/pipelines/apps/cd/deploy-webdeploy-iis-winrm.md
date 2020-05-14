@@ -30,19 +30,19 @@ A task running on the [Build and Release agent](../../agents/agents.md) opens a 
 
 Before you begin, you'll need a CI build that publishes your Web Deploy package. To set up CI for your specific type of app, see:
 
-* [Build your ASP.NET 4 app](../aspnet/build-aspnet-4.md)
+- [Build your ASP.NET 4 app](../aspnet/build-aspnet-4.md)
 
-* [Build your ASP.NET Core app](../../ecosystems/dotnet-core.md)
+- [Build your ASP.NET Core app](../../ecosystems/dotnet-core.md)
 
-* [Build your Node.js app with gulp](../../ecosystems/javascript.md)
+- [Build your Node.js app with gulp](../../ecosystems/javascript.md)
 
 ### WinRM configuration
 
 Windows Remote Management (WinRM) requires target servers to be:
 
-* Domain-joined or workgroup-joined
-* Able to communicate using the HTTP or HTTPS protocol
-* Addressed by using a fully-qualified domain name (FQDN) or an IP address
+- Domain-joined or workgroup-joined
+- Able to communicate using the HTTP or HTTPS protocol
+- Addressed by using a fully-qualified domain name (FQDN) or an IP address
 
 This table shows the supported scenarios for WinRM.
 
@@ -86,7 +86,7 @@ Follow these steps to configure each target server.
 1.  Decide if you want to use HTTP or HTTPS to communicate
     with the target machine(s).
 
-    * If you choose HTTP, execute the following in a Command
+    - If you choose HTTP, execute the following in a Command
       window with Administrative permissions:
 
       `ConfigureWinRM.ps1 {FQDN} http`
@@ -94,7 +94,7 @@ Follow these steps to configure each target server.
       > This command creates an HTTP WinRM listener and
       > opens port 5985 inbound for WinRM over HTTP.
 
-    * If you choose HTTPS, you can use either a FQDN or an IP
+    - If you choose HTTPS, you can use either a FQDN or an IP
       address to access the target machine(s). To use a FQDN to access the target machine(s),
       execute the following in the PowerShell console with Administrative permissions:
 
@@ -135,11 +135,11 @@ Continuous deployment (CD) means starting an automated release pipeline whenever
 
 1.  Do one of the following:
 
-    * If you've just completed a CI build (see above) then, in the build's
+    - If you've just completed a CI build (see above) then, in the build's
       **Summary** tab under **Deployments**, choose **Create release** followed by **Yes**.
       This starts a new release pipeline that's automatically linked to the build pipeline.
 
-    * Open the **Releases** tab of **Azure Pipelines**, open the **+** drop-down
+    - Open the **Releases** tab of **Azure Pipelines**, open the **+** drop-down
       in the list of release pipelines, and choose **Create release pipeline**.
 
 1.  Choose **Start with an empty pipeline**.
@@ -161,29 +161,29 @@ Continuous deployment (CD) means starting an automated release pipeline whenever
 
     ![Windows Machine File Copy](../../tasks/deploy/media/windows-machine-file-copy-icon.png) [Deploy: Windows Machine File Copy](../../tasks/deploy/windows-machine-file-copy.md) - Copy the Web Deploy package to the IIS servers.
 
-    * **Source**: Select the Web deploy package (zip file) from the artifact source.
+    - **Source**: Select the Web deploy package (zip file) from the artifact source.
 
-    * **Machines**: `$(WebServers)`
+    - **Machines**: `$(WebServers)`
 
-    * **Admin Login**: Enter the administrator credentials for the target servers. For workgroup-joined computers, use the format `.\username`. For domain-joined computers, use the format `domain\username`.
+    - **Admin Login**: Enter the administrator credentials for the target servers. For workgroup-joined computers, use the format `.\username`. For domain-joined computers, use the format `domain\username`.
 
-    * **Password**: Enter the administrator password for the target servers.
+    - **Password**: Enter the administrator password for the target servers.
 
-    * **Destination Folder**: Specify a folder on the target server where the files should be copied to.<p />
+    - **Destination Folder**: Specify a folder on the target server where the files should be copied to.<p />
 
     ![WinRM - IIS Web App Deployment](../../tasks/deploy/media/iis-web-application-deployment-icon.png) [Deploy: WinRM - IIS Web App Deployment](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.iiswebapp) - Deploy the package.
 
-    * **Machines**: `$(WebServers)`
+    - **Machines**: `$(WebServers)`
 
-    * **Admin Login**: Enter the administrator credentials for target servers. For workgroup-joined computers, use the format `.\username`. For domain-joined computers, use the format `domain\username`.
+    - **Admin Login**: Enter the administrator credentials for target servers. For workgroup-joined computers, use the format `.\username`. For domain-joined computers, use the format `domain\username`.
 
-    * **Password**: Enter the administrator password for target servers.
+    - **Password**: Enter the administrator password for target servers.
 
-    * **Protocol**: Select `HTTP` or `HTTPS` (depending on how you configured the target machine earlier). Note that if the target machine is workgroup-joined, you must choose `HTTPS`. You can use HTTP only if the target machine is domain-joined and configured to use a FQDN.
+    - **Protocol**: Select `HTTP` or `HTTPS` (depending on how you configured the target machine earlier). Note that if the target machine is workgroup-joined, you must choose `HTTPS`. You can use HTTP only if the target machine is domain-joined and configured to use a FQDN.
 
-    * **Web Deploy Package**: Fully qualified path of the zip file you copied to the target server in the previous task.
+    - **Web Deploy Package**: Fully qualified path of the zip file you copied to the target server in the previous task.
 
-    * **Website Name**: `Default Web Site` (or the name of the website if you configured a different one earlier).<p />
+    - **Website Name**: `Default Web Site` (or the name of the website if you configured a different one earlier).<p />
 
 1.  Edit the name of the release pipeline, click **Save**, and click **OK**. Note that the default stage is named Stage1, which you can edit by clicking directly on the name.
 

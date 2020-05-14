@@ -23,9 +23,9 @@ In this article you'll learn how to:
 
 > [!div class="checklist"]
 >
-> * Select a sprint backlog for a team
-> * Add tasks to backlog items from the sprint backlog or taskboard
-> * Estimate work, set _Remaining Work_
+> - Select a sprint backlog for a team
+> - Add tasks to backlog items from the sprint backlog or taskboard
+> - Estimate work, set _Remaining Work_
 
 <!---Address how to parent unparented items -->
 
@@ -104,8 +104,8 @@ If you haven't yet assigned work items to a sprint, see [1. Assign backlog items
 
 If you have added work items and they don't appear in your sprint backlog, check their area and iteration paths.
 
-* The Area Path must match one of those assigned to the team
-* The Iteration Path must match the iteration of the sprint that you've selected.
+- The Area Path must match one of those assigned to the team
+- The Iteration Path must match the iteration of the sprint that you've selected.
 
 For details on assigning iteration paths to teams, see [Define Iteration Paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md).
 
@@ -222,7 +222,7 @@ During the sprint, team members update remaining work to continually reflect the
     <td><p><a href="../queries/query-numeric.md" data-raw-source="[Activity](../queries/query-numeric.md)">Activity</a> </p></td>
 	<td><p>Select the type of activity this task represents when your team estimates sprint capacity by activity.</p></td></tr>
 </tbody>
-</table>  
+</table>
 
 <a id="unparented-tasks"> </a>
 
@@ -248,6 +248,6 @@ Tasks without links to parent backlog items or user stories appear at the top of
 
 ## Related articles
 
-* [1. Assign backlog items to a sprint](assign-work-sprint.md)
-* [Setup your Backlogs & Boards](../backlogs/set-up-your-backlog.md)
-* [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
+- [1. Assign backlog items to a sprint](assign-work-sprint.md)
+- [Setup your Backlogs & Boards](../backlogs/set-up-your-backlog.md)
+- [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)

@@ -34,10 +34,10 @@ The following example shows the syntax structure that defines the **TestedBy** l
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <?xml version="1.0" encoding="utf-8"?>  
-> <LinkTypes>  
->   <LinkType ReferenceName="Microsoft.VSTS.Common.TestedBy" ForwardName="Tested By" ReverseName="Tests" Topology="Dependency" />  
-> </LinkTypes>  
+> <?xml version="1.0" encoding="utf-8"?>
+> <LinkTypes>
+>   <LinkType ReferenceName="Microsoft.VSTS.Common.TestedBy" ForwardName="Tested By" ReverseName="Tests" Topology="Dependency" />
+> </LinkTypes>
 > ```
 
 You can customize or add a link type definition in the LinkTypes folder. For more information about how to define a type of link, see [Define a custom link type](../xml/define-custom-link-type.md).
@@ -51,7 +51,7 @@ To upload a link type definition in the process template, you specify the **LINK
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <LINKTYPE fileName="WorkItem Tracking\LinkTypes\TestedBy.xml" />  
+> <LINKTYPE fileName="WorkItem Tracking\LinkTypes\TestedBy.xml" />
 > ```
 
 The following example shows how to specify a task that creates the two types of links that are defined in the Agile process template. These types correspond to the **SharedStep** and **TestedBy** link types.
@@ -59,14 +59,14 @@ The following example shows how to specify a task that creates the two types of 
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <task id="LinkTypes" name="LinkType definitions" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work item link types created">  
->       <taskXml>  
->       <LINKTYPES>  
->          <LINKTYPE fileName="WorkItem Tracking\LinkTypes\SharedStep.xml" />  
->          <LINKTYPE fileName="WorkItem Tracking\LinkTypes\TestedBy.xml" />  
->       </LINKTYPES>  
->       </taskXml>  
-> </task>  
+> <task id="LinkTypes" name="LinkType definitions" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work item link types created">
+>       <taskXml>
+>       <LINKTYPES>
+>          <LINKTYPE fileName="WorkItem Tracking\LinkTypes\SharedStep.xml" />
+>          <LINKTYPE fileName="WorkItem Tracking\LinkTypes\TestedBy.xml" />
+>       </LINKTYPES>
+>       </taskXml>
+> </task>
 > ```
 
 <a name="elements"></a>
@@ -85,6 +85,6 @@ The following table describes the elements that you use to upload link type defi
 
 ## Related articles
 
-* [Manage link types](../witadmin/manage-link-types.md)
-* [Define a custom link type](../xml/define-custom-link-type.md)
-* [Define objects for tracking work items](define-objects-track-work-items-plug-in.md)
+- [Manage link types](../witadmin/manage-link-types.md)
+- [Define a custom link type](../xml/define-custom-link-type.md)
+- [Define objects for tracking work items](define-objects-track-work-items-plug-in.md)

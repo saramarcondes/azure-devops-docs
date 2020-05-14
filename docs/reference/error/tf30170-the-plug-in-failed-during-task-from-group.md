@@ -26,4 +26,4 @@ The error message displayed by the New Team Project Wizard provides the name of 
 
 ## Related articles
 
-* [Create a project](../../organizations/projects/create-project.md)
+- [Create a project](../../organizations/projects/create-project.md)

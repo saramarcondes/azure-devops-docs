@@ -21,11 +21,11 @@ Values in parenthesis indicate what level the permission is managed:
 
 ::: moniker range="azure-devops"
 
-* **Object**: Permissions are managed at the object-level
-* **Project**: Permissions are managed at the project level
-* **Collection**: Permissions are managed at the organization or project collection level
-* **Role**: Permissions are managed through a security role.
-* **Team**: Permissions are managed via the team administrator role.
+- **Object**: Permissions are managed at the object-level
+- **Project**: Permissions are managed at the project level
+- **Collection**: Permissions are managed at the organization or project collection level
+- **Role**: Permissions are managed through a security role.
+- **Team**: Permissions are managed via the team administrator role.
 
 <table>
 <tbody valign="top">
@@ -253,12 +253,12 @@ Values in parenthesis indicate what level the permission is managed:
 
 ::: moniker range="azure-devops-2019"
 
-* **Object**: Permissions are managed at the object-level
-* **Project**: Permissions are managed at the project level
-* **Collection**: Permissions are managed at the account or project collection level
-* **Role**: Permissions are managed through a security role.
-* **Server**: Permissions are managed at the instance level for a server
-* **Team**: Permissions are managed via the team administrator role.
+- **Object**: Permissions are managed at the object-level
+- **Project**: Permissions are managed at the project level
+- **Collection**: Permissions are managed at the account or project collection level
+- **Role**: Permissions are managed through a security role.
+- **Server**: Permissions are managed at the instance level for a server
+- **Team**: Permissions are managed via the team administrator role.
 
 <table>
 <tbody valign="top">
@@ -490,12 +490,12 @@ Values in parenthesis indicate what level the permission is managed:
 
 ::: moniker range="<= tfs-2018"
 
-* **Object**: Permissions are managed at the object-level
-* **Project**: Permissions are managed at the project level
-* **Collection**: Permissions are managed at the account or project collection level
-* **Role**: Permissions are managed through a security role.
-* **Server**: Permissions are managed at the instance level for a server
-* **Team**: Permissions are managed via the team administrator role.
+- **Object**: Permissions are managed at the object-level
+- **Project**: Permissions are managed at the project level
+- **Collection**: Permissions are managed at the account or project collection level
+- **Role**: Permissions are managed through a security role.
+- **Server**: Permissions are managed at the instance level for a server
+- **Team**: Permissions are managed via the team administrator role.
 
 <table>
 <tbody valign="top">
@@ -665,11 +665,11 @@ for all projects defined in the organization or collection:
 
 ::: moniker range="azure-devops"
 
-* Add and administer teams and all team-related features
-* Edit project-level permissions for users and groups in the project
-* Add or remove project-level security groups
-* Edit project level permission ACLs
-* Edit event subscriptions or alerts for teams or the project
+- Add and administer teams and all team-related features
+- Edit project-level permissions for users and groups in the project
+- Add or remove project-level security groups
+- Edit project level permission ACLs
+- Edit event subscriptions or alerts for teams or the project
 
 ::: moniker-end
 
@@ -678,17 +678,17 @@ for all projects defined in the organization or collection:
 The **Edit instance-level information** (formerly **Edit collection level information**) permission is set through the [Security admin page for an organization or collection](set-project-collection-level-permissions.md). It includes the ability to perform the following tasks
 for all team projects defined in the account or collection:
 
-* Add and administer teams and all team-related features
-* Edit collection-level permissions for users and groups in the collection
-* Add or remove collection-level security groups from the collection
-* Implicitly allows the user to modify version control permissions
-* Edit project level and collection level permission ACLs
-* Edit event subscriptions or alerts for teams, projects, or collection level events.
+- Add and administer teams and all team-related features
+- Edit collection-level permissions for users and groups in the collection
+- Add or remove collection-level security groups from the collection
+- Implicitly allows the user to modify version control permissions
+- Edit project level and collection level permission ACLs
+- Edit event subscriptions or alerts for teams, projects, or collection level events.
 
 ## Related notes
 
-* [Grant or restrict permissions to select tasks](restrict-access.md)
-* [About permissions and groups](about-permissions.md)
-* [About security roles](about-security-roles.md).
-* [Permissions and groups reference](permissions.md)
-* [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
+- [Grant or restrict permissions to select tasks](restrict-access.md)
+- [About permissions and groups](about-permissions.md)
+- [About security roles](about-security-roles.md).
+- [Permissions and groups reference](permissions.md)
+- [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)

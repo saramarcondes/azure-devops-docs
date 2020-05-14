@@ -31,13 +31,13 @@ To perform this procedure, you must be a member of the Administrators group on t
 4.  In the **Provider ID** box, type the following code:
 
     ```
-    Provider ID = MSOLAP.4  
-    Data Provider Type = OLE DB  
-    Description = Microsoft OLE DB Provider for OLAP Services 10.0.  
+    Provider ID = MSOLAP.4
+    Data Provider Type = OLE DB
+    Description = Microsoft OLE DB Provider for OLAP Services 10.0.
     ```
 
 5.  Click **OK**.
 
 ## Related articles
 
-* [Verify SharePoint products for Team Foundation Server](/azure/devops/server/install/sharepoint/verify-sharepoint)
+- [Verify SharePoint products for Team Foundation Server](/azure/devops/server/install/sharepoint/verify-sharepoint)

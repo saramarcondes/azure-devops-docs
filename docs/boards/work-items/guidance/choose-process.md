@@ -18,8 +18,8 @@ ms.date: 09/18/2019
 
 Anytime you create a project, you must choose a process or process template based on the process model you use.
 
-* A **process** defines the building blocks of the work item tracking system and supports the Inheritance process model for Azure Boards. This model supports customization of projects through a WYSIWYG user interface.
-* A **process template** defines the building blocks of the work item tracking system as well as other sub-systems you access through Azure Boards or an on-premises Azure DevOps Server or Team Foundation Server (TFS). It supports Hosted XML and On-premises XML process models which support customization of projects through the modification and import of XML definition files.
+- A **process** defines the building blocks of the work item tracking system and supports the Inheritance process model for Azure Boards. This model supports customization of projects through a WYSIWYG user interface.
+- A **process template** defines the building blocks of the work item tracking system as well as other sub-systems you access through Azure Boards or an on-premises Azure DevOps Server or Team Foundation Server (TFS). It supports Hosted XML and On-premises XML process models which support customization of projects through the modification and import of XML definition files.
 
 [!INCLUDE [temp](../../includes/note-configure-customize.md)]
 
@@ -135,9 +135,8 @@ Choose the process that provides the best fit for your team.
 
 If you need more than two or three backlog levels, you can add more based on the process model you use:
 
-* **Inheritance**: [Customize your backlogs or boards for a process](../../../organizations/settings/work/customize-process-backlogs-boards.md)
-* **Hosted XML or On-premises XML**: [Add portfolio backlogs](../../../reference/add-portfolio-backlogs.md).  
-
+- **Inheritance**: [Customize your backlogs or boards for a process](../../../organizations/settings/work/customize-process-backlogs-boards.md)
+- **Hosted XML or On-premises XML**: [Add portfolio backlogs](../../../reference/add-portfolio-backlogs.md).
 
 <a id="main-distinctions"></a>
 
@@ -505,8 +504,8 @@ You can change the workflow to support additional states, transitions, and reaso
 
 When you change the state of a work item to Removed, Closed, or Done, the system responds like this:
 
-* **Closed** or **Done**: Work items in this state don't appear on the portfolio backlog and backlog pages. However, they do appear on the sprint backlog pages, Kanban board, and taskboard. Also, when you change the portfolio backlog view to show backlog items, for example, to view Features to Product Backlog Items, items in the closed and done state will appear.
-* **Removed**: Work items in this state don't appear on any backlog or board.
+- **Closed** or **Done**: Work items in this state don't appear on the portfolio backlog and backlog pages. However, they do appear on the sprint backlog pages, Kanban board, and taskboard. Also, when you change the portfolio backlog view to show backlog items, for example, to view Features to Product Backlog Items, items in the closed and done state will appear.
+- **Removed**: Work items in this state don't appear on any backlog or board.
 
 Work items are maintained in a project as long as the project is active.
 Even if you set them to Closed, Done, or Removed, a record is kept in the data store.
@@ -524,9 +523,9 @@ The following WITs are added to all processes except the Basic process.
 
 Teams create and work with these types using the corresponding tool:
 
-* Test Plan, Test Suite, Test Case Shared Steps, and Shared Parameters: Microsoft Test Manager.
-* Feedback Request and Feedback Response: Request feedback.
-* Code Review Request and Code Review Response: My Work (from Team Explorer) and Code Review Request.
+- Test Plan, Test Suite, Test Case Shared Steps, and Shared Parameters: Microsoft Test Manager.
+- Feedback Request and Feedback Response: Request feedback.
+- Code Review Request and Code Review Response: My Work (from Team Explorer) and Code Review Request.
 
 Work items from these type definitions are not meant to be created manually and therefore are added to the Hidden Types category.
 Work item types that are added to the Hidden Types category don't appear in the menus used to create new work items.
@@ -538,8 +537,8 @@ Work item types that are added to the Hidden Types category don't appear in the 
 >
 > The following WITs were added with the indicated TFS version:
 >
-> * Shared Parameters added with TFS 2013.2
-> * Test Plan and Test Suite added with TFS 2013.3
+> - Shared Parameters added with TFS 2013.2
+> - Test Plan and Test Suite added with TFS 2013.3
 
 ::: moniker-end
 
@@ -565,8 +564,8 @@ If you change the workflow for the test plan and test suite, you might need to u
 
 You can customize a process before or after you create a project that uses that project. The methods you use depend on the process model you use. To learn more, see [Customize your work tracking experience](../../../reference/customize-work.md).
 
-* [Upload/download process templates](manage-process-templates.md)
-* [Changes made to process templates](changes-to-process-templates.md)
-* [Configure features after a TFS upgrade](../../../reference/configure-features-after-upgrade.md)
+- [Upload/download process templates](manage-process-templates.md)
+- [Changes made to process templates](changes-to-process-templates.md)
+- [Configure features after a TFS upgrade](../../../reference/configure-features-after-upgrade.md)
 
 If you have additional questions, see [Azure DevOps support page](https://azure.microsoft.com/support/devops/).

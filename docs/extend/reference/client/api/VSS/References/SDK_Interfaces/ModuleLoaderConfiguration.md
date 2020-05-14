@@ -19,12 +19,12 @@ AMD javascript module loader configuration
 
 ### Members
 
-* `baseUrl`: string.
+- `baseUrl`: string.
 
-* `contributionPaths`: {[key: string]: [ContributionPath](../../../VSS/References/SDK_Interfaces/ContributionPath.md)}.
+- `contributionPaths`: {[key: string]: [ContributionPath](../../../VSS/References/SDK_Interfaces/ContributionPath.md)}.
 
-* `paths`: {[key: string]: string}.
+- `paths`: {[key: string]: string}.
 
-* `shim`: {[key: string]: [ModuleLoaderShimConfiguration](../../../VSS/References/SDK_Interfaces/ModuleLoaderShimConfiguration.md)}.
+- `shim`: {[key: string]: [ModuleLoaderShimConfiguration](../../../VSS/References/SDK_Interfaces/ModuleLoaderShimConfiguration.md)}.
 
-* `waitSeconds`: number. The maximum amount of time (in seconds) the AMD loader waits for scripts to load.
+- `waitSeconds`: number. The maximum amount of time (in seconds) the AMD loader waits for scripts to load.

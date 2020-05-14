@@ -41,8 +41,8 @@ As with other operating system files, ASCII control characters (ASCII 1-31) and 
 The computer name where you install Azure DevOps is associated with the name of the server.
 Both the operating system and Active Directory impose certain restrictions on computer names as described in these articles:
 
-* [Rename a Computer that Hosts a Stand-Alone Instance of SQL Server](/sql/database-engine/install-windows/rename-a-computer-that-hosts-a-stand-alone-instance-of-sql-server)
-* [Windows Server Active Directory](https://support.microsoft.com/en-us/help/909264/naming-conventions-in-active-directory-for-computers-domains-sites-and)
+- [Rename a Computer that Hosts a Stand-Alone Instance of SQL Server](/sql/database-engine/install-windows/rename-a-computer-that-hosts-a-stand-alone-instance-of-sql-server)
+- [Windows Server Active Directory](https://support.microsoft.com/en-us/help/909264/naming-conventions-in-active-directory-for-computers-domains-sites-and)
 
 ::: moniker-end
 
@@ -390,7 +390,7 @@ Must not exceed 2 GB (gigabytes).
 </td>
 </tr>
 </tbody>
-</table>  
+</table>
 
 <a id="Kanban"> </a>
 
@@ -709,7 +709,6 @@ Must be unique within the organization or project collection
 </td>
 </tr>
 </table>
-
 
 ### Field, link type, and category reference names
 
@@ -1407,6 +1406,6 @@ Workspace names must conform to the following restrictions.
 
 ## Related articles
 
-* [Work tracking, process, and project limits](./work/object-limits.md)
-* [Customize work tracking objects to support your team's processes](../../reference/customize-work.md)
-* [Customize a process template](../../reference/process-templates/customize-process.md)
+- [Work tracking, process, and project limits](./work/object-limits.md)
+- [Customize work tracking objects to support your team's processes](../../reference/customize-work.md)
+- [Customize a process template](../../reference/process-templates/customize-process.md)

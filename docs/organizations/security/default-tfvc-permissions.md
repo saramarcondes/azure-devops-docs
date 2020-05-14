@@ -23,6 +23,6 @@ From the project admin content, **Version Control** page, you can [set permissio
 
 ## Related articles
 
-* [Set repository permissions for Git or TFV](set-git-tfvc-repository-permissions.md)
-* [Default permissions and access](permissions-access.md)
-* [Permissions and groups reference](permissions.md)
+- [Set repository permissions for Git or TFV](set-git-tfvc-repository-permissions.md)
+- [Default permissions and access](permissions-access.md)
+- [Permissions and groups reference](permissions.md)

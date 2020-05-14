@@ -21,16 +21,16 @@ This article demonstrates how you can add charts to your extensions. Charts can 
 Charts are easy to create, resizable, interactive, and consistent with the Azure DevOps Services look and feel.
 The following chart types are supported:
 
-* Line
-* Bar
-* Column
-* Area
-* Stacked bar
-* Stacked column
-* Stacked area
-* Pie
-* Pivot table
-* Histogram
+- Line
+- Bar
+- Column
+- Area
+- Stacked bar
+- Stacked column
+- Stacked area
+- Pie
+- Pivot table
+- Histogram
 
 > If you're in a hurry and want to get your hands on the code right away, you can download the [complete samples](https://github.com/Microsoft/vsts-extension-samples).
 > Once downloaded, go to the `charts` folder, and then follow [the packaging and publishing instructions](../publish/overview.md) to publish the sample extension.

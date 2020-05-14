@@ -32,9 +32,9 @@ The Burndown and Burn Rate report summarizes the data that was captured during t
 
 You can filter the report in the following ways:
 
-* Change the start and end dates for the report.
+- Change the start and end dates for the report.
 
-* Filter the tasks that are counted in the report by specifying iteration and area paths and work item states. You can also filter the report to show user stories and bugs.
+- Filter the tasks that are counted in the report by specifying iteration and area paths and work item states. You can also filter the report to show user stories and bugs.
 
   For more information, see [Filtering the Report and Changing the Display](#Changing) later in this article.
 
@@ -78,14 +78,14 @@ The Assignment of Work section of the report provides insight into how well work
 
 For the Burndown and Burn Rate report to be useful and accurate, the team must perform the following activities for tracking work items:
 
-* Define tasks, user stories, and bugs, and specify the **Iteration** and **Area** paths for each.
+- Define tasks, user stories, and bugs, and specify the **Iteration** and **Area** paths for each.
 
-* Specify and update the **Completed** and **Remaining** fields for each task or subtask as it is worked on.
+- Specify and update the **Completed** and **Remaining** fields for each task or subtask as it is worked on.
 
   > [!IMPORTANT]
   > If you subdivide a task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent task and user story. For more information, see [Address inaccuracies published for summary values](address-inaccuracies-published-for-summary-values.md).
 
-* Update the **State** of each task, story, and bug as it progresses from active to closed.
+- Update the **State** of each task, story, and bug as it progresses from active to closed.
 
 ## <a name="Duration"></a> Setting the Duration of the Iteration
 
@@ -101,9 +101,9 @@ To understand the progress that the team has made for your current iteration, th
 
 You can filter the report in the following ways:
 
-* Change the start and end dates for the report.
+- Change the start and end dates for the report.
 
-* Filter the tasks, stories, and bugs that are counted in the report by specifying iteration and area paths, work item types, and work item states.
+- Filter the tasks, stories, and bugs that are counted in the report by specifying iteration and area paths, work item types, and work item states.
 
   For more information, see [Filtering of the Report and Changing the Display](#Changing) later in this article.
 
@@ -113,25 +113,25 @@ You can review the report to determine the progress that the team made within an
 
 #### Burndown
 
-* How fast is the team completing remaining work?
+- How fast is the team completing remaining work?
 
-* Is the team adding work during the iteration? Is there scope creep?
+- Is the team adding work during the iteration? Is there scope creep?
 
-* How much work can the team complete in the available time?
+- How much work can the team complete in the available time?
 
-* When can the team finish the work?
+- When can the team finish the work?
 
-* When can the team finish the current iteration?
+- When can the team finish the current iteration?
 
 #### Burn Rate
 
-* Is the team working quickly enough to finish the remaining work on time?
+- Is the team working quickly enough to finish the remaining work on time?
 
 #### Work Assignment
 
-* How is the work distributed across the team?
+- How is the work distributed across the team?
 
-* Should the team balance the remaining work load?
+- Should the team balance the remaining work load?
 
 ### Healthy Versions of the Report
 
@@ -143,9 +143,9 @@ A healthy Burndown and Burn Rate report shows that the team is making steady pro
 
 An unhealthy Burndown and Burn Rate report will show one or more of the following indications:
 
-* **Actual and ideal trend lines are diverging or are far apart**.
+- **Actual and ideal trend lines are diverging or are far apart**.
 
-* **The total number of hours is increasing**.
+- **The total number of hours is increasing**.
 
   Scope creep occurs when team members add features to an iteration after it is planned. The following illustration shows an iteration in which a team is taking on more work over time and making minimal progress on the work that had already been assigned.
 
@@ -155,11 +155,11 @@ An unhealthy Burndown and Burn Rate report will show one or more of the followin
 
 You can filter the Burndown and Burn Rate report or change its display in the following ways:
 
-* Filter the user stories, bugs, and tasks that the report represents by specifying iteration and area paths, work item types, and work item states
+- Filter the user stories, bugs, and tasks that the report represents by specifying iteration and area paths, work item types, and work item states
 
-* Change the view.
+- Change the view.
 
-* Specify the type of trend line to display.
+- Specify the type of trend line to display.
 
   The following illustration shows the available filters and display options:
 
@@ -169,9 +169,9 @@ You can filter the Burndown and Burn Rate report or change its display in the fo
 
 1.  Perform one or both of the following actions:
 
-    * In the **Iteration** or **Area** list, select the check box of each iteration or product area to include.
+    - In the **Iteration** or **Area** list, select the check box of each iteration or product area to include.
 
-    * In the **Work Item Type** or **State** list, select the check box of each work item type or state to include.
+    - In the **Work Item Type** or **State** list, select the check box of each work item type or state to include.
 
 2.  Click **View Report**.
 
@@ -179,9 +179,9 @@ You can filter the Burndown and Burn Rate report or change its display in the fo
 
 1.  In the **Measure** list, click one of the following options:
 
-    * **Hours of Work** displays the cumulative number of work hours for all tasks that are defined for the iteration.
+    - **Hours of Work** displays the cumulative number of work hours for all tasks that are defined for the iteration.
 
-    * **Number of Work Items** displays the cumulative number of work items, grouped by state, that are defined for the iteration.
+    - **Number of Work Items** displays the cumulative number of work items, grouped by state, that are defined for the iteration.
 
 2.  Click **View Report**.
 
@@ -189,13 +189,13 @@ You can filter the Burndown and Burn Rate report or change its display in the fo
 
 1.  In the **Trend Line** list, click one of the following options:
 
-    * **Display Actual** displays a band that is based on the actual burndown. The band intersects the x-axis when the iteration is expected to finish.
+    - **Display Actual** displays a band that is based on the actual burndown. The band intersects the x-axis when the iteration is expected to finish.
 
-    * **Display Ideal** displays a straight line from the remaining work at the start date to the x-axis on the end date.
+    - **Display Ideal** displays a straight line from the remaining work at the start date to the x-axis on the end date.
 
-    * **Display Both** displays both the actual and ideal trend lines.
+    - **Display Both** displays both the actual and ideal trend lines.
 
-    * **None** does not display a trend line.
+    - **None** does not display a trend line.
 
 2.  Click **View Report**.
 

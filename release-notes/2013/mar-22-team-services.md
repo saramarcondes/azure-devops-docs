@@ -17,9 +17,9 @@ We have added improvements to our Git support and test case management for you t
 
 In this sprint we added a new branches view for team projects using Git. This lets you see:
 
-* All the branches in your repo in one place
-* The last commit and who did that commit for each branch
-* How far ahead and behind each branch is from the current active branch
+- All the branches in your repo in one place
+- The last commit and who did that commit for each branch
+- How far ahead and behind each branch is from the current active branch
 
 For example, in the screenshot below "master" is the current branch. The green bars indicate how many commits that branch has that “master” doesn’t. The red bars indicate how many commits that branch is missing.
 
@@ -36,9 +36,9 @@ You can also compare two branches. View the list of commits and the summary of c
 
 Our web based test runner also got some nice additions this sprint:
 
-* Select multiple test steps and mark them pass/fail in one action
-* Double-click a test step to reorder, add or delete steps on the fly
-* (See below) Hover over an inline image to view a larger version - no need to open it in a browser window
+- Select multiple test steps and mark them pass/fail in one action
+- Double-click a test step to reorder, add or delete steps on the fly
+- (See below) Hover over an inline image to view a larger version - no need to open it in a browser window
 
 ![Issue with test case](media/3_22_03.png)
 

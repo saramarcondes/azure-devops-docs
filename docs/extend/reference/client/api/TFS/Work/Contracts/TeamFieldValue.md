@@ -16,6 +16,6 @@ Module path: `TFS/Work/Contracts`
 
 ### Members
 
-* `includeChildren`: boolean.
+- `includeChildren`: boolean.
 
-* `value`: string.
+- `value`: string.

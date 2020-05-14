@@ -62,10 +62,10 @@ Open a web browser, connect to your project, and choose **Overview>Dashboards**.
 
 It lists dashboards in the following order:
 
-* Your last visited dashboard
-* Your favorited dashboards
-* All dashboards of teams that you belong to
-* All dashboards defined for the project in alphabetical order.
+- Your last visited dashboard
+- Your favorited dashboards
+- All dashboards of teams that you belong to
+- All dashboards defined for the project in alphabetical order.
 
 Choose the ![ ](../../media/icons/filter-icon.png) filter icon to filter the list by keyword or team. Keywords apply to dashboard titles, descriptions, and team names.
 
@@ -197,14 +197,14 @@ You can rename or delete a dashboard. Also, you can enable auto-refresh, and the
 
 ::: moniker range=">= azure-devops-2019"
 
-* To rename a dashboard, modify it's description, or change it's automatic refresh setting, open the dashboard, choose the ![gear icon](media/icons/gear-icon.png) gear icon, and change the field options shown. Save your changes.
+- To rename a dashboard, modify it's description, or change it's automatic refresh setting, open the dashboard, choose the ![gear icon](media/icons/gear-icon.png) gear icon, and change the field options shown. Save your changes.
 
-* To delete a dashboard, open the Dashboards directory, choose the ![ ](../../media/icons/actions-icon.png) actions icon for the dashboard, and select the **Delete** menu option.
+- To delete a dashboard, open the Dashboards directory, choose the ![ ](../../media/icons/actions-icon.png) actions icon for the dashboard, and select the **Delete** menu option.
 
       	> [!div class="mx-imgBorder"]
-      	> ![Delete a dashboard](media/dashboards/delete-dashboard.png)  
+      	> ![Delete a dashboard](media/dashboards/delete-dashboard.png)
 
-* To set permissions for a dashboard, choose the **Security** option. For details, see [Set dashboard permissions](dashboard-permissions.md).
+- To set permissions for a dashboard, choose the **Security** option. For details, see [Set dashboard permissions](dashboard-permissions.md).
   ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
@@ -285,9 +285,9 @@ As you can see, you can use team dashboards to provide guidance and keep your te
 
 ## Related articles
 
-* [Add a team](../../organizations/settings/add-teams.md)
-* [Widget catalog](widget-catalog.md)
-* [Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)
+- [Add a team](../../organizations/settings/add-teams.md)
+- [Widget catalog](widget-catalog.md)
+- [Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)
 
 ### Extensibility
 

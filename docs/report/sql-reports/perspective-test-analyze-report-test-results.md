@@ -24,16 +24,16 @@ By using the Test perspective, you can create reports that answer the following 
 
 **Status reports:**
 
-* What is the status of testing of specific user stories or product areas?
-* What is the quality of builds based on the number of failed and passed tests?
-* How many test cases have never been run?
-* Which test cases have never been run?
+- What is the status of testing of specific user stories or product areas?
+- What is the quality of builds based on the number of failed and passed tests?
+- How many test cases have never been run?
+- Which test cases have never been run?
 
 **Trend reports:**
 
-* How many tests are blocked, passing, or failing over time?
-* How many tests are regressing?
-* How consistent is the manual test activity over time?
+- How many tests are blocked, passing, or failing over time?
+- How many tests are regressing?
+- How consistent is the manual test activity over time?
 
 > [!NOTE]
 > If your data warehouse is using SQL Server Enterprise Edition, the list of cubes will include Team System and a set of perspectives. The perspectives provide a focused view of the data so that you do not have to scroll through all of the dimensions and measure groups in the whole Team System cube.
@@ -64,13 +64,13 @@ By performing the following steps, you can create a progress report for testing 
 
 3.  For each report filter, right-click each of the following fields, specify the hierarchies or elements of interest, and then drag the field to the **Report Filter** area.
 
-    * **Team Project Hierarchy** from the **Team Project** dimension
+    - **Team Project Hierarchy** from the **Team Project** dimension
 
-    * **Area Path** from the **Team Project** dimension
+    - **Area Path** from the **Team Project** dimension
 
-    * **Iteration Path** from the **Test Case** dimension
+    - **Iteration Path** from the **Test Case** dimension
 
-    * **Work Item Type** from the **Work Item Linked** dimension
+    - **Work Item Type** from the **Work Item Linked** dimension
 
       Specify the type as user story, requirement, or another type of work item that has test cases linked to it that you want to report.
 
@@ -175,11 +175,11 @@ For a description of each attribute, see [Index of work item fields](../../board
 
 To create reports that contain useful data about test efforts and test results, team members should review the information in the following topics:
 
-* [Continuous testing](../../pipelines/ecosystems/dotnet-core.md#run-your-tests)
-* [Using Code Coverage to Determine How Much Code is being Tested](https://msdn.microsoft.com/library/dd537628.aspx)
+- [Continuous testing](../../pipelines/ecosystems/dotnet-core.md#run-your-tests)
+- [Using Code Coverage to Determine How Much Code is being Tested](https://msdn.microsoft.com/library/dd537628.aspx)
 
 ## Related notes
 
-* [Test Management Reports](../excel/test-management-reports.md)
-* [Test Plan Progress](test-plan-progress-report.md)
-* [Perspectives and measure groups provided in the Analysis Services cube](perspective-measure-groups-cube.md)
+- [Test Management Reports](../excel/test-management-reports.md)
+- [Test Plan Progress](test-plan-progress-report.md)
+- [Perspectives and measure groups provided in the Analysis Services cube](perspective-measure-groups-cube.md)

@@ -40,8 +40,8 @@ The basic steps to update wiki content offline are as follows:
 
 Do the following to migrate Markdown pages from another wiki to your team project wiki or to content that you publish as code to a wiki.
 
-* [Understand the underlying structure of your wiki Git repo](wiki-file-structure.md)
-* See the [Differences between provisioned wiki and publish code as wiki](provisioned-vs-published-wiki.md)
+- [Understand the underlying structure of your wiki Git repo](wiki-file-structure.md)
+- See the [Differences between provisioned wiki and publish code as wiki](provisioned-vs-published-wiki.md)
 
 ::: moniker-end
 
@@ -49,7 +49,7 @@ Do the following to migrate Markdown pages from another wiki to your team projec
 
 Do the following to migrate Markdown pages from another wiki to your team project wiki.
 
-* [Understand the underlying structure of your wiki Git repo](wiki-file-structure.md).
+- [Understand the underlying structure of your wiki Git repo](wiki-file-structure.md).
 
 ::: moniker-end
 
@@ -77,9 +77,9 @@ Your wiki repository stores pages, images, attachments, and the sequence of page
     > ![Wiki Master files](media/wiki/work-offline-wikiMaster-files.png)
 
 4.  Use the URL that you copied to clone the repo in the IDE that you use. To learn more, see one of the following articles:
-    * [Clone an existing Git repo](../../repos/git/clone.md)
-    * [Using Version Control in VS Code](https://code.visualstudio.com/docs/editor/versioncontrol)
-    * [Get Started with Git and Azure DevOps](../../repos/git/gitquickstart.md?view=azure-devops&tabs=visual-studio)
+    - [Clone an existing Git repo](../../repos/git/clone.md)
+    - [Using Version Control in VS Code](https://code.visualstudio.com/docs/editor/versioncontrol)
+    - [Get Started with Git and Azure DevOps](../../repos/git/gitquickstart.md?view=azure-devops&tabs=visual-studio)
 
 ## Add pages to your local Git repository
 
@@ -106,10 +106,10 @@ To add pages at the root of the wiki tree, add a Markdown file at the root of th
 
     ```
     Welcome
-    Roadmap  
-    How-to-contribute  
-    Home  
-    Reference  
+    Roadmap
+    How-to-contribute
+    Home
+    Reference
     ```
 
 ### Add subpages
@@ -118,7 +118,7 @@ To add pages at the root of the wiki tree, add a Markdown file at the root of th
 
     For example, we added to following files to the How-to-contribute folder. These subpages appear under the How to contribute page in the wiki.
 
-        	> [!div class="mx-imgBorder"]  
+        	> [!div class="mx-imgBorder"]
         	> ![Local branch wiki Git repo](media/wiki/add-sub-pages.png)
 
 2.  Add a **.order** file in the folder with the order of the subpages as they should appear in the wiki. To understand the use of the **.order** file to sequence pages, see [Wiki Git repository files and file structure](wiki-file-structure.md).
@@ -126,10 +126,10 @@ To add pages at the root of the wiki tree, add a Markdown file at the root of th
     For example, the file has the following subpages:
 
     ```
-    Request-extensions  
-    Licensing  
-    Smoke-test  
-    Coding-guidelines  
+    Request-extensions
+    Licensing
+    Smoke-test
+    Coding-guidelines
     ```
 
 ### Push your changes
@@ -147,12 +147,12 @@ If there are any errors in the process, the pages appear in your wiki with a war
 
 ## Related articles
 
-* [Create a wiki for your team project](wiki-create-repo.md)
-* [Wiki Git repository files and file structure](wiki-file-structure.md)
-* [Clone an existing Git repo](../../repos/git/clone.md)
-* [Share code with push](../../repos/git/pushing.md)
-* [Manage README and Wiki permissions](manage-readme-wiki-permissions.md)
-* [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../reference/markdown-guidance.md).
+- [Create a wiki for your team project](wiki-create-repo.md)
+- [Wiki Git repository files and file structure](wiki-file-structure.md)
+- [Clone an existing Git repo](../../repos/git/clone.md)
+- [Share code with push](../../repos/git/pushing.md)
+- [Manage README and Wiki permissions](manage-readme-wiki-permissions.md)
+- [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../reference/markdown-guidance.md).
 
 <!---
 
@@ -178,7 +178,7 @@ In the web portal, you can view the repo files based on the following URL:
 4. Update the .ORDER file(s) to reflect the pages and subpages you've added
 5. Commit and push the updates you made to your local git branch
 6. Create a pull request to merge your changes to the wikiMaster branch
-7. Approve the changes to complete the pull request.  
+7. Approve the changes to complete the pull request.
 
 While that's a lot of steps, the main steps that are specific to updating a wiki is step 3. The rest follow the standard steps for updating a Git repo.
 

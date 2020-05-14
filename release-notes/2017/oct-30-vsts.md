@@ -15,10 +15,10 @@ In the **Sprint 125 Update** of Visual Studio Team Services (VSTS), you’ll see
 
 Other key feature highlights include:
 
-* [Circle avatars](#circle-avatars) - Out with the squares... in with the circles.
-* [Modernized column options](#modernized-column-options) and [Added support for Not In query operator](#added-support-for-not-in-query-operator) - Create more useful queries with ease.
-* [Mention a pull request](#mention-a-pull-request) - Discuss pull requests with a bang`!`
-* Consistent filtering in [Plans](#filtering-on-plans) and [Package](#filtering-in-package-management) - Find what you’re looking for fast no matter where you are in VSTS.
+- [Circle avatars](#circle-avatars) - Out with the squares... in with the circles.
+- [Modernized column options](#modernized-column-options) and [Added support for Not In query operator](#added-support-for-not-in-query-operator) - Create more useful queries with ease.
+- [Mention a pull request](#mention-a-pull-request) - Discuss pull requests with a bang`!`
+- Consistent filtering in [Plans](#filtering-on-plans) and [Package](#filtering-in-package-management) - Find what you’re looking for fast no matter where you are in VSTS.
 
 ## What’s new in VSTS
 
@@ -48,9 +48,9 @@ The [**Delivery Plans**](https://marketplace.visualstudio.com/items?itemName=ms.
 
 Earlier this year, we introduced [customizable work item rules](/azure/devops/release-notes/2017/aug-28-team-services#customizable-work-item-rules) to VSTS. With this current update, we are excited to provide even more options by introducing the read-only action to work item rules. Below are some examples of rules you can create that leverage this new capability.
 
-* When a work item state is **Resolved**, then make **Remaining Work** read-only
-* When a work item state is **Closed**, then make **Assigned To** read-only
-* When the value of **Approved** is true, then make **Reviewed By** read-only
+- When a work item state is **Resolved**, then make **Remaining Work** read-only
+- When a work item state is **Closed**, then make **Assigned To** read-only
+- When the value of **Approved** is true, then make **Reviewed By** read-only
 
 > [!div class="mx-imgBorder"] > ![read-only work item rules](media/125_04.png)
 

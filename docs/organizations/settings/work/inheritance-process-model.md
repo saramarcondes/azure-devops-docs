@@ -37,8 +37,8 @@ Below you'll find an index to those tasks you can perform to customize an inheri
 
 You'll see two types of processes:
 
-* ![locked icon](media/process/locked-icon.png) System processes &mdash;[Agile, Basic, Scrum, and CMMI](../../../boards/work-items/guidance/choose-process.md)&mdash;which are locked from being changed.
-* ![inherited icon](media/process/inherited-process-icon.png) Inherited processes, which you can customize and that inherit definitions from the system process from which they were created. System processes are owned and updated periodically by Microsoft. Any updates made to a system process automatically cause an update to your inherited processes.
+- ![locked icon](media/process/locked-icon.png) System processes &mdash;[Agile, Basic, Scrum, and CMMI](../../../boards/work-items/guidance/choose-process.md)&mdash;which are locked from being changed.
+- ![inherited icon](media/process/inherited-process-icon.png) Inherited processes, which you can customize and that inherit definitions from the system process from which they were created. System processes are owned and updated periodically by Microsoft. Any updates made to a system process automatically cause an update to your inherited processes.
 
 ::: moniker range="azure-devops-2019"
 
@@ -70,9 +70,9 @@ To rename a process, open the &hellip; context menu for the process and choose *
 
 If you want to switch the process a project uses from one system process to another, you can do that. To make these changes, you must create an inherited process based on the process you want to switch to. For example, instructions are provided to support the following changes:
 
-* [From Basic to Agile](change-process-basic-to-agile.md)
-* [From Scrum to Agile](change-process-scrum-to-agile.md)
-* [From Agile to Scrum](change-process-agile-to-scrum.md)
+- [From Basic to Agile](change-process-basic-to-agile.md)
+- [From Scrum to Agile](change-process-scrum-to-agile.md)
+- [From Agile to Scrum](change-process-agile-to-scrum.md)
 
 Following the guidance provided in the above listed articles, you can also make additional changes, for example, from CMMI to Agile or Agile to CMMI.
 
@@ -200,8 +200,8 @@ Fields are defined for all projects and processes in the organization. That mean
 
 When adding custom fields, note the following limits:
 
-* A maximum of 64 fields can be defined for each WIT
-* A maximum of 512 fields can be defined per process
+- A maximum of 64 fields can be defined for each WIT
+- A maximum of 512 fields can be defined per process
 
 In addition, you can [add an existing field](customize-process-field.md#add-existing-field) to another WIT within the process. For example, you can add Due Date to the user story or bug WITs.
 
@@ -209,21 +209,21 @@ In addition, you can [add an existing field](customize-process-field.md#add-exis
 
 ::: moniker range="azure-devops"
 
-* You can't change the field name or data type once you've defined it
-* You can't modify the gray area on the form where the State, Reason, Area Path, and Iteration Path fields are located
-* You can't change the picklist order, picklists display in alphabetic order
-* You can't import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](../../../reference/xml/define-global-lists.md).
+- You can't change the field name or data type once you've defined it
+- You can't modify the gray area on the form where the State, Reason, Area Path, and Iteration Path fields are located
+- You can't change the picklist order, picklists display in alphabetic order
+- You can't import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](../../../reference/xml/define-global-lists.md).
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-* You can't change the field name or data type once you've defined it
-* You can't modify the gray area on the form where the State, Reason, Area Path, and Iteration Path fields are located
-* With regards to picklists, you currently can't perform these operations:
-  * Change the picklist of an inherited field, such as the Activity or Discipline field
-  * Change the picklist order, picklists display in alphabetic order
-* Import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](../../../reference/xml/define-global-lists.md).
+- You can't change the field name or data type once you've defined it
+- You can't modify the gray area on the form where the State, Reason, Area Path, and Iteration Path fields are located
+- With regards to picklists, you currently can't perform these operations:
+  - Change the picklist of an inherited field, such as the Activity or Discipline field
+  - Change the picklist order, picklists display in alphabetic order
+- Import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](../../../reference/xml/define-global-lists.md).
 
 > [!NOTE]  
 > With the inherited process, you can't modify the picklists of pre-defined fields&mdash;such as [Activity](../../../boards/queries/query-numeric.md), [Automation Status](../../../boards/queries/build-test-integration.md), [Discipline](../../../boards/queries/query-numeric.md), [Priority](../../../boards/queries/planning-ranking-priorities.md), plus others.
@@ -234,8 +234,8 @@ In addition, you can [add an existing field](customize-process-field.md#add-exis
 
 The following picklists are configured for each project and not customizable through an inherited process.
 
-* [Area paths](../../../organizations/settings/set-area-paths.md)
-* [Iteration paths](../../../organizations/settings/set-iteration-paths-sprints.md)
+- [Area paths](../../../organizations/settings/set-area-paths.md)
+- [Iteration paths](../../../organizations/settings/set-iteration-paths-sprints.md)
 
 Picklists associated with person-name fields, such as Assigned To and Changed By, are managed based on the users you add to a [project or team](../../accounts/add-team-members.md).
 
@@ -265,8 +265,8 @@ Each WIT&mdash;bug, task, user story, etc.&mdash;has several system rules alread
 
 For example, several rules exist to copy the current user identity under the following conditions:
 
-* When a work item is modified, copy the user identity to the Changed By field
-* When the workflow state changes to Closed or Done, copy the user identity to the Closed By field.
+- When a work item is modified, copy the user identity to the Changed By field
+- When the workflow state changes to Closed or Done, copy the user identity to the Closed By field.
 
 > [!IMPORTANT]  
 > Predefined system rules take precedent over any custom rule that you define which would overwrite it.
@@ -275,11 +275,11 @@ Custom rules provide support for a number of business use cases, allowing you to
 
 With a custom rule, you can define a number of actions based on specific conditions. For example, you can apply a rule to support these types of scenarios:
 
-* When a value is defined for Priority, then make Risk a required field
-* When a change is made to the value of Release, then clear the value of "Milestone"
-* When a change was made to the value of Remaining Work, then make Completed Work a required field
-* When the value of Approved is True, then make Approved By a required field
-* When a user story is created, make the following fields required: Priority, Risk, and Effort
+- When a value is defined for Priority, then make Risk a required field
+- When a change is made to the value of Release, then clear the value of "Milestone"
+- When a change was made to the value of Remaining Work, then make Completed Work a required field
+- When the value of Approved is True, then make Approved By a required field
+- When a user story is created, make the following fields required: Priority, Risk, and Effort
 
 [!INCLUDE [temp](../includes/tip-formula-rule.md)]
 
@@ -289,8 +289,8 @@ For details on defining custom rules, see [Add a rule to a work item type](../..
 
 Using one of the following two conditions, you can make select fields required for a user of a security group or who are not a member of a security group.
 
-* `current user is a member of a group...`
-* `current user is not a member of a group...`
+- `current user is a member of a group...`
+- `current user is not a member of a group...`
 
 For example, you can make the Title or the State field Read-only for select users or groups.
 
@@ -413,9 +413,9 @@ If you only add groups and fields to the first two columns, then the layout refl
 
 The web form resizes depending on the width available and the number of columns in the layout. At maximum width, in most web browsers, each column within a page displays within its own column. As the display width decreases, each column resizes proportionally as follows:
 
-* For three columns: 50%, 25%, and 25%
-* For two columns: 66% and 33%
-* For one column: 100%.
+- For three columns: 50%, 25%, and 25%
+- For two columns: 66% and 33%
+- For one column: 100%.
 
 When the display width won't accommodate all columns, columns appear stacked within the column to the left.
 
@@ -455,18 +455,18 @@ You can customize the workflow of any WIT by hiding inherited states or adding c
 
 **The workflow states must conform to the following rules:**
 
-* At least one state must be defined for either the _Proposed_ or _In Progress_ state categories
-* At a minimum, there must be at least two workflow states defined
+- At least one state must be defined for either the _Proposed_ or _In Progress_ state categories
+- At a minimum, there must be at least two workflow states defined
 
 **What you can't customize**
 
-* You can't modify an inherited state (you can't change its name, color, or category), but you can hide it
-* You can't modify the state assigned to the _Completed_ state category for any WIT, custom or inherited
-* You can't change the name of a custom state
-* You can't change the order of states (states are listed in the order you add them within the States page, and they're listed alphabetically within the drop-down list of a work item form)
-* You can't specify a Reason for a state, instead, default reasons are defined such as _Moved to state Triaged_, _Moved out of state Triaged_
-* You can't change the location of the State and Reason fields on the form
-* You can't restrict transitions, all transitions are defined from any state to another state.
+- You can't modify an inherited state (you can't change its name, color, or category), but you can hide it
+- You can't modify the state assigned to the _Completed_ state category for any WIT, custom or inherited
+- You can't change the name of a custom state
+- You can't change the order of states (states are listed in the order you add them within the States page, and they're listed alphabetically within the drop-down list of a work item form)
+- You can't specify a Reason for a state, instead, default reasons are defined such as _Moved to state Triaged_, _Moved out of state Triaged_
+- You can't change the location of the State and Reason fields on the form
+- You can't restrict transitions, all transitions are defined from any state to another state.
 
 ## Backlog and board customizations
 
@@ -508,12 +508,12 @@ When you change the default WIT for a backlog level, it causes that WIT to appea
 
 **What you can't customize**
 
-* You can't add or remove an inherited WIT to or from a backlog, for example, you can't add the Issue WIT to the product backlog
-* You can't remove an inherited portfolio level from the product (but you can rename them)
-* You can't insert a backlog level within the existing set of defined backlogs
-* You can't reorder the backlog levels
-* You can't create a custom task level, although you can add custom WITs to the iteration backlog
-* You can't add the _Bug_ WIT to any backlog level. Instead, the system allows each team to decide how they want to manage bugs. To learn more, see [Show bugs on backlogs and boards](../show-bugs-on-backlog.md).
+- You can't add or remove an inherited WIT to or from a backlog, for example, you can't add the Issue WIT to the product backlog
+- You can't remove an inherited portfolio level from the product (but you can rename them)
+- You can't insert a backlog level within the existing set of defined backlogs
+- You can't reorder the backlog levels
+- You can't create a custom task level, although you can add custom WITs to the iteration backlog
+- You can't add the _Bug_ WIT to any backlog level. Instead, the system allows each team to decide how they want to manage bugs. To learn more, see [Show bugs on backlogs and boards](../show-bugs-on-backlog.md).
 
 ### Fields added to WITs associated with a backlog level
 

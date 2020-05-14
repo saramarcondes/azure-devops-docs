@@ -44,23 +44,23 @@ Once approved, reviewers will see the **Complete** (or **Auto-complete**) button
 
 In a PR with more than a few comments, it can be hard to keep track of all of the conversations. To help users better manage comments, we’ve simplified the process of resolving items that have been addressed with a number of enhancements:
 
-* In the header for every PR, you’ll now see a count of the comments that have been resolved.
+- In the header for every PR, you’ll now see a count of the comments that have been resolved.
 
 ![pr header](media/02_15_13.png)
 
-* When a comment has been addressed, you can resolve it with a single click.
+- When a comment has been addressed, you can resolve it with a single click.
 
 ![resolve button](media/02_15_15.png)
 
-* If you have comments to add while you’re resolving, you can reply and resolve in a single gesture.
+- If you have comments to add while you’re resolving, you can reply and resolve in a single gesture.
 
 ![reply and resolve](media/02_15_16.png)
 
-* As comments are resolved, you’ll see the count go up until everything has been addressed.
+- As comments are resolved, you’ll see the count go up until everything has been addressed.
 
 ![pr header](media/02_15_17.png)
 
-* The filter in the Overview has been improved to enable filtering by various comment states and to show the count of comments for each filter option.
+- The filter in the Overview has been improved to enable filtering by various comment states and to show the count of comments for each filter option.
 
 ![pr filter](media/02_15_14.png)
 
@@ -74,10 +74,10 @@ In the **Pull Request details** view, the **Updates** tab has been improved to s
 
 You can now filter the commit history results by [advanced filtering options](https://www.git-scm.com/docs/git-log). You can filter commits by:
 
-* full history
-* full history with simplified merges
-* first parent
-* simple history (This is the default filter setting)
+- full history
+- full history with simplified merges
+- first parent
+- simple history (This is the default filter setting)
 
 ![filtering](media/02_15_01.png)
 

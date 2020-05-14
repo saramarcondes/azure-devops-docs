@@ -43,8 +43,8 @@ View the [Azure DevOps WIT Client OM Migration Guide](https://github.com/Microso
 
 ## Resources
 
-* [Migration guide with code samples](https://github.com/Microsoft/azure-devops-wit-client-om-migration-guide)
-* [Work Item Tracking REST API documentation](/rest/api/azure/devops/wit?view=azure-devops-rest-5.0)
+- [Migration guide with code samples](https://github.com/Microsoft/azure-devops-wit-client-om-migration-guide)
+- [Work Item Tracking REST API documentation](/rest/api/azure/devops/wit?view=azure-devops-rest-5.0)
 
 ## Support
 

@@ -22,8 +22,7 @@ This article shows you how to create a report of a pipeline's daily stage failur
 
 The following image shows an example of such a chart.
 
-> [!div class="mx-imgBorder"]
-> ![Sample - Pipelines Stage wise failure - Report](media/odatapowerbi-pipelines/stagewisefailure-report.png)
+> [!div class="mx-imgBorder"] > ![Sample - Pipelines Stage wise failure - Report](media/odatapowerbi-pipelines/stagewisefailure-report.png)
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
@@ -143,18 +142,15 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 
 1.  Choose the expand button.
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI + OData - Choose expand button](media/odatapowerbi-pipelines/stagewisefailure-expand1.png)
+    > [!div class="mx-imgBorder"] > ![Power BI + OData - Choose expand button](media/odatapowerbi-pipelines/stagewisefailure-expand1.png)
 
 1.  Select the checkbox "(Select All Columns)" to expand.
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI + OData - Select all columns](media/odatapowerbi-pipelines/stagewisefailure-expand2.png)
+    > [!div class="mx-imgBorder"] > ![Power BI + OData - Select all columns](media/odatapowerbi-pipelines/stagewisefailure-expand2.png)
 
 1.  The table now contains the expanded entity **CompletedOn.Date**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI + OData - Expanded entity](media/odatapowerbi-pipelines/stagewisefailure-expand3.png)
+    > [!div class="mx-imgBorder"] > ![Power BI + OData - Expanded entity](media/odatapowerbi-pipelines/stagewisefailure-expand3.png)
 
 ### Change column type
 
@@ -162,8 +158,7 @@ The query doesn't return all the columns in the format in which you can directly
 
 1.  Change the type of column FailedStageCount to **Whole Number**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI + OData - change column type](media/odatapowerbi-pipelines/stagewisefailure-changecolumntype1.png)
+    > [!div class="mx-imgBorder"] > ![Power BI + OData - change column type](media/odatapowerbi-pipelines/stagewisefailure-changecolumntype1.png)
 
 ### Rename fields and query
 
@@ -171,18 +166,15 @@ When finished, you may choose to rename columns.
 
 1.  Right-click a column header and select **Rename...**
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI Rename Columns](media/odatapowerbi-pipelines/stagewisefailure-renamerightclick.png)
+    > [!div class="mx-imgBorder"] > ![Power BI Rename Columns](media/odatapowerbi-pipelines/stagewisefailure-renamerightclick.png)
 
 1.  You also may want to rename the query from the default **Query1**, to something more meaningful.
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI Rename Query](media/odatapowerbi-pipelines/renamequery.png)
+    > [!div class="mx-imgBorder"] > ![Power BI Rename Query](media/odatapowerbi-pipelines/renamequery.png)
 
 1.  Once done, choose **Close & Apply** to save the query and return to Power BI.
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI Close & Apply](media/odatapowerbi-pipelines/closeandapply.png)
+    > [!div class="mx-imgBorder"] > ![Power BI Close & Apply](media/odatapowerbi-pipelines/closeandapply.png)
 
 ## Create the report
 
@@ -191,8 +183,7 @@ Power BI shows you the fields you can report on.
 > [!NOTE]  
 > The example below assumes that no one renamed any columns.
 
-> [!div class="mx-imgBorder"]
-> ![Sample - Pipelines stage wise failures - Fields](media/odatapowerbi-pipelines/stagewisefailure-fields.png)
+> [!div class="mx-imgBorder"] > ![Sample - Pipelines stage wise failures - Fields](media/odatapowerbi-pipelines/stagewisefailure-fields.png)
 
 For a simple report, do the following steps:
 
@@ -200,19 +191,18 @@ For a simple report, do the following steps:
 
 1.  Add the field "PipelineRunCompletedOn.Date" to **Axis**.
 
-    * Right-click "PipelineRunCompletedOn.Date" and select "PipelineRunCompletedOn.Date", rather than Date Hierarchy.
+    - Right-click "PipelineRunCompletedOn.Date" and select "PipelineRunCompletedOn.Date", rather than Date Hierarchy.
 
 1.  Add the field "FailedStageCount" to **Values**.
 
-    * Right-click "FailedStageCount" field and ensure **Sum** is selected.
+    - Right-click "FailedStageCount" field and ensure **Sum** is selected.
 
 1.  Add the field "PipelineJob.StageName" to **Legend**.
-    * Right-click "PipelineJob.StageName" field and ensure **Sum** is selected.
+    - Right-click "PipelineJob.StageName" field and ensure **Sum** is selected.
 
 Your report should look similar to the following image.
 
-> [!div class="mx-imgBorder"]
-> ![Sample - Pipelines Stage wise failures - Report](media/odatapowerbi-pipelines/stagewisefailure-report.png)
+> [!div class="mx-imgBorder"] > ![Sample - Pipelines Stage wise failures - Report](media/odatapowerbi-pipelines/stagewisefailure-report.png)
 
 ## Additional queries
 

@@ -27,30 +27,30 @@ Because permissions are applied at project creation time by a process template, 
 If your TFVC project was created prior to TFS 2015 Update 1, a project administrator will need to apply some project-level permissions once the first Git repo is created. Go to the Version Control administration page and select the "Git repositories" node in the tree. To set up the same group permissions as any of our default process templates (Agile, Scrum, CMMI), add the following TFS groups and permissions:
 
 1.  [_ProjectName_]\Readers
-    * Allow: Read
-    * Not set: All others
+    - Allow: Read
+    - Not set: All others
 2.  [_ProjectName_]\Contributors
-    * Allow: Branch creation, Contribute, Note management, Read, Tag creation
-    * Not set: All others
+    - Allow: Branch creation, Contribute, Note management, Read, Tag creation
+    - Not set: All others
 3.  [_ProjectName_]\Build Administrators
-    * Allow: Branch creation, Contribute, Note management, Read, Tag creation
-    * Not set: All others
+    - Allow: Branch creation, Contribute, Note management, Read, Tag creation
+    - Not set: All others
 
 If your TFVC project was created **after** TFS 2015 Update 1, these permissions have already been applied for you, and no action is necessary except creating the repository.
 
 ### Add a Team Foundation Version Control repo to a Git project
 
-The project administrator will need to apply some project folder-level permissions when the project folder is created. Go to the Version Control administration page and select the "$/_ProjectName_" node in the tree. To set up the same groups as any of our default process templates (Agile, Scrum, CMMI), add the following TFS groups and permissions:
+The project administrator will need to apply some project folder-level permissions when the project folder is created. Go to the Version Control administration page and select the "\$/_ProjectName_" node in the tree. To set up the same groups as any of our default process templates (Agile, Scrum, CMMI), add the following TFS groups and permissions:
 
 1.  [_ProjectName_]\Readers
-    * Allow: Read
-    * Not set: All others
+    - Allow: Read
+    - Not set: All others
 2.  [_ProjectName_]\Contributors
-    * Allow: Check in, Check out, Label, Lock, Merge, Read
-    * Not set: All others
+    - Allow: Check in, Check out, Label, Lock, Merge, Read
+    - Not set: All others
 3.  [_ProjectName_]\Build Administrators
-    * Allow: Check in, Check out, Label, Lock, Merge, Read
-    * Not set: All others
+    - Allow: Check in, Check out, Label, Lock, Merge, Read
+    - Not set: All others
 
 ## Projects with multiple repo types in Visual Studio
 

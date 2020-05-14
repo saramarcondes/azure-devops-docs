@@ -14,12 +14,12 @@ ms.date: 08/22/2016
 
 In this article, learn how to customize how the work item form gets presented to users via contributions that are made through an extension.
 
-* [Add a group to the main page](#addagroup)
-* [Add a page (tab)](#addapage)
-* [Add an action to the context menu](#addmenuaction)
-* [Add a custom control](./custom-control.md)
-* [Listen for events on the form](#listenforevents)
-* [Configure contributions in work item form](#showcontributions)
+- [Add a group to the main page](#addagroup)
+- [Add a page (tab)](#addapage)
+- [Add an action to the context menu](#addmenuaction)
+- [Add a custom control](./custom-control.md)
+- [Listen for events on the form](#listenforevents)
+- [Configure contributions in work item form](#showcontributions)
 
 See the **UI** example in the [Azure DevOps Services Extension Samples](https://github.com/Microsoft/vso-extension-samples/tree/master/ui) on GitHub for the full source.
 
@@ -33,7 +33,7 @@ To add a group to the main page, add a contribution to your extension manifest. 
 
 ```json
 "contributions": [
-   {  
+   {
        "id": "sample-work-item-form-group",
        "type": "ms.vss-work-web.work-item-form-group",
        "description": "Custom work item form group",
@@ -145,7 +145,7 @@ To add a page to the work item form, add a contribution to your extension manife
 
 ```json
 "contributions": [
-    {  
+    {
         "id": "sample-work-item-form-page",
         "type": "ms.vss-work-web.work-item-form-page",
         "description": "Custom work item form page",
@@ -189,20 +189,20 @@ To add an item to the work item toolbar, add this contribution to your extension
 
 ```json
 "contributions": [
-   {  
-      "id": "sample-work-item-menu",  
-      "type": "ms.vss-web.action",  
-      "description": "Sample toolbar item which updates the title of a work item",  
-      "targets": [  
-          "ms.vss-work-web.work-item-context-menu"  
-      ],  
-      "properties": {  
-          "text": "Try me!",  
-          "title": "Updates the title of the work item from the extension",  
-          "toolbarText": "Try me!",  
-          "icon": "images/show-properties.png",  
-          "uri": "menu-workItemToolbarButton.html"  
-      }  
+   {
+      "id": "sample-work-item-menu",
+      "type": "ms.vss-web.action",
+      "description": "Sample toolbar item which updates the title of a work item",
+      "targets": [
+          "ms.vss-work-web.work-item-context-menu"
+      ],
+      "properties": {
+          "text": "Try me!",
+          "title": "Updates the title of the work item from the extension",
+          "toolbarText": "Try me!",
+          "icon": "images/show-properties.png",
+          "uri": "menu-workItemToolbarButton.html"
+      }
    }
 ]
 ```
@@ -227,7 +227,7 @@ To add an observer to the work item, which listens to the work item events, add 
 
 ```json
 "contributions": [
-   {  
+   {
        "id": "sample-work-item-form-observer",
        "type": "ms.vss-work-web.work-item-notifications",
        "description": "Gets events about the current work item form for the 'Try Me!' toolbar button",

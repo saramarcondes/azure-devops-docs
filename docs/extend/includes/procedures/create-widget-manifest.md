@@ -82,10 +82,10 @@ Add a `contributions` property to the JSON file. The value for this property is 
 
 Each contribution entry defines [certain properties](../../develop/manifest.md#contributions).
 
-* The **id** to identify your contribution. This should be unique within an extension. This ID should match with the name you used in Step 3 to register your widget.
-* The **type** of contribution. For all widgets, this should be `ms.vss-dashboards-web.widget`.
-* The array of **targets** to which the contribution is contributing. For all widgets, this should be `[ms.vss-dashboards-web.widget-catalog]`.
-* The **properties** is an object that includes properties for the contribution type. For widgets, the below properties are mandatory.
+- The **id** to identify your contribution. This should be unique within an extension. This ID should match with the name you used in Step 3 to register your widget.
+- The **type** of contribution. For all widgets, this should be `ms.vss-dashboards-web.widget`.
+- The array of **targets** to which the contribution is contributing. For all widgets, this should be `[ms.vss-dashboards-web.widget-catalog]`.
+- The **properties** is an object that includes properties for the contribution type. For widgets, the below properties are mandatory.
 
 | Property        | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

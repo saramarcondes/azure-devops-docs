@@ -113,11 +113,11 @@ default.
 
 When it comes to security, there are different best practices and levels of permissiveness. While there's no one right way to handle permissions, we hope these examples help you empower your team to work securely with builds.
 
-* In many cases you probably also want to set **Delete build pipeline** to _Allow_. Otherwise these team members can't delete even their own build pipelines.
+- In many cases you probably also want to set **Delete build pipeline** to _Allow_. Otherwise these team members can't delete even their own build pipelines.
 
-* Without **Delete builds** permission, users cannot delete even their own completed builds. However, keep in mind that they can automatically delete old unneeded builds using [retention policies](retention.md).
+- Without **Delete builds** permission, users cannot delete even their own completed builds. However, keep in mind that they can automatically delete old unneeded builds using [retention policies](retention.md).
 
-* We recommend that you do not grant these permissions directly to a person. A better practice is to add the person to the build administrator group or another group, and manage permissions on that group.
+- We recommend that you do not grant these permissions directly to a person. A better practice is to add the person to the build administrator group or another group, and manage permissions on that group.
 
 ## Release permissions
 
@@ -206,6 +206,6 @@ You [add users to the following roles](set-permissions.md) from the collection-l
 
 ## Related notes
 
-* [Set build and release permissions](set-permissions.md)
-* [Default permissions and access](../../organizations/security/permissions-access.md)
-* [Permissions and groups reference](../../organizations/security/permissions.md)
+- [Set build and release permissions](set-permissions.md)
+- [Default permissions and access](../../organizations/security/permissions-access.md)
+- [Permissions and groups reference](../../organizations/security/permissions.md)

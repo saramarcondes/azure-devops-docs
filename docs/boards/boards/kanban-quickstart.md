@@ -144,7 +144,7 @@ To get the full power of the Kanban board, configure it to map the flow of work 
 
 ## Related articles
 
-* [Kanban key concepts](kanban-key-concepts.md)
-* [Kanban best practices](best-practices-kanban.md)
-* [Cumulative flow diagram](../../report/dashboards/cumulative-flow.md)
-* [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow-cycle-lead-time-guidance.md)
+- [Kanban key concepts](kanban-key-concepts.md)
+- [Kanban best practices](best-practices-kanban.md)
+- [Cumulative flow diagram](../../report/dashboards/cumulative-flow.md)
+- [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow-cycle-lead-time-guidance.md)

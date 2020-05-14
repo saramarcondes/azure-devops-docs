@@ -54,10 +54,10 @@ In order to fix this issue, we recommend that you update the firewall for **outb
 
 We've made updates to several of the Azure Pipelines hosted VM images. Highlights include:
 
-* Added ATL for ARM and ARM64 with and without Spectre mitigations to VS 2017 (already present in VS 2019).
-* Updated patch versions of Java and Go for Ubuntu 16.04, VS 2017, and VS 2019.
-* Increased the limit for open files to 50,000 on Ubuntu 16.04.
-* Various bug fixes.
+- Added ATL for ARM and ARM64 with and without Spectre mitigations to VS 2017 (already present in VS 2019).
+- Updated patch versions of Java and Go for Ubuntu 16.04, VS 2017, and VS 2019.
+- Increased the limit for open files to 50,000 on Ubuntu 16.04.
+- Various bug fixes.
 
 You can find more details about the latest releases [here](https://github.com/microsoft/azure-pipelines-image-generation/releases).
 

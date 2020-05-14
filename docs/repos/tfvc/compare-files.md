@@ -32,9 +32,9 @@ You can compare any two files using the Compare dialog. The files can both resid
 
 3.  Specify the two files you want to compare - one under **Source Path** and the other under **Target Path**:
 
-    * Type a path, or open the **Browse** menu, choose **Local Path** or **Server Path**, and then browse to choose the file.
+    - Type a path, or open the **Browse** menu, choose **Local Path** or **Server Path**, and then browse to choose the file.
 
-    * Choose an option to specify file the server file version when specifying a **Server Path** from the **Type** menu: **Changeset**, **Date**, **Label**, **Latest Version**, or **Workspace Version**.
+    - Choose an option to specify file the server file version when specifying a **Server Path** from the **Type** menu: **Changeset**, **Date**, **Label**, **Latest Version**, or **Workspace Version**.
 
     > [!TIP]
     > To compare any two local files, select **Local Path...** from both **Browse...** drop downs in the Compare dialog.
@@ -51,12 +51,12 @@ Compare your work with the latest version on your Team Foundation Server while c
 
 3.  On the **Pending Changes** view, locate the file in the **Included Changes** list. Open the shortcut menu for this file (select the file and right-click), and then:
 
-    * Choose **Compare with Workspace Version** to see what changes you have made to the version you checked out.
+    - Choose **Compare with Workspace Version** to see what changes you have made to the version you checked out.
 
       > [!TIP]
       > You can also press Ctrl+Shift and then double-click the file.
 
-    * Choose **Compare with Latest Version** to see how the changes you have made compare to the latest version of the file on your Team Foundation Server.
+    - Choose **Compare with Latest Version** to see how the changes you have made compare to the latest version of the file on your Team Foundation Server.
 
 4.  The Diff window appears. You can continue to make changes to the file in this window.
 
@@ -95,17 +95,17 @@ When you compare files using the instructions in the previous sections, Visual S
 
 Here are some tips for working with the **Diff** window:
 
-* Although **Side-by-side mode** is generally more effective in most cases, you can use whichever mode works best for you and the code you are examining.
+- Although **Side-by-side mode** is generally more effective in most cases, you can use whichever mode works best for you and the code you are examining.
 
-* To skip:
+- To skip:
 
-  * To the next difference, choose **Next difference** ![Next difference](media/compare-files/IC558315.gif) (Keyboard: F8).
+  - To the next difference, choose **Next difference** ![Next difference](media/compare-files/IC558315.gif) (Keyboard: F8).
 
-  * To the previous difference, choose **Previous difference** ![Previous difference](media/compare-files/IC558316.gif) (Keyboard: Shift+F8).
+  - To the previous difference, choose **Previous difference** ![Previous difference](media/compare-files/IC558316.gif) (Keyboard: Shift+F8).
 
-  * Back and forth in the file, choose a section of the ![Step 5](media/compare-files/IC646328.png) visual summary.
+  - Back and forth in the file, choose a section of the ![Step 5](media/compare-files/IC646328.png) visual summary.
 
-* When you participate in a [code review](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md), you use the **Diff** window to see the code changes that are the subject of the review. For more information, see [Day in the life of a devops Developer: Suspend work, fix a bug, and conduct a code review](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md).
+- When you participate in a [code review](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md), you use the **Diff** window to see the code changes that are the subject of the review. For more information, see [Day in the life of a devops Developer: Suspend work, fix a bug, and conduct a code review](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md).
 
 ## Merge changes between versions
 
@@ -127,7 +127,7 @@ The `Base file` is the full path to the file both files are based off of, and `R
 
 ## Use the command prompt
 
-* [Difference command](difference-command.md) Compare two files from the command prompt.
+- [Difference command](difference-command.md) Compare two files from the command prompt.
 
 ## See Also
 

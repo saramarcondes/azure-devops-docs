@@ -15,9 +15,9 @@ author: yukom
 
 Over the past few months, we’ve been working hard on our build service. You haven’t seen much from it yet but the benefits really come to life with today’s deployment. We’ve been working on porting our build pool from the older Azure VM Roles to the new Azure IaaS VMs. There are a number of benefits that come from this:
 
-* You have more disk space to work with on the build machine. IaaS VMs allow for much more disk space than VM Roles did.
-* You can build Windows Store apps. This is because we can now run Windows Server 2012 VM images rather than Windows 2008 R2.
-* The build service is less expensive and time consuming to manage. While you won’t see that directly, you will see some indirect benefits in our ability to keep the build image more up to date with new SDK releases.
+- You have more disk space to work with on the build machine. IaaS VMs allow for much more disk space than VM Roles did.
+- You can build Windows Store apps. This is because we can now run Windows Server 2012 VM images rather than Windows 2008 R2.
+- The build service is less expensive and time consuming to manage. While you won’t see that directly, you will see some indirect benefits in our ability to keep the build image more up to date with new SDK releases.
 
 While we were working on this, Azure released the new 2.0 SDK and we have now updated the build service to support it.
 

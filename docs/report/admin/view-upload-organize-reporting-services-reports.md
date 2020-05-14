@@ -37,9 +37,9 @@ You use Report Manager to manage reports and report folders. To access the team 
 
 **Requirements**
 
-* To open a report from Team Explorer, your **View project-level information** permission on the team project must be set to **Allow**. You must also be a member of the SQL Server Reporting Services **Browser** role.
+- To open a report from Team Explorer, your **View project-level information** permission on the team project must be set to **Allow**. You must also be a member of the SQL Server Reporting Services **Browser** role.
 
-* To manage reports from Report Manager, you must be a member of the SQL Server Reporting Services **Team Foundation Content Manager** role. For more information, see [Grant permissions to view or create reports in TFS](../admin/grant-permissions-to-reports.md).
+- To manage reports from Report Manager, you must be a member of the SQL Server Reporting Services **Team Foundation Content Manager** role. For more information, see [Grant permissions to view or create reports in TFS](../admin/grant-permissions-to-reports.md).
 
   > [!NOTE]
   > If you are running Windows Server 2008 or Windows Vista, you might have trouble opening Web pages or sites from Team Explorer. For example, you might not be able to open the project portal by right-clicking a team project in Team Explorer and then clicking **Show Project Portal**. For more information about access issues that may occur with Windows Server 2008 or Windows Vista, see the following page on the Microsoft Web site: [User Account Control](https://go.microsoft.com/fwlink/?LinkId=111235).
@@ -55,9 +55,9 @@ You use Report Manager to manage reports and report folders. To access the team 
 
 Also, a red X icon might appear next to **Reports** if both of the following conditions are true:
 
-* Team Explorer is running on the same computer as Reporting Services.
+- Team Explorer is running on the same computer as Reporting Services.
 
-* You are not logged on as an administrator, or enhanced security is enabled for Internet Explorer.
+- You are not logged on as an administrator, or enhanced security is enabled for Internet Explorer.
 
   To correct this issue, log onto your computer as an administrator, or open Internet Explorer, open Internet Options, choose the **Security** tab, and clear the **Enabled Protected Mode** check box.
 
@@ -81,5 +81,5 @@ Also, a red X icon might appear next to **Reports** if both of the following con
 
 ## Related notes
 
-* [Reporting Services Reports](../sql-reports/reporting-services-reports.md)
-* [Create and manage Reporting Services reports](../sql-reports/create-and-manage-reporting-services-reports.md)
+- [Reporting Services Reports](../sql-reports/reporting-services-reports.md)
+- [Create and manage Reporting Services reports](../sql-reports/create-and-manage-reporting-services-reports.md)

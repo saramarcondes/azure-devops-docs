@@ -17,9 +17,9 @@ monikerRange: '>= tfs-2017'
 
 You can migrate code from an existing TFVC repository to a new Git repository within the same organization. While migrating to Git has many benefits, it is an involved process for large TFVC repositories and teams. Centralized version control systems, like TFVC, behave different than Git in fundamental ways. The switch involves a lot more than learning new commands. It is a disruptive change that requires careful planning. You need to think about:
 
-* Revising tools and processes
-* Removing binaries and executables
-* Training your team
+- Revising tools and processes
+- Removing binaries and executables
+- Training your team
 
 We strongly recommend reading our whitepapers - [Centralized version control to Git](/azure/devops/learn/git/centralized-to-git) and [TFVC to Git](/azure/devops/learn/git/migrate-from-tfvc-to-git) before starting the migration.
 

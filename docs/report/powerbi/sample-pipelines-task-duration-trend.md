@@ -22,8 +22,7 @@ This article shows you how to get the daily trend report of the time taken to ex
 
 The following image shows an example of such a chart.
 
-> [!div class="mx-imgBorder"]
-> ![Sample - Pipelines task duration trend - Report](media/odatapowerbi-pipelines/taskdurationtrend-report.png)
+> [!div class="mx-imgBorder"] > ![Sample - Pipelines task duration trend - Report](media/odatapowerbi-pipelines/taskdurationtrend-report.png)
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
@@ -139,18 +138,15 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 
 1.  Choose the expand button
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI + OData - Choose expand button](media/odatapowerbi-pipelines/taskdurationtrend-expand1.png)
+    > [!div class="mx-imgBorder"] > ![Power BI + OData - Choose expand button](media/odatapowerbi-pipelines/taskdurationtrend-expand1.png)
 
 1.  Select the checkbox "(Select All Columns)" to expand
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI + OData - Select all columns](media/odatapowerbi-pipelines/taskdurationtrend-expand2.png)
+    > [!div class="mx-imgBorder"] > ![Power BI + OData - Select all columns](media/odatapowerbi-pipelines/taskdurationtrend-expand2.png)
 
 1.  The table now contains the expanded entity **CompletedOn.Date**
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI + OData - Expanded entity](media/odatapowerbi-pipelines/taskdurationtrend-expand3.png)
+    > [!div class="mx-imgBorder"] > ![Power BI + OData - Expanded entity](media/odatapowerbi-pipelines/taskdurationtrend-expand3.png)
 
 ### Change column type
 
@@ -158,8 +154,7 @@ The query doesn't return all the columns in the format in which you can directly
 
 1.  1.  Change the type of column **TaskDuration80thPercentileInSeconds** to **Decimal Number**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI + OData - change column type](media/odatapowerbi-pipelines/taskduration-changecolumntype.png)
+    > [!div class="mx-imgBorder"] > ![Power BI + OData - change column type](media/odatapowerbi-pipelines/taskduration-changecolumntype.png)
 
 ### Rename fields and query
 
@@ -167,18 +162,15 @@ When finished, you may choose to rename columns.
 
 1.  Right-click a column header and select **Rename...**
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI Rename Columns](media/odatapowerbi-pipelines/taskduration-renamerightclick.png)
+    > [!div class="mx-imgBorder"] > ![Power BI Rename Columns](media/odatapowerbi-pipelines/taskduration-renamerightclick.png)
 
 1.  You also may want to rename the query from the default **Query1**, to something more meaningful.
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI Rename Query](media/odatapowerbi-pipelines/renamequery.png)
+    > [!div class="mx-imgBorder"] > ![Power BI Rename Query](media/odatapowerbi-pipelines/renamequery.png)
 
 1.  Once done, choose **Close & Apply** to save the query and return to Power BI.
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI Close & Apply](media/odatapowerbi-pipelines/closeandapply.png)
+    > [!div class="mx-imgBorder"] > ![Power BI Close & Apply](media/odatapowerbi-pipelines/closeandapply.png)
 
 ## Create the report
 
@@ -186,8 +178,7 @@ Power BI shows you the fields you can report on.
 
 > [!NOTE]  
 > The example below assumes that no one renamed any columns.
-> [!div class="mx-imgBorder"]
-> ![Sample - Pipelines Duration - Fields](media/odatapowerbi-pipelines/taskdurationtrend-fields.png)
+> [!div class="mx-imgBorder"] > ![Sample - Pipelines Duration - Fields](media/odatapowerbi-pipelines/taskdurationtrend-fields.png)
 
 For a simple report, do the following steps:
 
@@ -195,16 +186,15 @@ For a simple report, do the following steps:
 
 1.  Add the field "PipelineRunCompletedOn.Date" to **Axis**.
 
-    * Right-click "PipelineRunCompletedOn.Date" and select "PipelineRunCompletedOn.Date", rather than Date Hierarchy.
+    - Right-click "PipelineRunCompletedOn.Date" and select "PipelineRunCompletedOn.Date", rather than Date Hierarchy.
 
 1.  Add the field "TaskDuration80thPercentileInSeconds" to **Values**.
 
-    * Right-click "TaskDuration80thPercentileInSeconds" field and ensure **Sum** is selected.
+    - Right-click "TaskDuration80thPercentileInSeconds" field and ensure **Sum** is selected.
 
 Your report should look like this.
 
-> [!div class="mx-imgBorder"]
-> ![Sample - Pipelines task duration trend - Report](media/odatapowerbi-pipelines/taskdurationtrend-report.png)
+> [!div class="mx-imgBorder"] > ![Sample - Pipelines task duration trend - Report](media/odatapowerbi-pipelines/taskdurationtrend-report.png)
 
 ## Additional queries
 
@@ -319,9 +309,9 @@ percentile_cont(ActivityDurationSeconds, 0.95, PipelineRunCompletedDateSK) as Ta
 
 You may want to view the duration trend of a task for a particular **branch** only. To create the report, follow the below additional steps along with what is defined previously in this article.
 
-* Expand Branch into Branch.BranchName
-* Select Power BI Visualization **Slicer** and add the field Branch.BranchName to the slicer's **Field**
-* Select the branch from the slicer for which you need to see the task duration trend
+- Expand Branch into Branch.BranchName
+- Select Power BI Visualization **Slicer** and add the field Branch.BranchName to the slicer's **Field**
+- Select the branch from the slicer for which you need to see the task duration trend
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -373,9 +363,9 @@ $apply=filter(
 
 You may want to view the task duration trend for all the pipeline tasks in a single report. To create the report, perform the following additional steps along with those steps defined previously in this article.
 
-* Select Power BI Visualization **Slicer** and add the field TaskDisplayName to the slicer's **Field**
+- Select Power BI Visualization **Slicer** and add the field TaskDisplayName to the slicer's **Field**
 
-* Select the task from the slicer for which you need to see the duration trend
+- Select the task from the slicer for which you need to see the duration trend
 
 #### [Power BI query](#tab/powerbi/)
 

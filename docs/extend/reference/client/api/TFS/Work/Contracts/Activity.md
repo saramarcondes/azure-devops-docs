@@ -15,6 +15,6 @@ Module path: `TFS/Work/Contracts`
 
 ### Members
 
-* `capacityPerDay`: number.
+- `capacityPerDay`: number.
 
-* `name`: string.
+- `name`: string.

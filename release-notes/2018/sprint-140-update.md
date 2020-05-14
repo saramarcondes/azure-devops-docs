@@ -17,28 +17,28 @@ Check out the [Features](#features) list below for more.
 
 Azure Pipelines:
 
-* [Control specific build dependencies using container jobs](#control-specific-build-dependencies-using-container-jobs)
-* [Enable code coverage in .NET Core task](#enable-code-coverage-in-net-core-task)
+- [Control specific build dependencies using container jobs](#control-specific-build-dependencies-using-container-jobs)
+- [Enable code coverage in .NET Core task](#enable-code-coverage-in-net-core-task)
 
 Azure Boards:
 
-* [Leverage restructured Process REST APIs](#leverage-restructured-process-rest-apis)
+- [Leverage restructured Process REST APIs](#leverage-restructured-process-rest-apis)
 
 Azure Artifacts:
 
-* [Simplify authentication using the new cross-platform Credential Provider for NuGet](#simplify-authentication-using-the-new-cross-platform-credential-provider-for-nuget)
-* [Store artifacts using Universal Packages](#store-artifacts-using-universal-packages)
-* [Compress symbols when publishing to a file share](#compress-symbols-when-publishing-to-a-file-share)
+- [Simplify authentication using the new cross-platform Credential Provider for NuGet](#simplify-authentication-using-the-new-cross-platform-credential-provider-for-nuget)
+- [Store artifacts using Universal Packages](#store-artifacts-using-universal-packages)
+- [Compress symbols when publishing to a file share](#compress-symbols-when-publishing-to-a-file-share)
 
 Wiki:
 
-* [Embed a video in wiki](#embed-a-video-in-wiki)
-* [Rename a wiki](#rename-a-wiki)
-* [Insert a wiki table of contents from the format pane](#insert-a-wiki-table-of-contents-from-the-format-pane)
+- [Embed a video in wiki](#embed-a-video-in-wiki)
+- [Rename a wiki](#rename-a-wiki)
+- [Insert a wiki table of contents from the format pane](#insert-a-wiki-table-of-contents-from-the-format-pane)
 
 Administration:
 
-* [Manage your personal access tokens with filtering and paging](#manage-your-personal-access-tokens-with-filtering-and-paging)
+- [Manage your personal access tokens with filtering and paging](#manage-your-personal-access-tokens-with-filtering-and-paging)
 
 ## Next steps
 
@@ -77,13 +77,13 @@ To get the new provider, head to [GitHub](https://github.com/microsoft/artifacts
 
 Universal Packages are a new kind of package supported by Azure Artifacts. They provide a simple mechanism to store a collection of files in a feed with a package name and package version. The command line tooling is designed to efficiently transfer content from the client and service.
 
-* Consider using Universal Packages to store artifacts such as:
-* Configuration scripts and templates (e.g. ARM templates)
-* Database snapshots for integration testing
-* Machine learning training data and models
-* Developer tools and SDKs
-* 3D models and textures
-* Build outputs
+- Consider using Universal Packages to store artifacts such as:
+- Configuration scripts and templates (e.g. ARM templates)
+- Database snapshots for integration testing
+- Machine learning training data and models
+- Developer tools and SDKs
+- 3D models and textures
+- Build outputs
 
 Jump over to our [quickstart guide to get started with Universal Packages](/azure/devops/artifacts/quickstarts/universal-packages).
 

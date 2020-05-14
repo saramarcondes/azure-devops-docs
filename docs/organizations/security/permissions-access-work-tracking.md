@@ -89,16 +89,16 @@ Area permissions for web-based test case management and test execution control a
 
 The **Manage test suites** permission enables users to:
 
-* Create and modify test suites
-* Add or remove test cases to/from test suites
-* Change test configurations associated with test suites
-* Modify the suite hierarchy by moving a test suite
+- Create and modify test suites
+- Add or remove test cases to/from test suites
+- Change test configurations associated with test suites
+- Modify the suite hierarchy by moving a test suite
 
 The **Manage test plans** permission enables users to:
 
-* Create and modify test plans
-* Add or remove test suites to or from test plans
-* Change test plan properties such as build and test settings
+- Create and modify test plans
+- Add or remove test suites to or from test plans
+- Change test plan properties such as build and test settings
 
 ## Resources defined for the project
 
@@ -155,12 +155,12 @@ You set project-level information permissions from **Project settings** > **Perm
 
 The **Edit project-level information** permission includes the ability to perform these tasks for the project:
 
-* Create and modify areas and iterations
-* Edit check-in policies
-* Edit shared work item queries
-* Edit project level permission ACLs
-* Create and modify global lists
-* Edit [event subscriptions](permissions.md#alerts) (email or SOAP) on project level events.
+- Create and modify areas and iterations
+- Edit check-in policies
+- Edit shared work item queries
+- Edit project level permission ACLs
+- Create and modify global lists
+- Edit [event subscriptions](permissions.md#alerts) (email or SOAP) on project level events.
 
 ## Team administrator role and permissions
 
@@ -240,8 +240,8 @@ For a comparison chart of Stakeholder versus basic access, see the [Feature Matr
 
 For information about each access levels, see [About access levels](access-levels.md). To assign access levels, see:
 
-* **Azure DevOps Services**: [Add users and assign licenses in Azure DevOps](../accounts/add-organization-users.md)
-* **Azure DevOps Server, TFS**: [Change access levels](change-access-levels.md)
+- **Azure DevOps Services**: [Add users and assign licenses in Azure DevOps](../accounts/add-organization-users.md)
+- **Azure DevOps Server, TFS**: [Change access levels](change-access-levels.md)
 
 <a id="grant-add-permissions"></a>
 
@@ -249,9 +249,9 @@ For information about each access levels, see [About access levels](access-level
 
 For teams to work autonomously, you may want to provide them with permissions that they don't have by default. Suggested tasks include providing team administrators or team leads permissions to:
 
-* [Create and edit child nodes under their default area path](set-permissions-access-work-tracking.md)
-* [Create and edit child nodes under an existing iteration node](set-permissions-access-work-tracking.md)
-* [Create shared queries and folders under the Shared Queries folder](../../boards/queries/set-query-permissions.md).
+- [Create and edit child nodes under their default area path](set-permissions-access-work-tracking.md)
+- [Create and edit child nodes under an existing iteration node](set-permissions-access-work-tracking.md)
+- [Create shared queries and folders under the Shared Queries folder](../../boards/queries/set-query-permissions.md).
 
 By default, team members inherit the permissions afforded to members of the project Contributors group. Members of this group can add and modify source code, create and delete test runs, and create and modify work items. They can [collaborate on a Git project](../../repos/git/gitquickstart.md) or collaborate with other team members and [check in work to the team's code base (TFVC)](../../repos/tfvc/check-your-work-team-codebase.md).
 
@@ -271,7 +271,7 @@ If your on-premises TFS deployment includes reporting or SharePoint Products, ad
 
 ## Related notes
 
-* [Set permissions and access for work tracking](set-permissions-access-work-tracking.md)
-* [Get started as a Stakeholder](get-started-stakeholder.md)
-* [Add another team](../../organizations/settings/add-teams.md)
-* [Manage teams and configure team tools](../settings/manage-teams.md)
+- [Set permissions and access for work tracking](set-permissions-access-work-tracking.md)
+- [Get started as a Stakeholder](get-started-stakeholder.md)
+- [Add another team](../../organizations/settings/add-teams.md)
+- [Manage teams and configure team tools](../settings/manage-teams.md)

@@ -19,10 +19,10 @@ An audit log entry for an extension
 
 ### Members
 
-* `auditAction`: string. Change that was made to extension
+- `auditAction`: string. Change that was made to extension
 
-* `auditDate`: Date. Date at which the change was made
+- `auditDate`: Date. Date at which the change was made
 
-* `comment`: string. Extra information about the change
+- `comment`: string. Extra information about the change
 
-* `updatedBy`: any. Represents the user who made the change
+- `updatedBy`: any. Represents the user who made the change

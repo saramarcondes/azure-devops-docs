@@ -181,15 +181,15 @@ Jobs can be of different types, depending on where they run.
 
 # [YAML](#tab/yaml)
 
-* **Agent pool jobs** run on an agent in an agent pool.
-* **Server jobs** run on the Azure DevOps Server.
-* **Container jobs** run in a container on an agent in an agent pool. See [container jobs](container-phases.md) for more information.
+- **Agent pool jobs** run on an agent in an agent pool.
+- **Server jobs** run on the Azure DevOps Server.
+- **Container jobs** run in a container on an agent in an agent pool. See [container jobs](container-phases.md) for more information.
 
 # [Classic](#tab/classic)
 
-* **Agent pool jobs** run on an agent in an agent pool.
-* **Server jobs** run on the Azure DevOps Server.
-* **Deployment group jobs** run on machines in a deployment group. These jobs are only available in a release pipeline. See [deployment group jobs](deployment-group-phases.md) for more information.
+- **Agent pool jobs** run on an agent in an agent pool.
+- **Server jobs** run on the Azure DevOps Server.
+- **Deployment group jobs** run on machines in a deployment group. These jobs are only available in a release pipeline. See [deployment group jobs](deployment-group-phases.md) for more information.
 
 ---
 
@@ -199,14 +199,14 @@ Jobs can be of different types, depending on where they run.
 
 # [YAML](#tab/yaml)
 
-* **Agent pool jobs** run on an agent in an agent pool.
-* **Server jobs** run on the Azure DevOps Server.
+- **Agent pool jobs** run on an agent in an agent pool.
+- **Server jobs** run on the Azure DevOps Server.
 
 # [Classic](#tab/classic)
 
-* **Agent pool jobs** run on an agent in an agent pool.
-* **Server jobs** run on the Azure DevOps Server.
-* **Deployment group jobs** run on machines in a deployment group. These jobs are only available in a release pipeline.
+- **Agent pool jobs** run on an agent in an agent pool.
+- **Server jobs** run on the Azure DevOps Server.
+- **Deployment group jobs** run on machines in a deployment group. These jobs are only available in a release pipeline.
 
 ---
 
@@ -214,15 +214,15 @@ Jobs can be of different types, depending on where they run.
 
 ::: moniker range="tfs-2018"
 
-* **Agent pool jobs** run on an agent in the agent pool. These jobs are available in build and release pipelines.
-* **Server jobs** run on TFS. These jobs are available in build and release pipelines.
-* **Deployment group jobs** run on machines in a deployment group. These jobs are available only in release pipelines.
+- **Agent pool jobs** run on an agent in the agent pool. These jobs are available in build and release pipelines.
+- **Server jobs** run on TFS. These jobs are available in build and release pipelines.
+- **Deployment group jobs** run on machines in a deployment group. These jobs are available only in release pipelines.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
 
-* **Agent pool jobs** run on an agent in the agent pool. These jobs are only available release pipelines.
+- **Agent pool jobs** run on an agent in the agent pool. These jobs are only available release pipelines.
 
 ::: moniker-end
 
@@ -454,11 +454,11 @@ In the example above:
 It's important to understand some of the consequences of
 phased execution:
 
-* Each job may use different
+- Each job may use different
   agents. You should not assume that the state from an earlier
   job is available during subsequent jobs.
 
-* The **Continue on Error** and **Always run** options for
+- The **Continue on Error** and **Always run** options for
   tasks in each job do not have any effect on tasks in
   subsequent jobs. For example, setting
   **Always run** on a task at the end of the first job will
@@ -554,9 +554,9 @@ Conditions are not supported in this version of TFS.
 
 To avoid taking up resources when your job is hung or waiting too long, it's a good idea to set a limit on how long your job is allowed to run. Use the job timeout setting to specify the limit in minutes for running the job. Setting the value to **zero** means that the job can run:
 
-* Forever on self-hosted agents
-* For 360 minutes (6 hours) on Microsoft-hosted agents with a public project and public repository
-* For 60 minutes on Microsoft-hosted agents with a private project or private repository (unless [additional capacity](/azure/devops/pipelines/agents/hosted#capabilities-and-limitations) is paid for)
+- Forever on self-hosted agents
+- For 360 minutes (6 hours) on Microsoft-hosted agents with a public project and public repository
+- For 60 minutes on Microsoft-hosted agents with a private project or private repository (unless [additional capacity](/azure/devops/pipelines/agents/hosted#capabilities-and-limitations) is paid for)
 
 The timeout period begins when the job starts running. It does not include the
 time the job is queued or is waiting for an agent.
@@ -603,13 +603,13 @@ You can also set the timeout for each task individually - see [task control opti
 
 From a single job you author, you can run multiple jobs on multiple agents in parallel. Some examples include:
 
-* **Multi-configuration builds:** You can build multiple configurations in parallel. For
+- **Multi-configuration builds:** You can build multiple configurations in parallel. For
   example, you could build a Visual C++ app for both `debug` and `release` configurations on both `x86` and `x64` platforms. To learn more, see [Visual Studio Build - multiple configurations for multiple platforms](../tasks/build/visual-studio-build.md#multiconfiguration).
 
-* **Multi-configuration deployments:** You can run multiple deployments
+- **Multi-configuration deployments:** You can run multiple deployments
   in parallel, for example, to different geographic regions.
 
-* **Multi-configuration testing:** You can run test multiple configurations in parallel.
+- **Multi-configuration testing:** You can run test multiple configurations in parallel.
 
 #### [YAML](#tab/yaml/)
 
@@ -677,33 +677,33 @@ you identify a variable named a **multiplier**, and specify a list
 of values for that multiplier. A separate job is run for each value
 in the list. To use multipliers for build or deployment, you must:
 
-* Define one or more [variables](../release/variables.md)
+- Define one or more [variables](../release/variables.md)
   on the **Variables** tab of the pipeline or in a [variable group](../library/variable-groups.md).
   Each variable, known in this context as a _multiplier_ variable,
   must be defined as a comma-delimited list of the values you want
   to pass individually to the agents.
 
-* Enter the name of the multiplier variable, without the **$** and parentheses, as the
+- Enter the name of the multiplier variable, without the **\$** and parentheses, as the
   value of the **Multipliers** parameter. Note that using a secret variable as a multiplier variable is not supported.
 
-* If you want to execute the job for more than one multiplier variable, enter
-  the variable names as a comma-delimited list - omitting the **$** and parentheses
+- If you want to execute the job for more than one multiplier variable, enter
+  the variable names as a comma-delimited list - omitting the **\$** and parentheses
   for each one.
 
-* If you want to limit the number of agents used during the deployment to a
+- If you want to limit the number of agents used during the deployment to a
   number less than you have configured for your subscription, enter that value as the
   **Maximum number of agents** parameter.
 
 For example, you might define two variables named **Location** and **Browser** as follows::
 
-* **Location** = `US,Europe`
-* **Browser** = `IE,Chrome,Edge,Firefox`
+- **Location** = `US,Europe`
+- **Browser** = `IE,Chrome,Edge,Firefox`
 
 The following configuration will execute the deployment eight times using
 a maximum of four agents at any one time:
 
-* **Multipliers** = `Location,Browser`
-* **Maximum number of agents** = `4`
+- **Multipliers** = `Location,Browser`
+- **Maximum number of agents** = `4`
 
 With multi-configuration you can run multiple jobs, each with a different value for one or more variables (multipliers). If you want to run the same job on multiple agents, then you can use **multi-agent** option of parallelism. The test slicing example above can be accomplished through multi-agent option.
 
@@ -747,7 +747,7 @@ and the variables `System.JobPositionInPhase` and `System.TotalJobsInPhase` are 
 
 ## Job variables
 
-If you are using YAML, variables can be specified on the job. The variables can be passed to task inputs using the macro syntax $(variableName), or accessed within a script using the stage variable.
+If you are using YAML, variables can be specified on the job. The variables can be passed to task inputs using the macro syntax \$(variableName), or accessed within a script using the stage variable.
 
 #### [YAML](#tab/yaml/)
 
@@ -797,10 +797,10 @@ When you run an agent pool job, it creates a workspace on the agent. The workspa
 
 ::: moniker-end
 
-* `Build.SourcesDirectory` is where tasks download the application's source code.
-* `Build.ArtifactStagingDirectory` is where tasks download artifacts needed for the pipeline or upload artifacts before they are published.
-* `Build.BinariesDirectory` is where tasks write their outputs.
-* `Common.TestResultsDirectory` is where tasks upload their test results.
+- `Build.SourcesDirectory` is where tasks download the application's source code.
+- `Build.ArtifactStagingDirectory` is where tasks download artifacts needed for the pipeline or upload artifacts before they are published.
+- `Build.BinariesDirectory` is where tasks write their outputs.
+- `Common.TestResultsDirectory` is where tasks upload their test results.
 
 #### [YAML](#tab/yaml/)
 
@@ -816,12 +816,11 @@ When you run a pipeline on a self-hosted agent, by default, none of the sub-dire
 
 When you specify one of the `clean` options, they are interpreted as follows:
 
-* `outputs`: Delete `Build.BinariesDirectory` before running a new job.
-* `resources`: Delete `Build.SourcesDirectory` before running a new job.
-* `all`: Delete the entire `Pipeline.Workspace` directory before running a new job.
+- `outputs`: Delete `Build.BinariesDirectory` before running a new job.
+- `resources`: Delete `Build.SourcesDirectory` before running a new job.
+- `all`: Delete the entire `Pipeline.Workspace` directory before running a new job.
 
-> [!NOTE]
-> `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
+> [!NOTE] > `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
 
 ::: moniker-end
 ::: moniker range="< azure-devops-2019"
@@ -832,9 +831,9 @@ YAML is not yet supported in TFS.
 
 When you run a pipeline on a self-hosted agent, by default, none of the sub-directories are cleaned in between two consecutive runs. As a result, you can run incremental builds and deployments, provided that tasks are implemented to do that. However, you can override this behavior using the `Clean build` option under `Get sources` task. The options vary depending on the type of repository that you use.
 
-* [GitHub](../repos/github.md#get-the-source-code)
-* [Azure Repos Git](../repos/azure-repos-git.md)
-* [TFVC](../repos/tfvc.md)
+- [GitHub](../repos/github.md#get-the-source-code)
+- [Azure Repos Git](../repos/azure-repos-git.md)
+- [TFVC](../repos/tfvc.md)
 
 ---
 
@@ -936,5 +935,5 @@ Select the **Allow scripts to access OAuth token** option in the control options
 
 ## Related articles
 
-* [Deployment group jobs](deployment-group-phases.md)
-* [Conditions](conditions.md)
+- [Deployment group jobs](deployment-group-phases.md)
+- [Conditions](conditions.md)

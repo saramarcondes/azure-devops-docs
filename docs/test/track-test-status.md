@@ -250,7 +250,7 @@ Or learn more about
 
 ## See also
 
-* [FAQs for manual testing](reference-qa.md#trackstatus)
+- [FAQs for manual testing](reference-qa.md#trackstatus)
 
 ## Next step
 

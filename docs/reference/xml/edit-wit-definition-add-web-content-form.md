@@ -17,11 +17,11 @@ You can add web content or HTML content to a work item form by exporting the typ
 
 The Web content that you display can be specified in one of the following ways:
 
-* URL of a Web page
+- URL of a Web page
 
-* A URL path that is dynamically determined at run time based on one or more field values defined for the work item
+- A URL path that is dynamically determined at run time based on one or more field values defined for the work item
 
-* HTML content
+- HTML content
 
 For information about the syntax structure of the elements used to add Web content to a work item type (WIT), see [WebpageControlOptions](webpagecontroloptions-xml-elements-reference.md) and [Link and Param](link-param-xml-elements-reference.md).
 
@@ -54,70 +54,70 @@ For information about the syntax structure of the elements used to add Web conte
 1.  Find the `<TabGroup>` section of the XML file. Notice that there are `<Tab>` elements for items such as Links and File Attachments in which each `<Tab>` element contains a `<Control>` element that renders the respective control.
 
     ```xml
-    <Tab Label="Links">  
-          <Control Type="LinksControl" />  
-    </Tab>  
-    <Tab Label="File Attachments">  
-          <Control Type="AttachmentsControl" />  
-    </Tab>  
+    <Tab Label="Links">
+          <Control Type="LinksControl" />
+    </Tab>
+    <Tab Label="File Attachments">
+          <Control Type="AttachmentsControl" />
+    </Tab>
     ```
 
 2.  Add a new `<Tab>` element that will contain the Web or HTML content that you want to display in the work item form. Copy the following code into the `<TabGroup>` section of the file based on how you are defining the Web content.
 
-    * **To specify the URL of a Web page**:
+    - **To specify the URL of a Web page**:
 
       ```xml
-      <Tab Label="Tab Label">  
-            <Group>  
-            <Column PercentWidth="100">  
-               <Control Type="WebpageControl" Name="Webpage" Label=" Name of Web Page" LabelPosition="Top" >  
-                     <WebpageControlOptions AllowScript="false">  
-                     <Link UrlRoot="URL of Web Page" />  
-                     </WebpageControlOptions>  
-               </Control>  
-            </Column>  
-            </Group>  
-      </Tab>  
+      <Tab Label="Tab Label">
+            <Group>
+            <Column PercentWidth="100">
+               <Control Type="WebpageControl" Name="Webpage" Label=" Name of Web Page" LabelPosition="Top" >
+                     <WebpageControlOptions AllowScript="false">
+                     <Link UrlRoot="URL of Web Page" />
+                     </WebpageControlOptions>
+               </Control>
+            </Column>
+            </Group>
+      </Tab>
       ```
 
       Replace _Tab Label_ and _URL of Web Page_ with the information that you want to appear on the work item form.
 
-    * **To specify a dynamic URL to be determined at run time**:
+    - **To specify a dynamic URL to be determined at run time**:
 
       ```xml
-      <Tab Label="Tab Label">  
-            <Group>  
-            <Column PercentWidth="100">  
-               <Control Type="WebpageControl" Name="Webpage" Label=" Name of Web Page" LabelPosition="Top" >  
-                     <WebpageControlOptions AllowScript="false">  
-                     <Link UrlRoot="URL of Web Page" URLPath="URL path with parameters >  
-            <Param Index="0" Value="Param Value 0"/>  
-            <Param Index="1" Value="Param Value 1"/>  
-            <Param Index="2" Value="Param Value 2"/>  
-                     </Link>  
-                     </WebpageControlOptions>  
-               </Control>  
-            </Column>  
-            </Group>  
-      </Tab>  
+      <Tab Label="Tab Label">
+            <Group>
+            <Column PercentWidth="100">
+               <Control Type="WebpageControl" Name="Webpage" Label=" Name of Web Page" LabelPosition="Top" >
+                     <WebpageControlOptions AllowScript="false">
+                     <Link UrlRoot="URL of Web Page" URLPath="URL path with parameters >
+            <Param Index="0" Value="Param Value 0"/>
+            <Param Index="1" Value="Param Value 1"/>
+            <Param Index="2" Value="Param Value 2"/>
+                     </Link>
+                     </WebpageControlOptions>
+               </Control>
+            </Column>
+            </Group>
+      </Tab>
       ```
 
       Replace _Tab Label_, _URL of Web Page, URL path with parameters_, and _Param Value 1, 2, and 3_ with the information that you want to appear on the work item form.
 
-    * **To specify HTML content**:
+    - **To specify HTML content**:
 
       ```xml
-      <Tab Label="Tab Label">  
-            <Group>  
-            <Column PercentWidth="100">  
-               <Control Type="WebpageControl">  
-                     <Content>  
-                     <![CDATA[HTML Content]]>  
-                     </Content>  
-               </Control>  
-            </Column>  
-            </Group>  
-      </Tab>  
+      <Tab Label="Tab Label">
+            <Group>
+            <Column PercentWidth="100">
+               <Control Type="WebpageControl">
+                     <Content>
+                     <![CDATA[HTML Content]]>
+                     </Content>
+               </Control>
+            </Column>
+            </Group>
+      </Tab>
       ```
 
       Replace _Tab Label_ and _HTML Content_ with the information that you want to appear on the work item form.
@@ -145,8 +145,8 @@ For information about the syntax structure of the elements used to add Web conte
 
 ## Related articles
 
-* [Customize your work tracking experience](../customize-work.md)
-* [Specify work item form controls](specify-work-item-form-controls.md)
-* [WebpageControlOptions](webpagecontroloptions-xml-elements-reference.md)
-* [Link and Param](link-param-xml-elements-reference.md)
-* [Import, export, and manage work item types](../witadmin/witadmin-import-export-manage-wits.md)
+- [Customize your work tracking experience](../customize-work.md)
+- [Specify work item form controls](specify-work-item-form-controls.md)
+- [WebpageControlOptions](webpagecontroloptions-xml-elements-reference.md)
+- [Link and Param](link-param-xml-elements-reference.md)
+- [Import, export, and manage work item types](../witadmin/witadmin-import-export-manage-wits.md)

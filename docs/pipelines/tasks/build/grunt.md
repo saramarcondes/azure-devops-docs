@@ -20,7 +20,7 @@ Use this task to run Grunt tasks using the JavaScript Task Runner.
 
 The build agent must have the following capability:
 
-* Grunt
+- Grunt
 
 ::: moniker range="> tfs-2018"
 

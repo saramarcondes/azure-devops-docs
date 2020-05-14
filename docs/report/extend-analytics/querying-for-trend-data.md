@@ -27,7 +27,7 @@ In this article you'll learn:
 
 > [!div class="checklist"]
 >
-> * How to construct a basic query for trend data
+> - How to construct a basic query for trend data
 
 Using the OData Aggregation Extensions, you can return aggregated data from Azure DevOps that is conducive to reporting. For example you could show bug trend for the month of March. Bug trends are a common and critical part of managing any project so you can put this to good use immediately.
 
@@ -52,8 +52,8 @@ Using the OData Aggregation Extensions, you can return aggregated data from Azur
 
 There are some basic requirements you need to effectively query the WorkItemSnapshot table:
 
-* The data needs to be filtered by date.
-* The aggregation should group by, at the very least, date. If not, response will have warning.
+- The data needs to be filtered by date.
+- The aggregation should group by, at the very least, date. If not, response will have warning.
 
 With this in mind, the query to create a bug trend report looks like the following:
 
@@ -142,4 +142,4 @@ In this query, there are two key differences. We added a filter clause to filter
 
 ## Related articles
 
-* [Construct aggregate data queries](aggregated-data-analytics.md) to count and analyse groups of related data.
+- [Construct aggregate data queries](aggregated-data-analytics.md) to count and analyse groups of related data.

@@ -20,4 +20,4 @@ If you're receiving this error and you haven't customized the process template f
 
 ### To correct this error
 
-* Contact the third-party developer or vendor that provided the process template and plug-in.
+- Contact the third-party developer or vendor that provided the process template and plug-in.

@@ -21,17 +21,17 @@ Your business structure should act as a guide to the number of organizations, pr
 
 Consider the following structures for your business or collaborative work in Azure DevOps:
 
-* [Quantity of organizations](#how-many-organizations-do-you-need)
-* [Quantity of projects under an organization](#how-many-projects-do-you-need)
+- [Quantity of organizations](#how-many-organizations-do-you-need)
+- [Quantity of projects under an organization](#how-many-projects-do-you-need)
 
 You also may want to plan for the following scenarios:
 
-* [Mapping your organizations and projects](#mapping-guidance-table) in Azure DevOps to your enterprise, business unit, and team structure
-* [Structuring your repositories (repos)](#structure-repos-and-version-control-within-a-project)
-* [Structuring your teams](#creating-a-team-for-each-distinct-product-or-feature-team)- it can either help or hinder teams to be Agile and autonomous
-* [Managing access to data](#more-about-organizational-structure) - who needs to have access and who doesn't?
-* [Reporting needs](#mapping-guidance-table)
-* Promoting common practices - learn more about [foundational elements you need to create an agile mindset and culture](../boards/plans/agile-culture.md).
+- [Mapping your organizations and projects](#mapping-guidance-table) in Azure DevOps to your enterprise, business unit, and team structure
+- [Structuring your repositories (repos)](#structure-repos-and-version-control-within-a-project)
+- [Structuring your teams](#creating-a-team-for-each-distinct-product-or-feature-team)- it can either help or hinder teams to be Agile and autonomous
+- [Managing access to data](#more-about-organizational-structure) - who needs to have access and who doesn't?
+- [Reporting needs](#mapping-guidance-table)
+- Promoting common practices - learn more about [foundational elements you need to create an agile mindset and culture](../boards/plans/agile-culture.md).
 
 You need to have at least one organization, which may represent your company, your larger collection of code projects, or even multiple related business units.
 
@@ -41,11 +41,11 @@ An organization in Azure DevOps is a mechanism for organizing and connecting gro
 
 Each organization gets its own _free tier_ of services (up to five users for each service type) as follows. You can use all the services, or choose just what you need to complement your existing workflows.
 
-* [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/): One hosted job with 1,800 minutes per month for CI/CD and one self-hosted job
-* [Azure Boards](https://azure.microsoft.com/services/devops/boards/): Work item tracking and Kanban boards
-* [Azure Repos](https://azure.microsoft.com/services/devops/repos/): Unlimited private Git repos
-* [Azure Artifacts](https://azure.microsoft.com/services/devops/artifacts/): Package management
-* Unlimited Stakeholders
+- [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/): One hosted job with 1,800 minutes per month for CI/CD and one self-hosted job
+- [Azure Boards](https://azure.microsoft.com/services/devops/boards/): Work item tracking and Kanban boards
+- [Azure Repos](https://azure.microsoft.com/services/devops/repos/): Unlimited private Git repos
+- [Azure Artifacts](https://azure.microsoft.com/services/devops/artifacts/): Package management
+- Unlimited Stakeholders
   [!INCLUDE [free-tier](../includes/free-tier.md)]
 
 [!INCLUDE [loadtest-deprecated-include](../test/includes/loadtest-deprecated-include.md)]
@@ -68,10 +68,10 @@ Every team owns their own backlog, to create a new backlog you create a new team
 
 A project in Azure DevOps contains the following set of features:
 
-* Boards and backlogs for agile planning
-* Pipelines for continuous integration and deployment
-* Repos for version control and management of source code and artifacts
-* Continuous test integration throughout the project life cycle Each organization contains one or more projects
+- Boards and backlogs for agile planning
+- Pipelines for continuous integration and deployment
+- Repos for version control and management of source code and artifacts
+- Continuous test integration throughout the project life cycle Each organization contains one or more projects
 
 In the following image, the Contoso company has four projects within their Contoso-Manufacturing organization.
 
@@ -83,8 +83,8 @@ You need at least one project to start using an Azure DevOps service, such as Az
 
 Within an organization, you can do either of the following approaches:
 
-* Create a single project that contains many repos and teams
-* Create many projects, each with its own set of teams, repos, builds, work items, and other elements
+- Create a single project that contains many repos and teams
+- Create many projects, each with its own set of teams, repos, builds, work items, and other elements
 
 Even if you have many teams working on hundreds of different applications and software projects, you can manage them within a single project in Azure DevOps. However, if you want to manage more granular security between your software projects and their teams, consider using many projects. At the highest level of isolation is an organization, where each organization is connected to a single Azure AD tenant. A single Azure AD tenant can be connected to many Azure DevOps organizations.
 
@@ -108,10 +108,10 @@ Azure DevOps provides cross-project experiences when it comes to managing work.
 
 You may want to add another project because of the following scenarios:
 
-* To prohibit or manage access to the information within a project
-* To support custom work tracking processes for specific business units within your organization
-* To support entirely separate business units that have their own administrative policies and administrators
-* To support testing customization activities or adding extensions before rolling out changes to the working project
+- To prohibit or manage access to the information within a project
+- To support custom work tracking processes for specific business units within your organization
+- To support entirely separate business units that have their own administrative policies and administrators
+- To support testing customization activities or adding extensions before rolling out changes to the working project
 
 When you're considering many projects, keep in mind that Git repo portability makes it easy to migrate repos (including full history) between projects. Other history can't be migrated between projects. Examples are push and pull request history.
 
@@ -149,7 +149,7 @@ In projects where the Azure Repos service is enabled, version control repos can 
 
 Azure Repos offers the following version control systems for teams to choose from:
 
-* Git and TFVC. Projects can have repos of each type. By default, new projects have an empty Git repo. Git enables a great amount of flexibility in developer workflows and integrates with nearly every relevant tool in the developer ecosystem. Any project can use Git repos. There's no limit on the number of Git repos that can be added to a project.
+- Git and TFVC. Projects can have repos of each type. By default, new projects have an empty Git repo. Git enables a great amount of flexibility in developer workflows and integrates with nearly every relevant tool in the developer ecosystem. Any project can use Git repos. There's no limit on the number of Git repos that can be added to a project.
 
 TFVC is a centralized version control system that is also available. Unlike Git, only one TFVC repository is allowed for a project. But, within that repo, folders, and branches are used to organize code for multiple products and services, if desired. Projects can use both TFVC and Git, if appropriate.
 
@@ -210,6 +210,6 @@ For a larger company, you can create multiple organizations using different user
 
 ## Related articles
 
-* [Create an organization](../organizations/accounts/create-organization.md)
-* [Create a project](../organizations/projects/create-project.md)
-* [Code with git](code-with-git.md)
+- [Create an organization](../organizations/accounts/create-organization.md)
+- [Create a project](../organizations/projects/create-project.md)
+- [Code with git](code-with-git.md)

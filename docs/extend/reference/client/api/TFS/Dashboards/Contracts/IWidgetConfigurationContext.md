@@ -28,5 +28,5 @@ Currently, change in configuration is the only event that can be notified.
 
 ### Parameters
 
-* `event`: string. This is the name of the event
-* `eventArgs`: [EventArgs](./EventArgs.md). Arguments to be passed for the event that is being notified
+- `event`: string. This is the name of the event
+- `eventArgs`: [EventArgs](./EventArgs.md). Arguments to be passed for the event that is being notified

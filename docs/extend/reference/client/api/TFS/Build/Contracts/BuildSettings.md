@@ -16,6 +16,6 @@ Module path: `TFS/Build/Contracts`
 
 ### Members
 
-* `defaultRetentionPolicy`: [RetentionPolicy](./RetentionPolicy.md).
+- `defaultRetentionPolicy`: [RetentionPolicy](./RetentionPolicy.md).
 
-* `maximumRetentionPolicy`: [RetentionPolicy](./RetentionPolicy.md).
+- `maximumRetentionPolicy`: [RetentionPolicy](./RetentionPolicy.md).

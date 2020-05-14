@@ -17,9 +17,9 @@ In today's fast-paced, feature-driven markets, it's important to continuously de
 
 Are you planning to continuously integrate features into your application while they're under development? You probably have a few questions, such as:
 
-* How can you toggle features to hide, disable, or enable features at run-time?
-* How can you revert a change deployed to production without rolling back your release?
-* How can you present users with variants of a feature, to determine which one performs better?
+- How can you toggle features to hide, disable, or enable features at run-time?
+- How can you revert a change deployed to production without rolling back your release?
+- How can you present users with variants of a feature, to determine which one performs better?
 
 This topic aims to answer these questions and share an implementation of feature flags (FF) and A|B testing used with Azure DevOps extensions.
 
@@ -27,15 +27,15 @@ This topic aims to answer these questions and share an implementation of feature
 
 Before you introduce feature flags to your engineering process, it's important to consider:
 
-* Which users are you planning to target? For example, do you want to target specific or all users?
-* Would you like users to decide which features they want to use?
-* What's the value of embracing feature flags as part of your engineering process?
-* What's the cost to implement feature flags in your engineering process?
+- Which users are you planning to target? For example, do you want to target specific or all users?
+- Would you like users to decide which features they want to use?
+- What's the value of embracing feature flags as part of your engineering process?
+- What's the cost to implement feature flags in your engineering process?
 
 Before you flip your first feature flag in production, take the time to read:
 
-* ["A Rough Patch", by Brian Harry](https://blogs.msdn.microsoft.com/bharry/2013/11/25/a-rough-patch)
-* ["Feature Flags with Branching", by LaunchDarkly](https://launchdarkly.com/guide/flagsbranching.html)
+- ["A Rough Patch", by Brian Harry](https://blogs.msdn.microsoft.com/bharry/2013/11/25/a-rough-patch)
+- ["Feature Flags with Branching", by LaunchDarkly](https://launchdarkly.com/guide/flagsbranching.html)
 
 ## What are Feature Flags (FF)?
 
@@ -65,17 +65,17 @@ As outlined in [how to implement feature flags and A|B testing](https://blogs.ms
 
 They chose the [LaunchDarkly](https://launchdarkly.com/index.html) solution for several reasons:
 
-* It's a "software as a service" (SaaS) solution - No custom solution to maintain - No upgrades - you're always using the latest and greatest - No servers - [LaunchDarkly](https://launchdarkly.com/index.html) takes care of the machines that LaunchDarkly runs on - Always on and optimized for the Internet
-* It's integrated with Azure DevOps Services and Team Foundation Server (TFS)
-* It's simple and cost-effective for an open-source project
+- It's a "software as a service" (SaaS) solution - No custom solution to maintain - No upgrades - you're always using the latest and greatest - No servers - [LaunchDarkly](https://launchdarkly.com/index.html) takes care of the machines that LaunchDarkly runs on - Always on and optimized for the Internet
+- It's integrated with Azure DevOps Services and Team Foundation Server (TFS)
+- It's simple and cost-effective for an open-source project
 
 ## Common scenarios
 
 You have a [CI/CD pipeline](https://devblogs.microsoft.com/visualstudio/tag/cicd/) for every Azure DevOps extension you're hosting on the [marketplace](https://marketplace.visualstudio.com). You are using a ring deployment model and manual release approval checkpoints. The checkpoints are manual and time consuming, but necessary to minimize the chance of breaking the early-adopter and production user environments, forcing an expensive roll-back. You're looking for an engineering process, which enables you to:
 
-* Continuously deploy to production
-* Never roll back in production
-* Fine-tune the user experience in production
+- Continuously deploy to production
+- Never roll back in production
+- Fine-tune the user experience in production
 
 You have probably guessed it - feature flags!
 
@@ -116,20 +116,20 @@ You have granular control of each feature flag.
 
 You're able to:
 
-* Decouple deployment of releases and exposure of features
-* Make changes (enable|disable features) without redeployment
-* Fine-tune a user's features and experience
-* Enable a user to optionally select preview features
-* Hide an incomplete or faulty feature
+- Decouple deployment of releases and exposure of features
+- Make changes (enable|disable features) without redeployment
+- Fine-tune a user's features and experience
+- Enable a user to optionally select preview features
+- Hide an incomplete or faulty feature
 
 ## What's the cost?
 
 Aside from the licensing and maintenance cost of a feature flag service, you're adding technical debt to your code:
 
-* With a true or false feature flag, your doubling your code and test paths
-* With multi-value feature flag, you'll add even more code and test paths
-* You'll need to identify and remove stale feature flags
-* Understand and test the implications of flipping a feature flag
+- With a true or false feature flag, your doubling your code and test paths
+- With multi-value feature flag, you'll add even more code and test paths
+- You'll need to identify and remove stale feature flags
+- Understand and test the implications of flipping a feature flag
 
 > [!TIP]
 > To minimize the costs associated with the use of feature flags, keep feature flags short lived and prevent multiple feature flags from interfering with each other by affecting the same functionality.
@@ -158,9 +158,9 @@ No, rings and feature flags are symbiotic. Read [Feature Flags or Rings](https:/
 
 ## Reference information
 
-* [CI/CD pipeline examples](https://devblogs.microsoft.com/visualstudio/tag/cicd/)
-* [DevOps @ Microsoft](https://aka.ms/devops)
-* [How to implement feature flags and A|B testing](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/04/how-to-implement-feature-flags-and-ab-testing/)
+- [CI/CD pipeline examples](https://devblogs.microsoft.com/visualstudio/tag/cicd/)
+- [DevOps @ Microsoft](https://aka.ms/devops)
+- [How to implement feature flags and A|B testing](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/04/how-to-implement-feature-flags-and-ab-testing/)
 
 > Authors: Willy Schaub | Find the origin of this article and connect with the ALM | DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
 

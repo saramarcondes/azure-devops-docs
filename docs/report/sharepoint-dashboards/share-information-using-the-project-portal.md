@@ -34,7 +34,7 @@ Teams use project portals to share information and support how their team works.
     </tbody>
     </table>
 
-     If you don't see the documents icon, your team project is not configured with a SharePoint site. To learn how to configure a SharePoint site for your team project, see [Configure or add a project portal](../../project/configure-or-add-a-project-portal.md).  
+    If you don't see the documents icon, your team project is not configured with a SharePoint site. To learn how to configure a SharePoint site for your team project, see [Configure or add a project portal](../../project/configure-or-add-a-project-portal.md).
 
 2.  Show the project portal.
 
@@ -50,10 +50,10 @@ Teams use project portals to share information and support how their team works.
 
 ## Related notes
 
-* [Dashboards and reports](../overview.md)
-* [Agile process guidance](../../boards/work-items/guidance/agile-process.md)
-* [CMMI process guidance](../../boards/work-items/guidance/cmmi-process.md)
-* [Scrum process guidance](../../boards/work-items/guidance/scrum-process.md)
+- [Dashboards and reports](../overview.md)
+- [Agile process guidance](../../boards/work-items/guidance/agile-process.md)
+- [CMMI process guidance](../../boards/work-items/guidance/cmmi-process.md)
+- [Scrum process guidance](../../boards/work-items/guidance/scrum-process.md)
 
 ### Q: What artifacts are available with a SharePoint project portal?
 
@@ -75,8 +75,8 @@ You can [redirect process guidance](../../project/configure-or-redirect-process-
 
 **A:** If you want to specify an existing website as your team project's portal or support process guidance, see [Configure a project portal](../../project/configure-or-add-a-project-portal.md).
 
-    > [!IMPORTANT]  
-    >  If you add another type of website, the links to open the project portal from the web portal and Team Explorer don't appear. Also, the **Documents** page doesn't appear in Team Explorer.  
+    > [!IMPORTANT]
+    >  If you add another type of website, the links to open the project portal from the web portal and Team Explorer don't appear. Also, the **Documents** page doesn't appear in Team Explorer.
 
 **A:** If you have a SharePoint site already configured with Team Foundation Server Extensions for SharePoint, see [Configure a project portal](../../project/configure-or-add-a-project-portal.md).
 

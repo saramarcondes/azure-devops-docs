@@ -32,9 +32,9 @@ Additional ways to share information include using dashboards, and SharePoint po
 
 Using work items, you can share information in the following ways:
 
-* Add information to the Description or other rich-text field
-* Link to a web site or file, or attach files
-* Link to a storyboard file
+- Add information to the Description or other rich-text field
+- Link to a web site or file, or attach files
+- Link to a storyboard file
 
 > [!TIP]  
 > If you have stakeholders who don't contribute code but want to contribute to the discussion and review progress, make sure you provide them [stakeholder access](../../organizations/security/get-started-stakeholder.md) so that they can view work items and dashboards.
@@ -47,10 +47,10 @@ To convey detailed information, you can format text and insert images inline wit
 
 ::: moniker range=">= tfs-2017"
 
-* _Acceptance Criteria_
-* _Description_
-* _Steps_
-* _System Info_
+- _Acceptance Criteria_
+- _Description_
+- _Steps_
+- _System Info_
 
 ::: moniker-end
 
@@ -63,11 +63,11 @@ To convey detailed information, you can format text and insert images inline wit
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
-* _Acceptance Criteria_
-* _Description_
-* _History_
-* _Steps_
-* _System Info_
+- _Acceptance Criteria_
+- _Description_
+- _History_
+- _Steps_
+- _System Info_
 
 ::: moniker-end
 
@@ -111,9 +111,9 @@ The rich text formatting toolbar appears above each text box that can be formatt
 
 You can use the following shortcut keys to format your text:
 
-* **Bold**: **Ctrl+B**
-* _Italic_: **Ctrl+I**
-* <u>Underscore</u>: **Ctrl+U**
+- **Bold**: **Ctrl+B**
+- _Italic_: **Ctrl+I**
+- <u>Underscore</u>: **Ctrl+U**
 
 You can copy and paste HTML text or an image from another application directly into the text box using **Ctrl+C** and **Ctrl+V** shortcuts. You can also use the ![Remove format](../media/icons/remove-formatting-icon.png) icon or **CTRL+Spacebar** to remove formatting from highlighted text.
 
@@ -139,9 +139,9 @@ From Team Explorer you can choose the font, font size, and text and background c
 
 You can copy and paste HTML text or an image from another application directly into the text box using **Ctrl+C** and **Ctrl+V** shortcuts. You can use the following shortcut keys to format your text:
 
-* **Bold**: **Ctrl+B**
-* _Italic_: **Ctrl+I**
-* <u>Underscore</u>: **Ctrl+U**
+- **Bold**: **Ctrl+B**
+- _Italic_: **Ctrl+I**
+- <u>Underscore</u>: **Ctrl+U**
 
 [!INCLUDE [temp](../../includes/images-not-appearing-vs.md)]
 
@@ -153,9 +153,9 @@ From Team Explorer Everywhere you can exercise only basic format operations.
 
 You can use the following shortcut keys to format your text:
 
-* **Bold**: **Ctrl+B**
-* _Italic_: **Ctrl+I**
-* <u>Underscore</u>: **Ctrl+U**
+- **Bold**: **Ctrl+B**
+- _Italic_: **Ctrl+I**
+- <u>Underscore</u>: **Ctrl+U**
 
 You can copy and paste HTML text or an image from another application directly into the text box using **Ctrl+C** and **Ctrl+V** shortcuts.
 
@@ -169,8 +169,8 @@ To support traceability and add context to work items, you can link items to oth
 
 Again, your link options will differ depending on the client you use. For specific guidance, see these resources:
 
-* [Add link to work items](../backlogs/add-link.md)
-* [Link items to support traceability and manage dependencies](link-work-items-support-traceability.md)
+- [Add link to work items](../backlogs/add-link.md)
+- [Link items to support traceability and manage dependencies](link-work-items-support-traceability.md)
 
 <a id="attachments"></a>
 
@@ -236,7 +236,7 @@ You can edit, open, save, or delete an attachment by choosing an attachment and 
 
 Choose the **Attachments** tab icon to attach a file to the work item.
 
-<img src="media/share-plans-attachments-tfs-web-portal-tools.png" alt="Attachment controls, web portal (on-premises Azure DevOps), and Eclipse" style="border: 1px solid #C3C3C3;" />  
+<img src="media/share-plans-attachments-tfs-web-portal-tools.png" alt="Attachment controls, web portal (on-premises Azure DevOps), and Eclipse" style="border: 1px solid #C3C3C3;" />
 
 Choose the ![plus icon](../media/icons/Action_Add.png) plus icon to add an attachment. Choose an item and then choose ![ ](../media/icons/open-icon.png) the open icon to open the attachment or ![ ](../media/icons/download-icon.png) download icon to save a copy.
 
@@ -293,7 +293,7 @@ By linking your storyboard to a work item, you provide your team access to the s
 
 You can open Storyboarding with PowerPoint from the ![actions icon](../media/icons/actions-icon.png) actions menu within a work item form.
 
-<img src="media/share-plans-storyboard-vsts-menu.png" alt="Start storyboarding within work item web form, web portal" style="border: 1px solid #C3C3C3;" />  
+<img src="media/share-plans-storyboard-vsts-menu.png" alt="Start storyboarding within work item web form, web portal" style="border: 1px solid #C3C3C3;" />
 
 To link to an existing storyboard, click the ![Links page icon](../media/icons/icon-links-tab-wi.png) Links tab and add a storyboard link.
 
@@ -362,10 +362,10 @@ To learn more, see [Create a wiki for your project](../../project/wiki/wiki-crea
 
 You can use a SharePoint site to share and access documents from your project. Your team can use the SharePoint site, also referred to as the project portal, to share information in the following ways:
 
-* Share data contained in reports or dashboards
-* Share team progress using predefined or customized SharePoint dashboards
-* Share documents, files, images
-* Share team knowledge and processes using the SharePoint wiki.
+- Share data contained in reports or dashboards
+- Share team progress using predefined or customized SharePoint dashboards
+- Share documents, files, images
+- Share team knowledge and processes using the SharePoint wiki.
 
 To learn more, see [Share information using the project portal](../../report/sharepoint-dashboards/share-information-using-the-project-portal.md).
 
@@ -375,8 +375,8 @@ To learn more, see [Share information using the project portal](../../report/sha
 
 As you can see, there are many ways to share information using work items alone. See these additional tools and features to support planning, tracking, and sharing information with your team.
 
-* [Dashboards](../../report/dashboards/dashboards.md)
-* [Add and edit a wiki](../../project/wiki/add-edit-wiki.md)
+- [Dashboards](../../report/dashboards/dashboards.md)
+- [Add and edit a wiki](../../project/wiki/add-edit-wiki.md)
 
 ::: moniker range=">= tfs-2017"
 

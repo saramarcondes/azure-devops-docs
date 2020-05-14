@@ -16,8 +16,8 @@ In the **Sprint 131 Update** of Visual Studio Team Services (VSTS), there are a 
 
 Other highlights include:
 
-* [Query work across the iteration schedule with +/- @CurrentIteration](#query-work)
-* [Improve release times by partially downloading artifacts](#improve-release-times-by-partially-downloading-artifacts)
+- [Query work across the iteration schedule with +/- @CurrentIteration](#query-work)
+- [Improve release times by partially downloading artifacts](#improve-release-times-by-partially-downloading-artifacts)
 
 ## What’s new in VSTS
 
@@ -41,13 +41,13 @@ While queries, backlogs, and boards give you a number of ways to see your work, 
 
 The **Work Items** Hub now has 4 person-centric pivots to allow you to focus on what is important to you, as well as 3 project-centric views to get a better idea of your project’s work.
 
-* **Assigned to me** - all work items assigned to you in the project in the order they’re last updated
-* **Following** - all work items you’re [following](/azure/devops/boards/work-items/follow-work-items)
-* **Mentioned** - all work items you’ve been mentioned in, in the last 30 days
-* **My activity** - all work items that you have recently viewed or updated
-* **Recently updated** - all work items in your project that have been most recently updated
-* **Recently completed** - all work items in your project that have been recently completed
-* **Recently created** - all work items recently created in the project
+- **Assigned to me** - all work items assigned to you in the project in the order they’re last updated
+- **Following** - all work items you’re [following](/azure/devops/boards/work-items/follow-work-items)
+- **Mentioned** - all work items you’ve been mentioned in, in the last 30 days
+- **My activity** - all work items that you have recently viewed or updated
+- **Recently updated** - all work items in your project that have been most recently updated
+- **Recently completed** - all work items in your project that have been recently completed
+- **Recently created** - all work items recently created in the project
 
 > [!div class="mx-imgBorder"] > ![Work Items pivots](media/131_01.png)
 

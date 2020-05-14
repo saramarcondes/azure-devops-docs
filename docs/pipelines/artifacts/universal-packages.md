@@ -56,11 +56,11 @@ To publish to an external Universal Packages feed, you must first create a [serv
 
 To publish the files that you assembled previously as a Universal Package, add the **Universal Package** task and configure these options:
 
-* **Command:** Publish
-* **Path to file(s) to publish:** Leave this set to `$(Build.ArtifactStagingDirectory)` unless you selected a different output directory in the last step.
-* **Feed location:** Publish to an Azure Artifacts feed in this organization or in another organization.
-* **Destination feed:** Select the feed that you want to publish to.
-* **Package name:** Select an existing package (to publish a new version of that package), or enter a new package name (to publish the first version of a new package).
+- **Command:** Publish
+- **Path to file(s) to publish:** Leave this set to `$(Build.ArtifactStagingDirectory)` unless you selected a different output directory in the last step.
+- **Feed location:** Publish to an Azure Artifacts feed in this organization or in another organization.
+- **Destination feed:** Select the feed that you want to publish to.
+- **Package name:** Select an existing package (to publish a new version of that package), or enter a new package name (to publish the first version of a new package).
 
 ![Example Publish Universal Packages build step screenshot](media/universal-packages/publish.png)
 
@@ -132,12 +132,12 @@ steps:
     downloadDirectory: '$(Build.SourcesDirectory)\someFolder'
 ```
 
-| Argument           | Description                                                                  |
-| ------------------ | ---------------------------------------------------------------------------- |
-| vstsFeed           | The project and feed name that the package will be downloaded from.          |
-| vstsFeedPackage    | Name of the package to be downloaded.                                        |
-| vstsPackageVersion | Version of the package to be downloaded.                                     |
-| downloadDirectory  | Package destination directory. Default is $(System.DefaultWorkingDirectory). |
+| Argument           | Description                                                                   |
+| ------------------ | ----------------------------------------------------------------------------- |
+| vstsFeed           | The project and feed name that the package will be downloaded from.           |
+| vstsFeedPackage    | Name of the package to be downloaded.                                         |
+| vstsPackageVersion | Version of the package to be downloaded.                                      |
+| downloadDirectory  | Package destination directory. Default is \$(System.DefaultWorkingDirectory). |
 
 > See [Task control options](../process/tasks.md#task-control-options) to learn about the available control options for your task.
 
@@ -170,12 +170,12 @@ steps:
 
 To download a Universal Package, add the **Universal Package** task and configure these options:
 
-* **Command:** Download
-* **Destination directory**: Directory to download the package. The default is `$(System.DefaultWorkingDirectory)`.
-* **Feed location:** Download a Universal Package from an Azure Artifacts feed in this organization or in another organization.
-* **Feed:** Select the feed that you want to download from.
-* **Package name:** Select the package that you want to download.
-* **Version:** Select the version of the package that you want to download.
+- **Command:** Download
+- **Destination directory**: Directory to download the package. The default is `$(System.DefaultWorkingDirectory)`.
+- **Feed location:** Download a Universal Package from an Azure Artifacts feed in this organization or in another organization.
+- **Feed:** Select the feed that you want to download from.
+- **Package name:** Select the package that you want to download.
+- **Version:** Select the version of the package that you want to download.
 
 ![Example Download Universal Packages build step screenshot](media/universal-packages/download.png)
 

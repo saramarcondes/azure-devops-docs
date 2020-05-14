@@ -29,50 +29,50 @@ Module path: `TFS/VersionControl/GitRestClient`
 
 ### Methods
 
-* [createCommitStatus()](#method_createCommitStatus)
-* [createPullRequest()](#method_createPullRequest)
-* [createPullRequestReviewer()](#method_createPullRequestReviewer)
-* [createPullRequestReviewers()](#method_createPullRequestReviewers)
-* [createPush()](#method_createPush)
-* [createRepository()](#method_createRepository)
-* [deletePullRequestReviewer()](#method_deletePullRequestReviewer)
-* [deleteRepository()](#method_deleteRepository)
-* [getBlob()](#method_getBlob)
-* [getBlobContent()](#method_getBlobContent)
-* [getBlobsZip()](#method_getBlobsZip)
-* [getBlobZip()](#method_getBlobZip)
-* [getBranch()](#method_getBranch)
-* [getBranches()](#method_getBranches)
-* [getChanges()](#method_getChanges)
-* [getCommit()](#method_getCommit)
-* [getCommits()](#method_getCommits)
-* [getCommitsBatch()](#method_getCommitsBatch)
-* [getItem()](#method_getItem)
-* [getItemContent()](#method_getItemContent)
-* [getItems()](#method_getItems)
-* [getItemsBatch()](#method_getItemsBatch)
-* [getItemText()](#method_getItemText)
-* [getItemZip()](#method_getItemZip)
-* [getPullRequest()](#method_getPullRequest)
-* [getPullRequestCommits()](#method_getPullRequestCommits)
-* [getPullRequestReviewer()](#method_getPullRequestReviewer)
-* [getPullRequestReviewers()](#method_getPullRequestReviewers)
-* [getPullRequests()](#method_getPullRequests)
-* [getPullRequestsByProject()](#method_getPullRequestsByProject)
-* [getPullRequestWorkItemRefs()](#method_getPullRequestWorkItemRefs)
-* [getPush()](#method_getPush)
-* [getPushCommits()](#method_getPushCommits)
-* [getPushes()](#method_getPushes)
-* [getRefs()](#method_getRefs)
-* [getRepositories()](#method_getRepositories)
-* [getRepository()](#method_getRepository)
-* [getStatuses()](#method_getStatuses)
-* [getSuggestions()](#method_getSuggestions)
-* [getTree()](#method_getTree)
-* [getTreeZip()](#method_getTreeZip)
-* [updatePullRequest()](#method_updatePullRequest)
-* [updateRefs()](#method_updateRefs)
-* [updateRepository()](#method_updateRepository)
+- [createCommitStatus()](#method_createCommitStatus)
+- [createPullRequest()](#method_createPullRequest)
+- [createPullRequestReviewer()](#method_createPullRequestReviewer)
+- [createPullRequestReviewers()](#method_createPullRequestReviewers)
+- [createPush()](#method_createPush)
+- [createRepository()](#method_createRepository)
+- [deletePullRequestReviewer()](#method_deletePullRequestReviewer)
+- [deleteRepository()](#method_deleteRepository)
+- [getBlob()](#method_getBlob)
+- [getBlobContent()](#method_getBlobContent)
+- [getBlobsZip()](#method_getBlobsZip)
+- [getBlobZip()](#method_getBlobZip)
+- [getBranch()](#method_getBranch)
+- [getBranches()](#method_getBranches)
+- [getChanges()](#method_getChanges)
+- [getCommit()](#method_getCommit)
+- [getCommits()](#method_getCommits)
+- [getCommitsBatch()](#method_getCommitsBatch)
+- [getItem()](#method_getItem)
+- [getItemContent()](#method_getItemContent)
+- [getItems()](#method_getItems)
+- [getItemsBatch()](#method_getItemsBatch)
+- [getItemText()](#method_getItemText)
+- [getItemZip()](#method_getItemZip)
+- [getPullRequest()](#method_getPullRequest)
+- [getPullRequestCommits()](#method_getPullRequestCommits)
+- [getPullRequestReviewer()](#method_getPullRequestReviewer)
+- [getPullRequestReviewers()](#method_getPullRequestReviewers)
+- [getPullRequests()](#method_getPullRequests)
+- [getPullRequestsByProject()](#method_getPullRequestsByProject)
+- [getPullRequestWorkItemRefs()](#method_getPullRequestWorkItemRefs)
+- [getPush()](#method_getPush)
+- [getPushCommits()](#method_getPushCommits)
+- [getPushes()](#method_getPushes)
+- [getRefs()](#method_getRefs)
+- [getRepositories()](#method_getRepositories)
+- [getRepository()](#method_getRepository)
+- [getStatuses()](#method_getStatuses)
+- [getSuggestions()](#method_getSuggestions)
+- [getTree()](#method_getTree)
+- [getTreeZip()](#method_getTreeZip)
+- [updatePullRequest()](#method_updatePullRequest)
+- [updateRefs()](#method_updateRefs)
+- [updateRepository()](#method_updateRepository)
 
 <a name="method_createCommitStatus"></a>
 
@@ -86,14 +86,14 @@ Module path: `TFS/VersionControl/GitRestClient`
 
 ### Parameters
 
-* `gitCommitStatusToCreate`: [Contracts.GitStatus](../../../TFS/VersionControl/Contracts/GitStatus.md).
-* `commitId`: string.
-* `repositoryId`: string.
-* `project`: string. Optional.
+- `gitCommitStatusToCreate`: [Contracts.GitStatus](../../../TFS/VersionControl/Contracts/GitStatus.md).
+- `commitId`: string.
+- `repositoryId`: string.
+- `project`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitStatus](../../../TFS/VersionControl/Contracts/GitStatus.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitStatus](../../../TFS/VersionControl/Contracts/GitStatus.md)&gt;
 
 <a name="method_createPullRequest"></a>
 
@@ -109,13 +109,13 @@ Create a git pull request
 
 ### Parameters
 
-* `gitPullRequestToCreate`: [Contracts.GitPullRequest](../../../TFS/VersionControl/Contracts/GitPullRequest.md).
-* `repositoryId`: string.
-* `project`: string. Optional.
+- `gitPullRequestToCreate`: [Contracts.GitPullRequest](../../../TFS/VersionControl/Contracts/GitPullRequest.md).
+- `repositoryId`: string.
+- `project`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitPullRequest](../../../TFS/VersionControl/Contracts/GitPullRequest.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitPullRequest](../../../TFS/VersionControl/Contracts/GitPullRequest.md)&gt;
 
 <a name="method_createPullRequestReviewer"></a>
 
@@ -131,15 +131,15 @@ Adds a reviewer to a git pull request
 
 ### Parameters
 
-* `reviewer`: [Contracts.IdentityRefWithVote](../../../TFS/VersionControl/Contracts/IdentityRefWithVote.md).
-* `repositoryId`: string.
-* `pullRequestId`: number.
-* `reviewerId`: string.
-* `project`: string. Optional.
+- `reviewer`: [Contracts.IdentityRefWithVote](../../../TFS/VersionControl/Contracts/IdentityRefWithVote.md).
+- `repositoryId`: string.
+- `pullRequestId`: number.
+- `reviewerId`: string.
+- `project`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.IdentityRefWithVote](../../../TFS/VersionControl/Contracts/IdentityRefWithVote.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.IdentityRefWithVote](../../../TFS/VersionControl/Contracts/IdentityRefWithVote.md)&gt;
 
 <a name="method_createPullRequestReviewers"></a>
 
@@ -155,14 +155,14 @@ Adds reviewers to a git pull request
 
 ### Parameters
 
-* `reviewers`: [VSS_Common_Contracts.IdentityRef](../../../VSS/WebApi/Contracts/IdentityRef.md)[].
-* `repositoryId`: string.
-* `pullRequestId`: number.
-* `project`: string. Optional.
+- `reviewers`: [VSS_Common_Contracts.IdentityRef](../../../VSS/WebApi/Contracts/IdentityRef.md)[].
+- `repositoryId`: string.
+- `pullRequestId`: number.
+- `project`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.IdentityRefWithVote](../../../TFS/VersionControl/Contracts/IdentityRefWithVote.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.IdentityRefWithVote](../../../TFS/VersionControl/Contracts/IdentityRefWithVote.md)[]&gt;
 
 <a name="method_createPush"></a>
 
@@ -178,13 +178,13 @@ Push changes to the repository.
 
 ### Parameters
 
-* `push`: [Contracts.GitPush](../../../TFS/VersionControl/Contracts/GitPush.md).
-* `repositoryId`: string.
-* `project`: string. Optional.
+- `push`: [Contracts.GitPush](../../../TFS/VersionControl/Contracts/GitPush.md).
+- `repositoryId`: string.
+- `project`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitPush](../../../TFS/VersionControl/Contracts/GitPush.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitPush](../../../TFS/VersionControl/Contracts/GitPush.md)&gt;
 
 <a name="method_createRepository"></a>
 
@@ -200,12 +200,12 @@ Create a git repository
 
 ### Parameters
 
-* `gitRepositoryToCreate`: [Contracts.GitRepository](../../../TFS/VersionControl/Contracts/GitRepository.md).
-* `project`: string. Optional.
+- `gitRepositoryToCreate`: [Contracts.GitRepository](../../../TFS/VersionControl/Contracts/GitRepository.md).
+- `project`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitRepository](../../../TFS/VersionControl/Contracts/GitRepository.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitRepository](../../../TFS/VersionControl/Contracts/GitRepository.md)&gt;
 
 <a name="method_deletePullRequestReviewer"></a>
 
@@ -221,14 +221,14 @@ Adds reviewers to a git pull request
 
 ### Parameters
 
-* `repositoryId`: string.
-* `pullRequestId`: number.
-* `reviewerId`: string.
-* `project`: string. Optional.
+- `repositoryId`: string.
+- `pullRequestId`: number.
+- `reviewerId`: string.
+- `project`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
 
 <a name="method_deleteRepository"></a>
 
@@ -244,12 +244,12 @@ Delete a git repository
 
 ### Parameters
 
-* `repositoryId`: string.
-* `project`: string. Optional.
+- `repositoryId`: string.
+- `project`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
 
 <a name="method_getBlob"></a>
 
@@ -265,15 +265,15 @@ Gets a single blob.
 
 ### Parameters
 
-* `repositoryId`: string.
-* `sha1`: string.
-* `project`: string. Optional.
-* `download`: boolean. Optional.
-* `fileName`: string. Optional.
+- `repositoryId`: string.
+- `sha1`: string.
+- `project`: string. Optional.
+- `download`: boolean. Optional.
+- `fileName`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitBlobRef](../../../TFS/VersionControl/Contracts/GitBlobRef.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitBlobRef](../../../TFS/VersionControl/Contracts/GitBlobRef.md)&gt;
 
 <a name="method_getBlobContent"></a>
 
@@ -289,15 +289,15 @@ Gets a single blob.
 
 ### Parameters
 
-* `repositoryId`: string.
-* `sha1`: string.
-* `project`: string. Optional.
-* `download`: boolean. Optional.
-* `fileName`: string. Optional.
+- `repositoryId`: string.
+- `sha1`: string.
+- `project`: string. Optional.
+- `download`: boolean. Optional.
+- `fileName`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
 
 <a name="method_getBlobsZip"></a>
 
@@ -313,14 +313,14 @@ Gets one or more blobs in a zip file download.
 
 ### Parameters
 
-* `blobIds`: string[].
-* `repositoryId`: string.
-* `project`: string. Optional.
-* `filename`: string. Optional.
+- `blobIds`: string[].
+- `repositoryId`: string.
+- `project`: string. Optional.
+- `filename`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
 
 <a name="method_getBlobZip"></a>
 
@@ -336,15 +336,15 @@ Gets a single blob.
 
 ### Parameters
 
-* `repositoryId`: string.
-* `sha1`: string.
-* `project`: string. Optional.
-* `download`: boolean. Optional.
-* `fileName`: string. Optional.
+- `repositoryId`: string.
+- `sha1`: string.
+- `project`: string. Optional.
+- `download`: boolean. Optional.
+- `fileName`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
 
 <a name="method_getBranch"></a>
 
@@ -360,14 +360,14 @@ Retrieve statistics about a single branch.
 
 ### Parameters
 
-* `repositoryId`: string. Friendly name or guid of repository
-* `name`: string. Name of the branch
-* `project`: string. Optional. Project ID or project name
-* `baseVersionDescriptor`: [Contracts.GitVersionDescriptor](../../../TFS/VersionControl/Contracts/GitVersionDescriptor.md). Optional.
+- `repositoryId`: string. Friendly name or guid of repository
+- `name`: string. Name of the branch
+- `project`: string. Optional. Project ID or project name
+- `baseVersionDescriptor`: [Contracts.GitVersionDescriptor](../../../TFS/VersionControl/Contracts/GitVersionDescriptor.md). Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitBranchStats](../../../TFS/VersionControl/Contracts/GitBranchStats.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitBranchStats](../../../TFS/VersionControl/Contracts/GitBranchStats.md)&gt;
 
 <a name="method_getBranches"></a>
 
@@ -383,13 +383,13 @@ Retrieve statistics about all branches within a repository.
 
 ### Parameters
 
-* `repositoryId`: string. Friendly name or guid of repository
-* `project`: string. Optional. Project ID or project name
-* `baseVersionDescriptor`: [Contracts.GitVersionDescriptor](../../../TFS/VersionControl/Contracts/GitVersionDescriptor.md). Optional.
+- `repositoryId`: string. Friendly name or guid of repository
+- `project`: string. Optional. Project ID or project name
+- `baseVersionDescriptor`: [Contracts.GitVersionDescriptor](../../../TFS/VersionControl/Contracts/GitVersionDescriptor.md). Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitBranchStats](../../../TFS/VersionControl/Contracts/GitBranchStats.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitBranchStats](../../../TFS/VersionControl/Contracts/GitBranchStats.md)[]&gt;
 
 <a name="method_getChanges"></a>
 
@@ -405,15 +405,15 @@ Retrieve changes for a particular commit.
 
 ### Parameters
 
-* `commitId`: string. The ID of the commit.
-* `repositoryId`: string. The ID or friendly name of the repository. To use the friendly name, projectId must also be specified.
-* `project`: string. Optional. Project ID or project name
-* `top`: number. Optional. The maximum number of changes to return.
-* `skip`: number. Optional. The number of changes to skip.
+- `commitId`: string. The ID of the commit.
+- `repositoryId`: string. The ID or friendly name of the repository. To use the friendly name, projectId must also be specified.
+- `project`: string. Optional. Project ID or project name
+- `top`: number. Optional. The maximum number of changes to return.
+- `skip`: number. Optional. The number of changes to skip.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitCommitChanges](../../../TFS/VersionControl/Contracts/GitCommitChanges.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitCommitChanges](../../../TFS/VersionControl/Contracts/GitCommitChanges.md)&gt;
 
 <a name="method_getCommit"></a>
 
@@ -429,14 +429,14 @@ Retrieve a particular commit.
 
 ### Parameters
 
-* `commitId`: string. The ID of the commit.
-* `repositoryId`: string. The ID or friendly name of the repository. To use the friendly name, projectId must also be specified.
-* `project`: string. Optional. Project ID or project name
-* `changeCount`: number. Optional. The number of changes to include in the result.
+- `commitId`: string. The ID of the commit.
+- `repositoryId`: string. The ID or friendly name of the repository. To use the friendly name, projectId must also be specified.
+- `project`: string. Optional. Project ID or project name
+- `changeCount`: number. Optional. The number of changes to include in the result.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitCommit](../../../TFS/VersionControl/Contracts/GitCommit.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitCommit](../../../TFS/VersionControl/Contracts/GitCommit.md)&gt;
 
 <a name="method_getCommits"></a>
 
@@ -452,15 +452,15 @@ Retrieve git commits for a project
 
 ### Parameters
 
-* `repositoryId`: string. The ID or friendly name of the repository. To use the friendly name, projectId must also be specified.
-* `searchCriteria`: [Contracts.GitQueryCommitsCriteria](../../../TFS/VersionControl/Contracts/GitQueryCommitsCriteria.md).
-* `project`: string. Optional.
-* `skip`: number. Optional.
-* `top`: number. Optional.
+- `repositoryId`: string. The ID or friendly name of the repository. To use the friendly name, projectId must also be specified.
+- `searchCriteria`: [Contracts.GitQueryCommitsCriteria](../../../TFS/VersionControl/Contracts/GitQueryCommitsCriteria.md).
+- `project`: string. Optional.
+- `skip`: number. Optional.
+- `top`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitCommitRef](../../../TFS/VersionControl/Contracts/GitCommitRef.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitCommitRef](../../../TFS/VersionControl/Contracts/GitCommitRef.md)[]&gt;
 
 <a name="method_getCommitsBatch"></a>
 
@@ -476,15 +476,15 @@ Retrieve git commits for a project
 
 ### Parameters
 
-* `searchCriteria`: [Contracts.GitQueryCommitsCriteria](../../../TFS/VersionControl/Contracts/GitQueryCommitsCriteria.md). Search options
-* `repositoryId`: string. The ID or friendly name of the repository. To use the friendly name, projectId must also be specified.
-* `project`: string. Optional. Project ID or project name
-* `skip`: number. Optional.
-* `top`: number. Optional.
+- `searchCriteria`: [Contracts.GitQueryCommitsCriteria](../../../TFS/VersionControl/Contracts/GitQueryCommitsCriteria.md). Search options
+- `repositoryId`: string. The ID or friendly name of the repository. To use the friendly name, projectId must also be specified.
+- `project`: string. Optional. Project ID or project name
+- `skip`: number. Optional.
+- `top`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitCommitRef](../../../TFS/VersionControl/Contracts/GitCommitRef.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitCommitRef](../../../TFS/VersionControl/Contracts/GitCommitRef.md)[]&gt;
 
 <a name="method_getItem"></a>
 
@@ -500,19 +500,19 @@ Get Item Metadata and/or Content for a single item. The download parameter is to
 
 ### Parameters
 
-* `repositoryId`: string.
-* `path`: string.
-* `project`: string. Optional.
-* `scopePath`: string. Optional.
-* `recursionLevel`: [Contracts.VersionControlRecursionType](../../../TFS/VersionControl/Contracts/VersionControlRecursionType.md). Optional.
-* `includeContentMetadata`: boolean. Optional.
-* `latestProcessedChange`: boolean. Optional.
-* `download`: boolean. Optional.
-* `versionDescriptor`: [Contracts.GitVersionDescriptor](../../../TFS/VersionControl/Contracts/GitVersionDescriptor.md). Optional.
+- `repositoryId`: string.
+- `path`: string.
+- `project`: string. Optional.
+- `scopePath`: string. Optional.
+- `recursionLevel`: [Contracts.VersionControlRecursionType](../../../TFS/VersionControl/Contracts/VersionControlRecursionType.md). Optional.
+- `includeContentMetadata`: boolean. Optional.
+- `latestProcessedChange`: boolean. Optional.
+- `download`: boolean. Optional.
+- `versionDescriptor`: [Contracts.GitVersionDescriptor](../../../TFS/VersionControl/Contracts/GitVersionDescriptor.md). Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitItem](../../../TFS/VersionControl/Contracts/GitItem.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitItem](../../../TFS/VersionControl/Contracts/GitItem.md)&gt;
 
 <a name="method_getItemContent"></a>
 
@@ -528,19 +528,19 @@ Get Item Metadata and/or Content for a single item. The download parameter is to
 
 ### Parameters
 
-* `repositoryId`: string.
-* `path`: string.
-* `project`: string. Optional.
-* `scopePath`: string. Optional.
-* `recursionLevel`: [Contracts.VersionControlRecursionType](../../../TFS/VersionControl/Contracts/VersionControlRecursionType.md). Optional.
-* `includeContentMetadata`: boolean. Optional.
-* `latestProcessedChange`: boolean. Optional.
-* `download`: boolean. Optional.
-* `versionDescriptor`: [Contracts.GitVersionDescriptor](../../../TFS/VersionControl/Contracts/GitVersionDescriptor.md). Optional.
+- `repositoryId`: string.
+- `path`: string.
+- `project`: string. Optional.
+- `scopePath`: string. Optional.
+- `recursionLevel`: [Contracts.VersionControlRecursionType](../../../TFS/VersionControl/Contracts/VersionControlRecursionType.md). Optional.
+- `includeContentMetadata`: boolean. Optional.
+- `latestProcessedChange`: boolean. Optional.
+- `download`: boolean. Optional.
+- `versionDescriptor`: [Contracts.GitVersionDescriptor](../../../TFS/VersionControl/Contracts/GitVersionDescriptor.md). Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
 
 <a name="method_getItems"></a>
 
@@ -556,19 +556,19 @@ Get Item Metadata and/or Content for a collection of items. The download paramet
 
 ### Parameters
 
-* `repositoryId`: string.
-* `project`: string. Optional.
-* `scopePath`: string. Optional.
-* `recursionLevel`: [Contracts.VersionControlRecursionType](../../../TFS/VersionControl/Contracts/VersionControlRecursionType.md). Optional.
-* `includeContentMetadata`: boolean. Optional.
-* `latestProcessedChange`: boolean. Optional.
-* `download`: boolean. Optional.
-* `includeLinks`: boolean. Optional.
-* `versionDescriptor`: [Contracts.GitVersionDescriptor](../../../TFS/VersionControl/Contracts/GitVersionDescriptor.md). Optional.
+- `repositoryId`: string.
+- `project`: string. Optional.
+- `scopePath`: string. Optional.
+- `recursionLevel`: [Contracts.VersionControlRecursionType](../../../TFS/VersionControl/Contracts/VersionControlRecursionType.md). Optional.
+- `includeContentMetadata`: boolean. Optional.
+- `latestProcessedChange`: boolean. Optional.
+- `download`: boolean. Optional.
+- `includeLinks`: boolean. Optional.
+- `versionDescriptor`: [Contracts.GitVersionDescriptor](../../../TFS/VersionControl/Contracts/GitVersionDescriptor.md). Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitItem](../../../TFS/VersionControl/Contracts/GitItem.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitItem](../../../TFS/VersionControl/Contracts/GitItem.md)[]&gt;
 
 <a name="method_getItemsBatch"></a>
 
@@ -584,13 +584,13 @@ Post for retrieving a creating a batch out of a set of items in a repo / project
 
 ### Parameters
 
-* `requestData`: [Contracts.GitItemRequestData](../../../TFS/VersionControl/Contracts/GitItemRequestData.md).
-* `repositoryId`: string.
-* `project`: string. Optional.
+- `requestData`: [Contracts.GitItemRequestData](../../../TFS/VersionControl/Contracts/GitItemRequestData.md).
+- `repositoryId`: string.
+- `project`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitItem](../../../TFS/VersionControl/Contracts/GitItem.md)[][]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitItem](../../../TFS/VersionControl/Contracts/GitItem.md)[][]&gt;
 
 <a name="method_getItemText"></a>
 
@@ -606,19 +606,19 @@ Get Item Metadata and/or Content for a single item. The download parameter is to
 
 ### Parameters
 
-* `repositoryId`: string.
-* `path`: string.
-* `project`: string. Optional.
-* `scopePath`: string. Optional.
-* `recursionLevel`: [Contracts.VersionControlRecursionType](../../../TFS/VersionControl/Contracts/VersionControlRecursionType.md). Optional.
-* `includeContentMetadata`: boolean. Optional.
-* `latestProcessedChange`: boolean. Optional.
-* `download`: boolean. Optional.
-* `versionDescriptor`: [Contracts.GitVersionDescriptor](../../../TFS/VersionControl/Contracts/GitVersionDescriptor.md). Optional.
+- `repositoryId`: string.
+- `path`: string.
+- `project`: string. Optional.
+- `scopePath`: string. Optional.
+- `recursionLevel`: [Contracts.VersionControlRecursionType](../../../TFS/VersionControl/Contracts/VersionControlRecursionType.md). Optional.
+- `includeContentMetadata`: boolean. Optional.
+- `latestProcessedChange`: boolean. Optional.
+- `download`: boolean. Optional.
+- `versionDescriptor`: [Contracts.GitVersionDescriptor](../../../TFS/VersionControl/Contracts/GitVersionDescriptor.md). Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;string&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;string&gt;
 
 <a name="method_getItemZip"></a>
 
@@ -634,19 +634,19 @@ Get Item Metadata and/or Content for a single item. The download parameter is to
 
 ### Parameters
 
-* `repositoryId`: string.
-* `path`: string.
-* `project`: string. Optional.
-* `scopePath`: string. Optional.
-* `recursionLevel`: [Contracts.VersionControlRecursionType](../../../TFS/VersionControl/Contracts/VersionControlRecursionType.md). Optional.
-* `includeContentMetadata`: boolean. Optional.
-* `latestProcessedChange`: boolean. Optional.
-* `download`: boolean. Optional.
-* `versionDescriptor`: [Contracts.GitVersionDescriptor](../../../TFS/VersionControl/Contracts/GitVersionDescriptor.md). Optional.
+- `repositoryId`: string.
+- `path`: string.
+- `project`: string. Optional.
+- `scopePath`: string. Optional.
+- `recursionLevel`: [Contracts.VersionControlRecursionType](../../../TFS/VersionControl/Contracts/VersionControlRecursionType.md). Optional.
+- `includeContentMetadata`: boolean. Optional.
+- `latestProcessedChange`: boolean. Optional.
+- `download`: boolean. Optional.
+- `versionDescriptor`: [Contracts.GitVersionDescriptor](../../../TFS/VersionControl/Contracts/GitVersionDescriptor.md). Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
 
 <a name="method_getPullRequest"></a>
 
@@ -662,18 +662,18 @@ Retrieve a pull request
 
 ### Parameters
 
-* `repositoryId`: string.
-* `pullRequestId`: number.
-* `project`: string. Optional.
-* `maxCommentLength`: number. Optional.
-* `skip`: number. Optional.
-* `top`: number. Optional.
-* `includeCommits`: boolean. Optional.
-* `includeWorkItemRefs`: boolean. Optional.
+- `repositoryId`: string.
+- `pullRequestId`: number.
+- `project`: string. Optional.
+- `maxCommentLength`: number. Optional.
+- `skip`: number. Optional.
+- `top`: number. Optional.
+- `includeCommits`: boolean. Optional.
+- `includeWorkItemRefs`: boolean. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitPullRequest](../../../TFS/VersionControl/Contracts/GitPullRequest.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitPullRequest](../../../TFS/VersionControl/Contracts/GitPullRequest.md)&gt;
 
 <a name="method_getPullRequestCommits"></a>
 
@@ -689,13 +689,13 @@ Retrieve pull request&#x27;s commits
 
 ### Parameters
 
-* `repositoryId`: string.
-* `pullRequestId`: number.
-* `project`: string. Optional.
+- `repositoryId`: string.
+- `pullRequestId`: number.
+- `project`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitCommitRef](../../../TFS/VersionControl/Contracts/GitCommitRef.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitCommitRef](../../../TFS/VersionControl/Contracts/GitCommitRef.md)[]&gt;
 
 <a name="method_getPullRequestReviewer"></a>
 
@@ -711,14 +711,14 @@ Retrieve a reviewer from a pull request
 
 ### Parameters
 
-* `repositoryId`: string.
-* `pullRequestId`: number.
-* `reviewerId`: string.
-* `project`: string. Optional.
+- `repositoryId`: string.
+- `pullRequestId`: number.
+- `reviewerId`: string.
+- `project`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.IdentityRefWithVote](../../../TFS/VersionControl/Contracts/IdentityRefWithVote.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.IdentityRefWithVote](../../../TFS/VersionControl/Contracts/IdentityRefWithVote.md)&gt;
 
 <a name="method_getPullRequestReviewers"></a>
 
@@ -734,13 +734,13 @@ Retrieve a pull request reviewers
 
 ### Parameters
 
-* `repositoryId`: string.
-* `pullRequestId`: number.
-* `project`: string. Optional.
+- `repositoryId`: string.
+- `pullRequestId`: number.
+- `project`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.IdentityRefWithVote](../../../TFS/VersionControl/Contracts/IdentityRefWithVote.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.IdentityRefWithVote](../../../TFS/VersionControl/Contracts/IdentityRefWithVote.md)[]&gt;
 
 <a name="method_getPullRequests"></a>
 
@@ -756,16 +756,16 @@ Query for pull requests
 
 ### Parameters
 
-* `repositoryId`: string.
-* `searchCriteria`: [Contracts.GitPullRequestSearchCriteria](../../../TFS/VersionControl/Contracts/GitPullRequestSearchCriteria.md).
-* `project`: string. Optional.
-* `maxCommentLength`: number. Optional.
-* `skip`: number. Optional.
-* `top`: number. Optional.
+- `repositoryId`: string.
+- `searchCriteria`: [Contracts.GitPullRequestSearchCriteria](../../../TFS/VersionControl/Contracts/GitPullRequestSearchCriteria.md).
+- `project`: string. Optional.
+- `maxCommentLength`: number. Optional.
+- `skip`: number. Optional.
+- `top`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitPullRequest](../../../TFS/VersionControl/Contracts/GitPullRequest.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitPullRequest](../../../TFS/VersionControl/Contracts/GitPullRequest.md)[]&gt;
 
 <a name="method_getPullRequestsByProject"></a>
 
@@ -781,15 +781,15 @@ Query pull requests by project
 
 ### Parameters
 
-* `project`: string. Project ID or project name
-* `searchCriteria`: [Contracts.GitPullRequestSearchCriteria](../../../TFS/VersionControl/Contracts/GitPullRequestSearchCriteria.md).
-* `maxCommentLength`: number. Optional.
-* `skip`: number. Optional.
-* `top`: number. Optional.
+- `project`: string. Project ID or project name
+- `searchCriteria`: [Contracts.GitPullRequestSearchCriteria](../../../TFS/VersionControl/Contracts/GitPullRequestSearchCriteria.md).
+- `maxCommentLength`: number. Optional.
+- `skip`: number. Optional.
+- `top`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitPullRequest](../../../TFS/VersionControl/Contracts/GitPullRequest.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitPullRequest](../../../TFS/VersionControl/Contracts/GitPullRequest.md)[]&gt;
 
 <a name="method_getPullRequestWorkItemRefs"></a>
 
@@ -805,15 +805,15 @@ Retrieve a pull request work item refs
 
 ### Parameters
 
-* `repositoryId`: string.
-* `pullRequestId`: number.
-* `project`: string. Optional.
-* `commitsTop`: number. Optional.
-* `commitsSkip`: number. Optional.
+- `repositoryId`: string.
+- `pullRequestId`: number.
+- `project`: string. Optional.
+- `commitsTop`: number. Optional.
+- `commitsSkip`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.AssociatedWorkItem](../../../TFS/VersionControl/Contracts/AssociatedWorkItem.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.AssociatedWorkItem](../../../TFS/VersionControl/Contracts/AssociatedWorkItem.md)[]&gt;
 
 <a name="method_getPush"></a>
 
@@ -829,15 +829,15 @@ Retrieve a particular push.
 
 ### Parameters
 
-* `repositoryId`: string. The ID or friendly name of the repository. To use the friendly name, projectId must also be specified.
-* `pushId`: number. The ID of the push.
-* `project`: string. Optional. Project ID or project name
-* `includeCommits`: number. Optional. The number of commits to include in the result.
-* `includeRefUpdates`: boolean. Optional.
+- `repositoryId`: string. The ID or friendly name of the repository. To use the friendly name, projectId must also be specified.
+- `pushId`: number. The ID of the push.
+- `project`: string. Optional. Project ID or project name
+- `includeCommits`: number. Optional. The number of commits to include in the result.
+- `includeRefUpdates`: boolean. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitPush](../../../TFS/VersionControl/Contracts/GitPush.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitPush](../../../TFS/VersionControl/Contracts/GitPush.md)&gt;
 
 <a name="method_getPushCommits"></a>
 
@@ -853,16 +853,16 @@ Retrieve a list of commits associated with a particular push.
 
 ### Parameters
 
-* `repositoryId`: string. The ID or friendly name of the repository. To use the friendly name, projectId must also be specified.
-* `pushId`: number. The ID of the push.
-* `project`: string. Optional. Project ID or project name
-* `top`: number. Optional. The maximum number of commits to return (&quot;get the top x commits&quot;).
-* `skip`: number. Optional. The number of commits to skip.
-* `includeLinks`: boolean. Optional.
+- `repositoryId`: string. The ID or friendly name of the repository. To use the friendly name, projectId must also be specified.
+- `pushId`: number. The ID of the push.
+- `project`: string. Optional. Project ID or project name
+- `top`: number. Optional. The maximum number of commits to return (&quot;get the top x commits&quot;).
+- `skip`: number. Optional. The number of commits to skip.
+- `includeLinks`: boolean. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitCommitRef](../../../TFS/VersionControl/Contracts/GitCommitRef.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitCommitRef](../../../TFS/VersionControl/Contracts/GitCommitRef.md)[]&gt;
 
 <a name="method_getPushes"></a>
 
@@ -878,15 +878,15 @@ Retrieves pushes associated with the specified repository.
 
 ### Parameters
 
-* `repositoryId`: string. The ID or friendly name of the repository. To use the friendly name, projectId must also be specified.
-* `project`: string. Optional. Project ID or project name
-* `skip`: number. Optional.
-* `top`: number. Optional.
-* `searchCriteria`: [Contracts.GitPushSearchCriteria](../../../TFS/VersionControl/Contracts/GitPushSearchCriteria.md). Optional.
+- `repositoryId`: string. The ID or friendly name of the repository. To use the friendly name, projectId must also be specified.
+- `project`: string. Optional. Project ID or project name
+- `skip`: number. Optional.
+- `top`: number. Optional.
+- `searchCriteria`: [Contracts.GitPushSearchCriteria](../../../TFS/VersionControl/Contracts/GitPushSearchCriteria.md). Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitPush](../../../TFS/VersionControl/Contracts/GitPush.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitPush](../../../TFS/VersionControl/Contracts/GitPush.md)[]&gt;
 
 <a name="method_getRefs"></a>
 
@@ -902,15 +902,15 @@ Queries the provided repository for its refs and returns them.
 
 ### Parameters
 
-* `repositoryId`: string. The ID or friendly name of the repository. To use the friendly name, projectId must also be specified.
-* `project`: string. Optional. Project ID or project name
-* `filter`: string. Optional. [optional] A filter to apply to the refs.
-* `includeLinks`: boolean. Optional. [optional] Specifies if referenceLinks should be included in the result. default is false.
-* `includeStatuses`: boolean. Optional. [optional] Includes the first 1000 statuses of the commits the refs are pointing at as well. default is false.
+- `repositoryId`: string. The ID or friendly name of the repository. To use the friendly name, projectId must also be specified.
+- `project`: string. Optional. Project ID or project name
+- `filter`: string. Optional. [optional] A filter to apply to the refs.
+- `includeLinks`: boolean. Optional. [optional] Specifies if referenceLinks should be included in the result. default is false.
+- `includeStatuses`: boolean. Optional. [optional] Includes the first 1000 statuses of the commits the refs are pointing at as well. default is false.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitRef](../../../TFS/VersionControl/Contracts/GitRef.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitRef](../../../TFS/VersionControl/Contracts/GitRef.md)[]&gt;
 
 <a name="method_getRepositories"></a>
 
@@ -926,12 +926,12 @@ Retrieve git repositories.
 
 ### Parameters
 
-* `project`: string. Optional. Project ID or project name
-* `includeLinks`: boolean. Optional.
+- `project`: string. Optional. Project ID or project name
+- `includeLinks`: boolean. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitRepository](../../../TFS/VersionControl/Contracts/GitRepository.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitRepository](../../../TFS/VersionControl/Contracts/GitRepository.md)[]&gt;
 
 <a name="method_getRepository"></a>
 
@@ -945,12 +945,12 @@ Retrieve git repositories.
 
 ### Parameters
 
-* `repositoryId`: string.
-* `project`: string. Optional.
+- `repositoryId`: string.
+- `project`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitRepository](../../../TFS/VersionControl/Contracts/GitRepository.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitRepository](../../../TFS/VersionControl/Contracts/GitRepository.md)&gt;
 
 <a name="method_getStatuses"></a>
 
@@ -964,15 +964,15 @@ Retrieve git repositories.
 
 ### Parameters
 
-* `commitId`: string.
-* `repositoryId`: string.
-* `project`: string. Optional.
-* `top`: number. Optional.
-* `skip`: number. Optional.
+- `commitId`: string.
+- `repositoryId`: string.
+- `project`: string. Optional.
+- `top`: number. Optional.
+- `skip`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitStatus](../../../TFS/VersionControl/Contracts/GitStatus.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitStatus](../../../TFS/VersionControl/Contracts/GitStatus.md)[]&gt;
 
 <a name="method_getSuggestions"></a>
 
@@ -988,12 +988,12 @@ Retrieve a set of suggestions (including a pull request suggestion).
 
 ### Parameters
 
-* `repositoryId`: string.
-* `project`: string. Optional.
+- `repositoryId`: string.
+- `project`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitSuggestion](../../../TFS/VersionControl/Contracts/GitSuggestion.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitSuggestion](../../../TFS/VersionControl/Contracts/GitSuggestion.md)[]&gt;
 
 <a name="method_getTree"></a>
 
@@ -1007,16 +1007,16 @@ Retrieve a set of suggestions (including a pull request suggestion).
 
 ### Parameters
 
-* `repositoryId`: string.
-* `sha1`: string.
-* `project`: string. Optional.
-* `projectId`: string. Optional.
-* `recursive`: boolean. Optional.
-* `fileName`: string. Optional.
+- `repositoryId`: string.
+- `sha1`: string.
+- `project`: string. Optional.
+- `projectId`: string. Optional.
+- `recursive`: boolean. Optional.
+- `fileName`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitTreeRef](../../../TFS/VersionControl/Contracts/GitTreeRef.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitTreeRef](../../../TFS/VersionControl/Contracts/GitTreeRef.md)&gt;
 
 <a name="method_getTreeZip"></a>
 
@@ -1030,16 +1030,16 @@ Retrieve a set of suggestions (including a pull request suggestion).
 
 ### Parameters
 
-* `repositoryId`: string.
-* `sha1`: string.
-* `project`: string. Optional.
-* `projectId`: string. Optional.
-* `recursive`: boolean. Optional.
-* `fileName`: string. Optional.
+- `repositoryId`: string.
+- `sha1`: string.
+- `project`: string. Optional.
+- `projectId`: string. Optional.
+- `recursive`: boolean. Optional.
+- `fileName`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
 
 <a name="method_updatePullRequest"></a>
 
@@ -1055,14 +1055,14 @@ Updates a pull request
 
 ### Parameters
 
-* `gitPullRequestToUpdate`: [Contracts.GitPullRequest](../../../TFS/VersionControl/Contracts/GitPullRequest.md).
-* `repositoryId`: string.
-* `pullRequestId`: number.
-* `project`: string. Optional.
+- `gitPullRequestToUpdate`: [Contracts.GitPullRequest](../../../TFS/VersionControl/Contracts/GitPullRequest.md).
+- `repositoryId`: string.
+- `pullRequestId`: number.
+- `project`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitPullRequest](../../../TFS/VersionControl/Contracts/GitPullRequest.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitPullRequest](../../../TFS/VersionControl/Contracts/GitPullRequest.md)&gt;
 
 <a name="method_updateRefs"></a>
 
@@ -1078,14 +1078,14 @@ Creates or updates refs with the given information
 
 ### Parameters
 
-* `refUpdates`: [Contracts.GitRefUpdate](../../../TFS/VersionControl/Contracts/GitRefUpdate.md)[]. List of ref updates to attempt to perform
-* `repositoryId`: string. The ID or friendly name of the repository. To use the friendly name, projectId must also be specified.
-* `project`: string. Optional. Project ID or project name
-* `projectId`: string. Optional. The ID of the project.
+- `refUpdates`: [Contracts.GitRefUpdate](../../../TFS/VersionControl/Contracts/GitRefUpdate.md)[]. List of ref updates to attempt to perform
+- `repositoryId`: string. The ID or friendly name of the repository. To use the friendly name, projectId must also be specified.
+- `project`: string. Optional. Project ID or project name
+- `projectId`: string. Optional. The ID of the project.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitRefUpdateResult](../../../TFS/VersionControl/Contracts/GitRefUpdateResult.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitRefUpdateResult](../../../TFS/VersionControl/Contracts/GitRefUpdateResult.md)[]&gt;
 
 <a name="method_updateRepository"></a>
 
@@ -1101,10 +1101,10 @@ Updates the Git repository with the single populated change in the specified rep
 
 ### Parameters
 
-* `newRepositoryInfo`: [Contracts.GitRepository](../../../TFS/VersionControl/Contracts/GitRepository.md).
-* `repositoryId`: string.
-* `project`: string. Optional.
+- `newRepositoryInfo`: [Contracts.GitRepository](../../../TFS/VersionControl/Contracts/GitRepository.md).
+- `repositoryId`: string.
+- `project`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitRepository](../../../TFS/VersionControl/Contracts/GitRepository.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.GitRepository](../../../TFS/VersionControl/Contracts/GitRepository.md)&gt;

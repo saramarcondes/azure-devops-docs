@@ -17,16 +17,16 @@ ms.date: 03/20/2018
 
 By using global workflow, you can minimize the work required to define and update work item fields and global lists that multiple projects and types of work items share. With global workflow, you can define and update fields and global lists. You can manage the global workflow for a project collection or a project by using the following commands in the **witadmin** command-line tool:
 
-* **exportglobalworkflow**: Exports the global workflow to an XML file or the Command Prompt window.
-* **importglobalworkflow**: Imports global workflow from an XML file.
+- **exportglobalworkflow**: Exports the global workflow to an XML file or the Command Prompt window.
+- **importglobalworkflow**: Imports global workflow from an XML file.
 
 [!INCLUDE [temp](../../includes/witadmin-run-tool.md)]
 
 **Requirements**
 
-* To export a global workflow, you must be a valid user of the project or project collection.
-* To import a global workflow to a project, you must be a member of the following security groups: **Team Foundation Administrators**, **Project Collection Administrators**, or **Project Administrators**.
-* To import a global workflow to a project collection, you must be a member of either the **Team Foundation Administrators** or **Project Collection Administrators**.
+- To export a global workflow, you must be a valid user of the project or project collection.
+- To import a global workflow to a project, you must be a member of the following security groups: **Team Foundation Administrators**, **Project Collection Administrators**, or **Project Administrators**.
+- To import a global workflow to a project collection, you must be a member of either the **Team Foundation Administrators** or **Project Collection Administrators**.
 
 See [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md).
 
@@ -38,7 +38,7 @@ See [Add administrators, set permissions at the project-level or project collect
 ```
 witadmin exportglobalworkflow /collection:CollectionURL [/p:ProjectName] [/f:FileName] [/e:Encoding] [/exportgloballists]
 
-witadmin importglobalworkflow /collection:CollectionURL [/p:ProjectName] /f:FileName [/e:Encoding] [/v]  
+witadmin importglobalworkflow /collection:CollectionURL [/p:ProjectName] /f:FileName [/e:Encoding] [/v]
 ```
 
 #### Parameters
@@ -61,16 +61,16 @@ You can define work item fields by importing them through a global workflow. How
 
 Unless otherwise specified, the following values apply in each example:
 
-* URI for the collection: http://AdventureWorksServer:8080/tfs/DefaultCollection
-* Project: Contoso
-* Port number for the server website: 8080
+- URI for the collection: http://AdventureWorksServer:8080/tfs/DefaultCollection
+- Project: Contoso
+- Port number for the server website: 8080
 
 ### Export the definition of a global workflow for a project
 
 The following example exports the global workflow for a project:
 
 ```
-witadmin exportglobalworkflow /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /p:Contoso /f:C:myGlobalWorkflow.xml  
+witadmin exportglobalworkflow /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /p:Contoso /f:C:myGlobalWorkflow.xml
 ```
 
 ### Import the definition of a global workflow to a project
@@ -91,4 +91,4 @@ witadmin importglobalworkflow /collection:http://AdventureWorksServer:8080/tfs/D
 
 ## Related articles
 
-* [witAdmin: Customize and manage objects for tracking work](witadmin-customize-and-manage-objects-for-tracking-work.md)
+- [witAdmin: Customize and manage objects for tracking work](witadmin-customize-and-manage-objects-for-tracking-work.md)

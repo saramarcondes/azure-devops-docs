@@ -17,10 +17,10 @@ Defined in vss.d.ts
 
 ### Members
 
-* `id`: string.
+- `id`: string.
 
-* `name`: string.
+- `name`: string.
 
-* `userIsAdmin`: boolean.
+- `userIsAdmin`: boolean.
 
-* `userIsMember`: boolean.
+- `userIsMember`: boolean.

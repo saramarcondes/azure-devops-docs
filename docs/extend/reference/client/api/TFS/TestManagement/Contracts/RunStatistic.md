@@ -16,10 +16,10 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Members
 
-* `count`: number.
+- `count`: number.
 
-* `outcome`: string.
+- `outcome`: string.
 
-* `resolutionState`: [TestResolutionState](../../../TFS/TestManagement/Contracts/TestResolutionState.md).
+- `resolutionState`: [TestResolutionState](../../../TFS/TestManagement/Contracts/TestResolutionState.md).
 
-* `state`: string.
+- `state`: string.

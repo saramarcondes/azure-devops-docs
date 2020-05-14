@@ -33,9 +33,9 @@ You can use the **group** and **member** elements to specify a new security grou
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <group name="Group Name" description="Description of Group"></group>  
-> <permission name="PermissionName" class="ClassName" allow="True | False"/>  
-> <member name="MemberName"></member>  
+> <group name="Group Name" description="Description of Group"></group>
+> <permission name="PermissionName" class="ClassName" allow="True | False"/>
+> <member name="MemberName"></member>
 > ```
 
 The following table describes the attributes for the **group**, **member**, and group **permission** elements. You use these elements only in the Groups and Permissions plug-in file.
@@ -80,36 +80,36 @@ The following example shows how to configure groups that are named TestGroup1, T
 >
 > ```XML
 > <task id="GroupCreation1">
->     <taskXml>  
->       <groups>  
->         <group name="TestGroup1" description="Test group 1.  Contains no members out of the box.">  
->           <permissions>  
->             <permission name="GENERIC_READ" class="PROJECT" allow="true" />  
->           </permissions>  
->         </group>  
->         <group name="TestGroup2" description="Test group 2.  Contains TestGroup1 and Project Administrators.">  
->           <permissions>  
->             <permission name="GENERIC_READ" class="PROJECT" allow="true" />  
->           </permissions>  
->           <members>  
->             <member name="TestGroup1" />  
->             <member name="$$PROJECTADMINGROUP$$" />  
->           </members>  
->         </group>  
->         <group name="TestGroup3" description="Test group 3. Contains DOMAIN\USER, DOMAIN\GROUP, Project Administrators, and Project Collection Build Service Accounts.">  
->           <permissions>  
->             <permission name="GENERIC_READ" class="PROJECT" allow="true" />  
->           </permissions>  
->           <members>  
->             <member name="DOMAIN\USER" />  
->             <member name="DOMAIN\GROUP" />  
->             <member name="[$$PROJECTNAME$$]\$$PROJECTADMINGROUP$$" />  
->             <member name="[SERVER]\$$PROJECTCOLLECTIONBUILDSERVICESGROUP$$" />  
->           </members>  
->         </group>  
->       </groups>  
->     </taskXml>  
-> </task>  
+>     <taskXml>
+>       <groups>
+>         <group name="TestGroup1" description="Test group 1.  Contains no members out of the box.">
+>           <permissions>
+>             <permission name="GENERIC_READ" class="PROJECT" allow="true" />
+>           </permissions>
+>         </group>
+>         <group name="TestGroup2" description="Test group 2.  Contains TestGroup1 and Project Administrators.">
+>           <permissions>
+>             <permission name="GENERIC_READ" class="PROJECT" allow="true" />
+>           </permissions>
+>           <members>
+>             <member name="TestGroup1" />
+>             <member name="$$PROJECTADMINGROUP$$" />
+>           </members>
+>         </group>
+>         <group name="TestGroup3" description="Test group 3. Contains DOMAIN\USER, DOMAIN\GROUP, Project Administrators, and Project Collection Build Service Accounts.">
+>           <permissions>
+>             <permission name="GENERIC_READ" class="PROJECT" allow="true" />
+>           </permissions>
+>           <members>
+>             <member name="DOMAIN\USER" />
+>             <member name="DOMAIN\GROUP" />
+>             <member name="[$$PROJECTNAME$$]\$$PROJECTADMINGROUP$$" />
+>             <member name="[SERVER]\$$PROJECTCOLLECTIONBUILDSERVICESGROUP$$" />
+>           </members>
+>         </group>
+>       </groups>
+>     </taskXml>
+> </task>
 > ```
 
 <a name="team"></a>
@@ -123,24 +123,24 @@ The following example shows how to configure a group as a team. In this example,
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <group name="Dream Team" isTeam="true" description="Next generation work">  
->       <permissions>  
->       <permission name="GENERIC_READ" class="PROJECT" allow="true" />  
->       </permissions>  
->       <members>  
->       <member name="@creator"/>  
->       </members>  
->       <teamSettings areaPath="Area">  
->       <iterationPaths backlogPath="Iteration">  
->          <iterationPath path="Release 1\Sprint 1" />  
->          <iterationPath path="Release 1\Sprint 2" />  
->          <iterationPath path="Release 1\Sprint 3" />  
->          <iterationPath path="Release 1\Sprint 4" />  
->          <iterationPath path="Release 1\Sprint 5" />  
->          <iterationPath path="Release 1\Sprint 6" />  
->       </iterationPaths>  
->       </teamSettings>  
-> </group>  
+> <group name="Dream Team" isTeam="true" description="Next generation work">
+>       <permissions>
+>       <permission name="GENERIC_READ" class="PROJECT" allow="true" />
+>       </permissions>
+>       <members>
+>       <member name="@creator"/>
+>       </members>
+>       <teamSettings areaPath="Area">
+>       <iterationPaths backlogPath="Iteration">
+>          <iterationPath path="Release 1\Sprint 1" />
+>          <iterationPath path="Release 1\Sprint 2" />
+>          <iterationPath path="Release 1\Sprint 3" />
+>          <iterationPath path="Release 1\Sprint 4" />
+>          <iterationPath path="Release 1\Sprint 5" />
+>          <iterationPath path="Release 1\Sprint 6" />
+>       </iterationPaths>
+>       </teamSettings>
+> </group>
 > ```
 
 <a name="CollectionLevel"></a>
@@ -149,9 +149,9 @@ The following example shows how to configure a group as a team. In this example,
 
 You can assign collection-level permissions by using the group **permission** element and the NAMESPACE class. These permissions control access to resources that are available across projects. You can set collection-level permissions for only the following categories of users:
 
-* Collection-level users and groups, such as Project Collection Administrators
-* Project-level groups that have been added to the collection level on your server that is running Team Foundation
-* Custom groups that you create and add to the collection level
+- Collection-level users and groups, such as Project Collection Administrators
+- Project-level groups that have been added to the collection level on your server that is running Team Foundation
+- Custom groups that you create and add to the collection level
 
 For the format to use when you specify groups, see [Group macros and default groups](#group-macros) earlier in this topic.
 
@@ -160,14 +160,14 @@ The following example shows how to grant collection-level permissions to the pro
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <group name="PROJECTADMINGROUP" description="Members of this group can add, modify, and delete items within the project.">  
->    <permissions>  
->        <permission name="GENERIC_READ" class="NAMESPACE" allow="true" />  
->        <permission name="WORK_ITEM_WRITE" class="NAMESPACE" allow="true" />  
->        <permission name="MANAGE_TEMPLATE" class="NAMESPACE" allow="true" />  
->        <permission name="MANAGE_TEST_CONTROLLERS" class="NAMESPACE" allow="true" />  
->     </permissions>  
-> </group>  
+> <group name="PROJECTADMINGROUP" description="Members of this group can add, modify, and delete items within the project.">
+>    <permissions>
+>        <permission name="GENERIC_READ" class="NAMESPACE" allow="true" />
+>        <permission name="WORK_ITEM_WRITE" class="NAMESPACE" allow="true" />
+>        <permission name="MANAGE_TEMPLATE" class="NAMESPACE" allow="true" />
+>        <permission name="MANAGE_TEST_CONTROLLERS" class="NAMESPACE" allow="true" />
+>     </permissions>
+> </group>
 > ```
 
 The following table describes the collection-level permissions that you can assign.
@@ -195,16 +195,16 @@ The following example shows how to grant several permissions to the Contributors
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <group name="Contributors" description="Members of this group can add, modify, and delete items within the project.">  
->    <permissions>  
->       <permission name="GENERIC_READ" class="PROJECT" allow="true" />  
->       <permission name="DELETE_TEST_RESULTS" class="PROJECT" allow="true" />  
->        <permission name="PUBLISH_TEST_RESULTS" class="PROJECT" allow="true" />  
->        <permission name="VIEW_TEST_RESULTS" class="PROJECT" allow="true" />  
->        <permission name="MANAGE_TEST_ENVIRONMENTS" class="PROJECT" allow="true" />  
->       <permission name="MANAGE_TEST_CONFIGURATIONS" class="PROJECT" allow="true" />  
->    </permissions>  
-> </group>  
+> <group name="Contributors" description="Members of this group can add, modify, and delete items within the project.">
+>    <permissions>
+>       <permission name="GENERIC_READ" class="PROJECT" allow="true" />
+>       <permission name="DELETE_TEST_RESULTS" class="PROJECT" allow="true" />
+>        <permission name="PUBLISH_TEST_RESULTS" class="PROJECT" allow="true" />
+>        <permission name="VIEW_TEST_RESULTS" class="PROJECT" allow="true" />
+>        <permission name="MANAGE_TEST_ENVIRONMENTS" class="PROJECT" allow="true" />
+>       <permission name="MANAGE_TEST_CONFIGURATIONS" class="PROJECT" allow="true" />
+>    </permissions>
+> </group>
 > ```
 
 The following table describes the project-level permissions that you can assign and indicates the default assignments that are made in the default process templates.
@@ -231,14 +231,14 @@ The following example shows how to grant several permissions to the Contributors
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <group name="Contributors" description="Members of this group can add, modify, and delete items within the project.">  
->    <permissions>  
->       <permission name="GENERIC_READ" class="CSS_NODE" allow="true" />  
->       <permission name="WORK_ITEM_READ" class="CSS_NODE" allow="true" />  
->       <permission name="WORK_ITEM_WRITE" class="CSS_NODE" allow="true" />  
->       <permission name="MANAGE_TEST_PLANS" class="CSS_NODE" allow="true" />  
->    </permissions>  
-> </group>  
+> <group name="Contributors" description="Members of this group can add, modify, and delete items within the project.">
+>    <permissions>
+>       <permission name="GENERIC_READ" class="CSS_NODE" allow="true" />
+>       <permission name="WORK_ITEM_READ" class="CSS_NODE" allow="true" />
+>       <permission name="WORK_ITEM_WRITE" class="CSS_NODE" allow="true" />
+>       <permission name="MANAGE_TEST_PLANS" class="CSS_NODE" allow="true" />
+>    </permissions>
+> </group>
 > ```
 
 The following table describes the permissions that you can assign to control access to the hierarchical structure for the project's area and iteration nodes. The table also indicates the default assignments that are made in the default process templates.
@@ -267,13 +267,13 @@ The following example shows how to grant several permissions to the Contributors
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <group name="Contributors" description="Members of this group can add, modify, and delete items within the project.">  
->    <permissions>  
->       <permission name="GENERIC_READ" class="ITERATION_NODE" allow="true" />  
->       <permission name="GENERIC_WRITE" class="ITERATION_NODE" allow="true" />  
->       <permission name="CREATE_CHILDREN" class="ITERATION_NODE" allow="true" />  
->    </permissions>  
-> </group>  
+> <group name="Contributors" description="Members of this group can add, modify, and delete items within the project.">
+>    <permissions>
+>       <permission name="GENERIC_READ" class="ITERATION_NODE" allow="true" />
+>       <permission name="GENERIC_WRITE" class="ITERATION_NODE" allow="true" />
+>       <permission name="CREATE_CHILDREN" class="ITERATION_NODE" allow="true" />
+>    </permissions>
+> </group>
 > ```
 
 The following table describes the permissions that you can assign to control access to the hierarchical structure for the project's iteration nodes. Because the default process templates do not specify any `ITERATION_NODE` permissions, all team members can create, view, and delete iteration nodes.
@@ -290,9 +290,9 @@ The following table describes the permissions that you can assign to control acc
 
 ## Related articles
 
-* [Define groups, teams, and permissions](define-groups-teams-permissions-plug-in.md)
-* [Control access to functional areas](control-access-to-functional-areas.md)
-* [Set up groups for use in TFS deployments](/azure/devops/server/admin/setup-ad-groups)
-* [Permission reference](/azure/devops/repos/tfvc/permission-command)
-* [Change groups and permissions with TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd)
-* [tf permission Command](../../repos/tfvc/permission-command.md).
+- [Define groups, teams, and permissions](define-groups-teams-permissions-plug-in.md)
+- [Control access to functional areas](control-access-to-functional-areas.md)
+- [Set up groups for use in TFS deployments](/azure/devops/server/admin/setup-ad-groups)
+- [Permission reference](/azure/devops/repos/tfvc/permission-command)
+- [Change groups and permissions with TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd)
+- [tf permission Command](../../repos/tfvc/permission-command.md).

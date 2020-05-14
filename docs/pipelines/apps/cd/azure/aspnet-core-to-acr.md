@@ -23,9 +23,9 @@ With your CI/CD processes in place, you'll push a change into your team's git re
 
 ## Prerequisites
 
-* You need an Azure DevOps organization. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137). If your team already has one, then make sure you're an administrator of the Azure DevOps project that you want to use. (An Azure DevOps organization is different from your GitHub organization. Give them the same name if you want alignment between them.)
-* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/)
-* [Continuous Delivery Tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio)
+- You need an Azure DevOps organization. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137). If your team already has one, then make sure you're an administrator of the Azure DevOps project that you want to use. (An Azure DevOps organization is different from your GitHub organization. Give them the same name if you want alignment between them.)
+- [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/)
+- [Continuous Delivery Tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio)
 
 [!INCLUDE [create-azure-container-registry](../../../apps/includes/create-azure-container-registry.md)]
 
@@ -81,4 +81,4 @@ You're now ready to collaborate with a team on an ASP.NET Core app with a CI/CD 
 
 You've just put your own CI/CD processes in place. You can modify these build and release pipelines to meet the needs of your team. To learn more see this tutorial:
 
-* [Customize CD pipeline](../../../release/define-multistage-release-process.md)
+- [Customize CD pipeline](../../../release/define-multistage-release-process.md)

@@ -48,14 +48,14 @@ By using the **Subscriptions** tab, you can create, view, and delete subscriptio
 
 You can create two types of subscriptions:
 
-* **Standard subscription**: A standard subscription consists of static values that cannot be varied during subscription processing. For each standard subscription, you can specify one set of presentation options, delivery options, and report parameters.
+- **Standard subscription**: A standard subscription consists of static values that cannot be varied during subscription processing. For each standard subscription, you can specify one set of presentation options, delivery options, and report parameters.
 
-* **Data-driven subscription**: Data-driven subscriptions retrieve their presentation options, delivery options, and report parameters from a data source at run time. You might use data-driven subscriptions if you want to vary report output for each recipient. For more information, see the following page on the Microsoft Web site: [Data-Driven Subscriptions](https://go.microsoft.com/fwlink/?LinkId=181969).
+- **Data-driven subscription**: Data-driven subscriptions retrieve their presentation options, delivery options, and report parameters from a data source at run time. You might use data-driven subscriptions if you want to vary report output for each recipient. For more information, see the following page on the Microsoft Web site: [Data-Driven Subscriptions](https://go.microsoft.com/fwlink/?LinkId=181969).
 
   For each subscription, you can have reports automatically delivered to you by e-mail or copied to a file share. You configure the delivery details, schedule, and the parameter values. For more information, see the following page on the Microsoft Web site: [Subscription Overview](https://go.microsoft.com/fwlink/?LinkId=181970).
 
 ## Related notes
 
-* [Choose the source of data and authoring tool](https://msdn.microsoft.com/library/bb649557.aspx)
-* [Assign permissions to view and mange reports](grant-permissions-to-reports.md)
-* [Create and manage Reporting Services reports](../sql-reports/create-and-manage-reporting-services-reports.md)
+- [Choose the source of data and authoring tool](https://msdn.microsoft.com/library/bb649557.aspx)
+- [Assign permissions to view and mange reports](grant-permissions-to-reports.md)
+- [Create and manage Reporting Services reports](../sql-reports/create-and-manage-reporting-services-reports.md)

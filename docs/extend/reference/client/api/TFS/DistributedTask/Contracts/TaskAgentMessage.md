@@ -16,8 +16,8 @@ Module path: `TFS/DistributedTask/Contracts`
 
 ### Members
 
-* `body`: string.
+- `body`: string.
 
-* `messageId`: number.
+- `messageId`: number.
 
-* `messageType`: string.
+- `messageType`: string.

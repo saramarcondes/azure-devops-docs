@@ -1,6 +1,6 @@
 [!INCLUDE [styleoverrides](../../../../_data/style-overrides.md)]
 
-* [updateOkButton()](#method_updateOkButton)
+- [updateOkButton()](#method_updateOkButton)
 
 <a name="method_updateOkButton"></a>
 
@@ -14,4 +14,4 @@ void
 
 #### Parameters
 
-* `enabled`: boolean. True if enabled, otherwise false.
+- `enabled`: boolean. True if enabled, otherwise false.

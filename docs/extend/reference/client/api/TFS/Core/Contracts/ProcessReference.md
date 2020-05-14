@@ -16,6 +16,6 @@ Module path: `TFS/Core/Contracts`
 
 ### Members
 
-* `name`: string.
+- `name`: string.
 
-* `url`: string.
+- `url`: string.

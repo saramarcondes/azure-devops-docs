@@ -40,13 +40,13 @@ After turning on the **Free access to Pipelines for Stakeholders** preview featu
 1.  Create a custom, project-level, security group in Azure DevOps.
 2.  Add users to this group
 3.  Set permissions to **Deny** or **Not set** for those CI/CD features you want to limit access to. You can set permissions for these CI/CD artifacts:
-    * All build pipelines or select build pipelines
-    * All release pipelines or select release pipelines
-    * Task groups
+    - All build pipelines or select build pipelines
+    - All release pipelines or select release pipelines
+    - Task groups
 4.  Add the security group to a Library security role for these artifacts:
-    * Variable groups
-    * Secure files
-    * Deployment groups
+    - Variable groups
+    - Secure files
+    - Deployment groups
 
 ## Create a custom security group
 
@@ -148,8 +148,8 @@ Open the Security dialog for all or a select build pipeline.
 
     For example, here we change the permission for **Edit build definition** for the _Stakeholders Access_ group to **Deny**.
 
-        	> [!div class="mx-imgBorder"]  
-        	> ![Choose Add link to add a group](media/stakeholder-security/set-build-permissions.png)  
+        	> [!div class="mx-imgBorder"]
+        	> ![Choose Add link to add a group](media/stakeholder-security/set-build-permissions.png)
 
 1.  Save your changes and the choose **Close**.
 
@@ -174,8 +174,8 @@ Open the Security dialog for all or a select release pipeline.
 
     For example, here we change the permission for **Edit build definition** for the _Stakeholders Access_ group to **Deny**.
 
-        	> [!div class="mx-imgBorder"]  
-        	> ![Choose Add link to add a group](media/stakeholder-security/release-definitions-permissions-dialog.png)  
+        	> [!div class="mx-imgBorder"]
+        	> ![Choose Add link to add a group](media/stakeholder-security/release-definitions-permissions-dialog.png)
 
 1.  Save your changes and the choose **Cancel**.
 
@@ -189,6 +189,6 @@ To prevent Stakeholders from editing task groups, add your custom security group
 
 ## Related articles
 
-* [Set build and release permissions](../../pipelines/policies/set-permissions.md)
-* [Build and release permissions and roles (Security)](../../pipelines/policies/permissions.md)
-* [Get started as a stakeholder](get-started-stakeholder.md)
+- [Set build and release permissions](../../pipelines/policies/set-permissions.md)
+- [Build and release permissions and roles (Security)](../../pipelines/policies/permissions.md)
+- [Get started as a stakeholder](get-started-stakeholder.md)

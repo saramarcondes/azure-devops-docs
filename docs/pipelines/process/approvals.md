@@ -59,10 +59,10 @@ To define a required template approval:
 3.  In the **Add your first check** menu, select **Required template**.
 
 4.  Enter details on how to get to your required template file.
-    * **Repository type**: The location of your repository (GitHub, Azure, or Bitbucket).
-    * **Repository**: The name of your repository that contains your template.
-    * **Ref**: The branch or tag of the required template.
-    * **Path to required template**: The name of your template.
+    - **Repository type**: The location of your repository (GitHub, Azure, or Bitbucket).
+    - **Repository**: The name of your repository that contains your template.
+    - **Ref**: The branch or tag of the required template.
+    - **Path to required template**: The name of your template.
 
 You can have multiple required templates for the same service connection. In this example, the required template is `required.yml`.
 

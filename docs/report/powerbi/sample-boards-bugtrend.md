@@ -18,8 +18,7 @@ ms.date: 08/07/2019
 
 This article shows you how to display, for a given set of open Bugs, the number of Bugs in each State, trended over a period of time. The following image shows an example of such a trend.
 
-> [!div class="mx-imgBorder"]
-> ![Sample - Boards Rollup - Report](media/odatapowerbi-bugtrend-report.png)
+> [!div class="mx-imgBorder"] > ![Sample - Boards Rollup - Report](media/odatapowerbi-bugtrend-report.png)
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
@@ -71,8 +70,8 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
-* {areapath} - Your Area Path. Example format: Project\Level1\Level2
-* {startdate} - The date to start your trend report. Format: YYYY-MM-DDZ. Example: 2019-04-01Z represents 2019-April-01. Do not enclose in quotes.
+- {areapath} - Your Area Path. Example format: Project\Level1\Level2
+- {startdate} - The date to start your trend report. Format: YYYY-MM-DDZ. Example: 2019-04-01Z represents 2019-April-01. Do not enclose in quotes.
 
 <!--- How specify the end date? -->
 
@@ -109,22 +108,20 @@ Power BI shows you the fields you can report on.
 > [!NOTE]  
 > The example below assumes that no one renamed any columns.
 
-> [!div class="mx-imgBorder"]
-> ![Sample - Boards Rollup - Fields](media/odatapowerbi-bugtrend-fields.png)
+> [!div class="mx-imgBorder"] > ![Sample - Boards Rollup - Fields](media/odatapowerbi-bugtrend-fields.png)
 
 For a simple report, do the following steps:
 
 1.  Select Power BI Visualization **Line chart**.
 1.  Add the field "DateValue" to **Axis**.
-    * Right-click "DateValue" and select "DateValue", rather than Date Hierarchy.
+    - Right-click "DateValue" and select "DateValue", rather than Date Hierarchy.
 1.  Add the field "State" to **Legend**.
 1.  Add the field "Count" to **Values**.
-    * Right-click Count field and ensure **Sum** is selected.
+    - Right-click Count field and ensure **Sum** is selected.
 
 The example report displays.
 
-> [!div class="mx-imgBorder"]
-> ![Sample - Boards Rollup - Report](media/odatapowerbi-bugtrend-report.png)
+> [!div class="mx-imgBorder"] > ![Sample - Boards Rollup - Report](media/odatapowerbi-bugtrend-report.png)
 
 [!INCLUDE [temp](includes/sample-multipleteams.md)]
 

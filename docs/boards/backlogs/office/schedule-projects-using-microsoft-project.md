@@ -71,19 +71,19 @@ The following table provides the sequence of tasks to perform and related topics
 
 If you want team members to schedule tasks manually from a Team Foundation client, you must add the Project fields that store the manual date and duration for tasks to the work item form and project mapping file. You can use the following information to determine which of these Project scheduling fields to add:
 
-* To support manually scheduled tasks, add one or more of the pjTaskStartText, pjTaskFinishText, or pjTaskDurationText fields to the mapping file. You must map pj\*Text fields to String fields in Team Foundation. These fields accept text strings only.
-* The pjTaskStart, pjTaskFinish, and pjTaskDuration fields contain the scheduled committed dates and duration of a task.
+- To support manually scheduled tasks, add one or more of the pjTaskStartText, pjTaskFinishText, or pjTaskDurationText fields to the mapping file. You must map pj\*Text fields to String fields in Team Foundation. These fields accept text strings only.
+- The pjTaskStart, pjTaskFinish, and pjTaskDuration fields contain the scheduled committed dates and duration of a task.
 
-      	> [!TIP]  
+      	> [!TIP]
       	>By default, these fields are mapped based on the process template that was used to create your project.
 
-* The scheduling engine uses the pjTaskScheduledStart, pjTaskScheduledFinish, and pjTaskScheduledDuration fields to store the calculated dates and duration of an autoscheduled task.
-* The pjTaskManual, pjTaskPlaceholder, and pjTaskWarning fields indicate whether a task is scheduled manually or automatically, whether a manual task has insufficient information to be scheduled, and whether a Project has identified a potential scheduling conflict with the start date, finish date, or duration, respectively, of a manually scheduled task.
+- The scheduling engine uses the pjTaskScheduledStart, pjTaskScheduledFinish, and pjTaskScheduledDuration fields to store the calculated dates and duration of an autoscheduled task.
+- The pjTaskManual, pjTaskPlaceholder, and pjTaskWarning fields indicate whether a task is scheduled manually or automatically, whether a manual task has insufficient information to be scheduled, and whether a Project has identified a potential scheduling conflict with the start date, finish date, or duration, respectively, of a manually scheduled task.
 
 To learn more, see:
 
-* [Available Fields](https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460)
-* [Customize the Microsoft Project field mapping file](../../../reference/xml/customize-project-field-mapping-file.md)
+- [Available Fields](https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460)
+- [Customize the Microsoft Project field mapping file](../../../reference/xml/customize-project-field-mapping-file.md)
 
 ### Add fields to the task work item type
 
@@ -93,8 +93,8 @@ To update a work item type, you add a `FIELD` element for each new field you wan
 
 For more information, see:
 
-* [Add or modify a work item field](../../../reference/add-modify-field.md)
-* [Add or modify work item fields to support reporting](../../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md)
+- [Add or modify a work item field](../../../reference/add-modify-field.md)
+- [Add or modify work item fields to support reporting](../../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md)
 
 ### Update the Microsoft Project Mapping File
 
@@ -104,4 +104,4 @@ To learn more, see [TFSFieldMapping](../../../reference/xml/upload-or-download-t
 
 ## Related articles
 
-* [Create your backlog and tasks using Project](create-your-backlog-tasks-using-project.md)
+- [Create your backlog and tasks using Project](create-your-backlog-tasks-using-project.md)

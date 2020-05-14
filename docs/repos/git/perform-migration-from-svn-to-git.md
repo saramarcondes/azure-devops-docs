@@ -17,14 +17,14 @@ SVN migrations to Git can vary in complexity, depending on how old the repositor
 
 It could be simple if:
 
-* You have a new repository
-* You have a standard setup of a trunk, branches, and tags directory
+- You have a new repository
+- You have a standard setup of a trunk, branches, and tags directory
 
 It's likely going to be complex if:
 
-* Your team has performed many branching and merging operations
-* Your repository follows a non-standard directory setup
-* Your directory setup has changed over time
+- Your team has performed many branching and merging operations
+- Your repository follows a non-standard directory setup
+- Your directory setup has changed over time
 
 There are several ways to migrate from SVN to Git. The approach outlined in this article is based on using [git-svn](https://git-scm.com/docs/git-svn), a Git extension, which can be used to check out a Subversion repository to a local Git repository and then push changes from the local Git repository back to the Subversion repository. These steps give a detailed overview of the process for migrating from SVN to Git in a Windows environment, without synchronizing back to the original SVN repository. The result will be a bare Git repository for sharing with the rest of your team.
 
@@ -34,20 +34,20 @@ There are several ways to migrate from SVN to Git. The approach outlined in this
 
 The high-level workflow for migrating from SVN to Git is as follows:
 
-* Prepare a migration environment
-* Convert the source SVN repository to a local Git repository
-* (Optional) Synchronize the local Git repository with any changes from SVN repository while developers continue using SVN
-* Push the local Git repository to a remote Git repository hosted on Azure Repos
-* Lock SVN repository, synchronize any remaining changes from SVN repository to local Git repository and push final changes to the remote Git repository on Azure Repos
-* Developers switch to Git as main source control system
+- Prepare a migration environment
+- Convert the source SVN repository to a local Git repository
+- (Optional) Synchronize the local Git repository with any changes from SVN repository while developers continue using SVN
+- Push the local Git repository to a remote Git repository hosted on Azure Repos
+- Lock SVN repository, synchronize any remaining changes from SVN repository to local Git repository and push final changes to the remote Git repository on Azure Repos
+- Developers switch to Git as main source control system
 
 ## Prepare a migration environment
 
 Configure a migration environment on a local workstation and install the following software:
 
-* [Git](https://git-for-windows.github.io/)
-* [Subversion](https://subversion.apache.org/packages.html)
-* [git-svn utility](https://www.kernel.org/pub/software/scm/git/docs/git-svn.html) (already part of Git)
+- [Git](https://git-for-windows.github.io/)
+- [Subversion](https://subversion.apache.org/packages.html)
+- [git-svn utility](https://www.kernel.org/pub/software/scm/git/docs/git-svn.html) (already part of Git)
 
 You will also need to create a Git repository for your organization to host the converted SVN repository, you may follow [Create a new Git repo in your project
 ](/azure/devops/repos/git/create-new-repo)
@@ -147,10 +147,7 @@ In this step, you will create a bare repository and make its default branch matc
 
 3.  Rename "trunk" branch to "master"
     Your main development branch will be named "trunk", which matches the name it was in Subversion. You'll want to rename it to Git's standard "master" branch using:
-        ```
-        cd c:\new-bare.git
-        git branch -m trunk master
-        ```
+    ` cd c:\new-bare.git git branch -m trunk master `
 4.  Clean up branches and tags
     git-svn makes all of Subversions tags into very-short branches in Git of the form "tags/name". You'll want to convert all those branches into actual Git tags or delete them.
 
@@ -167,9 +164,9 @@ git for-each-ref --format='%(refname)' refs/heads/tags | % { $_.Replace('refs/he
 
 While it's easy to create all SVN branches as a proper Git branches, it's recommended that you evaluate the following points before you continue:
 
-* If there are Feature branches: Can you wait until they integrate to the trunk before migrating?
+- If there are Feature branches: Can you wait until they integrate to the trunk before migrating?
 
-* If there are Release branches: Does it make sense to keep SVN around for servicing? If you migrate feature branches, are you prepared to service branches out of Git?
+- If there are Release branches: Does it make sense to keep SVN around for servicing? If you migrate feature branches, are you prepared to service branches out of Git?
 
 If you still want to migrate existing branches, run the following PowerShell command:
 
@@ -187,10 +184,10 @@ Moving from a centralized version control system to Git is more than just migrat
 
 ## Reference information
 
-* [Choosing the right version control for your project](/azure/devops/repos/tfvc/comparison-git-tfvc)
-* [Learn Git](/azure/devops/learn/git/learn-git-with-team-services/)
-* [Ignore file changes with Git](/azure/devops/repos/git/ignore-files?tabs=visual-studio)
-* [Migrate from TFVC to Git](/azure/devops/learn/git/migrate-from-tfvc-to-git)
+- [Choosing the right version control for your project](/azure/devops/repos/tfvc/comparison-git-tfvc)
+- [Learn Git](/azure/devops/learn/git/learn-git-with-team-services/)
+- [Ignore file changes with Git](/azure/devops/repos/git/ignore-files?tabs=visual-studio)
+- [Migrate from TFVC to Git](/azure/devops/learn/git/migrate-from-tfvc-to-git)
 
 > Authors: Hosam Kamel, William H. Salazar | Find the origin of this article and connect with the ALM | DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
 

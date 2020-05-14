@@ -115,5 +115,5 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version
 
 ## Related articles
 
-* [WIT analytics](wit-analytics.md)
-* [Aggregate data](aggregated-data-analytics.md)
+- [WIT analytics](wit-analytics.md)
+- [Aggregate data](aggregated-data-analytics.md)

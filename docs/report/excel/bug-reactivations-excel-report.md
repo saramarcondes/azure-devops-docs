@@ -40,13 +40,13 @@ This report is based on a PivotChart report that shows the most recent four week
 
 For the Bug Reactivations report to be useful and accurate, the team must perform the following activities:
 
-* Define Bugs.
+- Define Bugs.
 
   > [!NOTE]
   > For information about how to define area and iteration paths, see [Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) .
 
-* Update the **State** of each Bug as the team fixes, verifies, closes, or reactivates it.
-* (Optional) Specify the **Iteration** and **Area** paths of each Bug if you want to filter by those fields.
+- Update the **State** of each Bug as the team fixes, verifies, closes, or reactivates it.
+- (Optional) Specify the **Iteration** and **Area** paths of each Bug if you want to filter by those fields.
 
 <a name="Interpreting"></a>
 
@@ -58,8 +58,8 @@ The Reactivations report displays information that you can use to detect whether
 
 You can review the report to answer these questions:
 
-* How many Bugs have been reactivated in the past four weeks?
-* Is the team resolving and closing reactivated Bugs quickly enough?
+- How many Bugs have been reactivated in the past four weeks?
+- Is the team resolving and closing reactivated Bugs quickly enough?
 
 For information about healthy and unhealthy versions of the report, see [Reactivations](../sql-reports/reactivations-report.md).
 
@@ -77,5 +77,5 @@ You can update the Bug Reactivations report by opening it in Office Excel and ch
 
 ## Related articles
 
-* [Excel reports](excel-reports.md)
-* [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)
+- [Excel reports](excel-reports.md)
+- [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)

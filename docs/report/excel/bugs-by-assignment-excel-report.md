@@ -28,23 +28,23 @@ You can use the Bugs by Assignment report to understand the distribution of Bugs
 
 You can review the Bugs by Assignment report to determine the allocation of bugs to each team member. Specifically, you can find answers to the following questions:
 
-* How many bugs are assigned to each team member?
-* Which team member is assigned the most bugs?
-* Which team member is assigned the most high priority bugs?
-* Does any team member have a backlog of priority 1 bugs that warrant redistribution?
+- How many bugs are assigned to each team member?
+- Which team member is assigned the most bugs?
+- Which team member is assigned the most high priority bugs?
+- Does any team member have a backlog of priority 1 bugs that warrant redistribution?
 
 ### Required activities for tracking bBugs
 
 For the Bugs by Assignment report to be useful and accurate, the team must perform the following activities:
 
-* Define Bugs, and specify their **Iteration** and **Area** paths.
+- Define Bugs, and specify their **Iteration** and **Area** paths.
 
   > [!NOTE]
   > For information about how to define area and iteration paths, see [Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) .
 
-* Assign each Bug to the team member who is working to resolve or close it.
-* Specify the **Priority** of each Bug.
-* Update the **State** of each Bug as the team fixes, verifies, and closes it.
+- Assign each Bug to the team member who is working to resolve or close it.
+- Specify the **Priority** of each Bug.
+- Update the **State** of each Bug as the team fixes, verifies, and closes it.
 
 <a name="Updating"></a>
 
@@ -62,5 +62,5 @@ You can customize the Bugs by Assignment report by opening it in Office Excel an
 
 ## Related articles
 
-* [Excel reports](excel-reports.md)
-* [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)
+- [Excel reports](excel-reports.md)
+- [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)

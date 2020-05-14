@@ -22,26 +22,25 @@ This article shows you how to get the execution state of one or more Test Plans 
 
 The report generated is similar to following image and the Outcome trend chart of the [Track test status - Progress report](../../test/track-test-status.md).
 
-> [!div class="mx-imgBorder"]
-> ![Sample - Execution Trend - Report](media/odatapowerbi-executiontrend.png)
+> [!div class="mx-imgBorder"] > ![Sample - Execution Trend - Report](media/odatapowerbi-executiontrend.png)
 
 The report displays a trend chart that summarizes the number and outcome states of Test Plans executed over a specified period of time.
 
-* **Passed**: Number of test cases passing.
-* **Failed**: Number of test cases failing.
-* **NotApplicable**: Number of test cases
-* **Blocked**: Number of test cases blocked from running.
-* **NotExecuted**: Number of test cases defined but not executed.
+- **Passed**: Number of test cases passing.
+- **Failed**: Number of test cases failing.
+- **NotApplicable**: Number of test cases
+- **Blocked**: Number of test cases blocked from running.
+- **NotExecuted**: Number of test cases defined but not executed.
 
 ## Questions the report answers
 
 This report helps you track the team's progress with respect to planned testing of your product or service by answering the following questions:
 
-* _How much testing is complete?_
-* _What is the current status of tests passing, failing, or being blocked?_
-* _How many tests are passing and what does the trend indicate about software quality?_
-* _How many tests are failing?_
-* _How many tests are blocked and what does the trend indicate?_
+- _How much testing is complete?_
+- _What is the current status of tests passing, failing, or being blocked?_
+- _How many tests are passing and what does the trend indicate about software quality?_
+- _How many tests are failing?_
+- _How many tests are blocked and what does the trend indicate?_
 
 A healthy test execution trend report shows a steady progress in test plans running and passing. Ideally, the report shows a relatively flat number of test cases for a given plan. As the development cycle progresses, the number of passing test cases should increase, and the numbers of test cases in other states should decrease.
 
@@ -51,10 +50,10 @@ A healthy test execution trend report shows a steady progress in test plans runn
 
 For the report to generate useful data, the team must perform the following activities to manage test plans:
 
-* Define test plans, test suites, and test cases. Specify their state. For a Test Suite to run, it must be in the In Progress state. For a Test Case to run, it must be in the Ready state. For details, see [Create test plans and test suites](../../test/create-a-test-plan.md) and [Create manual test cases](../../test/create-test-cases.md).
-* Run manual tests and verify the results. Mark the results of each validation step in the test case as passed or failed. For details, see [Run manual tests](../../test/run-manual-tests.md).
+- Define test plans, test suites, and test cases. Specify their state. For a Test Suite to run, it must be in the In Progress state. For a Test Case to run, it must be in the Ready state. For details, see [Create test plans and test suites](../../test/create-a-test-plan.md) and [Create manual test cases](../../test/create-test-cases.md).
+- Run manual tests and verify the results. Mark the results of each validation step in the test case as passed or failed. For details, see [Run manual tests](../../test/run-manual-tests.md).
 
-      	> [!NOTE]  
+      	> [!NOTE]
       	> Testers must mark a test step with a status if it is a validation test step. The overall result for a test reflects the status of all the test steps that were marked. Therefore, the test will have a status of failed if any test step is marked as failed or not marked.
 
 ## Sample queries
@@ -93,14 +92,14 @@ $apply=filter(
     (TestSuite/TestPlanTitle eq '{testPlanTitle}') and (DateSK ge {startDate} and DateSK le {endDate})
 )
 /groupby(
-    (DateSK),  
+    (DateSK),
     aggregate(
         $count as TotalCount,
         cast(ResultOutcome  eq 'Passed', Edm.Int32) with sum as Passed,
         cast(ResultOutcome  eq 'Failed', Edm.Int32) with sum as Failed,
         cast(ResultOutcome eq 'Blocked', Edm.Int32) with sum as Blocked,
         cast(ResultOutcome eq 'NotApplicable', Edm.Int32) with sum as NotApplicable,
-        cast(ResultOutcome eq 'None', Edm.Int32) with sum as NotExecuted,  
+        cast(ResultOutcome eq 'None', Edm.Int32) with sum as NotExecuted,
         cast(ResultOutcome ne 'None', Edm.Int32) with sum as Executed
     )
 )
@@ -112,10 +111,10 @@ $apply=filter(
 
 Each query contains the following strings that you must substitute with your values. Do not include brackets {} with your substitution. For example if your organization name is "Fabrikam", replace {organization} with **Fabrikam**, not {Fabrikam}.
 
-* {organization} - Your organization name
-* {project} - Your team project name, or omit "/{project}" entirely, for a cross-project query
-* {testPlanTitle} - Title of your test plan. Example: Fabrikam test plan.
-* {startDate} and {endDate} - Date range of interest. You can enter the dates in YYYYMMDD format. e.g. 20190822 for 22nd August 2019.
+- {organization} - Your organization name
+- {project} - Your team project name, or omit "/{project}" entirely, for a cross-project query
+- {testPlanTitle} - Title of your test plan. Example: Fabrikam test plan.
+- {startDate} and {endDate} - Date range of interest. You can enter the dates in YYYYMMDD format. e.g. 20190822 for 22nd August 2019.
 
 ### Query breakdown
 
@@ -143,8 +142,7 @@ Power BI shows you the fields you can report on.
 > [!NOTE]  
 > The example below assumes that no one renamed any columns.
 
-> [!div class="mx-imgBorder"]
-> ![Sample - Execution Trend - Fields](media/odatapowerbi-executiontrend-fields.png)
+> [!div class="mx-imgBorder"] > ![Sample - Execution Trend - Fields](media/odatapowerbi-executiontrend-fields.png)
 
 To create the report, do the following steps:
 
@@ -154,8 +152,7 @@ To create the report, do the following steps:
 
 Your report should look similar to the following image.
 
-> [!div class="mx-imgBorder"]
-> ![Sample - Execution Trend - Report](media/odatapowerbi-executiontrend.png)
+> [!div class="mx-imgBorder"] > ![Sample - Execution Trend - Report](media/odatapowerbi-executiontrend.png)
 
 ## Full list of sample reports for Test Plans
 
@@ -163,6 +160,6 @@ Your report should look similar to the following image.
 
 ## Related articles
 
-* [Overview of sample reports using OData queries](/azure/devops/report/powerbi/sample-odata-overview)
-* [Connect using Power BI and OData queries](/azure/devops/report/powerbi/odataquery-connect)
-* [Analytics OData query quick reference](/azure/devops/report/extend-analytics/quick-ref)
+- [Overview of sample reports using OData queries](/azure/devops/report/powerbi/sample-odata-overview)
+- [Connect using Power BI and OData queries](/azure/devops/report/powerbi/odataquery-connect)
+- [Analytics OData query quick reference](/azure/devops/report/extend-analytics/quick-ref)

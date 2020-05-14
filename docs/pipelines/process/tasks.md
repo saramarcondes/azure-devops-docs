@@ -156,7 +156,7 @@ steps:
 
 [!INCLUDE [include](includes/task-run-built-in-conditions.md)]
 
-* [Custom conditions](conditions.md) which are composed of [expressions](expressions.md)
+- [Custom conditions](conditions.md) which are composed of [expressions](expressions.md)
 
 ### Step target
 
@@ -217,7 +217,7 @@ Select the condition for running this task:
 
 [!INCLUDE [include](includes/task-run-built-in-conditions.md)]
 
-* [Custom conditions](conditions.md) which are composed of [expressions](expressions.md)
+- [Custom conditions](conditions.md) which are composed of [expressions](expressions.md)
 
 > [!NOTE]
 > If you're running tasks in cases when the build is canceled, then make sure you specify sufficient time for these tasks to run the [pipeline options](../process/phases.md#timeouts).
@@ -238,9 +238,9 @@ Select this check box if you want the task to run even if the build or deploymen
 
 Tool installers enable your build pipeline to install and control your dependencies. Specifically, you can:
 
-* Install a tool or runtime on the fly (even on [Microsoft-hosted agents](../agents/hosted.md)) just in time for your CI build.
+- Install a tool or runtime on the fly (even on [Microsoft-hosted agents](../agents/hosted.md)) just in time for your CI build.
 
-* Validate your app or library against multiple versions of a dependency such as Node.js.
+- Validate your app or library against multiple versions of a dependency such as Node.js.
 
 For example, you can set up your build pipeline to run and validate your app for multiple versions of Node.js.
 
@@ -302,7 +302,7 @@ Add these tasks:
 
 ![icon](../tasks/tool/media/node.png) Tool: Node.js Installer
 
-* Version Spec:
+- Version Spec:
 
   ```
   $(NodeVersionSpec)
@@ -310,13 +310,13 @@ Add these tasks:
 
 ![icon](../tasks/utility/media/command-line.png) Utility: Command Line
 
-* Script (if you're running on a Windows agent)
+- Script (if you're running on a Windows agent)
 
   ```
   where node
   ```
 
-* Script (if you're running on a macOS or Linux agent)
+- Script (if you're running on a macOS or Linux agent)
   ```
   which node
   ```
@@ -341,8 +341,8 @@ For a list of our tool installer tasks, see [Tool installer tasks](../tasks/inde
 
 ## Related articles
 
-* [Jobs](phases.md)
-* [Task groups](../library/task-groups.md)
-* [Built-in task catalog](../tasks/index.md)
+- [Jobs](phases.md)
+- [Task groups](../library/task-groups.md)
+- [Built-in task catalog](../tasks/index.md)
 
 [!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

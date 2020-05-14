@@ -66,7 +66,7 @@ You always add a field to an existing work item type.
 
 1.  (Optional) On the **Options** tab, indicate if the field is required and specify a default value. Or leave these blank.
 
-    <img src="media/process/cpfield-bug-customer-ticket-options.png" alt="Add a field to Use story, specify options" style="border: 1px solid #C3C3C3;" />  
+    <img src="media/process/cpfield-bug-customer-ticket-options.png" alt="Add a field to Use story, specify options" style="border: 1px solid #C3C3C3;" />
 
     By making a field Required, users must specify a value for the field in order to save it. The default value you specify is set when you create a work item as well as every time a work item is opened and the field is empty.
 
@@ -76,7 +76,7 @@ You always add a field to an existing work item type.
 
     Here, we add the Customer Ticket field to a new group labeled Customer focus.
 
-    <img src="media/process/cpfield-customer-ticket-layout.png" alt="Add a field to Use story, specify layout" style="border: 1px solid #C3C3C3;" />  
+    <img src="media/process/cpfield-customer-ticket-layout.png" alt="Add a field to Use story, specify layout" style="border: 1px solid #C3C3C3;" />
 
 1.  Choose **Add field** to complete adding the field. If you haven't specified it's layout location, it is added to the first group of fields on the layout form.
 
@@ -140,6 +140,6 @@ We recommend that you create a test project and apply your customized inherited 
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
-* [Add and manage fields for an inherited process](customize-process-field.md#show-hide-field)
-* [Customize a project using an inherited process](customize-process.md)
-* [Create and manage inherited processes](manage-process.md)
+- [Add and manage fields for an inherited process](customize-process-field.md#show-hide-field)
+- [Customize a project using an inherited process](customize-process.md)
+- [Create and manage inherited processes](manage-process.md)

@@ -22,16 +22,16 @@ You can filter most items using keywords or a user name for an author of an item
 
 ::: moniker range=">= azure-devops-2019"
 
-* Git repositories: Branches, Commits, Commit history, Pull Requests, Pushes, and Repositories
-* Work tracking: Work Items, Kanban boards, Backlogs, Sprint Backlogs, and Taskboards
-* Directories: Dashboards, Boards, Backlogs, Sprints, Queries, Builds, Releases
+- Git repositories: Branches, Commits, Commit history, Pull Requests, Pushes, and Repositories
+- Work tracking: Work Items, Kanban boards, Backlogs, Sprint Backlogs, and Taskboards
+- Directories: Dashboards, Boards, Backlogs, Sprints, Queries, Builds, Releases
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-* Git repositories: Branches, Commits, Commit history, Pull Requests, Pushes, and Repositories
-* Work tracking: Work Items, Kanban boards, Backlogs, Sprint Backlogs, and Taskboards
+- Git repositories: Branches, Commits, Commit history, Pull Requests, Pushes, and Repositories
+- Work tracking: Work Items, Kanban boards, Backlogs, Sprint Backlogs, and Taskboards
 
 ::: moniker-end
 
@@ -100,8 +100,8 @@ For example, here we turn filtering on for the dashboard directory.
 
 ## Related articles
 
-* [Commit history](../../repos/git/commit-history.md)
-* [Working with Git tags](../../repos/git/git-tags.md)
-* [Filter backlogs and queries](../../boards/backlogs/filter-backlogs.md)
-* [Filter your Kanban board](../../boards/boards/filter-kanban-board.md)
-* [Add tags to work items](../../boards/queries/add-tags-to-work-items.md)
+- [Commit history](../../repos/git/commit-history.md)
+- [Working with Git tags](../../repos/git/git-tags.md)
+- [Filter backlogs and queries](../../boards/backlogs/filter-backlogs.md)
+- [Filter your Kanban board](../../boards/boards/filter-kanban-board.md)
+- [Add tags to work items](../../boards/queries/add-tags-to-work-items.md)

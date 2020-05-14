@@ -74,10 +74,10 @@ To protect data in the case of hardware or service failures, Microsoft Azure sto
 > [!NOTE]
 > Note the following regarding data redundancy and fail over:
 >
-> * There is an inherent delta measured in minutes when we replicate your data between the primary and secondary region
-> * Fail over to the secondary region is a decision that we must make centrally as it impacts all customers on the affected scale unit. Except in extreme circumstances, we'll opt to not fail over so that customer data is not lost
-> * Azure DevOps offers a 99.9% uptime SLA guarantee and will refund portion of the monthly charges if we miss the SLA in a specific month
-> * Because there is only one region in Brazil, customer data in Brazil is replicated to South Central US for disaster recovery purposes
+> - There is an inherent delta measured in minutes when we replicate your data between the primary and secondary region
+> - Fail over to the secondary region is a decision that we must make centrally as it impacts all customers on the affected scale unit. Except in extreme circumstances, we'll opt to not fail over so that customer data is not lost
+> - Azure DevOps offers a 99.9% uptime SLA guarantee and will refund portion of the monthly charges if we miss the SLA in a specific month
+> - Because there is only one region in Brazil, customer data in Brazil is replicated to South Central US for disaster recovery purposes
 
 ### Mistakes happen
 
@@ -158,9 +158,9 @@ you and Azure DevOps, we encrypt via HTTPS / SSL.
 
 Also, data we store on your behalf in Azure DevOps is encrypted as follows:
 
-* For data stored in Azure SQL databases, Azure DevOps adopted [Transparent Data Encryption (TDE)](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-azure-sql?view=sql-server-2017) to protect against the threat of malicious activity by doing real-time encryption of the database, associated backups, and transaction log files at rest.
+- For data stored in Azure SQL databases, Azure DevOps adopted [Transparent Data Encryption (TDE)](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-azure-sql?view=sql-server-2017) to protect against the threat of malicious activity by doing real-time encryption of the database, associated backups, and transaction log files at rest.
 
-* Azure Blob Storage connections are encrypted to protect your data in transit. To protect data at rest stored in our Azure Blob Storage, we have adopted [Azure Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption).
+- Azure Blob Storage connections are encrypted to protect your data in transit. To protect data at rest stored in our Azure Blob Storage, we have adopted [Azure Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption).
 
 To learn more about how we encrypt your data, visit the following [blog post](https://blogs.msdn.microsoft.com/devops/2017/09/05/visual-studio-team-services-encryption-at-rest/).
 
@@ -284,18 +284,18 @@ to learn more about conditional access policy (CAP). Azure DevOps now enforces c
 In addition to this white paper, see the following resources available for
 your review and education.
 
-* [Azure DevOps home page](https://azure.microsoft.com/services/devops/)
-* [Azure DevOps status](https://blogs.msdn.com/b/vsoservice/)
-* [Azure DevOps credential storage](credential-storage.md)
-* [Azure DevOps data location](data-location.md)
-* [Developer Services privacy statement](https://privacy.microsoft.com/privacystatement)
-* [Azure DevOps support](https://azure.microsoft.com/support/devops/)
-* [Developer Services Agreement](/azure/devops/user-guide/services)
-* [Azure trust center](https://azure.microsoft.com/support/trust-center/)
-* [Microsoft Security Development Lifecycle](https://www.microsoft.com/sdl/)
-* [Create and revoke your PATs](../accounts/use-personal-access-tokens-to-authenticate.md)
-* [Revoke user PATs - for admins](../accounts/admin-revoke-user-pats.md)
-* [Token expiration](../accounts/admin-revoke-user-pats.md#token-expiration)
+- [Azure DevOps home page](https://azure.microsoft.com/services/devops/)
+- [Azure DevOps status](https://blogs.msdn.com/b/vsoservice/)
+- [Azure DevOps credential storage](credential-storage.md)
+- [Azure DevOps data location](data-location.md)
+- [Developer Services privacy statement](https://privacy.microsoft.com/privacystatement)
+- [Azure DevOps support](https://azure.microsoft.com/support/devops/)
+- [Developer Services Agreement](/azure/devops/user-guide/services)
+- [Azure trust center](https://azure.microsoft.com/support/trust-center/)
+- [Microsoft Security Development Lifecycle](https://www.microsoft.com/sdl/)
+- [Create and revoke your PATs](../accounts/use-personal-access-tokens-to-authenticate.md)
+- [Revoke user PATs - for admins](../accounts/admin-revoke-user-pats.md)
+- [Token expiration](../accounts/admin-revoke-user-pats.md#token-expiration)
 
 _(c) 2018 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views that are expressed in this document,

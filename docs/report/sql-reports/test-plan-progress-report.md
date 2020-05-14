@@ -24,9 +24,9 @@ For information about how to access, refresh, or manage reports, see [Reporting 
 
 **Requirements**
 
-* To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).
+- To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../admin/grant-permissions-to-reports.md).
 
-* The team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](media/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node. If you need to add reports, see [Add reports to a team project](../admin/add-reports-to-a-team-project.md).
+- The team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](media/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node. If you need to add reports, see [Add reports to a team project](../admin/add-reports-to-a-team-project.md).
 
 ## <a name="Data"></a> Data in the Report
 
@@ -49,9 +49,9 @@ The horizontal axis shows days in a sprint or iteration, and the vertical axis s
 
 You can filter the Test Plan Progress report in the following ways:
 
-* Change the start and end dates for the report.
+- Change the start and end dates for the report.
 
-* Filter the test plans that are counted in the report by specifying iteration paths, area paths, and the names or states of the test plans.
+- Filter the test plans that are counted in the report by specifying iteration paths, area paths, and the names or states of the test plans.
 
   For more information, see [Filtering the Report](#Changing) later in this article.
 
@@ -59,18 +59,18 @@ You can filter the Test Plan Progress report in the following ways:
 
 For the Test Plan Progress report to be useful and accurate, the team must perform the following activities to manage test plans:
 
-* Define test cases, and specify the **Iteration** and **Area** paths for each test case.
+- Define test cases, and specify the **Iteration** and **Area** paths for each test case.
 
-* Define test plans, and specify their current state.
+- Define test plans, and specify their current state.
 
-* For manual tests, mark the results of each validation step in the test case as passed or failed.
+- For manual tests, mark the results of each validation step in the test case as passed or failed.
 
   > [!IMPORTANT]
   > Testers must mark a test step with a status if it is a validation test step. The overall result for a test reflects the status of all the test steps that were marked. Therefore, the test will have a status of failed if any test step is marked as failed or not marked.
 
   For automated tests, each test is automatically marked as passed or failed.
 
-* To support filtering, assign **Iteration** and **Area** paths to test cases.
+- To support filtering, assign **Iteration** and **Area** paths to test cases.
 
 ## <a name="Interpreting"></a> Interpreting the Report
 
@@ -80,17 +80,17 @@ You can track how many test plans have been run and how many are failing. The Te
 
 You can review the report to determine the progress within a sprint or iteration or over time. For example, you can answer these questions:
 
-* How much testing has the team completed?
+- How much testing has the team completed?
 
-* Is the team likely to finish the testing on time?
+- Is the team likely to finish the testing on time?
 
-* How many tests are left to be run?
+- How many tests are left to be run?
 
-* How many tests are passing?
+- How many tests are passing?
 
-* How many tests are failing?
+- How many tests are failing?
 
-* How many tests are blocked?
+- How many tests are blocked?
 
 ### Healthy Version of the Report
 
@@ -102,11 +102,11 @@ A healthy Test Plan Progress report shows a steady progress in test plans runnin
 
 An unhealthy Test Plan Progress report shows one or more of the following indicators:
 
-* **A high number of test cases are failing**.
+- **A high number of test cases are failing**.
 
   When the chart shows more red than green, more test cases are failing then passing. Depending on where you are in the product cycle, you might investigate why so many test cases are failing.
 
-* **The number of test cases that are passing remains flat**.
+- **The number of test cases that are passing remains flat**.
 
   As the following illustration shows, the number of test cases that are passing, failing, or never run is flat. You might want to investigate the specific causes that affect each area.
 
@@ -128,13 +128,13 @@ You can filter the Test Plan Progress report to show only those test cases that 
 
 1.  Perform one or both of the following actions:
 
-    * In the **Iteration** or **Area** lists, select the check box of each iteration path and product area to include.
+    - In the **Iteration** or **Area** lists, select the check box of each iteration path and product area to include.
 
-    * In the **Test Plan** and **Test Plan State** lists, select the check box of each test plan and test plan state to include.
+    - In the **Test Plan** and **Test Plan State** lists, select the check box of each test plan and test plan state to include.
 
 2.  Click **View Report**.
 
 ## Related notes
 
-* [Reporting Services Reports](reporting-services-reports.md)
-* [Agile process](../../boards/work-items/guidance/agile-process.md)
+- [Reporting Services Reports](reporting-services-reports.md)
+- [Agile process](../../boards/work-items/guidance/agile-process.md)

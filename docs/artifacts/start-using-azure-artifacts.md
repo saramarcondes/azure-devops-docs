@@ -27,8 +27,8 @@ This article guides you through the sign-up process for Azure Artifacts. Azure A
 
 Ensure that the following statements are true:
 
-* [Billing is set up for your organization](../organizations/billing/set-up-billing-for-your-organization-vs.md)
-* You have [Project Collection Administrator or organization Owner permissions](../organizations/security/lookup-organization-owner-admin.md)
+- [Billing is set up for your organization](../organizations/billing/set-up-billing-for-your-organization-vs.md)
+- You have [Project Collection Administrator or organization Owner permissions](../organizations/security/lookup-organization-owner-admin.md)
 
 ::: moniker-end
 
@@ -58,8 +58,8 @@ Azure Artifacts is installed by default for TFS 2017 customers. You must upgrade
 
 2.  Select **Assign**, enter the user to whom you want to assign licenses, and then select **Ok.**
 
-    * Users with Visual Studio Enterprise subscriptions get Azure Artifacts automatically.
-    * [Ensure that your Visual Studio Enterprise subscribers are assigned VSE access level](../organizations/security/change-access-levels.md).
+    - Users with Visual Studio Enterprise subscriptions get Azure Artifacts automatically.
+    - [Ensure that your Visual Studio Enterprise subscribers are assigned VSE access level](../organizations/security/change-access-levels.md).
 
 ::: moniker-end
 
@@ -119,8 +119,8 @@ Each organization gets Azure Artifacts for free, up until they hit 2 GB of stora
 
 A: Currently, the following get counted in your Azure Artifacts billed cost:
 
-* All packages (npm, NuGet, Python, Maven, and universal packages), including those packages stored from upstream sources
-* All symbols
+- All packages (npm, NuGet, Python, Maven, and universal packages), including those packages stored from upstream sources
+- All symbols
 
 You are not billed by Azure Artifacts for storage of Pipeline Artifacts, Build Artifacts, and Pipeline Caching.
 

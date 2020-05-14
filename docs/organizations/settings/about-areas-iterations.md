@@ -48,12 +48,12 @@ If you are new to managing projects and teams, the most straight forward sequenc
 
 As needed, you can perform the following actions at any time:
 
-* Add additional child nodes
-* Rename an Area Path (except the root area path)
-* Move a child node under another node
-* Delete a child node
-* Rename a team
-* Change the Area Path assignments made to a team
+- Add additional child nodes
+- Rename an Area Path (except the root area path)
+- Move a child node under another node
+- Delete a child node
+- Rename a team
+- Change the Area Path assignments made to a team
 
 ## How many areas should a team define?
 
@@ -61,9 +61,9 @@ You add areas to support your team's trace-ability and security requirements. Us
 
 Add areas when you have these requirements:
 
-* Filter queries based on a product or feature area
-* Organize or group work items by team or sub-teams
-* Restrict access to work items based on their area.
+- Filter queries based on a product or feature area
+- Organize or group work items by team or sub-teams
+- Restrict access to work items based on their area.
 
 Each team can create a hierarchy of areas under which the team can organize their backlog items, user stories, requirements, tasks, and bugs.
 
@@ -84,11 +84,11 @@ Use the following guidance to configure Iteration Paths for your project and tea
 
 As needed, you can perform the following actions at any time:
 
-* Add additional child iteration nodes
-* Rename an Iteration Path (except the root path)
-* Move a child Iteration Path under another node
-* Delete a child Iteration Path
-* Change the default and selected Iteration Paths assigned to a team
+- Add additional child iteration nodes
+- Rename an Iteration Path (except the root path)
+- Move a child Iteration Path under another node
+- Delete a child Iteration Path
+- Change the default and selected Iteration Paths assigned to a team
 
 ## How many iterations should a team define?
 
@@ -96,21 +96,21 @@ You define as many child iterations as you need to reflect your project lifecycl
 
 Add iterations to support these requirements:
 
-* Define sprints your Scrum teams use to [plan and execute their sprints](../../boards/sprints/assign-work-sprint.md)
-* Set up more complex multi-release and sprint cycles
-* Filter queries based on sprints, milestones, or cycle time for your project
-* Support future work that you're not ready to assign to a target release cycle.
+- Define sprints your Scrum teams use to [plan and execute their sprints](../../boards/sprints/assign-work-sprint.md)
+- Set up more complex multi-release and sprint cycles
+- Filter queries based on sprints, milestones, or cycle time for your project
+- Support future work that you're not ready to assign to a target release cycle.
 
 In the following example, Beta 1, Beta 2, Release 1.0, and Release 2.0 are defined for the MyApplication project.
 
-<img src="media/areas/ALM_CW_IterationHierarchy-Before.png" alt="Flat iteration hierarchy" style="border: 1px solid #C3C3C3;" />  
+<img src="media/areas/ALM_CW_IterationHierarchy-Before.png" alt="Flat iteration hierarchy" style="border: 1px solid #C3C3C3;" />
 
 As you create the backlog of product features and tasks, you can start to assign them to the milestones by which you expect the team to finish the features and tasks.
 As your needs change, you can add events under each major milestone that reflect how your team schedules and manages its work.
 
 As the following example shows, the Beta 1 iteration now contains three child nodes, one for each sprint in the Beta 1 time period.
 
-<img src="media/areas/ALM_CW_IterationHierarchy-After.png" alt="Hierarchical Iteration Hierarchy" style="border: 1px solid #C3C3C3;" />  
+<img src="media/areas/ALM_CW_IterationHierarchy-After.png" alt="Hierarchical Iteration Hierarchy" style="border: 1px solid #C3C3C3;" />
 
 Iterations do not enforce any rules. For example, you can assign a task to an iteration but not close or complete it during that iteration. At the end of an iteration, you should find all work items that remain active or have not been closed for that iteration and take appropriate action. You can, for example, move them to a different iteration or return them to the backlog.
 
@@ -124,7 +124,7 @@ The **Area Path** and **Iteration Path** fields, [data type=TreePath](../../boar
 > | Restriction type | Restriction |  
 > | ------------------------- | ---------------------- |  
 > | Node length | Must not contain more than 255 characters |
-> | Special characters for nodes | Must not contain Unicode control characters<br/>Must not contain any of the following characters: \ / $ ? \* : " & < # % + <br/>Must not contain characters that the [local file system prohibits](https://msdn.microsoft.com/library/aa365247.aspx). |
+> | Special characters for nodes | Must not contain Unicode control characters<br/>Must not contain any of the following characters: \ / \$ ? \* : " & < # % + <br/>Must not contain characters that the [local file system prohibits](https://msdn.microsoft.com/library/aa365247.aspx). |
 > | Reserved names | Must contain more than a period (.) or two periods (..)<br/>Must not be a [system-reserved name](https://msdn.microsoft.com/library/aa365247.aspx) such as PRN, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, COM10, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9, NUL, CON, or AUX<br/>|
 > | Path length | Must contain fewer than 4,000 Unicode characters |
 > | Path hierarchy depth | Must be fewer than 14 levels deep |
@@ -133,10 +133,10 @@ The **Area Path** and **Iteration Path** fields, [data type=TreePath](../../boar
 
 As you can see, areas and iterations play a major role in supporting Agile tools and managing work items. You can learn more about working with these fields from these topics:
 
-* [Define area paths and assign to a team](set-area-paths.md)
-* [Define iteration (sprint) paths and configure team iterations](set-iteration-paths-sprints.md)
-* [Agile tools and sprint definitions](../../boards/sprints/define-sprints.md)
-* [Query by date or current iteration](../../boards/queries/query-by-date-or-current-iteration.md)
+- [Define area paths and assign to a team](set-area-paths.md)
+- [Define iteration (sprint) paths and configure team iterations](set-iteration-paths-sprints.md)
+- [Agile tools and sprint definitions](../../boards/sprints/define-sprints.md)
+- [Query by date or current iteration](../../boards/queries/query-by-date-or-current-iteration.md)
 
 <a name="export"></a>
 

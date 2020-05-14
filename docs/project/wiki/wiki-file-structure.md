@@ -23,18 +23,18 @@ When you create a team project, a Wiki Git repo isn't created by default. To sta
 
 The team project Wiki Git repositories are assigned the following labels.
 
-* Wiki repo for a team project: _ProjectName.wiki_
-* Master branch: _wikiMaster_
+- Wiki repo for a team project: _ProjectName.wiki_
+- Master branch: _wikiMaster_
 
 > [!NOTE]  
 > You can manage your Wiki repo in the same way you manage any other Git repo, by defining branch policies on the wikiMaster branch. However, you can make changes to your local wikiMaster branch and push them directly to the remote branch without defining any policies.
 
 The Wiki repository has the following files and folders:
 
-* File for each Markdown page entered at the root level
-* File labeled _.order_ at the root and under each folder
-* Folder for each page that has subpages
-* _.attachments_ folder, storing all the attachments of the Wiki
+- File for each Markdown page entered at the root level
+- File labeled _.order_ at the root and under each folder
+- Folder for each page that has subpages
+- _.attachments_ folder, storing all the attachments of the Wiki
 
 <a id="file-naming" />
 <a id="page-title-names"></a>
@@ -80,8 +80,8 @@ When there's no _.order_ file the pages are sorted alphabetically. To revert to 
 
 ## Related articles
 
-* [Provisioned Wiki vs. publish code as wiki](provisioned-vs-published-wiki.md)
-* [Create a Wiki for your team project](wiki-create-repo.md)
-* [Publish a Git repository to a Wiki](publish-repo-to-wiki.md)
-* [Update Wiki pages offline](wiki-update-offline.md)
-* [Manage README and Wiki permissions](manage-readme-wiki-permissions.md)
+- [Provisioned Wiki vs. publish code as wiki](provisioned-vs-published-wiki.md)
+- [Create a Wiki for your team project](wiki-create-repo.md)
+- [Publish a Git repository to a Wiki](publish-repo-to-wiki.md)
+- [Update Wiki pages offline](wiki-update-offline.md)
+- [Manage README and Wiki permissions](manage-readme-wiki-permissions.md)

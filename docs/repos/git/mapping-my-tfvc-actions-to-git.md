@@ -59,12 +59,12 @@ Consider branching if you need to work in isolation, need to suspend your work, 
 
 As a TFVC user, repeat a few times:
 
-* Branching is recommended!
-* Git branching is **inexpensive**, **fast**, and **powerful**!
-* Git encourages you to use **local** branches.
-* Publish local branches to your centralized repository as needed.
-* Always verify your branch context before making changes.
-* Name the branch using a common convention such as users/alias/branchname for example: users/doris/newfeature
+- Branching is recommended!
+- Git branching is **inexpensive**, **fast**, and **powerful**!
+- Git encourages you to use **local** branches.
+- Publish local branches to your centralized repository as needed.
+- Always verify your branch context before making changes.
+- Name the branch using a common convention such as users/alias/branchname for example: users/doris/newfeature
 
 Create and switch to a local topic branch, named _francis/demo-feature_. It is good practice to run a `git status` first, to verify that you are on the right branch to start with.
 
@@ -172,9 +172,9 @@ In Visual Studio, choose **Team Explorer > Branches > right-click on local branc
 
 To synchronize further updates in your local with the remote repository, you need to push your changes using `git push`. The recommended practice using the git command or the Visual Studio IDE is to:
 
-* `fetch` to download content and preview incoming changes from others.
-* `pull` to download and then merge changes from others.
-* `push` to share your local changes.
+- `fetch` to download content and preview incoming changes from others.
+- `pull` to download and then merge changes from others.
+- `push` to share your local changes.
 
 ## View history
 
@@ -286,9 +286,9 @@ Alternatively you can manually delete your local repo - after making a validated
 
 There are a lot more actions and options available to Git users. Here are some useful reference sites for further reading:
 
-* Git commands covered herein, refer to [git documentation](https://git-scm.com/documentation)
-* [Think like (a) Git](http://think-like-a-git.net), a Guide for the Perplexed.
-* [How to undo (almost) anything with Git](https://github.com/blog/2019-how-to-undo-almost-anything-with-git), by Joshua Wehner
+- Git commands covered herein, refer to [git documentation](https://git-scm.com/documentation)
+- [Think like (a) Git](http://think-like-a-git.net), a Guide for the Perplexed.
+- [How to undo (almost) anything with Git](https://github.com/blog/2019-how-to-undo-almost-anything-with-git), by Joshua Wehner
 
 ## Q&A
 

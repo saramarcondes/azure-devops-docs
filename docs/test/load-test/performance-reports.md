@@ -32,7 +32,7 @@ information.
 
 ## Open a load test in Azure DevOps
 
-* If you are running URL-based or Apache JMeter load tests, you
+- If you are running URL-based or Apache JMeter load tests, you
   can see the list of all the test runs in the **Load test** list.
 
   ![List of load test runs in Azure DevOps](media/performance-reports/LoadTestViewListTS.png)

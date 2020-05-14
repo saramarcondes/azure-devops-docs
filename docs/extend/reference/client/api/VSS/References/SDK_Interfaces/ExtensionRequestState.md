@@ -17,8 +17,8 @@ Defined in vss.d.ts
 
 ### Values
 
-* `Open` The request has been opened, but not yet responded to
+- `Open` The request has been opened, but not yet responded to
 
-* `Accepted` The request was accepted (extension installed or license assigned)
+- `Accepted` The request was accepted (extension installed or license assigned)
 
-* `Rejected` The request was rejected (extension not installed or license not assigned)
+- `Rejected` The request was rejected (extension not installed or license not assigned)

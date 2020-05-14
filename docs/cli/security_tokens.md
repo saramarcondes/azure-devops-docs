@@ -36,10 +36,10 @@ If the tokens have variable-length path parts, then a separator character is use
 Namespace ID:52d39943-cb85-4d7f-8fa8-c6baac873819
 
 Basically tokens in this namespace are of the following format.
-Root token : '$PROJECT'
+Root token : '\$PROJECT'
 
 Token to secure permissions for each project in your organization
-'$PROJECT:vstfs:///Classification/TeamProject/PROJECT_ID'
+'\$PROJECT:vstfs:///Classification/TeamProject/PROJECT_ID'
 
 So, let's assume you have a project named 'Test Project 1'.
 You can get the project ID for this project by referring project show command
@@ -48,7 +48,7 @@ You can get the project ID for this project by referring project show command
 Above command would return a project-id (say xxxxxxxx-a1de-4bc8-b751-188eea17c3ba)
 
 Thus, the token to secure project related permissions for 'Test Project 1' would be
-'$PROJECT:vstfs:///Classification/TeamProject/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba'
+'\$PROJECT:vstfs:///Classification/TeamProject/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba'
 
 ### Namespace name : Tagging
 
@@ -62,17 +62,17 @@ Example : '/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba'
 
 Namespace ID : d34d3680-dfe5-4cc6-a949-7d9c68f73cba
 
-Token format for project level permissions : '$/Shared/PROJECT_ID'
+Token format for project level permissions : '\$/Shared/PROJECT_ID'
 
-Example : '$/Shared/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba'
+Example : '\$/Shared/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba'
 
 ### Namespace name : Analytics
 
 Namespace ID : 58450c49-b02d-465a-ab12-59ae512d6531
 
-Token format for project level permissions : '$/PROJECT_ID'
+Token format for project level permissions : '\$/PROJECT_ID'
 
-Example : '$/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba'
+Example : '\$/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba'
 
 ### Namespace name: Iteration
 
@@ -82,15 +82,15 @@ Token format: 'vstfs:///Classification/Node/Iteration_Identifier/'
 
 Suppose, you have following iterations configured for your team.
 
-* ProjectIteration1
+- ProjectIteration1
 
 1.  TeamIteration1
-    * TeamIteration1ChildIteration1
-    * TeamIteration1ChildIteration2
-    * TeamIteration1ChildIteration3
+    - TeamIteration1ChildIteration1
+    - TeamIteration1ChildIteration2
+    - TeamIteration1ChildIteration3
 2.  TeamIteration2
-    * TeamIteration2ChildIteration1
-    * TeamIteration2ChildIteration2
+    - TeamIteration2ChildIteration1
+    - TeamIteration2ChildIteration2
 
 If you need to update permissions for ProjectIteration1\TeamIteration1\TeamIteration1ChildIteration1, security token would look like this:
 

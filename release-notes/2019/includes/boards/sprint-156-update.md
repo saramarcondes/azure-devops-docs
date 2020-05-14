@@ -28,9 +28,9 @@ You can see an example here.
 
 > [!div class="mx-imgBorder"] > ![Badge](../../media/156_04.png)
 
-* To use people mentions, type the **@** sign and the person's name you want to mention. @mentions in work item fields will generate email notifications like what it does for comments.
-* To use work item mentions, type the **#** sign followed by the work item ID or title. #mentions will create a link between the two work items.
-* To use PR mentions, add a **!** followed by your PR ID or name.
+- To use people mentions, type the **@** sign and the person's name you want to mention. @mentions in work item fields will generate email notifications like what it does for comments.
+- To use work item mentions, type the **#** sign followed by the work item ID or title. #mentions will create a link between the two work items.
+- To use PR mentions, add a **!** followed by your PR ID or name.
 
 ### Reactions on discussion comments
 

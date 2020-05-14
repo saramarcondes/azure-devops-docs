@@ -16,6 +16,6 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Members
 
-* `id`: number.
+- `id`: number.
 
-* `revision`: number.
+- `revision`: number.

@@ -26,23 +26,23 @@ Read this article to learn how to:
 
 > [!div class="checklist"]
 >
-> * Add the Azure Boards app to your Slack workspace
-> * Link and unlink your Azure Boards project to the Azure Boards app
-> * Set up subscriptions to work item related events in your Slack channel
-> * Create work items from your Slack channel
-> * Monitor work item activity in your Slack channel
-> * Get notifications in private Slack channels
+> - Add the Azure Boards app to your Slack workspace
+> - Link and unlink your Azure Boards project to the Azure Boards app
+> - Set up subscriptions to work item related events in your Slack channel
+> - Create work items from your Slack channel
+> - Monitor work item activity in your Slack channel
+> - Get notifications in private Slack channels
 
 ## Prerequisites
 
-* To create a work item, you must be a contributor to the Azure Boards project. If you don't have a project yet, you can sign up and create a project. For details, see [Start using Azure Boards](../get-started/index.md).
-* To create subscriptions in a Slack channel for work item events, you must be a member of the Azure Boards Project Administrators group or Team Administrators group. To get added, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md) or [Add Team Administrator](../../organizations/settings/add-team-administrator.md).
-* To receive notifications, the **Third party application access via OAuth** setting must be enabled for the organization. See [Change application access policies for your organization](../../organizations/accounts/change-application-access-policies.md)
+- To create a work item, you must be a contributor to the Azure Boards project. If you don't have a project yet, you can sign up and create a project. For details, see [Start using Azure Boards](../get-started/index.md).
+- To create subscriptions in a Slack channel for work item events, you must be a member of the Azure Boards Project Administrators group or Team Administrators group. To get added, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md) or [Add Team Administrator](../../organizations/settings/add-team-administrator.md).
+- To receive notifications, the **Third party application access via OAuth** setting must be enabled for the organization. See [Change application access policies for your organization](../../organizations/accounts/change-application-access-policies.md)
 
 > [!NOTE]
 >
-> * You can link the Azure Boards app for Slack only to a project hosted on Azure DevOps Services at this time.
-> * Notifications are currently not supported inside direct messages.
+> - You can link the Azure Boards app for Slack only to a project hosted on Azure DevOps Services at this time.
+> - Notifications are currently not supported inside direct messages.
 
 ## Add the Azure Boards app to your Slack workspace
 
@@ -92,7 +92,7 @@ subscriptions just after linking a project.
 
 You can add areas that your team works on to the channel so that they are always available for creating work items and subscriptions.
 
-* Use the following command to add area paths from your project to the Slack channel.
+- Use the following command to add area paths from your project to the Slack channel.
 
       	```
       	/azboards addAreapath [area path]
@@ -106,13 +106,13 @@ You can add areas that your team works on to the channel so that they are always
 
       	![add areapath success message](./media/integrations-slack/add-areapath.png)
 
-* If you choose project name as your area path, then you will receive notifications for all the area paths in the project. It is logically equivalent to choosing 'Any' area path.
+- If you choose project name as your area path, then you will receive notifications for all the area paths in the project. It is logically equivalent to choosing 'Any' area path.
 
 ## Create a work item with a command
 
 1.  With Azure Boards app you can create work items from your channel. The app supports custom work items as well.
 
-* To create a work item, use `/azboards create`.
+- To create a work item, use `/azboards create`.
 
       	![Create work item using command](./media/integrations-slack/create-work-item-command.png)
 
@@ -133,9 +133,9 @@ You can add areas that your team works on to the channel so that they are always
 Often, discussions in a channel necessitates creation of work items. You can use message actions to create a work item. The selected message is prefilled in the description section of the work item. A link back to the conversation in the channel is stored in the Discussion section of the newly created work item, giving users
 access to the discussion that led to the creation of the work item.
 
-* To create work items using message actions
+- To create work items using message actions
 
-      	> [!div class="mx-imgBorder"]  
+      	> [!div class="mx-imgBorder"]
       	> ![Create work item using message action](./media/integrations-slack/message-action-collated.png)
 
 ## Manage subscriptions
@@ -202,7 +202,7 @@ If these steps don't resolve your authentication issue, reach out to us at [Deve
 
 ## Related articles
 
-* [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
-* [Azure Pipelines with Slack](https://aka.ms/AzurePipelinesSlackIntegration)
-* [Azure Repos with Slack](https://aka.ms/AzureReposSlackIntegration)
-* [Create a service hook for Azure DevOps with Slack](../../service-hooks/services/slack.md)
+- [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
+- [Azure Pipelines with Slack](https://aka.ms/AzurePipelinesSlackIntegration)
+- [Azure Repos with Slack](https://aka.ms/AzureReposSlackIntegration)
+- [Create a service hook for Azure DevOps with Slack](../../service-hooks/services/slack.md)

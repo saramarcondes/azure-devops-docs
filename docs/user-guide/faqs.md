@@ -20,11 +20,11 @@ Signing up for Azure DevOps is now easier than ever - it's a two-minute process.
 
 ## How do I sign up for the cloud?
 
-* [Sign up and get started in Azure DevOps Services - a two-minute process](../organizations/accounts/create-organization.md).
-* You can also sign up and get started with only a single service in Azure DevOps:
-  * [Azure Pipelines](../pipelines/get-started/pipelines-sign-up.md)
-  * [Azure Repos](../repos/get-started/sign-up-invite-teammates.md)
-  * [Azure Boards](../boards/get-started/sign-up-invite-teammates.md)
+- [Sign up and get started in Azure DevOps Services - a two-minute process](../organizations/accounts/create-organization.md).
+- You can also sign up and get started with only a single service in Azure DevOps:
+  - [Azure Pipelines](../pipelines/get-started/pipelines-sign-up.md)
+  - [Azure Repos](../repos/get-started/sign-up-invite-teammates.md)
+  - [Azure Boards](../boards/get-started/sign-up-invite-teammates.md)
 
 ::: moniker-end
 
@@ -32,7 +32,7 @@ Signing up for Azure DevOps is now easier than ever - it's a two-minute process.
 
 ## How do I get started on-premises?
 
-* Download and install [Azure DevOps Server](https://azure.microsoft.com/services/devops/server/)
+- Download and install [Azure DevOps Server](https://azure.microsoft.com/services/devops/server/)
 
 ::: moniker-end
 
@@ -40,21 +40,21 @@ Signing up for Azure DevOps is now easier than ever - it's a two-minute process.
 
 ## How do I get started on-premises?
 
-* To get started with an on-premises instance, download and install the [latest version of TFS](https://visualstudio.microsoft.com/downloads/).
-* [Configure the installation](/azure/devops/server/install/get-started), which creates a default collection.
-* If you need to create a project, [create one on-premises](../organizations/projects/create-project.md).
-* If you don't have access to the project, [get invited to the team](../organizations/security/add-users-team-project.md).
-* If it's your first time connecting to a project, see [Connect to a project](../organizations/projects/connect-to-projects.md).
+- To get started with an on-premises instance, download and install the [latest version of TFS](https://visualstudio.microsoft.com/downloads/).
+- [Configure the installation](/azure/devops/server/install/get-started), which creates a default collection.
+- If you need to create a project, [create one on-premises](../organizations/projects/create-project.md).
+- If you don't have access to the project, [get invited to the team](../organizations/security/add-users-team-project.md).
+- If it's your first time connecting to a project, see [Connect to a project](../organizations/projects/connect-to-projects.md).
 
 ## How do I connect with a client tool?
 
 Go to one of the following pages to download a version of Visual Studio or client tool plug-in that supports connecting to a project:
 
-* [Visual Studio](https://visualstudio.microsoft.com/downloads/)
-* [Eclipse/Team Explorer Everywhere](../java/download-eclipse-plug-in.md)
-* [Android Studio with the Azure DevOps Services Plugin for Android Studio](../java/download-android-studio-plug-in.md)
-* [IntelliJ with the Azure DevOps Services Plugin for IntelliJ](../java/download-intellij-plug-in.md)
-* [Visual Studio Code](../java/vscode-extension.md)
+- [Visual Studio](https://visualstudio.microsoft.com/downloads/)
+- [Eclipse/Team Explorer Everywhere](../java/download-eclipse-plug-in.md)
+- [Android Studio with the Azure DevOps Services Plugin for Android Studio](../java/download-android-studio-plug-in.md)
+- [IntelliJ with the Azure DevOps Services Plugin for IntelliJ](../java/download-intellij-plug-in.md)
+- [Visual Studio Code](../java/vscode-extension.md)
 
 ::: moniker-end
 
@@ -62,9 +62,9 @@ Go to one of the following pages to download a version of Visual Studio or clien
 
 See the following links for pricing:
 
-* [Azure DevOps Services pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
-* [Azure DevOps on-premises pricing](https://azure.microsoft.com/pricing/details/devops/on-premises/)
-* [Azure Pipelines only pricing](https://azure.microsoft.com/pricing/details/devops/azure-pipelines/)
+- [Azure DevOps Services pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
+- [Azure DevOps on-premises pricing](https://azure.microsoft.com/pricing/details/devops/on-premises/)
+- [Azure Pipelines only pricing](https://azure.microsoft.com/pricing/details/devops/azure-pipelines/)
 
 ## How do I share code?
 
@@ -86,11 +86,11 @@ See [Requirements and compatibility](/azure/devops/server/requirements).
 
 Yes. You can provide access to Stakeholders who have no client access license for the following activities:
 
-* **Stakeholder access**: This view allows anyone on your team to check project status and provide feedback. Stakeholders can [track project priorities and provide direction, feature ideas, and business alignment to a team](../organizations/security/get-started-stakeholder.md).
+- **Stakeholder access**: This view allows anyone on your team to check project status and provide feedback. Stakeholders can [track project priorities and provide direction, feature ideas, and business alignment to a team](../organizations/security/get-started-stakeholder.md).
 
   To grant Stakeholders access, add them to the [Stakeholder access group](../organizations/security/change-access-levels.md).
 
-* **Provide feedback**: To allow your Stakeholders to provide feedback, you must [grant them specific permissions](../project/feedback/give-permissions-feedback.md).
+- **Provide feedback**: To allow your Stakeholders to provide feedback, you must [grant them specific permissions](../project/feedback/give-permissions-feedback.md).
 
 ::: moniker range="<= tfs-2018"
 
@@ -98,13 +98,13 @@ Yes. You can provide access to Stakeholders who have no client access license fo
 
 Yes. You can connect to a project from one of the following clients:
 
-* [Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md) (requires Team Foundation add-in)
-* [Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md) (requires Team Foundation add-in)
-* [Project Professional](../reference/tfs-ps-sync/synchronize-tfs-project-server.md)
-* [PowerPoint Storyboarding](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md) (requires Team Foundation add-in)
-* [Azure Test Plans](https://msdn.microsoft.com/library/jj635157.aspx)
-* [Test & Feedback extension (previously called the Exploratory Testing extension)](../test/provide-stakeholder-feedback.md)
-* [Microsoft Feedback Client](../project/feedback/give-feedback.md)
+- [Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md) (requires Team Foundation add-in)
+- [Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md) (requires Team Foundation add-in)
+- [Project Professional](../reference/tfs-ps-sync/synchronize-tfs-project-server.md)
+- [PowerPoint Storyboarding](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md) (requires Team Foundation add-in)
+- [Azure Test Plans](https://msdn.microsoft.com/library/jj635157.aspx)
+- [Test & Feedback extension (previously called the Exploratory Testing extension)](../test/provide-stakeholder-feedback.md)
+- [Microsoft Feedback Client](../project/feedback/give-feedback.md)
 
 ::: moniker-end
 
@@ -120,13 +120,13 @@ You can also find several open-source clients that have been added to [Marketpla
 
 ::: moniker range=">= tfs-2017"
 
-* For TFS 2017 and later versions, you can [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](../reference/process/new-work-item-experience.md).
+- For TFS 2017 and later versions, you can [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](../reference/process/new-work-item-experience.md).
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015"
 
-* For TFS 2015 and earlier versions, you can install [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). TFS Power Tools provides enhancements, tools, and command-line utilities that support increased productivity.
+- For TFS 2015 and earlier versions, you can install [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). TFS Power Tools provides enhancements, tools, and command-line utilities that support increased productivity.
 
 ::: moniker-end
 
@@ -143,8 +143,8 @@ See [Troubleshoot connection](troubleshoot-connection.md).
 
 ## Related articles
 
-* [Essential services](services.md)
-* [Client-server tools](tools.md)
-* [Software development roles](roles.md)
-* [Azure DevOps Support](https://azure.microsoft.com/support/devops/)
-* [Live chat](https://visualstudio.microsoft.com/vs/support/#talktous) (English only)
+- [Essential services](services.md)
+- [Client-server tools](tools.md)
+- [Software development roles](roles.md)
+- [Azure DevOps Support](https://azure.microsoft.com/support/devops/)
+- [Live chat](https://visualstudio.microsoft.com/vs/support/#talktous) (English only)

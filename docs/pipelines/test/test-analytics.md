@@ -56,21 +56,21 @@ This report provides a granular view of the top failing tests in the pipeline, a
 
 The detailed view contains two sections:
 
-* **Summary**: Provides key quantitative metrics for the tests executed in build or release over the specified period. The default view shows data for 14 days.
+- **Summary**: Provides key quantitative metrics for the tests executed in build or release over the specified period. The default view shows data for 14 days.
 
-  * Pass rate and results: Shows the [pass percentage](test-glossary.md), along with the distribution of tests across various outcomes.
+  - Pass rate and results: Shows the [pass percentage](test-glossary.md), along with the distribution of tests across various outcomes.
 
     ![View pass rate](media/test-analytics/pass-rate.png)
 
-  * Failing tests: Provides a distinct count of tests that failed during the specified period. In the example above, 986 test failures originated from 124 tests.
+  - Failing tests: Provides a distinct count of tests that failed during the specified period. In the example above, 986 test failures originated from 124 tests.
 
     ![View failing tests](media/test-analytics/failing-tests.png)
 
-  * Chart view: A trend of the total test failures and average pass rate on each day of the specified period.
+  - Chart view: A trend of the total test failures and average pass rate on each day of the specified period.
 
     ![View chart](media/test-analytics/chart-view.png)
 
-* **Results**: List of top failed tests based on the total number of failures. Helps to identify problematic tests and lets you drill into a detailed summary of results.
+- **Results**: List of top failed tests based on the total number of failures. Helps to identify problematic tests and lets you drill into a detailed summary of results.
 
   ![View chart](media/test-analytics/results-view.png)
 

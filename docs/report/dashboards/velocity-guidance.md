@@ -17,9 +17,9 @@ ms.date: 12/17/2019
 
 Velocity metrics provide useful information to support the following team and product management activities:
 
-* Sprint planning
-* Forecasting future sprints and the backlog items that a team can complete
-* A guide for determining how well the team estimates and meets their planned commitments
+- Sprint planning
+- Forecasting future sprints and the backlog items that a team can complete
+- A guide for determining how well the team estimates and meets their planned commitments
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -31,11 +31,11 @@ Velocity metrics provide useful information to support the following team and pr
 
 You have a choice of Velocity charts: the in-context Velocity chart you access from a Backlogs page and the Velocity widget you add to a dashboard. With both these charts, you can quickly determine the following information:
 
-* **Planned** - calculated based on the amount of work assigned to the sprint prior to the start of the sprint. This count includes work that was moved to a different sprint after the start of the sprint, but doesn't include work that was added later after the sprint started. > [!TIP]  
-   > To list the work items included in the count, click the velocity bar. A query results page will open with the list of work items included.
-* **Completed** - calculated based on the amount of work assigned to the sprint prior to the start of the sprint and completed prior to the sprint end date..
-* **Completed Late** - calculated based on the amount of work assigned to the sprint prior to the start of the sprint but was completed after the end of the sprint.
-* **Incomplete** - Amount of work not completed, calculated based on the amount of work assigned to the sprint prior to the start of the sprint and has not been set to completed.
+- **Planned** - calculated based on the amount of work assigned to the sprint prior to the start of the sprint. This count includes work that was moved to a different sprint after the start of the sprint, but doesn't include work that was added later after the sprint started. > [!TIP]
+  > To list the work items included in the count, click the velocity bar. A query results page will open with the list of work items included.
+- **Completed** - calculated based on the amount of work assigned to the sprint prior to the start of the sprint and completed prior to the sprint end date..
+- **Completed Late** - calculated based on the amount of work assigned to the sprint prior to the start of the sprint but was completed after the end of the sprint.
+- **Incomplete** - Amount of work not completed, calculated based on the amount of work assigned to the sprint prior to the start of the sprint and has not been set to completed.
 
 #### [In-context Velocity chart](#tab/in-context)
 
@@ -49,9 +49,9 @@ You have a choice of Velocity charts: the in-context Velocity chart you access f
 
 You can configure each chart in the following ways:
 
-* Sum of [Effort, Story Points, or Size fields](../../boards/queries/query-numeric.md) or other supported numeric field assigned to backlog items.
-* Count of work items that appear on the backlog
-* Number of iterations.
+- Sum of [Effort, Story Points, or Size fields](../../boards/queries/query-numeric.md) or other supported numeric field assigned to backlog items.
+- Count of work items that appear on the backlog
+- Number of iterations.
 
 The widget supports some additional configuration options. To configure or view Velocity charts, see [Configure and view Velocity charts](team-velocity.md).
 
@@ -61,10 +61,10 @@ The widget supports some additional configuration options. To configure or view 
 
 You have a choice of Velocity charts: the in-context Velocity chart you access from a Backlogs page and the Velocity widget you add to a dashboard. With the velocity widget, you can quickly determine the following information:
 
-* Planned velocity
-* Actual (completed) velocity
-* Work completed later than planned
-* Amount of work not completed
+- Planned velocity
+- Actual (completed) velocity
+- Work completed later than planned
+- Amount of work not completed
 
 #### [In-context Velocity chart](#tab/in-context)
 
@@ -78,10 +78,10 @@ You have a choice of Velocity charts: the in-context Velocity chart you access f
 
 Both of these charts support visualizing team velocity for several sprints. The Velocity widget, however, supports the following configuration options:
 
-* Sum of [Effort, Story Points, or Size fields](../../boards/queries/query-numeric.md) or other supported numeric field assigned to backlog items.
-* Count of work items that appear on the backlog
-* Number of iterations
-* Advanced features.
+- Sum of [Effort, Story Points, or Size fields](../../boards/queries/query-numeric.md) or other supported numeric field assigned to backlog items.
+- Count of work items that appear on the backlog
+- Number of iterations
+- Advanced features.
 
 ::: moniker-end
 
@@ -129,8 +129,8 @@ For example, you can create a chart of the number of Product backlog items and b
 
 ## Related articles
 
-* [Configure or view velocity chart](team-velocity.md)
-* [Plan your sprint](../../boards/sprints/assign-work-sprint.md)
+- [Configure or view velocity chart](team-velocity.md)
+- [Plan your sprint](../../boards/sprints/assign-work-sprint.md)
 
 ### Add other teams
 

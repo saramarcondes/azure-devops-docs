@@ -23,8 +23,8 @@ No. Plain text was supported in earlier versions of Azure DevOps and TFS, but al
 
 Because of custom subscriptions, there's no way to completely avoid receiving any notifications. However, you can do the following actions to minimize the amount you receive:
 
-* Unsubscribe from all default and admin-created team and group subscriptions
-* Disable or remove all custom subscriptions
+- Unsubscribe from all default and admin-created team and group subscriptions
+- Disable or remove all custom subscriptions
 
 ## Why do some emails have multiple recipients on the To line?
 
@@ -34,6 +34,6 @@ Previously, each recipient received an individually addressed email, which could
 
 ## Related articles
 
-* [About notifications](about-notifications.md)
-* [Manage personal notifications](manage-team-notifications.md)
-* [Unsubscribe from a notification](unsubscribe-default-notification.md)
+- [About notifications](about-notifications.md)
+- [Manage personal notifications](manage-team-notifications.md)
+- [Unsubscribe from a notification](unsubscribe-default-notification.md)

@@ -45,8 +45,8 @@ To produce packages that can be consumed by others, you can publish NuGet, npm, 
 
 To use Azure Pipelines, you need:
 
-* An organization in Azure DevOps.
-* To have your source code stored in a version control system.
+- An organization in Azure DevOps.
+- To have your source code stored in a version control system.
 
 ### Pricing
 
@@ -61,12 +61,12 @@ And, Azure Pipelines provides a quick, easy, and safe way to automate building y
 
 Use Azure Pipelines because it supports the following scenarios:
 
-* Works with any language or platform
-* Deploys to different types of targets at the same time
-* Integrates with Azure deployments
-* Builds on Windows, Linux, or Mac machines
-* Integrates with GitHub
-* Works with open-source projects.
+- Works with any language or platform
+- Deploys to different types of targets at the same time
+- Integrates with Azure deployments
+- Builds on Windows, Linux, or Mac machines
+- Integrates with GitHub
+- Works with open-source projects.
 
 ## Try this next
 

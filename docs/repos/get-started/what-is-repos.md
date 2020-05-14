@@ -21,8 +21,8 @@ Even if you're just a single developer, version control helps you stay organized
 
 Azure Repos provides two types of version control:
 
-* [Git](#git): distributed version control
-* [Team Foundation Version Control (TFVC)](#tfvc): centralized version control
+- [Git](#git): distributed version control
+- [Team Foundation Version Control (TFVC)](#tfvc): centralized version control
 
 ## Git
 
@@ -30,11 +30,11 @@ Git is the most commonly used version control system today and is quickly becomi
 
 Git in Azure Repos is standard Git. You can use the clients and tools of your choice, such as Git for Windows, Mac, partners' Git services, and tools such as Visual Studio and Visual Studio Code.
 
-* [Connect your favorite development environment](#connect-your-favorite-development-environment)
-* [Review code with pull requests](#review-code-with-pull-requests)
-* [Protect branches with policies](#protect-branches-with-policies)
-* [Extend pull request workflows with pull request status](#extend-pull-request-workflows-with-pull-request-status)
-* [Isolate code with forks](#isolate-code-with-forks)
+- [Connect your favorite development environment](#connect-your-favorite-development-environment)
+- [Review code with pull requests](#review-code-with-pull-requests)
+- [Protect branches with policies](#protect-branches-with-policies)
+- [Extend pull request workflows with pull request status](#extend-pull-request-workflows-with-pull-request-status)
+- [Isolate code with forks](#isolate-code-with-forks)
 
 ### Connect your favorite development environment
 

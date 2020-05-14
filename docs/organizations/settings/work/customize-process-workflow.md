@@ -89,9 +89,9 @@ You can edit the category or the color of a custom state. However, you can't cha
 
 When you hide or remove a state:
 
-* The state no longer appears in the State picklist for the WIT
-* No changes occur to the work item history
-* Existing work items maintain their state value, but are in an invalid state. If you want to make a change to the work item, you must first update the state values. You may want to create a query and do a bulk update to move the affected work items into a valid state. If you add the state back to the work item type, the work items revert to a valid state.
+- The state no longer appears in the State picklist for the WIT
+- No changes occur to the work item history
+- Existing work items maintain their state value, but are in an invalid state. If you want to make a change to the work item, you must first update the state values. You may want to create a query and do a bulk update to move the affected work items into a valid state. If you add the state back to the work item type, the work items revert to a valid state.
 
 <a id="hide-state"></a>
 
@@ -119,7 +119,7 @@ You can hide an inherited state that your team doesn't use in its workflow proce
 
 1.  From the Remove State dialog, click <strong>Remove</strong>.
 
-    <img src="media/process/workflow-remove-state-warning.png" alt="Remove state warning dialog box" style="border: 1px solid #C3C3C3;" />  
+    <img src="media/process/workflow-remove-state-warning.png" alt="Remove state warning dialog box" style="border: 1px solid #C3C3C3;" />
 
 1.  If teams use the Kanban board to update their status, each team needs to update their [column settings](../../../boards/boards/add-columns.md).
 
@@ -127,9 +127,9 @@ You can hide an inherited state that your team doesn't use in its workflow proce
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
-* [Add or modify a work item type](customize-process-wit.md)
-* [Add and manage fields](customize-process-field.md)
-* [Customize a form](customize-process-form.md)
-* [Customize a project using an inherited process](customize-process.md)
-* [Add or edit Kanban columns](../../../boards/boards/add-columns.md)
-* [Query by workflow or Kanban board changes](../../../boards/queries/query-by-workflow-changes.md)
+- [Add or modify a work item type](customize-process-wit.md)
+- [Add and manage fields](customize-process-field.md)
+- [Customize a form](customize-process-form.md)
+- [Customize a project using an inherited process](customize-process.md)
+- [Add or edit Kanban columns](../../../boards/boards/add-columns.md)
+- [Query by workflow or Kanban board changes](../../../boards/queries/query-by-workflow-changes.md)

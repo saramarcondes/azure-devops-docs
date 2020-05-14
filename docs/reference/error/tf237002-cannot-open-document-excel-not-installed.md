@@ -39,4 +39,4 @@ See [TFS-Office integration issues](../../boards/backlogs/office/tfs-office-inte
 
 ### To repair your Office client
 
-* See [Repair an Office application](https://support.office.com/article/repair-an-office-application-7821d4b6-7c1d-4205-aa0e-a6b40c5bb88b).
+- See [Repair an Office application](https://support.office.com/article/repair-an-office-application-7821d4b6-7c1d-4205-aa0e-a6b40c5bb88b).

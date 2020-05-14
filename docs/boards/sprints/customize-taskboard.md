@@ -35,8 +35,8 @@ Sprint Taskboards are similar to Kanban boards in that they show work items as c
 
 ## Prerequisites
 
-* You must have a sprint Taskboard you want to configure. When you add a team, you add a Taskboard for every sprint that you select for your team. To learn more, see [About teams and Agile tools](/azure/devops/organizations/settings/about-teams-and-settings).
-* To add or rename columns, or customize cards, you must be added to the team administrator role for the team's settings you want to modify, or be a member of the **Project Administrators** security group. To get added, see [Add a team administrator](/azure/devops/organizations/settings/add-team-administrator) or [Set permissions at the project- or collection-level](/azure/devops/organizations/security/set-project-collection-level-permissions).
+- You must have a sprint Taskboard you want to configure. When you add a team, you add a Taskboard for every sprint that you select for your team. To learn more, see [About teams and Agile tools](/azure/devops/organizations/settings/about-teams-and-settings).
+- To add or rename columns, or customize cards, you must be added to the team administrator role for the team's settings you want to modify, or be a member of the **Project Administrators** security group. To get added, see [Add a team administrator](/azure/devops/organizations/settings/add-team-administrator) or [Set permissions at the project- or collection-level](/azure/devops/organizations/security/set-project-collection-level-permissions).
 
 <a id="add-columns" > </a>
 
@@ -84,9 +84,9 @@ In this example, the bug work item type (WIT) shows all the core fields, three a
 
 In the card shown below, the following customizations have been set for the task work item type (WIT):
 
-* Show all core fields: ID, Assigned To, Remaining Work, Tags
-* Show three additional fields: Priority
-* Apply styling rule to display tasks with Priority=1 as green
+- Show all core fields: ID, Assigned To, Remaining Work, Tags
+- Show three additional fields: Priority
+- Apply styling rule to display tasks with Priority=1 as green
 
 ![Card customize to show additional fields, tags, and style rule ](media/customize/task-conceptual.png)
 
@@ -269,16 +269,16 @@ You can apply style rules to change the color of Taskboard cards based on specif
 
         	In this example we show the **Styles** dialog for the taskboard.
 
-        	> [!div class="mx-imgBorder"]  
+        	> [!div class="mx-imgBorder"]
         	> ![Settings, Styles dialog](media/customize/taskboard-styles-priority.png)
 
         	Follow these rules when creating and ordering your style rules:
 
-    * The criteria you specify works in a similar fashion as when [constructing a query](../queries/using-queries.md).
-    * All clauses are considered AND clauses, grouping clauses isn't supported.
-    * Card rules apply to all work items that meet the rule criteria
-    * Rule color applies to work items based on the order in which rules are listed. If you add more than one style rule, make sure that you move them in the order of most importance. Simply drag them into the order you want them applied.
-    * You can quickly enable and disable a style rule.
+    - The criteria you specify works in a similar fashion as when [constructing a query](../queries/using-queries.md).
+    - All clauses are considered AND clauses, grouping clauses isn't supported.
+    - Card rules apply to all work items that meet the rule criteria
+    - Rule color applies to work items based on the order in which rules are listed. If you add more than one style rule, make sure that you move them in the order of most importance. Simply drag them into the order you want them applied.
+    - You can quickly enable and disable a style rule.
 
       Here we add a Stale tasks rule which highlights tasks that haven't changed in the last five days.
 
@@ -308,16 +308,16 @@ Requires TFS 2015.1 or later version.
 
         	In this example we show the **Styles** dialog for the taskboard.
 
-        	> [!div class="mx-imgBorder"]  
+        	> [!div class="mx-imgBorder"]
         	> ![Settings, Styles dialog](media/customize/taskboard-styles-priority.png)
 
         	Follow these rules when creating and ordering your style rules:
 
-    * The criteria you specify works in a similar fashion as when [constructing a query](../queries/using-queries.md)
-    * All clauses are considered AND clauses, grouping clauses isn't supported
-    * Card rules apply to all work items that meet the rule criteria
-    * Rule color applies to work items based on the order in which rules are listed. If you add more than one style rule, make sure that you move them in the order of most importance. Simply drag them into the order you want them applied.
-    * You can quickly enable and disable a style rule
+    - The criteria you specify works in a similar fashion as when [constructing a query](../queries/using-queries.md)
+    - All clauses are considered AND clauses, grouping clauses isn't supported
+    - Card rules apply to all work items that meet the rule criteria
+    - Rule color applies to work items based on the order in which rules are listed. If you add more than one style rule, make sure that you move them in the order of most importance. Simply drag them into the order you want them applied.
+    - You can quickly enable and disable a style rule
 
       Here we add a Stale tasks rule which highlights tasks that haven't changed in the last five days.
 
@@ -331,7 +331,7 @@ Requires TFS 2015.1 or later version.
 
 ## Related articles
 
-* [Manage and configure team tools](../../organizations/settings/manage-teams.md)
-* [Setup your backlogs and boards](../backlogs/set-up-your-backlog.md)
-* [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)
-* [Set working days](../../organizations/settings/set-working-days.md)
+- [Manage and configure team tools](../../organizations/settings/manage-teams.md)
+- [Setup your backlogs and boards](../backlogs/set-up-your-backlog.md)
+- [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)
+- [Set working days](../../organizations/settings/set-working-days.md)

@@ -19,9 +19,9 @@ Creating a new bug (or any work item) is pretty straight forward. You just need 
 
 To work on this Quickstart, you'll need the following prerequisites:
 
-* An organization in Azure DevOps Services. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137)
-* A Personal Access Token, [find out how to create one](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
-* A C# development environment, you can use [Visual Studio](https://visualstudio.microsoft.com/vs/)
+- An organization in Azure DevOps Services. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137)
+- A Personal Access Token, [find out how to create one](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
+- A C# development environment, you can use [Visual Studio](https://visualstudio.microsoft.com/vs/)
 
 ## Create a C# project in Visual Studio
 
@@ -147,5 +147,5 @@ public class CreateBug
 
 ## Next steps
 
-* Check out another Quickstart: [Get a list of work items using queries](./work-item-quickstart.md)
-* Explore the [integrate samples](../get-started/client-libraries/samples.md)
+- Check out another Quickstart: [Get a list of work items using queries](./work-item-quickstart.md)
+- Explore the [integrate samples](../get-started/client-libraries/samples.md)

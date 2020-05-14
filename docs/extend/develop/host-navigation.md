@@ -46,8 +46,8 @@ VSS.getService(VSS.ServiceIds.Navigation).then(function(navigationService) {
 
 Two methods are available for changing the hash value of the host page URL:
 
-* `setHash` adds a new entry to the browser history
-* `replaceHash` does **not** add a new entry to the browser history
+- `setHash` adds a new entry to the browser history
+- `replaceHash` does **not** add a new entry to the browser history
 
 ```js
 // Get navigation service

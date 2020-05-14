@@ -30,11 +30,11 @@ Creating a DevOps Project provisions Azure resources and comes with a Git code r
 
 Key benefits of a DevOps Project:
 
-* Get up and running with a new app and a full DevOps pipeline in just a few minutes
-* Support for a wide range of popular frameworks such as .NET, Java, PHP, Node, and Python
-* Start fresh or bring your own application from GitHub
-* Built-in Application Insights integration for instant analytics and actionable insights
-* Cloud-powered CI/CD using Visual Studio Team Services (VSTS)
+- Get up and running with a new app and a full DevOps pipeline in just a few minutes
+- Support for a wide range of popular frameworks such as .NET, Java, PHP, Node, and Python
+- Start fresh or bring your own application from GitHub
+- Built-in Application Insights integration for instant analytics and actionable insights
+- Cloud-powered CI/CD using Visual Studio Team Services (VSTS)
 
 DevOps Projects are powered by VSTS and gives you a head start in developing and deploying your applications.
 
@@ -65,8 +65,8 @@ steps:
 
 After you commit the changes, a build definition is automatically created and queued! Ready to go beyond “hello world”?
 
-* [Get started configuring your CI Build in code using YAML](/azure/devops/build-release/actions/build-yaml-get-started)
-* [How to use YAML builds](/azure/devops/build-release/actions/build-yaml)
+- [Get started configuring your CI Build in code using YAML](/azure/devops/build-release/actions/build-yaml-get-started)
+- [How to use YAML builds](/azure/devops/build-release/actions/build-yaml)
 
 ### Release gates in Public Preview ![Release tag](media/release-notes-tag_release.png)
 
@@ -108,12 +108,12 @@ VSTS CLI is a new command line interface for working with and managing your VSTS
 
 Here are just some of the things you can do with VSTS CLI:
 
-* Queue a build
-* Show the details of a build
-* Create a pull request
-* Add a reviewer to a pull request
-* Create a new project or Git repo
-* Update a work item
+- Queue a build
+- Show the details of a build
+- Create a pull request
+- Add a reviewer to a pull request
+- Create a new project or Git repo
+- Update a work item
 
 To learn more, see the [VSTS CLI docs](https://aka.ms/vsts-cli). To view the source, visit the [vsts-cli repo](https://aka.ms/vsts-cli-source).
 
@@ -226,14 +226,14 @@ To improve security and compatibility, we’ve updated the list of ciphers suppo
 
 Added:
 
-* AES128 CTR
-* AES256 CTR
+- AES128 CTR
+- AES256 CTR
 
 Deprecated:
 
-* AES128
-* AES192
-* AES256
+- AES128
+- AES192
+- AES256
 
 ### Improved repository settings performance
 
@@ -260,16 +260,16 @@ Your build process is defined by the tasks it performs. Until now, all these tas
 
 We’ve added some agentless build tasks to the catalog:
 
-* [Delay](/azure/devops/pipelines/tasks/utility/delay)
-* [Invoke REST API](/azure/devops/pipelines/tasks/utility/http-rest-api)
-* [Publish to Azure Service Bus](/azure/devops/pipelines/tasks/utility/publish-to-azure-service-bus)
+- [Delay](/azure/devops/pipelines/tasks/utility/delay)
+- [Invoke REST API](/azure/devops/pipelines/tasks/utility/http-rest-api)
+- [Publish to Azure Service Bus](/azure/devops/pipelines/tasks/utility/publish-to-azure-service-bus)
 
 You can add an agentless phase to your build definition and then add one of these tasks to run it on VSTS.
 
 You can also extend and add your own agentless tasks, but there are some restrictions:
 
-* Agentless tasks cannot run scripts.
-* You must select one of the pre-defined execution handlers: HttpRequest handler to call an HTTP endpoint, or ServiceBus handler to post a message on the Azure service bus.
+- Agentless tasks cannot run scripts.
+- You must select one of the pre-defined execution handlers: HttpRequest handler to call an HTTP endpoint, or ServiceBus handler to post a message on the Azure service bus.
 
 For examples on how to create such tasks, see the [InvokeRestAPI](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/InvokeRestApiV1) and [PublishToAzureServiceBus](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/PublishToAzureServiceBusV1) tasks.
 

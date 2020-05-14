@@ -29,11 +29,11 @@ A check-in lock is less restrictive than a check-out lock. When you apply a chec
 
 In Visual Studio Team Foundation Server 2012, check-out locks are generally not effective because of local workspaces (see [Decide between using a local or a server workspace](decide-between-using-local-server-workspace.md)). Specifically, check-out locks are:
 
-* Not enforceable because other users might be using local workspaces.
+- Not enforceable because other users might be using local workspaces.
 
-* Not available if you are using a local workspace.
+- Not available if you are using a local workspace.
 
-* Disabled if a member of the Administrators security group of your project collection has enabled asynchronous checkout for your team's server workspaces.
+- Disabled if a member of the Administrators security group of your project collection has enabled asynchronous checkout for your team's server workspaces.
 
 A check-out lock prevents users who are using server workspaces from checking out and making changes to the locked item in their workspaces. You cannot apply a check-out lock to an item for which any [pending changes](develop-code-manage-pending-changes.md) exist, in any workspace other than your own.
 

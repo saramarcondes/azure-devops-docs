@@ -18,8 +18,8 @@ monikerRange: '>= tfs-2017'
 Stakeholders and other users can respond to feedback requests using the
 Test &amp; Feedback extension in two ways:
 
-* [From the link in a feedback request email](#email)
-* [Directly from the Test &amp; Feedback extension](#direct)
+- [From the link in a feedback request email](#email)
+- [Directly from the Test &amp; Feedback extension](#direct)
 
 Before you start, ensure you have installed the
 [Test &amp; Feedback extension](perform-exploratory-tests.md).
@@ -79,7 +79,7 @@ This is required in order to respond to feedback requests.
 
 1.  When you are done capturing feedback:
 
-    * If you are a **Stakeholder**, choose **Provide feedback**.
+    - If you are a **Stakeholder**, choose **Provide feedback**.
       You can optionally choose to create bugs and tasks when you
       submit your feedback. The process is the same as described in
       [this topic](connected-mode-exploratory-testing.md#create-bugs).
@@ -88,7 +88,7 @@ This is required in order to respond to feedback requests.
 
       <a name="non-stakeholder-feedback"></a>
 
-    * If you are a **Basic** user, create a bug or a task.
+    - If you are a **Basic** user, create a bug or a task.
 
       ![Create a bug or a task from the captured information](media/connected-mode-exploratory-testing/create-bugs-02.png)
 
@@ -106,12 +106,12 @@ This is required in order to respond to feedback requests.
 
 1.  If you are a **Stakeholder**:
 
-    * When you are done providing feedback, go to the **Feedback
+    - When you are done providing feedback, go to the **Feedback
       requests** page and choose **Feedback requests**.
 
       ![Opening the pending feedback requests page](media/shared/provide-stakeholder-feedback-10.png)
 
-    * In the pending feedback requests page, mark the feedback request as **Completed**.
+    - In the pending feedback requests page, mark the feedback request as **Completed**.
 
       ![Completing your feedback session](media/shared/provide-stakeholder-feedback-11.png)
 
@@ -153,10 +153,10 @@ This is required in order to respond to feedback requests.
 
 ## See also
 
-* [Request stakeholder feedback using the Test &amp; Feedback extension](request-stakeholder-feedback.md#request)
-* [Voluntary stakeholder feedback using the Test &amp; Feedback extension](voluntary-stakeholder-feedback.md#voluntary)
-* [Track stakeholder feedback using the Test &amp; Feedback extension](track-stakeholder-feedback.md#track)
-* [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
-* [Overview of manual and exploratory testing](index.yml)
+- [Request stakeholder feedback using the Test &amp; Feedback extension](request-stakeholder-feedback.md#request)
+- [Voluntary stakeholder feedback using the Test &amp; Feedback extension](voluntary-stakeholder-feedback.md#voluntary)
+- [Track stakeholder feedback using the Test &amp; Feedback extension](track-stakeholder-feedback.md#track)
+- [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
+- [Overview of manual and exploratory testing](index.yml)
 
 [!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

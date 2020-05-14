@@ -61,11 +61,11 @@ Within **Dashboards**, you open a specific dashboard from the selector.
 
 This particular selector features these navigational elements:
 
-* Search box for filtering dashboards based on a team name or keyword
-* Two pages you can choose from: - **Mine** (dashboards you created) which are organized by team - **All** (dashboards created by everyone) which are listed alphabetically
-* Dashboards you've favorited will appear at the top of the selector
-* **Add new dashboard** feature
-* **Browse all dashboards** - opens **Dashboards>All**
+- Search box for filtering dashboards based on a team name or keyword
+- Two pages you can choose from: - **Mine** (dashboards you created) which are organized by team - **All** (dashboards created by everyone) which are listed alphabetically
+- Dashboards you've favorited will appear at the top of the selector
+- **Add new dashboard** feature
+- **Browse all dashboards** - opens **Dashboards>All**
 
 ::: moniker-end
 
@@ -162,10 +162,10 @@ For example, here is the **Boards>Boards** directory.
 
 It lists boards in the following order:
 
-* Your last visited board
-* Your favorited boards
-* All boards of teams that you belong to
-* All boards defined for the project in alphabetical order.
+- Your last visited board
+- Your favorited boards
+- All boards of teams that you belong to
+- All boards defined for the project in alphabetical order.
 
 Choose the ![ ](../../media/icons/filter-icon.png) filter icon to filter the list as described in [Filter basics](filter-basics.md).
 
@@ -182,27 +182,27 @@ From a specific page, you can open the directory from the breadcrumbs or a selec
 
 ## Team profiles
 
-* Open a team profile to quickly access items defined for a team. The team profile is available from the **Overview>Dashboards**, **Boards>Boards**, **Boards>Backlogs**, and **Boards>Sprints** pages.
+- Open a team profile to quickly access items defined for a team. The team profile is available from the **Overview>Dashboards**, **Boards>Boards**, **Boards>Backlogs**, and **Boards>Sprints** pages.
 
-      	> [!div class="mx-imgBorder"]  
+      	> [!div class="mx-imgBorder"]
       	> ![Open team profile](media/breadcrumbs/open-team-profile.png)
 
       	A panel opens that shows all items defined for the team.
 
-      	> [!div class="mx-imgBorder"]  
+      	> [!div class="mx-imgBorder"]
       	> ![Team profile all items](media/breadcrumbs/team-profile-all-items.png)
 
-* You can filter the list to show only **Dashboards**, **Boards**, **Backlogs**, or **Sprints** by choosing from the menu.
+- You can filter the list to show only **Dashboards**, **Boards**, **Backlogs**, or **Sprints** by choosing from the menu.
 
-      	> [!div class="mx-imgBorder"]  
+      	> [!div class="mx-imgBorder"]
       	> ![Filter team tools](media/breadcrumbs/filter-team-profile.png)
 
-* To view the team admins and members of the team, choose **Members**.
+- To view the team admins and members of the team, choose **Members**.
 
-      	> [!div class="mx-imgBorder"]  
+      	> [!div class="mx-imgBorder"]
       	> ![Team members](media/breadcrumbs/team-profile-members.png)
 
-* To view or change the team configuration, choose **Team Settings**.  
+- To view or change the team configuration, choose **Team Settings**.  
    You can then add [team members](../../organizations/security/add-users-team-project.md#add-team-members), [team admins](../../organizations/settings/add-team-administrator.md), or navigate to [team notifications](../../notifications/howto-manage-team-notifications.md), or team [iterations](../../organizations/settings/set-iteration-paths-sprints.md#open-team-settings) and [area paths](../../organizations/settings/set-area-paths.md#open-team-settings).
 
 See also [Manage and configure team tools](../../organizations/settings/manage-teams.md).
@@ -211,8 +211,8 @@ See also [Manage and configure team tools](../../organizations/settings/manage-t
 
 ## Related articles
 
-* [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md)
-* [Add an artifact or team](add-artifact-team.md)
-* [Set favorites](set-favorites.md)
-* [Open a service or page](go-to-service-page.md)
-* [Filter basics](filter-basics.md)
+- [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md)
+- [Add an artifact or team](add-artifact-team.md)
+- [Set favorites](set-favorites.md)
+- [Open a service or page](go-to-service-page.md)
+- [Filter basics](filter-basics.md)

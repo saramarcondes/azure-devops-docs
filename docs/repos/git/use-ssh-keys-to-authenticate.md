@@ -20,10 +20,10 @@ Connect to your Git repos through SSH on macOS, Linux, or Windows to securely co
 > [!IMPORTANT]
 > SSH URLs have changed, but old SSH URLs will continue to work. If you have already set up SSH, you should update your remote URLs to the new format:
 >
-> * Verify which remotes are using SSH by running `git remote -v` in your Git client.
-> * Visit your repository on the web and select the **Clone** button in the upper right.
-> * Select **SSH** and copy the new SSH URL.
-> * In your Git client, run: `git remote set-url <remote name, e.g. origin> <new SSH URL>`. Alternatively, in Visual Studio, go to [Repository Settings](git-config.md#remotes), and edit your remotes.
+> - Verify which remotes are using SSH by running `git remote -v` in your Git client.
+> - Visit your repository on the web and select the **Clone** button in the upper right.
+> - Select **SSH** and copy the new SSH URL.
+> - In your Git client, run: `git remote set-url <remote name, e.g. origin> <new SSH URL>`. Alternatively, in Visual Studio, go to [Repository Settings](git-config.md#remotes), and edit your remotes.
 
 > [!NOTE]
 > As of Visual Studio 2017, SSH can be used to connect to Git repos.
@@ -38,9 +38,9 @@ The following steps cover configuration of SSH key authentication on the followi
 
 ---
 
-* Linux
-* macOS running at least Leopard (10.5)
-* Windows systems running [Git for Windows](https://www.git-scm.com/download/win)
+- Linux
+- macOS running at least Leopard (10.5)
+- Windows systems running [Git for Windows](https://www.git-scm.com/download/win)
 
 ---
 
@@ -55,8 +55,8 @@ Other shell environments will work, but are not covered in this article.
 The commands here will let you create new default SSH keys, overwriting existing default keys. Before continuing, check your
 `~/.ssh` folder (for example, /home/jamal/.ssh or C:\Users\jamal\\.ssh) and look for the following files:
 
-* _id_rsa_
-* _id_rsa.pub_
+- _id_rsa_
+- _id_rsa.pub_
 
 If these files exist, then you have already created SSH keys. You can overwrite the keys with the following commands, or skip this step and go to [configuring SSH keys](use-ssh-keys-to-authenticate.md#configuration) to reuse these keys.
 
@@ -142,8 +142,8 @@ SSH may display the server's SSH fingerprint and ask you to verify it.
 
 For cloud-hosted Azure DevOps Services, where clone URLs contain either `ssh.dev.azure.com` or `vs-ssh.visualstudio.com`, the fingerprint should match one of the following formats:
 
-* MD5: `97:70:33:82:fd:29:3a:73:39:af:6a:07:ad:f8:80:49` (RSA)
-* SHA256: `SHA256:ohD8VZEXGWo6Ez8GSEJQ9WpafgLFsOfLOtGGQCQo6Og` (RSA)
+- MD5: `97:70:33:82:fd:29:3a:73:39:af:6a:07:ad:f8:80:49` (RSA)
+- SHA256: `SHA256:ohD8VZEXGWo6Ez8GSEJQ9WpafgLFsOfLOtGGQCQo6Og` (RSA)
   These fingerprints are also listed in the **SSH public keys** page.
 
 For self-hosted instances of Azure DevOps Server, you should verify that the displayed fingerprint matches one of the fingerprints in the **SSH public keys** page.

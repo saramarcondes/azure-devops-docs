@@ -26,24 +26,24 @@ In this article you'll learn how to:
 
 > [!div class="checklist"]
 >
-> * Set up a hierarchical set of teams and backlogs
-> * Define a single sprint cadence for all teams
-> * Review which area paths are assigned to teams  
+> - Set up a hierarchical set of teams and backlogs
+> - Define a single sprint cadence for all teams
+> - Review which area paths are assigned to teams  
 >   ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
 > [!div class="checklist"]
 >
-> * Set up a hierarchical set of teams and backlogs
-> * Define a single sprint cadence for all teams
-> * Review which area paths are assigned to teams  
+> - Set up a hierarchical set of teams and backlogs
+> - Define a single sprint cadence for all teams
+> - Review which area paths are assigned to teams  
 >   ::: moniker-end
 
 ## Prerequisites
 
-* If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
-* If you're not a project administrator, [get added as one](../../organizations/security/set-project-collection-level-permissions.md). Only members of the Project Administrators group or those who have been [granted explicit permissions to edit project information](../../organizations/security/set-project-collection-level-permissions.md) can add teams and configure the project.
+- If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
+- If you're not a project administrator, [get added as one](../../organizations/security/set-project-collection-level-permissions.md). Only members of the Project Administrators group or those who have been [granted explicit permissions to edit project information](../../organizations/security/set-project-collection-level-permissions.md) can add teams and configure the project.
 
 <a id="set_up"></a>
 
@@ -176,7 +176,7 @@ You do this by opening each area path associated with a feature team and changin
 
     For example, here we move the Customer Profile to under Account Management.
 
-    <img src="media/pm-open-and-edit-area-path.png" alt="Team admin context, Open and edit area paths for feature teams" style="border: 1px solid #C3C3C3;" />  
+    <img src="media/pm-open-and-edit-area-path.png" alt="Team admin context, Open and edit area paths for feature teams" style="border: 1px solid #C3C3C3;" />
 
     Repeat this step for all feature team area paths.
 
@@ -259,8 +259,8 @@ If your feature teams use Scrum or use sprints to assign their work, you'll want
 > [!NOTE]
 > While maintaining a single sprint cadence simplifies project administration, you can create different cadences as needed. For example, some teams may follow a monthly cadence while others follow a 3-week cadence. Simply define a node under the top project node for each cadence, and then define the sprints under those nodes. For example:
 >
-> * Fabrikam Fiber/CY2019
-> * Fabrikam Fiber/3Week Sprints
+> - Fabrikam Fiber/CY2019
+> - Fabrikam Fiber/3Week Sprints
 >
 > Here we define the start and end dates of the first 6 sprints corresponding to a 3-week cadence.
 
@@ -279,11 +279,11 @@ If your feature teams use Scrum or use sprints to assign their work, you'll want
 
 For all teams to be well defined, you'll want to add team administrator(s) and have them verify or configure additional team settings. These include:
 
-* [Add team members](../../organizations/settings/add-teams.md#add-team-members)
-* [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
-* [Select backlog levels](../../organizations/settings/select-backlog-navigation-levels.md)
-* [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)
-* [Configure Kanban boards](../../organizations/settings/manage-teams.md#configure-kanban-boards)
+- [Add team members](../../organizations/settings/add-teams.md#add-team-members)
+- [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
+- [Select backlog levels](../../organizations/settings/select-backlog-navigation-levels.md)
+- [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)
+- [Configure Kanban boards](../../organizations/settings/manage-teams.md#configure-kanban-boards)
 
 For additional details, see [Manage and configure team tools](../../organizations/settings/manage-teams.md)
 
@@ -312,8 +312,8 @@ This feature isn't supported for TFS 2015 and earlier versions.
 
 With the hierarchical set of teams in place, you're well positioned to start planning and using the Agile tools available. To take the next steps in planning your portfolio of projects, see these articles:
 
-* [Create your backlog](../backlogs/create-your-backlog.md)
-* [Kanban quickstart](../boards/kanban-quickstart.md)
-* [Organize your backlog](../backlogs/organize-backlog.md)
-* [Work with multi-team ownership of backlog items](../backlogs/backlogs-overview.md#multi-team)
-* [Limitations of multi-team Kanban board views](../boards/kanban-overview.md#limits-multi-team)
+- [Create your backlog](../backlogs/create-your-backlog.md)
+- [Kanban quickstart](../boards/kanban-quickstart.md)
+- [Organize your backlog](../backlogs/organize-backlog.md)
+- [Work with multi-team ownership of backlog items](../backlogs/backlogs-overview.md#multi-team)
+- [Limitations of multi-team Kanban board views](../boards/kanban-overview.md#limits-multi-team)

@@ -58,10 +58,10 @@ We updated the experience for managing pipeline variables in the YAML editor. Yo
 
 Variables give you a convenient way to get key bits of data into various parts of your pipeline. With this update we've added a few predefined variables to a deployment job. These variables are automatically set by the system, scoped to the specific deployment job and are read-only.
 
-* Environment.Id - The ID of the environment.
-* Environment.Name - The name of the environment targeted by the deployment job.
-* Environment.ResourceId - The ID of the resource in the environment targeted by the deployment job.
-* Environment.ResourceName - The name of the resource in the environment targeted by the deployment job.
+- Environment.Id - The ID of the environment.
+- Environment.Name - The name of the environment targeted by the deployment job.
+- Environment.ResourceId - The ID of the resource in the environment targeted by the deployment job.
+- Environment.ResourceName - The name of the resource in the environment targeted by the deployment job.
 
 ### Link work items with multi-stage YAML pipelines
 
@@ -86,24 +86,24 @@ The pipeline runs deploying to dev will stop for approval at the start of the st
 
 We've made updates to several of the Azure Pipelines hosted VM images. You can find more details about the latest releases [here](https://github.com/microsoft/azure-pipelines-image-generation/releases). The following changes were added as part of this update:
 
-* For VS2017 and VS2019:
+- For VS2017 and VS2019:
 
-  * Added Azul Java 7
-  * [Pinned cached Docker images](https://github.com/microsoft/azure-pipelines-image-generation/pull/1036) to match host kernel version
-  * Added Az Powershell Module v2.3.2
-  * Pinned Mercurial to v5.0.0
-  * Updated Python to versions 2.7.16, 3.4.4, 3.5.4, 3.6.8, 3.7.4
-  * Added Portable Class Library (VS 2019 only)
-  * Changed [Rust default paths and environment variables](https://github.com/microsoft/azure-pipelines-image-generation/pull/1056)
+  - Added Azul Java 7
+  - [Pinned cached Docker images](https://github.com/microsoft/azure-pipelines-image-generation/pull/1036) to match host kernel version
+  - Added Az Powershell Module v2.3.2
+  - Pinned Mercurial to v5.0.0
+  - Updated Python to versions 2.7.16, 3.4.4, 3.5.4, 3.6.8, 3.7.4
+  - Added Portable Class Library (VS 2019 only)
+  - Changed [Rust default paths and environment variables](https://github.com/microsoft/azure-pipelines-image-generation/pull/1056)
 
-* For Ubuntu 16.04:
+- For Ubuntu 16.04:
 
-  * Updated helm to always pull latest (no longer pinned at v2.14.0)
-  * Added several [popular Docker containers](https://github.com/microsoft/azure-pipelines-image-generation/pull/1060)
-  * Updated Python to versions 2.7.16, 3.4.10, 3.5.7, 3.6.9, 3.7.4
-  * Changed Rust default paths and environment variables
+  - Updated helm to always pull latest (no longer pinned at v2.14.0)
+  - Added several [popular Docker containers](https://github.com/microsoft/azure-pipelines-image-generation/pull/1060)
+  - Updated Python to versions 2.7.16, 3.4.10, 3.5.7, 3.6.9, 3.7.4
+  - Changed Rust default paths and environment variables
 
-* For all images, added an `ImageVersion` environment variable for the version of the image
+- For all images, added an `ImageVersion` environment variable for the version of the image
 
 For a full list of tools available for a particular image, go to **Settings > Agent pools > Details**.
 
@@ -147,8 +147,8 @@ We've improved the Deployment Center for WebApp in the Azure Portal with support
 
 It has been a long pending request to not trigger CI builds when a new branch is created and when that branch doesn't have changes. Consider the following examples:
 
-* You use the web interface to create a new branch based on an existing branch. This would immediately trigger a new CI build if your branch filter matches the name of the new branch. This is unwanted because the content of the new branch is the same when compared to the existing branch.
-* You have a repository with two folders - app and docs. You set up a path filter for CI to match "app". In other words, you do not want to create a new build if a change has been pushed to docs. You create a new branch locally, make some changes to docs, and then push that branch to the server. We used to trigger a new CI build. This is unwanted since you explicitly asked not to look for changes in docs folder. However, because of the way we handled a new branch event, it would seem as if a change has been made to the app folder as well.
+- You use the web interface to create a new branch based on an existing branch. This would immediately trigger a new CI build if your branch filter matches the name of the new branch. This is unwanted because the content of the new branch is the same when compared to the existing branch.
+- You have a repository with two folders - app and docs. You set up a path filter for CI to match "app". In other words, you do not want to create a new build if a change has been pushed to docs. You create a new branch locally, make some changes to docs, and then push that branch to the server. We used to trigger a new CI build. This is unwanted since you explicitly asked not to look for changes in docs folder. However, because of the way we handled a new branch event, it would seem as if a change has been made to the app folder as well.
 
 Now, we have a better way of handling CI for new branches to address these problems. When you publish a new branch, we explicitly look for new commits in that branch, and check whether they match the path filters.
 

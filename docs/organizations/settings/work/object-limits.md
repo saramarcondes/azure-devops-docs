@@ -73,8 +73,8 @@ Each backlog can display up to 10,000 work items. If your backlog exceeds this l
 
 #### Additional notes:
 
-* Avoid nesting backlog items of the same type. To learn more, see [Fix reordering and nesting issues](../../../boards/backlogs/resolve-backlog-reorder-issues.md).
-* Avoid assigning the same area paths to more than one team. To learn more, see [Limitations of multi-team Kanban board views](../../../boards/boards/kanban-overview.md#limitations-of-multi-team-kanban-board-views).
+- Avoid nesting backlog items of the same type. To learn more, see [Fix reordering and nesting issues](../../../boards/backlogs/resolve-backlog-reorder-issues.md).
+- Avoid assigning the same area paths to more than one team. To learn more, see [Limitations of multi-team Kanban board views](../../../boards/boards/kanban-overview.md#limitations-of-multi-team-kanban-board-views).
 
 ::: moniker-end
 
@@ -94,8 +94,8 @@ Each backlog can display up to 999 work items. If your backlog exceeds this limi
 
 #### Additional notes:
 
-* Avoid nesting backlog items of the same type. To learn more, see [Fix reordering and nesting issues](../../../boards/backlogs/resolve-backlog-reorder-issues.md).
-* Avoid assigning the same area paths to more than one team. To learn more, see [Limitations of multi-team Kanban board views](../../../boards/boards/kanban-overview.md#limitations-of-multi-team-kanban-board-views).
+- Avoid nesting backlog items of the same type. To learn more, see [Fix reordering and nesting issues](../../../boards/backlogs/resolve-backlog-reorder-issues.md).
+- Avoid assigning the same area paths to more than one team. To learn more, see [Limitations of multi-team Kanban board views](../../../boards/boards/kanban-overview.md#limitations-of-multi-team-kanban-board-views).
 
 For the On-premises XML process model, you can modify the backlog and taskboard limits by editing the ProcessConfiguration.xml file. For details, see [Process configuration XML element reference](../../../reference/xml/process-configuration-xml-element.md).
 
@@ -201,18 +201,18 @@ We recommend that you consider the following guidance in order to minimize perfo
 
 ::: moniker range="azure-devops"
 
-* Minimize the number of custom fields you define. All custom fields contribute to the total allowed for a process, collection, or organization. Note that you can specify different behavior for the same field in a different WIT. That is, you can specify different rules, picklists, and more.
-* Minimize the number of rules you define for a WIT. While you can create multiple rules for a WIT, addition rules can negatively impact performance when a user adds and modifies work items. When users save work items, the system validates all rules associated with the fields for its work item type. Under certain conditions, the rule validation expression is too complex for SQL to evaluate.
-* Minimize the number of custom WITs you define.
+- Minimize the number of custom fields you define. All custom fields contribute to the total allowed for a process, collection, or organization. Note that you can specify different behavior for the same field in a different WIT. That is, you can specify different rules, picklists, and more.
+- Minimize the number of rules you define for a WIT. While you can create multiple rules for a WIT, addition rules can negatively impact performance when a user adds and modifies work items. When users save work items, the system validates all rules associated with the fields for its work item type. Under certain conditions, the rule validation expression is too complex for SQL to evaluate.
+- Minimize the number of custom WITs you define.
 
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
 
-* Minimize the number of custom fields you define. All custom fields contribute to the total allowed for a process, collection, or organization. Note that you can specify different behavior for the same field in a different WIT. That is, you can specify different rules, picklists, and more.
-* Minimize the number of rules you define for a WIT. While you can create multiple rules for a WIT, addition rules can negatively impact performance when a user adds and modifies work items. When users save work items, the system validates all rules associated with the fields for its work item type. Under certain conditions, the rule validation expression is too complex for SQL to evaluate.
-* Minimize the number of custom WITs you define.
-* Minimize the number of reportable fields you define. Reportable fields impact performance of your data warehouse.
+- Minimize the number of custom fields you define. All custom fields contribute to the total allowed for a process, collection, or organization. Note that you can specify different behavior for the same field in a different WIT. That is, you can specify different rules, picklists, and more.
+- Minimize the number of rules you define for a WIT. While you can create multiple rules for a WIT, addition rules can negatively impact performance when a user adds and modifies work items. When users save work items, the system validates all rules associated with the fields for its work item type. Under certain conditions, the rule validation expression is too complex for SQL to evaluate.
+- Minimize the number of custom WITs you define.
+- Minimize the number of reportable fields you define. Reportable fields impact performance of your data warehouse.
 
 ::: moniker-end
 
@@ -227,8 +227,8 @@ To reduce costs and to enhance scalability and performance, Azure DevOps Service
 
 Most rate limits are reached through REST API calls or non-optimized queries. To learn more, see the following articles:
 
-* [Rate limits](../../../integrate/concepts/rate-limits.md)
-* [Best practices (to avoid hitting rate limits)](../../../integrate/concepts/integration-bestpractices.md)
+- [Rate limits](../../../integrate/concepts/rate-limits.md)
+- [Best practices (to avoid hitting rate limits)](../../../integrate/concepts/integration-bestpractices.md)
 
 ::: moniker-end
 
@@ -236,9 +236,9 @@ Most rate limits are reached through REST API calls or non-optimized queries. To
 
 When determining to migrate from on-premises to Azure DevOps Services, there are several size limits that you may encounter. These limits include:
 
-* Database size is above the recommended size
-* Largest table size is above the recommended size
-* The database metadata size is above the supported size
+- Database size is above the recommended size
+- Largest table size is above the recommended size
+- The database metadata size is above the supported size
 
 To learn more, see [Migrate data from Azure DevOps Server to Azure DevOps Services](../../../migrate/migration-overview.md) and [Troubleshoot import and migration errors](../../../migrate/migration-troubleshooting.md).
 
@@ -246,40 +246,40 @@ To learn more, see [Migrate data from Azure DevOps Server to Azure DevOps Servic
 
 ::: moniker range="azure-devops"
 
-* [Guidance to create high-performing queries](../../../boards/queries/high-performing-queries.md)
-* [About process customization and inherited processes](inheritance-process-model.md)
-* [Create an Inheritance process](manage-process.md)
-* [Best practices](../../../integrate/concepts/integration-bestpractices.md)
-* [Naming restrictions and conventions](../naming-restrictions.md)
+- [Guidance to create high-performing queries](../../../boards/queries/high-performing-queries.md)
+- [About process customization and inherited processes](inheritance-process-model.md)
+- [Create an Inheritance process](manage-process.md)
+- [Best practices](../../../integrate/concepts/integration-bestpractices.md)
+- [Naming restrictions and conventions](../naming-restrictions.md)
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-* [Guidance to create high-performing queries](../../../boards/queries/high-performing-queries.md)
-* [Customize your work tracking experience](../../../reference/customize-work.md)
-* [About process customization and inherited processes](inheritance-process-model.md)
-* [On-premises XML process customization](../../../reference/on-premises-xml-process-model.md)
-* [Add a rule to a work item type](../../../reference/xml/apply-rule-work-item-field.md)
-* [Naming restrictions and conventions](../naming-restrictions.md)
+- [Guidance to create high-performing queries](../../../boards/queries/high-performing-queries.md)
+- [Customize your work tracking experience](../../../reference/customize-work.md)
+- [About process customization and inherited processes](inheritance-process-model.md)
+- [On-premises XML process customization](../../../reference/on-premises-xml-process-model.md)
+- [Add a rule to a work item type](../../../reference/xml/apply-rule-work-item-field.md)
+- [Naming restrictions and conventions](../naming-restrictions.md)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-* [Guidance to create high-performing queries](../../../boards/queries/high-performing-queries.md)
-* [Customize your work tracking experience](../../../reference/customize-work.md)
-* [On-premises XML process customization](../../../reference/on-premises-xml-process-model.md)
-* [Add a rule to a work item type](../../../reference/xml/apply-rule-work-item-field.md)
-* [Naming restrictions and conventions](../naming-restrictions.md)
+- [Guidance to create high-performing queries](../../../boards/queries/high-performing-queries.md)
+- [Customize your work tracking experience](../../../reference/customize-work.md)
+- [On-premises XML process customization](../../../reference/on-premises-xml-process-model.md)
+- [Add a rule to a work item type](../../../reference/xml/apply-rule-work-item-field.md)
+- [Naming restrictions and conventions](../naming-restrictions.md)
 
 ::: moniker-end
 
 ## Related resources
 
-* [Tags Manager](https://marketplace.visualstudio.com/items?itemName=YodLabs.TagsManager2&ssr=false#overview)
-* [WIQL Editor](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)
-* [Process Template Editor](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.msdevlabs-pte)
+- [Tags Manager](https://marketplace.visualstudio.com/items?itemName=YodLabs.TagsManager2&ssr=false#overview)
+- [WIQL Editor](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)
+- [Process Template Editor](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.msdevlabs-pte)
 
 <!---
 

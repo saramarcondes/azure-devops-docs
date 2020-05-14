@@ -12,43 +12,43 @@ ms.date: 08/04/2016
 
 ## Available event types
 
-* Build and release
-  * [Build completed](#build.complete)
-  * [Release created](#ms.vss-release.release-created-event)
-  * [Release abandoned](#ms.vss-release.release-abandoned-event)
-  * [Release deployment approval completed](#ms.vss-release.deployment-approval-completed-event)
-  * [Release deployment approval pending](#ms.vss-release.deployment-approval-pending-event)
-  * [Release deployment completed](#ms.vss-release.deployment-completed-event)
-  * [Release deployment started](#ms.vss-release.deployment-started-event)
+- Build and release
+  - [Build completed](#build.complete)
+  - [Release created](#ms.vss-release.release-created-event)
+  - [Release abandoned](#ms.vss-release.release-abandoned-event)
+  - [Release deployment approval completed](#ms.vss-release.deployment-approval-completed-event)
+  - [Release deployment approval pending](#ms.vss-release.deployment-approval-pending-event)
+  - [Release deployment completed](#ms.vss-release.deployment-completed-event)
+  - [Release deployment started](#ms.vss-release.deployment-started-event)
 
 ::: moniker range="azure-devops"
 
-* Pipelines
+- Pipelines
 
-  * [Run state changed](#run.statechanged)
-  * [Run stage state changed](#run.stagestatechanged)
-  * [Run stage waiting for approval](#run.stageapprovalpending)
-  * [Run stage approval completed](#run.stageapprovalcompleted)
+  - [Run state changed](#run.statechanged)
+  - [Run stage state changed](#run.stagestatechanged)
+  - [Run stage waiting for approval](#run.stageapprovalpending)
+  - [Run stage approval completed](#run.stageapprovalcompleted)
     ::: moniker-end
 
-* Code
+- Code
 
-  * [Code checked in](#tfvc.checkin)
-  * [Code pushed](#git.push)
-  * [Pull request created](#git.pullrequest.created)
-  * [Pull request merge commit created](#git.pullrequest.merged)
-  * [Pull request updated](#git.pullrequest.updated)
+  - [Code checked in](#tfvc.checkin)
+  - [Code pushed](#git.push)
+  - [Pull request created](#git.pullrequest.created)
+  - [Pull request merge commit created](#git.pullrequest.merged)
+  - [Pull request updated](#git.pullrequest.updated)
 
-* Work item
-  * [Work item commented on](#workitem.commented)
-  * [Work item created](#workitem.created)
-  * [Work item deleted](#workitem.deleted)
-  * [Work item restored](#workitem.restored)
-  * [Work item updated](#workitem.updated)
+- Work item
+  - [Work item commented on](#workitem.commented)
+  - [Work item created](#workitem.created)
+  - [Work item deleted](#workitem.deleted)
+  - [Work item restored](#workitem.restored)
+  - [Work item updated](#workitem.updated)
 
 Deprecated event types:
 
-* [Team room message posted](#message.posted)
+- [Team room message posted](#message.posted)
 
 > [!NOTE]
 > The [Nuget WebHooks Receivers package](https://www.nuget.org/packages/Microsoft.AspNet.WebHooks.Receivers.vsts) provides support for receiving WebHooks from Azure DevOps Services.
@@ -61,18 +61,18 @@ Deprecated event types:
 
 A build completes
 
-* Publisher ID: `tfs`
-* Event ID: `build.complete`
+- Publisher ID: `tfs`
+- Event ID: `build.complete`
 
 #### Settings
 
-* `definitionName`: Filter events to include only completed builds for the specified pipeline
-* `buildStatus`: Filter events to include only completed builds for the specified completion status
-  * Valid values:
-    * `Succeeded`
-    * `PartiallySucceeded`
-    * `Failed`
-    * `Stopped`
+- `definitionName`: Filter events to include only completed builds for the specified pipeline
+- `buildStatus`: Filter events to include only completed builds for the specified completion status
+  - Valid values:
+    - `Succeeded`
+    - `PartiallySucceeded`
+    - `Failed`
+    - `Stopped`
 
 #### Sample payload
 
@@ -190,12 +190,12 @@ A build completes
 
 A release was abandoned
 
-* Publisher ID: `rm`
-* Event ID: `ms.vss-release.release-abandoned-event`
+- Publisher ID: `rm`
+- Event ID: `ms.vss-release.release-abandoned-event`
 
 #### Settings
 
-* `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
+- `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
 
 #### Sample payload
 
@@ -360,12 +360,12 @@ A release was abandoned
 
 A release was created
 
-* Publisher ID: `rm`
-* Event ID: `ms.vss-release.release-created-event`
+- Publisher ID: `rm`
+- Event ID: `ms.vss-release.release-created-event`
 
 #### Settings
 
-* `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
+- `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
 
 #### Sample payload
 
@@ -530,21 +530,21 @@ A release was created
 
 A deployment approval has been completed
 
-* Publisher ID: `rm`
-* Event ID: `ms.vss-release.deployment-approval-completed-event`
+- Publisher ID: `rm`
+- Event ID: `ms.vss-release.deployment-approval-completed-event`
 
 #### Settings
 
-* `releaseApprovalStatus`: Filter events to include only deployments with an approval of the specified status
-  * Valid values:
-    * `2` - Approved
-    * `4` - Rejected
-* `releaseApprovalType`: Filter events to include only deployments requesting an approval of the specified type
-  * Valid values:
-    * `1` - Pre-deployment
-    * `2` - Post-deployment
-* `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
-* `releaseDefinitionId`: Filter events to include only completed deployments for the specified definition
+- `releaseApprovalStatus`: Filter events to include only deployments with an approval of the specified status
+  - Valid values:
+    - `2` - Approved
+    - `4` - Rejected
+- `releaseApprovalType`: Filter events to include only deployments requesting an approval of the specified type
+  - Valid values:
+    - `1` - Pre-deployment
+    - `2` - Post-deployment
+- `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
+- `releaseDefinitionId`: Filter events to include only completed deployments for the specified definition
 
 #### Sample payload
 
@@ -746,17 +746,17 @@ A deployment approval has been completed
 
 A deployment approval has been requested
 
-* Publisher ID: `rm`
-* Event ID: `ms.vss-release.deployment-approval-pending-event`
+- Publisher ID: `rm`
+- Event ID: `ms.vss-release.deployment-approval-pending-event`
 
 #### Settings
 
-* `releaseApprovalType`: Filter events to include only deployments requesting an approval of the specified type
-  * Valid values:
-    * `1` - Pre-deployment
-    * `2` - Post-deployment
-* `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
-* `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
+- `releaseApprovalType`: Filter events to include only deployments requesting an approval of the specified type
+  - Valid values:
+    - `1` - Pre-deployment
+    - `2` - Post-deployment
+- `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
+- `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
 
 #### Sample payload
 
@@ -954,19 +954,19 @@ A deployment approval has been requested
 
 A deployment completed
 
-* Publisher ID: `rm`
-* Event ID: `ms.vss-release.deployment-completed-event`
+- Publisher ID: `rm`
+- Event ID: `ms.vss-release.deployment-completed-event`
 
 #### Settings
 
-* `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
-* `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
-* `releaseEnvironmentStatus`: Filter events to include only completed deployments with the specified status
-  * Valid values:
-    * `8` - Canceled
-    * `16` - Rejected
-    * `4` - Succeeded
-    * `128` - Partially Succeeded
+- `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
+- `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
+- `releaseEnvironmentStatus`: Filter events to include only completed deployments with the specified status
+  - Valid values:
+    - `8` - Canceled
+    - `16` - Rejected
+    - `4` - Succeeded
+    - `128` - Partially Succeeded
 
 #### Sample payload
 
@@ -1110,13 +1110,13 @@ A deployment completed
 
 A deployment was started
 
-* Publisher ID: `rm`
-* Event ID: `ms.vss-release.deployment-started-event`
+- Publisher ID: `rm`
+- Event ID: `ms.vss-release.deployment-started-event`
 
 #### Settings
 
-* `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
-* `releaseDefinitionId`: Filter events to include only completed deployments for the specified definition
+- `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
+- `releaseDefinitionId`: Filter events to include only completed deployments for the specified definition
 
 #### Sample payload
 
@@ -1273,17 +1273,17 @@ A deployment was started
 
 Overall status of a pipeline run changed. A new run has started, or a run has transitioned to canceling, canceled, failed, partially succeeded or succeeded state.
 
-* Publisher ID: `pipelines`
-* Event ID: `ms.vss-pipelines.run-state-changed-event`
+- Publisher ID: `pipelines`
+- Event ID: `ms.vss-pipelines.run-state-changed-event`
 
 #### Settings
 
-* `PipelineId`: Filter to include only events for the specified pipeline
-* `runStateId`: Filter events based on the new state of the run
-  * Valid values:
-    * `InProgress`
-    * `Canceling`
-    * `Completed`
+- `PipelineId`: Filter to include only events for the specified pipeline
+- `runStateId`: Filter events based on the new state of the run
+  - Valid values:
+    - `InProgress`
+    - `Canceling`
+    - `Completed`
 
 #### Sample payload
 
@@ -1374,19 +1374,19 @@ Overall status of a pipeline run changed. A new run has started, or a run has tr
 
 A new stage has started, or a stage has transitioned to canceling, canceled, failed, partially succeeded or succeeded.
 
-* Publisher ID: `pipelines`
-* Event ID: `ms.vss-pipelines.stage-state-changed-event`
+- Publisher ID: `pipelines`
+- Event ID: `ms.vss-pipelines.stage-state-changed-event`
 
 #### Settings
 
-* `PipelineId`: Filter to include only events for the specified pipeline
-* `stageNameId`: Filter events to a specific stage name
-* `stageStateId`: Filter events based on the new state of the stage
-  * Valid values:
-    * `NotStarted`
-    * `Waiting`
-    * `Running`
-    * `Completed`
+- `PipelineId`: Filter to include only events for the specified pipeline
+- `stageNameId`: Filter events to a specific stage name
+- `stageStateId`: Filter events based on the new state of the stage
+  - Valid values:
+    - `NotStarted`
+    - `Waiting`
+    - `Running`
+    - `Completed`
 
 #### Sample payload
 
@@ -1474,14 +1474,14 @@ A new stage has started, or a stage has transitioned to canceling, canceled, fai
 
 An approval is created for a run stage
 
-* Publisher ID: `pipelines`
-* Event ID: `ms.vss-pipelinechecks-events.approval-pending`
+- Publisher ID: `pipelines`
+- Event ID: `ms.vss-pipelinechecks-events.approval-pending`
 
 #### Settings
 
-* `PipelineId`: Filter to include only events for the specified pipeline
-* `stageName`: Filter events to a specific stage name
-* `environmentName`: Filter events to approvals for deployments to a specified environment
+- `PipelineId`: Filter to include only events for the specified pipeline
+- `stageName`: Filter events to a specific stage name
+- `environmentName`: Filter events to approvals for deployments to a specified environment
 
 #### Sample payload
 
@@ -1565,14 +1565,14 @@ An approval is created for a run stage
 
 An approval completed for a run stage
 
-* Publisher ID: `pipelines`
-* Event ID: `ms.vss-pipelinechecks-events.approval-completed`
+- Publisher ID: `pipelines`
+- Event ID: `ms.vss-pipelinechecks-events.approval-completed`
 
 #### Settings
 
-* `PipelineId`: Filter to include only events for the specified pipeline
-* `stageName`: Filter events to a specific stage name
-* `environmentName`: Filter events to approvals for deployments to a specified environment
+- `PipelineId`: Filter to include only events for the specified pipeline
+- `stageName`: Filter events to a specific stage name
+- `environmentName`: Filter events to approvals for deployments to a specified environment
 
 #### Sample payload
 
@@ -1660,13 +1660,13 @@ An approval completed for a run stage
 
 A changeset is checked into TFVC.
 
-* Publisher ID: `tfs`
-* Event ID: `tfvc.checkin`
+- Publisher ID: `tfs`
+- Event ID: `tfvc.checkin`
 
 #### Settings
 
-* `path`: Filter to checkins that change one or more files under the specified path
-  * Required
+- `path`: Filter to checkins that change one or more files under the specified path
+  - Required
 
 #### Sample payload
 
@@ -1726,15 +1726,15 @@ A changeset is checked into TFVC.
 
 Code is pushed to a Git repository
 
-* Publisher ID: `tfs`
-* Event ID: `git.push`
+- Publisher ID: `tfs`
+- Event ID: `git.push`
 
 #### Settings
 
-* `branch`: The branch that code was pushed into
-* `pushedBy`: A group which has the pusher as its member
-* `repository`: The repository that code was pushed to
-  * Data type: `guid`
+- `branch`: The branch that code was pushed into
+- `pushedBy`: A group which has the pusher as its member
+- `repository`: The repository that code was pushed to
+  - Data type: `guid`
 
 #### Sample payload
 
@@ -1834,16 +1834,16 @@ Code is pushed to a Git repository
 
 Pull request is created in a Git repository
 
-* Publisher ID: `tfs`
-* Event ID: `git.pullrequest.created`
+- Publisher ID: `tfs`
+- Event ID: `git.pullrequest.created`
 
 #### Settings
 
-* `repository`: The repository that code was pushed to
-  * Data type: `guid`
-* `pullrequestCreatedBy`: A group which has the requester as a member
-* `pullrequestReviewersContains`: A group included in the reviewers list
-* `branch`: The target branch of the pull request
+- `repository`: The repository that code was pushed to
+  - Data type: `guid`
+- `pullrequestCreatedBy`: A group which has the requester as a member
+- `pullrequestReviewersContains`: A group included in the reviewers list
+- `branch`: The target branch of the pull request
 
 #### Sample payload
 
@@ -1956,16 +1956,16 @@ Pull request is created in a Git repository
 
 Pull request - Created merge commit
 
-* Publisher ID: `tfs`
-* Event ID: `git.pullrequest.merged`
+- Publisher ID: `tfs`
+- Event ID: `git.pullrequest.merged`
 
 #### Settings
 
-* `repository`: The repository that code was pushed to
-  * Data type: `guid`
-* `pullrequestCreatedBy`: A group which has the requester as a member
-* `pullrequestReviewersContains`: A group included in the reviewers list
-* `branch`: The target branch of the pull request
+- `repository`: The repository that code was pushed to
+  - Data type: `guid`
+- `pullrequestCreatedBy`: A group which has the requester as a member
+- `pullrequestReviewersContains`: A group included in the reviewers list
+- `branch`: The target branch of the pull request
 
 #### Sample payload
 
@@ -2079,22 +2079,22 @@ Pull request - Created merge commit
 
 Pull request is updated; status, review list, reviewer vote changed or the source branch is updated with a push
 
-* Publisher ID: `tfs`
-* Event ID: `git.pullrequest.updated`
+- Publisher ID: `tfs`
+- Event ID: `git.pullrequest.updated`
 
 #### Settings
 
-* `notificationType`: The type of pull request change
-  * Valid values:
-    * `PushNotification` - Source branch updated
-    * `ReviewersUpdateNotification` - Reviewers changed
-    * `StatusUpdateNotification` - Status changed
-    * `ReviewerVoteNotification` - Votes score changed
-* `repository`: The repository that code was pushed to
-  * Data type: `guid`
-* `pullrequestCreatedBy`: A group which has the requester as a member
-* `pullrequestReviewersContains`: A group included in the reviewers list
-* `branch`: The target branch of the pull request
+- `notificationType`: The type of pull request change
+  - Valid values:
+    - `PushNotification` - Source branch updated
+    - `ReviewersUpdateNotification` - Reviewers changed
+    - `StatusUpdateNotification` - Status changed
+    - `ReviewerVoteNotification` - Votes score changed
+- `repository`: The repository that code was pushed to
+  - Data type: `guid`
+- `pullrequestCreatedBy`: A group which has the requester as a member
+- `pullrequestReviewersContains`: A group included in the reviewers list
+- `branch`: The target branch of the pull request
 
 #### Sample payload
 
@@ -2217,13 +2217,13 @@ Pull request is updated; status, review list, reviewer vote changed or the sourc
 
 Filter events to include only newly created work items.
 
-* Publisher ID: `tfs`
-* Event ID: `workitem.created`
+- Publisher ID: `tfs`
+- Event ID: `workitem.created`
 
 #### Settings
 
-* `areaPath`: Filter events to include only work items under the specified area path.
-* `workItemType`: Filter events to include only work items of the specified type.
+- `areaPath`: Filter events to include only work items under the specified area path.
+- `workItemType`: Filter events to include only work items of the specified type.
 
 #### Sample payload
 
@@ -2314,13 +2314,13 @@ Filter events to include only newly created work items.
 
 Filter events to include only newly deleted work items.
 
-* Publisher ID: `tfs`
-* Event ID: `workitem.deleted`
+- Publisher ID: `tfs`
+- Event ID: `workitem.deleted`
 
 #### Settings
 
-* `areaPath`: Filter events to include only work items under the specified area path.
-* `workItemType`: Filter events to include only work items of the specified type.
+- `areaPath`: Filter events to include only work items under the specified area path.
+- `workItemType`: Filter events to include only work items of the specified type.
 
 #### Sample payload
 
@@ -2400,13 +2400,13 @@ Filter events to include only newly deleted work items.
 
 Filter events to include only newly restored work items.
 
-* Publisher ID: `tfs`
-* Event ID: `workitem.restored`
+- Publisher ID: `tfs`
+- Event ID: `workitem.restored`
 
 #### Settings
 
-* `areaPath`: Filter events to include only work items under the specified area path.
-* `workItemType`: Filter events to include only work items of the specified type.
+- `areaPath`: Filter events to include only work items under the specified area path.
+- `workItemType`: Filter events to include only work items of the specified type.
 
 #### Sample payload
 
@@ -2505,14 +2505,14 @@ Filter events to include only newly restored work items.
 
 Filter events to include only changed work items.
 
-* Publisher ID: `tfs`
-* Event ID: `workitem.updated`
+- Publisher ID: `tfs`
+- Event ID: `workitem.updated`
 
 #### Settings
 
-* `areaPath`: Filter events to include only work items under the specified area path.
-* `changedFields`: Filter events to include only work items with the specified field(s) changed.
-* `workItemType`: Filter events to include only work items of the specified type.
+- `areaPath`: Filter events to include only work items under the specified area path.
+- `changedFields`: Filter events to include only work items with the specified field(s) changed.
+- `workItemType`: Filter events to include only work items of the specified type.
 
 #### Sample payload
 
@@ -2641,14 +2641,14 @@ Filter events to include only changed work items.
 
 Filter events to include only work items commented on.
 
-* Publisher ID: `tfs`
-* Event ID: `workitem.commented`
+- Publisher ID: `tfs`
+- Event ID: `workitem.commented`
 
 #### Settings
 
-* `areaPath`: Filter events to include only work items under the specified area path.
-* `commentPattern`: The string that must be found in the comment.
-* `workItemType`: Filter events to include only work items of the specified type.
+- `areaPath`: Filter events to include only work items under the specified area path.
+- `commentPattern`: The string that must be found in the comment.
+- `workItemType`: Filter events to include only work items of the specified type.
 
 #### Sample payload
 
@@ -2742,15 +2742,15 @@ Filter events to include only work items commented on.
 
 Triggers when a message is posted to a team room
 
-* Publisher ID: `tfs`
-* Event ID: `message.posted`
+- Publisher ID: `tfs`
+- Event ID: `message.posted`
 
 #### Settings
 
-* `messagePattern`: The string that must be found in the message
-* `roomId`: Filter events to include only messages sent to the specified Team room
-  * Data type: `number`
-  * Required
+- `messagePattern`: The string that must be found in the message
+- `roomId`: Filter events to include only messages sent to the specified Team room
+  - Data type: `number`
+  - Required
 
 #### Sample payload
 
@@ -2808,6 +2808,6 @@ Triggers when a message is posted to a team room
 
 The event payload contains a `resourceContainers` dictionary that includes the IDs of the project, collection/account, or server that the event initiated from. Some products/environments also include a `baseUrl` field with each entry that provides the full URL to the container. This URL can be used to create a connection to the container in order to make REST API calls.
 
-* **Team Foundation Server 2015**: includes project, collection, and server. Does not include `baseUrl`.
-* **Team Foundation Server 2017**: includes project, collection, and server. Includes `baseUrl` for each.
-* **Azure DevOps Services**: includes project and collection (account). Includes `baseUrl` for each.
+- **Team Foundation Server 2015**: includes project, collection, and server. Does not include `baseUrl`.
+- **Team Foundation Server 2017**: includes project, collection, and server. Includes `baseUrl` for each.
+- **Azure DevOps Services**: includes project and collection (account). Includes `baseUrl` for each.

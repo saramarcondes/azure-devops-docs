@@ -44,8 +44,8 @@ Also, if your organization uses Azure Active Directory to manage user access, yo
 
 You can restrict access by setting permissions for an area path. To learn more, see the following articles:
 
-* [Set work tracking and plan permissions](../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
-* [Grant or restrict permissions to select tasks](../organizations/security/restrict-access.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
+- [Set work tracking and plan permissions](../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
+- [Grant or restrict permissions to select tasks](../organizations/security/restrict-access.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
 
 ### Q: What client tools support work tracking with Azure Boards?
 
@@ -85,9 +85,9 @@ Is this feature on the roadmap? Yes. See [Roadmap Item 1666194: Clone work item 
 
 **A:** No, there is no native support for creating hierarchy templates. In particular, you can't specify a default parent work item. However, you may find a solution To creating child work items by installing one of the following Marketplace extensions:
 
-* [Work item form one click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions)
-* [1-Click Child-Links](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-child-links)
-* [1-Click Tasks](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-tasks)
+- [Work item form one click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions)
+- [1-Click Child-Links](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-child-links)
+- [1-Click Tasks](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-tasks)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -113,9 +113,9 @@ Each backlog and board represents a filtered list of work items based on area pa
 
 **A:** Each backlog lists a filtered set of work items based on the team's selected area path, iteration paths, and work item types.
 
-* **Product backlog**: By default lists User Stories (Agile), Issues (Basic), Product Backlog Items and Bugs (Scrum), or Requirements (CMMI). Provides options to show **Parents**, **Forecast**, and **In Progress** or **Completed** child items.
-* **Portfolio backlog**: By default lists Features (all process models) for the Features backlog, and Epics (Agile, Scrum, and CMMI) for the Epic backlog. Provides options to show **Parents** and **In Progress** or **Completed** child items.
-* **Sprint backlog**: By default lists all product backlog items assigned to the selected iteration, regardless of status. Provides options to show **Work details**.
+- **Product backlog**: By default lists User Stories (Agile), Issues (Basic), Product Backlog Items and Bugs (Scrum), or Requirements (CMMI). Provides options to show **Parents**, **Forecast**, and **In Progress** or **Completed** child items.
+- **Portfolio backlog**: By default lists Features (all process models) for the Features backlog, and Epics (Agile, Scrum, and CMMI) for the Epic backlog. Provides options to show **Parents** and **In Progress** or **Completed** child items.
+- **Sprint backlog**: By default lists all product backlog items assigned to the selected iteration, regardless of status. Provides options to show **Work details**.
 
 To learn more, see [Tasks supported by Backlogs, Boards, Taskboards, and Plans](backlogs/backlogs-boards-plans.md).
 
@@ -163,8 +163,8 @@ To learn how, see [Customize your backlogs or boards (Inheritance process)](../o
 
 ## Related articles
 
-* [FAQs: Work in Excel connected to Azure Boards](backlogs/office/faqs.md)
-* [Azure Boards extensions](extensions/index.md)
-* [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md)
+- [FAQs: Work in Excel connected to Azure Boards](backlogs/office/faqs.md)
+- [Azure Boards extensions](extensions/index.md)
+- [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md)
 
 _Have a question that didn't get answered? Feel free to ask it through one of the feedback links provided below._

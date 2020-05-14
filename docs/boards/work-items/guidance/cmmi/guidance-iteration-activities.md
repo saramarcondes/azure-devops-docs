@@ -21,13 +21,13 @@ In MSF for CMMI Process Improvement, you plan a project as a series of iteration
 
 Iteration planning takes place at or before the start of each iteration. It includes the following tasks:
 
-* Review the requirements that are assigned to the iteration, and define them in more detail.
+- Review the requirements that are assigned to the iteration, and define them in more detail.
 
-* Create task work items for the work that must be performed to implement and test each requirement. Link the tasks to the requirement work item by using the parent link type.
+- Create task work items for the work that must be performed to implement and test each requirement. Link the tasks to the requirement work item by using the parent link type.
 
-* Set the Original Estimate field of each task. Divide tasks that have estimates that are longer than a few days.
+- Set the Original Estimate field of each task. Divide tasks that have estimates that are longer than a few days.
 
-* Compare the estimates with the time that is available for the iteration. If the estimate total is too long, simplify some of the requirements, or defer them to later iterations.
+- Compare the estimates with the time that is available for the iteration. If the estimate total is too long, simplify some of the requirements, or defer them to later iterations.
 
   For more information, see [Plan an iteration](guidance-plan-an-iteration-cmmi.md).
 
@@ -53,13 +53,13 @@ The build system builds the product from recently checked-in updates and runs au
 
 The whole team conducts a brief daily review of progress on the tasks of the iteration. Team members can use the [taskboard](../../../sprints/task-board.md) or project the [Progress Dashboard](../../../../report/sharepoint-dashboards/progress-dashboard-agile-cmmi.md) on the wall, share it by using Office Live Meeting, or both.
 
-* Each team member briefly reports recent progress, work in hand for the day, and any blocking issues.
+- Each team member briefly reports recent progress, work in hand for the day, and any blocking issues.
 
-* The project manager or team leader reports on progress toward resolving issues. For more information, see [Manage issues](guidance-manage-issues-cmmi.md).
+- The project manager or team leader reports on progress toward resolving issues. For more information, see [Manage issues](guidance-manage-issues-cmmi.md).
 
-* The bug count is reviewed. Bugs should be given priority over new development. Aim to keep the bug count low throughout the project. If the number of bugs increases, discuss the causes and the possible impact on development work.
+- The bug count is reviewed. Bugs should be given priority over new development. Aim to keep the bug count low throughout the project. If the number of bugs increases, discuss the causes and the possible impact on development work.
 
-* The burndown rate is reviewed.
+- The burndown rate is reviewed.
 
 ### Scope adjustments
 
@@ -91,11 +91,11 @@ Team members should avoid any assignment of blame. Try to improve the process so
 
 When you introduce a change in your process, make sure that the team agrees on the following decisions:
 
-* How you will know whether it was an improvement.
+- How you will know whether it was an improvement.
 
-* When you will make that assessment.
+- When you will make that assessment.
 
-* What you will do as a result.
+- What you will do as a result.
 
 ### Integration
 
@@ -103,9 +103,9 @@ If this project is part of a larger program, each team performs its work in a br
 
 The integration consists of two steps:
 
-* A forward integration, to merge the newer code from the main branch into the local project branch. After performing the merge, automatic and manual tests are run. This will create some defects. The defects are fixed at high priority.
+- A forward integration, to merge the newer code from the main branch into the local project branch. After performing the merge, automatic and manual tests are run. This will create some defects. The defects are fixed at high priority.
 
-* A reverse integration. The local branch code is merged into the main branch, and the build and full test suite on the main branch runs. The changes are reversed if any errors occur. Introducing errors to the main branch is frowned upon. If no errors occur, the integration is declared completed.
+- A reverse integration. The local branch code is merged into the main branch, and the build and full test suite on the main branch runs. The changes are reversed if any errors occur. Introducing errors to the main branch is frowned upon. If no errors occur, the integration is declared completed.
 
   We recommend that you perform an integration at the end of each iteration. If you delay it, the list of bugs to be fixed after forward integration is longer. If it takes a long time to fix the bugs, the main branch will have new material, and you will have to perform another forward integration.
 

@@ -22,8 +22,8 @@ To build and deploy Xcode apps or Xamarin.iOS projects, you'll need at least one
 
 > Before you begin:
 >
-> * If your pipelines are in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a self-hosted macOS agent.
-> * Otherwise, you've come to the right place to set up an agent on macOS. Continue to the next section.
+> - If your pipelines are in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a self-hosted macOS agent.
+> - Otherwise, you've come to the right place to set up an agent on macOS. Continue to the next section.
 
 [!INCLUDE [include](includes/concepts.md)]
 
@@ -33,8 +33,8 @@ To build and deploy Xcode apps or Xamarin.iOS projects, you'll need at least one
 
 Make sure your machine has these prerequisites:
 
-* macOS Sierra (10.12) or higher
-* Git 2.9.0 or higher (latest version strongly recommended - you can easily install with [Homebrew](https://brew.sh/))
+- macOS Sierra (10.12) or higher
+- Git 2.9.0 or higher (latest version strongly recommended - you can easily install with [Homebrew](https://brew.sh/))
 
 These prereqs are required for agent version 2.125.0 and higher.
 
@@ -47,9 +47,9 @@ These prereqs are required for agent version 2.124.0 and below.
 
 Make sure your machine has these prerequisites:
 
-* OS X Yosemite (10.10), El Capitan (10.11), or macOS Sierra (10.12)
-* Git 2.9.0 or higher (latest version strongly recommended)
-* Meets all prereqs for [.NET Core 1.x](https://dotnet.microsoft.com/download/dotnet-core/1.0)
+- OS X Yosemite (10.10), El Capitan (10.11), or macOS Sierra (10.12)
+- Git 2.9.0 or higher (latest version strongly recommended)
+- Meets all prereqs for [.NET Core 1.x](https://dotnet.microsoft.com/download/dotnet-core/1.0)
 
 ::: moniker-end
 
@@ -215,15 +215,15 @@ We provide the `./svc.sh` script for you to run and manage your agent as a launc
 
 In the section below, these tokens are replaced:
 
-* `{agent-name}`
+- `{agent-name}`
 
-* `{tfs-name}`
+- `{tfs-name}`
 
 For example, you have configured an agent (see above) with the name `our-osx-agent`. In the following examples, `{tfs-name}` will be either:
 
-* Azure Pipelines: the name of your organization. For example if you connect to `https://dev.azure.com/fabrikam`, then the service name would be `vsts.agent.fabrikam.our-osx-agent`
+- Azure Pipelines: the name of your organization. For example if you connect to `https://dev.azure.com/fabrikam`, then the service name would be `vsts.agent.fabrikam.our-osx-agent`
 
-* TFS: the name of your on-premises TFS AT server. For example if you connect to `http://our-server:8080/tfs`, then the service name would be `vsts.agent.our-server.our-osx-agent`
+- TFS: the name of your on-premises TFS AT server. For example if you connect to `http://our-server:8080/tfs`, then the service name would be `vsts.agent.our-server.our-osx-agent`
 
 ### Commands
 

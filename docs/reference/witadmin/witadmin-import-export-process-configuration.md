@@ -22,8 +22,8 @@ You customize the process configuration to modify the display of the web portal 
 
 To manage the process configuration for a project, use the **witadmin** command line tool to export and import the process configuration XML definition file. To learn about process configuration, see [ProcessConfiguration](../xml/process-configuration-xml-element.md).
 
-* **exportprocessconfig**: Exports the process configuration definition to an XML file or the Command Prompt window.
-* **importprocessconfig**: Imports the process configuration definition XML file.
+- **exportprocessconfig**: Exports the process configuration definition to an XML file or the Command Prompt window.
+- **importprocessconfig**: Imports the process configuration definition XML file.
 
 [!INCLUDE [temp](../../includes/witadmin-run-tool.md)]
 
@@ -31,8 +31,8 @@ To manage the process configuration for a project, use the **witadmin** command 
 
 ## Prerequisites
 
-* To export process configuration definitions, you must be a valid user of the project or collection.
-* To import process configuration definitions, you must be a member of the following security groups: **Team Foundation Administrators** or **Project Administrators**.
+- To export process configuration definitions, you must be a valid user of the project or collection.
+- To import process configuration definitions, you must be a member of the following security groups: **Team Foundation Administrators** or **Project Administrators**.
 
 For more information, see [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md).
 
@@ -40,7 +40,7 @@ For more information, see [Add an administrator](../../organizations/security/se
 
 ```
 witadmin exportprocessconfig /collection:CollectionURL /p:ProjectName [/f:FileName] [/e:encoding]
-witadmin importprocessconfig /collection:CollectionURL [/p:ProjectName] /f:FileName [/e:encoding] [/v]  
+witadmin importprocessconfig /collection:CollectionURL [/p:ProjectName] /f:FileName [/e:encoding] [/v]
 ```
 
 #### Parameters
@@ -64,9 +64,9 @@ If you encounter problems accessing existing test plans or test suites after an 
 
 The following values apply in each example:
 
-* URL for the collection: http://AdventureWorksServer:8080/tfs/DefaultCollection
-* Project: Contoso
-* Port number for the server website: 8080
+- URL for the collection: http://AdventureWorksServer:8080/tfs/DefaultCollection
+- Project: Contoso
+- Port number for the server website: 8080
 
 <a name="quick_add"></a>
 
@@ -89,7 +89,7 @@ The panel only displays fields that are included in the `FIELDS` section of the 
 3.  Export the process configuration file.
 
     ```
-    witadmin exportprocessconfig /collection:CollectionURL /p:ProjectName /f:"DirectoryPath\ProcessConfiguration.xml"  
+    witadmin exportprocessconfig /collection:CollectionURL /p:ProjectName /f:"DirectoryPath\ProcessConfiguration.xml"
     ```
 
     An example of a _CollectionURL_ is http://MyServer:8080/tfs/TeamProjectCollectionName.
@@ -99,23 +99,23 @@ The panel only displays fields that are included in the `FIELDS` section of the 
     For example, the following syntax adds the **Priority** element to the panel.
 
     ```xml
-    <AddPanel>  
-       <Fields>  
-          <Field refname="System.Title" />  
-          <Field refname="Microsoft.VSTS.Common.BusinessValue" />  
-       </Fields>  
-    </AddPanel>  
+    <AddPanel>
+       <Fields>
+          <Field refname="System.Title" />
+          <Field refname="Microsoft.VSTS.Common.BusinessValue" />
+       </Fields>
+    </AddPanel>
     ```
 
     > [!TIP]
     >
-    > * You can look up the reference name for a field using this [index](../../boards/work-items/guidance/work-item-field.md).
-    > * Add all required fields for work item types defined for the Requirements Category. That way, you avoid having to open the work item form to fill them in when you add backlog items through the panel.
+    > - You can look up the reference name for a field using this [index](../../boards/work-items/guidance/work-item-field.md).
+    > - Add all required fields for work item types defined for the Requirements Category. That way, you avoid having to open the work item form to fill them in when you add backlog items through the panel.
 
 5.  Import the process configuration file.
 
     ```
-    witadmin importprocessconfig /collection:CollectionURL /p:ProjectName /f:"DirectoryPath\ProcessConfiguration.xml"  
+    witadmin importprocessconfig /collection:CollectionURL /p:ProjectName /f:"DirectoryPath\ProcessConfiguration.xml"
     ```
 
 6.  Refresh your backlog page to view the updated panel.
@@ -199,10 +199,10 @@ If you modify the test suite workflow, then you have to make a similar update if
 
 ## Related articles
 
-* [Configure features after an upgrade](../configure-features-after-upgrade.md)
-* [Control XML element reference](../xml/control-xml-element-reference.md)
-* [Change the work item form layout](../xml/change-work-item-form-layout.md)
-* [Edit a WIT definition to add web content to a work item form](..//xml/edit-wit-definition-add-web-content-form.md)
+- [Configure features after an upgrade](../configure-features-after-upgrade.md)
+- [Control XML element reference](../xml/control-xml-element-reference.md)
+- [Change the work item form layout](../xml/change-work-item-form-layout.md)
+- [Edit a WIT definition to add web content to a work item form](..//xml/edit-wit-definition-add-web-content-form.md)
 
 ## Q & A
 
@@ -216,11 +216,11 @@ Other changes might require you to perform some manual operations when updating 
 
 **A:** When you add or remove workflow states to the following WITs, you should consider updating the process configuration to add or remove corresponding metastate mappings.
 
-* **WITs that belong to the Requirement Category or Task Category**: Metastate mappings support the display of the Agile planning tools.
+- **WITs that belong to the Requirement Category or Task Category**: Metastate mappings support the display of the Agile planning tools.
 
-* **WITs that belong to the Bug Category**: Metastate mappings to support **My Work** tool (Agile and CMMI-based projects).
+- **WITs that belong to the Bug Category**: Metastate mappings to support **My Work** tool (Agile and CMMI-based projects).
 
-* **Test Plan and Test Suite**: Updates to the workflow of these WITs must be mapped only when you support team members connecting to TFS from a version of Test Manager that is based on Visual Studio 2013.2 or earlier version.
+- **Test Plan and Test Suite**: Updates to the workflow of these WITs must be mapped only when you support team members connecting to TFS from a version of Test Manager that is based on Visual Studio 2013.2 or earlier version.
 
   Update the metastate mappings if you receive an **Application detected an unexpected fault** error when you connect to your project.
 

@@ -24,18 +24,18 @@ Specifically, consider performing one or more of the following tasks:
 
 ::: moniker range=">= tfs-2018"
 
-* [Add users to your project](#add-users). To assign users to issues or tasks, you need to add them to your project.
-* [Share your project vision](#share-vision). To support people who'll contribute to your project, provide them some directions via the project summary page, or through your [project wiki](../../project/wiki/index.md).
-* [Define area and iteration paths](#areas-iterations). If you work with Scrum methods or want to time-box your issues and tasks, you'll want to define Iteration Paths.
-* [Customize your issues or tasks](#customize). If you need additional fields to track data, or other type of work item, you can customize your process.
+- [Add users to your project](#add-users). To assign users to issues or tasks, you need to add them to your project.
+- [Share your project vision](#share-vision). To support people who'll contribute to your project, provide them some directions via the project summary page, or through your [project wiki](../../project/wiki/index.md).
+- [Define area and iteration paths](#areas-iterations). If you work with Scrum methods or want to time-box your issues and tasks, you'll want to define Iteration Paths.
+- [Customize your issues or tasks](#customize). If you need additional fields to track data, or other type of work item, you can customize your process.
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2017"
 
-* [Add users to your project](#add-users). To assign users to issues or tasks, you need to add them to your project.
-* [Define area and iteration paths](#areas-iterations). If you work with Scrum methods or want to time-box your issues and tasks, you'll want to define Iteration Paths.
-* [Customize your issues or tasks](#customize). If you need additional fields to track data, or other type of work item, you can customize your process.
+- [Add users to your project](#add-users). To assign users to issues or tasks, you need to add them to your project.
+- [Define area and iteration paths](#areas-iterations). If you work with Scrum methods or want to time-box your issues and tasks, you'll want to define Iteration Paths.
+- [Customize your issues or tasks](#customize). If you need additional fields to track data, or other type of work item, you can customize your process.
 
 ::: moniker-end
 
@@ -79,17 +79,17 @@ To learn more, see these articles:
 
 ::: moniker range=">= azure-devops-2019"
 
-* [About process customization and inherited processes](../../organizations/settings/work/inheritance-process-model.md)
-* [Customize a project](../../organizations/settings/work/customize-process.md)
-* [Add and manage processes](../../organizations/settings/work/manage-process.md)
+- [About process customization and inherited processes](../../organizations/settings/work/inheritance-process-model.md)
+- [Customize a project](../../organizations/settings/work/customize-process.md)
+- [Add and manage processes](../../organizations/settings/work/manage-process.md)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2017"
 
-* [On-premises XML process customization](../../reference/on-premises-xml-process-model.md)
-* [Add or modify a field to track work](../../reference/add-modify-field.md)
-* [Add or modify a work item type](../../reference/add-modify-wit.md)
+- [On-premises XML process customization](../../reference/on-premises-xml-process-model.md)
+- [Add or modify a field to track work](../../reference/add-modify-field.md)
+- [Add or modify a work item type](../../reference/add-modify-wit.md)
 
 ::: moniker-end
 
@@ -97,9 +97,9 @@ To learn more, see these articles:
 
 A number of notifications are predefined for each project. Notifications are based on subscription rules. Subscriptions arise from the following areas:
 
-* [Out-of-the-box or default subscriptions](../../notifications/oob-built-in-notifications.md).
-* [Team notifications](../../notifications/howto-manage-team-notifications.md), managed by a team administrator.
-* Project notifications, managed by a member of the Project Administrators group.
+- [Out-of-the-box or default subscriptions](../../notifications/oob-built-in-notifications.md).
+- [Team notifications](../../notifications/howto-manage-team-notifications.md), managed by a team administrator.
+- Project notifications, managed by a member of the Project Administrators group.
 
 If users believe they're getting too many notifications, they can [opt out of a subscription](../../notifications/howto-manage-personal-notifications.md).
 
@@ -131,7 +131,7 @@ This example shows that **Test Plans** has been disabled:
 
 ## Related articles
 
-* [Web portal navigation](../../project/navigation/index.md)
-* [Set user preferences](../../organizations/settings/set-your-preferences.md)
-* [Enable a preview feature](../../project/navigation/preview-features.md)
-* [Get started as an administrator for Azure DevOps](../../user-guide/project-admin-tutorial.md)
+- [Web portal navigation](../../project/navigation/index.md)
+- [Set user preferences](../../organizations/settings/set-your-preferences.md)
+- [Enable a preview feature](../../project/navigation/preview-features.md)
+- [Get started as an administrator for Azure DevOps](../../user-guide/project-admin-tutorial.md)

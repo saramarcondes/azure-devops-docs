@@ -19,6 +19,6 @@ Entry for a specific data provider&#x27;s resulting data
 
 ### Members
 
-* `error`: string.
+- `error`: string.
 
-* `id`: string.
+- `id`: string.

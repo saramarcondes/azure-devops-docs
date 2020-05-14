@@ -18,13 +18,13 @@ monikerRange: '>= tfs-2015'
 
 You can view basic reporting information within Microsoft Test Manager:
 
-* Test Run status at a Test Plan level:
+- Test Run status at a Test Plan level:
 
   This provides a status of all the tests that have been run, along with their current outcomes, within that specific test plan. This data is aggregated across all suites within the Test Plan. You can view this from the Test Plan Properties page.
 
   ![clip_image001](media/tcm-reporting/tcm-01.png)
 
-* Test Run status at a Test Suite Level:
+- Test Run status at a Test Suite Level:
 
   This provides a status of all the tests that have been run, along with their current outcomes, within that specific test suite. This information can be seen on both the Test Activity Center (as shown below) or Plan Activity Center.
 
@@ -59,29 +59,29 @@ There are two types of reports that can be viewed from Team Explorer - Excel Rep
 
     Details of each of the Test related reports can be found below:
 
-    * [Test Management Reports](https://msdn.microsoft.com/library/ee795293.aspx)
+    - [Test Management Reports](https://msdn.microsoft.com/library/ee795293.aspx)
 
-      * [Build Quality Excel Report](https://msdn.microsoft.com/library/ee730418.aspx)
+      - [Build Quality Excel Report](https://msdn.microsoft.com/library/ee730418.aspx)
 
-      * [Test Team Productivity Excel Report](https://msdn.microsoft.com/library/ee730422.aspx)
+      - [Test Team Productivity Excel Report](https://msdn.microsoft.com/library/ee730422.aspx)
 
-      * [Test Team Progress Excel Report](https://msdn.microsoft.com/library/ee730420.aspx)
+      - [Test Team Progress Excel Report](https://msdn.microsoft.com/library/ee730420.aspx)
 
-      * [Testing Gaps Excel Report (Agile)](https://msdn.microsoft.com/library/ee730419.aspx)
+      - [Testing Gaps Excel Report (Agile)](https://msdn.microsoft.com/library/ee730419.aspx)
 
-      * [Testing Gaps Excel Report (CMMI)](https://msdn.microsoft.com/library/ee730423.aspx)
+      - [Testing Gaps Excel Report (CMMI)](https://msdn.microsoft.com/library/ee730423.aspx)
 
-    * [Failure Analysis Excel Report](https://msdn.microsoft.com/library/ee461520.aspx)
+    - [Failure Analysis Excel Report](https://msdn.microsoft.com/library/ee461520.aspx)
 
-    * [Test Activity Excel Report](https://msdn.microsoft.com/library/ee461586.aspx)
+    - [Test Activity Excel Report](https://msdn.microsoft.com/library/ee461586.aspx)
 
-    * [Test Case Readiness Report](https://msdn.microsoft.com/library/dd380713.aspx)
+    - [Test Case Readiness Report](https://msdn.microsoft.com/library/dd380713.aspx)
 
-    * [Test Plan Progress Report](https://msdn.microsoft.com/library/dd380702.aspx)
+    - [Test Plan Progress Report](https://msdn.microsoft.com/library/dd380702.aspx)
 
-    * [User Story Test Status Excel Report (Agile)](https://msdn.microsoft.com/library/dd695788.aspx)
+    - [User Story Test Status Excel Report (Agile)](https://msdn.microsoft.com/library/dd695788.aspx)
 
-    * [Requirement Test Status Excel Report (CMMI)](https://msdn.microsoft.com/library/ee461538.aspx)
+    - [Requirement Test Status Excel Report (CMMI)](https://msdn.microsoft.com/library/ee461538.aspx)
 
 2.  Reporting Services based Reports: The figure below shows the list of all Reporting Services based reports that ship out of the box. Depending upon the process template (Agile, CMMI) you used at the time of creation of the project, the respective reports are created at project creation time.
 
@@ -91,15 +91,15 @@ There are two types of reports that can be viewed from Team Explorer - Excel Rep
 
     Details of each of the Test related reports can be found below:
 
-    * [Build Quality Indicators Report](https://msdn.microsoft.com/library/dd380683.aspx)
+    - [Build Quality Indicators Report](https://msdn.microsoft.com/library/dd380683.aspx)
 
-    * [Stories Overview Report (Agile)](https://msdn.microsoft.com/library/dd380648.aspx)
+    - [Stories Overview Report (Agile)](https://msdn.microsoft.com/library/dd380648.aspx)
 
-    * [Requirements Overview Report (CMMI)](https://msdn.microsoft.com/library/ee461517.aspx)
+    - [Requirements Overview Report (CMMI)](https://msdn.microsoft.com/library/ee461517.aspx)
 
-    * [Test Case Readiness Report](https://msdn.microsoft.com/library/dd380713.aspx)
+    - [Test Case Readiness Report](https://msdn.microsoft.com/library/dd380713.aspx)
 
-    * [Test Plan Progress Report](https://msdn.microsoft.com/library/dd380702.aspx)
+    - [Test Plan Progress Report](https://msdn.microsoft.com/library/dd380702.aspx)
 
 ## I am connected to my Team Project within Team Explorer, but I don't see any of the Reporting Services based Reports listed above. Why?
 
@@ -109,15 +109,15 @@ Team Foundation Server requires a report server that is dedicated only to its us
 
 Links:
 
-* [Installing Team Foundation Components](/azure/devops/server/install/get-started)
+- [Installing Team Foundation Components](/azure/devops/server/install/get-started)
 
-* [Configuring Resources to Support Team Projects](https://msdn.microsoft.com/library/dd386330.aspx)
+- [Configuring Resources to Support Team Projects](https://msdn.microsoft.com/library/dd386330.aspx)
 
-* [Add a Report Server to Your Deployment](https://msdn.microsoft.com/library/ee712737.aspx)
+- [Add a Report Server to Your Deployment](https://msdn.microsoft.com/library/ee712737.aspx)
 
-* [Add a Report Server to a Team Project Collection](https://msdn.microsoft.com/library/dd386355.aspx)
+- [Add a Report Server to a Team Project Collection](https://msdn.microsoft.com/library/dd386355.aspx)
 
-* [Add Reports to a Team Project](https://msdn.microsoft.com/library/ee712730.aspx)
+- [Add Reports to a Team Project](https://msdn.microsoft.com/library/ee712730.aspx)
 
 ## I am connected to my Team Project within Team Explorer, but I don't see any of the Excel Reports listed above. Why?
 
@@ -129,15 +129,15 @@ In addition, for Excel Reports, you also need to enable SharePoint on the Team F
 
 Links:
 
-* [Installing Team Foundation Components](/azure/devops/server/install/get-started)
+- [Installing Team Foundation Components](/azure/devops/server/install/get-started)
 
-* [Configuring Resources to Support Team Projects](https://msdn.microsoft.com/library/dd386330.aspx)
+- [Configuring Resources to Support Team Projects](https://msdn.microsoft.com/library/dd386330.aspx)
 
-* [Modify or Remove Access Between a SharePoint Web Application and Team Foundation Server](https://msdn.microsoft.com/library/dd386329.aspx)
+- [Modify or Remove Access Between a SharePoint Web Application and Team Foundation Server](https://msdn.microsoft.com/library/dd386329.aspx)
 
-* [Add a SharePoint Web Application to Your Deployment](https://msdn.microsoft.com/library/dd236907.aspx)
+- [Add a SharePoint Web Application to Your Deployment](https://msdn.microsoft.com/library/dd236907.aspx)
 
-* [Configure a Default Location for Team Project Portals](https://msdn.microsoft.com/library/dd386357.aspx)
+- [Configure a Default Location for Team Project Portals](https://msdn.microsoft.com/library/dd386357.aspx)
 
 ## We don't plan on installing SharePoint - is there no way of getting the "out-of-the-box" Excel reports, primarily for Test related reports?
 
@@ -181,7 +181,7 @@ For changing the Data source on the Excel reports [Dev10-Agile-ExcelReports.zip 
 
 There are two ways of doing this, start from scratch or use one of the existing out-of-the-box Excel reports as a starting point.
 
-* **Start from Scratch**
+- **Start from Scratch**
 
   You can always start creating a new Excel report by adding a new data source, as mentioned below:
 
@@ -209,7 +209,7 @@ There are two ways of doing this, start from scratch or use one of the existing 
 
       ![clip_image015](media/tcm-reporting/tcm-15.jpg)
 
-* **Use existing out-of-the-box Excel reports as a starting point**
+- **Use existing out-of-the-box Excel reports as a starting point**
 
   You could also start with any of the existing out-of-the-box Excel reports and then customize it to suit your needs by dragging and dropping the different measures or dimensions.
 
@@ -267,9 +267,9 @@ However, there are couple of ways of getting this Step related data:
 1.  **Test Scribe**: You could also use [Test Scribe](https://visualstudiogallery.msdn.microsoft.com/e79e4a0f-f670-47c2-9b8a-3b6f664bf4ae/) tool to generate a document containing Test Steps.
     There are two modes of generating the document using this tool -
 
-    * "Test Plan Summary" view which you can use to review or sign-off the Test Plan and its associated test cases along with individual test steps or expected results or iteration values.
+    - "Test Plan Summary" view which you can use to review or sign-off the Test Plan and its associated test cases along with individual test steps or expected results or iteration values.
 
-    * "Test Run Summary" view which you can use to get detailed Run level information - however it does not provide a breakdown of individual test results within a particular test run.
+    - "Test Run Summary" view which you can use to get detailed Run level information - however it does not provide a breakdown of individual test results within a particular test run.
 
 ## I want to write a custom 3rd party warehouse adapter, how should I go about it?
 

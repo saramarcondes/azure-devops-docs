@@ -28,7 +28,7 @@ Static method used to save valid custom settings from user input in configuratio
 
 ### Parameters
 
-* `customSettings`: CustomSettings. The custom settings to save which is serialized user input along with optional version.
+- `customSettings`: CustomSettings. The custom settings to save which is serialized user input along with optional version.
 
 <a name="Invalid"/>
 ## Invalid()

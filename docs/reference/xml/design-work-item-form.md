@@ -23,13 +23,13 @@ If you are adding a new work item type, you may want to copy an existing type an
 
 When you design the layout, consider the following tips to get the best results:
 
-* Place fields at the top of the form that team members must reference or update frequently.
+- Place fields at the top of the form that team members must reference or update frequently.
 
-* Place fields on a tab that only a few team members must reference or update infrequently. For example, controls that link work items or attach files are typically positioned on separate tabs.
+- Place fields on a tab that only a few team members must reference or update infrequently. For example, controls that link work items or attach files are typically positioned on separate tabs.
 
-* Group fields into columns to maximize the display of data fields. You can use columns in the top of the form or on a tab. You can also display tabs in a multicolumn format.
+- Group fields into columns to maximize the display of data fields. You can use columns in the top of the form or on a tab. You can also display tabs in a multicolumn format.
 
-* Use one or more link controls on separate tabs or on the same tab to restrict the types of links that can be created between work item types fields.
+- Use one or more link controls on separate tabs or on the same tab to restrict the types of links that can be created between work item types fields.
 
   For information about how to export, import, and verify work item form changes, see [Change the work item form layout](change-work-item-form-layout.md).
 
@@ -61,41 +61,41 @@ Custom Form with Three Tabs in a Two Column Layout
 The following code defines the top of the form. You can introduce columns as needed. As shown in this example, the first column, which is sized at 70 percent of the width of the form, contains two groups of fields. The second group of fields, which contains the **PU (Use Area Path)** and **Priority** fields, is defined in a two-column layout. The second column spans the remaining 30-percent width of the form. As the form is resized, the areas that are allocated to the columns vary proportionally.
 
 ```xml
-<FORM>  
-      <Layout>  
-        <Group>  
-          <Column PercentWidth="70">  
-            <Group>  
-              <Column PercentWidth="100">  
-                <Control FieldName="System.Title" Type="FieldControl" Label="Title" LabelPosition="Left" />  
-                <Control FieldName="System.AreaPath" Type="WorkItemClassificationControl" Label="Area Path" LabelPosition="Left" />  
-                <Control FieldName="System.IterationPath" Type="WorkItemClassificationControl" Label="&Iteration Path:" LabelPosition="Left" />  
-                <Group>  
-                  <Column PercentWidth="50">  
-                    <Control FieldName="Microsoft.VSTS.Common.ProductUnit" Type="FieldControl" Label="PU (Use Area Path)" LabelPosition="Left" />  
-                  </Column>  
-                  <Column PercentWidth="50">  
-                    <Control FieldName="Microsoft.VSTS.Common.Priority" Type="FieldControl" Label="Priority" LabelPosition="Left" />  
-                  </Column>  
-                </Group>  
-              </Column>  
-            </Group>  
-          </Column>  
-          <Column PercentWidth="30">  
-            <Group Label="Status">  
-              <Column PercentWidth="100">  
-                <Control FieldName="System.Id" Type="FieldControl" Label="Id" LabelPosition="Left" />  
-                <Control FieldName="System.State" Type="FieldControl" Label="State" LabelPosition="Left" />  
-                <Control FieldName="System.AssignedTo" Type="FieldControl" Label="Assigned To" LabelPosition="Left" />  
-              </Column>  
-            </Group>  
-          </Column>  
-        </Group>  
-        <Group Label="">  
-          <Column PercentWidth="60">  
-. . .  
-</Layout>  
-</FORM>  
+<FORM>
+      <Layout>
+        <Group>
+          <Column PercentWidth="70">
+            <Group>
+              <Column PercentWidth="100">
+                <Control FieldName="System.Title" Type="FieldControl" Label="Title" LabelPosition="Left" />
+                <Control FieldName="System.AreaPath" Type="WorkItemClassificationControl" Label="Area Path" LabelPosition="Left" />
+                <Control FieldName="System.IterationPath" Type="WorkItemClassificationControl" Label="&Iteration Path:" LabelPosition="Left" />
+                <Group>
+                  <Column PercentWidth="50">
+                    <Control FieldName="Microsoft.VSTS.Common.ProductUnit" Type="FieldControl" Label="PU (Use Area Path)" LabelPosition="Left" />
+                  </Column>
+                  <Column PercentWidth="50">
+                    <Control FieldName="Microsoft.VSTS.Common.Priority" Type="FieldControl" Label="Priority" LabelPosition="Left" />
+                  </Column>
+                </Group>
+              </Column>
+            </Group>
+          </Column>
+          <Column PercentWidth="30">
+            <Group Label="Status">
+              <Column PercentWidth="100">
+                <Control FieldName="System.Id" Type="FieldControl" Label="Id" LabelPosition="Left" />
+                <Control FieldName="System.State" Type="FieldControl" Label="State" LabelPosition="Left" />
+                <Control FieldName="System.AssignedTo" Type="FieldControl" Label="Assigned To" LabelPosition="Left" />
+              </Column>
+            </Group>
+          </Column>
+        </Group>
+        <Group Label="">
+          <Column PercentWidth="60">
+. . .
+</Layout>
+</FORM>
 ```
 
 <a name="WorkingTabs"></a>
@@ -106,9 +106,9 @@ You use tabs to cluster a group of fields or to support one or more special cont
 
 For more information about how to use special controls, see the following topics:
 
-* [Provide help text, hyperlinks, or web content](provide-help-text-hyperlinks-web-content-form.md)
-* [Add the Attachments control](add-the-attachments-control.md)
-* [Define link controls to restrict link relationships](define-link-controls.md)
+- [Provide help text, hyperlinks, or web content](provide-help-text-hyperlinks-web-content-form.md)
+- [Add the Attachments control](add-the-attachments-control.md)
+- [Define link controls to restrict link relationships](define-link-controls.md)
 
 By using the attributes that are described in the following table, you can label the tab and specify padding and margins that control the number of pixels inside and outside the border of the tab control.
 
@@ -125,69 +125,69 @@ By using the attributes that are described in the following table, you can label
 The following code lists the syntax that is used to create the layout that is shown in the previous illustration.
 
 ```xml
-<FORM>  
-      <Layout>  
+<FORM>
+      <Layout>
         . . .
-            <TabGroup>  
-              <Tab Label="Planning">  
-                <Group Label="Status" Padding="(0,0,0,3)">  
-                  <Column PercentWidth="50">  
-                    <Control FieldName="Microsoft.DevDiv.Importance" Type="FieldControl" Label="Importance" LabelPosition="Left" />  
-                    <Control FieldName="Microsoft.DevDiv.Commitment" Type="FieldControl" Label="Commitment / Confidence" LabelPosition="Left" />  
-                    . . .  
-                  </Column>  
-                  <Column PercentWidth="50" />  
-                </Group>  
-                <Group>  
-                  <Column PercentWidth="100">  
-                    <Control FieldName="Microsoft.DevDiv.Story" Type="HtmlFieldControl" Label="Story Board" LabelPosition="Top" />  
-                  </Column>  
-                </Group>  
-                <Group>  
-                  <Column PercentWidth="100">  
-                    <Control FieldName="System.Description" Type="HtmlFieldControl" Label="Value Proposition Description" LabelPosition="Top" />  
-                  </Column>  
-                </Group>  
-              </Tab>  
-              <Tab Label="Marketing">  
-                <Group>  
-                  <Column PercentWidth="100">  
-                    <Control FieldName="Microsoft.DevDiv.MarketingOwner" Type="FieldControl" Label="Marketing Owner" LabelPosition="Top" />  
-                    <Control FieldName="Microsoft.DevDiv.MarketingDescription" Type="HtmlFieldControl" Label="Marketing Description" LabelPosition="Top" />  
-                  </Column>  
-                </Group>  
-              </Tab>  
-              <Tab Label="Relationships">  
-                <Control Type="LinksControl" Label="Pillars" LabelPosition="Top" Name="Pillars">  
+            <TabGroup>
+              <Tab Label="Planning">
+                <Group Label="Status" Padding="(0,0,0,3)">
+                  <Column PercentWidth="50">
+                    <Control FieldName="Microsoft.DevDiv.Importance" Type="FieldControl" Label="Importance" LabelPosition="Left" />
+                    <Control FieldName="Microsoft.DevDiv.Commitment" Type="FieldControl" Label="Commitment / Confidence" LabelPosition="Left" />
+                    . . .
+                  </Column>
+                  <Column PercentWidth="50" />
+                </Group>
+                <Group>
+                  <Column PercentWidth="100">
+                    <Control FieldName="Microsoft.DevDiv.Story" Type="HtmlFieldControl" Label="Story Board" LabelPosition="Top" />
+                  </Column>
+                </Group>
+                <Group>
+                  <Column PercentWidth="100">
+                    <Control FieldName="System.Description" Type="HtmlFieldControl" Label="Value Proposition Description" LabelPosition="Top" />
+                  </Column>
+                </Group>
+              </Tab>
+              <Tab Label="Marketing">
+                <Group>
+                  <Column PercentWidth="100">
+                    <Control FieldName="Microsoft.DevDiv.MarketingOwner" Type="FieldControl" Label="Marketing Owner" LabelPosition="Top" />
+                    <Control FieldName="Microsoft.DevDiv.MarketingDescription" Type="HtmlFieldControl" Label="Marketing Description" LabelPosition="Top" />
+                  </Column>
+                </Group>
+              </Tab>
+              <Tab Label="Relationships">
+                <Control Type="LinksControl" Label="Pillars" LabelPosition="Top" Name="Pillars">
                   . . .
-                </Control>  
-                <Control Type="LinksControl" Label="Experiences - Feature Groups" LabelPosition="Top" Name="Experiences">  
+                </Control>
+                <Control Type="LinksControl" Label="Experiences - Feature Groups" LabelPosition="Top" Name="Experiences">
                   . . .
-                </Control>  
-                <Control Type="LinksControl" Label="Flags / Associations" LabelPosition="Top" Name="Flags">  
+                </Control>
+                <Control Type="LinksControl" Label="Flags / Associations" LabelPosition="Top" Name="Flags">
                   . . .
-                </Control>  
-              </Tab>  
-            </TabGroup>  
-          </Column>  
-          <Column PercentWidth="40">  
-            <TabGroup>  
-              <Tab Label="History">  
-                <Control FieldName="System.History" Type="WorkItemLogControl" Label="Detailed Description and History" LabelPosition="Top" />  
-              </Tab>  
-              <Tab Label="Links">  
-                <Control Type="LinksControl" LabelPosition="Top" >  
+                </Control>
+              </Tab>
+            </TabGroup>
+          </Column>
+          <Column PercentWidth="40">
+            <TabGroup>
+              <Tab Label="History">
+                <Control FieldName="System.History" Type="WorkItemLogControl" Label="Detailed Description and History" LabelPosition="Top" />
+              </Tab>
+              <Tab Label="Links">
+                <Control Type="LinksControl" LabelPosition="Top" >
                   . . .
-                </Control>  
-              </Tab>  
-              <Tab Label="File Attachments">  
-                <Control Type="AttachmentsControl" LabelPosition="Top" />  
-              </Tab>  
-            </TabGroup>  
-          </Column>  
-        </Group>  
-      </Layout>  
-</FORM>  
+                </Control>
+              </Tab>
+              <Tab Label="File Attachments">
+                <Control Type="AttachmentsControl" LabelPosition="Top" />
+              </Tab>
+            </TabGroup>
+          </Column>
+        </Group>
+      </Layout>
+</FORM>
 ```
 
 <a name="GroupingFields"></a>
@@ -213,21 +213,21 @@ You can control the spacing and size of the overall form layout by specifying th
 The following code lists the syntax that is used to create the group of fields that is shown in the previous illustration. For more information about how to specify the fields by using the `Control` element, see [Specify work item form controls](specify-work-item-form-controls.md).
 
 ```xml
-<TabGroup>  
-<Tab Label="Planning">  
-<Group Label="Status" Padding="(0,0,0,3)">  
-      <Column PercentWidth="5100">  
-      <Control FieldName="Microsoft.DevDiv.Importance" Type="FieldControl" Label="Importance" LabelPosition="Left" />  
-      <Control FieldName="Microsoft.DevDiv.Commitment" Type="FieldControl" Label="Commitment / Confidence" LabelPosition="Left" />  
-      <Control FieldName="Microsoft.DevDiv.VisionDoc" Type="FieldControl" Label="Vision Doc" LabelPosition="Left" />  
-      <Control FieldName="Microsoft.DeveloperDivision.Features.EstimatedCost" Type="FieldControl" Label="Estimated Cost" LabelPosition="Left" />  
-      <Control FieldName="Microsoft.DevDiv.BusinessUnit" Type="FieldControl" Label="BU (Use Area Path)" LabelPosition="Left" />  
-      <Control FieldName="Microsoft.DevDiv.Website" Type="FieldControl" Label="Website" LabelPosition="Left" />  
-      </Column>  
-</Group>  
-      . . .  
-</Tab>  
-</TabGroup>  
+<TabGroup>
+<Tab Label="Planning">
+<Group Label="Status" Padding="(0,0,0,3)">
+      <Column PercentWidth="5100">
+      <Control FieldName="Microsoft.DevDiv.Importance" Type="FieldControl" Label="Importance" LabelPosition="Left" />
+      <Control FieldName="Microsoft.DevDiv.Commitment" Type="FieldControl" Label="Commitment / Confidence" LabelPosition="Left" />
+      <Control FieldName="Microsoft.DevDiv.VisionDoc" Type="FieldControl" Label="Vision Doc" LabelPosition="Left" />
+      <Control FieldName="Microsoft.DeveloperDivision.Features.EstimatedCost" Type="FieldControl" Label="Estimated Cost" LabelPosition="Left" />
+      <Control FieldName="Microsoft.DevDiv.BusinessUnit" Type="FieldControl" Label="BU (Use Area Path)" LabelPosition="Left" />
+      <Control FieldName="Microsoft.DevDiv.Website" Type="FieldControl" Label="Website" LabelPosition="Left" />
+      </Column>
+</Group>
+      . . .
+</Tab>
+</TabGroup>
 ```
 
 <a name="WorkingColumns"></a>
@@ -242,35 +242,35 @@ You can design an area in a form that has two or more columns. You can specify t
 The following code produced the previous three-column layout of fields. When you organize groups of fields into columns, use the **Group** element to contain each column of fields. Optionally, you can label the groups of fields.
 
 ```xml
-<FORM>  
-      <Layout>  
-      <Group>  
-          <Column PercentWidth="36">  
-               <Group>  
-            <Control FieldName="System.Title" Type="FieldControl" Label="Title" LabelPosition="Left" />  
-            <Control FieldName="System.AreaPath" Type="WorkItemClassificationControl" Label="Area" LabelPosition="Left" />  
-            <Control FieldName="Microsoft.VSTS.Common.ProductUnit" Type="FieldControl" Label="Product Unit" LabelPosition="Left" />  
-            <Control FieldName="Microsoft.DevDiv.BusinessUnit" Type="FieldControl" Label="Business Unit" LabelPosition="Left" />  
-               </Group>  
-          </Column>  
-          <Column PercentWidth="33">  
-               <Group>  
-            <Control FieldName="Microsoft.DevDiv.SubTitle" Type="FieldControl" Label="Sub Title" LabelPosition="Left" />  
-            <Control FieldName="System.IterationPath" Type="WorkItemClassificationControl" Label="Iteration" LabelPosition="Left" />  
-            <Control FieldName="Microsoft.DevDiv.Other" Type="FieldControl" Label="Other" LabelPosition="Left" />  
-               </Group>  
-          </Column>  
-          <Column PercentWidth="31">  
-               <Group>  
-            <Control FieldName="Microsoft.DevDiv.Type" Type="FieldControl" Label="Type" LabelPosition="Left" />  
-            <Control FieldName="System.AssignedTo" Type="FieldControl" Label="Assigned To" LabelPosition="Left" />  
-            <Control FieldName="System.State" Type="FieldControl" Label="State" LabelPosition="Left" />  
-               </Group>  
-          </Column>  
-      </Group>  
-. . .  
-      </Layout>  
-</FORM>  
+<FORM>
+      <Layout>
+      <Group>
+          <Column PercentWidth="36">
+               <Group>
+            <Control FieldName="System.Title" Type="FieldControl" Label="Title" LabelPosition="Left" />
+            <Control FieldName="System.AreaPath" Type="WorkItemClassificationControl" Label="Area" LabelPosition="Left" />
+            <Control FieldName="Microsoft.VSTS.Common.ProductUnit" Type="FieldControl" Label="Product Unit" LabelPosition="Left" />
+            <Control FieldName="Microsoft.DevDiv.BusinessUnit" Type="FieldControl" Label="Business Unit" LabelPosition="Left" />
+               </Group>
+          </Column>
+          <Column PercentWidth="33">
+               <Group>
+            <Control FieldName="Microsoft.DevDiv.SubTitle" Type="FieldControl" Label="Sub Title" LabelPosition="Left" />
+            <Control FieldName="System.IterationPath" Type="WorkItemClassificationControl" Label="Iteration" LabelPosition="Left" />
+            <Control FieldName="Microsoft.DevDiv.Other" Type="FieldControl" Label="Other" LabelPosition="Left" />
+               </Group>
+          </Column>
+          <Column PercentWidth="31">
+               <Group>
+            <Control FieldName="Microsoft.DevDiv.Type" Type="FieldControl" Label="Type" LabelPosition="Left" />
+            <Control FieldName="System.AssignedTo" Type="FieldControl" Label="Assigned To" LabelPosition="Left" />
+            <Control FieldName="System.State" Type="FieldControl" Label="State" LabelPosition="Left" />
+               </Group>
+          </Column>
+      </Group>
+. . .
+      </Layout>
+</FORM>
 ```
 
 <a name="UsingSplitter"></a>
@@ -291,27 +291,27 @@ A **Group** element that contains **Splitter** and **Column** elements must spec
     See the following example for more information.
 
 ```xml
-<Group>  
-      <Column PercentWidth="50">  
-      <Group Label="First Group Left ">  
-         <Column PercentWidth="50">  
-               <Control FieldName="Microsoft.VSTS.Common.Priority" Type="FieldControl" Name="Pri2" Label="Priority:" />  
-               <Control FieldName="Microsoft.VSTS.Common.Rank" Type="FieldControl" Label="Stack Rank:" />  
-               <Control FieldName="Microsoft.VSTS.Scheduling.BaselineWork" Type="FieldControl" Label="Original Estimate:" />  
-               <Control FieldName="Microsoft.VSTS.Scheduling.RemainingWork" Type="FieldControl" Label="Remaining:" />  
-      </Column>  
-      <Column>  
-      <Splitter>  
-      </Column>  
-      <Column PercentWidth="50">  
-      <Group Label="Second Group Right">  
-               <Control Type="DateTimeControl" FieldName="ABC_Company.Project.Manual.ChangeDate" Label="Change Date" Format="Short" LabelPosition="Right" />  
-               <Control Type="DateTimeControl" FieldName="ABC_Company.Project.Manual.EstimateStartDate" Label="Estimated Start Date" Format="Short" LabelPosition="Right" />  
-               <Control Type="DateTimeControl" FieldName="ABC_Company.Project.Manual.ActualStartDate" Label="Actual Start Date" Format="Short" LabelPosition="Right" />  
-               <Control Type="DateTimeControl" FieldName="ABC_Company.Project.Manual.FinishDate" Label="Finish Date" Format="Short" LabelPosition="Right" />  
-      </Group>  
-      </Column>  
-</Group>  
+<Group>
+      <Column PercentWidth="50">
+      <Group Label="First Group Left ">
+         <Column PercentWidth="50">
+               <Control FieldName="Microsoft.VSTS.Common.Priority" Type="FieldControl" Name="Pri2" Label="Priority:" />
+               <Control FieldName="Microsoft.VSTS.Common.Rank" Type="FieldControl" Label="Stack Rank:" />
+               <Control FieldName="Microsoft.VSTS.Scheduling.BaselineWork" Type="FieldControl" Label="Original Estimate:" />
+               <Control FieldName="Microsoft.VSTS.Scheduling.RemainingWork" Type="FieldControl" Label="Remaining:" />
+      </Column>
+      <Column>
+      <Splitter>
+      </Column>
+      <Column PercentWidth="50">
+      <Group Label="Second Group Right">
+               <Control Type="DateTimeControl" FieldName="ABC_Company.Project.Manual.ChangeDate" Label="Change Date" Format="Short" LabelPosition="Right" />
+               <Control Type="DateTimeControl" FieldName="ABC_Company.Project.Manual.EstimateStartDate" Label="Estimated Start Date" Format="Short" LabelPosition="Right" />
+               <Control Type="DateTimeControl" FieldName="ABC_Company.Project.Manual.ActualStartDate" Label="Actual Start Date" Format="Short" LabelPosition="Right" />
+               <Control Type="DateTimeControl" FieldName="ABC_Company.Project.Manual.FinishDate" Label="Finish Date" Format="Short" LabelPosition="Right" />
+      </Group>
+      </Column>
+</Group>
 ```
 
 <a name="ControllingFormSize"></a>
@@ -337,10 +337,10 @@ You can control the spacing and size of the overall form layout by specifying th
 
 You use the `Control` element `MinimumSize` attribute to specify the minimum width and height that each form element should occupy. If you do not have sufficient vertical space, a scrollbar appears to keep its minimum size. Without this attribute, the controls are drawn by using their default sizes, unless controls in other tabs take more space that increases the size of the tab. You can use other attributes, such as `Margin` and `Padding`, to align or stretch the control and define the size of the border around the control. For more information, see the following topics:
 
-* [Specify work item form controls](specify-work-item-form-controls.md)
-* [Provide help text, hyperlinks, or web content](provide-help-text-hyperlinks-web-content-form.md)
-* [Add the Attachments control](add-the-attachments-control.md)
-* [Define link controls to restrict link relationships](define-link-controls.md)
+- [Specify work item form controls](specify-work-item-form-controls.md)
+- [Provide help text, hyperlinks, or web content](provide-help-text-hyperlinks-web-content-form.md)
+- [Add the Attachments control](add-the-attachments-control.md)
+- [Define link controls to restrict link relationships](define-link-controls.md)
 
 <a name="SpecifyingLayouts"></a>
 
@@ -360,9 +360,9 @@ You can specify different layouts for different targets by using the <code>Layou
 
 ## Related articles
 
-* [Change the work item form layout](change-work-item-form-layout.md)
-* [Customize your work tracking experience](../customize-work.md)
-* [Specify work item form controls](specify-work-item-form-controls.md)
-* [WebpageControlOptions](webpagecontroloptions-xml-elements-reference.md)
-* [Link and Param](link-param-xml-elements-reference.md)
-* [Import, export, and manage work item types](../witadmin/witadmin-import-export-manage-wits.md)
+- [Change the work item form layout](change-work-item-form-layout.md)
+- [Customize your work tracking experience](../customize-work.md)
+- [Specify work item form controls](specify-work-item-form-controls.md)
+- [WebpageControlOptions](webpagecontroloptions-xml-elements-reference.md)
+- [Link and Param](link-param-xml-elements-reference.md)
+- [Import, export, and manage work item types](../witadmin/witadmin-import-export-manage-wits.md)

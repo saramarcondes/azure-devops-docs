@@ -22,11 +22,11 @@ By linking work items to other objects, you can track related work, dependencies
 
 The **LinksControlOptions** element is a child element of the **Control** element. With a scoped links control, you can specify filters that restrict the types of links that users can add and the types of work items to which users can create links. Specifically, you use the following child elements to scope the control:
 
-* **LinkFilters**: Use to specify the types of links that appear in the control:
-  * Add a **WorkItemLinkFilter** to select links that may be created to other work items
-  * Add an **ExternalLinkFilter** to select links to other objects, such as changesets, hyperlinks, or version controlled files
-* **WorkItemTypeFilters**: Use to restrict the types of work items you can link to from the links control
-* **Column**: Use to specify the work item fields and link type attributes listed within the links control
+- **LinkFilters**: Use to specify the types of links that appear in the control:
+  - Add a **WorkItemLinkFilter** to select links that may be created to other work items
+  - Add an **ExternalLinkFilter** to select links to other objects, such as changesets, hyperlinks, or version controlled files
+- **WorkItemTypeFilters**: Use to restrict the types of work items you can link to from the links control
+- **Column**: Use to specify the work item fields and link type attributes listed within the links control
 
 <blockquote style="font-size: 13px"><b>Note: </b>The standard <img src="../../boards/media/icons/icon-links-tab-wi.png" alt="Links page icon"/> <a href="../../boards/work-items/work-item-form-controls.md#link-wi" data-raw-source="[Links page](../../boards/work-items/work-item-form-controls.md#link-wi)">Links page</a> provides a non-customizable control that displays all link types. From this control, you may view all links associated with the work item, and link the work item to other work items or external objects.<br/></blockquote>
 
@@ -97,11 +97,11 @@ When <code>ListViewOptions GroupLinks=&quot;true&quot;</code>, links are grouped
 
 From the scoped links control, you can perform the same actions provided from the standard ![Links page icon](../../boards/media/icons/icon-links-tab-wi.png) Links page&mdash;you simply do them from a menu rather than a tool bar.
 
-* To open an associated item or object, click the linked item
-* To delete a link, highlight it and click the ![delete icon](../../boards/media/icons/delete_icon.png) delete icon
-* To link to an existing item, or create and link a new work item, select one of the menu options.
+- To open an associated item or object, click the linked item
+- To delete a link, highlight it and click the ![delete icon](../../boards/media/icons/delete_icon.png) delete icon
+- To link to an existing item, or create and link a new work item, select one of the menu options.
 
-<img src="media/linkscontrol-related-work-menu-options.png" alt="Links control menu of options" style="border: 1px solid #C3C3C3;" />  
+<img src="media/linkscontrol-related-work-menu-options.png" alt="Links control menu of options" style="border: 1px solid #C3C3C3;" />
 
 <a id="dynamic-sizing"></a>
 
@@ -109,8 +109,8 @@ From the scoped links control, you can perform the same actions provided from th
 
 By default, the scoped links control displays dynamically (`ViewMode=Dynamic`) based on the form's width and the space allocated to the links control. The links control width expands and shrinks proportionally based on the overall form width.
 
-* When the links control width is less than 460 pixels, the control displays as a _List_. Only the composite field called _Link_ (consisting of Work Item Type, ID, Title, and Changed By fields)
-* When the links control width equals or exceeds 460 pixels, the control displays information within a _Grid_ according to the fields specified within the **Column** elements. The number of columns that appear is space-dependent, starting at a minimum of 4, and increasing by one column for every 100 pixels until the width is sufficient to display all defined columns.
+- When the links control width is less than 460 pixels, the control displays as a _List_. Only the composite field called _Link_ (consisting of Work Item Type, ID, Title, and Changed By fields)
+- When the links control width equals or exceeds 460 pixels, the control displays information within a _Grid_ according to the fields specified within the **Column** elements. The number of columns that appear is space-dependent, starting at a minimum of 4, and increasing by one column for every 100 pixels until the width is sufficient to display all defined columns.
 
 You can specify whether the links display as a list, grid, or dynamically by setting the `ViewMode` in the [LinksControlOptions](#links-control-options).
 
@@ -118,13 +118,13 @@ You can specify whether the links display as a list, grid, or dynamically by set
 
 Core system processes&mdash;[Agile, Scrum, CMMI](../../boards/work-items/guidance/choose-process.md)&mdash;have been updated to include the Development and Related Work scoped links control.
 
-<img src="media/linkscontrol-bug-form-dev-related-links.png" alt="Bug work item form, Agile process, Development and Related links controls" style="border: 1px solid #C3C3C3;" />  
+<img src="media/linkscontrol-bug-form-dev-related-links.png" alt="Bug work item form, Agile process, Development and Related links controls" style="border: 1px solid #C3C3C3;" />
 
 These controls appear on all default work item types, except the following:
 
-* Code Review Request/Code Review Response
-* Feedback Request/Feedback Response
-* Shared Steps/Shared Parameter (these items have specific controls that list Test Case items).
+- Code Review Request/Code Review Response
+- Feedback Request/Feedback Response
+- Shared Steps/Shared Parameter (these items have specific controls that list Test Case items).
 
 <a id="development-links-control"> </a>
 
@@ -415,7 +415,7 @@ WorkItemTypeFiltersScope="project" &gt;
 
 You use scoped links controls to support your team and business needs. You [link work items to support traceability and manage dependencies](../../boards/queries/link-work-items-support-traceability.md). To learn more about customizing the web form, see these topics:
 
-* [WebLayout and Control elements](weblayout-xml-elements.md)
-* [Manage new form rollout](../manage-new-form-rollout.md)
-* [New work item experience](../process/new-work-item-experience.md)
-* [Customize the new form](../customize-wit-form.md)
+- [WebLayout and Control elements](weblayout-xml-elements.md)
+- [Manage new form rollout](../manage-new-form-rollout.md)
+- [New work item experience](../process/new-work-item-experience.md)
+- [Customize the new form](../customize-wit-form.md)

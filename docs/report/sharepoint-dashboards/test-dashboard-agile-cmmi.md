@@ -20,11 +20,11 @@ By using the test dashboard, you can monitor test activities, report on progress
 
 **Requirements**
 
-* The **Test Plan Progress**, **Test Case Readiness**, **User Story Test Status**, **Requirement Test Status**, and **Test Activity** reports are available only when the team creates test plans and runs tests as described in [Plan your tests](../../test/create-test-cases.md).
+- The **Test Plan Progress**, **Test Case Readiness**, **User Story Test Status**, **Requirement Test Status**, and **Test Activity** reports are available only when the team creates test plans and runs tests as described in [Plan your tests](../../test/create-test-cases.md).
 
-* Burndown, progress, trend charts, and reports ![Step 1](media/procguid_1.png "ProcGuid_1") through ![Step 5](media/procguid_6.png "ProcGuid_6") do not appear when the server that hosts Analysis Services for the team project is not available.
+- Burndown, progress, trend charts, and reports ![Step 1](media/procguid_1.png "ProcGuid_1") through ![Step 5](media/procguid_6.png "ProcGuid_6") do not appear when the server that hosts Analysis Services for the team project is not available.
 
-* Plus requirements listed in [Project portal dashboards](project-portal-dashboards.md).
+- Plus requirements listed in [Project portal dashboards](project-portal-dashboards.md).
 
 ## <a name="Data"></a> Data displayed in the dashboard
 
@@ -54,18 +54,18 @@ You can use the test dashboard to understand how well the team is progressing in
 
 For the reports in the test dashboard to be useful and accurate, the team must perform the following activities:
 
-* Define test cases and user stories or requirements, and create **Tested By** links from test cases to user stories or requirements.
+- Define test cases and user stories or requirements, and create **Tested By** links from test cases to user stories or requirements.
 
-* [Define test plans, and assign test cases to test plans](../../test/create-test-cases.md).
+- [Define test plans, and assign test cases to test plans](../../test/create-test-cases.md).
 
-* For manual tests, mark the results of each validation step in the test case as passed or failed.
+- For manual tests, mark the results of each validation step in the test case as passed or failed.
 
   > [!IMPORTANT]
   > Testers must mark a test step with a status if it is a validation test step. The overall result for a test case reflects the status of all the test steps that the tester marked. Therefore, the test case will have a status of failed if the tester marked any test step as failed or did not mark it.
 
   For automated tests, each test case is automatically marked as passed or failed.
 
-* (Optional) To support filtering, assign **Iteration** and **Area** paths to each test case.
+- (Optional) To support filtering, assign **Iteration** and **Area** paths to each test case.
 
 ## <a name="Progress"></a> Monitor test progress
 
@@ -81,15 +81,15 @@ You can use the first three reports in the Test Dashboard to monitor test progre
 
 You can use the **User Story Test Status** or **Requirement Test Status** report to determine whether tests are covering all the code and to answer the following questions:
 
-* Which user stories or requirements have a low overall count of test cases?
+- Which user stories or requirements have a low overall count of test cases?
 
-* Which user stories or requirements have a high overall count of test cases that are blocked or have never been run?
+- Which user stories or requirements have a high overall count of test cases that are blocked or have never been run?
 
-* Does the test case coverage for each user story or requirement meet expectations?
+- Does the test case coverage for each user story or requirement meet expectations?
 
-* Which user stories or requirements have a high rate of test failures?
+- Which user stories or requirements have a high rate of test failures?
 
-* What is the average number of test cases that are defined for each user story or requirement?
+- What is the average number of test cases that are defined for each user story or requirement?
 
 ## <a name="Trends"></a> Monitor test failures and regressions
 

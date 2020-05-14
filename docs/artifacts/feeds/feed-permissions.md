@@ -39,8 +39,7 @@ Select **Permissions**.
 
 ::: moniker range=">= azure-devops-2019"
 
-> [!div class="mx-imgBorder"]
-> ![Editing a feed's permissions](media/editfeeddialog-azure-devops-newnav.png)
+> [!div class="mx-imgBorder"] > ![Editing a feed's permissions](media/editfeeddialog-azure-devops-newnav.png)
 
 ::: moniker-end
 
@@ -58,8 +57,8 @@ Select **Permissions**.
 
 In the edit feed dialog:
 
-* Choose to make each person or team an Owner, Contributor, Collaborator, or Reader.
-* When you're done, select **Save**.
+- Choose to make each person or team an Owner, Contributor, Collaborator, or Reader.
+- When you're done, select **Save**.
 
 <a name="common-identities"></a>
 

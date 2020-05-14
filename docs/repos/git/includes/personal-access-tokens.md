@@ -106,17 +106,17 @@ Your token is your identity and represents you when it's used. Keep your tokens 
 
 See the following examples of using your PAT.
 
-* Username: yourPAT
-* Password: yourPAT
+- Username: yourPAT
+- Password: yourPAT
 
 or
 
-* git clone https://{yourPAT}@dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
+- git clone https://{yourPAT}@dev.azure.com/yourOrgName/yourProjectName/\_git/yourRepoName
 
 To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend the following credential managers:
 
-* [Git Credential Manager for macOS and Linux](https://github.com/Microsoft/Git-Credential-Manager-for-Mac-and-Linux)
-* [Git Credential Manager for Windows](https://github.com/Microsoft/Git-Credential-Manager-for-Windows)
+- [Git Credential Manager for macOS and Linux](https://github.com/Microsoft/Git-Credential-Manager-for-Mac-and-Linux)
+- [Git Credential Manager for Windows](https://github.com/Microsoft/Git-Credential-Manager-for-Windows)
   (requires [Git for Windows](https://www.git-scm.com/download/win))
 
 ## Revoke personal access tokens to remove access

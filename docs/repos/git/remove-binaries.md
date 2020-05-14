@@ -135,17 +135,17 @@ It saves a lot of work to make sure that large files stay out of the main reposi
 
 > Do's
 
-* Do commit changes frequently. You can always fix them up later with a squash or rebase.
-* Do use branches to isolate your changes. Branches are cheap and private, and merging is simple. You can also back up changes on a branch by pushing it to the server.
-* Do use a naming convention when publishing topic branches. Name the branch "`users/<alias>/<branchname>`". This will help group your branches and make it easy for others to identify the "owner".
-* Do remember to push your changes. `Commit != Checkin`. `(Commit + Push) == Checkin`.
-* Do consider using `.gitignore` for large binaries so that they aren't added to the repo in the first place - more information [here](https://help.github.com/articles/ignoring-files/).
-* Do consider using NuGet or TFS version control to store your large binaries.
+- Do commit changes frequently. You can always fix them up later with a squash or rebase.
+- Do use branches to isolate your changes. Branches are cheap and private, and merging is simple. You can also back up changes on a branch by pushing it to the server.
+- Do use a naming convention when publishing topic branches. Name the branch "`users/<alias>/<branchname>`". This will help group your branches and make it easy for others to identify the "owner".
+- Do remember to push your changes. `Commit != Checkin`. `(Commit + Push) == Checkin`.
+- Do consider using `.gitignore` for large binaries so that they aren't added to the repo in the first place - more information [here](https://help.github.com/articles/ignoring-files/).
+- Do consider using NuGet or TFS version control to store your large binaries.
 
 > Don'ts
 
-* Don't rebase after pushing. Rebasing pushed commits in git can be bad because it forces everyone else in the repo to rebase their local changes - and they won't be happy if they need to do this. Rebasing pushed commits on your own personal branch, even if pushed, isn't a significant deal unless other people are pulling those commits.
-* Don't commit binaries to your repo. Git doesn't compress binary files the way that TFVC does, and because all repos have all of the history, committing binary files means permanent bloat.
+- Don't rebase after pushing. Rebasing pushed commits in git can be bad because it forces everyone else in the repo to rebase their local changes - and they won't be happy if they need to do this. Rebasing pushed commits on your own personal branch, even if pushed, isn't a significant deal unless other people are pulling those commits.
+- Don't commit binaries to your repo. Git doesn't compress binary files the way that TFVC does, and because all repos have all of the history, committing binary files means permanent bloat.
 
 ## Summary
 

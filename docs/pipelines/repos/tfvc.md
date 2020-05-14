@@ -61,13 +61,13 @@ For more information on how to optimize a TFVC workspace, see [Optimize your wor
 
 If you want to clean the repo, then select **true**, and then select one of the following options:
 
-* **Sources**: The build pipeline performs an undo of any changes and scorches the current workspace under `$(Build.SourcesDirectory)`.
+- **Sources**: The build pipeline performs an undo of any changes and scorches the current workspace under `$(Build.SourcesDirectory)`.
 
-* **Sources and output directory**: Same operation as **Sources** option above, plus: Deletes and recreates `$(Build.BinariesDirectory)`.
+- **Sources and output directory**: Same operation as **Sources** option above, plus: Deletes and recreates `$(Build.BinariesDirectory)`.
 
-* **Sources directory**: Deletes and recreates `$(Build.SourcesDirectory)`.
+- **Sources directory**: Deletes and recreates `$(Build.SourcesDirectory)`.
 
-* **All build directories**: Deletes and recreates `$(Agent.BuildDirectory)`.
+- **All build directories**: Deletes and recreates `$(Agent.BuildDirectory)`.
 
 ::: moniker-end
 
@@ -117,10 +117,10 @@ Select the version control paths you want to include and exclude. In most cases,
 
 > **Tips:**
 >
-> * Paths are always specified relative to the root of the workspace.
-> * If you don't set path filters, then the root folder of the workspace is implicitly included by default.
-> * If you exclude a path, you cannot also include it unless you qualify it to a deeper folder. For example if you exclude _/tools_ then you could include _/tools/trigger-runs-on-these_
-> * The order of path filters doesn't matter.
+> - Paths are always specified relative to the root of the workspace.
+> - If you don't set path filters, then the root folder of the workspace is implicitly included by default.
+> - If you exclude a path, you cannot also include it unless you qualify it to a deeper folder. For example if you exclude _/tools_ then you could include _/tools/trigger-runs-on-these_
+> - The order of path filters doesn't matter.
 
 <h2 id="gated">Gated check-in</h2>
 
@@ -148,8 +148,8 @@ However, if you **do** want CI builds to run after a gated check-in, select the 
 
 ### A few other things to know
 
-* Make sure the folders you include in your trigger are also included in your workspace mappings.
-* You can run gated builds on either a [Microsoft-hosted agent](../agents/hosted.md) or a [self-hosted agent](../agents/agents.md).
+- Make sure the folders you include in your trigger are also included in your workspace mappings.
+- You can run gated builds on either a [Microsoft-hosted agent](../agents/hosted.md) or a [self-hosted agent](../agents/agents.md).
 
 ## Q & A
 

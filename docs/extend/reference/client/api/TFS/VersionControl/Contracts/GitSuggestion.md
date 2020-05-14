@@ -15,6 +15,6 @@ Module path: `TFS/VersionControl/Contracts`
 
 ### Members
 
-* `properties`: {[key: string]: any}.
+- `properties`: {[key: string]: any}.
 
-* `type`: string.
+- `type`: string.

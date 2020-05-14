@@ -19,8 +19,8 @@ By default, members of the project Contributors group have permissions to contri
 
 ## Prerequisites
 
-* You must have a project. If you don't have a project yet, create one in [Azure DevOps](../../user-guide/sign-up-invite-teammates.md) or set one up in an [on-premises TFS](../projects/create-project.md).
-* You must be a member of the [Project Administrators Group](set-project-collection-level-permissions.md) or have your **Manage permissions** set to **Allow** for Git repositories or the TFVC repository.
+- You must have a project. If you don't have a project yet, create one in [Azure DevOps](../../user-guide/sign-up-invite-teammates.md) or set one up in an [on-premises TFS](../projects/create-project.md).
+- You must be a member of the [Project Administrators Group](set-project-collection-level-permissions.md) or have your **Manage permissions** set to **Allow** for Git repositories or the TFVC repository.
 
 ## Default repository permissions
 
@@ -212,7 +212,7 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 ## Related articles
 
-* [Default Git permissions](default-git-permissions.md)
-* [Default TFVC permissions](default-tfvc-permissions.md)
-* [Default permissions and access](permissions-access.md)
-* [Permissions and groups reference](permissions.md)
+- [Default Git permissions](default-git-permissions.md)
+- [Default TFVC permissions](default-tfvc-permissions.md)
+- [Default permissions and access](permissions-access.md)
+- [Permissions and groups reference](permissions.md)

@@ -25,8 +25,8 @@ For organizations connected to Azure Active Directory (Azure AD), if your organi
 
 ## Prerequisites
 
-* You must be an [Azure DevOps Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#azure-devops-administrator) in Azure AD.
-* The Azure DevOps Administrator can only claim ownership of organizations where the current owner and all members of the Project Collection Administrators group are inactive in the backing Azure AD.
+- You must be an [Azure DevOps Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#azure-devops-administrator) in Azure AD.
+- The Azure DevOps Administrator can only claim ownership of organizations where the current owner and all members of the Project Collection Administrators group are inactive in the backing Azure AD.
 
 ### Find your Azure DevOps Administrator
 
@@ -84,7 +84,7 @@ Complete the following steps when your Azure DevOps Administrator in Azure AD is
 
 ## Related articles
 
-* [Resolve orphaned organization](resolve-orphaned-organization.md)
-* [Change organization owner](change-organization-ownership.md)
-* [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
-* [Delete your organization](delete-your-organization.md)
+- [Resolve orphaned organization](resolve-orphaned-organization.md)
+- [Change organization owner](change-organization-ownership.md)
+- [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
+- [Delete your organization](delete-your-organization.md)

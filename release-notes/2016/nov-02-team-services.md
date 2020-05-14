@@ -40,10 +40,10 @@ Starting with the 2.108 agent, you can optionally disable the automatic source s
 
 There have been a number of enhancements to the [Docker extension in the marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.docker):
 
-* Docker Compose run action
-* Restart policy for Docker run
-* Ensuring the registry host is specified on logout
-* Bug fixes
+- Docker Compose run action
+- Restart policy for Docker run
+- Ensuring the registry host is specified on logout
+- Bug fixes
 
 ## .NET Core build task
 

@@ -23,10 +23,10 @@ In this article you learn how to do the following tasks:
 
 > [!div class="checklist"]
 >
-> * Recommended method for granting and restricting permissions
-> * Delegate tasks by assigning select permissions to specific roles
-> * Restrict access to view or modify objects
-> * Restrict modification of work items based on a user or group
+> - Recommended method for granting and restricting permissions
+> - Delegate tasks by assigning select permissions to specific roles
+> - Restrict access to view or modify objects
+> - Restrict modification of work items based on a user or group
 
 > [!TIP]  
 > Because you set many permissions at an object-level, such as repositories and area paths, how you structure your project determines the areas you can open up or close down.
@@ -43,11 +43,11 @@ If you manage a small number of users, then you may find changing individual per
 
 As an administrator or account owner, it's a good idea to delegate administrative tasks to those team members who lead or manage an area. Several of the main built-in roles that come with default permissions and role assignments are:
 
-* Readers
-* Contributors
-* Team Administrator (role)
-* Project Administrators
-* Project Collection Administrators
+- Readers
+- Contributors
+- Team Administrator (role)
+- Project Administrators
+- Project Collection Administrators
 
 For a summary of permissions for the above roles, see [Default permissions and access](permissions-access.md), or for the Project Collection Administrators, see [Add administrators](set-project-collection-level-permissions.md)
 
@@ -181,15 +181,15 @@ You can restrict modification of work items by adding a custom rule to the work 
 
 For the [On-premises XML process model](../../reference/on-premises-xml-process-model.md), you can customize work item types to support these restriction requests:
 
-* Restrict who can create or modify a work item
-* Restrict who can create specific work item types, such as Epics or Features
+- Restrict who can create or modify a work item
+- Restrict who can create specific work item types, such as Epics or Features
 
 For example, you can restrict modification of work items by adding a rule to the work item type, usually within the **WORKFLOW** section. To learn more, see [Add a rule to a work item type, Apply or ignore rules based on user or group](../../reference/xml/apply-rule-work-item-field.md#apply-ignore).
 
 You restrict access to work tracking objects in one of two ways:
 
-* [Set a condition field rule](../../reference/xml/apply-rule-work-item-field.md), [a condition-based field rule](../../reference/xml/assign-conditional-based-values-and-rules.md) or a combination of the two that applies to a group. You can restrict changes from being made to a field by specifying a qualifying rule and making it apply for a specific group. Conditional rules can include **CANNOTLOSEVALUE**, **EMPTY**, **FROZEN**, **NOTSAMEAS**, **READONLY**, and **REQUIRED** elements.
-* By [adding WITs to the Hidden Categories group](../../reference/xml/use-categories-to-group-work-item-types.md), you can prevent the majority of project contributors from creating them. You [can create a hyperlink to a template](../../boards/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them.
+- [Set a condition field rule](../../reference/xml/apply-rule-work-item-field.md), [a condition-based field rule](../../reference/xml/assign-conditional-based-values-and-rules.md) or a combination of the two that applies to a group. You can restrict changes from being made to a field by specifying a qualifying rule and making it apply for a specific group. Conditional rules can include **CANNOTLOSEVALUE**, **EMPTY**, **FROZEN**, **NOTSAMEAS**, **READONLY**, and **REQUIRED** elements.
+- By [adding WITs to the Hidden Categories group](../../reference/xml/use-categories-to-group-work-item-types.md), you can prevent the majority of project contributors from creating them. You [can create a hyperlink to a template](../../boards/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them.
 
 ::: moniker-end
 
@@ -203,11 +203,11 @@ You restrict access to work tracking objects in one of two ways:
 
 ## Related articles
 
-* [Default permissions and access](permissions-access.md)
-* [Permission lookup guide](permissions-lookup-guide.md)
-* [About permissions and groups](about-permissions.md)
-* [Permissions and groups reference](permissions.md)
-* [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
+- [Default permissions and access](permissions-access.md)
+- [Permission lookup guide](permissions-lookup-guide.md)
+- [About permissions and groups](about-permissions.md)
+- [Permissions and groups reference](permissions.md)
+- [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
 
 <!---
 This topic should provide useful steps to think about what they want to shut down, addressing the most common areas that admins have expressed that they want to shut down or open up. Also - consider how they might structure their project - repos, area paths, etc. and how that influences permissions
@@ -215,7 +215,7 @@ This topic should provide useful steps to think about what they want to shut dow
 Maybe consider this in a 2 or 3 step process:
 - what areas to open up/close down
 - Role and delegation
-- Impact on project structure (what tends to get out of hand over time - sprawling set of teams, queries, iteration paths, area paths, etc.  
+- Impact on project structure (what tends to get out of hand over time - sprawling set of teams, queries, iteration paths, area paths, etc.
 
 
 STEPS TO CONSIDER

@@ -48,6 +48,6 @@ When you [run a test](../run-manual-tests.md), you can either mark the whole sha
 
 ## See also
 
-* [FAQs for manual testing](../reference-qa.md#sharesteps)
+- [FAQs for manual testing](../reference-qa.md#sharesteps)
 
 [!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)]

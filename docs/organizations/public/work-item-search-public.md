@@ -67,15 +67,15 @@ In this quickstart, you learn how to perform a work item search to quickly find 
 1.  Fine tune your search by specifying the fields to search. Enter `a:` and a user name
     to search for all items assigned to that user.
 
-        	> [!div class="mx-imgBorder"]  
+        	> [!div class="mx-imgBorder"]
         	> ![Search from the title bar](media/search/search-work-vert.png)
 
     The quick filters you can use are:
 
-    * `a:` for **Assigned to:**
-    * `c:` for **Created by:**
-    * `s:` for **State**
-    * `t:` for **Work item type**<p />
+    - `a:` for **Assigned to:**
+    - `c:` for **Created by:**
+    - `s:` for **State**
+    - `t:` for **Work item type**<p />
 
 2.  Start to enter the name of a field in your work items; for example, enter `ta`.
 

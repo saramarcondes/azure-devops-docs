@@ -76,12 +76,12 @@ The new editor includes a few other enhancements, such as giving you quicker acc
 
 For Git repos, we’ve divided the **Administer** permission into several more granular permissions. This gives you more flexibility to decide who can perform what actions. For instance, you may allow anyone in your account to create new repositories, but disallow them from deleting repos or adding new users to a repo. The new permissions are:
 
-* Administer: add/remove users and permissions
-* Create: create a new repo
-* Delete: delete a repo
-* Rename: rename a repo
-* Edit policies: configure branch policies
-* Remove others’ locks: remove branch locks set by another user
+- Administer: add/remove users and permissions
+- Create: create a new repo
+- Delete: delete a repo
+- Rename: rename a repo
+- Edit policies: configure branch policies
+- Remove others’ locks: remove branch locks set by another user
 
 These permissions can be applied to all repositories in a project or to individual repositories.
 
@@ -111,9 +111,9 @@ Markdown is a powerful tool when adding comments to pull requests, but it can be
 
 You can now view all associated pull requests for a commit on the **commit details** page. From the image below, you can see that:
 
-* In the associated pull request drop-down, there are two pull requests associated with this commit.
-* Pull request #2 brought this commit to master.
-* The same commit was brought into branch 4 via pull request #1.
+- In the associated pull request drop-down, there are two pull requests associated with this commit.
+- Pull request #2 brought this commit to master.
+- The same commit was brought into branch 4 via pull request #1.
 
 ![PR in commits](media/01_25_08.png)
 
@@ -169,9 +169,9 @@ Security for variable groups is now governed through a set of roles such as **Cr
 
 By default, the below roles are assigned.
 
-* Creator role to Contributors
-* Administrator role to Project Collection Administrators, Project Administrators, Build Administrators, and Release Administrators
-* Reader role to Valid Project Users
+- Creator role to Contributors
+- Administrator role to Project Collection Administrators, Project Administrators, Build Administrators, and Release Administrators
+- Reader role to Valid Project Users
 
 The defaults can be overridden for all variable groups or for a specific one.
 

@@ -651,6 +651,6 @@ You customize work item types using the On-premises XML process model. For addit
 
 ## Related articles
 
-* [Query quick reference](../queries/query-index-quick-ref.md)
-* [Work item field index](../work-items/guidance/work-item-field.md)
-* [Best tools for adding, updating, and linking work items](best-tool-add-update-link-work-items.md)
+- [Query quick reference](../queries/query-index-quick-ref.md)
+- [Work item field index](../work-items/guidance/work-item-field.md)
+- [Best tools for adding, updating, and linking work items](best-tool-add-update-link-work-items.md)

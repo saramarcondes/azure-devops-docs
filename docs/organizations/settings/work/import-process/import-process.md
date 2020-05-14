@@ -36,9 +36,9 @@ zip the result and re-import the newly updated process. Your changes are applied
 
 Import process supports the following scenarios:
 
-* [Import an existing process from an on-premises Azure DevOps Server](#import-from-TFS)
-* [Import a new process created from an existing exported process](#import-process)
-* [Import an update to an existing process, and have all projects using that process be updated](#update-process)
+- [Import an existing process from an on-premises Azure DevOps Server](#import-from-TFS)
+- [Import a new process created from an existing exported process](#import-process)
+- [Import an update to an existing process, and have all projects using that process be updated](#update-process)
 
 <a id="import-from-TFS"> </a>
 
@@ -158,7 +158,7 @@ The system exports a zip file containing an XML representation of the process. T
 
 ## Related articles
 
-* [Customize a Hosted XML process](customize-process.md)
-* [Change a project from Hosted XML to an inherited process](../change-process-from-hosted-to-inherited.md)
-* [Clone a Hosted XML process to an Inheritance process](../upgrade-hosted-to-inherited.md)
-* [Supported operations when moving from Hosted XML to an inherited process](../upgrade-support-hosted-to-inherited.md)
+- [Customize a Hosted XML process](customize-process.md)
+- [Change a project from Hosted XML to an inherited process](../change-process-from-hosted-to-inherited.md)
+- [Clone a Hosted XML process to an Inheritance process](../upgrade-hosted-to-inherited.md)
+- [Supported operations when moving from Hosted XML to an inherited process](../upgrade-support-hosted-to-inherited.md)

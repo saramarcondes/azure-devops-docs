@@ -36,9 +36,9 @@ Doing single operations is slow and expensive. This is the leading cause for per
 
 Many revisions on a single work items creates bloat and causes performance problems. We recommend the following:
 
-* Reduce your updates by batching your field changes. Don't update just one field at a time.
-* If you have changes to multiple work items, batch those changes into a single post.
-* Keep the number of revisions to a minimum to avoid revision limits
+- Reduce your updates by batching your field changes. Don't update just one field at a time.
+- If you have changes to multiple work items, batch those changes into a single post.
+- Keep the number of revisions to a minimum to avoid revision limits
 
 ## Optimize queries
 
@@ -46,25 +46,25 @@ Optimize your queries to return a modest number of results. Complex conditions a
 
 #### Query Performance Tips
 
-* Place a date or range limiting clause near the top whenever possible
-* Reduce the number of clauses that use the 'Ever' operator
-* Reduce the number of clauses that use the 'Contains' operator, except for Tags
-  * Use the 'Contains Words' operator when available
-  * 'Contains' operator on long text fields is particularly expensive
-* When possible, avoid the '<>' and not operators
-* Avoid using the 'In Group' operator on large groups
-* Minimize the number of Ors and ensure you still have top level scoping before the Ors
-* Avoid using an OR clause between an 'In Group' operator and Area or Iteration Paths.
-* When possible, reduce the number of overall clauses to achieve your objective
-* When possible, avoid sorting on anything other than core fields such as ID
-* If you want to sort on a custom field it performs best if you are using it in your filters
-* If querying, specify a Project if possible. Otherwise the query gets scoped to the entire collection and could take dramatically longer than it needs to. Uncheck "Query across projects on the top right corner" of the query editor.
+- Place a date or range limiting clause near the top whenever possible
+- Reduce the number of clauses that use the 'Ever' operator
+- Reduce the number of clauses that use the 'Contains' operator, except for Tags
+  - Use the 'Contains Words' operator when available
+  - 'Contains' operator on long text fields is particularly expensive
+- When possible, avoid the '<>' and not operators
+- Avoid using the 'In Group' operator on large groups
+- Minimize the number of Ors and ensure you still have top level scoping before the Ors
+- Avoid using an OR clause between an 'In Group' operator and Area or Iteration Paths.
+- When possible, reduce the number of overall clauses to achieve your objective
+- When possible, avoid sorting on anything other than core fields such as ID
+- If you want to sort on a custom field it performs best if you are using it in your filters
+- If querying, specify a Project if possible. Otherwise the query gets scoped to the entire collection and could take dramatically longer than it needs to. Uncheck "Query across projects on the top right corner" of the query editor.
 
 #### Query Across projects
 
-* If the query does require search across projects, specify which Project it is looking for.
-* When possible, use "Tags" instead of "Keywords" (unless searching for partial text of a string is needed)
-* Don't forget about Azure DevOps Services dashboard charts, as behind each charts are queries (and trending view impact performance the worst).
+- If the query does require search across projects, specify which Project it is looking for.
+- When possible, use "Tags" instead of "Keywords" (unless searching for partial text of a string is needed)
+- Don't forget about Azure DevOps Services dashboard charts, as behind each charts are queries (and trending view impact performance the worst).
 
 ## Handle failures gracefully
 

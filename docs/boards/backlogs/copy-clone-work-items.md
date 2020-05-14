@@ -36,10 +36,10 @@ Use this article to learn how to:
 
 > [!div class="checklist"]
 >
-> * Copy or clone a work item, essentially making a duplicate of a work item
-> * Change the work item type, for example from a bug to a user story
-> * Copy a list of work items to email or share with others
-> * Copy the URL of a work item
+> - Copy or clone a work item, essentially making a duplicate of a work item
+> - Change the work item type, for example from a bug to a user story
+> - Copy a list of work items to email or share with others
+> - Copy the URL of a work item
 
 [!INCLUDE [temp](../includes/image-differences.md)]
 
@@ -202,6 +202,6 @@ In Visual Studio, right-click the work item tab to copy the URL. The URL opens t
 
 ## Related topics
 
-* [Bulk modify work items](bulk-modify-work-items.md)
-* [Move, change, or delete work items](remove-delete-work-items.md)
-* [Pre-populate fields using work item templates](work-item-template.md)
+- [Bulk modify work items](bulk-modify-work-items.md)
+- [Move, change, or delete work items](remove-delete-work-items.md)
+- [Pre-populate fields using work item templates](work-item-template.md)

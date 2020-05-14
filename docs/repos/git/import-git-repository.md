@@ -24,15 +24,15 @@ This guide shows you how to import an existing Git repo from GitHub, Bitbucket, 
 
 There are several workarounds to this issue:
 
-* You can import a GitHub repo into TFS using the steps in [Manually import a repo](#manually-import-a-repo).
-* You can set a machine-wide .NET registry key on your Application Tier servers to enable them to use all available TLS protocol versions. After setting these registry keys, you will need to recycle the TFS application pools (or restart the servers) for the settings to be activated. Open an elevated command prompt and run the following commands to set the registry keys.
+- You can import a GitHub repo into TFS using the steps in [Manually import a repo](#manually-import-a-repo).
+- You can set a machine-wide .NET registry key on your Application Tier servers to enable them to use all available TLS protocol versions. After setting these registry keys, you will need to recycle the TFS application pools (or restart the servers) for the settings to be activated. Open an elevated command prompt and run the following commands to set the registry keys.
 
   ```
    reg add HKLM\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 /v SystemDefaultTlsVersions /t REG_DWORD /d 1 /f /reg:64
    reg add HKLM\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 /v SystemDefaultTlsVersions /t REG_DWORD /d 1 /f /reg:32
   ```
 
-* On your Application Tier servers, you can modify the web.config file to change the targetFramework from `<httpRuntime targetFramework="4.5"` to `<httpRuntime targetFramework="4.6"`.
+- On your Application Tier servers, you can modify the web.config file to change the targetFramework from `<httpRuntime targetFramework="4.5"` to `<httpRuntime targetFramework="4.6"`.
 
 This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 and higher](/visualstudio/releasenotes/tfs2018-update2).
 
@@ -40,9 +40,9 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 
 ## Prerequisites
 
-* An organization in Azure DevOps. If you don't have one, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
-* To use the **Import repository** feature in TFS, you must have TFS 2017 Update 1 or higher.
-* To import a repository using TFS 2017 RTM or earlier, see [Manually import a repo](#manually-import-a-repo).
+- An organization in Azure DevOps. If you don't have one, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
+- To use the **Import repository** feature in TFS, you must have TFS 2017 Update 1 or higher.
+- To import a repository using TFS 2017 RTM or earlier, see [Manually import a repo](#manually-import-a-repo).
 
 ::: moniker range=">= tfs-2017"
 
@@ -134,12 +134,12 @@ The import repo feature was introduced in TFS 2017 Update 1. If you are using TF
 
 Although most of the time the import is successful, the following conditions can cause problems.
 
-* [What if my Source repository is behind two-factor authentication?](#what-if-my-source-repository-is-behind-two-factor-authentication)
-* [What if my source repository does not support multi_ack?](#multiack)
-* [Can I import from previous versions of Team Foundation Server?](#can-i-import-from-previous-versions-of-team-foundation-server)
-* [Can I use MSA based credentials?](#can-i-use-msa-based-credentials)
-* [Can I import from TFVC?](#can-i-import-from-tfvc)
-* [What if my source repository contains Git LFS objects?](#what-if-my-source-repository-contains-git-lfs-objects)
+- [What if my Source repository is behind two-factor authentication?](#what-if-my-source-repository-is-behind-two-factor-authentication)
+- [What if my source repository does not support multi_ack?](#multiack)
+- [Can I import from previous versions of Team Foundation Server?](#can-i-import-from-previous-versions-of-team-foundation-server)
+- [Can I use MSA based credentials?](#can-i-use-msa-based-credentials)
+- [Can I import from TFVC?](#can-i-import-from-tfvc)
+- [What if my source repository contains Git LFS objects?](#what-if-my-source-repository-contains-git-lfs-objects)
 
 ### What if my source repository is behind two-factor authentication?
 
@@ -186,16 +186,16 @@ Git import will not import Git LFS objects.
 
 LFS objects can be moved using the following steps:
 
-* Import the repository using import repository feature into Azure DevOps.
+- Import the repository using import repository feature into Azure DevOps.
   This will copy over all the Git objects from source to Azure DevOps (this will also import the LFS pointers which are Git objects but not the LFS files)
 
 To move over the LFS files (you will need both Git.exe and LFS client in the same box and access to both source repository and destination repository)
 
-* Clone the imported repository from Azure DevOps to local system, clone will work but it will fail while performing checkout of LFS files
-* Add the source repository as remote (say ‘source’)
-* Perform `git lfs fetch source --all` (this will bring over all LFS files from source to your local repository)
-* Assuming the destination VSTS repository is your ‘target’ remote
-* Perform `git lfs push target --all`
+- Clone the imported repository from Azure DevOps to local system, clone will work but it will fail while performing checkout of LFS files
+- Add the source repository as remote (say ‘source’)
+- Perform `git lfs fetch source --all` (this will bring over all LFS files from source to your local repository)
+- Assuming the destination VSTS repository is your ‘target’ remote
+- Perform `git lfs push target --all`
 
 ::: moniker-end
 

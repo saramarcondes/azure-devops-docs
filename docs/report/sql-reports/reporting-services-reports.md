@@ -56,10 +56,10 @@ To learn more about the future of reporting for TFS, read [Reporting roadmap](..
 
 ## Prerequisites
 
-* Your Azure DevOps on-premises deployment must be provisioned with SQL Server Reporting Services. These reports are not available if your Team Explorer home page does not contain a link to **Reports**.
-* Your team project must be provisioned with reports.
-* To provision your deployment with Reporting Services or add reports to an existing team project, see [Add reports to a team project](../admin/add-reports-to-a-team-project.md).
-* To view these reports, you must be assigned or belong to a group that has been assigned the **Browser** or **Team Foundation Content Manager** role in Reporting Services. For more information, see [Grant permissions to view or create reports](../admin/grant-permissions-to-reports.md).
+- Your Azure DevOps on-premises deployment must be provisioned with SQL Server Reporting Services. These reports are not available if your Team Explorer home page does not contain a link to **Reports**.
+- Your team project must be provisioned with reports.
+- To provision your deployment with Reporting Services or add reports to an existing team project, see [Add reports to a team project](../admin/add-reports-to-a-team-project.md).
+- To view these reports, you must be assigned or belong to a group that has been assigned the **Browser** or **Team Foundation Content Manager** role in Reporting Services. For more information, see [Grant permissions to view or create reports](../admin/grant-permissions-to-reports.md).
 
 ## Monitor code quality
 
@@ -196,8 +196,8 @@ Here's a view of reports for a Scrum project in Report Manager.
 >
 > The red X icon might appear on the **Reports** node if both of the following conditions are true:
 >
-> * If Team Explorer is running on the same computer as SQL Server Reporting Services
-> * You are not logged on as the administrator, or enhanced security is enabled for Internet Explorer.
+> - If Team Explorer is running on the same computer as SQL Server Reporting Services
+> - You are not logged on as the administrator, or enhanced security is enabled for Internet Explorer.
 >
 > To correct this issue, log onto your computer as an administrator, or open Internet Explorer, open Internet Options, choose the **Security** tab, and clear the **Enabled Protected Mode** check box.
 
@@ -221,13 +221,13 @@ The following table describes how you can refresh the report.
 
 You can also perform the following tasks when you view a report in Reporting Services:
 
-* Zoom in or out of the report.
-* Search for text that the report contains.
-* Open a related report.
-* Export the report to another format such as XML, CSV, PDF, MHTML, Excel, TIFF, or Word.
-* Refresh the report.
-* Print the report.
-* Create a subscription for the report.
+- Zoom in or out of the report.
+- Search for text that the report contains.
+- Open a related report.
+- Export the report to another format such as XML, CSV, PDF, MHTML, Excel, TIFF, or Word.
+- Refresh the report.
+- Print the report.
+- Create a subscription for the report.
 
 ## Q & A
 
@@ -261,6 +261,6 @@ You can also perform the following tasks when you view a report in Reporting Ser
 
 ## Resources
 
-* [Server Administration](/azure/devops/server/index)
-* [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/22/index.html)
-* [(Archived) TFS - Reporting & Warehouse forum](https://social.msdn.microsoft.com/Forums/en-ushome?forum=tfsreporting)
+- [Server Administration](/azure/devops/server/index)
+- [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/22/index.html)
+- [(Archived) TFS - Reporting & Warehouse forum](https://social.msdn.microsoft.com/Forums/en-ushome?forum=tfsreporting)

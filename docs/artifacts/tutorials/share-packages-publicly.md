@@ -18,27 +18,24 @@ To learn more about feeds and their scopes, check out our [feeds documentation](
 
 ## Prerequisites
 
-* A public project. If you don't have one, [create one now](../../organizations/public/create-public-project.md)
+- A public project. If you don't have one, [create one now](../../organizations/public/create-public-project.md)
 
 ## Create a feed
 
 1.  Go to **Azure Artifacts** in a public project:
 
-    > [!div class="mx-imgBorder"]
-    > ![Go to Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
+    > [!div class="mx-imgBorder"] > ![Go to Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
 
 1.  Select **+ New public feed**:
 
-    > [!div class="mx-imgBorder"]
-    > ![New feed button](../media/new-public-feed-button-azure-devops-newnav.png)
+    > [!div class="mx-imgBorder"] > ![New feed button](../media/new-public-feed-button-azure-devops-newnav.png)
 
 1.  In the dialog box:
 
-    * Give the feed a name.
-    * Select **Create feed**.
+    - Give the feed a name.
+    - Select **Create feed**.
 
-    > [!div class="mx-imgBorder"]
-    > ![New feed dialog box](../media/new-public-feed-dialog-azure-devops-newnav.png)
+    > [!div class="mx-imgBorder"] > ![New feed dialog box](../media/new-public-feed-dialog-azure-devops-newnav.png)
 
 ## Publish your packages
 
@@ -53,19 +50,19 @@ If you're publishing using NuGet or Dotnet _and_ you're using a credential provi
 
 The following articles are quick guides that show you how to set up authentication and publish packages to your public feed from the command line. You can skip the "Create a feed" step in the following guides.
 
-* [Quickstart - Push and consume NuGet packages](../get-started-nuget.md)
-* [Quickstart - Push and consume npm packages](../get-started-npm.md)
-* [Quickstart - Push and consume Maven packages](../get-started-maven.md)
-* [Quickstart - Push and consume Python packages](../quickstarts/python-packages.md)
+- [Quickstart - Push and consume NuGet packages](../get-started-nuget.md)
+- [Quickstart - Push and consume npm packages](../get-started-npm.md)
+- [Quickstart - Push and consume Maven packages](../get-started-maven.md)
+- [Quickstart - Push and consume Python packages](../quickstarts/python-packages.md)
 
 ### From Azure Pipelines
 
 The following articles cover publishing packages to feeds from builds within Azure Pipelines:
 
-* [Publish NuGet packages from Azure Pipelines](../../pipelines/artifacts/nuget.md)
-* [Publish npm packages from Azure Pipelines](../../pipelines/artifacts/npm.md)
-* [Setting up Maven and Azure Pipelines](../../pipelines/artifacts/maven.md)
-* [Publish Python packages from Azure Pipelines](../../pipelines/artifacts/pypi.md)
+- [Publish NuGet packages from Azure Pipelines](../../pipelines/artifacts/nuget.md)
+- [Publish npm packages from Azure Pipelines](../../pipelines/artifacts/npm.md)
+- [Setting up Maven and Azure Pipelines](../../pipelines/artifacts/maven.md)
+- [Publish Python packages from Azure Pipelines](../../pipelines/artifacts/pypi.md)
 
 ## Share your packages
 
@@ -78,8 +75,7 @@ Sample feed URL: `https://dev.azure.com/<org_name>/<project_name>/_packaging?_a=
 
 As long as your project is public, anonymous and guest users will be greeted by the feed UX where they can see the available packages and learn how to consume them. Anonymous users will not have access to all features. E.g. Creating new feeds or accessing the recycle bin.
 
-> [!div class="mx-imgBorder"]
-> ![Feed UX from an anonymous or guest user with certain commands greyed out, except Connect to Feed](../media/anonymous-public-feeds.png)
+> [!div class="mx-imgBorder"] > ![Feed UX from an anonymous or guest user with certain commands greyed out, except Connect to Feed](../media/anonymous-public-feeds.png)
 
 You can also [share individual packages with badges](../package-badges.md) which look like the example below.
 

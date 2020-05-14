@@ -21,22 +21,22 @@ In this quickstart, learn how to do the following tasks:
 
 > [!div class="checklist"]
 >
-> * Open Wiki
-> * Publish a Git repo to a wiki
-> * Edit pages of a published wiki
-> * Add pages to a published wiki
-> * Change the page sequence of a published wiki
-> * Make a page the wiki home page
+> - Open Wiki
+> - Publish a Git repo to a wiki
+> - Edit pages of a published wiki
+> - Add pages to a published wiki
+> - Change the page sequence of a published wiki
+> - Make a page the wiki home page
 
 Content that you already maintain in a Git repository can be published to a wiki. For example, this could be content written to support a software development kit (SDK), product documentation, or README file. You can publish multiple wikis within a single team project.
 
 By publishing your Markdown files to a wiki, you gain the following benefits:
 
-* Organize the content into a hierarchical page structure
-* Table of contents that readers can browse and filter
-* Publish new versions of the content
-* Manage content in the same way you manage your code base
-* Readers can search the wiki easily using the Wiki search feature
+- Organize the content into a hierarchical page structure
+- Table of contents that readers can browse and filter
+- Publish new versions of the content
+- Manage content in the same way you manage your code base
+- Readers can search the wiki easily using the Wiki search feature
 
 For for information about managing the different wiki types, see [Differences between provisioned wiki and publish code as wiki](provisioned-vs-published-wiki.md).
 
@@ -47,11 +47,11 @@ For for information about managing the different wiki types, see [Differences be
 
 ## Prerequisites
 
-* You must have a team project. If you don't have a team project yet, [create one](../../organizations/projects/create-project.md).
-* You must have enabled Azure Repos service for your project.
-* You must have a Git repository defined in your team project. Ideally, this repository contains at least one Markdown file, which you want to publish to your wiki. If you need to add a Git repository, see [Create a new Git repo in your project](../../repos/git/create-new-repo.md).
-* You must have the permission **Contribute** to publish code as wiki. By default, this permission is set for members of the [Project Administrators group](../../organizations/security/set-git-tfvc-repository-permissions.md).
-* Anyone who has permissions to contribute to the Git repository can add or edit wiki pages.
+- You must have a team project. If you don't have a team project yet, [create one](../../organizations/projects/create-project.md).
+- You must have enabled Azure Repos service for your project.
+- You must have a Git repository defined in your team project. Ideally, this repository contains at least one Markdown file, which you want to publish to your wiki. If you need to add a Git repository, see [Create a new Git repo in your project](../../repos/git/create-new-repo.md).
+- You must have the permission **Contribute** to publish code as wiki. By default, this permission is set for members of the [Project Administrators group](../../organizations/security/set-git-tfvc-repository-permissions.md).
+- Anyone who has permissions to contribute to the Git repository can add or edit wiki pages.
 
 ## Open Wiki
 
@@ -98,13 +98,13 @@ Choose this option when you maintain Markdown files in an existing Git repo and 
 
         	For example, the following image shows the published repo for the files that are contained in the azure-docs-sdk-node repository that you selected in Step 2.
 
-        	> [!div class="mx-imgBorder"]  
+        	> [!div class="mx-imgBorder"]
         	> ![Published wiki from existing repo Markdown files](media/wiki/published-wiki.png)
 
         	The wiki Table of Contents (TOC) contains the following files:
 
-    * Each Markdown file (file type=**.md**) defined in the repo/branch/folder is listed in alphabetical order, the TOC title is derived from the Markdown file name
-    * A parent page for each subfolder defined within the published folder, even if it doesn't contain any Markdown files.
+    - Each Markdown file (file type=**.md**) defined in the repo/branch/folder is listed in alphabetical order, the TOC title is derived from the Markdown file name
+    - A parent page for each subfolder defined within the published folder, even if it doesn't contain any Markdown files.
 
       And here is an image of the contents of the azure-docs-sdk-node repository.
 
@@ -136,13 +136,13 @@ az devops wiki create [--mapped-path]
 
 #### Parameters
 
-* **mapped-path**: (Required for the **codewiki** type). Mapped path of the new wiki. For example, you can specify "/" to publish from the root of the repository.
-* **name**: Name of the new wiki.
-* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-* **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
-* **repository**: (Required for the **codewiki** type). Name or ID of the repository to publish the wiki from.
-* **type**: Type of wiki to create. The accepted values are **projectwiki** (default) and **codewiki**.
-* **version**: (Required for the **codewiki** type). Repository branch name to publish the code wiki from.
+- **mapped-path**: (Required for the **codewiki** type). Mapped path of the new wiki. For example, you can specify "/" to publish from the root of the repository.
+- **name**: Name of the new wiki.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **repository**: (Required for the **codewiki** type). Name or ID of the repository to publish the wiki from.
+- **type**: Type of wiki to create. The accepted values are **projectwiki** (default) and **codewiki**.
+- **version**: (Required for the **codewiki** type). Repository branch name to publish the code wiki from.
 
 #### Example
 
@@ -212,9 +212,9 @@ Any Markdown files that you don't want to appear in the wiki, you can delete fro
 
 You can add pages to your published wiki as follows:
 
-* Add a file to a root folder or subfolder from the web portal
-* Upload files to a root folder or subfolder
-* Add or update an .order file to specify the page sequence in the wiki TOC.
+- Add a file to a root folder or subfolder from the web portal
+- Upload files to a root folder or subfolder
+- Add or update an .order file to specify the page sequence in the wiki TOC.
 
 Each update you make requires you commit your changes to the repository. You can then refresh your **Wiki** for your published repo to review the changes.
 

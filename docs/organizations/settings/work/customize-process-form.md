@@ -82,7 +82,6 @@ Here we move the Customer ticket field to the Details page and the Customer focu
 
 <img src="media/process/cpform-move-field-to-custom-group.png" alt="Edit field dialog, Move field to custom group" style="border: 2px solid #C3C3C3;" />
 
-
 <a id="show-hide-remove-field"></a>
 
 ## Remove a field from a form
@@ -152,8 +151,8 @@ Choose the ![Delete icon](../../../media/icons/delete_icon.png) Delete option fr
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
-* [Add or modify a custom work item type](customize-process-wit.md)
-* [Add and manage fields](customize-process-field.md)
-* [Add extensions and custom controls to a work item type](custom-controls-process.md)
-* [Customize a project using an inherited process](customize-process.md)
-* [Customize cards on boards](../../../boards/boards/customize-cards.md)
+- [Add or modify a custom work item type](customize-process-wit.md)
+- [Add and manage fields](customize-process-field.md)
+- [Add extensions and custom controls to a work item type](custom-controls-process.md)
+- [Customize a project using an inherited process](customize-process.md)
+- [Customize cards on boards](../../../boards/boards/customize-cards.md)

@@ -18,8 +18,8 @@ In this example, we add an action to the query context menu in the work item que
 
 ## Prerequisites for this article
 
-* You need to create a web app for your action, which can be found in the [hub example](./add-hub.md).
-* If you haven't, take a look at the [write your first extension tutorial](../get-started/node.md) to learn about the basics.
+- You need to create a web app for your action, which can be found in the [hub example](./add-hub.md).
+- If you haven't, take a look at the [write your first extension tutorial](../get-started/node.md) to learn about the basics.
 
 ## Update extension manifest file
 
@@ -115,5 +115,5 @@ The script below registers the handler object to handle the action, place it in 
 Now that you've written your extension, the next steps are to Package, Publish, and Install your extension. You can also check out the
 documentation for Testing and Debugging your extension.
 
-* [Package, publish, and install extensions](../publish/overview.md)
-* [Testing and debugging extensions](../test/debug-in-browser.md)
+- [Package, publish, and install extensions](../publish/overview.md)
+- [Testing and debugging extensions](../test/debug-in-browser.md)

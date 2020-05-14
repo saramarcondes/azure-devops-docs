@@ -59,11 +59,11 @@ The following table describes the information that appears for each quality indi
 
 You can filter the report in the following ways:
 
-* Change the range of the X-axis by specifying the number of builds and specifying the end date for the report. The date of the first build shown will depend on the frequency of builds.
+- Change the range of the X-axis by specifying the number of builds and specifying the end date for the report. The date of the first build shown will depend on the frequency of builds.
 
-* Filter the set of builds that the report shows by specifying the platform, configuration, and build definition to include in the report. Set the parameters in that sequence because the set of available values for build definition depends on the platform and configuration.
+- Filter the set of builds that the report shows by specifying the platform, configuration, and build definition to include in the report. Set the parameters in that sequence because the set of available values for build definition depends on the platform and configuration.
 
-* Filter the bugs that are counted in the report by specifying the product areas to include. This filter does not affect the set of builds that appear on the X-axis, the code churn, code coverage, or test results.
+- Filter the bugs that are counted in the report by specifying the product areas to include. This filter does not affect the set of builds that appear on the X-axis, the code churn, code coverage, or test results.
 
   For more information, see [Filtering the Report](#Changing) later in this article.
 
@@ -71,21 +71,21 @@ You can filter the report in the following ways:
 
 For the Build Quality Indicators report to be useful and depict all the quality indicators that it can display, team members must perform the following activities to manage tests and builds:
 
-* **Configure a build system**. To use Team Foundation Build, you must set up a build system.
+- **Configure a build system**. To use Team Foundation Build, you must set up a build system.
 
   For more information, see [Build and Release agents](../../pipelines/agents/agents.md).
 
-* **Create build definitions**. You can create several build definitions, each of which can be run to produce code for a different platform. Also, you can run each build for a different configuration.
+- **Create build definitions**. You can create several build definitions, each of which can be run to produce code for a different platform. Also, you can run each build for a different configuration.
 
   For more information, see [Get started with CI/CD](../../pipelines/get-started-designer.md).
 
-* **Define tests to run automatically as part of the build**. As part of the build definition, you can define tests to run as part of the build or to fail if the tests fail.
+- **Define tests to run automatically as part of the build**. As part of the build definition, you can define tests to run as part of the build or to fail if the tests fail.
 
   For more information, see [Set up continuous testing for your builds](../../pipelines/test/set-up-continuous-testing-builds.md).
 
-* **Configure tests to gather code coverage data**. For code coverage data to appear in the report, team members must instrument tests to gather that data.
+- **Configure tests to gather code coverage data**. For code coverage data to appear in the report, team members must instrument tests to gather that data.
 
-* **Run builds regularly**. You can run builds at set intervals or after every check-in. You can create regular builds when you use the schedule trigger.
+- **Run builds regularly**. You can run builds at set intervals or after every check-in. You can create regular builds when you use the schedule trigger.
 
   For more information, see [Build triggers](../../pipelines/build/triggers.md).
 
@@ -108,15 +108,15 @@ The display of the Build Quality Indicators report will vary significantly based
 
 You can review the report to find answers to these questions for any specific build definition:
 
-* What is the quality of the software?
+- What is the quality of the software?
 
-* Is the team testing enough of our code?
+- Is the team testing enough of our code?
 
-* Are the tests passing?
+- Are the tests passing?
 
-* Is the team is likely to finish based on the code and test metrics?
+- Is the team is likely to finish based on the code and test metrics?
 
-* How often are tests passing, and how much of the code is being tested?
+- How often are tests passing, and how much of the code is being tested?
 
   > [!NOTE]
   > The ratio of colored to grey segments reflects the fraction of the code that tests cover, but the proportions within the colored segments only approximately reflect the fractions of code that passes or fails tests. This ambiguity is because the fraction of green within the colored segment actually represents the number of tests that pass. A single error in one part of the code could cause many tests to fail, or a single failure might represent an extensive error in the design that has consequences throughout the code base.
@@ -125,9 +125,9 @@ You can review the report to find answers to these questions for any specific bu
 
 A healthy Build Quality Indicators report will show the following indicators:
 
-* Most tests are passing (large areas of green), and few tests are failing (small amounts of red).
+- Most tests are passing (large areas of green), and few tests are failing (small amounts of red).
 
-* The percentage of red is less than 20-30 percent.
+- The percentage of red is less than 20-30 percent.
 
   As the following illustration shows, code coverage and test pass rates are high and increasing over time. Code churn, active bugs, inconclusive tests, and failed tests are all low and decreasing.
 
@@ -137,52 +137,52 @@ A healthy Build Quality Indicators report will show the following indicators:
 
 An unhealthy version of the Build Quality Indicators report shows one or more of the following indicators. You might want to investigate the cause according to the following guidance.
 
-* **Less code coverage and more code churn**. The following illustration shows a decrease in code coverage and an increase in code churn. This data is a clear warning that new code is being checked in without corresponding unit tests to cover it.
+- **Less code coverage and more code churn**. The following illustration shows a decrease in code coverage and an increase in code churn. This data is a clear warning that new code is being checked in without corresponding unit tests to cover it.
 
   ![Code Churn in Build Quality Indicators report](media/procguid_buildquality_unhealthy_codechurn.png "ProcGuid_BuildQuality_Unhealthy_CodeChurn")
 
-* **Low rate of tests being run**. The following illustration shows a low rate of tests being run. This data might indicate that the team is not performing enough testing. This blockage could indicate lack of resources, or testers might be doing something else, such as writing test automation instead of testing the current functionality. In either case, resource balancing might be warranted.
+- **Low rate of tests being run**. The following illustration shows a low rate of tests being run. This data might indicate that the team is not performing enough testing. This blockage could indicate lack of resources, or testers might be doing something else, such as writing test automation instead of testing the current functionality. In either case, resource balancing might be warranted.
 
   ![Low rate tests in Build Quality Indicators report](media/procguid_unhealth_lowratetests2.png "ProcGuid_Unhealth_LowRateTests2")
 
-* **High code churn, low rate of code coverage**. High code churn suggests that bugs will be introduced as side effects of the changes. In a perfectly refactored project, you can see code churn with no change in code coverage or test pass rates. Otherwise, high code churn might indicate decreased coverage and the need to rewrite tests.
+- **High code churn, low rate of code coverage**. High code churn suggests that bugs will be introduced as side effects of the changes. In a perfectly refactored project, you can see code churn with no change in code coverage or test pass rates. Otherwise, high code churn might indicate decreased coverage and the need to rewrite tests.
 
   The following illustration shows a high rate of code churn and a low rate of code coverage from testing, even though test pass rates remain high. This data indicates that tests that are being run are not exercising the new code.
 
   ![High Code Churn in Build Quality Indicators report](media/procguid_buildquality_unhealthy_highcodechurn.png "ProcGuid_BuildQuality_Unhealthy_HighCodeChurn")
 
-* **High rate of tests failing**. The following illustration shows that many tests are being run with reasonable code coverage, but the tests are failing. This data might indicate loose development practices, or, in early iterations, the tests might be too harsh for this stage of the product.
+- **High rate of tests failing**. The following illustration shows that many tests are being run with reasonable code coverage, but the tests are failing. This data might indicate loose development practices, or, in early iterations, the tests might be too harsh for this stage of the product.
 
   ![Test Failing in Build Quality Indicators report](media/procguid_buildquality_unhealthy_testfailing.png "ProcGuid_BuildQuality_Unhealthy_TestFailing")
 
   Failing tests should be addressed as soon as possible. If fixing the code is not practical, the failing tests should be temporarily disabled, and a bug should be logged. Although it is sometimes acceptable to treat code analysis faults with less urgency early in the project, you should not let the red sections get too large.
 
-* **High rate of tests passing and high active bug rate**. The following illustration shows a high test pass rate but still a large incoming bug rate. This situation can occur for several reasons. Tests might not be sufficiently rigorous for this stage of the product.
+- **High rate of tests passing and high active bug rate**. The following illustration shows a high test pass rate but still a large incoming bug rate. This situation can occur for several reasons. Tests might not be sufficiently rigorous for this stage of the product.
 
   ![Low Test Rate in Build Quality Indicators report](media/procguid_buildquality_unhealthy_lowratetests.png "ProcGuid_BuildQuality_Unhealthy_LowRateTests")
 
   In early iterations, simple tests are good, but as the product matures, tests should exercise broader scenarios and integrations. Tests might be stale, or they might be testing the wrong functionality. It might be time to switch test techniques.
 
-* **Test pass rates increasing and no increase in code coverage**. Ordinarily, as more tests are run, more code should be covered. On the other hand, if test execution and test pass rates increase without a corresponding increase in code coverage, the incremental tests might be redundant.
+- **Test pass rates increasing and no increase in code coverage**. Ordinarily, as more tests are run, more code should be covered. On the other hand, if test execution and test pass rates increase without a corresponding increase in code coverage, the incremental tests might be redundant.
 
-* **Active bug count is increasing, but test failures are not increasing**. If the active bug count is increasing and your tests are not showing corresponding failures, your tests are probably not testing the same functionality that the bugs are reporting.
+- **Active bug count is increasing, but test failures are not increasing**. If the active bug count is increasing and your tests are not showing corresponding failures, your tests are probably not testing the same functionality that the bugs are reporting.
 
-* **Active bug count is decreasing, but test passes are not increasing**. If the active bug count is decreasing and test pass rates are not increasing, you might be at risk for an increasing reactivation rate.
+- **Active bug count is decreasing, but test passes are not increasing**. If the active bug count is decreasing and test pass rates are not increasing, you might be at risk for an increasing reactivation rate.
 
-* **Large areas of gray**. Gray segments signify code that was not built or tested within the given build. This data appears only in a periodic report where one or more of the specified builds did not occur within the period.
+- **Large areas of gray**. Gray segments signify code that was not built or tested within the given build. This data appears only in a periodic report where one or more of the specified builds did not occur within the period.
 
 ## <a name="Changing"></a> Filtering the Report
 
 You can filter the Build Quality Indicators report in the following ways:
 
-* Change the time interval by specifying the number of builds and specifying the end date for the report.
+- Change the time interval by specifying the number of builds and specifying the end date for the report.
 
-* Filter the set of builds that are represented in the report by specifying the platform, configuration, and build definition to include in the report.
+- Filter the set of builds that are represented in the report by specifying the platform, configuration, and build definition to include in the report.
 
   > [!NOTE]
   > You can configure build definitions to run no tests, some tests, or all tests. The report will vary greatly based on the configuration of the build definitions.
 
-* Filter the bugs that are counted in the report by specifying the product areas to include.
+- Filter the bugs that are counted in the report by specifying the product areas to include.
 
   The following illustration shows the available filters:
 

@@ -87,10 +87,10 @@ The first task is to create the reporting site. The reporting site will have a l
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <taskXml>  
->       <ReportingServices>  
->         <site></site>  
->       </ReportingServices>  
+> <taskXml>
+>       <ReportingServices>
+>         <site></site>
+>       </ReportingServices>
 > </taskXml>
 > ```
 
@@ -176,7 +176,7 @@ The following syntax shows the structure of the **ReportingServices** element an
 >       </report
 >  . . .
 >       </reports
-> </ReportingServices  
+> </ReportingServices
 > ```
 
 The following table describes the elements that you use to specify a report to upload to a project and that can be accessed through SQL Server Reporting Services.
@@ -311,5 +311,5 @@ Where each attribute has the following definition:
 
 ## Related articles
 
-* [Customize a process template](customize-process.md)
-* [Process template and plug-in files](overview-process-template-files.md)
+- [Customize a process template](customize-process.md)
+- [Process template and plug-in files](overview-process-template-files.md)

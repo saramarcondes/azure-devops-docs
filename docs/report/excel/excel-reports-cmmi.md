@@ -29,9 +29,9 @@ You can access the Microsoft Excel reports from the **Documents** folder
 
 To access and use the Microsoft Excel reports, the following configurations must be met:
 
-* To access an Microsoft Excel report, your team project must have been configured with a project portal based on SharePoint Server Enterprise Edition.
+- To access an Microsoft Excel report, your team project must have been configured with a project portal based on SharePoint Server Enterprise Edition.
 
-* To open a report in Microsoft Excel that connects to the operational data store for Team Foundation, you must have the Team Foundation Office Integration add-in installed on your client computer. This add-in is installed when you install any Visual Studio client.
+- To open a report in Microsoft Excel that connects to the operational data store for Team Foundation, you must have the Team Foundation Office Integration add-in installed on your client computer. This add-in is installed when you install any Visual Studio client.
 
   To view or modify an Excel report that is stored under the Documents node for a team project, you must be assigned or belong to a group that has been assigned **Read** permissions for Team Foundation. You must also be assigned the **Visitors** or **Members** permissions, respectively, in SharePoint Products for the team project.
 
@@ -42,21 +42,21 @@ To access and use the Microsoft Excel reports, the following configurations must
 > [!IMPORTANT]
 > You must configure the SharePoint web application for Single Sign-On if you do not want to add users as members of the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services. You must also configure the application for Single Sign-on if the team project portal is configured to use NTLM authentication and is not installed on the data-tier server.
 
-* **For Single Sign-On Authentication (Recommended)**
+- **For Single Sign-On Authentication (Recommended)**
 
   To authenticate viewers of enterprise dashboards by using Single Sign-On, you must perform the following actions:
 
-  * You must configure the SharePoint web application to use Single Sign-on. For more information about how to configure Single Sign-on, see [Configure authentication infrastructure in SharePoint 2013](https://msdn.microsoft.com/library/jj219795.aspx).
+  - You must configure the SharePoint web application to use Single Sign-on. For more information about how to configure Single Sign-on, see [Configure authentication infrastructure in SharePoint 2013](https://msdn.microsoft.com/library/jj219795.aspx).
 
-  * You must add dashboard viewers to a group that is granted access to the Single Sign-on enterprise application definition.
+  - You must add dashboard viewers to a group that is granted access to the Single Sign-on enterprise application definition.
 
-* **For Windows Authentication**
+- **For Windows Authentication**
 
   To authenticate viewers of enterprise dashboards by using Windows Authentication, you must perform the following actions:
 
-  * You must either host the team project portal on the data-tier server, or you must configure the SharePoint web application to use Kerberos authentication.
+  - You must either host the team project portal on the data-tier server, or you must configure the SharePoint web application to use Kerberos authentication.
 
-  * You must add users to the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services.
+  - You must add users to the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services.
 
   The following table summarizes the required permissions based on activity. For information about how to grant these permissions to team members, see [Add users to team projects](../../organizations/security/add-users-team-project.md). For information about permissions that are required to work with Excel reports in general, see [Grant permissions to view and manage reports](../admin/grant-permissions-to-reports.md).
 

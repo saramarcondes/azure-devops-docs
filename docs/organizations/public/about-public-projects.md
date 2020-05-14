@@ -32,11 +32,11 @@ Users that aren't signed into the service have read-only access to public projec
 
 Non-members of a public project have read-only access to a limited set of services, specifically:
 
-* [Browse the code base, download code, view commits, branches, and pull requests](browse-code-public.md)
-* [View and filter work items](view-filter-work-items-public.md)
-* [View a project page or dashboard](view-project-dashboard-public.md)
-* [View the project Wiki](view-wiki-public.md)
-* Perform semantic search of the [code](code-search-public.md) or [work items](work-item-search-public.md)
+- [Browse the code base, download code, view commits, branches, and pull requests](browse-code-public.md)
+- [View and filter work items](view-filter-work-items-public.md)
+- [View a project page or dashboard](view-project-dashboard-public.md)
+- [View the project Wiki](view-wiki-public.md)
+- Perform semantic search of the [code](code-search-public.md) or [work items](work-item-search-public.md)
 
 For additional information, see [Differences and limitations for non-members of a public project](feature-differences.md).
 
@@ -46,17 +46,17 @@ To contribute to a project by adding or modifying code, work items, pipelines, o
 
 **To get started:**
 
-* [Create a public project](create-public-project.md)
-* [Invite users to contribute to your public project](invite-users-public.md)
-* [Define a README for your project](../projects/project-vision-status.md)
+- [Create a public project](create-public-project.md)
+- [Invite users to contribute to your public project](invite-users-public.md)
+- [Define a README for your project](../projects/project-vision-status.md)
 
 **To share code:**
 
-* [Share your code](../../repos/git/gitquickstart.md)
+- [Share your code](../../repos/git/gitquickstart.md)
 
 **To define pipelines:**
 
-* [Build OSS repositories](../../pipelines/build/ci-public.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json)
+- [Build OSS repositories](../../pipelines/build/ci-public.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json)
 
 ## Migrate a private project to public
 
@@ -66,5 +66,5 @@ Prior to changing the visibility of your private project, we recommend you revie
 
 ## Related articles
 
-* [Differences and limitations for non-members of a public project](feature-differences.md)
-* [Public projects glossary](glossary-public.md)
+- [Differences and limitations for non-members of a public project](feature-differences.md)
+- [Public projects glossary](glossary-public.md)

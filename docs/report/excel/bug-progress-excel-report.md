@@ -30,13 +30,13 @@ You can use the Bug Progress report to understand how well the team is finding, 
 
 For the Bug Progress chart to be useful and accurate, the team must perform the following activities:
 
-* Define Bugs, and specify their **Iteration** and **Area** paths.
+- Define Bugs, and specify their **Iteration** and **Area** paths.
 
   > [!NOTE]
   > For information about how to define area and iteration paths, see [Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) .
 
-* Specify the **Priority** of each Bug.
-* Update the **State** of each Bug as the team fixes, verifies, and closes it.
+- Specify the **Priority** of each Bug.
+- Update the **State** of each Bug as the team fixes, verifies, and closes it.
 
 <a name="Interpreting"></a>
 
@@ -46,9 +46,9 @@ You should expect the Bug Progress report to vary based on where you are in your
 
 You can review the chart to determine the progress over time or within an iteration. Specifically, you can find answers to the following questions:
 
-* How quickly is the team resolving and closing Bugs?
-* Is the team fixing Bugs quickly enough to finish on time?
-* Did the team find any Bugs in the past several weeks?
+- How quickly is the team resolving and closing Bugs?
+- Is the team fixing Bugs quickly enough to finish on time?
+- Did the team find any Bugs in the past several weeks?
 
 For information about healthy and unhealthy versions of the report, see [Bug Status](../sql-reports/bug-status-report.md).
 
@@ -66,5 +66,5 @@ You can customize the Bug Progress report by opening it in Office Excel and chan
 
 ## Related articles
 
-* [Excel reports](excel-reports.md)
-* [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)
+- [Excel reports](excel-reports.md)
+- [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)

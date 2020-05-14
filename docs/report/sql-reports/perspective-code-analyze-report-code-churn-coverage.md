@@ -22,9 +22,9 @@ These perspectives are based on the relational tables that you can use to report
 
 By using the Code Churn perspective, you can create reports that answer the following questions:
 
-* How many files with a specific file name extension changed in a particular build?
-* How many lines of code are in the source base for a particular build?
-* Which changesets have been submitted, and what are the details of each change? (For example, who made the change, which files were changed, and on what date was the change made)?
+- How many files with a specific file name extension changed in a particular build?
+- How many lines of code are in the source base for a particular build?
+- Which changesets have been submitted, and what are the details of each change? (For example, who made the change, which files were changed, and on what date was the change made)?
 
 ![Code Coverage Measure Group](media/rpt_codecoverage.png "RPT_CodeCoverage")
 
@@ -59,13 +59,13 @@ You can create a code churn report by performing the following steps:
 
 3.  For each report filter, open the shortcut menu for each of the following fields, specify the hierarchies, weeks, or other elements of interest, and then drag the field to the **Report Filter** area.
 
-    * **Team Project Hierarchy** from the **Team Project** dimension
+    - **Team Project Hierarchy** from the **Team Project** dimension
 
-    * **Work Item.Iteration Hierarchy** from the **Work Item** dimension
+    - **Work Item.Iteration Hierarchy** from the **Work Item** dimension
 
-    * **Work Item.Area Hierarchy** from the **Work Item** dimension
+    - **Work Item.Area Hierarchy** from the **Work Item** dimension
 
-    * **Year Week Date** from the **Date** dimension
+    - **Year Week Date** from the **Date** dimension
 
 4.  In the **Date** dimension, expand **More fields**, and drag the **Date**, **Week**, or **Month** fields to the **Axis Fields (Categories)** area based on how granular a report you want to generate.
 
@@ -153,15 +153,15 @@ The following table describes the dimensions and attributes in the Run Coverage 
 
 To create reports that contain code churn and code coverage data, team members should review the information in the following topics:
 
-* [Continuous testing](../../pipelines/ecosystems/dotnet-core.md#run-your-tests)
-* [Using Code Coverage to Determine How Much Code is being Tested](https://msdn.microsoft.com/library/dd537628.aspx)
+- [Continuous testing](../../pipelines/ecosystems/dotnet-core.md#run-your-tests)
+- [Using Code Coverage to Determine How Much Code is being Tested](https://msdn.microsoft.com/library/dd537628.aspx)
 
-* [Configure unit tests by using a .runsettings file](https://msdn.microsoft.com/library/jj635153.aspx)
+- [Configure unit tests by using a .runsettings file](https://msdn.microsoft.com/library/jj635153.aspx)
 
 ## Related notes
 
-* [Code Churn](../excel/code-churn-excel-report.md)
-* [Code Churn](../excel/code-coverage-excel-report.md)
-* [Code Churn tables](table-reference-code-churn.md)
-* [Run Coverage tables](run-coverage-tables.md)
-* [Perspectives and measure groups in the Analysis Services cube](perspective-measure-groups-cube.md)
+- [Code Churn](../excel/code-churn-excel-report.md)
+- [Code Churn](../excel/code-coverage-excel-report.md)
+- [Code Churn tables](table-reference-code-churn.md)
+- [Run Coverage tables](run-coverage-tables.md)
+- [Perspectives and measure groups in the Analysis Services cube](perspective-measure-groups-cube.md)

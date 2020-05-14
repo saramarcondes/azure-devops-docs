@@ -17,30 +17,30 @@ For details of how translations are processed, see [File transforms and variable
 
 **File transformations**
 
-* At present file transformations are supported for only XML files.
+- At present file transformations are supported for only XML files.
 
-* To apply XML transformation to configuration files (\*.config) you must specify a newline-separated list of transformation file rules using the syntax:
+- To apply XML transformation to configuration files (\*.config) you must specify a newline-separated list of transformation file rules using the syntax:
 
   `-transform <path to the transform file> -xml <path to the source file> -result <path to the result file>`
 
-* File transformations are useful in many scenarios, particularly when you are deploying to an App service and want to add,
+- File transformations are useful in many scenarios, particularly when you are deploying to an App service and want to add,
   remove or modify configurations for different environments (such as Dev, Test, or Prod) by following the standard
   [Web.config Transformation Syntax](https://docs.microsoft.com/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/web-config-transformations).
 
-* You can also use this functionality to transform other files, including Console or Windows service application configuration files
+- You can also use this functionality to transform other files, including Console or Windows service application configuration files
   (for example, FabrikamService.exe.config).
 
-* Config file transformations are run before variable substitutions.
+- Config file transformations are run before variable substitutions.
 
 **Variable substitution**
 
-* At present only XML and JSON file formats are supported for variable substitution.
+- At present only XML and JSON file formats are supported for variable substitution.
 
-* Tokens defined in the target configuration files are updated and then replaced with variable values.
+- Tokens defined in the target configuration files are updated and then replaced with variable values.
 
-* Variable substitutions are run after config file transformations.
+- Variable substitutions are run after config file transformations.
 
-* Variable substitution is applied for only the JSON keys predefined in the object hierarchy. It does not create new keys.
+- Variable substitution is applied for only the JSON keys predefined in the object hierarchy. It does not create new keys.
 
 **Examples**
 

@@ -25,8 +25,8 @@ This task enables you to connect to a remote machine using SSH and run commands 
 
 ## Prerequisites
 
-* The task supports use of an SSH key pair to connect to the remote machine(s).
-* The public key must be pre-installed or copied to the remote machine(s).
+- The task supports use of an SSH key pair to connect to the remote machine(s).
+- The public key must be pre-installed or copied to the remote machine(s).
 
 ::: moniker range="> tfs-2018"
 
@@ -50,11 +50,11 @@ This task enables you to connect to a remote machine using SSH and run commands 
 
 ## See also
 
-* [Install SSH Key task](../utility/install-ssh-key.md)
+- [Install SSH Key task](../utility/install-ssh-key.md)
 
-* [Copy Files Over SSH](copy-files-over-ssh.md)
+- [Copy Files Over SSH](copy-files-over-ssh.md)
 
-* Blog post [SSH build task](https://devblogs.microsoft.com/devops/ssh-build-task/)
+- Blog post [SSH build task](https://devblogs.microsoft.com/devops/ssh-build-task/)
 
 ## Open source
 

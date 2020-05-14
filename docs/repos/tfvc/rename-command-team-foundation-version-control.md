@@ -84,27 +84,27 @@ You can use the **rename** command of the **tf** command-line utility to move or
 
 Use Rename to do the following:
 
-* Rename the _olditem_ to the _newitem_, such as `tf rename 314.cs 315.cs`.
+- Rename the _olditem_ to the _newitem_, such as `tf rename 314.cs 315.cs`.
 
-* Move the _olditem_ to a new location in the Team Foundation version control server by providing a _newitem_ whose path differs from that of the _olditem_, such as \*\* \*\*`tf rename 314.cs ..\\newdir\\314.cs`.
+- Move the _olditem_ to a new location in the Team Foundation version control server by providing a _newitem_ whose path differs from that of the _olditem_, such as \*\* \*\*`tf rename 314.cs ..\\newdir\\314.cs`.
 
 If you provide a _newitem_ that specifies a non-existent folder, the **rename** command creates the destination folder. If _newitem_ is a folder, _olditem_ becomes a child of _newitem_.
 
 You cannot rename an item if:
 
-* You have already deleted it before it was checked in to the same workspace.
+- You have already deleted it before it was checked in to the same workspace.
 
-* The new name already exists in the Team Foundation version control server and is not a folder.
+- The new name already exists in the Team Foundation version control server and is not a folder.
 
-* You have already added, branched, or renamed the pending check-in of the item.
+- You have already added, branched, or renamed the pending check-in of the item.
 
-* The item is mapped in the workspace but not available on the local disk.
+- The item is mapped in the workspace but not available on the local disk.
 
-* The item is cloaked.
+- The item is cloaked.
 
 You can rename an item for which another file of the same name has been added pending check-in but you cannot rename an item that has been branched but not yet checked in. When you rename a file that has pending edits, the edits are preserved.
 
-An item that is explicitly mapped cannot be renamed without first changing the mapping. For example, if there is a working folder mapping of $/ProjectX/MyApp to c:\\MyApp, you cannot rename MyApp. You can rename items under _MyApp_ but not _MyApp_ itself.
+An item that is explicitly mapped cannot be renamed without first changing the mapping. For example, if there is a working folder mapping of \$/ProjectX/MyApp to c:\\MyApp, you cannot rename MyApp. You can rename items under _MyApp_ but not _MyApp_ itself.
 
 For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
 

@@ -73,17 +73,17 @@ jobs:
 
 ## Related articles
 
-* [Approvals](approvals.md)
-* [Gates](gates.md)
-* [Manual intervention](../deploy-using-approvals.md#configure-maninter)
-* [ServiceNow release and deployment control](servicenow.md)
-* [Stages](../../process/stages.md)
-* [Triggers](../triggers.md)
-* [Release pipelines and releases](../releases.md)
+- [Approvals](approvals.md)
+- [Gates](gates.md)
+- [Manual intervention](../deploy-using-approvals.md#configure-maninter)
+- [ServiceNow release and deployment control](servicenow.md)
+- [Stages](../../process/stages.md)
+- [Triggers](../triggers.md)
+- [Release pipelines and releases](../releases.md)
 
 ## Additional resources
 
-* [Video: Deploy quicker and safer with gates in Azure Pipelines](https://channel9.msdn.com/Events/Connect/2017/T181)
-* [Configure your release pipelines for safe deployments](https://devblogs.microsoft.com/devops/configuring-your-release-pipelines-for-safe-deployments/)
+- [Video: Deploy quicker and safer with gates in Azure Pipelines](https://channel9.msdn.com/Events/Connect/2017/T181)
+- [Configure your release pipelines for safe deployments](https://devblogs.microsoft.com/devops/configuring-your-release-pipelines-for-safe-deployments/)
 
 [!INCLUDE [rm-help-support-shared](../../includes/rm-help-support-shared.md)]

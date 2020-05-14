@@ -26,9 +26,9 @@ By creating folders under Shared Queries, you can grant permissions to users for
 
 ## Prerequisites
 
-* To create or edit a shared query or manage permissions, you must be a member of the Project Collection Administrators or Project Administrators groups with Basic or higher access level
-* Or, to create a query or folder under a shared query folder, you must have the **Contribute** permission set explicitly to **Allow** to and be granted Basic or higher access level
-* Or, to change permissions of a query or query folder, you must have the **Manage Permissions** permission set explicitly to **Allow** and be granted Basic or higher access level.
+- To create or edit a shared query or manage permissions, you must be a member of the Project Collection Administrators or Project Administrators groups with Basic or higher access level
+- Or, to create a query or folder under a shared query folder, you must have the **Contribute** permission set explicitly to **Allow** to and be granted Basic or higher access level
+- Or, to change permissions of a query or query folder, you must have the **Manage Permissions** permission set explicitly to **Allow** and be granted Basic or higher access level.
 
 Users with Stakeholder access can't create or save queries in a Shared folder.
 
@@ -211,7 +211,7 @@ In Team Explorer for Eclipse, choose **Move** from the context menu and select t
 
 With queries, you can not only list work items, you can create status and trend charts and add them to dashboards. You can learn more about permissions and working with queries from these resources:
 
-* [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md)
-* [Create and save managed queries](using-queries.md)
-* [Dashboards](../../report/dashboards/dashboards.md)
-* [Add a chart to a dashboard](../../report/add-charts-to-dashboard.md)
+- [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md)
+- [Create and save managed queries](using-queries.md)
+- [Dashboards](../../report/dashboards/dashboards.md)
+- [Add a chart to a dashboard](../../report/add-charts-to-dashboard.md)

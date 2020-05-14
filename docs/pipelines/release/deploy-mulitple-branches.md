@@ -18,11 +18,11 @@ Artifact filters can be with After release triggers to deploy from multiple bran
 
 You'll need:
 
-* A build pipeline builds multiple branches and publishes an artifact
+- A build pipeline builds multiple branches and publishes an artifact
 
-  * [Build multiple branches](/azure/devops/pipelines/build/ci-build-git)
+  - [Build multiple branches](/azure/devops/pipelines/build/ci-build-git)
 
-* Two separate targets where you will deploy the app. These could be virtual machines,
+- Two separate targets where you will deploy the app. These could be virtual machines,
   web servers, on-premises physical deployment groups, or other types of deployment target.
   You will have to choose names that are unique, but it's a good idea to include
   "Dev" in the name of one, and "Prod" in the name of the other so that you
@@ -59,6 +59,6 @@ The next time the pipeline runs, only the artifact filter will filter the branch
 
 ## Related articles
 
-* [Release triggers](triggers.md)
+- [Release triggers](triggers.md)
 
 If you encounter issues or have suggestions, please feel free to [post a comment or create a post on Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).

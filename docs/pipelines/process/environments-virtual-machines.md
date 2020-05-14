@@ -26,8 +26,8 @@ You can define environments in **Environments** under **Pipelines**.
 6.  Run the copied script from an administrator PowerShell command prompt on each of the target VMs that you want to register with this environment.
     > [!NOTE]
     >
-    > * The Personal Access Token (PAT) of the logged in user is included in the script. The PAT expires on the day you generate the script.
-    > * If your VM already has any agent other running on it, provide a unique name for **agent** to register with the environment.
+    > - The Personal Access Token (PAT) of the logged in user is included in the script. The PAT expires on the day you generate the script.
+    > - If your VM already has any agent other running on it, provide a unique name for **agent** to register with the environment.
 7.  Once your VM is registered, it will start appearing as an environment resource under the **Resources** tab of the environment.
 
     > [!div class="mx-imgBorder"] > ![VMcreation](media/vm-creation.png)
@@ -50,7 +50,7 @@ The tags you assign allow you to limit deployment to specific virtual machines w
 Create a new pipeline by referencing the environment and VM resources in a pipeline YAML. The environment will be created if it does not already exist.
 
 ```YAML
-jobs:  
+jobs:
 - deployment: VMDeploy
   displayName: web
   environment:

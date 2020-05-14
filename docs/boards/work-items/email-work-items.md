@@ -309,7 +309,7 @@ To print the details of a work item, open a query in Visual Studio that contains
 
 **From the web portal**, simply copy the URL from the web browser address or hover over the title and then click the ![Copy to clipboard icon](../backlogs/media/icon-copy-to-clipboard.png) copy-to-clipboard icon.
 
-<img src="../backlogs/media/add-work-item-copy-URL.png" alt="Copy hyperlink for a work item from web portal" style="border: 1px solid #C3C3C3;" />  
+<img src="../backlogs/media/add-work-item-copy-URL.png" alt="Copy hyperlink for a work item from web portal" style="border: 1px solid #C3C3C3;" />
 
 ::: moniker-end
 
@@ -370,7 +370,7 @@ From any query, you can export a list of work items as a comma-delimited list. S
 
 ## Related articles
 
-* [Use templates to add and update work items](../backlogs/work-item-template.md)
-* [Share information in work items and social tools](../queries/share-plans.md)
-* [Define the hyperlink for a work item](work-item-url-hyperlink.md)
-* [Configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts)
+- [Use templates to add and update work items](../backlogs/work-item-template.md)
+- [Share information in work items and social tools](../queries/share-plans.md)
+- [Define the hyperlink for a work item](work-item-url-hyperlink.md)
+- [Configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts)

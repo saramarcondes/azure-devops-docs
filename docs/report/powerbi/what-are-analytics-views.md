@@ -40,8 +40,7 @@ As set of default Analytics views are provided. The default views and are immedi
 
 Here we show the default views created for a project based on the Agile process. To learn how to open this view in your web portal, see [Manage Analytics views](analytics-views-manage.md).
 
-> [!div class="mx-imgBorder"]
-> ![Default Analytics views](./media/default-views/default-views.png)
+> [!div class="mx-imgBorder"] > ![Default Analytics views](./media/default-views/default-views.png)
 
 [!INCLUDE [temp](../includes/analytics-image-differences.md)]
 
@@ -67,13 +66,13 @@ If the default Analytics views do not meet your needs, you can create custom vie
 
 A custom view supports defining the following options:
 
-* Sharing options
-* Work item filters
-* Team and area path filters
-* Backlog and work item type filters
-* Field specific filters
-* Fields to display
-* View history and trend options
+- Sharing options
+- Work item filters
+- Team and area path filters
+- Backlog and work item type filters
+- Field specific filters
+- Fields to display
+- View history and trend options
 
 To learn more, see [Create an Analytics view](./analytics-views-create.md).
 

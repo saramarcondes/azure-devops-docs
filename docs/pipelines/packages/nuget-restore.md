@@ -18,9 +18,9 @@ monikerRange: '>= tfs-2017'
 
 This walkthrough will cover setting up an existing build to restore NuGet packages from Package Management feeds. It assumes that you've already:
 
-* [Set up your solution](/azure/devops/artifacts/nuget/consume) to consume packages from a Package Management feed
-* [Created a build](/azure/devops/pipelines/) for that solution
-* [Added the correct build service identity](/azure/devops/artifacts/feeds/feed-permissions) to your feed
+- [Set up your solution](/azure/devops/artifacts/nuget/consume) to consume packages from a Package Management feed
+- [Created a build](/azure/devops/pipelines/) for that solution
+- [Added the correct build service identity](/azure/devops/artifacts/feeds/feed-permissions) to your feed
 
 To build a solution that relies on NuGet packages from Package Management feeds, add the **NuGet** task (if one is not already present).
 
@@ -28,13 +28,13 @@ First, click **Add build tasks...**, select the **Package** category, and add th
 
 Next, configure these options:
 
-* **Command:** restore
-* **Path to solution, packages.config, or project.json:** The path to the file that specifies the packages you want to restore
+- **Command:** restore
+- **Path to solution, packages.config, or project.json:** The path to the file that specifies the packages you want to restore
 
 Then, select feeds to use:
 
-* If you've checked in a [NuGet.config](https://docs.nuget.org/Consume/NuGet-Config-File), select **Feeds in my NuGet.config** and select the file from your repo.
-* If you're using a single Azure Artifacts/TFS feed, select the **Feed(s) I select here** option and select your feed from the dropdown.
+- If you've checked in a [NuGet.config](https://docs.nuget.org/Consume/NuGet-Config-File), select **Feeds in my NuGet.config** and select the file from your repo.
+- If you're using a single Azure Artifacts/TFS feed, select the **Feed(s) I select here** option and select your feed from the dropdown.
 
 ![A screenshot of the NuGet task configured as outlined above](media/restore-pkgs-on-build.png)
 
@@ -114,7 +114,7 @@ Because the NuGet Tool Installer is not available in TFS versions prior to TFS 2
 1.  Add the task, if you haven't already. If you have a "NuGet Restore" task in the catalog (it may be in the Deprecated tasks section), insert it into your build. Otherwise, insert a "NuGet" task.
 1.  For your NuGet/NuGet Installer task, use the version selector under the task name to select version "0.\*".
 1.  In the Advanced section, set the NuGet Version to "Custom" and the Path to NuGet.exe as
-    $(Build.BinariesDirectory)\nuget.exe
+    \$(Build.BinariesDirectory)\nuget.exe
 1.  Before your NuGet task, add a "PowerShell" task, select "Inline Script" as the Type, enter this PowerShell script as the Inline Script, and enter "4.3.0" (or any version of NuGet from this list) as the Arguments.
 
 Our thanks to [GitHub user leftler](https://github.com/Microsoft/azure-pipelines-tasks/issues/3756#issuecomment-288185011) for creating the original version of the PowerShell script linked above.

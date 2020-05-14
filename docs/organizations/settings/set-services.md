@@ -23,15 +23,15 @@ You can control which services are available through the web portal by turning a
 
 ::: moniker range="azure-devops"
 
-* You must have an organization in Azure DevOps. If you don't have one, [do that now](../../user-guide/sign-up-invite-teammates.md).
-* As an organization owner or member of the Project Administrators group, you can change policies and change project information. If you're not [a member get added as one](../security/set-project-collection-level-permissions.md#project-level).
+- You must have an organization in Azure DevOps. If you don't have one, [do that now](../../user-guide/sign-up-invite-teammates.md).
+- As an organization owner or member of the Project Administrators group, you can change policies and change project information. If you're not [a member get added as one](../security/set-project-collection-level-permissions.md#project-level).
   ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-* You must have a project defined. If you don't have one, [add one now](../projects/create-project.md).
-* As a member of the Project Administrators group, you can change policies and change project information. If you're not [a member get added as one](../security/set-project-collection-level-permissions.md#project-level).
-* ::: moniker-end
+- You must have a project defined. If you don't have one, [add one now](../projects/create-project.md).
+- As a member of the Project Administrators group, you can change policies and change project information. If you're not [a member get added as one](../security/set-project-collection-level-permissions.md#project-level).
+- ::: moniker-end
 
 ## Change the visibility for a service
 
@@ -67,13 +67,13 @@ If you disable **Boards**, you also disable [**Analytics views**](../../report/p
 
 ::: moniker range="azure-devops"
 
-* [About projects and scaling the organization](../projects/about-projects.md)
-* [Change the project visibility, public or private](../public/make-project-public.md)
-* [About user, team, project, and organization-level settings](about-settings.md)
+- [About projects and scaling the organization](../projects/about-projects.md)
+- [Change the project visibility, public or private](../public/make-project-public.md)
+- [About user, team, project, and organization-level settings](about-settings.md)
   ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-* [About projects and scaling the organization](../projects/about-projects.md)
-* [About user, team, project, and collection-level settings](about-settings.md)
+- [About projects and scaling the organization](../projects/about-projects.md)
+- [About user, team, project, and collection-level settings](about-settings.md)
   ::: moniker-end

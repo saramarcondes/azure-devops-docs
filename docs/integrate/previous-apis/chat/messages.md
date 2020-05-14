@@ -95,7 +95,7 @@ GET https://{instance}/DefaultCollection/_apis/chat/rooms/{roomId}/messages?api-
 | roomId | int | ID of the team room.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| $filter | string | OData filter can be applied to the PostedTime field to return messages from a different timespan. The timespan can be up to 30 days. No more than 100,000 messages will be returned. If no filter is applied, messages from the last 24 hours are returned.
+| \$filter | string | OData filter can be applied to the PostedTime field to return messages from a different timespan. The timespan can be up to 30 days. No more than 100,000 messages will be returned. If no filter is applied, messages from the last 24 hours are returned.
 
 #### Sample request
 

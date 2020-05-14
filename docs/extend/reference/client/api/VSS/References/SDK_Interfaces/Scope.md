@@ -17,8 +17,8 @@ Defined in vss.d.ts
 
 ### Members
 
-* `description`: string.
+- `description`: string.
 
-* `title`: string.
+- `title`: string.
 
-* `value`: string.
+- `value`: string.

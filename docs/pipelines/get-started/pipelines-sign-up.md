@@ -90,7 +90,7 @@ If you signed up for Azure DevOps with an existing MSA or GitHub identity, you'r
 
     > [!div class="mx-imgBorder"] >![Create new project dialog](../../boards/get-started/media/sign-up/nf-create-project.png)
 
-    Special characters aren't allowed in the project name (such as / : \ ~ & % ; @ ' " ? < > | # $ \* } { , + = [ ]). The project name also can't begin with an underscore, can't begin or end with a period, and must be 64 characters or less. Set your project visibility to either public or private. Public visibility allows for anyone on the internet to view your project. Private visibility is for only people who you give access to your project.
+    Special characters aren't allowed in the project name (such as / : \ ~ & % ; @ ' " ? < > | # \$ \* } { , + = [ ]). The project name also can't begin with an underscore, can't begin or end with a period, and must be 64 characters or less. Set your project visibility to either public or private. Public visibility allows for anyone on the internet to view your project. Private visibility is for only people who you give access to your project.
 
 2.  When your project is created, the Kanban board automatically appears.
 
@@ -114,17 +114,17 @@ You can add and invite others to work on your project by adding their email addr
 
 3.  Complete the form by entering or selecting the following information: - **Users:** Enter the email addresses (Microsoft accounts) or GitHub IDs for the users. You can add several email addresses by separating them with a semicolon (;). An email address appears in red when it's accepted. - **Access level:** Assign one of the following access levels: - **Basic:** Assign to users who must have access to all Azure Pipelines features. You can grant up to five users Basic access for free.
 
-    * **Stakeholder:** Assign to users for limited access to features to view, add, and modify work items. You can assign an unlimited amount of users Stakeholder access for free.
-    * **Add to project:** Select the project you named in the preceding procedure.
-    * **Azure DevOps groups:** Select one of the following security groups, which will determine the permissions the users have to do select tasks. To learn more, see [Azure Pipelines resources](../security/resources.md).
+    - **Stakeholder:** Assign to users for limited access to features to view, add, and modify work items. You can assign an unlimited amount of users Stakeholder access for free.
+    - **Add to project:** Select the project you named in the preceding procedure.
+    - **Azure DevOps groups:** Select one of the following security groups, which will determine the permissions the users have to do select tasks. To learn more, see [Azure Pipelines resources](../security/resources.md).
 
-      * **Project Readers:** Assign to users who only require read-only access.
-      * **Project Contributors:** Assign to users who will contribute fully to the project.
-      * **Project Administrators:** Assign to users who will configure project resources.
+      - **Project Readers:** Assign to users who only require read-only access.
+      - **Project Contributors:** Assign to users who will contribute fully to the project.
+      - **Project Administrators:** Assign to users who will configure project resources.
 
         ```
-        			> [!NOTE]  
-        			> Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask the user to [sign up](https://signup.live.com/) for a Microsoft account or a GitHub account.  
+        			> [!NOTE]
+        			> Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask the user to [sign up](https://signup.live.com/) for a Microsoft account or a GitHub account.
         ```
 
 4.  When you're done, select **Add** to complete your invitation.
@@ -135,15 +135,15 @@ For more information, see [Add organization users for Azure DevOps Services](../
 
 You can rename and delete your organization, or change the organization location. To learn more, see the following articles:
 
-* [Manage organizations](../../organizations/accounts/organization-management.md)
-* [Rename an organization](../../organizations/accounts/rename-organization.md)
-* [Change the location of your organization](../../organizations/accounts/change-organization-location.md)
+- [Manage organizations](../../organizations/accounts/organization-management.md)
+- [Rename an organization](../../organizations/accounts/rename-organization.md)
+- [Change the location of your organization](../../organizations/accounts/change-organization-location.md)
 
 You can rename your project or change its visibility. To learn more about managing projects, see the following articles:
 
-* [Manage projects](../../organizations/projects/about-projects.md)
-* [Rename a project](../../organizations/projects/rename-project.md)
-* [Change the project visibility, public or private](../../organizations/public/make-project-public.md)
+- [Manage projects](../../organizations/projects/about-projects.md)
+- [Rename a project](../../organizations/projects/rename-project.md)
+- [Change the project visibility, public or private](../../organizations/public/make-project-public.md)
 
 ## Next steps
 
@@ -151,6 +151,6 @@ You can rename your project or change its visibility. To learn more about managi
 
 ## Related articles
 
-* [What is Azure Pipelines?](what-is-azure-pipelines.md)
-* [Key concepts for new Azure Pipelines users](key-pipelines-concepts.md)
-* [Create your first pipeline](../create-first-pipeline.md)
+- [What is Azure Pipelines?](what-is-azure-pipelines.md)
+- [Key concepts for new Azure Pipelines users](key-pipelines-concepts.md)
+- [Create your first pipeline](../create-first-pipeline.md)

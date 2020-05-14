@@ -15,10 +15,10 @@ Module path: `TFS/VersionControl/Contracts`
 
 ### Members
 
-* `isRename`: boolean. Indicates if this a rename source. If false, it is a merge source.
+- `isRename`: boolean. Indicates if this a rename source. If false, it is a merge source.
 
-* `serverItem`: string. The server item of the merge source
+- `serverItem`: string. The server item of the merge source
 
-* `versionFrom`: number. Start of the version range
+- `versionFrom`: number. Start of the version range
 
-* `versionTo`: number. End of the version range
+- `versionTo`: number. End of the version range

@@ -16,16 +16,16 @@ Module path: `TFS/Build/Contracts`
 
 ### Members
 
-* `changedBy`: [VSS_Common_Contracts.IdentityRef](../../../VSS/WebApi/Contracts/IdentityRef.md).
+- `changedBy`: [VSS_Common_Contracts.IdentityRef](../../../VSS/WebApi/Contracts/IdentityRef.md).
 
-* `changedDate`: Date.
+- `changedDate`: Date.
 
-* `changeType`: [AuditAction](./AuditAction.md).
+- `changeType`: [AuditAction](./AuditAction.md).
 
-* `comment`: string.
+- `comment`: string.
 
-* `definitionUrl`: string.
+- `definitionUrl`: string.
 
-* `name`: string.
+- `name`: string.
 
-* `revision`: number.
+- `revision`: number.

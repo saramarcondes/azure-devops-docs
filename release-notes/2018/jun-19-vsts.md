@@ -27,41 +27,41 @@ Read about the new features below and head over to VSTS to try them for yourself
 
 ### Navigation
 
-* [Preview our new navigation](#preview-our-new-navigation)
+- [Preview our new navigation](#preview-our-new-navigation)
 
 ### Work
 
-* [New Work hubs](#new-work-hubs)
-* [Queries hub generally available](#queries-hub-generally-available)
-* [Easily find existing work items in linking and mention experiences](#easily-find-existing-work-items-in-linking-and-mention-experiences)
+- [New Work hubs](#new-work-hubs)
+- [Queries hub generally available](#queries-hub-generally-available)
+- [Easily find existing work items in linking and mention experiences](#easily-find-existing-work-items-in-linking-and-mention-experiences)
 
 ### Build and Release
 
-* [New build results page](#new-build-results-page)
-* [Pass environment variables to tasks](#pass-environment-variables-to-tasks)
-* [Ignore a release gate for a deployment](#ignore-a-release-gate-for-a-deployment)
-* [Set a variable at release time](#set-a-variable-at-release-time)
-* [Organize your release definitions in folders](#organize-your-release-definitions-in-folders)
-* [Use improved Windows remote PowerShell based tasks](#use-improved-windows-remote-powershell-based-tasks)
-* [GitHub artifacts show associated commits deployed in a release](#github-artifacts-show-associated-commits-deployed-in-a-release)
+- [New build results page](#new-build-results-page)
+- [Pass environment variables to tasks](#pass-environment-variables-to-tasks)
+- [Ignore a release gate for a deployment](#ignore-a-release-gate-for-a-deployment)
+- [Set a variable at release time](#set-a-variable-at-release-time)
+- [Organize your release definitions in folders](#organize-your-release-definitions-in-folders)
+- [Use improved Windows remote PowerShell based tasks](#use-improved-windows-remote-powershell-based-tasks)
+- [GitHub artifacts show associated commits deployed in a release](#github-artifacts-show-associated-commits-deployed-in-a-release)
 
 ### Package
 
-* [Use upstream sources in legacy feeds](#use-upstream-sources-in-legacy-feeds)
-* [Use arbitrary public npm feeds as upstream sources](#use-arbitrary-public-npm-feeds-as-upstream-sources)
+- [Use upstream sources in legacy feeds](#use-upstream-sources-in-legacy-feeds)
+- [Use arbitrary public npm feeds as upstream sources](#use-arbitrary-public-npm-feeds-as-upstream-sources)
 
 ### Test
 
-* [Improved experiences in the Test tab](#improved-experiences-in-the-test-tab)
+- [Improved experiences in the Test tab](#improved-experiences-in-the-test-tab)
 
 ### Reporting
 
-* [Exclude items completed before a certain date in analytics views](#exclude-items-completed-before-a-certain-date-in-analytics-views)
-* [Easily navigate to dashboards](#easily-navigate-to-dashboards)
+- [Exclude items completed before a certain date in analytics views](#exclude-items-completed-before-a-certain-date-in-analytics-views)
+- [Easily navigate to dashboards](#easily-navigate-to-dashboards)
 
 ### Authentication
 
-* [Get notified for PAT expirations](#get-notified-for-pat-expirations)
+- [Get notified for PAT expirations](#get-notified-for-pat-expirations)
 
 ## Navigation
 
@@ -93,9 +93,9 @@ Along with the public preview of our new navigation, we’re also introducing th
 
 While the new **Queries** hub was in preview, we worked to respond to your feedback. We are now excited for the experience to become available for everyone. The hub streamlines many of the existing queries features from the old hub with a more modern look and feel as well as provides new capabilities to make it easier to get to the queries that are important to you. Some highlights of the new experience include:
 
-* Directory pages with last modified by information and the ability to search for queries
-* Breadcrumb with unique URLs for folders to bookmark important groups of queries
-* Quick access to your favorite queries from the results page
+- Directory pages with last modified by information and the ability to search for queries
+- Breadcrumb with unique URLs for folders to bookmark important groups of queries
+- Quick access to your favorite queries from the results page
 
 Read more about these exciting updates on our [DevOps blog](https://blogs.msdn.microsoft.com/devops/2018/06/18/queries-hub-updates-generally-available).
 
@@ -126,8 +126,8 @@ CI/CD task authors can set a new property, [**showEnvironmentVariables**](https:
 
 This enables two scenarios:
 
-* A task requires an environment variable with case-preserved in the variable name. For instance, in the above example, the environment variable passed along to the task would be “foo” and not “FOO”.
-* It allows secrets values to be passed in a safe manner to the scripts. This is preferred to passing the secrets as arguments to the scripts since the operating system on the agent may log invocation of processes including their arguments.
+- A task requires an environment variable with case-preserved in the variable name. For instance, in the above example, the environment variable passed along to the task would be “foo” and not “FOO”.
+- It allows secrets values to be passed in a safe manner to the scripts. This is preferred to passing the secrets as arguments to the scripts since the operating system on the agent may log invocation of processes including their arguments.
 
 ### Ignore a release gate for a deployment
 
@@ -186,8 +186,7 @@ Previously, you had been able to use npmjs.com, and other VSTS feeds, as npm ups
 ### Improved experiences in the Test tab
 
 > [!IMPORTANT]
-> Enable the **New build hub** and **New release progress views**
-> [preview features](/azure/devops/project/navigation/preview-features?view=azure-devops) to use these new capabilities.
+> Enable the **New build hub** and **New release progress views** > [preview features](/azure/devops/project/navigation/preview-features?view=azure-devops) to use these new capabilities.
 
 Along with the new **Builds** hub and new [Release](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress) progress views, a modern experience for the **Test** tab is now available. This gives you rich in-context test information for **Builds** and **Release**. The new experience provides an in-progress test view, full page debugging experience, in context test history, reporting aborted test execution, and run level summary.
 

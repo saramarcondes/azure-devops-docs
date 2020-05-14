@@ -43,9 +43,9 @@ The data that appears in the Bug Status report is derived from the data warehous
 
 You can filter the Bug Status report in the following ways:
 
-* Change the start and end dates for the report.
+- Change the start and end dates for the report.
 
-* Filter the bugs that are counted in the report by specifying iteration and area paths, bug state, priority, and severity.
+- Filter the bugs that are counted in the report by specifying iteration and area paths, bug state, priority, and severity.
 
   For more information, see [Filtering the Report and Changing the Display](#Changing) later in this article.
 
@@ -56,16 +56,16 @@ For the Bug Status report to be useful and accurate, the team must perform the f
 > [!NOTE]
 > The team can use the Triage Workbook to review, rank, prioritize, and assign bugs. For more information, see [Workbooks](../sharepoint-dashboards/workbooks.md) .
 
-* Define bugs, and specify their **Iteration** and **Area** paths.
+- Define bugs, and specify their **Iteration** and **Area** paths.
 
-* Specify the **Priority** and **Severity** of each bug.
+- Specify the **Priority** and **Severity** of each bug.
 
   > [!NOTE]
   > For information about how to define area and iteration paths, see [Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) .
 
-* Assign each bug to the team member who is working to resolve or close it.
+- Assign each bug to the team member who is working to resolve or close it.
 
-* Update the state of each bug as it is fixed, verified, and closed.
+- Update the state of each bug as it is fixed, verified, and closed.
 
 ## <a name="Duration"></a> Setting the Duration of the Iteration
 
@@ -85,17 +85,17 @@ You should expect the Bug Status report to vary based on where you are in your p
 
 You can review the report to determine the progress within an iteration or over time. Specifically, you can find answers to the following questions:
 
-* How quickly is the team resolving and closing bugs?
+- How quickly is the team resolving and closing bugs?
 
-* Is the team fixing bugs quickly enough to finish on time?
+- Is the team fixing bugs quickly enough to finish on time?
 
-* Is the team fixing high priority bugs first?
+- Is the team fixing high priority bugs first?
 
-* What is the distribution of bugs by priority and severity?
+- What is the distribution of bugs by priority and severity?
 
-* How many bugs are assigned to each team member?
+- How many bugs are assigned to each team member?
 
-* Does any team member need help to resolve or close bugs?
+- Does any team member need help to resolve or close bugs?
 
 ### Healthy Version of Report
 
@@ -123,11 +123,11 @@ An unhealthy Bug Status report shows one or more of the indicators that the foll
 
 You can filter the Bug Status report or change its display in the following ways:
 
-* Change the start and end dates for the report.
+- Change the start and end dates for the report.
 
-* Filter the set of bugs that are counted by changing the iteration paths, the area paths, the state, the severity, or the priority.
+- Filter the set of bugs that are counted by changing the iteration paths, the area paths, the state, the severity, or the priority.
 
-* Change the grouping based on priority or severity.
+- Change the grouping based on priority or severity.
 
   The following illustration shows the available filters and display options:
 
@@ -137,9 +137,9 @@ You can filter the Bug Status report or change its display in the following ways
 
 1.  Perform one or both of the following actions:
 
-    * In the **Iteration** and **Area** lists, select the check box of each iteration or product area to include.
+    - In the **Iteration** and **Area** lists, select the check box of each iteration or product area to include.
 
-    * In the **State**, **Priority**, and **Severity** lists, select the check box of each state, priority, and severity to include.
+    - In the **State**, **Priority**, and **Severity** lists, select the check box of each state, priority, and severity to include.
 
 2.  Click **View Report**.
 

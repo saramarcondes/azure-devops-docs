@@ -42,11 +42,11 @@ You must have [Project Collection Administrator or organization Owner permission
 
 4.  Complete the form based on the following guidance, and then select **Add**.
 
-    * **Users**: Enter the email address for the user account. You can add several email addresses by separating them with a semicolon (;). Note that for Microsoft accounts (MSAs), the email addresses display in red.
-    * **Access level**: You can add up to 5 users (total including your own user account) with _Basic_ access. Otherwise, you can add an unlimited number of users with _Stakeholder_ access. In public projects, both the Stakeholder and the Basic access level grant full access to **Code**, **Work**, and **Build and Release**, but Stakeholders only get partial access to **Test** and **Dashboards**. To learn more, see [Default roles & access for public projects](default-roles-access-public.md).
-    * **Add to projects**: Select each public project that you want to add the user to.
-    * **Azure DevOps Groups**: Leave this entry at Project Contributors, the default security group for people who contribute to your project. To learn more, see [Default permissions and access assignments](../security/permissions-access.md).
-    * **Send email invites**: Check the box next to "Send email invites" to invite your new users via their email addresses.
+    - **Users**: Enter the email address for the user account. You can add several email addresses by separating them with a semicolon (;). Note that for Microsoft accounts (MSAs), the email addresses display in red.
+    - **Access level**: You can add up to 5 users (total including your own user account) with _Basic_ access. Otherwise, you can add an unlimited number of users with _Stakeholder_ access. In public projects, both the Stakeholder and the Basic access level grant full access to **Code**, **Work**, and **Build and Release**, but Stakeholders only get partial access to **Test** and **Dashboards**. To learn more, see [Default roles & access for public projects](default-roles-access-public.md).
+    - **Add to projects**: Select each public project that you want to add the user to.
+    - **Azure DevOps Groups**: Leave this entry at Project Contributors, the default security group for people who contribute to your project. To learn more, see [Default permissions and access assignments](../security/permissions-access.md).
+    - **Send email invites**: Check the box next to "Send email invites" to invite your new users via their email addresses.
 
     :::image type="content" source="media/invite-users/add-new-users-dialog.png" alt-text="Complete the form and the select Add":::
 
@@ -58,14 +58,14 @@ You must have [Project Collection Administrator or organization Owner permission
 <!---
 ## Add members to your public project from your project page
 
- Are admins able to add new users from this page, or only users who have been previously added to the organization?  
+ Are admins able to add new users from this page, or only users who have been previously added to the organization?
 
 1. Add members from your project page.
-	> [!div class="mx-imgBorder"]  
+	> [!div class="mx-imgBorder"]
 	> ![Add members](media/create-public-project/add-members.png)
 
 1. Fill out the form.
-	> [!div class="mx-imgBorder"]  
+	> [!div class="mx-imgBorder"]
 	> ![Add members](media/create-public-project/add-member-form.png)
 -->
 

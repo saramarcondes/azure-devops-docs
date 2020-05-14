@@ -17,9 +17,9 @@ monikerRange: '>= tfs-2013'
 
 When undoing changes in Git, first decide what type of changes you are looking to undo. These changes fall into three categories:
 
-* Discard uncommitted changes to a file, bringing the file back to the version in the last commit.
-* Reset your local branch to a previous commit.
-* Revert changes pushed to a remote branch and shared with others.
+- Discard uncommitted changes to a file, bringing the file back to the version in the last commit.
+- Reset your local branch to a previous commit.
+- Revert changes pushed to a remote branch and shared with others.
 
 If you just need to make small updates such as to fix a typo or small problem introduced in your last commit, consider [amending your previous commit](commits.md) or fixing the change
 in a new commit instead of any of these other steps.
@@ -28,9 +28,9 @@ In this tutorial you learn how to:
 
 > [!div class="checklist"]
 >
-> * Discard uncommitted changes to a single file
-> * Revert changes in shared commits
-> * Reset a branch to a previous state
+> - Discard uncommitted changes to a single file
+> - Revert changes in shared commits
+> - Reset a branch to a previous state
 
 ## Discard uncommitted changes to a single file
 

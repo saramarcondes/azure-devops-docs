@@ -22,8 +22,8 @@ In this article, learn how to change the Azure subscription that your organizati
 
 ## Prerequisites
 
-* To change or remove your billing subscription, you must be a member of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) or be the [organization Owner](../security/lookup-organization-owner-admin.md).
-* To change your Azure billing subscription, you must be added [as an Owner or Contributor to an Azure subscription](add-backup-billing-managers.md) that you can use to purchase.
+- To change or remove your billing subscription, you must be a member of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) or be the [organization Owner](../security/lookup-organization-owner-admin.md).
+- To change your Azure billing subscription, you must be added [as an Owner or Contributor to an Azure subscription](add-backup-billing-managers.md) that you can use to purchase.
 
 <a id="change-subscription" />
 
@@ -61,7 +61,7 @@ In this article, learn how to change the Azure subscription that your organizati
 
 ## Related articles
 
-* [Buy Basic access for users](buy-basic-access-add-users.md)
-* [Buy Azure Test Plans](buy-basic-access-add-users.md)
-* [Buy CI/CD](buy-more-build-vs.md)
-* [Sign up for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)
+- [Buy Basic access for users](buy-basic-access-add-users.md)
+- [Buy Azure Test Plans](buy-basic-access-add-users.md)
+- [Buy CI/CD](buy-more-build-vs.md)
+- [Sign up for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)

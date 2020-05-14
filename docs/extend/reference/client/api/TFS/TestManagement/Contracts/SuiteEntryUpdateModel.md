@@ -11,8 +11,8 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Members
 
-* `sequenceNumber`: number.
+- `sequenceNumber`: number.
 
-* `testCaseId`: number.
+- `testCaseId`: number.
 
-* `childSuiteId`: number.
+- `childSuiteId`: number.

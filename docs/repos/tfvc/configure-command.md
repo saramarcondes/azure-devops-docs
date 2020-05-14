@@ -17,11 +17,11 @@ monikerRange: '>= tfs-2015'
 
 Enables an administrator to view and change the following configuration settings for a project in the **Source Control Settings** dialog box:
 
-* Check-out settings
+- Check-out settings
 
-* Check-in policies
+- Check-in policies
 
-* Check-in notes
+- Check-in notes
 
 **Required Permissions**
 
@@ -48,11 +48,11 @@ tf configure [PathOfTeamProject] [/collection:TeamProjectCollectionUrl][/login:u
 
 You can manage the following project settings using the **configure** command:
 
-* **Check-out settings** can be used to determine whether multiple users can edit files at the same time. Also, they can be used to configure the get latest on check-out behavior.
+- **Check-out settings** can be used to determine whether multiple users can edit files at the same time. Also, they can be used to configure the get latest on check-out behavior.
 
-* **Check-in policies** provide controls that are invoked at check-in time, to make sure that defined criteria are met before a user checks in pending changes.
+- **Check-in policies** provide controls that are invoked at check-in time, to make sure that defined criteria are met before a user checks in pending changes.
 
-* **Check-in notes** define custom fields into which users provide information during the check-in process. Check-in notes can be either required or optional.
+- **Check-in notes** define custom fields into which users provide information during the check-in process. Check-in notes can be either required or optional.
 
 The settings are configured in the **Source Control Settings** dialog box which appears after you run the **configure** command. When you complete your changes, click **OK** to save them to the server.
 

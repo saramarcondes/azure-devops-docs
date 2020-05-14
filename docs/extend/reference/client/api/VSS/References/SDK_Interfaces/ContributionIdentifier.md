@@ -19,10 +19,10 @@ Identifier for contributions and contribution types
 
 ### Members
 
-* `extensionId`: string. The extension ID
+- `extensionId`: string. The extension ID
 
-* `id`: string. The full/unique identifier of the contribution/contributionType
+- `id`: string. The full/unique identifier of the contribution/contributionType
 
-* `publisherId`: string. The publisher ID
+- `publisherId`: string. The publisher ID
 
-* `relativeId`: string. The extension-relative contribution ID
+- `relativeId`: string. The extension-relative contribution ID

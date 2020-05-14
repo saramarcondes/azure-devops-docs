@@ -287,5 +287,5 @@ Now that your server is running and listening for service hook notifications, cr
 
 ## Next Steps
 
-* In this article, you learned the basics of how to create a serverless Azure function that listens for PR events via service hooks and can post status messages using the status API. For more information about the pull request status API see the [REST API documentation](https://go.microsoft.com/fwlink/?linkid=854107).
-* [Configure a branch policy for an external service](https://go.microsoft.com/fwlink/?linkid=854109).
+- In this article, you learned the basics of how to create a serverless Azure function that listens for PR events via service hooks and can post status messages using the status API. For more information about the pull request status API see the [REST API documentation](https://go.microsoft.com/fwlink/?linkid=854107).
+- [Configure a branch policy for an external service](https://go.microsoft.com/fwlink/?linkid=854109).

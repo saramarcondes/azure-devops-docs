@@ -42,21 +42,21 @@ The following example specifies a work item task that reminds project administra
 >
 > ```XML
 > <task id="WIT_Instances" name="Work Item tasks definitions" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work item instances created">
->    <dependencies>  
->       <dependency taskId="WITs" />  
->    </dependencies>  
->    <taskXml>  
->        <WORKITEMS>  
->        <WI type="Task">  
->           <FIELD refname="System.Title" value="Setup: Set Permissions" />  
->           <FIELD refname="System.IterationPath" value="$$PROJECTNAME$$\Iteration 0" />  
->           <FIELD refname="System.State" value="Active" />  
->           <FIELD refname="System.Reason" value="New" />  
->           <FIELD refname="System.Description" value="Using the admin UI in Visual Studio adds team members to one of the three groups: Project administrators, Contributors, or Readers." />  
->          </WI>  
->       </WORKITEMS>  
->    </taskXml>  
-> </task>  
+>    <dependencies>
+>       <dependency taskId="WITs" />
+>    </dependencies>
+>    <taskXml>
+>        <WORKITEMS>
+>        <WI type="Task">
+>           <FIELD refname="System.Title" value="Setup: Set Permissions" />
+>           <FIELD refname="System.IterationPath" value="$$PROJECTNAME$$\Iteration 0" />
+>           <FIELD refname="System.State" value="Active" />
+>           <FIELD refname="System.Reason" value="New" />
+>           <FIELD refname="System.Description" value="Using the admin UI in Visual Studio adds team members to one of the three groups: Project administrators, Contributors, or Readers." />
+>          </WI>
+>       </WORKITEMS>
+>    </taskXml>
+> </task>
 > ```
 
 <a name="elements"></a>
@@ -68,15 +68,15 @@ The following syntax shows the structure of the **WORKITEMS** element and its ch
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <WORKITEMS>  
->       <WI type="TypeA">  
->       <FIELD refname="Field1" value="Value1" />  
->       <FIELD refname="Field2" value="Value2" />  
->       . . .  
->       <FIELD refname="FieldN" value="ValueN" />  
->       </WI>  
->       . . .  
-> </WORKITEMS>  
+> <WORKITEMS>
+>       <WI type="TypeA">
+>       <FIELD refname="Field1" value="Value1" />
+>       <FIELD refname="Field2" value="Value2" />
+>       . . .
+>       <FIELD refname="FieldN" value="ValueN" />
+>       </WI>
+>       . . .
+> </WORKITEMS>
 > ```
 
 | Element       | Description and syntax                                                                                                                                                                                                                                                                      |
@@ -88,7 +88,7 @@ The following syntax shows the structure of the **WORKITEMS** element and its ch
 
 ## Related articles
 
-* [Customize a process](customize-process.md)
-* [Define objects for tracking work items](define-objects-track-work-items-plug-in.md)
+- [Customize a process](customize-process.md)
+- [Define objects for tracking work items](define-objects-track-work-items-plug-in.md)
 
 ::: moniker-end

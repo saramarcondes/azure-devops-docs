@@ -21,10 +21,10 @@ Global lists are pick lists that you can include in one or more fields and types
 
 You can define a global list within its own definition file, in the definition file for a type of work item, or in global workflow. The global-list definition manages the global lists that are defined for a collection. The global-list definition uses the following commands in the **witadmin** command-line tool:
 
-* **destroygloballist**: Destroys a global list.
-* **exportgloballist**: Exports the global lists to an XML file, or to the Command Prompt window. It exports a single file, which contains all global lists that have been defined for the project collection.
-* **importgloballist**: Imports global lists from an XML file. If you try to import a global list that already exists on the server, a warning asks if you want to overwrite the global list that is on the server. If you try to import a global list that does not already exist, the command creates a new global list.
-* **listgloballist**: Displays the name of each global list defined on the server.
+- **destroygloballist**: Destroys a global list.
+- **exportgloballist**: Exports the global lists to an XML file, or to the Command Prompt window. It exports a single file, which contains all global lists that have been defined for the project collection.
+- **importgloballist**: Imports global lists from an XML file. If you try to import a global list that already exists on the server, a warning asks if you want to overwrite the global list that is on the server. If you try to import a global list that does not already exist, the command creates a new global list.
+- **listgloballist**: Displays the name of each global list defined on the server.
 
 See [GLOBALLIST XML element reference](../xml/define-global-lists.md).
 
@@ -36,9 +36,9 @@ See [GLOBALLIST XML element reference](../xml/define-global-lists.md).
 
 For the project collection where the global lists are defined, you must have the following permissions set:
 
-* To export or list global lists, you must be a member of the **Project Collection Valid Users** group or have your **View collection-level information** permission set to **Allow**.
-* To import global lists, you must be a member of the **Project Collection Administrators** security group.
-* To destroy a global list using **witadmin destroygloballist**, you must be a member of the **Project Collection Administrators** security group.
+- To export or list global lists, you must be a member of the **Project Collection Valid Users** group or have your **View collection-level information** permission set to **Allow**.
+- To import global lists, you must be a member of the **Project Collection Administrators** security group.
+- To destroy a global list using **witadmin destroygloballist**, you must be a member of the **Project Collection Administrators** security group.
 
 > [!NOTE]  
 > Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the **Command Prompt** shortcut window, and choose **Run as Administrator**. For more information, see this page on the Microsoft Web site: [User Access Control](https://go.microsoft.com/fwlink/?LinkId=111235).
@@ -49,7 +49,7 @@ For the project collection where the global lists are defined, you must have the
 witadmin destroygloballist /collection:CollectionURL /n:GlobalListName [/noprompt] [/force]
 witadmin exportgloballist /collection:CollectionURL [/f:FileName] [/e:Encoding]
 witadmin importgloballist /collection:CollectionURL /f:FileName [/e:Encoding]
-witadmin listgloballist /collection:CollectionURL  
+witadmin listgloballist /collection:CollectionURL
 ```
 
 ### Parameters
@@ -70,8 +70,8 @@ Importing a global list creates a list if one does not exist. If the list alread
 To create a new global list, start with the following code and modify it as needed. This example defines a global list of disciplines that you can assign to tasks.
 
 ```xml
-<?xml version="1.0" encoding="utf-8"?>  
-<gl:GLOBALLISTS xmlns:gl="http://schemas.microsoft.com/VisualStudio/2005/workitemtracking/globallists"> <GLOBALLIST name="Disciplines"> <LISTITEM value="Architecture" /> <LISTITEM value="Requirements" /> <LISTITEM value="Development" /> <LISTITEM value="Release Management" /> <LISTITEM value="Project Management" /> <LISTITEM value="Test" /> </GLOBALLIST></gl:GLOBALLISTS>  
+<?xml version="1.0" encoding="utf-8"?>
+<gl:GLOBALLISTS xmlns:gl="http://schemas.microsoft.com/VisualStudio/2005/workitemtracking/globallists"> <GLOBALLIST name="Disciplines"> <LISTITEM value="Architecture" /> <LISTITEM value="Requirements" /> <LISTITEM value="Development" /> <LISTITEM value="Release Management" /> <LISTITEM value="Project Management" /> <LISTITEM value="Test" /> </GLOBALLIST></gl:GLOBALLISTS>
 ```
 
 Don't include project-scoped security groups within a global list, because global lists are scoped to a collection and not a project.
@@ -79,12 +79,12 @@ Don't include project-scoped security groups within a global list, because globa
 To add a global list to a field, export the definition for the work item type that contains the field and add it to the field definition, as shown in the following example:
 
 ```xml
-<FIELD name="Discipline" refname="Microsoft.VSTS.Common.Discipline" type="String">  
-  <HELPTEXT>The discipline to which the task belongs</HELPTEXT>  
-  <ALLOWEDVALUES>  
-     <GLOBALLIST name="Disciplines" />  
-  </ALLOWEDVALUES>  
-</FIELD>  
+<FIELD name="Discipline" refname="Microsoft.VSTS.Common.Discipline" type="String">
+  <HELPTEXT>The discipline to which the task belongs</HELPTEXT>
+  <ALLOWEDVALUES>
+     <GLOBALLIST name="Disciplines" />
+  </ALLOWEDVALUES>
+</FIELD>
 ```
 
 To view the changes, import the type definition and refresh your browser or client cache. You might need to close any work items that reference the field and reopen them.
@@ -95,8 +95,8 @@ For information about export and import of type definitions, see [Import, export
 
 Unless otherwise specified, the following values apply in each example:
 
-* URI for the project collection: http://AdventureWorksServer:8080/tfs/DefaultCollection
-* Server Web site port number: 8080
+- URI for the project collection: http://AdventureWorksServer:8080/tfs/DefaultCollection
+- Server Web site port number: 8080
 
 ### Display the names of global lists
 
@@ -111,13 +111,13 @@ witadmin listgloballist /collection:http://AdventureWorksServer:8080/tfs/Default
 The following example exports the global lists:
 
 ```
-witadmin exportgloballist /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /f:C:mygloballists.xml  
+witadmin exportgloballist /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /f:C:mygloballists.xml
 ```
 
 The following example exports the same global lists to the same server, but uses Unicode (UTF-7) encoding:
 
 ```
-witadmin exportgloballist /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /f:C:mygloballists.xml /e:utf-7  
+witadmin exportgloballist /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /f:C:mygloballists.xml /e:utf-7
 ```
 
 ### Import the definition of global lists
@@ -131,11 +131,11 @@ witadmin importgloballist /collection:http://AdventureWorksServer:8080/tfs/Defau
 The following example imports the same global lists to the same server, but uses Unicode (UTF-7) encoding:
 
 ```
-witadmin importgloballist /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /f:C:mygloballists.xml /e utf-7  
+witadmin importgloballist /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /f:C:mygloballists.xml /e utf-7
 ```
 
 ## Related articles
 
-* [GLOBALLIST XML element reference](../xml/define-global-lists.md)
-* [Customize global workflow](../xml/global-workflow-xml-element-reference.md)
-* [witAdmin: Customize and manage objects for tracking work](witadmin-customize-and-manage-objects-for-tracking-work.md)
+- [GLOBALLIST XML element reference](../xml/define-global-lists.md)
+- [Customize global workflow](../xml/global-workflow-xml-element-reference.md)
+- [witAdmin: Customize and manage objects for tracking work](witadmin-customize-and-manage-objects-for-tracking-work.md)

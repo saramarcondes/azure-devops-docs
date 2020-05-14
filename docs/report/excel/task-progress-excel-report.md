@@ -37,11 +37,11 @@ You can use the Task Progress report to track how much work remains to be comple
 
 For the Task Progress report to be useful and accurate, the team must perform the following activities:
 
-* Define Tasks.
+- Define Tasks.
 
-* Change the **State** of each Task to **Closed** as the team completes it.
+- Change the **State** of each Task to **Closed** as the team completes it.
 
-* (optional) Specify the **Iteration** and **Area** paths of each Task if you want to filter by those fields.
+- (optional) Specify the **Iteration** and **Area** paths of each Task if you want to filter by those fields.
 
 <a name="Interpreting"></a>
 
@@ -51,9 +51,9 @@ You should expect the Task Progress report to vary based on where you are in you
 
 You can review the report to determine the progress over time or during an iteration. Specifically, you can find answers to the following questions:
 
-* Is the team making progress toward closing Tasks?
+- Is the team making progress toward closing Tasks?
 
-* Is the team adding work?
+- Is the team adding work?
 
   For information about healthy and unhealthy versions of the report, see [Remaining Work](../sql-reports/remaining-work-report.md).
 
@@ -71,5 +71,5 @@ You can update the Task Progress report by opening the report in Office Excel an
 
 ## Related articles
 
-* [Excel reports](excel-reports.md)
-* [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)
+- [Excel reports](excel-reports.md)
+- [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)

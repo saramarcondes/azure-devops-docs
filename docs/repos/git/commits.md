@@ -22,19 +22,19 @@ In this tutorial you learn:
 
 > [!div class="checklist"]
 >
-> * How Git tracks changes
-> * What's in a commit
-> * How to stage your changes
-> * How to create a commit
-> * How to update your last commit
+> - How Git tracks changes
+> - What's in a commit
+> - How to stage your changes
+> - How to create a commit
+> - How to update your last commit
 
 ## How Git tracks changes
 
 Git tracks file changes in your repo as you work, and separates the files in your repo into three categories:
 
-* Unmodified files - These files haven't changed since your last commit.
-* Modified files - These files have changes since your last commit, but you haven't yet staged for the next commit.
-* Staged files - These files have changes that will be added to the next commit.
+- Unmodified files - These files haven't changed since your last commit.
+- Modified files - These files have changes since your last commit, but you haven't yet staged for the next commit.
+- Staged files - These files have changes that will be added to the next commit.
 
 ![Lifecycle of files in your repo between the three states](media/git_file_status_lifecycle.png)
 
@@ -52,9 +52,9 @@ Continue to create commits as you work, [pushing](pushing.md) your changes to th
 
 Commits include the following information:
 
-* A snapshot of the files saved in the commit. Git snapshots the contents of all files in your repo at the time of the commit&mdash;this makes switching versions very fast and helps Git [merge](merging.md) changes.
-* A reference to the parent commit(s). Commits with multiple parents occur when [branches](branches.md) are merged together.
-* A short and to the point message describing the changes in the commit. You enter this message when you create the commit.
+- A snapshot of the files saved in the commit. Git snapshots the contents of all files in your repo at the time of the commit&mdash;this makes switching versions very fast and helps Git [merge](merging.md) changes.
+- A reference to the parent commit(s). Commits with multiple parents occur when [branches](branches.md) are merged together.
+- A short and to the point message describing the changes in the commit. You enter this message when you create the commit.
 
 Git uses the references between commits along with the file snapshots to maintain a complete record of development in your repo.
 

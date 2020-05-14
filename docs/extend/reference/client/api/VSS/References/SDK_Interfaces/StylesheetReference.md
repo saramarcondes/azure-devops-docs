@@ -19,8 +19,8 @@ Reference to a CSS file to include on a page
 
 ### Members
 
-* `highContrastUrl`: string. Url of the high-contrast version of the CSS file
+- `highContrastUrl`: string. Url of the high-contrast version of the CSS file
 
-* `isCoreStylesheet`: boolean. Is this a core stylesheet that needs to be included in child frames
+- `isCoreStylesheet`: boolean. Is this a core stylesheet that needs to be included in child frames
 
-* `url`: string. Url of the CSS file
+- `url`: string. Url of the CSS file

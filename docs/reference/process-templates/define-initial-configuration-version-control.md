@@ -26,7 +26,7 @@ By using the plug-in for version control, you can configure a project's initial 
 
 In the XML file, you specify one or more tasks and their dependencies. Generally, you need only one task to configure settings for version control. For an example of a task that specifies these settings, see the VersionControl.xml file that is defined for the default process templates.
 
-The names of the file, the folder, and the plug-in for the default process templates are as follows:  
+The names of the file, the folder, and the plug-in for the default process templates are as follows:
 
 **File name**: VersionControl.xml  
 **Folder name**: Version Control  
@@ -41,7 +41,7 @@ You can control whether multiple people can check out a file at the same time by
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <exclusive_checkout required=""/>  
+> <exclusive_checkout required=""/>
 > ```
 
 If the **required** attribute is set to **true**, only one person can check out a file at a time. If this attribute set to **false**, multiple people can check out a file at the same time, and they must reconcile changes when they check in the file.
@@ -51,7 +51,7 @@ The following example shows how to require exclusive check-out:
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <exclusive_checkout required="true"/>  
+> <exclusive_checkout required="true"/>
 > ```
 
 ## <a name="Latest"></a> Get Latest on Check Out
@@ -61,7 +61,7 @@ You use the **get_latest_on_checkout** element to configure the default behavior
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <get_latest_on_checkout required=""/>  
+> <get_latest_on_checkout required=""/>
 > ```
 
 If the **required** attribute is set to **true**, the most recent version of an item, or tip, is downloaded every time that a user checks it out. This behavior resembles the check-out behavior in Visual SourceSafe.
@@ -73,7 +73,7 @@ The following example shows how to specify that the default check-out behavior i
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <get_latest_on_checkout required="true"/>  
+> <get_latest_on_checkout required="true"/>
 > ```
 
 ## <a name="Notes"></a> Check-in Notes
@@ -85,7 +85,7 @@ You use the following syntax for a checkin_note element
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <checkin_note label="" required="" order=""/>  
+> <checkin_note label="" required="" order=""/>
 > ```
 
 The following table describes the attributes of the checkin_note element.
@@ -101,12 +101,12 @@ The following example shows how to create an additional check-in note labeled "D
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <taskXml>  
->    <checkin_note label="Code Reviewer" required="false" order="1"/>  
->    <checkin_note label="Security Reviewer" required="false" order="2"/>  
+> <taskXml>
+>    <checkin_note label="Code Reviewer" required="false" order="1"/>
+>    <checkin_note label="Security Reviewer" required="false" order="2"/>
 >    <checkin_note label="Performance Reviewer" required="false" order="3"/>
->    <checkin_note label="Documentation Impact" required="false"/>  
-> </taskXml>  
+>    <checkin_note label="Documentation Impact" required="false"/>
+> </taskXml>
 > ```
 
 <a name="Permissions"></a>
@@ -144,5 +144,5 @@ The default assignments for TFVC and GIt permissions made to all default process
 
 ## Related articles
 
-* [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md)
-* [Code](../../repos/git/index.yml)
+- [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md)
+- [Code](../../repos/git/index.yml)

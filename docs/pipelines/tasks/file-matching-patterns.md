@@ -28,18 +28,18 @@ On case-sensitive filesystems, that pattern and name would not match.
 
 The following characters have special behavior.
 
-* `*` matches zero or more characters within a file or directory name. See <a href="#asterisk_examples">examples</a>.
-* `?` matches any single character within a file or directory name. See <a href="#question_mark_examples">examples</a>.
-* `[]` matches a set or range of characters within a file or directory name. See <a href="#character_set_examples">examples</a>.
-* `**` recursive wildcard. For example, `/hello/**/*` matches all descendants of `/hello`.
+- `*` matches zero or more characters within a file or directory name. See <a href="#asterisk_examples">examples</a>.
+- `?` matches any single character within a file or directory name. See <a href="#question_mark_examples">examples</a>.
+- `[]` matches a set or range of characters within a file or directory name. See <a href="#character_set_examples">examples</a>.
+- `**` recursive wildcard. For example, `/hello/**/*` matches all descendants of `/hello`.
 
 ### Extended globbing
 
-* `?(hello|world)` - matches `hello` or `world` zero or one times
-* `*(hello|world)` - zero or more occurrences
-* `+(hello|world)` - one or more occurrences
-* `@(hello|world)` - exactly once
-* `!(hello|world)` - not `hello` or `world`
+- `?(hello|world)` - matches `hello` or `world` zero or one times
+- `*(hello|world)` - zero or more occurrences
+- `+(hello|world)` - one or more occurrences
+- `@(hello|world)` - exactly once
+- `!(hello|world)` - not `hello` or `world`
 
 Note, extended globs cannot span directory separators. For example, `+(hello/world|other)` is not valid.
 

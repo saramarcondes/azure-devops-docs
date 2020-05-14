@@ -18,9 +18,9 @@ The [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops
 
 This page covers the required steps to make your integration or extension listing publicly available in the Marketplace.
 
-* Learn more about developing an [extension for Azure DevOps](../overview.md)
-* Learn more about [packaging and publishing an extension to the Marketplace](./overview.md)
-* Learn more about [packaging and publishing an integration to the Marketplace](./integration.md)
+- Learn more about developing an [extension for Azure DevOps](../overview.md)
+- Learn more about [packaging and publishing an extension to the Marketplace](./overview.md)
+- Learn more about [packaging and publishing an integration to the Marketplace](./integration.md)
 
 > As you are developing your extension or the content for your Marketplace page (for either an extension or integration), your extension can and should remain private. To make your extension available publicly, you need to set the [public flag](../develop/manifest.md#public-flag) to true in your manifest.
 
@@ -44,11 +44,11 @@ The Top Publisher program <img src="media/top-publisher.png" alt="Top Publisher 
 
 1.  For each public Azure DevOps offering under the publisher, ensure the presence of following:
 
-    * Comprehensive and up-to-date privacy policy
-    * Comprehensive and up-to-date license i.e. end user license agreement
-    * Comprehensive and up-to-date support policy. Your customers should be able to access your support URL and see a clear way to get support from you: file a ticket, email your support team, or other ways to contact you. Preferably offer support for about 8 hours a day for all business days in your local time zone for all your offerings. And a documented low response time for paid offerings for critical issues.
-    * Comprehensive and high quality documentation: this could be hosted in your domain, be within your offering, or hosted in a public GitHub repo. Customers should ideally get an overview, quickstart and how-to-guides.
-    * Timely and satisfactory responses to valid questions under the Q&A section: answer all valid questions under the Q&A section timely (roughly within a week) and satisfactorily. Responses to reviews are welcome too.
+    - Comprehensive and up-to-date privacy policy
+    - Comprehensive and up-to-date license i.e. end user license agreement
+    - Comprehensive and up-to-date support policy. Your customers should be able to access your support URL and see a clear way to get support from you: file a ticket, email your support team, or other ways to contact you. Preferably offer support for about 8 hours a day for all business days in your local time zone for all your offerings. And a documented low response time for paid offerings for critical issues.
+    - Comprehensive and high quality documentation: this could be hosted in your domain, be within your offering, or hosted in a public GitHub repo. Customers should ideally get an overview, quickstart and how-to-guides.
+    - Timely and satisfactory responses to valid questions under the Q&A section: answer all valid questions under the Q&A section timely (roughly within a week) and satisfactorily. Responses to reviews are welcome too.
 
     Refer the [extension manifest](../develop/manifest.md) on how to add policies to your offering.
 
@@ -56,16 +56,16 @@ The Top Publisher program <img src="media/top-publisher.png" alt="Top Publisher 
 
     Through publisher profile, you have a way to showcase all of your offerings in one place along with key publisher related information. To provide the information which shows up in the profile:
 
-    * Sign in to https://marketplace.visualstudio.com/manage/publishers using the account with which you publish and manage your offerings in Marketplace
-    * Select the publisher and fill in the About you section under the **Details** tab. Below is an example of the About you section for Microsoft (the publisher):  
+    - Sign in to https://marketplace.visualstudio.com/manage/publishers using the account with which you publish and manage your offerings in Marketplace
+    - Select the publisher and fill in the About you section under the **Details** tab. Below is an example of the About you section for Microsoft (the publisher):  
       <img src="media/microsoft-about-you-section.png" alt="Microsoft Details" width="800" />
-    * Save your changes and use the 'View profile' action towards the top of the page to see how your profile page appears to the consumers. You may use this profile page to evangelize your offering(s).
+    - Save your changes and use the 'View profile' action towards the top of the page to see how your profile page appears to the consumers. You may use this profile page to evangelize your offering(s).
 
 ### Apply to be a Top Publisher
 
-* Sign in to https://marketplace.visualstudio.com/manage/publishers using the account with which you publish and manage your offerings in Marketplace
-* Select the publisher and navigate to its **Top Publisher** tab. Note: you need to have one or more public Azure DevOps (Server/Service) extension or integration for the tab to appear.
-* If you meet part of the requirements stated above and are the publisher's owner, you see an option to apply for the program. On application, an email is sent to the Marketplace team to review your case. They respond in under 10 business days with next steps, clarifying questions or with the grant of the badge.
+- Sign in to https://marketplace.visualstudio.com/manage/publishers using the account with which you publish and manage your offerings in Marketplace
+- Select the publisher and navigate to its **Top Publisher** tab. Note: you need to have one or more public Azure DevOps (Server/Service) extension or integration for the tab to appear.
+- If you meet part of the requirements stated above and are the publisher's owner, you see an option to apply for the program. On application, an email is sent to the Marketplace team to review your case. They respond in under 10 business days with next steps, clarifying questions or with the grant of the badge.
 
 > The team likely looks at additional parameters, such as active uptake of your offerings, install/get started counts and ratings & reviews across your offerings before granting the badge. <br> Microsoft reserves the right to grant, reject or revoke the Top Publisher badge at any time.
 

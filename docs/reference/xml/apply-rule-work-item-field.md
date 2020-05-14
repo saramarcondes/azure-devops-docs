@@ -23,10 +23,10 @@ All of these rule elements can be defined within the **FIELD** definition of a w
 
 You can define any combination of rules to a field, subject to the constraints as described in this topic.
 
-* [Help text](#help-text): Use to specify tool-tip text to appear in a work item form for a field
-* [Pick list](#pick-list): Use to specify a drop-down menu or pick list of allowed, suggested, or prohibited values
-* [Assign value](#assign-value-rules): Use to define run-time behaviors and constraints that clear field values, copy values, match a pattern, make a field read-only and more
-* [Conditional](#conditional-rules): Use to specify when a set of rules will be applied to a parent field.
+- [Help text](#help-text): Use to specify tool-tip text to appear in a work item form for a field
+- [Pick list](#pick-list): Use to specify a drop-down menu or pick list of allowed, suggested, or prohibited values
+- [Assign value](#assign-value-rules): Use to define run-time behaviors and constraints that clear field values, copy values, match a pattern, make a field read-only and more
+- [Conditional](#conditional-rules): Use to specify when a set of rules will be applied to a parent field.
 
 Field rules are one component you have to customize work item tracking. To learn more, see [Customize work tracking objects to support your team's processes](../customize-work.md).
 
@@ -200,12 +200,12 @@ The **VALIDUSER** element is valid only for String field types. You can [allow o
 
 You can use the **VALIDUSER** rule only when you refer to person-name fields. The following system fields are examples of person-named fields:
 
--   Activated By (System.ActivatedBy)  
--   Assigned To (System.AssignedTo)  
--   Authorized As (System.AuthorizedAs)  
--   Changed By (System.ChangedBy)  
--   Closed By (System.ClosedBy)  
--   Created By (System.CreatedBy)  
+-   Activated By (System.ActivatedBy)
+-   Assigned To (System.AssignedTo)
+-   Authorized As (System.AuthorizedAs)
+-   Changed By (System.ChangedBy)
+-   Closed By (System.ClosedBy)
+-   Created By (System.CreatedBy)
 
 In addition to the system fields, you can create a custom string field and use it as a person-named field. Also, you can synchronize custom person-named fields with Active Directory (specify syncnamechanges="true").
 
@@ -254,7 +254,7 @@ You can specify multiple conditional rules per field. However, you can only spec
 
 You can make a pick list or assign value rule to apply or not apply to a group of users by using the <strong>for</strong> or <strong>not</strong> attributes. Scope the rule to a group. To have the rule scoped to multiple groups, you must create a parent Azure DevOps group that includes the set of groups that you want to use.
 
-* **Make a field required only for a specified group:**
+- **Make a field required only for a specified group:**
 
   Use **for** to apply a rule to a group. This example requires any user in the Junior Analysts group to complete the Second Approver field.
 
@@ -264,7 +264,7 @@ You can make a pick list or assign value rule to apply or not apply to a group o
   </FIELD>
   ```
 
-* **Restrict modification of a field to a group of users:**
+- **Restrict modification of a field to a group of users:**
 
   Use **not** to exclude a group from a rule. This example defines the Triage Description field as read-only for everyone except those users in the Triage Committee group.
 
@@ -274,7 +274,7 @@ You can make a pick list or assign value rule to apply or not apply to a group o
   </FIELD>
   ```
 
-* **Make a field required for some users and not for others:**
+- **Make a field required for some users and not for others:**
 
   Use a combination of **for** and **not** to simultaneously apply a rule to some and not for others. This example defines Severity as a required field for users in the Project Members group, but not for those in the Project Admins group.
 
@@ -294,7 +294,7 @@ When you restrict a rule to a group, you must indicate the domain or scope of th
 
 Person-name fields can accept values that reference both users and groups. Field attributes, for and not, apply to groups. You can use the following tokens when specifying values for these items.
 
-* **Scope to a group within a project &mdash;[Project]:**
+- **Scope to a group within a project &mdash;[Project]:**
 
   The [Project] token is used to specify a group that is defined for a project. This could correspond to a team, built-in TFS group, such as the [Project]\Contributors group, a custom TFS group you create at the project level, or a Windows group that you added to a TFS group.
 
@@ -302,18 +302,18 @@ Person-name fields can accept values that reference both users and groups. Field
 
   Some examples:
 
-  * Team: `[Project]\Fabrikam Team`
+  - Team: `[Project]\Fabrikam Team`
 
     When you create a team, a TFS group is created that contains the members assigned to the team.
 
-  * Project group: `[Project]\Contributors`
+  - Project group: `[Project]\Contributors`
 
-  * Windows group added to a project: `[Project]\Triage Committee`
+  - Windows group added to a project: `[Project]\Triage Committee`
 
   > [!TIP]  
   > You can view a list of valid groups by [opening the Security page](../../organizations/security/set-project-collection-level-permissions.md) in the web portal administration context.
 
-* **Scope to a project collection &mdash;[GLOBAL]:**
+- **Scope to a project collection &mdash;[GLOBAL]:**
 
   Use [GLOBAL] to reference a collection-scoped TFS group, such as the Project Collection Administrators group or a Windows group you add to a collection. For example:
 
@@ -323,7 +323,7 @@ Person-name fields can accept values that reference both users and groups. Field
   </FIELD>
   ```
 
-* **Scope to a server instance &mdash;[Team Foundation]:**
+- **Scope to a server instance &mdash;[Team Foundation]:**
 
   Use the [Team Foundation] token to reference a server-scoped TFS group, such as a built-in group or a Windows group you add to a server-level group. For example:
 
@@ -333,7 +333,7 @@ Person-name fields can accept values that reference both users and groups. Field
   </FIELD>
   ```
 
-* **Specify a domain qualified account or group:**
+- **Specify a domain qualified account or group:**
 
   Domain-qualified account name, such as the one shown in the following example, can be used to reference a domain user or group. Note that some rules only support groups and do not support referencing domain users.
 
@@ -357,16 +357,16 @@ To learn more about built-in groups, see [Permissions and groups](../../organiza
 
 System fields have System._Name_ reference names, for example System.Title and System.State. TFS restricts customization of these fields, except for these instances:
 
-* **HELPTEXT** rule can be assigned to all fields.
+- **HELPTEXT** rule can be assigned to all fields.
 
-* **READONLY** rule can be assigned to the State and Reason fields.
+- **READONLY** rule can be assigned to the State and Reason fields.
 
-* Most rules can be assigned to the Title, Assigned To, Description or Changed By System fields.
+- Most rules can be assigned to the Title, Assigned To, Description or Changed By System fields.
 
 ## Related articles
 
-* [Add or modify a field](../add-modify-field.md)
-* [All WITD XML elements reference](all-witd-xml-elements-reference.md)
+- [Add or modify a field](../add-modify-field.md)
+- [All WITD XML elements reference](all-witd-xml-elements-reference.md)
 
 ### Person-named fields and validation errors
 
@@ -399,15 +399,15 @@ Otherwise, specify a rule to be evaluated only during a change in state. These r
 
 Field rules are additive. That is, you can specify four sets of rules for the same field which will all be evaluated by the rule-engine.
 
-* **Work item type-specific** rules apply regardless of the location of a work item in its state model. For example, a `<REQUIRED \>` rule performs the following check:
+- **Work item type-specific** rules apply regardless of the location of a work item in its state model. For example, a `<REQUIRED \>` rule performs the following check:
 
   `"MyField Value" != NULL`
 
-* **State-specific** rules are scoped to a work item instance when it is in a certain state. A state-specific rule is enforced when the following condition is true:
+- **State-specific** rules are scoped to a work item instance when it is in a certain state. A state-specific rule is enforced when the following condition is true:
 
   `State field value == "MyState" && "MyField Value" != NULL`
 
-* **Transition-specific** rules that you specify for a specific transition are scoped to a work item that is undergoing a certain transition. These rules are enforced when the following conditions are true:
+- **Transition-specific** rules that you specify for a specific transition are scoped to a work item that is undergoing a certain transition. These rules are enforced when the following conditions are true:
 
   `State field value == "ToState" &&`
 
@@ -415,7 +415,7 @@ Field rules are additive. That is, you can specify four sets of rules for the sa
 
   `&& "MyField Value" != NULL`
 
-* **Reason-specific** rules that you specify for a specific reason are scoped to a particular reason for a particular transition. They are processed when the following conditions are true:
+- **Reason-specific** rules that you specify for a specific reason are scoped to a particular reason for a particular transition. They are processed when the following conditions are true:
 
   `Reason field == "MyReason" &&`
 

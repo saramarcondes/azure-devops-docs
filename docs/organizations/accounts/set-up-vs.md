@@ -36,9 +36,9 @@ Azure DevOps Services is free for [up to five users with access to Basic feature
 Learn [what else you get with Azure DevOps Services](https://visualstudio.microsoft.com/pricing/visual-studio-team-services-pricing-vs).
 If you want, you can also use Azure DevOps Services with any IDE or code editor, like the following examples:
 
-* [Eclipse, Android Studio, or IntelliJ](../../java/index.md)
-* Xcode (see [Git](../../repos/git/share-your-code-in-git-xcode.md) or [TFVC](../../repos/tfvc/share-your-code-in-tfvc-xcode.md))
-* [Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
+- [Eclipse, Android Studio, or IntelliJ](../../java/index.md)
+- Xcode (see [Git](../../repos/git/share-your-code-in-git-xcode.md) or [TFVC](../../repos/tfvc/share-your-code-in-tfvc-xcode.md))
+- [Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
 ## How do I set up Visual Studio 2015 for Azure DevOps Services when I sign in?
 
@@ -103,6 +103,6 @@ If you want, you can also use Azure DevOps Services with any IDE or code editor,
 
 ## Related articles
 
-* Add code to [Git](../../repos/git/share-your-code-in-git-vs.md) or [Team Foundation Version Control](../../repos/tfvc/share-your-code-in-tfvc-vs.md).
+- Add code to [Git](../../repos/git/share-your-code-in-git-vs.md) or [Team Foundation Version Control](../../repos/tfvc/share-your-code-in-tfvc-vs.md).
 
-* [Create your backlog](../../boards/backlogs/create-your-backlog.md) to organize your work, [manage your process](../../organizations/settings/work/manage-process.md), or [customize your process](../../organizations/settings/work/customize-process.md).
+- [Create your backlog](../../boards/backlogs/create-your-backlog.md) to organize your work, [manage your process](../../organizations/settings/work/manage-process.md), or [customize your process](../../organizations/settings/work/customize-process.md).

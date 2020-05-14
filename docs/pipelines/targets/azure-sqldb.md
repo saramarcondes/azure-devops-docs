@@ -207,9 +207,9 @@ When you set up a build pipeline, make sure that the SQL script to deploy the da
 
 When you set up a release pipeline, choose **Start with an Empty process**, link the artifacts from build, and then use the following tasks:
 
-* First, use an [Azure Powershell](../tasks/deploy/azure-powershell.md) task to add a firewall rule in Azure to allow the Azure Pipelines agent to connect to Azure SQL Database. The script requires one argument - the name of the SQL server you created.
-* Second, use a [Command line](../tasks/utility/command-line.md) task to run the SQL script using the **SQLCMD** tool. The arguments to this tool are `-S {database-server-name}.database.windows.net -U {username}@{database-server-name} -P {password} -d {database-name} -i {SQL file}` For example, when the SQL script is coming from an artifact source, **{SQL file}** will be of the form: `$(System.DefaultWorkingDirectory)/contoso-repo/DatabaseExample.sql`.
-* Third, use another [Azure Powershell](../tasks/deploy/azure-powershell.md) task to remove the firewall rule in Azure.
+- First, use an [Azure Powershell](../tasks/deploy/azure-powershell.md) task to add a firewall rule in Azure to allow the Azure Pipelines agent to connect to Azure SQL Database. The script requires one argument - the name of the SQL server you created.
+- Second, use a [Command line](../tasks/utility/command-line.md) task to run the SQL script using the **SQLCMD** tool. The arguments to this tool are `-S {database-server-name}.database.windows.net -U {username}@{database-server-name} -P {password} -d {database-name} -i {SQL file}` For example, when the SQL script is coming from an artifact source, **{SQL file}** will be of the form: `$(System.DefaultWorkingDirectory)/contoso-repo/DatabaseExample.sql`.
+- Third, use another [Azure Powershell](../tasks/deploy/azure-powershell.md) task to remove the firewall rule in Azure.
 
 ---
 
@@ -241,8 +241,8 @@ You may choose to deploy only certain builds to your Azure database.
 
 To do this in YAML, you can use one of these techniques:
 
-* Isolate the deployment steps into a separate job, and add a condition to that job.
-* Add a condition to the step.
+- Isolate the deployment steps into a separate job, and add a condition to that job.
+- Add a condition to the step.
 
 The following example shows how to use step conditions to deploy only those builds that originate from master branch.
 
@@ -272,10 +272,10 @@ YAML pipelines aren't available in TFS.
 
 In your release pipeline you can implement various checks and conditions to control the deployment.
 
-* Set **branch filters** to configure the **continuous deployment trigger** on the artifact of the release pipeline.
-* Set **pre-deployment approvals** as a pre-condition for deployment to a stage.
-* Configure **gates** as a pre-condition for deployment to a stage.
-* Specify conditions for a task to run.
+- Set **branch filters** to configure the **continuous deployment trigger** on the artifact of the release pipeline.
+- Set **pre-deployment approvals** as a pre-condition for deployment to a stage.
+- Configure **gates** as a pre-condition for deployment to a stage.
+- Specify conditions for a task to run.
 
 To learn more, see [Release, branch, and stage triggers](../release/triggers.md), [Release deployment control using approvals](../release/approvals/approvals.md), [Release deployment control using gates](../release/approvals/gates.md), and [Specify conditions for running a task](../process/conditions.md).
 

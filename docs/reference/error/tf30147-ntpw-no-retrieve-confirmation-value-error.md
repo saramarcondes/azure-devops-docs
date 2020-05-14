@@ -26,7 +26,7 @@ This error occurs when the New Team Project Wizard is building the **Confirm Tea
 
     2.  On the **File** menu, click **Open**.
 
-    3.  Navigate to $:\Documents and Settings\\_user name_\Local Settings\Temp\Team Services_TeamProjectCreation_yyyy_mm_dd_hh_mm_ss.log.
+    3.  Navigate to \$:\Documents and Settings\\_user name_\Local Settings\Temp\Team Services_TeamProjectCreation_yyyy_mm_dd_hh_mm_ss.log.
 
     4.  Click **Open**.
 
@@ -40,4 +40,4 @@ This error occurs when the New Team Project Wizard is building the **Confirm Tea
 
 ## Related articles
 
-* [Create a project](../../organizations/projects/create-project.md)
+- [Create a project](../../organizations/projects/create-project.md)

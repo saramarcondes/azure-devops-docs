@@ -19,8 +19,8 @@ Audit log for an extension
 
 ### Members
 
-* `entries`: [ExtensionAuditLogEntry](../../../VSS/References/SDK_Interfaces/ExtensionAuditLogEntry.md)[]. Collection of audit log entries
+- `entries`: [ExtensionAuditLogEntry](../../../VSS/References/SDK_Interfaces/ExtensionAuditLogEntry.md)[]. Collection of audit log entries
 
-* `extensionName`: string. Extension that the change was made for
+- `extensionName`: string. Extension that the change was made for
 
-* `publisherName`: string. Publisher that the extension is part of
+- `publisherName`: string. Publisher that the extension is part of

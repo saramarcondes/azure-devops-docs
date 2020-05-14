@@ -32,8 +32,8 @@ For an overview of all processes and workflows for all work item types, see [Cho
 
 Reasons you might want to change your process from Scrum to Agile:
 
-* You want to use User Story and Story Points instead of Product Backlog Item and Effort.
-* Your organization is requiring everyone to standardize their tracking with a customized inherited process based on the Agile process.
+- You want to use User Story and Story Points instead of Product Backlog Item and Effort.
+- Your organization is requiring everyone to standardize their tracking with a customized inherited process based on the Agile process.
 
 <!--- QUESTION: What happens to Analytics data when you do this change?  -->
 
@@ -91,9 +91,9 @@ Reasons you might want to change your process from Scrum to Agile:
 
     Steps to manually update your work items and board settings:
 
-    * Update the column to state mapping for each team Kanban board.
-    * Update existing work items using the work item types set by the target process.
-    * Update existing work items using the correct state model of the target process.
+    - Update the column to state mapping for each team Kanban board.
+    - Update existing work items using the work item types set by the target process.
+    - Update existing work items using the correct state model of the target process.
 
 ## Update Kanban board column-to-state settings
 
@@ -154,9 +154,9 @@ You can customize Kanban boards to display intermediate columns. For each column
 
 Your next step is to bulk update work items. The recommended sequence is:
 
-* Create a work item query that displays all work items that need update.
-* Perform a bulk update to change the work item type of Product Backlog Item work items to User Story.
-* Perform a bulk update on all States to change from Scrum states&mdash;Approved, Committed, and Done&mdash;to Agile process states&mdash;Active, Resolved, and Closed.
+- Create a work item query that displays all work items that need update.
+- Perform a bulk update to change the work item type of Product Backlog Item work items to User Story.
+- Perform a bulk update on all States to change from Scrum states&mdash;Approved, Committed, and Done&mdash;to Agile process states&mdash;Active, Resolved, and Closed.
 
 1.  [Create a query](../../../boards/queries/using-queries.md) to get a list of all Product Backlog Items, Impediments, Features, Tasks, and Epics. You will need to change the work item type of the first two work item types, and the State and Reason fields for all items.
 
@@ -219,16 +219,16 @@ Your next step is to bulk update work items. The recommended sequence is:
 
 After changing the process, you may want to make additional updates as follows:
 
-* [Change the project name](../../../organizations/projects/rename-project.md)
-* [Update your project summary or vision](../../../organizations/projects/project-vision-status.md)
-* Disable or delete the work item types that won't be used going forward. See [Customize a work item type for an inherited process](customize-process-wit.md#enable-disable)
+- [Change the project name](../../../organizations/projects/rename-project.md)
+- [Update your project summary or vision](../../../organizations/projects/project-vision-status.md)
+- Disable or delete the work item types that won't be used going forward. See [Customize a work item type for an inherited process](customize-process-wit.md#enable-disable)
 
 ## Related articles
 
-* [Bulk modify work items](../../../boards/backlogs/bulk-modify-work-items.md)
-* [Change the process used by a project](./manage-process.md#change-the-process-used-by-a-project)
-* [Create an inherited process](./manage-process.md#create-an-inherited-process)
-* [Add and manage work item types](./customize-process-wit.md)
-* [Show bugs on backlogs and boards](../show-bugs-on-backlog.md)
-* [Customize your boards](../../../boards/get-started/customize-boards.md)
-* [Create and saved managed queries with the query editor](../../../boards/queries/using-queries.md)
+- [Bulk modify work items](../../../boards/backlogs/bulk-modify-work-items.md)
+- [Change the process used by a project](./manage-process.md#change-the-process-used-by-a-project)
+- [Create an inherited process](./manage-process.md#create-an-inherited-process)
+- [Add and manage work item types](./customize-process-wit.md)
+- [Show bugs on backlogs and boards](../show-bugs-on-backlog.md)
+- [Customize your boards](../../../boards/get-started/customize-boards.md)
+- [Create and saved managed queries with the query editor](../../../boards/queries/using-queries.md)

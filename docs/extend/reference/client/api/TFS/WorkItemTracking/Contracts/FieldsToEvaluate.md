@@ -15,10 +15,10 @@ Module path: `TFS/WorkItemTracking/Contracts`
 
 ### Members
 
-* `fields`: string[].
+- `fields`: string[].
 
-* `fieldUpdates`: {[key: string]: any}.
+- `fieldUpdates`: {[key: string]: any}.
 
-* `fieldValues`: {[key: string]: any}.
+- `fieldValues`: {[key: string]: any}.
 
-* `rulesFrom`: string[].
+- `rulesFrom`: string[].

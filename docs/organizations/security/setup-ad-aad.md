@@ -25,8 +25,8 @@ Use this topic to access articles that show you how to:
 
 > [!div class="checklist"]
 >
-> * Set up Azure Active Directory for use with Azure DevOps Services
-> * Manage organizational access with Azure AD
+> - Set up Azure Active Directory for use with Azure DevOps Services
+> - Manage organizational access with Azure AD
 >   ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
@@ -35,7 +35,7 @@ Use this topic to access articles that show you how to:
 
 > [!div class="checklist"]
 >
-> * Set up Active Directory for use with on-premises Azure DevOps Server
+> - Set up Active Directory for use with on-premises Azure DevOps Server
 
 ::: moniker-end
 
@@ -46,15 +46,15 @@ Use this topic to access articles that show you how to:
 
 ## Set up Azure Active Directory for use with Azure DevOps Services
 
-* [About accessing Azure DevOps with Azure Active Directory (Azure AD)](../../organizations/accounts/access-with-azure-ad.md)
+- [About accessing Azure DevOps with Azure Active Directory (Azure AD)](../../organizations/accounts/access-with-azure-ad.md)
 
 ## Manage organizational access with Azure AD
 
-* [Add Azure DevOps users to your Azure AD](../../organizations/accounts/add-users-to-azure-ad.md)
-* [Connect Azure DevOps organization to Azure AD](../../organizations/accounts/connect-organization-to-azure-ad.md)
-* [Disconnect Azure DevOps organization from Azure AD](../../organizations/accounts/disconnect-organization-from-azure-ad.md)
-* [Delete users from Azure DevOps connected to Azure AD](../../organizations/accounts/delete-users-from-services-azure-ad.md)
-* [Troubleshoot access with Azure Active Directory](../../organizations/accounts/faq-azure-access.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json)
+- [Add Azure DevOps users to your Azure AD](../../organizations/accounts/add-users-to-azure-ad.md)
+- [Connect Azure DevOps organization to Azure AD](../../organizations/accounts/connect-organization-to-azure-ad.md)
+- [Disconnect Azure DevOps organization from Azure AD](../../organizations/accounts/disconnect-organization-from-azure-ad.md)
+- [Delete users from Azure DevOps connected to Azure AD](../../organizations/accounts/delete-users-from-services-azure-ad.md)
+- [Troubleshoot access with Azure Active Directory](../../organizations/accounts/faq-azure-access.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json)
 
 ::: moniker-end
 
@@ -64,8 +64,8 @@ Use this topic to access articles that show you how to:
 
 Use these resources to learn about installing Active Directory. Typically, you should install Active Directory prior to installing Azure DevOps Server.
 
-* [Install Active Directory Domain Services (Level 100)](/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)
-* [Active Directory Domain Services Getting Started](/windows-server/identity/ad-ds/ad-ds-getting-started)
+- [Install Active Directory Domain Services (Level 100)](/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)
+- [Active Directory Domain Services Getting Started](/windows-server/identity/ad-ds/ad-ds-getting-started)
 
 ::: moniker-end
 
@@ -75,8 +75,8 @@ Use these resources to learn about installing Active Directory. Typically, you s
 
 ## Related articles
 
-* [About security and identity](about-security-identity.md)
-* [How billing works](../../billing/overview.md)
-* [Set up billing to pay for users, pipelines, and cloud-based load testing in Azure DevOps](../../billing/set-up-billing-for-your-organization-vs.md)
-* [What is Azure Active Directory?](/azure/active-directory/active-directory-whatis)
-* [Get started with Azure AD](/azure/active-directory/get-started-azure-ad)
+- [About security and identity](about-security-identity.md)
+- [How billing works](../../billing/overview.md)
+- [Set up billing to pay for users, pipelines, and cloud-based load testing in Azure DevOps](../../billing/set-up-billing-for-your-organization-vs.md)
+- [What is Azure Active Directory?](/azure/active-directory/active-directory-whatis)
+- [Get started with Azure AD](/azure/active-directory/get-started-azure-ad)

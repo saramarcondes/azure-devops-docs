@@ -37,22 +37,22 @@ In order to create a Power BI report that references an Analytics view, you must
 
 ::: moniker range="azure-devops"
 
-* You must be a member of a project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md).
-* If you haven't been added as a team member, [get added now](/azure/devops/organizations/accounts/add-organization-users). Anyone with access to a project, except stakeholders, can view **Analytics views**.
-* Have the **View Analytics** permission set to **Allow**. See [Grant permissions to access Analytics](/azure/devops/report/powerbi/analytics-security).
-* Have installed _Power BI Desktop_ _February 2018 Update_ or later version. You can download this client application from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
-* Have tracked bugs for some period of time in order to generate a trend report.
+- You must be a member of a project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md).
+- If you haven't been added as a team member, [get added now](/azure/devops/organizations/accounts/add-organization-users). Anyone with access to a project, except stakeholders, can view **Analytics views**.
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions to access Analytics](/azure/devops/report/powerbi/analytics-security).
+- Have installed _Power BI Desktop_ _February 2018 Update_ or later version. You can download this client application from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
+- Have tracked bugs for some period of time in order to generate a trend report.
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-* You must be a member of a project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md).
-* If you haven't been added as a team member, [get added now](/azure/devops/organizations/accounts/add-organization-users). Anyone with access to a project, except stakeholders, can view **Analytics views**.
-* Have [enabled or installed Analytics](../dashboards/analytics-extension.md).
-* Have the **View Analytics** permission set to **Allow**. See [Grant permissions to access Analytics](/azure/devops/report/powerbi/analytics-security).
-* Have installed _Power BI Desktop_ _February 2018 Update_ or later version. You can download this client application from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
-* Have tracked bugs for some period of time in order to generate a trend report.
+- You must be a member of a project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md).
+- If you haven't been added as a team member, [get added now](/azure/devops/organizations/accounts/add-organization-users). Anyone with access to a project, except stakeholders, can view **Analytics views**.
+- Have [enabled or installed Analytics](../dashboards/analytics-extension.md).
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions to access Analytics](/azure/devops/report/powerbi/analytics-security).
+- Have installed _Power BI Desktop_ _February 2018 Update_ or later version. You can download this client application from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
+- Have tracked bugs for some period of time in order to generate a trend report.
 
 ::: moniker-end
 
@@ -129,7 +129,7 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 
 3.  Enter your organization name, the same Azure DevOps name you used to create the Active Bugs view, and the same project for which you defined the Active Bugs view.
 
-        ![Azure DevOps dialog, Organization and project name](media/create-report/specify-account.png)  
+        ![Azure DevOps dialog, Organization and project name](media/create-report/specify-account.png)
 
     ::: moniker-end
 
@@ -141,7 +141,7 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 
 3.  Enter the URL for your server and collection, the same project for which you defined the Active Bugs view.
 
-        ![Azure DevOps Server dialog, Collection and project name](media/create-report/specify-collection-project.png)  
+        ![Azure DevOps Server dialog, Collection and project name](media/create-report/specify-collection-project.png)
 
     ::: moniker-end
 
@@ -229,9 +229,9 @@ Analytics views provide you with a great deal of power and flexibility to filter
 
 ## Related articles
 
-* [Get started with Power BI Desktop](/power-bi/desktop-getting-started)
-* [Power BI integration overview](overview.md)
-* [Create Analytics views](analytics-views-create.md)
-* [Connect with Power BI Data Connector](./data-connector-connect.md)
-* [Dataset design for the Power BI Data Connector](data-connector-dataset.md)
-* [Functions available in Power BI Data Connector](data-connector-functions.md)
+- [Get started with Power BI Desktop](/power-bi/desktop-getting-started)
+- [Power BI integration overview](overview.md)
+- [Create Analytics views](analytics-views-create.md)
+- [Connect with Power BI Data Connector](./data-connector-connect.md)
+- [Dataset design for the Power BI Data Connector](data-connector-dataset.md)
+- [Functions available in Power BI Data Connector](data-connector-functions.md)

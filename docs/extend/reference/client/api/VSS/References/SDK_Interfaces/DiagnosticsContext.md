@@ -17,16 +17,16 @@ Defined in vss.d.ts
 
 ### Members
 
-* `activityId`: string. ID of the current activity
+- `activityId`: string. ID of the current activity
 
-* `allowStatsCollection`: boolean.
+- `allowStatsCollection`: boolean.
 
-* `debugMode`: boolean.
+- `debugMode`: boolean.
 
-* `sessionId`: string.
+- `sessionId`: string.
 
-* `tracePointCollectionEnabled`: boolean.
+- `tracePointCollectionEnabled`: boolean.
 
-* `tracePointProfileEnd`: string.
+- `tracePointProfileEnd`: string.
 
-* `tracePointProfileStart`: string.
+- `tracePointProfileStart`: string.

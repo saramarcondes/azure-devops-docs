@@ -21,9 +21,9 @@ service hook [consumer](./consumers.md) and action to take in response to that e
 
 ![service hook resources](./media/service-hook-resources.png)
 
-* [Consumers](./consumers.md)
-* [Publishers](./publishers.md)
-* [Subscriptions](./subscriptions.md)
+- [Consumers](./consumers.md)
+- [Publishers](./publishers.md)
+- [Subscriptions](./subscriptions.md)
 
 ## Common tasks
 

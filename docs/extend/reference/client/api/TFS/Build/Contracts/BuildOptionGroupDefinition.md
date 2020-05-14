@@ -16,8 +16,8 @@ Module path: `TFS/Build/Contracts`
 
 ### Members
 
-* `displayName`: string.
+- `displayName`: string.
 
-* `isExpanded`: boolean.
+- `isExpanded`: boolean.
 
-* `name`: string.
+- `name`: string.

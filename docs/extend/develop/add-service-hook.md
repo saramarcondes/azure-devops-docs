@@ -29,12 +29,12 @@ Subscriptions also target **consumers**, which are external services that can pe
 
 This tutorial walks through developing an extension that implements a **sample consumer service** that includes:
 
-* Supported events that trigger actions to be taken
-  * Code pushed
-  * Pull request created
-  * Pull request updated
-* Supported actions to take when events occur
-  * Perform action
+- Supported events that trigger actions to be taken
+  - Code pushed
+  - Pull request created
+  - Pull request updated
+- Supported actions to take when events occur
+  - Perform action
 
 > Note: This tutorial refers to the home directory for your project as "home".
 
@@ -145,9 +145,9 @@ The `contributions` stanza adds your contribution - the consumer service - to yo
 
 For each contribution in your extension, the manifest defines
 
-* the type of contribution - consumer service (ms.vss-servicehooks.consumer) in this case,
-* the contribution target - consumer services (ms.vss-servicehooks.consumers) in this case,
-* and the properties that are specific to each type of contribution. For a consumer service we have:
+- the type of contribution - consumer service (ms.vss-servicehooks.consumer) in this case,
+- the contribution target - consumer services (ms.vss-servicehooks.consumers) in this case,
+- and the properties that are specific to each type of contribution. For a consumer service we have:
 
 | Property         | Description                                                                           |
 | ---------------- | ------------------------------------------------------------------------------------- |
@@ -163,5 +163,5 @@ For each contribution in your extension, the manifest defines
 Now that you've written your extension, the next steps are to Package, Publish, and Install your extension. You can also check out the
 documentation for Testing and Debugging your extension.
 
-* [Package, publish, and install extensions](../publish/overview.md)
-* [Testing and debugging extensions](../test/debug-in-browser.md)
+- [Package, publish, and install extensions](../publish/overview.md)
+- [Testing and debugging extensions](../test/debug-in-browser.md)

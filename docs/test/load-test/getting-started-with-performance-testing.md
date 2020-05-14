@@ -31,15 +31,15 @@ in almost no time with Azure DevOps.
 
 ## Prepare your environment
 
-* [Download and install Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs),
+- [Download and install Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs),
   if you don't already have it.
 
-* [Create an Azure DevOps subscription](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs),
+- [Create an Azure DevOps subscription](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs),
   if you don't have one already. You can have any access
   level assigned to you in Azure DevOps
   when you use Visual Studio Enterprise to run load tests.
 
-* If you don't have a load test project,
+- If you don't have a load test project,
   use our sample load test project with your web site or app.
   Just provide the address for the web site that you want to test.
   Or, if you have a load test project, jump ahead to
@@ -76,16 +76,16 @@ connect Visual Studio to Azure DevOps.
 
     ![Select Projects](media/getting-started-with-performance-testing/LoadTestConnect2.png)
 
-    * If you haven't connected to Azure DevOps before, add it to the server list.
+    - If you haven't connected to Azure DevOps before, add it to the server list.
       Start by choosing the **Manage servers** link to open the connection dialog.
 
       ![Click Servers to add your Azure DevOps subscription](media/getting-started-with-performance-testing/LoadTestConnect3.png)
 
-    * Enter your Azure DevOps server URL.
+    - Enter your Azure DevOps server URL.
 
       ![Enter your subscription name](media/getting-started-with-performance-testing/LoadTestConnect4.png)
 
-    * If you're prompted to sign in to Azure DevOps, do that now.
+    - If you're prompted to sign in to Azure DevOps, do that now.
 
 1.  Select your Azure DevOps subscription from the list,
     then choose your project. Now you can connect.

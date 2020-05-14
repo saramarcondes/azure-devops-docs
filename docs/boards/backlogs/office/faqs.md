@@ -83,25 +83,25 @@ To bulk edit links of other types, you can use the following clients:
 
 ::: moniker range="azure-devops"
 
-* Use [Project](../../backlogs/office/create-your-backlog-tasks-using-project.md) to edit parent-child and predecessor-successor link relationships.
-* Use the web portal, to [map backlog items to portfolio backlog items](../../backlogs/organize-backlog.md) which creates parent-child links.
-* Use either the web portal or Team Explorer, to modify parent-child links by [dragging items within a hierarchical backlog page](../../backlogs/organize-backlog.md#reparent) or within a tree query.
-* Use the [az boards work-item relation add](/cli/azure/ext/azure-devops/boards/work-item/relation) command.
+- Use [Project](../../backlogs/office/create-your-backlog-tasks-using-project.md) to edit parent-child and predecessor-successor link relationships.
+- Use the web portal, to [map backlog items to portfolio backlog items](../../backlogs/organize-backlog.md) which creates parent-child links.
+- Use either the web portal or Team Explorer, to modify parent-child links by [dragging items within a hierarchical backlog page](../../backlogs/organize-backlog.md#reparent) or within a tree query.
+- Use the [az boards work-item relation add](/cli/azure/ext/azure-devops/boards/work-item/relation) command.
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-* Use the web portal, to [map backlog items to portfolio backlog items](../../backlogs/organize-backlog.md) which creates parent-child links.
-* Use either the web portal or Team Explorer, to modify parent-child links by [dragging items within a hierarchical backlog page](../../backlogs/organize-backlog.md#reparent) or within a tree query.
+- Use the web portal, to [map backlog items to portfolio backlog items](../../backlogs/organize-backlog.md) which creates parent-child links.
+- Use either the web portal or Team Explorer, to modify parent-child links by [dragging items within a hierarchical backlog page](../../backlogs/organize-backlog.md#reparent) or within a tree query.
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
-* Use [Project](../../backlogs/office/create-your-backlog-tasks-using-project.md) to edit parent-child and predecessor-successor link relationships.
-* Use the web portal, to [map backlog items to portfolio backlog items](../../backlogs/organize-backlog.md) which creates parent-child links.
-* Use either the web portal or Team Explorer, to modify parent-child links by [dragging items within a hierarchical backlog page](../../backlogs/organize-backlog.md#reparent) or within a tree query.
+- Use [Project](../../backlogs/office/create-your-backlog-tasks-using-project.md) to edit parent-child and predecessor-successor link relationships.
+- Use the web portal, to [map backlog items to portfolio backlog items](../../backlogs/organize-backlog.md) which creates parent-child links.
+- Use either the web portal or Team Explorer, to modify parent-child links by [dragging items within a hierarchical backlog page](../../backlogs/organize-backlog.md#reparent) or within a tree query.
 
 ::: moniker-end
 
@@ -133,9 +133,9 @@ If you start your worksheet from an existing query, you'll see all the column fi
 
 **A:** To resolve publishing errors, see one of these topics:
 
-* [Data conflicts](resolve-excel-data-conflicts-publish-refresh.md)
-* [Data validation errors](resolve-excel-data-validation-errors.md)
-* [Invalid links](resolve-excel-invalid-links-tree-list.md)
+- [Data conflicts](resolve-excel-data-conflicts-publish-refresh.md)
+- [Data validation errors](resolve-excel-data-validation-errors.md)
+- [Invalid links](resolve-excel-invalid-links-tree-list.md)
 
 ### Can I delete work items from Excel?
 
@@ -175,18 +175,18 @@ To drag a work item, select the work item or contiguous set of work items that y
 
 ::: moniker range="azure-devops"
 
-* [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md)
-* [Create your backlog](../../backlogs/create-your-backlog.md)
-* [Azure DevOps Office integration issues](tfs-office-integration-issues.md)
-* [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca)
+- [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md)
+- [Create your backlog](../../backlogs/create-your-backlog.md)
+- [Azure DevOps Office integration issues](tfs-office-integration-issues.md)
+- [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca)
   ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-* [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md)
-* [Create your backlog](../../backlogs/create-your-backlog.md)
-* [Create your backlog and tasks using Project](create-your-backlog-tasks-using-project.md)
-* [Azure DevOps Office integration issues](tfs-office-integration-issues.md)
-* [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca)
+- [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md)
+- [Create your backlog](../../backlogs/create-your-backlog.md)
+- [Create your backlog and tasks using Project](create-your-backlog-tasks-using-project.md)
+- [Azure DevOps Office integration issues](tfs-office-integration-issues.md)
+- [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca)
 
 ::: moniker-end

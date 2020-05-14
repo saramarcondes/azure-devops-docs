@@ -1,8 +1,8 @@
 [!INCLUDE [styleoverrides](../../../../_data/style-overrides.md)]
 
-* [getItem()](#method_getItem)
-* [getItems()](#method_getItems)
-* [updateCommandStates()](#method_updateCommandStates)
+- [getItem()](#method_getItem)
+- [getItems()](#method_getItems)
+- [updateCommandStates()](#method_updateCommandStates)
 
 <a name="method_getItem"></a>
 
@@ -16,7 +16,7 @@ MenuItem
 
 #### Parameters
 
-* `id`: string. ID associated with the menu item.
+- `id`: string. ID associated with the menu item.
 
 <a name="method_getItems"></a>
 
@@ -40,4 +40,4 @@ void
 
 #### Parameters
 
-* `commands`: ICommand[]. List of commands to update.
+- `commands`: ICommand[]. List of commands to update.

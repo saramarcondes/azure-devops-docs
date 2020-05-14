@@ -74,10 +74,10 @@ On the **Version Control** tab, select the repository in which you want to run G
 
 Grant permissions needed for the Git commands you want to run. Typically you'll want to grant:
 
-* **Create branch:** Allow
-* **Contribute:** Allow
-* **Read:** Allow
-* **Create tag:** Allow
+- **Create branch:** Allow
+- **Contribute:** Allow
+- **Read:** Allow
+- **Create tag:** Allow
 
 When you're done granting the permissions, make sure to click **Save changes**.
 
@@ -131,8 +131,8 @@ On the [options tab](../build/options.md) select **Allow scripts to access OAuth
 
 Certain kinds of changes to the local repository are not automatically cleaned up by the build pipeline. So make sure to:
 
-* Delete local branches you create.
-* Undo git config changes.
+- Delete local branches you create.
+- Undo git config changes.
 
 If you run into problems using an on-premises agent, make sure the repo is clean:
 
@@ -150,7 +150,7 @@ steps:
 
 # [Classic](#tab/classic)
 
-* On the [repository tab](../repos/pipeline-options-for-git.md#clean-the-local-repo-on-the-agent) set **Clean** to true.
+- On the [repository tab](../repos/pipeline-options-for-git.md#clean-the-local-repo-on-the-agent) set **Clean** to true.
 
 ---
 
@@ -158,9 +158,9 @@ steps:
 
 ::: moniker range="< azure-devops"
 
-* On the [repository tab](../repos/pipeline-options-for-git.md#clean-the-local-repo-on-the-agent) set **Clean** to true.
+- On the [repository tab](../repos/pipeline-options-for-git.md#clean-the-local-repo-on-the-agent) set **Clean** to true.
 
-* On the [variables tab](../build/variables.md) create or modify the `Build.Clean` variable and set it to `source`
+- On the [variables tab](../build/variables.md) create or modify the `Build.Clean` variable and set it to `source`
 
 ::: moniker-end
 
@@ -242,8 +242,8 @@ Yes
 
 Add `***NO_CI***` to your commit message. Here are examples:
 
-* `git commit -m "This is a commit message ***NO_CI***"`
-* `git merge origin/features/hello-world -m "Merge to master ***NO_CI***"`
+- `git commit -m "This is a commit message ***NO_CI***"`
+- `git merge origin/features/hello-world -m "Merge to master ***NO_CI***"`
 
 ::: moniker-end
 
@@ -251,17 +251,17 @@ Add `***NO_CI***` to your commit message. Here are examples:
 
 Add `[skip ci]` to your commit message or description. Here are examples:
 
-* `git commit -m "This is a commit message [skip ci]"`
-* `git merge origin/features/hello-world -m "Merge to master [skip ci]"`
+- `git commit -m "This is a commit message [skip ci]"`
+- `git merge origin/features/hello-world -m "Merge to master [skip ci]"`
 
 You can also use any of the variations below. This is supported for commits to Azure Repos Git, Bitbucket Cloud, GitHub, and GitHub Enterprise Server.
 
-* `[skip ci]` or `[ci skip]`
-* `skip-checks: true` or `skip-checks:true`
-* `[skip azurepipelines]` or `[azurepipelines skip]`
-* `[skip azpipelines]` or `[azpipelines skip]`
-* `[skip azp]` or `[azp skip]`
-* `***NO_CI***`
+- `[skip ci]` or `[ci skip]`
+- `skip-checks: true` or `skip-checks:true`
+- `[skip azurepipelines]` or `[azurepipelines skip]`
+- `[skip azpipelines]` or `[azpipelines skip]`
+- `[skip azp]` or `[azp skip]`
+- `***NO_CI***`
 
 ::: moniker-end
 

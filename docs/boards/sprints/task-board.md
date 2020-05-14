@@ -23,13 +23,13 @@ In this article you'll learn how to:
 
 > [!div class="checklist"]
 >
-> * Open the sprint **Taskboard** for your team
-> * Customize your **Taskboard**
-> * Use your **Taskboard** to review progress during daily scrum meetings
-> * Filter and group work items on your **Taskboard**
-> * Update the status of tasks through drag-and-drop
-> * Update remaining work
-> * Close out a sprint
+> - Open the sprint **Taskboard** for your team
+> - Customize your **Taskboard**
+> - Use your **Taskboard** to review progress during daily scrum meetings
+> - Filter and group work items on your **Taskboard**
+> - Update the status of tasks through drag-and-drop
+> - Update remaining work
+> - Close out a sprint
 
 If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that now.
 
@@ -38,10 +38,10 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 
 ## Prerequisites
 
-* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
-* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).
-* To add work items and exercise all board features, you must be granted **Basic** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
-* To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).
+- You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
+- You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).
+- To add work items and exercise all board features, you must be granted **Basic** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+- To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).
 
 > [!NOTE]  
 > Users with **Stakeholder** access can't exercise these **Taskboard** features: add tasks, update fields displayed on cards, or drag-and-drop tasks to update status or change sprint assignment.
@@ -110,16 +110,16 @@ Each team can customize their **Taskboard** in the following ways:
 
 ::: moniker range="azure-devops"
 
-* [Add or rename columns](customize-taskboard.md#add-columns).
-* [Customize cards](customize-taskboard.md#choose-fields) to show additional fields or change card color based on specified field criteria.
-* [Show bugs on the Taskboard](../../organizations/settings/show-bugs-on-backlog.md), your team can choose to manage bugs similar to product backlog items, as shown in this article, or manage them similar to tasks. When you track bugs similar to tasks, they'll show up on your sprint backlogs and **Taskboards** at the same level as tasks.
+- [Add or rename columns](customize-taskboard.md#add-columns).
+- [Customize cards](customize-taskboard.md#choose-fields) to show additional fields or change card color based on specified field criteria.
+- [Show bugs on the Taskboard](../../organizations/settings/show-bugs-on-backlog.md), your team can choose to manage bugs similar to product backlog items, as shown in this article, or manage them similar to tasks. When you track bugs similar to tasks, they'll show up on your sprint backlogs and **Taskboards** at the same level as tasks.
 
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
 
-* [Customize cards](../../boards/boards/customize-cards.md) that appear on the **Taskboard** to show additional fields.
-* [Show bugs on the Taskboard](../../organizations/settings/show-bugs-on-backlog.md), your team can choose to manage bugs similar to product backlog items, as shown in this article, or manage them similar to tasks. When you track bugs similar to tasks, they'll show up on your sprint backlogs and **Taskboards** at the same level as tasks.
+- [Customize cards](../../boards/boards/customize-cards.md) that appear on the **Taskboard** to show additional fields.
+- [Show bugs on the Taskboard](../../organizations/settings/show-bugs-on-backlog.md), your team can choose to manage bugs similar to product backlog items, as shown in this article, or manage them similar to tasks. When you track bugs similar to tasks, they'll show up on your sprint backlogs and **Taskboards** at the same level as tasks.
 
 Unlike the Kanban board for a product backlog, you can't add additional columns to the **Taskboard** via a team configuration setting. Instead, you need to modify the workflow definitions for the task work item type used by the project. This would update the columns for the **Taskboard** for all teams within the project.
 
@@ -129,8 +129,8 @@ Unlike the Kanban board for a product backlog, you can't add additional columns 
 
 An administrator can customize the **Taskboard** for all teams in the following ways:
 
-* [Add a custom workflow state to the task WIT for a process](../../organizations/settings/work/customize-process-workflow.md)
-* [Add a custom work item type to the Taskboard for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)
+- [Add a custom workflow state to the task WIT for a process](../../organizations/settings/work/customize-process-workflow.md)
+- [Add a custom work item type to the Taskboard for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)
 
 ::: moniker-end
 
@@ -140,14 +140,14 @@ An administrator can customize the **Taskboard** for all teams in the following 
 
 **Inherited process model:**
 
-* [Add a custom workflow state to the task WIT for a process](../../organizations/settings/work/customize-process-workflow.md)
-* [Add a custom work item type to the Taskboard for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)
+- [Add a custom workflow state to the task WIT for a process](../../organizations/settings/work/customize-process-workflow.md)
+- [Add a custom work item type to the Taskboard for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)
 
 **On-prem XML process model:**
 
-* [Add a custom workflow state to the task WIT for a process](../../organizations/settings/work/customize-process-workflow.md)
-* [Add a custom work item type to the Taskboard for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)
-*
+- [Add a custom workflow state to the task WIT for a process](../../organizations/settings/work/customize-process-workflow.md)
+- [Add a custom work item type to the Taskboard for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)
+-
 
 ::: moniker-end
 
@@ -155,8 +155,8 @@ An administrator can customize the **Taskboard** for all teams in the following 
 
 An administrator can customize the **Taskboard** for all teams in the following ways:
 
-* [Modify the workflow for the task WIT definition](../../reference/xml/change-workflow-wit.md).
-* [Add a work item type to a backlog or board](../../reference/add-wits-to-backlogs-and-boards.md).
+- [Modify the workflow for the task WIT definition](../../reference/xml/change-workflow-wit.md).
+- [Add a work item type to a backlog or board](../../reference/add-wits-to-backlogs-and-boards.md).
 
 ::: moniker-end
 
@@ -166,8 +166,8 @@ An administrator can customize the **Taskboard** for all teams in the following 
 
 During your daily Scrum, you can filter your **Taskboard** to help focus on items of interest.
 
-* Group by Backlog items or Group by stories to monitor progress of your product backlog items, stories, requirements, or bugs.
-* Group by People when you want to monitor progress of individual team members.
+- Group by Backlog items or Group by stories to monitor progress of your product backlog items, stories, requirements, or bugs.
+- Group by People when you want to monitor progress of individual team members.
 
 Use the Person filter when you want to focus on work assigned to individual team members.
 
@@ -289,9 +289,9 @@ Each team member can review the tasks they've worked on and estimate the work re
 
 At the end of the sprint, you'll want to perform these final tasks:
 
-* Zero out _Remaining Work_ of all completed tasks
-* Update the status of all completed backlog items
-* Drag incomplete backlog items and tasks to the next sprint or back to the product backlog.
+- Zero out _Remaining Work_ of all completed tasks
+- Update the status of all completed backlog items
+- Drag incomplete backlog items and tasks to the next sprint or back to the product backlog.
 
 Dragging an incomplete item to the product backlog or to a future sprint updates the Iteration Path of all uncompleted child tasks to correspond to the product backlog iteration path or future sprint.
 
@@ -310,11 +310,11 @@ Work with [sprint burndown](../../report/dashboards/configure-sprint-burndown.md
 
 As you can see, the taskboard provides a lot of support for your Scrum activities. For related topics, see:
 
-* [Scrum best practices](best-practices-scrum.md)
-* [Sprint planning](assign-work-sprint.md)
-* [Schedule sprints](define-sprints.md)
-* [Customize a sprint Taskboard](customize-taskboard.md)
-* [Capacity planning](../sprints/set-capacity.md)
+- [Scrum best practices](best-practices-scrum.md)
+- [Sprint planning](assign-work-sprint.md)
+- [Schedule sprints](define-sprints.md)
+- [Customize a sprint Taskboard](customize-taskboard.md)
+- [Capacity planning](../sprints/set-capacity.md)
 
 <!---
 <a id="task-board-controls">  </a>
@@ -345,8 +345,8 @@ You can reduce the number of items on the taskboard by moving them to the backlo
 
 ::: moniker range=">= tfs-2017"
 
-* From the taskboard, drag the PBI or user story from the first column onto the backlog or future sprint. All child tasks automatically move with the parent item.
-* From the sprint backlog, multi-select the items to move and then click the context menu for an item and select the iteration to move them to.
+- From the taskboard, drag the PBI or user story from the first column onto the backlog or future sprint. All child tasks automatically move with the parent item.
+- From the sprint backlog, multi-select the items to move and then click the context menu for an item and select the iteration to move them to.
 
 ![multi-select items from the sprint backlog](media/sprint-backlog-multi-select-non-sequential-items.png)
 ::: moniker-end
@@ -354,21 +354,21 @@ You can reduce the number of items on the taskboard by moving them to the backlo
 ::: moniker range="tfs-2015"
 Requires TFS 2015.1 or later version.
 
-* From the taskboard, drag the PBI or user story from the first column onto the backlog or future sprint. All child tasks automatically move with the parent item.
-* From the sprint backlog, multi-select the items to move and then click the context menu for an item and select the iteration to move them to.
+- From the taskboard, drag the PBI or user story from the first column onto the backlog or future sprint. All child tasks automatically move with the parent item.
+- From the sprint backlog, multi-select the items to move and then click the context menu for an item and select the iteration to move them to.
 
    <img src="media/sprint-backlog-multi-select-non-sequential-items.png" alt="multi-select items from the sprint backlog" style="border: 1px solid #C3C3C3;" />
   ::: moniker-end
 
 ::: moniker range="tfs-2013"
 
-* From the taskboard, drag the PBI or user story from the first column onto the backlog or future sprint.
+- From the taskboard, drag the PBI or user story from the first column onto the backlog or future sprint.
 
-* From the sprint backlog, drag an item back to the backlog or to another sprint.
+- From the sprint backlog, drag an item back to the backlog or to another sprint.
 
       	<img src="media/IC797613.png" alt="Drag items back to product backlog" style="border: 1px solid #C3C3C3;" />
 
-* If you need to move several items, you can create a query from the sprint backlog and then use the query to [bulk modify the iteration path](../backlogs/bulk-modify-work-items.md).
+- If you need to move several items, you can create a query from the sprint backlog and then use the query to [bulk modify the iteration path](../backlogs/bulk-modify-work-items.md).
   ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"

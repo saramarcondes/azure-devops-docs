@@ -18,11 +18,11 @@ ms.date: 04/21/2020
 
 In this article, learn how to configure a service hook to connect with Microsoft Teams. The functionality is the same across Azure DevOps Services and Team Foundation Server. But, the configuration process is different for creating a service hook with Microsoft Teams. You can see activity about your Azure DevOps Services or Team Foundation Server (2017.2 and later) projects directly in your Microsoft Teams channel, for example:
 
-* Work item updates
-* Pull requests
-* Code commits
-* Builds
-* Release deployments and approvals
+- Work item updates
+- Pull requests
+- Code commits
+- Builds
+- Release deployments and approvals
 
 You can also bring your Azure DevOps Services Kanban board directly into Microsoft Teams as a tab.
 
@@ -31,8 +31,8 @@ You can also bring your Azure DevOps Services Kanban board directly into Microso
 
 ## Prerequisites
 
-* You must be a member of the Project Administrators or [Project Collection Administrators group](../../organizations/security/lookup-organization-owner-admin.md) to configure the connector.
-* Third-party application access via OAuth must be enabled for the organization.
+- You must be a member of the Project Administrators or [Project Collection Administrators group](../../organizations/security/lookup-organization-owner-admin.md) to configure the connector.
+- Third-party application access via OAuth must be enabled for the organization.
 
   To enable this setting, navigate to **Organization settings** > **Security** > **Policies**, and then set the **Third-party application access via OAuth for the organization** setting to **On**.
 

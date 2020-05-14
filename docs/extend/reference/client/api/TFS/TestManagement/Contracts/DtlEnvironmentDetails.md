@@ -16,8 +16,8 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Members
 
-* `csmContent`: string.
+- `csmContent`: string.
 
-* `csmParameters`: string.
+- `csmParameters`: string.
 
-* `subscriptionName`: string.
+- `subscriptionName`: string.

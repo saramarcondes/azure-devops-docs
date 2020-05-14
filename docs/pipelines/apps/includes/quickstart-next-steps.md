@@ -11,4 +11,4 @@ You can modify these build and release pipelines to meet the needs of your team.
 
 [//]: # "TODO: change these links to new azure specific tutorials"
 
-* [Define your multi-stage continuous deployment (CD) pipeline](../../release/define-multistage-release-process.md)
+- [Define your multi-stage continuous deployment (CD) pipeline](../../release/define-multistage-release-process.md)

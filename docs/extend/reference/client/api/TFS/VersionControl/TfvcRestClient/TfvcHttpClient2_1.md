@@ -29,31 +29,31 @@ Module path: `TFS/VersionControl/TfvcRestClient`
 
 ### Methods
 
-* [createChangeset()](#method_createChangeset)
-* [getBatchedChangesets()](#method_getBatchedChangesets)
-* [getBranch()](#method_getBranch)
-* [getBranches()](#method_getBranches)
-* [getBranchRefs()](#method_getBranchRefs)
-* [getChangeset()](#method_getChangeset)
-* [getChangesetChanges()](#method_getChangesetChanges)
-* [getChangesets()](#method_getChangesets)
-* [getChangesetWorkItems()](#method_getChangesetWorkItems)
-* [getItem()](#method_getItem)
-* [getItemContent()](#method_getItemContent)
-* [getItems()](#method_getItems)
-* [getItemsBatch()](#method_getItemsBatch)
-* [getItemsBatchZip()](#method_getItemsBatchZip)
-* [getItemText()](#method_getItemText)
-* [getItemZip()](#method_getItemZip)
-* [getLabel()](#method_getLabel)
-* [getLabelItems()](#method_getLabelItems)
-* [getLabels()](#method_getLabels)
-* [getProjectInfo()](#method_getProjectInfo)
-* [getProjectInfos()](#method_getProjectInfos)
-* [getShelveset()](#method_getShelveset)
-* [getShelvesetChanges()](#method_getShelvesetChanges)
-* [getShelvesets()](#method_getShelvesets)
-* [getShelvesetWorkItems()](#method_getShelvesetWorkItems)
+- [createChangeset()](#method_createChangeset)
+- [getBatchedChangesets()](#method_getBatchedChangesets)
+- [getBranch()](#method_getBranch)
+- [getBranches()](#method_getBranches)
+- [getBranchRefs()](#method_getBranchRefs)
+- [getChangeset()](#method_getChangeset)
+- [getChangesetChanges()](#method_getChangesetChanges)
+- [getChangesets()](#method_getChangesets)
+- [getChangesetWorkItems()](#method_getChangesetWorkItems)
+- [getItem()](#method_getItem)
+- [getItemContent()](#method_getItemContent)
+- [getItems()](#method_getItems)
+- [getItemsBatch()](#method_getItemsBatch)
+- [getItemsBatchZip()](#method_getItemsBatchZip)
+- [getItemText()](#method_getItemText)
+- [getItemZip()](#method_getItemZip)
+- [getLabel()](#method_getLabel)
+- [getLabelItems()](#method_getLabelItems)
+- [getLabels()](#method_getLabels)
+- [getProjectInfo()](#method_getProjectInfo)
+- [getProjectInfos()](#method_getProjectInfos)
+- [getShelveset()](#method_getShelveset)
+- [getShelvesetChanges()](#method_getShelvesetChanges)
+- [getShelvesets()](#method_getShelvesets)
+- [getShelvesetWorkItems()](#method_getShelvesetWorkItems)
 
 <a name="method_createChangeset"></a>
 
@@ -67,12 +67,12 @@ Module path: `TFS/VersionControl/TfvcRestClient`
 
 ### Parameters
 
-* `changeset`: [TFS_VersionControl_Contracts.TfvcChangeset](../../../TFS/VersionControl/Contracts/TfvcChangeset.md).
-* `project`: string. Optional.
+- `changeset`: [TFS_VersionControl_Contracts.TfvcChangeset](../../../TFS/VersionControl/Contracts/TfvcChangeset.md).
+- `project`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcChangesetRef](../../../TFS/VersionControl/Contracts/TfvcChangesetRef.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcChangesetRef](../../../TFS/VersionControl/Contracts/TfvcChangesetRef.md)&gt;
 
 <a name="method_getBatchedChangesets"></a>
 
@@ -86,11 +86,11 @@ Module path: `TFS/VersionControl/TfvcRestClient`
 
 ### Parameters
 
-* `changesetsRequestData`: [TFS_VersionControl_Contracts.TfvcChangesetsRequestData](../../../TFS/VersionControl/Contracts/TfvcChangesetsRequestData.md).
+- `changesetsRequestData`: [TFS_VersionControl_Contracts.TfvcChangesetsRequestData](../../../TFS/VersionControl/Contracts/TfvcChangesetsRequestData.md).
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcChangesetRef](../../../TFS/VersionControl/Contracts/TfvcChangesetRef.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcChangesetRef](../../../TFS/VersionControl/Contracts/TfvcChangesetRef.md)[]&gt;
 
 <a name="method_getBranch"></a>
 
@@ -106,14 +106,14 @@ Get a single branch hierarchy at the given path with parents or children (if spe
 
 ### Parameters
 
-* `path`: string.
-* `project`: string. Optional.
-* `includeParent`: boolean. Optional.
-* `includeChildren`: boolean. Optional.
+- `path`: string.
+- `project`: string. Optional.
+- `includeParent`: boolean. Optional.
+- `includeChildren`: boolean. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcBranch](../../../TFS/VersionControl/Contracts/TfvcBranch.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcBranch](../../../TFS/VersionControl/Contracts/TfvcBranch.md)&gt;
 
 <a name="method_getBranches"></a>
 
@@ -129,15 +129,15 @@ Get a collection of branch roots -- first-level children, branches with no paren
 
 ### Parameters
 
-* `project`: string. Optional. Project ID or project name
-* `includeParent`: boolean. Optional.
-* `includeChildren`: boolean. Optional.
-* `includeDeleted`: boolean. Optional.
-* `includeLinks`: boolean. Optional.
+- `project`: string. Optional. Project ID or project name
+- `includeParent`: boolean. Optional.
+- `includeChildren`: boolean. Optional.
+- `includeDeleted`: boolean. Optional.
+- `includeLinks`: boolean. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcBranch](../../../TFS/VersionControl/Contracts/TfvcBranch.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcBranch](../../../TFS/VersionControl/Contracts/TfvcBranch.md)[]&gt;
 
 <a name="method_getBranchRefs"></a>
 
@@ -153,14 +153,14 @@ Get branch hierarchies below the specified scopePath
 
 ### Parameters
 
-* `scopePath`: string.
-* `project`: string. Optional.
-* `includeDeleted`: boolean. Optional.
-* `includeLinks`: boolean. Optional.
+- `scopePath`: string.
+- `project`: string. Optional.
+- `includeDeleted`: boolean. Optional.
+- `includeLinks`: boolean. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcBranchRef](../../../TFS/VersionControl/Contracts/TfvcBranchRef.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcBranchRef](../../../TFS/VersionControl/Contracts/TfvcBranchRef.md)[]&gt;
 
 <a name="method_getChangeset"></a>
 
@@ -176,21 +176,21 @@ Retrieve a Tfvc Changeset
 
 ### Parameters
 
-* `id`: number.
-* `project`: string. Optional.
-* `maxChangeCount`: number. Optional.
-* `includeDetails`: boolean. Optional.
-* `includeWorkItems`: boolean. Optional.
-* `maxCommentLength`: number. Optional.
-* `includeSourceRename`: boolean. Optional.
-* `skip`: number. Optional.
-* `top`: number. Optional.
-* `orderby`: string. Optional.
-* `searchCriteria`: [TFS_VersionControl_Contracts.TfvcChangesetSearchCriteria](../../../TFS/VersionControl/Contracts/TfvcChangesetSearchCriteria.md). Optional.
+- `id`: number.
+- `project`: string. Optional.
+- `maxChangeCount`: number. Optional.
+- `includeDetails`: boolean. Optional.
+- `includeWorkItems`: boolean. Optional.
+- `maxCommentLength`: number. Optional.
+- `includeSourceRename`: boolean. Optional.
+- `skip`: number. Optional.
+- `top`: number. Optional.
+- `orderby`: string. Optional.
+- `searchCriteria`: [TFS_VersionControl_Contracts.TfvcChangesetSearchCriteria](../../../TFS/VersionControl/Contracts/TfvcChangesetSearchCriteria.md). Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcChangeset](../../../TFS/VersionControl/Contracts/TfvcChangeset.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcChangeset](../../../TFS/VersionControl/Contracts/TfvcChangeset.md)&gt;
 
 <a name="method_getChangesetChanges"></a>
 
@@ -206,13 +206,13 @@ Retrieve Tfvc changes for a given changeset
 
 ### Parameters
 
-* `id`: number. Optional.
-* `skip`: number. Optional.
-* `top`: number. Optional.
+- `id`: number. Optional.
+- `skip`: number. Optional.
+- `top`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcChange](../../../TFS/VersionControl/Contracts/TfvcChange.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcChange](../../../TFS/VersionControl/Contracts/TfvcChange.md)[]&gt;
 
 <a name="method_getChangesets"></a>
 
@@ -228,20 +228,20 @@ Retrieve Tfvc changesets
 
 ### Parameters
 
-* `project`: string. Optional. Project ID or project name
-* `maxChangeCount`: number. Optional.
-* `includeDetails`: boolean. Optional.
-* `includeWorkItems`: boolean. Optional.
-* `maxCommentLength`: number. Optional.
-* `includeSourceRename`: boolean. Optional.
-* `skip`: number. Optional.
-* `top`: number. Optional.
-* `orderby`: string. Optional.
-* `searchCriteria`: [TFS_VersionControl_Contracts.TfvcChangesetSearchCriteria](../../../TFS/VersionControl/Contracts/TfvcChangesetSearchCriteria.md). Optional.
+- `project`: string. Optional. Project ID or project name
+- `maxChangeCount`: number. Optional.
+- `includeDetails`: boolean. Optional.
+- `includeWorkItems`: boolean. Optional.
+- `maxCommentLength`: number. Optional.
+- `includeSourceRename`: boolean. Optional.
+- `skip`: number. Optional.
+- `top`: number. Optional.
+- `orderby`: string. Optional.
+- `searchCriteria`: [TFS_VersionControl_Contracts.TfvcChangesetSearchCriteria](../../../TFS/VersionControl/Contracts/TfvcChangesetSearchCriteria.md). Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcChangesetRef](../../../TFS/VersionControl/Contracts/TfvcChangesetRef.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcChangesetRef](../../../TFS/VersionControl/Contracts/TfvcChangesetRef.md)[]&gt;
 
 <a name="method_getChangesetWorkItems"></a>
 
@@ -255,11 +255,11 @@ Retrieve Tfvc changesets
 
 ### Parameters
 
-* `id`: number. Optional.
+- `id`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.AssociatedWorkItem](../../../TFS/VersionControl/Contracts/AssociatedWorkItem.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.AssociatedWorkItem](../../../TFS/VersionControl/Contracts/AssociatedWorkItem.md)[]&gt;
 
 <a name="method_getItem"></a>
 
@@ -275,17 +275,17 @@ Get Item Metadata and/or Content. The download parameter is to indicate whether 
 
 ### Parameters
 
-* `path`: string.
-* `project`: string. Optional.
-* `fileName`: string. Optional.
-* `download`: boolean. Optional.
-* `scopePath`: string. Optional.
-* `recursionLevel`: [TFS_VersionControl_Contracts.VersionControlRecursionType](../../../TFS/VersionControl/Contracts/VersionControlRecursionType.md). Optional.
-* `versionDescriptor`: [TFS_VersionControl_Contracts.TfvcVersionDescriptor](../../../TFS/VersionControl/Contracts/TfvcVersionDescriptor.md). Optional.
+- `path`: string.
+- `project`: string. Optional.
+- `fileName`: string. Optional.
+- `download`: boolean. Optional.
+- `scopePath`: string. Optional.
+- `recursionLevel`: [TFS_VersionControl_Contracts.VersionControlRecursionType](../../../TFS/VersionControl/Contracts/VersionControlRecursionType.md). Optional.
+- `versionDescriptor`: [TFS_VersionControl_Contracts.TfvcVersionDescriptor](../../../TFS/VersionControl/Contracts/TfvcVersionDescriptor.md). Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcItem](../../../TFS/VersionControl/Contracts/TfvcItem.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcItem](../../../TFS/VersionControl/Contracts/TfvcItem.md)&gt;
 
 <a name="method_getItemContent"></a>
 
@@ -301,17 +301,17 @@ Get Item Metadata and/or Content. The download parameter is to indicate whether 
 
 ### Parameters
 
-* `path`: string.
-* `project`: string. Optional.
-* `fileName`: string. Optional.
-* `download`: boolean. Optional.
-* `scopePath`: string. Optional.
-* `recursionLevel`: [TFS_VersionControl_Contracts.VersionControlRecursionType](../../../TFS/VersionControl/Contracts/VersionControlRecursionType.md). Optional.
-* `versionDescriptor`: [TFS_VersionControl_Contracts.TfvcVersionDescriptor](../../../TFS/VersionControl/Contracts/TfvcVersionDescriptor.md). Optional.
+- `path`: string.
+- `project`: string. Optional.
+- `fileName`: string. Optional.
+- `download`: boolean. Optional.
+- `scopePath`: string. Optional.
+- `recursionLevel`: [TFS_VersionControl_Contracts.VersionControlRecursionType](../../../TFS/VersionControl/Contracts/VersionControlRecursionType.md). Optional.
+- `versionDescriptor`: [TFS_VersionControl_Contracts.TfvcVersionDescriptor](../../../TFS/VersionControl/Contracts/TfvcVersionDescriptor.md). Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
 
 <a name="method_getItems"></a>
 
@@ -327,15 +327,15 @@ Get a list of Tfvc items
 
 ### Parameters
 
-* `project`: string. Optional. Project ID or project name
-* `scopePath`: string. Optional.
-* `recursionLevel`: [TFS_VersionControl_Contracts.VersionControlRecursionType](../../../TFS/VersionControl/Contracts/VersionControlRecursionType.md). Optional.
-* `includeLinks`: boolean. Optional.
-* `versionDescriptor`: [TFS_VersionControl_Contracts.TfvcVersionDescriptor](../../../TFS/VersionControl/Contracts/TfvcVersionDescriptor.md). Optional.
+- `project`: string. Optional. Project ID or project name
+- `scopePath`: string. Optional.
+- `recursionLevel`: [TFS_VersionControl_Contracts.VersionControlRecursionType](../../../TFS/VersionControl/Contracts/VersionControlRecursionType.md). Optional.
+- `includeLinks`: boolean. Optional.
+- `versionDescriptor`: [TFS_VersionControl_Contracts.TfvcVersionDescriptor](../../../TFS/VersionControl/Contracts/TfvcVersionDescriptor.md). Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcItem](../../../TFS/VersionControl/Contracts/TfvcItem.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcItem](../../../TFS/VersionControl/Contracts/TfvcItem.md)[]&gt;
 
 <a name="method_getItemsBatch"></a>
 
@@ -351,12 +351,12 @@ Post for retrieving a set of items given a list of paths or a long path. Allows 
 
 ### Parameters
 
-* `itemRequestData`: [TFS_VersionControl_Contracts.TfvcItemRequestData](../../../TFS/VersionControl/Contracts/TfvcItemRequestData.md).
-* `project`: string. Optional.
+- `itemRequestData`: [TFS_VersionControl_Contracts.TfvcItemRequestData](../../../TFS/VersionControl/Contracts/TfvcItemRequestData.md).
+- `project`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcItem](../../../TFS/VersionControl/Contracts/TfvcItem.md)[][]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcItem](../../../TFS/VersionControl/Contracts/TfvcItem.md)[][]&gt;
 
 <a name="method_getItemsBatchZip"></a>
 
@@ -372,12 +372,12 @@ Post for retrieving a set of items given a list of paths or a long path. Allows 
 
 ### Parameters
 
-* `itemRequestData`: [TFS_VersionControl_Contracts.TfvcItemRequestData](../../../TFS/VersionControl/Contracts/TfvcItemRequestData.md).
-* `project`: string. Optional.
+- `itemRequestData`: [TFS_VersionControl_Contracts.TfvcItemRequestData](../../../TFS/VersionControl/Contracts/TfvcItemRequestData.md).
+- `project`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
 
 <a name="method_getItemText"></a>
 
@@ -393,17 +393,17 @@ Get Item Metadata and/or Content. The download parameter is to indicate whether 
 
 ### Parameters
 
-* `path`: string.
-* `project`: string. Optional.
-* `fileName`: string. Optional.
-* `download`: boolean. Optional.
-* `scopePath`: string. Optional.
-* `recursionLevel`: [TFS_VersionControl_Contracts.VersionControlRecursionType](../../../TFS/VersionControl/Contracts/VersionControlRecursionType.md). Optional.
-* `versionDescriptor`: [TFS_VersionControl_Contracts.TfvcVersionDescriptor](../../../TFS/VersionControl/Contracts/TfvcVersionDescriptor.md). Optional.
+- `path`: string.
+- `project`: string. Optional.
+- `fileName`: string. Optional.
+- `download`: boolean. Optional.
+- `scopePath`: string. Optional.
+- `recursionLevel`: [TFS_VersionControl_Contracts.VersionControlRecursionType](../../../TFS/VersionControl/Contracts/VersionControlRecursionType.md). Optional.
+- `versionDescriptor`: [TFS_VersionControl_Contracts.TfvcVersionDescriptor](../../../TFS/VersionControl/Contracts/TfvcVersionDescriptor.md). Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;string&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;string&gt;
 
 <a name="method_getItemZip"></a>
 
@@ -419,17 +419,17 @@ Get Item Metadata and/or Content. The download parameter is to indicate whether 
 
 ### Parameters
 
-* `path`: string.
-* `project`: string. Optional.
-* `fileName`: string. Optional.
-* `download`: boolean. Optional.
-* `scopePath`: string. Optional.
-* `recursionLevel`: [TFS_VersionControl_Contracts.VersionControlRecursionType](../../../TFS/VersionControl/Contracts/VersionControlRecursionType.md). Optional.
-* `versionDescriptor`: [TFS_VersionControl_Contracts.TfvcVersionDescriptor](../../../TFS/VersionControl/Contracts/TfvcVersionDescriptor.md). Optional.
+- `path`: string.
+- `project`: string. Optional.
+- `fileName`: string. Optional.
+- `download`: boolean. Optional.
+- `scopePath`: string. Optional.
+- `recursionLevel`: [TFS_VersionControl_Contracts.VersionControlRecursionType](../../../TFS/VersionControl/Contracts/VersionControlRecursionType.md). Optional.
+- `versionDescriptor`: [TFS_VersionControl_Contracts.TfvcVersionDescriptor](../../../TFS/VersionControl/Contracts/TfvcVersionDescriptor.md). Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
 
 <a name="method_getLabel"></a>
 
@@ -445,13 +445,13 @@ Get a single deep label.
 
 ### Parameters
 
-* `labelId`: string. Unique identifier of label
-* `requestData`: [TFS_VersionControl_Contracts.TfvcLabelRequestData](../../../TFS/VersionControl/Contracts/TfvcLabelRequestData.md). maxItemCount
-* `project`: string. Optional. Project ID or project name
+- `labelId`: string. Unique identifier of label
+- `requestData`: [TFS_VersionControl_Contracts.TfvcLabelRequestData](../../../TFS/VersionControl/Contracts/TfvcLabelRequestData.md). maxItemCount
+- `project`: string. Optional. Project ID or project name
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcLabel](../../../TFS/VersionControl/Contracts/TfvcLabel.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcLabel](../../../TFS/VersionControl/Contracts/TfvcLabel.md)&gt;
 
 <a name="method_getLabelItems"></a>
 
@@ -467,13 +467,13 @@ Get items under a label.
 
 ### Parameters
 
-* `labelId`: string. Unique identifier of label
-* `top`: number. Optional. Max number of items to return
-* `skip`: number. Optional. Number of items to skip
+- `labelId`: string. Unique identifier of label
+- `top`: number. Optional. Max number of items to return
+- `skip`: number. Optional. Number of items to skip
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcItem](../../../TFS/VersionControl/Contracts/TfvcItem.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcItem](../../../TFS/VersionControl/Contracts/TfvcItem.md)[]&gt;
 
 <a name="method_getLabels"></a>
 
@@ -489,14 +489,14 @@ Get a collection of shallow label references.
 
 ### Parameters
 
-* `requestData`: [TFS_VersionControl_Contracts.TfvcLabelRequestData](../../../TFS/VersionControl/Contracts/TfvcLabelRequestData.md). labelScope, name, owner, and itemLabelFilter
-* `project`: string. Optional. Project ID or project name
-* `top`: number. Optional. Max number of labels to return
-* `skip`: number. Optional. Number of labels to skip
+- `requestData`: [TFS_VersionControl_Contracts.TfvcLabelRequestData](../../../TFS/VersionControl/Contracts/TfvcLabelRequestData.md). labelScope, name, owner, and itemLabelFilter
+- `project`: string. Optional. Project ID or project name
+- `top`: number. Optional. Max number of labels to return
+- `skip`: number. Optional. Number of labels to skip
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcLabelRef](../../../TFS/VersionControl/Contracts/TfvcLabelRef.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcLabelRef](../../../TFS/VersionControl/Contracts/TfvcLabelRef.md)[]&gt;
 
 <a name="method_getProjectInfo"></a>
 
@@ -512,12 +512,12 @@ Get a collection of shallow label references.
 
 ### Parameters
 
-* `projectId`: string. The ID (or name) of the project
-* `project`: string. Optional. Project ID or project name
+- `projectId`: string. The ID (or name) of the project
+- `project`: string. Optional. Project ID or project name
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.VersionControlProjectInfo](../../../TFS/VersionControl/Contracts/VersionControlProjectInfo.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.VersionControlProjectInfo](../../../TFS/VersionControl/Contracts/VersionControlProjectInfo.md)&gt;
 
 <a name="method_getProjectInfos"></a>
 
@@ -533,11 +533,11 @@ Get a collection of shallow label references.
 
 ### Parameters
 
-* `project`: string. Optional. Project ID or project name
+- `project`: string. Optional. Project ID or project name
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.VersionControlProjectInfo](../../../TFS/VersionControl/Contracts/VersionControlProjectInfo.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.VersionControlProjectInfo](../../../TFS/VersionControl/Contracts/VersionControlProjectInfo.md)[]&gt;
 
 <a name="method_getShelveset"></a>
 
@@ -553,12 +553,12 @@ Get a single deep shelveset.
 
 ### Parameters
 
-* `shelvesetId`: string. Shelveset&#x27;s unique ID
-* `requestData`: [TFS_VersionControl_Contracts.TfvcShelvesetRequestData](../../../TFS/VersionControl/Contracts/TfvcShelvesetRequestData.md). includeDetails, includeWorkItems, maxChangeCount, and maxCommentLength
+- `shelvesetId`: string. Shelveset&#x27;s unique ID
+- `requestData`: [TFS_VersionControl_Contracts.TfvcShelvesetRequestData](../../../TFS/VersionControl/Contracts/TfvcShelvesetRequestData.md). includeDetails, includeWorkItems, maxChangeCount, and maxCommentLength
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcShelveset](../../../TFS/VersionControl/Contracts/TfvcShelveset.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcShelveset](../../../TFS/VersionControl/Contracts/TfvcShelveset.md)&gt;
 
 <a name="method_getShelvesetChanges"></a>
 
@@ -574,13 +574,13 @@ Get changes included in a shelveset.
 
 ### Parameters
 
-* `shelvesetId`: string. Shelveset&#x27;s unique ID
-* `top`: number. Optional. Max number of changes to return
-* `skip`: number. Optional. Number of changes to skip
+- `shelvesetId`: string. Shelveset&#x27;s unique ID
+- `top`: number. Optional. Max number of changes to return
+- `skip`: number. Optional. Number of changes to skip
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcChange](../../../TFS/VersionControl/Contracts/TfvcChange.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcChange](../../../TFS/VersionControl/Contracts/TfvcChange.md)[]&gt;
 
 <a name="method_getShelvesets"></a>
 
@@ -596,13 +596,13 @@ Return a collection of shallow shelveset references.
 
 ### Parameters
 
-* `requestData`: [TFS_VersionControl_Contracts.TfvcShelvesetRequestData](../../../TFS/VersionControl/Contracts/TfvcShelvesetRequestData.md). name, owner, and maxCommentLength
-* `top`: number. Optional. Max number of shelvesets to return
-* `skip`: number. Optional. Number of shelvesets to skip
+- `requestData`: [TFS_VersionControl_Contracts.TfvcShelvesetRequestData](../../../TFS/VersionControl/Contracts/TfvcShelvesetRequestData.md). name, owner, and maxCommentLength
+- `top`: number. Optional. Max number of shelvesets to return
+- `skip`: number. Optional. Number of shelvesets to skip
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcShelvesetRef](../../../TFS/VersionControl/Contracts/TfvcShelvesetRef.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.TfvcShelvesetRef](../../../TFS/VersionControl/Contracts/TfvcShelvesetRef.md)[]&gt;
 
 <a name="method_getShelvesetWorkItems"></a>
 
@@ -618,8 +618,8 @@ Get work items associated with a shelveset.
 
 ### Parameters
 
-* `shelvesetId`: string. Shelveset&#x27;s unique ID
+- `shelvesetId`: string. Shelveset&#x27;s unique ID
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.AssociatedWorkItem](../../../TFS/VersionControl/Contracts/AssociatedWorkItem.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[TFS_VersionControl_Contracts.AssociatedWorkItem](../../../TFS/VersionControl/Contracts/AssociatedWorkItem.md)[]&gt;

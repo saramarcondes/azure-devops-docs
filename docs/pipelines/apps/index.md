@@ -97,15 +97,15 @@ continuous integration (CI) and continuous deployment (CD) pipeline.
 
 ## Related blog posts
 
-* [Visual Studio devops Blog: Deploying an Azure Red Hat Linux VM Running Apache Tomcat](https://devblogs.microsoft.com/devops/deploying-an-azure-red-hat-linux-vm-running-apache-tomcat-for-use-with-visual-studio-team-services-and-team-foundation-server/)
+- [Visual Studio devops Blog: Deploying an Azure Red Hat Linux VM Running Apache Tomcat](https://devblogs.microsoft.com/devops/deploying-an-azure-red-hat-linux-vm-running-apache-tomcat-for-use-with-visual-studio-team-services-and-team-foundation-server/)
 
-* [Visual Studio devops Blog: Deploying an Azure Ubuntu Linux VM Running Apache Tomcat](https://devblogs.microsoft.com/devops/deploying-an-azure-ubuntu-linux-vm-running-apache-tomcat-for-use-with-visual-studio-team-services-and-team-foundation-server/)
+- [Visual Studio devops Blog: Deploying an Azure Ubuntu Linux VM Running Apache Tomcat](https://devblogs.microsoft.com/devops/deploying-an-azure-ubuntu-linux-vm-running-apache-tomcat-for-use-with-visual-studio-team-services-and-team-foundation-server/)
 
 ## Related topics
 
-* [Azure App Service Deployment Overview](https://azure.microsoft.com/documentation/articles/app-service-deployment-readme/)
+- [Azure App Service Deployment Overview](https://azure.microsoft.com/documentation/articles/app-service-deployment-readme/)
 
-* [Using the Azure Portal to deploy and manage your Azure resources](https://azure.microsoft.com/documentation/articles/resource-group-portal/)
+- [Using the Azure Portal to deploy and manage your Azure resources](https://azure.microsoft.com/documentation/articles/resource-group-portal/)
 
 ## Q & A
 

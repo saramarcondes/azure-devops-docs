@@ -45,15 +45,15 @@ The chart is based on a PivotTable from data that is stored in the Analysis Serv
 
 For the Build Status report to be useful and accurate, the team must perform the following activities:
 
-* **Configure a build system**. To use Team Foundation Build, you must set up a build system.
+- **Configure a build system**. To use Team Foundation Build, you must set up a build system.
 
   For more information, see [Build and Release agents](../../pipelines/agents/agents.md).
 
-* **Create build pipelines**. You can create several build pipelines and then run each of them to produce code for a different platform. Also, you can run each build pipeline for a different configuration.
+- **Create build pipelines**. You can create several build pipelines and then run each of them to produce code for a different platform. Also, you can run each build pipeline for a different configuration.
 
   For more information, see [Get started with CI/CD](../../pipelines/get-started-designer.md).
 
-* **Run builds regularly**. You can run builds at set intervals or after every check-in. You can create regular builds when you use the schedule trigger.
+- **Run builds regularly**. You can run builds at set intervals or after every check-in. You can create regular builds when you use the schedule trigger.
 
   For more information, see [Build triggers](../../pipelines/build/triggers.md).
 
@@ -66,8 +66,8 @@ For the Build Status report to be useful and accurate, the team must perform the
 
 You can use the Builds Status report to gain insight into the following questions:
 
-* How is my team's build health changing over time?
-* Do any builds need attention today?
+- How is my team's build health changing over time?
+- Do any builds need attention today?
 
 <a name="Updating"></a>
 
@@ -83,5 +83,5 @@ You can customize the Builds Status report by opening it in Office Excel and cha
 
 ## Related articles
 
-* [Excel reports](excel-reports.md)
-* [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)
+- [Excel reports](excel-reports.md)
+- [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)

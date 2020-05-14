@@ -18,21 +18,21 @@ ms.date: 08/04/2016
 
 ## Work resources
 
-* [Boards](./boards.md)
-  * [Columns](./columns.md)
-  * [Rows](./rows.md)
-  * [Card fields](./card-fields.md)
-  * [Card rules](./card-rules.md)
-  * [Chart](./charts.md)
-* [Team settings](./team-settings.md)
-  * [Team field values](./team-field-values.md)
-  * [Team iterations](./iterations.md)
-  * [Team capacity](./capacity.md)
-  * [Team days off](./team-days-off.md)
-* [Backlog Configuration](./backlog-configuration.md)
-* [Process Configuration](./process-configuration.md) (Deprecated)
-* [Plans](./plans.md)
-  * [Delivery timeline](./delivery-timeline.md)
+- [Boards](./boards.md)
+  - [Columns](./columns.md)
+  - [Rows](./rows.md)
+  - [Card fields](./card-fields.md)
+  - [Card rules](./card-rules.md)
+  - [Chart](./charts.md)
+- [Team settings](./team-settings.md)
+  - [Team field values](./team-field-values.md)
+  - [Team iterations](./iterations.md)
+  - [Team capacity](./capacity.md)
+  - [Team days off](./team-days-off.md)
+- [Backlog Configuration](./backlog-configuration.md)
+- [Process Configuration](./process-configuration.md) (Deprecated)
+- [Plans](./plans.md)
+  - [Delivery timeline](./delivery-timeline.md)
 
 ## Common tasks with the board API
 

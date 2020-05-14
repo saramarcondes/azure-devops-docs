@@ -21,9 +21,9 @@ using an HTTP Archive file and Azure DevOps.
 
 Before you start:
 
-* Create an Azure DevOps subscription if you don't have one already.
+- Create an Azure DevOps subscription if you don't have one already.
 
-* You can use your monthly free 20,000 virtual user minutes (VUM) allowance to try it.
+- You can use your monthly free 20,000 virtual user minutes (VUM) allowance to try it.
   If you want to use load testing beyond this, you can
   [set up billing](../../organizations/billing/set-up-billing-for-your-organization-vs.md) for Azure DevOps.
 
@@ -34,8 +34,8 @@ familiar with the ability to get performance information on your
 app when under load by using the Azure DevOps web
 portal. It's a great way to:
 
-* Quickly run a URL-based load test for your app; you just need to enter the app URL.
-* Easily learn about the basic load test features such as
+- Quickly run a URL-based load test for your app; you just need to enter the app URL.
+- Easily learn about the basic load test features such as
   running tests from different locations around the world,
   viewing and analyzing results in the browser, analyzing
   the test errors, and more.
@@ -55,9 +55,9 @@ capabilities than the rich Visual Studio
 Enterprise load tests. However, by using HTTP Archive files
 you can represent user scenarios that:
 
-* Support multiple URLs
-* Send requests other than just a simple GET
-* Simulate a complete user scenario
+- Support multiple URLs
+- Send requests other than just a simple GET
+- Simulate a complete user scenario
 
 If you develop or test web apps, you may already be familiar with the
 [F12 developer tools](https://docs.microsoft.com/microsoft-edge/devtools-guide)
@@ -86,9 +86,9 @@ using your browser.
 1.  Ensure that the browser traffic is being recorded. For example,
     if you are using Chrome, check that:
 
-    * The recording button is "on" (the round button is red).
+    - The recording button is "on" (the round button is red).
 
-    * The **Preserve log** checkbox is set to ensure that the complete
+    - The **Preserve log** checkbox is set to ensure that the complete
       sequence of URLs for your scenario is captured. If you do not
       set this option, network activity recordings are discarded whenever
       you reload the current page or load a different page - which means
@@ -227,8 +227,8 @@ application issues, requests may be failing because the application uses dynamic
 in these requests. When you create a test using an HTTP Archive, the following cases are handled
 automatically when the test is executed:
 
-* Dynamic parameter values set in cookies.
-* Dynamic parameter values set in hidden fields, such as ASP.NET VIEWSTATE and EVENTVALIDATION.
+- Dynamic parameter values set in cookies.
+- Dynamic parameter values set in hidden fields, such as ASP.NET VIEWSTATE and EVENTVALIDATION.
 
 However, dynamic parameters may also appear elsewhere in requests such as query strings or form post
 collections. At present, the load test mechanism does not support these types of dynamic parameters.
@@ -244,11 +244,11 @@ has a detailed example of how dynamic parameters can be identified by inspecting
 
 ## See also
 
-* [FAQs for load testing](reference-qa.md#recordreplay)
-* [Load test with Visual Studio](getting-started-with-performance-testing.md)
-* [Load test with Azure portal](app-service-web-app-performance-test.md)
-* [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md)
-* [Run Apache JMeter load tests with Azure DevOps](get-started-jmeter-test.md)
-* [Analyze load test results using the Load Test Analyzer](/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
+- [FAQs for load testing](reference-qa.md#recordreplay)
+- [Load test with Visual Studio](getting-started-with-performance-testing.md)
+- [Load test with Azure portal](app-service-web-app-performance-test.md)
+- [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md)
+- [Run Apache JMeter load tests with Azure DevOps](get-started-jmeter-test.md)
+- [Analyze load test results using the Load Test Analyzer](/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
 
 [!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)]

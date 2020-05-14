@@ -28,11 +28,11 @@ In this article you'll learn:
 
 > [!div class="checklist"]
 >
-> * How to open and edit a query
-> * How to add or create a query
-> * How to group query clauses
-> * Understand when to use a flat-list, tree, or direct-links query
-> * How to query across projects
+> - How to open and edit a query
+> - How to add or create a query
+> - How to group query clauses
+> - Understand when to use a flat-list, tree, or direct-links query
+> - How to query across projects
 
 For quick access to all query tasks, supported operators&mdash;such as, `Contains`, `In`, `In Group`, and `<>`(not operator) &mdash; based on field data type, and query examples, see [Query quick reference](query-index-quick-ref.md).
 
@@ -84,11 +84,11 @@ _Active Bugs_ shared query provided with the Agile process template. Examples ar
     > If you're working in Visual Studio Team Explorer, open the **Work** page to access your queries and shared queries. If Team Explorer isn't visible, choose **View>Team Explorer** from the top level menu.
 
 1.  Edit the query to find closed bugs and then run the query.
-    Use ![Insert new filter line](media/3.png) to insert a clause above the current clause. Use ![Remove this filter line](media/4.png) to delete a clause. Queries are automatically scoped to the current project. To find work items defined in several projects, see [Query across projects](using-queries.md#across-projects).  
+    Use ![Insert new filter line](media/3.png) to insert a clause above the current clause. Use ![Remove this filter line](media/4.png) to delete a clause. Queries are automatically scoped to the current project. To find work items defined in several projects, see [Query across projects](using-queries.md#across-projects).
 
     ![Web portal, Queries page, Editor view of a Flat List Query](media/query-active-bugs-editor-vso.png)
 
-1.  Save the query to your **My Queries** folder.  
+1.  Save the query to your **My Queries** folder.
 
     ![Save Query As](media/6.png)
 
@@ -196,9 +196,9 @@ As the following examples show, the grouped clauses are translated to the corres
 
 These queries return work items that are type Bug and meet the following logical expressions:
 
-* **Query 1**: AND State=Active OR Assigned to @Me
-* **Query 2**: AND (State=Active OR Assigned to @Me)
-* **Query 3**: OR (State=Active AND Assigned to @Me)
+- **Query 1**: AND State=Active OR Assigned to @Me
+- **Query 2**: AND (State=Active OR Assigned to @Me)
+- **Query 3**: OR (State=Active AND Assigned to @Me)
 
 To group one or more clauses, select them and then choose the ![ ](../media/icons/group-clauses-icon.png) group clauses icon.
 
@@ -212,11 +212,11 @@ You can also group several grouped clauses by checking the boxes of each clause 
 
 If your query results don't return expected results, follow these steps:
 
-* Make sure that each clause is defined as you intended.
-* Verify And/Or assignments to each clause. If your results contain more work items than expected, often an Or clause is present instead of an And clause.
-* Determine if you need to group or change the grouping of the query clauses and the And/Or assignments of each grouped clause.
-* Add more query clauses to refine your query filter criteria.
-* Review the options available to specify [fields, operators, and values](query-operators-variables.md).
+- Make sure that each clause is defined as you intended.
+- Verify And/Or assignments to each clause. If your results contain more work items than expected, often an Or clause is present instead of an And clause.
+- Determine if you need to group or change the grouping of the query clauses and the And/Or assignments of each grouped clause.
+- Add more query clauses to refine your query filter criteria.
+- Review the options available to specify [fields, operators, and values](query-operators-variables.md).
 
 <a id="ungroup-clause" />
 
@@ -293,15 +293,15 @@ Use the direct links query to track dependencies your team has that other teams 
 
 Filter your first-tier list of work items by choosing one of these options:
 
-* **Only return work items that have the specified links**: First-tier work items are returned, but only if they have links to work items specified by the linked work items filter criteria.
+- **Only return work items that have the specified links**: First-tier work items are returned, but only if they have links to work items specified by the linked work items filter criteria.
 
-* **Return all top level work items**: All first-tier work items are returned regardless of the linked work items filter criteria. Second-tier work items that are linked to the first tier are returned if they match the linked work items filter criteria.
+- **Return all top level work items**: All first-tier work items are returned regardless of the linked work items filter criteria. Second-tier work items that are linked to the first tier are returned if they match the linked work items filter criteria.
 
-* **Only return work items that do not have the specified links**: First-tier work items are returned, but only if they do not have links to work items specified by the linked work items filter criteria.
+- **Only return work items that do not have the specified links**: First-tier work items are returned, but only if they do not have links to work items specified by the linked work items filter criteria.
 
 To learn more about each link type, see [Linking, traceability, and managing dependencies](link-work-items-support-traceability.md).
 
-<a id="across-projects" />  
+<a id="across-projects" />
 
 ## Query across projects
 
@@ -351,7 +351,7 @@ Use <strong>Team Project=@Project</strong> to scope the query to find only those
 
 You may notice and wonder why the contents of the taskboard differ from those listed with its created query? To learn more, see [taskboard items versus query list items](../backlogs/backlogs-boards-plans.md#task-board-items).
 
-<a id="export-query" />  
+<a id="export-query" />
 
 ## Export a query
 
@@ -359,8 +359,8 @@ From the query editor in Team Explorer, use the File menu to save a query as a .
 
 See also:
 
-* [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)
-* [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)
+- [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)
+- [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)
 
 ::: moniker range="azure-devops"
 
@@ -373,13 +373,13 @@ See also:
 
 That's the basics about using queries. For an index of query examples, see [Create managed queries](example-queries.md#examples). To add a custom field to track additional data, see [Customize your work tracking experience](../../reference/customize-work.md).
 
-* [Ad hoc versus managed queries](adhoc-vs-managed-queries.md)
-* [Add work items](../backlogs/add-work-items.md)
-* [Chart a flat-list query](../../report/dashboards/charts.md)
-* [Change column options](../backlogs/set-column-options.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json)
-* [Define a query as a hyperlink](define-query-hyperlink.md)
-* [Work item field index](../work-items/guidance/work-item-field.md)
-* [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
+- [Ad hoc versus managed queries](adhoc-vs-managed-queries.md)
+- [Add work items](../backlogs/add-work-items.md)
+- [Chart a flat-list query](../../report/dashboards/charts.md)
+- [Change column options](../backlogs/set-column-options.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json)
+- [Define a query as a hyperlink](define-query-hyperlink.md)
+- [Work item field index](../work-items/guidance/work-item-field.md)
+- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
 
 If you want to export a query to Excel, you can do that from [Excel or Visual Studio/Team Explorer](../backlogs/office/bulk-add-modify-work-items-excel.md). Or, to export a query directly from the web portal Queries page, install the [VSTS Open in Excel Marketplace extension](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel). This extension will add in **Open in Excel** link to the toolbar of the query results page.
 

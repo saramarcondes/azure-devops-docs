@@ -38,16 +38,16 @@ If you need fine-grained control at the individual step level, [step targets](ta
 
 The Azure Pipelines system requires a few things in Linux-based containers:
 
-* Bash
-* glibc-based
-* Can run Node.js (which the agent provides)
-* Does not define an `ENTRYPOINT`
-* `USER` has access to `groupadd` and other privileges commands without `sudo`
+- Bash
+- glibc-based
+- Can run Node.js (which the agent provides)
+- Does not define an `ENTRYPOINT`
+- `USER` has access to `groupadd` and other privileges commands without `sudo`
 
 And on your agent host:
 
-* Ensure Docker is installed
-* The agent must have permission to access the Docker daemon
+- Ensure Docker is installed
+- The agent must have permission to access the Docker daemon
 
 Be sure your container has each of these tools available. Some of the extremely stripped-down
 containers available on Docker Hub, especially those based on Alpine Linux, don't satisfy these

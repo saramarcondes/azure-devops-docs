@@ -40,7 +40,7 @@ This warning **DOES NOT** mean that your collection is too large for import.
 Similar to the previous warning, the following warning means you must use the SQL Azure VM method to complete the import. Follow the instructions linked from the warning message to setup the VM and complete your import.
 
 ```cmdline
-The largest table size is currently {Table size}GBs. This is above the recommended size of {Size limit}GBs to use the DACPAC import method. Please see the following page to learn how to import using a SQL Azure VM: https://aka.ms/AzureDevOpsImportLargeCollection  
+The largest table size is currently {Table size}GBs. This is above the recommended size of {Size limit}GBs to use the DACPAC import method. Please see the following page to learn how to import using a SQL Azure VM: https://aka.ms/AzureDevOpsImportLargeCollection
 ```
 
 This warning **DOES NOT** mean that your collection is too large for import.
@@ -320,8 +320,8 @@ witadmin deletefield /collection:http://AdventureWorksServer:8080/DefaultCollect
 
 Hit a failure when running your import? Failures in the import space fall into one of two categories.
 
-* Verification failures occur when the import fails to start. This failure indicates that the data migration tool attempted to queue an import, but returned an error instead.
-* Import failures happen when the import was queued successfully in the data migration tool, but failed after that point. The individual that queued the import receives a failure email.
+- Verification failures occur when the import fails to start. This failure indicates that the data migration tool attempted to queue an import, but returned an error instead.
+- Import failures happen when the import was queued successfully in the data migration tool, but failed after that point. The individual that queued the import receives a failure email.
 
 ### Verification failures
 
@@ -503,5 +503,5 @@ If the error is more complex, then the email you receive provides instructions o
 
 ## Related articles
 
-* [Validate and import](migration-import.md)
-* [Post-import](migration-post-import.md)
+- [Validate and import](migration-import.md)
+- [Post-import](migration-post-import.md)

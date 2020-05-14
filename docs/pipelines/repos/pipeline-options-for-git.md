@@ -84,18 +84,18 @@ This is the branch that you want to be the default when you manually queue this 
 
 Select one of the following options:
 
-* **Sources**: The build pipeline performs an undo of any changes in `$(Build.SourcesDirectory)`. More specifically, the following Git commands are executed prior to fetching the source.
+- **Sources**: The build pipeline performs an undo of any changes in `$(Build.SourcesDirectory)`. More specifically, the following Git commands are executed prior to fetching the source.
 
   ```
   git clean -ffdx
   git reset --hard HEAD
   ```
 
-* **Sources and output directory**: Same operation as **Sources** option above, plus: Deletes and recreates `$(Build.BinariesDirectory)`. Note that the `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
+- **Sources and output directory**: Same operation as **Sources** option above, plus: Deletes and recreates `$(Build.BinariesDirectory)`. Note that the `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
 
-* **Sources directory**: Deletes and recreates `$(Build.SourcesDirectory)`. This results in initializing a new, local Git repository for every build.
+- **Sources directory**: Deletes and recreates `$(Build.SourcesDirectory)`. This results in initializing a new, local Git repository for every build.
 
-* **All build directories**: Deletes and recreates `$(Agent.BuildDirectory)`. This results in initializing a new, local Git repository for every build.
+- **All build directories**: Deletes and recreates `$(Agent.BuildDirectory)`. This results in initializing a new, local Git repository for every build.
 
 ::: moniker-end
 
@@ -151,9 +151,9 @@ You've got the option to give your team a view of the build status from your rem
 
 If your sources are in an Azure Repos Git repository in your project, then this option displays a badge on the **Code** page to indicate whether the build is passing or failing. The build status is displayed in the following tabs:
 
-* **Files**: Indicates the status of the latest build for the selected branch.
-* **Commits**: Indicates the build status of the each commit (this requires the continuous integration (CI) trigger to be enabled for your builds).
-* **Branches**: Indicates the status of the latest build for each branch.
+- **Files**: Indicates the status of the latest build for the selected branch.
+- **Commits**: Indicates the build status of the each commit (this requires the continuous integration (CI) trigger to be enabled for your builds).
+- **Branches**: Indicates the status of the latest build for each branch.
 
 If you use multiple build pipelines for the same repository in your project, then you may choose to enable this option for one or more of the pipelines. In the case when this option is enabled on multiple pipelines, the badge on the **Code** page indicates the status of the latest build across all the pipelines. Your team members can click the build status badge to view the latest build status for each one of the build pipelines.
 
@@ -203,13 +203,13 @@ If you want to use LFS with submodules, be sure to see the [note about using LFS
 
 The build pipeline will check out your Git submodules as long as they are:
 
-* **Unauthenticated:** A public, unauthenticated repo with no credentials required to clone or fetch.
+- **Unauthenticated:** A public, unauthenticated repo with no credentials required to clone or fetch.
 
-* **Authenticated:**
+- **Authenticated:**
 
-  * Contained in the same project, GitHub organization, or Bitbucket Cloud account as the Git repo specified above.
+  - Contained in the same project, GitHub organization, or Bitbucket Cloud account as the Git repo specified above.
 
-  * Added by using a URL relative to the main repository. For example, this one would be checked out: `git submodule add /../../submodule.git mymodule` This one would not be checked out: `git submodule add https://dev.azure.com/fabrikamfiber/_git/ConsoleApp mymodule`
+  - Added by using a URL relative to the main repository. For example, this one would be checked out: `git submodule add /../../submodule.git mymodule` This one would not be checked out: `git submodule add https://dev.azure.com/fabrikamfiber/_git/ConsoleApp mymodule`
 
 ::: moniker-end
 
@@ -231,9 +231,9 @@ The same credentials that are used by the agent to get the sources from the main
 
 If your main repository and submodules are in an Azure Repos Git repository in your Azure DevOps project, then you can select the account used to access the sources. On the **Options** tab, on the **Build job authorization scope** menu, select either:
 
-* **Project collection** to use the Project Collection Build service account
+- **Project collection** to use the Project Collection Build service account
 
-* **Current project** to use the Project Build Service account.
+- **Current project** to use the Project Build Service account.
 
 Make sure that whichever account you use has access to both the main repository as well as the submodules.
 
@@ -287,7 +287,7 @@ steps:
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 
-* **TFS 2017 RTM and TFS 2015 (macOS and Linux only):** On the **Variables** tab, set `Agent.Source.Git.Lfs` to `true`.
+- **TFS 2017 RTM and TFS 2015 (macOS and Linux only):** On the **Variables** tab, set `Agent.Source.Git.Lfs` to `true`.
 
 ::: moniker-end
 
@@ -369,15 +369,15 @@ Non-deployment jobs automatically fetch sources.
 Use this option if you want to skip that behavior.
 This option can be useful in cases when you want to:
 
-* Git init, config, and fetch using your own custom options.
+- Git init, config, and fetch using your own custom options.
 
-* Use a build pipeline to just run automation (for example some scripts) that do not depend on code in version control.
+- Use a build pipeline to just run automation (for example some scripts) that do not depend on code in version control.
 
 If you want to disable downloading sources:
 
-* **Azure Pipelines, TFS 2017.2, and newer:** Click **Advanced settings**, and then select **Don't sync sources**.
+- **Azure Pipelines, TFS 2017.2, and newer:** Click **Advanced settings**, and then select **Don't sync sources**.
 
-* **TFS 2017 RTM:** Define `Build.SyncSources` on the **Variables** and set its value to false.
+- **TFS 2017 RTM:** Define `Build.SyncSources` on the **Variables** and set its value to false.
 
 > [!NOTE]
 > When you use this option, the agent also skips running Git commands that clean the repo.

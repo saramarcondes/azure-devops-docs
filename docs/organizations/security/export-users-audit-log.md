@@ -34,12 +34,12 @@ You can get a list of users and groups that have access to your Team Foundation 
 
 ::: moniker range="azure-devops"
 
-* You must be the organization owner or a member of the Project Collection Administrators group. If you aren't a member, get added now. See [Set permissions at the project- or collection-level](/azure/devops/organizations/security/set-project-collection-level-permissions).
+- You must be the organization owner or a member of the Project Collection Administrators group. If you aren't a member, get added now. See [Set permissions at the project- or collection-level](/azure/devops/organizations/security/set-project-collection-level-permissions).
   ::: moniker-end
 
   ::: moniker range="<= azure-devops-2019"
 
-* You must be a member of the Team Foundation Administrators group. If you aren't a member, get added now. See [Add administrators to TFS](/azure/devops/server/admin/add-administrator).
+- You must be a member of the Team Foundation Administrators group. If you aren't a member, get added now. See [Add administrators to TFS](/azure/devops/server/admin/add-administrator).
   ::: moniker-end
 
 ## Export a list of users
@@ -91,11 +91,11 @@ You can get a list of users and groups that have access to your TFS instance by 
 
 1.  From the web portal home page for a project, choose the ![ ](/azure/devops/media/icons/gear_icon.png) gear icon and select **Server settings**.
 
-    <img src="media/access-levels-2017-open-admin-context.png" alt="TFS 2017, Web portal, open the Server settings admin context" style="border: 1px solid #C3C3C3;" />  
+    <img src="media/access-levels-2017-open-admin-context.png" alt="TFS 2017, Web portal, open the Server settings admin context" style="border: 1px solid #C3C3C3;" />
 
 1.  Choose **Access levels**, and then **Export audit log**.
 
-    <img src="media/export-users-audit/export-audit-log-tfs.png" alt="Control panel, admin context, Export audit log" style="border: 1px solid #C3C3C3;" />  
+    <img src="media/export-users-audit/export-audit-log-tfs.png" alt="Control panel, admin context, Export audit log" style="border: 1px solid #C3C3C3;" />
 
     > [!NOTE]  
     > If you're not a member of the Team Foundation Server Administrators group, the link to the **Access levels** page won't appear.
@@ -143,9 +143,9 @@ az devops user list [--org] [--skip] [--top]
 
 #### Parameters
 
-* **org**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-* * **skip**: Optional. Number of users to skip.
-* **top**: Optional. Maximum number of users to return. The maximum value is 10000; the default value is 100.
+- **org**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- - **skip**: Optional. Number of users to skip.
+- **top**: Optional. Maximum number of users to return. The maximum value is 10000; the default value is 100.
 
 #### Example
 
@@ -173,18 +173,18 @@ f14a4f19-9910-6116-9836-cccd6dd1b7b7  contoso2@contoso.com    contoso2@contoso.c
 
 ::: moniker range="azure-devops"
 
-* [About access levels](access-levels.md)
-* [Manage users and access in Azure DevOps](../accounts/add-organization-users.md)
-* [Azure DevOps Feature Matrix](https://visualstudio.microsoft.com/pricing/visual-studio-online-feature-matrix-vs)
-* [Default permissions and access](permissions-access.md).
+- [About access levels](access-levels.md)
+- [Manage users and access in Azure DevOps](../accounts/add-organization-users.md)
+- [Azure DevOps Feature Matrix](https://visualstudio.microsoft.com/pricing/visual-studio-online-feature-matrix-vs)
+- [Default permissions and access](permissions-access.md).
 
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
 
-* [About access levels](access-levels.md)
-* [Change access levels](change-access-levels.md)
-* [Azure DevOps Feature Matrix](https://visualstudio.microsoft.com/pricing/visual-studio-online-feature-matrix-vs)
-* [Default permissions and access](permissions-access.md).
+- [About access levels](access-levels.md)
+- [Change access levels](change-access-levels.md)
+- [Azure DevOps Feature Matrix](https://visualstudio.microsoft.com/pricing/visual-studio-online-feature-matrix-vs)
+- [Default permissions and access](permissions-access.md).
 
 ::: moniker-end

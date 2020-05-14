@@ -53,8 +53,8 @@ If you want to run your jobs on machines that Microsoft manages, use _Microsoft-
 
 We provide a _free tier_ of service by default in every organization:
 
-* Public project: 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time, with no overall time limit per month.
-* Private project: One free job that can run for up to 60 minutes each time, until you've used 1,800 minutes (30 hours) per month.
+- Public project: 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time, with no overall time limit per month.
+- Private project: One free job that can run for up to 60 minutes each time, until you've used 1,800 minutes (30 hours) per month.
 
 > [!TIP]
 > If your pipeline exceeds the maximum job timeout, try splitting your pipeline
@@ -72,12 +72,12 @@ If you want Azure Pipelines to orchestrate your builds and releases, but use you
 
 We provide a _free tier_ of service by default in your organization:
 
-* Public project: Unlimited parallel jobs.
-* Private project: One self-hosted parallel job. Additionally, for each active Visual Studio Enterprise subscriber who is a member of your organization, you get one additional self-hosted parallel job.
+- Public project: Unlimited parallel jobs.
+- Private project: One self-hosted parallel job. Additionally, for each active Visual Studio Enterprise subscriber who is a member of your organization, you get one additional self-hosted parallel job.
 
 When the free tier is no longer sufficient:
 
-* Private project: You can pay for additional capacity per parallel job. [Buy self-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines).
+- Private project: You can pay for additional capacity per parallel job. [Buy self-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines).
 
 There are no time limits on self-hosted jobs.
 
@@ -103,9 +103,9 @@ For example, consider an organization that has only one Microsoft-hosted paralle
 
 The term _job_ can refer to multiple concepts, and its meaning depends on the context:
 
-* When you define a pipeline, you can define it as a collection of [jobs](../process/phases.md). When a pipeline runs, you can run multiple jobs as part of that pipeline.
+- When you define a pipeline, you can define it as a collection of [jobs](../process/phases.md). When a pipeline runs, you can run multiple jobs as part of that pipeline.
 
-* Each job consumes a _parallel job_ that runs on an agent. When there aren't enough parallel jobs available for your organization, the jobs are queued up and run one after the other.
+- Each job consumes a _parallel job_ that runs on an agent. When there aren't enough parallel jobs available for your organization, the jobs are queued up and run one after the other.
 
 ## Determine how many parallel jobs you need
 
@@ -124,11 +124,11 @@ A simple rule of thumb: Estimate that you'll need one parallel job for every fou
 
 In the following scenarios, you might need multiple parallel jobs:
 
-* If you have multiple teams, and if each of them require CI, you'll likely need a parallel job for each team.
+- If you have multiple teams, and if each of them require CI, you'll likely need a parallel job for each team.
 
-* If your CI trigger applies to multiple branches, you'll likely need a parallel job for each active branch.
+- If your CI trigger applies to multiple branches, you'll likely need a parallel job for each active branch.
 
-* If you develop multiple applications by using one organization or server, you'll likely need additional parallel jobs: one to deploy each application at the same time.
+- If you develop multiple applications by using one organization or server, you'll likely need additional parallel jobs: one to deploy each application at the same time.
 
 ## View available parallel jobs
 
@@ -158,8 +158,8 @@ Parallel jobs are purchased at the organization level, and they are shared by al
 
 We'll automatically apply the free tier limits for public projects if you meet both of these conditions:
 
-* Your pipeline is part of an Azure Pipelines [public project](../../organizations/public/index.md).
-* Your pipeline builds a public repository from GitHub or from the same public project in your Azure DevOps organization.
+- Your pipeline is part of an Azure Pipelines [public project](../../organizations/public/index.md).
+- Your pipeline builds a public repository from GitHub or from the same public project in your Azure DevOps organization.
 
 ### Are there limits on who can use Azure Pipelines?
 
@@ -177,8 +177,8 @@ Yes. Visual Studio Enterprise subscribers get [one parallel job in Team Foundati
 
 Some of our earlier customers are still on a per-minute plan for the hosted agents. In this plan, you pay $0.05/minute for the first 20 hours after the free tier, and $0.01/minute after 20 hours. Because of the following limitations in this plan, you might want to consider moving to the parallel jobs model:
 
-* When you're using the per-minute plan, you can run only one job at a time.
-* If you run builds for more than 14 paid hours in a month, the per-minute plan might be less cost-effective than the parallel jobs model.
+- When you're using the per-minute plan, you can run only one job at a time.
+- If you run builds for more than 14 paid hours in a month, the per-minute plan might be less cost-effective than the parallel jobs model.
 
 ### I use XAML build controllers with my organization. How am I charged for those?
 
@@ -233,9 +233,9 @@ A simple rule of thumb: Estimate that you'll need one parallel job for every 10 
 
 In the following scenarios you might need multiple parallel jobs:
 
-* If you have multiple teams, if each of them require a CI build, and if each of the CI builds is configured to trigger a release, then you'll likely need a parallel job for each team.
+- If you have multiple teams, if each of them require a CI build, and if each of the CI builds is configured to trigger a release, then you'll likely need a parallel job for each team.
 
-* If you develop multiple applications in one collection, then you'll likely need additional parallel jobs: one to deploy each application at the same time.
+- If you develop multiple applications in one collection, then you'll likely need additional parallel jobs: one to deploy each application at the same time.
 
 ## Use your Visual Studio Enterprise subscription benefit
 

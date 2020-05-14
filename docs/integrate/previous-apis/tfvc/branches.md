@@ -30,7 +30,7 @@ GET https://{instance}/DefaultCollection/_apis/tfvc/branches/{path}?api-version=
 
 | URL
 | instance | string | | TFS server name ({server:port}).
-| path | string | $/ | Full path to the branch.<br/>Examples: `$/`, `$/MyProject`, `$/MyProject/SomeFolder`.
+| path | string | \$/ | Full path to the branch.<br/>Examples: `$/`, `$/MyProject`, `$/MyProject/SomeFolder`.
 | Query
 | api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | includeChildren | bool | false | Return child branches, if there are any.

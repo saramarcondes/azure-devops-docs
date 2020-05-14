@@ -23,16 +23,16 @@ The token format differs per resource type, however **hierarchy** and **separato
 
 **Hierarchy**
 
-* A security namespace can be either hierarchical or flat.
-* Tokens in a hierarchical namespace exist in a hierarchy with effective permissions being inherited from parent tokens to child tokens.
-* Tokens in a flat namespace have no concept of a parent-child relationship between any two tokens.
+- A security namespace can be either hierarchical or flat.
+- Tokens in a hierarchical namespace exist in a hierarchy with effective permissions being inherited from parent tokens to child tokens.
+- Tokens in a flat namespace have no concept of a parent-child relationship between any two tokens.
 
 <a name="separators" />
 
 **Separator character**
 
-* Tokens in a hierarchical namespace either have a fixed length for each path part, or variable length.
-* If the tokens have variable-length path parts, then a separator character is used to distinguish where one path part ends and another begins.
+- Tokens in a hierarchical namespace either have a fixed length for each path part, or variable length.
+- If the tokens have variable-length path parts, then a separator character is used to distinguish where one path part ends and another begins.
 
 In addition to **hierarchy** and **separator characters** the contents of tokens vary depending on the needs of the resource.
 
@@ -68,9 +68,9 @@ Valid tokens always end in the separator character: '/'.
 
 There are three valid ref namespaces:
 
-* `refs/heads` - Git branches
-* `refs/tags` - lightweight tags
-* `refs/notes` - notes
+- `refs/heads` - Git branches
+- `refs/tags` - lightweight tags
+- `refs/notes` - notes
 
 Ref namespaces must be all lowercase.
 

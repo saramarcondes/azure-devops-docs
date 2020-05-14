@@ -64,15 +64,15 @@ You set [permissions](../../report/powerbi/analytics-security.md) for the servic
 
 ::: moniker range=">= azure-devops-2019"
 
-* [Work across projects](../../project/navigation/work-across-projects.md)
-* [Add a team administrator](../../organizations/settings/add-team-administrator.md)
-* [Set permissions to access Analytics data and Analytics views](../powerbi/analytics-security.md)
+- [Work across projects](../../project/navigation/work-across-projects.md)
+- [Add a team administrator](../../organizations/settings/add-team-administrator.md)
+- [Set permissions to access Analytics data and Analytics views](../powerbi/analytics-security.md)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-* [Work across projects](../../project/navigation/work-across-projects.md)
-* [Add a team administrator](../../organizations/settings/add-team-administrator.md)
+- [Work across projects](../../project/navigation/work-across-projects.md)
+- [Add a team administrator](../../organizations/settings/add-team-administrator.md)
 
 ::: moniker-end

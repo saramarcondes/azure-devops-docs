@@ -42,16 +42,16 @@ Learn how to perform these tasks:
 
 > [!div class="checklist"]
 >
-> * Open **Settings>Process**
-> * Create an inherited process to customize
-> * Add or modify a field
-> * Add or modify a rule for a work item type
-> * Add or modify work item types
-> * Modify the workflow of a work item type
-> * Add or modify a custom control
-> * Add an extension to a work item type
-> * Verify the customizations you made
-> * Change the process used by a project
+> - Open **Settings>Process**
+> - Create an inherited process to customize
+> - Add or modify a field
+> - Add or modify a rule for a work item type
+> - Add or modify work item types
+> - Modify the workflow of a work item type
+> - Add or modify a custom control
+> - Add an extension to a work item type
+> - Verify the customizations you made
+> - Change the process used by a project
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
@@ -76,19 +76,19 @@ Locked ![ ](media/process/locked-icon.png) fields and inherited ![ ](media/proce
 
     In the dialog that opens, choose the type of field that you want to add. To learn more, see the following articles:
 
-    * [Integer](customize-process-field.md#add-field)
-    * [Picklist (drop-down menu)](customize-process-field.md#pick-list)
-    * [Person-name/Identity](customize-process-field.md#identity)
-    * [Rich-text or HTML](customize-process-field.md#html)
-    * [Checkbox (Boolean)](customize-process-field.md#boolean-field)
+    - [Integer](customize-process-field.md#add-field)
+    - [Picklist (drop-down menu)](customize-process-field.md#pick-list)
+    - [Person-name/Identity](customize-process-field.md#identity)
+    - [Rich-text or HTML](customize-process-field.md#html)
+    - [Checkbox (Boolean)](customize-process-field.md#boolean-field)
 
 3.  To modify an existing field, you can exercise these choices:
 
-    * [Change the field label](customize-process-field.md#rename-field)
-    * [Show/Hide field on form](customize-process-field.md#show-hide-field)
-    * [Set Required/Default options](customize-process-field.md#options)
-    * [Move the field within the layout](customize-process-form.md#move-field)
-    * [Remove field from the form](customize-process-field.md#remove-field)
+    - [Change the field label](customize-process-field.md#rename-field)
+    - [Show/Hide field on form](customize-process-field.md#show-hide-field)
+    - [Set Required/Default options](customize-process-field.md#options)
+    - [Move the field within the layout](customize-process-form.md#move-field)
+    - [Remove field from the form](customize-process-field.md#remove-field)
 
 ## Add or modify a rule for a work item type
 
@@ -118,11 +118,11 @@ You use different WITs to plan and track different types of work. The main reaso
     Click **Create** to save.
 
 1.  You can now add fields to the WIT, or customize it in the following ways:
-    * [Modify the workflow](#workflow)
-    * [Add or remove a custom control](#custom-control)
-    * [Add an extension](#extension)
-    * [Add/move/remove custom groups](customize-process-form.md#groups)
-    * [Add/move/delete custom pages](customize-process-form.md#pages)
+    - [Modify the workflow](#workflow)
+    - [Add or remove a custom control](#custom-control)
+    - [Add an extension](#extension)
+    - [Add/move/remove custom groups](customize-process-form.md#groups)
+    - [Add/move/delete custom pages](customize-process-form.md#pages)
 
 <a id="workflow" />
 
@@ -136,10 +136,10 @@ Workflow states allow you to track the status of a work item as it moves from ne
     > ![Process page, Bug WIT, States tab, Add state](media/process/cpworkflow-add-state.png)
 
 1.  You can modify the workflow in the following ways:
-    * [Hide a workflow state](customize-process-workflow.md#hide-state)
-    * [Add a state](customize-process-workflow.md#add-states)
-    * [Edit a state (change color or category)](customize-process-workflow.md#edit-state)
-    * [Remove a state](customize-process-workflow.md#remove-state)
+    - [Hide a workflow state](customize-process-workflow.md#hide-state)
+    - [Add a state](customize-process-workflow.md#add-states)
+    - [Edit a state (change color or category)](customize-process-workflow.md#edit-state)
+    - [Remove a state](customize-process-workflow.md#remove-state)
 
 <a id="custom-control" />
 
@@ -147,9 +147,9 @@ Workflow states allow you to track the status of a work item as it moves from ne
 
 Custom controls provide additional functionality to a work item form.
 
-* To add a custom control, choose your inherited process, the WIT, and then **Add custom control**.
+- To add a custom control, choose your inherited process, the WIT, and then **Add custom control**.
 
-      	> [!div class="mx-imgBorder"]  
+      	> [!div class="mx-imgBorder"]
       	> ![Process, WIT, Bug, Layout, New custom control](media/process/cpcontrols-add-custom-control.png)
 
 To learn more, see [Add extensions and custom controls to a work item type](custom-controls-process.md).
@@ -195,13 +195,13 @@ You can add additional WITs to a backlog level or add another portfolio backlog.
     > ![Web portal, Admin context, Process page, open Backlog levels](media/process/process-backlog-levels-open.png)
 
 1.  You can modify the backlog and board configuration in the following ways:
-    * [Add a custom WIT to a backlog or board](customize-process-backlogs-boards.md)
-    * [Change the default WIT](customize-process-backlogs-boards.md)
-    * [Rename the requirement backlog](customize-process-backlogs-boards.md#edit-product-backlog)
-    * [Rename a portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog)
-    * [Add a portfolio backlog which displays custom WITs](customize-process-backlogs-boards.md#portfolio-backlogs)
-    * [Edit or rename a portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog)
-    * [Delete the top-level custom portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog)
+    - [Add a custom WIT to a backlog or board](customize-process-backlogs-boards.md)
+    - [Change the default WIT](customize-process-backlogs-boards.md)
+    - [Rename the requirement backlog](customize-process-backlogs-boards.md#edit-product-backlog)
+    - [Rename a portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog)
+    - [Add a portfolio backlog which displays custom WITs](customize-process-backlogs-boards.md#portfolio-backlogs)
+    - [Edit or rename a portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog)
+    - [Delete the top-level custom portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog)
 
 <a id="verify"> </a>
 
@@ -209,8 +209,8 @@ You can add additional WITs to a backlog level or add another portfolio backlog.
 
 We recommend that you create a test project and apply your customized inherited process to it to verify the changes you've made. All customizations made to a process go into effect immediately on all projects. If you want to stage your changes, you can do that using one of two methods:
 
-* [Create a test project and copy of your customized process](#test-project-copy-process)
-* [Create a test organization and import/export your process](#test-import-export-process)
+- [Create a test project and copy of your customized process](#test-project-copy-process)
+- [Create a test organization and import/export your process](#test-import-export-process)
 
 <a id="test-project-copy-process" />
 
@@ -274,8 +274,8 @@ To customize a single project, always start by [creating an inherited process an
 
 See also:
 
-* [Work tracking object limits](object-limits.md)
-* [What is an inherited process?](inheritance-process-model.md)
+- [Work tracking object limits](object-limits.md)
+- [What is an inherited process?](inheritance-process-model.md)
 
 <!---
 For example, the following image shows the work item form layout for the Bug WIT. From this page, you can add fields, groups, pages, and custom controls. To modify the workflow, you click **States**.

@@ -151,23 +151,23 @@ We’re changing the model for how you deal with hosted agents and different ver
 
 In this release you’ll see the following changes:
 
-* You must now explicitly select a queue when you create a build definition (no default).
+- You must now explicitly select a queue when you create a build definition (no default).
 
-* To make it easier, we’re moving the default queue to the **Tasks** tab, in the **Process** section.
+- To make it easier, we’re moving the default queue to the **Tasks** tab, in the **Process** section.
 
 ![default build queue on tasks tab](media/06_22_default-build-queue-on-tasks-tab-required.png)
 
-* The [Visual Studio Build](https://visualstudio.microsoft.com/docs/build/steps/build/visual-studio-build) and [MSBuild](https://visualstudio.microsoft.com/docs/build/steps/build/msbuild) tasks now default to the **Latest** setting for the version argument.
+- The [Visual Studio Build](https://visualstudio.microsoft.com/docs/build/steps/build/visual-studio-build) and [MSBuild](https://visualstudio.microsoft.com/docs/build/steps/build/msbuild) tasks now default to the **Latest** setting for the version argument.
 
 Coming soon you’ll see more changes. For example, the following hosted pools (and corresponding queues) will be:
 
-* Hosted VS2017
+- Hosted VS2017
 
-* Hosted VS2015
+- Hosted VS2015
 
-* Hosted Deprecated (previously called “Hosted Pool”)
+- Hosted Deprecated (previously called “Hosted Pool”)
 
-* Hosted Linux Preview
+- Hosted Linux Preview
 
 ## Reminder: The hosted XAML controller is going away
 

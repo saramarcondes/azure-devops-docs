@@ -13,15 +13,15 @@ We also made the following changes to the menu items:
 
 1.  The menu actions have been consolidated into the following three categories:
 
-    * Wiki level actions are next to the wiki picker
+    - Wiki level actions are next to the wiki picker
 
       > [!div class="mx-imgBorder"] >![Badge](../../media/152_10.png)
 
-    * Tree level actions
+    - Tree level actions
 
       > [!div class="mx-imgBorder"] >![Badge](../../media/152_11.png)
 
-    * Page level actions
+    - Page level actions
 
       > [!div class="mx-imgBorder"] >![Badge](../../media/152_12.png)
 
@@ -72,8 +72,8 @@ Until now, creating and editing tables in a wiki was difficult. We've made chang
 
     This feature has been prioritized based on the following suggestion tickets:
 
-* [Table view for wiki](https://developercommunity.visualstudio.com/content/idea/365781/table-view-for-wiki.html)
-* [Make it simple to insert tables in wiki](https://developercommunity.visualstudio.com/content/idea/366218/make-it-simple-to-insert-tables-in-wiki-it-is-ridi-1.html)
+- [Table view for wiki](https://developercommunity.visualstudio.com/content/idea/365781/table-view-for-wiki.html)
+- [Make it simple to insert tables in wiki](https://developercommunity.visualstudio.com/content/idea/366218/make-it-simple-to-insert-tables-in-wiki-it-is-ridi-1.html)
 
 2.  Better table readability
 

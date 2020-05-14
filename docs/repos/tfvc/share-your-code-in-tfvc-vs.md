@@ -146,8 +146,8 @@ Your whole team can work on the code now. All your changes are tracked in versio
 
 ## Troubleshooting
 
-* [My code is somewhere else. Can I migrate it to my TFVC project on Azure DevOps Services?](#my-code-is-somewhere-else-can-i-migrate-it-to-my-tfvc-project-on-azure-devops-services)
-* [I don't see the Configure Workspace link shown in the steps above. What do I do next?](#i-dont-see-the-configure-workspace-link-shown-in-the-steps-above-what-do-i-do-next)
+- [My code is somewhere else. Can I migrate it to my TFVC project on Azure DevOps Services?](#my-code-is-somewhere-else-can-i-migrate-it-to-my-tfvc-project-on-azure-devops-services)
+- [I don't see the Configure Workspace link shown in the steps above. What do I do next?](#i-dont-see-the-configure-workspace-link-shown-in-the-steps-above-what-do-i-do-next)
 
 <a name="migrate"></a>
 
@@ -155,8 +155,8 @@ Your whole team can work on the code now. All your changes are tracked in versio
 
 Yes:
 
-* [Upgrade From Visual SourceSafe](https://msdn.microsoft.com/library/ms253060).
-* [Migrate from Team Foundation Server into Azure DevOps Services](../../migrate/migrate-from-tfs.md).
+- [Upgrade From Visual SourceSafe](https://msdn.microsoft.com/library/ms253060).
+- [Migrate from Team Foundation Server into Azure DevOps Services](../../migrate/migrate-from-tfs.md).
 
 <a name="workspace_exists"></a>
 

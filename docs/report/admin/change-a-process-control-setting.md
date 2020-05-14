@@ -24,11 +24,11 @@ You can determine the current settings and change a setting by using the Warehou
 
 **Requirements**
 
-* SQL Server Reporting Services must be configured for the TFS deployment. If it isn't, see [Add a report server](add-a-report-server.md).
+- SQL Server Reporting Services must be configured for the TFS deployment. If it isn't, see [Add a report server](add-a-report-server.md).
 
-* You must be a member of the **Team Foundation Administrators** security group, or you must have the server-level **Administer warehouse** permission set to **Allow**. See [Set administrator permissions for Team Foundation Server](/azure/devops/server/admin/add-administrator).
+- You must be a member of the **Team Foundation Administrators** security group, or you must have the server-level **Administer warehouse** permission set to **Allow**. See [Set administrator permissions for Team Foundation Server](/azure/devops/server/admin/add-administrator).
 
-* The TFS Application Pool must be running for the Warehouse Control Web service to be available.
+- The TFS Application Pool must be running for the Warehouse Control Web service to be available.
 
 ## Access the Warehouse Control Web Service
 
@@ -37,7 +37,7 @@ You can determine the current settings and change a setting by using the Warehou
 2.  Open a web browser, type the following string in the Address bar, and then press ENTER:
 
     ```
-    http://localhost:8080/** VirtualDirectory **/TeamFoundation/Administration/v3.0/WarehouseControlService.asmx**  
+    http://localhost:8080/** VirtualDirectory **/TeamFoundation/Administration/v3.0/WarehouseControlService.asmx**
     ```
 
     For VirtualDirectory, type the IIS Virtual Directory that was specified when TFS was installed. By default, the virtual directory is **tfs**.
@@ -68,8 +68,8 @@ You can change the refresh frequency of the data warehouse or other process cont
 
 3.  In the **newValue** box, type the new number in seconds, and then click **Invoke**.
 
-        	> [!IMPORTANT]  
-        	> If you reduce the interval to less than the default of two hours (7200 seconds), processing of the data warehouse will consume server resources more frequently. Depending on the volume of data that your deployment has to process, you may want to reduce the interval to one hour (3600 seconds) or increase it to more than two hours.  
+        	> [!IMPORTANT]
+        	> If you reduce the interval to less than the default of two hours (7200 seconds), processing of the data warehouse will consume server resources more frequently. Depending on the volume of data that your deployment has to process, you may want to reduce the interval to one hour (3600 seconds) or increase it to more than two hours.
 
     A confirmation Web page appears and indicates that the **IncrementalProcessIntervalSeconds** setting has been changed.
 
@@ -152,5 +152,5 @@ The following table describes each process control setting and provides the Sett
 
 ## Related content
 
-* [Manage reports data warehouse cube](manage-reports-data-warehouse-cube.md)
-* [Manually process the TFS data warehouse and analysis services cube](manually-process-data-warehouse-and-cube.md)
+- [Manage reports data warehouse cube](manage-reports-data-warehouse-cube.md)
+- [Manually process the TFS data warehouse and analysis services cube](manually-process-data-warehouse-and-cube.md)

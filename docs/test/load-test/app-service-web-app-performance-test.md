@@ -24,13 +24,13 @@ confident that your app can handle the traffic during peak use or at your next m
 
 ## Prepare your environment
 
-* You'll need an Azure subscription. You can get one free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
+- You'll need an Azure subscription. You can get one free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 
-* You'll need an Azure DevOps subscription to keep your performance test history. A suitable subscription will be created
+- You'll need an Azure DevOps subscription to keep your performance test history. A suitable subscription will be created
   automatically when you set up your performance test. Or you can create a new subscription
   or use an existing subscription if you're the owner.
 
-* Deploy your app for testing in a non-production environment.
+- Deploy your app for testing in a non-production environment.
   Have your app use an App Service plan other than the plan used in production.
   That way, you don't affect any existing customers or slow down your app in production.
 
@@ -99,8 +99,8 @@ that represent an end-to-end user scenario by uploading a Visual
 Studio Web Test file. Some of the ways you can create a
 Visual Studio Web Test file are:
 
-* [Capture traffic using Fiddler and export as a Visual Studio Web Test file](https://docs.telerik.com/fiddler/Save-And-Load-Traffic/Tasks/VSWebTest)
-* [Create a load test file in Visual Studio](run-performance-tests-app-before-release.md)
+- [Capture traffic using Fiddler and export as a Visual Studio Web Test file](https://docs.telerik.com/fiddler/Save-And-Load-Traffic/Tasks/VSWebTest)
+- [Create a load test file in Visual Studio](run-performance-tests-app-before-release.md)
 
 To upload and run a Visual Studio Web Test file:
 

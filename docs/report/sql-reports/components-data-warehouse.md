@@ -26,8 +26,8 @@ For additional information on the databases and connectivity, see [SQL Server da
 
 Each tool or plug-in in Team Foundation uses a relational database in SQL Server to store the data used by the tool in its day-to-day operations. This relational database is often referred to as the operational store. The operational stores for Team Foundation include:
 
-* Common structure databases (Tfs_Configuration)
-* Team project collection databases (Tfs_Collection)
+- Common structure databases (Tfs_Configuration)
+- Team project collection databases (Tfs_Collection)
 
   You might also have operational stores created for third-party tools.
 
@@ -86,6 +86,6 @@ Security for the Team Foundation data warehouse is defined at the database level
 
 ## Related articles
 
-* [SQL Server databases for Azure DevOps Server](/azure/devops/server/architecture/sql-server-databases)
-* [Manually install SQL Server, Azure DevOps on-premises](/azure/devops/server/install/sql-server/install-sql-server)
-* [Architecture overview for Azure DevOps Server](/azure/devops/server/architecture/architecture)
+- [SQL Server databases for Azure DevOps Server](/azure/devops/server/architecture/sql-server-databases)
+- [Manually install SQL Server, Azure DevOps on-premises](/azure/devops/server/install/sql-server/install-sql-server)
+- [Architecture overview for Azure DevOps Server](/azure/devops/server/architecture/architecture)

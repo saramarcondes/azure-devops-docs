@@ -19,13 +19,13 @@ Represents a button used in IHostDialogService.openMessageDialog().
 
 ### Members
 
-* `id`: string. Used as HTML ID of the button.
+- `id`: string. Used as HTML ID of the button.
 
-* `text`: string. Text to display on the button.
+- `text`: string. Text to display on the button.
 
-* `reject`: boolean. Optional. When true, the dialog&#x27;s promise is rejected instead of resolved when this button is clicked.
+- `reject`: boolean. Optional. When true, the dialog&#x27;s promise is rejected instead of resolved when this button is clicked.
 
-* `style`: string. Optional. Specifies how the button should look.
+- `style`: string. Optional. Specifies how the button should look.
   Possible values:
   (undefined) - Default
   &quot;warning&quot; - Red

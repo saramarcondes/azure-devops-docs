@@ -132,12 +132,12 @@ To support security of your pipeline operations, you can add users to a built-in
 
 Learn more about configuring pipelines in the language of your choice:
 
-* [.NET Core](../ecosystems/dotnet-core.md)
-* [Go](../ecosystems/go.md)
-* [Java](../ecosystems/java.md)
-* [Node.js](../ecosystems/javascript.md)
-* [Python](../ecosystems/python.md)
-* [Containers](../ecosystems/containers/build-image.md) and [Container jobs](../process/container-phases.md)
+- [.NET Core](../ecosystems/dotnet-core.md)
+- [Go](../ecosystems/go.md)
+- [Java](../ecosystems/java.md)
+- [Node.js](../ecosystems/javascript.md)
+- [Python](../ecosystems/python.md)
+- [Containers](../ecosystems/containers/build-image.md) and [Container jobs](../process/container-phases.md)
 
 Learn more about building [Azure Repos](../repos/azure-repos-git.md) and [GitHub](../repos/github.md) repositories.
 

@@ -16,8 +16,8 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Members
 
-* `buildFlavor`: string. Flavor of build for which data is retrieved/published
+- `buildFlavor`: string. Flavor of build for which data is retrieved/published
 
-* `buildPlatform`: string. Platform of build for which data is retrieved/published
+- `buildPlatform`: string. Platform of build for which data is retrieved/published
 
-* `coverageStats`: [CodeCoverageStatistics](../../../TFS/TestManagement/Contracts/CodeCoverageStatistics.md)[]. List of coverage data for the build
+- `coverageStats`: [CodeCoverageStatistics](../../../TFS/TestManagement/Contracts/CodeCoverageStatistics.md)[]. List of coverage data for the build

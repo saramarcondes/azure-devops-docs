@@ -70,7 +70,7 @@ When you assign the same access level or extension to a user, the user consumes 
 
 ## Verify group rule
 
-* Verify that the resources are applied to each group and individual user. On the **All users** tab, highlight a user, and then select **Summary**.
+- Verify that the resources are applied to each group and individual user. On the **All users** tab, highlight a user, and then select **Summary**.
 
   :::image type="content" source="media/assign-access-levels/verify-user-summary.png" alt-text="Verify user summary for group rule":::
 
@@ -133,5 +133,5 @@ Direct assignments are removed from the users.
 
 ## Related articles
 
-* [Buy and install extensions](../../marketplace/install-extension.md)
-* [Install Active Directory and Azure Active Directory users or groups to a built-in security group](../security/add-ad-aad-built-in-security-groups.md)
+- [Buy and install extensions](../../marketplace/install-extension.md)
+- [Install Active Directory and Azure Active Directory users or groups to a built-in security group](../security/add-ad-aad-built-in-security-groups.md)

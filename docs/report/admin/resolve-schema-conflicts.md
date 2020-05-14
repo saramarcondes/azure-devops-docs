@@ -23,17 +23,17 @@ All reportable data from all team projects that are defined in all project colle
 
 When a schema conflict occurs, an error message will appear in the following locations:
 
-* The event log for the application-tier server.
+- The event log for the application-tier server.
 
-      	> [!NOTE]  
-      	> TFS logs an error message to the event log each day until the data conflict is resolved.  
+      	> [!NOTE]
+      	> TFS logs an error message to the event log each day until the data conflict is resolved.
 
-* A report that is provided with the MSF process templates and that you view through the Report Manager.
+- A report that is provided with the MSF process templates and that you view through the Report Manager.
 
-* A dashboard that is provided with the MSF process templates and that you view through the project portal.
+- A dashboard that is provided with the MSF process templates and that you view through the project portal.
 
-      	> [!NOTE]  
-      	> You can determine when a report or dashboard was updated most recently if you find the **Date Last Updated** time stamp, which appears in the lower-right corner of each report and dashboard. The time stamp corresponds to the most recent time that every warehouse adapter job that is scheduled for completion, for every project collection, successfully completed processing. The time stamp calculation includes custom adapter jobs and ignores adapter jobs that are blocked from running the Warehouse Control Web service.  
+      	> [!NOTE]
+      	> You can determine when a report or dashboard was updated most recently if you find the **Date Last Updated** time stamp, which appears in the lower-right corner of each report and dashboard. The time stamp corresponds to the most recent time that every warehouse adapter job that is scheduled for completion, for every project collection, successfully completed processing. The time stamp calculation includes custom adapter jobs and ignores adapter jobs that are blocked from running the Warehouse Control Web service.
       	>
       	> If a schema conflict is blocking data from entering the data warehouse for a report, the time stamp for the report will not be updated.
 
@@ -43,21 +43,22 @@ In addition to the previous messages, you can obtain more information by using t
 
 Schema conflicts occur when a project administrator performs one of the following actions:
 
-* Adds a reportable field to a work item type in one project collection, and the attributes that are assigned to that field do not match those in other project collections.
+- Adds a reportable field to a work item type in one project collection, and the attributes that are assigned to that field do not match those in other project collections.
 
-* Changes an attribute that is assigned to a work item field that is used in more than one project collection, even though those changes conflict with the assignments in other collections.  
-   > [!NOTE]  
-   > A project administrator can avoid the errors in the previous list only by reviewing the attribute assignments for fields that are defined across multiple project collections in a deployment.
+- Changes an attribute that is assigned to a work item field that is used in more than one project collection, even though those changes conflict with the assignments in other collections.
+
+  > [!NOTE]  
+  > A project administrator can avoid the errors in the previous list only by reviewing the attribute assignments for fields that are defined across multiple project collections in a deployment.
 
       	Errors result when a field has either the same reference name or the same reporting reference name in multiple project collections and one or more of the following attributes for that field does not match in two or more collections:
 
-      	- **name**: The friendly name of the field, which appears as an option when you create a work item query.  
+      	- **name**: The friendly name of the field, which appears as an option when you create a work item query.
 
-      	- **reportingname**: The name that appears in reports. If you do not specify a value, the value that is assigned to the **name** attribute is used.  
+      	- **reportingname**: The name that appears in reports. If you do not specify a value, the value that is assigned to the **name** attribute is used.
 
-      	- **reportable/reportingtype**: Whether data from the field is available for inclusion in reports, and if so, the reportable type (for example, **None**, **Detail**, **Dimension**, or **Measure**).  
+      	- **reportable/reportingtype**: Whether data from the field is available for inclusion in reports, and if so, the reportable type (for example, **None**, **Detail**, **Dimension**, or **Measure**).
 
-      		> [!NOTE]  
+      		> [!NOTE]
       		> The **FIELD** element used the **reportable** attribute, and the **witadmin changefield** command uses the **reportingtype** attribute. These attributes define the same information.
       	- **type**: The type of data that the field accepts (for example, **Integer**, **HTML**, **String**, **Double**, or **DateTime**).
 
@@ -104,11 +105,11 @@ You can review the event log on the application-tier server to obtain more infor
 
 2.  Determine in which of the following ways you want to resolve the conflict:
 
-    * Change the attribute for the field in one project collection to match the assignments that are made in other project collections. You should take this action when teams use the field in the same ways in similar reports or for cross-project reporting.
-    * Relabel the reporting reference name of the field in conflict. You should take this action when the fields are used in different ways or you must maintain a different field. In this case, the field is not used by teams that work in different project collections for cross-project reporting.
+    - Change the attribute for the field in one project collection to match the assignments that are made in other project collections. You should take this action when teams use the field in the same ways in similar reports or for cross-project reporting.
+    - Relabel the reporting reference name of the field in conflict. You should take this action when the fields are used in different ways or you must maintain a different field. In this case, the field is not used by teams that work in different project collections for cross-project reporting.
       For more information, see [Add or modify work item fields to support reporting](../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md).
-    * Mark a field as non-reportable for one or more collections. You should take this action when the field is not used for reports about those project collections.
-    * Remove the field from the team project collection. You should take this action if the field is not used by any team projects or reports.
+    - Mark a field as non-reportable for one or more collections. You should take this action when the field is not used for reports about those project collections.
+    - Remove the field from the team project collection. You should take this action if the field is not used by any team projects or reports.
 
       > [!NOTE]  
       > If you remove a field that is used in a report, the report will no longer display correctly.
@@ -138,7 +139,7 @@ You can verify that the schema conflicts have been resolved by [manually process
 
 ## Related content
 
-* [Manage work item fields using **witadmin**](https://msdn.microsoft.com/library/dd236909.aspx)
-* [Add or modify work item fields to support reporting](../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md)
-* [Dashboards and reports](../overview.md)
-* [Manually process the TFS data warehouse and analysis services cube](manually-process-data-warehouse-and-cube.md)
+- [Manage work item fields using **witadmin**](https://msdn.microsoft.com/library/dd236909.aspx)
+- [Add or modify work item fields to support reporting](../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md)
+- [Dashboards and reports](../overview.md)
+- [Manually process the TFS data warehouse and analysis services cube](manually-process-data-warehouse-and-cube.md)

@@ -105,53 +105,53 @@ independently or in conjunction with other components through workflows.
 You might face pain points when you manually deploy an entire system. For a large complex system
 with multiple components, like service, web jobs, and dacpac scripts, here are example pain points:
 
-* A large amount of time goes into configuration of each component
+- A large amount of time goes into configuration of each component
 
-* Deployment needs to be done separately for each, adding to the overall deployment time.
+- Deployment needs to be done separately for each, adding to the overall deployment time.
 
-* Multiple resources have to be engaged to ensure that the deployments happen as expected.
+- Multiple resources have to be engaged to ensure that the deployments happen as expected.
 
 How Release Management (RM) solves them:
 
-* RM allows you to create custom workflows which sequence the deployment to ensure that
+- RM allows you to create custom workflows which sequence the deployment to ensure that
   the components get deployed as soon as their dependencies have been deployed.
 
-* Configurations can be stored in RM to ensure that configuration per deployment is not required.
+- Configurations can be stored in RM to ensure that configuration per deployment is not required.
 
-* It automates the entire workflow which ensures manual intervention is not required and resources
+- It automates the entire workflow which ensures manual intervention is not required and resources
   can be utilized for functional tasks.
 
 **Key takeaways**
 
-* Set up Automated Builds scheduled for the rhythm that works best for your product and Implement
+- Set up Automated Builds scheduled for the rhythm that works best for your product and Implement
   Gated Check-ins.
 
-* Integrate Code Analysis and Fortify into the build setup to improve the code quality and security
+- Integrate Code Analysis and Fortify into the build setup to improve the code quality and security
   of the application
 
-* Set up daily automated deployments to the internal SWE environments and set up one click deployments
+- Set up daily automated deployments to the internal SWE environments and set up one click deployments
   to environments like UAT and Prod.
 
-* Use Release Management to set up custom workflows for your releases and triggering them with a single click.
+- Use Release Management to set up custom workflows for your releases and triggering them with a single click.
 
 To use Release Management, you need to set up the following components:
 
-* **RM Server**: Is the central repository for configuration and release information.
+- **RM Server**: Is the central repository for configuration and release information.
 
-* **Build Agent**: This is a machine (physical or VM) that you set up at your end on which you will
+- **Build Agent**: This is a machine (physical or VM) that you set up at your end on which you will
   run all your builds and deployments.
 
-* **Environments**: This signifies the environment which will be used in conjunction with your machine
+- **Environments**: This signifies the environment which will be used in conjunction with your machine
   that you have set up.
 
-* **Release Paths**: You need to create Release Paths for the multiple releases that you want to
+- **Release Paths**: You need to create Release Paths for the multiple releases that you want to
   automate for multiple environments - internal SWE envs, INT, UAT, and so on.
 
-* **Build Components**: The build component is used configure the build and change any environment
+- **Build Components**: The build component is used configure the build and change any environment
   specific configurations. It picks up the build from the remote machine in which VSTF auto-generates
   the builds as per the build pipeline and runs the configuration changes that are defined within it.
 
-* **Release Templates**: Release template defines the workflow that you have set up as per your specific
+- **Release Templates**: Release template defines the workflow that you have set up as per your specific
   needs of deployment. It also defines the sequence in which the RM components are to get executed. You need
   to integrate your build pipeline from Team Foundation Server (TFS) with the release template to enable
   continuous delivery. You can either pick up the latest build or select the build.
@@ -163,32 +163,32 @@ To use Release Management, you need to set up the following components:
 In this paper, we discussed the various engineering practices we can use for enabling faster product
 delivery with higher quality. We discussed:
 
-* **Build Automation**: Builds can be set up for triggering on a schedule or on an ad-hoc basis
+- **Build Automation**: Builds can be set up for triggering on a schedule or on an ad-hoc basis
   just by a single click. It can vary based on the rhythm that works best for your team. Gated
   check-ins should be set up on top of the build pipelines to accept only the check-ins which meet
   the criteria bar.
 
-* **Code Analysis and Fortify Integration**: The build pipelines should be integrated with Code
+- **Code Analysis and Fortify Integration**: The build pipelines should be integrated with Code
   Analysis and Fortify to trigger on a schedule and also with the Gated Check-ins. Code Analysis
   will improve the code quality and Fortify will point out the security-based gaps in the application,
   if any.
 
-* **Deployment Automation**: You can integrate PowerShell scripts with your build pipelines to achieve
+- **Deployment Automation**: You can integrate PowerShell scripts with your build pipelines to achieve
   deployment automation. You can also use Release Management to set up custom workflows and integrate it with
   your TFS to pick up the latest builds or even select builds.
 
 We also discussed the benefits that we found by taking up these practices:
 
-* Minimal wastage of time due to automations of build, deploy phases
+- Minimal wastage of time due to automations of build, deploy phases
 
-* Higher code quality due to Gated check-ins (with integrated Test Automation), Code Analysis,
+- Higher code quality due to Gated check-ins (with integrated Test Automation), Code Analysis,
   and Fortify Integration
 
-* Faster delivery
+- Faster delivery
 
-* Will enable you to hit Production Ready at Code Complete (PRCC)
+- Will enable you to hit Production Ready at Code Complete (PRCC)
 
-* Will enable you to hit Continuous Integration & Continuous Delivery targets (CI/CD)
+- Will enable you to hit Continuous Integration & Continuous Delivery targets (CI/CD)
 
 ## References
 

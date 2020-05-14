@@ -28,8 +28,8 @@ In this tutorial you learn how to:
 
 > [!div class="checklist"]
 >
-> * Create a pull request
-> * Complete a pull request
+> - Create a pull request
+> - Complete a pull request
 
 ## Create a pull request
 
@@ -79,19 +79,19 @@ Complete your pull request after the reviewers approve of the changes by selecti
 
 ![Complete button on the pull request view with its drop-down options](media/pull-requests/complete_pr_options.png)
 
-* **Complete**: Complete the pull request now and merge the changes to the target branch.
-* **Set auto-complete**: If you have branch policies, you can choose **Set auto-complete** to configure the pull request to close once all branch policies are met. For more information on auto-complete (and reasons why you might not see this option), see [Complete automatically](pull-requests.md).
-* **Abandon**: Choose **Abandon** to close the pull request without merging the changes.
+- **Complete**: Complete the pull request now and merge the changes to the target branch.
+- **Set auto-complete**: If you have branch policies, you can choose **Set auto-complete** to configure the pull request to close once all branch policies are met. For more information on auto-complete (and reasons why you might not see this option), see [Complete automatically](pull-requests.md).
+- **Abandon**: Choose **Abandon** to close the pull request without merging the changes.
 
 Enter the message used for the [merge commit](merging.md) and update the pull request description as needed in the dialog that follows.
 
 ![Complete pull request dialog](./media/complete-pull-request-dialog.png)
 
-* Check **Complete linked work items after merging** to complete any linked work items.
-* Check **Delete `<branch name>` after merging** to delete the source branch from the pull request. Git retains the commit history in the `master` branch after the pull request is complete,
+- Check **Complete linked work items after merging** to complete any linked work items.
+- Check **Delete `<branch name>` after merging** to delete the source branch from the pull request. Git retains the commit history in the `master` branch after the pull request is complete,
   so unless you plan on doing more work in the branch, it is safe to remove.
-* Check **Squash changes when merging** to [squash merge](merging-with-squash.md) your pull request.
-* Check **Override branch policies and enable merge** to force merge even if all branch policies haven't been satisfied. This option is only available if you have [Exempt from policy enforcement](branch-policies.md#bypass-branch-policies) permissions.
+- Check **Squash changes when merging** to [squash merge](merging-with-squash.md) your pull request.
+- Check **Override branch policies and enable merge** to force merge even if all branch policies haven't been satisfied. This option is only available if you have [Exempt from policy enforcement](branch-policies.md#bypass-branch-policies) permissions.
 
 ### What happens when a pull request is merged?
 

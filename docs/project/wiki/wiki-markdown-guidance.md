@@ -247,6 +247,6 @@ In wiki pages, you can also create rich content using HTML tags.
 
 ## Related articles
 
-* [Project wiki](add-edit-wiki.md)
-* [Wiki file structure](wiki-file-structure.md)
-* [Wiki view history](wiki-view-history.md)
+- [Project wiki](add-edit-wiki.md)
+- [Wiki file structure](wiki-file-structure.md)
+- [Wiki view history](wiki-view-history.md)

@@ -50,9 +50,9 @@ Use this article to learn:
 
 > [!div class="checklist"]
 >
-> * How to configure the Velocity widget (Analytics)
-> * How to view the Velocity in-context report (Analytics)
-> * Required and recommended team activities to support velocity tracking
+> - How to configure the Velocity widget (Analytics)
+> - How to view the Velocity in-context report (Analytics)
+> - Required and recommended team activities to support velocity tracking
 
 ::: moniker-end
 
@@ -60,9 +60,9 @@ Use this article to learn:
 
 > [!div class="checklist"]
 >
-> * How to configure the Velocity widget (Analytics)
-> * How to view the Velocity in-context report (work tracking data store)
-> * Required and recommended team activities to support velocity tracking
+> - How to configure the Velocity widget (Analytics)
+> - How to view the Velocity in-context report (work tracking data store)
+> - Required and recommended team activities to support velocity tracking
 
 ::: moniker-end
 
@@ -70,8 +70,8 @@ Use this article to learn:
 
 > [!div class="checklist"]
 >
-> * How to view the Velocity in-context report (work tracking data store)
-> * Required and recommended team activities to support velocity tracking
+> - How to view the Velocity in-context report (work tracking data store)
+> - Required and recommended team activities to support velocity tracking
 
 ::: moniker-end
 
@@ -164,11 +164,11 @@ Velocity reports are available for each backlog level, both product and portfoli
 
     With the following assignments made to the color bars. All work items counted are assigned to the sprint or iteration.
 
-    * **Planned** - calculated based on the amount of work assigned to the sprint prior to the start of the sprint. This count includes work that was moved to a different sprint after the start of the sprint, but doesn't include work that was added later after the sprint started. > [!TIP]  
-       > To list the work items included in the count, click the velocity bar. A query results page will open with the list of work items included.
-    * **Completed** - calculated based on the amount of work assigned to the sprint prior to the start of the sprint and completed prior to the sprint end date..
-    * **Completed Late** - calculated based on the amount of work assigned to the sprint prior to the start of the sprint but was completed after the end of the sprint.
-    * **Incomplete** - Amount of work not completed, calculated based on the amount of work assigned to the sprint prior to the start of the sprint and has not been set to completed.
+    - **Planned** - calculated based on the amount of work assigned to the sprint prior to the start of the sprint. This count includes work that was moved to a different sprint after the start of the sprint, but doesn't include work that was added later after the sprint started. > [!TIP]
+      > To list the work items included in the count, click the velocity bar. A query results page will open with the list of work items included.
+    - **Completed** - calculated based on the amount of work assigned to the sprint prior to the start of the sprint and completed prior to the sprint end date..
+    - **Completed Late** - calculated based on the amount of work assigned to the sprint prior to the start of the sprint but was completed after the end of the sprint.
+    - **Incomplete** - Amount of work not completed, calculated based on the amount of work assigned to the sprint prior to the start of the sprint and has not been set to completed.
 
     The selections you make are only set for you, and persist across sessions until you change them.
 
@@ -210,9 +210,9 @@ Velocity reports are available for each backlog level, both product and portfoli
 
     For charts to appear, your team must perform these activities:
 
-    * Select sprints for your team
-    * Assign backlog items to sprints
-    * Estimate backlog items by defining the Effort, Story Points, or Size.
+    - Select sprints for your team
+    - Assign backlog items to sprints
+    - Estimate backlog items by defining the Effort, Story Points, or Size.
 
 1.  The chart tracks your estimated backlog work (sum of Effort, Story Points, or Size) that your team has completed (green) in the previous sprints, or that are still in progress (blue).
 
@@ -232,9 +232,9 @@ Velocity reports are available for each backlog level, both product and portfoli
 
     For charts to appear, your team must perform these activities:
 
-    * Select sprints for your team
-    * Assign backlog items to sprints
-    * Estimate backlog items by defining the Effort, Story Points, or Size.
+    - Select sprints for your team
+    - Assign backlog items to sprints
+    - Estimate backlog items by defining the Effort, Story Points, or Size.
 
 2.  The report tracks your estimated backlog work (sum of Effort, Story Points, or Size) that your team has completed (green) in the previous sprints, or that are still in progress (blue).
 
@@ -255,7 +255,7 @@ Velocity reports are available for each backlog level, both product and portfoli
 
 ::: moniker range="azure-devops"
 
-* If you haven't yet [added the Velocity widget to your dashboard](../add-widget-to-dashboard.md), do that now.
+- If you haven't yet [added the Velocity widget to your dashboard](../add-widget-to-dashboard.md), do that now.
 
 ::: moniker-end
 
@@ -290,7 +290,7 @@ You configure your velocity widget for a single team. If you want to view the ve
         	This is useful for comparing your planned work to actual deliverables.
         	By default, the count of planned work begins as of the start date of the iteration. <br/>
 
-    * <b><i>Days past start date of iteration when planned work is final:</i></b> Specify a number of days past the start date to count planned work. For example, if the first 2 days of an iteration are for planning, then you can enter "3", and planned work will be counted on the 3rd day.
+    - <b><i>Days past start date of iteration when planned work is final:</i></b> Specify a number of days past the start date to count planned work. For example, if the first 2 days of an iteration are for planning, then you can enter "3", and planned work will be counted on the 3rd day.
       For example, if the Iteration starts on 01/01/2018, and 3 backlog items are assigned to the iteration on 01/01/2018 end-of-day, then those 3 backlog item items will be considered as Planned. If your team doesn't complete planning until a few days into the iteration, then you can update the Days past start date of iteration when planned work is final.
 
       > [!NOTE]
@@ -301,7 +301,7 @@ You configure your velocity widget for a single team. If you want to view the ve
       **Highlight work completed late:** Work items marked complete after the iteration end date are considered to be completed late and will show as light green.
       This is useful for spotting a trend where work items are marked complete after the iteration is complete.
 
-    * <b><i>Days past end date of iteration after which work is late:</i></b> Specify a number of days past which a work item is considered late if it's status is still new or in progress.
+    - <b><i>Days past end date of iteration after which work is late:</i></b> Specify a number of days past which a work item is considered late if it's status is still new or in progress.
 
       For example, entering 3 days will give the team 3 days after the end of an iteration to mark work items complete or done, before they are considered late.
 

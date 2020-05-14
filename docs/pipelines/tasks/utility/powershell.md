@@ -24,7 +24,7 @@ Use this task to run a PowerShell script.
 
 ## Demands
 
-* DotNetFramework
+- DotNetFramework
 
 ::: moniker range="> tfs-2018"
 

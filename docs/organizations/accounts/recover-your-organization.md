@@ -20,8 +20,8 @@ After you delete your organization, it's disabled but available for 28 days. If 
 
 ## Prerequisites
 
-* An organization deleted within the last 28 days.
-* Organization Owner permissions to restore your organization. [How do I find the organization Owner?](../security/lookup-organization-owner-admin.md)
+- An organization deleted within the last 28 days.
+- Organization Owner permissions to restore your organization. [How do I find the organization Owner?](../security/lookup-organization-owner-admin.md)
 
 ## Recover organization
 
@@ -35,20 +35,20 @@ After you delete your organization, it's disabled but available for 28 days. If 
 
 3.  In the resulting popup, select **Restore** to confirm.
 
-    * If your organization URL is still available, you can restore it.
+    - If your organization URL is still available, you can restore it.
 
       ![Confirm restoration of your organization](media/recover-your-organization/confirm-restore-organization.png)
 
-    * If your organization URL isn't available, provide a new URL, and then select **Restore**.
+    - If your organization URL isn't available, provide a new URL, and then select **Restore**.
 
 4.  After you restore your organization, do the following tasks:
 
-    * If billing was previously set up for your organization, you have to set it up again. [Relink your organization](../billing/set-up-billing-for-your-organization-vs.md) to an Azure subscription.
-    * If your organization was connected to Azure Active Directory for authenticating user access, you don't have to reconnect it.
+    - If billing was previously set up for your organization, you have to set it up again. [Relink your organization](../billing/set-up-billing-for-your-organization-vs.md) to an Azure subscription.
+    - If your organization was connected to Azure Active Directory for authenticating user access, you don't have to reconnect it.
 
 ## Related articles
 
-* [Delete your organization from Azure DevOps](delete-your-organization.md)
-* [Create a new organization](create-organization.md)
-* [Change organization owner](change-organization-ownership.md)
-* [Change organization data region](change-organization-location.md)
+- [Delete your organization from Azure DevOps](delete-your-organization.md)
+- [Create a new organization](create-organization.md)
+- [Change organization owner](change-organization-ownership.md)
+- [Change organization data region](change-organization-location.md)

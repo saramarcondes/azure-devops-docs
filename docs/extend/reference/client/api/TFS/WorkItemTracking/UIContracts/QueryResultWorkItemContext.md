@@ -16,8 +16,8 @@ Module path: `TFS/WorkItemTracking/UIContracts`
 
 ### Members
 
-* `columns`: string[].
+- `columns`: string[].
 
-* `rows`: any[].
+- `rows`: any[].
 
-* `query`: [WitContracts.QueryHierarchyItem](../../../TFS/WorkItemTracking/Contracts/QueryHierarchyItem.md).
+- `query`: [WitContracts.QueryHierarchyItem](../../../TFS/WorkItemTracking/Contracts/QueryHierarchyItem.md).

@@ -18,11 +18,11 @@ monikerRange: '>= tfs-2015'
 
 You have two options if you want to test Microsoft Store apps on a phone, tablet, or other device:
 
-* Plan and perform your tests using the web portal, using a browser on the device or on another computer. When you use the web portal for testing, the test runner doesn't interact with the software that you're testing; it simply acts as a checklist of the test steps. Therefore, you don't have to run it on the device that you're testing.
+- Plan and perform your tests using the web portal, using a browser on the device or on another computer. When you use the web portal for testing, the test runner doesn't interact with the software that you're testing; it simply acts as a checklist of the test steps. Therefore, you don't have to run it on the device that you're testing.
 
   This option requires no special preparation on the device, other than installing the software.
 
-* Couple the device to your computer, and run the tests using Microsoft Test Manager. This option allows you to capture screenshots and [collect diagnostic data](collect-more-diagnostic-data-in-manual-tests.md) from the device.
+- Couple the device to your computer, and run the tests using Microsoft Test Manager. This option allows you to capture screenshots and [collect diagnostic data](collect-more-diagnostic-data-in-manual-tests.md) from the device.
 
 [!INCLUDE [feature-availability](../includes/feature-availability.md)]
 

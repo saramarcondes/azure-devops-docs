@@ -43,8 +43,8 @@ You can add up to five levels of portfolio backlogs. And, each team can [choose 
 
 The process to add another portfolio backlog differs slightly depending on the [process model](customize-work.md) you use.
 
-* For **Hosted XML**: You'll first export your process, add or update definition files, and then import that process to either update existing projects or use it to create a project.
-* For **On-premises XML**: You'll first export your work tracking definition files, update them, and then import them to your project.
+- For **Hosted XML**: You'll first export your process, add or update definition files, and then import that process to either update existing projects or use it to create a project.
+- For **On-premises XML**: You'll first export your work tracking definition files, update them, and then import them to your project.
 
 This topic walks you through adding a portfolio backlog to a project based on the [Agile process](../boards/work-items/guidance/agile-process.md) in these five steps:
 
@@ -133,9 +133,9 @@ Now, add the Initiative Category. This adds the Initiative backlog to process co
 Add the Initiative Category to the Categories.xml file. (The Categories.xml file is located in the WorkItem Tracking folder.)
 
 ```xml
-  <CATEGORY name="Initiative Category" refname="FabrikamFiber.InitiativeCategory">  
-    <DEFAULTWORKITEMTYPE name="Initiative" />  
-  </CATEGORY>  
+  <CATEGORY name="Initiative Category" refname="FabrikamFiber.InitiativeCategory">
+    <DEFAULTWORKITEMTYPE name="Initiative" />
+  </CATEGORY>
 ```
 
 You can add this category anywhere within the definition file. Since you are adding a custom category, label the category using your company name.
@@ -180,10 +180,10 @@ In this last step, you add the Initiative portfolio backlog to the process and m
 2.  Edit the `PortfolioBacklog` element for the Epic Category to point to `Initiative` as the parent backlog.
 
     ```xml
-    <PortfolioBacklog category="Microsoft.EpicCategory" pluralName="Epics"  
+    <PortfolioBacklog category="Microsoft.EpicCategory" pluralName="Epics"
        singularName="Epic" parent="FabrikamFiber.InitiativeCategory"
        workItemCountLimit="1000">
-       . . .  
+       . . .
     </PortfolioBacklog>
     ```
 
@@ -203,8 +203,8 @@ In this last step, you add the Initiative portfolio backlog to the process and m
 
 1.  Update your project:
 
-    * For **Hosted XML:** [Import your process](../organizations/settings/work/import-process/import-process.md).
-    * For **On-premises XML:** [Import the definition files you updated](#import-export) in this order:  
+    - For **Hosted XML:** [Import your process](../organizations/settings/work/import-process/import-process.md).
+    - For **On-premises XML:** [Import the definition files you updated](#import-export) in this order:  
        a. Initiative.xml  
        b. Categories.xml  
        c. ProcessConfiguration.xml
@@ -219,9 +219,9 @@ In this last step, you add the Initiative portfolio backlog to the process and m
 
 If you're updating a project that connects to an on-premises TFS, you'll use the **witadmin** commands to import and export definition files. You need to export the following files:
 
-* Epic.xml
-* Categories.xml (located in the WorkItem Tracking folder)
-* ProcessConfiguration.xml (located in the WorkItem Tracking/Process folder)
+- Epic.xml
+- Categories.xml (located in the WorkItem Tracking folder)
+- ProcessConfiguration.xml (located in the WorkItem Tracking/Process folder)
 
 [!INCLUDE [temp](../includes/process-editor.md)]
 
@@ -269,12 +269,12 @@ If you want to add another WIT to your backlogs or boards, see [work item types 
 
 To learn more about the syntax for a definition file or command line tool, see these topics:
 
-* [All WITD XML elements reference](xml/all-witd-xml-elements-reference.md)
-* [Categories XML element reference](xml/categories-xml-element-reference.md)
-* [Process configuration XML element reference](xml/process-configuration-xml-element.md)
-* [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md)
-* [Import and export categories](witadmin/witadmin-import-export-categories.md)
-* [Import and export process configuration](witadmin/witadmin-import-export-process-configuration.md)
+- [All WITD XML elements reference](xml/all-witd-xml-elements-reference.md)
+- [Categories XML element reference](xml/categories-xml-element-reference.md)
+- [Process configuration XML element reference](xml/process-configuration-xml-element.md)
+- [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md)
+- [Import and export categories](witadmin/witadmin-import-export-categories.md)
+- [Import and export process configuration](witadmin/witadmin-import-export-process-configuration.md)
 
 Otherwise, see [Customize your work tracking experience](customize-work.md) to access other configuration and customization options available to you.
 

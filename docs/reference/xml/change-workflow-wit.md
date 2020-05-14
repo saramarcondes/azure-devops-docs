@@ -49,11 +49,11 @@ For example, the State is set to **New** when a tester opens a new bug that is b
 
 As you design or modify a workflow, consider the following guidelines:
 
-* Use the `STATE` element to define a unique state for each team member role that will take a specific action on a work item. The more states you define, the more transitions you must define. Regardless of the sequence in which you define the states, they are listed in alphanumeric order in the drop-down menu for the **State** field.
+- Use the `STATE` element to define a unique state for each team member role that will take a specific action on a work item. The more states you define, the more transitions you must define. Regardless of the sequence in which you define the states, they are listed in alphanumeric order in the drop-down menu for the **State** field.
 
   If you add a state to a work item type that appears on the backlog or board pages in the web portal, you must also map the state to a state category. To learn more, review [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md).
 
-* Use the `TRANSITION` element to define a transition for each valid progression and regression from one state to another.
+- Use the `TRANSITION` element to define a transition for each valid progression and regression from one state to another.
 
   At a minimum, you must define one transition for each state, and the transition from the null state to the initial state.
 
@@ -61,11 +61,11 @@ As you design or modify a workflow, consider the following guidelines:
 
   When a team member changes the state of a work item, that change triggers the transition and the actions that you define to be performed for the selected state and the transition. Users can specify only those states that are valid based on the transitions that you define for the current state. In addition, an `ACTION` element, which is a child element of `TRANSITION`, can change the state of a work item.
 
-* For each transition, you define a default reason by using the `DEFAULTREASON` element. You can define as many optional reasons as you want by using the `REASON` element. These values appear in the drop-down menu of the **Reason** field.
+- For each transition, you define a default reason by using the `DEFAULTREASON` element. You can define as many optional reasons as you want by using the `REASON` element. These values appear in the drop-down menu of the **Reason** field.
 
-* You can specify rules that will be applied when the work item changes state, when it transitions, or when a user selects a specific reason. Many of these rules supplement the conditional rules that you can apply when you define the fields in the `FIELDS` section under the `WORKITEMTYPE` definition. For more information, see [Update fields during a workflow change](#fields) later in this topic.
+- You can specify rules that will be applied when the work item changes state, when it transitions, or when a user selects a specific reason. Many of these rules supplement the conditional rules that you can apply when you define the fields in the `FIELDS` section under the `WORKITEMTYPE` definition. For more information, see [Update fields during a workflow change](#fields) later in this topic.
 
-* The names that you assign to states and reasons are case insensitive.
+- The names that you assign to states and reasons are case insensitive.
 
   The drop-down menus for the State and Reason fields within the work item form or query editor display the values assigned in the `WORKFLOW` section of the work item type.
 
@@ -163,11 +163,11 @@ The following table defines the valid transitions for each of the four states th
 You can restrict who is allowed to make a transition from one state to another by using the _for_ and _not_ attributes of the `TRANSITION` element. As the following example shows, testers can reopen a bug but developers cannot.
 
 ```xml
-<TRANSITION from="Closed" to="Active"  
-   for="[Project]\Testers"  
-   not="[Project]\Developers">  
-   . . .  
-</TRANSITION>  
+<TRANSITION from="Closed" to="Active"
+   for="[Project]\Testers"
+   not="[Project]\Developers">
+   . . .
+</TRANSITION>
 ```
 
 <a name="Reasons"></a>
@@ -184,18 +184,18 @@ For example, a developer can specify one of the following reasons when they reso
 The following example shows the elements that define the reasons why a member of the team might resolve a bug:
 
 ```xml
-<TRANSITION from="Active" to="Resolved">  
-      . . .  
-      <REASONS>  
-      <DEFAULTREASON value="Fixed"/>  
-      <REASON value="Deferred"/>  
-      <REASON value="Duplicate"/>  
-      <REASON value="As Designed"/>  
-      <REASON value="Unable to Reproduce"/>  
-      <REASON value="Obsolete"/>  
-      </REASONS>  
-      . . .  
-</TRANSITION>  
+<TRANSITION from="Active" to="Resolved">
+      . . .
+      <REASONS>
+      <DEFAULTREASON value="Fixed"/>
+      <REASON value="Deferred"/>
+      <REASON value="Duplicate"/>
+      <REASON value="As Designed"/>
+      <REASON value="Unable to Reproduce"/>
+      <REASON value="Obsolete"/>
+      </REASONS>
+      . . .
+</TRANSITION>
 ```
 
 <a name="Actions"></a>
@@ -205,12 +205,12 @@ The following example shows the elements that define the reasons why a member of
 In general, team members change the state of a work item by specifying a different value for the **State** field and then saving the work item. However, you can also define an `ACTION` element that automatically changes the state of a work item when that transition occurs. As the following example shows, you can specify that bug work items should be resolved automatically if they are associated with files that a developer checks into version control:
 
 ```xml
-<TRANSITION from="Active" to="Resolved">  
-      <ACTIONS>  
-      <ACTION value="Microsoft.VSTS.Actions.Checkin"/>  
-      </ACTIONS>  
-. . .  
-</TRANSITION>  
+<TRANSITION from="Active" to="Resolved">
+      <ACTIONS>
+      <ACTION value="Microsoft.VSTS.Actions.Checkin"/>
+      </ACTIONS>
+. . .
+</TRANSITION>
 ```
 
 You can use the `ACTION` element to automatically change the state of work items of a particular type when events occur elsewhere in Microsoft Visual Studio Application Lifecycle Management or outside Visual Studio Application Lifecycle Management (for example, from a tool that tracks calls). For more information, see [ACTION](automate-field-assignments-state-transition-reason.md).
@@ -221,11 +221,11 @@ You can use the `ACTION` element to automatically change the state of work items
 
 You can define rules that update fields whenever the following events occur:
 
-* Assign a field rule under `STATE` when you want the rule to apply for all transitions to and reasons for entering that state.
+- Assign a field rule under `STATE` when you want the rule to apply for all transitions to and reasons for entering that state.
 
-* Assign a field rule under `TRANSITION` when you want the rule to apply for that transition and all reasons for making that transition.
+- Assign a field rule under `TRANSITION` when you want the rule to apply for that transition and all reasons for making that transition.
 
-* Assign a field rule under `DEFAULTREASON` or `REASON` when you want the rules to apply only for that specific reason.
+- Assign a field rule under `DEFAULTREASON` or `REASON` when you want the rules to apply only for that specific reason.
 
   If a field should always contain the same value, you define the rule under the `FIELD` element that defines that field. To learn more about rule usage, see [Apply a field rule](apply-rule-work-item-field.md).
 
@@ -240,21 +240,21 @@ You can define rules that update fields whenever the following events occur:
 When the value of the **State** field for a work item is set to Active and the work item is saved, the values of the **Activated By** and **Assigned To** fields are automatically set to the name of the current user. That user must be a member of the Team Foundation Server Valid Users group. The value of the **Activated Date** field is also set automatically. The following example shows the elements that enforce this rule:
 
 ```xml
-<STATE value="Active">  
-<FIELDS>  
-      <FIELD refname="Microsoft.VSTS.Common.ActivatedBy">  
-      <COPY from="currentuser"/>  
-      <VALIDUSER/>  
-      <REQUIRED/>  
-      </FIELD>  
-      <FIELD refname="Microsoft.VSTS.Common.ActivatedDate">  
-      <SERVERDEFAULT from="clock"/></FIELD>  
-      <FIELD refname="System.AssignedTo">  
-      <DEFAULT from="currentuser"/>  
-      </FIELD>  
-. . .  
-</FIELDS>  
-</STATE>  
+<STATE value="Active">
+<FIELDS>
+      <FIELD refname="Microsoft.VSTS.Common.ActivatedBy">
+      <COPY from="currentuser"/>
+      <VALIDUSER/>
+      <REQUIRED/>
+      </FIELD>
+      <FIELD refname="Microsoft.VSTS.Common.ActivatedDate">
+      <SERVERDEFAULT from="clock"/></FIELD>
+      <FIELD refname="System.AssignedTo">
+      <DEFAULT from="currentuser"/>
+      </FIELD>
+. . .
+</FIELDS>
+</STATE>
 ```
 
 <a name="ClearField"></a>
@@ -264,13 +264,13 @@ When the value of the **State** field for a work item is set to Active and the w
 When the value of the **State** field for a work item is set to Active and the work item is saved, the Closed Date and Closed By fields are automatically set to null and made read-only if you use the `EMPTY` element, as the following example shows.
 
 ```xml
-<STATE value="Active">  
-      <FIELDS>  
-. . .  
-      <FIELD refname="Microsoft.VSTS.Common.ClosedDate"><EMPTY/></FIELD>  
-      <FIELD refname="Microsoft.VSTS.Common.ClosedBy"><EMPTY/></FIELD>  
-      </FIELDS>  
-</STATE>  
+<STATE value="Active">
+      <FIELDS>
+. . .
+      <FIELD refname="Microsoft.VSTS.Common.ClosedDate"><EMPTY/></FIELD>
+      <FIELD refname="Microsoft.VSTS.Common.ClosedBy"><EMPTY/></FIELD>
+      </FIELDS>
+</STATE>
 ```
 
 <a name="CopyField"></a>
@@ -280,23 +280,23 @@ When the value of the **State** field for a work item is set to Active and the w
 When the value of the **State** field for a work item changes to Resolved and the work item is saved, the value of the **Resolved Reason** field is set to the value that the user specified in the **Reason** field. The following example shows the elements that enforce this rule:
 
 ```xml
-<STATE value="Resolved">  
-      <FIELDS>  
-. . .  
-      <FIELD refname="Microsoft.VSTS.Common.ResolvedReason">  
-         <COPY from="field" field="System.Reason"/>  
-      </FIELD>  
-      </FIELDS>  
-</STATE>  
+<STATE value="Resolved">
+      <FIELDS>
+. . .
+      <FIELD refname="Microsoft.VSTS.Common.ResolvedReason">
+         <COPY from="field" field="System.Reason"/>
+      </FIELD>
+      </FIELDS>
+</STATE>
 ```
 
 ## Related notes
 
-* [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md)
-* [Customize your work tracking experience](../customize-work.md)
-* [Query by assignment, workflow or Kanban board changes](../../boards/queries/query-by-workflow-changes.md)
-* [Design the work item form](design-work-item-form.md)
-* [Import, export, and manage work item types](../witadmin/witadmin-import-export-manage-wits.md)
+- [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md)
+- [Customize your work tracking experience](../customize-work.md)
+- [Query by assignment, workflow or Kanban board changes](../../boards/queries/query-by-workflow-changes.md)
+- [Design the work item form](design-work-item-form.md)
+- [Import, export, and manage work item types](../witadmin/witadmin-import-export-manage-wits.md)
 
 <a name="tools"></a>
 

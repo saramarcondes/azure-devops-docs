@@ -31,13 +31,13 @@ and review extensions. Communication plays an important role in keeping a health
 publishers responding to customer reviews. Please think deeply about your customer interactions and reflect on the spirit of the customer experience
 that the Marketplace is trying to create.
 
-* Reviews are reserved for customer comments. Use _Reply_ only to respond to a review.
-* Reviews are for sharing customer opinions, so _all opinions are valid_. Customers are entitled to their opinions, so please treat comments respectfully
+- Reviews are reserved for customer comments. Use _Reply_ only to respond to a review.
+- Reviews are for sharing customer opinions, so _all opinions are valid_. Customers are entitled to their opinions, so please treat comments respectfully
   as feedback without debate, criticism, or argument.
-* Make sure that your responses add value and are relevant to your customers' comments.
-* Focus on precisely addressing questions or problems. If you need more details, ask the customer to contact you over email, rather discuss in reviews. When you
+- Make sure that your responses add value and are relevant to your customers' comments.
+- Focus on precisely addressing questions or problems. If you need more details, ask the customer to contact you over email, rather discuss in reviews. When you
   resolve the problem, please update your reply with the resolution. You can edit your reply, just like customers can edit their reviews.
-* If you come across any inappropriate reviews, like spam, abusive, or offensive content, for any extension, please flag it for our review.
+- If you come across any inappropriate reviews, like spam, abusive, or offensive content, for any extension, please flag it for our review.
 
 ## Publisher request to void a review
 

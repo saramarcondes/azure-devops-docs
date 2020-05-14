@@ -58,8 +58,8 @@ With storyboarding, you turn your ideas and goals into something visual. Your id
 
 > [!TIP]
 >
-> * Use animation to bring your user interface flow to life.
-> * Take screenshots of your apps. For example, add a screenshot as the background of a master slide.
+> - Use animation to bring your user interface flow to life.
+> - Take screenshots of your apps. For example, add a screenshot as the background of a master slide.
 
 <a id="link-storyboard"> </a>
 
@@ -108,7 +108,7 @@ With PowerPoint Storyboarding, you can illustrate a new or a modified interface.
 
 Start using Storyboarding with PowerPoint today by downloading the free plug-in to PowerPoint:
 
-* [Team Foundation Server Office&reg; Integration 2017](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
+- [Team Foundation Server Office&reg; Integration 2017](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
 
 ### Custom shapes
 
@@ -117,7 +117,7 @@ You can create your own shapes using [My Shapes](add-share-storyboard-shapes.md)
 <code><i>Drive</i>:\Users\\<i>UserName</i>\AppData\Local\Microsoft\Team Foundation\6.0\PowerPoint\Shapes</code>
 
 <!---
-You can then share your custom shapes or import custom shapes developed by others in the Visual Studio community.  
+You can then share your custom shapes or import custom shapes developed by others in the Visual Studio community.
 -->
 
 ### PowerPoint for Mac

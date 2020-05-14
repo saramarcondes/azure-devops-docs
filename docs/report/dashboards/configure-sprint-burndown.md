@@ -30,12 +30,12 @@ Use this article to learn about:
 
 > [!div class="checklist"]
 >
-> * Metrics tracked in the sprint burndown report and widget
-> * Team activities required to track tasks and Remaining Work
-> * How to set interactive controls to personalize your view of the sprint burndown report
-> * How to add the in-context Burndown Trend report to a dashboard
-> * How to configure the Sprint Burndown widgets
-> * How to view current and past sprint burndowns
+> - Metrics tracked in the sprint burndown report and widget
+> - Team activities required to track tasks and Remaining Work
+> - How to set interactive controls to personalize your view of the sprint burndown report
+> - How to add the in-context Burndown Trend report to a dashboard
+> - How to configure the Sprint Burndown widgets
+> - How to view current and past sprint burndowns
 
 ::: moniker-end
 
@@ -80,10 +80,10 @@ Use this article to learn:
 
 > [!div class="checklist"]
 >
-> * Metrics tracked in the sprint burndown report and widget
-> * Team activities required to track tasks and Remaining Work
-> * How to configure the Sprint Burndown widget
-> * How to view current and past sprint burndowns
+> - Metrics tracked in the sprint burndown report and widget
+> - Team activities required to track tasks and Remaining Work
+> - How to configure the Sprint Burndown widget
+> - How to view current and past sprint burndowns
 
 ::: moniker-end
 
@@ -140,22 +140,20 @@ In the widget catalog, you'll find two versions of the Sprint Burndown widget: t
 
 The Analytics-based Sprint Burndown widget provides an easy way to monitor progress for a team by showing work remaining for a given sprint. Work remaining is the vertical axis and time is the horizontal axis. You can define remaining work based on Stories or Tasks, and by counting the work items or summing a field.
 
-> [!div class="mx-imgBorder"]
-> ![Sprint Burndown Widget - Sprint Burndown Example](media/sprint-burndown/sprint-burndown-widget.png)
+> [!div class="mx-imgBorder"] > ![Sprint Burndown Widget - Sprint Burndown Example](media/sprint-burndown/sprint-burndown-widget.png)
 
 To help you answer the question: _Are we on track to complete this set of work by the end a sprint?_, the charts provide these useful metrics:
 
-* Percentage work complete
-* Number of work items not estimated (if using a field other than Remaining Work)
-* Average burndown
-* Total scope increase
+- Percentage work complete
+- Number of work items not estimated (if using a field other than Remaining Work)
+- Average burndown
+- Total scope increase
 
 ### Sprint Burndown (Legacy) widget
 
 The **Sprint Burndown (Legacy)** widget adds a chart based on Remaining Work defined for tasks in a team's current sprint. Choose this version when you don't have access to Analytics. Configuration options include team selection, and widget size.
 
-> [!div class="mx-imgBorder"]
-> ![Sprint Burndown Legacy Widget - Sprint Burndown Example](media/burndown/sprint-burndown-legacy-devops.png)
+> [!div class="mx-imgBorder"] > ![Sprint Burndown Legacy Widget - Sprint Burndown Example](media/burndown/sprint-burndown-legacy-devops.png)
 
 If your dashboard already has a legacy version available, you can easily upgrade the widget by editing the widget's configuration, and checking **Try the new version now**. You can always go back to the legacy version by unchecking the box.
 
@@ -165,8 +163,7 @@ If your dashboard already has a legacy version available, you can easily upgrade
 
 The **Sprint Burndown** widget adds a chart based on Remaining Work defined for tasks in the team's current sprint. There are no configuration options for this widget.
 
-> [!div class="mx-imgBorder"]
-> ![Sprint Burndown Widget - Configuration](media/burndown/sprint-burndown-widget-no-config.png)
+> [!div class="mx-imgBorder"] > ![Sprint Burndown Widget - Configuration](media/burndown/sprint-burndown-widget-no-config.png)
 
 ::: moniker-end
 
@@ -176,9 +173,9 @@ The **Sprint Burndown** widget adds a chart based on Remaining Work defined for 
 
 ## Prerequisites
 
-* You must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
-* If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project).
-* To add a widget to a team dashboard, you need to be a member of the team. You must have **Basic** access or greater, have [dashboard permissions](/azure/devops/report/dashboards/dashboard-permissions), or be a [team admin](/azure/devops/organizations/settings/add-team-administrator) or project admin.
+- You must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
+- If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project).
+- To add a widget to a team dashboard, you need to be a member of the team. You must have **Basic** access or greater, have [dashboard permissions](/azure/devops/report/dashboards/dashboard-permissions), or be a [team admin](/azure/devops/organizations/settings/add-team-administrator) or project admin.
 
 ::: moniker-end
 
@@ -186,8 +183,8 @@ The **Sprint Burndown** widget adds a chart based on Remaining Work defined for 
 
 ## Prerequisites
 
-* You must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
-* If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project).
+- You must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
+- If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project).
 
 ::: moniker-end
 
@@ -205,15 +202,15 @@ To monitor sprint burndown, your team must [schedule sprints](../../boards/sprin
 
 ### Required activities:
 
-* [Define and estimate tasks](../../boards/sprints/add-tasks.md#define-tasks) for each product backlog item you're working on in the sprint. If you work from your team's backlog and taskboard, the items you create will automatically be assigned to the current sprint (Iteration) and to your team's default Area Path.
-* [Update Remaining Work for each sprint task](../../boards/sprints/task-board.md#update-tasks) as work progresses.
+- [Define and estimate tasks](../../boards/sprints/add-tasks.md#define-tasks) for each product backlog item you're working on in the sprint. If you work from your team's backlog and taskboard, the items you create will automatically be assigned to the current sprint (Iteration) and to your team's default Area Path.
+- [Update Remaining Work for each sprint task](../../boards/sprints/task-board.md#update-tasks) as work progresses.
 
 ### Recommended activities:
 
-* Define tasks that take a day or less to complete to lessen the impact of poor estimates.
-* Don't divide tasks into subtasks. If you divide a task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent task.
-* Update Remaining Work daily or several times within a week to support monitoring and achieve a smoother burndown chart.
-* At the end of the sprint, update the task status of completed tasks and determine how to handle incomplete tasks.
+- Define tasks that take a day or less to complete to lessen the impact of poor estimates.
+- Don't divide tasks into subtasks. If you divide a task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent task.
+- Update Remaining Work daily or several times within a week to support monitoring and achieve a smoother burndown chart.
+- At the end of the sprint, update the task status of completed tasks and determine how to handle incomplete tasks.
 
 <a id="empty-chart"> </a>
 
@@ -221,9 +218,9 @@ To monitor sprint burndown, your team must [schedule sprints](../../boards/sprin
 
 If your sprint burndown chart appears empty, check the following:
 
-* Have you assigned tasks to the sprint associated with the chart?
-* Have you assigned Remaining Work to the tasks assigned to the sprint?
-* Are the parent work items of the tasks assigned to the same sprint? If not, the tasks may appear in another sprint associated with the parent item.
+- Have you assigned tasks to the sprint associated with the chart?
+- Have you assigned Remaining Work to the tasks assigned to the sprint?
+- Are the parent work items of the tasks assigned to the same sprint? If not, the tasks may appear in another sprint associated with the parent item.
 
 <a id="open-chart"> </a>
 
@@ -345,9 +342,9 @@ When you choose to view the **Stories backlog** and **Sum of Story Points**, the
 > [!NOTE]  
 > The options for the sum fields depend on the numeric fields defined for task and requirement category work item types. The most common fields used to show the burndown trend are:
 >
-> * Count of work items
-> * Sum of [Story Points, Effort, or Size](../../boards/queries/query-numeric.md#fields)
-> * Sum of [Remaining Work](../../boards/queries/query-numeric.md#fields).
+> - Count of work items
+> - Sum of [Story Points, Effort, or Size](../../boards/queries/query-numeric.md#fields)
+> - Sum of [Remaining Work](../../boards/queries/query-numeric.md#fields).
 
 The selections you make are only set for you, and persist across sessions until you change them.
 
@@ -412,12 +409,12 @@ You can add the Sprint Burndown widget to a dashboard and select the team whose 
 
         You can filter the **Add** widget dialog with "sprint burndown" to quickly locate the two wdigets available to you.
 
-        > [!div class="mx-imgBorder"]  
-        > ![Add widget dialog, filter by sprint burndown](media/burndown/add-sprint-burndown-widget-devops.png)  
+        > [!div class="mx-imgBorder"]
+        > ![Add widget dialog, filter by sprint burndown](media/burndown/add-sprint-burndown-widget-devops.png)
 
         1. To configure the widget, choose the ![  ](../../media/icons/actions-icon.png) actions icon and select the **Configure** option.
 
-        > [!div class="mx-imgBorder"]  
+        > [!div class="mx-imgBorder"]
         > ![Open the Configure dialog](media/add-widgets/configure-widget.png)
 
     ::: moniker-end
@@ -458,27 +455,26 @@ You can add the Sprint Burndown widget to a dashboard and select the team whose 
 
 1.  To configure the widget, choose the ![  ](../../media/icons/actions-icon.png) actions icon and select the **Configure** option.
 
-    > [!div class="mx-imgBorder"]
-    > ![Sprint Burndown Widget - Configuration](media/sprint-burndown/sprint-burndown-config.png)
+    > [!div class="mx-imgBorder"] > ![Sprint Burndown Widget - Configuration](media/sprint-burndown/sprint-burndown-config.png)
 
 1.  Modify the **Title** of the widget and select your preferred **Size**. The Sprint Burndown widget can scale up to 10x10.
 
 2)  Make the following selections:
 
-    * **Team** - Select the **Team** you want to track.
+    - **Team** - Select the **Team** you want to track.
 
-    * **Backlogs and work items** - Choose the work items to include in your burndown. You can select to any backlog or a specific work item type.
+    - **Backlogs and work items** - Choose the work items to include in your burndown. You can select to any backlog or a specific work item type.
 
-    * **Burndown on** - Choose how you want to burndown. You may burndown by count of work items or a sum based on a selected field.
+    - **Burndown on** - Choose how you want to burndown. You may burndown by count of work items or a sum based on a selected field.
 
-    * **Select iteration** - You may select **\@CurrentIteration**, or a specific iteration.
+    - **Select iteration** - You may select **\@CurrentIteration**, or a specific iteration.
 
-    * **Time period** - If you selected **\@CurrentIteration**, these dates are not editable, as they will be automatically to the start/end date of the current iteration. If you selected a specific iteration, you may customize the start/end date for the burndown chart.
+    - **Time period** - If you selected **\@CurrentIteration**, these dates are not editable, as they will be automatically to the start/end date of the current iteration. If you selected a specific iteration, you may customize the start/end date for the burndown chart.
 
 3)  **Advanced features**: Check the boxes of the following options that you want to add to your chart.
-    * **Show total scope**: Displays both the historical and projected scope increase.
-    * **Show non working days**: Displays non working days on the burndown. When displayed, non working days are shaded.
-    * **Plot remaining using work item type color**: Displays remaining work based on the work item type color, rather than the default blue color. If multiple work items are included, then it stacks colors by work item type.
+    - **Show total scope**: Displays both the historical and projected scope increase.
+    - **Show non working days**: Displays non working days on the burndown. When displayed, non working days are shaded.
+    - **Plot remaining using work item type color**: Displays remaining work based on the work item type color, rather than the default blue color. If multiple work items are included, then it stacks colors by work item type.
 
 ::: moniker-end
 
@@ -488,8 +484,7 @@ You can add the Sprint Burndown widget to a dashboard and select the team whose 
 
 1.  To configure the widget, choose the ![  ](../../media/icons/actions-icon.png) actions icon and select the **Configure** option.
 
-    > [!div class="mx-imgBorder"]
-    > ![Sprint Burndown Legacy Widget - Configuration - Legacy Version](media/sprint-burndown/sprint-burndown-legacy-config.png)
+    > [!div class="mx-imgBorder"] > ![Sprint Burndown Legacy Widget - Configuration - Legacy Version](media/sprint-burndown/sprint-burndown-legacy-config.png)
 
     If your dashboard already has a legacy version available, you can easily upgrade the widget by editing the widget's configuration, and checking **Try the new version now**. You can always go back to the legacy version by unchecking the box.
 
@@ -557,9 +552,9 @@ You can review sprint burndown in-context reports to show the team patterns in e
 
 Teams may find it useful to review these reports periodically during their sprint retrospectives. It may spark useful discussions and lead to setting one or more sprint goals, such as:
 
-* How does our projected velocity match up to our actual velocity?
-* How can we more accurately determine how much we will be able to accomplish in a sprint?
-* How can we complete work at a more regular pace throughout the sprint?
+- How does our projected velocity match up to our actual velocity?
+- How can we more accurately determine how much we will be able to accomplish in a sprint?
+- How can we complete work at a more regular pace throughout the sprint?
 
 ## Try this next
 
@@ -571,16 +566,16 @@ In addition to the sprint burndown chart, teams can review the [velocity](team-v
 
 You can learn more about defining, planning, and executing your sprints from these articles:
 
-* [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
-* [Sprint planning](../../boards/sprints/assign-work-sprint.md)
-* [Add tasks to backlog items](../../boards/sprints/add-tasks.md)
-* [Update and monitor your Taskboard](../../boards/sprints/task-board.md)
-* [Scrum and best practices](../../boards/sprints/best-practices-scrum.md)
+- [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
+- [Sprint planning](../../boards/sprints/assign-work-sprint.md)
+- [Add tasks to backlog items](../../boards/sprints/add-tasks.md)
+- [Update and monitor your Taskboard](../../boards/sprints/task-board.md)
+- [Scrum and best practices](../../boards/sprints/best-practices-scrum.md)
 
 And, from these industry resources:
 
-* [Understanding the Scrum Burndown Chart](https://www.methodsandtools.com/archive/scrumburndown.php)
-* [Task sizing in Agile software development](https://www.solutionsiq.com/task-sizing-in-agile-software-development/)
+- [Understanding the Scrum Burndown Chart](https://www.methodsandtools.com/archive/scrumburndown.php)
+- [Task sizing in Agile software development](https://www.solutionsiq.com/task-sizing-in-agile-software-development/)
 
 ::: moniker range="<= azure-devops-2019"
 

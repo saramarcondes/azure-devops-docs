@@ -18,8 +18,7 @@ ms.date: 08/07/2019
 
 This article shows you how to display average lead time or cycle time for a given set of User Stories. The following image shows an example for average lead time. To learn more about lead and cycle time, see [Cumulative flow, lead time, and cycle time guidance](../dashboards/cumulative-flow-cycle-lead-time-guidance.md).
 
-> [!div class="mx-imgBorder"]
-> ![Power BI + OData - Lead Cycle Report by Priority](media/odatapowerbi-leadcycle-report.png)
+> [!div class="mx-imgBorder"] > ![Power BI + OData - Lead Cycle Report by Priority](media/odatapowerbi-leadcycle-report.png)
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
@@ -65,8 +64,8 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
-* {areapath} - Your Area Path. Example format: Project\Level1\Level2
-* {startdate} - Start your report for items completed on/after a given date. Format: YYYY-MM-DDZ. Example: 2019-04-01Z represents 2019-April-01. Do not enclose in quotes.
+- {areapath} - Your Area Path. Example format: Project\Level1\Level2
+- {startdate} - Start your report for items completed on/after a given date. Format: YYYY-MM-DDZ. Example: 2019-04-01Z represents 2019-April-01. Do not enclose in quotes.
 
 ### Query breakdown
 
@@ -117,27 +116,24 @@ Power BI shows you the fields you can report on.
 > [!NOTE]  
 > The example below assumes that no one renamed any columns.
 
-> [!div class="mx-imgBorder"]
-> ![Power BI + OData - Lead Cycle Fields](media/odatapowerbi-leadcycle-fields.png)
+> [!div class="mx-imgBorder"] > ![Power BI + OData - Lead Cycle Fields](media/odatapowerbi-leadcycle-fields.png)
 
 For a simple report, do the following steps:
 
 1.  Select Power BI Visualization **Line chart**.
 1.  Add the field "CompletedDateSK" to **Axis**.
-    * Right-click "CompletedDateSK" and select "CompletedDateSK", rather than Date Hierarchy.
+    - Right-click "CompletedDateSK" and select "CompletedDateSK", rather than Date Hierarchy.
 1.  Add the field "Priority" to legend.
 1.  Add the field "LeadTimeDays" to **Values**.
-    * Right-click "LeadTimeDays" field and ensure **Average** is selected.
+    - Right-click "LeadTimeDays" field and ensure **Average** is selected.
 
 The example report:
 
-> [!div class="mx-imgBorder"]
-> ![Power BI + OData - Lead Cycle Report by Priority](media/odatapowerbi-leadcycle-report.png)
+> [!div class="mx-imgBorder"] > ![Power BI + OData - Lead Cycle Report by Priority](media/odatapowerbi-leadcycle-report.png)
 
 To pivot the report by Area Path (representing teams), add the field "Area.AreaPath" to **Legend**, replacing "Priority"
 
-> [!div class="mx-imgBorder"]
-> ![Power BI + OData - Lead Cycle Report by Teams](media/odatapowerbi-leadcycle-report2.png)
+> [!div class="mx-imgBorder"] > ![Power BI + OData - Lead Cycle Report by Teams](media/odatapowerbi-leadcycle-report2.png)
 
 [!INCLUDE [temp](includes/sample-multipleteams.md)]
 

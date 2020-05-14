@@ -23,8 +23,8 @@ ms.date: 08/04/2016
 Each team in VS Team Services can have one or more dashboards. Each dashboard contains one or more widgets.
 Each team in Team Services can have one or more dashboards. Each dashboard is made up of one or more widgets.
 
-* [Dashboards](./dashboards.md)
-* [Widgets](./widgets.md)
+- [Dashboards](./dashboards.md)
+- [Widgets](./widgets.md)
 
 ## Data versioning
 

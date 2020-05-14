@@ -26,11 +26,11 @@ Use this article to learn how to:
 
 > [!div class="checklist"]
 >
-> * Connect a Project plan to a project
-> * Add tasks to Project and publish them as work items
-> * Indent tasks to create parent-child links
-> * Link tasks to create predecessor-successor links
-> * View how Project columns map to work item fields
+> - Connect a Project plan to a project
+> - Add tasks to Project and publish them as work items
+> - Indent tasks to create parent-child links
+> - Link tasks to create predecessor-successor links
+> - View how Project columns map to work item fields
 
 ::: moniker range="<= tfs-2015"
 
@@ -43,17 +43,17 @@ Use this article to learn how to:
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-* Office Project 2010 or later version, including Office Project 365
-* Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
-* [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md) in Azure Boards or TFS.
+- Office Project 2010 or later version, including Office Project 365
+- Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
+- [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md) in Azure Boards or TFS.
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
-* Office Project 2007, Office Project 2010, or Office Project 2013
-* Visual Studio 2013 or Visual Studio 2015 or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
-* [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md).
+- Office Project 2007, Office Project 2010, or Office Project 2013
+- Visual Studio 2013 or Visual Studio 2015 or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
+- [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md).
   ::: moniker-end
 
 To learn more about compatibility requirements, see [Azure DevOps client compatibility](/azure/devops/server/compatibility).
@@ -271,25 +271,25 @@ To add more work tracking fields or change the way fields are mapped, see [Custo
 
 You can manage your project plan using Project and all the features that Project provides. Because you and other team members can modify TFS work items from the web portal, Excel, Project, and Team Explorer, follow these tips to manage your work effectively:
 
-* When you first open a project plan, choose the Team ribbon ![ ](media/project/refresh.png) **Refresh** icon to download the latest work tracking data.
-* Publish your changes and refresh your plan periodically while you work. Otherwise, you can encounter data conflicts between plan data and the work tracking data store.
-* Save your project plan to maintain scheduling data and other information that isn't stored in the work tracking data store.
-* When defining areas and iterations, keep in mind that Project and Excel restrict the length of the area and iteration path field to 256 characters.
-* In Project 2010 and later versions, when you choose the ![ ](media/create-your-backlog-tasks-using-project/IC413649.png) **Pinned task** icon (Manually scheduled tasks, Task Mode field), team members can place a manually scheduled task anywhere in their schedules, and Project will not move it. In order for team members to manually schedule their tasks, you will have to add the necessary project fields to work tracking task definitions.
+- When you first open a project plan, choose the Team ribbon ![ ](media/project/refresh.png) **Refresh** icon to download the latest work tracking data.
+- Publish your changes and refresh your plan periodically while you work. Otherwise, you can encounter data conflicts between plan data and the work tracking data store.
+- Save your project plan to maintain scheduling data and other information that isn't stored in the work tracking data store.
+- When defining areas and iterations, keep in mind that Project and Excel restrict the length of the area and iteration path field to 256 characters.
+- In Project 2010 and later versions, when you choose the ![ ](media/create-your-backlog-tasks-using-project/IC413649.png) **Pinned task** icon (Manually scheduled tasks, Task Mode field), team members can place a manually scheduled task anywhere in their schedules, and Project will not move it. In order for team members to manually schedule their tasks, you will have to add the necessary project fields to work tracking task definitions.
 
   Start and finish dates for autoscheduled tasks (![ ](media/create-your-backlog-tasks-using-project/IC413651.png) **Auto Update Task Mode** icon) are determined by the scheduling engine based on task dependencies and the project calendar, as in previous releases of Project.
 
-* Use Project to manage and update changes to these fields:
+- Use Project to manage and update changes to these fields:
 
-  * Finish Date
-  * Start Date
-  * Calculated fields for completed and remaining work
+  - Finish Date
+  - Start Date
+  - Calculated fields for completed and remaining work
 
     Although work tracking data store can store estimated, completed, and remaining work, and start and finish dates, Azure DevOps Services and TFS do not recalculate the fields when updates to these fields are made.
 
     When you publish to Azure DevOps Services and TFS, start and finish times are read-only by default. Project does not download start and finish times when you refresh the plan.
 
-* If you see that hours are counted twice in reports that contain task hours, [correct the problem](../../../report/sql-reports/address-inaccuracies-published-for-summary-values.md).
+- If you see that hours are counted twice in reports that contain task hours, [correct the problem](../../../report/sql-reports/address-inaccuracies-published-for-summary-values.md).
 
   Project assigns parent tasks the rollup of hours that are assigned to all its child tasks. Rollup hours are not published to the work tracking data store to prevent hours within reports from being counted twice. The Microsoft Project mapping file attribute, **IfSummaryRefreshOnly**, suppresses the hours that are assigned to summary tasks.</p></li>
 
@@ -305,9 +305,9 @@ You can manage your project plan using Project and all the features that Project
 
 ## Related articles
 
-* [Bulk modify work items using Excel](bulk-add-modify-work-items-excel.md)
-* [Create your backlog](../create-your-backlog.md)
-* [Azure DevOps Service and TFS compatibility](/azure/devops/server/requirements)
+- [Bulk modify work items using Excel](bulk-add-modify-work-items-excel.md)
+- [Create your backlog](../create-your-backlog.md)
+- [Azure DevOps Service and TFS compatibility](/azure/devops/server/requirements)
 
 If the Team ribbon fails to appear, see [TFS-Office integration issues](tfs-office-integration-issues.md).
 

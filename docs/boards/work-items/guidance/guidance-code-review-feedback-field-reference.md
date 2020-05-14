@@ -53,6 +53,6 @@ The following fields track feedback requests and responses. You complete the fir
 
 ## Related articles
 
-* [Index of work item fields](work-item-field.md)
-* [Get feedback](../../../project/feedback/get-feedback.md)
-* [Day in the life of a Developer: Suspend work, fix a bug, and conduct a code review](../../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)
+- [Index of work item fields](work-item-field.md)
+- [Get feedback](../../../project/feedback/get-feedback.md)
+- [Day in the life of a Developer: Suspend work, fix a bug, and conduct a code review](../../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)

@@ -23,10 +23,10 @@ You use Team Explorer to coordinate your code efforts with other team members to
 >
 > Additional options for connecting to Azure DevOps Services or TFS include:
 >
-> * [Team Explorer Everywhere](/previous-versions/azure/devops/java/download-eclipse-plug-in)
-> * [Azure DevOps Plugin for Android Studio](/previous-versions/azure/devops/java/download-android-studio-plug-in)
-> * [Azure DevOps Plugin for IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in)
-> * [Visual Studio Code](/previous-versions/azure/devops/java/vscode-extension)
+> - [Team Explorer Everywhere](/previous-versions/azure/devops/java/download-eclipse-plug-in)
+> - [Azure DevOps Plugin for Android Studio](/previous-versions/azure/devops/java/download-android-studio-plug-in)
+> - [Azure DevOps Plugin for IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in)
+> - [Visual Studio Code](/previous-versions/azure/devops/java/vscode-extension)
 >
 > For information about compatibility among client and server versions, see [Requirements and compatibility](/azure/devops/server/requirements).
 
@@ -34,8 +34,8 @@ If you don't need Visual Studio, but want to connect to a project in Azure DevOp
 
 ## Prerequisites
 
-* You must have a project in Azure DevOps. If you need to add a project, see [Create a project](../organizations/projects/create-project.md).
-* You must be a member of the project you connect to. To get added, see [Add users to a project or team](../organizations/security/add-users-team-project.md).
+- You must have a project in Azure DevOps. If you need to add a project, see [Create a project](../organizations/projects/create-project.md).
+- You must be a member of the project you connect to. To get added, see [Add users to a project or team](../organizations/security/add-users-team-project.md).
 
 ## Connect to a project or repository
 
@@ -339,9 +339,9 @@ To learn more about settings, see [About team, project, and organizational-level
 
 If data doesn't appear as expected, the first thing to try is to refresh your client. Refreshing your client updates the local cache with changes that were made in another client or in TFS. To refresh Team Explorer, do one of the following actions:
 
-* To refresh a page that you are currently viewing, choose ![ ](../boards/media/icons/te-refresh-query-icon.png) **Refresh** icon in the menu bar (or choose the F5 key).
-* To refresh the project you currently have selected, choose ![](media/work-team-explorer/IC547418.png) **Home**, and then choose ![Refresh icon](../boards/media/icons/te-refresh-query-icon.png) **Refresh** icon (or choose the F5 key).
-* To refresh the set of teams defined for the project that you currently have selected, choose the Connect icon, and then choose ![ ](../boards/media/icons/te-refresh-query-icon.png) **Refresh** icon (or choose the F5 key).
+- To refresh a page that you are currently viewing, choose ![ ](../boards/media/icons/te-refresh-query-icon.png) **Refresh** icon in the menu bar (or choose the F5 key).
+- To refresh the project you currently have selected, choose ![](media/work-team-explorer/IC547418.png) **Home**, and then choose ![Refresh icon](../boards/media/icons/te-refresh-query-icon.png) **Refresh** icon (or choose the F5 key).
+- To refresh the set of teams defined for the project that you currently have selected, choose the Connect icon, and then choose ![ ](../boards/media/icons/te-refresh-query-icon.png) **Refresh** icon (or choose the F5 key).
 
 [!INCLUDE [temp](includes/when-to-refresh-client.md)]
 
@@ -349,18 +349,18 @@ If data doesn't appear as expected, the first thing to try is to refresh your cl
 
 ## Related articles
 
-* [Troubleshoot connection](troubleshoot-connection.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json)
-* [Create a project](../organizations/projects/create-project.md)
+- [Troubleshoot connection](troubleshoot-connection.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json)
+- [Create a project](../organizations/projects/create-project.md)
 
 ### Additional tools provided with TFS Power Tools
 
 By installing [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power), you gain access to these additional tools through the Team Explorer plug-in for Visual Studio:
 
-* Process Template Editor
-* Additional check-in policies for Team Foundation Version Control
-* Team Explorer enhancements including Team Members
-* Team Foundation Power Tool Command Line
-* Test Attachment Cleaner
-* Work Item Templates
+- Process Template Editor
+- Additional check-in policies for Team Foundation Version Control
+- Team Explorer enhancements including Team Members
+- Team Foundation Power Tool Command Line
+- Test Attachment Cleaner
+- Work Item Templates
 
 Additional requirements may apply.

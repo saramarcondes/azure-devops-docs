@@ -34,27 +34,27 @@ To support your work tracking efforts, you can use Microsoft Excel and Microsoft
 
 ::: moniker range=">= azure-devops-2019"
 
-* Microsoft Excel 2010 or later version, including Microsoft Office Excel 365
-* Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
-* [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md) in Azure Boards.
+- Microsoft Excel 2010 or later version, including Microsoft Office Excel 365
+- Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
+- [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md) in Azure Boards.
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-* Office Excel 2010 or later version, including Microsoft Office Excel 365
-* Office Project 2010 or later version, including Office Project 365
-* Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
-* [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md) in Azure Boards or TFS.
+- Office Excel 2010 or later version, including Microsoft Office Excel 365
+- Office Project 2010 or later version, including Office Project 365
+- Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
+- [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md) in Azure Boards or TFS.
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
-* Microsoft Excel 2007, Microsoft Excel 2010, or Microsoft Excel 2013
-* Office Project 2007, Office Project 2010, or Office Project 2013
-* Visual Studio 2013 or Visual Studio 2015 or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
-* [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md).
+- Microsoft Excel 2007, Microsoft Excel 2010, or Microsoft Excel 2013
+- Office Project 2007, Office Project 2010, or Office Project 2013
+- Visual Studio 2013 or Visual Studio 2015 or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
+- [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md).
 
 ::: moniker-end
 
@@ -101,8 +101,8 @@ To disconnect an Excel or Project document file from the network:
 
 2.  Refresh the work item list to retrieve the latest information from the work item database.
 
-    * If you are using Excel, on the **Team** ribbon, in the **Work Items** group, choose **Refresh**.
-    * If you are using Project, on the **Team** menu, choose **Refresh**.
+    - If you are using Excel, on the **Team** ribbon, in the **Work Items** group, choose **Refresh**.
+    - If you are using Project, on the **Team** menu, choose **Refresh**.
 
 3.  If you are using Excel, add to the work item list the columns for all fields that you want to modify.
 
@@ -127,13 +127,13 @@ To reconnect an Excel or Project document file:
 
 2.  If you changed the document while you were offline, follow one of these steps:
 
-    * If you are using Excel, on the **Team** ribbon, in the **Work Items** group, choose **Publish**.
-    * If you are using Project, on the **Team** menu, choose **Publish Changes**.
+    - If you are using Excel, on the **Team** ribbon, in the **Work Items** group, choose **Publish**.
+    - If you are using Project, on the **Team** menu, choose **Publish Changes**.
 
 3.  If you didn't change the document while you were offline, follow one of these steps:
 
-    * If you are using Excel, on the **Team** ribbon, in the **Work Items** group, choose **Refresh**.
-    * If you are using Project, on the **Team** menu, choose **Refresh**.
+    - If you are using Excel, on the **Team** ribbon, in the **Work Items** group, choose **Refresh**.
+    - If you are using Project, on the **Team** menu, choose **Refresh**.
 
 4.  Resolve any data validation errors or conflicts that occur.
 
@@ -186,9 +186,9 @@ An advantage to using Excel or Project is that you can work offline to add or mo
 
 2.  Follow one of the following steps:
 
-    * If you are using Excel, on the **Team** ribbon, in the **Work Items** group, choose **Refresh**.
+    - If you are using Excel, on the **Team** ribbon, in the **Work Items** group, choose **Refresh**.
 
-    * If you are using Project, on the **Team** menu, choose **Refresh**.
+    - If you are using Project, on the **Team** menu, choose **Refresh**.
 
     This step refreshes the work item list to retrieve the latest information from the work item database.
 
@@ -206,24 +206,24 @@ An advantage to using Excel or Project is that you can work offline to add or mo
 
 2.  If you changed the document while you were offline, follow one of these steps:
 
-    * If you are using Excel, on the **Team** ribbon, in the **Work Items** group, choose **Publish**.
+    - If you are using Excel, on the **Team** ribbon, in the **Work Items** group, choose **Publish**.
 
-    * If you are using Project, on the **Team** menu, choose **Publish Changes**.
+    - If you are using Project, on the **Team** menu, choose **Publish Changes**.
 
 3.  If you did not change the document while you were offline, follow one of these steps:
 
-    * If you are using Excel, on the **Team** ribbon, in the **Work Items** group, choose **Refresh**.
+    - If you are using Excel, on the **Team** ribbon, in the **Work Items** group, choose **Refresh**.
 
-    * If you are using Project, on the **Team** menu, choose **Refresh**.
+    - If you are using Project, on the **Team** menu, choose **Refresh**.
 
 4.  Resolve any data validation errors or conflicts that occur.
 
 ## Related articles
 
-* [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md)
-* [Create your backlog and tasks using Project](create-your-backlog-tasks-using-project.md)
-* [Create your backlog](../../backlogs/create-your-backlog.md)
-* [Requirements and compatibility](/azure/devops/server/requirements)
+- [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md)
+- [Create your backlog and tasks using Project](create-your-backlog-tasks-using-project.md)
+- [Create your backlog](../../backlogs/create-your-backlog.md)
+- [Requirements and compatibility](/azure/devops/server/requirements)
 
 <a name="CT_ResolvingPublishErrors"></a>
 
@@ -231,14 +231,14 @@ An advantage to using Excel or Project is that you can work offline to add or mo
 
 To resolve publishing errors that arise when working in Excel or Project, see the following topics:
 
-* [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md):
+- [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md):
   A data conflict occurs when one team member changes a field value in either Project or Excel at the same time another team member changes the same field in Team Foundation Server.
 
-* [Resolve data validation errors](resolve-excel-data-validation-errors.md):
+- [Resolve data validation errors](resolve-excel-data-validation-errors.md):
   A data validation error occurs if a team member changes a work item in a way that violates the rules for that type of work item.
 
-* [Resolve invalid links in a tree hierarchy](resolve-excel-invalid-links-tree-list.md):
+- [Resolve invalid links in a tree hierarchy](resolve-excel-invalid-links-tree-list.md):
   An invalid link occurs if a team member views work items in Excel as a hierarchy or tree list, and moves a work item or sorts the list so that it breaks the dependencies between work items. You can resolve this error by reviewing the error message and repositioning work items to reflect the work item structure.
 
-* [Address inaccuracies published for summary values](../../../report/sql-reports/address-inaccuracies-published-for-summary-values.md):
+- [Address inaccuracies published for summary values](../../../report/sql-reports/address-inaccuracies-published-for-summary-values.md):
   If you determine that hours are counted twice in reports that contain task hours, you can correct the problem by using the Work Items With Summary Values team query.

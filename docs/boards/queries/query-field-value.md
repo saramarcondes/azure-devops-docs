@@ -17,19 +17,19 @@ ms.date: 08/16/2019
 
 You can create queries based on how one field's value compares to another using the comparison field operators. This is useful to filter work items based on:
 
-* Is the person who created the work item the same as or different than the person assigned to it, or who closed it
-* Which Tasks were closed before or after their Target Date.
+- Is the person who created the work item the same as or different than the person assigned to it, or who closed it
+- Which Tasks were closed before or after their Target Date.
 
 ## Supported data types
 
 You can use the comparison field operators&mdash;`=[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field]`&mdash;with the following field data types. The data type you select for the **Field** and the **Value** must match.
 
-* Boolean (supports `=[Field], <>[Field]`
-* Date/Time
-* Double, Integer
-* GUID
-* Identity
-* String (excluding Tags)
+- Boolean (supports `=[Field], <>[Field]`
+- Date/Time
+- Double, Integer
+- GUID
+- Identity
+- String (excluding Tags)
 
 > [!NOTE]  
 > Some combinations of data type and comparison field operator might not make sense to use, such as `Title >=[Field]` or `Assigned To <=[Field]`.
@@ -61,7 +61,7 @@ Closed tasks completed prior to their target date
 <code>Target Date <strong> <=[Field] </strong> Closed Date</code><br/>State<strong> = </strong> Closed</code><br/></td>
 </tr>
 </tbody>
-</table>  
+</table>
 
 <a id="counts"/>
 
@@ -251,11 +251,11 @@ The following table provides an index to those fields that support field compari
 
 ## Related articles
 
-* [Query index quick reference](query-index-quick-ref.md)
-* [Query by title, ID, or description](titles-ids-descriptions.md)
-* [Query by assignment or workflow changes](query-by-workflow-changes.md)
-* [Query by date or current iteration](query-by-date-or-current-iteration.md)
-* [Query a numeric field](query-numeric.md)
-* [Query by picklist value](planning-ranking-priorities.md)
+- [Query index quick reference](query-index-quick-ref.md)
+- [Query by title, ID, or description](titles-ids-descriptions.md)
+- [Query by assignment or workflow changes](query-by-workflow-changes.md)
+- [Query by date or current iteration](query-by-date-or-current-iteration.md)
+- [Query a numeric field](query-numeric.md)
+- [Query by picklist value](planning-ranking-priorities.md)
 
 [!INCLUDE [temp](../includes/rest-apis-queries.md)]

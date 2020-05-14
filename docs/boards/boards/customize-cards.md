@@ -29,10 +29,10 @@ In this example, the bug work item type (WIT) shows all the core fields, three a
 >
 > In the card shown below, the following customizations have been set for the bug work item type (WIT):
 
-* Show all core fields: ID, Assigned To, Story Points, Tags
-* Show three additional fields: State, Changed By, and Changed Date
-* Apply tag colors
-* Apply styling rule to display bugs with Severity=1 as yellow and bold and underline the Title field
+- Show all core fields: ID, Assigned To, Story Points, Tags
+- Show three additional fields: State, Changed By, and Changed Date
+- Apply tag colors
+- Apply styling rule to display bugs with Severity=1 as yellow and bold and underline the Title field
 
 ::: moniker range=">= tfs-2018"
 
@@ -230,16 +230,16 @@ You can apply style rules to change the color of cards on Kanban boards and task
 
         	In this example we show the **Styles** dialog for the taskboard.
 
-        	> [!div class="mx-imgBorder"]  
+        	> [!div class="mx-imgBorder"]
         	> ![Settings, Styles dialog](../sprints/media/customize/taskboard-styles-priority.png)
 
         	Follow these rules when creating and ordering your style rules:
 
-    * The criteria you specify works in a similar fashion as when [constructing a query](../../boards/queries/using-queries.md)
-    * All clauses are considered AND clauses, grouping clauses isn't supported
-    * Card rules apply to all work items that meet the rule criteria
-    * Rule color applies to work items based on the order in which rules are listed. If you add more than one style rule, make sure that you move them in the order of most importance. Simply drag them into the order you want them applied.
-    * You can quickly enable and disable a style rule
+    - The criteria you specify works in a similar fashion as when [constructing a query](../../boards/queries/using-queries.md)
+    - All clauses are considered AND clauses, grouping clauses isn't supported
+    - Card rules apply to all work items that meet the rule criteria
+    - Rule color applies to work items based on the order in which rules are listed. If you add more than one style rule, make sure that you move them in the order of most importance. Simply drag them into the order you want them applied.
+    - You can quickly enable and disable a style rule
 
       Here we add a Stale tasks rule which highlights tasks that haven't changed in the last five days.
 
@@ -265,16 +265,16 @@ Requires TFS 2015.1 or later version.
 
         	In this example we show the **Styles** dialog for the taskboard.
 
-        	> [!div class="mx-imgBorder"]  
+        	> [!div class="mx-imgBorder"]
         	> ![Settings, Styles dialog](../sprints/media/customize/taskboard-styles-priority.png)
 
         	Follow these rules when creating and ordering your style rules:
 
-    * The criteria you specify works in a similar fashion as when [constructing a query](../../boards/queries/using-queries.md)
-    * All clauses are considered AND clauses, grouping clauses isn't supported
-    * Card rules apply to all work items that meet the rule criteria
-    * Rule color applies to work items based on the order in which rules are listed. If you add more than one style rule, make sure that you move them in the order of most importance. Simply drag them into the order you want them applied.
-    * You can quickly enable and disable a style rule
+    - The criteria you specify works in a similar fashion as when [constructing a query](../../boards/queries/using-queries.md)
+    - All clauses are considered AND clauses, grouping clauses isn't supported
+    - Card rules apply to all work items that meet the rule criteria
+    - Rule color applies to work items based on the order in which rules are listed. If you add more than one style rule, make sure that you move them in the order of most importance. Simply drag them into the order you want them applied.
+    - You can quickly enable and disable a style rule
 
       Here we add a Stale tasks rule which highlights tasks that haven't changed in the last five days.
 
@@ -418,7 +418,7 @@ You can control the test plan under which inline tests you add through the Kanba
 
 From a card on the Kanban board, you can easily navigate to the underlying test plan and test suite under which the tests are created. Choose the ![ ](../../media/icons/open-icon.png) open icon to open another browser tab showing **Test** and associated test plan and test suite that controls the inline tests.
 
-<img src="media/c-cards-navigate-to-test-suite.png" alt="Kanban board, Card, Go to test plan" style="border: 1px solid #C3C3C3;" />  
+<img src="media/c-cards-navigate-to-test-suite.png" alt="Kanban board, Card, Go to test plan" style="border: 1px solid #C3C3C3;" />
 
 ::: moniker-end
 
@@ -426,23 +426,23 @@ From a card on the Kanban board, you can easily navigate to the underlying test 
 
 ::: moniker range=">= azure-devops-2019"
 
-* [Card reordering](reorder-cards.md)
-* [Manage and configure team tools](../../organizations/settings/manage-teams.md)
-* [Setup your backlogs and boards](../backlogs/set-up-your-backlog.md)
-* [Configure status badges](../github/configure-status-badges.md)
-* [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)
-* [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)
-* [Set working days](../../organizations/settings/set-working-days.md)
+- [Card reordering](reorder-cards.md)
+- [Manage and configure team tools](../../organizations/settings/manage-teams.md)
+- [Setup your backlogs and boards](../backlogs/set-up-your-backlog.md)
+- [Configure status badges](../github/configure-status-badges.md)
+- [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)
+- [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)
+- [Set working days](../../organizations/settings/set-working-days.md)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-* [Card reordering](reorder-cards.md)
-* [Manage and configure team tools](../../organizations/settings/manage-teams.md)
-* [Setup your backlogs and boards](../backlogs/set-up-your-backlog.md)
-* [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)
-* [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)
-* [Set working days](../../organizations/settings/set-working-days.md)
+- [Card reordering](reorder-cards.md)
+- [Manage and configure team tools](../../organizations/settings/manage-teams.md)
+- [Setup your backlogs and boards](../backlogs/set-up-your-backlog.md)
+- [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)
+- [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)
+- [Set working days](../../organizations/settings/set-working-days.md)
 
 ::: moniker-end

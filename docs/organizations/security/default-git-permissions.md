@@ -25,8 +25,8 @@ From the **Code** > **Branches** page, you can [set permissions for a specific b
 
 ## Related articles
 
-* [Set repository permissions for Git or TFVC](set-git-tfvc-repository-permissions.md)
-* [Set permissions for a specific branch and set branch policies](../../repos/git/branch-permissions.md)
-* [Git permissions prior to TFS 2017 Update 1](git-permissions-before-2017.md)
-* [Default permissions and access](permissions-access.md)
-* [Permissions and groups reference](permissions.md)
+- [Set repository permissions for Git or TFVC](set-git-tfvc-repository-permissions.md)
+- [Set permissions for a specific branch and set branch policies](../../repos/git/branch-permissions.md)
+- [Git permissions prior to TFS 2017 Update 1](git-permissions-before-2017.md)
+- [Default permissions and access](permissions-access.md)
+- [Permissions and groups reference](permissions.md)

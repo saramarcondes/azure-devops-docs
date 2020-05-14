@@ -32,12 +32,12 @@ For example, you can create three swimlanes&mdash;Expedite, Standard, and Parked
 
 You can use swimlanes to sort work on your Kanban board to track items that you differentiate as follows:
 
-* High priority items
-* Service-level class
-* Date-driven requirement
-* Dependency for or from another team
-* Blocked items
-* Technical debt or other engineering work that's not a specific user story
+- High priority items
+- Service-level class
+- Date-driven requirement
+- Dependency for or from another team
+- Blocked items
+- Technical debt or other engineering work that's not a specific user story
 
 ## Track work in swimlanes
 
@@ -146,8 +146,7 @@ Once you've identified one or two, add them to your Kanban board.
 
     **For TFS 2015**  
     ![Add a swimlane](media/ALM_SW.AddLane.png)  
-    The default lane is automatically renamed to Standard when you add a second lane. You can rename it to anything you like, however, you can't delete it.  
-
+    The default lane is automatically renamed to Standard when you add a second lane. You can rename it to anything you like, however, you can't delete it.
 
 10. To reorder your swimlanes, simply grab the lane and move it up or down.  
      <img src="media/ALM_EW_ReorderLanes.png" alt="Kanban board, Open swimlanes" style="border: 2px solid #C3C3C3;" />
@@ -188,11 +187,11 @@ For TFS 2015 and earlier versions, you can't [query](../queries/using-queries.md
 
 As you can see, swimlanes provides another way to organize and visualize the flow of work using [Kanban](kanban-basics.md). Here are a few more options you have for customizing the look and feel of your Kanban board.
 
-* [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md)
-* [Query by assignment or workflow changes](../queries/query-by-workflow-changes.md#kanban_query_fields)
-* [Add columns](add-columns.md)
-* [Split columns](split-columns.md)
-* [Customize cards](../../boards/boards/customize-cards.md)
+- [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md)
+- [Query by assignment or workflow changes](../queries/query-by-workflow-changes.md#kanban_query_fields)
+- [Add columns](add-columns.md)
+- [Split columns](split-columns.md)
+- [Customize cards](../../boards/boards/customize-cards.md)
 
 ### REST API resources
 

@@ -55,13 +55,13 @@ Use Ubuntu 16.04 for this quickstart. Follow additional steps for Java or JavaSc
 
 #### [Java](#tab/java)
 
-* For deploying Java Spring Boot and Spring Cloud based apps, create a Linux VM in Azure using [this](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu8-ubuntu-1804) template, which provides a fully supported OpenJDK-based runtime.
-* For deploying Java servlets on Tomcat server, create a Linux VM with Java 8 using [this](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu8-ubuntu-1804) Azure template and [configure Tomcat 9.x as a service](https://tomcat.apache.org/tomcat-9.0-doc/setup.html).
-* For deploying Java EE-based Wildfly app, follow the [blog post](https://azure.github.io/AppService/2020/01/31/Wildfly-on-App-Service.html) here. To provision the VM, use an Azure template to create a [Linux VM + Java + WebSphere 9.x](https://azuremarketplace.microsoft.com/marketplace/apps/midvision.websphere-application-server-nde-90) or a [Linux VM + Java + WebLogic 12.x](https://azuremarketplace.microsoft.com/marketplace/apps/oracle.20191009-arm-oraclelinux-wls-admin) or a [Linux VM +Java](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu8-ubuntu-1804) + WildFly/JBoss 14
+- For deploying Java Spring Boot and Spring Cloud based apps, create a Linux VM in Azure using [this](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu8-ubuntu-1804) template, which provides a fully supported OpenJDK-based runtime.
+- For deploying Java servlets on Tomcat server, create a Linux VM with Java 8 using [this](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu8-ubuntu-1804) Azure template and [configure Tomcat 9.x as a service](https://tomcat.apache.org/tomcat-9.0-doc/setup.html).
+- For deploying Java EE-based Wildfly app, follow the [blog post](https://azure.github.io/AppService/2020/01/31/Wildfly-on-App-Service.html) here. To provision the VM, use an Azure template to create a [Linux VM + Java + WebSphere 9.x](https://azuremarketplace.microsoft.com/marketplace/apps/midvision.websphere-application-server-nde-90) or a [Linux VM + Java + WebLogic 12.x](https://azuremarketplace.microsoft.com/marketplace/apps/oracle.20191009-arm-oraclelinux-wls-admin) or a [Linux VM +Java](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu8-ubuntu-1804) + WildFly/JBoss 14
 
 #### [JavaScript](#tab/java-script)
 
-* For installing a JavaScript or Node.js app, set up a Linux VM with Nginx in Azure using [this](/azure/virtual-machines/linux/quick-create-cli).
+- For installing a JavaScript or Node.js app, set up a Linux VM with Nginx in Azure using [this](/azure/virtual-machines/linux/quick-create-cli).
 
 ---
 
@@ -79,8 +79,8 @@ You can create an environment in **Environments** within **Pipelines**.
 5.  Run the copied script from an administrator PowerShell command prompt on each of the target VMs registered with this environment.
     > [!NOTE]
     >
-    > * The Personal Access Token (PAT) of the logged in user is pre-inserted in the script. It expires on the day you generate the script.
-    > * If your VM already has any agent running on it, provide a unique name to register with environment.
+    > - The Personal Access Token (PAT) of the logged in user is pre-inserted in the script. It expires on the day you generate the script.
+    > - If your VM already has any agent running on it, provide a unique name to register with environment.
 6.  Once VM is registered, it will start appearing as an environment resource under **Resources**.
 
     > [!div class="mx-imgBorder"] > ![VMcreation](media/vm-creation.png)
@@ -142,7 +142,7 @@ Select the **starter** template and copy this YAML snippet to build a general No
 ```YAML
 - stage: Build
   displayName: Build stage
-  jobs:  
+  jobs:
   - job: Build
     displayName: Build
     - task: NodeTool@0
@@ -168,9 +168,9 @@ Select the **starter** template and copy this YAML snippet to build a general No
 
 For more guidance, follow the steps mentioned in [Build your Node.js app with gulp](javascript.md) for creating a build.
 
-* Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
+- Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
 
-* A new run is started. Wait for the run to complete.
+- A new run is started. Wait for the run to complete.
 
 ---
 
@@ -178,7 +178,7 @@ For more guidance, follow the steps mentioned in [Build your Node.js app with gu
 
 1.  Edit your pipeline and include a [deployment job](../process/deployment-jobs.md) by referencing the environment and the VM resources you created earlier:
     ```YAML
-    jobs:  
+    jobs:
     - deployment: VMDeploy
       displayName: web
       environment:

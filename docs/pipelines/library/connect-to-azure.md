@@ -26,10 +26,10 @@ To deploy your app to an Azure resource (to an app service or to a virtual machi
 
 We recommend this simple approach if:
 
-* You're signed in as the owner of the Azure Pipelines organization and the Azure subscription.
-* You don't need to further limit the permissions for Azure resources accessed through the service connection.
-* You're not connecting to [Azure Stack](#connect-stack) or an [Azure Government Cloud](#connect-govt).
-* You're not connecting from Azure DevOps Server 2019 or earlier versions of TFS
+- You're signed in as the owner of the Azure Pipelines organization and the Azure subscription.
+- You don't need to further limit the permissions for Azure resources accessed through the service connection.
+- You're not connecting to [Azure Stack](#connect-stack) or an [Azure Government Cloud](#connect-govt).
+- You're not connecting from Azure DevOps Server 2019 or earlier versions of TFS
 
 1.  In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
     In TFS, open the **Services** page from the "settings" icon in the top menu bar.
@@ -50,13 +50,13 @@ We recommend this simple approach if:
 
 1.  After the new service connection is created:
 
-    * If you're using the classic editor, select the connection name you assigned in the **Azure subscription** setting of your pipeline.
-    * If you're using YAML, copy the connection name into your code as the `azureSubscription` value.
+    - If you're using the classic editor, select the connection name you assigned in the **Azure subscription** setting of your pipeline.
+    - If you're using YAML, copy the connection name into your code as the `azureSubscription` value.
 
 1.  To deploy to a specific Azure resource, the task will need additional data about that resource.
 
-    * If you're using the classic editor, select data you need. For example, the App service name.
-    * If you're using YAML, then go to the resource in the Azure portal, and then copy the data into your code. For example, to deploy a web app, you would copy the name of the App Service into the `WebAppName` value.
+    - If you're using the classic editor, select data you need. For example, the App service name.
+    - If you're using YAML, then go to the resource in the Azure portal, and then copy the data into your code. For example, to deploy a web app, you would copy the name of the App Service into the `WebAppName` value.
 
 See also: [Troubleshoot Azure Resource Manager service connection](../release/azure-rm-endpoint.md).
 
@@ -72,8 +72,8 @@ or a [VM with a managed service identity](#use-msi).
 
 1.  If you want to use a pre-defined set of access permissions, and you don't already have a suitable service principal defined, follow one of these tutorials to create a new service principal:
 
-    * [Use the portal to create an Azure Active Directory application and a service principal that can access resources](/azure/azure-resource-manager/resource-group-create-service-principal-portal)
-    * [Use Azure PowerShell to create an Azure service principal with a certificate](/azure/active-directory/develop/howto-authenticate-service-principal-powershell)
+    - [Use the portal to create an Azure Active Directory application and a service principal that can access resources](/azure/azure-resource-manager/resource-group-create-service-principal-portal)
+    - [Use Azure PowerShell to create an Azure service principal with a certificate](/azure/active-directory/develop/howto-authenticate-service-principal-powershell)
 
 1.  In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
     In TFS, open the **Services** page from the "settings" icon in the top menu bar.
@@ -94,16 +94,16 @@ or a [VM with a managed service identity](#use-msi).
 
 1.  Select the **Scope level** you require:
 
-    * If you choose **Subscription**, select an existing Azure subscription. If you don't see any Azure subscriptions or instances, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md). |
-    * If you choose **Management Group**, select an existing Azure management group. See [Create management groups](/azure/azure-resource-manager/management-groups-create). |
+    - If you choose **Subscription**, select an existing Azure subscription. If you don't see any Azure subscriptions or instances, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md). |
+    - If you choose **Management Group**, select an existing Azure management group. See [Create management groups](/azure/azure-resource-manager/management-groups-create). |
 
 1.  Enter the information about your service principal into the Azure subscription dialog textboxes:
 
-    * Subscription ID
-    * Subscription name
-    * Service principal ID
-    * Either the service principal client key or, if you have selected **Certificate**, enter the contents of both the certificate and private key sections of the \*.pem file.
-    * Tenant ID<p/>
+    - Subscription ID
+    - Subscription name
+    - Service principal ID
+    - Either the service principal client key or, if you have selected **Certificate**, enter the contents of both the certificate and private key sections of the \*.pem file.
+    - Tenant ID<p/>
 
     You can obtain this information if you don't have it to hand by downloading and running
     [this PowerShell script](https://github.com/Microsoft/vsts-rm-extensions/blob/master/TaskModules/powershell/Azure/SPNCreation.ps1) in an Azure PowerShell window.
@@ -113,8 +113,8 @@ or a [VM with a managed service identity](#use-msi).
 
 1.  After the new service connection is created:
 
-    * If you are using it in the UI, select the connection name you assigned in the **Azure subscription** setting of your pipeline.
-    * If you are using it in YAML, copy the connection name into your code as the **azureSubscription** value.
+    - If you are using it in the UI, select the connection name you assigned in the **Azure subscription** setting of your pipeline.
+    - If you are using it in YAML, copy the connection name into your code as the **azureSubscription** value.
 
 1.  If required, modify the service principal to expose the appropriate permissions. For more details, see
     [Use Role-Based Access Control to manage access to your Azure subscription resources](/azure/role-based-access-control/role-assignments-portal).
@@ -150,14 +150,14 @@ such as Key Vault, instead of persisting credentials in Azure DevOps for the con
 
 1)  Enter the values for your subscription into these fields of the connection dialog:
 
-    * Subscription ID
-    * Subscription name
-    * Tenant ID<p/>
+    - Subscription ID
+    - Subscription name
+    - Tenant ID<p/>
 
 1)  After the new service connection is created:
 
-    * If you are using it in the UI, select the connection name you assigned in the **Azure subscription** setting of your pipeline.
-    * If you are using it in YAML, copy the connection name into your code as the **azureSubscription** value.
+    - If you are using it in the UI, select the connection name you assigned in the **Azure subscription** setting of your pipeline.
+    - If you are using it in YAML, copy the connection name into your code as the **azureSubscription** value.
 
 1)  Ensure that the VM (agent) has the appropriate permissions.
     For example, if your code needs to call Azure Resource Manager, assign the VM the appropriate role using Role-Based Access Control (RBAC) in Azure AD.
@@ -172,7 +172,7 @@ See also: [Troubleshoot Azure Resource Manager service connections](../release/a
 
 For information about connecting to an Azure Government Cloud, see:
 
-* [Connecting from Azure Pipelines (Azure Government Cloud)](/azure/azure-government/documentation-government-get-started-connect-with-vsts)
+- [Connecting from Azure Pipelines (Azure Government Cloud)](/azure/azure-government/documentation-government-get-started-connect-with-vsts)
 
 <a name="connect-stack"></a>
 
@@ -180,8 +180,8 @@ For information about connecting to an Azure Government Cloud, see:
 
 For information about connecting to Azure Stack, see:
 
-* [Connect to Azure Stack](/azure/azure-stack/azure-stack-connect-azure-stack)
-* [Connect Azure Stack to Azure using VPN](/azure/azure-stack/azure-stack-connect-vpn)
-* [Connect Azure Stack to Azure using ExpressRoute](/azure/azure-stack/azure-stack-connect-expressroute)
+- [Connect to Azure Stack](/azure/azure-stack/azure-stack-connect-azure-stack)
+- [Connect Azure Stack to Azure using VPN](/azure/azure-stack/azure-stack-connect-vpn)
+- [Connect Azure Stack to Azure using ExpressRoute](/azure/azure-stack/azure-stack-connect-expressroute)
 
 [!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

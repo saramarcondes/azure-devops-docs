@@ -44,7 +44,7 @@ As Visual Studio subscribers log in to the organization, they are automatically 
 
 Next, you will want to configure your build agents. As part of the migration, all of your build pipelines have been brought over, but agents and pools need to be reconfigured against the new organization. Azure DevOps Services offers the ability to use a Microsoft-hosted pool of build agents that you can use, or you can connect your self-hosted build agent(s). It's important to note that only one self-hosted build agent is included for free. After that there is a [fee](https://visualstudio.microsoft.com/products/visual-studio-team-services-pricing-vs.aspx) for having additional self-hosted build agents. To pay for Microsoft-hosted and self-hosted build agents you will need to link a subscription to your organization. See the following resources for details on performing this task:
 
-* [Build Agents](../pipelines/agents/agents.md)
+- [Build Agents](../pipelines/agents/agents.md)
 
 If you plan on using your existing on-premises private build agents, there is one more recommended step that needs to be taken after registering them to your new organization. Clearing their cache will ensure that you don't encounter any build issues related to older TFVC or Git pointers to your on-premises collection. See [refreshing caches on client computers](/azure/devops/server/admin/backup/refresh-data-caches) for details on how to accomplish this task.
 
@@ -62,10 +62,10 @@ If you have an existing GitHub Enterprise Server connection associated with your
 
 To resolve the problem, consider the following:
 
-* **Remove and re-create the connection**:
+- **Remove and re-create the connection**:
   Remove and re-create the connection to the GitHub Enterprise Server repository. Follow the sequence of steps provided in [Connect from Azure Boards](../boards/github/connect-to-github.md?view=azure-devops#connect-azure-devops-services-to-github-enterprise-server) documentation.
 
-* **Fix the webhook url**:
+- **Fix the webhook url**:
   Go to GitHub's repository settings page and edit the webhook url to point out to the migrated Azure DevOps Services organization url: `https://dev.azure.com/{OrganizationName}/_apis/work/events?api-version=5.2-preview`
 
 ## Notify your teams

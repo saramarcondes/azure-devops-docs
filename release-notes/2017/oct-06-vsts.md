@@ -15,11 +15,11 @@ In the **Sprint 124 Update** of Visual Studio Team Services (VSTS) we’re happy
 
 Some of the other key feature highlights include:
 
-* [Pull request comments follow renamed files](#pull-request-comments-follow-renamed-files) - Comments now follow renames.
-* [Reference work items in Wiki](#reference-work-items-in-wiki) - Add a link to a work item in a Wiki.
-* [Use Azure Key Vault secrets in your CI build](#use-azure-key-vault-secrets-in-your-ci-build) - Stay secure in your build process by referencing Azure Key Vault secrets.
-* [Bulk Deploy environments manually from Release view](#bulk-deploy-environments-manually-from-release-view) - Go broad across environments with a single Deploy action.
-* [Process parameters for deployment templates](#process-parameters-for-deployment-templates) - Configuring release made easy with process parameters.
+- [Pull request comments follow renamed files](#pull-request-comments-follow-renamed-files) - Comments now follow renames.
+- [Reference work items in Wiki](#reference-work-items-in-wiki) - Add a link to a work item in a Wiki.
+- [Use Azure Key Vault secrets in your CI build](#use-azure-key-vault-secrets-in-your-ci-build) - Stay secure in your build process by referencing Azure Key Vault secrets.
+- [Bulk Deploy environments manually from Release view](#bulk-deploy-environments-manually-from-release-view) - Go broad across environments with a single Deploy action.
+- [Process parameters for deployment templates](#process-parameters-for-deployment-templates) - Configuring release made easy with process parameters.
 
 ## What’s new in VSTS
 
@@ -36,15 +36,15 @@ The new **Search** experience for both **Code** and **Work items** is now availa
 
 The updated experience reflects this feedback, and brings a host of improvements:
 
-* A streamlined layout of the search box, code and work item results pivots, filter controls and two pane results pane makes search a breeze.
-* When you start a search from within a project, search defaults to results from that project; you can easily now navigate up to the account level to broaden your search.
-* The new filtering controls are designed based on extensive feedback on the previous experience.
-  * You can easily see the filters that influence the search results.
-  * It's easier to work with filters; we have made many usability tweaks, e.g. gone are the filters that move up as you select them.
-  * You can easily hide the filters to liberate more space for results.
-  * Based on where in VSTS you’re coming from, certain defaults are applied to make it easier to find things.
-* You can now sort by filename and filepath in code.
-* You can now filter by branch in code using the branch filter. See [Search for code in multiple branches](#search-for-code-in-multiple-branches) below.
+- A streamlined layout of the search box, code and work item results pivots, filter controls and two pane results pane makes search a breeze.
+- When you start a search from within a project, search defaults to results from that project; you can easily now navigate up to the account level to broaden your search.
+- The new filtering controls are designed based on extensive feedback on the previous experience.
+  - You can easily see the filters that influence the search results.
+  - It's easier to work with filters; we have made many usability tweaks, e.g. gone are the filters that move up as you select them.
+  - You can easily hide the filters to liberate more space for results.
+  - Based on where in VSTS you’re coming from, certain defaults are applied to make it easier to find things.
+- You can now sort by filename and filepath in code.
+- You can now filter by branch in code using the branch filter. See [Search for code in multiple branches](#search-for-code-in-multiple-branches) below.
 
 Try out the new experience and let us know your feedback.
 

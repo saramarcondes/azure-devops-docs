@@ -31,7 +31,7 @@ Below are the sample policies shared. Based on your requirements, you can build 
 
 ### Check specific project/pipeline
 
-This policy checks if the images are built by Azure Pipelines and Pipeline-foo. For this to work, the pipeline definition should override the name field to something like: **AzureDevOps*$(BuildDefinitionName)*$(Date:yyyyMMdd)$(Rev:.r)**. See more about naming pipeline runs [here.](../process/run-number.md)
+This policy checks if the images are built by Azure Pipelines and Pipeline-foo. For this to work, the pipeline definition should override the name field to something like: **AzureDevOps*\$(BuildDefinitionName)*$(Date:yyyyMMdd)$(Rev:.r)**. See more about naming pipeline runs [here.](../process/run-number.md)
 
 ```
 allowedBuilder := "AzureDevOps_pipeline-foo"

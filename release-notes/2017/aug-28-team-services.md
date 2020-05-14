@@ -14,12 +14,12 @@ In the **Sprint 122 Update** of Visual Studio Team Services (VSTS) we’re annou
 
 Some of the other key feature highlights include:
 
-* [Forks](#fork-a-repo) - Enable broader contributions within an account.
-* [Work Items hub](#work-items-hub) - Use personalized pivots to find and interact with work items important to you.
-* [File minimap](#file-minimap), [Bracket matching](#bracket-matching), and [Toggle white space](#toggle-white-space) - Get a quick overview of the code and edit with ease.
-* [CI builds for Bitbucket repos](#ci-builds-for-bitbucket-repositories) - If Bitbucket is your repo platform of choice, we’ve got you covered.
-* [New Release Definition Editor](#new-release-definition-editor) - Rich release definition editing preview feature now turned on and generally available.
-* [Streamlined user management](#streamlined-user-management) - Preview feature now turned on and generally available.
+- [Forks](#fork-a-repo) - Enable broader contributions within an account.
+- [Work Items hub](#work-items-hub) - Use personalized pivots to find and interact with work items important to you.
+- [File minimap](#file-minimap), [Bracket matching](#bracket-matching), and [Toggle white space](#toggle-white-space) - Get a quick overview of the code and edit with ease.
+- [CI builds for Bitbucket repos](#ci-builds-for-bitbucket-repositories) - If Bitbucket is your repo platform of choice, we’ve got you covered.
+- [New Release Definition Editor](#new-release-definition-editor) - Rich release definition editing preview feature now turned on and generally available.
+- [Streamlined user management](#streamlined-user-management) - Preview feature now turned on and generally available.
 
 ## Work
 
@@ -31,11 +31,11 @@ Some of the other key feature highlights include:
 
 The **Work Items** hub allows you to focus on relevant items inside a team project via 5 pivots:
 
-* Assigned to me - All work items assigned to you in the project in the order they’re last updated. To open or update a work item, click its title.
-* Following - All work items you’re following.
-* Mentioned - All work items you’ve been mentioned in, for the last 30 days.
-* My activity - All work items that you have recently viewed or updated.
-* Recently created - All work items recently created in the project.
+- Assigned to me - All work items assigned to you in the project in the order they’re last updated. To open or update a work item, click its title.
+- Following - All work items you’re following.
+- Mentioned - All work items you’ve been mentioned in, for the last 30 days.
+- My activity - All work items that you have recently viewed or updated.
+- Recently created - All work items recently created in the project.
 
 > [!div class="mx-imgBorder"] > ![work item hub](media/08_28_04.png)
 
@@ -57,10 +57,10 @@ See the [documentation for the Work Items hub](https://visualstudio.microsoft.co
 
 Whether it be automatically setting the value of certain work item fields or defining the behavior of those fields in specific states, project admins can now use rules to automate the behavior of work item fields and ease the burden on their teams. Here are just a few examples of the key scenarios you will be able to configure using rules.
 
-* When a work item state changes to **Active**, make **Remaining Work** a required field
-* When a work item is **Proposed** and the **Original Estimate** is changed, copy the value of **Original Estimate** to the **Remaining Work** field
-* When you add a custom state, with its own by/date field types, you can use rules to automatically set those fields’ values on state transitions
-* When a work item state changes, set the value of custom by/date fields
+- When a work item state changes to **Active**, make **Remaining Work** a required field
+- When a work item is **Proposed** and the **Original Estimate** is changed, copy the value of **Original Estimate** to the **Remaining Work** field
+- When you add a custom state, with its own by/date field types, you can use rules to automatically set those fields’ values on state transitions
+- When a work item state changes, set the value of custom by/date fields
 
 > [!div class="mx-imgBorder"] > ![custom rules](media/08_28_01.png)
 

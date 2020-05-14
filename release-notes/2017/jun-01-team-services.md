@@ -12,9 +12,9 @@ ms.date: 06/01/2017
 
 This week we have something for just about everyone, with a broad set of changes across the entire product:
 
-* Our WIT mobile forms have GA’d and the first experiences on our new analytics services are here.
-* Build and Release have a host of new improvements from our customer request list and VS Enterprise users got a nice new benefit.
-* We also continue on our journey to make notifications great and customizable across the entire product.
+- Our WIT mobile forms have GA’d and the first experiences on our new analytics services are here.
+- Build and Release have a host of new improvements from our customer request list and VS Enterprise users got a nice new benefit.
+- We also continue on our journey to make notifications great and customizable across the entire product.
 
 ## Mobile work item form general availability
 
@@ -74,9 +74,9 @@ The contents of secure files are encrypted and can only be used during build or 
 
 We’ve also added some Apple tasks that leverage this new feature:
 
-* [Utility: Install Apple Certificate](https://visualstudio.microsoft.com/docs/build/steps/utility/install-apple-certificate)
+- [Utility: Install Apple Certificate](https://visualstudio.microsoft.com/docs/build/steps/utility/install-apple-certificate)
 
-* [Utility: Install Apple Provisioning Profile](https://visualstudio.microsoft.com/docs/build/steps/utility/install-apple-provisioning-profile)
+- [Utility: Install Apple Provisioning Profile](https://visualstudio.microsoft.com/docs/build/steps/utility/install-apple-provisioning-profile)
 
 ## Extensions with build templates
 

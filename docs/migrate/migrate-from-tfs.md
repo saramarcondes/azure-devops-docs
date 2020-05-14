@@ -60,9 +60,9 @@ If for some reason you cannot use the data migration tool but still want a highe
 Option 1, you can choose from a variety of tools that use public APIs to move data. Generally these tools can provide
 a higher fidelity migration than a manual copy of "tip" data, but they are still relatively low fidelity. For example:
 
-* None of them will preserve the dates of TF VC changesets.
-* Many of them will not preserve the changed dates of work item revisions.
-* None of them will migrate all Azure DevOps Server artifacts.
+- None of them will preserve the dates of TF VC changesets.
+- Many of them will not preserve the changed dates of work item revisions.
+- None of them will migrate all Azure DevOps Server artifacts.
 
 In general, we only recommend this approach if the extra fidelity beyond a manual copy is critical. If you decide to
 take this approach, you might consider hiring a consultant who has experience with one or more of the tools.
@@ -76,9 +76,9 @@ is the right strategy.
 
 ## Related articles
 
-* [About Azure DevOps Services and Azure DevOps Server](../user-guide/about-azure-devops-services-tfs.md)
-* [Pricing, Azure DevOps Services](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
-* [Pricing, Azure DevOps Server](https://visualstudio.microsoft.com/team-services/tfs-pricing/)
+- [About Azure DevOps Services and Azure DevOps Server](../user-guide/about-azure-devops-services-tfs.md)
+- [Pricing, Azure DevOps Services](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
+- [Pricing, Azure DevOps Server](https://visualstudio.microsoft.com/team-services/tfs-pricing/)
 
 <!---
 *(c) 2016 Microsoft Corporation. All rights reserved. This document is

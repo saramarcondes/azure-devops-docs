@@ -27,10 +27,10 @@ and differences in how you [control organization access with Microsoft accounts 
 
 ## Prerequisites
 
-* Your organization must be connected to Azure Active Directory. [My organization uses Microsoft accounts only. Can I switch to Azure AD?](faq-azure-access.md#ChangeMSA). Learn how to [connect your organization to Azure AD](connect-organization-to-azure-ad.md).
-* You must be a Project Administrator, Project Collection Administrator, or organization Owner. You must also have at least Basic access, not Stakeholder.
-* To create and manage Azure AD groups, you need Azure AD administrator permissions or have the directory administrator delegate those permissions to you in the [Azure portal](https://portal.azure.com).
-* Azure AD changes might take up to 1 hour to be visible in Azure DevOps.
+- Your organization must be connected to Azure Active Directory. [My organization uses Microsoft accounts only. Can I switch to Azure AD?](faq-azure-access.md#ChangeMSA). Learn how to [connect your organization to Azure AD](connect-organization-to-azure-ad.md).
+- You must be a Project Administrator, Project Collection Administrator, or organization Owner. You must also have at least Basic access, not Stakeholder.
+- To create and manage Azure AD groups, you need Azure AD administrator permissions or have the directory administrator delegate those permissions to you in the [Azure portal](https://portal.azure.com).
+- Azure AD changes might take up to 1 hour to be visible in Azure DevOps.
 
 ## Add an Azure AD group to an Azure DevOps group
 
@@ -87,5 +87,5 @@ and differences in how you [control organization access with Microsoft accounts 
 
 ## Related articles
 
-* [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
-* [Manage conditional access](manage-conditional-access.md)
+- [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
+- [Manage conditional access](manage-conditional-access.md)

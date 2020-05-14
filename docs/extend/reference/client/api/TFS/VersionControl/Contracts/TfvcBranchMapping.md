@@ -15,8 +15,8 @@ Module path: `TFS/VersionControl/Contracts`
 
 ### Members
 
-* `depth`: string.
+- `depth`: string.
 
-* `serverItem`: string.
+- `serverItem`: string.
 
-* `type`: string.
+- `type`: string.

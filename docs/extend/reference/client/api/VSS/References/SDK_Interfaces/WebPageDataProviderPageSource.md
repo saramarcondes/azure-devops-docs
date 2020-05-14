@@ -19,10 +19,10 @@ Contextual data for web-page-related data providers about the originating (host/
 
 ### Members
 
-* `navigation`: [NavigationContext](../../../VSS/References/SDK_Interfaces/NavigationContext.md). The navigation context for the host page that is loading the data provider
+- `navigation`: [NavigationContext](../../../VSS/References/SDK_Interfaces/NavigationContext.md). The navigation context for the host page that is loading the data provider
 
-* `project`: [ContextIdentifier](../../../VSS/References/SDK_Interfaces/ContextIdentifier.md). The project context for the host page that is loading the data provider
+- `project`: [ContextIdentifier](../../../VSS/References/SDK_Interfaces/ContextIdentifier.md). The project context for the host page that is loading the data provider
 
-* `team`: [TeamContext](../../../VSS/References/SDK_Interfaces/TeamContext.md). The team context for the host page that is loading the data provider
+- `team`: [TeamContext](../../../VSS/References/SDK_Interfaces/TeamContext.md). The team context for the host page that is loading the data provider
 
-* `url`: string. The url of the host page that is loading the data provider
+- `url`: string. The url of the host page that is loading the data provider

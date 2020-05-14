@@ -23,9 +23,9 @@ Follow the steps to create a report in Power BI desktop that shows a **daily tre
 
 > [!div class="checklist"]
 >
-> * Create a Power BI query
-> * Create Power BI transforms
-> * Create an Open Bugs trend report
+> - Create a Power BI query
+> - Create Power BI transforms
+> - Create an Open Bugs trend report
 
 <a id="prerequisites"> </a>
 
@@ -35,24 +35,24 @@ In order to create a Power BI report, you must meet the following criteria:
 
 ::: moniker range="azure-devops"
 
-* You must be a member of a project. If you don't have a project yet, create one. See [Sign up for free](/azure/devops/user-guide/sign-up-invite-teammates).
-* If you haven't been added as a project member, [get added now](/azure/devops/organizations/accounts/add-organization-users). Anyone with access to the project, except Stakeholders, can view Analytics views.
-* Have the **View Analytics** permission set to **Allow**. See [Grant permissions to access Analytics](/azure/devops/report/powerbi/analytics-security).
-* **Boards** must be enabled. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
-* Have installed _Power BI Desktop_ _October 2018 Update_ or later version. You can download this client application from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).
-* Have tracked work items for some period of time on which to generate a trend report.
+- You must be a member of a project. If you don't have a project yet, create one. See [Sign up for free](/azure/devops/user-guide/sign-up-invite-teammates).
+- If you haven't been added as a project member, [get added now](/azure/devops/organizations/accounts/add-organization-users). Anyone with access to the project, except Stakeholders, can view Analytics views.
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions to access Analytics](/azure/devops/report/powerbi/analytics-security).
+- **Boards** must be enabled. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
+- Have installed _Power BI Desktop_ _October 2018 Update_ or later version. You can download this client application from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).
+- Have tracked work items for some period of time on which to generate a trend report.
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-* You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
-* If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project). Anyone with access to the project, except Stakeholders, can view Analytics views.
-* Have [enabled or installed Analytics](../dashboards/analytics-extension.md). You must be an account owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions or enable the service.
-* **Boards** must be enabled. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
-* Have the **View Analytics** permission set to **Allow**. See [Grant permissions to access Analytics](/azure/devops/report/powerbi/analytics-security).
-* Have installed _Power BI Desktop_ _October 2018 Update_ or later version. You can download this client application from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).
-* Have tracked work items for some period of time on which to generate a trend report.
+- You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
+- If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project). Anyone with access to the project, except Stakeholders, can view Analytics views.
+- Have [enabled or installed Analytics](../dashboards/analytics-extension.md). You must be an account owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions or enable the service.
+- **Boards** must be enabled. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions to access Analytics](/azure/devops/report/powerbi/analytics-security).
+- Have installed _Power BI Desktop_ _October 2018 Update_ or later version. You can download this client application from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).
+- Have tracked work items for some period of time on which to generate a trend report.
 
 ::: moniker-end
 
@@ -62,18 +62,15 @@ Create a Power BI Query to pull the data into Power BI as follows:
 
 1.  Choose **Get Data**, and then **Blank Query**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI - Blank Query](media/BlankQuery.png)
+    > [!div class="mx-imgBorder"] > ![Power BI - Blank Query](media/BlankQuery.png)
 
 2.  From the Power BI Query editor, choose **Advanced Editor**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI - Select Advanced Editor](media/AdvancedEditor.png)
+    > [!div class="mx-imgBorder"] > ![Power BI - Select Advanced Editor](media/AdvancedEditor.png)
 
 3.  The Advanced Editor window opens.
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI - Advanced Editor](media/odatapowerbi-advancededitor.png)
+    > [!div class="mx-imgBorder"] > ![Power BI - Advanced Editor](media/odatapowerbi-advancededitor.png)
 
 4.  Replace the contents with the following query.
 
@@ -95,20 +92,18 @@ Create a Power BI Query to pull the data into Power BI as follows:
         Source
     ```
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI - Advanced Editor - Pasted Query](media/odatapowerbi-advancededitor-pasted.png)
+    > [!div class="mx-imgBorder"] > ![Power BI - Advanced Editor - Pasted Query](media/odatapowerbi-advancededitor-pasted.png)
 
 5.  Substitute your values within the sample query.
 
     The sample query has strings that you must replace with your values:
 
-    * {organization} - Your organization name
-    * {project} - Your team project name. Or omit "/{project}" entirely, for a cross-project query
-    * {areapath} - Your Area Path. Format: Project\Level1\Level2
-    * {startdate} - The date to start your trend report on. Format: YYYY-MM-DDZ. Example: 2019-07-01Z represents 2019-July-01. Do not enclose in quotes.
+    - {organization} - Your organization name
+    - {project} - Your team project name. Or omit "/{project}" entirely, for a cross-project query
+    - {areapath} - Your Area Path. Format: Project\Level1\Level2
+    - {startdate} - The date to start your trend report on. Format: YYYY-MM-DDZ. Example: 2019-07-01Z represents 2019-July-01. Do not enclose in quotes.
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI - Advanced Editor - Replace strings in query](media/odatapowerbi-advancededitor-replaced.png)
+    > [!div class="mx-imgBorder"] > ![Power BI - Advanced Editor - Replace strings in query](media/odatapowerbi-advancededitor-replaced.png)
 
 6.  Choose **Done** to execute the query.
 
@@ -127,22 +122,20 @@ Power BI shows you the fields you can report on.
 > [!NOTE]  
 > The example below assumes that no one renamed any columns.
 
-> [!div class="mx-imgBorder"]
-> ![Sample - Boards Rollup - Fields](media/odatapowerbi-bugtrend-fields.png)
+> [!div class="mx-imgBorder"] > ![Sample - Boards Rollup - Fields](media/odatapowerbi-bugtrend-fields.png)
 
 For a simple report, do the following steps:
 
 1.  Select Power BI Visualization **Line chart**.
 1.  Add the field "DateValue" to **Axis**
-    * Right-click "DateValue" and select "DateValue", rather than Date Hierarchy
+    - Right-click "DateValue" and select "DateValue", rather than Date Hierarchy
 1.  Add the field "State" to **Legend**
 1.  Add the field "Count" to **Values**
-    * Right-click WorkItemId field and ensure **Sum** is selected
+    - Right-click WorkItemId field and ensure **Sum** is selected
 
 The example report:
 
-> [!div class="mx-imgBorder"]
-> ![Sample - Boards Rollup - Report](media/odatapowerbi-bugtrend-report.png)
+> [!div class="mx-imgBorder"] > ![Sample - Boards Rollup - Report](media/odatapowerbi-bugtrend-report.png)
 
 [!INCLUDE [temp](includes/sample-multipleteams.md)]
 

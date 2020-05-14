@@ -30,7 +30,7 @@ You use the **Tab** element to cluster a group of fields or to support one or mo
 >    <Control> . . . </Control>
 >    <TabGroup> . . . </TabGroup>
 >    <Splitter> . . . </Splitter>
-> </Tab>  
+> </Tab>
 > ```
 
 ## Attributes and elements
@@ -69,35 +69,35 @@ The following sections describe attributes, child elements, and parent elements.
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <FORM>  
->    <Layout>  
+> <FORM>
+>    <Layout>
 >         . . .
->       <TabGroup>  
->          <Tab Label="Planning">  
->             <Group Label="Status" Padding="(0,0,0,3)">  
->                <Column PercentWidth="100">  
->                   <Control FieldName="Microsoft.DevDiv.Importance" Type="FieldControl" Label="Importance" LabelPosition="Left" />  
->                   <Control FieldName="Microsoft.DevDiv.Commitment" Type="FieldControl" Label="Commitment / Confidence" LabelPosition="Left" />  
->                     . . .  
->                </Column>  
->             </Group>  
->          </Tab>  
->          <Tab Label="Description">  
->             <Group>  
->                <Column PercentWidth="100">  
->                   <Control FieldName="System.Description" Type="HtmlFieldControl" Label="Value Proposition Description" LabelPosition="Top" />  
->                </Column >  
->             </Group>  
->          </Tab>  
+>       <TabGroup>
+>          <Tab Label="Planning">
+>             <Group Label="Status" Padding="(0,0,0,3)">
+>                <Column PercentWidth="100">
+>                   <Control FieldName="Microsoft.DevDiv.Importance" Type="FieldControl" Label="Importance" LabelPosition="Left" />
+>                   <Control FieldName="Microsoft.DevDiv.Commitment" Type="FieldControl" Label="Commitment / Confidence" LabelPosition="Left" />
+>                     . . .
+>                </Column>
+>             </Group>
+>          </Tab>
+>          <Tab Label="Description">
+>             <Group>
+>                <Column PercentWidth="100">
+>                   <Control FieldName="System.Description" Type="HtmlFieldControl" Label="Value Proposition Description" LabelPosition="Top" />
+>                </Column >
+>             </Group>
+>          </Tab>
 >  . . .
->       </TabGroup>  
->    </Layout>  
-> </FORM>  
+>       </TabGroup>
+>    </Layout>
+> </FORM>
 > ```
 
 ## Related articles
 
-* [Control](control-xml-element-reference.md)
-* [Specify work item form controls](specify-work-item-form-controls.md)
-* [Design the work item form](design-work-item-form.md)
-* [All FORM elements](all-form-xml-elements-reference.md)
+- [Control](control-xml-element-reference.md)
+- [Specify work item form controls](specify-work-item-form-controls.md)
+- [Design the work item form](design-work-item-form.md)
+- [All FORM elements](all-form-xml-elements-reference.md)

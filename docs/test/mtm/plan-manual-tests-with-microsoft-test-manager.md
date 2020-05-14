@@ -47,15 +47,15 @@ Now that you've defined a manual test case, you can run it from Microsoft Test M
 
 Test suites are folders inside a test plan that help you organize tests. When you run tests, you can choose to run all the tests in a suite, one after another.
 
-* Create a new test suite.
+- Create a new test suite.
 
   ![Creating a new test suite](media/plan-manual-tests-with-microsoft-test-manager/almp_t_newsuite01.png)
 
-* Select a suite and then create new tests in the suite.
+- Select a suite and then create new tests in the suite.
 
   ![Create a test case in a suite](media/plan-manual-tests-with-microsoft-test-manager/almp_t_newsuite02.png)
 
-* Drag test cases from one suite to another, or cut and paste.
+- Drag test cases from one suite to another, or cut and paste.
 
   ![Drag test cases from one suite to another](media/plan-manual-tests-with-microsoft-test-manager/almp_t_dragsuites.png)
 
@@ -66,14 +66,14 @@ Test suites are folders inside a test plan that help you organize tests. When yo
 
 ## Try this next
 
-* [Run manual tests with Microsoft Test Manager](run-manual-tests-with-microsoft-test-manager.md)
+- [Run manual tests with Microsoft Test Manager](run-manual-tests-with-microsoft-test-manager.md)
 
 ### Or, dig deeper:
 
-* [Share steps between test cases](share-steps-between-test-cases.md)
+- [Share steps between test cases](share-steps-between-test-cases.md)
 
-* [Repeat a test with different data](../repeat-test-with-different-data.md)
+- [Repeat a test with different data](../repeat-test-with-different-data.md)
 
-* [Test different configurations](../test-different-configurations.md)
+- [Test different configurations](../test-different-configurations.md)
 
 [!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)]

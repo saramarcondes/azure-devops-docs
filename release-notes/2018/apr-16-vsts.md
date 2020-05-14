@@ -21,36 +21,36 @@ A new [notification type](#subscribe-to-package-update-notifications) and better
 
 ### Code
 
-* [Find phrases and code with special characters faster](#find-phrases-and-code-with-special-characters-faster)
+- [Find phrases and code with special characters faster](#find-phrases-and-code-with-special-characters-faster)
 
 ### Work
 
-* [Query work in the Area Paths of a Team with the new @TeamAreas macro](#query-macro)
+- [Query work in the Area Paths of a Team with the new @TeamAreas macro](#query-macro)
 
 ### Build and Release
 
-* [Trigger CI builds from YAML](#trigger-ci-builds-from-yaml)
-* [Continuously deploy to Azure Database for MySQL](#continuously-deploy-to-azure-database-for-mysql)
-* [Streamline deployment to Kubernetes using Helm](#streamline-deployment-to-kubernetes-using-helm)
-* [Deploy Ruby on Rails applications](#deploy-ruby-on-rails-applications)
-* [Configure Go and Ruby applications using Azure DevOps Projects](#configure-go-and-ruby-applications-using-azure-devops-projects)
-* [Continuously deploy builds tagged by post-build processing](#continuously-deploy-builds-tagged-by-post-build-processing)
-* [Filter branches for GitHub Enterprise or external Git artifacts](#filter-branches-for-github-enterprise-or-external-git-artifacts)
+- [Trigger CI builds from YAML](#trigger-ci-builds-from-yaml)
+- [Continuously deploy to Azure Database for MySQL](#continuously-deploy-to-azure-database-for-mysql)
+- [Streamline deployment to Kubernetes using Helm](#streamline-deployment-to-kubernetes-using-helm)
+- [Deploy Ruby on Rails applications](#deploy-ruby-on-rails-applications)
+- [Configure Go and Ruby applications using Azure DevOps Projects](#configure-go-and-ruby-applications-using-azure-devops-projects)
+- [Continuously deploy builds tagged by post-build processing](#continuously-deploy-builds-tagged-by-post-build-processing)
+- [Filter branches for GitHub Enterprise or external Git artifacts](#filter-branches-for-github-enterprise-or-external-git-artifacts)
 
 ### Package
 
-* [Subscribe to package update notifications](#subscribe-to-package-update-notifications)
-* [Use upstream NuGet packages from elsewhere in VSTS](#use-upstream-nuget-packages-from-elsewhere-in-vsts)
-* [Enable nuget.org upstream sources in more feeds](#enable-nugetorg-upstream-sources-in-more-feeds)
+- [Subscribe to package update notifications](#subscribe-to-package-update-notifications)
+- [Use upstream NuGet packages from elsewhere in VSTS](#use-upstream-nuget-packages-from-elsewhere-in-vsts)
+- [Enable nuget.org upstream sources in more feeds](#enable-nugetorg-upstream-sources-in-more-feeds)
 
 ### Wiki
 
-* [Quickly link to other wiki pages using suggestions](#quickly-link-to-other-wiki-pages-using-suggestions)
-* [Filter search results by Wiki name](#filter-search-results-by-wiki-name)
+- [Quickly link to other wiki pages using suggestions](#quickly-link-to-other-wiki-pages-using-suggestions)
+- [Filter search results by Wiki name](#filter-search-results-by-wiki-name)
 
 ### Administration
 
-* [Move a VSTS account between Azure subscription or resource group](#move-a-vsts-account-between-azure-subscription-or-resource-group)
+- [Move a VSTS account between Azure subscription or resource group](#move-a-vsts-account-between-azure-subscription-or-resource-group)
 
 ## Code
 

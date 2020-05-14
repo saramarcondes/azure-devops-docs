@@ -16,8 +16,8 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Members
 
-* `lastSelectedPlan`: number.
+- `lastSelectedPlan`: number.
 
-* `lastSelectedSuite`: number.
+- `lastSelectedSuite`: number.
 
-* `plans`: [TestPlan](../../../TFS/TestManagement/Contracts/TestPlan.md)[].
+- `plans`: [TestPlan](../../../TFS/TestManagement/Contracts/TestPlan.md)[].

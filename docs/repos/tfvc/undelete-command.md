@@ -79,7 +79,7 @@ The following example displays deletion IDs for all items on the server that hav
 c:\projects>tf dir $/ /deleted
 ```
 
-* Sample output:
+- Sample output:
 
   ```
   $/projects/math/314.cs;X10

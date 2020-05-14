@@ -18,9 +18,9 @@ monikerRange: 'azure-devops'
 
 This glossary describes terms used when working with public projects in Azure DevOps Services. See also:
 
-* [Agile glossary](../../boards/work-items/agile-glossary.md)
-* [Project management and navigation glossary](../../project/navigation/glossary.md)
-* [Security glossary](../security/security-glossary.md)
+- [Agile glossary](../../boards/work-items/agile-glossary.md)
+- [Project management and navigation glossary](../../project/navigation/glossary.md)
+- [Security glossary](../security/security-glossary.md)
 
 ## Anonymous user
 

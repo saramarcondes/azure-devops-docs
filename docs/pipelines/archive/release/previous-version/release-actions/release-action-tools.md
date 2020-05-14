@@ -18,21 +18,21 @@ Each release action uses a release management tool. For example, Command Line Ru
 
 The following sections describe the tools provided with Release Management:
 
-* [Database Deployment Agent - Execute Script](#database_da)
-* [Reporting Services Deployment Agent](#rs_da)
-* [MSI Deployment Agent](#msi_da)
-* [XCopy Deployment Agent](#xcopy_da)
-* [Command Line Runner](#clr)
-* [Windows Registry Manager](#wrm)
-* [Windows Common IO](#wcio)
-* [Windows Service Manager](#wsm)
-* [DACPAC Database Deployment Agent](#dacpac_da)
-* [IIS Deployment Agent](#iis_da)
-* [Microsoft Azure VM Manager](#mavmm)
-* [XBAP Deployer](#xbapd)
-* [Microsoft Test Manager Command-Line Utility](#mtm_clu)
-* [INI File Manager](#ini_fm)
-* [Windows Process](#wproc)
+- [Database Deployment Agent - Execute Script](#database_da)
+- [Reporting Services Deployment Agent](#rs_da)
+- [MSI Deployment Agent](#msi_da)
+- [XCopy Deployment Agent](#xcopy_da)
+- [Command Line Runner](#clr)
+- [Windows Registry Manager](#wrm)
+- [Windows Common IO](#wcio)
+- [Windows Service Manager](#wsm)
+- [DACPAC Database Deployment Agent](#dacpac_da)
+- [IIS Deployment Agent](#iis_da)
+- [Microsoft Azure VM Manager](#mavmm)
+- [XBAP Deployer](#xbapd)
+- [Microsoft Test Manager Command-Line Utility](#mtm_clu)
+- [INI File Manager](#ini_fm)
+- [Windows Process](#wproc)
 
 <a name="database_da"></a>
 
@@ -318,11 +318,11 @@ variables:
 
 | **Variable**    | **Variable Value Metadata** |
 | --------------- | --------------------------- |
-| BuildDirectory  | $(PackageLocation)          |
-| BuildNumber     | $(BuildNumber)              |
-| BuildDefinition | $(BuildDefinition)          |
-| TFSCollection   | $(TFSUrlWithCollection)     |
-| TeamProject     | $(TeamProject)              |
+| BuildDirectory  | \$(PackageLocation)         |
+| BuildNumber     | \$(BuildNumber)             |
+| BuildDefinition | \$(BuildDefinition)         |
+| TFSCollection   | \$(TFSUrlWithCollection)    |
+| TeamProject     | \$(TeamProject)             |
 
 <a name="ini_fm"></a>
 
@@ -359,14 +359,14 @@ tool are:
 
 ## Related topics
 
-* [Release actions to deploy an app](../release-actions.md)
-* [Overview of Release Management](../release-management-overview.md)
-* [Install Release Management](../install-release-management.md)
-* [Manage your release](../manage-your-release.md)
-* [Release without deployment agents](../release-without-agents.md)
-* [Release with deployment agents](../release-with-agents.md)
-* [Trigger a release from a build](../trigger-a-release.md)
-* [Deploy continuously to Azure](../deploy-continuously-to-azure.md)
+- [Release actions to deploy an app](../release-actions.md)
+- [Overview of Release Management](../release-management-overview.md)
+- [Install Release Management](../install-release-management.md)
+- [Manage your release](../manage-your-release.md)
+- [Release without deployment agents](../release-without-agents.md)
+- [Release with deployment agents](../release-with-agents.md)
+- [Trigger a release from a build](../trigger-a-release.md)
+- [Deploy continuously to Azure](../deploy-continuously-to-azure.md)
 
 [!INCLUDE [wpfver-back-to-index-shared](../../includes/wpfver-back-to-index-shared.md)]
 

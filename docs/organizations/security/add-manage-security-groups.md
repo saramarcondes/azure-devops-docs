@@ -20,20 +20,20 @@ Security groups assign a set of permissions to members of the group. For example
 
 Azure DevOps is pre-configured with default security groups. You can add and manage security groups for your organization with the [az devops security group](/cli/azure/ext/azure-devops/devops/security/group) commands. Use this command to:
 
-* Create a new security group
-* View security groups and security group details
-* Update or delete a security group
-* Manage security group memberships for groups and users
+- Create a new security group
+- View security groups and security group details
+- Update or delete a security group
+- Manage security group memberships for groups and users
 
 > [!NOTE]
 > For Azure DevOps Services, you can manage security groups using the `az devops security group` command documented in this article, or using the TFSSecurity command. To use the TFSSecurity command, you must install Azure DevOps Server 2019 to get access to the command line tool. To learn more, see [TFSSecurity command](/azure/devops/server/command-line/tfssecurity-cmd).
 
 ## Prerequisites
 
-* To add and manage security groups, you must be a member of the Project Collection Administrators security group.
-* You must have installed the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](../../cli/index.md).
-* Sign into Azure DevOps using `az login`.
-* For the examples in this article, set the default organization using `az devops configure --defaults organization=YourOrganizationURL`.
+- To add and manage security groups, you must be a member of the Project Collection Administrators security group.
+- You must have installed the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](../../cli/index.md).
+- Sign into Azure DevOps using `az login`.
+- For the examples in this article, set the default organization using `az devops configure --defaults organization=YourOrganizationURL`.
 
 ## Security group commands
 
@@ -51,8 +51,8 @@ Azure DevOps is pre-configured with default security groups. You can add and man
 
 The following parameters are optional for all commands, and not listed in the examples provided in this article.
 
-* **detect**: Automatically detect organization. Accepted values: false, true. Default is true.
-* **org**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **detect**: Automatically detect organization. Accepted values: false, true. Default is true.
+- **org**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 
 ## Create a security group
 
@@ -72,13 +72,13 @@ az devops security group create [--description]
 
 ### Optional parameters
 
-* **description**: Description of the new security group.
-* **email-id**: Create new group using the email address as a reference to an existing group from an Azure Active Directory (AAD) backed provider. Required if **name** or **origin-id** is missing.
-* **groups**: A comma-separated list of descriptors referencing groups you want the newly created group to join.
-* **name**: Name of the new security group. Required if **origin-id** or **email-id** is missing.
-* **origin-id**: Create new group using the OriginID as a reference to an existing group from an AAD backed provider. Required if **name** or **email-id** is missing.
-* **project**: Name or ID of the project in which the group should be created.
-* **scope**: Create group at project or organization level. Accepted values are _organization_ and _project_ (default).
+- **description**: Description of the new security group.
+- **email-id**: Create new group using the email address as a reference to an existing group from an Azure Active Directory (AAD) backed provider. Required if **name** or **origin-id** is missing.
+- **groups**: A comma-separated list of descriptors referencing groups you want the newly created group to join.
+- **name**: Name of the new security group. Required if **origin-id** or **email-id** is missing.
+- **origin-id**: Create new group using the OriginID as a reference to an existing group from an AAD backed provider. Required if **name** or **email-id** is missing.
+- **project**: Name or ID of the project in which the group should be created.
+- **scope**: Create group at project or organization level. Accepted values are _organization_ and _project_ (default).
 
 ### Example
 
@@ -107,8 +107,8 @@ az devops security group delete --id
 
 ### Parameters
 
-* **id**: Required. Security group descriptor. To obtain a descriptor, use the [az devops security group list](#list-security-groups) command.
-* **yes**: Optional. Don't prompt for confirmation.
+- **id**: Required. Security group descriptor. To obtain a descriptor, use the [az devops security group list](#list-security-groups) command.
+- **yes**: Optional. Don't prompt for confirmation.
 
 ### Example
 
@@ -135,10 +135,10 @@ az devops security group list [--continuation-token]
 
 ### Optional parameters
 
-* **continuation-token**: If there are more results that can't be returned in a single page, the result set will contain a continuation token for retrieval of the next set of results.
-* **project**: List groups for a particular project.
-* **scope**: List the groups at project or organization level. Accepted values are _organization_ and _project_ (default).
-* **subject-types**: A comma-separated list of user subject subtypes to reduce the retrieved results. You can give initial part of descriptor (before the dot) as a filter, for example, vssgp,aadgp.
+- **continuation-token**: If there are more results that can't be returned in a single page, the result set will contain a continuation token for retrieval of the next set of results.
+- **project**: List groups for a particular project.
+- **scope**: List the groups at project or organization level. Accepted values are _organization_ and _project_ (default).
+- **subject-types**: A comma-separated list of user subject subtypes to reduce the retrieved results. You can give initial part of descriptor (before the dot) as a filter, for example, vssgp,aadgp.
 
 ### Example
 
@@ -173,7 +173,7 @@ az devops security group show --id
 
 ### Parameters
 
-* **id**: Required. Security group descriptor.
+- **id**: Required. Security group descriptor.
 
 ### Example
 
@@ -203,9 +203,9 @@ az devops security group update --id
 
 ### Parameters
 
-* **id**: Required. Security group descriptor.
-* **description**: Optional. New description for the security group. Required if **name** is missing.
-* **name**: Optional. New name for the security group. Required if **description** is missing.
+- **id**: Required. Security group descriptor.
+- **description**: Optional. New description for the security group. Required if **name** is missing.
+- **name**: Optional. New name for the security group. Required if **description** is missing.
 
 ### Example
 
@@ -252,8 +252,8 @@ az devops security group membership add --group-id
 
 ### Parameters
 
-* **group-id**: Required. Descriptor of the group to which member is to be added.
-* **member-id**: Required. Descriptor of the group or email address of the user to be added.
+- **group-id**: Required. Descriptor of the group to which member is to be added.
+- **member-id**: Required. Descriptor of the group or email address of the user to be added.
 
 ### Example
 
@@ -283,8 +283,8 @@ az devops security group membership list --id
 
 ### Parameters
 
-* **id**: Required. Security group descriptor or user email address whose membership details are required.
-* **relationship**: Optional. Get **member of** or **members** information for the group. The accepted values are _memberof_ and _members_.
+- **id**: Required. Security group descriptor or user email address whose membership details are required.
+- **relationship**: Optional. Get **member of** or **members** information for the group. The accepted values are _memberof_ and _members_.
 
 ### Example
 
@@ -314,9 +314,9 @@ az devops security group membership remove --group-id
 
 ### Parameters
 
-* **group-id**: Required. Descriptor of the group from which member needs to be removed.
-* **member-id**: Required. Descriptor of the group or email address of the user to be removed.
-* **yes**: Optional. Don't prompt for confirmation.
+- **group-id**: Required. Descriptor of the group from which member needs to be removed.
+- **member-id**: Required. Descriptor of the group or email address of the user to be removed.
+- **yes**: Optional. Don't prompt for confirmation.
 
 ### Example
 
@@ -330,7 +330,7 @@ az devops security group membership remove --group-id vssgp.Uy0xLTktMTU1MTM3NDI0
 
 ## Related articles
 
-* [Manage tokens and namespaces](manage-tokens-namespaces.md)
-* [Security REST API](/rest/api/azure/devops/security/)
-* [TFSSecurity command](/azure/devops/server/command-line/tfssecurity-cmd)
-* [Security glossary](security-glossary.md)
+- [Manage tokens and namespaces](manage-tokens-namespaces.md)
+- [Security REST API](/rest/api/azure/devops/security/)
+- [TFSSecurity command](/azure/devops/server/command-line/tfssecurity-cmd)
+- [Security glossary](security-glossary.md)

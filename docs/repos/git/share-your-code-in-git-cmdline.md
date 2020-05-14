@@ -21,7 +21,7 @@ The instructions below use the default bash shell used on Linux and macOS, but t
 
 ## Prerequisites
 
-* An organization in Azure DevOps. If you don't have an organization, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
+- An organization in Azure DevOps. If you don't have an organization, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
 
 ## Download and install Azure CLI and add Azure DevOps extension
 
@@ -42,9 +42,9 @@ The instructions below use the default bash shell used on Linux and macOS, but t
 
 ## Download and install Git
 
-* [Windows](#windows)
-* [macOS](#macos)
-* [Linux and Unix](#linux-and-unix)
+- [Windows](#windows)
+- [macOS](#macos)
+- [Linux and Unix](#linux-and-unix)
 
 ### Windows
 

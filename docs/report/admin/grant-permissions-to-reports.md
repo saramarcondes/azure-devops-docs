@@ -86,8 +86,8 @@ If members need to create or customize reports, add their accounts to the **TfsW
 
 ## Try this next
 
-* [Review team activities to support useful reports](review-team-activities-for-useful-reports.md).
+- [Review team activities to support useful reports](review-team-activities-for-useful-reports.md).
 
 ## Related notes
 
-* [Create Excel reports from a work item query](../create-status-and-trend-excel-reports.md)
+- [Create Excel reports from a work item query](../create-status-and-trend-excel-reports.md)

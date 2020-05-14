@@ -36,17 +36,17 @@ To ensure your organization works with any existing firewall or IP restrictions,
 
 **IPv4 ranges**
 
-* `13.107.6.0/24`
-* `13.107.9.0/24`
-* `13.107.42.0/24`
-* `13.107.43.0/24`
+- `13.107.6.0/24`
+- `13.107.9.0/24`
+- `13.107.42.0/24`
+- `13.107.43.0/24`
 
 **IPv6 ranges**
 
-* `2620:1ec:4::/48`
-* `2620:1ec:a92::/48`
-* `2620:1ec:21::/48`
-* `2620:1ec:22::/48`
+- `2620:1ec:4::/48`
+- `2620:1ec:a92::/48`
+- `2620:1ec:21::/48`
+- `2620:1ec:22::/48`
 
 > [!NOTE]
 > This procedure enables the agent to bypass a web proxy. Your build pipeline and scripts must still handle bypassing your web proxy for each task and tool you run in your build.

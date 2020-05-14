@@ -21,8 +21,8 @@ ms.date: 06/17/2019
 
 In Azure DevOps, you have the following options for maintaining wiki content.
 
-* [Provision a wiki for your team project](wiki-create-repo.md). This option supports only one wiki for the team project.
-* [Publish Markdown files defined in a Git repository to a wiki](publish-repo-to-wiki.md). With this option, you can maintain several versioned wikis to support your content needs, although it's available only if Azure Repos is enabled.
+- [Provision a wiki for your team project](wiki-create-repo.md). This option supports only one wiki for the team project.
+- [Publish Markdown files defined in a Git repository to a wiki](publish-repo-to-wiki.md). With this option, you can maintain several versioned wikis to support your content needs, although it's available only if Azure Repos is enabled.
 
 While both options maintain the wiki content in Git repositories, the way you add, update, and manage the wiki content differs.
 
@@ -48,15 +48,15 @@ For example, the **Edit in Repos** option for the publish code as wiki takes you
 
 _Provisioned wikis_ and _publish as code wikis_ support the following features:
 
-* [Markdown format](markdown-guidance.md)
-* [HTML tags](wiki-markdown-guidance.md#html-tag-support-in-wiki-pages)
-* [Insert and resize images](markdown-guidance.md#images)
-* [Mathematical notation and characters](markdown-guidance.md#mathematical-notation)
-* [Link to work items using #](wiki-markdown-guidance.md#link-to-work-items-from-a-wiki-page)
-* [Attach files](markdown-guidance.md#attach)
-* [Filter Wiki contents](filter-print-wiki.md)
-* [Wiki search](search-wiki.md)
-* [Print a Wiki page](filter-print-wiki.md)
+- [Markdown format](markdown-guidance.md)
+- [HTML tags](wiki-markdown-guidance.md#html-tag-support-in-wiki-pages)
+- [Insert and resize images](markdown-guidance.md#images)
+- [Mathematical notation and characters](markdown-guidance.md#mathematical-notation)
+- [Link to work items using #](wiki-markdown-guidance.md#link-to-work-items-from-a-wiki-page)
+- [Attach files](markdown-guidance.md#attach)
+- [Filter Wiki contents](filter-print-wiki.md)
+- [Wiki search](search-wiki.md)
+- [Print a Wiki page](filter-print-wiki.md)
 
 The following table summarizes those operations or features that may differ, depending on the wiki type.
 
@@ -101,8 +101,8 @@ From the **Wiki**, you can view the revisions of any wiki page by choosing **Rev
 
 However, the revert process differs depending on the wiki page type.
 
-* For a _provisioned wiki_ page, select **Revert**, as described in [Revert a commit to a provisioned wiki page](wiki-view-history.md#revert-provision)
-* For a _publish as code wiki_ page, work from a local branch and submit a pull request to update the branch you're working from.
+- For a _provisioned wiki_ page, select **Revert**, as described in [Revert a commit to a provisioned wiki page](wiki-view-history.md#revert-provision)
+- For a _publish as code wiki_ page, work from a local branch and submit a pull request to update the branch you're working from.
 
 <a id="versioning"></a>
 
@@ -138,7 +138,7 @@ You can work offline or in a local branch to update content for a _provisioned w
 
 ## Related articles
 
-* [Create a wiki for your team project](./wiki-create-repo.md)
-* [Wiki Git repository files and file structure](wiki-file-structure.md)
-* [Publish a Git repository to a wiki](publish-repo-to-wiki.md)
-* [Get Started with Git](../../repos/git/gitquickstart.md)
+- [Create a wiki for your team project](./wiki-create-repo.md)
+- [Wiki Git repository files and file structure](wiki-file-structure.md)
+- [Publish a Git repository to a wiki](publish-repo-to-wiki.md)
+- [Get Started with Git](../../repos/git/gitquickstart.md)

@@ -53,8 +53,7 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
 
     You can either choose **Get Data** button in the splash screen that opens up when you launch _Power BI._
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI desktop splash screen, Get data button](media/data-connector/get-data-splash-screen.png)
+    > [!div class="mx-imgBorder"] > ![Power BI desktop splash screen, Get data button](media/data-connector/get-data-splash-screen.png)
 
     Or, you can find a similar button in the ribbon in the **Home** section.
 
@@ -66,8 +65,8 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
 
         	![Azure DevOps dialog](media/create-report/specify-account.png)
 
-    * For _Organization_, enter the organization name in Azure DevOps (not the full URL). For example, use `fabrikam-fiber-inc` if the URL of your organization is "`https://dev.azure.com/fabrikam-fiber-inc./`".
-    * For _Team project_, enter just the project name (e.g. use `Fabrikam-Fiber` if the URL of your project is "`https://dev.azure.com/fabrikam-fiber-inc./Fabrikam-Fiber`").
+    - For _Organization_, enter the organization name in Azure DevOps (not the full URL). For example, use `fabrikam-fiber-inc` if the URL of your organization is "`https://dev.azure.com/fabrikam-fiber-inc./`".
+    - For _Team project_, enter just the project name (e.g. use `Fabrikam-Fiber` if the URL of your project is "`https://dev.azure.com/fabrikam-fiber-inc./Fabrikam-Fiber`").
 
       > [!IMPORTANT]  
       > Don't confuse the team name with the project name, a common mistake.
@@ -77,9 +76,9 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
 
 Choose between the following authentication options:
 
-* Select _Organizational account_ if your organization is using Azure Active Directory to manage users.
-* Select _Personal Access Token_ if you want to use a personal access token.
-* Select _Basic_ if you are connecting to a personal organization. This option also supports alternate credentials, but it is not recommended as unlike personal access tokens, this login doesn't expire and can't be scoped to limit access to your data.
+- Select _Organizational account_ if your organization is using Azure Active Directory to manage users.
+- Select _Personal Access Token_ if you want to use a personal access token.
+- Select _Basic_ if you are connecting to a personal organization. This option also supports alternate credentials, but it is not recommended as unlike personal access tokens, this login doesn't expire and can't be scoped to limit access to your data.
 
   > [!div class="mx-imgBorder"]  
   > ![Sign in dialog](media/powerbi-signin-organizational.png)
@@ -99,8 +98,7 @@ Choose between the following authentication options:
 
     You can either choose **Get Data** button in the splash screen that opens up when you launch _Power BI._
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI desktop splash screen, Get data button](media/data-connector/get-data-splash-screen.png)
+    > [!div class="mx-imgBorder"] > ![Power BI desktop splash screen, Get data button](media/data-connector/get-data-splash-screen.png)
 
     Or, you can find a similar button in the ribbon in the **Home** section.
 
@@ -114,8 +112,8 @@ Choose between the following authentication options:
 
         	![Get data dialog](media/create-report/specify-collection-project.png)
 
-    * For _Collection URL_, enter the URL where your Azure DevOps Server instance is hosted. For example, an example URL is "`http://fabrikam-server/AzureDevOpsServer/fabrikam-collection`".
-    * For _Team project_, enter just the project name (e.g. use `Fabrikam-Fiber` if the URL of your Azure DevOps Server instance is "`http://fabrikam-server/AzureDevOpsServer/fabrikam-collection/Fabrikam-Fiber`").
+    - For _Collection URL_, enter the URL where your Azure DevOps Server instance is hosted. For example, an example URL is "`http://fabrikam-server/AzureDevOpsServer/fabrikam-collection`".
+    - For _Team project_, enter just the project name (e.g. use `Fabrikam-Fiber` if the URL of your Azure DevOps Server instance is "`http://fabrikam-server/AzureDevOpsServer/fabrikam-collection/Fabrikam-Fiber`").
 
       > [!IMPORTANT]  
       > Don't confuse the team name with the project name, a common mistake.
@@ -125,8 +123,8 @@ Choose between the following authentication options:
 
         	Choose between these two authentication options:
 
-    * Select _Windows_ if you want to sign in using Windows.
-    * Select _Personal Access Token_ if you want to use a personal access token.
+    - Select _Windows_ if you want to sign in using Windows.
+    - Select _Personal Access Token_ if you want to use a personal access token.
 
       > [!div class="mx-imgBorder"] > ![Sign in dialog](media/powerbi-windows-login-onprem.png)
 
@@ -208,8 +206,7 @@ This error typically occurs when your project has a large number of work items. 
 
 **A:** You can encounter this error if you try to access a project to which you don't have permissions. To get access, see [Set permissions to access Analytics and Analytics views](analytics-security.md).
 
-> [!div class="mx-imgBorder"]
-> ![The user was not authorized.](media/AccessDeniedError.png)
+> [!div class="mx-imgBorder"] > ![The user was not authorized.](media/AccessDeniedError.png)
 
 <a id="AnalyticsAccessCheckException"></a>
 
@@ -240,9 +237,9 @@ If the URL you use on a daily basis is "`https://dev.azure.com/fabrikam-fiber-in
 
 ## Related articles
 
-* [Permissions required to access Analytics](analytics-security.md)
-* [Power BI integration overview](overview.md)
-* [Analytics security](analytics-security.md)
-* [Authenticate your identity with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
-* [Dataset design for the Power BI Data Connector](data-connector-dataset.md)
-* [Data Connector - Example reports](data-connector-examples.md)
+- [Permissions required to access Analytics](analytics-security.md)
+- [Power BI integration overview](overview.md)
+- [Analytics security](analytics-security.md)
+- [Authenticate your identity with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
+- [Dataset design for the Power BI Data Connector](data-connector-dataset.md)
+- [Data Connector - Example reports](data-connector-examples.md)

@@ -18,9 +18,9 @@ In today's fast-paced, feature-driven markets, it's important to continuously de
 
 Are you planning to build and deploy Azure DevOps extensions to production? You probably have a few questions, such as:
 
-* How do you embrace DevOps to deliver changes and value faster?
-* How do you mitigate the risk of deploying to production?
-* How do you automate the build and deployment?
+- How do you embrace DevOps to deliver changes and value faster?
+- How do you mitigate the risk of deploying to production?
+- How do you automate the build and deployment?
 
 This topic aims to answer these questions and share learnings using rings with Azure DevOps extensions. For an insight into the Microsoft guidelines, read [Configuring your release pipelines for safe deployments](https://devblogs.microsoft.com/devops/configuring-your-release-pipelines-for-safe-deployments/).
 
@@ -32,18 +32,18 @@ Deployment rings were first discussed in [Jez Humble's book](https://www.continu
 
 Before you convert your deployment infrastructure to a ringed deployment model, it's important to consider:
 
-* Who are your primary types of users? For example, early adopters and users.
-* What's your application topology?
-* What's the value of embracing ringed deployment model?
-* What's the cost to convert your current infrastructure to a ringed deployment model?
+- Who are your primary types of users? For example, early adopters and users.
+- What's your application topology?
+- What's the value of embracing ringed deployment model?
+- What's the cost to convert your current infrastructure to a ringed deployment model?
 
 ## User types
 
 In the shown example, users fall into three general buckets in production:
 
-* **Canaries** who voluntarily test bleeding edge features as soon as they are available.
-* **Early adopters** who voluntarily preview releases, considered more refined than the canary bits.
-* **Users** who consume the products, after passing through canaries and early adopters.
+- **Canaries** who voluntarily test bleeding edge features as soon as they are available.
+- **Early adopters** who voluntarily preview releases, considered more refined than the canary bits.
+- **Users** who consume the products, after passing through canaries and early adopters.
 
 ![User Rings](./media/phase-rollout-with-rings/phase-rollout-with-rings-rings.png)
 
@@ -62,10 +62,10 @@ Next you need to map the topology of your application to the ringed deployment m
 
 At the application level, the composition of Azure DevOps extensions is innocuous, easy to digest, scale, and deploy independently. Each extension:
 
-* Has one of more web and script files
-* Interfaces with Core client
-* Interfaces with REST client and REST APIs
-* Persists state in cache or resilient storage
+- Has one of more web and script files
+- Interfaces with Core client
+- Interfaces with REST client and REST APIs
+- Persists state in cache or resilient storage
 
 ![Progressive exposure of the application layer](./media/phase-rollout-with-rings/phase-rollout-with-rings-app-layer.png)
 
@@ -75,9 +75,9 @@ At the infrastructure level, the extensions are published to the [Visual Studio 
 
 The extension topology is perfectly suited for the ring deployment model and to publish the extension to each deployment ring:
 
-* A **private** development version for the canary ring
-* A **private** preview version for the early adopter ring
-* A **public** production version for the Users ring
+- A **private** development version for the canary ring
+- A **private** preview version for the early adopter ring
+- A **public** production version for the Users ring
 
 > [!TIP]
 > By publishing your extension as private, you're effectively limiting and controlling their exposure for users you explicitly invite.
@@ -139,9 +139,9 @@ Here's a summary of how the ALM | DevOps Ranger engineering process evolved with
 
 Key takeaways:
 
-* Consistent and reliable automation
-* Reduced response times
-* Canaries experience the pain, not the users
+- Consistent and reliable automation
+- Reduced response times
+- Canaries experience the pain, not the users
 
 ## Is there a dependency on feature flags?
 
@@ -179,9 +179,9 @@ Refer to [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) to s
 
 ## Reference information
 
-* [CI/CD pipeline examples](https://devblogs.microsoft.com/visualstudio/tag/cicd/)
-* [Configuring your release pipelines for safe deployments](https://devblogs.microsoft.com/devops/configuring-your-release-pipelines-for-safe-deployments/)
-* [DevOps @ Microsoft](https://aka.ms/devops)
+- [CI/CD pipeline examples](https://devblogs.microsoft.com/visualstudio/tag/cicd/)
+- [Configuring your release pipelines for safe deployments](https://devblogs.microsoft.com/devops/configuring-your-release-pipelines-for-safe-deployments/)
+- [DevOps @ Microsoft](https://aka.ms/devops)
 
 > Authors: Josh Garverick, Willy Schaub | Find the origin of this article and connect with the ALM | DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
 

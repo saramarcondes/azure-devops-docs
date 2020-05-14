@@ -13,9 +13,9 @@ ms.technology: devops-cicd-tasks
 
 A typical pattern for using this task is:
 
-* Build something
-* Copy build outputs to a staging directory
-* Publish staged artifacts
+- Build something
+- Copy build outputs to a staging directory
+- Publish staged artifacts
 
 For example:
 

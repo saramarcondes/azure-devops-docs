@@ -49,4 +49,4 @@ By using the Date dimension, you can create trend reports that summarize changes
 
 ## Related notes
 
-* [Perspectives and measure groups provided in the Analysis Services cube](perspective-measure-groups-cube.md)
+- [Perspectives and measure groups provided in the Analysis Services cube](perspective-measure-groups-cube.md)

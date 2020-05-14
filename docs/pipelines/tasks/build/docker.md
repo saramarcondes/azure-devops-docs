@@ -19,18 +19,18 @@ Use this task to build and push Docker images to any container registry using Do
 
 Following are the key benefits of using Docker task as compared to directly using docker client binary in script -
 
-* **Integration with Docker registry service connection** - The task makes it easy to use a Docker registry service connection for connecting to any container registry. Once logged in, the user can author follow up tasks to execute any tasks/scripts by leveraging the login already done by the Docker task. For example, you can use the Docker task to sign in to any Azure Container Registry and then use a subsequent task/script to build and push an image to this registry.
+- **Integration with Docker registry service connection** - The task makes it easy to use a Docker registry service connection for connecting to any container registry. Once logged in, the user can author follow up tasks to execute any tasks/scripts by leveraging the login already done by the Docker task. For example, you can use the Docker task to sign in to any Azure Container Registry and then use a subsequent task/script to build and push an image to this registry.
 
-* **Metadata added as labels** - The task adds traceability-related metadata to the image in the form of the following labels -
-  * com.azure.dev.image.build.repository.uri
-  * com.azure.dev.image.build.repository.name
-  * com.azure.dev.image.build.sourcebranchname
-  * com.azure.dev.image.build.sourceversion
-  * com.azure.dev.image.system.teamfoundationcollectionuri
-  * com.azure.dev.image.system.teamproject
-  * com.azure.dev.image.build.definitionname
-  * com.azure.dev.image.build.buildnumber
-  * com.azure.dev.image.build.requestedfor
+- **Metadata added as labels** - The task adds traceability-related metadata to the image in the form of the following labels -
+  - com.azure.dev.image.build.repository.uri
+  - com.azure.dev.image.build.repository.name
+  - com.azure.dev.image.build.sourcebranchname
+  - com.azure.dev.image.build.sourceversion
+  - com.azure.dev.image.system.teamfoundationcollectionuri
+  - com.azure.dev.image.system.teamproject
+  - com.azure.dev.image.build.definitionname
+  - com.azure.dev.image.build.buildnumber
+  - com.azure.dev.image.build.requestedfor
 
 ## Task Inputs
 

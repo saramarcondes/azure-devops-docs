@@ -98,11 +98,11 @@ tf diff[erence] /configure
 
 You can use the **difference** command to compare and if it is possible, display differences between:
 
-* Two different files or two versions of the same file.
+- Two different files or two versions of the same file.
 
-* One or more of the items in a folder.
+- One or more of the items in a folder.
 
-* One, some, or all the items in a shelveset on the Team Foundation Server.
+- One, some, or all the items in a shelveset on the Team Foundation Server.
 
 You can use the **difference** command to compare both versioned and non-versioned files.
 
@@ -112,11 +112,11 @@ If you specify two file names, the two files are compared. Instead of using the 
 
 If you pass only one _itemspec_ to the difference command:
 
-* If do not provide a versionspec, your current workspace version of the item is compared to the base workspace version, by default. For example, **tf difference header.h** compares the current version of header.h to the version upon which header.h is based.
+- If do not provide a versionspec, your current workspace version of the item is compared to the base workspace version, by default. For example, **tf difference header.h** compares the current version of header.h to the version upon which header.h is based.
 
-* If you include a versionspec in your itemspec such as , **tf difference header.h;LBeta1**, Team Foundation compares that version to your current workspace version on disk.
+- If you include a versionspec in your itemspec such as , **tf difference header.h;LBeta1**, Team Foundation compares that version to your current workspace version on disk.
 
-* If you specify a range of versions such as **/version:C1~C4**, the versions of the file at the two end points of the range are compared.
+- If you specify a range of versions such as **/version:C1~C4**, the versions of the file at the two end points of the range are compared.
 
 For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
 
@@ -124,43 +124,43 @@ For more information on how to find the **tf** command-line utility, see [Tf Com
 
 The _format_ parameter, used with the **/format** option, specifies many different output formats. The available output types are
 
-* **Visual**
+- **Visual**
 
   **Visual** format type opens an external difference application. By default diffmerge.exe is launched.
 
-* **Brief**
+- **Brief**
 
   Brief format prints whether the files being compared differ.
 
-* **Context**
+- **Context**
 
   **Context** format provides lines of context for the differences in the files. This format is derived from the UNIX based **diff -c** output format.
 
-* **RCS**
+- **RCS**
 
   **RCS** format is similar to **/format:unix**, except context lines are not supplied.
 
   No special handing for a missing end of line marker at the end of the file is provided.
 
-* **SS**
+- **SS**
 
   **SS** is default difference output format for Visual SourceSafe. For more information, see "Diff (Command Line)" at the Microsoft Web site (<https://go.microsoft.com/fwlink/?LinkId=99139>).
 
-* **SS_SideBySide**
+- **SS_SideBySide**
 
   **SS_SideBySide** is the default side-by-side output format for Visual SourceSafe.
 
-* **SS_Unix**
+- **SS_Unix**
 
   SS_Unix is similar to the /format:unix output format, but /format:ss_unix includes context lines and /format:unix does not.
 
-* **Unified**
+- **Unified**
 
   **Unified** format is derived from the UNIX based **diff -u** output format. **/format:context** repeats identical context lines between the difference strings although **/format:unified** does not.
 
   **Unified** format produces a new unified difference string (@@ ... @@) line only when the distance to the next difference string is larger than the number of context lines.
 
-* **Unix**
+- **Unix**
 
   This output type is derived from the UNIX based **diff** command output format.
 

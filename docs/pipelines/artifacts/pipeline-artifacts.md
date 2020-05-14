@@ -45,8 +45,8 @@ steps:
     artifactName: WebApp
 ```
 
-* **targetPath**: the path to the folder or file you want to publish.
-* **artifactName**: the name of the artifact that you want to create.
+- **targetPath**: the path to the folder or file you want to publish.
+- **artifactName**: the name of the artifact that you want to create.
 
 > [!TIP]
 > For more information on `PublishPipelineArtifact@1`, see [Publish Pipeline Artifacts task](../tasks/utility/publish-pipeline-artifact.md).
@@ -55,13 +55,13 @@ steps:
 
 ![icon](../tasks/utility/media/publish-pipeline-artifact.png) **Publish Pipeline Artifact**
 
-* Artifact name:
+- Artifact name:
 
   ```
   WebApp
   ```
 
-* File or directory path:
+- File or directory path:
 
   ```
   $(System.DefaultWorkingDirectory)/bin/WebApp
@@ -77,11 +77,11 @@ az pipelines runs artifact upload --artifact-name 'WebApp' --path $(System.Defau
 
 Keep in mind:
 
-* Although artifact name is optional, it is a good practice to specify a name that accurately reflects the contents of the artifact.
+- Although artifact name is optional, it is a good practice to specify a name that accurately reflects the contents of the artifact.
 
-* The path of the file or folder to publish is required. It can be absolute or relative to `$(System.DefaultWorkingDirectory)`.
+- The path of the file or folder to publish is required. It can be absolute or relative to `$(System.DefaultWorkingDirectory)`.
 
-* If you plan to consume the artifact from a job running on a different operating system or file system, you must ensure all file paths in the artifact are valid for the target environment. For example, a file name containing a `\` or `*` character will typically fail to download on Windows.
+- If you plan to consume the artifact from a job running on a different operating system or file system, you must ensure all file paths in the artifact are valid for the target environment. For example, a file name containing a `\` or `*` character will typically fail to download on Windows.
 
 ### Limiting which files are included
 
@@ -128,13 +128,13 @@ steps:
     artifact: WebApp
 ```
 
-* **artifact**: The name of the artifact to download. If left empty, all artifacts associated to the pipeline run will be downloaded.
+- **artifact**: The name of the artifact to download. If left empty, all artifacts associated to the pipeline run will be downloaded.
 
 # [Classic](#tab/classic)
 
 ![icon](../tasks/utility/media/download-pipeline-artifact.png) **Download Pipeline Artifact**
 
-* Artifact name:
+- Artifact name:
 
   ```
   WebApp
@@ -150,11 +150,11 @@ az pipelines runs artifact download --artifact-name 'WebApp' --path $(System.Def
 
 Keep in mind:
 
-* The **Download Pipeline Artifact** task can download both build artifacts (published with the Publish Build Artifacts task) and pipeline artifacts.
+- The **Download Pipeline Artifact** task can download both build artifacts (published with the Publish Build Artifacts task) and pipeline artifacts.
 
-* By default, files are downloaded to `$(Pipeline.Workspace)/{artifact}`, where `artifact` is the name of the artifact. The folder structure of the artifact is always preserved.
+- By default, files are downloaded to `$(Pipeline.Workspace)/{artifact}`, where `artifact` is the name of the artifact. The folder structure of the artifact is always preserved.
 
-* File matching patterns can be used to limit which files from the artifact(s) are downloaded. See [artifact selection](#artifact-selection) for more details on how pattern matching works.
+- File matching patterns can be used to limit which files from the artifact(s) are downloaded. See [artifact selection](#artifact-selection) for more details on how pattern matching works.
 
 For advanced scenarios, including downloading artifacts from other pipelines, see the [Download Pipeline Artifact](../tasks/utility/download-pipeline-artifact.md) task.
 
@@ -196,9 +196,9 @@ steps:
     path: $(Build.SourcesDirectory)/bin
 ```
 
-* **artifact**: The name of the artifact to download. If left empty, all artifacts associated to the pipeline run will be downloaded.
-* **patterns**: One or more file matching patterns that limit which files get downloaded.
-* **path**: The destination directory. It accepts both relative and absolute path.
+- **artifact**: The name of the artifact to download. If left empty, all artifacts associated to the pipeline run will be downloaded.
+- **patterns**: One or more file matching patterns that limit which files get downloaded.
+- **path**: The destination directory. It accepts both relative and absolute path.
 
 In this example, all `*.js` files in the `WebApp` artifact are downloaded to `$(Build.SourcesDirectory)/bin`.
 
@@ -206,19 +206,19 @@ In this example, all `*.js` files in the `WebApp` artifact are downloaded to `$(
 
 ![icon](../tasks/utility/media/download-pipeline-artifact.png) **Download Pipeline Artifact**
 
-* Artifact name:
+- Artifact name:
 
   ```
   artifactName
   ```
 
-* Destination directory:
+- Destination directory:
 
   ```
   $(Build.SourcesDirectory)/bin
   ```
 
-* Matching patterns:
+- Matching patterns:
 
   ```
   '**/*.js'
@@ -259,13 +259,13 @@ steps:
     patterns: '**/*.zip'
 ```
 
-* **patterns**: One or more file matching patterns that limit which files get downloaded.
+- **patterns**: One or more file matching patterns that limit which files get downloaded.
 
 # [Classic](#tab/classic)
 
 ![icon](../tasks/utility/media/download-pipeline-artifact.png) **Download Pipeline Artifact**
 
-* Matching patterns:
+- Matching patterns:
 
   ```
   '**/*.zip'

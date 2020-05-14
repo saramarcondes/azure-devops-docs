@@ -59,11 +59,11 @@ As the following illustration shows, you can check in changes to a work branch p
 
 You should create branches in the following situations:
 
-* When you must release code on a different schedule/cycle than the existing branches.
+- When you must release code on a different schedule/cycle than the existing branches.
 
-* When your code requires a different branch policy. If you create a new branch that has the new policy, you can add strategic value to your project.
+- When your code requires a different branch policy. If you create a new branch that has the new policy, you can add strategic value to your project.
 
-* When functionality is released to a customer and your team plans to make changes that do not affect the planned release cycle.
+- When functionality is released to a customer and your team plans to make changes that do not affect the planned release cycle.
 
 You should not create a branching for each user story because it creates a high integration cost. Although TFVC makes branching easy, the overhead of managing branches can become significant if you have many branches.
 

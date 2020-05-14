@@ -42,8 +42,8 @@ To run any query, expand a folder and choose the title of the query. The view op
 
 1.  Choose **My Queries** as needed.
 
-    * To view all work items assigned to you, choose **Assigned to me**. This query uses the <strong>@Me</strong> macro to list all work items assigned to you.
-    * To view all work items you are following, choose **Followed work items**. This query uses the <strong>@Follows</strong> macro (ID in @Follows) to list all work items you've elected to follow. To learn more, see [Follow a work item or pull request](../work-items/follow-work-items.md).
+    - To view all work items assigned to you, choose **Assigned to me**. This query uses the <strong>@Me</strong> macro to list all work items assigned to you.
+    - To view all work items you are following, choose **Followed work items**. This query uses the <strong>@Follows</strong> macro (ID in @Follows) to list all work items you've elected to follow. To learn more, see [Follow a work item or pull request](../work-items/follow-work-items.md).
 
 1.  Choose **Shared Queries** to expand the folder and access queries saved as shared queries.
 
@@ -69,22 +69,22 @@ Open **Queries>All**. Under the **My Queries** section are two fully customizabl
 
 ### Where can I find recent work item activity?
 
-* Open **Boards>Work Items** and select the **Recently updated** view. See [View and add work items](../work-items/view-add-work-items.md).
+- Open **Boards>Work Items** and select the **Recently updated** view. See [View and add work items](../work-items/view-add-work-items.md).
 
-* You can also use the macros &mdash; <strong>@Me</strong>, <strong>@Follows</strong>, **MyRecentActivity**, <strong>@RecentMentions</strong>, <strong>@RecentProjectActivity</strong> &mdash; to create custom queries that can filter for work items assigned to you, that you are following, and so on. To learn more about these macros, see [Query macros and variables](query-operators-variables.md#macros).
+- You can also use the macros &mdash; <strong>@Me</strong>, <strong>@Follows</strong>, **MyRecentActivity**, <strong>@RecentMentions</strong>, <strong>@RecentProjectActivity</strong> &mdash; to create custom queries that can filter for work items assigned to you, that you are following, and so on. To learn more about these macros, see [Query macros and variables](query-operators-variables.md#macros).
 
 <a id="favorite" />
 
 ### How do I quickly navigate to queries I view frequently?
 
-* Favorite those queries and other artifacts that you view frequently. Choose the ![ ](../../media/icons/icon-favorite-star.png) star icon to favorite a query.
-* Favorited queries (![ ](../../media/icons/icon-favorited.png) favorited icon) are listed in the **Queries>Favorites** page. Also, you can select one from the queries selector, as shown in the following image.
+- Favorite those queries and other artifacts that you view frequently. Choose the ![ ](../../media/icons/icon-favorite-star.png) star icon to favorite a query.
+- Favorited queries (![ ](../../media/icons/icon-favorited.png) favorited icon) are listed in the **Queries>Favorites** page. Also, you can select one from the queries selector, as shown in the following image.
 
-      	> [!div class="mx-imgBorder"]  
-      	> ![queries selector](media/example-queries/queries-selector.png)  
-      	Or, you can select from any of your favorited items by choosing the ![ ](../../media/icons/inbox.png) inbox icon and choose **Favorites**.  
+      	> [!div class="mx-imgBorder"]
+      	> ![queries selector](media/example-queries/queries-selector.png)
+      	Or, you can select from any of your favorited items by choosing the ![ ](../../media/icons/inbox.png) inbox icon and choose **Favorites**.
 
-      	![queries selector](media/example-queries/favorites-selector.png)  
+      	![queries selector](media/example-queries/favorites-selector.png)
 
 ### How do I quickly navigate to queries within the same query folder?
 
@@ -99,8 +99,8 @@ Yes. Simply open a query in a new browser tab to run several queries at the same
 
 ### How can I best use queries to monitor progress on a project or team?
 
-* [Define a chart for a query](../../report/dashboards/charts.md) and add it to a dashboard, or add the [Query Results widget](../../report/dashboards/widget-catalog.md#query-results-widget) to a dashboard. Each time you open the dashboard, the query will automatically run and refresh.
-* Periodically, [triage query results](triage-work-items.md) to review and update status.
+- [Define a chart for a query](../../report/dashboards/charts.md) and add it to a dashboard, or add the [Query Results widget](../../report/dashboards/widget-catalog.md#query-results-widget) to a dashboard. Each time you open the dashboard, the query will automatically run and refresh.
+- Periodically, [triage query results](triage-work-items.md) to review and update status.
 
 ::: moniker-end
 
@@ -120,11 +120,11 @@ az boards query [--id]
 
 #### Parameters
 
-* **id**: The ID of an existing query. Required unless --path or --wiql is specified.
-* **wiql**: The query in Work Item Query Language format. Ignored if --id or --path is specified.
-* **path**: The path of an existing query. Ignored if --id is specified.
-* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-* **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **id**: The ID of an existing query. Required unless --path or --wiql is specified.
+- **wiql**: The query in Work Item Query Language format. Ignored if --id or --path is specified.
+- **path**: The path of an existing query. Ignored if --id is specified.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
 
 #### Example
 
@@ -174,9 +174,9 @@ From either the **Favorites** or **All** page, choose the ![ ](../media/icons/ac
 
 For shared queries, you can also choose to perform one of these tasks:
 
-* **Add to team queries**: Select the team to add the query as a team favorite
-* **Security...**: to set permissions for the query. To learn more, see [Set query permissions](set-query-permissions.md).
-* **Add to dashboard**: Adds a Query tile widget to the team dashboard you select. To learn more, see [Add widgets to a dashboard](../../report/add-widget-to-dashboard.md).
+- **Add to team queries**: Select the team to add the query as a team favorite
+- **Security...**: to set permissions for the query. To learn more, see [Set query permissions](set-query-permissions.md).
+- **Add to dashboard**: Adds a Query tile widget to the team dashboard you select. To learn more, see [Add widgets to a dashboard](../../report/add-widget-to-dashboard.md).
 
 ::: moniker-end
 
@@ -232,7 +232,7 @@ Choose the ![ ](../media/icons/actions-icon.png) actions icon to open the menu a
 > [!div class="mx-imgBorder"]  
 > ![Web portal, Query Editor/Results, Open Actions menu, Choose Email query or Copy query URL](media/view-run-queries/email-query-new-exp.png)
 
-    You can only send the email to individual address for a project member that is recognized by the system. Adding a team group or security group to the to line isn't supported. If you add an email account that the system doesn't recognize, you receive a message that one or more recipients of your email don't have permissions to read the mailed work items.  
+    You can only send the email to individual address for a project member that is recognized by the system. Adding a team group or security group to the to line isn't supported. If you add an email account that the system doesn't recognize, you receive a message that one or more recipients of your email don't have permissions to read the mailed work items.
 
 > [!NOTE]  
 > To email a formatted list to people who aren't project members, you'll need to use the **Copy as HTML** option described in [Copy a list of work items](../backlogs/copy-clone-work-items.md#html).
@@ -255,8 +255,8 @@ Choose **Copy query URL**. To email query items, see [Copy a list of work items]
 
 ## Related articles
 
-* [Create and save managed queries with the query editor](using-queries.md)
-* [Change column options](../backlogs/set-column-options.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json)
-* [Set personal or team favorites](../../project/navigation/set-favorites.md)
-* [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
-* [About access levels](../../organizations/security/access-levels.md)
+- [Create and save managed queries with the query editor](using-queries.md)
+- [Change column options](../backlogs/set-column-options.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json)
+- [Set personal or team favorites](../../project/navigation/set-favorites.md)
+- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
+- [About access levels](../../organizations/security/access-levels.md)

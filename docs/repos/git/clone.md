@@ -28,8 +28,8 @@ In this tutorial you learn how to:
 
 > [!div class="checklist"]
 >
-> * Get the clone URL to your repo
-> * Clone a repo
+> - Get the clone URL to your repo
+> - Clone a repo
 
 ## Video tutorial
 
@@ -65,9 +65,9 @@ Copy this URL into the clipboard or store it in a place where you can find it ea
 
 #### [Visual Studio](#tab/visual-studio/)
 
-* [Clone from Azure Repos / Azure DevOps Server](#clone-from-azure-repos--azure-devops-server)
-* [Clone from another Git provider](#clone-from-another-git-provider)
-* [Open a solution in Visual Studio from a cloned repo](#open-a-solution-in-visual-studio-from-a-cloned-repo)
+- [Clone from Azure Repos / Azure DevOps Server](#clone-from-azure-repos--azure-devops-server)
+- [Clone from another Git provider](#clone-from-another-git-provider)
+- [Open a solution in Visual Studio from a cloned repo](#open-a-solution-in-visual-studio-from-a-cloned-repo)
 
 ### Clone from Azure Repos / Azure DevOps Server
 
@@ -112,7 +112,7 @@ In the **Home** view in Team Explorer, double-click your project solution file i
 
 ### Prerequisites
 
-* Ensure you've installed the [Git command line package](http://git-scm.com/download) for your platform. Be sure you have the right [Git Credential Manager](set-up-credential-managers.md) or have [configured SSH authentication](use-ssh-keys-to-authenticate.md) before you continue.
+- Ensure you've installed the [Git command line package](http://git-scm.com/download) for your platform. Be sure you have the right [Git Credential Manager](set-up-credential-managers.md) or have [configured SSH authentication](use-ssh-keys-to-authenticate.md) before you continue.
 
 You'll need a clone URL to tell Git what repository you want to clone to your computer. Use the URL you copied earlier during the [previous step](#clone_url) in this article.
 

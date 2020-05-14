@@ -83,7 +83,7 @@ Contact the TFS system administrator and request that they verify the server con
 
 ### Q: Where is the log file located?
 
-**A:** The log file is stored in $:\\Users\\_user name_\\AppData\\Local\\Temp and labeled vso_TeamProjectCreation\__yyyy_mm_dd_hh_mm_ss_.log.
+**A:** The log file is stored in \$:\\Users\\_user name_\\AppData\\Local\\Temp and labeled vso_TeamProjectCreation\__yyyy_mm_dd_hh_mm_ss_.log.
 
 The log shows each action taken by the wizard at the time of the failure and may include additional details about the error. You can review the log entries to find network or file related issues by searching for **Exception** or **Error**.
 
@@ -107,9 +107,9 @@ The log shows each action taken by the wizard at the time of the failure and may
 
 **A:** See one of these topics:
 
-* To add a SharePoint web application: [Add SharePoint products to your deployment](/azure/devops/server/admin/add-sharepoint-to-tfs).
+- To add a SharePoint web application: [Add SharePoint products to your deployment](/azure/devops/server/admin/add-sharepoint-to-tfs).
 
-* To configure a project portal to use an existing website or SharePoint site: [Configure a project portal](../../project/configure-or-add-a-project-portal.md).
+- To configure a project portal to use an existing website or SharePoint site: [Configure a project portal](../../project/configure-or-add-a-project-portal.md).
 
 ::: moniker-end
 

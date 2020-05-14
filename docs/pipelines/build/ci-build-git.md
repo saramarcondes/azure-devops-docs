@@ -20,17 +20,17 @@ You can build every commit and pull request to your Git repository using Azure P
 
 > [!div class="checklist"]
 >
-> * Set up a CI trigger for topic branches
-> * Automatically build a change in topic branch
-> * Exclude or include tasks for builds based on the branch being built
-> * Keep code quality high by building pull requests
-> * Use retention policies to clean up completed builds
+> - Set up a CI trigger for topic branches
+> - Automatically build a change in topic branch
+> - Exclude or include tasks for builds based on the branch being built
+> - Keep code quality high by building pull requests
+> - Use retention policies to clean up completed builds
 
 ## Prerequisites
 
-* You need a Git repository in Azure Pipelines, TFS, or GitHub with your app. If you do not have one, we recommend importing the [sample .NET Core app](https://github.com/MicrosoftDocs/pipelines-dotnet-core) into your Azure Pipelines or TFS project, or forking it into your GitHub repository. Note that you must use Azure Pipelines to build a GitHub repository. You cannot use TFS.
+- You need a Git repository in Azure Pipelines, TFS, or GitHub with your app. If you do not have one, we recommend importing the [sample .NET Core app](https://github.com/MicrosoftDocs/pipelines-dotnet-core) into your Azure Pipelines or TFS project, or forking it into your GitHub repository. Note that you must use Azure Pipelines to build a GitHub repository. You cannot use TFS.
 
-* You also need a working build for your repository.
+- You also need a working build for your repository.
 
 ## Set up a CI trigger for a topic branch
 
@@ -213,8 +213,8 @@ You learned how to:
 
 > [!div class="checklist"]
 >
-> * Set up a CI trigger for topic branches
-> * Automatically build a change in topic branch
-> * Exclude or include tasks for builds based on the branch being built
-> * Keep code quality high by building pull requests
-> * Use retention policies to clean up completed builds
+> - Set up a CI trigger for topic branches
+> - Automatically build a change in topic branch
+> - Exclude or include tasks for builds based on the branch being built
+> - Keep code quality high by building pull requests
+> - Use retention policies to clean up completed builds

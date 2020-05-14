@@ -20,7 +20,7 @@ Use this task to build with Apache Ant.
 
 The build agent must have the following capability:
 
-* Apache Ant
+- Apache Ant
 
 ::: moniker range="> tfs-2018"
 
