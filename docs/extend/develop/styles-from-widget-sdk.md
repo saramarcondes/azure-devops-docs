@@ -18,45 +18,46 @@ We recommend you use the basic styles provided via the Widget SDK. Using these s
 To use these styles, add the below line inside the `VSS.require` block in the javascript code for your widget.
 
 ```javascript
-	WidgetHelpers.IncludeWidgetStyles();
+WidgetHelpers.IncludeWidgetStyles();
 ```
 
-This pulls a stylesheet by the name sdk-widget.css and include it in the iframe for your widget. It includes styles for font-family, font-size, margin and paddings for your widget. 
+This pulls a stylesheet by the name sdk-widget.css and include it in the iframe for your widget. It includes styles for font-family, font-size, margin and paddings for your widget.
 It also includes styles for headings (h1, h2, h3 etc.), links, and more.
 
 Similarly, to use common styles in the widget configuration, include the line below inside the `VSS.require` block in the javascript code for your widget configuration.
 
 ```javascript
-	WidgetHelpers.IncludeWidgetConfigurationStyles();
+WidgetHelpers.IncludeWidgetConfigurationStyles();
 ```
-This pulls a stylesheet by the name sdk-widget-configuration.css and include it in the iframe for your widget configuration. 
-It includes styles for font-family, font-size and styles for common form elements like input, textarea, and select. 
+
+This pulls a stylesheet by the name sdk-widget-configuration.css and include it in the iframe for your widget configuration.
+It includes styles for font-family, font-size and styles for common form elements like input, textarea, and select.
 
 > [!NOTE]
-> For these styles to apply to your widget, you need to add a "widget" class on the HTML element that contains your widget. All styles from the sdk-widgets.css are scoped to this class. 
-Similarly, add a "widget-configuration" class on the HTML element that contains your widget configuration. All styles from the sdk-widget-configuration.css are scoped to this class.
+> For these styles to apply to your widget, you need to add a "widget" class on the HTML element that contains your widget. All styles from the sdk-widgets.css are scoped to this class.
+> Similarly, add a "widget-configuration" class on the HTML element that contains your widget configuration. All styles from the sdk-widget-configuration.css are scoped to this class.
 
-Download the [samples](https://github.com/Microsoft/vsts-extension-samples/tree/master/widgets) to get started or use the code snippets provided below. 
+Download the [samples](https://github.com/Microsoft/vsts-extension-samples/tree/master/widgets) to get started or use the code snippets provided below.
 
 ### Widget body, title and description
 
 By adding the class "widget" on the HTML element that contains your widget, you automatically get padding, font, and color for widget contents.
 
-You should always have a title for your widget. This helps the user identify your widget and its functionality at a glance. 
+You should always have a title for your widget. This helps the user identify your widget and its functionality at a glance.
 Use `<h2>` with class "title". This also helps people using screen readers to quickly identify the different widgets on the dashboard.
 
 ![Widget with title and description](../media-procedures/styles-from-widget-sdk/title-description.png)
 
-> **Design principle:** Widgets should have a title. Use the `<h2>` tag with the "title" class. 
+> **Design principle:** Widgets should have a title. Use the `<h2>` tag with the "title" class.
 
-Sometimes you might want to provide a small description about your widget or how to use it. 
+Sometimes you might want to provide a small description about your widget or how to use it.
 In such cases, use the class "description" on the HTML element you wish to use for widget description.
 
-> **Design principle:** Use the "description" class for the widget description. Descriptions should make sense even when read out of the widget context.  
+> **Design principle:** Use the "description" class for the widget description. Descriptions should make sense even when read out of the widget context.
 
 ```html
 	<div class="widget">
-	    <h2 class="title">Widget title</h2>	
+	    <h2 class="title">Widget title</h2>
 		<div class="description">The widget description is used to describe the widget. It makes sense even when read outside of the widget context.</div>
 		<p>Place widget content here.</p>
 	</div>
@@ -68,11 +69,11 @@ Subtitles are text that supplement the title. They may not always make sense whe
 
 ![Widget with title and subtitle](../media-procedures/styles-from-widget-sdk/title-subtitle.png)
 
-> **Design principle:** Use the "subtitle" class to provide more information about the widget. It may not make sense out of the widget context.  
+> **Design principle:** Use the "subtitle" class to provide more information about the widget. It may not make sense out of the widget context.
 
 Use the below structure and classes "title", "inner-title" and "subtitle" to get the right font, color and margins for a title and subtitle combination. The title gets a greater font-size than the subtitle. The subtitle has a subdued color relative to the title or rest of the widget.
 
-```html 
+```html
 	<div class="widget">
 	    <h2 class="title">
 			<div class="inner-title">Widget title</div>
@@ -83,7 +84,9 @@ Use the below structure and classes "title", "inner-title" and "subtitle" to get
 		</div>
 	</div>
 ```
+
 You can use any html element for the title and subtitle combination. Here are some tips:
+
 * When you need the subtitle to appear in the same line as the title, use an inline element like `<span>`
 * When you need the subtitle to appear in the next line from the title, use a block element like `<div>`
 
@@ -93,11 +96,11 @@ Some widgets have links which have an icon, text and subtext per link.
 
 ![Widget that has link with icon and text](../media-procedures/styles-from-widget-sdk/link-with-icon-text.png)
 
-> **Design principle:** Use links with an icon and subtext to make the purpose of the link obvious to the user. Ensure that the icon symbolizes the link's target. 
+> **Design principle:** Use links with an icon and subtext to make the purpose of the link obvious to the user. Ensure that the icon symbolizes the link's target.
 
 To get the same look and feel, use the below HTML structure and classes.
 
-```html 
+```html
 	<div class="widget">
 	    <h2 class="title">Widget title</h2>
 		<div class="content">
@@ -108,21 +111,21 @@ To get the same look and feel, use the below HTML structure and classes.
 					Primary link text
 					<div class="subtitle">Link subtext</div>
 				</div>
-			</a>		
+			</a>
 		</div>
 	</div>
 ```
 
 ### Display counters in a widget
 
-The primary purpose of some widgets is to display the count of some data. The Query Tile and the Code Tile widgets are examples in this category of widgets. 
+The primary purpose of some widgets is to display the count of some data. The Query Tile and the Code Tile widgets are examples in this category of widgets.
 To use the same styles as these widgets, add the "big-count" class on the HTML element holding the number to get the big font that is used by the Query Tile and the Code Tile widgets.
 
 ![Counter Widget](../media-procedures/styles-from-widget-sdk/counter.png)
 
 > **Design principle:** Use the "big-count" class to present the user with numbers in large font. It should not be used with non-numeric characters.
 
-```html 
+```html
 <div class="widget">
     <h2 class="title">Counter widget</h2>
 	<div class="big-count">223</div>
@@ -132,20 +135,19 @@ To use the same styles as these widgets, add the "big-count" class on the HTML e
 
 ### Make a widget a hyperlink
 
-Clicking anywhere on some widgets redirects the user to another page. To have your widget do the same, you can: 
+Clicking anywhere on some widgets redirects the user to another page. To have your widget do the same, you can:
 
-* Add an anchor tag as a child to the HTML element that acts as your widget container. 
+* Add an anchor tag as a child to the HTML element that acts as your widget container.
 * Put all your widget content inside the anchor tag.
-* Since your widget is hosted in an iframe, add the attribute "target" with value "_blank" to the anchor tag so that the link opens in a new tab/window instead of inside the same iframe.
-* In addition to the "widget" class, add the "clickable" class to the widget container. 
+* Since your widget is hosted in an iframe, add the attribute "target" with value "\_blank" to the anchor tag so that the link opens in a new tab/window instead of inside the same iframe.
+* In addition to the "widget" class, add the "clickable" class to the widget container.
 
-Your widget content gets the correct colors even though they are inside an anchor tag. Without the "clickable" class, the default blue color is forced on all text inside the widget. 
-The widget also gets a custom visual cue on focus to help users who use the keyboard to navigate the dashboard. 
+Your widget content gets the correct colors even though they are inside an anchor tag. Without the "clickable" class, the default blue color is forced on all text inside the widget.
+The widget also gets a custom visual cue on focus to help users who use the keyboard to navigate the dashboard.
 
 > **Design principle:** Use the "clickable" class and the `<a>` tag to make the entire widget clickable. This is ideal when your widget is a summary of data available on another page.
 
-
-```html 
+```html
 <div class="widget clickable">
     <a href="https://bing.com"  target="_blank">
 		<h2 class="title">Counter widget</h2>
@@ -159,17 +161,15 @@ The widget also gets a custom visual cue on focus to help users who use the keyb
 
 To use basic styles from the widget sdk for common form elements in widget configuration, follow these guidelines:
 
-| Form element        | Wrapping element | Guidelines |
-|---------------------|------------------|------------|
-| Simple text box     | `div` with class "single-line-text-input". | Use a `label` element to add text next to the text box. Use the `input` element to create a text box. Use the `placeholder` attribute to provide placeholder text. |
-| Checkbox            | `fieldset` with class "checkbox"           | Use a `label` element to add text next to each checkbox. Use a `legend` element to caption the group of checkboxes. Use the `for` attribute on each `label` element to help screen readers understand the form element. |
-| Radio button        | `fieldset` with class "radio"              | Use a `label` element to add text next to each radio button. Use a `legend` element to caption the group of radio buttons. Use the `for` attribute on each `label` element to help screen readers understand the form element. |
+| Form element        | Wrapping element                           | Guidelines                                                                                                                                                                                                                                                                                                                      |
+| ------------------- | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Simple text box     | `div` with class "single-line-text-input". | Use a `label` element to add text next to the text box. Use the `input` element to create a text box. Use the `placeholder` attribute to provide placeholder text.                                                                                                                                                              |
+| Checkbox            | `fieldset` with class "checkbox"           | Use a `label` element to add text next to each checkbox. Use a `legend` element to caption the group of checkboxes. Use the `for` attribute on each `label` element to help screen readers understand the form element.                                                                                                         |
+| Radio button        | `fieldset` with class "radio"              | Use a `label` element to add text next to each radio button. Use a `legend` element to caption the group of radio buttons. Use the `for` attribute on each `label` element to help screen readers understand the form element.                                                                                                  |
 | Dropdown            | `div` with class "dropdown"                | Use a `label` element to add text next to the dropdown. If you want a dropdown occupying half the width, add class "half" to the wrapping `div` element. If you want to use the standard arrow icon from the sdk instead of the one provided by the browser, wrap the `select` element with another `div` with class "wrapper". |
-| Multi-line text box | `div` with class "multi-line-text-input".  | Use `label` element to label the `textarea` element used as multi-line text box. |
+| Multi-line text box | `div` with class "multi-line-text-input".  | Use `label` element to label the `textarea` element used as multi-line text box.                                                                                                                                                                                                                                                |
 
-
-
-The example below uses each of the form elements listed in the table.  
+The example below uses each of the form elements listed in the table.
 
 ![Example for Widget Configuration](../media-procedures/styles-from-widget-sdk/widget-configuration.png)
 
@@ -184,10 +184,10 @@ The example below uses each of the form elements listed in the table.
     <div class="dropdown" id="query-path-dropdown">
         <label>Drop down</label>
         <div class="wrapper">
-            <select>						
+            <select>
 				<option value="Shared Queries/Feedback">Shared Queries/Feedback</option>
 				<option value="Shared Queries/My Bugs">Shared Queries/My Bugs</option>
-				<option value="Shared Queries/My Tasks">Shared Queries/My Tasks</option>							
+				<option value="Shared Queries/My Tasks">Shared Queries/My Tasks</option>
 			</select>
         </div>
 
@@ -219,7 +219,7 @@ The example below uses each of the form elements listed in the table.
 
 ### Display validation errors below a form element
 
-We recommend providing validation errors below the relevant form elements. 
+We recommend providing validation errors below the relevant form elements.
 In order to display these messages in a manner consistent with 1st party widgets, add the following code snippet under each form element for which you want to show the error message.
 
 ```html
@@ -236,14 +236,13 @@ There is a simple text box where the user needs to type in a string. You need to
 
 ![Example for Widget Configuration Error](../media-procedures/styles-from-widget-sdk/widget-configuration-error.png)
 
-
 The html for this would be:
 
 ```html
 <div class="widget-configuration">
 	<div class="single-line-text-input">
 		<label>Your name</label>
-		<input type="text">Type Here</input>		
+		<input type="text">Type Here</input>
 
 		<span class="validation-error">
 			<span class="icon-error-exclamation"></span>
@@ -257,16 +256,16 @@ And the javascript code behind this would be:
 
 ```javascript
 var $singleLineInput = $(".single-line-text-input input");
-var $errorSingleLineInput = $(".single-line-text-input input .validation-error-text");
+var $errorSingleLineInput = $(
+  ".single-line-text-input input .validation-error-text"
+);
 
-$singleLineInput.on("input", function(){
-		if ($singleLineInput.val() == ""){
-			$errorSingleLineInput.text("Please enter your name.");
-			$errorSingleLineInput.parent().css("visibility", "visible");
-			return;
-		}
-		$errorSingleLineInput.parent().css("visibility", "hidden");
-	});
-
+$singleLineInput.on("input", function() {
+  if ($singleLineInput.val() == "") {
+    $errorSingleLineInput.text("Please enter your name.");
+    $errorSingleLineInput.parent().css("visibility", "visible");
+    return;
+  }
+  $errorSingleLineInput.parent().css("visibility", "hidden");
+});
 ```
-

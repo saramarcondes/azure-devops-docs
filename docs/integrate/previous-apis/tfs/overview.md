@@ -14,7 +14,6 @@ ms.date: 08/04/2016
 
 [!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
 
-
 A VSTS organization has one or more [projects](./projects.md). Each project has one or more [teams](./teams.md) that contribute to that project.
 
 ![Project and team resources](./media/projects-and-teams.png)
@@ -28,7 +27,7 @@ A VSTS organization has one or more [projects](./projects.md). Each project has 
 
 ### Get a list of projects
 
-Get the [projects](./projects.md) in the organization. 
+Get the [projects](./projects.md) in the organization.
 
 ### Get a project's source control provider
 
@@ -36,8 +35,8 @@ Get a [project's capabilities](./projects.md#withcapabilities) to see whether it
 
 ### Get the teams in a project
 
-1. Get a list of [teams](./teams.md) in a project.
-2. Get the [members](./teams.md#GetaTeamMembers) of a team.
+1.  Get a list of [teams](./teams.md) in a project.
+2.  Get the [members](./teams.md#GetaTeamMembers) of a team.
 
 ### Get the project collection
 
@@ -53,16 +52,15 @@ Create a [project](./projects.md#createateamproject) in a VSTS organization. Cur
 
 Projects can be updated:
 
-1. Update the project [description](./projects.md#UpdateDescription) or [name](./projects.md#UpdateName)
-2. The update is asynchronous, so use the returned [operation](./projects.md#GetOperation)
-to get the status of the update.
+1.  Update the project [description](./projects.md#UpdateDescription) or [name](./projects.md#UpdateName)
+2.  The update is asynchronous, so use the returned [operation](./projects.md#GetOperation)
+    to get the status of the update.
 
 An operation can be in one of the following states:
 
-| State Name    | Explanation
-|:--------------|:-----------------
-| Queued           | Project update has been queued to run. 
-| InProgress | Project update currently being executed. 
-| Succeeded      | Project update was successfully completed. 
-| Failed    | Project updated did not succeed. 
-
+| State Name | Explanation                                |
+| :--------- | :----------------------------------------- |
+| Queued     | Project update has been queued to run.     |
+| InProgress | Project update currently being executed.   |
+| Succeeded  | Project update was successfully completed. |
+| Failed     | Project updated did not succeed.           |

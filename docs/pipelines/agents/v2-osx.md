@@ -21,8 +21,9 @@ monikerRange: '>= tfs-2015'
 To build and deploy Xcode apps or Xamarin.iOS projects, you'll need at least one macOS agent. This agent can also build and deploy Java and Android apps.
 
 > Before you begin:
+>
 > * If your pipelines are in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a self-hosted macOS agent.
-> *  Otherwise, you've come to the right place to set up an agent on macOS. Continue to the next section.
+> * Otherwise, you've come to the right place to set up an agent on macOS. Continue to the next section.
 
 [!INCLUDE [include](includes/concepts.md)]
 
@@ -31,8 +32,9 @@ To build and deploy Xcode apps or Xamarin.iOS projects, you'll need at least one
 ::: moniker range=">= tfs-2018"
 
 Make sure your machine has these prerequisites:
-- macOS Sierra (10.12) or higher
-- Git 2.9.0 or higher (latest version strongly recommended - you can easily install with [Homebrew](https://brew.sh/))
+
+* macOS Sierra (10.12) or higher
+* Git 2.9.0 or higher (latest version strongly recommended - you can easily install with [Homebrew](https://brew.sh/))
 
 These prereqs are required for agent version 2.125.0 and higher.
 
@@ -44,9 +46,10 @@ These prereqs are required for agent version 2.124.0 and below.
 **If you're able, we recommend upgrading to a newer macOS (10.12+) and upgrading to the newest agent.**
 
 Make sure your machine has these prerequisites:
-- OS X Yosemite (10.10), El Capitan (10.11), or macOS Sierra (10.12)
-- Git 2.9.0 or higher (latest version strongly recommended)
-- Meets all prereqs for [.NET Core 1.x](https://dotnet.microsoft.com/download/dotnet-core/1.0)
+
+* OS X Yosemite (10.10), El Capitan (10.11), or macOS Sierra (10.12)
+* Git 2.9.0 or higher (latest version strongly recommended)
+* Meets all prereqs for [.NET Core 1.x](https://dotnet.microsoft.com/download/dotnet-core/1.0)
 
 ::: moniker-end
 
@@ -63,27 +66,28 @@ After you get a feel for how agents work, or if you want to automate setting up 
 [!INCLUDE [permissions](includes/v2/prepare-permissions.md)]
 
 <a name="download-configure"></a>
+
 ## Download and configure the agent
 
 ::: moniker range="azure-devops"
 
 ### Azure Pipelines
 
-1. Log on to the machine using the account for which you've prepared permissions as explained above.
+1.  Log on to the machine using the account for which you've prepared permissions as explained above.
 
-1. In your web browser, sign in to Azure Pipelines, and navigate to the **Agent pools** tab:
+1.  In your web browser, sign in to Azure Pipelines, and navigate to the **Agent pools** tab:
 
-   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab.md)]
+    [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab.md)]
 
-1. Select the **Default** pool, select the **Agents** tab, and choose **New agent**.
+1.  Select the **Default** pool, select the **Agents** tab, and choose **New agent**.
 
-1. On the **Get the agent** dialog box, click **macOS**.
+1.  On the **Get the agent** dialog box, click **macOS**.
 
-1. Click the **Download** button.
+1.  Click the **Download** button.
 
-1. Follow the instructions on the page.
+1.  Follow the instructions on the page.
 
-1. Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.
+1.  Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.
 
 ::: moniker-end
 
@@ -91,21 +95,21 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 ### Azure DevOps Server 2019
 
-1. Log on to the machine using the account for which you've prepared permissions as explained above.
+1.  Log on to the machine using the account for which you've prepared permissions as explained above.
 
-1. In your web browser, sign in to Azure DevOps Server 2019, and navigate to the **Agent pools** tab:
+1.  In your web browser, sign in to Azure DevOps Server 2019, and navigate to the **Agent pools** tab:
 
-   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab-server-2019.md)]
+    [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab-server-2019.md)]
 
-1. Click **Download agent**.
+1.  Click **Download agent**.
 
-1. On the **Get agent** dialog box, click **macOS**.
+1.  On the **Get agent** dialog box, click **macOS**.
 
-1. Click the **Download** button.
+1.  Click the **Download** button.
 
-1. Follow the instructions on the page.
+1.  Follow the instructions on the page.
 
-1. Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.
+1.  Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.
 
 ::: moniker-end
 
@@ -113,21 +117,21 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 ### TFS 2017 and TFS 2018
 
-1. Log on to the machine using the account for which you've prepared permissions as explained above.
+1.  Log on to the machine using the account for which you've prepared permissions as explained above.
 
-1. In your web browser, sign in to Azure Pipelines or TFS, and navigate to the **Agent pools** tab:
+1.  In your web browser, sign in to Azure Pipelines or TFS, and navigate to the **Agent pools** tab:
 
-   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab-tfs-2017.md)]
+    [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab-tfs-2017.md)]
 
-1. Click **Download agent**.
+1.  Click **Download agent**.
 
-1. On the **Get agent** dialog box, click **macOS**.
+1.  On the **Get agent** dialog box, click **macOS**.
 
-1. Click the **Download** button.
+1.  Click the **Download** button.
 
-1. Follow the instructions on the page.
+1.  Follow the instructions on the page.
 
-1. Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.
+1.  Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.
 
 ::: moniker-end
 
@@ -135,15 +139,15 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 ### TFS 2015
 
-1. Browse to the [latest release on GitHub](https://github.com/Microsoft/azure-pipelines-agent/releases/latest).
+1.  Browse to the [latest release on GitHub](https://github.com/Microsoft/azure-pipelines-agent/releases/latest).
 
-1. Follow the instructions on that page to download the agent.
+1.  Follow the instructions on that page to download the agent.
 
-1. Configure the agent.
+1.  Configure the agent.
 
-   ```
-   ./config.sh
-   ```
+    ```
+    ./config.sh
+    ```
 
 ::: moniker-end
 
@@ -177,15 +181,15 @@ For guidance on whether to run the agent in interactive mode or as a service, se
 
 To run the agent interactively:
 
-1. If you have been running the agent as a service, [uninstall the service](#service_uninstall).
+1.  If you have been running the agent as a service, [uninstall the service](#service_uninstall).
 
-1. Run the agent.
+1.  Run the agent.
 
-   ```bash
-   ./run.sh
-   ```
+    ```bash
+    ./run.sh
+    ```
 
-  To restart the agent, press Ctrl+C and then run `run.sh` to restart it.
+To restart the agent, press Ctrl+C and then run `run.sh` to restart it.
 
 To use your agent, run a [job](../process/phases.md) using the agent's pool.
 If you didn't choose a different pool, your agent will be in the **Default** pool.
@@ -194,7 +198,7 @@ If you didn't choose a different pool, your agent will be in the **Default** poo
 
 For agents configured to run interactively, you can choose to have the agent accept only one job. To run in this configuration:
 
- ```bash
+```bash
 ./run.sh --once
 ```
 
@@ -231,7 +235,6 @@ For example, if you installed in the `myagent` subfolder of your home directory:
 cd ~/myagent$
 ```
 
-
 #### Install
 
 Command:
@@ -241,7 +244,6 @@ Command:
 ```
 
 This command creates a launchd plist that points to `./runsvc.sh`. This script sets up the environment (more details below) and starts the agent's host.
-
 
 #### Start
 
@@ -268,6 +270,7 @@ The left number is the pid if the service is running. If second number is not ze
 #### Status
 
 Command:
+
 ```bash
 ./svc.sh status
 ```
@@ -335,15 +338,15 @@ The snapshot of the environment variables is stored in `.env` file under agent r
 
 ### Run instructions before the service starts
 
-You can also run your own instructions and commands to run when the service starts.  For example, you could set up the environment or call scripts.
+You can also run your own instructions and commands to run when the service starts. For example, you could set up the environment or call scripts.
 
-1. Edit `runsvc.sh`.
+1.  Edit `runsvc.sh`.
 
-1. Replace the following line with your instructions:
+1.  Replace the following line with your instructions:
 
-   ```bash
-   # insert anything to setup env when running as a service
-   ```
+    ```bash
+    # insert anything to setup env when running as a service
+    ```
 
 <h3 id="service-files">Service Files</h3>
 

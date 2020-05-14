@@ -38,4 +38,3 @@ Defined in vss.d.ts
 * `Array` Value is an array
 
 * `Object` Value is an arbitrary/custom object
-

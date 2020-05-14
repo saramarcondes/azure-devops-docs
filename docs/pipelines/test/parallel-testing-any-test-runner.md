@@ -32,7 +32,6 @@ Familiarize yourself with the concepts of [agents](../agents/agents.md) and [job
 Each agent can run only one job at a time. To run multiple jobs in parallel, you must configure multiple agents.
 You also need sufficient [parallel jobs](../licensing/concurrent-jobs.md).
 
-
 ## Setting up parallel jobs
 
 Specify 'parallel' strategy in the YAML and indicate how many jobs should be dispatched.
@@ -59,10 +58,10 @@ The step that runs the tests in a job needs to know which test slice should be
 run. The variables `System.JobPositionInPhase` and `System.TotalJobsInPhase` can be used for this purpose:
 
 * `System.TotalJobsInPhase` indicates the total number of slices (you can think of this as "totalSlices")
-* `System.JobPositionInPhase` identifies a particular slice (you can think of this as "sliceNum") 
+* `System.JobPositionInPhase` identifies a particular slice (you can think of this as "sliceNum")
 
 If you represent all test files as a single dimensional array, each job can run a test file indexed at
-[sliceNum + totalSlices], until all the test files are run. 
+[sliceNum + totalSlices], until all the test files are run.
 For example, if you have six test files and two parallel jobs, the first job (slice0) will run test files
 numbered 0, 2, and 4, and second job (slice1) will run test files numbered 1, 3, and 5.
 
@@ -112,4 +111,4 @@ Most test runners provide the capability to run tests in parallel on a single ma
 The two types of parallelism can be combined for massively parallel testing,
 which makes testing in pipelines extremely efficient.
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

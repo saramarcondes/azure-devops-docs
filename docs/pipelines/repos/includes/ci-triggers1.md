@@ -41,7 +41,7 @@ trigger:
     - releases/old*
 ```
 
-In the above example, the pipeline will be triggered if a change is pushed to master or to any releases branch. However, it won't be triggered if a change is made to a releases branch that starts with `old`. 
+In the above example, the pipeline will be triggered if a change is pushed to master or to any releases branch. However, it won't be triggered if a change is made to a releases branch that starts with `old`.
 
 If you specify an `exclude` clause without an `include` clause, then it is equivalent to specifying `*` in the `include` clause.
 
@@ -65,8 +65,8 @@ trigger:
     - '*'  # must quote since "*" is a YAML reserved character; we want a string
 ```
 
->[!IMPORTANT]
->When you specify a trigger, it replaces the default implicit trigger, and only pushes to branches that are explicitly configured to be included will trigger a pipeline. Includes are processed first, and then excludes are removed from that list.
+> [!IMPORTANT]
+> When you specify a trigger, it replaces the default implicit trigger, and only pushes to branches that are explicitly configured to be included will trigger a pipeline. Includes are processed first, and then excludes are removed from that list.
 
 ### Batching CI runs
 
@@ -82,9 +82,9 @@ trigger:
     - master
 ```
 
-To clarify this example, let us say that a push `A` to master caused the above pipeline to run. While that pipeline is running, additional pushes `B` and `C` occur into the repository. These updates do not start new independent runs immediately. But after the first run is completed, all pushes until that point of time are batched together and a new run is started. 
+To clarify this example, let us say that a push `A` to master caused the above pipeline to run. While that pipeline is running, additional pushes `B` and `C` occur into the repository. These updates do not start new independent runs immediately. But after the first run is completed, all pushes until that point of time are batched together and a new run is started.
 
->[!NOTE]
+> [!NOTE]
 > If the pipeline has multiple jobs and stages, then the first run should still reach a terminal state by completing or skipping all its jobs and stages before the second run can start. For this reason, you must exercise caution when using this feature in a pipeline with multiple stages or approvals. If you wish to batch your builds in such cases, it is recommended that you split your CI/CD process into two pipelines - one for build (with batching) and one for deployments.
 
 ### Paths
@@ -109,12 +109,12 @@ trigger:
 When you specify paths, you must explicitly specify branches to trigger on. You can't trigger a pipeline with only a path filter; you must also have a branch filter, and the changed files that match the path filter must be from a branch that matches the branch filter.
 
 > **Tips:**
->  * Paths are always specified relative to the root of the repository.
->  * If you don't set path filters, then the root folder of the repo is implicitly included by default.
->  * If you exclude a path, you cannot also include it unless you qualify it to a deeper folder. For example if you exclude _/tools_ then you could include _/tools/trigger-runs-on-these_
->  * The order of path filters doesn't matter.
->  * Paths in Git are case-sensitive. Be sure to use the same case as the real folders.
+>
+> * Paths are always specified relative to the root of the repository.
+> * If you don't set path filters, then the root folder of the repo is implicitly included by default.
+> * If you exclude a path, you cannot also include it unless you qualify it to a deeper folder. For example if you exclude _/tools_ then you could include _/tools/trigger-runs-on-these_
+> * The order of path filters doesn't matter.
+> * Paths in Git are case-sensitive. Be sure to use the same case as the real folders.
 
 > [!NOTE]
 > You cannot use [variables](../../process/variables.md) in paths, as variables are evaluated at runtime (after the trigger has fired).
-

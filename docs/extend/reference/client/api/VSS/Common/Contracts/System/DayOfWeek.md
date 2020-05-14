@@ -28,4 +28,3 @@ Module path: `VSS/Common/Contracts/System`
 * `Friday` Indicates Friday.
 
 * `Saturday` Indicates Saturday.
-

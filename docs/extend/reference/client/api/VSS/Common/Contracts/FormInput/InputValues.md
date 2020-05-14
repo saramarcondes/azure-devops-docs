@@ -14,7 +14,6 @@ ms.date: 08/04/2016
 
 Module path: `VSS/Common/Contracts/FormInput`
 
-
 ### Members
 
 * `defaultValue`: string. The default value to use for this input
@@ -30,4 +29,3 @@ Module path: `VSS/Common/Contracts/FormInput`
 * `isReadOnly`: boolean. Should this input be made read-only
 
 * `possibleValues`: [InputValue](../../../../VSS/Common/Contracts/FormInput/InputValue.md)[]. Possible values that this input can take
-

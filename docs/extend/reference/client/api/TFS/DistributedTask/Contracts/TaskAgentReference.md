@@ -14,10 +14,9 @@ ms.date: 08/04/2016
 
 Module path: `TFS/DistributedTask/Contracts`
 
-
 ### Members
 
-* `_links`: any. 
+* `_links`: any.
 
 * `enabled`: boolean. Gets or sets a value indicating whether or not this agent should be enabled for job execution.
 
@@ -28,4 +27,3 @@ Module path: `TFS/DistributedTask/Contracts`
 * `status`: [TaskAgentStatus](../../../TFS/DistributedTask/Contracts/TaskAgentStatus.md). Gets the current connectivity status of the agent.
 
 * `version`: string. Gets the version of the agent.
-

@@ -11,7 +11,6 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Work with version control locks
 
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
@@ -20,12 +19,12 @@ This section describes how to lock a file or folder to prevent it from being che
 
 ## In This Section
 
-[Understand lock types](understand-lock-types.md)     
+[Understand lock types](understand-lock-types.md)  
 Explains the various types of locks that can be applied against the source control server and how to use them.
 
-[Lock and unlock folders or files](lock-unlock-folders-files.md)     
+[Lock and unlock folders or files](lock-unlock-folders-files.md)  
 Explains the steps used to lock and unlock source control items.
 
 ## Reference
 
- [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md) 
+[Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)

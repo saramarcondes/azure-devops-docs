@@ -14,7 +14,6 @@ ms.date: 08/04/2016
 
 Module path: `TFS/Build/Contracts`
 
-
 ### Members
 
 * `definitionUri`: string. Uri of the associated definition
@@ -26,4 +25,3 @@ Module path: `TFS/Build/Contracts`
 * `mappings`: [WorkspaceMapping](./WorkspaceMapping.md)[]. List of workspace mappings
 
 * `workspaceId`: number. ID of the workspace for this template
-

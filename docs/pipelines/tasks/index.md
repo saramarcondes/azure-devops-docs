@@ -26,7 +26,7 @@ To learn more about tool installer tasks, see [Tool installers](../process/tasks
 
 These tasks are open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A  
+## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 

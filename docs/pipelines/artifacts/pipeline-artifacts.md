@@ -20,7 +20,7 @@ Pipeline artifacts provide a way to share files between stages in a pipeline or 
 
 ## Publishing artifacts
 
-[!INCLUDE [temp](../../includes/feature-support-cloud-only.md)] 
+[!INCLUDE [temp](../../includes/feature-support-cloud-only.md)]
 
 To publish (upload) an artifact for the current run of a CI/CD or classic pipeline:
 
@@ -57,15 +57,15 @@ steps:
 
 * Artifact name:
 
-   ```
-   WebApp
-   ```
+  ```
+  WebApp
+  ```
 
 * File or directory path:
 
-   ```
-   $(System.DefaultWorkingDirectory)/bin/WebApp
-   ```
+  ```
+  $(System.DefaultWorkingDirectory)/bin/WebApp
+  ```
 
 # [Azure CLI](#tab/azure-cli)
 
@@ -96,8 +96,7 @@ Using an `.artifactignore` file, it is possible to omit the path from the task c
 
 The above statement instructs the universal package task and the pipeline artifacts task to ignore all files except the ones with `.exe` extension.
 
-> [!IMPORTANT]
-> `.artifactignore` follows the same syntax as [.gitignore](https://git-scm.com/docs/gitignore) with some minor limitations. The plus sign character `+` is not supported in URL paths as well as some of the builds semantic versioning metadata (`+` suffix) in some packages types such as Maven.
+> [!IMPORTANT] > `.artifactignore` follows the same syntax as [.gitignore](https://git-scm.com/docs/gitignore) with some minor limitations. The plus sign character `+` is not supported in URL paths as well as some of the builds semantic versioning metadata (`+` suffix) in some packages types such as Maven.
 
 To learn more, see [Use the .artifactignore file](../../artifacts/reference/artifactignore.md) or the [.gitignore documentation](https://git-scm.com/docs/gitignore).
 
@@ -137,9 +136,9 @@ steps:
 
 * Artifact name:
 
-   ```
-   WebApp
-   ```
+  ```
+  WebApp
+  ```
 
 # [Azure CLI](#tab/azure-cli)
 
@@ -167,11 +166,11 @@ A single download step can download one or more artifacts. To download multiple 
 
 When an artifact name is specified:
 
-1. Only files for this artifact are downloaded. If this artifact does not exist, the task will fail.
+1.  Only files for this artifact are downloaded. If this artifact does not exist, the task will fail.
 
-2. Unless the specified download path is absolute, a folder with the same name as the artifact is created under the download path, and the artifact's files are placed in it.
+2.  Unless the specified download path is absolute, a folder with the same name as the artifact is created under the download path, and the artifact's files are placed in it.
 
-3. File matching patterns are evaluated relative to the root of the artifact. For example, the pattern `*.jar` matches all files with a `.jar` extension at the root of the artifact.
+3.  File matching patterns are evaluated relative to the root of the artifact. For example, the pattern `*.jar` matches all files with a `.jar` extension at the root of the artifact.
 
 For example, to download all `*.js` from the artifact `WebApp`:
 
@@ -209,21 +208,21 @@ In this example, all `*.js` files in the `WebApp` artifact are downloaded to `$(
 
 * Artifact name:
 
-   ```
-   artifactName
-   ```
+  ```
+  artifactName
+  ```
 
 * Destination directory:
 
-   ```
-   $(Build.SourcesDirectory)/bin
-   ```
+  ```
+  $(Build.SourcesDirectory)/bin
+  ```
 
 * Matching patterns:
 
-   ```
-   '**/*.js'
-   ```
+  ```
+  '**/*.js'
+  ```
 
 # [Azure CLI](#tab/azure-cli)
 
@@ -235,11 +234,11 @@ No available Azure CLI option for this action.
 
 When no artifact name is specified:
 
-1. Files from multiple artifacts can be downloaded, and the task does not fail if no files are downloaded.
+1.  Files from multiple artifacts can be downloaded, and the task does not fail if no files are downloaded.
 
-2. A folder is always created under the download path for each artifact with files being downloaded.
+2.  A folder is always created under the download path for each artifact with files being downloaded.
 
-3. File matching patterns should assume the first segment of the pattern is (or matches) an artifact name. For example, `WebApp/**` matches all files from the `WebApp` artifact. The pattern `*/*.dll` matches all files with a `.dll` extension at the root of each artifact.
+3.  File matching patterns should assume the first segment of the pattern is (or matches) an artifact name. For example, `WebApp/**` matches all files from the `WebApp` artifact. The pattern `*/*.dll` matches all files with a `.dll` extension at the root of each artifact.
 
 For example, to download all `.zip` files from all source artifacts:
 
@@ -268,9 +267,9 @@ steps:
 
 * Matching patterns:
 
-   ```
-   '**/*.zip'
-   ```
+  ```
+  '**/*.zip'
+  ```
 
 # [Azure CLI](#tab/azure-cli)
 
@@ -280,10 +279,10 @@ No available Azure CLI option for this action.
 
 ## Artifacts in release and deployment jobs
 
-If you're using pipeline artifacts to deliver artifacts into a classic release pipeline or deployment job, you do not need to add a download step --- a step is injected automatically. If you need to control over the location where files are downloaded, you can add a **Download Pipeline Artifact** task or use the ```download``` YAML keyword.
+If you're using pipeline artifacts to deliver artifacts into a classic release pipeline or deployment job, you do not need to add a download step --- a step is injected automatically. If you need to control over the location where files are downloaded, you can add a **Download Pipeline Artifact** task or use the `download` YAML keyword.
 
 > [!NOTE]
-> Artifacts are only downloaded automatically in deployment jobs. In a regular build job, you need to explicitly use the `download` step keyword or  **Download Pipeline Artifact** task.
+> Artifacts are only downloaded automatically in deployment jobs. In a regular build job, you need to explicitly use the `download` step keyword or **Download Pipeline Artifact** task.
 
 To stop artifacts from being downloaded automatically, add a `download` step and set its value to none:
 
@@ -298,11 +297,11 @@ Pipeline artifacts are the next generation of build artifacts and are the recomm
 
 When migrating from build artifacts to pipeline artifacts:
 
-1. For build artifacts, it's common to copy files to `$(Build.ArtifactStagingDirectory)` and then use the **Publish Build Artifacts** task to publish this folder. With the **Publish Pipeline Artifact** task, just publish directly from the path containing the files.
+1.  For build artifacts, it's common to copy files to `$(Build.ArtifactStagingDirectory)` and then use the **Publish Build Artifacts** task to publish this folder. With the **Publish Pipeline Artifact** task, just publish directly from the path containing the files.
 
-2. By default, the **Download Pipeline Artifact** task downloads files to `$(Pipeline.Workspace)`. This is the default and recommended path for all types of artifacts.
+2.  By default, the **Download Pipeline Artifact** task downloads files to `$(Pipeline.Workspace)`. This is the default and recommended path for all types of artifacts.
 
-3. File matching patterns for the **Download Build Artifacts** task are expected to start with (or match) the artifact name, regardless if a specific artifact was specified or not. In the **Download Pipeline Artifact** task, patterns should not include the artifact name when an artifact name has already been specified. See [single artifact selection](#single-artifact) for more details.
+3.  File matching patterns for the **Download Build Artifacts** task are expected to start with (or match) the artifact name, regardless if a specific artifact was specified or not. In the **Download Pipeline Artifact** task, patterns should not include the artifact name when an artifact name has already been specified. See [single artifact selection](#single-artifact) for more details.
 
 ## Q&A
 

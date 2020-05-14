@@ -21,10 +21,10 @@ A REST client simplifies calling [Azure DevOps Services REST APIs](/rest/api/vst
 
 To get started with calling client methods from your extension, see [how to call a REST API](../../develop/call-rest-api.md). In general, the steps are:
 
-1. Construct or acquire an instance of a client
-2. Call the method on the client instance, passing any necessary parameters
-3. Wait for the response
-   * All REST client methods are non-blocking and return a Promise object. A promise represents a future return value (or exception). Typically you call `then()` on the returned object, passing a function that you want to have called when the response is received.
+1.  Construct or acquire an instance of a client
+2.  Call the method on the client instance, passing any necessary parameters
+3.  Wait for the response
+    * All REST client methods are non-blocking and return a Promise object. A promise represents a future return value (or exception). Typically you call `then()` on the returned object, passing a function that you want to have called when the response is received.
 
 ### Available clients
 
@@ -35,4 +35,3 @@ To get started with calling client methods from your extension, see [how to call
 * [Version Control](./api/TFS/VersionControl/TfvcRestClient/TfvcHttpClient2_2.md)
 * [Work (agile)](./api/TFS/Work/RestClient/WorkHttpClient2_2.md)
 * [Work item tracking](./api/TFS/WorkItemTracking/RestClient/WorkItemTrackingHttpClient2_2.md)
-

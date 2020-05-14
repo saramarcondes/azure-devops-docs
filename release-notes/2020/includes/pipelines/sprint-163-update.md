@@ -25,18 +25,16 @@ steps:
 
 `MyServiceConnection` points to another Azure DevOps organization and has credentials which can access the repository in another project. Both repos, `self` and `otherrepo`, will end up checked out.
 
-> [!IMPORTANT]
-> `MyServiceConnection` must be an Azure Repos / Team Foundation Server service connection, see the picture below.
+> [!IMPORTANT] > `MyServiceConnection` must be an Azure Repos / Team Foundation Server service connection, see the picture below.
 
-> [!div class="mx-imgBorder"]
-> ![Badge](../../media/163_03.png)
+> [!div class="mx-imgBorder"] > ![Badge](../../media/163_03.png)
 
 ### Step targeting and command isolation
 
-Azure Pipelines supports running jobs either in containers or on the agent host. Previously, an entire job was set to one of those two targets. Now, individual steps (tasks or scripts) can run on the target you choose. Steps may also target other containers, so a pipeline could run each step in a specialized, purpose-built container. 
+Azure Pipelines supports running jobs either in containers or on the agent host. Previously, an entire job was set to one of those two targets. Now, individual steps (tasks or scripts) can run on the target you choose. Steps may also target other containers, so a pipeline could run each step in a specialized, purpose-built container.
 
 > [!NOTE]
-> This feature is in public preview. If you have any feedback or questions about this feature, let us know in the [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html). 
+> This feature is in public preview. If you have any feedback or questions about this feature, let us know in the [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 Containers can act as isolation boundaries, preventing code from making unexpected changes on the host machine. The way steps [communicate with and access services from the agent](https://docs.microsoft.com/azure/devops/pipelines/scripts/logging-commands) is not affected by isolating steps in a container. Therefore, we're also introducing a command restriction mode which you can use with step targets. Turning this on will restrict the services a step can request from the agent. It will no longer be able to attach logs, upload artifacts, and certain other operations.
 
@@ -65,13 +63,13 @@ jobs:
       container: node
       commands: restricted
 ```
- 
+
 ### Builds and releases auditing
 
-We're happy to let you know that Release and Pipeline events are now available in the audit logs. These events can be accessed from **Organization Settings -> Auditing**. 
+We're happy to let you know that Release and Pipeline events are now available in the audit logs. These events can be accessed from **Organization Settings -> Auditing**.
 
 The following events are available now:
- 
+
 * Agent pool - create, delete, adding an agent (private agents) and removing and agent
 * Service Connection - execution, create, delete, and update
 * Variable Group - create, delete and update
@@ -83,8 +81,6 @@ The following events are available now:
 
 We've enhanced the [evaluate artifact check](https://docs.microsoft.com/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass#evaluate-artifact) to make it easier to add policies from a list of out of the box policy definitions. The policy definition will be generated automatically and added to the **check configuration** which can be updated if needed.
 
-> [!div class="mx-imgBorder"]
-> ![Badge](../../media/163_04.png)
+> [!div class="mx-imgBorder"] > ![Badge](../../media/163_04.png)
 
-> [!div class="mx-imgBorder"]
-> ![Badge](../../media/163_05.png)
+> [!div class="mx-imgBorder"] > ![Badge](../../media/163_05.png)

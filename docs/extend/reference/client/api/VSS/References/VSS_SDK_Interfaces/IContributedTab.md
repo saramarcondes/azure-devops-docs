@@ -15,8 +15,6 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-
 ### Members
 
 * `isInvisible`: (context: any): boolean or IPromise&lt;boolean&gt;. Optional. Determines if this tab should be displayed
@@ -30,4 +28,3 @@ Defined in vss.d.ts
 * `uri`: string. URI to the page that this tab displays (i.e. in a frame)
 
 * `updateContext`: (context: any): void or IPromise&lt;void&gt;. Function that is invoked when there is a new context available for the extension.
-

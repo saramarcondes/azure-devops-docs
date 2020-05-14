@@ -15,9 +15,6 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-
 ### Members
 
-* `featureStates`: {[key: string]: boolean}. 
-
+* `featureStates`: {[key: string]: boolean}.

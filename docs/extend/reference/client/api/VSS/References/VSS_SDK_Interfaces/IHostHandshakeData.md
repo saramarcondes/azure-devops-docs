@@ -15,8 +15,7 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Data passed from the host to an extension frame via the initial handshake 
+Data passed from the host to an extension frame via the initial handshake
 
 ### Members
 
@@ -27,4 +26,3 @@ Data passed from the host to an extension frame via the initial handshake
 * `extensionContext`: [IExtensionContext](../../../VSS/References/VSS_SDK_Interfaces/IExtensionContext.md). Context information about the extension
 
 * `contribution`: [Contribution](../../../VSS/References/SDK_Interfaces/Contribution.md). The contribution that caused the extension frame to be loaded.
-

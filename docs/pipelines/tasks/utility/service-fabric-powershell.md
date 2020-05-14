@@ -21,8 +21,8 @@ Runs any PowerShell command or script in a PowerShell session that has a Service
 
 ### Service Fabric
 
-* This task uses a Service Fabric installation to connect and 
-deploy to a Service Fabric cluster.  
+* This task uses a Service Fabric installation to connect and
+  deploy to a Service Fabric cluster.
 
 * [Azure Service Fabric Core SDK](https://www.microsoft.com/web/handlers/webpi.ashx?command=getinstallerredirect&appid=MicrosoftAzure-ServiceFabric-CoreSDK) on the build agent.
 
@@ -36,14 +36,14 @@ deploy to a Service Fabric cluster.
 
 ## Arguments
 
-| Argument | Description |
-| -------- | ----------- |
-| **Cluster Connection** | The Azure Service Fabric service connection to use to connect and authenticate to the cluster. |
-| **Script Type** | Specify whether the script is provided as a file or inline in the task. |
-| **Script Path** | Path to the PowerShell script to run. Can include wildcards and variables. Example: `$(system.defaultworkingdirectory)/**/drop/projectartifacts/**/docker-compose.yml`. **Note**: combining compose files is not supported as part of this task. |
-| **Script Arguments** | Additional parameters to pass to the PowerShell script. Can be either ordinal or named parameters. |
-| **Inline Script** | The PowerShell commands to run on the build agent. [More information](../utility/powershell.md) |
-| **Control options** | See [Control options](../../process/tasks.md#controloptions) |
+| Argument               | Description                                                                                                                                                                                                                                      |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Cluster Connection** | The Azure Service Fabric service connection to use to connect and authenticate to the cluster.                                                                                                                                                   |
+| **Script Type**        | Specify whether the script is provided as a file or inline in the task.                                                                                                                                                                          |
+| **Script Path**        | Path to the PowerShell script to run. Can include wildcards and variables. Example: `$(system.defaultworkingdirectory)/**/drop/projectartifacts/**/docker-compose.yml`. **Note**: combining compose files is not supported as part of this task. |
+| **Script Arguments**   | Additional parameters to pass to the PowerShell script. Can be either ordinal or named parameters.                                                                                                                                               |
+| **Inline Script**      | The PowerShell commands to run on the build agent. [More information](../utility/powershell.md)                                                                                                                                                  |
+| **Control options**    | See [Control options](../../process/tasks.md#controloptions)                                                                                                                                                                                     |
 
 Also see: [Service Fabric Compose Deploy task](../deploy/service-fabric-compose-deploy.md)
 
@@ -52,6 +52,7 @@ Also see: [Service Fabric Compose Deploy task](../deploy/service-fabric-compose-
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
+
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [qa-agents](../../includes/qa-agents.md)]

@@ -29,23 +29,23 @@ A release process goes through a set of [approval requests](./approvals.md).
 
 ### Create a release [definition](./definitions.md)
 
-1. Add one or more environments to release [definition](./definitions.md).
-2. Add tasks to each environment.
-3. Add [approvals](./approvals.md) or make them automated, for each environment.
-4. Save release [definition](./definitions.md)
+1.  Add one or more environments to release [definition](./definitions.md).
+2.  Add tasks to each environment.
+3.  Add [approvals](./approvals.md) or make them automated, for each environment.
+4.  Save release [definition](./definitions.md)
 
 ### Start a release
 
-1. Get the ID of the release [definition](./definitions.md) that you want to use.
-3. Create a [release](./releases.md).
-3. Get the ID of the release from the response so you can use it later.
-4. If required, abandon a [release](./releases.md).
+1.  Get the ID of the release [definition](./definitions.md) that you want to use.
+2.  Create a [release](./releases.md).
+3.  Get the ID of the release from the response so you can use it later.
+4.  If required, abandon a [release](./releases.md).
 
 ### Get a release details
 
-1. Get a list of [releases](./releases.md) and find the ID of the release you're interested in.
-2. Get the [details](./releases.md#getreleasedetails) about the release.
-4. Get the [approvals](./approvals.md) required for the release.
+1.  Get a list of [releases](./releases.md) and find the ID of the release you're interested in.
+2.  Get the [details](./releases.md#getreleasedetails) about the release.
+3.  Get the [approvals](./approvals.md) required for the release.
 
 ### Accept/Reject approvals
 

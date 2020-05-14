@@ -15,8 +15,7 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Global context placed on each VSSF web page (through json island data) which gives enough information for core TypeScript modules/controls on the page to operate 
+Global context placed on each VSSF web page (through json island data) which gives enough information for core TypeScript modules/controls on the page to operate
 
 ### Members
 
@@ -40,11 +39,10 @@ Global context placed on each VSSF web page (through json island data) which giv
 
 * `serviceInstanceId`: string. The service instance type ID for the Azure DevOps Services service serving this page
 
-* `serviceLocations`: [ServiceLocations](../../../VSS/References/SDK_Interfaces/ServiceLocations.md). 
+* `serviceLocations`: [ServiceLocations](../../../VSS/References/SDK_Interfaces/ServiceLocations.md).
 
 * `timeZonesConfiguration`: [TimeZonesConfiguration](../../../VSS/References/SDK_Interfaces/TimeZonesConfiguration.md). Contains global time zone configuration information (e.g. which dates DST changes)
 
 * `webAccessConfiguration`: [ConfigurationContext](../../../VSS/References/SDK_Interfaces/ConfigurationContext.md). Web Access configuration
 
 * `webContext`: [WebContext](../../../VSS/References/SDK_Interfaces/WebContext.md). The web context information for the given page request
-

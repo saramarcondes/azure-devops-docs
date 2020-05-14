@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2017'
 
 # Specify conditions
 
-**Azure Pipelines | TFS 2018 | TFS 2017.3** 
+**Azure Pipelines | TFS 2018 | TFS 2017.3**
 
 You can specify the conditions under which each job runs. By default, a job runs if it does not depend on any other job, or if all of the jobs that it depends on have completed and succeeded. You can customize this behavior by forcing a job to run even if a previous job fails or by specifying a custom condition.
 
@@ -19,10 +19,12 @@ You can specify the conditions under which each job runs. By default, a job runs
 ::: moniker-end
 
 #### [YAML](#tab/yaml/)
+
 ::: moniker range="azure-devops"
 
 You can specify conditions under which a step, job, or stage will run.
 [!INCLUDE [include](includes/task-run-built-in-conditions.md)]
+
 * Custom conditions
 
 By default, steps, jobs, and stages run if all previous steps/jobs have succeeded.
@@ -53,9 +55,11 @@ Inside the **Control Options** of each task, and in the **Additional options** f
 you can specify the conditions under which the task or job will run:
 
 [!INCLUDE [include](includes/task-run-built-in-conditions.md)]
+
 * Custom conditions
 
-* * *
+---
+
 ## Enable a custom condition
 
 If the built-in conditions don't meet your needs, then you can specify **custom conditions**.
@@ -128,7 +132,7 @@ steps:
   condition: and(succeeded(), eq('${{ parameters.doThing }}', true))
 ```
 
- However, when you pass a parameter to a template, the parameter will not have a value when the condition gets evaluated. As a result, if you set the parameter value in both the template and the pipeline YAML files, the pipeline value from the template will get used in your condition. 
+However, when you pass a parameter to a template, the parameter will not have a value when the condition gets evaluated. As a result, if you set the parameter value in both the template and the pipeline YAML files, the pipeline value from the template will get used in your condition.
 
 ```yaml
 # parameters.yml
@@ -158,10 +162,9 @@ extends:
   template: parameters.yml
 ```
 
-
 ### Use the output variable from a job in a condition in a subsequent job
 
-You can make a variable available to future jobs and specify it in a condition. Variables available to future jobs must be marked as [multi-job output variables](/azure/devops/pipelines/process/variables#set-a-multi-job-output-variable). 
+You can make a variable available to future jobs and specify it in a condition. Variables available to future jobs must be marked as [multi-job output variables](/azure/devops/pipelines/process/variables#set-a-multi-job-output-variable).
 
 ```yaml
 jobs:
@@ -190,12 +193,11 @@ No. If you cancel a job while it's in the queue, then the entire job is canceled
 
 If you defined the pipelines using a YAML file, then this is supported. This scenario is not yet supported for release pipelines.
 
-### How can I trigger a job if a previous job succeeded with issues? 
+### How can I trigger a job if a previous job succeeded with issues?
 
-You can use the result of the previous job. For example, in this YAML file, the condition `eq(dependencies.A.result,'SucceededWithIssues')` allows the job to run because Job A succeeded with issues. 
+You can use the result of the previous job. For example, in this YAML file, the condition `eq(dependencies.A.result,'SucceededWithIssues')` allows the job to run because Job A succeeded with issues.
 
 ```yml
-
 jobs:
 - job: A
   displayName: Job A
@@ -206,7 +208,7 @@ jobs:
 
 - job: B
   dependsOn: A
-  condition: eq(dependencies.A.result,'SucceededWithIssues') # targets the result of the previous job 
+  condition: eq(dependencies.A.result,'SucceededWithIssues') # targets the result of the previous job
   displayName: Job B
   steps:
   - script: echo Job B ran
@@ -214,8 +216,7 @@ jobs:
 
 <!-- ENDSECTION -->
 
-
 ## Related articles
 
-- [Specify jobs in your pipeline](../process/phases.md)  
-- [Add stages, dependencies, & conditions](../process/stages.md)   
+* [Specify jobs in your pipeline](../process/phases.md)
+* [Add stages, dependencies, & conditions](../process/stages.md)

@@ -18,7 +18,7 @@ Extends: [ShallowReference](./ShallowReference.md)
 
 ### Members
 
-* `_links`: any. 
+* `_links`: any.
 
 * `createdDate`: Date. The date the controller was created.
 
@@ -31,4 +31,3 @@ Extends: [ShallowReference](./ShallowReference.md)
 * `updatedDate`: Date. The date the controller was last updated.
 
 * `uri`: string. The controller&#x27;s URI.
-

@@ -8,7 +8,7 @@ monikerRange: '>= tfs-2017'
 ms.date: 2/08/2019
 ---
 
-#  Authorize other services to access your Azure DevOps Services account
+# Authorize other services to access your Azure DevOps Services account
 
 When you use a service that's integrated with Azure DevOps Services,
 we use the industry-standard OAuth 2.0 authorization framework to provide safe,
@@ -16,47 +16,47 @@ secure access to your resources by those other services.
 With OAuth, you grant a service the authorization to access your Azure DevOps Services
 resources such as work items, source code, build results.
 
-- Authorizations are bound to your credentials,
-so the service can use the authorization to access resources
-in any Azure DevOps Services account that you have access to.
+* Authorizations are bound to your credentials,
+  so the service can use the authorization to access resources
+  in any Azure DevOps Services account that you have access to.
 
-- Use your Microsoft account (like ```me@live.com```) or your work account
-(your account in Azure AD - like ```me@my-workplace.com```) to authorize the service.
+* Use your Microsoft account (like `me@live.com`) or your work account
+  (your account in Azure AD - like `me@my-workplace.com`) to authorize the service.
 
-- The service that you authorize never has access to your Azure DevOps Services credentials.
+* The service that you authorize never has access to your Azure DevOps Services credentials.
 
-- Revoke any authorizations that you've granted to other services.
+* Revoke any authorizations that you've granted to other services.
 
 ## Authorize a service
 
 A typical authorization flow might go like this:
 
-1. You're using a service that uses Azure DevOps Services resources,
-so the service requests authorization.
+1.  You're using a service that uses Azure DevOps Services resources,
+    so the service requests authorization.
 
-2. If you're not already signed in, Azure DevOps Services will prompt you for your credentials.
+2.  If you're not already signed in, Azure DevOps Services will prompt you for your credentials.
 
-   <img alt="Azure DevOps Services sign in page" src="./media/authorize/vso-sign-in.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Azure DevOps Services sign in page" src="./media/authorize/vso-sign-in.png" style="border: 1px solid #CCCCCC" />
 
-3. After you've signed in, you get the authorization approval page.
+3.  After you've signed in, you get the authorization approval page.
 
-   <img alt="Azure DevOps Services authorization page" src="./media/authorize/vso-authorize.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Azure DevOps Services authorization page" src="./media/authorize/vso-authorize.png" style="border: 1px solid #CCCCCC" />
 
-   At this point in time, services can only request full access to all of the resources that are available to you through the REST APIs, so don't be surprised that the authorization request isn't more specific.
+    At this point in time, services can only request full access to all of the resources that are available to you through the REST APIs, so don't be surprised that the authorization request isn't more specific.
 
-4. You review the request and approve the authorization.
+4.  You review the request and approve the authorization.
 
-5. The authorized service uses that authorization to access resources in your Visual Studio account.
+5.  The authorized service uses that authorization to access resources in your Visual Studio account.
 
 To ensure an authorization request is legitimate:
 
-- Look for the Azure DevOps Services branding across the top of the authorization approval page.
+* Look for the Azure DevOps Services branding across the top of the authorization approval page.
 
-- Ensure the authorization approval page URL begins with ```https://app.vssps.visualstudio.com/```.
+* Ensure the authorization approval page URL begins with `https://app.vssps.visualstudio.com/`.
 
-- Pay attention to any HTTPS-related security warnings in your browser.
+* Pay attention to any HTTPS-related security warnings in your browser.
 
-- Remember that other services don't ask for your credentials directly. They let you provide them to Azure DevOps Services through the authorization approval page.
+* Remember that other services don't ask for your credentials directly. They let you provide them to Azure DevOps Services through the authorization approval page.
 
 ## Manage authorizations
 

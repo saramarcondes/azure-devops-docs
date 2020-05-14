@@ -14,7 +14,6 @@ ms.date: 08/04/2016
 
 Module path: `TFS/VersionControl/Contracts`
 
-
 ### Members
 
 * `_links`: any. Gets or sets the reference links of the Git media object.
@@ -26,4 +25,3 @@ Module path: `TFS/VersionControl/Contracts`
 * `size`: number. Gets or sets the size of the Git media object in bytes. This property exists for adherence to the GitHub Git Media contract.
 
 * `url`: string. Gets or sets the URL for the Git media object.
-

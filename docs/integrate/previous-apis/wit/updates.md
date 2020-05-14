@@ -28,15 +28,17 @@ To get the entire work item at a point in time, use [revisions](./revisions.md).
 GET https://{instance}/DefaultCollection/_apis/wit/workitems/{id}/updates?api-version={version}[&$top={int}&$skip={int}]
 ```
 
-| Parameter | Type    | Default | Notes	
-|:----------|:--------|:--------|:--------------------------------------
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
+
+
 | URL
-| instance  | string  |         | TFS server name ({server:port}).
-| id        | int     |         | ID of the work item.
+| instance | string | | TFS server name ({server:port}).
+| id | int | | ID of the work item.
 | Query
-| api-version | string  |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| $top      | integer | 200     | Number of updates to return, up to 200.
-| $skip     | integer | 0       | Number of updates to skip.
+| api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| $top | integer | 200 | Number of updates to return, up to 200.
+| $skip | integer | 0 | Number of updates to skip.
 
 #### Sample request
 
@@ -56,7 +58,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?api-ve
       "revisedBy": {
         "id": "d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
         "name": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
       },
       "revisedDate": "2014-12-29T20:49:23.933Z",
       "fields": {
@@ -147,7 +150,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?api-ve
         "added": [
           {
             "rel": "System.LinkTypes.Hierarchy-Reverse",
-            "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/297",
+            "url":
+              "https://mytfsserver/DefaultCollection/_apis/wit/workItems/297",
             "attributes": {
               "isLocked": false,
               "comment": "decomposition of work"
@@ -155,7 +159,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?api-ve
           }
         ]
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates/1"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates/1"
     },
     {
       "id": 2,
@@ -163,7 +168,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?api-ve
       "revisedBy": {
         "id": "d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
         "name": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
       },
       "revisedDate": "2014-12-29T20:49:24.67Z",
       "fields": {
@@ -207,7 +213,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?api-ve
           "newValue": "Moving to the right area path"
         }
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates/2"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates/2"
     },
     {
       "id": 3,
@@ -215,7 +222,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?api-ve
       "revisedBy": {
         "id": "d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
         "name": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
       },
       "revisedDate": "2014-12-29T20:49:26.99Z",
       "fields": {
@@ -251,7 +259,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?api-ve
         "added": [
           {
             "rel": "System.LinkTypes.Related",
-            "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/300",
+            "url":
+              "https://mytfsserver/DefaultCollection/_apis/wit/workItems/300",
             "attributes": {
               "isLocked": false,
               "comment": "adding another task"
@@ -259,7 +268,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?api-ve
           }
         ]
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates/3"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates/3"
     },
     {
       "id": 4,
@@ -267,14 +277,16 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?api-ve
       "revisedBy": {
         "id": "d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
         "name": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
       },
       "revisedDate": "2014-12-29T20:49:25.623Z",
       "relations": {
         "added": [
           {
             "rel": "System.LinkTypes.Dependency-Forward",
-            "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/300",
+            "url":
+              "https://mytfsserver/DefaultCollection/_apis/wit/workItems/300",
             "attributes": {
               "isLocked": false,
               "comment": "Adding traceability to dependencies"
@@ -282,7 +294,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?api-ve
           }
         ]
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates/4"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates/4"
     },
     {
       "id": 5,
@@ -290,14 +303,16 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?api-ve
       "revisedBy": {
         "id": "d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
         "name": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
       },
       "revisedDate": "2014-12-29T20:49:26.523Z",
       "relations": {
         "removed": [
           {
             "rel": "System.LinkTypes.Dependency-Forward",
-            "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/300",
+            "url":
+              "https://mytfsserver/DefaultCollection/_apis/wit/workItems/300",
             "attributes": {
               "isLocked": false,
               "comment": "Adding traceability to dependencies"
@@ -305,7 +320,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?api-ve
           }
         ]
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates/5"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates/5"
     },
     {
       "id": 6,
@@ -313,7 +329,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?api-ve
       "revisedBy": {
         "id": "d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
         "name": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
       },
       "revisedDate": "2014-12-29T20:49:27.48Z",
       "fields": {
@@ -346,7 +363,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?api-ve
         "added": [
           {
             "rel": "AttachedFile",
-            "url": "https://mytfsserver/DefaultCollection/_apis/wit/attachments/098a279a-60b9-40a8-868b-b7fd00c0a439",
+            "url":
+              "https://mytfsserver/DefaultCollection/_apis/wit/attachments/098a279a-60b9-40a8-868b-b7fd00c0a439",
             "attributes": {
               "authorizedDate": "2014-12-29T20:49:26.99Z",
               "id": 65274,
@@ -359,7 +377,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?api-ve
           }
         ]
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates/6"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates/6"
     },
     {
       "id": 7,
@@ -367,7 +386,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?api-ve
       "revisedBy": {
         "id": "d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
         "name": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
       },
       "revisedDate": "2014-12-29T20:49:27.98Z",
       "fields": {
@@ -396,7 +416,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?api-ve
         "removed": [
           {
             "rel": "AttachedFile",
-            "url": "https://mytfsserver/DefaultCollection/_apis/wit/attachments/098a279a-60b9-40a8-868b-b7fd00c0a439",
+            "url":
+              "https://mytfsserver/DefaultCollection/_apis/wit/attachments/098a279a-60b9-40a8-868b-b7fd00c0a439",
             "attributes": {
               "authorizedDate": "2014-12-29T20:49:26.99Z",
               "id": 65274,
@@ -409,7 +430,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?api-ve
           }
         ]
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates/7"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates/7"
     },
     {
       "id": 8,
@@ -417,7 +439,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?api-ve
       "revisedBy": {
         "id": "d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
         "name": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
       },
       "revisedDate": "2014-12-29T20:49:28.74Z",
       "fields": {
@@ -449,7 +472,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?api-ve
         "added": [
           {
             "rel": "Hyperlink",
-            "url": "https://blogs.msdn.com/b/bharry/archive/2014/05/12/a-new-api-for-visual-studio-online.aspx",
+            "url":
+              "https://blogs.msdn.com/b/bharry/archive/2014/05/12/a-new-api-for-visual-studio-online.aspx",
             "attributes": {
               "authorizedDate": "2014-12-29T20:49:27.98Z",
               "id": 65275,
@@ -460,7 +484,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?api-ve
           }
         ]
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates/8"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates/8"
     },
     {
       "id": 9,
@@ -468,7 +493,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?api-ve
       "revisedBy": {
         "id": "d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
         "name": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
       },
       "revisedDate": "9999-01-01T00:00:00Z",
       "fields": {
@@ -497,12 +523,12 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?api-ve
           "newValue": "Tag1; Tag2"
         }
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates/9"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates/9"
     }
   ]
 }
 ```
-
 
 #### Sample code
 
@@ -528,7 +554,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?$skip=
       "revisedBy": {
         "id": "d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
         "name": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
       },
       "revisedDate": "2014-12-29T20:49:24.67Z",
       "fields": {
@@ -572,7 +599,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?$skip=
           "newValue": "Moving to the right area path"
         }
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates/2"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates/2"
     },
     {
       "id": 3,
@@ -580,7 +608,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?$skip=
       "revisedBy": {
         "id": "d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
         "name": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
       },
       "revisedDate": "2014-12-29T20:49:26.99Z",
       "fields": {
@@ -616,7 +645,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?$skip=
         "added": [
           {
             "rel": "System.LinkTypes.Related",
-            "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/300",
+            "url":
+              "https://mytfsserver/DefaultCollection/_apis/wit/workItems/300",
             "attributes": {
               "isLocked": false,
               "comment": "adding another task"
@@ -624,12 +654,12 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?$skip=
           }
         ]
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates/3"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates/3"
     }
   ]
 }
 ```
-
 
 #### Sample code
 
@@ -641,13 +671,15 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?$skip=
 GET https://{instance}/DefaultCollection/_apis/wit/workitems/{id}/updates/{revisionId}?api-version={version}
 ```
 
-| Parameter | Type    | Notes	
-|:----------|:--------|:------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance  | string  | TFS server name ({server:port}).
-| id        | int     | ID of the work item.
+| instance | string | TFS server name ({server:port}).
+| id | int | ID of the work item.
 | Query
-| api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
@@ -664,7 +696,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates/2?api-
   "revisedBy": {
     "id": "d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
     "name": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
   },
   "revisedDate": "2014-12-29T20:49:24.67Z",
   "fields": {
@@ -710,19 +743,21 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates/2?api-
   },
   "_links": {
     "self": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates/2"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates/2"
     },
     "workItemUpdates": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates"
     },
     "parent": {
       "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299"
     }
   },
-  "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates/2"
+  "url":
+    "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates/2"
 }
 ```
-
 
 #### Sample code
 
@@ -745,7 +780,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates/4?api-
   "revisedBy": {
     "id": "d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
     "name": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
   },
   "revisedDate": "2014-12-29T20:49:25.623Z",
   "relations": {
@@ -760,6 +796,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates/4?api-
       }
     ]
   },
-  "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates/4"
+  "url":
+    "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/updates/4"
 }
 ```

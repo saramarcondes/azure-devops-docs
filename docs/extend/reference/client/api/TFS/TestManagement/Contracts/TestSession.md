@@ -10,7 +10,6 @@ generated: true
 
 Module path: `TFS/TestManagement/Contracts`
 
-
 ### Members
 
 * `id`: number. ID of the test session
@@ -21,7 +20,7 @@ Module path: `TFS/TestManagement/Contracts`
 
 * `project`: [ShallowReference](../../../TFS/TestManagement/Contracts/ShallowReference.md). Project to which the test session belongs
 
-* `lastUpdatedBy`: [VSS_Common_Contracts.IdentityRef](../../../VSS/WebApi/Contracts/IdentityRef.md). Last Updated By  Reference
+* `lastUpdatedBy`: [VSS_Common_Contracts.IdentityRef](../../../VSS/WebApi/Contracts/IdentityRef.md). Last Updated By Reference
 
 * `lastUpdatedDate`: Date. Last updated date
 
@@ -42,6 +41,3 @@ Module path: `TFS/TestManagement/Contracts`
 * `owner`: [VSS_Common_Contracts.IdentityRef](../../../VSS/WebApi/Contracts/IdentityRef.md). Owner of the test session
 
 * `propertyBag`: [Contracts.PropertyBag](../../../TFS/TestManagement/Contracts/PropertyBag.md). Generic store for test session data
-
-
-

@@ -38,62 +38,62 @@ For information about agents and pipelines, see:
 
 ## Run the installation script on the target servers
 
-1. In the **Deployment groups** tab of **Azure Pipelines**, choose **+New** to create a new group.
+1.  In the **Deployment groups** tab of **Azure Pipelines**, choose **+New** to create a new group.
 
-1. Enter a name for the group, and optionally a description, then choose **Create**.
+1.  Enter a name for the group, and optionally a description, then choose **Create**.
 
-1. In the **Register machines using command line** section of the next page, select the target machine operating system.
+1.  In the **Register machines using command line** section of the next page, select the target machine operating system.
 
-1. Choose **Use a personal access token in the script for authentication**. [Learn more](https://go.microsoft.com/fwlink/?linkid=844181).
+1.  Choose **Use a personal access token in the script for authentication**. [Learn more](https://go.microsoft.com/fwlink/?linkid=844181).
 
-1. Choose **Copy the script to clipboard**.
+1.  Choose **Copy the script to clipboard**.
 
-1. Log onto each target machine in turn using the account with the [appropriate permissions](../../agents/v2-windows.md#permissions) and:
+1.  Log onto each target machine in turn using the account with the [appropriate permissions](../../agents/v2-windows.md#permissions) and:
 
-   - Open an Administrator PowerShell command prompt, paste in the script you copied, then execute it to register the machine with this group.
- 
-   - If you get an error when running the script that a secure channel could not be created, execute this command at the Administrator PowerShell prompt:
+    * Open an Administrator PowerShell command prompt, paste in the script you copied, then execute it to register the machine with this group.
 
-     `[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12` 
-   
-   - When prompted to configure tags for the agent, press `Y` and enter any tags you will use to identify subsets of the machines in the group for partial deployments.
+    * If you get an error when running the script that a secure channel could not be created, execute this command at the Administrator PowerShell prompt:
 
-     > Tags you assign allow you to limit deployment to specific servers when 
-     the deployment group is used in a [**Run on machine group** job](../../process/deployment-group-phases.md).
+      `[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12`
 
-   - When prompted for the user account, press *Return* to accept the defaults.
+    * When prompted to configure tags for the agent, press `Y` and enter any tags you will use to identify subsets of the machines in the group for partial deployments.
 
-   - Wait for the script to finish with the message `Service vstsagent.{organization-name}.{computer-name} started successfully`.<p />
+      > Tags you assign allow you to limit deployment to specific servers when
+      > the deployment group is used in a [**Run on machine group** job](../../process/deployment-group-phases.md).
 
-1. In the **Deployment groups** page of **Azure Pipelines**, open the **Machines** tab and verify that the agents are running. If the tags you configured are not visible, refresh the page.
- 
+    * When prompted for the user account, press _Return_ to accept the defaults.
+
+    * Wait for the script to finish with the message `Service vstsagent.{organization-name}.{computer-name} started successfully`.<p />
+
+1.  In the **Deployment groups** page of **Azure Pipelines**, open the **Machines** tab and verify that the agents are running. If the tags you configured are not visible, refresh the page.
+
 <a name="azureext"></a>
 
 ## Install the Azure Pipelines Agent Azure VM extension
 
-1. In the **Deployment groups** tab of **Azure Pipelines**, choose **+New** to create a new group.
+1.  In the **Deployment groups** tab of **Azure Pipelines**, choose **+New** to create a new group.
 
-1. Enter a name for the group, and optionally a description, then choose **Create**.
+1.  Enter a name for the group, and optionally a description, then choose **Create**.
 
-1. In the Azure portal, for each VM that will be included in the deployment group
-   open the **Extension** blade, choose **+ Add** to open the **New resource** list, and select **Azure Pipelines Agent**.
+1.  In the Azure portal, for each VM that will be included in the deployment group
+    open the **Extension** blade, choose **+ Add** to open the **New resource** list, and select **Azure Pipelines Agent**.
 
-   ![Installing the Azure Pipelines Agent extension](media/howto-provision-azure-vm-agents/azure-vm-create.png)
+    ![Installing the Azure Pipelines Agent extension](media/howto-provision-azure-vm-agents/azure-vm-create.png)
 
-1. In the **Install extension** blade, specify the name of the Azure Pipelines subscription to use. For example, if the URL is `https://dev.azure.com/contoso`, just specify **contoso**.
+1.  In the **Install extension** blade, specify the name of the Azure Pipelines subscription to use. For example, if the URL is `https://dev.azure.com/contoso`, just specify **contoso**.
 
-1. Specify the project name and the deployment group name.
-   
-1. Optionally, specify a name for the agent. If not specified, it uses the VM name appended with `-DG`.
+1.  Specify the project name and the deployment group name.
 
-1. Enter the [Personal Access Token (PAT)](https://go.microsoft.com/fwlink/?linkid=844181) to use for authentication against Azure Pipelines.
+1.  Optionally, specify a name for the agent. If not specified, it uses the VM name appended with `-DG`.
 
-1. Optionally, specify a comma-separated list of tags that will be configured on the agent.
-   Tags are not case-sensitive, and each must no more than 256 characters.
-   
-1. Choose **OK** to begin installation of the agent on this VM.
+1.  Enter the [Personal Access Token (PAT)](https://go.microsoft.com/fwlink/?linkid=844181) to use for authentication against Azure Pipelines.
 
-1. Add the extension to any other VMs you want to include in this deployment group.
+1.  Optionally, specify a comma-separated list of tags that will be configured on the agent.
+    Tags are not case-sensitive, and each must no more than 256 characters.
+
+1.  Choose **OK** to begin installation of the agent on this VM.
+
+1.  Add the extension to any other VMs you want to include in this deployment group.
 
 <a name="deploytask"></a>
 
@@ -162,49 +162,49 @@ For more information about ARM templates, see [Define resources in Azure Resourc
 
 To use the template:
 
-1. In the **Deployment groups** tab of **Azure Pipelines**, choose **+New** to create a new group.
+1.  In the **Deployment groups** tab of **Azure Pipelines**, choose **+New** to create a new group.
 
-1. Enter a name for the group, and optionally a description, then choose **Create**.
+1.  Enter a name for the group, and optionally a description, then choose **Create**.
 
-1. In the **Releases** tab of **Azure Pipelines**, create a release pipeline with a stage that contains the **Azure Resource Group Deployment** task.
+1.  In the **Releases** tab of **Azure Pipelines**, create a release pipeline with a stage that contains the **Azure Resource Group Deployment** task.
 
-1. Provide the parameters required for the task such as the Azure subscription, resource group name,
-   location, and template information, then save the release pipeline.
+1.  Provide the parameters required for the task such as the Azure subscription, resource group name,
+    location, and template information, then save the release pipeline.
 
-1. Create a release from the release pipeline to install the agents.
+1.  Create a release from the release pipeline to install the agents.
 
 ### Install agents using the advanced deployment options
 
-1. In the **Deployment groups** tab of **Azure Pipelines**, choose **+New** to create a new group.
+1.  In the **Deployment groups** tab of **Azure Pipelines**, choose **+New** to create a new group.
 
-1. Enter a name for the group, and optionally a description, then choose **Create**.
+1.  Enter a name for the group, and optionally a description, then choose **Create**.
 
-1. In the **Releases** tab of **Azure Pipelines**, create a release pipeline with a stage that contains the **Azure Resource Group Deployment** task.
+1.  In the **Releases** tab of **Azure Pipelines**, create a release pipeline with a stage that contains the **Azure Resource Group Deployment** task.
 
-1. Select the task and expand the **Advanced deployment options for virtual machines** section.
-   Configure the parameters in this section as follows:
+1.  Select the task and expand the **Advanced deployment options for virtual machines** section.
+    Configure the parameters in this section as follows:
 
-   * **Enable Prerequisites**: select **Configure with Deployment Group Agent**.
+    * **Enable Prerequisites**: select **Configure with Deployment Group Agent**.
 
-   * **Azure Pipelines/TFS endpoint**: Select an existing Team Foundation Server/TFS service connection that points
-     to your target. Agent registration for deployment groups requires access to your Visual
-     Studio project. If you do not have an existing service connection, choose **Add** and create one now.
-     Configure it to use a [Personal Access Token (PAT)](https://go.microsoft.com/fwlink/?linkid=844181)
-     with scope restricted to **Deployment Group**.
+    * **Azure Pipelines/TFS endpoint**: Select an existing Team Foundation Server/TFS service connection that points
+      to your target. Agent registration for deployment groups requires access to your Visual
+      Studio project. If you do not have an existing service connection, choose **Add** and create one now.
+      Configure it to use a [Personal Access Token (PAT)](https://go.microsoft.com/fwlink/?linkid=844181)
+      with scope restricted to **Deployment Group**.
 
-   * **Project**: Specify the project containing the deployment group.
+    * **Project**: Specify the project containing the deployment group.
 
-   * **Deployment Group**: Specify the name of the deployment group against which the agents will be registered.  
+    * **Deployment Group**: Specify the name of the deployment group against which the agents will be registered.
 
-   * **Copy Azure VM tags to agents**: When set (ticked), any tags already configured on the Azure VM will
-     be copied to the corresponding deployment group agent. By default, all
-     [Azure tags](/azure/azure-resource-manager/resource-group-using-tags)
-     are copied using the format `Key: Value`. For example, `Role: Web`.
+    * **Copy Azure VM tags to agents**: When set (ticked), any tags already configured on the Azure VM will
+      be copied to the corresponding deployment group agent. By default, all
+      [Azure tags](/azure/azure-resource-manager/resource-group-using-tags)
+      are copied using the format `Key: Value`. For example, `Role: Web`.
 
-1. Provide the other parameters required for the task such as the Azure subscription, resource group name,
-   and location, then save the release pipeline.
+1.  Provide the other parameters required for the task such as the Azure subscription, resource group name,
+    and location, then save the release pipeline.
 
-1. Create a release from the release pipeline to install the agents.
+1.  Create a release from the release pipeline to install the agents.
 
 ## Related topics
 

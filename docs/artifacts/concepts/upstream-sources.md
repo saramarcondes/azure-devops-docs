@@ -12,16 +12,16 @@ monikerRange: '>= tfs-2017'
 
 **Azure DevOps Services** | **TFS 2018** | **TFS 2017**
 
-Check the ([availability note](../overview.md#versions-compatibility)) to ensure compatibility. 
+Check the ([availability note](../overview.md#versions-compatibility)) to ensure compatibility.
 
 Upstream sources enable you to use a single feed to store both the packages you produce and the packages you consume from "remote feeds": both public feeds (e.g. npmjs.com, nuget.org, Maven Central, and PyPI) and authenticated feeds (i.e. other Azure DevOps Services feeds in your organization or in organizations in your Azure Active Directory (AAD) tenant). Once you've enabled an upstream source, any user connected to your feed can install a package from the remote feed, and your feed will save a copy.
 
 Already familiar with the concepts and want to jump right in? Start with these how-tos:
 
-- [How-to: Set up upstream sources](../how-to/set-up-upstream-sources.md)
-- [Use nuget.org as an upstream](../nuget/upstream-sources.md)
-- [Use npmjs.com as an upstream](../npm/upstream-sources.md)
-- [Use Maven Central as an upstream](../maven/upstream-sources.md)
+* [How-to: Set up upstream sources](../how-to/set-up-upstream-sources.md)
+* [Use nuget.org as an upstream](../nuget/upstream-sources.md)
+* [Use npmjs.com as an upstream](../npm/upstream-sources.md)
+* [Use Maven Central as an upstream](../maven/upstream-sources.md)
 
 ::: moniker range="azure-devops"
 
@@ -34,10 +34,10 @@ Already familiar with the concepts and want to jump right in? Start with these h
 
 Upstream sources enable you to manage all of your product's dependencies in a single feed. We recommend publishing all of the packages for a given product to that product's feed, and managing that product's dependencies from remote feeds in the same feed, via upstream sources. This setup has a few benefits:
 
-- **Simplicity:** your NuGet.config, .npmrc, or settings.xml contains exactly [one feed](#single-feed) (your feed).
-- **Determinism:** your feed resolves package requests in [order](#search-order), so rebuilding the same codebase at the same commit or changeset uses the same set of packages
-- **Provenance:** your feed knows the provenance of packages it saved via upstream sources, so you can verify that you're using the original package, not a custom or malicious copy published to your feed
-- **Peace of mind:** packages used via upstream sources are guaranteed to be saved in the feed on first use; if the upstream source is disabled/removed, or the remote feed [goes down](#offline-upstreams) or deletes a package you depend on, you can continue to develop and build
+* **Simplicity:** your NuGet.config, .npmrc, or settings.xml contains exactly [one feed](#single-feed) (your feed).
+* **Determinism:** your feed resolves package requests in [order](#search-order), so rebuilding the same codebase at the same commit or changeset uses the same set of packages
+* **Provenance:** your feed knows the provenance of packages it saved via upstream sources, so you can verify that you're using the original package, not a custom or malicious copy published to your feed
+* **Peace of mind:** packages used via upstream sources are guaranteed to be saved in the feed on first use; if the upstream source is disabled/removed, or the remote feed [goes down](#offline-upstreams) or deletes a package you depend on, you can continue to develop and build
 
 ## Best practices: feed consumers
 
@@ -77,7 +77,7 @@ In rare cases, some organizations choose to modify OSS packages to fix security 
 
 ### Use the suggested default view
 
-Upstream sources to Azure DevOps Services feeds require you to select a *view* of the remote feed when you add it as an upstream source. This prevents your upstream sources from creating a cycle, and it requires and encourages your upstream feed to provide you with a [complete package graph](package-graph.md). In general, the feed owner should [select the correct default view](#local), as the view communicates which packages and versions the producer wants consumers to use.
+Upstream sources to Azure DevOps Services feeds require you to select a _view_ of the remote feed when you add it as an upstream source. This prevents your upstream sources from creating a cycle, and it requires and encourages your upstream feed to provide you with a [complete package graph](package-graph.md). In general, the feed owner should [select the correct default view](#local), as the view communicates which packages and versions the producer wants consumers to use.
 
 ## Best practices: feed owners/package producers
 
@@ -87,7 +87,7 @@ To make your feed easily usable as an upstream source to other feeds, consider a
 
 ### When in doubt, `@local` is your default view
 
-If you don't use [views](views.md), the `@local` view should be your default view (and is the default view on all newly-created feeds). @local contains all packages uploaded/pushed/published to the feed from a package client (e.g. nuget.exe) *and* all packages saved from any upstream source. @local, like [all views](views.md), does **not** include packages that are available in the feed's upstream sources but have never been saved into the feed.
+If you don't use [views](views.md), the `@local` view should be your default view (and is the default view on all newly-created feeds). @local contains all packages uploaded/pushed/published to the feed from a package client (e.g. nuget.exe) _and_ all packages saved from any upstream source. @local, like [all views](views.md), does **not** include packages that are available in the feed's upstream sources but have never been saved into the feed.
 
 If you do use views to communicate release quality, you can set the default view to whichever view contains the packages you want to make available to your consumers.
 
@@ -101,9 +101,9 @@ Because your consumers require a [complete graph](package-graph.md) to successfu
 
 For package managers that support multiple feeds (like NuGet and Maven), the order in which feeds are consulted is sometimes unclear or non-deterministic (for example in NuGet, parallel requests are made to all feeds in the config file and the first response wins). Upstream sources prevent this non-determinism by searching the feed and its upstream sources using the following order:
 
-1. Packages pushed to the feed
-2. Packages saved via an upstream source
-3. Packages available via upstream sources: each upstream is searched in the order it's listed in the feed's configuration
+1.  Packages pushed to the feed
+2.  Packages saved via an upstream source
+3.  Packages available via upstream sources: each upstream is searched in the order it's listed in the feed's configuration
 
 To take advantage of the determinism provided by upstream sources, you should ensure that your client's configuration file [only references your product feed](#single-feed), and not any other feeds like the public sources.
 

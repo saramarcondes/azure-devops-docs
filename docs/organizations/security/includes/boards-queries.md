@@ -18,7 +18,7 @@ ms.date: 03/25/2020
 </tr>
 <tbody valign="top" align="center">
 <tr>
-<td align="left">View and run managed queries 
+<td align="left">View and run managed queries
 </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -67,10 +67,8 @@ ms.date: 03/25/2020
 </tr>
 </tbody>
 </table>
-  
-::: moniker-end    
 
-
+::: moniker-end
 
 ::: moniker range="<= tfs-2015"
 
@@ -84,7 +82,7 @@ ms.date: 03/25/2020
 </tr>
 <tbody valign="top" align="center">
 <tr>
-<td align="left">View and run managed queries 
+<td align="left">View and run managed queries
 </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -126,7 +124,5 @@ ms.date: 03/25/2020
 </tr>
 </tbody>
 </table>
-  
-::: moniker-end    
 
-
+::: moniker-end

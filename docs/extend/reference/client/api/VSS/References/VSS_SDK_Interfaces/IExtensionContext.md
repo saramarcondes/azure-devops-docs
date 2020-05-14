@@ -15,8 +15,7 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Context about the app that owns the content that is being hosted 
+Context about the app that owns the content that is being hosted
 
 ### Members
 
@@ -27,4 +26,3 @@ Context about the app that owns the content that is being hosted
 * `version`: string. Version of the extension
 
 * `baseUri`: string. The base uri to be used with relative urls in contribution properties
-

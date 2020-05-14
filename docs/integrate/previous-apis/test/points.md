@@ -24,22 +24,24 @@ ms.date: 08/04/2016
 GET https://{instance}/DefaultCollection/{project}/_apis/test/plans/{plan}/suites/{suite}/points?api-version={version}[&witFields={string}&configurationId={string}&testCaseId={string}&testPointIds={string}&includePointDetails={bool}&$skip={int}&$top={int}]
 ```
 
-| Parameter           | Type   | Default | Notes
-|:--------------------|:------|:--------|:---------------------------------
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
+
+
 | URL
-| instance            | string |         | TFS server name ({server:port}).
-| project             | string |         | Name or ID of the project.
-| plan                | int    |         | ID of the test plan.
-| suite               | int    |         | ID of the suite that contains the points.
+| instance | string | | TFS server name ({server:port}).
+| project | string | | Name or ID of the project.
+| plan | int | | ID of the test plan.
+| suite | int | | ID of the suite that contains the points.
 | Query
-| api-version         | string |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| witFields           | string |         | Comma-separated list of work item field names.
-| configurationId     | string |         | Get test points for specific configuration.
-| testCaseId          | string |         | Get test points for a specific test case, valid when configurationId is not set.
-| testPointIds        | string |         | Get test points for comma-separated list of test point IDs, valid only when configurationId and testCaseId are not set.
-| includePointDetails | bool   | false   | Include all properties for the test point.
-| $skip               | int    |         | Number of test points to skip.
-| $top                | int    |         | Number of test points to return.
+| api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| witFields | string | | Comma-separated list of work item field names.
+| configurationId | string | | Get test points for specific configuration.
+| testCaseId | string | | Get test points for a specific test case, valid when configurationId is not set.
+| testPointIds | string | | Get test points for comma-separated list of test point IDs, valid only when configurationId and testCaseId are not set.
+| includePointDetails | bool | false | Include all properties for the test point.
+| $skip | int | | Number of test points to skip.
+| $top | int | | Number of test points to return.
 
 #### Sample request
 
@@ -54,7 +56,8 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
   "value": [
     {
       "id": 1,
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/1",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/1",
       "assignedTo": {
         "id": "d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
         "displayName": "Jamal Hartnett"
@@ -87,7 +90,8 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
     },
     {
       "id": 2,
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/2",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/2",
       "assignedTo": {
         "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
         "displayName": "Fabrikam Fiber"
@@ -123,7 +127,6 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
 }
 ```
 
-
 ### With fields
 
 #### Sample request
@@ -139,7 +142,8 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
   "value": [
     {
       "id": 1,
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/1",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/1",
       "assignedTo": {
         "id": "d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
         "displayName": "Jamal Hartnett"
@@ -184,7 +188,8 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
     },
     {
       "id": 2,
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/2",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/2",
       "assignedTo": {
         "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
         "displayName": "Fabrikam Fiber"
@@ -232,7 +237,6 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
 }
 ```
 
-
 ### By configuration
 
 #### Sample request
@@ -248,7 +252,8 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
   "value": [
     {
       "id": 1,
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/1",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/1",
       "assignedTo": {
         "id": "d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
         "displayName": "Jamal Hartnett"
@@ -281,7 +286,8 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
     },
     {
       "id": 2,
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/2",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/2",
       "assignedTo": {
         "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
         "displayName": "Fabrikam Fiber"
@@ -316,7 +322,6 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
   "count": 2
 }
 ```
-
 
 ### By test case
 
@@ -333,7 +338,8 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
   "value": [
     {
       "id": 1,
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/1",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/1",
       "assignedTo": {
         "id": "d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
         "displayName": "Jamal Hartnett"
@@ -368,7 +374,6 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
   "count": 1
 }
 ```
-
 
 ### Specific points
 
@@ -385,7 +390,8 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
   "value": [
     {
       "id": 1,
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/1",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/1",
       "assignedTo": {
         "id": "d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
         "displayName": "Jamal Hartnett"
@@ -418,7 +424,8 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
     },
     {
       "id": 2,
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/2",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/2",
       "assignedTo": {
         "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
         "displayName": "Fabrikam Fiber"
@@ -454,7 +461,6 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
 }
 ```
 
-
 ### With details
 
 #### Sample request
@@ -470,13 +476,16 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
   "value": [
     {
       "id": 1,
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/1",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/1",
       "assignedTo": {
         "id": "d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
         "displayName": "Jamal Hartnett",
         "uniqueName": "fabrikamfiber4@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
       },
       "configuration": {
         "id": "2",
@@ -486,19 +495,23 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
       "lastTestRun": {
         "id": "28",
         "name": "sprint1 (Manual)",
-        "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/28"
+        "url":
+          "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/28"
       },
       "lastResult": {
         "id": "100000",
-        "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/28/Results/100000"
+        "url":
+          "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/28/Results/100000"
       },
       "lastUpdatedDate": "2014-05-28T16:14:41.393Z",
       "lastUpdatedBy": {
         "id": "d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
         "displayName": "Jamal Hartnett",
         "uniqueName": "fabrikamfiber4@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
       },
       "outcome": "Passed",
       "revision": 22,
@@ -506,17 +519,20 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
       "suite": {
         "id": "1",
         "name": "sprint1",
-        "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1"
+        "url":
+          "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1"
       },
       "testCase": {
         "id": "39",
         "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/39",
-        "webUrl": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=39"
+        "webUrl":
+          "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=39"
       },
       "testPlan": {
         "id": "1",
         "name": "sprint1",
-        "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
+        "url":
+          "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
       },
       "workItemProperties": [
         {
@@ -529,13 +545,16 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
     },
     {
       "id": 2,
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/2",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/2",
       "assignedTo": {
         "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
         "displayName": "Fabrikam Fiber",
         "uniqueName": "fabrikamfiber1@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
       },
       "configuration": {
         "id": "2",
@@ -545,19 +564,23 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
       "lastTestRun": {
         "id": "4",
         "name": "sprint1 (Manual)",
-        "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4"
+        "url":
+          "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4"
       },
       "lastResult": {
         "id": "100001",
-        "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100001"
+        "url":
+          "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/4/Results/100001"
       },
       "lastUpdatedDate": "2014-05-04T13:18:11.043Z",
       "lastUpdatedBy": {
         "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
         "displayName": "Fabrikam Fiber",
         "uniqueName": "fabrikamfiber1@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
       },
       "outcome": "Failed",
       "revision": 1,
@@ -565,17 +588,20 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
       "suite": {
         "id": "1",
         "name": "sprint1",
-        "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1"
+        "url":
+          "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1"
       },
       "testCase": {
         "id": "40",
         "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/40",
-        "webUrl": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=40"
+        "webUrl":
+          "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=40"
       },
       "testPlan": {
         "id": "1",
         "name": "sprint1",
-        "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
+        "url":
+          "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
       },
       "workItemProperties": [
         {
@@ -590,7 +616,6 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
   "count": 2
 }
 ```
-
 
 ### A page at a time
 
@@ -607,7 +632,8 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
   "value": [
     {
       "id": 2,
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/2",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/2",
       "assignedTo": {
         "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
         "displayName": "Fabrikam Fiber"
@@ -643,24 +669,25 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
 }
 ```
 
-
 ## Get a test point
 
 ```no-highlight
 GET https://{instance}/DefaultCollection/{project}/_apis/test/plans/{plan}/suites/{suite}/points/{point}?api-version={version}[&witFields={string}]
 ```
 
-| Parameter           | Type   | Notes
-|:--------------------|:------|:---------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance            | string | TFS server name ({server:port}).
-| project             | string | Name or ID of the project.
-| plan                | int    | ID of the test plan.
-| suite               | int    | ID of the suite that contains the point.
-| point               | int    | ID of the test point to get.
+| instance | string | TFS server name ({server:port}).
+| project | string | Name or ID of the project.
+| plan | int | ID of the test plan.
+| suite | int | ID of the suite that contains the point.
+| point | int | ID of the test point to get.
 | Query
-| api-version         | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| witFields           | string | Comma-separated list of work item field names.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| witFields | string | Comma-separated list of work item field names.
 
 #### Sample request
 
@@ -673,13 +700,16 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
 ```json
 {
   "id": 1,
-  "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/1",
+  "url":
+    "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/1",
   "assignedTo": {
     "id": "d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
     "displayName": "Jamal Hartnett",
     "uniqueName": "fabrikamfiber4@hotmail.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
   },
   "configuration": {
     "id": "2",
@@ -689,19 +719,23 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
   "lastTestRun": {
     "id": "28",
     "name": "sprint1 (Manual)",
-    "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/28"
+    "url":
+      "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/28"
   },
   "lastResult": {
     "id": "100000",
-    "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/28/Results/100000"
+    "url":
+      "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/28/Results/100000"
   },
   "lastUpdatedDate": "2014-05-28T16:14:41.393Z",
   "lastUpdatedBy": {
     "id": "d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
     "displayName": "Jamal Hartnett",
     "uniqueName": "fabrikamfiber4@hotmail.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
   },
   "outcome": "Passed",
   "revision": 22,
@@ -709,17 +743,20 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
   "suite": {
     "id": "1",
     "name": "sprint1",
-    "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1"
+    "url":
+      "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1"
   },
   "testCase": {
     "id": "39",
     "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/39",
-    "webUrl": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=39"
+    "webUrl":
+      "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=39"
   },
   "testPlan": {
     "id": "1",
     "name": "sprint1",
-    "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
+    "url":
+      "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
   },
   "workItemProperties": [
     {
@@ -731,7 +768,6 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
   ]
 }
 ```
-
 
 ### With fields
 
@@ -746,13 +782,16 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
 ```json
 {
   "id": 1,
-  "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/1",
+  "url":
+    "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/1",
   "assignedTo": {
     "id": "d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
     "displayName": "Jamal Hartnett",
     "uniqueName": "fabrikamfiber4@hotmail.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
   },
   "configuration": {
     "id": "2",
@@ -762,19 +801,23 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
   "lastTestRun": {
     "id": "28",
     "name": "sprint1 (Manual)",
-    "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/28"
+    "url":
+      "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/28"
   },
   "lastResult": {
     "id": "100000",
-    "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/28/Results/100000"
+    "url":
+      "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/28/Results/100000"
   },
   "lastUpdatedDate": "2014-05-28T16:14:41.393Z",
   "lastUpdatedBy": {
     "id": "d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
     "displayName": "Jamal Hartnett",
     "uniqueName": "fabrikamfiber4@hotmail.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
   },
   "outcome": "Passed",
   "revision": 22,
@@ -782,17 +825,20 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
   "suite": {
     "id": "1",
     "name": "sprint1",
-    "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1"
+    "url":
+      "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1"
   },
   "testCase": {
     "id": "39",
     "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/39",
-    "webUrl": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=39"
+    "webUrl":
+      "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=39"
   },
   "testPlan": {
     "id": "1",
     "name": "sprint1",
-    "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
+    "url":
+      "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
   },
   "workItemProperties": [
     {
@@ -817,15 +863,16 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
 }
 ```
 
-
 ## Update test points
 
 ```no-highlight
 PATCH https://{instance}/DefaultCollection/{project}/_apis/test/plans/{plan}/suites/{suite}/points/{point}?api-version={version}
 ```
+
 ```http
 Content-Type: application/json
 ```
+
 ```json
 {
   "resetToActive": { bool },
@@ -838,21 +885,22 @@ Content-Type: application/json
 }
 ```
 
-| Parameter           | Type   | Notes
-|:--------------------|:------|:---------------------------------
-| URL
-| instance            | string     | TFS server name ({server:port}).
-| project             | string     | Name or ID of the project.
-| plan                | int        | ID of the test plan.
-| suite               | int        | ID of the suite that contains the point.
-| point               | int,int... | ID of the test point to get.<br/>Use a comma-separated list of IDs to update multiple test points.
-| Query
-| api-version         | string     | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| Body
-| resetToActive       | bool       | Reset test points to active.
-| outcome             | enum ( None, Passed, Failed, Inconclusive, Timeout, Aborted, Blocked , NotExecuted, Warning, Error, NotApplicable, Paused }  | Outcome value for a test point.<br/>Not valid if resetToActive is true.
-| tester              | string     | The tester's Team Foundation ID or display name.
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
 
+
+| URL
+| instance | string | TFS server name ({server:port}).
+| project | string | Name or ID of the project.
+| plan | int | ID of the test plan.
+| suite | int | ID of the suite that contains the point.
+| point | int,int... | ID of the test point to get.<br/>Use a comma-separated list of IDs to update multiple test points.
+| Query
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| Body
+| resetToActive | bool | Reset test points to active.
+| outcome | enum ( None, Passed, Failed, Inconclusive, Timeout, Aborted, Blocked , NotExecuted, Warning, Error, NotApplicable, Paused } | Outcome value for a test point.<br/>Not valid if resetToActive is true.
+| tester | string | The tester's Team Foundation ID or display name.
 
 ### Re-activate
 
@@ -861,6 +909,7 @@ Content-Type: application/json
 ```
 PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1/suites/1/points/1?api-version=1.0
 ```
+
 ```json
 {
   "resetToActive": "true"
@@ -875,13 +924,16 @@ PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans
   "value": [
     {
       "id": 1,
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/1",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/1",
       "assignedTo": {
         "id": "d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
         "displayName": "Jamal Hartnett",
         "uniqueName": "fabrikamfiber4@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
       },
       "configuration": {
         "id": "2",
@@ -899,8 +951,10 @@ PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "outcome": "Unspecified",
       "revision": 23,
@@ -908,17 +962,20 @@ PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans
       "suite": {
         "id": "1",
         "name": "sprint1",
-        "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1"
+        "url":
+          "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1"
       },
       "testCase": {
         "id": "39",
         "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/39",
-        "webUrl": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=39"
+        "webUrl":
+          "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=39"
       },
       "testPlan": {
         "id": "1",
         "name": "sprint1",
-        "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
+        "url":
+          "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
       },
       "workItemProperties": [
         {
@@ -933,7 +990,6 @@ PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans
 }
 ```
 
-
 ### Set the outcome
 
 #### Sample request
@@ -941,6 +997,7 @@ PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans
 ```
 PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1/suites/1/points/1?api-version=1.0
 ```
+
 ```json
 {
   "outcome": "Passed"
@@ -955,13 +1012,16 @@ PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans
   "value": [
     {
       "id": 1,
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/1",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/1",
       "assignedTo": {
         "id": "d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
         "displayName": "Jamal Hartnett",
         "uniqueName": "fabrikamfiber4@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
       },
       "configuration": {
         "id": "2",
@@ -971,19 +1031,23 @@ PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans
       "lastTestRun": {
         "id": "30",
         "name": "sprint1 (Manual)",
-        "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/30"
+        "url":
+          "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/30"
       },
       "lastResult": {
         "id": "100000",
-        "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/30/Results/100000"
+        "url":
+          "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/30/Results/100000"
       },
       "lastUpdatedDate": "2014-05-28T16:38:54.383Z",
       "lastUpdatedBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "outcome": "Passed",
       "revision": 23,
@@ -991,17 +1055,20 @@ PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans
       "suite": {
         "id": "1",
         "name": "sprint1",
-        "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1"
+        "url":
+          "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1"
       },
       "testCase": {
         "id": "39",
         "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/39",
-        "webUrl": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=39"
+        "webUrl":
+          "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=39"
       },
       "testPlan": {
         "id": "1",
         "name": "sprint1",
-        "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
+        "url":
+          "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
       },
       "workItemProperties": [
         {
@@ -1016,7 +1083,6 @@ PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans
 }
 ```
 
-
 ### Change the tester
 
 #### Sample request
@@ -1024,6 +1090,7 @@ PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans
 ```
 PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1/suites/1/points/1?api-version=1.0
 ```
+
 ```json
 {
   "tester": {
@@ -1040,13 +1107,16 @@ PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans
   "value": [
     {
       "id": 1,
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/1",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1/Points/1",
       "assignedTo": {
         "id": "d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
         "displayName": "Jamal Hartnett",
         "uniqueName": "fabrikamfiber4@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
       },
       "configuration": {
         "id": "2",
@@ -1056,19 +1126,23 @@ PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans
       "lastTestRun": {
         "id": "30",
         "name": "sprint1 (Manual)",
-        "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/30"
+        "url":
+          "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/30"
       },
       "lastResult": {
         "id": "100000",
-        "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/30/Results/100000"
+        "url":
+          "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Runs/30/Results/100000"
       },
       "lastUpdatedDate": "2014-05-28T16:38:54.993Z",
       "lastUpdatedBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "outcome": "Passed",
       "revision": 24,
@@ -1076,17 +1150,20 @@ PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans
       "suite": {
         "id": "1",
         "name": "sprint1",
-        "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1"
+        "url":
+          "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1"
       },
       "testCase": {
         "id": "39",
         "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/39",
-        "webUrl": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=39"
+        "webUrl":
+          "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=39"
       },
       "testPlan": {
         "id": "1",
         "name": "sprint1",
-        "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
+        "url":
+          "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
       },
       "workItemProperties": [
         {
@@ -1101,15 +1178,16 @@ PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans
 }
 ```
 
-
 ## Query test points
 
 ```no-highlight
 POST https://{instance}/DefaultCollection/{project}/_apis/test/points/?api-version={version}&$skip={int}&$top={int}
 ```
+
 ```http
 Content-Type: application/json
 ```
+
 ```json
 {
 	"pointsFilter": {
@@ -1123,33 +1201,32 @@ Content-Type: application/json
 }
 ```
 
-| Parameter         | Type   | Default | Notes
-|:------------------|:-------|:--------|:------------------------
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
+
+
 | URL
-| instance          | string |         | TFS server name ({server:port}).
-| project           | string |         | Name or ID of the project.
+| instance | string | | TFS server name ({server:port}).
+| project | string | | Name or ID of the project.
 | Query
-| api-version       | string |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| $skip             | int    |         | Number of test points to skip.
-| $top              | int    |         | Number of test points to return.
+| api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| $skip | int | | Number of test points to skip.
+| $top | int | | Number of test points to return.
 | Body
-| testcaseIds                          | int   |		                              | Testcase ids list (Mandatory input).
-| ConfigurationNames                   | string      |       No filter                         | List of Configurations for filtering.
-| Testers.DisplayName                  | string   | No filter | DisplayName of testers for filtering.
+| testcaseIds | int | | Testcase ids list (Mandatory input).
+| ConfigurationNames | string | No filter | List of Configurations for filtering.
+| Testers.DisplayName | string | No filter | DisplayName of testers for filtering.
 
 #### Sample request
 
 ```
 POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/points?api-version=3.1-preview.2
 ```
+
 ```json
 {
   "PointsFilter": {
-    "TestcaseIds": [
-      7,
-      8,
-      9
-    ]
+    "TestcaseIds": [7, 8, 9]
   }
 }
 ```
@@ -1161,7 +1238,8 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/points
   "points": [
     {
       "id": 1,
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/5/Suites/6/Points/1",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/5/Suites/6/Points/1",
       "assignedTo": {
         "id": "7d7832db-0b41-4abc-8243-2eeca1d71861",
         "displayName": "Fabrikam Fiber"
@@ -1198,7 +1276,8 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/points
     },
     {
       "id": 2,
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/5/Suites/6/Points/2",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/5/Suites/6/Points/2",
       "assignedTo": {
         "id": "edfab9de-17c2-49ef-99cb-abfc159a1224",
         "displayName": "Fabrikam Fiber2"
@@ -1235,7 +1314,8 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/points
     },
     {
       "id": 3,
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/5/Suites/6/Points/3",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/5/Suites/6/Points/3",
       "assignedTo": {
         "id": "a25844d1-53bd-4d98-9896-67f671cc1b7a",
         "displayName": "Fabrikam Fiber3"
@@ -1272,7 +1352,8 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/points
     },
     {
       "id": 4,
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/5/Suites/6/Points/4",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/5/Suites/6/Points/4",
       "assignedTo": {
         "id": "7d7832db-0b41-4abc-8243-2eeca1d71861",
         "displayName": "Fabrikam Fiber"
@@ -1309,7 +1390,8 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/points
     },
     {
       "id": 5,
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/5/Suites/6/Points/5",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/5/Suites/6/Points/5",
       "assignedTo": {
         "id": "7d7832db-0b41-4abc-8243-2eeca1d71861",
         "displayName": "Fabrikam Fiber"
@@ -1346,7 +1428,8 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/points
     },
     {
       "id": 6,
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/5/Suites/6/Points/6",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/5/Suites/6/Points/6",
       "assignedTo": {
         "id": "7d7832db-0b41-4abc-8243-2eeca1d71861",
         "displayName": "Fabrikam Fiber"
@@ -1383,7 +1466,8 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/points
     },
     {
       "id": 7,
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/5/Suites/6/Points/7",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/5/Suites/6/Points/7",
       "assignedTo": {
         "id": "7d7832db-0b41-4abc-8243-2eeca1d71861",
         "displayName": "Fabrikam Fiber"
@@ -1420,15 +1504,10 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/points
     }
   ],
   "pointsFilter": {
-    "testcaseIds": [
-      7,
-      8,
-      9
-    ]
+    "testcaseIds": [7, 8, 9]
   }
 }
 ```
-
 
 ### With Configuration filter
 
@@ -1437,17 +1516,12 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/points
 ```
 POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/points?api-version=3.1-preview.2
 ```
+
 ```json
 {
   "PointsFilter": {
-    "TestcaseIds": [
-      7,
-      8,
-      9
-    ],
-    "ConfigurationNames": [
-      "Windows 10"
-    ]
+    "TestcaseIds": [7, 8, 9],
+    "ConfigurationNames": ["Windows 10"]
   }
 }
 ```
@@ -1459,7 +1533,8 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/points
   "points": [
     {
       "id": 1,
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/5/Suites/6/Points/1",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/5/Suites/6/Points/1",
       "assignedTo": {
         "id": "7d7832db-0b41-4abc-8243-2eeca1d71861",
         "displayName": "Fabrikam Fiber"
@@ -1496,7 +1571,8 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/points
     },
     {
       "id": 6,
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/5/Suites/6/Points/6",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/5/Suites/6/Points/6",
       "assignedTo": {
         "id": "7d7832db-0b41-4abc-8243-2eeca1d71861",
         "displayName": "Fabrikam Fiber"
@@ -1533,7 +1609,8 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/points
     },
     {
       "id": 7,
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/5/Suites/6/Points/7",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/5/Suites/6/Points/7",
       "assignedTo": {
         "id": "7d7832db-0b41-4abc-8243-2eeca1d71861",
         "displayName": "Fabrikam Fiber"
@@ -1570,18 +1647,11 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/points
     }
   ],
   "pointsFilter": {
-    "testcaseIds": [
-      7,
-      8,
-      9
-    ],
-    "configurationNames": [
-      "Windows 10"
-    ]
+    "testcaseIds": [7, 8, 9],
+    "configurationNames": ["Windows 10"]
   }
 }
 ```
-
 
 ### With tester filter
 
@@ -1590,14 +1660,11 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/points
 ```
 POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/points?api-version=3.1-preview.2
 ```
+
 ```json
 {
   "PointsFilter": {
-    "TestcaseIds": [
-      7,
-      8,
-      9
-    ],
+    "TestcaseIds": [7, 8, 9],
     "Testers": [
       {
         "DisplayName": "Fabrikam Fiber1"
@@ -1614,7 +1681,8 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/points
   "points": [
     {
       "id": 2,
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/5/Suites/6/Points/2",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/5/Suites/6/Points/2",
       "assignedTo": {
         "id": "edfab9de-17c2-49ef-99cb-abfc159a1224",
         "displayName": "Fabrikam Fiber1"
@@ -1651,11 +1719,7 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/points
     }
   ],
   "pointsFilter": {
-    "testcaseIds": [
-      7,
-      8,
-      9
-    ],
+    "testcaseIds": [7, 8, 9],
     "testers": [
       {
         "id": null,
@@ -1666,7 +1730,6 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/points
 }
 ```
 
-
 ### fetch a page using skip , top
 
 #### Sample request
@@ -1674,14 +1737,11 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/points
 ```
 POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/points?$skip=1&$top=1&api-version=3.1-preview.2
 ```
+
 ```json
 {
   "PointsFilter": {
-    "TestcaseIds": [
-      7,
-      8,
-      9
-    ]
+    "TestcaseIds": [7, 8, 9]
   }
 }
 ```
@@ -1693,7 +1753,8 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/points
   "points": [
     {
       "id": 2,
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/5/Suites/6/Points/2",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/5/Suites/6/Points/2",
       "assignedTo": {
         "id": "edfab9de-17c2-49ef-99cb-abfc159a1224",
         "displayName": "Fabrikam Fiber2"
@@ -1730,11 +1791,7 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/points
     }
   ],
   "pointsFilter": {
-    "testcaseIds": [
-      7,
-      8,
-      9
-    ]
+    "testcaseIds": [7, 8, 9]
   }
 }
 ```

@@ -15,10 +15,8 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Information about a control interface that is exposed across iframe boundaries 
+Information about a control interface that is exposed across iframe boundaries
 
 ### Members
 
-* `methodNames`: string[]. 
-
+* `methodNames`: string[].

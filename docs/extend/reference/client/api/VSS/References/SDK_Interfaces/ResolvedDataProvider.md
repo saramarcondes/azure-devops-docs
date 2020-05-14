@@ -15,12 +15,10 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Entry for a specific data provider&#x27;s resulting data 
+Entry for a specific data provider&#x27;s resulting data
 
 ### Members
 
-* `error`: string. 
+* `error`: string.
 
-* `id`: string. 
-
+* `id`: string.

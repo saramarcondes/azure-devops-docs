@@ -12,14 +12,16 @@ ms.date: 08/04/2016
 
 # Debug a web extension
 
-Modern web browsers, like Microsoft Edge and Google Chrome, include tools for debugging the JavaScript that runs on a web page. Usually these are referred to as the "F12 Tools", "Inspector", or "Developer Tools". Since your extension is loaded onto an Azure DevOps Services page in an iframe, you can use these browser tools to debug the JavaScript portion of your extension. The standard shortcut to launch the browser developer tools is F12. 
+Modern web browsers, like Microsoft Edge and Google Chrome, include tools for debugging the JavaScript that runs on a web page. Usually these are referred to as the "F12 Tools", "Inspector", or "Developer Tools". Since your extension is loaded onto an Azure DevOps Services page in an iframe, you can use these browser tools to debug the JavaScript portion of your extension. The standard shortcut to launch the browser developer tools is F12.
 
-![IE11 F12 Tools](../media-procedures/debug-in-browser/ief12tools.png)    
-*The Internet Explorer 11 F12 Tools*
+![IE11 F12 Tools](../media-procedures/debug-in-browser/ief12tools.png)  
+_The Internet Explorer 11 F12 Tools_
 
 <a id="ensure-your-extension-is-loaded"></a>
+
 ## Ensure your extension is loaded
-Your extension is sandboxed in the browser with an iframe. The host page (served from visualstudio.com) can't directly access elements and scripts within the iframe, and the extension can't directly access the host. Because extensions are loaded on-demand, your extension is not loaded in its iframe until the user performs an action that causes it to load. For example, if your extension contributes new items to a menu, the extension won't get loaded into an iframe until the relevant menu is created and displayed, such as when a context menu is invoked on right-click. 
+
+Your extension is sandboxed in the browser with an iframe. The host page (served from visualstudio.com) can't directly access elements and scripts within the iframe, and the extension can't directly access the host. Because extensions are loaded on-demand, your extension is not loaded in its iframe until the user performs an action that causes it to load. For example, if your extension contributes new items to a menu, the extension won't get loaded into an iframe until the relevant menu is created and displayed, such as when a context menu is invoked on right-click.
 
 You can check the "Target" dropdown in your Developer Tools to see if your extension is currently loaded:
 
@@ -27,7 +29,7 @@ You can check the "Target" dropdown in your Developer Tools to see if your exten
 
 ## Inspecting your extension's iframe
 
- By default, when you launch the Developer Tools, the *Developer Console* is in the context if the primary page, or the *top window*. In other words, you're able to access the top window's DOM and state. Use the "Target" dropdown (shown above) to switch the context to your extension's frame. You are now able to access the DOM and global state of your extension's frame.
+By default, when you launch the Developer Tools, the _Developer Console_ is in the context if the primary page, or the _top window_. In other words, you're able to access the top window's DOM and state. Use the "Target" dropdown (shown above) to switch the context to your extension's frame. You are now able to access the DOM and global state of your extension's frame.
 
 ![IE11 Extension Frame Location](../media-procedures/debug-in-browser/framelocation.png)
 
@@ -41,7 +43,7 @@ If your extension's iframe is placed in the foreground, you can use the regular 
 
 ## Using the debugger
 
-Setting a breakpoint within your extensions scripts is easy. [Once your extension is loaded](#ensure-your-extension-is-loaded), you can find it in the list of source files in the Debugger. Since there're a lot of files in the list, use the search filter to narrow the list to find the right file. Most browser developer tools use CTRL+O to perform a search through names of source files. 
+Setting a breakpoint within your extensions scripts is easy. [Once your extension is loaded](#ensure-your-extension-is-loaded), you can find it in the list of source files in the Debugger. Since there're a lot of files in the list, use the search filter to narrow the list to find the right file. Most browser developer tools use CTRL+O to perform a search through names of source files.
 
 ![Debugger source files](../media-procedures/debug-in-browser/debuggerfiles.png)
 
@@ -51,17 +53,17 @@ Once you select your script, you canselectin the gutter to set breakpoints. If t
 
 **Tip**: You may need to set a breakpoint in a script block that is executed when your extension is first loaded, such as during initialization. If that is the case, ensure your extension is loaded, set the breakpoint, then refresh the page. Once the page is refreshed, cause your extension to get loaded again. The breakpoint is persisted and execution should pause when it is encountered during initialization.
 
-![Hitting a breakpoint during extension initialization](../media-procedures/debug-in-browser/initbreakpoint.png)    
-*Paused script execution during extension initialization*
+![Hitting a breakpoint during extension initialization](../media-procedures/debug-in-browser/initbreakpoint.png)  
+_Paused script execution during extension initialization_
 
 ### Viewing callback context objects
 
 Extension developers often need context information from Azure DevOps Services to perform various actions. For example, an extension that adds a Work Item Action would probably be interested in details about the work item that is being viewed. When Azure DevOps Services makes a call to a function contributed by an extension, it passes an object containing relevant context information as an argument to the function. The most reliable way to determine the format of data in this callback is by using the Debugger to inspect this context object.
 
-1. Set a breakpoint on the first line of the function whose context object you want to inspect.
+1.  Set a breakpoint on the first line of the function whose context object you want to inspect.
 
-2. Perform the action that causes the function to get executed. Script execution pauses at the breakpoint.
+2.  Perform the action that causes the function to get executed. Script execution pauses at the breakpoint.
 
-3. Hover over the function argument to see its value. You can expand the object hierarchy as needed. Alternatively, you can type the name of the argument in the console to see its value.
+3.  Hover over the function argument to see its value. You can expand the object hierarchy as needed. Alternatively, you can type the name of the argument in the console to see its value.
 
 ![Callback context object inspection](../media-procedures/debug-in-browser/contextobject.png)

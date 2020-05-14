@@ -34,6 +34,7 @@ In a release pipeline, repositories aren't available.
 [Release artifact variables](https://docs.microsoft.com/azure/devops/pipelines/release/variables?view=azure-devops&tabs=batch) are available.
 
 For example, to print the name of the `self` repo in a YAML pipeline:
+
 ```
 steps:
 - script: echo ${{ resources.repositories['self'].name }}
@@ -42,24 +43,22 @@ steps:
 Repositories contain these properties:
 
 ```javascript
-resources['repositories']['self'] =
-{
-	"alias": "self",
-	"id": "<repo guid>",
-	"type": "Git",
-	"version": "<commit hash>",
-	"name": "<repo name>",
-	"project": "<project guid>",
-	"defaultBranch": "<default ref of repo, like 'refs/heads/master'>",
-	"ref": "<current pipeline ref, like 'refs/heads/topic'>",
-	"versionInfo": {
-		"author": "<author of tip commit>",
-		"message": "<commit message of tip commit>"
-	},
-	"checkoutOptions": {}
-}
+resources["repositories"]["self"] = {
+  alias: "self",
+  id: "<repo guid>",
+  type: "Git",
+  version: "<commit hash>",
+  name: "<repo name>",
+  project: "<project guid>",
+  defaultBranch: "<default ref of repo, like 'refs/heads/master'>",
+  ref: "<current pipeline ref, like 'refs/heads/topic'>",
+  versionInfo: {
+    author: "<author of tip commit>",
+    message: "<commit message of tip commit>"
+  },
+  checkoutOptions: {}
+};
 ```
-
 
 #### Job
 
@@ -68,30 +67,29 @@ Job details are available on the `job` object.
 The data looks similar to:
 
 ```javascript
-job = 
-{
-	"steps": [
-		{
-			"environment": null,
-			"inputs": {
-				"script": "echo hi"
-			},
-			"type": "Task",
-			"task": {
-				"id": "d9bafed4-0b18-4f58-968d-86655b4d2ce9",
-				"name": "CmdLine",
-				"version": "2.146.1"
-			},
-			"condition": null,
-			"continueOnError": false,
-			"timeoutInMinutes": 0,
-			"id": "5c09f0b5-9bc3-401f-8cfb-09c716403f48",
-			"name": "CmdLine",
-			"displayName": "CmdLine",
-			"enabled": true
-		}
-	]
-}
+job = {
+  steps: [
+    {
+      environment: null,
+      inputs: {
+        script: "echo hi"
+      },
+      type: "Task",
+      task: {
+        id: "d9bafed4-0b18-4f58-968d-86655b4d2ce9",
+        name: "CmdLine",
+        version: "2.146.1"
+      },
+      condition: null,
+      continueOnError: false,
+      timeoutInMinutes: 0,
+      id: "5c09f0b5-9bc3-401f-8cfb-09c716403f48",
+      name: "CmdLine",
+      displayName: "CmdLine",
+      enabled: true
+    }
+  ]
+};
 ```
 
 For instance, to conditionally add a task only if it doesn't already exist:
@@ -112,6 +110,7 @@ Pipeline authors who wish to opt out of the decorator can set this variable, and
 If the variable isn't present, then the decorator is injected as usual.
 
 #### my-decorator.yml
+
 ```yaml
 - ${{ if ne(variables['skipInjecting'], 'true') }}
   - script: echo Injected the decorator
@@ -120,6 +119,7 @@ If the variable isn't present, then the decorator is injected as usual.
 Then, in a pipeline in the organization, the author can request the decorator not to inject itself.
 
 #### pipeline-with-opt-out.yml
+
 ```yaml
 variables:
   skipInjecting: true
@@ -150,14 +150,14 @@ If a decorator wants to check for the existence of another task, it must search 
 For normal tasks (which you specify with the `task` keyword), you can look at the task's `task.json` to determine its GUID.
 For special keywords like `checkout` and `bash` in the example above, you can use the following GUIDs:
 
-| Keyword      | GUID                                   | Task Name |
-|--------------|----------------------------------------|-----------|
-| `checkout`   | `6D15AF64-176C-496D-B583-FD2AE21D4DF4` | n/a, see note below |
-| `bash`       | `6C731C3C-3C68-459A-A5C9-BDE6E6595B5B` | Bash |
-| `script`     | `D9BAFED4-0B18-4F58-968D-86655B4D2CE9` | CmdLine |
-| `powershell` | `E213FF0F-5D5C-4791-802D-52EA3E7BE1F1` | PowerShell |
-| `pwsh`       | `E213FF0F-5D5C-4791-802D-52EA3E7BE1F1` | PowerShell |
-| `publish`    | `ECDC45F6-832D-4AD9-B52B-EE49E94659BE` | PublishPipelineArtifact |
+| Keyword      | GUID                                   | Task Name                |
+| ------------ | -------------------------------------- | ------------------------ |
+| `checkout`   | `6D15AF64-176C-496D-B583-FD2AE21D4DF4` | n/a, see note below      |
+| `bash`       | `6C731C3C-3C68-459A-A5C9-BDE6E6595B5B` | Bash                     |
+| `script`     | `D9BAFED4-0B18-4F58-968D-86655B4D2CE9` | CmdLine                  |
+| `powershell` | `E213FF0F-5D5C-4791-802D-52EA3E7BE1F1` | PowerShell               |
+| `pwsh`       | `E213FF0F-5D5C-4791-802D-52EA3E7BE1F1` | PowerShell               |
+| `publish`    | `ECDC45F6-832D-4AD9-B52B-EE49E94659BE` | PublishPipelineArtifact  |
 | `download`   | `61F2A582-95AE-4948-B34D-A1B3C4F6A737` | DownloadPipelineArtifact |
 
 After resolving task names and keywords, the above YAML becomes:

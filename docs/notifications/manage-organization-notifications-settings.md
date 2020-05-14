@@ -21,12 +21,12 @@ Choose to allow or block delivery of emails for all subscriptions owned by a tea
 
 ## Manage the default delivery setting
 
-1. [Open organization notifications settings](navigating-the-ui.md#open-org-level).
-2. Select the **Settings** tab.
-3. Configure the default the delivery setting.
+1.  [Open organization notifications settings](navigating-the-ui.md#open-org-level).
+2.  Select the **Settings** tab.
+3.  Configure the default the delivery setting.
 
-> [!div class="mx-imgBorder"] 
->![Organization notification settings delivery option](media/manage-organization-notifications-settings-delivery.png)
+> [!div class="mx-imgBorder"]
+> ![Organization notification settings delivery option](media/manage-organization-notifications-settings-delivery.png)
 
 ## Related articles
 
@@ -36,4 +36,3 @@ Learn about the following details at the [organization notifications page](manag
 * [Subscribers](manage-organization-notifications.md#organization-notifications-page-subscribers) - view notification subscriptions for a specific group, team, or individual
 * [Statistics](manage-organization-notifications.md#organization-notifications-page-statistics) - view the most active subscriptions and top event initiators
 * [Settings](manage-organization-notifications.md#organization-notifications-page-settings) - manage organization-level settings, such as delivery preferences
-

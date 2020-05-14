@@ -38,7 +38,6 @@ Following is an example YAML snippet to deploy web application to the Azure Web 
 ## Example
 
 ```YAML
-
 variables:
   azureSubscription: Contoso
   # To ignore SSL error uncomment the below variable
@@ -56,13 +55,14 @@ steps:
 
 To deploy Web App for linux, set the appType parameter to <code>appType: webAppLinux</code>.
 
-To specify the deployment method as Zip Deploy, add the parameter <code>deploymentMethod: zipDeploy</code>. Other supported value for this parameter is <code>runFromPackage</code>. 
+To specify the deployment method as Zip Deploy, add the parameter <code>deploymentMethod: zipDeploy</code>. Other supported value for this parameter is <code>runFromPackage</code>.
 If not mentioned, <code>auto</code> is taken as the default value.
 
 <a name="deployment-methods"></a>
+
 ## Deployment methods
 
-Several deployment methods are available in this task. <code>Auto</code> is the default option. 
+Several deployment methods are available in this task. <code>Auto</code> is the default option.
 
 To change the deployment option in designer task, expand Additional Deployment Options and enable **Select deployment method** to choose from additional package-based deployment options.
 
@@ -74,10 +74,10 @@ Based on the type of Azure App Service and Azure Pipelines agent, the task choos
 
 By default the task tries to select the appropriate deployment technology given the input package, app service type and agent OS.
 
-* When the App Service type is Web App on Linux App, use Zip Deploy 
-* If War file is provided, use War Deploy 
-* If Jar file is provided, use Run From package 
-* For all others, use Run From Zip (via Zip Deploy) 
+* When the App Service type is Web App on Linux App, use Zip Deploy
+* If War file is provided, use War Deploy
+* If Jar file is provided, use Run From package
+* For all others, use Run From Zip (via Zip Deploy)
 
 On non-Windows agent (for any App service type), the task relies on [Kudu REST APIs](https://github.com/projectkudu/kudu/wiki/REST-API) to deploy the Web App.
 
@@ -115,8 +115,9 @@ This may be because web.config is not present in your app. You can either add a 
 * Click on OK. This will populate web.config parameters required to generate web.config.
 
 ### Web app deployment on App Service Environment (ASE) is not working
-* Ensure that the Azure DevOps build agent is on the same VNET (subnet can be different) as the Internal Load Balancer (ILB) of  ASE. This will enable the agent to pull code from Azure DevOps and deploy to ASE. 
-* If you are using Azure DevOps, the agent neednt be accessible from internet but needs only outbound access to connect to Azure DevOps Service. 
+
+* Ensure that the Azure DevOps build agent is on the same VNET (subnet can be different) as the Internal Load Balancer (ILB) of ASE. This will enable the agent to pull code from Azure DevOps and deploy to ASE.
+* If you are using Azure DevOps, the agent neednt be accessible from internet but needs only outbound access to connect to Azure DevOps Service.
 * If you are using TFS/Azure DevOps server deployed in a Virtual Network, the agent can be completely isolated.
 * Build agent must be configured with the DNS configuration of the Web App it needs to deploy to. Since the private resources in the Virtual Network don't have entries in Azure DNS, this needs to be added to the hosts file on the agent machine.
 * If a self-signed certificate is used for the ASE configuration, "-allowUntrusted" option needs to be set in the deploy task for MSDeploy.It is also recommended to set the variable VSTS_ARM_REST_IGNORE_SSL_ERRORS to true. If a certificate from a certificate authority is used for ASE configuration, this should not be necessary.

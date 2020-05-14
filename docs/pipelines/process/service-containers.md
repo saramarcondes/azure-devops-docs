@@ -103,11 +103,11 @@ steps:
 
 This pipeline starts the latest `nginx` and `redis` containers,
 and then publishes the specified ports to the host. Since the job is not running in a container, there's no automatic name resolution.
-This example shows how you can instead reach services by using `localhost`. 
+This example shows how you can instead reach services by using `localhost`.
 In the above example we provide the port explicitly (for example, `8080:80`).
 
 An alternative approach is to let a random
-port get assigned dynamically at runtime. You can then access these dynamic ports by using [variables](variables.md). 
+port get assigned dynamically at runtime. You can then access these dynamic ports by using [variables](variables.md).
 In a Bash script, you can access a variable by using the process environment. These variables take the form: `agent.services.<serviceName>.ports.<port>`.
 In the above example, `redis` is assigned a random available port on the host.
 The `agent.services.redis.ports.6379` variable contains the port number.

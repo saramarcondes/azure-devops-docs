@@ -21,32 +21,40 @@ Items are the files and folders in Team Foundation version control.
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 
 ## Get a file
+
 <a name="getafile" />
 
 ```no-highlight
 GET https://{instance}/DefaultCollection/_apis/tfvc/items/{path}?api-version={version}
 ```
 
-| Parameter | Type    | Notes
-|:----------|:--------|:-------------------------------------------------------------------------------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance  | string  | TFS server name ({server:port}).
-| path      | string  | Path to the file in TFVC. `$/Fabrikam-Fiber-TFVC/WebSite/WebSite/Views/Home/_Home.cshtml`
+| instance | string | TFS server name ({server:port}).
+| path | string | Path to the file in TFVC. `$/Fabrikam-Fiber-TFVC/WebSite/WebSite/Views/Home/_Home.cshtml`
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
-When you specify the path of file in the URL, the response contains the contents of the file. You can also get a [specific version](#getaspecificversion) of an item. 
+When you specify the path of file in the URL, the response contains the contents of the file. You can also get a [specific version](#getaspecificversion) of an item.
 
 ### Using path as query parameter
+
 The path can be specified as a query parameter as well.  
-This format should be used for certain files (like web.config) that are not accessible by using the path as part of the URL due to the default ASP .NET protection. 
+This format should be used for certain files (like web.config) that are not accessible by using the path as part of the URL due to the default ASP .NET protection.
 
 #### Request
+
 ```
 GET http://fabrikam-fiber-inc:8080/DefaultCollection/_apis/tfvc/items?path=$/Fabrikam-Fiber-TFVC/WebSite/WebSite/web.config&api-version={version}
 ```
+
 #### Response
+
 ##### Status code: 200
+
 ```xml
 <?xml version="1.0"?>
 <configuration>
@@ -58,11 +66,15 @@ GET http://fabrikam-fiber-inc:8080/DefaultCollection/_apis/tfvc/items?path=$/Fab
 ```
 
 #### Request
+
 ```
 GET http://fabrikam-fiber-inc:8080/DefaultCollection/_apis/tfvc/items/$/Fabrikam-Fiber-TFVC/WebSite/WebSite/Views/Home/_Home.cshtml?api-version={version}
 ```
+
 #### Response
+
 ##### Status code: 200
+
 ```html
 <div class="jumbotron">
     <h1>ASP.NET</h1>
@@ -104,7 +116,9 @@ GET https://{instance}/DefaultCollection/_apis/tfvc/items?scopePath=/$/Fabrikam-
 ```
 
 #### Response
+
 ##### Status code: 200
+
 ```json
 {
   "count": 1,
@@ -117,6 +131,7 @@ GET https://{instance}/DefaultCollection/_apis/tfvc/items?scopePath=/$/Fabrikam-
   ]
 }
 ```
+
 ### A folder
 
 #### Sample request
@@ -136,36 +151,40 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/items?scopePath=$/Fabrikam-
       "changeDate": "2014-03-19T17:23:59.697Z",
       "path": "$/Fabrikam-Fiber-TFVC/AuthSample",
       "isFolder": true,
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample?versionType=Changeset&version=5"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample?versionType=Changeset&version=5"
     },
     {
       "version": 9,
       "changeDate": "2014-03-21T19:32:02.213Z",
       "path": "$/Fabrikam-Fiber-TFVC/AuthSample/AuthSample.sln",
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/AuthSample.sln?versionType=Changeset&version=9"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/AuthSample.sln?versionType=Changeset&version=9"
     },
     {
       "version": 5,
       "changeDate": "2014-03-19T17:23:59.697Z",
       "path": "$/Fabrikam-Fiber-TFVC/AuthSample/AuthSample.vssscc",
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/AuthSample.vssscc?versionType=Changeset&version=5"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/AuthSample.vssscc?versionType=Changeset&version=5"
     },
     {
       "version": 9,
       "changeDate": "2014-03-21T19:32:02.213Z",
       "path": "$/Fabrikam-Fiber-TFVC/AuthSample/Code",
       "isFolder": true,
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code?versionType=Changeset&version=9"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code?versionType=Changeset&version=9"
     }
   ],
   "count": 4
 }
 ```
 
-
 You can get the metadata for a [specific version](#getaspecificversion) of a folder, too.
 
 ### A folder and its children
+
 <a name="afolderanditschildren" />
 
 Use `recursionLevel` to include the contents of the folder in the response. You can get the contents of a [specific version](#getaspecificversion) of the folder, too.
@@ -187,34 +206,38 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/items?scopePath=$/Fabrikam-
       "changeDate": "2014-03-19T17:23:59.697Z",
       "path": "$/Fabrikam-Fiber-TFVC/AuthSample",
       "isFolder": true,
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample?versionType=Changeset&version=5"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample?versionType=Changeset&version=5"
     },
     {
       "version": 9,
       "changeDate": "2014-03-21T19:32:02.213Z",
       "path": "$/Fabrikam-Fiber-TFVC/AuthSample/AuthSample.sln",
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/AuthSample.sln?versionType=Changeset&version=9"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/AuthSample.sln?versionType=Changeset&version=9"
     },
     {
       "version": 5,
       "changeDate": "2014-03-19T17:23:59.697Z",
       "path": "$/Fabrikam-Fiber-TFVC/AuthSample/AuthSample.vssscc",
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/AuthSample.vssscc?versionType=Changeset&version=5"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/AuthSample.vssscc?versionType=Changeset&version=5"
     },
     {
       "version": 9,
       "changeDate": "2014-03-21T19:32:02.213Z",
       "path": "$/Fabrikam-Fiber-TFVC/AuthSample/Code",
       "isFolder": true,
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code?versionType=Changeset&version=9"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code?versionType=Changeset&version=9"
     }
   ],
   "count": 4
 }
 ```
 
-
 ### Multiple items
+
 To get more than one item in a single batch, specify the path of each item in an array of item descriptors in the post body. You can specify the [version](#getaspecificversion) and [recursion level](#afolderanditschildren) for each item, too.
 
 #### Sample request
@@ -222,6 +245,7 @@ To get more than one item in a single batch, specify the path of each item in an
 ```
 POST https://mytfsserver/DefaultCollection/_apis/tfvc/itemBatch?api-version=1.0-preview.1
 ```
+
 ```json
 {
   "itemDescriptors": [
@@ -249,7 +273,8 @@ POST https://mytfsserver/DefaultCollection/_apis/tfvc/itemBatch?api-version=1.0-
         "version": 5,
         "changeDate": "2014-03-19T17:23:59.697Z",
         "path": "$/Fabrikam-Fiber-TFVC/AuthSample/AuthSample/Program.cs",
-        "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/AuthSample/Program.cs?versionType=Changeset&version=5"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/AuthSample/Program.cs?versionType=Changeset&version=5"
       }
     ],
     [
@@ -259,100 +284,111 @@ POST https://mytfsserver/DefaultCollection/_apis/tfvc/itemBatch?api-version=1.0-
         "changeDate": "2014-03-19T17:23:59.697Z",
         "path": "$/Fabrikam-Fiber-TFVC/AuthSample",
         "isFolder": true,
-        "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample?versionType=Changeset&version=5"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample?versionType=Changeset&version=5"
       },
       {
         "version": 9,
         "changeDate": "2014-03-21T19:32:02.213Z",
         "path": "$/Fabrikam-Fiber-TFVC/AuthSample/AuthSample.sln",
-        "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/AuthSample.sln?versionType=Changeset&version=9"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/AuthSample.sln?versionType=Changeset&version=9"
       },
       {
         "version": 5,
         "changeDate": "2014-03-19T17:23:59.697Z",
         "path": "$/Fabrikam-Fiber-TFVC/AuthSample/AuthSample.vssscc",
-        "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/AuthSample.vssscc?versionType=Changeset&version=5"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/AuthSample.vssscc?versionType=Changeset&version=5"
       },
       {
         "version": 9,
         "changeDate": "2014-03-21T19:32:02.213Z",
         "path": "$/Fabrikam-Fiber-TFVC/AuthSample/Code",
         "isFolder": true,
-        "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code?versionType=Changeset&version=9"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code?versionType=Changeset&version=9"
       },
       {
         "version": 9,
         "changeDate": "2014-03-21T19:32:02.213Z",
         "path": "$/Fabrikam-Fiber-TFVC/AuthSample/Code/App.config",
-        "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code/App.config?versionType=Changeset&version=9"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code/App.config?versionType=Changeset&version=9"
       },
       {
         "version": 9,
         "changeDate": "2014-03-21T19:32:02.213Z",
         "path": "$/Fabrikam-Fiber-TFVC/AuthSample/Code/AuthSample.cs",
-        "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code/AuthSample.cs?versionType=Changeset&version=9"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code/AuthSample.cs?versionType=Changeset&version=9"
       },
       {
         "version": 9,
         "changeDate": "2014-03-21T19:32:02.213Z",
-        "path": "$/Fabrikam-Fiber-TFVC/AuthSample/Code/AuthSample.csproj.vspscc",
-        "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code/AuthSample.csproj.vspscc?versionType=Changeset&version=9"
+        "path":
+          "$/Fabrikam-Fiber-TFVC/AuthSample/Code/AuthSample.csproj.vspscc",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code/AuthSample.csproj.vspscc?versionType=Changeset&version=9"
       },
       {
         "version": 9,
         "changeDate": "2014-03-21T19:32:02.213Z",
         "path": "$/Fabrikam-Fiber-TFVC/AuthSample/Code/AuthSample.csproj",
-        "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code/AuthSample.csproj?versionType=Changeset&version=9"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code/AuthSample.csproj?versionType=Changeset&version=9"
       },
       {
         "version": 9,
         "changeDate": "2014-03-21T19:32:02.213Z",
         "path": "$/Fabrikam-Fiber-TFVC/AuthSample/Code/Properties",
         "isFolder": true,
-        "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code/Properties?versionType=Changeset&version=9"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code/Properties?versionType=Changeset&version=9"
       },
       {
         "version": 9,
         "changeDate": "2014-03-21T19:32:02.213Z",
-        "path": "$/Fabrikam-Fiber-TFVC/AuthSample/Code/Properties/AssemblyInfo.cs",
-        "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code/Properties/AssemblyInfo.cs?versionType=Changeset&version=9"
+        "path":
+          "$/Fabrikam-Fiber-TFVC/AuthSample/Code/Properties/AssemblyInfo.cs",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample/Code/Properties/AssemblyInfo.cs?versionType=Changeset&version=9"
       }
     ]
   ]
 }
 ```
 
-
 ## Get a specific version
+
 <a name="getaspecificversion" />
 
 You can indicate which version to get when you get a file, zip a folder, or get item metadata.
 
-| Parameter      | Type                                                                  | Default
-|:---------------|:----------------------------------------------------------------------|:---------
-| versionType    | enum { Branch, Changeset, Shelveset, Change, Date, MergeSource, Latest} | Branch
-| version        | string                                                                | master
-| versionOptions | enum { None, Previous, UseRename }                                    | None
+| Parameter      | Type                                                                    | Default |
+| :------------- | :---------------------------------------------------------------------- | :------ |
+| versionType    | enum { Branch, Changeset, Shelveset, Change, Date, MergeSource, Latest} | Branch  |
+| version        | string                                                                  | master  |
+| versionOptions | enum { None, Previous, UseRename }                                      | None    |
 
 Use the `versionType` and `version` parameters together.
 For example, to get an item from "mybranch", use `versionType=branch&version=mybranch`.
 
-| If `versionType` is... | `Version` is interpreted as...
-|:-----------------------|:--------------------------------
-| Changeset              | ID of a changeset.
-| Shelveset              | ID of a shelveset.
-| Change                 | ID of a change.
-| Date                   | At this time.
-| MergeSource            | ID of the changeset that is the source of the merge.
-| Latest                 | n/a
+| If `versionType` is... | `Version` is interpreted as...                       |
+| :--------------------- | :--------------------------------------------------- |
+| Changeset              | ID of a changeset.                                   |
+| Shelveset              | ID of a shelveset.                                   |
+| Change                 | ID of a change.                                      |
+| Date                   | At this time.                                        |
+| MergeSource            | ID of the changeset that is the source of the merge. |
+| Latest                 | n/a                                                  |
 
 You can also modify the version with the `versionOptions` parameter.
 
-| Value          | Effect
-|:---------------|:----------------------------------------------------------------------------------------------------------------------------
-| UseRename      | 
-| Previous       | The last version of the item that was changed prior to the version specified by the `versionType` and `version` parameters.
-| None           | No modification to the version specified by the `versionType` and `version` parameters.
+| Value     | Effect                                                                                                                      |
+| :-------- | :-------------------------------------------------------------------------------------------------------------------------- |
+| UseRename |
+| Previous  | The last version of the item that was changed prior to the version specified by the `versionType` and `version` parameters. |
+| None      | No modification to the version specified by the `versionType` and `version` parameters.                                     |
 
 When you specify a version with [recursion](#afolderanditschildren), the version is applied to the item and its children.
-

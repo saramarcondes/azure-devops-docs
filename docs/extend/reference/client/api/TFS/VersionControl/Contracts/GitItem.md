@@ -26,4 +26,3 @@ Extends: [ItemModel](../../../TFS/VersionControl/Contracts/ItemModel.md)
 * `objectId`: string. Git object ID
 
 * `originalObjectId`: string. Git object ID
-

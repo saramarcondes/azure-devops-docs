@@ -32,18 +32,18 @@ None
 
 ## Arguments
 
-| Argument | Description |
-|----------|-------------|
-| `versionSpec`<br/>JDK Version | (Required) Specify which JDK version to download and use. <br/>Default value: `8` |
-|`jdkArchitectureOption`<br/> JDK Architecture | Specify the bit version of the JDK. <br/>Options: `x64, x86`|
-| `jdkSourceOption`<br/>JDK source | (Required) Specify the source for the compressed JDK, either Azure blob storage or a local directory on the agent or source repository. |
-| `jdkFile` <br/>JDK file | (Required) Applicable when `jdkSourceOption == LocalDirectory`. Specify the path to the folder that contains the compressed JDK. The path could be in your source repository or a local path on the agent.|
-|`azureResourceManagerEndpoint`<br/> Azure Subscription | (Required) Applicable when `jdkSourceOption == AzureStorage`. Specify the Azure Resource Manager subscription for the JDK.|
-|`azureStorageAccountName`<br/> Storage Account Name | (Required) Applicable when `jdkSourceOption == AzureStorage`. Specify the Storage account name in which the JDK is located. Azure Classic and Resource Manager storage accounts are listed. |
-|`azureContainerName`<br/>Container Name | (Required) Applicable when `jdkSourceOption == AzureStorage`. Specify the name of the container in the storage account in which the JDK is located.|
-|`azureCommonVirtualFile`<br/> Common Virtual Path | (Required) Applicable when `jdkSourceOption == AzureStorage`. Specify the path to the JDK inside the Azure storage container. |
-|`jdkDestinationDirectory`<br/> Destination directory | (Required) Specify the destination directory into which the JDK should be extracted. |
-|`cleanDestinationDirectory`<br/> Clean destination directory | (Required) Select this option to clean the destination directory before the JDK is extracted into it. <br/>Default value: `true`|
+| Argument                                                     | Description                                                                                                                                                                                                |
+| ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `versionSpec`<br/>JDK Version                                | (Required) Specify which JDK version to download and use. <br/>Default value: `8`                                                                                                                          |
+| `jdkArchitectureOption`<br/> JDK Architecture                | Specify the bit version of the JDK. <br/>Options: `x64, x86`                                                                                                                                               |
+| `jdkSourceOption`<br/>JDK source                             | (Required) Specify the source for the compressed JDK, either Azure blob storage or a local directory on the agent or source repository.                                                                    |
+| `jdkFile` <br/>JDK file                                      | (Required) Applicable when `jdkSourceOption == LocalDirectory`. Specify the path to the folder that contains the compressed JDK. The path could be in your source repository or a local path on the agent. |
+| `azureResourceManagerEndpoint`<br/> Azure Subscription       | (Required) Applicable when `jdkSourceOption == AzureStorage`. Specify the Azure Resource Manager subscription for the JDK.                                                                                 |
+| `azureStorageAccountName`<br/> Storage Account Name          | (Required) Applicable when `jdkSourceOption == AzureStorage`. Specify the Storage account name in which the JDK is located. Azure Classic and Resource Manager storage accounts are listed.                |
+| `azureContainerName`<br/>Container Name                      | (Required) Applicable when `jdkSourceOption == AzureStorage`. Specify the name of the container in the storage account in which the JDK is located.                                                        |
+| `azureCommonVirtualFile`<br/> Common Virtual Path            | (Required) Applicable when `jdkSourceOption == AzureStorage`. Specify the path to the JDK inside the Azure storage container.                                                                              |
+| `jdkDestinationDirectory`<br/> Destination directory         | (Required) Specify the destination directory into which the JDK should be extracted.                                                                                                                       |
+| `cleanDestinationDirectory`<br/> Clean destination directory | (Required) Select this option to clean the destination directory before the JDK is extracted into it. <br/>Default value: `true`                                                                           |
 
 ## Examples
 
@@ -83,6 +83,7 @@ The file should be an archive (.zip, .gz) of the `JAVA_HOME` directory so that i
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
+
 <!-- BEGINSECTION class="md-qanda" -->
 
 ### Where can I learn more about tool installers?

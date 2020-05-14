@@ -221,7 +221,7 @@ A clean build of the merged code and approval from multiple reviewers are some e
 
 ## Extend pull request workflows with pull request status
 
-Pull requests and branch policies enable teams to enforce many best practices related to reviewing code and running automated builds, but many teams have additional requirements and validations to perform on code. To cover these individual and custom needs, Azure Repos offers pull request statuses. Pull request statuses integrate into the PR workflow and allow external services to programmatically sign off on a code change by associating simple success/failure type information with a pull request. 
+Pull requests and branch policies enable teams to enforce many best practices related to reviewing code and running automated builds, but many teams have additional requirements and validations to perform on code. To cover these individual and custom needs, Azure Repos offers pull request statuses. Pull request statuses integrate into the PR workflow and allow external services to programmatically sign off on a code change by associating simple success/failure type information with a pull request.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -298,5 +298,6 @@ Pull requests and branch policies enable teams to enforce many best practices re
     </li>
 </ul>
 
-## Videos 
+## Videos
+
 > [!VIDEO https://www.youtube.com/embed/J_DHkUKxI0E?start=0]

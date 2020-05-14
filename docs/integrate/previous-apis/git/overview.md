@@ -19,10 +19,10 @@ ms.date: 06/22/2017
 Use these APIs to work with Git repositories in VSTS/TFS.
 Repositories contain objects representing core Git concepts:
 
-- blobs (files)
-- trees (folders)
-- commits
-- refs (branches, lightweight tags)
+* blobs (files)
+* trees (folders)
+* commits
+* refs (branches, lightweight tags)
 
 and other resources that represent the history of those items or act on their state.
 
@@ -31,6 +31,7 @@ There are [code samples](https://github.com/microsoft/azure-devops-dotnet-sample
 [!INCLUDE [ID_vs_Name](_data/id_or_name.md)]
 
 ## Common tasks
+
 <table class="table table-striped; centered-table">
 <thead class="thead-inverse">
     <tr>
@@ -110,6 +111,7 @@ There are [code samples](https://github.com/microsoft/azure-devops-dotnet-sample
 </table>
 
 ## All Git API areas
+
 In case you're looking for something not found in the **Common tasks** section above, below is a list of all areas of the Git API.
 
 * [Annotated tags](./annotatedTags.md)
@@ -130,6 +132,5 @@ In case you're looking for something not found in the **Common tasks** section a
 * [Stats](./stats.md)
 * [Trees](./trees.md)
 
->[!NOTE]
->For more information on Git, see [Use Git with Visual Studio and Team Foundation Server](../../../repos/git/overview-2013.md).
-
+> [!NOTE]
+> For more information on Git, see [Use Git with Visual Studio and Team Foundation Server](../../../repos/git/overview-2013.md).

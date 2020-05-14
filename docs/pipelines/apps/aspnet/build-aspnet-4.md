@@ -22,11 +22,10 @@ monikerRange: '>= tfs-2017'
 >
 > This article focuses on building .NET Framework projects with Azure Pipelines. For help with .NET Core projects, see [.NET Core](../../ecosystems/dotnet-core.md).
 
-
 ::: moniker range="tfs-2017"
 
 > [!NOTE]
-> 
+>
 > This guidance applies to TFS version 2017.3 and newer.
 
 ::: moniker-end
@@ -69,9 +68,10 @@ The sample repo includes several different projects, and the sample application 
 https://github.com/Microsoft/devops-project-samples/tree/master/dotnet/aspnet/webapp/Application
 ```
 
-Your `azure-pipelines.yml` file needs to run from within the `dotnet/aspnet/webapp/Application` folder for the build to complete successfully.   
+Your `azure-pipelines.yml` file needs to run from within the `dotnet/aspnet/webapp/Application` folder for the build to complete successfully.
 
-The sample app is a Visual Studio solution that has two projects: 
+The sample app is a Visual Studio solution that has two projects:
+
 * An ASP.NET Web Application project that targets .NET Framework 4.5
 * A Unit Test project
 
@@ -85,11 +85,11 @@ The sample app is a Visual Studio solution that has two projects:
 
 ::: moniker-end
 
-
 ::: moniker range="< azure-devops"
+
 > [!NOTE]
 > This scenario works on TFS, but some of the following instructions might not exactly match the version of TFS that you are using. Also, you'll need to set up a self-hosted agent, possibly also installing software. If you are a new user, you might have a better learning experience by trying this procedure out first using a free Azure DevOps organization. Then change the selector in the upper-left corner of this page from Team Foundation Server to **Azure DevOps**.
-::: moniker-end
+> ::: moniker-end
 
 * After you have the sample code in your own repository, create a pipeline using the instructions in [Create your first pipeline](../../create-first-pipeline.md) and select the **ASP.NET** template. This automatically adds the tasks required to build the code in the sample repository.
 
@@ -100,6 +100,7 @@ The sample app is a Visual Studio solution that has two projects:
 ::: moniker range="azure-devops"
 
 You can use Azure Pipelines to build your .NET Framework projects without needing to set up any infrastructure of your own. The [Microsoft-hosted agents](../../agents/hosted.md) in Azure Pipelines have several released versions of Visual Studio pre-installed to help you build your projects.
+
 * Use `windows-2019` for Windows Server 2019 with Visual Studio 2019
 * Use `vs2017-win2016` for Windows Server 2016 with Visual Studio 2017
 
@@ -116,15 +117,15 @@ Make sure that you have the necessary version of the Visual Studio installed on 
 
 It is often required to build your app in multiple configurations. The following steps extend the example above to build the app on four configurations: [Debug, x86], [Debug, x64], [Release, x86], [Release, x64].
 
-1. Click the **Variables** tab and modify these variables:
+1.  Click the **Variables** tab and modify these variables:
 
-   * `BuildConfiguration` = `debug, release`
-   * `BuildPlatform` = `x86, x64`
+    * `BuildConfiguration` = `debug, release`
+    * `BuildPlatform` = `x86, x64`
 
-2. Select **Tasks** and click on the **agent job** to change the options for the job:
+2.  Select **Tasks** and click on the **agent job** to change the options for the job:
 
-   * Select **Multi-configuration**.
-   * Specify **Multipliers:** `BuildConfiguration, BuildPlatform`
+    * Select **Multi-configuration**.
+    * Specify **Multipliers:** `BuildConfiguration, BuildPlatform`
 
-3. Select **Parallel** if you have multiple build agents and want to build your configuration/platform pairings in parallel.
-::: moniker-end
+3.  Select **Parallel** if you have multiple build agents and want to build your configuration/platform pairings in parallel.
+    ::: moniker-end

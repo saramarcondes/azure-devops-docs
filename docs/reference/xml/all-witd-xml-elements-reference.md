@@ -12,22 +12,23 @@ ms.date: 02/14/2017
 
 # All WITD XML elements reference
 
-[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)] 
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
-You can customize an existing work item type (WIT) or create a WIT to meet your project tracking requirements. A WIT defines the fields, rules, and workflow states and transitions for an item of work that will be tracked for a project, such as a bug, requirement, or risk. You [create a project](../../organizations/projects/create-project.md) either in Azure DevOps Services or an on-premises Team Foundation Server (TFS).  
+You can customize an existing work item type (WIT) or create a WIT to meet your project tracking requirements. A WIT defines the fields, rules, and workflow states and transitions for an item of work that will be tracked for a project, such as a bug, requirement, or risk. You [create a project](../../organizations/projects/create-project.md) either in Azure DevOps Services or an on-premises Team Foundation Server (TFS).
 
- The root element in each definition of a WIT is the `WITD` element, which must have only one `WORKITEMTYPE` element defined. The name of each WIT must be unique in a project, and each type name must be no more than 128 Unicode characters long.  
+The root element in each definition of a WIT is the `WITD` element, which must have only one `WORKITEMTYPE` element defined. The name of each WIT must be unique in a project, and each type name must be no more than 128 Unicode characters long.
 
- To customize or create a WIT definition, you modify the type definition XML file. WITs are scoped to a project within a project collection.  
+To customize or create a WIT definition, you modify the type definition XML file. WITs are scoped to a project within a project collection.
 
-<a name="SyntaxStructure"></a> 
+<a name="SyntaxStructure"></a>
 
-##  WITD syntax structure  
+## WITD syntax structure
 
- The following example shows the high-level structure of a WIT definition.  
+The following example shows the high-level structure of a WIT definition.
 
 > [!div class="tabbedCodeSnippets"]
-> ```XML 
+>
+> ```XML
 > <witd:WITD application="Work item type editor" version="1.0" xmlns:witd="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/typedef">  
 >        <WORKITEMTYPE name="bug" refname="Microsoft.VSTS.WorkItemTypes.Bug">  
 >           <DESCRIPTION> Describes a divergence between required and actual behavior, and tracks the work done to correct the defect and verify the correction.</DESCRIPTION>  
@@ -37,14 +38,13 @@ You can customize an existing work item type (WIT) or create a WIT to meet your 
 >           <FORM> . . . </FORM>  
 >        </WORKITEMTYPE>  
 > </witd:WITD>  
-> ```  
+> ```
 
-<a name="ChildElements"></a> 
+<a name="ChildElements"></a>
 
-## WITD child elements  
+## WITD child elements
 
-The structural elements used in the previous example are described in the following table:  
-
+The structural elements used in the previous example are described in the following table:
 
 <table Responsive="true" summary="table">
 <tr Responsive="true">
@@ -55,7 +55,7 @@ The structural elements used in the previous example are described in the follow
 <td><p>The complete WIT definition is wrapped by the tag <strong>WITD</strong>. You can use any name for the application name. The version identifies the WIT schema that may change from one release to the next. Use &quot;1.0&quot;.</p>
 <pre><code>
 &lt;witd:WITD application="Work item type editor" version="1.0" &gt;  
-   &lt;WORKITEMTYPE&gt;   
+   &lt;WORKITEMTYPE&gt;
 &#160;&#160;&#160;. . .  
 &lt;/WORKITEMTYPE&gt;  
 &lt;/witd:WITD&gt;
@@ -99,7 +99,7 @@ The structural elements used in the previous example are described in the follow
 <code></pre>
 &lt;FORM&gt;<br/>   &lt;Layout&gt; . . . &lt;/Layout&gt;<br/>&lt;/FORM&gt;<br/></code>
 <p><strong>For the Hosted XML and On-premises XML (TFS 2017 and later versions) process models</strong>, the <strong>FORM</strong> element contains <strong>WebLayout</strong>, <strong>Control</strong>, <strong>SystemControls</strong>, <strong>Section</strong>, <strong>Page</strong>,  and other elements. </p>
-<pre><code>&lt;WebLayout&gt; 
+<pre><code>&lt;WebLayout&gt;
       &lt;Page&gt;  
           &lt;Section&gt;  
               &lt;Group&gt;  
@@ -110,7 +110,7 @@ The structural elements used in the previous example are described in the follow
       &lt;/Page&gt;
 . . .
 &lt;/WebLayout&gt;</code></pre>
-<blockquote><strong>Important</strong>:<br/>For the Hosted XML and On-premises XML process models (TFS 2017 and later versions), see <a href="weblayout-xml-elements.md" data-raw-source="[WebLayout and Control elements](weblayout-xml-elements.md)">WebLayout and Control elements</a>. 
+<blockquote><strong>Important</strong>:<br/>For the Hosted XML and On-premises XML process models (TFS 2017 and later versions), see <a href="weblayout-xml-elements.md" data-raw-source="[WebLayout and Control elements](weblayout-xml-elements.md)">WebLayout and Control elements</a>.
 </blockquote>
 </td>
 </tr>
@@ -126,29 +126,30 @@ The structural elements used in the previous example are described in the follow
 </tr>
 </table>
 
+<a name="PredefinedWITs"></a>
 
-<a name="PredefinedWITs"></a> 
+## Process template work item types
 
-## Process template work item types  
+Upon installing or upgrading an instance of an on-premises TFS, the [default process templates](../../boards/work-items/guidance/choose-process.md) are downloaded to the following directory:
 
-Upon installing or upgrading an instance of an on-premises TFS, the [default process templates](../../boards/work-items/guidance/choose-process.md) are downloaded to the following directory:  
+**For TFS 2017**:
 
-**For TFS 2017**: 
-```  
+```
 %programfiles%/TFS 15.0/Tools/Deploy/ProcessTemplateManagerFiles/1033
-```  
+```
 
-**For TFS 2015**: 
-```  
+**For TFS 2015**:
+
+```
 %programfiles%/TFS 14.0/Tools/Deploy/ProcessTemplateManagerFiles/1033
-```  
+```
 
-WIT definition files are stored in the WorkItem Tracking\TypeDefinitions folder.  
+WIT definition files are stored in the WorkItem Tracking\TypeDefinitions folder.
 
-To learn how to create or customize a WIT, see [Modify or add a custom work item type](../add-modify-wit.md).  
+To learn how to create or customize a WIT, see [Modify or add a custom work item type](../add-modify-wit.md).
 
-## Related articles 
+## Related articles
 
--  [Customize the work tracking experience](../customize-work.md)  
--  [witAdmin: Customize and manage objects for tracking work](../witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)  
--  [Naming restrictions, Work item tracking objects](../../organizations/settings/naming-restrictions.md)
+* [Customize the work tracking experience](../customize-work.md)
+* [witAdmin: Customize and manage objects for tracking work](../witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
+* [Naming restrictions, Work item tracking objects](../../organizations/settings/naming-restrictions.md)

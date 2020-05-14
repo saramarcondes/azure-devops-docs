@@ -19,8 +19,8 @@ It is common to configure multiple pipelines for the same repository. For instan
 
 Here is the behavior when you push a new branch (that matches the branch filters) to your repository:
 
-- If your pipeline has path filters, it will be triggered only if the new branch has changes to files that match that path filter.
-- If your pipeline does not have path filters, it will be triggered even if there are no changes in the new branch.
+* If your pipeline has path filters, it will be triggered only if the new branch has changes to files that match that path filter.
+* If your pipeline does not have path filters, it will be triggered even if there are no changes in the new branch.
 
 ### Wildcards
 

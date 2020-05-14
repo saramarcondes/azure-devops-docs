@@ -11,7 +11,6 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Rename or move files and folders in TFVC
 
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
@@ -23,7 +22,7 @@ monikerRange: '>= tfs-2015'
 ## Move an item in TFVC
 
 You can use [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md) to move one file or folder at a time.
-You should not use Source Control Explorer to move folders or files that are referenced by a Visual Studio project or solution. 
+You should not use Source Control Explorer to move folders or files that are referenced by a Visual Studio project or solution.
 Move these files with [Solution Explorer](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-explorer) instead and check in the move in a new changeset.
 
 1.  In Source Control Explorer, select the item that you want to move, open its shortcut menu, and choose **Move**.
@@ -55,12 +54,12 @@ You should avoid renaming items managed by TFVC using your operating system (for
 
 ## Work from the command prompt
 
--    [Rename Command (Team Foundation Version Control)](rename-command-team-foundation-version-control.md) : Rename or move a file.
+* [Rename Command (Team Foundation Version Control)](rename-command-team-foundation-version-control.md) : Rename or move a file.
 
 ## Tips
 
 You must be one of the **Contributors** for your project. See [Team Foundation Server default groups, permissions, and roles](https://msdn.microsoft.com/library/ms253077).
 
--   If you are beginning a new task, it's a good practice to [download the latest files from the server](download-get-files-from-server.md) before you make changes to files in your workspace.  
--   Avoid renaming an item that has been branched but not yet checked in. If you try to do so, a conflict will occur.  
--   You can [review and manage your work](develop-code-manage-pending-changes.md), [suspend your work](suspend-your-work-manage-your-shelvesets.md), and ultimately [contribute your work to the team's codebase](check-your-work-team-codebase.md).
+* If you are beginning a new task, it's a good practice to [download the latest files from the server](download-get-files-from-server.md) before you make changes to files in your workspace.
+* Avoid renaming an item that has been branched but not yet checked in. If you try to do so, a conflict will occur.
+* You can [review and manage your work](develop-code-manage-pending-changes.md), [suspend your work](suspend-your-work-manage-your-shelvesets.md), and ultimately [contribute your work to the team's codebase](check-your-work-team-codebase.md).

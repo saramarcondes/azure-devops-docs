@@ -10,7 +10,6 @@ ms.date: 12/17/2019
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Maven task
 
 [!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
@@ -21,7 +20,7 @@ Use this task to build your Java code.
 
 The build agent must have the following capability:
 
- * Maven
+* Maven
 
 ::: moniker range="> tfs-2018"
 
@@ -65,7 +64,7 @@ The build agent must have the following capability:
             <em>
                .xml&#39; will actually result in matching files from &#39;$(System.DefaultWorkingDirectory)/
          </strong>
-         /TEST-<em>.xml&#39;. 
+         /TEST-<em>.xml&#39;.
          <br/>Default value: **/surefire-reports/TEST-*.xml
       </td>
    </tr>
@@ -88,7 +87,7 @@ The build agent must have the following capability:
     <tr>
        <td><code>srcDirectories</code><br/>Source files directories</td>
        <td>(Optional) This field is required for a multi-module project. Specify a comma-separated list of relative paths from the Maven POM file to source code directories. Code coverage reports will use these to highlight source code. <br/>For example: src/java,src/Test. <br/>Argument aliases: <code>codeCoverageSourceDirectories</code></td>
-    </tr> 
+    </tr>
     <tr>
        <td><code>failIfCoverageEmpty</code><br/>Fail when code coverage results are missing</td>
        <td>(Optional) Fail the build if code coverage did not produce any results to publish. <br/>Default value: false <br/>Argument aliases: <code>codeCoverageFailIfEmpty</code></td>
@@ -158,8 +157,8 @@ The build agent must have the following capability:
     </tr>
 </table>
 
->[!IMPORTANT]
->When using the `-q` option in your MAVEN_OPTS, an effective pom won't be generated correctly and Azure Artifacts feeds may not be able to be authenticated. 
+> [!IMPORTANT]
+> When using the `-q` option in your MAVEN_OPTS, an effective pom won't be generated correctly and Azure Artifacts feeds may not be able to be authenticated.
 
 ## Example
 
@@ -170,6 +169,7 @@ The build agent must have the following capability:
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q&A
+
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../../includes/qa-agents.md)]

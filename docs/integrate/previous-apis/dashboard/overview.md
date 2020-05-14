@@ -14,7 +14,6 @@ ms.date: 08/04/2016
 
 [!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
 
-
 **Team Services**
 
 [!INCLUDE [temp](../_data/disclaimer.md)]
@@ -23,12 +22,12 @@ ms.date: 08/04/2016
 
 Each team in VS Team Services can have one or more dashboards. Each dashboard contains one or more widgets.
 Each team in Team Services can have one or more dashboards. Each dashboard is made up of one or more widgets.
- 
 
- * [Dashboards](./dashboards.md)
- * [Widgets](./widgets.md)
+* [Dashboards](./dashboards.md)
+* [Widgets](./widgets.md)
 
 ## Data versioning
+
 <a name="dataversioning" />
 
 The rest APIs have multi-user concurrency support for a list of widgets and for each widget, separately. This prevents one user of the API from overwriting changes of another user.
@@ -38,7 +37,6 @@ Lists of widgets are versioned using the eTag header in the list APIs. You must 
 The widget contract also contains the eTag property and works same way. This versions the settings of a single widget. This version is separate from the list version and you must provide it when updating a single widget.
 
 ## Common tasks
-
 
 ### Create a new dashboard
 

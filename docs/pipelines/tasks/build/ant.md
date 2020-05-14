@@ -20,7 +20,7 @@ Use this task to build with Apache Ant.
 
 The build agent must have the following capability:
 
- * Apache Ant
+* Apache Ant
 
 ::: moniker range="> tfs-2018"
 
@@ -162,6 +162,7 @@ The build agent must have the following capability:
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
+
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../../includes/qa-agents.md)]

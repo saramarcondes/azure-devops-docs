@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2013'
 
 # Release Management for Visual Studio, Azure Pipelines, and Team Foundation Server
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015 | VS 2015 | VS 2013**  
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015 | VS 2015 | VS 2013**
 
 **Release Management** helps you support a rapid release cadence and manage simultaneous releases.
 You can:
@@ -35,4 +35,3 @@ The **previous versions** of Release Management are deprecated. No new features 
 * **[Server and client version for Visual Studio 2013](https://msdn.microsoft.com/library/dn217874%28v%3Dvs.120%29.aspx)**
 
 > New to DevOps? **[Learn More](https://visualstudio.microsoft.com/devops)** about how implementing DevOps helps you continuously deliver value to your customers.
-

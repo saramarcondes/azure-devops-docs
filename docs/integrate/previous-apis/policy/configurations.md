@@ -26,15 +26,17 @@ ms.date: 08/04/2016
 GET https://{instance}/defaultcollection/{project}/_apis/policy/configurations?api-version={version}[&$top={top}&$skip={skip}]
 ```
 
-| Parameter     | Type    | Default | Notes
-|:--------------|:--------|:--------|:--------------------------------------------------------------------------------------------------------------------
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
+
+
 | URL
-| instance      | string  |         | TFS server name ({server:port}).
-| project       | string  |         | Name or ID of the [project](../tfs/projects.md) that contains the policies.
+| instance | string | | TFS server name ({server:port}).
+| project | string | | Name or ID of the [project](../tfs/projects.md) that contains the policies.
 | Query
-| api-version   | string  |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| $top          | integer | 100     | Number of policy configurations to return.
-| $skip         | integer | 0       | Number of policy configurations to skip.
+| api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| $top | integer | 100 | Number of policy configurations to return.
+| $skip | integer | 0 | Number of policy configurations to skip.
 
 #### Sample request
 
@@ -53,8 +55,10 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
         "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
         "displayName": "Normal Paulk",
         "uniqueName": "fabrikamfiber16@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
       },
       "createdDate": "2015-02-23T12:51:06.85754Z",
       "isEnabled": true,
@@ -65,10 +69,7 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
           "1d1dad71-f27c-4370-810d-838ec41efd41",
           "13272ea3-92ef-46d1-b77e-608ebbf3428b"
         ],
-        "filenamePatterns": [
-          "*/API*.cs",
-          "sql/tables/*"
-        ],
+        "filenamePatterns": ["*/API*.cs", "sql/tables/*"],
         "addedFilesOnly": false,
         "message": null,
         "scope": [
@@ -91,18 +92,22 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
       },
       "_links": {
         "self": {
-          "href": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17"
+          "href":
+            "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17"
         },
         "type": {
-          "href": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e"
+          "href":
+            "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e"
         }
       },
       "revision": 2,
       "id": 17,
-      "url": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17",
       "type": {
         "id": "fd2167ab-b0be-447a-8ec8-39368250530e",
-        "url": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e",
+        "url":
+          "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e",
         "displayName": "Required reviewers"
       }
     },
@@ -111,8 +116,10 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
         "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
         "displayName": "Normal Paulk",
         "uniqueName": "fabrikamfiber16@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
       },
       "createdDate": "2015-02-23T12:51:06.8887894Z",
       "isEnabled": true,
@@ -130,18 +137,22 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
       },
       "_links": {
         "self": {
-          "href": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/18"
+          "href":
+            "https://mytfsserver/DefaultCollection/_apis/policy/configurations/18"
         },
         "type": {
-          "href": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fa4e907d-c16b-4a4c-9dfa-4906e5d171dd"
+          "href":
+            "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fa4e907d-c16b-4a4c-9dfa-4906e5d171dd"
         }
       },
       "revision": 1,
       "id": 18,
-      "url": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/18",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/policy/configurations/18",
       "type": {
         "id": "fa4e907d-c16b-4a4c-9dfa-4906e5d171dd",
-        "url": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fa4e907d-c16b-4a4c-9dfa-4906e5d171dd",
+        "url":
+          "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fa4e907d-c16b-4a4c-9dfa-4906e5d171dd",
         "displayName": "Minimum approval count"
       }
     },
@@ -150,8 +161,10 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
         "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
         "displayName": "Normal Paulk",
         "uniqueName": "fabrikamfiber16@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
       },
       "createdDate": "2015-02-23T12:51:06.935666Z",
       "isEnabled": true,
@@ -168,25 +181,28 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
       },
       "_links": {
         "self": {
-          "href": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/19"
+          "href":
+            "https://mytfsserver/DefaultCollection/_apis/policy/configurations/19"
         },
         "type": {
-          "href": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/0609b952-1397-4640-95ec-e00a01b2c241"
+          "href":
+            "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/0609b952-1397-4640-95ec-e00a01b2c241"
         }
       },
       "revision": 1,
       "id": 19,
-      "url": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/19",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/policy/configurations/19",
       "type": {
         "id": "0609b952-1397-4640-95ec-e00a01b2c241",
-        "url": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/0609b952-1397-4640-95ec-e00a01b2c241",
+        "url":
+          "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/0609b952-1397-4640-95ec-e00a01b2c241",
         "displayName": "Build"
       }
     }
   ]
 }
 ```
-
 
 ### A page at a time
 
@@ -207,8 +223,10 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
         "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
         "displayName": "Normal Paulk",
         "uniqueName": "fabrikamfiber16@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
       },
       "createdDate": "2015-02-23T12:51:06.85754Z",
       "isEnabled": true,
@@ -219,10 +237,7 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
           "1d1dad71-f27c-4370-810d-838ec41efd41",
           "13272ea3-92ef-46d1-b77e-608ebbf3428b"
         ],
-        "filenamePatterns": [
-          "*/API*.cs",
-          "sql/tables/*"
-        ],
+        "filenamePatterns": ["*/API*.cs", "sql/tables/*"],
         "addedFilesOnly": false,
         "message": null,
         "scope": [
@@ -245,18 +260,22 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
       },
       "_links": {
         "self": {
-          "href": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17"
+          "href":
+            "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17"
         },
         "type": {
-          "href": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e"
+          "href":
+            "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e"
         }
       },
       "revision": 2,
       "id": 17,
-      "url": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17",
       "type": {
         "id": "fd2167ab-b0be-447a-8ec8-39368250530e",
-        "url": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e",
+        "url":
+          "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e",
         "displayName": "Required reviewers"
       }
     },
@@ -265,8 +284,10 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
         "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
         "displayName": "Normal Paulk",
         "uniqueName": "fabrikamfiber16@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
       },
       "createdDate": "2015-02-23T12:51:06.8887894Z",
       "isEnabled": true,
@@ -284,18 +305,22 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
       },
       "_links": {
         "self": {
-          "href": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/18"
+          "href":
+            "https://mytfsserver/DefaultCollection/_apis/policy/configurations/18"
         },
         "type": {
-          "href": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fa4e907d-c16b-4a4c-9dfa-4906e5d171dd"
+          "href":
+            "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fa4e907d-c16b-4a4c-9dfa-4906e5d171dd"
         }
       },
       "revision": 1,
       "id": 18,
-      "url": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/18",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/policy/configurations/18",
       "type": {
         "id": "fa4e907d-c16b-4a4c-9dfa-4906e5d171dd",
-        "url": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fa4e907d-c16b-4a4c-9dfa-4906e5d171dd",
+        "url":
+          "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fa4e907d-c16b-4a4c-9dfa-4906e5d171dd",
         "displayName": "Minimum approval count"
       }
     },
@@ -304,8 +329,10 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
         "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
         "displayName": "Normal Paulk",
         "uniqueName": "fabrikamfiber16@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
       },
       "createdDate": "2015-02-23T12:51:06.935666Z",
       "isEnabled": true,
@@ -322,18 +349,22 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
       },
       "_links": {
         "self": {
-          "href": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/19"
+          "href":
+            "https://mytfsserver/DefaultCollection/_apis/policy/configurations/19"
         },
         "type": {
-          "href": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/0609b952-1397-4640-95ec-e00a01b2c241"
+          "href":
+            "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/0609b952-1397-4640-95ec-e00a01b2c241"
         }
       },
       "revision": 1,
       "id": 19,
-      "url": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/19",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/policy/configurations/19",
       "type": {
         "id": "0609b952-1397-4640-95ec-e00a01b2c241",
-        "url": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/0609b952-1397-4640-95ec-e00a01b2c241",
+        "url":
+          "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/0609b952-1397-4640-95ec-e00a01b2c241",
         "displayName": "Build"
       }
     }
@@ -341,21 +372,22 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
 }
 ```
 
-
 ## Get a policy configuration
 
 ```no-highlight
 GET https://{instance}/defaultcollection/{project}/_apis/policy/configurations/{id}?api-version={version}
 ```
 
-| Parameter     | Type    | Notes
-|:--------------|:--------|:----------------------------------------------------------------------------------------------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance      | string  | TFS server name ({server:port}).
-| project       | string  | Name or ID of the [project](../tfs/projects.md) that contains the policies.
-| id            | integer | ID of the policy configuration.
+| instance | string | TFS server name ({server:port}).
+| project | string | Name or ID of the [project](../tfs/projects.md) that contains the policies.
+| id | integer | ID of the policy configuration.
 | Query
-| api-version   | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
@@ -371,8 +403,10 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
     "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
     "displayName": "Normal Paulk",
     "uniqueName": "fabrikamfiber16@hotmail.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
   },
   "createdDate": "2015-02-23T12:51:06.85754Z",
   "isEnabled": true,
@@ -383,10 +417,7 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
       "1d1dad71-f27c-4370-810d-838ec41efd41",
       "13272ea3-92ef-46d1-b77e-608ebbf3428b"
     ],
-    "filenamePatterns": [
-      "*/API*.cs",
-      "sql/tables/*"
-    ],
+    "filenamePatterns": ["*/API*.cs", "sql/tables/*"],
     "addedFilesOnly": false,
     "message": null,
     "scope": [
@@ -409,10 +440,12 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
   },
   "_links": {
     "self": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17"
     },
     "type": {
-      "href": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e"
+      "href":
+        "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e"
     }
   },
   "revision": 2,
@@ -420,12 +453,12 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
   "url": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17",
   "type": {
     "id": "fd2167ab-b0be-447a-8ec8-39368250530e",
-    "url": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e",
+    "url":
+      "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e",
     "displayName": "Required reviewers"
   }
 }
 ```
-
 
 ## Get a list of historical revisions
 
@@ -433,16 +466,18 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
 GET https://{instance}/defaultcollection/{project}/_apis/policy/configurations/{id}/revisions?api-version={version}[&$top={top}&$skip={skip}]
 ```
 
-| Parameter     | Type    | Default | Notes
-|:--------------|:--------|:--------|:--------------------------------------------------------------------------------------------------------------------
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
+
+
 | URL
-| instance      | string  |         | TFS server name ({server:port}).
-| project       | string  |         | Name or ID of the [project](../tfs/projects.md) that contains the policies.
-| id            | integer |         | ID of the policy configuration.
+| instance | string | | TFS server name ({server:port}).
+| project | string | | Name or ID of the [project](../tfs/projects.md) that contains the policies.
+| id | integer | | ID of the policy configuration.
 | Query
-| api-version   | string  |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| $top          | integer | 100     | Number of policy configurations to return.
-| $skip         | integer | 0       | Number of policy configurations to skip.
+| api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| $top | integer | 100 | Number of policy configurations to return.
+| $skip | integer | 0 | Number of policy configurations to skip.
 
 #### Sample request
 
@@ -460,8 +495,10 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
         "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
         "displayName": "Normal Paulk",
         "uniqueName": "fabrikamfiber16@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
       },
       "createdDate": "2015-02-23T12:51:06.85754Z",
       "isEnabled": true,
@@ -472,10 +509,7 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
           "1d1dad71-f27c-4370-810d-838ec41efd41",
           "13272ea3-92ef-46d1-b77e-608ebbf3428b"
         ],
-        "filenamePatterns": [
-          "*/API*.cs",
-          "sql/tables/*"
-        ],
+        "filenamePatterns": ["*/API*.cs", "sql/tables/*"],
         "addedFilesOnly": false,
         "message": null,
         "scope": [
@@ -498,18 +532,22 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
       },
       "_links": {
         "self": {
-          "href": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17"
+          "href":
+            "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17"
         },
         "type": {
-          "href": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e"
+          "href":
+            "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e"
         }
       },
       "revision": 2,
       "id": 17,
-      "url": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17",
       "type": {
         "id": "fd2167ab-b0be-447a-8ec8-39368250530e",
-        "url": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e",
+        "url":
+          "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e",
         "displayName": "Required reviewers"
       }
     },
@@ -518,20 +556,18 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
         "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
         "displayName": "Normal Paulk",
         "uniqueName": "fabrikamfiber16@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
       },
       "createdDate": "2015-02-23T12:51:06.8106632Z",
       "isEnabled": true,
       "isBlocking": true,
       "isDeleted": false,
       "settings": {
-        "requiredReviewerIds": [
-          "1d1dad71-f27c-4370-810d-838ec41efd41"
-        ],
-        "filenamePatterns": [
-          "*/API*.cs"
-        ],
+        "requiredReviewerIds": ["1d1dad71-f27c-4370-810d-838ec41efd41"],
+        "filenamePatterns": ["*/API*.cs"],
         "addedFilesOnly": false,
         "message": null,
         "scope": [
@@ -549,18 +585,22 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
       },
       "_links": {
         "self": {
-          "href": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17"
+          "href":
+            "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17"
         },
         "type": {
-          "href": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e"
+          "href":
+            "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e"
         }
       },
       "revision": 1,
       "id": 17,
-      "url": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17",
       "type": {
         "id": "fd2167ab-b0be-447a-8ec8-39368250530e",
-        "url": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e",
+        "url":
+          "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e",
         "displayName": "Required reviewers"
       }
     }
@@ -568,7 +608,6 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
   "count": 2
 }
 ```
-
 
 ### A page at a time
 
@@ -588,20 +627,18 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
         "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
         "displayName": "Normal Paulk",
         "uniqueName": "fabrikamfiber16@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
       },
       "createdDate": "2015-02-23T12:51:06.8106632Z",
       "isEnabled": true,
       "isBlocking": true,
       "isDeleted": false,
       "settings": {
-        "requiredReviewerIds": [
-          "1d1dad71-f27c-4370-810d-838ec41efd41"
-        ],
-        "filenamePatterns": [
-          "*/API*.cs"
-        ],
+        "requiredReviewerIds": ["1d1dad71-f27c-4370-810d-838ec41efd41"],
+        "filenamePatterns": ["*/API*.cs"],
         "addedFilesOnly": false,
         "message": null,
         "scope": [
@@ -619,18 +656,22 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
       },
       "_links": {
         "self": {
-          "href": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17"
+          "href":
+            "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17"
         },
         "type": {
-          "href": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e"
+          "href":
+            "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e"
         }
       },
       "revision": 1,
       "id": 17,
-      "url": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17",
       "type": {
         "id": "fd2167ab-b0be-447a-8ec8-39368250530e",
-        "url": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e",
+        "url":
+          "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e",
         "displayName": "Required reviewers"
       }
     }
@@ -639,22 +680,23 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
 }
 ```
 
-
-## Get a specific historical revision 
+## Get a specific historical revision
 
 ```no-highlight
 GET https://{instance}/defaultcollection/{project}/_apis/policy/configurations/{id}/revisions/{revision}?api-version={version}
 ```
 
-| Parameter     | Type    | Notes
-|:--------------|:--------|:----------------------------------------------------------------------------------------------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance      | string  | TFS server name ({server:port}).
-| project       | string  | Name or ID of the [project](../tfs/projects.md) that contains the policies.
-| id            | integer | ID of the policy configuration.
-| revision      | integer | ID of the specific revision of the configuration
+| instance | string | TFS server name ({server:port}).
+| project | string | Name or ID of the [project](../tfs/projects.md) that contains the policies.
+| id | integer | ID of the policy configuration.
+| revision | integer | ID of the specific revision of the configuration
 | Query
-| api-version   | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
@@ -670,20 +712,18 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
     "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
     "displayName": "Normal Paulk",
     "uniqueName": "fabrikamfiber16@hotmail.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
   },
   "createdDate": "2015-02-23T12:51:06.8106632Z",
   "isEnabled": true,
   "isBlocking": true,
   "isDeleted": false,
   "settings": {
-    "requiredReviewerIds": [
-      "1d1dad71-f27c-4370-810d-838ec41efd41"
-    ],
-    "filenamePatterns": [
-      "*/API*.cs"
-    ],
+    "requiredReviewerIds": ["1d1dad71-f27c-4370-810d-838ec41efd41"],
+    "filenamePatterns": ["*/API*.cs"],
     "addedFilesOnly": false,
     "message": null,
     "scope": [
@@ -701,10 +741,12 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
   },
   "_links": {
     "self": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17"
     },
     "type": {
-      "href": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e"
+      "href":
+        "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e"
     }
   },
   "revision": 1,
@@ -712,47 +754,51 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
   "url": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17",
   "type": {
     "id": "fd2167ab-b0be-447a-8ec8-39368250530e",
-    "url": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e",
+    "url":
+      "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e",
     "displayName": "Required reviewers"
   }
 }
 ```
-
 
 ## Create a policy configuration
 
 ```no-highlight
 POST https://{instance}/defaultcollection/{project}/_apis/policy/configurations?api-version={version}
 ```
+
 ```json
 {
-   "isEnabled": {bool},
-   "isBlocking": {bool},
-   "type": {
-      "id": {guid}
-   },
-   "settings": {object}
+  "isEnabled": { bool },
+  "isBlocking": { bool },
+  "type": {
+    "id": { guid }
+  },
+  "settings": { object }
 }
 ```
 
-| Parameter   | Type        | Notes
-|:------------|:------------|:--------------------------------------------------------------------------------------------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance    | string      | TFS server name ({server:port}).
-| project     | string      | Name or ID of the [project](../tfs/projects.md) that contains the policies.
+| instance | string | TFS server name ({server:port}).
+| project | string | Name or ID of the [project](../tfs/projects.md) that contains the policies.
 | Query
-| api-version | string      | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | **Body**
-| isEnabled   | bool        | If `true`, the policy is initially enabled.
-| isBlocking  | bool        | If `false`, the policy will not block artifacts from being committed even if the policy rejects the artifact.
-| type.id     | guid        | ID of the [type](./types.md) of policy to create.
-| settings    | JSON object | Object containing settings for the policy. [Format varies by type](./settings.md)
+| isEnabled | bool | If `true`, the policy is initially enabled.
+| isBlocking | bool | If `false`, the policy will not block artifacts from being committed even if the policy rejects the artifact.
+| type.id | guid | ID of the [type](./types.md) of policy to create.
+| settings | JSON object | Object containing settings for the policy. [Format varies by type](./settings.md)
 
 #### Sample request
 
 ```
 POST https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/configurations?api-version=2.0-preview
 ```
+
 ```json
 {
   "isEnabled": true,
@@ -761,12 +807,8 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/confi
     "id": "fd2167ab-b0be-447a-8ec8-39368250530e"
   },
   "settings": {
-    "requiredReviewerIds": [
-      "1d1dad71-f27c-4370-810d-838ec41efd41"
-    ],
-    "filenamePatterns": [
-      "*/API*.cs"
-    ],
+    "requiredReviewerIds": ["1d1dad71-f27c-4370-810d-838ec41efd41"],
+    "filenamePatterns": ["*/API*.cs"],
     "addedFilesOnly": false,
     "scope": [
       {
@@ -792,20 +834,18 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/confi
     "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
     "displayName": "Normal Paulk",
     "uniqueName": "fabrikamfiber16@hotmail.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
   },
   "createdDate": "2015-02-23T12:51:06.8106632",
   "isEnabled": true,
   "isBlocking": true,
   "isDeleted": false,
   "settings": {
-    "requiredReviewerIds": [
-      "1d1dad71-f27c-4370-810d-838ec41efd41"
-    ],
-    "filenamePatterns": [
-      "*/API*.cs"
-    ],
+    "requiredReviewerIds": ["1d1dad71-f27c-4370-810d-838ec41efd41"],
+    "filenamePatterns": ["*/API*.cs"],
     "addedFilesOnly": false,
     "message": null,
     "scope": [
@@ -823,10 +863,12 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/confi
   },
   "_links": {
     "self": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17"
     },
     "type": {
-      "href": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e"
+      "href":
+        "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e"
     }
   },
   "revision": 1,
@@ -834,48 +876,52 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/confi
   "url": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17",
   "type": {
     "id": "fd2167ab-b0be-447a-8ec8-39368250530e",
-    "url": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e",
+    "url":
+      "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e",
     "displayName": "Required reviewers"
   }
 }
 ```
-
 
 ## Update a policy configuration
 
 ```no-highlight
 PUT https://{instance}/defaultcollection/{project}/_apis/policy/configurations/{id}?api-version={version}
 ```
+
 ```json
 {
-   "isEnabled": {bool},
-   "isBlocking": {bool},
-   "type": {
-      "id": {guid}
-   },
-   "settings": {object}
+  "isEnabled": { bool },
+  "isBlocking": { bool },
+  "type": {
+    "id": { guid }
+  },
+  "settings": { object }
 }
 ```
 
-| Parameter   | Type        | Notes
-|:------------|:------------|:--------------------------------------------------------------------------------------------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance    | string      | TFS server name ({server:port}).
-| project     | string      | Name or ID of the [project](../tfs/projects.md) that contains the policies.
-| id          | integer     | ID of the policy configuration.
+| instance | string | TFS server name ({server:port}).
+| project | string | Name or ID of the [project](../tfs/projects.md) that contains the policies.
+| id | integer | ID of the policy configuration.
 | Query
-| api-version | string      | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | **Body**
-| isEnabled   | bool        | If `true`, the policy is enabled.
-| isBlocking  | bool        | If `false`, the policy will not block artifacts from being committed even if the policy rejects the artifact.
-| type.id     | guid        | ID of the [type](./types.md) of policy. This must be the same as the configuration's existing type.
-| settings    | JSON object | Object containing settings for the policy. [Format varies by type](./settings.md)
+| isEnabled | bool | If `true`, the policy is enabled.
+| isBlocking | bool | If `false`, the policy will not block artifacts from being committed even if the policy rejects the artifact.
+| type.id | guid | ID of the [type](./types.md) of policy. This must be the same as the configuration's existing type.
+| settings | JSON object | Object containing settings for the policy. [Format varies by type](./settings.md)
 
 #### Sample request
 
 ```
 PUT https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/configurations/17?api-version=2.0-preview
 ```
+
 ```json
 {
   "isEnabled": true,
@@ -888,10 +934,7 @@ PUT https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
       "1d1dad71-f27c-4370-810d-838ec41efd41",
       "13272ea3-92ef-46d1-b77e-608ebbf3428b"
     ],
-    "filenamePatterns": [
-      "*/API*.cs",
-      "sql/tables/*"
-    ],
+    "filenamePatterns": ["*/API*.cs", "sql/tables/*"],
     "addedFilesOnly": false,
     "scope": [
       {
@@ -922,8 +965,10 @@ PUT https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
     "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
     "displayName": "Normal Paulk",
     "uniqueName": "fabrikamfiber16@hotmail.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
   },
   "createdDate": "2015-02-23T12:51:06.85754Z",
   "isEnabled": true,
@@ -934,10 +979,7 @@ PUT https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
       "1d1dad71-f27c-4370-810d-838ec41efd41",
       "13272ea3-92ef-46d1-b77e-608ebbf3428b"
     ],
-    "filenamePatterns": [
-      "*/API*.cs",
-      "sql/tables/*"
-    ],
+    "filenamePatterns": ["*/API*.cs", "sql/tables/*"],
     "addedFilesOnly": false,
     "message": null,
     "scope": [
@@ -960,10 +1002,12 @@ PUT https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
   },
   "_links": {
     "self": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17"
     },
     "type": {
-      "href": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e"
+      "href":
+        "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e"
     }
   },
   "revision": 2,
@@ -971,12 +1015,12 @@ PUT https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
   "url": "https://mytfsserver/DefaultCollection/_apis/policy/configurations/17",
   "type": {
     "id": "fd2167ab-b0be-447a-8ec8-39368250530e",
-    "url": "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e",
+    "url":
+      "https://mytfsserver/DefaultCollection/1be3fc5b-c58c-4173-8fd7-6647d11eccd1/_apis/policy/types/fd2167ab-b0be-447a-8ec8-39368250530e",
     "displayName": "Required reviewers"
   }
 }
 ```
-
 
 ## Delete a policy configuration
 
@@ -984,18 +1028,19 @@ PUT https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/config
 DELETE https://{instance}/defaultcollection/{project}/_apis/policy/configurations/{id}?api-version={version}
 ```
 
-| Parameter   | Type        | Notes
-|:------------|:------------|:--------------------------------------------------------------------------------------------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance    | string      | TFS server name ({server:port}).
-| project     | string      | Name or ID of the [project](../tfs/projects.md) that contains the policies.
-| id          | integer     | ID of the policy configuration.
+| instance | string | TFS server name ({server:port}).
+| project | string | Name or ID of the [project](../tfs/projects.md) that contains the policies.
+| id | integer | ID of the policy configuration.
 | Query
-| api-version | string      | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
 ```
 DELETE https://mytfsserver/DefaultCollection/fabrikam-fiber-git/_apis/policy/configurations/17?api-version=2.0-preview
 ```
-

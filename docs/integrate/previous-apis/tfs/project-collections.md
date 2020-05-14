@@ -23,17 +23,20 @@ ms.date: 08/04/2016
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 
 ## Get a project collection
+
 <a id="GetProjectCollection"></a>
 
 ```no-highlight
 GET https://{instance}/_apis/projectcollections/{collection}?api-version={version}
 ```
 
-| Parameter   | Type   | Notes                                                                                                                       
-|:------------|:-------|:----------------------------------------------------------------------------------------------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance    | string | TFS server name ({server:port}).
-| collection  | string | Name or ID of the project collection.                                                     
+| instance | string | TFS server name ({server:port}).
+| collection | string | Name or ID of the project collection.  
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
@@ -49,11 +52,13 @@ GET https://mytfsserver/DefaultCollection/_apis/projectCollections/d81542e4-cdfa
 {
   "id": "d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
   "name": "DefaultCollection",
-  "url": "https://mytfsserver/DefaultCollection/_apis/projectCollections/d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
+  "url":
+    "https://mytfsserver/DefaultCollection/_apis/projectCollections/d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
   "state": "Started",
   "_links": {
     "self": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/projectCollections/d81542e4-cdfa-4333-b082-1ae2d6c3ad16"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/projectCollections/d81542e4-cdfa-4333-b082-1ae2d6c3ad16"
     },
     "web": {
       "href": "https://mytfsserver/DefaultCollection"
@@ -61,7 +66,6 @@ GET https://mytfsserver/DefaultCollection/_apis/projectCollections/d81542e4-cdfa
   }
 }
 ```
-
 
 #### Sample code
 

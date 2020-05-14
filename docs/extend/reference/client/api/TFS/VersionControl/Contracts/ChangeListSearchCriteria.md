@@ -14,7 +14,6 @@ ms.date: 08/04/2016
 
 Module path: `TFS/VersionControl/Contracts`
 
-
 ### Members
 
 * `compareVersion`: string. If provided, a version descriptor to compare against base
@@ -40,4 +39,3 @@ Module path: `TFS/VersionControl/Contracts`
 * `toVersion`: string. If provided, a version descriptor for the latest change list to include
 
 * `user`: string. Alias or display name of user who made the changes
-

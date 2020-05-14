@@ -38,49 +38,49 @@ You may also want to learn about client-side [Git preferences](git-config.md).
 
 ::: moniker range="azure-devops-2019"
 
-1. From your web browser, open the project for your organization in Azure DevOps and choose **Project settings**, **Repositories**, and select your repository.
+1.  From your web browser, open the project for your organization in Azure DevOps and choose **Project settings**, **Repositories**, and select your repository.
 
-   ![Project settings for your repository](media/repository-settings/project-repository-settings.png)
+    ![Project settings for your repository](media/repository-settings/project-repository-settings.png)
 
-2. Select **Options** to view and configure your repository settings.
+2.  Select **Options** to view and configure your repository settings.
 
-   ![The options UI](media/repository-settings/repository-settings-server-2019.png)
+    ![The options UI](media/repository-settings/repository-settings-server-2019.png)
 
 ::: moniker-end
 
 ::: moniker range="azure-devops"
 
-1. From your web browser, open the project for your organization in Azure DevOps and choose **Project settings**, **Repositories**, and select your repository.
+1.  From your web browser, open the project for your organization in Azure DevOps and choose **Project settings**, **Repositories**, and select your repository.
 
-   ![Project settings for your repository](media/repository-settings/project-repository-settings.png)
+    ![Project settings for your repository](media/repository-settings/project-repository-settings.png)
 
-2. Select **Options** and **Policies** to view and configure your repository settings.
+2.  Select **Options** and **Policies** to view and configure your repository settings.
 
-   ![The options UI](media/repository-settings/repository-settings.png)
+    ![The options UI](media/repository-settings/repository-settings.png)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2017"
 
-1. From your web browser, open the project for your organization in Azure DevOps and choose the gear icon, **Version Control**, and select your repository.
+1.  From your web browser, open the project for your organization in Azure DevOps and choose the gear icon, **Version Control**, and select your repository.
 
-   ![Project settings for your repository](media/repository-settings/project-repository-settings-prev-nav.png)
+    ![Project settings for your repository](media/repository-settings/project-repository-settings-prev-nav.png)
 
-2. Select **options** to view and configure your repository settings.
+2.  Select **options** to view and configure your repository settings.
 
-   ![The options UI](media/repository-settings/repository-settings.png)
+    ![The options UI](media/repository-settings/repository-settings.png)
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 
-1. From your web browser, open the project for your organization in Azure DevOps and choose the gear icon, **Version Control**, and select your repository.
+1.  From your web browser, open the project for your organization in Azure DevOps and choose the gear icon, **Version Control**, and select your repository.
 
-   ![Project settings for your repository](media/repository-settings/project-repository-settings-prev-nav.png)
+    ![Project settings for your repository](media/repository-settings/project-repository-settings-prev-nav.png)
 
-2. Select **options** to view and configure your repository settings.
+2.  Select **options** to view and configure your repository settings.
 
-   ![The options UI](media/repository-settings/repository-settings-tfs2018.2.png)
+    ![The options UI](media/repository-settings/repository-settings-tfs2018.2.png)
 
 ::: moniker-end
 
@@ -110,12 +110,12 @@ az repos policy case-enforcement create --blocking {false, true}
 
 #### Parameters
 
-- **blocking**: (Required) Whether the policy should be blocking or not. Accepted values: **false**, **true**
-- **enabled**: (Required) Whether the policy is enabled or not. Accepted values: **false**, **true**
-- **repository-id**: (Required) ID of the repository on which to apply the policy.
-- **detect**: Automatically detect organization. Accepted values: **false**, **true**
-- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
-- **project** or **-p**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
+* **blocking**: (Required) Whether the policy should be blocking or not. Accepted values: **false**, **true**
+* **enabled**: (Required) Whether the policy is enabled or not. Accepted values: **false**, **true**
+* **repository-id**: (Required) ID of the repository on which to apply the policy.
+* **detect**: Automatically detect organization. Accepted values: **false**, **true**
+* **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+* **project** or **-p**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
 
 #### Example
 
@@ -160,13 +160,13 @@ az repos policy case-enforcement update --id
 
 #### Parameters
 
-- **id** or **policy-id**: (Required) ID of the policy.
-- **blocking**: Whether the policy should be blocking or not. Accepted values: **false**, **true**
-- **detect**: Automatically detect organization. Accepted values: **false**, **true**
-- **enabled**: Whether the policy is enabled or not. Accepted values: **false**, **true**
-- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
-- **project** or **-p**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
-- **repository-id**: (Required) ID of the repository on which to apply the policy.
+* **id** or **policy-id**: (Required) ID of the policy.
+* **blocking**: Whether the policy should be blocking or not. Accepted values: **false**, **true**
+* **detect**: Automatically detect organization. Accepted values: **false**, **true**
+* **enabled**: Whether the policy is enabled or not. Accepted values: **false**, **true**
+* **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+* **project** or **-p**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
+* **repository-id**: (Required) ID of the repository on which to apply the policy.
 
 #### Example
 
@@ -189,7 +189,7 @@ ID    Name               Is Blocking    Is Enabled    Repository Id             
 
 ### Create file size policy
 
-Use [`az repos policy file-size create`](/cli/azure/repos/policy/file-size?view=azure-cli-latest#az-repos-policy-file-size-create) to manage  [Maximum file size](#maximum-file-size) policy.
+Use [`az repos policy file-size create`](/cli/azure/repos/policy/file-size?view=azure-cli-latest#az-repos-policy-file-size-create) to manage [Maximum file size](#maximum-file-size) policy.
 
 ```azurecli
 az repos policy file-size create --blocking {false, true}
@@ -204,14 +204,14 @@ az repos policy file-size create --blocking {false, true}
 
 #### Parameters
 
-- **blocking**: (Required) Whether the policy should be blocking or not. Accepted values: **false**, **true**
-- **enabled**: (Required) Whether the policy is enabled or not. Accepted values: **false**, **true**
-- **maximum-git-blob-size**: (Required) Maximum git blob size in bytes. For example, to specify a 10byte limit, `--maximum-git-blob-size 10.`
-- **repository-id**: (Required) ID of the repository on which to apply the policy.
-- **use-uncompressed-size**: (Required) Whether to use uncompressed size. Accepted values: **false**, **true**
-- **detect**: Automatically detect organization. Accepted values: **false**, **true**
-- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
-- **project** or **-p**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
+* **blocking**: (Required) Whether the policy should be blocking or not. Accepted values: **false**, **true**
+* **enabled**: (Required) Whether the policy is enabled or not. Accepted values: **false**, **true**
+* **maximum-git-blob-size**: (Required) Maximum git blob size in bytes. For example, to specify a 10byte limit, `--maximum-git-blob-size 10.`
+* **repository-id**: (Required) ID of the repository on which to apply the policy.
+* **use-uncompressed-size**: (Required) Whether to use uncompressed size. Accepted values: **false**, **true**
+* **detect**: Automatically detect organization. Accepted values: **false**, **true**
+* **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+* **project** or **-p**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
 
 #### Example
 
@@ -258,15 +258,15 @@ az repos policy file-size update --id
 
 #### Parameters
 
-- **id** or **policy-id**: (Required) ID of the policy.
-- **blocking**: Whether the policy should be blocking or not. Accepted values: **false**, **true**
-- **detect**: Automatically detect organization. Accepted values: **false**, **true**
-- **enabled**: Whether the policy is enabled or not. Accepted values: **false**, **true**
-- **maximum-git-blob-size**: Maximum git blob size in bytes. For example, to specify a 10byte limit, `--maximum-git-blob-size 10.`
-- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
-- **project** or **-p**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
-- **repository-id**: (Required) ID of the repository on which to apply the policy.
-- **use-uncompressed-size**: (Required) Whether to use uncompressed size. Accepted values: **false**, **true**
+* **id** or **policy-id**: (Required) ID of the policy.
+* **blocking**: Whether the policy should be blocking or not. Accepted values: **false**, **true**
+* **detect**: Automatically detect organization. Accepted values: **false**, **true**
+* **enabled**: Whether the policy is enabled or not. Accepted values: **false**, **true**
+* **maximum-git-blob-size**: Maximum git blob size in bytes. For example, to specify a 10byte limit, `--maximum-git-blob-size 10.`
+* **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+* **project** or **-p**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
+* **repository-id**: (Required) ID of the repository on which to apply the policy.
+* **use-uncompressed-size**: (Required) Whether to use uncompressed size. Accepted values: **false**, **true**
 
 #### Example
 
@@ -283,7 +283,7 @@ ID    Name                     Is Blocking    Is Enabled    Repository Id       
 
 az repos policy file-size update --id 2 --maximum-git-blob-size 20971520
 {
-  
+
   <Some properties omitted for space>
 
   "createdDate": "2019-11-19T16:09:32.960070+00:00",
@@ -301,7 +301,7 @@ az repos policy file-size update --id 2 --maximum-git-blob-size 20971520
     ],
     "useUncompressedSize": true
   },
-  
+
    <Some properties omitted for space>
 
 }
@@ -309,9 +309,9 @@ az repos policy file-size update --id 2 --maximum-git-blob-size 20971520
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
-* * *
+---
 
 ## Forking
 
@@ -333,12 +333,12 @@ If you [import a repository](import-git-repository.md), we automatically turn th
 
 By default, the option to complete linked work items during pull request completion will remember each user's last choice.
 Some teams may have different approaches to closing work items, such as at a standup meeting, and may want to discourage users from completing work items with their pull requests.
-By disabling this setting, users must opt-in to completing work items for each pull request.  
+By disabling this setting, users must opt-in to completing work items for each pull request.
 
 ## Cross-platform compatibility settings
 
->[!NOTE]
->Our recommendation is to configure these settings **either** at the project level or each individual repo, but not both. If set at both levels, we will compute whichever setting is the most restrictive and honor that. Configuring these settings at only one level removes this complexity prevents slow downs in Git performance.
+> [!NOTE]
+> Our recommendation is to configure these settings **either** at the project level or each individual repo, but not both. If set at both levels, we will compute whichever setting is the most restrictive and honor that. Configuring these settings at only one level removes this complexity prevents slow downs in Git performance.
 
 ### Case enforcement
 
@@ -372,7 +372,7 @@ This setting will block pushes to your repository that contain files or folders 
 
 Not all [path lengths](os-compatibility.md) are allowed on the three major OS file systems (Windows, macOS, and Linux). Developers can push commits to a shared repository that may contain files or directories with path lengths that are invalid on one or more platforms. If these files or directories are fetched and checked out on a platform where they are invalid then the working directory can become corrupted.
 
-This setting will block pushes to your repository that contain files or directories with path names that are invalid **on any platform**. [See what path lengths are invalid](os-compatibility.md). When enabled, a default value of `248` is selected because that is the highest max length that is 100% supported across all three major platforms. 
+This setting will block pushes to your repository that contain files or directories with path names that are invalid **on any platform**. [See what path lengths are invalid](os-compatibility.md). When enabled, a default value of `248` is selected because that is the highest max length that is 100% supported across all three major platforms.
 
 The max path value can be modified. For example, if you only have macOS or Linux developers in your organization, then you may optionally choose to set it to highest value that is 100% supported on both platforms (`1016`). You may also optionally choose to set a lower max path value if you wish to enforce certain directory & naming conventions for your organization.
 

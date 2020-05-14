@@ -14,7 +14,6 @@ ms.date: 08/04/2016
 
 Module path: `TFS/Build/Contracts`
 
-
 ### Members
 
 * `author`: [VSS_Common_Contracts.IdentityRef](../../../VSS/WebApi/Contracts/IdentityRef.md). The author of the change.
@@ -32,4 +31,3 @@ Module path: `TFS/Build/Contracts`
 * `timestamp`: Date. A timestamp for the change.
 
 * `type`: string. The type of change. &quot;commit&quot;, &quot;changeset&quot;, etc.
-

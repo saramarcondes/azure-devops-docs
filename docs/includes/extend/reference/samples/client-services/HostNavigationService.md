@@ -11,12 +11,13 @@ ms.date: 08/17/2016
 ---
 
 ```js
-    // Get navigation service
-    VSS.getService(VSS.ServiceIds.Navigation).then(function(navigationService) {
-        // Get current hash value from host url
-        navigationService.getHash().then(function (hash) {
-            console.log("Host hash value: " + hash);                        
-        });
-    });
+// Get navigation service
+VSS.getService(VSS.ServiceIds.Navigation).then(function(navigationService) {
+  // Get current hash value from host url
+  navigationService.getHash().then(function(hash) {
+    console.log("Host hash value: " + hash);
+  });
+});
 ```
+
 See [Host navigation](/azure/devops/extend/develop/host-navigation) for additional samples.

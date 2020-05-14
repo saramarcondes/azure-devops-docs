@@ -21,27 +21,27 @@ This guidance explains how to set up and use Anaconda environments in your pipel
 
 Follow these instructions to set up a pipeline for a sample Python app with Anaconda environment.
 
-1. The code in the following repository is a simple Python app. To get started, fork this repo to your GitHub account.
+1.  The code in the following repository is a simple Python app. To get started, fork this repo to your GitHub account.
 
     ```
     https://github.com/MicrosoftDocs/pipelines-anaconda
     ```
 
-1. Sign in to your Azure DevOps organization and navigate to your project.
+1.  Sign in to your Azure DevOps organization and navigate to your project.
 
-1. In your project, navigate to the **Pipelines** page. Then choose the action to create a new pipeline.
+1.  In your project, navigate to the **Pipelines** page. Then choose the action to create a new pipeline.
 
-1. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
+1.  Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
 
-1. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
+1.  You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
 
-1. When the list of repositories appears, select your Java sample repository.
+1.  When the list of repositories appears, select your Java sample repository.
 
-1. Azure Pipelines will analyze the code in your repository and detect an existing `azure-pipelines.yml` file.
+1.  Azure Pipelines will analyze the code in your repository and detect an existing `azure-pipelines.yml` file.
 
-1. Select **Run**.
+1.  Select **Run**.
 
-1. A new run is started. Wait for the run to finish.
+1.  A new run is started. Wait for the run to finish.
 
 > [!TIP]
 > To make changes to the YAML file as described in this topic, select the pipeline in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
@@ -108,7 +108,6 @@ The `conda create` command will create an environment with the arguments you pas
 > [!NOTE]
 > To add specific conda channels, you need to add an extra line for conda config:
 > `conda config --add channels conda-forge`
-
 
 ---
 
@@ -213,15 +212,19 @@ The following YAML installs the `scipy` package in the conda environment named `
 ## FAQs
 
 ### Why am I getting a "Permission denied" error?
+
 On Hosted macOS, the agent user doesn't have ownership of the directory where Miniconda is installed.
 For a fix, see the "Hosted macOS" tab under [Add conda to your system path](#add-conda-to-your-system-path).
 
 ### Why is my build hanging on a `conda create` or `conda install` step?
+
 If you forget to pass `--yes`, conda will stop and wait for user interaction.
 
 ### Why is my script on Windows stopping after it activates the environment?
+
 On Windows, `activate` is a Batch script. You must use the [`call`](https://docs.microsoft.com/windows-server/administration/windows-commands/call) command to resume running your script after activating.
 See examples of using `call` [above](#run-pipeline-steps-in-an-anaconda-environment).
 
 ### How can I run my tests with multiple versions of Python?
+
 See [Build Python apps in Azure Pipelines](./python.md).

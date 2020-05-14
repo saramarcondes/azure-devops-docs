@@ -18,7 +18,7 @@ monikerRange: 'azure-devops'
 
 Stop your users from requesting access to your organization or project within your organization, by disabling the Request Access policy.
 
-When this policy is on, users can request access to a resource. A request results in an email notification to the administrators asking for review and access, as needed. 
+When this policy is on, users can request access to a resource. A request results in an email notification to the administrators asking for review and access, as needed.
 
 ## Prerequisites
 
@@ -26,23 +26,23 @@ You must be a Project Collection Administrator or organization Administrator to 
 
 ## Disable Request Access policy
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+1.  Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
-2. Choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+2.  Choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Choose the gear icon, Organization settings](../../media/settings/open-admin-settings-vert.png)
+    ![Choose the gear icon, Organization settings](../../media/settings/open-admin-settings-vert.png)
 
-3. In the Policies tab, find the Request Access policy and move the toggle to *off*.
+3.  In the Policies tab, find the Request Access policy and move the toggle to _off_.
 
-   ![Disable the Request Access policy in Organization settings](media/request-access-policy-settings.png)
+    ![Disable the Request Access policy in Organization settings](media/request-access-policy-settings.png)
 
-4. Provide the URL to your internal process for gaining access. Users see this URL in the error report when they try to access the organization or a project within the organization that they don't have access to.
+4.  Provide the URL to your internal process for gaining access. Users see this URL in the error report when they try to access the organization or a project within the organization that they don't have access to.
 
-   ![Enter the URL to your organization's internal process for gaining access.](media/disable-request-access-provide-url.png)
+    ![Enter the URL to your organization's internal process for gaining access.](media/disable-request-access-provide-url.png)
 
 ## Related articles
 
-- [Need help?](faq-configure-customize-organization.md#get-support)
-- [Assign access levels and extensions by group membership](assign-access-levels-and-extensions-by-group-membership.md)
-- [Manage Conditional Access](manage-conditional-access.md)
-- [Change application access policies](change-application-access-policies.md).
+* [Need help?](faq-configure-customize-organization.md#get-support)
+* [Assign access levels and extensions by group membership](assign-access-levels-and-extensions-by-group-membership.md)
+* [Manage Conditional Access](manage-conditional-access.md)
+* [Change application access policies](change-application-access-policies.md).

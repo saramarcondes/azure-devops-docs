@@ -11,7 +11,6 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Unlabel Command
 
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
@@ -65,11 +64,11 @@ You can specify more than one <em>itemspec</em> argument.
 </tbody>
 </table>
 
-| **Option** | **Description** |
-|---|---|
-| **/recursive** | Unlabels all items in the particular directory and all the subdirectories that match the *itemspec*. |
-| **/collection** | Specifies the project collection. |
-| **/login** | Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server. |
+| **Option**      | **Description**                                                                                          |
+| --------------- | -------------------------------------------------------------------------------------------------------- |
+| **/recursive**  | Unlabels all items in the particular directory and all the subdirectories that match the _itemspec_.     |
+| **/collection** | Specifies the project collection.                                                                        |
+| **/login**      | Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server. |
 
 ## Remarks
 

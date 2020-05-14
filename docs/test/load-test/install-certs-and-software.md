@@ -12,7 +12,7 @@ monikerRange: '> tfs-2018'
 
 # Install certificates and custom software on agent machines
 
-[!INCLUDE [version-header-devops-services](../includes/version-header-devops-services.md)] 
+[!INCLUDE [version-header-devops-services](../includes/version-header-devops-services.md)]
 
 [!INCLUDE [loadtest-deprecated-include](../includes/loadtest-deprecated-include.md)]
 
@@ -31,7 +31,7 @@ Some examples are:
   install the certificate.
 
 * Install software on the machines running the load test agents in the cloud to collect data or metrics;
-  for example, installing [Network Monitor](https://blogs.technet.com/b/netmon/) to capture network traffic statistics. 
+  for example, installing [Network Monitor](https://blogs.technet.com/b/netmon/) to capture network traffic statistics.
   You can use a setup script to install it on the agent machine and use a cleanup script to save the data to remote storage
   such as Azure Storage (by using a SAS key).
 
@@ -40,57 +40,57 @@ Some examples are:
 
 ## Add certificates and scripts to deploy
 
-1. Double-click the active test settings (such as **Local.testsettings**) to open **Test Settings** dialog.
+1.  Double-click the active test settings (such as **Local.testsettings**) to open **Test Settings** dialog.
 
-1. Select the **Deployment** page and set the **Enable deployment** checkbox.
+1.  Select the **Deployment** page and set the **Enable deployment** checkbox.
 
-   ![Enable deployment of artifacts](media/install-certs-and-software/enable-deloyment.png)
+    ![Enable deployment of artifacts](media/install-certs-and-software/enable-deloyment.png)
 
-1. Choose **Add File**, browse to the location of your certificate, and add it to the deployment items list.
+1.  Choose **Add File**, browse to the location of your certificate, and add it to the deployment items list.
 
-   ![Add certificate to deploy](media/install-certs-and-software/add-certificate.png)
+    ![Add certificate to deploy](media/install-certs-and-software/add-certificate.png)
 
-1. Select the **Setup and Cleanup Scripts** page in left-hand navigation bar.
+1.  Select the **Setup and Cleanup Scripts** page in left-hand navigation bar.
 
-1. Choose the ellipsis (**...**), browse to the location of the file or other artifact you want to deploy, and add it to the deployment items list.
+1.  Choose the ellipsis (**...**), browse to the location of the file or other artifact you want to deploy, and add it to the deployment items list.
 
-   ![Add script to deploy](media/install-certs-and-software/add-script.png)
+    ![Add script to deploy](media/install-certs-and-software/add-script.png)
 
-1. Choose **Apply** and then **Close**.
+1.  Choose **Apply** and then **Close**.
 
 Deployment Items are in a folder named **DeploymentDirectory**, which can be accessed through the environment variable `%DeploymentDirectory%`
 
 ## Examples of setup scripts
 
-Script to install a certificate into the Trusted Root Certification Authorities certificate store on the test computer. 
-This assumes you have added the Certificate Manager Tool `CertMgr.exe` to the deployment list:  
+Script to install a certificate into the Trusted Root Certification Authorities certificate store on the test computer.
+This assumes you have added the Certificate Manager Tool `CertMgr.exe` to the deployment list:
 
-``` command
+```command
 %DeploymentDirectory%/CertMgr.exe -add -c %DeploymentDirectory%\mycertificate.cer -s -r localMachine root
 ```
 
 Script to import a certificate into the Trusted Root Certification Authorities certificate store on the test computer:
 
-``` command
+```command
 certutil.exe -f -user -p password -importpfx %DeploymentDirectory%\mycertitficate.pfx NoRoot
 ```
 
 > See [CertMgr](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool)
-  and [Certutil](/windows-server/administration/windows-commands/certutil)
-  for more information about using these utilities.
+> and [Certutil](/windows-server/administration/windows-commands/certutil)
+> for more information about using these utilities.
 
 You can use the deployment options and a setup script to add **.exe** files or other files you want to deploy to the machines running the agent,
 and use a setup script to install software on these machines. For example, a script to install Web Deploy on an agent machine that runs load tests
 in the cloud, assuming you have added `WebDeploy_x64_en-US.msi` to the deployment list:
 
-``` command
+```command
 %DeploymentDirectory%\WebDeploy_x64_en-US.msi /passive.
 ```
 
 ## See also
 
 * [Load test with Visual Studio](getting-started-with-performance-testing.md)
-* [Load test with Azure DevOps](get-started-simple-cloud-load-test.md) 
-* [Load test with Azure portal](app-service-web-app-performance-test.md) 
+* [Load test with Azure DevOps](get-started-simple-cloud-load-test.md)
+* [Load test with Azure portal](app-service-web-app-performance-test.md)
 
-[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)]

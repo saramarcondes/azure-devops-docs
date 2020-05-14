@@ -14,7 +14,6 @@ ms.date: 08/04/2016
 
 Module path: `TFS/Build/Contracts`
 
-
 ### Members
 
 * `definitionUri`: string. URI of the associated definition
@@ -28,4 +27,3 @@ Module path: `TFS/Build/Contracts`
 * `name`: string. Name of the source provider
 
 * `supportedTriggerTypes`: [DefinitionTriggerType](./DefinitionTriggerType.md). Which trigger types are supported by this definition source provider
-

@@ -15,18 +15,17 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Represents an Azure DevOps Services &quot;extension&quot; which is a container for contributions and contribution types 
+Represents an Azure DevOps Services &quot;extension&quot; which is a container for contributions and contribution types
 
 ### Members
 
-* `baseUri`: string. 
+* `baseUri`: string.
 
-* `contributions`: [Contribution](../../../VSS/References/SDK_Interfaces/Contribution.md)[]. 
+* `contributions`: [Contribution](../../../VSS/References/SDK_Interfaces/Contribution.md)[].
 
-* `contributionTypes`: [ContributionType](../../../VSS/References/SDK_Interfaces/ContributionType.md)[]. 
+* `contributionTypes`: [ContributionType](../../../VSS/References/SDK_Interfaces/ContributionType.md)[].
 
-* `eventCallbacks`: [ExtensionEventCallbackCollection](../../../VSS/References/SDK_Interfaces/ExtensionEventCallbackCollection.md). 
+* `eventCallbacks`: [ExtensionEventCallbackCollection](../../../VSS/References/SDK_Interfaces/ExtensionEventCallbackCollection.md).
 
 * `extensionId`: string. The friendly extension ID for this extension - unique for a given publisher.
 
@@ -36,9 +35,9 @@ Represents an Azure DevOps Services &quot;extension&quot; which is a container f
 
 * `id`: string. Globally unique ID for this extension (the same ID is used for all versions of a single extension)
 
-* `language`: string. 
+* `language`: string.
 
-* `manifestVersion`: any. 
+* `manifestVersion`: any.
 
 * `publisherId`: string. Unique ID of the publisher of this extension
 
@@ -46,9 +45,8 @@ Represents an Azure DevOps Services &quot;extension&quot; which is a container f
 
 * `registrationId`: string. Unique ID for this extension (the same ID is used for all versions of a single extension)
 
-* `scopes`: string[]. 
+* `scopes`: string[].
 
-* `serviceInstanceType`: string. 
+* `serviceInstanceType`: string.
 
 * `version`: string. Version of this extension
-

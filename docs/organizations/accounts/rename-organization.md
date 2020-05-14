@@ -31,19 +31,19 @@ To change your organization URL, you need at least Basic access and organization
 
 ## Rename your organization
 
-1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
+1.  Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+2.  Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
-3. Select **Overview**, enter a new name for the organization, and then select **Save**. Move the toggle to use the new URL, if you want.
+3.  Select **Overview**, enter a new name for the organization, and then select **Save**. Move the toggle to use the new URL, if you want.
 
-   ![Rename you organization](media/rename-vso-organization/rename-organization-new.png)
+    ![Rename you organization](media/rename-vso-organization/rename-organization-new.png)
 
-4. Confirm that you want to rename your organization. Enter a new name for your organization and save your changes.
+4.  Confirm that you want to rename your organization. Enter a new name for your organization and save your changes.
 
-   ![Enter new organization name and save changes](media/rename-vso-organization/vsoconfirmorganizationrename.png)
+    ![Enter new organization name and save changes](media/rename-vso-organization/vsoconfirmorganizationrename.png)
 
 Your organization is renamed.
 
@@ -51,12 +51,10 @@ Your organization is renamed.
 
 ### Q: If I change the organization URL, can I switch back?
 
-A: The organization URL setting is two-way toggle. You can turn on the new domain name URL. You can also turn off the new URL - then, you go back to using old URL format.  
+A: The organization URL setting is two-way toggle. You can turn on the new domain name URL. You can also turn off the new URL - then, you go back to using old URL format.
 
 ## Related articles
 
-- [Resolve orphaned organization](resolve-orphaned-organization.md)
-- [Delete your organization](delete-your-organization.md)
-- [Connect your organization to Azure Active Directory](connect-organization-to-azure-ad.md)
-
-
+* [Resolve orphaned organization](resolve-orphaned-organization.md)
+* [Delete your organization](delete-your-organization.md)
+* [Connect your organization to Azure Active Directory](connect-organization-to-azure-ad.md)

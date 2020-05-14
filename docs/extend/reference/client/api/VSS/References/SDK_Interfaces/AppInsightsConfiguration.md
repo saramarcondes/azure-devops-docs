@@ -15,8 +15,7 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Model used to configure how TFS reports usage data to Application Insights 
+Model used to configure how TFS reports usage data to Application Insights
 
 ### Members
 
@@ -31,4 +30,3 @@ Model used to configure how TFS reports usage data to Application Insights
 * `instrumentationKey`: string. The instrumentation key used to track this deployment&#x27;s usage
 
 * `trackProjectInfo`: boolean. If true, include collection, project, and team info in the track-page urls
-

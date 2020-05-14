@@ -12,23 +12,25 @@ monikerRange: '>= tfs-2013'
 ---
 
 # Import a Git repo
+
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013
 
 This guide shows you how to import an existing Git repo from GitHub, Bitbucket, GitLab, or other location into a new or empty existing repo in your project in Azure DevOps.
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
->[!IMPORTANT]
->The **Import repository** feature is currently not working if you are importing a GitHub repo using TFS 2017.1 to TFS 2018.1. For more information about this issue, see [Weak cryptographic standards removal notice](https://githubengineering.com/crypto-removal-notice/) and [Unable to connect to GitHub due to TLS 1.2 only change](https://developercommunity.visualstudio.com/content/problem/201457/unable-to-connect-to-github-due-to-tls-12-only-cha.html)
+> [!IMPORTANT]
+> The **Import repository** feature is currently not working if you are importing a GitHub repo using TFS 2017.1 to TFS 2018.1. For more information about this issue, see [Weak cryptographic standards removal notice](https://githubengineering.com/crypto-removal-notice/) and [Unable to connect to GitHub due to TLS 1.2 only change](https://developercommunity.visualstudio.com/content/problem/201457/unable-to-connect-to-github-due-to-tls-12-only-cha.html)
 
 There are several workarounds to this issue:
+
 * You can import a GitHub repo into TFS using the steps in [Manually import a repo](#manually-import-a-repo).
 * You can set a machine-wide .NET registry key on your Application Tier servers to enable them to use all available TLS protocol versions. After setting these registry keys, you will need to recycle the TFS application pools (or restart the servers) for the settings to be activated. Open an elevated command prompt and run the following commands to set the registry keys.
- 
-     ```
-      reg add HKLM\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 /v SystemDefaultTlsVersions /t REG_DWORD /d 1 /f /reg:64
-      reg add HKLM\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 /v SystemDefaultTlsVersions /t REG_DWORD /d 1 /f /reg:32
-     ```
+
+  ```
+   reg add HKLM\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 /v SystemDefaultTlsVersions /t REG_DWORD /d 1 /f /reg:64
+   reg add HKLM\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 /v SystemDefaultTlsVersions /t REG_DWORD /d 1 /f /reg:32
+  ```
 
 * On your Application Tier servers, you can modify the web.config file to change the targetFramework from `<httpRuntime targetFramework="4.5"` to `<httpRuntime targetFramework="4.6"`.
 
@@ -39,29 +41,30 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 ## Prerequisites
 
 * An organization in Azure DevOps. If you don't have one, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
-* To use the **Import repository** feature in TFS, you must have TFS 2017 Update 1 or higher. 
+* To use the **Import repository** feature in TFS, you must have TFS 2017 Update 1 or higher.
 * To import a repository using TFS 2017 RTM or earlier, see [Manually import a repo](#manually-import-a-repo).
 
-::: moniker range=">= tfs-2017"  
+::: moniker range=">= tfs-2017"
 
-## Import into a new repo  
-::: moniker-end  
+## Import into a new repo
+
+::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Select **Repos**, **Files**.
+1.  Select **Repos**, **Files**.
 
-   ![View your branches](media/repos-navigation/repos-files.png)
+    ![View your branches](media/repos-navigation/repos-files.png)
 
-2. From the repo drop-down, select **Import repository**.
+2.  From the repo drop-down, select **Import repository**.
 
-   ![Manage repositories](media/repo-mgmt/import-repository.png)
+    ![Manage repositories](media/repo-mgmt/import-repository.png)
 
-3. If the source repo is publicly available, just [enter the clone URL](clone.md#clone_url) of the source repository and a name for your new Git repository.
+3.  If the source repo is publicly available, just [enter the clone URL](clone.md#clone_url) of the source repository and a name for your new Git repository.
 
-   If the source repository is private but can be accessed using basic authentication (username-password, personal access token, etc.),  select **Requires authorization** and enter the your credentials. SSH authentication is not supported, but you can manually import a repository that uses SSH authentication by following the steps in [Manually import a repo](#manually-import-a-repo).
+    If the source repository is private but can be accessed using basic authentication (username-password, personal access token, etc.), select **Requires authorization** and enter the your credentials. SSH authentication is not supported, but you can manually import a repository that uses SSH authentication by following the steps in [Manually import a repo](#manually-import-a-repo).
 
-   ![Import Repository Dialog](media/Import-Repo/ImportRepoDialog.png)
+    ![Import Repository Dialog](media/Import-Repo/ImportRepoDialog.png)
 
 ::: moniker-end
 
@@ -73,21 +76,20 @@ From the repo drop-down, select **Import repository**.
 
 If the source repo is publicly available, just [enter the clone URL](clone.md#clone_url) of the source repository and a name for your new Git repository.
 
-If the source repository is private but can be accessed using basic authentication (username-password, personal access token, etc.),  select **Requires authorization** and enter the your credentials. SSH authentication is not supported, but you can manually import a repository that uses SSH authentication by following the steps in [Manually import a repo](#manually-import-a-repo).
+If the source repository is private but can be accessed using basic authentication (username-password, personal access token, etc.), select **Requires authorization** and enter the your credentials. SSH authentication is not supported, but you can manually import a repository that uses SSH authentication by following the steps in [Manually import a repo](#manually-import-a-repo).
 
 ![Import Repository Dialog](media/Import-Repo/ImportRepoDialog.png)
 
 ::: moniker-end
 
-
 ## Import into an existing empty repo
 
-On the **Files** page of the empty Git repository, select **Import** and [enter the clone URL](clone.md#clone_url). You will need to provide credentials if the source repository requires authentication. 
+On the **Files** page of the empty Git repository, select **Import** and [enter the clone URL](clone.md#clone_url). You will need to provide credentials if the source repository requires authentication.
 
 ![Import Repository into an existing repository](media/Import-Repo/ImportRepofromEmptyRepo.png)
 
->[!NOTE]
->The import feature disables automated linking for work items mentioned in a commit comment since the work item IDs in the destination project might not be the same as ones in the source project. Automatic linking for work items mentioned in a commit can be re-enabled by navigating to **Settings**, **Version Control**,  selecting your repository, and choosing **Options**. For more information on linking commits with work items, see [How do I associate my commits with work items?](share-your-code-in-git-vs-2017.md#how-do-i-associate-my-commits-with-work-items)
+> [!NOTE]
+> The import feature disables automated linking for work items mentioned in a commit comment since the work item IDs in the destination project might not be the same as ones in the source project. Automatic linking for work items mentioned in a commit can be re-enabled by navigating to **Settings**, **Version Control**, selecting your repository, and choosing **Options**. For more information on linking commits with work items, see [How do I associate my commits with work items?](share-your-code-in-git-vs-2017.md#how-do-i-associate-my-commits-with-work-items)
 
 ::: moniker range=">= tfs-2013"
 
@@ -95,28 +97,29 @@ On the **Files** page of the empty Git repository, select **Import** and [enter 
 
 The import repo feature was introduced in TFS 2017 Update 1. If you are using TFS 2017 RTM or earlier, you can use the following steps to manually import a repo into TFS. You can also follow these steps to manually import a repo into an Azure DevOps Services repo by replacing TFS with Azure Repos in the following steps.
 
-1. Clone the source repo to a temporary folder on your computer using the `bare` option, as shown in the following command line example, and then navigate to the repo's folder. Note that when cloning using the `bare` option, the folder name includes the `.git` suffix. In this example, `https://github.com/contoso/old-contoso-repo.git` is the source repo to be manually imported.
+1.  Clone the source repo to a temporary folder on your computer using the `bare` option, as shown in the following command line example, and then navigate to the repo's folder. Note that when cloning using the `bare` option, the folder name includes the `.git` suffix. In this example, `https://github.com/contoso/old-contoso-repo.git` is the source repo to be manually imported.
 
     ```
     git clone --bare https://github.com/contoso/old-contoso-repo.git
     cd old-contoso-repo.git
     ```
 
-2. [Create a target repo](create-new-repo.md#create-a-repo-using-the-web-portal) using TFS 2017 RTM, and make a note of the clone URL. In this example, `https://dev.azure.com/contoso-ltd/MyFirstProject/_git/new-contoso-repo` is the URL for the new target repo.
+2.  [Create a target repo](create-new-repo.md#create-a-repo-using-the-web-portal) using TFS 2017 RTM, and make a note of the clone URL. In this example, `https://dev.azure.com/contoso-ltd/MyFirstProject/_git/new-contoso-repo` is the URL for the new target repo.
 
-3. Run the following command to copy the source repo to the target repo.
+3.  Run the following command to copy the source repo to the target repo.
 
     ```
     git push --mirror https://dev.azure.com/contoso-ltd/MyFirstProject/_git/new-contoso-repo
-    ``` 
+    ```
 
-4. If the source repository has LFS objects then fetch them, and copy them from the source repo to the target repo.
+4.  If the source repository has LFS objects then fetch them, and copy them from the source repo to the target repo.
 
     ```
     git lfs fetch origin --all
     git lfs push --all https://dev.azure.com/contoso-ltd/MyFirstProject/_git/new-contoso-repo
     ```
-5. Delete the temporary folder by running the following commands.
+
+5.  Delete the temporary folder by running the following commands.
 
     ```
     cd ..
@@ -141,7 +144,7 @@ Although most of the time the import is successful, the following conditions can
 ### What if my source repository is behind two-factor authentication?
 
 The import service uses REST APIs to validate and trigger import and cannot work directly with repositories that require two-factor authentication.
-Most Git hosting providers like [GitHub](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) and [Azure DevOps Services](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) support personal tokens which can be supplied to the import service. 
+Most Git hosting providers like [GitHub](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) and [Azure DevOps Services](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) support personal tokens which can be supplied to the import service.
 
 <a id="multiack" />
 
@@ -182,24 +185,22 @@ You can migrate code from an existing TFVC repository to a new Git repository wi
 Git import will not import Git LFS objects.
 
 LFS objects can be moved using the following steps:
-- Import the repository using import repository feature into Azure DevOps.
-	This will copy over all the Git objects from source to Azure DevOps (this will also import the LFS pointers which are Git objects but not the LFS files)
+
+* Import the repository using import repository feature into Azure DevOps.
+  This will copy over all the Git objects from source to Azure DevOps (this will also import the LFS pointers which are Git objects but not the LFS files)
 
 To move over the LFS files (you will need both Git.exe and LFS client in the same box and access to both source repository and destination repository)
-- Clone the imported repository from Azure DevOps to local system, clone will work but it will fail while performing checkout of LFS files
-- Add the source repository as remote (say ‘source’)
-- Perform `git lfs fetch source --all`  (this will bring over all LFS files from source to your local repository)
-- Assuming the destination VSTS repository is your ‘target’ remote 
-- Perform `git lfs push target --all`
+
+* Clone the imported repository from Azure DevOps to local system, clone will work but it will fail while performing checkout of LFS files
+* Add the source repository as remote (say ‘source’)
+* Perform `git lfs fetch source --all` (this will bring over all LFS files from source to your local repository)
+* Assuming the destination VSTS repository is your ‘target’ remote
+* Perform `git lfs push target --all`
 
 ::: moniker-end
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [New to Git repos? Learn more](/azure/devops/learn/git/set-up-a-git-repository)
+> [!div class="nextstepaction"][new to git repos? learn more](/azure/devops/learn/git/set-up-a-git-repository)
 
-> [!div class="nextstepaction"]
-> [Learn more about Git in the Git tutorial](gitworkflow.md)
-
-
+> [!div class="nextstepaction"][learn more about git in the git tutorial](gitworkflow.md)

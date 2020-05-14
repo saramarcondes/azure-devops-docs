@@ -42,30 +42,28 @@ If your organization uses an Azure subscription to bill purchases, you must [fir
 To delete your organization, you need at least Basic access and Project Collection Administrator
 permissions. [How do I find the Project Collection Administrators?](../security/lookup-organization-owner-admin.md#show-members-of-the-project-collection-administrators-group)
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+1.  Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+2.  Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
     ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
+3)  Select **Overview** > **Delete**.
 
-3. Select **Overview** > **Delete**.
+    ![Screenshot of organization settings, with Overview and Delete highlighted](media/delete-organization/organization-overview-settings.png)
 
-   ![Screenshot of organization settings, with Overview and Delete highlighted](media/delete-organization/organization-overview-settings.png)
+4)  In the resulting dialog box, enter the name of the organization, and then select **Delete**.
 
-4. In the resulting dialog box, enter the name of the organization, and then select **Delete**.
+    ![Screenshot of Delete Account dialog box](media/delete-organization/delete-organization-popup.png)
 
-   ![Screenshot of Delete Account dialog box](media/delete-organization/delete-organization-popup.png)
+5)  To review your organizations, go to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view), where you can see your deleted organization.
 
-5. To review your organizations, go to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view), where you can see your deleted organization.
-
-   [Need help?](faq-configure-customize-organization.md#get-support)
+    [Need help?](faq-configure-customize-organization.md#get-support)
 
 Your organization is deleted.
 
 ## Related articles
 
-- [Recover your deleted organization](recover-your-organization.md)
-- [Resolve an orphaned organization](resolve-orphaned-organization.md)
-- [Create a new organization](create-organization.md)
-
+* [Recover your deleted organization](recover-your-organization.md)
+* [Resolve an orphaned organization](resolve-orphaned-organization.md)
+* [Create a new organization](create-organization.md)

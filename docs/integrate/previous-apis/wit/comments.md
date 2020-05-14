@@ -26,14 +26,16 @@ Every work item comment is associated with a single [revision](./revisions.md). 
 GET https://{instance}/DefaultCollection/_apis/wit/workitems/{id}/comments/{revision}?api-version={version}
 ```
 
-| Parameter | Type    | Default | Notes	
-|:----------|:--------|:--------|:--------------------------------------
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
+
+
 | URL
-| instance  | string  |         | [VS Team Services account](../../get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](../../get-started/rest/basics.md) ({server:port}).
-| id        | int     |         | ID of the work item.
-| revision  | int     |         | Revision number of the comment.
+| instance | string | | [VS Team Services account](../../get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](../../get-started/rest/basics.md) ({server:port}).
+| id | int | | ID of the work item.
+| revision | int | | Revision number of the comment.
 | Query
-| api-version| string |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version| string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
@@ -50,13 +52,14 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/comments/2?api
   "revisedBy": {
     "id": "d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
     "name": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
   },
   "revisedDate": "2014-12-29T20:49:24.67Z",
-  "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/comments/2"
+  "url":
+    "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/comments/2"
 }
 ```
-
 
 #### Sample code
 
@@ -68,16 +71,18 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/comments/2?api
 GET https://{instance}/DefaultCollection/_apis/wit/workitems/{id}/comments?api-version={version}[&fromRevision={int}&$top={int}&order={order}]
 ```
 
-| Parameter | Type    | Default | Notes	
-|:----------|:--------|:--------|:------------------------------
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
+
+
 | URL
-| instance  | string  |         | [VS Team Services account](../../get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](../../get-started/rest/basics.md) ({server:port}).
-| id        | int     |         | ID of the work item.
+| instance | string | | [VS Team Services account](../../get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](../../get-started/rest/basics.md) ({server:port}).
+| id | int | | ID of the work item.
 | Query
-| api-version   | string             |       | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| fromRevision  | integer            | 1     | Starting revision ID to fetch comments from.
-| $top          | integer            | 200   | Number of comments to fetch.
-| order         | enum { asc, desc}  | asc   | Revision number sort order.
+| api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| fromRevision | integer | 1 | Starting revision ID to fetch comments from.
+| $top | integer | 200 | Number of comments to fetch.
+| order | enum { asc, desc} | asc | Revision number sort order.
 
 #### Sample request
 
@@ -99,10 +104,12 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/comments?fromR
       "revisedBy": {
         "id": "d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
         "name": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
       },
       "revisedDate": "2014-12-29T20:49:24.67Z",
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/comments/2"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/comments/2"
     },
     {
       "revision": 3,
@@ -110,17 +117,17 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/comments?fromR
       "revisedBy": {
         "id": "d291b0c4-a05c-4ea6-8df1-4b41d5f39eff",
         "name": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d291b0c4-a05c-4ea6-8df1-4b41d5f39eff"
       },
       "revisedDate": "2014-12-29T20:49:26.99Z",
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/comments/3"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/comments/3"
     }
   ]
 }
 ```
 
-
 #### Sample code
 
 * [C# (GetPageOfWorkItemComments method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/CommentsSample.cs#L30)
-

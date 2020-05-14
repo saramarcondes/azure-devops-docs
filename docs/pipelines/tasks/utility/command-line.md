@@ -41,6 +41,7 @@ The CmdLine task also has a shortcut syntax in YAML:
   failOnStderr: #
   env: { string: string } # mapping of environment variables to add
 ```
+
 ::: moniker-end
 
 ## Running batch and .CMD files
@@ -58,12 +59,12 @@ You should always prepend `call` before executing a batch file in an Azure Pipel
 
 ## Arguments
 
-|Argument|Description|
-|--- |--- |
-|`script`<br/>Script|(Required) Contents of the script you want to run <br/>Default value: `echo Write your commands here\n\necho Hello world\n"`|
-|`workingDirectory`<br/>Working directory|(Optional) Specify the working directory in which you want to run the command. If you leave it empty, the working directory is [$(Build.SourcesDirectory)](../../build/variables.md).|
-|`failOnStderr`<br/>Fail on Standard Error|If this is true, this task will fail if any errors are written to stderr|
-|`env`<br/>Environment variables|(Optional) A list of additional items to map into the process's environment. <br/>For example, secret variables are not automatically mapped. If you have a secret variable called **`Foo`**, you can map it in as shown in the following example. |
+| Argument                                  | Description                                                                                                                                                                                                                                        |
+| ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `script`<br/>Script                       | (Required) Contents of the script you want to run <br/>Default value: `echo Write your commands here\n\necho Hello world\n"`                                                                                                                       |
+| `workingDirectory`<br/>Working directory  | (Optional) Specify the working directory in which you want to run the command. If you leave it empty, the working directory is [$(Build.SourcesDirectory)](../../build/variables.md).                                                              |
+| `failOnStderr`<br/>Fail on Standard Error | If this is true, this task will fail if any errors are written to stderr                                                                                                                                                                           |
+| `env`<br/>Environment variables           | (Optional) A list of additional items to map into the process's environment. <br/>For example, secret variables are not automatically mapped. If you have a secret variable called **`Foo`**, you can map it in as shown in the following example. |
 
 ```YAML
 - script: echo %MYSECRET%
@@ -71,10 +72,10 @@ You should always prepend `call` before executing a batch file in an Azure Pipel
     MySecret: $(Foo)
 ```
 
-
 ## Example
 
 #### [YAML](#tab/yaml/)
+
 ```yaml
 steps:
 - script: date /t
@@ -91,6 +92,7 @@ steps:
 ```
 
 #### [Classic](#tab/classic/)
+
 On the Build tab of a build pipeline, add these tasks:
 
 <table>
@@ -144,9 +146,8 @@ On the Build tab of a build pipeline, add these tasks:
         </tr>
 </table>
 
+---
 
-
-* * *
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
@@ -157,7 +158,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 ### Where can I learn Windows commands?
 
-[An A-Z Index of the Windows CMD  command line](https://ss64.com/nt/)
+[An A-Z Index of the Windows CMD command line](https://ss64.com/nt/)
 
 [!INCLUDE [temp](../../includes/qa-agents.md)]
 

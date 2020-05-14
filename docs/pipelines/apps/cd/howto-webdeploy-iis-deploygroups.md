@@ -31,30 +31,33 @@ You should have worked through the example [CD to an IIS Deployment Group](deplo
 This ensures that you have the release pipeline, build artifacts, and websites required.
 
 <a name="depgroup"></a>
+
 ## Dynamically create and remove a deployment group
 
 You can create and remove deployment groups dynamically if you prefer by using
 the [Azure Resource Group Deployment task](https://aka.ms/argtaskreadme)
 to install the agent on the machines in a deployment group using ARM templates.
-See [Provision deployment group agents](../../release/deployment-groups/howto-provision-deployment-group-agents.md).  
+See [Provision deployment group agents](../../release/deployment-groups/howto-provision-deployment-group-agents.md).
 
 <a name="envirconfig"></a>
+
 ## Apply stage-specific configurations
 
 If you deploy releases to multiple stages, you can substitute configuration settings in **Web.config** and other configuration files of your website using these steps:
 
-1. Define stage-specific configuration settings in the **Variables** tab of a stage in a release pipeline; for example,
-   `<connectionStringKeyName> = <value>`.
+1.  Define stage-specific configuration settings in the **Variables** tab of a stage in a release pipeline; for example,
+    `<connectionStringKeyName> = <value>`.
 
-2. In the **IIS Web App Deploy** task, select the checkbox for **XML variable substitution** under **File Transforms and Variable Substitution Options**.
+2.  In the **IIS Web App Deploy** task, select the checkbox for **XML variable substitution** under **File Transforms and Variable Substitution Options**.
 
-   > If you prefer to manage stage configuration settings in
-   > your own database or Azure KeyVault, add a task to the stage to read and emit those values using
-   > `##vso[task.setvariable variable=connectionString;issecret=true]<value>`.
-   > 
-   > At present, you cannot apply a different configuration to individual IIS servers.
+    > If you prefer to manage stage configuration settings in
+    > your own database or Azure KeyVault, add a task to the stage to read and emit those values using
+    > `##vso[task.setvariable variable=connectionString;issecret=true]<value>`.
+    >
+    > At present, you cannot apply a different configuration to individual IIS servers.
 
 <a name="rolling"></a>
+
 ## Perform a safe rolling deployment
 
 If your deployment group consists of many IIS target servers, you can deploy to a subset of servers at a time.
@@ -64,27 +67,28 @@ Simply select the **Deployment group job** and use the slider to configure the *
 ![Configuring safe rolling deployment for the proportion of stages to update in parallel](media/howto-webdeploy-iis-deploygroups/safe-rolling-deployment.png)
 
 <a name="database"></a>
+
 ## Deploy a database with your app
 
 To deploy a database with your app:
 
-1. Add both the IIS target servers and database servers to your deployment group.
-   Tag all the IIS servers as `web` and all database servers as `database`.
+1.  Add both the IIS target servers and database servers to your deployment group.
+    Tag all the IIS servers as `web` and all database servers as `database`.
 
-1. Add two machine group jobs to stages in the release pipeline, and a task in each job as follows:
+1.  Add two machine group jobs to stages in the release pipeline, and a task in each job as follows:
 
-   **First [Run on deployment group job](../../process/phases.md)** for configuration of web servers.
-   
-   - **Deployment group**: Select the deployment group you created in the [previous example](deploy-webdeploy-iis-deploygroups.md).
-   
-   - **Required tags**: `web`<p />
-   
-   Then add an **IIS Web App Deploy** task to this job.
-   
-   **Second [Run on deployment group job](../../process/phases.md)** for configuration of database servers.
-   
-   - **Deployment group**: Select the deployment group you created in the [previous example](deploy-webdeploy-iis-deploygroups.md).
-   
-   - **Required tags**: `database`<p />
-   
-   Then add a **SQL Server Database Deploy** task to this job.
+    **First [Run on deployment group job](../../process/phases.md)** for configuration of web servers.
+
+    * **Deployment group**: Select the deployment group you created in the [previous example](deploy-webdeploy-iis-deploygroups.md).
+
+    * **Required tags**: `web`<p />
+
+    Then add an **IIS Web App Deploy** task to this job.
+
+    **Second [Run on deployment group job](../../process/phases.md)** for configuration of database servers.
+
+    * **Deployment group**: Select the deployment group you created in the [previous example](deploy-webdeploy-iis-deploygroups.md).
+
+    * **Required tags**: `database`<p />
+
+    Then add a **SQL Server Database Deploy** task to this job.

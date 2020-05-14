@@ -36,12 +36,11 @@ using a [custom Docker image](https://docs.microsoft.com/azure/app-service/conta
 This example deploys a Web App on Linux using containers:
 
 ```YAML
-
 variables:
   imageName: contoso.azurecr.io/aspnetcore:$(build.buildId)
   azureSubscription: Contoso
   # To ignore SSL error uncomment the following variable
-  # VSTS_ARM_REST_IGNORE_SSL_ERRORS: true 
+  # VSTS_ARM_REST_IGNORE_SSL_ERRORS: true
 
 steps:
 - task: AzureWebAppContainer@1

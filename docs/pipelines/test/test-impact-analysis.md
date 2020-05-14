@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017'
 
 ::: moniker range="<= tfs-2018"
 
-> [!NOTE] 
+> [!NOTE]
 > Applies only to TFS 2017 Update 1 and later, and Visual Studio 2015 Update 3 and later.
 
 ::: moniker-end
@@ -58,7 +58,7 @@ However, be aware of the following caveats when using TIA with Visual Studio 201
 At present, TIA is supported for:
 
 * TFS 2017 Update 1 onwards, and Azure Pipelines
-* Version 2.* of the [Visual Studio Test](../tasks/test/vstest.md) task in the build pipeline
+* Version 2.\* of the [Visual Studio Test](../tasks/test/vstest.md) task in the build pipeline
 * Build vNext, with multiple VSTest Tasks
 * VS2015 Update 3 onwards on the build agent
 * Local and hosted build agents
@@ -83,7 +83,7 @@ At present, TIA is **not** supported for:
 
 ## Enable Test Impact Analysis
 
-TIA is supported through Version 2.* of the [Visual Studio Test](../tasks/test/vstest.md) task.
+TIA is supported through Version 2.\* of the [Visual Studio Test](../tasks/test/vstest.md) task.
 If your app is a single tier application, all you need to do is to check **Run only impacted tests** in the task UI.
 The Test Impact data collector is automatically configured. No additional steps are required.
 
@@ -136,8 +136,8 @@ You can influence the way that tests are either included or ignored during a tes
 
 When TIA opens a commit and sees an unknown file type, it falls back to running all tests. While this is good from a safety perspective, tuning this behavior might be useful in some cases. For example:
 
-* Set the **TI\_IncludePathFilters** variable to specific paths to include only these paths in a repository for which you want TIA to apply. This is useful when teams use a shared repository. Setting this variable disables TIA for all other paths not included in the setting.
-* Set the **TIA\_IncludePathFilters** variable to specify file types that do not influence the outcome of tests and for which changes should be ignored. For example, to ignore changes to .csproj files set the variable to the value **!\*\*\\\*.csproj**.
+* Set the **TI_IncludePathFilters** variable to specific paths to include only these paths in a repository for which you want TIA to apply. This is useful when teams use a shared repository. Setting this variable disables TIA for all other paths not included in the setting.
+* Set the **TIA_IncludePathFilters** variable to specify file types that do not influence the outcome of tests and for which changes should be ignored. For example, to ignore changes to .csproj files set the variable to the value **!\*\*\\\*.csproj**.
 
 > Use the [minimatch pattern](../tasks/file-matching-patterns.md) when setting variables, and separate multiple items with a semicolon.
 
@@ -152,7 +152,7 @@ To evaluate whether TIA is selecting the appropriate tests:
 
 TIA uses dependency maps of the following form.
 
-``` map
+```map
 TestMethod1
   dependency1
   dependency2
@@ -182,4 +182,4 @@ For an example of the XML file format, see [TIA custom dependency mapping](https
 * [TIA advanced configuration](https://blogs.msdn.microsoft.com/devops/2017/06/13/accelerated-continuous-testing-with-test-impact-analysis-part-3/)
 * [TIA custom dependency mapping](https://blogs.msdn.microsoft.com/devops/2017/08/04/accelerated-continuous-testing-with-test-impact-analysis-part-4/)
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

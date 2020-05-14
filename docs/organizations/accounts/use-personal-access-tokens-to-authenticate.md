@@ -28,11 +28,11 @@ Use PATs for non-Microsoft tools integrated with Azure DevOps but that don't sup
 
 ## Related articles
 
-- For more information about how security and identity are managed, see [About security and identity](../security/about-security-identity.md).
-- For more information about permissions and access levels for common user tasks, see [Default permissions and access for Azure DevOps](../security/permissions-access.md).
-- For more information about how administrators can revoke organization user PATs, see [Revoke other users' personal access tokens](admin-revoke-user-pats.md).
+* For more information about how security and identity are managed, see [About security and identity](../security/about-security-identity.md).
+* For more information about permissions and access levels for common user tasks, see [Default permissions and access for Azure DevOps](../security/permissions-access.md).
+* For more information about how administrators can revoke organization user PATs, see [Revoke other users' personal access tokens](admin-revoke-user-pats.md).
 
-## Frequently asked questions (FAQs) 
+## Frequently asked questions (FAQs)
 
 ::: moniker range="azure-devops"
 
@@ -41,6 +41,7 @@ Use PATs for non-Microsoft tools integrated with Azure DevOps but that don't sup
 A: https://dev.azure.com/ {your organization}
 
 ### Q: Is there a way to renew a PAT via REST API?
+
 A: No, we don't have a REST API to renew a PAT. You can only renew a PAT within the user interface (UI).
 
 ### Q: Can I use basic auth with all of Azure DevOps REST APIs?
@@ -77,10 +78,10 @@ A: The user has all access.
 
 A: An administrator or a tool might have created a PAT on your behalf. See the following examples:
 
-- When you connect to an Azure DevOps Git repo through git.exe. it creates a token with a display name like "git: `https://MyOrganization.visualstudio.com/` on MyMachine."
-- When you or an admin sets up an Azure App Service web app deployment, it creates a token with a display name like "Service Hooks: : Azure App Service: : Deploy web app."
-- When you or an admin sets up web load testing, as part of a pipeline, it creates a token with a display name like "WebAppLoadTestCDIntToken".
-- When a Microsoft Teams Integration Messaging Extension is set up, it creates a token with a display name like "Microsoft Teams Integration".
+* When you connect to an Azure DevOps Git repo through git.exe. it creates a token with a display name like "git: `https://MyOrganization.visualstudio.com/` on MyMachine."
+* When you or an admin sets up an Azure App Service web app deployment, it creates a token with a display name like "Service Hooks: : Azure App Service: : Deploy web app."
+* When you or an admin sets up web load testing, as part of a pipeline, it creates a token with a display name like "WebAppLoadTestCDIntToken".
+* When a Microsoft Teams Integration Messaging Extension is set up, it creates a token with a display name like "Microsoft Teams Integration".
 
 If you still believe that a PAT exists in error, we suggest that you [revoke the PAT](admin-revoke-user-pats.md#revoke-pats). Next, change your password. As an Azure Active Directory user, check with your administrator to see if your organization was used from an unknown source or location.
 
@@ -88,14 +89,16 @@ If you still believe that a PAT exists in error, we suggest that you [revoke the
 
 A: See the following sample that gets a list of builds using curl.
 <br/>
+
 ```
 curl -u username[:{personalaccesstoken}] https://dev.azure.com/{organization}/_apis/build-release/builds
 ```
+
 <br/>
 
 If you wish to provide the PAT through an HTTP header, first convert it to a Base64 string (the following example shows how to convert to Base64 using C#). The resulting string can then be provided as an HTTP header in the following format:
 <br/>
-<code>Authorization: Basic BASE64USERNAME:PATSTRING</code> 
+<code>Authorization: Basic BASE64USERNAME:PATSTRING</code>
 <br/>
 Here it is in C# using the <a href="/previous-versions/visualstudio/hh193681(v=vs.118)" data-raw-source="[HttpClient class](/previous-versions/visualstudio/hh193681(v=vs.118))">HttpClient class</a>.
 <br/>
@@ -132,6 +135,7 @@ public static async void GetBuilds()
     }
 }
 ```
+
 <br/>
 
 > [!TIP]
@@ -173,6 +177,3 @@ public static async void GetBuilds()
 When your code is working, it's a good time to switch from basic auth to <a href="../../integrate/get-started/authentication/oauth.md" data-raw-source="[OAuth](../../integrate/get-started/authentication/oauth.md)">OAuth</a>.
 
 If you enable IIS Basic Authentication for TFS, PATs aren't valid. For more information, see [Using IIS Basic Authentication with TFS on-premises](../../integrate/get-started/authentication/iis-basic-auth.md).
-
-
-

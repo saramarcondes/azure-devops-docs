@@ -20,9 +20,9 @@ ms.date: 11/3/2016
 
 [!INCLUDE [GET_STARTED](../../_data/get-started.md)]
 
-Comment threads can be added to the pull request in general or to a specific location in a file.  When a comment thread is
-created for a location in a file, an iteration context must be provided.  When requesting comment threads, a iteration context
-should be provided then as well.  This allows the comment thread to be positioned correctly in each iteration.  So if these
+Comment threads can be added to the pull request in general or to a specific location in a file. When a comment thread is
+created for a location in a file, an iteration context must be provided. When requesting comment threads, a iteration context
+should be provided then as well. This allows the comment thread to be positioned correctly in each iteration. So if these
 two contexts do not match, the file location of the returned threads may not match
 the file location of the thread when it was created if the file was modified between the two iterations.
 
@@ -32,15 +32,17 @@ the file location of the thread when it was created if the file was modified bet
 GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pullRequests/{pullRequest}/threads?api-version={version}
 ```
 
-| Parameter   | Type    | Notes
-|:------------|:--------|:---------------------------------------------------------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance    | string  | TFS server name ({server:port}).
-| project     | string  | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
-| repository  | string  | ID of the [repository](../repositories.md).
+| instance | string | TFS server name ({server:port}).
+| project | string | ID or name of the [project](../../tfs/projects.md). _Optional if specifying an ID for repository._
+| repository | string | ID of the [repository](../repositories.md).
 | pullRequest | integer | ID of the pull request.
 | Query
-| api-version | string  | [Version](../../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../../concepts/rest-api-versioning.md) of the API to use.
 
 [!INCLUDE [ID_vs_Name](../_data/id_or_name.md)]
 
@@ -66,12 +68,16 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-4
           "parentCommentId": 0,
           "author": {
             "id": "41113706-4320-4083-9150-925feb93fc22",
-            "displayName": "[DefaultCollection]\\Project Collection Service Accounts",
-            "url": "https://mytfsserver/DefaultCollection/_apis/Identities/41113706-4320-4083-9150-925feb93fc22",
-            "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=41113706-4320-4083-9150-925feb93fc22",
+            "displayName":
+              "[DefaultCollection]\\Project Collection Service Accounts",
+            "url":
+              "https://mytfsserver/DefaultCollection/_apis/Identities/41113706-4320-4083-9150-925feb93fc22",
+            "imageUrl":
+              "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=41113706-4320-4083-9150-925feb93fc22",
             "isContainer": true
           },
-          "content": "The pull request is mergable and the target commit would be 39f52d24533cc712fc845ed9fd1b6c06b3942588.",
+          "content":
+            "The pull request is mergable and the target commit would be 39f52d24533cc712fc845ed9fd1b6c06b3942588.",
           "publishedDate": "2016-11-01T16:30:32.74Z",
           "lastUpdatedDate": "2016-11-01T16:30:32.74Z",
           "commentType": "system",
@@ -114,9 +120,12 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-4
           "parentCommentId": 0,
           "author": {
             "id": "41113706-4320-4083-9150-925feb93fc22",
-            "displayName": "[DefaultCollection]\\Project Collection Service Accounts",
-            "url": "https://mytfsserver/DefaultCollection/_apis/Identities/41113706-4320-4083-9150-925feb93fc22",
-            "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=41113706-4320-4083-9150-925feb93fc22",
+            "displayName":
+              "[DefaultCollection]\\Project Collection Service Accounts",
+            "url":
+              "https://mytfsserver/DefaultCollection/_apis/Identities/41113706-4320-4083-9150-925feb93fc22",
+            "imageUrl":
+              "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=41113706-4320-4083-9150-925feb93fc22",
             "isContainer": true
           },
           "content": "Normal Paulk added Johnnie McLeod as a reviewer",
@@ -170,9 +179,12 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-4
           "parentCommentId": 0,
           "author": {
             "id": "41113706-4320-4083-9150-925feb93fc22",
-            "displayName": "[DefaultCollection]\\Project Collection Service Accounts",
-            "url": "https://mytfsserver/DefaultCollection/_apis/Identities/41113706-4320-4083-9150-925feb93fc22",
-            "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=41113706-4320-4083-9150-925feb93fc22",
+            "displayName":
+              "[DefaultCollection]\\Project Collection Service Accounts",
+            "url":
+              "https://mytfsserver/DefaultCollection/_apis/Identities/41113706-4320-4083-9150-925feb93fc22",
+            "imageUrl":
+              "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=41113706-4320-4083-9150-925feb93fc22",
             "isContainer": true
           },
           "content": "Normal Paulk voted 10",
@@ -214,9 +226,12 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-4
           "parentCommentId": 0,
           "author": {
             "id": "41113706-4320-4083-9150-925feb93fc22",
-            "displayName": "[DefaultCollection]\\Project Collection Service Accounts",
-            "url": "https://mytfsserver/DefaultCollection/_apis/Identities/41113706-4320-4083-9150-925feb93fc22",
-            "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=41113706-4320-4083-9150-925feb93fc22",
+            "displayName":
+              "[DefaultCollection]\\Project Collection Service Accounts",
+            "url":
+              "https://mytfsserver/DefaultCollection/_apis/Identities/41113706-4320-4083-9150-925feb93fc22",
+            "imageUrl":
+              "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=41113706-4320-4083-9150-925feb93fc22",
             "isContainer": true
           },
           "content": "Normal Paulk removed Johnnie McLeod from the reviewers",
@@ -270,9 +285,12 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-4
           "parentCommentId": 0,
           "author": {
             "id": "41113706-4320-4083-9150-925feb93fc22",
-            "displayName": "[DefaultCollection]\\Project Collection Service Accounts",
-            "url": "https://mytfsserver/DefaultCollection/_apis/Identities/41113706-4320-4083-9150-925feb93fc22",
-            "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=41113706-4320-4083-9150-925feb93fc22",
+            "displayName":
+              "[DefaultCollection]\\Project Collection Service Accounts",
+            "url":
+              "https://mytfsserver/DefaultCollection/_apis/Identities/41113706-4320-4083-9150-925feb93fc22",
+            "imageUrl":
+              "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=41113706-4320-4083-9150-925feb93fc22",
             "isContainer": true
           },
           "content": "The reference refs/heads/npaulk/my_work was updated.",
@@ -330,12 +348,16 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-4
           "parentCommentId": 0,
           "author": {
             "id": "41113706-4320-4083-9150-925feb93fc22",
-            "displayName": "[DefaultCollection]\\Project Collection Service Accounts",
-            "url": "https://mytfsserver/DefaultCollection/_apis/Identities/41113706-4320-4083-9150-925feb93fc22",
-            "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=41113706-4320-4083-9150-925feb93fc22",
+            "displayName":
+              "[DefaultCollection]\\Project Collection Service Accounts",
+            "url":
+              "https://mytfsserver/DefaultCollection/_apis/Identities/41113706-4320-4083-9150-925feb93fc22",
+            "imageUrl":
+              "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=41113706-4320-4083-9150-925feb93fc22",
             "isContainer": true
           },
-          "content": "The pull request is mergable and the target commit would be fd8da3e51efe350811d2157b2223df53d4db46c3.",
+          "content":
+            "The pull request is mergable and the target commit would be fd8da3e51efe350811d2157b2223df53d4db46c3.",
           "publishedDate": "2016-11-01T16:30:41.123Z",
           "lastUpdatedDate": "2016-11-01T16:30:41.123Z",
           "commentType": "system",
@@ -380,8 +402,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-4
             "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
             "displayName": "Normal Paulk",
             "uniqueName": "fabrikamfiber16@hotmail.com",
-            "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-            "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+            "url":
+              "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+            "imageUrl":
+              "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
           },
           "content": "This new feature looks good!",
           "publishedDate": "2016-11-01T16:30:48.91Z",
@@ -419,8 +443,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-4
             "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
             "displayName": "Normal Paulk",
             "uniqueName": "fabrikamfiber16@hotmail.com",
-            "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-            "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+            "url":
+              "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+            "imageUrl":
+              "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
           },
           "content": "Should we add a comment about what this value means?",
           "publishedDate": "2016-11-01T16:30:50.083Z",
@@ -435,8 +461,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-4
             "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
             "displayName": "Normal Paulk",
             "uniqueName": "fabrikamfiber16@hotmail.com",
-            "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-            "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+            "url":
+              "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+            "imageUrl":
+              "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
           },
           "publishedDate": "2016-11-01T16:30:51.383Z",
           "lastUpdatedDate": "2016-11-01T16:30:52.48Z",
@@ -470,72 +498,71 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-4
 }
 ```
 
-
 ## Create a thread
 
 ```no-highlight
 POST https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pullRequests/{pullRequest}/threads?api-version={version}
 ```
 
-| Parameter   | Type    | Notes
-|:------------|:--------|:---------------------------------------------------------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance    | string  | TFS server name ({server:port}).
-| project     | string  | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
-| repository  | string  | ID of the [repository](../repositories.md).
+| instance | string | TFS server name ({server:port}).
+| project | string | ID or name of the [project](../../tfs/projects.md). _Optional if specifying an ID for repository._
+| repository | string | ID of the [repository](../repositories.md).
 | pullRequest | integer | ID of the pull request.
 | Query
-| api-version | string  | [Version](../../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../../concepts/rest-api-versioning.md) of the API to use.
 | Body
-| comments    | Comment | see below
-| properties  | structure | optional properties to associate with the thread
-| status      | integer | possible values: 1 (active), 2 (fixed), 3 (won't fix), 4 (closed), 5 (by design), 6 (pending)
+| comments | Comment | see below
+| properties | structure | optional properties to associate with the thread
+| status | integer | possible values: 1 (active), 2 (fixed), 3 (won't fix), 4 (closed), 5 (by design), 6 (pending)
 | threadContext | ThreadContext | see below
 | pullRequestThreadContext | PullRequestThreadContext | see below
 
+_Comment_
 
-*Comment*
+| Member          | Type    | Notes                                                                                 |
+| :-------------- | :------ | :------------------------------------------------------------------------------------ |
+| parentCommentId | integer | comment ID of the parent comment when replying. Should be zero when creating a thread |
+| content         | string  | content of the comment                                                                |
+| commentType     | integer | must be 1                                                                             |
 
-| Member      | Type    | Notes
-|:------------|:--------|:---------------------------------------------------------------------------------------
-| parentCommentId | integer | comment ID of the parent comment when replying.  Should be zero when creating a thread
-| content     | string  | content of the comment
-| commentType | integer | must be 1
+_ThreadContext_
 
-*ThreadContext*
+| Member         | Type         | Notes                                    |
+| :------------- | :----------- | :--------------------------------------- |
+| filePath       | string       | file associated with this comment thread |
+| leftFileStart  | FilePosition | see below                                |
+| leftFileEnd    | FilePosition | see below                                |
+| rightFileStart | FilePosition | see below                                |
+| rightFileEnd   | FilePosition | see below                                |
 
-| Member      | Type    | Notes
-|:------------|:--------|:---------------------------------------------------------------------------------------
-| filePath    | string  | file associated with this comment thread
-| leftFileStart | FilePosition | see below
-| leftFileEnd | FilePosition | see below
-| rightFileStart | FilePosition | see below
-| rightFileEnd | FilePosition | see below
-
-When comparing files in a side-by-side view the older version is put on the left and the newer version is on the right.  A Comment
+When comparing files in a side-by-side view the older version is put on the left and the newer version is on the right. A Comment
 thread can be placed in either view and the location should be specified by either setting leftFileStart and leftFileEnd or by
 setting rightFileStart and rightFileEnd.
 
-*FilePosition*
+_FilePosition_
 
-| Member      | Type    | Notes
-|:------------|:--------|:---------------------------------------------------------------------------------------
-| line        | integer | one-based line number in the file
-| offset      | integer | one-based position on the line
+| Member | Type    | Notes                             |
+| :----- | :------ | :-------------------------------- |
+| line   | integer | one-based line number in the file |
+| offset | integer | one-based position on the line    |
 
+_PullRequestThreadContext_
 
-*PullRequestThreadContext*
+| Member           | Type             | Notes     |
+| :--------------- | :--------------- | :-------- |
+| iterationContext | IterationContext | see below |
 
-| Member      | Type    | Notes
-|:------------|:--------|:---------------------------------------------------------------------------------------
-| iterationContext | IterationContext | see below
+_IterationContext_
 
-*IterationContext*
-
-| Member      | Type    | Notes
-|:------------|:--------|:---------------------------------------------------------------------------------------
-| firstComparingIteration | integer | the iteration ID of the "left" version of the file
-| secondComparingIteration | integer | the iteration ID of the "right" version of the file
+| Member                   | Type    | Notes                                               |
+| :----------------------- | :------ | :-------------------------------------------------- |
+| firstComparingIteration  | integer | the iteration ID of the "left" version of the file  |
+| secondComparingIteration | integer | the iteration ID of the "right" version of the file |
 
 ### Create a comment thread
 
@@ -544,6 +571,7 @@ setting rightFileStart and rightFileEnd.
 ```
 POST https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/pullRequests/22/threads?api-version=3.0
 ```
+
 ```json
 {
   "comments": [
@@ -579,8 +607,10 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-
         "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
         "displayName": "Normal Paulk",
         "uniqueName": "fabrikamfiber16@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
       },
       "content": "This new feature looks good!",
       "publishedDate": "2016-11-01T16:30:48.91Z",
@@ -599,15 +629,16 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-
   "isDeleted": false,
   "_links": {
     "self": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/pullRequests/22/threads/147"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/pullRequests/22/threads/147"
     },
     "repository": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719"
     }
   }
 }
 ```
-
 
 ### Create a thread at a particular file location
 
@@ -616,6 +647,7 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-
 ```
 POST https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/pullRequests/22/threads?api-version=3.0
 ```
+
 ```json
 {
   "comments": [
@@ -677,8 +709,10 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-
         "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
         "displayName": "Normal Paulk",
         "uniqueName": "fabrikamfiber16@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
       },
       "content": "Should we add a comment about what this value means?",
       "publishedDate": "2016-11-01T16:30:50.083Z",
@@ -707,16 +741,16 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-
   "isDeleted": false,
   "_links": {
     "self": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/pullRequests/22/threads/148"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/pullRequests/22/threads/148"
     },
     "repository": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719"
     }
   }
 }
 ```
-
-
 
 ## Add a comment to a thread
 
@@ -724,19 +758,21 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-
 POST https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pullRequests/{pullRequest}/threads/{threadID}/comments?api-version={version}
 ```
 
-| Parameter   | Type    | Notes
-|:------------|:--------|:---------------------------------------------------------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance    | string  | TFS server name ({server:port}).
-| project     | string  | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
-| repository  | string  | ID of the [repository](../repositories.md).
+| instance | string | TFS server name ({server:port}).
+| project | string | ID or name of the [project](../../tfs/projects.md). _Optional if specifying an ID for repository._
+| repository | string | ID of the [repository](../repositories.md).
 | pullRequest | integer | ID of the pull request.
-| threadID    | integer | ID of the thread.
+| threadID | integer | ID of the thread.
 | Query
-| api-version | string  | [Version](../../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../../concepts/rest-api-versioning.md) of the API to use.
 | Body
-| parentCommentId | integer | comment ID of the parent comment when replying.  Only single level replies are supported - must be set to 1
-| content     | string  | content of the comment
+| parentCommentId | integer | comment ID of the parent comment when replying. Only single level replies are supported - must be set to 1
+| content | string | content of the comment
 | commentType | integer | must be 1
 
 #### Sample request
@@ -744,6 +780,7 @@ POST https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories
 ```
 POST https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/pullRequests/22/threads/148/comments?api-version=3.0
 ```
+
 ```json
 {
   "content": "Good idea",
@@ -762,8 +799,10 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-
     "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
     "displayName": "Normal Paulk",
     "uniqueName": "fabrikamfiber16@hotmail.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
   },
   "content": "Good idea",
   "publishedDate": "2016-11-01T16:30:51.383Z",
@@ -772,31 +811,31 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-
 }
 ```
 
-
 ## Delete a comment
 
-Threads can not be deleted, only comments can.  If all the comments in a thread are deleted, the thread will not be
+Threads can not be deleted, only comments can. If all the comments in a thread are deleted, the thread will not be
 displayed on the web page.
 
 ```no-highlight
 POST https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pullRequests/{pullRequest}/threads/{threadID}/comments/{commentID}?api-version={version}
 ```
 
-| Parameter   | Type    | Notes
-|:------------|:--------|:---------------------------------------------------------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance    | string  | TFS server name ({server:port}).
-| project     | string  | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
-| repository  | string  | ID of the [repository](../repositories.md).
+| instance | string | TFS server name ({server:port}).
+| project | string | ID or name of the [project](../../tfs/projects.md). _Optional if specifying an ID for repository._
+| repository | string | ID of the [repository](../repositories.md).
 | pullRequest | integer | ID of the pull request.
-| threadID    | integer | ID of the thread.
-| commentID   | integer | ID of the comment.
+| threadID | integer | ID of the thread.
+| commentID | integer | ID of the comment.
 | Query
-| api-version | string  | [Version](../../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
 ```
 DELETE https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/pullRequests/22/threads/148/comments/2?api-version=3.0
 ```
-

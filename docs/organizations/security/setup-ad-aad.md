@@ -10,7 +10,6 @@ monikerRange: '>= tfs-2013'
 ms.date: 10/14/2019
 ---
 
-
 # Set up Active Directory or Azure Active Directory
 
 [!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
@@ -23,15 +22,19 @@ If you only have to manage a small set of users, then you can skip this step. Ho
 
 ::: moniker range="azure-devops"
 Use this topic to access articles that show you how to:
+
 > [!div class="checklist"]
+>
 > * Set up Azure Active Directory for use with Azure DevOps Services
 > * Manage organizational access with Azure AD
-::: moniker-end
+>   ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
 
 Use this topic to access articles that show you how to:
+
 > [!div class="checklist"]
+>
 > * Set up Active Directory for use with on-premises Azure DevOps Server
 
 ::: moniker-end
@@ -51,7 +54,7 @@ Use this topic to access articles that show you how to:
 * [Connect Azure DevOps organization to Azure AD](../../organizations/accounts/connect-organization-to-azure-ad.md)
 * [Disconnect Azure DevOps organization from Azure AD](../../organizations/accounts/disconnect-organization-from-azure-ad.md)
 * [Delete users from Azure DevOps connected to Azure AD](../../organizations/accounts/delete-users-from-services-azure-ad.md)
-* [Troubleshoot access with Azure Active Directory](../../organizations/accounts/faq-azure-access.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json) 
+* [Troubleshoot access with Azure Active Directory](../../organizations/accounts/faq-azure-access.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json)
 
 ::: moniker-end
 
@@ -66,17 +69,14 @@ Use these resources to learn about installing Active Directory. Typically, you s
 
 ::: moniker-end
 
-
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Add AD/Azure AD security groups to built-in security groups](add-ad-aad-built-in-security-groups.md)
+> [!div class="nextstepaction"][add ad/azure ad security groups to built-in security groups](add-ad-aad-built-in-security-groups.md)
 
 ## Related articles
 
 * [About security and identity](about-security-identity.md)
 * [How billing works](../../billing/overview.md)
-* [Set up billing to pay for users, pipelines, and cloud-based load testing in Azure DevOps](../../billing/set-up-billing-for-your-organization-vs.md) 
+* [Set up billing to pay for users, pipelines, and cloud-based load testing in Azure DevOps](../../billing/set-up-billing-for-your-organization-vs.md)
 * [What is Azure Active Directory?](/azure/active-directory/active-directory-whatis)
 * [Get started with Azure AD](/azure/active-directory/get-started-azure-ad)
- 

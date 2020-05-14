@@ -7,10 +7,10 @@ author: steved0x
 ms.date: 02/12/2020
 ---
 
-1. Choose **Azure DevOps**, **Organization settings**.
+1.  Choose **Azure DevOps**, **Organization settings**.
 
-   ![Organization settings](../../media/agent-pools-tab/organization-settings.png)
+    ![Organization settings](../../media/agent-pools-tab/organization-settings.png)
 
-1. Choose **Agent pools**.
+1.  Choose **Agent pools**.
 
-   ![Choose Manage pools](../../media/agent-pools-tab/agent-pools.png)
+    ![Choose Manage pools](../../media/agent-pools-tab/agent-pools.png)

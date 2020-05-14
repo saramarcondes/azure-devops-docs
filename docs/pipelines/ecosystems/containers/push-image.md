@@ -45,75 +45,75 @@ Choose the Docker Hub option under [Docker registry service connection](../../li
 ## Google Container Registry
 
 The following steps walk through the creation of Docker registry service connection associated with Google Container Registry:
-1. Open your project in the GCP Console and then open Cloud Shell
-2. To save time typing your project ID and Compute Engine zone options, set default configuration values by running the following commands:
 
-   ```
-   gcloud config set project [PROJECT_NAME]
-   gcloud config set compute/zone [ZONE]
-   ```
+1.  Open your project in the GCP Console and then open Cloud Shell
+2.  To save time typing your project ID and Compute Engine zone options, set default configuration values by running the following commands:
 
-3. Replace `[PROJECT_NAME]` with the name of your GCP project and replace `[ZONE]` with the name of the zone that you're going to use for creating resources. If you're unsure about which zone to pick, use `us-central1-a`. For example:
+    ```
+    gcloud config set project [PROJECT_NAME]
+    gcloud config set compute/zone [ZONE]
+    ```
 
-   ```
-   gcloud config set project azure-pipelines-test-project-12345
-   gcloud config set compute/zone us-central1-a
-   ```
+3.  Replace `[PROJECT_NAME]` with the name of your GCP project and replace `[ZONE]` with the name of the zone that you're going to use for creating resources. If you're unsure about which zone to pick, use `us-central1-a`. For example:
 
-4. Enable the Container Registry API for your project:
+    ```
+    gcloud config set project azure-pipelines-test-project-12345
+    gcloud config set compute/zone us-central1-a
+    ```
 
-   ```
-   gcloud services enable containerregistry.googleapis.com
-   ```
+4.  Enable the Container Registry API for your project:
 
-5. Create a service account for Azure Pipelines to publish Docker images:
+    ```
+    gcloud services enable containerregistry.googleapis.com
+    ```
 
-   ```
-   gcloud iam service-accounts create azure-pipelines-publisher --display-name "Azure Pipelines Publisher"
-   ```
+5.  Create a service account for Azure Pipelines to publish Docker images:
 
-6. Assign the Storage Admin IAM role to the service account:
+    ```
+    gcloud iam service-accounts create azure-pipelines-publisher --display-name "Azure Pipelines Publisher"
+    ```
 
-   ```
-   PROJECT_NUMBER=$(gcloud projects describe \
-   $(gcloud config get-value core/project) \
-   --format='value(projectNumber)')
+6.  Assign the Storage Admin IAM role to the service account:
 
-   AZURE_PIPELINES_PUBLISHER=$(gcloud iam service-accounts list \
-       --filter="displayName:Azure Pipelines Publisher" \
-       --format='value(email)')
-    
-   gcloud projects add-iam-policy-binding \
-       $(gcloud config get-value core/project) \
-       --member serviceAccount:$AZURE_PIPELINES_PUBLISHER \
-       --role roles/storage.admin
-   ```
+    ```
+    PROJECT_NUMBER=$(gcloud projects describe \
+    $(gcloud config get-value core/project) \
+    --format='value(projectNumber)')
 
-7. Generate a service account key:
+    AZURE_PIPELINES_PUBLISHER=$(gcloud iam service-accounts list \
+        --filter="displayName:Azure Pipelines Publisher" \
+        --format='value(email)')
 
-   ```
-   gcloud iam service-accounts keys create \
-   azure-pipelines-publisher.json --iam-account $AZURE_PIPELINES_PUBLISHER
+    gcloud projects add-iam-policy-binding \
+        $(gcloud config get-value core/project) \
+        --member serviceAccount:$AZURE_PIPELINES_PUBLISHER \
+        --role roles/storage.admin
+    ```
 
-   tr -d '\n' < azure-pipelines-publisher.json > azure-pipelines-publisher-oneline.json
-   ```
-   Launch Code Editor by clicking the button in the upper-right corner of Cloud Shell:
+7.  Generate a service account key:
 
-   > [!div class="mx-imgBorder"]
-   > ![Badge](../media/gcp-code-editor.png "GCP code editor")
+    ```
+    gcloud iam service-accounts keys create \
+    azure-pipelines-publisher.json --iam-account $AZURE_PIPELINES_PUBLISHER
 
-8. Open the file `named azure-pipelines-publisher-oneline.json`. You'll need the content of this file in one of the following steps:
+    tr -d '\n' < azure-pipelines-publisher.json > azure-pipelines-publisher-oneline.json
+    ```
 
-9. In your Azure DevOps organization, select **Project settings** and then select **Pipelines -> Service connections**.
+    Launch Code Editor by clicking the button in the upper-right corner of Cloud Shell:
+
+    > [!div class="mx-imgBorder"] > ![Badge](../media/gcp-code-editor.png "GCP code editor")
+
+8.  Open the file `named azure-pipelines-publisher-oneline.json`. You'll need the content of this file in one of the following steps:
+
+9.  In your Azure DevOps organization, select **Project settings** and then select **Pipelines -> Service connections**.
 
 10. Click **New service connection** and choose **Docker Registry**
 
 11. In the dialog, enter values for the following fields:
 
-   - **Docker Registry:** `https://gcr.io/[PROJECT-ID]`, where `[PROJECT-ID]` is the name of your GCP project.
-   - ****Docker ID:** `_json_key`
-   - **Docker Password:** Paste the contents of `azure-pipelines-publisher-oneline.json`
-   - **Service connection name:** `gcrServiceConnection`
+* **Docker Registry:** `https://gcr.io/[PROJECT-ID]`, where `[PROJECT-ID]` is the name of your GCP project.
+* \***\*Docker ID:** `_json_key`
+* **Docker Password:** Paste the contents of `azure-pipelines-publisher-oneline.json`
+* **Service connection name:** `gcrServiceConnection`
 
 12. Click **Save** to create the service connection
-

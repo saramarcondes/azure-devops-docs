@@ -20,14 +20,14 @@ Data stored in security namespaces are used to determine whether an user has per
 
 Typically, each family of resources (work items, Git repositories, etc.) is secured using a different namespace.
 Each security namespace contains zero or more access control lists.
-Each access control list contains a token, an inherit flag and a set of zero or more access control entries. 
+Each access control list contains a token, an inherit flag and a set of zero or more access control entries.
 Each access control entry contains an identity descriptor, an allowed permissions bitmask and an denied permissions bitmask.
 
- * [Security Namespaces](./securitynamespaces.md) 
- * [Access Control Lists (ACLs)](./acls.md)
- * [Access Control Entries (ACEs)](./aces.md) 
- * [Permissions](./permissions.md)
- * [Tokens](./tokens.md)
+* [Security Namespaces](./securitynamespaces.md)
+* [Access Control Lists (ACLs)](./acls.md)
+* [Access Control Entries (ACEs)](./aces.md)
+* [Permissions](./permissions.md)
+* [Tokens](./tokens.md)
 
 ## Common tasks
 
@@ -41,14 +41,14 @@ Set the [inherit flag](./securitynamespaces.md#inheritflag) for an access contro
 
 ### Get, add, and remove access control lists
 
-1. [Get](./acls.md#get) a list of access control lists in a security namespace.
-2. [Add](./acls.md#add) a list of access control lists to a security namespace.
-2. [Remove](./acls.md#remove) a list of access control lists from a security namespace.
+1.  [Get](./acls.md#get) a list of access control lists in a security namespace.
+2.  [Add](./acls.md#add) a list of access control lists to a security namespace.
+3.  [Remove](./acls.md#remove) a list of access control lists from a security namespace.
 
 ### Add and remove access control entries
 
-1. [Add](./aces.md#add) a list of access control entries to an access control list.
-2. [Remove](./aces.md#remove) a list of access control entries from an access control list.
+1.  [Add](./aces.md#add) a list of access control entries to an access control list.
+2.  [Remove](./aces.md#remove) a list of access control entries from an access control list.
 
 ### Evaluate effective permissions
 

@@ -11,7 +11,6 @@ ms.date: 10/11/2018
 monikerRange: '>= tfs-2018'
 ---
 
-
 # Require branches to be created in folders
 
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018
@@ -32,8 +31,8 @@ As an example, we'll set our repository to enforce the following rules:
 * All users will be allowed to create branches under the `features/` and `users/` folders.
 * Administrators will be able to create branches under the `releases/` folder.
 
->[!NOTE]
->For more examples and information about branch naming strategies, see [Adopt a Git branching strategy](git-branching-guidance.md).
+> [!NOTE]
+> For more examples and information about branch naming strategies, see [Adopt a Git branching strategy](git-branching-guidance.md).
 
 ## Preparation
 
@@ -76,31 +75,32 @@ Finally, allow administrators to create a branch called `master` (in case it eve
 tf git permission /allow:CreateBranch /group:"[FabrikamProject]\Project Administrators" /collection:https://dev.azure.com/fabrikam-fiber/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:master
 ```
 
->[!NOTE]
->For more information, see [tf git permission](../../repos/tfvc/git-permission-command.md). You can also access help for these commands from the command line by running `tf git /?` and `tf git permission /?`.
+> [!NOTE]
+> For more information, see [tf git permission](../../repos/tfvc/git-permission-command.md). You can also access help for these commands from the command line by running `tf git /?` and `tf git permission /?`.
 
 ## Rename old branches
 
 #### [Browser](#tab/browser/)
-1. Open your repo on the web and [select the **Branches** view](manage-your-branches.md).
-2. Locate your existing branch. If you don't see it, you may need to look on the **All** tab.
-3. Choose its context menu (the `...` button) and choose **New branch**.
 
-   ![Create branch menu](media/require-branch-folders/create-new-branch-menu.png)
+1.  Open your repo on the web and [select the **Branches** view](manage-your-branches.md).
+2.  Locate your existing branch. If you don't see it, you may need to look on the **All** tab.
+3.  Choose its context menu (the `...` button) and choose **New branch**.
 
-4. Type the new name of the branch, for example *users/frank/readme-fix*. Choose **Create branch**.
+    ![Create branch menu](media/require-branch-folders/create-new-branch-menu.png)
 
-   ![Create new branch](media/require-branch-folders/create-new-branch.png)
+4.  Type the new name of the branch, for example _users/frank/readme-fix_. Choose **Create branch**.
 
-5. Choose the red trashcan icon next to the old branch name to delete it.
+    ![Create new branch](media/require-branch-folders/create-new-branch.png)
 
-   ![Delete old branch](media/require-branch-folders/delete-old-branch.png)
+5.  Choose the red trashcan icon next to the old branch name to delete it.
 
+    ![Delete old branch](media/require-branch-folders/delete-old-branch.png)
 
->[!NOTE] 
->Any custom permissions or branch policies you had set up will not be migrated.
+> [!NOTE]
+> Any custom permissions or branch policies you had set up will not be migrated.
 
 #### [Command Line](#tab/command-line/)
+
 First, make sure you have the latest set of branches:
 
 ```
@@ -116,7 +116,7 @@ git push origin {new_branch_name}
 git push origin --delete {old_branch_name}
 ```
 
->[!NOTE]
->Any custom permissions or branch policies you had set up will not be migrated.
+> [!NOTE]
+> Any custom permissions or branch policies you had set up will not be migrated.
 
-* * *
+---

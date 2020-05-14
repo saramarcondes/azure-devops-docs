@@ -15,10 +15,8 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Holds a lookup of urls for different services (at different host levels) 
+Holds a lookup of urls for different services (at different host levels)
 
 ### Members
 
-* `locations`: {[key: string]: {[key: number]: string}}. 
-
+* `locations`: {[key: string]: {[key: number]: string}}.

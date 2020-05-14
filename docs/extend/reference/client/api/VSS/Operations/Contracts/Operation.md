@@ -21,4 +21,3 @@ Extends: [OperationReference](../../../VSS/Operations/Contracts/OperationReferen
 * `_links`: any. The links to other objects related to this object.
 
 * `resultMessage`: string. The result message which is generally not set.
-

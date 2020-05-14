@@ -21,20 +21,23 @@ We'll create a new hub that displays in the Work hub group, after the Backlogs a
 ![Location of a new hub in Azure DevOps Services](../media-procedures/hub-location.png)
 
 ## Structure of an extension
+
 ```no-highlight
 |--- README.md
-|--- sdk    
-	|--- node_modules           
+|--- sdk
+	|--- node_modules
 	|--- scripts
-		|--- VSS.SDK.js       
-|--- images                        
-	|--- icon.png                           
+		|--- VSS.SDK.js
+|--- images
+	|--- icon.png
 |--- scripts                        	// not used in this tutorial
 |--- hello-world.html				// html page to be used for your hub  
 |--- vss-extension.json				// extension's manifest
 ```
+
 ## Get the client SDK: `VSS.SDK.js`
-The core SDK script, VSS.SDK.js, enables web extensions to communicate to the host, Azure DevOps Services, frame. This script also initializes, notifies that the extension loaded, or gets context about the current page. Get the Client SDK `VSS.SDK.js` file and add it to your web app. 
+
+The core SDK script, VSS.SDK.js, enables web extensions to communicate to the host, Azure DevOps Services, frame. This script also initializes, notifies that the extension loaded, or gets context about the current page. Get the Client SDK `VSS.SDK.js` file and add it to your web app.
 Place it in the `home/sdk/scripts` folder.
 
 Use the 'npm install' command via the command line (requires [Node](https://nodejs.org/en/download/)) to retrieve the SDK:
@@ -46,11 +49,12 @@ npm install vss-web-extension-sdk
 > To learn more about the SDK, visit the [Client SDK GitHub Page](https://github.com/Microsoft/vss-sdk).
 
 ## Your hub page: `hello-world.html`
+
 * Every hub displays a web page
 * Check out the targetable hub groups in the [extension points reference](../reference/targets/overview.md#hubs)
 
 Create a `hello-world.html` file in the `home` directory of your extension.
-Reference the SDK and call *init()* and *notifyLoadSucceeded()*.
+Reference the SDK and call _init()_ and _notifyLoadSucceeded()_.
 
 ```html
 <!DOCTYPE html>
@@ -69,7 +73,7 @@ Reference the SDK and call *init()* and *notifyLoadSucceeded()*.
 
 ## Your extension's manifest file: `vss-extension.json`
 
-* ***Every*** extension must have an extension manifest file
+* **_Every_** extension must have an extension manifest file
 * Read the [extension manifest reference](../develop/manifest.md)
 * Find out more about the contribution points in the [extension points reference](../reference/targets/overview.md)
 
@@ -124,45 +128,47 @@ Create a json file (`vss-extension.json`, for example) in the `home` directory w
 	}
 ```
 
->[!NOTE]
->The **publisher** here needs to be changed to your publisher name. To create a publisher now, visit [Package/Publish/Install](../publish/overview.md). 
-
+> [!NOTE]
+> The **publisher** here needs to be changed to your publisher name. To create a publisher now, visit [Package/Publish/Install](../publish/overview.md).
 
 ### Icons
-The **icons** stanza specifies the path to your extension's icon in your manifest. 
+
+The **icons** stanza specifies the path to your extension's icon in your manifest.
 
 > **You need to add a square image titled `logo.png` as shown in the extension manifest.**
 
 ### Contributions
+
 The **contributions** stanza adds your contribution - the Hello hub - to your extension manifest.
 
 For each contribution in your extension, the manifest defines
-- the type of contribution, hub, 
-- the contribution target, the work hub group (check out all of the [targetable hub groups](../reference/targets/overview.md#targetable-hub-groups)),
-- and the properties that are specific to each type of contribution. For a hub, there are the following properties:
 
-| Property           | Description                                                                                                                         
-|--------------------|----------------------------------------------------------------------------------------|                                
-| name               | Name of the hub.					                                                      |                   
-| order              | Placement of the hub in the hub group.       										  |                   
-| uri 				 | Path (relative to the extension baseUri) of the page to surface as the hub.          | 
+* the type of contribution, hub,
+* the contribution target, the work hub group (check out all of the [targetable hub groups](../reference/targets/overview.md#targetable-hub-groups)),
+* and the properties that are specific to each type of contribution. For a hub, there are the following properties:
+
+| Property | Description                                                                 |
+| -------- | --------------------------------------------------------------------------- |
+| name     | Name of the hub.                                                            |
+| order    | Placement of the hub in the hub group.                                      |
+| uri      | Path (relative to the extension baseUri) of the page to surface as the hub. |
 
 ### Scopes
+
 Include the [scopes](../develop/manifest.md#scopes) that your extension requires.
 In this case, we need `vso.work` to access work items.
 
 ### Files
+
 The **files** stanza states the files that you want to include in your package - your HTML page, your scripts, the SDK script, and your logo.
 Set `addressable` to `true` unless you include other files that don't need to be URL-addressable.
 
->[!NOTE]
->For more information about the **extension manifest file**, such as its properties and what they do, check out the [extension manifest reference](../develop/manifest.md).
-
+> [!NOTE]
+> For more information about the **extension manifest file**, such as its properties and what they do, check out the [extension manifest reference](../develop/manifest.md).
 
 ## Next Steps
 
-Package, Publish, and Install your extension. You can also check out the following articles for Testing and Debugging your extension. 
+Package, Publish, and Install your extension. You can also check out the following articles for Testing and Debugging your extension.
 
 * [Package, publish, and install extensions](../publish/overview.md)
 * [Testing and debugging extensions](../test/debug-in-browser.md)
-

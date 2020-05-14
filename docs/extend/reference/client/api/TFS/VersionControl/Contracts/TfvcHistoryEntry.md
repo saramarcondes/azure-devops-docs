@@ -20,4 +20,3 @@ Extends: [HistoryEntry](../../../TFS/VersionControl/Contracts/HistoryEntry.md)&l
 * `encoding`: number. The encoding of the item at this point in history (only relevant for File history, not folders)
 
 * `fileId`: number. The file ID of the item at this point in history (only relevant for File history, not folders)
-

@@ -21,9 +21,9 @@ This sprint we’ve enabled a new feature that lets you break down stories on yo
 
 Data from your Kanban board, including the board column, column done indicator, and board swim lane, are all now available, enabling you to create queries, charts, and styling rules based on them. These fields show up in all column option pickers, and can be exported as read-only fields in Excel. You’ll see three new fields in work item experiences:
 
-1. Board Column: current Kanban board column the work item is in.
-2. Board Column Done: False (Doing) or True (Done) value depending on whether the work item is in the Doing or Done split column on the Kanban board.
-3. Board Lane: current Kanban board swim lane.
+1.  Board Column: current Kanban board column the work item is in.
+2.  Board Column Done: False (Doing) or True (Done) value depending on whether the work item is in the Doing or Done split column on the Kanban board.
+3.  Board Lane: current Kanban board swim lane.
 
 I’m happy to report that UserVoice item #121579 has been marked as completed.
 
@@ -33,10 +33,10 @@ I’m happy to report that UserVoice item #121579 has been marked as completed.
 
 [Last month](aug-07-team-services.md) we enabled multi-select on the product backlog… we’re back this sprint with some additional capabilities including:
 
-- Drag-and-drop reordering and re-parenting
-- Dragging items to an iteration
-- Dragging items to the mapping pane
-- Support for "move to top" and "move to position" on the context menu
+* Drag-and-drop reordering and re-parenting
+* Dragging items to an iteration
+* Dragging items to the mapping pane
+* Support for "move to top" and "move to position" on the context menu
 
 ![Dragging multiple items on the backlog](media/9_18_03.png)
 
@@ -52,7 +52,7 @@ The Export Test Plan feature in Test Hub lets you email or print a test plan in 
 
 ![Sample test execution export](media/9_18_05.png)
 
-In the export selection dialog, you can choose to export the latest test outcome, which will export the latest test result for all tests of a test case, including fields like the time when the test was run, the build that was tested, the configuration that was tested, the tester who was assigned the test and the identity who actually ran the test. 
+In the export selection dialog, you can choose to export the latest test outcome, which will export the latest test result for all tests of a test case, including fields like the time when the test was run, the build that was tested, the configuration that was tested, the tester who was assigned the test and the identity who actually ran the test.
 
 ## Work item trend and rollup reporting in Power BI
 

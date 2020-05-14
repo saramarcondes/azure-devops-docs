@@ -14,7 +14,6 @@ ms.date: 08/04/2016
 
 Module path: `TFS/Build/Contracts`
 
-
 ### Members
 
 * `changedBy`: string. Guid of identity that changed this property value
@@ -24,4 +23,3 @@ Module path: `TFS/Build/Contracts`
 * `propertyName`: string. Name in the name value mapping
 
 * `value`: any. Value in the name value mapping
-

@@ -20,14 +20,13 @@ This sprint, we’re releasing Project Welcome pages. Welcome pages enable you t
 We are using GitHub Flavored Markdown (GFM) as implemented in the [Marked](https://github.com/chjj/marked) library by Chris Jeffrey. It’s really easy to write and quite flexible. If you want to learn more about how to use project welcome pages, check out Martin’s blog post for more details.
 
 ![Project welcome page](media/8_18_01.png)
-  
-  
+
 ## Tagging support in the Test Hub
 
 We’ve now enabled support for tags on test cases in the Test Hub. You can see the tags in the test list and easily filter down to the test cases you are most interested in. It’s another nice usability improvement for test case management.
 
 ![Tags applied to a test case](media/8_18_02.png)
-  
+
 ## Lots of little things
 
 There are lots of other nice little improvements—bug fixes, performance improvements, usability improvements, and more. One that’s worth giving a minor mention to is that we are working on improving the experience of managing hierarchical backlogs. This sprint we added the ability to assign work to iterations by dragging the work item and dropping it on the iteration. We’ll have more improvements in this area next sprint.

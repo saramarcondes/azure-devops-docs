@@ -17,9 +17,8 @@ Defined in vss.d.ts
 
 Extends: [IExtensionContribution](../../../VSS/References/VSS_SDK_Interfaces/IExtensionContribution.md)
 
-Information about an individual contribution that contributes one or more services registered by id. 
+Information about an individual contribution that contributes one or more services registered by id.
 
 ### Members
 
 * `getInstance`: (objectId: string, context: any): IPromise&lt;T&gt;. Get the instance of an object registered by this contribution
-

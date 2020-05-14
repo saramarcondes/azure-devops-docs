@@ -27,6 +27,7 @@ If you see an `RPC failed` error during `git push`, such as:
 **Don't do it!** At least not blindly. First, review the suggestions in this article.
 
 ## Upgrade Git
+
 If you're still running a Git client that's version 2.8 or older, you should upgrade Git first. There are a bug fixes in newer versions of Git that should obviate the need to set `http.postBuffer`.
 
 We had enough support requests from internal users and external customers hitting bugs in older versions of Git that we decided to add a server-side reminder to Azure DevOps Services/TFS.
@@ -47,9 +48,11 @@ Check if these hotfixes are applicable if your TFS server is running Windows 201
 * [Pushing large files to Team Foundation Server by Git client hangs](https://support.microsoft.com/help/4017691/pushing-large-files-to-team-foundation-server-by-git-client-hangs)
 
 ## Check if you're using a proxy or load balancer
+
 If you're using a terrible proxy that's buggy or doesn’t support chunked encoding, you'll see errors for larger pushes. The same thing can happen if you put on-prem TFS behind a misconfigured load balancer. If the same push succeeds when bypassing the proxy, or bypassing the load balancer (e.g. by pushing to localhost from the server itself), then fix your proxy or load balancer instead!
 
 ### What if my proxy or load balancer is broken, but I don't have any control over it?
+
 This is the only scenario that we've seen where setting `http.PostBuffer` is useful for newer versions of Git.
 
 ## http.postBuffer questions

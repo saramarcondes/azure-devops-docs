@@ -15,10 +15,8 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Result returned when a MessageDialog is closed. 
+Result returned when a MessageDialog is closed.
 
 ### Members
 
 * `button`: [IMessageDialogButton](../../../VSS/References/VSS_SDK_Interfaces/IMessageDialogButton.md). Button that was clicked to dismiss the dialog.
-

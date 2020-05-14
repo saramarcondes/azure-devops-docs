@@ -24,18 +24,20 @@ ms.date: 08/04/2016
 GET https://{instance}/DefaultCollection/{project}/_apis/test/plans?api-version={version}[&owner={string}&includePlanDetails={bool}&filterActivePlans={bool}&$skip={int}&$top={int}]
 ```
 
-| Parameter          | Type    | Default | Notes
-|:-------------------|:--------|:--------|:---------------------
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
+
+
 | URL
-| instance           | string  |         | TFS server name ({server:port}).
-| project            | string  |         | Name or ID of the project.
+| instance | string | | TFS server name ({server:port}).
+| project | string | | Name or ID of the project.
 | Query
-| api-version        | string  |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| owner              | string  |         | Filter for test plan by owner ID or name.
-| includePlanDetails | bool    | false   | Get all properties of the test plan.
-| filterActivePlans  | bool    | false   | Get just the active plans.
-| $skip				 | int     |         | Number of test plans to skip.
-| $top               | int     |         | Number of test plans to return.
+| api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| owner | string | | Filter for test plan by owner ID or name.
+| includePlanDetails | bool | false | Get all properties of the test plan.
+| filterActivePlans | bool | false | Get just the active plans.
+| $skip | int | | Number of test plans to skip.
+| $top | int | | Number of test plans to return.
 
 #### Sample request
 
@@ -51,11 +53,13 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?a
     {
       "id": 1,
       "name": "sprint1",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "343",
@@ -66,16 +70,19 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?a
       "rootSuite": {
         "id": "1"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=1"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=1"
     },
     {
       "id": 2,
       "name": "sprint2",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/2",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/2",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "343",
@@ -86,16 +93,19 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?a
       "rootSuite": {
         "id": "2"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=2"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=2"
     },
     {
       "id": 3,
       "name": "newCreatedPlan2",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/3",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/3",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "343",
@@ -106,16 +116,19 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?a
       "rootSuite": {
         "id": "3"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=3"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=3"
     },
     {
       "id": 4,
       "name": "sprint3",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/4",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/4",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "343",
@@ -126,16 +139,19 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?a
       "rootSuite": {
         "id": "21"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=4"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=4"
     },
     {
       "id": 5,
       "name": "sprint4",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/5",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/5",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "343",
@@ -146,16 +162,19 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?a
       "rootSuite": {
         "id": "22"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=5"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=5"
     },
     {
       "id": 6,
       "name": "sprint5",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/6",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/6",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "343",
@@ -166,16 +185,19 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?a
       "rootSuite": {
         "id": "23"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=6"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=6"
     },
     {
       "id": 7,
       "name": "newCreatedPlan2",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/7",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/7",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "343",
@@ -186,16 +208,19 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?a
       "rootSuite": {
         "id": "24"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=7"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=7"
     },
     {
       "id": 8,
       "name": "newCreatedPlan",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/8",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/8",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "343",
@@ -206,16 +231,19 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?a
       "rootSuite": {
         "id": "25"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=8"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=8"
     },
     {
       "id": 9,
       "name": "newCreatedPlan2",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/9",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/9",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "343",
@@ -226,16 +254,19 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?a
       "rootSuite": {
         "id": "26"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=9"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=9"
     },
     {
       "id": 10,
       "name": "newCreatedPlan",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/10",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/10",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "343",
@@ -246,16 +277,19 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?a
       "rootSuite": {
         "id": "27"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=10"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=10"
     },
     {
       "id": 11,
       "name": "ANewPlan",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/11",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/11",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "411",
@@ -266,16 +300,19 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?a
       "rootSuite": {
         "id": "28"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=11"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=11"
     },
     {
       "id": 12,
       "name": "newCreatedPlan2",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/12",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/12",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "343",
@@ -286,16 +323,19 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?a
       "rootSuite": {
         "id": "29"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=12"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=12"
     },
     {
       "id": 13,
       "name": "newCreatedPlan",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/13",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/13",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "343",
@@ -306,16 +346,19 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?a
       "rootSuite": {
         "id": "30"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=13"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=13"
     },
     {
       "id": 14,
       "name": "newCreatedPlan2",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/14",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/14",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "343",
@@ -326,16 +369,19 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?a
       "rootSuite": {
         "id": "31"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=14"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=14"
     },
     {
       "id": 15,
       "name": "newCreatedPlan",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/15",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/15",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "343",
@@ -346,16 +392,19 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?a
       "rootSuite": {
         "id": "32"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=15"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=15"
     },
     {
       "id": 16,
       "name": "ANewPlan",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/16",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/16",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "411",
@@ -366,16 +415,19 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?a
       "rootSuite": {
         "id": "33"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=16"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=16"
     },
     {
       "id": 17,
       "name": "newCreatedPlan2",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/17",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/17",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "411",
@@ -386,13 +438,13 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?a
       "rootSuite": {
         "id": "34"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=17"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=17"
     }
   ],
   "count": 17
 }
 ```
-
 
 ### With details
 
@@ -410,11 +462,13 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?i
     {
       "id": 60,
       "name": "sprint1",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/60",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/60",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "343",
@@ -429,33 +483,41 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?i
         "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
         "displayName": "Fabrikam Fiber",
         "uniqueName": "fabrikamfiber1@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
       },
       "owner": {
         "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
         "displayName": "Fabrikam Fiber",
         "uniqueName": "fabrikamfiber1@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
       },
       "revision": 5,
       "state": "Active",
       "rootSuite": {
         "id": "61",
         "name": "sprint1",
-        "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/60/Suites/61"
+        "url":
+          "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/60/Suites/61"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=60"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=60"
     },
     {
       "id": 68,
       "name": "sprint2",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/68",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/68",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "343",
@@ -470,33 +532,41 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?i
         "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
         "displayName": "Fabrikam Fiber",
         "uniqueName": "fabrikamfiber1@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
       },
       "owner": {
         "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
         "displayName": "Fabrikam Fiber",
         "uniqueName": "fabrikamfiber1@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
       },
       "revision": 6,
       "state": "Active",
       "rootSuite": {
         "id": "69",
         "name": "sprint2",
-        "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/68/Suites/69"
+        "url":
+          "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/68/Suites/69"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=68"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=68"
     },
     {
       "id": 72,
       "name": "sprint3",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/72",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/72",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "343",
@@ -511,33 +581,41 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?i
         "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
         "displayName": "Fabrikam Fiber",
         "uniqueName": "fabrikamfiber1@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
       },
       "owner": {
         "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
         "displayName": "Fabrikam Fiber",
         "uniqueName": "fabrikamfiber1@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
       },
       "revision": 8,
       "state": "Active",
       "rootSuite": {
         "id": "73",
         "name": "sprint3",
-        "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/72/Suites/73"
+        "url":
+          "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/72/Suites/73"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=72"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=72"
     },
     {
       "id": 74,
       "name": "sprint4",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/74",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/74",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "343",
@@ -552,33 +630,41 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?i
         "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
         "displayName": "Fabrikam Fiber",
         "uniqueName": "fabrikamfiber1@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
       },
       "owner": {
         "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
         "displayName": "Fabrikam Fiber",
         "uniqueName": "fabrikamfiber1@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
       },
       "revision": 9,
       "state": "Active",
       "rootSuite": {
         "id": "75",
         "name": "sprint4",
-        "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/74/Suites/75"
+        "url":
+          "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/74/Suites/75"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=74"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=74"
     },
     {
       "id": 76,
       "name": "sprint5",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/76",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/76",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "343",
@@ -593,30 +679,35 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?i
         "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
         "displayName": "Fabrikam Fiber",
         "uniqueName": "fabrikamfiber1@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
       },
       "owner": {
         "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
         "displayName": "Fabrikam Fiber",
         "uniqueName": "fabrikamfiber1@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
       },
       "revision": 10,
       "state": "Active",
       "rootSuite": {
         "id": "77",
         "name": "sprint5",
-        "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/76/Suites/77"
+        "url":
+          "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/76/Suites/77"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=76"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=76"
     }
   ],
   "count": 5
 }
 ```
-
 
 ### Just active plans
 
@@ -634,11 +725,13 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?f
     {
       "id": 1,
       "name": "sprint1",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "343",
@@ -649,16 +742,19 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?f
       "rootSuite": {
         "id": "1"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=1"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=1"
     },
     {
       "id": 2,
       "name": "sprint2",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/2",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/2",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "343",
@@ -669,16 +765,19 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?f
       "rootSuite": {
         "id": "2"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=2"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=2"
     },
     {
       "id": 4,
       "name": "sprint3",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/4",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/4",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "343",
@@ -689,16 +788,19 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?f
       "rootSuite": {
         "id": "21"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=4"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=4"
     },
     {
       "id": 5,
       "name": "sprint4",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/5",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/5",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "343",
@@ -709,16 +811,19 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?f
       "rootSuite": {
         "id": "22"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=5"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=5"
     },
     {
       "id": 6,
       "name": "sprint5",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/6",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/6",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "343",
@@ -729,16 +834,19 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?f
       "rootSuite": {
         "id": "23"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=6"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=6"
     },
     {
       "id": 7,
       "name": "newCreatedPlan2",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/7",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/7",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "343",
@@ -749,16 +857,19 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?f
       "rootSuite": {
         "id": "24"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=7"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=7"
     },
     {
       "id": 8,
       "name": "newCreatedPlan",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/8",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/8",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "343",
@@ -769,16 +880,19 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?f
       "rootSuite": {
         "id": "25"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=8"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=8"
     },
     {
       "id": 10,
       "name": "newCreatedPlan",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/10",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/10",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "343",
@@ -789,16 +903,19 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?f
       "rootSuite": {
         "id": "27"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=10"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=10"
     },
     {
       "id": 11,
       "name": "ANewPlan",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/11",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/11",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "411",
@@ -809,16 +926,19 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?f
       "rootSuite": {
         "id": "28"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=11"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=11"
     },
     {
       "id": 13,
       "name": "newCreatedPlan",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/13",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/13",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "343",
@@ -829,13 +949,13 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?f
       "rootSuite": {
         "id": "30"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=13"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=13"
     }
   ],
   "count": 10
 }
 ```
-
 
 ### A page at a time
 
@@ -853,11 +973,13 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?$
     {
       "id": 1,
       "name": "sprint1",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "343",
@@ -868,16 +990,19 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?$
       "rootSuite": {
         "id": "1"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=1"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=1"
     },
     {
       "id": 2,
       "name": "sprint2",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/2",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/2",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "343",
@@ -888,16 +1013,19 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?$
       "rootSuite": {
         "id": "2"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=2"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=2"
     },
     {
       "id": 3,
       "name": "newCreatedPlan2",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/3",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/3",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
         "name": "Fabrikam-Fiber-TFVC",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
       },
       "area": {
         "id": "343",
@@ -908,13 +1036,13 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?$
       "rootSuite": {
         "id": "3"
       },
-      "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=3"
+      "clientUrl":
+        "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=3"
     }
   ],
   "count": 3
 }
 ```
-
 
 ## Get a test plan
 
@@ -922,14 +1050,16 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?$
 GET https://{instance}/DefaultCollection/{project}/_apis/test/plans/{plan}?api-version={version}
 ```
 
-| Parameter          | Type    | Notes
-|:-------------------|:--------|:---------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance           | string  | TFS server name ({server:port}).
-| project            | string  | Name or ID of the project.
-| plan               | int     | ID of the test plan to get.
+| instance | string | TFS server name ({server:port}).
+| project | string | Name or ID of the project.
+| plan | int | ID of the test plan to get.
 | Query
-| api-version        | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
@@ -943,11 +1073,13 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
 {
   "id": 1,
   "name": "sprint1",
-  "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1",
+  "url":
+    "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1",
   "project": {
     "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
     "name": "Fabrikam-Fiber-TFVC",
-    "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
   },
   "area": {
     "id": "343",
@@ -962,68 +1094,79 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
     "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
     "displayName": "Fabrikam Fiber",
     "uniqueName": "fabrikamfiber1@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
   },
   "owner": {
     "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
     "displayName": "Fabrikam Fiber",
     "uniqueName": "fabrikamfiber1@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
   },
   "revision": 1,
   "state": "Active",
   "rootSuite": {
     "id": "1",
     "name": "sprint1",
-    "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1"
+    "url":
+      "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/1"
   },
-  "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=1"
+  "clientUrl":
+    "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=1"
 }
 ```
 
-
 ## Create a testplan
+
 <a name="createatestplan" />
 
 ```no-highlight
 POST https://{instance}/DefaultCollection/{project}/_apis/test/plans?api-version={version}
 ```
+
 ```http
 Content-Type: application/json
 ```
+
 ```json
 {
-  "name": {string},
-  "description": {string},
-  "area": {"name" : string},
-  "iteration": {string},
-  "startDate": {DateTime},
-  "endDate": {DateTime}
+  "name": { string },
+  "description": { string },
+  "area": { "name": string },
+  "iteration": { string },
+  "startDate": { DateTime },
+  "endDate": { DateTime }
 }
 ```
 
-| Parameter   | Type     | Default                     | Notes
-|:------------|:---------|:----------------------------|:---------------------
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
+
+
 | URL
-| instance    | string   |                             | TFS server name ({server:port}).
-| project     | string   |                             | Name or ID of the project.
+| instance | string | | TFS server name ({server:port}).
+| project | string | | Name or ID of the project.
 | Query
-| api-version | string   |                             | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
-| name        | string   |                             | Name of the new test plan.
-| description | string   |                             | Description of the new test plan.
-| area.name   | string   | Project root area      | Name of the area in which to create the test plan.
-| iteration   | string   | Project root iteration | Name of the iteration in which to create the test plan.
-| startDate   | DateTime | Current date                | Start date for test plan.
-| endDate     | DateTime | Start date + 7 days         | End date for test plan.
+| name | string | | Name of the new test plan.
+| description | string | | Description of the new test plan.
+| area.name | string | Project root area | Name of the area in which to create the test plan.
+| iteration | string | Project root iteration | Name of the iteration in which to create the test plan.
+| startDate | DateTime | Current date | Start date for test plan.
+| endDate | DateTime | Start date + 7 days | End date for test plan.
 
 #### Sample request
 
 ```
 POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?api-version=1.0
 ```
+
 ```json
 {
   "name": "newCreatedPlan"
@@ -1036,11 +1179,13 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?
 {
   "id": 3,
   "name": "newCreatedPlan",
-  "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/3",
+  "url":
+    "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/3",
   "project": {
     "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
     "name": "Fabrikam-Fiber-TFVC",
-    "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
   },
   "area": {
     "id": "343",
@@ -1054,27 +1199,32 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?
     "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
     "displayName": "Fabrikam Fiber",
     "uniqueName": "fabrikamfiber1@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
   },
   "owner": {
     "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
     "displayName": "Fabrikam Fiber",
     "uniqueName": "fabrikamfiber1@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
   },
   "revision": 1,
   "state": "Active",
   "rootSuite": {
     "id": "3",
     "name": "newCreatedPlan",
-    "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/3/Suites/3"
+    "url":
+      "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/3/Suites/3"
   },
-  "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=3"
+  "clientUrl":
+    "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=3"
 }
 ```
-
 
 ### With a description
 
@@ -1083,6 +1233,7 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?
 ```
 POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?api-version=1.0
 ```
+
 ```json
 {
   "name": "newCreatedPlan",
@@ -1096,11 +1247,13 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?
 {
   "id": 15,
   "name": "newCreatedPlan",
-  "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/15",
+  "url":
+    "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/15",
   "project": {
     "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
     "name": "Fabrikam-Fiber-TFVC",
-    "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
   },
   "area": {
     "id": "343",
@@ -1115,34 +1268,41 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?
     "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
     "displayName": "Fabrikam Fiber",
     "uniqueName": "fabrikamfiber1@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
   },
   "owner": {
     "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
     "displayName": "Fabrikam Fiber",
     "uniqueName": "fabrikamfiber1@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
   },
   "revision": 1,
   "state": "Active",
   "rootSuite": {
     "id": "32",
     "name": "newCreatedPlan",
-    "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/15/Suites/32"
+    "url":
+      "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/15/Suites/32"
   },
-  "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=15"
+  "clientUrl":
+    "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=15"
 }
 ```
 
-
 ### In an area and iteration
+
 #### Sample request
 
 ```
 POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?api-version=1.0
 ```
+
 ```json
 {
   "name": "ANewPlan",
@@ -1159,11 +1319,13 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?
 {
   "id": 16,
   "name": "ANewPlan",
-  "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/16",
+  "url":
+    "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/16",
   "project": {
     "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
     "name": "Fabrikam-Fiber-TFVC",
-    "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
   },
   "area": {
     "id": "411",
@@ -1177,34 +1339,41 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?
     "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
     "displayName": "Fabrikam Fiber",
     "uniqueName": "fabrikamfiber1@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
   },
   "owner": {
     "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
     "displayName": "Fabrikam Fiber",
     "uniqueName": "fabrikamfiber1@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
   },
   "revision": 1,
   "state": "Active",
   "rootSuite": {
     "id": "33",
     "name": "ANewPlan",
-    "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/16/Suites/33"
+    "url":
+      "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/16/Suites/33"
   },
-  "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=16"
+  "clientUrl":
+    "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=16"
 }
 ```
 
-
 ### To start on a date and finish on a date
+
 #### Sample request
 
 ```
 POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?api-version=1.0
 ```
+
 ```json
 {
   "name": "ANewPlan",
@@ -1219,11 +1388,13 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?
 {
   "id": 17,
   "name": "ANewPlan",
-  "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/17",
+  "url":
+    "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/17",
   "project": {
     "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
     "name": "Fabrikam-Fiber-TFVC",
-    "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
   },
   "area": {
     "id": "343",
@@ -1237,36 +1408,43 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?
     "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
     "displayName": "Fabrikam Fiber",
     "uniqueName": "fabrikamfiber1@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
   },
   "owner": {
     "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
     "displayName": "Fabrikam Fiber",
     "uniqueName": "fabrikamfiber1@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
   },
   "revision": 1,
   "state": "Active",
   "rootSuite": {
     "id": "34",
     "name": "ANewPlan",
-    "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/17/Suites/34"
+    "url":
+      "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/17/Suites/34"
   },
-  "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=17"
+  "clientUrl":
+    "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=17"
 }
 ```
-
 
 ## Update a testplan
 
 ```no-highlight
 PATCH https://{instance}/DefaultCollection/{project}/_apis/test/plans/{plan}?api-version={version}
 ```
+
 ```http
 Content-Type: application/json
 ```
+
 ```json
 {
   "name": {string},
@@ -1282,22 +1460,24 @@ Content-Type: application/json
 }
 ```
 
-| Parameter   | Type     | Default                     | Notes
-|:------------|:---------|:----------------------------|:---------------------
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
+
+
 | URL
-| instance    | string   |                             | TFS server name ({server:port}).
-| project     | string   |                             | Name or ID of the project.
+| instance | string | | TFS server name ({server:port}).
+| project | string | | Name or ID of the project.
 | Query
-| api-version | string   |                             | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
-| name        | string   |                             | Name of the new test plan.
-| description | string   |                             | Description of the new test plan.
-| area.name   | string   | Project root area      | Name of the area in which to create the test plan.
-| iteration   | string   | Project root iteration | Name of the iteration in which to create the test plan.
-| startDate   | DateTime | Current date                | Start date for test plan.
-| endDate     | DateTime | Start date + 7 days         | End date for test plan.
-| build       | int      |                             | ID of the build to test.
-| state       | enum { Active, Inactive } |            | State of the test plan.
+| name | string | | Name of the new test plan.
+| description | string | | Description of the new test plan.
+| area.name | string | Project root area | Name of the area in which to create the test plan.
+| iteration | string | Project root iteration | Name of the iteration in which to create the test plan.
+| startDate | DateTime | Current date | Start date for test plan.
+| endDate | DateTime | Start date + 7 days | End date for test plan.
+| build | int | | ID of the build to test.
+| state | enum { Active, Inactive } | | State of the test plan.
 
 ### Name
 
@@ -1306,6 +1486,7 @@ Content-Type: application/json
 ```
 PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/3?api-version=1.0
 ```
+
 ```json
 {
   "name": "newCreatedPlan2"
@@ -1318,11 +1499,13 @@ PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans
 {
   "id": 3,
   "name": "newCreatedPlan2",
-  "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/3",
+  "url":
+    "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/3",
   "project": {
     "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
     "name": "Fabrikam-Fiber-TFVC",
-    "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
   },
   "area": {
     "id": "343",
@@ -1337,27 +1520,32 @@ PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans
     "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
     "displayName": "Fabrikam Fiber",
     "uniqueName": "fabrikamfiber1@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
   },
   "owner": {
     "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
     "displayName": "Fabrikam Fiber",
     "uniqueName": "fabrikamfiber1@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
   },
   "revision": 2,
   "state": "Active",
   "rootSuite": {
     "id": "3",
     "name": "newCreatedPlan2",
-    "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/3/Suites/3"
+    "url":
+      "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/3/Suites/3"
   },
-  "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=3"
+  "clientUrl":
+    "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=3"
 }
 ```
-
 
 ### Description
 
@@ -1366,6 +1554,7 @@ PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans
 ```
 PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/17?api-version=1.0
 ```
+
 ```json
 {
   "name": "newCreatedPlan2",
@@ -1379,11 +1568,13 @@ PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans
 {
   "id": 17,
   "name": "newCreatedPlan2",
-  "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/17",
+  "url":
+    "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/17",
   "project": {
     "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
     "name": "Fabrikam-Fiber-TFVC",
-    "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
   },
   "area": {
     "id": "343",
@@ -1398,34 +1589,41 @@ PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans
     "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
     "displayName": "Fabrikam Fiber",
     "uniqueName": "fabrikamfiber1@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
   },
   "owner": {
     "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
     "displayName": "Fabrikam Fiber",
     "uniqueName": "fabrikamfiber1@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
   },
   "revision": 2,
   "state": "Active",
   "rootSuite": {
     "id": "34",
     "name": "newCreatedPlan2",
-    "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/17/Suites/34"
+    "url":
+      "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/17/Suites/34"
   },
-  "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=17"
+  "clientUrl":
+    "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=17"
 }
 ```
 
-
 ### Area and iteration
+
 #### Sample request
 
 ```
 PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/17?api-version=1.0
 ```
+
 ```json
 {
   "area": {
@@ -1441,11 +1639,13 @@ PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans
 {
   "id": 17,
   "name": "newCreatedPlan2",
-  "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/17",
+  "url":
+    "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/17",
   "project": {
     "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
     "name": "Fabrikam-Fiber-TFVC",
-    "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
   },
   "area": {
     "id": "411",
@@ -1460,27 +1660,32 @@ PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans
     "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
     "displayName": "Fabrikam Fiber",
     "uniqueName": "fabrikamfiber1@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
   },
   "owner": {
     "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
     "displayName": "Fabrikam Fiber",
     "uniqueName": "fabrikamfiber1@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
   },
   "revision": 3,
   "state": "Active",
   "rootSuite": {
     "id": "34",
     "name": "newCreatedPlan2",
-    "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/17/Suites/34"
+    "url":
+      "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/17/Suites/34"
   },
-  "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=17"
+  "clientUrl":
+    "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=17"
 }
 ```
-
 
 ### State
 
@@ -1489,6 +1694,7 @@ PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans
 ```
 PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/17?api-version=1.0
 ```
+
 ```json
 {
   "state": "Inactive"
@@ -1501,11 +1707,13 @@ PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans
 {
   "id": 17,
   "name": "newCreatedPlan2",
-  "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/17",
+  "url":
+    "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/17",
   "project": {
     "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
     "name": "Fabrikam-Fiber-TFVC",
-    "url": "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC"
   },
   "area": {
     "id": "411",
@@ -1520,27 +1728,32 @@ PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans
     "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
     "displayName": "Fabrikam Fiber",
     "uniqueName": "fabrikamfiber1@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
   },
   "owner": {
     "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
     "displayName": "Fabrikam Fiber",
     "uniqueName": "fabrikamfiber1@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
   },
   "revision": 4,
   "state": "Inactive",
   "rootSuite": {
     "id": "34",
     "name": "newCreatedPlan2",
-    "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/17/Suites/34"
+    "url":
+      "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/17/Suites/34"
   },
-  "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=17"
+  "clientUrl":
+    "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=17"
 }
 ```
-
 
 ## Delete a testplan
 
@@ -1548,14 +1761,16 @@ PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans
 DELETE https://{instance}/DefaultCollection/{project}/_apis/test/plans/{planId}?api-version={version}
 ```
 
-| Parameter   | Type     | Default                     | Notes
-|:------------|:---------|:----------------------------|:---------------------
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
+
+
 | URL
-| instance    | string   |                             | TFS server name ({server:port}).
-| project     | string   |                             | Name or ID of the project.
-| planId      | int      |                             | ID of the test plan to delete.
+| instance | string | | TFS server name ({server:port}).
+| project | string | | Name or ID of the project.
+| planId | int | | ID of the test plan to delete.
 | Query
-| api-version | string   |                             | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 

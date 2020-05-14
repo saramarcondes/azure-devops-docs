@@ -15,8 +15,7 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Used by IHostDialogService.openMessageDialog(). 
+Used by IHostDialogService.openMessageDialog().
 
 ### Members
 
@@ -33,4 +32,3 @@ Used by IHostDialogService.openMessageDialog().
 * `height`: number. Optional. Height of dialog in px.
 
 * `useBowtieStyle`: boolean. Optional. Use Bowtie styling. Default is true.
-

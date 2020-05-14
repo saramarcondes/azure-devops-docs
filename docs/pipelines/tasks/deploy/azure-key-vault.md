@@ -51,13 +51,13 @@ When you want to access secrets:
 * Ensure the Azure service connection has at least **Get** and **List** permissions
   on the vault. You can set these permissions in the [Azure portal](https://portal.azure.com):
 
-  - Open the **Settings** blade for the vault, choose **Access policies**, then **Add new**.
+  * Open the **Settings** blade for the vault, choose **Access policies**, then **Add new**.
 
-  - In the **Add access policy** blade, choose **Select principal** and select the service principal for your client account.
+  * In the **Add access policy** blade, choose **Select principal** and select the service principal for your client account.
 
-  - In the **Add access policy** blade, choose **Secret permissions** and ensure that **Get** and **List** are checked (ticked).
+  * In the **Add access policy** blade, choose **Secret permissions** and ensure that **Get** and **List** are checked (ticked).
 
-  - Choose **OK** to save the changes.<p />
+  * Choose **OK** to save the changes.<p />
 
 ::: moniker range="> tfs-2018"
 
@@ -69,11 +69,11 @@ When you want to access secrets:
 
 ## Arguments
 
-| Parameter | Description |
-| --------- | ----------- |
-|`ConnectedServiceName`<r/>Azure Subscription| (Required) Select the service connection for the Azure subscription containing the Azure Key Vault instance, or create a new connection. [Learn more](../../library/connect-to-azure.md) |
-|`KeyVaultName`<br/>Key Vault| (Required) Select the name of the Azure Key Vault from which the secrets will be downloaded. |
-|`SecretsFilter`<br/>Secrets filter| (Required) A comma-separated list of secret names to be downloaded. <br/>Default value: `*`|
+| Parameter                                    | Description                                                                                                                                                                              |
+| -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `ConnectedServiceName`<r/>Azure Subscription | (Required) Select the service connection for the Azure subscription containing the Azure Key Vault instance, or create a new connection. [Learn more](../../library/connect-to-azure.md) |
+| `KeyVaultName`<br/>Key Vault                 | (Required) Select the name of the Azure Key Vault from which the secrets will be downloaded.                                                                                             |
+| `SecretsFilter`<br/>Secrets filter           | (Required) A comma-separated list of secret names to be downloaded. <br/>Default value: `*`                                                                                              |
 
 > [!NOTE]
 > Values are retrieved as strings. For example, if there is a secret named **connectionString**,
@@ -83,7 +83,7 @@ When you want to access secrets:
 If the value fetched from the vault is a certificate (for example, a PFX file), the task variable
 will contain the contents of the PFX in string format. You can use the following PowerShell code
 to retrieve the PFX file from the task variable:
- 
+
 ```powershell
 $kvSecretBytes = [System.Convert]::FromBase64String($(PfxSecret))
 $certCollection = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2Collection
@@ -91,7 +91,7 @@ $certCollection.Import($kvSecretBytes,$null,[System.Security.Cryptography.X509Ce
 ```
 
 If the certificate file will be stored locally on the machine, it is good practice
-to encrypt it with a password: 
+to encrypt it with a password:
 
 ```powershell
  #Get the file created
@@ -105,7 +105,7 @@ For more details, see [Get started with Azure Key Vault certificates](https://bl
 
 ## Contact Information
 
-Contact [RM\_Customer\_Queries@microsoft.com](mailto:RM_Customer_Queries@microsoft.com) if you discover issues using the task, to share feedback about the task,
+Contact [RM_Customer_Queries@microsoft.com](mailto:RM_Customer_Queries@microsoft.com) if you discover issues using the task, to share feedback about the task,
 or to suggest new features that you would like to see.
 
 ## Open source
@@ -113,9 +113,9 @@ or to suggest new features that you would like to see.
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
+
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 
 <!-- ENDSECTION -->
-

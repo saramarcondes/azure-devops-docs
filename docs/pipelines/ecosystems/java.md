@@ -13,10 +13,11 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
+
 > [!NOTE]
-> 
+>
 > This guidance uses YAML-based pipelines available in Azure Pipelines. For TFS, use tasks that correspond to those used in the YAML below.
-::: moniker-end
+> ::: moniker-end
 
 This guidance explains how to automatically build Java projects. (If you're working on an Android project, see [Build, test, and deploy Android apps](android.md).)
 
@@ -70,36 +71,36 @@ https://github.com/MicrosoftDocs/pipelines-java
 
 > When the **Configure** tab appears, select **Maven**.
 
-1. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
+1.  When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
+    > [!div class="mx-imgBorder"]
+    > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
 
-2. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
+2.  You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
 
-   If you want to watch your pipeline in action, select the build job.
+    If you want to watch your pipeline in action, select the build job.
 
-   > You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [Maven](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/maven.yml) template.
+    > You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [Maven](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/maven.yml) template.
 
-   You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
+    You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
 
-3. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+3.  When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
 
-4. See the sections below to learn some of the more common ways to customize your pipeline.
+4.  See the sections below to learn some of the more common ways to customize your pipeline.
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-1. Create a pipeline (if you don't know how, see [Create your first pipeline](../create-first-pipeline.md), and for the template select **Maven**. This template automatically adds the tasks you need to build the code in the sample repository.
+1.  Create a pipeline (if you don't know how, see [Create your first pipeline](../create-first-pipeline.md), and for the template select **Maven**. This template automatically adds the tasks you need to build the code in the sample repository.
 
-2. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action.
+2.  Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action.
 
-   You now have a working pipeline that's ready for you to customize!
+    You now have a working pipeline that's ready for you to customize!
 
-3. When you're ready to make changes to your pipeline, **Edit** it.
+3.  When you're ready to make changes to your pipeline, **Edit** it.
 
-4. See the sections below to learn some of the more common ways to customize your pipeline.
+4.  See the sections below to learn some of the more common ways to customize your pipeline.
 
 ::: moniker-end
 
@@ -242,7 +243,7 @@ steps:
 
 ## Next Steps
 
-After you've built and tested your app, you can upload the build output to Azure Pipelines or TFS, create and publish a Maven package, 
+After you've built and tested your app, you can upload the build output to Azure Pipelines or TFS, create and publish a Maven package,
 or package the build output into a .war/jar file to be deployed to a web application.
 
 ::: moniker-end

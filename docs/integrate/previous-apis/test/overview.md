@@ -16,8 +16,6 @@ ms.date: 08/04/2016
 
 [!INCLUDE [API_version](../_data/version.md)]
 
-
-
 A [test case](./cases.md) describes the steps to take when you run a test.
 [Test suites](./suites.md) are groups of test cases, and a [test plan](./plans.md) is the collection of test suites that need to be run for a particular iteration or release.
 [Test points](./points.md) are the pairings of test cases with test configurations that need to be run for the test plan.
@@ -44,24 +42,27 @@ A [test run](./runs.md) consists of a set of test points. The [results](./result
 ## Common tasks
 
 ### Create a test plan
-1. Get the [project](../tfs/projects.md) that you're working in.
-2. Create the [test plan](./plans.md#createatestplan).
+
+1.  Get the [project](../tfs/projects.md) that you're working in.
+2.  Create the [test plan](./plans.md#createatestplan).
 
 ### Create a test suite with test cases
+
 You need to have some test cases already created to do this.
 
-1. Create a [test suite](./suites.md#createatestsuite).
-2. Add some [test cases](./suites.md#addtestcasestoasuite) to the suite.
+1.  Create a [test suite](./suites.md#createatestsuite).
+2.  Add some [test cases](./suites.md#addtestcasestoasuite) to the suite.
 
 ### Get the results from a test run
 
 After you've run some tests...
 
-1. Get a [test run](./runs.md#getalistoftestruns).
-2. Get the ID of a run from the list, and get the [results](./results.md#getalistofresults) for that run.
-3. You can also get [statistics](./runs.md#gettestrunstatistic) for the run.
+1.  Get a [test run](./runs.md#getalistoftestruns).
+2.  Get the ID of a run from the list, and get the [results](./results.md#getalistofresults) for that run.
+3.  You can also get [statistics](./runs.md#gettestrunstatistic) for the run.
 
 ## Licensing requirements
+
 Test resources are subject to specific licensing and access restrictions. Please refer to the documentation links below for ensuring that the REST APIs are accessed with the appropriate user context.
 
 [Access Levels for Test Manager](https://visualstudio.microsoft.com/docs/work/connect/change-access-levels#test-manager)

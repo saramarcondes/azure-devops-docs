@@ -24,9 +24,9 @@ This is a step-by-step guide to using Azure Pipelines to build on macOS, Linux, 
 
 You can use Azure Pipelines to build an app on written in any language, on multiple platforms at the same time.
 
-1. Go to https://github.com/MicrosoftDocs/pipelines-javascript.
+1.  Go to https://github.com/MicrosoftDocs/pipelines-javascript.
 
-1. Fork the repo into your own GitHub account.
+1.  Fork the repo into your own GitHub account.
 
 You should now have a sample app in your GitHub account.
 
@@ -35,9 +35,9 @@ You should now have a sample app in your GitHub account.
 In the sample repo, there's no pipeline yet.
 You're going to add jobs that run on three platforms.
 
-1. Go to your fork of the sample code on GitHub.
+1.  Go to your fork of the sample code on GitHub.
 
-1. Choose 'Create new file'. Name the file `azure-pipelines.yml`, and give it the contents below.
+1.  Choose 'Create new file'. Name the file `azure-pipelines.yml`, and give it the contents below.
 
 ```yaml
 # Build NodeJS Express app using Azure Pipelines
@@ -69,7 +69,7 @@ steps:
     testRunTitle: 'Test results for JavaScript'
 
 - task: PublishCodeCoverageResults@1
-  inputs: 
+  inputs:
     codeCoverageTool: Cobertura
     summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/*coverage.xml'
     reportDirectory: '$(System.DefaultWorkingDirectory)/**/coverage'
@@ -94,25 +94,25 @@ See [multi-platform scripts](scripts/cross-platform-scripting.md) to learn more.
 
 Now that you've configured your GitHub repo with a pipeline, you're ready to build it.
 
-1. Sign in to your Azure DevOps organization and navigate to your project.
+1.  Sign in to your Azure DevOps organization and navigate to your project.
 
-1. In your project, go to the **Pipelines** page, and then select **New pipeline**.
+1.  In your project, go to the **Pipelines** page, and then select **New pipeline**.
 
-1. Select **GitHub** as the location of your source code.
+1.  Select **GitHub** as the location of your source code.
 
-   ![Select GitHub](media/get-started-yaml/new-pipeline.png)
+    ![Select GitHub](media/get-started-yaml/new-pipeline.png)
 
-1. For **Repository**, select **Authorize** and then **Authorize with OAuth**. 
+1.  For **Repository**, select **Authorize** and then **Authorize with OAuth**.
 
-1. You might be redirected to GitHub to sign in. If this happens, then enter your GitHub credentials. After you're redirected back to Azure Pipelines, select the **sample app** repository.
+1.  You might be redirected to GitHub to sign in. If this happens, then enter your GitHub credentials. After you're redirected back to Azure Pipelines, select the **sample app** repository.
 
-1. For the **Template**, Azure Pipelines analyzes the code in your repository. If your repository already contains an `azure-pipelines.yml` file (as in this case), then this step is skipped. Otherwise, Azure Pipelines recommends a starter template based on the code in your repository.
+1.  For the **Template**, Azure Pipelines analyzes the code in your repository. If your repository already contains an `azure-pipelines.yml` file (as in this case), then this step is skipped. Otherwise, Azure Pipelines recommends a starter template based on the code in your repository.
 
-1. Azure Pipelines shows you the YAML file that it will use to create your pipeline.
+1.  Azure Pipelines shows you the YAML file that it will use to create your pipeline.
 
-1. Select **Save and run**, and then select the option to **Commit directly to the master branch**.
+1.  Select **Save and run**, and then select the option to **Commit directly to the master branch**.
 
-1. The YAML file is pushed to your GitHub repository, and a new build is automatically started. Wait for the build to finish.
+1.  The YAML file is pushed to your GitHub repository, and a new build is automatically started. Wait for the build to finish.
 
 ## FAQ
 

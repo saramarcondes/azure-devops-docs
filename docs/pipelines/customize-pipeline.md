@@ -28,29 +28,29 @@ A pipeline is defined using a YAML file in your repo. Usually, this file is name
 * Navigate to the **Pipelines** page in Azure Pipelines and select the pipeline you created.
 * Select **Edit** in the context menu of the pipeline to open the YAML editor for the pipeline. Examine the contents of the YAML file.
 
-   ```yaml
-    trigger:
-    - master
+  ```yaml
+   trigger:
+   - master
 
-    pool:
-      vmImage: 'Ubuntu-16.04'
+   pool:
+     vmImage: 'Ubuntu-16.04'
 
-    steps:
-    - task: Maven@3
-      inputs:
-        mavenPomFile: 'pom.xml'
-        mavenOptions: '-Xmx3072m'
-        javaHomeOption: 'JDKVersion'
-        jdkVersionOption: '1.8'
-        jdkArchitectureOption: 'x64'
-        publishJUnitResults: false
-        testResultsFiles: '**/surefire-reports/TEST-*.xml'
-        goals: 'package'
-   ```
+   steps:
+   - task: Maven@3
+     inputs:
+       mavenPomFile: 'pom.xml'
+       mavenOptions: '-Xmx3072m'
+       javaHomeOption: 'JDKVersion'
+       jdkVersionOption: '1.8'
+       jdkArchitectureOption: 'x64'
+       publishJUnitResults: false
+       testResultsFiles: '**/surefire-reports/TEST-*.xml'
+       goals: 'package'
+  ```
 
-   > [!Note]
-   > The contents of your YAML file may be different depending on the sample repo you started with, or upgrades made in Azure Pipelines.
-    
+  > [!Note]
+  > The contents of your YAML file may be different depending on the sample repo you started with, or upgrades made in Azure Pipelines.
+
 This pipeline runs whenever your team pushes a change to the master branch of your repo. It runs on a Microsoft-hosted Linux machine. The pipeline process has a single step, which is to run the Maven task.
 
 ## Change the platform to build on
@@ -61,23 +61,23 @@ You can build your project on [Microsoft-hosted agents](../pipelines/agents/host
 
 * Currently the pipeline runs on a Linux agent:
 
-    ```yaml
-    pool:
-      vmImage: "ubuntu-16.04"
-    ```
+  ```yaml
+  pool:
+    vmImage: "ubuntu-16.04"
+  ```
 
 * To choose a different platform like Windows or Mac, change the `vmImage` value:
 
-    ```yaml
-    pool:
-      vmImage: "vs2017-win2016"
-    ```
+  ```yaml
+  pool:
+    vmImage: "vs2017-win2016"
+  ```
 
-    ```yaml
-    pool:
-      vmImage: "macos-latest"
-    ```
-    
+  ```yaml
+  pool:
+    vmImage: "macos-latest"
+  ```
+
 * Select **Save** and then confirm the changes to see your pipeline run on a different platform.
 
 ## Add steps
@@ -88,15 +88,15 @@ You can add additional **scripts** or **tasks** as steps to your pipeline. A tas
 
 * Add the following snippet to the end of your YAML file.
 
-    ```yaml
-    - task: PublishCodeCoverageResults@1
-      inputs:
-        codeCoverageTool: "JaCoCo"
-        summaryFileLocation: "$(System.DefaultWorkingDirectory)/**/site/jacoco/jacoco.xml"
-        reportDirectory: "$(System.DefaultWorkingDirectory)/**/site/jacoco"
-        failIfCoverageEmpty: true
-    ```
-    
+  ```yaml
+  - task: PublishCodeCoverageResults@1
+    inputs:
+      codeCoverageTool: "JaCoCo"
+      summaryFileLocation: "$(System.DefaultWorkingDirectory)/**/site/jacoco/jacoco.xml"
+      reportDirectory: "$(System.DefaultWorkingDirectory)/**/site/jacoco"
+      failIfCoverageEmpty: true
+  ```
+
 * Select **Save** and then confirm the changes.
 
 * You can view your test and code coverage results by selecting your build and going to the **Test** and **Coverage** tabs.
@@ -107,27 +107,27 @@ You can build and test your project on multiple platforms. One way to do it is w
 
 * In your `azure-pipelines.yml` file, replace this content:
 
-    ```yaml
-    pool:
-      vmImage: "ubuntu-16.04"
-    ```
+  ```yaml
+  pool:
+    vmImage: "ubuntu-16.04"
+  ```
 
-    with the following content:
+  with the following content:
 
-    ```yaml
-    strategy:
-      matrix:
-        linux:
-          imageName: "ubuntu-16.04"
-        mac:
-          imageName: "macos-10.14"
-        windows:
-          imageName: "vs2017-win2016"
-      maxParallel: 3
+  ```yaml
+  strategy:
+    matrix:
+      linux:
+        imageName: "ubuntu-16.04"
+      mac:
+        imageName: "macos-10.14"
+      windows:
+        imageName: "vs2017-win2016"
+    maxParallel: 3
 
-    pool:
-      vmImage: $(imageName)
-    ```
+  pool:
+    vmImage: $(imageName)
+  ```
 
 * Select **Save** and then confirm the changes to see your build run up to three jobs on three different platforms.
 
@@ -139,61 +139,61 @@ To build a project using different versions of that language, you can use a `mat
 
 * If you want to build on a single platform and multiple versions, add the following matrix to your `azure-pipelines.yml` file before the Maven task and after the vmImage.
 
-    ```yaml
-    strategy:
-      matrix:
-        jdk10:
-          jdk_version: "1.10"
-        jdk11:
-          jdk_version: "1.11"
-      maxParallel: 2
-    ```
+  ```yaml
+  strategy:
+    matrix:
+      jdk10:
+        jdk_version: "1.10"
+      jdk11:
+        jdk_version: "1.11"
+    maxParallel: 2
+  ```
 
 * Then replace this line in your maven task:
 
-    ```yaml
-    jdkVersionOption: "1.11"
-    ```
+  ```yaml
+  jdkVersionOption: "1.11"
+  ```
 
-    with this line:
+  with this line:
 
-    ```yaml
-    jdkVersionOption: $(jdk_version)
-    ```
+  ```yaml
+  jdkVersionOption: $(jdk_version)
+  ```
 
 * Make sure to change the `$(imageName)` variable back to the platform of your choice.
 
 * If you want to build on multiple platforms and versions, replace the entire content in your `azure-pipelines.yml` file before the publishing task with the following snippet:
 
-    ```yaml
-    trigger:
-    - master
+  ```yaml
+  trigger:
+  - master
 
-    strategy:
-      matrix:
-        jdk10_linux:
-          imageName: "ubuntu-16.04"
-          jdk_version: "1.10"
-        jdk11_windows:
-          imageName: "vs2017-win2016"
-          jdk_version: "1.11"
-      maxParallel: 2
+  strategy:
+    matrix:
+      jdk10_linux:
+        imageName: "ubuntu-16.04"
+        jdk_version: "1.10"
+      jdk11_windows:
+        imageName: "vs2017-win2016"
+        jdk_version: "1.11"
+    maxParallel: 2
 
-    pool:
-      vmImage: $(imageName)
+  pool:
+    vmImage: $(imageName)
 
-    steps:
-    - task: Maven@3
-      inputs:
-        mavenPomFile: "pom.xml"
-        mavenOptions: "-Xmx3072m"
-        javaHomeOption: "JDKVersion"
-        jdkVersionOption: $(jdk_version)
-        jdkArchitectureOption: "x64"
-        publishJUnitResults: true
-        testResultsFiles: "**/TEST-*.xml"
-        goals: "package"
-    ```
+  steps:
+  - task: Maven@3
+    inputs:
+      mavenPomFile: "pom.xml"
+      mavenOptions: "-Xmx3072m"
+      javaHomeOption: "JDKVersion"
+      jdkVersionOption: $(jdk_version)
+      jdkArchitectureOption: "x64"
+      publishJUnitResults: true
+      testResultsFiles: "**/TEST-*.xml"
+      goals: "package"
+  ```
 
 * Select **Save** and then confirm the changes to see your build run two jobs on three different platforms and SDKs.
 
@@ -203,37 +203,40 @@ You can use a `trigger:` to specify the events when you want to run the pipeline
 
 * If you'd like to set up triggers, add either of the following snippets at the beginning of your `azure-pipelines.yml` file.
 
-    ```yaml
-    trigger:
-      - master
-      - releases/*
-    ```
+  ```yaml
+  trigger:
+    - master
+    - releases/*
+  ```
 
-    ```yaml
-    pr:
-      - master
-      - releases/*
-    ```
+  ```yaml
+  pr:
+    - master
+    - releases/*
+  ```
 
-    You can specify the full name of the branch (for example, `master`) or a prefix-matching wildcard (for example, `releases/*`).
+  You can specify the full name of the branch (for example, `master`) or a prefix-matching wildcard (for example, `releases/*`).
 
 ## Customize settings
 
 There are pipeline settings that you wouldn't want to manage in your YAML file. Follow these steps to view and modify these settings:
-1. From your web browser, open the project for your organization in Azure DevOps and choose Pipelines / Pipelines from the navigation sidebar.
-2. Select the pipeline you want to configure settings for from the list of pipelines.
-3. Open the overflow menu by clicking the action button with the vertical ellipsis and select Settings.
+
+1.  From your web browser, open the project for your organization in Azure DevOps and choose Pipelines / Pipelines from the navigation sidebar.
+2.  Select the pipeline you want to configure settings for from the list of pipelines.
+3.  Open the overflow menu by clicking the action button with the vertical ellipsis and select Settings.
 
 ### Processing of new run requests
-Sometimes you'll want to prevent new runs from starting on your pipeline. 
+
+Sometimes you'll want to prevent new runs from starting on your pipeline.
 
 * By default, the processing of new run requests is **Enabled**. This setting allows standard processing of all trigger types, including manual runs.
 * **Paused** pipelines allow run requests to be processed, but those requests are queued without actually starting. When new request processing is enabled, run processing resumes starting with the first request in the queue.
-* **Disabled** pipelines prevent users from starting new runs. All triggers are also disabled while this setting is applied. 
+* **Disabled** pipelines prevent users from starting new runs. All triggers are also disabled while this setting is applied.
 
 ### Other settings
+
 * **YAML file path.** If you ever need to direct your pipeline to use a different YAML file, you can specify the path to that file. This setting can also be useful if you need to move/rename your YAML file.
-* **Automatically link work items included in this run.** The changes associated with a given pipeline run may have work items associated with them. Select this option to link those work items to the run. When this option is selected, you'll need to specify a specific branch. Work items will only be associated with runs of that branch. 
+* **Automatically link work items included in this run.** The changes associated with a given pipeline run may have work items associated with them. Select this option to link those work items to the run. When this option is selected, you'll need to specify a specific branch. Work items will only be associated with runs of that branch.
 * To get notifications when your runs fail, see how to [Manage notifications for a team](../notifications/howto-manage-team-notifications.md)
 
 You've just learned the basics of customizing your pipeline. Next we recommend that you learn more about customizing a pipeline for the language you use:

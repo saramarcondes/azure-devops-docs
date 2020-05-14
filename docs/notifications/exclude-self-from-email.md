@@ -21,14 +21,14 @@ For example, if your team has a subscription for a _pull request created_ event,
 
 This option is good for users who don't want notifications of events that they trigger. However, some users may feel left out when their teammates receive the email and they didn't. Let your team decide which option is best.
 
-> [!div class="mx-imgBorder"] 
+> [!div class="mx-imgBorder"]
 > ![New subscription skip initiator](media/new-sub-skip-initiator.png)
 
 [!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
 
 #### Related articles
 
-- [Manage personal notification settings](manage-your-personal-notifications.md)
-- [Follow a specific work item](../boards/work-items/follow-work-items.md)  
-- [Manage notifications for a team](manage-team-notifications.md)  
-- [Change your preferred email address](change-email-address.md)
+* [Manage personal notification settings](manage-your-personal-notifications.md)
+* [Follow a specific work item](../boards/work-items/follow-work-items.md)
+* [Manage notifications for a team](manage-team-notifications.md)
+* [Change your preferred email address](change-email-address.md)

@@ -32,7 +32,7 @@ The SQL script can be specified either as an artifact or as an inline script.
 
 * If you execute **SQLPackage** from the folder where it is installed, you must prefix the path with `&` and wrap it in double-quotes.
 
-## Basic Syntax 
+## Basic Syntax
 
 `<Path of SQLPackage.exe> <Arguments to SQLPackage.exe>`
 
@@ -122,7 +122,7 @@ sqlpackage.exe /Action:Export /?
 
 Imports the schema and table data from a BACPAC package into a new user database in an instance of SQL Server or Microsoft Azure SQL Database.
 
-**Command Syntax:** 
+**Command Syntax:**
 
 ```command
 SqlPackage.exe /SourceFile:"<Bacpac file location>" /Action:Import /TargetServerName:"<ServerName>.database.windows.net"
@@ -146,7 +146,7 @@ sqlpackage.exe /Action:Import /?
 
 Creates an XML report of the changes that would be made by a publish action.
 
-**Command Syntax:** 
+**Command Syntax:**
 
 ```command
 SqlPackage.exe /SourceFile:"<Dacpac file location>" /Action:DeployReport /TargetServerName:"<ServerName>.database.windows.net"
@@ -157,7 +157,7 @@ SqlPackage.exe /SourceFile:"<Dacpac file location>" /Action:DeployReport /Target
 
 ```command
 SqlPackage.exe /SourceFile:"E: \dacpac\ajyadb.dacpac" /Action:DeployReport /TargetServerName:"DemoSqlServer.database.windows.net"
-/TargetDatabaseName:"Testdb" /TargetUser:"ajay" /TargetPassword:"SQLPassword" /OutputPath:"C:\temp\deployReport.xml" 
+/TargetDatabaseName:"Testdb" /TargetUser:"ajay" /TargetPassword:"SQLPassword" /OutputPath:"C:\temp\deployReport.xml"
 ```
 
 **Help:**
@@ -170,7 +170,7 @@ sqlpackage.exe /Action:DeployReport /?
 
 Creates an XML report of the changes that have been made to a registered database since it was last registered.
 
-**Command Syntax:** 
+**Command Syntax:**
 
 ```command
 SqlPackage.exe /Action:DriftReport /TargetServerName:"<ServerName>.database.windows.net" /TargetDatabaseName:"<DatabaseName>"

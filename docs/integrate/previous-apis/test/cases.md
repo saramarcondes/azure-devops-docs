@@ -24,13 +24,15 @@ ms.date: 08/04/2016
 GET https://{instance}/DefaultCollection/{project}/_apis/test/plans/{plan}/suites/{suite}/testcases?api-version={version}
 ```
 
-| Parameter | Type   | Notes
-|:----------|:-------|:-----------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance  | string | TFS server name ({server:port}).
-| project   | string | Name or ID of the project.
-| plan      | int    | ID of the test plan that contains the suites.
-| suite     | int    | ID of the suite to get.
+| instance | string | TFS server name ({server:port}).
+| project | string | Name or ID of the project.
+| plan | int | ID of the test plan that contains the suites.
+| suite | int | ID of the suite to get.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
@@ -49,7 +51,8 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
       "testCase": {
         "id": "39",
         "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/39",
-        "webUrl": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=39"
+        "webUrl":
+          "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=39"
       },
       "pointAssignments": [
         {
@@ -61,8 +64,10 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
             "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
             "displayName": "Fabrikam Fiber",
             "uniqueName": "fabrikamfiber1@outlook.com",
-            "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-            "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+            "url":
+              "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+            "imageUrl":
+              "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
           }
         }
       ]
@@ -71,7 +76,8 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
       "testCase": {
         "id": "40",
         "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/40",
-        "webUrl": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=40"
+        "webUrl":
+          "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=40"
       },
       "pointAssignments": [
         {
@@ -83,8 +89,10 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
             "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
             "displayName": "Fabrikam Fiber",
             "uniqueName": "fabrikamfiber1@outlook.com",
-            "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-            "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+            "url":
+              "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+            "imageUrl":
+              "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
           }
         }
       ]
@@ -94,21 +102,22 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
 }
 ```
 
-
 ## Get a test case
 
 ```no-highlight
 GET https://{instance}/DefaultCollection/{project}/_apis/test/plans/{plan}/suites/{suite}/testcases/{case}?api-version={version}
 ```
 
-| Parameter | Type   | Notes
-|:----------|:-------|:-----------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance  | string | TFS server name ({server:port}).
-| project   | string | Name or ID of the project.
-| plan      | int    | ID of the test plan that contains the suites.
-| suite     | int    | ID of the suite that contains the test case.
-| case      | int    | ID of the test case to get.       
+| instance | string | TFS server name ({server:port}).
+| project | string | Name or ID of the project.
+| plan | int | ID of the test plan that contains the suites.
+| suite | int | ID of the suite that contains the test case.
+| case | int | ID of the test case to get.  
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
@@ -125,7 +134,8 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
   "testCase": {
     "id": "39",
     "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/39",
-    "webUrl": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=39"
+    "webUrl":
+      "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=39"
   },
   "pointAssignments": [
     {
@@ -137,28 +147,32 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans/1
         "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
         "displayName": "Fabrikam Fiber",
         "uniqueName": "fabrikamfiber1@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
       }
     }
   ]
 }
 ```
 
-
 ## Delete a test case
+
 > This API is supported as of [!INCLUDE [API_version](../_data/version3-preview.md)].
 
 ```no-highlight
 DELETE https://{instance}/DefaultCollection/{project}/_apis/test/testcases/{caseId}?api-version={version}
 ```
 
-| Parameter | Type   | Notes
-|:----------|:-------|:-----------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance  | string | TFS server name ({server:port}).
-| project   | string | Name or ID of the project.
-| caseId    | int    | ID of the test case to delete.       
+| instance | string | TFS server name ({server:port}).
+| project | string | Name or ID of the project.
+| caseId | int | ID of the test case to delete.  
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
@@ -167,5 +181,3 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/test/testcases/{case
 ```
 DELETE https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/testcases/5?api-version=3.0-preview
 ```
-
-

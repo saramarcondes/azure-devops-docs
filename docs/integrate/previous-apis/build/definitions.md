@@ -24,15 +24,17 @@ ms.date: 08/04/2016
 GET https://{instance}/DefaultCollection/{project}/_apis/build/definitions?api-version={version}[&name={string}][&type={string}]
 ```
 
-| Parameter     | Type                 | Notes
-|:--------------|:---------------------|:------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance      | string               | TFS server name ({server:port}).
-| project       | string               | [Project](../tfs/projects.md) ID or name.
+| instance | string | TFS server name ({server:port}).
+| project | string | [Project](../tfs/projects.md) ID or name.
 | Query
-| api-version   | string               | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| name          | string               | Filters to definitions whose names equal this value. Append a `*` to filter to definitions whose names start with this value. For example: `MS*`.
-| type          | enum { build, xaml } | The type of the build definitions to retrieve. If not specified, all types will be returned.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| name | string | Filters to definitions whose names equal this value. Append a `*` to filter to definitions whose names start with this value. For example: `MS*`.
+| type | enum { build, xaml } | The type of the build definitions to retrieve. If not specified, all types will be returned.
 
 #### Sample request
 
@@ -50,10 +52,14 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
       "quality": "definition",
       "authoredBy": {
         "id": "47d25e84-de54-49ce-8f3d-351c77422775",
-        "displayName": "[DefaultCollection]\\Project Collection Service Accounts",
-        "uniqueName": "vstfs:///Framework/Generic/d81542e4-cdfa-4333-b082-1ae2d6c3ad16\\Project Collection Service Accounts",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775",
+        "displayName":
+          "[DefaultCollection]\\Project Collection Service Accounts",
+        "uniqueName":
+          "vstfs:///Framework/Generic/d81542e4-cdfa-4333-b082-1ae2d6c3ad16\\Project Collection Service Accounts",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775",
         "isContainer": true
       },
       "queue": {
@@ -66,12 +72,14 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
       "revision": 2,
       "id": 7,
       "name": "MyRepo CI",
-      "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/7",
+      "url":
+        "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/7",
       "project": {
         "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
         "name": "Fabrikam-Fiber-Git",
         "description": "Git projects",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
         "state": "wellFormed",
         "revision": 3432824
       }
@@ -82,8 +90,10 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
         "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
         "displayName": "Normal Paulk",
         "uniqueName": "fabrikamfiber16@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
       },
       "queue": {
         "pool": null,
@@ -95,12 +105,14 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
       "revision": 10,
       "id": 25,
       "name": "VsoBuildApi",
-      "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/25",
+      "url":
+        "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/25",
       "project": {
         "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
         "name": "Fabrikam-Fiber-Git",
         "description": "Git projects",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
         "state": "wellFormed",
         "revision": 3432824
       }
@@ -111,8 +123,10 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
         "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
         "displayName": "Normal Paulk",
         "uniqueName": "fabrikamfiber16@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
       },
       "queue": {
         "pool": null,
@@ -124,12 +138,14 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
       "revision": 1,
       "id": 29,
       "name": "myDefinition",
-      "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/29",
+      "url":
+        "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/29",
       "project": {
         "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
         "name": "Fabrikam-Fiber-Git",
         "description": "Git projects",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
         "state": "wellFormed",
         "revision": 3432824
       }
@@ -139,12 +155,14 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
       "type": "xaml",
       "id": 2,
       "name": "MyWebSite CI",
-      "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/2",
+      "url":
+        "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/2",
       "project": {
         "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
         "name": "Fabrikam-Fiber-Git",
         "description": "Git projects",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
         "state": "wellFormed",
         "revision": 3432824
       }
@@ -154,12 +172,14 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
       "type": "xaml",
       "id": 3,
       "name": "CustomerAddressModule",
-      "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/3",
+      "url":
+        "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/3",
       "project": {
         "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
         "name": "Fabrikam-Fiber-Git",
         "description": "Git projects",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
         "state": "wellFormed",
         "revision": 3432824
       }
@@ -168,22 +188,23 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
 }
 ```
 
-
 ## Get a build definition
 
 ```no-highlight
 GET https://{instance}/DefaultCollection/{project}/_apis/build/definitions/{definitionId}?api-version={version}[&revision={int}]
 ```
 
-| Parameter    | Type   | Notes
-|:-------------|:-------|:------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance     | string | TFS server name ({server:port}).
-| project      | string | [Project](../tfs/projects.md) ID or name.
-| definitionId | int    | ID of the build definition.
+| instance | string | TFS server name ({server:port}).
+| project | string | [Project](../tfs/projects.md) ID or name.
+| definitionId | int | ID of the build definition.
 | Query
-| api-version  | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| revision     | int    | The specific revision number of the definition to retrieve.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| revision | int | The specific revision number of the definition to retrieve.
 | propertyFilters | string | A comma-delimited list of extended properties to retrieve.
 
 #### Sample request
@@ -271,19 +292,19 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
   },
   "retentionRules": [
     {
-      "branches": [
-        "+refs/heads/*"
-      ],
+      "branches": ["+refs/heads/*"],
       "daysToKeep": 10,
       "deleteBuildRecord": true
     }
   ],
   "_links": {
     "self": {
-      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/29"
+      "href":
+        "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/29"
     },
     "web": {
-      "href": "https://mytfsserver/DefaultCollection/_permalink/_build/index?collectionId=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&projectId=6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c&definitionId=29"
+      "href":
+        "https://mytfsserver/DefaultCollection/_permalink/_build/index?collectionId=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&projectId=6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c&definitionId=29"
     }
   },
   "createdDate": "2015-07-16T19:47:20.12Z",
@@ -303,8 +324,10 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
     "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
     "displayName": "Normal Paulk",
     "uniqueName": "fabrikamfiber16@hotmail.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
   },
   "queue": {
     "pool": null,
@@ -316,20 +339,22 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
   "revision": 1,
   "id": 29,
   "name": "myDefinition",
-  "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/29",
+  "url":
+    "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/29",
   "project": {
     "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
     "name": "Fabrikam-Fiber-Git",
     "description": "Git projects",
-    "url": "https://mytfsserver/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
     "state": "wellFormed",
     "revision": 3432824
   }
 }
 ```
 
-
 ### By revision
+
 #### Sample request
 
 ```
@@ -415,19 +440,19 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
   },
   "retentionRules": [
     {
-      "branches": [
-        "+refs/heads/*"
-      ],
+      "branches": ["+refs/heads/*"],
       "daysToKeep": 10,
       "deleteBuildRecord": true
     }
   ],
   "_links": {
     "self": {
-      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/29"
+      "href":
+        "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/29"
     },
     "web": {
-      "href": "https://mytfsserver/DefaultCollection/_permalink/_build/index?collectionId=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&projectId=6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c&definitionId=29"
+      "href":
+        "https://mytfsserver/DefaultCollection/_permalink/_build/index?collectionId=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&projectId=6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c&definitionId=29"
     }
   },
   "createdDate": "2015-07-16T19:47:20.12Z",
@@ -447,8 +472,10 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
     "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
     "displayName": "Normal Paulk",
     "uniqueName": "fabrikamfiber16@hotmail.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
   },
   "queue": {
     "pool": null,
@@ -460,18 +487,19 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
   "revision": 1,
   "id": 29,
   "name": "myDefinition",
-  "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/29",
+  "url":
+    "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/29",
   "project": {
     "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
     "name": "Fabrikam-Fiber-Git",
     "description": "Git projects",
-    "url": "https://mytfsserver/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
     "state": "wellFormed",
     "revision": 3432824
   }
 }
 ```
-
 
 <a name="createabuilddefinition" />
 
@@ -481,19 +509,22 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
 POST https://{instance}/DefaultCollection/{project}/_apis/build/definitions?api-version={version}
 ```
 
-| Parameter     | Type                 | Notes
-|:--------------|:---------------------|:------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance      | string               | TFS server name ({server:port}).
-| project       | string               | [Project](../tfs/projects.md) ID or name.
+| instance | string | TFS server name ({server:port}).
+| project | string | [Project](../tfs/projects.md) ID or name.
 | Query
-| api-version   | string               | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
 ```
 POST https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definitions?api-version=2.0
 ```
+
 ```json
 {
   "name": "myDefinition",
@@ -668,9 +699,7 @@ POST https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/defini
   },
   "retentionRules": [
     {
-      "branches": [
-        "+refs/heads/*"
-      ],
+      "branches": ["+refs/heads/*"],
       "daysToKeep": 10,
       "deleteBuildRecord": true
     }
@@ -678,10 +707,12 @@ POST https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/defini
   "properties": {},
   "_links": {
     "self": {
-      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/29"
+      "href":
+        "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/29"
     },
     "web": {
-      "href": "https://mytfsserver/DefaultCollection/_permalink/_build/index?collectionId=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&projectId=6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c&definitionId=29"
+      "href":
+        "https://mytfsserver/DefaultCollection/_permalink/_build/index?collectionId=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&projectId=6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c&definitionId=29"
     }
   },
   "createdDate": "2015-07-16T19:47:20.12Z",
@@ -701,8 +732,10 @@ POST https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/defini
     "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
     "displayName": "Normal Paulk",
     "uniqueName": "fabrikamfiber16@hotmail.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
   },
   "queue": {
     "pool": null,
@@ -714,19 +747,19 @@ POST https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/defini
   "revision": 1,
   "id": 29,
   "name": "myDefinition",
-  "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/29",
+  "url":
+    "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/29",
   "project": {
     "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
     "name": "Fabrikam-Fiber-Git",
     "description": "Git projects",
-    "url": "https://mytfsserver/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
     "state": "wellFormed",
     "revision": 3432824
   }
 }
 ```
-
-
 
 ## Update a build definition
 
@@ -734,22 +767,25 @@ POST https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/defini
 PUT https://{instance}/DefaultCollection/{project}/_apis/build/definitions/{definitionId}?api-version={version}
 ```
 
-| Parameter     | Type                 | Notes
-|:--------------|:---------------------|:------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance      | string               | TFS server name ({server:port}).
-| project       | string               | [Project](../tfs/projects.md) ID or name.
-| definitionId  | int                  | ID of the build definition.
+| instance | string | TFS server name ({server:port}).
+| project | string | [Project](../tfs/projects.md) ID or name.
+| definitionId | int | ID of the build definition.
 | Query
-| api-version   | string               | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
-| revision      | int                  | The current revision number of the definition. If this doesn't match the current version, the update will fail.
+| revision | int | The current revision number of the definition. If this doesn't match the current version, the update will fail.
 
 #### Sample request
 
 ```
 PUT https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definitions/29?api-version=2.0
 ```
+
 ```json
 {
   "id": 29,
@@ -927,10 +963,12 @@ PUT https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
   "properties": {},
   "_links": {
     "self": {
-      "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/29"
+      "href":
+        "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/29"
     },
     "web": {
-      "href": "https://mytfsserver/DefaultCollection/_permalink/_build/index?collectionId=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&projectId=6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c&definitionId=29"
+      "href":
+        "https://mytfsserver/DefaultCollection/_permalink/_build/index?collectionId=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&projectId=6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c&definitionId=29"
     }
   },
   "createdDate": "2015-07-16T19:47:22.193Z",
@@ -950,8 +988,10 @@ PUT https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
     "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
     "displayName": "Normal Paulk",
     "uniqueName": "fabrikamfiber16@hotmail.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
   },
   "queue": {
     "pool": null,
@@ -963,19 +1003,19 @@ PUT https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
   "revision": 2,
   "id": 29,
   "name": "myFavoriteDefinition",
-  "url": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/29",
+  "url":
+    "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/29",
   "project": {
     "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
     "name": "Fabrikam-Fiber-Git",
     "description": "Git projects",
-    "url": "https://mytfsserver/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
     "state": "wellFormed",
     "revision": 3432824
   }
 }
 ```
-
-
 
 ## Delete a build definition
 
@@ -983,14 +1023,16 @@ PUT https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
 DELETE https://{instance}/DefaultCollection/{project}/_apis/build/definitions/{definitionId}?api-version={version}
 ```
 
-| Parameter     | Type                 | Notes
-|:--------------|:---------------------|:------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance      | string               | TFS server name ({server:port}).
-| project       | string               | [Project](../tfs/projects.md) ID or name.
-| definitionId  | int                  | ID of the build definition.
+| instance | string | TFS server name ({server:port}).
+| project | string | [Project](../tfs/projects.md) ID or name.
+| definitionId | int | ID of the build definition.
 | Query
-| api-version   | string               | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
@@ -998,22 +1040,22 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/build/definitions/{d
 DELETE https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definitions/29?api-version=2.0
 ```
 
-
-
 ## Get the history of a build definition
 
 ```no-highlight
 GET https://{instance}/DefaultCollection/{project}/_apis/build/definitions/{definitionId}/revisions?api-version={version}
 ```
 
-| Parameter    | Type   | Notes
-|:-------------|:-------|:------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance     | string | TFS server name ({server:port}).
-| project      | string | [Project](../tfs/projects.md) ID or name.
-| definitionId | int    | ID of the build definition.
+| instance | string | TFS server name ({server:port}).
+| project | string | [Project](../tfs/projects.md) ID or name.
+| definitionId | int | ID of the build definition.
 | Query
-| api-version  | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
@@ -1033,13 +1075,16 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
       "changedDate": "2015-07-16T19:47:20.12Z",
       "changeType": "add",
       "comment": "my first definition",
-      "definitionUrl": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/29?revision=1",
+      "definitionUrl":
+        "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/29?revision=1",
       "changedBy": {
         "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
         "displayName": "Normal Paulk",
         "uniqueName": "fabrikamfiber16@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
       }
     },
     {
@@ -1048,19 +1093,21 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
       "changedDate": "2015-07-16T19:47:22.193Z",
       "changeType": "update",
       "comment": "renamed",
-      "definitionUrl": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/29?revision=2",
+      "definitionUrl":
+        "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/build/Definitions/29?revision=2",
       "changedBy": {
         "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
         "displayName": "Normal Paulk",
         "uniqueName": "fabrikamfiber16@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
       }
     }
   ]
 }
 ```
-
 
 ## Get build definition options
 
@@ -1068,12 +1115,14 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
 GET https://{instance}/DefaultCollection/_apis/build/options?api-version={version}
 ```
 
-| Parameter    | Type   | Notes
-|:-------------|:-------|:------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance     | string | TFS server name ({server:port}).
+| instance | string | TFS server name ({server:port}).
 | Query
-| api-version  | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
@@ -1094,7 +1143,8 @@ GET https://mytfsserver/DefaultCollection/_apis/build/options?api-version=2.0
       "inputs": [
         {
           "help": {
-            "markdown": "A comma-delimited list of configuration variables to use for the builds. These are defined on the *Variables* tab.</br></br>For example, `BuildPlatform, BuildConfiguration` would run builds for both variables"
+            "markdown":
+              "A comma-delimited list of configuration variables to use for the builds. These are defined on the *Variables* tab.</br></br>For example, `BuildPlatform, BuildConfiguration` would run builds for both variables"
           },
           "name": "multipliers",
           "label": "Multipliers",
@@ -1104,7 +1154,8 @@ GET https://mytfsserver/DefaultCollection/_apis/build/options?api-version=2.0
         },
         {
           "help": {
-            "markdown": "Run the respective builds for each configuration in parallel"
+            "markdown":
+              "Run the respective builds for each configuration in parallel"
           },
           "name": "parallel",
           "label": "Parallel",

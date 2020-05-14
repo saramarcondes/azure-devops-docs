@@ -25,4 +25,3 @@ Extends: [TeamSettingsDataContractBase](../../../TFS/Work/Contracts/TeamSettings
 * `name`: string. Name of the resource
 
 * `path`: string. Relative path of the iteration
-

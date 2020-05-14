@@ -50,10 +50,10 @@ Last sprint we enabled a set of configuration options on the Kanban board (addin
 
 And finally, we’ve added a new capability that enables you to restore a deleted account. This has been a pain point for quite a few customers who have deleted accounts, only to realize later that they still need data from the account. With today's update, account owners can now restore a deleted account as long as it's within 90 days of when the account was deleted.
 
-1. Go to your profile page by selecting your identity on the top right corner.
-2. Click **Restore** on the deleted account.
+1.  Go to your profile page by selecting your identity on the top right corner.
+2.  Click **Restore** on the deleted account.
 
-  That’s it for this sprint. We’ll be back in three weeks with more goodness. If you have questions, feel free to reach out on [Twitter](https://twitter.com/AzureDevOps). And if you’ve got ideas on what you’d like to see prioritize, head over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to either add an idea or add your support to an existing one.
+That’s it for this sprint. We’ll be back in three weeks with more goodness. If you have questions, feel free to reach out on [Twitter](https://twitter.com/AzureDevOps). And if you’ve got ideas on what you’d like to see prioritize, head over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to either add an idea or add your support to an existing one.
 
 Thanks,
 

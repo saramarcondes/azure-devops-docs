@@ -16,8 +16,6 @@ ms.date: 08/04/2016
 
 [!INCLUDE [API_version](../_data/version.md)]
 
-
-
 You can create [team rooms](./rooms.md) where [users](./users.md) can post [messages](./messages.md) to one another.
 
 ![Team room resources](./media/team-room-resources.png)
@@ -38,10 +36,9 @@ Get the [team rooms](./rooms.md) in a VSTS organization.
 
 ### Join a room
 
-1. Get the ID of the user.
-2. [Add the authenticated user](./users.md#joinaroom) to the room.
+1.  Get the ID of the user.
+2.  [Add the authenticated user](./users.md#joinaroom) to the room.
 
 ### Post a message to the room
 
 [Create a message](./messages.md#createamessage) in the team room.
-

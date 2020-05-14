@@ -16,16 +16,17 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]
 
 ## Can I receive emails in plain text?
+
 No. Plain text was supported in earlier versions of Azure DevOps and TFS, but all emails are now HTML formatted.
 
 ## How can I avoid receiving any notifications for activity in an organization?
 
-Because of custom subscriptions, there's no way to completely avoid receiving any notifications. However, you can do the following  actions to minimize the amount you receive:
+Because of custom subscriptions, there's no way to completely avoid receiving any notifications. However, you can do the following actions to minimize the amount you receive:
 
-- Unsubscribe from all default and admin-created team and group subscriptions
-- Disable or remove all custom subscriptions
+* Unsubscribe from all default and admin-created team and group subscriptions
+* Disable or remove all custom subscriptions
 
-## Why do some emails have multiple recipients on the To line? 
+## Why do some emails have multiple recipients on the To line?
 
 A default or team or group subscription can have multiple recipients, depending on how it's configured. When all users have permission to the resource related to the event, they get combined in one email.
 
@@ -33,6 +34,6 @@ Previously, each recipient received an individually addressed email, which could
 
 ## Related articles
 
-- [About notifications](about-notifications.md)
-- [Manage personal notifications](manage-team-notifications.md)
-- [Unsubscribe from a notification](unsubscribe-default-notification.md)
+* [About notifications](about-notifications.md)
+* [Manage personal notifications](manage-team-notifications.md)
+* [Unsubscribe from a notification](unsubscribe-default-notification.md)

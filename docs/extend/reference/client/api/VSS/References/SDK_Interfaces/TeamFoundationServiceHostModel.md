@@ -15,8 +15,7 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Data contract to represent a given team foundation service host (organization, collection, deployment) 
+Data contract to represent a given team foundation service host (organization, collection, deployment)
 
 ### Members
 
@@ -29,4 +28,3 @@ Data contract to represent a given team foundation service host (organization, c
 * `relVDir`: string. Path of the service host, relative to the root virtual directory (e.g. DefaultCollection)
 
 * `vDir`: string. Path of the service host relative to the web application root (e.g. /tfs/DefaultCollection)
-

@@ -16,21 +16,22 @@ ms.date: 11/19/2018
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
-You use planning, ranking, and priority fields to specify which work the team should complete first.  By ranking and prioritizing work items, all team members gain an understanding of the relative importance of the work that they must accomplish.  
+You use planning, ranking, and priority fields to specify which work the team should complete first. By ranking and prioritizing work items, all team members gain an understanding of the relative importance of the work that they must accomplish.
 
 You rank and prioritize work items when you [Create your backlog](../backlogs/create-your-backlog.md).
 
-## Supported operators and macros 
+## Supported operators and macros
 
 Query clauses that specify a string or integer field can use the operators listed below.
-- = , <> , > , < , >= , <=  
-- =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field]  
-- In, Not In  
-- Was Ever  
 
-## Pick list queries 
+* = , <> , > , < , >= , <=
+* =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field]
+* In, Not In
+* Was Ever
 
-Most of the planning fields described in the next section are either an integer or string field. For example queries of numeric or rich-text fields, see [Query by numeric fields](query-numeric.md) and [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md).    
+## Pick list queries
+
+Most of the planning fields described in the next section are either an integer or string field. For example queries of numeric or rich-text fields, see [Query by numeric fields](query-numeric.md) and [Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md).
 
 <table width="100%">
 <tbody valign="top">
@@ -40,7 +41,7 @@ Most of the planning fields described in the next section are either an integer 
 </tr>
 <tr>
 <td>List blocked tasks (Scrum)<br/>
-(Blocked field is type String) 
+(Blocked field is type String)
 </td>
 <td>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Work Item Type <em> In </em> Task</code><br/><code>And <em> Blocked </em> = <em> Yes</code><br/></td>
@@ -48,7 +49,7 @@ Most of the planning fields described in the next section are either an integer 
 <tr>
 <td>Priority 1 bugs
 <br/>
-(Priority field is type Integer) 
+(Priority field is type Integer)
 </td>
 <td>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Work Item Type </em> In <em> Bug</code><br/><code>And </em> Priority <em> = </em> 1</code><br/></td>
@@ -56,7 +57,7 @@ Most of the planning fields described in the next section are either an integer 
 <tr>
 <td>
 Features and stories that address Architectural areas<br/>
-(Value Area field is type String) 
+(Value Area field is type String)
 </td>
 <td>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Work Item Type <em> In </em> Feature,User Story</code><br/><code>And <em> Value Area </em> = _ Architectural</code><br/></td>
@@ -65,10 +66,9 @@ Features and stories that address Architectural areas<br/>
 </tbody>
 </table>  
 
-## Fields used to plan and prioritize work  
+## Fields used to plan and prioritize work
 
 The following table describes the fields that you can use to plan and prioritize work. Some fields are only valid for a specific process&mdash;[Basic](../get-started/plan-track-work.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [Capability Maturity Model Integration (CMMI)](../work-items/guidance/cmmi-process.md).
-
 
 <table width="100%">
 <thead>
@@ -101,7 +101,7 @@ The following table describes the fields that you can use to plan and prioritize
 </tr>
 <tr>
     <td><p>Escalate</p></td>
-    <td><p>Indicates whether or not the issue is affecting the critical path of the project plan. You can specify <strong>Yes</strong> or <strong>No</strong>.</p> 
+    <td><p>Indicates whether or not the issue is affecting the critical path of the project plan. You can specify <strong>Yes</strong> or <strong>No</strong>.</p>
 <p>Reference name=Microsoft.VSTS.CMMI.Escalate, Data type=String</p></td>
     <td><p>Issue (CMMI)</p></td>
 </tr>
@@ -111,7 +111,7 @@ The following table describes the fields that you can use to plan and prioritize
 <ul style="list-style-type:none">
 <li><p><strong>1</strong>: Product cannot ship without the successful resolution of the work item, and it should be addressed as soon as possible.</p></li>
 <li><p><strong>2</strong>: Product cannot ship without the successful resolution of the work item, but it does not need to be addressed immediately.</p></li>
-<li><p><strong>3</strong>: Resolution of the work item is optional based on resources, time, and risk.</p></li></ul> 
+<li><p><strong>3</strong>: Resolution of the work item is optional based on resources, time, and risk.</p></li></ul>
 <p>Reference name=Microsoft.VSTS.Common.Priority, Data type=Integer</p>  </td>
     <td><p>Bug, Change Request, Epic, Feature, Impediment, Issue, Product backlog item, Requirement, Risk, Shared Step, Task, Test Case, User Story</p></td>
 </tr>
@@ -123,13 +123,13 @@ The following table describes the fields that you can use to plan and prioritize
 </tr>
 <tr>
     <td><p>Severity  <sup>1</sup></p></td>
-    <td><p>A subjective rating of the impact of a bug on the project. You can specify the following values:</p><ul style="list-style-type:none"><li><p><strong>1 - Critical</strong></p></li><li><p><strong>2 - High</strong></p></li><li><p><strong>3 - Medium</strong></p></li><li><p><strong>4 - Low</strong></p></li></ul> 
+    <td><p>A subjective rating of the impact of a bug on the project. You can specify the following values:</p><ul style="list-style-type:none"><li><p><strong>1 - Critical</strong></p></li><li><p><strong>2 - High</strong></p></li><li><p><strong>3 - Medium</strong></p></li><li><p><strong>4 - Low</strong></p></li></ul>
 <p>Reference name=Microsoft.VSTS.Common.Severity, Data type=String</p>  </td>
     <td>Bug, Issue (CMMI), Risk (CMMI)</td>
 </tr>
 <tr>
     <td><p>Stack Rank <sup>2</sup></p></td>
-    <td><p>A number, usually assigned by a background process, used to track the list order of items on a backlog or board in the web portal.</p> 
+    <td><p>A number, usually assigned by a background process, used to track the list order of items on a backlog or board in the web portal.</p>
 <p>Reference name=Microsoft.VSTS.Common.StackRank, Data type=Double</p></td>
     <td><p>Bug, Epic, Feature, Requirement (CMMI), Risk (CMMI), Task, User Story (Agile) </p>
 </td>
@@ -156,17 +156,16 @@ The following table describes the fields that you can use to plan and prioritize
 </tbody>
 </table>
 
-#### Notes:  
+#### Notes:
 
-1.  To change the menu selection, see [Add and manage fields (Inherited process)](../../organizations/settings/work/customize-process-field.md) or [Add or modify a field, customize a picklist (On-premises XML process)](../../reference/add-modify-field.md).  
-1. The sequence of items on a product backlog page is determined according to where you have added or dragged the items. As you drag items, a background process updates either the Backlog Priority (Scrum) or Stack Rank (Agile, Basic, CMMI) field. These fields determine the order in which backlog items appear on a backlog page. They are assigned to `type="Order"` in the ProcessConfiguration file.  
+1.  To change the menu selection, see [Add and manage fields (Inherited process)](../../organizations/settings/work/customize-process-field.md) or [Add or modify a field, customize a picklist (On-premises XML process)](../../reference/add-modify-field.md).
+1.  The sequence of items on a product backlog page is determined according to where you have added or dragged the items. As you drag items, a background process updates either the Backlog Priority (Scrum) or Stack Rank (Agile, Basic, CMMI) field. These fields determine the order in which backlog items appear on a backlog page. They are assigned to `type="Order"` in the ProcessConfiguration file.
 
+## Related articles
 
-## Related articles 
-
-- [Query by a numeric field](query-numeric.md)   
-- [Work item field index](../work-items/guidance/work-item-field.md)  
-- [Work item fields and attributes](../work-items/work-item-fields.md).  
+* [Query by a numeric field](query-numeric.md)
+* [Work item field index](../work-items/guidance/work-item-field.md)
+* [Work item fields and attributes](../work-items/work-item-fields.md).
 
 ### More on Backlog Priority or Stack Rank fields
 
@@ -175,7 +174,7 @@ The Backlog Priority and Stack Rank fields don't appear on the work item forms. 
 ::: moniker range="azure-devops"  
 To add the field to the form, add the Stack Rank field to a work item type ([for the custom process that your project references](../../organizations/settings/work/customize-process-form.md)).
 
-::: moniker-end  
+::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
 To add the field to the form, [modify the WIT XML definition to add the following control element](../../reference/add-modify-wit.md):
@@ -190,4 +189,4 @@ or, for Scrum
 <Control FieldName="Microsoft.VSTS.Common.BacklogPriority" Type="FieldControl" Label="Stack Rank" LabelPosition="Left" />
 ```
 
-::: moniker-end  
+::: moniker-end

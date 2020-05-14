@@ -12,13 +12,13 @@ monikerRange: '>= tfs-2015'
 ms.date: 10/23/2019
 ---
 
-# Dashboards, reports, & widgets quick reference 
+# Dashboards, reports, & widgets quick reference
 
-[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)] 
+[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)]
 
-Use this index to quickly access information on tasks for configuring or accessing dashboards, charts, reports, and widgets.  
+Use this index to quickly access information on tasks for configuring or accessing dashboards, charts, reports, and widgets.
 
-[!INCLUDE [temp](../../includes/version-selector-minimize.md)] 
+[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
 
 ## Tasks
 
@@ -27,7 +27,7 @@ Use this index to quickly access information on tasks for configuring or accessi
 <table valign="top">
 <tbody valign="top">
 <tr>
-<td width="50%"> 
+<td width="50%">
 <strong>Dashboards</strong>
 <ul>
 <li><a href="dashboards.md" data-raw-source="[Add a dashboard](dashboards.md)">Add a dashboard</a></li>
@@ -44,16 +44,16 @@ Use this index to quickly access information on tasks for configuring or accessi
 <li><a href="dashboards.md" data-raw-source="[Enable auto-refresh](dashboards.md)">Enable auto-refresh</a></li>
 <li><a href="dashboards.md" data-raw-source="[Favorite a dashboard](dashboards.md)">Favorite a dashboard</a></li>
 <li><a href="dashboards.md" data-raw-source="[Filter a dashboard](dashboards.md)">Filter a dashboard</a></li>
-<br/> 
+<br/>
 <li><a href="add-widget-to-dashboard.md#move-delete" data-raw-source="[Move widgets on a dashboard](add-widget-to-dashboard.md#move-delete)">Move widgets on a dashboard</a></li>
-<li><a href="dashboards.md" data-raw-source="[Open a dashboard](dashboards.md)">Open a dashboard</a></li> 
+<li><a href="dashboards.md" data-raw-source="[Open a dashboard](dashboards.md)">Open a dashboard</a></li>
 <li><a href="dashboards.md" data-raw-source="[Rename a dashboard](dashboards.md)">Rename a dashboard</a></li>
 <li><a href="dashboards.md" data-raw-source="[Refresh a dashboard](dashboards.md)">Refresh a dashboard</a></li>
-<li><a href="dashboard-permissions.md" data-raw-source="[Set dashboard permissions](dashboard-permissions.md)">Set dashboard permissions</a></li> 
+<li><a href="dashboard-permissions.md" data-raw-source="[Set dashboard permissions](dashboard-permissions.md)">Set dashboard permissions</a></li>
 <li><a href="dashboards.md" data-raw-source="[View a dashboard](dashboards.md)">View a dashboard</a></li>
 </ul>
 </td>
-<td width="50%"> 
+<td width="50%">
 <strong>Analytics</strong>
 <ul>
 <li><a href="../powerbi/analytics-default-views.md">Analytics views</a></li>
@@ -72,12 +72,12 @@ Use this index to quickly access information on tasks for configuring or accessi
 </ul>
 <strong>Widgets</strong>
 <ul>
-<li><a href="add-widget-to-dashboard.md#configure" data-raw-source="[Configure a widget](add-widget-to-dashboard.md#configure)">Configure a widget</a> 
-<li><a href="configure-burndown-burnup-widgets.md" data-raw-source="[Configure the Burndown/Burnup widget](configure-burndown-burnup-widgets.md)">Configure the Burndown/Burnup widget</a> 
-<li><a href="configure-sprint-burndown.md">Configure Sprint Burndown widget</a> 
-<li><a href="cumulative-flow.md" data-raw-source="[Configure the Cumulative Flow widget](cumulative-flow.md)">Configure the Cumulative Flow widget</a> 
-<li><a href="cycle-time-and-lead-time.md" data-raw-source="[Configure the Lead/Cycle Time widget](cycle-time-and-lead-time.md)">Configure the Lead/Cycle Time widget</a> 
-<li><a href="team-velocity.md" data-raw-source="[Configure the Velocity widget](team-velocity.md)">Configure the Velocity widget</a> 
+<li><a href="add-widget-to-dashboard.md#configure" data-raw-source="[Configure a widget](add-widget-to-dashboard.md#configure)">Configure a widget</a>
+<li><a href="configure-burndown-burnup-widgets.md" data-raw-source="[Configure the Burndown/Burnup widget](configure-burndown-burnup-widgets.md)">Configure the Burndown/Burnup widget</a>
+<li><a href="configure-sprint-burndown.md">Configure Sprint Burndown widget</a>
+<li><a href="cumulative-flow.md" data-raw-source="[Configure the Cumulative Flow widget](cumulative-flow.md)">Configure the Cumulative Flow widget</a>
+<li><a href="cycle-time-and-lead-time.md" data-raw-source="[Configure the Lead/Cycle Time widget](cycle-time-and-lead-time.md)">Configure the Lead/Cycle Time widget</a>
+<li><a href="team-velocity.md" data-raw-source="[Configure the Velocity widget](team-velocity.md)">Configure the Velocity widget</a>
 <li><a href="configure-test-results-trend.md" data-raw-source="[Configure the Test Results widget](configure-test-results-trend.md)">Configure the Test Results widget</a></li>
 <li><a href="add-widget-to-dashboard.md" data-raw-source="[Resize a widget](add-widget-to-dashboard.md)">Resize a widget</a></li>
 </ul>
@@ -90,13 +90,12 @@ Use this index to quickly access information on tasks for configuring or accessi
 
 ::: moniker-end
 
-
 ::: moniker range="azure-devops-2019"
 
 <table valign="top">
 <tbody valign="top">
 <tr>
-<td width="50%"> 
+<td width="50%">
 <strong>Dashboards</strong>
 <ul>
 <li><a href="dashboards.md" data-raw-source="[Add a dashboard](dashboards.md)">Add a dashboard</a></li>
@@ -113,16 +112,16 @@ Use this index to quickly access information on tasks for configuring or accessi
 <li><a href="dashboards.md" data-raw-source="[Enable auto-refresh](dashboards.md)">Enable auto-refresh</a></li>
 <li><a href="dashboards.md" data-raw-source="[Favorite a dashboard](dashboards.md)">Favorite a dashboard</a></li>
 <li><a href="dashboards.md" data-raw-source="[Filter a dashboard](dashboards.md)">Filter a dashboard</a></li>
-<br/> 
+<br/>
 <li><a href="add-widget-to-dashboard.md#move-delete" data-raw-source="[Move widgets on a dashboard](add-widget-to-dashboard.md#move-delete)">Move widgets on a dashboard</a></li>
-<li><a href="dashboards.md" data-raw-source="[Open a dashboard](dashboards.md)">Open a dashboard</a></li><br/> 
+<li><a href="dashboards.md" data-raw-source="[Open a dashboard](dashboards.md)">Open a dashboard</a></li><br/>
 <li><a href="dashboards.md" data-raw-source="[Rename a dashboard](dashboards.md)">Rename a dashboard</a></li>
 <li><a href="dashboards.md" data-raw-source="[Refresh a dashboard](dashboards.md)">Refresh a dashboard</a></li>
-<li><a href="dashboard-permissions.md" data-raw-source="[Set dashboard permissions](dashboard-permissions.md)">Set dashboard permissions</a></li> 
+<li><a href="dashboard-permissions.md" data-raw-source="[Set dashboard permissions](dashboard-permissions.md)">Set dashboard permissions</a></li>
 <li><a href="dashboards.md" data-raw-source="[View a dashboard](dashboards.md)">View a dashboard</a></li>
 </ul>
 </td>
-<td width="50%"> 
+<td width="50%">
 <strong>Analytics</strong>
 <ul>
 <li><a href="../powerbi/analytics-default-views.md">Analytics views</a></li>
@@ -144,11 +143,11 @@ Use this index to quickly access information on tasks for configuring or accessi
 </ul>
 <strong>Widgets</strong>
 <ul>
-<li><a href="add-widget-to-dashboard.md#configure" data-raw-source="[Configure a widget](add-widget-to-dashboard.md#configure)">Configure a widget</a> 
-<li><a href="configure-burndown-burnup-widgets.md" data-raw-source="[Configure the Burndown/Burnup widget](configure-burndown-burnup-widgets.md)">Configure the Burndown/Burnup widget</a> 
-<li><a href="cumulative-flow.md" data-raw-source="[Configure the Cumulative Flow widget](cumulative-flow.md)">Configure the Cumulative Flow widget</a> 
-<li><a href="cycle-time-and-lead-time.md" data-raw-source="[Configure the Lead/Cycle Time widget](cycle-time-and-lead-time.md)">Configure the Lead/Cycle Time widget</a> 
-<li><a href="team-velocity.md" data-raw-source="[Configure the Velocity widget](team-velocity.md)">Configure the Velocity widget</a> 
+<li><a href="add-widget-to-dashboard.md#configure" data-raw-source="[Configure a widget](add-widget-to-dashboard.md#configure)">Configure a widget</a>
+<li><a href="configure-burndown-burnup-widgets.md" data-raw-source="[Configure the Burndown/Burnup widget](configure-burndown-burnup-widgets.md)">Configure the Burndown/Burnup widget</a>
+<li><a href="cumulative-flow.md" data-raw-source="[Configure the Cumulative Flow widget](cumulative-flow.md)">Configure the Cumulative Flow widget</a>
+<li><a href="cycle-time-and-lead-time.md" data-raw-source="[Configure the Lead/Cycle Time widget](cycle-time-and-lead-time.md)">Configure the Lead/Cycle Time widget</a>
+<li><a href="team-velocity.md" data-raw-source="[Configure the Velocity widget](team-velocity.md)">Configure the Velocity widget</a>
 <li><a href="configure-test-results-trend.md" data-raw-source="[Configure the Test Results widget](configure-test-results-trend.md)">Configure the Test Results widget</a></li>
 <li><a href="add-widget-to-dashboard.md" data-raw-source="[Resize a widget](add-widget-to-dashboard.md)">Resize a widget</a></li>
 </ul>
@@ -166,21 +165,21 @@ Use this index to quickly access information on tasks for configuring or accessi
 <table valign="top">
 <tbody valign="top">
 <tr>
-<td width="50%"> 
+<td width="50%">
 <strong>Dashboards</strong>
 <ul>
 <li><a href="dashboards.md" data-raw-source="[Add a dashboard](dashboards.md)">Add a dashboard</a></li>
 <li><a href="add-charts-to-dashboard.md" data-raw-source="[Add a built-in chart to a dashboard](add-charts-to-dashboard.md)">Add a built-in chart to a dashboard</a></li>
 <li><a href="add-widget-to-dashboard.md" data-raw-source="[Add a widget to a dashboard](add-widget-to-dashboard.md)">Add a widget to a dashboard</a></li>
 <li><a href="add-markdown-to-dashboard.md" data-raw-source="[Add Markdown to a dashboard](add-markdown-to-dashboard.md)">Add Markdown to a dashboard</a></li>
-<li><a href="add-widget-to-dashboard.md" data-raw-source="[Copy a widget to a dashboard](add-widget-to-dashboard.md)">Copy a widget to a dashboard</a>	
+<li><a href="add-widget-to-dashboard.md" data-raw-source="[Copy a widget to a dashboard](add-widget-to-dashboard.md)">Copy a widget to a dashboard</a>
 <li><a href="dashboards.md" data-raw-source="[Delete a dashboard](dashboards.md)">Delete a dashboard</a></li>
 <li><a href="add-widget-to-dashboard.md#move-delete" data-raw-source="[Delete a widget from a dashboard](add-widget-to-dashboard.md#move-delete)">Delete a widget from a dashboard</a> </li>
 <li><a href="dashboards.md" data-raw-source="[Edit a dashboard](dashboards.md)">Edit a dashboard</a></li>
 <li><a href="dashboards.md" data-raw-source="[Enable auto-refresh](dashboards.md)">Enable auto-refresh</a></li>
-<br/> 
+<br/>
 <li><a href="dashboards.md" data-raw-source="[Favorite a dashboard](dashboards.md)">Favorite a dashboard</a></li>
-<li><a href="dashboards.md" data-raw-source="[Filter dashboard directory](dashboards.md)">Filter dashboard directory</a></li> 
+<li><a href="dashboards.md" data-raw-source="[Filter dashboard directory](dashboards.md)">Filter dashboard directory</a></li>
 <li><a href="add-widget-to-dashboard.md#move-delete" data-raw-source="[Move widgets on a dashboard](add-widget-to-dashboard.md#move-delete)">Move widgets on a dashboard</a></li>
 <li><a href="dashboards.md" data-raw-source="[Open a dashboard](dashboards.md)">Open a dashboard</a></li>
 <li><a href="dashboards.md" data-raw-source="[Rename a dashboard](dashboards.md)">Rename a dashboard</a></li>
@@ -202,7 +201,7 @@ Use this index to quickly access information on tasks for configuring or accessi
 </ul>
 <strong>Widgets</strong>
 <ul>
-<li><a href="add-widget-to-dashboard.md#configure" data-raw-source="[Configure a widget](add-widget-to-dashboard.md#configure)">Configure a widget</a> 
+<li><a href="add-widget-to-dashboard.md#configure" data-raw-source="[Configure a widget](add-widget-to-dashboard.md#configure)">Configure a widget</a>
 <li><a href="add-widget-to-dashboard.md" data-raw-source="[Resize a widget](add-widget-to-dashboard.md)">Resize a widget</a></li>
 </ul>
 </td>
@@ -214,19 +213,17 @@ Use this index to quickly access information on tasks for configuring or accessi
 
 ::: moniker-end
 
-
 ## In-context reports
 
 ::: moniker range="azure-devops"
 
-In context reports appear on the **Analytics** tab of these specific service pages: **Boards>Boards**, **Boards>Backlogs**, **Boards>Sprints**, and **Pipelines>Builds**. 
-
+In context reports appear on the **Analytics** tab of these specific service pages: **Boards>Boards**, **Boards>Backlogs**, **Boards>Sprints**, and **Pipelines>Builds**.
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-In-context reports appear on specific service pages, such as **Boards>Boards**, **Boards>Backlogs**, **Boards>Sprints**,and **Pipelines>Builds>Analytics**. These reports derive data from the Analytics service. 
+In-context reports appear on specific service pages, such as **Boards>Boards**, **Boards>Backlogs**, **Boards>Sprints**,and **Pipelines>Builds>Analytics**. These reports derive data from the Analytics service.
 
 ::: moniker-end
 
@@ -248,13 +245,13 @@ In-context reports appear on specific service pages, such as **Boards>Boards**, 
 <td width="50%">
 <strong>Pipelines</strong>
 <ul>
-<li><a href="../../pipelines/test/review-continuous-test-results-after-build.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json" data-raw-source="[Build test results](../../pipelines/test/review-continuous-test-results-after-build.md)">Build test results</a></li> 
-<li><a href="../../pipelines/test/review-code-coverage-results.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json" data-raw-source="[Code coverage](../../pipelines/test/review-code-coverage-results.md)">Code coverage</a></li> 
-<li><a href="../../pipelines/test/review-continuous-test-results-after-build.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json" data-raw-source="[Release test results](../../pipelines/test/review-continuous-test-results-after-build.md)">Release test results</a></li> 
-<li><a href="../../pipelines/test/requirements-traceability.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json" data-raw-source="[Trace test requirements](../../pipelines/test/requirements-traceability.md)">Trace test requirements</a></li> 
-<li><a href="../../pipelines/test/test-analytics.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json" data-raw-source="[Test analytics](../../pipelines/test/test-analytics.md)">Test analytics</a></li> 
-<li><a href="../../pipelines/test/test-analytics.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json" data-raw-source="[Test failures](../../pipelines/test/test-analytics.md)">Test failures</a></li> 
-<li><a href="../../pipelines/test/test-impact-analysis.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json" data-raw-source="[Test impact analysis](../../pipelines/test/test-impact-analysis.md)">Test impact analysis</a></li> 
+<li><a href="../../pipelines/test/review-continuous-test-results-after-build.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json" data-raw-source="[Build test results](../../pipelines/test/review-continuous-test-results-after-build.md)">Build test results</a></li>
+<li><a href="../../pipelines/test/review-code-coverage-results.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json" data-raw-source="[Code coverage](../../pipelines/test/review-code-coverage-results.md)">Code coverage</a></li>
+<li><a href="../../pipelines/test/review-continuous-test-results-after-build.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json" data-raw-source="[Release test results](../../pipelines/test/review-continuous-test-results-after-build.md)">Release test results</a></li>
+<li><a href="../../pipelines/test/requirements-traceability.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json" data-raw-source="[Trace test requirements](../../pipelines/test/requirements-traceability.md)">Trace test requirements</a></li>
+<li><a href="../../pipelines/test/test-analytics.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json" data-raw-source="[Test analytics](../../pipelines/test/test-analytics.md)">Test analytics</a></li>
+<li><a href="../../pipelines/test/test-analytics.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json" data-raw-source="[Test failures](../../pipelines/test/test-analytics.md)">Test failures</a></li>
+<li><a href="../../pipelines/test/test-impact-analysis.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json" data-raw-source="[Test impact analysis](../../pipelines/test/test-impact-analysis.md)">Test impact analysis</a></li>
 </ul>
 </td>
 </tr>
@@ -267,12 +264,12 @@ In-context reports appear on specific service pages, such as **Boards>Boards**, 
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
-In-context reports appear on specific service pages, such as **Work>Backlog**, **Work>Backlogs** and **Build and Release>Builds**. 
+In-context reports appear on specific service pages, such as **Work>Backlog**, **Work>Backlogs** and **Build and Release>Builds**.
 
 <table valign="top">
 <tbody valign="top">
 <tr>
-<td width="50%"> 
+<td width="50%">
 <strong>Work</strong>
 <ul>
 <li><a href="cumulative-flow.md#configure-built-in-cfd" data-raw-source="[Cumulative Flow Diagram (CFD)](cumulative-flow.md#configure-built-in-cfd)">Cumulative Flow Diagram (CFD)</a></li>
@@ -282,12 +279,12 @@ In-context reports appear on specific service pages, such as **Work>Backlog**, *
 <td width="50%">
 <strong>Build &amp; Release</strong>
 <ul>
-<li><a href="../../pipelines/test/review-continuous-test-results-after-build.md">Build test results</a></li> 
-<li><a href="../../pipelines/test/review-code-coverage-results.md">Code coverage</a></li> 
-<li><a href="../../pipelines/test/review-continuous-test-results-after-build.md">Release test results</a></li> 
-<li><a href="../../pipelines/test/requirements-traceability.md">Trace test requirements</a></li> 
-<li><a href="../../pipelines/test/test-analytics.md">Test failures</a></li> 
-<li><a href="../../pipelines/test/test-impact-analysis.md">Test impact analysis</a></li> 
+<li><a href="../../pipelines/test/review-continuous-test-results-after-build.md">Build test results</a></li>
+<li><a href="../../pipelines/test/review-code-coverage-results.md">Code coverage</a></li>
+<li><a href="../../pipelines/test/review-continuous-test-results-after-build.md">Release test results</a></li>
+<li><a href="../../pipelines/test/requirements-traceability.md">Trace test requirements</a></li>
+<li><a href="../../pipelines/test/test-analytics.md">Test failures</a></li>
+<li><a href="../../pipelines/test/test-impact-analysis.md">Test impact analysis</a></li>
 </ul>
 </td>
 </tr>
@@ -298,36 +295,36 @@ In-context reports appear on specific service pages, such as **Work>Backlog**, *
 
 ::: moniker-end
 
-
 ::: moniker range=">= tfs-2015"
 
-## Widgets 
+## Widgets
 
-Widgets provide a quick way to quickly add charts to dashboards. Many widgets are configurable or are scoped to a team or to the current user identity. For a description of each widget, see the [Widget catalog](widget-catalog.md). 
+Widgets provide a quick way to quickly add charts to dashboards. Many widgets are configurable or are scoped to a team or to the current user identity. For a description of each widget, see the [Widget catalog](widget-catalog.md).
 
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
-- **Analytics**: indicates data is derived from [Analytics data](../powerbi/what-is-analytics.md)  
-- **Project**: indicates you can select the project and team when configuring the widget
-- **Team**: Indicates a widget that is scoped to a team  
-- **User**: Indicates you widget that is scoped to a user identity 
-::: moniker-end
 
+* **Analytics**: indicates data is derived from [Analytics data](../powerbi/what-is-analytics.md)
+* **Project**: indicates you can select the project and team when configuring the widget
+* **Team**: Indicates a widget that is scoped to a team
+* **User**: Indicates you widget that is scoped to a user identity
+  ::: moniker-end
 
 ::: moniker range=">=tfs-2015 <= tfs-2018"
-- **Team**: Indicates a widget that is scoped to a team  
-- **User**: Indicates you widget that is scoped to a user identity 
-::: moniker-end
+
+* **Team**: Indicates a widget that is scoped to a team
+* **User**: Indicates you widget that is scoped to a user identity
+  ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
-<!--- capture which widgets can support cross project/cross-team data --> 
+<!--- capture which widgets can support cross project/cross-team data -->
 
 <table valign="top">
 <tbody valign="top">
 <tr>
-<td width="44%"> 
+<td width="44%">
 <strong>Boards</strong>
 <ul>
 <li><a href="widget-catalog.md#assigned-to-me-widget" data-raw-source="[Assigned to me](widget-catalog.md#assigned-to-me-widget)">Assigned to me</a> (User)</li>
@@ -389,13 +386,12 @@ Widgets provide a quick way to quickly add charts to dashboards. Many widgets ar
 
 ::: moniker-end
 
-
 ::: moniker range="tfs-2018"
 
 <table valign="top">
 <tbody valign="top">
 <tr>
-<td width="35%"> 
+<td width="35%">
 <strong>Work</strong>
 <ul>
 <li><a href="widget-catalog.md#assigned-to-me-widget" data-raw-source="[Assigned to me](widget-catalog.md#assigned-to-me-widget)">Assigned to me</a></li>
@@ -448,14 +444,12 @@ Widgets provide a quick way to quickly add charts to dashboards. Many widgets ar
 
 ::: moniker-end
 
-
-
 ::: moniker range="tfs-2017"
 
 <table valign="top">
 <tbody valign="top">
 <tr>
-<td width="35%"> 
+<td width="35%">
 <strong>Work</strong>
 <ul>
 <li><a href="widget-catalog.md#assigned-to-me-widget" data-raw-source="[Assigned to me](widget-catalog.md#assigned-to-me-widget)">Assigned to me</a> (User)</li>
@@ -505,13 +499,12 @@ Widgets provide a quick way to quickly add charts to dashboards. Many widgets ar
 
 ::: moniker-end
 
-
 ::: moniker range="tfs-2015"
 
 <table valign="top">
 <tbody valign="top">
 <tr>
-<td width="33%"> 
+<td width="33%">
 <strong>Work</strong>
 <ul>
 <li>Assigned to me (User)</li>
@@ -553,4 +546,3 @@ Widgets provide a quick way to quickly add charts to dashboards. Many widgets ar
 </table>
 
 ::: moniker-end
-

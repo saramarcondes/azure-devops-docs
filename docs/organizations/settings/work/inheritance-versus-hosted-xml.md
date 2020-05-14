@@ -34,7 +34,7 @@ If you are currently on Hosted XML and looking to move your process to Inherited
 | for / not rules                      | Not supported                                                                                                  | Not supported                 |
 | Disable system rules                 | Not supported                                                                                                  | Supported (not recommended)   |
 | Customize layout                     | Supported                                                                                                      | Supported                     |
-| Portfolio backlog levels              | Supported                                                                                                      | Supported                     |
+| Portfolio backlog levels             | Supported                                                                                                      | Supported                     |
 | Move projects to a different process | Supported                                                                                                      | Not supported                 |
 | Clone process                        | Supported                                                                                                      | Not supported                 |
 | Disable process                      | Supported                                                                                                      | Supported                     |
@@ -43,9 +43,9 @@ If you are currently on Hosted XML and looking to move your process to Inherited
 
 ## Related articles
 
-- [About process customization and inherited processes](./inheritance-process-model.md)
+* [About process customization and inherited processes](./inheritance-process-model.md)
 
 ## Next steps
 
-- [Clone a Hosted process to an inheritance process](./upgrade-hosted-to-inherited.md)
-- [Change a projects from Hosted XML to an inherited process](./change-process-from-hosted-to-inherited.md)
+* [Clone a Hosted process to an inheritance process](./upgrade-hosted-to-inherited.md)
+* [Change a projects from Hosted XML to an inherited process](./change-process-from-hosted-to-inherited.md)

@@ -16,7 +16,7 @@ ms.date: 08/04/2016
 
 [!INCLUDE [API_version](../_data/version3-preview1.md)]
 
-**On-premises use** : An earlier, and slightly different version of the Release Management API is available in Team Foundation Server 2015 Update 2. To use this earlier version, you must specify an API version of **2.2-preview.1**.   
+**On-premises use** : An earlier, and slightly different version of the Release Management API is available in Team Foundation Server 2015 Update 2. To use this earlier version, you must specify an API version of **2.2-preview.1**.
 
 ## Get a list of release definitions
 
@@ -24,14 +24,16 @@ ms.date: 08/04/2016
 GET https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/release/definitions?api-version={version}[&$expand={enum}]
 ```
 
-| Parameter     | Type   | Notes
-|:--------------|:-------|:------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| account       | string | Your VSTS organization.
-| project       | string | [Project](../tfs/projects.md) ID or name.
+| account | string | Your VSTS organization.
+| project | string | [Project](../tfs/projects.md) ID or name.
 | Query
-| api-version   | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| $expand		| enum {<br/>&nbsp;&nbsp;environments,<br/>&nbsp;&nbsp;artifacts,<br/>&nbsp;&nbsp;none<br/>} | The property that should be expanded in the list of Release Definition.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| $expand | enum {<br/>&nbsp;&nbsp;environments,<br/>&nbsp;&nbsp;artifacts,<br/>&nbsp;&nbsp;none<br/>} | The property that should be expanded in the list of Release Definition.
 
 #### Sample request
 
@@ -53,16 +55,20 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "createdOn": "2016-04-11T09:59:37.937Z",
       "modifiedBy": {
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "modifiedOn": "2016-04-11T10:28:00.643Z",
       "releaseNameFormat": "Release-$(rev:r)",
@@ -78,16 +84,20 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "createdOn": "2016-04-11T10:00:12.077Z",
       "modifiedBy": {
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "modifiedOn": "2016-04-11T10:34:20.31Z",
       "releaseNameFormat": "Release-$(rev:r)",
@@ -99,8 +109,8 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
 }
 ```
 
-
 ### With environments details expanded
+
 #### Sample request
 
 ```
@@ -121,16 +131,20 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "createdOn": "2016-04-11T09:59:37.937Z",
       "modifiedBy": {
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "modifiedOn": "2016-04-11T10:28:00.643Z",
       "environments": [
@@ -163,16 +177,20 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "createdOn": "2016-04-11T10:00:12.077Z",
       "modifiedBy": {
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "modifiedOn": "2016-04-11T10:34:20.31Z",
       "environments": [
@@ -231,8 +249,8 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
 }
 ```
 
-
 ### With artifacts details expanded
+
 #### Sample request
 
 ```
@@ -253,16 +271,20 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "createdOn": "2016-04-11T09:59:37.937Z",
       "modifiedBy": {
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "modifiedOn": "2016-04-11T10:28:00.643Z",
       "artifacts": [
@@ -295,16 +317,20 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "createdOn": "2016-04-11T10:00:12.077Z",
       "modifiedBy": {
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "modifiedOn": "2016-04-11T10:34:20.31Z",
       "artifacts": [
@@ -333,21 +359,22 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
 }
 ```
 
-
 ## Get a release definition
 
 ```no-highlight
 GET https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/release/definitions/{definitionid}?api-version={version}
 ```
 
-| Parameter    | Type   | Notes
-|:-------------|:-------|:------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| account      | string | Your VSTS organization.
-| project      | string | [Project](../tfs/projects.md) ID or name.
-| definitionId | int    | ID of the release definition.
+| account | string | Your VSTS organization.
+| project | string | [Project](../tfs/projects.md) ID or name.
+| definitionId | int | ID of the release definition.
 | Query
-| api-version  | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
@@ -366,16 +393,20 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
     "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
     "displayName": "Chuck Reinhart",
     "uniqueName": "chuckreinhart@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
   },
   "createdOn": "2016-04-11T10:00:12.077Z",
   "modifiedBy": {
     "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
     "displayName": "Chuck Reinhart",
     "uniqueName": "chuckreinhart@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
   },
   "modifiedOn": "2016-04-11T10:34:20.31Z",
   "variables": {
@@ -392,8 +423,10 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "variables": {
         "webAppName": {
@@ -425,7 +458,8 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
               "WebSiteName": "$(webAppName)",
               "WebSiteLocation": "South Central US",
               "Slot": "",
-              "Package": "$(System.DefaultWorkingDirectory)/Fabrikam.CI/drop/Mvc4Bootstrap.zip",
+              "Package":
+                "$(System.DefaultWorkingDirectory)/Fabrikam.CI/drop/Mvc4Bootstrap.zip",
               "doNotDelete": "false",
               "AdditionalArguments": ""
             }
@@ -454,9 +488,7 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "skipArtifactsDownload": false,
         "timeoutInMinutes": 0
       },
-      "demands": [
-        "Agent.Version -gtVersion 1.87"
-      ],
+      "demands": ["Agent.Version -gtVersion 1.87"],
       "conditions": [
         {
           "name": "ReleaseStarted",
@@ -477,8 +509,10 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "variables": {
         "webAppName": {
@@ -510,7 +544,8 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
               "WebSiteName": "$(webAppName)",
               "WebSiteLocation": "South Central US",
               "Slot": "",
-              "Package": "$(System.DefaultWorkingDirectory)/Fabrikam.CI/drop/Mvc4Bootstrap.zip",
+              "Package":
+                "$(System.DefaultWorkingDirectory)/Fabrikam.CI/drop/Mvc4Bootstrap.zip",
               "doNotDelete": "false",
               "AdditionalArguments": ""
             }
@@ -539,9 +574,7 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "skipArtifactsDownload": false,
         "timeoutInMinutes": 0
       },
-      "demands": [
-        "Agent.Version -gtVersion 1.87"
-      ],
+      "demands": ["Agent.Version -gtVersion 1.87"],
       "conditions": [
         {
           "name": "ReleaseStarted",
@@ -562,8 +595,10 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "variables": {
         "webAppName": {
@@ -595,7 +630,8 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
               "WebSiteName": "$(webAppName)",
               "WebSiteLocation": "South Central US",
               "Slot": "",
-              "Package": "$(System.DefaultWorkingDirectory)/Fabrikam.CI/drop/Mvc4Bootstrap.zip",
+              "Package":
+                "$(System.DefaultWorkingDirectory)/Fabrikam.CI/drop/Mvc4Bootstrap.zip",
               "doNotDelete": "false",
               "AdditionalArguments": ""
             }
@@ -624,9 +660,7 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "skipArtifactsDownload": false,
         "timeoutInMinutes": 0
       },
-      "demands": [
-        "Agent.Version -gtVersion 1.87"
-      ],
+      "demands": ["Agent.Version -gtVersion 1.87"],
       "conditions": [
         {
           "name": "Dev",
@@ -675,26 +709,28 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
 }
 ```
 
-
 ## Create a release definition
 
 ```no-highlight
 POST https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/release/definitions?api-version={version}
 ```
 
-| Parameter    | Type   | Notes
-|:-------------|:-------|:------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| account      | string | Your VSTS organization.
-| project      | string | [Project](../tfs/projects.md) ID or name.
+| account | string | Your VSTS organization.
+| project | string | [Project](../tfs/projects.md) ID or name.
 | Query
-| api-version  | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
 ```
 POST https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/release/definitions?api-version=3.0-preview.1
 ```
+
 ```json
 {
   "name": "Fabrikam.CD",
@@ -738,16 +774,20 @@ POST https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/
     "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
     "displayName": "Chuck Reinhart",
     "uniqueName": "chuckreinhart@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
   },
   "createdOn": "2016-04-11T13:25:00.213Z",
   "modifiedBy": {
     "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
     "displayName": "Chuck Reinhart",
     "uniqueName": "chuckreinhart@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
   },
   "modifiedOn": "2016-04-11T13:25:00.213Z",
   "variables": {},
@@ -760,8 +800,10 @@ POST https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "variables": {},
       "preDeployApprovals": {
@@ -816,7 +858,6 @@ POST https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/
 }
 ```
 
-
 ## Update a release definition
 
 ```no-highlight
@@ -828,6 +869,7 @@ PUT https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/re
 ```
 PUT https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/release/definitions/28?api-version=3.0-preview.1
 ```
+
 ```json
 {
   "id": 28,
@@ -837,8 +879,10 @@ PUT https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
     "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
     "displayName": "Chuck Reinhart",
     "uniqueName": "chuckreinhart@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
   },
   "environments": [
     {
@@ -851,8 +895,10 @@ PUT https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "queueId": 2,
       "demands": [],
@@ -928,16 +974,20 @@ PUT https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
     "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
     "displayName": "Chuck Reinhart",
     "uniqueName": "chuckreinhart@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
   },
   "createdOn": "2016-04-11T13:25:00.213Z",
   "modifiedBy": {
     "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
     "displayName": "Chuck Reinhart",
     "uniqueName": "chuckreinhart@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
   },
   "modifiedOn": "2016-04-11T13:25:02.78Z",
   "variables": {},
@@ -950,8 +1000,10 @@ PUT https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "variables": {},
       "preDeployApprovals": {
@@ -989,9 +1041,7 @@ PUT https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "skipArtifactsDownload": false,
         "timeoutInMinutes": 0
       },
-      "demands": [
-        "Agent.Version -gtVersion 1.87"
-      ],
+      "demands": ["Agent.Version -gtVersion 1.87"],
       "conditions": [],
       "executionPolicy": {
         "concurrencyCount": 0,
@@ -1024,31 +1074,32 @@ PUT https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
 }
 ```
 
-
 ## Delete a release definition
 
 ```no-highlight
 DELETE https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/release/definitions/{definitionid}?api-version={version}
 ```
 
-| Parameter     | Type   | Notes
-|:--------------|:-------|:------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| account       | string | Your VSTS organization.
-| project       | string | [Project](../tfs/projects.md) ID or name.
-| definitionId  | int    | ID of the release definition.
+| account | string | Your VSTS organization.
+| project | string | [Project](../tfs/projects.md) ID or name.
+| definitionId | int | ID of the release definition.
 | Query
-| api-version   | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
 ```
 DELETE https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/release/definitions/28?api-version=3.0-preview.1
 ```
+
 ```json
 {}
 ```
-
 
 ## Get revision history for a release definition
 
@@ -1056,14 +1107,16 @@ DELETE https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b1836
 GET https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/release/definitions/{definitionid}/revisions?api-version={version}
 ```
 
-| Parameter     | Type   | Notes
-|:--------------|:-------|:------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| account       | string | Your VSTS organization.
-| project       | string | [Project](../tfs/projects.md) ID or name.
-| definitionId  | int    | ID of the release definition.
+| account | string | Your VSTS organization.
+| project | string | [Project](../tfs/projects.md) ID or name.
+| definitionId | int | ID of the release definition.
 | Query
-| api-version   | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
@@ -1082,13 +1135,16 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
       "revision": 1,
       "changedDate": "2016-04-11T13:25:00.213Z",
       "changeType": "add",
-      "definitionUrl": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/28/revisions/1",
+      "definitionUrl":
+        "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/28/revisions/1",
       "changedBy": {
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       }
     },
     {
@@ -1096,19 +1152,21 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
       "revision": 2,
       "changedDate": "2016-04-11T13:25:02.78Z",
       "changeType": "update",
-      "definitionUrl": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/28/revisions/2",
+      "definitionUrl":
+        "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/28/revisions/2",
       "changedBy": {
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       }
     }
   ]
 }
 ```
-
 
 ## Get a particular revision history
 
@@ -1116,15 +1174,17 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
 GET https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/release/definitions/{definitionid}/revisions/{revisionid}?api-version={version}
 ```
 
-| Parameter     | Type   | Notes
-|:--------------|:-------|:------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| account       | string | Your VSTS organization.
-| project       | string | [Project](../tfs/projects.md) ID or name.
-| definitionId  | int    | ID of the release definition.
-| revisionId  | int    | ID of the revision
+| account | string | Your VSTS organization.
+| project | string | [Project](../tfs/projects.md) ID or name.
+| definitionId | int | ID of the release definition.
+| revisionId | int | ID of the revision
 | Query
-| api-version   | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
@@ -1143,16 +1203,20 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
     "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
     "displayName": "Chuck Reinhart",
     "uniqueName": "chuckreinhart@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
   },
   "createdOn": "2016-04-11T13:25:00.213Z",
   "modifiedBy": {
     "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
     "displayName": "Chuck Reinhart",
     "uniqueName": "chuckreinhart@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
   },
   "modifiedOn": "2016-04-11T13:25:02.78Z",
   "variables": {},
@@ -1165,8 +1229,10 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "variables": {},
       "preDeployApprovals": {
@@ -1204,9 +1270,7 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "skipArtifactsDownload": false,
         "timeoutInMinutes": 0
       },
-      "demands": [
-        "Agent.Version -gtVersion 1.87"
-      ],
+      "demands": ["Agent.Version -gtVersion 1.87"],
       "conditions": [],
       "executionPolicy": {
         "concurrencyCount": 0,

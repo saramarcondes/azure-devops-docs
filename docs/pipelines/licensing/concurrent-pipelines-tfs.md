@@ -11,15 +11,13 @@ monikerRange: '>= tfs-2015 < azure-devops'
 
 # Parallel release jobs in Team Foundation Server
 
-
-
 **[Azure Pipelines](concurrent-jobs.md) | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
 This article describes the licensing model for Azure Pipelines in Team Foundation Server 2017 (TFS 2017) or newer. We don't charge you for Team Foundation Build (TFBuild) so long as you have a TFS Client Access License (CAL).
 
 A TFS _parallel job_ gives you the ability to run a single release at a time in a project collection. You can keep hundreds or even thousands of release jobs in your collection. But, to run more than one release at a time, you need additional parallel jobs.
 
-One free parallel job is included with every collection in a Team Foundation server. Every Visual Studio Enterprise subscriber in a Team Foundation server contributes one additional parallel job. 
+One free parallel job is included with every collection in a Team Foundation server. Every Visual Studio Enterprise subscriber in a Team Foundation server contributes one additional parallel job.
 
 ::: moniker range="< azure-devops-2019"
 
@@ -50,12 +48,12 @@ A release requires a parallel job only when it is being actively deployed to a s
 
 ![Parallel jobs simple example](media/concurrent-pipelines-tfs/concurrent-pipelines-simple-example.png)
 
-1. FabrikamFiber Release 10 is first to be deployed.
-2. Deployment of FabrikamFiber Release 11 starts after Release 10's deployment is complete.
-3. Release 12 is queued until Release 11's deployment is active.
-4. Release 11 waits for an approval. Release 12's deployment starts because a release waiting for approvals does not consume a parallel job.
-5. Even though Release 11 is approved, it resumes only after Release 12's deployment is completed.
-6. Release 11 is waiting for manual intervention. Release 13 cannot start because the manual intervention state consumes a parallel job.
+1.  FabrikamFiber Release 10 is first to be deployed.
+2.  Deployment of FabrikamFiber Release 11 starts after Release 10's deployment is complete.
+3.  Release 12 is queued until Release 11's deployment is active.
+4.  Release 11 waits for an approval. Release 12's deployment starts because a release waiting for approvals does not consume a parallel job.
+5.  Even though Release 11 is approved, it resumes only after Release 12's deployment is completed.
+6.  Release 11 is waiting for manual intervention. Release 13 cannot start because the manual intervention state consumes a parallel job.
 
 > Manual intervention does not consume a job in TFS 2017.1 and newer.
 
@@ -69,7 +67,7 @@ For example, suppose your collection has three parallel jobs. You can have more 
 
 ## Parallel jobs in an organization
 
-For example, here's an organization that has multiple  Team Foundation Servers. Two of their users have Visual Studio Enterprise subscriptions that they can use at the same time across all their on-premises servers and in each collection so long as the customer adds them as users to both the servers as explained below.
+For example, here's an organization that has multiple Team Foundation Servers. Two of their users have Visual Studio Enterprise subscriptions that they can use at the same time across all their on-premises servers and in each collection so long as the customer adds them as users to both the servers as explained below.
 
 ![Parallel jobs in an organization example](media/concurrent-pipelines-tfs/concurrent-pipelines-in-an-organization-example.png)
 
@@ -93,19 +91,17 @@ In the following scenarios you might need multiple parallel jobs:
 
 Users who have Visual Studio Enterprise subscriptions are assigned to **VS Enterprise** access level in the Users hub of TFS instance. Each of these users contributes one additional parallel job to each collection. You can use this benefit on all Team Foundation Servers in your organization.
 
-1. Browse to **Server settings**, **Access levels**.
+1.  Browse to **Server settings**, **Access levels**.
 
-   ![control-panel-server-vs-enterprise-access-levels](media/concurrent-pipelines-tfs/control-panel-server-vs-enterprise-access-levels.png)
+    ![control-panel-server-vs-enterprise-access-levels](media/concurrent-pipelines-tfs/control-panel-server-vs-enterprise-access-levels.png)
 
-   URL example: `http://{your_server}:8080/tfs/_admin/_licenses`
+    URL example: `http://{your_server}:8080/tfs/_admin/_licenses`
 
-2. On the left side of the page, click **VS Enterprise**.
+2.  On the left side of the page, click **VS Enterprise**.
 
-3. Add your users who have Visual Studio Enterprise subscriptions.
+3.  Add your users who have Visual Studio Enterprise subscriptions.
 
 After you've added these users, additional licenses will appear on the resource limits page described below.
-
-
 
 ## Purchase additional parallel jobs
 
@@ -113,15 +109,13 @@ If you need to run more parallel releases, you can [buy additional private jobs 
 
 ## View and manage parallel jobs
 
-1. Browse to **Collection settings**, **Pipelines**, **Resource limits**.
+1.  Browse to **Collection settings**, **Pipelines**, **Resource limits**.
 
-   ![control-panel-account-build-and-release-resource-limits](media/concurrent-pipelines-tfs/control-panel-account-build-and-release-resource-limits.png)
+    ![control-panel-account-build-and-release-resource-limits](media/concurrent-pipelines-tfs/control-panel-account-build-and-release-resource-limits.png)
 
-   URL example: `http://{your_server}:8080/tfs/DefaultCollection/_admin/_buildQueue?_a=resourceLimits`
+    URL example: `http://{your_server}:8080/tfs/DefaultCollection/_admin/_buildQueue?_a=resourceLimits`
 
-2. View or edit the number of purchased parallel jobs.
-
-
+2.  View or edit the number of purchased parallel jobs.
 
 ## Q&A
 

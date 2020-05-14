@@ -23,4 +23,3 @@ Extends: [BuildLogReference](./BuildLogReference.md)
 * `lastChangedOn`: Date. The date the log was last changed.
 
 * `lineCount`: number. The number of lines in the log.
-

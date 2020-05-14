@@ -15,8 +15,7 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Information about the extension 
+Information about the extension
 
 ### Members
 
@@ -25,4 +24,3 @@ Information about the extension
 * `publisher`: string. Unique Identifier for this publisher
 
 * `version`: string. Supported version for this extension
-

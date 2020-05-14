@@ -29,5 +29,5 @@ Module path: `TFS/VersionControl/Contracts`
 * `Locked` The ref update could not be completed because the ref is locked by another user.
 * `RefNameConflict` The ref update could not be completed because, in case-insensitive mode, the ref name conflicts with an existing, differently-cased ref name.
 * `RejectedByPolicy` The ref update could not be completed because it was rejected by policy.
-* `SucceededNonExistentRef` Indicates that the ref update request was completed successfully, but the ref doesn&#x27;t actually exist so no changes were made.  This should only happen during deletes.
-* `SucceededCorruptRef` Indicates that the ref update request was completed successfully, but the passed-in ref was corrupt - as in, the old object ID was bad.  This should only happen during deletes.
+* `SucceededNonExistentRef` Indicates that the ref update request was completed successfully, but the ref doesn&#x27;t actually exist so no changes were made. This should only happen during deletes.
+* `SucceededCorruptRef` Indicates that the ref update request was completed successfully, but the passed-in ref was corrupt - as in, the old object ID was bad. This should only happen during deletes.

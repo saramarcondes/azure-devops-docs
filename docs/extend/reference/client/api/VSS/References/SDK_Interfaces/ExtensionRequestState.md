@@ -22,4 +22,3 @@ Defined in vss.d.ts
 * `Accepted` The request was accepted (extension installed or license assigned)
 
 * `Rejected` The request was rejected (extension not installed or license not assigned)
-

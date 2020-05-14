@@ -95,43 +95,44 @@ by using five agents, in which case each agent gets two test assemblies to run.
 
 This option should be used when tests within an assembly have dependencies
 or utilize `AssemblyInitialize` and `AssemblyCleanup`, or `ClassInitialize` and `ClassCleanup` methods,
-to manage state in your test code. 
+to manage state in your test code.
 
 ## Run tests in parallel in build pipelines
+
 If you have a large test suite or long-running integration tests to run in your build pipeline,
 use the following steps.
 
 > [!NOTE]
 > To use the multi-agent capability in build pipelines with on-premises TFS server, you must use TFS 2018 Update 2 or a later version.
 
-1. **Build job using a single agent**.
-   Build Visual Studio projects and publish build artifacts using the tasks shown in the following image.
-   This uses the default job settings (single agent, no parallel jobs).
+1.  **Build job using a single agent**.
+    Build Visual Studio projects and publish build artifacts using the tasks shown in the following image.
+    This uses the default job settings (single agent, no parallel jobs).
 
-   ![buildJobSingleAgent](media/parallel-testing-vstest/build-job-1-agent.png)
+    ![buildJobSingleAgent](media/parallel-testing-vstest/build-job-1-agent.png)
 
-1. **Run tests in parallel using multiple agents**:
+1.  **Run tests in parallel using multiple agents**:
 
-   * Add an **agent job**
+    * Add an **agent job**
 
-     ![AddAgentJobBuild](media/parallel-testing-vstest/add-agent-job-build.png)
+      ![AddAgentJobBuild](media/parallel-testing-vstest/add-agent-job-build.png)
 
-   * Configure the job to use **multiple agents in parallel**. The example here uses three agents.
+    * Configure the job to use **multiple agents in parallel**. The example here uses three agents.
 
-     ![ParallelTestJobBuild](media/parallel-testing-vstest/parallel-test-job-build.png)
+      ![ParallelTestJobBuild](media/parallel-testing-vstest/parallel-test-job-build.png)
 
-     > [!TIP]
-     > For massively parallel testing, you can specify as many as 99 agents.
+      > [!TIP]
+      > For massively parallel testing, you can specify as many as 99 agents.
 
-   * Add a **Download Build Artifacts** task to the job.
-     This step is the link between the build job and the test job, and is necessary to ensure that the binaries
-     generated in the build job are available on the agents used by the test job to run tests.
-     Ensure that the task is set to download artifacts produced by the 'Current build' and the artifact name
-     is the same as the artifact name used in the **Publish Build Artifacts** task in the build job.
+    * Add a **Download Build Artifacts** task to the job.
+      This step is the link between the build job and the test job, and is necessary to ensure that the binaries
+      generated in the build job are available on the agents used by the test job to run tests.
+      Ensure that the task is set to download artifacts produced by the 'Current build' and the artifact name
+      is the same as the artifact name used in the **Publish Build Artifacts** task in the build job.
 
-     ![DownloadBuildArtifacts](media/parallel-testing-vstest/download-build-artifacts.png)
+      ![DownloadBuildArtifacts](media/parallel-testing-vstest/download-build-artifacts.png)
 
-   * Add the **Visual Studio Test** task and configure it to use the required [slicing strategy](#strategy).
+    * Add the **Visual Studio Test** task and configure it to use the required [slicing strategy](#strategy).
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -160,40 +161,39 @@ to validate the app functionality.
 > [!NOTE]
 > To use the multi-agent capability in release pipelines with on-premises TFS server, you must use TFS 2017 Update 1 or a later version.
 
-1. **Deploy app using a single agent**. Use the tasks shown in the image below to deploy a web app to Azure App Services.
-   This uses the default job settings (single agent, no parallel jobs).
+1.  **Deploy app using a single agent**. Use the tasks shown in the image below to deploy a web app to Azure App Services.
+    This uses the default job settings (single agent, no parallel jobs).
 
-   ![DeployApp1Agent](media/parallel-testing-vstest/deploy-app-1-agent.png)
+    ![DeployApp1Agent](media/parallel-testing-vstest/deploy-app-1-agent.png)
 
-2. **Run tests in parallel using multiple agents**:
+2.  **Run tests in parallel using multiple agents**:
 
-   * Add an **agent job**
+    * Add an **agent job**
 
-     ![AddAgentJobRM](media/parallel-testing-vstest/add-agent-job-rm.png)
+      ![AddAgentJobRM](media/parallel-testing-vstest/add-agent-job-rm.png)
 
-   * Configure the job to use **multiple agents in parallel**. The example here uses three agents.
+    * Configure the job to use **multiple agents in parallel**. The example here uses three agents.
 
-     ![ParallelTestJobRM](media/parallel-testing-vstest/parallel-test-job-rm.png)
+      ![ParallelTestJobRM](media/parallel-testing-vstest/parallel-test-job-rm.png)
 
-     > [!TIP]
-     > For massively parallel testing, you can specify as many as 99 agents.
+      > [!TIP]
+      > For massively parallel testing, you can specify as many as 99 agents.
 
-   * Add any **additional tasks** that must run before the Visual Studio test task is run.
-     For example, run a PowerShell script to set up any data required by your tests.
+    * Add any **additional tasks** that must run before the Visual Studio test task is run.
+      For example, run a PowerShell script to set up any data required by your tests.
 
-     > [!TIP]
-     > Jobs in release pipelines download all artifacts linked to the release pipeline by default.
-     > To save time, you can configure the job to download only the test artifacts required by the job.
-     > For example, web app binaries are not required to run Selenium tests and downloading these can be
-     > skipped if the app and test artifacts are published separately by your build pipeline.
+      > [!TIP]
+      > Jobs in release pipelines download all artifacts linked to the release pipeline by default.
+      > To save time, you can configure the job to download only the test artifacts required by the job.
+      > For example, web app binaries are not required to run Selenium tests and downloading these can be
+      > skipped if the app and test artifacts are published separately by your build pipeline.
 
-   * Add the **Visual Studio Test** task and configure it to use the required [slicing strategy](#strategy).
+    * Add the **Visual Studio Test** task and configure it to use the required [slicing strategy](#strategy).
 
-     > [!TIP]
-     > If the test machines do not have Visual Studio installed, you can use the
-     > [Visual Studio Test Platform Installer task](../tasks/tool/vstest-platform-tool-installer.md) to
-     > acquire the required version of the test platform.
-
+      > [!TIP]
+      > If the test machines do not have Visual Studio installed, you can use the
+      > [Visual Studio Test Platform Installer task](../tasks/tool/vstest-platform-tool-installer.md) to
+      > acquire the required version of the test platform.
 
 ## Massively parallel testing by combining parallel pipeline jobs with parallel test execution
 
@@ -203,37 +203,37 @@ typically by creating multiple processes or threads that are run in parallel.
 Parallelism features can be combined in a layered fashion to achieve massively parallel testing.
 In the context of the [Visual Studio Test task](../tasks/test/vstest.md), parallelism can be combined in the following ways:
 
-1. **Parallelism offered by test frameworks**.
-   All modern test frameworks such as MSTest v2, NUnit, xUnit, and others provide the ability to run tests in parallel.
-   Typically, tests in an assembly are run in parallel. These test frameworks interface with the Visual Studio Test platform
-   using a test adapter and the test framework, together with the corresponding adapter, and work within a test host process
-   that the Visual Studio Test Platform creates when tests are run. Therefore, parallelization at this layer is within a process
-   for all frameworks and adapters.
+1.  **Parallelism offered by test frameworks**.
+    All modern test frameworks such as MSTest v2, NUnit, xUnit, and others provide the ability to run tests in parallel.
+    Typically, tests in an assembly are run in parallel. These test frameworks interface with the Visual Studio Test platform
+    using a test adapter and the test framework, together with the corresponding adapter, and work within a test host process
+    that the Visual Studio Test Platform creates when tests are run. Therefore, parallelization at this layer is within a process
+    for all frameworks and adapters.
 
-2. **Parallelism offered by the Visual Studio Test Platform (vstest.console.exe)**. Visual Studio Test Platform can run
-   test assemblies in parallel. Users of vstest.console.exe will recognize this as the
-   [/parallel switch](https://docs.microsoft.com/visualstudio/test/vstest-console-options?view=vs-2017).
-   It does so by launching a test host process on each available core, and handing it tests in an assembly to execute.
-   This works for any framework that has a test adapter for the Visual Studio test platform because the unit of parallelization
-   is a test assembly or test file. This, when combined with the parallelism offered by test frameworks (described above),
-   provides the maximum degree of parallelization when tests run on a single agent in the pipeline.
+2.  **Parallelism offered by the Visual Studio Test Platform (vstest.console.exe)**. Visual Studio Test Platform can run
+    test assemblies in parallel. Users of vstest.console.exe will recognize this as the
+    [/parallel switch](https://docs.microsoft.com/visualstudio/test/vstest-console-options?view=vs-2017).
+    It does so by launching a test host process on each available core, and handing it tests in an assembly to execute.
+    This works for any framework that has a test adapter for the Visual Studio test platform because the unit of parallelization
+    is a test assembly or test file. This, when combined with the parallelism offered by test frameworks (described above),
+    provides the maximum degree of parallelization when tests run on a single agent in the pipeline.
 
-3. **Parallelism offered by the Visual Studio Test (VSTest) task**. The VSTest task supports running tests in parallel across
-   multiple agents (or machines). Test slices are created, and each agent executes one slice at a time.
-   The three different [slicing strategies](#strategy), when combined with the parallelism offered by the test platform and
-   test framework (as described above), result in the following:
+3.  **Parallelism offered by the Visual Studio Test (VSTest) task**. The VSTest task supports running tests in parallel across
+    multiple agents (or machines). Test slices are created, and each agent executes one slice at a time.
+    The three different [slicing strategies](#strategy), when combined with the parallelism offered by the test platform and
+    test framework (as described above), result in the following:
 
-   * Slicing based on the number of tests and agents. Simple slicing where tests are grouped in equally sized slices.
-     A slice contains tests from one or more assemblies.
-     Test execution on the agent then conforms to the parallelism described in **1** and **2** above.
+    * Slicing based on the number of tests and agents. Simple slicing where tests are grouped in equally sized slices.
+      A slice contains tests from one or more assemblies.
+      Test execution on the agent then conforms to the parallelism described in **1** and **2** above.
 
-   * Slicing based on past running time. Based on the previous timings for running tests, and the number of available agents,
-     tests are grouped into slices such that each slice requires approximately equal execution time.
-     A slice contains tests from one or more assemblies.
-     Test execution on the agent then conforms to the parallelism described in **1** and **2** above.
+    * Slicing based on past running time. Based on the previous timings for running tests, and the number of available agents,
+      tests are grouped into slices such that each slice requires approximately equal execution time.
+      A slice contains tests from one or more assemblies.
+      Test execution on the agent then conforms to the parallelism described in **1** and **2** above.
 
-   * Slicing based on assemblies. A slice is a test assembly, and so contains tests that all belong to the same assembly.
-     Execution on the agent then conforms to the parallelism described in **1** and **2** above.
-     However, **2** may not occur if an agent receives only one assembly to run.
+    * Slicing based on assemblies. A slice is a test assembly, and so contains tests that all belong to the same assembly.
+      Execution on the agent then conforms to the parallelism described in **1** and **2** above.
+      However, **2** may not occur if an agent receives only one assembly to run.
 
 [!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

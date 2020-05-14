@@ -21,60 +21,58 @@ You can change your preferred email address for notifications from your organiza
 
 ::: moniker range="azure-devops"
 
-> [!NOTE]   
+> [!NOTE]  
 > To enable the new user interface for the New account manager, see [Enable preview features](../project/navigation/preview-features.md).
 
-#### [Preview page](#tab/preview-page) 
+#### [Preview page](#tab/preview-page)
 
-1. From your home page, open user settings ![user-settings-gear.png](../media/icons/user-settings-gear.png), and then select **Profile**.
+1.  From your home page, open user settings ![user-settings-gear.png](../media/icons/user-settings-gear.png), and then select **Profile**.
 
-   ![Open Azure DevOps profile](../media/open-user-settings-profile-preview.png)
+    ![Open Azure DevOps profile](../media/open-user-settings-profile-preview.png)
 
-2. Change your contact information, and then select **Save**.
+2.  Change your contact information, and then select **Save**.
 
-   ![Edit the About page](media/edit-contact-info-preview.png)
+    ![Edit the About page](media/edit-contact-info-preview.png)
 
+#### [Current page](#tab/current-page)
 
-#### [Current page](#tab/current-page) 
+1.  To change your user preferences, open your profile menu, and then select **User settings**.
 
-1. To change your user preferences, open your profile menu, and then select **User settings**.
+    ![Open profile user settings](media/open-profile-newnav.png)
 
-   ![Open profile user settings](media/open-profile-newnav.png)
+2.  From the **About** page, you can change your profile picture, change your display name, contact information, and country. Select **Save**.
 
-2. From the **About** page, you can change your profile picture, change your display name, contact information, and country. Select **Save**.
-
-   ![Edit the About page](../organizations/settings/media/edit-about-page.png)
+    ![Edit the About page](../organizations/settings/media/edit-about-page.png)
 
 ::: moniker-end
 
-* * *
-
+---
 
 ::: moniker range="= azure-devops-2019"
 
-1. To change your preferred email address, open your organization menu and select **My profile**.
+1.  To change your preferred email address, open your organization menu and select **My profile**.
 
-   ![Azure DevOps, My Profile link on Organization menu](media/open-profile-newnav.png)
+    ![Azure DevOps, My Profile link on Organization menu](media/open-profile-newnav.png)
 
-2. From your profile and information page, select **Edit profile**.
+2.  From your profile and information page, select **Edit profile**.
 
-3. Update the address and select **Save changes**.
-::: moniker-end
+3.  Update the address and select **Save changes**.
+    ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-1. To change your preferred email address, open your organization menu and select **My profile**.
+1.  To change your preferred email address, open your organization menu and select **My profile**.
 
-   ![Azure DevOps, My Profile link on Organization menu](media/open-profile-team-services.png)
+    ![Azure DevOps, My Profile link on Organization menu](media/open-profile-team-services.png)
 
-2. From your profile and information page, select **Edit profile**.
+2.  From your profile and information page, select **Edit profile**.
 
-3. Update the address and select **Save changes**.
+3.  Update the address and select **Save changes**.
 
 ::: moniker-end
 
 ## Related articles
 
-- [Manage personal notifications](manage-personal-notifications.md)
-- [Manage team notifications](manage-team-group-notifications.md)
-- [Manage organization notifications](manage-organization-notifications.md)
+* [Manage personal notifications](manage-personal-notifications.md)
+* [Manage team notifications](manage-team-group-notifications.md)
+* [Manage organization notifications](manage-organization-notifications.md)

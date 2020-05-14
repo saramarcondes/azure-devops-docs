@@ -14,21 +14,21 @@ monikerRange: 'azure-devops'
 
 # How access to services are limited for non-members of a public project
 
-[!INCLUDE [temp](includes/version-public-projects.md)]  
+[!INCLUDE [temp](includes/version-public-projects.md)]
 
 In a public project, most features work the same for members and non-members.
 Today, non-members get read-only access to public projects and members get access based on their access level and permissions. Over time, we give non-members more features, for example commenting on work items.
-This page walks through features that non-members can't access or that work differently than members.  
+This page walks through features that non-members can't access or that work differently than members.
 
 ## Access levels and unavailable features
 
 A project member has access to features based on the access level assigned. Non-members are granted limited access automatically. The following user interface elements are hidden for non-members.
 
-* **Boards**: **Work items** are available, but **Backlogs**, **Boards**, **Sprints**, **Queries**, and **Plans** are hidden. 
-* **Repos**: Team Foundation Version Control (TFVC) repositories are hidden 
+* **Boards**: **Work items** are available, but **Backlogs**, **Boards**, **Sprints**, **Queries**, and **Plans** are hidden.
+* **Repos**: Team Foundation Version Control (TFVC) repositories are hidden
 * **Pipelines**: **Builds** and **Releases** are available, but **Library**, **Task Groups**, **Deployment Groups**, **Packages**, and XAML build system are hidden.
-	* Pipeline and task editors for build and release pipelines are unavailable  
-	* Only the new **Releases*** page, which is in Public preview, is available.
+  _ Pipeline and task editors for build and release pipelines are unavailable  
+   _ Only the new **Releases\*** page, which is in Public preview, is available.
 * **Test Plans**: **Test Plans** and its associated manual and cloud load testing features are hidden.
 * **Analytics**: **Analytics views** is hidden, and the Analytics OData feed is not supported for non-members.
 * Settings and administrative pages are hidden.
@@ -49,7 +49,7 @@ In addition, non-members have no access or limited access to the following featu
 Azure DevOps has a permissions-driven user interface. For an overview of the main permissions assigned by default to security groups and access levels, see [Default permissions and access](../security/permissions-access.md).
 
 If a user doesn't have the permissions needed to complete an action, the feature is hidden or disabled. By default, inaccessible commands are disabled, minimizing the layout changes that would be needed if elements could appear and disappear.
-For example, a user who lacks permission to create pull requests, sees a disabled  **Create pull request** button.
+For example, a user who lacks permission to create pull requests, sees a disabled **Create pull request** button.
 
 When marking a project public, there are two changes which affect all members of the project:
 
@@ -68,4 +68,4 @@ Clients like Visual Studio and IntelliJ work with the HTTPS clone URL but don't 
 
 The following dashboard widgets won't display any useful information for non-members.
 
-[!INCLUDE [temp](includes/unavailable-widgets.md)]  
+[!INCLUDE [temp](includes/unavailable-widgets.md)]

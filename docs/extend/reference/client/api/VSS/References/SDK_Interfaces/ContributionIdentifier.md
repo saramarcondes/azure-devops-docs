@@ -15,8 +15,7 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Identifier for contributions and contribution types 
+Identifier for contributions and contribution types
 
 ### Members
 
@@ -27,4 +26,3 @@ Identifier for contributions and contribution types
 * `publisherId`: string. The publisher ID
 
 * `relativeId`: string. The extension-relative contribution ID
-

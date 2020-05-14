@@ -21,7 +21,7 @@ Quickly find and navigate to a file or folder in your Git repository using the p
 
 ## Usage
 
-While browsing your Git repository, start typing in the path control box to search for the file or folder you are looking for. The interface lists the results starting from your current folder followed by matching items from across the repo. 
+While browsing your Git repository, start typing in the path control box to search for the file or folder you are looking for. The interface lists the results starting from your current folder followed by matching items from across the repo.
 
 ![SearchResultsExperience](media/find-a-file/find-file-results.png)
 
@@ -38,5 +38,3 @@ Launch the Find a File experience from the keyboard with the `t` shortcut from t
 Launch the Find a File experience from the keyboard with the `t` shortcut from the **Files** or **History** tabs in the **Files** page. Use the up and down arrows to cycle through the results, and click or press Enter to open a result. Press `Esc` to close the Find a File experience.
 
 ::: moniker-end
-
-

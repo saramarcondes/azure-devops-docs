@@ -24,8 +24,7 @@ You can use the following procedures to save data that users most care about, su
 
   ::: moniker range=">= tfs-2017"
 
-  > [!div class="mx-imgBorder"]
-  > ![Download code ](../public/media/download-code/download-zip-file.png)
+  > [!div class="mx-imgBorder"] > ![Download code ](../public/media/download-code/download-zip-file.png)
 
   ::: moniker-end
 
@@ -37,13 +36,13 @@ You can use the following procedures to save data that users most care about, su
 
   This process doesn't save any change history or links to other artifacts.
 
-    If you use Git, [clone your repositories](../../repos/git/gitquickstart.md) to retain the full project history and all the branches.
+  If you use Git, [clone your repositories](../../repos/git/gitquickstart.md) to retain the full project history and all the branches.
 
 * **Build data**: To save logs and data in your drop build folders, see [View build results](https://msdn.microsoft.com/library/ms181733.aspx).
 
 * **Work item tracking data:** Create a work item query and open it [using Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md). Save the Excel spreadsheet.
 
-    This process doesn't save any attachments, change history, or links to other artifacts.
+  This process doesn't save any attachments, change history, or links to other artifacts.
 
 To learn more about how we manage and protect your data, read our [Data Protection Overview](../../organizations/security/data-protection.md).
 

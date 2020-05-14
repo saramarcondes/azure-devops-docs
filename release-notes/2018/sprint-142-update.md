@@ -17,47 +17,47 @@ Check out the [Features](#features) list below for more.
 
 General:
 
-- [New navigation is on for all users](#new-navigation-is-on-for-all-users)
-- [Dark Theme](#dark-theme)
+* [New navigation is on for all users](#new-navigation-is-on-for-all-users)
+* [Dark Theme](#dark-theme)
 
 Azure Boards:
 
-- [Organize reference materials with richer work item attachments](#organize-reference-materials-with-richer-work-item-attachments)
-- [Manage dependencies by linking work items across your organizations](#manage-dependencies-by-linking-work-items-across-your-organizations)
-- [Open work items from search](#open-work-items-from-search)
+* [Organize reference materials with richer work item attachments](#organize-reference-materials-with-richer-work-item-attachments)
+* [Manage dependencies by linking work items across your organizations](#manage-dependencies-by-linking-work-items-across-your-organizations)
+* [Open work items from search](#open-work-items-from-search)
 
 Azure Repos:
 
-- [Extension authors can query context about the current repo](#extension-authors-can-query-context-about-the-current-repo)
+* [Extension authors can query context about the current repo](#extension-authors-can-query-context-about-the-current-repo)
 
 Azure Pipelines:
 
-- [Add custom build counters to your builds](#add-custom-build-counters-to-your-builds)
-- [Use YAML to specify branches to build for pull requests](#use-yaml-to-specify-branches-to-build-for-pull-requests)
-- [Use YAML template expressions inline](#use-yaml-template-expressions-inline)
-- [Improve troubleshooting with the pipeline initialization log](#improve-troubleshooting-with-the-pipeline-initialization-log)
-- [Default retention for YAML pipelines](#default-retention-for-yaml-pipelines)
-- [Build on Linux/ARM and Windows 32-bit platforms](#build-on-linuxarm-and-windows-32-bit-platforms)
-- [Clone variable groups](#clone-variable-groups)
-- [See commits and work items for all linked sources](#see-commits-and-work-items-for-all-linked-sources)
-- [Run from Package supported in Azure App Service deployments](#run-from-package-supported-in-azure-app-service-deployments)
-- [Deploy Linux containers with the App Server Deploy task](#deploy-linux-containers-with-the-app-server-deploy-task)
+* [Add custom build counters to your builds](#add-custom-build-counters-to-your-builds)
+* [Use YAML to specify branches to build for pull requests](#use-yaml-to-specify-branches-to-build-for-pull-requests)
+* [Use YAML template expressions inline](#use-yaml-template-expressions-inline)
+* [Improve troubleshooting with the pipeline initialization log](#improve-troubleshooting-with-the-pipeline-initialization-log)
+* [Default retention for YAML pipelines](#default-retention-for-yaml-pipelines)
+* [Build on Linux/ARM and Windows 32-bit platforms](#build-on-linuxarm-and-windows-32-bit-platforms)
+* [Clone variable groups](#clone-variable-groups)
+* [See commits and work items for all linked sources](#see-commits-and-work-items-for-all-linked-sources)
+* [Run from Package supported in Azure App Service deployments](#run-from-package-supported-in-azure-app-service-deployments)
+* [Deploy Linux containers with the App Server Deploy task](#deploy-linux-containers-with-the-app-server-deploy-task)
 
 Azure Test Plans:
 
-- [Azure Test Runner client to run manual tests for desktop applications](#azure-test-runner-client-to-run-manual-tests-for-desktop-applications)
+* [Azure Test Runner client to run manual tests for desktop applications](#azure-test-runner-client-to-run-manual-tests-for-desktop-applications)
 
 Azure Artifacts:
 
-- [Public preview of Pipeline Artifacts](#public-preview-of-pipeline-artifacts)
+* [Public preview of Pipeline Artifacts](#public-preview-of-pipeline-artifacts)
 
 Wiki:
 
-- [Publish code as wiki with Contribute permissions](#publish-code-as-wiki-with-contribute-permissions)
+* [Publish code as wiki with Contribute permissions](#publish-code-as-wiki-with-contribute-permissions)
 
 Administration:
 
-- [PATs enforce CAP](#pats-enforce-cap)
+* [PATs enforce CAP](#pats-enforce-cap)
 
 ## General
 
@@ -71,8 +71,7 @@ See the [Navigation Update](https://aka.ms/vstsnewnav) blog post for more inform
 
 One of our long-standing feature requests has been to offer a dark theme. We're happy to let you know that this is now available as part of the new navigation. You can turn on dark theme by selecting **Theme** from the menu underneath your avatar in the top right of every page.
 
-> [!div class="mx-imgBorder"]
-> ![Dark theme](media/142_08.png)
+> [!div class="mx-imgBorder"] > ![Dark theme](media/142_08.png)
 
 ## Azure Boards
 
@@ -80,8 +79,7 @@ One of our long-standing feature requests has been to offer a dark theme. We're 
 
 Attaching files to work items allows you and your team to centralize reference materials so they are always close by when you need them. It's now easier to add a new attachment by simply dragging and dropping the file anywhere on the work item form. You can continue viewing the attachments as a list or switch to a grid view to show a thumbnail preview. Double-click on the file to open a preview and cycle through them to quickly find the information you need.
 
-> [!div class="mx-imgBorder"]
-> ![Work item attachments](media/142_01.gif)
+> [!div class="mx-imgBorder"] > ![Work item attachments](media/142_01.gif)
 
 ### Manage dependencies by linking work items across your organizations
 
@@ -89,12 +87,11 @@ Linking related or dependent work gives you broader context into the work you're
 
 > [!NOTE]
 > Permissions are respected across both Azure DevOps organizations, which must both be backed by the same Azure AD tenant.
-> 
-> [!div class="mx-imgBorder"]
-> ![Remote link](media/142_05.png)
+>
+> [!div class="mx-imgBorder"] > ![Remote link](media/142_05.png)
 
 As you begin to manage several dependencies, use the new **Remote Link Count** field in **Queries** to list the work items that have remote dependencies in your project, or consider installing the [Dependency Tracker](https://marketplace.visualstudio.com/items?itemName=ms-eswm.dependencytracker) extension. This extension, which was created by the Windows group at Microsoft to meet their scale needs, builds upon remote links to display a rich hierarchy and graphical representation of your dependencies.
- 
+
 ### Open work items from search
 
 Previously, a work item couldn't be opened from the search results page if the work item preview pane was turned off. This would make it difficult to dig into your search results. Now you can click on the work item title to open the work items in a modal window. This feature was prioritized from UserVoice.
@@ -104,6 +101,7 @@ Previously, a work item couldn't be opened from the search results page if the w
 ### Extension authors can query context about the current repo
 
 One of the challenges for an author of a version control extension is to get the context of the repository being displayed to the user, such as the name, ID and URL. To help with this, we added the VersionControlRepositoryService as an extension-accessible service. Using this, an extension author can query for information about the current Git repository context within the Web UI. It currently has one method, getCurrentGitRepository().
+
 * If a Git repository is selected, a GitRepository object is returned with basic data about the repository (name, ID, and URL)
 * If a TFVC repository is selected or the service is accessed outside the Azure Repos pages, null will be returned.
 
@@ -173,11 +171,10 @@ The Azure Pipelines [open source, cross-platform agent](https://github.com/Micro
 
 ### Clone variable groups
 
-We have added support for cloning variable groups. Whenever you want to replicate a variable group and just update few of the variables, you don't need to go through the tedious process of adding variables one by one. You can now quickly make a copy of your variable group, update the values appropriately, and save it as a new variable group. 
+We have added support for cloning variable groups. Whenever you want to replicate a variable group and just update few of the variables, you don't need to go through the tedious process of adding variables one by one. You can now quickly make a copy of your variable group, update the values appropriately, and save it as a new variable group.
 
-> [!div class="mx-imgBorder"]
-> ![Clone variable group](media/142_13.png)
-> 
+> [!div class="mx-imgBorder"] > ![Clone variable group](media/142_13.png)
+>
 > [!NOTE]
 > The secret variable values are not copied over when you clone a variable group. You need to update the encrypted variables and then save the cloned variable group.
 
@@ -185,16 +182,16 @@ We have added support for cloning variable groups. Whenever you want to replicat
 
 Continuing our commitment towards improved traceability, we are happy to announce that customers can now see the commit and work items details for all the artifacts linked to the pipeline. By default, the commit and work item is compared with the last deployment to the same stage. However, you can compare with any other previous deployment if needed.
 
-> [!div class="mx-imgBorder"]
-> ![Linked sources](media/142_15.png)
+> [!div class="mx-imgBorder"] > ![Linked sources](media/142_15.png)
 
 ### Run from Package supported in Azure App Service deployments
 
-The Azure App Service Deploy task (4.*) version now supports [RunFromPackage](https://docs.microsoft.com/azure/azure-functions/run-functions-from-deployment-package) (previously called [RunFromZip](https://github.com/Azure/app-service-announcements/issues/110).
+The Azure App Service Deploy task (4.\*) version now supports [RunFromPackage](https://docs.microsoft.com/azure/azure-functions/run-functions-from-deployment-package) (previously called [RunFromZip](https://github.com/Azure/app-service-announcements/issues/110).
 
-App Service supports a number of different techniques to deploy your files such as msdeploy (aka WebDeploy), git, ARM and more. But all these techniques have a limitation. Your files are deployed under your wwwroot folder (specifically d:\home\site\wwwroot) and the runtime then runs the files from there. 
+App Service supports a number of different techniques to deploy your files such as msdeploy (aka WebDeploy), git, ARM and more. But all these techniques have a limitation. Your files are deployed under your wwwroot folder (specifically d:\home\site\wwwroot) and the runtime then runs the files from there.
 
 With Run From Package, there is no longer a deployment step which copies the individual files to wwwroot. Instead, you just point it to a zip file, and the zip gets mounted on wwwroot as a read-only file system. This has several benefits:
+
 * Reduces the risk of file copy locking issues.
 * Can be deployed to a production app (with restart).
 * You can be certain of the files that are running in your app.
@@ -203,26 +200,24 @@ With Run From Package, there is no longer a deployment step which copies the ind
 
 ### Deploy Linux containers with the App Server Deploy task
 
-The 4.* version of the Azure App Service Deploy task now supports deploying your own custom container to [Azure Functions on Linux](https://blogs.msdn.microsoft.com/appserviceteam/2017/11/15/functions-on-linux-preview/). 
+The 4.\* version of the Azure App Service Deploy task now supports deploying your own custom container to [Azure Functions on Linux](https://blogs.msdn.microsoft.com/appserviceteam/2017/11/15/functions-on-linux-preview/).
 
 The Linux hosting model for Azure Functions is based on Docker containers which bring greater flexibility in terms of packaging and leveraging app specific dependencies. Functions on Linux can be hosted in 2 different modes:
 
-1. **Built-in container image:** You bring the Function App code and Azure provides and manages the container (built-in image mode), so no specific Docker related knowledge is required. This is supported in the existing version of App Service Deploy task.
-2. **Custom container image:** We have enhanced the App Service Deploy task to support deploying custom container images to Azure Functions on Linux. When your functions need a specific language version or require a specific dependency or configuration that isn't provided within the built-in image, you can build and deploy a custom image to Azure Function on Linux by using Azure Pipelines.
+1.  **Built-in container image:** You bring the Function App code and Azure provides and manages the container (built-in image mode), so no specific Docker related knowledge is required. This is supported in the existing version of App Service Deploy task.
+2.  **Custom container image:** We have enhanced the App Service Deploy task to support deploying custom container images to Azure Functions on Linux. When your functions need a specific language version or require a specific dependency or configuration that isn't provided within the built-in image, you can build and deploy a custom image to Azure Function on Linux by using Azure Pipelines.
 
 ## Azure Test Plans
 
 ### Azure Test Runner client to run manual tests for desktop applications
 
-You can now use the Azure Test Runner (ATR) client to run manual tests for desktop applications. This will help you move from Microsoft Test Manager to Azure Test Plans. Please refer to our guidance [here](/azure/devops/test/mtm/guidance-mtm-usage?view=azure-devops). Using the ATR client, you can run your manual tests and record the test results for each test step. You also have data collection capabilities such as screenshot, image action log, and audio video recording. If you find an issue when testing, use Test Runner to create a bug with test steps, screenshots, and comments automatically included in the bug.  
+You can now use the Azure Test Runner (ATR) client to run manual tests for desktop applications. This will help you move from Microsoft Test Manager to Azure Test Plans. Please refer to our guidance [here](/azure/devops/test/mtm/guidance-mtm-usage?view=azure-devops). Using the ATR client, you can run your manual tests and record the test results for each test step. You also have data collection capabilities such as screenshot, image action log, and audio video recording. If you find an issue when testing, use Test Runner to create a bug with test steps, screenshots, and comments automatically included in the bug.
 
-ATR requires a one-time download and install of the runner. Select **Run for desktop application** as shown below. 
+ATR requires a one-time download and install of the runner. Select **Run for desktop application** as shown below.
 
-> [!div class="mx-imgBorder"]
-> ![Azure Test Runner](media/142_01.png)
-> 
-> [!div class="mx-imgBorder"]
-> ![Azure Test Runner install](media/142_02.png)
+> [!div class="mx-imgBorder"] > ![Azure Test Runner](media/142_01.png)
+>
+> [!div class="mx-imgBorder"] > ![Azure Test Runner install](media/142_02.png)
 
 ## Azure Artifacts
 
@@ -249,15 +244,13 @@ In February 2017, we announced [support for Azure Active Directory Conditional A
 
 Read about the new features below and head over to Azure DevOps to try them for yourself.
 
-> [!div class="nextstepaction"]
-> [Go to Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
+> [!div class="nextstepaction"][go to azure devops](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
 ## Feedback
 
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
 
-> [!div class="mx-imgBorder"]
-> ![Make a suggestion](../media/help-make-a-suggestion.png)
+> [!div class="mx-imgBorder"] > ![Make a suggestion](../media/help-make-a-suggestion.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/vsts).
 

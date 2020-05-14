@@ -15,5 +15,5 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [](../includes/nuget/publish.md)]
 
 ## Work with upstream sources
-To learn about how to set up your upstream sources, see [Configure upstream sources for Azure DevOps](../how-to/set-up-upstream-sources.md). For more information on how to use the available upstream sources, see the [Upstream sources](../concepts/upstream-sources.md) conceptual article.
 
+To learn about how to set up your upstream sources, see [Configure upstream sources for Azure DevOps](../how-to/set-up-upstream-sources.md). For more information on how to use the available upstream sources, see the [Upstream sources](../concepts/upstream-sources.md) conceptual article.

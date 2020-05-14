@@ -15,8 +15,7 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Page context configuration that can be contributed by remote services (different Azure DevOps Services services delivering content to the page) 
+Page context configuration that can be contributed by remote services (different Azure DevOps Services services delivering content to the page)
 
 ### Members
 
@@ -33,4 +32,3 @@ Page context configuration that can be contributed by remote services (different
 * `serviceRootUrl`: string. The root url of the service that can be used to resolve relative links when this content is hosted in another site.
 
 * `serviceTypeId`: string. Instance ID of the service
-

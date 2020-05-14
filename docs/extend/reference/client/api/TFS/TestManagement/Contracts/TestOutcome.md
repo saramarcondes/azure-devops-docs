@@ -30,4 +30,4 @@ Module path: `TFS/TestManagement/Contracts`
 * `NotApplicable` Test is Not Applicable for execution.
 * `Paused` Test is paused.
 * `InProgress` Test is currently executing. Added this for TCM charts
-* `MaxValue` 
+* `MaxValue`

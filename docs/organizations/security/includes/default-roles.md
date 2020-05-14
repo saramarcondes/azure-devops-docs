@@ -1,6 +1,5 @@
-
-Stakeholders have no role 
-Agent pools - no default roles 
+Stakeholders have no role
+Agent pools - no default roles
 Agent queues - Hosted - Contributors - User
 
 <table>
@@ -91,7 +90,7 @@ Agent queues - Hosted - Contributors - User
 <td><img src="media/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Configure Agile tools, set team defaults 
+<td align="left">Configure Agile tools, set team defaults
 </td>
 <td> </td>
 <td> </td>
@@ -116,7 +115,7 @@ Agent queues - Hosted - Contributors - User
 <td><img src="media/checkmark.png" alt="check mark"/></td>
 </tr>
 <tr>
-<td align="left">Customize project information (area paths, iteration paths, and work tracking processes) 
+<td align="left">Customize project information (area paths, iteration paths, and work tracking processes)
 </td>
 <td>  </td>
 <td> </td>
@@ -135,7 +134,3 @@ Agent queues - Hosted - Contributors - User
 </tr>
 </tbody>
 </table>
-
-
-
-

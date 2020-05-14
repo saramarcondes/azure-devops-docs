@@ -18,7 +18,7 @@ monikerRange: 'azure-devops'
 
 In this article, learn to set up billing for your organization. Do so before making purchases, so you have it in place once you're ready to buy.
 
-*All services are billed via Azure*. You're not required to use any other Azure services.
+_All services are billed via Azure_. You're not required to use any other Azure services.
 
 [!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
 
@@ -32,30 +32,29 @@ In this article, learn to set up billing for your organization. Do so before mak
 
 ## Set up billing
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+1.  Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+2.  Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
-3. Select **Billing**.
+3.  Select **Billing**.
 
     ![Select Billing from Organization settings](media/shared/select-billing-organization-settings.png)
 
-4. Select **Set up billing**.
+4.  Select **Set up billing**.
 
-   ![Select Set up billing](media/shared/set-up-billing.png)
+    ![Select Set up billing](media/shared/set-up-billing.png)
 
-5. Select your Azure subscription, and then select **Save**.
+5.  Select your Azure subscription, and then select **Save**.
 
-   ![Select your Azure subscription](media/shared/select-azure-subscription.png)
+    ![Select your Azure subscription](media/shared/select-azure-subscription.png)
 
 Billing is set up.
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Pay for users](buy-basic-access-add-users.md)
+> [!div class="nextstepaction"][pay for users](buy-basic-access-add-users.md)
 
 ## Related articles
 
@@ -63,4 +62,3 @@ Billing is set up.
 * [Buy CI/CD](buy-more-build-vs.md)
 * [Sign up for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)
 * [Buy cloud-based load testing](buy-load-testing-vs.md).
-

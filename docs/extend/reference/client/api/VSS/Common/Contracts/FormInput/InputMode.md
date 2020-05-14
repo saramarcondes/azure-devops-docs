@@ -28,4 +28,3 @@ Module path: `VSS/Common/Contracts/FormInput`
 * `CheckBox` Checkbox should be shown(for true/false values)
 
 * `TextArea` A multi-line text area should be shown
-

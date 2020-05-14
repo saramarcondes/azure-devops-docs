@@ -18,11 +18,11 @@ Extends: [DefinitionReference](./DefinitionReference.md)
 
 ### Members
 
-* `_links`: any. 
+* `_links`: any.
 
 * `batchSize`: number. Batch size of the definition
 
-* `buildArgs`: string. 
+* `buildArgs`: string.
 
 * `continuousIntegrationQuietPeriod`: number. The continuous integration quiet period
 
@@ -41,4 +41,3 @@ Extends: [DefinitionReference](./DefinitionReference.md)
 * `supportedReasons`: [BuildReason](./BuildReason.md). The reasons supported by the template
 
 * `triggerType`: [DefinitionTriggerType](./DefinitionTriggerType.md). How builds are triggered from this definition
-

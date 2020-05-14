@@ -19,10 +19,8 @@ ms.date: 08/04/2016
 
 [!INCLUDE [disclaimer](../_data/disclaimer.md)]
 
-
 You can create [feeds](./feeds.md) and store [packages](./packages.md) in those feeds.
 Feeds have [permissions](./permissions.md) which control who can read from, push to, and manage feeds.
-
 
 ![Packaging resources](./media/packaging-resources.png)
 
@@ -37,11 +35,12 @@ You can also access [NuGet specific operations](./nuget.md) such as delete and d
 * [Permissions](./permissions.md)
 * [Release Views](./views.md)
 
-
 ## Common tasks
 
 ### Get a list of feeds
-1. Look up the [feeds](./feeds.md#getfeeds) that you want to use.
+
+1.  Look up the [feeds](./feeds.md#getfeeds) that you want to use.
 
 ### Create a feed
-1. Create a new [feed](./feeds.md#createafeed).
+
+1.  Create a new [feed](./feeds.md#createafeed).

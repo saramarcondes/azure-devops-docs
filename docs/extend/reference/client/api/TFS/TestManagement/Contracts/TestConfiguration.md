@@ -14,7 +14,6 @@ ms.date: 08/04/2016
 
 Module path: `TFS/TestManagement/Contracts`
 
-
 ### Members
 
 * `area`: [ShallowReference](../../../TFS/TestManagement/Contracts/ShallowReference.md). Area of the configuration
@@ -25,7 +24,7 @@ Module path: `TFS/TestManagement/Contracts`
 
 * `isDefault`: boolean. Is the configuration a default for the test plans
 
-* `lastUpdatedBy`: [VSS_Common_Contracts.IdentityRef](../../../VSS/WebApi/Contracts/IdentityRef.md). Last Updated By  Reference
+* `lastUpdatedBy`: [VSS_Common_Contracts.IdentityRef](../../../VSS/WebApi/Contracts/IdentityRef.md). Last Updated By Reference
 
 * `lastUpdatedDate`: Date. Last Updated Data
 
@@ -40,4 +39,3 @@ Module path: `TFS/TestManagement/Contracts`
 * `url`: string. Url of Configuration Resource
 
 * `values`: {[key: string]: string}. Dictionary of Test Variable, Selected Value
-

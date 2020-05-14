@@ -2,7 +2,7 @@
 ms.topic: include
 ---
 
-<!--- Azure DevOps Server 2019 Pipelines Build only 
+<!--- Azure DevOps Server 2019 Pipelines Build only
 
 Administer build permissions
 Delete build pipeline
@@ -22,7 +22,6 @@ View builds
 
 
 -->
- 
 
 <table>
 <tr valign="bottom">
@@ -44,7 +43,7 @@ View builds
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">View build pipeline 
+<td align="left">View build pipeline
 </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -62,7 +61,7 @@ View builds
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Delete or Edit build pipeline 
+<td align="left">Delete or Edit build pipeline
 </td>
 <td>  </td>
 <td>  </td>
@@ -80,7 +79,7 @@ View builds
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Edit build quality 
+<td align="left">Edit build quality
 </td>
 <td>  </td>
 <td> </td>
@@ -153,10 +152,3 @@ View builds
 </tr>
 </tbody>
 </table>
-
-
-
-
-
-
- 

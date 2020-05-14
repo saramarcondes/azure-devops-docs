@@ -18,15 +18,15 @@ Notifications help you and your team stay informed about activity that occurs wi
 
 You receive notifications based on rules or subscriptions. Subscriptions arise from the following instances:
 
-- Out of the box or default
-- Created by an administrator for a team or group that you belong to
-- Created by you
+* Out of the box or default
+* Created by an administrator for a team or group that you belong to
+* Created by you
 
 You can manage your notifications, which you access from your organization menu. Other notifications are managed by an administrator at the following levels:
 
-- Team notifications, managed by a team administrator
-- Project notifications, managed by a member of the Project Administrators group
-- Organization/collection-level notifications, managed by a member of the Project Collection Administrators group
+* Team notifications, managed by a team administrator
+* Project notifications, managed by a member of the Project Administrators group
+* Organization/collection-level notifications, managed by a member of the Project Collection Administrators group
 
 ## Preferred email address
 
@@ -37,15 +37,15 @@ The preferred email address for your organization profile gets notifications, by
 
 ::: moniker range=">= tfs-2017 < azure-devops"
 
-## Integrating with other services 
+## Integrating with other services
 
 If your team uses an external service to collaborate&mdash;such as Campfire, Flowdock, or Slack&mdash;you can configure notifications to be sent to these services. These services are supported out of the box:
 
-- [Campfire](../service-hooks/services/campfire.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json) 
-- [Flowdock](../service-hooks/services/flowdock.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json) 
-- [HipChat](../service-hooks/services/hipchat.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json) 
-- [Slack](../service-hooks/services/slack.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json)  
-- [Microsoft Teams](../service-hooks/services/teams.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json)
+* [Campfire](../service-hooks/services/campfire.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json)
+* [Flowdock](../service-hooks/services/flowdock.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json)
+* [HipChat](../service-hooks/services/hipchat.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json)
+* [Slack](../service-hooks/services/slack.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json)
+* [Microsoft Teams](../service-hooks/services/teams.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json)
 
 You can also use a third-party service like Zapier to send notifications to hundreds of other services. Learn more about [Zapier and Azure DevOps Services integration](../service-hooks/services/zapier.md).
 
@@ -54,8 +54,8 @@ You can also use a third-party service like Zapier to send notifications to hund
 ::: moniker range="< azure-devops"
 
 ## On-premises SMTP server
- 
-For on-premises Azure DevOps, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to  receive notifications.
+
+For on-premises Azure DevOps, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
 
 ::: moniker-end
 

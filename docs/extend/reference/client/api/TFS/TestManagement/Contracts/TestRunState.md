@@ -17,7 +17,7 @@ Module path: `TFS/TestManagement/Contracts`
 ### Values
 
 * `Unspecified` Only used during an update to preserve the existing value.
-* `NotStarted` The run is still being created.  No tests have started yet.
+* `NotStarted` The run is still being created. No tests have started yet.
 * `InProgress` Tests are running.
 * `Completed` All tests have completed or been skipped.
 * `Aborted` Run is stopped and remaining tests have been aborted

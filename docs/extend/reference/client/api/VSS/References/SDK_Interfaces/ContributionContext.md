@@ -15,8 +15,7 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Model for a contribution context object which is used for contributed content provided by this service (e.g. Hubs). The content may be included in the parent DOM or iframe. This context provides information about how to populate the content. 
+Model for a contribution context object which is used for contributed content provided by this service (e.g. Hubs). The content may be included in the parent DOM or iframe. This context provides information about how to populate the content.
 
 ### Members
 
@@ -39,4 +38,3 @@ Model for a contribution context object which is used for contributed content pr
 * `serviceUrl`: string. The root url of the service that can be used to resolve relative links when this content is hosted in another site.
 
 * `staticRootUrl`: string. The static root url for this service
-

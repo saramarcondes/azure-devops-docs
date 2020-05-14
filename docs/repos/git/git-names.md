@@ -11,7 +11,6 @@ ms.date: 03/14/2018
 monikerRange: '>= tfs-2013'
 ---
 
-
 # How names work in Git
 
 When you commit to your local repo, Git includes your name and email address as part of the commit.

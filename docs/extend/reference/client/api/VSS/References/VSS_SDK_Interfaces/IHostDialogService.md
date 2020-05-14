@@ -15,12 +15,10 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Service which manages showing dialogs in the parent frame 
+Service which manages showing dialogs in the parent frame
 
 ### Members
 
 * `openDialog`: (contributionId: string, dialogOptions: [IHostDialogOptions](./IHostDialogOptions.md), contributionConfig: Object, postContent: Object): IPromise&lt;[IExternalDialog](./IExternalDialog.md)&gt;. Open a modal dialog in the host frame, which gets its content from a contributed control.
 
 * `openMessageDialog`: (message: string, options: [IOpenMessageDialogOptions](./IOpenMessageDialogOptions.md)): IPromise&lt;[IMessageDialogResult](./IMessageDialogResult.md)&gt;. Open a modal dialog in the host frame, which displays the supplied message.
-

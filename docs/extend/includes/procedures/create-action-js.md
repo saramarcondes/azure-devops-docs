@@ -1,4 +1,4 @@
-1. Add your action to the contributions section of your extension manifest.
+1.  Add your action to the contributions section of your extension manifest.
 
     ```json
     "contributions": [
@@ -20,17 +20,16 @@
     ]
     ```
 
-   |      Property      |                                                                      Description                                                                       |
-   |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |        text        |                                                        Text that appears on the menu item.                                                         |
-   |       title        |                                                    Tooltip text that appears on the menu item.                                                     |
-   |        icon        |                              URL to an icon that appears on the menu item. Relative URLs are resolved using baseUri.                               |
-   |      groupId       | Determines where this menu item appears in relation to the others. [How to discover menu group identifiers](../../test/discover-menu-group-ids.md) |
-   |        uri         |                                           URI to a page that registers the menu action handler (see below).                                            |
-   | registeredObjectId |                                (Optional) Name of the registered menu action handler. Defaults to the contribution id.                                 |
+    | Property           | Description                                                                                                                                        |
+    | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+    | text               | Text that appears on the menu item.                                                                                                                |
+    | title              | Tooltip text that appears on the menu item.                                                                                                        |
+    | icon               | URL to an icon that appears on the menu item. Relative URLs are resolved using baseUri.                                                            |
+    | groupId            | Determines where this menu item appears in relation to the others. [How to discover menu group identifiers](../../test/discover-menu-group-ids.md) |
+    | uri                | URI to a page that registers the menu action handler (see below).                                                                                  |
+    | registeredObjectId | (Optional) Name of the registered menu action handler. Defaults to the contribution id.                                                            |
 
-
-2. Add an HTML page called ```action.html``` to your web app to handle your action.
+2)  Add an HTML page called `action.html` to your web app to handle your action.
 
     ```html
     <!DOCTYPE html>
@@ -48,7 +47,7 @@
     </html>
     ```
 
-3. Register a handler object to handle your action. For now, just raise an alert.
+3)  Register a handler object to handle your action. For now, just raise an alert.
 
     ```html
     <script src="sdk/scripts/VSS.SDK.js"></script>
@@ -73,7 +72,7 @@
     </script>
     ```
 
-4. Install your extension and try it out.
-   The action has been added to the context menu for queries and folders in the queries hub (work hub group).
+4)  Install your extension and try it out.
+    The action has been added to the context menu for queries and folders in the queries hub (work hub group).
 
     ![action in the context menu of a query](../../media-procedures/create-action/action.png)

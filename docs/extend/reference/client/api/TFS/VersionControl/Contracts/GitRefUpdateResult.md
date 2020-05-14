@@ -13,7 +13,6 @@ ms.date: 08/04/2016
 
 Module path: `TFS/VersionControl/Contracts`
 
-
 ### Members
 
 * `customMessage`: string. Custom message for the result object For instance, Reason for failing.
@@ -31,4 +30,3 @@ Module path: `TFS/VersionControl/Contracts`
 * `success`: boolean. True if the ref update succeeded, false otherwise
 
 * `updateStatus`: [GitRefUpdateStatus](../../../TFS/VersionControl/Contracts/GitRefUpdateStatus.md). Status of the update from the TFS server.
-

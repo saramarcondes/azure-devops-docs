@@ -13,9 +13,9 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
 > [!NOTE]
-> 
+>
 > This guidance applies to TFS version 2017.3 and newer.
-> 
+>
 > This guidance applies only to classic editor pipelines. It does not apply to YAML pipelines.
 
 You can link all important arguments for tasks used across the build definition as process parameters, which are then shown at one place - the Pipeline view.
@@ -28,7 +28,7 @@ Templates come with a set of predefined process parameters.
 ::: moniker-end
 
 > [!NOTE]
-> 
+>
 > The **Link** and **Unlink** functionality applies to build pipelines only. It does not apply to release pipelines.
 
 ::: moniker range="> tfs-2018"

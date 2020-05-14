@@ -2,7 +2,7 @@
 ms.topic: include
 ---
 
-::: moniker range=">= tfs-2017"  
+::: moniker range=">= tfs-2017"
 
 <table>
 <tr valign="bottom">
@@ -14,7 +14,7 @@ ms.topic: include
 </tr>
 <tbody valign="top" align="center">
 <tr>
-<td align="left">View delivery plans 
+<td align="left">View delivery plans
 </td>
 <td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -39,9 +39,5 @@ ms.topic: include
 </tr>
 </tbody>
 </table>
-  
-::: moniker-end  
 
-
-
-
+::: moniker-end

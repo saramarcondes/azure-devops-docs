@@ -15,10 +15,8 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Class used to wrap arrays in an object. 
+Class used to wrap arrays in an object.
 
 ### Members
 
-* `__wrappedArray`: string. 
-
+* `__wrappedArray`: string.

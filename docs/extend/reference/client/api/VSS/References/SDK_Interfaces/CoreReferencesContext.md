@@ -15,8 +15,7 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Contains lists of script and css references that need to be included on the page in order for the controls used by the page to work. 
+Contains lists of script and css references that need to be included on the page in order for the controls used by the page to work.
 
 ### Members
 
@@ -25,4 +24,3 @@ Contains lists of script and css references that need to be included on the page
 * `scripts`: [JavascriptFileReference](../../../VSS/References/SDK_Interfaces/JavascriptFileReference.md)[]. Core javascript files referenced on a page
 
 * `stylesheets`: [StylesheetReference](../../../VSS/References/SDK_Interfaces/StylesheetReference.md)[]. Core CSS files referenced on a page
-

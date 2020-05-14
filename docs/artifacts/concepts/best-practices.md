@@ -7,7 +7,7 @@ ms.date: 05/18/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Best practices for using Azure Artifacts 
+# Best practices for using Azure Artifacts
 
 This article contains some general guidance and best practices when it comes to producing and consuming packages in Azure DevOps Services or Team Foundation Server (TFS).
 

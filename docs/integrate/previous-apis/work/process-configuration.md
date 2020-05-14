@@ -20,31 +20,33 @@ ms.date: 08/17/2016
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 
-## Get a project's process configuration 
+## Get a project's process configuration
+
 <a id="GetProcessConfiguration"></a>
 
-[Projects](../tfs/projects.md) have process configuration, process configuration defines the behavior of backlogs and boards.  
+[Projects](../tfs/projects.md) have process configuration, process configuration defines the behavior of backlogs and boards.
 
-| Setting Name       | Description 
-|:------------------ |:---------   
-| typeFields         | Specifies a collection of TypeFields. TypeFields are abstractions of customizable fields. For example, the type of the "Story points" field is "Effort". 
-| taskBacklog        | Specifies the state and work item types for sprint backlog. 
-| requirementBacklog | Specifies the state and work item types for requirement backlog. 
-| portfolioBacklogs  | Specifies the state and work item types for portfolio backlogs. 
-| bugWorkItems       | Specifies the state and work item types for bugs.
+| Setting Name       | Description                                                                                                                                              |
+| :----------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| typeFields         | Specifies a collection of TypeFields. TypeFields are abstractions of customizable fields. For example, the type of the "Story points" field is "Effort". |
+| taskBacklog        | Specifies the state and work item types for sprint backlog.                                                                                              |
+| requirementBacklog | Specifies the state and work item types for requirement backlog.                                                                                         |
+| portfolioBacklogs  | Specifies the state and work item types for portfolio backlogs.                                                                                          |
+| bugWorkItems       | Specifies the state and work item types for bugs.                                                                                                        |
 
 ```no-highlight
 GET https://{instance}/DefaultCollection/{project}/_apis/Work/ProcessConfiguration?api-version={version}
 ```
 
-| Parameter  | Type     | Notes
-|:-----------|:---------|:----------------------------------------------------------------------------------------------------------------------------
-| URL
-| instance   | string   | TFS server name ({server:port}).
-| project    | string   | Name or ID of the project.
-| Query
-| api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
 
+
+| URL
+| instance | string | TFS server name ({server:port}).
+| project | string | Name or ID of the project.
+| Query
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
@@ -60,27 +62,32 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber/_apis/work/processconfi
     "Effort": {
       "referenceName": "Microsoft.VSTS.Scheduling.StoryPoints",
       "name": "Story Points",
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Scheduling.StoryPoints"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Scheduling.StoryPoints"
     },
     "Order": {
       "referenceName": "Microsoft.VSTS.Common.StackRank",
       "name": "Stack Rank",
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Common.StackRank"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Common.StackRank"
     },
     "RemainingWork": {
       "referenceName": "Microsoft.VSTS.Scheduling.RemainingWork",
       "name": "Remaining Work",
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Scheduling.RemainingWork"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Scheduling.RemainingWork"
     },
     "Team": {
       "referenceName": "System.AreaPath",
       "name": "Area Path",
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.AreaPath"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/fields/System.AreaPath"
     },
     "Activity": {
       "referenceName": "Microsoft.VSTS.Common.Activity",
       "name": "Activity",
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Common.Activity"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/fields/Microsoft.VSTS.Common.Activity"
     }
   },
   "taskBacklog": {
@@ -89,7 +96,8 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber/_apis/work/processconfi
     "workItemTypes": [
       {
         "name": "Task",
-        "url": "https://mytfsserver/DefaultCollection/60a4cee6-bcb6-4c30-9699-5e76c0d064ce/_apis/wit/workItemTypes/Task"
+        "url":
+          "https://mytfsserver/DefaultCollection/60a4cee6-bcb6-4c30-9699-5e76c0d064ce/_apis/wit/workItemTypes/Task"
       }
     ]
   },
@@ -99,7 +107,8 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber/_apis/work/processconfi
     "workItemTypes": [
       {
         "name": "User Story",
-        "url": "https://mytfsserver/DefaultCollection/60a4cee6-bcb6-4c30-9699-5e76c0d064ce/_apis/wit/workItemTypes/User%20Story"
+        "url":
+          "https://mytfsserver/DefaultCollection/60a4cee6-bcb6-4c30-9699-5e76c0d064ce/_apis/wit/workItemTypes/User%20Story"
       }
     ]
   },
@@ -110,7 +119,8 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber/_apis/work/processconfi
       "workItemTypes": [
         {
           "name": "Epic",
-          "url": "https://mytfsserver/DefaultCollection/60a4cee6-bcb6-4c30-9699-5e76c0d064ce/_apis/wit/workItemTypes/Epic"
+          "url":
+            "https://mytfsserver/DefaultCollection/60a4cee6-bcb6-4c30-9699-5e76c0d064ce/_apis/wit/workItemTypes/Epic"
         }
       ]
     },
@@ -120,7 +130,8 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber/_apis/work/processconfi
       "workItemTypes": [
         {
           "name": "Feature",
-          "url": "https://mytfsserver/DefaultCollection/60a4cee6-bcb6-4c30-9699-5e76c0d064ce/_apis/wit/workItemTypes/Feature"
+          "url":
+            "https://mytfsserver/DefaultCollection/60a4cee6-bcb6-4c30-9699-5e76c0d064ce/_apis/wit/workItemTypes/Feature"
         }
       ]
     }
@@ -131,10 +142,12 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber/_apis/work/processconfi
     "workItemTypes": [
       {
         "name": "Bug",
-        "url": "https://mytfsserver/DefaultCollection/60a4cee6-bcb6-4c30-9699-5e76c0d064ce/_apis/wit/workItemTypes/Bug"
+        "url":
+          "https://mytfsserver/DefaultCollection/60a4cee6-bcb6-4c30-9699-5e76c0d064ce/_apis/wit/workItemTypes/Bug"
       }
     ]
   },
-  "url": "https://mytfsserver/DefaultCollection/60a4cee6-bcb6-4c30-9699-5e76c0d064ce/_apis/work/processconfiguration"
+  "url":
+    "https://mytfsserver/DefaultCollection/60a4cee6-bcb6-4c30-9699-5e76c0d064ce/_apis/work/processconfiguration"
 }
 ```

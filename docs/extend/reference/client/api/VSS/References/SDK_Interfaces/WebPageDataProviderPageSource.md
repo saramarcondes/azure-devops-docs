@@ -15,8 +15,7 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Contextual data for web-page-related data providers about the originating (host/source) page 
+Contextual data for web-page-related data providers about the originating (host/source) page
 
 ### Members
 
@@ -27,4 +26,3 @@ Contextual data for web-page-related data providers about the originating (host/
 * `team`: [TeamContext](../../../VSS/References/SDK_Interfaces/TeamContext.md). The team context for the host page that is loading the data provider
 
 * `url`: string. The url of the host page that is loading the data provider
-

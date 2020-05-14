@@ -28,7 +28,7 @@ Set permissions across all Git repositories by making changes to the top-level *
 <td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Create, delete, and rename repositories 
+<td align="left">Create, delete, and rename repositories
 </td>
 <td>  </td>
 <td>  </td>
@@ -44,7 +44,7 @@ Set permissions across all Git repositories by making changes to the top-level *
 <td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Bypass policies when completing pull requests, Bypass policies when pushing, Force push (rewrite history, delete branches and tags)  <em>(not set for any security group)</em> 
+<td align="left">Bypass policies when completing pull requests, Bypass policies when pushing, Force push (rewrite history, delete branches and tags)  <em>(not set for any security group)</em>
 </td>
 <td>  </td>
 <td>  </td>
@@ -54,9 +54,7 @@ Set permissions across all Git repositories by making changes to the top-level *
 </tbody>
 </table>
 
-
 ::: moniker-end
-
 
 ::: moniker range="tfs-2015"
 
@@ -103,7 +101,7 @@ By default, the project-level Readers groups have read-only permissions.
 <tr>
 <td align="left"><strong>Administer</strong>: Delete and rename repositories
 <p>If assigned to the top-level <strong>Git repositories</strong> entry, can add additional repositories. At the branch level, users can set permissions for the branch and unlock the branch. The Administer permission set on an individual Git repository does not grant the ability to rename or delete the repository. These tasks require
-Administer permissions at the top-level <strong>Git repositories</strong> entry. 
+Administer permissions at the top-level <strong>Git repositories</strong> entry.
 </td>
 <td>  </td>
 <td>  </td>

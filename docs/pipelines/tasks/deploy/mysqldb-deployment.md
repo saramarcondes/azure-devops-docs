@@ -15,13 +15,13 @@ Use this task to run your scripts and make changes to your MySQL Database. There
 
 ## Prerequisites
 
-- MySQL Client in agent box
+* MySQL Client in agent box
 
 The task expects MySQL client must be in agent box.
 
-- **Windows Agent**: Use this [script file](https://aka.ms/window-mysqlcli-installer) to install MySQL client
+* **Windows Agent**: Use this [script file](https://aka.ms/window-mysqlcli-installer) to install MySQL client
 
-- **Linux Agent**: Run command 'apt-get install mysql-client' to install MySQL client
+* **Linux Agent**: Run command 'apt-get install mysql-client' to install MySQL client
 
 ## Task Inputs
 
@@ -57,4 +57,3 @@ steps:
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
-

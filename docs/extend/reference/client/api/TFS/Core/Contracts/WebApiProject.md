@@ -23,4 +23,3 @@ Extends: [TeamProjectReference](../../../TFS/DistributedTask/Contracts/TeamProje
 * `collection`: [WebApiProjectCollectionRef](../../../TFS/Core/Contracts/WebApiProjectCollectionRef.md). Reference to collection which contains this project
 
 * `defaultTeam`: [WebApiTeamRef](../../../TFS/Core/Contracts/WebApiTeamRef.md). Default team for this project
-

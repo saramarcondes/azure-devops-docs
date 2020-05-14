@@ -29,9 +29,10 @@ By default, all project contributors have read and edit access of the wiki repos
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
+
 > [!NOTE]  
-> **Feature availability**: The built-in wiki is available with TFS 2018 and later versions. 
-::: moniker-end
+> **Feature availability**: The built-in wiki is available with TFS 2018 and later versions.
+> ::: moniker-end
 
 ::: moniker range=">=tfs-2018"
 
@@ -64,5 +65,5 @@ Users with [Stakeholder access](../../organizations/security/get-started-stakeho
 
 ## Related articles
 
-- [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md)
-- [Get Started with Git](../../repos/git/gitquickstart.md)
+* [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md)
+* [Get Started with Git](../../repos/git/gitquickstart.md)

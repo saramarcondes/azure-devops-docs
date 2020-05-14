@@ -21,15 +21,15 @@ You can view and manage your pipelines by choosing **Pipelines** from the left-h
 
 You can drill down and view pipeline details, run details, pipeline analytics, job details, logs, and more.
 
-At the top of each page is a breadcrumb navigation bar. Select the different areas of the bar to navigate to different areas of the portal. The breadcrumb navigation is a convenient way to go back one or more steps. 
+At the top of each page is a breadcrumb navigation bar. Select the different areas of the bar to navigate to different areas of the portal. The breadcrumb navigation is a convenient way to go back one or more steps.
 
 ![Breadcrumb navigation](media/breadcrumb-navigation.png)
 
-1. This area of the breadcrumb navigation shows you what page you're currently viewing. In this example, the page is the run summary for run number **20191209.3**.
-2. One level up is a link to the [pipeline details](#view-pipeline-details) for that run.
-3. The next level up is the [pipelines landing page](#pipelines-landing-page).
-4. This link is to the **FabrikamFiber** project, which contains the pipeline for this run.
-5. The root breadcrumb link is to the Azure DevOps **fabrikam-tailspin** organization, which contains the project that contains the pipeline.
+1.  This area of the breadcrumb navigation shows you what page you're currently viewing. In this example, the page is the run summary for run number **20191209.3**.
+2.  One level up is a link to the [pipeline details](#view-pipeline-details) for that run.
+3.  The next level up is the [pipelines landing page](#pipelines-landing-page).
+4.  This link is to the **FabrikamFiber** project, which contains the pipeline for this run.
+5.  The root breadcrumb link is to the Azure DevOps **fabrikam-tailspin** organization, which contains the project that contains the pipeline.
 
 Many pages also contain a back button that takes you to the previous page.
 
@@ -96,6 +96,7 @@ If the pipeline is running, you can cancel it by choosing **Cancel**. If the run
 ![Cancel pipeline run](media/cancel-pipeline-run.png)
 
 <a name="download-logs"></a>
+
 ### Pipeline run context menu
 
 From the context menu you can download logs, add tags, edit the pipeline, delete the run, and configure [retention](../policies/retention.md) for the run.
@@ -104,7 +105,6 @@ From the context menu you can download logs, add tags, edit the pipeline, delete
 
 > [!NOTE]
 > You can't delete a run if the run is retained. If you don't see **Delete**, choose **Stop retaining run**, and then delete the run. If you see both **Delete** and **View retention releases**, one or more configured retention policies still apply to your run. Choose **View retention releases**, delete the policies (only the policies for the selected run are removed), and then delete the run.
-
 
 ### Jobs and stages
 
@@ -142,8 +142,3 @@ Learn more about configuring pipelines in the language of your choice:
 Learn more about building [Azure Repos](../repos/azure-repos-git.md) and [GitHub](../repos/github.md) repositories.
 
 To learn what else you can do in YAML pipelines, see [Customize your pipeline](../customize-pipeline.md), and for a complete reference see [YAML schema reference](../yaml-schema.md).
-
-
-
-
-

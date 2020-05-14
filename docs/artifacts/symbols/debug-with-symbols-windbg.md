@@ -16,8 +16,8 @@ Symbol servers enable debuggers to automatically retrieve the correct symbol fil
 
 ## Ensure WinDbg can find tf.exe
 
-1. Open `C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\srcsrv.ini`
-2. Ensure that it contains the following content:
+1.  Open `C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\srcsrv.ini`
+2.  Ensure that it contains the following content:
 
 ```
 [trusted commands]
@@ -28,12 +28,12 @@ tf.exe="CommonExtensions\Microsoft\TeamFoundation\Team Explorer\TF.exe"
 
 To use the Azure DevOps Services symbol server in WinDbg, you'll add your organization to the symbol search path.
 
-1. Open WinDbg (you can [install it from the Store](https://www.microsoft.com/store/p/windbg-preview/9pgjgd53tn86)).
-2. Load the executable you wish to debug.
-3. Copy this command and replace `<yourOrg>` with your Azure DevOps Services account name: `.sympath+ https://artifacts.dev.azure.com/<yourOrg>/_apis/symbol/symsrv`
-4. In the Command window in WinDbg, enter the command from the previous step
-5. Set a breakpoint (`bp`), which will cause WinDbg to issue a symbols request
-6. Create a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with the **Symbols (read)** scope and copy it to your clipboard
-7. In the authentication prompt that appears, leave the username blank and enter your PAT from the previous step as the password
+1.  Open WinDbg (you can [install it from the Store](https://www.microsoft.com/store/p/windbg-preview/9pgjgd53tn86)).
+2.  Load the executable you wish to debug.
+3.  Copy this command and replace `<yourOrg>` with your Azure DevOps Services account name: `.sympath+ https://artifacts.dev.azure.com/<yourOrg>/_apis/symbol/symsrv`
+4.  In the Command window in WinDbg, enter the command from the previous step
+5.  Set a breakpoint (`bp`), which will cause WinDbg to issue a symbols request
+6.  Create a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with the **Symbols (read)** scope and copy it to your clipboard
+7.  In the authentication prompt that appears, leave the username blank and enter your PAT from the previous step as the password
 
 WinDbg should then acquire symbols for your executable. You can run `lm` to confirm.

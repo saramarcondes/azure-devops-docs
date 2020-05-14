@@ -11,25 +11,28 @@ ms.date: 08/04/2016
 
 # Service hook consumers
 
-Use service hook consumers to [programmatically create a subscription](./create-subscription.md). The subscription specifies the event, the consumer and the action. 
+Use service hook consumers to [programmatically create a subscription](./create-subscription.md). The subscription specifies the event, the consumer and the action.
 Select the consumer that you want to use in your subscription from the following consumers:
 
-- [Azure Service Bus](#azureservicebus)
-- [Azure Storage](#azurestorage)
-- [Campfire](#campfire)
-- [Flowdock](#flowdock)
-- [HipChat](#hipchat)
-- [Jenkins](#jenkins)
-- [Kato](#kato)
-- [Trello](#trello)
-- [Web Hooks](#webhooks)
-- [Zendesk](#zendesk)
+* [Azure Service Bus](#azureservicebus)
+* [Azure Storage](#azurestorage)
+* [Campfire](#campfire)
+* [Flowdock](#flowdock)
+* [HipChat](#hipchat)
+* [Jenkins](#jenkins)
+* [Kato](#kato)
+* [Trello](#trello)
+* [Web Hooks](#webhooks)
+* [Zendesk](#zendesk)
 
 <a id="azureservicebus"></a>
+
 ## Azure Service Bus
+
 Provides integration with Microsoft Azure Service Bus, including Notification Hubs.
 
 ### Send a message to a Notification Hub
+
 This action sends a generic, template notification to the specified Azure Notification Hub. [Learn more](https://go.microsoft.com/fwlink/?LinkID=392636).
 
 * Consumer ID: **azureServiceBus**
@@ -53,6 +56,7 @@ This action sends a generic, template notification to the specified Azure Notifi
     * Required: **No**
 
 ### Send a message to a Service Bus Queue
+
 This action sends a JSON string representation of the event to the specified Azure Service Bus queue. [Learn more](https://go.microsoft.com/fwlink/?LinkID=392636).
 
 * Consumer ID: **azureServiceBus**
@@ -86,6 +90,7 @@ This action sends a JSON string representation of the event to the specified Azu
     * Required: **No**
 
 ### Send a message to a Service Bus Topic
+
 This action sends a JSON string representation of the event to the specified Azure Service Bus topic. [Learn more](https://go.microsoft.com/fwlink/?LinkID=392636).
 
 * Consumer ID: **azureServiceBus**
@@ -119,10 +124,13 @@ This action sends a JSON string representation of the event to the specified Azu
     * Required: **No**
 
 <a id="azurestorage"></a>
+
 ## Azure Storage
+
 Provides integration with Microsoft Azure Storage.
 
 ### Insert a message in a Storage Queue
+
 This action inserts a JSON string representation of the event to the specified Azure storage queue. [Learn more](https://go.microsoft.com/fwlink/?LinkID=390532).
 
 * Consumer ID: **azureStorageQueue**
@@ -131,7 +139,7 @@ This action inserts a JSON string representation of the event to the specified A
 * Settings:
   * **accountName**
     * Storage account name
-    * The name associated with your Azure storage account (e.g. ```https://STORAGE_ACCOUNT_NAME.queue.core.windows.net```).
+    * The name associated with your Azure storage account (e.g. `https://STORAGE_ACCOUNT_NAME.queue.core.windows.net`).
     * Data type: **string**
     * Required: **Yes**
   * **accountKey**
@@ -141,7 +149,7 @@ This action inserts a JSON string representation of the event to the specified A
     * Required: **Yes**
   * **queueName**
     * Queue name
-    * The lowercase-only name of the queue to be used within Azure storage.  A queue by this name will be created if it does not already exist.
+    * The lowercase-only name of the queue to be used within Azure storage. A queue by this name will be created if it does not already exist.
     * Data type: **string**
     * Required: **Yes**
   * **visiTimeout**
@@ -171,10 +179,13 @@ This action inserts a JSON string representation of the event to the specified A
     * Required: **No**
 
 <a id="campfire"></a>
+
 ## Campfire
+
 Campfire is like instant messaging, but designed exclusively for groups.
 
 ### Post a message to a room
+
 Post a message about the event to a room in Campfire. [Learn more](https://go.microsoft.com/fwlink/?LinkID=393613).
 
 * Consumer ID: **campfire**
@@ -183,7 +194,7 @@ Post a message about the event to a room in Campfire. [Learn more](https://go.mi
 * Settings:
   * **accountName**
     * Account name
-    * Account name like ```https://{account name}.campfirenow.com```
+    * Account name like `https://{account name}.campfirenow.com`
     * Data type: **string**
     * Required: **Yes**
   * **authToken**
@@ -203,10 +214,13 @@ Post a message about the event to a room in Campfire. [Learn more](https://go.mi
     * Required: **No**
 
 <a id="flowdock"></a>
+
 ## Flowdock
+
 Flowdock is chat and inbox for teams.
 
 ### Post a message to a team chat
+
 Post a message about the event to a team chat in Flowdock. [Learn more](https://go.microsoft.com/fwlink/?LinkId=392098).
 
 * Consumer ID: **flowdock**
@@ -240,6 +254,7 @@ Post a message about the event to a team chat in Flowdock. [Learn more](https://
     * Required: **No**
 
 ### Post a message to a team inbox
+
 Post a message about the event to a team inbox in Flowdock. [Learn more](https://go.microsoft.com/fwlink/?LinkId=392098).
 
 * Consumer ID: **flowdock**
@@ -293,10 +308,13 @@ Post a message about the event to a team inbox in Flowdock. [Learn more](https:/
     * Required: **No**
 
 <a id="hipchat"></a>
+
 ## HipChat
+
 HipChat provides group instant messaging for companies and teams.
 
 ### Post a message to a room
+
 Post a message about the event to a room in HipChat. [Learn more](https://go.microsoft.com/fwlink/?LinkId=392098).
 
 * Consumer ID: **hipChat**
@@ -330,10 +348,13 @@ Post a message about the event to a room in HipChat. [Learn more](https://go.mic
     * Required: **No**
 
 <a id="jenkins"></a>
+
 ## Jenkins
+
 Jenkins is a continuous integration server which allows building and testing software projects continuously.
 
 ### Trigger Git build
+
 Triggers a build configured to use a Git repository using the [Jenkins Git Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin).
 
 * Consumer ID: **jenkins**
@@ -357,6 +378,7 @@ Triggers a build configured to use a Git repository using the [Jenkins Git Plugi
     * Required: **Yes**
 
 ### Trigger generic build
+
 Triggers a generic Jenkins build, invoking the Jenkins build URL.
 
 * Consumer ID: **jenkins**
@@ -400,10 +422,13 @@ Triggers a generic Jenkins build, invoking the Jenkins build URL.
     * Required: **No**
 
 <a id="kato"></a>
+
 ## Kato
+
 Kato provides a messaging service for modern organizations.
 
 ### Post event to room
+
 Posts an event to a Kato room
 
 * Consumer ID: **kato**
@@ -422,10 +447,13 @@ Posts an event to a Kato room
     * Required: **No**
 
 <a id="trello"></a>
+
 ## Trello
+
 Provides integration with Trello.
 
 ### Create a card
+
 This action creates a card on an existing list in Trello. A card can represent a task, issue, event, or just about anything. A card's state is typically determined by what list it is on. [Learn more](https://go.microsoft.com/fwlink/?LinkID=390530).
 
 * Consumer ID: **trello**
@@ -434,7 +462,7 @@ This action creates a card on an existing list in Trello. A card can represent a
 * Settings:
   * **userToken**
     * User token (need one? [Get it now](https://go.microsoft.com/fwlink/?LinkID=390580).)
-    * Your user token provided by Trello.  Click the link in the action description above to learn how to obtain this token.
+    * Your user token provided by Trello. Click the link in the action description above to learn how to obtain this token.
     * Data type: **string**
     * Required: **Yes**
   * **boardId**
@@ -459,6 +487,7 @@ This action creates a card on an existing list in Trello. A card can represent a
     * Required: **No**
 
 ### Create a list
+
 This action creates a list on an existing board in Trello. A list is used to organize cards on a board and typically represents a state. [Learn more](https://go.microsoft.com/fwlink/?LinkID=390530).
 
 * Consumer ID: **trello**
@@ -467,7 +496,7 @@ This action creates a list on an existing board in Trello. A list is used to org
 * Settings:
   * **userToken**
     * User token (need one? [Get it now](https://go.microsoft.com/fwlink/?LinkID=390580).)
-    * Your user token provided by Trello.  Click the link in the action description above to learn how to obtain this token.
+    * Your user token provided by Trello. Click the link in the action description above to learn how to obtain this token.
     * Data type: **string**
     * Required: **Yes**
   * **boardId**
@@ -482,10 +511,13 @@ This action creates a list on an existing board in Trello. A list is used to org
     * Required: **No**
 
 <a id="webhooks"></a>
+
 ## Web Hooks
+
 Provides event communication via HTTP.
 
 ### Post via HTTP
+
 This action posts a JSON object representation of the event to the specified URL. HTTPS endpoints are recommended due to the potential for private data in the event payload. [Learn more](https://go.microsoft.com/fwlink/?LinkID=390531).
 
 * Consumer ID: **webHooks**
@@ -504,12 +536,12 @@ This action posts a JSON object representation of the event to the specified URL
     * Required: **No**
   * **basicAuthUsername**
     * Basic authentication username
-    * Enter a username for standard HTTP authentication.  Basic HTTP authentication sends credentials in plain text (unencrypted) which means you should use a URL beginning with "https" to enable encryption of these credentials via secure transport layer (SSL).
+    * Enter a username for standard HTTP authentication. Basic HTTP authentication sends credentials in plain text (unencrypted) which means you should use a URL beginning with "https" to enable encryption of these credentials via secure transport layer (SSL).
     * Data type: **string**
     * Required: **No**
   * **basicAuthPassword**
     * Basic authentication password
-    * Enter a password for standard HTTP authentication.  Basic HTTP authentication sends credentials in plain text (unencrypted) which means you should use a URL beginning with "https" to enable encryption of these credentials via secure transport layer (SSL).
+    * Enter a password for standard HTTP authentication. Basic HTTP authentication sends credentials in plain text (unencrypted) which means you should use a URL beginning with "https" to enable encryption of these credentials via secure transport layer (SSL).
     * Data type: **string**
     * Required: **No**
   * **resourceDetailsToSend**
@@ -529,10 +561,13 @@ This action posts a JSON object representation of the event to the specified URL
     * Required: **No**
 
 <a id="zendesk"></a>
+
 ## Zendesk
+
 Zendesk is a SaaS suite that offers help desk ticketing, issue tracking, and customer service support.
 
 ### Create a private comment in a ticket
+
 Create a private comment in a ticket
 
 * Consumer ID: **zendesk**
@@ -541,7 +576,7 @@ Create a private comment in a ticket
 * Settings:
   * **accountName**
     * Account name
-    * Zendesk account name like ```https://{account name}.zendesk.com```
+    * Zendesk account name like `https://{account name}.zendesk.com`
     * Data type: **string**
     * Required: **Yes**
   * **username**
@@ -554,5 +589,3 @@ Create a private comment in a ticket
     * The Zendesk API token (can be found in Zendesk app in Admin > Channels > API)
     * Data type: **string**
     * Required: **Yes**
-
-

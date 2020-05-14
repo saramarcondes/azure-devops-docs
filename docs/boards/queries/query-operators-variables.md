@@ -12,23 +12,22 @@ monikerRange: '>= tfs-2013'
 ms.date: 02/04/2019
 ---
 
-
 # Query fields, operators, and macros
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
-Here you'll find detailed descriptions of each field data type, query operators, and query macros. Some data types, operators, and macros are only valid for the indicated Azure DevOps Server or Team Foundation Server (TFS) version. 
+Here you'll find detailed descriptions of each field data type, query operators, and query macros. Some data types, operators, and macros are only valid for the indicated Azure DevOps Server or Team Foundation Server (TFS) version.
 
 For a quick reference of query tasks and operators and macros supported for each data type, see [Query quick reference](query-index-quick-ref.md). See also [Guidance to create high-performing queries](high-performing-queries.md) for tips on constructing high-performing queries.
 
-<a id="field-values" /> 
+<a id="field-values" />
 
 ## Query field data types and values
 
 The value you specify for a field must conform to the data type for that field. The following table lists the supported data types:
 
 > [!NOTE]  
-> For Azure Boards cloud service, the data type corresponds to that listed for the field on the [Process>Fields page](../../organizations/settings/work/customize-process-field.md#review-fields). For on-premises deployments, the data type corresponds to the `type` attribute assigned to a [`FIELD` definition](../../reference/xml/field-definition-element-reference.md). For more information, see [Work item fields and field attributes](../work-items/work-item-fields.md). 
+> For Azure Boards cloud service, the data type corresponds to that listed for the field on the [Process>Fields page](../../organizations/settings/work/customize-process-field.md#review-fields). For on-premises deployments, the data type corresponds to the `type` attribute assigned to a [`FIELD` definition](../../reference/xml/field-definition-element-reference.md). For more information, see [Work item fields and field attributes](../work-items/work-item-fields.md).
 
 <table valign="top">
 <thead>
@@ -82,7 +81,7 @@ The value you specify for a field must conform to the data type for that field. 
     <td><p>Short text string that can contain up to 255 Unicode characters. String text fields are often used to support picklists or drop-down menus.  </p></td></tr>
 <tr>
     <td><p> <strong>TreePath</strong> </p></td>
-    <td><p>A branching tree structure, such as an Area Path or Iteration path. You can choose an item from a list of valid values. You can find work items that equal, not equal, under or not under a tree structure, or use the In or Not In operators to specify several values.  You define the tree structure for a project&mdash;<a href="../../organizations/settings/set-area-paths.md" data-raw-source="[area paths](../../organizations/settings/set-area-paths.md)">area paths</a> and <a href="../../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)">iteration paths</a>&mdash;and then select the ones you want to associate with a team.</p> 
+    <td><p>A branching tree structure, such as an Area Path or Iteration path. You can choose an item from a list of valid values. You can find work items that equal, not equal, under or not under a tree structure, or use the In or Not In operators to specify several values.  You define the tree structure for a project&mdash;<a href="../../organizations/settings/set-area-paths.md" data-raw-source="[area paths](../../organizations/settings/set-area-paths.md)">area paths</a> and <a href="../../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)">iteration paths</a>&mdash;and then select the ones you want to associate with a team.</p>
     <p>For more information on constructing queries, see <a href="query-by-area-iteration-path.md" data-raw-source="[Query by area or iteration path](query-by-area-iteration-path.md)">Query by area or iteration path</a> or <a href="query-by-area-iteration-path.md" data-raw-source="[Query by date or current iteration](query-by-area-iteration-path.md)">Query by date or current iteration</a>.</p></td>
 </tr>
 
@@ -90,11 +89,11 @@ The value you specify for a field must conform to the data type for that field. 
 </table>
 
 #### Notes:
-1. The **Boolean** data type field is supported for TFS 2017 and later versions. 
-2. The **picklist...** data types are only assigned to custom fields defined for an inherited process. The Inherited process model is only supported for Azure DevOps Services and Azure DevOps Server 2019. 
 
+1.  The **Boolean** data type field is supported for TFS 2017 and later versions.
+2.  The **picklist...** data types are only assigned to custom fields defined for an inherited process. The Inherited process model is only supported for Azure DevOps Services and Azure DevOps Server 2019.
 
-<a id="operators" /> 
+<a id="operators" />
 
 ## Query operators
 
@@ -207,7 +206,7 @@ You can use query operators in the following table to specify how each value in 
     <td><p><strong>Not in Group</strong></p></td>
     <td><p>Does not match a value that is a member of the group in the clause.</p></td>
     <td><p> <strong>String</strong>  that matches the name of a user group in Team Foundation Server or a category group defined for a project.</p>
-<blockquote><strong>Note:</strong>  You can use the <strong>Not In Group</strong> operator only with fields that use the <strong>String</strong> data type or the <strong>Work Item Type</strong> field. You can also use groups defined in AAD when your Azure Boards account is backed by AAD, or AD when your on-premises server instance is backed by AD. 
+<blockquote><strong>Note:</strong>  You can use the <strong>Not In Group</strong> operator only with fields that use the <strong>String</strong> data type or the <strong>Work Item Type</strong> field. You can also use groups defined in AAD when your Azure Boards account is backed by AAD, or AD when your on-premises server instance is backed by AD.
 </blockquote>
 </td>
 </tr>
@@ -226,15 +225,15 @@ You can use query operators in the following table to specify how each value in 
 </tbody>
 </table>
 
-<a id="variables" /> 
-<a id="macros" /> 
+<a id="variables" />
+<a id="macros" />
 
 ## Query macros or variables
 
-You can use the macros described in the following table to filter your queries based on specific fields. 
+You can use the macros described in the following table to filter your queries based on specific fields.
 
 > [!NOTE]
-> The following macros are only supported from the web portal: <strong>@CurrentIteration</strong>, <strong>@Follows</strong>, <strong>@MyRecentActivity</strong>, <strong>@RecentMentions</strong>, <strong>@RecentProjectActivity</strong>, <strong>@TeamAreas</strong>. Queries that contain these macros won't work when opened in Visual Studio/Team Explorer, Microsoft Excel, or Microsoft Project. 
+> The following macros are only supported from the web portal: <strong>@CurrentIteration</strong>, <strong>@Follows</strong>, <strong>@MyRecentActivity</strong>, <strong>@RecentMentions</strong>, <strong>@RecentProjectActivity</strong>, <strong>@TeamAreas</strong>. Queries that contain these macros won't work when opened in Visual Studio/Team Explorer, Microsoft Excel, or Microsoft Project.
 
 <table>
 <thead valign="bottom">
@@ -249,7 +248,6 @@ You can use the macros described in the following table to filter your queries b
     <td>Use in conjunction with the <strong>Work Item Type</strong> field to search across all work item types. For example, <code>Work Item Type=[Any]</code> won&#39;t place any filters based on the work item type.
 </td>
 </tr>
-
 
 <tr>
     <td><strong><xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref></strong> <sup>1</sup></td>
@@ -266,7 +264,7 @@ You can use the macros described in the following table to filter your queries b
 
 <tr>
     <td><strong><xref href="Follows" data-throw-if-not-resolved="False" data-raw-source="@Follows"></xref></strong> <sup>3</sup></td>
-    <td>Use in conjunction with the <strong>ID</strong> field and <strong>In</strong> operator to list all work items that you are following in the project. To learn more about the Follow feature, see <a href="../work-items/follow-work-items.md" data-raw-source="[Follow a work item or pull request](../work-items/follow-work-items.md)">Follow a work item or pull request</a>. You can view this same list from the <a href="../work-items/view-add-work-items.md" data-raw-source="[Work Items page, **Following** pivot view](../work-items/view-add-work-items.md)">Work Items page, <strong>Following</strong> pivot view</a>. 
+    <td>Use in conjunction with the <strong>ID</strong> field and <strong>In</strong> operator to list all work items that you are following in the project. To learn more about the Follow feature, see <a href="../work-items/follow-work-items.md" data-raw-source="[Follow a work item or pull request](../work-items/follow-work-items.md)">Follow a work item or pull request</a>. You can view this same list from the <a href="../work-items/view-add-work-items.md" data-raw-source="[Work Items page, **Following** pivot view](../work-items/view-add-work-items.md)">Work Items page, <strong>Following</strong> pivot view</a>.
 </td>
 </tr>
 
@@ -282,22 +280,21 @@ You can use the macros described in the following table to filter your queries b
 </td>
 </tr>
 
-
 <tr>
     <td><strong><xref href="Project" data-throw-if-not-resolved="False" data-raw-source="@Project"></xref></strong> <sup>5</sup></td>
-    <td>Use in conjunction with the <strong>Team Project</strong> field to filter for work items in the current project. For example, you can find all the work items in the current project with the clause <code>Team Project=<xref href="Project" data-throw-if-not-resolved="False" data-raw-source="@Project"></xref></code>. 
+    <td>Use in conjunction with the <strong>Team Project</strong> field to filter for work items in the current project. For example, you can find all the work items in the current project with the clause <code>Team Project=<xref href="Project" data-throw-if-not-resolved="False" data-raw-source="@Project"></xref></code>.
 </td>
 </tr>
 
 <tr>
     <td><b><xref href="RecentMentions" data-throw-if-not-resolved="False" data-raw-source="@RecentMentions"></xref></b> <sup>4</sup></td>
-    <td>Use in conjunction with the <strong>ID</strong> field and <strong>In</strong> operator to list work items where you have been mentioned in the Discussion section. You can view this same list from the <a href="../work-items/view-add-work-items.md" data-raw-source="[Work Items page, **Mentioned** pivot view](../work-items/view-add-work-items.md)">Work Items page, <strong>Mentioned</strong> pivot view</a>. 
+    <td>Use in conjunction with the <strong>ID</strong> field and <strong>In</strong> operator to list work items where you have been mentioned in the Discussion section. You can view this same list from the <a href="../work-items/view-add-work-items.md" data-raw-source="[Work Items page, **Mentioned** pivot view](../work-items/view-add-work-items.md)">Work Items page, <strong>Mentioned</strong> pivot view</a>.
 </td>
 </tr>
 
 <tr>
     <td><strong><xref href="RecentProjectActivity" data-throw-if-not-resolved="False" data-raw-source="@RecentProjectActivity"></xref></strong> <sup>6</sup></td>
-    <td>Use in conjunction with the <strong>ID</strong> field and <strong>In</strong> operator to list work items that have been updated in the project within the last 30 days. You can view similar lists from the <a href="../work-items/view-add-work-items.md" data-raw-source="[Work Items page, **Recently created**, **Recently updated** and **Recently completed** pivot views](../work-items/view-add-work-items.md)">Work Items page, <strong>Recently created</strong>, <strong>Recently updated</strong> and <strong>Recently completed</strong> pivot views</a>. 
+    <td>Use in conjunction with the <strong>ID</strong> field and <strong>In</strong> operator to list work items that have been updated in the project within the last 30 days. You can view similar lists from the <a href="../work-items/view-add-work-items.md" data-raw-source="[Work Items page, **Recently created**, **Recently updated** and **Recently completed** pivot views](../work-items/view-add-work-items.md)">Work Items page, <strong>Recently created</strong>, <strong>Recently updated</strong> and <strong>Recently completed</strong> pivot views</a>.
 </td>
 </tr>
 
@@ -331,37 +328,34 @@ You can use the macros described in the following table to filter your queries b
     <td>Use with a <code>DateTime</code> field to filter for work items that relate to the current date or to an earlier date. You can also modify the <strong><xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref></strong> macro by subtracting days. For example, you can find all items created in the last week with the clause <code>Created Date&gt;=<xref href="Today-7" data-throw-if-not-resolved="False" data-raw-source="@Today-7"></xref></code>. For additional examples, see <a href="query-by-date-or-current-iteration.md" data-raw-source="[Query by date or current iteration](query-by-date-or-current-iteration.md)">Query by date or current iteration</a>.</td>
 </tr>
 
-
-
-</tbody> 
+</tbody>
 </table>
 
 #### Notes:
-1. The <strong><xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref></strong> macro is supported for Azure Boards and TFS 2015 and later versions. 
-1. The <strong><xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref> +/- n</strong> macro is supported for Azure Boards, Azure DevOps Server 2019 and later versions,  and only when run from the web portal. 
-1. The <strong><xref href="Follows" data-throw-if-not-resolved="False" data-raw-source="@Follows"></xref></strong> macro is supported for Azure Boards and TFS 2017 and later versions.
-1. The <strong><xref href="MyRecentActivity" data-throw-if-not-resolved="False" data-raw-source="@MyRecentActivity"></xref></strong>, <strong><xref href="RecentMentions" data-throw-if-not-resolved="False" data-raw-source="@RecentMentions"></xref></strong>, <strong><xref href="RecentProjectActivity" data-throw-if-not-resolved="False" data-raw-source="@RecentProjectActivity"></xref></strong> macros are supported for Azure Boards and TFS 2018.2 and later versions.
-1. The <strong><xref href="Project" data-throw-if-not-resolved="False" data-raw-source="@Project"></xref></strong> macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see <a href="using-queries.md#across-projects" data-raw-source="[Query across projects](using-queries.md#across-projects)">Query across projects</a>. 
-1. The <strong><xref href="RecentProjectActivity**" data-throw-if-not-resolved="False" data-raw-source="@RecentProjectActivity**"></xref> macro is supported for Azure Boards (cloud service) only at this time.
-1. The <strong><xref href="StartOfDay" data-throw-if-not-resolved="False" data-raw-source="@StartOfDay"></xref></strong>, <strong><xref href="StartOfWeek" data-throw-if-not-resolved="False" data-raw-source="@StartOfWeek"></xref></strong>, <strong><xref href="StartOfMonth" data-throw-if-not-resolved="False" data-raw-source="@StartOfMonth"></xref></strong>, and <strong><xref href="StartOfYear" data-throw-if-not-resolved="False" data-raw-source="@StartOfYear"></xref></strong> macros are supported for Azure DevOps Server 2019 Update 1 and later versions.
-1. The <strong><xref href="TeamAreas" data-throw-if-not-resolved="False" data-raw-source="@TeamAreas"></xref></strong> macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions.
 
+1.  The <strong><xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref></strong> macro is supported for Azure Boards and TFS 2015 and later versions.
+1.  The <strong><xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref> +/- n</strong> macro is supported for Azure Boards, Azure DevOps Server 2019 and later versions, and only when run from the web portal.
+1.  The <strong><xref href="Follows" data-throw-if-not-resolved="False" data-raw-source="@Follows"></xref></strong> macro is supported for Azure Boards and TFS 2017 and later versions.
+1.  The <strong><xref href="MyRecentActivity" data-throw-if-not-resolved="False" data-raw-source="@MyRecentActivity"></xref></strong>, <strong><xref href="RecentMentions" data-throw-if-not-resolved="False" data-raw-source="@RecentMentions"></xref></strong>, <strong><xref href="RecentProjectActivity" data-throw-if-not-resolved="False" data-raw-source="@RecentProjectActivity"></xref></strong> macros are supported for Azure Boards and TFS 2018.2 and later versions.
+1.  The <strong><xref href="Project" data-throw-if-not-resolved="False" data-raw-source="@Project"></xref></strong> macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see <a href="using-queries.md#across-projects" data-raw-source="[Query across projects](using-queries.md#across-projects)">Query across projects</a>.
+1.  The <strong><xref href="RecentProjectActivity**" data-throw-if-not-resolved="False" data-raw-source="@RecentProjectActivity**"></xref> macro is supported for Azure Boards (cloud service) only at this time.
+1.  The <strong><xref href="StartOfDay" data-throw-if-not-resolved="False" data-raw-source="@StartOfDay"></xref></strong>, <strong><xref href="StartOfWeek" data-throw-if-not-resolved="False" data-raw-source="@StartOfWeek"></xref></strong>, <strong><xref href="StartOfMonth" data-throw-if-not-resolved="False" data-raw-source="@StartOfMonth"></xref></strong>, and <strong><xref href="StartOfYear" data-throw-if-not-resolved="False" data-raw-source="@StartOfYear"></xref></strong> macros are supported for Azure DevOps Server 2019 Update 1 and later versions.
+1.  The <strong><xref href="TeamAreas" data-throw-if-not-resolved="False" data-raw-source="@TeamAreas"></xref></strong> macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions.
 
-
-<a id="full-text" /> 
+<a id="full-text" />
 
 ## Full-text and partial word searches
 
-Specify **Contains** or **Does Not Contain** to search against exact or partial matches of a word or phrase. Specify **Contains Words** or **Does Not Contain Words** to search against an exact phrase or to use the wildcard character, **&#42;**. These operators use the full-text search index. You can only use the wildcard character at the end of a partial word or phrase.
+Specify **Contains** or **Does Not Contain** to search against exact or partial matches of a word or phrase. Specify **Contains Words** or **Does Not Contain Words** to search against an exact phrase or to use the wildcard character, **\***. These operators use the full-text search index. You can only use the wildcard character at the end of a partial word or phrase.
 
 For examples, see [Example work item queries](example-queries.md) and [Query for work items using the History field](history-and-auditing.md).
 
 <!---
-> [!NOTE]    
+> [!NOTE]
 > Not all deployments support full-text searches. For example, SQL Express and SQL Azure, which support the cloud service, do not support full-text search. In these instances, you will only see the **Contains** and **Does not Contain** operators.
 -->
 
-**Contains Words** and **Does Not Contain Words** filter items based on the full-text search index created for long-text fields. 
+**Contains Words** and **Does Not Contain Words** filter items based on the full-text search index created for long-text fields.
 
 ::: moniker range=">= tfs-2013 <= azure-devops-2019"
 Azure DevOps Server and Team Foundation Server automatically indexes all long-text fields with a data type of **PlainText** and **HTML** and the **Title** field for full-text search. The index and operators are only available when the SQL Server that supports Team Foundation Server supports full-text search.
@@ -372,17 +366,14 @@ For more information, see [Full-Text Search Queries and Collation Settings](/azu
 
 ::: moniker-end
 
+## Related articles
 
+* [Query quick reference](query-index-quick-ref.md)
+* [About managed queries](example-queries.md)
+* [Work item field index](../work-items/guidance/work-item-field.md)
+* [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)
 
-## Related articles 
-
-- [Query quick reference](query-index-quick-ref.md)
-- [About managed queries](example-queries.md)
-- [Work item field index](../work-items/guidance/work-item-field.md)
-- [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)
-
-[!INCLUDE [temp](../includes/rest-apis-queries.md)] 
-
+[!INCLUDE [temp](../includes/rest-apis-queries.md)]
 
 <!---
 ## Query indexed fields
@@ -393,4 +384,4 @@ By default, the following fields are indexed: **Assigned To**, **Created Date**,
 
 You use the **witadmin indexfield** command to enable or disable indexing for a field. See [Manage work item fields](../../reference/witadmin/manage-work-item-fields.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json).
 
---> 
+-->

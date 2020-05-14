@@ -35,11 +35,12 @@ It also covers the places where you can make trade-offs between security and fle
 The series also assumes familiarity with [Azure Pipelines](../overview.md), the core [Azure DevOps security constructs](../../organizations/security/about-security-identity.md), and [Git](https://git-scm.com).
 
 Topics covered:
-- [Incremental approach to improving security](approach.md)
-- [Repository protection](repos.md)
-- [Pipeline resources](resources.md)
-- [Project structure](projects.md)
-- [Security through templates](templates.md)
-- [Variables and parameters](inputs.md)
-- [Shared infrastructure](infrastructure.md)
-- [Other security considerations](misc.md)
+
+* [Incremental approach to improving security](approach.md)
+* [Repository protection](repos.md)
+* [Pipeline resources](resources.md)
+* [Project structure](projects.md)
+* [Security through templates](templates.md)
+* [Variables and parameters](inputs.md)
+* [Shared infrastructure](infrastructure.md)
+* [Other security considerations](misc.md)

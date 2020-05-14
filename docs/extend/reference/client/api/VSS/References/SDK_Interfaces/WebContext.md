@@ -15,12 +15,11 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Context information for all web access requests 
+Context information for all web access requests
 
 ### Members
 
-* `account`: [HostContext](../../../VSS/References/SDK_Interfaces/HostContext.md). 
+* `account`: [HostContext](../../../VSS/References/SDK_Interfaces/HostContext.md).
 
 * `collection`: [HostContext](../../../VSS/References/SDK_Interfaces/HostContext.md). Information about the Collection used in the current request (may be null)
 
@@ -31,4 +30,3 @@ Context information for all web access requests
 * `team`: [TeamContext](../../../VSS/References/SDK_Interfaces/TeamContext.md). Information about the team used in the current request (may be null)
 
 * `user`: [UserContext](../../../VSS/References/SDK_Interfaces/UserContext.md). Information about the current user
-

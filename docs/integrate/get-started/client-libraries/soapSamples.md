@@ -10,11 +10,12 @@ author: wireznak
 ms.date: 09/26/2019
 ---
 
-# C# client library samples 
+# C# client library samples
 
 Samples showing how to extend and integrate with Team Foundation Server and Azure DevOps Services using the legacy SOAP clients. These clients are only available in the .NET Framework version of the clients. For new development, prefer the JSON-based clients described in [.NET client libraries](../../concepts/dotnet-client-libraries.md).
 
 Examples on this page require the following NuGet packages:
+
 * [Microsoft.TeamFoundationServer.ExtendedClient](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.ExtendedClient/)
 * [Microsoft.TeamFoundationServer.Client](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.Client/)
 * [Microsoft.VisualStudio.Services.Client](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Client/)
@@ -73,6 +74,7 @@ public static void SampleSOAP()
 To change the method of authentication to Azure DevOps Services or Azure DevOps Server, change the VssCredential type passed to VssConnection when creating it.
 
 ##### Personal Access Token authentication for SOAP services
+
 ```cs
 public static void PersonalAccessTokenSoapSample()
 {
@@ -87,6 +89,7 @@ public static void PersonalAccessTokenSoapSample()
 ```
 
 ##### Azure Active Directory authentication for SOAP services
+
 ```cs
 public static void AADSoapSample()
 {
@@ -100,6 +103,7 @@ public static void AADSoapSample()
 ```
 
 ##### Visual Studio sign-in prompt (Microsoft Account or Azure Active Directory backed) for SOAP services
+
 ```cs
 public static void MicrosoftAccountSample()
 {
@@ -111,4 +115,7 @@ public static void MicrosoftAccountSample()
 	}
 }
 ```
+
+```
+
 ```

@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]
 
-This article describes the different actions or operations that generate email notifications. 
+This article describes the different actions or operations that generate email notifications.
 
 ## Events
 

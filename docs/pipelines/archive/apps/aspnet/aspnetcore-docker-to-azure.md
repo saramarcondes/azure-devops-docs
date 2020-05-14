@@ -8,7 +8,6 @@ ms.date: 12/20/2017
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Use Visual Studio to automatically generate a CI/CD pipeline to deploy an ASP.NET Core web app with Docker to Azure
 
 [!INCLUDE [version-tfs-2015-rtm](../../../includes/version-tfs-2015-rtm.md)]
@@ -19,12 +18,12 @@ monikerRange: '>= tfs-2015'
 
 ## Creating the release pipeline from Visual Studio
 
-1. Make sure you have a Docker-enabled ASP.NET Core solution. See the [Q&A below](#new_solution) if you don't have one yet.
-1. If you haven't already done so, add the project to a source control repository in Azure Repos by clicking first on **Add to Source Control** in the Visual Studio status bar (creating a local repository), then following the instructions in the Team Explorer pane to publish to a remote repository in Azure Repos.
-1. Select the **Tools > Extensions and Updates...** command, then search for and install the "Continuous Delivery Tools for Visual Studio" extension that matches your version of Visual Studio. (Or install from the [Visual Studio Gallery](https://aka.ms/CD4VS).)
-1. In Visual Studio Solution Explorer, right-click the project and select **Configure Continuous Delivery...**.
-1. In the Configure Continuous Delivery dialog, select an Azure subscription that has Azure Container Service running. See the [Q&A below](#create_acs) for information on creating the service.
-1. Click Create and watch the output window for completion of the process, which will include direct links to the project, build pipeline, and release pipeline. A build will also have been started automatically, so you can monitor the progress of the build and deployment in the Azure Pipelines portal.
+1.  Make sure you have a Docker-enabled ASP.NET Core solution. See the [Q&A below](#new_solution) if you don't have one yet.
+1.  If you haven't already done so, add the project to a source control repository in Azure Repos by clicking first on **Add to Source Control** in the Visual Studio status bar (creating a local repository), then following the instructions in the Team Explorer pane to publish to a remote repository in Azure Repos.
+1.  Select the **Tools > Extensions and Updates...** command, then search for and install the "Continuous Delivery Tools for Visual Studio" extension that matches your version of Visual Studio. (Or install from the [Visual Studio Gallery](https://aka.ms/CD4VS).)
+1.  In Visual Studio Solution Explorer, right-click the project and select **Configure Continuous Delivery...**.
+1.  In the Configure Continuous Delivery dialog, select an Azure subscription that has Azure Container Service running. See the [Q&A below](#create_acs) for information on creating the service.
+1.  Click Create and watch the output window for completion of the process, which will include direct links to the project, build pipeline, and release pipeline. A build will also have been started automatically, so you can monitor the progress of the build and deployment in the Azure Pipelines portal.
 
 > [!Note]
 >
@@ -32,19 +31,21 @@ monikerRange: '>= tfs-2015'
 
 ## Explore the release pipeline
 
-1. Navigate to your project using the link in the Visual Studio output window after **Configure Continuous Delivery...** command.
-1. Click on the **Pipelines** tab.
-1. Click **Builds**, select the build pipeline shown there, and click **Edit**.
-   1. The sequence of tasks that appear are what builds the application when code is committed to the repository, and includes tasks to run unit tests.
-   1. At the end you'll see tasks that publish the build artifacts to a staging directory. This is the location that the release pipeline monitors, such that when new artifacts appear, the release pipeline will begin a new deployment.
-   1. You can examine the artifacts yourself by clicking **Artifacts** and then **Explore**.
-   1. You can always customize the build pipeline as desired.
+1.  Navigate to your project using the link in the Visual Studio output window after **Configure Continuous Delivery...** command.
+1.  Click on the **Pipelines** tab.
+1.  Click **Builds**, select the build pipeline shown there, and click **Edit**.
 
-1. Click on **Releases**, select the release pipeline shown there, and click **Edit**.
-   1. A release pipeline takes build artifacts as input and produces one or more deployments as output.
-   1. On the left side of the editor you'll see three environments named Dev, Test, and Production. This is a typical arrangement for continuous deployment within which you can add additional tests in each environment as well as manual approvals.
+    1.  The sequence of tasks that appear are what builds the application when code is committed to the repository, and includes tasks to run unit tests.
+    1.  At the end you'll see tasks that publish the build artifacts to a staging directory. This is the location that the release pipeline monitors, such that when new artifacts appear, the release pipeline will begin a new deployment.
+    1.  You can examine the artifacts yourself by clicking **Artifacts** and then **Explore**.
+    1.  You can always customize the build pipeline as desired.
 
-1. In the process of setting up the release pipeline, Azure Pipelines will have already queued a build that, when successful, triggered a release. You can examine the results through both the **Builds** and **Releases** tab. If the deployment was successful, you can visit the web site and see it running.
+1.  Click on **Releases**, select the release pipeline shown there, and click **Edit**.
+
+    1.  A release pipeline takes build artifacts as input and produces one or more deployments as output.
+    1.  On the left side of the editor you'll see three environments named Dev, Test, and Production. This is a typical arrangement for continuous deployment within which you can add additional tests in each environment as well as manual approvals.
+
+1.  In the process of setting up the release pipeline, Azure Pipelines will have already queued a build that, when successful, triggered a release. You can examine the results through both the **Builds** and **Releases** tab. If the deployment was successful, you can visit the web site and see it running.
 
 [!INCLUDE [include](../../../apps/aspnet/includes/commit-build-release.md)]
 
@@ -53,26 +54,26 @@ monikerRange: '>= tfs-2015'
 <h3 id="new_solution">How do I create a Docker-enabled ASP.NET Core solution?</h3>
 
 > [!NOTE]
-> 
+>
 > Docker-enabled ASP.NET Core projects are supported only in Visual Studio 2017 RC.3 and higher.
 
-1. In Visual Studio, [connect first to a project](../../../../organizations/projects/connect-to-projects.md#visual-studio).
- 
-2. On the Team Explorer home page under **Solutions**, click **New**. (By connecting to a project first and using the command in Team Explorer, the new project is automatically added to source control in the project.)
- 
-3. In the **New Project** dialog box, search on "ASP.NET Core".
- 
-4. Select <strong>ASP.NET Core Web Application (.NET Core)</strong>from the list and click **OK**.
- 
-5. Select **Web Application** from the template list.
- 
-6. Check that **Authentication** is set to **No Authentication**. If not, click **Change Authentication** to set it.
- 
-7. Set **Enable Docker Support**
- 
-8. Click the **Docker for Windows** link to install Docker.
+1.  In Visual Studio, [connect first to a project](../../../../organizations/projects/connect-to-projects.md#visual-studio).
 
-9. Click **OK** to complete creating the project.
+2.  On the Team Explorer home page under **Solutions**, click **New**. (By connecting to a project first and using the command in Team Explorer, the new project is automatically added to source control in the project.)
+
+3.  In the **New Project** dialog box, search on "ASP.NET Core".
+
+4.  Select <strong>ASP.NET Core Web Application (.NET Core)</strong>from the list and click **OK**.
+
+5.  Select **Web Application** from the template list.
+
+6.  Check that **Authentication** is set to **No Authentication**. If not, click **Change Authentication** to set it.
+
+7.  Set **Enable Docker Support**
+
+8.  Click the **Docker for Windows** link to install Docker.
+
+9.  Click **OK** to complete creating the project.
 
 <h3 id="create_acs">How do I create an Azure Container Service?</h3>
 

@@ -8,6 +8,7 @@ author: chcomley
 ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
 ---
+
 # Cloud Solution Providers: Buy Visual Studio App Center resources
 
 [!INCLUDE [version-vsts-tfs-all-versions](../../../includes/version-vsts-tfs-all-versions.md)]

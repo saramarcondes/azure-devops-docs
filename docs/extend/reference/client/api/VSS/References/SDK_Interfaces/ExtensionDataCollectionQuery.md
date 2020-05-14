@@ -15,10 +15,8 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Represents a query to receive a set of extension data collections 
+Represents a query to receive a set of extension data collections
 
 ### Members
 
 * `collections`: [ExtensionDataCollection](../../../VSS/References/SDK_Interfaces/ExtensionDataCollection.md)[]. A list of collections to query
-

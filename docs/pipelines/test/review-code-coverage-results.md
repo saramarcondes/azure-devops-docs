@@ -14,12 +14,12 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
-<a name="prerequisites"></a>  
+<a name="prerequisites"></a>
 
 Code coverage helps you determine the proportion of your project's code that is
 actually being tested by tests such as unit tests. To increase your confidence
 of the code changes, and guard effectively against bugs, your tests should
-exercise - or cover - a large proportion of your code. 
+exercise - or cover - a large proportion of your code.
 
 Reviewing the code coverage result helps to identify code path(s) that are not
 covered by the tests. This information is important to improve the test collateral
@@ -37,10 +37,10 @@ To view an example of publishing code coverage results for your choice of langua
 see the **Ecosystems** section of the Pipelines topics. For example, collect and publish
 code coverage for [JavaScript](../ecosystems/javascript.md) using Istanbul.
 
-## View results 
+## View results
 
 The code coverage summary can be viewed in the build timeline view.
-The summary shows the overall percentage of line coverage. 
+The summary shows the overall percentage of line coverage.
 
 ![View code coverage results](media/review-code-coverage-results/view-code-coverage-summary.png)
 
@@ -71,10 +71,10 @@ The code coverage artifacts published during the build can be viewed under the
 ## Tasks
 
 * [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) publishes code coverage results to Azure Pipelines or TFS,
-  which were produced by a build in [Cobertura](https://cobertura.github.io/cobertura/) or [JaCoCo](https://www.eclemma.org/jacoco/) format. 
+  which were produced by a build in [Cobertura](https://cobertura.github.io/cobertura/) or [JaCoCo](https://www.eclemma.org/jacoco/) format.
 * Built-in tasks such as [Visual Studio Test](../tasks/test/vstest.md),
   [.NET Core](../tasks/build/dotnet-core-cli.md), [Ant](../tasks/build/ant.md), [Maven](../tasks/build/maven.md),
   [Gulp](../tasks/build/gulp.md), [Grunt](../tasks/build/grunt.md), and [Gradle](../tasks/build/gradle.md)
   provide the option to publish code coverage data to the pipeline.
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

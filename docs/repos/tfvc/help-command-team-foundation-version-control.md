@@ -11,7 +11,6 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Help Command (Team Foundation Version Control)
 
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
@@ -23,6 +22,7 @@ tf help commandname
 ```
 
 ## Parameters<table>
+
 <thead>
 <tr>
 <th><p><strong>Argument</strong></p></th>
@@ -39,12 +39,14 @@ tf help commandname
 ## Remarks
 If you do not know which command you need, type <strong>tf help</strong> for a list of all commands.
 
-If you specify the *commandname* parameter, the command line displays information about the arguments and options for that command. If the system cannot find a match for the *commandname*, it searches for aliases and short names. If it cannot find any matching command, alias, or short name, you will get an error.
+If you specify the _commandname_ parameter, the command line displays information about the arguments and options for that command. If the system cannot find a match for the _commandname_, it searches for aliases and short names. If it cannot find any matching command, alias, or short name, you will get an error.
 
 The option **/?** is an alias for **help**. If you use the **/?** option together with a command, the system invokes the **help** command and it displays information about syntax.
 
 For more information about how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+
 ## Examples
+
 The following example displays a list of the version control commands.
 
 ```

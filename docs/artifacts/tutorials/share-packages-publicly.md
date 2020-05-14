@@ -9,7 +9,7 @@ monikerRange: 'azure-devops'
 
 # Share your packages publicly
 
-Azure Artifacts provides an easy way to share packages to users outside your organization using public feeds. Packages that are stored in public feeds can be restored, installed, or consumed by anyone on the Internet. 
+Azure Artifacts provides an easy way to share packages to users outside your organization using public feeds. Packages that are stored in public feeds can be restored, installed, or consumed by anyone on the Internet.
 
 > [!NOTE]
 > Public feeds are project-scoped feeds that live inside a public project. You cannot convert an existing organization-scoped feed into a project-scoped feed or a public feed.
@@ -22,29 +22,27 @@ To learn more about feeds and their scopes, check out our [feeds documentation](
 
 ## Create a feed
 
-1. Go to **Azure Artifacts** in a public project:
+1.  Go to **Azure Artifacts** in a public project:
 
-   > [!div class="mx-imgBorder"] 
-   >![Go to Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
-   > 
+    > [!div class="mx-imgBorder"]
+    > ![Go to Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
 
-1. Select **+ New public feed**:
+1.  Select **+ New public feed**:
 
-   > [!div class="mx-imgBorder"] 
-   >![New feed button](../media/new-public-feed-button-azure-devops-newnav.png)
-   > 
+    > [!div class="mx-imgBorder"]
+    > ![New feed button](../media/new-public-feed-button-azure-devops-newnav.png)
 
-1. In the dialog box:
-   - Give the feed a name.
-   - Select **Create feed**.
+1.  In the dialog box:
 
-   > [!div class="mx-imgBorder"] 
-   >![New feed dialog box](../media/new-public-feed-dialog-azure-devops-newnav.png)
-   >
+    * Give the feed a name.
+    * Select **Create feed**.
+
+    > [!div class="mx-imgBorder"]
+    > ![New feed dialog box](../media/new-public-feed-dialog-azure-devops-newnav.png)
 
 ## Publish your packages
 
-Now that you have a public feed, it's time to populate it with packages! 
+Now that you have a public feed, it's time to populate it with packages!
 
 > [!IMPORTANT]
 > Public feeds cannot store Universal Packages.
@@ -69,7 +67,6 @@ The following articles cover publishing packages to feeds from builds within Azu
 * [Setting up Maven and Azure Pipelines](../../pipelines/artifacts/maven.md)
 * [Publish Python packages from Azure Pipelines](../../pipelines/artifacts/pypi.md)
 
-
 ## Share your packages
 
 > [!NOTE]
@@ -78,19 +75,15 @@ The following articles cover publishing packages to feeds from builds within Azu
 To start sharing your packages, simply post or send your feed URL wherever you wish:
 
 Sample feed URL: `https://dev.azure.com/<org_name>/<project_name>/_packaging?_a=feed&feed=<feed_name>`
- 
+
 As long as your project is public, anonymous and guest users will be greeted by the feed UX where they can see the available packages and learn how to consume them. Anonymous users will not have access to all features. E.g. Creating new feeds or accessing the recycle bin.
 
-> [!div class="mx-imgBorder"] 
->![Feed UX from an anonymous or guest user with certain commands greyed out, except Connect to Feed](../media/anonymous-public-feeds.png)
->
+> [!div class="mx-imgBorder"]
+> ![Feed UX from an anonymous or guest user with certain commands greyed out, except Connect to Feed](../media/anonymous-public-feeds.png)
 
-You can also [share individual packages with badges](../package-badges.md) which look like the example below. 
+You can also [share individual packages with badges](../package-badges.md) which look like the example below.
 
 ![Azure DevOps Services Package sharing badge for NuGet, npm, or Maven](../media/package-badge.png)
 
 > [!IMPORTANT]
 > Package badges can only be created and shared for released versions of packages; the criteria for what is considered a released version depends on the protocol type. Pre-released versions will not be displayed in badges, instead the badge will show the latest release version.
-
-
-

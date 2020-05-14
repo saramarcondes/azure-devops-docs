@@ -11,7 +11,6 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Share your code in TFVC using Eclipse
 
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
@@ -23,31 +22,29 @@ Share your code with your team with Azure DevOps Services and Eclipse.
 If your project uses TFVC in your Azure DevOps organization, read on. However, if your project uses Git in your Azure DevOps organization,then read [Share your code in Git using Eclipse](../../repos/git/share-your-code-in-git-eclipse.md)
 
 <a name="tfvc"></a>
+
 ## Share using TFVC
 
-1. If you haven't yet, [Connect to Azure DevOps Services using Eclipse](../../organizations/projects/connect-to-projects.md).
+1.  If you haven't yet, [Connect to Azure DevOps Services using Eclipse](../../organizations/projects/connect-to-projects.md).
 
-2. In Package Explorer, right-click the project and choose Team, Share Project.
+2.  In Package Explorer, right-click the project and choose Team, Share Project.
 
-   ![In the Package Explorer, the project's context menu, Team, Share Project](./media/share-project.png)
+    ![In the Package Explorer, the project's context menu, Team, Share Project](./media/share-project.png)
 
-3. Make sure you share it to Team Foundation Server.
+3.  Make sure you share it to Team Foundation Server.
 
-   ![Share Project dialog box with tfvc selected](./media/share-your-code-in-tfvc-eclipse/share-project-tfvc.png)
+    ![Share Project dialog box with tfvc selected](./media/share-your-code-in-tfvc-eclipse/share-project-tfvc.png)
 
-4. Select the server and project.
+4.  Select the server and project.
 
-   ![Select Project](../../media/add-existing-team-project.png)
+    ![Select Project](../../media/add-existing-team-project.png)
 
-5. Check in the files.
+5.  Check in the files.
 
-   ![Check in pending changes](./media/share-your-code-in-tfvc-eclipse/checkin-changes-tfvc.png)
+    ![Check in pending changes](./media/share-your-code-in-tfvc-eclipse/checkin-changes-tfvc.png)
 
 Your code is in TFVC, so now your teammates can contribute.
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Build your Eclipse projects](../../pipelines/apps/java/build-maven.md)
-
-
+> [!div class="nextstepaction"][build your eclipse projects](../../pipelines/apps/java/build-maven.md)

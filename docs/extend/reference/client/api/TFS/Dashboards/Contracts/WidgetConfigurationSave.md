@@ -13,7 +13,6 @@ ms.date: 08/04/2016
 
 Module path: `TFS/Dashboards/WidgetHelpers`
 
-
 ### Members
 
 <a name="Valid"/>
@@ -22,6 +21,7 @@ Module path: `TFS/Dashboards/WidgetHelpers`
 Static method used to save valid custom settings from user input in configuration pane.
 
 ### Syntax
+
 <pre class='syntax'>
  void <b>WidgetconfigurationSave.Valid</b>(customSettings)
 </pre>
@@ -36,9 +36,11 @@ Static method used to save valid custom settings from user input in configuratio
 Static method used to indicate to the widget framework that user input is invalid and not ready to save
 
 ### Syntax
+
 <pre class='syntax'>
  void <b>WidgetconfigurationSave.Invalid</b>()
 </pre>
 
 ### Parameters
+
 None

@@ -15,12 +15,10 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-The state of an installed extension 
+The state of an installed extension
 
 ### Members
 
 * `flags`: [ExtensionStateFlags](../../../VSS/References/SDK_Interfaces/ExtensionStateFlags.md). States of an installed extension
 
 * `lastUpdated`: Date. The time at which this installation was last updated
-

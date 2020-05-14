@@ -20,7 +20,7 @@ Files are copied to the `$(Build.ArtifactStagingDirectory)` staging folder and t
 ::: moniker range="> tfs-2015"
 
 > [!IMPORTANT]
-> 
+>
 > If you're using Azure Pipelines, or Team Foundation Server (TFS) 2017 or newer, we recommend that you do NOT use this deprecated task.
 > Instead, use the **Copy Files** and **Publish Build Artifacts** tasks. See [Artifacts in Azure Pipelines](../../artifacts/build-artifacts.md).
 
@@ -29,7 +29,7 @@ Files are copied to the `$(Build.ArtifactStagingDirectory)` staging folder and t
 ::: moniker range="tfs-2015"
 
 > [!IMPORTANT]
-> 
+>
 > Are you using Team Foundation Server (TFS) 2015.4? If so, we recommend that you do NOT use this deprecated task.
 > Instead, use the **Copy Files** and **Publish Build Artifacts** tasks. See [Artifacts in Azure Pipelines](../../artifacts/build-artifacts.md).
 >
@@ -77,7 +77,6 @@ None
 <p>Choose <strong>server</strong> to store the artifact on your Team Foundation Server. This is the best and simplest option in most cases. See <a href="../../artifacts/build-artifacts.md" data-raw-source="[Artifacts in Azure Pipelines](../../artifacts/build-artifacts.md)">Artifacts in Azure Pipelines</a>.</p>
 </td>
 </tr>
-
 
 <tr>
 <th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>

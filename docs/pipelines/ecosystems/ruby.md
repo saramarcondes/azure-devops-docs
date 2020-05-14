@@ -21,27 +21,27 @@ This guidance explains how to automatically build Ruby projects.
 
 Follow these instructions to set up a pipeline for a Ruby app.
 
-1. The code in the following repository is a simple Ruby app. To get started, fork this repo to your GitHub account.
+1.  The code in the following repository is a simple Ruby app. To get started, fork this repo to your GitHub account.
 
     ```
     https://github.com/MicrosoftDocs/pipelines-ruby
     ```
 
-1. Sign in to your Azure DevOps organization and navigate to your project.
+1.  Sign in to your Azure DevOps organization and navigate to your project.
 
-1. In your project, navigate to the **Pipelines** page. Then choose the action to create a new pipeline.
+1.  In your project, navigate to the **Pipelines** page. Then choose the action to create a new pipeline.
 
-1. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
+1.  Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
 
-1. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
+1.  You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
 
-1. When the list of repositories appears, select your Ruby sample repository.
+1.  When the list of repositories appears, select your Ruby sample repository.
 
-1. Azure Pipelines will analyze the code in your repository and recommend `Ruby` template for your pipeline. Select that template.
+1.  Azure Pipelines will analyze the code in your repository and recommend `Ruby` template for your pipeline. Select that template.
 
-1. Azure Pipelines will generate a YAML file for your pipeline. Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
+1.  Azure Pipelines will generate a YAML file for your pipeline. Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
 
-1. A new run is started. Wait for the run to finish.
+1.  A new run is started. Wait for the run to finish.
 
 When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in your repository that's ready for you to customize.
 
@@ -101,7 +101,7 @@ To execute Rake in the context of the current bundle (as defined in your Gemfile
 
 ### Publish test results
 
-The sample code includes unit tests written using [RSpec](https://rspec.info/). When Rake is run by the previous step, it runs the RSpec tests. The RSpec RakeTask in the Rakefile has been configured to produce JUnit style results using the RspecJUnitFormatter. 
+The sample code includes unit tests written using [RSpec](https://rspec.info/). When Rake is run by the previous step, it runs the RSpec tests. The RSpec RakeTask in the Rakefile has been configured to produce JUnit style results using the RspecJUnitFormatter.
 
 Add the [Publish Test Results](../tasks/test/publish-test-results.md) task to publish JUnit style test results to the server. When you do this, you get a rich test reporting experience that can be used for easily troubleshooting any failed tests and for test timing analysis.
 
@@ -115,7 +115,7 @@ Add the [Publish Test Results](../tasks/test/publish-test-results.md) task to pu
 
 ### Publish code coverage results
 
-The sample code uses [SimpleCov](https://github.com/colszowka/simplecov) to collect code coverage data when unit tests are run. SimpleCov is configured to use Cobertura and HTML report formatters. 
+The sample code uses [SimpleCov](https://github.com/colszowka/simplecov) to collect code coverage data when unit tests are run. SimpleCov is configured to use Cobertura and HTML report formatters.
 
 Add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task to publish code coverage results to the server. When you do this, coverage metrics can be seen in the build summary and HTML reports can be downloaded for further analysis.
 

@@ -11,16 +11,15 @@ monikerRange: '>= tfs-2013'
 ms.date: 04/11/2019
 ---
 
-# Changes made to process templates  
+# Changes made to process templates
 
 [!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 To support the addition of new features, changes are introduced periodically to the core system processes or process template&mdash;[Agile](agile-process.md), [Scrum](scrum-process.md), or [CMMI](cmmi-process.md). A process&mdash;used by the Inheritance process model&mdash;determines the building blocks used to track work. A process template&mdash;used by the Hosted XML and On-premises XML process models&mdash;specifies an interdependent-related set of XML definition files that provide the building blocks and initial configuration for tracking work and other functional areas. For an overview of process models and customization options, see [Customize your work tracking experience](../../../reference/customize-work.md).
 
-> [!NOTE]    
-> This article describes changes made to the core system processes with updates made to the on-premises Azure DevOps Server, formerly named Team Foundation Server (TFS). These processes are available for both cloud and on-premises versions of Azure Boards. Projects hosted on Azure Boards [update automatically with each service upgrade](/azure/devops/release-notes/index). Whereas, updates to projects defined on-premises may require running the Configure Feature Wizard after upgrading to a later version.  The Configure Features Wizard has been deprecated for Azure DevOps Server 2019. You can only run the wizard on TFS 2018 and earlier versions.        
-If you've customized your project and haven't upgraded your on-premises deployment for a while, you may need to manually apply some changes to gain access to new features. Review the following table to determine which changes may apply to your situation. See [New features added when you upgrade](../../../reference/new-features-added.md) for a description of each feature added with the updates. 
-
+> [!NOTE]  
+> This article describes changes made to the core system processes with updates made to the on-premises Azure DevOps Server, formerly named Team Foundation Server (TFS). These processes are available for both cloud and on-premises versions of Azure Boards. Projects hosted on Azure Boards [update automatically with each service upgrade](/azure/devops/release-notes/index). Whereas, updates to projects defined on-premises may require running the Configure Feature Wizard after upgrading to a later version. The Configure Features Wizard has been deprecated for Azure DevOps Server 2019. You can only run the wizard on TFS 2018 and earlier versions.  
+> If you've customized your project and haven't upgraded your on-premises deployment for a while, you may need to manually apply some changes to gain access to new features. Review the following table to determine which changes may apply to your situation. See [New features added when you upgrade](../../../reference/new-features-added.md) for a description of each feature added with the updates.
 
 <table>
 <tbody valign="top">
@@ -66,29 +65,29 @@ If you've customized your project and haven't upgraded your on-premises deployme
 <h4>The following changes were made to the default process templates:  </h4>
 <ul>
 <li>WITs added: Epic</li>
-<li>Miscellaneous WIT changes: 
+<li>Miscellaneous WIT changes:
 <ul>
-<li>Feature: Added <code>Time Criticality</code>, <code>Effort</code>, and <code>Value Area</code> fields; added workflow transition from <code>Active</code> to <code>Removed</code></li> 
-<li>Bug: Added fields and workflow states to support the show bugs on backlog and boards team-configurable option</li> 
-<li>Minor layout changes to  WIT forms to reflect additions of new fields; added <code>ID</code> field to all forms</li> 
-<li>Added WIT <code>refname</code> attribute to all WIT definitions</li> 
+<li>Feature: Added <code>Time Criticality</code>, <code>Effort</code>, and <code>Value Area</code> fields; added workflow transition from <code>Active</code> to <code>Removed</code></li>
+<li>Bug: Added fields and workflow states to support the show bugs on backlog and boards team-configurable option</li>
+<li>Minor layout changes to  WIT forms to reflect additions of new fields; added <code>ID</code> field to all forms</li>
+<li>Added WIT <code>refname</code> attribute to all WIT definitions</li>
 </ul>
 </li>
 <li>Categories: Added Epic Category </li>
-<li>Process configuration changes: 
+<li>Process configuration changes:
 <ul>
-<li>Added Epic portfolio backlog</li> 
-<li>Feature: Added <code>Effort</code> and <code>Value Area</code> fields to the default columns of the backlog  </li> 
-<li>Requirement Category backlog: Added <code>Value Area</code> to the default columns of the backlog </li> 
-<li>Increased the default work item count limits on all boards to 1000</li> 
+<li>Added Epic portfolio backlog</li>
+<li>Feature: Added <code>Effort</code> and <code>Value Area</code> fields to the default columns of the backlog  </li>
+<li>Requirement Category backlog: Added <code>Value Area</code> to the default columns of the backlog </li>
+<li>Increased the default work item count limits on all boards to 1000</li>
 <li>Added new properties to specify the default behavior for new teams </li>
 </ul> </li>
-<li>ProcessTemplate changes: Process template names no longer specify the version or year; Agile, CMMI, Scrum</li> 
+<li>ProcessTemplate changes: Process template names no longer specify the version or year; Agile, CMMI, Scrum</li>
 </ul>
 
 <h4>Changes made to Agile WIT definitions: </h4>
 <ul>
-<li>User Story: 
+<li>User Story:
 <ul>
 <li>Added <code>Acceptance Criteria</code>, <code>Priority</code> and <code>Value Area</code> fields</li>
 <li>Added transitions from <code>Active</code> to <code>Removed</code> and <code>Resolved</code> to <code>Removed</code>  </li>
@@ -107,7 +106,7 @@ If you've customized your project and haven't upgraded your on-premises deployme
 </ul>
 <h4>Changes made to CMMI WIT definitions: </h4>
 <ul>
-<li>Requirement: 
+<li>Requirement:
 <ul>
 <li>Added <code>Acceptance Criteria</code>, <code>Priority</code> and <code>Value Area</code> fields</li>
 <li>Added transitions from <code>Active</code> to <code>Removed</code> and <code>Resolved</code> to <code>Removed</code>  </li>
@@ -193,7 +192,7 @@ If you've customized your project and haven't upgraded your on-premises deployme
 <td>
 <p>Added the Portfolio Backlog feature and introduced changes to support Planning Tools. </p>
 <h4>Changes to WIT definitions to support status updates via Kanban and taskboards</h4>
-<p>Each of the default process templates that TFS provides was updated to support additional regressive transitions. These transitions, shown in red in the following illustration, support moving items back to the backlog when they were incorrectly set to done or resolved. Now when you inadvertently drag a work item on the Kanban board or the taskboard to a resolved or closed state, you can drag it back to an earlier workflow state.</p> 
+<p>Each of the default process templates that TFS provides was updated to support additional regressive transitions. These transitions, shown in red in the following illustration, support moving items back to the backlog when they were incorrectly set to done or resolved. Now when you inadvertently drag a work item on the Kanban board or the taskboard to a resolved or closed state, you can drag it back to an earlier workflow state.</p>
 <p>The following work item types now support any-to-any workflow transitions:</p>
 
 <ul>
@@ -203,6 +202,7 @@ If you've customized your project and haven't upgraded your on-premises deployme
 </ul>
 
 <img src="media/tfs-vso-state-diagram-product-backlog-item.png" alt="State diagram for Product Backlog Item"/><br/>
+
 <p>To apply the changes to your existing projects, you need to replace the <strong>WORKFLOW</strong> sections defined for each of the updated work item types with the new definitions. You can do this by modifying the work item type definition. See <a href="../../../reference/xml/change-workflow-wit.md" data-raw-source="[Design the Workflow](../../../reference/xml/change-workflow-wit.md)">Design the Workflow</a> and <a href="../../../reference/witadmin/witadmin-import-export-manage-wits.md" data-raw-source="[Import, export, and manage Work Item Types](../../../reference/witadmin/witadmin-import-export-manage-wits.md
 )">Import, export, and manage Work Item Types</a> .</p>
 </td>
@@ -227,7 +227,7 @@ If you've customized your project and haven't upgraded your on-premises deployme
 
 <li>Categories added: Code Review Request Category, Code Review Response Category, Feedback Request Category, Feedback Response Category, and Hidden Types Category</li>
 <li>Process configuration: Added CommonConfiguration and AgileConfiguration definition files to support Agile planning tools, code review, feedback, and My Work.</li>
-<li>Build plug-in: Added a new build process template. When you upgrade from earlier versions of Team Foundation Server, you can continue to use <a href="https://msdn.microsoft.com/library/dd647548.aspx" data-raw-source="[legacy build processes](https://msdn.microsoft.com/library/dd647548.aspx)">legacy build processes</a>. 
+<li>Build plug-in: Added a new build process template. When you upgrade from earlier versions of Team Foundation Server, you can continue to use <a href="https://msdn.microsoft.com/library/dd647548.aspx" data-raw-source="[legacy build processes](https://msdn.microsoft.com/library/dd647548.aspx)">legacy build processes</a>.
 </li>
 <li>
 Process template plug-in: Added <code>version</code> element to support updating projects when configuring new features.
@@ -281,15 +281,14 @@ Removed the Sprint type definition and All Sprints query, whose functionality ha
 </tbody>
 </table>
 
-
 ## Related upgrade notes
 
-To update your existing projects hosted on an on-premises Azure DevOps to access new features, [run the Configure Features wizard](../../../reference/configure-features-after-upgrade.md). In the event that you're upgrading from a much earlier version of TFS or you've customized your project, you'll need to make some manual updates.  
+To update your existing projects hosted on an on-premises Azure DevOps to access new features, [run the Configure Features wizard](../../../reference/configure-features-after-upgrade.md). In the event that you're upgrading from a much earlier version of TFS or you've customized your project, you'll need to make some manual updates.
 
-See the following resources as they relate to updating your project:  
+See the following resources as they relate to updating your project:
 
-- [Update a customized process template to access new features](../../../reference/update-customized-process-template.md)
-- [Add features using a manual update process](../../../reference/add-features-manually.md)
-- [Before you upgrade TFS](../../../reference/upgrade-tfs-2008-or-2010.md)
-- [Additional configuration options](../../../reference/additional-configuration-options.md)
-- [Upload reports to a project](../../../Report/admin/upload-reports.md)
+* [Update a customized process template to access new features](../../../reference/update-customized-process-template.md)
+* [Add features using a manual update process](../../../reference/add-features-manually.md)
+* [Before you upgrade TFS](../../../reference/upgrade-tfs-2008-or-2010.md)
+* [Additional configuration options](../../../reference/additional-configuration-options.md)
+* [Upload reports to a project](../../../Report/admin/upload-reports.md)

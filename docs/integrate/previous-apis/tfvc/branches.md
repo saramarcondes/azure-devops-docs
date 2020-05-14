@@ -24,17 +24,18 @@ ms.date: 08/04/2016
 GET https://{instance}/DefaultCollection/_apis/tfvc/branches/{path}?api-version={version}[&includeChildren={bool}&includeParent={bool}&includeDeleted={bool}]
 ```
 
-| Parameter       | Type   | Default | Notes
-|:----------------|:-------|:--------|:------------|
-| URL
-| instance        | string |         | TFS server name ({server:port}).
-| path            | string | $/      | Full path to the branch.<br/>Examples: `$/`, `$/MyProject`, `$/MyProject/SomeFolder`.
-| Query
-| api-version     | string |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| includeChildren | bool   | false   | Return child branches, if there are any.
-| includeParent   | bool   | false   | Return the parent branch, if there is one.
-| includeDeleted  | bool   | false   | Return branches marked as deleted.
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
 
+
+| URL
+| instance | string | | TFS server name ({server:port}).
+| path | string | $/ | Full path to the branch.<br/>Examples: `$/`, `$/MyProject`, `$/MyProject/SomeFolder`.
+| Query
+| api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| includeChildren | bool | false | Return child branches, if there are any.
+| includeParent | bool | false | Return the parent branch, if there is one.
+| includeDeleted | bool | false | Return branches marked as deleted.
 
 #### Sample request
 
@@ -59,8 +60,8 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/branches/$/Fabrikam-Fiber-T
 }
 ```
 
-
 ### With child branches
+
 #### Sample request
 
 ```
@@ -73,13 +74,16 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/branches/$/Fabrikam-Fiber-T
 {
   "_links": {
     "self": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/tfvc/branches/%24/Fabrikam-Fiber-TFVC/AuthSample-Dev"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/branches/%24/Fabrikam-Fiber-TFVC/AuthSample-Dev"
     },
     "childBranches": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/tfvc/branches/%24/Fabrikam-Fiber-TFVC/AuthSample%2bSpecial"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/branches/%24/Fabrikam-Fiber-TFVC/AuthSample%2bSpecial"
     },
     "owner": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
     }
   },
   "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev",
@@ -88,11 +92,14 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/branches/$/Fabrikam-Fiber-T
     "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
     "displayName": "Chuck Reinhart",
     "uniqueName": "fabrikamfiber3@hotmail.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
   },
   "createdDate": "2014-03-24T16:46:48.253Z",
-  "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/branches/%24/Fabrikam-Fiber-TFVC/AuthSample-Dev",
+  "url":
+    "https://mytfsserver/DefaultCollection/_apis/tfvc/branches/%24/Fabrikam-Fiber-TFVC/AuthSample-Dev",
   "relatedBranches": [],
   "mappings": [],
   "children": [
@@ -103,8 +110,10 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/branches/$/Fabrikam-Fiber-T
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T16:52:10.407Z",
       "relatedBranches": [],
@@ -115,8 +124,8 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/branches/$/Fabrikam-Fiber-T
 }
 ```
 
-
 ### With the parent branch
+
 #### Sample request
 
 ```
@@ -143,8 +152,8 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/branches/$/Fabrikam-Fiber-T
 }
 ```
 
-
 ### Deleted branch
+
 #### Sample request
 
 ```
@@ -173,21 +182,22 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/branches/$/Fabrikam-Fiber-T
 }
 ```
 
-
 ## Get a list of root branches
 
 ```no-highlight
 GET https://{instance}/DefaultCollection/_apis/tfvc/branches?api-version={version}[&includeChildren={bool}&includeDeleted={bool}]
 ```
 
-| Parameter        | Type   | Default | Notes
-|:-----------------|:-------|:--------|:------------
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
+
+
 | URL
-| instance         | string |         | TFS server name ({server:port}).
+| instance | string | | TFS server name ({server:port}).
 | Query
-| api-version      | string |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| includeChildren  | bool   | false   | Return the child branches for each root branch.
-| includeDeleted   | bool   | false   | Return deleted branches.
+| api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| includeChildren | bool | false | Return the child branches for each root branch.
+| includeDeleted | bool | false | Return deleted branches.
 
 #### Sample request
 
@@ -207,11 +217,14 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/branches?api-version=1.0-pr
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T16:25:17.39Z",
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/branches/%24/Fabrikam-Fiber-TFVC/AuthSample",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/branches/%24/Fabrikam-Fiber-TFVC/AuthSample",
       "relatedBranches": [],
       "mappings": []
     }
@@ -219,8 +232,8 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/branches?api-version=1.0-pr
 }
 ```
 
-
 ### With child branches
+
 #### Sample request
 
 ```
@@ -239,11 +252,14 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/branches?includeChildren=tr
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T16:25:17.39Z",
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/branches/%24/Fabrikam-Fiber-TFVC/AuthSample",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/branches/%24/Fabrikam-Fiber-TFVC/AuthSample",
       "relatedBranches": [],
       "mappings": [],
       "children": [
@@ -254,26 +270,33 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/branches?includeChildren=tr
             "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
             "displayName": "Chuck Reinhart",
             "uniqueName": "fabrikamfiber3@hotmail.com",
-            "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-            "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+            "url":
+              "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+            "imageUrl":
+              "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
           },
           "createdDate": "2014-03-24T16:46:48.253Z",
-          "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/branches/%24/Fabrikam-Fiber-TFVC/AuthSample-dev",
+          "url":
+            "https://mytfsserver/DefaultCollection/_apis/tfvc/branches/%24/Fabrikam-Fiber-TFVC/AuthSample-dev",
           "relatedBranches": [],
           "mappings": [],
           "children": [
             {
               "path": "$/Fabrikam-Fiber-TFVC/AuthSample+Special",
-              "description": "Branched from $/Fabrikam-Fiber-TFVC/AuthSample-dev",
+              "description":
+                "Branched from $/Fabrikam-Fiber-TFVC/AuthSample-dev",
               "owner": {
                 "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
                 "displayName": "Chuck Reinhart",
                 "uniqueName": "fabrikamfiber3@hotmail.com",
-                "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-                "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+                "url":
+                  "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+                "imageUrl":
+                  "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
               },
               "createdDate": "2014-03-24T16:52:10.407Z",
-              "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/branches/%24/Fabrikam-Fiber-TFVC/AuthSample%2bSpecial",
+              "url":
+                "https://mytfsserver/DefaultCollection/_apis/tfvc/branches/%24/Fabrikam-Fiber-TFVC/AuthSample%2bSpecial",
               "relatedBranches": [],
               "mappings": [],
               "children": []
@@ -286,8 +309,8 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/branches?includeChildren=tr
 }
 ```
 
-
 ### Including deleted branches
+
 #### Sample request
 
 ```
@@ -306,11 +329,14 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/branches?includeDeleted=tru
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T16:25:17.39Z",
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/branches/%24/Fabrikam-Fiber-TFVC/AuthSample",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/branches/%24/Fabrikam-Fiber-TFVC/AuthSample",
       "relatedBranches": [
         {
           "path": "$/Fabrikam-Fiber-TFVC/MyBranch"
@@ -325,12 +351,15 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/branches?includeDeleted=tru
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T16:44:13.277Z",
       "isDeleted": true,
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/branches/%24/Fabrikam-Fiber-TFVC/MyBranch",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/branches/%24/Fabrikam-Fiber-TFVC/MyBranch",
       "relatedBranches": [
         {
           "path": "$/Fabrikam-Fiber-TFVC/AuthSample"
@@ -341,6 +370,3 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/branches?includeDeleted=tru
   ]
 }
 ```
-
-
-

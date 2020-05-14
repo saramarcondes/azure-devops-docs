@@ -24,17 +24,19 @@ ms.date: 08/04/2016
 GET https://{instance}/DefaultCollection/_apis/tfvc/labels?api-version={version}[&name={srtring}&owner={string}&itemLabelFilter={string}&$top={int}&$skip={int}]
 ```
 
-| Parameter       | Type   | Default | Notes
-|:----------------|:-------|:--------|:------
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
+
+
 | URL
-| instance        | string |         | TFS server name ({server:port}).
+| instance | string | | TFS server name ({server:port}).
 | Query
-| api-version     | string |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| name            | string |         | Name of the label.<br/>Wildcards are supported.
-| owner           | string |         | Display name, unique name, or ID of the label owner.
-| itemLabelFilter | string |         | Path of item that has these labels.
-| $top            | int    | 100     | Maximum number of labels to return.
-| $skip           | int    | 0       | Number of labels to skip.
+| api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| name | string | | Name of the label.<br/>Wildcards are supported.
+| owner | string | | Display name, unique name, or ID of the label owner.
+| itemLabelFilter | string | | Path of item that has these labels.
+| $top | int | 100 | Maximum number of labels to return.
+| $skip | int | 0 | Number of labels to skip.
 
 #### Sample request
 
@@ -58,8 +60,10 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/labels?api-version=1.0-prev
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/labels/2884"
     },
@@ -73,8 +77,10 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/labels?api-version=1.0-prev
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/labels/2883"
     },
@@ -88,8 +94,10 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/labels?api-version=1.0-prev
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/labels/2882"
     }
@@ -97,8 +105,8 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/labels?api-version=1.0-prev
 }
 ```
 
-
 ### By name
+
 #### Sample request
 
 ```
@@ -121,8 +129,10 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/labels?name=Th*Label&api-ve
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/labels/2883"
     },
@@ -136,8 +146,10 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/labels?name=Th*Label&api-ve
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/labels/2882"
     }
@@ -145,8 +157,8 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/labels?name=Th*Label&api-ve
 }
 ```
 
-
 ### By person
+
 #### Sample request
 
 ```
@@ -169,8 +181,10 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/labels?owner=fabrikamfiber3
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/labels/2884"
     },
@@ -184,8 +198,10 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/labels?owner=fabrikamfiber3
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/labels/2883"
     },
@@ -199,8 +215,10 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/labels?owner=fabrikamfiber3
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/labels/2882"
     }
@@ -208,8 +226,8 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/labels?owner=fabrikamfiber3
 }
 ```
 
-
 ### By item
+
 #### Sample request
 
 ```
@@ -232,8 +250,10 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/labels?itemLabelFilter=$/Fa
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/labels/2883"
     }
@@ -241,8 +261,8 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/labels?itemLabelFilter=$/Fa
 }
 ```
 
-
 ### A page at a time
+
 #### Sample request
 
 ```
@@ -265,8 +285,10 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/labels?$skip=2&$top=2&api-v
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/labels/2882"
     }
@@ -274,22 +296,24 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/labels?$skip=2&$top=2&api-v
 }
 ```
 
-
 ## Get label
-Retrieves details for a label. A list of items under this label can be included by setting maxItemCount to a positive integer. 
+
+Retrieves details for a label. A list of items under this label can be included by setting maxItemCount to a positive integer.
 
 ```no-highlight
 GET https://{instance}/DefaultCollection/_apis/tfvc/labels/{labelId}?api-version={version}[&maxItemCount={int}]
 ```
 
-| Parameter    | Type   | Default | Notes
-|:-------------|:-------|:--------|:------
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
+
+
 | URL
-| instance     | string |         | TFS server name ({server:port}).
-| labelId      | int    |         | ID of label.
+| instance | string | | TFS server name ({server:port}).
+| labelId | int | | ID of label.
 | Query
-| api-version  | string |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| maxItemCount | int    | 0       | Maximum number of labeled items to return.
+| api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| maxItemCount | int | 0 | Maximum number of labeled items to return.
 
 #### Sample request
 
@@ -306,10 +330,12 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/labels/2883?api-version=1.0
       "href": "https://mytfsserver/DefaultCollection/_apis/tfvc/labels/2883"
     },
     "items": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/tfvc/labels/2883/items"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/labels/2883/items"
     },
     "owner": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
     }
   },
   "id": 2883,
@@ -321,13 +347,14 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/labels/2883?api-version=1.0
     "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
     "displayName": "Chuck Reinhart",
     "uniqueName": "fabrikamfiber3@hotmail.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
   },
   "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/labels/2883"
 }
 ```
-
 
 ### With items
 
@@ -346,10 +373,12 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/labels/2883?maxItemCount=10
       "href": "https://mytfsserver/DefaultCollection/_apis/tfvc/labels/2883"
     },
     "items": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/tfvc/labels/2883/items"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/labels/2883/items"
     },
     "owner": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
     }
   },
   "id": 2883,
@@ -361,68 +390,81 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/labels/2883?maxItemCount=10
     "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
     "displayName": "Chuck Reinhart",
     "uniqueName": "fabrikamfiber3@hotmail.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
   },
   "items": [
     {
       "version": 12,
       "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev/AuthSample.sln",
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/AuthSample.sln?versionType=Changeset&version=12"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/AuthSample.sln?versionType=Changeset&version=12"
     },
     {
       "version": 12,
       "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev/AuthSample.vssscc",
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/AuthSample.vssscc?versionType=Changeset&version=12"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/AuthSample.vssscc?versionType=Changeset&version=12"
     },
     {
       "version": 12,
       "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev/Code",
       "isFolder": true,
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code?versionType=Changeset&version=12"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code?versionType=Changeset&version=12"
     },
     {
       "version": 12,
       "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/App.config",
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/App.config?versionType=Changeset&version=12"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/App.config?versionType=Changeset&version=12"
     },
     {
       "version": 12,
       "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.cs",
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.cs?versionType=Changeset&version=12"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.cs?versionType=Changeset&version=12"
     },
     {
       "version": 12,
-      "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.csproj.vspscc",
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.csproj.vspscc?versionType=Changeset&version=12"
+      "path":
+        "$/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.csproj.vspscc",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.csproj.vspscc?versionType=Changeset&version=12"
     },
     {
       "version": 12,
       "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.csproj",
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.csproj?versionType=Changeset&version=12"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.csproj?versionType=Changeset&version=12"
     },
     {
       "version": 12,
       "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/Properties",
       "isFolder": true,
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/Properties?versionType=Changeset&version=12"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/Properties?versionType=Changeset&version=12"
     },
     {
       "version": 12,
-      "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/Properties/AssemblyInfo.cs",
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/Properties/AssemblyInfo.cs?versionType=Changeset&version=12"
+      "path":
+        "$/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/Properties/AssemblyInfo.cs",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/Properties/AssemblyInfo.cs?versionType=Changeset&version=12"
     },
     {
       "version": 12,
       "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev",
       "isFolder": true,
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev?versionType=Changeset&version=12"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev?versionType=Changeset&version=12"
     }
   ],
   "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/labels/2883"
 }
 ```
-
 
 ## Get list of labelled items
 
@@ -430,16 +472,18 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/labels/2883?maxItemCount=10
 GET https://{instance}/DefaultCollection/_apis/tfvc/labels/{labelId}/items?api-version={version}[&$top={int}&$skip={int}]
 ```
 
-| Parameter    | Type   | Default | Notes
-|:-------------|:-------|:--------|:------
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
+
+
 | URL
-| instance     | string |         | TFS server name ({server:port}).
-| labelId      | int    |         | ID of the label.
+| instance | string | | TFS server name ({server:port}).
+| labelId | int | | ID of the label.
 | Query
 | Query
-| api-version  | string |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| $top         | int    | 100     |  Maximum number of items to return.
-| $skip        | int    | 0       |  Number of items to skip.
+| api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| $top | int | 100 | Maximum number of items to return.
+| $skip | int | 0 | Number of items to skip.
 
 #### Sample request
 
@@ -456,60 +500,71 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/labels/2883/items?api-versi
     {
       "version": 12,
       "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev/AuthSample.sln",
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/AuthSample.sln?versionType=Changeset&version=12"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/AuthSample.sln?versionType=Changeset&version=12"
     },
     {
       "version": 12,
       "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev/AuthSample.vssscc",
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/AuthSample.vssscc?versionType=Changeset&version=12"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/AuthSample.vssscc?versionType=Changeset&version=12"
     },
     {
       "version": 12,
       "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev/Code",
       "isFolder": true,
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code?versionType=Changeset&version=12"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code?versionType=Changeset&version=12"
     },
     {
       "version": 12,
       "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/App.config",
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/App.config?versionType=Changeset&version=12"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/App.config?versionType=Changeset&version=12"
     },
     {
       "version": 12,
       "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.cs",
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.cs?versionType=Changeset&version=12"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.cs?versionType=Changeset&version=12"
     },
     {
       "version": 12,
-      "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.csproj.vspscc",
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.csproj.vspscc?versionType=Changeset&version=12"
+      "path":
+        "$/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.csproj.vspscc",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.csproj.vspscc?versionType=Changeset&version=12"
     },
     {
       "version": 12,
       "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.csproj",
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.csproj?versionType=Changeset&version=12"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.csproj?versionType=Changeset&version=12"
     },
     {
       "version": 12,
       "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/Properties",
       "isFolder": true,
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/Properties?versionType=Changeset&version=12"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/Properties?versionType=Changeset&version=12"
     },
     {
       "version": 12,
-      "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/Properties/AssemblyInfo.cs",
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/Properties/AssemblyInfo.cs?versionType=Changeset&version=12"
+      "path":
+        "$/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/Properties/AssemblyInfo.cs",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/Properties/AssemblyInfo.cs?versionType=Changeset&version=12"
     },
     {
       "version": 12,
       "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev",
       "isFolder": true,
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev?versionType=Changeset&version=12"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev?versionType=Changeset&version=12"
     }
   ]
 }
 ```
-
 
 ### A page at a time
 
@@ -529,15 +584,15 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/labels/2883/items?$top=2&$s
       "version": 12,
       "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev/Code",
       "isFolder": true,
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code?versionType=Changeset&version=12"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code?versionType=Changeset&version=12"
     },
     {
       "version": 12,
       "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/App.config",
-      "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/App.config?versionType=Changeset&version=12"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/App.config?versionType=Changeset&version=12"
     }
   ]
 }
 ```
-
-

@@ -12,13 +12,13 @@ monikerRange: '> azure-devops-2019'
 We recommend that you use an incremental approach to secure your pipelines.
 Ideally, you would implement all of the guidance that we offer.
 But don't be daunted by the number of recommendations.
-And don't hold off making *some* improvements just because you can't make all the changes right now.
+And don't hold off making _some_ improvements just because you can't make all the changes right now.
 
 ## Security recommendations depend on each other
 
 Security recommendations have complex interdependencies.
 Your security posture depends heavily on which recommendations you choose to implement.
-The recommendations that you choose, in turn, depend on the concerns of your DevOps and security teams. 
+The recommendations that you choose, in turn, depend on the concerns of your DevOps and security teams.
 They also depend on the policies and practices of your organization.
 
 You might choose to tighten security in one critical area and accept less security but more convenience in another area.

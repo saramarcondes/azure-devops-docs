@@ -15,8 +15,7 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-A request for an extension (to be installed or have a license assigned) 
+A request for an extension (to be installed or have a license assigned)
 
 ### Members
 
@@ -33,4 +32,3 @@ A request for an extension (to be installed or have a license assigned)
 * `resolveDate`: Date. Date at which the request was resolved
 
 * `resolvedBy`: any. Represents the user who resolved the request
-

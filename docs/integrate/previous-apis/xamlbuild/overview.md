@@ -31,9 +31,9 @@ Completed builds are assigned a [build quality](./qualities.md).
 
 ### Start a build
 
-1. Get the ID of the build [definition](./definitions.md) that you want to use.
-2. Create a [build request](./requests.md#requestabuild).
-3. Get the ID of the request from the response so you can use it later.
+1.  Get the ID of the build [definition](./definitions.md) that you want to use.
+2.  Create a [build request](./requests.md#requestabuild).
+3.  Get the ID of the request from the response so you can use it later.
 
 ### Postpone or cancel a build request
 
@@ -41,13 +41,12 @@ Before the build request has started, you can [cancel](./requests.md#cancelabuil
 
 ### Get a build
 
-1. Get a list of [builds](./builds.md) and find the ID of the build you're interested in.
-For example, find the build that you requested by using the request ID.
-2. Get the [details](./builds.md#getbuilddetails) about the build.
+1.  Get a list of [builds](./builds.md) and find the ID of the build you're interested in.
+    For example, find the build that you requested by using the request ID.
+2.  Get the [details](./builds.md#getbuilddetails) about the build.
 
 ### Set the build quality
 
-1. If you don't know what qualities are available in your project, get the list of [qualities](./qualities.md).
-2. Set the [quality](./builds.md#setthebuildquality) of the build.
-3. You can also define what [qualities](./qualities.md#addaquality) are available.
-
+1.  If you don't know what qualities are available in your project, get the list of [qualities](./qualities.md).
+2.  Set the [quality](./builds.md#setthebuildquality) of the build.
+3.  You can also define what [qualities](./qualities.md#addaquality) are available.

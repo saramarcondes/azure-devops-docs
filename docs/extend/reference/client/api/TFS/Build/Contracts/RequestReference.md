@@ -14,7 +14,6 @@ ms.date: 08/04/2016
 
 Module path: `TFS/Build/Contracts`
 
-
 ### Members
 
 * `id`: number. ID of the resource
@@ -22,4 +21,3 @@ Module path: `TFS/Build/Contracts`
 * `requestedFor`: [VSS_Common_Contracts.IdentityRef](../../../VSS/WebApi/Contracts/IdentityRef.md). Name of the requestor
 
 * `url`: string. Full http link to the resource
-

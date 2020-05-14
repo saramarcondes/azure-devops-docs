@@ -12,94 +12,96 @@ ms.date: 04/17/2020
 monikerRange: 'azure-devops'
 ---
 
-# Remove users from Azure DevOps  
+# Remove users from Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 If users no longer require access to a team, project, or your organization, you can remove their access.
 
-## Prerequisites  
+## Prerequisites
 
-- You need [Project Collection Administrator or organization Owner permissions](../../organizations/security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).
+* You need [Project Collection Administrator or organization Owner permissions](../../organizations/security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).
 
 ## Remove users from your organization
 
-> [!NOTE]   
+> [!NOTE]  
 > To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
 
-#### [Preview page](#tab/preview-page) 
+#### [Preview page](#tab/preview-page)
 
-1. Sign in to your organization: ```https://dev.azure.com/{yourorganization}```.
+1.  Sign in to your organization: `https://dev.azure.com/{yourorganization}`.
 
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+2.  Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
     ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
-3. Select **Users**.
+3.  Select **Users**.
 
     ![Organization settings > Users](../../media/open-organization-settings-users-preview.png)
 
-4. Open the context menu **...**  for the user to be removed. Select **Remove from organization**.
+4.  Open the context menu **...** for the user to be removed. Select **Remove from organization**.
 
-   ![Remove a user from your organization](media/delete-user/remove-user-from-organization-preview.png)
+    ![Remove a user from your organization](media/delete-user/remove-user-from-organization-preview.png)
 
-5. Choose **Remove** in the confirmation dialog.
+5.  Choose **Remove** in the confirmation dialog.
 
-   ![Confirm removing an existing user](media/delete-user/confirm-remove-existing-user-preview.png)
+    ![Confirm removing an existing user](media/delete-user/confirm-remove-existing-user-preview.png)
 
-6. To confirm that you've removed the users completely, make sure they aren't in any of your [security groups](../../organizations/security/add-users-team-project.md). 
+6.  To confirm that you've removed the users completely, make sure they aren't in any of your [security groups](../../organizations/security/add-users-team-project.md).
 
-   [Why don't users appear or disappear promptly after I add or delete them in the Users Services page?](faq-user-and-permissions-management.md#users-delay)
+    [Why don't users appear or disappear promptly after I add or delete them in the Users Services page?](faq-user-and-permissions-management.md#users-delay)
 
-7. If you deleted paid users who had Basic or higher features, also [reduce the users in Organization settings](../billing/buy-basic-access-add-users.md#reduce-charges-for-users-who-no-longer-need-access). Then you're not charged in your next Azure billing cycle.
+7.  If you deleted paid users who had Basic or higher features, also [reduce the users in Organization settings](../billing/buy-basic-access-add-users.md#reduce-charges-for-users-who-no-longer-need-access). Then you're not charged in your next Azure billing cycle.
 
-   To reduce or cancel users for the next month, make updates before the last day of the current month.
-   Your bill won't show the changes until the next month because paid users are monthly purchases.
+    To reduce or cancel users for the next month, make updates before the last day of the current month.
+    Your bill won't show the changes until the next month because paid users are monthly purchases.
 
 > [!NOTE]
-> - Azure Active Directory (Azure AD)-backed organizations: After you remove a user from Azure AD, you can't assign artifacts to that user anymore. Examples are work items and pull requests. However, we preserve the history of artifacts that were already assigned to the user.
-> - Managed service account (MSA)-backed organizations: After you remove a user from your MSA-backed organization, the user remains within the tenant and can be re-added at any time.
+>
+> * Azure Active Directory (Azure AD)-backed organizations: After you remove a user from Azure AD, you can't assign artifacts to that user anymore. Examples are work items and pull requests. However, we preserve the history of artifacts that were already assigned to the user.
+> * Managed service account (MSA)-backed organizations: After you remove a user from your MSA-backed organization, the user remains within the tenant and can be re-added at any time.
 
 #### [Current page](#tab/current-page)
 
-1. Sign in to your organization: ```https://dev.azure.com/{yourorganization}```.
+1.  Sign in to your organization: `https://dev.azure.com/{yourorganization}`.
 
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+2.  Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
     ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
-3. Select **Users**.
+3.  Select **Users**.
 
     ![Organization settings, users](../../media/settings/open-organization-settings-users-vert.png)
 
-4. Open the context menu **...**  for the user to be removed. Select **Remove from organization**.
+4.  Open the context menu **...** for the user to be removed. Select **Remove from organization**.
 
-   ![Remove a user from your organization](media/delete-user/remove-user-from-organization-new.png)
+    ![Remove a user from your organization](media/delete-user/remove-user-from-organization-new.png)
 
-5. Choose **Remove** in the confirmation dialog.
+5.  Choose **Remove** in the confirmation dialog.
 
-   ![Confirm removing an existing user](media/delete-user/confirm-remove-existing-user.png)
+    ![Confirm removing an existing user](media/delete-user/confirm-remove-existing-user.png)
 
-6. To confirm that you've removed the users completely, make sure they aren't in any of your [security groups](../../organizations/security/add-users-team-project.md). 
+6.  To confirm that you've removed the users completely, make sure they aren't in any of your [security groups](../../organizations/security/add-users-team-project.md).
 
-   [Why don't users appear or disappear promptly after I add or delete them in the Users Services page?](faq-user-and-permissions-management.md#users-delay)
+    [Why don't users appear or disappear promptly after I add or delete them in the Users Services page?](faq-user-and-permissions-management.md#users-delay)
 
-7. If you deleted paid users who had Basic or higher features, also [reduce the users in Organization settings](../billing/buy-basic-access-add-users.md#reduce-charges-for-users-who-no-longer-need-access). Then you're not charged in your next Azure billing cycle.
+7.  If you deleted paid users who had Basic or higher features, also [reduce the users in Organization settings](../billing/buy-basic-access-add-users.md#reduce-charges-for-users-who-no-longer-need-access). Then you're not charged in your next Azure billing cycle.
 
-   To reduce or cancel users for the next month, make updates before the last day of the current month.
-   Your bill won't show the changes until the next month because paid users are monthly purchases.
+    To reduce or cancel users for the next month, make updates before the last day of the current month.
+    Your bill won't show the changes until the next month because paid users are monthly purchases.
 
 > [!NOTE]
-> - Azure Active Directory (Azure AD)-backed organizations: After you remove a user from Azure AD, you can't assign artifacts to that user anymore. Examples are work items and pull requests. However, we preserve the history of artifacts that were already assigned to the user.
-> - Managed service account (MSA)-backed organizations: After you remove a user from your MSA-backed organization, the user remains within the tenant and can be re-added at any time.
+>
+> * Azure Active Directory (Azure AD)-backed organizations: After you remove a user from Azure AD, you can't assign artifacts to that user anymore. Examples are work items and pull requests. However, we preserve the history of artifacts that were already assigned to the user.
+> * Managed service account (MSA)-backed organizations: After you remove a user from your MSA-backed organization, the user remains within the tenant and can be re-added at any time.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
 [Add a user](add-organization-users.md#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](#remove-user) | [Update a user](manage-users-table-view.md#update-user) | [Show users](manage-users-table-view.md#show-users)
 
-<a id="remove-user" /> 
+<a id="remove-user" />
 
-### Remove a user 
+### Remove a user
 
 You can remove a user from an organization by using the [az devops user remove](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-remove) command. To get started, see [Azure DevOps CLI](../../cli/index.md).
 
@@ -111,20 +113,19 @@ az devops user add --user
 
 #### Parameters
 
-- **user**: The email address or ID of the user. 
-- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-- **yes**: Don't prompt for confirmation.
+* **user**: The email address or ID of the user.
+* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+* **yes**: Don't prompt for confirmation.
 
 #### Example
 
-The following command removes the user with the email address contoso@contoso.com from the contoso organization.  
+The following command removes the user with the email address contoso@contoso.com from the contoso organization.
 
 ```CLI
 az devops user remove --user contoso@contoso.com --org https://dev.azure.com/contoso/ --yes
 ```
 
-* * *
-
+---
 
 ## Remove users from a team or project
 
@@ -134,8 +135,8 @@ To remove users from a project, remove them from the **Teams** groups they belon
 
 ## Related articles
 
-- [Set permissions at the project level or project collection level](../../organizations/security/set-project-collection-level-permissions.md). 
-- [Change individual permissions and grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
-- [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
-- [Troubleshoot adding and deleting organization users](faq-user-and-permissions-management.md)
-- [Export a list of users and their access levels](../security/export-users-audit-log.md)
+* [Set permissions at the project level or project collection level](../../organizations/security/set-project-collection-level-permissions.md).
+* [Change individual permissions and grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
+* [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
+* [Troubleshoot adding and deleting organization users](faq-user-and-permissions-management.md)
+* [Export a list of users and their access levels](../security/export-users-audit-log.md)

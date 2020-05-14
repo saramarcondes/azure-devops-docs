@@ -23,34 +23,34 @@ add [**Owner**](/azure/role-based-access-control/built-in-roles#owner), [**Contr
 
 [!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
 
-1. [Sign in to the Azure portal](https://portal.azure.com/) as the Azure subscription administrator.
+1.  [Sign in to the Azure portal](https://portal.azure.com/) as the Azure subscription administrator.
 
-2. Enter *subscriptions* in the search box, and then select **Subscriptions** from the drop-down menu. If more than one subscription is listed, choose the subscription to modify.
+2.  Enter _subscriptions_ in the search box, and then select **Subscriptions** from the drop-down menu. If more than one subscription is listed, choose the subscription to modify.
 
-   ![Choose the subscription to modify for backup billing manager](media/add-backup-billing-manager/choose-subscription-to-modify.png)
+    ![Choose the subscription to modify for backup billing manager](media/add-backup-billing-manager/choose-subscription-to-modify.png)
 
-3. Select **Access control (IAM)**.
+3.  Select **Access control (IAM)**.
 
-   ![Choose access control, and then add](media/add-backup-billing-manager/choose-access-control.png)
+    ![Choose access control, and then add](media/add-backup-billing-manager/choose-access-control.png)
 
-4. Choose **Add**.
+4.  Choose **Add**.
 
-   ![Add role assignment Azure portal](media/add-backup-billing-manager/add-role-assignment.png)
+    ![Add role assignment Azure portal](media/add-backup-billing-manager/add-role-assignment.png)
 
-5. In the drop-down menu, select the *role* to add members to and select an *assignment* type.
+5.  In the drop-down menu, select the _role_ to add members to and select an _assignment_ type.
 
-   ![Choose a role and assignment type](media/add-backup-billing-manager/choose-role-and-select-an-assignment-type.png)
+    ![Choose a role and assignment type](media/add-backup-billing-manager/choose-role-and-select-an-assignment-type.png)
 
-6. Select a user or group by entering their *name* or *email alias*. (Select a device by entering its *name*.)
+6.  Select a user or group by entering their _name_ or _email alias_. (Select a device by entering its _name_.)
 
-   ![Select a user, group, or device by the name or email alias](media/add-backup-billing-manager/add-permissions-select-member-choose-save.png)
+    ![Select a user, group, or device by the name or email alias](media/add-backup-billing-manager/add-permissions-select-member-choose-save.png)
 
-7. If your update is complete, choose **Save**.
+7.  If your update is complete, choose **Save**.
 
 A user who can [set up](set-up-billing-for-your-organization-vs.md) or [change billing](change-azure-subscription.md) is added to your organization.
 
->[!Note]
->To give access to a user who's not in your directory, the user must accept the invitation that's received via email before they can access the Azure subscription.
+> [!Note]
+> To give access to a user who's not in your directory, the user must accept the invitation that's received via email before they can access the Azure subscription.
 
 ## Related articles
 
@@ -58,4 +58,3 @@ A user who can [set up](set-up-billing-for-your-organization-vs.md) or [change b
 * [Change the Azure subscription for billing](change-azure-subscription.md)
 * [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
 * [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)
-

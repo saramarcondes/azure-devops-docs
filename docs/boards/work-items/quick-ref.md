@@ -18,9 +18,6 @@ ms.date: 04/10/2019
 
 Use this index to quickly access concepts related to work items and information on adding and updating work items&mdash;such as users stories, features, tasks, and bugs.
 
-
-
-
 <a id="concepts" />
 
 ## Key concepts
@@ -82,10 +79,9 @@ Use this index to quickly access concepts related to work items and information 
 </tbody>
 </table>
 
+## Work item user tasks
 
-## Work item  user tasks
-
-Tasks listed below are available to users with Contributor permissions and Basic access.  
+Tasks listed below are available to users with Contributor permissions and Basic access.
 
 ::: moniker range="azure-devops"
 
@@ -186,7 +182,6 @@ Tasks listed below are available to users with Contributor permissions and Basic
 
 ::: moniker-end
 
-
 ::: moniker range="azure-devops-2019"
 
 <table valign="top">
@@ -285,7 +280,6 @@ Tasks listed below are available to users with Contributor permissions and Basic
 
 ::: moniker-end
 
-
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
 <table valign="top">
@@ -373,8 +367,6 @@ Tasks listed below are available to users with Contributor permissions and Basic
 
 ::: moniker-end
 
-
-
 ::: moniker range="<= tfs-2015"
 
 <table valign="top">
@@ -455,14 +447,13 @@ Tasks listed below are available to users with Contributor permissions and Basic
 
 ::: moniker-end
 
+## Administrative customization tasks
 
-## Administrative customization tasks 
-
-Tasks listed in the following table must be performed by an administrator who has the necessary permissions, as they affect all users and teams within a project. 
+Tasks listed in the following table must be performed by an administrator who has the necessary permissions, as they affect all users and teams within a project.
 
 ::: moniker range="azure-devops"
 
-You customize work item types using the Inheritance process model. 
+You customize work item types using the Inheritance process model.
 
 <table valign="top">
 <tbody valign="top">
@@ -474,7 +465,7 @@ You customize work item types using the Inheritance process model.
 <li><a href="../../organizations/settings/work/customize-process-field.md">Add/remove custom fields from a WIT</a></li>
 <li><a href="../../organizations/settings/work/customize-process-form.md#groups">Add/remove custom groups on a WIT form</a></li>
 <li><a href="../../organizations/settings/work/customize-process-form.md#pages">Add/remove custom pages on a WIT form</a></li>
-<li><a href="../../organizations/settings/work/custom-controls-process.md">Add/remove a custom control on a WIT form</a></li> 
+<li><a href="../../organizations/settings/work/custom-controls-process.md">Add/remove a custom control on a WIT form</a></li>
 <li><a href="../../organizations/settings/work/custom-rules.md">Add/remove custom rules to a field</a></li>
 <li><a href="../../organizations/settings/work/customize-process-field.md#identity">Add a person-name/Identity</a></li>
 <li><a href="../../organizations/settings/work/customize-process-field.md#pick-list">Add a picklist (drop-down menu)</a></li>
@@ -494,7 +485,7 @@ You customize work item types using the Inheritance process model.
 <br/>
 <li><a href="../../organizations/settings/set-area-paths.md">Define Area Paths</a></li>
 <li><a href="../../organizations/settings/set-iteration-paths-sprints.md">Define Iteration Paths</a></li>
-<li><a href="../../organizations/settings/work/customize-process-field.md#delete-field">Delete field</a></li> 
+<li><a href="../../organizations/settings/work/customize-process-field.md#delete-field">Delete field</a></li>
 <li><a href="../../organizations/settings/work/customize-process-wit.md#destroy">Delete a WIT</a></li>
 <li><a href="../../organizations/settings/work/customize-process-wit.md#enable-disable">Enable/disable a WIT</a></li>
 </ul>
@@ -517,7 +508,6 @@ You customize work item types using the Inheritance process model.
 
 ::: moniker-end
 
-
 ::: moniker range="azure-devops-2019"
 
 You customize work item types using either the Inheritance process model or On-premises XML process model, depending on the selection made when [creating the project collection](/azure/devops/server/admin/manage-project-collections?view=azure-devops-2019) on which the project is defined.
@@ -536,7 +526,7 @@ You customize work item types using either the Inheritance process model or On-p
 <li><a href="../../organizations/settings/work/customize-process-field.md">Add/remove custom fields from a WIT</a></li>
 <li><a href="../../organizations/settings/work/customize-process-form.md#groups">Add/remove custom groups on a WIT form</a></li>
 <li><a href="../../organizations/settings/work/customize-process-form.md#pages">Add/remove custom pages on a WIT form</a></li>
-<li><a href="../../organizations/settings/work/custom-controls-process.md">Add/remove a custom control on a WIT form</a></li> 
+<li><a href="../../organizations/settings/work/custom-controls-process.md">Add/remove a custom control on a WIT form</a></li>
 <li><a href="../../organizations/settings/work/custom-rules.md">Add/remove custom rules to a field</a></li>
 <li><a href="../../organizations/settings/work/customize-process-field.md#identity">Add a person-name/Identity</a></li>
 <li><a href="../../organizations/settings/work/customize-process-field.md#pick-list">Add a picklist (drop-down menu)</a></li>
@@ -556,7 +546,7 @@ You customize work item types using either the Inheritance process model or On-p
 <br/>
 <li><a href="../../organizations/settings/set-area-paths.md">Define Area Paths</a></li>
 <li><a href="../../organizations/settings/set-iteration-paths-sprints.md">Define Iteration Paths</a></li>
-<li><a href="../../organizations/settings/work/customize-process-field.md#delete-field">Delete field</a></li> 
+<li><a href="../../organizations/settings/work/customize-process-field.md#delete-field">Delete field</a></li>
 <li><a href="../../organizations/settings/work/customize-process-wit.md#destroy">Delete a WIT</a></li>
 <li><a href="../../organizations/settings/work/customize-process-wit.md#enable-disable">Enable/disable a WIT</a></li>
 </ul>
@@ -577,9 +567,7 @@ You customize work item types using either the Inheritance process model or On-p
 </tbody>
 </table>
 
-
 ### On-premises XML process model
-
 
 <table valign="top">
 <tbody valign="top">
@@ -603,7 +591,7 @@ You customize work item types using either the Inheritance process model or On-p
 <li><a href="../../organizations/settings/set-area-paths.md">Define Area Paths</a></li>
 <li><a href="../../organizations/settings/set-iteration-paths-sprints.md">Define Iteration Paths</a></li>
 <li><a href="../../reference/xml/define-global-lists.md">Define global lists</a> </li>
-<li><a href="../../reference/add-modify-field.md#delete-field">Delete a field</a></li> 
+<li><a href="../../reference/add-modify-field.md#delete-field">Delete a field</a></li>
 </ul>
 </td>
 <td width="34%">
@@ -618,9 +606,6 @@ You customize work item types using either the Inheritance process model or On-p
 </table>
 
 ::: moniker-end
-
-
-
 
 ::: moniker range="<= tfs-2018"
 
@@ -648,7 +633,7 @@ You customize work item types using the On-premises XML process model. For addit
 <li><a href="../../organizations/settings/set-area-paths.md">Define Area Paths</a></li>
 <li><a href="../../organizations/settings/set-iteration-paths-sprints.md">Define Iteration Paths</a></li>
 <li><a href="../../reference/xml/define-global-lists.md">Define global lists</a> </li>
-<li><a href="../../reference/add-modify-field.md#delete-field">Delete a field</a></li> 
+<li><a href="../../reference/add-modify-field.md#delete-field">Delete a field</a></li>
 </ul>
 </td>
 <td width="34%">
@@ -664,11 +649,8 @@ You customize work item types using the On-premises XML process model. For addit
 
 ::: moniker-end
 
-
-
-
 ## Related articles
 
-- [Query quick reference](../queries/query-index-quick-ref.md)
-- [Work item field index](../work-items/guidance/work-item-field.md)
-- [Best tools for adding, updating, and linking work items](best-tool-add-update-link-work-items.md)
+* [Query quick reference](../queries/query-index-quick-ref.md)
+* [Work item field index](../work-items/guidance/work-item-field.md)
+* [Best tools for adding, updating, and linking work items](best-tool-add-update-link-work-items.md)

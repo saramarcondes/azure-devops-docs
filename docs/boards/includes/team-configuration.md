@@ -7,9 +7,7 @@ author: KathrynEE
 ms.date: 01/09/2020
 ---
 
-
 ::: moniker range=">= tfs-2017"
-
 
 <table width="100%">
 <tbody valign="top">
@@ -25,7 +23,7 @@ ms.date: 01/09/2020
 <li><a href="/azure/devops/boards/backlogs/create-your-backlog" >Product backlog</a></li>
 <li><a href="/azure/devops/boards/backlogs/define-features-epics" >Features backlog</a></li>
 <li><a href="/azure/devops/boards/backlogs/define-features-epics" >Epics backlog</a></li>
-<li><a href="/azure/devops/boards/sprints/forecast">Forecast</a></li> 
+<li><a href="/azure/devops/boards/sprints/forecast">Forecast</a></li>
 </ul>
 </td>
 <td>
@@ -81,7 +79,7 @@ ms.date: 01/09/2020
 <li><a href="/azure/devops/report/dashboards/widget-catalog#sprint-burndown-widget" >Sprint burndown</a></li>
 <li><a href="/azure/devops/report/dashboards/widget-catalog#sprint-capacity-widget" >Sprint capacity</a></li>
 <li><a href="/azure/devops/report/dashboards/widget-catalog#sprint-overview-widget" >Sprint overview</a></li>
-<li><a href="/azure/devops/report/dashboards/widget-catalog#team-members-widget" >Team members</a></li> 
+<li><a href="/azure/devops/report/dashboards/widget-catalog#team-members-widget" >Team members</a></li>
 </ul>
 </td>
 <td>
@@ -102,7 +100,7 @@ ms.date: 01/09/2020
 <li><a href="/azure/devops/boards/queries/using-queries">Queries</a></li>
 <li><a href="/azure/devops/report/dashboards/team-velocity" >Velocity</a></li>
 <li><a href="/azure/devops/report/dashboards/dashboards" >Dashboards</a></li>
-<li><a href="/azure/devops/notifications/howto-manage-team-notifications" >Alerts</a> </li> 
+<li><a href="/azure/devops/notifications/howto-manage-team-notifications" >Alerts</a> </li>
 </ul>
 </td>
 <td>
@@ -113,9 +111,8 @@ Not applicable
 </table>
 
 ::: moniker-end
- 
-::: moniker range="tfs-2015"
 
+::: moniker range="tfs-2015"
 
 <table width="100%">
 <tbody valign="top">
@@ -131,7 +128,7 @@ Not applicable
 <li><a href="/azure/devops/boards/backlogs/create-your-backlog">Product backlog</a></li>
 <li><a href="/azure/devops/boards/backlogs/define-features-epics" >Features backlog</a></li>
 <li><a href="/azure/devops/boards/backlogs/define-features-epics">Epics backlog</a></li>
-<li><a href="/azure/devops/boards/sprints/forecast" >Forecast</a></li> 
+<li><a href="/azure/devops/boards/sprints/forecast" >Forecast</a></li>
 </ul>
 </td>
 <td>
@@ -188,7 +185,7 @@ Not applicable
 <li><a href="/azure/devops/report/dashboards/widget-catalog#sprint-burndown-widget" data-raw-source="[Sprint burndown](/azure/devops/report/dashboards/widget-catalog#sprint-burndown-widget)">Sprint burndown</a></li>
 <li><a href="/azure/devops/report/dashboards/widget-catalog#sprint-capacity-widget" data-raw-source="[Sprint capacity](/azure/devops/report/dashboards/widget-catalog#sprint-capacity-widget)">Sprint capacity</a></li>
 <li><a href="/azure/devops/report/dashboards/widget-catalog#sprint-overview-widget" data-raw-source="[Sprint overview](/azure/devops/report/dashboards/widget-catalog#sprint-overview-widget)">Sprint overview</a></li>
-<li><a href="/azure/devops/report/dashboards/widget-catalog#team-members-widget" data-raw-source="[Team members](/azure/devops/report/dashboards/widget-catalog#team-members-widget)">Team members</a></li> 
+<li><a href="/azure/devops/report/dashboards/widget-catalog#team-members-widget" data-raw-source="[Team members](/azure/devops/report/dashboards/widget-catalog#team-members-widget)">Team members</a></li>
 </ul>
 </td>
 <td>
@@ -209,7 +206,7 @@ Not applicable
 <li><a href="/azure/devops/report/dashboards/team-velocity" data-raw-source="[Velocity](/azure/devops/report/dashboards/team-velocity.md)">Velocity</a></li>
 <li><a href="/azure/devops/report/dashboards/dashboards" data-raw-source="[Dashboards](/azure/devops/report/dashboards/dashboards.md)">Dashboards</a></li>
 <li><a href="/azure/devops/notifications/collaborate-in-a-team-room" data-raw-source="[Team rooms](/azure/devops/notifications/collaborate-in-a-team-room.md)">Team rooms</a></li>
-<li><a href="/azure/devops/notifications/howto-manage-team-notifications" data-raw-source="[Alerts](/azure/devops/notifications/howto-manage-team-notifications.md)">Alerts</a> </li> 
+<li><a href="/azure/devops/notifications/howto-manage-team-notifications" data-raw-source="[Alerts](/azure/devops/notifications/howto-manage-team-notifications.md)">Alerts</a> </li>
 </ul>
 </td>
 <td>
@@ -219,13 +216,9 @@ Not applicable
 </tbody>
 </table>
 
-
 ::: moniker-end
 
-
 ::: moniker range="tfs-2013"
-
-
 
 <table width="100%">
 <tbody valign="top">
@@ -240,7 +233,7 @@ Not applicable
 <ul>
 <li><a href="/azure/devops/boards/backlogs/create-your-backlog" data-raw-source="[Product backlog](/azure/devops/boards/backlogs/create-your-backlog.md)">Product backlog</a></li>
 <li><a href="/azure/devops/boards/backlogs/define-features-epics" data-raw-source="[Features backlog](/azure/devops/boards/backlogs/define-features-epics.md)">Features backlog</a></li>
-<li><a href="/azure/devops/boards/sprints/forecast" data-raw-source="[Forecast](/azure/devops/boards/sprints/forecast.md)">Forecast</a></li> 
+<li><a href="/azure/devops/boards/sprints/forecast" data-raw-source="[Forecast](/azure/devops/boards/sprints/forecast.md)">Forecast</a></li>
 </ul>
 </td>
 <td>
@@ -295,7 +288,7 @@ Not applicable
 <li><a href="/azure/devops/report/dashboards/widget-catalog#sprint-burndown-widget" data-raw-source="[Sprint burndown](/azure/devops/report/dashboards/widget-catalog#sprint-burndown-widget)">Sprint burndown</a></li>
 <li><a href="/azure/devops/report/dashboards/widget-catalog#sprint-capacity-widget" data-raw-source="[Sprint capacity](/azure/devops/report/dashboards/widget-catalog#sprint-capacity-widget)">Sprint capacity</a></li>
 <li><a href="/azure/devops/report/dashboards/widget-catalog#sprint-overview-widget" data-raw-source="[Sprint overview](/azure/devops/report/dashboards/widget-catalog#sprint-overview-widget)">Sprint overview</a></li>
-<li><a href="/azure/devops/report/dashboards/widget-catalog#team-members-widget" data-raw-source="[Team members](/azure/devops/report/dashboards/widget-catalog#team-members-widget)">Team members</a></li> 
+<li><a href="/azure/devops/report/dashboards/widget-catalog#team-members-widget" data-raw-source="[Team members](/azure/devops/report/dashboards/widget-catalog#team-members-widget)">Team members</a></li>
 </ul>
 </td>
 <td>
@@ -316,7 +309,7 @@ Not applicable
 <li><a href="/azure/devops/report/dashboards/team-velocity" data-raw-source="[Velocity](/azure/devops/report/dashboards/team-velocity.md)">Velocity</a></li>
 <li><a href="/azure/devops/report/dashboards/team-dashboard" data-raw-source="[Team home page](/azure/devops/report/dashboards/team-dashboard.md)">Team home page</a></li>
 <li><a href="/azure/devops/notifications/collaborate-in-a-team-room" data-raw-source="[Team rooms](/azure/devops/notifications/collaborate-in-a-team-room.md)">Team rooms</a></li>
-<li><a href="/azure/devops/notifications/howto-manage-team-notifications" data-raw-source="[Alerts](/azure/devops/notifications/howto-manage-team-notifications.md)">Alerts</a> </li> 
+<li><a href="/azure/devops/notifications/howto-manage-team-notifications" data-raw-source="[Alerts](/azure/devops/notifications/howto-manage-team-notifications.md)">Alerts</a> </li>
 </ul>
 </td>
 <td>
@@ -325,6 +318,5 @@ Not applicable
 </tr>
 </tbody>
 </table>
-
 
 ::: moniker-end

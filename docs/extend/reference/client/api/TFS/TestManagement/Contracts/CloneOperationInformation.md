@@ -14,10 +14,9 @@ ms.date: 08/04/2016
 
 Module path: `TFS/TestManagement/Contracts`
 
-
 ### Members
 
-* `cloneStatistics`: [CloneStatistics](../../../TFS/TestManagement/Contracts/CloneStatistics.md). 
+* `cloneStatistics`: [CloneStatistics](../../../TFS/TestManagement/Contracts/CloneStatistics.md).
 
 * `completionDate`: Date. If the operation is complete, the DateTime of completion. If operation is not complete, this is DateTime.MaxValue
 
@@ -44,4 +43,3 @@ Module path: `TFS/TestManagement/Contracts`
 * `state`: [CloneOperationState](../../../TFS/TestManagement/Contracts/CloneOperationState.md). Current state of the operation. When State reaches Succeeded or Failed, the operation is complete
 
 * `url`: string. Url for getting the clone information
-

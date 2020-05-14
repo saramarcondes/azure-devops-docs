@@ -51,17 +51,17 @@ The Epic work item is also bound to a new optional backlog level. Using the step
 
 The Kanban board gets a bit more love this sprint with three new features.
 
-- Custom fields added to your cards are now directly editable from the board.
-- The first and last columns on your board are now collapsible.
-- The first column now supports paging when filtering across long backlogs
+* Custom fields added to your cards are now directly editable from the board.
+* The first and last columns on your board are now collapsible.
+* The first column now supports paging when filtering across long backlogs
 
 ![Kanban board improvements](media/5_15_05.png)
 
 The Taskboard gets a bunch of love as well, including things we added to the Kanban board in previous sprints:
 
-- Adding custom fields to cards
-- Custom fields added to your cards are now directly editable from the board (just like above)
-- Adding tags to cards
+* Adding custom fields to cards
+* Custom fields added to your cards are now directly editable from the board (just like above)
+* Adding tags to cards
 
 We also tweaked the card layout a bit to optimize for smaller titles, ensuring that you can get the maximum numbers of cards on your board.
 

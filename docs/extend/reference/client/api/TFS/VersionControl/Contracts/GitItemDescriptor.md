@@ -13,7 +13,6 @@ ms.date: 08/04/2016
 
 Module path: `TFS/VersionControl/Contracts`
 
-
 ### Members
 
 * `path`: string. Path to item
@@ -25,4 +24,3 @@ Module path: `TFS/VersionControl/Contracts`
 * `versionOptions`: [GitVersionOptions](../../../TFS/VersionControl/Contracts/GitVersionOptions.md). Version modifiers (e.g. previous)
 
 * `versionType`: [GitVersionType](../../../TFS/VersionControl/Contracts/GitVersionType.md). How to interpret version (branch,tag,commit)
-

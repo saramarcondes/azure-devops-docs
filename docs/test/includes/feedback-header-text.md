@@ -3,9 +3,9 @@ ms.topic: include
 ---
 
 [Stakeholders](../../organizations/security/get-started-stakeholder.md)
-can respond to feedback requests for user stories and 
+can respond to feedback requests for user stories and
 features generated in Azure DevOps or TFS using
-a lightweight end-to-end flow based on the 
+a lightweight end-to-end flow based on the
 [Test &amp; Feedback extension](../perform-exploratory-tests.md).
 Only users with Basic access can request feedback. Basic users
 can provide feedback using the flow described in

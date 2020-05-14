@@ -36,38 +36,36 @@ If you don't have an Azure subscription, [create a subscription](https://azure.m
 
 ## Enable paid load testing
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+1.  Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+2.  Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
-3. Select **Billing**.
+3.  Select **Billing**.
 
-   ![Select Billing from Organization settings](media/shared/select-billing-organization-settings.png)
+    ![Select Billing from Organization settings](media/shared/select-billing-organization-settings.png)
 
-4. Select the dropdown menu for Cloud-based load testing, and then select **On**.
+4.  Select the dropdown menu for Cloud-based load testing, and then select **On**.
 
     You can set a monthly limit on the virtual user minutes that you use by selecting an amount from the **PAID LOAD TESTING LIMIT** drop-down menu. When you're done, choose **Save**.
 
-   ![Select an amount from the PAID LOAD TESTING LIMIT drop-down menu](media/shared/paid-load-testing-limit.png)
+    ![Select an amount from the PAID LOAD TESTING LIMIT drop-down menu](media/shared/paid-load-testing-limit.png)
 
 Cloud-based load testing is enabled for your organization.
 
 ## Billing and free monthly usage
 
-You're charged for only the virtual user minutes of cloud-based load testing used above the *free tier* of user minutes per month. The *free tier* includes:
+You're charged for only the virtual user minutes of cloud-based load testing used above the _free tier_ of user minutes per month. The _free tier_ includes:
 
 [!INCLUDE [free-tier](../../includes/free-tier.md)]
 
-
-
-* The *free tier* resets on the first day of the month.
+* The _free tier_ resets on the first day of the month.
 
 * Visual Studio subscriptions don't include any additional virtual user minutes. The free amounts are per organization, not per user.
 
 * For cloud-based load testing, you're charged for each
-   [virtual user minute](../../test/load-test/reference-qa.md#VUM) that exceeds the free monthly usage.
+  [virtual user minute](../../test/load-test/reference-qa.md#VUM) that exceeds the free monthly usage.
 
 * Graduated discounts for cloud-based load testing are calculated based on your Azure subscription billing cycle.
 
@@ -77,7 +75,4 @@ There's a limit on the duration for each test run. For cloud-based load testing,
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Load test your app](../../test/load-test/get-started-simple-cloud-load-test.md)
-
-
+> [!div class="nextstepaction"][load test your app](../../test/load-test/get-started-simple-cloud-load-test.md)

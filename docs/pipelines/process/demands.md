@@ -23,14 +23,16 @@ Use demands to make sure that the capabilities your pipeline needs are present o
 
 ## Task demands
 
-Some tasks won't run unless one or more demands are met by the agent. For example, the [Visual Studio Build](../tasks/build/visual-studio-build.md) task demands that ```msbuild``` and ```visualstudio``` are installed on the agent.
+Some tasks won't run unless one or more demands are met by the agent. For example, the [Visual Studio Build](../tasks/build/visual-studio-build.md) task demands that `msbuild` and `visualstudio` are installed on the agent.
 
 ## Manually entered demands
 
 You might need to use self-hosted agents with special capabilities. For example, your pipeline may require **SpecialSoftware** on agents in the `Default` pool. Or, if you have multiple agents with different operating systems in the same pool, you may have a pipeline that requires a Linux agent.
 
 # [YAML](#tab/yaml)
+
 To add a single demand to your YAML build pipeline, add the `demands:` line to the `pool` section.
+
 ```yaml
 pool:
   name: Default
@@ -38,6 +40,7 @@ pool:
 ```
 
 Or if you need to add multiple demands, add one per line.
+
 ```yaml
 pool:
   name: Default
@@ -62,27 +65,27 @@ For more information and examples, see [YAML schema - Demands](../yaml-schema.md
 
 In the Tasks tab of the pipeline, add the demand to your agent job.
 
-| Name | Condition | Value |
-|---|---|---|
-| SpecialSoftware | exists | N/A |
-| Agent.OS | equals | Linux |
+| Name            | Condition | Value |
+| --------------- | --------- | ----- |
+| SpecialSoftware | exists    | N/A   |
+| Agent.OS        | equals    | Linux |
 
 ---
 
 Register each agent that has the capability.
 
-1. In your web browser, navigate to Agent pools:
+1.  In your web browser, navigate to Agent pools:
 
-   [!INCLUDE [agent-pools-tab](../agents/includes/agent-pools-tab.md)]
+    [!INCLUDE [agent-pools-tab](../agents/includes/agent-pools-tab.md)]
 
-1. Navigate to the capabilities tab for the agent:
- 
-   [!INCLUDE [agent-capabilities](../agents/includes/agent-capabilities-tab.md)]
+1.  Navigate to the capabilities tab for the agent:
 
-1. Add something like the following entry:
+    [!INCLUDE [agent-capabilities](../agents/includes/agent-capabilities-tab.md)]
 
-| First box | Second box |
-|---|---|
+1.  Add something like the following entry:
+
+| First box       | Second box                             |
+| --------------- | -------------------------------------- |
 | SpecialSoftware | C:\Program Files (x86)\SpecialSoftware |
 
 > [!TIP]

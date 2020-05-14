@@ -14,7 +14,6 @@ ms.date: 08/04/2016
 
 Module path: `VSS/WebApi/Contracts`
 
-
 ### Members
 
 * `area`: string. Area name for this resource
@@ -32,4 +31,3 @@ Module path: `VSS/WebApi/Contracts`
 * `resourceVersion`: number. The current resource version supported by this resource location
 
 * `routeTemplate`: string. This location&#x27;s route template (templated relative path)
-

@@ -24,13 +24,15 @@ ms.date: 08/04/2016
 GET https://{instance}/DefaultCollection/{project}/_apis/build/definitions/templates?api-version={version}
 ```
 
-| Parameter     | Type                 | Notes
-|:--------------|:---------------------|:------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance      | string               | TFS server name ({server:port}).
-| project       | string               | [Project](../tfs/projects.md) ID or name.
+| instance | string | TFS server name ({server:port}).
+| project | string | [Project](../tfs/projects.md) ID or name.
 | Query
-| api-version   | string               | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
@@ -50,7 +52,8 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
       "canDelete": false,
       "category": "Build",
       "iconTaskId": "71a9a2d3-a98a-4caa-96ab-affca411ecda",
-      "description": "Build and run tests using Visual Studio. This template requires that Visual Studio be installed on the build agent.",
+      "description":
+        "Build and run tests using Visual Studio. This template requires that Visual Studio be installed on the build agent.",
       "template": {
         "build": [
           {
@@ -80,7 +83,8 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
               "versionSpec": "*"
             },
             "inputs": {
-              "testAssembly": "**\\$(BuildConfiguration)\\*test*.dll;-:**\\obj\\**",
+              "testAssembly":
+                "**\\$(BuildConfiguration)\\*test*.dll;-:**\\obj\\**",
               "vsTestLocation": "",
               "platform": "$(BuildPlatform)",
               "configuration": "$(BuildConfiguration)"
@@ -118,7 +122,8 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
               "Contents": "**\\bin",
               "ArtifactName": "drop",
               "ArtifactType": "Container",
-              "TargetPath": "\\\\my\\share\\$(Build.DefinitionName)\\$(Build.BuildNumber)"
+              "TargetPath":
+                "\\\\my\\share\\$(Build.DefinitionName)\\$(Build.BuildNumber)"
             }
           }
         ],
@@ -145,7 +150,8 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
       "canDelete": false,
       "category": "Deployment",
       "iconTaskId": "2ca8fe15-42ea-4b26-80f1-e0738ec17e89",
-      "description": "Build, package, test and deploy your Azure Cloud Service.",
+      "description":
+        "Build, package, test and deploy your Azure Cloud Service.",
       "template": {
         "build": [
           {
@@ -179,7 +185,8 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
               "solution": "**\\*.ccproj",
               "msbuildLocation": "",
               "vsLocation": "",
-              "msbuildArgs": "/t:Publish /p:TargetProfile=$(targetProfile) /p:DebugType=None /p:SkipInvalidConfigurations=true /p:OutputPath=bin\\ /p:PublishDir=\"$(build.stagingDirectory)\\\\\"",
+              "msbuildArgs":
+                "/t:Publish /p:TargetProfile=$(targetProfile) /p:DebugType=None /p:SkipInvalidConfigurations=true /p:OutputPath=bin\\ /p:PublishDir=\"$(build.stagingDirectory)\\\\\"",
               "platform": "",
               "configuration": "",
               "clean": "false",
@@ -195,7 +202,8 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
               "versionSpec": "*"
             },
             "inputs": {
-              "testAssembly": "**\\$(BuildConfiguration)\\*test*.dll;-:**\\obj\\**",
+              "testAssembly":
+                "**\\$(BuildConfiguration)\\*test*.dll;-:**\\obj\\**",
               "vsTestLocation": ""
             }
           },
@@ -302,7 +310,8 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
               "solution": "**\\*.sln",
               "msbuildLocation": "",
               "vsLocation": "",
-              "msbuildArgs": "/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation=\"$(build.stagingDirectory)\"",
+              "msbuildArgs":
+                "/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation=\"$(build.stagingDirectory)\"",
               "platform": "$(BuildPlatform)",
               "configuration": "$(BuildConfiguration)",
               "clean": "false",
@@ -318,7 +327,8 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
               "versionSpec": "*"
             },
             "inputs": {
-              "testAssembly": "**\\$(BuildConfiguration)\\*test*.dll;-:**\\obj\\**",
+              "testAssembly":
+                "**\\$(BuildConfiguration)\\*test*.dll;-:**\\obj\\**",
               "vsTestLocation": ""
             }
           },
@@ -402,7 +412,8 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
       "canDelete": false,
       "category": "Build",
       "iconTaskId": "1e78dc1b-9132-4b18-9c75-0e7ecc634b74",
-      "description": "Build and test an Xcode workspace. This template requires a Mac OS build agent.",
+      "description":
+        "Build and test an Xcode workspace. This template requires a Mac OS build agent.",
       "template": {
         "build": [
           {
@@ -513,7 +524,8 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
       "canDelete": false,
       "category": "Build",
       "iconTaskId": "27edd013-36fd-43aa-96a3-7d73e1e35285",
-      "description": "Build an Android app and Xamarin.UITest assembly. Test with Xamarin Test Cloud.",
+      "description":
+        "Build an Android app and Xamarin.UITest assembly. Test with Xamarin Test Cloud.",
       "template": {
         "build": [
           {
@@ -561,7 +573,8 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
               "solution": "**\\*test*.csproj",
               "platform": "",
               "configuration": "$(BuildConfiguration)",
-              "msbuildArguments": "/p:OutputPath=$(Agent.BuildDirectory)\\bin\\test-assembly",
+              "msbuildArguments":
+                "/p:OutputPath=$(Agent.BuildDirectory)\\bin\\test-assembly",
               "clean": "false",
               "restoreNugetPackages": "false"
             }
@@ -584,7 +597,8 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
               "testDir": "$(Agent.BuildDirectory)\\bin\\test-assembly",
               "parallelization": "none",
               "locale": "en_US",
-              "testCloudLocation": "$(Agent.BuildDirectory)\\**\\packages\\**\\tools\\test-cloud.exe",
+              "testCloudLocation":
+                "$(Agent.BuildDirectory)\\**\\packages\\**\\tools\\test-cloud.exe",
               "optionalArgs": ""
             }
           },
@@ -603,7 +617,8 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
               "keystorePass": "",
               "keystoreAlias": "",
               "keyPass": "",
-              "jarsignerArguments": "-verbose -sigalg MD5withRSA -digestalg SHA1",
+              "jarsignerArguments":
+                "-verbose -sigalg MD5withRSA -digestalg SHA1",
               "zipalign": "false",
               "zipalignLocation": ""
             }
@@ -669,7 +684,8 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
       "canDelete": false,
       "category": "Build",
       "iconTaskId": "0f077e3a-af59-496d-81bc-ad971b7464e0",
-      "description": "Build a Xamarin.iOS app and Xamarin.UITest assembly. Test with Xamarin Test Cloud. This template requires a Mac OS build agent.",
+      "description":
+        "Build a Xamarin.iOS app and Xamarin.UITest assembly. Test with Xamarin Test Cloud. This template requires a Mac OS build agent.",
       "template": {
         "build": [
           {
@@ -726,21 +742,22 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
 }
 ```
 
-
 ## Get a build definition template
 
 ```no-highlight
 GET https://{instance}/DefaultCollection/{project}/_apis/build/definition/templates/{templateId}?api-version={version}
 ```
 
-| Parameter    | Type   | Notes
-|:-------------|:-------|:------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance     | string | TFS server name ({server:port}).
-| project      | string | [Project](../tfs/projects.md) ID or name.
-| templateId   | int    | ID of the build definition template.
+| instance | string | TFS server name ({server:port}).
+| project | string | [Project](../tfs/projects.md) ID or name.
+| templateId | int | ID of the build definition template.
 | Query
-| api-version  | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
@@ -757,7 +774,8 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
   "canDelete": false,
   "category": "Build",
   "iconTaskId": "71a9a2d3-a98a-4caa-96ab-affca411ecda",
-  "description": "Build and run tests using Visual Studio. This template requires that Visual Studio be installed on the build agent.",
+  "description":
+    "Build and run tests using Visual Studio. This template requires that Visual Studio be installed on the build agent.",
   "template": {
     "build": [
       {
@@ -825,7 +843,8 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
           "Contents": "**\\bin",
           "ArtifactName": "drop",
           "ArtifactType": "Container",
-          "TargetPath": "\\\\my\\share\\$(Build.DefinitionName)\\$(Build.BuildNumber)"
+          "TargetPath":
+            "\\\\my\\share\\$(Build.DefinitionName)\\$(Build.BuildNumber)"
         }
       }
     ],
@@ -848,28 +867,29 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
 }
 ```
 
-
-
 ## Create or update a build definition template
 
 ```no-highlight
 PUT https://{instance}/DefaultCollection/{project}/_apis/build/definitions/templates/{templateId}?api-version={version}
 ```
 
-| Parameter     | Type                 | Notes
-|:--------------|:---------------------|:------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance      | string               | TFS server name ({server:port}).
-| project       | string               | [Project](../tfs/projects.md) ID or name.
-| templateId    | int                  | ID of the build definition template.
+| instance | string | TFS server name ({server:port}).
+| project | string | [Project](../tfs/projects.md) ID or name.
+| templateId | int | ID of the build definition template.
 | Query
-| api-version   | string               | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
 ```
 PUT https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definitions/templates/myCustomTemplate?api-version=2.0
 ```
+
 ```json
 {
   "name": "My Custom Template",
@@ -1036,26 +1056,25 @@ PUT https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definit
 }
 ```
 
-
-
 ## Delete a build definition template
 
 ```no-highlight
 DELETE https://{instance}/DefaultCollection/{project}/_apis/build/definitions/templates/{templateId}?api-version={version}
 ```
 
-| Parameter     | Type                 | Notes
-|:--------------|:---------------------|:------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance      | string               | TFS server name ({server:port}).
-| project       | string               | [Project](../tfs/projects.md) ID or name.
-| templateId    | int                  | ID of the build definition template.
+| instance | string | TFS server name ({server:port}).
+| project | string | [Project](../tfs/projects.md) ID or name.
+| templateId | int | ID of the build definition template.
 | Query
-| api-version   | string               | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
 ```
 DELETE https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/definitions/templates/myCustomTemplate?api-version=2.0
 ```
-

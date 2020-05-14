@@ -15,8 +15,6 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-
 ### Members
 
 * `getContributionInstance`: (instanceId: string, contextData: any): IPromise&lt;T&gt;. Gets an object registered in the dialog&#x27;s contribution control.
@@ -26,4 +24,3 @@ Defined in vss.d.ts
 * `setTitle`: (title: string): any. Update the title of the dialog
 
 * `updateOkButton`: (enabled: boolean): any. Update the enablement of the OK button
-

@@ -18,7 +18,7 @@ See the overview of [publish, install, and share](./overview.md) for additional 
 
 ## Before you begin
 
-Before you begin, you need to get the TFX CLI from Node Package Manager and generate a personal access token. 
+Before you begin, you need to get the TFX CLI from Node Package Manager and generate a personal access token.
 Also, if you have not done so, you need to set up a Publisher in the Gallery.
 
 ### Acquire the TFS Cross Platform Command Line Interface
@@ -39,9 +39,9 @@ If you haven't already created a publisher, you can do so using the command line
 
 Once the TFX CLI is installed and you have your personal access token, you can use the tool to package and publish your extension.
 
-1. Open a command prompt to the root directory of your extension.
-2. Run the `tfx extension publish` command passing in any necessary parameters. 
-Run `tfx extension publish --help` to see all available options.
+1.  Open a command prompt to the root directory of your extension.
+2.  Run the `tfx extension publish` command passing in any necessary parameters.
+    Run `tfx extension publish --help` to see all available options.
 
 You may receive the following error when publishing if your extension has already been published:
 
@@ -49,9 +49,8 @@ You may receive the following error when publishing if your extension has alread
 Failed Request: Internal Server Error(500) - Version number must increase each time an extension is published. Extension: fabrikam.my-extension  Current version: 0.1.9  Updated version: 0.1.9
 ```
 
-You can add the `--rev-version` command line option to automatically increment the *patch* version of your extension. 
+You can add the `--rev-version` command line option to automatically increment the _patch_ version of your extension.
 Note that this also saves the new version to your manifest.
-
 
 #### Example
 

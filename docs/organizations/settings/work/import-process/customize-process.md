@@ -19,7 +19,7 @@ Azure DevOps Services supports adding and updating processes through an administ
 > [!IMPORTANT]
 > With the Hosted XML process model, you customize work tracking by updating select XML definition files of a process template. This feature is available only when data is migrated to Azure DevOps Services by use of [Team Foundation Server Database Import Service](https://aka.ms/TFSDataImport).
 >
->To learn more about customization and process models, see [Customize work tracking](../../../../reference/customize-work.md).
+> To learn more about customization and process models, see [Customize work tracking](../../../../reference/customize-work.md).
 
 A process is a zip file that contains a set of interdependent files. These files define the building blocks of the work-item tracking system and other subsystems in Azure DevOps Services. Some building blocks update existing projects, while others apply only to new projects. See the following table for the full list of building blocks.
 
@@ -50,7 +50,7 @@ A process is a zip file that contains a set of interdependent files. These files
 </td>
 <td>
 <p>Microsoft Project Mappings</p>
-<p>Reports</p> 
+<p>Reports</p>
 <p>Portal (SharePoint Products) </p>
 </td><br/></tr>
 </tbody>
@@ -72,34 +72,33 @@ If you update an existing process you've used with on-premises Team Foundation S
 
 ### Export and import a process
 
-1. From the **Processes** tab, select the ellipsis (...) to open the shortcut menu for the Hosted XML process that you want to export. You can export only Hosted XML processes.
+1.  From the **Processes** tab, select the ellipsis (...) to open the shortcut menu for the Hosted XML process that you want to export. You can export only Hosted XML processes.
 
-    > [!div class="mx-imgBorder"]
-    > ![Process page > Export Hosted XML process menu option ](media/export-process.png)
+    > [!div class="mx-imgBorder"] > ![Process page > Export Hosted XML process menu option ](media/export-process.png)
 
-   Save the zip file and extract all files from it.
+    Save the zip file and extract all files from it.
 
-1. Rename the process within the ProcessTemplate.xml file located in the root directory.
+1.  Rename the process within the ProcessTemplate.xml file located in the root directory.
 
-   Name the process to distinguish it from existing ones.
+    Name the process to distinguish it from existing ones.
 
-   ```<name>MyCompany Agile Process  </name>```
+    `<name>MyCompany Agile Process </name>`
 
-   Change the version type, and change the major and minor numbers. Provide a distinct GUID for the type as in this example:
+    Change the version type, and change the major and minor numbers. Provide a distinct GUID for the type as in this example:
 
-   ```<version type="F50EFC58-C2FC-4C66-9814-E395D90778A3" major="1" minor="1"/>```
+    `<version type="F50EFC58-C2FC-4C66-9814-E395D90778A3" major="1" minor="1"/>`
 
-1. Apply [supported customizations](#supported-customizations).
+1.  Apply [supported customizations](#supported-customizations).
 
-1. Create a zip file of all files and folders in the root directory.
+1.  Create a zip file of all files and folders in the root directory.
 
-1. [Import the zip file of your custom process](import-process.md).
+1.  [Import the zip file of your custom process](import-process.md).
 
 <a id="supported-customizations"></a>
 
 ## Supported customizations
 
-You can apply the following customizations to your process: 
+You can apply the following customizations to your process:
 
 * [Add, remove, or modify a WIT](../../../../reference/add-modify-wit.md).
 * [Add or modify a field](../../../../reference/add-modify-wit.md).
@@ -119,17 +118,17 @@ You can import up to 32 processes into Azure DevOps Services. Your custom proces
 
 * [Process](#process)
   * [Process configuration](#process-configuration)
-  * [Categories](#categories) 
+  * [Categories](#categories)
   * [Work item types](#work-item-types)
     * [Fields](#work-item-fields)
       * [Limits](#limits)
-      * [Required fields](#required-fields) 
+      * [Required fields](#required-fields)
       * [Rule restrictions](#rule-restrictions)
-      * [Consistent names and attributes](#consistent-names-attributes) 
+      * [Consistent names and attributes](#consistent-names-attributes)
       * [Identity fields](#identity-fields)
-      * [Workflow](resolve-errors.md#wit-workflow-definitions) 
-      * [Global lists](#wit-global-list-definitions) 
-    * [Workflow](#work-item-workflow) 
+      * [Workflow](resolve-errors.md#wit-workflow-definitions)
+      * [Global lists](#wit-global-list-definitions)
+    * [Workflow](#work-item-workflow)
     * [Form layout](#work-item-form-layout)
 
 <a id="process"></a>
@@ -149,7 +148,7 @@ Also, your process must pass the following validation checks:
   * A template with the same name and version GUID as an existing process overwrites that process.
   * A template with the same name but a different version GUID generates an error.
   * Process names can't contain the following special characters:
-     ```. , ; ' ` : / \ * | ? " & % $ ! + = ( ) [ ] { } < >```.\
+    `` . , ; ' ` : / \ * | ? " & % $ ! + = ( ) [ ] { } < > ``.\
     See [Naming restrictions](../../naming-restrictions.md) for additional constraints.
 * Process folders contain no .exe files. Even if you can import a process that contains an .exe file, project creation fails.
 * The process's total size is at most 2 GB. Otherwise, project creation fails.
@@ -183,7 +182,7 @@ A **WITD** element and its child elements must conform to the syntax and rules d
 
 * There are at most 512 fields within a single WIT and 512 fields across all WITs.
 * The friendly name and required **refname** attribute assigned to a WIT are unique within the set of WIT definition files.
-* The required **refname** attribute value doesn't contain disallowed characters or use the disallowed namespaces System.*Name* and Microsoft.*Name*.
+* The required **refname** attribute value doesn't contain disallowed characters or use the disallowed namespaces System._Name_ and Microsoft._Name_.
 * Reference names contain at least one period (.), and all other characters are letters with no spaces.
 * The **WITD** element contains a **FORM** element that defines a **WebLayout** element conforming to the syntax specified in [WebLayout and Control elements](../../../../reference/xml/weblayout-xml-elements.md).
 
@@ -194,7 +193,7 @@ A **WITD** element and its child elements must conform to the syntax and rules d
 A **FIELDS** element and its child elements must conform to the syntax and rules described in [FIELD XML element reference](../../../../reference/xml/field-definition-element-reference.md). Also, it must meet the following conditions:
 
 * The friendly name and required **refname** attribute assigned to a WIT are unique within the set of WIT definition files.
-* The required **refname** attribute value doesn't contain disallowed characters or use the disallowed namespaces System.*Name* and Microsoft.*Name*.
+* The required **refname** attribute value doesn't contain disallowed characters or use the disallowed namespaces System._Name_ and Microsoft._Name_.
 * Reference names contain at least one period (.), and all other characters are letters with no spaces.
 
 A **FIELD** element and its child elements can contain a **GLOBALLIST** element.
@@ -204,7 +203,7 @@ A **FIELD** element and its child elements can contain a **GLOBALLIST** element.
 #### Limit restrictions
 
 * A **FIELDS** element is limited to 512 fields.
-* A work item type is limited to 64 person-name fields. A person-name field is one with the attribute and value ```syncnamechanges=true```.
+* A work item type is limited to 64 person-name fields. A person-name field is one with the attribute and value `syncnamechanges=true`.
 * An **ALLOWEDVALUES** or **SUGGESTEDVALUES** element is limited to 512 **LISTITEM** elements.
 * A field is limited to 1,024 rules.
 
@@ -214,12 +213,12 @@ A **FIELD** element and its child elements can contain a **GLOBALLIST** element.
 
 The following fields are specified in the ProcessConfiguration.xml file:
 
-* For all WITs in a category that defines a process-configuration backlog, specify the fields used for the attributes and values ```type=Team``` and ```type=Order```.
-* For all WITs in a category that defines a regular backlog or portfolio backlog, specify the field used for ```type=Effort```.
+* For all WITs in a category that defines a process-configuration backlog, specify the fields used for the attributes and values `type=Team` and `type=Order`.
+* For all WITs in a category that defines a regular backlog or portfolio backlog, specify the field used for `type=Effort`.
 * For all WITs in the category that defines the **TaskBacklog** element, specify:
-    * The field used for ```type=RemainingWork```.
-    * The field used for ```type=Activity```.
-    * The **ALLOWEDVALUES** rule for the field used for ```type=Activity```.
+  * The field used for `type=RemainingWork`.
+  * The field used for `type=Activity`.
+  * The **ALLOWEDVALUES** rule for the field used for `type=Activity`.
 
 <a id="rule-restrictions"></a>
 
@@ -229,11 +228,11 @@ In addition to the standard [field-rule restrictions](../../../../reference/xml/
 
 * Field-rule elements can't specify the **for** and **not** attributes.
 * **FIELD** elements can't contain the child-rule elements **CANNOTLOSEVALUE**, **NOTSAMEAS**, **MATCH**, and **PROHIBITEDVALUES**.
-* Except for the following fields, **FIELD** definitions for System.*Name* fields can't contain field rules.
-    * System.Title can contain the rules **REQUIRED** and **DEFAULT**.
-    * System.Description can contain the rules **REQUIRED** and **DEFAULT**.
-    * System.AssignedTo can contain the rules **REQUIRED**, **DEFAULT**, **ALLOWEXISTINGVALUE**, and **VALIDUSER**.
-    * System.ChangedBy can contain the rules **REQUIRED**, **DEFAULT**, **ALLOWEXISTINGVALUE**, and **VALIDUSER**.
+* Except for the following fields, **FIELD** definitions for System._Name_ fields can't contain field rules.
+  * System.Title can contain the rules **REQUIRED** and **DEFAULT**.
+  * System.Description can contain the rules **REQUIRED** and **DEFAULT**.
+  * System.AssignedTo can contain the rules **REQUIRED**, **DEFAULT**, **ALLOWEXISTINGVALUE**, and **VALIDUSER**.
+  * System.ChangedBy can contain the rules **REQUIRED**, **DEFAULT**, **ALLOWEXISTINGVALUE**, and **VALIDUSER**.
 
 <a id="consistent-names-attributes"></a>
 
@@ -243,7 +242,7 @@ Within a process or a project collection, **name**, **type**, and other attribut
 
 <a id="identity-fields"></a>
 
-#### Identity fields 
+#### Identity fields
 
 Identity fields correspond to fields used to contain account, user, or group names. The following core system fields are hard-coded as identity fields:
 
@@ -274,7 +273,7 @@ For the current release of process import, don't specify any of the following ru
 
 ##### Correct example
 
-To limit the account names that are valid within an identity field, specify the ```VALIDUSER``` element with a group name attribute.
+To limit the account names that are valid within an identity field, specify the `VALIDUSER` element with a group name attribute.
 
 ```xml
     <FIELD name="Project Manager" refname="Fabrikam.ProgramManager" type="String" reportable="dimension" syncnamechanges="true">
@@ -290,8 +289,8 @@ Before you import the process, make sure you've created the group in the project
 
 The following example isn't valid because it specifies:
 
-* An ```ALLOWEDVALUES``` element.
-* A ```DEFAULT``` element that specifies the nonidentity string ```value="Not Assigned"```.
+* An `ALLOWEDVALUES` element.
+* A `DEFAULT` element that specifies the nonidentity string `value="Not Assigned"`.
 
 ```xml
     <FIELD name="Project Manager" refname="Fabrikam.ProgramManager" type="String" reportable="dimension" syncnamechanges="true">
@@ -305,6 +304,7 @@ The following example isn't valid because it specifies:
         <HELPTEXT>The program manager responsible for signing off on the user story.</HELPTEXT>
     </FIELD>
 ```
+
 <a id="work-item-workflow"></a>
 
 ### Workflow
@@ -330,7 +330,7 @@ For the Hosted XML process model, the following limits are placed on global-list
 
 <a id="work-item-form-layout"></a>
 
-### Form layout 
+### Form layout
 
 A **FORM** element and its child elements must conform to the syntax and rules described in [FORM XML element reference](../../../../reference/xml/all-form-xml-elements-reference.md).
 
@@ -338,7 +338,7 @@ A **Control** element can't specify a custom control. Custom controls aren't sup
 
 ## Related articles
 
-- [Import and export a Hosted XML process](import-process.md)
-- [Change a project from Hosted XML to an inherited process](../change-process-from-hosted-to-inherited.md)
-- [Clone a Hosted XML process to an Inheritance process](../upgrade-hosted-to-inherited.md)
-- [Supported operations when moving from Hosted XML to an inherited process](../upgrade-support-hosted-to-inherited.md)
+* [Import and export a Hosted XML process](import-process.md)
+* [Change a project from Hosted XML to an inherited process](../change-process-from-hosted-to-inherited.md)
+* [Clone a Hosted XML process to an Inheritance process](../upgrade-hosted-to-inherited.md)
+* [Supported operations when moving from Hosted XML to an inherited process](../upgrade-support-hosted-to-inherited.md)

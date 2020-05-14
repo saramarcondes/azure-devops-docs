@@ -79,12 +79,12 @@ After the pipeline has run, select the vertical ellipses in the upper-right corn
   inputs:
     SourceFolder: $(system.defaultworkingdirectory)/target/azure-functions/
     Contents: '**'
-    TargetFolder: $(build.artifactstagingdirectory)   
+    TargetFolder: $(build.artifactstagingdirectory)
 
 - task: PublishBuildArtifacts@1
   displayName: Publish Artifact
   inputs:
-    PathtoPublish: $(build.artifactstagingdirectory)    
+    PathtoPublish: $(build.artifactstagingdirectory)
 
 - task: AzureFunctionApp@1
   displayName: Azure Function App deploy

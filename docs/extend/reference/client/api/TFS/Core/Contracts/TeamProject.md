@@ -23,4 +23,3 @@ Extends: [TeamProjectReference](../../../TFS/DistributedTask/Contracts/TeamProje
 * `capabilities`: {[key: string]: {[key: string]: string}}. Set of capabilities this project has (such as process template &amp; version control).
 
 * `defaultTeam`: [WebApiTeamRef](../../../TFS/Core/Contracts/WebApiTeamRef.md). The shallow ref to the default team.
-

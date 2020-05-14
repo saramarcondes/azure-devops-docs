@@ -8,7 +8,7 @@ ms.date: 05/03/2019
 monikerRange: '>= tfs-2015'
 ---
 
-# Add stages, dependencies, & conditions  
+# Add stages, dependencies, & conditions
 
 [!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
@@ -19,6 +19,7 @@ monikerRange: '>= tfs-2015'
 The concept of stages varies depending on whether you use YAML pipelines or classic release pipelines.
 
 #### [YAML](#tab/yaml/)
+
 ::: moniker range="azure-devops"
 
 > [!NOTE]
@@ -40,6 +41,7 @@ YAML is not supported in this version of TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
+
 You can organize the deployment jobs in your release pipeline into stages.
 Stages are the major divisions in your release pipeline: "run functional tests", "deploy to pre-production",
 and "deploy to production" are good examples of release stages.
@@ -52,11 +54,12 @@ and [queuing policies](#queuing-policies).
 
 ![stage](../release/media/definition-02.png)
 
-* * *
+---
 
 ## Specify stages
 
 #### [YAML](#tab/yaml/)
+
 ::: moniker range="azure-devops"
 
 In the simplest case, you do not need any logical boundaries in your pipeline. In that case, you do not have to explicitly use the `stage` keyword. You can directly specify the jobs in your YAML file.
@@ -117,7 +120,7 @@ stages:
   dependsOn: string | [ string ]
   condition: string
   pool: string | pool
-  variables: { string: string } | [ variable | variableReference ] 
+  variables: { string: string } | [ variable | variableReference ]
   jobs: [ job | templateReference]
 ```
 
@@ -132,6 +135,7 @@ YAML is not supported in this version of TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
+
 To add a stage to your release pipeline, select the release pipeline in **Releases** page, select the action to **Edit** it, and then select the **Pipeline** tab.
 While the most important part of defining a stage is the
 automation tasks, you can also configure several properties and options
@@ -150,7 +154,7 @@ for a stage in a release pipeline. You can:
 
 ![Defining options and policies](../release/media/environments-03.png)
 
-* * *
+---
 
 ## Specify dependencies
 
@@ -159,7 +163,6 @@ for a stage in a release pipeline. You can:
 ::: moniker range="azure-devops"
 
 When you define multiple stages in a pipeline, by default, they run one after the other in the order in which you define them in the YAML file. Pipelines must contain at least one stage with no dependencies.
-
 
 The syntax for defining multiple stages and their dependencies is:
 
@@ -231,13 +234,15 @@ YAML is not supported in this version of TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
+
 You control the dependencies by setting the triggers on each stage of the release pipeline:
 
 * Without a trigger, a stage will not start unless it is started manually.
 * With an **After release** trigger, a stage will start as soon as the release is started, in parallel with other stages that have **After release** trigger.
 * With an **After stage** trigger, a stage will start after all the dependent stages are completed. Using this, you can model fan-out and fan-in behavior for stages.
 
-* * *
+---
+
 <h2 id="conditions">Conditions</h2>
 
 You can specify the conditions under which each stage runs. By default, a stage runs if it does not depend on any other stage, or if all of the stages that it depends on have completed and succeeded. You can customize this behavior by forcing a stage to run even if a previous stage fails or by specifying a custom condition.
@@ -245,7 +250,6 @@ You can specify the conditions under which each stage runs. By default, a stage 
 > [!NOTE]
 >
 > Conditions for failed ('JOBNAME/STAGENAME') and succeeded ('JOBNAME/STAGENAME') as shown in the following example work only for [YAML pipelines](https://docs.microsoft.com/azure/devops/pipelines/process/stages?view=azure-devops&tabs=yaml).
-
 
 #### [YAML](#tab/yaml/)
 
@@ -291,18 +295,18 @@ Stages are not supported in this version of Azure DevOps Server.
 YAML is not supported in this version of TFS.
 ::: moniker-end
 
-
 #### [Classic](#tab/classic/)
 
 When you specify **After release** or **After stage** triggers, you can also specify the branch filters for the artifacts that are consumed in the release. Only when the branch filters are satisfied will the release be deployed to the given stage.
 
-* * *
+---
 
 <a name="queuing-policies"></a>
 
 ## Specify queuing policies
 
 #### [YAML](#tab/yaml/)
+
 ::: moniker range=">= azure-devops-2019"
 Queuing policies are not yet supported in YAML pipelines. At present, each run of a pipeline is independent from and unaware of other runs. In other words, your two successive commits may trigger two pipelines, and both of them will execute the same sequence of stages without waiting for each other. While we work to bring queuing policies to YAML pipelines, we recommend that you use [manual approvals](approvals.md) in order to manually sequence and control the order the execution if this is of importance.
 ::: moniker-end
@@ -312,6 +316,7 @@ YAML is not supported in this version of TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
+
 In some cases, you may be generating builds more quickly than
 they can be deployed. Alternatively, you may configure multiple
 [agents](../agents/agents.md) and, for example, be creating releases from the same release pipeline
@@ -331,7 +336,7 @@ The options you can choose for a queuing policy are:
 
 * If you specify a maximum number of deployments, two more options appear:
 
-  - **Deploy all in sequence**:
+  * **Deploy all in sequence**:
     Use this option if you want to deploy all the releases
     sequentially into the same shared physical resources.
     By deploying them in turn, one after the other, you
@@ -341,7 +346,7 @@ The options you can choose for a queuing policy are:
     also ensure that pre-deployment approval requests for the
     stage are sent out in sequence.
 
-  - **Deploy latest and cancel the others**:
+  * **Deploy latest and cancel the others**:
     Use this option if you are producing releases faster
     than builds, and you only want to deploy the latest build.
 
@@ -378,7 +383,7 @@ defined.
   the **QA** stage will be sent out immediately
   after the post-deployment approval for release **R1** is completed.
 
-* * *
+---
 
 ## Specify approvals
 
@@ -386,9 +391,9 @@ defined.
 
 ::: moniker range="> azure-devops-2019"
 
-You can manually control when a stage should run using approval checks. This is commonly used to control deployments to production environments. Checks are a mechanism available to the *resource owner* to control if and when a stage in a pipeline can consume a resource. As an owner of a resource, such as an environment, you can define checks that must be satisfied before a stage consuming that resource can start. 
+You can manually control when a stage should run using approval checks. This is commonly used to control deployments to production environments. Checks are a mechanism available to the _resource owner_ to control if and when a stage in a pipeline can consume a resource. As an owner of a resource, such as an environment, you can define checks that must be satisfied before a stage consuming that resource can start.
 
-Currently, manual approval checks are supported on environments. 
+Currently, manual approval checks are supported on environments.
 For more information, see [Approvals](approvals.md).
 
 ::: moniker-end
@@ -405,5 +410,4 @@ YAML is not supported in this version of TFS.
 
 You can add manual approvals at the start or end of each stage in the pipeline. See [Release approvals and gates overview](../release/approvals/index.md) for more information.
 
-
-* * *
+---

@@ -20,20 +20,21 @@ ms.date: 08/04/2016
 
 There are [code samples](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/Git/RepositoriesSample.cs) available for this endpoint.
 
-
 ## Get a list of repositories
 
 ```no-highlight
 GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories?api-version={version}
 ```
 
-| Parameter         | Type   | Notes
-|:------------------|:-------|:----------------------------------------------------------------------------------------------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance          | string | TFS server name ({server:port}).
-| project           | string | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
+| instance | string | TFS server name ({server:port}).
+| project | string | ID or name of the [project](../tfs/projects.md). _Optional if specifying an ID for repository._
 | Query
-| api-version       | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 ### In your account
 
@@ -54,36 +55,44 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories?api-version=1.0
     {
       "id": "5febef5a-833d-4e14-b9c0-14cb638f91e6",
       "name": "AnotherRepository",
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/5febef5a-833d-4e14-b9c0-14cb638f91e6",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/5febef5a-833d-4e14-b9c0-14cb638f91e6",
       "project": {
         "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
         "name": "Fabrikam-Fiber-Git",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
         "state": "wellFormed"
       },
-      "remoteUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_git/AnotherRepository"
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_git/AnotherRepository"
     },
     {
       "id": "278d5cd2-584d-4b63-824a-2ba458937249",
       "name": "Fabrikam-Fiber-Git",
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249",
       "project": {
         "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
         "name": "Fabrikam-Fiber-Git",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
         "state": "wellFormed"
       },
       "defaultBranch": "refs/heads/master",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git"
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git"
     },
     {
       "id": "66efb083-777a-4cac-a350-a24b046be6be",
       "name": "TestGit",
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/66efb083-777a-4cac-a350-a24b046be6be",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/66efb083-777a-4cac-a350-a24b046be6be",
       "project": {
         "id": "281f9a5b-af0d-49b4-a1df-fe6f5e5f84d0",
         "name": "TestGit",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/281f9a5b-af0d-49b4-a1df-fe6f5e5f84d0",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/281f9a5b-af0d-49b4-a1df-fe6f5e5f84d0",
         "state": "wellFormed"
       },
       "defaultBranch": "refs/heads/master",
@@ -93,24 +102,27 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories?api-version=1.0
 }
 ```
 
-
 ## Get a repository
+
 <a name="inateamproject" />
 
 ```no-highlight
 GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}?api-version={version}
 ```
 
-| Parameter  | Type   | Notes
-|:-----------|:-------|:-------------------------------------------------------------------------------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance   | string | TFS server name ({server:port}).
-| project    | string | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
+| instance | string | TFS server name ({server:port}).
+| project | string | ID or name of the [project](../tfs/projects.md). _Optional if specifying an ID for repository._
 | repository | string | ID or name of the repository.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 ### By ID
+
 When you get a repository by it's ID, you don't need to specify the project.
 
 #### Sample request
@@ -125,47 +137,58 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/5febef5a-833d-4
 {
   "id": "5febef5a-833d-4e14-b9c0-14cb638f91e6",
   "name": "AnotherRepository",
-  "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/5febef5a-833d-4e14-b9c0-14cb638f91e6",
+  "url":
+    "https://mytfsserver/DefaultCollection/_apis/git/repositories/5febef5a-833d-4e14-b9c0-14cb638f91e6",
   "project": {
     "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
     "name": "Fabrikam-Fiber-Git",
-    "url": "https://mytfsserver/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
     "state": "wellFormed",
     "revision": 293012730
   },
   "defaultBranch": "refs/heads/master",
-  "remoteUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_git/AnotherRepository",
+  "remoteUrl":
+    "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_git/AnotherRepository",
   "_links": {
     "self": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/git/repositories/5febef5a-833d-4e14-b9c0-14cb638f91e6"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/5febef5a-833d-4e14-b9c0-14cb638f91e6"
     },
     "project": {
-      "href": "vstfs:///Classification/TeamProject/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c"
+      "href":
+        "vstfs:///Classification/TeamProject/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c"
     },
     "web": {
-      "href": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_git/AnotherRepository"
+      "href":
+        "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_git/AnotherRepository"
     },
     "commits": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/git/repositories/5febef5a-833d-4e14-b9c0-14cb638f91e6/commits"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/5febef5a-833d-4e14-b9c0-14cb638f91e6/commits"
     },
     "refs": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/git/repositories/5febef5a-833d-4e14-b9c0-14cb638f91e6/refs"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/5febef5a-833d-4e14-b9c0-14cb638f91e6/refs"
     },
     "pullRequests": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/git/repositories/5febef5a-833d-4e14-b9c0-14cb638f91e6/pullRequests"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/5febef5a-833d-4e14-b9c0-14cb638f91e6/pullRequests"
     },
     "items": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/git/repositories/5febef5a-833d-4e14-b9c0-14cb638f91e6/items"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/5febef5a-833d-4e14-b9c0-14cb638f91e6/items"
     },
     "pushes": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/git/repositories/5febef5a-833d-4e14-b9c0-14cb638f91e6/pushes"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/5febef5a-833d-4e14-b9c0-14cb638f91e6/pushes"
     }
   }
 }
 ```
 
-
 ### By remote URL
+
 <a name="byremoteurl" />
 You can also get a repository with only the clone URL of the repo:
 
@@ -187,26 +210,30 @@ GET https://mytfsserver/DefaultCollection/_git/FabrikamCloud/vsts/info
   "collection": {
     "id": "e22ddea7-989e-455d-b46a-67e991b04714",
     "name": "fabrikam-fiber-inc",
-    "url": "https://mytfsserver/DefaultCollection/_apis/projectCollections/e22ddea7-989e-455d-b46a-67e991b04714"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/projectCollections/e22ddea7-989e-455d-b46a-67e991b04714"
   },
   "repository": {
     "id": "2f3d611a-f012-4b39-b157-8db63f380226",
     "name": "FabrikamCloud",
-    "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/2f3d611a-f012-4b39-b157-8db63f380226",
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/git/repositories/2f3d611a-f012-4b39-b157-8db63f380226",
     "project": {
       "id": "3b3ae425-0079-421f-9101-bcf15d6df041",
       "name": "FabrikamCloud",
-      "url": "https://mytfsserver/DefaultCollection/_apis/projects/3b3ae425-0079-421f-9101-bcf15d6df041",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/projects/3b3ae425-0079-421f-9101-bcf15d6df041",
       "state": 1,
       "revision": 411518573
     },
-    "remoteUrl": "https://mytfsserver/DefaultCollection/FabrikamCloud/_git/FabrikamCloud"
+    "remoteUrl":
+      "https://mytfsserver/DefaultCollection/FabrikamCloud/_git/FabrikamCloud"
   }
 }
 ```
 
-
 ## Create a repository
+
 <a name="createarepository" />
 
 Create a Git repository in a project.
@@ -214,34 +241,39 @@ Create a Git repository in a project.
 ```no-highlight
 POST https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/?api-version={version}
 ```
+
 ```http
 Content-Type: application/json
 ```
+
 ```json
 {
-  "name": {string},
+  "name": { string },
   "project": {
-    "id": {guid}
+    "id": { guid }
   }
 }
 ```
 
-| Parameter    | Type   | Notes
-|:-------------|:-------|:-------------------------------------------------------------------------------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance     | string | TFS server name ({server:port}).
-| project        | string | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID in the body.*
+| instance | string | TFS server name ({server:port}).
+| project | string | ID or name of the [project](../tfs/projects.md). _Optional if specifying an ID in the body._
 | Query
-| api-version  | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
-| name         | string | Name of the repository.
-| project      | string | Name or ID project. *Do not include if project specified in the URL.*
+| name | string | Name of the repository.
+| project | string | Name or ID project. _Do not include if project specified in the URL._
 
 #### Sample request
 
 ```
 POST https://mytfsserver/DefaultCollection/_apis/git/repositories?api-version=1.0
 ```
+
 ```json
 {
   "name": "AnotherRepository",
@@ -257,26 +289,30 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories?api-version=1.
 {
   "id": "5febef5a-833d-4e14-b9c0-14cb638f91e6",
   "name": "AnotherRepository",
-  "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/5febef5a-833d-4e14-b9c0-14cb638f91e6",
+  "url":
+    "https://mytfsserver/DefaultCollection/_apis/git/repositories/5febef5a-833d-4e14-b9c0-14cb638f91e6",
   "project": {
     "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
     "name": "Fabrikam-Fiber-Git",
-    "url": "https://mytfsserver/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
     "state": "wellFormed"
   },
-  "remoteUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_git/AnotherRepository"
+  "remoteUrl":
+    "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_git/AnotherRepository"
 }
 ```
-
 
 ## Modify a repository
 
 ```no-highlight
 PATCH https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}?api-version={version}
 ```
+
 ```http
 Content-Type: application/json
 ```
+
 ```json
 {
   "name": {string},
@@ -284,23 +320,26 @@ Content-Type: application/json
 }
 ```
 
-| Parameter      | Type   | Notes
-|:---------------|:-------|:-------------------------------------------------------------------------------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance       | string | TFS server name ({server:port}).
-| project        | string | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
-| repository     | string | ID of the repository.
+| instance | string | TFS server name ({server:port}).
+| project | string | ID or name of the [project](../tfs/projects.md). _Optional if specifying an ID for repository._
+| repository | string | ID of the repository.
 | Query
-| api-version    | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
-| name           | string | New name of the repository.
-| defaultBranch  | string | New default branch of the repository.
+| name | string | New name of the repository.
+| defaultBranch | string | New default branch of the repository.
 
 #### Sample request
 
 ```
 PATCH https://mytfsserver/DefaultCollection/_apis/git/repositories/5febef5a-833d-4e14-b9c0-14cb638f91e6?api-version=1.0
 ```
+
 ```json
 {
   "name": "RenamedRepository",
@@ -314,36 +353,39 @@ PATCH https://mytfsserver/DefaultCollection/_apis/git/repositories/5febef5a-833d
 {
   "id": "5febef5a-833d-4e14-b9c0-14cb638f91e6",
   "name": "RenamedRepository",
-  "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/5febef5a-833d-4e14-b9c0-14cb638f91e6",
+  "url":
+    "https://mytfsserver/DefaultCollection/_apis/git/repositories/5febef5a-833d-4e14-b9c0-14cb638f91e6",
   "project": {
     "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
     "name": "Fabrikam-Fiber-Git",
-    "url": "https://mytfsserver/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
     "state": "wellFormed"
   },
   "defaultBranch": "refs/heads/live",
-  "remoteUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_git/RenamedRepository",
+  "remoteUrl":
+    "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_git/RenamedRepository",
   "type": "normal"
 }
 ```
 
-
 ## Delete a repository
+
 <a name="deletearepository" />
 
-Permanently delete a repository. 
+Permanently delete a repository.
 
 ```no-highlight
 DELETE https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}?api-version={version}
 ```
 
-| Parameter  | Type   | Notes
-|:-----------|:-------|:-------------------------------------------------------------------------------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance   | string | TFS server name ({server:port}).
-| project    | string | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
+| instance | string | TFS server name ({server:port}).
+| project | string | ID or name of the [project](../tfs/projects.md). _Optional if specifying an ID for repository._
 | repository | string | ID of the repository.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-
-

@@ -10,7 +10,6 @@ ms.ContentId: 01af664f-d3e9-4331-b1c4-8b323045940b
 
 [!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
 
-
 [!INCLUDE [API_version](../_data/version3-preview1.md)]
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
@@ -21,13 +20,15 @@ ms.ContentId: 01af664f-d3e9-4331-b1c4-8b323045940b
 GET https://{instance}/defaultcollection/{project}/_apis/distributedtask/serviceendpoints?[api-version={version}]
 ```
 
-| Parameter     | Type     | Notes
-|:--------------|:---------|:------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance      | string   | TFS server name ({server:port}).
-| project       | string   | [Project](../tfs/projects.md) ID or name.
+| instance | string | TFS server name ({server:port}).
+| project | string | [Project](../tfs/projects.md) ID or name.
 | Query
-| version       | string   | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
@@ -61,14 +62,18 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
       "groupScopeId": "afd9a2f8-2ff2-490c-b5bb-a070a5acffe8",
       "administratorsGroup": {
         "id": "e98d5799-6571-46b3-a867-aeaf33c6df8d",
-        "displayName": "[Service Endpoint 178cd0a2-536d-4ceb-9e5b-2ebc46a66d0e]\\Endpoint Administrators",
-        "uniqueName": "vstfs:///Framework/Generic/afd9a2f8-2ff2-490c-b5bb-a070a5acffe8\\Endpoint Administrators",
+        "displayName":
+          "[Service Endpoint 178cd0a2-536d-4ceb-9e5b-2ebc46a66d0e]\\Endpoint Administrators",
+        "uniqueName":
+          "vstfs:///Framework/Generic/afd9a2f8-2ff2-490c-b5bb-a070a5acffe8\\Endpoint Administrators",
         "isContainer": true
       },
       "readersGroup": {
         "id": "fcfdfa1c-f958-427d-8743-b8e3a1981689",
-        "displayName": "[Service Endpoint 178cd0a2-536d-4ceb-9e5b-2ebc46a66d0e]\\Endpoint Readers",
-        "uniqueName": "vstfs:///Framework/Generic/afd9a2f8-2ff2-490c-b5bb-a070a5acffe8\\Endpoint Readers",
+        "displayName":
+          "[Service Endpoint 178cd0a2-536d-4ceb-9e5b-2ebc46a66d0e]\\Endpoint Readers",
+        "uniqueName":
+          "vstfs:///Framework/Generic/afd9a2f8-2ff2-490c-b5bb-a070a5acffe8\\Endpoint Readers",
         "isContainer": true
       },
       "isReady": true
@@ -90,14 +95,18 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
       "groupScopeId": "4147b96d-4c42-49d0-bf6d-04406b44f807",
       "administratorsGroup": {
         "id": "25b7297a-b10a-49ff-9437-c8f91521165e",
-        "displayName": "[Service Endpoint 03b4a664-2285-4c1b-bfb1-51595ac6b44b]\\Endpoint Administrators",
-        "uniqueName": "vstfs:///Framework/Generic/4147b96d-4c42-49d0-bf6d-04406b44f807\\Endpoint Administrators",
+        "displayName":
+          "[Service Endpoint 03b4a664-2285-4c1b-bfb1-51595ac6b44b]\\Endpoint Administrators",
+        "uniqueName":
+          "vstfs:///Framework/Generic/4147b96d-4c42-49d0-bf6d-04406b44f807\\Endpoint Administrators",
         "isContainer": true
       },
       "readersGroup": {
         "id": "fc783397-019e-4bb1-94e8-dd99e3aa6a75",
-        "displayName": "[Service Endpoint 03b4a664-2285-4c1b-bfb1-51595ac6b44b]\\Endpoint Readers",
-        "uniqueName": "vstfs:///Framework/Generic/4147b96d-4c42-49d0-bf6d-04406b44f807\\Endpoint Readers",
+        "displayName":
+          "[Service Endpoint 03b4a664-2285-4c1b-bfb1-51595ac6b44b]\\Endpoint Readers",
+        "uniqueName":
+          "vstfs:///Framework/Generic/4147b96d-4c42-49d0-bf6d-04406b44f807\\Endpoint Readers",
         "isContainer": true
       },
       "isReady": true
@@ -106,34 +115,36 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
 }
 ```
 
-
 ## Create a service endpoint
 
 ```no-highlight
 POST https://{instance}/defaultcollection/{project}/_apis/distributedtask/serviceendpoints?[api-version={version}]
 ```
 
-| Parameter     | Type     | Notes
-|:--------------|:---------|:------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance      | string   | TFS server name ({server:port}).
-| project       | string   | [Project](../tfs/projects.md) ID or name.
+| instance | string | TFS server name ({server:port}).
+| project | string | [Project](../tfs/projects.md) ID or name.
 | Query
-| version       | string   | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
-| name          | string   | Name of the service endpoint.
-| type          | string   | Type of the service endpoint.
-| url           | string   | Complete URL of the service that is being connected. 
+| name | string | Name of the service endpoint.
+| type | string | Type of the service endpoint.
+| url | string | Complete URL of the service that is being connected.
 | authorization | JSON | Inputs related to authentication of the service endpoint.
-| data          | JSON     | Other inputs that are required by the mentioned endpoint type.
+| data | JSON | Other inputs that are required by the mentioned endpoint type.
 | Response
-| isReady | bool  | Indicates if the created endpoint is ready to use or not. Applies only to Azure SPN, always true for other endpoint types
+| isReady | bool | Indicates if the created endpoint is ready to use or not. Applies only to Azure SPN, always true for other endpoint types
 
 #### Sample request
 
 ```
 POST https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/distributedtask/serviceendpoints?api-version=3.0-preview.1
 ```
+
 ```json
 {
   "name": "Fabrikam-Chef",
@@ -181,21 +192,22 @@ POST https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/
 }
 ```
 
-
 ## Get a service endpoint
 
 ```no-highlight
 GET https://{instance}/defaultcollection/{project}/_apis/distributedtask/serviceendpoints/{id}?[api-version={version}]
 ```
 
-| Parameter     | Type     | Notes
-|:--------------|:---------|:------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance      | string   | TFS server name ({server:port}).
-| project       | string   | [Project](../tfs/projects.md) ID or name.
-| id            | string   | Endpoint ID.
+| instance | string | TFS server name ({server:port}).
+| project | string | [Project](../tfs/projects.md) ID or name.
+| id | string | Endpoint ID.
 | Query
-| version       | string   | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
@@ -234,27 +246,29 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
 }
 ```
 
-
 ## Update a service endpoint
 
 ```no-highlight
 PUT https://{instance}/defaultcollection/{project}/_apis/distributedtask/serviceendpoints/{id}?[api-version={version}]
 ```
 
-| Parameter     | Type     | Notes
-|:--------------|:---------|:------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance      | string   | TFS server name ({server:port}).
-| project       | string   | [Project](../tfs/projects.md) ID or name.
-| id            | string   | Endpoint ID.
+| instance | string | TFS server name ({server:port}).
+| project | string | [Project](../tfs/projects.md) ID or name.
+| id | string | Endpoint ID.
 | Query
-| version       | string   | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
 ```
 PUT https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/distributedtask/serviceendpoints/d4177445-c5ad-414a-82bf-2d5727a8176e?api-version=3.0-preview.1
 ```
+
 ```json
 {
   "name": "Fabrikam-Chef-Updated",
@@ -290,21 +304,22 @@ PUT https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
 }
 ```
 
-
 ## Delete a service endpoint
 
 ```no-highlight
 DELETE https://{instance}/defaultcollection/{project}/_apis/distributedtask/serviceendpoints/{id}?[api-version={version}]
 ```
 
-| Parameter     | Type     | Notes
-|:--------------|:---------|:------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance      | string   | TFS server name ({server:port}).
-| project       | string   | [Project](../tfs/projects.md) ID or name.
-| id            | string   | Endpoint ID.
+| instance | string | TFS server name ({server:port}).
+| project | string | [Project](../tfs/projects.md) ID or name.
+| id | string | Endpoint ID.
 | Query
-| version       | string   | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 

@@ -35,7 +35,6 @@ Use this task to deploy an Azure Function on Linux using a [custom image](https:
 This example deploys Azure Functions on Linux using containers:
 
 ```YAML
-
 variables:
   imageName: contoso.azurecr.io/azurefunctions-containers:$(build.buildId)
   azureSubscription: Contoso

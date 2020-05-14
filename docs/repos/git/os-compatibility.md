@@ -27,9 +27,9 @@ The Windows, macOS, and Linux file systems each have limitations and behaviors t
 
 Azure Repos offers [three cross-platform compatibility settings](repository-settings.md) that help protect your repo from people pushing commits that are incompatible with one or more platforms. The three file system limitations these settings are related to are:
 
-- Case Sensitivity
-- Restricted File and Folder Names
-- Path Length Restrictions
+* Case Sensitivity
+* Restricted File and Folder Names
+* Path Length Restrictions
 
 ## Case Sensitivity
 
@@ -101,7 +101,6 @@ Azure Repos offers file name and max path [repository settings](repository-setti
 ### File Name & Path Length Reference Table
 
 |                          |                                                                                                                                                         Windows                                                                                                                                                         |                                                                                              macOS                                                                                              |                               Linux                               |
-|--------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------:|
-|  File Name Restrictions  |                      [Reserved File Names](https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file): CON, PRN, AUX, NUL, COM1 - COM9, LPT1 - LPT9<br><br>Reserved File Names followed by `.`<br><br>Reserved Characters: `\ / : * ? " < >` <br><br> Filenames ending in `.` or whitespace                       |                                                                                     Filenames ending in `/`                                                                                     |                      Filenames ending in `/`                      |
+| ------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------: |
+| File Name Restrictions   |                      [Reserved File Names](https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file): CON, PRN, AUX, NUL, COM1 - COM9, LPT1 - LPT9<br><br>Reserved File Names followed by `.`<br><br>Reserved Characters: `\ / : * ? " < >` <br><br> Filenames ending in `.` or whitespace                       |                                                                                     Filenames ending in `/`                                                                                     |                      Filenames ending in `/`                      |
 | Path Length Restrictions | [Paths in Windows](https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file#paths) have a maximum length of 260 characters (incl. a null terminator). <br><br>For directories with .NET the fully qualified file name must be less than 260 characters, and the directory name must be less than 248 characters. | File names are limited to 255 characters<br><br> Path max in HFS+ are documented as unlimited, though some macOS versions cap it at 1016 characters. Some file systems support 1016 as max path | File names are limited to 255 characters<br><br> Path max is 4096 |
-

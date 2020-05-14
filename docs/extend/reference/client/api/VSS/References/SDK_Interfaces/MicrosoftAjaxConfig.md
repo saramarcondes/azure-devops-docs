@@ -15,9 +15,6 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-
 ### Members
 
-* `cultureInfo`: any. 
-
+* `cultureInfo`: any.

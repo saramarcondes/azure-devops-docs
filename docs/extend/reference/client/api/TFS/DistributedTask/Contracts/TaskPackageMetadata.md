@@ -14,7 +14,6 @@ ms.date: 08/04/2016
 
 Module path: `TFS/DistributedTask/Contracts`
 
-
 ### Members
 
 * `type`: string. Gets the name of the package.
@@ -22,4 +21,3 @@ Module path: `TFS/DistributedTask/Contracts`
 * `url`: string. Gets the url of the package.
 
 * `version`: string. Gets the version of the package.
-

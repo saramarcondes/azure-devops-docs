@@ -22,20 +22,20 @@ You can [delete the user from each organization](delete-organization-users.md) w
 
 ## Delete users
 
-1. [Sign in to the Azure classic portal](https://manage.windowsazure.com/) as the directory administrator in Azure.
+1.  [Sign in to the Azure classic portal](https://manage.windowsazure.com/) as the directory administrator in Azure.
 
-   > [!NOTE]
-   > You can find the connected Azure AD only through the Azure classic portal.
+    > [!NOTE]
+    > You can find the connected Azure AD only through the Azure classic portal.
 
-2. Go to **Azure Active Directory**. Find the Azure AD that's connected to your organization.
+2.  Go to **Azure Active Directory**. Find the Azure AD that's connected to your organization.
 
-   ![Find the directory connected to your organization](media/manage-work-access/azurefindconnecteddirectory.png)
+    ![Find the directory connected to your organization](media/manage-work-access/azurefindconnecteddirectory.png)
 
-3. Follow [these steps](/azure/active-directory/active-directory-users-delete-user-azure-portal) on the Azure portal.
+3.  Follow [these steps](/azure/active-directory/active-directory-users-delete-user-azure-portal) on the Azure portal.
 
-4. [Remove the user](delete-organization-users.md) from your organization. Reassign the user's access levels, if necessary.
+4.  [Remove the user](delete-organization-users.md) from your organization. Reassign the user's access levels, if necessary.
 
 ## Related articles
 
-- [Add users to your organization in Azure DevOps](add-organization-users.md)
-- [Add users to Azure AD](add-users-to-azure-ad.md)
+* [Add users to your organization in Azure DevOps](add-organization-users.md)
+* [Add users to Azure AD](add-users-to-azure-ad.md)

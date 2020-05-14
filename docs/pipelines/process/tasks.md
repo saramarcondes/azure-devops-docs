@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 A **task** is the building block for defining automation in a
 pipeline.
 A task is simply a packaged script or procedure that has been
-abstracted with a set of inputs. 
+abstracted with a set of inputs.
 
 When you add a task to your pipeline, it may also add a set of **demands** to the pipeline. The demands define the prerequisites that must be installed on the [agent](../agents/agents.md) for the task to run. When you run the build or deployment, an agent that meets these demands will be chosen.
 
@@ -39,7 +39,7 @@ When you run a [job](phases.md), all the tasks are run in sequence, one after th
 
 ## Custom tasks
 
-We provide some [built-in tasks](../tasks/index.md) 
+We provide some [built-in tasks](../tasks/index.md)
 to enable fundamental build and deployment scenarios. We have also
 provided guidance for [creating your own custom task](../../extend/develop/add-build-task.md).
 
@@ -63,6 +63,7 @@ steps:
 ::: moniker-end
 
 <a name="taskversions"></a>
+
 ## Task versions
 
 Tasks are versioned, and you must specify the major version of the task used in your
@@ -77,6 +78,7 @@ until you edit the pipeline and manually change to the new major version.
 The build or release log will include an alert that a new major version is available.
 
 #### [YAML](#tab/yaml/)
+
 ::: moniker range=">= azure-devops-2019"
 
 In YAML, you specify the major version using `@` in the task name.
@@ -96,6 +98,7 @@ YAML pipelines aren't available in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
+
 Each task in a pipeline has a **Version** selector to let you choose the version you want.
 
 If you select a preview version (such as **1.\* Preview**), be aware that this
@@ -106,7 +109,7 @@ The ability to restore to an older version of a release pipeline is not currentl
 
 Consider cloning the pipeline and testing the cloned pipeline with the new major task version.
 
-* * *
+---
 
 <a name="controloptions"></a>
 
@@ -149,10 +152,10 @@ steps:
 > [!NOTE]
 > For the full schema, see [YAML schema for `task`](../yaml-schema.md#task).
 
-
 ### Conditions
 
 [!INCLUDE [include](includes/task-run-built-in-conditions.md)]
+
 * [Custom conditions](conditions.md) which are composed of [expressions](expressions.md)
 
 ### Step target
@@ -213,6 +216,7 @@ Select this option if you want subsequent tasks in the same job to possibly run 
 Select the condition for running this task:
 
 [!INCLUDE [include](includes/task-run-built-in-conditions.md)]
+
 * [Custom conditions](conditions.md) which are composed of [expressions](expressions.md)
 
 > [!NOTE]
@@ -228,7 +232,8 @@ Select this option if you want subsequent tasks in the same job to run even if t
 
 Select this check box if you want the task to run even if the build or deployment is failing.
 
-* * *
+---
+
 <h2 id="tool-installers">Build tool installers (Azure Pipelines)</h2>
 
 Tool installers enable your build pipeline to install and control your dependencies. Specifically, you can:
@@ -245,6 +250,7 @@ For example, you can set up your build pipeline to run and validate your app for
 > Want a visual walkthrough? See [our April 19 news release](../archive/news/2017.md#april-19).
 
 #### [YAML](#tab/yaml/)
+
 ::: moniker range=">= azure-devops-2019"
 
 Create an azure-pipelines.yml file in your project's base directory with the following contents.
@@ -282,21 +288,21 @@ YAML pipelines aren't available in TFS.
 
 Apply the following agent settings:
 
-1. Set **Parallelism** to **Multi-configuration**
+1.  Set **Parallelism** to **Multi-configuration**
 
-2. Specify **Multipliers**:
+2.  Specify **Multipliers**:
 
 ```
 NodeVersionSpec
 ```
 
-3. Set **Maximum number of agents** to 2
+3.  Set **Maximum number of agents** to 2
 
 Add these tasks:
 
 ![icon](../tasks/tool/media/node.png) Tool: Node.js Installer
 
-* Version Spec: 
+* Version Spec:
 
   ```
   $(NodeVersionSpec)
@@ -305,6 +311,7 @@ Add these tasks:
 ![icon](../tasks/utility/media/command-line.png) Utility: Command Line
 
 * Script (if you're running on a Windows agent)
+
   ```
   where node
   ```
@@ -318,15 +325,15 @@ Add these tasks:
 
 On the [Variables tab](../build/variables.md) define this variable:
 
-|Name|Value|Settable at queue time|
-|-|-|-|
-|```NodeVersionSpec```|```6.x, 7.x```|Selected|
+| Name              | Value      | Settable at queue time |
+| ----------------- | ---------- | ---------------------- |
+| `NodeVersionSpec` | `6.x, 7.x` | Selected               |
 
 #### Save & queue
 
 Click **Save & queue**. Observe how two builds are run. The [Node.js Tool Installer](../tasks/tool/node-js.md) downloads each of the Node.js versions if they are not already on the agent. The [Command Line](../tasks/utility/command-line.md) task logs the location of the Node.js version on disk.
 
-* * *
+---
 
 ### Tool installer tasks
 

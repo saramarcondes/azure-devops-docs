@@ -13,5 +13,3 @@ ms.date: 08/25/2016
 # Azure DevOps Services Extension Data Service Example
 
 [!INCLUDE [x](../../../../../includes/extend/reference/samples/client-services/ExtensionDataService.md)]
-
-

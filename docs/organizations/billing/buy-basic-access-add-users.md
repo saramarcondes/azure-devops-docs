@@ -36,34 +36,34 @@ Ensure the following is true:
 
 ## Assign users Basic or Basic + Test Plans
 
-The simplest way to control paid access is by manually assigning an access level when you [add a new user to your organization](../accounts/add-organization-users.md) and by [removing users](../accounts/delete-organization-users.md) when they leave your organization. 
+The simplest way to control paid access is by manually assigning an access level when you [add a new user to your organization](../accounts/add-organization-users.md) and by [removing users](../accounts/delete-organization-users.md) when they leave your organization.
 
 Keep the following information in mind:
 
-- **Visual Studio subscribers** are detected automatically when they sign in. There's no additional charge for users with a Visual Studio subscription.
-- **Stakeholder** is a [free access level with limited functionality](../security/get-started-stakeholder.md).
-- **Basic** is free for the first 5 users, and paid for 6 or more users.
-- **Basic + Test Plans** is paid only, but is [free to try for 30 days](try-additional-features-vs.md).
+* **Visual Studio subscribers** are detected automatically when they sign in. There's no additional charge for users with a Visual Studio subscription.
+* **Stakeholder** is a [free access level with limited functionality](../security/get-started-stakeholder.md).
+* **Basic** is free for the first 5 users, and paid for 6 or more users.
+* **Basic + Test Plans** is paid only, but is [free to try for 30 days](try-additional-features-vs.md).
 
 ## Select the default access level for new users
 
-After you set up billing for your organization all new users get the free Stakeholder access if they're added directly to a Project. That way you aren't surprised by charges for new users who weren't added directly to the organization by a Project Collection Administrator. 
+After you set up billing for your organization all new users get the free Stakeholder access if they're added directly to a Project. That way you aren't surprised by charges for new users who weren't added directly to the organization by a Project Collection Administrator.
 
 To change the access level for new users added to projects, do the following tasks:
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+1.  Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+2.  Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
-3. Select **Billing**.
+3.  Select **Billing**.
 
-   :::image type="content" source="media/shared/select-billing-organization-settings.png" alt-text="Select Billing settings":::
+    :::image type="content" source="media/shared/select-billing-organization-settings.png" alt-text="Select Billing settings":::
 
-4. Change **Default access level for new users** to Basic.
+4.  Change **Default access level for new users** to Basic.
 
-   :::image type="content" source="media/shared/default-access-level-basic.png" alt-text="Default access level for new users to Basic":::
+    :::image type="content" source="media/shared/default-access-level-basic.png" alt-text="Default access level for new users to Basic":::
 
 ## Automate access level assignment with group rules
 
@@ -71,48 +71,46 @@ Larger organizations may want to automate access level assignments, so you don't
 
 ## Reduce charges for users who no longer need access
 
-Billing stops automatically when users are removed from your organization or are assigned the free Stakeholder access level. 
- 
+Billing stops automatically when users are removed from your organization or are assigned the free Stakeholder access level.
+
 To find out if you have users who are no longer using Azure DevOps, do the following tasks:
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+1.  Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+2.  Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
-3. Select **Users** and then sort by **Last Access**.
+3.  Select **Users** and then sort by **Last Access**.
 
-   :::image type="content" source="media/shared/last-access.png" alt-text="Select Users and then sort by Last Access":::
- 
-4. If you have users who've never signed in, you can find out how recently they were added by exporting the list of users and checking the **Date Created** column. 
+    :::image type="content" source="media/shared/last-access.png" alt-text="Select Users and then sort by Last Access":::
 
-   :::image type="content" source="media/shared/export-users.png" alt-text="Export users":::
+4.  If you have users who've never signed in, you can find out how recently they were added by exporting the list of users and checking the **Date Created** column.
+
+    :::image type="content" source="media/shared/export-users.png" alt-text="Export users":::
 
 ## Pay for a user once across multiple organizations
 
 If you have more than one Azure DevOps organization, you can turn on multi-organization billing and pay for each **Basic** or **Basic + Test Plan** user once, for all organizations under the same billing Azure subscription. For more details, see [multi-organization billing FAQs](billing-faq.md#multi-organization-billing). Complete the following steps.
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+1.  Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+2.  Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
-3. Select **Billing**.
+3.  Select **Billing**.
 
-   ![Select Billing from Organization settings](media/shared/select-billing-organization-settings.png)
+    ![Select Billing from Organization settings](media/shared/select-billing-organization-settings.png)
 
-4. Select **Configure user billing**.
-   
-   ![Select Configure user billing](media/buy-more-basic-access/select-configure-user-billing.png)
+4.  Select **Configure user billing**.
 
-5. Select **Multi-organization**, and then select **Save**.
+    ![Select Configure user billing](media/buy-more-basic-access/select-configure-user-billing.png)
 
-   ![Select Multi-organization](media/buy-more-basic-access/select-multi-organization-billing.png)
+5.  Select **Multi-organization**, and then select **Save**.
+
+    ![Select Multi-organization](media/buy-more-basic-access/select-multi-organization-billing.png)
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Buy CI/CD](buy-more-build-vs.md#prerequisites)
-
+> [!div class="nextstepaction"][buy ci/cd](buy-more-build-vs.md#prerequisites)

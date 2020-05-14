@@ -21,16 +21,19 @@ ms.topic: article
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 
 ## Get feeds
+
 <a name="getfeeds" />
 
 ```no-highlight
 GET https://{account}.Feeds.VisualStudio.com/DefaultCollection/_apis/packaging/feeds?api-version={version}
 ```
 
-| Parameter | Type    | Notes
-|:----------|:--------|:-------------------------------------------------------------------------------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| account   | string  | VSTS organization.
+| account | string | VSTS organization.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
@@ -49,11 +52,14 @@ GET https://mytfsserver/DefaultCollection/_apis/packaging/feeds?api-version=2.0-
     {
       "id": "64ccc8b7-705d-48f7-a91c-d9be3cd36468",
       "name": "EngineeringInternal",
-      "description": "Contains packages internal to the engineering organization",
-      "url": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468",
+      "description":
+        "Contains packages internal to the engineering organization",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468",
       "_links": {
         "self": {
-          "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468"
+          "href":
+            "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468"
         }
       }
     }
@@ -61,18 +67,19 @@ GET https://mytfsserver/DefaultCollection/_apis/packaging/feeds?api-version=2.0-
 }
 ```
 
-
 ## Get a feed
 
 ```no-highlight
 GET https://{account}.Feeds.VisualStudio.com/DefaultCollection/_apis/packaging/feeds/{feed}?api-version={version}
 ```
 
-| Parameter | Type    | Notes
-|:----------|:--------|:-------------------------------------------------------------------------------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| account   | string  | VSTS organization.
-| feed        | string | Name or ID of the feed.
+| account | string | VSTS organization.
+| feed | string | Name or ID of the feed.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
@@ -89,41 +96,46 @@ GET https://mytfsserver/DefaultCollection/_apis/packaging/feeds/EngineeringInter
   "id": "64ccc8b7-705d-48f7-a91c-d9be3cd36468",
   "name": "EngineeringInternal",
   "description": "Contains packages internal to the engineering organization",
-  "url": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468",
+  "url":
+    "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468",
   "_links": {
     "self": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468"
     }
   }
 }
 ```
 
-
-
 ## Create a feed
+
 <a name="createafeed" />
 
 ```no-highlight
 POST https://{account}.Feeds.VisualStudio.com/DefaultCollection/_apis/packaging/feeds?api-version={version}
 ```
+
 ```http
 Content-Type: application/json
 ```
+
 ```json
 {
-    "name" : "EngineeringInternal",
-    "description" : "Contains packages internal to the engineering organization"  
+  "name": "EngineeringInternal",
+  "description": "Contains packages internal to the engineering organization"
 }
 ```
 
-| Parameter   | Type   | Notes
-|:------------|:-------|:-------------------------------------------------------------------------------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| account     | string | VSTS organization.
+| account | string | VSTS organization.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
-| name        | string | Name of the feed to be created. Optional.
+| name | string | Name of the feed to be created. Optional.
 | description | string | Description of the feed to be created. Optional.
 
 #### Sample request
@@ -131,6 +143,7 @@ Content-Type: application/json
 ```
 POST https://mytfsserver/DefaultCollection/_apis/packaging/feeds?api-version=2.0-preview.1
 ```
+
 ```json
 {
   "name": "EngineeringInternal",
@@ -145,40 +158,46 @@ POST https://mytfsserver/DefaultCollection/_apis/packaging/feeds?api-version=2.0
   "id": "64ccc8b7-705d-48f7-a91c-d9be3cd36468",
   "name": "EngineeringInternal",
   "description": "Contains packages internal to the engineering organization",
-  "url": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468",
+  "url":
+    "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468",
   "_links": {
     "self": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468"
     }
   }
 }
 ```
-
 
 ## Update a feed
 
 ```no-highlight
 PATCH https://{account}.Feeds.VisualStudio.com/DefaultCollection/_apis/packaging/feeds/{feed}?api-version={version}
 ```
+
 ```http
 Content-Type: application/json
 ```
+
 ```json
 {
-    "name" : "LegacyEngineeringInternal",
-    "description" : "Contains legacy packages internal to the engineering organization"  
+  "name": "LegacyEngineeringInternal",
+  "description":
+    "Contains legacy packages internal to the engineering organization"
 }
 ```
 
-| Parameter   | Type   | Notes
-|:------------|:-------|:-------------------------------------------------------------------------------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| account     | string | VSTS organization.
-| feed        | string | Name or ID of feed to be updated
+| account | string | VSTS organization.
+| feed | string | Name or ID of feed to be updated
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
-| name        | string | Updated name of the feed.
+| name | string | Updated name of the feed.
 | description | string | Updated description of the feed.
 
 #### Sample request
@@ -186,10 +205,12 @@ Content-Type: application/json
 ```
 PATCH https://mytfsserver/DefaultCollection/_apis/packaging/feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468?api-version=2.0-preview.1
 ```
+
 ```json
 {
   "name": "LegacyEngineeringInternal",
-  "description": "Contains legacy packages internal to the engineering organization"
+  "description":
+    "Contains legacy packages internal to the engineering organization"
 }
 ```
 
@@ -199,31 +220,36 @@ PATCH https://mytfsserver/DefaultCollection/_apis/packaging/feeds/64ccc8b7-705d-
 {
   "id": "64ccc8b7-705d-48f7-a91c-d9be3cd36468",
   "name": "LegacyEngineeringInternal",
-  "description": "Contains legacy packages internal to the engineering organization",
-  "url": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468",
+  "description":
+    "Contains legacy packages internal to the engineering organization",
+  "url":
+    "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468",
   "_links": {
     "self": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/Packaging/Feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468"
     }
   }
 }
 ```
-
 
 ## Delete a feed
 
 ```no-highlight
 DELETE https://{account}.Feeds.VisualStudio.com/DefaultCollection/_apis/packaging/feeds/{feed}?api-version={version}
 ```
+
 ```http
 Content-Type: application/json
 ```
 
-| Parameter   | Type   | Notes
-|:------------|:-------|:-------------------------------------------------------------------------------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| account     | string | VSTS organization.
-| feed        | string | Name or ID of the feed to be deleted.
+| account | string | VSTS organization.
+| feed | string | Name or ID of the feed to be deleted.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
@@ -232,4 +258,3 @@ Content-Type: application/json
 ```
 DELETE https://mytfsserver/DefaultCollection/_apis/packaging/feeds/64ccc8b7-705d-48f7-a91c-d9be3cd36468?api-version=2.0-preview.1
 ```
-

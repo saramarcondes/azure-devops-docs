@@ -24,23 +24,25 @@ ms.date: 10/31/2019
 GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/commits?api-version={version}[&branch={string}&commit={string}&itemPath={string}&committer={string}&author={string}&fromDate={dateTime}&toDate={dateTime}[&$top={integer}&$skip={integer}]
 ```
 
-| Parameter  | Type     | Default | Notes
-|:-----------|:---------|:--------|:----------------------------------------------------------------------------------------------------------------------------
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
+
+
 | URL
-| instance   | string   |         | TFS server name ({server:port}).
-| project    | string   |         | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
-| repository | string   |         | ID of the [repository](./repositories.md).
+| instance | string | | TFS server name ({server:port}).
+| project | string | | ID or name of the [project](../tfs/projects.md). _Optional if specifying an ID for repository._
+| repository | string | | ID of the [repository](./repositories.md).
 | Query
-| api-version| string   |         | Version of the API to use.
-| branch     | string   |         | The name of a branch in the repository. (Can't combine with commit parameter.)
-| commit     | string   |         | The ID of a commit in the repository. (Can't combine with branch parameter.)
-| itemPath   | string   | /       | Path of an item in the repository.
-| committer  | string   |         | Name of the person who committed the change.
-| author     | string   |         | Name of the author.
-| fromDate   | [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) |         | Start date to search from.
-| toDate     | [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) |         | End date to search to.
-| $skip      | integer  | 0       | Number of commits to skip.
-| $top       | integer  | 100     | Number of commits to return.
+| api-version| string | | Version of the API to use.
+| branch | string | | The name of a branch in the repository. (Can't combine with commit parameter.)
+| commit | string | | The ID of a commit in the repository. (Can't combine with branch parameter.)
+| itemPath | string | / | Path of an item in the repository.
+| committer | string | | Name of the person who committed the change.
+| author | string | | Name of the author.
+| fromDate | [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) | | Start date to search from.
+| toDate | [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) | | End date to search to.
+| $skip | integer | 0 | Number of commits to skip.
+| $top | integer | 100 | Number of commits to return.
 
 [!INCLUDE [ID_vs_Name](_data/id_or_name.md)]
 
@@ -76,8 +78,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/23d0bc5b128a10056dc68afece360d8a0fabb014",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/23d0bc5b128a10056dc68afece360d8a0fabb014"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/23d0bc5b128a10056dc68afece360d8a0fabb014",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/23d0bc5b128a10056dc68afece360d8a0fabb014"
     },
     {
       "commitId": "fe17a84cc2dfe0ea3a2202ab4dbac0706058e41f",
@@ -95,8 +99,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/fe17a84cc2dfe0ea3a2202ab4dbac0706058e41f",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/fe17a84cc2dfe0ea3a2202ab4dbac0706058e41f"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/fe17a84cc2dfe0ea3a2202ab4dbac0706058e41f",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/fe17a84cc2dfe0ea3a2202ab4dbac0706058e41f"
     },
     {
       "commitId": "0360c963d7d86d040e9c33bba836feab14da4ad3",
@@ -114,8 +120,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/0360c963d7d86d040e9c33bba836feab14da4ad3",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/0360c963d7d86d040e9c33bba836feab14da4ad3"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/0360c963d7d86d040e9c33bba836feab14da4ad3",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/0360c963d7d86d040e9c33bba836feab14da4ad3"
     },
     {
       "commitId": "097d82b8aeabe493bf4c3553d320ae2529bba591",
@@ -133,8 +141,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/097d82b8aeabe493bf4c3553d320ae2529bba591",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/097d82b8aeabe493bf4c3553d320ae2529bba591"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/097d82b8aeabe493bf4c3553d320ae2529bba591",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/097d82b8aeabe493bf4c3553d320ae2529bba591"
     },
     {
       "commitId": "33b55f7cb7e7e245323987634f960cf4a6e6bc74",
@@ -152,8 +162,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/33b55f7cb7e7e245323987634f960cf4a6e6bc74",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/33b55f7cb7e7e245323987634f960cf4a6e6bc74"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/33b55f7cb7e7e245323987634f960cf4a6e6bc74",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/33b55f7cb7e7e245323987634f960cf4a6e6bc74"
     },
     {
       "commitId": "aad331d8d3b131fa9ae03cf5e53965b51942618a",
@@ -171,8 +183,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/aad331d8d3b131fa9ae03cf5e53965b51942618a",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/aad331d8d3b131fa9ae03cf5e53965b51942618a"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/aad331d8d3b131fa9ae03cf5e53965b51942618a",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/aad331d8d3b131fa9ae03cf5e53965b51942618a"
     },
     {
       "commitId": "7c18355d8c2d946c5e1ce7a56f49653854445a1a",
@@ -190,8 +204,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/7c18355d8c2d946c5e1ce7a56f49653854445a1a",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/7c18355d8c2d946c5e1ce7a56f49653854445a1a"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/7c18355d8c2d946c5e1ce7a56f49653854445a1a",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/7c18355d8c2d946c5e1ce7a56f49653854445a1a"
     },
     {
       "commitId": "cdaeef70a358ede7b4dc7b4a089f3853f37a6d2c",
@@ -209,8 +225,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/cdaeef70a358ede7b4dc7b4a089f3853f37a6d2c",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/cdaeef70a358ede7b4dc7b4a089f3853f37a6d2c"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/cdaeef70a358ede7b4dc7b4a089f3853f37a6d2c",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/cdaeef70a358ede7b4dc7b4a089f3853f37a6d2c"
     },
     {
       "commitId": "ef837766c5eb3ae81a4c663d36bf95a8aed91312",
@@ -228,8 +246,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/ef837766c5eb3ae81a4c663d36bf95a8aed91312",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/ef837766c5eb3ae81a4c663d36bf95a8aed91312"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/ef837766c5eb3ae81a4c663d36bf95a8aed91312",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/ef837766c5eb3ae81a4c663d36bf95a8aed91312"
     },
     {
       "commitId": "bd73638408daff89bcdac549a5a3396c9a7ce9dd",
@@ -247,8 +267,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/bd73638408daff89bcdac549a5a3396c9a7ce9dd",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/bd73638408daff89bcdac549a5a3396c9a7ce9dd"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/bd73638408daff89bcdac549a5a3396c9a7ce9dd",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/bd73638408daff89bcdac549a5a3396c9a7ce9dd"
     },
     {
       "commitId": "03bea1cebffa5726da0e3c0bc1487796d0dd0ee8",
@@ -266,8 +288,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/03bea1cebffa5726da0e3c0bc1487796d0dd0ee8",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/03bea1cebffa5726da0e3c0bc1487796d0dd0ee8"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/03bea1cebffa5726da0e3c0bc1487796d0dd0ee8",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/03bea1cebffa5726da0e3c0bc1487796d0dd0ee8"
     },
     {
       "commitId": "c093714168cdd190c1e171a803e996d685454352",
@@ -285,8 +309,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/c093714168cdd190c1e171a803e996d685454352",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/c093714168cdd190c1e171a803e996d685454352"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/c093714168cdd190c1e171a803e996d685454352",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/c093714168cdd190c1e171a803e996d685454352"
     },
     {
       "commitId": "3d203ea73427cec36b77a3a5a2e4f1f8ba7de170",
@@ -304,8 +330,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/3d203ea73427cec36b77a3a5a2e4f1f8ba7de170",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/3d203ea73427cec36b77a3a5a2e4f1f8ba7de170"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/3d203ea73427cec36b77a3a5a2e4f1f8ba7de170",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/3d203ea73427cec36b77a3a5a2e4f1f8ba7de170"
     },
     {
       "commitId": "1eea03b2ad9f14a5e7297c1307e36c980eb910ea",
@@ -323,8 +351,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/1eea03b2ad9f14a5e7297c1307e36c980eb910ea",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/1eea03b2ad9f14a5e7297c1307e36c980eb910ea"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/1eea03b2ad9f14a5e7297c1307e36c980eb910ea",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/1eea03b2ad9f14a5e7297c1307e36c980eb910ea"
     },
     {
       "commitId": "c40b5ceb9c77096b9f59e6a9193dae527bda79d9",
@@ -342,8 +372,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 2
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/c40b5ceb9c77096b9f59e6a9193dae527bda79d9",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/c40b5ceb9c77096b9f59e6a9193dae527bda79d9"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/c40b5ceb9c77096b9f59e6a9193dae527bda79d9",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/c40b5ceb9c77096b9f59e6a9193dae527bda79d9"
     },
     {
       "commitId": "6ff5e8f6256cc58aa062dbb1e096c1e3b3435ebe",
@@ -361,8 +393,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Add": 12
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/6ff5e8f6256cc58aa062dbb1e096c1e3b3435ebe",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/6ff5e8f6256cc58aa062dbb1e096c1e3b3435ebe"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/6ff5e8f6256cc58aa062dbb1e096c1e3b3435ebe",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/6ff5e8f6256cc58aa062dbb1e096c1e3b3435ebe"
     },
     {
       "commitId": "03b1b831e41df536d836c95e2f68a42db4f3e0db",
@@ -380,8 +414,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Add": 5
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/03b1b831e41df536d836c95e2f68a42db4f3e0db",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/03b1b831e41df536d836c95e2f68a42db4f3e0db"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/03b1b831e41df536d836c95e2f68a42db4f3e0db",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/03b1b831e41df536d836c95e2f68a42db4f3e0db"
     },
     {
       "commitId": "67cae2b029dff7eb3dc062b49403aaedca5bad8d",
@@ -399,8 +435,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/67cae2b029dff7eb3dc062b49403aaedca5bad8d",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/67cae2b029dff7eb3dc062b49403aaedca5bad8d"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/67cae2b029dff7eb3dc062b49403aaedca5bad8d",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/67cae2b029dff7eb3dc062b49403aaedca5bad8d"
     },
     {
       "commitId": "be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
@@ -418,13 +456,14 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Add": 305
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4"
     }
   ]
 }
 ```
-
 
 ### In the history of a commit
 
@@ -458,8 +497,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/33b55f7cb7e7e245323987634f960cf4a6e6bc74",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/33b55f7cb7e7e245323987634f960cf4a6e6bc74"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/33b55f7cb7e7e245323987634f960cf4a6e6bc74",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/33b55f7cb7e7e245323987634f960cf4a6e6bc74"
     },
     {
       "commitId": "aad331d8d3b131fa9ae03cf5e53965b51942618a",
@@ -477,8 +518,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/aad331d8d3b131fa9ae03cf5e53965b51942618a",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/aad331d8d3b131fa9ae03cf5e53965b51942618a"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/aad331d8d3b131fa9ae03cf5e53965b51942618a",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/aad331d8d3b131fa9ae03cf5e53965b51942618a"
     },
     {
       "commitId": "7c18355d8c2d946c5e1ce7a56f49653854445a1a",
@@ -496,8 +539,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/7c18355d8c2d946c5e1ce7a56f49653854445a1a",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/7c18355d8c2d946c5e1ce7a56f49653854445a1a"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/7c18355d8c2d946c5e1ce7a56f49653854445a1a",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/7c18355d8c2d946c5e1ce7a56f49653854445a1a"
     },
     {
       "commitId": "cdaeef70a358ede7b4dc7b4a089f3853f37a6d2c",
@@ -515,8 +560,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/cdaeef70a358ede7b4dc7b4a089f3853f37a6d2c",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/cdaeef70a358ede7b4dc7b4a089f3853f37a6d2c"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/cdaeef70a358ede7b4dc7b4a089f3853f37a6d2c",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/cdaeef70a358ede7b4dc7b4a089f3853f37a6d2c"
     },
     {
       "commitId": "ef837766c5eb3ae81a4c663d36bf95a8aed91312",
@@ -534,8 +581,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/ef837766c5eb3ae81a4c663d36bf95a8aed91312",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/ef837766c5eb3ae81a4c663d36bf95a8aed91312"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/ef837766c5eb3ae81a4c663d36bf95a8aed91312",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/ef837766c5eb3ae81a4c663d36bf95a8aed91312"
     },
     {
       "commitId": "bd73638408daff89bcdac549a5a3396c9a7ce9dd",
@@ -553,8 +602,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/bd73638408daff89bcdac549a5a3396c9a7ce9dd",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/bd73638408daff89bcdac549a5a3396c9a7ce9dd"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/bd73638408daff89bcdac549a5a3396c9a7ce9dd",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/bd73638408daff89bcdac549a5a3396c9a7ce9dd"
     },
     {
       "commitId": "03bea1cebffa5726da0e3c0bc1487796d0dd0ee8",
@@ -572,8 +623,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/03bea1cebffa5726da0e3c0bc1487796d0dd0ee8",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/03bea1cebffa5726da0e3c0bc1487796d0dd0ee8"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/03bea1cebffa5726da0e3c0bc1487796d0dd0ee8",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/03bea1cebffa5726da0e3c0bc1487796d0dd0ee8"
     },
     {
       "commitId": "c093714168cdd190c1e171a803e996d685454352",
@@ -591,8 +644,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/c093714168cdd190c1e171a803e996d685454352",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/c093714168cdd190c1e171a803e996d685454352"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/c093714168cdd190c1e171a803e996d685454352",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/c093714168cdd190c1e171a803e996d685454352"
     },
     {
       "commitId": "3d203ea73427cec36b77a3a5a2e4f1f8ba7de170",
@@ -610,8 +665,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/3d203ea73427cec36b77a3a5a2e4f1f8ba7de170",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/3d203ea73427cec36b77a3a5a2e4f1f8ba7de170"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/3d203ea73427cec36b77a3a5a2e4f1f8ba7de170",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/3d203ea73427cec36b77a3a5a2e4f1f8ba7de170"
     },
     {
       "commitId": "1eea03b2ad9f14a5e7297c1307e36c980eb910ea",
@@ -629,8 +686,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/1eea03b2ad9f14a5e7297c1307e36c980eb910ea",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/1eea03b2ad9f14a5e7297c1307e36c980eb910ea"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/1eea03b2ad9f14a5e7297c1307e36c980eb910ea",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/1eea03b2ad9f14a5e7297c1307e36c980eb910ea"
     },
     {
       "commitId": "c40b5ceb9c77096b9f59e6a9193dae527bda79d9",
@@ -648,8 +707,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 2
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/c40b5ceb9c77096b9f59e6a9193dae527bda79d9",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/c40b5ceb9c77096b9f59e6a9193dae527bda79d9"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/c40b5ceb9c77096b9f59e6a9193dae527bda79d9",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/c40b5ceb9c77096b9f59e6a9193dae527bda79d9"
     },
     {
       "commitId": "6ff5e8f6256cc58aa062dbb1e096c1e3b3435ebe",
@@ -667,8 +728,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Add": 12
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/6ff5e8f6256cc58aa062dbb1e096c1e3b3435ebe",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/6ff5e8f6256cc58aa062dbb1e096c1e3b3435ebe"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/6ff5e8f6256cc58aa062dbb1e096c1e3b3435ebe",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/6ff5e8f6256cc58aa062dbb1e096c1e3b3435ebe"
     },
     {
       "commitId": "03b1b831e41df536d836c95e2f68a42db4f3e0db",
@@ -686,8 +749,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Add": 5
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/03b1b831e41df536d836c95e2f68a42db4f3e0db",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/03b1b831e41df536d836c95e2f68a42db4f3e0db"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/03b1b831e41df536d836c95e2f68a42db4f3e0db",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/03b1b831e41df536d836c95e2f68a42db4f3e0db"
     },
     {
       "commitId": "67cae2b029dff7eb3dc062b49403aaedca5bad8d",
@@ -705,8 +770,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/67cae2b029dff7eb3dc062b49403aaedca5bad8d",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/67cae2b029dff7eb3dc062b49403aaedca5bad8d"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/67cae2b029dff7eb3dc062b49403aaedca5bad8d",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/67cae2b029dff7eb3dc062b49403aaedca5bad8d"
     },
     {
       "commitId": "be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
@@ -724,13 +791,14 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Add": 305
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4"
     }
   ]
 }
 ```
-
 
 ### In the history of a branch
 
@@ -764,8 +832,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/33b55f7cb7e7e245323987634f960cf4a6e6bc74",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/33b55f7cb7e7e245323987634f960cf4a6e6bc74"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/33b55f7cb7e7e245323987634f960cf4a6e6bc74",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/33b55f7cb7e7e245323987634f960cf4a6e6bc74"
     },
     {
       "commitId": "aad331d8d3b131fa9ae03cf5e53965b51942618a",
@@ -783,8 +853,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/aad331d8d3b131fa9ae03cf5e53965b51942618a",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/aad331d8d3b131fa9ae03cf5e53965b51942618a"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/aad331d8d3b131fa9ae03cf5e53965b51942618a",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/aad331d8d3b131fa9ae03cf5e53965b51942618a"
     },
     {
       "commitId": "7c18355d8c2d946c5e1ce7a56f49653854445a1a",
@@ -802,8 +874,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/7c18355d8c2d946c5e1ce7a56f49653854445a1a",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/7c18355d8c2d946c5e1ce7a56f49653854445a1a"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/7c18355d8c2d946c5e1ce7a56f49653854445a1a",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/7c18355d8c2d946c5e1ce7a56f49653854445a1a"
     },
     {
       "commitId": "cdaeef70a358ede7b4dc7b4a089f3853f37a6d2c",
@@ -821,8 +895,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/cdaeef70a358ede7b4dc7b4a089f3853f37a6d2c",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/cdaeef70a358ede7b4dc7b4a089f3853f37a6d2c"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/cdaeef70a358ede7b4dc7b4a089f3853f37a6d2c",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/cdaeef70a358ede7b4dc7b4a089f3853f37a6d2c"
     },
     {
       "commitId": "ef837766c5eb3ae81a4c663d36bf95a8aed91312",
@@ -840,8 +916,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/ef837766c5eb3ae81a4c663d36bf95a8aed91312",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/ef837766c5eb3ae81a4c663d36bf95a8aed91312"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/ef837766c5eb3ae81a4c663d36bf95a8aed91312",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/ef837766c5eb3ae81a4c663d36bf95a8aed91312"
     },
     {
       "commitId": "bd73638408daff89bcdac549a5a3396c9a7ce9dd",
@@ -859,8 +937,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/bd73638408daff89bcdac549a5a3396c9a7ce9dd",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/bd73638408daff89bcdac549a5a3396c9a7ce9dd"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/bd73638408daff89bcdac549a5a3396c9a7ce9dd",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/bd73638408daff89bcdac549a5a3396c9a7ce9dd"
     },
     {
       "commitId": "03bea1cebffa5726da0e3c0bc1487796d0dd0ee8",
@@ -878,8 +958,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/03bea1cebffa5726da0e3c0bc1487796d0dd0ee8",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/03bea1cebffa5726da0e3c0bc1487796d0dd0ee8"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/03bea1cebffa5726da0e3c0bc1487796d0dd0ee8",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/03bea1cebffa5726da0e3c0bc1487796d0dd0ee8"
     },
     {
       "commitId": "c093714168cdd190c1e171a803e996d685454352",
@@ -897,8 +979,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/c093714168cdd190c1e171a803e996d685454352",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/c093714168cdd190c1e171a803e996d685454352"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/c093714168cdd190c1e171a803e996d685454352",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/c093714168cdd190c1e171a803e996d685454352"
     },
     {
       "commitId": "3d203ea73427cec36b77a3a5a2e4f1f8ba7de170",
@@ -916,8 +1000,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/3d203ea73427cec36b77a3a5a2e4f1f8ba7de170",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/3d203ea73427cec36b77a3a5a2e4f1f8ba7de170"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/3d203ea73427cec36b77a3a5a2e4f1f8ba7de170",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/3d203ea73427cec36b77a3a5a2e4f1f8ba7de170"
     },
     {
       "commitId": "1eea03b2ad9f14a5e7297c1307e36c980eb910ea",
@@ -935,8 +1021,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/1eea03b2ad9f14a5e7297c1307e36c980eb910ea",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/1eea03b2ad9f14a5e7297c1307e36c980eb910ea"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/1eea03b2ad9f14a5e7297c1307e36c980eb910ea",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/1eea03b2ad9f14a5e7297c1307e36c980eb910ea"
     },
     {
       "commitId": "c40b5ceb9c77096b9f59e6a9193dae527bda79d9",
@@ -954,8 +1042,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 2
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/c40b5ceb9c77096b9f59e6a9193dae527bda79d9",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/c40b5ceb9c77096b9f59e6a9193dae527bda79d9"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/c40b5ceb9c77096b9f59e6a9193dae527bda79d9",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/c40b5ceb9c77096b9f59e6a9193dae527bda79d9"
     },
     {
       "commitId": "6ff5e8f6256cc58aa062dbb1e096c1e3b3435ebe",
@@ -973,8 +1063,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Add": 12
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/6ff5e8f6256cc58aa062dbb1e096c1e3b3435ebe",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/6ff5e8f6256cc58aa062dbb1e096c1e3b3435ebe"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/6ff5e8f6256cc58aa062dbb1e096c1e3b3435ebe",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/6ff5e8f6256cc58aa062dbb1e096c1e3b3435ebe"
     },
     {
       "commitId": "03b1b831e41df536d836c95e2f68a42db4f3e0db",
@@ -992,8 +1084,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Add": 5
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/03b1b831e41df536d836c95e2f68a42db4f3e0db",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/03b1b831e41df536d836c95e2f68a42db4f3e0db"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/03b1b831e41df536d836c95e2f68a42db4f3e0db",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/03b1b831e41df536d836c95e2f68a42db4f3e0db"
     },
     {
       "commitId": "67cae2b029dff7eb3dc062b49403aaedca5bad8d",
@@ -1011,8 +1105,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/67cae2b029dff7eb3dc062b49403aaedca5bad8d",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/67cae2b029dff7eb3dc062b49403aaedca5bad8d"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/67cae2b029dff7eb3dc062b49403aaedca5bad8d",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/67cae2b029dff7eb3dc062b49403aaedca5bad8d"
     },
     {
       "commitId": "be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
@@ -1030,13 +1126,14 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Add": 305
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4"
     }
   ]
 }
 ```
-
 
 You can also send a POST request and send the [items version](./items.md#getaspecificversion) in the request body.
 
@@ -1045,6 +1142,7 @@ You can also send a POST request and send the [items version](./items.md#getaspe
 ```
 POST https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commitsBatch?api-version=1.0
 ```
+
 ```json
 {
   "itemVersion": {
@@ -1076,8 +1174,10 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/67cae2b029dff7eb3dc062b49403aaedca5bad8d",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/67cae2b029dff7eb3dc062b49403aaedca5bad8d"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/67cae2b029dff7eb3dc062b49403aaedca5bad8d",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/67cae2b029dff7eb3dc062b49403aaedca5bad8d"
     },
     {
       "commitId": "be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
@@ -1095,17 +1195,18 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-
       "changeCounts": {
         "Add": 305
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4"
     }
   ]
 }
 ```
 
-
 ### For an item
 
-Get all the commits that included changes to an item. *Note:* When specifying `itemPath`, if you do not also specify a branch or commit, then the search will begin at the default branch (or any branch, if no default branch exists).
+Get all the commits that included changes to an item. _Note:_ When specifying `itemPath`, if you do not also specify a branch or commit, then the search will begin at the default branch (or any branch, if no default branch exists).
 
 #### Sample request
 
@@ -1141,8 +1242,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
           "changeType": "edit"
         }
       ],
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/67cae2b029dff7eb3dc062b49403aaedca5bad8d",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/67cae2b029dff7eb3dc062b49403aaedca5bad8d"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/67cae2b029dff7eb3dc062b49403aaedca5bad8d",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/67cae2b029dff7eb3dc062b49403aaedca5bad8d"
     },
     {
       "commitId": "be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
@@ -1166,13 +1269,14 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
           "changeType": "add"
         }
       ],
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4"
     }
   ]
 }
 ```
-
 
 #### Sample request
 
@@ -1208,8 +1312,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
           "changeType": "edit"
         }
       ],
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/67cae2b029dff7eb3dc062b49403aaedca5bad8d",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/67cae2b029dff7eb3dc062b49403aaedca5bad8d"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/67cae2b029dff7eb3dc062b49403aaedca5bad8d",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/67cae2b029dff7eb3dc062b49403aaedca5bad8d"
     },
     {
       "commitId": "be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
@@ -1233,13 +1339,14 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
           "changeType": "add"
         }
       ],
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4"
     }
   ]
 }
 ```
-
 
 ### By the committer
 
@@ -1273,8 +1380,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/097d82b8aeabe493bf4c3553d320ae2529bba591",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/097d82b8aeabe493bf4c3553d320ae2529bba591"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/097d82b8aeabe493bf4c3553d320ae2529bba591",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/097d82b8aeabe493bf4c3553d320ae2529bba591"
     },
     {
       "commitId": "03b1b831e41df536d836c95e2f68a42db4f3e0db",
@@ -1292,8 +1401,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Add": 5
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/03b1b831e41df536d836c95e2f68a42db4f3e0db",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/03b1b831e41df536d836c95e2f68a42db4f3e0db"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/03b1b831e41df536d836c95e2f68a42db4f3e0db",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/03b1b831e41df536d836c95e2f68a42db4f3e0db"
     },
     {
       "commitId": "67cae2b029dff7eb3dc062b49403aaedca5bad8d",
@@ -1311,8 +1422,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/67cae2b029dff7eb3dc062b49403aaedca5bad8d",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/67cae2b029dff7eb3dc062b49403aaedca5bad8d"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/67cae2b029dff7eb3dc062b49403aaedca5bad8d",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/67cae2b029dff7eb3dc062b49403aaedca5bad8d"
     },
     {
       "commitId": "be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
@@ -1330,13 +1443,14 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Add": 305
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4"
     }
   ]
 }
 ```
-
 
 ### By the author
 
@@ -1370,8 +1484,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/097d82b8aeabe493bf4c3553d320ae2529bba591",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/097d82b8aeabe493bf4c3553d320ae2529bba591"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/097d82b8aeabe493bf4c3553d320ae2529bba591",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/097d82b8aeabe493bf4c3553d320ae2529bba591"
     },
     {
       "commitId": "03b1b831e41df536d836c95e2f68a42db4f3e0db",
@@ -1389,8 +1505,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Add": 5
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/03b1b831e41df536d836c95e2f68a42db4f3e0db",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/03b1b831e41df536d836c95e2f68a42db4f3e0db"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/03b1b831e41df536d836c95e2f68a42db4f3e0db",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/03b1b831e41df536d836c95e2f68a42db4f3e0db"
     },
     {
       "commitId": "67cae2b029dff7eb3dc062b49403aaedca5bad8d",
@@ -1408,8 +1526,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/67cae2b029dff7eb3dc062b49403aaedca5bad8d",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/67cae2b029dff7eb3dc062b49403aaedca5bad8d"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/67cae2b029dff7eb3dc062b49403aaedca5bad8d",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/67cae2b029dff7eb3dc062b49403aaedca5bad8d"
     },
     {
       "commitId": "be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
@@ -1427,15 +1547,17 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Add": 305
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4"
     }
   ]
 }
 ```
 
-
 ### In a date range
+
 <a name="inadaterange" />
 
 #### Sample request
@@ -1466,15 +1588,17 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Add": 305
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4"
     }
   ]
 }
 ```
 
-
 ### A page at a time
+
 <a name="apageatatime" />
 
 #### Sample request
@@ -1505,8 +1629,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/fe17a84cc2dfe0ea3a2202ab4dbac0706058e41f",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/fe17a84cc2dfe0ea3a2202ab4dbac0706058e41f"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/fe17a84cc2dfe0ea3a2202ab4dbac0706058e41f",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/fe17a84cc2dfe0ea3a2202ab4dbac0706058e41f"
     },
     {
       "commitId": "0360c963d7d86d040e9c33bba836feab14da4ad3",
@@ -1524,17 +1650,18 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/0360c963d7d86d040e9c33bba836feab14da4ad3",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/0360c963d7d86d040e9c33bba836feab14da4ad3"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/0360c963d7d86d040e9c33bba836feab14da4ad3",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/0360c963d7d86d040e9c33bba836feab14da4ad3"
     }
   ]
 }
 ```
 
-
 ### From a push
 
-Get the commits that were introduced to the repo by a push. It doesn't include commits that already existed in the repo, for instance on another branch. 
+Get the commits that were introduced to the repo by a push. It doesn't include commits that already existed in the repo, for instance on another branch.
 
 #### Sample request
 
@@ -1561,20 +1688,26 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "date": "2014-01-29T23:32:09Z"
       },
       "comment": "First cut",
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
       "_links": {
         "self": {
-          "href": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4"
+          "href":
+            "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4"
         },
         "repository": {
-          "href": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249"
+          "href":
+            "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249"
         },
         "web": {
-          "href": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4"
+          "href":
+            "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4"
         },
         "changes": {
-          "href": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4/changes"
+          "href":
+            "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4/changes"
         }
       }
     }
@@ -1582,27 +1715,26 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
 }
 ```
 
-
 ## Get a batch of commits
 
 ```no-highlight
 POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/commitsBatch?api-version={version}
 ```
 
-| Parameter  | Type     | Default | Notes
-|:-----------|:---------|:--------|:----------------------------------------------------------------------------------------------------------------------------
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
+
+
 | URL
-| instance   | string   |         | TFS server name ({server:port}).
-| project    | string   |         | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
-| repository | string   |         | ID of the [repository](./repositories.md).
+| instance | string | | TFS server name ({server:port}).
+| project | string | | ID or name of the [project](../tfs/projects.md). _Optional if specifying an ID for repository._
+| repository | string | | ID of the [repository](./repositories.md).
 | Query
-| api-version| string   |         | Version of the API to use.
+| api-version| string | | Version of the API to use.
 
 ### By a list of commit IDs
 
 Send a POST request with a list of IDs you want.
-
-
 
 ### Between two versions
 
@@ -1613,6 +1745,7 @@ To return the set of commits in the history of one version that are _not_ in the
 ```
 POST https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commitsBatch?api-version=1.0
 ```
+
 ```json
 {
   "itemVersion": {
@@ -1648,8 +1781,10 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/23d0bc5b128a10056dc68afece360d8a0fabb014",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/23d0bc5b128a10056dc68afece360d8a0fabb014"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/23d0bc5b128a10056dc68afece360d8a0fabb014",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/23d0bc5b128a10056dc68afece360d8a0fabb014"
     },
     {
       "commitId": "fe17a84cc2dfe0ea3a2202ab4dbac0706058e41f",
@@ -1667,8 +1802,10 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/fe17a84cc2dfe0ea3a2202ab4dbac0706058e41f",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/fe17a84cc2dfe0ea3a2202ab4dbac0706058e41f"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/fe17a84cc2dfe0ea3a2202ab4dbac0706058e41f",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/fe17a84cc2dfe0ea3a2202ab4dbac0706058e41f"
     },
     {
       "commitId": "0360c963d7d86d040e9c33bba836feab14da4ad3",
@@ -1686,8 +1823,10 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/0360c963d7d86d040e9c33bba836feab14da4ad3",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/0360c963d7d86d040e9c33bba836feab14da4ad3"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/0360c963d7d86d040e9c33bba836feab14da4ad3",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/0360c963d7d86d040e9c33bba836feab14da4ad3"
     },
     {
       "commitId": "097d82b8aeabe493bf4c3553d320ae2529bba591",
@@ -1705,8 +1844,10 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/097d82b8aeabe493bf4c3553d320ae2529bba591",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/097d82b8aeabe493bf4c3553d320ae2529bba591"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/097d82b8aeabe493bf4c3553d320ae2529bba591",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/097d82b8aeabe493bf4c3553d320ae2529bba591"
     },
     {
       "commitId": "33b55f7cb7e7e245323987634f960cf4a6e6bc74",
@@ -1724,8 +1865,10 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/33b55f7cb7e7e245323987634f960cf4a6e6bc74",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/33b55f7cb7e7e245323987634f960cf4a6e6bc74"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/33b55f7cb7e7e245323987634f960cf4a6e6bc74",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/33b55f7cb7e7e245323987634f960cf4a6e6bc74"
     },
     {
       "commitId": "aad331d8d3b131fa9ae03cf5e53965b51942618a",
@@ -1743,8 +1886,10 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/aad331d8d3b131fa9ae03cf5e53965b51942618a",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/aad331d8d3b131fa9ae03cf5e53965b51942618a"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/aad331d8d3b131fa9ae03cf5e53965b51942618a",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/aad331d8d3b131fa9ae03cf5e53965b51942618a"
     },
     {
       "commitId": "7c18355d8c2d946c5e1ce7a56f49653854445a1a",
@@ -1762,8 +1907,10 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/7c18355d8c2d946c5e1ce7a56f49653854445a1a",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/7c18355d8c2d946c5e1ce7a56f49653854445a1a"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/7c18355d8c2d946c5e1ce7a56f49653854445a1a",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/7c18355d8c2d946c5e1ce7a56f49653854445a1a"
     },
     {
       "commitId": "cdaeef70a358ede7b4dc7b4a089f3853f37a6d2c",
@@ -1781,8 +1928,10 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/cdaeef70a358ede7b4dc7b4a089f3853f37a6d2c",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/cdaeef70a358ede7b4dc7b4a089f3853f37a6d2c"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/cdaeef70a358ede7b4dc7b4a089f3853f37a6d2c",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/cdaeef70a358ede7b4dc7b4a089f3853f37a6d2c"
     },
     {
       "commitId": "ef837766c5eb3ae81a4c663d36bf95a8aed91312",
@@ -1800,8 +1949,10 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/ef837766c5eb3ae81a4c663d36bf95a8aed91312",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/ef837766c5eb3ae81a4c663d36bf95a8aed91312"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/ef837766c5eb3ae81a4c663d36bf95a8aed91312",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/ef837766c5eb3ae81a4c663d36bf95a8aed91312"
     },
     {
       "commitId": "bd73638408daff89bcdac549a5a3396c9a7ce9dd",
@@ -1819,8 +1970,10 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/bd73638408daff89bcdac549a5a3396c9a7ce9dd",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/bd73638408daff89bcdac549a5a3396c9a7ce9dd"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/bd73638408daff89bcdac549a5a3396c9a7ce9dd",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/bd73638408daff89bcdac549a5a3396c9a7ce9dd"
     },
     {
       "commitId": "03bea1cebffa5726da0e3c0bc1487796d0dd0ee8",
@@ -1838,8 +1991,10 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/03bea1cebffa5726da0e3c0bc1487796d0dd0ee8",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/03bea1cebffa5726da0e3c0bc1487796d0dd0ee8"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/03bea1cebffa5726da0e3c0bc1487796d0dd0ee8",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/03bea1cebffa5726da0e3c0bc1487796d0dd0ee8"
     },
     {
       "commitId": "c093714168cdd190c1e171a803e996d685454352",
@@ -1857,8 +2012,10 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/c093714168cdd190c1e171a803e996d685454352",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/c093714168cdd190c1e171a803e996d685454352"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/c093714168cdd190c1e171a803e996d685454352",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/c093714168cdd190c1e171a803e996d685454352"
     },
     {
       "commitId": "3d203ea73427cec36b77a3a5a2e4f1f8ba7de170",
@@ -1876,8 +2033,10 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/3d203ea73427cec36b77a3a5a2e4f1f8ba7de170",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/3d203ea73427cec36b77a3a5a2e4f1f8ba7de170"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/3d203ea73427cec36b77a3a5a2e4f1f8ba7de170",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/3d203ea73427cec36b77a3a5a2e4f1f8ba7de170"
     },
     {
       "commitId": "1eea03b2ad9f14a5e7297c1307e36c980eb910ea",
@@ -1895,8 +2054,10 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-
       "changeCounts": {
         "Edit": 1
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/1eea03b2ad9f14a5e7297c1307e36c980eb910ea",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/1eea03b2ad9f14a5e7297c1307e36c980eb910ea"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/1eea03b2ad9f14a5e7297c1307e36c980eb910ea",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/1eea03b2ad9f14a5e7297c1307e36c980eb910ea"
     },
     {
       "commitId": "c40b5ceb9c77096b9f59e6a9193dae527bda79d9",
@@ -1914,8 +2075,10 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-
       "changeCounts": {
         "Edit": 2
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/c40b5ceb9c77096b9f59e6a9193dae527bda79d9",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/c40b5ceb9c77096b9f59e6a9193dae527bda79d9"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/c40b5ceb9c77096b9f59e6a9193dae527bda79d9",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/c40b5ceb9c77096b9f59e6a9193dae527bda79d9"
     },
     {
       "commitId": "6ff5e8f6256cc58aa062dbb1e096c1e3b3435ebe",
@@ -1933,8 +2096,10 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-
       "changeCounts": {
         "Add": 12
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/6ff5e8f6256cc58aa062dbb1e096c1e3b3435ebe",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/6ff5e8f6256cc58aa062dbb1e096c1e3b3435ebe"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/6ff5e8f6256cc58aa062dbb1e096c1e3b3435ebe",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/6ff5e8f6256cc58aa062dbb1e096c1e3b3435ebe"
     },
     {
       "commitId": "03b1b831e41df536d836c95e2f68a42db4f3e0db",
@@ -1952,13 +2117,14 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-
       "changeCounts": {
         "Add": 5
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/03b1b831e41df536d836c95e2f68a42db4f3e0db",
-      "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/03b1b831e41df536d836c95e2f68a42db4f3e0db"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/03b1b831e41df536d836c95e2f68a42db4f3e0db",
+      "remoteUrl":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/03b1b831e41df536d836c95e2f68a42db4f3e0db"
     }
   ]
 }
 ```
-
 
 ## Get a single commit
 
@@ -1966,16 +2132,18 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-
 GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/commits/{commitId}?api-version={version}[&changeCount={integer}]
 ```
 
-| Parameter   | Type    | Default | Notes
-|:------------|:--------|:--------|:----------------------------------------------------------------------------------------------------------------------------
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
+
+
 | URL
-| instance    | string  |         | TFS server name ({server:port}).
-| project     | string  |         | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
-| repository  | string  |         | ID of the [repository](./repositories.md).
-| commitId    | string  |         | ID of the commit.
+| instance | string | | TFS server name ({server:port}).
+| project | string | | ID or name of the [project](../tfs/projects.md). _Optional if specifying an ID for repository._
+| repository | string | | ID of the [repository](./repositories.md).
+| commitId | string | | ID of the commit.
 | Query
-| api-version | string  |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| changeCount | integer | 0       | The number of changes in the commit to include in the response.
+| api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| changeCount | integer | 0 | The number of changes in the commit to include in the response.
 
 ### Just the commit
 
@@ -1996,8 +2164,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
       "displayName": "Chuck Reinhart",
       "uniqueName": "fabrikamfiber3@hotmail.com",
-      "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-      "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+      "imageUrl":
+        "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
     },
     "pushId": 1,
     "date": "2014-01-29T23:33:15.2434002Z"
@@ -2014,30 +2184,37 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
     "date": "2014-01-29T23:32:09Z"
   },
   "comment": "First cut\n",
-  "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
-  "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
+  "url":
+    "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
+  "remoteUrl":
+    "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
   "_links": {
     "self": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4"
     },
     "repository": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249"
     },
     "changes": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4/changes"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4/changes"
     },
     "web": {
-      "href": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4"
+      "href":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4"
     },
     "tree": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/trees/7fa1a3523ffef51c525ea476bffff7d648b8cb3d"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/trees/7fa1a3523ffef51c525ea476bffff7d648b8cb3d"
     }
   }
 }
 ```
 
-
 ### With changed items
+
 <a name="withchangeditems" />
 
 #### Sample request
@@ -2057,8 +2234,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
       "displayName": "Chuck Reinhart",
       "uniqueName": "fabrikamfiber3@hotmail.com",
-      "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-      "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+      "imageUrl":
+        "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
     },
     "pushId": 1,
     "date": "2014-01-29T23:33:15.2434002Z"
@@ -2083,7 +2262,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "item": {
         "gitObjectType": "blob",
         "path": "/.gitattributes",
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/.gitattributes?versionType=Commit"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/.gitattributes?versionType=Commit"
       },
       "changeType": "add"
     },
@@ -2091,7 +2271,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "item": {
         "gitObjectType": "blob",
         "path": "/.gitignore",
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/.gitignore?versionType=Commit"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/.gitignore?versionType=Commit"
       },
       "changeType": "add"
     },
@@ -2100,7 +2281,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "gitObjectType": "tree",
         "path": "/MyWebSite",
         "isFolder": true,
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/MyWebSite?versionType=Commit"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/MyWebSite?versionType=Commit"
       },
       "changeType": "add"
     },
@@ -2109,7 +2291,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "gitObjectType": "tree",
         "path": "/MyWebSite/MyWebSite",
         "isFolder": true,
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/MyWebSite/MyWebSite?versionType=Commit"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/MyWebSite/MyWebSite?versionType=Commit"
       },
       "changeType": "add"
     },
@@ -2117,7 +2300,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "item": {
         "gitObjectType": "blob",
         "path": "/MyWebSite/MyWebSite.sln",
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/MyWebSite/MyWebSite.sln?versionType=Commit"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/MyWebSite/MyWebSite.sln?versionType=Commit"
       },
       "changeType": "add"
     },
@@ -2126,7 +2310,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "gitObjectType": "tree",
         "path": "/MyWebSite/packages",
         "isFolder": true,
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/MyWebSite/packages?versionType=Commit"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/MyWebSite/packages?versionType=Commit"
       },
       "changeType": "add"
     },
@@ -2135,7 +2320,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "gitObjectType": "tree",
         "path": "/MyWebSite/MyWebSite/App_Start",
         "isFolder": true,
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/MyWebSite/MyWebSite/App_Start?versionType=Commit"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/MyWebSite/MyWebSite/App_Start?versionType=Commit"
       },
       "changeType": "add"
     },
@@ -2144,7 +2330,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "gitObjectType": "tree",
         "path": "/MyWebSite/MyWebSite/Areas",
         "isFolder": true,
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/MyWebSite/MyWebSite/Areas?versionType=Commit"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/MyWebSite/MyWebSite/Areas?versionType=Commit"
       },
       "changeType": "add"
     },
@@ -2153,7 +2340,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "gitObjectType": "tree",
         "path": "/MyWebSite/MyWebSite/Content",
         "isFolder": true,
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/MyWebSite/MyWebSite/Content?versionType=Commit"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/MyWebSite/MyWebSite/Content?versionType=Commit"
       },
       "changeType": "add"
     },
@@ -2162,35 +2350,43 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "gitObjectType": "tree",
         "path": "/MyWebSite/MyWebSite/Controllers",
         "isFolder": true,
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/MyWebSite/MyWebSite/Controllers?versionType=Commit"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/MyWebSite/MyWebSite/Controllers?versionType=Commit"
       },
       "changeType": "add"
     }
   ],
-  "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
-  "remoteUrl": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
+  "url":
+    "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
+  "remoteUrl":
+    "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4",
   "_links": {
     "self": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4"
     },
     "repository": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249"
     },
     "changes": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4/changes"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4/changes"
     },
     "web": {
-      "href": "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4"
+      "href":
+        "https://mytfsserver/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/be67f8871a4d2c75f13a51c1d3c30ac0d74d4ef4"
     },
     "tree": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/trees/7fa1a3523ffef51c525ea476bffff7d648b8cb3d"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/trees/7fa1a3523ffef51c525ea476bffff7d648b8cb3d"
     }
   }
 }
 ```
 
-
 ## Commit status
+
 <a name="commit_status" />
 
 Commit status allows you to mark commits with status information from other systems.
@@ -2201,6 +2397,7 @@ For instance, it's used in VSTS to surface build status in the web UI.
 ```no-highlight
 POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/commits/{commit}/statuses?api-version={version}
 ```
+
 ```
 {
   "state": {string},
@@ -2213,12 +2410,11 @@ POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repo
 }
 ```
 
-
 | Parameter     | Type                                       | Notes                                                                                           |
-|:--------------|:-------------------------------------------|:------------------------------------------------------------------------------------------------|
+| :------------ | :----------------------------------------- | :---------------------------------------------------------------------------------------------- |
 | URL           |                                            |                                                                                                 |
 | instance      | string                                     | TFS server name ({server:port}).                                                                |
-| project       | string                                     | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.* |
+| project       | string                                     | ID or name of the [project](../tfs/projects.md). _Optional if specifying an ID for repository._ |
 | Query         |                                            |                                                                                                 |
 | api-version   | string                                     | [Version](../../concepts/rest-api-versioning.md) of the API to use.                             |
 | Body          |                                            |                                                                                                 |
@@ -2233,6 +2429,7 @@ POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repo
 ```
 POST https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/commits/67cae2b029dff7eb3dc062b49403aaedca5bad8d/statuses?api-version=2.1
 ```
+
 ```json
 {
   "state": "succeeded",
@@ -2260,13 +2457,14 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-
     "id": "278d5cd2-584d-4b63-824a-2ba458937249",
     "displayName": "Norman Paulk",
     "uniqueName": "Fabrikamfiber16",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/278d5cd2-584d-4b63-824a-2ba458937249",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=278d5cd2-584d-4b63-824a-2ba458937249"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/278d5cd2-584d-4b63-824a-2ba458937249",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=278d5cd2-584d-4b63-824a-2ba458937249"
   },
   "targetUrl": "https://ci.fabrikam.com/my-project/build/123 "
 }
 ```
-
 
 ### Get statuses
 
@@ -2274,12 +2472,11 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-
 GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/commits/{commit}/statuses?api-version={version}
 ```
 
-
 | Parameter   | Type   | Notes                                                                                           |
-|:------------|:-------|:------------------------------------------------------------------------------------------------|
+| :---------- | :----- | :---------------------------------------------------------------------------------------------- |
 | URL         |        |                                                                                                 |
 | instance    | string | TFS server name ({server:port}).                                                                |
-| project     | string | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.* |
+| project     | string | ID or name of the [project](../tfs/projects.md). _Optional if specifying an ID for repository._ |
 | Query       |        |                                                                                                 |
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.                             |
 
@@ -2307,13 +2504,13 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "id": "278d5cd2-584d-4b63-824a-2ba458937249",
         "displayName": "Norman Paulk",
         "uniqueName": "Fabrikamfiber16",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/278d5cd2-584d-4b63-824a-2ba458937249",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=278d5cd2-584d-4b63-824a-2ba458937249"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/278d5cd2-584d-4b63-824a-2ba458937249",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=278d5cd2-584d-4b63-824a-2ba458937249"
       },
       "targetUrl": "https://ci.fabrikam.com/my-project/build/123 "
     }
   ]
 }
 ```
-
-

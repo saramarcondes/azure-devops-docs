@@ -14,14 +14,13 @@ ms.date: 08/04/2016
 
 Module path: `VSS/Common/Contracts/FormInput`
 
-
 ### Members
 
 * `dependencyInputIds`: string[]. The IDs of all inputs that the value of this input is dependent on.
 
 * `description`: string. Description of what this input is used for
 
-* `groupName`: string. The group localized name to which this input belongs and can be shown as a header for the container that  includes all the inputs in the group.
+* `groupName`: string. The group localized name to which this input belongs and can be shown as a header for the container that includes all the inputs in the group.
 
 * `hasDynamicValueInformation`: boolean. If true, the value information for this input is dynamic and should be fetched when the value of dependency inputs change.
 
@@ -40,4 +39,3 @@ Module path: `VSS/Common/Contracts/FormInput`
 * `valueHint`: string. A hint for input value. It can be used in the UI as the input placeholder.
 
 * `values`: [InputValues](../../../../VSS/Common/Contracts/FormInput/InputValues.md). Information about possible values for this input
-

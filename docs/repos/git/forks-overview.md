@@ -23,12 +23,11 @@ After a fork has been created, new files, folders, and branches are not shared b
 
 When working with forks, you typically use the following workflow:
 
-1. [Create a fork](forks.md#create-fork)
-2. [Clone it locally](forks.md#clone-locally)
-3. [Make your changes locally and push them to a branch](forks.md#push-changes)
-4. [Create and complete a PR to upstream](forks.md#create-pr)
-5. [Sync your fork to the latest from upstream](forks.md#sync-fork)
-
+1.  [Create a fork](forks.md#create-fork)
+2.  [Clone it locally](forks.md#clone-locally)
+3.  [Make your changes locally and push them to a branch](forks.md#push-changes)
+4.  [Create and complete a PR to upstream](forks.md#create-pr)
+5.  [Sync your fork to the latest from upstream](forks.md#sync-fork)
 
 ## Learn more
 
@@ -52,6 +51,3 @@ When working with forks, you typically use the following workflow:
         </a>
     </li>
  </ul>
-
-
-

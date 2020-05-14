@@ -24,45 +24,46 @@ You can use Azure Pipelines to build an app written in any language. For this qu
 
 ## Get your first run
 
-1. From a command prompt, sign in to the Azure CLI.
+1.  From a command prompt, sign in to the Azure CLI.
 
     ```
     az login
     ```
 
-1. Fork the following repository into your GitHub account:
+1.  Fork the following repository into your GitHub account:
 
     ```
     https://github.com/MicrosoftDocs/pipelines-java
     ```
 
-    After you've forked it, clone it to your dev machine. 
+    After you've forked it, clone it to your dev machine.
     Learn how: [Fork a repo](https://help.github.com/en/articles/fork-a-repo).
 
-1. Navigate to the cloned directory.
+1.  Navigate to the cloned directory.
 
-1. Create a new pipeline:
+1.  Create a new pipeline:
 
     ```
     az pipelines create --name "First-Java.CI"
     ```
-    The repository and branch details are picked up from the git configuration available in the cloned directory.   
 
-1. Enter your GitHub user name and password to authenticate Azure Pipelines.
-   
+    The repository and branch details are picked up from the git configuration available in the cloned directory.
+
+1.  Enter your GitHub user name and password to authenticate Azure Pipelines.
+
     ```
     Enter your GitHub username (Leave blank for using already generated PAT): Contoso
-    
-    Enter your GitHub password:
-    ``` 
 
-1. Provide a name for the service connection created to enable Azure Pipelines to communicate with the GitHub Repository.
-    
+    Enter your GitHub password:
+    ```
+
+1.  Provide a name for the service connection created to enable Azure Pipelines to communicate with the GitHub Repository.
+
     ```
     Enter a service connection name to create? ContosoPipelineServiceConnection
     ```
 
-1. Select the Maven pipeline template from the list of recommended templates. 
+1.  Select the Maven pipeline template from the list of recommended templates.
 
     ```
     Which template do you want to use for this pipeline?
@@ -98,7 +99,7 @@ You can use Azure Pipelines to build an app written in any language. For this qu
     Please enter a choice [Default choice(1)]:
     ```
 
-1. The pipeline YAML is generated. You can open the YAML in your default editor to view and make changes.
+1.  The pipeline YAML is generated. You can open the YAML in your default editor to view and make changes.
 
     ```
     Do you want to view/edit the template yaml before proceeding?
@@ -106,8 +107,8 @@ You can use Azure Pipelines to build an app written in any language. For this qu
     [2] View or edit the yaml
     Please enter a choice [Default choice(1)]:2
     ```
-    
-1. Provide where you want to commit the YAML file that is generated.
+
+1.  Provide where you want to commit the YAML file that is generated.
 
     ```
     How do you want to commit the files to the repository?
@@ -116,15 +117,15 @@ You can use Azure Pipelines to build an app written in any language. For this qu
     Please enter a choice [Default choice(1)]:
     ```
 
-1. A new run is started. Wait for the run to finish.
+1.  A new run is started. Wait for the run to finish.
 
 ## Manage your pipelines
 
 You can manage the pipelines in your organization using these `az pipelines` commands:
 
-- [az pipelines run](#run-a-pipeline): Run an existing pipeline
-- [az pipelines update](#update-a-pipeline): Update an existing pipeline
-- [az pipelines show](#show-pipeline): Show the details of an existing pipeline
+* [az pipelines run](#run-a-pipeline): Run an existing pipeline
+* [az pipelines update](#update-a-pipeline): Update an existing pipeline
+* [az pipelines show](#show-pipeline): Show the details of an existing pipeline
 
 These commands require either the name or ID of the pipeline you want to manage. You can get the ID of a pipeline using the [az pipelines list](/cli/azure/ext/azure-devops/pipelines#ext-azure-devops-az-pipelines-list) command.
 
@@ -132,7 +133,7 @@ These commands require either the name or ID of the pipeline you want to manage.
 
 You can queue (run) an existing pipeline with the [az pipelines run](/cli/azure/ext/azure-devops/pipelines#ext-azure-devops-az-pipelines-run) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
 
-```azurecli 
+```azurecli
 az pipelines run [--branch]
                  [--commit-id]
                  [--folder-path]
@@ -142,25 +143,25 @@ az pipelines run [--branch]
                  [--org]
                  [--project]
                  [--variables]
-``` 
+```
 
 #### Parameters
 
-- **branch**: Name of the branch on which the pipeline run is to be queued, for example, *refs/heads/master*.
-- **commit-id**: Commit-id on which the pipeline run is to be queued.
-- **folder-path**: Folder path of pipeline. Default is root level folder.
-- **id**: Required if **name** is not supplied. ID of the pipeline to queue.
-- **name**: Required if **ID** is not supplied, but ignored if **ID** is supplied. Name of the pipeline to queue.
-- **open**: Open the pipeline results page in your web browser.
-- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
-- **variables**: Space separated "name=value" pairs for the variables you would like to set.
+* **branch**: Name of the branch on which the pipeline run is to be queued, for example, _refs/heads/master_.
+* **commit-id**: Commit-id on which the pipeline run is to be queued.
+* **folder-path**: Folder path of pipeline. Default is root level folder.
+* **id**: Required if **name** is not supplied. ID of the pipeline to queue.
+* **name**: Required if **ID** is not supplied, but ignored if **ID** is supplied. Name of the pipeline to queue.
+* **open**: Open the pipeline results page in your web browser.
+* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+* **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+* **variables**: Space separated "name=value" pairs for the variables you would like to set.
 
 #### Example
 
-The following command runs the pipeline named **myGithubname.pipelines-java** in the branch **pipeline** and shows the result in table format.  
+The following command runs the pipeline named **myGithubname.pipelines-java** in the branch **pipeline** and shows the result in table format.
 
-```azurecli 
+```azurecli
 az pipelines run --name myGithubname.pipelines-java --branch pipeline --output table
 
 Run ID    Number      Status      Result    Pipeline ID    Pipeline Name                Source Branch    Queued Time               Reason
@@ -172,7 +173,7 @@ Run ID    Number      Status      Result    Pipeline ID    Pipeline Name        
 
 You can update an existing pipeline with the [az pipelines update](/cli/azure/ext/azure-devops/pipelines#ext-azure-devops-az-pipelines-update) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
 
-```azurecli 
+```azurecli
 az pipelines update [--branch]
                     [--description]
                     [--id]
@@ -183,26 +184,26 @@ az pipelines update [--branch]
                     [--project]
                     [--queue-id]
                     [--yaml-path]
-``` 
+```
 
 #### Parameters
 
-- **branch**: Name of the branch on which the pipeline run is to be configured, for example, *refs/heads/master*.
-- **description**: New description for the pipeline.
-- **id**: Required if **name** is not supplied. ID of the pipeline to update.
-- **name**: Required if **ID** is not supplied. Name of the pipeline to update.
-- **new-folder-path**: New full path of the folder to which the pipeline is moved, for example, *user1/production_pipelines*.
-- **new-name**: New updated name of the pipeline.
-- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
-- **queue-id**: Queue ID of the agent pool where the pipeline needs to run.
-- **yaml-path**: Path of the pipeline's yaml file in the repo.
+* **branch**: Name of the branch on which the pipeline run is to be configured, for example, _refs/heads/master_.
+* **description**: New description for the pipeline.
+* **id**: Required if **name** is not supplied. ID of the pipeline to update.
+* **name**: Required if **ID** is not supplied. Name of the pipeline to update.
+* **new-folder-path**: New full path of the folder to which the pipeline is moved, for example, _user1/production_pipelines_.
+* **new-name**: New updated name of the pipeline.
+* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+* **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+* **queue-id**: Queue ID of the agent pool where the pipeline needs to run.
+* **yaml-path**: Path of the pipeline's yaml file in the repo.
 
-#### Example 
+#### Example
 
 The following command updates the pipeline with the **ID** of 12 with a new name and description and shows the result in table format.
 
-```azurecli 
+```azurecli
 az pipelines update --id 12 --description "rename pipeline" --new-name updatedname.pipelines-java --output table
 
 ID    Name                        Status    Default Queue
@@ -214,29 +215,29 @@ ID    Name                        Status    Default Queue
 
 You can view the details of an existing pipeline with the [az pipelines show](/cli/azure/ext/azure-devops/pipelines#ext-azure-devops-az-pipelines-show) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
 
-```azurecli 
+```azurecli
 az pipelines show [--folder-path]
                   [--id]
                   [--name]
                   [--open]
                   [--org]
                   [--project]
-``` 
+```
 
 #### Parameters
 
-- **folder-path**: Folder path of pipeline. Default is root level folder.
-- **id**: Required if **name** is not supplied. ID of the pipeline to show details.
-- **name**: Required if **name** is not supplied, but ignored if **ID** is supplied. Name of the pipeline to show details.
-- **open**: Open the pipeline summary page in your web browser.
-- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+* **folder-path**: Folder path of pipeline. Default is root level folder.
+* **id**: Required if **name** is not supplied. ID of the pipeline to show details.
+* **name**: Required if **name** is not supplied, but ignored if **ID** is supplied. Name of the pipeline to show details.
+* **open**: Open the pipeline summary page in your web browser.
+* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+* **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
 
-#### Example 
+#### Example
 
-The following command shows the details of the pipeline with the **ID** of 12 and returns the result in table format.  
+The following command shows the details of the pipeline with the **ID** of 12 and returns the result in table format.
 
-```azurecli 
+```azurecli
 az pipelines show --id 12 --output table
 
 ID    Name                        Status    Default Queue

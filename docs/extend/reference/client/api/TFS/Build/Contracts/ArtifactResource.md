@@ -14,10 +14,9 @@ ms.date: 08/04/2016
 
 Module path: `TFS/Build/Contracts`
 
-
 ### Members
 
-* `_links`: any. 
+* `_links`: any.
 
 * `data`: string. The type-specific resource data. For example, &quot;#/10002/5/drop&quot;, &quot;$/drops/5&quot;, &quot;\\myshare\myfolder\mydrops\5&quot;
 
@@ -28,4 +27,3 @@ Module path: `TFS/Build/Contracts`
 * `type`: string. The type of the resource: File container, version control folder, UNC path, etc.
 
 * `url`: string. Link to the resource
-

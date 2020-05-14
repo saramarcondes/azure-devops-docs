@@ -10,6 +10,7 @@ author: chcomley
 ms.date: 12/18/2019
 monikerRange: 'azure-devops'
 ---
+
 # Manage users and their access in Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
@@ -34,6 +35,7 @@ To learn more, read [about access levels](../security/access-levels.md).
 [!INCLUDE [prerequisites-add-users-org](../../includes/prerequisites-add-users-org.md)]
 
 ## Manage users
+
 From your web browser you can view and edit certain user information. From the Azure DevOps CLI command, you can see details about a specific user and update their access level.
 
 The Users view shows key information per user in a table. In this view, you can do the following tasks:
@@ -43,68 +45,68 @@ The Users view shows key information per user in a table. In this view, you can 
 * Filter by searching for partial user names, access level, or extension names.
 * See the last access date for each user. This can help you choose users to remove access from or lower access to stay within your license limits.
 
-> [!NOTE]   
+> [!NOTE]  
 > To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
 
-#### [Preview page](#tab/preview-page) 
+#### [Preview page](#tab/preview-page)
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+1.  Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+2.  Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
-3. Select **Users**.
+3.  Select **Users**.
 
-   ![.](../../media/open-organization-settings-users-preview.png)
+    ![.](../../media/open-organization-settings-users-preview.png)
 
-4. Select a user or group of users. Then, select the **...** icon at the end of the **Name** column to open the context menu.
+4.  Select a user or group of users. Then, select the **...** icon at the end of the **Name** column to open the context menu.
 
     In the context menu, select one of the following options:
 
-   * **Change access level**
-   * **Manage user**
-   * **Resend invite**
-   * **Remove direct assignments**
-   * **Remove from organization** (deletes user)
+    * **Change access level**
+    * **Manage user**
+    * **Resend invite**
+    * **Remove direct assignments**
+    * **Remove from organization** (deletes user)
 
-     ![Select Users, and then select an item in the context menu](media/manage-users/manage-users-show-context-menu-preview.png)
+      ![Select Users, and then select an item in the context menu](media/manage-users/manage-users-show-context-menu-preview.png)
 
-5. **Save** your changes.
+5.  **Save** your changes.
 
 #### [Current page](#tab/current-page)
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+1.  Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+2.  Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
-3. Select **Users**.
+3.  Select **Users**.
 
-4. Select a user or group of users. Then, select the **...** icon at the end of the **Name** column to open the context menu.
+4.  Select a user or group of users. Then, select the **...** icon at the end of the **Name** column to open the context menu.
 
     In the context menu, select one of the following options:
 
-   * **Change access level**
-   * **Manage user**
-   * **Resend invite**
-   * **Remove direct assignments**
-   * **Remove from organization** (deletes user)
+    * **Change access level**
+    * **Manage user**
+    * **Resend invite**
+    * **Remove direct assignments**
+    * **Remove from organization** (deletes user)
 
-     ![Select Users, and then select an item in the context menu](media/manage-users/manage-users-show-context-menu-vert.png)
+      ![Select Users, and then select an item in the context menu](media/manage-users/manage-users-show-context-menu-vert.png)
 
-5. **Save** your changes.
+5.  **Save** your changes.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
 [Add a user](add-organization-users.md#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](delete-organization-users.md#remove-user) |[Update a user](#update-user) | [Show users](#show-users)
 
-<a id="update-user" /> 
+<a id="update-user" />
 
 ### Update a user
 
-You can update a user's license type with the [az devops user update](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-update) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
+You can update a user's license type with the [az devops user update](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-update) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```CLI
 az devops user update  --license-type {advanced, earlyAdopter, express, professional, stakeholder}
@@ -113,10 +115,9 @@ az devops user update  --license-type {advanced, earlyAdopter, express, professi
 
 #### Parameters
 
-- **license-type**: License type for the user. Accepted values are advanced, earlyAdopter, express, professional, and stakeholder.
-- **user**: The email address or ID of the user.  
-- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-
+* **license-type**: License type for the user. Accepted values are advanced, earlyAdopter, express, professional, and stakeholder.
+* **user**: The email address or ID of the user.
+* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 
 #### Example
 
@@ -131,7 +132,7 @@ ID                                    Display Name         Email                
 35b1952b-ca8c-45b5-a60c-d6b0086aa584  contoso@contoso.com  contoso@contoso.com  stakeholder     Stakeholder     pending
 ```
 
-<a id="show-users" /> 
+<a id="show-users" />
 
 ### Show users
 
@@ -143,9 +144,10 @@ az devops user show --user [--org]
 
 #### Parameters
 
-- **user**: The email address or ID of the user.
-- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-- 
+* **user**: The email address or ID of the user.
+* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+*
+
 #### Example
 
 The following command returns user details for the email address contoso@contoso.com in table format.
@@ -159,9 +161,9 @@ ID                                    Display Name         Email                
 35b1952b-ca8c-45b5-a60c-d6b0086aa584  contoso@contoso.com  contoso@contoso.com  stakeholder     Stakeholder     active
 ```
 
-* * *
+---
 
-#### How is *access* different from *permissions*?
+#### How is _access_ different from _permissions_?
 
 Access levels control which features are available to users. Permissions control a user's access to organization resources. To learn more, see [Default permissions and access](../../organizations/security/permissions-access.md).
 
@@ -172,4 +174,3 @@ Access levels control which features are available to users. Permissions control
 * [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
 * [Delete users from Azure DevOps](delete-organization-users.md)
 * [Export a list of users and their access levels](../security/export-users-audit-log.md)
-

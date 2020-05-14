@@ -15,8 +15,7 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-An individual contributed menu item 
+An individual contributed menu item
 
 ### Members
 
@@ -39,4 +38,3 @@ An individual contributed menu item
 * `groupId`: string. Optional. ID of the menu group that this item should be placed in.
 
 * `action`: (actionContext: any): void. Optional. Method invoked when the menu item is clicked.
-

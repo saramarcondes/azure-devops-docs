@@ -23,4 +23,3 @@ Extends: [TeamSettingsDataContractBase](../../../TFS/Work/Contracts/TeamSettings
 * `field`: [FieldReference](../../../TFS/Work/Contracts/FieldReference.md). Shallow ref to the field being used as a team field
 
 * `values`: [TeamFieldValue](../../../TFS/Work/Contracts/TeamFieldValue.md)[]. Collection of all valid team field values
-

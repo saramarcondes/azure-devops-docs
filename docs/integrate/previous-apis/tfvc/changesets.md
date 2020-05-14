@@ -24,25 +24,27 @@ ms.date: 08/04/2016
 GET https://{instance}/DefaultCollection/_apis/tfvc/changesets?api-version={version}
 ```
 
-| Parameter                    | Type                    | Default | Notes
-|:-----------------------------|:------------------------|:--------|:------------
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
+
+
 | URL
-| instance                     | string                  |         | TFS server name ({server:port}).
+| instance | string | | TFS server name ({server:port}).
 | Query
-| api-version                  | string                  |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| searchCriteria.itemPath      | string                  | $/      | Changesets for the item at this path.
-| searchCriteria.version       | string                  |         | Changesets at this [version](./items.md#getaspecificversion) of the item.
-| searchCriteria.versionType   | string                  | branch  | If the version is specified, the [type of version](./items.md#getaspecificversion) that is used.
-| searchCriteria.versionOption | string                  |         | If the version is specified, an [optional modifier for the version](./items.md#getaspecificversion).
-| searchCriteria.author        | string                  |         | Person who checked in the changeset.<br/>Example: `searchCriteria.author=johnsmith@live.com`.
-| searchCriteria.fromId        | int                     |         | ID of the oldest changeset to return.
-| searchCriteria.toId          | int                     |         | ID of the newest changeset to return.
-| searchCriteria.fromDate      | [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) |         | Date and time of the earliest changeset to return.
-| searchCriteria.toDate        | [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) |         | Date and time of the latest changesets to return.
-| $top                         | int                     | 100     | The maximum number of results to return.
-| $skip                        | int                     | 0       | Number of results to skip.
-| $orderby                     | "id asc" or "id desc"   | id desc | Results are sorted by ID in descending order by default. Use `id asc` to sort by ID in ascending order.
-| maxCommentLength             | int                     | full comment | Return up to this many characters of the comment.
+| api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| searchCriteria.itemPath | string | $/ | Changesets for the item at this path.
+| searchCriteria.version | string | | Changesets at this [version](./items.md#getaspecificversion) of the item.
+| searchCriteria.versionType | string | branch | If the version is specified, the [type of version](./items.md#getaspecificversion) that is used.
+| searchCriteria.versionOption | string | | If the version is specified, an [optional modifier for the version](./items.md#getaspecificversion).
+| searchCriteria.author | string | | Person who checked in the changeset.<br/>Example: `searchCriteria.author=johnsmith@live.com`.
+| searchCriteria.fromId | int | | ID of the oldest changeset to return.
+| searchCriteria.toId | int | | ID of the newest changeset to return.
+| searchCriteria.fromDate | [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) | | Date and time of the earliest changeset to return.
+| searchCriteria.toDate | [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) | | Date and time of the latest changesets to return.
+| $top | int | 100 | The maximum number of results to return.
+| $skip | int | 0 | Number of results to skip.
+| $orderby | "id asc" or "id desc" | id desc | Results are sorted by ID in descending order by default. Use `id asc` to sort by ID in ascending order.
+| maxCommentLength | int | full comment | Return up to this many characters of the comment.
 
 #### Sample request
 
@@ -63,15 +65,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?api-version=1.0
         "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
         "displayName": "Normal Paulk",
         "uniqueName": "fabrikamfiber16@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
       },
       "checkedInBy": {
         "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
         "displayName": "Normal Paulk",
         "uniqueName": "fabrikamfiber16@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
       },
       "createdDate": "2014-05-12T22:41:16.963Z",
       "comment": "Dropping in new Java sample"
@@ -83,15 +89,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?api-version=1.0
         "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
         "displayName": "Normal Paulk",
         "uniqueName": "fabrikamfiber16@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
       },
       "checkedInBy": {
         "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
         "displayName": "Normal Paulk",
         "uniqueName": "fabrikamfiber16@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
       },
       "createdDate": "2014-05-12T22:38:06.613Z",
       "comment": "Initial checkin"
@@ -103,15 +113,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?api-version=1.0
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T20:21:02.727Z"
     },
@@ -122,15 +136,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?api-version=1.0
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T17:37:04.993Z"
     },
@@ -141,15 +159,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?api-version=1.0
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T16:52:10.41Z",
       "comment": "Branched from $/Fabrikam-Fiber-TFVC/AuthSample-dev"
@@ -161,15 +183,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?api-version=1.0
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T16:48:58.047Z",
       "comment": "delete branch"
@@ -181,15 +207,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?api-version=1.0
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T16:46:48.387Z"
     },
@@ -200,15 +230,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?api-version=1.0
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T16:44:36.153Z",
       "comment": "Branched from $/Fabrikam-Fiber-TFVC/AuthSample"
@@ -220,15 +254,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?api-version=1.0
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T16:44:13.297Z",
       "comment": "Branched from $/Fabrikam-Fiber-TFVC/AuthSample"
@@ -240,15 +278,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?api-version=1.0
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-21T19:32:02.213Z",
       "comment": "rename the code folder"
@@ -260,15 +302,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?api-version=1.0
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-21T19:04:03.253Z",
       "comment": "comments"
@@ -280,15 +326,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?api-version=1.0
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-20T22:19:04.647Z",
       "comment": "rename"
@@ -300,15 +350,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?api-version=1.0
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-19T18:16:41.153Z",
       "comment": "Get builds using basic auth"
@@ -320,15 +374,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?api-version=1.0
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-19T17:23:59.697Z",
       "comment": "generated app"
@@ -340,15 +398,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?api-version=1.0
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-01-24T19:20:53.547Z",
       "comment": "Check-in the Lab default template"
@@ -360,15 +422,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?api-version=1.0
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-01-24T19:20:51.963Z",
       "comment": "Checking in new Team Foundation Build Automation files."
@@ -380,18 +446,23 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?api-version=1.0
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-01-24T19:20:46.577Z",
-      "comment": "Created project folder $/Fabrikam-Fiber-TFVC via the Project Creation ",
+      "comment":
+        "Created project folder $/Fabrikam-Fiber-TFVC via the Project Creation ",
       "commentTruncated": true
     },
     {
@@ -399,24 +470,31 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?api-version=1.0
       "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/1",
       "author": {
         "id": "47d25e84-de54-49ce-8f3d-351c77422775",
-        "displayName": "[DefaultCollection]\\Project Collection Service Accounts",
-        "uniqueName": "vstfs:///Framework/Generic/d81542e4-cdfa-4333-b082-1ae2d6c3ad16\\Project Collection Service Accounts",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
+        "displayName":
+          "[DefaultCollection]\\Project Collection Service Accounts",
+        "uniqueName":
+          "vstfs:///Framework/Generic/d81542e4-cdfa-4333-b082-1ae2d6c3ad16\\Project Collection Service Accounts",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
       },
       "checkedInBy": {
         "id": "47d25e84-de54-49ce-8f3d-351c77422775",
-        "displayName": "[DefaultCollection]\\Project Collection Service Accounts",
-        "uniqueName": "vstfs:///Framework/Generic/d81542e4-cdfa-4333-b082-1ae2d6c3ad16\\Project Collection Service Accounts",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
+        "displayName":
+          "[DefaultCollection]\\Project Collection Service Accounts",
+        "uniqueName":
+          "vstfs:///Framework/Generic/d81542e4-cdfa-4333-b082-1ae2d6c3ad16\\Project Collection Service Accounts",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
       },
       "createdDate": "2014-01-24T06:20:55.477Z"
     }
   ]
 }
 ```
-
 
 ### By item path
 
@@ -441,15 +519,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?searchCriteria.i
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-21T19:32:02.213Z",
       "comment": "rename the code folder"
@@ -461,15 +543,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?searchCriteria.i
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-21T19:04:03.253Z",
       "comment": "comments"
@@ -481,15 +567,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?searchCriteria.i
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-20T22:19:04.647Z",
       "comment": "rename"
@@ -501,15 +591,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?searchCriteria.i
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-19T18:16:41.153Z",
       "comment": "Get builds using basic auth"
@@ -521,15 +615,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?searchCriteria.i
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-19T17:23:59.697Z",
       "comment": "generated app"
@@ -537,7 +635,6 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?searchCriteria.i
   ]
 }
 ```
-
 
 ### By person
 
@@ -560,15 +657,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?searchcriteria.a
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T20:21:02.727Z"
     },
@@ -579,15 +680,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?searchcriteria.a
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T17:37:04.993Z"
     },
@@ -598,15 +703,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?searchcriteria.a
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T16:52:10.41Z",
       "comment": "Branched from $/Fabrikam-Fiber-TFVC/AuthSample-dev"
@@ -618,15 +727,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?searchcriteria.a
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T16:48:58.047Z",
       "comment": "delete branch"
@@ -638,15 +751,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?searchcriteria.a
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T16:46:48.387Z"
     },
@@ -657,15 +774,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?searchcriteria.a
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T16:44:36.153Z",
       "comment": "Branched from $/Fabrikam-Fiber-TFVC/AuthSample"
@@ -677,15 +798,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?searchcriteria.a
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T16:44:13.297Z",
       "comment": "Branched from $/Fabrikam-Fiber-TFVC/AuthSample"
@@ -697,15 +822,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?searchcriteria.a
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-21T19:32:02.213Z",
       "comment": "rename the code folder"
@@ -717,15 +846,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?searchcriteria.a
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-21T19:04:03.253Z",
       "comment": "comments"
@@ -737,15 +870,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?searchcriteria.a
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-20T22:19:04.647Z",
       "comment": "rename"
@@ -757,15 +894,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?searchcriteria.a
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-19T18:16:41.153Z",
       "comment": "Get builds using basic auth"
@@ -777,15 +918,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?searchcriteria.a
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-19T17:23:59.697Z",
       "comment": "generated app"
@@ -797,15 +942,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?searchcriteria.a
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-01-24T19:20:53.547Z",
       "comment": "Check-in the Lab default template"
@@ -817,15 +966,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?searchcriteria.a
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-01-24T19:20:51.963Z",
       "comment": "Checking in new Team Foundation Build Automation files."
@@ -837,24 +990,28 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?searchcriteria.a
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-01-24T19:20:46.577Z",
-      "comment": "Created project folder $/Fabrikam-Fiber-TFVC via the Project Creation ",
+      "comment":
+        "Created project folder $/Fabrikam-Fiber-TFVC via the Project Creation ",
       "commentTruncated": true
     }
   ]
 }
 ```
-
 
 ### In a range of IDs
 
@@ -879,15 +1036,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?fromId=2&toId=5&
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-19T17:23:59.697Z",
       "comment": "generated app"
@@ -899,15 +1060,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?fromId=2&toId=5&
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-01-24T19:20:53.547Z",
       "comment": "Check-in the Lab default template"
@@ -919,15 +1084,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?fromId=2&toId=5&
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-01-24T19:20:51.963Z",
       "comment": "Checking in new Team Foundation Build Automation files."
@@ -939,26 +1108,31 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?fromId=2&toId=5&
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-01-24T19:20:46.577Z",
-      "comment": "Created project folder $/Fabrikam-Fiber-TFVC via the Project Creation ",
+      "comment":
+        "Created project folder $/Fabrikam-Fiber-TFVC via the Project Creation ",
       "commentTruncated": true
     }
   ]
 }
 ```
 
-
 ### In a date range
+
 <a name="inadaterange" />
 
 #### Sample request
@@ -980,15 +1154,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?fromDate=01-01-2
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-01-24T19:20:53.547Z",
       "comment": "Check-in the Lab default template"
@@ -1000,15 +1178,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?fromDate=01-01-2
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-01-24T19:20:51.963Z",
       "comment": "Checking in new Team Foundation Build Automation files."
@@ -1020,18 +1202,23 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?fromDate=01-01-2
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-01-24T19:20:46.577Z",
-      "comment": "Created project folder $/Fabrikam-Fiber-TFVC via the Project Creation ",
+      "comment":
+        "Created project folder $/Fabrikam-Fiber-TFVC via the Project Creation ",
       "commentTruncated": true
     },
     {
@@ -1039,17 +1226,25 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?fromDate=01-01-2
       "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/1",
       "author": {
         "id": "47d25e84-de54-49ce-8f3d-351c77422775",
-        "displayName": "[DefaultCollection]\\Project Collection Service Accounts",
-        "uniqueName": "vstfs:///Framework/Generic/d81542e4-cdfa-4333-b082-1ae2d6c3ad16\\Project Collection Service Accounts",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
+        "displayName":
+          "[DefaultCollection]\\Project Collection Service Accounts",
+        "uniqueName":
+          "vstfs:///Framework/Generic/d81542e4-cdfa-4333-b082-1ae2d6c3ad16\\Project Collection Service Accounts",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
       },
       "checkedInBy": {
         "id": "47d25e84-de54-49ce-8f3d-351c77422775",
-        "displayName": "[DefaultCollection]\\Project Collection Service Accounts",
-        "uniqueName": "vstfs:///Framework/Generic/d81542e4-cdfa-4333-b082-1ae2d6c3ad16\\Project Collection Service Accounts",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
+        "displayName":
+          "[DefaultCollection]\\Project Collection Service Accounts",
+        "uniqueName":
+          "vstfs:///Framework/Generic/d81542e4-cdfa-4333-b082-1ae2d6c3ad16\\Project Collection Service Accounts",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
       },
       "createdDate": "2014-01-24T06:20:55.477Z"
     }
@@ -1057,8 +1252,8 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?fromDate=01-01-2
 }
 ```
 
-
 ### A page at a time
+
 <a name="apageatatime" />
 
 #### Sample request
@@ -1080,15 +1275,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?$top=2&$skip=2&a
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T20:21:02.727Z"
     },
@@ -1099,22 +1298,25 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?$top=2&$skip=2&a
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T17:37:04.993Z"
     }
   ]
 }
 ```
-
 
 ### Sorted
 
@@ -1135,17 +1337,25 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?$orderBy=id asc&
       "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/1",
       "author": {
         "id": "47d25e84-de54-49ce-8f3d-351c77422775",
-        "displayName": "[DefaultCollection]\\Project Collection Service Accounts",
-        "uniqueName": "vstfs:///Framework/Generic/d81542e4-cdfa-4333-b082-1ae2d6c3ad16\\Project Collection Service Accounts",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
+        "displayName":
+          "[DefaultCollection]\\Project Collection Service Accounts",
+        "uniqueName":
+          "vstfs:///Framework/Generic/d81542e4-cdfa-4333-b082-1ae2d6c3ad16\\Project Collection Service Accounts",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
       },
       "checkedInBy": {
         "id": "47d25e84-de54-49ce-8f3d-351c77422775",
-        "displayName": "[DefaultCollection]\\Project Collection Service Accounts",
-        "uniqueName": "vstfs:///Framework/Generic/d81542e4-cdfa-4333-b082-1ae2d6c3ad16\\Project Collection Service Accounts",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
+        "displayName":
+          "[DefaultCollection]\\Project Collection Service Accounts",
+        "uniqueName":
+          "vstfs:///Framework/Generic/d81542e4-cdfa-4333-b082-1ae2d6c3ad16\\Project Collection Service Accounts",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
       },
       "createdDate": "2014-01-24T06:20:55.477Z"
     },
@@ -1156,18 +1366,23 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?$orderBy=id asc&
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-01-24T19:20:46.577Z",
-      "comment": "Created project folder $/Fabrikam-Fiber-TFVC via the Project Creation ",
+      "comment":
+        "Created project folder $/Fabrikam-Fiber-TFVC via the Project Creation ",
       "commentTruncated": true
     },
     {
@@ -1177,15 +1392,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?$orderBy=id asc&
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-01-24T19:20:51.963Z",
       "comment": "Checking in new Team Foundation Build Automation files."
@@ -1197,15 +1416,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?$orderBy=id asc&
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-01-24T19:20:53.547Z",
       "comment": "Check-in the Lab default template"
@@ -1217,15 +1440,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?$orderBy=id asc&
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-19T17:23:59.697Z",
       "comment": "generated app"
@@ -1237,15 +1464,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?$orderBy=id asc&
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-19T18:16:41.153Z",
       "comment": "Get builds using basic auth"
@@ -1257,15 +1488,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?$orderBy=id asc&
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-20T22:19:04.647Z",
       "comment": "rename"
@@ -1277,15 +1512,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?$orderBy=id asc&
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-21T19:04:03.253Z",
       "comment": "comments"
@@ -1297,15 +1536,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?$orderBy=id asc&
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-21T19:32:02.213Z",
       "comment": "rename the code folder"
@@ -1317,15 +1560,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?$orderBy=id asc&
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T16:44:13.297Z",
       "comment": "Branched from $/Fabrikam-Fiber-TFVC/AuthSample"
@@ -1337,15 +1584,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?$orderBy=id asc&
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T16:44:36.153Z",
       "comment": "Branched from $/Fabrikam-Fiber-TFVC/AuthSample"
@@ -1357,15 +1608,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?$orderBy=id asc&
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T16:46:48.387Z"
     },
@@ -1376,15 +1631,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?$orderBy=id asc&
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T16:48:58.047Z",
       "comment": "delete branch"
@@ -1396,15 +1655,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?$orderBy=id asc&
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T16:52:10.41Z",
       "comment": "Branched from $/Fabrikam-Fiber-TFVC/AuthSample-dev"
@@ -1416,15 +1679,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?$orderBy=id asc&
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T17:37:04.993Z"
     },
@@ -1435,15 +1702,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?$orderBy=id asc&
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T20:21:02.727Z"
     },
@@ -1454,15 +1725,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?$orderBy=id asc&
         "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
         "displayName": "Normal Paulk",
         "uniqueName": "fabrikamfiber16@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
       },
       "checkedInBy": {
         "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
         "displayName": "Normal Paulk",
         "uniqueName": "fabrikamfiber16@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
       },
       "createdDate": "2014-05-12T22:38:06.613Z",
       "comment": "Initial checkin"
@@ -1474,15 +1749,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?$orderBy=id asc&
         "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
         "displayName": "Normal Paulk",
         "uniqueName": "fabrikamfiber16@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
       },
       "checkedInBy": {
         "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
         "displayName": "Normal Paulk",
         "uniqueName": "fabrikamfiber16@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
       },
       "createdDate": "2014-05-12T22:41:16.963Z",
       "comment": "Dropping in new Java sample"
@@ -1490,7 +1769,6 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?$orderBy=id asc&
   ]
 }
 ```
-
 
 ### With more or less of each comment
 
@@ -1515,15 +1793,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?maxCommentLength
         "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
         "displayName": "Normal Paulk",
         "uniqueName": "fabrikamfiber16@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
       },
       "checkedInBy": {
         "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
         "displayName": "Normal Paulk",
         "uniqueName": "fabrikamfiber16@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
       },
       "createdDate": "2014-05-12T22:41:16.963Z",
       "comment": "Dropping i",
@@ -1536,15 +1818,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?maxCommentLength
         "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
         "displayName": "Normal Paulk",
         "uniqueName": "fabrikamfiber16@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
       },
       "checkedInBy": {
         "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
         "displayName": "Normal Paulk",
         "uniqueName": "fabrikamfiber16@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
       },
       "createdDate": "2014-05-12T22:38:06.613Z",
       "comment": "Initial ch",
@@ -1557,15 +1843,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?maxCommentLength
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T20:21:02.727Z"
     },
@@ -1576,15 +1866,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?maxCommentLength
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T17:37:04.993Z"
     },
@@ -1595,15 +1889,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?maxCommentLength
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T16:52:10.41Z",
       "comment": "Branched f",
@@ -1616,15 +1914,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?maxCommentLength
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T16:48:58.047Z",
       "comment": "delete bra",
@@ -1637,15 +1939,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?maxCommentLength
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T16:46:48.387Z"
     },
@@ -1656,15 +1962,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?maxCommentLength
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T16:44:36.153Z",
       "comment": "Branched f",
@@ -1677,15 +1987,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?maxCommentLength
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-24T16:44:13.297Z",
       "comment": "Branched f",
@@ -1698,15 +2012,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?maxCommentLength
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-21T19:32:02.213Z",
       "comment": "rename the",
@@ -1719,15 +2037,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?maxCommentLength
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-21T19:04:03.253Z",
       "comment": "comments"
@@ -1739,15 +2061,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?maxCommentLength
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-20T22:19:04.647Z",
       "comment": "rename"
@@ -1759,15 +2085,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?maxCommentLength
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-19T18:16:41.153Z",
       "comment": "Get builds",
@@ -1780,15 +2110,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?maxCommentLength
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-19T17:23:59.697Z",
       "comment": "generated ",
@@ -1801,15 +2135,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?maxCommentLength
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-01-24T19:20:53.547Z",
       "comment": "Check-in t",
@@ -1822,15 +2160,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?maxCommentLength
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-01-24T19:20:51.963Z",
       "comment": "Checking i",
@@ -1843,15 +2185,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?maxCommentLength
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-01-24T19:20:46.577Z",
       "comment": "Created te",
@@ -1862,17 +2208,25 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?maxCommentLength
       "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/1",
       "author": {
         "id": "47d25e84-de54-49ce-8f3d-351c77422775",
-        "displayName": "[DefaultCollection]\\Project Collection Service Accounts",
-        "uniqueName": "vstfs:///Framework/Generic/d81542e4-cdfa-4333-b082-1ae2d6c3ad16\\Project Collection Service Accounts",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
+        "displayName":
+          "[DefaultCollection]\\Project Collection Service Accounts",
+        "uniqueName":
+          "vstfs:///Framework/Generic/d81542e4-cdfa-4333-b082-1ae2d6c3ad16\\Project Collection Service Accounts",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
       },
       "checkedInBy": {
         "id": "47d25e84-de54-49ce-8f3d-351c77422775",
-        "displayName": "[DefaultCollection]\\Project Collection Service Accounts",
-        "uniqueName": "vstfs:///Framework/Generic/d81542e4-cdfa-4333-b082-1ae2d6c3ad16\\Project Collection Service Accounts",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
+        "displayName":
+          "[DefaultCollection]\\Project Collection Service Accounts",
+        "uniqueName":
+          "vstfs:///Framework/Generic/d81542e4-cdfa-4333-b082-1ae2d6c3ad16\\Project Collection Service Accounts",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
       },
       "createdDate": "2014-01-24T06:20:55.477Z"
     }
@@ -1880,35 +2234,31 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets?maxCommentLength
 }
 ```
 
-
 ### By a list of IDs
+
 Retrieves representations for all items given a list of paths.
- 
-| Parameter        | Type   | Default | Notes
-|:-----------------|:-------|:--------|------------
+
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | ----- |
+
+
 | URL
-| instance         | string |         | TFS server name ({server:port}).
+| instance | string | | TFS server name ({server:port}).
 | Query
-| api-version      | string |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
-| changesetIds     | array  |         | List of changeset IDs.
-| maxCommentLength | int    | 80      | Return up to this many characters of the comment.<br/>When not specified, the full comment is returned.
+| changesetIds | array | | List of changeset IDs.
+| maxCommentLength | int | 80 | Return up to this many characters of the comment.<br/>When not specified, the full comment is returned.
 
 #### Sample request
 
 ```
 POST https://mytfsserver/DefaultCollection/_apis/tfvc/changesetsBatch?api-version=1.0
 ```
+
 ```json
 {
-  "changesetIds": [
-    1,
-    3,
-    6,
-    1,
-    3,
-    6
-  ],
+  "changesetIds": [1, 3, 6, 1, 3, 6],
   "commentLength": 90
 }
 ```
@@ -1924,17 +2274,25 @@ POST https://mytfsserver/DefaultCollection/_apis/tfvc/changesetsBatch?api-versio
       "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/1",
       "author": {
         "id": "47d25e84-de54-49ce-8f3d-351c77422775",
-        "displayName": "[DefaultCollection]\\Project Collection Service Accounts",
-        "uniqueName": "vstfs:///Framework/Generic/d81542e4-cdfa-4333-b082-1ae2d6c3ad16\\Project Collection Service Accounts",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
+        "displayName":
+          "[DefaultCollection]\\Project Collection Service Accounts",
+        "uniqueName":
+          "vstfs:///Framework/Generic/d81542e4-cdfa-4333-b082-1ae2d6c3ad16\\Project Collection Service Accounts",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
       },
       "checkedInBy": {
         "id": "47d25e84-de54-49ce-8f3d-351c77422775",
-        "displayName": "[DefaultCollection]\\Project Collection Service Accounts",
-        "uniqueName": "vstfs:///Framework/Generic/d81542e4-cdfa-4333-b082-1ae2d6c3ad16\\Project Collection Service Accounts",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
+        "displayName":
+          "[DefaultCollection]\\Project Collection Service Accounts",
+        "uniqueName":
+          "vstfs:///Framework/Generic/d81542e4-cdfa-4333-b082-1ae2d6c3ad16\\Project Collection Service Accounts",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
       },
       "createdDate": "2014-01-24T06:20:55.477Z"
     },
@@ -1945,15 +2303,19 @@ POST https://mytfsserver/DefaultCollection/_apis/tfvc/changesetsBatch?api-versio
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-01-24T19:20:51.963Z",
       "comment": "Checking in new Team Foundation Build Automation files."
@@ -1965,15 +2327,19 @@ POST https://mytfsserver/DefaultCollection/_apis/tfvc/changesetsBatch?api-versio
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-19T18:16:41.153Z",
       "comment": "Get builds using basic auth"
@@ -1983,17 +2349,25 @@ POST https://mytfsserver/DefaultCollection/_apis/tfvc/changesetsBatch?api-versio
       "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/1",
       "author": {
         "id": "47d25e84-de54-49ce-8f3d-351c77422775",
-        "displayName": "[DefaultCollection]\\Project Collection Service Accounts",
-        "uniqueName": "vstfs:///Framework/Generic/d81542e4-cdfa-4333-b082-1ae2d6c3ad16\\Project Collection Service Accounts",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
+        "displayName":
+          "[DefaultCollection]\\Project Collection Service Accounts",
+        "uniqueName":
+          "vstfs:///Framework/Generic/d81542e4-cdfa-4333-b082-1ae2d6c3ad16\\Project Collection Service Accounts",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
       },
       "checkedInBy": {
         "id": "47d25e84-de54-49ce-8f3d-351c77422775",
-        "displayName": "[DefaultCollection]\\Project Collection Service Accounts",
-        "uniqueName": "vstfs:///Framework/Generic/d81542e4-cdfa-4333-b082-1ae2d6c3ad16\\Project Collection Service Accounts",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
+        "displayName":
+          "[DefaultCollection]\\Project Collection Service Accounts",
+        "uniqueName":
+          "vstfs:///Framework/Generic/d81542e4-cdfa-4333-b082-1ae2d6c3ad16\\Project Collection Service Accounts",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
       },
       "createdDate": "2014-01-24T06:20:55.477Z"
     },
@@ -2004,15 +2378,19 @@ POST https://mytfsserver/DefaultCollection/_apis/tfvc/changesetsBatch?api-versio
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-01-24T19:20:51.963Z",
       "comment": "Checking in new Team Foundation Build Automation files."
@@ -2024,15 +2402,19 @@ POST https://mytfsserver/DefaultCollection/_apis/tfvc/changesetsBatch?api-versio
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "checkedInBy": {
         "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
         "displayName": "Chuck Reinhart",
         "uniqueName": "fabrikamfiber3@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
       },
       "createdDate": "2014-03-19T18:16:41.153Z",
       "comment": "Get builds using basic auth"
@@ -2041,24 +2423,25 @@ POST https://mytfsserver/DefaultCollection/_apis/tfvc/changesetsBatch?api-versio
 }
 ```
 
-
 ## Get a changeset
 
 ```no-highlight
 GET https://{instance}/DefaultCollection/_apis/tfvc/changesets/{id}?api-version={version}[&includeDetails={Boolean}&includeWorkItems={Boolean}&includeSourceRenames={Boolean}&maxChangeCount={int}&maxCommentLength={int}]
 ```
 
-| Parameter            | Type   | Default | Notes
-|:---------------------|:-------|:--------|:---------------------------
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
+
+
 | URL
-| instance             | string |         | TFS server name ({server:port}).
-| id                   | int    |         | ID of the changeset.
+| instance | string | | TFS server name ({server:port}).
+| id | int | | ID of the changeset.
 | Query
-| api-version          | string |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| includeDetails       | bool   | false   | Include policy details and check-in notes in the response.
-| includeWorkItems     | bool   | false   | Include details about associated work items in the response.
-| maxChangeCount       | int    | 0       | Number of changes to return (maximum 100 changes)
-| maxCommentLength     | int    | 2000    | Maximum number of characters of the comment to return.
+| api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| includeDetails | bool | false | Include policy details and check-in notes in the response.
+| includeWorkItems | bool | false | Include details about associated work items in the response.
+| maxChangeCount | int | 0 | Number of changes to return (maximum 100 changes)
+| maxCommentLength | int | 2000 | Maximum number of characters of the comment to return.
 
 #### Sample request
 
@@ -2076,15 +2459,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16?api-version=1
     "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
     "displayName": "Chuck Reinhart",
     "uniqueName": "fabrikamfiber3@hotmail.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
   },
   "checkedInBy": {
     "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
     "displayName": "Chuck Reinhart",
     "uniqueName": "fabrikamfiber3@hotmail.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
   },
   "createdDate": "2014-03-24T20:21:02.727Z",
   "_links": {
@@ -2092,25 +2479,28 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16?api-version=1
       "href": "https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16"
     },
     "changes": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16/changes"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16/changes"
     },
     "workItems": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16/workItems"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16/workItems"
     },
     "author": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
     },
     "checkedInBy": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
     }
   }
 }
 ```
 
-
 ### With policy details and check-in notes
-<a name="withpolicydetailsandcheck-innotes" />
 
+<a name="withpolicydetailsandcheck-innotes" />
 
 #### Sample request
 
@@ -2132,15 +2522,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16?includeDetail
     "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
     "displayName": "Chuck Reinhart",
     "uniqueName": "fabrikamfiber3@hotmail.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
   },
   "checkedInBy": {
     "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
     "displayName": "Chuck Reinhart",
     "uniqueName": "fabrikamfiber3@hotmail.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
   },
   "createdDate": "2014-03-24T20:21:02.727Z",
   "_links": {
@@ -2148,23 +2542,27 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16?includeDetail
       "href": "https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16"
     },
     "changes": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16/changes"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16/changes"
     },
     "workItems": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16/workItems"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16/workItems"
     },
     "author": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
     },
     "checkedInBy": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
     }
   }
 }
 ```
 
-
 ### With work items
+
 <a name="withworkitems" />
 
 #### Sample request
@@ -2184,15 +2582,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16?includeWorkIt
     "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
     "displayName": "Chuck Reinhart",
     "uniqueName": "fabrikamfiber3@hotmail.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
   },
   "checkedInBy": {
     "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
     "displayName": "Chuck Reinhart",
     "uniqueName": "fabrikamfiber3@hotmail.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
   },
   "createdDate": "2014-03-24T20:21:02.727Z",
   "_links": {
@@ -2200,23 +2602,27 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16?includeWorkIt
       "href": "https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16"
     },
     "changes": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16/changes"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16/changes"
     },
     "workItems": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16/workItems"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16/workItems"
     },
     "author": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
     },
     "checkedInBy": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
     }
   }
 }
 ```
 
-
 ### With changes
+
 <a name="withallchanges" />
 
 #### Sample request
@@ -2234,7 +2640,8 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16?maxChangeCoun
       "item": {
         "version": 16,
         "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.cs",
-        "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.cs?versionType=Changeset&version=16"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.cs?versionType=Changeset&version=16"
       },
       "changeType": "edit"
     }
@@ -2245,15 +2652,19 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16?maxChangeCoun
     "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
     "displayName": "Chuck Reinhart",
     "uniqueName": "fabrikamfiber3@hotmail.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
   },
   "checkedInBy": {
     "id": "8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
     "displayName": "Chuck Reinhart",
     "uniqueName": "fabrikamfiber3@hotmail.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
   },
   "createdDate": "2014-03-24T20:21:02.727Z",
   "_links": {
@@ -2261,21 +2672,24 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16?maxChangeCoun
       "href": "https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16"
     },
     "changes": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16/changes"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16/changes"
     },
     "workItems": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16/workItems"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16/workItems"
     },
     "author": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
     },
     "checkedInBy": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/Identities/8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
     }
   }
 }
 ```
-
 
 ## Get list of changes in a changeset
 
@@ -2283,16 +2697,18 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16?maxChangeCoun
 GET https://{instance}/DefaultColletion/_apis/tfvc/changesets/{id}/changes?api-version={version}[&$skip={int}&$top={int}]
 ```
 
-| Parameter | Type   | Default | Notes
-|:----------|:-------|:--------|----------------------------------------
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | ----- |
+
+
 | URL
-| instance  | string |         | TFS server name ({server:port}).
-| id        | int    |         | ID of the changeset.
+| instance | string | | TFS server name ({server:port}).
+| id | int | | ID of the changeset.
 | Query
 | Query
-| api-version | string |       | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| $top      | int    | 100     | Maximum number of changes to return.
-| $skip     | int    | 0       | Number of changes to skip.
+| api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| $top | int | 100 | Maximum number of changes to return.
+| $skip | int | 0 | Number of changes to skip.
 
 If there are more changes than the specified top value, the json contains an additional boolean field "hasMoreChanges"
 
@@ -2312,7 +2728,8 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16/changes?api-v
       "item": {
         "version": 16,
         "path": "$/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.cs",
-        "url": "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.cs?versionType=Changeset&version=16"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/tfvc/items/%24/Fabrikam-Fiber-TFVC/AuthSample-dev/Code/AuthSample.cs?versionType=Changeset&version=16"
       },
       "changeType": "edit"
     }
@@ -2320,23 +2737,26 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16/changes?api-v
 }
 ```
 
-
 ## Get list of associated work items
+
 Retrieves the work items associated with a particular changeset
 
 ```no-highlight
 GET /tfvc/changesets/{id}/workitems?api-version={version}
 ```
-| Parameter | Type   | Default | Notes
-|:----------|:-------|:--------|----------------------------------------
+
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | ----- |
+
+
 | URL
-| instance  | string |         | TFS server name ({server:port}).
-| id        | int    |         | ID of the changeset.
+| instance | string | | TFS server name ({server:port}).
+| id | int | | ID of the changeset.
 | Query
 | Query
-| api-version | string |       | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| $top      | int    | 100     | Maximum number of work items to return.
-| $skip     | int    | 0       | Number of work items to skip.
+| api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| $top | int | 100 | Maximum number of work items to return.
+| $skip | int | 0 | Number of work items to skip.
 
 #### Sample request
 
@@ -2352,5 +2772,3 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16/workitems?api
   "value": []
 }
 ```
-
-

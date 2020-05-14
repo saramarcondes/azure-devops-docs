@@ -22,21 +22,24 @@ ms.date: 08/04/2016
   * [Release deployment started](#ms.vss-release.deployment-started-event)
 
 ::: moniker range="azure-devops"
+
 * Pipelines
+
   * [Run state changed](#run.statechanged)
-  *	[Run stage state changed](#run.stagestatechanged)
+  * [Run stage state changed](#run.stagestatechanged)
   * [Run stage waiting for approval](#run.stageapprovalpending)
   * [Run stage approval completed](#run.stageapprovalcompleted)
-::: moniker-end
+    ::: moniker-end
 
 * Code
+
   * [Code checked in](#tfvc.checkin)
   * [Code pushed](#git.push)
   * [Pull request created](#git.pullrequest.created)
   * [Pull request merge commit created](#git.pullrequest.merged)
   * [Pull request updated](#git.pullrequest.updated)
 
-* Work item 
+* Work item
   * [Work item commented on](#workitem.commented)
   * [Work item created](#workitem.created)
   * [Work item deleted](#workitem.deleted)
@@ -53,6 +56,7 @@ Deprecated event types:
 ## Build and release
 
 <a name="build.complete"></a>
+
 ### Build completed
 
 A build completes
@@ -61,15 +65,17 @@ A build completes
 * Event ID: `build.complete`
 
 #### Settings
- * `definitionName`: Filter events to include only completed builds for the specified pipeline
- * `buildStatus`: Filter events to include only completed builds for the specified completion status
-   * Valid values: 
-      * `Succeeded` 
-      * `PartiallySucceeded` 
-      * `Failed` 
-      * `Stopped` 
+
+* `definitionName`: Filter events to include only completed builds for the specified pipeline
+* `buildStatus`: Filter events to include only completed builds for the specified completion status
+  * Valid values:
+    * `Succeeded`
+    * `PartiallySucceeded`
+    * `Failed`
+    * `Stopped`
 
 #### Sample payload
+
 ```json
 {
   "id": "4a5d99d6-1c75-4e53-91b9-ee80057d4ce3",
@@ -78,19 +84,24 @@ A build completes
   "scope": "all",
   "message": {
     "text": "Build ConsumerAddressModule_20150407.2 succeeded",
-    "html": "Build <a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/build.aspx?pcguid=5023c10b-bef3-41c3-bf53-686c4e34ee9e&amp;builduri=vstfs%3a%2f%2f%2fBuild%2fBuild%2f3\">ConsumerAddressModule_20150407.2</a> succeeded",
-    "markdown": "Build [ConsumerAddressModule_20150407.2](https://dev.azure.com/fabrikam-fiber-inc/web/build.aspx?pcguid=5023c10b-bef3-41c3-bf53-686c4e34ee9e&builduri=vstfs%3a%2f%2f%2fBuild%2fBuild%2f3) succeeded"
+    "html":
+      "Build <a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/build.aspx?pcguid=5023c10b-bef3-41c3-bf53-686c4e34ee9e&amp;builduri=vstfs%3a%2f%2f%2fBuild%2fBuild%2f3\">ConsumerAddressModule_20150407.2</a> succeeded",
+    "markdown":
+      "Build [ConsumerAddressModule_20150407.2](https://dev.azure.com/fabrikam-fiber-inc/web/build.aspx?pcguid=5023c10b-bef3-41c3-bf53-686c4e34ee9e&builduri=vstfs%3a%2f%2f%2fBuild%2fBuild%2f3) succeeded"
   },
   "detailedMessage": {
     "text": "Build ConsumerAddressModule_20150407.2 succeeded",
-    "html": "Build <a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/build.aspx?pcguid=5023c10b-bef3-41c3-bf53-686c4e34ee9e&amp;builduri=vstfs%3a%2f%2f%2fBuild%2fBuild%2f3\">ConsumerAddressModule_20150407.2</a> succeeded",
-    "markdown": "Build [ConsumerAddressModule_20150407.2](https://dev.azure.com/fabrikam-fiber-inc/web/build.aspx?pcguid=5023c10b-bef3-41c3-bf53-686c4e34ee9e&builduri=vstfs%3a%2f%2f%2fBuild%2fBuild%2f3) succeeded"
+    "html":
+      "Build <a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/build.aspx?pcguid=5023c10b-bef3-41c3-bf53-686c4e34ee9e&amp;builduri=vstfs%3a%2f%2f%2fBuild%2fBuild%2f3\">ConsumerAddressModule_20150407.2</a> succeeded",
+    "markdown":
+      "Build [ConsumerAddressModule_20150407.2](https://dev.azure.com/fabrikam-fiber-inc/web/build.aspx?pcguid=5023c10b-bef3-41c3-bf53-686c4e34ee9e&builduri=vstfs%3a%2f%2f%2fBuild%2fBuild%2f3) succeeded"
   },
   "resource": {
     "uri": "vstfs:///Build/Build/2",
     "id": 2,
     "buildNumber": "ConsumerAddressModule_20150407.1",
-    "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/71777fbc-1cf2-4bd1-9540-128c1c71f766/_apis/build-release/Builds/2",
+    "url":
+      "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/71777fbc-1cf2-4bd1-9540-128c1c71f766/_apis/build-release/Builds/2",
     "startTime": "2015-04-07T18:04:06.83Z",
     "finishTime": "2015-04-07T18:06:10.69Z",
     "reason": "manual",
@@ -99,21 +110,28 @@ A build completes
     "drop": {
       "location": "#/3/drop",
       "type": "container",
-      "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/resources/Containers/3/drop",
-      "downloadUrl": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/resources/Containers/3/drop?api-version=1.0&$format=zip&downloadFileName=ConsumerAddressModule_20150407.1_drop"
+      "url":
+        "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/resources/Containers/3/drop",
+      "downloadUrl":
+        "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/resources/Containers/3/drop?api-version=1.0&$format=zip&downloadFileName=ConsumerAddressModule_20150407.1_drop"
     },
     "log": {
       "type": "container",
-      "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/resources/Containers/3/logs",
-      "downloadUrl": "https://dev.azure.com/fabrikam-fiber-inc/_apis/resources/Containers/3/logs?api-version=1.0&$format=zip&downloadFileName=ConsumerAddressModule_20150407.1_logs"
+      "url":
+        "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/resources/Containers/3/logs",
+      "downloadUrl":
+        "https://dev.azure.com/fabrikam-fiber-inc/_apis/resources/Containers/3/logs?api-version=1.0&$format=zip&downloadFileName=ConsumerAddressModule_20150407.1_logs"
     },
-    "sourceGetVersion": "LG:refs/heads/master:600c52d2d5b655caa111abfd863e5a9bd304bb0e",
+    "sourceGetVersion":
+      "LG:refs/heads/master:600c52d2d5b655caa111abfd863e5a9bd304bb0e",
     "lastChangedBy": {
       "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
       "displayName": "Normal Paulk",
       "uniqueName": "fabrikamfiber16@hotmail.com",
-      "url": "https://dev.azure.com/fabrikam-fiber-inc/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-      "imageUrl": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+      "url":
+        "https://dev.azure.com/fabrikam-fiber-inc/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+      "imageUrl":
+        "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
     },
     "retainIndefinitely": false,
     "hasDiagnostics": true,
@@ -123,24 +141,29 @@ A build completes
       "definitionType": "xaml",
       "id": 2,
       "name": "ConsumerAddressModule",
-      "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/71777fbc-1cf2-4bd1-9540-128c1c71f766/_apis/build-release/Definitions/2"
+      "url":
+        "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/71777fbc-1cf2-4bd1-9540-128c1c71f766/_apis/build-release/Definitions/2"
     },
     "queue": {
       "queueType": "buildController",
       "id": 4,
       "name": "Hosted Build Controller",
-      "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/build-release/Queues/4"
+      "url":
+        "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/build-release/Queues/4"
     },
     "requests": [
       {
         "id": 1,
-        "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/71777fbc-1cf2-4bd1-9540-128c1c71f766/_apis/build-release/Requests/1",
+        "url":
+          "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/71777fbc-1cf2-4bd1-9540-128c1c71f766/_apis/build-release/Requests/1",
         "requestedFor": {
           "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
           "displayName": "Normal Paulk",
           "uniqueName": "fabrikamfiber16@hotmail.com",
-          "url": "https://dev.azure.com/fabrikam-fiber-inc/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-          "imageUrl": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+          "url":
+            "https://dev.azure.com/fabrikam-fiber-inc/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+          "imageUrl":
+            "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
         }
       }
     ]
@@ -162,6 +185,7 @@ A build completes
 ```
 
 <a name="ms.vss-release.release-abandoned-event"></a>
+
 ### Release abandoned
 
 A release was abandoned
@@ -170,9 +194,11 @@ A release was abandoned
 * Event ID: `ms.vss-release.release-abandoned-event`
 
 #### Settings
- * `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
+
+* `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
 
 #### Sample payload
+
 ```json
 {
   "id": "b0497ad3-50c9-4722-96da-a8fa5b80d77f",
@@ -181,13 +207,18 @@ A release was abandoned
   "scope": "all",
   "message": {
     "text": "Release Release-1 abandoned.",
-    "html": "Release <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5'>Release-1</a> abandoned.",
-    "markdown": "Release [Release-1](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5) abandoned."
+    "html":
+      "Release <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5'>Release-1</a> abandoned.",
+    "markdown":
+      "Release [Release-1](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5) abandoned."
   },
   "detailedMessage": {
-    "text": "Release Release-1 from release pipeline Fabrikam.CD abandoned.\\r\\nRelease description: QFE release for fixing title\\r\\nContinuousIntegration Requested for Chuck Reinhart\\r\\n<li>Build: fabrikam.Bd.2016.04.10 & 2 more<\\li>",
-    "html": "Release <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5'>Release-1</a> from <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releasedefinitions/1'>Fabrikam.CD</a> release pipeline abandoned.\\r\\n<li>Release description: QFE release for fixing title</li>\\r\\n<li>ContinuousIntegration Requested for Chuck Reinhart</li>\\r\\n<li>Build: fabrikam.Bd.2016.04.10 & 2 more <\\li>",
-    "markdown": "Release [Release-1](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5) from release pipeline [Fabrikam.CD](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releasedefinitions/1) abandoned.\\r\\n<li>Release description: QFE release for fixing title</li>\\r\\n<li>ContinuousIntegration Requested for Chuck Reinhart</li>\\r\\n<li>Build: fabrikam.Bd.2016.04.10 & 2 more<\\li>"
+    "text":
+      "Release Release-1 from release pipeline Fabrikam.CD abandoned.\\r\\nRelease description: QFE release for fixing title\\r\\nContinuousIntegration Requested for Chuck Reinhart\\r\\n<li>Build: fabrikam.Bd.2016.04.10 & 2 more<\\li>",
+    "html":
+      "Release <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5'>Release-1</a> from <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releasedefinitions/1'>Fabrikam.CD</a> release pipeline abandoned.\\r\\n<li>Release description: QFE release for fixing title</li>\\r\\n<li>ContinuousIntegration Requested for Chuck Reinhart</li>\\r\\n<li>Build: fabrikam.Bd.2016.04.10 & 2 more <\\li>",
+    "markdown":
+      "Release [Release-1](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5) from release pipeline [Fabrikam.CD](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releasedefinitions/1) abandoned.\\r\\n<li>Release description: QFE release for fixing title</li>\\r\\n<li>ContinuousIntegration Requested for Chuck Reinhart</li>\\r\\n<li>Build: fabrikam.Bd.2016.04.10 & 2 more<\\li>"
   },
   "resource": {
     "release": {
@@ -266,7 +297,8 @@ A release was abandoned
           "release": {
             "id": 5,
             "name": "Release-1",
-            "url": "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5"
+            "url":
+              "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5"
           }
         }
       ],
@@ -292,7 +324,8 @@ A release was abandoned
       "releaseDefinition": {
         "id": 1,
         "name": "Fabrikam.CD",
-        "url": "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1"
+        "url":
+          "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1"
       },
       "description": "QFE release for fixing title",
       "reason": "continuousIntegration",
@@ -322,6 +355,7 @@ A release was abandoned
 ```
 
 <a name="ms.vss-release.release-created-event"></a>
+
 ### Release created
 
 A release was created
@@ -330,9 +364,11 @@ A release was created
 * Event ID: `ms.vss-release.release-created-event`
 
 #### Settings
- * `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
+
+* `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
 
 #### Sample payload
+
 ```json
 {
   "id": "d4d69db4-18d4-413e-bc43-07f56b531160",
@@ -341,13 +377,18 @@ A release was created
   "scope": "all",
   "message": {
     "text": "Release Release-1 created.",
-    "html": "<a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5'>Release-1</a> created.",
-    "markdown": "Release [Release-1](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5) created."
+    "html":
+      "<a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5'>Release-1</a> created.",
+    "markdown":
+      "Release [Release-1](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5) created."
   },
   "detailedMessage": {
-    "text": "Release Release-1 created from release pipeline Fabrikam.CD.\\r\\nRelease description: QFE release for fixing title\\r\\nContinuousIntegration Requested for Chuck Reinhart\\r\\n<li>Build: fabrikam.Bd.2016.04.10 & 2 more<\\li>",
-    "html": "Release <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5'>Release-1</a> created from release pipeline <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releasedefinitions/1'>Fabrikam.CD</a>.\\r\\n<li>Release description: QFE release for fixing title</li>\\r\\n<li>ContinuousIntegration Requested for Chuck Reinhart</li>\\r\\n<li>Build: fabrikam.Bd.2016.04.10 & 2 more<\\li>",
-    "markdown": "Release [Release-1](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5) created from release pipeline [Fabrikam.CD](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releasedefinitions/1).\\r\\n<li>Release description: QFE release for fixing title</li>\\r\\n<li>ContinuousIntegrationRequested for Chuck Reinhart</li>\\r\\n<li>Build: fabrikam.Bd.2016.04.10 & 2 more<\\li>"
+    "text":
+      "Release Release-1 created from release pipeline Fabrikam.CD.\\r\\nRelease description: QFE release for fixing title\\r\\nContinuousIntegration Requested for Chuck Reinhart\\r\\n<li>Build: fabrikam.Bd.2016.04.10 & 2 more<\\li>",
+    "html":
+      "Release <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5'>Release-1</a> created from release pipeline <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releasedefinitions/1'>Fabrikam.CD</a>.\\r\\n<li>Release description: QFE release for fixing title</li>\\r\\n<li>ContinuousIntegration Requested for Chuck Reinhart</li>\\r\\n<li>Build: fabrikam.Bd.2016.04.10 & 2 more<\\li>",
+    "markdown":
+      "Release [Release-1](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5) created from release pipeline [Fabrikam.CD](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releasedefinitions/1).\\r\\n<li>Release description: QFE release for fixing title</li>\\r\\n<li>ContinuousIntegrationRequested for Chuck Reinhart</li>\\r\\n<li>Build: fabrikam.Bd.2016.04.10 & 2 more<\\li>"
   },
   "resource": {
     "release": {
@@ -426,7 +467,8 @@ A release was created
           "release": {
             "id": 5,
             "name": "Release-1",
-            "url": "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5"
+            "url":
+              "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5"
           }
         }
       ],
@@ -452,7 +494,8 @@ A release was created
       "releaseDefinition": {
         "id": 1,
         "name": "Fabrikam.CD",
-        "url": "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1"
+        "url":
+          "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1"
       },
       "description": "QFE release for fixing title",
       "reason": "continuousIntegration",
@@ -482,6 +525,7 @@ A release was created
 ```
 
 <a name="ms.vss-release.deployment-approval-completed-event"></a>
+
 ### Release deployment approval completed
 
 A deployment approval has been completed
@@ -490,18 +534,20 @@ A deployment approval has been completed
 * Event ID: `ms.vss-release.deployment-approval-completed-event`
 
 #### Settings
- * `releaseApprovalStatus`: Filter events to include only deployments with an approval of the specified status
-   * Valid values: 
-      * `2` - Approved
-      * `4` - Rejected
- * `releaseApprovalType`: Filter events to include only deployments requesting an approval of the specified type
-   * Valid values: 
-      * `1` - Pre-deployment
-      * `2` - Post-deployment
- * `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
- * `releaseDefinitionId`: Filter events to include only completed deployments for the specified definition
+
+* `releaseApprovalStatus`: Filter events to include only deployments with an approval of the specified status
+  * Valid values:
+    * `2` - Approved
+    * `4` - Rejected
+* `releaseApprovalType`: Filter events to include only deployments requesting an approval of the specified type
+  * Valid values:
+    * `1` - Pre-deployment
+    * `2` - Post-deployment
+* `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
+* `releaseDefinitionId`: Filter events to include only completed deployments for the specified definition
 
 #### Sample payload
+
 ```json
 {
   "id": "106acb39-c61e-4efd-995e-a9f5e71ba3cd",
@@ -509,14 +555,20 @@ A deployment approval has been completed
   "publisherId": "rm",
   "scope": "all",
   "message": {
-    "text": "Pre Deployment approval for deployment of release Release-1 on environment Dev Succeeded.",
-    "html": "Pre Deployment approval for release <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1'>Release-1</a> on environment <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1'>Dev</a> Succeeded.",
-    "markdown": "Pre Deployment approval for deployment of release [Release-1](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1) on environment [Dev](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1) Succeeded."
+    "text":
+      "Pre Deployment approval for deployment of release Release-1 on environment Dev Succeeded.",
+    "html":
+      "Pre Deployment approval for release <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1'>Release-1</a> on environment <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1'>Dev</a> Succeeded.",
+    "markdown":
+      "Pre Deployment approval for deployment of release [Release-1](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1) on environment [Dev](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1) Succeeded."
   },
   "detailedMessage": {
-    "text": "Pre Deployment approval for release Release-1 on environment Dev Succeeded.\\r\\nApprover: Chuck Reinhart\\r\\nComment: Approving",
-    "html": "Pre Deployment approval for release <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1'>Release-1</a> on environment <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1'>Dev</a>  Succeeded.\\r\\nApprover: Chuck Reinhart\\r\\nComment: Approving",
-    "markdown": "Pre Deployment approval for release [Release-1](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1) on environment [Dev](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1) Succeeded.\\r\\nApprover: Chuck Reinhart\\r\\nComment: Approving"
+    "text":
+      "Pre Deployment approval for release Release-1 on environment Dev Succeeded.\\r\\nApprover: Chuck Reinhart\\r\\nComment: Approving",
+    "html":
+      "Pre Deployment approval for release <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1'>Release-1</a> on environment <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1'>Dev</a>  Succeeded.\\r\\nApprover: Chuck Reinhart\\r\\nComment: Approving",
+    "markdown":
+      "Pre Deployment approval for release [Release-1](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1) on environment [Dev](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1) Succeeded.\\r\\nApprover: Chuck Reinhart\\r\\nComment: Approving"
   },
   "resource": {
     "approval": {
@@ -547,7 +599,8 @@ A deployment approval has been completed
       "releaseDefinition": {
         "id": 1,
         "name": "Fabrikam.CD",
-        "url": "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1"
+        "url":
+          "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1"
       },
       "releaseEnvironment": {
         "id": 8,
@@ -630,7 +683,8 @@ A deployment approval has been completed
           "release": {
             "id": 1,
             "name": "Release-1",
-            "url": "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1"
+            "url":
+              "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1"
           }
         }
       ],
@@ -656,7 +710,8 @@ A deployment approval has been completed
       "releaseDefinition": {
         "id": 1,
         "name": "Fabrikam.CD",
-        "url": "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1"
+        "url":
+          "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1"
       },
       "description": "QFE release for fixing title",
       "reason": "continuousIntegration",
@@ -686,6 +741,7 @@ A deployment approval has been completed
 ```
 
 <a name="ms.vss-release.deployment-approval-pending-event"></a>
+
 ### Release deployment approval pending
 
 A deployment approval has been requested
@@ -694,14 +750,16 @@ A deployment approval has been requested
 * Event ID: `ms.vss-release.deployment-approval-pending-event`
 
 #### Settings
- * `releaseApprovalType`: Filter events to include only deployments requesting an approval of the specified type
-   * Valid values: 
-      * `1` - Pre-deployment
-      * `2` - Post-deployment
- * `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
- * `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
+
+* `releaseApprovalType`: Filter events to include only deployments requesting an approval of the specified type
+  * Valid values:
+    * `1` - Pre-deployment
+    * `2` - Post-deployment
+* `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
+* `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
 
 #### Sample payload
+
 ```json
 {
   "id": "a73e7272-e96d-4249-93ac-7404eacd6801",
@@ -709,14 +767,20 @@ A deployment approval has been requested
   "publisherId": "rm",
   "scope": "all",
   "message": {
-    "text": "Pre deployment approval pending for release Release-1 on environment Dev.",
-    "html": "Pre deployment approval pending for release <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1'>Release-1</a> on environment <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1'>Dev</a>.",
-    "markdown": "Pre deployment approval pending for release [Release-1](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1) on environment [Dev](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1)."
+    "text":
+      "Pre deployment approval pending for release Release-1 on environment Dev.",
+    "html":
+      "Pre deployment approval pending for release <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1'>Release-1</a> on environment <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1'>Dev</a>.",
+    "markdown":
+      "Pre deployment approval pending for release [Release-1](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1) on environment [Dev](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1)."
   },
   "detailedMessage": {
-    "text": "Pre deployment approval pending for release Release-1 on environment Dev.\\r\\nPending on: Chuck Reinhart\\r\\nPending since: 09 May 2016 12:09:29 (UTC)",
-    "html": "Pre deployment approval pending of release <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1'>Release-1</a> on environment <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1'>Dev</a>.\\r\\nPending on: Chuck Reinhart\\r\\nPending  since: 09 May 2016 12:09:29 (UTC)",
-    "markdown": "Pre deployment approval pending for release [Release-1](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1) on environment [Dev](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1).\\r\\nPending on: Chuck Reinhart\\r\\nPending  since: 09 May 2016 12:09:29 (UTC)"
+    "text":
+      "Pre deployment approval pending for release Release-1 on environment Dev.\\r\\nPending on: Chuck Reinhart\\r\\nPending since: 09 May 2016 12:09:29 (UTC)",
+    "html":
+      "Pre deployment approval pending of release <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1'>Release-1</a> on environment <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1'>Dev</a>.\\r\\nPending on: Chuck Reinhart\\r\\nPending  since: 09 May 2016 12:09:29 (UTC)",
+    "markdown":
+      "Pre deployment approval pending for release [Release-1](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1) on environment [Dev](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1).\\r\\nPending on: Chuck Reinhart\\r\\nPending  since: 09 May 2016 12:09:29 (UTC)"
   },
   "resource": {
     "approval": {
@@ -743,7 +807,8 @@ A deployment approval has been requested
       "releaseDefinition": {
         "id": 1,
         "name": "Fabrikam.CD",
-        "url": "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1"
+        "url":
+          "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1"
       },
       "releaseEnvironment": {
         "id": 8,
@@ -826,7 +891,8 @@ A deployment approval has been requested
           "release": {
             "id": 1,
             "name": "Release-1",
-            "url": "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1"
+            "url":
+              "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1"
           }
         }
       ],
@@ -852,7 +918,8 @@ A deployment approval has been requested
       "releaseDefinition": {
         "id": 1,
         "name": "Fabrikam.CD",
-        "url": "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1"
+        "url":
+          "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/definitions/1"
       },
       "description": "QFE release for fixing title",
       "reason": "continuousIntegration",
@@ -882,6 +949,7 @@ A deployment approval has been requested
 ```
 
 <a name="ms.vss-release.deployment-completed-event"></a>
+
 ### Release deployment completed
 
 A deployment completed
@@ -890,16 +958,18 @@ A deployment completed
 * Event ID: `ms.vss-release.deployment-completed-event`
 
 #### Settings
- * `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
- * `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
- * `releaseEnvironmentStatus`: Filter events to include only completed deployments with the specified status
-   * Valid values: 
-      * `8` - Canceled
-      * `16` - Rejected
-      * `4` - Succeeded
-      * `128` - Partially Succeeded
+
+* `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
+* `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
+* `releaseEnvironmentStatus`: Filter events to include only completed deployments with the specified status
+  * Valid values:
+    * `8` - Canceled
+    * `16` - Rejected
+    * `4` - Succeeded
+    * `128` - Partially Succeeded
 
 #### Sample payload
+
 ```json
 "environment": {
             "id": 5,
@@ -1035,6 +1105,7 @@ A deployment completed
 ```
 
 <a name="ms.vss-release.deployment-started-event"></a>
+
 ### Release deployment started
 
 A deployment was started
@@ -1043,152 +1114,161 @@ A deployment was started
 * Event ID: `ms.vss-release.deployment-started-event`
 
 #### Settings
- * `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
- * `releaseDefinitionId`: Filter events to include only completed deployments for the specified definition
+
+* `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
+* `releaseDefinitionId`: Filter events to include only completed deployments for the specified definition
 
 #### Sample payload
+
 ```json
 {
-    "id": "1f04688d-98bb-4206-850f-43389f4c8cb4",
-    "eventType": "ms.vss-release.deployment-started-event",
-    "publisherId": "rm",
-    "message": {
-        "text": "Deployment of release Release-5 to stage Dev started.",
-        "html": "Deployment on stage <a href='http://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=1&definitionId=4'>Dev</a> started.",
-        "markdown": "Deployment on stage [Dev](https://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=1&definitionId=4) started."
-    },
-    "detailedMessage": {
-        "text": "Deployment of release Release-5 on stage Dev started.\r\nTrigger: Manual",
-        "html": "Deployment on stage <a href='Dev'>http://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=1&definitionId=4</a> started.<br>Trigger: Manual",
-        "markdown": "Deployment on stage [Release-1](https://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=1&definitionId=4) started.\r\nTrigger: Dev"
-    },
-    "resource": {
-        "environment": {
-            "id": 5,
-            "releaseId": 0,
-            "name": "Dev",
-            "status": "queued",
-            "variables": {},
-            "variableGroups": [],
-            "preDeployApprovals": [],
-            "postDeployApprovals": [],
-            "preApprovalsSnapshot": {
-                "approvals": [],
-                "approvalOptions": {
-                    "requiredApproverCount": 0,
-                    "releaseCreatorCanBeApprover": true,
-                    "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
-                    "enforceIdentityRevalidation": false,
-                    "timeoutInMinutes": 0,
-                    "executionOrder": "beforeGates"
-                }
-            },
-            "postApprovalsSnapshot": {
-                "approvals": []
-            },
-            "deploySteps": [],
-            "rank": 1,
-            "definitionEnvironmentId": 1,
-            "queueId": 1,
-            "environmentOptions": {
-                "emailNotificationType": "OnlyOnFailure",
-                "emailRecipients": "release.environment.owner;release.creator",
-                "skipArtifactsDownload": false,
-                "timeoutInMinutes": 0,
-                "enableAccessToken": false,
-                "publishDeploymentStatus": false,
-                "badgeEnabled": false,
-                "autoLinkWorkItems": false,
-                "pullRequestDeploymentEnabled": false
-            },
-            "demands": [],
-            "conditions": [],
-            "modifiedOn": "2016-01-21T08:19:17.26Z",
-            "workflowTasks": [],
-            "deployPhasesSnapshot": [],
-            "owner": {
-                "displayName": "Chuck Reinhart",
-                "id": "4247c988-4060-4712-abca-ff44681dd78a"
-            },
-            "scheduledDeploymentTime": "2016-01-21T08:19:17.26Z",
-            "schedules": [],
-            "release": {
-                "id": 5,
-                "name": "Release-5",
-                "_links": {
-                    "web": {
-                        "href": "https://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_release?releaseId=1&_a=release-summary"
-                    }
-                }
-            },
-            "preDeploymentGatesSnapshot": {
-                "id": 0,
-                "gatesOptions": null,
-                "gates": []
-            },
-            "postDeploymentGatesSnapshot": {
-                "id": 0,
-                "gatesOptions": null,
-                "gates": []
-            }
-        },
-        "release": {
-            "id": 0,
-            "name": null,
-            "status": "undefined",
-            "createdOn": "0001-01-01T00:00:00",
-            "modifiedOn": "0001-01-01T00:00:00",
-            "modifiedBy": null,
-            "createdBy": null,
-            "environments": [],
-            "variables": {},
-            "variableGroups": [],
-            "artifacts": [],
-            "releaseDefinition": {
-                "id": 1,
-                "name": "Fabrikam.CD",
-                "projectReference": null,
-                "_links": {}
-            },
-            "releaseDefinitionRevision": 0,
-            "reason": "none",
-            "releaseNameFormat": null,
-            "keepForever": false,
-            "definitionSnapshotRevision": 0,
-            "logsContainerUrl": null,
-            "_links": {},
-            "tags": [],
-            "triggeringArtifactAlias": null,
-            "projectReference": null
-        },
-        "project": {
-            "id": "00000000-0000-0000-0000-000000000000",
-            "name": "Fabrikam"
+  "id": "1f04688d-98bb-4206-850f-43389f4c8cb4",
+  "eventType": "ms.vss-release.deployment-started-event",
+  "publisherId": "rm",
+  "message": {
+    "text": "Deployment of release Release-5 to stage Dev started.",
+    "html":
+      "Deployment on stage <a href='http://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=1&definitionId=4'>Dev</a> started.",
+    "markdown":
+      "Deployment on stage [Dev](https://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=1&definitionId=4) started."
+  },
+  "detailedMessage": {
+    "text":
+      "Deployment of release Release-5 on stage Dev started.\r\nTrigger: Manual",
+    "html":
+      "Deployment on stage <a href='Dev'>http://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=1&definitionId=4</a> started.<br>Trigger: Manual",
+    "markdown":
+      "Deployment on stage [Release-1](https://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=1&definitionId=4) started.\r\nTrigger: Dev"
+  },
+  "resource": {
+    "environment": {
+      "id": 5,
+      "releaseId": 0,
+      "name": "Dev",
+      "status": "queued",
+      "variables": {},
+      "variableGroups": [],
+      "preDeployApprovals": [],
+      "postDeployApprovals": [],
+      "preApprovalsSnapshot": {
+        "approvals": [],
+        "approvalOptions": {
+          "requiredApproverCount": 0,
+          "releaseCreatorCanBeApprover": true,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": "beforeGates"
         }
-    },
-    "resourceVersion": "3.0-preview.1",
-    "resourceContainers": {
-        "collection": {
-            "id": "c12d0eb8-e382-443b-9f9c-c52cba5014c2"
-        },
-        "account": {
-            "id": "f844ec47-a9db-4511-8281-8b63f4eaf94e"
-        },
-        "project": {
-            "id": "be9b3917-87e6-42a4-a549-2bc06a7a878f"
+      },
+      "postApprovalsSnapshot": {
+        "approvals": []
+      },
+      "deploySteps": [],
+      "rank": 1,
+      "definitionEnvironmentId": 1,
+      "queueId": 1,
+      "environmentOptions": {
+        "emailNotificationType": "OnlyOnFailure",
+        "emailRecipients": "release.environment.owner;release.creator",
+        "skipArtifactsDownload": false,
+        "timeoutInMinutes": 0,
+        "enableAccessToken": false,
+        "publishDeploymentStatus": false,
+        "badgeEnabled": false,
+        "autoLinkWorkItems": false,
+        "pullRequestDeploymentEnabled": false
+      },
+      "demands": [],
+      "conditions": [],
+      "modifiedOn": "2016-01-21T08:19:17.26Z",
+      "workflowTasks": [],
+      "deployPhasesSnapshot": [],
+      "owner": {
+        "displayName": "Chuck Reinhart",
+        "id": "4247c988-4060-4712-abca-ff44681dd78a"
+      },
+      "scheduledDeploymentTime": "2016-01-21T08:19:17.26Z",
+      "schedules": [],
+      "release": {
+        "id": 5,
+        "name": "Release-5",
+        "_links": {
+          "web": {
+            "href":
+              "https://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_release?releaseId=1&_a=release-summary"
+          }
         }
+      },
+      "preDeploymentGatesSnapshot": {
+        "id": 0,
+        "gatesOptions": null,
+        "gates": []
+      },
+      "postDeploymentGatesSnapshot": {
+        "id": 0,
+        "gatesOptions": null,
+        "gates": []
+      }
     },
-    "createdDate": "2019-10-10T17:49:39.157Z"
+    "release": {
+      "id": 0,
+      "name": null,
+      "status": "undefined",
+      "createdOn": "0001-01-01T00:00:00",
+      "modifiedOn": "0001-01-01T00:00:00",
+      "modifiedBy": null,
+      "createdBy": null,
+      "environments": [],
+      "variables": {},
+      "variableGroups": [],
+      "artifacts": [],
+      "releaseDefinition": {
+        "id": 1,
+        "name": "Fabrikam.CD",
+        "projectReference": null,
+        "_links": {}
+      },
+      "releaseDefinitionRevision": 0,
+      "reason": "none",
+      "releaseNameFormat": null,
+      "keepForever": false,
+      "definitionSnapshotRevision": 0,
+      "logsContainerUrl": null,
+      "_links": {},
+      "tags": [],
+      "triggeringArtifactAlias": null,
+      "projectReference": null
+    },
+    "project": {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "Fabrikam"
+    }
+  },
+  "resourceVersion": "3.0-preview.1",
+  "resourceContainers": {
+    "collection": {
+      "id": "c12d0eb8-e382-443b-9f9c-c52cba5014c2"
+    },
+    "account": {
+      "id": "f844ec47-a9db-4511-8281-8b63f4eaf94e"
+    },
+    "project": {
+      "id": "be9b3917-87e6-42a4-a549-2bc06a7a878f"
+    }
+  },
+  "createdDate": "2019-10-10T17:49:39.157Z"
 }
 ```
 
 ::: moniker range="azure-devops"
+
 ## Pipelines
 
-> [!NOTE]
-> [Multi-stage pipelines](https://go.microsoft.com/fwlink/?linkid=2097082) preview feature needs to be enabled for these events
+> [!NOTE][multi-stage pipelines](https://go.microsoft.com/fwlink/?linkid=2097082) preview feature needs to be enabled for these events
 
 <a name="run.statechanged"></a>
+
 ### Run state changed
 
 Overall status of a pipeline run changed. A new run has started, or a run has transitioned to canceling, canceled, failed, partially succeeded or succeeded state.
@@ -1197,14 +1277,16 @@ Overall status of a pipeline run changed. A new run has started, or a run has tr
 * Event ID: `ms.vss-pipelines.run-state-changed-event`
 
 #### Settings
- * `PipelineId`: Filter to include only events for the specified pipeline
- * `runStateId`: Filter events based on the new state of the run
-   * Valid values: 
-      * `InProgress` 
-      * `Canceling` 
-      * `Completed` 
+
+* `PipelineId`: Filter to include only events for the specified pipeline
+* `runStateId`: Filter events based on the new state of the run
+  * Valid values:
+    * `InProgress`
+    * `Canceling`
+    * `Completed`
 
 #### Sample payload
+
 ```json
 {
   "id": "62e4351f-1c24-40f9-8510-7af03692ab45",
@@ -1212,32 +1294,41 @@ Overall status of a pipeline run changed. A new run has started, or a run has tr
   "publisherId": "pipelines",
   "message": {
     "text": "Run 11 succeeded.",
-    "html": "Run <a href=\"https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=11\">11</a> succeeded.",
-    "markdown": "Run [11](https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=11) succeeded."
+    "html":
+      "Run <a href=\"https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=11\">11</a> succeeded.",
+    "markdown":
+      "Run [11](https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=11) succeeded."
   },
   "detailedMessage": {
     "text": "Run 11 succeeded.",
-    "html": "Run <a href=\"https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=11\">11</a> succeeded.",
-    "markdown": "Run [11](https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=11) succeeded."
+    "html":
+      "Run <a href=\"https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=11\">11</a> succeeded.",
+    "markdown":
+      "Run [11](https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=11) succeeded."
   },
   "resource": {
     "run": {
       "_links": {
         "self": {
-          "href": "https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_apis/Pipelines/1/runs/11"
+          "href":
+            "https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_apis/Pipelines/1/runs/11"
         },
         "web": {
-          "href": "https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=11"
+          "href":
+            "https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=11"
         },
         "pipeline.web": {
-          "href": "https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/definition?definitionId=1"
+          "href":
+            "https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/definition?definitionId=1"
         },
         "pipeline": {
-          "href": "https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_apis/Pipelines/1?revision=1"
+          "href":
+            "https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_apis/Pipelines/1?revision=1"
         }
       },
       "pipeline": {
-        "url": "https://codedev.ms/org/091d79ee-dc21-465e-86a2-b4006b9d0921/_apis/Pipelines/1?revision=1",
+        "url":
+          "https://codedev.ms/org/091d79ee-dc21-465e-86a2-b4006b9d0921/_apis/Pipelines/1?revision=1",
         "id": 11,
         "revision": 1,
         "name": "TEST-CI",
@@ -1247,12 +1338,14 @@ Overall status of a pipeline run changed. A new run has started, or a run has tr
       "result": "succeeded",
       "createdDate": "2019-12-13T04:46:13.613Z",
       "finishedDate": "2019-12-13T04:46:13.613Z",
-      "url": "https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_apis/Pipelines/1/runs/11",
+      "url":
+        "https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_apis/Pipelines/1/runs/11",
       "id": 11,
       "name": "11"
     },
     "pipeline": {
-      "url": "https://codedev.ms/org/091d79ee-dc21-465e-86a2-b4006b9d0921/_apis/Pipelines/1?revision=1",
+      "url":
+        "https://codedev.ms/org/091d79ee-dc21-465e-86a2-b4006b9d0921/_apis/Pipelines/1?revision=1",
       "id": 11,
       "revision": 1,
       "name": "TEST-CI",
@@ -1276,6 +1369,7 @@ Overall status of a pipeline run changed. A new run has started, or a run has tr
 ```
 
 <a name="run.stagestatechanged"></a>
+
 ### Run stage state changed
 
 A new stage has started, or a stage has transitioned to canceling, canceled, failed, partially succeeded or succeeded.
@@ -1284,16 +1378,18 @@ A new stage has started, or a stage has transitioned to canceling, canceled, fai
 * Event ID: `ms.vss-pipelines.stage-state-changed-event`
 
 #### Settings
- * `PipelineId`: Filter to include only events for the specified pipeline
- * `stageNameId`: Filter events to a specific stage name
- * `stageStateId`: Filter events based on the new state of the stage
-   * Valid values: 
-      * `NotStarted` 
-      * `Waiting` 
-      * `Running`
-      * `Completed`
+
+* `PipelineId`: Filter to include only events for the specified pipeline
+* `stageNameId`: Filter events to a specific stage name
+* `stageStateId`: Filter events based on the new state of the stage
+  * Valid values:
+    * `NotStarted`
+    * `Waiting`
+    * `Running`
+    * `Completed`
 
 #### Sample payload
+
 ```json
 {
   "id": "ac1dd6da-af30-43cb-8434-e1005864b0a3",
@@ -1301,22 +1397,28 @@ A new stage has started, or a stage has transitioned to canceling, canceled, fai
   "publisherId": "pipelines",
   "message": {
     "text": "Run 2 stage __default succeeded.",
-    "html": "Run 2 stage <a href=\"https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=2\">__default</a> succeeded.",
-    "markdown": "Run 2 stage [__default](https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=2) succeeded."
+    "html":
+      "Run 2 stage <a href=\"https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=2\">__default</a> succeeded.",
+    "markdown":
+      "Run 2 stage [__default](https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=2) succeeded."
   },
   "detailedMessage": {
     "text": "Run 2 stage __default succeeded.",
-    "html": "Run 2 stage <a href=\"https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=2\">__default</a> succeeded.",
-    "markdown": "Run 2 stage [__default](https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=2) succeeded."
+    "html":
+      "Run 2 stage <a href=\"https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=2\">__default</a> succeeded.",
+    "markdown":
+      "Run 2 stage [__default](https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=2) succeeded."
   },
   "resource": {
     "stage": {
       "_links": {
         "web": {
-          "href": "https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=2"
+          "href":
+            "https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=2"
         },
         "pipeline.web": {
-          "href": "https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/definition?definitionId=2"
+          "href":
+            "https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/definition?definitionId=2"
         }
       },
       "id": "00000000-0000-0000-0000-000000000000",
@@ -1327,7 +1429,8 @@ A new stage has started, or a stage has transitioned to canceling, canceled, fai
     },
     "run": {
       "pipeline": {
-        "url": "https://codedev.ms/org/091d79ee-dc21-465e-86a2-b4006b9d0921/_apis/Pipelines/2?revision=2",
+        "url":
+          "https://codedev.ms/org/091d79ee-dc21-465e-86a2-b4006b9d0921/_apis/Pipelines/2?revision=2",
         "id": 2,
         "revision": 2,
         "name": "TEST-CI",
@@ -1341,7 +1444,8 @@ A new stage has started, or a stage has transitioned to canceling, canceled, fai
       "name": "2"
     },
     "pipeline": {
-      "url": "https://codedev.ms/org/091d79ee-dc21-465e-86a2-b4006b9d0921/_apis/Pipelines/2?revision=2",
+      "url":
+        "https://codedev.ms/org/091d79ee-dc21-465e-86a2-b4006b9d0921/_apis/Pipelines/2?revision=2",
       "id": 2,
       "revision": 2,
       "name": "TEST-CI",
@@ -1365,6 +1469,7 @@ A new stage has started, or a stage has transitioned to canceling, canceled, fai
 ```
 
 <a name="run.stageapprovalpending"></a>
+
 ### Run stage waiting for approval
 
 An approval is created for a run stage
@@ -1373,25 +1478,33 @@ An approval is created for a run stage
 * Event ID: `ms.vss-pipelinechecks-events.approval-pending`
 
 #### Settings
- * `PipelineId`: Filter to include only events for the specified pipeline
- * `stageName`: Filter events to a specific stage name
- * `environmentName`: Filter events to approvals for deployments to a specified environment
- 
+
+* `PipelineId`: Filter to include only events for the specified pipeline
+* `stageName`: Filter events to a specific stage name
+* `environmentName`: Filter events to approvals for deployments to a specified environment
+
 #### Sample payload
+
 ```json
 {
   "id": "55382df7-24fa-453c-9173-3369b2417a5b",
   "eventType": "ms.vss-pipelinechecks-events.approval-pending",
   "publisherId": "pipelines",
   "message": {
-    "text": "Approval pending for deployment of pipeline run1 to environment env1.",
-    "html": "Approval pending for deployment of pipeline <a href=https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_build/results?buildId=2&view=results> run1 </a> to environment <a href=https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_environments/1?view=resources>env1</a>.",
-    "markdown": "Approval pending for deployment of pipeline [https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_build/results?buildId=2&view=results](run1) to environment [env1](https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_environments/1?view=resources)"
+    "text":
+      "Approval pending for deployment of pipeline run1 to environment env1.",
+    "html":
+      "Approval pending for deployment of pipeline <a href=https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_build/results?buildId=2&view=results> run1 </a> to environment <a href=https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_environments/1?view=resources>env1</a>.",
+    "markdown":
+      "Approval pending for deployment of pipeline [https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_build/results?buildId=2&view=results](run1) to environment [env1](https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_environments/1?view=resources)"
   },
   "detailedMessage": {
-    "text": "Approval pending for deployment of pipeline run1 to environment env1.",
-    "html": "Approval pending for deployment of pipeline <a href=https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_build/results?buildId=2&view=results> run1 </a> to environment <a href=https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_environments/1?view=resources>env1</a>.",
-    "markdown": "Approval pending for deployment of pipeline [https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_build/results?buildId=2&view=results](run1) to environment [env1](https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_environments/1?view=resources)"
+    "text":
+      "Approval pending for deployment of pipeline run1 to environment env1.",
+    "html":
+      "Approval pending for deployment of pipeline <a href=https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_build/results?buildId=2&view=results> run1 </a> to environment <a href=https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_environments/1?view=resources>env1</a>.",
+    "markdown":
+      "Approval pending for deployment of pipeline [https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_build/results?buildId=2&view=results](run1) to environment [env1](https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_environments/1?view=resources)"
   },
   "resource": {
     "approval": {
@@ -1447,6 +1560,7 @@ An approval is created for a run stage
 ```
 
 <a name="run.stageapprovalcompleted"></a>
+
 ### Run stage approval completed
 
 An approval completed for a run stage
@@ -1455,25 +1569,33 @@ An approval completed for a run stage
 * Event ID: `ms.vss-pipelinechecks-events.approval-completed`
 
 #### Settings
- * `PipelineId`: Filter to include only events for the specified pipeline
- * `stageName`: Filter events to a specific stage name
- * `environmentName`: Filter events to approvals for deployments to a specified environment
- 
+
+* `PipelineId`: Filter to include only events for the specified pipeline
+* `stageName`: Filter events to a specific stage name
+* `environmentName`: Filter events to approvals for deployments to a specified environment
+
 #### Sample payload
+
 ```json
 {
   "id": "5810cce3-55e9-46dc-ad4f-681c57cf620e",
   "eventType": "ms.vss-pipelinechecks-events.approval-completed",
   "publisherId": "pipelines",
   "message": {
-    "text": "Approval completed for deployment of pipeline run1 to environment env1.",
-    "html": "Approval completed for deployment of pipeline <a href=https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_build/results?buildId=2&view=results> run1 </a> to environment <a href=https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_environments/1?view=resources>env1</a>.",
-    "markdown": "Approval completed for deployment of pipeline [https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_build/results?buildId=2&view=results](run1) to environment [env1](https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_environments/1?view=resources)"
+    "text":
+      "Approval completed for deployment of pipeline run1 to environment env1.",
+    "html":
+      "Approval completed for deployment of pipeline <a href=https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_build/results?buildId=2&view=results> run1 </a> to environment <a href=https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_environments/1?view=resources>env1</a>.",
+    "markdown":
+      "Approval completed for deployment of pipeline [https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_build/results?buildId=2&view=results](run1) to environment [env1](https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_environments/1?view=resources)"
   },
   "detailedMessage": {
-    "text": "Approval completed for deployment of pipeline run1 to environment env1.",
-    "html": "Approval completed for deployment of pipeline <a href=https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_build/results?buildId=2&view=results> run1 </a> to environment <a href=https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_environments/1?view=resources>env1</a>.",
-    "markdown": "Approval completed for deployment of pipeline [https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_build/results?buildId=2&view=results](run1) to environment [env1](https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_environments/1?view=resources)"
+    "text":
+      "Approval completed for deployment of pipeline run1 to environment env1.",
+    "html":
+      "Approval completed for deployment of pipeline <a href=https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_build/results?buildId=2&view=results> run1 </a> to environment <a href=https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_environments/1?view=resources>env1</a>.",
+    "markdown":
+      "Approval completed for deployment of pipeline [https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_build/results?buildId=2&view=results](run1) to environment [env1](https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_environments/1?view=resources)"
   },
   "resource": {
     "approval": {
@@ -1527,11 +1649,13 @@ An approval completed for a run stage
   "createdDate": "2019-12-13T06:18:22.487Z"
 }
 ```
+
 ::: moniker-end
 
 ## Code
 
 <a name="tfvc.checkin"></a>
+
 ### Code checked in
 
 A changeset is checked into TFVC.
@@ -1540,10 +1664,12 @@ A changeset is checked into TFVC.
 * Event ID: `tfvc.checkin`
 
 #### Settings
- * `path`: Filter to checkins that change one or more files under the specified path
-   * Required
+
+* `path`: Filter to checkins that change one or more files under the specified path
+  * Required
 
 #### Sample payload
+
 ```json
 {
   "id": "f9b4c23e-88dd-4516-b04d-849787304e32",
@@ -1552,17 +1678,22 @@ A changeset is checked into TFVC.
   "scope": "all",
   "message": {
     "text": "Normal Paulk checked in changeset 18: Dropping in new Java sample",
-    "html": "Normal Paulk checked in changeset <a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/cs.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&amp;cs=18\">18</a>: Dropping in new Java sample",
-    "markdown": "Normal Paulk checked in changeset [18](https://dev.azure.com/fabrikam-fiber-inc/web/cs.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&cs=18): Dropping in new Java sample"
+    "html":
+      "Normal Paulk checked in changeset <a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/cs.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&amp;cs=18\">18</a>: Dropping in new Java sample",
+    "markdown":
+      "Normal Paulk checked in changeset [18](https://dev.azure.com/fabrikam-fiber-inc/web/cs.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&cs=18): Dropping in new Java sample"
   },
   "detailedMessage": {
     "text": "Normal Paulk checked in changeset 18: Dropping in new Java sample",
-    "html": "Normal Paulk checked in changeset <a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/cs.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&amp;cs=18\">18</a>: Dropping in new Java sample",
-    "markdown": "Normal Paulk checked in changeset [18](https://dev.azure.com/fabrikam-fiber-inc/web/cs.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&cs=18): Dropping in new Java sample"
+    "html":
+      "Normal Paulk checked in changeset <a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/cs.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&amp;cs=18\">18</a>: Dropping in new Java sample",
+    "markdown":
+      "Normal Paulk checked in changeset [18](https://dev.azure.com/fabrikam-fiber-inc/web/cs.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&cs=18): Dropping in new Java sample"
   },
   "resource": {
     "changesetId": 18,
-    "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/tfvc/changesets/18",
+    "url":
+      "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/tfvc/changesets/18",
     "author": {
       "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
       "displayName": "Normal Paulk",
@@ -1590,6 +1721,7 @@ A changeset is checked into TFVC.
 ```
 
 <a name="git.push"></a>
+
 ### Code pushed
 
 Code is pushed to a Git repository
@@ -1598,12 +1730,14 @@ Code is pushed to a Git repository
 * Event ID: `git.push`
 
 #### Settings
- * `branch`: The branch that code was pushed into
- * `pushedBy`: A group which has the pusher as its member
- * `repository`: The repository that code was pushed to
-   * Data type: `guid`
+
+* `branch`: The branch that code was pushed into
+* `pushedBy`: A group which has the pusher as its member
+* `repository`: The repository that code was pushed to
+  * Data type: `guid`
 
 #### Sample payload
+
 ```json
 {
   "id": "03c164c2-8912-4d5e-8009-3707d5f83734",
@@ -1611,14 +1745,20 @@ Code is pushed to a Git repository
   "publisherId": "tfs",
   "scope": "all",
   "message": {
-    "text": "Jamal Hartnett pushed updates to branch master of repository Fabrikam-Fiber-Git.",
-    "html": "Jamal Hartnett pushed updates to branch master of repository Fabrikam-Fiber-Git.",
-    "markdown": "Jamal Hartnett pushed updates to branch `master` of repository `Fabrikam-Fiber-Git`."
+    "text":
+      "Jamal Hartnett pushed updates to branch master of repository Fabrikam-Fiber-Git.",
+    "html":
+      "Jamal Hartnett pushed updates to branch master of repository Fabrikam-Fiber-Git.",
+    "markdown":
+      "Jamal Hartnett pushed updates to branch `master` of repository `Fabrikam-Fiber-Git`."
   },
   "detailedMessage": {
-    "text": "Jamal Hartnett pushed 1 commit to branch master of repository Fabrikam-Fiber-Git.\n - Fixed bug in web.config file 33b55f7c",
-    "html": "Jamal Hartnett pushed 1 commit to branch <a href=\"https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/#version=GBmaster\">master</a> of repository <a href=\"https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/\">Fabrikam-Fiber-Git</a>.\n<ul>\n<li>Fixed bug in web.config file <a href=\"https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/33b55f7cb7e7e245323987634f960cf4a6e6bc74\">33b55f7c</a>\n</ul>",
-    "markdown": "Jamal Hartnett pushed 1 commit to branch [master](https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/#version=GBmaster) of repository [Fabrikam-Fiber-Git](https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/).\n* Fixed bug in web.config file [33b55f7c](https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/33b55f7cb7e7e245323987634f960cf4a6e6bc74)"
+    "text":
+      "Jamal Hartnett pushed 1 commit to branch master of repository Fabrikam-Fiber-Git.\n - Fixed bug in web.config file 33b55f7c",
+    "html":
+      "Jamal Hartnett pushed 1 commit to branch <a href=\"https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/#version=GBmaster\">master</a> of repository <a href=\"https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/\">Fabrikam-Fiber-Git</a>.\n<ul>\n<li>Fixed bug in web.config file <a href=\"https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/33b55f7cb7e7e245323987634f960cf4a6e6bc74\">33b55f7c</a>\n</ul>",
+    "markdown":
+      "Jamal Hartnett pushed 1 commit to branch [master](https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/#version=GBmaster) of repository [Fabrikam-Fiber-Git](https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/).\n* Fixed bug in web.config file [33b55f7c](https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/33b55f7cb7e7e245323987634f960cf4a6e6bc74)"
   },
   "resource": {
     "commits": [
@@ -1635,7 +1775,8 @@ Code is pushed to a Git repository
           "date": "2015-02-25T19:01:00Z"
         },
         "comment": "Fixed bug in web.config file",
-        "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/33b55f7cb7e7e245323987634f960cf4a6e6bc74"
+        "url":
+          "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git/commit/33b55f7cb7e7e245323987634f960cf4a6e6bc74"
       }
     ],
     "refUpdates": [
@@ -1648,15 +1789,18 @@ Code is pushed to a Git repository
     "repository": {
       "id": "278d5cd2-584d-4b63-824a-2ba458937249",
       "name": "Fabrikam-Fiber-Git",
-      "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/repos/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249",
+      "url":
+        "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/repos/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249",
       "project": {
         "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
         "name": "Fabrikam-Fiber-Git",
-        "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+        "url":
+          "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
         "state": "wellFormed"
       },
       "defaultBranch": "refs/heads/master",
-      "remoteUrl": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git"
+      "remoteUrl":
+        "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_git/Fabrikam-Fiber-Git"
     },
     "pushedBy": {
       "id": "00067FFED5C7AF52@Live.com",
@@ -1665,7 +1809,8 @@ Code is pushed to a Git repository
     },
     "pushId": 14,
     "date": "2014-05-02T19:17:13.3309587Z",
-    "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/repos/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/pushes/14"
+    "url":
+      "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/repos/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/pushes/14"
   },
   "resourceVersion": "1.0",
   "resourceContainers": {
@@ -1684,6 +1829,7 @@ Code is pushed to a Git repository
 ```
 
 <a name="git.pullrequest.created"></a>
+
 ### Pull request created
 
 Pull request is created in a Git repository
@@ -1692,13 +1838,15 @@ Pull request is created in a Git repository
 * Event ID: `git.pullrequest.created`
 
 #### Settings
- * `repository`: The repository that code was pushed to
-   * Data type: `guid`
- * `pullrequestCreatedBy`: A group which has the requester as a member
- * `pullrequestReviewersContains`: A group included in the reviewers list
- * `branch`: The target branch of the pull request
+
+* `repository`: The repository that code was pushed to
+  * Data type: `guid`
+* `pullrequestCreatedBy`: A group which has the requester as a member
+* `pullrequestReviewersContains`: A group included in the reviewers list
+* `branch`: The target branch of the pull request
 
 #### Sample payload
+
 ```json
 {
   "id": "2ab4e3d3-b7a6-425e-92b1-5a9982c1269e",
@@ -1711,23 +1859,29 @@ Pull request is created in a Git repository
     "markdown": "Jamal Hartnett created a new pull request"
   },
   "detailedMessage": {
-    "text": "Jamal Hartnett created a new pull request\r\n\r\n- Merge status: Succeeded\r\n- Merge commit: eef717(https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72)\r\n",
-    "html": "Jamal Hartnett created a new pull request\r\n<ul>\r\n<li>Merge status: Succeeded</li>\r\n<li>Merge commit: <a href=\"https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72\">eef717</a></li>\r\n</ul>",
-    "markdown": "Jamal Hartnett created a new pull request\r\n\r\n+ Merge status: Succeeded\r\n+ Merge commit: [eef717](https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72)\r\n"
+    "text":
+      "Jamal Hartnett created a new pull request\r\n\r\n- Merge status: Succeeded\r\n- Merge commit: eef717(https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72)\r\n",
+    "html":
+      "Jamal Hartnett created a new pull request\r\n<ul>\r\n<li>Merge status: Succeeded</li>\r\n<li>Merge commit: <a href=\"https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72\">eef717</a></li>\r\n</ul>",
+    "markdown":
+      "Jamal Hartnett created a new pull request\r\n\r\n+ Merge status: Succeeded\r\n+ Merge commit: [eef717](https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72)\r\n"
   },
   "resource": {
     "repository": {
       "id": "4bc14d40-c903-45e2-872e-0462c7748079",
       "name": "Fabrikam",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079",
+      "url":
+        "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079",
       "project": {
         "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
         "name": "Fabrikam",
-        "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+        "url":
+          "https://dev.azure.com/fabrikam/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
         "state": "wellFormed"
       },
       "defaultBranch": "refs/heads/master",
-      "remoteUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_git/Fabrikam"
+      "remoteUrl":
+        "https://dev.azure.com/fabrikam/DefaultCollection/_git/Fabrikam"
     },
     "pullRequestId": 1,
     "status": "active",
@@ -1735,8 +1889,10 @@ Pull request is created in a Git repository
       "id": "54d125f7-69f7-4191-904f-c5b96b6261c8",
       "displayName": "Jamal Hartnett",
       "uniqueName": "fabrikamfiber4@hotmail.com",
-      "url": "https://vssps.dev.azure.com/fabrikam/_apis/Identities/54d125f7-69f7-4191-904f-c5b96b6261c8",
-      "imageUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=54d125f7-69f7-4191-904f-c5b96b6261c8"
+      "url":
+        "https://vssps.dev.azure.com/fabrikam/_apis/Identities/54d125f7-69f7-4191-904f-c5b96b6261c8",
+      "imageUrl":
+        "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=54d125f7-69f7-4191-904f-c5b96b6261c8"
     },
     "creationDate": "2014-06-17T16:55:46.589889Z",
     "title": "my first pull request",
@@ -1747,15 +1903,18 @@ Pull request is created in a Git repository
     "mergeId": "a10bb228-6ba6-4362-abd7-49ea21333dbd",
     "lastMergeSourceCommit": {
       "commitId": "53d54ac915144006c2c9e90d2c7d3880920db49c",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/53d54ac915144006c2c9e90d2c7d3880920db49c"
+      "url":
+        "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/53d54ac915144006c2c9e90d2c7d3880920db49c"
     },
     "lastMergeTargetCommit": {
       "commitId": "a511f535b1ea495ee0c903badb68fbc83772c882",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/a511f535b1ea495ee0c903badb68fbc83772c882"
+      "url":
+        "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/a511f535b1ea495ee0c903badb68fbc83772c882"
     },
     "lastMergeCommit": {
       "commitId": "eef717f69257a6333f221566c1c987dc94cc0d72",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72"
+      "url":
+        "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72"
     },
     "reviewers": [
       {
@@ -1763,13 +1922,17 @@ Pull request is created in a Git repository
         "vote": 0,
         "id": "2ea2d095-48f9-4cd6-9966-62f6f574096c",
         "displayName": "[Mobile]\\Mobile Team",
-        "uniqueName": "vstfs:///Classification/TeamProject/f0811a3b-8c8a-4e43-a3bf-9a049b4835bd\\Mobile Team",
-        "url": "https://vssps.dev.azure.com/fabrikam/_apis/Identities/2ea2d095-48f9-4cd6-9966-62f6f574096c",
-        "imageUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=2ea2d095-48f9-4cd6-9966-62f6f574096c",
+        "uniqueName":
+          "vstfs:///Classification/TeamProject/f0811a3b-8c8a-4e43-a3bf-9a049b4835bd\\Mobile Team",
+        "url":
+          "https://vssps.dev.azure.com/fabrikam/_apis/Identities/2ea2d095-48f9-4cd6-9966-62f6f574096c",
+        "imageUrl":
+          "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=2ea2d095-48f9-4cd6-9966-62f6f574096c",
         "isContainer": true
       }
     ],
-    "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/pullRequests/1"
+    "url":
+      "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/pullRequests/1"
   },
   "resourceVersion": "1.0",
   "resourceContainers": {
@@ -1788,6 +1951,7 @@ Pull request is created in a Git repository
 ```
 
 <a name="git.pullrequest.merged"></a>
+
 ### Pull request merge commit created
 
 Pull request - Created merge commit
@@ -1796,13 +1960,15 @@ Pull request - Created merge commit
 * Event ID: `git.pullrequest.merged`
 
 #### Settings
- * `repository`: The repository that code was pushed to
-   * Data type: `guid`
- * `pullrequestCreatedBy`: A group which has the requester as a member
- * `pullrequestReviewersContains`: A group included in the reviewers list
- * `branch`: The target branch of the pull request
+
+* `repository`: The repository that code was pushed to
+  * Data type: `guid`
+* `pullrequestCreatedBy`: A group which has the requester as a member
+* `pullrequestReviewersContains`: A group included in the reviewers list
+* `branch`: The target branch of the pull request
 
 #### Sample payload
+
 ```json
 {
   "id": "6872ee8c-b333-4eff-bfb9-0d5274943566",
@@ -1815,23 +1981,29 @@ Pull request - Created merge commit
     "markdown": "Jamal Hartnett has created a pull request merge commit"
   },
   "detailedMessage": {
-    "text": "Jamal Hartnett has created a pull request merge commit\r\n\r\n- Merge status: Succeeded\r\n- Merge commit: eef717(https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72)\r\n",
-    "html": "Jamal Hartnett has created a pull request merge commit\r\n<ul>\r\n<li>Merge status: Succeeded</li>\r\n<li>Merge commit: <a href=\"https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72\">eef717</a></li>\r\n</ul>",
-    "markdown": "Jamal Hartnett has created a pull request merge commit\r\n\r\n+ Merge status: Succeeded\r\n+ Merge commit: [eef717](https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72)\r\n"
+    "text":
+      "Jamal Hartnett has created a pull request merge commit\r\n\r\n- Merge status: Succeeded\r\n- Merge commit: eef717(https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72)\r\n",
+    "html":
+      "Jamal Hartnett has created a pull request merge commit\r\n<ul>\r\n<li>Merge status: Succeeded</li>\r\n<li>Merge commit: <a href=\"https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72\">eef717</a></li>\r\n</ul>",
+    "markdown":
+      "Jamal Hartnett has created a pull request merge commit\r\n\r\n+ Merge status: Succeeded\r\n+ Merge commit: [eef717](https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72)\r\n"
   },
   "resource": {
     "repository": {
       "id": "4bc14d40-c903-45e2-872e-0462c7748079",
       "name": "Fabrikam",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079",
+      "url":
+        "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079",
       "project": {
         "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
         "name": "Fabrikam",
-        "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+        "url":
+          "https://dev.azure.com/fabrikam/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
         "state": "wellFormed"
       },
       "defaultBranch": "refs/heads/master",
-      "remoteUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_git/Fabrikam"
+      "remoteUrl":
+        "https://dev.azure.com/fabrikam/DefaultCollection/_git/Fabrikam"
     },
     "pullRequestId": 1,
     "status": "completed",
@@ -1839,8 +2011,10 @@ Pull request - Created merge commit
       "id": "54d125f7-69f7-4191-904f-c5b96b6261c8",
       "displayName": "Jamal Hartnett",
       "uniqueName": "fabrikamfiber4@hotmail.com",
-      "url": "https://vssps.dev.azure.com/fabrikam/_apis/Identities/54d125f7-69f7-4191-904f-c5b96b6261c8",
-      "imageUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=54d125f7-69f7-4191-904f-c5b96b6261c8"
+      "url":
+        "https://vssps.dev.azure.com/fabrikam/_apis/Identities/54d125f7-69f7-4191-904f-c5b96b6261c8",
+      "imageUrl":
+        "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=54d125f7-69f7-4191-904f-c5b96b6261c8"
     },
     "creationDate": "2014-06-17T16:55:46.589889Z",
     "closedDate": "2014-06-30T18:59:12.3660573Z",
@@ -1852,15 +2026,18 @@ Pull request - Created merge commit
     "mergeId": "a10bb228-6ba6-4362-abd7-49ea21333dbd",
     "lastMergeSourceCommit": {
       "commitId": "53d54ac915144006c2c9e90d2c7d3880920db49c",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/53d54ac915144006c2c9e90d2c7d3880920db49c"
+      "url":
+        "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/53d54ac915144006c2c9e90d2c7d3880920db49c"
     },
     "lastMergeTargetCommit": {
       "commitId": "a511f535b1ea495ee0c903badb68fbc83772c882",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/a511f535b1ea495ee0c903badb68fbc83772c882"
+      "url":
+        "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/a511f535b1ea495ee0c903badb68fbc83772c882"
     },
     "lastMergeCommit": {
       "commitId": "eef717f69257a6333f221566c1c987dc94cc0d72",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72"
+      "url":
+        "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72"
     },
     "reviewers": [
       {
@@ -1868,13 +2045,17 @@ Pull request - Created merge commit
         "vote": 0,
         "id": "2ea2d095-48f9-4cd6-9966-62f6f574096c",
         "displayName": "[Mobile]\\Mobile Team",
-        "uniqueName": "vstfs:///Classification/TeamProject/f0811a3b-8c8a-4e43-a3bf-9a049b4835bd\\Mobile Team",
-        "url": "https://vssps.dev.azure.com/fabrikam/_apis/Identities/2ea2d095-48f9-4cd6-9966-62f6f574096c",
-        "imageUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=2ea2d095-48f9-4cd6-9966-62f6f574096c",
+        "uniqueName":
+          "vstfs:///Classification/TeamProject/f0811a3b-8c8a-4e43-a3bf-9a049b4835bd\\Mobile Team",
+        "url":
+          "https://vssps.dev.azure.com/fabrikam/_apis/Identities/2ea2d095-48f9-4cd6-9966-62f6f574096c",
+        "imageUrl":
+          "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=2ea2d095-48f9-4cd6-9966-62f6f574096c",
         "isContainer": true
       }
     ],
-    "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/pullRequests/1"
+    "url":
+      "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/pullRequests/1"
   },
   "resourceVersion": "1.0",
   "resourceContainers": {
@@ -1893,6 +2074,7 @@ Pull request - Created merge commit
 ```
 
 <a name="git.pullrequest.updated"></a>
+
 ### Pull request updated
 
 Pull request is updated; status, review list, reviewer vote changed or the source branch is updated with a push
@@ -1901,19 +2083,21 @@ Pull request is updated; status, review list, reviewer vote changed or the sourc
 * Event ID: `git.pullrequest.updated`
 
 #### Settings
- * `notificationType`: The type of pull request change
-   * Valid values: 
-      * `PushNotification` - Source branch updated
-      * `ReviewersUpdateNotification` - Reviewers changed
-      * `StatusUpdateNotification` - Status changed
-      * `ReviewerVoteNotification` - Votes score changed
- * `repository`: The repository that code was pushed to
-   * Data type: `guid`
- * `pullrequestCreatedBy`: A group which has the requester as a member
- * `pullrequestReviewersContains`: A group included in the reviewers list
- * `branch`: The target branch of the pull request
+
+* `notificationType`: The type of pull request change
+  * Valid values:
+    * `PushNotification` - Source branch updated
+    * `ReviewersUpdateNotification` - Reviewers changed
+    * `StatusUpdateNotification` - Status changed
+    * `ReviewerVoteNotification` - Votes score changed
+* `repository`: The repository that code was pushed to
+  * Data type: `guid`
+* `pullrequestCreatedBy`: A group which has the requester as a member
+* `pullrequestReviewersContains`: A group included in the reviewers list
+* `branch`: The target branch of the pull request
 
 #### Sample payload
+
 ```json
 {
   "id": "af07be1b-f3ad-44c8-a7f1-c4835f2df06b",
@@ -1926,23 +2110,29 @@ Pull request is updated; status, review list, reviewer vote changed or the sourc
     "markdown": "Jamal Hartnett marked the pull request as completed"
   },
   "detailedMessage": {
-    "text": "Jamal Hartnett marked the pull request as completed\r\n\r\n- Merge status: Succeeded\r\n- Merge commit: eef717(https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72)\r\n",
-    "html": "Jamal Hartnett marked the pull request as completed\r\n<ul>\r\n<li>Merge status: Succeeded</li>\r\n<li>Merge commit: <a href=\"https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72\">eef717</a></li>\r\n</ul>",
-    "markdown": "Jamal Hartnett marked the pull request as completed\r\n\r\n+ Merge status: Succeeded\r\n+ Merge commit: [eef717](https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72)\r\n"
+    "text":
+      "Jamal Hartnett marked the pull request as completed\r\n\r\n- Merge status: Succeeded\r\n- Merge commit: eef717(https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72)\r\n",
+    "html":
+      "Jamal Hartnett marked the pull request as completed\r\n<ul>\r\n<li>Merge status: Succeeded</li>\r\n<li>Merge commit: <a href=\"https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72\">eef717</a></li>\r\n</ul>",
+    "markdown":
+      "Jamal Hartnett marked the pull request as completed\r\n\r\n+ Merge status: Succeeded\r\n+ Merge commit: [eef717](https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72)\r\n"
   },
   "resource": {
     "repository": {
       "id": "4bc14d40-c903-45e2-872e-0462c7748079",
       "name": "Fabrikam",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079",
+      "url":
+        "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079",
       "project": {
         "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
         "name": "Fabrikam",
-        "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+        "url":
+          "https://dev.azure.com/fabrikam/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
         "state": "wellFormed"
       },
       "defaultBranch": "refs/heads/master",
-      "remoteUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_git/Fabrikam"
+      "remoteUrl":
+        "https://dev.azure.com/fabrikam/DefaultCollection/_git/Fabrikam"
     },
     "pullRequestId": 1,
     "status": "completed",
@@ -1950,8 +2140,10 @@ Pull request is updated; status, review list, reviewer vote changed or the sourc
       "id": "54d125f7-69f7-4191-904f-c5b96b6261c8",
       "displayName": "Jamal Hartnett",
       "uniqueName": "fabrikamfiber4@hotmail.com",
-      "url": "https://vssps.dev.azure.com/fabrikam/_apis/Identities/54d125f7-69f7-4191-904f-c5b96b6261c8",
-      "imageUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=54d125f7-69f7-4191-904f-c5b96b6261c8"
+      "url":
+        "https://vssps.dev.azure.com/fabrikam/_apis/Identities/54d125f7-69f7-4191-904f-c5b96b6261c8",
+      "imageUrl":
+        "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=54d125f7-69f7-4191-904f-c5b96b6261c8"
     },
     "creationDate": "2014-06-17T16:55:46.589889Z",
     "closedDate": "2014-06-30T18:59:12.3660573Z",
@@ -1963,15 +2155,18 @@ Pull request is updated; status, review list, reviewer vote changed or the sourc
     "mergeId": "a10bb228-6ba6-4362-abd7-49ea21333dbd",
     "lastMergeSourceCommit": {
       "commitId": "53d54ac915144006c2c9e90d2c7d3880920db49c",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/53d54ac915144006c2c9e90d2c7d3880920db49c"
+      "url":
+        "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/53d54ac915144006c2c9e90d2c7d3880920db49c"
     },
     "lastMergeTargetCommit": {
       "commitId": "a511f535b1ea495ee0c903badb68fbc83772c882",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/a511f535b1ea495ee0c903badb68fbc83772c882"
+      "url":
+        "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/a511f535b1ea495ee0c903badb68fbc83772c882"
     },
     "lastMergeCommit": {
       "commitId": "eef717f69257a6333f221566c1c987dc94cc0d72",
-      "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72"
+      "url":
+        "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/eef717f69257a6333f221566c1c987dc94cc0d72"
     },
     "reviewers": [
       {
@@ -1979,19 +2174,24 @@ Pull request is updated; status, review list, reviewer vote changed or the sourc
         "vote": 0,
         "id": "2ea2d095-48f9-4cd6-9966-62f6f574096c",
         "displayName": "[Mobile]\\Mobile Team",
-        "uniqueName": "vstfs:///Classification/TeamProject/f0811a3b-8c8a-4e43-a3bf-9a049b4835bd\\Mobile Team",
-        "url": "https://vssps.dev.azure.com/fabrikam/_apis/Identities/2ea2d095-48f9-4cd6-9966-62f6f574096c",
-        "imageUrl": "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=2ea2d095-48f9-4cd6-9966-62f6f574096c",
+        "uniqueName":
+          "vstfs:///Classification/TeamProject/f0811a3b-8c8a-4e43-a3bf-9a049b4835bd\\Mobile Team",
+        "url":
+          "https://vssps.dev.azure.com/fabrikam/_apis/Identities/2ea2d095-48f9-4cd6-9966-62f6f574096c",
+        "imageUrl":
+          "https://dev.azure.com/fabrikam/DefaultCollection/_api/_common/identityImage?id=2ea2d095-48f9-4cd6-9966-62f6f574096c",
         "isContainer": true
       }
     ],
     "commits": [
       {
         "commitId": "53d54ac915144006c2c9e90d2c7d3880920db49c",
-        "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/53d54ac915144006c2c9e90d2c7d3880920db49c"
+        "url":
+          "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/commits/53d54ac915144006c2c9e90d2c7d3880920db49c"
       }
     ],
-    "url": "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/pullRequests/1"
+    "url":
+      "https://dev.azure.com/fabrikam/DefaultCollection/_apis/repos/git/repositories/4bc14d40-c903-45e2-872e-0462c7748079/pullRequests/1"
   },
   "resourceVersion": "1.0",
   "resourceContainers": {
@@ -2012,6 +2212,7 @@ Pull request is updated; status, review list, reviewer vote changed or the sourc
 ## Work item
 
 <a name="workitem.created"></a>
+
 ### Work item created
 
 Filter events to include only newly created work items.
@@ -2020,10 +2221,12 @@ Filter events to include only newly created work items.
 * Event ID: `workitem.created`
 
 #### Settings
- * `areaPath`: Filter events to include only work items under the specified area path.
- * `workItemType`: Filter events to include only work items of the specified type.
+
+* `areaPath`: Filter events to include only work items under the specified area path.
+* `workItemType`: Filter events to include only work items of the specified type.
 
 #### Sample payload
+
 ```json
 {
   "id": "d2d46fb1-dba5-403c-9373-427583f19e8c",
@@ -2031,14 +2234,20 @@ Filter events to include only newly created work items.
   "publisherId": "tfs",
   "scope": "all",
   "message": {
-    "text": "Bug #5 (Some great new idea!) created by Jamal Hartnett.\r\n(https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)",
-    "html": "<a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) created by Jamal Hartnett.",
-    "markdown": "[Bug #5](https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) created by Jamal Hartnett."
+    "text":
+      "Bug #5 (Some great new idea!) created by Jamal Hartnett.\r\n(https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)",
+    "html":
+      "<a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) created by Jamal Hartnett.",
+    "markdown":
+      "[Bug #5](https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) created by Jamal Hartnett."
   },
   "detailedMessage": {
-    "text": "Bug #5 (Some great new idea!) created by Jamal Hartnett.\r\n(https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)\r\n\r\n- Area: FabrikamCloud\r\n- Iteration: FabrikamCloud\\Release 1\\Sprint 1\r\n- State: New\r\n- Assigned to: \r\n- Comment: \r\n- Severity: 3 - Medium\r\n",
-    "html": "<a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) created by Jamal Hartnett.<ul>\r\n<li>Area: FabrikamCloud</li>\r\n<li>Iteration: FabrikamCloud\\Release 1\\Sprint 1</li>\r\n<li>State: New</li>\r\n<li>Assigned to: </li>\r\n<li>Comment: </li>\r\n<li>Severity: 3 - Medium</li></ul>",
-    "markdown": "[Bug #5](https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) created by Jamal Hartnett.\r\n\r\n* Area: FabrikamCloud\r\n* Iteration: FabrikamCloud\\Release 1\\Sprint 1\r\n* State: New\r\n* Assigned to: \r\n* Comment: \r\n* Severity: 3 - Medium\r\n"
+    "text":
+      "Bug #5 (Some great new idea!) created by Jamal Hartnett.\r\n(https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)\r\n\r\n- Area: FabrikamCloud\r\n- Iteration: FabrikamCloud\\Release 1\\Sprint 1\r\n- State: New\r\n- Assigned to: \r\n- Comment: \r\n- Severity: 3 - Medium\r\n",
+    "html":
+      "<a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) created by Jamal Hartnett.<ul>\r\n<li>Area: FabrikamCloud</li>\r\n<li>Iteration: FabrikamCloud\\Release 1\\Sprint 1</li>\r\n<li>State: New</li>\r\n<li>Assigned to: </li>\r\n<li>Comment: </li>\r\n<li>Severity: 3 - Medium</li></ul>",
+    "markdown":
+      "[Bug #5](https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) created by Jamal Hartnett.\r\n\r\n* Area: FabrikamCloud\r\n* Iteration: FabrikamCloud\\Release 1\\Sprint 1\r\n* State: New\r\n* Assigned to: \r\n* Comment: \r\n* Severity: 3 - Medium\r\n"
   },
   "resource": {
     "id": 5,
@@ -2060,22 +2269,28 @@ Filter events to include only newly created work items.
     },
     "_links": {
       "self": {
-        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5"
+        "href":
+          "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5"
       },
       "workItemUpdates": {
-        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/updates"
+        "href":
+          "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/updates"
       },
       "workItemRevisions": {
-        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/revisions"
+        "href":
+          "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/revisions"
       },
       "workItemType": {
-        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/ea830882-2a3c-4095-a53f-972f9a376f6e/workItemTypes/Bug"
+        "href":
+          "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/ea830882-2a3c-4095-a53f-972f9a376f6e/workItemTypes/Bug"
       },
       "fields": {
-        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/fields"
+        "href":
+          "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/fields"
       }
     },
-    "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5"
+    "url":
+      "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5"
   },
   "resourceVersion": "1.0",
   "resourceContainers": {
@@ -2094,6 +2309,7 @@ Filter events to include only newly created work items.
 ```
 
 <a name="workitem.deleted"></a>
+
 ### Work item deleted
 
 Filter events to include only newly deleted work items.
@@ -2102,10 +2318,12 @@ Filter events to include only newly deleted work items.
 * Event ID: `workitem.deleted`
 
 #### Settings
- * `areaPath`: Filter events to include only work items under the specified area path.
- * `workItemType`: Filter events to include only work items of the specified type.
+
+* `areaPath`: Filter events to include only work items under the specified area path.
+* `workItemType`: Filter events to include only work items of the specified type.
 
 #### Sample payload
+
 ```json
 {
   "id": "72da0ade-0709-40ee-beb7-104287bf7e84",
@@ -2118,9 +2336,12 @@ Filter events to include only newly deleted work items.
     "markdown": "[Bug #5](Some great new idea!) deleted by Jamal Hartnett."
   },
   "detailedMessage": {
-    "text": "Bug #5 (Some great new idea!) deleted by Jamal Hartnett.\r\n\r\n- Area: FabrikamCloud\r\n- Iteration: FabrikamCloud\\Release 1\\Sprint 1\r\n- State: New\r\n",
-    "html": "Bug #5 (Some great new idea!) deleted by Jamal Hartnett.<ul>\r\n<li>Area: FabrikamCloud</li>\r\n<li>Iteration: FabrikamCloud\\Release 1\\Sprint 1</li>\r\n<li>State: New</li></ul>",
-    "markdown": "[Bug #5](Some great new idea!) deleted by Jamal Hartnett.\r\n\r\n* Area: FabrikamCloud\r\n* Iteration: FabrikamCloud\\Release 1\\Sprint 1\r\n* State: New\r\n"
+    "text":
+      "Bug #5 (Some great new idea!) deleted by Jamal Hartnett.\r\n\r\n- Area: FabrikamCloud\r\n- Iteration: FabrikamCloud\\Release 1\\Sprint 1\r\n- State: New\r\n",
+    "html":
+      "Bug #5 (Some great new idea!) deleted by Jamal Hartnett.<ul>\r\n<li>Area: FabrikamCloud</li>\r\n<li>Iteration: FabrikamCloud\\Release 1\\Sprint 1</li>\r\n<li>State: New</li></ul>",
+    "markdown":
+      "[Bug #5](Some great new idea!) deleted by Jamal Hartnett.\r\n\r\n* Area: FabrikamCloud\r\n* Iteration: FabrikamCloud\\Release 1\\Sprint 1\r\n* State: New\r\n"
   },
   "resource": {
     "id": 5,
@@ -2142,16 +2363,20 @@ Filter events to include only newly deleted work items.
     },
     "_links": {
       "self": {
-        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/recyclebin/5"
+        "href":
+          "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/recyclebin/5"
       },
       "workItemType": {
-        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/ea830882-2a3c-4095-a53f-972f9a376f6e/workItemTypes/Bug"
+        "href":
+          "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/ea830882-2a3c-4095-a53f-972f9a376f6e/workItemTypes/Bug"
       },
       "fields": {
-        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/fields"
+        "href":
+          "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/fields"
       }
     },
-    "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/recyclebin/5"
+    "url":
+      "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/recyclebin/5"
   },
   "resourceVersion": "1.0",
   "resourceContainers": {
@@ -2170,6 +2395,7 @@ Filter events to include only newly deleted work items.
 ```
 
 <a name="workitem.restored"></a>
+
 ### Work item restored
 
 Filter events to include only newly restored work items.
@@ -2178,10 +2404,12 @@ Filter events to include only newly restored work items.
 * Event ID: `workitem.restored`
 
 #### Settings
- * `areaPath`: Filter events to include only work items under the specified area path.
- * `workItemType`: Filter events to include only work items of the specified type.
+
+* `areaPath`: Filter events to include only work items under the specified area path.
+* `workItemType`: Filter events to include only work items of the specified type.
 
 #### Sample payload
+
 ```json
 {
   "id": "1ca023d6-6cff-49dd-b3d1-302b69311810",
@@ -2189,14 +2417,20 @@ Filter events to include only newly restored work items.
   "publisherId": "tfs",
   "scope": "all",
   "message": {
-    "text": "Bug #5 (Some great new idea!) restored by Jamal Hartnett.\r\n(https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)",
-    "html": "<a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) restored by Jamal Hartnett.",
-    "markdown": "[Bug #5](https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) restored by Jamal Hartnett."
+    "text":
+      "Bug #5 (Some great new idea!) restored by Jamal Hartnett.\r\n(https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)",
+    "html":
+      "<a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) restored by Jamal Hartnett.",
+    "markdown":
+      "[Bug #5](https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) restored by Jamal Hartnett."
   },
   "detailedMessage": {
-    "text": "Bug #5 (Some great new idea!) restored by Jamal Hartnett.\r\n(https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)\r\n\r\n- Area: FabrikamCloud\r\n- Iteration: FabrikamCloud\\Release 1\\Sprint 1\r\n- State: New\r\n- Severity: 3 - Medium\r\n",
-    "html": "<a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) restored by Jamal Hartnett.<ul>\r\n<li>Area: FabrikamCloud</li>\r\n<li>Iteration: FabrikamCloud\\Release 1\\Sprint 1</li>\r\n<li>State: New</li>Severity: 3 - Medium</li></ul>",
-    "markdown": "[Bug #5](https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) restored by Jamal Hartnett.\r\n\r\n* Area: FabrikamCloud\r\n* Iteration: FabrikamCloud\\Release 1\\Sprint 1\r\n* State: New\r\n* Severity: 3 - Medium\r\n"
+    "text":
+      "Bug #5 (Some great new idea!) restored by Jamal Hartnett.\r\n(https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)\r\n\r\n- Area: FabrikamCloud\r\n- Iteration: FabrikamCloud\\Release 1\\Sprint 1\r\n- State: New\r\n- Severity: 3 - Medium\r\n",
+    "html":
+      "<a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) restored by Jamal Hartnett.<ul>\r\n<li>Area: FabrikamCloud</li>\r\n<li>Iteration: FabrikamCloud\\Release 1\\Sprint 1</li>\r\n<li>State: New</li>Severity: 3 - Medium</li></ul>",
+    "markdown":
+      "[Bug #5](https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) restored by Jamal Hartnett.\r\n\r\n* Area: FabrikamCloud\r\n* Iteration: FabrikamCloud\\Release 1\\Sprint 1\r\n* State: New\r\n* Severity: 3 - Medium\r\n"
   },
   "resource": {
     "id": 5,
@@ -2218,28 +2452,36 @@ Filter events to include only newly restored work items.
     },
     "_links": {
       "self": {
-        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5"
+        "href":
+          "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5"
       },
       "workItemUpdates": {
-        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/updates"
+        "href":
+          "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/updates"
       },
       "workItemRevisions": {
-        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/revisions"
+        "href":
+          "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/revisions"
       },
       "workItemType": {
-        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/ea830882-2a3c-4095-a53f-972f9a376f6e/workItemTypes/Bug"
+        "href":
+          "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/ea830882-2a3c-4095-a53f-972f9a376f6e/workItemTypes/Bug"
       },
       "fields": {
-        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/fields"
+        "href":
+          "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/fields"
       },
       "html": {
-        "href": "https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=5"
+        "href":
+          "https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=5"
       },
       "workItemHistory": {
-        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/history"
+        "href":
+          "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/history"
       }
     },
-    "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5"
+    "url":
+      "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5"
   },
   "resourceVersion": "1.0",
   "resourceContainers": {
@@ -2258,6 +2500,7 @@ Filter events to include only newly restored work items.
 ```
 
 <a name="workitem.updated"></a>
+
 ### Work item updated
 
 Filter events to include only changed work items.
@@ -2266,11 +2509,13 @@ Filter events to include only changed work items.
 * Event ID: `workitem.updated`
 
 #### Settings
- * `areaPath`: Filter events to include only work items under the specified area path.
- * `changedFields`: Filter events to include only work items with the specified field(s) changed.
- * `workItemType`: Filter events to include only work items of the specified type.
+
+* `areaPath`: Filter events to include only work items under the specified area path.
+* `changedFields`: Filter events to include only work items with the specified field(s) changed.
+* `workItemType`: Filter events to include only work items of the specified type.
 
 #### Sample payload
+
 ```json
 {
   "id": "27646e0e-b520-4d2b-9411-bba7524947cd",
@@ -2278,14 +2523,20 @@ Filter events to include only changed work items.
   "publisherId": "tfs",
   "scope": "all",
   "message": {
-    "text": "Bug #5 (Some great new idea!) updated by Jamal Hartnett.\r\n(https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)",
-    "html": "<a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) updated by Jamal Hartnett.",
-    "markdown": "[Bug #5](https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) updated by Jamal Hartnett."
+    "text":
+      "Bug #5 (Some great new idea!) updated by Jamal Hartnett.\r\n(https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)",
+    "html":
+      "<a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) updated by Jamal Hartnett.",
+    "markdown":
+      "[Bug #5](https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) updated by Jamal Hartnett."
   },
   "detailedMessage": {
-    "text": "Bug #5 (Some great new idea!) updated by Jamal Hartnett.\r\n(https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)\r\n\r\n- New State: Approved\r\n",
-    "html": "<a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) updated by Jamal Hartnett.<ul>\r\n<li>New State: Approved</li></ul>",
-    "markdown": "[Bug #5](https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) updated by Jamal Hartnett.\r\n\r\n* New State: Approved\r\n"
+    "text":
+      "Bug #5 (Some great new idea!) updated by Jamal Hartnett.\r\n(https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)\r\n\r\n- New State: Approved\r\n",
+    "html":
+      "<a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) updated by Jamal Hartnett.<ul>\r\n<li>New State: Approved</li></ul>",
+    "markdown":
+      "[Bug #5](https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) updated by Jamal Hartnett.\r\n\r\n* New State: Approved\r\n"
   },
   "resource": {
     "id": 2,
@@ -2332,16 +2583,20 @@ Filter events to include only changed work items.
     },
     "_links": {
       "self": {
-        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/updates/2"
+        "href":
+          "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/updates/2"
       },
       "parent": {
-        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5"
+        "href":
+          "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5"
       },
       "workItemUpdates": {
-        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/updates"
+        "href":
+          "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/updates"
       }
     },
-    "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/updates/2",
+    "url":
+      "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/updates/2",
     "revision": {
       "id": 5,
       "rev": 2,
@@ -2360,7 +2615,8 @@ Filter events to include only changed work items.
         "Microsoft.Azure DevOps Services.Common.Severity": "3 - Medium",
         "WEF_EB329F44FE5F4A94ACB1DA153FDF38BA_Kanban.Column": "New"
       },
-      "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/revisions/2"
+      "url":
+        "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/revisions/2"
     }
   },
   "resourceVersion": "1.0",
@@ -2379,8 +2635,8 @@ Filter events to include only changed work items.
 }
 ```
 
-
 <a name="workitem.commented"></a>
+
 ### Work item commented on
 
 Filter events to include only work items commented on.
@@ -2389,11 +2645,13 @@ Filter events to include only work items commented on.
 * Event ID: `workitem.commented`
 
 #### Settings
- * `areaPath`: Filter events to include only work items under the specified area path.
- * `commentPattern`: The string that must be found in the comment.
- * `workItemType`: Filter events to include only work items of the specified type.
+
+* `areaPath`: Filter events to include only work items under the specified area path.
+* `commentPattern`: The string that must be found in the comment.
+* `workItemType`: Filter events to include only work items of the specified type.
 
 #### Sample payload
+
 ```json
 {
   "id": "fb2617ed-60df-4518-81fa-749faa6c5cd6",
@@ -2401,14 +2659,20 @@ Filter events to include only work items commented on.
   "publisherId": "tfs",
   "scope": "all",
   "message": {
-    "text": "Bug #5 (Some great new idea!) commented on by Jamal Hartnett.\r\n(https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)",
-    "html": "<a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) commented on by Jamal Hartnett.",
-    "markdown": "[Bug #5](https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) commented on by Jamal Hartnett."
+    "text":
+      "Bug #5 (Some great new idea!) commented on by Jamal Hartnett.\r\n(https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)",
+    "html":
+      "<a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) commented on by Jamal Hartnett.",
+    "markdown":
+      "[Bug #5](https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) commented on by Jamal Hartnett."
   },
   "detailedMessage": {
-    "text": "Bug #5 (Some great new idea!) commented on by Jamal Hartnett.\r\n(https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)\r\nThis is a great new idea",
-    "html": "<a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) commented on by Jamal Hartnett.<br/>This is a great new idea",
-    "markdown": "[Bug #5](https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) commented on by Jamal Hartnett.\r\nThis is a great new idea"
+    "text":
+      "Bug #5 (Some great new idea!) commented on by Jamal Hartnett.\r\n(https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)\r\nThis is a great new idea",
+    "html":
+      "<a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) commented on by Jamal Hartnett.<br/>This is a great new idea",
+    "markdown":
+      "[Bug #5](https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) commented on by Jamal Hartnett.\r\nThis is a great new idea"
   },
   "resource": {
     "id": 5,
@@ -2431,22 +2695,28 @@ Filter events to include only work items commented on.
     },
     "_links": {
       "self": {
-        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5"
+        "href":
+          "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5"
       },
       "workItemUpdates": {
-        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/updates"
+        "href":
+          "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/updates"
       },
       "workItemRevisions": {
-        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/revisions"
+        "href":
+          "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/revisions"
       },
       "workItemType": {
-        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/ea830882-2a3c-4095-a53f-972f9a376f6e/workItemTypes/Bug"
+        "href":
+          "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/ea830882-2a3c-4095-a53f-972f9a376f6e/workItemTypes/Bug"
       },
       "fields": {
-        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/fields"
+        "href":
+          "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/fields"
       }
     },
-    "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5"
+    "url":
+      "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5"
   },
   "resourceVersion": "1.0",
   "resourceContainers": {
@@ -2467,6 +2737,7 @@ Filter events to include only work items commented on.
 ## Deprecated event types
 
 <a name="message.posted"></a>
+
 ### Team room message posted
 
 Triggers when a message is posted to a team room
@@ -2475,12 +2746,14 @@ Triggers when a message is posted to a team room
 * Event ID: `message.posted`
 
 #### Settings
- * `messagePattern`: The string that must be found in the message
- * `roomId`: Filter events to include only messages sent to the specified Team room
-   * Data type: `number`
-   * Required
+
+* `messagePattern`: The string that must be found in the message
+* `roomId`: Filter events to include only messages sent to the specified Team room
+  * Data type: `number`
+  * Required
 
 #### Sample payload
+
 ```json
 {
   "id": "daae438c-296b-4512-b08e-571910874e9b",
@@ -2488,14 +2761,20 @@ Triggers when a message is posted to a team room
   "publisherId": "tfs",
   "scope": "all",
   "message": {
-    "text": "Jamal Hartnett posted a message to Fabrikam-Fiber-Git Team Room\r\nHello",
-    "html": "Jamal Hartnett posted a message to Fabrikam-Fiber-Git Team Room\r\nHello",
-    "markdown": "Jamal Hartnett posted a message to Fabrikam-Fiber-Git Team Room\r\nHello"
+    "text":
+      "Jamal Hartnett posted a message to Fabrikam-Fiber-Git Team Room\r\nHello",
+    "html":
+      "Jamal Hartnett posted a message to Fabrikam-Fiber-Git Team Room\r\nHello",
+    "markdown":
+      "Jamal Hartnett posted a message to Fabrikam-Fiber-Git Team Room\r\nHello"
   },
   "detailedMessage": {
-    "text": "Jamal Hartnett posted a message to Fabrikam-Fiber-Git Team Room\r\nHello",
-    "html": "Jamal Hartnett posted a message to Fabrikam-Fiber-Git Team Room<p>Hello</p>",
-    "markdown": "Jamal Hartnett posted a message to Fabrikam-Fiber-Git Team Room\r\nHello"
+    "text":
+      "Jamal Hartnett posted a message to Fabrikam-Fiber-Git Team Room\r\nHello",
+    "html":
+      "Jamal Hartnett posted a message to Fabrikam-Fiber-Git Team Room<p>Hello</p>",
+    "markdown":
+      "Jamal Hartnett posted a message to Fabrikam-Fiber-Git Team Room\r\nHello"
   },
   "resource": {
     "id": 0,
@@ -2532,4 +2811,3 @@ The event payload contains a `resourceContainers` dictionary that includes the I
 * **Team Foundation Server 2015**: includes project, collection, and server. Does not include `baseUrl`.
 * **Team Foundation Server 2017**: includes project, collection, and server. Includes `baseUrl` for each.
 * **Azure DevOps Services**: includes project and collection (account). Includes `baseUrl` for each.
-

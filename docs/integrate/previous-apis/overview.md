@@ -16,53 +16,54 @@ ms.date: 08/04/2016
 The Team Foundation Server APIs are based on REST, JSON and service hooks - all standard web technologies broadly supported in the industry.
 
 > [!NOTE]
-> The REST APIs documented here are for older versions of the APIs (TFS 2015 up to TFS 2018 Update 1). The newest versions can be found in the [Azure DevOps Services REST API documentation](/rest/api/vsts). 
+> The REST APIs documented here are for older versions of the APIs (TFS 2015 up to TFS 2018 Update 1). The newest versions can be found in the [Azure DevOps Services REST API documentation](/rest/api/vsts).
 
 This article walks you through:
 
-- The basic components of a REST API request/response pair.
-- Overviews of creating and sending a REST request, and handling the response.
+* The basic components of a REST API request/response pair.
+* Overviews of creating and sending a REST request, and handling the response.
 
 ## Components of a REST API request/response pair
 
 A REST API request/response pair can be separated into five components:
 
-1. The **request URI**, in the following form: `VERB https://{server:port}/tfs[/{collection}[/{team-project}]/_apis[/{area}]/{resource}?api-version={version}`
-   * *collection*: The name of the collection, like `DefaultCollection`.
-   * *resource path*: The collection should be followed by `_apis/{area}/{resource}`. For example, `_apis/wit/workitems`.
-   * *api-version*: Every API request should include an api-version to avoid having your app or service break as APIs evolve. api-versions are in the following format: `{major}.{minor}[-{stage}[.{resource-version}]]`, for example:
-       * `api-version=1.0`
-       * `api-version=1.2-preview`
-       * `api-version=2.0-preview.1`
+1.  The **request URI**, in the following form: `VERB https://{server:port}/tfs[/{collection}[/{team-project}]/_apis[/{area}]/{resource}?api-version={version}`
 
-     > Note: *area* and *team-project* are optional, depending on the API request. Check out the [TFS to REST API version mapping matrix](#api-and-tfs-version-mapping) below to find which REST API versions apply to your version of TFS.
+    * _collection_: The name of the collection, like `DefaultCollection`.
+    * _resource path_: The collection should be followed by `_apis/{area}/{resource}`. For example, `_apis/wit/workitems`.
+    * _api-version_: Every API request should include an api-version to avoid having your app or service break as APIs evolve. api-versions are in the following format: `{major}.{minor}[-{stage}[.{resource-version}]]`, for example:
 
-2. HTTP **request message header** fields:
+      * `api-version=1.0`
+      * `api-version=1.2-preview`
+      * `api-version=2.0-preview.1`
+
+      > Note: _area_ and _team-project_ are optional, depending on the API request. Check out the [TFS to REST API version mapping matrix](#api-and-tfs-version-mapping) below to find which REST API versions apply to your version of TFS.
+
+2.  HTTP **request message header** fields:
     * A required [HTTP method](https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html) (also known as an operation or verb), which tells the service what type of operation you are requesting. Azure REST APIs support GET, HEAD, PUT, POST, and PATCH methods.
     * Optional additional header fields, as required by the specified URI and HTTP method. For example, an Authorization header that provides a bearer token containing client authorization information for the request.
-3. Optional HTTP **request message body** fields, to support the URI and HTTP operation. For example, POST operations contain MIME-encoded objects that are passed as complex parameters. 
+3.  Optional HTTP **request message body** fields, to support the URI and HTTP operation. For example, POST operations contain MIME-encoded objects that are passed as complex parameters.
     * For POST or PUT operations, the MIME-encoding type for the body should be specified in the Content-type request header as well. Some services require you to use a specific MIME type, such as `application/json`.
-4. HTTP **response message header** fields:
+4.  HTTP **response message header** fields:
     * An [HTTP status code](https://www.w3.org/Protocols/HTTP/HTRESP.html), ranging from 2xx success codes to 4xx or 5xx error codes. Alternatively, a service-defined status code may be returned, as indicated in the API documentation.
     * Optional additional header fields, as required to support the request's response, such as a `Content-type` response header.
-5. Optional HTTP **response message body** fields:
+5.  Optional HTTP **response message body** fields:
     * MIME-encoded response objects may be returned in the HTTP response body, such as a response from a GET method that is returning data. Typically, these objects are returned in a structured format such as JSON or XML, as indicated by the `Content-type` response header. For example, when you request an access token from Azure AD, it will be returned in the response body as the `access_token` element, one of several name/value paired objects in a data collection. In this example, a response header of `Content-Type: application/json` is also included.
-
 
 ## Create the request
 
-### Authenticate 
+### Authenticate
 
 There are many ways to authenticate your application or service with Team Services or TFS. The following table is an excellent way to decide which method is the best for you:
 
-| Type of application | Description | example |Authentication mechanism | Code samples |
-|---------------------|-------------|---------|-------------------------|--------|
-| Interactive client-side  | GUI based client side application | Windows app enumerating bugs for a user | [Active Directory authentication library (ADAL)](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ManagedClientConsoleAppSample) |
-| Interactive Javascript | GUI based Javascript application | AngularJS single page app displaying work items for a user | [ADAL](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) | sample (coming soon) |
-| Non-interactive client-side | Headless text only client side application | Console app displaying all bugs assigned to a user | [Device Profile](/samples/azure-samples/active-directory-dotnetcore-devicecodeflow-v2/invoke-protected-api-text/) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/DeviceProfileSample) |
-| Interactive web | GUI based web application | Custom Web dashboard displaying build summaries |[OAuth](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/oauth) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample) |
-| TFS application | TFS app using the Client OM library | TFS extension displaying team bug dashboards | [Client Libraries](https://docs.microsoft.com/azure/devops/integrate/concepts/dotnet-client-libraries) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
-| [TFS Extension](https://www.visualstudio.com/docs/integrate/extensions/get-started/node#files) | TFS extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walkthrough](https://www.visualstudio.com/docs/integrate/extensions/develop/add-dashboard-widget) |
+| Type of application                                                                            | Description                                | example                                                                                | Authentication mechanism                                                                                                                              | Code samples                                                                                              |
+| ---------------------------------------------------------------------------------------------- | ------------------------------------------ | -------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Interactive client-side                                                                        | GUI based client side application          | Windows app enumerating bugs for a user                                                | [Active Directory authentication library (ADAL)](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ManagedClientConsoleAppSample)        |
+| Interactive Javascript                                                                         | GUI based Javascript application           | AngularJS single page app displaying work items for a user                             | [ADAL](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries)                                           | sample (coming soon)                                                                                      |
+| Non-interactive client-side                                                                    | Headless text only client side application | Console app displaying all bugs assigned to a user                                     | [Device Profile](/samples/azure-samples/active-directory-dotnetcore-devicecodeflow-v2/invoke-protected-api-text/)                                     | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/DeviceProfileSample)                  |
+| Interactive web                                                                                | GUI based web application                  | Custom Web dashboard displaying build summaries                                        | [OAuth](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/oauth)                                                           | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample)                       |
+| TFS application                                                                                | TFS app using the Client OM library        | TFS extension displaying team bug dashboards                                           | [Client Libraries](https://docs.microsoft.com/azure/devops/integrate/concepts/dotnet-client-libraries)                                                | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample)        |
+| [TFS Extension](https://www.visualstudio.com/docs/integrate/extensions/get-started/node#files) | TFS extension                              | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk)                                                                           | [sample walkthrough](https://www.visualstudio.com/docs/integrate/extensions/develop/add-dashboard-widget) |
 
 > [!NOTE]
 > You can find more information on authentication on our [authentication guidance page](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/authentication-guidance).
@@ -85,43 +86,49 @@ You should get a response like this.
 
 ```json
 {
-    "value": [
-        {
-            "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
-            "name": "Fabrikam-Fiber-TFVC",
-            "url": "https: //fabrikam-fiber-inc:8080/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
-            "description": "TeamFoundationVersionControlprojects",
-            "collection": {
-                "id": "d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
-                "name": "DefaultCollection",
-                "url": "https: //fabrikam-fiber-inc:8080/_apis/projectCollections/d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
-                "collectionUrl": "https: //fabrikam-fiber-inc:8080/DefaultCollection"
-            },
-            "defaultTeam": {
-                "id": "66df9be7-3586-467b-9c5f-425b29afedfd",
-                "name": "Fabrikam-Fiber-TFVCTeam",
-                "url": "https: //fabrikam-fiber-inc:8080/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1/teams/66df9be7-3586-467b-9c5f-425b29afedfd"
-            }
-        },
-        {
-            "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
-            "name": "Fabrikam-Fiber-Git",
-            "url": "https: //fabrikam-fiber-inc:8080/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
-            "description": "Gitprojects",
-            "collection": {
-                "id": "d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
-                "name": "DefaultCollection",
-                "url": "https: //fabrikam-fiber-inc:8080/_apis/projectCollections/d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
-                "collectionUrl": "https: //fabrikam-fiber-inc:8080/DefaultCollection"
-            },
-            "defaultTeam": {
-                "id": "8bd35c5e-30bb-4834-a0c4-d576ce1b8df7",
-                "name": "Fabrikam-Fiber-GitTeam",
-                "url": "https: //fabrikam-fiber-inc:8080/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/teams/8bd35c5e-30bb-4834-a0c4-d576ce1b8df7"
-            }
-        }
-    ],
-    "count": 2
+  "value": [
+    {
+      "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
+      "name": "Fabrikam-Fiber-TFVC",
+      "url":
+        "https: //fabrikam-fiber-inc:8080/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
+      "description": "TeamFoundationVersionControlprojects",
+      "collection": {
+        "id": "d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
+        "name": "DefaultCollection",
+        "url":
+          "https: //fabrikam-fiber-inc:8080/_apis/projectCollections/d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
+        "collectionUrl": "https: //fabrikam-fiber-inc:8080/DefaultCollection"
+      },
+      "defaultTeam": {
+        "id": "66df9be7-3586-467b-9c5f-425b29afedfd",
+        "name": "Fabrikam-Fiber-TFVCTeam",
+        "url":
+          "https: //fabrikam-fiber-inc:8080/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1/teams/66df9be7-3586-467b-9c5f-425b29afedfd"
+      }
+    },
+    {
+      "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+      "name": "Fabrikam-Fiber-Git",
+      "url":
+        "https: //fabrikam-fiber-inc:8080/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+      "description": "Gitprojects",
+      "collection": {
+        "id": "d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
+        "name": "DefaultCollection",
+        "url":
+          "https: //fabrikam-fiber-inc:8080/_apis/projectCollections/d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
+        "collectionUrl": "https: //fabrikam-fiber-inc:8080/DefaultCollection"
+      },
+      "defaultTeam": {
+        "id": "8bd35c5e-30bb-4834-a0c4-d576ce1b8df7",
+        "name": "Fabrikam-Fiber-GitTeam",
+        "url":
+          "https: //fabrikam-fiber-inc:8080/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/teams/8bd35c5e-30bb-4834-a0c4-d576ce1b8df7"
+      }
+    }
+  ],
+  "count": 2
 }
 ```
 
@@ -134,18 +141,18 @@ Now you should be able to look around the specific API areas like [work item tra
 
 Below you'll find a quick mapping of REST API versions and their corresponding TFS releases. All API versions will work on the server version mentioned as well as later versions.
 
-| TFS Version           | REST API Version  |
-|-----------------------|-------------------|
-| TFS 2017 Update 2     | 3.2               |
-| TFS 2017 Update 1     | 3.1               |
-| TFS 2017 RTW          | 3.0               |
-| TFS 2015 Update 3     | 2.3               |
-| TFS 2015 Update 2     | 2.2               |
-| TFS 2015 Update 1     | 2.1               |
-| TFS 2015 RTW          | 2.0               |
-
+| TFS Version       | REST API Version |
+| ----------------- | ---------------- |
+| TFS 2017 Update 2 | 3.2              |
+| TFS 2017 Update 1 | 3.1              |
+| TFS 2017 RTW      | 3.0              |
+| TFS 2015 Update 3 | 2.3              |
+| TFS 2015 Update 2 | 2.2              |
+| TFS 2015 Update 1 | 2.1              |
+| TFS 2015 RTW      | 2.0              |
 
 ## Full list of REST APIs
+
 If you didn't find what you were looking for in the table above, or if you're just doing some research, below is the full list of APIs:
 
 <table class="table table-striped table-bordered">
@@ -169,7 +176,7 @@ quality. With the Build (1.0) API, you can access each of these components. --NO
 </tr>
 <tr>
 <td><a href="./build/overview.md" data-raw-source="[Build (2.0)](./build/overview.md)">Build (2.0)</a> </td>
-<td>The Build (2.0) APIs provide numerous ways to utilize builds from Team Services or TFS in your extensions. 
+<td>The Build (2.0) APIs provide numerous ways to utilize builds from Team Services or TFS in your extensions.
 Whether you&#39;re kicking a build off, retrieving a build, or just adding a tag, you&#39;ll find what you need here.</td>
 <td>
 <ul><li>Start a build</li>
@@ -224,7 +231,7 @@ from having a physical representation.</td>
 </tr>
 <tr>
 <td><a href="./queues/overview.md" data-raw-source="[Queues](./queues/overview.md)">Queues</a></td>
-<td>An agent queue provides access to a pool of agents. When you create a build or release definition, you specify which queue it uses. 
+<td>An agent queue provides access to a pool of agents. When you create a build or release definition, you specify which queue it uses.
 Queues are scoped to your project collection, so you can share them across Azure Pipelines definitions in multiple projects.</td>
 <td>
 <ul><li>Get a list of queues</li>
@@ -233,7 +240,7 @@ Queues are scoped to your project collection, so you can share them across Azure
 </tr>
 <tr>
 <td><a href="./rm/overview.md" data-raw-source="[Release (preview)](./rm/overview.md)">Release (preview)</a></td>
-<td>Releases reference release definitions to deploy an application compromising of one or more artifacts. Access releases, release definitions, and approvals with 
+<td>Releases reference release definitions to deploy an application compromising of one or more artifacts. Access releases, release definitions, and approvals with
 the Release API.</td>
 <td>
 <ul><li>Create a release definition</li>
@@ -308,7 +315,7 @@ With the service endpoints API, you can access these endpoints along with their 
 </tr>
 <tr>
 <td><a href="./wit/overview.md" data-raw-source="[Work item tracking](./wit/overview.md)">Work item tracking</a></td>
-<td>Work item tracking and management is a large part of a successful DevOps platform. with the Work Item Tracking (WIT) API, you have full access to the work 
+<td>Work item tracking and management is a large part of a successful DevOps platform. with the Work Item Tracking (WIT) API, you have full access to the work
 items that your team uses every day.</td>
 <td>
 <ul><li>Get work items using a query</li>
@@ -323,42 +330,14 @@ items that your team uses every day.</td>
 ## Related Content
 
 * Check out the [Integrate documentation](https://docs.microsoft.com/azure/devops/integrate/) for REST API samples and use cases.
-    * [Authentication guidance](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/authentication-guidance)
-    * [Samples](https://docs.microsoft.com/azure/devops/integrate/get-started/client-libraries/samples)
+  * [Authentication guidance](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/authentication-guidance)
+  * [Samples](https://docs.microsoft.com/azure/devops/integrate/get-started/client-libraries/samples)
 
 ## Client Libraries
+
 * Discover the client libraries for these REST APIs.
-    * [.Net](https://docs.microsoft.com/azure/devops/integrate/concepts/dotnet-client-libraries)
-    * [Node.js](https://github.com/Microsoft/vsts-node-api)
-    * [Python](https://github.com/Microsoft/vsts-python-api)
-    * [Swagger 2.0](https://github.com/MicrosoftDocs/vsts-rest-api-specs)
-    * [Web Extensions SDK](https://github.com/Microsoft/vss-web-extension-sdk)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  * [.Net](https://docs.microsoft.com/azure/devops/integrate/concepts/dotnet-client-libraries)
+  * [Node.js](https://github.com/Microsoft/vsts-node-api)
+  * [Python](https://github.com/Microsoft/vsts-python-api)
+  * [Swagger 2.0](https://github.com/MicrosoftDocs/vsts-rest-api-specs)
+  * [Web Extensions SDK](https://github.com/Microsoft/vss-web-extension-sdk)

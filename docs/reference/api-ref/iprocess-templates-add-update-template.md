@@ -10,25 +10,20 @@ ms.topic: reference
 ms.date: 08/04/2016
 ---
 
-
 # IProcessTemplates.AddUpdateTemplate method (String, String, String, String, String)
 
-**Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions](/previous-versions/visualstudio/visual-studio-2013/bb137716(v=vs.120))**
+**Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions](</previous-versions/visualstudio/visual-studio-2013/bb137716(v=vs.120)>)**
 
+Add or update a process template with the given properties.
 
-
-Add or update a process template with the given properties.  
-
-
-**Namespace**:  [Microsoft.TeamFoundation.Server](https://msdn.microsoft.com/library/microsoft.teamfoundation.server(v=vs.120).aspx)  
-**Assembly**:  Microsoft.TeamFoundation.Client (in Microsoft.TeamFoundation.Client.dll)
-
+**Namespace**: [Microsoft.TeamFoundation.Server](<https://msdn.microsoft.com/library/microsoft.teamfoundation.server(v=vs.120).aspx>)  
+**Assembly**: Microsoft.TeamFoundation.Client (in Microsoft.TeamFoundation.Client.dll)
 
 ## Syntax
 
 <table>
 <tr>
-<td width="75px"> 
+<td width="75px">
 <h4>C#</h4>
 </td>
 <td width="250px">
@@ -37,7 +32,7 @@ Add or update a process template with the given properties.
 </tr>
 
 <tr>
-<td> 
+<td>
 <h4>C++</h4>
 </td>
 <td>
@@ -46,7 +41,7 @@ Add or update a process template with the given properties.
 </tr>
 
 <tr>
-<td> 
+<td>
 <h4>F#</h4>
 </td>
 <td>
@@ -55,7 +50,7 @@ Add or update a process template with the given properties.
 </tr>
 
 <tr>
-<td> 
+<td>
 <h4>VB</h4>
 </td>
 <td>
@@ -64,56 +59,53 @@ Add or update a process template with the given properties.
 </tr>
 </table>
 
-
 ## Parameters
 
-*name*
+_name_
 
 &#160;&#160;&#160;&#160;&#160;Type: [System.String](https://msdn.microsoft.com/library/system.string.aspx)  
-&#160;&#160;&#160;&#160;&#160;This value is no longer used and will be ignored  
+&#160;&#160;&#160;&#160;&#160;This value is no longer used and will be ignored
 
-*description*
-
-&#160;&#160;&#160;&#160;&#160;Type: [System.String](https://msdn.microsoft.com/library/system.string.aspx)  
-&#160;&#160;&#160;&#160;&#160;This value is no longer used and will be ignored  
-
-*metadata*
+_description_
 
 &#160;&#160;&#160;&#160;&#160;Type: [System.String](https://msdn.microsoft.com/library/system.string.aspx)  
-&#160;&#160;&#160;&#160;&#160;This value is no longer used and will be ignored  
+&#160;&#160;&#160;&#160;&#160;This value is no longer used and will be ignored
 
-*state*
-
-&#160;&#160;&#160;&#160;&#160;Type: [System.String](https://msdn.microsoft.com/library/system.string.aspx)  
-&#160;&#160;&#160;&#160;&#160;This value is no longer used and will be ignored  
-
-*zipFileName*
+_metadata_
 
 &#160;&#160;&#160;&#160;&#160;Type: [System.String](https://msdn.microsoft.com/library/system.string.aspx)  
-&#160;&#160;&#160;&#160;&#160;The name of the zip file that contains the process template resources  
+&#160;&#160;&#160;&#160;&#160;This value is no longer used and will be ignored
 
+_state_
+
+&#160;&#160;&#160;&#160;&#160;Type: [System.String](https://msdn.microsoft.com/library/system.string.aspx)  
+&#160;&#160;&#160;&#160;&#160;This value is no longer used and will be ignored
+
+_zipFileName_
+
+&#160;&#160;&#160;&#160;&#160;Type: [System.String](https://msdn.microsoft.com/library/system.string.aspx)  
+&#160;&#160;&#160;&#160;&#160;The name of the zip file that contains the process template resources
 
 ## Remarks
 
-
 **Change in API Behavior for TFS 2015**
 
-API values for the name, description and metadata arguments are now overridden by the process template data specified in the *zipFileName*. This change was required to avoid conflicts between the ZIP file contents and parameters passed through the API.
+API values for the name, description and metadata arguments are now overridden by the process template data specified in the _zipFileName_. This change was required to avoid conflicts between the ZIP file contents and parameters passed through the API.
 
 These properties are defined in the [ProcessTemplate.xml file](https://msdn.microsoft.com/library/aa395261.aspx).
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>  
-<ProcessTemplate>    
-  <metadata>   
-    <name>Agile</name>   
+<ProcessTemplate>
+  <metadata>
+    <name>Agile</name>
     <description>This template is flexible and will work great for most teams using Agile planning methods, including those practicing Scrum.</description>  
-    <version type="ADCC42AB-9882-485E-A3ED-7678F01F66BC" major="14" minor="1" />    
-    <plugins>    
-      . . .   
-   </plugins>    
-  </metadata>   
-  <groups>   
+    <version type="ADCC42AB-9882-485E-A3ED-7678F01F66BC" major="14" minor="1" />
+    <plugins>
+      . . .
+   </plugins>
+  </metadata>
+  <groups>
 ```
 
 ## Related articles

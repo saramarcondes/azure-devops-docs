@@ -15,8 +15,7 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-An audit log entry for an extension 
+An audit log entry for an extension
 
 ### Members
 
@@ -27,4 +26,3 @@ An audit log entry for an extension
 * `comment`: string. Extra information about the change
 
 * `updatedBy`: any. Represents the user who made the change
-

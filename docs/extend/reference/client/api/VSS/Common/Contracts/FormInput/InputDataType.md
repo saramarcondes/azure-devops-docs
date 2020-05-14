@@ -26,4 +26,3 @@ Module path: `VSS/Common/Contracts/FormInput`
 * `Guid` Represents a Guid.
 
 * `Uri` Represents a URI.
-

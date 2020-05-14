@@ -8,12 +8,11 @@ ms.date: 08/22/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Build and deploy your app
 
 [!INCLUDE [temp](../includes/version.md)]
 
-<!--- NOT INCLUDED IN TOC --> 
+<!--- NOT INCLUDED IN TOC -->
 
 This is a selection of the growing range of examples we are creating
 to demonstrate the many ways you can build and deploy

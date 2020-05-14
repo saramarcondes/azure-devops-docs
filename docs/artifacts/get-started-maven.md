@@ -26,13 +26,13 @@ This quickstart assumes you've already set up Azure Artifacts. You can check out
 
 ### Prerequisites
 
-1. Apache Maven installed. You can download it from the [Apache Maven site](https://maven.apache.org/download.cgi).
+1.  Apache Maven installed. You can download it from the [Apache Maven site](https://maven.apache.org/download.cgi).
 
-2. Have [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) installed in your organization.
+2.  Have [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) installed in your organization.
 
 ## Create a feed
 
-*Already have a feed? [Skip to the next step](#setup-your-POM-and-settings-.xml).*
+_Already have a feed? [Skip to the next step](#setup-your-POM-and-settings-.xml)._
 
 [!INCLUDE [](includes/create-feed.md)]
 
@@ -58,7 +58,7 @@ This quickstart assumes you've already set up Azure Artifacts. You can check out
 
 ## Automate the process with continuous integration
 
-You can use continuous integration systems such as Team Build to automate the installation and publishing of your Maven artifacts. 
+You can use continuous integration systems such as Team Build to automate the installation and publishing of your Maven artifacts.
 To get started with continuous integration, see the [Maven in Team Build guidance](/azure/devops/pipelines/packages/maven).
 
 ## What's next?

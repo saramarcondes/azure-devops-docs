@@ -19,22 +19,23 @@ ms.date: 12/04/2018
 You use Team Explorer to coordinate your code efforts with other team members to develop a software project. In addition, you can manage work and that is assigned to you, your team, or your projects. Team Explorer is a plug-in that installs with Visual Studio and Team Explorer Everywhere is a plug-in that installs with Eclipse. Developers can effectively collaborate using Team Explorer connected to projects hosted on Azure DevOps Services or an on-premises Azure DevOps Server (previously named Team Foundation Server (TFS)).
 
 > [!TIP]
-> You can install the latest version of Visual Studio clients from the [Visual Studio downloads page](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). 
-> 
-> Additional options for connecting to Azure DevOps Services or TFS include:  
-> - [Team Explorer Everywhere](/previous-versions/azure/devops/java/download-eclipse-plug-in)
-> - [Azure DevOps Plugin for Android Studio](/previous-versions/azure/devops/java/download-android-studio-plug-in)  
-> - [Azure DevOps Plugin for IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in)
-> - [Visual Studio Code](/previous-versions/azure/devops/java/vscode-extension)  
-> 
+> You can install the latest version of Visual Studio clients from the [Visual Studio downloads page](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
+>
+> Additional options for connecting to Azure DevOps Services or TFS include:
+>
+> * [Team Explorer Everywhere](/previous-versions/azure/devops/java/download-eclipse-plug-in)
+> * [Azure DevOps Plugin for Android Studio](/previous-versions/azure/devops/java/download-android-studio-plug-in)
+> * [Azure DevOps Plugin for IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in)
+> * [Visual Studio Code](/previous-versions/azure/devops/java/vscode-extension)
+>
 > For information about compatibility among client and server versions, see [Requirements and compatibility](/azure/devops/server/requirements).
 
 If you don't need Visual Studio, but want to connect to a project in Azure DevOps, you can install the free [Visual Studio Community](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs).
 
-## Prerequisites 
+## Prerequisites
 
-- You must have a project in Azure DevOps. If you need to add a project, see [Create a project](../organizations/projects/create-project.md).
-- You must be a member of the project you connect to. To get added, see [Add users to a project or team](../organizations/security/add-users-team-project.md).
+* You must have a project in Azure DevOps. If you need to add a project, see [Create a project](../organizations/projects/create-project.md).
+* You must be a member of the project you connect to. To get added, see [Add users to a project or team](../organizations/security/add-users-team-project.md).
 
 ## Connect to a project or repository
 
@@ -47,18 +48,17 @@ From the **Connect** page, you can select the projects you want to connect to an
 
 ![Team Explorer, Connect](media/vs-2019-te/manage-connections.png)
 
+The Git and TFVC repos support different pages and functions. For a comparison of the two version control systems, see [Choosing the right version control for your project](../repos/tfvc/comparison-git-tfvc.md).
 
-The Git and TFVC repos support different pages and functions. For a comparison of the two version control systems, see [Choosing the right version control for your project](../repos/tfvc/comparison-git-tfvc.md). 
+## Git version control and repository
 
-## Git version control and repository 
+The following images show the pages available when you connect to a Git repository from Team Explorer.
 
-The following images show the pages available when you connect to a Git repository from Team Explorer. 
+> | Visual Studio 2019                                                                                          | Visual Studio 2017                                                                                          | Visual Studio 2015                                                                           |
+> | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+> | ![Visual studio 2019, Team Explorer Home page with Git as source control](media/vs-2019-te/te-git-full.png) | ![Visual studio 2017, Team Explorer Home page with Git as source control](media/vs-2017-te/te-git-full.png) | ![Visual Studio 2015, Team Explorer Home page w/ TFVC as source control](media/IC827210.png) |
 
-> |Visual Studio 2019| Visual Studio 2017 | Visual Studio 2015 |  
-> |------|---------|---------|  
-> | ![Visual studio 2019, Team Explorer Home page with Git as source control](media/vs-2019-te/te-git-full.png) |![Visual studio 2017, Team Explorer Home page with Git as source control](media/vs-2017-te/te-git-full.png) | ![Visual Studio 2015, Team Explorer Home page w/ TFVC as source control](media/IC827210.png) |  
-
-To learn more about each page, see the following articles. 
+To learn more about each page, see the following articles.
 
 <table width="100%">
 <tbody valign="top">
@@ -69,7 +69,7 @@ To learn more about each page, see the following articles.
 </tr>
 
 <tr>
-<td> 
+<td>
 <p><strong>Home</strong></p>
 <ul>
 <li><a href="../project/navigation/index.md" data-raw-source="[Web portal](../project/navigation/index.md)">Web portal</a></li>
@@ -86,7 +86,7 @@ To learn more about each page, see the following articles.
 </ul>
 </td>
 
-<td> 
+<td>
 <ul>
 <li><a href="../repos/git/creatingrepo.md" data-raw-source="[Create a new repo](../repos/git/creatingrepo.md)">Create a new repo</a></li>
 <li><a href="../repos/git/clone.md" data-raw-source="[Clone an existing repo](../repos/git/clone.md)">Clone an existing repo</a></li>
@@ -100,7 +100,7 @@ To learn more about each page, see the following articles.
 </ul>
 </td>
 
-<td> 
+<td>
 <p><strong>Default experience</strong> (Visual Studio 2019 only)</p>
 <ul>
 <li><a href="../boards/work-items/view-add-work-items.md" data-raw-source="[View and add work items](../boards/work-items/view-add-work-items.md)">View and add work items</a></li>
@@ -123,17 +123,17 @@ To learn more about each page, see the following articles.
 </tbody>
 </table>
 
-## Team Foundation version control 
+## Team Foundation version control
 
-The following images show the pages available when you connect to a TFVC repository from Team Explorer. 
+The following images show the pages available when you connect to a TFVC repository from Team Explorer.
 
-> [!div class="mx-tdCol2BreakAll"]  
-> 
-> |Visual Studio 2019| Visual Studio 2017 | Visual Studio 2015 |  
-> |------|---------|---------|
-> | ![Visual Studio 2019, Team Explorer Home page w/ TFVC as source control](media/vs-2019-te/te-tfvc.png) | ![Visual Studio 2017, Team Explorer Home page w/ TFVC as source control](media/vs-2017-te/te-tfvc.png) | ![Visual Studio 2015, Team Explorer Home page w/ TFVC as source control](media/IC827209.png) |  
+> [!div class="mx-tdCol2BreakAll"]
+>
+> | Visual Studio 2019                                                                                     | Visual Studio 2017                                                                                     | Visual Studio 2015                                                                           |
+> | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------- |
+> | ![Visual Studio 2019, Team Explorer Home page w/ TFVC as source control](media/vs-2019-te/te-tfvc.png) | ![Visual Studio 2017, Team Explorer Home page w/ TFVC as source control](media/vs-2017-te/te-tfvc.png) | ![Visual Studio 2015, Team Explorer Home page w/ TFVC as source control](media/IC827209.png) |
 
-To learn more about each page, see the following articles. 
+To learn more about each page, see the following articles.
 
 <table width="100%">
 <tbody valign="top">
@@ -144,7 +144,7 @@ To learn more about each page, see the following articles.
 </tr>
 
 <tr>
-<td> 
+<td>
 <p><strong>Home</strong></p>
 <ul>
 <li><a href="../project/navigation/index.md" data-raw-source="[Web portal](../project/navigation/index.md)">Web portal</a></li>
@@ -161,7 +161,7 @@ To learn more about each page, see the following articles.
 </ul>
 </td>
 
-<td> 
+<td>
 <ul>
 <li><a href="../repos/tfvc/share-your-code-in-tfvc-vs.md#configure-your-workspace" data-raw-source="[Configure workspace](../repos/tfvc/share-your-code-in-tfvc-vs.md#configure-your-workspace)">Configure workspace</a></li>
 <li><strong>My Work</strong>: <a href="../repos/tfvc/suspend-your-work-manage-your-shelvesets.md" data-raw-source="[Suspend/resume work](../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)">Suspend/resume work</a>  &#124; <a href="../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md" data-raw-source="[Code review](../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)">Code review</a></li>
@@ -172,14 +172,14 @@ To learn more about each page, see the following articles.
 </ul>
 </td>
 
-<td> 
+<td>
 
-<p><strong>Default experience</strong> (Visual Studio 2019 only)</p> 
+<p><strong>Default experience</strong> (Visual Studio 2019 only)</p>
 <ul>
 <li><a href="/azure/devops/boards/work-items/view-add-work-items" data-raw-source="[View and add work items](/azure/devops/boards/work-items/view-add-work-items)">View and add work items</a></li>
 <li><a href="/azure/devops/boards/work-items/set-work-item-experience-vs" data-raw-source="[Set the Work Items experience in Visual Studio](/azure/devops/boards/work-items/set-work-item-experience-vs)">Set the Work Items experience in Visual Studio</a></li>
 </ul>
-<p><strong>Legacy experience</strong> (All versions of Visual Studio)</p> 
+<p><strong>Legacy experience</strong> (All versions of Visual Studio)</p>
 <ul>
 <li><a href="../boards/backlogs/add-work-items.md" data-raw-source="[Add work items](../boards/backlogs/add-work-items.md)">Add work items</a></li>
 <li><a href="../boards/queries/using-queries.md" data-raw-source="[Query editor](../boards/queries/using-queries.md)">Query editor</a></li>
@@ -197,20 +197,16 @@ To learn more about each page, see the following articles.
 </tbody>
 </table>
 
-
-
 ## Team Explorer plug-in for Eclipse
 
 If you work in Eclipse or on a non-Windows platform, you can [install the Team Explorer plug-in for Eclipse](/previous-versions/azure/devops/java/download-eclipse-plug-in#to-install-team-explorer-everywhere-from-within-eclipse). Once installed, you can share your Eclipse projects by adding them to Azure DevOps Services or TFS using [Git](../repos/git/share-your-code-in-git-eclipse.md) or [TFVC](../repos/tfvc/share-your-code-in-tfvc-eclipse.md).
-
 
 > [!div class="mx-tdBreakAll"]  
 > |Home page with Git (Eclipse) |Home page with TFVC (Eclipse) |
 > |-------------|----------|
 > |![Eclipse, Team Explorer, Git source control](media/work-team-explorer/tee-git-10.2018.png) |![Eclipse, Team Explorer, TFVC source control](media/work-team-explorer/tee-tfvc-10.2018.png) |
 
-
-To learn more about each page, see the following articles. 
+To learn more about each page, see the following articles.
 
 <table width="100%">
 <tbody valign="top">
@@ -221,12 +217,12 @@ To learn more about each page, see the following articles.
 </tr>
 
 <tr>
-<td> 
-<p><strong>Home</strong></p> 
+<td>
+<p><strong>Home</strong></p>
 <ul>
 <li><a href="../project/navigation/index.md" data-raw-source="[Web portal](../project/navigation/index.md)">Web portal</a></li>
 </ul>
-<p><strong>Builds</strong></p> 
+<p><strong>Builds</strong></p>
 <ul>
 <li><a href="../pipelines/tasks/index.md" data-raw-source="[Create build pipelines](../pipelines/tasks/index.md)">Create build pipelines</a></li>
 <li><a href="../pipelines/overview.md" data-raw-source="[View and manage builds](../pipelines/overview.md)">View and manage builds</a></li>
@@ -236,15 +232,14 @@ To learn more about each page, see the following articles.
 </ul>
 </td>
 
-
-<td> 
-<p><strong>Git repo</strong></p> 
+<td>
+<p><strong>Git repo</strong></p>
 <ul>
 <li><a href="../repos/git/share-your-code-in-git-eclipse.md" data-raw-source="[Share your code](../repos/git/share-your-code-in-git-eclipse.md)">Share your code</a></li>
 <li><a href="../repos/git/git-config.md" data-raw-source="[Git preferences](../repos/git/git-config.md)">Git preferences</a></li>
 <li><a href="../repos/git/command-prompt.md" data-raw-source="[Git command reference](../repos/git/command-prompt.md)">Git command reference</a></li>
 </ul>
-<p><strong>TFVC repo</strong></p> 
+<p><strong>TFVC repo</strong></p>
 <ul>
 <li><a href="../repos/tfvc/share-your-code-in-tfvc-eclipse.md" data-raw-source="[Share your code](../repos/tfvc/share-your-code-in-tfvc-eclipse.md)">Share your code</a></li>
 <li><a href="../repos/tfvc/develop-code-manage-pending-changes.md" data-raw-source="[Pending changes](../repos/tfvc/develop-code-manage-pending-changes.md)">Pending changes</a></li>
@@ -254,7 +249,7 @@ To learn more about each page, see the following articles.
 </ul>
 </td>
 
-<td> 
+<td>
 <ul>
 <li><a href="../boards/backlogs/add-work-items.md" data-raw-source="[Add work items](../boards/backlogs/add-work-items.md)">Add work items</a></li>
 <li><a href="../boards/queries/using-queries.md" data-raw-source="[Query editor](../boards/queries/using-queries.md)">Query editor</a></li>
@@ -263,15 +258,13 @@ To learn more about each page, see the following articles.
 </ul>
 </td>
 
-
 </tr>
 </tbody>
 </table>
 
-
 ::: moniker range=">= tfs-2018 <= azure-devops-2019"
 
-## Reports 
+## Reports
 
 > [!NOTE]  
 > Some pages, such as **Reports**, only appear when an on-premises TFS is configured with the required resources, such as SQL Server Reporting Services and SharePoint.
@@ -284,7 +277,7 @@ If your project is missing one or more pages, you may be able to [add functional
 
 ::: moniker range=">= tfs-2013 <= tfs-2017"
 
-## Reports and Documents  
+## Reports and Documents
 
 > [!NOTE]  
 > Some pages, such as **Reports** and **Documents**, only appear when an on-premises TFS is configured with the required resources, such as SQL Server Reporting Services and SharePoint.
@@ -297,10 +290,9 @@ If your project is missing one or more pages, you may be able to [add functional
 
 ::: moniker-end
 
+## Settings
 
-## Settings  
-
-From the **Settings** page, you can configure administrative features for either a project or project collection. To learn more about each page, see the following articles. Most of the links open to a web portal administration page. Not all settings are available from the Team Explorer plug-in for Eclipse. 
+From the **Settings** page, you can configure administrative features for either a project or project collection. To learn more about each page, see the following articles. Most of the links open to a web portal administration page. Not all settings are available from the Team Explorer plug-in for Eclipse.
 
 <table width="100%">
 <tbody valign="top">
@@ -311,7 +303,7 @@ From the **Settings** page, you can configure administrative features for either
 </tr>
 
 <tr>
-<td> 
+<td>
 <ul>
 <li><a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Security, Group Membership](../organizations/security/set-project-collection-level-permissions.md)">Security, Group Membership</a></li>
 <li><a href="../organizations/security/set-git-tfvc-repository-permissions.md" data-raw-source="[Security, Source Control (TFVC)](../organizations/security/set-git-tfvc-repository-permissions.md)">Security, Source Control (TFVC)</a></li>
@@ -322,7 +314,7 @@ From the **Settings** page, you can configure administrative features for either
 </ul>
 </td>
 
-<td> 
+<td>
 <ul>
 <li><a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Security, Group Membership](../organizations/security/set-project-collection-level-permissions.md)">Security, Group Membership</a></li>
 <li><a href="../repos/tfvc/decide-between-using-local-server-workspace.md" data-raw-source="[Source Control (TFVC)](../repos/tfvc/decide-between-using-local-server-workspace.md)">Source Control (TFVC)</a></li>
@@ -330,7 +322,7 @@ From the **Settings** page, you can configure administrative features for either
 </ul>
 </td>
 
-<td> 
+<td>
 <ul>
 <li><a href="../repos/git/git-config.md" data-raw-source="[Git Global Settings](../repos/git/git-config.md)">Git Global Settings</a></li>
 <li><a href="../repos/git/git-config.md" data-raw-source="[Git Repository Settings](../repos/git/git-config.md)">Git Repository Settings</a></li>
@@ -341,38 +333,34 @@ From the **Settings** page, you can configure administrative features for either
 </tbody>
 </table>
 
-
 To learn more about settings, see [About team, project, and organizational-level settings](../organizations/settings/about-settings.md).
-
 
 ## Refresh Team Explorer or Team Explorer Everywhere
 
 If data doesn't appear as expected, the first thing to try is to refresh your client. Refreshing your client updates the local cache with changes that were made in another client or in TFS. To refresh Team Explorer, do one of the following actions:
 
-- To refresh a page that you are currently viewing, choose ![ ](../boards/media/icons/te-refresh-query-icon.png) **Refresh** icon in the menu bar (or choose the F5 key).
-- To refresh the project you currently have selected, choose ![](media/work-team-explorer/IC547418.png) **Home**, and then choose ![Refresh icon](../boards/media/icons/te-refresh-query-icon.png) **Refresh** icon (or choose the F5 key).
-- To refresh the set of teams defined for the project that you currently have selected, choose the Connect icon, and then choose ![ ](../boards/media/icons/te-refresh-query-icon.png) **Refresh** icon (or choose the F5 key).
+* To refresh a page that you are currently viewing, choose ![ ](../boards/media/icons/te-refresh-query-icon.png) **Refresh** icon in the menu bar (or choose the F5 key).
+* To refresh the project you currently have selected, choose ![](media/work-team-explorer/IC547418.png) **Home**, and then choose ![Refresh icon](../boards/media/icons/te-refresh-query-icon.png) **Refresh** icon (or choose the F5 key).
+* To refresh the set of teams defined for the project that you currently have selected, choose the Connect icon, and then choose ![ ](../boards/media/icons/te-refresh-query-icon.png) **Refresh** icon (or choose the F5 key).
 
 [!INCLUDE [temp](includes/when-to-refresh-client.md)]
 
-[!INCLUDE [temp](../includes/images-not-appearing-vs.md)] 
-
+[!INCLUDE [temp](../includes/images-not-appearing-vs.md)]
 
 ## Related articles
 
-- [Troubleshoot connection](troubleshoot-connection.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json)  
-- [Create a project](../organizations/projects/create-project.md)
+* [Troubleshoot connection](troubleshoot-connection.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json)
+* [Create a project](../organizations/projects/create-project.md)
 
-
-### Additional tools provided with TFS Power Tools 
+### Additional tools provided with TFS Power Tools
 
 By installing [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power), you gain access to these additional tools through the Team Explorer plug-in for Visual Studio:
 
--   Process Template Editor
--   Additional check-in policies for Team Foundation Version Control
--   Team Explorer enhancements including Team Members
--   Team Foundation Power Tool Command Line
--   Test Attachment Cleaner
--   Work Item Templates
+* Process Template Editor
+* Additional check-in policies for Team Foundation Version Control
+* Team Explorer enhancements including Team Members
+* Team Foundation Power Tool Command Line
+* Test Attachment Cleaner
+* Work Item Templates
 
 Additional requirements may apply.

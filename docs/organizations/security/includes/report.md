@@ -1,5 +1,3 @@
-
-
 ::: moniker range="azure-devops"
 
 <table>
@@ -13,7 +11,7 @@
 </tr>
 <tbody valign="top" align="center">
 <tr>
-<td align="left">View work item query charts (from the Queries page) 
+<td align="left">View work item query charts (from the Queries page)
 </td>
 <td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -31,7 +29,7 @@
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">View team and project dashboards (including work item query charts added to dashboards) 
+<td align="left">View team and project dashboards (including work item query charts added to dashboards)
 </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -61,10 +59,10 @@
 </table>
 
 **Notes:**
-1. Public project Stakeholders have full access to all features. 
 
-::: moniker-end  
+1.  Public project Stakeholders have full access to all features.
 
+::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= azure-devops-2019"
 
@@ -88,7 +86,7 @@
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Create work item and test tracking charts 
+<td align="left">Create work item and test tracking charts
 </td>
 <td>  </td>
 <td>  </td>
@@ -107,8 +105,7 @@
 </tbody>
 </table>
 
-::: moniker-end  
-
+::: moniker-end
 
 ::: moniker range="tfs-2013"
 
@@ -132,7 +129,7 @@
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Create work item and test tracking charts 
+<td align="left">Create work item and test tracking charts
 </td>
 <td>  </td>
 <td>  </td>
@@ -143,4 +140,4 @@
 </tbody>
 </table>
 
-::: moniker-end 
+::: moniker-end

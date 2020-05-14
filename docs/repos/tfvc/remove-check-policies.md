@@ -11,7 +11,6 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Remove Check-In Policies
 
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
@@ -21,7 +20,9 @@ Administrators of Team Foundation version control can add check-in policy requir
 **Required Permissions**
 
 To complete this procedure, you must have the **Edit project-level information** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+
 ## Procedure
+
 ### To remove a check-in policy
 
 1.  From the **Team** menu, choose **Project Settings**, and then select **Source Control**.

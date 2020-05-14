@@ -12,51 +12,47 @@ ms.date: 03/14/2018
 monikerRange: '>= tfs-2017'
 ---
 
-
 # Commit history
 
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 Update 1
 
 ## Commit history view
 
-The commit history view shows you the history of all the commits for a particular branch in a repository. By default, all results are shown in reverse chronological order. 
- 
+The commit history view shows you the history of all the commits for a particular branch in a repository. By default, all results are shown in reverse chronological order.
+
 ![Commit history page](media/commit-history/1-CommitHistory.png)
 
 For each commit, you can view the following key elements:
 
-* Author details - You can view the author and committer of each commit along with the associated time. 
+* Author details - You can view the author and committer of each commit along with the associated time.
 
-    ![Author details for a commit](media/commit-history/2-AuthorDetails.png)
+  ![Author details for a commit](media/commit-history/2-AuthorDetails.png)
 
-* Complete commit message - If the commit message is too long, you can click on the down-arrow to expand the commit message to view the entire commit message. 
+* Complete commit message - If the commit message is too long, you can click on the down-arrow to expand the commit message to view the entire commit message.
 
-    ![Expanded commit message](media/commit-history/3-CommitMessage.png)
-	
+  ![Expanded commit message](media/commit-history/3-CommitMessage.png)
+
 * Copy commit SHA - You can copy the 40 character commit SHA by clicking on the **Copy full SHA to clipboard** button. You can click on a commit ID or commit message to open the commit details page.
-	
-    ![Copy 40 character commit ID](media/commit-history/4-CopyCommitSHA.png)	
-	
+  ![Copy 40 character commit ID](media/commit-history/4-CopyCommitSHA.png)
 * Build and PR information - You can view the pull request that brought this commit to the branch selected on the page, and view the build status of the current commit.
 
-    ![Build and PR details on commit history](media/commit-history/5-BuildandPRInfo.png)
+  ![Build and PR details on commit history](media/commit-history/5-BuildandPRInfo.png)
 
 * You can select a repository from the repository picker to view the history of a particular repository.
 
-    ![repository picker](media/commit-history/6-RepoPicker.png)
+  ![repository picker](media/commit-history/6-RepoPicker.png)
 
 * You can select a particular branch or tag from the branch picker to view associated history.
 
-    ![Branch picker](media/commit-history/7-BranchPicker.png)
+  ![Branch picker](media/commit-history/7-BranchPicker.png)
 
-* You can further filter the results by selecting a particular file from the code explorer. 
+* You can further filter the results by selecting a particular file from the code explorer.
 
-    ![Code explorer](media/commit-history/8-CodeExplorer.png)
+  ![Code explorer](media/commit-history/8-CodeExplorer.png)
 
 * You can also find a file or folder to view its history. In the following example, when you type "get", you see results of all files and folders in the repository that contain the word **src**.
 
-    ![Find a file](media/commit-history/9-FindaFile.png)
-
+  ![Find a file](media/commit-history/9-FindaFile.png)
 
 ## History result filtering
 
@@ -80,15 +76,10 @@ You can also search for a commit using its Commit ID. You can search for all com
 
 ## Commit for file renames
 
-In case a file or folder is renamed, you will see all commits until the file or folder got renamed. You will also see a link suggesting **Show rename history**. 
+In case a file or folder is renamed, you will see all commits until the file or folder got renamed. You will also see a link suggesting **Show rename history**.
 
 ![Show rename files or folder history](media/commit-history/renamefiles.png)
 
 When you click on **Show rename history** you can view all the commits of the file or folder before the rename.
 
 ![Showing commits before file or folder rename](media/commit-history/Showrenamefiles.png)
-
-
-
-
-

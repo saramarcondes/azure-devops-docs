@@ -31,14 +31,14 @@ Microsoft is committed to ensuring that your projects remain safe and secure, wi
 
 * We store a hash of the PAT
 * Raw PAT is generated in-memory on the server side as 32 bytes randomly generated through RNGCryptoServiceProvider then shared with the caller as a base-32-encoded string. This value is NOT stored.
-* PAT hash is generated in-memory on the server side as an *HMACSHA256Hash* of the raw PAT using a 64-byte symmetric signing key stored in our key vault 
+* PAT hash is generated in-memory on the server side as an _HMACSHA256Hash_ of the raw PAT using a 64-byte symmetric signing key stored in our key vault
 * Hash is stored in our database
 
 ## Secure shell (SSH) keys
 
 * We store a hash of the enclosing organization ID and the SSH public key
 * Raw public key is provided directly by the caller over SSL
-* SSH hash is generated in-memory on the server side as an *HMACSHA256Hash* of the organization ID and raw public key using a 64-byte symmetric signing key stored in our key vault
+* SSH hash is generated in-memory on the server side as an _HMACSHA256Hash_ of the organization ID and raw public key using a 64-byte symmetric signing key stored in our key vault
 * Hash is stored in our database
 
 ## OAuth credentials (JWTs)

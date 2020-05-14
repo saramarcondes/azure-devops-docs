@@ -11,14 +11,13 @@ ms.date: 09/10/2018
 monikerRange: '>= tfs-2018'
 ---
 
-
 # Forks
 
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018
 
 A fork is a complete copy of a repository, including all files, commits, and (optionally) branches.
 Forks are a great way to support an Inner Source workflow: you can create a
-fork to suggest changes to a project when you don't have permissions to 
+fork to suggest changes to a project when you don't have permissions to
 write to the original project directly.
 Once you're ready to share those changes, it's easy to contribute them back using [pull requests](pull-requests-overview.md).
 
@@ -44,30 +43,30 @@ As your team grows larger, you may find yourself outgrowing this arrangement and
 
 If your repository has a large number of casual or infrequent committers (similar to an open source project), we recommend the forking workflow.
 Typically only core contributors to your project have direct commit rights into your repository.
-You should ask collaborators from outside this core set of people to work from a fork of the repository. 
+You should ask collaborators from outside this core set of people to work from a fork of the repository.
 This will isolate their changes from yours until you've had a chance to vet the work.
 
 ## The forking workflow
 
-1. [Create a fork](#create-fork)
-2. [Clone it locally](#clone-locally)
-3. [Make your changes locally and push them to a branch](#push-changes)
-4. [Create and complete a PR to upstream](#create-pr)
-5. [Sync your fork to the latest from upstream](#sync-fork)
+1.  [Create a fork](#create-fork)
+2.  [Clone it locally](#clone-locally)
+3.  [Make your changes locally and push them to a branch](#push-changes)
+4.  [Create and complete a PR to upstream](#create-pr)
+5.  [Sync your fork to the latest from upstream](#sync-fork)
 
 <a name="create-fork" />
 
 ### Create the fork
 
-1. Navigate to the repository to fork, and choose **Fork**.
+1.  Navigate to the repository to fork, and choose **Fork**.
 
-2. Specify a name, and choose the project where you want the fork to be created. If the repository contains a lot of topic branches, we recommend you fork only the default branch.
+2.  Specify a name, and choose the project where you want the fork to be created. If the repository contains a lot of topic branches, we recommend you fork only the default branch.
 
-3. Choose **Fork** to create the fork.
+3.  Choose **Fork** to create the fork.
 
 ![Create new fork](media/forks/create-new-fork.png)
 
->[!NOTE]
+> [!NOTE]
 > You must have the [Create Repository](../../organizations/security/permissions.md#git-repository-object-level) permission in your chosen project to create a fork.
 > We recommend you create a dedicated project for forks where all contributors have the Create Repository permission. For an example of granting this permission, see [Set Git repository permissions](../../organizations/security/set-git-tfvc-repository-permissions.md#set-git-repository-permissions).
 
@@ -80,28 +79,27 @@ The fork will be your `origin` remote.
 
 For convenience, after cloning you'll want to add the upstream repository (where you forked from) as a remote named `upstream`.
 
-
 # [Visual Studio](#tab/visual-studio)
 
 To add your upstream repository in Visual Studio, follow these steps:
 
-1. Open the **Settings** page.
+1.  Open the **Settings** page.
 
-   ![Team Explorer home](media/forks/vs-te-home-settings.png)
+    ![Team Explorer home](media/forks/vs-te-home-settings.png)
 
-2. Choose **Repository Settings**.
+2.  Choose **Repository Settings**.
 
     ![Team Explorer settings](media/forks/vs-te-settings.png)
 
-3. Under **Remotes**, choose **Add**.
+3.  Under **Remotes**, choose **Add**.
 
     ![Repository settings](media/forks/vs-te-reposettings.png)
 
-4. Add a new remote called `upstream`, using the Git clone URL of the repo you forked.
+4.  Add a new remote called `upstream`, using the Git clone URL of the repo you forked.
 
     ![Dialog: add new remote](media/forks/vs-te-new-remote.png)
 
-5. Select **Save** and the new remote is added and displayed in the repository settings.
+5.  Select **Save** and the new remote is added and displayed in the repository settings.
 
     ![New remote added](media/forks/vs-te-upstream-added.png)
 
@@ -109,13 +107,9 @@ To add your upstream repository in Visual Studio, follow these steps:
 
 On the command line, navigate to your repository, and type:
 
-```git remote add upstream {upstream_url}```
+`git remote add upstream {upstream_url}`
 
 ---
-
-
-
-
 
 <a name="push-changes" />
 
@@ -139,8 +133,8 @@ Once all policies are satisfied, the PR can be completed and the changes become 
 
 ![Pull request](media/forks/cross-repo-pr.png)
 
->[!IMPORTANT]
->Anyone with the [Read](../../organizations/security/permissions.md#git-repository-object-level) permission can open a PR to upstream.
+> [!IMPORTANT]
+> Anyone with the [Read](../../organizations/security/permissions.md#git-repository-object-level) permission can open a PR to upstream.
 > If a PR build pipeline is configured, the build will run against the code introduced in the fork.
 
 <a name="sync-fork" />
@@ -154,17 +148,17 @@ We recommend rebasing on `upstream`'s `master` branch (assuming `master` is the 
 
 In Visual Studio, you can use the **Synchronization** page to fetch and rebase.
 
-1. Open the **Synchronization** page in Team Explorer.
+1.  Open the **Synchronization** page in Team Explorer.
 
-2. Fetch from `upstream`.
+2.  Fetch from `upstream`.
 
     ![Team Explorer sync](media/forks/vs-te-sync.png)
 
-3. Open the **Branches** page in Team Explorer. Make sure `master` is checked out.
+3.  Open the **Branches** page in Team Explorer. Make sure `master` is checked out.
 
     ![Check out master branch](media/forks/vs-te-master-checked-out.png)
 
-4. Rebase `master` onto `upstream/master`.
+4.  Rebase `master` onto `upstream/master`.
 
     ![Rebase](media/forks/vs-te-rebase.png)
 
@@ -181,12 +175,6 @@ git push origin
 ```
 
 ---
-
-
-
-
-
-
 
 The forking workflow lets you isolate changes from the main repository until you're ready to integrate them.
 When you're ready, integrating code is as easy as completing a pull request.

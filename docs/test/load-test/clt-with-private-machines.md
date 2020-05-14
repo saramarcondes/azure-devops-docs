@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Run cloud-based load tests using your own machines
 
-[!INCLUDE [version-header-devops-services](../includes/version-header-devops-services.md)] 
+[!INCLUDE [version-header-devops-services](../includes/version-header-devops-services.md)]
 
 [!INCLUDE [loadtest-deprecated-include](../includes/loadtest-deprecated-include.md)]
 
@@ -44,7 +44,7 @@ This topic shows two primary scenarios where such a configuration may be useful.
   deployment items and setup scripts on auto-provisioned agents. However, if you are installing some bulky software
   or doing some time-consuming operation as part of the setup, you may want to do that only once and reuse the machines
   over and over again. In addition, using your own machines means that you can set up and remove the agents only when
-  required, as opposed to the auto-provisioned agents that are removed automatically after a test run, 
+  required, as opposed to the auto-provisioned agents that are removed automatically after a test run,
 * **Testing private apps and apps behind the firewall**. The basic requirement of the cloud load testing service is
   that the application endpoint is public or reachable from the cloud. Often this is not the case. The app that you
   want to load test may be on-premises behind the firewall, or in a private VNet in Azure. Or you may be developing
@@ -126,10 +126,10 @@ A build template to help with this configuration is under development.
 ## See also
 
 * [FAQs for load testing](reference-qa.md#jmeter-tests)
-* [Load test with Visual Studio](getting-started-with-performance-testing.md) 
-* [Load test with Azure DevOps](get-started-simple-cloud-load-test.md) 
-* [Load test with Azure portal](app-service-web-app-performance-test.md) 
-* [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md) 
+* [Load test with Visual Studio](getting-started-with-performance-testing.md)
+* [Load test with Azure DevOps](get-started-simple-cloud-load-test.md)
+* [Load test with Azure portal](app-service-web-app-performance-test.md)
+* [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md)
 * [Analyze load test results using the Load Test Analyzer](/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
 
-[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)]

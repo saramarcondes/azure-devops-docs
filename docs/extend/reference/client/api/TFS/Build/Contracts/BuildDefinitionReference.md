@@ -25,4 +25,3 @@ Extends: [DefinitionReference](./DefinitionReference.md)
 * `quality`: [DefinitionQuality](./DefinitionQuality.md). The quality of the definition document (draft, etc.)
 
 * `queue`: [AgentPoolQueue](./AgentPoolQueue.md). The default queue which should be used for requests.
-

@@ -12,52 +12,52 @@ monikerRange: '>= tfs-2015'
 
 # Add findings to existing bugs with exploratory testing
 
-[!INCLUDE [version-header](includes/version-header.md)] 
- 
-To help avoid duplication, the Test &amp; Feedback extension automatically 
+[!INCLUDE [version-header](includes/version-header.md)]
+
+To help avoid duplication, the Test &amp; Feedback extension automatically
 searches for and displays existing bugs, based on the keywords in the title,
 as you file a new bug. You can choose to continue creating a new bug or add
 your findings to an existing bug.
 
-[!INCLUDE [feature-availability](includes/feature-availability.md)] 
+[!INCLUDE [feature-availability](includes/feature-availability.md)]
 
-1. As you type the title for a new bug, in the background the extension 
-   searches for similar bugs that might be related to the issue you've found
-   and displays a link to the results. Choose this link to see the results that have 
-   similar title keywords.
+1.  As you type the title for a new bug, in the background the extension
+    searches for similar bugs that might be related to the issue you've found
+    and displays a link to the results. Choose this link to see the results that have
+    similar title keywords.
 
-   ![The link to view similar bugs](media/add-to-bugs-exploratory-testing/add-to-existing-bugs-01.png)
- 
-   The form displays **0 Similar** if it does not find any matching bugs.
-   In this case, or if you don't see a "similar" link, you can create a
-   new bug containing your screenshots, notes, and videos
-   as described in [this topic](connected-mode-exploratory-testing.md).
- 
-1. If you see a bug you want to update, instead of creating a new one:
+    ![The link to view similar bugs](media/add-to-bugs-exploratory-testing/add-to-existing-bugs-01.png)
 
-   - Select it in the list and choose **Edit**.
- 
-     ![Editing a similar bug](media/add-to-bugs-exploratory-testing/add-to-existing-bugs-02.png)
+    The form displays **0 Similar** if it does not find any matching bugs.
+    In this case, or if you don't see a "similar" link, you can create a
+    new bug containing your screenshots, notes, and videos
+    as described in [this topic](connected-mode-exploratory-testing.md).
 
-   - The extension appends all your screenshots, notes, and videos to 
-     the existing bug. 
+1.  If you see a bug you want to update, instead of creating a new one:
 
-   - Save the updated bug.
+    * Select it in the list and choose **Edit**.
 
-     ![Saving the updated bug](media/add-to-bugs-exploratory-testing/add-to-existing-bugs-03.png)
+      ![Editing a similar bug](media/add-to-bugs-exploratory-testing/add-to-existing-bugs-02.png)
 
-1. If, instead, you decide not to update an existing bug, ignore the "similar" link and:
+    * The extension appends all your screenshots, notes, and videos to
+      the existing bug.
 
-   - Choose the **New bug** link to return to the bug details form.
+    * Save the updated bug.
 
-     ![Returning to the bug details form](media/add-to-bugs-exploratory-testing/add-to-existing-bugs-04.png)
+      ![Saving the updated bug](media/add-to-bugs-exploratory-testing/add-to-existing-bugs-03.png)
 
-   - Enter the details for the new bug and save it
-     as described in [this topic](connected-mode-exploratory-testing.md).<p />
-   
-1. Continue exploring your app, filing bugs and tasks, and creating test cases. 
+1.  If, instead, you decide not to update an existing bug, ignore the "similar" link and:
 
-## See your exploratory session results 
+    * Choose the **New bug** link to return to the bug details form.
+
+      ![Returning to the bug details form](media/add-to-bugs-exploratory-testing/add-to-existing-bugs-04.png)
+
+    * Enter the details for the new bug and save it
+      as described in [this topic](connected-mode-exploratory-testing.md).<p />
+
+1.  Continue exploring your app, filing bugs and tasks, and creating test cases.
+
+## See your exploratory session results
 
 After you file bugs, create tasks, or create test cases, all these show up in the "Recent exploratory sessions" page in Azure Test Plans or TFS.
 
@@ -72,4 +72,4 @@ After you file bugs, create tasks, or create test cases, all these show up in th
 * [Exploratory testing with Microsoft Test Manager](mtm/exploratory-testing-using-microsoft-test-manager.md)
 * [Overview of manual and exploratory testing](index.yml)
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

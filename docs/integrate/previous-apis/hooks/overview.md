@@ -16,9 +16,7 @@ ms.date: 08/04/2016
 
 [!INCLUDE [API_version](../_data/version.md)]
 
-
-
-The service hook [publishers](./publishers.md) define a set of events. You create [subscriptions](./subscriptions.md) based on an event and select the 
+The service hook [publishers](./publishers.md) define a set of events. You create [subscriptions](./subscriptions.md) based on an event and select the
 service hook [consumer](./consumers.md) and action to take in response to that event from the publisher.
 
 ![service hook resources](./media/service-hook-resources.png)

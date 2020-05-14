@@ -11,7 +11,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [include](../includes/version-team-services.md)]
 
-A web app is a lightweight way to host a web application. In this step-by-step guide you'll learn how to  create a pipeline that continuously builds and deploys your PHP app. Your team can then automatically build each commit in GitHub, and if you want, automatically deploy the change to an Azure App Service. You can use whichever runtime your prefer: PHP|5.6 or PHP|7.0.
+A web app is a lightweight way to host a web application. In this step-by-step guide you'll learn how to create a pipeline that continuously builds and deploys your PHP app. Your team can then automatically build each commit in GitHub, and if you want, automatically deploy the change to an Azure App Service. You can use whichever runtime your prefer: PHP|5.6 or PHP|7.0.
 
 ## Prerequisites
 
@@ -59,11 +59,11 @@ az webapp create -g myapp-rg -p myapp-service-plan -n my-app-name --runtime "PHP
 
 When the **Configure** tab appears, select **PHP**. Your new pipeline appears.
 
-1. Take a look at the pipeline to see what it does.
+1.  Take a look at the pipeline to see what it does.
 
-1. After you've looked at what the pipeline does, select **Save and run** to see the pipeline in action.
+1.  After you've looked at what the pipeline does, select **Save and run** to see the pipeline in action.
 
-1. Select **Save and run**, after which you're prompted for a commit message because Azure Pipelines adds the *azure-pipelines.yml* file to your repository. After editing the message, select **Save and run** again.
+1.  Select **Save and run**, after which you're prompted for a commit message because Azure Pipelines adds the _azure-pipelines.yml_ file to your repository. After editing the message, select **Save and run** again.
 
 > You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [PHP Azure Pipelines template](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/php.yml).
 
@@ -110,4 +110,3 @@ After the pipeline has run, check out your site!
 `https://my-app-name.azurewebsites.net/`
 
 [!INCLUDE [include](includes/clean-up-resources.md)]
-

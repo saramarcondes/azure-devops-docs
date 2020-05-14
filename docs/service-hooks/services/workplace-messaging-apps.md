@@ -12,14 +12,13 @@ monikerRange: 'azure-devops'
 
 # Workplace Messaging Apps
 
-The following integrations help users to receive notifications in response to events in Azure DevOps within their workplace messaging apps like 
-[Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software) and [Slack](https://slack.com). 
+The following integrations help users to receive notifications in response to events in Azure DevOps within their workplace messaging apps like
+[Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software) and [Slack](https://slack.com).
 These integrations also help users to complete
 workflows on Azure DevOps, such as allowing users to approve release deployments and creating work items from their channels.
 
 > [!NOTE]  
-> You can use these apps only with a project hosted on Azure DevOps Services at this time.  
-
+> You can use these apps only with a project hosted on Azure DevOps Services at this time.
 
 ## Slack
 
@@ -36,4 +35,3 @@ workflows on Azure DevOps, such as allowing users to approve release deployments
 * [Azure Pipelines app for Microsoft Teams](https://aka.ms/AzurePipelinesTeamsIntegration)
 
 * [Azure Repos app for Microsoft Teams](https://aka.ms/AzureReposTeamsIntegration)
-

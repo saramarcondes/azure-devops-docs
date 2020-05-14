@@ -38,11 +38,8 @@ In this quickstart, you learn how to sign up for Azure DevOps for free, sign in 
 
 For more information about managing users and organization access, see [Add organization users for Azure DevOps](../organizations/accounts/add-organization-users.md).
 
-## Next steps  
- 
-> [!div class="nextstepaction"]
-> [Add code to your Git repository](code-with-git.md)
+## Next steps
+
+> [!div class="nextstepaction"][add code to your git repository](code-with-git.md)
 >
 > [Plan and track work](plan-track-work.md)
-
-

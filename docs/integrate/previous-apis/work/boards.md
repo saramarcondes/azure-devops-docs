@@ -19,20 +19,23 @@ ms.date: 08/04/2016
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 
 ## Get a list of boards
+
 <a name="getalistofboards" />
 
 ```no-highlight
 GET https://{instance}/DefaultCollection/{project}/{team}/_apis/work/boards?api-version={api-version}
 ```
 
-| Parameter | Type    |Default Value | Notes	
-|:----------|:--------|:------------ |:------------------------------
+| Parameter | Type | Default Value | Notes |
+| :-------- | :--- | :------------ | :---- |
+
+
 | URL
-| instance  | string  | | TFS server name ({server:port}).
-| project   | string  | | Name or ID of a project.
-| team	    | string  | Project's default team Id| Name or ID of a team within the project.
+| instance | string | | TFS server name ({server:port}).
+| project | string | | Name or ID of a project.
+| team | string | Project's default team Id| Name or ID of a team within the project.
 | Query
-| api-version | string  | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 ### By project default team
 
@@ -50,23 +53,25 @@ GET https://mytfsserver/DefaultCollection/Fabrikam/_apis/work/boards/?api-versio
   "value": [
     {
       "id": "41688c28-a3fc-4811-977d-247a33f18a00",
-      "url": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00",
+      "url":
+        "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00",
       "name": "Backlog items"
     },
     {
       "id": "eab834bb-a382-4527-90ea-af1624ccae72",
-      "url": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/eab834bb-a382-4527-90ea-af1624ccae72",
+      "url":
+        "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/eab834bb-a382-4527-90ea-af1624ccae72",
       "name": "Epics"
     },
     {
       "id": "4e8ec49c-40eb-466a-bba9-eb82eb43ab86",
-      "url": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/4e8ec49c-40eb-466a-bba9-eb82eb43ab86",
+      "url":
+        "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/4e8ec49c-40eb-466a-bba9-eb82eb43ab86",
       "name": "Features"
     }
   ]
 }
 ```
-
 
 ### By team
 
@@ -84,23 +89,25 @@ GET https://mytfsserver/DefaultCollection/Fabrikam/Fabrikam%20Team/_apis/work/bo
   "value": [
     {
       "id": "41688c28-a3fc-4811-977d-247a33f18a00",
-      "url": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00",
+      "url":
+        "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00",
       "name": "Backlog items"
     },
     {
       "id": "eab834bb-a382-4527-90ea-af1624ccae72",
-      "url": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/eab834bb-a382-4527-90ea-af1624ccae72",
+      "url":
+        "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/eab834bb-a382-4527-90ea-af1624ccae72",
       "name": "Epics"
     },
     {
       "id": "4e8ec49c-40eb-466a-bba9-eb82eb43ab86",
-      "url": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/4e8ec49c-40eb-466a-bba9-eb82eb43ab86",
+      "url":
+        "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/4e8ec49c-40eb-466a-bba9-eb82eb43ab86",
       "name": "Features"
     }
   ]
 }
 ```
-
 
 ## Get a board
 
@@ -108,15 +115,17 @@ GET https://mytfsserver/DefaultCollection/Fabrikam/Fabrikam%20Team/_apis/work/bo
 GET https://{instance}/DefaultCollection/{project}/{team}/_apis/work/boards/{board}?api-version={api-version}
 ```
 
-| Parameter | Type    |Default Value | Notes	
-|:----------|:--------|:------------ |:------------------------------
+| Parameter | Type | Default Value | Notes |
+| :-------- | :--- | :------------ | :---- |
+
+
 | URL
-| instance  | string  | | TFS server name ({server:port}).
-| project   | string  | | Name or ID of a project.
-| team	    | string  | Project's default team Id| Name or ID of a team within the project.
-| board	| string  || Name or ID of the specific board.
+| instance | string | | TFS server name ({server:port}).
+| project | string | | Name or ID of a project.
+| team | string | Project's default team Id| Name or ID of a team within the project.
+| board | string || Name or ID of the specific board.
 | Query
-| api-version | string  || [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string || [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 ### By ID
 
@@ -131,7 +140,8 @@ GET https://mytfsserver/DefaultCollection/Fabrikam/Fabrikam%20Team/_apis/work/bo
 ```json
 {
   "id": "41688c28-a3fc-4811-977d-247a33f18a00",
-  "url": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00",
+  "url":
+    "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00",
   "name": "Backlog items",
   "revision": 0,
   "columns": [
@@ -197,72 +207,65 @@ GET https://mytfsserver/DefaultCollection/Fabrikam/Fabrikam%20Team/_apis/work/bo
   "isValid": true,
   "allowedMappings": {
     "Incoming": {
-      "Bug": [
-        "New"
-      ],
-      "Product Backlog Item": [
-        "New"
-      ]
+      "Bug": ["New"],
+      "Product Backlog Item": ["New"]
     },
     "InProgress": {
-      "Bug": [
-        "Committed",
-        "Approved",
-        "New"
-      ],
-      "Product Backlog Item": [
-        "Approved",
-        "Committed",
-        "New"
-      ]
+      "Bug": ["Committed", "Approved", "New"],
+      "Product Backlog Item": ["Approved", "Committed", "New"]
     },
     "Outgoing": {
-      "Bug": [
-        "Done"
-      ],
-      "Product Backlog Item": [
-        "Done"
-      ]
+      "Bug": ["Done"],
+      "Product Backlog Item": ["Done"]
     }
   },
   "canEdit": true,
   "fields": {
     "columnField": {
       "referenceName": "WEF_F9DCD9224F6E466499435017DB7D2D07_Kanban.Column",
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/WEF_F9DCD9224F6E466499435017DB7D2D07_Kanban.Column"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/fields/WEF_F9DCD9224F6E466499435017DB7D2D07_Kanban.Column"
     },
     "rowField": {
       "referenceName": "WEF_F9DCD9224F6E466499435017DB7D2D07_Kanban.Lane",
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/WEF_F9DCD9224F6E466499435017DB7D2D07_Kanban.Lane"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/fields/WEF_F9DCD9224F6E466499435017DB7D2D07_Kanban.Lane"
     },
     "doneField": {
-      "referenceName": "WEF_F9DCD9224F6E466499435017DB7D2D07_Kanban.Column.Done",
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/WEF_F9DCD9224F6E466499435017DB7D2D07_Kanban.Column.Done"
+      "referenceName":
+        "WEF_F9DCD9224F6E466499435017DB7D2D07_Kanban.Column.Done",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/fields/WEF_F9DCD9224F6E466499435017DB7D2D07_Kanban.Column.Done"
     }
   },
   "_links": {
     "self": {
-      "href": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00"
+      "href":
+        "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00"
     },
     "project": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/projects/8e5a3cfb-fed3-46f3-8657-e3b175cd0305"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/projects/8e5a3cfb-fed3-46f3-8657-e3b175cd0305"
     },
     "team": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/projects/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/teams/185d185a-33c3-4196-845d-96c46d6a505b"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/projects/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/teams/185d185a-33c3-4196-845d-96c46d6a505b"
     },
     "charts": {
-      "href": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00/charts"
+      "href":
+        "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00/charts"
     },
     "columns": {
-      "href": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00/columns"
+      "href":
+        "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00/columns"
     },
     "rows": {
-      "href": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00/rows"
+      "href":
+        "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00/rows"
     }
   }
 }
 ```
-
 
 ### By name
 
@@ -277,7 +280,8 @@ GET https://mytfsserver/DefaultCollection/Fabrikam/Fabrikam%20Team/_apis/work/bo
 ```json
 {
   "id": "41688c28-a3fc-4811-977d-247a33f18a00",
-  "url": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00",
+  "url":
+    "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00",
   "name": "Backlog items",
   "revision": 0,
   "columns": [
@@ -343,69 +347,62 @@ GET https://mytfsserver/DefaultCollection/Fabrikam/Fabrikam%20Team/_apis/work/bo
   "isValid": true,
   "allowedMappings": {
     "Incoming": {
-      "Bug": [
-        "New"
-      ],
-      "Product Backlog Item": [
-        "New"
-      ]
+      "Bug": ["New"],
+      "Product Backlog Item": ["New"]
     },
     "InProgress": {
-      "Bug": [
-        "Committed",
-        "Approved",
-        "New"
-      ],
-      "Product Backlog Item": [
-        "Approved",
-        "Committed",
-        "New"
-      ]
+      "Bug": ["Committed", "Approved", "New"],
+      "Product Backlog Item": ["Approved", "Committed", "New"]
     },
     "Outgoing": {
-      "Bug": [
-        "Done"
-      ],
-      "Product Backlog Item": [
-        "Done"
-      ]
+      "Bug": ["Done"],
+      "Product Backlog Item": ["Done"]
     }
   },
   "canEdit": true,
   "fields": {
     "columnField": {
       "referenceName": "WEF_F9DCD9224F6E466499435017DB7D2D07_Kanban.Column",
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/WEF_F9DCD9224F6E466499435017DB7D2D07_Kanban.Column"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/fields/WEF_F9DCD9224F6E466499435017DB7D2D07_Kanban.Column"
     },
     "rowField": {
       "referenceName": "WEF_F9DCD9224F6E466499435017DB7D2D07_Kanban.Lane",
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/WEF_F9DCD9224F6E466499435017DB7D2D07_Kanban.Lane"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/fields/WEF_F9DCD9224F6E466499435017DB7D2D07_Kanban.Lane"
     },
     "doneField": {
-      "referenceName": "WEF_F9DCD9224F6E466499435017DB7D2D07_Kanban.Column.Done",
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/fields/WEF_F9DCD9224F6E466499435017DB7D2D07_Kanban.Column.Done"
+      "referenceName":
+        "WEF_F9DCD9224F6E466499435017DB7D2D07_Kanban.Column.Done",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/fields/WEF_F9DCD9224F6E466499435017DB7D2D07_Kanban.Column.Done"
     }
   },
   "_links": {
     "self": {
-      "href": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00"
+      "href":
+        "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00"
     },
     "project": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/projects/8e5a3cfb-fed3-46f3-8657-e3b175cd0305"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/projects/8e5a3cfb-fed3-46f3-8657-e3b175cd0305"
     },
     "team": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/projects/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/teams/185d185a-33c3-4196-845d-96c46d6a505b"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/projects/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/teams/185d185a-33c3-4196-845d-96c46d6a505b"
     },
     "charts": {
-      "href": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00/charts"
+      "href":
+        "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00/charts"
     },
     "columns": {
-      "href": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00/columns"
+      "href":
+        "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00/columns"
     },
     "rows": {
-      "href": "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00/rows"
+      "href":
+        "https://mytfsserver/DefaultCollection/8e5a3cfb-fed3-46f3-8657-e3b175cd0305/185d185a-33c3-4196-845d-96c46d6a505b/_apis/work/boards/41688c28-a3fc-4811-977d-247a33f18a00/rows"
     }
   }
 }
 ```
-

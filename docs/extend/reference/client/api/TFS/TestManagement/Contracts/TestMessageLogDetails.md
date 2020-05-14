@@ -14,7 +14,6 @@ ms.date: 08/04/2016
 
 Module path: `TFS/TestManagement/Contracts`
 
-
 ### Members
 
 * `dateCreated`: Date. Date when the resource is created
@@ -22,4 +21,3 @@ Module path: `TFS/TestManagement/Contracts`
 * `entryId`: number. ID of the resource
 
 * `message`: string. Message of the resource
-

@@ -27,20 +27,22 @@ If either the target or base version isn't specified, the default branch is used
 GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/diffs/commits?api-version={version}
 ```
 
-| Parameter         | Type                         | Default | Notes
-|:------------------|:-----------------------------|:--------|:----------------------------------------------------------------------------------------------------------------------------
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
+
+
 | URL
-| instance          | string                       |         | TFS server name ({server:port}).
-| project           | string                       |         | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
-| repository        | string                       |         | ID of the [repository](./repositories.md).
+| instance | string | | TFS server name ({server:port}).
+| project | string | | ID or name of the [project](../tfs/projects.md). _Optional if specifying an ID for repository._
+| repository | string | | ID of the [repository](./repositories.md).
 | Query
-| api-version       | string                       |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| baseVersionType   | enum { Branch, Tag, Commit } | Branch  | [Item versions](./items.md#getaspecificversion).
-| baseVersion       | string                       | master  | [Item versions](./items.md#getaspecificversion).
-| targetVersionType | enum { Branch, Tag, Commit } | Branch  | [Item versions](./items.md#getaspecificversion).
-| targetVersion     | string                       | master  | [Item versions](./items.md#getaspecificversion).
-| $skip             | integer                      | 0       | Number of commits to skip.
-| $top              | integer                      | 100     | Number of commits to return.
+| api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| baseVersionType | enum { Branch, Tag, Commit } | Branch | [Item versions](./items.md#getaspecificversion).
+| baseVersion | string | master | [Item versions](./items.md#getaspecificversion).
+| targetVersionType | enum { Branch, Tag, Commit } | Branch | [Item versions](./items.md#getaspecificversion).
+| targetVersion | string | master | [Item versions](./items.md#getaspecificversion).
+| $skip | integer | 0 | Number of commits to skip.
+| $top | integer | 100 | Number of commits to return.
 
 [!INCLUDE [ID_vs_Name](_data/id_or_name.md)]
 
@@ -68,7 +70,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
         "path": "/CustomerAddressModule",
         "isFolder": true,
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
       },
       "changeType": "add"
     },
@@ -77,7 +80,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "gitObjectType": "blob",
         "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
         "path": "/CustomerAddressModule/CustomerAddressModule.sln",
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule.sln?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule.sln?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
       },
       "changeType": "add"
     },
@@ -87,7 +91,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
         "path": "/CustomerAddressModule/CustomerAddressModule",
         "isFolder": true,
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
       },
       "changeType": "add"
     },
@@ -96,7 +101,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "gitObjectType": "blob",
         "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
         "path": "/CustomerAddressModule/CustomerAddressModule/App.config",
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule/App.config?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule/App.config?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
       },
       "changeType": "add"
     },
@@ -104,8 +110,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "item": {
         "gitObjectType": "blob",
         "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
-        "path": "/CustomerAddressModule/CustomerAddressModule/CustomerAddressModule.csproj",
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule/CustomerAddressModule.csproj?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+        "path":
+          "/CustomerAddressModule/CustomerAddressModule/CustomerAddressModule.csproj",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule/CustomerAddressModule.csproj?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
       },
       "changeType": "add"
     },
@@ -113,8 +121,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "item": {
         "gitObjectType": "blob",
         "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
-        "path": "/CustomerAddressModule/CustomerAddressModule/Form1.Designer.cs",
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule/Form1.Designer.cs?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+        "path":
+          "/CustomerAddressModule/CustomerAddressModule/Form1.Designer.cs",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule/Form1.Designer.cs?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
       },
       "changeType": "add"
     },
@@ -123,7 +133,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "gitObjectType": "blob",
         "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
         "path": "/CustomerAddressModule/CustomerAddressModule/Form1.cs",
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule/Form1.cs?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule/Form1.cs?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
       },
       "changeType": "add"
     },
@@ -132,7 +143,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "gitObjectType": "blob",
         "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
         "path": "/CustomerAddressModule/CustomerAddressModule/Form1.resx",
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule/Form1.resx?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule/Form1.resx?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
       },
       "changeType": "add"
     },
@@ -141,7 +153,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "gitObjectType": "blob",
         "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
         "path": "/CustomerAddressModule/CustomerAddressModule/Program.cs",
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule/Program.cs?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule/Program.cs?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
       },
       "changeType": "add"
     },
@@ -151,7 +164,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
         "path": "/CustomerAddressModule/CustomerAddressModule/Properties",
         "isFolder": true,
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule/Properties?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule/Properties?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
       },
       "changeType": "add"
     },
@@ -159,8 +173,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "item": {
         "gitObjectType": "blob",
         "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
-        "path": "/CustomerAddressModule/CustomerAddressModule/Properties/AssemblyInfo.cs",
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule/Properties/AssemblyInfo.cs?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+        "path":
+          "/CustomerAddressModule/CustomerAddressModule/Properties/AssemblyInfo.cs",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule/Properties/AssemblyInfo.cs?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
       },
       "changeType": "add"
     },
@@ -168,8 +184,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "item": {
         "gitObjectType": "blob",
         "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
-        "path": "/CustomerAddressModule/CustomerAddressModule/Properties/Resources.Designer.cs",
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule/Properties/Resources.Designer.cs?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+        "path":
+          "/CustomerAddressModule/CustomerAddressModule/Properties/Resources.Designer.cs",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule/Properties/Resources.Designer.cs?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
       },
       "changeType": "add"
     },
@@ -177,8 +195,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "item": {
         "gitObjectType": "blob",
         "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
-        "path": "/CustomerAddressModule/CustomerAddressModule/Properties/Resources.resx",
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule/Properties/Resources.resx?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+        "path":
+          "/CustomerAddressModule/CustomerAddressModule/Properties/Resources.resx",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule/Properties/Resources.resx?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
       },
       "changeType": "add"
     },
@@ -186,8 +206,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "item": {
         "gitObjectType": "blob",
         "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
-        "path": "/CustomerAddressModule/CustomerAddressModule/Properties/Settings.Designer.cs",
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule/Properties/Settings.Designer.cs?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+        "path":
+          "/CustomerAddressModule/CustomerAddressModule/Properties/Settings.Designer.cs",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule/Properties/Settings.Designer.cs?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
       },
       "changeType": "add"
     },
@@ -195,8 +217,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
       "item": {
         "gitObjectType": "blob",
         "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
-        "path": "/CustomerAddressModule/CustomerAddressModule/Properties/Settings.settings",
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule/Properties/Settings.settings?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+        "path":
+          "/CustomerAddressModule/CustomerAddressModule/Properties/Settings.settings",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule/Properties/Settings.settings?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
       },
       "changeType": "add"
     },
@@ -206,7 +230,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
         "path": "/HelloWorld",
         "isFolder": true,
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/HelloWorld?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/HelloWorld?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
       },
       "changeType": "add"
     },
@@ -215,7 +240,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "gitObjectType": "blob",
         "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
         "path": "/HelloWorld/.classpath",
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/HelloWorld/.classpath?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/HelloWorld/.classpath?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
       },
       "changeType": "add"
     },
@@ -224,7 +250,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "gitObjectType": "blob",
         "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
         "path": "/HelloWorld/.project",
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/HelloWorld/.project?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/HelloWorld/.project?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
       },
       "changeType": "add"
     },
@@ -233,7 +260,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "gitObjectType": "blob",
         "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
         "path": "/HelloWorld/build.xml",
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/HelloWorld/build.xml?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/HelloWorld/build.xml?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
       },
       "changeType": "add"
     },
@@ -243,7 +271,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
         "path": "/HelloWorld/dist",
         "isFolder": true,
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/HelloWorld/dist?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/HelloWorld/dist?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
       },
       "changeType": "add"
     },
@@ -253,7 +282,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
         "path": "/HelloWorld/dist/lib",
         "isFolder": true,
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/HelloWorld/dist/lib?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/HelloWorld/dist/lib?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
       },
       "changeType": "add"
     },
@@ -262,7 +292,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "gitObjectType": "blob",
         "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
         "path": "/HelloWorld/dist/lib/MyProject-20140210.jar",
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/HelloWorld/dist/lib/MyProject-20140210.jar?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/HelloWorld/dist/lib/MyProject-20140210.jar?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
       },
       "changeType": "add"
     },
@@ -272,7 +303,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
         "path": "/HelloWorld/src",
         "isFolder": true,
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/HelloWorld/src?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/HelloWorld/src?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
       },
       "changeType": "add"
     },
@@ -281,7 +313,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "gitObjectType": "blob",
         "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
         "path": "/HelloWorld/src/HelloWorld.java",
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/HelloWorld/src/HelloWorld.java?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/HelloWorld/src/HelloWorld.java?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
       },
       "changeType": "add"
     },
@@ -291,7 +324,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
         "path": "/MyWebSite",
         "isFolder": true,
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/MyWebSite?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/MyWebSite?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
       },
       "changeType": "edit"
     },
@@ -301,7 +335,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
         "path": "/MyWebSite/MyWebSite",
         "isFolder": true,
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/MyWebSite/MyWebSite?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/MyWebSite/MyWebSite?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
       },
       "changeType": "edit"
     },
@@ -311,7 +346,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
         "path": "/MyWebSite/MyWebSite/Views",
         "isFolder": true,
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/MyWebSite/MyWebSite/Views?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/MyWebSite/MyWebSite/Views?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
       },
       "changeType": "edit"
     },
@@ -321,7 +357,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
         "path": "/MyWebSite/MyWebSite/Views/Home",
         "isFolder": true,
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/MyWebSite/MyWebSite/Views/Home?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/MyWebSite/MyWebSite/Views/Home?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
       },
       "changeType": "edit"
     },
@@ -330,7 +367,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "gitObjectType": "blob",
         "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
         "path": "/MyWebSite/MyWebSite/Views/Home/_Register.cshtml",
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/MyWebSite/MyWebSite/Views/Home/_Register.cshtml?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/MyWebSite/MyWebSite/Views/Home/_Register.cshtml?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
       },
       "changeType": "edit"
     },
@@ -339,7 +377,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "gitObjectType": "blob",
         "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
         "path": "/MyWebSite/MyWebSite/Web.config",
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/MyWebSite/MyWebSite/Web.config?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/MyWebSite/MyWebSite/Web.config?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
       },
       "changeType": "edit"
     }
@@ -349,7 +388,6 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
   "behindCount": 1
 }
 ```
-
 
 ### A page at a time
 
@@ -374,7 +412,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
         "path": "/CustomerAddressModule/CustomerAddressModule",
         "isFolder": true,
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
       },
       "changeType": "add"
     },
@@ -383,7 +422,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "gitObjectType": "blob",
         "commitId": "23d0bc5b128a10056dc68afece360d8a0fabb014",
         "path": "/CustomerAddressModule/CustomerAddressModule/App.config",
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule/App.config?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items/CustomerAddressModule/CustomerAddressModule/App.config?versionType=Commit&version=23d0bc5b128a10056dc68afece360d8a0fabb014"
       },
       "changeType": "add"
     }
@@ -393,7 +433,6 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
   "behindCount": 1
 }
 ```
-
 
 ### Between commit IDs
 
@@ -421,7 +460,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "commitId": "2f271272a1548da5a6507b4a29f3af943094c6b4",
         "path": "/CustomerAddressModule",
         "isFolder": true,
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//CustomerAddressModule?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//CustomerAddressModule?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
       },
       "changeType": "edit"
     },
@@ -433,7 +473,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "commitId": "2f271272a1548da5a6507b4a29f3af943094c6b4",
         "path": "/CustomerAddressModule/CustomerAddressModule",
         "isFolder": true,
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//CustomerAddressModule/CustomerAddressModule?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//CustomerAddressModule/CustomerAddressModule?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
       },
       "changeType": "edit"
     },
@@ -444,7 +485,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "gitObjectType": "blob",
         "commitId": "2f271272a1548da5a6507b4a29f3af943094c6b4",
         "path": "/CustomerAddressModule/CustomerAddressModule/Form1.cs",
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//CustomerAddressModule/CustomerAddressModule/Form1.cs?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//CustomerAddressModule/CustomerAddressModule/Form1.cs?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
       },
       "changeType": "edit"
     },
@@ -455,7 +497,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "gitObjectType": "blob",
         "commitId": "2f271272a1548da5a6507b4a29f3af943094c6b4",
         "path": "/CustomerAddressModule/CustomerAddressModule/Program.cs",
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//CustomerAddressModule/CustomerAddressModule/Program.cs?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//CustomerAddressModule/CustomerAddressModule/Program.cs?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
       },
       "changeType": "edit"
     },
@@ -467,7 +510,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "commitId": "2f271272a1548da5a6507b4a29f3af943094c6b4",
         "path": "/HelloWorld",
         "isFolder": true,
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//HelloWorld?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//HelloWorld?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
       },
       "changeType": "edit"
     },
@@ -479,7 +523,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "commitId": "2f271272a1548da5a6507b4a29f3af943094c6b4",
         "path": "/HelloWorld/src",
         "isFolder": true,
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//HelloWorld/src?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//HelloWorld/src?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
       },
       "changeType": "edit"
     },
@@ -490,7 +535,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "gitObjectType": "blob",
         "commitId": "2f271272a1548da5a6507b4a29f3af943094c6b4",
         "path": "/HelloWorld/src/HelloWorld.java",
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//HelloWorld/src/HelloWorld.java?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//HelloWorld/src/HelloWorld.java?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
       },
       "changeType": "edit"
     },
@@ -502,7 +548,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "commitId": "2f271272a1548da5a6507b4a29f3af943094c6b4",
         "path": "/MyWebSite",
         "isFolder": true,
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//MyWebSite?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//MyWebSite?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
       },
       "changeType": "edit"
     },
@@ -514,7 +561,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "commitId": "2f271272a1548da5a6507b4a29f3af943094c6b4",
         "path": "/MyWebSite/MyWebSite",
         "isFolder": true,
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//MyWebSite/MyWebSite?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//MyWebSite/MyWebSite?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
       },
       "changeType": "edit"
     },
@@ -525,7 +573,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "gitObjectType": "blob",
         "commitId": "2f271272a1548da5a6507b4a29f3af943094c6b4",
         "path": "/MyWebSite/MyWebSite/Project_Readme.html",
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//MyWebSite/MyWebSite/Project_Readme.html?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//MyWebSite/MyWebSite/Project_Readme.html?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
       },
       "changeType": "edit"
     },
@@ -536,7 +585,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "gitObjectType": "blob",
         "commitId": "2f271272a1548da5a6507b4a29f3af943094c6b4",
         "path": "/MyWebSite/MyWebSite/Startup.cs",
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//MyWebSite/MyWebSite/Startup.cs?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//MyWebSite/MyWebSite/Startup.cs?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
       },
       "changeType": "edit"
     },
@@ -548,7 +598,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "commitId": "2f271272a1548da5a6507b4a29f3af943094c6b4",
         "path": "/MyWebSite/MyWebSite/Views",
         "isFolder": true,
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//MyWebSite/MyWebSite/Views?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//MyWebSite/MyWebSite/Views?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
       },
       "changeType": "edit"
     },
@@ -560,7 +611,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "commitId": "2f271272a1548da5a6507b4a29f3af943094c6b4",
         "path": "/MyWebSite/MyWebSite/Views/Home",
         "isFolder": true,
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//MyWebSite/MyWebSite/Views/Home?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//MyWebSite/MyWebSite/Views/Home?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
       },
       "changeType": "edit"
     },
@@ -571,7 +623,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "gitObjectType": "blob",
         "commitId": "2f271272a1548da5a6507b4a29f3af943094c6b4",
         "path": "/MyWebSite/MyWebSite/Views/Home/_Register.cshtml",
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//MyWebSite/MyWebSite/Views/Home/_Register.cshtml?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//MyWebSite/MyWebSite/Views/Home/_Register.cshtml?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
       },
       "changeType": "edit"
     },
@@ -582,7 +635,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "gitObjectType": "blob",
         "commitId": "2f271272a1548da5a6507b4a29f3af943094c6b4",
         "path": "/MyWebSite/MyWebSite/Web.config",
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//MyWebSite/MyWebSite/Web.config?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//MyWebSite/MyWebSite/Web.config?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
       },
       "changeType": "edit"
     },
@@ -592,7 +646,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
         "gitObjectType": "blob",
         "commitId": "2f271272a1548da5a6507b4a29f3af943094c6b4",
         "path": "/readme.md",
-        "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//readme.md?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4b63-824a-2ba458937249/items//readme.md?versionType=Commit&version=2f271272a1548da5a6507b4a29f3af943094c6b4"
       },
       "changeType": "add"
     }

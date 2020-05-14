@@ -10,6 +10,7 @@ author: chcomley
 ms.date: 05/10/2019
 monikerRange: 'azure-devops'
 ---
+
 # Cloud Solution Providers: Buy Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../../includes/version-vsts-only.md)]
@@ -20,8 +21,8 @@ Partners in the Cloud Solution Provider (CSP) program can enable their customers
 
 To enable your customer to purchase Azure DevOps by using a CSP-based Azure subscription, confirm the following statements are true:
 
-- The customer has [Project Collection Administrator (PCA) or organization Owner permissions](../../security/lookup-organization-owner-admin.md)
-- The customer has [Contributor or Owner role permissions](../add-backup-billing-managers.md) to the CSP-based Azure subscription
+* The customer has [Project Collection Administrator (PCA) or organization Owner permissions](../../security/lookup-organization-owner-admin.md)
+* The customer has [Contributor or Owner role permissions](../add-backup-billing-managers.md) to the CSP-based Azure subscription
 
 When your customer gains access to the CSP-based Azure subscription, they can [set up billing](../set-up-billing-for-your-organization-vs.md) or [change billing](../change-azure-subscription.md) for their Azure DevOps organization and further charges are billed to the CSP subscription.
 
@@ -29,23 +30,22 @@ When your customer gains access to the CSP-based Azure subscription, they can [s
 
 ### CSP steps
 
-1. Sign in to the [Azure portal](https://ms.portal.azure.com/#home) as CSP.
-2. Assign your selected user Contributor access to the CSP Azure subscription.
+1.  Sign in to the [Azure portal](https://ms.portal.azure.com/#home) as CSP.
+2.  Assign your selected user Contributor access to the CSP Azure subscription.
 
 ### Customer steps
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Select ![gear icon](../../../media/icons/gear-icon.png) **Organization settings**.
+1.  Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
+2.  Select ![gear icon](../../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../../media/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../../media/settings/open-admin-settings-vert.png)
 
-3. Select **Billing**.
+3.  Select **Billing**.
 
-   ![Select Billing from Organization settings](../media/shared/select-billing-organization-settings.png)
-4. Select **Change billing**.
+    ![Select Billing from Organization settings](../media/shared/select-billing-organization-settings.png)
 
-   ![Change billing button](../media/shared/select-change-billing.png)
+4.  Select **Change billing**.
 
-5. Select your CSP Azure subscription that you want to be billed with, and then select **Save**.
+    ![Change billing button](../media/shared/select-change-billing.png)
 
-
+5.  Select your CSP Azure subscription that you want to be billed with, and then select **Save**.

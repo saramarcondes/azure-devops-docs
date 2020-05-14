@@ -11,14 +11,14 @@ hide_comments: true
 
 # Azure DevOps Feature Timeline
 
-****
+---
 
-| <a href="https://aka.ms/azuredevops/releasenotes" target="blank">What's New</a> 
-| <a href="https://developercommunity.visualstudio.com/spaces/21/index.html" target="blank">Developer Community</a> 
-| <a href="https://devblogs.microsoft.com/devops/" target="blank">DevOps Blog</a> 
+| <a href="https://aka.ms/azuredevops/releasenotes" target="blank">What's New</a>
+| <a href="https://developercommunity.visualstudio.com/spaces/21/index.html" target="blank">Developer Community</a>
+| <a href="https://devblogs.microsoft.com/devops/" target="blank">DevOps Blog</a>
 | <a href="https://docs.microsoft.com/azure/devops/?view=azure-devops" target="blank">Documentation</a> |
 
-****
+---
 
 ## Features under development
 
@@ -76,7 +76,6 @@ This feature list is a peek into our roadmap. It identifies some of the signific
     </tbody>
 </table>
 
-
 ## Current features
 
 The features timeline lists significant features delivered to Azure DevOps Services and the corresponding version of Azure DevOps Server.
@@ -104,7 +103,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         <tr><td>Getting details at runtime about multiple repositories</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Multi stage pipelines GA</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Configure Deployment Strategies from Azure portal</td><td>Pipelines</td><td>N/A</td>
-    </tr>    
+    </tr>
        <tr>
             <td rowspan="10"><a href="2020/sprint-167-update.md" data-raw-source="[April 13 2020](2020/sprint-167-update.md)">April 13 2020</a></td>
             <td>Support for Team Admins to create subscriptions for messaging apps in Slack and Teams</td></td><td>General</td><td>2020</td>
@@ -145,7 +144,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         <tr>
             <td rowspan="7"><a href="2020/sprint-163-update.md" data-raw-source="[13 January 2020](2020/sprint-163-update.md)">13 January 2020</a></td>
             <td>Get compact and organized notifications in the Microsoft Teams app from Azure Boards, Azure Pipelines and Azure Repos</td><td>General</td><td>N/A</td>
-        </tr> 
+        </tr>
         <tr><td>Delete bulk subscriptions created in a Microsoft Teams or Slack channel</td><td>General</td><td>N/A</td></tr>
         <tr><td>Use pipeline decorators to inject steps automatically in a deployment job</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Allow repository references to other Azure Repos organizations</td><td>Pipelines</td><td>Future</td></tr>
@@ -155,7 +154,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         <tr>
             <td rowspan="12"><a href="2019/sprint-162-update.md" data-raw-source="[16 December 2019](2019/sprint-162-update.md)">16 December 2019</a></td>
             <td>New web platform conversion landing pages</td><td>Repos</td><td>Future</td>
-        </tr> 
+        </tr>
         <tr><td>Support for Kotlin language</td><td>Repos</td><td>Future</td></tr>
         <tr><td>Updated multi-stage pipelines UI</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>VSTest TestResultsDirectory option is available in the task UI</td><td>Pipelines</td><td>Future</td></tr>
@@ -244,15 +243,15 @@ Versions in the "Server" column are linked to the appropriate download location.
         <tr><td>Open Policy Agent installer task</td><td>Pipelines</td><td>2020</td></tr>  
         <tr><td>Pipeline decorators for release pipelines</td><td>Pipelines</td><td>2020</td></tr>  
         <tr><td>New Test Plans page</td><td>Test Plans</td><td>2020</td></tr>  
-        <tr><td>Support for custom fields in Rollup columns</td><td>Reporting</td><td>2020</td></tr> 
-        <tr><td>Inline sprint burndown using story points</td><td>Reporting</td><td>2020</td></tr> 
-        <tr><td>Short and readable Wiki page URLs</td><td>Wiki</td><td>2020</td></tr> 
-        <tr><td>Mermaid diagram support in wiki</td><td>Wiki</td><td>2020</td></tr>   
+        <tr><td>Support for custom fields in Rollup columns</td><td>Reporting</td><td>2020</td></tr>
+        <tr><td>Inline sprint burndown using story points</td><td>Reporting</td><td>2020</td></tr>
+        <tr><td>Short and readable Wiki page URLs</td><td>Wiki</td><td>2020</td></tr>
+        <tr><td>Mermaid diagram support in wiki</td><td>Wiki</td><td>2020</td></tr>
         <tr>
             <td rowspan="20"><a href="2019/sprint-157-update.md" data-raw-source="[3 September 2019](2019/sprint-157-update.md)">3 September 2019</a></td>
             <td>Get personalized notifications with @mention support in Slack apps</td><td>General</td><td>N/A</td>
         </tr>
-        <tr><td>Download a list of organizations to a directory</td><td>General</td><td>2020</td></tr>      
+        <tr><td>Download a list of organizations to a directory</td><td>General</td><td>2020</td></tr>
         <tr><td>Track the progress of parent items using Rollup on Boards backlog</td><td>Boards</td><td>2020</td></tr>
         <tr><td>Taskboard live updates</td><td>Boards</td><td>2020</td></tr>
         <tr><td>Policy to block files with specified patterns</td><td>Repos</td><td>2020</td></tr>
@@ -267,7 +266,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         <tr><td>Service hooks for YAML pipelines</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Enhancement to Azure Pipelines app for Jira</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>GitHub release task enhancements</td><td>Pipelines</td><td>2020</td></tr>
-        <tr><td>Stage level filter for Azure Container Registry and Docker Hub artifacts</td><td>Pipelines</td><td>2020</td></tr>            
+        <tr><td>Stage level filter for Azure Container Registry and Docker Hub artifacts</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Sovereign cloud support in Kubernetes service connection</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Updates to hosted pipelines images</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Lead and Cycle Time widgets advanced filtering</td><td>Reporting</td><td>2020</td></tr>
@@ -285,7 +284,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         <tr><td>Configure upstreams in different organizations within an AAD tenant</td><td>Artifacts</td><td>2020</td></tr>
         <tr><td>Use Python Credential Provider to authenticate pip and twine with Azure Artifacts feeds</td><td>Artifacts</td><td>2020</td></tr>
         <tr><td>Pipelines caching improvements</td><td>Pipelines</td><td>2020</td></tr>
-        <tr><td>Increase in gates timeout limit and frequency</td><td>Pipelines</td><td>2020</td></tr>    
+        <tr><td>Increase in gates timeout limit and frequency</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>New build image template for Dockerfile</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Arguments input in Docker Compose task</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Fix warning in large test attachments</td><td>Pipelines</td><td>2020</td></tr>
@@ -4437,7 +4436,6 @@ Versions in the "Server" column are linked to the appropriate download location.
 
 We would love to hear what you think about these features. Report any problems or suggest a feature through [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
-> [!div class="mx-imgBorder"]
-> ![Make a suggestion](media/help-make-a-suggestion.png)
+> [!div class="mx-imgBorder"] > ![Make a suggestion](media/help-make-a-suggestion.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops).

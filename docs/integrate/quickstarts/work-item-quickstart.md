@@ -12,9 +12,10 @@ ms.date: 06/27/2017
 
 # Fetch work items with queries programmatically in Azure DevOps Services
 
-A common scenario in Azure DevOps Services is to fetch work items using queries. This guide details how to implement that scenario programmatically using our REST APIs or .NET client libraries. 
+A common scenario in Azure DevOps Services is to fetch work items using queries. This guide details how to implement that scenario programmatically using our REST APIs or .NET client libraries.
 
 ## Prerequisites
+
 To work on this Quickstart, you'll need the following prerequisites:
 
 * An organization in Azure DevOps Services. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137)
@@ -26,17 +27,19 @@ To work on this Quickstart, you'll need the following prerequisites:
 To learn about C# programming within Visual Studio, find the [Visual Studio C# programming documentation](/dotnet/csharp/programming-guide/inside-a-program/)
 
 ## C# code content
+
 There are a few things happening in the code sample below:
 
-1. Authenticating
-   1. Create credentials using your PAT
-   2. Generate the client
-2. Get the work items
-   1. Create the query you want to use
-   2. Get the results for that query
-   3. Get each of the work items by ID
+1.  Authenticating
+    1.  Create credentials using your PAT
+    2.  Generate the client
+2.  Get the work items
+    1.  Create the query you want to use
+    2.  Get the results for that query
+    3.  Get each of the work items by ID
 
 ## C# code snippet
+
 ```cs
 // nuget:Microsoft.TeamFoundationServer.Client
 using System;

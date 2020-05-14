@@ -13,7 +13,6 @@ ms.date: 08/04/2016
 
 Module path: `TFS/VersionControl/Contracts`
 
-
 ### Members
 
 * `gitObjectType`: [GitObjectType](../../../TFS/VersionControl/Contracts/GitObjectType.md). Blob or tree
@@ -27,4 +26,3 @@ Module path: `TFS/VersionControl/Contracts`
 * `size`: number. Size of content
 
 * `url`: string. url to retrieve tree or blob
-

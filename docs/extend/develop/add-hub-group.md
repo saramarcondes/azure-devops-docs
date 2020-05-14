@@ -23,36 +23,36 @@ Here's the complete extension manifest with Hello in the samples hub group.
 
 ```json
 {
-	"namespace": "Fabrikam.myextension",
-	"name": "My Extension",
-	"description": "This is my first extension",
-	"version": "1.0",
-	"provider": {
-		"name": "Fabrikam Fiber Inc"
-	},
-	"baseUri": "https://localhost:port",
-	"icon": "images/logo.png",
-	"links": {
-		"info": "info.html",
-		"support": "support.html",
-		"termsOfService": "terms-of-service.html"
-	},
-	"contributions": {
-		"vss.web#hubGroups.project": [
-			{
-				"id": "samples",
-				"name": "Samples",
-				"order":  30
-			}
-		],
-		"vss.web#hubs": [
-			{
-				"id": "myhub",
-				"name": "Hello",
-				"groupId": "samples",
-				"uri": "hello-world.html"
-			}
-		]
-	}
+  "namespace": "Fabrikam.myextension",
+  "name": "My Extension",
+  "description": "This is my first extension",
+  "version": "1.0",
+  "provider": {
+    "name": "Fabrikam Fiber Inc"
+  },
+  "baseUri": "https://localhost:port",
+  "icon": "images/logo.png",
+  "links": {
+    "info": "info.html",
+    "support": "support.html",
+    "termsOfService": "terms-of-service.html"
+  },
+  "contributions": {
+    "vss.web#hubGroups.project": [
+      {
+        "id": "samples",
+        "name": "Samples",
+        "order": 30
+      }
+    ],
+    "vss.web#hubs": [
+      {
+        "id": "myhub",
+        "name": "Hello",
+        "groupId": "samples",
+        "uri": "hello-world.html"
+      }
+    ]
+  }
 }
 ```

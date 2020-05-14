@@ -25,7 +25,7 @@ Learn more about [working with variables](../process/variables.md).
 > [!NOTE]
 > You can use [release variables](../release/variables.md) in your deploy tasks to share the common information (e.g. — Environment Name, Resource Group, etc)
 
-## Build.Clean 
+## Build.Clean
 
 ::: moniker range="> tfs-2017"
 
@@ -60,15 +60,15 @@ steps:
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
 ```
 
-You can configure the default scope for `System.AccessToken` using [build job authorization scope](options.md#build-job-authorization-scope). 
+You can configure the default scope for `System.AccessToken` using [build job authorization scope](options.md#build-job-authorization-scope).
 
 # [Classic](#tab/classic)
 
 You can allow scripts and tasks to access System.AccessToken at the job level.
 
-1. Navigate to the job
+1.  Navigate to the job
 
-1. Under **Additional options**, check the **Allow scripts to access the OAuth token** box.
+1.  Under **Additional options**, check the **Allow scripts to access the OAuth token** box.
 
 Checking this box also leaves the credential set in Git so that you can run
 pushes and pulls in your scripts.
@@ -110,14 +110,15 @@ For more detailed logs to debug pipeline problems, define `System.Debug` and set
 ::: moniker-end
 
 <a name="identity_values"></a>
+
 ### How are the identity variables set?
 
 The value depends on what caused the build.
 
-| If the build is triggered... | Then the Build.QueuedBy and Build.QueuedById values are based on... | Then the Build.RequestedFor and Build.RequestedForId values are based on... |
-| --- | --- | ---|
-| In Git or TFVC by the [Continuous integration (CI) triggers](triggers.md) | The system identity, for example: `[DefaultCollection]\Project Collection Service Accounts` | The person who pushed or checked in the changes. |
-| In Git or by a [branch policy build](../../repos/git/branch-policies.md#build-validation). | The system identity, for example: `[DefaultCollection]\Project Collection Service Accounts` | The person who checked in the changes. |
-| In TFVC by a [gated check-in trigger](triggers.md) | The person who checked in the changes. | The person who checked in the changes. |
-| In Git or TFVC by the [Scheduled triggers](triggers.md) | The system identity, for example: `[DefaultCollection]\Project Collection Service Accounts` | The system identity, for example: `[DefaultCollection]\Project Collection Service Accounts` |
-| Because you clicked the **Queue build** button | You | You |
+| If the build is triggered...                                                               | Then the Build.QueuedBy and Build.QueuedById values are based on...                         | Then the Build.RequestedFor and Build.RequestedForId values are based on...                 |
+| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| In Git or TFVC by the [Continuous integration (CI) triggers](triggers.md)                  | The system identity, for example: `[DefaultCollection]\Project Collection Service Accounts` | The person who pushed or checked in the changes.                                            |
+| In Git or by a [branch policy build](../../repos/git/branch-policies.md#build-validation). | The system identity, for example: `[DefaultCollection]\Project Collection Service Accounts` | The person who checked in the changes.                                                      |
+| In TFVC by a [gated check-in trigger](triggers.md)                                         | The person who checked in the changes.                                                      | The person who checked in the changes.                                                      |
+| In Git or TFVC by the [Scheduled triggers](triggers.md)                                    | The system identity, for example: `[DefaultCollection]\Project Collection Service Accounts` | The system identity, for example: `[DefaultCollection]\Project Collection Service Accounts` |
+| Because you clicked the **Queue build** button                                             | You                                                                                         | You                                                                                         |

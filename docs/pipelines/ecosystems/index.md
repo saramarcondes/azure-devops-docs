@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2015'
 
 # Azure Pipelines ecosystem support
 
-Build and deploy your apps. Find guidance based on your language and platform. 
+Build and deploy your apps. Find guidance based on your language and platform.
 
 ## Build your app
 
@@ -317,6 +317,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
 ## Deploy your app
 
 <a href="#index3"></a>
+
 <ul id="index3" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
             <li>
                 <a href="./kubernetes/deploy.md">
@@ -520,7 +521,6 @@ Build and deploy your apps. Find guidance based on your language and platform.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
-
 
 ## Build your app
 
@@ -965,4 +965,3 @@ Build and deploy your apps. Find guidance based on your language and platform.
 </ul>
 
 ::: moniker-end
-

@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # Deploy apps to Azure Government Cloud
 
-**Azure Pipelines | TFS 2017  | TFS 2018**
+**Azure Pipelines | TFS 2017 | TFS 2018**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]

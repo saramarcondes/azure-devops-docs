@@ -16,7 +16,7 @@ ms.date: 08/04/2016
 
 [!INCLUDE [API_version](../_data/version3-preview2.md)]
 
-**On-premises use** : An earlier, and slightly different version of the Release Management API is available in Team Foundation Server 2015 Update 2. To use this earlier version, you must specify an API version of **2.2-preview.1**.   
+**On-premises use** : An earlier, and slightly different version of the Release Management API is available in Team Foundation Server 2015 Update 2. To use this earlier version, you must specify an API version of **2.2-preview.1**.
 
 ## Get a list of releases
 
@@ -24,21 +24,23 @@ ms.date: 08/04/2016
 GET https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/release/releases?api-version={version}[&definitionId={int}&createdBy={string}&maxCreatedTime={datetime}&minCreatedTime={datetime}&statusFilter={string}&$expand={enum}&$top={string}&queryOrder={string}&continuationToken={string}]
 ```
 
-| Parameter     | Type     | Notes
-|:--------------|:---------|:------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| account       | string   | Your VSTS organization.
-| project       | string   | [Project](../tfs/projects.md) ID or name.
+| account | string | Your VSTS organization.
+| project | string | [Project](../tfs/projects.md) ID or name.
 | Query
-| definitionId  | int   | Releases for this definition.
-| createdBy     | string   | Releases created by this user.<br/>Alias of the user. `chuckreinhart@outlook.com`, for example.
+| definitionId | int | Releases for this definition.
+| createdBy | string | Releases created by this user.<br/>Alias of the user. `chuckreinhart@outlook.com`, for example.
 | minCreatedTime | [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) | Releases that were created after this time.
 | maxCreatedTime | [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) | Releases that were created before this time.
-| statusFilter        | enum {<br/>&nbsp;&nbsp;Draft,<br/>&nbsp;&nbsp;Active,<br/>&nbsp;&nbsp;Abandoned<br/>} | Releases that have this status.
-| $expand		| enum {<br/>&nbsp;&nbsp;environments,<br/>&nbsp;&nbsp;artifacts,<br/>&nbsp;&nbsp;approvals,<br/>&nbsp;&nbsp;none<br/>} | The property that should be expanded in the list of releases.
-| $top		| int | Number of releases to get
-| queryOrder		| enum {<br/>&nbsp;&nbsp;ascending,<br/>&nbsp;&nbsp;descending<br/>} | Gets the results in the defined order of created date for releases
-| continuationToken		| string | Gets the releases after the continuation token provided .
+| statusFilter | enum {<br/>&nbsp;&nbsp;Draft,<br/>&nbsp;&nbsp;Active,<br/>&nbsp;&nbsp;Abandoned<br/>} | Releases that have this status.
+| $expand | enum {<br/>&nbsp;&nbsp;environments,<br/>&nbsp;&nbsp;artifacts,<br/>&nbsp;&nbsp;approvals,<br/>&nbsp;&nbsp;none<br/>} | The property that should be expanded in the list of releases.
+| $top | int | Number of releases to get
+| queryOrder | enum {<br/>&nbsp;&nbsp;ascending,<br/>&nbsp;&nbsp;descending<br/>} | Gets the results in the defined order of created date for releases
+| continuationToken | string | Gets the releases after the continuation token provided .
 
 #### Sample request
 
@@ -62,15 +64,19 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "createdBy": {
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "variables": {
         "webAppName": {
@@ -80,13 +86,15 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
       "releaseDefinition": {
         "id": 12,
         "name": "Fabrikam-Website",
-        "url": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/12"
+        "url":
+          "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/12"
       },
       "description": "M 98 release",
       "reason": "manual",
       "releaseNameFormat": "Release-$(rev:r)",
       "keepForever": false,
-      "logsContainerUrl": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/releases/115/logs"
+      "logsContainerUrl":
+        "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/releases/115/logs"
     },
     {
       "id": 108,
@@ -98,27 +106,33 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "createdBy": {
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "variables": {},
       "releaseDefinition": {
         "id": 11,
         "name": "MyShuttle.CD",
-        "url": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/11"
+        "url":
+          "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/11"
       },
       "description": "",
       "reason": "manual",
       "releaseNameFormat": "Release-$(rev:r)",
       "keepForever": false,
-      "logsContainerUrl": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/releases/108/logs"
+      "logsContainerUrl":
+        "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/releases/108/logs"
     },
     {
       "id": 107,
@@ -130,15 +144,21 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "createdBy": {
         "id": "1d7b4130-028b-4334-a754-2f13c83343e3",
-        "displayName": "[DefaultCollection]\\Project Collection Service Accounts",
-        "uniqueName": "vstfs:///Framework/IdentityDomain/a3148d07-5064-4f40-a967-227c7de1cf9e\\Project Collection Service Accounts",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/1d7b4130-028b-4334-a754-2f13c83343e3",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=1d7b4130-028b-4334-a754-2f13c83343e3",
+        "displayName":
+          "[DefaultCollection]\\Project Collection Service Accounts",
+        "uniqueName":
+          "vstfs:///Framework/IdentityDomain/a3148d07-5064-4f40-a967-227c7de1cf9e\\Project Collection Service Accounts",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/1d7b4130-028b-4334-a754-2f13c83343e3",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=1d7b4130-028b-4334-a754-2f13c83343e3",
         "isContainer": true
       },
       "variables": {
@@ -149,13 +169,15 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
       "releaseDefinition": {
         "id": 12,
         "name": "Fabrikam-Website",
-        "url": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/12"
+        "url":
+          "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/12"
       },
       "description": "Triggered by Fabrikam.CI 20160412.1.",
       "reason": "continuousIntegration",
       "releaseNameFormat": "Release-$(rev:r)",
       "keepForever": true,
-      "logsContainerUrl": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/releases/107/logs"
+      "logsContainerUrl":
+        "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/releases/107/logs"
     },
     {
       "id": 105,
@@ -167,15 +189,19 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "createdBy": {
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "variables": {
         "webAppName": {
@@ -185,13 +211,15 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
       "releaseDefinition": {
         "id": 12,
         "name": "Fabrikam-Website",
-        "url": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/12"
+        "url":
+          "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/12"
       },
       "description": "Fabrikam website release - M6",
       "reason": "manual",
       "releaseNameFormat": "Release-$(rev:r)",
       "keepForever": false,
-      "logsContainerUrl": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/releases/105/logs"
+      "logsContainerUrl":
+        "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/releases/105/logs"
     },
     {
       "id": 103,
@@ -203,15 +231,19 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "createdBy": {
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "variables": {
         "webAppName": {
@@ -221,20 +253,22 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
       "releaseDefinition": {
         "id": 12,
         "name": "Fabrikam-Website",
-        "url": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/12"
+        "url":
+          "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/12"
       },
       "description": "Release FabFiber Website for M5",
       "reason": "manual",
       "releaseNameFormat": "Release-$(rev:r)",
       "keepForever": false,
-      "logsContainerUrl": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/releases/103/logs"
+      "logsContainerUrl":
+        "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/releases/103/logs"
     }
   ]
 }
 ```
 
-
 ### For a release definition
+
 #### Sample request
 
 ```
@@ -257,15 +291,19 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "createdBy": {
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "variables": {
         "webAppName": {
@@ -275,13 +313,15 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
       "releaseDefinition": {
         "id": 12,
         "name": "Fabrikam-Website",
-        "url": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/12"
+        "url":
+          "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/12"
       },
       "description": "M 98 release",
       "reason": "manual",
       "releaseNameFormat": "Release-$(rev:r)",
       "keepForever": false,
-      "logsContainerUrl": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/releases/115/logs"
+      "logsContainerUrl":
+        "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/releases/115/logs"
     },
     {
       "id": 107,
@@ -293,15 +333,21 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "createdBy": {
         "id": "1d7b4130-028b-4334-a754-2f13c83343e3",
-        "displayName": "[DefaultCollection]\\Project Collection Service Accounts",
-        "uniqueName": "vstfs:///Framework/IdentityDomain/a3148d07-5064-4f40-a967-227c7de1cf9e\\Project Collection Service Accounts",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/1d7b4130-028b-4334-a754-2f13c83343e3",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=1d7b4130-028b-4334-a754-2f13c83343e3",
+        "displayName":
+          "[DefaultCollection]\\Project Collection Service Accounts",
+        "uniqueName":
+          "vstfs:///Framework/IdentityDomain/a3148d07-5064-4f40-a967-227c7de1cf9e\\Project Collection Service Accounts",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/1d7b4130-028b-4334-a754-2f13c83343e3",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=1d7b4130-028b-4334-a754-2f13c83343e3",
         "isContainer": true
       },
       "variables": {
@@ -312,13 +358,15 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
       "releaseDefinition": {
         "id": 12,
         "name": "Fabrikam-Website",
-        "url": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/12"
+        "url":
+          "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/12"
       },
       "description": "Triggered by Fabrikam.CI 20160412.1.",
       "reason": "continuousIntegration",
       "releaseNameFormat": "Release-$(rev:r)",
       "keepForever": true,
-      "logsContainerUrl": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/releases/107/logs"
+      "logsContainerUrl":
+        "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/releases/107/logs"
     },
     {
       "id": 105,
@@ -330,15 +378,19 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "createdBy": {
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "variables": {
         "webAppName": {
@@ -348,13 +400,15 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
       "releaseDefinition": {
         "id": 12,
         "name": "Fabrikam-Website",
-        "url": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/12"
+        "url":
+          "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/12"
       },
       "description": "Fabrikam website release - M6",
       "reason": "manual",
       "releaseNameFormat": "Release-$(rev:r)",
       "keepForever": false,
-      "logsContainerUrl": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/releases/105/logs"
+      "logsContainerUrl":
+        "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/releases/105/logs"
     },
     {
       "id": 103,
@@ -366,15 +420,19 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "createdBy": {
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       },
       "variables": {
         "webAppName": {
@@ -384,34 +442,38 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
       "releaseDefinition": {
         "id": 12,
         "name": "Fabrikam-Website",
-        "url": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/12"
+        "url":
+          "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/12"
       },
       "description": "Release FabFiber Website for M5",
       "reason": "manual",
       "releaseNameFormat": "Release-$(rev:r)",
       "keepForever": false,
-      "logsContainerUrl": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/releases/103/logs"
+      "logsContainerUrl":
+        "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/releases/103/logs"
     }
   ]
 }
 ```
 
-
 ## Get a release
+
 <a name="getreleasedetails" />
 
 ```no-highlight
 GET https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/release/releases/{releaseId}?api-version={version}
 ```
 
-| Parameter | Type   | Notes
-|:----------|:-------|:------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| account   | string | Your VSTS organization.
-| project   | string | [Project](../tfs/projects.md) ID or name.
-| releaseId   | int    | ID of the release.
+| account | string | Your VSTS organization.
+| project | string | [Project](../tfs/projects.md) ID or name.
+| releaseId | int | ID of the release.
 | Query
-| version   | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
@@ -432,15 +494,19 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
     "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
     "displayName": "Chuck Reinhart",
     "uniqueName": "chuckreinhart@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
   },
   "createdBy": {
     "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
     "displayName": "Chuck Reinhart",
     "uniqueName": "chuckreinhart@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
   },
   "environments": [
     {
@@ -470,12 +536,14 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
           "release": {
             "id": 116,
             "name": "Release-14",
-            "url": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/releases/116"
+            "url":
+              "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/releases/116"
           },
           "releaseDefinition": {
             "id": 12,
             "name": "Fabrikam-Website",
-            "url": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/12"
+            "url":
+              "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/12"
           },
           "releaseEnvironment": {
             "id": 248,
@@ -525,9 +593,7 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "skipArtifactsDownload": false,
         "timeoutInMinutes": 0
       },
-      "demands": [
-        "Agent.Version -gtVersion 1.87"
-      ],
+      "demands": ["Agent.Version -gtVersion 1.87"],
       "conditions": [
         {
           "name": "ReleaseStarted",
@@ -551,7 +617,8 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
             "WebSiteName": "$(webAppName)",
             "WebSiteLocation": "South Central US",
             "Slot": "",
-            "Package": "$(System.DefaultWorkingDirectory)/Fabrikam.CI/drop/Mvc4Bootstrap.zip",
+            "Package":
+              "$(System.DefaultWorkingDirectory)/Fabrikam.CI/drop/Mvc4Bootstrap.zip",
             "doNotDelete": "false",
             "AdditionalArguments": ""
           }
@@ -561,8 +628,10 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       }
     },
     {
@@ -611,9 +680,7 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "skipArtifactsDownload": false,
         "timeoutInMinutes": 0
       },
-      "demands": [
-        "Agent.Version -gtVersion 1.87"
-      ],
+      "demands": ["Agent.Version -gtVersion 1.87"],
       "conditions": [],
       "workflowTasks": [
         {
@@ -629,7 +696,8 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
             "WebSiteName": "$(webAppName)",
             "WebSiteLocation": "South Central US",
             "Slot": "",
-            "Package": "$(System.DefaultWorkingDirectory)/Fabrikam.CI/drop/Mvc4Bootstrap.zip",
+            "Package":
+              "$(System.DefaultWorkingDirectory)/Fabrikam.CI/drop/Mvc4Bootstrap.zip",
             "doNotDelete": "false",
             "AdditionalArguments": ""
           }
@@ -639,8 +707,10 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       }
     },
     {
@@ -689,9 +759,7 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "skipArtifactsDownload": false,
         "timeoutInMinutes": 0
       },
-      "demands": [
-        "Agent.Version -gtVersion 1.87"
-      ],
+      "demands": ["Agent.Version -gtVersion 1.87"],
       "conditions": [
         {
           "name": "Dev",
@@ -718,7 +786,8 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
             "WebSiteName": "$(webAppName)",
             "WebSiteLocation": "South Central US",
             "Slot": "",
-            "Package": "$(System.DefaultWorkingDirectory)/Fabrikam.CI/drop/Mvc4Bootstrap.zip",
+            "Package":
+              "$(System.DefaultWorkingDirectory)/Fabrikam.CI/drop/Mvc4Bootstrap.zip",
             "doNotDelete": "false",
             "AdditionalArguments": ""
           }
@@ -728,8 +797,10 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       }
     }
   ],
@@ -767,25 +838,28 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
   "releaseDefinition": {
     "id": 12,
     "name": "Fabrikam-Website",
-    "url": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/12"
+    "url":
+      "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/12"
   },
   "description": "M 98 release",
   "reason": "manual",
   "releaseNameFormat": "Release-$(rev:r)",
   "keepForever": false,
-  "logsContainerUrl": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/releases/116/logs"
+  "logsContainerUrl":
+    "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/releases/116/logs"
 }
 ```
-
 
 ## Create a release
 
 ```no-highlight
 POST https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/release/releases?api-version={version}
 ```
+
 ```http
 Content-Type: application/json
 ```
+
 ```json
 {
 	definitionId: {int},
@@ -798,32 +872,34 @@ Content-Type: application/json
 						id: {string},
 						sourceBranch: {string}
 				 }
-		}		
+		}
 	]
 }
 ```
 
-| Parameter | Type   | Notes
-|:----------|:-------|:------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| account   | string | Your VSTS organization.
-| project   | string | [Project](../tfs/projects.md) ID or name.
+| account | string | Your VSTS organization.
+| project | string | [Project](../tfs/projects.md) ID or name.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Request body
-| definitionId    | int  | ID of the Release definition for which release will be created.
-| description    | string  | Description of the given release
-| alias		 | string | Alias of the artifact associated with the release definition
-| name  | string | (optional) Name of the artifact instance
-| id 		 | string		| ID of the artifact
+| definitionId | int | ID of the Release definition for which release will be created.
+| description | string | Description of the given release
+| alias | string | Alias of the artifact associated with the release definition
+| name | string | (optional) Name of the artifact instance
+| id | string | ID of the artifact
 | sourceBranch | string | (optional) Source branch off which the artifact got created. Eg. For Build it mentions the branch that got built
-
 
 #### Sample request
 
 ```
 POST https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/release/releases?api-version=3.0-preview.2
 ```
+
 ```json
 {
   "definitionId": 12,
@@ -852,15 +928,19 @@ POST https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/
     "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
     "displayName": "Chuck Reinhart",
     "uniqueName": "chuckreinhart@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
   },
   "createdBy": {
     "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
     "displayName": "Chuck Reinhart",
     "uniqueName": "chuckreinhart@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
   },
   "environments": [
     {
@@ -909,9 +989,7 @@ POST https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/
         "skipArtifactsDownload": false,
         "timeoutInMinutes": 0
       },
-      "demands": [
-        "Agent.Version -gtVersion 1.87"
-      ],
+      "demands": ["Agent.Version -gtVersion 1.87"],
       "conditions": [
         {
           "name": "ReleaseStarted",
@@ -933,7 +1011,8 @@ POST https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/
             "WebSiteName": "$(webAppName)",
             "WebSiteLocation": "South Central US",
             "Slot": "",
-            "Package": "$(System.DefaultWorkingDirectory)/Fabrikam.CI/drop/Mvc4Bootstrap.zip",
+            "Package":
+              "$(System.DefaultWorkingDirectory)/Fabrikam.CI/drop/Mvc4Bootstrap.zip",
             "doNotDelete": "false",
             "AdditionalArguments": ""
           }
@@ -943,8 +1022,10 @@ POST https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       }
     },
     {
@@ -993,9 +1074,7 @@ POST https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/
         "skipArtifactsDownload": false,
         "timeoutInMinutes": 0
       },
-      "demands": [
-        "Agent.Version -gtVersion 1.87"
-      ],
+      "demands": ["Agent.Version -gtVersion 1.87"],
       "conditions": [],
       "workflowTasks": [
         {
@@ -1011,7 +1090,8 @@ POST https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/
             "WebSiteName": "$(webAppName)",
             "WebSiteLocation": "South Central US",
             "Slot": "",
-            "Package": "$(System.DefaultWorkingDirectory)/Fabrikam.CI/drop/Mvc4Bootstrap.zip",
+            "Package":
+              "$(System.DefaultWorkingDirectory)/Fabrikam.CI/drop/Mvc4Bootstrap.zip",
             "doNotDelete": "false",
             "AdditionalArguments": ""
           }
@@ -1021,8 +1101,10 @@ POST https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       }
     },
     {
@@ -1071,9 +1153,7 @@ POST https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/
         "skipArtifactsDownload": false,
         "timeoutInMinutes": 0
       },
-      "demands": [
-        "Agent.Version -gtVersion 1.87"
-      ],
+      "demands": ["Agent.Version -gtVersion 1.87"],
       "conditions": [
         {
           "name": "Dev",
@@ -1100,7 +1180,8 @@ POST https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/
             "WebSiteName": "$(webAppName)",
             "WebSiteLocation": "South Central US",
             "Slot": "",
-            "Package": "$(System.DefaultWorkingDirectory)/Fabrikam.CI/drop/Mvc4Bootstrap.zip",
+            "Package":
+              "$(System.DefaultWorkingDirectory)/Fabrikam.CI/drop/Mvc4Bootstrap.zip",
             "doNotDelete": "false",
             "AdditionalArguments": ""
           }
@@ -1110,8 +1191,10 @@ POST https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       }
     }
   ],
@@ -1145,49 +1228,55 @@ POST https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/
   "releaseDefinition": {
     "id": 12,
     "name": "Fabrikam-Website",
-    "url": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/12"
+    "url":
+      "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/12"
   },
   "description": "M 98 release",
   "reason": "manual",
   "releaseNameFormat": "Release-$(rev:r)",
   "keepForever": false,
-  "logsContainerUrl": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/releases/116/logs"
+  "logsContainerUrl":
+    "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/releases/116/logs"
 }
 ```
-
 
 ## Modify the status of a release
 
 ```no-highlight
 PATCH https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/release/releases/{releaseid}?api-version={version}
 ```
+
 ```http
 Content-Type: application/json
 ```
+
 ```json
 {
-	"status": {string}
+  "status": { string }
 }
 ```
 
-| Parameter   | Type    | Notes
-|:------------|:--------|:------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| account     | string  | Your VSTS organization.
-| project     | string  | [Project](../tfs/projects.md) ID or name.
-| releaseId     | int     | ID of the release.
+| account | string | Your VSTS organization.
+| project | string | [Project](../tfs/projects.md) ID or name.
+| releaseId | int | ID of the release.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Request body
-| status      | enum {<br/>&nbsp;&nbsp;Active,<br/>&nbsp;&nbsp;Abandoned<br/>}  | The new status.
-
+| status | enum {<br/>&nbsp;&nbsp;Active,<br/>&nbsp;&nbsp;Abandoned<br/>} | The new status.
 
 ### Abandoning an active release
+
 #### Sample request
 
 ```
 PATCH https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/release/releases/118?api-version=3.0-preview.2
 ```
+
 ```json
 {
   "status": "abandoned"
@@ -1207,15 +1296,19 @@ PATCH https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364
     "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
     "displayName": "Chuck Reinhart",
     "uniqueName": "chuckreinhart@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
   },
   "createdBy": {
     "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
     "displayName": "Chuck Reinhart",
     "uniqueName": "chuckreinhart@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
   },
   "environments": [
     {
@@ -1264,9 +1357,7 @@ PATCH https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364
         "skipArtifactsDownload": false,
         "timeoutInMinutes": 0
       },
-      "demands": [
-        "Agent.Version -gtVersion 1.87"
-      ],
+      "demands": ["Agent.Version -gtVersion 1.87"],
       "conditions": [],
       "workflowTasks": [
         {
@@ -1282,7 +1373,8 @@ PATCH https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364
             "WebSiteName": "$(webAppName)",
             "WebSiteLocation": "South Central US",
             "Slot": "",
-            "Package": "$(System.DefaultWorkingDirectory)/Fabrikam.CI/drop/Mvc4Bootstrap.zip",
+            "Package":
+              "$(System.DefaultWorkingDirectory)/Fabrikam.CI/drop/Mvc4Bootstrap.zip",
             "doNotDelete": "false",
             "AdditionalArguments": ""
           }
@@ -1292,8 +1384,10 @@ PATCH https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       }
     },
     {
@@ -1342,9 +1436,7 @@ PATCH https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364
         "skipArtifactsDownload": false,
         "timeoutInMinutes": 0
       },
-      "demands": [
-        "Agent.Version -gtVersion 1.87"
-      ],
+      "demands": ["Agent.Version -gtVersion 1.87"],
       "conditions": [],
       "workflowTasks": [
         {
@@ -1360,7 +1452,8 @@ PATCH https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364
             "WebSiteName": "$(webAppName)",
             "WebSiteLocation": "South Central US",
             "Slot": "",
-            "Package": "$(System.DefaultWorkingDirectory)/Fabrikam.CI/drop/Mvc4Bootstrap.zip",
+            "Package":
+              "$(System.DefaultWorkingDirectory)/Fabrikam.CI/drop/Mvc4Bootstrap.zip",
             "doNotDelete": "false",
             "AdditionalArguments": ""
           }
@@ -1370,8 +1463,10 @@ PATCH https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       }
     },
     {
@@ -1420,9 +1515,7 @@ PATCH https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364
         "skipArtifactsDownload": false,
         "timeoutInMinutes": 0
       },
-      "demands": [
-        "Agent.Version -gtVersion 1.87"
-      ],
+      "demands": ["Agent.Version -gtVersion 1.87"],
       "conditions": [
         {
           "name": "Dev",
@@ -1449,7 +1542,8 @@ PATCH https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364
             "WebSiteName": "$(webAppName)",
             "WebSiteLocation": "South Central US",
             "Slot": "",
-            "Package": "$(System.DefaultWorkingDirectory)/Fabrikam.CI/drop/Mvc4Bootstrap.zip",
+            "Package":
+              "$(System.DefaultWorkingDirectory)/Fabrikam.CI/drop/Mvc4Bootstrap.zip",
             "doNotDelete": "false",
             "AdditionalArguments": ""
           }
@@ -1459,8 +1553,10 @@ PATCH https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364
         "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
         "displayName": "Chuck Reinhart",
         "uniqueName": "chuckreinhart@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
       }
     }
   ],
@@ -1498,50 +1594,55 @@ PATCH https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364
   "releaseDefinition": {
     "id": 12,
     "name": "Fabrikam-Website",
-    "url": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/12"
+    "url":
+      "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/12"
   },
   "description": "M 98 release",
   "reason": "manual",
   "releaseNameFormat": "Release-$(rev:r)",
   "keepForever": false,
-  "logsContainerUrl": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/releases/118/logs"
+  "logsContainerUrl":
+    "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/releases/118/logs"
 }
 ```
-
-
 
 ## Change the status of a release environment
 
 ```no-highlight
 PATCH https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/release/releases/{releaseid}/environments/{environmentId}?api-version={version}
 ```
+
 ```http
 Content-Type: application/json
 ```
+
 ```json
 {
-	"status": {string}
+  "status": { string }
 }
 ```
 
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
 
-| Parameter   | Type    | Notes
-|:------------|:--------|:------------
+
 | URL
-| account     | string  | Your VSTS organization.
-| project     | string  | [Project](../tfs/projects.md) ID or name.
-| releaseId     | int     | ID of the release.
+| account | string | Your VSTS organization.
+| project | string | [Project](../tfs/projects.md) ID or name.
+| releaseId | int | ID of the release.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Request body
-| status      | enum {<br/>&nbsp;&nbsp;InProgress,<br/>&nbsp;&nbsp;Canceled,<br/>} | The new status.
+| status | enum {<br/>&nbsp;&nbsp;InProgress,<br/>&nbsp;&nbsp;Canceled,<br/>} | The new status.
 
 ### Start deployment on an environment
+
 #### Sample request
 
 ```
 PATCH https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/release/releases/116/environments/249?api-version=3.0-preview.2
 ```
+
 ```json
 {
   "status": "inprogress"
@@ -1597,9 +1698,7 @@ PATCH https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364
     "skipArtifactsDownload": false,
     "timeoutInMinutes": 0
   },
-  "demands": [
-    "Agent.Version -gtVersion 1.87"
-  ],
+  "demands": ["Agent.Version -gtVersion 1.87"],
   "conditions": [],
   "workflowTasks": [
     {
@@ -1615,7 +1714,8 @@ PATCH https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364
         "WebSiteName": "$(webAppName)",
         "WebSiteLocation": "South Central US",
         "Slot": "",
-        "Package": "$(System.DefaultWorkingDirectory)/Fabrikam.CI/drop/Mvc4Bootstrap.zip",
+        "Package":
+          "$(System.DefaultWorkingDirectory)/Fabrikam.CI/drop/Mvc4Bootstrap.zip",
         "doNotDelete": "false",
         "AdditionalArguments": ""
       }
@@ -1625,12 +1725,13 @@ PATCH https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364
     "id": "52a5bc8d-4730-400a-95c7-7276d4ae5953",
     "displayName": "Chuck Reinhart",
     "uniqueName": "chuckreinhart@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/52a5bc8d-4730-400a-95c7-7276d4ae5953",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=52a5bc8d-4730-400a-95c7-7276d4ae5953"
   }
 }
 ```
-
 
 ## Get logs for a release
 
@@ -1640,15 +1741,16 @@ Get a zip file of all the tasks' logs for a release
 GET https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/release/releases/{releaseid}/logs?api-version={version}
 ```
 
-| Parameter | Type   | Notes
-|:----------|:-------|:------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| account   | string | Your VSTS organization.
-| project   | string | [Project](../tfs/projects.md) ID or name.
-| releaseId | int    | Logs for this release.
+| account | string | Your VSTS organization.
+| project | string | [Project](../tfs/projects.md) ID or name.
+| releaseId | int | Logs for this release.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-
 
 ## Get log for a task of a release
 
@@ -1658,13 +1760,15 @@ This gets the task log of a release as a plain text file.
 GET https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/release/releases/{releaseid}/environments/{environment}/tasks/{taskId}/logs?api-version={version}
 ```
 
-| Parameter | Type   | Notes
-|:----------|:-------|:------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| account   | string | Your VSTS organization.
-| project   | string | [Project](../tfs/projects.md) ID or name.
-| releaseId | int |	Release ID for which this approval belongs to.
-| environmentId | string |	Environment ID for which this approval belongs to.
-| taskId	| int |	Task iD for the log.
+| account | string | Your VSTS organization.
+| project | string | [Project](../tfs/projects.md) ID or name.
+| releaseId | int | Release ID for which this approval belongs to.
+| environmentId | string | Environment ID for which this approval belongs to.
+| taskId | int | Task iD for the log.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.

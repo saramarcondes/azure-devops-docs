@@ -14,7 +14,6 @@ ms.date: 08/04/2016
 
 Module path: `TFS/TestManagement/Contracts`
 
-
 ### Members
 
 * `covered`: number. Covered units
@@ -28,4 +27,3 @@ Module path: `TFS/TestManagement/Contracts`
 * `position`: number. Position of label
 
 * `total`: number. Total units
-

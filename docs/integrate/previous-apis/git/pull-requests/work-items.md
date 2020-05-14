@@ -26,15 +26,17 @@ ms.date: 11/3/2016
 GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pullRequests/{pullRequest}/workitems?api-version={version}
 ```
 
-| Parameter   | Type    | Notes
-|:------------|:--------|:---------------------------------------------------------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance    | string  | TFS server name ({server:port}).
-| project     | string  | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
-| repository  | string  | ID of the [repository](../repositories.md).
+| instance | string | TFS server name ({server:port}).
+| project | string | ID or name of the [project](../../tfs/projects.md). _Optional if specifying an ID for repository._
+| repository | string | ID of the [repository](../repositories.md).
 | pullRequest | integer | ID of the pull request.
 | Query
-| api-version | string  | [Version](../../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../../concepts/rest-api-versioning.md) of the API to use.
 
 [!INCLUDE [ID_vs_Name](../_data/id_or_name.md)]
 
@@ -58,7 +60,6 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-4
 }
 ```
 
-
 ## Adding and removing work item links to a pull request
 
 See [Work Item Tracking](../../wit/overview.md) for more information.
@@ -72,6 +73,7 @@ The URL is the artifact ID of a pull request which can be retrieved from the [Pu
 ```
 PATCH https://mytfsserver/DefaultCollection/_apis/wit/workItems/1?api-version=3.0
 ```
+
 ```json
 [
   {
@@ -82,7 +84,8 @@ PATCH https://mytfsserver/DefaultCollection/_apis/wit/workItems/1?api-version=3.
         "name": "Pull Request"
       },
       "rel": "ArtifactLink",
-      "url": "vstfs:///Git/PullRequestId/a7573007-bbb3-4341-b726-0c4148a07853%2f3411ebc1-d5aa-464f-9615-0b527bc66719%2f21"
+      "url":
+        "vstfs:///Git/PullRequestId/a7573007-bbb3-4341-b726-0c4148a07853%2f3411ebc1-d5aa-464f-9615-0b527bc66719%2f21"
     }
   }
 ]
@@ -125,7 +128,8 @@ PATCH https://mytfsserver/DefaultCollection/_apis/wit/workItems/1?api-version=3.
     },
     {
       "rel": "ArtifactLink",
-      "url": "vstfs:///Git/PullRequestId/a7573007-bbb3-4341-b726-0c4148a07853%2f3411ebc1-d5aa-464f-9615-0b527bc66719%2f21",
+      "url":
+        "vstfs:///Git/PullRequestId/a7573007-bbb3-4341-b726-0c4148a07853%2f3411ebc1-d5aa-464f-9615-0b527bc66719%2f21",
       "attributes": {
         "authorizedDate": "2016-11-01T16:30:55.803Z",
         "id": 7,
@@ -141,19 +145,24 @@ PATCH https://mytfsserver/DefaultCollection/_apis/wit/workItems/1?api-version=3.
       "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/1"
     },
     "workItemUpdates": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/1/updates"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/1/updates"
     },
     "workItemRevisions": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/1/revisions"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/1/revisions"
     },
     "workItemHistory": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/1/history"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/1/history"
     },
     "html": {
-      "href": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=af9b720a-cd56-44fd-98d3-d0461c3110e1&id=1"
+      "href":
+        "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=af9b720a-cd56-44fd-98d3-d0461c3110e1&id=1"
     },
     "workItemType": {
-      "href": "https://mytfsserver/DefaultCollection/a7573007-bbb3-4341-b726-0c4148a07853/_apis/wit/workItemTypes/User%20Story"
+      "href":
+        "https://mytfsserver/DefaultCollection/a7573007-bbb3-4341-b726-0c4148a07853/_apis/wit/workItemTypes/User%20Story"
     },
     "fields": {
       "href": "https://mytfsserver/DefaultCollection/_apis/wit/fields"
@@ -163,7 +172,6 @@ PATCH https://mytfsserver/DefaultCollection/_apis/wit/workItems/1?api-version=3.
 }
 ```
 
-
 ### Remove a work item link
 
 #### Sample request
@@ -171,12 +179,14 @@ PATCH https://mytfsserver/DefaultCollection/_apis/wit/workItems/1?api-version=3.
 ```
 PATCH https://mytfsserver/DefaultCollection/_apis/wit/workItems/1?api-version=3.0
 ```
+
 ```json
 [
   {
     "op": 5,
     "path": "/relations/1/url",
-    "value": "vstfs:///Git/PullRequestId/a7573007-bbb3-4341-b726-0c4148a07853%2f3411ebc1-d5aa-464f-9615-0b527bc66719%2f21"
+    "value":
+      "vstfs:///Git/PullRequestId/a7573007-bbb3-4341-b726-0c4148a07853%2f3411ebc1-d5aa-464f-9615-0b527bc66719%2f21"
   },
   {
     "op": 1,
@@ -226,19 +236,24 @@ PATCH https://mytfsserver/DefaultCollection/_apis/wit/workItems/1?api-version=3.
       "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/1"
     },
     "workItemUpdates": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/1/updates"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/1/updates"
     },
     "workItemRevisions": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/1/revisions"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/1/revisions"
     },
     "workItemHistory": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/1/history"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/1/history"
     },
     "html": {
-      "href": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=af9b720a-cd56-44fd-98d3-d0461c3110e1&id=1"
+      "href":
+        "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=af9b720a-cd56-44fd-98d3-d0461c3110e1&id=1"
     },
     "workItemType": {
-      "href": "https://mytfsserver/DefaultCollection/a7573007-bbb3-4341-b726-0c4148a07853/_apis/wit/workItemTypes/User%20Story"
+      "href":
+        "https://mytfsserver/DefaultCollection/a7573007-bbb3-4341-b726-0c4148a07853/_apis/wit/workItemTypes/User%20Story"
     },
     "fields": {
       "href": "https://mytfsserver/DefaultCollection/_apis/wit/fields"
@@ -247,5 +262,3 @@ PATCH https://mytfsserver/DefaultCollection/_apis/wit/workItems/1?api-version=3.
   "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/1"
 }
 ```
-
-

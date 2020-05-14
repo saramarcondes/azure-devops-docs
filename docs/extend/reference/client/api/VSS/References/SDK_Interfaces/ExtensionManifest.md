@@ -15,8 +15,7 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Base class for extension properties which are shared by the extension manifest and the extension model 
+Base class for extension properties which are shared by the extension manifest and the extension model
 
 ### Members
 
@@ -35,4 +34,3 @@ Base class for extension properties which are shared by the extension manifest a
 * `scopes`: string[]. List of all oauth scopes required by this extension
 
 * `serviceInstanceType`: string. The ServiceInstanceType(Guid) of the Azure DevOps Services service that must be available to an organization in order for the extension to be installed
-

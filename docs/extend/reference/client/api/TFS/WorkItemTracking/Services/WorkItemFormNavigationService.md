@@ -18,11 +18,13 @@ The work item form navigation service allows you to open the work item form for 
 ## Example
 
 ```js
-    VSS.require(["TFS/WorkItemTracking/Services"], function(workItemServices) {
-        workItemServices.WorkItemFormNavigationService.getService().then(function (workItemNavSvc) {
-            workItemNavSvc.openWorkItem(1);
-        });
-    });
+VSS.require(["TFS/WorkItemTracking/Services"], function(workItemServices) {
+  workItemServices.WorkItemFormNavigationService.getService().then(function(
+    workItemNavSvc
+  ) {
+    workItemNavSvc.openWorkItem(1);
+  });
+});
 ```
 
 See a [full example](https://github.com/Microsoft/vsts-extension-samples/blob/master/work-item-form/workItemService.html) in the `work-item-form` sample extension found in the vsts-extension-samples repository.
@@ -33,11 +35,13 @@ See a [full example](https://github.com/Microsoft/vsts-extension-samples/blob/ma
 * [openNewWorkItem()](#method_openNewWorkItem)
 
 <a name="method_openWorkItem"></a>
+
 ### openWorkItem()
 
 Opens the specified work item. The host page displays the work item in a dialog.
 
 #### Syntax
+
 <pre class='syntax'>
  IPromise&lt;WorkItem&gt; <b>openWorkItem</b>(workItemId, openInNewTab)
 </pre>
@@ -52,11 +56,13 @@ Opens the specified work item. The host page displays the work item in a dialog.
 * [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[WorkItem](../Contracts/WorkItem.md)&gt;. A promise that returns a work item when the work item dialog is closed. If openInNewTab is true, the promise returns null.
 
 <a name="method_openNewWorkItem"></a>
+
 ### openNewWorkItem()
 
 Opens a new work item of the specified type. The host page displays the new work item in a dialog.
 
 #### Syntax
+
 <pre class='syntax'>
  IPromise&lt;WorkItem&gt; <b>openNewWorkItem</b>(workItemTypeName, initialValues)
 </pre>
@@ -68,4 +74,4 @@ Opens a new work item of the specified type. The host page displays the new work
 
 #### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[WorkItem](../Contracts/WorkItem.md)&gt;. A promise that returns a work item when the work item dialog is closed. If the workitem was not saved before closing the dialog, the promise  returns null.
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[WorkItem](../Contracts/WorkItem.md)&gt;. A promise that returns a work item when the work item dialog is closed. If the workitem was not saved before closing the dialog, the promise returns null.

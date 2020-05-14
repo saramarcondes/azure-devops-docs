@@ -15,8 +15,7 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Reference to a CSS file to include on a page 
+Reference to a CSS file to include on a page
 
 ### Members
 
@@ -25,4 +24,3 @@ Reference to a CSS file to include on a page
 * `isCoreStylesheet`: boolean. Is this a core stylesheet that needs to be included in child frames
 
 * `url`: string. Url of the CSS file
-

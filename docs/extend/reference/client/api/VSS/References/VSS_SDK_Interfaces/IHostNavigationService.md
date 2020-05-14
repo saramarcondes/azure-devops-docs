@@ -15,8 +15,7 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Service which allows interaction with the browser location and navigation of the host frame 
+Service which allows interaction with the browser location and navigation of the host frame
 
 ### Members
 
@@ -27,4 +26,3 @@ Service which allows interaction with the browser location and navigation of the
 * `getHash`: (): IPromise&lt;string&gt;. Gets the current hash.
 
 * `setHash`: (hash: string): any. Sets the provided hash from the hosted content.
-

@@ -15,12 +15,10 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Registry of XDM objects that can be invoked by an XDM channel 
+Registry of XDM objects that can be invoked by an XDM channel
 
 ### Members
 
 * `register`: (instanceId: string, instance: Object or &lt;unknown_object_signature_kind&gt;): void. Register an object (instance or factory method) exposed by this frame to callers in a remote frame
 
 * `getInstance`: (instanceId: string, contextData: Object): T. Get an instance of an object registered with the given ID
-

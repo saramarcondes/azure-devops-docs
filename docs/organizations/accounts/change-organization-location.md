@@ -20,14 +20,15 @@ When you [create an organization](create-organization.md), you can choose the re
 
 ## Find your organization region
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+1.  Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
-2. Choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+2.  Choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Choose the gear icon, Organization settings](../../media/settings/open-admin-settings-vert.png)
-3. Select **Overview**. The region is listed below.
+    ![Choose the gear icon, Organization settings](../../media/settings/open-admin-settings-vert.png)
 
-   ![Find the region under the organization settings](media/change-organization-location/organization-settings-region.png)
+3.  Select **Overview**. The region is listed below.
+
+    ![Find the region under the organization settings](media/change-organization-location/organization-settings-region.png)
 
 ## Prerequisites
 
@@ -39,5 +40,4 @@ To change your organization region, use [Azure DevOps Virtual Support Agent](htt
 
 ## Related articles
 
-- [Worldwide data regions for Azure DevOps](../security/data-location.md).
-
+* [Worldwide data regions for Azure DevOps](../security/data-location.md).

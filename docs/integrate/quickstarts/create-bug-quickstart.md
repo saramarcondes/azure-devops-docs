@@ -10,11 +10,13 @@ author: chcomley
 ms.date: 06/27/2017
 ms.custom: quickstart
 ---
+
 # Create a bug in Azure DevOps Services using .NET client libraries
 
 Creating a new bug (or any work item) is pretty straight forward. You just need to set the field values and send a JSON-Patch object to the REST endpoint.
 
 ## Prerequisites
+
 To work on this Quickstart, you'll need the following prerequisites:
 
 * An organization in Azure DevOps Services. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137)
@@ -26,18 +28,20 @@ To work on this Quickstart, you'll need the following prerequisites:
 To learn about C# programming within Visual Studio, find the [Visual Studio C# programming documentation](/dotnet/csharp/programming-guide/inside-a-program/)
 
 ## C# code content
+
 There are a few things happening in the code sample below:
 
-1. Authentication
-    1. Creating credentials using your PAT
-    2. Creating a VSSConnection with your Azure DevOps Services URI and the credentials
-2. Retrieving the client using your VSSConnection
-3. Creating the bug
-    1. Create an array of objects to set the field values
-    2. Convert that array to a serialized json object
-    3. Send that serialized json object to the REST endpoint
+1.  Authentication
+    1.  Creating credentials using your PAT
+    2.  Creating a VSSConnection with your Azure DevOps Services URI and the credentials
+2.  Retrieving the client using your VSSConnection
+3.  Creating the bug
+    1.  Create an array of objects to set the field values
+    2.  Convert that array to a serialized json object
+    3.  Send that serialized json object to the REST endpoint
 
 ## C# code snippet
+
 ```csharp
 using System;
 using System.Collections.Generic;
@@ -55,15 +59,15 @@ using System.Net.Http.Headers;
 using System.Net.Http;
 using Newtonsoft.Json;
 
- 
-public class CreateBug 
+
+public class CreateBug
 {
     readonly string _uri;
     readonly string _personalAccessToken;
     readonly string _project;
 
     /// <summary>
-    /// Constructor. Manually set values to match your organization. 
+    /// Constructor. Manually set values to match your organization.
     /// </summary>
     public CreateBug()
     {
@@ -75,7 +79,7 @@ public class CreateBug
     /// <summary>
     /// Create a bug using the .NET client library
     /// </summary>
-    /// <returns>Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItem</returns>    
+    /// <returns>Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItem</returns>
     public WorkItem CreateBugUsingClientLib()
     {
         Uri uri = new Uri(_uri);

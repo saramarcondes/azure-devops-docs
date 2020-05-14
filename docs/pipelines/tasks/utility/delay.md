@@ -30,9 +30,9 @@ Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a
 
 ## Arguments
 
-| Arguments | Description |
-| --- | --- |
-| `delayForMinutes`<br/>Delay Time (minutes)| (Required) Delay the execution of the workflow by specified time in minutes. <br/>0 value means that workflow execution will start without delay <br/>Default value: `0`|
+| Arguments                                  | Description                                                                                                                                                              |
+| ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `delayForMinutes`<br/>Delay Time (minutes) | (Required) Delay the execution of the workflow by specified time in minutes. <br/>0 value means that workflow execution will start without delay <br/>Default value: `0` |
 
 Also see this task on [GitHub](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/DelayV1).
 

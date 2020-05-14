@@ -26,7 +26,7 @@ Pipeline caching and [pipeline artifacts](../artifacts/pipeline-artifacts.md) pe
 
 ## Using the Cache task
 
-Caching is added to a pipeline using the `Cache` pipeline task. This task works like any other task and is added to the `steps` section of a job. 
+Caching is added to a pipeline using the `Cache` pipeline task. This task works like any other task and is added to the `steps` section of a job.
 
 When a cache step is encountered during a run, the task will restore the cache based on the provided inputs. If no cache is found, the step completes and the next step in the job is run. After all steps in the job have run and assuming a successful job status, a special "save cache" step is run for each "restore cache" step that was not skipped. This step is responsible for saving the cache.
 
@@ -35,7 +35,7 @@ When a cache step is encountered during a run, the task will restore the cache b
 
 ### Configuring the task
 
-The `Cache` task has two required inputs: `key` and `path`. 
+The `Cache` task has two required inputs: `key` and `path`.
 
 #### Path input
 
@@ -46,15 +46,16 @@ The `Cache` task has two required inputs: `key` and `path`.
 `key` should be set to the identifier for the cache you want to restore or save. Keys are composed of a combination of string values, file paths, or file patterns, where each segment is separated by a `|` character.
 
 * **Strings**: <br>
-fixed value (like the name of the cache or a tool name) or taken from an environment variable (like the current OS or current job name)
+  fixed value (like the name of the cache or a tool name) or taken from an environment variable (like the current OS or current job name)
 
 * **File paths**: <br>
-path to a specific file whose contents will be hashed. This file must exist at the time the task is run. Keep in mind that *any* key segment that "looks like a file path" will be treated like a file path. In particular, this includes segments containing a `.`. This could result in the task failing when this "file" does not exist. 
+  path to a specific file whose contents will be hashed. This file must exist at the time the task is run. Keep in mind that _any_ key segment that "looks like a file path" will be treated like a file path. In particular, this includes segments containing a `.`. This could result in the task failing when this "file" does not exist.
+
   > [!TIP]
   > To avoid a path-like string segment from being treated like a file path, wrap it with double quotes, for example: `"my.key" | $(Agent.OS) | key.file`
 
 * **File patterns**: <br>
-comma-separated list of glob-style wildcard pattern that must match at least one file. For example:
+  comma-separated list of glob-style wildcard pattern that must match at least one file. For example:
   * `**/yarn.lock`: all yarn.lock files under the sources directory
   * `*/asset.json, !bin/**`: all asset.json files located in a directory under the sources directory, except under the bin directory
 
@@ -93,14 +94,14 @@ On the first run after the task is added, the cache step will report a "cache mi
 
 #### Required software on self-hosted agent
 
-|        | Windows | Linux | Mac |
-|--------|-------- |------ |-------|
-|GNU Tar | Required| Required | No |
-|BSD Tar | No | No | Required |
-|7-Zip    | Recommended | No | No |
+|         | Windows     | Linux    | Mac      |
+| ------- | ----------- | -------- | -------- |
+| GNU Tar | Required    | Required | No       |
+| BSD Tar | No          | No       | Required |
+| 7-Zip   | Recommended | No       | No       |
 
 The above executables need to be in a folder listed in the PATH environment variable.
-Please note that the hosted agents come with the software included, this is only applicable for self-hosted agents. 
+Please note that the hosted agents come with the software included, this is only applicable for self-hosted agents.
 
 **Example**:
 
@@ -139,27 +140,27 @@ When a cache step is encountered during a run, the cache identified by the key i
 
 ### CI, manual, and scheduled runs
 
-| Scope | Read | Write |
-|--------|------|-------|
-| Source branch | Yes | Yes |
-| Master branch | Yes | No |
+| Scope         | Read | Write |
+| ------------- | ---- | ----- |
+| Source branch | Yes  | Yes   |
+| Master branch | Yes  | No    |
 
 ### Pull request runs
 
-| Scope | Read | Write |
-|--------|------|-------|
-| Source branch | Yes | No |
-| Target branch | Yes | No |
-| Intermediate branch (e.g. `refs/pull/1/merge`) | Yes | Yes |
-| Master branch | Yes | No |
+| Scope                                          | Read | Write |
+| ---------------------------------------------- | ---- | ----- |
+| Source branch                                  | Yes  | No    |
+| Target branch                                  | Yes  | No    |
+| Intermediate branch (e.g. `refs/pull/1/merge`) | Yes  | Yes   |
+| Master branch                                  | Yes  | No    |
 
 ### Pull request fork runs
 
-| Branch | Read | Write |
-|--------|------|-------|
-| Target branch | Yes | No |
-| Intermediate branch (e.g. `refs/pull/1/merge`) | Yes | Yes |
-| Master branch | Yes | No |
+| Branch                                         | Read | Write |
+| ---------------------------------------------- | ---- | ----- |
+| Target branch                                  | Yes  | No    |
+| Intermediate branch (e.g. `refs/pull/1/merge`) | Yes  | Yes   |
+| Master branch                                  | Yes  | No    |
 
 > [!TIP]
 > Because caches are already scoped to a project, pipeline, and branch, there is no need to include any project, pipeline, or branch identifiers in the cache key.
@@ -199,7 +200,7 @@ steps:
 - task: Cache@2
   inputs:
     key: 'gems | "$(Agent.OS)" | my.gemspec'
-    restoreKeys: | 
+    restoreKeys: |
       gems | "$(Agent.OS)"
       gems
     path: $(BUNDLE_PATH)
@@ -220,7 +221,7 @@ variables:
 
 steps:
 - bash: |
-    sudo apt-get install ccache -y    
+    sudo apt-get install ccache -y
     echo "##vso[task.prependpath]/usr/lib/ccache"
   displayName: Install ccache and update PATH to use linked versions of gcc, cc, etc
 
@@ -234,8 +235,7 @@ steps:
 > [!NOTE]
 > In this example, the key is a fixed value (the OS name) and because caches are immutable, once a cache with this key is created for a particular scope (branch), the cache cannot be updated. This means subsequent builds for the same branch will not be able to update the cache even if the cache's contents have changed. This problem will be addressed in an upcoming feature: [10842: Enable fallback keys in Pipeline Caching](https://github.com/microsoft/azure-pipelines-tasks/issues/10842)
 
-See [ccache configuration settings](
-https://ccache.dev/manual/latest.html#_configuration_settings) for more options, including settings to control compression level.
+See [ccache configuration settings](https://ccache.dev/manual/latest.html#_configuration_settings) for more options, including settings to control compression level.
 
 ## Gradle
 
@@ -256,14 +256,14 @@ steps:
   displayName: Gradle build cache
 
 - script: |
-    ./gradlew --build-cache build    
+    ./gradlew --build-cache build
     # stop the Gradle daemon to ensure no files are left open (impacting the save cache operation later)
-    ./gradlew --stop    
+    ./gradlew --stop
   displayName: Build
 ```
 
 > [!NOTE]
-> In this example, the key is a fixed value (the OS name) and because caches are immutable, once a cache with this key is created for a particular scope (branch), the cache cannot be updated. This means subsequent builds for the same branch will not be able to update the cache even if the cache's contents have changed. This problem will be addressed in an upcoming feature:  [10842: Enable fallback keys in Pipeline Caching](https://github.com/microsoft/azure-pipelines-tasks/issues/10842).
+> In this example, the key is a fixed value (the OS name) and because caches are immutable, once a cache with this key is created for a particular scope (branch), the cache cannot be updated. This means subsequent builds for the same branch will not be able to update the cache even if the cache's contents have changed. This problem will be addressed in an upcoming feature: [10842: Enable fallback keys in Pipeline Caching](https://github.com/microsoft/azure-pipelines-tasks/issues/10842).
 
 ## Maven
 

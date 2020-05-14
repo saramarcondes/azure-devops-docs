@@ -12,11 +12,10 @@ ms.date: 08/04/2016
 
 # UI controls
 
-- [Grid](./controls/grid.md)
-- [TreeView](./controls/tree.md)
-- [MenuBar](./controls/menubar.md)
-- [Combo](./controls/combo.md)
-- [ModalDialog](./controls/modaldialog.md)
-- [Splitter](./controls/splitter.md)
-- [WaitControl](./controls/waitcontrol.md)
-
+* [Grid](./controls/grid.md)
+* [TreeView](./controls/tree.md)
+* [MenuBar](./controls/menubar.md)
+* [Combo](./controls/combo.md)
+* [ModalDialog](./controls/modaldialog.md)
+* [Splitter](./controls/splitter.md)
+* [WaitControl](./controls/waitcontrol.md)

@@ -13,7 +13,6 @@ ms.date: 08/04/2016
 
 Module path: `TFS/VersionControl/Contracts`
 
-
 ### Members
 
 * `isRename`: boolean. Indicates if this a rename source. If false, it is a merge source.
@@ -23,4 +22,3 @@ Module path: `TFS/VersionControl/Contracts`
 * `versionFrom`: number. Start of the version range
 
 * `versionTo`: number. End of the version range
-

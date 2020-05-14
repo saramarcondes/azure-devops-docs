@@ -18,17 +18,17 @@ Extends: [BuildDefinitionReference](./BuildDefinitionReference.md)
 
 ### Members
 
-* `_links`: any. 
+* `_links`: any.
 
 * `badgeEnabled`: boolean. Indicates whether badges are enabled for this definition
 
-* `build`: [BuildDefinitionStep](./BuildDefinitionStep.md)[]. 
+* `build`: [BuildDefinitionStep](./BuildDefinitionStep.md)[].
 
 * `buildNumberFormat`: string. The build number format
 
 * `comment`: string. The comment entered when saving the definition
 
-* `demands`: any[]. 
+* `demands`: any[].
 
 * `description`: string. The description
 
@@ -38,15 +38,14 @@ Extends: [BuildDefinitionReference](./BuildDefinitionReference.md)
 
 * `jobTimeoutInMinutes`: number. Gets or sets the job execution timeout in minutes for builds which are queued against this definition
 
-* `options`: [BuildOption](./BuildOption.md)[]. 
+* `options`: [BuildOption](./BuildOption.md)[].
 
-* `properties`: any. 
+* `properties`: any.
 
 * `repository`: [BuildRepository](./BuildRepository.md). The repository
 
-* `retentionRules`: [RetentionPolicy](./RetentionPolicy.md)[]. 
+* `retentionRules`: [RetentionPolicy](./RetentionPolicy.md)[].
 
-* `triggers`: [BuildTrigger](./BuildTrigger.md)[]. 
+* `triggers`: [BuildTrigger](./BuildTrigger.md)[].
 
-* `variables`: {[key: string]: [BuildDefinitionVariable](./BuildDefinitionVariable.md)}. 
-
+* `variables`: {[key: string]: [BuildDefinitionVariable](./BuildDefinitionVariable.md)}.

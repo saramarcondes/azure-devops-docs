@@ -24,15 +24,17 @@ ms.date: 08/04/2016
 GET https://{instance}/DefaultCollection/{project}/_apis/test/codeCoverage?api-version={version}[&buildId={int}&flags={int}]
 ```
 
-| Parameter   | Type                                   | Notes
-|:------------|:---------------------------------------|:------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance    | string                                 | TFS server name ({server:port}).
-| project     | string                                 | Name or ID of the project.
+| instance | string | TFS server name ({server:port}).
+| project | string | Name or ID of the project.
 | Query
-| api-version | string                                 | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| buildId     | int                                    | ID of the build for which code coverage data needs to be fetched.
-| flags       | enum { Modules, Functions, BlockData } | Value of flags determine the level of code coverage details to be fetched.<br/>Flags are additive.                  
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| buildId | int | ID of the build for which code coverage data needs to be fetched.
+| flags | enum { Modules, Functions, BlockData } | Value of flags determine the level of code coverage details to be fetched.<br/>Flags are additive.
 
 #### Sample request
 
@@ -69,13 +71,13 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-TFVC/_apis/test/codeCov
           "functions": []
         }
       ],
-      "codeCoverageFileUrl": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-TFVC/_api/_build/ItemContent?buildUri=vstfs%3A%2F%2F%2FBuild%2FBuild%2F363&path=%2FBuildCoverage%2FFabrikamUnitTests_20150609.2.Debug.Any%20CPU.51.coverage"
+      "codeCoverageFileUrl":
+        "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-TFVC/_api/_build/ItemContent?buildUri=vstfs%3A%2F%2F%2FBuild%2FBuild%2F363&path=%2FBuildCoverage%2FFabrikamUnitTests_20150609.2.Debug.Any%20CPU.51.coverage"
     }
   ],
   "count": 1
 }
 ```
-
 
 ## Get code coverage data for a test run
 
@@ -83,15 +85,17 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-TFVC/_apis/test/codeCov
 GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/codeCoverage?api-version={version}[&flags={int}]
 ```
 
-| Parameter   | Type                                   | Notes
-|:------------|:---------------------------------------|:------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance    | string                                 | TFS server name ({server:port}).
-| project     | string                                 | Name or ID of the project.
-| run         | int                                    | ID of the test run for which code coverage data needs to be fetched.
+| instance | string | TFS server name ({server:port}).
+| project | string | Name or ID of the project.
+| run | int | ID of the test run for which code coverage data needs to be fetched.
 | Query
-| api-version | string                                 | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| flags       | enum { Modules, Functions, BlockData } | Value of flags determine the level of code coverage details to be fetched.<br/>Flags are additive.                  
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| flags | enum { Modules, Functions, BlockData } | Value of flags determine the level of code coverage details to be fetched.<br/>Flags are additive.
 
 #### Sample request
 
@@ -108,7 +112,8 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-TFVC/_apis/test/runs/51
       "testRun": {
         "id": "51",
         "name": "buildguest@BUILD-0002 2015-06-09 10:32:28_Any CPU_Debug",
-        "url": "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-TFVC/_apis/test/Runs/51"
+        "url":
+          "https://mytfsserver/DefaultCollection/Fabrikam-Fiber-TFVC/_apis/test/Runs/51"
       },
       "state": "0",
       "lastError": "",

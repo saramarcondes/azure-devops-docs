@@ -67,4 +67,3 @@ A: [Restore the user](/azure/active-directory/active-directory-users-restore), r
 * [Disconnect your organization from Azure AD](disconnect-organization-from-aad.md)
 * [Get a list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md)
 * [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
-

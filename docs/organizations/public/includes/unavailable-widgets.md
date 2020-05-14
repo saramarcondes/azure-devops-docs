@@ -2,9 +2,6 @@
 ms.topic: include
 ---
 
-
-  
-
 * Assigned to me
 * Code tile
 * New work item

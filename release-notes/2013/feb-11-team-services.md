@@ -23,13 +23,13 @@ Note: To enable CI for Git builds you need [CTP3 of Visual Studio 2012 Update 2]
 
 Last sprint we launched a web based test case management experience. Today we have several improvements to add to it.
 
-1. **View test step attachments when you run tests**
+1.  **View test step attachments when you run tests**
 
 Any attachments that you have added to test steps when you created your test case (using Microsoft Test Manager) can now be viewed inline when you run the test using the Test Runner. If the attachment happens to be an image, it will show the actual image with the test steps. For other types of attachment, it shows the filename and size. Click the attachment to open it up in a separate browser instance.
 
 ![View test step attachments](media/2_11_01.png)
 
-2. **Add attachments when you run a test**
+2.  **Add attachments when you run a test**
 
 You can now add attachments to a test when you run it using Test Runner. These attachments can be log files you want to add, screenshots you have taken manually, or any other file. This helps you to document what happens when you run the test.
 
@@ -41,7 +41,7 @@ You can view all the attachments from the bottom bar in Test Runner.
 
 If you want to look at them later, you can view them with the test results from Analyze Test Run in Microsoft Test Manager.
 
-3. **Pause and resume tests in Test Runner**
+3.  **Pause and resume tests in Test Runner**
 
 You can now pause a test you are running. All the changes you make before you pause are preserved. For example, marking test steps as pass/fail, any comments added to a test step or test case, any attachments added to a test case and any bugs created. This lets you pause a test if you have to reboot as part of a test case, or where the dependency item may not be ready at the time of execution, or maybe you just need to go home and stop testing for the day and want to start where you left off the next day.
 

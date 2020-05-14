@@ -20,4 +20,3 @@ Defined in vss.d.ts
 * `BuiltIn` A built-in extension is installed for all Azure DevOps Services organizations by default
 
 * `Trusted` The extension comes from a fully-trusted publisher
-

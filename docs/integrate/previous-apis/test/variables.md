@@ -24,15 +24,17 @@ ms.date: 08/23/2016
 GET https://{instance}/DefaultCollection/{project}/_apis/test/variables?api-version={version}[&$skip={int}&$top={int}]
 ```
 
-| Parameter          | Type    | Default | Notes
-|:-------------------|:--------|:--------|:---------------------
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
+
+
 | URL
-| instance           | string  |         | TFS server name ({server:port}).
-| project            | string  |         | Name or ID of the project.
+| instance | string | | TFS server name ({server:port}).
+| project | string | | Name or ID of the project.
 | Query
-| api-version        | string  |         | Version of the API to use.
-| $skip				 | int     |         | Number of test variables to skip.
-| $top               | int     |         | Number of test variables to return.
+| api-version | string | | Version of the API to use.
+| $skip | int | | Number of test variables to skip.
+| $top | int | | Number of test variables to return.
 
 #### Sample request
 
@@ -48,27 +50,26 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/variabl
     {
       "id": 1,
       "name": "Operating System",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Variables/1",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Variables/1",
       "project": {
         "name": "fabrikam-fiber-tfvc",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
       },
       "description": "Default operating systems",
       "revision": 1,
-      "values": [
-        "Windows 10",
-        "Windows 7",
-        "Windows 8",
-        "Windows 8.1"
-      ]
+      "values": ["Windows 10", "Windows 7", "Windows 8", "Windows 8.1"]
     },
     {
       "id": 2,
       "name": "Browser",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Variables/2",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Variables/2",
       "project": {
         "name": "fabrikam-fiber-tfvc",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
       },
       "description": "Default browsers",
       "revision": 1,
@@ -83,24 +84,21 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/variabl
     {
       "id": 3,
       "name": "Renamed Language",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Variables/3",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Variables/3",
       "project": {
         "name": "fabrikam-fiber-tfvc",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
       },
       "description": "Language for testing",
       "revision": 2,
-      "values": [
-        "English - UK",
-        "English - US",
-        "Japanese"
-      ]
+      "values": ["English - UK", "English - US", "Japanese"]
     }
   ],
   "count": 3
 }
 ```
-
 
 ### A page at a time
 
@@ -118,10 +116,12 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/variabl
     {
       "id": 2,
       "name": "Browser",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Variables/2",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Variables/2",
       "project": {
         "name": "fabrikam-fiber-tfvc",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
       },
       "description": "Default browsers",
       "revision": 1,
@@ -136,24 +136,21 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/variabl
     {
       "id": 3,
       "name": "Renamed Language",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Variables/3",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Variables/3",
       "project": {
         "name": "fabrikam-fiber-tfvc",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
       },
       "description": "Language for testing",
       "revision": 2,
-      "values": [
-        "English - UK",
-        "English - US",
-        "Japanese"
-      ]
+      "values": ["English - UK", "English - US", "Japanese"]
     }
   ],
   "count": 2
 }
 ```
-
 
 ## Get a test variable
 
@@ -161,14 +158,16 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/variabl
 GET https://{instance}/DefaultCollection/{project}/_apis/test/variables/{variableId}?api-version={version}
 ```
 
-| Parameter          | Type    | Notes
-|:-------------------|:--------|:---------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance           | string  | TFS server name ({server:port}).
-| project            | string  | Name or ID of the project.
-| variableId               | int     | ID of the test variable to get.
+| instance | string | TFS server name ({server:port}).
+| project | string | Name or ID of the project.
+| variableId | int | ID of the test variable to get.
 | Query
-| api-version        | string  | Version of the API to use.
+| api-version | string | Version of the API to use.
 
 #### Sample request
 
@@ -182,31 +181,29 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/variabl
 {
   "id": 1,
   "name": "Operating System",
-  "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Variables/1",
+  "url":
+    "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Variables/1",
   "project": {
     "name": "fabrikam-fiber-tfvc",
-    "url": "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
   },
   "description": "Default operating systems",
   "revision": 1,
-  "values": [
-    "Windows 10",
-    "Windows 7",
-    "Windows 8",
-    "Windows 8.1"
-  ]
+  "values": ["Windows 10", "Windows 7", "Windows 8", "Windows 8.1"]
 }
 ```
-
 
 ## Create a test variable
 
 ```no-highlight
 POST https://{instance}/DefaultCollection/{project}/_apis/test/variables?api-version={version}
 ```
+
 ```http
 Content-Type: application/json
 ```
+
 ```json
 {
   "name": {string},
@@ -215,31 +212,31 @@ Content-Type: application/json
 }
 ```
 
-| Parameter   | Type     | Default                     | Notes
-|:------------|:---------|:----------------------------|:---------------------
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
+
+
 | URL
-| instance    | string   |                             | TFS server name ({server:port}).
-| project     | string   |                             | Name or ID of the project.
+| instance | string | | TFS server name ({server:port}).
+| project | string | | Name or ID of the project.
 | Query
-| api-version | string   |                             | Version of the API to use.
+| api-version | string | | Version of the API to use.
 | Body
-| name        | string   |                             | Name of the new test variable.
-| description | string   |                             | Description of the new test variable.
-| values      | string   |                             | List of values allowed for the test variable.
+| name | string | | Name of the new test variable.
+| description | string | | Description of the new test variable.
+| values | string | | List of values allowed for the test variable.
 
 #### Sample request
 
 ```
 POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/variables?api-version=3.0-preview.1
 ```
+
 ```json
 {
   "name": "Language",
   "description": "Language for testing",
-  "values": [
-    "English - US",
-    "English - UK"
-  ]
+  "values": ["English - US", "English - UK"]
 }
 ```
 
@@ -249,29 +246,29 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/variab
 {
   "id": 3,
   "name": "Language",
-  "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Variables/3",
+  "url":
+    "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Variables/3",
   "project": {
     "name": "fabrikam-fiber-tfvc",
-    "url": "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
   },
   "description": "Language for testing",
   "revision": 1,
-  "values": [
-    "English - UK",
-    "English - US"
-  ]
+  "values": ["English - UK", "English - US"]
 }
 ```
-
 
 ## Update a test variable
 
 ```no-highlight
 PATCH https://{instance}/DefaultCollection/{project}/_apis/test/variables/{variableId}?api-version={version}
 ```
+
 ```http
 Content-Type: application/json
 ```
+
 ```json
 {
   "name": {string},
@@ -280,32 +277,30 @@ Content-Type: application/json
 }
 ```
 
-| Parameter   | Type     | Default                     | Notes
-|:------------|:---------|:----------------------------|:---------------------
-| URL
-| instance    | string   |                             | TFS server name ({server:port}).
-| project     | string   |                             | Name or ID of the project.
-| variableId               | int     |                 | ID of the test variable to update.
-| Query
-| api-version | string   |                             | Version of the API to use.
-| Body
-| name        | string   |                             | Name of the test variable.
-| description | string   |                             | Description of the test variable.
-| values      | string   |                             | List of values allowed for the test variable.
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
 
+
+| URL
+| instance | string | | TFS server name ({server:port}).
+| project | string | | Name or ID of the project.
+| variableId | int | | ID of the test variable to update.
+| Query
+| api-version | string | | Version of the API to use.
+| Body
+| name | string | | Name of the test variable.
+| description | string | | Description of the test variable.
+| values | string | | List of values allowed for the test variable.
 
 #### Sample request
 
 ```
 PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/variables/3?api-version=3.0-preview.1
 ```
+
 ```json
 {
-  "values": [
-    "English - US",
-    "English - UK",
-    "Japanese"
-  ]
+  "values": ["English - US", "English - UK", "Japanese"]
 }
 ```
 
@@ -315,21 +310,18 @@ PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/varia
 {
   "id": 3,
   "name": "Renamed Language",
-  "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Variables/3",
+  "url":
+    "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Variables/3",
   "project": {
     "name": "fabrikam-fiber-tfvc",
-    "url": "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
   },
   "description": "Language for testing",
   "revision": 2,
-  "values": [
-    "English - UK",
-    "English - US",
-    "Japanese"
-  ]
+  "values": ["English - UK", "English - US", "Japanese"]
 }
 ```
-
 
 ## Delete a test variable
 
@@ -337,18 +329,19 @@ PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/varia
 DELETE https://{instance}/DefaultCollection/{project}/_apis/test/variables/{variableId}?api-version={version}
 ```
 
-| Parameter          | Type    | Notes
-|:-------------------|:--------|:---------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance           | string  | TFS server name ({server:port}).
-| project            | string  | Name or ID of the project.
-| variableId               | int     | ID of the test variable to delete.
+| instance | string | TFS server name ({server:port}).
+| project | string | Name or ID of the project.
+| variableId | int | ID of the test variable to delete.
 | Query
-| api-version        | string  | Version of the API to use.
+| api-version | string | Version of the API to use.
 
 #### Sample request
 
 ```
 DELETE https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/variables/1?api-version=3.0-preview.1
 ```
-

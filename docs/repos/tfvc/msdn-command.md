@@ -11,7 +11,6 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Msdn Command
 
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
@@ -23,18 +22,21 @@ tf msdn commandname
 ```
 
 ## Parameters
-| **Argument** | **Description** |
-|---|---|
-| *commandname* | Specifies a Team Foundation command for which to display a help topic. |
+
+| **Argument**  | **Description**                                                        |
+| ------------- | ---------------------------------------------------------------------- |
+| _commandname_ | Specifies a Team Foundation command for which to display a help topic. |
 
 ## Remarks
 
-When you need a command and are not sure which one to use, type **tf msdn** for a list of command reference topics and links to additional resources. If you use the **msdn** command without specifying a *commandname* parameter, you will see a topic that lists all commands together with usage requirements and a description.
+When you need a command and are not sure which one to use, type **tf msdn** for a list of command reference topics and links to additional resources. If you use the **msdn** command without specifying a _commandname_ parameter, you will see a topic that lists all commands together with usage requirements and a description.
 
-When you specify the *commandname* parameter, the help topic opens for that specific command. If the system cannot find a match for the *commandname*, it searches for aliases and short names. If it does not find a matching command, alias, or short name, you will get an error message.
+When you specify the _commandname_ parameter, the help topic opens for that specific command. If the system cannot find a match for the _commandname_, it searches for aliases and short names. If it does not find a matching command, alias, or short name, you will get an error message.
 
 For more information about how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+
 ## Examples
+
 The following example displays a help topic that lists all the version control commands, including a brief explanation of syntax.
 
 ```

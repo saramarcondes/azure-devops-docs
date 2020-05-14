@@ -76,7 +76,7 @@ exit 1
 ---
 
 > [!TIP]
-> 
+>
 > `exit 1` is optional, but is often a command you'll issue soon after an error is logged. If you select **Control Options: Continue on error**, then the `exit 1` will result in a partially successful build instead of a failed build.
 
 #### Example: Log a warning about a specific place in a file
@@ -150,11 +150,11 @@ Finish the timeline record for the current task, set task result and current ope
 
 #### Properties
 
-* `result` = 
-  - `Succeeded` The task succeeded.
-  - `SucceededWithIssues` The task ran into problems. The build will be completed as partially succeeded at best.
-  - `Failed` The build will be completed as failed. (If the **Control Options: Continue on error** option is selected, the build will be completed as partially succeeded at best.)
-   
+* `result` =
+  * `Succeeded` The task succeeded.
+  * `SucceededWithIssues` The task ran into problems. The build will be completed as partially succeeded at best.
+  * `Failed` The build will be completed as failed. (If the **Control Options: Continue on error** option is selected, the build will be completed as partially succeeded at best.)
+
 #### Example
 
 ```
@@ -177,31 +177,31 @@ The logging system will keep tracking the GUID for each timeline records that be
 #### Properties
 
 * `id` = Timeline record GUID (Required)
-* `parentid` = Parent timeline record GUID 
+* `parentid` = Parent timeline record GUID
 * `type` = Record type (Required for first time, can't overwrite)
 * `name` = Record name (Required for first time, can't overwrite)
 * `order` = order of timeline record (Required for first time, can't overwrite)
 * `starttime` = `Datetime`
 * `finishtime` = `Datetime`
-* `progress` = percentage of completion 
-* `state` = `Unknown` | `Initialized` | `InProgress` | `Completed` 
+* `progress` = percentage of completion
+* `state` = `Unknown` | `Initialized` | `InProgress` | `Completed`
 * `result` = `Succeeded` | `SucceededWithIssues` | `Failed`
 
 #### Examples
 
-Create new root timeline record: 
+Create new root timeline record:
 
 ```
 ##vso[task.logdetail id=new guid;name=project1;type=build;order=1]create new timeline record
 ```
 
-Create new nested timeline record: 
+Create new nested timeline record:
 
 ```
 ##vso[task.logdetail id=new guid;parentid=exist timeline record guid;name=project1;type=build;order=1]create new nested timeline record
 ```
 
-Update exist timeline record: 
+Update exist timeline record:
 
 ```
 ##vso[task.logdetail id=exist timeline record guid;progress=15;state=InProgress;]update timeline record
@@ -223,7 +223,7 @@ When `issecret` is set to `true`, the value of the variable will be saved as sec
 * `issecret` = boolean (Optional, defaults to false)
 * `isoutput` = boolean (Optional, defaults to false)
 * `isreadonly` = boolean (Optional, defaults to false)
-   
+
 #### Examples
 
 # [Bash](#tab/bash)
@@ -310,7 +310,7 @@ Upload and attach attachment to current timeline record. These files are not ava
 
 * `type` = attachment type (Required)
 * `name` = attachment name (Required)
-  
+
 #### Example
 
 ```
@@ -351,7 +351,7 @@ Upload user interested file as additional log information to the current timelin
 ##vso[task.uploadfile]c:\additionalfile.log
 ```
 
-### PrependPath: Prepend a path to the  PATH environment variable
+### PrependPath: Prepend a path to the PATH environment variable
 
 `##vso[task.prependpath]local file path`
 
@@ -371,7 +371,7 @@ The updated environment variable will be reflected in subsequent tasks.
 ### Associate: Initialize an artifact
 
 `##vso[artifact.associate]artifact location`
-                
+
 #### Usage
 
 Create an artifact link. Artifact location must be a file container path, VC path or UNC share path.
@@ -379,7 +379,7 @@ Create an artifact link. Artifact location must be a file container path, VC pat
 #### Properties
 
 * `artifactname` = artifact name (Required)
-*  `type` = `container` | `filepath` | `versioncontrol` | `gitref` | `tfvclabel`, artifact type (Required)
+* `type` = `container` | `filepath` | `versioncontrol` | `gitref` | `tfvclabel`, artifact type (Required)
 
 #### Examples
 
@@ -437,7 +437,7 @@ Upload user interested log to build's container "`logs\tool`" folder.
 ```
 ##vso[build.uploadlog]c:\msbuild.log
 ```
-        
+
 ### UpdateBuildNumber: Override the automatically generated build number
 
 `##vso[build.updatebuildnumber]build number`
@@ -456,7 +456,6 @@ You can automatically generate a build number from tokens you specify in the [pi
 
 `##vso[build.addbuildtag]build tag`
 
-
 #### Usage
 
 Add a tag for current build.
@@ -466,7 +465,6 @@ Add a tag for current build.
 ```
 ##vso[build.addbuildtag]Tag_UnitTestPassed
 ```
-
 
 ## Release commands
 

@@ -11,31 +11,32 @@ monikerRange: '>= tfs-2017'
 ---
 
 # Request stakeholder feedback using the Test &amp; Feedback extension
- 
-[!INCLUDE [feedback-header-text](includes/feedback-header-text.md)] 
+
+[!INCLUDE [feedback-header-text](includes/feedback-header-text.md)]
 
 <a name="request"></a>
+
 ## Request feedback from stakeholders
 
-Request feedback from stakeholders directly from an Azure DevOps or TFS work item. 
+Request feedback from stakeholders directly from an Azure DevOps or TFS work item.
 
-1. Open the work item form for the user story or feature for which
-   you want to request feedback.
+1.  Open the work item form for the user story or feature for which
+    you want to request feedback.
 
-1. Open the shortcut menu from the ellipses (**...**) and choose **Request feedback**.
+1.  Open the shortcut menu from the ellipses (**...**) and choose **Request feedback**.
 
-   ![Choosing the Request feedback option](media/request-stakeholder-feedback/request-stakeholder-feedback-01.png)
-   
-1. Type or select the names of the stakeholder(s) you want to send 
-   the request to, and optionally add any instructions or notes that 
-   will help them provide meaningful feedback. 
- 
-   ![Selecting users and entering instructions](media/request-stakeholder-feedback/request-stakeholder-feedback-02.png)
+    ![Choosing the Request feedback option](media/request-stakeholder-feedback/request-stakeholder-feedback-01.png)
 
-1. Choose **Send** to generate emails to all the selected stakeholders.
+1.  Type or select the names of the stakeholder(s) you want to send
+    the request to, and optionally add any instructions or notes that
+    will help them provide meaningful feedback.
+
+    ![Selecting users and entering instructions](media/request-stakeholder-feedback/request-stakeholder-feedback-02.png)
+
+1.  Choose **Send** to generate emails to all the selected stakeholders.
 
 > [!NOTE]
-> Teams can request feedback from other team members, such as users having Basic access. 
+> Teams can request feedback from other team members, such as users having Basic access.
 > Just add their names in the feedback request form so that a **Request feedback** email is sent to them.
 > Also see [Can users with Basic access respond to feedback requests?](provide-stakeholder-feedback.md#non-stakeholder-feedback).
 
@@ -47,5 +48,4 @@ Request feedback from stakeholders directly from an Azure DevOps or TFS work ite
 * [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
 * [Overview of manual and exploratory testing](index.yml)
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
-
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

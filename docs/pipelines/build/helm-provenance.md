@@ -18,55 +18,55 @@ In this step-by-step guide you'll learn how to package and sign Helm charts in a
 
 ## Generate a private-public key pair to sign the helm chart using GPG
 
-1. Download [GPG](https://www.gnupg.org/download/index.html).
+1.  Download [GPG](https://www.gnupg.org/download/index.html).
 
-2. Launch the command prompt in an administrator mode. Run the following command to generate a private-public key pair to sign the helm chart using gpg. While creating the key, you'll be prompted for the username and email address. The "name email address" is later used to name the private-public key pair that is created.
+2.  Launch the command prompt in an administrator mode. Run the following command to generate a private-public key pair to sign the helm chart using gpg. While creating the key, you'll be prompted for the username and email address. The "name email address" is later used to name the private-public key pair that is created.
 
-   ```cmd
-   gpg --full-generate-key
-   ```
-   
-   ![Generate Key](media/helm-provenance/generate-key.png)
+    ```cmd
+    gpg --full-generate-key
+    ```
 
-3. You'll be prompted for the passphrase. Give the value and click ok.
+    ![Generate Key](media/helm-provenance/generate-key.png)
 
-   ![Passphrase](media/helm-provenance/passphrase.png)
+3.  You'll be prompted for the passphrase. Give the value and click ok.
 
-4. After creating the key, you can see the list of keys which contains both private and public using the following command.
+    ![Passphrase](media/helm-provenance/passphrase.png)
 
-   - To see list of private keys
+4.  After creating the key, you can see the list of keys which contains both private and public using the following command.
 
-     ```cmd
-     gpg --list-secret-keys
-     ```
+    * To see list of private keys
 
-     ![Private Keys](media/helm-provenance/privatekeys.png)
+      ```cmd
+      gpg --list-secret-keys
+      ```
 
-     - To see the list of public keys
+      ![Private Keys](media/helm-provenance/privatekeys.png)
 
-       ```cmd
-       gpg --list-keys
-       ```
+      * To see the list of public keys
 
-       ![Public Keys](media/helm-provenance/publickeys.png)
+        ```cmd
+        gpg --list-keys
+        ```
 
-5. Store the private and public keys in 2 different files with the extension **gpg** as shown below.
+        ![Public Keys](media/helm-provenance/publickeys.png)
 
-   * For a private key
+5.  Store the private and public keys in 2 different files with the extension **gpg** as shown below.
 
-   ```cmd
-   gpg --export-secret-key 94325E18E53EDD99DD8339C3CFD9DAF0707CB788 contoso@microsoft.com > C:/somepath/privatekeys.gpg
-   ```
+    * For a private key
 
-   You'll see the **privatekeys.gpg** file exported to the path which was mentioned above.
+    ```cmd
+    gpg --export-secret-key 94325E18E53EDD99DD8339C3CFD9DAF0707CB788 contoso@microsoft.com > C:/somepath/privatekeys.gpg
+    ```
 
-   * For a public key
+    You'll see the **privatekeys.gpg** file exported to the path which was mentioned above.
 
-   ```cmd
-   gpg --export-key 94325E18E53EDD99DD8339C3CFD9DAF0707CB788 contoso@microsoft.com > C:/somepath/publickey.gpg
-   ```
+    * For a public key
 
-   You'll see the **publickey.gpg** file exported to the path which was mentioned above.
+    ```cmd
+    gpg --export-key 94325E18E53EDD99DD8339C3CFD9DAF0707CB788 contoso@microsoft.com > C:/somepath/publickey.gpg
+    ```
+
+    You'll see the **publickey.gpg** file exported to the path which was mentioned above.
 
 In Azure DevOps, save the **privatekey.gpg** file in the library **secure files** section.
 

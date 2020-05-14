@@ -11,7 +11,6 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Remove Access to Version Control Files
 
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
@@ -25,8 +24,8 @@ The following procedure provides the details for removing the file by using the 
 
 &nbsp;
 
->**Caution:**  
->If you remove the **Read** permission for the **Service Accounts** security group on a file or folder that is under version control, the VersionControl.Adapter might not be able to read the file or folder. If the adapter cannot read the version control information in the data warehouse, the adapter will write a message in the application-tier event log similar to **The service account might not have permissions to retrieve this changeset**. Without the version control information from the file or folder, the data warehouse, and subsequent version control reports might not be completely accurate.
+> **Caution:**  
+> If you remove the **Read** permission for the **Service Accounts** security group on a file or folder that is under version control, the VersionControl.Adapter might not be able to read the file or folder. If the adapter cannot read the version control information in the data warehouse, the adapter will write a message in the application-tier event log similar to **The service account might not have permissions to retrieve this changeset**. Without the version control information from the file or folder, the data warehouse, and subsequent version control reports might not be completely accurate.
 
 **Required Permissions**
 

@@ -14,7 +14,6 @@ ms.date: 08/04/2016
 
 Module path: `TFS/TestManagement/Contracts`
 
-
 ### Members
 
 * `cloneRequirements`: boolean. If set to true requirements are cloned
@@ -28,4 +27,3 @@ Module path: `TFS/TestManagement/Contracts`
 * `overrideParameters`: {[key: string]: string}. Key value pairs where the key value is overridden by the value
 
 * `relatedLinkComment`: string. Comment on the link that links the new clone test case to the original Set null for no comment
-

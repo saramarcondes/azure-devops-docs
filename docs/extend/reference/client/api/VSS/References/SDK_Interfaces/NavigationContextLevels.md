@@ -17,7 +17,7 @@ Defined in vss.d.ts
 
 ### Values
 
-* `None` 
+* `None`
 
 * `Deployment` Root level in Azure.
 
@@ -32,4 +32,3 @@ Defined in vss.d.ts
 * `ApplicationAll` Sugar for all application levels.
 
 * `All` Sugar for all levels
-

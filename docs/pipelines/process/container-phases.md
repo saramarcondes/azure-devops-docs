@@ -17,8 +17,7 @@ is installed.
 This is convenient and typically well-suited for projects that are just beginning to adopt Azure Pipelines.
 Over time, you may find that you want more control over the context where your tasks run.
 
-
-> [!NOTE] 
+> [!NOTE]
 > The Classic editor doesn't support container jobs at this time.
 
 [!INCLUDE [container-vs-host](./includes/container-vs-host.md)]
@@ -38,15 +37,17 @@ If you need fine-grained control at the individual step level, [step targets](ta
 ### Linux-based containers
 
 The Azure Pipelines system requires a few things in Linux-based containers:
-- Bash
-- glibc-based
-- Can run Node.js (which the agent provides)
-- Does not define an `ENTRYPOINT`
-- `USER` has access to `groupadd` and other privileges commands without `sudo`
+
+* Bash
+* glibc-based
+* Can run Node.js (which the agent provides)
+* Does not define an `ENTRYPOINT`
+* `USER` has access to `groupadd` and other privileges commands without `sudo`
 
 And on your agent host:
-- Ensure Docker is installed
-- The agent must have permission to access the Docker daemon
+
+* Ensure Docker is installed
+* The agent must have permission to access the Docker daemon
 
 Be sure your container has each of these tools available. Some of the extremely stripped-down
 containers available on Docker Hub, especially those based on Alpine Linux, don't satisfy these
@@ -234,22 +235,27 @@ Finally, stock Alpine doesn't come with other dependencies that Azure Pipelines 
 bash, sudo, which, and groupadd.
 
 ### Bring your own Node.js
+
 You are responsible for adding a Node LTS binary to your container.
 Node 10 LTS is a safe choice.
 You can start from the `node:10-alpine` image.
 
 ### Tell the agent about Node.js
+
 The agent will read a container label "com.azure.dev.pipelines.handler.node.path".
 If this label exists, it must be the path to the Node.js binary.
 For example, in an image based on `node:10-alpine`, add this line to your Dockerfile:
+
 ```
 LABEL "com.azure.dev.pipelines.agent.handler.node.path"="/usr/local/bin/node"
 ```
 
 ### Add requirements
+
 Azure Pipelines assumes a Bash-based system with common administration packages installed.
 Alpine Linux in particular doesn't come with several of the packages needed.
 Installing `bash`, `sudo`, and `shadow` will cover the basic needs.
+
 ```
 RUN apk add bash sudo shadow
 ```

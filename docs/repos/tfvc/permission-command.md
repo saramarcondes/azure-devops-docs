@@ -11,7 +11,6 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Permission Command
 
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
@@ -23,10 +22,10 @@ Modifies the user access control list (ACL) and displays authorization settings 
 To use the **permission** command, you must have the **Manipulate security settings** permission set to **Allow** for the folders being modified, be a member of the **Team Foundation Administrators** security group, or be a system administrator on the local computer (Windows Administrator security group). For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
 ```
-tf permission [/allow:(* |perm1[,perm2,...]] 
-[/deny:(* |perm1[,perm2,...])] [/remove:(* |perm1[,perm2,...])] 
-[/inherit:yes|no] [/user:username1[,username2,...]] 
-[/group:groupname1[,groupname2,...]] [/collection:TeamProjectCollectionUrl] 
+tf permission [/allow:(* |perm1[,perm2,...]]
+[/deny:(* |perm1[,perm2,...])] [/remove:(* |perm1[,perm2,...])]
+[/inherit:yes|no] [/user:username1[,username2,...]]
+[/group:groupname1[,groupname2,...]] [/collection:TeamProjectCollectionUrl]
 [/recursive] itemspec [/global][/login:username,[password]]
 ```
 
@@ -143,7 +142,9 @@ You can specify more than one <em>Itemspec</em> argument.
 You can use the <strong>permission</strong> command (or alternatively its shortcut, <strong>perm</strong>) to manage authorization settings for Team Foundation version control server objects. However, this command does not let you manage authentication settings such as creating or modifying Team Foundation security groups.
 
 For more information about how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+
 ## Examples
+
 The following example displays the Team Foundation access control lists (ACLs) for 314.cs.
 
 ```

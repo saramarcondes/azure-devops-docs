@@ -12,7 +12,6 @@ ms.date: 04/20/2020
 monikerRange: 'azure-devops'
 ---
 
-
 # Access with Azure Active Directory groups
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
@@ -35,12 +34,12 @@ and differences in how you [control organization access with Microsoft accounts 
 
 ## Add an Azure AD group to an Azure DevOps group
 
-> [!NOTE]   
+> [!NOTE]  
 > To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
 
-#### [Preview page](#tab/preview-page) 
+#### [Preview page](#tab/preview-page)
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+1.  Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
     [Why am I asked to choose between my work or school account and my personal account?](faq-user-and-permissions-management.md#ChooseOrgAcctMSAcct)
 
@@ -48,23 +47,23 @@ and differences in how you [control organization access with Microsoft accounts 
 
     ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
-3. Choose **Permissions**, and then select the group you want to add a member to.
+3.  Choose **Permissions**, and then select the group you want to add a member to.
 
-   ![Add a member to your selected group](media/user-hub/choose-permissions-select-group.png)
+    ![Add a member to your selected group](media/user-hub/choose-permissions-select-group.png)
 
-4. Select **Members**, and then select **Add**.
+4.  Select **Members**, and then select **Add**.
 
     ![Select Members, and then Add](media/user-hub/select-members-add.png)
 
     You [invite guests into Azure AD](https://devblogs.microsoft.com/devops/inviting-directory-guests-to-aad-backed-vsts-accounts/) and into your Azure AD-backed organizations, without waiting for them to accept. This invitation allows you to add those guests to your organization, grant access to projects, assign extensions, and more.
 
-5. Add users or groups, and then choose **Save** when you're done.
+5.  Add users or groups, and then choose **Save** when you're done.
 
-   ![Save add users or groups](media/user-hub/save-add-users-groups.png)
+    ![Save add users or groups](media/user-hub/save-add-users-groups.png)
 
 #### [Current page](#tab/current-page)
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+1.  Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
     [Why am I asked to choose between my work or school account and my personal account?](faq-user-and-permissions-management.md#ChooseOrgAcctMSAcct)
 
@@ -72,20 +71,21 @@ and differences in how you [control organization access with Microsoft accounts 
 
     ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
-3. Choose **Security**, select the group you want to add a member to, select **Members**, and then select **Add**.
+3.  Choose **Security**, select the group you want to add a member to, select **Members**, and then select **Add**.
 
-   ![Add a member to your selected group](media/manage-azure-ad-groups/admin-settings-security-choose-group-add-member.png)
-4. Add groups, and then save your changes.
+    ![Add a member to your selected group](media/manage-azure-ad-groups/admin-settings-security-choose-group-add-member.png)
+
+4.  Add groups, and then save your changes.
 
     ![Bulk adds members to a group](media/manage-azure-ad-groups/bulk-add-groups.png)
 
     You [invite guests into Azure AD](https://devblogs.microsoft.com/devops/inviting-directory-guests-to-aad-backed-vsts-accounts/) and into your Azure AD-backed organizations, without waiting for them to accept. This invitation allows you to add those guests to your organization, grant access to projects, assign extensions, and more.
 
-5. Add more users or groups, or save your changes if you're done.
+5.  Add more users or groups, or save your changes if you're done.
 
-* * *
+---
 
 ## Related articles
 
-- [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
-- [Manage conditional access](manage-conditional-access.md)
+* [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
+* [Manage conditional access](manage-conditional-access.md)

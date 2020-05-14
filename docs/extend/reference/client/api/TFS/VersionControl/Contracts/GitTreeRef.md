@@ -13,10 +13,9 @@ ms.date: 08/04/2016
 
 Module path: `TFS/VersionControl/Contracts`
 
-
 ### Members
 
-* `_links`: any. 
+* `_links`: any.
 
 * `objectId`: string. SHA1 hash of git object
 
@@ -25,4 +24,3 @@ Module path: `TFS/VersionControl/Contracts`
 * `treeEntries`: [GitTreeEntryRef](../../../TFS/VersionControl/Contracts/GitTreeEntryRef.md)[]. Blobs and trees under this tree
 
 * `url`: string. Url to tree
-

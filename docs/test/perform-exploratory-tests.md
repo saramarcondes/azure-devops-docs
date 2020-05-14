@@ -14,92 +14,92 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-header](includes/version-header.md)]
 
-The **Test &amp; Feedback extension** helps teams perform exploratory testing and provide feedback. 
-Everyone in the team, such as developers, product owners, managers, UX or UI engineers, 
-marketing teams, early adopters, and other stakeholders can use the 
-extension to submit bugs or provide feedback and contribute to the 
-quality of your product. 
+The **Test &amp; Feedback extension** helps teams perform exploratory testing and provide feedback.
+Everyone in the team, such as developers, product owners, managers, UX or UI engineers,
+marketing teams, early adopters, and other stakeholders can use the
+extension to submit bugs or provide feedback and contribute to the
+quality of your product.
 
-[!INCLUDE [feature-availability](includes/feature-availability.md)] 
+[!INCLUDE [feature-availability](includes/feature-availability.md)]
 
 <a name="installext"></a>
 
 ## Install the extension
 
-1. Check the list of [supported browsers](reference-qa.md#browser-support) and decide which you want to use.
+1.  Check the list of [supported browsers](reference-qa.md#browser-support) and decide which you want to use.
 
-1. Download and install your chosen browser, if you haven't already, then open it.
+1.  Download and install your chosen browser, if you haven't already, then open it.
 
-1. Go to [Visual Studio Marketplace > Test &amp; Feedback](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web)
-   and choose **Install**.
+1.  Go to [Visual Studio Marketplace > Test &amp; Feedback](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web)
+    and choose **Install**.
 
-   ![Visual Studio Marketplace, Test &amp; Feedback extension, Install](media/perform-exploratory-tests/getstarted-01.png)
+    ![Visual Studio Marketplace, Test & Feedback extension, Install](media/perform-exploratory-tests/getstarted-01.png)
 
-1. Follow the instructions shown to install the Test &amp; Feedback extension in your browser:
+1.  Follow the instructions shown to install the Test &amp; Feedback extension in your browser:
 
-   - If you are using Google Chrome, choose the **Install** link to open the 
-     Google Chrome web store and follow the instructions to install the extension.
+    * If you are using Google Chrome, choose the **Install** link to open the
+      Google Chrome web store and follow the instructions to install the extension.
 
-     ![Install extension on Chrome](media/perform-exploratory-tests/getstarted-02.png)
+      ![Install extension on Chrome](media/perform-exploratory-tests/getstarted-02.png)
 
-     ![Install extension on Chrome](media/perform-exploratory-tests/getstarted-03.png)
+      ![Install extension on Chrome](media/perform-exploratory-tests/getstarted-03.png)
 
-   - If you are using Mozilla Firefox 50.0 and higher, choose the **Download** link
-     and save the file to a local folder on your computer. 
+    * If you are using Mozilla Firefox 50.0 and higher, choose the **Download** link
+      and save the file to a local folder on your computer.
 
-     ![Install extension on Firefox](media/perform-exploratory-tests/getstarted-07.png)
+      ![Install extension on Firefox](media/perform-exploratory-tests/getstarted-07.png)
 
-     Select and drag the downloaded file and drop it on any tab in Firefox.
+      Select and drag the downloaded file and drop it on any tab in Firefox.
 
-     ![Install extension on Firefox](media/perform-exploratory-tests/getstarted-08.png)
+      ![Install extension on Firefox](media/perform-exploratory-tests/getstarted-08.png)
 
-     Choose **Install**.
+      Choose **Install**.
 
-     ![Install extension on Firefox](media/perform-exploratory-tests/getstarted-09.png)
+      ![Install extension on Firefox](media/perform-exploratory-tests/getstarted-09.png)
 
-     ![Install extension on Firefox](media/perform-exploratory-tests/getstarted-10.png)
+      ![Install extension on Firefox](media/perform-exploratory-tests/getstarted-10.png)
 
->You need to install the extension or add-on only once. Afterwards your browser will
-update it automatically.
+> You need to install the extension or add-on only once. Afterwards your browser will
+> update it automatically.
 
 <a name="selectmode"></a>
-##  Select an exploratory testing mode
 
-1. Open the extension you installed in your browser by choosing the
-   ![Test and Feedback](media/shared/exp-test-icon.png) icon.
+## Select an exploratory testing mode
 
-   ![Open extension](media/perform-exploratory-tests/open-extension.png)
- 
-1. Decide if you want to use the extension in Connected or Standalone mode.
+1.  Open the extension you installed in your browser by choosing the
+    ![Test and Feedback](media/shared/exp-test-icon.png) icon.
 
-   ![Choose connection mode](media/perform-exploratory-tests/getstarted-06.png)
+    ![Open extension](media/perform-exploratory-tests/open-extension.png)
 
-   **[Connected mode](connected-mode-exploratory-testing.md)**  
-   Available to all users of Azure DevOps and TFS 2015 or later:
+1.  Decide if you want to use the extension in Connected or Standalone mode.
 
-   - Users with **Basic** access or higher: Full capture and create capabilities
-     to submit bugs, tasks, and test cases. Includes collaboration
-     capabilities such as end-to-end traceability, rich insights
-     across completed exploratory sessions, simplified tracking
-     and triaging for bugs and tasks, and more.
-   - Users with **Stakeholder** access: Full capture and create capabilities,
-     except for test cases, to submit feedback and respond to feedback
-     requests from the team. 
-   - Feedback experience is available only in Azure DevOps and TFS 2017 or later.<p />
- 
-   **[Standalone mode](standalone-mode-exploratory-testing.md)**  
-   Available to everyone. No connection to Azure DevOps or TFS is required. Take notes and screenshots with
-   inline annotations to capture issues. Create bugs and export
-   a session report to share findings.
- 
->If you have problems connecting to Azure DevOps or TFS, you may find
-the topic [TF31002: Unable to connect](../reference/error/tf31002-unable-connect-tfs.md) useful.
+    ![Choose connection mode](media/perform-exploratory-tests/getstarted-06.png)
+
+    **[Connected mode](connected-mode-exploratory-testing.md)**  
+    Available to all users of Azure DevOps and TFS 2015 or later:
+
+    * Users with **Basic** access or higher: Full capture and create capabilities
+      to submit bugs, tasks, and test cases. Includes collaboration
+      capabilities such as end-to-end traceability, rich insights
+      across completed exploratory sessions, simplified tracking
+      and triaging for bugs and tasks, and more.
+    * Users with **Stakeholder** access: Full capture and create capabilities,
+      except for test cases, to submit feedback and respond to feedback
+      requests from the team.
+    * Feedback experience is available only in Azure DevOps and TFS 2017 or later.<p />
+
+    **[Standalone mode](standalone-mode-exploratory-testing.md)**  
+    Available to everyone. No connection to Azure DevOps or TFS is required. Take notes and screenshots with
+    inline annotations to capture issues. Create bugs and export
+    a session report to share findings.
+
+> If you have problems connecting to Azure DevOps or TFS, you may find
+> the topic [TF31002: Unable to connect](../reference/error/tf31002-unable-connect-tfs.md) useful.
 
 ## See also
 
-*  [FAQs for manual testing](reference-qa.md#tandfext)
+* [FAQs for manual testing](reference-qa.md#tandfext)
 
 ## Next step
 
-> [!div class="nextstepaction"]
-> [Use the Test &amp; Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
+> [!div class="nextstepaction"][use the test &amp; feedback extension in connected mode](connected-mode-exploratory-testing.md)

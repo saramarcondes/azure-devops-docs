@@ -27,13 +27,13 @@ Keep your branch strategy simple. Build your strategy from these three concepts:
 
 * Use feature branches for all new features and bug fixes.
 * Merge feature branches into the master branch using pull requests.
-* Keep a high quality, up-to-date master branch.  
+* Keep a high quality, up-to-date master branch.
 
 A strategy that extends these concepts and avoids contradictions will result in a version control workflow for your team that is consistent and easy to follow.
 
 ### Use feature branches for your work
 
-Develop your features and fix bugs in feature branches based off your master branch. These branches are also known as *topic branches*.
+Develop your features and fix bugs in feature branches based off your master branch. These branches are also known as _topic branches_.
 Feature branches isolate work in progress from the completed work in the master branch.
 Git branches are inexpensive to create and maintain. Even small fixes and changes should have their own feature branch.
 
@@ -47,7 +47,7 @@ Use a consistent naming convention for your feature branches to identify the wor
 You can also include other information in the branch name, such as who created the branch.
 
 Some suggestions for naming your feature branches:
-  
+
 * users/username/description
 * users/username/workitem
 * bugfix/description
@@ -55,12 +55,12 @@ Some suggestions for naming your feature branches:
 * features/feature-area/feature-name
 * hotfix/description
 
-::: moniker range=">= tfs-2018" 
- 
->[!NOTE]
->For information on setting policies to enforce a branch naming strategy, see [Require branch folders](require-branch-folders.md).
+::: moniker range=">= tfs-2018"
 
-::: moniker-end 
+> [!NOTE]
+> For information on setting policies to enforce a branch naming strategy, see [Require branch folders](require-branch-folders.md).
+
+::: moniker-end
 
 #### Use feature flags to manage long-running branches
 
@@ -88,7 +88,7 @@ Some suggestions for successful pull requests:
 The code in your master branch should pass tests, build cleanly, and always be current.
 Your master branch needs these qualities so that feature branches created by your team start from a known good version of code.
 
-::: moniker range=">= tfs-2015" 
+::: moniker range=">= tfs-2015"
 
 Set up a [branch policy](branch-policies.md) for your master branch that:
 
@@ -96,10 +96,10 @@ Set up a [branch policy](branch-policies.md) for your master branch that:
 * Automatically adds reviewers when a pull request is created. The added team members review the code and comment on the changes in the pull request.
 * Requires a successful build to complete a pull request. Code merged into the master branch should build cleanly.
 
->[!TIP]
->The build pipeline for your pull requests should be quick to complete, so it doesn't interfere with the review process.
+> [!TIP]
+> The build pipeline for your pull requests should be quick to complete, so it doesn't interfere with the review process.
 
-::: moniker-end 
+::: moniker-end
 
 ## Manage releases
 
@@ -111,9 +111,9 @@ Lock release branches when you're ready to stop supporting a particular release.
 ### Use release branches
 
 Create a release branch from the master branch when you get close to your release or other milestone, such as the end of a sprint.
-Give this branch a clear name associating it with the release, for example *release/20*.
+Give this branch a clear name associating it with the release, for example _release/20_.
 
-Create branches to fix bugs from the release branch and merge them back into the release branch in a pull request.  
+Create branches to fix bugs from the release branch and merge them back into the release branch in a pull request.
 
 ![image of release branch workflows](media/branching-guidance/releasebranching_release.png)
 
@@ -126,9 +126,9 @@ Merging the feature branch into the master branch can bring over release-specifi
 
 Update the master branch with a change made in the release branch with these steps:
 
-1. Create a new feature branch off the master branch to port the changes.
-1. Cherry-pick the changes from the release branch to your new feature branch.
-1. Merge the feature branch back into the master branch in a second pull request.
+1.  Create a new feature branch off the master branch to port the changes.
+1.  Cherry-pick the changes from the release branch to your new feature branch.
+1.  Merge the feature branch back into the master branch in a second pull request.
 
 ![image of release branch workflows](media/branching-guidance/releasebranching_master.png)
 
@@ -149,7 +149,7 @@ Your team doesn't have to adopt any new version control process other than the c
 ## Manage deployments
 
 You can handle multiple deployments of your code in the same way you handle multiple releases.
-Create a clear naming convention, such as *deploy/performance-test*, and treat the environment branches like release branches.
+Create a clear naming convention, such as _deploy/performance-test_, and treat the environment branches like release branches.
 Your team should agree on a process to update deployment branches with the code from your master branch.
 Cherry-pick bug fixes in the deployment branch back to the master branch. Use the same steps as porting changes from a release branch.
 
@@ -157,4 +157,5 @@ An exception to this recommendation is if you're using a form of continuous depl
 Use [Azure Pipelines](../../pipelines/index.yml) when working with continuous deployment to promote builds from your master branch to your deployment targets.
 
 ## Videos
+
 > [!VIDEO https://www.youtube.com/embed/t_4lLR6F_yk?start=0]

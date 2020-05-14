@@ -12,24 +12,24 @@ monikerRange: "> azure-devops-2019"
 
 Pipelines often rely on multiple repositories. You can have different repositories with source, tools, scripts, or other items that you need to build your code. By using multiple `checkout` steps in your pipeline, you can fetch and check out other repositories in addition to the one you use to store your YAML pipeline.
 
-[!INCLUDE [temp](../../includes/feature-support-cloud-only.md)] 
+[!INCLUDE [temp](../../includes/feature-support-cloud-only.md)]
 
 ## Specify multiple repositories
 
-Repositories can be specified as a [repository resource](../yaml-schema.md#repository-resource), or inline with the `checkout` step. 
+Repositories can be specified as a [repository resource](../yaml-schema.md#repository-resource), or inline with the `checkout` step.
 
-- [Repository declared using a repository resource](#repository-declared-using-a-repository-resource)
-- [Repository declared using inline syntax](#repository-declared-using-inline-syntax)
+* [Repository declared using a repository resource](#repository-declared-using-a-repository-resource)
+* [Repository declared using inline syntax](#repository-declared-using-inline-syntax)
 
 Supported repositories are Azure Repos Git (`git`), GitHub (`github`), and BitBucket Cloud (`bitbucket`).
 
 The following combinations of `checkout` steps are supported.
 
-- If there are no `checkout` steps, the default behavior is as if `checkout: self` were the first step.
-- If there is a single `checkout: none` step, no repositories are synced or checked out.
-- If there is a single `checkout: self` step, the current repository is checked out.
-- If there is a single `checkout` step that isn't `self` or `none`, that repository is checked out instead of `self`.
-- If there are multiple `checkout` steps, each designated repository is checked out to a folder named after the repository, unless a different `path` is specified in the `checkout` step. To check out `self` as one of the repositories, use `checkout: self` as one of the `checkout` steps.
+* If there are no `checkout` steps, the default behavior is as if `checkout: self` were the first step.
+* If there is a single `checkout: none` step, no repositories are synced or checked out.
+* If there is a single `checkout: self` step, the current repository is checked out.
+* If there is a single `checkout` step that isn't `self` or `none`, that repository is checked out instead of `self`.
+* If there are multiple `checkout` steps, each designated repository is checked out to a folder named after the repository, unless a different `path` is specified in the `checkout` step. To check out `self` as one of the repositories, use `checkout: self` as one of the `checkout` steps.
 
 ### Repository declared using a repository resource
 
@@ -67,7 +67,7 @@ steps:
 - script: dir $(Build.SourcesDirectory)
 ```
 
-If the `self` repository is named `CurrentRepo`, the `script` command produces the following output: `CurrentRepo  MyAzureReposGitRepo  MyBitBucketRepo  MyGitHubRepo`. In this example, the names of the repositories are used for the folders, because no `path` is specified in the checkout step. For more information on repository folder names and locations, see the following [Checkout path](#checkout-path) section.
+If the `self` repository is named `CurrentRepo`, the `script` command produces the following output: `CurrentRepo MyAzureReposGitRepo MyBitBucketRepo MyGitHubRepo`. In this example, the names of the repositories are used for the folders, because no `path` is specified in the checkout step. For more information on repository folder names and locations, see the following [Checkout path](#checkout-path) section.
 
 ### Repository declared using inline syntax
 
@@ -86,11 +86,11 @@ steps:
 
 ## Checkout path
 
-Unless a `path` is specified in the `checkout` step, source code is placed in a default directory. This directory is different depending on whether you are checking out a single repository or multiple repositories. 
+Unless a `path` is specified in the `checkout` step, source code is placed in a default directory. This directory is different depending on whether you are checking out a single repository or multiple repositories.
 
-- **Single repository**: If you have a single `checkout` step in your job, (or you have no checkout step which is equivalent to `checkout: self`), your source code is checked out into a directory called `s` located as a subfolder of `(Agent.BuildDirectory)`. If `(Agent.BuildDirectory)` is `C:\agent\_work\1` then your code is checked out to `C:\agent\_work\1\s`.
-- **Multiple repositories**: If you have multiple `checkout` steps in your job, your source code is checked out into directories named after the repositories as a subfolder of `s` in `(Agent.BuildDirectory)`. If `(Agent.BuildDirectory)` is `C:\agent\_work\1` and your repositories are named `tools` and `code`, your code is checked out to `C:\agent\_work\1\s\tools` and `C:\agent\_work\1\s\code`.
-  
+* **Single repository**: If you have a single `checkout` step in your job, (or you have no checkout step which is equivalent to `checkout: self`), your source code is checked out into a directory called `s` located as a subfolder of `(Agent.BuildDirectory)`. If `(Agent.BuildDirectory)` is `C:\agent\_work\1` then your code is checked out to `C:\agent\_work\1\s`.
+* **Multiple repositories**: If you have multiple `checkout` steps in your job, your source code is checked out into directories named after the repositories as a subfolder of `s` in `(Agent.BuildDirectory)`. If `(Agent.BuildDirectory)` is `C:\agent\_work\1` and your repositories are named `tools` and `code`, your code is checked out to `C:\agent\_work\1\s\tools` and `C:\agent\_work\1\s\code`.
+
   > [!NOTE]
   > If no `path` is specified in the `checkout` step, the name of the repository is used for the folder,
   > not the `repository` value which is used to reference the repository in the `checkout` step.
@@ -123,4 +123,3 @@ resources:
     name: MyGitHubOrgOrUser/MyGitHubRepo
     ref: features/tools
 ```
-

@@ -14,7 +14,6 @@ ms.date: 08/04/2016
 
 Module path: `TFS/Build/Contracts`
 
-
 ### Members
 
 * `fields`: {[key: string]: string}. Fields of the information node
@@ -28,4 +27,3 @@ Module path: `TFS/Build/Contracts`
 * `parentId`: number. ID of parent node (xml tree)
 
 * `type`: string. The type of the information node
-

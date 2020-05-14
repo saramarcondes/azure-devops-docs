@@ -11,7 +11,6 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Resolve Command
 
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
@@ -23,8 +22,8 @@ Lets you resolve conflicts between changed items in your workspace and the lates
 To use the **resolve** command, you must be either the workspace owner or have the global **Administer workspaces** permission set to **Allow**. You must also have the **Read** and **Check out** permissions for the items involved in a resolve operation set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
 ```
-tf resolve [itemspec] 
-[/auto:(AutoMerge|TakeTheirs|KeepYours|OverwriteLocal|DeleteConflict|KeepYoursRenameTheirs)] 
+tf resolve [itemspec]
+[/auto:(AutoMerge|TakeTheirs|KeepYours|OverwriteLocal|DeleteConflict|KeepYoursRenameTheirs)]
 [/preview] [(/overridetype:overridetype | /converttotype:converttype] [/recursive] [/newname:path] [/noprompt] [/login:username, [password]]
 ```
 
@@ -148,7 +147,9 @@ You can use the <strong>Resolve</strong> command to select a resolution for pend
 If version conflicts are detected between your version and the version on the destination server during a get, check-in, or merge operation, a prompt appears for you to select a conflict resolution using the **resolve** command. You must resolve conflicts before you can check in your pending changes.
 
 For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+
 ## Examples
+
 The following example invokes the **Resolve Conflicts** dialog box so that you can tell Team Foundation Server how to deal with pending changes that conflict with the server version.
 
 ```

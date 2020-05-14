@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
 ms.date: 10/14/2018
---- 
+---
 
 # Link work items to deployments
 
@@ -23,17 +23,17 @@ The release deployments control shows release information for those work items t
 
 ## Configure release
 
-First thing you must do is configure the release definition to post deployment information back to Azure Boards. 
+First thing you must do is configure the release definition to post deployment information back to Azure Boards.
 
-1. Open Release definition, Options and Integrations
+1.  Open Release definition, Options and Integrations
 
-   > [!div class="mx-imgBorder"]  
-   > ![Release Settings](media/deployments-control/release-settings-1.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Release Settings](media/deployments-control/release-settings-1.png)
 
-2. Select the "Report deployment status to Boards" option and configure the stages and deployment types
+2.  Select the "Report deployment status to Boards" option and configure the stages and deployment types
 
-   > [!div class="mx-imgBorder"]  
-   > ![Release Settings Stages](media/deployments-control/release-settings-stages-1.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Release Settings Stages](media/deployments-control/release-settings-stages-1.png)
 
 ## Deployment control
 
@@ -47,9 +47,7 @@ When opening the work item, you can see the stages the release is being deployed
 > [!div class="mx-imgBorder"]  
 > ![Release Settings Stages](media/deployments-control/deployments-control-1.png)
 
-## Related articles  
+## Related articles
 
-- [Create a release](../../pipelines/release/define-multistage-release-process.md)
-- [Associate work items to commits](../backlogs/connect-work-items-to-git-dev-ops.md)
-
-
+* [Create a release](../../pipelines/release/define-multistage-release-process.md)
+* [Associate work items to commits](../backlogs/connect-work-items-to-git-dev-ops.md)

@@ -11,7 +11,6 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Configure Check-Out Settings
 
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
@@ -21,7 +20,9 @@ Administrators of Team Foundation version control can configure source control c
 **Required Permissions**
 
 To configure check-out settings, you must have the **Edit project-level information** set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+
 ## Procedure
+
 ### To configure checkout settings
 
 1.  In **Team Explorer**, select the project for which you want to configure check-out settings.

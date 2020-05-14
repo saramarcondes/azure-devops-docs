@@ -24,11 +24,10 @@ Extends: [TaskAgentReference](../../../TFS/DistributedTask/Contracts/TaskAgentRe
 
 * `maxParallelism`: number. Gets or sets the maximum job parallelism allowed on this host.
 
-* `properties`: any. 
+* `properties`: any.
 
 * `statusChangedOn`: Date. Gets the date on which the last connectivity status change occurred.
 
-* `systemCapabilities`: {[key: string]: string}. 
+* `systemCapabilities`: {[key: string]: string}.
 
-* `userCapabilities`: {[key: string]: string}. 
-
+* `userCapabilities`: {[key: string]: string}.

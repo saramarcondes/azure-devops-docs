@@ -1,5 +1,3 @@
-
-
 ### Q: How do I get help or support for Azure DevOps?
 
 A: You have the following options for support:

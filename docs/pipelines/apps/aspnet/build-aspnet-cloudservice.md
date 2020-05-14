@@ -56,16 +56,16 @@ After you've run the build, you're ready to create a release pipeline to deploy 
 
 <h3 id="new_solution">How do I create an Azure Cloud Service solution?</h3>
 
-1. In Visual Studio, [connect to your project](../../../organizations/projects/connect-to-projects.md#visual-studio).
+1.  In Visual Studio, [connect to your project](../../../organizations/projects/connect-to-projects.md#visual-studio).
 
-2. On the Team Explorer home page (Keyboard: Ctrl + 0, H), under **Solutions**, click **New**.
+2.  On the Team Explorer home page (Keyboard: Ctrl + 0, H), under **Solutions**, click **New**.
 
-3. Select the **Cloud** templates section, and then choose the **Azure Cloud Service** template.
+3.  Select the **Cloud** templates section, and then choose the **Azure Cloud Service** template.
 
-4. When prompted for the roles in the cloud service, choose the **ASP.NET Web role** to the project.
+4.  When prompted for the roles in the cloud service, choose the **ASP.NET Web role** to the project.
 
-5. When prompted for the type of ASP.NET project for the Web role, choose the **MVC** project.
+5.  When prompted for the type of ASP.NET project for the Web role, choose the **MVC** project.
 
-6. [Commit and push (Git)](../../../repos/git/share-your-code-in-git-vs.md) or [check in (TFVC)](../../../repos/tfvc/share-your-code-in-tfvc-vs.md) your code.
+6.  [Commit and push (Git)](../../../repos/git/share-your-code-in-git-vs.md) or [check in (TFVC)](../../../repos/tfvc/share-your-code-in-tfvc-vs.md) your code.
 
 <!-- ENDSECTION -->

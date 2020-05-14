@@ -26,4 +26,3 @@ Module path: `VSS/Operations/Contracts`
 * `Succeeded` The operation completed successfully.
 
 * `Failed` The operation completed with a failure.
-

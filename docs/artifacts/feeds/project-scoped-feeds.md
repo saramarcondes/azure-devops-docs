@@ -19,9 +19,9 @@ A project-scoped feed is scoped to a project instead of an organization. Here ar
 
 * The URL of a project-scoped feed includes the project. The URL of an organization-scoped feed doesn't include a project.
 
-    * Project-scoped feed: `https://feeds.dev.azure.com/contoso/projectId/_apis/Packaging/Feeds`
+  * Project-scoped feed: `https://feeds.dev.azure.com/contoso/projectId/_apis/Packaging/Feeds`
 
-    * Organization-scoped feed: `https://feeds.dev.azure.com/contoso/_apis/Packaging/Feeds`
+  * Organization-scoped feed: `https://feeds.dev.azure.com/contoso/_apis/Packaging/Feeds`
 
 * All organization-scoped feeds will show up in the feed list of the Artifacts feed UI. To see a project-scoped feed in the list you have to be navigated to the project the feed is scoped to.
 
@@ -35,4 +35,3 @@ There is an option to not allow public projects in an organization. It can be se
 
 > [!NOTE]
 > If you want to share a package in your feed with all the users in your organization, you can promote that package to a `view` and set its visibility to `People in my organization`. See [Get started with feed views](./views.md#get-started-with-feed-views) for more information.
-

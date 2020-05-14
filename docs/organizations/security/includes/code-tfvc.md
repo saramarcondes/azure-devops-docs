@@ -2,7 +2,6 @@
 ms.topic: include
 ---
 
-
 <table>
 <tr valign="bottom">
 <th width="310px">Task</th>
@@ -29,7 +28,7 @@ ms.topic: include
 <td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Manage branches, manage permissions 
+<td align="left">Manage branches, manage permissions
 </td>
 <td>  </td>
 <td>  </td>

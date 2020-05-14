@@ -1,20 +1,20 @@
-*to be converted to typescript* 
+_to be converted to typescript_
 
-1. In the body of the page, initialize the helper functions.
+1.  In the body of the page, initialize the helper functions.
 
-	```html
-	<script>
+    ```html
+    <script>
     VSS.init({
         explicitNotifyLoaded: true,
         setupModuleLoader: true
     });
-	</script>
-	```
+    </script>
+    ```
 
-1. Creates a grid and loads it with data, and then notify that the page is loaded.
+1.  Creates a grid and loads it with data, and then notify that the page is loaded.
 
-	```javascript
-	...
+    ```javascript
+    ...
     VSS.require(["VSS/Controls", "VSS/Controls/Grids"], function (Controls, Grids) {
 
         var dataSource = [];
@@ -28,16 +28,14 @@
             ],
             source: dataSource
         });
-	</script>
-	```
+    </script>
+    ```
 
-1. Notify that the page is loaded.
+1.  Notify that the page is loaded.
 
-	```html
-	...
-	
+    ```html
+    ...
+
     VSS.notifyLoadSucceeded();
     </script>
-	```
-
-
+    ```

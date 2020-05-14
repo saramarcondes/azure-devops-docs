@@ -8,12 +8,11 @@ ms.date: 06/27/2017
 monikerRange: 'azure-devops'
 ---
 
-
 # Implement a CI/CD pipeline to build and deploy your Java app to Azure
 
 **Azure Pipelines**
 
-Azure Pipelines provides a highly customizable continuous integration (CI) and deployment (CD) automation system for your 
+Azure Pipelines provides a highly customizable continuous integration (CI) and deployment (CD) automation system for your
 Java apps.
 This quickstart shows how to set up CI and CD to deploy
 a Java app.
@@ -60,11 +59,13 @@ Navigate to the **Code** hub in the Azure DevOps portal. Navigate to **src/main/
 ![Screenshot showing update to code](media/quick-to-azure/cicd-get-started-update-code.png)
 
 Change the following line of text:
+
 ```html
 <h2>Hello World!</h2>
 ```
 
 to the following:
+
 ```html
 <h2>Demo of CI/CD!!</h2>
 ```

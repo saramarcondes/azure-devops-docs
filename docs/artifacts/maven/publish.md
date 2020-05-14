@@ -10,8 +10,6 @@ ms.date: 11/14/2019
 monikerRange: '>= tfs-2018'
 ---
 
- 
-
 # Publish Maven artifacts using Azure DevOps Services and TFS
 
 **Azure DevOps Services** | **TFS 2018**

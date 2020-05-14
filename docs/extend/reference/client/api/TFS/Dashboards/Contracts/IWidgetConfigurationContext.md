@@ -13,16 +13,15 @@ ms.date: 08/04/2016
 
 Module path: `TFS/Dashboards/WidgetContracts`
 
-
 ### Members
 
 ## notify()
 
-The widget configuration calls this method when it wants to notify any of the WidgetEvents to the host. 
-Currently, change in configuration is the only event that can be notified. 
-
+The widget configuration calls this method when it wants to notify any of the WidgetEvents to the host.
+Currently, change in configuration is the only event that can be notified.
 
 ### Syntax
+
 <pre class='syntax'>
  void <b>widgetConfigurationContext.notify</b>(event, eventArgs)
 </pre>

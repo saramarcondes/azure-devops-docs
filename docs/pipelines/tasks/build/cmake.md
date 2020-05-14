@@ -10,7 +10,6 @@ ms.date: 12/17/2019
 monikerRange: '>= tfs-2015'
 ---
 
-
 # CMake task
 
 [!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
@@ -22,7 +21,7 @@ Use this task to build with the CMake cross-platform build system.
 cmake
 
 > [!IMPORTANT]
-> The [Microsoft-hosted agents](../../agents/hosted.md) have CMake installed by default so you don't 
+> The [Microsoft-hosted agents](../../agents/hosted.md) have CMake installed by default so you don't
 > need to include a demand for CMake in your `azure-pipelines.yml` file. If you do include a demand
 > for CMake you may receive an error. To resolve, remove the demand.
 
@@ -68,38 +67,36 @@ cmake
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
+
 <!-- BEGINSECTION class="md-qanda" -->
 
 ### How do I enable CMake for Microsoft-hosted agents?
 
 The [Microsoft-hosted agents](../../agents/hosted.md) have CMake installed already so you don't need to do anything. You do not need to add a demand for CMake in your `azure-pipelines.yml` file.
 
-
 ### How do I enable CMake for my on-premises agent?
 
-1. [Deploy an agent](../../agents/agents.md#install).
+1.  [Deploy an agent](../../agents/agents.md#install).
 
-1. [Install CMake](https://cmake.org/install/) and make sure to add it to the path of the user that the agent is running as on your agent machine.
+1.  [Install CMake](https://cmake.org/install/) and make sure to add it to the path of the user that the agent is running as on your agent machine.
 
-1. In your web browser, navigate to Agent pools:
+1.  In your web browser, navigate to Agent pools:
 
-   [!INCLUDE [agent-pools-tab](../../agents/includes/agent-pools-tab.md)]
+    [!INCLUDE [agent-pools-tab](../../agents/includes/agent-pools-tab.md)]
 
-1. Navigate to the capabilities tab:
- 
-   [!INCLUDE [agent-capabilities](../../agents/includes/agent-capabilities-tab.md)]
+1.  Navigate to the capabilities tab:
 
-1. Click **Add capability** and set the fields to `cmake` and `yes`.
+    [!INCLUDE [agent-capabilities](../../agents/includes/agent-capabilities-tab.md)]
 
-1. Click **Save changes**.
+1.  Click **Add capability** and set the fields to `cmake` and `yes`.
 
+1.  Click **Save changes**.
 
 ### How does CMake work? What arguments can I use?
 
 [About CMake](https://cmake.org/overview/)
 
 [CMake Documentation](https://cmake.org/documentation/)
-
 
 [!INCLUDE [temp](../../includes/qa-agents.md)]
 

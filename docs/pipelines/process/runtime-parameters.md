@@ -10,19 +10,20 @@ monikerRange: '>= azure-devops-2019'
 # Runtime parameters
 
 Runtime parameters let you have more control over what values can be passed to a pipeline. With runtime parameters you can:
-- Supply different values to scripts and tasks at runtime
-- Control parameter types, ranges allowed, and defaults
-- Dynamically select jobs and stages with template expressions
 
-You can specify [parameters in templates](templates.md) and in the pipeline. Parameters have data types such as number and string, and they can be restricted to a subset of values. The `parameters` section in a YAML defines what parameters are available. 
+* Supply different values to scripts and tasks at runtime
+* Control parameter types, ranges allowed, and defaults
+* Dynamically select jobs and stages with template expressions
 
-Parameters are only available at template parsing time. Parameters are expanded just before the pipeline runs so that values surrounded by `${{ }}` are replaced with parameter values. Use [variables](variables.md) if you need your values to be more widely available during your [pipeline run](runs.md). 
+You can specify [parameters in templates](templates.md) and in the pipeline. Parameters have data types such as number and string, and they can be restricted to a subset of values. The `parameters` section in a YAML defines what parameters are available.
 
-Parameters must contain a name and data type. Parameters cannot be optional. A default value needs to be assigned in your YAML file or when you run your pipeline. 
+Parameters are only available at template parsing time. Parameters are expanded just before the pipeline runs so that values surrounded by `${{ }}` are replaced with parameter values. Use [variables](variables.md) if you need your values to be more widely available during your [pipeline run](runs.md).
+
+Parameters must contain a name and data type. Parameters cannot be optional. A default value needs to be assigned in your YAML file or when you run your pipeline.
 
 ## Use parameters in pipelines
 
-Set runtime parameters at the beginning of a YAML. This example pipeline accepts the value of `image` and then outputs the value in the job. The `trigger` is set to none so that you can select the value of `image` when you manually trigger your pipeline to run. 
+Set runtime parameters at the beginning of a YAML. This example pipeline accepts the value of `image` and then outputs the value in the job. The `trigger` is set to none so that you can select the value of `image` when you manually trigger your pipeline to run.
 
 ```yaml
 parameters:
@@ -43,24 +44,23 @@ trigger: none
 jobs:
 - job: build
   displayName: build
-  pool: 
+  pool:
     vmImage: ${{ parameters.image }}
   steps:
   - script: echo building $(Build.BuildNumber) with ${{ parameters.image }}
 ```
 
-When the pipeline runs, you select the Pool Image. If you do not make a selection, the default option, `ubuntu-latest` gets used. 
+When the pipeline runs, you select the Pool Image. If you do not make a selection, the default option, `ubuntu-latest` gets used.
 
-> [!div class="mx-imgBorder"]
-> ![runtime parameters](media/runtime-param-ui.png)
+> [!div class="mx-imgBorder"] > ![runtime parameters](media/runtime-param-ui.png)
 
 ## Use conditionals with parameters
 
-You can also use parameters as part of conditional logic. With conditionals, part of a YAML will only run if it meets the `if` criteria. 
+You can also use parameters as part of conditional logic. With conditionals, part of a YAML will only run if it meets the `if` criteria.
 
 ### Use parameters to determine what steps run
 
-This pipeline only runs a step when the boolean parameter `test` is true. 
+This pipeline only runs a step when the boolean parameter `test` is true.
 
 ```yaml
 parameters:
@@ -84,7 +84,7 @@ trigger: none
 jobs:
 - job: build
   displayName: Build and Test
-  pool: 
+  pool:
     vmImage: ${{ parameters.image }}
   steps:
   - script: echo building $(Build.BuildNumber)
@@ -94,7 +94,7 @@ jobs:
 
 ### Use parameters to set what configuration is used
 
-You can also use parameters to set which job runs. In this example, a different job runs depending on the value of `config`. 
+You can also use parameters to set which job runs. In this example, a different job runs depending on the value of `config`.
 
 ```yaml
 parameters:
@@ -121,7 +121,7 @@ jobs:
 
 ### Selectively exclude a stage
 
-You can also use parameters to set whether a stage runs. In this example, the Performance Test stage runs if the parameter `runPerfTests` is true. 
+You can also use parameters to set whether a stage runs. In this example, the Performance Test stage runs if the parameter `runPerfTests` is true.
 
 ```yaml
 parameters:
@@ -170,12 +170,11 @@ stages:
 
 ### Loop through parameters
 
-
-You can also loop through your string, number, and boolean parameters. 
+You can also loop through your string, number, and boolean parameters.
 
 #### [Script](#tab/script)
 
-In this example, you loop through parameters and print out each parameter name and value. 
+In this example, you loop through parameters and print out each parameter name and value.
 
 ```yaml
 # start.yaml
@@ -202,9 +201,9 @@ parameters:
   type: boolean
   default: true
 
-steps: 
+steps:
 - ${{ each parameter in parameters }}:
-  - script: echo ${{ parameter.Key }} 
+  - script: echo ${{ parameter.Key }}
   - script: echo ${{ parameter.Value }}
 ```
 
@@ -218,7 +217,7 @@ extends:
 
 #### [PowerShell](#tab/powershell)
 
-You can loop through parameters in a PowerShell task and set each parameter as an environment variable. 
+You can loop through parameters in a PowerShell task and set each parameter as an environment variable.
 
 ```yaml
 # start.yaml
@@ -246,7 +245,7 @@ parameters:
   type: boolean
   default: true
 
-steps: 
+steps:
   - task: PowerShell@2
     env:
       ${{ each parameter in parameters }}:
@@ -254,9 +253,6 @@ steps:
     inputs:
       filePath: test_script.ps1
       pwsh: true
-
-
-
 ```
 
 ```yaml
@@ -272,11 +268,9 @@ extends:
 
 Write-Host "Hello, World!"
 Write-Host $env:myStringName
-
 ```
 
 ---
-
 
 ## Parameter data types
 

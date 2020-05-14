@@ -15,8 +15,7 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Service which allows for getting and setting of extension data 
+Service which allows for getting and setting of extension data
 
 ### Members
 
@@ -31,10 +30,9 @@ Service which allows for getting and setting of extension data
 * `createDocument`: (collectionName: string, doc: any, documentOptions: [IDocumentOptions](../../../VSS/References/VSS_SDK_Interfaces/IDocumentOptions.md)): IPromise&lt;any&gt;. Returns a promise for creating a document in the provided collection
 
 * `setDocument`: (collectionName: string, doc: any, documentOptions: [IDocumentOptions](../../../VSS/References/VSS_SDK_Interfaces/IDocumentOptions.md)): IPromise&lt;any&gt;. Returns a promise for setting a document in the provided collection
-Creates the document if it doesn't exist, otherwise updates the existing document with the ID provided
+  Creates the document if it doesn't exist, otherwise updates the existing document with the ID provided
 
 * `updateDocument`: (collectionName: string, doc: any, documentOptions: [IDocumentOptions](../../../VSS/References/VSS_SDK_Interfaces/IDocumentOptions.md)): IPromise&lt;any&gt;. Returns a promise for updating a document in the provided collection
-A document with the ID provided must exist
+  A document with the ID provided must exist
 
 * `deleteDocument`: (collectionName: string, id: string, documentOptions: [IDocumentOptions](../../../VSS/References/VSS_SDK_Interfaces/IDocumentOptions.md)): IPromise&lt;void&gt;. Returns a promise for deleting the document at the provided scope, collection and id
-

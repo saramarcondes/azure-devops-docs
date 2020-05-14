@@ -14,7 +14,6 @@ ms.date: 08/04/2016
 
 Module path: `TFS/TestManagement/Contracts`
 
-
 ### Members
 
 * `areaPath`: string. Area path required to create test settings
@@ -30,4 +29,3 @@ Module path: `TFS/TestManagement/Contracts`
 * `testSettingsId`: number. Test settings id.
 
 * `testSettingsName`: string. Test settings name.
-

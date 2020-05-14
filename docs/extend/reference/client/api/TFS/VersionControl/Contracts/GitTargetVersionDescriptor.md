@@ -22,4 +22,3 @@ Extends: [GitVersionDescriptor](../../../TFS/VersionControl/Contracts/GitVersion
 * `targetVersionOptions`: [GitVersionOptions](../../../TFS/VersionControl/Contracts/GitVersionOptions.md). Version options - Specify additional modifiers to version (e.g Previous)
 
 * `targetVersionType`: [GitVersionType](../../../TFS/VersionControl/Contracts/GitVersionType.md). Version type (branch, tag, or commit). Determines how ID is interpreted
-

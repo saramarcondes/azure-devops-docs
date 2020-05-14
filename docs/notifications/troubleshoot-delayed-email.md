@@ -11,7 +11,6 @@ ms.date: 12/30/2019
 monikerRange: '>= tfs-2017'
 ---
 
-
 # Emails from subscriptions or notifications are delayed
 
 [!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]

@@ -7,7 +7,7 @@ To create a publisher using the TFS Cross Platform Command Line Interface, simpl
 
 #### Example
 
-<pre>C:\tfs-cli>tfx extension publisher create 
+<pre>C:\tfs-cli>tfx extension publisher create
 Copyright Microsoft Corporation
 > Publisher name: Fabrikam
 > Display name: Fabrikam, Inc.

@@ -7,4 +7,3 @@ ms.topic: include
 * 2GB of Azure Artifacts storage
 * One self-hosted CI/CD concurrent job
 * 20,000 virtual user minutes of cloud-based load testing
-

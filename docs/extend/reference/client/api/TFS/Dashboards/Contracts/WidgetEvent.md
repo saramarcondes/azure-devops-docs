@@ -17,15 +17,14 @@ Module path: `TFS/Dashboards/WidgetHelpers`
 
 * `ConfigurationChange`: Configuration has changed. When this event is notified, the preview is updated and Save button is enabled.
 
-
 ### Members
 
 ## Args()
 
-Method called to construct the EventArgs object. 
-
+Method called to construct the EventArgs object.
 
 ### Syntax
+
 <pre class='syntax'>
  void <b>WidgetEvent.Args</b>(data)
 </pre>

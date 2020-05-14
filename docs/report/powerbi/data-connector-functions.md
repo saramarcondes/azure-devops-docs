@@ -12,16 +12,16 @@ monikerRange: '>= azure-devops-2019'
 ms.date: 8/1/2019
 ---
 
-# Connect using Power Query and Azure DevOps functions 
+# Connect using Power Query and Azure DevOps functions
 
 [!INCLUDE [temp](../includes/version-azure-devops.md)]
 
-The Data Connector for Azure DevOps includes Power Query M functions which query authors can use. These functions can handle Azure DevOps specific requirements, such as authentication for you. This article describes the arguments for the functions and how to use them to connect to Analytics. 
+The Data Connector for Azure DevOps includes Power Query M functions which query authors can use. These functions can handle Azure DevOps specific requirements, such as authentication for you. This article describes the arguments for the functions and how to use them to connect to Analytics.
 
 The VSTS.AccountContents function is a replacement for Power Query M function [Web.Contents](/powerquery-m/web-contents). Intended for more advanced scenarios, VSTS.AccountContents returns the contents downloaded from the URL for Analytics as a binary value. You can use it to call [AzureDevOps REST APIs](/rest/api/azure/devops).
 
 > [!IMPORTANT]  
-> You should only use VSTS.AccountContents to access data that isn't [available in Analytics](data-available-in-analytics.md). It pulls data directly from Azure DevOps and, to protect other Azure DevOps users, is susceptible to throttling. For information on other approaches, read the [Power BI integration overview](overview.md). 
+> You should only use VSTS.AccountContents to access data that isn't [available in Analytics](data-available-in-analytics.md). It pulls data directly from Azure DevOps and, to protect other Azure DevOps users, is susceptible to throttling. For information on other approaches, read the [Power BI integration overview](overview.md).
 
 ## VSTS.AccountContents
 

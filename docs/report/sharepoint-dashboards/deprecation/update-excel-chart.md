@@ -15,9 +15,10 @@ ms.date: 09/28/2017
 
 [!INCLUDE [temp](../includes/about-sharepoint-deprecation.md)]
 
-Excel charts continue to work, even after disabling SharePoint integration. Displaying Excel Charts on SharePoint is based on Excel, Office Online Server, and SQL Server Reporting and Analysis technologies. It doesn't require the TFS Extension for SharePoint to operate. 
+Excel charts continue to work, even after disabling SharePoint integration. Displaying Excel Charts on SharePoint is based on Excel, Office Online Server, and SQL Server Reporting and Analysis technologies. It doesn't require the TFS Extension for SharePoint to operate.
 
 The TFS Extension for SharePoint did install a SharePoint timer job. When executed, this timer job would detect if:
+
 * The TFS Warehouse or Cube location or name had change
 * The TFS collection name had changed
 * The name of the team project associated with a SharePoint site had changed
@@ -28,19 +29,19 @@ With SharePoint integration disabled, the timer job no longer exists. Therefore,
 
 Follow these steps to update the Data Connection string:
 
-1.	Click the Chart Title to open the Excel workbook. 
+1.  Click the Chart Title to open the Excel workbook.
 
     ![TFS/SharePoint Integration - Update Excel Chart - Step 1](./media/update-excel-chart-step-1-click-title.png)
 
-2.	Edit the workbook using Excel
+2.  Edit the workbook using Excel
 
     ![TFS/SharePoint Integration - Update Excel Chart - Step 1](./media/update-excel-chart-step-2.png)
 
-3.	If the team project name has changed, update the "Team Project Hierarchy" filter:
+3.  If the team project name has changed, update the "Team Project Hierarchy" filter:
 
     ![TFS/SharePoint Integration - Update Excel Chart - Step 1](./media/update-excel-chart-step-3.png)
 
-4.	If the location or name of the TFS cube has changed, update the Data Connection string:
+4.  If the location or name of the TFS cube has changed, update the Data Connection string:
 
     ![TFS/SharePoint Integration - Update Excel Chart - Step 1](./media/update-excel-chart-step-4.png)
 
@@ -51,4 +52,5 @@ Provider=MSOLAP.7;Integrated Security=SSPI;Persist Security Info=True;User ID=""
 ```
 
 ## Related articles
+
 * [Upload and refresh Excel reports in the team project portal](../upload-refresh-excel-reports.md)

@@ -34,6 +34,7 @@ If you want some sample code that works with this guidance, [import](../../../re
 ```
 https://github.com/spring-guides/gs-spring-boot-docker.git
 ```
+
 #### [JavaScript](#tab/java-script)
 
 [!INCLUDE [include](../../ecosystems/includes/get-code-before-sample-repo-option-to-use-own-code.md)]
@@ -41,6 +42,7 @@ https://github.com/spring-guides/gs-spring-boot-docker.git
 ```
 https://github.com/MicrosoftDocs/pipelines-javascript-docker
 ```
+
 #### [Python](#tab/python)
 
 [!INCLUDE [include](../../ecosystems/includes/get-code-before-sample-repo-option-to-use-own-code.md)]
@@ -48,6 +50,7 @@ https://github.com/MicrosoftDocs/pipelines-javascript-docker
 ```
 https://github.com/Microsoft/python-sample-vscode-flask-tutorial/
 ```
+
 #### [.NET Core](#tab/dotnet-core)
 
 [!INCLUDE [include](../../ecosystems/includes/get-code-before-sample-repo-option-to-use-own-code.md)]
@@ -55,7 +58,8 @@ https://github.com/Microsoft/python-sample-vscode-flask-tutorial/
 ```
 https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
 ```
-* * *
+
+---
 
 ## Define your CI build pipeline
 

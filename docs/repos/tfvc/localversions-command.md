@@ -11,7 +11,6 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # LocalVersions Command
 
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
@@ -28,6 +27,7 @@ tf localversions ItemSpec
 ```
 
 ## Parameters
+
 <table>
 <thead>
 <tr>
@@ -110,6 +110,7 @@ For information about other Team Foundation commands that provide additional inf
 For more information about how to find and use the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
 
 ## Examples
+
 The following example displays the version of the `ControllerBase.cs` file in the workspace that is mapped to the `c:\\workspaces\\FeatureA\\catalog\\controller` folder.
 
 ```
@@ -126,7 +127,8 @@ c:\workspaces\FeatureA\catalog\>tf localversions . /recursive /format:detailed
 
 #### Concepts
 
-[Informational Commands](https://msdn.microsoft.com/library/ms181450)  
+[Informational Commands](https://msdn.microsoft.com/library/ms181450)
+
 #### Other Resources
 
 [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)

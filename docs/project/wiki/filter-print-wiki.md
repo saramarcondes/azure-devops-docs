@@ -19,7 +19,7 @@ ms.date: 11/19/2018
 
 To focus on a single page or several pages, use the Filter pages feature in the TOC. Or, to find pages containing a phrase or keyword, you can use the [Search wiki in this project](search-wiki.md).
 
-To print a wiki page, you can select a page and print it.  
+To print a wiki page, you can select a page and print it.
 
 ## Filter wiki pages
 
@@ -38,9 +38,10 @@ The **Print page** menu option allows you to use your browser print function to 
 > ![Print page](media/wiki/print-page.png)
 
 ::: moniker range="tfs-2018"
-> [!NOTE]  
-> The **Print page** feature is supported on TFS 2018.2 or later versions..
-::: moniker-end
 
 > [!NOTE]  
-> The print feature may not be available from the Firefox web browser.  
+> The **Print page** feature is supported on TFS 2018.2 or later versions..
+> ::: moniker-end
+
+> [!NOTE]  
+> The print feature may not be available from the Firefox web browser.

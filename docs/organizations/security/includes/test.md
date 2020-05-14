@@ -1,4 +1,3 @@
-
 <table>
 <tr valign="bottom">
 <th width="310px">Task</th>
@@ -17,7 +16,7 @@
 <td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Exploratory testing, view test runs 
+<td align="left">Exploratory testing, view test runs
 </td>
 <td>  </td>
 <td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
@@ -25,7 +24,7 @@
 <td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Manage test plans and test suites 
+<td align="left">Manage test plans and test suites
 <p>Manage test configurations and test environments </p></td>
 <td>  </td>
 <td>  </td>

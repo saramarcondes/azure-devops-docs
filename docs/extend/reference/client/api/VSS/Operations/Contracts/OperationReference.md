@@ -14,7 +14,6 @@ ms.date: 08/04/2016
 
 Module path: `VSS/Operations/Contracts`
 
-
 ### Members
 
 * `id`: string. The identifier for this operation.
@@ -22,4 +21,3 @@ Module path: `VSS/Operations/Contracts`
 * `status`: [OperationStatus](../../../VSS/Operations/Contracts/OperationStatus.md). The current status of the operation.
 
 * `url`: string. Url to get the full object.
-

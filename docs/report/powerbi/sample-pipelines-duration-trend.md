@@ -12,21 +12,20 @@ monikerRange: '>= azure-devops'
 ms.date: 12/10/2019
 ---
 
-# Pipeline duration trend sample report 
+# Pipeline duration trend sample report
 
 [!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
 
-This article shows you how to create a report that shows how long your pipeline typically takes to complete successfully. The daily trend of pipeline duration report is similar to the 'Pipeline duration trend' chart of the [Pipeline duration report](../../pipelines/reports/pipelinereport.md#pipeline-duration-report). 
+This article shows you how to create a report that shows how long your pipeline typically takes to complete successfully. The daily trend of pipeline duration report is similar to the 'Pipeline duration trend' chart of the [Pipeline duration report](../../pipelines/reports/pipelinereport.md#pipeline-duration-report).
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
 The following image shows an example of such a chart.
 
-> [!div class="mx-imgBorder"] 
+> [!div class="mx-imgBorder"]
 > ![Sample - Pipelines duration trend - Report](media/odatapowerbi-pipelines/durationtrend-report.png)
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
-
 
 ## Sample queries
 
@@ -47,7 +46,7 @@ let
                 &"/groupby( "
                 &"(Duration80thPercentileInSeconds, CompletedOn/Date)) "
             &"&$orderby=CompletedOn/Date asc "
-    ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
+    ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4])
 in
     Source
 ```
@@ -70,12 +69,11 @@ $apply=filter(
 &$orderby=CompletedOn/Date asc
 ```
 
-***
+---
 
 ### Substitution strings
 
 [!INCLUDE [temp](includes/pipelines-sample-query-substitutions.md)]
-
 
 ### Query breakdown
 
@@ -120,99 +118,91 @@ The following table describes each part of the query.
 </tbody>
 </table>
 
-
 ## Power BI transforms
 
 The query returns some columns that you need to expand and flatten into its fields before you can use them in Power BI. In this example such an entity is CompletedOn.
 
 After closing the Advanced Editor and while remaining in the Power Query Editor, select the expand button on **CompletedOn**.
 
+### Expand the CompletedOn column
 
-### Expand the CompletedOn column 
+1.  Choose the expand button.
 
-1. Choose the expand button.
-
-    > [!div class="mx-imgBorder"] 
+    > [!div class="mx-imgBorder"]
     > ![Power BI + OData - Choose expand button](media/odatapowerbi-pipelines/passratetrend-expand1.png)
-    
-1. Select the checkbox "(Select All Columns)" to expand.
 
-    > [!div class="mx-imgBorder"] 
+1.  Select the checkbox "(Select All Columns)" to expand.
+
+    > [!div class="mx-imgBorder"]
     > ![Power BI + OData - Select all columns](media/odatapowerbi-pipelines/passratetrend-expand2.png)
 
-1. The table now contains the expanded entity **CompletedOn.Date**.
+1.  The table now contains the expanded entity **CompletedOn.Date**.
 
-    > [!div class="mx-imgBorder"] 
+    > [!div class="mx-imgBorder"]
     > ![Power BI + OData - Expanded entity](media/odatapowerbi-pipelines/passratetrend-expand3.png)
-
 
 ### Change the column type
 
-The query doesn't return all the columns in the format in which you can directly consume them in Power BI reports. Therefore, you can change the column type as shown. 
+The query doesn't return all the columns in the format in which you can directly consume them in Power BI reports. Therefore, you can change the column type as shown.
 
-- Change the type of column **Duration80thPercentileInSeconds** to **Decimal Number**.
+* Change the type of column **Duration80thPercentileInSeconds** to **Decimal Number**.
 
-    > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change column type](media/odatapowerbi-pipelines/duration-changecolumntype1.png)
-
+  > [!div class="mx-imgBorder"]
+  > ![Power BI + OData - change column type](media/odatapowerbi-pipelines/duration-changecolumntype1.png)
 
 ### Rename fields and query
 
-When finished, you may choose to rename columns. 
+When finished, you may choose to rename columns.
 
-1. Right-click a column header and select **Rename...**
+1.  Right-click a column header and select **Rename...**
 
-	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Columns](media/odatapowerbi-pipelines/duration-renamerightclick.png)
-  
-1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
+    > [!div class="mx-imgBorder"]
+    > ![Power BI Rename Columns](media/odatapowerbi-pipelines/duration-renamerightclick.png)
 
-	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Query](media/odatapowerbi-pipelines/renamequery.png)
-  
-1. Once done, choose **Close & Apply** to save the query and return to Power BI.
+1.  You also may want to rename the query from the default **Query1**, to something more meaningful.
 
-	> [!div class="mx-imgBorder"] 
-	> ![Power BI Close & Apply](media/odatapowerbi-pipelines/closeandapply.png)
-  
-  
+    > [!div class="mx-imgBorder"]
+    > ![Power BI Rename Query](media/odatapowerbi-pipelines/renamequery.png)
+
+1.  Once done, choose **Close & Apply** to save the query and return to Power BI.
+
+    > [!div class="mx-imgBorder"]
+    > ![Power BI Close & Apply](media/odatapowerbi-pipelines/closeandapply.png)
+
 ## Create the report
 
-Power BI shows you the fields you can report on. 
+Power BI shows you the fields you can report on.
 
-> [!NOTE]   
-> The example below assumes that no one renamed any columns. 
-> [!div class="mx-imgBorder"] 
+> [!NOTE]  
+> The example below assumes that no one renamed any columns.
+> [!div class="mx-imgBorder"]
 > ![Sample - Pipelines Duration - Fields](media/odatapowerbi-pipelines/durationtrend-fields.png)
 
 For a simple report, do the following steps:
 
-1. Select Power BI Visualization **Line Chart**.
+1.  Select Power BI Visualization **Line Chart**.
 
-1. Add the field "CompletedOn.Date" to **Axis**.
-	
-	- Right-click "CompletedOn.Date" and select "CompletedOn.Date", rather than Date Hierarchy.
-	
-1. Add the field "Duration80thPercentileInSeconds" to **Values**.
+1.  Add the field "CompletedOn.Date" to **Axis**.
 
-	- Right-click "Duration80thPercentileInSeconds" field and ensure **Sum** is selected.
+    * Right-click "CompletedOn.Date" and select "CompletedOn.Date", rather than Date Hierarchy.
 
+1.  Add the field "Duration80thPercentileInSeconds" to **Values**.
 
-Your report should look like this. 
+    * Right-click "Duration80thPercentileInSeconds" field and ensure **Sum** is selected.
 
-> [!div class="mx-imgBorder"] 
+Your report should look like this.
+
+> [!div class="mx-imgBorder"]
 > ![Sample - Pipelines Duration trend - Report](media/odatapowerbi-pipelines/durationtrend-report.png)
-
 
 ## Additional queries
 
 You can use the following additional queries to create different but similar reports using the same steps defined previously in this article.
 
-
 ### Use Pipeline Id, rather than Pipeline Name
 
-You can change your Pipeline name. To ensure that the Power BI reports don't break when the pipeline name is changed, use pipeline ID rather than pipeline name. You can obtain the pipeline ID  from the URL of the pipeline runs page.
-https:\//dev.azure.com/{organization}/{project}/_build?definitionId= **{pipelineid}**
+You can change your Pipeline name. To ensure that the Power BI reports don't break when the pipeline name is changed, use pipeline ID rather than pipeline name. You can obtain the pipeline ID from the URL of the pipeline runs page.
+https:\//dev.azure.com/{organization}/{project}/\_build?definitionId= **{pipelineid}**
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -231,10 +221,11 @@ let
                 &"/groupby( "
                 &"(Duration80thPercentileInSeconds, CompletedOn/Date)) "
             &"&$orderby=CompletedOn/Date asc "
-    ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
+    ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4])
 in
     Source
 ```
+
 #### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](includes/sample-odata-query.md)]
@@ -253,7 +244,7 @@ $apply=filter(
 &$orderby=CompletedOn/Date asc
 ```
 
-***
+---
 
 ### Get 50th and 90th percentile, along with 80th percentile duration trend
 
@@ -278,10 +269,11 @@ let
             &"/groupby( "
                 &"(Duration50thPercentileInSeconds, Duration80thPercentileInSeconds, Duration90thPercentileInSeconds, CompletedOn/Date)) "
             &"&$orderby=CompletedOn/Date asc "
-    ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
+    ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4])
 in
     Source
 ```
+
 #### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](includes/sample-odata-query.md)]
@@ -302,15 +294,15 @@ $apply=filter(
 &$orderby=CompletedOn/Date asc
 ```
 
-***
+---
 
 ### Filter by branch
 
 You may want to view the duration trend of a pipeline for a particular **branch** only. To create the report, follow the below additional steps along with what is defined previously in this article.
 
-- Expand Branch into Branch.BranchName
-- Select Power BI Visualization **Slicer** and add the field Branch.BranchName to the slicer's **Field**
-- Select the pipeline from the slicer for which you need to see the pipeline duration trend
+* Expand Branch into Branch.BranchName
+* Select Power BI Visualization **Slicer** and add the field Branch.BranchName to the slicer's **Field**
+* Select the pipeline from the slicer for which you need to see the pipeline duration trend
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -329,10 +321,11 @@ let
                 &"/groupby( "
                 &"(Duration80thPercentileInSeconds, Branch/BranchName, CompletedOn/Date)) "
             &"&$orderby=CompletedOn/Date asc "
-    ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
+    ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4])
 in
     Source
 ```
+
 #### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](includes/sample-odata-query.md)]
@@ -351,15 +344,15 @@ $apply=filter(
 &$orderby=CompletedOn/Date asc
 ```
 
-***
+---
 
-### Duration trend for all project pipelines 
+### Duration trend for all project pipelines
 
 You may want to view the duration trend for all the pipelines of the project in a single report. To create the report, follow the below additional steps along with what is defined previously in this article.
 
-- Expand Pipeline into Pipeline.PipelineName
-- Select Power BI Visualization **Slicer** and add the field Pipeline.PipelineName to the slicer's **Field**
-- Select the Build pipeline from the slicer for which you need to see the trend of pipeline pass rate 
+* Expand Pipeline into Pipeline.PipelineName
+* Select Power BI Visualization **Slicer** and add the field Pipeline.PipelineName to the slicer's **Field**
+* Select the Build pipeline from the slicer for which you need to see the trend of pipeline pass rate
 
 Refer [Outcome summary for all pipelines](sample-pipelines-allpipelines.md) sample report which has detailed similar steps as required here.
 
@@ -379,10 +372,11 @@ let
             &"/groupby( "
                 &"(Duration80thPercentileInSeconds, Pipeline/PipelineName, CompletedOn/Date)) "
                 &"&$orderby=CompletedOn/Date asc "
-    ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
+    ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4])
 in
     Source
 ```
+
 #### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](includes/sample-odata-query.md)]
@@ -400,7 +394,7 @@ $apply=filter(
 &$orderby=CompletedOn/Date asc
 ```
 
-***
+---
 
 ## Full list of sample reports for Pipelines
 

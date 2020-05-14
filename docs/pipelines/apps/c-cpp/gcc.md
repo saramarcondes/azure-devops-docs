@@ -20,7 +20,7 @@ Azure Pipelines and Team Foundation Server (TFS) provide a highly customizable c
 
 ## Prerequisites
 
-* You need an Azure DevOps organization. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137). If your team already has one, then make sure you're an administrator of the Azure DevOps project that you want to use.  (An Azure DevOps organization is different from your GitHub organization. Give them the same name if you want alignment between them.)
+* You need an Azure DevOps organization. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137). If your team already has one, then make sure you're an administrator of the Azure DevOps project that you want to use. (An Azure DevOps organization is different from your GitHub organization. Give them the same name if you want alignment between them.)
 
 * While the simplest way to try this quickstart is to use an Azure DevOps organization, you can also use a TFS server instead of an Azure DevOps organization. Make sure that you have [configured a build agent](../../agents/agents.md) for your project, and that you have GCC installed on the agent machine.
 
@@ -46,85 +46,85 @@ https://github.com/adventworks/cpp-gpp-sample
 
 [!INCLUDE [include](../../includes/ci-quickstart-intro.md)]
 
-[//]: # (TODO: Restore use of includes when we get support for using them in a list.)
+[//]: # "TODO: Restore use of includes when we get support for using them in a list."
 
-1. Create a new build pipeline.
+1.  Create a new build pipeline.
 
-   # [Azure Repos or TFS repo](#tab/vsts)
+    # [Azure Repos or TFS repo](#tab/vsts)
 
-   Navigate to the **Files** tab of the **Code** hub, and then click **Set up build**.
+    Navigate to the **Files** tab of the **Code** hub, and then click **Set up build**.
 
-   ![Screenshot showing button to set up build for a repository](../media/set-up-first-build-from-code-hub.png)
+    ![Screenshot showing button to set up build for a repository](../media/set-up-first-build-from-code-hub.png)
 
-   You are taken to **Azure Pipelines** and asked to **Select a template** for the new build pipeline.
+    You are taken to **Azure Pipelines** and asked to **Select a template** for the new build pipeline.
 
-   # [GitHub repo](#tab/github)
+    # [GitHub repo](#tab/github)
 
-   Navigate to the **Builds** tab in Azure Pipelines or TFS, and then click **+ New**. You are asked to **Select a template** for the new build pipeline.
+    Navigate to the **Builds** tab in Azure Pipelines or TFS, and then click **+ New**. You are asked to **Select a template** for the new build pipeline.
 
-   ---
+    ---
 
-2. In the right panel, select **Empty**, and then click **Apply**. This template allows starting from scratch and adding your own build tasks.
+2.  In the right panel, select **Empty**, and then click **Apply**. This template allows starting from scratch and adding your own build tasks.
 
-3. For the **Agent pool**:
+3.  For the **Agent pool**:
 
-   * **Azure Pipelines:** Select _Hosted Ubuntu 1604_ or _Hosted macOS_. This uses an Azure Pipelines pool of agents that have the software needed to build your app.
+    * **Azure Pipelines:** Select _Hosted Ubuntu 1604_ or _Hosted macOS_. This uses an Azure Pipelines pool of agents that have the software needed to build your app.
 
-   * **TFS:** Select a pool that includes a [Linux or macOS build agent](../../agents/agents.md).
+    * **TFS:** Select a pool that includes a [Linux or macOS build agent](../../agents/agents.md).
 
-4. Click **Get sources** and then:
+4.  Click **Get sources** and then:
 
-   # [Azure Repos or TFS repo](#tab/vsts)
+    # [Azure Repos or TFS repo](#tab/vsts)
 
-   Observe that the new build pipeline is automatically linked to your repository.
+    Observe that the new build pipeline is automatically linked to your repository.
 
-   # [GitHub repo](#tab/github)
+    # [GitHub repo](#tab/github)
 
-   Select your version control repository. You'll need to authorize access to your repo.
+    Select your version control repository. You'll need to authorize access to your repo.
 
-5. Click the **+** icon on **Job 1** of the build and then:
+5.  Click the **+** icon on **Job 1** of the build and then:
 
 ::: moniker range=">= tfs-2018"
 
-  ### Azure Pipelines and TFS 2018
+### Azure Pipelines and TFS 2018
 
-  1. Search for the **Shell Script** task and click **Add** to add it to your build.
+1.  Search for the **Shell Script** task and click **Add** to add it to your build.
 
-  1. Click the **Shell Script** task and set its field values as follows:
+1.  Click the **Shell Script** task and set its field values as follows:
 
-      Field   | Value
-      ------- | -----
-      Version | `3.*` or later
-      Type    | `Inline`
-      Script  | `make`
+    | Field   | Value          |
+    | ------- | -------------- |
+    | Version | `3.*` or later |
+    | Type    | `Inline`       |
+    | Script  | `make`         |
 
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
 
-  ### TFS 2017.2
+### TFS 2017.2
 
-  1. Search for the **Command Line** task and click **Add** to add it to your build.
+1.  Search for the **Command Line** task and click **Add** to add it to your build.
 
-  1. Click the **Command Line** task and set its field values as follows:
+1.  Click the **Command Line** task and set its field values as follows:
 
-      Field        | Value
-      ------------ | -----
-      Display name | `Build C++ application`
-      Tool         | `make`
+    | Field        | Value                   |
+    | ------------ | ----------------------- |
+    | Display name | `Build C++ application` |
+    | Tool         | `make`                  |
 
 ::: moniker-end
 
-  ### Finish
+### Finish
 
-1. Click the **Triggers** tab and enable the **Continuous Integration** trigger. This will ensure that the build pipeline is automatically triggered every time you commit a change to your repository.
+1.  Click the **Triggers** tab and enable the **Continuous Integration** trigger. This will ensure that the build pipeline is automatically triggered every time you commit a change to your repository.
 
-1. Click **Save & queue** to kick off your first build. On the **Save build pipeline and queue** dialog box, click **Save & queue**.
+1.  Click **Save & queue** to kick off your first build. On the **Save build pipeline and queue** dialog box, click **Save & queue**.
 
-1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
+1.  A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
 
-[//]: # (TODO:> [!TIP])
-[//]: # (TODO:> To learn more about GitHub CI builds, see [Define CI build pipeline for your Git repo](#)
+[//]: # "TODO:> [!TIP]"
+[//]: # "TODO:> To learn more about GitHub CI builds, see [Define CI build pipeline for your Git repo](#"
 
 ## View the build summary
 

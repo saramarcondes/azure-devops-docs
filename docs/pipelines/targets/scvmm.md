@@ -32,42 +32,43 @@ You need to first configure how TFS connects to SCVMM. You must have a build and
 
 ::: moniker-end
 
-1. Install the **Virtual Machine Manager** (VMM) console on the agent machine by
-   following [these instructions](/system-center/vmm/install-console).
-   Supported version: [System Center 2012 R2 Virtual Machine Manager](https://technet.microsoft.com/library/hh546785.aspx).
+1.  Install the **Virtual Machine Manager** (VMM) console on the agent machine by
+    following [these instructions](/system-center/vmm/install-console).
+    Supported version: [System Center 2012 R2 Virtual Machine Manager](https://technet.microsoft.com/library/hh546785.aspx).
 
-2. Install the **System Center Virtual Machine Manager (SCVMM)** extension
-   from Visual Studio Marketplace into TFS or Azure Pipelines:
+2.  Install the **System Center Virtual Machine Manager (SCVMM)** extension
+    from Visual Studio Marketplace into TFS or Azure Pipelines:
 
-   * If you are using **Azure Pipelines**,
-     install the extension from [this location](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.scvmmapp)
-     in Visual Studio Marketplace.
-   * If you are using **Team Foundation Server**, download
-     the extension from [this location](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.scvmmapp)
-     in Visual Studio Marketplace, upload it to your
-     Team Foundation Server, and install it.<p />
+    * If you are using **Azure Pipelines**,
+      install the extension from [this location](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.scvmmapp)
+      in Visual Studio Marketplace.
+    * If you are using **Team Foundation Server**, download
+      the extension from [this location](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.scvmmapp)
+      in Visual Studio Marketplace, upload it to your
+      Team Foundation Server, and install it.<p />
 
-3. Create an SCVMM service connection in your project:
+3.  Create an SCVMM service connection in your project:
 
-   * In your Azure Pipelines or TFS project in your web browser, navigate to the project settings and select **Service connections**.
+    * In your Azure Pipelines or TFS project in your web browser, navigate to the project settings and select **Service connections**.
 
-   * In the **Service connections** tab, choose **New service connection**, and select **SCVMM**.
+    * In the **Service connections** tab, choose **New service connection**, and select **SCVMM**.
 
-   * In the **Add new SCVMM Connection** 
-     dialog, enter the values required to connect to the 
-     SCVMM Server:
+    * In the **Add new SCVMM Connection**
+      dialog, enter the values required to connect to the
+      SCVMM Server:
 
-     - **Connection Name**: Enter a user-friendly name 
-       for the service connection such as **MySCVMMServer**.
-     - **SCVMM Server Name**: Enter the fully qualified domain 
-       name and port number of the SCVMM server, in the form **machine.domain.com:port**.
-     - **Username** and **Password**: Enter the credentials
-       required to connect to the vCenter Server. Username formats such as **username**, **domain\username**,
-       **machine-name\\username**, and **.\\username** are supported.
-       UPN formats such as <strong>username@domain.com</strong> and built-in system 
-       accounts such as **NT Authority\\System** are not supported.<p />
+      * **Connection Name**: Enter a user-friendly name
+        for the service connection such as **MySCVMMServer**.
+      * **SCVMM Server Name**: Enter the fully qualified domain
+        name and port number of the SCVMM server, in the form **machine.domain.com:port**.
+      * **Username** and **Password**: Enter the credentials
+        required to connect to the vCenter Server. Username formats such as **username**, **domain\username**,
+        **machine-name\\username**, and **.\\username** are supported.
+        UPN formats such as <strong>username@domain.com</strong> and built-in system
+        accounts such as **NT Authority\\System** are not supported.<p />
 
 <a name="newvm"></a>
+
 ## Create new virtual machines from a template, VHD, or stored VM
 
 One of the common actions that you can perform with every build is to create a new virtual machine to deploy the build to. You use the SCMVMM task from the extension to do this and configure the properties of the task as follows:
@@ -76,17 +77,17 @@ One of the common actions that you can perform with every build is to create a n
 * **SCVMM Service Connection**: Select a SCVMM service connection you already defined, or create a new one.
 * **Action**: Select **New Virtual Machine using Template/Stored VM/VHD**.
 * **Create virtual machines from VM Templates**: Set this option if you want to use a template.
-  - **Virtual machine names**: Enter the name of the virtual machine, or a list of the virtual machine names on separate lines. Example `FabrikamDevVM`
-  - **VM template names**: Enter the name of the template, or a list of the template names on separate lines.
-  - **Set computer name as defined in the VM template**: If not set, the computer name will be the same as the VM name.
+  * **Virtual machine names**: Enter the name of the virtual machine, or a list of the virtual machine names on separate lines. Example `FabrikamDevVM`
+  * **VM template names**: Enter the name of the template, or a list of the template names on separate lines.
+  * **Set computer name as defined in the VM template**: If not set, the computer name will be the same as the VM name.
 * **Create virtual machines from stored VMs**: Set this option if you want to use a stored VM.
-  - **Virtual machine names**: Enter the name of the virtual machine, or a list of the virtual machine names on separate lines. Example `FabrikamDevVM`
-  - **Stored VMs**: Enter the name of the stored VM, or a list of the VMs on separate lines in the same order as the virtual machine names.
+  * **Virtual machine names**: Enter the name of the virtual machine, or a list of the virtual machine names on separate lines. Example `FabrikamDevVM`
+  * **Stored VMs**: Enter the name of the stored VM, or a list of the VMs on separate lines in the same order as the virtual machine names.
 * **Create virtual machines from VHD**: Set this option if you want to use a stored VM.
-  - **Virtual machine names**: Enter the name of the virtual machine, or a list of the virtual machine names on separate lines. Example `FabrikamDevVM`
-  - **VHDs**: Enter the name of the VHD or VHDX, or a list of names on separate lines in the same order as the virtual machine names.
-  - **CPU count**: Specify the number of processor cores required for the virtual machines.
-  - **Memory**: Specify the memory in MB required for the virtual machines.
+  * **Virtual machine names**: Enter the name of the virtual machine, or a list of the virtual machine names on separate lines. Example `FabrikamDevVM`
+  * **VHDs**: Enter the name of the VHD or VHDX, or a list of names on separate lines in the same order as the virtual machine names.
+  * **CPU count**: Specify the number of processor cores required for the virtual machines.
+  * **Memory**: Specify the memory in MB required for the virtual machines.
 * **Clear existing network adapters**: Set this option if you want to remove the network adapters and specify new ones in the **Network Virtualization** options.
 * **Deploy the VMs to**: Choose either **Cloud** or **Host** to select the set of virtual machines to which the action will be applied.
 * **Host Name** or **Cloud Name**: Depending on the previous selection, enter either a cloud name or a host machine name.
@@ -97,6 +98,7 @@ One of the common actions that you can perform with every build is to create a n
 * **Show minimal logs**: Set this option if you don't want to create detailed live logs about the VM provisioning process.
 
 <a name="delete"></a>
+
 ## Delete virtual machines
 
 After validating your build, you would want to delete the virtual machines that you created. You use the SCMVMM task from the extension to do this and configure the properties of the task as follows:
@@ -109,6 +111,7 @@ After validating your build, you would want to delete the virtual machines that 
 * **Host Name** or **Cloud Name**: Depending on the previous selection, enter either a cloud name or a host machine name.
 
 <a name="startstop"></a>
+
 ## Start and stop virtual machines
 
 You can start a virtual machine prior to deploying a build, and then stop the virtual machine after running tests. Use the SCVMM task as follows in order to achieve this:
@@ -122,6 +125,7 @@ You can start a virtual machine prior to deploying a build, and then stop the vi
 * **Wait Time**: The time to wait for the virtual machine to reach ready state.
 
 <a name="checkpoint"></a>
+
 ## Create, restore, and delete checkpoints
 
 A quick alternative to bringing up a virtual machine in desired state prior to running tests is to restore it to a known checkpoint. Use the SCVMM task as follows in order to do this:
@@ -136,6 +140,7 @@ A quick alternative to bringing up a virtual machine in desired state prior to r
 * **Host Name** or **Cloud Name**: Depending on the previous selection, enter either a cloud name or a host machine name.
 
 <a name="runscript"></a>
+
 ## Run custom PowerShell scripts for SCVMM
 
 For functionality that is not available through the in-built actions, you can run custom SCVMM PowerShell scripts using the task. The task helps you with setting up the connection with SCVMM using the credentials configured in the service connection, and then runs the script.

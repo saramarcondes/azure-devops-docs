@@ -24,6 +24,7 @@ Pushed branches that have finished work are reviewed and merged into the main br
 In this tutorial you learn how to:
 
 > [!div class="checklist"]
+>
 > * Share your code with push
 
 ## Video overview
@@ -35,24 +36,26 @@ In this tutorial you learn how to:
 ## Share your code with push
 
 #### [Visual Studio](#tab/visual-studio/)
-1. In Team Explorer, select **Home** and then choose **Sync** to open **Synchronization**.
 
-   ![Synchronization](media/gitquickstart-vs2017/sync.png)
+1.  In Team Explorer, select **Home** and then choose **Sync** to open **Synchronization**.
 
-   You can also go to **Synchronization** from the **Changes** view by choosing **Sync** immediately after making a commit.
+    ![Synchronization](media/gitquickstart-vs2017/sync.png)
 
-   ![Synchronization](media/gitquickstart-vs2017/commit-created-locally.png)
+    You can also go to **Synchronization** from the **Changes** view by choosing **Sync** immediately after making a commit.
 
-1. Select **Push** to share your commit with the remote repository.
+    ![Synchronization](media/gitquickstart-vs2017/commit-created-locally.png)
 
-   ![Push](media/gitquickstart-vs2017/push-to-origin.png)
+1.  Select **Push** to share your commit with the remote repository.
 
-   During your first push to the repository, you'll see the following message in place of the outgoing commits list: `The current branch does not track a remote branch. Push your changes to a new branch on the origin remote and set the upstream branch.` Select **Push** to push your changes to a new branch on the remote repository and set the upstream branch. The next time you push changes you'll see the list of commits.
+    ![Push](media/gitquickstart-vs2017/push-to-origin.png)
 
-   > [!NOTE]
-   > Go to **Team Explorer** > **Settings** > **Repository Settings**. Make sure that you've entered the correct **User**, **Email**, **Remotes**, and other settings.
+    During your first push to the repository, you'll see the following message in place of the outgoing commits list: `The current branch does not track a remote branch. Push your changes to a new branch on the origin remote and set the upstream branch.` Select **Push** to push your changes to a new branch on the remote repository and set the upstream branch. The next time you push changes you'll see the list of commits.
+
+    > [!NOTE]
+    > Go to **Team Explorer** > **Settings** > **Repository Settings**. Make sure that you've entered the correct **User**, **Email**, **Remotes**, and other settings.
 
 #### [Command Line](#tab/command-line/)
+
 The `push` command updates the remote branch on `origin` with the commits from your local branch.
 
 ```cmd
@@ -81,7 +84,8 @@ git push -u origin users/frank/bugfix
 The command adds your commits from your local branch to the branch on `origin`. This command sets up an upstream tracking relationship in
 Git so that next time you `push` or `pull` from this local branch, you won't have to specify the remote branch name.
 
-* * *
+---
+
 ### Resolve merge conflicts before pushing
 
 If there are [conflicts](merging.md) between your local commits and the remote branch, you must resolve these conflicts before you can push your changes.
@@ -89,5 +93,4 @@ If there are [conflicts](merging.md) between your local commits and the remote b
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Review code with pull requests](pullrequest.md) or [update code with fetch and pull](pulling.md)
+> [!div class="nextstepaction"][review code with pull requests](pullrequest.md) or [update code with fetch and pull](pulling.md)

@@ -15,8 +15,7 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Represents a single collection for extension data documents 
+Represents a single collection for extension data documents
 
 ### Members
 
@@ -27,4 +26,3 @@ Represents a single collection for extension data documents
 * `scopeType`: string. The type of the collection&#x27;s scope, such as Default or User
 
 * `scopeValue`: string. The value of the collection&#x27;s scope, such as Current or Me
-

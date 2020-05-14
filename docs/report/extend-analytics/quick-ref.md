@@ -8,26 +8,25 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= azure-devops-2019'
-ms.date: 10/03/2019 
+ms.date: 10/03/2019
 ---
 
 # Extend Analytics with OData (Preview) quick reference
 
 [!INCLUDE [temp](../includes/version-azure-devops.md)]
 
-Using OData, you can directly query Analytics for Azure DevOps from a supported browser and then use the returned JSON data as you desire. Enterprise organizations can generate queries that span multiple projects or the entire organization in Azure DevOps.   
+Using OData, you can directly query Analytics for Azure DevOps from a supported browser and then use the returned JSON data as you desire. Enterprise organizations can generate queries that span multiple projects or the entire organization in Azure DevOps.
 
 [!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 Use this quick reference to access information and sample queries using OData and Analytics. You can also find additional OData query examples in the articles available from [Overview of sample reports using OData queries](../powerbi/sample-odata-overview.md).
 
-
-## Supported tasks 
+## Supported tasks
 
 <table valign="top">
 <tbody valign="top">
 <tr>
-<td width="50%"> 
+<td width="50%">
 <ul>
 <li><a href="aggregated-data-analytics.md#apply-extension" data-raw-source="[Aggregate data, apply extension](aggregated-data-analytics.md#apply-extension)">Aggregate data, apply extension</a> </li>
 <li><a href="aggregated-data-analytics.md#aggregation-extension" data-raw-source="[Aggregate data, OData aggregation extension](aggregated-data-analytics.md#aggregation-extension)">Aggregate data, OData aggregation extension</a> </li>
@@ -36,7 +35,7 @@ Use this quick reference to access information and sample queries using OData an
 <li><a href="wit-analytics.md#basic-query" data-raw-source="[Construct a basic query](wit-analytics.md#basic-query)">Construct a basic query</a></li>
 <li><a href="example-analytics-widget.md" data-raw-source="[Create an Analytics widget](example-analytics-widget.md)">Create an Analytics widget</a></li>
 <br/>
-<li><a href="wit-analytics.md#server-force-paging" data-raw-source="[Enforce server-side paging](wit-analytics.md#server-force-paging)">Enforce server-side paging</a> 
+<li><a href="wit-analytics.md#server-force-paging" data-raw-source="[Enforce server-side paging](wit-analytics.md#server-force-paging)">Enforce server-side paging</a>
 <li><a href="aggregated-data-analytics.md#filter-aggregate" data-raw-source="[Filter aggregated results](aggregated-data-analytics.md#filter-aggregate)">Filter aggregated results</a></li>
 <li><a href="wit-analytics.md#filter-related-entities" data-raw-source="[Filter by Area Path](wit-analytics.md#filter-related-entities)">Filter by Area Path</a></li>
 <li><a href="wit-analytics.md#filter-related-entities" data-raw-source="[Filter by Iteration Path](wit-analytics.md#filter-related-entities)">Filter by Iteration Path</a></li>
@@ -78,13 +77,12 @@ Use this quick reference to access information and sample queries using OData an
 </tbody>
 </table>
 
-
-## Key concepts 
+## Key concepts
 
 <table valign="top">
 <tbody valign="top">
 <tr>
-<td width="36%"> 
+<td width="36%">
 <ul>
 <li><a href="aggregated-data-analytics.md#aggregation-extension" data-raw-source="[Aggregation extensions support](aggregated-data-analytics.md#aggregation-extension)">Aggregation extensions support</a> </li>
 <li><a href="analytics-metadata.md" data-raw-source="[Analytics OData metadata](analytics-metadata.md)">Analytics OData metadata</a></li>
@@ -149,15 +147,13 @@ Use this quick reference to access information and sample queries using OData an
 </tbody>
 </table>
 
-
-
-<!--- 
+<!---
 ## Sample queries and reports  
 
 <table valign="top">
 <tbody valign="top">
 <tr>
-<td width="50%"> 
+<td width="50%">
 <ul>
 <li><a href="../powerbi/sample-boards-bugtrend.md">Bug trends</a> </li>
 <li><a href="../powerbi/sample-boards-bugtrend.md">Burndown based on iteration path</a> </li>
@@ -200,10 +196,8 @@ Use this quick reference to access information and sample queries using OData an
 
 -->
 
-
 ## Related articles
-- [PowerBI](../powerbi/overview.md)  
-- [Dashboards, charts, reports, & widgets](../dashboards/overview.md)  
-- [OData Extension for Data Aggregation Version 4.0](https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)
 
-
+* [PowerBI](../powerbi/overview.md)
+* [Dashboards, charts, reports, & widgets](../dashboards/overview.md)
+* [OData Extension for Data Aggregation Version 4.0](https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)

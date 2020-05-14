@@ -16,12 +16,13 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-In this article, learn how to download a complete list of organizations backed by an Azure Active Directory (Azure AD) tenant. 
+In this article, learn how to download a complete list of organizations backed by an Azure Active Directory (Azure AD) tenant.
 On this list, you can find the following information:
-- organization IDs
-- organization names
-- organization URLs
-- organization owners
+
+* organization IDs
+* organization names
+* organization URLs
+* organization owners
 
 ## Prerequisites
 
@@ -31,20 +32,19 @@ You must be a [Project Collection Administrator or an organization Owner](../sec
 
 Using any organization backed by your Azure AD, complete the following steps. If you don't have access to an organization, create one by signing in to [Start.VisualStudio.com](https://start.visualstudio.com/) with your Azure AD identity. You can [delete the organization](delete-your-organization.md) when you're done.
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+1.  Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+2.  Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
     ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
-3. Select **Azure Active Directory**, and then **Download**.
+3.  Select **Azure Active Directory**, and then **Download**.
 
-   :::image type="content" source="media/shared/select-azure-ad-download.png" alt-text="Select Azure Active Directory, and then the Download button":::
+    :::image type="content" source="media/shared/select-azure-ad-download.png" alt-text="Select Azure Active Directory, and then the Download button":::
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
+> [!div class="nextstepaction"][restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
 
 ## Related articles
 
@@ -53,4 +53,3 @@ Using any organization backed by your Azure AD, complete the following steps. If
 * [Change Azure AD connection](change-azure-ad-connection.md)
 * [Enforce Conditional Access policies](manage-conditional-access.md)
 * [Manage access with Azure AD groups](manage-azure-active-directory-groups-vsts.md)
-

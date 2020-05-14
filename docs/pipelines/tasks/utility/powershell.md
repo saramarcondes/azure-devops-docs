@@ -90,7 +90,7 @@ Both of these resolve to the `PowerShell@2` task.
 
 ### Hello World
 
-Create ```test.ps1``` at the root of your repo:
+Create `test.ps1` at the root of your repo:
 
 ```ps
 Write-Host "Hello World from $Env:AGENT_NAME."
@@ -106,15 +106,15 @@ Write-Host "Over and out."
 
 On the Build tab of a build pipeline, add this task:
 
-| Task | Arguments |
-| ---- | --------- |
+| Task                                                  | Arguments                                                |
+| ----------------------------------------------------- | -------------------------------------------------------- |
 | ![](media/powershell.png)<br/>**Utility: PowerShell** | Run test.ps1.<br /><br />**Script filename**: `test.ps1` |
 
 ### Write a warning
 
 Add the PowerShell task, set the **Type** to `inline`, and paste in this script:
 
- ```ps
+```ps
 # Writes a warning to build summary and to log in yellow text
 Write-Host  "##vso[task.LogIssue type=warning;]This is the warning"
 ```
@@ -123,17 +123,18 @@ Write-Host  "##vso[task.LogIssue type=warning;]This is the warning"
 
 Add the PowerShell task, set the **Type** to `inline`, and paste in this script:
 
- ```ps
+```ps
 # Writes an error to build summary and to log in red text
 Write-Host  "##vso[task.LogIssue type=error;]This is the error"
 ```
 
 > [!TIP]
-> 
+>
 > If you want this error to fail the build, then add this line:
->  ```ps
+>
+> ```ps
 > exit 1
-> ``` 
+> ```
 
 ### ApplyVersionToAssemblies.ps1
 

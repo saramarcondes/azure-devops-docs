@@ -54,13 +54,14 @@ extends:
 
 When you set up `extends` templates, consider anchoring them to a particular Git branch or tag.
 That way, if breaking changes need to be made, existing pipelines won't be affected.
-The examples above use this feature. 
+The examples above use this feature.
 
 ## Security features enforced through YAML
 
 There are several protections built into the YAML syntax, and an extends template can enforce the usage of any or all of them.
 
 ### Step targets
+
 Restrict some steps to run in a container instead of the host.
 Without access to the agent's host, user steps can't modify agent configuration or leave malicious code for later execution.
 Run code on the host first to make the container more secure.
@@ -177,25 +178,22 @@ extends:
 
 ### Set required templates
 
-To require that a specific template gets used, you can set the [required template check](../process/approvals.md#required-template) for a resource or environment. The required template check can be used when extending from a template. 
+To require that a specific template gets used, you can set the [required template check](../process/approvals.md#required-template) for a resource or environment. The required template check can be used when extending from a template.
 
-You can check on the status of a check when viewing a pipeline job. When a pipeline doesn't extend from the require template, the check will fail and the run will stop. You will see that your check failed. 
+You can check on the status of a check when viewing a pipeline job. When a pipeline doesn't extend from the require template, the check will fail and the run will stop. You will see that your check failed.
 
-   > [!div class="mx-imgBorder"]
-   > ![approval check fails](../process/media/approval-fail.png)
+> [!div class="mx-imgBorder"] > ![approval check fails](../process/media/approval-fail.png)
 
 When the required template is used, you'll see that your check passed.
 
-   > [!div class="mx-imgBorder"]
-   > ![approval check passes](../process/media/approval-pass.png)
+> [!div class="mx-imgBorder"] > ![approval check passes](../process/media/approval-pass.png)
 
-
-Here the template `params.yml` is required with an approval on the resource. To trigger the pipeline to fail, comment out the reference to `params.yml`. 
+Here the template `params.yml` is required with an approval on the resource. To trigger the pipeline to fail, comment out the reference to `params.yml`.
 
 ```yaml
 # params.yml
 parameters:
-- name: yesNo 
+- name: yesNo
   type: boolean
   default: false
 - name: image
@@ -229,7 +227,6 @@ extends:
     parameters:
         yesNo: true
         image: 'windows-latest'
-
 ```
 
 ### Additional steps

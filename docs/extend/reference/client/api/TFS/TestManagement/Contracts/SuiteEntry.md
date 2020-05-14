@@ -9,7 +9,6 @@ ms.technology: devops-ecosystem
 
 Module path: `TFS/TestManagement/Contracts`
 
-
 ### Members
 
 * `suiteId`: number.
@@ -18,5 +17,4 @@ Module path: `TFS/TestManagement/Contracts`
 
 * `testCaseId`: number.
 
-* `childSuiteId`: number. 
-
+* `childSuiteId`: number.

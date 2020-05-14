@@ -21,6 +21,7 @@ Processes contain configuration settings for projects.
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 
 ## Get a list of processes
+
 <a name="getalistofprocesses" />
 <a id="GetProcesses"></a>
 
@@ -30,11 +31,13 @@ Get all processes in the project collection.
 GET https://{instance}/DefaultCollection/_apis/process/processes?api-version={version}
 ```
 
-| Parameter          | Type                                                     | Notes                                                                                                                       
-|:-------------------|:---------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance           | string                                                   | TFS server name ({server:port}).
-| api-version        | string                                                   | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| instance | string | TFS server name ({server:port}).
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
@@ -50,47 +53,55 @@ GET https://mytfsserver/DefaultCollection/_apis/process/processes?api-version=1.
   "value": [
     {
       "id": "adcc42ab-9882-485e-a3ed-7678f01f66bc",
-      "description": "This template is flexible and will work great for most teams using Agile planning methods, including those practicing Scrum.",
+      "description":
+        "This template is flexible and will work great for most teams using Agile planning methods, including those practicing Scrum.",
       "isDefault": false,
-      "url": "https://mytfsserver/DefaultCollection/_apis/process/processes/adcc42ab-9882-485e-a3ed-7678f01f66bc",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/process/processes/adcc42ab-9882-485e-a3ed-7678f01f66bc",
       "name": "Agile"
     },
     {
       "id": "27450541-8e31-4150-9947-dc59f998fc01",
-      "description": "This template is for more formal projects requiring a framework for process improvement and an auditable record of decisions.",
+      "description":
+        "This template is for more formal projects requiring a framework for process improvement and an auditable record of decisions.",
       "isDefault": false,
-      "url": "https://mytfsserver/DefaultCollection/_apis/process/processes/27450541-8e31-4150-9947-dc59f998fc01",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/process/processes/27450541-8e31-4150-9947-dc59f998fc01",
       "name": "CMMI"
     },
     {
       "id": "6b724908-ef14-45cf-84f8-768b5384da45",
-      "description": "This template is for teams who follow the Scrum methodology and use Scrum terminology.",
+      "description":
+        "This template is for teams who follow the Scrum methodology and use Scrum terminology.",
       "isDefault": true,
-      "url": "https://mytfsserver/DefaultCollection/_apis/process/processes/6b724908-ef14-45cf-84f8-768b5384da45",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/process/processes/6b724908-ef14-45cf-84f8-768b5384da45",
       "name": "Scrum"
     }
   ]
 }
 ```
 
-
 #### Sample code
 
 * [C# (ListProcesses method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/ProjectsAndTeams/ProcessesSample.cs#L13)
 
 ## Get a process
+
 <a id="GetProcess"></a>
 
 ```no-highlight
 GET https://{instance}/DefaultCollection/_apis/process/processes/{processId}?api-version={version}
 ```
 
-| Parameter          | Type    | Notes                                                                                                                       
-|:-------------------|:--------|:----------------------------------------------------------------------------------------------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance           | string  | TFS server name ({server:port}).
-| processId          | string  | ID of the process.
-| api-version        | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| instance | string | TFS server name ({server:port}).
+| processId | string | ID of the process.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
@@ -103,18 +114,20 @@ GET https://mytfsserver/DefaultCollection/_apis/process/processes/adcc42ab-9882-
 ```json
 {
   "id": "adcc42ab-9882-485e-a3ed-7678f01f66bc",
-  "description": "This template is flexible and will work great for most teams using Agile planning methods, including those practicing Scrum.",
+  "description":
+    "This template is flexible and will work great for most teams using Agile planning methods, including those practicing Scrum.",
   "isDefault": false,
   "_links": {
     "self": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/process/processes/adcc42ab-9882-485e-a3ed-7678f01f66bc"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/process/processes/adcc42ab-9882-485e-a3ed-7678f01f66bc"
     }
   },
-  "url": "https://mytfsserver/DefaultCollection/_apis/process/processes/adcc42ab-9882-485e-a3ed-7678f01f66bc",
+  "url":
+    "https://mytfsserver/DefaultCollection/_apis/process/processes/adcc42ab-9882-485e-a3ed-7678f01f66bc",
   "name": "Agile"
 }
 ```
-
 
 #### Sample code
 

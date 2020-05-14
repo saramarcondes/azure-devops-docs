@@ -13,5 +13,3 @@ ms.date: 08/04/2016
 # Install your extension
 
 [!INCLUDE [Install](../includes/procedures/install.md)]
-
-

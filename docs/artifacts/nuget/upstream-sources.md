@@ -8,8 +8,6 @@ ms.date: 01/20/2018
 monikerRange: '>= tfs-2018'
 ---
 
- 
-
 # Use packages from nuget.org
 
 **Azure DevOps Services** | **TFS 2018**
@@ -25,21 +23,22 @@ To learn more about the concept of upstream sources, please see the [concepts pa
 
 ## Enable the upstream on a new feed
 
-1. [Create a new feed](../feeds/create-feed.md). Ensure you leave the "Use packages from public sources through this feed" radio button selected.
-1. [Update your NuGet configuration](#update-nuget-configuration).
+1.  [Create a new feed](../feeds/create-feed.md). Ensure you leave the "Use packages from public sources through this feed" radio button selected.
+1.  [Update your NuGet configuration](#update-nuget-configuration).
 
 <a name="existing-feed"></a>
+
 ## Enable the upstream on an existing feed
 
 > [!IMPORTANT]
 > Enabling the nuget.org upstream source on a widely-used feed can result in unexpected packages being saved into that feed. [Learn more](#adding-upstreams-to-a-popular-feed)
 
-1. Edit your feed. Select the **gear icon** in the top right of the page to open feed settings.
-1. Select the **Upstream sources** pivot.
-1. Select **Add upstream source** in the CommandBar.
-1. Select **Select a feed URL** and select **nuget.org (https://api.nuget.org/v3/index.json)**. If you like, customize the upstream name.
-1. Select **Add**.
-1. [Update your NuGet configuration](#update-nuget-configuration).
+1.  Edit your feed. Select the **gear icon** in the top right of the page to open feed settings.
+1.  Select the **Upstream sources** pivot.
+1.  Select **Add upstream source** in the CommandBar.
+1.  Select **Select a feed URL** and select **nuget.org (https://api.nuget.org/v3/index.json)**. If you like, customize the upstream name.
+1.  Select **Add**.
+1.  [Update your NuGet configuration](#update-nuget-configuration).
 
 <a name="adding-upstreams-to-a-popular-feed"></a>
 
@@ -59,7 +58,6 @@ To use your feed and upstream source, follow the instructions to [consume NuGet 
 
 You can see the packages you have saved in your feed by selecting the appropriate Source filter.
 
-
 ::: moniker range=">= azure-devops-2019"
 
 ![Viewing your cached packages](media/view-cached-packages-newnav.png)
@@ -77,6 +75,3 @@ You can see the packages you have saved in your feed by selecting the appropriat
 ![Viewing your cached packages](media/view-cached-packages.png)
 
 ::: moniker-end
-
-
-

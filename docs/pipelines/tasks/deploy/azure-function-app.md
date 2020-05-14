@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [include](../../includes/version-team-services.md)]
 
-Use the Azure Function App task to deploy [Functions](/azure/azure-functions/) to Azure. 
+Use the Azure Function App task to deploy [Functions](/azure/azure-functions/) to Azure.
 
 ## Arguments
 
@@ -38,7 +38,6 @@ Following is an example YAML snippet to deploy Azure Functions on Windows.
 ## Example
 
 ```YAML
-
 variables:
   azureSubscription: Contoso
   # To ignore SSL error uncomment the below variable
@@ -52,16 +51,17 @@ steps:
     appName: samplefunctionapp
     package: $(System.DefaultWorkingDirectory)/**/*.zip
 ```
+
 To deploy Function on Linux, add the appType parameter and set it to <code>appType: functionAppLinux</code>. If not mentioned, <code>functionApp</code> is taken as the default value.
 
-To explicitly specify the deployment method as Zip Deploy, add the parameter <code>deploymentMethod: zipDeploy</code>. Other supported value for this parameter is <code>runFromPackage</code>. 
+To explicitly specify the deployment method as Zip Deploy, add the parameter <code>deploymentMethod: zipDeploy</code>. Other supported value for this parameter is <code>runFromPackage</code>.
 If not mentioned, <code>auto</code> is taken as the default value.
 
 For an end-to-end walkthrough, see [Build and deploy Java to Azure Functions](../../ecosystems/java-function.md) for End-to-end CI/CD.
 
 ## Deployment methods
 
-Several deployment methods are available in this task. Auto is the default option. 
+Several deployment methods are available in this task. Auto is the default option.
 
 To change the deployment option in designer task, expand Additional Deployment Options and enable Select deployment method to choose from additional package-based deployment options.
 
@@ -75,11 +75,11 @@ Based on the type of Azure App Service and Azure Pipelines agent, the task choos
 
 By default the task tries to select the appropriate deployment technology given the input package, app service type and agent OS.
 
-* When post deployment script is provided, use Zip Deploy 
-* When the App Service type is Web App on Linux App, use Zip Deploy 
-* If War file is provided, use War Deploy 
-* If Jar file is provided, use Run From Zip 
-* For all others, use Run From Package (via Zip Deploy) 
+* When post deployment script is provided, use Zip Deploy
+* When the App Service type is Web App on Linux App, use Zip Deploy
+* If War file is provided, use War Deploy
+* If Jar file is provided, use Run From Zip
+* For all others, use Run From Package (via Zip Deploy)
 
 On non-Windows agent (for any App service type), the task relies on [Kudu REST APIs](https://github.com/projectkudu/kudu/wiki/REST-API) to deploy the Web App.
 

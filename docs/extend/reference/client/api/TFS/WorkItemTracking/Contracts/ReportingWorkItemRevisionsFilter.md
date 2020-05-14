@@ -13,7 +13,6 @@ ms.date: 08/04/2016
 
 Module path: `TFS/WorkItemTracking/Contracts`
 
-
 ### Members
 
 * `fields`: string[]. A list of fields to return in work item revisions. Omit this parameter to get all reportable fields.
@@ -21,4 +20,3 @@ Module path: `TFS/WorkItemTracking/Contracts`
 * `includeIdentityRef`: boolean. Return an identity reference instead of a string value for identity fields.
 
 * `types`: string[]. A list of types to filter the results to specific work item types. Omit this parameter to get work item revisions of all work item types.
-

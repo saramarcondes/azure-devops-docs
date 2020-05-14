@@ -20,23 +20,24 @@ This page shows different samples about the modal dialog control.
 
 <div class="alert alert-warning">
 When using this modal dialog, dialog overlay covers only the area dedicated to the extension due to iframe limitations. If you want the modal dialog cover whole window, see <a href="../using-host-dialog.md" data-raw-source="[Using host dialog](../using-host-dialog.md)">Using host dialog</a>.
-</div> 
+</div>
 
 <a name="basic"></a>
 
 ## Simple modal dialog
 
 Below sample use the simplistic modal dialog usage where no button is displayed and `contextText` is specified.
-``` typescript
-	import Dialogs = require("VSS/Controls/Dialogs");
-	
-	$("#show").click(()=> {
-		Dialogs.show(Dialogs.ModalDialog, {
-			title: "My Dialog",
-			contentText: "This is the simplistic modal dialog.",
-			buttons: null
-		});
-	});
+
+```typescript
+import Dialogs = require("VSS/Controls/Dialogs");
+
+$("#show").click(() => {
+  Dialogs.show(Dialogs.ModalDialog, {
+    title: "My Dialog",
+    contentText: "This is the simplistic modal dialog.",
+    buttons: null
+  });
+});
 ```
 
 <a name="form"></a>
@@ -45,7 +46,7 @@ Below sample use the simplistic modal dialog usage where no button is displayed 
 
 Below sample shows displaying a form in a modal dialog and getting the result when it is valid.
 
-``` html
+```html
 	<button id="show">Add person</button>
 	<ul class="person-list"></ul>
 	<div class="dialog-content">
@@ -65,54 +66,62 @@ Below sample shows displaying a form in a modal dialog and getting the result wh
 	</div>
 ```
 
-``` css
-	.dialog-content {
-		display: none;
-	}
-	
-	.dialog-content input {
-		border: 1px solid #ddd;
-		width: 100%;
-		outline: none;
-		padding: 2px;
-	}
+```css
+.dialog-content {
+  display: none;
+}
+
+.dialog-content input {
+  border: 1px solid #ddd;
+  width: 100%;
+  outline: none;
+  padding: 2px;
+}
 ```
 
-``` typescript
-	import Dialogs = require("VSS/Controls/Dialogs");
-	
-	$("#show").click(() => {
-		// Display the dialog
-		var dialog = Dialogs.show(Dialogs.ModalDialog, <Dialogs.IModalDialogOptions>{
-			width: 300,
-			title: "Register",
-			content: $(".dialog-content").clone(),
-			okCallback: (result: any) => {
-				$("<li />").text(result).appendTo(".person-list");
-			}
-		});
-		
-		var dialogElement = dialog.getElement();
-		// Monitor input changes
-		dialogElement.on("input", "input",(e: JQueryEventObject) => {
-			// Set dialog result
-			dialog.setDialogResult(getValue(dialogElement));
-			// Update enabled status of ok button
-			dialog.updateOkButton(!isEmpty(dialogElement));
-		});
-	});
-	
-	function isEmpty(parent: JQuery): boolean {
-		return parent.find("input").filter((index: number, el: Element) => {
-			return !$(el).val();
-		}).length > 0;
-	}
-	
-	function getValue(parent: JQuery): string {
-		return parent.find("input").map((index: number, el: Element) => {
-			return $(el).val();
-		}).get().join(" - ");
-	}
+```typescript
+import Dialogs = require("VSS/Controls/Dialogs");
+
+$("#show").click(() => {
+  // Display the dialog
+  var dialog = Dialogs.show(Dialogs.ModalDialog, <Dialogs.IModalDialogOptions>{
+    width: 300,
+    title: "Register",
+    content: $(".dialog-content").clone(),
+    okCallback: (result: any) => {
+      $("<li />")
+        .text(result)
+        .appendTo(".person-list");
+    }
+  });
+
+  var dialogElement = dialog.getElement();
+  // Monitor input changes
+  dialogElement.on("input", "input", (e: JQueryEventObject) => {
+    // Set dialog result
+    dialog.setDialogResult(getValue(dialogElement));
+    // Update enabled status of ok button
+    dialog.updateOkButton(!isEmpty(dialogElement));
+  });
+});
+
+function isEmpty(parent: JQuery): boolean {
+  return (
+    parent.find("input").filter((index: number, el: Element) => {
+      return !$(el).val();
+    }).length > 0
+  );
+}
+
+function getValue(parent: JQuery): string {
+  return parent
+    .find("input")
+    .map((index: number, el: Element) => {
+      return $(el).val();
+    })
+    .get()
+    .join(" - ");
+}
 ```
 
 <a name="confirmation"></a>
@@ -121,31 +130,35 @@ Below sample shows displaying a form in a modal dialog and getting the result wh
 
 Below sample displays how to use modal dialog as a confirmation dialog.
 
-``` typescript
-	import Dialogs = require("VSS/Controls/Dialogs");
-	
-	var filename = "File1.txt";
-	
-	function showConfirmationDialog(yesCallback: () => void) {
-		var dialog = Dialogs.show(Dialogs.ModalDialog, {
-			title: "Delete Confirmation",
-			content: $("<p/>").addClass("confirmation-text").html(`Are you sure you want to delete <b>${filename}</b>?`),
-			buttons: {
-				"Yes": () => {
-					yesCallback();
-					dialog.close();
-				},
-				"No": () => {
-					dialog.close();
-				}
-			}
-		});
-	};
-	
-	$("#delete").click(() => {
-		showConfirmationDialog(()=> {
-			// Do your delete job here
-			$("<p />").text(`${filename} deleted`).appendTo(".log");
-		});
-	});
+```typescript
+import Dialogs = require("VSS/Controls/Dialogs");
+
+var filename = "File1.txt";
+
+function showConfirmationDialog(yesCallback: () => void) {
+  var dialog = Dialogs.show(Dialogs.ModalDialog, {
+    title: "Delete Confirmation",
+    content: $("<p/>")
+      .addClass("confirmation-text")
+      .html(`Are you sure you want to delete <b>${filename}</b>?`),
+    buttons: {
+      Yes: () => {
+        yesCallback();
+        dialog.close();
+      },
+      No: () => {
+        dialog.close();
+      }
+    }
+  });
+}
+
+$("#delete").click(() => {
+  showConfirmationDialog(() => {
+    // Do your delete job here
+    $("<p />")
+      .text(`${filename} deleted`)
+      .appendTo(".log");
+  });
+});
 ```

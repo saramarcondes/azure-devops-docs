@@ -15,8 +15,7 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Session token whose value can be added to the Authorization header in requests to Azure DevOps Services endpoints 
+Session token whose value can be added to the Authorization header in requests to Azure DevOps Services endpoints
 
 ### Members
 
@@ -25,4 +24,3 @@ Session token whose value can be added to the Authorization header in requests t
 * `name`: string. Name describing the token
 
 * `token`: string. Token value
-

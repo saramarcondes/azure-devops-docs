@@ -11,56 +11,56 @@ monikerRange: '>= tfs-2013'
 ms.date: 10/02/2019
 ---
 
-
-# Query by link or attachment count  
+# Query by link or attachment count
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 You can [link work items to track related work and dependencies](link-work-items-support-traceability.md) and [attach files to share information with your team](share-plans.md#attachments). You can then list work items based on one or more of the following integer fields:
 
-::: moniker range="azure-devops"  
-- Attachment File Count
-- (Discussion) Comment Count 
-- External Link count
-- Hyperlink Count
-- Link Comment
-- Related Link Count
-- Remote Link Count
-::: moniker-end 
+::: moniker range="azure-devops"
 
+* Attachment File Count
+* (Discussion) Comment Count
+* External Link count
+* Hyperlink Count
+* Link Comment
+* Related Link Count
+* Remote Link Count
+  ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019" 
-- Attachment File Count
-- (Discussion) Comment Count 
-- External Link count
-- Hyperlink Count
-- Link Comment
-- Related Link Count
-::: moniker-end 
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
+* Attachment File Count
+* (Discussion) Comment Count
+* External Link count
+* Hyperlink Count
+* Link Comment
+* Related Link Count
+  ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015" 
-- Attachment File Count
-- External Link count
-- Hyperlink Count
-- Link Comment
-- Related Link Count
-::: moniker-end 
+::: moniker range=">= tfs-2013 <= tfs-2015"
 
-For descriptions of each of these fields, see the [table provided later in this article](#table-field). 
+* Attachment File Count
+* External Link count
+* Hyperlink Count
+* Link Comment
+* Related Link Count
+  ::: moniker-end
 
+For descriptions of each of these fields, see the [table provided later in this article](#table-field).
 
-## Supported operators and macros 
+## Supported operators and macros
 
 Query clauses that specify an integer field can use the operators listed below.
-- = , <> , > , < , >= , <= , 
-- =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], 
-- In, Not In, 
-- Was Ever
+
+* = , <> , > , < , >= , <= ,
+* =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field],
+* In, Not In,
+* Was Ever
 
 ## Link or attachment count queries
 
-You can filter for work items by the link type, link count, or attachment count.  
+You can filter for work items by the link type, link count, or attachment count.
 
 <table valign="top">
 <tbody valign="top">
@@ -122,23 +122,21 @@ You can filter for work items by the link type, link count, or attachment count.
 </table>
 
 <!---
-## List work items containing remote links 
+## List work items containing remote links
 -->
-
 
 <a id="tree" />
 
-## List hierarchical items in a tree view  
+## List hierarchical items in a tree view
 
-Add a query and select **Tree of work items** to begin your query. You should see something similar to the following: 
+Add a query and select **Tree of work items** to begin your query. You should see something similar to the following:
 
-![Query editor, new tree of work items query](media/query-link-attach-all-items-tree-query.png)  
+![Query editor, new tree of work items query](media/query-link-attach-all-items-tree-query.png)
 
-> [!NOTE]    
-> You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. You can [view the hierarchy through the Test>Test Plans page](../../test/create-a-test-plan.md). 
+> [!NOTE]  
+> You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. You can [view the hierarchy through the Test>Test Plans page](../../test/create-a-test-plan.md).
 
-From there, you can add additional query clauses or change the Filter options for linked work items. 
-
+From there, you can add additional query clauses or change the Filter options for linked work items.
 
 <table width="100%">
 <tbody valign="top">
@@ -148,13 +146,13 @@ From there, you can add additional query clauses or change the Filter options fo
 </tr>
 <tr>
 <td>View only child items of work item 645<br/></td>
-<td>Add to Filters for top level work items: 
+<td>Add to Filters for top level work items:
 <code>ID  =  645</code><br/></td>
 </tr>
 <tr>
 <td>Tasks or bugs<br/></td>
 <td>
-Add to Filters for linked work items: 
+Add to Filters for linked work items:
 <code>Work Item Type  In  Task,Bug</code><br/></td>
 </tr>
 <tr>
@@ -162,7 +160,7 @@ Add to Filters for linked work items:
 Items assigned to my team (Web)
 </td>
 <td>
-Add to both top and bottom filters: 
+Add to both top and bottom filters:
 <code>Assigned to  In Group  [Fabrikam Fiber]\Web</code><br/></td>
 </tr>
 
@@ -178,42 +176,42 @@ Change Filter options to <strong>Match linked work items first</strong><br/>Add 
 
 <a id="dependents" />
 
-## List items based on linked dependents  
+## List items based on linked dependents
 
 The following example shows a dependent linked query that returns items with dependencies on work managed by other teams and other projects. Use this query to see all dependent work items that link to active Product Backlog Items or Bugs that have not been removed, closed, or completed. Only those dependent work items that are under a product area other than the **Phone Save\\Phone Customers** are returned.
 
-![Work Items and Dependent Links Query](media/example-work-item-queries/IC588290.png)   
+![Work Items and Dependent Links Query](media/example-work-item-queries/IC588290.png)
 
 **Why this works:**
 
-- Removing the <strong>Team Project = @Project</strong> clause enables all dependent linked work items that match the filter criteria to be listed, no matter which project they belong to in the collection.
+* Removing the <strong>Team Project = @Project</strong> clause enables all dependent linked work items that match the filter criteria to be listed, no matter which project they belong to in the collection.
 
-- Grouping each of two clauses returns all **Product Backlog Item**s on the backlog or in progress, and the second grouped clause returns all **Bug**s on the backlog or in progress.
+* Grouping each of two clauses returns all **Product Backlog Item**s on the backlog or in progress, and the second grouped clause returns all **Bug**s on the backlog or in progress.
 
-- Grouping the two clauses with the **OR** operator at the start of the second clause returns work items that match either of the two filter criteria.
+* Grouping the two clauses with the **OR** operator at the start of the second clause returns work items that match either of the two filter criteria.
 
-- Choosing the **Only return items that have the specified links** returns only top-level work items that have dependencies.
+* Choosing the **Only return items that have the specified links** returns only top-level work items that have dependencies.
 
-- Choosing **Return links of any type** returns all linked work items that match the filter criteria for linked work items, in this case, returning all work items that are not under the **Phone Saver\\Phone Customers** area path, and aren't completed or removed.
+* Choosing **Return links of any type** returns all linked work items that match the filter criteria for linked work items, in this case, returning all work items that are not under the **Phone Saver\\Phone Customers** area path, and aren't completed or removed.
 
 The following image shows the query results that are returned.
 
-![Direct links query results](media/example-work-item-queries/IC588291.png)  
+![Direct links query results](media/example-work-item-queries/IC588291.png)
 
 <a id="orphan-stories" />
 
 ## List orphan user stories
 
-If you typically organize your user stories under features, you can quickly find those user stories that are orphan by opening the product backlog, enable Parents On view option,  and scroll down to the section that lists Unparented Stories (Agile) or Unparented Backlog items (Scrum)
+If you typically organize your user stories under features, you can quickly find those user stories that are orphan by opening the product backlog, enable Parents On view option, and scroll down to the section that lists Unparented Stories (Agile) or Unparented Backlog items (Scrum)
 
 > [!div class="mx-imgBorder"]  
-> ![List orphan stories or backlog items](media/link-attachments/list-orphan-stories.png) 
+> ![List orphan stories or backlog items](media/link-attachments/list-orphan-stories.png)
 
 <a id="table-field"/>
 
-## Link and attachment count and comment fields 
+## Link and attachment count and comment fields
 
-The following table describes fields associated with links and attachments. Most of these fields do not appear on the work item forms but are tracked for all work item types. 
+The following table describes fields associated with links and attachments. Most of these fields do not appear on the work item forms but are tracked for all work item types.
 
 <table><thead>
 <tr>
@@ -228,7 +226,7 @@ The following table describes fields associated with links and attachments. Most
 <p>Reference Name=System.AttachedFileCount, Data type=Integer</p>
 
 <blockquote>
-For Azure Boards (cloud service), you can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item.<br/></blockquote> 
+For Azure Boards (cloud service), you can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item.<br/></blockquote>
 </td>
 <td><p>All</p></td>
 </tr>
@@ -271,7 +269,7 @@ For Azure Boards (cloud service), you can add up to 100 attachments to a work it
 <td><a id="parent"/>
 <p>Parent</p></td>
 <td><p>When included as a column option in a backlog or query results list, the Title of the parent work item is displayed. Internally, the system stores the ID of the work item within an Integer field. </p>
-<blockquote>The Parent field is available from Azure DevOps Services only at this time. You can't specify this field within a query clause. </blockquote> 
+<blockquote>The Parent field is available from Azure DevOps Services only at this time. You can't specify this field within a query clause. </blockquote>
 <p>Reference Name=System.Parent, Data type=Integer</p>
 </td>
 <td>All</td>
@@ -294,37 +292,33 @@ For Azure Boards (cloud service), you can add up to 100 attachments to a work it
 </tbody>
 </table>
 
-
 ## Related articles
 
-- [Add a link to multiple work items](../backlogs/add-link.md) 
-- [Linking, traceability, and managing dependencies](link-work-items-support-traceability.md) 
-- [Query quick reference](query-index-quick-ref.md)
-- [Query editor](using-queries.md)   
-- [Query fields, operators, and macros](query-operators-variables.md)   
-- [Add work items](../backlogs/add-work-items.md)  
-- [Work item field index](../work-items/guidance/work-item-field.md) 
+* [Add a link to multiple work items](../backlogs/add-link.md)
+* [Linking, traceability, and managing dependencies](link-work-items-support-traceability.md)
+* [Query quick reference](query-index-quick-ref.md)
+* [Query editor](using-queries.md)
+* [Query fields, operators, and macros](query-operators-variables.md)
+* [Add work items](../backlogs/add-work-items.md)
+* [Work item field index](../work-items/guidance/work-item-field.md)
 
+::: moniker range=">= tfs-2015 <= azure-devops-2019"
 
-::: moniker range=">= tfs-2015 <= azure-devops-2019" 
+### Visualize related work and other objects
 
-### Visualize related work and other objects 
+You can view related work items and object within a work item form by installing the [Work item visualization extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) available from the Visual Studio Marketplace, Azure DevOps tab.
+::: moniker-end
 
-You can view related work items and object within a work item form by installing the [Work item visualization extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) available from the Visual Studio Marketplace, Azure DevOps tab. 
-::: moniker-end 
+::: moniker range=">= tfs-2013 <= azure-devops-2019"
 
-::: moniker range=">= tfs-2013 <= azure-devops-2019" 
+### Add custom link types or customize the links controls
 
-### Add custom link types or customize the links controls 
+To add link types, see [Manage link types [witadmin]](../../reference/witadmin/manage-link-types.md).
 
-To add link types, see [Manage link types [witadmin]](../../reference/witadmin/manage-link-types.md). 
-
-All tabs that support creating links between work items are implemented by using the **LinksControl** element on the work item form. This element controls filtering and restricting the types of work items to which you can link, the types of links that you can create, and whether you can link to work items in another project. To customize the link controls and restrictions, you modify the definition of the `LinksControlOptions` for a work item type, see [LinksControlOptions XML elements](../../reference/xml/linkscontroloptions-xml-elements.md).  
+All tabs that support creating links between work items are implemented by using the **LinksControl** element on the work item form. This element controls filtering and restricting the types of work items to which you can link, the types of links that you can create, and whether you can link to work items in another project. To customize the link controls and restrictions, you modify the definition of the `LinksControlOptions` for a work item type, see [LinksControlOptions XML elements](../../reference/xml/linkscontroloptions-xml-elements.md).
 
 ### Default data fields in lists of links
 
 You can add or remove columns from the list of links, and you can customize the default columns and the column order. For more information, see [LinksControlOptions XML elements](../../reference/xml/linkscontroloptions-xml-elements.md).
 
-::: moniker-end 
-
-
+::: moniker-end

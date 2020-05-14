@@ -11,48 +11,47 @@ ms.date: 05/12/2017
 monikerRange: '>= tfs-2015'
 ---
 
-
-
 # Choosing the right version control for your project
 
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Whether your software project is large or small, using version control as soon as possible is a good idea. Azure Repos supports two types of version control: [Git](../../repos/git/gitquickstart.md)
 and [Team Foundation Version Control](./overview.md) (TFVC).
- 
+
 <a name="tfvc_or_git_summary"></a>
+
 ## Which version control system should I use?
- 
-Git is the default version control provider for new projects. You should use Git for version control in your projects unless you have a specific need for centralized version control features in TFVC.  
+
+Git is the default version control provider for new projects. You should use Git for version control in your projects unless you have a specific need for centralized version control features in TFVC.
 
 You can use TFVC repos with Git in the same Project so it's easy to add TFVC later if you need centralized version control. To setup a new repo type for an existing project [use these instructions](../../repos/git/team-projects.md).
 
 ### Git (distributed)
 
-Git is a distributed version control system. Each developer has a copy of the source repository on their dev machine. Developers can commit each set of changes on their dev machine and perform version control operations such as history and compare without a network connection. Branches are lightweight. When you need to switch contexts, you can create a private local branch. You can quickly switch from one branch to another to pivot among different variations of your codebase. Later, you can merge, publish, or dispose of the branch. 
+Git is a distributed version control system. Each developer has a copy of the source repository on their dev machine. Developers can commit each set of changes on their dev machine and perform version control operations such as history and compare without a network connection. Branches are lightweight. When you need to switch contexts, you can create a private local branch. You can quickly switch from one branch to another to pivot among different variations of your codebase. Later, you can merge, publish, or dispose of the branch.
 
->[!NOTE]
->Git in Visual Studio, Azure DevOps Services, and TFS is standard Git. You can use Visual Studio with third-party Git services, and you can also use third-party Git clients with TFS.
- 
+> [!NOTE]
+> Git in Visual Studio, Azure DevOps Services, and TFS is standard Git. You can use Visual Studio with third-party Git services, and you can also use third-party Git clients with TFS.
+
 To learn more, see [Git and Azure Repos](../../repos/git/index.yml).
 
 ### TFVC (centralized)
- 
+
 Team Foundation Version Control (TFVC) is a centralized version control system. Typically, team members have only one version of each file on their dev machines. Historical data is maintained only on the server. Branches are path-based and created on the server.
 
 TFVC has two [workflow models](decide-between-using-local-server-workspace.md):
 
-  - **Server workspaces** - Before making changes, team members publicly check out files. Most operations require developers to be connected to the server. This system facilitates locking workflows. Other systems that work this way include Visual Source Safe, Perforce, and CVS. With server workspaces, you can scale up to very large codebases with millions of files per branch and large binary files.
+* **Server workspaces** - Before making changes, team members publicly check out files. Most operations require developers to be connected to the server. This system facilitates locking workflows. Other systems that work this way include Visual Source Safe, Perforce, and CVS. With server workspaces, you can scale up to very large codebases with millions of files per branch and large binary files.
 
-  - **Local workspaces** - Each team member takes a copy of the latest version of the codebase with them and works offline as needed. Developers check in their changes and resolve conflicts as necessary. Another system that works this way is Subversion.
+* **Local workspaces** - Each team member takes a copy of the latest version of the codebase with them and works offline as needed. Developers check in their changes and resolve conflicts as necessary. Another system that works this way is Subversion.
 
 To learn more, see [TFVC overview](./overview.md)
- 
+
 <a name="tfvc_or_git_details"></a>
 
 ### Moving from TFVC to Git
 
-If you have existing TFVC repos, you can migrate them to Git repos using the [git-tfs tool](https://github.com/git-tfs/git-tfs). The tool allows you to [migrate a TFVC repo to a Git repo](https://github.com/git-tfs/git-tfs/blob/master/doc/usecases/migrate_tfs_to_git.md) 
+If you have existing TFVC repos, you can migrate them to Git repos using the [git-tfs tool](https://github.com/git-tfs/git-tfs). The tool allows you to [migrate a TFVC repo to a Git repo](https://github.com/git-tfs/git-tfs/blob/master/doc/usecases/migrate_tfs_to_git.md)
 in just a couple of commands.
 
 ## Git and TFVC capabilities
@@ -118,7 +117,7 @@ Need more help to make a choice? These charts might help.
 </tr>
 <tr>
 <td>Tag your files</td>
-<td>You can <a href="use-labels-take-snapshot-your-files.md" data-raw-source="[apply labels](use-labels-take-snapshot-your-files.md)">apply labels</a> to a version of one or more files from either Visual Studio or the command prompt. Each file can have label applied to a different version.</td> 
+<td>You can <a href="use-labels-take-snapshot-your-files.md" data-raw-source="[apply labels](use-labels-take-snapshot-your-files.md)">apply labels</a> to a version of one or more files from either Visual Studio or the command prompt. Each file can have label applied to a different version.</td>
 <td>You can apply tags from the command prompt to individual commits. View tags in the Visual Studio history window.
 </td>
 </tr>
@@ -136,8 +135,7 @@ Need more help to make a choice? These charts might help.
 </tr>
 </table>
 
-
-### Server 
+### Server
 
 <table>
 <thead>
@@ -156,7 +154,7 @@ Need more help to make a choice? These charts might help.
 <td>Alerts</td>
 <td>Team members can <a href="check-your-work-team-codebase.md#subscribe-to-alerts" data-raw-source="[receive email alerts when check-ins occur](check-your-work-team-codebase.md#subscribe-to-alerts)">receive email alerts when check-ins occur</a>.
 </td>
-<td>Team members can receive email alerts when commits are pushed to the server. 
+<td>Team members can receive email alerts when commits are pushed to the server.
 </td>
 </tr>
 <tr>
@@ -198,9 +196,6 @@ Need more help to make a choice? These charts might help.
 </tr>
 </table>
 
-
-
- 
 ### Client
 
 <table>
@@ -219,7 +214,7 @@ Need more help to make a choice? These charts might help.
 <tr>
 <td>Files</td>
 <td>You can browse your files using <a href="use-source-control-explorer-manage-files-under-version-control.md" data-raw-source="[Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md)">Source Control Explorer</a> in Visual Studio, or using Windows File Explorer or the <a href="use-team-foundation-version-control-commands.md" data-raw-source="[command prompt](use-team-foundation-version-control-commands.md)">command prompt</a>.</td>
-<td>You can browse your files using Windows File Explorer or the command prompt. 
+<td>You can browse your files using Windows File Explorer or the command prompt.
 </td>
 </tr>
 <tr>
@@ -238,7 +233,7 @@ Need more help to make a choice? These charts might help.
 <ul>
  <li><strong>Visual Studio:</strong> Offers all commonly used features and many advanced features.</li>
  <li><strong>TFS web portal:</strong> Can browse, comment, annotate, and see history of the codebase.</li>
- <li><strong>TF Command prompt:</strong> Installed with Visual Studio. Used for advanced, administrative, and other less common tasks.</li> 
+ <li><strong>TF Command prompt:</strong> Installed with Visual Studio. Used for advanced, administrative, and other less common tasks.</li>
 </ul>
 </td>
 <td>
@@ -261,7 +256,6 @@ Need more help to make a choice? These charts might help.
 <td>You can browse your codebase, view history, compare branches, annotate and comment on commits, and perform other tasks such as ad hoc downloading of selected parts of your codebase as a .zip file.</td>
 </tr>
 </table>
-
 
 ### Integration and migration
 

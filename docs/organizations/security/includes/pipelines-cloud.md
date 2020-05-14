@@ -2,7 +2,7 @@
 ms.topic: include
 ---
 
-<!--- Updated to support Azure DevOps Services + Azure DevOps Services Build and Release 
+<!--- Updated to support Azure DevOps Services + Azure DevOps Services Build and Release
 
 Administer build permissions
 Delete build pipeline
@@ -135,7 +135,7 @@ View builds
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Create and edit task groups 
+<td align="left">Create and edit task groups
 </td>
 <td><img src="/azure/devops/media/icons/preview.png" alt="preview"/></td>
 <td>  </td>
@@ -155,7 +155,7 @@ View builds
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Can view library items such as variable groups 
+<td align="left">Can view library items such as variable groups
 </td>
 <td><img src="/azure/devops/media/icons/preview.png" alt="preview"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -165,7 +165,7 @@ View builds
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Use and manage library items such as variable groups 
+<td align="left">Use and manage library items such as variable groups
 </td>
 <td><img src="/azure/devops/media/icons/preview.png" alt="preview"/></td>
 <td>  </td>
@@ -176,5 +176,3 @@ View builds
 </tr>
 </tbody>
 </table>
- 
- 

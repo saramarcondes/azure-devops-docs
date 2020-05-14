@@ -16,24 +16,27 @@ ms.date: 08/04/2016
 
 [!INCLUDE [API_version](../_data/version3-preview.md)]
 
-The recycle bin contains all work items that have been deleted.  They can be restored or permanently destroyed.
+The recycle bin contains all work items that have been deleted. They can be restored or permanently destroyed.
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 
 ## Get list of ids for all deleted items in the recycle bin
+
 <a name="getalistofdeleteditemsintherecyclebin" />
 
 ```no-highlight
 GET https://{instance}/DefaultCollection/{project}_apis/wit/recycleBin?api-version={version}
 ```
 
-| Parameter | Type    | Notes
-|:----------|:--------|:------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance  | string  | TFS server name ({server:port}).
-| project   | string  | Project of the deleted work items
+| instance | string | TFS server name ({server:port}).
+| project | string | Project of the deleted work items
 | Query
-| api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
@@ -60,25 +63,26 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/recyclebi
 ]
 ```
 
-
 #### Sample code
 
 * [C# (GetDeleteWorkItems method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/RecycleBinSample.cs#L15)
 
-##	Get a deleted item in the recycle bin
+## Get a deleted item in the recycle bin
 
 ```no-highlight
 GET https://{instance}/DefaultCollection/{project}/_apis/wit/recyclebin/{id}?api-version={version}
 ```
 
-| Parameter | Type    | Notes
-|:----------|:--------|:------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance  | string  | TFS server name ({server:port}).
-| project   | string  | Project of the deleted work items
-| id        | int     | ID of the deleted item
+| instance | string | TFS server name ({server:port}).
+| project | string | Project of the deleted work items
+| id | int | ID of the deleted item
 | Query
-| api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
@@ -96,7 +100,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/recyclebin/72?api-version=1.
   "Project": "Fabrikam-Fiber-Git",
   "DeletedDate": "2015-01-07T18:13:01.807Z",
   "DeletedBy": "Jamal Hartnett <fabrikamfiber4@hotmail.com>",
-  "url": "https://mytfsserver/DefaultCollection/_apis/wit/recycleBin/72?api-version=1.0",
+  "url":
+    "https://mytfsserver/DefaultCollection/_apis/wit/recycleBin/72?api-version=1.0",
   "resource": {
     "id": 72,
     "rev": 1,
@@ -114,26 +119,32 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/recyclebin/72?api-version=1.
       "System.Title": "First Workitem",
       "Microsoft.VSTS.Scheduling.Effort": 8,
       "WEF_6CB513B6E70E43499D9FC94E5BBFB784_Kanban.Column": "New",
-      "System.Description": "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - https://msdn.microsoft.com/library/live/hh826547.aspx"
+      "System.Description":
+        "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - https://msdn.microsoft.com/library/live/hh826547.aspx"
     },
     "_links": {
       "self": {
         "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/72"
       },
       "workItemUpdates": {
-        "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/72/updates"
+        "href":
+          "https://mytfsserver/DefaultCollection/_apis/wit/workItems/72/updates"
       },
       "workItemRevisions": {
-        "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/72/revisions"
+        "href":
+          "https://mytfsserver/DefaultCollection/_apis/wit/workItems/72/revisions"
       },
       "workItemHistory": {
-        "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/72/history"
+        "href":
+          "https://mytfsserver/DefaultCollection/_apis/wit/workItems/72/history"
       },
       "html": {
-        "href": "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=72"
+        "href":
+          "https://mytfsserver/DefaultCollection/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=72"
       },
       "workItemType": {
-        "href": "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Product%20Backlog%20Item"
+        "href":
+          "https://mytfsserver/DefaultCollection/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/_apis/wit/workItemTypes/Product%20Backlog%20Item"
       },
       "fields": {
         "href": "https://mytfsserver/DefaultCollection/_apis/wit/fields"
@@ -144,25 +155,26 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/recyclebin/72?api-version=1.
 }
 ```
 
-
 #### Sample code
 
 * [C# (GetDeleteWorkItem method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/RecycleBinSample.cs#L28)
 
-##	Get multiple deleted items in the recycle bin
+## Get multiple deleted items in the recycle bin
 
 ```no-highlight
 GET https://{instance}/DefaultCollection/{project}/_apis/wit/recyclebin?ids={ids}&api-version={version}
 ```
 
-| Parameter | Type    | Notes
-|:----------|:--------|:------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance  | string  | TFS server name ({server:port}).
-| project   | string  | Project of the deleted work items
-| ids       | string  | A comma-separated list of up to 200 IDs of the deleted work items to get.
+| instance | string | TFS server name ({server:port}).
+| project | string | Project of the deleted work items
+| ids | string | A comma-separated list of up to 200 IDs of the deleted work items to get.
 | Query
-| api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
@@ -207,30 +219,29 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/recyclebi
 ]
 ```
 
-
-
 #### Sample code
 
 * [C# (GetMultipleDeletedWorkItems method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/RecycleBinSample.cs#L41)
 
 ## Restore a work item
+
 <a name="restoreaworkitem" />
 
 ```no-highlight
 PATCH https://{instance}/DefaultCollection/_apis/wit/recyclebin/{id}?api-version={version}
 ```
 
-| Parameter | Type    | Notes
-|:----------|:--------|:------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance  | string  | TFS server name ({server:port}).
-| id        | int     | ID of the deleted item
+| instance | string | TFS server name ({server:port}).
+| id | int | ID of the deleted item
 | Query
-| api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
 | IsDeleted | boolean | Value of the IsDeleted field (should be set to false for restoring work items.
-
-
 
 #### Sample code
 
@@ -249,6 +260,7 @@ POST https://{instance}/DefaultCollection/_apis/wit/$batch
 ```
 POST https://mytfsserver/DefaultCollection/_apis/wit/$batch?api-version=3.0-preview
 ```
+
 ```json
 [
   {
@@ -293,19 +305,20 @@ POST https://mytfsserver/DefaultCollection/_apis/wit/$batch?api-version=3.0-prev
       "headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
-      "body": "{\"id\":403,\"code\":200,\"type\":\"Bug\",\"name\":\"Test bug to be deleted and then restored\",\"project\":\"Fabrikam-Fiber-Git\",\"deletedDate\":\"1/12/2017 1:18:19 AM\",\"deletedBy\":\"Jamal Hartnett <fabrikamfiber4@hotmail.com>\",\"url\":\"https://mytfsserver/DefaultCollection/_apis/wit/workItems/403\"}"
+      "body":
+        "{\"id\":403,\"code\":200,\"type\":\"Bug\",\"name\":\"Test bug to be deleted and then restored\",\"project\":\"Fabrikam-Fiber-Git\",\"deletedDate\":\"1/12/2017 1:18:19 AM\",\"deletedBy\":\"Jamal Hartnett <fabrikamfiber4@hotmail.com>\",\"url\":\"https://mytfsserver/DefaultCollection/_apis/wit/workItems/403\"}"
     },
     {
       "code": 200,
       "headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
-      "body": "{\"id\":404,\"code\":200,\"type\":\"Bug\",\"name\":\"Second work item to be restored\",\"project\":\"Fabrikam-Fiber-Git\",\"deletedDate\":\"1/12/2017 1:18:19 AM\",\"deletedBy\":\"Jamal Hartnett <fabrikamfiber4@hotmail.com>\",\"url\":\"https://mytfsserver/DefaultCollection/_apis/wit/workItems/404\"}"
+      "body":
+        "{\"id\":404,\"code\":200,\"type\":\"Bug\",\"name\":\"Second work item to be restored\",\"project\":\"Fabrikam-Fiber-Git\",\"deletedDate\":\"1/12/2017 1:18:19 AM\",\"deletedBy\":\"Jamal Hartnett <fabrikamfiber4@hotmail.com>\",\"url\":\"https://mytfsserver/DefaultCollection/_apis/wit/workItems/404\"}"
     }
   ]
 }
 ```
-
 
 #### Sample code
 
@@ -317,21 +330,22 @@ POST https://mytfsserver/DefaultCollection/_apis/wit/$batch?api-version=3.0-prev
 DELETE https://{instance}/DefaultCollection/{project}/_apis/wit/recycleBin/{id}?api-version={version}
 ```
 
-| Parameter | Type    | Notes	
-|:----------|:--------|:------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance  | string  | TFS server name ({server:port}).
-| project   | string  | Project of the deleted work items
-| id        | int     | ID of the deleted item
+| instance | string | TFS server name ({server:port}).
+| project | string | Project of the deleted work items
+| id | int | ID of the deleted item
 | Query
-| api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
 ```
 DELETE https://mytfsserver/DefaultCollection/_apis/wit/recyclebin/403?api-version=3.0-preview
 ```
-
 
 #### Sample code
 
@@ -350,6 +364,7 @@ POST https://{instance}/DefaultCollection/_apis/wit/$batch
 ```
 POST https://mytfsserver/DefaultCollection/_apis/wit/$batch?api-version=3.0-preview
 ```
+
 ```json
 [
   {
@@ -384,7 +399,6 @@ POST https://mytfsserver/DefaultCollection/_apis/wit/$batch?api-version=3.0-prev
   ]
 }
 ```
-
 
 #### Sample code
 

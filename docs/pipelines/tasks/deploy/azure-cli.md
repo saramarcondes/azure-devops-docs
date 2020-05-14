@@ -14,28 +14,27 @@ monikerRange: '> tfs-2018'
 
 **Azure Pipelines**
 
-Use this task to run a shell or batch 
+Use this task to run a shell or batch
 script containing Azure CLI commands against an Azure subscription.
 
-This task is used to run Azure CLI commands on 
+This task is used to run Azure CLI commands on
 cross-platform agents running on Linux, macOS, or Windows operating systems.
-
 
 ### What's new in Version 2.0
 
-- Supports running PowerShell and PowerShell Core script
-- PowerShell Core script works with Xplat agents (Windows, Linux or OSX), make sure the agent has PowerShell version 6 or higher
-- PowerShell script works only with Windows agent, make sure the agent has PowerShell version 5 or lower
+* Supports running PowerShell and PowerShell Core script
+* PowerShell Core script works with Xplat agents (Windows, Linux or OSX), make sure the agent has PowerShell version 6 or higher
+* PowerShell script works only with Windows agent, make sure the agent has PowerShell version 5 or lower
 
 ## Prerequisites
 
-- A Microsoft Azure subscription
+* A Microsoft Azure subscription
 
-- [Azure Resource Manager service connection](../../library/connect-to-azure.md) to your Azure account
+* [Azure Resource Manager service connection](../../library/connect-to-azure.md) to your Azure account
 
-- Microsoft hosted agents have Azure CLI pre-installed. However if you are using private agents, [install Azure CLI](https://azure.microsoft.com/documentation/articles/xplat-cli-install/) on the computer(s) that run the build and release agent. 
+* Microsoft hosted agents have Azure CLI pre-installed. However if you are using private agents, [install Azure CLI](https://azure.microsoft.com/documentation/articles/xplat-cli-install/) on the computer(s) that run the build and release agent.
   If an agent is already running on the machine on which the Azure CLI is installed, restart the agent to ensure all the relevant stage variables are updated.
-  
+
 ## Task Inputs
 
 <table>
@@ -117,15 +116,16 @@ Following is an example of a YAML snippet which lists the version of Azure CLI a
 
 ## Related tasks
 
-- [Azure Resource Group Deployment](azure-resource-group-deployment.md)
-- [Azure Cloud Service Deployment](azure-cloud-powershell-deployment.md)
-- [Azure Web App Deployment](azure-rm-web-app-deployment.md)
+* [Azure Resource Group Deployment](azure-resource-group-deployment.md)
+* [Azure Cloud Service Deployment](azure-cloud-powershell-deployment.md)
+* [Azure Web App Deployment](azure-rm-web-app-deployment.md)
 
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
+
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [qa-agents](../../includes/qa-agents.md)]

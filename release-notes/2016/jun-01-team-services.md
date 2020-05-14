@@ -25,8 +25,7 @@ Personalize your Kanban boards by setting filters on users, iterations, work ite
 
 This public API allows users to get the process configuration of a given project. The process configuration contains the following settings:
 
--**TypeFields:** abstractions of customizable fields that are used in the agile tooling. For example, the type of the "Story points" field is "Effort". 
--**Backlog definitions:** define what work item types are on each of the backlogs.
+-**TypeFields:** abstractions of customizable fields that are used in the agile tooling. For example, the type of the "Story points" field is "Effort". -**Backlog definitions:** define what work item types are on each of the backlogs.
 
 This is a frequently requested API from customers building extensions. With this data, an extension can know how to leverage process-specific fields to enable common scenarios in the agile tools (such as changing the activity or effort of a work item, knowing what work items are included at a given backlog level, or determining whether teams are identified by area path or a custom field). The documentation is available here: [/azure/devops/integrate/](/azure/devops/integrate/)
 
@@ -62,8 +61,8 @@ Share code references easily with code links. Just select text in a file and cli
 
 We’re shipping two updates to our API to help you understand and manage the contents of your feeds.
 
-1. New additions to the [Packages API](/azure/devops/integrate/) enable you to get details about all the packages in a feed, about a particular package, and about all the versions of a package. This means you can now retrieve your packages programmatically without using NuGet.
-2. A new [Polling API](/azure/devops/integrate/) lets you check for updates to feeds and the packages in them. This can help you keep tabs on frequently-updated feeds and react to newly-added packages.
+1.  New additions to the [Packages API](/azure/devops/integrate/) enable you to get details about all the packages in a feed, about a particular package, and about all the versions of a package. This means you can now retrieve your packages programmatically without using NuGet.
+2.  A new [Polling API](/azure/devops/integrate/) lets you check for updates to feeds and the packages in them. This can help you keep tabs on frequently-updated feeds and react to newly-added packages.
 
 ## Test
 

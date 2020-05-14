@@ -17,9 +17,8 @@ Defined in vss.d.ts
 
 Extends: [IExtensionContext](../../../VSS/References/VSS_SDK_Interfaces/IExtensionContext.md)
 
-Options passed to the host management service 
+Options passed to the host management service
 
 ### Members
 
 * `registrationId`: string. The registered VSS auth application ID
-

@@ -10,6 +10,6 @@ monikerRange: '>= tfs-2017'
 ms.date: 08/25/2016
 ---
 
-# VSS SDK Reference 
+# VSS SDK Reference
 
 [!INCLUDE [x](../../../../../../../includes/extend/reference/client/api/vss/sdk/vss_sdk/vss.md)]

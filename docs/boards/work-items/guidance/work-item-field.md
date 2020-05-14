@@ -12,48 +12,46 @@ monikerRange: '>= tfs-2013'
 ms.date: 10/03/2019
 ---
 
-# Work item field index  
+# Work item field index
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Use this index to look up a description of each field used to track work items. This reference includes all fields defined within the core system processes/process templates: [Basic](../../get-started/plan-track-work.md), [Agile](agile-process.md), [Scrum](scrum-process.md), and [CMMI](cmmi-process.md). The fields and work item types (WITs) available to you depend on the process you chose when you [created your project](../../../organizations/projects/create-project.md).
 
-::: moniker range="azure-devops"  
+::: moniker range="azure-devops"
 
-To support additional tracking needs, you can [define your own custom work item fields](../../../organizations/settings/work/customize-process.md). 
+To support additional tracking needs, you can [define your own custom work item fields](../../../organizations/settings/work/customize-process.md).
 
-::: moniker-end  
+::: moniker-end
 
-::: moniker range="azure-devops-2019"  
+::: moniker range="azure-devops-2019"
 
-To support additional tracking needs, you can [define your own custom work item fields](../../../organizations/settings/work/customize-process.md) using the Inheritance process model, or if your project collection is configured to use the On-premises XML process model, then see [Modify or add a custom field](../../../reference/add-modify-field.md).  
+To support additional tracking needs, you can [define your own custom work item fields](../../../organizations/settings/work/customize-process.md) using the Inheritance process model, or if your project collection is configured to use the On-premises XML process model, then see [Modify or add a custom field](../../../reference/add-modify-field.md).
 
-::: moniker-end  
+::: moniker-end
 
-::: moniker range="<= tfs-2018"  
+::: moniker range="<= tfs-2018"
 
-To support additional tracking needs, you can [modify or add a custom field](../../../reference/add-modify-field.md). 
+To support additional tracking needs, you can [modify or add a custom field](../../../reference/add-modify-field.md).
 
-::: moniker-end  
+::: moniker-end
 
+::: moniker range=">= azure-devops-2019"
 
-::: moniker range=">= azure-devops-2019"  
+> [!NOTE]  
+> The [Analytics Service](../../../report/powerbi/what-is-analytics.md) doesn't support reporting on plain text and HTML fields at this time.
 
-> [!NOTE]   
-> The [Analytics Service](../../../report/powerbi/what-is-analytics.md) doesn't support reporting on plain text and HTML fields at this time. 
+::: moniker-end
 
-::: moniker-end  
-
-## Alphabetical index 
+## Alphabetical index
 
 Values in parenthesis indicate the following:
 
-- **System**: Core system field assigned to all work item types for all processes  
-- **Agile**: Used only by the [Agile process](agile-process.md)  
-- **CMMI**: Used only by the [CMMI process](cmmi-process.md)  
-- **Scrum**: Used only by the [Scrum process](scrum-process.md)  
-- **TCM**: Used to support Test case management   
-
+* **System**: Core system field assigned to all work item types for all processes
+* **Agile**: Used only by the [Agile process](agile-process.md)
+* **CMMI**: Used only by the [CMMI process](cmmi-process.md)
+* **Scrum**: Used only by the [Scrum process](scrum-process.md)
+* **TCM**: Used to support Test case management
 
 <table>
 <tbody valign="top">
@@ -232,7 +230,7 @@ Values in parenthesis indicate the following:
 <li><a href="cmmi/guidance-requirements-field-reference-cmmi.md" data-raw-source="[User Acceptance Test](cmmi/guidance-requirements-field-reference-cmmi.md)">User Acceptance Test</a> (CMMI)</li>
 <li><a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Value Area](../../queries/planning-ranking-priorities.md)">Value Area</a></li>
 <li><a href="../../queries/history-and-auditing.md" data-raw-source="[Watermark](../../queries/history-and-auditing.md)">Watermark</a> (System)</li>
-<li><a href="../../queries/titles-ids-descriptions.md" data-raw-source="[Work Item Type](../../queries/titles-ids-descriptions.md)">Work Item Type</a> (System) </li> 
+<li><a href="../../queries/titles-ids-descriptions.md" data-raw-source="[Work Item Type](../../queries/titles-ids-descriptions.md)">Work Item Type</a> (System) </li>
 </ul>
 </td>
 </tr>
@@ -241,56 +239,51 @@ Values in parenthesis indicate the following:
 <hr/>
 <br/>
 
+#### Notes:
 
-#### Notes: 
+1.  These fields are available from Azure DevOps Services and TFS 2015.1 or later versions.
+2.  The Comment Count field is available from Azure DevOps Services and TFS 2017 or later versions.
+3.  These fields are available from Azure DevOps Services only at this time.
 
-1. These fields are available from Azure DevOps Services and TFS 2015.1 or later versions. 
-2. The Comment Count field is available from Azure DevOps Services and TFS 2017 or later versions. 
-3. These fields are available from Azure DevOps Services only at this time.
+By using the system fields or other fields you have added to your project collection, you can enable meaningful cross-project reports and queries. In addition, any non-system field that is referenced in the workflow or forms section of the work item type definition must have a **FIELD** element that defines it in the **FIELDS** section of the work item type definition XML file. Also, you must specify any non-system field that you might want to use to generate a query or report in the **FIELDS** section.
 
-By using the system fields or other fields you have added to your project collection, you can enable meaningful cross-project reports and queries. In addition, any non-system field that is referenced in the workflow or forms section of the work item type definition must have a **FIELD** element that defines it in the **FIELDS** section of the work item type definition XML file. Also, you must specify any non-system field that you might want to use to generate a query or report in the **FIELDS** section.  
+## Field reference topics
 
-
-## Field reference topics 
-
-The following articles describe fields that are used in common by several WITs, or those that are functionally specific to just one or a few WITs.  
+The following articles describe fields that are used in common by several WITs, or those that are functionally specific to just one or a few WITs.
 
 ### Fields common to many work types
 
-- [Titles, IDs, and descriptive fields](../../queries/titles-ids-descriptions.md)
-- [History and revision changes](../../queries/history-and-auditing.md)
-- [Areas and iterations](../../../organizations/settings/set-area-paths.md)
-- [Assignments and account-specific fields](../../queries/query-by-workflow-changes.md)
-- [Planning, ranking, and priorities](../../queries/planning-ranking-priorities.md)
-- [Work estimates, activity, and other numeric fields](../../queries/query-numeric.md)
-- [Build and test integration fields](../../queries/build-test-integration.md)
-- [Links and attachment related fields](../../queries/linking-attachments.md) 
+* [Titles, IDs, and descriptive fields](../../queries/titles-ids-descriptions.md)
+* [History and revision changes](../../queries/history-and-auditing.md)
+* [Areas and iterations](../../../organizations/settings/set-area-paths.md)
+* [Assignments and account-specific fields](../../queries/query-by-workflow-changes.md)
+* [Planning, ranking, and priorities](../../queries/planning-ranking-priorities.md)
+* [Work estimates, activity, and other numeric fields](../../queries/query-numeric.md)
+* [Build and test integration fields](../../queries/build-test-integration.md)
+* [Links and attachment related fields](../../queries/linking-attachments.md)
 
 ### Fields used by specific work item types
 
-- [Code Review Request](guidance-code-review-feedback-field-reference.md)
-- [Code Review Response](guidance-code-review-feedback-field-reference.md)
-- [Feedback Request](guidance-code-review-feedback-field-reference.md)
-- [Feedback Response](guidance-code-review-feedback-field-reference.md)
-- [Shared Steps](../../queries/build-test-integration.md)
-- [Test Case](../../queries/build-test-integration.md)
+* [Code Review Request](guidance-code-review-feedback-field-reference.md)
+* [Code Review Response](guidance-code-review-feedback-field-reference.md)
+* [Feedback Request](guidance-code-review-feedback-field-reference.md)
+* [Feedback Response](guidance-code-review-feedback-field-reference.md)
+* [Shared Steps](../../queries/build-test-integration.md)
+* [Test Case](../../queries/build-test-integration.md)
 
 ### Fields used to track CMMI work items
 
-- [Requirements](cmmi/guidance-requirements-field-reference-cmmi.md)
-- [Bugs](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)
-- [Change Requests](cmmi/guidance-change-request-field-reference-cmmi.md)
-- [Issues](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)
-- [Review Meetings](cmmi/guidance-review-meeting-field-reference-cmmi.md)
-- [Risks](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) 
-
+* [Requirements](cmmi/guidance-requirements-field-reference-cmmi.md)
+* [Bugs](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)
+* [Change Requests](cmmi/guidance-change-request-field-reference-cmmi.md)
+* [Issues](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)
+* [Review Meetings](cmmi/guidance-review-meeting-field-reference-cmmi.md)
+* [Risks](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)
 
 ## Related articles
 
-- [About work item fields](../work-item-fields.md)
-- [Create managed queries](../../queries/example-queries.md)
-- [Define a query](../../queries/using-queries.md) 
-- [Choose a process](choose-process.md)  
-- [Reportable fields reference](../../../reference/xml/reportable-fields-reference.md) (on-premises Azure DevOps only)    
-
-
+* [About work item fields](../work-item-fields.md)
+* [Create managed queries](../../queries/example-queries.md)
+* [Define a query](../../queries/using-queries.md)
+* [Choose a process](choose-process.md)
+* [Reportable fields reference](../../../reference/xml/reportable-fields-reference.md) (on-premises Azure DevOps only)

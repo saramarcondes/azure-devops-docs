@@ -11,6 +11,7 @@ author: chcomley
 ms.date: 05/14/2019
 monikerRange: 'azure-devops'
 ---
+
 # Disconnect your organization from Azure Active Directory
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
@@ -29,30 +30,30 @@ For more information about using Azure AD with Azure DevOps, see the [conceptual
 
 Learn about how to [Manage Azure administrators](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).
 
-**What happens to current users?**  Users can migrate everything except work history. They can reconnect Visual Studio subscriptions and have their access levels reassigned to their new identities.
+**What happens to current users?** Users can migrate everything except work history. They can reconnect Visual Studio subscriptions and have their access levels reassigned to their new identities.
 
 > [!IMPORTANT]
 > If you want to connect your organization to a different Azure Active Directory at any time, ensure that any connected organizations are disconnected from the original directory BEFORE you delete that directory. Once a new directory is established, connect your organization to the new directory so users can regain access. Learn more about [connecting your organization to Azure AD](connect-organization-to-azure-ad.md).
 
 ## Disconnect organization from directory
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+1.  Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+2.  Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
     ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
-3. Select **Azure Active Directory**, and then select **Disconnect directory**.
+3.  Select **Azure Active Directory**, and then select **Disconnect directory**.
 
-   ![Organization settings, disconnect directory](media/shared/select-disconnect-directory.png)
+    ![Organization settings, disconnect directory](media/shared/select-disconnect-directory.png)
 
-4. Enter the name of your organization, and then select **Disconnect**.
+4.  Enter the name of your organization, and then select **Disconnect**.
 
-   ![Disconnection confirmation](media/shared/disconnection-confirmation.png)
+    ![Disconnection confirmation](media/shared/disconnection-confirmation.png)
 
-5. Select **Sign out**.
+5.  Select **Sign out**.
 
-   ![Select Sign out](media/shared/sign-out-azure-devops.png)
+    ![Select Sign out](media/shared/sign-out-azure-devops.png)
 
 Your organization is disconnected from Azure AD. Only users with Microsoft accounts can sign in.
 
@@ -65,4 +66,3 @@ For answers to frequently asked questions about connecting to, disconnecting fro
 * [Get a list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md)
 * [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
 * [Frequently asked questions (FAQs) about connecting, disconnecting, or changing your Azure AD](faq-azure-access.md#connect-to-disconnect-from-or-change-azure-ad-connection)
-

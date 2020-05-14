@@ -41,8 +41,8 @@ A couple of weeks ago we [announced](https://blogs.msdn.com/b/bharry/archive/201
 
 Part of today’s rollout is support for basic authentication which enables two important new scenarios:
 
-1. Using the Team Explorer Everywhere command line with Team Foundation Service. You will need to download the latest TEE client to get this to work (we had to make a recent bug fix for basic auth).
-2. Using Git-tf with Team Foundation Service.
+1.  Using the Team Explorer Everywhere command line with Team Foundation Service. You will need to download the latest TEE client to get this to work (we had to make a recent bug fix for basic auth).
+2.  Using Git-tf with Team Foundation Service.
 
 To enable basic auth for your account, you need to create alternate credentials. Unfortunately, we can’t use your LiveID credentials with basic auth. These credentials will not replace your LiveID credentials. You will still log into the service with your LiveID and most tools you connect with will use LiveID. The reason for the alternate basic auth credentials is that LiveID requires an interactive web page login and there are scenarios where that is not an appropriate solution. The alternate credentials give us a simple username/password pair that can be used in the appropriate scenarios (like Git-tf and the TEE command line). To enable alternate credentials, you need to edit your user profile.
 

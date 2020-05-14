@@ -28,6 +28,7 @@ The build/release task SDK documentation is [on GitHub](https://github.com/Micro
 Specifically, you may be interested in the [task.json schema](https://github.com/Microsoft/azure-pipelines-task-lib/blob/master/tasks.schema.json).
 
 ## Bundle multiple versions of build/release tasks within one extension
+
 You can now include multiple versions of a build or release task in your extension. This can be helpful if you want to roll out
 future versions of your extension without interrupting service of users running older versions. The table below shows the layout for having
 multiple versions in one extension.
@@ -37,36 +38,33 @@ multiple versions in one extension.
 * extensionManifest.json
 * extensionIcon.png
 * Task1
-    * task.json
-    * icon.png
-    * taskScript.ps1
+  * task.json
+  * icon.png
+  * taskScript.ps1
 
 ### Multiple version layout
 
 * extensionManifest.json
 * extensionIcon.png
 * Task1
-    * Task1V1
-        * task.json
-        * icon.png
-        * taskScript.ps1
-    * Task1V2
-        * task.json
-        * icon.png
-        * taskScript.ps1    
+  * Task1V1
+    * task.json
+    * icon.png
+    * taskScript.ps1
+  * Task1V2
+    * task.json
+    * icon.png
+    * taskScript.ps1
 * Task2
-    * Task2V1
-        * task.json
-        * icon.png
-        * taskScript.ps1
-    * Task2V2
-        * task.json
-        * icon.png
-        * taskScript.ps1
-                    
+  * Task2V1
+    * task.json
+    * icon.png
+    * taskScript.ps1
+  * Task2V2
+    * task.json
+    * icon.png
+    * taskScript.ps1
 
->[!NOTE]
->The code looks for the `task.json` file inside the task folder. If one is not found, it looks just *one* level deeper.
->An error is thrown if one is not found in either level.
-
-
+> [!NOTE]
+> The code looks for the `task.json` file inside the task folder. If one is not found, it looks just _one_ level deeper.
+> An error is thrown if one is not found in either level.

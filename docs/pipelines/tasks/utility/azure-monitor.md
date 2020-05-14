@@ -38,14 +38,14 @@ None
 
 ## Arguments
 
-| Parameter | Comments |
-| --- | --- |
-| **Azure subscription** | Required. Select an Azure Resource Manager service connection. |
-| **Resource group** | Required. The resource group being monitored in the subscription. |
-| **Resource type** | Required. Select the resource type in the selected group. |
-| **Resource name** | Required. Select the resources of the chosen types in the selected group. |
-| **Alert rules** | Required. Select from the currently configured alert rules to query for status. |
-| **Control options** | See [Control options](../../process/tasks.md#controloptions) |
+| Parameter              | Comments                                                                        |
+| ---------------------- | ------------------------------------------------------------------------------- |
+| **Azure subscription** | Required. Select an Azure Resource Manager service connection.                  |
+| **Resource group**     | Required. The resource group being monitored in the subscription.               |
+| **Resource type**      | Required. Select the resource type in the selected group.                       |
+| **Resource name**      | Required. Select the resources of the chosen types in the selected group.       |
+| **Alert rules**        | Required. Select from the currently configured alert rules to query for status. |
+| **Control options**    | See [Control options](../../process/tasks.md#controloptions)                    |
 
 Succeeds if none of the alert rules are activated at the time of sampling.
 

@@ -15,16 +15,14 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Paths to server resources 
+Paths to server resources
 
 ### Members
 
-* `resourcesPath`: string. Relative path to the _content path of the web application
+* `resourcesPath`: string. Relative path to the \_content path of the web application
 
 * `rootPath`: string. Relative path to the root of the web application
 
 * `staticRoot3rdParty`: string. Relative path to unversioned 3rd party static content
 
 * `staticRootTfs`: string. Relative path to versioned static content
-

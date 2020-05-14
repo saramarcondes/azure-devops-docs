@@ -15,8 +15,7 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Context passed to GetServiceInstance 
+Context passed to GetServiceInstance
 
 ### Members
 
@@ -24,6 +23,5 @@ Context passed to GetServiceInstance
 
 * `extensionContext`: [IExtensionContext](../../../VSS/References/VSS_SDK_Interfaces/IExtensionContext.md). The extension context, i.e. publisher id, extension id, etc.
 
-* `hostManagementServiceOptions`: [IHostManagementServiceOptions](../../../VSS/References/VSS_SDK_Interfaces/IHostManagementServiceOptions.md). Options that were passed to the host management service, 
-contains the registered VSS auth application ID
-
+* `hostManagementServiceOptions`: [IHostManagementServiceOptions](../../../VSS/References/VSS_SDK_Interfaces/IHostManagementServiceOptions.md). Options that were passed to the host management service,
+  contains the registered VSS auth application ID

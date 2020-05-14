@@ -15,8 +15,7 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Specifies a constraint that can be used to dynamically include/exclude a given contribution 
+Specifies a constraint that can be used to dynamically include/exclude a given contribution
 
 ### Members
 
@@ -27,4 +26,3 @@ Specifies a constraint that can be used to dynamically include/exclude a given c
 * `name`: string. Name of the IContributionFilter class
 
 * `properties`: any. Properties that are fed to the contribution filter class
-

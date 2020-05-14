@@ -18,7 +18,7 @@ ms.date: 08/24/2016
 
 ## Getting Started
 
-If this is your first time using the REST APIs or .NET libraries, check out the [getting started sample](../../get-started/rest/samples.md) first. 
+If this is your first time using the REST APIs or .NET libraries, check out the [getting started sample](../../get-started/rest/samples.md) first.
 
 All sample source code is located at [our GitHub repo](https://github.com/Microsoft/vsts-restapi-samplecode).
 
@@ -39,7 +39,7 @@ using Newtonsoft.Json;
 
 ...
 
-public class WebApiTeams 
+public class WebApiTeams
 {
     public WebApiTeam[] value { get; set; }
     public int count { get; set; }
@@ -55,12 +55,12 @@ public class WebApiTeam
 }
 
 public void GetTeams()
-{   
+{
     string _personalAccessToken = "your personal access token";
     string _credentials = Convert.ToBase64String(System.Text.ASCIIEncoding.ASCII.GetBytes(string.Format("{0}:{1}", "", _personalAccessToken)));
     string _project = "My project name";
-      
-    //use the httpclient        
+
+    //use the httpclient
     using (var client = new HttpClient())
     {
         //set our headers
@@ -71,14 +71,13 @@ public void GetTeams()
 
         //send the request and content
         HttpResponseMessage response = client.GetAsync("_apis/projects/" + _project + "/teams?api-version=2.2").Result;
-        
+
         if (response.IsSuccessStatusCode)
         {
-            WebApiTeams teams = response.Content.ReadAsAsync<WebApiTeams>().Result;       
-        }             
+            WebApiTeams teams = response.Content.ReadAsAsync<WebApiTeams>().Result;
+        }
     }
 }
-
 ```
 
 ### Get Team
@@ -104,13 +103,13 @@ public class WebApiTeam
 }
 
 public void GetTeam()
-{   
+{
     string _personalAccessToken = "your personal access token";
     string _credentials = Convert.ToBase64String(System.Text.ASCIIEncoding.ASCII.GetBytes(string.Format("{0}:{1}", "", _personalAccessToken)));
     string _project = "My project name";
     string _team = "My team";
-      
-    //use the httpclient        
+
+    //use the httpclient
     using (var client = new HttpClient())
     {
         //set our headers
@@ -121,14 +120,13 @@ public void GetTeam()
 
         //send the request and content
         HttpResponseMessage response = client.GetAsync("_apis/projects/" + _project + "/teams/" + _team + "?api-version=2.2").Result;
-        
+
         if (response.IsSuccessStatusCode)
         {
-            WebApiTeam team = response.Content.ReadAsAsync<WebApiTeam>().Result;       
-        }             
+            WebApiTeam team = response.Content.ReadAsAsync<WebApiTeam>().Result;
+        }
     }
 }
-
 ```
 
 ### Get Team Members
@@ -160,13 +158,13 @@ public class Member
 }
 
 public void GetTeamMembers()
-{   
+{
     string _personalAccessToken = "your personal access token";
     string _credentials = Convert.ToBase64String(System.Text.ASCIIEncoding.ASCII.GetBytes(string.Format("{0}:{1}", "", _personalAccessToken)));
     string _project = "My project name";
     string _team = "My team";
-      
-    //use the httpclient        
+
+    //use the httpclient
     using (var client = new HttpClient())
     {
         //set our headers
@@ -177,14 +175,13 @@ public void GetTeamMembers()
 
         //send the request and content
         HttpResponseMessage response = client.GetAsync("_apis/projects/" + _project + "/teams/" + _team + "/members?api-version=2.2").Result;
-        
+
         if (response.IsSuccessStatusCode)
         {
-            Members members = response.Content.ReadAsAsync<Members>().Result;       
-        }             
+            Members members = response.Content.ReadAsAsync<Members>().Result;
+        }
     }
 }
-
 ```
 
 ### Create New Team
@@ -210,10 +207,10 @@ public class WebApiTeam
 }
 
 public void CreateTeam()
-{   
+{
     string _personalAccessToken = "your personal access token";
     string _credentials = Convert.ToBase64String(System.Text.ASCIIEncoding.ASCII.GetBytes(string.Format("{0}:{1}", "", _personalAccessToken)));
-    string _project = "My project name"; 
+    string _project = "My project name";
 
     //create a team object to save
     Object teamData = new { name = "My new team" };
@@ -224,7 +221,7 @@ public void CreateTeam()
         client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
         client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", _credentials);
 
-        // serialize the fields array into a json string         
+        // serialize the fields array into a json string
         var patchValue = new StringContent(JsonConvert.SerializeObject(teamData), Encoding.UTF8, "application/json"); // mediaType needs to be application/json-patch+json for a patch call
         var method = new HttpMethod("POST");
 
@@ -233,11 +230,10 @@ public void CreateTeam()
 
         if (response.IsSuccessStatusCode)
         {
-            WebApiTeam teamResponse = response.Content.ReadAsAsync<WebApiTeam>().Result;            
+            WebApiTeam teamResponse = response.Content.ReadAsAsync<WebApiTeam>().Result;
         }
     }
 }
-
 ```
 
 ### Update Existing Team
@@ -263,11 +259,11 @@ public class WebApiTeam
 }
 
 public void UpdateTeam()
-{   
+{
     string _personalAccessToken = "your personal access token";
     string _credentials = Convert.ToBase64String(System.Text.ASCIIEncoding.ASCII.GetBytes(string.Format("{0}:{1}", "", _personalAccessToken)));
-    
-    string _project = "My project name"; 
+
+    string _project = "My project name";
     string _team = "My team";
 
     //create a team object to save
@@ -279,7 +275,7 @@ public void UpdateTeam()
         client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
         client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", _credentials);
 
-        // serialize the fields array into a json string         
+        // serialize the fields array into a json string
         var patchValue = new StringContent(JsonConvert.SerializeObject(team), Encoding.UTF8, "application/json"); // mediaType needs to be application/json-patch+json for a patch call
         var method = new HttpMethod("PATCH");
 
@@ -288,11 +284,10 @@ public void UpdateTeam()
 
         if (response.IsSuccessStatusCode)
         {
-            WebApiTeam teamResponse = response.Content.ReadAsAsync<WebApiTeam>().Result;     
+            WebApiTeam teamResponse = response.Content.ReadAsAsync<WebApiTeam>().Result;
         }  
-    }    
+    }
 }
-
 ```
 
 ### Delete Team
@@ -309,10 +304,10 @@ using Newtonsoft.Json;
 ....
 
 public void DeleteTeam()
-{   
+{
     string _personalAccessToken = "your personal access token";
     string _credentials = Convert.ToBase64String(System.Text.ASCIIEncoding.ASCII.GetBytes(string.Format("{0}:{1}", "", _personalAccessToken)));
-    string _project = "My project name"; 
+    string _project = "My project name";
     string _team = "My team";
 
     using (var client = new HttpClient())
@@ -324,10 +319,9 @@ public void DeleteTeam()
         var method = new HttpMethod("DELETE");
 
         var request = new HttpRequestMessage(method, "https://accountname.visualstudio.com/_apis/projects/" + _project + "/teams/" + _team + "?api-version=2.2");
-        var response = client.SendAsync(request).Result;        
+        var response = client.SendAsync(request).Result;
     }
 }
-
 ```
 
 ## .NET Client Libraries Samples
@@ -347,17 +341,16 @@ public GetTeams()
 {
     //create uri and VssBasicCredential variables
     Uri _uri = new Uri("https://accountname.visualstudio.com");
-    string _personalAccessToken = "your personal access token";    
+    string _personalAccessToken = "your personal access token";
     VssBasicCredential _credentials = new VssBasicCredential("", _personalAccessToken);
-   
+
     string _project = "My project name";
-    
+
     using (TeamHttpClient teamHttpClient = new TeamHttpClient(_uri, _credentials))
     {
-        IEnumerable<WebApiTeam> results = teamHttpClient.GetTeamsAsync(_project).Result;     
+        IEnumerable<WebApiTeam> results = teamHttpClient.GetTeamsAsync(_project).Result;
     }
 }
-
 ```
 
 ### Get Team
@@ -375,18 +368,17 @@ public GetTeam()
 {
     //create uri and VssBasicCredential variables
     Uri _uri = new Uri("https://accountname.visualstudio.com");
-    string _personalAccessToken = "your personal access token";    
+    string _personalAccessToken = "your personal access token";
     VssBasicCredential _credentials = new VssBasicCredential("", _personalAccessToken);
-    
+
     string _project = "My project name";
     string _team = "My team";
-    
+
     using (TeamHttpClient teamHttpClient = new TeamHttpClient(_uri, _credentials))
     {
-        WebApiTeam result = teamHttpClient.GetTeamAsync(_project, _team).Result;     
+        WebApiTeam result = teamHttpClient.GetTeamAsync(_project, _team).Result;
     }
 }
-
 ```
 
 ### Get Team Members
@@ -404,18 +396,17 @@ public GetTeamMembers()
 {
     //create uri and VssBasicCredential variables
     Uri _uri = new Uri("https://accountname.visualstudio.com");
-    string _personalAccessToken = "your personal access token";    
-    VssBasicCredential _credentials = new VssBasicCredential("", _personalAccessToken);    
-    
+    string _personalAccessToken = "your personal access token";
+    VssBasicCredential _credentials = new VssBasicCredential("", _personalAccessToken);
+
     string _project = "My project name";
     string _team = "My team"
 
     using (TeamHttpClient teamHttpClient = new TeamHttpClient(_uri, _credentials))
     {
-        IEnumerable<IdentityRef> results = teamHttpClient.GetTeamMembersAsync(_project, _team).Result;               
+        IEnumerable<IdentityRef> results = teamHttpClient.GetTeamMembersAsync(_project, _team).Result;
     }
 }
-
 ```
 
 ### Create New Team
@@ -433,11 +424,11 @@ public CreateTeam()
 {
     //create uri and VssBasicCredential variables
     Uri _uri = new Uri("https://accountname.visualstudio.com");
-    string _personalAccessToken = "your personal access token";    
+    string _personalAccessToken = "your personal access token";
     VssBasicCredential _credentials = new VssBasicCredential("", _personalAccessToken);
-    
+
     string _project = "My project name";
-  
+
     WebApiTeam teamData = new WebApiTeam()
     {
         Name = "My new team"
@@ -448,9 +439,7 @@ public CreateTeam()
         WebApiTeam result = teamHttpClient.CreateTeamAsync(teamData, _project).Result;
     }
 }
-
 ```
-
 
 ### Update Existing Team
 
@@ -467,12 +456,12 @@ public UpdateTeam()
 {
     //create uri and VssBasicCredential variables
     Uri _uri = new Uri("https://accountname.visualstudio.com");
-    string _personalAccessToken = "your personal access token";    
+    string _personalAccessToken = "your personal access token";
     VssBasicCredential _credentials = new VssBasicCredential("", _personalAccessToken);
-    
+
     string _project = "My project name";
     string _team = "My team";
-  
+
     WebApiTeam teamData = new WebApiTeam()
     {
         Name = "My updated team",
@@ -484,7 +473,6 @@ public UpdateTeam()
         WebApiTeam result = teamHttpClient.UpdateTeamAsync(teamData, _project, _team).Result;
     }
 }
-
 ```
 
 ### Delete Team
@@ -502,9 +490,9 @@ public DeleteTeam()
 {
     //create uri and VssBasicCredential variables
     Uri _uri = new Uri("https://accountname.visualstudio.com");
-    string _personalAccessToken = "your personal access token";    
+    string _personalAccessToken = "your personal access token";
     VssBasicCredential _credentials = new VssBasicCredential("", _personalAccessToken);
-    
+
     string _project = "My project name";
     string _team = "My team";  
 
@@ -513,7 +501,6 @@ public DeleteTeam()
         WebApiTeam result = teamHttpClient.DeleteTeamAsync(_project, _team).SyncResult();
     }
 }
-
 ```
 
 > Are there scenarios or samples that you would like us to provide? If so make a new suggestion on our [github project](https://github.com/Microsoft/vsts-restapi-samplecode/issues/new).
@@ -528,8 +515,4 @@ A: See the [https://github.com/Microsoft/vsts-restapi-samplecode](https://github
 
 A: Yes, see the [overview of client libraries](../../get-started/client-libraries/dotnet.md)
 
-
-<!-- ENDSECTION --> 
-
-
-
+<!-- ENDSECTION -->

@@ -39,15 +39,15 @@ With this week’s deployment you now can perform a SonarQube analysis simply by
 
 And finally, we’ve turned on a preview of our new work item experience that we’d like you to try out. The new form doesn’t just bring a new look and feel, but is one of the key building blocks toward:
 
-- Work item customization, including states, fields, and types
-- A rich work item discussion experience
-- Improved code and build integration
+* Work item customization, including states, fields, and types
+* A rich work item discussion experience
+* Improved code and build integration
 
 ![New work item form (preview)](media/10_8_04.png)
 
 Over the next few weeks we’ll be blogging about more of the upcoming changes; in the meantime we’d love to hear from you about your initial reaction to the new form. Know that we’ve already heard from early adopters that data density needs to be improved, so look for that to come very soon. As you’re evaluating for yourself, you can switch back and forth to the old form by clicking the ellipsis (…) in the command bar.
 
-Please reach out on [Twitter]((https://twitter.com/AzureDevOps)  if you have thoughts, comments, or questions about anything described here. And please help us prioritize by heading over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to add your idea or vote for an existing one.
+Please reach out on [Twitter]((https://twitter.com/AzureDevOps) if you have thoughts, comments, or questions about anything described here. And please help us prioritize by heading over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to add your idea or vote for an existing one.
 
 Thanks,
 

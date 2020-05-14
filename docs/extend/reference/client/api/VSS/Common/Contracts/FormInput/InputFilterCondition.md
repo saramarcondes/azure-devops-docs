@@ -14,7 +14,6 @@ ms.date: 08/04/2016
 
 Module path: `VSS/Common/Contracts/FormInput`
 
-
 ### Members
 
 * `caseSensitive`: boolean. Whether or not to do a case sensitive match
@@ -24,4 +23,3 @@ Module path: `VSS/Common/Contracts/FormInput`
 * `inputValue`: string. The &quot;expected&quot; input value to compare with the actual input value
 
 * `operator`: [InputFilterOperator](../../../../VSS/Common/Contracts/FormInput/InputFilterOperator.md). The operator applied between the expected and actual input value
-

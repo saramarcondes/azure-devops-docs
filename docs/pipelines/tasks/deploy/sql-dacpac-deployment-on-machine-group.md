@@ -45,7 +45,6 @@ Use this task to deploy to SQL Server Database using a DACPAC or SQL script.
 <tr><td>Additional Arguments</td><td>(Optional) Additional SqlPackage.exe arguments that will be applied when deploying the SQL Server database like, /p:IgnoreAnsiNulls=True /p:IgnoreComments=True. These arguments will override the settings in the Publish profile XML file (if provided).</td></tr>
 <tr><td>Additional Arguments</td><td>(Optional) Additional Invoke-Sqlcmd arguments that will be applied when deploying the SQL Server database.</td></tr>
 
-
 <tr>
 <th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
 </tr>

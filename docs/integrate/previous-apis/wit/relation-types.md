@@ -22,18 +22,21 @@ but especially [links between two work items](https://msdn.microsoft.com/library
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 
 ## Get a list of relation types
+
 <a name="getalistofrelationtypes" />
 
 ```no-highlight
 GET https://{instance}/DefaultCollection/_apis/wit/workItemRelationTypes?api-version={version}
 ```
 
-| Property  	| Type 		| Description 
-|:--------------|:----------|:---------------------------
+| Property | Type | Description |
+| :------- | :--- | :---------- |
+
+
 | URL
-| instance      | string    | TFS server name ({server:port}).
+| instance | string | TFS server name ({server:port}).
 | Query
-| api-version   | string    | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
@@ -57,9 +60,11 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitemrelationtypes?api-ve
         "singleTarget": true,
         "topology": "dependency"
       },
-      "referenceName": "Microsoft.VSTS.TestCase.SharedParameterReferencedBy-Forward",
+      "referenceName":
+        "Microsoft.VSTS.TestCase.SharedParameterReferencedBy-Forward",
       "name": "Referenced By",
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/Microsoft.VSTS.TestCase.SharedParameterReferencedBy-Forward"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/Microsoft.VSTS.TestCase.SharedParameterReferencedBy-Forward"
     },
     {
       "attributes": {
@@ -71,9 +76,11 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitemrelationtypes?api-ve
         "singleTarget": true,
         "topology": "dependency"
       },
-      "referenceName": "Microsoft.VSTS.TestCase.SharedParameterReferencedBy-Reverse",
+      "referenceName":
+        "Microsoft.VSTS.TestCase.SharedParameterReferencedBy-Reverse",
       "name": "References",
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/Microsoft.VSTS.TestCase.SharedParameterReferencedBy-Reverse"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/Microsoft.VSTS.TestCase.SharedParameterReferencedBy-Reverse"
     },
     {
       "attributes": {
@@ -87,7 +94,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitemrelationtypes?api-ve
       },
       "referenceName": "Microsoft.VSTS.Common.TestedBy-Forward",
       "name": "Tested By",
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/Microsoft.VSTS.Common.TestedBy-Forward"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/Microsoft.VSTS.Common.TestedBy-Forward"
     },
     {
       "attributes": {
@@ -101,7 +109,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitemrelationtypes?api-ve
       },
       "referenceName": "Microsoft.VSTS.Common.TestedBy-Reverse",
       "name": "Tests",
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/Microsoft.VSTS.Common.TestedBy-Reverse"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/Microsoft.VSTS.Common.TestedBy-Reverse"
     },
     {
       "attributes": {
@@ -115,7 +124,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitemrelationtypes?api-ve
       },
       "referenceName": "Microsoft.VSTS.TestCase.SharedStepReferencedBy-Forward",
       "name": "Test Case",
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/Microsoft.VSTS.TestCase.SharedStepReferencedBy-Forward"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/Microsoft.VSTS.TestCase.SharedStepReferencedBy-Forward"
     },
     {
       "attributes": {
@@ -129,7 +139,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitemrelationtypes?api-ve
       },
       "referenceName": "Microsoft.VSTS.TestCase.SharedStepReferencedBy-Reverse",
       "name": "Shared Steps",
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/Microsoft.VSTS.TestCase.SharedStepReferencedBy-Reverse"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/Microsoft.VSTS.TestCase.SharedStepReferencedBy-Reverse"
     },
     {
       "attributes": {
@@ -143,7 +154,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitemrelationtypes?api-ve
       },
       "referenceName": "System.LinkTypes.Dependency-Forward",
       "name": "Successor",
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/System.LinkTypes.Dependency-Forward"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/System.LinkTypes.Dependency-Forward"
     },
     {
       "attributes": {
@@ -157,7 +169,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitemrelationtypes?api-ve
       },
       "referenceName": "System.LinkTypes.Dependency-Reverse",
       "name": "Predecessor",
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/System.LinkTypes.Dependency-Reverse"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/System.LinkTypes.Dependency-Reverse"
     },
     {
       "attributes": {
@@ -171,7 +184,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitemrelationtypes?api-ve
       },
       "referenceName": "System.LinkTypes.Hierarchy-Forward",
       "name": "Child",
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/System.LinkTypes.Hierarchy-Forward"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/System.LinkTypes.Hierarchy-Forward"
     },
     {
       "attributes": {
@@ -185,7 +199,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitemrelationtypes?api-ve
       },
       "referenceName": "System.LinkTypes.Hierarchy-Reverse",
       "name": "Parent",
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/System.LinkTypes.Hierarchy-Reverse"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/System.LinkTypes.Hierarchy-Reverse"
     },
     {
       "attributes": {
@@ -199,7 +214,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitemrelationtypes?api-ve
       },
       "referenceName": "System.LinkTypes.Related",
       "name": "Related",
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/System.LinkTypes.Related"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/System.LinkTypes.Related"
     },
     {
       "attributes": {
@@ -209,7 +225,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitemrelationtypes?api-ve
       },
       "referenceName": "AttachedFile",
       "name": "Attached File",
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/AttachedFile"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/AttachedFile"
     },
     {
       "attributes": {
@@ -219,7 +236,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitemrelationtypes?api-ve
       },
       "referenceName": "Hyperlink",
       "name": "Hyperlink",
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/Hyperlink"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/Hyperlink"
     },
     {
       "attributes": {
@@ -229,13 +247,12 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitemrelationtypes?api-ve
       },
       "referenceName": "ArtifactLink",
       "name": "Artifact Link",
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/ArtifactLink"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/ArtifactLink"
     }
   ]
 }
 ```
-
-
 
 ## Get a relation type
 
@@ -243,13 +260,15 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitemrelationtypes?api-ve
 GET https://{instance}/DefaultCollection/_apis/wit/workItemRelationTypes/{name}?api-version={version}
 ```
 
-| Property  	| Type 		| Description 
-|:--------------|:----------|:---------------------------
+| Property | Type | Description |
+| :------- | :--- | :---------- |
+
+
 | URL
-| instance      | string    | TFS server name ({server:port}).
-| name          | string    | The name of the relationship.
+| instance | string | TFS server name ({server:port}).
+| name | string | The name of the relationship.
 | Query
-| api-version   | string    | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
@@ -272,7 +291,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitemrelationtypes/System
   },
   "referenceName": "System.LinkTypes.Related",
   "name": "Related",
-  "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/System.LinkTypes.Related"
+  "url":
+    "https://mytfsserver/DefaultCollection/_apis/wit/workItemRelationTypes/System.LinkTypes.Related"
 }
 ```
-

@@ -10,6 +10,7 @@ author: KathrynEE
 ms.date: 12/01/2016
 monikerRange: '<= tfs-2017'
 ---
+
 # Git permissions prior to TFS 2017 Update 1
 
 [!INCLUDE [version-tfs-2013-2017](../../includes/version-tfs-2013-2017.md)]
@@ -21,13 +22,13 @@ Those using TFS 2017 Update 1 or Azure DevOps should see the [latest list of per
 These permissions appear only for a project including a Git repository.
 
 > [!div class="mx-imgBorder"]  
-> ![Git repository permissions dialog, prior to TFS 2017.1](media/permissions/git-permissions-prior-to-2017.png)  
+> ![Git repository permissions dialog, prior to TFS 2017.1](media/permissions/git-permissions-prior-to-2017.png)
 
-Set permissions across all Git repositories by making changes to the top-level **Git repositories** entry.  
+Set permissions across all Git repositories by making changes to the top-level **Git repositories** entry.
 
-Individual repositories inherit permissions from the top-level **Git Repositories** entry.     
+Individual repositories inherit permissions from the top-level **Git Repositories** entry.
 
-Branches inherit permissions from assignments made at the repository level.   
+Branches inherit permissions from assignments made at the repository level.
 
 By default, the project level Readers groups have only Read permissions.
 
@@ -45,7 +46,7 @@ By default, the project level Readers groups have only Read permissions.
 			At the branch level, users can set permissions for the branch and unlock the branch.
 			<blockquote>
 				<b>TFS 2013, TFS 2015</b>: The Administer permission set on a individual Git repository does not grant the ability to rename or delete the repository. These tasks require
-                Administer permissions at the top-level <strong>Git repositories</strong> entry. 
+                Administer permissions at the top-level <strong>Git repositories</strong> entry.
 			</blockquote>
 		</td>
 	</tr>
@@ -62,7 +63,7 @@ By default, the project level Readers groups have only Read permissions.
 	<tr>
 		<td id="git-contribute-permission">Contribute</td>
 		<td>
-            At the repository level, can push their changes to branches in the repository. Does not override restrictions in place from <a href="../../repos/git/branch-policies.md" data-raw-source="[branch policies](../../repos/git/branch-policies.md)">branch policies</a>. 
+            At the repository level, can push their changes to branches in the repository. Does not override restrictions in place from <a href="../../repos/git/branch-policies.md" data-raw-source="[branch policies](../../repos/git/branch-policies.md)">branch policies</a>.
 			At the branch level, can push their changes to the branch and lock the branch.
 		</td>
 	</tr>

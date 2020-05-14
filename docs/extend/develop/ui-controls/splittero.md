@@ -23,15 +23,15 @@ This page shows different samples about the splitter control.
 ## Splitter enhancement
 
 Unlike other controls, it is more convenient to instantiate splitter control on an existing markup since splitter is a container control. Otherwise, it would be difficult to fill left and right panes programmatically.
- 
+
 There is a technic called enhancement which converts an existing html to a control. It is basically similar to what `Controls.create` does but instead of creating a new DOM element and associating it with the control, enhancement uses an existing element in the DOM tree.
 
 Below sample shows a typical usage of splitter control.
 
-``` html
+```html
 	<button id="expand">Expand</button>
 	<button id="collapse">Collapse</button>
-	
+
 	<div class="my-splitter horizontal splitter">
 		<div class="leftPane">
 			Left pane content
@@ -43,31 +43,32 @@ Below sample shows a typical usage of splitter control.
 	</div>
 ```
 
-``` css
-	.my-splitter {
-		margin: 10px;
-		border: 5px solid gray;
-		width:600px;
-		height: 400px;	
-	}
+```css
+.my-splitter {
+  margin: 10px;
+  border: 5px solid gray;
+  width: 600px;
+  height: 400px;
+}
 ```
 
 See how enhance is used below instead of `Controls.create`.
-``` javascript
+
+```javascript
 	import Controls = require("VSS/Controls");
 	import Splitter = require("VSS/Controls/Splitter");
-	
+
 	var splitter = <Splitter.Splitter>Controls.Enhancement.enhance(Splitter.Splitter, $(".my-splitter"));
-	
+
 	$("#expand").click(()=> { splitter.expand(); });
 	$("#collapse").click(()=> { splitter.collapse(); });
 ```
 
 ### Splitter Toggle Button via Enhancement
 
-In the sample above the ```#expand``` and ```#collapse``` buttons are used to expand or collapse the Splitter control. However the Splitter control can include built-in toggle to expand or collapse the splitter and provide a label for the collapsed pane.
+In the sample above the `#expand` and `#collapse` buttons are used to expand or collapse the Splitter control. However the Splitter control can include built-in toggle to expand or collapse the splitter and provide a label for the collapsed pane.
 
-When using the ```Controls.create(...)``` method of Splitter creation the toggle can be included using the ```enableToggleButton``` field on the options object. However this facility is not available when using the ```Controls.Enhancement.enhance(...)``` method. To work around this you should include HTML which the ```enhance(...)``` method can attach appropriate styles and JavaScript handlers.
+When using the `Controls.create(...)` method of Splitter creation the toggle can be included using the `enableToggleButton` field on the options object. However this facility is not available when using the `Controls.Enhancement.enhance(...)` method. To work around this you should include HTML which the `enhance(...)` method can attach appropriate styles and JavaScript handlers.
 
 ```html
     <div class="my-splitter horizontal splitter toggle-button-enabled">

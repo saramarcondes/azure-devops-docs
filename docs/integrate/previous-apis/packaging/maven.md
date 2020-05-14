@@ -10,10 +10,10 @@ ms.date: 02/10/2017
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 ---
+
 # Maven
 
 [!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
-
 
 [!INCLUDE [API_version](../_data/version3-preview1.md)]
 
@@ -21,14 +21,16 @@ monikerRange: '>= tfs-2015 < azure-devops'
 
 ## Get version list of the package
 
-| Parameter             | Type    | Default   | Notes
-|:----------------------|:--------|:----------|:---------------------------------------------------------------------------------------------------
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
+
+
 | URL
-| account               | string  |           | VSTS organization.
-| feed                  | string  |           | Name or ID of the feed.
-| groupId               | string  |           | Group Id of the package
-| artifactId            | string  |           | Artifact Id of the package.
-| api-version           | string  |           | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| account | string | | VSTS organization.
+| feed | string | | Name or ID of the feed.
+| groupId | string | | Group Id of the package
+| artifactId | string | | Artifact Id of the package.
+| api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 ```no-highlight
 GET https://{account}.pkgs.visualstudio.com/_apis/packaging/feeds/{feed}/maven/{groupId}/{artifactId}?api-version={api-version}
@@ -47,37 +49,43 @@ GET https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_fee
   "groupId": "org.springframework",
   "artifactId": "spring-core",
   "artifactMetadata": {
-    "href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/maven-metadata.xml"
+    "href":
+      "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/maven-metadata.xml"
   },
   "versions": {
     "5.0.0.M1": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core/5.0.0.M1"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core/5.0.0.M1"
     },
     "5.0.0.M2": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core/5.0.0.M2"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core/5.0.0.M2"
     },
     "5.0.0.M3": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core/5.0.0.M3"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core/5.0.0.M3"
     },
     "5.0.0.M4": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core/5.0.0.M4"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core/5.0.0.M4"
     }
   }
 }
 ```
 
-
 ## Get package info
 
-| Parameter             | Type    | Default   | Notes
-|:----------------------|:--------|:----------|:---------------------------------------------------------------------------------------------------
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
+
+
 | URL
-| account               | string  |           | VSTS organization.
-| feed                  | string  |           | Name or ID of the feed.
-| groupId               | string  |           | Group Id of the package
-| artifactId            | string  |           | Artifact Id of the package.
-| version               | string  |           | Version of the package.
-| api-version           | string  |           | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| account | string | | VSTS organization.
+| feed | string | | Name or ID of the feed.
+| groupId | string | | Group Id of the package
+| artifactId | string | | Artifact Id of the package.
+| version | string | | Version of the package.
+| api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 ```no-highlight
 GET https://{account}.pkgs.visualstudio.com/_apis/packaging/feeds/{feed}/maven/{groupId}/{artifactId}/{version}?api-version={api-version}
@@ -97,68 +105,84 @@ GET https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_fee
   "artifactId": "spring-core",
   "version": "5.0.0.M1",
   "versionsIndex": {
-    "href": "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core"
+    "href":
+      "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core"
   },
   "artifactIndex": {
-    "href": "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core/5.0.0.M1"
+    "href":
+      "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core/5.0.0.M1"
   },
   "artifactMetadata": {
-    "href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/maven-metadata.xml"
+    "href":
+      "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/maven-metadata.xml"
   },
   "files": {
     "spring-core-5.0.0.M1.pom": {
-      "href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.pom"
+      "href":
+        "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.pom"
     },
     "spring-core-5.0.0.M1.pom.md5": {
-      "href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.pom.md5"
+      "href":
+        "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.pom.md5"
     },
     "spring-core-5.0.0.M1.pom.sha1": {
-      "href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.pom.sha1"
+      "href":
+        "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.pom.sha1"
     },
     "spring-core-5.0.0.M1-javadoc.jar": {
-      "href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-javadoc.jar"
+      "href":
+        "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-javadoc.jar"
     },
     "spring-core-5.0.0.M1-javadoc.jar.md5": {
-      "href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-javadoc.jar.md5"
+      "href":
+        "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-javadoc.jar.md5"
     },
     "spring-core-5.0.0.M1-javadoc.jar.sha1": {
-      "href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-javadoc.jar.sha1"
+      "href":
+        "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-javadoc.jar.sha1"
     },
     "spring-core-5.0.0.M1-sources.jar": {
-      "href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-sources.jar"
+      "href":
+        "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-sources.jar"
     },
     "spring-core-5.0.0.M1-sources.jar.md5": {
-      "href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-sources.jar.md5"
+      "href":
+        "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-sources.jar.md5"
     },
     "spring-core-5.0.0.M1-sources.jar.sha1": {
-      "href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-sources.jar.sha1"
+      "href":
+        "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-sources.jar.sha1"
     },
     "spring-core-5.0.0.M1.jar": {
-      "href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.jar"
+      "href":
+        "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.jar"
     },
     "spring-core-5.0.0.M1.jar.md5": {
-      "href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.jar.md5"
+      "href":
+        "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.jar.md5"
     },
     "spring-core-5.0.0.M1.jar.sha1": {
-      "href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.jar.sha1"
+      "href":
+        "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.jar.sha1"
     }
   }
 }
 ```
 
+## Verify package file
 
-## Verify package file 
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
 
-| Parameter             | Type    | Default   | Notes
-|:----------------------|:--------|:----------|:---------------------------------------------------------------------------------------------------
+
 | URL
-| account               | string  |           | VSTS organization.
-| feed                  | string  |           | Name or ID of the feed.
-| groupId               | string  |           | Group Id of the package
-| artifactId            | string  |           | Artifact Id of the package.
-| version               | string  |           | Version of the package.
-| fileName              | string  |           | Name of the file to verify.
-| api-version           | string  |           | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| account | string | | VSTS organization.
+| feed | string | | Name or ID of the feed.
+| groupId | string | | Group Id of the package
+| artifactId | string | | Artifact Id of the package.
+| version | string | | Version of the package.
+| fileName | string | | Name of the file to verify.
+| api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 ```no-highlight
 GET https://{account}.pkgs.visualstudio.com/_apis/packaging/feeds/{feed}/maven/{groupId}/{artifactId}/{version}/{fileName}?api-version={api-version}
@@ -178,71 +202,88 @@ GET https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_fee
   "artifactId": "spring-core",
   "version": "5.0.0.M1",
   "versionsIndex": {
-    "href": "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core"
+    "href":
+      "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core"
   },
   "artifactIndex": {
-    "href": "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core/5.0.0.M1"
+    "href":
+      "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core/5.0.0.M1"
   },
   "artifactMetadata": {
-    "href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/maven-metadata.xml"
+    "href":
+      "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/maven-metadata.xml"
   },
   "requestedFile": {
-    "href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.pom"
+    "href":
+      "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.pom"
   },
   "files": {
     "spring-core-5.0.0.M1.pom": {
-      "href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.pom"
+      "href":
+        "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.pom"
     },
     "spring-core-5.0.0.M1.pom.md5": {
-      "href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.pom.md5"
+      "href":
+        "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.pom.md5"
     },
     "spring-core-5.0.0.M1.pom.sha1": {
-      "href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.pom.sha1"
+      "href":
+        "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.pom.sha1"
     },
     "spring-core-5.0.0.M1-javadoc.jar": {
-      "href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-javadoc.jar"
+      "href":
+        "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-javadoc.jar"
     },
     "spring-core-5.0.0.M1-javadoc.jar.md5": {
-      "href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-javadoc.jar.md5"
+      "href":
+        "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-javadoc.jar.md5"
     },
     "spring-core-5.0.0.M1-javadoc.jar.sha1": {
-      "href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-javadoc.jar.sha1"
+      "href":
+        "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-javadoc.jar.sha1"
     },
     "spring-core-5.0.0.M1-sources.jar": {
-      "href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-sources.jar"
+      "href":
+        "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-sources.jar"
     },
     "spring-core-5.0.0.M1-sources.jar.md5": {
-      "href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-sources.jar.md5"
+      "href":
+        "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-sources.jar.md5"
     },
     "spring-core-5.0.0.M1-sources.jar.sha1": {
-      "href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-sources.jar.sha1"
+      "href":
+        "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1-sources.jar.sha1"
     },
     "spring-core-5.0.0.M1.jar": {
-      "href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.jar"
+      "href":
+        "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.jar"
     },
     "spring-core-5.0.0.M1.jar.md5": {
-      "href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.jar.md5"
+      "href":
+        "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.jar.md5"
     },
     "spring-core-5.0.0.M1.jar.sha1": {
-      "href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.jar.sha1"
+      "href":
+        "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.jar.sha1"
     }
   }
 }
 ```
 
-
 ## Get package info with POM metadata
 
-| Parameter             | Type    | Default   | Notes
-|:----------------------|:--------|:----------|:---------------------------------------------------------------------------------------------------
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
+
+
 | URL
-| account               | string  |           | VSTS organization.
-| feed                  | string  |           | Name or ID of the feed.
-| groupId               | string  |           | Group Id of the package
-| artifactId            | string  |           | Artifact Id of the package.
-| version               | string  |           | Version of the package.
-| includePom            | bool    |           | Indicates if pom metadata should be included in response or not.
-| api-version           | string  |           | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| account | string | | VSTS organization.
+| feed | string | | Name or ID of the feed.
+| groupId | string | | Group Id of the package
+| artifactId | string | | Artifact Id of the package.
+| version | string | | Version of the package.
+| includePom | bool | | Indicates if pom metadata should be included in response or not.
+| api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 ```no-highlight
 GET https://{account}.pkgs.visualstudio.com/_apis/packaging/feeds/{feed}/maven/{groupId}/{artifactId}/{version}?includePom=true&api-version={api-version}
@@ -262,23 +303,29 @@ GET https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_fee
   "artifactId": "spring-core",
   "version": "5.0.0.M1",
   "versionsIndex": {
-    "href": "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core"
+    "href":
+      "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core"
   },
   "artifactIndex": {
-    "href": "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core/5.0.0.M1"
+    "href":
+      "https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_feed/maven/org.springframework/spring-core/5.0.0.M1"
   },
   "artifactMetadata": {
-    "href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/maven-metadata.xml"
+    "href":
+      "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/maven-metadata.xml"
   },
   "files": {
     "spring-core-5.0.0.M1.pom": {
-      "href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.pom"
+      "href":
+        "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.pom"
     },
     "spring-core-5.0.0.M1.pom.md5": {
-      "href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.pom.md5"
+      "href":
+        "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.pom.md5"
     },
     "spring-core-5.0.0.M1.pom.sha1": {
-      "href": "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.pom.sha1"
+      "href":
+        "https://mytfsserver/DefaultCollection/_packaging/sample_maven_feed/maven/v1/org.springframework/spring-core/5.0.0.M1/spring-core-5.0.0.M1.pom.sha1"
     }
   },
   "pom": {
@@ -343,7 +390,8 @@ GET https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_fee
     },
     "scm": {
       "connection": "scm:git:git://github.com/spring-projects/spring-framework",
-      "developerConnection": "scm:git:git://github.com/spring-projects/spring-framework",
+      "developerConnection":
+        "scm:git:git://github.com/spring-projects/spring-framework",
       "url": "https://github.com/spring-projects/spring-framework"
     },
     "issueManagement": {
@@ -376,4 +424,3 @@ GET https://mytfsserver/DefaultCollection/_apis/packaging/feeds/sample_maven_fee
   }
 }
 ```
-

@@ -14,7 +14,6 @@ ms.date: 08/04/2016
 
 Module path: `TFS/Core/Contracts`
 
-
 ### Members
 
 * `collectionUrl`: string. Collection Tfs Url (Host Url)
@@ -24,4 +23,3 @@ Module path: `TFS/Core/Contracts`
 * `name`: string. Collection Name
 
 * `url`: string. Collection REST Url
-

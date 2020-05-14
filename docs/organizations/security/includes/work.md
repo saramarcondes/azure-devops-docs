@@ -92,7 +92,7 @@ ms.topic: include
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Configure Agile tools, set team defaults.<sup>2</sup> 
+<td align="left">Configure Agile tools, set team defaults.<sup>2</sup>
 </td>
 <td> </td>
 <td> </td>
@@ -117,7 +117,7 @@ ms.topic: include
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="check mark"/></td>
 </tr>
 <tr>
-<td align="left">Customize project information (area paths, iteration paths, and work-tracking processes). 
+<td align="left">Customize project information (area paths, iteration paths, and work-tracking processes).
 </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td> </td>
@@ -139,16 +139,16 @@ ms.topic: include
 </table>
 
 **Notes:**
-1. Public project stakeholders have full access. 
-2. Public project stakeholders have full access to all features. 
-3. Public project stakeholders can create new tags. 
-4. Public project stakeholders can configure delivery plans.
 
-::: moniker-end    
+1.  Public project stakeholders have full access.
+2.  Public project stakeholders have full access to all features.
+3.  Public project stakeholders can create new tags.
+4.  Public project stakeholders can configure delivery plans.
 
-
+::: moniker-end
 
 ::: moniker range="azure-devops-2019"
+
 <table>
 <tr valign="bottom">
 <th width="310px">Task</th>
@@ -228,7 +228,7 @@ ms.topic: include
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Agile tools (Kanban boards, backlogs, sprint planning, portfolio management). 
+<td align="left">Agile tools (Kanban boards, backlogs, sprint planning, portfolio management).
 </td>
 <td> Limited interactions </td>
 <td> View only</td>
@@ -261,7 +261,7 @@ ms.topic: include
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="check mark"/></td>
 </tr>
 <tr>
-<td align="left">Customize project information (area paths, iteration paths, and work-tracking processes). 
+<td align="left">Customize project information (area paths, iteration paths, and work-tracking processes).
 </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td> </td>
@@ -282,11 +282,10 @@ ms.topic: include
 </table>
 
 **Notes:**
-1. You can change the work item type or move work items to another project within a project collection. These features require that the data warehouse is disabled. With the data warehouse disabled, you can use the [Analytics Service](/azure/devops/report/powerbi/what-is-analytics) to support your reporting needs. To learn more about disabling the data warehouse, see [Disable the data warehouse and cube](/azure/devops/report/admin/disable-data-warehouse).
 
-::: moniker-end    
+1.  You can change the work item type or move work items to another project within a project collection. These features require that the data warehouse is disabled. With the data warehouse disabled, you can use the [Analytics Service](/azure/devops/report/powerbi/what-is-analytics) to support your reporting needs. To learn more about disabling the data warehouse, see [Disable the data warehouse and cube](/azure/devops/report/admin/disable-data-warehouse).
 
-
+::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
@@ -378,7 +377,7 @@ ms.topic: include
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Configure Agile tools, set team defaults. 
+<td align="left">Configure Agile tools, set team defaults.
 </td>
 <td> </td>
 <td> </td>
@@ -403,7 +402,7 @@ ms.topic: include
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="check mark"/></td>
 </tr>
 <tr>
-<td align="left">Customize project information (area paths, iteration paths, and work-tracking processes). 
+<td align="left">Customize project information (area paths, iteration paths, and work-tracking processes).
 </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td> </td>
@@ -423,7 +422,4 @@ ms.topic: include
 </tbody>
 </table>
 
-::: moniker-end    
-
-
-
+::: moniker-end

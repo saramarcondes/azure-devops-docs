@@ -28,7 +28,7 @@ To learn what else you can do in YAML pipelines, see [YAML schema reference](../
 
 ### Clean up
 
-If you created any test pipelines, they are easy to delete when you are done with them. 
+If you created any test pipelines, they are easy to delete when you are done with them.
 
 #### [Browser](#tab/browser)
 
@@ -38,7 +38,7 @@ To delete a pipeline, navigate to the summary page for that pipeline, and choose
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-To delete a pipeline using Azure CLI, you can use the [az pipeline delete](/cli/azure/ext/azure-devops/pipelines?view=azure-cli-latest#ext-azure-devops-az-pipelines-delete) command. This command requires the `id` of the pipeline to delete, which you can get using the [az pipeline list](/cli/azure/ext/azure-devops/pipelines?view=azure-cli-latest#ext-azure-devops-az-pipelines-list) command. 
+To delete a pipeline using Azure CLI, you can use the [az pipeline delete](/cli/azure/ext/azure-devops/pipelines?view=azure-cli-latest#ext-azure-devops-az-pipelines-delete) command. This command requires the `id` of the pipeline to delete, which you can get using the [az pipeline list](/cli/azure/ext/azure-devops/pipelines?view=azure-cli-latest#ext-azure-devops-az-pipelines-list) command.
 
 [List pipelines](#list-pipelines) | [Delete pipeline](#delete-pipeline) | [Example](#example)
 
@@ -63,15 +63,15 @@ az pipelines list [--detect {false, true}]
 
 #### Parameters
 
-- **detect**: Automatically detect organization. Accepted values: **false**, **true**
-- **folder-path**: If specified, filters to definitions under this folder.
-- **name**: Limit results to pipelines with this name or starting with this name. Examples: "FabCI" or "Fab*".
-- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
-- **project** or **p**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
-- **query-order**: Order of the results. Accepted values: **ModifiedAsc**, **ModifiedDesc**, **NameAsc**, **NameDesc**, **None**
-- **repository**: Limit results to pipelines associated with this repository.
-- **repository-type**: Limit results to pipelines associated with this repository type. It is mandatory to pass **repository** argument along with this argument. Accepted values: **bitbucket**, **git**, **github**, **githubenterprise**, **svn**, **tfsgit**, **tfsversioncontrol**
-- **top**: Maximum number of pipelines to list.
+* **detect**: Automatically detect organization. Accepted values: **false**, **true**
+* **folder-path**: If specified, filters to definitions under this folder.
+* **name**: Limit results to pipelines with this name or starting with this name. Examples: "FabCI" or "Fab\*".
+* **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+* **project** or **p**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
+* **query-order**: Order of the results. Accepted values: **ModifiedAsc**, **ModifiedDesc**, **NameAsc**, **NameDesc**, **None**
+* **repository**: Limit results to pipelines associated with this repository.
+* **repository-type**: Limit results to pipelines associated with this repository type. It is mandatory to pass **repository** argument along with this argument. Accepted values: **bitbucket**, **git**, **github**, **githubenterprise**, **svn**, **tfsgit**, **tfsversioncontrol**
+* **top**: Maximum number of pipelines to list.
 
 ### Delete pipeline
 
@@ -87,11 +87,11 @@ az pipelines delete --id
 
 #### Parameters
 
-- **id**: (Required) ID of the pipeline.
-- **detect**: Automatically detect organization. Accepted values: **false**, **true**
-- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
-- **project** or **p**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
-- **yes** or **y**: Do not prompt for confirmation.
+* **id**: (Required) ID of the pipeline.
+* **detect**: Automatically detect organization. Accepted values: **false**, **true**
+* **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+* **project** or **p**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
+* **yes** or **y**: Do not prompt for confirmation.
 
 ### Example
 
@@ -110,4 +110,4 @@ Are you sure you want to delete this pipeline? (y/n): y
 Pipeline 6 was deleted successfully.
 ```
 
-* * *
+---

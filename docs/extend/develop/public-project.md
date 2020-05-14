@@ -13,17 +13,14 @@ ms.date: 05/14/2018
 
 # Public project support by Azure DevOps Services extensions
 
-Prior to public project support, all Azure DevOps Services projects were private, meaning that only authenticated users with access to the project could see or interact with it. A public project allows non-member users to view the contents of that project in a read-only state. 
-
+Prior to public project support, all Azure DevOps Services projects were private, meaning that only authenticated users with access to the project could see or interact with it. A public project allows non-member users to view the contents of that project in a read-only state.
 
 > A non-member user is either **anonymous** (not authenticated to Azure DevOps Services) or **public** (are authenticated to Azure DevOps Services, but do not belong to the organization).
 
 Non-member users generally see the same views as authenticated users, with non-public functionality such as settings and actions (such as queue build) either hidden or disabled.
 
-
 > [!NOTE]
 > Azure DevOps Services public project support is currently in **Limited Preview**. Contact [vsts-public@microsoft.com](mailto:vsts-public@microsoft.com) if you are interested in developing extensions that support public projects. To learn more about public projects, see [Azure DevOps Services Public Projects Limited Preview](https://blogs.msdn.microsoft.com/devops/2018/04/27/vsts-public-projects-limited-preview/).
-
 
 ## Decide whether to make an extension visible to non-member users
 
@@ -32,6 +29,7 @@ As the extension developer, you can make all or part of your extension available
 Use this checklist to help decide if you should make your extension available to non-member users:
 
 > [!div class="checklist"]
+>
 > * Data presented by your extension is relevant to non-member users
 > * Your extension contributes capabilities at the project level
 > * Your extension contributes to areas of the product that are accessible by non-member users
@@ -62,7 +60,7 @@ By default, contributions are only visible to organization members. To give non-
                 "anonymous"
             ],
             "properties": {
-                ...            
+                ...
             }
         }
     ]
@@ -102,7 +100,7 @@ You can also set the default visibility for all contributions in your extension 
                 "ms.vss-code-web.code-hub-group"
             ],
             "properties": {  
-                ...              
+                ...
             }
         },
         {
@@ -112,14 +110,15 @@ You can also set the default visibility for all contributions in your extension 
                 "ms.vss-work-web.work-hub-group"
             ],
             "properties": {  
-                ...              
+                ...
             }
-        }            
+        }
     ]
 }
 ```
 
 <a name="limitations"></a>
+
 ## Limitations
 
 If you want to make some or all aspects of your contribution available to public users, be aware of the following limitations.
@@ -133,7 +132,7 @@ The core SDK script, VSS.SDK.js, allows web extensions to communicate with the p
 
 ### Extension data service
 
-Because data managed by the [extension data service](./data-storage.md) is not scoped or secured to a project, non-member users are prevented from reading or writing any type of extension data. 
+Because data managed by the [extension data service](./data-storage.md) is not scoped or secured to a project, non-member users are prevented from reading or writing any type of extension data.
 
 #### Example: handling data access errors
 
@@ -141,13 +140,16 @@ If the data service can't access the data service due to permission limitations 
 
 ```javascript
 VSS.getService(VSS.ServiceIds.ExtensionData).then(function(dataService) {
-    dataService.getValue("someKey").then(function(value) {
-         // do something with the value
-    }, function(error) {
-       if (error.name === "AccessCheckException") {
-           alert(error.message);
-       }
-    });
+  dataService.getValue("someKey").then(
+    function(value) {
+      // do something with the value
+    },
+    function(error) {
+      if (error.name === "AccessCheckException") {
+        alert(error.message);
+      }
+    }
+  );
 });
 ```
 
@@ -170,23 +172,32 @@ A good best practice in general is to use permissions to decide whether or not t
 This example shows how to use the Security REST client to check whether the user has permissions to queue builds in the current project. By default, non-member users don't have this permission.
 
 ```javascript
-VSS.require(["VSS/Service", "VSS/organizations/security/RestClient"], function(VSS_Service, Security_RestClient) {
-   var client = VSS_Service.getCollectionClient(Security_RestClient.SecurityHttpClient3);
- 
-   var securityToken = VSS.getWebContext().project.id;
- 
-   client.hasPermissionsBatch({
-    evaluations: [
-       {
-           "securityNamespaceId": "33344D9C-FC72-4d6f-ABA5-FA317101A7E9",
-           "token": securityToken,
-           "permissions": 128 /* queue builds */
-       }
-    ]
-}
-).then(function(response) {
-     console.log("Can user queue builds in this project? " + response.evaluations[0].value);
-  });
+VSS.require(["VSS/Service", "VSS/organizations/security/RestClient"], function(
+  VSS_Service,
+  Security_RestClient
+) {
+  var client = VSS_Service.getCollectionClient(
+    Security_RestClient.SecurityHttpClient3
+  );
+
+  var securityToken = VSS.getWebContext().project.id;
+
+  client
+    .hasPermissionsBatch({
+      evaluations: [
+        {
+          securityNamespaceId: "33344D9C-FC72-4d6f-ABA5-FA317101A7E9",
+          token: securityToken,
+          permissions: 128 /* queue builds */
+        }
+      ]
+    })
+    .then(function(response) {
+      console.log(
+        "Can user queue builds in this project? " +
+          response.evaluations[0].value
+      );
+    });
 });
 ```
 
@@ -218,7 +229,7 @@ Just like other types of contributions, the visibility of dashboard widget contr
 
 ### Widget settings
 
-In addition to controlling visibility of the widget to non-member users, the dashboard framework provides an optional, open-form storage mechanism for widget settings. Two mechanisms are available for indicate whether a widget's settings are available for use by non-member users in public projects. 
+In addition to controlling visibility of the widget to non-member users, the dashboard framework provides an optional, open-form storage mechanism for widget settings. Two mechanisms are available for indicate whether a widget's settings are available for use by non-member users in public projects.
 
 A widget with configurable settings that is visible to non-member users **must** follow one of the following patterns. Not doing so blocks the widget from surfacing to these users.
 
@@ -243,9 +254,9 @@ Individual widget instances can also indicate that its settings are project-spec
 
 ```json
 {
-    "hasCrossProjectSettings": false,
-    "hypotheticalWidgetOption": true,
-    "backlogLevel": "Stories"
+  "hasCrossProjectSettings": false,
+  "hypotheticalWidgetOption": true,
+  "backlogLevel": "Stories"
 }
 ```
 

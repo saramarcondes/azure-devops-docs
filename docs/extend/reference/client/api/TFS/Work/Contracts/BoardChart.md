@@ -20,4 +20,3 @@ Extends: [BoardChartReference](../../../TFS/Work/Contracts/BoardChartReference.m
 * `_links`: any. The links for the resource
 
 * `settings`: {[key: string]: any}. The settings for the resource
-

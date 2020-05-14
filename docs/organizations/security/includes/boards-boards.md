@@ -4,7 +4,6 @@ ms.topic: include
 
 ::: moniker range=">= tfs-2015"
 
-
 <table>
 <tr valign="bottom">
 <th width="41%">Task</th>
@@ -54,12 +53,9 @@ ms.topic: include
 </tbody>
 </table>
 
-::: moniker-end    
-
-
+::: moniker-end
 
 ::: moniker range="tfs-2013"
-
 
 <table>
 <tr valign="bottom">
@@ -86,7 +82,7 @@ ms.topic: include
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Assign to a sprint 
+<td align="left">Assign to a sprint
 </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td> </td>
@@ -103,6 +99,4 @@ ms.topic: include
 </tbody>
 </table>
 
-::: moniker-end    
-
-
+::: moniker-end

@@ -14,10 +14,9 @@ ms.date: 08/04/2016
 
 Module path: `TFS/Build/Contracts`
 
-
 ### Members
 
-* `_links`: any. 
+* `_links`: any.
 
 * `buildNumber`: string. Build number/name of the build
 
@@ -35,7 +34,7 @@ Module path: `TFS/Build/Contracts`
 
 * `id`: number. ID of the build
 
-* `keepForever`: boolean. 
+* `keepForever`: boolean.
 
 * `lastChangedBy`: [VSS_Common_Contracts.IdentityRef](../../../VSS/WebApi/Contracts/IdentityRef.md). Process or person that last changed the build
 
@@ -51,7 +50,7 @@ Module path: `TFS/Build/Contracts`
 
 * `project`: [TFS_Core_Contracts.TeamProjectReference](../../../TFS/DistributedTask/Contracts/TeamProjectReference.md). The project
 
-* `properties`: any. 
+* `properties`: any.
 
 * `quality`: string. Quality of the xaml build (good, bad, etc.)
 
@@ -81,11 +80,10 @@ Module path: `TFS/Build/Contracts`
 
 * `status`: [BuildStatus](./BuildStatus.md). Status of the build
 
-* `tags`: string[]. 
+* `tags`: string[].
 
 * `uri`: string. Uri of the build
 
 * `url`: string. REST url of the build
 
-* `validationResults`: [BuildRequestValidationResult](./BuildRequestValidationResult.md)[]. 
-
+* `validationResults`: [BuildRequestValidationResult](./BuildRequestValidationResult.md)[].

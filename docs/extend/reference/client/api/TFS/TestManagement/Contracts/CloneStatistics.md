@@ -14,7 +14,6 @@ ms.date: 08/04/2016
 
 Module path: `TFS/TestManagement/Contracts`
 
-
 ### Members
 
 * `clonedRequirementsCount`: number. Number of Requirements cloned so far.
@@ -26,4 +25,3 @@ Module path: `TFS/TestManagement/Contracts`
 * `totalRequirementsCount`: number. Total number of requirements to be cloned
 
 * `totalTestCasesCount`: number. Total number of test cases to be cloned
-

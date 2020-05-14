@@ -20,9 +20,11 @@ The pull request (PR) workflow provides developers with an opportunity to get fe
 For more information about PR status, see [Customize and extend pull request workflows with pull request status](pull-request-status.md).
 
 ## Prerequisites
+
 An organization in Azure DevOps with a Git repo. If you don't have an organization, [sign up](../../organizations/accounts/create-organization.md) to upload and share code in free unlimited private Git repositories.
 
 ## Create a basic Azure function to listen to Azure Repos events
+
 Follow the [create your first Azure function](/azure/azure-functions/functions-create-first-azure-function) documentation to create a simple function. Modify the code in the sample to look like this:
 
 ```cs
@@ -70,23 +72,24 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
 ```
 
 ## Configure a service hook for PR events
+
 Service hooks are an Azure DevOps Services feature that can alert external services when certain events occur. For this sample, you'll want to set up a service hook for PR events, your Azure function will be notified when a pull request changes. In order to receive `POST` requests when pull requests change, you will need to provide the service hook with the Azure function URL.
 
 For this sample you will need to configure 2 service hooks. The first will be for the **Pull request created** event and the second will be for the **Pull request updated** event.
 
-1. Get the function URL from the Azure portal by clicking the **Get function URL** in your Azure function view and copy the URL.
+1.  Get the function URL from the Azure portal by clicking the **Get function URL** in your Azure function view and copy the URL.
 
     ![Get function url](media/create-pr-status-server-with-azure-functions/get-function-url.png)
 
     ![Copy function url](media/create-pr-status-server-with-azure-functions/copy-function-url.png)
 
-2. Browse to your project in Azure DevOps, e.g. `https://dev.azure.com/<your account>/<your project name>`
+2.  Browse to your project in Azure DevOps, e.g. `https://dev.azure.com/<your account>/<your project name>`
 
-3. From the navigation menu, hover over the **gear** and select **Service Hooks**.
+3.  From the navigation menu, hover over the **gear** and select **Service Hooks**.
 
     ![Choose Service hooks from the admin menu](media/create-pr-status-server/service-hooks-menu.png)
 
-4. If this is your first service hook, select **+ Create subscription**. 
+4.  If this is your first service hook, select **+ Create subscription**.
 
     ![Select Create a new subscription from the toolbar](media/create-pr-status-server/service-hooks-create-first-service-hook.png)
 
@@ -94,15 +97,15 @@ For this sample you will need to configure 2 service hooks. The first will be fo
 
     ![Select Create a new subscription from the toolbar](media/create-pr-status-server/service-hooks-create.png)
 
-5. On the New Service Hooks Subscription dialog, select **Web Hooks** from the list of services, then select **Next**.
+5.  On the New Service Hooks Subscription dialog, select **Web Hooks** from the list of services, then select **Next**.
 
     ![Select web hooks from the list of services](media/create-pr-status-server/service-hooks-web-hook.png)
 
-6. Select **Pull request created** from the list of event triggers, then select **Next**.
+6.  Select **Pull request created** from the list of event triggers, then select **Next**.
 
     ![Select pull request created from the list of event triggers](media/create-pr-status-server/service-hooks-trigger.png)
 
-7. In the Action page, enter the URL that you copied in step 1 in the **URL** box. Select **Test** to send a test event to your server.
+7.  In the Action page, enter the URL that you copied in step 1 in the **URL** box. Select **Test** to send a test event to your server.
 
     ![Enter the URL and select Test to test the service hook](media/create-pr-status-server-with-azure-functions/service-hooks-action.png)
 
@@ -119,25 +122,25 @@ For this sample you will need to configure 2 service hooks. The first will be fo
 
     ![Select the response tab to see the results of the test](media/create-pr-status-server-with-azure-functions/test-notification.png)
 
-8. Close the Test Notification window, and select **Finish** to create the service hook.
+8.  Close the Test Notification window, and select **Finish** to create the service hook.
 
 Go through steps 2-8 again but this time configure the **Pull request updated** event.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Be sure to go through the preceding steps twice and create service hooks for both the **Pull request created** and **Pull request updated** events.
 
 Create a pull request to verify your Azure function is receiving notifications.
 
 ## Post status to PRs
+
 Now that your server can receive service hook events when new PRs are created, update it to post back status to the PR. You can use the JSON payload posted by the service hook in order to determine what status to set on your PR.
 
 Update the code of your Azure function to look like the following example.
 
 Make sure to update the code with your account name, project name, repository name and [PAT token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). In order to have permission to change PR status, the PAT requires [vso.code_status](../../integrate/get-started/authentication/oauth.md#scopes) scope, which you can grant by selecting the **Code (status)** scope on the **Create a personal access token** page.
 
->[!Important]
->This sample code stores the PAT in code to simplify the sample. It is recommended to store secrets in KeyVault and retrieve them from there.
-
+> [!Important]
+> This sample code stores the PAT in code to simplify the sample. It is recommended to store secrets in KeyVault and retrieve them from there.
 
 This sample inspects the PR title to see if the user has indicated if the PR is a work in progress by adding **WIP** to the title. If so, the sample code changes the status posted back to the PR. Replace the code in your Azure function with the following code to implement updating the status posted back to the PR.
 
@@ -253,34 +256,36 @@ private static string ComputeStatus(string pullRequestTitle)
 ```
 
 ## Create a new PR to test the status server
-Now that your server is running and listening for service hook notifications, create a pull request to test it out. 
 
-1. Start in the files view. Edit the readme.md file in your repo (or any other file if you don't have a readme.md).
+Now that your server is running and listening for service hook notifications, create a pull request to test it out.
+
+1.  Start in the files view. Edit the readme.md file in your repo (or any other file if you don't have a readme.md).
 
     ![Select Edit from the context menu](media/create-pr-status-server/edit-readme.png)
 
-2. Make an edit and commit the changes to the repo.
+2.  Make an edit and commit the changes to the repo.
 
     ![Edit the file and select Commit from the toolbar](media/create-pr-status-server/commit-changes.png)
 
-3. Be sure to commit the changes to a new branch so you can create a PR in the next step.
+3.  Be sure to commit the changes to a new branch so you can create a PR in the next step.
 
     ![Enter a new branch name and select Commit](media/create-pr-status-server/commit-to-branch.png)
 
-4. Select the **Create a pull request** link.
+4.  Select the **Create a pull request** link.
 
     ![Select Create a pull request from the suggestion bar](media/create-pr-status-server/create-pr.png)
 
-5. Add **WIP** in the title to test the functionality of the app. Select **Create** to create the PR.
+5.  Add **WIP** in the title to test the functionality of the app. Select **Create** to create the PR.
 
     ![Add WIP to the default PR title](media/create-pr-status-server/new-pr-wip.png)
 
-6. Once the PR has been created, you will see the status section, with the **Work in progress** entry which links to the URL specified in the payload.
+6.  Once the PR has been created, you will see the status section, with the **Work in progress** entry which links to the URL specified in the payload.
 
     ![Add WIP to the default PR title](media/create-pr-status-server/pr-with-status.png)
 
-7. Update the PR title and remove the **WIP** text and note that the status changes from **Work in progress** to **Ready for review**.
+7.  Update the PR title and remove the **WIP** text and note that the status changes from **Work in progress** to **Ready for review**.
 
 ## Next Steps
-* In this article, you learned the basics of how to create a serverless Azure function that listens for PR events via service hooks and can post status messages using the status API. For more information about the pull request status API see the [REST API documentation](https://go.microsoft.com/fwlink/?linkid=854107). 
+
+* In this article, you learned the basics of how to create a serverless Azure function that listens for PR events via service hooks and can post status messages using the status API. For more information about the pull request status API see the [REST API documentation](https://go.microsoft.com/fwlink/?linkid=854107).
 * [Configure a branch policy for an external service](https://go.microsoft.com/fwlink/?linkid=854109).

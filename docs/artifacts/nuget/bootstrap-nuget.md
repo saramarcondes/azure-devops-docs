@@ -24,6 +24,7 @@ We also have an [example repository](https://github.com/Microsoft/vsts-nuget-sam
 ## The bootstrapper package
 
 The bootstrapper package takes care of several things for you:
+
 * Ensures that each developer has a compatible version of nuget.exe and the Azure DevOps Services authentication extension in their environment
 * Separates feed configuration from credential management so you don't have to share passwords among developers
 * Allows build and continuous integration systems to seamlessly use the same configuration as individual developers
@@ -42,11 +43,11 @@ Anyone with the authority to make solution-wide changes can follow these steps.
 
 [!INCLUDE [vss-pm-bootstrap](../includes/nuget/nuget-bootstrap.md)]
 
->[!NOTE]
->By default, the bootstrapper disables the public NuGet Gallery as a package source.
->Many customers use private feeds as a way to avoid dependencies on unknown or untrusted packages.
->If you depend on restoring packages from the public NuGet Gallery, edit `nuget.config` and uncomment the line pointing to 
->http://nuget.org (see [the section on conventions](#conventions) for more about `nuget.config`).
+> [!NOTE]
+> By default, the bootstrapper disables the public NuGet Gallery as a package source.
+> Many customers use private feeds as a way to avoid dependencies on unknown or untrusted packages.
+> If you depend on restoring packages from the public NuGet Gallery, edit `nuget.config` and uncomment the line pointing to
+> http://nuget.org (see [the section on conventions](#conventions) for more about `nuget.config`).
 
 ### Developer experience when using the bootstrapper package
 
@@ -57,8 +58,8 @@ For more about `init`, see [the section on conventions](#conventions).
 At least once a month and whenever their password changes, the developer should refresh their environment by running `init` again.
 If your developers already run a script when they work on code (for example, to update tools or set environment variables), that script can call `init` each time it runs.
 
-
 <a name="conventions"></a>
+
 ## Conventions
 
 The bootstrapper package places `init.cmd`, `init.ps1`, and `nuget.config` in the root of your repo.

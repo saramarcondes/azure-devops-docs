@@ -14,7 +14,6 @@ ms.date: 08/04/2016
 
 Module path: `TFS/TestManagement/Contracts`
 
-
 ### Members
 
 * `description`: string. Description of the test variable
@@ -30,4 +29,3 @@ Module path: `TFS/TestManagement/Contracts`
 * `url`: string. Url of the test variable
 
 * `values`: string[]. List of allowed values
-

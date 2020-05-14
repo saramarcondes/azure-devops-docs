@@ -38,12 +38,12 @@ None
 
 ## Arguments
 
-| Parameter | Comments |
-| --- | --- |
-| **Query** | Required. Select a work item query within the current project. Can be a built-in or custom query. |
-| **Upper threshold** | Required. Maximum number of matching workitems for the query. Default value = 0 |
-| **Lower threshold** | Required. Minimum number of matching workitems for the query. Default value = 0 |
-| **Control options** | See [Control options](../../process/tasks.md#controloptions) |
+| Parameter           | Comments                                                                                          |
+| ------------------- | ------------------------------------------------------------------------------------------------- |
+| **Query**           | Required. Select a work item query within the current project. Can be a built-in or custom query. |
+| **Upper threshold** | Required. Maximum number of matching workitems for the query. Default value = 0                   |
+| **Lower threshold** | Required. Minimum number of matching workitems for the query. Default value = 0                   |
+| **Control options** | See [Control options](../../process/tasks.md#controloptions)                                      |
 
 Succeeds if _minimum-threshold_ **&lt;=** _#-matching-workitems_ **&lt;=** _maximum-threshold_
 

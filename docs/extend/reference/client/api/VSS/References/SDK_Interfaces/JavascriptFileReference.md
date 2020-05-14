@@ -15,8 +15,7 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Reference to a javascript file to include on a page 
+Reference to a javascript file to include on a page
 
 ### Members
 
@@ -29,4 +28,3 @@ Reference to a javascript file to include on a page
 * `isCoreModule`: boolean. Is this a core javascript file that needs to be included on every page
 
 * `url`: string. Url of the javascript reference
-

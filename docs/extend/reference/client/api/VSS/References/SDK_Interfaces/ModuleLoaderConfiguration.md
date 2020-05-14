@@ -15,18 +15,16 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-AMD javascript module loader configuration 
+AMD javascript module loader configuration
 
 ### Members
 
-* `baseUrl`: string. 
+* `baseUrl`: string.
 
-* `contributionPaths`: {[key: string]: [ContributionPath](../../../VSS/References/SDK_Interfaces/ContributionPath.md)}. 
+* `contributionPaths`: {[key: string]: [ContributionPath](../../../VSS/References/SDK_Interfaces/ContributionPath.md)}.
 
-* `paths`: {[key: string]: string}. 
+* `paths`: {[key: string]: string}.
 
-* `shim`: {[key: string]: [ModuleLoaderShimConfiguration](../../../VSS/References/SDK_Interfaces/ModuleLoaderShimConfiguration.md)}. 
+* `shim`: {[key: string]: [ModuleLoaderShimConfiguration](../../../VSS/References/SDK_Interfaces/ModuleLoaderShimConfiguration.md)}.
 
 * `waitSeconds`: number. The maximum amount of time (in seconds) the AMD loader waits for scripts to load.
-

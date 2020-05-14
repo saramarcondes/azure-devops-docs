@@ -11,7 +11,6 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Branches Command
 
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
@@ -27,6 +26,7 @@ tf branches itemspec [/version:versionspec] [/collection:TeamProjectCollectionUr
 ```
 
 ## Parameters<table>
+
 <thead>
 <tr>
 <th><p><strong>Argument</strong></p></th>

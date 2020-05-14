@@ -13,7 +13,6 @@ ms.date: 08/04/2016
 
 Module path: `TFS/Dashboards/WidgetHelpers`
 
-
 ### Members
 
 ## Success()
@@ -21,11 +20,13 @@ Module path: `TFS/Dashboards/WidgetHelpers`
 Static method that returns success as [WidgetStatus](./WidgetStatus.md) wrapped in a promise
 
 ### Syntax
+
 <pre class='syntax'>
  void <b>WidgetStatusHelper.Success</b>()
 </pre>
 
 ### Parameters
+
 None
 
 ## Failure()
@@ -33,6 +34,7 @@ None
 Static method that returns failure as [WidgetStatus](./WidgetStatus.md) wrapped in a promise.
 
 ### Syntax
+
 <pre class='syntax'>
  void <b>WidgetStatusHelper.Failure</b>(message)
 </pre>

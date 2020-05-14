@@ -20,21 +20,21 @@ monikerRange: azure-devops
 
 Azure Pipelines provides a Microsoft-hosted agent pool named **Azure Pipelines** that offers several virtual machine images to choose from, each including a broad range of tools and software.
 
-| Image | Classic Editor Agent Specification | YAML VM Image Label | Included Software |
-| --- | --- | --- | --- |
-| Windows Server 2019 with Visual Studio 2019 | *windows-2019* |  `windows-latest` OR `windows-2019` | [Link](https://github.com/actions/virtual-environments/blob/master/images/win/Windows2019-Readme.md)
-| Windows Server 2016 with Visual Studio 2017 | *vs2017-win2016* | `vs2017-win2016` | [Link](https://github.com/actions/virtual-environments/blob/master/images/win/Windows2016-Readme.md)
-| Ubuntu 18.04 | *ubuntu-18.04* | `ubuntu-latest` OR `ubuntu-18.04` | [Link](https://github.com/actions/virtual-environments/blob/master/images/linux/Ubuntu1804-README.md)
-| Ubuntu 16.04 | *ubuntu-16.04* | `ubuntu-16.04` | [Link](https://github.com/actions/virtual-environments/blob/master/images/linux/Ubuntu1604-README.md)
-| macOS X Mojave 10.14 | *macOS-10.14* |  `macOS-10.14` | [Link](https://github.com/microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md)
-| macOS X Catalina 10.15 | *macOS-10.15* |  `macOS-latest` OR `macOS-10.15` | [Link](https://github.com/actions/virtual-environments/blob/master/images/macos/macos-10.15-Readme.md)
+| Image                                       | Classic Editor Agent Specification | YAML VM Image Label                | Included Software                                                                                                    |
+| ------------------------------------------- | ---------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| Windows Server 2019 with Visual Studio 2019 | _windows-2019_                     | `windows-latest` OR `windows-2019` | [Link](https://github.com/actions/virtual-environments/blob/master/images/win/Windows2019-Readme.md)                 |
+| Windows Server 2016 with Visual Studio 2017 | _vs2017-win2016_                   | `vs2017-win2016`                   | [Link](https://github.com/actions/virtual-environments/blob/master/images/win/Windows2016-Readme.md)                 |
+| Ubuntu 18.04                                | _ubuntu-18.04_                     | `ubuntu-latest` OR `ubuntu-18.04`  | [Link](https://github.com/actions/virtual-environments/blob/master/images/linux/Ubuntu1804-README.md)                |
+| Ubuntu 16.04                                | _ubuntu-16.04_                     | `ubuntu-16.04`                     | [Link](https://github.com/actions/virtual-environments/blob/master/images/linux/Ubuntu1604-README.md)                |
+| macOS X Mojave 10.14                        | _macOS-10.14_                      | `macOS-10.14`                      | [Link](https://github.com/microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md) |
+| macOS X Catalina 10.15                      | _macOS-10.15_                      | `macOS-latest` OR `macOS-10.15`    | [Link](https://github.com/actions/virtual-environments/blob/master/images/macos/macos-10.15-Readme.md)               |
 
 > [!IMPORTANT]
 > On March 23, 2020, we'll be removing the following Azure Pipelines hosted images:
 >
-> - [Windows Server 2012R2 with Visual Studio 2015](https://github.com/microsoft/azure-pipelines-image-generation/blob/d80f81d6c98f8ce2c74b034309bb774ea8d31cfb/images/win/Vs2015-Server2012R2-Readme.md) (`vs2015-win2012r2`)
-> - [macOS X High Sierra 10.13](https://github.com/microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.13-Readme.md) (`macOS-10.13`)
-> - [Windows Server Core 1803](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/WindowsContainer1803-Readme.md) - (`win1803`)
+> * [Windows Server 2012R2 with Visual Studio 2015](https://github.com/microsoft/azure-pipelines-image-generation/blob/d80f81d6c98f8ce2c74b034309bb774ea8d31cfb/images/win/Vs2015-Server2012R2-Readme.md) (`vs2015-win2012r2`)
+> * [macOS X High Sierra 10.13](https://github.com/microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.13-Readme.md) (`macOS-10.13`)
+> * [Windows Server Core 1803](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/WindowsContainer1803-Readme.md) - (`win1803`)
 >
 > Customers are encouraged to migrate to `vs2017-win2016`, `macOS-10.14`, or a [self-hosted agent](v2-windows.md) respectively.
 >
@@ -111,25 +111,25 @@ To determine your geography, navigate to `https://dev.azure.com/<your_organizati
 
 ### To identify the possible IP ranges for your Microsoft-hosted agents
 
-1. Identify the [region for your organization](../../organizations/accounts/change-organization-location.md) in **Organization settings**.
-2. Identify the [Azure Geography](https://azure.microsoft.com/global-infrastructure/geographies/) for your organization's region.
-3. Map the names of the regions in your geography to the format used in the weekly file, following the format of `AzureCloud.<region>`, such as `AzureCloud.westus`. You can map the names of the regions from the [Azure Geography](https://azure.microsoft.com/global-infrastructure/geographies/) list to the format used in the weekly file by reviewing the region names passed to the constructor of the regions defined in the [source code for the Region class](https://github.com/Azure/azure-libraries-for-net/blob/master/src/ResourceManagement/ResourceManager/Region.cs), from the [Azure Management Libraries for .NET](https://github.com/Azure/azure-libraries-for-net).
+1.  Identify the [region for your organization](../../organizations/accounts/change-organization-location.md) in **Organization settings**.
+2.  Identify the [Azure Geography](https://azure.microsoft.com/global-infrastructure/geographies/) for your organization's region.
+3.  Map the names of the regions in your geography to the format used in the weekly file, following the format of `AzureCloud.<region>`, such as `AzureCloud.westus`. You can map the names of the regions from the [Azure Geography](https://azure.microsoft.com/global-infrastructure/geographies/) list to the format used in the weekly file by reviewing the region names passed to the constructor of the regions defined in the [source code for the Region class](https://github.com/Azure/azure-libraries-for-net/blob/master/src/ResourceManagement/ResourceManager/Region.cs), from the [Azure Management Libraries for .NET](https://github.com/Azure/azure-libraries-for-net).
     > [!NOTE]
     > Since there is no API in the [Azure Management Libraries for .NET](https://github.com/Azure/azure-libraries-for-net) to list the regions for a geography, you must list them manually as shown in the following example.
-1. Retrieve the IP addresses for all regions in your geography from the [weekly file](https://www.microsoft.com/download/details.aspx?id=56519). If your region is **Brazil South** or **West Europe**, you must include additional IP ranges based on your fallback geography, as described in the following note.
+4.  Retrieve the IP addresses for all regions in your geography from the [weekly file](https://www.microsoft.com/download/details.aspx?id=56519). If your region is **Brazil South** or **West Europe**, you must include additional IP ranges based on your fallback geography, as described in the following note.
 
->[!NOTE]
->Due to capacity restrictions, some organizations in the **Brazil South** or **West Europe** regions may occasionally see their hosted agents located outside their expected geography. In these cases, in addition to including the IP ranges as described in the previous section, additional IP ranges must be included for the regions in the capacity fallback geography.
+> [!NOTE]
+> Due to capacity restrictions, some organizations in the **Brazil South** or **West Europe** regions may occasionally see their hosted agents located outside their expected geography. In these cases, in addition to including the IP ranges as described in the previous section, additional IP ranges must be included for the regions in the capacity fallback geography.
 >
->If your organization is in the **Brazil South** region, your capacity fallback geography is **United States**.
+> If your organization is in the **Brazil South** region, your capacity fallback geography is **United States**.
 >
->If your organization is in the **West Europe** region, the capacity fallback geography is **France**.
+> If your organization is in the **West Europe** region, the capacity fallback geography is **France**.
 >
->Our Mac IP ranges are not included in the Azure IPs above, though we are investigating options to publish these in the future.
+> Our Mac IP ranges are not included in the Azure IPs above, though we are investigating options to publish these in the future.
 
 #### Example
 
-In the following example, the hosted agent IP address ranges for an organization in the West US region are retrieved from the weekly file. Since the West US region is in the United States geography, the IP addresses for all regions in the United States geography are included. In this example the IP addresses are written to the console. 
+In the following example, the hosted agent IP address ranges for an organization in the West US region are retrieved from the weekly file. Since the West US region is in the United States geography, the IP addresses for all regions in the United States geography are included. In this example the IP addresses are written to the console.
 
 ```csharp
 using Newtonsoft.Json.Linq;
@@ -148,7 +148,7 @@ namespace WeeklyFileIPRanges
         static void Main(string[] args)
         {
             // United States geography has the following regions:
-            // Central US, East US 2, East US, North Central US, 
+            // Central US, East US 2, East US, North Central US,
             // South Central US, West Central US, West US, West US 2
             List<string> USGeographyRegions = new List<string>
             {
@@ -196,11 +196,11 @@ Service Tags is not something you can use for your hosted agents. If you're tryi
 
 #### How can I see what software is included in an image?
 
-You can see the installed software for each hosted agent by choosing the **Included Software** link in the [Use a Microsoft-hosted agent](#use-a-microsoft-hosted-agent) table. 
+You can see the installed software for each hosted agent by choosing the **Included Software** link in the [Use a Microsoft-hosted agent](#use-a-microsoft-hosted-agent) table.
 
 #### How does Microsoft choose the software and versions to put on the image?
 
-More information about the versions of software included on the images can be found at [Guidelines for what's installed](https://github.com/actions/virtual-environments#guidelines-for-whats-installed). 
+More information about the versions of software included on the images can be found at [Guidelines for what's installed](https://github.com/actions/virtual-environments#guidelines-for-whats-installed).
 
 #### When are the images updated?
 
@@ -233,60 +233,66 @@ The Microsoft-hosted XAML build controller is no longer supported. If you have a
 > We strongly recommend that you [migrate your XAML builds to new builds](../build/migrate-from-xaml-builds.md).
 
 <a name="mac-pick-tools"></a>
+
 ### How can I manually select versions of tools on the Hosted macOS agent?
 
 #### Xamarin
 
-  To manually select a Xamarin SDK version to use on the **Hosted macOS** agent, before your Xamarin build task, execute this command line as part of your build, replacing the Mono version number 5.4.1 as needed (also replacing '.' characters with underscores: '_'). Choose the Mono version that is associated with the Xamarin SDK version that you need.
+To manually select a Xamarin SDK version to use on the **Hosted macOS** agent, before your Xamarin build task, execute this command line as part of your build, replacing the Mono version number 5.4.1 as needed (also replacing '.' characters with underscores: '\_'). Choose the Mono version that is associated with the Xamarin SDK version that you need.
 
-  `/bin/bash -c "sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh 5_4_1"`
+`/bin/bash -c "sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh 5_4_1"`
 
-  Mono versions associated with Xamarin SDK versions on the **Hosted macOS** agent can be found [here](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md#xamarin).
+Mono versions associated with Xamarin SDK versions on the **Hosted macOS** agent can be found [here](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md#xamarin).
 
-  Note that this command does not select the Mono version beyond the Xamarin SDK. To manually select a Mono version, see instructions below.
+Note that this command does not select the Mono version beyond the Xamarin SDK. To manually select a Mono version, see instructions below.
 
-  In case you are using a non-default version of Xcode for building your Xamarin.iOS or Xamarin.Mac apps, you should additionally execute this command line:
+In case you are using a non-default version of Xcode for building your Xamarin.iOS or Xamarin.Mac apps, you should additionally execute this command line:
 
-  `/bin/bash -c "echo '##vso[task.setvariable variable=MD_APPLE_SDK_ROOT;]'$(xcodeRoot);sudo xcode-select --switch $(xcodeRoot)/Contents/Developer"`
-  
-  where `$(xcodeRoot)` = `/Applications/Xcode_10.1.app`
+`/bin/bash -c "echo '##vso[task.setvariable variable=MD_APPLE_SDK_ROOT;]'$(xcodeRoot);sudo xcode-select --switch $(xcodeRoot)/Contents/Developer"`
 
-  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md#xcode).
+where `$(xcodeRoot)` = `/Applications/Xcode_10.1.app`
+
+Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md#xcode).
 
 #### Xcode
 
-  If you use the [Xcode task](../tasks/build/xcode.md) included with Azure Pipelines and TFS, you can select a version of Xcode in that task's properties. Otherwise, to manually set the Xcode version to use on the **Hosted macOS** agent pool, before your `xcodebuild` build task, execute this command line as part of your build, replacing the Xcode version number 8.3.3 as needed:
+If you use the [Xcode task](../tasks/build/xcode.md) included with Azure Pipelines and TFS, you can select a version of Xcode in that task's properties. Otherwise, to manually set the Xcode version to use on the **Hosted macOS** agent pool, before your `xcodebuild` build task, execute this command line as part of your build, replacing the Xcode version number 8.3.3 as needed:
 
-  `/bin/bash -c "sudo xcode-select -s /Applications/Xcode_8.3.3.app/Contents/Developer"`
+`/bin/bash -c "sudo xcode-select -s /Applications/Xcode_8.3.3.app/Contents/Developer"`
 
-  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md#xcode).
+Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md#xcode).
 
-  Note that this command does not work for Xamarin apps. To manually select a Xcode version for building Xamarin apps, see instructions above.
+Note that this command does not work for Xamarin apps. To manually select a Xcode version for building Xamarin apps, see instructions above.
 
 #### Mono
 
-  To manually select a Mono version to use on the **Hosted macOS** agent pool, before your Mono build task, execute this script in each job of your build, replacing the Mono version number 5.4.1 as needed:
+To manually select a Mono version to use on the **Hosted macOS** agent pool, before your Mono build task, execute this script in each job of your build, replacing the Mono version number 5.4.1 as needed:
 
-  ```bash
-  SYMLINK=5_4_1
-  MONOPREFIX=/Library/Frameworks/Mono.framework/Versions/$SYMLINK
-  echo "##vso[task.setvariable variable=DYLD_FALLBACK_LIBRARY_PATH;]$MONOPREFIX/lib:/lib:/usr/lib:$DYLD_LIBRARY_FALLBACK_PATH"
-  echo "##vso[task.setvariable variable=PKG_CONFIG_PATH;]$MONOPREFIX/lib/pkgconfig:$MONOPREFIX/share/pkgconfig:$PKG_CONFIG_PATH"
-  echo "##vso[task.setvariable variable=PATH;]$MONOPREFIX/bin:$PATH"
+```bash
+SYMLINK=5_4_1
+MONOPREFIX=/Library/Frameworks/Mono.framework/Versions/$SYMLINK
+echo "##vso[task.setvariable variable=DYLD_FALLBACK_LIBRARY_PATH;]$MONOPREFIX/lib:/lib:/usr/lib:$DYLD_LIBRARY_FALLBACK_PATH"
+echo "##vso[task.setvariable variable=PKG_CONFIG_PATH;]$MONOPREFIX/lib/pkgconfig:$MONOPREFIX/share/pkgconfig:$PKG_CONFIG_PATH"
+echo "##vso[task.setvariable variable=PATH;]$MONOPREFIX/bin:$PATH"
 ```
 
 #### .NET Core
-  .NET Core 2.2.105 is default on VM images but Mono version 6.0 or greater requires .NET Core 2.2.300+. 
-  If you use the Mono 6.0 or greater, you will have to override .NET Core version using [.NET Core Tool Installer task](https://docs.microsoft.com/azure/devops/pipelines/tasks/tool/dotnet-core-tool-installer?view=azure-devops).
+
+.NET Core 2.2.105 is default on VM images but Mono version 6.0 or greater requires .NET Core 2.2.300+.
+If you use the Mono 6.0 or greater, you will have to override .NET Core version using [.NET Core Tool Installer task](https://docs.microsoft.com/azure/devops/pipelines/tasks/tool/dotnet-core-tool-installer?view=azure-devops).
 
 #### Boost
-  The VM images contain prebuilt Boost libraries with their headers in the directory designated by `BOOST_ROOT` environment variable. In order to include the Boost headers, the path `$BOOST_ROOT/include` should be added to the search paths.
-  
-  Example of g++ invocation with Boost libraries:
-  ```
-  g++ -I "$BOOST_ROOT/include" ...
-  ```
-## Videos 
+
+The VM images contain prebuilt Boost libraries with their headers in the directory designated by `BOOST_ROOT` environment variable. In order to include the Boost headers, the path `$BOOST_ROOT/include` should be added to the search paths.
+
+Example of g++ invocation with Boost libraries:
+
+```
+g++ -I "$BOOST_ROOT/include" ...
+```
+
+## Videos
+
 > [!VIDEO https://www.youtube.com/embed/A8f_05lnfe0?start=0]
 
 <!-- ENDSECTION -->

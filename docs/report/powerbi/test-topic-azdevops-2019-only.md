@@ -16,7 +16,7 @@ ms.date: 04/04/2018
 
 **Azure DevOps Server 2019**
 
- Analytics.
+Analytics.
 
 ## Roadmap timeline
 

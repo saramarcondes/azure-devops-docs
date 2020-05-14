@@ -19,14 +19,14 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker-end
 
-Retention policies are used to configure how long runs and releases are to be retained by the system. 
-The primary reasons to delete older runs and releases are to conserve storage and reduce clutter. 
+Retention policies are used to configure how long runs and releases are to be retained by the system.
+The primary reasons to delete older runs and releases are to conserve storage and reduce clutter.
 The main reasons to keep runs and releases are for audit and tracking.
 
 ## Run retention
 
-In most cases you don't need to retain completed runs longer than a certain number of days. 
-Using run retention policies, you can control **how many days** you want to keep each run before deleting it. 
+In most cases you don't need to retain completed runs longer than a certain number of days.
+Using run retention policies, you can control **how many days** you want to keep each run before deleting it.
 
 ::: moniker range="<= tfs-2018"
 
@@ -36,7 +36,7 @@ Along with defining how many days to retain runs, you can also decide the minimu
 
 As an author of a run pipeline, you can customize retention policies on the **Settings** tab of your project's settings.
 
-You can use the [Copy Files task](../tasks/utility/copy-files.md) to save your build and artifact data for longer than what is set in the retention policies. The **Copy Files task** is preferable to the [Publish Build Artifacts task](../tasks/utility/publish-build-artifacts.md) because data saved with the **Publish Build Artifacts task** will get periodically cleaned up and deleted. 
+You can use the [Copy Files task](../tasks/utility/copy-files.md) to save your build and artifact data for longer than what is set in the retention policies. The **Copy Files task** is preferable to the [Publish Build Artifacts task](../tasks/utility/publish-build-artifacts.md) because data saved with the **Publish Build Artifacts task** will get periodically cleaned up and deleted.
 
 # [YAML](#tab/yaml)
 
@@ -51,14 +51,13 @@ You can use the [Copy Files task](../tasks/utility/copy-files.md) to save your b
 
 # [Classic](#tab/classic)
 
-1. Add the **Copy Files task** to your Pipeline.  
-![copy files](media/copy_files_classic_task.png)
+1.  Add the **Copy Files task** to your Pipeline.  
+    ![copy files](media/copy_files_classic_task.png)
 
-2. Configure the **Copy Files task**. 
-![configure Copy Files](media/copy_files_classic_config.png)
+2.  Configure the **Copy Files task**.
+    ![configure Copy Files](media/copy_files_classic_config.png)
+
 ---
-
-
 
 ::: moniker range="<= tfs-2018"
 
@@ -169,7 +168,6 @@ The following information is deleted when a run is deleted:
 
 ::: moniker-end
 
-
 ### When are runs deleted
 
 ::: moniker range="> tfs-2018"
@@ -188,13 +186,12 @@ Your retention policies run every day at 3:00 A.M. UTC. There is no option to ch
 
 ### Delete a run
 
-You can delete runs using the [context menu](../get-started/multi-stage-pipelines-experience.md#pipeline-run-context-menu) on the [Pipeline run details](../get-started/multi-stage-pipelines-experience.md#view-pipeline-run-details) page. 
+You can delete runs using the [context menu](../get-started/multi-stage-pipelines-experience.md#pipeline-run-context-menu) on the [Pipeline run details](../get-started/multi-stage-pipelines-experience.md#view-pipeline-run-details) page.
 
 > [!NOTE]
 > If any retention policies currently apply to the run, they must be removed before the run can be deleted. For instructions, see [Pipe run details - delete a run](../get-started/multi-stage-pipelines-experience.md#pipeline-run-context-menu).
 
 ::: moniker-end
-
 
 <h2 id="release">Release retention</h2>
 
@@ -272,11 +269,10 @@ for the associated build will determine when that build is deleted.
 
 > In TFS, interaction between build and release retention is available in TFS 2017 and newer.
 
-
 ## Artifact retention
 
 Setting a `Build.Cleanup` capability on agents will cause the pool's cleanup jobs to be directed to just those agents, leaving the rest free to do regular work. When a pipeline run is deleted, artifacts stored outside of Azure DevOps are cleaned up through a job run on the agents. When the agent pool gets saturated with cleanup jobs, this can cause a problem. The solution to that is to designate a subset of agents in the pool that are the cleanup agents. If any agents have `Build.Cleanup` set, only those agents will run the cleanup jobs, leaving the rest of the agents free to continue running pipeline jobs.
- 
+
 ::: moniker-end
 
 ## Q&A

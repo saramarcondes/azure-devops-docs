@@ -14,7 +14,6 @@ ms.date: 08/04/2016
 
 Module path: `TFS/VersionControl/Contracts`
 
-
 ### Members
 
 * `author`: string. Alias or display name of user who made the changes
@@ -25,11 +24,10 @@ Module path: `TFS/VersionControl/Contracts`
 
 * `fromId`: number. If provided, only include changesets after this changesetID
 
-* `includeLinks`: boolean. Whether to include the _links field on the shallow references
+* `includeLinks`: boolean. Whether to include the \_links field on the shallow references
 
 * `path`: string. Path of item to search under
 
 * `toDate`: string. If provided, only include changesets created before this date (string) Think of a better name for this.
 
 * `toId`: number. If provided, a version descriptor for the latest change list to include
-

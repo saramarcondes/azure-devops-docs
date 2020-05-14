@@ -29,6 +29,7 @@ To create and activate an Anaconda environment and install Anaconda packages wit
 ::: moniker-end
 
 ### Get the code
+
 ::: moniker range="azure-devops-2019"
 
 Import this repo into your Git repo in Azure DevOps Server 2019:
@@ -40,7 +41,6 @@ Import this repo into your Git repo in Azure DevOps Server 2019:
 Import this repo into your Git repo:
 
 ::: moniker-end
-
 
 ```
 https://github.com/Microsoft/python-sample-vscode-flask-tutorial
@@ -64,20 +64,20 @@ https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 
 > When the **Configure** tab appears, select **Python package**. This will create a Python package to test on multiple Python versions.
 
-7. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
+7.  When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
+    > [!div class="mx-imgBorder"]
+    > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
 
-8. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
+8.  You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
 
-   If you want to watch your pipeline in action, select the build job.
+    If you want to watch your pipeline in action, select the build job.
 
-   > You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [Python package](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/python-package.yml) template.
+    > You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [Python package](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/python-package.yml) template.
 
-   You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
+    You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
 
-9. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+9.  When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
 
 See the sections below to learn some of the more common ways to customize your pipeline.
 
@@ -86,9 +86,10 @@ See the sections below to learn some of the more common ways to customize your p
 ::: moniker range="azure-devops-2019"
 
 ### YAML
-1. Add an `azure-pipelines.yml` file in your repository. Customize this snippet for your build. 
 
-``` yaml
+1.  Add an `azure-pipelines.yml` file in your repository. Customize this snippet for your build.
+
+```yaml
 trigger:
 - master
 
@@ -102,15 +103,15 @@ steps:
   displayName: 'Install requirements'
 ```
 
-2. Create a pipeline (if you don't know how, see [Create your first pipeline](../create-first-pipeline.md)), and for the template select **YAML**.
+2.  Create a pipeline (if you don't know how, see [Create your first pipeline](../create-first-pipeline.md)), and for the template select **YAML**.
 
-3. Set the **Agent pool** and **YAML file path** for your pipeline. 
+3.  Set the **Agent pool** and **YAML file path** for your pipeline.
 
-4. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action.
+4.  Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action.
 
-5. When you're ready to make changes to your pipeline, **Edit** it.
+5.  When you're ready to make changes to your pipeline, **Edit** it.
 
-6. See the sections below to learn some of the more common ways to customize your pipeline.
+6.  See the sections below to learn some of the more common ways to customize your pipeline.
 
 ::: moniker-end
 
@@ -118,11 +119,11 @@ steps:
 
 ## Build environment
 
-You don't have to set up anything for Azure Pipelines to build Python projects. Python is preinstalled on [Microsoft-hosted build agents](../agents/hosted.md) for Linux, macOS, or Windows. To see which Python versions are preinstalled, see [Use a Microsoft-hosted agent](../agents/hosted.md#software). 
+You don't have to set up anything for Azure Pipelines to build Python projects. Python is preinstalled on [Microsoft-hosted build agents](../agents/hosted.md) for Linux, macOS, or Windows. To see which Python versions are preinstalled, see [Use a Microsoft-hosted agent](../agents/hosted.md#software).
 
 ### Use a specific Python version
 
-To use a specific version of Python in your pipeline, add the [Use Python Version task](../tasks/tool/use-python-version.md) to *azure-pipelines.yml*. This snippet sets the pipeline to use Python 3.6:
+To use a specific version of Python in your pipeline, add the [Use Python Version task](../tasks/tool/use-python-version.md) to _azure-pipelines.yml_. This snippet sets the pipeline to use Python 3.6:
 
 ```yaml
 steps:
@@ -153,8 +154,8 @@ jobs:
   - task: UsePythonVersion@0
     inputs:
       versionSpec: '$(python.version)'
-
 ```
+
 You can add tasks to run using each Python version in the matrix.
 
 ::: moniker-end
@@ -207,7 +208,7 @@ You can use scripts to install specific PyPI packages with `pip`. For example, t
 
 ### Install requirements
 
-After you update `pip` and friends, a typical next step is to install dependencies from *requirements.txt*:
+After you update `pip` and friends, a typical next step is to install dependencies from _requirements.txt_:
 
 ```yaml
 - script: pip install -r requirements.txt
@@ -215,6 +216,7 @@ After you update `pip` and friends, a typical next step is to install dependenci
 ```
 
 <a name="test"></a>
+
 ## Run tests
 
 You can use scripts to install and run various tests in your pipeline.
@@ -241,7 +243,9 @@ Use this YAML to install `pytest` and `pytest-cov`, run tests, output test resul
     pytest tests --doctest-modules --junitxml=junit/test-results.xml --cov=. --cov-report=xml --cov-report=html
   displayName: 'Test with pytest'
 ```
+
 ::: moniker range="azure-devops"
+
 ### Run tests with Tox
 
 Azure Pipelines can run parallel Tox test jobs to split up the work. On a development computer, you have to run your test environments in series. This sample uses `tox -e py` to run whichever version of Python is active for the current job.
@@ -323,7 +327,7 @@ You can also use Azure Pipelines to [build an image](containers/build-image.md) 
 
 ## Related extensions
 
-- [PyLint Checker](https://marketplace.visualstudio.com/items?itemName=dazfuller.pylint-task) (Darren Fuller)  
-- [Python Test](https://marketplace.visualstudio.com/items?itemName=dazfuller.pyunittest-task) (Darren Fuller)
-- [Azure DevOps plugin for PyCharm (IntelliJ)](https://plugins.jetbrains.com/plugin/7981) (Microsoft)  
-- [Python in Visual Studio Code](https://code.visualstudio.com/docs/python) (Microsoft)  
+* [PyLint Checker](https://marketplace.visualstudio.com/items?itemName=dazfuller.pylint-task) (Darren Fuller)
+* [Python Test](https://marketplace.visualstudio.com/items?itemName=dazfuller.pyunittest-task) (Darren Fuller)
+* [Azure DevOps plugin for PyCharm (IntelliJ)](https://plugins.jetbrains.com/plugin/7981) (Microsoft)
+* [Python in Visual Studio Code](https://code.visualstudio.com/docs/python) (Microsoft)

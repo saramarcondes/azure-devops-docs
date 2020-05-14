@@ -11,7 +11,6 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Merges Command
 
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
@@ -51,7 +50,7 @@ tf merges [source] destination [/recursive] [/extended] [/format:(brief|detailed
 <tr>
 	<td><p><strong>/extended</strong></p></td>
 	<td><p>Displays a list of merges for a specific range of target items (for example: <strong>tf merges</strong> tgt\file1.txt; C21-25). This option displays the types of merges (for example, add or edit) and detailed information about the source and target items. This option implies <strong>/format: Detailed</strong>.</p><strong>Note</strong>
- You cannot use this option if you have specified a source item. 
+ You cannot use this option if you have specified a source item.
 </td></tr>
 <tr>
 	<td><p><strong>/format</strong></p></td>
@@ -75,23 +74,23 @@ For more information on how to find the **tf** command-line utility, see [Tf Com
 
 ## Examples
 
-The following example displays information about all merge operations performed between Beta1\_branch and RTM\_branch.
+The following example displays information about all merge operations performed between Beta1_branch and RTM_branch.
 
 ```
 c:\projects>tf merges /recursive Beta1_branch RTM_branch
 ```
 
--   Sample output:
+* Sample output:
 
-    ```
-	Changeset  Merged in Changeset   Author   Date
-	--------------------------------------------------------
-	135         162                   Justin     10/31/2003
-	146         162                   Justin      10/31/2003
-	147*        167                   Bill       11/02/2003
-    ```
+  ```
+  Changeset  Merged in Changeset   Author   Date
+  --------------------------------------------------------
+  135         162                   Justin     10/31/2003
+  146         162                   Justin      10/31/2003
+  147*        167                   Bill       11/02/2003
+  ```
 
-    The asterisk '\*' next to changeset 147 indicates that only some of the changes in that changeset \#147 were merged into changeset \#167.
+  The asterisk '\*' next to changeset 147 indicates that only some of the changes in that changeset \#147 were merged into changeset \#167.
 
 ## See Also
 
@@ -99,10 +98,12 @@ c:\projects>tf merges /recursive Beta1_branch RTM_branch
 
 [Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be)  
 [Merge Command](merge-command.md)  
-[Branch Command](branch-command.md)  
+[Branch Command](branch-command.md)
+
 #### Concepts
 
-[Informational Commands](https://msdn.microsoft.com/library/ms181450)  
+[Informational Commands](https://msdn.microsoft.com/library/ms181450)
+
 #### Other Resources
 
 [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)  

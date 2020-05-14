@@ -13,7 +13,6 @@ ms.date: 08/04/2016
 
 Module path: `TFS/VersionControl/Contracts`
 
-
 ### Members
 
 * `$skip`: number. Number of entries to skip
@@ -32,7 +31,7 @@ Module path: `TFS/VersionControl/Contracts`
 
 * `ids`: string[]. If provided, specifies the exact commit IDs of the commits to fetch. May not be combined with other parameters.
 
-* `includeLinks`: boolean. Whether to include the _links field on the shallow references
+* `includeLinks`: boolean. Whether to include the \_links field on the shallow references
 
 * `itemPath`: string. Path of item to search under
 
@@ -43,4 +42,3 @@ Module path: `TFS/VersionControl/Contracts`
 * `toDate`: string. If provided, only include history entries created before this date (string)
 
 * `user`: string. Alias or display name of the committer
-

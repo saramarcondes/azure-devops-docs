@@ -11,7 +11,6 @@ ms.date: 01/22/2020
 monikerRange: '>= tfs-2018'
 ---
 
-
 # How to enable subscription logging for troubleshooting
 
 [!INCLUDE [version-vsts-tfs-2018](../includes/version-vsts-tfs-2018.md)]
@@ -19,23 +18,23 @@ monikerRange: '>= tfs-2018'
 > [!NOTE]  
 > This article applies to Azure DevOps, TFS 2018 Update 2, and later versions. For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
 
-Subscription logging is a valuable tool for troubleshooting.  It provides diagnostic information from the notifications pipeline and is disabled by default.  Once enabled, up to 25 logs, or one hour's worth of logs, are collected for the subscription.
+Subscription logging is a valuable tool for troubleshooting. It provides diagnostic information from the notifications pipeline and is disabled by default. Once enabled, up to 25 logs, or one hour's worth of logs, are collected for the subscription.
 
 ## Enabling subscription logging
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > There is a known issue in TFS 2018 Update 2 and TFS 2018 Update 3, where enabling subscription logging for default (globe icon) subscriptions may cause issues with notification delivery. If you're on one of those two versions, it's recommended that you not enable subscription logging for default subscriptions.
 
 Complete the following steps to enable subscription logging:
 
-1. Enable diagnostics for your organization by entering the following URL in your browser:
+1.  Enable diagnostics for your organization by entering the following URL in your browser:
 
     `https://dev.azure.com/{organization}/_notifications?diagnostics=true`
 
-2. The option _Enable Diagnostics_ appears in the subscription context menu.
+2.  The option _Enable Diagnostics_ appears in the subscription context menu.
 
-> [!div class="mx-imgBorder"] 
->![Enable subscription logging](media/enable-subscription-logging.png)
+> [!div class="mx-imgBorder"]
+> ![Enable subscription logging](media/enable-subscription-logging.png)
 
 ## View subscription diagnostic logs for event matching
 
@@ -64,9 +63,3 @@ Retrieve all notification delivery logs in a given time frame by entering the UR
 * _event ID_ is **a96d6177-beef-477a-a2ee-2c31433214d0** for any other event type
 
 The result is JSON-formatted logging information.
-
-
-
-
-
-

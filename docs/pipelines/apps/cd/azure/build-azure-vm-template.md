@@ -29,43 +29,43 @@ VMs must be checked into a version control repository
 along with the rest of the application code, and it
 must be published as part of the build output.
 
-## Create the template 
+## Create the template
 
 Before you can build the solution, you must create an Azure RM template.
 Follow these steps to create and check-in a new Resource Manager template.
 
-1. In Visual Studio, choose **File | Add | New project** and add a
-   new **Azure Resource Group** project to your solution.
+1.  In Visual Studio, choose **File | Add | New project** and add a
+    new **Azure Resource Group** project to your solution.
 
-1. When prompted for an Azure template, select **Windows Virtual Machine**.
+1.  When prompted for an Azure template, select **Windows Virtual Machine**.
 
-   > The **Windows Virtual Machine** template is a simple example of
-   provisioning a single virtual machine in Azure.
-   For provisioning other types of resources, you can either edit the
-   **WindowsVirtualMachine.json** file, select other
-   templates in the project creation wizard, or download one
-   of the many templates available at
-   [https://github.com/Azure/azure-quickstart-templates](https://github.com/Azure/azure-quickstart-templates).
+    > The **Windows Virtual Machine** template is a simple example of
+    > provisioning a single virtual machine in Azure.
+    > For provisioning other types of resources, you can either edit the
+    > **WindowsVirtualMachine.json** file, select other
+    > templates in the project creation wizard, or download one
+    > of the many templates available at
+    > [https://github.com/Azure/azure-quickstart-templates](https://github.com/Azure/azure-quickstart-templates).
 
-1. Add a project for your app to the solution. This could be
-   a project for an existing app, or a new project created from the
-   Visual Studio **File | Add | New project** menu.
+1.  Add a project for your app to the solution. This could be
+    a project for an existing app, or a new project created from the
+    Visual Studio **File | Add | New project** menu.
 
-1. Save the entire solution (not just the project) and 
-   commit the changes into a [Team Foundation Server](../../../../repos/tfvc/index.md) or 
-   [Azure Repos Git](../../../../repos/git/index.yml) repository.
+1.  Save the entire solution (not just the project) and
+    commit the changes into a [Team Foundation Server](../../../../repos/tfvc/index.md) or
+    [Azure Repos Git](../../../../repos/git/index.yml) repository.
 
 ## Create the build pipeline
 
 Carry out the following steps to publish an artifact with the Resource Manager template files.
 
-1. Create a new build pipeline for the solution you just checked into a TFS or Git repo.
+1.  Create a new build pipeline for the solution you just checked into a TFS or Git repo.
 
-1. Enable continuous integration (CI) to tell the system to queue a build whenever someone on your team commits or checks in new code.
+1.  Enable continuous integration (CI) to tell the system to queue a build whenever someone on your team commits or checks in new code.
 
-1. Publish the artifacts from the build and make sure that the template files from your ARM template project are included in the artifacts published by your build pipeline.
+1.  Publish the artifacts from the build and make sure that the template files from your ARM template project are included in the artifacts published by your build pipeline.
 
-1. Save the pipeline, queue a new build, and verify that the artifact contains the **Templates** folder containing the template files **WindowsVirtualMachine.json** and **WindowsVirtualMachine.parameters.json**. This is the template that your release pipeline will consume to provision an Azure virtual machine.
+1.  Save the pipeline, queue a new build, and verify that the artifact contains the **Templates** folder containing the template files **WindowsVirtualMachine.json** and **WindowsVirtualMachine.parameters.json**. This is the template that your release pipeline will consume to provision an Azure virtual machine.
 
 For more details on each step, see [Continuous integration with Azure Resource Manager templates](/azure/azure-resource-manager/templates/deployment-tutorial-pipeline).
 
@@ -86,4 +86,3 @@ After you've run the build, you're ready to create a release pipeline to provisi
 <!-- ENDSECTION -->
 
 [!INCLUDE [rm-help-support-shared](../../../includes/rm-help-support-shared.md)]
-

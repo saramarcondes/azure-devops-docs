@@ -16,7 +16,7 @@ ms.date: 03/26/2019
 [!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
 
 ::: moniker range=">= azure-devops-2019"
-In this quickstart, you learn how to share your project with your team, add project members, and check the latest project activity. Share your project and objective, and ways for team members to contribute to the project through a project README file or through a project wiki.  
+In this quickstart, you learn how to share your project with your team, add project members, and check the latest project activity. Share your project and objective, and ways for team members to contribute to the project through a project README file or through a project wiki.
 
 If you want to use a project wiki, then first [create a Wiki for your project](../../project/wiki/wiki-create-repo.md). You can then [change the project summary page to point to the wiki](#change-repo).
 ::: moniker-end
@@ -26,47 +26,47 @@ From the project home page, share your project with your team, add project membe
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
+
 > [!NOTE]
 > The features and functions available from your project page depend on the source control, Git, or Team Foundation Version Control (TFVC) that you selected when you [created your team project](../../organizations/projects/create-project.md).  
-::: moniker-end
+> ::: moniker-end
 
 ## Prerequisites
 
-- You must be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) or have your **Edit project-level information** permission set to **Allow** to do the following:
-  - Edit information on the project page
-  - Change the repository that you use to share your project mission
-  - Manage project membership
-- To edit a page, you must be a contributor to the repository or branch or have the **Contribute** permissions set to **Allow**.  
-- To view the project page, you must be a valid member of the project. For more information, see [Permissions and groups, Valid user groups](../../organizations/security/about-permissions.md#validusers).
+* You must be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) or have your **Edit project-level information** permission set to **Allow** to do the following:
+  * Edit information on the project page
+  * Change the repository that you use to share your project mission
+  * Manage project membership
+* To edit a page, you must be a contributor to the repository or branch or have the **Contribute** permissions set to **Allow**.
+* To view the project page, you must be a valid member of the project. For more information, see [Permissions and groups, Valid user groups](../../organizations/security/about-permissions.md#validusers).
 
 ## Open project summary
 
 ::: moniker range=">= azure-devops-2019"
-From your web browser, choose **Overview > Summary**. If you don't have a  project yet, [create a project](../../organizations/projects/create-project.md).
+From your web browser, choose **Overview > Summary**. If you don't have a project yet, [create a project](../../organizations/projects/create-project.md).
 
 If you haven't set up your project summary yet, you'll see this welcome page:
 
-> [!div class="mx-imgBorder"]
-> ![Open project summary, new nav](media/share-project/welcome-page-new-nav.png)  
+> [!div class="mx-imgBorder"] > ![Open project summary, new nav](media/share-project/welcome-page-new-nav.png)
 
 Select one of the following tasks to get started:
 
-- **Invite** to begin [adding others to your project](../../organizations/security/add-users-team-project.md). Note, you can only invite users who have already been [added to your organization](../../organizations/accounts/add-team-members.md).
-- **Boards** to begin [adding work items](../../boards/work-items/view-add-work-items.md).
-- **Repos** to open [Repos>Files](../../repos/git/clone.md) page where you can clone or import a repository, or [initialize a README file](#initialize-a-readme-file-for-a-git-repo) for your project summary page.
-- **Pipelines** to start [defining a pipeline](../../pipelines/index.yml).
-- **Test Plans** to start [defining test plans and test suites](../../test/create-a-test-plan.md).
-- [Manage your services](../../organizations/settings/set-services.md) to disable the visibility of one or more services.
+* **Invite** to begin [adding others to your project](../../organizations/security/add-users-team-project.md). Note, you can only invite users who have already been [added to your organization](../../organizations/accounts/add-team-members.md).
+* **Boards** to begin [adding work items](../../boards/work-items/view-add-work-items.md).
+* **Repos** to open [Repos>Files](../../repos/git/clone.md) page where you can clone or import a repository, or [initialize a README file](#initialize-a-readme-file-for-a-git-repo) for your project summary page.
+* **Pipelines** to start [defining a pipeline](../../pipelines/index.yml).
+* **Test Plans** to start [defining test plans and test suites](../../test/create-a-test-plan.md).
+* [Manage your services](../../organizations/settings/set-services.md) to disable the visibility of one or more services.
 
 To support your project mission, choose a README file that you maintain in a project repository, or the [project Wiki](../../project/wiki/wiki-create-repo.md). To choose between a README file or a Wiki, see [Change the repository](#change-repo). To define a README file for your project, see [Initialize a README file for your Git repo](#initialize-git) or [Initialize a README file for your TFVC repo](#initialize-tfvc).
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018 || azure-devops"
-From your web browser, open the team project drop down menu and select the home page. If you don't have a  project, [create a team project](../../organizations/projects/create-project.md).
+From your web browser, open the team project drop down menu and select the home page. If you don't have a project, [create a team project](../../organizations/projects/create-project.md).
 
 ![Open Project Summary ](media/share-project/project-vision-status-project-home-page.png)
 
-To define a README file for your project, see [Initialize a README file for your Git repo](#initialize-git) or  [Initialize a README file for your TFVC repo](#initialize-tfvc).
+To define a README file for your project, see [Initialize a README file for your Git repo](#initialize-git) or [Initialize a README file for your TFVC repo](#initialize-tfvc).
 
 ::: moniker-end
 
@@ -81,73 +81,73 @@ To define a README file for your project, see [Initialize a README file for your
 
 ## Initialize a README file for a Git repo
 
-You can share your project and objective, as well as ways for team members to contribute to the project through a project README file. For Git projects, the README.md file needs to be at the root of each repository in the default branch. For Git based projects the left pane supports navigation to other repositories. A separate Welcome page/README.md file can be created for each repository.  
+You can share your project and objective, as well as ways for team members to contribute to the project through a project README file. For Git projects, the README.md file needs to be at the root of each repository in the default branch. For Git based projects the left pane supports navigation to other repositories. A separate Welcome page/README.md file can be created for each repository.
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Open **Repos>Files**. This page guides you to get started quickly by adding code to your repository when you choose one of the options to clone, push, import, or initialize a repo.  
+1.  Open **Repos>Files**. This page guides you to get started quickly by adding code to your repository when you choose one of the options to clone, push, import, or initialize a repo.
 
-2. With the **Add a README** check box checked, choose **Initialize**.
+2.  With the **Add a README** check box checked, choose **Initialize**.
 
-   > [!div class="mx-imgBorder"]  
-   > ![Initialize README file, new nav](media/share-project/initialize-readme-new-nav.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Initialize README file, new nav](media/share-project/initialize-readme-new-nav.png)
 
-   A default README file is added to the project repository, in this case, the **Fabrikam Test** repo.
+    A default README file is added to the project repository, in this case, the **Fabrikam Test** repo.
 
-3. Return to **Overview>Summary** and choose the README file for the project page. Choose the ![ ](../../media/icons/edit.png) edit icon.
+3.  Return to **Overview>Summary** and choose the README file for the project page. Choose the ![ ](../../media/icons/edit.png) edit icon.
 
-   > [!div class="mx-imgBorder"]  
-   > ![Choose README file, new nav](media/share-project/choose-readme-file-new-nav.png)  
+    > [!div class="mx-imgBorder"]  
+    > ![Choose README file, new nav](media/share-project/choose-readme-file-new-nav.png)
 
-4. Select the project repository where you initialized the README file.
+4.  Select the project repository where you initialized the README file.
 
-   > [!div class="mx-imgBorder"]  
-   > ![Choose Repository where the README file exists, new nav](media/share-project/choose-readme-file-dialog-new-nav.png)  
+    > [!div class="mx-imgBorder"]  
+    > ![Choose Repository where the README file exists, new nav](media/share-project/choose-readme-file-dialog-new-nav.png)
 
-5. To edit the README file, choose the README file link.
+5.  To edit the README file, choose the README file link.
 
-   > [!div class="mx-imgBorder"]  
-   > ![Edit the README file, new nav](media/share-project/edit-readme-file.png)  
+    > [!div class="mx-imgBorder"]  
+    > ![Edit the README file, new nav](media/share-project/edit-readme-file.png)
 
-   You're directed to the **Repos>Files** page for the README file. You can edit and modify the README Markdown file like you would any other file in a Git repository. You can use Markdown language to format the README file and add images. To learn more about adding a README file, see [Create a README for your repo](../../repos/git/create-a-readme.md) and [Markdown guidance](../../project/wiki/markdown-guidance.md).
+    You're directed to the **Repos>Files** page for the README file. You can edit and modify the README Markdown file like you would any other file in a Git repository. You can use Markdown language to format the README file and add images. To learn more about adding a README file, see [Create a README for your repo](../../repos/git/create-a-readme.md) and [Markdown guidance](../../project/wiki/markdown-guidance.md).
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018 || azure-devops"
 
-1. Open the Project home page.
+1.  Open the Project home page.
 
-2. With the **Add a README** check box checked, choose **Initialize**.
+2.  With the **Add a README** check box checked, choose **Initialize**.
 
-   > [!div class="mx-imgBorder"]  
-   > ![Initialize README file, new nav](media/share-project/initialize-readme-prev-nav.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Initialize README file, new nav](media/share-project/initialize-readme-prev-nav.png)
 
-   A default README file is added to the project repository, in this case, the **Fabrikam Test** repo.
+    A default README file is added to the project repository, in this case, the **Fabrikam Test** repo.
 
-3. To edit the project README.md file, choose **Edit**.
+3.  To edit the project README.md file, choose **Edit**.
 
-   > [!div class="mx-imgBorder"]  
-   > ![Git new project summary page](media/share-project/git-start-page-readme.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Git new project summary page](media/share-project/git-start-page-readme.png)
 
-   Use Markdown language to format the README file and add images. To learn more about adding a README file, see [Create a README for your repo](../../repos/git/create-a-readme.md) and [Markdown guidance](../../project/wiki/markdown-guidance.md).
+    Use Markdown language to format the README file and add images. To learn more about adding a README file, see [Create a README for your repo](../../repos/git/create-a-readme.md) and [Markdown guidance](../../project/wiki/markdown-guidance.md).
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2017"  
+::: moniker range=">= tfs-2015 <= tfs-2017"
 
-1. You can start editing directly from the Welcome page.
+1.  You can start editing directly from the Welcome page.
 
-   > [!div class="mx-imgBorder"]  
-   > ![Project page, Edit Welcome Markdown page](media/share-project/markdown-welcome-page-edit.png)  
+    > [!div class="mx-imgBorder"]  
+    > ![Project page, Edit Welcome Markdown page](media/share-project/markdown-welcome-page-edit.png)
 
-   > [!NOTE]
-   > If you set policies on the Git repository, changes to the welcome page must be done as a pull request.  
+    > [!NOTE]
+    > If you set policies on the Git repository, changes to the welcome page must be done as a pull request.
 
-2. To add another page, enter a link to a new Markdown file that doesn't yet exist, for example:
+2.  To add another page, enter a link to a new Markdown file that doesn't yet exist, for example:
 
-   `[page-1](./page-1.md)`
+    `[page-1](./page-1.md)`
 
-3. After you save the file, select the link. Respond to the prompt to edit the file and commit it to your repository.  
+3.  After you save the file, select the link. Respond to the prompt to edit the file and commit it to your repository.
 
 ::: moniker-end
 
@@ -159,62 +159,62 @@ For projects that selected TFVC for version control, the README.md file needs to
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Open **Repos>Files**.
+1.  Open **Repos>Files**.
 
-2. Select **Add Project Description**.
+2.  Select **Add Project Description**.
 
-   > [!div class="mx-imgBorder"]  
-   > ![Welcome page, TFVC new project, create readme, new nav](media/share-project/welcome-page-tfvc-new-nav.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Welcome page, TFVC new project, create readme, new nav](media/share-project/welcome-page-tfvc-new-nav.png)
 
-3. Select the TFVC repository and choose **Save**. If no README file has been created yet in the repo, you'll see the following message.
+3.  Select the TFVC repository and choose **Save**. If no README file has been created yet in the repo, you'll see the following message.
 
-   > [!div class="mx-imgBorder"]  
-   > ![About this project dialog, new nav](media/share-project/about-this-project-form.png)
+    > [!div class="mx-imgBorder"]  
+    > ![About this project dialog, new nav](media/share-project/about-this-project-form.png)
 
-4. To create a README file, choose **Repos>Files** and choose new file to add a file to the project repository.
+4.  To create a README file, choose **Repos>Files** and choose new file to add a file to the project repository.
 
-5. Name the file as **README.md**.
+5.  Name the file as **README.md**.
 
-   > [!div class="mx-imgBorder"]  
-   > ![Add new file dialog, new nav](media/share-project/create-readme-file-web-portal.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Add new file dialog, new nav](media/share-project/create-readme-file-web-portal.png)
 
-6. Add the contents of your README file in Markdown format, and then choose **Check in...**.  
+6.  Add the contents of your README file in Markdown format, and then choose **Check in...**.
 
-   > [!div class="mx-imgBorder"]  
-   > ![Enter README file contents, new nav](media/share-project/tfvc-readme-file.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Enter README file contents, new nav](media/share-project/tfvc-readme-file.png)
 
-7. Select **Check in** to complete the check in process of the README file.  
+7.  Select **Check in** to complete the check in process of the README file.
 
-   > [!div class="mx-imgBorder"]  
-   > ![Check-in README file dialog, new nav](media/share-project/tfvc-readme-checkin.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Check-in README file dialog, new nav](media/share-project/tfvc-readme-checkin.png)
 
-8. Select **Overview>Summary** to review your project summary page with the README file displayed.  
+8.  Select **Overview>Summary** to review your project summary page with the README file displayed.
 
-   > [!div class="mx-imgBorder"]  
-   > ![About this project dialog, new nav](media/share-project/tfvc-project-summary-with-readme.png)
+    > [!div class="mx-imgBorder"]  
+    > ![About this project dialog, new nav](media/share-project/tfvc-project-summary-with-readme.png)
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018 || azure-devops"
 
-1. Open the Project home page.
+1.  Open the Project home page.
 
-2. Select **Create README**.  
+2.  Select **Create README**.
 
-   > [!div class="mx-imgBorder"]  
-   > ![Welcome page, TFVC new project, create README](media/share-project/welcome-page-tfvc-prev-nav.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Welcome page, TFVC new project, create README](media/share-project/welcome-page-tfvc-prev-nav.png)
 
-   A default README file is added to the project repository, in this case, the **Fabrikam Fiber TFVC** repo.
+    A default README file is added to the project repository, in this case, the **Fabrikam Fiber TFVC** repo.
 
-3. You can immediately edit the README file. When you're done, select **Check in**.
+3.  You can immediately edit the README file. When you're done, select **Check in**.
 
-   > [!div class="mx-imgBorder"]  
-   > ![Edit page, new nav](media/share-project/tfvc-checkin-page.png)  
-Any additional Markdown files you have (ones with a *.md extension) in the root of the project folder also appear in the left pane for easy navigation between them so you can provide additional information.  
+    > [!div class="mx-imgBorder"]  
+    > ![Edit page, new nav](media/share-project/tfvc-checkin-page.png)  
+    > Any additional Markdown files you have (ones with a \*.md extension) in the root of the project folder also appear in the left pane for easy navigation between them so you can provide additional information.
 
 ::: moniker-end
 
-<a id="cross-project-activity">  </a>
+<a id="cross-project-activity"> </a>
 
 ## View project activity, add project members
 
@@ -223,8 +223,7 @@ In addition to sharing information, the project summary page pulls data from the
 ::: moniker range=">= azure-devops-2019"
 To add users to the project, choose the ![ ](media/share-project/add-members-new-nav.png) **add** button. You can only add users to a project that you have already added to the organization. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md).
 
-> [!div class="mx-imgBorder"]
-> ![Project stats](media/share-project/project-stats-new-nav.png)
+> [!div class="mx-imgBorder"] > ![Project stats](media/share-project/project-stats-new-nav.png)
 
 ::: moniker-end
 
@@ -232,7 +231,7 @@ To add users to the project, choose the ![ ](media/share-project/add-members-new
 
 To add users to the project, choose the **add** button. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md).
 
-![Project Home Page, Activity](../../project/wiki/media/project-home-page-activity.png)  
+![Project Home Page, Activity](../../project/wiki/media/project-home-page-activity.png)
 
 ::: moniker-end
 
@@ -244,48 +243,46 @@ You can change the repository used to support your project vision, including poi
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Open **Overview > Summary** .
+1.  Open **Overview > Summary** .
 
-2. Choose the ![ ](../../media/icons/edit.png) edit icon.
+2.  Choose the ![ ](../../media/icons/edit.png) edit icon.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Choose README file, new nav](media/share-project/choose-readme-file-new-nav.png)  
+        	> [!div class="mx-imgBorder"]  
+        	> ![Choose README file, new nav](media/share-project/choose-readme-file-new-nav.png)  
 
-   If you don't see the **Edit** icon, then you're not a member of the Project Administrators group. [Get added as an admin](../../organizations/security/set-project-collection-level-permissions.md) to proceed.
+    If you don't see the **Edit** icon, then you're not a member of the Project Administrators group. [Get added as an admin](../../organizations/security/set-project-collection-level-permissions.md) to proceed.
 
-3. Select a different repository or choose the Wiki option.
+3.  Select a different repository or choose the Wiki option.
 
-   > [!div class="mx-imgBorder"]  
-   > ![Choose Repository where the README file exists, new nav](media/share-project/change-repo-new-nav.png)  
+    > [!div class="mx-imgBorder"]  
+    > ![Choose Repository where the README file exists, new nav](media/share-project/change-repo-new-nav.png)
 
-   > [!TIP]  
-   > If you choose the Wiki option, only the Wiki home page displays. To access additional Wiki pages, you must navigate to the Wiki.
+    > [!TIP]  
+    > If you choose the Wiki option, only the Wiki home page displays. To access additional Wiki pages, you must navigate to the Wiki.
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018 || azure-devops"
 
-1. From your project home page, choose **Change**.
+1.  From your project home page, choose **Change**.
 
-   > [!div class="mx-imgBorder"]  
-   > ![Project page, Change repo](media/share-project/markdown-welcome-page-change-location.png)  
+    > [!div class="mx-imgBorder"]  
+    > ![Project page, Change repo](media/share-project/markdown-welcome-page-change-location.png)
 
-   If you don't see **Change** link, then you're not a member of the Project Administrators group. [Get added as an admin](../../organizations/security/set-project-collection-level-permissions.md) to proceed.
+    If you don't see **Change** link, then you're not a member of the Project Administrators group. [Get added as an admin](../../organizations/security/set-project-collection-level-permissions.md) to proceed.
 
-2. From the select file dialog, choose an existing repo from the drop-down menu, or choose the Wiki option, shown as follows.
+2.  From the select file dialog, choose an existing repo from the drop-down menu, or choose the Wiki option, shown as follows.
 
-   <img src="media/share-project/select-file-to-display-dialog.png" alt="Web portal, Project page, Select file to display dialog" style="border: 1px solid #C3C3C3;" />
+    <img src="media/share-project/select-file-to-display-dialog.png" alt="Web portal, Project page, Select file to display dialog" style="border: 1px solid #C3C3C3;" />
 
-   > [!TIP]  
-   > Only the Wiki home page displays. To access additional Wiki pages, you must navigate to the Wiki.
+    > [!TIP]  
+    > Only the Wiki home page displays. To access additional Wiki pages, you must navigate to the Wiki.
 
 ::: moniker-end
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Create a wiki for your team project](../../project/wiki/wiki-create-repo.md)
-
+> [!div class="nextstepaction"][create a wiki for your team project](../../project/wiki/wiki-create-repo.md)
 
 <!---
 ### Git repository

@@ -18,22 +18,25 @@ ms.date: 08/04/2016
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 
-## Get charts on a board 
+## Get charts on a board
+
 <a name="getchartsonaboard" />
 
 ```no-highlight
 GET https://{instance}/DefaultCollection/{project}/{team}/_apis/work/boards/{board}/charts?api-version={api-version}
 ```
 
-| Parameter | Type    |Default Value | Notes	
-|:----------|:--------|:------------ |:------------------------------
+| Parameter | Type | Default Value | Notes |
+| :-------- | :--- | :------------ | :---- |
+
+
 | URL
-| instance  | string  | | TFS server name ({server:port}).
-| project   | string  | | Name or ID of a project.
-| team	    | string  | Project's default team Id| Name or ID of a team within the project.
-| board	| string  || Name or ID of the specific board.
+| instance | string | | TFS server name ({server:port}).
+| project | string | | Name or ID of a project.
+| team | string | Project's default team Id| Name or ID of a team within the project.
+| board | string || Name or ID of the specific board.
 | Query
-| api-version | string  || [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string || [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
@@ -49,31 +52,33 @@ GET mytfsserver/defaultcollection/fabrikam/fabrikam%20team/_apis/work/boards/Sto
   "value": [
     {
       "name": "cumulativeFlow",
-      "url": "mytfsserver/defaultcollection/bfeaf5d7-8bf6-4bc8-96c0-47a1727c7815/00f7c2e3-e13b-4e7d-8ecb-bb599e7a0764/_apis/work/boards/Stories/charts/cumulativeFlow"
+      "url":
+        "mytfsserver/defaultcollection/bfeaf5d7-8bf6-4bc8-96c0-47a1727c7815/00f7c2e3-e13b-4e7d-8ecb-bb599e7a0764/_apis/work/boards/Stories/charts/cumulativeFlow"
     }
   ]
 }
 ```
 
-
 ## Get a chart by name
+
 <a name="getachartbyname" />
 
 ```no-highlight
 GET https://{instance}/DefaultCollection/{project}/{team}/_apis/work/boards/{board}/charts/{chart}?api-version={api-version}
 ```
 
-| Parameter | Type    |Default Value | Notes	
-|:----------|:--------|:------------ |:------------------------------
+| Parameter | Type | Default Value | Notes |
+| :-------- | :--- | :------------ | :---- |
+
+
 | URL
-| instance  | string  | | TFS server name ({server:port}).
-| project   | string  | | Name or ID of a project.
-| team	    | string  | Project's default team Id| Name or ID of a team within the project.
-| board	| string  || Name or ID of the specific board.
+| instance | string | | TFS server name ({server:port}).
+| project | string | | Name or ID of a project.
+| team | string | Project's default team Id| Name or ID of a team within the project.
+| board | string || Name or ID of the specific board.
 | chart| enum (CumulativeFlow)|| Name of the specific chart.
 | Query
-| api-version | string  || [Version](../../concepts/rest-api-versioning.md) of the API to use.
-
+| api-version | string || [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
@@ -86,62 +91,70 @@ GET mytfsserver/defaultcollection/fabrikam/fabrikam%20team/_apis/work/boards/Sto
 ```json
 {
   "name": "cumulativeFlow",
-  "url": "mytfsserver/defaultcollection/bfeaf5d7-8bf6-4bc8-96c0-47a1727c7815/00f7c2e3-e13b-4e7d-8ecb-bb599e7a0764/_apis/work/boards/Stories/charts/cumulativeFlow",
+  "url":
+    "mytfsserver/defaultcollection/bfeaf5d7-8bf6-4bc8-96c0-47a1727c7815/00f7c2e3-e13b-4e7d-8ecb-bb599e7a0764/_apis/work/boards/Stories/charts/cumulativeFlow",
   "settings": {
     "startDate": null,
     "hideIncomingColumn": false
   },
   "_links": {
     "self": {
-      "href": "mytfsserver/defaultcollection/bfeaf5d7-8bf6-4bc8-96c0-47a1727c7815/00f7c2e3-e13b-4e7d-8ecb-bb599e7a0764/_apis/work/boards/Stories/charts/cumulativeFlow"
+      "href":
+        "mytfsserver/defaultcollection/bfeaf5d7-8bf6-4bc8-96c0-47a1727c7815/00f7c2e3-e13b-4e7d-8ecb-bb599e7a0764/_apis/work/boards/Stories/charts/cumulativeFlow"
     },
     "board": {
-      "href": "mytfsserver/defaultcollection/bfeaf5d7-8bf6-4bc8-96c0-47a1727c7815/00f7c2e3-e13b-4e7d-8ecb-bb599e7a0764/_apis/work/boards/Stories"
+      "href":
+        "mytfsserver/defaultcollection/bfeaf5d7-8bf6-4bc8-96c0-47a1727c7815/00f7c2e3-e13b-4e7d-8ecb-bb599e7a0764/_apis/work/boards/Stories"
     }
   }
 }
 ```
 
-
 ## Update a cumulative flow chart
+
 <a name="updateacumulativeflowchart" />
 
 ```no-highlight
 PATCH https://{instance}/DefaultCollection/{project}/{team}/_apis/work/boards/{board}/charts/CumulativeFlow?api-version={api-version}
 ```
+
 ```http
 Content-Type: application/json
 ```
+
 ```json
 {
   "settings": {
-    "startDate": {startDate},
-    "hideIncomingColumn": {hideIncomingColumn},
-    "hideOutgoingColumn": {hideOutgoingColumn}
+    "startDate": { startDate },
+    "hideIncomingColumn": { hideIncomingColumn },
+    "hideOutgoingColumn": { hideOutgoingColumn }
   }
 }
 ```
 
-| Parameter | Type    |Default Value | Notes	
-|:----------|:--------|:--------|:------------------------------
+| Parameter | Type | Default Value | Notes |
+| :-------- | :--- | :------------ | :---- |
+
+
 | URL
-| instance  | string  |   | TFS server name ({server:port}).
-| project   | string  |  | Name or ID of a project.
-| team	    | string  | Project's default team Id| Name or ID of a team within the project.
-| board	| string  |  | Name or ID of the specific board.
+| instance | string | | TFS server name ({server:port}).
+| project | string | | Name or ID of a project.
+| team | string | Project's default team Id| Name or ID of a team within the project.
+| board | string | | Name or ID of the specific board.
 | chart| enum (CumulativeFlow)| | Name of the specific chart.
 | Query
-| api-version | string  |  |[Version](../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | |[Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
-| startDate	| date | null  |The start date of the CFD chart. The date will be stored as UTC, it is the consumers' responsibility to convert their date to UTC.
-| hideIncomingColumn	| bool	| false | Indicate if the CFD chart should hide the incoming column.
-| hideOutgoingColumn	| bool	| false | Indicate if the CFD chart should hide the outgoing column.
+| startDate | date | null |The start date of the CFD chart. The date will be stored as UTC, it is the consumers' responsibility to convert their date to UTC.
+| hideIncomingColumn | bool | false | Indicate if the CFD chart should hide the incoming column.
+| hideOutgoingColumn | bool | false | Indicate if the CFD chart should hide the outgoing column.
 
 #### Sample request
 
 ```
 PATCH mytfsserver/defaultcollection/fabrikam/fabrikam%20team/_apis/work/boards/Stories/charts/cumulativeFlow?api-version=2.0-preview.1
 ```
+
 ```json
 {
   "settings": {
@@ -157,7 +170,8 @@ PATCH mytfsserver/defaultcollection/fabrikam/fabrikam%20team/_apis/work/boards/S
 ```json
 {
   "name": "cumulativeFlow",
-  "url": "mytfsserver/defaultcollection/bfeaf5d7-8bf6-4bc8-96c0-47a1727c7815/00f7c2e3-e13b-4e7d-8ecb-bb599e7a0764/_apis/work/boards/Stories/charts/cumulativeFlow",
+  "url":
+    "mytfsserver/defaultcollection/bfeaf5d7-8bf6-4bc8-96c0-47a1727c7815/00f7c2e3-e13b-4e7d-8ecb-bb599e7a0764/_apis/work/boards/Stories/charts/cumulativeFlow",
   "settings": {
     "startDate": "2015-09-01T12:07:11Z",
     "hideIncomingColumn": true,
@@ -165,16 +179,16 @@ PATCH mytfsserver/defaultcollection/fabrikam/fabrikam%20team/_apis/work/boards/S
   },
   "_links": {
     "self": {
-      "href": "mytfsserver/defaultcollection/bfeaf5d7-8bf6-4bc8-96c0-47a1727c7815/00f7c2e3-e13b-4e7d-8ecb-bb599e7a0764/_apis/work/boards/Stories/charts/cumulativeFlow"
+      "href":
+        "mytfsserver/defaultcollection/bfeaf5d7-8bf6-4bc8-96c0-47a1727c7815/00f7c2e3-e13b-4e7d-8ecb-bb599e7a0764/_apis/work/boards/Stories/charts/cumulativeFlow"
     },
     "board": {
-      "href": "mytfsserver/defaultcollection/bfeaf5d7-8bf6-4bc8-96c0-47a1727c7815/00f7c2e3-e13b-4e7d-8ecb-bb599e7a0764/_apis/work/boards/Stories"
+      "href":
+        "mytfsserver/defaultcollection/bfeaf5d7-8bf6-4bc8-96c0-47a1727c7815/00f7c2e3-e13b-4e7d-8ecb-bb599e7a0764/_apis/work/boards/Stories"
     }
   }
 }
 ```
-
-
 
 ## Q&A
 
@@ -184,6 +198,4 @@ PATCH mytfsserver/defaultcollection/fabrikam/fabrikam%20team/_apis/work/boards/S
 
 A: The cumulative flow chart is the only chart supported at this point.
 
-<!-- ENDSECTION --> 
-
-
+<!-- ENDSECTION -->

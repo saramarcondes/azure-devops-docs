@@ -7,10 +7,10 @@ author: steved0x
 ms.date: 02/19/2020
 ---
 
-1. Choose **Azure DevOps**, **Collection settings**.
+1.  Choose **Azure DevOps**, **Collection settings**.
 
-   ![Organization settings](../../media/agent-pools-tab/collection-settings-2019.png)
+    ![Organization settings](../../media/agent-pools-tab/collection-settings-2019.png)
 
-1. Choose **Agent pools**.
+1.  Choose **Agent pools**.
 
-   ![Choose Manage pools](../../media/agent-pools-tab/agent-pools-2019.png)
+    ![Choose Manage pools](../../media/agent-pools-tab/agent-pools-2019.png)

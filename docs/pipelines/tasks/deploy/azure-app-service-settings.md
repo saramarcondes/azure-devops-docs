@@ -13,28 +13,27 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [include](../../includes/version-team-services.md)]
 
-Use this task to configure App settings, connection strings and other general settings in bulk using JSON syntax on your web app or any of its deployment slots. 
+Use this task to configure App settings, connection strings and other general settings in bulk using JSON syntax on your web app or any of its deployment slots.
 The task works on cross platform Azure Pipelines agents running Windows, Linux or Mac.
 The task works for ASP.NET, ASP.NET Core, PHP, Java, Python, Go and Node.js based web applications.
 
 ## Arguments
 
-|Parameters|Description|
-|--- |--- |
-|`ConnectedServiceName`<br/>Azure subscription|(Required) Name of the Azure Resource Manager service connection <br/>Argument aliases: `ConnectedServiceName`|
-|`appName`<br/>App name|(Required) Name of an existing App Service|
-|`resourceGroupName`<br/>Resource group|(Required) Name of the resource group|
-|`slotName`<br/>Slot|(Optional) Name of the slot<br/>Default value: `production`|
-|`appSettings`<br/>App settings|(Optional) Application settings to be entered using JSON syntax. Values containing spaces should be enclosed in double quotes.|
-|`generalSettings`<br/>General settings|(Optional) General settings to be entered using JSON syntax. Values containing spaces should be enclosed in double quotes.|
-|`connectionStrings`<br/>Connection settings|(Optional) Connection strings to be entered using JSON syntax. Values containing spaces should be enclosed in double quotes.|
+| Parameters                                    | Description                                                                                                                    |
+| --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| `ConnectedServiceName`<br/>Azure subscription | (Required) Name of the Azure Resource Manager service connection <br/>Argument aliases: `ConnectedServiceName`                 |
+| `appName`<br/>App name                        | (Required) Name of an existing App Service                                                                                     |
+| `resourceGroupName`<br/>Resource group        | (Required) Name of the resource group                                                                                          |
+| `slotName`<br/>Slot                           | (Optional) Name of the slot<br/>Default value: `production`                                                                    |
+| `appSettings`<br/>App settings                | (Optional) Application settings to be entered using JSON syntax. Values containing spaces should be enclosed in double quotes. |
+| `generalSettings`<br/>General settings        | (Optional) General settings to be entered using JSON syntax. Values containing spaces should be enclosed in double quotes.     |
+| `connectionStrings`<br/>Connection settings   | (Optional) Connection strings to be entered using JSON syntax. Values containing spaces should be enclosed in double quotes.   |
 
 Following is an example YAML snippet to deploy web application to the Azure Web App service running on windows.
 
 ## Example
 
 ```YAML
-
 variables:
   azureSubscription: Contoso
   WebApp_Name: sampleWebApp
@@ -66,7 +65,7 @@ steps:
         },
         {
           "name": "MYSQL_DATABASE_NAME",
-          "value": "$(DB_Name)", 
+          "value": "$(DB_Name)",
           "slotSetting": false
         }
       ]
@@ -92,7 +91,6 @@ steps:
           "slotSetting": false
         }
       ]
-
 ```
 
 ## Open Source

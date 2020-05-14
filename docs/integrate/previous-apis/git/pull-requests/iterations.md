@@ -20,8 +20,8 @@ ms.date: 11/3/2016
 
 [!INCLUDE [GET_STARTED](../../_data/get-started.md)]
 
-Iterations contain the history of the pull request.  Every time commits are pushed to the source branch and when the pull
-request is created, an iteration is created.  Each iteration can contain more than one commit.
+Iterations contain the history of the pull request. Every time commits are pushed to the source branch and when the pull
+request is created, an iteration is created. Each iteration can contain more than one commit.
 
 ## Get a list of iterations
 
@@ -29,15 +29,17 @@ request is created, an iteration is created.  Each iteration can contain more th
 GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pullRequests/{pullRequest}/iterations?api-version={version}
 ```
 
-| Parameter   | Type    | Notes
-|:------------|:--------|:---------------------------------------------------------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance    | string  | TFS server name ({server:port}).
-| project     | string  | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
-| repository  | string  | ID of the [repository](../repositories.md).
+| instance | string | TFS server name ({server:port}).
+| project | string | ID or name of the [project](../../tfs/projects.md). _Optional if specifying an ID for repository._
+| repository | string | ID of the [repository](../repositories.md).
 | pullRequest | integer | ID of the pull request.
 | Query
-| api-version | string  | [Version](../../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../../concepts/rest-api-versioning.md) of the API to use.
 
 [!INCLUDE [ID_vs_Name](../_data/id_or_name.md)]
 
@@ -59,8 +61,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-4
         "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
         "displayName": "Normal Paulk",
         "uniqueName": "fabrikamfiber16@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
       },
       "createdDate": "2016-11-01T16:30:32.1228821Z",
       "updatedDate": "2016-11-01T16:30:32.124882Z",
@@ -82,8 +86,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-4
         "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
         "displayName": "Normal Paulk",
         "uniqueName": "fabrikamfiber16@hotmail.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
       },
       "createdDate": "2016-11-01T16:30:40.7955627Z",
       "updatedDate": "2016-11-01T16:30:40.7965635Z",
@@ -106,24 +112,24 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-4
 }
 ```
 
-
 ## Get a specific iteration
 
 ```no-highlight
 GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pullRequests/{pullRequest}/iterations/{iterationId}?api-version={version}
 ```
 
-| Parameter   | Type    | Notes
-|:------------|:--------|:---------------------------------------------------------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance    | string  | TFS server name ({server:port}).
-| project     | string  | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
-| repository  | string  | ID of the [repository](../repositories.md).
+| instance | string | TFS server name ({server:port}).
+| project | string | ID or name of the [project](../../tfs/projects.md). _Optional if specifying an ID for repository._
+| repository | string | ID of the [repository](../repositories.md).
 | pullRequest | integer | ID of the pull request.
 | iterationId | integer | ID of the iteration.
 | Query
-| api-version | string  | [Version](../../../concepts/rest-api-versioning.md) of the API to use.
-
+| api-version | string | [Version](../../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
@@ -141,8 +147,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-4
     "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
     "displayName": "Normal Paulk",
     "uniqueName": "fabrikamfiber16@hotmail.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
   },
   "createdDate": "2016-11-01T16:30:40.7955627Z",
   "updatedDate": "2016-11-01T16:30:40.7965635Z",
@@ -161,15 +169,16 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-4
   },
   "_links": {
     "self": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/pullRequests/22/iterations/2"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/pullRequests/22/iterations/2"
     },
     "repository": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719"
     }
   }
 }
 ```
-
 
 ## Get the commits for an iteration
 
@@ -177,16 +186,18 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-4
 GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pullRequests/{pullRequest}/iterations/{iterationId}/commits?api-version={version}
 ```
 
-| Parameter   | Type    | Notes
-|:------------|:--------|:---------------------------------------------------------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance    | string  | TFS server name ({server:port}).
-| project     | string  | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
-| repository  | string  | ID of the [repository](../repositories.md).
+| instance | string | TFS server name ({server:port}).
+| project | string | ID or name of the [project](../../tfs/projects.md). _Optional if specifying an ID for repository._
+| repository | string | ID of the [repository](../repositories.md).
 | pullRequest | integer | ID of the pull request.
 | iterationId | integer | ID of the iteration.
 | Query
-| api-version | string  | [Version](../../../concepts/rest-api-versioning.md) of the API to use.
+| api-version | string | [Version](../../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
@@ -212,7 +223,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-4
         "date": "2016-11-01T16:30:37Z"
       },
       "comment": "Updated new_feature.cpp",
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/commits/8c9396b5cf22f929767c7172e9dbbe777ddc6357"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/commits/8c9396b5cf22f929767c7172e9dbbe777ddc6357"
     },
     {
       "commitId": "b60280bc6e62e2f880f1b63c1e24987664d3bda3",
@@ -227,7 +239,8 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-4
         "date": "2016-11-01T16:30:28Z"
       },
       "comment": "Added new_feature.cpp",
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/commits/b60280bc6e62e2f880f1b63c1e24987664d3bda3"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/commits/b60280bc6e62e2f880f1b63c1e24987664d3bda3"
     },
     {
       "commitId": "050acf036bcef766bcbe61abeb0aa67a56ca8586",
@@ -242,13 +255,13 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-4
         "date": "2016-11-01T16:30:25Z"
       },
       "comment": "Added new_feature.h",
-      "url": "https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/commits/050acf036bcef766bcbe61abeb0aa67a56ca8586"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-464f-9615-0b527bc66719/commits/050acf036bcef766bcbe61abeb0aa67a56ca8586"
     }
   ],
   "count": 3
 }
 ```
-
 
 ## Get the changes in the pull request at an iteration
 
@@ -256,19 +269,21 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-4
 GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pullRequests/{pullRequest}/iterations/{iterationId}/changes?$top={top};$skip={skip};$compareTo={compareTo};api-version={version}
 ```
 
-| Parameter   | Type    | Notes
-|:------------|:--------|:---------------------------------------------------------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance    | string  | TFS server name ({server:port}).
-| project     | string  | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
-| repository  | string  | ID of the [repository](../repositories.md).
+| instance | string | TFS server name ({server:port}).
+| project | string | ID or name of the [project](../../tfs/projects.md). _Optional if specifying an ID for repository._
+| repository | string | ID of the [repository](../repositories.md).
 | pullRequest | integer | ID of the pull request.
 | iterationId | integer | ID of the iteration.
 | Query
-| top         | integer | the number of changes to retrieve
-| skip        | integer | the number of changes to ignore
-| compareTo   | integer | ID of an iteration to compare against.  If not specified, the iteration is compared against the common commit with the target branch of the pull request.
-| api-version | string  | [Version](../../../concepts/rest-api-versioning.md) of the API to use.
+| top | integer | the number of changes to retrieve
+| skip | integer | the number of changes to ignore
+| compareTo | integer | ID of an iteration to compare against. If not specified, the iteration is compared against the common commit with the target branch of the pull request.
+| api-version | string | [Version](../../../concepts/rest-api-versioning.md) of the API to use.
 
 #### Sample request
 
@@ -303,7 +318,6 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-4
 }
 ```
 
-
 ### Get the changes in an iteration compared to another iteration
 
 #### Sample request
@@ -330,4 +344,3 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa-4
   ]
 }
 ```
-

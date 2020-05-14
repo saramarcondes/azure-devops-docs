@@ -23,4 +23,3 @@ Extends: [TeamProjectCollectionReference](../../../TFS/Core/Contracts/TeamProjec
 * `description`: string. Project collection description.
 
 * `state`: string. Project collection state.
-

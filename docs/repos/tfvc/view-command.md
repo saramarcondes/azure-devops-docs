@@ -11,7 +11,6 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # View Command
 
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
@@ -24,11 +23,12 @@ To use the **view** command, you must have the **Read** permission set to **Allo
 
 ```
 tf view [/collection:TeamProjectCollectionUrl] [/console] [/recursive] [/output:localfile]
-[/shelveset:shelvesetname[;owner]] [/noprompt] itemspec 
+[/shelveset:shelvesetname[;owner]] [/noprompt] itemspec
 [/version:versionspec] [/login:username,[password]]
 ```
 
 ## Parameters<table>
+
 <thead>
 <tr>
 <th><p><strong>Argument</strong></p></th>
@@ -53,7 +53,7 @@ tf view [/collection:TeamProjectCollectionUrl] [/console] [/recursive] [/output:
 <strong>Note</strong>
 </div>
 <div class="mtps-row">
-You can specify more than one <em>Itemspec</em> argument. 
+You can specify more than one <em>Itemspec</em> argument.
 </div>
 </div>
 </div></td>
@@ -131,7 +131,9 @@ By default, Team Foundation displays the contents of the file in the viewer asso
 If you include the **/console** option, Team Foundation prints the contents of the file to the command console. Likewise, if Team Foundation cannot locate a viewer for the type of file you have specified, it prints the contents of the file to the command console.
 
 Finally, you can redirect the contents of a file to standard out using **|** or **\>** in order to save it in another file or pass it to another program for post-processing.
+
 ## Examples
+
 The following example displays the latest version of the file 314.c.
 
 ```

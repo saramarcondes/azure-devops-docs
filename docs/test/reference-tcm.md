@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # FAQs for Test Case Management Reporting
 
-[!INCLUDE [version-inc-vs-all](includes/version-inc-vs-all.md)] 
+[!INCLUDE [version-inc-vs-all](includes/version-inc-vs-all.md)]
 
 ## I am using Microsoft Test Manager (MTM) for my testing activities - what type of reports can I see within MTM?
 
@@ -51,55 +51,55 @@ Most of the out-of-the-box TFS reports, including Test related reports, can be a
 
 There are two types of reports that can be viewed from Team Explorer - Excel Reports and SQL Reporting Services Reports.
 
-1. Excel Reports: These reports use Excel to connect to the TFS warehouse or Analysis cube to display the reporting data. The figure below shows the list of all Excel reports that ship out of the box. Depending upon the process template (Agile, CMMI) you used at the time of creation of the project, the respective reports are created at project creation time.
+1.  Excel Reports: These reports use Excel to connect to the TFS warehouse or Analysis cube to display the reporting data. The figure below shows the list of all Excel reports that ship out of the box. Depending upon the process template (Agile, CMMI) you used at the time of creation of the project, the respective reports are created at project creation time.
 
-   ![clip_image004](media/tcm-reporting/tcm-04.png)
+    ![clip_image004](media/tcm-reporting/tcm-04.png)
 
-   All the test specific reports are highlighted in the above diagram.
+    All the test specific reports are highlighted in the above diagram.
 
-   Details of each of the Test related reports can be found below:
+    Details of each of the Test related reports can be found below:
 
-   * [Test Management Reports](https://msdn.microsoft.com/library/ee795293.aspx)
+    * [Test Management Reports](https://msdn.microsoft.com/library/ee795293.aspx)
 
-     - [Build Quality Excel Report](https://msdn.microsoft.com/library/ee730418.aspx)
+      * [Build Quality Excel Report](https://msdn.microsoft.com/library/ee730418.aspx)
 
-     - [Test Team Productivity Excel Report](https://msdn.microsoft.com/library/ee730422.aspx)
+      * [Test Team Productivity Excel Report](https://msdn.microsoft.com/library/ee730422.aspx)
 
-     - [Test Team Progress Excel Report](https://msdn.microsoft.com/library/ee730420.aspx)
+      * [Test Team Progress Excel Report](https://msdn.microsoft.com/library/ee730420.aspx)
 
-     - [Testing Gaps Excel Report (Agile)](https://msdn.microsoft.com/library/ee730419.aspx)
+      * [Testing Gaps Excel Report (Agile)](https://msdn.microsoft.com/library/ee730419.aspx)
 
-     - [Testing Gaps Excel Report (CMMI)](https://msdn.microsoft.com/library/ee730423.aspx)
+      * [Testing Gaps Excel Report (CMMI)](https://msdn.microsoft.com/library/ee730423.aspx)
 
-   * [Failure Analysis Excel Report](https://msdn.microsoft.com/library/ee461520.aspx)
+    * [Failure Analysis Excel Report](https://msdn.microsoft.com/library/ee461520.aspx)
 
-   * [Test Activity Excel Report](https://msdn.microsoft.com/library/ee461586.aspx)
+    * [Test Activity Excel Report](https://msdn.microsoft.com/library/ee461586.aspx)
 
-   * [Test Case Readiness Report](https://msdn.microsoft.com/library/dd380713.aspx)
+    * [Test Case Readiness Report](https://msdn.microsoft.com/library/dd380713.aspx)
 
-   * [Test Plan Progress Report](https://msdn.microsoft.com/library/dd380702.aspx)
+    * [Test Plan Progress Report](https://msdn.microsoft.com/library/dd380702.aspx)
 
-   * [User Story Test Status Excel Report (Agile)](https://msdn.microsoft.com/library/dd695788.aspx)
+    * [User Story Test Status Excel Report (Agile)](https://msdn.microsoft.com/library/dd695788.aspx)
 
-   * [Requirement Test Status Excel Report (CMMI)](https://msdn.microsoft.com/library/ee461538.aspx)
+    * [Requirement Test Status Excel Report (CMMI)](https://msdn.microsoft.com/library/ee461538.aspx)
 
-2. Reporting Services based Reports: The figure below shows the list of all Reporting Services based reports that ship out of the box. Depending upon the process template (Agile, CMMI) you used at the time of creation of the project, the respective reports are created at project creation time.
+2.  Reporting Services based Reports: The figure below shows the list of all Reporting Services based reports that ship out of the box. Depending upon the process template (Agile, CMMI) you used at the time of creation of the project, the respective reports are created at project creation time.
 
-   ![clip_image005](media/tcm-reporting/tcm-05.png)
+    ![clip_image005](media/tcm-reporting/tcm-05.png)
 
-   All the test specific reports are highlighted in the above diagram.
+    All the test specific reports are highlighted in the above diagram.
 
-   Details of each of the Test related reports can be found below:
+    Details of each of the Test related reports can be found below:
 
-   * [Build Quality Indicators Report](https://msdn.microsoft.com/library/dd380683.aspx)
+    * [Build Quality Indicators Report](https://msdn.microsoft.com/library/dd380683.aspx)
 
-   * [Stories Overview Report (Agile)](https://msdn.microsoft.com/library/dd380648.aspx)
+    * [Stories Overview Report (Agile)](https://msdn.microsoft.com/library/dd380648.aspx)
 
-   * [Requirements Overview Report (CMMI)](https://msdn.microsoft.com/library/ee461517.aspx)
+    * [Requirements Overview Report (CMMI)](https://msdn.microsoft.com/library/ee461517.aspx)
 
-   * [Test Case Readiness Report](https://msdn.microsoft.com/library/dd380713.aspx)
+    * [Test Case Readiness Report](https://msdn.microsoft.com/library/dd380713.aspx)
 
-   * [Test Plan Progress Report](https://msdn.microsoft.com/library/dd380702.aspx)
+    * [Test Plan Progress Report](https://msdn.microsoft.com/library/dd380702.aspx)
 
 ## I am connected to my Team Project within Team Explorer, but I don't see any of the Reporting Services based Reports listed above. Why?
 
@@ -149,33 +149,33 @@ If you don't have any installation of Team Foundation Server with SharePoint, th
 
 For changing the Data source on the Excel reports [Dev10-Agile-ExcelReports.zip and Dev10-CMMI-ExcelReports.zip](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Components.PostAttachments/00/10/22/51/86/Dev10-ExcelReports.zip), follow the steps mentioned below:
 
-1. Open one of the Excel Reports file, go to the "Data" tab in Excel, then click on "Connections"
+1.  Open one of the Excel Reports file, go to the "Data" tab in Excel, then click on "Connections"
 
-   ![clip_image006](media/tcm-reporting/tcm-06.jpg)
+    ![clip_image006](media/tcm-reporting/tcm-06.jpg)
 
-2. It should open up the following window, Click on "Properties"
+2.  It should open up the following window, Click on "Properties"
 
-   ![clip_image007](media/tcm-reporting/tcm-07.jpg)
+    ![clip_image007](media/tcm-reporting/tcm-07.jpg)
 
-3. Connection Properties window opens up, click on "Definition" tab
+3.  Connection Properties window opens up, click on "Definition" tab
 
-   ![clip_image008](media/tcm-reporting/tcm-08.jpg)
+    ![clip_image008](media/tcm-reporting/tcm-08.jpg)
 
-4. In the Definition tab, update the connection string and then keep clicking on OK all the way back.
+4.  In the Definition tab, update the connection string and then keep clicking on OK all the way back.
 
-   ![clip_image009](media/tcm-reporting/tcm-09.jpg)
+    ![clip_image009](media/tcm-reporting/tcm-09.jpg)
 
-   Change the Connection String
+    Change the Connection String
 
-   FROM:
+    FROM:
 
-   `Provider=MSOLAP.3;Integrated Security=SSPI;Persist Security Info=True;User ID="";Initial Catalog=Tfs_Analysis;Data Source=ravidev10tfs;Location=ravidev10tfs;MDX Compatibility=1;Safety Options=2;MDX Missing Member Mode=Error`
+    `Provider=MSOLAP.3;Integrated Security=SSPI;Persist Security Info=True;User ID="";Initial Catalog=Tfs_Analysis;Data Source=ravidev10tfs;Location=ravidev10tfs;MDX Compatibility=1;Safety Options=2;MDX Missing Member Mode=Error`
 
-   TO:
+    TO:
 
-   `Provider=MSOLAP.4;Integrated Security=SSPI;Persist Security Info=True;User ID="";Initial Catalog=Tfs_Analysis;Data Source=<yourtfsserver>;Location=<yourtfsserver>;MDX Compatibility=1;Safety Options=2;MDX Missing Member Mode=Error`
+    `Provider=MSOLAP.4;Integrated Security=SSPI;Persist Security Info=True;User ID="";Initial Catalog=Tfs_Analysis;Data Source=<yourtfsserver>;Location=<yourtfsserver>;MDX Compatibility=1;Safety Options=2;MDX Missing Member Mode=Error`
 
-   This should start getting the reporting data from your TFS Server.
+    This should start getting the reporting data from your TFS Server.
 
 ## I would like to create custom test reports in Excel based off the Analysis Services cube. How should I go about it?
 
@@ -185,29 +185,29 @@ There are two ways of doing this, start from scratch or use one of the existing 
 
   You can always start creating a new Excel report by adding a new data source, as mentioned below:
 
-  1. From "Data" tab, click on "From Other Sources->From Analysis Services" option
+  1.  From "Data" tab, click on "From Other Sources->From Analysis Services" option
 
-     ![clip_image010](media/tcm-reporting/tcm-10.jpg)
+      ![clip_image010](media/tcm-reporting/tcm-10.jpg)
 
-  1. Provide the name of your TFS server.
+  1.  Provide the name of your TFS server.
 
-     ![clip_image011](media/tcm-reporting/tcm-11.jpg)
+      ![clip_image011](media/tcm-reporting/tcm-11.jpg)
 
-  1. This should connect you to the TFS_Analysis database. If your Azure DevOps data warehouse uses SQL Server Enterprise Edition, the list of cubes will include Team System and a set of perspectives. The perspectives provide a focused view of the data so that you do not have to scroll through all of the dimensions and measure groups that are defined for the whole Team System cube. Choose the CUBE or the TEST perspective to create test related reports.
+  1.  This should connect you to the TFS_Analysis database. If your Azure DevOps data warehouse uses SQL Server Enterprise Edition, the list of cubes will include Team System and a set of perspectives. The perspectives provide a focused view of the data so that you do not have to scroll through all of the dimensions and measure groups that are defined for the whole Team System cube. Choose the CUBE or the TEST perspective to create test related reports.
 
-     ![clip_image012](media/tcm-reporting/tcm-12.jpg)
+      ![clip_image012](media/tcm-reporting/tcm-12.jpg)
 
-  1. Save the connection information locally or it can also be saved on a SharePoint.
+  1.  Save the connection information locally or it can also be saved on a SharePoint.
 
-     ![clip_image013](media/tcm-reporting/tcm-13.jpg)
+      ![clip_image013](media/tcm-reporting/tcm-13.jpg)
 
-  1. Select where you want to create the PivotTable Report or PivotChart
+  1.  Select where you want to create the PivotTable Report or PivotChart
 
-     ![clip_image014](media/tcm-reporting/tcm-14.jpg)
+      ![clip_image014](media/tcm-reporting/tcm-14.jpg)
 
-  1. Drag and drop various dimensions and measures from Pivot table field list to construct your custom report.
+  1.  Drag and drop various dimensions and measures from Pivot table field list to construct your custom report.
 
-     ![clip_image015](media/tcm-reporting/tcm-15.jpg)
+      ![clip_image015](media/tcm-reporting/tcm-15.jpg)
 
 * **Use existing out-of-the-box Excel reports as a starting point**
 
@@ -257,19 +257,19 @@ That is correct - Test Steps along with expected results and the passed or faile
 
 However, there are couple of ways of getting this Step related data:
 
-1. **TFS APIs**: You could get this information using the [TFS APIs](https://msdn.microsoft.com/library/microsoft.teamfoundation.testmanagement.client.aspx)
-   Refer to a sample Test Steps Report, which was created using the TFS APIs.
+1.  **TFS APIs**: You could get this information using the [TFS APIs](https://msdn.microsoft.com/library/microsoft.teamfoundation.testmanagement.client.aspx)
+    Refer to a sample Test Steps Report, which was created using the TFS APIs.
 
-   [http://geekswithblogs.net/TarunArora/archive/2011/10/02/mtm-testing-scorecard-using-tfs-api.aspx](http://geekswithblogs.net/TarunArora/archive/2011/10/02/mtm-testing-scorecard-using-tfs-api.aspx)
+    [http://geekswithblogs.net/TarunArora/archive/2011/10/02/mtm-testing-scorecard-using-tfs-api.aspx](http://geekswithblogs.net/TarunArora/archive/2011/10/02/mtm-testing-scorecard-using-tfs-api.aspx)
 
-   Since this sample also has source code, you could customize it to suit your organization needs.
+    Since this sample also has source code, you could customize it to suit your organization needs.
 
-1. **Test Scribe**: You could also use [Test Scribe](https://visualstudiogallery.msdn.microsoft.com/e79e4a0f-f670-47c2-9b8a-3b6f664bf4ae/) tool to generate a document containing Test Steps.
-   There are two modes of generating the document using this tool -
+1.  **Test Scribe**: You could also use [Test Scribe](https://visualstudiogallery.msdn.microsoft.com/e79e4a0f-f670-47c2-9b8a-3b6f664bf4ae/) tool to generate a document containing Test Steps.
+    There are two modes of generating the document using this tool -
 
-   - "Test Plan Summary" view which you can use to review or sign-off the Test Plan and its associated test cases along with individual test steps or expected results or iteration values.
+    * "Test Plan Summary" view which you can use to review or sign-off the Test Plan and its associated test cases along with individual test steps or expected results or iteration values.
 
-   - "Test Run Summary" view which you can use to get detailed Run level information - however it does not provide a breakdown of individual test results within a particular test run.
+    * "Test Run Summary" view which you can use to get detailed Run level information - however it does not provide a breakdown of individual test results within a particular test run.
 
 ## I want to write a custom 3rd party warehouse adapter, how should I go about it?
 
@@ -277,4 +277,4 @@ You can find a Sample custom warehouse adapter below, that you can use as a star
 
 [https://code.msdn.microsoft.com/Tfs2010SampleAdapter](https://code.msdn.microsoft.com/Tfs2010SampleAdapter)
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

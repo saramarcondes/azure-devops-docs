@@ -14,7 +14,6 @@ ms.date: 08/04/2016
 
 Module path: `VSS/WebApi/Contracts`
 
-
 ### Members
 
 * `eventType`: string. This is the ID of the type. Constants that are used by subscribers to identify and filter events being published on a topic.
@@ -26,4 +25,3 @@ Module path: `VSS/WebApi/Contracts`
 * `resourceContainers`: {[key: string]: any}. This dictionary carries the context descriptors along with their ids.
 
 * `resourceVersion`: string. This is the version of the resource.
-

@@ -14,7 +14,6 @@ ms.date: 08/04/2016
 
 Module path: `VSS/Common/Contracts/FormInput`
 
-
 ### Members
 
 * `data`: {[key: string]: any}. Any other data about this input
@@ -22,4 +21,3 @@ Module path: `VSS/Common/Contracts/FormInput`
 * `displayValue`: string. The text to show for the display of this value
 
 * `value`: string. The value to store for this input
-

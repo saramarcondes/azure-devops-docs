@@ -15,8 +15,7 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Model to represent a TeamFoundationIdentity 
+Model to represent a TeamFoundationIdentity
 
 ### Members
 
@@ -35,4 +34,3 @@ Model to represent a TeamFoundationIdentity
 * `providerDisplayName`: string. The provider&#x27;s display name for this identity
 
 * `uniqueName`: string. Unique name for this identity
-

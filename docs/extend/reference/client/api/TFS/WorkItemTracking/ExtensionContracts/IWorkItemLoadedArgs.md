@@ -19,4 +19,3 @@ Extends: [IWorkItemChangedArgs](../../../TFS/WorkItemTracking/ExtensionContracts
 ### Members
 
 * `isNew`: boolean. &#x27;true&#x27; if the work item is a &#x27;new&#x27;, unsaved work item, &#x27;false&#x27; otherwise.
-

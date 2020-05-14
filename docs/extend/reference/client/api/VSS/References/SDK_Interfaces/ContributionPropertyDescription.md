@@ -15,8 +15,7 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Description about a property of a contribution type 
+Description about a property of a contribution type
 
 ### Members
 
@@ -27,4 +26,3 @@ Description about a property of a contribution type
 * `required`: boolean. True if this property is required
 
 * `type`: [ContributionPropertyType](../../../VSS/References/SDK_Interfaces/ContributionPropertyType.md). The type of value used for this property
-

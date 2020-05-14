@@ -15,7 +15,7 @@ If you're running an agent in a secure network behind a firewall, make sure the 
 
 ```
 https://login.microsoftonline.com
-https://app.vssps.visualstudio.com 
+https://app.vssps.visualstudio.com
 https://{organization_name}.visualstudio.com
 https://{organization_name}.vsrm.visualstudio.com
 https://{organization_name}.vstmr.visualstudio.com

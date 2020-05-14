@@ -26,23 +26,23 @@ Azure Artifacts is installed by default for TFS 2017 customers. To use Azure Art
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019" 
+::: moniker range="azure-devops-2019"
 
 ## Assign Azure Artifacts in Azure DevOps Services
 
-Each organization gets five free licenses. If you need more than five licenses, go to the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) and select **Get**. Select **Buy** and purchase the additional licenses that you need.  
+Each organization gets five free licenses. If you need more than five licenses, go to the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) and select **Get**. Select **Buy** and purchase the additional licenses that you need.
 
 Assign your licenses by following these instructions:
 
-1. Go to your organization and select **Admin settings** on the lower left of the UX.
-2. Select **Users**.
-3. Select the user or users you want to assign the Azure Artifacts extension to, and select **Manage extensions**.
-4. If you're selecting multiple users, select **Assign extensions** and choose the Azure Artifacts extension. If you're selecting only one user, select the Azure Artifacts box under **Extensions** and select **Save changes**.
+1.  Go to your organization and select **Admin settings** on the lower left of the UX.
+2.  Select **Users**.
+3.  Select the user or users you want to assign the Azure Artifacts extension to, and select **Manage extensions**.
+4.  If you're selecting multiple users, select **Assign extensions** and choose the Azure Artifacts extension. If you're selecting only one user, select the Azure Artifacts box under **Extensions** and select **Save changes**.
 
 If you have a Visual Studio Enterprise license, you already have access to Azure Artifacts and don't need to be assigned a license. Just ensure that you've been assigned the "Visual Studio Enterprise" access level.
 
-1. Go to your account, go to the **Users** page, and select **Package Management**.
-2. Select **Assign**, enter the users you want to assign licenses to, and then select **Ok**.
+1.  Go to your account, go to the **Users** page, and select **Package Management**.
+2.  Select **Assign**, enter the users you want to assign licenses to, and then select **Ok**.
 
 If you have a Visual Studio Enterprise license, you already have access to Package Management and don't need to be assigned a license. Just ensure that you've been assigned the "Visual Studio Enterprise" access level.
 
@@ -52,21 +52,21 @@ If you have a Visual Studio Enterprise license, you already have access to Packa
 
 ### Assign licenses in TFS
 
-Each organization gets five free licenses. If you need more than five licenses, go to the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) and select **Get**. Select **Buy** and purchase the additional licenses that you need.  
+Each organization gets five free licenses. If you need more than five licenses, go to the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) and select **Get**. Select **Buy** and purchase the additional licenses that you need.
 
-If you aren't sure, you can select **Start 30 day free trial**. Every user in your organization is then granted access to Azure Artifacts for 30 days. After the 30-day trial period, your organization reverts back to five entitled users, and you must assign licenses to individual users.  If you need additional licenses at this point, you can purchase them from this same dialog box in the Marketplace.
+If you aren't sure, you can select **Start 30 day free trial**. Every user in your organization is then granted access to Azure Artifacts for 30 days. After the 30-day trial period, your organization reverts back to five entitled users, and you must assign licenses to individual users. If you need additional licenses at this point, you can purchase them from this same dialog box in the Marketplace.
 
-> If you selected **Start 30 day free trial** and are still in the trial period, every user is granted access. Licenses don't need to be assigned until the trial period ends. 
+> If you selected **Start 30 day free trial** and are still in the trial period, every user is granted access. Licenses don't need to be assigned until the trial period ends.
 
-1. From any collection in TFS, hover over the settings menu and select the **Users** page. Then select **Package Management**.
+1.  From any collection in TFS, hover over the settings menu and select the **Users** page. Then select **Package Management**.
 
-   ![Users page in TFS](media/users-hub-tfs.png)
+    ![Users page in TFS](media/users-hub-tfs.png)
 
-1. Select **Assign**, enter the users you want to assign licenses, and then select **Ok**.
+1.  Select **Assign**, enter the users you want to assign licenses, and then select **Ok**.
 
-   * Users with Visual Studio Enterprise subscriptions get Azure Artifacts for free.  [Ensure that your Visual Studio Enterprise subscribers are assigned the Visual Studio Enterprise access level](../organizations/security/change-access-levels.md).
+    * Users with Visual Studio Enterprise subscriptions get Azure Artifacts for free. [Ensure that your Visual Studio Enterprise subscribers are assigned the Visual Studio Enterprise access level](../organizations/security/change-access-levels.md).
 
-   * Users who are using an instance of TFS that's disconnected from the internet (and thus can't purchase licenses from the Marketplace) can still assign licenses purchased through an enterprise agreement.
+    * Users who are using an instance of TFS that's disconnected from the internet (and thus can't purchase licenses from the Marketplace) can still assign licenses purchased through an enterprise agreement.
 
 ::: moniker-end
 
@@ -75,6 +75,7 @@ If you aren't sure, you can select **Start 30 day free trial**. Every user in yo
 On your first visit to **Azure Artifacts**, you're welcomed with an image that prompts you to create a new feed. Click the **+ New feed** button.
 
 In the dialog box:
+
 * Give the feed a name.
 * **Visibility**: Choose who can read and contribute (or update) packages in your feed. An organization-visible feed is created with permissions that allow all users in the organization to see and use your feed (recommended). A private feed is created with permissions such that only you have access.
 * **Upstream sources**: Selecting **Use packages from public sources through this feed** will add both the public npm (registry.npmjs.org) and NuGet (packages.nuget.org) packages as upstreams to your feed. When upstreams are enabled, your client (that is, npm and NuGet) can fetch packages from the public registry through your private feed, and your private feed will cache those packages for you. If you select **Use packages published to this feed**, your feed is created without connectivity to public registries. You can connect them later if you want.
@@ -82,8 +83,8 @@ In the dialog box:
 
 ::: moniker range=">= azure-devops-2019"
 
-> [!div class="mx-imgBorder"] 
->![New feed dialog box](media/new-feed-dialog.png)
+> [!div class="mx-imgBorder"]
+> ![New feed dialog box](media/new-feed-dialog.png)
 
 ::: moniker-end
 
@@ -105,61 +106,59 @@ All Azure Artifacts feeds require authentication. You'll need to store credentia
 
 We recommend that you use two .npmrc files:
 
-1. One **_.npmrc_** should live at the root of your git repo adjacent to your project's **_package.json_**.
+1.  One **_.npmrc_** should live at the root of your git repo adjacent to your project's **_package.json_**.
 
-   1. From your **Artifacts** page, click _Connect to Feed_
+    1.  From your **Artifacts** page, click _Connect to Feed_
 
-      ::: moniker range=">= azure-devops-2019"
-    
-      > [!div class="mx-imgBorder"] 
-      >![Connect to feed button in Azure Artifacts](media/connect-to-feed-azure-devops-newnav.png)
-      > 
+        ::: moniker range=">= azure-devops-2019"
 
-      ::: moniker-end
+        > [!div class="mx-imgBorder"]
+        > ![Connect to feed button in Azure Artifacts](media/connect-to-feed-azure-devops-newnav.png)
 
-      ::: moniker range="<= tfs-2018"
+        ::: moniker-end
 
-      ![Connect to feed button in Azure Artifacts](media/connect-to-feed.png)
+        ::: moniker range="<= tfs-2018"
 
-      ::: moniker-end
+        ![Connect to feed button in Azure Artifacts](media/connect-to-feed.png)
 
-      ::: moniker range=">= tfs-2017 < azure-devops"
+        ::: moniker-end
 
-      ![Connect to feed button in Azure Artifacts](media/connect-to-feed.png)
+        ::: moniker range=">= tfs-2017 < azure-devops"
 
-      ::: moniker-end
+        ![Connect to feed button in Azure Artifacts](media/connect-to-feed.png)
 
-   3. Select **npm**.
+        ::: moniker-end
 
-   4. Select **Get the tools** in the upper-right corner
+    2.  Select **npm**.
 
-   5. Follow steps **1** and **2** to download Node.js, npm, and the artifacts credential provider.
+    3.  Select **Get the tools** in the upper-right corner
 
-   6. Select **Windows** if you are on a Windows Machine, or **Other** if you are on macOS or Linux.
-   
-   7. Follow the instructions in the **Project setup**, **Restore packages**, and **Publish packages** sections to publish.npm-azure
+    4.  Follow steps **1** and **2** to download Node.js, npm, and the artifacts credential provider.
 
-      ::: moniker range=">= azure-devops-2019"
+    5.  Select **Windows** if you are on a Windows Machine, or **Other** if you are on macOS or Linux.
 
-      > [!div class="mx-imgBorder"] 
-      >![Connect to feed from Azure Artifacts](media/npm-azure-devops-newnav.png)
-      > 
+    6.  Follow the instructions in the **Project setup**, **Restore packages**, and **Publish packages** sections to publish.npm-azure
 
-      ::: moniker-end
+        ::: moniker range=">= azure-devops-2019"
 
-      ::: moniker range="<= tfs-2018"
+        > [!div class="mx-imgBorder"]
+        > ![Connect to feed from Azure Artifacts](media/npm-azure-devops-newnav.png)
 
-      ![Connect to feed from Azure Artifacts](media/connect-to-feed-npm-registry.png)
+        ::: moniker-end
 
-      ::: moniker-end
+        ::: moniker range="<= tfs-2018"
 
-      ::: moniker range=">= tfs-2017 < azure-devops"
+        ![Connect to feed from Azure Artifacts](media/connect-to-feed-npm-registry.png)
 
-      ![Connect to feed from Azure Artifacts](media/connect-to-feed-npm-registry.png)
+        ::: moniker-end
 
-      ::: moniker-end
-        
-2. On your development machine, you will also have a **_.npmrc_** in $home for Linux or Mac systems or $env.HOME for win systems.  This **_.npmrc_** should contain credentials for all of the registries that you need to connect to.  The NPM client will look at your project's **_.npmrc_**, discover the registry, and fetch matching credentials from $home/.npmrc or $env.HOME/.npmrc.  Credential acquisition will be discussed in the next section.
+        ::: moniker range=">= tfs-2017 < azure-devops"
+
+        ![Connect to feed from Azure Artifacts](media/connect-to-feed-npm-registry.png)
+
+        ::: moniker-end
+
+2.  On your development machine, you will also have a **_.npmrc_** in $home for Linux or Mac systems or $env.HOME for win systems. This **_.npmrc_** should contain credentials for all of the registries that you need to connect to. The NPM client will look at your project's **_.npmrc_**, discover the registry, and fetch matching credentials from $home/.npmrc or $env.HOME/.npmrc. Credential acquisition will be discussed in the next section.
 
 This enables you to share the project's .npmrc file with the whole team while keeping your credentials secure.
 
@@ -168,7 +167,7 @@ This enables you to share the project's .npmrc file with the whole team while ke
 At this point, you should have a project-specific .npmrc file that contains only your feed's registry information that you discovered from the **Connect to feed** dialog box. There should be no credentials in this file. The file is usually adjacent to your project's package.json file.
 
 > [!IMPORTANT]
-> There can be only a single "registry=" line in your .npmrc file.  Multiple registries are possible with [scopes](npm/scopes.md) and the new upstream feature (discussed here).
+> There can be only a single "registry=" line in your .npmrc file. Multiple registries are possible with [scopes](npm/scopes.md) and the new upstream feature (discussed here).
 
 #### Windows
 
@@ -194,9 +193,9 @@ At this point, your project should have a package.json file and an .npmrc file a
 
 You can now publish the npm package:
 
-1. Browse to the directory that contains your package's package.json file.
+1.  Browse to the directory that contains your package's package.json file.
 
-1. Run `npm publish`.
+1.  Run `npm publish`.
 
 > The `npm publish` command will work because of the credentials that you acquired in [Set up your .npmrc files](#set-up-your-npmrc-files).
 

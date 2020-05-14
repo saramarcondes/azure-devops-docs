@@ -14,7 +14,6 @@ ms.date: 08/04/2016
 
 Module path: `TFS/DistributedTask/Contracts`
 
-
 ### Members
 
 * `abbreviation`: string. Project abbreviation.
@@ -28,4 +27,3 @@ Module path: `TFS/DistributedTask/Contracts`
 * `state`: any. Project state.
 
 * `url`: string. Url to the full version of the object.
-

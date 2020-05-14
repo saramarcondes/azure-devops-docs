@@ -15,8 +15,7 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Audit log for an extension 
+Audit log for an extension
 
 ### Members
 
@@ -25,4 +24,3 @@ Audit log for an extension
 * `extensionName`: string. Extension that the change was made for
 
 * `publisherName`: string. Publisher that the extension is part of
-

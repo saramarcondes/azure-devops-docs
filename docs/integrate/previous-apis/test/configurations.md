@@ -24,16 +24,18 @@ ms.date: 08/23/2016
 GET https://{instance}/DefaultCollection/{project}/_apis/test/configurations?api-version={version}[&$skip={int}&$top={int}&continuationToken={string}&includeAllProperties={boolean}]
 ```
 
-| Parameter          | Type    | Default | Notes
-|:-------------------|:--------|:--------|:---------------------
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
+
+
 | URL
-| instance           | string  |         | TFS server name ({server:port}).
-| project            | string  |         | Name or ID of the project.
+| instance | string | | TFS server name ({server:port}).
+| project | string | | Name or ID of the project.
 | Query
-| api-version        | string  |         | Version of the API to use.
-| $skip				 | int     |         | Number of test configurations to skip.
-| $top               | int     |         | Number of test configurations to return.
-| continuationToken               | string     |         | If the list of configurations returned is not complete, a continuation token to query next batch of configurations is included in the response header as "x-ms-continuationtoken". Omit this parameter to get the first batch of test configurations.
+| api-version | string | | Version of the API to use.
+| $skip | int | | Number of test configurations to skip.
+| $top | int | | Number of test configurations to return.
+| continuationToken | string | | If the list of configurations returned is not complete, a continuation token to query next batch of configurations is included in the response header as "x-ms-continuationtoken". Omit this parameter to get the first batch of test configurations.
 | includeAllProperties | boolean | false | If true, it returns all properties of the test configurations. Otherwise, it returns the skinny version.
 
 #### Sample request
@@ -50,7 +52,8 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/configu
     {
       "id": 1,
       "name": "Windows 10",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/1",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/1",
       "description": "Default operating system for testing",
       "isDefault": true,
       "state": "active"
@@ -58,20 +61,21 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/configu
     {
       "id": 2,
       "name": "Win10 IE11",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/2",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/2",
       "description": "Windows 10 - IE 11"
     },
     {
       "id": 3,
       "name": "Win10 English",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/3",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/3",
       "description": ""
     }
   ],
   "count": 3
 }
 ```
-
 
 ```json
 response header contains continuation token (considering batchSize is 3)
@@ -97,7 +101,8 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/configu
     {
       "id": 1,
       "name": "Windows 10",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/1",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/1",
       "description": "Default operating system for testing",
       "isDefault": true,
       "state": "active"
@@ -105,7 +110,8 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/configu
     {
       "id": 2,
       "name": "Win10 IE11",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/2",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/2",
       "description": "Windows 10 - IE 11"
     }
   ],
@@ -113,14 +119,12 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/configu
 }
 ```
 
-
 ```json
 response header contains continuation token (considering batchSize is 3)
 
 {
     "x-ms-continuationtoken": 4;2
 }
-
 ```
 
 ### With continuation token
@@ -139,7 +143,8 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/configu
     {
       "id": 14,
       "name": "Windows 10-2",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/14",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/14",
       "description": "Default operating system for testing",
       "isDefault": true,
       "state": "active"
@@ -147,13 +152,15 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/configu
     {
       "id": 15,
       "name": "Win10 IE11-2",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/15",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/15",
       "description": "Windows 10 - IE 11"
     },
     {
       "id": 16,
       "name": "Win10 English-2",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/16",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/16",
       "description": ""
     }
   ],
@@ -161,14 +168,12 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/configu
 }
 ```
 
-
 ```json
 response header contains continuation token (considering batchSize is 3)
 
 {
     "x-ms-continuationtoken": 17;9
 }
-
 ```
 
 ### Include all properties of the test configurations
@@ -187,18 +192,22 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/configu
     {
       "id": 1,
       "name": "Windows 10",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/1",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/1",
       "project": {
         "name": "fabrikam-fiber-tfvc",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
       },
       "description": "Default operating system for testing",
       "lastUpdatedBy": {
         "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
         "displayName": "Fabrikam Fiber",
         "uniqueName": "fabrikamfiber1@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
       },
       "lastUpdatedDate": "2015-12-23T05:21:26.42Z",
       "area": {
@@ -217,18 +226,22 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/configu
     {
       "id": 2,
       "name": "Win10 IE11",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/2",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/2",
       "project": {
         "name": "fabrikam-fiber-tfvc",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
       },
       "description": "Windows 10 - IE 11",
       "lastUpdatedBy": {
         "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
         "displayName": "Fabrikam Fiber",
         "uniqueName": "fabrikamfiber1@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
       },
       "lastUpdatedDate": "2015-12-23T05:49:13.94Z",
       "area": {
@@ -249,18 +262,22 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/configu
     {
       "id": 3,
       "name": "Win10 English",
-      "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/3",
+      "url":
+        "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/3",
       "project": {
         "name": "fabrikam-fiber-tfvc",
-        "url": "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
       },
       "description": "",
       "lastUpdatedBy": {
         "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
         "displayName": "Fabrikam Fiber",
         "uniqueName": "fabrikamfiber1@outlook.com",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
       },
       "lastUpdatedDate": "2015-12-23T05:52:48.167Z",
       "area": {
@@ -283,21 +300,22 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/configu
 }
 ```
 
-
 ## Get a test configuration
 
 ```no-highlight
 GET https://{instance}/DefaultCollection/{project}/_apis/test/configurations/{configurationId}?api-version={version}
 ```
 
-| Parameter          | Type    | Notes
-|:-------------------|:--------|:---------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance           | string  | TFS server name ({server:port}).
-| project            | string  | Name or ID of the project.
-| configurationId    | int     | ID of the test configuration to get.
+| instance | string | TFS server name ({server:port}).
+| project | string | Name or ID of the project.
+| configurationId | int | ID of the test configuration to get.
 | Query
-| api-version        | string  | Version of the API to use.
+| api-version | string | Version of the API to use.
 
 #### Sample request
 
@@ -311,18 +329,22 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/configu
 {
   "id": 1,
   "name": "Windows 10",
-  "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/1",
+  "url":
+    "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/1",
   "project": {
     "name": "fabrikam-fiber-tfvc",
-    "url": "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
   },
   "description": "Default operating system for testing",
   "lastUpdatedBy": {
     "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
     "displayName": "Fabrikam Fiber",
     "uniqueName": "fabrikamfiber1@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
   },
   "lastUpdatedDate": "2015-12-23T05:21:26.42Z",
   "area": {
@@ -340,15 +362,16 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/configu
 }
 ```
 
-
 ## Create a test configuration
 
 ```no-highlight
 POST https://{instance}/DefaultCollection/{project}/_apis/test/configurations?api-version={version}
 ```
+
 ```http
 Content-Type: application/json
 ```
+
 ```json
 {
   "name": {string},
@@ -361,25 +384,28 @@ Content-Type: application/json
 }
 ```
 
-| Parameter   | Type     | Default                     | Notes
-|:------------|:---------|:----------------------------|:---------------------
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
+
+
 | URL
-| instance    | string   |                             | TFS server name ({server:port}).
-| project     | string   |                             | Name or ID of the project.
+| instance | string | | TFS server name ({server:port}).
+| project | string | | Name or ID of the project.
 | Query
-| api-version | string   |                             | Version of the API to use.
+| api-version | string | | Version of the API to use.
 | Body
-| name        | string   |                             | Name of the new test configuration.
-| description | string   |                             | Description of the new test configuration.
-| values      | NameValuePair|                             | An array of test variable name and corresponding selected value pairs.
-| area        | string | Project root area | Name of the area under which the configuration is created.
-| state       | enum { Active, Inactive } | Active       | State of the test configuration.
+| name | string | | Name of the new test configuration.
+| description | string | | Description of the new test configuration.
+| values | NameValuePair| | An array of test variable name and corresponding selected value pairs.
+| area | string | Project root area | Name of the area under which the configuration is created.
+| state | enum { Active, Inactive } | Active | State of the test configuration.
 
 #### Sample request
 
 ```
 POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/configurations?api-version=3.0-preview.1
 ```
+
 ```json
 {
   "name": "Win10 IE11",
@@ -403,18 +429,22 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/config
 {
   "id": 2,
   "name": "Win10 IE11",
-  "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/2",
+  "url":
+    "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/2",
   "project": {
     "name": "fabrikam-fiber-tfvc",
-    "url": "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
   },
   "description": "Windows 10 - IE 11",
   "lastUpdatedBy": {
     "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
     "displayName": "Fabrikam Fiber",
     "uniqueName": "fabrikamfiber1@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
   },
   "lastUpdatedDate": "2015-12-23T05:49:13.8Z",
   "area": {
@@ -434,7 +464,6 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/config
 }
 ```
 
-
 ### With Area
 
 #### Sample request
@@ -442,6 +471,7 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/config
 ```
 POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/configurations?api-version=3.0-preview.1
 ```
+
 ```json
 {
   "name": "Win10 English",
@@ -467,18 +497,22 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/config
 {
   "id": 3,
   "name": "Win10 English",
-  "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/3",
+  "url":
+    "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/3",
   "project": {
     "name": "fabrikam-fiber-tfvc",
-    "url": "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
   },
   "description": "",
   "lastUpdatedBy": {
     "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
     "displayName": "Fabrikam Fiber",
     "uniqueName": "fabrikamfiber1@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
   },
   "lastUpdatedDate": "2015-12-23T05:52:48.11Z",
   "area": {
@@ -498,15 +532,16 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/config
 }
 ```
 
-
 ## Update a test configuration
 
 ```no-highlight
 PATCH https://{instance}/DefaultCollection/{project}/_apis/test/configurations/{configurationId}?api-version={version}
 ```
+
 ```http
 Content-Type: application/json
 ```
+
 ```json
 {
   "name": {string},
@@ -519,26 +554,29 @@ Content-Type: application/json
 }
 ```
 
-| Parameter   | Type     | Default                     | Notes
-|:------------|:---------|:----------------------------|:---------------------
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
+
+
 | URL
-| instance    | string   |                             | TFS server name ({server:port}).
-| project     | string   |                             | Name or ID of the project.
-| configurationId               | int     |            | ID of the test configuration to update.
+| instance | string | | TFS server name ({server:port}).
+| project | string | | Name or ID of the project.
+| configurationId | int | | ID of the test configuration to update.
 | Query
-| api-version | string   |                             | Version of the API to use.
+| api-version | string | | Version of the API to use.
 | Body
-| name        | string   |                             | Name of the test configuration.
-| description | string   |                             | Description of the test configuration.
-| values      | NameValuePair|                             | An array of test variable name and corresponding selected value pairs.
-| area        | string| Project root area | Name of the area under which the configuration is created.
-| state       | enum { Active, Inactive } | Active       | State of the test configuration.
+| name | string | | Name of the test configuration.
+| description | string | | Description of the test configuration.
+| values | NameValuePair| | An array of test variable name and corresponding selected value pairs.
+| area | string| Project root area | Name of the area under which the configuration is created.
+| state | enum { Active, Inactive } | Active | State of the test configuration.
 
 #### Sample request
 
 ```
 PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/configurations/3?api-version=3.0-preview.1
 ```
+
 ```json
 {
   "values": [
@@ -560,18 +598,22 @@ PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/confi
 {
   "id": 3,
   "name": "Win10 English",
-  "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/3",
+  "url":
+    "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Configurations/3",
   "project": {
     "name": "fabrikam-fiber-tfvc",
-    "url": "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
   },
   "description": "",
   "lastUpdatedBy": {
     "id": "e5a5f7f8-6507-4c34-b397-6c4818e002f4",
     "displayName": "Fabrikam Fiber",
     "uniqueName": "fabrikamfiber1@outlook.com",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/e5a5f7f8-6507-4c34-b397-6c4818e002f4",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=e5a5f7f8-6507-4c34-b397-6c4818e002f4"
   },
   "lastUpdatedDate": "2015-12-23T05:52:48.167Z",
   "area": {
@@ -591,25 +633,25 @@ PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/confi
 }
 ```
 
-
 ## Delete a test configuration
 
 ```no-highlight
 DELETE https://{instance}/DefaultCollection/{project}/_apis/test/configurations/{configurationId}?api-version={version}
 ```
 
-| Parameter          | Type    | Notes
-|:-------------------|:--------|:---------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance           | string  | TFS server name ({server:port}).
-| project            | string  | Name or ID of the project.
-| configurationId               | int     | ID of the test configuration to get.
+| instance | string | TFS server name ({server:port}).
+| project | string | Name or ID of the project.
+| configurationId | int | ID of the test configuration to get.
 | Query
-| api-version        | string  | Version of the API to use.
+| api-version | string | Version of the API to use.
 
 #### Sample request
 
 ```
 DELETE https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/configurations/3?api-version=3.0-preview.1
 ```
-

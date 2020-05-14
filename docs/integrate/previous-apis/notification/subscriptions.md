@@ -23,41 +23,43 @@ Manage and query notification subscriptions. A subscription defines the conditio
 <a name="Create"></a>
 
 ## Create
-Create a new subscription.
 
+Create a new subscription.
 
 ```no-highlight
 POST https://{instance}/_apis/notification/subscriptions?api-version={version}
 ```
 
-
 #### Authorization scopes
+
 For more details, see section on how to [authorize access to REST APIs](../../get-started/authentication/oauth.md).
 
-| Scope | Name | Notes
-|:------|:-----|:-----
-| vso.notification_write | Notifications (write) | Provides read/write access to subscriptions and read access to event metadata, including filterable field values.
-
+| Scope                  | Name                  | Notes                                                                                                             |
+| :--------------------- | :-------------------- | :---------------------------------------------------------------------------------------------------------------- |
+| vso.notification_write | Notifications (write) | Provides read/write access to subscriptions and read access to event metadata, including filterable field values. |
 
 #### Request parameters
-| Name | In  | Type | Notes
-|:--------------|:-----------|:---------|:------------
-| <code>instance</code> | URL | string | Required. TFS server name ({server:port}).
-| <code>api-version</code> | Query | string | Required. [Version](../../concepts/rest-api-versioning.md) of the API to use.  This should be set to '3.2-preview' to use this version of the API.
-| | Body | [NotificationSubscriptionCreateParameters](./contracts.md#NotificationSubscriptionCreateParameters) | Required.  Parameters for creating a new subscription. A subscription defines criteria for matching events and how the subscription's subscriber should be notified about those events.
+
+| Name                     | In    | Type                                                                                                | Notes                                                                                                                                                                                  |
+| :----------------------- | :---- | :-------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <code>instance</code>    | URL   | string                                                                                              | Required. TFS server name ({server:port}).                                                                                                                                             |
+| <code>api-version</code> | Query | string                                                                                              | Required. [Version](../../concepts/rest-api-versioning.md) of the API to use. This should be set to '3.2-preview' to use this version of the API.                                      |
+|                          | Body  | [NotificationSubscriptionCreateParameters](./contracts.md#NotificationSubscriptionCreateParameters) | Required. Parameters for creating a new subscription. A subscription defines criteria for matching events and how the subscription's subscriber should be notified about those events. |
 
 #### Response
 
-| Type       | Notes
-|:-----------|:---------
-| [NotificationSubscription](./contracts.md#NotificationSubscription) | A subscription defines criteria for matching events and how the subscription's subscriber should be notified about those events.
+| Type                                                                | Notes                                                                                                                            |
+| :------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------- |
+| [NotificationSubscription](./contracts.md#NotificationSubscription) | A subscription defines criteria for matching events and how the subscription's subscriber should be notified about those events. |
 
 ### For a user
+
 #### Sample request
 
 ```
 POST https://mytfsserver/DefaultCollection/_apis/notification/subscriptions?api-version=3.2-preview
 ```
+
 ```json
 {
   "description": "All changes to work items in the Fabrikam project",
@@ -84,7 +86,8 @@ POST https://mytfsserver/DefaultCollection/_apis/notification/subscriptions?api-
 ```json
 {
   "id": "114711",
-  "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/114711",
+  "url":
+    "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/114711",
   "description": "All changes to work items in the Fabrikam project",
   "subscriber": {
     "id": "cd49a245-51cc-493a-ab1a-5c0feb5afaa3",
@@ -126,20 +129,22 @@ POST https://mytfsserver/DefaultCollection/_apis/notification/subscriptions?api-
   },
   "_links": {
     "edit": {
-      "href": "https://mytfsserver/DefaultCollection/_notifications?subscriptionId=114711&publisherId=ms.vss-work.work-event-publisher&action=view"
+      "href":
+        "https://mytfsserver/DefaultCollection/_notifications?subscriptionId=114711&publisherId=ms.vss-work.work-event-publisher&action=view"
     }
   },
   "permissions": "view, edit, delete"
 }
 ```
 
-
 ### For a team
+
 #### Sample request
 
 ```
 POST https://mytfsserver/DefaultCollection/_apis/notification/subscriptions?api-version=3.2-preview
 ```
+
 ```json
 {
   "description": "A new work item enters our area path",
@@ -168,12 +173,14 @@ POST https://mytfsserver/DefaultCollection/_apis/notification/subscriptions?api-
 ```json
 {
   "id": "114712",
-  "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/114712",
+  "url":
+    "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/114712",
   "description": "A new work item enters our area path",
   "subscriber": {
     "id": "552e2388-e9bb-429e-ad71-c2fef2ad085f",
     "displayName": "[FabrikamCloud]\\Fab",
-    "uniqueName": "vstfs:///Classification/TeamProject/3b3ae425-0079-421f-9101-bcf15d6df041\\Fab",
+    "uniqueName":
+      "vstfs:///Classification/TeamProject/3b3ae425-0079-421f-9101-bcf15d6df041\\Fab",
     "isContainer": true
   },
   "status": "enabled",
@@ -215,39 +222,38 @@ POST https://mytfsserver/DefaultCollection/_apis/notification/subscriptions?api-
 }
 ```
 
-
 <a name="Get"></a>
 
 ## Get
-Get a notification subscription by its ID.
 
+Get a notification subscription by its ID.
 
 ```no-highlight
 GET https://{instance}/_apis/notification/subscriptions/{subscriptionId}?api-version={version}
 ```
 
-
 #### Authorization scopes
+
 For more details, see section on how to [authorize access to REST APIs](../../get-started/authentication/oauth.md).
 
-| Scope | Name | Notes
-|:------|:-----|:-----
-| vso.notification | Notifications (read) | Provides read access to subscriptions and event metadata, including filterable field values.
-
+| Scope            | Name                 | Notes                                                                                        |
+| :--------------- | :------------------- | :------------------------------------------------------------------------------------------- |
+| vso.notification | Notifications (read) | Provides read access to subscriptions and event metadata, including filterable field values. |
 
 #### Request parameters
-| Name | In  | Type | Notes
-|:--------------|:-----------|:---------|:------------
-| <code>instance</code> | URL | string | Required. TFS server name ({server:port}).
-| <code>subscriptionId</code> | URL | string | Required.
-| <code>api-version</code> | Query | string | Required. [Version](../../concepts/rest-api-versioning.md) of the API to use.  This should be set to '3.2-preview' to use this version of the API.
-| <code>queryFlags</code> | Query | [SubscriptionQueryFlags](./contracts.md#SubscriptionQueryFlags) | Optional.
+
+| Name                        | In    | Type                                                            | Notes                                                                                                                                             |
+| :-------------------------- | :---- | :-------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <code>instance</code>       | URL   | string                                                          | Required. TFS server name ({server:port}).                                                                                                        |
+| <code>subscriptionId</code> | URL   | string                                                          | Required.                                                                                                                                         |
+| <code>api-version</code>    | Query | string                                                          | Required. [Version](../../concepts/rest-api-versioning.md) of the API to use. This should be set to '3.2-preview' to use this version of the API. |
+| <code>queryFlags</code>     | Query | [SubscriptionQueryFlags](./contracts.md#SubscriptionQueryFlags) | Optional.                                                                                                                                         |
 
 #### Response
 
-| Type       | Notes
-|:-----------|:---------
-| [NotificationSubscription](./contracts.md#NotificationSubscription) | A subscription defines criteria for matching events and how the subscription's subscriber should be notified about those events.
+| Type                                                                | Notes                                                                                                                            |
+| :------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------- |
+| [NotificationSubscription](./contracts.md#NotificationSubscription) | A subscription defines criteria for matching events and how the subscription's subscriber should be notified about those events. |
 
 #### Sample request
 
@@ -260,7 +266,8 @@ GET https://mytfsserver/DefaultCollection/_apis/notification/subscriptions/11471
 ```json
 {
   "id": "114711",
-  "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/114711",
+  "url":
+    "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/114711",
   "description": "All changes to work items in the Fabrikam project",
   "subscriber": {
     "id": "cd49a245-51cc-493a-ab1a-5c0feb5afaa3",
@@ -302,52 +309,54 @@ GET https://mytfsserver/DefaultCollection/_apis/notification/subscriptions/11471
   },
   "_links": {
     "edit": {
-      "href": "https://mytfsserver/DefaultCollection/_notifications?subscriptionId=114711&publisherId=ms.vss-work.work-event-publisher&action=view"
+      "href":
+        "https://mytfsserver/DefaultCollection/_notifications?subscriptionId=114711&publisherId=ms.vss-work.work-event-publisher&action=view"
     }
   },
   "permissions": "view, edit, delete"
 }
 ```
 
-
 <a name="Query"></a>
 
 ## Query
-Query for subscriptions. A subscription is returned if it matches one or more of the specified conditions.
 
+Query for subscriptions. A subscription is returned if it matches one or more of the specified conditions.
 
 ```no-highlight
 POST https://{instance}/_apis/notification/subscriptionquery?api-version={version}
 ```
 
-
 #### Authorization scopes
+
 For more details, see section on how to [authorize access to REST APIs](../../get-started/authentication/oauth.md).
 
-| Scope | Name | Notes
-|:------|:-----|:-----
-| vso.notification | Notifications (read) | Provides read access to subscriptions and event metadata, including filterable field values.
-
+| Scope            | Name                 | Notes                                                                                        |
+| :--------------- | :------------------- | :------------------------------------------------------------------------------------------- |
+| vso.notification | Notifications (read) | Provides read access to subscriptions and event metadata, including filterable field values. |
 
 #### Request parameters
-| Name | In  | Type | Notes
-|:--------------|:-----------|:---------|:------------
-| <code>instance</code> | URL | string | Required. TFS server name ({server:port}).
-| <code>api-version</code> | Query | string | Required. [Version](../../concepts/rest-api-versioning.md) of the API to use.  This should be set to '3.2-preview' to use this version of the API.
-| | Body | [SubscriptionQuery](./contracts.md#SubscriptionQuery) | Required.  Notification subscriptions query input.
+
+| Name                     | In    | Type                                                  | Notes                                                                                                                                             |
+| :----------------------- | :---- | :---------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <code>instance</code>    | URL   | string                                                | Required. TFS server name ({server:port}).                                                                                                        |
+| <code>api-version</code> | Query | string                                                | Required. [Version](../../concepts/rest-api-versioning.md) of the API to use. This should be set to '3.2-preview' to use this version of the API. |
+|                          | Body  | [SubscriptionQuery](./contracts.md#SubscriptionQuery) | Required. Notification subscriptions query input.                                                                                                 |
 
 #### Response
 
-| Type       | Notes
-|:-----------|:---------
+| Type                                                                                                        | Notes |
+| :---------------------------------------------------------------------------------------------------------- | :---- |
 | VssJsonCollectionWrapper&lt;array ([NotificationSubscription](./contracts.md#NotificationSubscription))&gt; |
 
 ### By subscriber
+
 #### Sample request
 
 ```
 POST https://mytfsserver/DefaultCollection/_apis/notification/subscriptionQuery?api-version=3.2-preview
 ```
+
 ```json
 {
   "conditions": [
@@ -366,12 +375,14 @@ POST https://mytfsserver/DefaultCollection/_apis/notification/subscriptionQuery?
   "value": [
     {
       "id": "105645",
-      "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/105645",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/105645",
       "description": "A pull request is created or updated",
       "subscriber": {
         "id": "552e2388-e9bb-429e-ad71-c2fef2ad085f",
         "displayName": "[FabrikamCloud]\\Fab",
-        "uniqueName": "vstfs:///Classification/TeamProject/3b3ae425-0079-421f-9101-bcf15d6df041\\Fab",
+        "uniqueName":
+          "vstfs:///Classification/TeamProject/3b3ae425-0079-421f-9101-bcf15d6df041\\Fab",
         "isContainer": true
       },
       "status": "enabled",
@@ -388,14 +399,8 @@ POST https://mytfsserver/DefaultCollection/_apis/notification/subscriptionQuery?
       },
       "filter": {
         "type": "Actor",
-        "inclusions": [
-          "author",
-          "reviewer",
-          "changedReviewers"
-        ],
-        "exclusions": [
-          "initiator"
-        ],
+        "inclusions": ["author", "reviewer", "changedReviewers"],
+        "exclusions": ["initiator"],
         "criteria": {
           "clauses": [],
           "groups": [],
@@ -418,12 +423,14 @@ POST https://mytfsserver/DefaultCollection/_apis/notification/subscriptionQuery?
     },
     {
       "id": "105936",
-      "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/105936",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/105936",
       "description": "A build completes",
       "subscriber": {
         "id": "552e2388-e9bb-429e-ad71-c2fef2ad085f",
         "displayName": "[FabrikamCloud]\\Fab",
-        "uniqueName": "vstfs:///Classification/TeamProject/3b3ae425-0079-421f-9101-bcf15d6df041\\Fab",
+        "uniqueName":
+          "vstfs:///Classification/TeamProject/3b3ae425-0079-421f-9101-bcf15d6df041\\Fab",
         "isContainer": true
       },
       "status": "enabled",
@@ -452,12 +459,14 @@ POST https://mytfsserver/DefaultCollection/_apis/notification/subscriptionQuery?
     },
     {
       "id": "114712",
-      "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/114712",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/114712",
       "description": "A new work item enters our area path",
       "subscriber": {
         "id": "552e2388-e9bb-429e-ad71-c2fef2ad085f",
         "displayName": "[FabrikamCloud]\\Fab",
-        "uniqueName": "vstfs:///Classification/TeamProject/3b3ae425-0079-421f-9101-bcf15d6df041\\Fab",
+        "uniqueName":
+          "vstfs:///Classification/TeamProject/3b3ae425-0079-421f-9101-bcf15d6df041\\Fab",
         "isContainer": true
       },
       "status": "enabled",
@@ -488,7 +497,6 @@ POST https://mytfsserver/DefaultCollection/_apis/notification/subscriptionQuery?
 }
 ```
 
-
 <a name="List"></a>
 
 ## List
@@ -497,28 +505,28 @@ POST https://mytfsserver/DefaultCollection/_apis/notification/subscriptionQuery?
 GET https://{instance}/_apis/notification/subscriptions?api-version={version}
 ```
 
-
 #### Authorization scopes
+
 For more details, see section on how to [authorize access to REST APIs](../../get-started/authentication/oauth.md).
 
-| Scope | Name | Notes
-|:------|:-----|:-----
-| vso.notification | Notifications (read) | Provides read access to subscriptions and event metadata, including filterable field values.
-
+| Scope            | Name                 | Notes                                                                                        |
+| :--------------- | :------------------- | :------------------------------------------------------------------------------------------- |
+| vso.notification | Notifications (read) | Provides read access to subscriptions and event metadata, including filterable field values. |
 
 #### Request parameters
-| Name | In  | Type | Notes
-|:--------------|:-----------|:---------|:------------
-| <code>instance</code> | URL | string | Required. TFS server name ({server:port}).
-| <code>api-version</code> | Query | string | Required. [Version](../../concepts/rest-api-versioning.md) of the API to use.  This should be set to '3.2-preview' to use this version of the API.
-| <code>targetId</code> | Query | GUID | Optional.
-| <code>ids</code> | Query | array (string) | Optional.
-| <code>queryFlags</code> | Query | [SubscriptionQueryFlags](./contracts.md#SubscriptionQueryFlags) | Optional.
+
+| Name                     | In    | Type                                                            | Notes                                                                                                                                             |
+| :----------------------- | :---- | :-------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <code>instance</code>    | URL   | string                                                          | Required. TFS server name ({server:port}).                                                                                                        |
+| <code>api-version</code> | Query | string                                                          | Required. [Version](../../concepts/rest-api-versioning.md) of the API to use. This should be set to '3.2-preview' to use this version of the API. |
+| <code>targetId</code>    | Query | GUID                                                            | Optional.                                                                                                                                         |
+| <code>ids</code>         | Query | array (string)                                                  | Optional.                                                                                                                                         |
+| <code>queryFlags</code>  | Query | [SubscriptionQueryFlags](./contracts.md#SubscriptionQueryFlags) | Optional.                                                                                                                                         |
 
 #### Response
 
-| Type       | Notes
-|:-----------|:---------
+| Type                                                                                                        | Notes |
+| :---------------------------------------------------------------------------------------------------------- | :---- |
 | VssJsonCollectionWrapper&lt;array ([NotificationSubscription](./contracts.md#NotificationSubscription))&gt; |
 
 #### Sample request
@@ -535,7 +543,8 @@ GET https://mytfsserver/DefaultCollection/_apis/notification/subscriptions?api-v
   "value": [
     {
       "id": "105852",
-      "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/105852",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/105852",
       "description": "A commit is pushed by me",
       "subscriber": {
         "id": "cd49a245-51cc-493a-ab1a-5c0feb5afaa3",
@@ -577,14 +586,16 @@ GET https://mytfsserver/DefaultCollection/_apis/notification/subscriptions?api-v
       },
       "_links": {
         "edit": {
-          "href": "https://mytfsserver/DefaultCollection/_notifications?subscriptionId=105852&publisherId=ms.vss-code.git-event-publisher&action=view"
+          "href":
+            "https://mytfsserver/DefaultCollection/_notifications?subscriptionId=105852&publisherId=ms.vss-code.git-event-publisher&action=view"
         }
       },
       "permissions": "view, edit, delete"
     },
     {
       "id": "105897",
-      "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/105897",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/105897",
       "description": "Code is pushed to the Ops repo",
       "subscriber": {
         "id": "cd49a245-51cc-493a-ab1a-5c0feb5afaa3",
@@ -626,14 +637,16 @@ GET https://mytfsserver/DefaultCollection/_apis/notification/subscriptions?api-v
       },
       "_links": {
         "edit": {
-          "href": "https://mytfsserver/DefaultCollection/_notifications?subscriptionId=105897&publisherId=ms.vss-code.git-event-publisher&action=view"
+          "href":
+            "https://mytfsserver/DefaultCollection/_notifications?subscriptionId=105897&publisherId=ms.vss-code.git-event-publisher&action=view"
         }
       },
       "permissions": "view, edit, delete"
     },
     {
       "id": "114710",
-      "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/114710",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/114710",
       "description": "All changes to work items in the Fabrikam project",
       "subscriber": {
         "id": "cd49a245-51cc-493a-ab1a-5c0feb5afaa3",
@@ -675,14 +688,16 @@ GET https://mytfsserver/DefaultCollection/_apis/notification/subscriptions?api-v
       },
       "_links": {
         "edit": {
-          "href": "https://mytfsserver/DefaultCollection/_notifications?subscriptionId=114710&publisherId=ms.vss-work.work-event-publisher&action=view"
+          "href":
+            "https://mytfsserver/DefaultCollection/_notifications?subscriptionId=114710&publisherId=ms.vss-work.work-event-publisher&action=view"
         }
       },
       "permissions": "view, edit, delete"
     },
     {
       "id": "114711",
-      "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/114711",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/114711",
       "description": "All changes to work items in the Fabrikam project",
       "subscriber": {
         "id": "cd49a245-51cc-493a-ab1a-5c0feb5afaa3",
@@ -724,7 +739,8 @@ GET https://mytfsserver/DefaultCollection/_apis/notification/subscriptions?api-v
       },
       "_links": {
         "edit": {
-          "href": "https://mytfsserver/DefaultCollection/_notifications?subscriptionId=114711&publisherId=ms.vss-work.work-event-publisher&action=view"
+          "href":
+            "https://mytfsserver/DefaultCollection/_notifications?subscriptionId=114711&publisherId=ms.vss-work.work-event-publisher&action=view"
         }
       },
       "permissions": "view, edit, delete"
@@ -733,46 +749,47 @@ GET https://mytfsserver/DefaultCollection/_apis/notification/subscriptions?api-v
 }
 ```
 
-
 <a name="Update"></a>
 
 ## Update
-Update an existing subscription. Depending on the type of subscription and permissions, the caller can update the description, filter settings, channel (delivery) settings and more.
 
+Update an existing subscription. Depending on the type of subscription and permissions, the caller can update the description, filter settings, channel (delivery) settings and more.
 
 ```no-highlight
 PATCH https://{instance}/_apis/notification/subscriptions/{subscriptionId}?api-version={version}
 ```
 
-
 #### Authorization scopes
+
 For more details, see section on how to [authorize access to REST APIs](../../get-started/authentication/oauth.md).
 
-| Scope | Name | Notes
-|:------|:-----|:-----
-| vso.notification_write | Notifications (write) | Provides read/write access to subscriptions and read access to event metadata, including filterable field values.
-
+| Scope                  | Name                  | Notes                                                                                                             |
+| :--------------------- | :-------------------- | :---------------------------------------------------------------------------------------------------------------- |
+| vso.notification_write | Notifications (write) | Provides read/write access to subscriptions and read access to event metadata, including filterable field values. |
 
 #### Request parameters
-| Name | In  | Type | Notes
-|:--------------|:-----------|:---------|:------------
-| <code>instance</code> | URL | string | Required. TFS server name ({server:port}).
-| <code>subscriptionId</code> | URL | string | Required.
-| <code>api-version</code> | Query | string | Required. [Version](../../concepts/rest-api-versioning.md) of the API to use.  This should be set to '3.2-preview' to use this version of the API.
-| | Body | [NotificationSubscriptionUpdateParameters](./contracts.md#NotificationSubscriptionUpdateParameters) | Required.  Parameters for updating an existing subscription. A subscription defines criteria for matching events and how the subscription's subscriber should be notified about those events. Note: only the fields to be updated should be set.
+
+| Name                        | In    | Type                                                                                                | Notes                                                                                                                                                                                                                                           |
+| :-------------------------- | :---- | :-------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <code>instance</code>       | URL   | string                                                                                              | Required. TFS server name ({server:port}).                                                                                                                                                                                                      |
+| <code>subscriptionId</code> | URL   | string                                                                                              | Required.                                                                                                                                                                                                                                       |
+| <code>api-version</code>    | Query | string                                                                                              | Required. [Version](../../concepts/rest-api-versioning.md) of the API to use. This should be set to '3.2-preview' to use this version of the API.                                                                                               |
+|                             | Body  | [NotificationSubscriptionUpdateParameters](./contracts.md#NotificationSubscriptionUpdateParameters) | Required. Parameters for updating an existing subscription. A subscription defines criteria for matching events and how the subscription's subscriber should be notified about those events. Note: only the fields to be updated should be set. |
 
 #### Response
 
-| Type       | Notes
-|:-----------|:---------
-| [NotificationSubscription](./contracts.md#NotificationSubscription) | A subscription defines criteria for matching events and how the subscription's subscriber should be notified about those events.
+| Type                                                                | Notes                                                                                                                            |
+| :------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------- |
+| [NotificationSubscription](./contracts.md#NotificationSubscription) | A subscription defines criteria for matching events and how the subscription's subscriber should be notified about those events. |
 
 ### Change description
+
 #### Sample request
 
 ```
 PATCH https://mytfsserver/DefaultCollection/_apis/notification/subscriptions/114711?api-version=3.2-preview
 ```
+
 ```json
 {
   "description": "All changes to work items in this account",
@@ -787,7 +804,8 @@ PATCH https://mytfsserver/DefaultCollection/_apis/notification/subscriptions/114
 ```json
 {
   "id": "114711",
-  "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/114711",
+  "url":
+    "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/114711",
   "description": "All changes to work items in this account",
   "subscriber": {
     "id": "cd49a245-51cc-493a-ab1a-5c0feb5afaa3",
@@ -829,20 +847,22 @@ PATCH https://mytfsserver/DefaultCollection/_apis/notification/subscriptions/114
   },
   "_links": {
     "edit": {
-      "href": "https://mytfsserver/DefaultCollection/_notifications?subscriptionId=114711&publisherId=ms.vss-work.work-event-publisher&action=view"
+      "href":
+        "https://mytfsserver/DefaultCollection/_notifications?subscriptionId=114711&publisherId=ms.vss-work.work-event-publisher&action=view"
     }
   },
   "permissions": "view, edit, delete"
 }
 ```
 
-
 ### Disable
+
 #### Sample request
 
 ```
 PATCH https://mytfsserver/DefaultCollection/_apis/notification/subscriptions/114711?api-version=3.2-preview
 ```
+
 ```json
 {
   "status": "disabled"
@@ -854,7 +874,8 @@ PATCH https://mytfsserver/DefaultCollection/_apis/notification/subscriptions/114
 ```json
 {
   "id": "114711",
-  "url": "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/114711",
+  "url":
+    "https://mytfsserver/DefaultCollection/_apis/notification/Subscriptions/114711",
   "description": "All changes to work items in this account",
   "subscriber": {
     "id": "cd49a245-51cc-493a-ab1a-5c0feb5afaa3",
@@ -896,39 +917,39 @@ PATCH https://mytfsserver/DefaultCollection/_apis/notification/subscriptions/114
   },
   "_links": {
     "edit": {
-      "href": "https://mytfsserver/DefaultCollection/_notifications?subscriptionId=114711&publisherId=ms.vss-work.work-event-publisher&action=view"
+      "href":
+        "https://mytfsserver/DefaultCollection/_notifications?subscriptionId=114711&publisherId=ms.vss-work.work-event-publisher&action=view"
     }
   },
   "permissions": "view, edit, delete"
 }
 ```
 
-
 <a name="Delete"></a>
 
 ## Delete
-Delete a subscription.
 
+Delete a subscription.
 
 ```no-highlight
 DELETE https://{instance}/_apis/notification/subscriptions/{subscriptionId}?api-version={version}
 ```
 
-
 #### Authorization scopes
+
 For more details, see section on how to [authorize access to REST APIs](../../get-started/authentication/oauth.md).
 
-| Scope | Name | Notes
-|:------|:-----|:-----
-| vso.notification_write | Notifications (write) | Provides read/write access to subscriptions and read access to event metadata, including filterable field values.
-
+| Scope                  | Name                  | Notes                                                                                                             |
+| :--------------------- | :-------------------- | :---------------------------------------------------------------------------------------------------------------- |
+| vso.notification_write | Notifications (write) | Provides read/write access to subscriptions and read access to event metadata, including filterable field values. |
 
 #### Request parameters
-| Name | In  | Type | Notes
-|:--------------|:-----------|:---------|:------------
-| <code>instance</code> | URL | string | Required. TFS server name ({server:port}).
-| <code>subscriptionId</code> | URL | string | Required.
-| <code>api-version</code> | Query | string | Required. [Version](../../concepts/rest-api-versioning.md) of the API to use.  This should be set to '3.2-preview' to use this version of the API.
+
+| Name                        | In    | Type   | Notes                                                                                                                                             |
+| :-------------------------- | :---- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <code>instance</code>       | URL   | string | Required. TFS server name ({server:port}).                                                                                                        |
+| <code>subscriptionId</code> | URL   | string | Required.                                                                                                                                         |
+| <code>api-version</code>    | Query | string | Required. [Version](../../concepts/rest-api-versioning.md) of the API to use. This should be set to '3.2-preview' to use this version of the API. |
 
 #### Sample request
 
@@ -936,47 +957,48 @@ For more details, see section on how to [authorize access to REST APIs](../../ge
 DELETE https://mytfsserver/DefaultCollection/_apis/notification/subscriptions/114711?api-version=3.2-preview
 ```
 
-
 <a name="Update subscription user settings"></a>
 
 ## Update subscription user settings
-Update the specified users' settings for the specified subscription. User settings can only be applied to shared subscriptions, like team subscriptions or default subscriptions. This API is typically used to opt in or out of a shared subscription.
 
+Update the specified users' settings for the specified subscription. User settings can only be applied to shared subscriptions, like team subscriptions or default subscriptions. This API is typically used to opt in or out of a shared subscription.
 
 ```no-highlight
 PUT https://{instance}/_apis/notification/Subscriptions/{subscriptionId}/usersettings/{userId}?api-version={version}
 ```
 
-
 #### Authorization scopes
+
 For more details, see section on how to [authorize access to REST APIs](../../get-started/authentication/oauth.md).
 
-| Scope | Name | Notes
-|:------|:-----|:-----
-| vso.notification_write | Notifications (write) | Provides read/write access to subscriptions and read access to event metadata, including filterable field values.
-
+| Scope                  | Name                  | Notes                                                                                                             |
+| :--------------------- | :-------------------- | :---------------------------------------------------------------------------------------------------------------- |
+| vso.notification_write | Notifications (write) | Provides read/write access to subscriptions and read access to event metadata, including filterable field values. |
 
 #### Request parameters
-| Name | In  | Type | Notes
-|:--------------|:-----------|:---------|:------------
-| <code>instance</code> | URL | string | Required. TFS server name ({server:port}).
-| <code>subscriptionId</code> | URL | string | Required.
-| <code>userId</code> | URL | GUID | Optional. ID of the user or "me" to indicate the calling user
-| <code>api-version</code> | Query | string | Required. [Version](../../concepts/rest-api-versioning.md) of the API to use.  This should be set to '3.2-preview' to use this version of the API.
-| | Body | [SubscriptionUserSettings](./contracts.md#SubscriptionUserSettings) | Required.  User-managed settings for a group subscription.
+
+| Name                        | In    | Type                                                                | Notes                                                                                                                                             |
+| :-------------------------- | :---- | :------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <code>instance</code>       | URL   | string                                                              | Required. TFS server name ({server:port}).                                                                                                        |
+| <code>subscriptionId</code> | URL   | string                                                              | Required.                                                                                                                                         |
+| <code>userId</code>         | URL   | GUID                                                                | Optional. ID of the user or "me" to indicate the calling user                                                                                     |
+| <code>api-version</code>    | Query | string                                                              | Required. [Version](../../concepts/rest-api-versioning.md) of the API to use. This should be set to '3.2-preview' to use this version of the API. |
+|                             | Body  | [SubscriptionUserSettings](./contracts.md#SubscriptionUserSettings) | Required. User-managed settings for a group subscription.                                                                                         |
 
 #### Response
 
-| Type       | Notes
-|:-----------|:---------
-| [SubscriptionUserSettings](./contracts.md#SubscriptionUserSettings) | User-managed settings for a group subscription.
+| Type                                                                | Notes                                           |
+| :------------------------------------------------------------------ | :---------------------------------------------- |
+| [SubscriptionUserSettings](./contracts.md#SubscriptionUserSettings) | User-managed settings for a group subscription. |
 
 ### Opt out
+
 #### Sample request
 
 ```
 PUT https://mytfsserver/DefaultCollection/_apis/notification/subscriptions/ms.vss-code.pull-request-updated-subscription/userSettings/me?api-version=3.2-preview
 ```
+
 ```json
 {
   "optedOut": true

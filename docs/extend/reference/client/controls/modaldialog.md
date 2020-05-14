@@ -17,7 +17,8 @@ See [Use modal dialog](../../../develop/ui-controls/modaldialogo.md) for basic u
 ## Create a modal dialog
 
 ### TypeScript
-``` javascript
+
+```javascript
   import Dialogs = require("VSS/Controls/Dialogs");
 
   // Create the modal dialog
@@ -25,11 +26,10 @@ See [Use modal dialog](../../../develop/ui-controls/modaldialogo.md) for basic u
 ```
 
 ### JavaScript
-``` javascript
-  require(["VSS/Controls/Dialogs"], function(Dialogs) {
-      // Create the modal dialog
-      var dialog = Dialogs.show(Dialogs.ModalDialog, options);
-  });
+
+```javascript
+require(["VSS/Controls/Dialogs"], function(Dialogs) {
+  // Create the modal dialog
+  var dialog = Dialogs.show(Dialogs.ModalDialog, options);
+});
 ```
-
-

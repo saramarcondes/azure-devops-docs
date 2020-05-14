@@ -31,7 +31,6 @@ For the instructions in this topic, you need a SQL server database project in Vi
 
 <ol>
 
-
 <li><p><a data-toggle="collapse" href="#expando-begin-create-build-definition-open-team-project">Open your project in your web browser &#x25BC;</a></p>
 <div class="collapse" id="expando-begin-create-build-definition-open-team-project">
 <img src="~/pipelines/media/browse-to-team-project.png" alt="Browse to project">
@@ -78,13 +77,13 @@ After you've run the build, you're ready to create a release pipeline to deploy 
 
 <h3 id="new_solution">How do I create an SQL server database solution?</h3>
 
-1. In Visual Studio, [connect to your project](../../../organizations/projects/connect-to-projects.md#visual-studio).
+1.  In Visual Studio, [connect to your project](../../../organizations/projects/connect-to-projects.md#visual-studio).
 
-2. On the Team Explorer home page (Keyboard: Ctrl + 0, H), under **Solutions**, click **New**.
+2.  On the Team Explorer home page (Keyboard: Ctrl + 0, H), under **Solutions**, click **New**.
 
-3. Select the **SQL Server** templates section, and then choose the **SQL Server Database Project** template.
+3.  Select the **SQL Server** templates section, and then choose the **SQL Server Database Project** template.
 
-4. [Commit and push (Git)](../../../repos/git/share-your-code-in-git-vs.md) or [check in (TFVC)](../../../repos/tfvc/share-your-code-in-tfvc-vs.md) your code.
+4.  [Commit and push (Git)](../../../repos/git/share-your-code-in-git-vs.md) or [check in (TFVC)](../../../repos/tfvc/share-your-code-in-tfvc-vs.md) your code.
 
 ::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../includes/qa-versions.md)]

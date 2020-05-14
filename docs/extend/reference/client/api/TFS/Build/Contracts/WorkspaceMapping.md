@@ -14,7 +14,6 @@ ms.date: 08/04/2016
 
 Module path: `TFS/Build/Contracts`
 
-
 ### Members
 
 * `definitionUri`: string. Uri of the associated definition
@@ -28,4 +27,3 @@ Module path: `TFS/Build/Contracts`
 * `serverItem`: string. Server location of the definition
 
 * `workspaceId`: number. ID of the workspace
-

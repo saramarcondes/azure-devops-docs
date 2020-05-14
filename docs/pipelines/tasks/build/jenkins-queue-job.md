@@ -112,19 +112,20 @@ You can use Team Foundation Server Plug-in (version 5.2.0 or newer) to automatic
 
 To set it up:
 
-1. Install the [Team Foundation Server Plug-in](https://wiki.jenkins-ci.org/display/JENKINS/Team+Foundation+Server+Plugin) on the Jenkins server.
+1.  Install the [Team Foundation Server Plug-in](https://wiki.jenkins-ci.org/display/JENKINS/Team+Foundation+Server+Plugin) on the Jenkins server.
 
-2. On the Jenkins server, for each job you would like to collect results from, add the **Collect results for Azure Pipelines/TFS** post-build action and then configure it with one or more pairs of result type and include file pattern.
+2.  On the Jenkins server, for each job you would like to collect results from, add the **Collect results for Azure Pipelines/TFS** post-build action and then configure it with one or more pairs of result type and include file pattern.
 
-3. On the Jenkins Queue Job, build task enable the **Capture console output and wait for completion** to collect results from the root level job, or the **Capture pipeline output and wait for pipeline completion** to collect results from all pipeline jobs. 
+3.  On the Jenkins Queue Job, build task enable the **Capture console output and wait for completion** to collect results from the root level job, or the **Capture pipeline output and wait for pipeline completion** to collect results from all pipeline jobs.
 
-Results will be downloaded to the **$(Build.StagingDirectory)/jenkinsResults/Job Name/team-results.zip** and extracted to this location. Each set of result types collected by the plug-in, will be under the team-results directory, **$(Build.StagingDirectory)/jenkinsResults/Job Name/team-results/ResultType/**. This is the directory where build results can be published by downstream tasks (for example, Publish Test Results, and Publish Code Coverage Results).                 
+Results will be downloaded to the **$(Build.StagingDirectory)/jenkinsResults/Job Name/team-results.zip** and extracted to this location. Each set of result types collected by the plug-in, will be under the team-results directory, **$(Build.StagingDirectory)/jenkinsResults/Job Name/team-results/ResultType/**. This is the directory where build results can be published by downstream tasks (for example, Publish Test Results, and Publish Code Coverage Results).
 
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
+
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../includes/build-step-common-qa.md)]

@@ -15,11 +15,8 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-
 ### Members
 
 * `offset`: number. Millisecond adjustment from UTC
 
 * `start`: Date. Date that the offset adjustment starts
-

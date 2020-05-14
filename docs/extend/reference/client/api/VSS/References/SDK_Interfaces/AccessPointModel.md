@@ -15,8 +15,7 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-Model to represent a public access uri 
+Model to represent a public access uri
 
 ### Members
 
@@ -25,4 +24,3 @@ Model to represent a public access uri
 * `scheme`: string. Url scheme (http, https, ...)
 
 * `uri`: string. Full url
-

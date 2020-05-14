@@ -21,9 +21,9 @@ Beginning from this release Application Insights differentiates telemetry collec
 
 You’ll now see these labels:
 
-- In Overview: ‘Usage analytics (excluding synthetic traffic)’
-- In Usage analytics: ‘(Excluding synthetic traffic)’
-- In drill-in experiences, the filter is turned on by default:
+* In Overview: ‘Usage analytics (excluding synthetic traffic)’
+* In Usage analytics: ‘(Excluding synthetic traffic)’
+* In drill-in experiences, the filter is turned on by default:
 
 ![Filtering for real traffic turned on by default in drill-in experiences](media/4_22_02.png)
 
@@ -33,22 +33,21 @@ The ASP.NET Overview Lens in the Applications Insights portal has a new and impr
 
 Usage content and drill-in experiences are designed to support two main scenarios:
 
-1. Daily review of activity, adoption and interaction.
+1.  Daily review of activity, adoption and interaction.
 
     The four controls under Usage analytics show counts over 24 hours, and the trend in comparison to the previous 24 hours. Clicking these controls provides more detail:
 
     ![Daily activity review: usage analytics control panel](media/4_22_03.png)
 
-2. Deeper analysis of activity and trends over a longer time period (7 days default). From the Overview blade, click Usage:
+2.  Deeper analysis of activity and trends over a longer time period (7 days default). From the Overview blade, click Usage:
 
     ![Accessing usage analytics for longer time periods](media/4_22_04.png)
 
-  This takes you to the Usage analytics blade, which answers questions about adoption, engagement, interaction and environment.
+This takes you to the Usage analytics blade, which answers questions about adoption, engagement, interaction and environment.
 
 ## Usage Reports Calculation for Daily Active Users
 
 A new calculation for Daily Active Users (DAU) has been added to the usage reports. DAU presents the average number of the daily active users over the time period you have set. The calculation uses data from complete days only.
-
 
 ## Feedback please!
 

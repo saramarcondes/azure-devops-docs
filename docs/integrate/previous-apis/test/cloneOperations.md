@@ -23,29 +23,33 @@ ms.date: 08/17/2016
 ```no-highlight
 POST https://{instance}/DefaultCollection/{project}/_apis/test/plans/{planId}/suites/{suiteId}/cloneOperation?api-version={version}
 ```
+
 ```http
 Content-Type: application/json
 ```
+
 ```json
 {
-  "destinationSuiteId" : "int",
-  "destinationSuiteProjectName" : "string",
-  "options" : "CloneOptions"
+  "destinationSuiteId": "int",
+  "destinationSuiteProjectName": "string",
+  "options": "CloneOptions"
 }
 ```
 
-| Parameter   | Type            | Default                     | Notes
-|:------------|:---------       |:----------------------------|:---------------------
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
+
+
 | URL
-| instance    | string          |                             | TFS server name ({server:port}).
-| project     | string          |                             | Name or ID of the project.
-| planId      | int             |                             | ID of the test plan in which suite to be cloned is present
-| suiteId      | int             |                             | ID of the test suite to be cloned
-| api-version | string          |                             | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| instance | string | | TFS server name ({server:port}).
+| project | string | | Name or ID of the project.
+| planId | int | | ID of the test plan in which suite to be cloned is present
+| suiteId | int | | ID of the test suite to be cloned
+| api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
-| destinationSuiteId            | int  |                      | Contains ID of the suite to be cloned.
-| cloneOptions| CloneOptions    |                             | Options for cloning can be passed. Clone options include : relatedLinkComment, copyAllSuites, copyAncestorHierarchy, destinationWorkItemType, cloneRequirements, overrideParameters. 
-| destinationSuiteProjectName   | string  |                   | Destination project name
+| destinationSuiteId | int | | Contains ID of the suite to be cloned.
+| cloneOptions| CloneOptions | | Options for cloning can be passed. Clone options include : relatedLinkComment, copyAllSuites, copyAncestorHierarchy, destinationWorkItemType, cloneRequirements, overrideParameters.
+| destinationSuiteProjectName | string | | Destination project name
 
 <br>
 
@@ -54,6 +58,7 @@ Content-Type: application/json
 ```
 POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/2/cloneOperation?api-version=3.0-preview.1
 ```
+
 ```json
 {
   "destinationSuiteId": 13,
@@ -82,64 +87,73 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/
   "destinationObject": {
     "id": "14",
     "name": "simpleCloned",
-    "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc2/_apis/test/Plans/13/Suites/14"
+    "url":
+      "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc2/_apis/test/Plans/13/Suites/14"
   },
   "sourceObject": {
     "id": "1",
     "name": "TestSuite1",
-    "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/2"
+    "url":
+      "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/Suites/2"
   },
   "destinationPlan": {
     "id": "18",
     "name": "DestinationPlan",
-    "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc2/_apis/test/Plans/18"
+    "url":
+      "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc2/_apis/test/Plans/18"
   },
   "sourcePlan": {
     "id": "1",
     "name": "TestPlan1",
-    "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
+    "url":
+      "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
   },
   "destinationProject": {
     "name": "fabrikam-fiber-tfvc2",
-    "url": "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc2"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc2"
   },
   "sourceProject": {
     "name": "fabrikam-fiber-tfvc",
-    "url": "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
   },
-  "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/cloneOperation/3"
+  "url":
+    "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/cloneOperation/3"
 }
 ```
-
-
 
 ## Clone test plan
 
 ```no-highlight
 POST https://{instance}/DefaultCollection/{project}/_apis/test/plans/{planId}/cloneOperation?api-version={version}
 ```
+
 ```http
 Content-Type: application/json
 ```
+
 ```json
 {
-  "destinationTestPlan" : "Destination Test Plan",
-  "options" : "Clone Options",
-  "suiteIds" : "Suite IDs List"
+  "destinationTestPlan": "Destination Test Plan",
+  "options": "Clone Options",
+  "suiteIds": "Suite IDs List"
 }
 ```
 
-| Parameter   | Type     | Default                     | Notes
-|:------------|:---------|:----------------------------|:---------------------
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
+
+
 | URL
-| instance    | string   |                             | TFS server name ({server:port}).
-| project     | string   |                             | Name or ID of the project.
-| planId      | int      |                             | ID of the test plan to be cloned
-| api-version | string   |                             | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| instance | string | | TFS server name ({server:port}).
+| project | string | | Name or ID of the project.
+| planId | int | | ID of the test plan to be cloned
+| api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
-| destinationTestPlan        | TestPlan |                  | Contains details of the destination plan. Name of the test plan must be provided. Project, area , iteration of the test plan are optional.
-| options| CloneOptions |                         | Options for cloning can be passed. Clone options include : relatedLinkComment, copyAllSuites, copyAncestorHierarchy, destinationWorkItemType, cloneRequirements, overrideParameters. 
-| suiteIds    | int[]    |                             | List of all the suite IDs to be cloned inside the plan 
+| destinationTestPlan | TestPlan | | Contains details of the destination plan. Name of the test plan must be provided. Project, area , iteration of the test plan are optional.
+| options| CloneOptions | | Options for cloning can be passed. Clone options include : relatedLinkComment, copyAllSuites, copyAncestorHierarchy, destinationWorkItemType, cloneRequirements, overrideParameters.
+| suiteIds | int[] | | List of all the suite IDs to be cloned inside the plan
 
 <br>
 
@@ -148,6 +162,7 @@ Content-Type: application/json
 ```
 POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1/cloneOperation?api-version=3.0-preview.1
 ```
+
 ```json
 {
   "destinationTestPlan": {
@@ -164,9 +179,7 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/
       "System.IterationPath": "fabrikam-fiber-tfvc2"
     }
   },
-  "suiteIds": [
-    2
-  ]
+  "suiteIds": [2]
 }
 ```
 
@@ -184,35 +197,41 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/
   "destinationObject": {
     "id": "18",
     "name": "DestinationPlan",
-    "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc2/_apis/test/Plans/18"
+    "url":
+      "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc2/_apis/test/Plans/18"
   },
   "sourceObject": {
     "id": "1",
     "name": "TestPlan1",
-    "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
+    "url":
+      "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
   },
   "destinationPlan": {
     "id": "18",
     "name": "DestinationPlan",
-    "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc2/_apis/test/Plans/18"
+    "url":
+      "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc2/_apis/test/Plans/18"
   },
   "sourcePlan": {
     "id": "1",
     "name": "TestPlan1",
-    "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
+    "url":
+      "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
   },
   "destinationProject": {
     "name": "fabrikam-fiber-tfvc2",
-    "url": "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc2"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc2"
   },
   "sourceProject": {
     "name": "fabrikam-fiber-tfvc",
-    "url": "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
   },
-  "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/cloneOperation/2"
+  "url":
+    "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/cloneOperation/2"
 }
 ```
-
 
 ## Get clone information
 
@@ -220,15 +239,17 @@ POST https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/
 GET https://{instance}/DefaultCollection/{project}/_apis/test/cloneOperation/{operationId}?api-version={version}&$includeDetails={includeDetails}
 ```
 
-| Parameter          | Type    | Notes
-|:-------------------|:--------|:---------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance           | string  | TFS server name ({server:port}).
-| project            | string  | Name or ID of the project.
-| operationID        | int     | Operation ID returned when we queue a clone operation
+| instance | string | TFS server name ({server:port}).
+| project | string | Name or ID of the project.
+| operationID | int | Operation ID returned when we queue a clone operation
 | Query
-| api-version        | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| includeDetails     | boolean | If false returns only status of the clone operation information, if true returns complete clone information
+| api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| includeDetails | boolean | If false returns only status of the clone operation information, if true returns complete clone information
 
 <br>
 
@@ -258,33 +279,38 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/cloneOp
   "destinationObject": {
     "id": "18",
     "name": "DestinationPlan",
-    "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc2/_apis/test/Plans/18"
+    "url":
+      "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc2/_apis/test/Plans/18"
   },
   "sourceObject": {
     "id": "1",
     "name": "TestPlan1",
-    "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
+    "url":
+      "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
   },
   "destinationPlan": {
     "id": "18",
     "name": "DestinationPlan",
-    "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc2/_apis/test/Plans/18"
+    "url":
+      "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc2/_apis/test/Plans/18"
   },
   "sourcePlan": {
     "id": "1",
     "name": "TestPlan1",
-    "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
+    "url":
+      "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/1"
   },
   "destinationProject": {
     "name": "fabrikam-fiber-tfvc2",
-    "url": "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc2"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc2"
   },
   "sourceProject": {
     "name": "fabrikam-fiber-tfvc",
-    "url": "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/projects/fabrikam-fiber-tfvc"
   },
-  "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/cloneOperation/2"
+  "url":
+    "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/cloneOperation/2"
 }
 ```
-
-

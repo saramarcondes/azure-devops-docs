@@ -14,7 +14,6 @@ ms.date: 08/04/2016
 
 Module path: `TFS/TestManagement/Contracts`
 
-
 ### Members
 
 * `id`: string. ID of the resource
@@ -22,4 +21,3 @@ Module path: `TFS/TestManagement/Contracts`
 * `name`: string. Name of the linked resource (definition name, controller name, etc.)
 
 * `url`: string. Full http link to the resource
-

@@ -4,7 +4,6 @@ ms.topic: include
 
 <!--- TFS version only build-->
 
-
 <table>
 <tr valign="bottom">
 <th>Task</th>
@@ -25,7 +24,7 @@ ms.topic: include
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">View build definition 
+<td align="left">View build definition
 </td>
 <td>  </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -43,7 +42,7 @@ ms.topic: include
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Delete or Edit build definitions 
+<td align="left">Delete or Edit build definitions
 </td>
 <td>  </td>
 <td>  </td>
@@ -61,7 +60,7 @@ ms.topic: include
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Edit build quality 
+<td align="left">Edit build quality
 </td>
 <td>  </td>
 <td> </td>
@@ -134,5 +133,3 @@ ms.topic: include
 </tr>
 </tbody>
 </table>
-
-

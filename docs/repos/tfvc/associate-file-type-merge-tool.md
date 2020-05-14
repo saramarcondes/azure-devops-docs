@@ -11,7 +11,6 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Associate a file type with a merge tool
 
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
@@ -54,4 +53,4 @@ To perform this procedure, you must be a member of the **Administrators** or **U
 
 #### Other Resources
 
- [Merge folders and files](merge-folders-files.md) 
+[Merge folders and files](merge-folders-files.md)

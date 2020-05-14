@@ -25,9 +25,8 @@ Defined in vss.d.ts
 
 * `MultiVersion` Extension has multiple versions
 
-* `UnInstalled` Extension is not installed.  This is for builtin extensions only and can not otherwise be set.
+* `UnInstalled` Extension is not installed. This is for builtin extensions only and can not otherwise be set.
 
 * `VersionCheckError` Error performing version check
 
-* `Trusted` Trusted extensions are ones that are given special capabilities. These tend to come from Microsoft and can&#x27;t be published by the general public.  Note: BuiltIn extensions are always trusted.
-
+* `Trusted` Trusted extensions are ones that are given special capabilities. These tend to come from Microsoft and can&#x27;t be published by the general public. Note: BuiltIn extensions are always trusted.

@@ -1,5 +1,3 @@
-
-
 ::: moniker range=">= tfs-2018"
 
 <table>
@@ -13,7 +11,7 @@
 </tr>
 <tbody valign="top" align="center">
 <tr>
-<td align="left">Set personal notifications or alerts 
+<td align="left">Set personal notifications or alerts
 </td>
 <td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
 <td>  </td>
@@ -22,7 +20,7 @@
 <td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Set team notifications or alerts 
+<td align="left">Set team notifications or alerts
 </td>
 <td>  </td>
 <td>  </td>
@@ -31,7 +29,7 @@
 <td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Set project-level notifications or alerts 
+<td align="left">Set project-level notifications or alerts
 </td>
 <td>  </td>
 <td>  </td>
@@ -145,14 +143,12 @@
 
 #### Notes
 
-1. Can view project READMEs, but not READMEs defined for a repository.
-2. Project Admins or Team Admins with contribute permission can publish code as wiki. Project Admins have this permission by default.
+1.  Can view project READMEs, but not READMEs defined for a repository.
+2.  Project Admins or Team Admins with contribute permission can publish code as wiki. Project Admins have this permission by default.
 
 ::: moniker-end
 
-
-
-::: moniker range="tfs-2017" 
+::: moniker range="tfs-2017"
 
 <table>
 <tr valign="bottom">
@@ -165,7 +161,7 @@
 </tr>
 <tbody valign="top" align="center">
 <tr>
-<td align="left">Set personal notifications or alerts 
+<td align="left">Set personal notifications or alerts
 </td>
 <td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
 <td>  </td>
@@ -174,7 +170,7 @@
 <td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Set team notifications or alerts 
+<td align="left">Set team notifications or alerts
 </td>
 <td>  </td>
 <td>  </td>
@@ -183,7 +179,7 @@
 <td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Set project-level notifications or alerts 
+<td align="left">Set project-level notifications or alerts
 </td>
 <td>  </td>
 <td>  </td>
@@ -297,12 +293,12 @@
 
 #### Notes
 
-1. Can view project READMEs, but not READMEs defined for a repository.
-2. Project Admins or Team Admins with contribute permission can publish code as wiki. Project Admins have this permission by default.
+1.  Can view project READMEs, but not READMEs defined for a repository.
+2.  Project Admins or Team Admins with contribute permission can publish code as wiki. Project Admins have this permission by default.
 
-::: moniker-end 
+::: moniker-end
 
-::: moniker range="tfs-2015" 
+::: moniker range="tfs-2015"
 
 <table>
 <tr valign="bottom">
@@ -315,7 +311,7 @@
 </tr>
 <tbody valign="top" align="center">
 <tr>
-<td align="left">Set personal notifications or alerts 
+<td align="left">Set personal notifications or alerts
 </td>
 <td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
 <td>  </td>
@@ -324,7 +320,7 @@
 <td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Set team notifications or alerts 
+<td align="left">Set team notifications or alerts
 </td>
 <td>  </td>
 <td>  </td>
@@ -333,7 +329,7 @@
 <td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Set project-level notifications or alerts 
+<td align="left">Set project-level notifications or alerts
 </td>
 <td>  </td>
 <td>  </td>
@@ -376,11 +372,7 @@
 </tbody>
 </table>
 
-
-
-::: moniker-end    
-
-
+::: moniker-end
 
 ::: moniker range="tfs-2013"
 
@@ -395,7 +387,7 @@
 </tr>
 <tbody valign="top" align="center">
 <tr>
-<td align="left">Set personal notifications or alerts 
+<td align="left">Set personal notifications or alerts
 </td>
 <td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
 <td>  </td>
@@ -405,7 +397,7 @@
 </tr>
 
 <tr>
-<td align="left">Set team notifications or alerts 
+<td align="left">Set team notifications or alerts
 </td>
 <td>  </td>
 <td>  </td>
@@ -415,7 +407,7 @@
 </tr>
 
 <tr>
-<td align="left">Set project-level notifications or alerts 
+<td align="left">Set project-level notifications or alerts
 </td>
 <td>  </td>
 <td>  </td>
@@ -451,11 +443,7 @@
 <td><img src="~/organizations/security/media/checkmark.png" alt="check mark"/></td>
 </tr>
 
-
 </tbody>
 </table>
 
-
-::: moniker-end    
-
-
+::: moniker-end

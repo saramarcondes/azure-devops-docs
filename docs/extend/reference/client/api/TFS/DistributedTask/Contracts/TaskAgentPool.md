@@ -30,11 +30,10 @@ Extends: [TaskAgentPoolReference](../../../TFS/DistributedTask/Contracts/TaskAge
 
 * `isHosted`: boolean. Gets or sets a value indicating whether or not this pool is managed by the service.
 
-* `properties`: any. 
+* `properties`: any.
 
 * `provisioned`: boolean. Gets a value indicating whether or not roles have been provisioned for this pool.
 
 * `serviceAccountsGroup`: [VSS_Common_Contracts.IdentityRef](../../../VSS/WebApi/Contracts/IdentityRef.md). Gets the service accounts group for this agent pool.
 
 * `size`: number. Gets the current size of the pool.
-

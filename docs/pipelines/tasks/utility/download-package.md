@@ -35,7 +35,6 @@ Requires the Package Management extension.
 <tr><td>Extract</td><td>(Optional) Specify whether to extract the package contents at the destination directory</td></tr>
 <tr><td>Files</td><td>(Optional) Specify files to be downloaded as multiline minimatch patterns. <a href="https://aka.ms/minimatchexamples" data-raw-source="[More Information](https://aka.ms/minimatchexamples)">More Information</a>.<p>The default pattern (<code>**</code>) will download all files within the artifact.</p></td></tr>
 
-
 <tr>
 <th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
 </tr>
@@ -66,7 +65,7 @@ Requires the Package Management extension.
   inputs:
     packageType: 'maven'
     feed: '132f5c2c-2aa0-475a-8b47-02c79617954b/c85e5de9-7b12-4cfd-9293-1b33cdff540e' # <projectId>/<feedId>
-    definition: 'com.test:testpackage' 
+    definition: 'com.test:testpackage'
     version: '1.0.0-snapshot' # Should be normalized version
     files: '*.pom'
     downloadPath: '$(System.ArtifactsDirectory)'

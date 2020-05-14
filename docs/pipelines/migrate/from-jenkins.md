@@ -78,7 +78,7 @@ a _job_ corresponding to each stage, and steps to perform in each job:
 
 **azure-pipelines.yml**
 
-``` yaml
+```yaml
 jobs:
 - job: Build
   steps:
@@ -154,7 +154,7 @@ to enable you to run your build within a container:
 
 **azure-pipelines.yml**
 
-``` yaml
+```yaml
 resources:
   containers:
   - container: trusty
@@ -192,7 +192,7 @@ macOS builds. To select the build environment, you can use the
 [`vmimage`](../agents/hosted.md#use-a-microsoft-hosted-agent)
 keyword. For example, to select a macOS build:
 
-``` yaml
+```yaml
 pool:
   vmimage: macOS-10.14
 ```
@@ -209,7 +209,7 @@ on it. For example, if you've set up an on-premises build agent with the
 `java` capabilities, then you can ensure that your job runs on it using the
 `demands` keyword:
 
-``` yaml
+```yaml
 pool:
   demands: java
 ```
@@ -237,7 +237,7 @@ during job execution:
 
 **azure-pipelines.yml**
 
-``` yaml
+```yaml
 variables:
   configuration: debug
   platform: x64
@@ -248,7 +248,7 @@ only for the duration of a particular job:
 
 **azure-pipelines.yml**
 
-``` yaml
+```yaml
 jobs:
 - job: debug build
   variables:
@@ -269,22 +269,23 @@ variables](../build/variables.md)
 to allow you to inspect and interact with the execution environment of the
 continuous integration system.
 
-| Description | Jenkins | Azure Pipelines |
-|-------------|---------|-----------------|
-| A unique numeric identifier for the current build invocation. | `BUILD_NUMBER` | `BUILD_BUILDNUMBER` |
-| A unique identifier (not necessarily numeric) for the current build invocation. | `BUILD_ID` | `BUILD_BUILDID` |
-| The URL that displays the build logs. | `BUILD_URL` |  This is not set as an environment variable in Azure Pipelines but can be derived from other variables.<sup>1</sup> |
-| The name of the machine that the current build is running on. | `NODE_NAME` | `AGENT_NAME` |
-| The name of this project or build definition. | `JOB_NAME` | `RELEASE_DEFINITIONNAME` |
-| A string for identification of the build; the build number is a good unique identifier. | `BUILD_TAG` | `BUILD_BUILDNUMBER` |
-| A URL for the host executing the build. | `JENKINS_URL` | `SYSTEM_TEAMFOUNDATIONCOLLECTIONURI` |
-| A unique identifier for the build executor or build agent that is currently running. | `EXECUTOR_NUMBER` | `AGENT_NAME` |
-| The location of the checked out sources. | `WORKSPACE` | `BUILD_SOURCESDIRECTORY` |
-| The Git Commit ID corresponding to the version of software being built. | `GIT_COMMIT` | `BUILD_SOURCEVERSION` |
-| Path to the Git repository on GitHub, Azure Repos or another repository provider. | `GIT_URL` | `BUILD_REPOSITORY_URI` |
-| The Git branch being built. | `GIT_BRANCH` | `BUILD_SOURCEBRANCH` |
+| Description                                                                             | Jenkins           | Azure Pipelines                                                                                                    |
+| --------------------------------------------------------------------------------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------ |
+| A unique numeric identifier for the current build invocation.                           | `BUILD_NUMBER`    | `BUILD_BUILDNUMBER`                                                                                                |
+| A unique identifier (not necessarily numeric) for the current build invocation.         | `BUILD_ID`        | `BUILD_BUILDID`                                                                                                    |
+| The URL that displays the build logs.                                                   | `BUILD_URL`       | This is not set as an environment variable in Azure Pipelines but can be derived from other variables.<sup>1</sup> |
+| The name of the machine that the current build is running on.                           | `NODE_NAME`       | `AGENT_NAME`                                                                                                       |
+| The name of this project or build definition.                                           | `JOB_NAME`        | `RELEASE_DEFINITIONNAME`                                                                                           |
+| A string for identification of the build; the build number is a good unique identifier. | `BUILD_TAG`       | `BUILD_BUILDNUMBER`                                                                                                |
+| A URL for the host executing the build.                                                 | `JENKINS_URL`     | `SYSTEM_TEAMFOUNDATIONCOLLECTIONURI`                                                                               |
+| A unique identifier for the build executor or build agent that is currently running.    | `EXECUTOR_NUMBER` | `AGENT_NAME`                                                                                                       |
+| The location of the checked out sources.                                                | `WORKSPACE`       | `BUILD_SOURCESDIRECTORY`                                                                                           |
+| The Git Commit ID corresponding to the version of software being built.                 | `GIT_COMMIT`      | `BUILD_SOURCEVERSION`                                                                                              |
+| Path to the Git repository on GitHub, Azure Repos or another repository provider.       | `GIT_URL`         | `BUILD_REPOSITORY_URI`                                                                                             |
+| The Git branch being built.                                                             | `GIT_BRANCH`      | `BUILD_SOURCEBRANCH`                                                                                               |
 
 <sup>1</sup> To derive the URL that displays the build logs in Azure Pipelines, combine the following environment variables in this format:
+
 ```
 ${SYSTEM_TEAMFOUNDATIONCOLLECTIONURI}/${SYSTEM_TEAMPROJECT}/_build/results?buildId=${BUILD_BUILDID}
 ```
@@ -321,7 +322,7 @@ that run based on the `always()`, `succeeded()` or `failed()` conditions:
 
 **azure-pipelines.yml**
 
-``` yaml
+```yaml
 jobs:
 - job: always
   steps:

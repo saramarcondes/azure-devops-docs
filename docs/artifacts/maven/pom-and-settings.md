@@ -10,8 +10,6 @@ ms.date: 11/14/2019
 monikerRange: '>= tfs-2018'
 ---
 
- 
-
 # Set up the Maven client in Azure DevOps Services and TFS
 
 **Azure DevOps Services** | **TFS 2018**

@@ -23,4 +23,3 @@ Extends: [TeamSettingsDataContractBase](../../../TFS/Work/Contracts/TeamSettings
 * `daysOff`: [DateRange](../../../TFS/Work/Contracts/DateRange.md)[]. The days off associated with the team member
 
 * `teamMember`: [Member](../../../TFS/Work/Contracts/Member.md). Shallow Ref to the associated team member
-

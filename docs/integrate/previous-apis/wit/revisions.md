@@ -26,16 +26,18 @@ A revision is a complete work item as it appeared at one point in time. By contr
 GET https://{instance}/DefaultCollection/_apis/wit/workitems/{id}/revisions?api-version={version}[&$top={int}&$skip={int}&$expand={enum{relations}]
 ```
 
-| Parameter | Type    | Default | Notes	
-|:----------|:--------|:--------|:--------------------------------------
+| Parameter | Type | Default | Notes |
+| :-------- | :--- | :------ | :---- |
+
+
 | URL
-| instance  | string  |         | TFS server name ({server:port}).
-| id        | int     |         | ID of the work item.
+| instance | string | | TFS server name ({server:port}).
+| id | int | | ID of the work item.
 | Query
-| api-version | string |        | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| $top      | integer | 200     | Number of revisions to return, up to 200.
-| $skip     | integer | 0       | Number of revisions to skip.
-| $expand   | enum { all, relations, none }		| none    | Gets work item relationships (work item links, hyperlinks and file attachments).
+| api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
+| $top | integer | 200 | Number of revisions to return, up to 200.
+| $skip | integer | 0 | Number of revisions to skip.
+| $expand | enum { all, relations, none } | none | Gets work item relationships (work item links, hyperlinks and file attachments).
 
 #### Sample request
 
@@ -69,7 +71,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/revisions?api-
         "System.History": "Jim has the most context around this.",
         "System.Tags": ""
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions/1"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions/1"
     },
     {
       "id": 299,
@@ -91,7 +94,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/revisions?api-
         "System.History": "Moving to the right area path",
         "System.Tags": ""
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions/2"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions/2"
     },
     {
       "id": 299,
@@ -114,7 +118,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/revisions?api-
         "System.History": "Johnnie is going to take this work over.",
         "System.Tags": ""
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions/3"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions/3"
     },
     {
       "id": 299,
@@ -137,7 +142,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/revisions?api-
         "System.History": "Adding the necessary spec",
         "System.Tags": ""
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions/4"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions/4"
     },
     {
       "id": 299,
@@ -159,7 +165,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/revisions?api-
         "System.Description": "Follow the code samples from MSDN",
         "System.Tags": ""
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions/5"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions/5"
     },
     {
       "id": 299,
@@ -182,7 +189,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/revisions?api-
         "System.History": "Linking to a blog article for context",
         "System.Tags": ""
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions/6"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions/6"
     },
     {
       "id": 299,
@@ -204,12 +212,12 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/revisions?api-
         "System.Description": "Follow the code samples from MSDN",
         "System.Tags": "Tag1; Tag2"
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions/7"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions/7"
     }
   ]
 }
 ```
-
 
 #### Sample code
 
@@ -249,7 +257,8 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/revisions?$ski
         "System.History": "Moving to the right area path",
         "System.Tags": ""
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions/2"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions/2"
     },
     {
       "id": 299,
@@ -272,12 +281,12 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/revisions?$ski
         "System.History": "Johnnie is going to take this work over.",
         "System.Tags": ""
       },
-      "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions/3"
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions/3"
     }
   ]
 }
 ```
-
 
 #### Sample code
 
@@ -289,15 +298,17 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/revisions?$ski
 GET https://{instance}/DefaultCollection/_apis/wit/workitems/{id}/revisions/{revision}?api-version={version}[&$expand={enum{relations}]
 ```
 
-| Parameter | Type    | Notes	
-|:----------|:--------|:--------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance  | string  | TFS server name ({server:port}).
-| id        | int     | ID of the work item.
-| revision  | int     | Revision of the work item.<br/>When a work item is created, the revision is 0, and each time it's updated, the revision is incremented.
+| instance | string | TFS server name ({server:port}).
+| id | int | ID of the work item.
+| revision | int | Revision of the work item.<br/>When a work item is created, the revision is 0, and each time it's updated, the revision is incremented.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| $expand	| enum { all, relations, none }	| Gets work item relationships (work item links, hyperlinks and file attachments).
+| $expand | enum { all, relations, none } | Gets work item relationships (work item links, hyperlinks and file attachments).
 
 #### Sample request
 
@@ -330,25 +341,27 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/revisions/2?ap
   },
   "_links": {
     "self": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions/2"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions/2"
     },
     "workItemRevisions": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions"
     },
     "parent": {
       "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299"
     }
   },
-  "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions/2"
+  "url":
+    "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions/2"
 }
 ```
-
 
 #### Sample code
 
 * [C# (GetWorkItemRevision method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/RevisionsSample.cs#L78)
 
-###  With links and attachments
+### With links and attachments
 
 #### Sample request
 
@@ -404,17 +417,18 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/revisions/2?$e
   ],
   "_links": {
     "self": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions/2"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions/2"
     },
     "workItemRevisions": {
-      "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions"
+      "href":
+        "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions"
     },
     "parent": {
       "href": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299"
     }
   },
-  "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions/2"
+  "url":
+    "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/revisions/2"
 }
 ```
-
-

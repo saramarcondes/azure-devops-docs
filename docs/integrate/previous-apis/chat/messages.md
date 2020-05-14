@@ -19,35 +19,41 @@ ms.date: 08/04/2016
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 
 ## Create a message
+
 <a name="createamessage" />
 
 ```no-highlight
 POST https://{instance}/DefaultCollection/_apis/chat/rooms/{roomId}/messages?api-version={version}
 ```
+
 ```http
 Content-Type: application/json
 ```
+
 ```json
 {
-  content: {message}
+  content: { message }
 }
 ```
 
-| Parameter   | Type   | Notes
-|:------------|:-------|:-------------------------------------------------------------------------------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance    | string | TFS server name ({server:port}).
-| roomId      | int    | ID of the team room.
+| instance | string | TFS server name ({server:port}).
+| roomId | int | ID of the team room.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
-| content     | string | Message to post to the team room.
+| content | string | Message to post to the team room.
 
 #### Sample request
 
 ```
 POST https://mytfsserver/DefaultCollection/_apis/chat/rooms/305/messages?api-version=1.0
 ```
+
 ```json
 {
   "content": "Here's a new message"
@@ -66,12 +72,13 @@ POST https://mytfsserver/DefaultCollection/_apis/chat/rooms/305/messages?api-ver
   "postedBy": {
     "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
     "displayName": "Normal Paulk",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
   }
 }
 ```
-
 
 ## Get a list of messages
 
@@ -79,14 +86,16 @@ POST https://mytfsserver/DefaultCollection/_apis/chat/rooms/305/messages?api-ver
 GET https://{instance}/DefaultCollection/_apis/chat/rooms/{roomId}/messages?api-version={version}
 ```
 
-| Parameter   | Type   | Notes
-|:------------|:-------|:-------------------------------------------------------------------------------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance    | string | TFS server name ({server:port}).
-| roomId      | int    | ID of the team room.
+| instance | string | TFS server name ({server:port}).
+| roomId | int | ID of the team room.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| $filter     | string | OData filter can be applied to the PostedTime field to return messages from a different timespan. The timespan can be up to 30 days. No more than 100,000 messages will be returned. If no filter is applied, messages from the last 24 hours are returned.
+| $filter | string | OData filter can be applied to the PostedTime field to return messages from a different timespan. The timespan can be up to 30 days. No more than 100,000 messages will be returned. If no filter is applied, messages from the last 24 hours are returned.
 
 #### Sample request
 
@@ -108,9 +117,12 @@ GET https://mytfsserver/DefaultCollection/_apis/chat/rooms/305/messages?api-vers
       "postedRoomId": 305,
       "postedBy": {
         "id": "47d25e84-de54-49ce-8f3d-351c77422775",
-        "displayName": "[DefaultCollection]\\Project Collection Service Accounts",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
+        "displayName":
+          "[DefaultCollection]\\Project Collection Service Accounts",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
       }
     },
     {
@@ -122,14 +134,15 @@ GET https://mytfsserver/DefaultCollection/_apis/chat/rooms/305/messages?api-vers
       "postedBy": {
         "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
         "displayName": "Normal Paulk",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
       }
     }
   ]
 }
 ```
-
 
 ### In a date range
 
@@ -153,9 +166,12 @@ GET https://mytfsserver/DefaultCollection/_apis/chat/rooms/305/messages?$filter=
       "postedRoomId": 305,
       "postedBy": {
         "id": "47d25e84-de54-49ce-8f3d-351c77422775",
-        "displayName": "[DefaultCollection]\\Project Collection Service Accounts",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
+        "displayName":
+          "[DefaultCollection]\\Project Collection Service Accounts",
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/47d25e84-de54-49ce-8f3d-351c77422775",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=47d25e84-de54-49ce-8f3d-351c77422775"
       }
     },
     {
@@ -167,14 +183,15 @@ GET https://mytfsserver/DefaultCollection/_apis/chat/rooms/305/messages?$filter=
       "postedBy": {
         "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
         "displayName": "Normal Paulk",
-        "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-        "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+        "url":
+          "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+        "imageUrl":
+          "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
       }
     }
   ]
 }
 ```
-
 
 ## Get a message
 
@@ -182,12 +199,14 @@ GET https://mytfsserver/DefaultCollection/_apis/chat/rooms/305/messages?$filter=
 GET https://{instance}/DefaultCollection/_apis/chat/rooms/{roomId}/messages/{messageId}?api-version={version}
 ```
 
-| Parameter   | Type   | Notes
-|:------------|:-------|:-------------------------------------------------------------------------------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance    | string | TFS server name ({server:port}).
-| roomId      | int    | ID of the team room.
-| messageId   | int    | ID of the message.
+| instance | string | TFS server name ({server:port}).
+| roomId | int | ID of the team room.
+| messageId | int | ID of the message.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
@@ -209,43 +228,49 @@ GET https://mytfsserver/DefaultCollection/_apis/chat/rooms/305/messages/118943?a
   "postedBy": {
     "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
     "displayName": "Normal Paulk",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
   }
 }
 ```
-
 
 ## Update message
 
 ```no-highlight
 PATCH https://{instance}/DefaultCollection/_apis/chat/rooms/{roomId}/messages/{messageId}?api-version={version}
 ```
+
 ```http
 Content-Type: application/json
 ```
+
 ```json
 {
-  content: {message}
+  content: { message }
 }
 ```
 
-| Parameter   | Type   | Notes
-|:------------|:-------|:-------------------------------------------------------------------------------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance    | string | TFS server name ({server:port}).
-| roomId      | int    | ID of the team room.
-| messageId   | int    | ID of the message.
+| instance | string | TFS server name ({server:port}).
+| roomId | int | ID of the team room.
+| messageId | int | ID of the message.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
-| content     | string | Message to post to the team room.
+| content | string | Message to post to the team room.
 
 #### Sample request
 
 ```
 PATCH https://mytfsserver/DefaultCollection/_apis/chat/rooms/305/messages/118943?api-version=1.0
 ```
+
 ```json
 {
   "content": "Updated message"
@@ -264,12 +289,13 @@ PATCH https://mytfsserver/DefaultCollection/_apis/chat/rooms/305/messages/118943
   "postedBy": {
     "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
     "displayName": "Normal Paulk",
-    "url": "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
-    "imageUrl": "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
+    "url":
+      "https://mytfsserver/DefaultCollection/_apis/Identities/d6245f20-2af8-44f4-9451-8107cb2767db",
+    "imageUrl":
+      "https://mytfsserver/DefaultCollection/_api/_common/identityImage?id=d6245f20-2af8-44f4-9451-8107cb2767db"
   }
 }
 ```
-
 
 ## Delete message
 
@@ -277,12 +303,14 @@ PATCH https://mytfsserver/DefaultCollection/_apis/chat/rooms/305/messages/118943
 DELETE https://{instance}/DefaultCollection/_apis/chat/rooms/{roomId}/messages/{messageId}?api-version={version}
 ```
 
-| Parameter   | Type   | Notes
-|:------------|:-------|:-------------------------------------------------------------------------------------------------------------
+| Parameter | Type | Notes |
+| :-------- | :--- | :---- |
+
+
 | URL
-| instance    | string | TFS server name ({server:port}).
-| roomId      | int    | ID of the team room.
-| messageId   | int    | ID of the message.
+| instance | string | TFS server name ({server:port}).
+| roomId | int | ID of the team room.
+| messageId | int | ID of the message.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
@@ -291,5 +319,3 @@ DELETE https://{instance}/DefaultCollection/_apis/chat/rooms/{roomId}/messages/{
 ```
 DELETE https://mytfsserver/DefaultCollection/_apis/chat/rooms/305/messages/118943?api-version=1.0
 ```
-
-

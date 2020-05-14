@@ -95,7 +95,7 @@ For more information, see [Azure virtual machine scale set agents](scale-set-age
 
 ## Parallel jobs
 
-You can use a parallel job in Azure Pipelines to run a single job at a time in your organization. In Azure Pipelines, you can run parallel jobs on Microsoft-hosted infrastructure or on your own (self-hosted) infrastructure. 
+You can use a parallel job in Azure Pipelines to run a single job at a time in your organization. In Azure Pipelines, you can run parallel jobs on Microsoft-hosted infrastructure or on your own (self-hosted) infrastructure.
 
 Microsoft provides a free tier of service by default in every organization that includes at least one parallel job. Depending on the number of concurrent pipelines you need to run, you might need more parallel jobs to use multiple Microsoft-hosted or self-hosted agents at the same time. For more information on parallel jobs and different free tiers of service, see [Parallel jobs in Azure Pipelines](../licensing/concurrent-jobs.md).
 
@@ -128,7 +128,7 @@ When you author a pipeline you specify certain **demands** of the agent. The sys
 
 > [!NOTE]
 >
-> Demands and capabilities apply only to self-hosted agents. When using Microsoft-hosted agents, you select an image for the hosted agent. 
+> Demands and capabilities apply only to self-hosted agents. When using Microsoft-hosted agents, you select an image for the hosted agent.
 > You cannot use capabilities with hosted agents.
 
 ### View agent details
@@ -137,13 +137,13 @@ When you author a pipeline you specify certain **demands** of the agent. The sys
 
 You can view the details of an agent, including its version and system capabilities, and manage its user capabilities, by navigating to **Agent pools** and selecting the **Capabilities** tab for the desired agent.
 
-1. In your web browser, navigate to Agent pools:
+1.  In your web browser, navigate to Agent pools:
 
-   [!INCLUDE [agent-pools-tab](includes/agent-pools-tab.md)]
+    [!INCLUDE [agent-pools-tab](includes/agent-pools-tab.md)]
 
-1. Navigate to the capabilities tab:
- 
-   [!INCLUDE [agent-capabilities](includes/agent-capabilities-tab.md)]
+1.  Navigate to the capabilities tab:
+
+    [!INCLUDE [agent-capabilities](includes/agent-capabilities-tab.md)]
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
@@ -174,15 +174,15 @@ az pipelines agent list --pool-id
 
 #### Parameters
 
-- **pool-id**: (Required) The agent pool containing the agents.
-- **agent-name**: Filter on agent name.
-- **demands**: Filter by demands the agents can satisfy. Comma separated list.
-- **detect**: Automatically detect organization. Accepted values: **false**, **true**
-- **include-assigned-request**: Whether to include details about the agents' current work. Accepted values: **false**, **true**
-- **include-capabilities**: Whether to include the agents' capabilities in the response. Accepted values: **false**, **true**
-- **include-last-completed-request**: Whether to include details about the agents' most recent completed work. Accepted values: **false**, **true**
-- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
-- **subscription**: Name or ID of subscription. You can configure the default subscription using az account set -s NAME_OR_ID.
+* **pool-id**: (Required) The agent pool containing the agents.
+* **agent-name**: Filter on agent name.
+* **demands**: Filter by demands the agents can satisfy. Comma separated list.
+* **detect**: Automatically detect organization. Accepted values: **false**, **true**
+* **include-assigned-request**: Whether to include details about the agents' current work. Accepted values: **false**, **true**
+* **include-capabilities**: Whether to include the agents' capabilities in the response. Accepted values: **false**, **true**
+* **include-last-completed-request**: Whether to include details about the agents' most recent completed work. Accepted values: **false**, **true**
+* **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+* **subscription**: Name or ID of subscription. You can configure the default subscription using az account set -s NAME_OR_ID.
 
 #### Example
 
@@ -213,14 +213,14 @@ az pipelines agent show --agent-id
 
 #### Parameters
 
-- **agent-id** or **id**: (Required) The agent ID to get information about.
-- **pool-id**: (Required) The agent pool containing the agents.
-- **detect**: Automatically detect organization. Accepted values: **false**, **true**
-- **include-assigned-request**: Whether to include details about the agents' current work. Accepted values: **false**, **true**
-- **include-capabilities**: Whether to include the agents' capabilities in the response. Accepted values: **false**, **true**
-- **include-last-completed-request**: Whether to include details about the agents' most recent completed work. Accepted values: **false**, **true**
-- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
-- **subscription**: Name or ID of subscription. You can configure the default subscription using az account set -s NAME_OR_ID.
+* **agent-id** or **id**: (Required) The agent ID to get information about.
+* **pool-id**: (Required) The agent pool containing the agents.
+* **detect**: Automatically detect organization. Accepted values: **false**, **true**
+* **include-assigned-request**: Whether to include details about the agents' current work. Accepted values: **false**, **true**
+* **include-capabilities**: Whether to include the agents' capabilities in the response. Accepted values: **false**, **true**
+* **include-last-completed-request**: Whether to include details about the agents' most recent completed work. Accepted values: **false**, **true**
+* **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+* **subscription**: Name or ID of subscription. You can configure the default subscription using az account set -s NAME_OR_ID.
 
 #### Example
 
@@ -232,7 +232,7 @@ This command group is in preview. It may be changed/removed in a future release.
 {
   "accessPoint": null,
   "assignedAgentCloudRequest": null,
- 
+
   <Some properties omitted for space>
 
   "status": "offline",
@@ -268,9 +268,9 @@ ID    Name                             Is Hosted    Pool Type
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
-* * *
+---
 
 > [!TIP]
 >
@@ -308,11 +308,11 @@ The agent communicates with Azure Pipelines or TFS to determine which job it nee
 
 Here is a common communication pattern between the agent and Azure Pipelines or TFS.
 
-1. The user registers an agent with Azure Pipelines or TFS by adding it to an [agent pool](pools-queues.md). You need to be an [agent pool administrator](pools-queues.md#security) to register an agent in that agent pool. The identity of agent pool administrator is needed only at the time of registration and is not persisted on the agent, nor is it used in any further communication between the agent and Azure Pipelines or TFS. Once the registration is complete, the agent downloads a _listener OAuth token_ and uses it to listen to the job queue.
+1.  The user registers an agent with Azure Pipelines or TFS by adding it to an [agent pool](pools-queues.md). You need to be an [agent pool administrator](pools-queues.md#security) to register an agent in that agent pool. The identity of agent pool administrator is needed only at the time of registration and is not persisted on the agent, nor is it used in any further communication between the agent and Azure Pipelines or TFS. Once the registration is complete, the agent downloads a _listener OAuth token_ and uses it to listen to the job queue.
 
-2. The agent listens to see if a new job request has been posted for it in the job queue in Azure Pipelines/TFS using an HTTP long poll. When a job is available, the agent downloads the job as well as a _job-specific OAuth token_. This token is generated by Azure Pipelines/TFS for the scoped identity [specified in the pipeline](../build/options.md). That token is short lived and is used by the agent to access resources (for example, source code) or modify resources (for example, upload test results) on Azure Pipelines or TFS within that job.
+2.  The agent listens to see if a new job request has been posted for it in the job queue in Azure Pipelines/TFS using an HTTP long poll. When a job is available, the agent downloads the job as well as a _job-specific OAuth token_. This token is generated by Azure Pipelines/TFS for the scoped identity [specified in the pipeline](../build/options.md). That token is short lived and is used by the agent to access resources (for example, source code) or modify resources (for example, upload test results) on Azure Pipelines or TFS within that job.
 
-3. After the job is completed, the agent discards the job-specific OAuth token and goes back to checking if there is a new job request using the listener OAuth token.
+3.  After the job is completed, the agent discards the job-specific OAuth token and goes back to checking if there is a new job request using the listener OAuth token.
 
 The payload of the messages exchanged between the agent and Azure Pipelines/TFS are secured using asymmetric encryption. Each agent has a public-private key pair, and the public key is exchanged with the server during registration. The server uses the public key to encrypt the payload of the job before sending it to the agent. The agent decrypts the job content using its private key. This is how secrets stored in pipelines or variable groups are secured as they are exchanged with the agent.
 
@@ -337,8 +337,8 @@ connectivity to those servers. The Microsoft-hosted agent pools, by default, hav
 connectivity to Azure websites and servers running in Azure.
 
 > [!NOTE]
-> If your Azure resources are running in an Azure Virtual Network, you can get the 
-> [Agent IP ranges](hosted.md#agent-ip-ranges) where Microsoft-hosted agents are deployed 
+> If your Azure resources are running in an Azure Virtual Network, you can get the
+> [Agent IP ranges](hosted.md#agent-ip-ranges) where Microsoft-hosted agents are deployed
 > so you can configure the firewall rules for your Azure VNet to allow access by the agent.
 
 If your on-premises environments do not have connectivity to a Microsoft-hosted agent pool
@@ -351,9 +351,10 @@ as shown in the following schematic.
 ::: moniker-end
 
 <a name="configure-tfs-authentication"></a>
+
 ## Authentication
 
-To register an agent, you need to be a member of the [administrator role](pools-queues.md#security) in the agent pool. The identity of agent pool administrator is needed only at the time of registration and is not persisted on the agent, and is not used in any subsequent communication between the agent and Azure Pipelines or TFS. In addition, you must be a local administrator on the server in order to configure the agent. 
+To register an agent, you need to be a member of the [administrator role](pools-queues.md#security) in the agent pool. The identity of agent pool administrator is needed only at the time of registration and is not persisted on the agent, and is not used in any subsequent communication between the agent and Azure Pipelines or TFS. In addition, you must be a local administrator on the server in order to configure the agent.
 
 ::: moniker range="azure-devops"
 
@@ -367,10 +368,10 @@ Your agent can authenticate to Azure DevOps Server or TFS using one of the follo
 
 ::: moniker-end
 
-
 ::: moniker range=">= tfs-2017"
 
-### Personal Access Token (PAT): 
+### Personal Access Token (PAT):
+
 [Generate](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) and use a PAT to connect an agent with Azure Pipelines or TFS 2017 and newer. PAT is the only scheme that works with Azure Pipelines. Also, as explained above, this PAT is used only at the time of registering the agent, and not for subsequent communication.
 
 To use a PAT with TFS, your server must be configured with HTTPS. See [Web site settings and security](/azure/devops/server/admin/websitesettings).
@@ -385,9 +386,9 @@ Connect a Windows agent to TFS using the credentials of the signed-in user throu
 
 To use this method of authentication, you must first configure your TFS server.
 
-1. Sign into the machine where you are running TFS.
+1.  Sign into the machine where you are running TFS.
 
-1. Start Internet Information Services (IIS) Manager. Select your TFS site and make sure Windows Authentication is enabled with a valid provider such as NTLM or Kerberos.
+1.  Start Internet Information Services (IIS) Manager. Select your TFS site and make sure Windows Authentication is enabled with a valid provider such as NTLM or Kerberos.
 
 ![IIS TFS windows authentication](media/configure-tfs-authentication/iis-tfs-authentication-windows.png)
 
@@ -399,23 +400,23 @@ Connect to TFS as a user other than the signed-in user through a Windows authent
 
 To use this method of authentication, you must first configure your TFS server.
 
-1. Log on to the machine where you are running TFS.
+1.  Log on to the machine where you are running TFS.
 
-1. Start Internet Information Services (IIS) Manager. Select your TFS site and make sure Windows Authentication is enabled with the Negotiate provider and with another method such as NTLM or Kerberos.
+1.  Start Internet Information Services (IIS) Manager. Select your TFS site and make sure Windows Authentication is enabled with the Negotiate provider and with another method such as NTLM or Kerberos.
 
 ![IIS TFS windows authentication](media/configure-tfs-authentication/iis-tfs-authentication-windows.png)
 
 ![IIS TFS windows authentication with negotiate and ntlm provider](media/configure-tfs-authentication/iis-tfs-authentication-windows-negotiate-and-ntlm-providers.png)
 
-
 ### Alternate
+
 Connect to TFS using Basic authentication. To use this method, you must first [configure HTTPS on TFS](/azure/devops/server/admin/websitesettings).
 
 To use this method of authentication, you must configure your TFS server as follows:
 
-1. Sign in to the machine where you are running TFS.
+1.  Sign in to the machine where you are running TFS.
 
-1. Configure basic authentication. See [Using `tfx` against Team Foundation Server 2015 using Basic Authentication](https://github.com/Microsoft/tfs-cli/blob/master/docs/configureBasicAuth.md).
+1.  Configure basic authentication. See [Using `tfx` against Team Foundation Server 2015 using Basic Authentication](https://github.com/Microsoft/tfs-cli/blob/master/docs/configureBasicAuth.md).
 
 ::: moniker-end
 
@@ -428,33 +429,33 @@ we recommend you run the agent in one of the following modes so
 that it reliably remains in a running state. These modes also
 ensure that the agent starts automatically if the machine is restarted.
 
-1. **As a service**. You can leverage the service manager of the
-   operating system to manage the lifecycle of the agent. In addition, the
-   experience for auto-upgrading the agent is better when it is run
-   as a service.
+1.  **As a service**. You can leverage the service manager of the
+    operating system to manage the lifecycle of the agent. In addition, the
+    experience for auto-upgrading the agent is better when it is run
+    as a service.
 
-1. **As an interactive process with auto-logon enabled**. In some cases,
-   you might need to run the agent interactively for production use -
-   such as to run UI tests. When the agent is configured to run in this
-   mode, the screen saver is also disabled. Some domain policies may
-   prevent you from enabling auto-logon or disabling the screen saver. In
-   such cases, you may need to seek an exemption from the domain policy,
-   or run the agent on a workgroup computer where the domain policies
-   do not apply.
+1.  **As an interactive process with auto-logon enabled**. In some cases,
+    you might need to run the agent interactively for production use -
+    such as to run UI tests. When the agent is configured to run in this
+    mode, the screen saver is also disabled. Some domain policies may
+    prevent you from enabling auto-logon or disabling the screen saver. In
+    such cases, you may need to seek an exemption from the domain policy,
+    or run the agent on a workgroup computer where the domain policies
+    do not apply.
 
-   > [!NOTE]
-   > There are security risks when you enable automatic logon
-   > or disable the screen saver because you enable other users to walk
-   > up to the computer and use the account that automatically logs on. If you configure the agent to run
-   > in this way, you must ensure the computer is physically protected;
-   > for example, located in a secure facility. If you use
-   > Remote Desktop to access the computer on which an agent is running
-   > with auto-logon, simply closing the Remote Desktop causes the
-   > computer to be locked and any UI tests that run on this agent may
-   > fail. To avoid this, use the [tscon](/windows-server/administration/windows-commands/tscon)
-   > command to disconnect from Remote Desktop. For example:
-   >
-   > `%windir%\System32\tscon.exe 1 /dest:console`
+    > [!NOTE]
+    > There are security risks when you enable automatic logon
+    > or disable the screen saver because you enable other users to walk
+    > up to the computer and use the account that automatically logs on. If you configure the agent to run
+    > in this way, you must ensure the computer is physically protected;
+    > for example, located in a secure facility. If you use
+    > Remote Desktop to access the computer on which an agent is running
+    > with auto-logon, simply closing the Remote Desktop causes the
+    > computer to be locked and any UI tests that run on this agent may
+    > fail. To avoid this, use the [tscon](/windows-server/administration/windows-commands/tscon)
+    > command to disconnect from Remote Desktop. For example:
+    >
+    > `%windir%\System32\tscon.exe 1 /dest:console`
 
 <h2 id="account">Agent account</h2>
 
@@ -491,11 +492,11 @@ Your pipelines won't run until they can target a compatible agent.
 
 ### To update self-hosted agents
 
-1. Navigate to **Project settings**, **Agent pools**.
+1.  Navigate to **Project settings**, **Agent pools**.
 
     ![Project settings, Agent pools](media/agent-queues-tab/agent-queues.png)
 
-2. Select your agent pool and choose **Update all agents**.
+2.  Select your agent pool and choose **Update all agents**.
 
     ![Update all agents](media/agents/update-all-agents.png)
 
@@ -503,11 +504,11 @@ Your pipelines won't run until they can target a compatible agent.
 
     ![Update agent](media/agents/update-agent.png)
 
-3. Select **Update** to confirm the update.
+3.  Select **Update** to confirm the update.
 
     ![Update all agents confirmation](media/agents/update-all-agents-confirmation.png)
 
-4. An update request is queued for each agent in the pool, that runs when any currently running jobs complete. Upgrading typically only takes a few moments - long enough to download the latest version of the agent software (approximately 200 MB), unzip it, and restart the agent with the new version. You can monitor the status of your agents on the **Agents** tab.
+4.  An update request is queued for each agent in the pool, that runs when any currently running jobs complete. Upgrading typically only takes a few moments - long enough to download the latest version of the agent software (approximately 200 MB), unzip it, and restart the agent with the new version. You can monitor the status of your agents on the **Agents** tab.
 
 ::: moniker-end
 
@@ -555,6 +556,7 @@ You might also run into problems if parallel build jobs are using the same singl
 ## Learn more
 
 For more information about agents, see the following modules from the [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops/) learning path.
+
 * [Choose a Microsoft-hosted or self-hosted build agent](/learn/modules/host-build-agent/2-choose-a-build-agent)
 * [Host your own build agent in Azure Pipelines](/learn/modules/host-build-agent/)
 

@@ -32,11 +32,11 @@ None
 
 ## Arguments
 
-|Argument|Description|
-|--- |--- |
-|`cwd`<br/>Working directory|(Optional) Specify the working directory in which to execute this task. If left empty, the repository directory will be used. <br/>Argument alias: `workingDirectory`|
-|`forceRepoUpdate`<br/>Force repo update|(Required) Selecting this option will force running 'pod repo update' before install. <br/>Default value: `false`|
-|`projectDirectory`<br/>Project directory|(Optional) Optionally specify the path to the root of the project directory. If left empty, the project specified in the Podfile will be used. If no project is specified, then a search for an Xcode project will be made. If more than one Xcode project is found, an error will occur.|
+| Argument                                 | Description                                                                                                                                                                                                                                                                               |
+| ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `cwd`<br/>Working directory              | (Optional) Specify the working directory in which to execute this task. If left empty, the repository directory will be used. <br/>Argument alias: `workingDirectory`                                                                                                                     |
+| `forceRepoUpdate`<br/>Force repo update  | (Required) Selecting this option will force running 'pod repo update' before install. <br/>Default value: `false`                                                                                                                                                                         |
+| `projectDirectory`<br/>Project directory | (Optional) Optionally specify the path to the root of the project directory. If left empty, the project specified in the Podfile will be used. If no project is specified, then a search for an Xcode project will be made. If more than one Xcode project is found, an error will occur. |
 
 ## Open source
 

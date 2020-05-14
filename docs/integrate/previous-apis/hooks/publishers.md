@@ -21,6 +21,7 @@ A publisher is a service that publishes events to service hooks. For example, Te
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 
 ## Get a list of publishers
+
 <a name="getalistofpublishers" />
 
 #### Sample request
@@ -44,17 +45,17 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers?api-version=1.0
         {
           "publisherId": "tfs",
           "id": "build.complete",
-          "url": "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/build.complete",
+          "url":
+            "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/build.complete",
           "name": "Build completed",
           "description": "A build completes",
-          "supportedResourceVersions": [
-            "1.0-preview.1"
-          ],
+          "supportedResourceVersions": ["1.0-preview.1"],
           "inputDescriptors": [
             {
               "id": "definitionName",
               "name": "Build Definition",
-              "description": "Filter events to include only completed builds for the specified definition",
+              "description":
+                "Filter events to include only completed builds for the specified definition",
               "inputMode": "combo",
               "isConfidential": false,
               "useInDefaultDescription": false,
@@ -76,7 +77,8 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers?api-version=1.0
             {
               "id": "buildStatus",
               "name": "Build Status",
-              "description": "Filter events to include only completed builds for the specified completion status",
+              "description":
+                "Filter events to include only completed builds for the specified completion status",
               "inputMode": "combo",
               "isConfidential": false,
               "useInDefaultDescription": false,
@@ -112,17 +114,17 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers?api-version=1.0
         {
           "publisherId": "tfs",
           "id": "message.posted",
-          "url": "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/message.posted",
+          "url":
+            "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/message.posted",
           "name": "Team room message posted",
           "description": "Triggers when a message is posted to a team room",
-          "supportedResourceVersions": [
-            "1.0-preview.1"
-          ],
+          "supportedResourceVersions": ["1.0-preview.1"],
           "inputDescriptors": [
             {
               "id": "roomId",
               "name": "Team room",
-              "description": "Filter events to include only messages sent to the specified Team room",
+              "description":
+                "Filter events to include only messages sent to the specified Team room",
               "inputMode": "combo",
               "isConfidential": false,
               "useInDefaultDescription": false,
@@ -146,7 +148,8 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers?api-version=1.0
               "validation": {
                 "dataType": "string",
                 "pattern": "^[^&<>'\"]*$",
-                "patternMismatchErrorMessage": "Value cannot contain any of characters: &, <, >, ' (apostrophe), or \\\" (quote).",
+                "patternMismatchErrorMessage":
+                  "Value cannot contain any of characters: &, <, >, ' (apostrophe), or \\\" (quote).",
                 "maxLength": 1024
               },
               "values": {
@@ -159,12 +162,11 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers?api-version=1.0
         {
           "publisherId": "tfs",
           "id": "git.pullrequest.created",
-          "url": "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/git.pullrequest.created",
+          "url":
+            "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/git.pullrequest.created",
           "name": "Pull request created",
           "description": "Pull request is created in a git repository",
-          "supportedResourceVersions": [
-            "1.0-preview.1"
-          ],
+          "supportedResourceVersions": ["1.0-preview.1"],
           "inputDescriptors": [
             {
               "id": "repository",
@@ -203,9 +205,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers?api-version=1.0
                 ],
                 "isLimitedToPossibleValues": true
               },
-              "dependencyInputIds": [
-                "repository"
-              ],
+              "dependencyInputIds": ["repository"],
               "hasDynamicValueInformation": true
             }
           ]
@@ -213,12 +213,12 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers?api-version=1.0
         {
           "publisherId": "tfs",
           "id": "git.pullrequest.updated",
-          "url": "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/git.pullrequest.updated",
+          "url":
+            "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/git.pullrequest.updated",
           "name": "Pull request updated",
-          "description": "Pull request is updated – status, review list, reviewer vote changed or the source branch is updated with a push",
-          "supportedResourceVersions": [
-            "1.0-preview.1"
-          ],
+          "description":
+            "Pull request is updated – status, review list, reviewer vote changed or the source branch is updated with a push",
+          "supportedResourceVersions": ["1.0-preview.1"],
           "inputDescriptors": [
             {
               "id": "repository",
@@ -257,9 +257,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers?api-version=1.0
                 ],
                 "isLimitedToPossibleValues": true
               },
-              "dependencyInputIds": [
-                "repository"
-              ],
+              "dependencyInputIds": ["repository"],
               "hasDynamicValueInformation": true
             },
             {
@@ -305,12 +303,11 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers?api-version=1.0
         {
           "publisherId": "tfs",
           "id": "git.push",
-          "url": "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/git.push",
+          "url":
+            "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/git.push",
           "name": "Code pushed",
           "description": "Code is pushed to a git repository",
-          "supportedResourceVersions": [
-            "1.0-preview.1"
-          ],
+          "supportedResourceVersions": ["1.0-preview.1"],
           "inputDescriptors": [
             {
               "id": "repository",
@@ -349,9 +346,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers?api-version=1.0
                 ],
                 "isLimitedToPossibleValues": true
               },
-              "dependencyInputIds": [
-                "repository"
-              ],
+              "dependencyInputIds": ["repository"],
               "hasDynamicValueInformation": true
             }
           ]
@@ -359,17 +354,17 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers?api-version=1.0
         {
           "publisherId": "tfs",
           "id": "tfvc.checkin",
-          "url": "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/tfvc.checkin",
+          "url":
+            "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/tfvc.checkin",
           "name": "Code checked in",
           "description": "A changeset is checked into version control.",
-          "supportedResourceVersions": [
-            "1.0-preview.1"
-          ],
+          "supportedResourceVersions": ["1.0-preview.1"],
           "inputDescriptors": [
             {
               "id": "path",
               "name": "Under path",
-              "description": "Filter to checkins that change one or more files under the specified path",
+              "description":
+                "Filter to checkins that change one or more files under the specified path",
               "inputMode": "textBox",
               "isConfidential": false,
               "useInDefaultDescription": false,
@@ -387,18 +382,18 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers?api-version=1.0
         {
           "publisherId": "tfs",
           "id": "workitem.created",
-          "url": "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/workitem.created",
+          "url":
+            "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/workitem.created",
           "name": "Work item created",
-          "description": "Filter events to include only newly created work items.",
-          "supportedResourceVersions": [
-            "1.0-preview.2",
-            "1.0-preview.1"
-          ],
+          "description":
+            "Filter events to include only newly created work items.",
+          "supportedResourceVersions": ["1.0-preview.2", "1.0-preview.1"],
           "inputDescriptors": [
             {
               "id": "areaPath",
               "name": "Area path",
-              "description": "Filter events to include only work items under the specified area path.",
+              "description":
+                "Filter events to include only work items under the specified area path.",
               "inputMode": "combo",
               "isConfidential": false,
               "useInDefaultDescription": false,
@@ -421,7 +416,8 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers?api-version=1.0
             {
               "id": "workItemType",
               "name": "Work item type",
-              "description": "Filter events to include only work items of the specified type.",
+              "description":
+                "Filter events to include only work items of the specified type.",
               "inputMode": "combo",
               "isConfidential": false,
               "useInDefaultDescription": false,
@@ -446,18 +442,18 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers?api-version=1.0
         {
           "publisherId": "tfs",
           "id": "workitem.commented",
-          "url": "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/workitem.commented",
+          "url":
+            "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/workitem.commented",
           "name": "Work item commented on",
-          "description": "Filter events to include only work items commented on.",
-          "supportedResourceVersions": [
-            "1.0-preview.2",
-            "1.0-preview.1"
-          ],
+          "description":
+            "Filter events to include only work items commented on.",
+          "supportedResourceVersions": ["1.0-preview.2", "1.0-preview.1"],
           "inputDescriptors": [
             {
               "id": "areaPath",
               "name": "Area path",
-              "description": "Filter events to include only work items under the specified area path.",
+              "description":
+                "Filter events to include only work items under the specified area path.",
               "inputMode": "combo",
               "isConfidential": false,
               "useInDefaultDescription": false,
@@ -480,7 +476,8 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers?api-version=1.0
             {
               "id": "workItemType",
               "name": "Work item type",
-              "description": "Filter events to include only work items of the specified type.",
+              "description":
+                "Filter events to include only work items of the specified type.",
               "inputMode": "combo",
               "isConfidential": false,
               "useInDefaultDescription": false,
@@ -510,7 +507,8 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers?api-version=1.0
               "validation": {
                 "dataType": "string",
                 "pattern": "^\\s*[^\\s&<>'\"][^&<>'\"]*$",
-                "patternMismatchErrorMessage": "Value should contain at least one non whitespace character and cannot contain any of characters: &, <, >, ' (apostrophe), or \" (quote).",
+                "patternMismatchErrorMessage":
+                  "Value should contain at least one non whitespace character and cannot contain any of characters: &, <, >, ' (apostrophe), or \" (quote).",
                 "minLength": 1,
                 "maxLength": 1024
               },
@@ -524,18 +522,17 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers?api-version=1.0
         {
           "publisherId": "tfs",
           "id": "workitem.updated",
-          "url": "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/workitem.updated",
+          "url":
+            "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/workitem.updated",
           "name": "Work item updated",
           "description": "Filter events to include only changed work items.",
-          "supportedResourceVersions": [
-            "1.0-preview.2",
-            "1.0-preview.1"
-          ],
+          "supportedResourceVersions": ["1.0-preview.2", "1.0-preview.1"],
           "inputDescriptors": [
             {
               "id": "areaPath",
               "name": "Area path",
-              "description": "Filter events to include only work items under the specified area path.",
+              "description":
+                "Filter events to include only work items under the specified area path.",
               "inputMode": "combo",
               "isConfidential": false,
               "useInDefaultDescription": false,
@@ -558,7 +555,8 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers?api-version=1.0
             {
               "id": "workItemType",
               "name": "Work item type",
-              "description": "Filter events to include only work items of the specified type.",
+              "description":
+                "Filter events to include only work items of the specified type.",
               "inputMode": "combo",
               "isConfidential": false,
               "useInDefaultDescription": false,
@@ -581,7 +579,8 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers?api-version=1.0
             {
               "id": "changedFields",
               "name": "Field",
-              "description": "Filter events to include only work items with the specified field(s) changed.",
+              "description":
+                "Filter events to include only work items with the specified field(s) changed.",
               "inputMode": "combo",
               "isConfidential": false,
               "useInDefaultDescription": false,
@@ -599,9 +598,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers?api-version=1.0
                 "isLimitedToPossibleValues": true,
                 "isReadOnly": true
               },
-              "dependencyInputIds": [
-                "workItemType"
-              ],
+              "dependencyInputIds": ["workItemType"],
               "hasDynamicValueInformation": true
             }
           ]
@@ -636,7 +633,6 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers?api-version=1.0
 }
 ```
 
-
 ## Get supported events
 
 #### Sample request
@@ -654,17 +650,17 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes?
     {
       "publisherId": "tfs",
       "id": "build.complete",
-      "url": "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/build.complete",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/build.complete",
       "name": "Build completed",
       "description": "A build completes",
-      "supportedResourceVersions": [
-        "1.0-preview.1"
-      ],
+      "supportedResourceVersions": ["1.0-preview.1"],
       "inputDescriptors": [
         {
           "id": "definitionName",
           "name": "Build Definition",
-          "description": "Filter events to include only completed builds for the specified definition",
+          "description":
+            "Filter events to include only completed builds for the specified definition",
           "inputMode": "combo",
           "isConfidential": false,
           "useInDefaultDescription": false,
@@ -686,7 +682,8 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes?
         {
           "id": "buildStatus",
           "name": "Build Status",
-          "description": "Filter events to include only completed builds for the specified completion status",
+          "description":
+            "Filter events to include only completed builds for the specified completion status",
           "inputMode": "combo",
           "isConfidential": false,
           "useInDefaultDescription": false,
@@ -722,17 +719,17 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes?
     {
       "publisherId": "tfs",
       "id": "message.posted",
-      "url": "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/message.posted",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/message.posted",
       "name": "Team room message posted",
       "description": "Triggers when a message is posted to a team room",
-      "supportedResourceVersions": [
-        "1.0-preview.1"
-      ],
+      "supportedResourceVersions": ["1.0-preview.1"],
       "inputDescriptors": [
         {
           "id": "roomId",
           "name": "Team room",
-          "description": "Filter events to include only messages sent to the specified Team room",
+          "description":
+            "Filter events to include only messages sent to the specified Team room",
           "inputMode": "combo",
           "isConfidential": false,
           "useInDefaultDescription": false,
@@ -756,7 +753,8 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes?
           "validation": {
             "dataType": "string",
             "pattern": "^[^&<>'\"]*$",
-            "patternMismatchErrorMessage": "Value cannot contain any of characters: &, <, >, ' (apostrophe), or \\\" (quote).",
+            "patternMismatchErrorMessage":
+              "Value cannot contain any of characters: &, <, >, ' (apostrophe), or \\\" (quote).",
             "maxLength": 1024
           },
           "values": {
@@ -769,12 +767,11 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes?
     {
       "publisherId": "tfs",
       "id": "git.pullrequest.created",
-      "url": "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/git.pullrequest.created",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/git.pullrequest.created",
       "name": "Pull request created",
       "description": "Pull request is created in a git repository",
-      "supportedResourceVersions": [
-        "1.0-preview.1"
-      ],
+      "supportedResourceVersions": ["1.0-preview.1"],
       "inputDescriptors": [
         {
           "id": "repository",
@@ -813,9 +810,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes?
             ],
             "isLimitedToPossibleValues": true
           },
-          "dependencyInputIds": [
-            "repository"
-          ],
+          "dependencyInputIds": ["repository"],
           "hasDynamicValueInformation": true
         }
       ]
@@ -823,12 +818,12 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes?
     {
       "publisherId": "tfs",
       "id": "git.pullrequest.updated",
-      "url": "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/git.pullrequest.updated",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/git.pullrequest.updated",
       "name": "Pull request updated",
-      "description": "Pull request is updated – status, review list, reviewer vote changed or the source branch is updated with a push",
-      "supportedResourceVersions": [
-        "1.0-preview.1"
-      ],
+      "description":
+        "Pull request is updated – status, review list, reviewer vote changed or the source branch is updated with a push",
+      "supportedResourceVersions": ["1.0-preview.1"],
       "inputDescriptors": [
         {
           "id": "repository",
@@ -867,9 +862,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes?
             ],
             "isLimitedToPossibleValues": true
           },
-          "dependencyInputIds": [
-            "repository"
-          ],
+          "dependencyInputIds": ["repository"],
           "hasDynamicValueInformation": true
         },
         {
@@ -915,12 +908,11 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes?
     {
       "publisherId": "tfs",
       "id": "git.push",
-      "url": "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/git.push",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/git.push",
       "name": "Code pushed",
       "description": "Code is pushed to a git repository",
-      "supportedResourceVersions": [
-        "1.0-preview.1"
-      ],
+      "supportedResourceVersions": ["1.0-preview.1"],
       "inputDescriptors": [
         {
           "id": "repository",
@@ -959,9 +951,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes?
             ],
             "isLimitedToPossibleValues": true
           },
-          "dependencyInputIds": [
-            "repository"
-          ],
+          "dependencyInputIds": ["repository"],
           "hasDynamicValueInformation": true
         }
       ]
@@ -969,17 +959,17 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes?
     {
       "publisherId": "tfs",
       "id": "tfvc.checkin",
-      "url": "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/tfvc.checkin",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/tfvc.checkin",
       "name": "Code checked in",
       "description": "A changeset is checked into version control.",
-      "supportedResourceVersions": [
-        "1.0-preview.1"
-      ],
+      "supportedResourceVersions": ["1.0-preview.1"],
       "inputDescriptors": [
         {
           "id": "path",
           "name": "Under path",
-          "description": "Filter to checkins that change one or more files under the specified path",
+          "description":
+            "Filter to checkins that change one or more files under the specified path",
           "inputMode": "textBox",
           "isConfidential": false,
           "useInDefaultDescription": false,
@@ -997,18 +987,17 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes?
     {
       "publisherId": "tfs",
       "id": "workitem.created",
-      "url": "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/workitem.created",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/workitem.created",
       "name": "Work item created",
       "description": "Filter events to include only newly created work items.",
-      "supportedResourceVersions": [
-        "1.0-preview.2",
-        "1.0-preview.1"
-      ],
+      "supportedResourceVersions": ["1.0-preview.2", "1.0-preview.1"],
       "inputDescriptors": [
         {
           "id": "areaPath",
           "name": "Area path",
-          "description": "Filter events to include only work items under the specified area path.",
+          "description":
+            "Filter events to include only work items under the specified area path.",
           "inputMode": "combo",
           "isConfidential": false,
           "useInDefaultDescription": false,
@@ -1031,7 +1020,8 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes?
         {
           "id": "workItemType",
           "name": "Work item type",
-          "description": "Filter events to include only work items of the specified type.",
+          "description":
+            "Filter events to include only work items of the specified type.",
           "inputMode": "combo",
           "isConfidential": false,
           "useInDefaultDescription": false,
@@ -1056,18 +1046,17 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes?
     {
       "publisherId": "tfs",
       "id": "workitem.commented",
-      "url": "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/workitem.commented",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/workitem.commented",
       "name": "Work item commented on",
       "description": "Filter events to include only work items commented on.",
-      "supportedResourceVersions": [
-        "1.0-preview.2",
-        "1.0-preview.1"
-      ],
+      "supportedResourceVersions": ["1.0-preview.2", "1.0-preview.1"],
       "inputDescriptors": [
         {
           "id": "areaPath",
           "name": "Area path",
-          "description": "Filter events to include only work items under the specified area path.",
+          "description":
+            "Filter events to include only work items under the specified area path.",
           "inputMode": "combo",
           "isConfidential": false,
           "useInDefaultDescription": false,
@@ -1090,7 +1079,8 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes?
         {
           "id": "workItemType",
           "name": "Work item type",
-          "description": "Filter events to include only work items of the specified type.",
+          "description":
+            "Filter events to include only work items of the specified type.",
           "inputMode": "combo",
           "isConfidential": false,
           "useInDefaultDescription": false,
@@ -1120,7 +1110,8 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes?
           "validation": {
             "dataType": "string",
             "pattern": "^\\s*[^\\s&<>'\"][^&<>'\"]*$",
-            "patternMismatchErrorMessage": "Value should contain at least one non whitespace character and cannot contain any of characters: &, <, >, ' (apostrophe), or \" (quote).",
+            "patternMismatchErrorMessage":
+              "Value should contain at least one non whitespace character and cannot contain any of characters: &, <, >, ' (apostrophe), or \" (quote).",
             "minLength": 1,
             "maxLength": 1024
           },
@@ -1134,18 +1125,17 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes?
     {
       "publisherId": "tfs",
       "id": "workitem.updated",
-      "url": "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/workitem.updated",
+      "url":
+        "https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes/workitem.updated",
       "name": "Work item updated",
       "description": "Filter events to include only changed work items.",
-      "supportedResourceVersions": [
-        "1.0-preview.2",
-        "1.0-preview.1"
-      ],
+      "supportedResourceVersions": ["1.0-preview.2", "1.0-preview.1"],
       "inputDescriptors": [
         {
           "id": "areaPath",
           "name": "Area path",
-          "description": "Filter events to include only work items under the specified area path.",
+          "description":
+            "Filter events to include only work items under the specified area path.",
           "inputMode": "combo",
           "isConfidential": false,
           "useInDefaultDescription": false,
@@ -1168,7 +1158,8 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes?
         {
           "id": "workItemType",
           "name": "Work item type",
-          "description": "Filter events to include only work items of the specified type.",
+          "description":
+            "Filter events to include only work items of the specified type.",
           "inputMode": "combo",
           "isConfidential": false,
           "useInDefaultDescription": false,
@@ -1191,7 +1182,8 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes?
         {
           "id": "changedFields",
           "name": "Field",
-          "description": "Filter events to include only work items with the specified field(s) changed.",
+          "description":
+            "Filter events to include only work items with the specified field(s) changed.",
           "inputMode": "combo",
           "isConfidential": false,
           "useInDefaultDescription": false,
@@ -1209,9 +1201,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes?
             "isLimitedToPossibleValues": true,
             "isReadOnly": true
           },
-          "dependencyInputIds": [
-            "workItemType"
-          ],
+          "dependencyInputIds": ["workItemType"],
           "hasDynamicValueInformation": true
         }
       ]
@@ -1219,6 +1209,3 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/publishers/tfs/eventTypes?
   ]
 }
 ```
-
-
-

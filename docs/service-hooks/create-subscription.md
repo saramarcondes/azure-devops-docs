@@ -15,37 +15,36 @@ Using the [Subscriptions](https://docs.microsoft.com/rest/api/vsts/hooks/?view=v
 
 Supported events:
 
-- build completed
-- code pushed (for Git projects)
-- pull request create or updated (for Git projects)
-- code checked in (TFVC projects)
-- work item created, updated, deleted, restored or commented on
-- message posted to a team room
+* build completed
+* code pushed (for Git projects)
+* pull request create or updated (for Git projects)
+* code checked in (TFVC projects)
+* work item created, updated, deleted, restored or commented on
+* message posted to a team room
 
 You can configure filters on your subscriptions to control which events trigger an action. For example, you can filter the build completed event based on the build status. For a complete set of supported events and filter options, see the [event reference](./events.md).
 
 For a complete set of supported consumer services and actions, see the [consumer reference](./consumers.md).
 
-
 ## Create a subscription for a project
 
-To create a subscription for an event, choose which consumer to use and the action you want to take. You will create an HTTP POST 
-request to the subscriptions URL for the Azure DevOps Services organization with the event, consumer and action to 
+To create a subscription for an event, choose which consumer to use and the action you want to take. You will create an HTTP POST
+request to the subscriptions URL for the Azure DevOps Services organization with the event, consumer and action to
 take for the subscription.
 
 ### Before you begin
 
 To create a subscription, the following data will be required:
 
-- project ID (use the [Project REST API](https://docs.microsoft.com/rest/api/vsts/core/projects?view=vsts-rest-4.1) to get the project ID)
-- event ID and settings (see the [event reference](./events.md))
-- consumer and action IDs and settings (see the [consumer reference](./consumers.md))
+* project ID (use the [Project REST API](https://docs.microsoft.com/rest/api/vsts/core/projects?view=vsts-rest-4.1) to get the project ID)
+* event ID and settings (see the [event reference](./events.md))
+* consumer and action IDs and settings (see the [consumer reference](./consumers.md))
 
 ### Create the request
 
-Construct the body of the HTTP POST request to create the subscription based on the project id, event, consumer and action. 
+Construct the body of the HTTP POST request to create the subscription based on the project id, event, consumer and action.
 
-Here is an example request for creating a subscription that will cause a build event to be POSTed to `https://myservice/event` when the build `WebSite.CI` fails. 
+Here is an example request for creating a subscription that will cause a build event to be POSTed to `https://myservice/event` when the build `WebSite.CI` fails.
 
 ```js
 {
@@ -63,11 +62,12 @@ Here is an example request for creating a subscription that will cause a build e
         "url": " https://myservice/event"
     },
 }
-
 ```
+
 Secure HTTPS URLs are highly recommended for the security of the private data in the JSON object.
 
 Here is the response to the request to create the subscription:
+
 ```js
 {
     "id": "74aeeed0-bf5d-48dc-893f-f862b80987e9",
@@ -96,7 +96,6 @@ Here is the response to the request to create the subscription:
         "url": "http://myservice/event"
     }
 }
-
 ```
 
 If the subscription request fails, an HTTP response code of 400 will be returned with a message that has further details.
@@ -104,15 +103,14 @@ If the subscription request fails, an HTTP response code of 400 will be returned
 ### What happens when the event occurs?
 
 When an event occurs, all enabled subscription in the project are evaluated, and the consumer action is performed for all matching subscriptions.
- 
+
 ### Resource versions (advanced)
 
 Resource versioning is applicable when an API is in preview. For most scenarios, specifying `1.0` as the resource version is the safest route.
 
-The event payload sent to certain consumers (like Web hooks, Azure Service Bus, Azure Storage) includes a JSON representation of subject resource (for example, a build or work item). The representation of this resource can have different forms (or versions). 
+The event payload sent to certain consumers (like Web hooks, Azure Service Bus, Azure Storage) includes a JSON representation of subject resource (for example, a build or work item). The representation of this resource can have different forms (or versions).
 You can specify the version of the resource that you want to have sent to the consumer service via the `resourceVersion` field on the subscription.
 The resource version is the same as the [API version](../integrate/concepts/rest-api-versioning.md). Not specifying a resource version means "latest released". You should always specify a resource version - this ensures a consistent event payload over time.
-
 
 ## Q&A
 
@@ -217,4 +215,4 @@ namespace Microsoft.Samples.VisualStudioOnline
 }
 ```
 
-<!-- ENDSECTION --> 
+<!-- ENDSECTION -->

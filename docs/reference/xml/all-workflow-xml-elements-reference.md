@@ -13,18 +13,19 @@ ms.date: 02/10/2017
 
 [!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
+You can use the information in this topic as a quick reference to all the elements and main attributes that control the workflow for a type of work item. You specify these elements in the `WORKFLOW` element container, which is the second major section of the definition of a work item type. You use the **STATES** and **TRANSITIONS** child elements to define the different states that a user can specify for a type of work item and which transitions are allowed between states. For more information about how to define these elements, see [Change the workflow](change-workflow-wit.md)
 
-You can use the information in this topic as a quick reference to all the elements and main attributes that control the workflow for a type of work item. You specify these elements in the `WORKFLOW` element container, which is the second major section of the definition of a work item type. You use the **STATES** and **TRANSITIONS** child elements to define the different states that a user can specify for a type of work item and which transitions are allowed between states. For more information about how to define these elements, see [Change the workflow](change-workflow-wit.md)  
-  
-To modify the workflow, you modify the definition for a work item type. See [Modify or add a custom work item type](../add-modify-wit.md).  
-  
-## WORKFLOW example  
-The following example shows the overall structure of the **WORKFLOW** element. You specify all the states to which a user can first assign a work item type within a **STATES** container. Next, you specify all the transitions that are allowed from one state to another. Each state corresponds to a **STATE** element, and each transition corresponds to a **TRANSITION** element. Within each **STATES** and **TRANSITIONS** container element, you can define the states and transitions in any sequence that you want.  
-  
-For each transition, you specify a set of reasons for changing the state of the work item, including a default reason. You can assign values for each state, transition, or reason, and you can place conditions on the values of one or more fields by using the **FIELD** (Workflow) element. In addition, you can trigger an action to occur during a transition by specifying the **ACTION** element.  
-  
+To modify the workflow, you modify the definition for a work item type. See [Modify or add a custom work item type](../add-modify-wit.md).
+
+## WORKFLOW example
+
+The following example shows the overall structure of the **WORKFLOW** element. You specify all the states to which a user can first assign a work item type within a **STATES** container. Next, you specify all the transitions that are allowed from one state to another. Each state corresponds to a **STATE** element, and each transition corresponds to a **TRANSITION** element. Within each **STATES** and **TRANSITIONS** container element, you can define the states and transitions in any sequence that you want.
+
+For each transition, you specify a set of reasons for changing the state of the work item, including a default reason. You can assign values for each state, transition, or reason, and you can place conditions on the values of one or more fields by using the **FIELD** (Workflow) element. In addition, you can trigger an action to occur during a transition by specifying the **ACTION** element.
+
 > [!div class="tabbedCodeSnippets"]
-> ```XML 
+>
+> ```XML
 > <WORKFLOW>  
 > <STATES>  
 >   <STATE value="Active">  
@@ -66,11 +67,11 @@ For each transition, you specify a set of reasons for changing the state of the 
 > </TRANSITION>  
 > </TRANSITIONS>  
 > </WORKFLOW>  
-> ```  
-  
-##  <a name="WORKFLOW"></a> Syntax structure  
- By using the elements that the following table describes, you can specify to which states a team member can set a work item of a particular type. In the `WORKFLOW` section of the definition, you define states first, and then you define transitions. For more information, see [Change the workflow](change-workflow-wit.md).  
-  
+> ```
+
+## <a name="WORKFLOW"></a> Syntax structure
+
+By using the elements that the following table describes, you can specify to which states a team member can set a work item of a particular type. In the `WORKFLOW` section of the definition, you define states first, and then you define transitions. For more information, see [Change the workflow](change-workflow-wit.md).
 
 <table>
 <tr Responsive="true"><th scope="col"><p>Element</p></th><th scope="col"><p>Description and syntax</p></th><th scope="col"><p>Required?</p></th></tr><tr><td data-th="Element"><p><strong>ACTION</strong></p></td><td data-th="Description and syntax"><p>Defines a text string that corresponds to an action to be performed when the system for tracking work items calls the <strong>WorkItem.GetNextState</strong> method to get the post-action state of the work item.</p>
@@ -78,6 +79,7 @@ For each transition, you specify a set of reasons for changing the state of the 
 <pre>
 &lt;ACTION value="NameOfAction" /&gt;
 </pre>
+
 <p>For more information, see <a href="automate-field-assignments-state-transition-reason.md" data-raw-source="[Automate field assignments based on State, Transition, or Reason](automate-field-assignments-state-transition-reason.md)">Automate field assignments based on State, Transition, or Reason</a> </p></td><td data-th="Required?"><p>Optional</p></td></tr><tr><td data-th="Element"><p><strong>ACTIONS</strong></p></td><td data-th="Description and syntax"><p>Defines a collection of <strong>ACTION</strong> elements.</p>
 <pre>
 &lt;ACTIONS&gt;
@@ -149,8 +151,8 @@ For each transition, you specify a set of reasons for changing the state of the 
 </pre>
 </td><td data-th="Required?"><p>Required</p></td></tr><tr><td data-th="Element"><p><strong>TRANSITION</strong></p></td><td data-th="Description and syntax"><p>Specifies a valid progression or regression from one state to another for work items of a particular type.</p>
 <pre>
-&lt;TRANSITION from="NameOfStartingState" 
-   to="NameOfEndingState" 
+&lt;TRANSITION from="NameOfStartingState"
+   to="NameOfEndingState"
    for="UserOrGroupName"
    not="UserOrGroupName"&gt;
    &lt;ACTIONS&gt;. . . &lt;/ACTIONS&gt;
@@ -173,8 +175,8 @@ For each transition, you specify a set of reasons for changing the state of the 
 </pre>
 </td><td data-th="Required?"><p>Required</p></td></tr></table>
 
- 
-## Related articles 
--  [FIELD (Workflow)](field-workflow-element-reference.md)   
--  [Change the workflow](change-workflow-wit.md) 
--  [Customize the work tracking experience](../customize-work.md) 
+## Related articles
+
+* [FIELD (Workflow)](field-workflow-element-reference.md)
+* [Change the workflow](change-workflow-wit.md)
+* [Customize the work tracking experience](../customize-work.md)

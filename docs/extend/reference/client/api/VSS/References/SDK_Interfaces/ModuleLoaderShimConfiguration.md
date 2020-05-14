@@ -15,12 +15,10 @@ ms.date: 08/04/2016
 
 Defined in vss.d.ts
 
-
-AMD javascript module loader shim configuration 
+AMD javascript module loader shim configuration
 
 ### Members
 
-* `deps`: string[]. 
+* `deps`: string[].
 
-* `exports`: string. 
-
+* `exports`: string.

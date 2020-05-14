@@ -34,11 +34,11 @@ Azure stack requirements:
 
 Azure Pipelines agent requirements:
 
-* Create a new service principal name (SPN) or use an existing one. 
+* Create a new service principal name (SPN) or use an existing one.
 * Validate the Azure Stack Subscription via Role-Based Access Control(RBAC) to allow the Service Principal Name (SPN) to be part of the Contributor's role. Azure DevOps Services must have the Contributor role to provision resources in an Azure Stack subscription.
 * Create a new Service connection in Azure DevOps Services using the Azure Stack endpoints and SPN information.
   Specify Azure Stack in the **Environment** parameter when you create an [Azure Resource Manager service connection](../library/connect-to-azure.md).
-You must use the full version of the service connection dialog to manually define the connection.
+  You must use the full version of the service connection dialog to manually define the connection.
 
 You can then use the service connection in your [build and release pipeline tasks](../tasks/index.md).
 
@@ -60,7 +60,7 @@ The following Azure tasks are validated with Azure Stack:
 * [Azure File Copy](../tasks/deploy/azure-file-copy.md)
 * [Azure Resource Group Deployment](../tasks/deploy/azure-resource-group-deployment.md)
 * [Azure App Service Deploy](../tasks/deploy/azure-rm-web-app-deployment.md)
-* [Azure App Service Manage](../tasks/deploy/azure-app-service-manage.md) 
+* [Azure App Service Manage](../tasks/deploy/azure-app-service-manage.md)
 * [Azure SQL Database Deployment](../tasks/deploy/sql-azure-dacpac-deployment.md)
 
 ### How do I resolve SSL errors during deployment?
@@ -68,4 +68,3 @@ The following Azure tasks are validated with Azure Stack:
 To ignore SSL errors, set a variable named `VSTS_ARM_REST_IGNORE_SSL_ERRORS` to the value `true` in the build or release pipeline.
 
 [!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]
-

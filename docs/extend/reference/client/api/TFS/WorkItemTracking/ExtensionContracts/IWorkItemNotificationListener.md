@@ -14,7 +14,6 @@ ms.date: 08/04/2016
 
 Module path: `TFS/WorkItemTracking/ExtensionContracts`
 
-
 ### Members
 
 * `onLoaded`: (workItemLoadedArgs: [IWorkItemLoadedArgs](../../../TFS/WorkItemTracking/ExtensionContracts/IWorkItemLoadedArgs.md)): void. Called when an extension is loaded
@@ -28,4 +27,3 @@ Module path: `TFS/WorkItemTracking/ExtensionContracts`
 * `onReset`: (undoEventArgs: [IWorkItemChangedArgs](../../../TFS/WorkItemTracking/ExtensionContracts/IWorkItemChangedArgs.md)): void. Called when a work item is reset (undo back to unchanged state)
 
 * `onUnloaded`: (unloadedEventArgs: [IWorkItemChangedArgs](../../../TFS/WorkItemTracking/ExtensionContracts/IWorkItemChangedArgs.md)): void. Called when a work item is unloaded
-

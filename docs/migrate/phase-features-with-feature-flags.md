@@ -9,7 +9,7 @@ author: KathrynEE
 monikerRange: '>= tfs-2013'
 ---
 
-# Explore how to progressively expose your features in production for some or all users 
+# Explore how to progressively expose your features in production for some or all users
 
 [!INCLUDE [version-azure-devops](../includes/version-vsts-tfs-all-versions.md)]
 
@@ -17,9 +17,9 @@ In today's fast-paced, feature-driven markets, it's important to continuously de
 
 Are you planning to continuously integrate features into your application while they're under development? You probably have a few questions, such as:
 
-- How can you toggle features to hide, disable, or enable features at run-time?
-- How can you revert a change deployed to production without rolling back your release?
-- How can you present users with variants of a feature, to determine which one performs better?
+* How can you toggle features to hide, disable, or enable features at run-time?
+* How can you revert a change deployed to production without rolling back your release?
+* How can you present users with variants of a feature, to determine which one performs better?
 
 This topic aims to answer these questions and share an implementation of feature flags (FF) and A|B testing used with Azure DevOps extensions.
 
@@ -27,12 +27,13 @@ This topic aims to answer these questions and share an implementation of feature
 
 Before you introduce feature flags to your engineering process, it's important to consider:
 
-- Which users are you planning to target? For example, do you want to target specific or all users?
-- Would you like users to decide which features they want to use?
-- What's the value of embracing feature flags as part of your engineering process?
-- What's the cost to implement feature flags in your engineering process?
+* Which users are you planning to target? For example, do you want to target specific or all users?
+* Would you like users to decide which features they want to use?
+* What's the value of embracing feature flags as part of your engineering process?
+* What's the cost to implement feature flags in your engineering process?
 
 Before you flip your first feature flag in production, take the time to read:
+
 * ["A Rough Patch", by Brian Harry](https://blogs.msdn.microsoft.com/bharry/2013/11/25/a-rough-patch)
 * ["Feature Flags with Branching", by LaunchDarkly](https://launchdarkly.com/guide/flagsbranching.html)
 
@@ -60,26 +61,23 @@ As shown, the email feature (option A) is more popular with your users and wins.
 
 ## Evaluating Feature Flag solutions
 
-As outlined in [how to implement feature flags and A|B testing](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/04/how-to-implement-feature-flags-and-ab-testing/), the ALM | DevOps Rangers evaluated a number of FF frameworks and solutions. 
+As outlined in [how to implement feature flags and A|B testing](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/04/how-to-implement-feature-flags-and-ab-testing/), the ALM | DevOps Rangers evaluated a number of FF frameworks and solutions.
 
 They chose the [LaunchDarkly](https://launchdarkly.com/index.html) solution for several reasons:
 
-- It's a "software as a service" (SaaS) solution
-	- No custom solution to maintain
-	- No upgrades - you're always using the latest and greatest
-	- No servers - [LaunchDarkly](https://launchdarkly.com/index.html) takes care of the machines that LaunchDarkly runs on
-	- Always on and optimized for the Internet
-- It's integrated with Azure DevOps Services and Team Foundation Server (TFS)
-- It's simple and cost-effective for an open-source project
+* It's a "software as a service" (SaaS) solution - No custom solution to maintain - No upgrades - you're always using the latest and greatest - No servers - [LaunchDarkly](https://launchdarkly.com/index.html) takes care of the machines that LaunchDarkly runs on - Always on and optimized for the Internet
+* It's integrated with Azure DevOps Services and Team Foundation Server (TFS)
+* It's simple and cost-effective for an open-source project
 
 ## Common scenarios
 
 You have a [CI/CD pipeline](https://devblogs.microsoft.com/visualstudio/tag/cicd/) for every Azure DevOps extension you're hosting on the [marketplace](https://marketplace.visualstudio.com). You are using a ring deployment model and manual release approval checkpoints. The checkpoints are manual and time consuming, but necessary to minimize the chance of breaking the early-adopter and production user environments, forcing an expensive roll-back. You're looking for an engineering process, which enables you to:
+
 * Continuously deploy to production
 * Never roll back in production
 * Fine-tune the user experience in production
 
-You have probably guessed it - feature flags! 
+You have probably guessed it - feature flags!
 
 ### Enable or disable a feature for everyone
 
@@ -103,11 +101,12 @@ To protect the flags from malicious users, you need to generate and pass the has
 
 ![Extension calls an Azure Function, which calls the LaunchDarkly SDK](./media/phase-features-with-ff/phase-features-with-ff-ld-azure-fx.png)
 
-Administration of feature flags is straight-forward. 
-1. You have a different environment for each extension, allowing you to have different feature flag values for Early Adopters and Users. 
-2. Optionally target specific users
-3. Optionally target users that match custom rules 
-4. You have a default for each feature flag
+Administration of feature flags is straight-forward.
+
+1.  You have a different environment for each extension, allowing you to have different feature flag values for Early Adopters and Users.
+2.  Optionally target specific users
+3.  Optionally target users that match custom rules
+4.  You have a default for each feature flag
 
 You have granular control of each feature flag.
 
@@ -126,9 +125,10 @@ You're able to:
 ## What's the cost?
 
 Aside from the licensing and maintenance cost of a feature flag service, you're adding technical debt to your code:
-* With a true or false feature flag, your doubling your code and test paths 
+
+* With a true or false feature flag, your doubling your code and test paths
 * With multi-value feature flag, you'll add even more code and test paths
-* You'll need to identify and remove stale feature flags 
+* You'll need to identify and remove stale feature flags
 * Understand and test the implications of flipping a feature flag
 
 > [!TIP]
@@ -163,12 +163,12 @@ No, rings and feature flags are symbiotic. Read [Feature Flags or Rings](https:/
 * [How to implement feature flags and A|B testing](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/04/how-to-implement-feature-flags-and-ab-testing/)
 
 > Authors: Willy Schaub | Find the origin of this article and connect with the ALM | DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
- 
-*(c) 2017 Microsoft Corporation. All rights reserved. This document is
+
+_(c) 2017 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,
 including URL and other Internet Web site references, may change without
-notice. You bear the risk of using it.*
+notice. You bear the risk of using it._
 
-*This document does not provide you with any legal rights to any
+_This document does not provide you with any legal rights to any
 intellectual property in any Microsoft product. You may copy and use
-this document for your internal, reference purposes.*
+this document for your internal, reference purposes._

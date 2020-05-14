@@ -9,11 +9,11 @@ ms.date: 10/31/2018
 monikerRange: 'azure-devops'
 ---
 
-# Package: Python Twine Upload Authenticate version 0.*
+# Package: Python Twine Upload Authenticate version 0.\*
 
 **Azure Pipelines**
 
-Provides `twine` credentials to a `PYPIRC_PATH` environment variable for the scope of the build. This enables you to publish Python packages to feeds with `twine` from your build. 
+Provides `twine` credentials to a `PYPIRC_PATH` environment variable for the scope of the build. This enables you to publish Python packages to feeds with `twine` from your build.
 
 ::: moniker range="> tfs-2018"
 
@@ -25,17 +25,14 @@ Provides `twine` credentials to a `PYPIRC_PATH` environment variable for the sco
 
 ## Arguments
 
-
-| Argument                       | Description                                                         |
-| ------------------------------ | ------------------------------------------------------------------- |
-| artifactFeeds                  | List of Azure Artifacts feeds to authenticate with `twine`.           |
-| externalFeeds                  | List of service connections from external organizations to authenticate with `twine`. The credentials stored in the endpoint must have package upload permissions. |
-| [!INCLUDE [temp](../../includes/control-options-arguments.md)] | |
-
+| Argument                                                       | Description                                                                                                                                                        |
+| -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| artifactFeeds                                                  | List of Azure Artifacts feeds to authenticate with `twine`.                                                                                                        |
+| externalFeeds                                                  | List of service connections from external organizations to authenticate with `twine`. The credentials stored in the endpoint must have package upload permissions. |
+| [!INCLUDE [temp](../../includes/control-options-arguments.md)] |                                                                                                                                                                    |
 
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
-

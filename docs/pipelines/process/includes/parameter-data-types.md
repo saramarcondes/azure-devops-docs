@@ -7,22 +7,22 @@ author: juliakm
 ms.date: 02/28/2020
 ---
 
-| Data type | Notes |
-|-----------|-------|
-| `string` | string
-| `number` | may be restricted to `values:`, otherwise any number-like string is accepted
-| `boolean` | `true` or `false`
-| `object` | any YAML structure
-| `step` | a single step
-| `stepList` | sequence of [steps](../../yaml-schema.md#steps)
-| `job` | a single job
-| `jobList` | sequence of [jobs](../../yaml-schema.md#job)
-| `deployment` | a single deployment job
-| `deploymentList` | sequence of deployment [jobs](../../yaml-schema.md)
-| `stage` | a single stage
-| `stageList` | sequence of [stages](../../yaml-schema.md)
+| Data type        | Notes                                                                        |
+| ---------------- | ---------------------------------------------------------------------------- |
+| `string`         | string                                                                       |
+| `number`         | may be restricted to `values:`, otherwise any number-like string is accepted |
+| `boolean`        | `true` or `false`                                                            |
+| `object`         | any YAML structure                                                           |
+| `step`           | a single step                                                                |
+| `stepList`       | sequence of [steps](../../yaml-schema.md#steps)                              |
+| `job`            | a single job                                                                 |
+| `jobList`        | sequence of [jobs](../../yaml-schema.md#job)                                 |
+| `deployment`     | a single deployment job                                                      |
+| `deploymentList` | sequence of deployment [jobs](../../yaml-schema.md)                          |
+| `stage`          | a single stage                                                               |
+| `stageList`      | sequence of [stages](../../yaml-schema.md)                                   |
 
-The step, stepList, job, jobList, deployment, deploymentList, stage, and stageList data types all use standard YAML schema format. This example includes string, number, boolean, object, step, and stepList. 
+The step, stepList, job, jobList, deployment, deploymentList, stage, and stageList data types all use standard YAML schema format. This example includes string, number, boolean, object, step, and stepList.
 
 ```yaml
 parameters:
@@ -72,7 +72,7 @@ parameters:
 
 trigger: none
 
-jobs: 
+jobs:
 - job: stepList
   steps: ${{ parameters.mySteplist }}
 - job: myStep

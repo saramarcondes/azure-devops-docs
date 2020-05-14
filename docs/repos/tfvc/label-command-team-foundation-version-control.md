@@ -11,7 +11,6 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Label Command (Team Foundation Version Control)
 
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
@@ -25,13 +24,13 @@ Attaches a label to or removes a label from a version of a file or folder in the
 To use the **label** command, you must have the **Label** permission set to **Allow**. To modify or delete labels created by other users, you must have the **Administer labels** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
 ```
-tf label labelname[@scope] [/owner:ownername] 
-itemspec [/version:versionspec] [/comment:("comment"|@commentfile)] 
-[/child:(replace|merge)] [/recursive] [/login:username,[password]] [/collection:TeamProjectCollectionUrl]	
+tf label labelname[@scope] [/owner:ownername]
+itemspec [/version:versionspec] [/comment:("comment"|@commentfile)]
+[/child:(replace|merge)] [/recursive] [/login:username,[password]] [/collection:TeamProjectCollectionUrl]
 ```
 
 ```
-tf label /delete labelname[@scope] 
+tf label /delete labelname[@scope]
 itemspec [/login:username,[password]] [/collection:TeamProjectCollectionUrl]
 ```
 
@@ -94,34 +93,34 @@ You can specify more than one <i>Itemspec</i> argument.
 </tbody>
 </table>
 
-| **Option** | **Description** |
-|---|---|
-| **/owner** | Specifies the name of the user who owns the label. |
-| **/version** | Optional. Specifies the version of the file or folder to which the label should be attached, modified, or from which the label should be removed. These are changeset values, for example, C93. By default, Team Foundation uses the base workspace version if no *versionspec* is provided. |
-| **/comment** | Adds or modifies a description or comment for the label. |
-| **/child** | Not documented. |
-| **/recursive** | Labels all items in the directory that matches your *itemspec* and *versionspec*. Cannot be used with the **/delete** option. |
-| **/delete** | Removes the label. |
-| **/login** | Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server. |
-| **/collection** | Specifies the project collection. |
-
+| **Option**      | **Description**                                                                                                                                                                                                                                                                              |
+| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **/owner**      | Specifies the name of the user who owns the label.                                                                                                                                                                                                                                           |
+| **/version**    | Optional. Specifies the version of the file or folder to which the label should be attached, modified, or from which the label should be removed. These are changeset values, for example, C93. By default, Team Foundation uses the base workspace version if no _versionspec_ is provided. |
+| **/comment**    | Adds or modifies a description or comment for the label.                                                                                                                                                                                                                                     |
+| **/child**      | Not documented.                                                                                                                                                                                                                                                                              |
+| **/recursive**  | Labels all items in the directory that matches your _itemspec_ and _versionspec_. Cannot be used with the **/delete** option.                                                                                                                                                                |
+| **/delete**     | Removes the label.                                                                                                                                                                                                                                                                           |
+| **/login**      | Specifies the user name and password to authenticate the user with Visual Studio Team Foundation Server.                                                                                                                                                                                     |
+| **/collection** | Specifies the project collection.                                                                                                                                                                                                                                                            |
 
 ## Remarks
+
 A label is a marker that you can attach to a set of unrelated files and folders in the Team Foundation version control server. Use the label to simplify their retrieval to a workspace for either development or build purposes. Therefore, a label is like a changeset or date/time to which and from which you can arbitrarily add and remove files and folders or change the versions of the items therein. A label is a version specification that can be passed to the following Team Foundation commands:
 
--   [Branch Command](branch-command.md)
+* [Branch Command](branch-command.md)
 
--   [Difference Command](difference-command.md)
+* [Difference Command](difference-command.md)
 
--   [Dir Command](dir-command.md)
+* [Dir Command](dir-command.md)
 
--   [Get Command](get-command.md)
+* [Get Command](get-command.md)
 
--   [History Command](history-command.md)
+* [History Command](history-command.md)
 
--   [Merge Command](merge-command.md)
+* [Merge Command](merge-command.md)
 
--   [View Command](view-command.md)
+* [View Command](view-command.md)
 
 Common types of labels are milestone labels such as "M1," "Beta2," or "Release Candidate 0."
 
@@ -146,7 +145,9 @@ If another team or user adds a common label such as "M3" to a set of version-con
 To get, remove a label, or otherwise manage your M3-labeled items, you should specify the @scope parameter to tell Team Foundation which M3 label you want to work with.
 
 You can prevent other users from "overloading" a label such as "M3" in different parts of the Team Foundation version control server by either creating your label at the root ($/) of the Team Foundation version control server or by adjusting Label permissions for certain folders.
+
 ## Examples
+
 The following example attaches the "goodbuild" label to the workspace version of the "docs" folder and the files and folders it contains.
 
 ```
@@ -196,8 +197,9 @@ c:\projects>tf label goodbuild@$/TeamProject1 314.cs
 #### Other Resources
 
 [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
+
 ## Change History
 
-| Date | History | Reason |
-|---|---|---|
+| Date         | History                                        | Reason           |
+| ------------ | ---------------------------------------------- | ---------------- |
 | October 2011 | Removed incorrect guidance on `/child` option. | Content bug fix. |

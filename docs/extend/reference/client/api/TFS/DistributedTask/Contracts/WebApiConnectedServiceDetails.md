@@ -23,4 +23,3 @@ Extends: [WebApiConnectedServiceRef](../../../TFS/DistributedTask/Contracts/WebA
 * `credentialsXml`: string. Credential info
 
 * `endPoint`: string. Optional uri to connect directly to the service such as https:\//windows.azure.com
-

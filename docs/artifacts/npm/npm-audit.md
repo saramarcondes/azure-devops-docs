@@ -15,7 +15,7 @@ Currently, Azure DevOps Services does not support the `npm audit` command, if yo
 
 As a workaround, you can run `npm audit` with the `--registry=https://registry.npmjs.org/` set. This will route the `npm audit` command directly to **npmjs**.
 
->[!WARNING]
+> [!WARNING]
 > Running the `npm audit` command will send the name of any private packages in your **package.json** to npmjs.com. You shouldn't do this if your private package names are confidential or proprietary.
 
 ## Run 'npm audit' in your pipeline
