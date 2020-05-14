@@ -88,8 +88,8 @@ Select the **Revert** button on the revision details page to revert a change on 
 
 If you need to revert to an earlier revision for a page that you have published as code, do one of the following actions:
 
-* If the commit is the most recent revision to a page, you can revert from the web portal
-* If the commit is an earlier revision, with additional commits having occurred in between, create a separate branch and revert the changes in that branch
+- If the commit is the most recent revision to a page, you can revert from the web portal
+- If the commit is an earlier revision, with additional commits having occurred in between, create a separate branch and revert the changes in that branch
 
 ### Revert from a recent revision from the web portal
 
@@ -153,19 +153,19 @@ You can use the following steps to identify the commit that contains the content
 
 For more information, see the following articles:
 
-* [Clone an existing Git repo](../../repos/git/clone.md)
-* [Create work in branches](../../repos/git/branches.md)
-* [Review history](../../repos/git/review-history.md)
-* [Undo (revert) changes](../../repos/git/undo.md)
-* [Resolve merge conflicts](../../repos/git/merging.md)
-* [Copy changes with cherry-pick](../../repos/git/cherry-pick.md)
-* [Commit details](../../repos/git/commit-details.md)
+- [Clone an existing Git repo](../../repos/git/clone.md)
+- [Create work in branches](../../repos/git/branches.md)
+- [Review history](../../repos/git/review-history.md)
+- [Undo (revert) changes](../../repos/git/undo.md)
+- [Resolve merge conflicts](../../repos/git/merging.md)
+- [Copy changes with cherry-pick](../../repos/git/cherry-pick.md)
+- [Commit details](../../repos/git/commit-details.md)
 
 ::: moniker-end
 
 ## Related articles
 
-* [Wiki Git repository files and file structure](wiki-file-structure.md)
-* [Differences between provisioned wiki and publish code as wiki](provisioned-vs-published-wiki.md)
-* [Update wiki pages offline](wiki-update-offline.md)
-* [Manage README and Wiki permissions](manage-readme-wiki-permissions.md)
+- [Wiki Git repository files and file structure](wiki-file-structure.md)
+- [Differences between provisioned wiki and publish code as wiki](provisioned-vs-published-wiki.md)
+- [Update wiki pages offline](wiki-update-offline.md)
+- [Manage README and Wiki permissions](manage-readme-wiki-permissions.md)

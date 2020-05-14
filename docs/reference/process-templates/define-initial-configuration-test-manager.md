@@ -21,7 +21,7 @@ The test management plug-in file is provided with the default process templates.
 > [!NOTE]  
 >  You can customize the initial security configuration for test activities by assigning them in the GroupsandPermissions.xml plug-in file. For more information, see [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md).
 
-The names of the file, the folder, and the plug-in for the default process templates are as follows:  
+The names of the file, the folder, and the plug-in for the default process templates are as follows:
 
 **File name**: testmanagement.xml  
 **Folder name**: Test Management  
@@ -41,32 +41,32 @@ The following syntax represents the default testmanagement.xml file that is defi
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <?xml version="1.0" encoding="utf-8"?>  
-> <tasks>  
->   <task id="TestVariable" name="Default test variables" plugin="Microsoft.ProjectCreationWizard.TestManagement" completionMessage="Default test variables created">  
->     <taskXml>  
->       <TestVariables fileName="Test Management\TestVariable.xml" />  
->     </taskXml>  
->   </task>  
->   <task id="TestConfiguration" name="Default test configurations" plugin="Microsoft.ProjectCreationWizard.TestManagement" completionMessage="Default test configurations created">  
->     <dependencies>  
->       <dependency taskId="TestVariable" />  
->     </dependencies>  
->     <taskXml>  
->       <TestConfigurations fileName="Test Management\TestConfiguration.xml" />  
->     </taskXml>  
->   </task>  
->   <task id="TestSettings" name="Default test settings" plugin="Microsoft.ProjectCreationWizard.TestManagement" completionMessage="Default test settings created">  
->     <taskXml>  
->       <TestSettings fileName="Test Management\TestSettings.xml" />  
->     </taskXml>  
->   </task>  
->   <task id="TestResolutionState" name="Default test resolution states" plugin="Microsoft.ProjectCreationWizard.TestManagement" completionMessage="Default test resolution states created">  
->     <taskXml>  
->       <TestResolutionStates fileName="Test Management\TestResolutionState.xml" />  
->     </taskXml>  
->   </task>  
-> </tasks>  
+> <?xml version="1.0" encoding="utf-8"?>
+> <tasks>
+>   <task id="TestVariable" name="Default test variables" plugin="Microsoft.ProjectCreationWizard.TestManagement" completionMessage="Default test variables created">
+>     <taskXml>
+>       <TestVariables fileName="Test Management\TestVariable.xml" />
+>     </taskXml>
+>   </task>
+>   <task id="TestConfiguration" name="Default test configurations" plugin="Microsoft.ProjectCreationWizard.TestManagement" completionMessage="Default test configurations created">
+>     <dependencies>
+>       <dependency taskId="TestVariable" />
+>     </dependencies>
+>     <taskXml>
+>       <TestConfigurations fileName="Test Management\TestConfiguration.xml" />
+>     </taskXml>
+>   </task>
+>   <task id="TestSettings" name="Default test settings" plugin="Microsoft.ProjectCreationWizard.TestManagement" completionMessage="Default test settings created">
+>     <taskXml>
+>       <TestSettings fileName="Test Management\TestSettings.xml" />
+>     </taskXml>
+>   </task>
+>   <task id="TestResolutionState" name="Default test resolution states" plugin="Microsoft.ProjectCreationWizard.TestManagement" completionMessage="Default test resolution states created">
+>     <taskXml>
+>       <TestResolutionStates fileName="Test Management\TestResolutionState.xml" />
+>     </taskXml>
+>   </task>
+> </tasks>
 > ```
 
 <a name="TestEnvironments"></a>
@@ -75,16 +75,16 @@ The following syntax represents the default testmanagement.xml file that is defi
 
 You use the **TestVariable** and **AllowedValue** elements to define test configuration variables. You can define any number of test configuration variables and their valid values. The following values are defined in the testvariable.xml file in the default process templates:
 
-* Operating systems:
+- Operating systems:
 
-  * Windows Vista
-  * Windows XP
+  - Windows Vista
+  - Windows XP
 
-* Default browsers:
+- Default browsers:
 
-  * Internet Explorer 7.0
-  * Internet Explorer 8.0
-  * Firefox 3.0
+  - Internet Explorer 7.0
+  - Internet Explorer 8.0
+  - Firefox 3.0
 
   After the project is created, you can modify these variables and create other variables. For more information, see [Test configurations: specifying test platforms](../../test/test-different-configurations.md).
 
@@ -93,11 +93,11 @@ You use the **TestVariable** and **AllowedValue** elements to define test config
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <TestVariables>  
->    <TestVariable name="VariableName" name="Operating System" description="Description of VariableName">  
->         <AllowedValue value ="Name of Allowed Value"/>  
->     </TestVariable>  
-> </TestVariables>  
+> <TestVariables>
+>    <TestVariable name="VariableName" name="Operating System" description="Description of VariableName">
+>         <AllowedValue value ="Name of Allowed Value"/>
+>     </TestVariable>
+> </TestVariables>
 > ```
 
 You use the following syntax for the test variables that are defined in the default process templates:
@@ -105,24 +105,24 @@ You use the following syntax for the test variables that are defined in the defa
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <?xml version="1.0" encoding="utf-8" ?>  
-> <TestVariables>  
->   <TestVariable  
->                 name="Operating System" description="Default operating systems">  
->     <AllowedValue value ="Windows 8" />  
->     <AllowedValue value ="Windows 7" />  
->     <AllowedValue value ="Windows Vista" />  
->     <AllowedValue value ="Windows XP" />  
->   </TestVariable>  
->   <TestVariable  
->                 name="Browser" description="Default browsers">  
->     <AllowedValue value ="Internet Explorer 9.0" />  
->     <AllowedValue value ="Internet Explorer 8.0" />  
->     <AllowedValue value ="Internet Explorer 7.0" />  
->     <AllowedValue value ="FireFox 3.0" />  
->     <AllowedValue value ="Internet Explorer 10.0" />  
->   </TestVariable>  
-> </TestVariables>  
+> <?xml version="1.0" encoding="utf-8" ?>
+> <TestVariables>
+>   <TestVariable
+>                 name="Operating System" description="Default operating systems">
+>     <AllowedValue value ="Windows 8" />
+>     <AllowedValue value ="Windows 7" />
+>     <AllowedValue value ="Windows Vista" />
+>     <AllowedValue value ="Windows XP" />
+>   </TestVariable>
+>   <TestVariable
+>                 name="Browser" description="Default browsers">
+>     <AllowedValue value ="Internet Explorer 9.0" />
+>     <AllowedValue value ="Internet Explorer 8.0" />
+>     <AllowedValue value ="Internet Explorer 7.0" />
+>     <AllowedValue value ="FireFox 3.0" />
+>     <AllowedValue value ="Internet Explorer 10.0" />
+>   </TestVariable>
+> </TestVariables>
 > ```
 
 <a name="TestConfigurations"></a>
@@ -136,12 +136,12 @@ You must encapsulate the **TestConfiguration** element within its corresponding 
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <TestConfigurations>  
->     <TestConfiguration name="Test Configuration Name" description=" Test Configuration Description " state="active" isdefault="true | false">  
->         <TestVariable name="VariableName" value="Variable Value" />  
->         <TestVariable name="VariableName" value="Variable Value" />  
->     </TestConfiguration>  
-> </TestConfigurations>  
+> <TestConfigurations>
+>     <TestConfiguration name="Test Configuration Name" description=" Test Configuration Description " state="active" isdefault="true | false">
+>         <TestVariable name="VariableName" value="Variable Value" />
+>         <TestVariable name="VariableName" value="Variable Value" />
+>     </TestConfiguration>
+> </TestConfigurations>
 > ```
 
 The following table describes the attributes for the **TestConfiguration** element.
@@ -156,14 +156,14 @@ You use the following syntax for the test configurations that are defined in the
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <?xml version="1.0" encoding="utf-8" ?>  
-> <TestConfigurations>  
+> <?xml version="1.0" encoding="utf-8" ?>
+> <TestConfigurations>
 >     <TestConfiguration name="Windows 8"
->                         description="Default operating system for testing" state="active" isdefault="true">  
+>                         description="Default operating system for testing" state="active" isdefault="true">
 >         <TestVariable
->                         name="Operating System" value="Windows 8" />  
->     </TestConfiguration>  
-> </TestConfigurations>  
+>                         name="Operating System" value="Windows 8" />
+>     </TestConfiguration>
+> </TestConfigurations>
 > ```
 
 <a name="ResolutionStates"></a>
@@ -182,9 +182,9 @@ You use the following syntax structure for these elements:
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <TestResolutionStates>  
->     <TestResolutionState name="ResolutionName" />  
-> </TestResolutionStates>  
+> <TestResolutionStates>
+>     <TestResolutionState name="ResolutionName" />
+> </TestResolutionStates>
 > ```
 
 You use the following syntax for the resolution states that are defined in the default process templates.
@@ -192,13 +192,13 @@ You use the following syntax for the resolution states that are defined in the d
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <?xml version="1.0" encoding="utf-8" ?>  
-> <TestResolutionStates>  
->     <TestResolutionState name="Needs investigation" />  
->     <TestResolutionState name="Test issue" />  
->     <TestResolutionState name="Product issue" />  
->     <TestResolutionState name="Configuration issue" />  
-> </TestResolutionStates>  
+> <?xml version="1.0" encoding="utf-8" ?>
+> <TestResolutionStates>
+>     <TestResolutionState name="Needs investigation" />
+>     <TestResolutionState name="Test issue" />
+>     <TestResolutionState name="Product issue" />
+>     <TestResolutionState name="Configuration issue" />
+> </TestResolutionStates>
 > ```
 
 <a name="TestSettings"></a>
@@ -212,9 +212,9 @@ You must encapsulate the **TestSetting** element within its corresponding contai
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <TestSettings>  
->     <TestSetting name="Name of Test Setting " filename="FileName" />  
-> </TestSettings>  
+> <TestSettings>
+>     <TestSetting name="Name of Test Setting " filename="FileName" />
+> </TestSettings>
 > ```
 
 You use the following syntax for the testsettings.xml file that is defined in the default process templates.
@@ -222,13 +222,13 @@ You use the following syntax for the testsettings.xml file that is defined in th
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <?xml version="1.0" encoding="utf-8" ?>  
-> <TestSettings>  
->     <TestSetting name="Local Test Run" filename="localrun.testsettings" />  
-> </TestSettings>  
+> <?xml version="1.0" encoding="utf-8" ?>
+> <TestSettings>
+>     <TestSetting name="Local Test Run" filename="localrun.testsettings" />
+> </TestSettings>
 > ```
 
 ## Related articles
 
-* [Testing overview](../../test/index.yml)
-* [Customize and manage the test experience](../witadmin/tcm-customize-manage-test-experience.md)
+- [Testing overview](../../test/index.yml)
+- [Customize and manage the test experience](../witadmin/tcm-customize-manage-test-experience.md)

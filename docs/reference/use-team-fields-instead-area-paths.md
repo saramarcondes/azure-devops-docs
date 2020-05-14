@@ -49,7 +49,6 @@ When you customize your project to support team fields, the Team field tab appea
 
     Add the global list definition for your team. Include a value you'll want to use for items not yet assigned to a team. If your global list is empty, simply copy the following code, paste into the XML file, and modify to support your team labels.
 
-
     ```XML
     <?xml version="1.0" encoding="utf-8"?>
     <gl:GLOBALLISTS xmlns:gl="http://schemas.microsoft.com/VisualStudio/2005/workitemtracking/globallists">
@@ -221,10 +220,10 @@ For backlog items you create from a team's backlog page, TFS assigns the default
 
 ## Related articles
 
-* [Add a team, add team members](../organizations/settings/add-teams.md)
-* [Customize a process template](process-templates/customize-process.md)
-* [**witadmin** command-line tools](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md).
-* [ProcessConfiguration XML element reference](xml/process-configuration-xml-element.md)
+- [Add a team, add team members](../organizations/settings/add-teams.md)
+- [Customize a process template](process-templates/customize-process.md)
+- [**witadmin** command-line tools](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md).
+- [ProcessConfiguration XML element reference](xml/process-configuration-xml-element.md)
 
 ### Q: Why don't teams that I add to a project show up in the Team field?
 

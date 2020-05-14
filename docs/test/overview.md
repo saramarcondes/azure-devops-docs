@@ -27,13 +27,13 @@ test management solution provides all the capabilities required for
 planned manual testing, user acceptance testing, exploratory testing,
 and gathering feedback from stakeholders.
 
-* **[Planned manual testing](#manual-testing)**. Manual testing by organizing tests into test plans and test suites by designated testers and test leads.
+- **[Planned manual testing](#manual-testing)**. Manual testing by organizing tests into test plans and test suites by designated testers and test leads.
 
-* **[User acceptance testing](#user-acceptance)**. Testing carried out by designated user acceptance testers to verify the value delivered meets customer requirements, while reusing the test artifacts created by engineering teams.
+- **[User acceptance testing](#user-acceptance)**. Testing carried out by designated user acceptance testers to verify the value delivered meets customer requirements, while reusing the test artifacts created by engineering teams.
 
-* **[Exploratory testing](#exploratory-testing)**. Testing carried out by development teams, including developers, testers, UX teams, product owners and more, by exploring the software systems without using test plans or test suites.
+- **[Exploratory testing](#exploratory-testing)**. Testing carried out by development teams, including developers, testers, UX teams, product owners and more, by exploring the software systems without using test plans or test suites.
 
-* **[Stakeholder feedback](#stakeholder-feedback)**. Testing carried out by stakeholders outside the development team, such as users from marketing and sales divisions.
+- **[Stakeholder feedback](#stakeholder-feedback)**. Testing carried out by stakeholders outside the development team, such as users from marketing and sales divisions.
 
 ![Holistic approach to manual testing, types of manual testing and personas involved](media/manual-testing/schematic-01.png)  
 &nbsp; &nbsp; **Holistic approach to manual testing, types of manual testing, and personas involved**
@@ -161,7 +161,7 @@ Using the extension is a simple, three step process:
 
 ![Schematic showing process steps Capture, Create, Collaborate](media/perform-exploratory-tests/getstarted-05.png)
 
-* **Capture your findings** quickly and easily using the tools in the extension.
+- **Capture your findings** quickly and easily using the tools in the extension.
   Capture notes, screenshots with annotations, and screen recordings
   to describe your findings and highlight issues. Additionally, in
   the background the extension automatically captures rich data such
@@ -169,13 +169,13 @@ Using the extension is a simple, three step process:
   and system information about the browser, operating system, memory,
   and more that can serve as a starting point for debugging.
 
-* **Create work items** such as bugs, tasks, and test cases directly from
+- **Create work items** such as bugs, tasks, and test cases directly from
   the extension. The captured findings automatically become a part of the work item.
   Users can file a bug to report an issue with the product, or create a task that
   indicates a new work requirement. The extension can also be used to
   create test cases for scenarios discovered during exploration.
 
-* **Collaborate with your team** by sharing your findings.
+- **Collaborate with your team** by sharing your findings.
   Export your session report in Standalone mode, or connect to Azure DevOps or
   Team Foundation Server (2015 or later) for a fully integrated experience
   including exploring user stories and backlog items, simplified tracking and triaging of
@@ -206,21 +206,21 @@ and [Provide stakeholder feedback](provide-stakeholder-feedback.md).
 
 ## Key benefits
 
-* **Test on any platform**. With [!INCLUDE [test-hub-include](includes/test-hub-include.md)], you can use your browser to access all the manual testing capabilities. It enables you to [create](create-test-cases.md) and [run manual tests](run-manual-tests.md) through an easy-to-use, web-based interface that can be accessed from all major browsers on any platform.
+- **Test on any platform**. With [!INCLUDE [test-hub-include](includes/test-hub-include.md)], you can use your browser to access all the manual testing capabilities. It enables you to [create](create-test-cases.md) and [run manual tests](run-manual-tests.md) through an easy-to-use, web-based interface that can be accessed from all major browsers on any platform.
 
-* **Rich Diagnostic data collection**. Using the web-based Test Runner and Test Runner client you can [collect rich diagnostic data](collect-diagnostic-data.md) during your tests. This includes screenshots, an image action log, screen recordings, code coverage, IntelliTrace traces, and test impact data for your apps under test. This data is automatically included in all the bugs you create during test, making it easy for developers to reproduce the issues.
+- **Rich Diagnostic data collection**. Using the web-based Test Runner and Test Runner client you can [collect rich diagnostic data](collect-diagnostic-data.md) during your tests. This includes screenshots, an image action log, screen recordings, code coverage, IntelliTrace traces, and test impact data for your apps under test. This data is automatically included in all the bugs you create during test, making it easy for developers to reproduce the issues.
 
-* **End to End Traceability**. Azure DevOps and TFS provide [end-to-end traceability of your requirements, builds, tests and bugs](../boards/queries/link-work-items-support-traceability.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json). Users can track their requirement quality from cards on the Kanban board. Bugs created while testing are automatically linked to the requirements and builds being tested, which helps you track the quality of the requirements or builds.
+- **End to End Traceability**. Azure DevOps and TFS provide [end-to-end traceability of your requirements, builds, tests and bugs](../boards/queries/link-work-items-support-traceability.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json). Users can track their requirement quality from cards on the Kanban board. Bugs created while testing are automatically linked to the requirements and builds being tested, which helps you track the quality of the requirements or builds.
 
-* **Extensible platform**. You can combine the tools and technologies you already know with the development tools that work best for you to integrate with and [extend Azure DevOps and TFS](../integrate/index.md). Use the REST APIs and contribution model available for the Test platform to create extensions that provide the experience you need for your test management lifecycle.
+- **Extensible platform**. You can combine the tools and technologies you already know with the development tools that work best for you to integrate with and [extend Azure DevOps and TFS](../integrate/index.md). Use the REST APIs and contribution model available for the Test platform to create extensions that provide the experience you need for your test management lifecycle.
 
 ## Additional resources
 
-* [Get started with manual testing](../boards/boards/add-run-update-tests.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json)
-* [Advanced manual testing techniques](user-acceptance-testing.md)
-* [Get started with exploratory testing](perform-exploratory-tests.md)
-* [Advanced exploratory testing techniques](explore-workitems-exploratory-testing.md)
-* [Get stakeholder feedback with exploratory testing](request-stakeholder-feedback.md)
+- [Get started with manual testing](../boards/boards/add-run-update-tests.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json)
+- [Advanced manual testing techniques](user-acceptance-testing.md)
+- [Get started with exploratory testing](perform-exploratory-tests.md)
+- [Advanced exploratory testing techniques](explore-workitems-exploratory-testing.md)
+- [Get stakeholder feedback with exploratory testing](request-stakeholder-feedback.md)
 
 > See also [Continuous testing](../pipelines/index.yml), [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios).
 

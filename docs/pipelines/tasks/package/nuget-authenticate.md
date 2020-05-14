@@ -148,9 +148,9 @@ This task will configure tools that support [NuGet cross platform plugins](https
 
 Specifically, this task will configure:
 
-* nuget.exe, version 4.8.5385 or higher
-* dotnet / .NET Core SDK, version 2.1.400 or higher
-* MSBuild, version 15.8.166.59604 or higher
+- nuget.exe, version 4.8.5385 or higher
+- dotnet / .NET Core SDK, version 2.1.400 or higher
+- MSBuild, version 15.8.166.59604 or higher
 
 However, upgrading to the latest stable version is recommended if you encounter any issues.
 
@@ -193,12 +193,12 @@ No. While this task itself will work behind a web proxy [your agent has been con
 
 To do so, you can either:
 
-* Set the environment variable `http_proxy` and optionally `no_proxy` to your proxy settings. See [NuGet CLI environment variables](https://docs.microsoft.com/nuget/reference/cli-reference/cli-ref-environment-variables) for details. Please understand that these are commonly used variables which other non-NuGet tools (e.g. curl) may also use.
+- Set the environment variable `http_proxy` and optionally `no_proxy` to your proxy settings. See [NuGet CLI environment variables](https://docs.microsoft.com/nuget/reference/cli-reference/cli-ref-environment-variables) for details. Please understand that these are commonly used variables which other non-NuGet tools (e.g. curl) may also use.
 
   > **Caution:**  
   > The `http_proxy` and `no_proxy` variables are case-sensitive on Linux and Mac operating systems and must be lowercase. Attempting to use an Azure Pipelines variable to set the environment variable will not work, as it will be converted to uppercase. Instead, set the environment variables on the self-hosted agent's machine and restart the agent.
 
-* Add the proxy settings to the [user-level nuget.config](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior) file, either manually or using `nuget config -set` as described in the [nuget.config reference](https://docs.microsoft.com/nuget/reference/nuget-config-file#config-section) documentation.
+- Add the proxy settings to the [user-level nuget.config](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior) file, either manually or using `nuget config -set` as described in the [nuget.config reference](https://docs.microsoft.com/nuget/reference/nuget-config-file#config-section) documentation.
   > **Caution:**  
   > The proxy settings (such as `http_proxy`) must be added to the user-level config. They will be ignored if specified in a different nuget.config file.
 

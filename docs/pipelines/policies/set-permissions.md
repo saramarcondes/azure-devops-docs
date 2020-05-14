@@ -229,7 +229,7 @@ You will need to be a member of the Project Collection Administrator group to ma
 
 [Default build and release permissions](../policies/permissions.md)
 
-* [Default permissions and access](../../organizations/security/permissions-access.md)
-* [Permissions and groups reference](../../organizations/security/permissions.md)
+- [Default permissions and access](../../organizations/security/permissions-access.md)
+- [Permissions and groups reference](../../organizations/security/permissions.md)
 
 ::: moniker-end

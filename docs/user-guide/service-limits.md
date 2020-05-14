@@ -16,21 +16,21 @@ Learn which service limits and rate limits that all projects and organizations a
 
 ## Work items
 
-* A long text field can contain 1M characters.
-* You can't assign more than 100 tags to a work item.
-* You can't add more than 1,000 links to a work item.
-* You can't add more than 100 attachments to a work item.
-* You can't add an attachment size larger than 60 MB to a work item.
-* You can have up to 1,000 tasks on a task board
-* You can have up to 10,000 work items on a backlog
-* You are limited to 5,000 teams in a project
-* You can't create more than 150,000 tag definitions per project
+- A long text field can contain 1M characters.
+- You can't assign more than 100 tags to a work item.
+- You can't add more than 1,000 links to a work item.
+- You can't add more than 100 attachments to a work item.
+- You can't add an attachment size larger than 60 MB to a work item.
+- You can have up to 1,000 tasks on a task board
+- You can have up to 10,000 work items on a backlog
+- You are limited to 5,000 teams in a project
+- You can't create more than 150,000 tag definitions per project
 
 ## Queries
 
-* The execution time limit for queries is 30 seconds. See [Optimization best practices](../integrate/concepts/integration-bestpractices.md#optimize-queries) to improve query performance.
-* Query results are limited to 20,000
-* Queries are limited in length to 32,000 characters
+- The execution time limit for queries is 30 seconds. See [Optimization best practices](../integrate/concepts/integration-bestpractices.md#optimize-queries) to improve query performance.
+- Query results are limited to 20,000
+- Queries are limited in length to 32,000 characters
 
 ## Process customization
 
@@ -51,11 +51,11 @@ See [Rate limits documentation](../integrate/concepts/rate-limits.md) for detail
 
 ## Data import
 
-* Limited to to 300 projects per collection
-* See [data import documentation](../migrate/index.md) for details
+- Limited to to 300 projects per collection
+- See [data import documentation](../migrate/index.md) for details
 
 ## Next steps
 
 > [!div class="nextstepaction"]
 >
-> * [Work tracking, process, and project limits](../organizations/settings/work/object-limits.md)
+> - [Work tracking, process, and project limits](../organizations/settings/work/object-limits.md)

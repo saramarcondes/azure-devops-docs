@@ -22,29 +22,29 @@ For example, you can quickly access and navigate to the following artifacts defi
 
 ::: moniker range=">= azure-devops-2019"
 
-* **Projects**: Projects defined for an organization in Azure DevOps
-* **Work items**: Work items assigned to you
-* **Pull requests**: Pull requests you've initiated or that are relevant to you across all team projects you work in
-* **Favorites**: Artifacts&mdash;such as projects, teams, repositories, shared queries, and more &mdash;that you've favorited
+- **Projects**: Projects defined for an organization in Azure DevOps
+- **Work items**: Work items assigned to you
+- **Pull requests**: Pull requests you've initiated or that are relevant to you across all team projects you work in
+- **Favorites**: Artifacts&mdash;such as projects, teams, repositories, shared queries, and more &mdash;that you've favorited
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 
-* **Projects**: Team projects and teams within the projects that you work in
-* **Favorites**: Items&mdash;such as build definitions, repositories, shared queries, and more &mdash;that you've favorited
-* **Work items**: Work items assigned to you, that you're following, or that you've recently viewed or updated
-* **Pull requests**: Pull requests you've initiated or that are relevant to you across all team projects you work in
+- **Projects**: Team projects and teams within the projects that you work in
+- **Favorites**: Items&mdash;such as build definitions, repositories, shared queries, and more &mdash;that you've favorited
+- **Work items**: Work items assigned to you, that you're following, or that you've recently viewed or updated
+- **Pull requests**: Pull requests you've initiated or that are relevant to you across all team projects you work in
 
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
 
-* **Projects**: Team projects and teams within the projects that you work in
-* **Favorites**: Items&mdash;such as build definitions, repositories, shared queries, and more &mdash;that you've favorited
-* **Work items**: Work items assigned to you, that you're following, or that you've recently viewed or updated
-* **Pull requests**: Pull requests you've initiated or that are relevant to you across all team projects you work in
-* **Rooms**: Team rooms you use to collaborate with other team members.
+- **Projects**: Team projects and teams within the projects that you work in
+- **Favorites**: Items&mdash;such as build definitions, repositories, shared queries, and more &mdash;that you've favorited
+- **Work items**: Work items assigned to you, that you're following, or that you've recently viewed or updated
+- **Pull requests**: Pull requests you've initiated or that are relevant to you across all team projects you work in
+- **Rooms**: Team rooms you use to collaborate with other team members.
 
 > [!NOTE]  
 > The features described in this article require TFS 2017.1 and later versions. To upgrade to TFS 2017.1, go to the [Visual Studio downloads page](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs).
@@ -190,5 +190,5 @@ To learn more about team rooms, see [Collaborate in a team room](../../notificat
 
 ## Related articles
 
-* [Enable preview features](preview-features.md)
-* [Connect to team projects](../../organizations/projects/connect-to-projects.md)
+- [Enable preview features](preview-features.md)
+- [Connect to team projects](../../organizations/projects/connect-to-projects.md)

@@ -22,13 +22,13 @@ Custom rules provide support for a number of business use cases, allowing you to
 
 With a custom rule, you can define a number of actions based on specific conditions. For example, you can apply a rule to support these types of scenarios:
 
-* When a value is defined for Priority, then make Risk a required field
-* When a change is made to the value of Release, then clear the value of "Milestone"
-* When a change was made to the value of Remaining Work, then make Completed Work a required field
-* When the value of Approved is True, then make Approved By a required field
-* When a user story is created, make the following fields required: Priority, Risk, and Effort
-* When current user is a member of "Project Administrators", then make Priority required
-* When current user is not a member of "Project Administrators", then hide the Priority field
+- When a value is defined for Priority, then make Risk a required field
+- When a change is made to the value of Release, then clear the value of "Milestone"
+- When a change was made to the value of Remaining Work, then make Completed Work a required field
+- When the value of Approved is True, then make Approved By a required field
+- When a user story is created, make the following fields required: Priority, Risk, and Effort
+- When current user is a member of "Project Administrators", then make Priority required
+- When current user is not a member of "Project Administrators", then hide the Priority field
 
 > [!NOTE]  
 > You make a field required and specify a field default through the [**Options** tab for the field](customize-process-field.md#options).
@@ -123,8 +123,8 @@ You delete or disable the rule from the actions menu of the rule.
 
 You can add rules to work item types to support these restriction requests:
 
-* Restrict who can modify a specific field for a work item type
-* Hide field from the form
+- Restrict who can modify a specific field for a work item type
+- Hide field from the form
 
 <!--
 - Restrict who can create or modify a work item
@@ -132,7 +132,7 @@ You can add rules to work item types to support these restriction requests:
 
 For example, the following condition indicates that the State field, for the Initiative custom work item type, becomes read-only for members of the Fabrikam Fiber\Voice group. When a user of this group opens a new Initiative, they are unable to save it as the State field can't automatically be set to New.
 
-> [!div class="mx-imgBorder"]  
+> [!div class="mx-imgBorder"]
 > ![Custom rule](../../security/media/grant-restrict/restrict-creating-work-items-inheritance.png)
 
 For custom work item types you can specify the System.State. For default work item types, you can specify to make the System.ChangeDate read-only. While entering either of these fields presents a message indicating that the field is not valid, you are still able to **Save** the rule.
@@ -147,5 +147,5 @@ For custom work item types you can specify the System.State. For default work it
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
-* [Customize the web layout](customize-process-form.md)
-* [Customize a project using an inherited process](customize-process.md)
+- [Customize the web layout](customize-process-form.md)
+- [Customize a project using an inherited process](customize-process.md)

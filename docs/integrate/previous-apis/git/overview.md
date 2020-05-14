@@ -19,10 +19,10 @@ ms.date: 06/22/2017
 Use these APIs to work with Git repositories in VSTS/TFS.
 Repositories contain objects representing core Git concepts:
 
-* blobs (files)
-* trees (folders)
-* commits
-* refs (branches, lightweight tags)
+- blobs (files)
+- trees (folders)
+- commits
+- refs (branches, lightweight tags)
 
 and other resources that represent the history of those items or act on their state.
 
@@ -114,23 +114,23 @@ There are [code samples](https://github.com/microsoft/azure-devops-dotnet-sample
 
 In case you're looking for something not found in the **Common tasks** section above, below is a list of all areas of the Git API.
 
-* [Annotated tags](./annotatedTags.md)
-* [Blobs](./blobs.md)
-* [Commits](./commits.md)
-* [Diffs](./diffs.md)
-* [Import Requests](./import-requests.md)
-* [Items](./items.md)
-* [Pull Request Overview](./pull-requests/overview.md)
-* [Pull Request Operations](./pull-requests/pull-requests.md)
-* [Pull Request Comments](./pull-requests/threads.md)
-* [Pull Request Iterations](./pull-requests/iterations.md)
-* [Pull Request Reviewers](./pull-requests/reviewers.md)
-* [Pull Request Work Items](./pull-requests/work-items.md)
-* [Pushes](./pushes.md)
-* [Refs](./refs.md)
-* [Repositories](./repositories.md)
-* [Stats](./stats.md)
-* [Trees](./trees.md)
+- [Annotated tags](./annotatedTags.md)
+- [Blobs](./blobs.md)
+- [Commits](./commits.md)
+- [Diffs](./diffs.md)
+- [Import Requests](./import-requests.md)
+- [Items](./items.md)
+- [Pull Request Overview](./pull-requests/overview.md)
+- [Pull Request Operations](./pull-requests/pull-requests.md)
+- [Pull Request Comments](./pull-requests/threads.md)
+- [Pull Request Iterations](./pull-requests/iterations.md)
+- [Pull Request Reviewers](./pull-requests/reviewers.md)
+- [Pull Request Work Items](./pull-requests/work-items.md)
+- [Pushes](./pushes.md)
+- [Refs](./refs.md)
+- [Repositories](./repositories.md)
+- [Stats](./stats.md)
+- [Trees](./trees.md)
 
 > [!NOTE]
 > For more information on Git, see [Use Git with Visual Studio and Team Foundation Server](../../../repos/git/overview-2013.md).

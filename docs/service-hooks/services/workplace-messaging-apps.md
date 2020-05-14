@@ -22,16 +22,16 @@ workflows on Azure DevOps, such as allowing users to approve release deployments
 
 ## Slack
 
-* [Azure Boards app for Slack](https://aka.ms/AzureBoardsSlackIntegration)
+- [Azure Boards app for Slack](https://aka.ms/AzureBoardsSlackIntegration)
 
-* [Azure Pipelines app for Slack](https://aka.ms/AzurePipelinesSlackIntegration)
+- [Azure Pipelines app for Slack](https://aka.ms/AzurePipelinesSlackIntegration)
 
-* [Azure Repos app for Slack](https://aka.ms/AzureReposSlackIntegration)
+- [Azure Repos app for Slack](https://aka.ms/AzureReposSlackIntegration)
 
 ## Microsoft Teams
 
-* [Azure Boards app for Microsoft Teams](https://aka.ms/AzureBoardsTeamsIntegration)
+- [Azure Boards app for Microsoft Teams](https://aka.ms/AzureBoardsTeamsIntegration)
 
-* [Azure Pipelines app for Microsoft Teams](https://aka.ms/AzurePipelinesTeamsIntegration)
+- [Azure Pipelines app for Microsoft Teams](https://aka.ms/AzurePipelinesTeamsIntegration)
 
-* [Azure Repos app for Microsoft Teams](https://aka.ms/AzureReposTeamsIntegration)
+- [Azure Repos app for Microsoft Teams](https://aka.ms/AzureReposTeamsIntegration)

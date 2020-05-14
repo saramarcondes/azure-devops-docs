@@ -24,8 +24,8 @@ You use the `Control` element ` LinksControl``Type ` attribute to enable users t
 
 For a summary of the link restrictions that are defined within the process templates, see:
 
-* For TFS 2017 and later versions, see [LinksControlOptions XML elements (Web form)](linkscontroloptions-xml-elements.md)
-* For TFS 2015 and earlier versions, see [LinksControlOptions XML elements (Client and web, TFS 2015)](linkscontroloptions-elements.md).
+- For TFS 2017 and later versions, see [LinksControlOptions XML elements (Web form)](linkscontroloptions-xml-elements.md)
+- For TFS 2015 and earlier versions, see [LinksControlOptions XML elements (Client and web, TFS 2015)](linkscontroloptions-elements.md).
 
 <a name="LinksControl"></a>
 
@@ -40,20 +40,20 @@ You can customize a form so that one tab displays only parent and child links an
 ![Example of links control added to a work item form](media/wit_ss_linkscontrol.png "WIT_SS_LinksControl")
 
 ```xml
-<Tab Label="All Links">  
-      <Control Type="LinksControl" Name="All" >  
-      <LinksControlOptions>  
-         <LinkColumns>  
-               <LinkColumn RefName="System.ID" />  
-               <LinkColumn RefName="System.WorkItemType" />  
-               <LinkColumn RefName="System.Title" />  
-               <LinkColumn RefName="System.AssignedTo" />  
-               <LinkColumn RefName="System.State" />  
-               <LinkColumn LinkAttribute="System.Links.Comment" />  
-         </LinkColumns>  
-      </LinksControlOptions>  
-      </Control>  
-</Tab>  
+<Tab Label="All Links">
+      <Control Type="LinksControl" Name="All" >
+      <LinksControlOptions>
+         <LinkColumns>
+               <LinkColumn RefName="System.ID" />
+               <LinkColumn RefName="System.WorkItemType" />
+               <LinkColumn RefName="System.Title" />
+               <LinkColumn RefName="System.AssignedTo" />
+               <LinkColumn RefName="System.State" />
+               <LinkColumn LinkAttribute="System.Links.Comment" />
+         </LinkColumns>
+      </LinksControlOptions>
+      </Control>
+</Tab>
 ```
 
 <a name="ControllingLinks"></a>
@@ -74,9 +74,9 @@ When you add a link control to a work item form, you can specify filters that re
 You use the `WorkItemLinkFilters` and the `Filter` child elements to define which link types the links control should include or exclude. You use this element to restrict the types of links that can be selected by the links control to form relationships to work items that are defined in the same project. The syntax for these elements is as follows.
 
 ```xml
-<WorkItemLinkFilters FilterType="include | exclude | includeAll | excludeAll">  
-      <Filter LinkType="linkTypeRefName" FilterOn="reversename | forwardname" />  
-</WorkItemLinkFilters>  
+<WorkItemLinkFilters FilterType="include | exclude | includeAll | excludeAll">
+      <Filter LinkType="linkTypeRefName" FilterOn="reversename | forwardname" />
+</WorkItemLinkFilters>
 ```
 
 | Attribute    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
@@ -90,16 +90,16 @@ You use the `WorkItemLinkFilters` and the `Filter` child elements to define whic
 You can define a links control that allows link relationships for all link types except a custom requirement link type and the system hierarchy link type by using the following code example.
 
 ```xml
-<Control Type="LinksControl" Name="UniqueName">  
-      <LinksControlOptions>  
-      <WorkItemLinkFilters FilterType="exclude">  
+<Control Type="LinksControl" Name="UniqueName">
+      <LinksControlOptions>
+      <WorkItemLinkFilters FilterType="exclude">
          <Filter LinkType="MyLinks.LinkTypes.Requirement" />
          <Filter LinkType="System.LinkTypes.Hierarchy" />
-      </WorkItemLinkFilters>  
+      </WorkItemLinkFilters>
       <ExternalLinkFilters FilterType="excludeAll" />
-      </LinksControlOptions>  
-. . .  
-</Control>  
+      </LinksControlOptions>
+. . .
+</Control>
 ```
 
 <a name="NonWILinks"></a>
@@ -109,9 +109,9 @@ You can define a links control that allows link relationships for all link types
 You use the `ExternalLinkFilters` and the `Filter` child elements to define which link types to items that are external to the project the links control should include or exclude. These objects correspond to changesets, hyperlinks, commits, and other objects. The syntax for these elements is as follows.
 
 ```xml
-<ExternalLinkFilters FilterType="include | exclude | includeAll | excludeAll">  
-      <Filter LinkType="externalLinkName" />  
-</ExternalLinkFilters>  
+<ExternalLinkFilters FilterType="include | exclude | includeAll | excludeAll">
+      <Filter LinkType="externalLinkName" />
+</ExternalLinkFilters>
 ```
 
 | Attribute    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
@@ -124,26 +124,26 @@ You use the `ExternalLinkFilters` and the `Filter` child elements to define whic
 The following example defines a links control that includes all link types to work items, such as related and parent/child, but excludes link types to non-work items, such as changesets, hyperlinks, and test results.
 
 ```xml
-<Control Type="LinksControl" Name="UniqueName">  
-      <LinksControlOptions>  
+<Control Type="LinksControl" Name="UniqueName">
+      <LinksControlOptions>
       <WorkItemLinkFilters FilterType="includeAll" />
       <ExternalLinkFilters FilterType="excludeAll" />
-      </LinksControlOptions>  
-</Control>  
+      </LinksControlOptions>
+</Control>
 ```
 
 The following example defines a link control that allows users to specify only the changeset link type and link only to changesets.
 
 ```xml
-<Control Type="LinksControl" Name="UniqueName">  
-      <LinksControlOptions>  
-      <WorkItemLinkFilters FilterType="excludeAll"/>  
+<Control Type="LinksControl" Name="UniqueName">
+      <LinksControlOptions>
+      <WorkItemLinkFilters FilterType="excludeAll"/>
       <ExternalLinkFilters FilterType="include" />
-         <Filter LinkType="Fixed in Changeset" />  
+         <Filter LinkType="Fixed in Changeset" />
       </ExternalLinkFilters>
- </LinksControlOptions>  
-. . .  
-</Control>  
+ </LinksControlOptions>
+. . .
+</Control>
 
 ```
 
@@ -152,9 +152,9 @@ The following example defines a link control that allows users to specify only t
 You use the `WorkItemTypeFilters` and `Filter` child elements to restrict the types of work items to which a links control can link. You can restrict link relationships to the project or by work item type. The syntax for these elements is as follows.
 
 ```xml
-<WorkItemTypeFilters Scope=" project | all" FilterType=" include | exclude | includeAll" >  
-      <Filter WorkItemType="workItemTypeReferenceName" />  
-</WorkItemTypeFilters>  
+<WorkItemTypeFilters Scope=" project | all" FilterType=" include | exclude | includeAll" >
+      <Filter WorkItemType="workItemTypeReferenceName" />
+</WorkItemTypeFilters>
 ```
 
 | Attribute      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
@@ -168,18 +168,18 @@ You use the `WorkItemTypeFilters` and `Filter` child elements to restrict the ty
 The following example defines a links control that allows only hierarchical relationships to be formed to tasks that are defined in the project.
 
 ```xml
-<Control Type="LinksControl" Name="UniqueName">  
-      <LinksControlOptions>  
-      <WorkItemLinkFilters FilterType="include">  
-         <Filter LinkType="System.LinkTypes.Hierarchy" />  
-      </WorkItemLinkFilters>  
-      <ExternalLinkFilters FilterType="excludeAll"/>  
-      <WorkItemTypeFilters Scope ="project" FilterType="include" />  
-         <Filter WorkItemType="Task" />  
+<Control Type="LinksControl" Name="UniqueName">
+      <LinksControlOptions>
+      <WorkItemLinkFilters FilterType="include">
+         <Filter LinkType="System.LinkTypes.Hierarchy" />
+      </WorkItemLinkFilters>
+      <ExternalLinkFilters FilterType="excludeAll"/>
+      <WorkItemTypeFilters Scope ="project" FilterType="include" />
+         <Filter WorkItemType="Task" />
       </WorkItemTypeFilters>
-      </LinksControlOptions>  
-. . .  
-</Control>  
+      </LinksControlOptions>
+. . .
+</Control>
 
 ```
 
@@ -188,29 +188,29 @@ The following example defines a links control that allows only hierarchical rela
 You use the `LinkColumns` and `LinkColumn` child elements to specify the default columns to display in the links control. You can specify either the reference name for a work item field or a link attribute. The syntax for these elements is as follows.
 
 ```xml
-<LinkColumns>  
-      <LinkColumn RefName="reference name" | LinkAttribute=" link attribute name" />  
-</LinkColumns>  
+<LinkColumns>
+      <LinkColumn RefName="reference name" | LinkAttribute=" link attribute name" />
+</LinkColumns>
 ```
 
 The order in which the elements are listed defines the order in which the column fields are displayed in the work item form. For a list of reference names and link attributes, see [Work item field index](../../boards/work-items/guidance/work-item-field.md). The following syntax defines the display of four columns: ID, State, Title, and the link attribute Comment.
 
 ```xml
-<Control Type="LinksControl">  
-. . .  
-      <LinksControlOptions>  
-      <LinkColumns>  
-         <LinkColumn RefName="System.ID" />  
-         <LinkColumn RefName="System.State" />  
-         <LinkColumn RefName="System.Title" />  
-         <LinkColumn LinkAttribute="System.Links.Comment" />  
-      </LinkColumns>  
-      </LinksControlOptions>  
-</Control>  
+<Control Type="LinksControl">
+. . .
+      <LinksControlOptions>
+      <LinkColumns>
+         <LinkColumn RefName="System.ID" />
+         <LinkColumn RefName="System.State" />
+         <LinkColumn RefName="System.Title" />
+         <LinkColumn LinkAttribute="System.Links.Comment" />
+      </LinkColumns>
+      </LinksControlOptions>
+</Control>
 
 ```
 
 ## Related articles
 
-* [Link controls, restrictions, and fields](../../boards/queries/linking-attachments.md)
-* [LinksControlOptions XML element reference](linkscontroloptions-xml-elements.md)
+- [Link controls, restrictions, and fields](../../boards/queries/linking-attachments.md)
+- [LinksControlOptions XML element reference](linkscontroloptions-xml-elements.md)

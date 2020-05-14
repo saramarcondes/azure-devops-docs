@@ -223,7 +223,7 @@ During a sprint, your team can use the taskboard and sprint burndown chart to tr
 <img src="media/forecast-tool.png" alt="Forecast tool"/>
 </td>
 </tr>
-</table>  
+</table>
 
 ## Try this next
 
@@ -233,9 +233,9 @@ During a sprint, your team can use the taskboard and sprint burndown chart to tr
 
 If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../../organizations/settings/add-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's default area path and iteration path.
 
-* [Scrum concepts](scrum-key-concepts.md)
-* [Web portal navigation](../../project/navigation/index.md)
-* [Backlogs, portfolios, and Agile project management](../backlogs/backlogs-overview.md)
-* [About work items](../work-items/about-work-items.md)
-* [What is Scrum?](/azure/devops/learn/agile/what-is-scrum)
-* [What is Agile development?](/azure/devops/learn/agile/what-is-agile-development)
+- [Scrum concepts](scrum-key-concepts.md)
+- [Web portal navigation](../../project/navigation/index.md)
+- [Backlogs, portfolios, and Agile project management](../backlogs/backlogs-overview.md)
+- [About work items](../work-items/about-work-items.md)
+- [What is Scrum?](/azure/devops/learn/agile/what-is-scrum)
+- [What is Agile development?](/azure/devops/learn/agile/what-is-agile-development)

@@ -33,11 +33,11 @@ To show the filter toolbar, choose the ![ ](../../media/icons/filter-icon.png) f
 
 Choose one or more values from the multi-select drop-down menu for each field. The values for these fields are populated as follows:
 
-* **Assigned To**: All users who are currently assigned to work items on the board plus Unassigned
-* **Iteration**: All Iteration Paths [selected for the current team](../sprints/define-sprints.md) and for which there are work items assigned to that iteration
-* **Work item type**: Work item types defined for the Requirements Category (product backlog) or Features or Epic categories (feature or epic portfolio backlogs), subject to work items being assigned to the work item types
-* **Tags**: All tags assigned to work items on the board
-* **Parent Work Items**: All features defined for the team, or all epics defined for the team when viewing the Features board (The Parent Work Items field doesn't appear when viewing the Epic or top-level Kanban board)
+- **Assigned To**: All users who are currently assigned to work items on the board plus Unassigned
+- **Iteration**: All Iteration Paths [selected for the current team](../sprints/define-sprints.md) and for which there are work items assigned to that iteration
+- **Work item type**: Work item types defined for the Requirements Category (product backlog) or Features or Epic categories (feature or epic portfolio backlogs), subject to work items being assigned to the work item types
+- **Tags**: All tags assigned to work items on the board
+- **Parent Work Items**: All features defined for the team, or all epics defined for the team when viewing the Features board (The Parent Work Items field doesn't appear when viewing the Epic or top-level Kanban board)
 
 > [!NOTE]  
 > Filter options are dependent on the work items that meet the filter criteria. For example, if you don't have any work items assigned to Sprint 4, then the Sprint 4 option won't appear in the filter options for the Iteration Path.
@@ -73,7 +73,7 @@ You can use keywords to filter your backlogs or queries. The filter function lis
 
 Here, we filter the backlog to only show items that include 'Web' in any one of the displayed column fields.
 
-<img src="media/cyb-filter-backlog.png" alt="Apply text filter" style="border: 1px solid #C3C3C3;" />  
+<img src="media/cyb-filter-backlog.png" alt="Apply text filter" style="border: 1px solid #C3C3C3;" />
 
 The filtered set is always a flat list, even if you've selected to show parents.
 
@@ -97,6 +97,6 @@ The filter criteria ignores the following characters when the field value starts
 
 ## Related articles
 
-* [Tags](../queries/add-tags-to-work-items.md)
-* [Set column options](set-column-options.md)
-* [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
+- [Tags](../queries/add-tags-to-work-items.md)
+- [Set column options](set-column-options.md)
+- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)

@@ -40,11 +40,11 @@ You use the following XML syntax to specify a mapping between a work item type f
 >
 > ```XML
 > <Mapping WorkItemTrackingFieldReferenceName=""
->          ProjectField=""  
->          ProjectName=""  
->          ProjectUnits=""  
->          PublishOnly="">  
->          IfSummaryRefreshOnly=""/>  
+>          ProjectField=""
+>          ProjectName=""
+>          ProjectUnits=""
+>          PublishOnly="">
+>          IfSummaryRefreshOnly=""/>
 > ```
 
 ### Attributes
@@ -66,7 +66,7 @@ The following example shows how to map the work item type field that contains th
 >
 > ```XML
 > <Mapping WorkItemTrackingFieldReferenceName="System.Title"
->          ProjectField="pjTaskName"/>  
+>          ProjectField="pjTaskName"/>
 > ```
 
 The following XML syntax shows a more complex example of how to map the work item type field that has the start date to the start date Project field. Because the field is calculated, it is specified to publish and not refresh in order to prevent errors from being introduced by Team Explorer updates.
@@ -74,7 +74,7 @@ The following XML syntax shows a more complex example of how to map the work ite
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.StartDate" ProjectField="pjTaskStart" PublishOnly="true"/>  
+> <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.StartDate" ProjectField="pjTaskStart" PublishOnly="true"/>
 > ```
 >
 > [!NOTE]
@@ -99,7 +99,7 @@ You must specify a synchronization field in the Microsoft Project field mapping 
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <SyncField ProjectField="" />  
+> <SyncField ProjectField="" />
 > ```
 
 The following example shows how to specify **pjTaskText25** as the synchronization field:
@@ -107,7 +107,7 @@ The following example shows how to specify **pjTaskText25** as the synchronizati
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <SyncField ProjectField="pjTaskText25" />  
+> <SyncField ProjectField="pjTaskText25" />
 > ```
 
 For more information about how to use the synchronization field in Project, see [Create your backlog and tasks using Project](../../boards/backlogs/office/create-your-backlog-tasks-using-project.md).
@@ -129,7 +129,7 @@ If you want to specify a different character than those listed in the above tabl
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <ResourceNameSeparator WorkItemTrackingCharacter="" ProjectCharacter=""/>  
+> <ResourceNameSeparator WorkItemTrackingCharacter="" ProjectCharacter=""/>
 > ```
 
 The following example shows how to specify the character "**\\\***" as the separator to use in Project when the Team Foundation character is "_<em>-</em>_":
@@ -137,7 +137,7 @@ The following example shows how to specify the character "**\\\***" as the separ
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <ResourceNameSeparator WorkItemTrackingCharacter="-" ProjectCharacter="*"/>  
+> <ResourceNameSeparator WorkItemTrackingCharacter="-" ProjectCharacter="*"/>
 > ```
 >
 > <a name="Hierarchy"></a>
@@ -158,10 +158,10 @@ When you create links between tasks in Project, you create a dependent link betw
 
 The following mapping fields and Project field values determine whether a value for a work item is published or refreshed:
 
-* The value of the **Publish and Refresh** value for each work item.
-* The value of the **PublishOnly** attribute for a specific mapping field.
-* The value of the **IfSummaryRefreshOnly** for a specific mapping field.
-* The classification of the task as a summary or parent task.  
+- The value of the **Publish and Refresh** value for each work item.
+- The value of the **PublishOnly** attribute for a specific mapping field.
+- The value of the **IfSummaryRefreshOnly** for a specific mapping field.
+- The classification of the task as a summary or parent task.  
    A parent task is a task that has at least one child task that is published to Team Foundation Server.
 
 **For work items that are not summary tasks**  
@@ -190,7 +190,7 @@ If the summary task criteria are met and **IfSummaryRefreshOnly** is `true`, its
 
 ## Related articles
 
-* [LinkTypes](link-type-element-reference.md)
-* [Address inaccuracies published for summary values](../../report/sql-reports/address-inaccuracies-published-for-summary-values.md)
-* [Work in Excel and Project](../../boards/backlogs/office/track-work.md)
-* [Create your backlog and tasks using Project](../../boards/backlogs/office/create-your-backlog-tasks-using-project.md)
+- [LinkTypes](link-type-element-reference.md)
+- [Address inaccuracies published for summary values](../../report/sql-reports/address-inaccuracies-published-for-summary-values.md)
+- [Work in Excel and Project](../../boards/backlogs/office/track-work.md)
+- [Create your backlog and tasks using Project](../../boards/backlogs/office/create-your-backlog-tasks-using-project.md)

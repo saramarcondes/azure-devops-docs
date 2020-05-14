@@ -16,12 +16,12 @@ Module path: `TFS/DistributedTask/Contracts`
 
 ### Members
 
-* `groupScopeId`: string.
+- `groupScopeId`: string.
 
-* `id`: number.
+- `id`: number.
 
-* `name`: string.
+- `name`: string.
 
-* `pool`: [TaskAgentPoolReference](../../../TFS/DistributedTask/Contracts/TaskAgentPoolReference.md).
+- `pool`: [TaskAgentPoolReference](../../../TFS/DistributedTask/Contracts/TaskAgentPoolReference.md).
 
-* `provisioned`: boolean.
+- `provisioned`: boolean.

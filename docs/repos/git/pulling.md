@@ -17,18 +17,18 @@ monikerRange: '>= tfs-2013'
 
 Update the code in your local repo with the changes from other members of your team using the following commands:
 
-* `fetch` , which downloads the changes from your remote repo but doesn't apply them to your code.
-* `merge` , which applies changes taken from `fetch` to a branch on your local repo.
-* `pull` , which is a combined command that does a `fetch` and then a `merge`.
+- `fetch` , which downloads the changes from your remote repo but doesn't apply them to your code.
+- `merge` , which applies changes taken from `fetch` to a branch on your local repo.
+- `pull` , which is a combined command that does a `fetch` and then a `merge`.
 
 In this tutorial you learn how to:
 
 > [!div class="checklist"]
 >
-> * Download changes with fetch
-> * Update branches with merge
-> * Fetch and merge with pull
-> * Update your local branch with the latest changes from master
+> - Download changes with fetch
+> - Update branches with merge
+> - Fetch and merge with pull
+> - Update your local branch with the latest changes from master
 
 ## Video Overview
 
@@ -179,8 +179,8 @@ A `pull` command is a useful way to directly merge the work from remote branch i
 
 When working in a branch, you may want to incorporate the latest changes from the master branch into your branch. There are two approaches you can use: rebase or merge.
 
-* **Rebase** takes the changes made in the commits in your current branch and replays them on the history of another branch. Rebasing rewrites the commit history of your current branch. The history starts from the most recent commit in the target branch of the rebase.
-* **Merge** merges the changes from the source branch to the target branch using a merge commit, which becomes part of the commit history.
+- **Rebase** takes the changes made in the commits in your current branch and replays them on the history of another branch. Rebasing rewrites the commit history of your current branch. The history starts from the most recent commit in the target branch of the rebase.
+- **Merge** merges the changes from the source branch to the target branch using a merge commit, which becomes part of the commit history.
 
 > [!NOTE]
 > This article demonstrates the `merge` approach. For more information on `rebase` and guidance on which method is right for your scenario, see [Apply changes with Rebase - When to rebase vs. merge](rebase.md#when-to-rebase-vs-merge) and [Rebase vs merge](https://git-scm.com/book/en/v2/Git-Branching-Rebasing#_rebase_vs_merge) from the Pro Git book.

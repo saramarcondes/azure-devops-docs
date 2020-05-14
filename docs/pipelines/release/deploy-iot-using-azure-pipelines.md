@@ -140,7 +140,7 @@ You can use Azure Pipelines to build your projects on Windows, Linux, or macOS w
     <tr><td>Azure Container Registry</td><td>Select an Azure Container Registry from the dropdown which was created in the step 5</td></tr>
     </table>
 
-10. Select **+** and search for **Publish Build Artifacts** task. Select **add**. Set the path to publish to **$(Build.ArtifactStagingDirectory)/deployment.amd64.json**.
+10. Select **+** and search for **Publish Build Artifacts** task. Select **add**. Set the path to publish to **\$(Build.ArtifactStagingDirectory)/deployment.amd64.json**.
 
 11. Save the pipeline and queue the build.
 
@@ -170,9 +170,9 @@ The build pipeline has already built a Docker image and pushed it to an Azure Co
 
 5.  Select **+** and search for **Azure CLI** task. Select **add** and configure the task as shown below.
 
-    * **Azure subscription**: Select the Azure Resource Manager subscription for the deployment
+    - **Azure subscription**: Select the Azure Resource Manager subscription for the deployment
 
-    * **Script Location**: Set the type to **Inline script** and copy paste the below script
+    - **Script Location**: Set the type to **Inline script** and copy paste the below script
 
       ```CLI
       (az extension add --name azure-cli-iot-ext && az iot hub device-identity show --device-id YOUR_DEVICE_ID --hub-name YOUR_HUB_NAME) || (az iot hub device-identity create --hub-name YOUR_HUB_NAME --device-id YOUR_DEVICE_ID --edge-enabled && TMP_OUTPUT="$(az iot hub device-identity show-connection-string --device-id YOUR_DEVICE_ID --hub-name YOUR_HUB_NAME)" && RE="\"cs\":\s?\"(.*)\"" && if [[ $TMP_OUTPUT =~ $RE ]]; then CS_OUTPUT=${BASH_REMATCH[1]}; fi && echo "##vso[task.setvariable variable=CS_OUTPUT]${CS_OUTPUT}")
@@ -180,9 +180,9 @@ The build pipeline has already built a Docker image and pushed it to an Azure Co
 
       In the above script, replace the following with your details -
 
-    * hub name
+    - hub name
 
-    * device id
+    - device id
 
       > [!NOTE]
       > Save the pipeline and queue the release. The above 2 steps will create an IoT Hub.

@@ -25,7 +25,7 @@ In this article, learn how to do the following task:
 
 > [!div class="checklist"]
 >
-> * Add an Azure AD user or group to a built-in security group
+> - Add an Azure AD user or group to a built-in security group
 
 ::: moniker-end
 
@@ -35,7 +35,7 @@ In this article, learn how to do the following task:
 
 > [!div class="checklist"]
 >
-> * Add an Active Directory user or group to a built-in security group
+> - Add an Active Directory user or group to a built-in security group
 
 ::: moniker-end
 
@@ -64,9 +64,9 @@ The method for adding a user or group to a built-in security group is the same, 
 
 3.  Open **Security** and under the **Groups** section, choose one of the following:
 
-    * To add users who require read-only access to the project, choose **Readers**.
-    * To add users who need to contribute fully to the project or who have been granted Stakeholder access, choose **Contributors**.
-    * For users who need to administrate the project, choose **Project Administrators**.
+    - To add users who require read-only access to the project, choose **Readers**.
+    - To add users who need to contribute fully to the project or who have been granted Stakeholder access, choose **Contributors**.
+    - For users who need to administrate the project, choose **Project Administrators**.
 
 4.  Next, choose the **Members** tab.
 
@@ -98,9 +98,9 @@ The method for adding a user or group to a built-in security group is the same, 
 
 3.  Open **Security** and under the **Groups** section, choose one of the following:
 
-    * To add users who require read-only access to the project, choose **Readers**.
-    * To add users who need to contribute fully to the project or who have been granted Stakeholder access, choose **Contributors**.
-    * For users who need to administrate the project, choose **Project Administrators**.
+    - To add users who require read-only access to the project, choose **Readers**.
+    - To add users who need to contribute fully to the project or who have been granted Stakeholder access, choose **Contributors**.
+    - For users who need to administrate the project, choose **Project Administrators**.
 
 4.  Next, choose the **Members** tab.
 
@@ -138,9 +138,9 @@ The method for adding a user or group to a built-in security group is the same, 
 
 3.  Open **Security** and under the **Groups** section, choose one of the following:
 
-    * To add users who require read-only access to the project, choose **Readers**.
-    * To add users who need to contribute fully to the project or who have been granted Stakeholder access, choose **Contributors**.
-    * For users who need to administrate the project, choose **Project Administrators**.
+    - To add users who require read-only access to the project, choose **Readers**.
+    - To add users who need to contribute fully to the project or who have been granted Stakeholder access, choose **Contributors**.
+    - For users who need to administrate the project, choose **Project Administrators**.
 
 4.  Next, choose the **Members** tab.
 
@@ -176,9 +176,9 @@ The method for adding a user or group to a built-in security group is the same, 
 
 3.  Open **Security** and under the **Groups** section, choose one of the following:
 
-    * To add users who require read-only access to the project, choose **Readers**.
-    * To add users who need to contribute fully to the project or who have been granted Stakeholder access, choose **Contributors**.
-    * For users who need to administrate the project, choose **Project Administrators**.
+    - To add users who require read-only access to the project, choose **Readers**.
+    - To add users who need to contribute fully to the project or who have been granted Stakeholder access, choose **Contributors**.
+    - For users who need to administrate the project, choose **Project Administrators**.
 
 4.  Next, choose the **Members** tab.
 
@@ -208,6 +208,6 @@ The method for adding a user or group to a built-in security group is the same, 
 
 ## Related articles
 
-* [About permissions and groups](about-permissions.md)
-* [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
-* [About security and identity](about-security-identity.md)
+- [About permissions and groups](about-permissions.md)
+- [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
+- [About security and identity](about-security-identity.md)

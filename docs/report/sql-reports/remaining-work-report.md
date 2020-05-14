@@ -35,9 +35,9 @@ You can view this report in either the **Hours of Work** view or the **Number of
 
 You can filter the report in the following ways:
 
-* Change the start and end dates for the report.
+- Change the start and end dates for the report.
 
-* Filter the tasks, stories, and bugs that are counted in the report by specifying iteration and area paths, types of work items, and states.
+- Filter the tasks, stories, and bugs that are counted in the report by specifying iteration and area paths, types of work items, and states.
 
   For more information, see [Filtering the Report and Changing the Display](#Changing) later in this article.
 
@@ -63,17 +63,17 @@ The following table summarizes the data that the report shows, subject to which 
 
 For the Remaining Work report to be useful and accurate, the team must perform the following activities to track work items:
 
-* Define tasks, stories, and bugs, and specify the **Iteration** and **Area** paths for each work item.
+- Define tasks, stories, and bugs, and specify the **Iteration** and **Area** paths for each work item.
 
   > [!NOTE]
   > For information about how to define iteration and area paths, see [Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) .
 
-* Specify and update the **HoursCompleted** and **HoursRemaining** fields for each task or subtask as the team makes progress on each work item.
+- Specify and update the **HoursCompleted** and **HoursRemaining** fields for each task or subtask as the team makes progress on each work item.
 
   > [!IMPORTANT]
   > If you subdivide a task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent task and user story. For more information, see [Address inaccuracies published for summary values](address-inaccuracies-published-for-summary-values.md).
 
-* Update the **State** of each task, story, and bug as it progresses from active to closed.
+- Update the **State** of each task, story, and bug as it progresses from active to closed.
 
 ## <a name="Duration"></a> Setting the Duration of the Iteration
 
@@ -93,19 +93,19 @@ The Remaining Work report displays information that you can use to understand ho
 
 You can review the report to determine the progress within an iteration or over time. Specifically, you can find answers to these questions:
 
-* How fast is the team burning down remaining work?
+- How fast is the team burning down remaining work?
 
-* Is work being added during the iteration? Is the team expanding the scope of the work?
+- Is work being added during the iteration? Is the team expanding the scope of the work?
 
-* How much progress can the team make in the available time?
+- How much progress can the team make in the available time?
 
-* Approximately when can the team finish the work?
+- Approximately when can the team finish the work?
 
-* Is too much work in progress?
+- Is too much work in progress?
 
-* Is the flow of work being impeded or blocked?
+- Is the flow of work being impeded or blocked?
 
-* When will the team finish the current iteration?
+- When will the team finish the current iteration?
 
 ### Healthy Version of Report
 
@@ -121,11 +121,11 @@ The following illustration shows an unhealthy version of the Remaining Work repo
 
 An unhealthy Remaining Work report might show one or more of the following indicators:
 
-* **Number of hours completed or number of work items resolved or closed remains flat**.
+- **Number of hours completed or number of work items resolved or closed remains flat**.
 
   This situation indicates that one or more issues might be blocking progress or that the team has not resolved and closed work items that it has completed, fixed, and verified.
 
-* **Number of remaining hours or active work items increases**.
+- **Number of remaining hours or active work items increases**.
 
   This situation indicates that either the team did not accurately estimate the work at the start of the iteration or that the team added features after the iteration started. When required effort is larger than estimated effort, team members might be underestimating the difficulty, time, or other factors. This area is worth inquiring about to determine root causes. For example, you might want to determine how granular the tasks are.
 
@@ -133,11 +133,11 @@ An unhealthy Remaining Work report might show one or more of the following indic
 
 You can filter the Remaining Work report or change its display in the following ways:
 
-* Change the start and end dates for the report.
+- Change the start and end dates for the report.
 
-* Filter the user stories, bugs, and tasks that appear in the report by specifying iteration and area paths, types of work items, and work item states.
+- Filter the user stories, bugs, and tasks that appear in the report by specifying iteration and area paths, types of work items, and work item states.
 
-* Switch the view in which the report appears.
+- Switch the view in which the report appears.
 
   The following illustration shows the available filters and display options:
 
@@ -147,9 +147,9 @@ You can filter the Remaining Work report or change its display in the following 
 
 1.  Perform one or more of the following actions:
 
-    * In the **Iteration** or **Area** list, select the check box of each iteration or product area to include.
+    - In the **Iteration** or **Area** list, select the check box of each iteration or product area to include.
 
-    * In the **Work Item Type** or **State** list, select the check box of each work item type or state to include.
+    - In the **Work Item Type** or **State** list, select the check box of each work item type or state to include.
 
 2.  Click **View Report**.
 
@@ -157,9 +157,9 @@ You can filter the Remaining Work report or change its display in the following 
 
 1.  In the **Measurement** list, click **Hours of Work** or **Number of Work Items**.
 
-    * The **Hours of Work** view displays the cumulative value of work hours for all tasks based on the filters that you applied to the report.
+    - The **Hours of Work** view displays the cumulative value of work hours for all tasks based on the filters that you applied to the report.
 
-    * The **Number of Work Items** view displays the cumulative states of all work items based on the filters that you applied to the report.
+    - The **Number of Work Items** view displays the cumulative states of all work items based on the filters that you applied to the report.
 
 2.  Click **View Report**.
 

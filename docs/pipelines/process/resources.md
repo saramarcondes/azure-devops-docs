@@ -14,10 +14,10 @@ monikerRange: azure-devops
 
 A resource is anything used by a pipeline that lives outside the pipeline. Any of these can be pipeline resources:
 
-* CI/CD pipeline that produces artifacts (Azure Pipelines, Jenkins, etc.)
-* code repositories (GitHub, Azure Repos, Git)
-* container image registries (Azure Container Registry, Docker Hub, etc.)
-* package feeds (Azure Artifact feed, Artifactory package etc.)
+- CI/CD pipeline that produces artifacts (Azure Pipelines, Jenkins, etc.)
+- code repositories (GitHub, Azure Repos, Git)
+- container image registries (Azure Container Registry, Docker Hub, etc.)
+- package feeds (Azure Artifact feed, Artifactory package etc.)
 
 ## Why resources?
 
@@ -29,7 +29,7 @@ Resources in YAML represent sources of types pipelines, builds, repositories, co
 
 ```yaml
 resources:
-  pipelines: [ pipeline ]  
+  pipelines: [ pipeline ]
   builds: [ build ]
   repositories: [ repository ]
   containers: [ container ]
@@ -301,20 +301,20 @@ resources:
 Pipelines support the following values for the repository type: `git`, `github`, `githubenterprise`, and `bitbucket`.
 The `git` type refers to Azure Repos Git repos.
 
-* If you specify `type: git`, the `name` value refers to another repository in the same project.
+- If you specify `type: git`, the `name` value refers to another repository in the same project.
   An example is `name: otherRepo`.
   To refer to a repo in another project within the same organization, prefix the name with that project's name.
   An example is `name: OtherProject/otherRepo`.
 
-* If you specify `type: github`, the `name` value is the full name of the GitHub repo and includes the user or organization.
+- If you specify `type: github`, the `name` value is the full name of the GitHub repo and includes the user or organization.
   An example is `name: Microsoft/vscode`.
   GitHub repos require a [GitHub service connection](../library/service-endpoints.md#sep-github) for authorization.
 
-* If you specify `type: githubenterprise`, the `name` value is the full name of the GitHub Enterprise repo and includes the user or organization.
+- If you specify `type: githubenterprise`, the `name` value is the full name of the GitHub Enterprise repo and includes the user or organization.
   An example is `name: Microsoft/vscode`.
   GitHub Enterprise repos require a [GitHub Enterprise service connection](../library/service-endpoints.md#sep-githubent) for authorization.
 
-* If you specify `type: bitbucket`, the `name` value is the full name of the Bitbucket Cloud repo and includes the user or organization.
+- If you specify `type: bitbucket`, the `name` value is the full name of the Bitbucket Cloud repo and includes the user or organization.
   An example is `name: MyBitBucket/vscode`.
   Bitbucket Cloud repos require a [Bitbucket Cloud service connection](../library/service-endpoints.md#sep-bbucket) for authorization.
 
@@ -398,7 +398,7 @@ resources:          # types: pipelines | repositories | containers | builds | pa
 resources:
   containers:
   - container: petStore
-    type: ACR  
+    type: ACR
     azureSubscription: ContosoARMConnection
     resourceGroup: ContosoGroup
     registry: petStoreRegistry
@@ -463,11 +463,11 @@ steps:
 
 Resources must be authorized before they can be used. A resource owner controls the users and pipelines that can access that resource. The pipeline must directly be authorized to use the resource. There are multiple ways to accomplish this.
 
-* Navigate to the administration experience of the resource. For example, variable groups and secure files are managed in the **Library** page under **Pipelines**. Agent pools and service connections are managed in **Project settings**. Here you can authorize **all pipelines** to be able to access that resource. This is convenient if you do not have a need to restrict access to a resource - for e.g., test resources.
+- Navigate to the administration experience of the resource. For example, variable groups and secure files are managed in the **Library** page under **Pipelines**. Agent pools and service connections are managed in **Project settings**. Here you can authorize **all pipelines** to be able to access that resource. This is convenient if you do not have a need to restrict access to a resource - for e.g., test resources.
 
-* When you create a pipeline for the first time, all the resources that are referenced in the YAML file are automatically authorized for use by the pipeline, provided that you are a member of the **User** role for that resource. So, resources that are referenced in the YAML file at pipeline creation time are automatically authorized.
+- When you create a pipeline for the first time, all the resources that are referenced in the YAML file are automatically authorized for use by the pipeline, provided that you are a member of the **User** role for that resource. So, resources that are referenced in the YAML file at pipeline creation time are automatically authorized.
 
-* When you make changes to the YAML file and add additional resources (assuming that these not authorized for use in all pipelines as explained above), then the build fails with a resource authorization error that is similar to the following: `Could not find a <resource> with name <resource-name>. The <resource> does not exist or has not been authorized for use.`
+- When you make changes to the YAML file and add additional resources (assuming that these not authorized for use in all pipelines as explained above), then the build fails with a resource authorization error that is similar to the following: `Could not find a <resource> with name <resource-name>. The <resource> does not exist or has not been authorized for use.`
 
   > In this case, you will see an option to authorize the resources on the failed build. If you are a member of the **User** role for the resource, you can select this option. Once the resources are authorized, you can start a new build.
 

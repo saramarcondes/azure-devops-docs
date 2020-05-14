@@ -31,15 +31,15 @@ For more information, see [Project inception](guidance-project-inception.md).
 
 Project planning includes the following activities:
 
-* Analyzing the requirements in sufficient detail to enable you to form a plan. This analysis can include the use of requirements models, storyboards, and other tools that help envisage the working system.
+- Analyzing the requirements in sufficient detail to enable you to form a plan. This analysis can include the use of requirements models, storyboards, and other tools that help envisage the working system.
 
-* Devising an overall design or architecture for the system. If this involves working on a platform that is new to team members, some time must be assigned to experimenting with it. Development will be slow in the earlier iterations.
+- Devising an overall design or architecture for the system. If this involves working on a platform that is new to team members, some time must be assigned to experimenting with it. Development will be slow in the earlier iterations.
 
-* Casting the requirements as a set of incremental product requirements whose development can be approximately estimated. The difference between general requirements and product requirements is an important one, and this is a significant activity. For more information, see [Develop requirements](guidance-develop-requirements.md).
+- Casting the requirements as a set of incremental product requirements whose development can be approximately estimated. The difference between general requirements and product requirements is an important one, and this is a significant activity. For more information, see [Develop requirements](guidance-develop-requirements.md).
 
-* Making an initial assignment of product requirements to iterations.
+- Making an initial assignment of product requirements to iterations.
 
-* Setting dates for releases.
+- Setting dates for releases.
 
   The plan and requirements models will be revisited and refined throughout the project. Part of the purpose of iterative development is to allow improvements in the requirements that stem from demonstrating working software at an early stage.
 
@@ -85,9 +85,9 @@ Hold a Product Plan Review before you plan each iteration. The project plan assi
 
 The plan will change for two principal reasons:
 
-* Changes in requirements.
+- Changes in requirements.
 
-* Changes in the estimates that the developers made. As the project progresses, the development team can make more reliable estimates of the work that will be required to implement future features. In some cases, some functionality might have been postponed from a previous iteration, which adds a feature to the plan.
+- Changes in the estimates that the developers made. As the project progresses, the development team can make more reliable estimates of the work that will be required to implement future features. In some cases, some functionality might have been postponed from a previous iteration, which adds a feature to the plan.
 
   Both types of change become less frequent in later iterations.
 
@@ -103,13 +103,13 @@ The activities that are involved in deployment of a product vary according to it
 
 Consider the following points in respect to the later iterations of software development:
 
-* Exclude major changes to the design to avoid the chance of unforeseen problems.
+- Exclude major changes to the design to avoid the chance of unforeseen problems.
 
-* Raise the bar for changes and bugs in triage meetings. Proposed changes and bug fixes should be rejected unless they have significant effects on the usability and fitness for purpose of the product.
+- Raise the bar for changes and bugs in triage meetings. Proposed changes and bug fixes should be rejected unless they have significant effects on the usability and fitness for purpose of the product.
 
-* Devote resources to increasing test coverage and to performing manual tests.
+- Devote resources to increasing test coverage and to performing manual tests.
 
 ## Related articles
 
-* [Background to CMMI](guidance-background-to-cmmi.md)
-* [CMMI process](../cmmi-process.md)
+- [Background to CMMI](guidance-background-to-cmmi.md)
+- [CMMI process](../cmmi-process.md)

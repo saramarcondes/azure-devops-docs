@@ -21,9 +21,9 @@ Beginning from this release Application Insights differentiates telemetry collec
 
 You’ll now see these labels:
 
-* In Overview: ‘Usage analytics (excluding synthetic traffic)’
-* In Usage analytics: ‘(Excluding synthetic traffic)’
-* In drill-in experiences, the filter is turned on by default:
+- In Overview: ‘Usage analytics (excluding synthetic traffic)’
+- In Usage analytics: ‘(Excluding synthetic traffic)’
+- In drill-in experiences, the filter is turned on by default:
 
 ![Filtering for real traffic turned on by default in drill-in experiences](media/4_22_02.png)
 

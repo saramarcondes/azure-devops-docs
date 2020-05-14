@@ -145,12 +145,12 @@ After you enter your feedback for each item, you can review, make corrections or
 
 ## Related notes
 
-* You [Initiate a feedback request](get-feedback.md) from the home page of your web portal or using the Other links widget from a team dashboard.
-* You can [change the audio device or annotation tool](change-audio-device-annotation-tool.md) using the Settings icon change settings icon on the Microsoft Feedback Client.
-* If you access the Microsoft Feedback Client from a remote machine, you can [enable remote audio](enable-remote-audio-capture.md).
-* To record audio, you must have an audio recording device configured on your computer. If you access the feedback tool from a remote device, you might have to [enable remote audio capture](enable-remote-audio-capture.md).
+- You [Initiate a feedback request](get-feedback.md) from the home page of your web portal or using the Other links widget from a team dashboard.
+- You can [change the audio device or annotation tool](change-audio-device-annotation-tool.md) using the Settings icon change settings icon on the Microsoft Feedback Client.
+- If you access the Microsoft Feedback Client from a remote machine, you can [enable remote audio](enable-remote-audio-capture.md).
+- To record audio, you must have an audio recording device configured on your computer. If you access the feedback tool from a remote device, you might have to [enable remote audio capture](enable-remote-audio-capture.md).
 
 ### Requirements to provide feedback
 
-* To provide feedback using the Microsoft Feedback Client you must have security credentials that will allow you to connect to Azure DevOps Services or an on-premises TFS and have the permissions described in [Give reviewers permissions to provide feedback](give-permissions-feedback.md).
-* Your computer must meet the system requirements for installing Microsoft Feedback Client. For more information, see the following page on the Microsoft website: [Microsoft Feedback Client Download](https://www.microsoft.com/download/details.aspx?id=48142).
+- To provide feedback using the Microsoft Feedback Client you must have security credentials that will allow you to connect to Azure DevOps Services or an on-premises TFS and have the permissions described in [Give reviewers permissions to provide feedback](give-permissions-feedback.md).
+- Your computer must meet the system requirements for installing Microsoft Feedback Client. For more information, see the following page on the Microsoft website: [Microsoft Feedback Client Download](https://www.microsoft.com/download/details.aspx?id=48142).

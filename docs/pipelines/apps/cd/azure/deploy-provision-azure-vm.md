@@ -28,7 +28,7 @@ a good DevOps practice.
 
 Before you begin, you need a CI build that creates your Azure RM template. To set up CI, see:
 
-* [Build an Azure virtual machine using an Azure RM template](build-azure-vm-template.md)
+- [Build an Azure virtual machine using an Azure RM template](build-azure-vm-template.md)
 
 ## Define and test your CD release pipeline
 
@@ -50,22 +50,22 @@ Carry out the following steps to deploy the Azure Resource Group.
 
     ![Azure Resource Group Deployment](../../../tasks/deploy/media/azure-resource-group-deployment-icon.png) [Deploy: Azure Resource Group Deployment](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2) - Deploy files to an Azure Resource Group.
 
-    * **Azure Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
+    - **Azure Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
       connection to your Azure subscription. For more details, see [Azure Resource Manager service connection](../../../library/connect-to-azure.md).
 
-    * **Action**: `Create or Update Resource Group`
+    - **Action**: `Create or Update Resource Group`
 
-    * **Resource Group**: The name for a new resource group, or an existing resource group name.
+    - **Resource Group**: The name for a new resource group, or an existing resource group name.
 
-    * **Template location**: The path of the Resource Manager template; for example:<br />`$(System.DefaultWorkingDirectory)\ASPNet4.CI\drop\HelloWorldARM\Templates\WindowsVirtualMachine.json`
+    - **Template location**: The path of the Resource Manager template; for example:<br />`$(System.DefaultWorkingDirectory)\ASPNet4.CI\drop\HelloWorldARM\Templates\WindowsVirtualMachine.json`
 
-    * **Template Parameters**: The path of the Resource Manager template parameters file; for example:<br />`$(System.DefaultWorkingDirectory)\ASPNet4.CI\drop\HelloWorldARM\Templates\WindowsVirtualMachine.parameters.json`
+    - **Template Parameters**: The path of the Resource Manager template parameters file; for example:<br />`$(System.DefaultWorkingDirectory)\ASPNet4.CI\drop\HelloWorldARM\Templates\WindowsVirtualMachine.parameters.json`
 
-    * **Override Template Parameters**: A list of values for the parameters in the template; for example:<br />`-adminUsername $(vmuser) -adminPassword (ConvertTo-SecureString -String $(vmpassword) -AsPlainText -Force) -dnsNameForPublicIP $(dns)'`<br />Use the **...** button to open the parameters editor dialog.
+    - **Override Template Parameters**: A list of values for the parameters in the template; for example:<br />`-adminUsername $(vmuser) -adminPassword (ConvertTo-SecureString -String $(vmpassword) -AsPlainText -Force) -dnsNameForPublicIP $(dns)'`<br />Use the **...** button to open the parameters editor dialog.
 
-    * **Enable Deployment Prerequisites**: Checked.
+    - **Enable Deployment Prerequisites**: Checked.
 
-    * **Output - Resource Group**: The name of the Resource Group output from the task as a value that can be used as an input to further deployment tasks.<p />
+    - **Output - Resource Group**: The name of the Resource Group output from the task as a value that can be used as an input to further deployment tasks.<p />
 
     > Checking the **Enable Deployment Prerequisites** checkbox
     > configures WinRM on the virtual machine and enables

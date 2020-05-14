@@ -30,21 +30,21 @@ Module path: `TFS/Core/RestClient`
 
 ### Methods
 
-* [createTeam()](#method_createTeam)
-* [deleteTeam()](#method_deleteTeam)
-* [getProcessById()](#method_getProcessById)
-* [getProcesses()](#method_getProcesses)
-* [getProject()](#method_getProject)
-* [getProjectCollection()](#method_getProjectCollection)
-* [getProjectCollections()](#method_getProjectCollections)
-* [getProjects()](#method_getProjects)
-* [getTeam()](#method_getTeam)
-* [getTeamMembersWithExtendedProperties()](#method_getTeamMembersWithExtendedProperties)
-* [getTeams()](#method_getTeams)
-* [queueCreateProject()](#method_queueCreateProject)
-* [queueDeleteProject()](#method_queueDeleteProject)
-* [updateProject()](#method_updateProject)
-* [updateTeam()](#method_updateTeam)
+- [createTeam()](#method_createTeam)
+- [deleteTeam()](#method_deleteTeam)
+- [getProcessById()](#method_getProcessById)
+- [getProcesses()](#method_getProcesses)
+- [getProject()](#method_getProject)
+- [getProjectCollection()](#method_getProjectCollection)
+- [getProjectCollections()](#method_getProjectCollections)
+- [getProjects()](#method_getProjects)
+- [getTeam()](#method_getTeam)
+- [getTeamMembersWithExtendedProperties()](#method_getTeamMembersWithExtendedProperties)
+- [getTeams()](#method_getTeams)
+- [queueCreateProject()](#method_queueCreateProject)
+- [queueDeleteProject()](#method_queueDeleteProject)
+- [updateProject()](#method_updateProject)
+- [updateTeam()](#method_updateTeam)
 
 <a name="method_createTeam"></a>
 
@@ -60,12 +60,12 @@ Creates a team
 
 ### Parameters
 
-* `team`: [Contracts.WebApiTeam](../../../TFS/Core/Contracts/WebApiTeam.md). The team data used to create the team.
-* `projectId`: string. The name or ID (GUID) of the project in which to create the team.
+- `team`: [Contracts.WebApiTeam](../../../TFS/Core/Contracts/WebApiTeam.md). The team data used to create the team.
+- `projectId`: string. The name or ID (GUID) of the project in which to create the team.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WebApiTeam](../../../TFS/Core/Contracts/WebApiTeam.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WebApiTeam](../../../TFS/Core/Contracts/WebApiTeam.md)&gt;
 
 <a name="method_deleteTeam"></a>
 
@@ -81,12 +81,12 @@ Deletes a team
 
 ### Parameters
 
-* `projectId`: string. The name or ID (GUID) of the project containing the team to delete.
-* `teamId`: string. The name of ID of the team to delete.
+- `projectId`: string. The name or ID (GUID) of the project containing the team to delete.
+- `teamId`: string. The name of ID of the team to delete.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
 
 <a name="method_getProcessById"></a>
 
@@ -102,11 +102,11 @@ Retrieve process by id
 
 ### Parameters
 
-* `processId`: string.
+- `processId`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Process](../../../TFS/Core/Contracts/Process.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Process](../../../TFS/Core/Contracts/Process.md)&gt;
 
 <a name="method_getProcesses"></a>
 
@@ -122,7 +122,7 @@ Retrieve process by id
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Process](../../../TFS/Core/Contracts/Process.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Process](../../../TFS/Core/Contracts/Process.md)[]&gt;
 
 <a name="method_getProject"></a>
 
@@ -138,13 +138,13 @@ Get project with the specified ID or name, optionally including capabilities.
 
 ### Parameters
 
-* `projectId`: string.
-* `includeCapabilities`: boolean. Optional.
-* `includeHistory`: boolean. Optional.
+- `projectId`: string.
+- `includeCapabilities`: boolean. Optional.
+- `includeHistory`: boolean. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamProject](../../../TFS/Core/Contracts/TeamProject.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamProject](../../../TFS/Core/Contracts/TeamProject.md)&gt;
 
 <a name="method_getProjectCollection"></a>
 
@@ -160,11 +160,11 @@ Get project collection with the specified ID or name.
 
 ### Parameters
 
-* `collectionId`: string.
+- `collectionId`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamProjectCollection](../../../TFS/Core/Contracts/TeamProjectCollection.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamProjectCollection](../../../TFS/Core/Contracts/TeamProjectCollection.md)&gt;
 
 <a name="method_getProjectCollections"></a>
 
@@ -180,12 +180,12 @@ Get project collection references for this application.
 
 ### Parameters
 
-* `top`: number. Optional.
-* `skip`: number. Optional.
+- `top`: number. Optional.
+- `skip`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamProjectCollectionReference](../../../TFS/Core/Contracts/TeamProjectCollectionReference.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamProjectCollectionReference](../../../TFS/Core/Contracts/TeamProjectCollectionReference.md)[]&gt;
 
 <a name="method_getProjects"></a>
 
@@ -201,13 +201,13 @@ Get project references with the specified state
 
 ### Parameters
 
-* `stateFilter`: any. Optional. Filter on projects in a specific project state (default: WellFormed).
-* `top`: number. Optional. Default is 100.
-* `skip`: number. Optional.
+- `stateFilter`: any. Optional. Filter on projects in a specific project state (default: WellFormed).
+- `top`: number. Optional. Default is 100.
+- `skip`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamProjectReference](CoreHttpClient2_2.md)
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamProjectReference](CoreHttpClient2_2.md)
 
 <a name="method_getTeam"></a>
 
@@ -223,12 +223,12 @@ Gets a team
 
 ### Parameters
 
-* `projectId`: string.
-* `teamId`: string.
+- `projectId`: string.
+- `teamId`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WebApiTeam](../../../TFS/Core/Contracts/WebApiTeam.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WebApiTeam](../../../TFS/Core/Contracts/WebApiTeam.md)&gt;
 
 <a name="method_getTeamMembersWithExtendedProperties"></a>
 
@@ -242,14 +242,14 @@ Gets a team
 
 ### Parameters
 
-* `projectId`: string.
-* `teamId`: string.
-* `top`: number. Optional.
-* `skip`: number. Optional.
+- `projectId`: string.
+- `teamId`: string.
+- `top`: number. Optional.
+- `skip`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[VSS_Common_Contracts.IdentityRef](../../../VSS/WebApi/Contracts/IdentityRef.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[VSS_Common_Contracts.IdentityRef](../../../VSS/WebApi/Contracts/IdentityRef.md)[]&gt;
 
 <a name="method_getTeams"></a>
 
@@ -263,13 +263,13 @@ Gets a team
 
 ### Parameters
 
-* `projectId`: string.
-* `top`: number. Optional.
-* `skip`: number. Optional.
+- `projectId`: string.
+- `top`: number. Optional.
+- `skip`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WebApiTeam](../../../TFS/Core/Contracts/WebApiTeam.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WebApiTeam](../../../TFS/Core/Contracts/WebApiTeam.md)[]&gt;
 
 <a name="method_queueCreateProject"></a>
 
@@ -285,11 +285,11 @@ Queue a project creation.
 
 ### Parameters
 
-* `projectToCreate`: [Contracts.TeamProject](../../../TFS/Core/Contracts/TeamProject.md). The project to create.
+- `projectToCreate`: [Contracts.TeamProject](../../../TFS/Core/Contracts/TeamProject.md). The project to create.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[VSS_Operations_Contracts.OperationReference](../../../VSS/Operations/Contracts/OperationReference.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[VSS_Operations_Contracts.OperationReference](../../../VSS/Operations/Contracts/OperationReference.md)&gt;
 
 <a name="method_queueDeleteProject"></a>
 
@@ -305,11 +305,11 @@ Queue a project deletion.
 
 ### Parameters
 
-* `projectId`: string. The project ID of the project to delete.
+- `projectId`: string. The project ID of the project to delete.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[VSS_Operations_Contracts.OperationReference](../../../VSS/Operations/Contracts/OperationReference.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[VSS_Operations_Contracts.OperationReference](../../../VSS/Operations/Contracts/OperationReference.md)&gt;
 
 <a name="method_updateProject"></a>
 
@@ -325,12 +325,12 @@ Update an existing project&#x27;s name, abbreviation, or description.
 
 ### Parameters
 
-* `projectUpdate`: [Contracts.TeamProject](../../../TFS/Core/Contracts/TeamProject.md). The updates for the project.
-* `projectId`: string. The project ID of the project to update.
+- `projectUpdate`: [Contracts.TeamProject](../../../TFS/Core/Contracts/TeamProject.md). The updates for the project.
+- `projectId`: string. The project ID of the project to update.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[VSS_Operations_Contracts.OperationReference](../../../VSS/Operations/Contracts/OperationReference.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[VSS_Operations_Contracts.OperationReference](../../../VSS/Operations/Contracts/OperationReference.md)&gt;
 
 <a name="method_updateTeam"></a>
 
@@ -346,10 +346,10 @@ Updates a team&#x27;s name and/or description
 
 ### Parameters
 
-* `teamData`: [Contracts.WebApiTeam](../../../TFS/Core/Contracts/WebApiTeam.md).
-* `projectId`: string.
-* `teamId`: string.
+- `teamData`: [Contracts.WebApiTeam](../../../TFS/Core/Contracts/WebApiTeam.md).
+- `projectId`: string.
+- `teamId`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WebApiTeam](../../../TFS/Core/Contracts/WebApiTeam.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.WebApiTeam](../../../TFS/Core/Contracts/WebApiTeam.md)&gt;

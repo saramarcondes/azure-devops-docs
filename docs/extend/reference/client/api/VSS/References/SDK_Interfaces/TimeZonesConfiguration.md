@@ -17,4 +17,4 @@ Defined in vss.d.ts
 
 ### Members
 
-* `daylightSavingsAdjustments`: [DaylightSavingsAdjustmentEntry](../../../VSS/References/SDK_Interfaces/DaylightSavingsAdjustmentEntry.md)[].
+- `daylightSavingsAdjustments`: [DaylightSavingsAdjustmentEntry](../../../VSS/References/SDK_Interfaces/DaylightSavingsAdjustmentEntry.md)[].

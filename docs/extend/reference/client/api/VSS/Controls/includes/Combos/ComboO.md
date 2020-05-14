@@ -1,17 +1,17 @@
 [!INCLUDE [styleoverrides](../../../../_data/style-overrides.md)]
 
-* [getText()](#method_getText)
-* [setText()](#method_setText)
-* [getValue&lt;TValue&gt;()](#method_getValue)
-* [toggleDropDown()](#method_toggleDropDown)
-* [setSource()](#method_setSource)
-* [getEnabled()](#method_getEnabled)
-* [setEnabled()](#method_setEnabled)
-* [getMode()](#method_getMode)
-* [setMode()](#method_setMode)
-* [setType()](#method_setType)
-* [getComboType()](#method_getComboType)
-* [setInvalid()](#method_setInvalid)
+- [getText()](#method_getText)
+- [setText()](#method_setText)
+- [getValue&lt;TValue&gt;()](#method_getValue)
+- [toggleDropDown()](#method_toggleDropDown)
+- [setSource()](#method_setSource)
+- [getEnabled()](#method_getEnabled)
+- [setEnabled()](#method_setEnabled)
+- [getMode()](#method_getMode)
+- [setMode()](#method_setMode)
+- [setType()](#method_setType)
+- [getComboType()](#method_getComboType)
+- [setInvalid()](#method_setInvalid)
 
 <a name="method_getText"></a>
 
@@ -35,8 +35,8 @@ void
 
 #### Parameters
 
-* `text`: string. New value to set.
-* `fireEvent`: boolean. Optional. Determines whether to fire change event or not (default false).
+- `text`: string. New value to set.
+- `fireEvent`: boolean. Optional. Determines whether to fire change event or not (default false).
 
 <a name="method_getValue"></a>
 
@@ -70,7 +70,7 @@ void
 
 #### Parameters
 
-* `source`: any[] or Function. New source for the combo.
+- `source`: any[] or Function. New source for the combo.
 
 <a name="method_getEnabled"></a>
 
@@ -94,7 +94,7 @@ void
 
 #### Parameters
 
-* `value`: boolean. True for enabled, false for disabled.
+- `value`: boolean. True for enabled, false for disabled.
 
 <a name="method_getMode"></a>
 
@@ -118,7 +118,7 @@ void
 
 #### Parameters
 
-* `value`: string. &#x27;drop&#x27; or &#x27;text&#x27;.
+- `value`: string. &#x27;drop&#x27; or &#x27;text&#x27;.
 
 <a name="method_setType"></a>
 
@@ -132,7 +132,7 @@ void
 
 #### Parameters
 
-* `type`: string.
+- `type`: string.
 
 <a name="method_getComboType"></a>
 
@@ -156,4 +156,4 @@ void
 
 #### Parameters
 
-* `value`: boolean. True for invalid, false for valid.
+- `value`: boolean. True for invalid, false for valid.

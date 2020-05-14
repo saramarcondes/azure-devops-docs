@@ -101,6 +101,6 @@ Measure fields are written to the data warehouse and contain pre-calculated sum 
 
 ## Related articles
 
-* [About work item fields and attributes](../../boards/work-items/work-item-fields.md)
-* [Index of work item fields](../../boards/work-items/guidance/work-item-field.md)
-* [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md)
+- [About work item fields and attributes](../../boards/work-items/work-item-fields.md)
+- [Index of work item fields](../../boards/work-items/guidance/work-item-field.md)
+- [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md)

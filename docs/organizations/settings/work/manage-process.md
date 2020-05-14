@@ -28,14 +28,14 @@ In this article, learn how to perform these tasks:
 
 > [!div class="checklist"]
 >
-> * Open **Settings>Process**
-> * Create an inherited process
-> * Customize an inherited process
-> * Copy an inherited process
-> * Change projects to use an inherited process or a system process
-> * Add a project based on a process
-> * Enable or disable a process
-> * Set a process as the default to use when adding projects
+> - Open **Settings>Process**
+> - Create an inherited process
+> - Customize an inherited process
+> - Copy an inherited process
+> - Change projects to use an inherited process or a system process
+> - Add a project based on a process
+> - Enable or disable a process
+> - Set a process as the default to use when adding projects
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
@@ -60,13 +60,13 @@ You can create an inherited process from any one of the four system processes:[B
 
 1.  Enter a name for your process and optionally a description. (For naming restrictions, see [About process customization and inherited processes, Process name restrictions](inheritance-process-model.md#process-naming).
 
-    <img src="media/process/mprocess-create-inherited-process-dialog.png" alt="Create inherited process dialog" style="border: 1px solid #C3C3C3;" />  
+    <img src="media/process/mprocess-create-inherited-process-dialog.png" alt="Create inherited process dialog" style="border: 1px solid #C3C3C3;" />
 
 Once you've defined the inherited process, you can perform these actions:
 
-* [Customize a project using an inherited process](customize-process.md)
-* [Create a project](#create-team-project) that uses the inherited process
-* [Change project(s) to use the inherited process](#migrate)
+- [Customize a project using an inherited process](customize-process.md)
+- [Create a project](#create-team-project) that uses the inherited process
+- [Change project(s) to use the inherited process](#migrate)
 
 <a id="migrate"></a>
 
@@ -78,9 +78,9 @@ The second method is to migrate your project between two completely different pr
 
 For the second method, we have provided detailed steps for three common scenarios of changing the process used by a project.
 
-* [Scrum to Agile](./change-process-scrum-to-agile.md)
-* [Agile to Scrum](./change-process-agile-to-scrum.md)
-* [Basic to Agile](./change-process-basic-to-agile.md)
+- [Scrum to Agile](./change-process-scrum-to-agile.md)
+- [Agile to Scrum](./change-process-agile-to-scrum.md)
+- [Basic to Agile](./change-process-basic-to-agile.md)
 
 > [!NOTE]  
 > You can change the process of a project as long as you don't have any undeleted work items of a custom work item type that isn't also defined in the target process.
@@ -102,8 +102,8 @@ Follow the steps in the wizard
 > [!IMPORTANT]  
 > When you change a project to use an inherited process, you may find one or more Agile tools or work items appear in an invalid state. For example:
 >
-> * If you make a field required, work items with that field undefined show an error message. You'll need to resolve the errors to make additional changes and save the work item.
-> * If you add or remove/hide workflow states of a WIT that appears on the Kanban board, you'll need to update the Kanban board column configurations for all teams defined in the project.
+> - If you make a field required, work items with that field undefined show an error message. You'll need to resolve the errors to make additional changes and save the work item.
+> - If you add or remove/hide workflow states of a WIT that appears on the Kanban board, you'll need to update the Kanban board column configurations for all teams defined in the project.
 
 <a id="create-team-project"> </a>
 
@@ -168,7 +168,7 @@ To prevent projects being created from a process, you disable it. You might choo
 
 All system processes and newly created inherited processes are enabled by default.
 
-* To disable or enable a process, open the &hellip; context menu for the process and choose **Disable process** or **Enable process**.
+- To disable or enable a process, open the &hellip; context menu for the process and choose **Disable process** or **Enable process**.
 
 <a id="default-process"> </a>
 
@@ -188,8 +188,8 @@ Project Collection Administrators can [add projects](../../projects/create-proje
 
 ## Related articles
 
-* [About process customization and inherited processes](inheritance-process-model.md)
-* [Customize a project using an inherited process](customize-process.md).
+- [About process customization and inherited processes](inheritance-process-model.md)
+- [Customize a project using an inherited process](customize-process.md).
 
 <a id="process-rest-api"> </a>
 

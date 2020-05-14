@@ -31,7 +31,7 @@ performance by generating load on it.
 
 The agent must have the following capability:
 
-* Azure PowerShell
+- Azure PowerShell
 
 ::: moniker range="> tfs-2018"
 
@@ -54,14 +54,14 @@ The agent must have the following capability:
 
 ## Examples
 
-* [Scheduling Load Test Execution](https://devblogs.microsoft.com/devops/scheduling-load-test-execution/)
+- [Scheduling Load Test Execution](https://devblogs.microsoft.com/devops/scheduling-load-test-execution/)
 
 ## More Information
 
-* [Cloud-based Load Testing](https://visualstudio.microsoft.com/features/vso-cloud-load-testing-vs)
-* [Source code for this task](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/RunLoadTestV1)
-* [Build your Visual Studio solution](../../apps/windows/dot-net.md)
-* [Cloud-based Load Testing Knowledge Base](https://blogs.msdn.microsoft.com/devops/?s=clt)
+- [Cloud-based Load Testing](https://visualstudio.microsoft.com/features/vso-cloud-load-testing-vs)
+- [Source code for this task](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/RunLoadTestV1)
+- [Build your Visual Studio solution](../../apps/windows/dot-net.md)
+- [Cloud-based Load Testing Knowledge Base](https://blogs.msdn.microsoft.com/devops/?s=clt)
 
 ## Open source
 

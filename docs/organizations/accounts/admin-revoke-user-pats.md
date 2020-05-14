@@ -58,5 +58,5 @@ A: Revoke JWTs, issued as part of the OAuth flow, via the [PowerShell script](ht
 
 ## Related articles
 
-* [How Microsoft protects your projects and data in Azure DevOps](../../organizations/security/data-protection.md)
-* [Create or revoke your personal access tokens](use-personal-access-tokens-to-authenticate.md)
+- [How Microsoft protects your projects and data in Azure DevOps](../../organizations/security/data-protection.md)
+- [Create or revoke your personal access tokens](use-personal-access-tokens-to-authenticate.md)

@@ -73,19 +73,19 @@ For more information on how to find the **tf** command-line utility, see [Tf Com
 
 You can lock an item using the lock command or by specifying a lock option during the commission of several other commands of the **tf** command-line utility that includes:
 
-* [Rename Command (Team Foundation Version Control)](rename-command-team-foundation-version-control.md)
+- [Rename Command (Team Foundation Version Control)](rename-command-team-foundation-version-control.md)
 
-* [Checkout and Edit Commands](checkout-or-edit-command.md)
+- [Checkout and Edit Commands](checkout-or-edit-command.md)
 
-* [Delete Command (Team Foundation Version Control)](delete-command-team-foundation-version-control.md)
+- [Delete Command (Team Foundation Version Control)](delete-command-team-foundation-version-control.md)
 
-* [Undelete Command](undelete-command.md)
+- [Undelete Command](undelete-command.md)
 
-* [Merge Command](merge-command.md)
+- [Merge Command](merge-command.md)
 
-* [Branch Command](branch-command.md)
+- [Branch Command](branch-command.md)
 
-* [Add Command](add-command.md)
+- [Add Command](add-command.md)
 
 For add and branch, the lock is placed on the namespace where the new item will be created. Locks placed with rename apply both to the old and new namespaces. For more information, see [Lock and Unlock Folders or Files](lock-unlock-folders-files.md).
 

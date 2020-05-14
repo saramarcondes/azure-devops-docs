@@ -27,11 +27,11 @@ Use this article to learn how to:
 
 > [!div class="checklist"]
 >
-> * Meet prerequisites to access Analytics views
-> * Open **Analytics views**
-> * Browse your Analytics views
-> * Create a custom Analytics view
-> * Review filter criteria for a view
+> - Meet prerequisites to access Analytics views
+> - Open **Analytics views**
+> - Browse your Analytics views
+> - Create a custom Analytics view
+> - Review filter criteria for a view
 
 [!INCLUDE [temp](../includes/analytics-prerequisites.md)]
 
@@ -76,7 +76,7 @@ Specify filters to reduce the number of results returned by your view. In the wo
 > [!TIP]
 > Scope your data to generate reports that quickly refresh. For large datasets, refreshing non-filtered views can fail. To narrow your results, add the right set of filters. The more filters you add, the faster the view loads and refreshes in Power BI.
 
-* **Add Teams or Area Path filters**
+- **Add Teams or Area Path filters**
 
   By default, a view includes all the teams defined in the current project. You can specifically select teams in the current project or add additional projects defined in the organization to the filter.
 
@@ -84,18 +84,17 @@ Specify filters to reduce the number of results returned by your view. In the wo
 
   > [!div class="mx-imgBorder"] > ![Area Path picker example](media/editable-views/area-path.png)
 
-* **Add filters for backlogs and work items types**
+- **Add filters for backlogs and work items types**
 
   Scope the data to specific Work item types in your project. You can specify a backlog to filter by work item types associated with a specific backlog level or add individual specific work item types. Work items of the selected types are included in the view.
 
   > [!div class="mx-imgBorder"] > ![Work item type picker](media/editable-views/wi-type-picker.png)
 
-* **Add filters by field criteria**
+- **Add filters by field criteria**
 
   In addition to all previous filter criteria, you can add filters based on different work item fields. You specify these fields in the same way you do for fields you add to a work item query. As shown in the following example, you can filter to show only high Priority bugs with the specific "Hotfix" tag.
 
-  > [!div class="mx-imgBorder"]
-  > ![Filter by Bugs, Priority, and Tags example](media/editable-views/field-criteria.png)
+  > [!div class="mx-imgBorder"] > ![Filter by Bugs, Priority, and Tags example](media/editable-views/field-criteria.png)
 
       	For details about working with tags, see [Add work item tags to categorize and filter lists and boards](../../boards/queries/add-tags-to-work-items.md).
 
@@ -189,7 +188,7 @@ Choose the **Edit** link to edit a view.
 
 ## Related articles
 
-* [Manage Analytics views](analytics-views-manage.md)
-* [Data available from Analytics](data-available-in-analytics.md)
-* [Grant permissions to access Analytics](./analytics-security.md)
-* [Power BI integration overview](overview.md)
+- [Manage Analytics views](analytics-views-manage.md)
+- [Data available from Analytics](data-available-in-analytics.md)
+- [Grant permissions to access Analytics](./analytics-security.md)
+- [Power BI integration overview](overview.md)

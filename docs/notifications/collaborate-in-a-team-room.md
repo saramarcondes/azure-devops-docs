@@ -48,15 +48,15 @@ Members of the Project Administrators group can create and administer team rooms
 
 ## Ways to interact within the room
 
-* Target a message to a team member: type `@`_UserName_.
+- Target a message to a team member: type `@`_UserName_.
 
-* Include a hyperlink to a work item: type `#`_Id_. For example: `@Jamal, can you take a look at bugs #564, #588, and #592?`
+- Include a hyperlink to a work item: type `#`_Id_. For example: `@Jamal, can you take a look at bugs #564, #588, and #592?`
 
-* Open a linked object, such as a work item, changeset, build definition, and more.
+- Open a linked object, such as a work item, changeset, build definition, and more.
 
-* Add an emoticon: choose: ![Emoticon image selection](media/ALM_CT_SmileIcon.png).
+- Add an emoticon: choose: ![Emoticon image selection](media/ALM_CT_SmileIcon.png).
 
-* Review a previous day's message: select the day from the calendar.
+- Review a previous day's message: select the day from the calendar.
 
       	![Date link to review team room archives](media/ALM_CT_SelectDate.png)
 
@@ -120,10 +120,10 @@ Adding other rooms provides areas for improvised discussions, cross-team interac
 
 A team room is automatically created when you [add a team](../organizations/settings/add-teams.md) and is populated with your team members. To learn more about other Agile tools available to teams, see [Manage teams and configure team tools](../organizations/settings/manage-teams.md).
 
-* To completely exit a team room, close all browser instances where you've logged into the team room
-* To mute the sound, select the ![Audio icon on the Rooms page](media/ALM_CT_AudioIcon.png) audio icon to turn the sound off or on
-* For other uses of the `@mention`, see [Use @mentions to further discussion](../notifications/at-mentions.md)
-* To change your profile image, see [Set your preferences](../organizations/settings/set-your-preferences.md).
+- To completely exit a team room, close all browser instances where you've logged into the team room
+- To mute the sound, select the ![Audio icon on the Rooms page](media/ALM_CT_AudioIcon.png) audio icon to turn the sound off or on
+- For other uses of the `@mention`, see [Use @mentions to further discussion](../notifications/at-mentions.md)
+- To change your profile image, see [Set your preferences](../organizations/settings/set-your-preferences.md).
 
 <a id="team-room-permissions"> </a>
 
@@ -149,11 +149,11 @@ Permissions for team room events get managed by their associated operational are
 
 Many teams use team rooms to support the following scenarios:
 
-* _Daily standup_: Capture the review of what happened the previous day and discuss any issues or blocking items based on real history.
+- _Daily standup_: Capture the review of what happened the previous day and discuss any issues or blocking items based on real history.
 
-* _Remote team members_: Geographically dispersed team members can keep up with members in different time zones. It's especially useful when there are different levels of language capability among team members.
+- _Remote team members_: Geographically dispersed team members can keep up with members in different time zones. It's especially useful when there are different levels of language capability among team members.
 
-* _Memory stream_: Configuring all events gives you an archive where you can review changesets, work item updates, and build progress all in one place.
+- _Memory stream_: Configuring all events gives you an archive where you can review changesets, work item updates, and build progress all in one place.
 
 ### Additional collaboration tools
 

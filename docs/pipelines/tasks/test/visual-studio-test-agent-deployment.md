@@ -37,9 +37,9 @@ The test agent deployed by this task can collect data or run distributed tests u
 
 This task requires the target computer to have:
 
-* Windows 7 Service Pack 1 or Windows 2008 R2 Service Pack 2 or higher
-* .NET 4.5 or higher
-* PSRemoting enabled by running the [Enable-PSRemoting](https://technet.microsoft.com/library/hh849694.aspx) PowerShell script
+- Windows 7 Service Pack 1 or Windows 2008 R2 Service Pack 2 or higher
+- .NET 4.5 or higher
+- PSRemoting enabled by running the [Enable-PSRemoting](https://technet.microsoft.com/library/hh849694.aspx) PowerShell script
 
 #### Windows Remote Management (WinRM)
 
@@ -76,76 +76,76 @@ This task requires the target computer to have:
 
 Use this task for:
 
-* Running automated tests against on-premises standard environments
-* Running automated tests against existing Azure environments
-* Running automated tests against newly provisioned Azure environments
+- Running automated tests against on-premises standard environments
+- Running automated tests against existing Azure environments
+- Running automated tests against newly provisioned Azure environments
 
 The supported options for these scenarios are:
 
-* **TFS**
-  * On-premises and Azure Pipelines<p />
-* **Build and release agents**
-  * Hosted and on-premises agents are supported.
-  * The agent must be able to communicate with all test machines.
+- **TFS**
+  - On-premises and Azure Pipelines<p />
+- **Build and release agents**
+  - Hosted and on-premises agents are supported.
+  - The agent must be able to communicate with all test machines.
     If the test machines are on-premises behind a firewall, an Azure Pipelines Microsoft-hosted agent
     cannot be used because it will not be able to communicate with the test machines.
-  * The agent must have Internet access to download test agents.
+  - The agent must have Internet access to download test agents.
     If this is not the case, the test agent must be manually
     downloaded, uploaded to a network location accessible to
     the agent, and the **Test Agent Location** parameter used
     to specify the location. The user must manually check for
     new versions of the agent and update the test machines.<p />
-* **Continuous integration/continuous deployment workflows**
-  * Build/deploy/test tasks are supported in both build and
+- **Continuous integration/continuous deployment workflows**
+  - Build/deploy/test tasks are supported in both build and
     release workflows.<p />
-* **Machine group configuration**
-  * Only Windows-based machines are supported inside a
+- **Machine group configuration**
+  - Only Windows-based machines are supported inside a
     machine group for build/deploy/test tasks. Linux, macOS, or
     other platforms are not supported inside a machine group.
-  * Installing any version of Visual Studio on any of the
+  - Installing any version of Visual Studio on any of the
     test machines is not supported.
-  * Installing any older version of the test agent on any of the
+  - Installing any older version of the test agent on any of the
     test machines is not supported.<p />
-* **Test machine topologies**
-  * Azure-based test machines are fully supported, both
+- **Test machine topologies**
+  - Azure-based test machines are fully supported, both
     existing test machines and newly provisioned test machines.
-  * Machines with the test agent installed must have network access
+  - Machines with the test agent installed must have network access
     to the TFS instance in use. Network-isolated test machines
     are not supported.
-  * Domain-joined test machines are supported.
-  * Workgroup-joined test machines must use HTTPS authentication
+  - Domain-joined test machines are supported.
+  - Workgroup-joined test machines must use HTTPS authentication
     configured during machine group creation.<p />
-* **Usage Error Conditions**
-  * Using the same test machines across different machine groups,
+- **Usage Error Conditions**
+  - Using the same test machines across different machine groups,
     and running builds (with any build/deploy/test tasks) in
     parallel against those machine groups is not supported.
-  * Cancelling an in-progress build or release that contains
+  - Cancelling an in-progress build or release that contains
     any build/deploy/test tasks is not supported. If you do
     cancel, behavior of subsequent builds may be unpredictable.
-  * Cancelling an ongoing test run queued through build/deploy/test
+  - Cancelling an ongoing test run queued through build/deploy/test
     tasks is not supported.
-  * Configuring the test agent and running tests as a
+  - Configuring the test agent and running tests as a
     non-administrator, or by using a service account, is not supported.
-  * Running tests for Universal Windows Platform apps is not
+  - Running tests for Universal Windows Platform apps is not
     supported. Use the [Visual Studio Test task](vstest.md)
     to run these tests.
 
 ### Example
 
-* [Testing in Continuous Integration and Continuous Deployment Workflows](https://devblogs.microsoft.com/devops/testing-in-continuous-integration-and-continuous-deployment-workflows/)
+- [Testing in Continuous Integration and Continuous Deployment Workflows](https://devblogs.microsoft.com/devops/testing-in-continuous-integration-and-continuous-deployment-workflows/)
 
 ### More information
 
-* [Using the Visual Studio Agent Deployment task on machines not connected to the internet](https://devblogs.microsoft.com/devops/using-visual-studio-agent-deployment-task-on-machines-not-connected-to-the-internet/)
-* [Set up automated testing for your builds](https://msdn.microsoft.com/Library/vs/alm/Test/automated-tests/set-up-automated-testing-builds)
-* [Source code for this task](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/DeployVisualStudioTestAgentV2/README.md)
+- [Using the Visual Studio Agent Deployment task on machines not connected to the internet](https://devblogs.microsoft.com/devops/using-visual-studio-agent-deployment-task-on-machines-not-connected-to-the-internet/)
+- [Set up automated testing for your builds](https://msdn.microsoft.com/Library/vs/alm/Test/automated-tests/set-up-automated-testing-builds)
+- [Source code for this task](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/DeployVisualStudioTestAgentV2/README.md)
 
 ### Related tasks
 
-* [Visual Studio Test](vstest.md)
-* [Azure File Copy](../deploy/azure-file-copy.md)
-* [Windows Machine File Copy](../deploy/windows-machine-file-copy.md)
-* [PowerShell on Target Machines](../deploy/powershell-on-target-machines.md)
+- [Visual Studio Test](vstest.md)
+- [Azure File Copy](../deploy/azure-file-copy.md)
+- [Windows Machine File Copy](../deploy/windows-machine-file-copy.md)
+- [PowerShell on Target Machines](../deploy/powershell-on-target-machines.md)
 
 ### Open source
 

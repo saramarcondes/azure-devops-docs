@@ -32,9 +32,9 @@ Azure Pipelines provides a Microsoft-hosted agent pool named **Azure Pipelines**
 > [!IMPORTANT]
 > On March 23, 2020, we'll be removing the following Azure Pipelines hosted images:
 >
-> * [Windows Server 2012R2 with Visual Studio 2015](https://github.com/microsoft/azure-pipelines-image-generation/blob/d80f81d6c98f8ce2c74b034309bb774ea8d31cfb/images/win/Vs2015-Server2012R2-Readme.md) (`vs2015-win2012r2`)
-> * [macOS X High Sierra 10.13](https://github.com/microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.13-Readme.md) (`macOS-10.13`)
-> * [Windows Server Core 1803](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/WindowsContainer1803-Readme.md) - (`win1803`)
+> - [Windows Server 2012R2 with Visual Studio 2015](https://github.com/microsoft/azure-pipelines-image-generation/blob/d80f81d6c98f8ce2c74b034309bb774ea8d31cfb/images/win/Vs2015-Server2012R2-Readme.md) (`vs2015-win2012r2`)
+> - [macOS X High Sierra 10.13](https://github.com/microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.13-Readme.md) (`macOS-10.13`)
+> - [Windows Server Core 1803](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/WindowsContainer1803-Readme.md) - (`win1803`)
 >
 > Customers are encouraged to migrate to `vs2017-win2016`, `macOS-10.14`, or a [self-hosted agent](v2-windows.md) respectively.
 >
@@ -76,21 +76,21 @@ You can manually select from tool versions on macOS images. [See below](#mac-pic
 
 Microsoft-hosted agents:
 
-* Have [the above software](#software). You can also add software during your build or release using [tool installer tasks](../process/tasks.md#tool-installers).
-* Provide at least 10 GB of storage for your source and build outputs.
-* Provide a free tier:
-  * Public project: 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time, with no overall time limit per month. [Contact us](https://azure.microsoft.com/support/devops/) to get your free tier limits increased.
-  * Private project: One free parallel job that can run for up to 60 minutes each time, until you've used 1,800 minutes (30 hours) per month. You can pay for additional capacity per parallel job. Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 360 minutes (6 hours). [Buy Microsoft-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines).
-* Run on Microsoft Azure general purpose virtual machines [Standard_DS2_v2](/azure/virtual-machines/dv2-dsv2-series#dsv2-series)
-* Run as an administrator on Windows and a passwordless sudo user on Linux
-* (Linux only) Run steps in a `cgroup` that offers 6 GB of physical memory and 13 GB of total memory
+- Have [the above software](#software). You can also add software during your build or release using [tool installer tasks](../process/tasks.md#tool-installers).
+- Provide at least 10 GB of storage for your source and build outputs.
+- Provide a free tier:
+  - Public project: 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time, with no overall time limit per month. [Contact us](https://azure.microsoft.com/support/devops/) to get your free tier limits increased.
+  - Private project: One free parallel job that can run for up to 60 minutes each time, until you've used 1,800 minutes (30 hours) per month. You can pay for additional capacity per parallel job. Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 360 minutes (6 hours). [Buy Microsoft-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines).
+- Run on Microsoft Azure general purpose virtual machines [Standard_DS2_v2](/azure/virtual-machines/dv2-dsv2-series#dsv2-series)
+- Run as an administrator on Windows and a passwordless sudo user on Linux
+- (Linux only) Run steps in a `cgroup` that offers 6 GB of physical memory and 13 GB of total memory
 
 Microsoft-hosted agents do not offer:
 
-* The ability to sign in.
-* The ability to [drop artifacts to a UNC file share](../artifacts/build-artifacts.md#unc-file-share).
-* The ability to run [XAML builds](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx).
-* Potential performance advantages that you might get by using self-hosted agents which might start and run builds faster. [Learn more](agents.md#private-agent-performance-advantages)
+- The ability to sign in.
+- The ability to [drop artifacts to a UNC file share](../artifacts/build-artifacts.md#unc-file-share).
+- The ability to run [XAML builds](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx).
+- Potential performance advantages that you might get by using self-hosted agents which might start and run builds faster. [Learn more](agents.md#private-agent-performance-advantages)
 
 If Microsoft-hosted agents don't meet your needs, then you can [deploy your own self-hosted agents](agents.md#install).
 

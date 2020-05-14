@@ -41,8 +41,8 @@ Fixes #123 and fixes #124
 
 Use the keywords to mention a work item in the commit message then follow one of two workflows:
 
-* **Push event** - If a commit contains a resolution mention when it is pushed to the default branch of the repository, it will attempt to resolve the work item.
-* **Pull request post-completion event** - When a user completes a pull request (excluding squash merge) to the default branch and selects the option to **Complete associated work items after merging**, all commits tied to the pull request will be processed for resolution mentions and will attempt to resolve the associated work items. This is done by selecting the post-completion option for completing associated work items within the completion dialog of a pull request.
+- **Push event** - If a commit contains a resolution mention when it is pushed to the default branch of the repository, it will attempt to resolve the work item.
+- **Pull request post-completion event** - When a user completes a pull request (excluding squash merge) to the default branch and selects the option to **Complete associated work items after merging**, all commits tied to the pull request will be processed for resolution mentions and will attempt to resolve the associated work items. This is done by selecting the post-completion option for completing associated work items within the completion dialog of a pull request.
 
   > [!div class="mx-imgBorder"] > ![Post-completion dialog option](media/resolution-mentions/completion-dialog.png)
 

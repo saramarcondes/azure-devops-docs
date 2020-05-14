@@ -4,7 +4,7 @@ ms.topic: include
 
 ### Choose the directory of checked out code in YAML pipelines
 
-Previously, we checked out repos to the `s` directory under $(Agent.BuildDirectory). Now you can choose the directory where your Git repo will be checked out for use with YAML pipelines.
+Previously, we checked out repos to the `s` directory under \$(Agent.BuildDirectory). Now you can choose the directory where your Git repo will be checked out for use with YAML pipelines.
 
 Use the `path` keyword on `checkout` and you will be in control of the folder structure. Below is an example of the YAML code that you can use to specify a directory.
 

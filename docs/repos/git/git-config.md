@@ -19,8 +19,8 @@ Visual Studio allows you to configure and view common Git settings and preferenc
 
 Visual Studio allows you to configure two types of settings:
 
-* [Git settings](#git-settings) - The settings in this section correspond to Git settings that are saved in Git configuration files. These settings can be viewed and modified in Visual Studio, but are managed by Git configuration files.
-* [Visual Studio settings](#visual-studio-settings) - The settings in this section configure Git-related settings and preferences that are managed by Visual Studio.
+- [Git settings](#git-settings) - The settings in this section correspond to Git settings that are saved in Git configuration files. These settings can be viewed and modified in Visual Studio, but are managed by Git configuration files.
+- [Visual Studio settings](#visual-studio-settings) - The settings in this section configure Git-related settings and preferences that are managed by Visual Studio.
 
 This article shows you how to configure and view Git settings and preferences in Visual Studio, and where applicable shows you the Git command line equivalents.
 
@@ -42,14 +42,14 @@ This article shows you how to configure and view Git settings and preferences in
 
 Visual Studio allows you to configure and check some of the most common Git configuration settings. The settings in this section can be viewed and modified in Visual Studio, but are managed by Git configuration files.
 
-* [Name and email](#name-and-email)
-* [Prune remote branches during fetch](#prune-remote-branches-during-fetch)
-* [Rebase local branch when pulling](#rebase-local-branch-when-pulling)
-* [Cryptographic network provider](#cryptographic-network-provider)
-* [Ignore & attributes files](#ignore--attributes-files)
-* [Diff & merge Tools](#diff--merge-tools)
-* [Remotes](#remotes)
-* [Other](#other)
+- [Name and email](#name-and-email)
+- [Prune remote branches during fetch](#prune-remote-branches-during-fetch)
+- [Rebase local branch when pulling](#rebase-local-branch-when-pulling)
+- [Cryptographic network provider](#cryptographic-network-provider)
+- [Ignore & attributes files](#ignore--attributes-files)
+- [Diff & merge Tools](#diff--merge-tools)
+- [Remotes](#remotes)
+- [Other](#other)
 
 > [!NOTE]
 > Git settings configured in Visual Studio's **Global Settings** correspond to settings in Git's user-specific configuration file, and the settings in **Repository Settings** correspond to settings in the repository-specific configuration file. For more information about Git configuration, see the [Pro Git chapter on customizing Git](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration), the [git-config documentation](https://git-scm.com/docs/git-config), and the [Pro Git reference on configuration files](https://git-scm.com/docs/git-config#FILES). To configure Git settings not exposed in Visual Studio, use the `git config` command to write a value to your configuration files: `git config [--local|--global|--system] section.key value`.
@@ -96,9 +96,9 @@ Pruning removes remote-tracking branches that no longer exist on the remote and 
 
 We recommend setting this option to **True** at the global level. Valid settings are:
 
-* True (recommended)
-* False
-* Unset (default)
+- True (recommended)
+- False
+- Unset (default)
 
 #### [Visual Studio](#tab/visual-studio/)
 
@@ -125,11 +125,11 @@ This command will set fetch.prune to true in your global configuration file (rec
 Rebasing sets aside the changes made by commits in the current branch that are not in the upstream branch, resets the current branch to the upstream branch,
 then applies the changes that were set aside. This setting is available at both global and repository scopes, and corresponds to the `git config` [pull.rebase](https://git-scm.com/docs/git-config#git-config-pullrebase) setting. Valid settings are:
 
-* True: Rebase current branch on top of upstream branch after fetch.
-* False: Merge the current branch into the upstream branch.
-* Unset (default): Unless specified in other configuration files, merge the current branch into the upstream branch.
-* Interactive: Rebase in interactive mode.
-* Preserve: Rebase without flattening locally created merge commits.
+- True: Rebase current branch on top of upstream branch after fetch.
+- False: Merge the current branch into the upstream branch.
+- Unset (default): Unless specified in other configuration files, merge the current branch into the upstream branch.
+- Interactive: Rebase in interactive mode.
+- Preserve: Rebase without flattening locally created merge commits.
 
 #### [Visual Studio](#tab/visual-studio/)
 
@@ -158,11 +158,11 @@ git config [--local|--global|--system] pull.rebase [true|false|interactive|prese
 
 Cryptographic network provider is a Git configuration setting at global scope that configures which SSL backend to use at runtime, and corresponds to the `git config` http.sslBackend setting. The values are:
 
-* OpenSSL: Use [OpenSSL](https://www.openssl.org/) for TLS and SSL protocols.
-* Secure Channel: Use [Secure Channel (schannel)](https://msdn.microsoft.com/library/windows/desktop/aa380123) for TLS and SSL protocols. Schannel is the native
+- OpenSSL: Use [OpenSSL](https://www.openssl.org/) for TLS and SSL protocols.
+- Secure Channel: Use [Secure Channel (schannel)](https://msdn.microsoft.com/library/windows/desktop/aa380123) for TLS and SSL protocols. Schannel is the native
   Windows solution, accessing the Windows Credential Store, thereby
   allowing for enterprise-wide management of certificates.
-* Unset (default): If this setting is unset, OpenSSL is the default.
+- Unset (default): If this setting is unset, OpenSSL is the default.
 
 #### [Visual Studio](#tab/visual-studio/)
 
@@ -214,10 +214,10 @@ To view all of your Git configuration settings, you can open and view the config
 
 The following settings manage Git-related preferences in Visual Studio, and are managed by Visual Studio instead of Git configuration files. All of the settings in this section are configured on the **Global Settings** page.
 
-* [Default repository location](#default-repository-location)
-* [Enable download of author images from 3rd party source](#enable-download-of-author-images-from-3rd-party-source)
-* [Commit changes after merge by default](#commit-changes-after-merge-by-default)
-* [Enable push --force](#enable-push---force)
+- [Default repository location](#default-repository-location)
+- [Enable download of author images from 3rd party source](#enable-download-of-author-images-from-3rd-party-source)
+- [Commit changes after merge by default](#commit-changes-after-merge-by-default)
+- [Enable push --force](#enable-push---force)
 
 ### Default repository location
 
@@ -240,8 +240,8 @@ When **Commit changes after merge by default** is enabled, Git automatically cre
 
 ![Commit changes after merge by default](media/git-config/commit-changes-after-merge-by-default.png)
 
-* When checked, `git merge` commands issued by Visual Studio are run with the `--commit` option.
-* When unchecked, `git merge` commands issued by Visual Studio are run with the `--no-commit --no-ff` options.
+- When checked, `git merge` commands issued by Visual Studio are run with the `--commit` option.
+- When unchecked, `git merge` commands issued by Visual Studio are run with the `--no-commit --no-ff` options.
 
 For more information on these options, see [--commit and --no-commit](https://git-scm.com/docs/git-merge#git-merge---commit) and [--no-ff](https://git-scm.com/docs/git-merge#git-merge---no-ff).
 

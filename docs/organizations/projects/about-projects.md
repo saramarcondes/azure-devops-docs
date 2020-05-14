@@ -51,23 +51,23 @@ When you connect to Azure DevOps, you connect to an organization or project coll
 ::: moniker range=">= azure-devops-2019"
 You can scale your organization in the following ways:
 
-* To support different business units, you can add projects
-* Within a project, you can add teams
-* Add repositories and branches
-* To support continuous integration and deployment, you can add agents, agent pools, and deployment pools
-* To manage a large number of users, you can manage access through Azure Active Directory
+- To support different business units, you can add projects
+- Within a project, you can add teams
+- Add repositories and branches
+- To support continuous integration and deployment, you can add agents, agent pools, and deployment pools
+- To manage a large number of users, you can manage access through Azure Active Directory
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 You can scale your on-premises TFS deployment in the following ways:
 
-* To increase performance, you can add server instances
-* To support different business units, you can add project collections and projects
-* Within a project, you can add teams
-* Add repositories and branches
-* To support continuous integration and deployment, you can add agents, agent pools, and deployment pools
-* To manage a large number of users, you can manage access through Active Directory
+- To increase performance, you can add server instances
+- To support different business units, you can add project collections and projects
+- Within a project, you can add teams
+- Add repositories and branches
+- To support continuous integration and deployment, you can add agents, agent pools, and deployment pools
+- To manage a large number of users, you can manage access through Active Directory
 
 ::: moniker-end
 
@@ -124,21 +124,21 @@ Even if you have many teams working on hundreds of different applications and so
 ::: moniker range=">= azure-devops-2019"
 Instances where you may want to add another project include the following:
 
-* To prohibit or manage access to the information contained within a project to select groups
-* To support custom work tracking processes for specific business units within your organization
-* To support entirely separate business units that have their own administrative policies and administrators
-* To support testing customization activities or adding extensions prior to rolling out changes to the working project
-* To support an Open Source Software (OSS) project
+- To prohibit or manage access to the information contained within a project to select groups
+- To support custom work tracking processes for specific business units within your organization
+- To support entirely separate business units that have their own administrative policies and administrators
+- To support testing customization activities or adding extensions prior to rolling out changes to the working project
+- To support an Open Source Software (OSS) project
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 Instances where you may want to add another project include the following:
 
-* To prohibit or manage access to the information contained within a project
-* To support custom work tracking processes for specific business units within your organization
-* To support entirely separate business units that have their own administrative policies and administrators
-* To support testing customization activities or adding extensions prior to rolling out changes to the working project
+- To prohibit or manage access to the information contained within a project
+- To support custom work tracking processes for specific business units within your organization
+- To support entirely separate business units that have their own administrative policies and administrators
+- To support testing customization activities or adding extensions prior to rolling out changes to the working project
 
 ::: moniker-end
 
@@ -160,13 +160,13 @@ A public project, on the other hand, doesn't require users to sign in to gain re
 
 When you add a project, look at using the following elements to structure it to support your business needs:
 
-* [Create a Git repository](../../repos/git/creatingrepo.md) for each sub-project or application, or [create root folders within a TFVC repository](../../repos/tfvc/branch-folders-files.md) for each sub-project. If you're using TFVC and heading toward a consolidated project model, create root folders for different teams and projects, just as you would create separate repos in Git. Folders can be secured as needed and workspace mappings can control what segments of the repo you're actively using.
-* [Define area paths](../settings/set-area-paths.md) to support different sub-projects, products, features, or teams.
-* [Define iteration paths (aka sprints)](../settings/set-iteration-paths-sprints.md) that can be shared across teams.
-* [Add a team](../../organizations/settings/add-teams.md) for each product team that develops a set of features for a product. Note that each team you create automatically creates a security group for that team which you can use to manage permissions for a team. See also, [Portfolio management](../../boards/plans/portfolio-management.md).
-* [Grant or restrict access to select features and functions](../security/restrict-access.md) using custom security groups.
-* [Create query folders](../../boards/queries/organize-queries.md) to organize queries for teams or product areas into folders.
-* [Define or modify notifications](../../notifications/index.md) set at the project level.
+- [Create a Git repository](../../repos/git/creatingrepo.md) for each sub-project or application, or [create root folders within a TFVC repository](../../repos/tfvc/branch-folders-files.md) for each sub-project. If you're using TFVC and heading toward a consolidated project model, create root folders for different teams and projects, just as you would create separate repos in Git. Folders can be secured as needed and workspace mappings can control what segments of the repo you're actively using.
+- [Define area paths](../settings/set-area-paths.md) to support different sub-projects, products, features, or teams.
+- [Define iteration paths (aka sprints)](../settings/set-iteration-paths-sprints.md) that can be shared across teams.
+- [Add a team](../../organizations/settings/add-teams.md) for each product team that develops a set of features for a product. Note that each team you create automatically creates a security group for that team which you can use to manage permissions for a team. See also, [Portfolio management](../../boards/plans/portfolio-management.md).
+- [Grant or restrict access to select features and functions](../security/restrict-access.md) using custom security groups.
+- [Create query folders](../../boards/queries/organize-queries.md) to organize queries for teams or product areas into folders.
+- [Define or modify notifications](../../notifications/index.md) set at the project level.
 
 ## Customizing and configuring projects
 
@@ -174,21 +174,21 @@ You can configure and customize most services and applications to support your b
 
 ::: moniker range=">= azure-devops-2019"
 
-* **Dashboards**: Each team can [configure their set of dashboards](../../report/dashboards/dashboards.md) to share information and monitor their progress.
-* **Source control**: For each [Git repository](../../repos/git/index.yml), you can apply branch policies and define branch permissions. For TFVC repositories, you can [set check-in policies](../../repos/tfvc/add-check-policies.md).
-* **Work tracking**: You can add fields, change the workflow, add custom rules, and add custom pages to the work item form of most work item types. You can also add custom work item types. For details, see [Customize an inheritance process](../settings/work/inheritance-process-model.md).
-* **Azure Pipelines**: You can fully customize your build and release pipelines, define build steps, release environments, and deployment schedule. For details, see [Build and Release](../../pipelines/index.yml).
-* **Azure Test Plans**: You can define and configure test plans, test suites, and test cases as well as configure test environments; additionally you can add test steps within your build pipelines. For details, see [Exploratory & Manual Testing](../../test/index.yml) and [continuous testing for your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).
+- **Dashboards**: Each team can [configure their set of dashboards](../../report/dashboards/dashboards.md) to share information and monitor their progress.
+- **Source control**: For each [Git repository](../../repos/git/index.yml), you can apply branch policies and define branch permissions. For TFVC repositories, you can [set check-in policies](../../repos/tfvc/add-check-policies.md).
+- **Work tracking**: You can add fields, change the workflow, add custom rules, and add custom pages to the work item form of most work item types. You can also add custom work item types. For details, see [Customize an inheritance process](../settings/work/inheritance-process-model.md).
+- **Azure Pipelines**: You can fully customize your build and release pipelines, define build steps, release environments, and deployment schedule. For details, see [Build and Release](../../pipelines/index.yml).
+- **Azure Test Plans**: You can define and configure test plans, test suites, and test cases as well as configure test environments; additionally you can add test steps within your build pipelines. For details, see [Exploratory & Manual Testing](../../test/index.yml) and [continuous testing for your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-* **Dashboards**: Each team can [configure their set of dashboards](../../report/dashboards/dashboards.md) to share information and monitor their progress.
-* **Source control**: For each [Git repository](../../repos/git/index.yml), you can apply branch policies and define branch permissions. For TFVC repositories, you can [set check-in policies](../../repos/tfvc/add-check-policies.md).
-* **Work tracking**: You can add fields, change the workflow, add custom rules, and add custom pages to the work item form of most work item types. You can also add custom work item types. For details, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md).
-* **Build and Release**: You can fully customize your build and release pipelines, define build steps, release environments, and deployment schedule. For details, see [Build and Release](../../pipelines/index.yml).
-* **Test**: You can define and configure test plans, test suites, and test cases as well as configure test environments; additionally you can add test steps within your build pipelines. For details, see [Exploratory & Manual Testing](../../test/index.yml) and [continuous testing for your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).
+- **Dashboards**: Each team can [configure their set of dashboards](../../report/dashboards/dashboards.md) to share information and monitor their progress.
+- **Source control**: For each [Git repository](../../repos/git/index.yml), you can apply branch policies and define branch permissions. For TFVC repositories, you can [set check-in policies](../../repos/tfvc/add-check-policies.md).
+- **Work tracking**: You can add fields, change the workflow, add custom rules, and add custom pages to the work item form of most work item types. You can also add custom work item types. For details, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md).
+- **Build and Release**: You can fully customize your build and release pipelines, define build steps, release environments, and deployment schedule. For details, see [Build and Release](../../pipelines/index.yml).
+- **Test**: You can define and configure test plans, test suites, and test cases as well as configure test environments; additionally you can add test steps within your build pipelines. For details, see [Exploratory & Manual Testing](../../test/index.yml) and [continuous testing for your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).
 
 ::: moniker-end
 
@@ -198,12 +198,12 @@ You can configure and customize most services and applications to support your b
 
 As your organization grows, you'll want to add teams to provide them the Agile tools that each team can configure to meet their workflow. To learn more, see the following articles.
 
-* [Scale Agile to large teams](/azure/devops/learn/agile/scale-agile-large-teams)
-* [About teams and Agile tools](../settings/about-teams-and-settings.md)
-* Manage a [portfolio of backlogs](../../boards/plans/portfolio-management.md) and gain insight into each team's progress as well as the progress of all programs.
-* Use [Delivery plans](../../boards/plans/review-team-plans.md) to review the schedule of stories or features your teams plan to deliver. Delivery plans show the scheduled work items by sprint (iteration path) of selected teams against a calendar view.
-* Incrementally adopt [practices that scale](../../boards/plans/practices-that-scale.md) to create greater rhythm and flow within your organization, engage customers, improve project visibility, and develop a productive workforce.
-* Structure projects to gain [visibility across teams](../../boards/plans/visibility-across-teams.md) or to support [epics, release trains, and multiple backlogs to support the Scaled Agile Framework](../../boards/plans/scaled-agile-framework.md).
+- [Scale Agile to large teams](/azure/devops/learn/agile/scale-agile-large-teams)
+- [About teams and Agile tools](../settings/about-teams-and-settings.md)
+- Manage a [portfolio of backlogs](../../boards/plans/portfolio-management.md) and gain insight into each team's progress as well as the progress of all programs.
+- Use [Delivery plans](../../boards/plans/review-team-plans.md) to review the schedule of stories or features your teams plan to deliver. Delivery plans show the scheduled work items by sprint (iteration path) of selected teams against a calendar view.
+- Incrementally adopt [practices that scale](../../boards/plans/practices-that-scale.md) to create greater rhythm and flow within your organization, engage customers, improve project visibility, and develop a productive workforce.
+- Structure projects to gain [visibility across teams](../../boards/plans/visibility-across-teams.md) or to support [epics, release trains, and multiple backlogs to support the Scaled Agile Framework](../../boards/plans/scaled-agile-framework.md).
 
 To review stories and short videos on how Microsoft transitioned from waterfall to Agile, see Scaling Agile Across the Enterprise.
 
@@ -215,27 +215,27 @@ In addition to connecting through a web browser, you can connect to a project fr
 
 ::: moniker range=">= azure-devops-2019"
 
-* [Visual Studio (Professional, Enterprise, Test Professional)](https://www.visualstudio.com/products/compare-visual-studio-2015-products-vs)
-* [Visual Studio Code](https://code.visualstudio.com/Docs)
-* [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx)
-* [Eclipse: Team Explorer Everywhere](/azure/devops/java/download-eclipse-plug-in)
-* [Office Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
-* [Azure Test Plans](https://msdn.microsoft.com/library/jj635157.aspx) (formerly Test Manager)
-* [Microsoft Feedback Client](../../project/feedback/give-feedback.md)
+- [Visual Studio (Professional, Enterprise, Test Professional)](https://www.visualstudio.com/products/compare-visual-studio-2015-products-vs)
+- [Visual Studio Code](https://code.visualstudio.com/Docs)
+- [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx)
+- [Eclipse: Team Explorer Everywhere](/azure/devops/java/download-eclipse-plug-in)
+- [Office Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
+- [Azure Test Plans](https://msdn.microsoft.com/library/jj635157.aspx) (formerly Test Manager)
+- [Microsoft Feedback Client](../../project/feedback/give-feedback.md)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-* [Visual Studio (Professional, Enterprise, Test Professional)](https://www.visualstudio.com/products/compare-visual-studio-2015-products-vs)
-* [Visual Studio Code](https://code.visualstudio.com/Docs)
-* [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx)
-* [Eclipse: Team Explorer Everywhere](/azure/devops/java/download-eclipse-plug-in)
-* [Office Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
-* [Office Project](../../boards/backlogs/office/create-your-backlog-tasks-using-project.md)
-* [PowerPoint Storyboarding](../../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md)
-* [Azure Test Plans](https://msdn.microsoft.com/library/jj635157.aspx) (formerly Test Manager)
-* [Microsoft Feedback Client](../../project/feedback/give-feedback.md)
+- [Visual Studio (Professional, Enterprise, Test Professional)](https://www.visualstudio.com/products/compare-visual-studio-2015-products-vs)
+- [Visual Studio Code](https://code.visualstudio.com/Docs)
+- [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx)
+- [Eclipse: Team Explorer Everywhere](/azure/devops/java/download-eclipse-plug-in)
+- [Office Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
+- [Office Project](../../boards/backlogs/office/create-your-backlog-tasks-using-project.md)
+- [PowerPoint Storyboarding](../../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md)
+- [Azure Test Plans](https://msdn.microsoft.com/library/jj635157.aspx) (formerly Test Manager)
+- [Microsoft Feedback Client](../../project/feedback/give-feedback.md)
 
 ::: moniker-end
 
@@ -249,15 +249,15 @@ See also, [Compatibility with Azure DevOps Server versions](/azure/devops/server
 
 ## Related articles
 
-* [Get started as an administrator](../../user-guide/project-admin-tutorial.md)
-* [Web portal navigation](../../project/navigation/index.md)
-* [What do I get with a project?](../../user-guide/services.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
-* [Understand differences between Azure DevOps](../../user-guide/about-azure-devops-services-tfs.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+- [Get started as an administrator](../../user-guide/project-admin-tutorial.md)
+- [Web portal navigation](../../project/navigation/index.md)
+- [What do I get with a project?](../../user-guide/services.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
+- [Understand differences between Azure DevOps](../../user-guide/about-azure-devops-services-tfs.md?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/projects/breadcrumb/toc.json)
 
 <!--- Various blog resources
 
-- [](http://geekswithblogs.net/Optikal/archive/2013/09/05/153944.aspx](http://geekswithblogs.net/Optikal/archive/2013/09/05/153944.aspx)  
-- [One project to rule them out](https://nkdagility.com/one-team-project/)  
+- [](http://geekswithblogs.net/Optikal/archive/2013/09/05/153944.aspx](http://geekswithblogs.net/Optikal/archive/2013/09/05/153944.aspx)
+- [One project to rule them out](https://nkdagility.com/one-team-project/)
 - [Working within a single Project with Team Foundation Server 2012](https://nkdagility.com/working-within-a-single-team-project-with-team-foundation-server-2012/)
 
 -->

@@ -24,14 +24,14 @@ The `WebpageControlOptions` element is a child element of the **CONTROL** elemen
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <WebpageControlOptions AllowScript="true | false" ReloadOnParamChange="true | false" >  
->       <Link UrlRoot="UrlRoot" UrlPath="UrlPathWithParameters">  
->       <Param Index="IndexValue " Value="Param Value " Type="Original | Current" />  
->       </Link>  
->       <Content>  
->       <![CDATA[Contents of HTML]]>  
->       </Content>  
-> </WebpageControlOptions>  
+> <WebpageControlOptions AllowScript="true | false" ReloadOnParamChange="true | false" >
+>       <Link UrlRoot="UrlRoot" UrlPath="UrlPathWithParameters">
+>       <Param Index="IndexValue " Value="Param Value " Type="Original | Current" />
+>       </Link>
+>       <Content>
+>       <![CDATA[Contents of HTML]]>
+>       </Content>
+> </WebpageControlOptions>
 > ```
 
 ## Attributes and elements
@@ -64,10 +64,10 @@ The `AllowScript` and `ReloadOnParamChange` attributes are not allowed when you 
 When the Web page control is configured to display raw HTML, all scripting is disabled. Any hyperlinks in the content that are clicked are opened in the Visual Studio Web browser if the work item form is shown in Visual Studio or in Internet Explorer.  
 Several toolbar buttons are added to the work item form for a tab that contains `WebpageControl`. These options include the following functions:
 
-* Back and forward navigation
-* Stop content loading and refresh content
-* Return to content home page
-* Open the content in a new window or in an external browser
+- Back and forward navigation
+- Stop content loading and refresh content
+- Return to content home page
+- Open the content in a new window or in an external browser
 
 In addition, if the Web page to be loaded contains untrusted content, then the icon is blocked and the blocked icon appears.
 
@@ -90,6 +90,6 @@ The following example shows how to load a work item form with HTML defined in a 
 
 ## Related articles
 
-* [Specify work item form controls](specify-work-item-form-controls.md)
-* [Provide help text, hyperlinks, or web content](provide-help-text-hyperlinks-web-content-form.md)
-* [Design the work item form](design-work-item-form.md)
+- [Specify work item form controls](specify-work-item-form-controls.md)
+- [Provide help text, hyperlinks, or web content](provide-help-text-hyperlinks-web-content-form.md)
+- [Design the work item form](design-work-item-form.md)

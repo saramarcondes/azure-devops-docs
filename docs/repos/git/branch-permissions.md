@@ -106,8 +106,8 @@ Control branch permission settings from the branch permission view. Users and gr
 
 > [!NOTE][in azure devops services](/azure/devops/release-notes/2018/jul-10-vsts#allow-bypassing-branch-policies-without-giving-up-push-protection), the **Exempt from policy enforcement** permission (which is still available in TFS 2015 through TFS 2018 Update 2) was removed and its functionality divided into the following two new permissions:
 >
-> * **Bypass policies when completing pull requests**
-> * **Bypass policies when pushing**
+> - **Bypass policies when completing pull requests**
+> - **Bypass policies when pushing**
 >
 > Users that previously had **Exempt from policy enforcement** enabled now have the two new permissions enabled instead. See the following table for more details on these two new permissions.
 

@@ -25,7 +25,7 @@ You can run **witadmin destroywi** against an on-premises TFS only.
 
 **Requirements**
 
-* You must be a member of the **Team Foundation Administrators** security group or the **Project Administrators** security group for the project collection. See [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md).
+- You must be a member of the **Team Foundation Administrators** security group or the **Project Administrators** security group for the project collection. See [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md).
 
 > [!NOTE]
 > Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the shortcut menu for **Command Prompt**, and choose **Run as Administrator**. For more information, see the [Microsoft Web site](https://go.microsoft.com/fwlink/?LinkId=111235).
@@ -33,7 +33,7 @@ You can run **witadmin destroywi** against an on-premises TFS only.
 ## Syntax
 
 ```
-witadmin destroywi /collection:CollectionURL /id:id [/noprompt]  
+witadmin destroywi /collection:CollectionURL /id:id [/noprompt]
 ```
 
 ::: moniker range="tfs-2018"
@@ -56,17 +56,17 @@ witadmin destroywi /collection:CollectionURL /id:id [/noprompt]
 The following example deletes the work item _2003_ from the database for _Collection1_ on the _AdventureWorksServer_ server:
 
 ```
-witadmin destroywi /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /id:2003  
+witadmin destroywi /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /id:2003
 ```
 
 The following example deletes the work items with IDs, 12, 15, and 23 from the database for Collection1 on the AdventureWorksServer server:
 
 ```
-witadmin destroywi /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /id:12,15,23  
+witadmin destroywi /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /id:12,15,23
 ```
 
 ## Related articles
 
-* [Move, change, or delete work items](../../boards/backlogs/remove-delete-work-items.md)
-* [Add work items](../../boards/backlogs/add-work-items.md)
-* [witAdmin: Customize and manage objects for tracking work](witadmin-customize-and-manage-objects-for-tracking-work.md)
+- [Move, change, or delete work items](../../boards/backlogs/remove-delete-work-items.md)
+- [Add work items](../../boards/backlogs/add-work-items.md)
+- [witAdmin: Customize and manage objects for tracking work](witadmin-customize-and-manage-objects-for-tracking-work.md)

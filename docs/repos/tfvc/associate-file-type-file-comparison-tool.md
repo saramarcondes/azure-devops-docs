@@ -46,11 +46,11 @@ To perform this procedure, you must be a member of the **Administrators** or **U
 
 6.  In the **Arguments** box, type any arguments that your tool requires:
 
-    * **%1**: The path to the source file.
-    * **%2**: The path to the target file.
-    * **%5**: The options that the user specified by using the **/option** option of the Difference command. For more information, see [Difference Command](difference-command.md).
-    * **%6**: Label ("friendly name") of the source file.
-    * **%7**: Label ("friendly name") of the target file.
+    - **%1**: The path to the source file.
+    - **%2**: The path to the target file.
+    - **%5**: The options that the user specified by using the **/option** option of the Difference command. For more information, see [Difference Command](difference-command.md).
+    - **%6**: Label ("friendly name") of the source file.
+    - **%7**: Label ("friendly name") of the target file.
 
     > [!TIP]
     > For information about frequently used external tools and the arguments that they require, see the following page on the Microsoft website: [diff/merge configuration in Team Foundation - common Command and Argument values](https://devblogs.microsoft.com/buckh/configuring-different-diffmerge-tools-for-team-foundation-version-control/).

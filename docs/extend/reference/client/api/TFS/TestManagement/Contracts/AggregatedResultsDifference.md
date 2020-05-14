@@ -16,10 +16,10 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Members
 
-* `increaseInDuration`: any.
+- `increaseInDuration`: any.
 
-* `increaseInFailures`: number.
+- `increaseInFailures`: number.
 
-* `increaseInPassedTests`: number.
+- `increaseInPassedTests`: number.
 
-* `increaseInTotalTests`: number.
+- `increaseInTotalTests`: number.

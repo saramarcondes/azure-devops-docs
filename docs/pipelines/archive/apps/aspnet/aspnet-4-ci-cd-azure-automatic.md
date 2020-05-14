@@ -118,21 +118,21 @@ Carry out the following steps to create a simple
 
     The following sequence of events occurs:
 
-    * Azure Continuous Delivery creates a build and a release pipeline in the Azure Pipelines subscription
+    - Azure Continuous Delivery creates a build and a release pipeline in the Azure Pipelines subscription
       you specified, together with a service endpoint to connect to Azure.
 
-    * If you chose to create a new Azure App Service instance for load tests, and/or a new slot for
+    - If you chose to create a new Azure App Service instance for load tests, and/or a new slot for
       staging, these are created in your Azure subscription.
 
-    * After setup has completed successfully, a build is triggered that builds and packages the
+    - After setup has completed successfully, a build is triggered that builds and packages the
       application for deployment.
 
-    * After the build has completed successfully, a new release is created and the deployment triggered.
+    - After the build has completed successfully, a new release is created and the deployment triggered.
 
-    * If you chose to include a load test, the latest changes are first deployed to the Azure App Service
+    - If you chose to include a load test, the latest changes are first deployed to the Azure App Service
       you selected, and then the load test is executed after the deployment succeeds.
 
-    * If you chose to use a staging slot, the latest changes are deployed to the staging slot and then a
+    - If you chose to use a staging slot, the latest changes are deployed to the staging slot and then a
       slot swap is performed to complete the continuous delivery workflow.<p />
 
 1.  After all these actions have completed, the Azure portal shows the results in the **Activity Log**.
@@ -208,19 +208,19 @@ or set up manual approval for any deployment to production.
 The Azure Continuous Delivery feature is a preview version. You
 may encounter the following known issues:
 
-* If you do not have relevant permission to create build and release definitions
+- If you do not have relevant permission to create build and release definitions
   in Azure Pipelines, the Continuous Delivery configuration will fail
   with an appropriate error message. See
   [Manage users and access in Azure Pipelines](../../../../organizations/accounts/add-organization-users.md).
 
-* Continuous Delivery supports only applications developed by using
+- Continuous Delivery supports only applications developed by using
   [ASP.NET](https://www.asp.net/) and [ASP.NET Core](https://www.microsoft.com/net/core#windows).
 
-* If you encounter the error "Failed to create an Azure service connection"
+- If you encounter the error "Failed to create an Azure service connection"
   while deploying to Azure App Service, see
   [Troubleshoot Azure Resource Manager service endpoints](../../../release/azure-rm-endpoint.md).
 
-* There is a known issue where users are able to see their Azure Pipelines information within the [Azure classic portal](https://manage.windowsazure.com/),
+- There is a known issue where users are able to see their Azure Pipelines information within the [Azure classic portal](https://manage.windowsazure.com/),
   but not in the [Azure dashboard](https://portal.azure.com/). You may see a
   "No accounts found" message in this situation. To resolve this, you can
   configure Azure Pipelines to be backed by an Azure Active Directory (Azure AD) instance. For information on how to do this, see

@@ -20,10 +20,10 @@ as demonstrated in [this example](deploy-webdeploy-iis-deploygroups.md).
 In addition, you can extend your deployment in a range of ways
 depending on your scenario and requirements. This topic shows you how to:
 
-* [Dynamically create and remove a deployment group](#depgroup)
-* [Apply stage-specific configurations](#envirconfig)
-* [Perform a safe rolling deployment](#rolling)
-* [Deploy a database with your app](#database)
+- [Dynamically create and remove a deployment group](#depgroup)
+- [Apply stage-specific configurations](#envirconfig)
+- [Perform a safe rolling deployment](#rolling)
+- [Deploy a database with your app](#database)
 
 ## Prerequisites
 
@@ -79,16 +79,16 @@ To deploy a database with your app:
 
     **First [Run on deployment group job](../../process/phases.md)** for configuration of web servers.
 
-    * **Deployment group**: Select the deployment group you created in the [previous example](deploy-webdeploy-iis-deploygroups.md).
+    - **Deployment group**: Select the deployment group you created in the [previous example](deploy-webdeploy-iis-deploygroups.md).
 
-    * **Required tags**: `web`<p />
+    - **Required tags**: `web`<p />
 
     Then add an **IIS Web App Deploy** task to this job.
 
     **Second [Run on deployment group job](../../process/phases.md)** for configuration of database servers.
 
-    * **Deployment group**: Select the deployment group you created in the [previous example](deploy-webdeploy-iis-deploygroups.md).
+    - **Deployment group**: Select the deployment group you created in the [previous example](deploy-webdeploy-iis-deploygroups.md).
 
-    * **Required tags**: `database`<p />
+    - **Required tags**: `database`<p />
 
     Then add a **SQL Server Database Deploy** task to this job.

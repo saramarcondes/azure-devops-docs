@@ -34,18 +34,18 @@ After you delete the files, you can synchronize the Team Foundation warehouse. O
 
 ### To permanently destroy version-controlled files
 
-* Click **Start**, click **All Programs**, click **Microsoft Visual Studio 2008**, click **Visual Studio Tools**, and then click **Visual Studio Command Prompt**.
+- Click **Start**, click **All Programs**, click **Microsoft Visual Studio 2008**, click **Visual Studio Tools**, and then click **Visual Studio Command Prompt**.
 
-  * To preview the file aFile.cs without destroying it, type at the command prompt:
+  - To preview the file aFile.cs without destroying it, type at the command prompt:
 
     ```
     >tf destroy /preview /i $/MyTeamProject/aFile.cs
     ```
 
     > [!NOTE]
-    > The text in the Command Prompt window displays &quot;Destroyed: $/MyTeamProject/aFile.cs&quot;, but the file is not actually destroyed when you use the **/preview** option.
+    > The text in the Command Prompt window displays &quot;Destroyed: \$/MyTeamProject/aFile.cs&quot;, but the file is not actually destroyed when you use the **/preview** option.
 
-  * To destroy the file, aFile.cs, type at the command prompt:
+  - To destroy the file, aFile.cs, type at the command prompt:
 
     ```
     >tf destroy /i $/MyTeamProject/aFile.cs
@@ -53,7 +53,7 @@ After you delete the files, you can synchronize the Team Foundation warehouse. O
 
     This command displays information about possible pending changes and shelvesets in the Command Prompt window. Because you specified **/i** (non-interactive), you are not prompted with a **Yes**, **No**, **Yes to all** dialog box before the files are permanently removed.
 
-  * To destroy all the files in aFolder and, at the same time, retain their history, type:
+  - To destroy all the files in aFolder and, at the same time, retain their history, type:
 
     ```
     >tf destroy /keephistory $/MyTeamProject/aFolder
@@ -63,7 +63,7 @@ After you delete the files, you can synchronize the Team Foundation warehouse. O
 
     This action retains the historical information about all the files in aFolder. You can use the **tf history** command to view the history of a file. You can also view the history in Source Control Explorer. For more information, see [History Command](history-command.md) and [View Historical Data](https://msdn.microsoft.com/library/ms181415).
 
-  * Use the **/stopat** option to retain the historical information up to and including a _versionSpec_ value. The _versionSpec_ value can be the latest version, a specific changeset, or a date. For more information about _versionspec_ values, see [Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be).
+  - Use the **/stopat** option to retain the historical information up to and including a _versionSpec_ value. The _versionSpec_ value can be the latest version, a specific changeset, or a date. For more information about _versionspec_ values, see [Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be).
 
     To destroy all the files in the project MyTeamProject and, at the same time, retain the history for the files up to and including 10/23/2005, type:
 
@@ -71,7 +71,7 @@ After you delete the files, you can synchronize the Team Foundation warehouse. O
     >tf destroy $/MyTeamProject /keephistory /stopat:D10/23/2005
     ```
 
-  * Use the **/startcleanup** option to immediately clean up the TFVC metadata of the files that are no longer referenced by Team Foundation Server. Without this option, those metadata are removed when the database is maintained by a SQL process that runs every 5 days. Seven days after the TFVC metadata deletion, the content of the destroyed files will be deleted by another SQL process.
+  - Use the **/startcleanup** option to immediately clean up the TFVC metadata of the files that are no longer referenced by Team Foundation Server. Without this option, those metadata are removed when the database is maintained by a SQL process that runs every 5 days. Seven days after the TFVC metadata deletion, the content of the destroyed files will be deleted by another SQL process.
 
     To immediately destroy all the files in aFolder, type:
 

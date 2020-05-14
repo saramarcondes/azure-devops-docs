@@ -69,9 +69,9 @@ You can use tags for a quick and easy way to map epics to their Value Streams, s
 
 With tags that you add to work items, you can:
 
-* Filter any backlog or Kanban board
-* Create queries based on tags, and filter query results by tags
-* Create progress and trend charts or reports based on tags
+- Filter any backlog or Kanban board
+- Create queries based on tags, and filter query results by tags
+- Create progress and trend charts or reports based on tags
 
 For a more robust mapping of work to architecture or business features, you can specify the Value Area for each epic, feature, or story.
 
@@ -182,10 +182,10 @@ If you already have iterations for your default team, you can rename them. You'l
 In this section, we'll show how to configure a hierarchical team structure which maps to the hierarchical area paths we created previously.
 This structure maps the following SAFe teams to your Agile tools' teams:
 
-* Portfolio team -> default top-level team, the Fabrikam team
-* Program teams -> secondary-level teams, Fiber Suite and Service Suite
-* Feature teams -> tertiary-level teams defined under Fiber Suite and Service Suite.
-* If you need more-detailed guidance, see [Portfolio management](portfolio-management.md).
+- Portfolio team -> default top-level team, the Fabrikam team
+- Program teams -> secondary-level teams, Fiber Suite and Service Suite
+- Feature teams -> tertiary-level teams defined under Fiber Suite and Service Suite.
+- If you need more-detailed guidance, see [Portfolio management](portfolio-management.md).
 
 You'll need to be a [project administrator](../../organizations/security/add-users-team-project.md) to perform these steps.
 
@@ -334,24 +334,24 @@ If you're working with TFS 2013, see the [Upgrade/Publish TFS 2013 Process Templ
 
 Resources mentioned earlier in this article and a few more are provided here for convenient reference.
 
-* SAFe enabled processes: Link to a download of the three Agile tool processes: [Scrum](../work-items/guidance/scrum-process.md), [Agile](../work-items/guidance/agile-process.md), and [CMMI](../work-items/guidance/cmmi-process.md).
+- SAFe enabled processes: Link to a download of the three Agile tool processes: [Scrum](../work-items/guidance/scrum-process.md), [Agile](../work-items/guidance/agile-process.md), and [CMMI](../work-items/guidance/cmmi-process.md).
 
-* [Scaled Agile Framework](https://scaledagileframework.com/): SAFe resource site.
-* [SAFe in 7 minutes](https://www.youtube.com/watch?feature=player_embedded&v=RXzurBazN-I): video from Inbar Oren, the Lean Samurai.
-* [Scaling Agile and SAFe Metrics with TFS](https://www.incyclesoftware.com/2014/08/scaling-agile-and-safe-metrics-with-tfs/): Blog post that illustrates a SQL Server report developed by InCycle to illustrate how TFS can be used to support scaled agile or SAFe.
-* Agile Portfolio Management: Using TFS to support backlogs across multiple teams : white paper that shows how to configure TFS to support multiple teams and multiple backlogs.
-* [Support rollup of work and other fields](../../reference/xml/support-rollup-of-work-and-other-fields.md): Describes how to configure TFS to support rollup, the summed values of select fields for all child work items of a parent. Because TFS supports multiple levels of nesting, when you perform rollup, you want to make sure you don't double-count values.
-* [Out of the box Reports (SQL Server Reporting Services)](../../report/sql-reports/reporting-services-reports.md): Summarizes the reports TFS provides to monitor progress and code quality.
-* [Track your work when assigned to two or more teams](../sprints/set-capacity.md#track-capacity-per-team): Shows how a developer or tester can track work when they support more than one feature team.
+- [Scaled Agile Framework](https://scaledagileframework.com/): SAFe resource site.
+- [SAFe in 7 minutes](https://www.youtube.com/watch?feature=player_embedded&v=RXzurBazN-I): video from Inbar Oren, the Lean Samurai.
+- [Scaling Agile and SAFe Metrics with TFS](https://www.incyclesoftware.com/2014/08/scaling-agile-and-safe-metrics-with-tfs/): Blog post that illustrates a SQL Server report developed by InCycle to illustrate how TFS can be used to support scaled agile or SAFe.
+- Agile Portfolio Management: Using TFS to support backlogs across multiple teams : white paper that shows how to configure TFS to support multiple teams and multiple backlogs.
+- [Support rollup of work and other fields](../../reference/xml/support-rollup-of-work-and-other-fields.md): Describes how to configure TFS to support rollup, the summed values of select fields for all child work items of a parent. Because TFS supports multiple levels of nesting, when you perform rollup, you want to make sure you don't double-count values.
+- [Out of the box Reports (SQL Server Reporting Services)](../../report/sql-reports/reporting-services-reports.md): Summarizes the reports TFS provides to monitor progress and code quality.
+- [Track your work when assigned to two or more teams](../sprints/set-capacity.md#track-capacity-per-team): Shows how a developer or tester can track work when they support more than one feature team.
 
 ### About the authors
 
 This article has been updated from the previous white paper developed in collaboration with the following authors:
 
-* Gordon Beeming is a Software Developer at Derivco in the sunny city of Durban, South Africa. He spends most his time hacking away at the keyboard in Visual Studio or with his family relaxing. His blog is at [31og.com](http://31og.com) and you can follow him on Twitter at [twitter.com/gordonbeeming](https://twitter.com/gordonbeeming).
-* Brian Blackman is a principal consultant with Microsoft Premier Developer, focusing on affecting ISV partners and Enterprises success in engineering and the marketplace. He has an MBA, and is a CSM, CSP, MCSD (C++), and MCTS and is an [ALM|DevOps Ranger](https://blogs.msdn.microsoft.com/visualstudioalmrangers/). When he is not Ruck Mastering and contributing to ALM|DevOps Ranger projects, he spends his time writing code, creating and delivering workshops, and consulting in various concentrations, especially helping organizations in their quest for business agility.
-* Gregg Boer is a principal program manager at Microsoft. Gregg is the product owner for the Agile management experience provided by Azure DevOps.
-* Kathryn Elliott is a senior technical writer at Microsoft.
-* Susan Ferrell is a senior technical writer and an ALM|DevOps Ranger.
-* Willy-Peter Schaub is a program manager with the ALM|DevOps Rangers at the Microsoft Canada Development Center. Since the mid-'80s, he has been striving for simplicity and maintainability in software engineering. His blog is at [Willy's Reflections](https://docs.microsoft.com/archive/blogs/willy-peter_schaub/) and you can follow him on Twitter at [twitter.com/wpschaub](https://twitter.com/wpschaub).
-* Special thanks to the following technical experts for reviewing this article: Mike Douglas (independent consultant, ALM|DevOps Ranger), Richard Hundhausen (independent consultant, ALM|DevOps Ranger) and Bill Heys (independent consultant, ALM|DevOps Ranger), Hosam Kamel (technology solution professional for Microsoft and ALM|DevOps Ranger).
+- Gordon Beeming is a Software Developer at Derivco in the sunny city of Durban, South Africa. He spends most his time hacking away at the keyboard in Visual Studio or with his family relaxing. His blog is at [31og.com](http://31og.com) and you can follow him on Twitter at [twitter.com/gordonbeeming](https://twitter.com/gordonbeeming).
+- Brian Blackman is a principal consultant with Microsoft Premier Developer, focusing on affecting ISV partners and Enterprises success in engineering and the marketplace. He has an MBA, and is a CSM, CSP, MCSD (C++), and MCTS and is an [ALM|DevOps Ranger](https://blogs.msdn.microsoft.com/visualstudioalmrangers/). When he is not Ruck Mastering and contributing to ALM|DevOps Ranger projects, he spends his time writing code, creating and delivering workshops, and consulting in various concentrations, especially helping organizations in their quest for business agility.
+- Gregg Boer is a principal program manager at Microsoft. Gregg is the product owner for the Agile management experience provided by Azure DevOps.
+- Kathryn Elliott is a senior technical writer at Microsoft.
+- Susan Ferrell is a senior technical writer and an ALM|DevOps Ranger.
+- Willy-Peter Schaub is a program manager with the ALM|DevOps Rangers at the Microsoft Canada Development Center. Since the mid-'80s, he has been striving for simplicity and maintainability in software engineering. His blog is at [Willy's Reflections](https://docs.microsoft.com/archive/blogs/willy-peter_schaub/) and you can follow him on Twitter at [twitter.com/wpschaub](https://twitter.com/wpschaub).
+- Special thanks to the following technical experts for reviewing this article: Mike Douglas (independent consultant, ALM|DevOps Ranger), Richard Hundhausen (independent consultant, ALM|DevOps Ranger) and Bill Heys (independent consultant, ALM|DevOps Ranger), Hosam Kamel (technology solution professional for Microsoft and ALM|DevOps Ranger).

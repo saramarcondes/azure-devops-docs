@@ -17,11 +17,11 @@ ms.date: 03/20/2018
 
 You can manage work item types for a project by using the following **witadmin** commands:
 
-* **destroywitd**: Destroys a work item type, and destroys every work item of that type permanently without recovery.
-* **exportwitd**: Exports the definition of a work item type to an XML file, or to the Command Prompt window.
-* **importwitd**: Imports work item types from an XML definition file into a project on a server that runs Team Foundation Server. If a work item type with the same name already exists, the new work item type definition overwrites the existing one. If the work item type does not already exist, this command creates a new work item type. To validate the XML that defines a work item type, but not import the file, you use the **/v** option.
-* **listwitd**: Displays the names of the work item types in the specified project in the Command Prompt window.
-* **renamewitd**: Changes the display name of a work item type within a specific project. After you run this command, work items of this type show the new name.
+- **destroywitd**: Destroys a work item type, and destroys every work item of that type permanently without recovery.
+- **exportwitd**: Exports the definition of a work item type to an XML file, or to the Command Prompt window.
+- **importwitd**: Imports work item types from an XML definition file into a project on a server that runs Team Foundation Server. If a work item type with the same name already exists, the new work item type definition overwrites the existing one. If the work item type does not already exist, this command creates a new work item type. To validate the XML that defines a work item type, but not import the file, you use the **/v** option.
+- **listwitd**: Displays the names of the work item types in the specified project in the Command Prompt window.
+- **renamewitd**: Changes the display name of a work item type within a specific project. After you run this command, work items of this type show the new name.
 
 [!INCLUDE [temp](../../includes/witadmin-run-tool.md)]
 
@@ -31,8 +31,8 @@ You can manage work item types for a project by using the following **witadmin**
 
 For the project where the work item types are defined, you must have the following permissions set:
 
-* To export or list work item types, you must be a member of the **Project Administrators** group or have your **View project-level information** permission set to **Allow**.
-* To destroy, import, or rename work item types, you must be a member of the **Team Foundation Administrators** security group or the **Project Administrators** security group.
+- To export or list work item types, you must be a member of the **Project Administrators** group or have your **View project-level information** permission set to **Allow**.
+- To destroy, import, or rename work item types, you must be a member of the **Team Foundation Administrators** security group or the **Project Administrators** security group.
 
 For more information, see [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md).
 
@@ -43,7 +43,7 @@ For more information, see [Add an administrator](../../organizations/security/se
 
 ```
 witadmin destroywitd /collection:CollectionURL /p:Project /n:TypeName [/noprompt]
-witadmin exportwitd /collection:CollectionURL /p:Project /n:TypeName [/f:FileName] [/e:Encoding] [/exportgloballists]  
+witadmin exportwitd /collection:CollectionURL /p:Project /n:TypeName [/f:FileName] [/e:Encoding] [/exportgloballists]
 witadmin importwitd /collection:CollectionURL [/p:Project] /f:FileName [/e:Encoding] [/v]
 witadmin listwitd /collection:CollectionURL /p:Project
 witadmin renamewitd /collection:CollectionURL /p:Project /n:TypeName /new:NewName [/noprompt]
@@ -68,33 +68,33 @@ witadmin renamewitd /collection:CollectionURL /p:Project /n:TypeName /new:NewNam
 
 When you use the **destroywitd** command, it destroys all the following objects:
 
-* The work item type
-* All work items of that type
-* Corresponding entries in the work item tables, the long text tables, and the link tables
-* Objects in the work item type metadata cache
+- The work item type
+- All work items of that type
+- Corresponding entries in the work item tables, the long text tables, and the link tables
+- Objects in the work item type metadata cache
 
 ## Examples
 
 Unless otherwise specified, the following values apply in each example:
 
-* URI for the project collection: http://AdventureWorksServer:8080/tfs/DefaultCollection
-* Project name: AdventureWorks
-* Input or output file name: myworkitems.xml
-* Work item type name: myworkitem
-* Default encoding: UTF-8
+- URI for the project collection: http://AdventureWorksServer:8080/tfs/DefaultCollection
+- Project name: AdventureWorks
+- Input or output file name: myworkitems.xml
+- Work item type name: myworkitem
+- Default encoding: UTF-8
 
 ### Export the definition of a WIT
 
 The following command exports the definition for myworkitem to the file, myworkitems.xml.
 
 ```
-witadmin exportwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /p:AdventureWorks /f:myworkitems.xml /n:myworkitem  
+witadmin exportwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /p:AdventureWorks /f:myworkitems.xml /n:myworkitem
 ```
 
 The following example exports the work item by using Unicode (UTF-7) encoding.
 
 ```
-witadmin exportwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /p:AdventureWorks /f:myworkitems.xml /n:myworkitem /e:utf-7  
+witadmin exportwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /p:AdventureWorks /f:myworkitems.xml /n:myworkitem /e:utf-7
 ```
 
 ### Export the definition of a WIT and its referenced global lists
@@ -102,7 +102,7 @@ witadmin exportwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultColl
 The following example exports the work item type and its referenced global lists.
 
 ```
-witadmin exportwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /p:AdventureWorks /f:myworkitems.xml /n:myworkitem /exportgloballists  
+witadmin exportwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /p:AdventureWorks /f:myworkitems.xml /n:myworkitem /exportgloballists
 ```
 
 ### List the definition of a WIT
@@ -110,7 +110,7 @@ witadmin exportwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultColl
 The following example displays the definition of the work item type the Command Prompt window.
 
 ```
-witadmin exportwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /p:AdventureWorks /n:myworkitem  
+witadmin exportwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /p:AdventureWorks /n:myworkitem
 ```
 
 ### Import the definition of WITs
@@ -118,7 +118,7 @@ witadmin exportwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultColl
 The following example imports the work item definition from the XML file.
 
 ```
-witadmin importwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /f:myworkitem.xml /p:AdventureWorks  
+witadmin importwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /f:myworkitem.xml /p:AdventureWorks
 ```
 
 ### Validate the XML definition of a WIT
@@ -126,7 +126,7 @@ witadmin importwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultColl
 The following example validates the XML that defines the work item type but does not import the definition.
 
 ```
-witadmin importwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /f:myworkitem.xml /p:AdventureWorks /v  
+witadmin importwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /f:myworkitem.xml /p:AdventureWorks /v
 ```
 
 ## Q & A
@@ -152,30 +152,30 @@ Changing the workflow or renaming a WIT might require you to perform some manual
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
->     <TRANSITION from=" " to="New">  
->        <FIELDS>  
->          <FIELD refname="System.CreatedBy">  
->               <VALIDUSER not="[Team Project Name]Project Valid Users" />  
->          </FIELD>  
->        </FIELDS>  
+>     <TRANSITION from=" " to="New">
+>        <FIELDS>
+>          <FIELD refname="System.CreatedBy">
+>               <VALIDUSER not="[Team Project Name]Project Valid Users" />
+>          </FIELD>
+>        </FIELDS>
 >     </TRANSITION>
 > ```
 
 If you want to restrict creation of a specific WIT to a group of users, there are two ways to restrict access:
 
-* [Add the WIT to the Hidden Categories group](../xml/use-categories-to-group-work-item-types.md) to prevent the majority of contributors from creating them. If you want to allow a group of users access, you [can create a hyperlink to a template](../../boards/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them.
-* Add [a field rule to the workflow](../xml/apply-rule-work-item-field.md) for the System.CreatedBy field to effectively restrict a group of users from creating a work item of a specific type. As the following example shows, the user who creates the work item must belong to the `Allowed Group` in order to save the work item.
+- [Add the WIT to the Hidden Categories group](../xml/use-categories-to-group-work-item-types.md) to prevent the majority of contributors from creating them. If you want to allow a group of users access, you [can create a hyperlink to a template](../../boards/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them.
+- Add [a field rule to the workflow](../xml/apply-rule-work-item-field.md) for the System.CreatedBy field to effectively restrict a group of users from creating a work item of a specific type. As the following example shows, the user who creates the work item must belong to the `Allowed Group` in order to save the work item.
 
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <TRANSITION from=" " to="New">  
->    <FIELDS>  
->      <FIELD refname="System.CreatedBy">  
->          <VALIDUSER for="Allowed Group" not="Disallowed Group" />  
->      </FIELD>  
->    </FIELDS>  
-> </TRANSITION>  
+> <TRANSITION from=" " to="New">
+>    <FIELDS>
+>      <FIELD refname="System.CreatedBy">
+>          <VALIDUSER for="Allowed Group" not="Disallowed Group" />
+>      </FIELD>
+>    </FIELDS>
+> </TRANSITION>
 > ```
 
 <a name="delete"></a>
@@ -194,4 +194,4 @@ For more information, see [Import and export categories](witadmin-import-export-
 
 ## Related articles
 
-* [Customize your work tracking experience](../customize-work.md)
+- [Customize your work tracking experience](../customize-work.md)

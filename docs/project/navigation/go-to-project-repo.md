@@ -105,7 +105,7 @@ From the **Projects** page you can quickly navigate to a project or a team that 
 
 1.  Select the repository from the selector.
 
-        	> [!div class="mx-imgBorder"]  
+        	> [!div class="mx-imgBorder"]
         	> ![Select repository](../../organizations/public/media/browse-code/select-repository.png)
 
     ::: moniker-end
@@ -153,5 +153,5 @@ Open the project/team drop-down menu and select the project/team that you've rec
 
 ## Related articles
 
-* [Work across projects](work-across-projects.md)
-* [Add teams](../../organizations/settings/add-teams.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json)
+- [Work across projects](work-across-projects.md)
+- [Add teams](../../organizations/settings/add-teams.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json)

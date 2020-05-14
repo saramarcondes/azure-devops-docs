@@ -25,7 +25,7 @@ If you use the Hosted XML process model, you can [import/export a process](../..
 
 ## Related resources
 
-* [Customize a process template](customize-process.md)
-* [Process Template XML element index](process-template-plug-ins-xml-elements-index.md)
-* [Define the work item tracking plug-in](define-objects-track-work-items-plug-in.md)
-* [Control access to functional areas](control-access-to-functional-areas.md)
+- [Customize a process template](customize-process.md)
+- [Process Template XML element index](process-template-plug-ins-xml-elements-index.md)
+- [Define the work item tracking plug-in](define-objects-track-work-items-plug-in.md)
+- [Control access to functional areas](control-access-to-functional-areas.md)

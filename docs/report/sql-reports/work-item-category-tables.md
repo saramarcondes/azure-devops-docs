@@ -22,12 +22,12 @@ For information about the measures and dimensions that are associated with these
 
 FactWorkItemToCategory is associated with the following dimension tables:
 
-* DimWorkItem
+- DimWorkItem
 
-* DimWorkItemCategory
+- DimWorkItemCategory
 
 ## Related notes
 
-* [Test cases and work items](perspective-test-analyze-report-work.md)
-* [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md)
-* [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)
+- [Test cases and work items](perspective-test-analyze-report-work.md)
+- [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md)
+- [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)

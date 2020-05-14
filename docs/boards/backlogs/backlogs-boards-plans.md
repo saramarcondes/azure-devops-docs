@@ -33,23 +33,23 @@ Which view should you use to work with Agile methods?
 **In a nutshell...**
 ::: moniker range=">= tfs-2017"
 
-* Backlogs display work items as a list and boards display them as cards
-* You use your product backlog to quickly plan and prioritize your work
-* You use your sprint backlogs and taskboards when you work in Scrum
-* You use your Kanban board to update work status and when you employ Kanban methods
-* Each backlog is associated with a board, changes to priority order you make in one are reflected in its corresponding board
-* Plans allow you to review the deliverables for several teams across sprints and a calendar schedule
-* Backlogs, boards, and plans are configurable for each team.  
+- Backlogs display work items as a list and boards display them as cards
+- You use your product backlog to quickly plan and prioritize your work
+- You use your sprint backlogs and taskboards when you work in Scrum
+- You use your Kanban board to update work status and when you employ Kanban methods
+- Each backlog is associated with a board, changes to priority order you make in one are reflected in its corresponding board
+- Plans allow you to review the deliverables for several teams across sprints and a calendar schedule
+- Backlogs, boards, and plans are configurable for each team.  
   ::: moniker-end
 
 ::: moniker range="<= tfs-2015"
 
-* Backlogs display work items as a list and boards display them as cards
-* You use your product backlog to quickly plan and prioritize your work
-* You use your sprint backlogs and taskboards when you work in Scrum
-* You use your Kanban board to update work status and when you employ Kanban methods
-* Each backlog is associated with a board, changes to priority order you make in one are reflected in its corresponding board
-* Each backlog and board is configurable for each team.  
+- Backlogs display work items as a list and boards display them as cards
+- You use your product backlog to quickly plan and prioritize your work
+- You use your sprint backlogs and taskboards when you work in Scrum
+- You use your Kanban board to update work status and when you employ Kanban methods
+- Each backlog is associated with a board, changes to priority order you make in one are reflected in its corresponding board
+- Each backlog and board is configurable for each team.  
   ::: moniker-end
 
 With list backlogs you can quickly develop your project plan; group and prioritize work; and perform bulk updates on selected work items. With boards, you can quickly update status and fields displayed for each work item.
@@ -480,20 +480,19 @@ It's possible to assign tasks to an iteration but not have them linked to a pare
 
 These reasons can cause work items that belong to the Task Category to not appear on a sprint backlog or taskboard:
 
-* The task hasn't been linked to a parent backlog item. Only those bugs and tasks that you have linked to a parent product backlog item (Scrum), user story (Agile), or requirement (CMMI) whose iteration path is set to the sprint will appear on the sprint backlog page.
-* The task is a parent of another task, or the user story is a parent of another user story. If you've created a hierarchy of tasks or user stories, [only the child-level tasks or the child-level stories at the bottom of the hierarchy appear](resolve-backlog-reorder-issues.md#leaf-nodes).
-* The task's linked parent corresponds to a backlog item defined for another team. Or, the area path of the task's parent backlog item differs from the task's area path.  
-
+- The task hasn't been linked to a parent backlog item. Only those bugs and tasks that you have linked to a parent product backlog item (Scrum), user story (Agile), or requirement (CMMI) whose iteration path is set to the sprint will appear on the sprint backlog page.
+- The task is a parent of another task, or the user story is a parent of another user story. If you've created a hierarchy of tasks or user stories, [only the child-level tasks or the child-level stories at the bottom of the hierarchy appear](resolve-backlog-reorder-issues.md#leaf-nodes).
+- The task's linked parent corresponds to a backlog item defined for another team. Or, the area path of the task's parent backlog item differs from the task's area path.
 
 <!---
-> [!NOTE]  
+> [!NOTE]
 >Appearance of task and child items on the taskboard may differ depending on whether you work in Azure Boards and TFS.
 
-> [!NOTE]  
+> [!NOTE]
 >In Azure Boards and TFS 2015.2 and later versions, Tasks not linked to a parent appear under an *Unparented* section.
 
-> [!NOTE]  
->In Azure Boards and TFS 2015.2 and later versions, tasks linked to a parent work item assigned to another team's area path will appear under the *Unparented* section.  
+> [!NOTE]
+>In Azure Boards and TFS 2015.2 and later versions, tasks linked to a parent work item assigned to another team's area path will appear under the *Unparented* section.
 -->
 
 ## Customize backlog and board levels
@@ -509,13 +508,13 @@ If you need more than three backlog levels and board levels, you can add more. Y
 
 **Inheritance process model:**
 
-* [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md).
-* [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md)
+- [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md).
+- [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md)
 
 **On-premises XML process model:**
 
-* [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md)
-* [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md)
+- [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md)
+- [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md)
 
 ::: moniker-end
 
@@ -535,17 +534,17 @@ Now that you understand how backlogs and boards work, [get started using them to
 
 A few things to keep in mind...
 
-* Every team owns their own backlog, to add a new set of backlogs and boards, you [add a new team](../../organizations/settings/add-teams.md)
-* To have work performed by several teams roll up to a portfolio backlog, you'll want to [setup the team hierarchy](../plans/portfolio-management.md)
-* Every backlog has a corresponding [Kanban board](../boards/kanban-basics.md) you can use to track progress and update status
-* Each team can control how [bugs show up on their backlogs](../../organizations/settings/show-bugs-on-backlog.md)
-* When you add child items they're linked to their parent using parent-child links which support hierarchical views and [tree queries](../queries/using-queries.md#tree-query)
+- Every team owns their own backlog, to add a new set of backlogs and boards, you [add a new team](../../organizations/settings/add-teams.md)
+- To have work performed by several teams roll up to a portfolio backlog, you'll want to [setup the team hierarchy](../plans/portfolio-management.md)
+- Every backlog has a corresponding [Kanban board](../boards/kanban-basics.md) you can use to track progress and update status
+- Each team can control how [bugs show up on their backlogs](../../organizations/settings/show-bugs-on-backlog.md)
+- When you add child items they're linked to their parent using parent-child links which support hierarchical views and [tree queries](../queries/using-queries.md#tree-query)
 
 Additional articles of interest:
 
-* [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md)
-* [Add work items](add-work-items.md)
-* [Dashboards](../../report/dashboards/dashboards.md)
+- [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md)
+- [Add work items](add-work-items.md)
+- [Dashboards](../../report/dashboards/dashboards.md)
 
 ::: moniker range=">= tfs-2017"
 

@@ -21,18 +21,18 @@ Service which allows interaction with the browser location and navigation of the
 
 ## Methods
 
-* [updateHistoryEntry()](#method_updateHistoryEntry)
-* [getCurrentState()](#method_getCurrentState)
-* [attachNavigate()](#method_attachNavigate)
-* [detachNavigate()](#method_detachNavigate)
-* [onHashChanged()](#method_onHashChanged)
-* [getHash()](#method_getHash)
-* [reload()](#method_reload)
-* [setHash()](#method_setHash)
-* [replaceHash()](#method_replaceHash)
-* [setWindowTitle()](#method_setWindowTitle)
-* [openNewWindow()](#method_openNewWindow)
-* [navigate()](#method_navigate)
+- [updateHistoryEntry()](#method_updateHistoryEntry)
+- [getCurrentState()](#method_getCurrentState)
+- [attachNavigate()](#method_attachNavigate)
+- [detachNavigate()](#method_detachNavigate)
+- [onHashChanged()](#method_onHashChanged)
+- [getHash()](#method_getHash)
+- [reload()](#method_reload)
+- [setHash()](#method_setHash)
+- [replaceHash()](#method_replaceHash)
+- [setWindowTitle()](#method_setWindowTitle)
+- [openNewWindow()](#method_openNewWindow)
+- [navigate()](#method_navigate)
 
 <a name="method_updateHistoryEntry"></a>
 
@@ -48,12 +48,12 @@ Update the current history entry
 
 #### Parameters
 
-* `action`: string. The &quot;action&quot; state parameter. This is the \_a key in the url or &quot;action&quot; in the current state dictionary
-* `data`: IDictionaryStringTo&lt;any&gt;. Optional. The history entry&#x27;s new state key/value pairs
-* `replaceHistoryEntry`: boolean. Optional. If true, replace the current history entry. Otherwise, add a new history entry.
-* `mergeWithCurrentState`: boolean. Optional. If true, the supplied data just modify the existing/current state. If false, they replace all existing key/value pairs.
-* `windowTitle`: string. Optional. The new window title. A null or empty value indicates to leave the title unchanged.
-* `suppressNavigate`: boolean. Optional. If true, don&#x27;t trigger any of the attached navigate event handlers due to this update.
+- `action`: string. The &quot;action&quot; state parameter. This is the \_a key in the url or &quot;action&quot; in the current state dictionary
+- `data`: IDictionaryStringTo&lt;any&gt;. Optional. The history entry&#x27;s new state key/value pairs
+- `replaceHistoryEntry`: boolean. Optional. If true, replace the current history entry. Otherwise, add a new history entry.
+- `mergeWithCurrentState`: boolean. Optional. If true, the supplied data just modify the existing/current state. If false, they replace all existing key/value pairs.
+- `windowTitle`: string. Optional. The new window title. A null or empty value indicates to leave the title unchanged.
+- `suppressNavigate`: boolean. Optional. If true, don&#x27;t trigger any of the attached navigate event handlers due to this update.
 
 <a name="method_getCurrentState"></a>
 
@@ -71,7 +71,7 @@ Get the current navigation state dictionary. Uses query parameters and hash para
 
 ### Returns
 
-* any
+- any
 
 <a name="method_attachNavigate"></a>
 
@@ -87,9 +87,9 @@ Attach a new navigate handler
 
 #### Parameters
 
-* `action`: string. The action that the handler applies to (or null to listen for all events)
-* `handler`: IFunctionPPR&lt;any, any, void&gt;. The method called whenever a navigation event occurs with the matching action value
-* `checkCurrentState`: boolean. Optional. If true, immediately invoke the handler if the current state is appropriate (has the matching action value)
+- `action`: string. The action that the handler applies to (or null to listen for all events)
+- `handler`: IFunctionPPR&lt;any, any, void&gt;. The method called whenever a navigation event occurs with the matching action value
+- `checkCurrentState`: boolean. Optional. If true, immediately invoke the handler if the current state is appropriate (has the matching action value)
 
 <a name="method_detachNavigate"></a>
 
@@ -105,8 +105,8 @@ Remove a navigate handler
 
 #### Parameters
 
-* `action`: string. The action that the handler applies to (or null for global handlers)
-* `handler`: IFunctionPPR&lt;any, any, void&gt;. Optional. The method called whenever a navigation event occurs with the matching action value
+- `action`: string. The action that the handler applies to (or null for global handlers)
+- `handler`: IFunctionPPR&lt;any, any, void&gt;. Optional. The method called whenever a navigation event occurs with the matching action value
 
 <a name="method_onHashChanged"></a>
 
@@ -122,7 +122,7 @@ Add a callback to be invoked each time the hash navigation has changed
 
 #### Parameters
 
-* `callback`: (hash: string): void. Method invoked on each navigation hash change
+- `callback`: (hash: string): void. Method invoked on each navigation hash change
 
 <a name="method_getHash"></a>
 
@@ -140,7 +140,7 @@ Gets the current hash.
 
 #### Returns
 
-* Q.Promise&lt;string&gt;
+- Q.Promise&lt;string&gt;
 
 <a name="method_reload"></a>
 
@@ -170,7 +170,7 @@ Sets the provided hash from the hosted content.
 
 #### Parameters
 
-* `hash`: string.
+- `hash`: string.
 
 <a name="method_replaceHash"></a>
 
@@ -186,7 +186,7 @@ Replace existing hash with the provided hash from the hosted content.
 
 #### Parameters
 
-* `hash`: string.
+- `hash`: string.
 
 <a name="method_setWindowTitle"></a>
 
@@ -202,7 +202,7 @@ Update the host document&#x27;s title (appears as the browser tab title).
 
 #### Parameters
 
-* `title`: string. The new title of the window
+- `title`: string. The new title of the window
 
 <a  name="method_openNewWindow"></a>
 
@@ -218,8 +218,8 @@ void <b>openNewWindow</b>(url, specs)
 
 #### Parameters
 
-* `url`: string. Specifies the URL of the page to open. If no URL is specified, a new window with about:blank is opened.
-* `specs`: string. A comma-separated list of items, no whitespaces. For details see window.open of JavaScript documentation.
+- `url`: string. Specifies the URL of the page to open. If no URL is specified, a new window with about:blank is opened.
+- `specs`: string. A comma-separated list of items, no whitespaces. For details see window.open of JavaScript documentation.
 
 <a  name="method_navigate"></a>
 
@@ -235,4 +235,4 @@ void <b>navigate</b>(url)
 
 #### Parameters
 
-* `url`: string. Specifies the URL to navigate to.
+- `url`: string. Specifies the URL to navigate to.

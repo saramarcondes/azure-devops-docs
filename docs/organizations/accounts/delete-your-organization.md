@@ -21,13 +21,13 @@ After 28 days, your organization and data are permanently deleted.
 
 When you delete your organization, note the following occurrences:
 
-* All users lose access to organization services and resources immediately.
+- All users lose access to organization services and resources immediately.
 
-* Your organization URL becomes available for anyone to use. (It might take up to one hour before your organization URL becomes available again.)
+- Your organization URL becomes available for anyone to use. (It might take up to one hour before your organization URL becomes available again.)
 
-* Your organization is disabled, and appears deleted in your profile for 28 days.
+- Your organization is disabled, and appears deleted in your profile for 28 days.
 
-* If your organization is linked to an Azure subscription for billing purchases, you must unlink your organization before you delete your organization.
+- If your organization is linked to an Azure subscription for billing purchases, you must unlink your organization before you delete your organization.
 
   You're still charged for any paid users and services used during this billing cycle. Billing stops after the current cycle ends.
 
@@ -64,6 +64,6 @@ Your organization is deleted.
 
 ## Related articles
 
-* [Recover your deleted organization](recover-your-organization.md)
-* [Resolve an orphaned organization](resolve-orphaned-organization.md)
-* [Create a new organization](create-organization.md)
+- [Recover your deleted organization](recover-your-organization.md)
+- [Resolve an orphaned organization](resolve-orphaned-organization.md)
+- [Create a new organization](create-organization.md)

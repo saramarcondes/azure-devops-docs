@@ -29,9 +29,9 @@ and view it in Azure Test Plans or Team Foundation Server.
 For web apps under test, you can use web-based Microsoft Test Runner.
 For desktop apps, download and install the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload) to collect the following data on demand:
 
-* [Screen captures](#web-screenshot)
-* [Image action log](#web-log)
-* [Screen recordings](#web-recording)
+- [Screen captures](#web-screenshot)
+- [Image action log](#web-log)
+- [Screen recordings](#web-recording)
 
 > See [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md).
 
@@ -156,7 +156,7 @@ tests using Microsoft Test Manager. For more details, see
 
 ## See also
 
-* [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
-* [Overview of manual and exploratory testing](index.yml)
+- [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
+- [Overview of manual and exploratory testing](index.yml)
 
 [!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

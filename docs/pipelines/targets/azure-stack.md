@@ -26,17 +26,17 @@ To deploy to Azure stack using Azure Pipelines, ensure the following:
 
 Azure stack requirements:
 
-* Use an Azure Stack integrated system or deploy the [Azure Stack Development Kit (ASDK)](https://docs.microsoft.com/azure-stack/asdk/asdk-install)
-* Use the [ConfigASDK.ps1](https://github.com/esache/Azure-Stack/blob/master/Scripts/ConfigASDK.ps1) PowerShell script to automate ASDK post-deployment steps.
-* Create a [tenant subscription](https://docs.microsoft.com/azure-stack/operator/azure-stack-subscribe-plan-provision-vm) in Azure Stack.
-* Deploy a Windows Server 2012 Virtual Machine in the tenant subscription. You'll use this server as your build server and to run Azure DevOps Services.
-* Provide a Windows Server 2016 image with .NET 3.5 for a virtual machine (VM). This VM will be built on your Azure Stack as a private build agent.
+- Use an Azure Stack integrated system or deploy the [Azure Stack Development Kit (ASDK)](https://docs.microsoft.com/azure-stack/asdk/asdk-install)
+- Use the [ConfigASDK.ps1](https://github.com/esache/Azure-Stack/blob/master/Scripts/ConfigASDK.ps1) PowerShell script to automate ASDK post-deployment steps.
+- Create a [tenant subscription](https://docs.microsoft.com/azure-stack/operator/azure-stack-subscribe-plan-provision-vm) in Azure Stack.
+- Deploy a Windows Server 2012 Virtual Machine in the tenant subscription. You'll use this server as your build server and to run Azure DevOps Services.
+- Provide a Windows Server 2016 image with .NET 3.5 for a virtual machine (VM). This VM will be built on your Azure Stack as a private build agent.
 
 Azure Pipelines agent requirements:
 
-* Create a new service principal name (SPN) or use an existing one.
-* Validate the Azure Stack Subscription via Role-Based Access Control(RBAC) to allow the Service Principal Name (SPN) to be part of the Contributor's role. Azure DevOps Services must have the Contributor role to provision resources in an Azure Stack subscription.
-* Create a new Service connection in Azure DevOps Services using the Azure Stack endpoints and SPN information.
+- Create a new service principal name (SPN) or use an existing one.
+- Validate the Azure Stack Subscription via Role-Based Access Control(RBAC) to allow the Service Principal Name (SPN) to be part of the Contributor's role. Azure DevOps Services must have the Contributor role to provision resources in an Azure Stack subscription.
+- Create a new Service connection in Azure DevOps Services using the Azure Stack endpoints and SPN information.
   Specify Azure Stack in the **Environment** parameter when you create an [Azure Resource Manager service connection](../library/connect-to-azure.md).
   You must use the full version of the service connection dialog to manually define the connection.
 
@@ -46,9 +46,9 @@ For more details, refer to [Tutorial: Deploy apps to Azure and Azure Stack](http
 
 ### Next
 
-* [Deploy an Azure Web App](../apps/cd/deploy-webdeploy-webapps.md)
-* [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md)
-* [Azure Stack Operator Documentation](/azure/azure-stack/)
+- [Deploy an Azure Web App](../apps/cd/deploy-webdeploy-webapps.md)
+- [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md)
+- [Azure Stack Operator Documentation](/azure/azure-stack/)
 
 ## Q&A
 
@@ -56,12 +56,12 @@ For more details, refer to [Tutorial: Deploy apps to Azure and Azure Stack](http
 
 The following Azure tasks are validated with Azure Stack:
 
-* [Azure PowerShell](../tasks/deploy/azure-powershell.md)
-* [Azure File Copy](../tasks/deploy/azure-file-copy.md)
-* [Azure Resource Group Deployment](../tasks/deploy/azure-resource-group-deployment.md)
-* [Azure App Service Deploy](../tasks/deploy/azure-rm-web-app-deployment.md)
-* [Azure App Service Manage](../tasks/deploy/azure-app-service-manage.md)
-* [Azure SQL Database Deployment](../tasks/deploy/sql-azure-dacpac-deployment.md)
+- [Azure PowerShell](../tasks/deploy/azure-powershell.md)
+- [Azure File Copy](../tasks/deploy/azure-file-copy.md)
+- [Azure Resource Group Deployment](../tasks/deploy/azure-resource-group-deployment.md)
+- [Azure App Service Deploy](../tasks/deploy/azure-rm-web-app-deployment.md)
+- [Azure App Service Manage](../tasks/deploy/azure-app-service-manage.md)
+- [Azure SQL Database Deployment](../tasks/deploy/sql-azure-dacpac-deployment.md)
 
 ### How do I resolve SSL errors during deployment?
 

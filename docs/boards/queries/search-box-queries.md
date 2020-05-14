@@ -20,12 +20,12 @@ ms.date: 03/26/2019
 
 You can find work items using shortcut filters or by specifying keywords or phrases, specific fields/field values, assignment or date modifications, or using Equals, Contains, and Not operators. Searching is not case-sensitive. Use semantic or ad hoc searches when you want to perform the following tasks:
 
-* Find a specific work item using its ID or a keyword
-* Find one or more work items across all projects in a fast, flexible manner
-* Perform full text search across all work item fields
-* Review work items assigned to a specific team member
-* Search against specific work item fields to quickly narrow down a list of work items
-* Determine what key words will support a managed search
+- Find a specific work item using its ID or a keyword
+- Find one or more work items across all projects in a fast, flexible manner
+- Perform full text search across all work item fields
+- Review work items assigned to a specific team member
+- Search against specific work item fields to quickly narrow down a list of work items
+- Determine what key words will support a managed search
 
 You can perform a powerful [semantic search](#start-search) from the web portal for Azure DevOps Services or TFS 2017.2 or later versions when the [server instance has been configured with the work item search extension](../../project/search/administration.md).
 
@@ -47,9 +47,9 @@ With semantic search, you search against a more fully indexed set of fields. Wit
 
 With semantic search you can search:
 
-* Across one or more projects
-* Across all work item fields using free text
-* Against specific work item fields
+- Across one or more projects
+- Across all work item fields using free text
+- Against specific work item fields
 
 Free text search easily searches across all work item fields, including custom fields, which enables more natural searches. Search results are displayed in a snippet view where the search matches found are highlighted. Semantic search also integrates with work item tracking, providing familiar controls to view, edit, comment, and share information within a work item form.
 
@@ -125,10 +125,10 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
 
     The quick filters you can use are:
 
-    * `a:` for **Assigned to:**
-    * `c:` for **Created by:**
-    * `s:` for **State**
-    * `t:` for **Work item type**<p />
+    - `a:` for **Assigned to:**
+    - `c:` for **Created by:**
+    - `s:` for **State**
+    - `t:` for **Work item type**<p />
 
 1.  Start typing the name of a field in your work items; for example, type `ta`.
 
@@ -158,10 +158,10 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
 
     The quick filters you can use are:
 
-    * `a:` for **Assigned to:**
-    * `c:` for **Created by:**
-    * `s:` for **State**
-    * `t:` for **Work item type**<p />
+    - `a:` for **Assigned to:**
+    - `c:` for **Created by:**
+    - `s:` for **State**
+    - `t:` for **Work item type**<p />
 
 1.  Start typing the name of a field in your work items; for example, type `ta`.
 
@@ -191,10 +191,10 @@ For TFS 2017.1 and earlier versions, you can perform ad hoc searches from the we
 
 You can enter or select one or more of the following shortcut identifiers:
 
-* `A` =for **A**ssigned To, (for example, `A:Annie` or `A=@me`)
-* `C` for = **C**reated By, (for example, `C:Peter` or `C=@me`)
-* `S` for = **S**tate, (for example, `S=New`)
-* `T` for = Work Item **T**ype, (for example, `T=Task`).
+- `A` =for **A**ssigned To, (for example, `A:Annie` or `A=@me`)
+- `C` for = **C**reated By, (for example, `C:Peter` or `C=@me`)
+- `S` for = **S**tate, (for example, `S=New`)
+- `T` for = Work Item **T**ype, (for example, `T=Task`).
 
 Use the `@Me` and `@Today` macros to specify your user name or today's date.
 
@@ -249,9 +249,9 @@ Enclose multiple words in quotation marks.
 
 For example, to find work items with the specified keywords in the **Title** or **Description** fields:
 
-* For the keyword "duplication" enter **duplication**.
-* For the phrase "Getting Started" enter **"Getting Started"**.
-* For the phrase "Getting Started" or the keyword "feature" enter **feature "Getting Started"**.
+- For the keyword "duplication" enter **duplication**.
+- For the phrase "Getting Started" enter **"Getting Started"**.
+- For the phrase "Getting Started" or the keyword "feature" enter **feature "Getting Started"**.
 
 | Filter for items that contain these keywords or phrases: | Type the following string:  |
 | -------------------------------------------------------- | --------------------------- |
@@ -328,7 +328,7 @@ Created yesterday under the Phone Saver team
 </tr>
 
 </tbody>
-</table>  
+</table>
 
 ## Use Equals, Contains, and Not operators
 
@@ -350,11 +350,11 @@ The following examples show how to use operators when you create a search string
 
 ## Related articles
 
-* [Ad hoc versus managed queries](adhoc-vs-managed-queries.md)
-* [Create managed queries with the query editor](using-queries.md)
-* [Query fields, operators, and macros](query-operators-variables.md)
-* [Work item field index](../work-items/guidance/work-item-field.md) - [Use work item templates, Define an ad hoc work item template using a hyperlink](../backlogs/work-item-template.md#adhoc-template)
-* [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)
+- [Ad hoc versus managed queries](adhoc-vs-managed-queries.md)
+- [Create managed queries with the query editor](using-queries.md)
+- [Query fields, operators, and macros](query-operators-variables.md)
+- [Work item field index](../work-items/guidance/work-item-field.md) - [Use work item templates, Define an ad hoc work item template using a hyperlink](../backlogs/work-item-template.md#adhoc-template)
+- [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)
 
 ## Q & A
 

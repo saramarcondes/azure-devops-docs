@@ -19,4 +19,4 @@ Contextual information that data providers can examine when populating their dat
 
 ### Members
 
-* `properties`: {[key: string]: number}. Generic property bag that contains context-specific properties that data providers can use when populating their data dictionary
+- `properties`: {[key: string]: number}. Generic property bag that contains context-specific properties that data providers can use when populating their data dictionary

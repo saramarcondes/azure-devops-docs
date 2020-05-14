@@ -25,17 +25,17 @@ For information about the measures and dimensions that are associated with these
 
 FactRunCoverage is associated with the following dimension tables:
 
-* DimAssembly
-* DimBuild
-* DimBuildFlavor
-* DimBuildPlatform
-* DimDate
-* DimPerson
-* DimTestRun
+- DimAssembly
+- DimBuild
+- DimBuildFlavor
+- DimBuildPlatform
+- DimDate
+- DimPerson
+- DimTestRun
 
 ## Related notes
 
-* [Code churn and code coverage](perspective-code-analyze-report-code-churn-coverage.md)
-* [Code Churn](../excel/code-coverage-excel-report.md)
-* [Build](/visualstudio/ide/walkthrough-building-an-application)
-* [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)
+- [Code churn and code coverage](perspective-code-analyze-report-code-churn-coverage.md)
+- [Code Churn](../excel/code-coverage-excel-report.md)
+- [Build](/visualstudio/ide/walkthrough-building-an-application)
+- [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)

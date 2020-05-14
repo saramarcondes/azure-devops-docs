@@ -22,24 +22,23 @@ This article shows you how to get the execution state of one or more Test Plans 
 
 The report generated is similar to following image and the Summary chart of the [Track test status - Progress report](../../test/track-test-status.md).
 
-> [!div class="mx-imgBorder"]
-> ![Sample - Overall Execution State - Report](media/odatapowerbi-overallexecution.png)
+> [!div class="mx-imgBorder"] > ![Sample - Overall Execution State - Report](media/odatapowerbi-overallexecution.png)
 
 This report displays two donut charts that summarize Test Plans executed and not executed, and the status of executed Test Plans.
 
-* **Executed vs Not executed** - **Executed**: The percentage of test plans defined which have run.  
-   - **NotExecuted**: The percentage of test plans defined which haven't run.
-* **Split by outcome** - **Blocked**: Percentage of test cases that are currently blocked from running.  
-   - **Failed**: Percentage of test cases that failed.  
-   - **NotApplicable**: Percentage of test cases that didn't run.  
-   - **Passed**: Percentage of test cases that passed.
+- **Executed vs Not executed** - **Executed**: The percentage of test plans defined which have run.
+  - **NotExecuted**: The percentage of test plans defined which haven't run.
+- **Split by outcome** - **Blocked**: Percentage of test cases that are currently blocked from running.
+  - **Failed**: Percentage of test cases that failed.
+  - **NotApplicable**: Percentage of test cases that didn't run.
+  - **Passed**: Percentage of test cases that passed.
 
 ## Questions the report answers
 
 The overall execution state report helps you track the team's progress with respect to planned testing of your product or service by answering the following questions:
 
-* _How much testing is complete?_
-* _What is the current status of tests passing, failing, or being blocked?_
+- _How much testing is complete?_
+- _What is the current status of tests passing, failing, or being blocked?_
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
@@ -47,10 +46,10 @@ The overall execution state report helps you track the team's progress with resp
 
 For the report to generate useful data, the team must perform the following activities to manage test plans:
 
-* Define test plans, test suites, and test cases. Specify their state. For a Test Suite to run, it must be in the In Progress state. For a Test Case to run, it must be in the Ready state. For details, see [Create manual test cases](../../test/create-test-cases.md).
-* Run manual tests and verify the results. Mark the results of each validation step in the test case as passed or failed. For details, see [Run manual tests](../../test/run-manual-tests.md).
+- Define test plans, test suites, and test cases. Specify their state. For a Test Suite to run, it must be in the In Progress state. For a Test Case to run, it must be in the Ready state. For details, see [Create manual test cases](../../test/create-test-cases.md).
+- Run manual tests and verify the results. Mark the results of each validation step in the test case as passed or failed. For details, see [Run manual tests](../../test/run-manual-tests.md).
 
-      	> [!NOTE]  
+      	> [!NOTE]
       	> Testers must mark a test step with a status if it is a validation test step. The overall result for a test reflects the status of all the test steps that were marked. Therefore, the test will have a status of failed if any test step is marked as failed or not marked.
 
 ## Sample queries
@@ -89,8 +88,8 @@ $apply=filter(
     (TestSuite/TestPlanTitle eq '{testPlanTitle}')
 )
 /aggregate(
-    $count as TotalCount,  
-    cast(LastResultOutcome eq 'Passed', Edm.Int32) with sum as Passed,  
+    $count as TotalCount,
+    cast(LastResultOutcome eq 'Passed', Edm.Int32) with sum as Passed,
     cast(LastResultOutcome eq 'Failed', Edm.Int32) with sum as Failed,
     cast(LastResultOutcome eq 'Blocked', Edm.Int32) with sum as Blocked,
     cast(LastResultOutcome eq 'NotApplicable', Edm.Int32) with sum as NotApplicable,
@@ -134,22 +133,20 @@ Power BI shows you the fields you can report on.
 > [!NOTE]  
 > The example below assumes that no one renamed any columns.
 
-> [!div class="mx-imgBorder"]
-> ![Sample - Overall Execution - Fields](media/odatapowerbi-overallexecution-fields.png)
+> [!div class="mx-imgBorder"] > ![Sample - Overall Execution - Fields](media/odatapowerbi-overallexecution-fields.png)
 
 To create the report, do the following steps:
 
 1.  To create donut chart of Executed v/s Not executed:
-    * Create a Power BI visualization **Donut chart**.
-    * Drag and drop **Executed** and **NotExecuted** in **Values**.
+    - Create a Power BI visualization **Donut chart**.
+    - Drag and drop **Executed** and **NotExecuted** in **Values**.
 2.  To create donut chart of split by outcome
-    * Create a Power BI visualization **Donut chart**.
-    * Drag and drop outcome values like **Passed, Failed, Blocked, NotApplicable** etc. into **Values**.
+    - Create a Power BI visualization **Donut chart**.
+    - Drag and drop outcome values like **Passed, Failed, Blocked, NotApplicable** etc. into **Values**.
 
 Your report should appear similar to the following image.
 
-> [!div class="mx-imgBorder"]
-> ![Sample - Overall Execution State - Report](media/odatapowerbi-overallexecution.png)
+> [!div class="mx-imgBorder"] > ![Sample - Overall Execution State - Report](media/odatapowerbi-overallexecution.png)
 
 ## Full list of Test Plans sample reports
 
@@ -157,6 +154,6 @@ Your report should appear similar to the following image.
 
 ## Related articles
 
-* [Overview of sample reports using OData queries](/azure/devops/report/powerbi/sample-odata-overview)
-* [Connect using Power BI and OData queries](/azure/devops/report/powerbi/odataquery-connect)
-* [Analytics OData query quick reference](/azure/devops/report/extend-analytics/quick-ref)
+- [Overview of sample reports using OData queries](/azure/devops/report/powerbi/sample-odata-overview)
+- [Connect using Power BI and OData queries](/azure/devops/report/powerbi/odataquery-connect)
+- [Analytics OData query quick reference](/azure/devops/report/extend-analytics/quick-ref)

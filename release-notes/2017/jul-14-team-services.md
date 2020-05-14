@@ -199,9 +199,9 @@ A team admin can configure their team’s default delivery preference via the te
 
 Due to security concerns, we have added SVG constraints to make extensions safer.
 
-* The icons and screenshot can no longer be SVG.
-* The badges provided in the manifest can not be SVGs unless they are from [approved badge providers](https://visualstudio.microsoft.com/docs/integrate/extensions/develop/manifest#approvedbadges).
-* Images in README.md and CHANGELOG.md can not be SVGs unless they are from approved badge providers.
+- The icons and screenshot can no longer be SVG.
+- The badges provided in the manifest can not be SVGs unless they are from [approved badge providers](https://visualstudio.microsoft.com/docs/integrate/extensions/develop/manifest#approvedbadges).
+- Images in README.md and CHANGELOG.md can not be SVGs unless they are from approved badge providers.
 
 ## Feedback
 

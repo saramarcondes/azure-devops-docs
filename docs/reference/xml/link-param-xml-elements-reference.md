@@ -16,9 +16,9 @@ ms.date: 04/05/2017
 
 You can add a hyperlink to a field or a standalone label on a work item form by using the `Link` element. You use the `Link` element in the following instances to:
 
-* Add a hyperlink to a field label
-* Add a hyperlink to a standalone label or portions of informational text
-* Specify the URL for content to be displayed within a work item form
+- Add a hyperlink to a field label
+- Add a hyperlink to a standalone label or portions of informational text
+- Specify the URL for content to be displayed within a work item form
 
 To add elements to a form, you modify the definition for a work item type. See [Modify or add a custom work item type](../add-modify-wit.md).
 
@@ -29,9 +29,9 @@ The `Link` element is either a child element of the `Control` element, or a chil
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <Link URLRoot="URLRoot" URLPath ="URLPathWithParameters">  
->       <Param Index="IndexValue " Value="ParamValue " Type ="Original | Current"/>  
-> </Link>  
+> <Link URLRoot="URLRoot" URLPath ="URLPathWithParameters">
+>       <Param Index="IndexValue " Value="ParamValue " Type ="Original | Current"/>
+> </Link>
 > ```
 
 ## Attributes and elements
@@ -120,6 +120,6 @@ The following example shows how you can add a hyperlink to the label for a field
 
 ## Related articles
 
-* [Specify work item form controls](specify-work-item-form-controls.md)
-* [Design the work item form](design-work-item-form.md)
-* [Provide help text, hyperlinks, or web content on a work item form](provide-help-text-hyperlinks-web-content-form.md)
+- [Specify work item form controls](specify-work-item-form-controls.md)
+- [Design the work item form](design-work-item-form.md)
+- [Provide help text, hyperlinks, or web content on a work item form](provide-help-text-hyperlinks-web-content-form.md)

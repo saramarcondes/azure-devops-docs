@@ -1088,7 +1088,7 @@ Content-Type: application/json
 
 ```json
 [
-  {  
+  {
     "testResult": {
        "id": { int }
     },
@@ -1098,8 +1098,8 @@ Content-Type: application/json
     "computerName": { string },
     "resolutionState": { string },
     "testCasePriority": { string },
-    "failureType": { string },  
-    "automatedTestTypeId": { string },  
+    "failureType": { string },
+    "automatedTestTypeId": { string },
     "owner": {
        "DisplayName": {string}
     },
@@ -1215,7 +1215,7 @@ Content-Type: application/json
 ```
 
 ```json
-{  
+{
   "testResult": {
      "id": { int }
   },
@@ -1225,8 +1225,8 @@ Content-Type: application/json
   "computerName": { string },
   "resolutionState": { string },
   "testCasePriority": { string },
-  "failureType": { string },  
-  "automatedTestTypeId": { string },  
+  "failureType": { string },
+  "automatedTestTypeId": { string },
   "owner": {
      "DisplayName": {string}
   },

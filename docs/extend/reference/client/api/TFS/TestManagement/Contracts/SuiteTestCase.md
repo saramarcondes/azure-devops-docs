@@ -16,6 +16,6 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Members
 
-* `pointAssignments`: [PointAssignment](../../../TFS/TestManagement/Contracts/PointAssignment.md)[].
+- `pointAssignments`: [PointAssignment](../../../TFS/TestManagement/Contracts/PointAssignment.md)[].
 
-* `testCase`: [WorkItemReference](../../../TFS/TestManagement/Contracts/WorkItemReference.md).
+- `testCase`: [WorkItemReference](../../../TFS/TestManagement/Contracts/WorkItemReference.md).

@@ -19,8 +19,8 @@ The pull request (PR) workflow provides developers with an opportunity to get fe
 
 ## Prerequisites
 
-* An organization in Azure DevOps with a Git repo. If you don't have an organization, [sign up](../../organizations/accounts/create-organization.md) to upload and share code in free unlimited private Git repositories.
-* Install [VS Code](https://code.visualstudio.com/Docs/setup) or other code editor of your choice. The instructions in this guide use VS Code but the steps in other code editors are similar.
+- An organization in Azure DevOps with a Git repo. If you don't have an organization, [sign up](../../organizations/accounts/create-organization.md) to upload and share code in free unlimited private Git repositories.
+- Install [VS Code](https://code.visualstudio.com/Docs/setup) or other code editor of your choice. The instructions in this guide use VS Code but the steps in other code editors are similar.
 
 ## Install Node.js
 
@@ -356,5 +356,5 @@ Now that your server is running and listening for service hook notifications, cr
 
 ## Next Steps
 
-* In this article, you learned the basics of how to create a service that listens for PR events via service hooks and can post status messages using the status API. For more information about the pull request status API see the [REST API documentation](https://go.microsoft.com/fwlink/?linkid=854107).
-* [Configure a branch policy for an external service](https://go.microsoft.com/fwlink/?linkid=854109).
+- In this article, you learned the basics of how to create a service that listens for PR events via service hooks and can post status messages using the status API. For more information about the pull request status API see the [REST API documentation](https://go.microsoft.com/fwlink/?linkid=854107).
+- [Configure a branch policy for an external service](https://go.microsoft.com/fwlink/?linkid=854109).

@@ -17,9 +17,9 @@ monikerRange: '>= tfs-2015'
 
 You can use branches to accomplish the following goals:
 
-* Manage concurrent work by multiple teams on the same codebase
-* Isolate risks that are introduced by different sets of changes to the codebase
-* Take snapshots and then support subsequent isolated changes (for example, to create a release branch)
+- Manage concurrent work by multiple teams on the same codebase
+- Isolate risks that are introduced by different sets of changes to the codebase
+- Take snapshots and then support subsequent isolated changes (for example, to create a release branch)
 
 For example, the following illustration shows how the DinnerNow company developed a branch structure to meet its business needs.
 
@@ -107,13 +107,13 @@ To perform this procedure, your **Manage branch** permission must be set to **Al
 
 3.  (Optional) In the **Branch from version** section, click one of the following options in the **By** list:
 
-    * If you click **Latest Version**, the branch is created for the most recent version in version control.
+    - If you click **Latest Version**, the branch is created for the most recent version in version control.
 
-    * If you click **Changeset**, you can specify the number of the changeset in the **Changeset** box. As an alternative, click the ellipses (**...**) to open the **Find Changesets** dialog box.
+    - If you click **Changeset**, you can specify the number of the changeset in the **Changeset** box. As an alternative, click the ellipses (**...**) to open the **Find Changesets** dialog box.
 
       For more information, see [Find and view changesets](find-view-changesets.md).
 
-    * If you click **Date**, you can specify a date in the **Date** box.
+    - If you click **Date**, you can specify a date in the **Date** box.
 
 4.  Click **Branch**.
 
@@ -143,19 +143,19 @@ To perform this procedure, your **Check out** permission and your **Merge** perm
 
 3.  In the **Branch from version** section, click one of the following options in the **By** list:
 
-    * If you click **Latest Version**, the branch is created for the most recent version in version control.
+    - If you click **Latest Version**, the branch is created for the most recent version in version control.
 
-    * If you click **Changeset**, you can specify the number of the changeset in the **Changeset** box. As an alternative, you can click the ellipses (**...**) to open the **Find Changesets** dialog box.
+    - If you click **Changeset**, you can specify the number of the changeset in the **Changeset** box. As an alternative, you can click the ellipses (**...**) to open the **Find Changesets** dialog box.
 
       For more information, see [Find and view changesets](find-view-changesets.md).
 
-    * If you click **Date**, you can specify a date in the **Date** box.
+    - If you click **Date**, you can specify a date in the **Date** box.
 
-    * If you click **Label**, you can type the label name in the **Label** box. As an alternative, you can click the ellipses (**...**) to open the **Find Label** dialog box.
+    - If you click **Label**, you can type the label name in the **Label** box. As an alternative, you can click the ellipses (**...**) to open the **Find Label** dialog box.
 
       For more information, see [Use labels to take a snapshot of your files](use-labels-take-snapshot-your-files.md).
 
-    * If you click **Workspace Version**, the branch is created for the version in your workspace.
+    - If you click **Workspace Version**, the branch is created for the version in your workspace.
 
 4.  (Optional) Select the **Create local working copies for the new branch** check box to create a copy of the version-controlled item on the local workspace. Clear the check box if you do not need a local copy and you want to improve performance by not downloading many items to your computer.
 

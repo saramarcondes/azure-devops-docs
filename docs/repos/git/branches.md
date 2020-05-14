@@ -29,10 +29,10 @@ In this tutorial you learn:
 
 > [!div class="checklist"]
 >
-> * How are Git branches created?
-> * How to create a branch
-> * How to delete a branch
-> * How to use branches
+> - How are Git branches created?
+> - How to create a branch
+> - How to delete a branch
+> - How to use branches
 
 ## Video Overview
 

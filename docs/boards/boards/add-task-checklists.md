@@ -31,13 +31,13 @@ In this article, you'll learn:
 
 > [!div class="checklist"]
 >
-> * How to add a task or set of tasks to a backlog item from your Kanban board
-> * How to mark a task as done
-> * How to expand or collapse the task checklist
-> * How to reorder and reparent tasks or reassign them to a sprint
-> * Keyboard shortcuts for working with the Kanban board
+> - How to add a task or set of tasks to a backlog item from your Kanban board
+> - How to mark a task as done
+> - How to expand or collapse the task checklist
+> - How to reorder and reparent tasks or reassign them to a sprint
+> - Keyboard shortcuts for working with the Kanban board
 
-<img src="media/kanban-task-checklists.png" alt="Kanban board with several task checklists defined" style="border: 1px solid #C3C3C3;" />  
+<img src="media/kanban-task-checklists.png" alt="Kanban board with several task checklists defined" style="border: 1px solid #C3C3C3;" />
 
 [!INCLUDE [temp](../includes/prerequisites-kanban.md)]
 
@@ -55,15 +55,15 @@ In this article, you'll learn:
 
 2.  If you have a number of tasks to add, simply keep typing your task titles and click Enter.
 
-    <img src="media/kanban-board-task-checklists-added.png" alt="Work item with several tasks added" style="border: 1px solid #C3C3C3;" />  
+    <img src="media/kanban-board-task-checklists-added.png" alt="Work item with several tasks added" style="border: 1px solid #C3C3C3;" />
 
 3.  If you have details you want to add about a task, open the parent work item and then choose the ![ ](../media/icons/icon-links-tab-wi.png) links icon/tab.
 
-    <img src="media/add-task-checklist-open-task.png" alt="Open parent work item, Links tab" style="border: 1px solid #C3C3C3;" />  
+    <img src="media/add-task-checklist-open-task.png" alt="Open parent work item, Links tab" style="border: 1px solid #C3C3C3;" />
 
 4.  Double-click the task, or select and press the Enter key, to open it.
 
-    <img src="media/kanban-board-open-task-form.png" alt="Open task work item form from task checklist" style="border: 1px solid #C3C3C3;" />  
+    <img src="media/kanban-board-open-task-form.png" alt="Open task work item form from task checklist" style="border: 1px solid #C3C3C3;" />
 
     Tasks that you create from the Kanban board will show up on your sprint taskboard. Also, tasks that you create from the [sprint backlog](../sprints/assign-work-sprint.md) or [taskboard](../sprints/task-board.md) will show up within tasks checklists on the Kanban board.
 
@@ -99,12 +99,12 @@ To reassign a task to a different sprint, you must open the sprint backlog where
 
 To configure or change the layout of the board, see one of these topics.
 
-* [Add columns](add-columns.md)
-* [WIP limits](wip-limits.md)
-* [Add swimlanes, expedite work](expedite-work.md)
-* [Customize cards](../../boards/boards/customize-cards.md)
-* [Split columns](split-columns.md)
-* [Definition of Done](definition-of-done.md)
+- [Add columns](add-columns.md)
+- [WIP limits](wip-limits.md)
+- [Add swimlanes, expedite work](expedite-work.md)
+- [Customize cards](../../boards/boards/customize-cards.md)
+- [Split columns](split-columns.md)
+- [Definition of Done](definition-of-done.md)
 
 ## Q & A
 
@@ -120,9 +120,9 @@ You can also [add tags and show tags and fields on cards](../../boards/boards/cu
 
 In addition, you can:
 
-* [Add, run, update manual tests](add-run-update-tests.md)
-* [Create a new branch, drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md)
-* [Kanban board controls](kanban-board-controls.md)
+- [Add, run, update manual tests](add-run-update-tests.md)
+- [Create a new branch, drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md)
+- [Kanban board controls](kanban-board-controls.md)
 
 ### REST API resources
 

@@ -21,16 +21,16 @@ While the steps to make the GitHub-Azure Boards connection are different dependi
 
 This article walks you through the following 5 minute installation and configure process:
 
-* <strong>Install and configure</strong> - Choose the GitHub.com repositories you want to connect - Choose the Azure DevOps Services organization and Azure Boards project you want to connect - Authorize connection to Azure Boards - Confirm the repositories you want to connect
-* (Optional) <strong>Get started</strong> - In Azure Boards, create a work item for adding a badge to your GitHub.com repo README file - In GitHub.com, add the badge syntax to a repo README file, commmit the change, and create a pull request for the commit - In Azure Boards, add links to the GitHub commit and pull request to the work item; choose the GitHub pull request link to open the pull request in GitHub.com - In GitHub.com, complete the pull request and view the badge added to your GitHub repo
+- <strong>Install and configure</strong> - Choose the GitHub.com repositories you want to connect - Choose the Azure DevOps Services organization and Azure Boards project you want to connect - Authorize connection to Azure Boards - Confirm the repositories you want to connect
+- (Optional) <strong>Get started</strong> - In Azure Boards, create a work item for adding a badge to your GitHub.com repo README file - In GitHub.com, add the badge syntax to a repo README file, commmit the change, and create a pull request for the commit - In Azure Boards, add links to the GitHub commit and pull request to the work item; choose the GitHub pull request link to open the pull request in GitHub.com - In GitHub.com, complete the pull request and view the badge added to your GitHub repo
 
 You can learn more about the Azure Boards app from the [GitHub Marketplace](https://github.com/marketplace/azure-boards), and Azure Boards from [Azure DevOps Services>Azure Boards](https://azure.microsoft.com/services/devops/boards/).
 
 ## Prerequisites
 
-* You must be an administrator or owner of the GitHub repository you'll be connecting to.
-* To install the Azure Boards app, you must be an administrator or owner of the GitHub repository or GitHub organization.
-* To connect to the Azure Boards project, you must have read permission to the GitHub repository.
+- You must be an administrator or owner of the GitHub repository you'll be connecting to.
+- To install the Azure Boards app, you must be an administrator or owner of the GitHub repository or GitHub organization.
+- To connect to the Azure Boards project, you must have read permission to the GitHub repository.
 
 > [!IMPORTANT]  
 > If your repository is already connected via another authentication type such as OAuth, you'll need to remove that repository from your existing connection before re-connecting it via the GitHub App. Follow the steps in the [remove repositories](#add-or-remove-repositories-from-azure-boards) section before starting the GitHub App configuration.
@@ -99,10 +99,10 @@ At this point, your Azure Boards + GitHub connection is complete. You can skip t
 
     This step performs the following actions in the background:
 
-    * Adds a badge to the README file of the first repository in the list of connected GitHub repositories
-    * Creates a GitHub commit for the update made by adding the badge to the README file
-    * Creates a GitHub pull request to merge the changes made to the README file
-    * Links the GitHub commit and pull request to the work item created in step 1.
+    - Adds a badge to the README file of the first repository in the list of connected GitHub repositories
+    - Creates a GitHub commit for the update made by adding the badge to the README file
+    - Creates a GitHub pull request to merge the changes made to the README file
+    - Links the GitHub commit and pull request to the work item created in step 1.
 
 1.  Lastly, choose <strong>View work item</strong> to open the work item created in step 1. Note the links under the <strong>Development</strong> section that correspond to the commit and pull request created in GitHub.com
 
@@ -189,6 +189,6 @@ Once you've integrated Azure Boards with GitHub using the Azure Boards app, you 
 
 ## Related articles
 
-* [What is Azure Boards?](../../boards/get-started/what-is-azure-boards.md)
-* [Link GitHub commits and pull requests to work items](link-to-from-github.md)
-* [Configure status badges to add to GitHub README files](configure-status-badges.md)
+- [What is Azure Boards?](../../boards/get-started/what-is-azure-boards.md)
+- [Link GitHub commits and pull requests to work items](link-to-from-github.md)
+- [Configure status badges to add to GitHub README files](configure-status-badges.md)

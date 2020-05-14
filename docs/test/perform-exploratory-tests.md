@@ -37,14 +37,14 @@ quality of your product.
 
 1.  Follow the instructions shown to install the Test &amp; Feedback extension in your browser:
 
-    * If you are using Google Chrome, choose the **Install** link to open the
+    - If you are using Google Chrome, choose the **Install** link to open the
       Google Chrome web store and follow the instructions to install the extension.
 
       ![Install extension on Chrome](media/perform-exploratory-tests/getstarted-02.png)
 
       ![Install extension on Chrome](media/perform-exploratory-tests/getstarted-03.png)
 
-    * If you are using Mozilla Firefox 50.0 and higher, choose the **Download** link
+    - If you are using Mozilla Firefox 50.0 and higher, choose the **Download** link
       and save the file to a local folder on your computer.
 
       ![Install extension on Firefox](media/perform-exploratory-tests/getstarted-07.png)
@@ -78,15 +78,15 @@ quality of your product.
     **[Connected mode](connected-mode-exploratory-testing.md)**  
     Available to all users of Azure DevOps and TFS 2015 or later:
 
-    * Users with **Basic** access or higher: Full capture and create capabilities
+    - Users with **Basic** access or higher: Full capture and create capabilities
       to submit bugs, tasks, and test cases. Includes collaboration
       capabilities such as end-to-end traceability, rich insights
       across completed exploratory sessions, simplified tracking
       and triaging for bugs and tasks, and more.
-    * Users with **Stakeholder** access: Full capture and create capabilities,
+    - Users with **Stakeholder** access: Full capture and create capabilities,
       except for test cases, to submit feedback and respond to feedback
       requests from the team.
-    * Feedback experience is available only in Azure DevOps and TFS 2017 or later.<p />
+    - Feedback experience is available only in Azure DevOps and TFS 2017 or later.<p />
 
     **[Standalone mode](standalone-mode-exploratory-testing.md)**  
     Available to everyone. No connection to Azure DevOps or TFS is required. Take notes and screenshots with
@@ -98,7 +98,7 @@ quality of your product.
 
 ## See also
 
-* [FAQs for manual testing](reference-qa.md#tandfext)
+- [FAQs for manual testing](reference-qa.md#tandfext)
 
 ## Next step
 

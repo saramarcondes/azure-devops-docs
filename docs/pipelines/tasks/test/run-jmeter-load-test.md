@@ -22,7 +22,7 @@ Use this task to run Apache JMeter load tests in the cloud.
 
 The agent must have the following capability:
 
-* Azure PowerShell
+- Azure PowerShell
 
 ::: moniker range="> tfs-2018"
 

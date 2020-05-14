@@ -18,9 +18,9 @@ ms.date: 11/19/2018
 
 This article provides a short dictionary of terms and available tools used in tracking work using Sprints and Scrum methods. See also:
 
-* [Agile glossary](../work-items/agile-glossary.md)
-* [Work item field index](../work-items/guidance/work-item-field.md)
-* [Project management and navigation glossary](../../project/navigation/glossary.md)
+- [Agile glossary](../work-items/agile-glossary.md)
+- [Work item field index](../work-items/guidance/work-item-field.md)
+- [Project management and navigation glossary](../../project/navigation/glossary.md)
 
 [!INCLUDE [temp](../../includes/glossary-terms/agile-tools.md)]
 
@@ -42,9 +42,9 @@ By setting team capacity, the team knows exactly the total number of work hours 
 
 With capacity bars, you can quickly see who is over, at, or under capacity. Capacity bars update with each of these activities:
 
-* Tasks are assigned with non-zero remaining work
-* Change in remaining work
-* Date change within the sprint cycle. Individual and team capacity always reflects their capacity from the current day till the end of the sprint.
+- Tasks are assigned with non-zero remaining work
+- Change in remaining work
+- Date change within the sprint cycle. Individual and team capacity always reflects their capacity from the current day till the end of the sprint.
 
 | Capacity colors                                                                             | Capacity bars                                     |
 | ------------------------------------------------------------------------------------------- | ------------------------------------------------- |
@@ -73,7 +73,7 @@ As shown here, a velocity of 20 indicates that it will take five sprints to comp
 [!INCLUDE [temp](../../includes/glossary-terms/product-backlog-item.md)]
 
 <!---
-## Product Backlog Item Effort  
+## Product Backlog Item Effort
 ## Product Burndown Chart
 ## Release
 ## Release Burndown Chart
@@ -160,7 +160,7 @@ Each team is associated with one and only one velocity chart. Velocity will vary
 
 ## Related articles
 
-* [Refine your backlog](../backlogs/best-practices-product-backlog.md)
-* [Scrum best practices](best-practices-scrum.md).
-* [About Sprints and Scrum](scrum-overview.md)
-* [What is Scrum?](/azure/devops/learn/agile/what-is-scrum)
+- [Refine your backlog](../backlogs/best-practices-product-backlog.md)
+- [Scrum best practices](best-practices-scrum.md).
+- [About Sprints and Scrum](scrum-overview.md)
+- [What is Scrum?](/azure/devops/learn/agile/what-is-scrum)

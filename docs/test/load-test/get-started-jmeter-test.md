@@ -18,7 +18,7 @@ monikerRange: '> tfs-2018'
 
 Before you start your load testing:
 
-* [Create your Azure DevOps subscription](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs),
+- [Create your Azure DevOps subscription](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs),
   if you don't have one already.
 
 **To run a JMeter load test:**
@@ -98,11 +98,11 @@ Before you start your load testing:
 
 ## See also
 
-* [FAQs for load testing](reference-qa.md#jmeter-tests)
-* [Load test with Visual Studio](getting-started-with-performance-testing.md)
-* [Load test with Azure DevOps](get-started-simple-cloud-load-test.md)
-* [Load test with Azure portal](app-service-web-app-performance-test.md)
-* [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md)
-* [Analyze load test results using the Load Test Analyzer](/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
+- [FAQs for load testing](reference-qa.md#jmeter-tests)
+- [Load test with Visual Studio](getting-started-with-performance-testing.md)
+- [Load test with Azure DevOps](get-started-simple-cloud-load-test.md)
+- [Load test with Azure portal](app-service-web-app-performance-test.md)
+- [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md)
+- [Analyze load test results using the Load Test Analyzer](/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
 
 [!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)]

@@ -16,8 +16,8 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Members
 
-* `groupByValue`: string.
+- `groupByValue`: string.
 
-* `ids`: [TestCaseResultIdentifier](../../../TFS/TestManagement/Contracts/TestCaseResultIdentifier.md)[].
+- `ids`: [TestCaseResultIdentifier](../../../TFS/TestManagement/Contracts/TestCaseResultIdentifier.md)[].
 
-* `resultsCountByOutcome`: {[key: number]: [AggregatedResultsByOutcome](../../../TFS/TestManagement/Contracts/AggregatedResultsByOutcome.md)}.
+- `resultsCountByOutcome`: {[key: number]: [AggregatedResultsByOutcome](../../../TFS/TestManagement/Contracts/AggregatedResultsByOutcome.md)}.

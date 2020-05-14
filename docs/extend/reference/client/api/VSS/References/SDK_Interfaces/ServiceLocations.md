@@ -19,4 +19,4 @@ Holds a lookup of urls for different services (at different host levels)
 
 ### Members
 
-* `locations`: {[key: string]: {[key: number]: string}}.
+- `locations`: {[key: string]: {[key: number]: string}}.

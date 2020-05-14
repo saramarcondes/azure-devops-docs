@@ -18,15 +18,15 @@ Kubernetes resource view within environments provides a glimpse of the status of
 
 The advantages of using Kubernetes resource views within environments include -
 
-* **Pipeline traceability** - The [Kubernetes manifest task](../tasks/deploy/kubernetes-manifest.md) used for deployments adds additional annotations to portray pipeline traceability in resource views. This can help in identifying the originating Azure DevOps organization, project and pipeline responsible for updates made to an object within the namespace.
+- **Pipeline traceability** - The [Kubernetes manifest task](../tasks/deploy/kubernetes-manifest.md) used for deployments adds additional annotations to portray pipeline traceability in resource views. This can help in identifying the originating Azure DevOps organization, project and pipeline responsible for updates made to an object within the namespace.
 
   > [!div class="mx-imgBorder"] > ![Pipeline traceability](media/k8s-pipeline-traceability.png)
 
-* **Diagnose resource health** - Workload status can be useful in quickly debugging potential mistakes or regressions that could have been introduced by a new deployment. For example, in the case of unconfigured _imagePullSecrets_ resulting in ImagePullBackOff errors, pod status information can help identify the root cause for this issue.
+- **Diagnose resource health** - Workload status can be useful in quickly debugging potential mistakes or regressions that could have been introduced by a new deployment. For example, in the case of unconfigured _imagePullSecrets_ resulting in ImagePullBackOff errors, pod status information can help identify the root cause for this issue.
 
   > [!div class="mx-imgBorder"] > ![ImagePullBackOff](media/k8s-imagepullbackoff.png)
 
-* **Review App** - Review app works by deploying every pull request from Git repository to a dynamic Kubernetes resource under the environment. Reviewers can see how those changes look as well as work with other dependent services before they're merged into the target branch and deployed to production.
+- **Review App** - Review app works by deploying every pull request from Git repository to a dynamic Kubernetes resource under the environment. Reviewers can see how those changes look as well as work with other dependent services before they're merged into the target branch and deployed to production.
 
 ## Kubernetes resource creation
 

@@ -32,39 +32,39 @@ You group elements to appear within columns by using the **Group** and **Column*
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <FORM>  
->       <Layout>  
->         <Group>  
->           <Column PercentWidth="70">  
->             <Group>  
->               <Column PercentWidth="100">  
->                 <Control FieldName="System.Title" Type="FieldControl" Label="Title" LabelPosition="Left" />  
->                 <Control FieldName="System.AreaPath" Type="WorkItemClassificationControl" Label="Area Path" LabelPosition="Left" />  
->                 <Control FieldName="System.IterationPath" Type="WorkItemClassificationControl" Label="&Iteration Path:" LabelPosition="Left" />  
->                 <Group>  
->                   <Column PercentWidth="50">  
->                     <Control FieldName="Microsoft.VSTS.Common.ProductUnit" Type="FieldControl" Label="PU (Use Area Path)" LabelPosition="Left" />  
->                   </Column>  
->                   <Column PercentWidth="50">  
->                     <Control FieldName="Microsoft.VSTS.Common.Priority" Type="FieldControl" Label="Priority" LabelPosition="Left" />  
->                   </Column>  
->                 </Group>  
->               </Column>  
->             </Group>  
->           </Column>  
->           <Column PercentWidth="30">  
->             <Group Label="Status">  
->               <Column PercentWidth="100">  
->                 <Control FieldName="System.Id" Type="FieldControl" Label="Id" LabelPosition="Left" />  
->                 <Control FieldName="System.State" Type="FieldControl" Label="State" LabelPosition="Left" />  
->                 <Control FieldName="System.AssignedTo" Type="FieldControl" Label="Assigned To" LabelPosition="Left" />  
->               </Column>  
->             </Group>  
->           </Column>  
->         </Group>  
-> . . .  
-> </Layout>  
-> </FORM>  
+> <FORM>
+>       <Layout>
+>         <Group>
+>           <Column PercentWidth="70">
+>             <Group>
+>               <Column PercentWidth="100">
+>                 <Control FieldName="System.Title" Type="FieldControl" Label="Title" LabelPosition="Left" />
+>                 <Control FieldName="System.AreaPath" Type="WorkItemClassificationControl" Label="Area Path" LabelPosition="Left" />
+>                 <Control FieldName="System.IterationPath" Type="WorkItemClassificationControl" Label="&Iteration Path:" LabelPosition="Left" />
+>                 <Group>
+>                   <Column PercentWidth="50">
+>                     <Control FieldName="Microsoft.VSTS.Common.ProductUnit" Type="FieldControl" Label="PU (Use Area Path)" LabelPosition="Left" />
+>                   </Column>
+>                   <Column PercentWidth="50">
+>                     <Control FieldName="Microsoft.VSTS.Common.Priority" Type="FieldControl" Label="Priority" LabelPosition="Left" />
+>                   </Column>
+>                 </Group>
+>               </Column>
+>             </Group>
+>           </Column>
+>           <Column PercentWidth="30">
+>             <Group Label="Status">
+>               <Column PercentWidth="100">
+>                 <Control FieldName="System.Id" Type="FieldControl" Label="Id" LabelPosition="Left" />
+>                 <Control FieldName="System.State" Type="FieldControl" Label="State" LabelPosition="Left" />
+>                 <Control FieldName="System.AssignedTo" Type="FieldControl" Label="Assigned To" LabelPosition="Left" />
+>               </Column>
+>             </Group>
+>           </Column>
+>         </Group>
+> . . .
+> </Layout>
+> </FORM>
 > ```
 
 <a name="FormElements"></a>
@@ -141,7 +141,7 @@ You can control the spacing and size of many elements on a work item form by spe
 | `Label`          | Optional. Text to appear for a control or group. If a label is specified, it overrides any label that is associated with the field in the metadata for the control.<br /> Required for the **Tab** element. Text to appear for a tab.<br /> _LabelText_ is a text string that contains between 1 and 80 characters.                                                                                                                                                                   | `Control`<br /> `Group`<br /> `Tab`                                 |
 | `LabelPosition`  | Optional. The label position relative to the field data. Possible values are Top, Bottom, Left, and Right.                                                                                                                                                                                                                                                                                                                                                                            | `Control`                                                           |
 | `LabelSpacing`   | Optional. Specifies the number of pixels between the label and the edit region of the control.                                                                                                                                                                                                                                                                                                                                                                                        | `Layout`                                                            |
-| `Margin`         | Optional. String of the form (left, top, right, bottom) that specifies, in pixels, the amount of space around the control and between the control and its neighbors. You can vary the amount of space on each side.<br /> Pattern value: ^\\(\d+\\,\d+\\,\d+\\,\d+\\)$<br /> Pattern value example: (2,0,2,0)                                                                                                                                                                         | `Control`<br /> `Group`<br /> `Layout`<br /> `Tab`<br /> `TabGroup` |
+| `Margin`         | Optional. String of the form (left, top, right, bottom) that specifies, in pixels, the amount of space around the control and between the control and its neighbors. You can vary the amount of space on each side.<br /> Pattern value: ^\\(\d+\\,\d+\\,\d+\\,\d+\\)\$<br /> Pattern value example: (2,0,2,0)                                                                                                                                                                        | `Control`<br /> `Group`<br /> `Layout`<br /> `Tab`<br /> `TabGroup` |
 | `MinimumSize`    | Optional. String of the form (_width_, _height)_. This value specifies the minimum size for the form itself. When the container control smaller than this size, horizontal and vertical scrollbars appear.                                                                                                                                                                                                                                                                            | `Control`<br /> `Layout`                                            |
 | `Name`           | Optional. Name for the control. If unspecified, the name is the same as the `FieldName`.                                                                                                                                                                                                                                                                                                                                                                                              | `Control`                                                           |
 | `Padding`        | Optional. String of the form (top, bottom, left, right) that specifies, in pixels, the amount of room around the outside border of the control and around the inside border. You can vary the amount of space on each side.                                                                                                                                                                                                                                                           | `Control`<br /> `Group`<br /> `Layout`<br /> `Tab`<br /> `TabGroup` |
@@ -159,14 +159,14 @@ The `WebpageControlOptions` element and its child elements have the following sy
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <WebpageControlOptions AllowScript="true | false" ReloadOnParamChange="true | false" >  
->       <Link UrlRoot="UrlRoot" UrlPath ="UrlPathWithParameters">  
->       <Param index="IndexValue" value="ParamValue" type ="Original | Current"/>  
->       </Link>  
->       <Content>  
->       <![CDATA[Contents of HTML]]>  
->       </Content>  
-> </WebpageControlOptions>  
+> <WebpageControlOptions AllowScript="true | false" ReloadOnParamChange="true | false" >
+>       <Link UrlRoot="UrlRoot" UrlPath ="UrlPathWithParameters">
+>       <Param index="IndexValue" value="ParamValue" type ="Original | Current"/>
+>       </Link>
+>       <Content>
+>       <![CDATA[Contents of HTML]]>
+>       </Content>
+> </WebpageControlOptions>
 > ```
 
 You use the elements that are described in the following table to define plain text or hyperlinked labels, add hyperlinks to a field, or display Web page content in a work item form. For more information, see [Provide help text, hyperlinks, or web content](provide-help-text-hyperlinks-web-content-form.md).
@@ -187,20 +187,20 @@ You use the `LinksControlOptions` element to define the options for controlling 
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <LinksControlOptions>  
->    <WorkItemLinkFilters FilterType="include | exclude | includeAll | excludeAll">  
->        <Filter LinkType="linkTypeRefName" FilterOn="reverseName | forwardName" />  
->    </WorkItemLinkFilters>  
->    <ExternalLinkFilters FilterType ="include | exclude | includeAll | excludeAll">  
->        <Filter LinkType="externalLinkName"/>  
->    </ExternalLinkFilters>  
->    <WorkItemTypeFilters Scope=" project | all" FilterType=" include | exclude | includeAll" />  
->        <Filter WorkItemType="workItemTypeReferenceName"/>  
->    </WorkItemTypeFilters>  
->    <LinkColumns>  
->       <LinkColumn RefName="referenceName" | LinkAttribute="linkAttributeName"/>  
->    </LinkColumns>  
-> </LinksControlOptions>  
+> <LinksControlOptions>
+>    <WorkItemLinkFilters FilterType="include | exclude | includeAll | excludeAll">
+>        <Filter LinkType="linkTypeRefName" FilterOn="reverseName | forwardName" />
+>    </WorkItemLinkFilters>
+>    <ExternalLinkFilters FilterType ="include | exclude | includeAll | excludeAll">
+>        <Filter LinkType="externalLinkName"/>
+>    </ExternalLinkFilters>
+>    <WorkItemTypeFilters Scope=" project | all" FilterType=" include | exclude | includeAll" />
+>        <Filter WorkItemType="workItemTypeReferenceName"/>
+>    </WorkItemTypeFilters>
+>    <LinkColumns>
+>       <LinkColumn RefName="referenceName" | LinkAttribute="linkAttributeName"/>
+>    </LinkColumns>
+> </LinksControlOptions>
 > ```
 
 Specifically, you use the elements that are summarized in the following table. For more information about how to use these elements, see [Define link controls to restrict link relationships](define-link-controls.md) and [LinksControlOptions](linkscontroloptions-xml-elements.md).
@@ -218,5 +218,5 @@ Specifically, you use the elements that are summarized in the following table. F
 
 ## Related articles
 
-* [Customize the work tracking experience](../customize-work.md)
-* [Design the work item form](design-work-item-form.md)
+- [Customize the work tracking experience](../customize-work.md)
+- [Design the work item form](design-work-item-form.md)

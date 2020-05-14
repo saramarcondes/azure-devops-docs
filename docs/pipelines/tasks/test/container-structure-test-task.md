@@ -16,10 +16,10 @@ The Container Structure Tests provide a powerful framework to validate the struc
 
 Tests within this framework are specified through a YAML or JSON config file. Multiple config files may be specified in a single test run. The config file will be loaded in by the test runner, which will execute the tests in order. Within this config file, four types of tests can be written:
 
-* Command Tests (testing output/error of a specific command issued)
-* File Existence Tests (making sure a file is, or isn't, present in the file system of the image)
-* File Content Tests (making sure files in the file system of the image contain, or do not contain, specific contents)
-* Metadata Test, singular (making sure certain container metadata is correct)
+- Command Tests (testing output/error of a specific command issued)
+- File Existence Tests (making sure a file is, or isn't, present in the file system of the image)
+- File Content Tests (making sure files in the file system of the image contain, or do not contain, specific contents)
+- Metadata Test, singular (making sure certain container metadata is correct)
 
 ## Container Structure Test Task
 

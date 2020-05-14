@@ -15,6 +15,6 @@ Module path: `TFS/VersionControl/Contracts`
 
 ### Members
 
-* `genre`: string.
+- `genre`: string.
 
-* `name`: string.
+- `name`: string.

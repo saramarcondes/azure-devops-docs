@@ -39,8 +39,8 @@ GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/
 | objectId | string | | SHA1 hash of the file. You can get the objectId of a file by [getting its metadata](./items.md#afile).
 | Query
 | api-version| string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| $format | enum | Accept header | Options: `json`, `zip`, `text`, `octetstream`. If not set, defaults to the MIME type set in the Accept header.
-| download | bool | false | If true, prompt for a download rather than rendering in a browser. Note: this value defaults to true if $format is `zip`
+| \$format | enum | Accept header | Options: `json`, `zip`, `text`, `octetstream`. If not set, defaults to the MIME type set in the Accept header.
+| download | bool | false | If true, prompt for a download rather than rendering in a browser. Note: this value defaults to true if \$format is `zip`
 | fileName | string | object ID | Provide a fileName to use for a download.
 
 [!INCLUDE [ID_vs_Name](_data/id_or_name.md)]

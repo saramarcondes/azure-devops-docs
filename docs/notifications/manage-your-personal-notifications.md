@@ -25,9 +25,9 @@ In this tutorial, learn how to do the following tasks:
 
 > [!div class="checklist"]
 >
-> * View your notifications
-> * Add a custom subscription
-> * Unsubscribe or opt out of a team or project subscription
+> - View your notifications
+> - Add a custom subscription
+> - Unsubscribe or opt out of a team or project subscription
 
 ::: moniker-end
 
@@ -58,8 +58,7 @@ From the web portal, select the icon with your initials or picture, and then sel
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
-> [!div class="mx-imgBorder"]
-> ![Navigate to personal notifications page](media/nav-personal-notifications-hub.png)
+> [!div class="mx-imgBorder"] > ![Navigate to personal notifications page](media/nav-personal-notifications-hub.png)
 > ::: moniker-end
 
 ::: moniker range="< tfs-2017"
@@ -82,9 +81,9 @@ From the web portal, select the icon with your initials or picture, and then sel
 
     The following alert types appear when your project is provisioned with Git for version control:
 
-    * **A commit is pushed to this project**
-    * **A pull request I've participated in is created or updated**
-    * **A build quality changes**
+    - **A commit is pushed to this project**
+    - **A pull request I've participated in is created or updated**
+    - **A build quality changes**
 
     > [!TIP]  
     > When you clear an alert, you also clear all email addresses defined for the alert.
@@ -138,7 +137,7 @@ This view shows all subscriptions that you've created or that have been created 
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
-<img src="media/unsubscribe-personal-notifications.png" alt="Personal notification subscriptions" style="border: 2px solid #C3C3C3;" />  
+<img src="media/unsubscribe-personal-notifications.png" alt="Personal notification subscriptions" style="border: 2px solid #C3C3C3;" />
 
 ::: moniker-end
 
@@ -253,15 +252,15 @@ For example, here we turn off the Build completes subscription.
 
 ## Related articles
 
-* [Set your preferences](../organizations/settings/set-your-preferences.md)
-* [Default and supported notifications](oob-built-in-notifications.md)
-* [Follow a specific work item](../boards/work-items/follow-work-items.md)
-* [Manage notifications for a team](manage-team-group-notifications.md)
-* [Change your preferred email address](change-email-address.md)
+- [Set your preferences](../organizations/settings/set-your-preferences.md)
+- [Default and supported notifications](oob-built-in-notifications.md)
+- [Follow a specific work item](../boards/work-items/follow-work-items.md)
+- [Manage notifications for a team](manage-team-group-notifications.md)
+- [Change your preferred email address](change-email-address.md)
 
 ### Limitations
 
-* The user interface no longer supports creating plain text email subscriptions.
+- The user interface no longer supports creating plain text email subscriptions.
 
 <!--- TFS 2017 Update 1 settings
 

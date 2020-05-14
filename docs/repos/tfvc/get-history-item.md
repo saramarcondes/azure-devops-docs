@@ -19,15 +19,15 @@ One advantage of a version control system is that you can look back in time to g
 
 Often when you look over the history of a file, folder, or branch, you are trying to solve a problem or answer a question. By using the Team Foundation version control **History** window, you can more easily resolve questions and situations such as the following:
 
-* What changes have been made in the past weeks or months?
+- What changes have been made in the past weeks or months?
 
-* What work item was completed by this change to the file?
+- What work item was completed by this change to the file?
 
-* Who checked in this change? What did they say about the change? What did they change?
+- Who checked in this change? What did they say about the change? What did they change?
 
-* Unexpected changes occurred in this file, causing a bug in an area of the product that we thought was stable. Who made this change, and why did they make it?
+- Unexpected changes occurred in this file, causing a bug in an area of the product that we thought was stable. Who made this change, and why did they make it?
 
-* A change in this branch fixes a bug that also needed to be fixed in other branches. How can I make sure that the change was merged to those branches?
+- A change in this branch fixes a bug that also needed to be fixed in other branches. How can I make sure that the change was merged to those branches?
 
 Use the **History** window to get detailed historical data about a project, branch, folder, or file.
 
@@ -37,18 +37,18 @@ You must be one of the **Contributors** for your project. See [Team Foundation S
 
 To display the History window:
 
-* In [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md), select an item, open its shortcut menu, and then choose **View History**.
+- In [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md), select an item, open its shortcut menu, and then choose **View History**.
 
   > [!TIP]
   > You can customize the position of the window by right-clicking the title and then choosing one of these options: **Float**, **Dock**, or **Dock as Tabbed Document**.
 
-* Use the [History Command](history-command.md).
+- Use the [History Command](history-command.md).
 
 The **History** window displays the historical data about the item in two tabs:
 
-* The [Changesets tab](get-history-item.md#changesets_tab) lists every change (including edits, renames, and merges) made to the item.
+- The [Changesets tab](get-history-item.md#changesets_tab) lists every change (including edits, renames, and merges) made to the item.
 
-* The [Labels tab](get-history-item.md#labels_tab) lists every label that has been applied to the item.
+- The [Labels tab](get-history-item.md#labels_tab) lists every label that has been applied to the item.
 
 <a name="changesets_tab"><a/>
 
@@ -56,22 +56,22 @@ The **History** window displays the historical data about the item in two tabs:
 
 The **Changesets** tab displays detailed data about every change that has been made to an item. All changesets that have modified the item are listed in a table that includes the following columns:
 
-* **Changeset** The ID of the changeset.
+- **Changeset** The ID of the changeset.
 
-* **User** The name of the user who checked in the changeset.
+- **User** The name of the user who checked in the changeset.
 
-* **Date** The date and time the changeset was checked in.
+- **Date** The date and time the changeset was checked in.
 
-* **Comment** The comment entered by the user who checked in the changeset.
+- **Comment** The comment entered by the user who checked in the changeset.
 
 > [!NOTE]
 > If you open this window by using the **History** command and you are displaying data about a project, branch, or folder, then the history of children items (for example, the files contained by a folder) is shown only if you use the **/recursive** option.
 
 If the item is a file, then additional data is displayed in the following columns:
 
-* **Change** The types of changes that were made to the file with the changeset. Examples of values that can appear in this column include **add**, **edit**, **rename**, and **merge**.
+- **Change** The types of changes that were made to the file with the changeset. Examples of values that can appear in this column include **add**, **edit**, **rename**, and **merge**.
 
-* **Path** The path to the file.
+- **Path** The path to the file.
 
 > [!TIP]
 > Sometimes you need to share this kind of data with someone else. You can select one or more rows from the table in the **Labels** tab, right-click them, click **Copy** to copy the data to the clipboard, and then paste the data into an e-mail message, document, or spreadsheet.
@@ -123,15 +123,15 @@ By using the **Changesets** tab, you can perform the following tasks:
 
 All labels that have been applied to the item are listed in a table that includes the following columns:
 
-* **Name** The name of the label.
+- **Name** The name of the label.
 
-* **User** The user who applied the label.
+- **User** The user who applied the label.
 
-* **Date** The date and time the label was applied.
+- **Date** The date and time the label was applied.
 
-* **Changeset** The changeset to which the label applies.
+- **Changeset** The changeset to which the label applies.
 
-* **Comment** The comment made by the user who applied the label.
+- **Comment** The comment made by the user who applied the label.
 
 > [!NOTE]
 > When you display historical data about a project, branch, or folder, the data about labels applied to children items (for example, the files contained by a folder) is not shown.

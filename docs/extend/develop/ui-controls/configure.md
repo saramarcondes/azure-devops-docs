@@ -35,11 +35,11 @@ This example shows the steps before you can add a control to the hub that we cre
 
 ## Try these next
 
-* [Use the grid control](./grido.md)
-* [Use the menu control](./menubaro.md)
-* [Use the treeview control](./treeviewo.md)
-* [Use the combo control](./comboo.md)
-* [Use the modal dialog control](./modaldialogo.md)
-* [Use the splitter control](./splittero.md)
-* [Use the wait control](./waitcontrolo.md)
-* [Use the pivot filter control](./pivotfiltero.md)
+- [Use the grid control](./grido.md)
+- [Use the menu control](./menubaro.md)
+- [Use the treeview control](./treeviewo.md)
+- [Use the combo control](./comboo.md)
+- [Use the modal dialog control](./modaldialogo.md)
+- [Use the splitter control](./splittero.md)
+- [Use the wait control](./waitcontrolo.md)
+- [Use the pivot filter control](./pivotfiltero.md)

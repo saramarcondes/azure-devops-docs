@@ -51,6 +51,6 @@ You must have [Project Collection Administrator or organization Owner permission
 
 ## Related articles
 
-* [Manage paid access for users](buy-basic-access-add-users.md)
-* [Buy cloud-based load testing](buy-load-testing-vs.md)
-* [Buy CI/CD for Azure DevOps](buy-more-build-vs.md)
+- [Manage paid access for users](buy-basic-access-add-users.md)
+- [Buy cloud-based load testing](buy-load-testing-vs.md)
+- [Buy CI/CD for Azure DevOps](buy-more-build-vs.md)

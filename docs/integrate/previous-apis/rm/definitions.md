@@ -33,7 +33,7 @@ GET https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/re
 | project | string | [Project](../tfs/projects.md) ID or name.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| $expand | enum {<br/>&nbsp;&nbsp;environments,<br/>&nbsp;&nbsp;artifacts,<br/>&nbsp;&nbsp;none<br/>} | The property that should be expanded in the list of Release Definition.
+| \$expand | enum {<br/>&nbsp;&nbsp;environments,<br/>&nbsp;&nbsp;artifacts,<br/>&nbsp;&nbsp;none<br/>} | The property that should be expanded in the list of Release Definition.
 
 #### Sample request
 

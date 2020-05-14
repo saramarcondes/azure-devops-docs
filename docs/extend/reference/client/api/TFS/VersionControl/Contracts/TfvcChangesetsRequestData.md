@@ -15,8 +15,8 @@ Module path: `TFS/VersionControl/Contracts`
 
 ### Members
 
-* `changesetIds`: number[].
+- `changesetIds`: number[].
 
-* `commentLength`: number.
+- `commentLength`: number.
 
-* `includeLinks`: boolean. Whether to include the \_links field on the shallow references
+- `includeLinks`: boolean. Whether to include the \_links field on the shallow references

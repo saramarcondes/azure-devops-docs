@@ -64,6 +64,6 @@ When you clone a Hosted XML process to an inherited process, the customizations 
 
 ## Related articles
 
-* [About process customization and inherited processes](inheritance-process-model.md)
-* [Clone a Hosted XML process to Inheritance](upgrade-hosted-to-inherited.md)
-* [Change a project from a Hosted XML process to Inheritance](change-process-from-hosted-to-inherited.md)
+- [About process customization and inherited processes](inheritance-process-model.md)
+- [Clone a Hosted XML process to Inheritance](upgrade-hosted-to-inherited.md)
+- [Change a project from a Hosted XML process to Inheritance](change-process-from-hosted-to-inherited.md)

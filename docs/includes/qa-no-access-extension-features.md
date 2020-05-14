@@ -2,7 +2,7 @@
 
 A: This can happen for the following reasons:
 
-* Most extensions require that users have at least Basic access, not Stakeholder.
+- Most extensions require that users have at least Basic access, not Stakeholder.
   For example, you can install the free
   [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search),
   but each user must have at least Basic access to search for code.
@@ -15,7 +15,7 @@ A: This can happen for the following reasons:
 
 <a name="trial-expired"></a>
 
-* If you're using an organization, and you started a free extension trial,
+- If you're using an organization, and you started a free extension trial,
   your trial might have expired. To check whether your trial expired:
 
   1.  On your organization toolbar, go to **Users**.
@@ -24,7 +24,7 @@ A: This can happen for the following reasons:
 
 <a name="extension-not-assigned"></a>
 
-* If you're using an organization, and you paid for this extension,
+- If you're using an organization, and you paid for this extension,
   make sure that you assigned this extension to users.
 
   1.  On your organization toolbar, go to **Users**.

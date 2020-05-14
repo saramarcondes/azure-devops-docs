@@ -46,19 +46,19 @@ The main difference is that there are now two main layout sections within the **
 > ```XML
 > <FORM>
 >    <Layout HideReadOnlyEmptyFields="true" HideControlBorders="true">
->        . . .  
+>        . . .
 >    </Layout>
 >    <WebLayout>
->        . . .  
+>        . . .
 >    </WebLayout>
 > </FORM>
 > ```
 
 See the following topics to make the indicated customizations:
 
-* To customize the form for the web portal (**WebLayout** node), see [WebLayout and Control XML elements](xml/weblayout-xml-elements.md)
-* To add a scoped links control to the form for the web portal (**LinksControlOptions**), see [LinksControlOptions XML elements](xml/linkscontroloptions-xml-elements.md)
-* To customize the client form (**Layout** node), see [Layout XML elements](xml/layout-xml-element-reference.md).
+- To customize the form for the web portal (**WebLayout** node), see [WebLayout and Control XML elements](xml/weblayout-xml-elements.md)
+- To add a scoped links control to the form for the web portal (**LinksControlOptions**), see [LinksControlOptions XML elements](xml/linkscontroloptions-xml-elements.md)
+- To customize the client form (**Layout** node), see [Layout XML elements](xml/layout-xml-element-reference.md).
 
 <a id="witadmin"> </a>
 
@@ -80,7 +80,7 @@ See the following topics to make the indicated customizations:
 1.  Export the WIT definition file where you want to modify or add a field. Specify the name of the WIT and a name for the file.
 
     ```
-    witadmin exportwitd /collection:CollectionURL /p:ProjectName /n:TypeName /f:"DirectoryPath/FileName.xml"  
+    witadmin exportwitd /collection:CollectionURL /p:ProjectName /n:TypeName /f:"DirectoryPath/FileName.xml"
     ```
 
     An example of a <em>CollectionURL</em> for an organization is https:\//dev.azure.com/_OrganizationName_.
@@ -90,7 +90,7 @@ See the following topics to make the indicated customizations:
 1.  Import the WIT definition file.
 
     ```
-    witadmin importwitd /collection:CollectionURL /p:ProjectName /f:"DirectoryPath/FileName.xml"  
+    witadmin importwitd /collection:CollectionURL /p:ProjectName /f:"DirectoryPath/FileName.xml"
     ```
 
 1.  Open either the web portal to view the changes. If the client is already open, refresh the page.
@@ -107,10 +107,10 @@ See the following topics to make the indicated customizations:
 
 The new web form resizes depending on the width available and the number of sections defined. At maximum width, in most web browsers, each section within a page will display within its own column. As the display width decreases, each section resizes proportionally as follows:
 
-* For four sections: 40%, 20%, 20%, and 20%
-* For three sections: 50%, 25%, and 25%
-* For two Sections: 66% and 33%
-* For one Section: 100%.
+- For four sections: 40%, 20%, 20%, and 20%
+- For three sections: 50%, 25%, and 25%
+- For two Sections: 66% and 33%
+- For one Section: 100%.
 
 When the display width won't accommodate the columnar display of each section, sections appear stacked within a column.
 
@@ -136,7 +136,7 @@ Global lists are managed differently in Hosted XML than they are on Azure DevOps
         <LISTITEM value="Open" />
         <LISTITEM value="Closed" />
       </GLOBALLIST>
-     </GLOBALLISTS>  
+     </GLOBALLISTS>
      ...
 ```
 
@@ -148,9 +148,9 @@ By default the global lists will be attached to the Shared Steps work item type.
 
 If you're new to WIT customization, see [Add and modify a WIT](add-modify-wit.md).
 
-* [Manage new form rollout](manage-new-form-rollout.md)
-* [New work item experience](process/new-work-item-experience.md)
-* [WebLayout and Control XML elements](xml/weblayout-xml-elements.md)
+- [Manage new form rollout](manage-new-form-rollout.md)
+- [New work item experience](process/new-work-item-experience.md)
+- [WebLayout and Control XML elements](xml/weblayout-xml-elements.md)
 
 ### Import warnings and errors
 

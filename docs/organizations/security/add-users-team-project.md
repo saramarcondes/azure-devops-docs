@@ -63,13 +63,13 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
 
 3.  Under **Groups**, choose one of the following options:
 
-    * **Readers**: To add users who require read-only access to the project, choose .
-    * **Contributors**: To add users who contribute fully to this project or who have been granted Stakeholder access.
-    * **Project Administrators**: To add users who need to administrate the project. To learn more, see [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
+    - **Readers**: To add users who require read-only access to the project, choose .
+    - **Contributors**: To add users who contribute fully to this project or who have been granted Stakeholder access.
+    - **Project Administrators**: To add users who need to administrate the project. To learn more, see [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
 
     Here we choose the **Contributors** group.
 
-        	> [!div class="mx-imgBorder"]  
+        	> [!div class="mx-imgBorder"]
         	> ![Security page, Contributors group](media/add-users/open-contributors-groups-s154-new.png)
 
 4.  Next, choose the **Members** tab.
@@ -86,7 +86,7 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
 
 6.  Enter the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meet your requirements.
 
-        	![Add users and group dialog](media/add-users/invite-members-contributors-s154.png)  
+        	![Add users and group dialog](media/add-users/invite-members-contributors-s154.png)
 
     > [!NOTE]
     > The first time you add a user or group to Azure DevOps,
@@ -112,16 +112,16 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
 
 3.  Under **Groups**, choose one of the following options:
 
-    * **Readers**: To add users who require read-only access to the project, choose .
-    * **Contributors**: To add users who contribute fully to this project or who have been granted Stakeholder access.
-    * **Project Administrators**: To add users who need to administrate the project. To learn more, see [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
+    - **Readers**: To add users who require read-only access to the project, choose .
+    - **Contributors**: To add users who contribute fully to this project or who have been granted Stakeholder access.
+    - **Project Administrators**: To add users who need to administrate the project. To learn more, see [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
 
 4.  Next, choose the **Members** tab.
 
     Here we choose the **Contributors** group.
 
-        	> [!div class="mx-imgBorder"]  
-        	> ![Security page, Contributors group, Membership page](media/add-users/add-members-to-contributors-group.png)  
+        	> [!div class="mx-imgBorder"]
+        	> ![Security page, Contributors group, Membership page](media/add-users/add-members-to-contributors-group.png)
 
     By default, the default team group and any other teams you add to the project, are included as members of the **Contributors** group. Add a new user as a member of a team instead, and the user automatically inherits Contributor permissions.
 
@@ -132,7 +132,7 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
 
 6.  Enter the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. choose the match(es) that meet your requirements.
 
-        	![Add users and group dialog](media/project-level-permissions-add-a-user.png)  
+        	![Add users and group dialog](media/project-level-permissions-add-a-user.png)
 
     > [!NOTE]
     > The first time you add a user or group to Azure DevOps,
@@ -168,16 +168,16 @@ Azure DevOps CLI commands aren't supported for adding users to a project at this
 
 3.  Under **Groups**, choose one of the following options:
 
-    * **Readers**: To add users who require read-only access to the project, choose .
-    * **Contributors**: To add users who contribute fully to this project or who have been granted Stakeholder access.
-    * **Project Administrators**: To add users who need to administrate the project. To learn more, see [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
+    - **Readers**: To add users who require read-only access to the project, choose .
+    - **Contributors**: To add users who contribute fully to this project or who have been granted Stakeholder access.
+    - **Project Administrators**: To add users who need to administrate the project. To learn more, see [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
 
 4.  Next, choose the **Members** tab.
 
     Here we choose the **Contributors** group.
 
-        	> [!div class="mx-imgBorder"]  
-        	> ![Security page, Contributors group, Membership page](media/add-users/add-members-to-contributors-group.png)  
+        	> [!div class="mx-imgBorder"]
+        	> ![Security page, Contributors group, Membership page](media/add-users/add-members-to-contributors-group.png)
 
     By default, the default team group and any other teams you add to the project, are included as members of the **Contributors** group. Add a new user as a member of a team instead, and the user automatically inherits Contributor permissions.
 
@@ -188,7 +188,7 @@ Azure DevOps CLI commands aren't supported for adding users to a project at this
 
 6.  Enter the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. choose the match(es) that meet your requirements.
 
-        	![Add users and group dialog](media/project-level-permissions-add-a-user.png)  
+        	![Add users and group dialog](media/project-level-permissions-add-a-user.png)
 
     > [!NOTE]
     > The first time you add a user or group to Azure DevOps,
@@ -214,16 +214,16 @@ Azure DevOps CLI commands aren't supported for adding users to a project at this
 
 3.  Choose **Security** and under **Groups**, choose one of the following options:
 
-    * **Readers**: To add users who require read-only access to the project, choose .
-    * **Contributors**: To add users who contribute fully to this project or who have been granted Stakeholder access.
-    * **Project Administrators**: To add users who need to administrate the project. To learn more, see [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
+    - **Readers**: To add users who require read-only access to the project, choose .
+    - **Contributors**: To add users who contribute fully to this project or who have been granted Stakeholder access.
+    - **Project Administrators**: To add users who need to administrate the project. To learn more, see [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
 
 4.  Next, choose the **Members** tab.
 
     Here we choose the Contributors group.
 
-        	> [!div class="mx-imgBorder"]  
-        	> ![Security page, Contributors group, Membership page](media/add-users/add-members-to-contributors-group.png)  
+        	> [!div class="mx-imgBorder"]
+        	> ![Security page, Contributors group, Membership page](media/add-users/add-members-to-contributors-group.png)
 
     > [!TIP]
     > Managing users is much easier [using groups](../../organizations/security/about-permissions.md), not individual users.
@@ -291,7 +291,7 @@ Several Agile tools, like capacity planning, team alerts, and dashboard widgets 
 
 5.  To remove members, return to this page, highlight the user name and choose **Remove**.
 
-        	> [!div class="mx-imgBorder"]  
+        	> [!div class="mx-imgBorder"]
         	> ![Team profile page, remove a team member, new nav](media/add-users/team-page-remove-team-member-preview.png)
 
     > [!NOTE]
@@ -331,7 +331,7 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 
 5.  To remove members, return to this page, highlight the user name and choose **Remove**.
 
-        	> [!div class="mx-imgBorder"]  
+        	> [!div class="mx-imgBorder"]
         	> ![Team profile page, remove a team member, new nav](media/add-users/team-page-remove-team-member-vert.png)
 
     > [!NOTE]
@@ -363,11 +363,11 @@ az devops team list-member --team
 
 #### Parameters
 
-* **team**: Required. Name or ID of the team to show.
-* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-* **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
-* **skip**: Optional. Number of members to skip.
-* **top**: Optional. Maximum number of members to return.
+- **team**: Required. Name or ID of the team to show.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **skip**: Optional. Number of members to skip.
+- **top**: Optional. Maximum number of members to return.
 
 #### Example
 
@@ -399,9 +399,9 @@ az devops team show --team
 
 #### Parameters
 
-* **team**: Required. Name or ID of the team to show.
-* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-* **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **team**: Required. Name or ID of the team to show.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
 
 #### Example
 
@@ -453,7 +453,7 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 
 5.  To remove members, return to this page, highlight the user name and choose **Remove**.
 
-        	> [!div class="mx-imgBorder"]  
+        	> [!div class="mx-imgBorder"]
         	> ![Team profile page, remove a team member, new nav](media/add-users/team-page-remove-team-member-vert.png)
 
     > [!NOTE]
@@ -513,8 +513,8 @@ If your on-premises deployment is integrated with SQL Server Reports, you need t
 
 If your on-premises deployment is integrated with a SharePoint product or SQL Server Reports, you need to manage membership for those products separately from their websites.
 
-* [Set SharePoint site permissions](../../organizations/security/set-sharepoint-permissions.md)
-* [Grant permissions to view or create SQL Server reports in Azure DevOps Server](../../report/admin/grant-permissions-to-reports.md)
+- [Set SharePoint site permissions](../../organizations/security/set-sharepoint-permissions.md)
+- [Grant permissions to view or create SQL Server reports in Azure DevOps Server](../../report/admin/grant-permissions-to-reports.md)
 
 ::: moniker-end
 
@@ -524,8 +524,8 @@ If your on-premises deployment is integrated with a SharePoint product or SQL Se
 
 ## Related articles
 
-* To view permissions for yourself or another user, see [View permissions](view-permissions.md).
-* [Set Git or TFVC repository permissions](set-git-tfvc-repository-permissions.md)
-* [Set Git branch permissions](../../repos/git/branch-permissions.md)
-* [Set build and release permissions](../../pipelines/policies/set-permissions.md)
-* [Set permissions and access for work tracking](set-permissions-access-work-tracking.md)
+- To view permissions for yourself or another user, see [View permissions](view-permissions.md).
+- [Set Git or TFVC repository permissions](set-git-tfvc-repository-permissions.md)
+- [Set Git branch permissions](../../repos/git/branch-permissions.md)
+- [Set build and release permissions](../../pipelines/policies/set-permissions.md)
+- [Set permissions and access for work tracking](set-permissions-access-work-tracking.md)

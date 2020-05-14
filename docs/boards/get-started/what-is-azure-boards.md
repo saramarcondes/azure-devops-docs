@@ -143,10 +143,10 @@ Create dashboards that track status and trends of work being accomplished. Set n
 
 To learn more, see one of the following articles:
 
-* [Discussion section](plan-track-work.md#discussion)
-* [Follow a work item](../work-items/follow-work-items.md)
-* [Add and manage dashboards](../../report/dashboards/dashboards.md)
-* [Set personal notifications](../../notifications/howto-manage-personal-notifications.md).
+- [Discussion section](plan-track-work.md#discussion)
+- [Follow a work item](../work-items/follow-work-items.md)
+- [Add and manage dashboards](../../report/dashboards/dashboards.md)
+- [Set personal notifications](../../notifications/howto-manage-personal-notifications.md).
 
 ## Work in sprints, implement Scrum
 
@@ -210,19 +210,19 @@ Plan sprints by assigning work to current or future sprints. Forecast work that 
 
 To learn more, see one of the following articles:
 
-* [Assign work to sprints](../sprints/assign-work-sprint.md)
-* [Forecast work](../sprints/forecast.md)
-* [Set team capacity](../sprints/set-capacity.md)
-* [Bulk modify work items](../backlogs/bulk-modify-work-items.md).
+- [Assign work to sprints](../sprints/assign-work-sprint.md)
+- [Forecast work](../sprints/forecast.md)
+- [Set team capacity](../sprints/set-capacity.md)
+- [Bulk modify work items](../backlogs/bulk-modify-work-items.md).
 
 ## Work effectively
 
 You'll find you can work more effectively through these actions:
 
-* Organize work into a hierarchy by grouping issues under epics, and tasks under issues.
-* Create queries and quickly triage issues and tasks.
-* Create work item templates to help contributors quickly add and define open meaningful issues and tasks.
-* Quickly find work items that are assigned to you. Pivot or filter your work items based on other criteria, such as work items that you follow, that you're mentioned in, or that you viewed or updated.
+- Organize work into a hierarchy by grouping issues under epics, and tasks under issues.
+- Create queries and quickly triage issues and tasks.
+- Create work item templates to help contributors quickly add and define open meaningful issues and tasks.
+- Quickly find work items that are assigned to you. Pivot or filter your work items based on other criteria, such as work items that you follow, that you're mentioned in, or that you viewed or updated.
 
 #### [Agile process](#tab/agile-process)
 
@@ -279,11 +279,11 @@ You'll find you can work more effectively through these actions:
 
 To learn more, see one of the following articles:
 
-* [Organize your backlog](../backlogs/organize-backlog.md)
-* [View and run queries](../queries/view-run-query.md)
-* [Triage work](../queries/triage-work-items.md)
-* [Use work item templates](../backlogs/work-item-template.md)
-* [View and add work items](../work-items/view-add-work-items.md).
+- [Organize your backlog](../backlogs/organize-backlog.md)
+- [View and run queries](../queries/view-run-query.md)
+- [Triage work](../queries/triage-work-items.md)
+- [Use work item templates](../backlogs/work-item-template.md)
+- [View and add work items](../work-items/view-add-work-items.md).
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -291,8 +291,8 @@ To learn more, see one of the following articles:
 
 If you use Azure Boards connected with GitHub, you can also do the following tasks:
 
-* From GitHub, use #AB to link GitHub commits and pull requests to your issues and tasks.
-* From Azure Boards issues and tasks, link to GitHub commits and pull requests.
+- From GitHub, use #AB to link GitHub commits and pull requests to your issues and tasks.
+- From Azure Boards issues and tasks, link to GitHub commits and pull requests.
 
 To learn more, see [GitHub & Azure Boards](../github/index.md).
 
@@ -304,20 +304,20 @@ Azure Boards provides the following interactive lists and signboards. Each tool 
 
 ::: moniker range=">= azure-devops-2019"
 
-* [**Work items**](../work-items/view-add-work-items.md): Use to quickly find work items that are assigned to you. Pivot or filter work items based on other criteria, such as work items that you follow, that you're mentioned in, or that you viewed or updated.
-* [**Boards**](../boards/kanban-quickstart.md): Boards present work items as cards and support quick status updates through drag-and-drop. The feature is similar to sticky notes on a physical whiteboard. Use to implement Kanban practices and visualize the flow of work for a team.
-* [**Backlogs**](../backlogs/create-your-backlog.md): Backlogs present work items as lists. A product backlog represents your project plan and a repository of all the information you need to track and share with your team. Portfolio backlogs allow you to group and organize your backlog into a hierarchy. Use to plan, prioritize, and organize work.
-* [**Sprints**](../sprints/assign-work-sprint.md): Sprint backlogs and taskboards provide a filtered view of work items a team assigned to a specific iteration path, or sprint. From your backlog, you can assign work to an iteration path by using drag-and-drop. You can then view that work in a separate _sprint backlog_. Use to implement Scrum practices.
-* [**Queries**](../queries/view-run-query.md): Queries are filtered lists of work items based on criteria that you define by using a query editor. You use queries to support the following tasks: - Find groups of work items with something in common. - List work items for the purposes of sharing with others or doing bulk updates. Triage a set of items to prioritize or assign. - Create status and trend charts that you then can add to dashboards.
+- [**Work items**](../work-items/view-add-work-items.md): Use to quickly find work items that are assigned to you. Pivot or filter work items based on other criteria, such as work items that you follow, that you're mentioned in, or that you viewed or updated.
+- [**Boards**](../boards/kanban-quickstart.md): Boards present work items as cards and support quick status updates through drag-and-drop. The feature is similar to sticky notes on a physical whiteboard. Use to implement Kanban practices and visualize the flow of work for a team.
+- [**Backlogs**](../backlogs/create-your-backlog.md): Backlogs present work items as lists. A product backlog represents your project plan and a repository of all the information you need to track and share with your team. Portfolio backlogs allow you to group and organize your backlog into a hierarchy. Use to plan, prioritize, and organize work.
+- [**Sprints**](../sprints/assign-work-sprint.md): Sprint backlogs and taskboards provide a filtered view of work items a team assigned to a specific iteration path, or sprint. From your backlog, you can assign work to an iteration path by using drag-and-drop. You can then view that work in a separate _sprint backlog_. Use to implement Scrum practices.
+- [**Queries**](../queries/view-run-query.md): Queries are filtered lists of work items based on criteria that you define by using a query editor. You use queries to support the following tasks: - Find groups of work items with something in common. - List work items for the purposes of sharing with others or doing bulk updates. Triage a set of items to prioritize or assign. - Create status and trend charts that you then can add to dashboards.
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-* [**Boards**](../boards/kanban-quickstart.md): Boards present work items as cards and support quick status updates through drag-and-drop. The feature is similar to sticky notes on a physical whiteboard. Use to implement Kanban practices and visualize the flow of work for a team.
-* [**Backlogs**](../backlogs/create-your-backlog.md): Backlogs present work items as lists. A product backlog represents your project plan and a repository of all the information you need to track and share with your team. Portfolio backlogs allow you to group and organize your backlog into a hierarchy. Use to plan, prioritize, and organize work.
-* [**Sprints**](../sprints/assign-work-sprint.md): Sprint backlogs and taskboards provide a filtered view of work items a team assigned to a specific iteration path, or sprint. From your backlog, you can assign work to an iteration path by using drag-and-drop. You can then view that work in a separate _sprint backlog_. Use to implement Scrum practices.
-* [**Queries**](../queries/view-run-query.md): Queries are filtered lists of work items based on criteria that you define by using a query editor. You use queries to support the following tasks: - Find groups of work items with something in common. - List work items for the purposes of sharing with others or doing bulk updates. Triage a set of items to prioritize or assign. - Create status and trend charts that you then can add to dashboards.
+- [**Boards**](../boards/kanban-quickstart.md): Boards present work items as cards and support quick status updates through drag-and-drop. The feature is similar to sticky notes on a physical whiteboard. Use to implement Kanban practices and visualize the flow of work for a team.
+- [**Backlogs**](../backlogs/create-your-backlog.md): Backlogs present work items as lists. A product backlog represents your project plan and a repository of all the information you need to track and share with your team. Portfolio backlogs allow you to group and organize your backlog into a hierarchy. Use to plan, prioritize, and organize work.
+- [**Sprints**](../sprints/assign-work-sprint.md): Sprint backlogs and taskboards provide a filtered view of work items a team assigned to a specific iteration path, or sprint. From your backlog, you can assign work to an iteration path by using drag-and-drop. You can then view that work in a separate _sprint backlog_. Use to implement Scrum practices.
+- [**Queries**](../queries/view-run-query.md): Queries are filtered lists of work items based on criteria that you define by using a query editor. You use queries to support the following tasks: - Find groups of work items with something in common. - List work items for the purposes of sharing with others or doing bulk updates. Triage a set of items to prioritize or assign. - Create status and trend charts that you then can add to dashboards.
 
 ::: moniker-end
 
@@ -335,8 +335,8 @@ Most work is tracked within a project. However, many enterprises create several 
 
 To track work across several projects, you can:
 
-* [Create work item queries that list work items across projects](../queries/using-queries.md#query-across-projects)
-* [Gain visibility across teams](../plans/visibility-across-teams.md)
+- [Create work item queries that list work items across projects](../queries/using-queries.md#query-across-projects)
+- [Gain visibility across teams](../plans/visibility-across-teams.md)
 
 ## Get access to more tools
 
@@ -344,6 +344,6 @@ Extensions provide support for additional tools. An extension is an installable 
 
 ## Related articles
 
-* [Agile culture](../plans/agile-culture.md)
-* [Practices that scale](../plans/practices-that-scale.md)
-* [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md)
+- [Agile culture](../plans/agile-culture.md)
+- [Practices that scale](../plans/practices-that-scale.md)
+- [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md)

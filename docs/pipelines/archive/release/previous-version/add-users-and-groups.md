@@ -60,10 +60,10 @@ If you want to restrict access, then you'll want to follow these steps:
     Assign the **Release Manager** role to grant access to the following
     functions:
 
-    * Manage the connection between TFS and Release Management.
-    * View and edit all release paths and stages that are defined in a release path.
-    * For release templates, create and edit the templates, view and edit the deployment sequence and configuration variables for all stages that are defined, and add custom tools and actions.
-    * Manage servers, environments, actions, tools, and security.
+    - Manage the connection between TFS and Release Management.
+    - View and edit all release paths and stages that are defined in a release path.
+    - For release templates, create and edit the templates, view and edit the deployment sequence and configuration variables for all stages that are defined, and add custom tools and actions.
+    - Manage servers, environments, actions, tools, and security.
 
 <a name="add_group"></a>
 
@@ -86,11 +86,11 @@ If you want to restrict access, then you'll want to follow these steps:
 1.  Under **Stages**, keep the default **All Stage Types** or add one or more
     stages.
 
-    * **Edit Values and Target Servers**: Users in this group can edit
+    - **Edit Values and Target Servers**: Users in this group can edit
       deployment sequence and configuration variables for a release or stage.
       Without this permission, stage information is read-only.
 
-    * **Edit Approvals and Environment**: Users in this group can edit
+    - **Edit Approvals and Environment**: Users in this group can edit
       approvals and environments for a stage. Without this permission, stage
       information is read-only.
 
@@ -114,11 +114,11 @@ If you want to restrict access, then you'll want to follow these steps:
 
 **A**: These users:
 
-* Any user who needs to create, start or approve a release.
-* Any user who needs to manage the release configuration, servers,
+- Any user who needs to create, start or approve a release.
+- Any user who needs to manage the release configuration, servers,
   environment, and inventory of tools and actions used in deploying
   applications.
-* Service accounts that are used to deploy apps or manage web services.
+- Service accounts that are used to deploy apps or manage web services.
 
 <a name="control_access"></a>
 
@@ -129,36 +129,36 @@ example, you can restrict access based on one or more of the following
 functional user roles. You can define these groups in TFS, AD, or through the
 Release Management client itself:
 
-* **Approvers**: These users approve or validate a task or stage during a
+- **Approvers**: These users approve or validate a task or stage during a
   release cycle. They need the **Edit Approvals and Environment** permission set
   for all stage types that they will be required to approve.
 
-* **Deployers**: These users will create release templates and initiate
+- **Deployers**: These users will create release templates and initiate
   releases based on the release paths created by the release architects. They
   need the **Can Create Release Template** and **Edit Values and Target
   Servers** permissions for all stage types.
 
-* **Tool and action developers**: These users will add or modify tools and
+- **Tool and action developers**: These users will add or modify tools and
   actions. Release actions define the deployment sequence for each stage of a
   release. Each action uses a specific tool to run a command with a set of
   arguments. Enable these permissions for these users: **Can Manage Inventory**
   and **Can Use Custom Tool in Actions and Components**. To learn more, see
   [Release actions to deploy an app](release-actions.md).
 
-* **Administrators**: These users will manage the servers and security for
+- **Administrators**: These users will manage the servers and security for
   all release management operations. Enable all permissions for users in this
   group. If you add users individually, assign them to the Release Manager
   role.
 
-* **Release architects**: These users will create release paths that define
+- **Release architects**: These users will create release paths that define
   the deployment stages and test the design of these paths. They will also need
   to test the release paths. Enable the following permissions:
-  * **Can Create Release Template**
-  * **Can Create Release Path**
-  * **Can Manage Environment**
-  * **Can Use Custom Tool in Actions and Components**
-  * **Edit Approvals and Environment**
-  * **Edit Values and Target Servers**
+  - **Can Create Release Template**
+  - **Can Create Release Path**
+  - **Can Manage Environment**
+  - **Can Use Custom Tool in Actions and Components**
+  - **Edit Approvals and Environment**
+  - **Edit Values and Target Servers**
 
 ### Q: I don't see some tabs or UI elements. Why not?
 
@@ -192,13 +192,13 @@ members, you must delete them manually from the Manage Users page.
 
 ## Related topics
 
-* [Overview of Release Management](release-management-overview.md)
-* [Install Release Management](install-release-management.md)
-* [Manage your release](manage-your-release.md)
-* [Release without deployment agents](release-without-agents.md)
-* [Release with deployment agents](release-with-agents.md)
-* [Trigger a release from a build](trigger-a-release.md)
-* [Deploy continuously to Azure](deploy-continuously-to-azure.md)
+- [Overview of Release Management](release-management-overview.md)
+- [Install Release Management](install-release-management.md)
+- [Manage your release](manage-your-release.md)
+- [Release without deployment agents](release-without-agents.md)
+- [Release with deployment agents](release-with-agents.md)
+- [Trigger a release from a build](trigger-a-release.md)
+- [Deploy continuously to Azure](deploy-continuously-to-azure.md)
 
 [!INCLUDE [wpfver-back-to-index-shared](../includes/wpfver-back-to-index-shared.md)]
 

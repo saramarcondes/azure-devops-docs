@@ -12,12 +12,12 @@ ms.date: 08/04/2017
 
 In the **Sprint 121 Update** we’re introducing the native Wiki in Visual Studio Team Services (VSTS) and a number of features to make VSTS better integrated and more consistent across your workflow. Some feature highlights include:
 
-* [Wiki in Public Preview](#wiki-in-public-preview) - Help your team members understand, use, and contribute to your project.
-* [Ansible integration for Release](#ansible-extension-on-marketplace) - Execute a playbook on inventory nodes with Ansible.
-* [Branch management (stale, re-create, pushes page)](#identify-stale-branches) - Identify stale branches, re-create deleted branches, and view pushes.
-* [Pull Request extensibility in Public Preview](#pull-request-status-extensibility-in-public-preview) - Use the new API to extend the Pull Request workflow.
-* [Improved exploratory testing traceability](#exploratory-testing-traceability-improvements-for-work-item-links-iterations-and-area-paths) - Improved testing work item defaults and linking
-* Filter consistency across [boards](#filtering-on-kanban-board) and [test cases](#filters-for-test-case-work-items-in-test-plans-and-suites-in-test-hub) - Find the work items you care about quickly.
+- [Wiki in Public Preview](#wiki-in-public-preview) - Help your team members understand, use, and contribute to your project.
+- [Ansible integration for Release](#ansible-extension-on-marketplace) - Execute a playbook on inventory nodes with Ansible.
+- [Branch management (stale, re-create, pushes page)](#identify-stale-branches) - Identify stale branches, re-create deleted branches, and view pushes.
+- [Pull Request extensibility in Public Preview](#pull-request-status-extensibility-in-public-preview) - Use the new API to extend the Pull Request workflow.
+- [Improved exploratory testing traceability](#exploratory-testing-traceability-improvements-for-work-item-links-iterations-and-area-paths) - Improved testing work item defaults and linking
+- Filter consistency across [boards](#filtering-on-kanban-board) and [test cases](#filters-for-test-case-work-items-in-test-plans-and-suites-in-test-hub) - Find the work items you care about quickly.
 
 We will also start asking a few of you for feedback from within VSTS to help us make the product better. Read more about in-product feedback in the [Feedback](#feedback) section below.
 
@@ -72,16 +72,16 @@ Each project in VSTS now supports its own Wiki. Now you can conveniently write p
 
 Some of the key features of the new Wiki include:
 
-* Simplified editing experience using [markdown syntax](https://visualstudio.microsoft.com/docs/reference/markdown-guidance).
+- Simplified editing experience using [markdown syntax](https://visualstudio.microsoft.com/docs/reference/markdown-guidance).
 
 ![Wiki markdown](media/08_04_27.png)
 
-* Powerful page management pane that allows to reorder, re-parent, and manage pages.
-* Ability to filter pages by title for large wikis.
+- Powerful page management pane that allows to reorder, re-parent, and manage pages.
+- Ability to filter pages by title for large wikis.
 
 ![Wiki menu](media/08_04_28.png)
 
-* [Offline updates](/azure/devops/project/wiki/add-edit-wiki) of Wiki for power users.
+- [Offline updates](/azure/devops/project/wiki/add-edit-wiki) of Wiki for power users.
 
 Learn more about [getting started with Wiki](/azure/devops/project/wiki/add-edit-wiki).
 

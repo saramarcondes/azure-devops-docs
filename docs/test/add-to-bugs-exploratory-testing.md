@@ -35,24 +35,24 @@ your findings to an existing bug.
 
 1.  If you see a bug you want to update, instead of creating a new one:
 
-    * Select it in the list and choose **Edit**.
+    - Select it in the list and choose **Edit**.
 
       ![Editing a similar bug](media/add-to-bugs-exploratory-testing/add-to-existing-bugs-02.png)
 
-    * The extension appends all your screenshots, notes, and videos to
+    - The extension appends all your screenshots, notes, and videos to
       the existing bug.
 
-    * Save the updated bug.
+    - Save the updated bug.
 
       ![Saving the updated bug](media/add-to-bugs-exploratory-testing/add-to-existing-bugs-03.png)
 
 1.  If, instead, you decide not to update an existing bug, ignore the "similar" link and:
 
-    * Choose the **New bug** link to return to the bug details form.
+    - Choose the **New bug** link to return to the bug details form.
 
       ![Returning to the bug details form](media/add-to-bugs-exploratory-testing/add-to-existing-bugs-04.png)
 
-    * Enter the details for the new bug and save it
+    - Enter the details for the new bug and save it
       as described in [this topic](connected-mode-exploratory-testing.md).<p />
 
 1.  Continue exploring your app, filing bugs and tasks, and creating test cases.
@@ -61,15 +61,15 @@ your findings to an existing bug.
 
 After you file bugs, create tasks, or create test cases, all these show up in the "Recent exploratory sessions" page in Azure Test Plans or TFS.
 
-* See how you can [view your sessions and get insights](insights-exploratory-testing.md).
+- See how you can [view your sessions and get insights](insights-exploratory-testing.md).
 
 ## See Also
 
-* [Use the Test &amp; Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
-* [Explore work items with exploratory testing](explore-workitems-exploratory-testing.md)
-* [Get insights across your exploratory testing sessions](insights-exploratory-testing.md)
-* [Use the Test &amp; Feedback extension in Standalone mode](standalone-mode-exploratory-testing.md)
-* [Exploratory testing with Microsoft Test Manager](mtm/exploratory-testing-using-microsoft-test-manager.md)
-* [Overview of manual and exploratory testing](index.yml)
+- [Use the Test &amp; Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
+- [Explore work items with exploratory testing](explore-workitems-exploratory-testing.md)
+- [Get insights across your exploratory testing sessions](insights-exploratory-testing.md)
+- [Use the Test &amp; Feedback extension in Standalone mode](standalone-mode-exploratory-testing.md)
+- [Exploratory testing with Microsoft Test Manager](mtm/exploratory-testing-using-microsoft-test-manager.md)
+- [Overview of manual and exploratory testing](index.yml)
 
 [!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

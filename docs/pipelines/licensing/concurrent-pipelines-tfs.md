@@ -83,9 +83,9 @@ A simple rule of thumb: Estimate that you'll need one parallel job for every 10 
 
 In the following scenarios you might need multiple parallel jobs:
 
-* If you have multiple teams, if each of them require a CI build, and if each of the CI builds is configured to trigger a release, then you'll likely need a parallel job for each team.
+- If you have multiple teams, if each of them require a CI build, and if each of the CI builds is configured to trigger a release, then you'll likely need a parallel job for each team.
 
-* If you develop multiple applications in one collection, then you'll likely need additional parallel jobs: one to deploy each application at the same time.
+- If you develop multiple applications in one collection, then you'll likely need additional parallel jobs: one to deploy each application at the same time.
 
 ## Use your Visual Studio Enterprise subscription benefit
 

@@ -20,13 +20,13 @@ For an overview of Report Designer, see the following page on the Microsoft Web 
 
 **Requirements**
 
-* You must have Visual Studio and SQL Server Business Intelligence Development Studio installed on the same computer.
+- You must have Visual Studio and SQL Server Business Intelligence Development Studio installed on the same computer.
 
   To install Business Intelligence Development Studio, run the Setup program for SQL Server, and select the **Client Components** check box when you specify the components to install. To install the most recent service pack for SQL Server, see the following page on the Microsoft Web site: [How to obtain the latest service pack for SQL Server 2008](https://go.microsoft.com/fwlink/?LinkID=182174).
 
-* You must be a member of the **TfsWarehouseDataReaders** security role in the Analysis Services database on the data-tier server of Team Foundation Server. For more information, see [How to: Grant Access to the Databases of the Data Warehouse](../admin/grant-permissions-to-reports.md).
+- You must be a member of the **TfsWarehouseDataReaders** security role in the Analysis Services database on the data-tier server of Team Foundation Server. For more information, see [How to: Grant Access to the Databases of the Data Warehouse](../admin/grant-permissions-to-reports.md).
 
-* You must be a member of the **Team Foundation Content Manager** role in SQL Server Reporting Services. For more information, see [Add accounts to administer TFS](/azure/devops/server/admin/add-administrator).
+- You must be a member of the **Team Foundation Content Manager** role in SQL Server Reporting Services. For more information, see [Add accounts to administer TFS](/azure/devops/server/admin/add-administrator).
 
 ### To create a Reporting Server project
 

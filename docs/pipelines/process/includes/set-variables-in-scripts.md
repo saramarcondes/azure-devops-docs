@@ -11,8 +11,8 @@ ms.date: 02/13/2020
 >
 > You can run a script on a:
 >
-> * [Windows agent](../../agents/v2-windows.md) using either a [Batch script task](../../tasks/utility/batch-script.md) or [PowerShell script task](../../tasks/utility/powershell.md).
-> * [macOS](../../agents/v2-osx.md) or [Linux](../../agents/v2-linux.md) agent using a [Shell script task](../../tasks/utility/shell-script.md).
+> - [Windows agent](../../agents/v2-windows.md) using either a [Batch script task](../../tasks/utility/batch-script.md) or [PowerShell script task](../../tasks/utility/powershell.md).
+> - [macOS](../../agents/v2-osx.md) or [Linux](../../agents/v2-linux.md) agent using a [Shell script task](../../tasks/utility/shell-script.md).
 
 # [Batch](#tab/batch)
 

@@ -23,14 +23,14 @@ Azure Pipelines supports integration with Jenkins so that you can use
 Jenkins for Continuous Integration (CI) while gaining several DevOps benefits
 from an Azure Pipelines release pipeline that deploys to Azure:
 
-* Reuse your existing investments in Jenkins build jobs
-* Track work items and related code changes
-* Get end-to-end traceability for your CI/CD workflow
-* Consistently deploy to a range of cloud services
-* Enforce quality of builds by gating deployments
-* Define work flows such as manual approval processes and CI triggers
-* Integrate Jenkins with JIRA and Azure Pipelines to show associated issues for each Jenkins job
-* Integrate with other service management tools such as [ServiceNow](approvals/servicenow.md)
+- Reuse your existing investments in Jenkins build jobs
+- Track work items and related code changes
+- Get end-to-end traceability for your CI/CD workflow
+- Consistently deploy to a range of cloud services
+- Enforce quality of builds by gating deployments
+- Define work flows such as manual approval processes and CI triggers
+- Integrate Jenkins with JIRA and Azure Pipelines to show associated issues for each Jenkins job
+- Integrate with other service management tools such as [ServiceNow](approvals/servicenow.md)
 
 A typical approach is to use Jenkins to build an app from source
 code hosted in a Git repository such as GitHub and then deploy it to
@@ -40,11 +40,11 @@ Azure using Azure Pipelines.
 
 ## Before you begin
 
-* You'll need the source code for your app hosted in a repository such as GitHub, Azure Repos, GitHub Enterprise Server,
+- You'll need the source code for your app hosted in a repository such as GitHub, Azure Repos, GitHub Enterprise Server,
   Bitbucket Cloud, or any another source control provider that Jenkins can interact with.
-* You'll need a Jenkins server where you run your CI builds. You can quickly
+- You'll need a Jenkins server where you run your CI builds. You can quickly
   [set up a Jenkins server on Azure](/azure/developer/jenkins/configure-on-linux-vm).
-* You'll need a Jenkins project that builds you app. For example,
+- You'll need a Jenkins project that builds you app. For example,
   you can [build a Java app with Maven](https://jenkins.io/doc/tutorials/build-a-java-app-with-maven/) on Jenkins.
 
 ## Link Jenkins with Azure Pipelines
@@ -171,7 +171,7 @@ Now a new CD release will be triggered every time your Jenkins CI job is complet
 
 ## See also
 
-* [Artifacts](artifacts.md)
-* [Stages](../process/stages.md)
-* [Triggers](triggers.md)
-* [YAML schema reference](../yaml-schema.md)
+- [Artifacts](artifacts.md)
+- [Stages](../process/stages.md)
+- [Triggers](triggers.md)
+- [YAML schema reference](../yaml-schema.md)

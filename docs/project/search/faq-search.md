@@ -46,7 +46,7 @@ A:
 
 A:
 
-* [Check indexing status](administration.md#check-index) separately for each collection.
+- [Check indexing status](administration.md#check-index) separately for each collection.
 
 <a name="no-results-later"></a>
 
@@ -58,9 +58,9 @@ name of the server where Search is installed:
 1.  Access the URL `http://SearchServer:9200` from a web browser
     on a computer in the same domain as the server running Search.
 
-    * If the status returned is `200 - OK`, go to step 2.
-    * If any other status is returned, [contact Support](https://azure.microsoft.com/support/devops/).
-    * If you don't get a response, verify that the
+    - If the status returned is `200 - OK`, go to step 2.
+    - If any other status is returned, [contact Support](https://azure.microsoft.com/support/devops/).
+    - If you don't get a response, verify that the
       **elasticsearch-service-x64** service is running on
       the server where Search is configured. If the service
       is stopped, start it and access the Search server again.  
@@ -70,16 +70,16 @@ name of the server where Search is installed:
 2.  If the status is 200, access the URL `http://SearchServer:9200/_cat/health?v`
     from a web browser on a computer in the same domain as the server running Search.
 
-    * If the status column shows green/OK, and
+    - If the status column shows green/OK, and
       Search is still not working, [contact Support](https://azure.microsoft.com/support/devops/).
-    * If the status column shows red/fault, look at the value
+    - If the status column shows red/fault, look at the value
       in the **init** or **unassigned** columns. If these values are
       greater than zero, wait for 30 minutes and then
       repeat this step. If the values are unchanged, go to step 3.<p />
 
 3.  Access the URL `http://SearchServer:9200/_cat/shards?v`
     from a web browser on a computer in the same domain as the server running Search.
-    * Make a note of the values in the **Shard** column for the
+    - Make a note of the values in the **Shard** column for the
       rows with a **state** value of **unassigned** and [contact Support](https://azure.microsoft.com/support/devops/).<p />
 
 <a name="unexpected-results"></a>
@@ -128,8 +128,8 @@ You're likely to encounter this scenario when your code base has one or more lar
 
 You could try the following alternatives as applicable for your scenarios
 
-* Try to scope your query by using filters to narrow down to a "repo" or a "path".
-* See if you can narrow down your query to avoid scenarios that require matching too many terms while searching.
+- Try to scope your query by using filters to narrow down to a "repo" or a "path".
+- See if you can narrow down your query to avoid scenarios that require matching too many terms while searching.
 
 For example, while looking for methods like App_App1/ App_App2 etc., instead of searching for `a*` try searching for `app*` instead. (`a*` will match many more terms than `app*`).
 

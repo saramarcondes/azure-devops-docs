@@ -16,8 +16,8 @@ Module path: `TFS/Build/Contracts`
 
 ### Members
 
-* `id`: number. ID of the resource
+- `id`: number. ID of the resource
 
-* `name`: string. Name of the linked resource (definition name, controller name, etc.)
+- `name`: string. Name of the linked resource (definition name, controller name, etc.)
 
-* `url`: string. Full http link to the resource
+- `url`: string. Full http link to the resource

@@ -16,9 +16,9 @@ ms.date: 08/04/2016
 
 [!INCLUDE [API_version](../_data/version2.md)]
 
-* [Builds](./builds.md)
-* [Definitions](./definitions.md)
-* [Definition Templates](./definition-templates.md)
+- [Builds](./builds.md)
+- [Definitions](./definitions.md)
+- [Definition Templates](./definition-templates.md)
 
 ## Common tasks
 

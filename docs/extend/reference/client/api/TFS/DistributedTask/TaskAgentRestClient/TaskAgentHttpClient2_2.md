@@ -30,52 +30,52 @@ Module path: `TFS/DistributedTask/TaskAgentRestClient`
 
 ### Methods
 
-* [addAgent()](#method_addAgent)
-* [addAgentPool()](#method_addAgentPool)
-* [addAgentQueue()](#method_addAgentQueue)
-* [createAgentSession()](#method_createAgentSession)
-* [createServiceEndpoint()](#method_createServiceEndpoint)
-* [deleteAgent()](#method_deleteAgent)
-* [deleteAgentPool()](#method_deleteAgentPool)
-* [deleteAgentQueue()](#method_deleteAgentQueue)
-* [deleteAgentRequest()](#method_deleteAgentRequest)
-* [deleteAgentSession()](#method_deleteAgentSession)
-* [deleteMessage()](#method_deleteMessage)
-* [deleteServiceEndpoint()](#method_deleteServiceEndpoint)
-* [deleteTaskDefinition()](#method_deleteTaskDefinition)
-* [getAgent()](#method_getAgent)
-* [getAgentPool()](#method_getAgentPool)
-* [getAgentPoolRoles()](#method_getAgentPoolRoles)
-* [getAgentPools()](#method_getAgentPools)
-* [getAgentQueue()](#method_getAgentQueue)
-* [getAgentQueueRoles()](#method_getAgentQueueRoles)
-* [getAgentQueues()](#method_getAgentQueues)
-* [getAgentRequest()](#method_getAgentRequest)
-* [getAgentRequestsForAgent()](#method_getAgentRequestsForAgent)
-* [getAgentRequestsForAgents()](#method_getAgentRequestsForAgents)
-* [getAgentRequestsForPlan()](#method_getAgentRequestsForPlan)
-* [getAgents()](#method_getAgents)
-* [getMessage()](#method_getMessage)
-* [getPackage()](#method_getPackage)
-* [getPackages()](#method_getPackages)
-* [getPackageZip()](#method_getPackageZip)
-* [getServiceEndpointDetails()](#method_getServiceEndpointDetails)
-* [getServiceEndpoints()](#method_getServiceEndpoints)
-* [getServiceEndpointTypes()](#method_getServiceEndpointTypes)
-* [getTaskContentZip()](#method_getTaskContentZip)
-* [getTaskDefinition()](#method_getTaskDefinition)
-* [getTaskDefinitions()](#method_getTaskDefinitions)
-* [queryEndpoint()](#method_queryEndpoint)
-* [queryServiceEndpoint()](#method_queryServiceEndpoint)
-* [queueAgentRequest()](#method_queueAgentRequest)
-* [refreshAgent()](#method_refreshAgent)
-* [refreshAgents()](#method_refreshAgents)
-* [replaceAgent()](#method_replaceAgent)
-* [sendMessage()](#method_sendMessage)
-* [updateAgent()](#method_updateAgent)
-* [updateAgentPool()](#method_updateAgentPool)
-* [updateAgentRequest()](#method_updateAgentRequest)
-* [updateAgentUserCapabilities()](#method_updateAgentUserCapabilities)
+- [addAgent()](#method_addAgent)
+- [addAgentPool()](#method_addAgentPool)
+- [addAgentQueue()](#method_addAgentQueue)
+- [createAgentSession()](#method_createAgentSession)
+- [createServiceEndpoint()](#method_createServiceEndpoint)
+- [deleteAgent()](#method_deleteAgent)
+- [deleteAgentPool()](#method_deleteAgentPool)
+- [deleteAgentQueue()](#method_deleteAgentQueue)
+- [deleteAgentRequest()](#method_deleteAgentRequest)
+- [deleteAgentSession()](#method_deleteAgentSession)
+- [deleteMessage()](#method_deleteMessage)
+- [deleteServiceEndpoint()](#method_deleteServiceEndpoint)
+- [deleteTaskDefinition()](#method_deleteTaskDefinition)
+- [getAgent()](#method_getAgent)
+- [getAgentPool()](#method_getAgentPool)
+- [getAgentPoolRoles()](#method_getAgentPoolRoles)
+- [getAgentPools()](#method_getAgentPools)
+- [getAgentQueue()](#method_getAgentQueue)
+- [getAgentQueueRoles()](#method_getAgentQueueRoles)
+- [getAgentQueues()](#method_getAgentQueues)
+- [getAgentRequest()](#method_getAgentRequest)
+- [getAgentRequestsForAgent()](#method_getAgentRequestsForAgent)
+- [getAgentRequestsForAgents()](#method_getAgentRequestsForAgents)
+- [getAgentRequestsForPlan()](#method_getAgentRequestsForPlan)
+- [getAgents()](#method_getAgents)
+- [getMessage()](#method_getMessage)
+- [getPackage()](#method_getPackage)
+- [getPackages()](#method_getPackages)
+- [getPackageZip()](#method_getPackageZip)
+- [getServiceEndpointDetails()](#method_getServiceEndpointDetails)
+- [getServiceEndpoints()](#method_getServiceEndpoints)
+- [getServiceEndpointTypes()](#method_getServiceEndpointTypes)
+- [getTaskContentZip()](#method_getTaskContentZip)
+- [getTaskDefinition()](#method_getTaskDefinition)
+- [getTaskDefinitions()](#method_getTaskDefinitions)
+- [queryEndpoint()](#method_queryEndpoint)
+- [queryServiceEndpoint()](#method_queryServiceEndpoint)
+- [queueAgentRequest()](#method_queueAgentRequest)
+- [refreshAgent()](#method_refreshAgent)
+- [refreshAgents()](#method_refreshAgents)
+- [replaceAgent()](#method_replaceAgent)
+- [sendMessage()](#method_sendMessage)
+- [updateAgent()](#method_updateAgent)
+- [updateAgentPool()](#method_updateAgentPool)
+- [updateAgentRequest()](#method_updateAgentRequest)
+- [updateAgentUserCapabilities()](#method_updateAgentUserCapabilities)
 
 <a name="method_addAgent"></a>
 
@@ -89,12 +89,12 @@ Module path: `TFS/DistributedTask/TaskAgentRestClient`
 
 ### Parameters
 
-* `agent`: [Contracts.TaskAgent](../../../TFS/DistributedTask/Contracts/TaskAgent.md).
-* `poolId`: number.
+- `agent`: [Contracts.TaskAgent](../../../TFS/DistributedTask/Contracts/TaskAgent.md).
+- `poolId`: number.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgent](../../../TFS/DistributedTask/Contracts/TaskAgent.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgent](../../../TFS/DistributedTask/Contracts/TaskAgent.md)&gt;
 
 <a name="method_addAgentPool"></a>
 
@@ -108,11 +108,11 @@ Module path: `TFS/DistributedTask/TaskAgentRestClient`
 
 ### Parameters
 
-* `pool`: [Contracts.TaskAgentPool](../../../TFS/DistributedTask/Contracts/TaskAgentPool.md).
+- `pool`: [Contracts.TaskAgentPool](../../../TFS/DistributedTask/Contracts/TaskAgentPool.md).
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgentPool](../../../TFS/DistributedTask/Contracts/TaskAgentPool.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgentPool](../../../TFS/DistributedTask/Contracts/TaskAgentPool.md)&gt;
 
 <a name="method_addAgentQueue"></a>
 
@@ -126,11 +126,11 @@ Module path: `TFS/DistributedTask/TaskAgentRestClient`
 
 ### Parameters
 
-* `queue`: [Contracts.TaskAgentQueue](../../../TFS/DistributedTask/Contracts/TaskAgentQueue.md).
+- `queue`: [Contracts.TaskAgentQueue](../../../TFS/DistributedTask/Contracts/TaskAgentQueue.md).
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgentQueue](../../../TFS/DistributedTask/Contracts/TaskAgentQueue.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgentQueue](../../../TFS/DistributedTask/Contracts/TaskAgentQueue.md)&gt;
 
 <a name="method_createAgentSession"></a>
 
@@ -144,12 +144,12 @@ Module path: `TFS/DistributedTask/TaskAgentRestClient`
 
 ### Parameters
 
-* `session`: [Contracts.TaskAgentSession](../../../TFS/DistributedTask/Contracts/TaskAgentSession.md).
-* `poolId`: number.
+- `session`: [Contracts.TaskAgentSession](../../../TFS/DistributedTask/Contracts/TaskAgentSession.md).
+- `poolId`: number.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgentSession](../../../TFS/DistributedTask/Contracts/TaskAgentSession.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgentSession](../../../TFS/DistributedTask/Contracts/TaskAgentSession.md)&gt;
 
 <a name="method_createServiceEndpoint"></a>
 
@@ -163,13 +163,13 @@ Module path: `TFS/DistributedTask/TaskAgentRestClient`
 
 ### Parameters
 
-* `endpoint`: [Contracts.ServiceEndpoint](../../../TFS/DistributedTask/Contracts/ServiceEndpoint.md).
-* `scopeIdentifier`: string.
-* `endpointId`: string.
+- `endpoint`: [Contracts.ServiceEndpoint](../../../TFS/DistributedTask/Contracts/ServiceEndpoint.md).
+- `scopeIdentifier`: string.
+- `endpointId`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.ServiceEndpoint](../../../TFS/DistributedTask/Contracts/ServiceEndpoint.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.ServiceEndpoint](../../../TFS/DistributedTask/Contracts/ServiceEndpoint.md)&gt;
 
 <a name="method_deleteAgent"></a>
 
@@ -183,12 +183,12 @@ Module path: `TFS/DistributedTask/TaskAgentRestClient`
 
 ### Parameters
 
-* `poolId`: number.
-* `agentId`: number.
+- `poolId`: number.
+- `agentId`: number.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
 
 <a name="method_deleteAgentPool"></a>
 
@@ -202,11 +202,11 @@ Module path: `TFS/DistributedTask/TaskAgentRestClient`
 
 ### Parameters
 
-* `poolId`: number.
+- `poolId`: number.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
 
 <a name="method_deleteAgentQueue"></a>
 
@@ -220,11 +220,11 @@ Module path: `TFS/DistributedTask/TaskAgentRestClient`
 
 ### Parameters
 
-* `queueId`: number.
+- `queueId`: number.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
 
 <a name="method_deleteAgentRequest"></a>
 
@@ -238,13 +238,13 @@ Module path: `TFS/DistributedTask/TaskAgentRestClient`
 
 ### Parameters
 
-* `poolId`: number.
-* `requestId`: number.
-* `lockToken`: string.
+- `poolId`: number.
+- `requestId`: number.
+- `lockToken`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
 
 <a name="method_deleteAgentSession"></a>
 
@@ -258,12 +258,12 @@ Module path: `TFS/DistributedTask/TaskAgentRestClient`
 
 ### Parameters
 
-* `poolId`: number.
-* `sessionId`: string.
+- `poolId`: number.
+- `sessionId`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
 
 <a name="method_deleteMessage"></a>
 
@@ -277,13 +277,13 @@ Module path: `TFS/DistributedTask/TaskAgentRestClient`
 
 ### Parameters
 
-* `poolId`: number.
-* `messageId`: number.
-* `sessionId`: string.
+- `poolId`: number.
+- `messageId`: number.
+- `sessionId`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
 
 <a name="method_deleteServiceEndpoint"></a>
 
@@ -297,12 +297,12 @@ Module path: `TFS/DistributedTask/TaskAgentRestClient`
 
 ### Parameters
 
-* `scopeIdentifier`: string. The project GUID to scope the request
-* `endpointId`: string.
+- `scopeIdentifier`: string. The project GUID to scope the request
+- `endpointId`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
 
 <a name="method_deleteTaskDefinition"></a>
 
@@ -316,11 +316,11 @@ Module path: `TFS/DistributedTask/TaskAgentRestClient`
 
 ### Parameters
 
-* `taskId`: string.
+- `taskId`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
 
 <a name="method_getAgent"></a>
 
@@ -334,15 +334,15 @@ Module path: `TFS/DistributedTask/TaskAgentRestClient`
 
 ### Parameters
 
-* `poolId`: number.
-* `agentId`: number.
-* `includeCapabilities`: boolean. Optional.
-* `includeAssignedRequest`: boolean. Optional.
-* `propertyFilters`: string[]. Optional.
+- `poolId`: number.
+- `agentId`: number.
+- `includeCapabilities`: boolean. Optional.
+- `includeAssignedRequest`: boolean. Optional.
+- `propertyFilters`: string[]. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgent](../../../TFS/DistributedTask/Contracts/TaskAgent.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgent](../../../TFS/DistributedTask/Contracts/TaskAgent.md)&gt;
 
 <a name="method_getAgentPool"></a>
 
@@ -356,12 +356,12 @@ Module path: `TFS/DistributedTask/TaskAgentRestClient`
 
 ### Parameters
 
-* `poolId`: number.
-* `properties`: string[]. Optional.
+- `poolId`: number.
+- `properties`: string[]. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgentPool](../../../TFS/DistributedTask/Contracts/TaskAgentPool.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgentPool](../../../TFS/DistributedTask/Contracts/TaskAgentPool.md)&gt;
 
 <a name="method_getAgentPoolRoles"></a>
 
@@ -375,11 +375,11 @@ Module path: `TFS/DistributedTask/TaskAgentRestClient`
 
 ### Parameters
 
-* `poolId`: number. Optional.
+- `poolId`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[VSS_Common_Contracts.IdentityRef](../../../VSS/WebApi/Contracts/IdentityRef.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[VSS_Common_Contracts.IdentityRef](../../../VSS/WebApi/Contracts/IdentityRef.md)[]&gt;
 
 <a name="method_getAgentPools"></a>
 
@@ -393,12 +393,12 @@ Module path: `TFS/DistributedTask/TaskAgentRestClient`
 
 ### Parameters
 
-* `poolName`: string. Optional.
-* `properties`: string[]. Optional.
+- `poolName`: string. Optional.
+- `properties`: string[]. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgentPool](../../../TFS/DistributedTask/Contracts/TaskAgentPool.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgentPool](../../../TFS/DistributedTask/Contracts/TaskAgentPool.md)[]&gt;
 
 <a name="method_getAgentQueue"></a>
 
@@ -412,12 +412,12 @@ Module path: `TFS/DistributedTask/TaskAgentRestClient`
 
 ### Parameters
 
-* `queueId`: number.
-* `actionFilter`: [Contracts.TaskAgentQueueActionFilter](../../../TFS/DistributedTask/Contracts/TaskAgentQueueActionFilter.md). Optional.
+- `queueId`: number.
+- `actionFilter`: [Contracts.TaskAgentQueueActionFilter](../../../TFS/DistributedTask/Contracts/TaskAgentQueueActionFilter.md). Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgentQueue](../../../TFS/DistributedTask/Contracts/TaskAgentQueue.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgentQueue](../../../TFS/DistributedTask/Contracts/TaskAgentQueue.md)&gt;
 
 <a name="method_getAgentQueueRoles"></a>
 
@@ -431,11 +431,11 @@ Module path: `TFS/DistributedTask/TaskAgentRestClient`
 
 ### Parameters
 
-* `queueId`: number. Optional.
+- `queueId`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[VSS_Common_Contracts.IdentityRef](../../../VSS/WebApi/Contracts/IdentityRef.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[VSS_Common_Contracts.IdentityRef](../../../VSS/WebApi/Contracts/IdentityRef.md)[]&gt;
 
 <a name="method_getAgentQueues"></a>
 
@@ -449,12 +449,12 @@ Module path: `TFS/DistributedTask/TaskAgentRestClient`
 
 ### Parameters
 
-* `queueName`: string. Optional.
-* `actionFilter`: [Contracts.TaskAgentQueueActionFilter](../../../TFS/DistributedTask/Contracts/TaskAgentQueueActionFilter.md). Optional.
+- `queueName`: string. Optional.
+- `actionFilter`: [Contracts.TaskAgentQueueActionFilter](../../../TFS/DistributedTask/Contracts/TaskAgentQueueActionFilter.md). Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgentQueue](../../../TFS/DistributedTask/Contracts/TaskAgentQueue.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgentQueue](../../../TFS/DistributedTask/Contracts/TaskAgentQueue.md)[]&gt;
 
 <a name="method_getAgentRequest"></a>
 
@@ -468,12 +468,12 @@ Module path: `TFS/DistributedTask/TaskAgentRestClient`
 
 ### Parameters
 
-* `poolId`: number.
-* `requestId`: number.
+- `poolId`: number.
+- `requestId`: number.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgentJobRequest](../../../TFS/DistributedTask/Contracts/TaskAgentJobRequest.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgentJobRequest](../../../TFS/DistributedTask/Contracts/TaskAgentJobRequest.md)&gt;
 
 <a name="method_getAgentRequestsForAgent"></a>
 
@@ -487,13 +487,13 @@ Module path: `TFS/DistributedTask/TaskAgentRestClient`
 
 ### Parameters
 
-* `poolId`: number.
-* `agentId`: number.
-* `completedRequestCount`: number. Optional.
+- `poolId`: number.
+- `agentId`: number.
+- `completedRequestCount`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgentJobRequest](../../../TFS/DistributedTask/Contracts/TaskAgentJobRequest.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgentJobRequest](../../../TFS/DistributedTask/Contracts/TaskAgentJobRequest.md)[]&gt;
 
 <a name="method_getAgentRequestsForAgents"></a>
 
@@ -507,13 +507,13 @@ Module path: `TFS/DistributedTask/TaskAgentRestClient`
 
 ### Parameters
 
-* `poolId`: number.
-* `agentIds`: number[].
-* `completedRequestCount`: number. Optional.
+- `poolId`: number.
+- `agentIds`: number[].
+- `completedRequestCount`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgentJobRequest](../../../TFS/DistributedTask/Contracts/TaskAgentJobRequest.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgentJobRequest](../../../TFS/DistributedTask/Contracts/TaskAgentJobRequest.md)[]&gt;
 
 <a name="method_getAgentRequestsForPlan"></a>
 
@@ -527,13 +527,13 @@ Module path: `TFS/DistributedTask/TaskAgentRestClient`
 
 ### Parameters
 
-* `poolId`: number.
-* `planId`: string.
-* `jobId`: string. Optional.
+- `poolId`: number.
+- `planId`: string.
+- `jobId`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgentJobRequest](../../../TFS/DistributedTask/Contracts/TaskAgentJobRequest.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgentJobRequest](../../../TFS/DistributedTask/Contracts/TaskAgentJobRequest.md)[]&gt;
 
 <a name="method_getAgents"></a>
 
@@ -547,16 +547,16 @@ Module path: `TFS/DistributedTask/TaskAgentRestClient`
 
 ### Parameters
 
-* `poolId`: number.
-* `agentName`: string. Optional.
-* `includeCapabilities`: boolean. Optional.
-* `includeAssignedRequest`: boolean. Optional.
-* `propertyFilters`: string[]. Optional.
-* `demands`: string[]. Optional.
+- `poolId`: number.
+- `agentName`: string. Optional.
+- `includeCapabilities`: boolean. Optional.
+- `includeAssignedRequest`: boolean. Optional.
+- `propertyFilters`: string[]. Optional.
+- `demands`: string[]. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgent](../../../TFS/DistributedTask/Contracts/TaskAgent.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgent](../../../TFS/DistributedTask/Contracts/TaskAgent.md)[]&gt;
 
 <a name="method_getMessage"></a>
 
@@ -570,13 +570,13 @@ Module path: `TFS/DistributedTask/TaskAgentRestClient`
 
 ### Parameters
 
-* `poolId`: number.
-* `sessionId`: string.
-* `lastMessageId`: number. Optional.
+- `poolId`: number.
+- `sessionId`: string.
+- `lastMessageId`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgentMessage](../../../TFS/DistributedTask/Contracts/TaskAgentMessage.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgentMessage](../../../TFS/DistributedTask/Contracts/TaskAgentMessage.md)&gt;
 
 <a name="method_getPackage"></a>
 
@@ -592,11 +592,11 @@ This method can return packages/{packageType} -- package stream OR TaskPackageMe
 
 ### Parameters
 
-* `packageType`: string.
+- `packageType`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskPackageMetadata](../../../TFS/DistributedTask/Contracts/TaskPackageMetadata.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskPackageMetadata](../../../TFS/DistributedTask/Contracts/TaskPackageMetadata.md)&gt;
 
 <a name="method_getPackages"></a>
 
@@ -612,7 +612,7 @@ This method can return packages/{packageType} -- package stream OR TaskPackageMe
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskPackageMetadata](../../../TFS/DistributedTask/Contracts/TaskPackageMetadata.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskPackageMetadata](../../../TFS/DistributedTask/Contracts/TaskPackageMetadata.md)[]&gt;
 
 <a name="method_getPackageZip"></a>
 
@@ -628,11 +628,11 @@ This method can return packages/{packageType} -- package stream OR TaskPackageMe
 
 ### Parameters
 
-* `packageType`: string.
+- `packageType`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
 
 <a name="method_getServiceEndpointDetails"></a>
 
@@ -646,12 +646,12 @@ This method can return packages/{packageType} -- package stream OR TaskPackageMe
 
 ### Parameters
 
-* `scopeIdentifier`: string. The project GUID to scope the request
-* `endpointId`: string.
+- `scopeIdentifier`: string. The project GUID to scope the request
+- `endpointId`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.ServiceEndpoint](../../../TFS/DistributedTask/Contracts/ServiceEndpoint.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.ServiceEndpoint](../../../TFS/DistributedTask/Contracts/ServiceEndpoint.md)&gt;
 
 <a name="method_getServiceEndpoints"></a>
 
@@ -665,14 +665,14 @@ This method can return packages/{packageType} -- package stream OR TaskPackageMe
 
 ### Parameters
 
-* `scopeIdentifier`: string. The project GUID to scope the request
-* `type`: string. Optional.
-* `authSchemes`: string[]. Optional.
-* `endpointIds`: string[]. Optional.
+- `scopeIdentifier`: string. The project GUID to scope the request
+- `type`: string. Optional.
+- `authSchemes`: string[]. Optional.
+- `endpointIds`: string[]. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.ServiceEndpoint](../../../TFS/DistributedTask/Contracts/ServiceEndpoint.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.ServiceEndpoint](../../../TFS/DistributedTask/Contracts/ServiceEndpoint.md)[]&gt;
 
 <a name="method_getServiceEndpointTypes"></a>
 
@@ -686,13 +686,13 @@ This method can return packages/{packageType} -- package stream OR TaskPackageMe
 
 ### Parameters
 
-* `scopeIdentifier`: string. The project GUID to scope the request
-* `type`: string. Optional.
-* `scheme`: string. Optional.
+- `scopeIdentifier`: string. The project GUID to scope the request
+- `type`: string. Optional.
+- `scheme`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.ServiceEndpointType](../../../TFS/DistributedTask/Contracts/ServiceEndpointType.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.ServiceEndpointType](../../../TFS/DistributedTask/Contracts/ServiceEndpointType.md)[]&gt;
 
 <a name="method_getTaskContentZip"></a>
 
@@ -706,14 +706,14 @@ This method can return packages/{packageType} -- package stream OR TaskPackageMe
 
 ### Parameters
 
-* `taskId`: string.
-* `versionString`: string.
-* `visibility`: string[]. Optional.
-* `scopeLocal`: boolean. Optional.
+- `taskId`: string.
+- `versionString`: string.
+- `visibility`: string[]. Optional.
+- `scopeLocal`: boolean. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
 
 <a name="method_getTaskDefinition"></a>
 
@@ -727,14 +727,14 @@ This method can return packages/{packageType} -- package stream OR TaskPackageMe
 
 ### Parameters
 
-* `taskId`: string.
-* `versionString`: string.
-* `visibility`: string[]. Optional.
-* `scopeLocal`: boolean. Optional.
+- `taskId`: string.
+- `versionString`: string.
+- `visibility`: string[]. Optional.
+- `scopeLocal`: boolean. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskDefinition](../../../TFS/DistributedTask/Contracts/TaskDefinition.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskDefinition](../../../TFS/DistributedTask/Contracts/TaskDefinition.md)&gt;
 
 <a name="method_getTaskDefinitions"></a>
 
@@ -748,13 +748,13 @@ This method can return packages/{packageType} -- package stream OR TaskPackageMe
 
 ### Parameters
 
-* `taskId`: string. Optional.
-* `visibility`: string[]. Optional.
-* `scopeLocal`: boolean. Optional.
+- `taskId`: string. Optional.
+- `visibility`: string[]. Optional.
+- `scopeLocal`: boolean. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskDefinition](../../../TFS/DistributedTask/Contracts/TaskDefinition.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskDefinition](../../../TFS/DistributedTask/Contracts/TaskDefinition.md)[]&gt;
 
 <a name="method_queryEndpoint"></a>
 
@@ -770,11 +770,11 @@ Proxy for a GET request defined by an &#x27;endpoint&#x27;. The request is autho
 
 ### Parameters
 
-* `endpoint`: [Contracts.TaskDefinitionEndpoint](../../../TFS/DistributedTask/Contracts/TaskDefinitionEndpoint.md). Describes the URL to fetch.
+- `endpoint`: [Contracts.TaskDefinitionEndpoint](../../../TFS/DistributedTask/Contracts/TaskDefinitionEndpoint.md). Describes the URL to fetch.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;string[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;string[]&gt;
 
 <a name="method_queryServiceEndpoint"></a>
 
@@ -790,12 +790,12 @@ Proxy for a GET request defined by a service endpoint. The request is authorized
 
 ### Parameters
 
-* `binding`: [Contracts.DataSourceBinding](../../../TFS/DistributedTask/Contracts/DataSourceBinding.md). Describes the data source to fetch.
-* `scopeIdentifier`: string. The project GUID to scope the request
+- `binding`: [Contracts.DataSourceBinding](../../../TFS/DistributedTask/Contracts/DataSourceBinding.md). Describes the data source to fetch.
+- `scopeIdentifier`: string. The project GUID to scope the request
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;string[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;string[]&gt;
 
 <a name="method_queueAgentRequest"></a>
 
@@ -809,12 +809,12 @@ Proxy for a GET request defined by a service endpoint. The request is authorized
 
 ### Parameters
 
-* `request`: [Contracts.TaskAgentJobRequest](../../../TFS/DistributedTask/Contracts/TaskAgentJobRequest.md).
-* `poolId`: number.
+- `request`: [Contracts.TaskAgentJobRequest](../../../TFS/DistributedTask/Contracts/TaskAgentJobRequest.md).
+- `poolId`: number.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgentJobRequest](../../../TFS/DistributedTask/Contracts/TaskAgentJobRequest.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgentJobRequest](../../../TFS/DistributedTask/Contracts/TaskAgentJobRequest.md)&gt;
 
 <a name="method_refreshAgent"></a>
 
@@ -828,12 +828,12 @@ Proxy for a GET request defined by a service endpoint. The request is authorized
 
 ### Parameters
 
-* `poolId`: number.
-* `agentId`: number.
+- `poolId`: number.
+- `agentId`: number.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
 
 <a name="method_refreshAgents"></a>
 
@@ -847,11 +847,11 @@ Proxy for a GET request defined by a service endpoint. The request is authorized
 
 ### Parameters
 
-* `poolId`: number.
+- `poolId`: number.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
 
 <a name="method_replaceAgent"></a>
 
@@ -865,13 +865,13 @@ Proxy for a GET request defined by a service endpoint. The request is authorized
 
 ### Parameters
 
-* `agent`: [Contracts.TaskAgent](../../../TFS/DistributedTask/Contracts/TaskAgent.md).
-* `poolId`: number.
-* `agentId`: number.
+- `agent`: [Contracts.TaskAgent](../../../TFS/DistributedTask/Contracts/TaskAgent.md).
+- `poolId`: number.
+- `agentId`: number.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgent](../../../TFS/DistributedTask/Contracts/TaskAgent.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgent](../../../TFS/DistributedTask/Contracts/TaskAgent.md)&gt;
 
 <a name="method_sendMessage"></a>
 
@@ -885,13 +885,13 @@ Proxy for a GET request defined by a service endpoint. The request is authorized
 
 ### Parameters
 
-* `message`: [Contracts.TaskAgentMessage](../../../TFS/DistributedTask/Contracts/TaskAgentMessage.md).
-* `poolId`: number.
-* `requestId`: number.
+- `message`: [Contracts.TaskAgentMessage](../../../TFS/DistributedTask/Contracts/TaskAgentMessage.md).
+- `poolId`: number.
+- `requestId`: number.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
 
 <a name="method_updateAgent"></a>
 
@@ -905,13 +905,13 @@ Proxy for a GET request defined by a service endpoint. The request is authorized
 
 ### Parameters
 
-* `agent`: [Contracts.TaskAgent](../../../TFS/DistributedTask/Contracts/TaskAgent.md).
-* `poolId`: number.
-* `agentId`: number.
+- `agent`: [Contracts.TaskAgent](../../../TFS/DistributedTask/Contracts/TaskAgent.md).
+- `poolId`: number.
+- `agentId`: number.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgent](../../../TFS/DistributedTask/Contracts/TaskAgent.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgent](../../../TFS/DistributedTask/Contracts/TaskAgent.md)&gt;
 
 <a name="method_updateAgentPool"></a>
 
@@ -925,12 +925,12 @@ Proxy for a GET request defined by a service endpoint. The request is authorized
 
 ### Parameters
 
-* `pool`: [Contracts.TaskAgentPool](../../../TFS/DistributedTask/Contracts/TaskAgentPool.md).
-* `poolId`: number.
+- `pool`: [Contracts.TaskAgentPool](../../../TFS/DistributedTask/Contracts/TaskAgentPool.md).
+- `poolId`: number.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgentPool](../../../TFS/DistributedTask/Contracts/TaskAgentPool.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgentPool](../../../TFS/DistributedTask/Contracts/TaskAgentPool.md)&gt;
 
 <a name="method_updateAgentRequest"></a>
 
@@ -944,14 +944,14 @@ Proxy for a GET request defined by a service endpoint. The request is authorized
 
 ### Parameters
 
-* `request`: [Contracts.TaskAgentJobRequest](../../../TFS/DistributedTask/Contracts/TaskAgentJobRequest.md).
-* `poolId`: number.
-* `requestId`: number.
-* `lockToken`: string.
+- `request`: [Contracts.TaskAgentJobRequest](../../../TFS/DistributedTask/Contracts/TaskAgentJobRequest.md).
+- `poolId`: number.
+- `requestId`: number.
+- `lockToken`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgentJobRequest](../../../TFS/DistributedTask/Contracts/TaskAgentJobRequest.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgentJobRequest](../../../TFS/DistributedTask/Contracts/TaskAgentJobRequest.md)&gt;
 
 <a name="method_updateAgentUserCapabilities"></a>
 
@@ -965,10 +965,10 @@ Proxy for a GET request defined by a service endpoint. The request is authorized
 
 ### Parameters
 
-* `userCapabilities`: {[key: string]: string}.
-* `poolId`: number.
-* `agentId`: number.
+- `userCapabilities`: {[key: string]: string}.
+- `poolId`: number.
+- `agentId`: number.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgent](../../../TFS/DistributedTask/Contracts/TaskAgent.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TaskAgent](../../../TFS/DistributedTask/Contracts/TaskAgent.md)&gt;

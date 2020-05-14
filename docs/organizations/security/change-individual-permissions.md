@@ -19,18 +19,18 @@ The standard way to set permissions is by adding them to one or more built-in se
 
 You can change individual permissions in one of the following three ways:
 
-* Create a custom Azure DevOps security group, define permissions for that group, add the user account to the group
-* For object-level permissions: Add the user account and set permissions
-* For project or collection-level permissions: Search for the user account and selectively change their permission assignments
+- Create a custom Azure DevOps security group, define permissions for that group, add the user account to the group
+- For object-level permissions: Add the user account and set permissions
+- For project or collection-level permissions: Search for the user account and selectively change their permission assignments
 
 In this article you learn how to do the following tasks:
 
 > [!div class="checklist"]
 >
-> * Create a custom security group
-> * Set permissions for a custom security group
-> * Add members to a custom security group
-> * Change the permission assignments for an individual user
+> - Create a custom security group
+> - Set permissions for a custom security group
+> - Add members to a custom security group
+> - Change the permission assignments for an individual user
 
 If you're new to managing permissions and groups, review [About permissions and groups](about-permissions.md) to learn about permission states and inheritance.
 
@@ -242,7 +242,7 @@ From the web portal, open the Security dialog for the object whose permissions y
 
 ## Related articles
 
-* [Permissions lookup guide](permissions-lookup-guide.md)
-* [About permissions and groups](about-permissions.md)
-* [Permissions and groups reference](permissions.md)
-* [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
+- [Permissions lookup guide](permissions-lookup-guide.md)
+- [About permissions and groups](about-permissions.md)
+- [Permissions and groups reference](permissions.md)
+- [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)

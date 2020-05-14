@@ -120,18 +120,18 @@ A: If you need technical support with Azure DevOps and don't have an [Azure supp
 
 1.  Create an Azure subscription.
 
-* Consider your [purchase options](https://azure.microsoft.com/pricing/purchase-options/) and decide whether you'll set up payment direct with Azure, through a partner, or through a Microsoft representative.
-* The simplest option is to [pay for Azure directly](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/). It's free to create an Azure subscription, you'll only pay for what you use.
+- Consider your [purchase options](https://azure.microsoft.com/pricing/purchase-options/) and decide whether you'll set up payment direct with Azure, through a partner, or through a Microsoft representative.
+- The simplest option is to [pay for Azure directly](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/). It's free to create an Azure subscription, you'll only pay for what you use.
 
 2.  Pick a support plan.
 
-* As part of signing up for an Azure subscription, you can pick a [support plan](https://azure.microsoft.com/support/plans/).
-* All support plans let you create unlimited support requests for a fixed monthly price.
-* All paid plans, including the Developer plan, offer technical support for Azure DevOps.
+- As part of signing up for an Azure subscription, you can pick a [support plan](https://azure.microsoft.com/support/plans/).
+- All support plans let you create unlimited support requests for a fixed monthly price.
+- All paid plans, including the Developer plan, offer technical support for Azure DevOps.
 
 3.  Submit a support ticket.
 
-* Now you can [open a request via the Azure portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) or [learn how to create a support request](https://docs.microsoft.com/azure/azure-portal/supportability/how-to-create-azure-support-request).
+- Now you can [open a request via the Azure portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) or [learn how to create a support request](https://docs.microsoft.com/azure/azure-portal/supportability/how-to-create-azure-support-request).
 
 ### Q: Can I buy Azure DevOps by using a purchase order?
 
@@ -221,11 +221,11 @@ To make this split easier, we automatically add the tag `"_organizationname_"` a
 
     ![In Azure portal, select Subscriptions, and then Cost analysis](media/billing-faq/cost-management-cost-analysis.png)
 
-* Filter based on tag, and see only charges for a given organization or
+- Filter based on tag, and see only charges for a given organization or
 
   ![Filter based on tag](media/billing-faq/filter-based-on-tag.png)
 
-* Group by tag, and see charges stacked by organization
+- Group by tag, and see charges stacked by organization
 
   ![Group by tag, see stacked charges](media/billing-faq/group-by-tag-charges-stacked-by-organization.png)
 
@@ -333,15 +333,15 @@ A: Yes you can, if your reseller participates in the Cloud Solution Provider pro
 
 ## Buy Azure DevOps now
 
-* [Azure DevOps Users/Basic](buy-basic-access-add-users.md)
-* [Microsoft-hosted CI/CD](buy-more-build-vs.md#microsoft-hosted-cicd) (formerly hosted pipelines)
-* [Self-hosted CI/CD](buy-more-build-vs.md#self-hosted-cicd) (formerly private pipelines)
-* [Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)
+- [Azure DevOps Users/Basic](buy-basic-access-add-users.md)
+- [Microsoft-hosted CI/CD](buy-more-build-vs.md#microsoft-hosted-cicd) (formerly hosted pipelines)
+- [Self-hosted CI/CD](buy-more-build-vs.md#self-hosted-cicd) (formerly private pipelines)
+- [Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)
 
 ## Related articles
 
-* [Set up billing](set-up-billing-for-your-organization-vs.md)
-* [Add backup billing managers](add-backup-billing-managers.md)
-* [Change the Azure subscription for billing](change-azure-subscription.md)
-* [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
-* [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)
+- [Set up billing](set-up-billing-for-your-organization-vs.md)
+- [Add backup billing managers](add-backup-billing-managers.md)
+- [Change the Azure subscription for billing](change-azure-subscription.md)
+- [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
+- [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)

@@ -103,11 +103,11 @@ Lists pending changes to all items in the SolutionA folder, including those in i
 
 ## Work in Visual Studio
 
-* [Develop code and manage pending changes](develop-code-manage-pending-changes.md) Use Visual Studio to view and manage pending changes.
+- [Develop code and manage pending changes](develop-code-manage-pending-changes.md) Use Visual Studio to view and manage pending changes.
 
 ## Tips
 
-* Most changes you make to files under version control are queued as pending changes in your workspace. See [Develop code and manage pending changes](develop-code-manage-pending-changes.md) and [Create and work with workspaces](create-work-workspaces.md).
-* You can use the [Difference Command](difference-command.md) to get details about edit changes (changes to the content) in a file.
-* If you need to set aside changes (and perhaps also want to clean your workspace for another task), use the [Shelve Command](shelve-command.md). For more information about shelvesets, see [Suspend your work and manage your shelvesets](suspend-your-work-manage-your-shelvesets.md).
-* When you are ready to check in changes to the server, use the [Checkin command](checkin-command.md).
+- Most changes you make to files under version control are queued as pending changes in your workspace. See [Develop code and manage pending changes](develop-code-manage-pending-changes.md) and [Create and work with workspaces](create-work-workspaces.md).
+- You can use the [Difference Command](difference-command.md) to get details about edit changes (changes to the content) in a file.
+- If you need to set aside changes (and perhaps also want to clean your workspace for another task), use the [Shelve Command](shelve-command.md). For more information about shelvesets, see [Suspend your work and manage your shelvesets](suspend-your-work-manage-your-shelvesets.md).
+- When you are ready to check in changes to the server, use the [Checkin command](checkin-command.md).

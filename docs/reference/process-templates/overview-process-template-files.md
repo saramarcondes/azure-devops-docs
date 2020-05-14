@@ -33,12 +33,12 @@ Depending on whether you work from the Azure DevOps Services or TFS, you can cre
 
 When you create a project from the web portal, the following plug-in files are ignored.
 
-* **Build**: Default security permissions are defined for build functions.
-* **Lab Management**: Native build and release management tools replace the previous lab management tools. To learn more, see [Use Build and Release instead of Lab Management for automated testing](../../test/lab-management/use-build-or-rm-instead-of-lab-management.md).
-* **Reports**: See [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md) to add SQL Reports after you create the project.
-* **Version Control**: Default security permissions and TFVC check-in policies are defined for git and TFVC functions.
-* **Windows SharePoint Services**: TFS 2018 and later versions no longer support native integration with SharePoint products. See [About SharePoint integration](../../report/sharepoint-dashboards/about-sharepoint-integration.md) to learn about the options available to you. For TFS 2017 and earlier versions, you must use Visual Studio/Team Explorer to add SharePoint Integration.
-* **Custom plug-ins**: Not supported.
+- **Build**: Default security permissions are defined for build functions.
+- **Lab Management**: Native build and release management tools replace the previous lab management tools. To learn more, see [Use Build and Release instead of Lab Management for automated testing](../../test/lab-management/use-build-or-rm-instead-of-lab-management.md).
+- **Reports**: See [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md) to add SQL Reports after you create the project.
+- **Version Control**: Default security permissions and TFVC check-in policies are defined for git and TFVC functions.
+- **Windows SharePoint Services**: TFS 2018 and later versions no longer support native integration with SharePoint products. See [About SharePoint integration](../../report/sharepoint-dashboards/about-sharepoint-integration.md) to learn about the options available to you. For TFS 2017 and earlier versions, you must use Visual Studio/Team Explorer to add SharePoint Integration.
+- **Custom plug-ins**: Not supported.
 
 For details, review [Plug-in file descriptions and PCW support](#PlugInFiles).
 
@@ -59,8 +59,8 @@ The following table describes each plug-in file and whether or not it is support
 (![supported](../../media/icons/checkmark.png)- Supported; ![not supported](../../media/icons/delete_icon.png) - Not supported)
 
 <!---
-> [!IMPORTANT]  
-> Starting with TFS 2018 and later versions, you will only be able to create a project creation from the web portal. No custom plug-ins are supported.  
+> [!IMPORTANT]
+> Starting with TFS 2018 and later versions, you will only be able to create a project creation from the web portal. No custom plug-ins are supported.
 -->
 
 <table>
@@ -221,6 +221,6 @@ For Azure DevOps Services and TFS 2017.3 and later versions, definitions for wor
 
 The schema definition for process templates uses a mix of camel-case and all capitalized elements. If you encounter errors when validating your type definition files, check the case structure of your elements. Also, the case structure of opening and closing tags must match according to the rules for XML syntax. See [Process template plug-ins: Index to XML element definitions](process-template-plug-ins-xml-elements-index.md).
 
-* [Choose a process or process template](../../boards/work-items/guidance/choose-process.md)
-* [Customize a process template](customize-process.md)
-* [Customize your work tracking experience](../customize-work.md)
+- [Choose a process or process template](../../boards/work-items/guidance/choose-process.md)
+- [Customize a process template](customize-process.md)
+- [Customize your work tracking experience](../customize-work.md)

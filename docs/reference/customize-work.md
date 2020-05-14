@@ -19,9 +19,9 @@ As you plan and track your project, you'll find you may want to configure a feat
 
 Customizations you make occur at one of three levels:
 
-* **Team assets or tools**: Each team can customize or configure their specific tools, for details,see [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md)
-* **Project level**: Add or modify work item types, data fields, backlog levels, and other objects shared across teams
-* **Object level**: Grant or restrict access to work tracking tools, which includes setting permissions for objects and the project and assigning users or groups to specific access levels.
+- **Team assets or tools**: Each team can customize or configure their specific tools, for details,see [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md)
+- **Project level**: Add or modify work item types, data fields, backlog levels, and other objects shared across teams
+- **Object level**: Grant or restrict access to work tracking tools, which includes setting permissions for objects and the project and assigning users or groups to specific access levels.
 
 > [!NOTE]  
 > If you're new to the work tracking system, see [Get started with Agile tools to plan and track work](../boards/get-started/what-is-azure-boards.md).
@@ -51,9 +51,9 @@ Your project determines the objects available to track work and the configuratio
 > [!NOTE]  
 > The method you use to customize work tracking depends on the process model you subscribe to:
 >
-> * **Inheritance**: Supports WYSIWYG customization, available for Azure DevOps Services and Azure DevOps Server 2019
-> * **Hosted XML**: Supports customization through import/export of process templates, available for a select number of customers of Azure DevOps Services who have opted into this model
-> * **On-premises XML**: Supports customization through import/export of XML definition files for work tracking objects and is available for all on-premises deployments
+> - **Inheritance**: Supports WYSIWYG customization, available for Azure DevOps Services and Azure DevOps Server 2019
+> - **Hosted XML**: Supports customization through import/export of process templates, available for a select number of customers of Azure DevOps Services who have opted into this model
+> - **On-premises XML**: Supports customization through import/export of XML definition files for work tracking objects and is available for all on-premises deployments
 
 The following table summarizes the differences between the three supported process models. For definitions of the main work tracking objects, see [Agile glossary](../boards/work-items/agile-glossary.md).
 
@@ -157,10 +157,10 @@ The following table summarizes the differences between the three supported proce
 1.  A process determines the building blocks used to track work. A process template specifies an interdependent-related set of XML definition files that provide the building blocks and initial configuration for tracking work and other functional areas.
 2.  Hosted XML customization supports adding and updating global lists with a process update (subject to limits on maximum size of each list). To learn more, see [Work tracking object limits](../organizations/settings/work/object-limits.md).
 3.  The Inherited process model doesn't support customization of the following features available with customization of process templates. Instead, you customize these areas within the web portal interface on a project-by-project basis. Or, you can use REST APIs or the Azure DevOps CLI command tool.
-    * Configure areas and iterations
-    * Work item queries
-    * Security groups and permissions
-    * Permissions and access to functional areas such as version control and build
+    - Configure areas and iterations
+    - Work item queries
+    - Security groups and permissions
+    - Permissions and access to functional areas such as version control and build
 4.  Support for Office Project integration with Azure DevOps is deprecated starting with Azure DevOps Server 2019. The TFSFieldMapping command is not supported for Azure DevOps Server 2019 nor for Azure DevOps Services. Starting with Visual Studio 2019, the Team Foundation plug-in for Office no longer supports Office Project.
 
 <a id="choose-process-model" />
@@ -237,7 +237,6 @@ Otherwise, to grant or restrict access to select features or functions, review o
 </tbody>
 </table>
 
-
 ::: moniker range=">= tfs-2013 <=azure-devops-2019"
 
 <a id="test-experience"></a>
@@ -250,11 +249,11 @@ Several WITs support the test experience within the web portal **Test** pages an
 
 See the following resources for additional usage and customization information:
 
-* [Test configurations and test variables](../test/test-different-configurations.md)
-* [Test resolution states](witadmin/tcm-customize-manage-test-experience.md) (TFS)
-* [Failure types](witadmin/tcm-customize-manage-test-experience.md)
-* [Define the initial test management configuration (process template)](process-templates/define-initial-configuration-test-manager.md)
-* [Query based on build and test integration fields](../boards/queries/build-test-integration.md)
+- [Test configurations and test variables](../test/test-different-configurations.md)
+- [Test resolution states](witadmin/tcm-customize-manage-test-experience.md) (TFS)
+- [Failure types](witadmin/tcm-customize-manage-test-experience.md)
+- [Define the initial test management configuration (process template)](process-templates/define-initial-configuration-test-manager.md)
+- [Query based on build and test integration fields](../boards/queries/build-test-integration.md)
 
 ::: moniker-end
 
@@ -308,10 +307,10 @@ Do you want to customize your tools in a way that's not supported?
 
 Here are a few options available to you:
 
-* Check out [Marketplace extensions](https://marketplace.visualstudio.com/vsts) to see if there's a tool available for your purposes
-* Determine if a [Service hook](../service-hooks/index.md) will satisfy your needs
-* Create your own tool using [REST APIs](../integrate/index.md)
-* Add a feature request to our [Developer Community page](https://developercommunity.visualstudio.com/content/idea/post.html?space=21).
+- Check out [Marketplace extensions](https://marketplace.visualstudio.com/vsts) to see if there's a tool available for your purposes
+- Determine if a [Service hook](../service-hooks/index.md) will satisfy your needs
+- Create your own tool using [REST APIs](../integrate/index.md)
+- Add a feature request to our [Developer Community page](https://developercommunity.visualstudio.com/content/idea/post.html?space=21).
 
 [add-team-members]: ../../organizations/settings/add-teams.md#add-team-members
 [add-team-admin]: ../../organizations/settings/add-team-administrator.md

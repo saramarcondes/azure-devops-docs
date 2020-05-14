@@ -28,14 +28,14 @@ By using the Build perspective, you can create reports that answer the following
 
 **Status reports:**
 
-* Which builds failed and which builds succeeded?
-* Which builds reflect a significant number of changes to the code?
-* Which builds are ready to install?
+- Which builds failed and which builds succeeded?
+- Which builds reflect a significant number of changes to the code?
+- Which builds are ready to install?
 
 **Trend reports:**
 
-* What is the status of all builds over time?
-* How much of the code was executed by the tests over time?
+- What is the status of all builds over time?
+- How much of the code was executed by the tests over time?
 
 > [!NOTE]  
 > If your data warehouse is using SQL Server Enterprise Edition, the list of cubes will include Team System and a set of perspectives. The perspectives provide a focused view of the data so that you do not have to scroll through all of the dimensions and measure groups that are defined for the whole Team System cube.
@@ -64,11 +64,11 @@ You can create the summary report for build status by performing the following s
 
 3.  For each report filter, open the context menu for each of the following fields, specify the hierarchies, weeks, or other elements of interest, and then drag the field to the **Report Filter** area.
 
-    * **Team Project Hierarchy** from the **Team Project** dimension
+    - **Team Project Hierarchy** from the **Team Project** dimension
 
-    * **Year Week Date** from the **Date** dimension
+    - **Year Week Date** from the **Date** dimension
 
-    * **Build Pipeline Name** from the **Build** dimension
+    - **Build Pipeline Name** from the **Build** dimension
 
 4.  In the **Date** dimension, expand **More fields**, and drag the **Date**, **Week**, or **Month** fields to the **Axis Fields (Categories)** area to specify how granular a report you want to generate.
 
@@ -134,14 +134,14 @@ You can use the attributes in the following table to aggregate a measure, filter
 
 To create reports that contain useful data about builds, team members should review the information in the following topics:
 
-* [Run tests in your build process](../../pipelines/test/test-build.md)
-* [Using Code Coverage to Determine How Much Code is being Tested](https://msdn.microsoft.com/library/dd537628.aspx)
+- [Run tests in your build process](../../pipelines/test/test-build.md)
+- [Using Code Coverage to Determine How Much Code is being Tested](https://msdn.microsoft.com/library/dd537628.aspx)
 
 ## Related notes
 
-* [Build Quality](../excel/build-quality-excel-report.md)
-* [Build Status](https://msdn.microsoft.com/library/dd695786.aspx)
-* [Build Quality Indicators](build-quality-indicators-report.md)
-* [Build Success Over Time](build-success-over-time-report.md)
-* [Build Summary](build-summary-report.md)
-* [Perspectives and measure groups provided in the Analysis Services cube](perspective-measure-groups-cube.md)
+- [Build Quality](../excel/build-quality-excel-report.md)
+- [Build Status](https://msdn.microsoft.com/library/dd695786.aspx)
+- [Build Quality Indicators](build-quality-indicators-report.md)
+- [Build Success Over Time](build-success-over-time-report.md)
+- [Build Summary](build-summary-report.md)
+- [Perspectives and measure groups provided in the Analysis Services cube](perspective-measure-groups-cube.md)

@@ -43,9 +43,9 @@ In this article you'll learn how to:
 
 > [!div class="checklist"]
 >
-> * Open your product backlog
-> * Assign backlog items to a sprint
-> * Use multi-select to bulk update work items
+> - Open your product backlog
+> - Assign backlog items to a sprint
+> - Use multi-select to bulk update work items
 
 Planning meetings typically consist of two parts. In the first part, the team and product owner identify the
 backlog items that the team feels it can commit to completing in the sprint, based on experience with previous sprints.
@@ -126,10 +126,10 @@ From your web browser, open your product backlog.
 
 1.  From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI).
 
-        	> [!div class="mx-imgBorder"]  
-        	> ![Open the Boards>Backlogs page](media/assign-items-sprint/open-work-backlogs-standard.png)  
+        	> [!div class="mx-imgBorder"]
+        	> ![Open the Boards>Backlogs page](media/assign-items-sprint/open-work-backlogs-standard.png)
 
-        	To choose another team, open the project/team selector and select a different team or choose the **Browse** option.  
+        	To choose another team, open the project/team selector and select a different team or choose the **Browse** option.
 
     > [!div class="mx-imgBorder"]  
     > ![Choose another team](media/assign-items-sprint/team-selector-backlogs-standard.png)
@@ -193,12 +193,12 @@ Multi-select of work items on the product and sprint backlogs works in the same 
 
 With multi-select, you can perform several actions on several work items at once, such as:
 
-* Move to a sprint
-* Change the backlog priority
-* Assign to a team member
-* Change one or more field values
-* Add links
-* [Map items or change the parent an item is linked to](../backlogs/organize-backlog.md#mapping)
+- Move to a sprint
+- Change the backlog priority
+- Assign to a team member
+- Change one or more field values
+- Add links
+- [Map items or change the parent an item is linked to](../backlogs/organize-backlog.md#mapping)
 
 ::: moniker-end
 

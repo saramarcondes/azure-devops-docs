@@ -19,9 +19,9 @@ The Feature Timeline supports portfolio management by providing an all-up progre
 
 Use the Feature Timeline to support the following tasks:
 
-* Support roadmap planning
-* Produce reports at each business level to show high and low-level progress views
-* Adjust sprint assignments to child work items
+- Support roadmap planning
+- Produce reports at each business level to show high and low-level progress views
+- Adjust sprint assignments to child work items
 
 > [!NOTE]  
 > The Feature Timeline and Epic Roadmap extension is available on TFS 2017 Update 2 and later versions. You can install it from the [Marketplace for Azure DevOps, Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension).
@@ -32,9 +32,9 @@ Use the Feature Timeline to support the following tasks:
 
 ## Prerequisites
 
-* Install the [Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) extension for the organization(s) or collection(s) for which you want to track progress at the epic and feature level. In order to install an extension, you must be a member of the Project Collection Administrator Group. To learn more, see [Install extensions](../../marketplace/install-extension.md).
-* To view the Feature Timeline, you must be a member of the project and have view permissions to work items under the area path they are assigned to.
-* To modify work items, you must have permissions to edit work items under the area path they are assigned to.
+- Install the [Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) extension for the organization(s) or collection(s) for which you want to track progress at the epic and feature level. In order to install an extension, you must be a member of the Project Collection Administrator Group. To learn more, see [Install extensions](../../marketplace/install-extension.md).
+- To view the Feature Timeline, you must be a member of the project and have view permissions to work items under the area path they are assigned to.
+- To modify work items, you must have permissions to edit work items under the area path they are assigned to.
 
 ## Define your features and requirements
 
@@ -42,25 +42,25 @@ The Feature Timeline is designed to display features and the progress made to th
 
 To gain the most from the Feature Timeline view, make the following definitions:
 
-* Define teams and area paths to support the rollup of the team's work into features and epics.
-* Define sprints with dates for the project. Select sprints for the team.  
-   > [!NOTE]  
-   > Make sure you assign work items to a flat set of sprints. Assigning features to one hierarchy of sprints and child items to another won't display correctly in the Feature Timeline view.
-* For work to be performed in some future iteration, you can leave the dates unset and it will appear as the last sprint in the roadmap.
-* Make sure the team is subscribed to the sprints of interest.
-* Define features and child work items. If no child work items are defined, then assign the feature to a sprint.
-* When child work items are defined, assign the child items to sprints.
-* To view progress by Effort, Story Points, or Size, assign values to those fields to the child requirements.
-* Once all child requirements are completed, set the State of the parent feature to Done or Completed.
+- Define teams and area paths to support the rollup of the team's work into features and epics.
+- Define sprints with dates for the project. Select sprints for the team.
+  > [!NOTE]  
+  > Make sure you assign work items to a flat set of sprints. Assigning features to one hierarchy of sprints and child items to another won't display correctly in the Feature Timeline view.
+- For work to be performed in some future iteration, you can leave the dates unset and it will appear as the last sprint in the roadmap.
+- Make sure the team is subscribed to the sprints of interest.
+- Define features and child work items. If no child work items are defined, then assign the feature to a sprint.
+- When child work items are defined, assign the child items to sprints.
+- To view progress by Effort, Story Points, or Size, assign values to those fields to the child requirements.
+- Once all child requirements are completed, set the State of the parent feature to Done or Completed.
 
 > [!TIP]  
 > To support roadmap planning, make sure your team has subscribed to several future iterations.
 
 To learn more, review the following articles:
 
-* [Configuration and customization of Azure Boards](../configure-customize.md)
-* [Define area paths & assign to a team](../../organizations/settings/set-area-paths.md)
-* [Define iteration paths (sprints) & assign team iterations ](../../organizations/settings/set-iteration-paths-sprints.md)
+- [Configuration and customization of Azure Boards](../configure-customize.md)
+- [Define area paths & assign to a team](../../organizations/settings/set-area-paths.md)
+- [Define iteration paths (sprints) & assign team iterations ](../../organizations/settings/set-iteration-paths-sprints.md)
 
 ## Open Boards or Backlogs
 
@@ -114,8 +114,8 @@ Here we open Boards.
 
     Your Kanban board appears.
 
-     > [!div class="mx-imgBorder"]  
-     > ![Kanban board, Agile template](../boards/media/kanban-basics-intro.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Kanban board, Agile template](../boards/media/kanban-basics-intro.png)
 
 ::: moniker-end
 
@@ -137,12 +137,12 @@ You can customize your view of the Feature Timeline with the controls shown in t
 > [!div class="mx-imgBorder"]  
 > ![Feature Timeline controls](media/feature-timeline/controls.png)
 
-* **View Sprints**: Enter the number of iterations to show. The maximum number is 11. > [!NOTE]  
+- **View Sprints**: Enter the number of iterations to show. The maximum number is 11. > [!NOTE]  
    Sprint labels may not display for iterations above six, however, the calendar view represents those iterations.
-* **Plan Features**: Opens a side panel of additional features participating in a Portfolio Plan.
-* **Show Details**: Displays progress bars of Feature child items
-* **Track Progress Using**: Progress bars indicate completion based on child requirements or overall total effort.
-* **Closed Features**: Filters the Features based on those closed within the selected time frame.
+- **Plan Features**: Opens a side panel of additional features participating in a Portfolio Plan.
+- **Show Details**: Displays progress bars of Feature child items
+- **Track Progress Using**: Progress bars indicate completion based on child requirements or overall total effort.
+- **Closed Features**: Filters the Features based on those closed within the selected time frame.
 
 > [!NOTE]  
 > The Plan Features is in preview and available for Azure DevOps Services only at this time. Use of this feature integrates with Portfolio plans. Portfolio Plans are not yet documented.
@@ -176,11 +176,11 @@ A: Make sure you enter sufficient number of sprints to display the next three sp
 
 ## Related articles
 
-* [Review team delivery plans](../plans/review-team-plans.md)
-* [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md)
-* [Hosted XML process model](../../organizations/settings/work/hosted-xml-process-model.md)
-* [How workflow states and state categories are used in Backlogs and Boards](../work-items/workflow-and-state-categories.md)
+- [Review team delivery plans](../plans/review-team-plans.md)
+- [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md)
+- [Hosted XML process model](../../organizations/settings/work/hosted-xml-process-model.md)
+- [How workflow states and state categories are used in Backlogs and Boards](../work-items/workflow-and-state-categories.md)
 
 ## Related Marketplace extensions
 
-* [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization)
+- [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization)

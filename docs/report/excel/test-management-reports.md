@@ -32,4 +32,4 @@ These reports are available only for team projects that were created using the [
 
 ## Related articles
 
-* [Excel reports](excel-reports.md)
+- [Excel reports](excel-reports.md)

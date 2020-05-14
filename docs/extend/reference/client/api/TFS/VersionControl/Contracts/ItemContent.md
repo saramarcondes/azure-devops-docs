@@ -15,6 +15,6 @@ Module path: `TFS/VersionControl/Contracts`
 
 ### Members
 
-* `content`: string.
+- `content`: string.
 
-* `contentType`: [ItemContentType](../../../TFS/VersionControl/Contracts/ItemContentType.md).
+- `contentType`: [ItemContentType](../../../TFS/VersionControl/Contracts/ItemContentType.md).

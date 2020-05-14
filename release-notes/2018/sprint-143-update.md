@@ -17,31 +17,31 @@ Check out the [Features](#features) list below for more.
 
 General:
 
-* [REST API version 5.0](#rest-api-version-50)
+- [REST API version 5.0](#rest-api-version-50)
 
 Azure Boards:
 
-* [New work item text editor](#new-work-item-text-editor)
+- [New work item text editor](#new-work-item-text-editor)
 
 Azure Repos:
 
-* [Improved branch picker](#improved-branch-picker)
-* [Draft pull requests](#draft-pull-requests)
+- [Improved branch picker](#improved-branch-picker)
+- [Draft pull requests](#draft-pull-requests)
 
 Azure Pipelines:
 
-* [Trigger YAML pipelines with tags](#trigger-yaml-pipelines-with-tags)
-* [Setting to auto cancel an existing pipeline when a pull requests is updated](#setting-to-auto-cancel-an-existing-pipeline-when-a-pull-requests-is-updated)
-* [Declare container resources inline](#declare-container-resources-inline)
-* [Changes to default permissions for new projects](#changes-to-default-permissions-for-new-projects)
-* [Deploy to failed targets in a Deployment Group](#deploy-to-failed-targets-in-a-deployment-group)
-* [Support for Infrastructure as Code](#support-for-infrastructure-as-code)
+- [Trigger YAML pipelines with tags](#trigger-yaml-pipelines-with-tags)
+- [Setting to auto cancel an existing pipeline when a pull requests is updated](#setting-to-auto-cancel-an-existing-pipeline-when-a-pull-requests-is-updated)
+- [Declare container resources inline](#declare-container-resources-inline)
+- [Changes to default permissions for new projects](#changes-to-default-permissions-for-new-projects)
+- [Deploy to failed targets in a Deployment Group](#deploy-to-failed-targets-in-a-deployment-group)
+- [Support for Infrastructure as Code](#support-for-infrastructure-as-code)
 
 Azure Artifacts:
 
-* [Exclude files in artifact uploads](#exclude-files-in-artifact-uploads)
-* [Provenance information on packages](#provenance-information-on-packages)
-* [Azure Artifacts REST API documentation updates](#azure-artifacts-rest-api-documentation-updates)
+- [Exclude files in artifact uploads](#exclude-files-in-artifact-uploads)
+- [Provenance information on packages](#provenance-information-on-packages)
+- [Azure Artifacts REST API documentation updates](#azure-artifacts-rest-api-documentation-updates)
 
 ## General
 

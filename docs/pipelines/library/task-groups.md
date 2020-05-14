@@ -38,31 +38,31 @@ to change each one individually.
 
 ## Before you create a task group...
 
-* Ensure that all of the tasks you want to include in a task group have
+- Ensure that all of the tasks you want to include in a task group have
   their parameters defined as variables,
-  such as **$(MyVariable)**, where you want to be able to configure these parameters
+  such as **\$(MyVariable)**, where you want to be able to configure these parameters
   when you use the task group. Variables used in the tasks are automatically extracted and converted into parameters for the task group.
   Values of these configuration variables will be converted into default values for the task group.
 
-* If you specify a value (instead of a variable) for a parameter, that
+- If you specify a value (instead of a variable) for a parameter, that
   value becomes a fixed parameter value and cannot be exposed as a parameter to the task group.
 
-* Parameters of the encapsulated tasks for which
+- Parameters of the encapsulated tasks for which
   you specified a value (instead of a variable), or you didn't provide
   a value for, are not configurable in the task group when added to a build
   or release pipeline.
 
-* Task conditions (such as "Run this task only when a previous task has failed" for a
+- Task conditions (such as "Run this task only when a previous task has failed" for a
   **PowerShell Script** task) can be configured in a task group and these settings are persisted with the task group.
 
-* When you save the task group, you can provide a name and a description for the
+- When you save the task group, you can provide a name and a description for the
   new task group, and select a category where you want it to appear in the
   **Task catalog** dialog. You can also change the default values for each of the parameters.
 
-* When you queue a build or a release, the encapsulated tasks
+- When you queue a build or a release, the encapsulated tasks
   are extracted and the values you entered for the task group parameters are applied to the tasks.
 
-* Changes you make to a task group are reflected in every instance of the task group.
+- Changes you make to a task group are reflected in every instance of the task group.
 
 ## Create a task group
 
@@ -80,7 +80,7 @@ to change each one individually.
 
 1.  After you choose **Create**, the new task group is created and replaces the selected tasks in your pipeline.
 
-1.  All the '$(vars)' from the underlying tasks, excluding the [predefined variables](../build/variables.md), will surface as the mandatory parameters for the newly created task group.
+1.  All the '\$(vars)' from the underlying tasks, excluding the [predefined variables](../build/variables.md), will surface as the mandatory parameters for the newly created task group.
 
     For example, let's say you have a task input $(foobar), which you don't intend to parameterize. However, when you create a task group, the task input is converted into task group parameter 'foobar'. Now, you can provide the default value for the task group parameter 'foobar' as $(foobar). This ensures that at runtime, the expanded task gets the same input it's intended to.
 
@@ -103,7 +103,7 @@ Select a task group name to open the details page.
 
 ![Managing a task group](media/manage-task-group.png)
 
-* In the **Tasks** page you can edit the tasks that make up the task group.
+- In the **Tasks** page you can edit the tasks that make up the task group.
   For each encapsulated task you can change the parameter values for the
   non-variable parameters, edit the existing parameter variables,
   or convert parameter values to and from variables. When you save the changes,
@@ -111,9 +111,9 @@ Select a task group name to open the details page.
 
 All the variable parameters of the task group will show up as mandatory parameters in the pipeline definition. You can also set the default value for the task group parameters.
 
-* In the **History** tab you can see the history of changes to the group.
+- In the **History** tab you can see the history of changes to the group.
 
-* In the **References** tab you can expand lists of all the build and release pipelines,
+- In the **References** tab you can expand lists of all the build and release pipelines,
   and other task groups, that use (reference) this task group.
   This is useful to ensure changes do not have unexpected effects on other processes.
 
@@ -189,7 +189,7 @@ However, if your taskgroup update is not a breaking change but you would like to
 
 ## Related topics
 
-* [Tasks](../process/tasks.md)
-* [Task jobs](../process/phases.md)
+- [Tasks](../process/tasks.md)
+- [Task jobs](../process/phases.md)
 
 [!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

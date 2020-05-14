@@ -47,8 +47,8 @@ The following steps provide support for the test experience available with TFS 2
     1.  Import the test plan and test suite WIT definitions. Specify the _DirectoryPath_ to the WorkItem Tracking/TypeDefinitions folder that contains the process template that you downloaded.
 
         ```
-        witadmin importwitd /collection:"CollectionURL" /p:"ProjectName" /f:"DirectoryPath\TestPlan.xml"  
-        witadmin importwitd /collection:"CollectionURL" /p:"ProjectName" /f:"DirectoryPath\TestSuite.xml"  
+        witadmin importwitd /collection:"CollectionURL" /p:"ProjectName" /f:"DirectoryPath\TestPlan.xml"
+        witadmin importwitd /collection:"CollectionURL" /p:"ProjectName" /f:"DirectoryPath\TestSuite.xml"
         ```
 
         An example of _CollectionURL_ is `http://MyServer:8080/tfs/DefaultCollection`.
@@ -62,7 +62,7 @@ The following steps provide support for the test experience available with TFS 2
     1.  Export your categories definition file.
 
         ```
-        witadmin exportcategories /collection:CollectionURL /p:ProjectName /f:"DirectoryPath\Categories.xml"  
+        witadmin exportcategories /collection:CollectionURL /p:ProjectName /f:"DirectoryPath\Categories.xml"
         ```
 
     2.  Add the following categories.
@@ -70,12 +70,12 @@ The following steps provide support for the test experience available with TFS 2
         > [!div class="tabbedCodeSnippets"]
         >
         > ```XML
-        > <CATEGORY name="Test Plan Category" refname="Microsoft.TestPlanCategory">  
-        >        <DEFAULTWORKITEMTYPE name="Test Plan" />  
-        >   </CATEGORY>  
-        >   <CATEGORY name="Test Suite Category" refname="Microsoft.TestSuiteCategory">  
-        >        <DEFAULTWORKITEMTYPE name="Test Suite" />  
-        >   </CATEGORY>  
+        > <CATEGORY name="Test Plan Category" refname="Microsoft.TestPlanCategory">
+        >        <DEFAULTWORKITEMTYPE name="Test Plan" />
+        >   </CATEGORY>
+        >   <CATEGORY name="Test Suite Category" refname="Microsoft.TestSuiteCategory">
+        >        <DEFAULTWORKITEMTYPE name="Test Suite" />
+        >   </CATEGORY>
         > ```
 
     3.  Add the new WITs to the hidden categories.
@@ -83,22 +83,22 @@ The following steps provide support for the test experience available with TFS 2
         > [!div class="tabbedCodeSnippets"]
         >
         > ```XML
-        > <CATEGORY name="Hidden Types Category" refname="Microsoft.HiddenCategory">  
-        >     <DEFAULTWORKITEMTYPE name="Code Review Request" />  
-        >     <WORKITEMTYPE name="Code Review Response" />  
-        >     <WORKITEMTYPE name="Feedback Request" />  
-        >     <WORKITEMTYPE name="Feedback Response" />  
-        >     <WORKITEMTYPE name="Shared Steps" />  
-        >     <WORKITEMTYPE name="Shared Parameter" />  
-        >     <WORKITEMTYPE name="Test Plan" />  
-        >     <WORKITEMTYPE name="Test Suite" />  
-        >   </CATEGORY>  
+        > <CATEGORY name="Hidden Types Category" refname="Microsoft.HiddenCategory">
+        >     <DEFAULTWORKITEMTYPE name="Code Review Request" />
+        >     <WORKITEMTYPE name="Code Review Response" />
+        >     <WORKITEMTYPE name="Feedback Request" />
+        >     <WORKITEMTYPE name="Feedback Response" />
+        >     <WORKITEMTYPE name="Shared Steps" />
+        >     <WORKITEMTYPE name="Shared Parameter" />
+        >     <WORKITEMTYPE name="Test Plan" />
+        >     <WORKITEMTYPE name="Test Suite" />
+        >   </CATEGORY>
         > ```
 
     4.  Import the updated file.
 
         ```
-        witadmin importcategories /collection:CollectionURL /p:ProjectName /f:"DirectoryPath\Categories.xml"  
+        witadmin importcategories /collection:CollectionURL /p:ProjectName /f:"DirectoryPath\Categories.xml"
         ```
 
 3.  **Migrate existing test plans and suites to work item based test plans and suites**.
@@ -106,13 +106,13 @@ The following steps provide support for the test experience available with TFS 2
     1.  Open a Command Prompt window on the TFS application-tier server and change the directory. For example:
 
         ```
-        cd %programfiles%\TFS 15.0\Tools  
+        cd %programfiles%\TFS 15.0\Tools
         ```
 
     2.  Run the **TfsConfig TCM** command.
 
         ```
-        TFSConfig TCM /upgradeTestPlans /CollectionName:CollectionName /TeamProject:TeamProjectName  
+        TFSConfig TCM /upgradeTestPlans /CollectionName:CollectionName /TeamProject:TeamProjectName
         ```
 
         For example:
@@ -122,27 +122,27 @@ The following steps provide support for the test experience available with TFS 2
         Respond to the questions that appear.
 
         ```
-        Logging sent to file C:\ProgramData\Microsoft\Team Foundation\Server Configuration\Logs\TPC_UPG_AT_0515_143821.log  
-        Microsoft (R) TfsConfig - Team Foundation Server Configuration Tool  
-        Copyright (c) Microsoft Corporation. All rights reserved.  
+        Logging sent to file C:\ProgramData\Microsoft\Team Foundation\Server Configuration\Logs\TPC_UPG_AT_0515_143821.log
+        Microsoft (R) TfsConfig - Team Foundation Server Configuration Tool
+        Copyright (c) Microsoft Corporation. All rights reserved.
 
-        Command: tcm  
-        Microsoft (R) TfsConfig - Team Foundation Server Configuration Tool  
-        Copyright (c) Microsoft Corporation. All rights reserved.  
+        Command: tcm
+        Microsoft (R) TfsConfig - Team Foundation Server Configuration Tool
+        Copyright (c) Microsoft Corporation. All rights reserved.
 
-        In order to upgrade the test plans, you have to complete the following steps:  
-        1. Import the test plan work item definition into the project. Have you complete  
-        d this step? (Yes/No) Yes  
-        2. Import the test plan category into the project. Have you completed this step?  
-        (Yes/No) Yes  
+        In order to upgrade the test plans, you have to complete the following steps:
+        1. Import the test plan work item definition into the project. Have you complete
+        d this step? (Yes/No) Yes
+        2. Import the test plan category into the project. Have you completed this step?
+        (Yes/No) Yes
 
-        Test plan migration job successfully scheduled.  
+        Test plan migration job successfully scheduled.
         ```
 
     3.  If you're migrating a large quantity of test plans and test suites, you can run the following command to monitor the progress of data migration.
 
         ```
-        TFSConfig TCM /upgradeStatus /collectionName:CollectionName /TeamProject:TeamProjectName  
+        TFSConfig TCM /upgradeStatus /collectionName:CollectionName /TeamProject:TeamProjectName
         ```
 
     After a successful data migration, all test management data should be available for use. For more information about this utility, see [TFSConfig command, TCM](/azure/devops/server/command-line/tfsconfig-cmd#tcm).
@@ -151,4 +151,4 @@ The following steps provide support for the test experience available with TFS 2
 
 ## Related articles
 
-* [Manage TFS server configuration with TFSConfig](/azure/devops/server/command-line/tfsconfig-cmd)
+- [Manage TFS server configuration with TFSConfig](/azure/devops/server/command-line/tfsconfig-cmd)

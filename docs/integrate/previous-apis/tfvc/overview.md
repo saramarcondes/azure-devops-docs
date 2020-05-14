@@ -22,11 +22,11 @@ Folders can be [branched](./branches.md) and items can be [labelled](./labels.md
 
 ![TFVC resources](./media/tfvc-resources.png)
 
-* [Branches](./branches.md)
-* [Changesets](./changesets.md)
-* [Items](./items.md)
-* [Labels](./labels.md)
-* [Shelvesets](./shelvesets.md)
+- [Branches](./branches.md)
+- [Changesets](./changesets.md)
+- [Items](./items.md)
+- [Labels](./labels.md)
+- [Shelvesets](./shelvesets.md)
 
 ## Common tasks
 
@@ -41,5 +41,5 @@ Get the contents of a [file](./items.md#getafile).
 
 ### Get item metadata
 
-* Get the metadata for the most recent version of each file or folder by getting the [items recursively](./items.md#afolderanditschildren).
-* You can get [different versions](./items.md#getaspecificversion) of the items, too.
+- Get the metadata for the most recent version of each file or folder by getting the [items recursively](./items.md#afolderanditschildren).
+- You can get [different versions](./items.md#getaspecificversion) of the items, too.

@@ -155,9 +155,9 @@ az boards work-item show --id
 
 #### Parameters
 
-* **id**: Required. The ID of the work item.
-* **open**: Optional. Open the work item in the default web browser.
-* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **id**: Required. The ID of the work item.
+- **open**: Optional. Open the work item in the default web browser.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 
 #### Example
 
@@ -267,12 +267,12 @@ From the web portal, you can open any view, filtered view, or selected set of wo
 
 Queries provide additional features that you can use, including:
 
-* Edit one or more fields of several work items
-* Add or remove tags from several work items
-* Change the work item type
-* Delete work items
-* Apply work item templates
-* And more
+- Edit one or more fields of several work items
+- Add or remove tags from several work items
+- Change the work item type
+- Delete work items
+- Apply work item templates
+- And more
 
 For details, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json). To learn more about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md).
 
@@ -295,12 +295,12 @@ Use the following three controls to manage your views in the web portal.
 
 ## Related articles
 
-* [Best tool to add, update, and link work items](best-tool-add-update-link-work-items.md)
-* [Move, change, or delete work items (Recycle Bin)](../backlogs/remove-delete-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
-* [Enable preview features](../../project/navigation/preview-features.md)
-* [Use work item form controls](work-item-form-controls.md)
-* [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
-* [Work across projects](../../project/navigation/work-across-projects.md)
+- [Best tool to add, update, and link work items](best-tool-add-update-link-work-items.md)
+- [Move, change, or delete work items (Recycle Bin)](../backlogs/remove-delete-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
+- [Enable preview features](../../project/navigation/preview-features.md)
+- [Use work item form controls](work-item-form-controls.md)
+- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
+- [Work across projects](../../project/navigation/work-across-projects.md)
 
 > [!NOTE]
 > You can create and manage work items from the command line or scripts using the [Azure DevOps CLI](/cli/azure/ext/azure-devops/?view=azure-cli-latest).

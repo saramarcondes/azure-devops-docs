@@ -54,26 +54,26 @@ Schema conflicts occur when a set of attributes for reportable fields differs ac
 
 You can manage the warehouse and analysis services cube to address the following scenarios:
 
-* **Correct errors that block processing of the data warehouse**. Schema conflicts occur when a set of attributes for reportable fields differs across team project collections. Schema conflicts block updated data from being moved into the warehouse and the cube. You must correct all schema conflicts to unblock processing and to update reports with current data.
+- **Correct errors that block processing of the data warehouse**. Schema conflicts occur when a set of attributes for reportable fields differs across team project collections. Schema conflicts block updated data from being moved into the warehouse and the cube. You must correct all schema conflicts to unblock processing and to update reports with current data.
 
   See [Resolve schema conflicts that are occurring in the data warehouse](resolve-schema-conflicts.md).
 
-- **Update the data warehouse or cube on demand**. Resolve a problem with reports that are not up to date or contain missing data. To resolve a problem with reports that do not update or contain missing data, you may have to process the data warehouse manually. Also, you can troubleshoot errors that appear in the event viewer for an application-tier server that are related to warehouse processing jobs.
+* **Update the data warehouse or cube on demand**. Resolve a problem with reports that are not up to date or contain missing data. To resolve a problem with reports that do not update or contain missing data, you may have to process the data warehouse manually. Also, you can troubleshoot errors that appear in the event viewer for an application-tier server that are related to warehouse processing jobs.
 
   See [Manually process the TFS data warehouse and analysis services cube](manually-process-data-warehouse-and-cube.md).
 
-* **Re-create the schemas, and rebuild the data warehouse databases**. Rebuild the warehouse and cube after you move, restore, rename, or fail over the data-tier server for Team Foundation. To access high-level reports, you must rebuild the data warehouse whenever you move, restore, rename, or fail over the data-tier server.
+- **Re-create the schemas, and rebuild the data warehouse databases**. Rebuild the warehouse and cube after you move, restore, rename, or fail over the data-tier server for Team Foundation. To access high-level reports, you must rebuild the data warehouse whenever you move, restore, rename, or fail over the data-tier server.
 
   See [Rebuild the TFS data warehouse and cube](rebuild-data-warehouse-and-cube.md).
 
-- **Modify the refresh frequency of the data warehouse or cube**. Change the refresh frequency or other process control setting for the warehouse or cube. The default properties for the warehouse are set when TFS is installed, but you can later change the default values to respond to changing requirements. Two properties that you might want to change are the frequency with which the data is updated in the data warehouse and the security settings that control user access to the data warehouse.
+* **Modify the refresh frequency of the data warehouse or cube**. Change the refresh frequency or other process control setting for the warehouse or cube. The default properties for the warehouse are set when TFS is installed, but you can later change the default values to respond to changing requirements. Two properties that you might want to change are the frequency with which the data is updated in the data warehouse and the security settings that control user access to the data warehouse.
 
   See [Change a process control setting for the data warehouse or Analysis Services cube](change-a-process-control-setting.md).
 
 ## Related content
 
-* [Reportable fields reference](../../reference/xml/reportable-fields-reference.md) provides definitions for each reportable field. A default set of fields appears in the relational warehouse database or the cube. These fields have a reportable attribute value of Detail, Dimension, or Measure.
+- [Reportable fields reference](../../reference/xml/reportable-fields-reference.md) provides definitions for each reportable field. A default set of fields appears in the relational warehouse database or the cube. These fields have a reportable attribute value of Detail, Dimension, or Measure.
   [Understanding SQL Server and SQL Server Reporting Services](/azure/devops/server/architecture/sql-server-databases) describes the relationships and dependencies between SQL Server and TFS.
-* [Manage team project collections](/azure/devops/server/admin/manage-project-collections) describes how you can enable and disable data that flows into the data warehouse by editing the reporting configuration for your team project collections. After you add a report server to your deployment, you can configure reporting resources for your team project collections and the projects in those collections.
+- [Manage team project collections](/azure/devops/server/admin/manage-project-collections) describes how you can enable and disable data that flows into the data warehouse by editing the reporting configuration for your team project collections. After you add a report server to your deployment, you can configure reporting resources for your team project collections and the projects in those collections.
 
-* [Data Warehouse extensibility](https://msdn.microsoft.com/library/bb130342.aspx) describes how you can add new data types to the data warehouse by implementing a warehouse adaptor.
+- [Data Warehouse extensibility](https://msdn.microsoft.com/library/bb130342.aspx) describes how you can add new data types to the data warehouse by implementing a warehouse adaptor.

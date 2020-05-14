@@ -16,9 +16,9 @@ monikerRange: '>= tfs-2015'
 
 > [!div class="op_single_selector"]
 >
-> * [Visual Studio 2017](share-your-code-in-git-vs-2017.md)
-> * [Visual Studio 2015 Update 2](share-your-code-in-git-vs.md)
-> * [Visual Studio 2013](share-your-code-in-git-vs-2013.md)
+> - [Visual Studio 2017](share-your-code-in-git-vs-2017.md)
+> - [Visual Studio 2015 Update 2](share-your-code-in-git-vs.md)
+> - [Visual Studio 2013](share-your-code-in-git-vs-2013.md)
 
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015
 
@@ -30,7 +30,7 @@ If you want to work with a Visual Studio solution hosted in an existing repo, se
 
 ## Prerequisites
 
-* An organization in Azure DevOps. If you don't have an organization, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
+- An organization in Azure DevOps. If you don't have an organization, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
 
 ## Create a local Git repo for your project
 
@@ -41,10 +41,10 @@ Once you have a local repo, select items in the status bar to quickly navigate b
 
 ![Visual Studio Git status bar](media/share-your-code-in-git-vs-2017/vs-status-bar.png)
 
-* ![Visual Studio Unpublished Changes Status Bar icon](media/share-your-code-in-git-vs-2017/vs-unpublished-changes.png) shows the number of unpublished commits in your local branch. Selecting this opens the **Synchronization** view in Team Explorer.
-* ![Visual Studio Pending Changes Status Bar icon](media/share-your-code-in-git-vs-2017/vs-pending-changes.png) shows the number of uncommitted file changes. Selecting this opens the **Changes** view in Team Explorer.
-* ![Visual Studio Repo Status Bar icon](media/share-your-code-in-git-vs-2017/vs-current-repo.png) shows the current Git repo. Selecting this opens the **Connect** view in Team Explorer.
-* ![Visual Studio branch status bar icon](media/share-your-code-in-git-vs-2017/vs-branch-picker.png) shows your current Git branch. Selecting this displays a branch picker to quickly switch between Git branches or create new branches.
+- ![Visual Studio Unpublished Changes Status Bar icon](media/share-your-code-in-git-vs-2017/vs-unpublished-changes.png) shows the number of unpublished commits in your local branch. Selecting this opens the **Synchronization** view in Team Explorer.
+- ![Visual Studio Pending Changes Status Bar icon](media/share-your-code-in-git-vs-2017/vs-pending-changes.png) shows the number of uncommitted file changes. Selecting this opens the **Changes** view in Team Explorer.
+- ![Visual Studio Repo Status Bar icon](media/share-your-code-in-git-vs-2017/vs-current-repo.png) shows the current Git repo. Selecting this opens the **Connect** view in Team Explorer.
+- ![Visual Studio branch status bar icon](media/share-your-code-in-git-vs-2017/vs-branch-picker.png) shows your current Git branch. Selecting this displays a branch picker to quickly switch between Git branches or create new branches.
 
 > [!NOTE]
 > If you don't see any icons such as ![Visual Studio Unpublished Changes Status Bar icon](media/share-your-code-in-git-vs-2017/vs-unpublished-changes.png) or ![Visual Studio Pending Changes Status Bar icon](media/share-your-code-in-git-vs-2017/vs-pending-changes.png), ensure that you have a project open that is part of a Git repo. If your project is brand new or not yet added to a repo, you can add it to one by selecting ![Add to Source Control](media/share-your-code-in-git-vs-2017/add-src-control-status-bar.png) on the status bar, or by right-clicking your solution in **Solution Explorer** and choosing **Add Solution to Source Control**.
@@ -100,10 +100,10 @@ Sync your local repo with changes from your team as they make updates.
 
 ## Frequently asked questions
 
-* [I don't see the **Add to Source Control** button in the status bar.](#i-dont-see-the-add-to-source-control-button-in-the-status-bar)
-* [How can I see what changes are in a commit before I pull it into my local branch?](#how-can-i-see-what-changes-are-in-a-commit-before-i-pull-it-into-my-local-branch)
-* [How do I associate my commits with work items?](#how-do-i-associate-my-commits-with-work-items)
-* [Can I use the Git command prompt with Visual Studio?](#can-i-use-the-git-command-prompt-with-visual-studio)
+- [I don't see the **Add to Source Control** button in the status bar.](#i-dont-see-the-add-to-source-control-button-in-the-status-bar)
+- [How can I see what changes are in a commit before I pull it into my local branch?](#how-can-i-see-what-changes-are-in-a-commit-before-i-pull-it-into-my-local-branch)
+- [How do I associate my commits with work items?](#how-do-i-associate-my-commits-with-work-items)
+- [Can I use the Git command prompt with Visual Studio?](#can-i-use-the-git-command-prompt-with-visual-studio)
 
 ### I don't see the **Add to Source Control** button in the status bar.
 

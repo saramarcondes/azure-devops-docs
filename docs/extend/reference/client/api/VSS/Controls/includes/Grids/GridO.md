@@ -1,19 +1,19 @@
 [!INCLUDE [styleoverrides](../../../../_data/style-overrides.md)]
 
-* [getSelectionCount()](#method_getSelectionCount)
-* [setDataSource()](#method_setDataSource)
-* [setDataSource()](#method_setDataSource)
-* [getRowInfo()](#method_getRowInfo)
-* [getRowData()](#method_getRowData)
-* [getColumns()](#method_getColumns)
-* [getSortOrder()](#method_getSortOrder)
-* [setColumnOptions()](#method_setColumnOptions)
-* [expandAll()](#method_expandAll)
-* [collapseAll()](#method_collapseAll)
-* [expandByLevel()](#method_expandByLevel)
-* [collapseByLevel()](#method_collapseByLevel)
-* [tryToggle()](#method_tryToggle)
-* [getContextMenuRowInfo()](#method_getContextMenuRowInfo)
+- [getSelectionCount()](#method_getSelectionCount)
+- [setDataSource()](#method_setDataSource)
+- [setDataSource()](#method_setDataSource)
+- [getRowInfo()](#method_getRowInfo)
+- [getRowData()](#method_getRowData)
+- [getColumns()](#method_getColumns)
+- [getSortOrder()](#method_getSortOrder)
+- [setColumnOptions()](#method_setColumnOptions)
+- [expandAll()](#method_expandAll)
+- [collapseAll()](#method_collapseAll)
+- [expandByLevel()](#method_expandByLevel)
+- [collapseByLevel()](#method_collapseByLevel)
+- [tryToggle()](#method_tryToggle)
+- [getContextMenuRowInfo()](#method_getContextMenuRowInfo)
 
 <a name="method_getSelectionCount"></a>
 
@@ -37,7 +37,7 @@ void
 
 #### Parameters
 
-* `source`: IGridSource. GridSource object to set the grid source.
+- `source`: IGridSource. GridSource object to set the grid source.
 
 <a name="method_setDataSource"></a>
 
@@ -51,12 +51,12 @@ any
 
 #### Parameters
 
-* `source`: any[]. Optional. New source for the grid (See grid options for details).
-* `expandStates`: any[]. Optional. Expand states for the new source. If source is not in hierarchical structure, specify null (See grid options for details).
-* `columns`: IGridColumn[]. Optional. New columns for the grid (See grid options for details).
-* `sortOrder`: IGridSortOrder[]. Optional. New sort order for the grid (See grid options for details).
-* `selectedIndex`: number. Optional. Index of the rows to be selected after new data source is set.
-* `suppressRedraw`: boolean. Optional. If true, grid is not redrawn after data source is set.
+- `source`: any[]. Optional. New source for the grid (See grid options for details).
+- `expandStates`: any[]. Optional. Expand states for the new source. If source is not in hierarchical structure, specify null (See grid options for details).
+- `columns`: IGridColumn[]. Optional. New columns for the grid (See grid options for details).
+- `sortOrder`: IGridSortOrder[]. Optional. New sort order for the grid (See grid options for details).
+- `selectedIndex`: number. Optional. Index of the rows to be selected after new data source is set.
+- `suppressRedraw`: boolean. Optional. If true, grid is not redrawn after data source is set.
 
 <a name="method_getRowInfo"></a>
 
@@ -72,7 +72,7 @@ IGridRowInfo
 
 #### Parameters
 
-* `dataIndex`: number. The data index for the record to retrieve.
+- `dataIndex`: number. The data index for the record to retrieve.
 
 <a name="method_getRowData"></a>
 
@@ -86,7 +86,7 @@ any
 
 #### Parameters
 
-* `dataIndex`: number. The data index for the record to retrieve.
+- `dataIndex`: number. The data index for the record to retrieve.
 
 <a name="method_getColumns"></a>
 
@@ -120,8 +120,8 @@ void
 
 #### Parameters
 
-* `columnName`: string. Name of the column to change the options.
-* `options`: IGridColumn. Optional. New column options.
+- `columnName`: string. Name of the column to change the options.
+- `options`: IGridColumn. Optional. New column options.
 
 <a name="method_expandAll"></a>
 
@@ -155,7 +155,7 @@ void
 
 #### Parameters
 
-* `level`: number. Level to expand.
+- `level`: number. Level to expand.
 
 <a name="method_collapseByLevel"></a>
 
@@ -169,7 +169,7 @@ void
 
 #### Parameters
 
-* `level`: number. Level to collapse.
+- `level`: number. Level to collapse.
 
 <a name="method_tryToggle"></a>
 
@@ -183,9 +183,9 @@ boolean
 
 #### Parameters
 
-* `expand`: boolean. If true, expands the node, otherwise collapsed.
-* `applyToAllRows`: boolean. True to expand or collapse all nodes, false to expand or collapse the node at a given target index, or at the current selected index as default behavior.
-* `targetIndex`: number. Optional. The node index to be expanded or collapsed, and get selection focus.
+- `expand`: boolean. If true, expands the node, otherwise collapsed.
+- `applyToAllRows`: boolean. True to expand or collapse all nodes, false to expand or collapse the node at a given target index, or at the current selected index as default behavior.
+- `targetIndex`: number. Optional. The node index to be expanded or collapsed, and get selection focus.
 
 <a name="method_getContextMenuRowInfo"></a>
 

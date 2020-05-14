@@ -23,8 +23,8 @@ In this tutorial you learn how to:
 
 > [!div class="checklist"]
 >
-> * Understand merge conflicts
-> * Resolve merge conflicts
+> - Understand merge conflicts
+> - Resolve merge conflicts
 
 ## Understand merge conflicts
 

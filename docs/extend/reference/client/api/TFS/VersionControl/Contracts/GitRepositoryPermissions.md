@@ -18,19 +18,19 @@ the [previous list of permissions](GitRepositoryPermissions-before-2017.md)._
 
 ### Values
 
-* `None`
-* `GenericRead`
-* `GenericContribute`
-* `ForcePush`
-* `EditPolicies`
-* `CreateBranch`
-* `CreateRepository`
-* `DeleteRepository`
-* `RenameRepository`
-* `CreateTag`
-* `ManageNote`
-* `ManagePermissions`
-* `PolicyExempt`
-* `RemoveOthersLocks`
-* `BranchLevelPermissions` This is the set of bits that are valid for branches.
-* `All` This defines the set of bits that are valid for the Git permission space. When reading or writing git permissions, these are the only bits paid attention too.
+- `None`
+- `GenericRead`
+- `GenericContribute`
+- `ForcePush`
+- `EditPolicies`
+- `CreateBranch`
+- `CreateRepository`
+- `DeleteRepository`
+- `RenameRepository`
+- `CreateTag`
+- `ManageNote`
+- `ManagePermissions`
+- `PolicyExempt`
+- `RemoveOthersLocks`
+- `BranchLevelPermissions` This is the set of bits that are valid for branches.
+- `All` This defines the set of bits that are valid for the Git permission space. When reading or writing git permissions, these are the only bits paid attention too.

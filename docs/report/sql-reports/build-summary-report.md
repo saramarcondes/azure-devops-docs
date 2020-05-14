@@ -53,9 +53,9 @@ The following table describes the information that appears for each quality indi
 
 You can filter the Build Summary report in the following ways:
 
-* Change the start and end dates for the report.
+- Change the start and end dates for the report.
 
-* Filter the build definitions by specifying the platforms, configurations, build definitions, build qualities, or build progress to include in the report.
+- Filter the build definitions by specifying the platforms, configurations, build definitions, build qualities, or build progress to include in the report.
 
   For more information, see [Filtering the Report](#Changing) later in this article.
 
@@ -63,25 +63,25 @@ You can filter the Build Summary report in the following ways:
 
 For the Build Summary report to be useful, team members must perform the following activities to manage builds:
 
-* **Configure a build system**. To use Team Foundation Build, you must set up a build system.
+- **Configure a build system**. To use Team Foundation Build, you must set up a build system.
 
   For more information, see [Build and Release agents](../../pipelines/agents/agents.md).
 
-* **Create build definitions**. You can create several build definitions, each of which can be run to produce code for a different platform. Also, you can run each build for a different configuration.
+- **Create build definitions**. You can create several build definitions, each of which can be run to produce code for a different platform. Also, you can run each build for a different configuration.
 
   For more information, see [Get started with CI/CD](../../pipelines/get-started-designer.md).
 
-* **Define tests to run automatically as part of the build**. As part of the build definition, you can define tests to run as part of the build or to fail if the tests fail.
+- **Define tests to run automatically as part of the build**. As part of the build definition, you can define tests to run as part of the build or to fail if the tests fail.
 
   For more information, see [Set up continuous testing for your builds](../../pipelines/test/set-up-continuous-testing-builds.md).
 
-* **Configure tests to gather code coverage data**. For code coverage data to appear in the report, team members must instrument tests to gather that data.
+- **Configure tests to gather code coverage data**. For code coverage data to appear in the report, team members must instrument tests to gather that data.
 
-* **Run builds regularly**. Builds can be run at set intervals or after every check-in. You can schedule regular builds when you use the schedule trigger.
+- **Run builds regularly**. Builds can be run at set intervals or after every check-in. You can schedule regular builds when you use the schedule trigger.
 
   For more information, see [Build triggers](../../pipelines/build/triggers.md).
 
-* (Optional) **Rate completed builds**. A team member can manually rate a build by using Build Explorer.
+- (Optional) **Rate completed builds**. A team member can manually rate a build by using Build Explorer.
 
   For more information, see [Rate the quality of a completed build](https://msdn.microsoft.com/library/ms181734.aspx).
 
@@ -103,15 +103,15 @@ You can review the Build Summary report to answer questions about the most recen
 
 You can use this report to find answers to these questions:
 
-* What is the status of all builds over time?
+- What is the status of all builds over time?
 
-* Which builds succeeded?
+- Which builds succeeded?
 
-* Which builds have a significant number of changes to the code?
+- Which builds have a significant number of changes to the code?
 
-* Which builds are ready to install?
+- Which builds are ready to install?
 
-* How much of the code did the tests execute?
+- How much of the code did the tests execute?
 
   The Build Summary report does not indicate the causes of problems, but it points to where you can look to determine the root cause of problems. This report also does not indicate the size or significance of build problems.
 
@@ -119,33 +119,33 @@ You can use this report to find answers to these questions:
 
 A healthy Build Summary report show the following indicators:
 
-* Most builds are passing.
+- Most builds are passing.
 
-* Most tests are passing.
+- Most tests are passing.
 
-* Code coverage is high.
+- Code coverage is high.
 
-* Code churn shows few spikes.
+- Code churn shows few spikes.
 
 ### Unhealthy Version of Report
 
 An unhealthy version of the Build Summary report will show one or more of the following indicators. You may want to investigate according to the following guidance:
 
-* **Many builds are failing**. Investigate reasons why builds are failing.
+- **Many builds are failing**. Investigate reasons why builds are failing.
 
-* **Many tests are failing**. Investigate and fix tests that are failing to pass.
+- **Many tests are failing**. Investigate and fix tests that are failing to pass.
 
-* **Code coverage is mostly blue**. You might want to write more automatic tests.
+- **Code coverage is mostly blue**. You might want to write more automatic tests.
 
-* **Code churn shows spikes**. You might want to verify that unusual peaks are accounted for.
+- **Code churn shows spikes**. You might want to verify that unusual peaks are accounted for.
 
 ## <a name="Changing"></a> Filtering the Report
 
 You can filter the Build Summary report in the following ways:
 
-* Change the start and end dates for the report.
+- Change the start and end dates for the report.
 
-* Filter the set of builds that are represented in the report by specifying the platform, configuration, build definition, build quality, and build progress to include in the report.
+- Filter the set of builds that are represented in the report by specifying the platform, configuration, build definition, build quality, and build progress to include in the report.
 
   > [!NOTE]
   > You can configure build definitions to run no tests, some tests, or all tests. The report will vary greatly based on the configuration of the build definitions.

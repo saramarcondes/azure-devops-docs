@@ -20,17 +20,17 @@ Azure DevOps provides developer services to support teams to plan work, collabor
 
 Azure DevOps provides integrated features that you can access through your web browser or IDE client. You can use one or more of the following services based on your business needs:
 
-* **Azure Repos** provides Git repositories or Team Foundation Version Control (TFVC) for source control of your code
-* **Azure Pipelines** provides build and release services to support continuous integration and delivery of your apps
-* **Azure Boards** delivers a suite of Agile tools to support planning and tracking work, code defects, and issues using Kanban and Scrum methods
-* **Azure Test Plans** provides several tools to test your apps, including manual/exploratory testing and continuous testing
-* **Azure Artifacts** allows teams to share Maven, npm, and NuGet packages from public and private sources and integrate package sharing into your CI/CD pipelines
+- **Azure Repos** provides Git repositories or Team Foundation Version Control (TFVC) for source control of your code
+- **Azure Pipelines** provides build and release services to support continuous integration and delivery of your apps
+- **Azure Boards** delivers a suite of Agile tools to support planning and tracking work, code defects, and issues using Kanban and Scrum methods
+- **Azure Test Plans** provides several tools to test your apps, including manual/exploratory testing and continuous testing
+- **Azure Artifacts** allows teams to share Maven, npm, and NuGet packages from public and private sources and integrate package sharing into your CI/CD pipelines
 
 You can also use collaboration tools such as:
 
-* Customizable team dashboards with configurable widgets to share information, progress, and trends
-* Built-in wikis for sharing information
-* Configurable notifications
+- Customizable team dashboards with configurable widgets to share information, progress, and trends
+- Built-in wikis for sharing information
+- Configurable notifications
 
 Azure DevOps supports adding extensions and integrating with other popular services, such as: Campfire, Slack, Trello, UserVoice, and more, and developing your own custom extensions.
 
@@ -44,11 +44,11 @@ Team Foundation Server became Azure DevOps Server 2019.
 
 Choose Azure DevOps Services when you want:
 
-* Quick set-up
-* Maintenance-free operations
-* Easy collaboration across domains
-* Elastic scale
-* Rock-solid security
+- Quick set-up
+- Maintenance-free operations
+- Easy collaboration across domains
+- Elastic scale
+- Rock-solid security
 
 To learn more about data protection in Azure DevOps Services, see [Data protection overview](../organizations/security/data-protection.md).
 
@@ -58,21 +58,21 @@ We've made it easy for you to start for free and try out our services. Sign up f
 
 You can use all the services included with Azure DevOps, or choose just what you need to complement your existing workflows.
 
-* **[Azure Boards](https://azure.microsoft.com/services/devops/boards/)**. Plan, track, and discuss work across your teams.
-* **[Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/)**. Continuously build, test, and deploy to any platform and cloud.
-* **[Azure Repos](https://azure.microsoft.com/services/devops/repos/)**. Get unlimited, cloud-hosted private Git repositories for your project.
+- **[Azure Boards](https://azure.microsoft.com/services/devops/boards/)**. Plan, track, and discuss work across your teams.
+- **[Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/)**. Continuously build, test, and deploy to any platform and cloud.
+- **[Azure Repos](https://azure.microsoft.com/services/devops/repos/)**. Get unlimited, cloud-hosted private Git repositories for your project.
 
 ## Choose Azure DevOps Server
 
 Choose on-premises Azure DevOps Server when you need:
 
-* Your data to stay within your network.
-* Your work tracking customization requirements are met better with the on-premises XML process model over the inheritance process model. The on-premises model supports modification of XML definition files.
+- Your data to stay within your network.
+- Your work tracking customization requirements are met better with the on-premises XML process model over the inheritance process model. The on-premises model supports modification of XML definition files.
 
 When you deploy Azure DevOps Server, you can also configure the following servers or integration points:
 
-* **Build server** supports on-premises and cloud-hosted builds.
-* **SQL Server and SQL Analysis Server** support SQL Server Reports and the ability to create Excel pivot charts based on the cube.
+- **Build server** supports on-premises and cloud-hosted builds.
+- **SQL Server and SQL Analysis Server** support SQL Server Reports and the ability to create Excel pivot charts based on the cube.
 
 Start for free by downloading [Azure DevOps Server Express](https://go.microsoft.com/fwlink/?LinkId=2041269&clcid=0x409). Then, either upload your code to share or source control. Or, begin tracking your work using Scrum, Kanban, or a combination of methods.
 
@@ -111,15 +111,15 @@ This content supports a platform/version selector. Toggle the Content version se
 
 ## Related articles
 
-* [A tour of services](services.md)
-* [Client-server tools](tools.md)
-* [Software development roles](roles.md)
-* [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
-* [Azure DevOps release notes](/azure/devops/release-notes/index)
-* [Azure DevOps blog](https://blogs.msdn.microsoft.com/devops/)
+- [A tour of services](services.md)
+- [Client-server tools](tools.md)
+- [Software development roles](roles.md)
+- [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
+- [Azure DevOps release notes](/azure/devops/release-notes/index)
+- [Azure DevOps blog](https://blogs.msdn.microsoft.com/devops/)
 
 <!---
-[Small teams can start for free!](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)  
+[Small teams can start for free!](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)
 [DevOps overview for Azure DevOps Services and TFS](index.md)
 
 

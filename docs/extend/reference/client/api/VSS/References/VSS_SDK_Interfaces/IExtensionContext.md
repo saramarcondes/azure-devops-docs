@@ -19,10 +19,10 @@ Context about the app that owns the content that is being hosted
 
 ### Members
 
-* `publisherId`: string. Friendly unique ID of the publisher
+- `publisherId`: string. Friendly unique ID of the publisher
 
-* `extensionId`: string. Friendly ID of the extension (unique within the publisher)
+- `extensionId`: string. Friendly ID of the extension (unique within the publisher)
 
-* `version`: string. Version of the extension
+- `version`: string. Version of the extension
 
-* `baseUri`: string. The base uri to be used with relative urls in contribution properties
+- `baseUri`: string. The base uri to be used with relative urls in contribution properties

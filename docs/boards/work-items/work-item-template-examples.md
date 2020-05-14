@@ -17,10 +17,10 @@ ms.date: 04/24/2019
 
 Work item templates can help save time and provide guidance to your team when defining user stories, features, bugs, or tasks. Teams use templates to support the following objectives:
 
-* Create bugs for specific product areas
-* Provide guidance to fill out the work item
-* Create work items with specific tags
-* Define a bug template for use with another application or extension, such as [Bug Bash Pro](https://marketplace.visualstudio.com/items?itemName=mohitbagra.bugbashpro).
+- Create bugs for specific product areas
+- Provide guidance to fill out the work item
+- Create work items with specific tags
+- Define a bug template for use with another application or extension, such as [Bug Bash Pro](https://marketplace.visualstudio.com/items?itemName=mohitbagra.bugbashpro).
 
 Review this article for examples of defining specific values of work item templates. For guidance on adding, managing, and applying work item templates, see [Use templates to add and update work items](../backlogs/work-item-template.md).
 
@@ -94,9 +94,9 @@ For example, the <strong>Triage</strong> custom field can be set to `False`, ind
 
 An often requested feature is to be able to create a work item which automatically links to one or more work items. For example, a user story that links to 5 tasks. Work item templates don't support this capability. However, you may find a Marketplace extension will support this feature. For example, see the following extensions:
 
-* [Work item form one click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions)
-* [1-Click Tasks](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-tasks)
-* [1-Click Child-Links](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-child-links)
+- [Work item form one click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions)
+- [1-Click Tasks](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-tasks)
+- [1-Click Child-Links](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-child-links)
 
 ::: moniker range=">= tfs-2017 < azure-devops"
 
@@ -106,9 +106,9 @@ If your project uses the On-premises XML process model to customize work trackin
 
 To learn more, see the following articles:
 
-* [WebLayout and Control elements](../../reference/xml/weblayout-xml-elements.md)
-* [Provide help text, hyperlinks, or web content on a work item form](../../reference/xml/provide-help-text-hyperlinks-web-content-form.md)
-* [Edit a WIT definition to add web content to a work item form](../../reference/xml/edit-wit-definition-add-web-content-form.md)
+- [WebLayout and Control elements](../../reference/xml/weblayout-xml-elements.md)
+- [Provide help text, hyperlinks, or web content on a work item form](../../reference/xml/provide-help-text-hyperlinks-web-content-form.md)
+- [Edit a WIT definition to add web content to a work item form](../../reference/xml/edit-wit-definition-add-web-content-form.md)
 
 ::: moniker-end
 
@@ -118,4 +118,4 @@ You can programmatically interact with work item templates to create, get, list,
 
 ## Related articles
 
-* [Use templates to add and update work items](../backlogs/work-item-template.md)
+- [Use templates to add and update work items](../backlogs/work-item-template.md)

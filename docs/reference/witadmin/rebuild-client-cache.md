@@ -29,7 +29,7 @@ To prevent workspace errors from occurring during version control or build opera
 
 **Requirements**
 
-* To use the **witadmin rebuildcache** command, you must be a member of the **Team Foundation Administrators** security group or the **Project Administrators** security group for the project collection that you want to manage. See [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md).
+- To use the **witadmin rebuildcache** command, you must be a member of the **Team Foundation Administrators** security group or the **Project Administrators** security group for the project collection that you want to manage. See [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md).
 
 > [!NOTE]  
 >  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the shortcut menu for **Command Prompt**, and choose **Run as Administrator**. For more information, see the [Microsoft Web site](https://go.microsoft.com/fwlink/?LinkId=111235).
@@ -37,7 +37,7 @@ To prevent workspace errors from occurring during version control or build opera
 ## Syntax
 
 ```
-witadmin rebuildcache /collection:CollectionURL [/noprompt]  
+witadmin rebuildcache /collection:CollectionURL [/noprompt]
 ```
 
 #### Parameters
@@ -57,9 +57,9 @@ The **witadmin rebuildcache** command invalidates cached data on all clients for
 The following command invalidates the metadata cache for all clients that connect to DefaultCollection that is defined on the server that is named AdventureWorksServer. The client caches are updated the next time they connect to the project collection.
 
 ```
-witadmin rebuildcache /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection  
+witadmin rebuildcache /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection
 ```
 
 ## Related articles
 
-* [witAdmin: Customize and manage objects for tracking work](witadmin-customize-and-manage-objects-for-tracking-work.md)
+- [witAdmin: Customize and manage objects for tracking work](witadmin-customize-and-manage-objects-for-tracking-work.md)

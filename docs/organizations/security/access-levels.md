@@ -36,10 +36,10 @@ Assign users or groups of users to one of the following access levels:
 
 ::: moniker range="azure-devops"
 
-* **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
-* **Basic**: Provides access to most features. Assign to users with a Visual Studio Professional subscription, an Azure DevOps Server CAL, and to users for whom you're paying for Basic access in an organization.
-* **Basic + Test Plans**: Provides access to all features included in Basic, as well as Azure Test Plans. Assign to users with a Visual Studio Test Professional or MSDN Platforms subscription, and to users for whom you're paying for Basic + Test Plans access in an organization.
-* **Visual Studio subscription**: Assign to users who already have a Visual Studio subscription. The system automatically recognizes the user's subscription&mdash;Visual Studio Enterprise, Visual Studio Professional, Visual Studio Test Professional, or MSDN Platform&mdash;and enables any other features that are included in their subscription level. If you assign Basic or Stakeholder, they also receive their Visual Studio subscription benefits upon sign-in.
+- **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
+- **Basic**: Provides access to most features. Assign to users with a Visual Studio Professional subscription, an Azure DevOps Server CAL, and to users for whom you're paying for Basic access in an organization.
+- **Basic + Test Plans**: Provides access to all features included in Basic, as well as Azure Test Plans. Assign to users with a Visual Studio Test Professional or MSDN Platforms subscription, and to users for whom you're paying for Basic + Test Plans access in an organization.
+- **Visual Studio subscription**: Assign to users who already have a Visual Studio subscription. The system automatically recognizes the user's subscription&mdash;Visual Studio Enterprise, Visual Studio Professional, Visual Studio Test Professional, or MSDN Platform&mdash;and enables any other features that are included in their subscription level. If you assign Basic or Stakeholder, they also receive their Visual Studio subscription benefits upon sign-in.
 
 The following table indicates those features available for each supported access level. Visual Studio Test Professional and MSDN Platform subscriptions grant access to the same features as Visual Studio Enterprise.
 
@@ -197,10 +197,10 @@ read wiki pages. </td>
 
 ::: moniker range="azure-devops-2019"
 
-* **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
-* **Basic**: Provides access to most features. Assign to users with an Azure DevOps Server CAL, with a Visual Studio Professional subscription, and to users for whom you're paying for Basic access in an organization.
-* **Basic + Test Plans**: Provides access for users who have a monthly Test Manager subscription, Visual Studio Test Professional, or MSDN Platforms subscription.
-* **VS Enterprise**: Provides access to premium features. Assign to users with a subscription to Visual Studio Enterprise.
+- **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
+- **Basic**: Provides access to most features. Assign to users with an Azure DevOps Server CAL, with a Visual Studio Professional subscription, and to users for whom you're paying for Basic access in an organization.
+- **Basic + Test Plans**: Provides access for users who have a monthly Test Manager subscription, Visual Studio Test Professional, or MSDN Platforms subscription.
+- **VS Enterprise**: Provides access to premium features. Assign to users with a subscription to Visual Studio Enterprise.
 
 The following table indicates those features available for each supported access level.
 
@@ -364,19 +364,19 @@ read wiki pages. </td>
 
 ::: moniker range="tfs-2018"
 
-* **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
-* **Basic**: Provides access to most features. Assign to users with a CAL or with a Visual Studio Professional subscription.
-* **Advanced** (legacy access level, deprecated in Azure DevOps Server 2019): Provides access to premium features. Only assign to users with a subscription to MSDN Platforms or Visual Studio Test Professional.
-* **VS Enterprise**: Provides access to premium features. Assign to users with a subscription to Visual Studio Enterprise.
+- **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
+- **Basic**: Provides access to most features. Assign to users with a CAL or with a Visual Studio Professional subscription.
+- **Advanced** (legacy access level, deprecated in Azure DevOps Server 2019): Provides access to premium features. Only assign to users with a subscription to MSDN Platforms or Visual Studio Test Professional.
+- **VS Enterprise**: Provides access to premium features. Assign to users with a subscription to Visual Studio Enterprise.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
 
-* **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
-* **Basic**: Provides access to most features. Assign to users with a CAL or with a Visual Studio subscription.
-* **Advanced** (TFS 2017): Provides access to premium features. Only assign to users with a subscription to MSDN Platforms or Visual Studio Test Professional.
-* **VS Enterprise** (TFS 2017.1 and later versions): Provides access to premium features. Assign to users with a subscription to Visual Studio Enterprise.
+- **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
+- **Basic**: Provides access to most features. Assign to users with a CAL or with a Visual Studio subscription.
+- **Advanced** (TFS 2017): Provides access to premium features. Only assign to users with a subscription to MSDN Platforms or Visual Studio Test Professional.
+- **VS Enterprise** (TFS 2017.1 and later versions): Provides access to premium features. Assign to users with a subscription to Visual Studio Enterprise.
 
 ::: moniker-end
 
@@ -539,9 +539,9 @@ read wiki pages. </td>
 
 ::: moniker range="<= tfs-2015"
 
-* <strong>Stakeholder/Limited</strong>: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
-* <strong>Basic/Standard</strong>: Provides access to most features. Assign to users with a CAL or with a Visual Studio subscription.
-* <strong>Advanced/Full</strong>: Provides access to premium features. Assign to users with a subscription to Visual Studio Enterprise, Visual Studio Test Professional or MSDN Platforms.
+- <strong>Stakeholder/Limited</strong>: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
+- <strong>Basic/Standard</strong>: Provides access to most features. Assign to users with a CAL or with a Visual Studio subscription.
+- <strong>Advanced/Full</strong>: Provides access to premium features. Assign to users with a subscription to Visual Studio Enterprise, Visual Studio Test Professional or MSDN Platforms.
 
 The following table indicates those features available for each supported access level.
 
@@ -685,59 +685,59 @@ If a Stakeholder needs access to one or more of the following features&mdash;whi
 
 #### For Private projects:
 
-* Change the priority of an item within a backlog
-* Delete work items or move work items to another project
-* Create shared queries, view charts, and modify the home page
-* View Delivery Plans (a Marketplace extension)
-* Add, edit, or view Analytics views
-* Access the full set of features under <strong>Pipelines</strong>, <strong>Repos</strong> or <strong>Test Plans</strong>.
+- Change the priority of an item within a backlog
+- Delete work items or move work items to another project
+- Create shared queries, view charts, and modify the home page
+- View Delivery Plans (a Marketplace extension)
+- Add, edit, or view Analytics views
+- Access the full set of features under <strong>Pipelines</strong>, <strong>Repos</strong> or <strong>Test Plans</strong>.
 
 #### For Public projects:
 
-* View Delivery Plans (a Marketplace extension)
-* Add, edit, or view Analytics views
-* Access the full set of features under <strong>Repos</strong> or <strong>Test Plans</strong>.
+- View Delivery Plans (a Marketplace extension)
+- Add, edit, or view Analytics views
+- Access the full set of features under <strong>Repos</strong> or <strong>Test Plans</strong>.
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-* Change the priority of an item within a backlog
-* Delete work items or move work items to another project
-* Create shared queries, view charts, and modify the home page
-* View Delivery Plans (a Marketplace extension)
-* Add, edit, or view Analytics views
-* Access the full set of features under <strong>Pipelines</strong>, <strong>Repos</strong> or <strong>Test Plans</strong>.
+- Change the priority of an item within a backlog
+- Delete work items or move work items to another project
+- Create shared queries, view charts, and modify the home page
+- View Delivery Plans (a Marketplace extension)
+- Add, edit, or view Analytics views
+- Access the full set of features under <strong>Pipelines</strong>, <strong>Repos</strong> or <strong>Test Plans</strong>.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 
-* Change the priority of an item within a backlog
-* Delete work items
-* Create shared queries, view charts, and modify the home page
-* View Delivery Plans (a Marketplace extension)
-* Access the full set of features under <strong>Code</strong>, <strong>Build and Release</strong> or <strong>Test</strong>.  
+- Change the priority of an item within a backlog
+- Delete work items
+- Create shared queries, view charts, and modify the home page
+- View Delivery Plans (a Marketplace extension)
+- Access the full set of features under <strong>Code</strong>, <strong>Build and Release</strong> or <strong>Test</strong>.  
   ::: moniker-end
 
 ::: moniker range="tfs-2017"
 
-* Change the priority of an item within a backlog
-* Delete work items
-* Create shared queries, view charts, and modify the home page
-* View Delivery Plans (a Marketplace extension)
-* Access the full set of features provided under <strong>Code</strong>, <strong>Build and Release</strong> or <strong>Test</strong>
-* Participate in team rooms, which capture interactive, detailed conversations about the project.
+- Change the priority of an item within a backlog
+- Delete work items
+- Create shared queries, view charts, and modify the home page
+- View Delivery Plans (a Marketplace extension)
+- Access the full set of features provided under <strong>Code</strong>, <strong>Build and Release</strong> or <strong>Test</strong>
+- Participate in team rooms, which capture interactive, detailed conversations about the project.
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015"
 
-* Change the priority of an item within a backlog
-* Delete work items
-* Create shared queries, view charts, and modify the home page
-* Access the full set of features provided under <strong>Code</strong>, <strong>Build and Release</strong> or <strong>Test</strong>
-* Participate in team rooms, which capture interactive, detailed conversations about the project.
+- Change the priority of an item within a backlog
+- Delete work items
+- Create shared queries, view charts, and modify the home page
+- Access the full set of features provided under <strong>Code</strong>, <strong>Build and Release</strong> or <strong>Test</strong>
+- Participate in team rooms, which capture interactive, detailed conversations about the project.
 
 ::: moniker-end
 
@@ -790,9 +790,9 @@ Users assigned Advanced access have all the Basic features, plus [web-based test
 
 For TFS 2017 and earlier versions, you should assign the **Advanced** level to those users for whom you've purchased the full Test feature set. Here are the purchasing options:
 
-* Higher-level Visual Studio subscriptions: Visual Studio Test Professional, Visual Studio Enterprise, or MSDN Platforms subscriptions.
+- Higher-level Visual Studio subscriptions: Visual Studio Test Professional, Visual Studio Enterprise, or MSDN Platforms subscriptions.
   These include a TFS CAL plus the rights to access the full set of Test features.
-* A paid Azure DevOps user (which includes a TFS CAL) plus the [Test Manager extension](../billing/buy-basic-access-add-users.md).
+- A paid Azure DevOps user (which includes a TFS CAL) plus the [Test Manager extension](../billing/buy-basic-access-add-users.md).
 
 For TFS 2017.2, Assign **Advanced** access to those users for whom you've purchased MSDN Platforms or Visual Studio Test Professional subscriptions. These include a TFS CAL plus the rights to access Test Manager. To learn more, see [Get extensions for TFS, Assign paid extension access to users](../../marketplace/how-to/assign-paid-extension-access.md).
 
@@ -811,7 +811,7 @@ Removed sections per Harish Kumar Agarwal, "adds no value" 06/05/2019 chcomley
 
 ## Test Plans, load testing, and Marketplace extensions
 
-Full access to **Test Plans** and load testing features requires **VS Enterprise** or **Basic + Test Plans** access. Visual Studio Test Professional, plus the test features in the web portal, are managed through Azure DevOps, Azure billing services, and purchase of Test Manager extension for Azure Test Plans from the Marketplace.  
+Full access to **Test Plans** and load testing features requires **VS Enterprise** or **Basic + Test Plans** access. Visual Studio Test Professional, plus the test features in the web portal, are managed through Azure DevOps, Azure billing services, and purchase of Test Manager extension for Azure Test Plans from the Marketplace.
 
 To learn more, see [Try Azure Test Plans](../billing/try-additional-features-vs.md).
 
@@ -821,9 +821,9 @@ To learn more, see [Try Azure Test Plans](../billing/try-additional-features-vs.
 
 ## Test features and Marketplace extensions
 
-Full access to **Test** features requires **Advanced** (TFS 2017 or earlier versions) or **VS Enterprise** (TFS 2017.1 or later version) access. Visual Studio Test Professional plus the test features in the web portal are managed through Azure DevOps, Azure billing services, and purchase of the Test Manager extension for Azure Test Plans.  
+Full access to **Test** features requires **Advanced** (TFS 2017 or earlier versions) or **VS Enterprise** (TFS 2017.1 or later version) access. Visual Studio Test Professional plus the test features in the web portal are managed through Azure DevOps, Azure billing services, and purchase of the Test Manager extension for Azure Test Plans.
 
-To learn how to grant access to an extension, see [Get extensions for TFS](../../marketplace/get-tfs-extensions.md).  
+To learn how to grant access to an extension, see [Get extensions for TFS](../../marketplace/get-tfs-extensions.md).
 
 ::: moniker-end
 
@@ -900,18 +900,18 @@ Service accounts don't require a CAL or other purchase.
 
 ::: moniker range="azure-devops"
 
-* [Free access to Pipelines Preview](provide-stakeholder-pipeline-access.md)
-* [Manage users and access](../accounts/add-organization-users.md)
-* [Export a list of users and their access levels](export-users-audit-log.md)
-* [Default permissions and access](permissions-access.md)
+- [Free access to Pipelines Preview](provide-stakeholder-pipeline-access.md)
+- [Manage users and access](../accounts/add-organization-users.md)
+- [Export a list of users and their access levels](export-users-audit-log.md)
+- [Default permissions and access](permissions-access.md)
 
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
 
-* [Change access levels](change-access-levels.md)
-* [Export a list of users and their access levels](export-users-audit-log.md)
-* [Default permissions and access](permissions-access.md)
-* [Compare features between plans](https://azure.microsoft.com/services/devops/compare-features/)
+- [Change access levels](change-access-levels.md)
+- [Export a list of users and their access levels](export-users-audit-log.md)
+- [Default permissions and access](permissions-access.md)
+- [Compare features between plans](https://azure.microsoft.com/services/devops/compare-features/)
 
 ::: moniker-end

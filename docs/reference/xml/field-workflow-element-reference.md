@@ -23,27 +23,27 @@ You use the **FIELD** (Workflow) element to specify the rules and conditions tha
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <FIELD refname="fieldReferenceName">  
->    <ALLOWEDVALUES> . . . </ALLOWEDVALUES>  
->    <ALLOWEXISTINGVALUE />  
->    <CANNOTLOSEVALUE />  
->    <COPY />  
->    <DEFAULT />  
->    <EMPTY />  
->    <FROZEN />  
->    <MATCH />  
->    <NOTSAMEAS />  
->    <PROHIBITEDVALUES /> . . . </PROHIBITEDVALUES>  
->    <READONLY />  
->    <REQUIRED />  
->    <SERVERDEFAULT />  
->    <SUGGESTEDVALUES /> . . . </SUGGESTEDVALUES>  
->    <VALIDUSER />  
->    <WHEN> . . . </WHEN>  
->    <WHENNOT> . . . </WHENNOT>  
->    <WHENCHANGED> . . . </WHENCHANGED>  
->    <WHENNOTCHANGED> . . . </WHENNOTCHANGED>  
-> <FIELD>  
+> <FIELD refname="fieldReferenceName">
+>    <ALLOWEDVALUES> . . . </ALLOWEDVALUES>
+>    <ALLOWEXISTINGVALUE />
+>    <CANNOTLOSEVALUE />
+>    <COPY />
+>    <DEFAULT />
+>    <EMPTY />
+>    <FROZEN />
+>    <MATCH />
+>    <NOTSAMEAS />
+>    <PROHIBITEDVALUES /> . . . </PROHIBITEDVALUES>
+>    <READONLY />
+>    <REQUIRED />
+>    <SERVERDEFAULT />
+>    <SUGGESTEDVALUES /> . . . </SUGGESTEDVALUES>
+>    <VALIDUSER />
+>    <WHEN> . . . </WHEN>
+>    <WHENNOT> . . . </WHENNOT>
+>    <WHENCHANGED> . . . </WHENCHANGED>
+>    <WHENNOTCHANGED> . . . </WHENNOTCHANGED>
+> <FIELD>
 > ```
 
 ## Attributes and elements
@@ -94,5 +94,5 @@ You must define at least one child element for the `FIELD` (Workflow) element.
 
 ## Related articles
 
-* [Change the workflow](change-workflow-wit.md)
-* [Customize your work tracking experience](../customize-work.md)
+- [Change the workflow](change-workflow-wit.md)
+- [Customize your work tracking experience](../customize-work.md)

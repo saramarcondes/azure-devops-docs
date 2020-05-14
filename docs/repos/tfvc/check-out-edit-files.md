@@ -33,19 +33,19 @@ You must be one of the **Contributors** for your project. See [Team Foundation S
 
     On the **Lock type** menu, choose:
 
-    * **Unchanged**: Do not apply a lock to the items.
-    * **Check Out**: Prevent other users from checking out and checking in the items until you check in and unlock them.
+    - **Unchanged**: Do not apply a lock to the items.
+    - **Check Out**: Prevent other users from checking out and checking in the items until you check in and unlock them.
 
       > [!NOTE]
       > In Visual Studio Team Foundation Server 2012 this option is not available if you are using a [local workspace](decide-between-using-local-server-workspace.md). Also, this lock is not enforceable because other users might be using local workspaces. See [Understand lock types](understand-lock-types.md).
 
-    * **Check In**: Allow other users to check out the items you are checking out, but prevent them from checking in their changes until you check in your changes and unlock the items.
+    - **Check In**: Allow other users to check out the items you are checking out, but prevent them from checking in their changes until you check in your changes and unlock the items.
 
     > [!NOTE]
     > The **Lock type** menu is not available if:
     >
-    > * Another team member has locked the file.
-    > * The **Enable multiple check-out** option has been cleared (not a recommended practice) by an Administrator of your project. Administrator: On the menu bar, choose **Team**, **Project Settings**, **Source Control**).
+    > - Another team member has locked the file.
+    > - The **Enable multiple check-out** option has been cleared (not a recommended practice) by an Administrator of your project. Administrator: On the menu bar, choose **Team**, **Project Settings**, **Source Control**).
 
     If any other users have locked any of the specified items, the lock operation will fail. For more information, see [Lock and unlock folders or files](lock-unlock-folders-files.md).
 
@@ -55,12 +55,12 @@ In Solution Explorer and in Source Control Explorer, a check mark ![TFSC Checked
 
 ## Work from the command prompt
 
-* [Get command](get-command.md) Get files from the server.
-* [Checkout (or Edit) command](checkout-or-edit-command.md) Check out files from the server.
+- [Get command](get-command.md) Get files from the server.
+- [Checkout (or Edit) command](checkout-or-edit-command.md) Check out files from the server.
 
 ## Tips
 
-* If you are beginning a new task, it's probably a good idea for you to [download the latest files from the server](download-get-files-from-server.md) before you check out files and begin your work.
-* To help you and your team organize and track your work, you should use the My Work or Pending Changes page to associate a task or a bug with the work you are doing. See [Develop code and manage pending changes](develop-code-manage-pending-changes.md).
-* If you use a [server workspace](decide-between-using-local-server-workspace.md), files that you have not checked out are read-only.
-* You can [review and manage your work](develop-code-manage-pending-changes.md), [suspend your work](suspend-your-work-manage-your-shelvesets.md), and ultimately [contribute your work to the team's codebase](check-your-work-team-codebase.md).
+- If you are beginning a new task, it's probably a good idea for you to [download the latest files from the server](download-get-files-from-server.md) before you check out files and begin your work.
+- To help you and your team organize and track your work, you should use the My Work or Pending Changes page to associate a task or a bug with the work you are doing. See [Develop code and manage pending changes](develop-code-manage-pending-changes.md).
+- If you use a [server workspace](decide-between-using-local-server-workspace.md), files that you have not checked out are read-only.
+- You can [review and manage your work](develop-code-manage-pending-changes.md), [suspend your work](suspend-your-work-manage-your-shelvesets.md), and ultimately [contribute your work to the team's codebase](check-your-work-team-codebase.md).

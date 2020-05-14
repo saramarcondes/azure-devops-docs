@@ -61,9 +61,9 @@ You must be a member of the Contributors group of your team project to migrate w
 
     **In summary, the following locations are represented as follows:**
 
-    * Location A = Azure DevOps Wiki repo
-    * Location B = Wiki extension repo
-    * Location C = Empty folder to run migration tool in
+    - Location A = Azure DevOps Wiki repo
+    - Location B = Wiki extension repo
+    - Location C = Empty folder to run migration tool in
 
 8.  Open a command prompt as an administrator and run **MigrateToVSTSWiki.exe**. This tool copies the files from your existing wiki to the destination directory you provide. During copying, the tool converts the pages to be compliant with the Azure DevOps wiki.
 
@@ -71,8 +71,8 @@ You must be a member of the Contributors group of your team project to migrate w
 
     For example:
 
-    * "E:\wiki\sampleWiki_extensionWiki" is the folder in which the existing wiki files are present
-    * "E:\Temp\Wiki\New" is the empty folder into which the migrated files are to be copied.
+    - "E:\wiki\sampleWiki_extensionWiki" is the folder in which the existing wiki files are present
+    - "E:\Temp\Wiki\New" is the empty folder into which the migrated files are to be copied.
 
 9.  Remove all files from "LocationA" (if any) apart from the git related files such as .gitignore etc.
 
@@ -89,10 +89,10 @@ You must be a member of the Contributors group of your team project to migrate w
 
 ## Related articles
 
-* [Wiki page title naming conventions](add-edit-wiki.md#page-title-names)
-* [Clone and update wiki pages offline](wiki-update-offline.md)
-* [Source code for the wiki tools](https://github.com/Microsoft/vsts-wikiTools)
-* [Git quickstart](../../repos/git/gitquickstart.md)
+- [Wiki page title naming conventions](add-edit-wiki.md#page-title-names)
+- [Clone and update wiki pages offline](wiki-update-offline.md)
+- [Source code for the wiki tools](https://github.com/Microsoft/vsts-wikiTools)
+- [Git quickstart](../../repos/git/gitquickstart.md)
 
 ### Contributions
 

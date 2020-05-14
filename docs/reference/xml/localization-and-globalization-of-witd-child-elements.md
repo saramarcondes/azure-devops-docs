@@ -31,5 +31,5 @@ The following table summarizes what elements can and cannot be localized. Any el
 
 ## Related articles
 
-* [All WITD XML elements reference](all-witd-xml-elements-reference.md)
-* [Customize your work tracking experience](../customize-work.md)
+- [All WITD XML elements reference](all-witd-xml-elements-reference.md)
+- [Customize your work tracking experience](../customize-work.md)

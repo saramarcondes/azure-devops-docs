@@ -15,10 +15,10 @@ Module path: `TFS/WorkItemTracking/Contracts`
 
 ### Members
 
-* `actionType`: [ProvisioningActionType](../../../TFS/WorkItemTracking/Contracts/ProvisioningActionType.md).
+- `actionType`: [ProvisioningActionType](../../../TFS/WorkItemTracking/Contracts/ProvisioningActionType.md).
 
-* `methodology`: string.
+- `methodology`: string.
 
-* `template`: string.
+- `template`: string.
 
-* `templateType`: [TemplateType](../../../TFS/WorkItemTracking/Contracts/TemplateType.md).
+- `templateType`: [TemplateType](../../../TFS/WorkItemTracking/Contracts/TemplateType.md).

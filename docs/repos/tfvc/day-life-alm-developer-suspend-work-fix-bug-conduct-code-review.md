@@ -28,9 +28,9 @@ As Peter works on a backlog item, Julia comes to discuss a bug that is blocking 
 
 Before he starts to work on the new bug, Peter wants to make sure that his current work is set aside in a safe place on the team's server. On the **My Work** page, Peter chooses **Suspend** to save (on Team Foundation Server):
 
-* All the work he has done, including changes to code, tests, and other files.
+- All the work he has done, including changes to code, tests, and other files.
 
-* Open solutions, windows, breakpoints, watch window variables, and other bits of Visual Studio state.
+- Open solutions, windows, breakpoints, watch window variables, and other bits of Visual Studio state.
 
 Now that his workspace is clean, Peter drags the new task from **Available Work Items** to **In Progress Work**. He's ready to research and write the fix.
 
@@ -55,9 +55,9 @@ Now that his workspace is clean, Peter drags the new task from **Available Work 
 
     1.  Before selecting a work item, you might want to:
 
-        * Create a new task or other work item by choosing **New** under **Available Work Items**; or
+        - Create a new task or other work item by choosing **New** under **Available Work Items**; or
 
-        * Select a different query under **Available Work Items**.
+        - Select a different query under **Available Work Items**.
 
     2.  Drag a work item from **Available Work Items** to **In Progress Work**.
 
@@ -183,15 +183,15 @@ TestEqual(1000, 1000*1e-5, false); // More than allowed error
 
 2.  On the **Code Review** page, you can:
 
-    * Choose **Accept** or **Decline** to notify the author whether you will perform the review.
+    - Choose **Accept** or **Decline** to notify the author whether you will perform the review.
 
-    * Choose **Add Reviewer** to add other reviewers to the code-review request.
+    - Choose **Add Reviewer** to add other reviewers to the code-review request.
 
-    * View the changes to each file that has been updated for this work item.
+    - View the changes to each file that has been updated for this work item.
 
-    * Expand **Comments** to discuss the changes with the author and other reviewers.
+    - Expand **Comments** to discuss the changes with the author and other reviewers.
 
-      * Choose **Add Overall Comment**
+      - Choose **Add Overall Comment**
 
         -or-
 
@@ -199,9 +199,9 @@ TestEqual(1000, 1000*1e-5, false); // More than allowed error
 
       <!-- -->
 
-      * Choose **Send Comments** to make your contributions visible to the author and other reviewers.
+      - Choose **Send Comments** to make your contributions visible to the author and other reviewers.
 
-    * Choose **Send and Finish** to complete your review, indicating whether the code needs more work.
+    - Choose **Send and Finish** to complete your review, indicating whether the code needs more work.
 
 ## Respond to a code review
 
@@ -223,11 +223,11 @@ The reviewers and author of the code can exchange comments as often as they like
 
 4.  When you and the other reviewers finish responding to each other's comments and you are ready to close the review, click **Close Review**, and then choose either:
 
-    * **Complete** to indicate that the review is finished.
+    - **Complete** to indicate that the review is finished.
 
-    * -or-
+    - -or-
 
-    * **Abandon** to indicate you are canceling the review.
+    - **Abandon** to indicate you are canceling the review.
 
 ## Fix the test and the code
 
@@ -269,9 +269,9 @@ Peter checks in the fixed code and the unit tests. The state of the bug is autom
 
 2.  Review the contents of the **Pending Changes** page to make sure that:
 
-    * All relevant changes are listed in **Included Changes**
+    - All relevant changes are listed in **Included Changes**
 
-    * All relevant work items are listed in **Related Work Items**.
+    - All relevant work items are listed in **Related Work Items**.
 
 3.  Specify a **Comment** to help your team understand the purpose of these changes when they look at the version control history of the changed files and folders.
 
@@ -285,25 +285,25 @@ Peter resumes work on his task. He is able to get back to work quickly because a
 
 ![Resuming and completing a task](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC591026.png)
 
-* In **Team Explorer**, on the **My Work** page, find the **Suspended & Shelved Work** list. Open the shortcut menu for the item. You have two choices:
+- In **Team Explorer**, on the **My Work** page, find the **Suspended & Shelved Work** list. Open the shortcut menu for the item. You have two choices:
 
-  * If you want to resume the suspended work and automatically suspend any pending changes in your workspace, choose **Resume**.
+  - If you want to resume the suspended work and automatically suspend any pending changes in your workspace, choose **Resume**.
 
-  * If you want to merge the suspended work with pending changes already in your workspace, choose **Merge with In Progress**.
+  - If you want to merge the suspended work with pending changes already in your workspace, choose **Merge with In Progress**.
 
 ### When you resume your work
 
 ![Panes affected by suspending a work item.](media/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review/IC592393.png)
 When you resume your work, Visual Studio restores:
 
-* Your open solution
+- Your open solution
 
-* Your code changes
+- Your code changes
 
-* The state and position of open windows
+- The state and position of open windows
 
-* Breakpoints
+- Breakpoints
 
-* Watch window variables and expressions
+- Watch window variables and expressions
 
-* Bookmarks
+- Bookmarks

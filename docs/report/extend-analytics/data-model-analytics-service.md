@@ -131,6 +131,6 @@ The following table provides a partial list of the WorkItemRevision entity prope
 
 ## Related articles
 
-* [WIT analytics](wit-analytics.md)
-* [Aggregate data](aggregated-data-analytics.md)
-* [Exploring Analytics OData metadata](analytics-metadata.md)
+- [WIT analytics](wit-analytics.md)
+- [Aggregate data](aggregated-data-analytics.md)
+- [Exploring Analytics OData metadata](analytics-metadata.md)

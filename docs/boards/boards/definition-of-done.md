@@ -86,7 +86,7 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 7.  Choose **Columns** and then a column tab to configure the Definition of Done for that column. You can specify the Definition of Done for each intermediate column on your team's Kanban board.
 
     <img src="media/vso-kanban-board-definition-of-done-no-tags.png"   alt="Kanban board, Coding column tab, Definition of done]" style="border: 1px solid #C3C3C3;" />
-    <strong>For TFS 2015</strong>  
+    <strong>For TFS 2015</strong>
 
 8.  Choose **Edit Definition** within an intermediate column tab and specify the Definition of Done for that column.
 
@@ -101,8 +101,8 @@ Team members can quickly check that they have met the criteria by choosing the I
 
 ## Related articles
 
-* [Add, rename, move, and delete columns](add-columns.md)
-* [Work in Progress limits](wip-limits.md)
-* [Add swimlanes, expedite work](expedite-work.md)
-* [Split columns](split-columns.md)
-* [Customize cards](../../boards/boards/customize-cards.md)
+- [Add, rename, move, and delete columns](add-columns.md)
+- [Work in Progress limits](wip-limits.md)
+- [Add swimlanes, expedite work](expedite-work.md)
+- [Split columns](split-columns.md)
+- [Customize cards](../../boards/boards/customize-cards.md)

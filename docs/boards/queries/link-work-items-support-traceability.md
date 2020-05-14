@@ -19,12 +19,12 @@ By linking work items and other objects, you can track related work, dependencie
 
 In a nutshell, you can:
 
-* Link work items to other work items
-* Link work items to test cases, and test cases to other test items and test results
-* Link work items to code-related objects such as branches, commits, pull requests, and more
-* Link select git code-related objects to builds
-* Link work items to a web address or to a storyboard or a document on a network share
-* Link work items to architecture diagrams (requires Visual Studio Enterprise edition).
+- Link work items to other work items
+- Link work items to test cases, and test cases to other test items and test results
+- Link work items to code-related objects such as branches, commits, pull requests, and more
+- Link select git code-related objects to builds
+- Link work items to a web address or to a storyboard or a document on a network share
+- Link work items to architecture diagrams (requires Visual Studio Enterprise edition).
 
 This article describes the link types available for your use. You can link objects from the web portal or Visual Studio Team Explorer. For details on linking work items and deleting links, see [Add link to work items](../backlogs/add-link.md).
 
@@ -43,10 +43,10 @@ All two-way link types are characterized by a _Forward_ and _Reverse_ name, such
 
 As a quick reference guide, use the following link types as indicated:
 
-* Use the **Duplicate** link type when two work items have been created that essentially capture the same information; close one of the work items and keep the other one active
-* Use the **Parent/Child** link types when you want to break down work items into smaller items&mdash;for example, break down features into stories, or stories into tasks
-* Use **Predecessor-Successor** link types when you want to track tasks that must be completed before others can be started; this link type is most often used when you plan work using Project
-* Use the **Related** link type when the work items being linked are at the same level&mdash;such as two user stories that define features that overlap one another&mdash;or to link work items that are defined in different projects or managed by different teams.
+- Use the **Duplicate** link type when two work items have been created that essentially capture the same information; close one of the work items and keep the other one active
+- Use the **Parent/Child** link types when you want to break down work items into smaller items&mdash;for example, break down features into stories, or stories into tasks
+- Use **Predecessor-Successor** link types when you want to track tasks that must be completed before others can be started; this link type is most often used when you plan work using Project
+- Use the **Related** link type when the work items being linked are at the same level&mdash;such as two user stories that define features that overlap one another&mdash;or to link work items that are defined in different projects or managed by different teams.
 
 For additional guidance on choosing link types, review the [Link type reference](link-type-reference.md) in the related notes section.
 
@@ -64,8 +64,8 @@ Also, you can use the context menu in the web portal or Team Explorer.
 
 Organizations that use Azure Active Directory can link work items that exist in different projects across organizations. Use the following link types as indicated:
 
-* Use the **Consumes From/Produces For** link types when you want to track dependencies of work items that are defined in different organizations and managed by different teams.
-* Use the **Remote Related** link type when the work items being linked are defined in different organizations and managed by different teams, but don't have strong inter-dependencies.
+- Use the **Consumes From/Produces For** link types when you want to track dependencies of work items that are defined in different organizations and managed by different teams.
+- Use the **Remote Related** link type when the work items being linked are defined in different organizations and managed by different teams, but don't have strong inter-dependencies.
 
 > [!div class="mx-imgBorder"]  
 > ![User Story form, Link tab, showing two external links](../backlogs/media/add-link/link-tab-remote-links.png)  
@@ -94,13 +94,13 @@ Choose **Existing item** to link to a work item or other object using any suppor
 
 From the **Related Work** or **Links** tab, you can also perform these actions:
 
-* Open an associated item or object: choose the linked item
-* Delete a link: highlight it and choose the ![ ](../media/icons/delete_icon.png) delete icon
+- Open an associated item or object: choose the linked item
+- Delete a link: highlight it and choose the ![ ](../media/icons/delete_icon.png) delete icon
 
 From a query results page, you can also perform these actions:
 
-* Link selected items to a new work item
-* Link selected items to an existing work item
+- Link selected items to a new work item
+- Link selected items to an existing work item
 
 For details, see [Add link to work items](../backlogs/add-link.md#link).
 ::: moniker-end
@@ -130,7 +130,7 @@ Open a work item and click one of the Links tab. From the links control tab you 
 #### [Visual Studio](#tab/visual-studio/)
 
 <a id="team-explorer-link" />
-If you primarily work in Visual Studio or Team Explorer, and want to link work items, you can do so in a number of ways. Depending on the work item form and customizations that may have been made to your work item form, you may see several Link tabs. Link tabs can be customized to allow or restrict specific link types.  
+If you primarily work in Visual Studio or Team Explorer, and want to link work items, you can do so in a number of ways. Depending on the work item form and customizations that may have been made to your work item form, you may see several Link tabs. Link tabs can be customized to allow or restrict specific link types.
 
 Open a work item and click the Links tab. From the links control tab you can link to new or existing work items, open the linked object, edit the link type, delete a link, or open the list of links in a query or Excel or Project.
 
@@ -154,9 +154,9 @@ From the Query Results view, you can link a work item to a new or existing work 
 
 These features let you quickly link or change links that use the parent-child link type:
 
-* To link backlog items to portfolio backlog items or to change the link structure among these items, [use the mapping pane to organize your backlog](../backlogs/organize-backlog.md).
-* To create and link tasks to backlog items, [use the sprint backlog page](../sprints/assign-work-sprint.md); from the web portal you can also drag-and-drop items to change the link structure.
-* To indent (![Indent](media/IC588323.png)), outdent (![Outdent](media/IC588324.png)), and change the link structure of a tree hierarchy, you can [re-parent and reorder items from a backlog in the web portal](../backlogs/organize-backlog.md) or use a [tree query in Team Explorer](using-queries.md#tree-query).
+- To link backlog items to portfolio backlog items or to change the link structure among these items, [use the mapping pane to organize your backlog](../backlogs/organize-backlog.md).
+- To create and link tasks to backlog items, [use the sprint backlog page](../sprints/assign-work-sprint.md); from the web portal you can also drag-and-drop items to change the link structure.
+- To indent (![Indent](media/IC588323.png)), outdent (![Outdent](media/IC588324.png)), and change the link structure of a tree hierarchy, you can [re-parent and reorder items from a backlog in the web portal](../backlogs/organize-backlog.md) or use a [tree query in Team Explorer](using-queries.md#tree-query).
 
 You can also use Excel or Project to change the link structure. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks using Project](../backlogs/office/create-your-backlog-tasks-using-project.md).
 
@@ -209,10 +209,10 @@ The recommended method is to drive development from the work item or add the wor
 
 Git lets you link work items to commits by using the **Commit** link type. You can do this in several ways:
 
-* In Visual Studio Team Explorer, add work item IDs before you commit your changes  
+- In Visual Studio Team Explorer, add work item IDs before you commit your changes  
    ![Add work item ID or drag items before you commit your changes](media/link-git-commit-items.png)
-* You can use the [git-commit](https://git-scm.com/docs/git-commit) command and include the work item ID in your comment. For example, you apply this comment #35 Catch null exception to your commit. When you push the commit, the system creates a Commit link between the commit and work item #35.
-* And, with the new work item form (available from Azure Boards and TFS 2017), you can [drive your git development from the work item](../backlogs/connect-work-items-to-git-dev-ops.md) as shown in the following image.
+- You can use the [git-commit](https://git-scm.com/docs/git-commit) command and include the work item ID in your comment. For example, you apply this comment #35 Catch null exception to your commit. When you push the commit, the system creates a Commit link between the commit and work item #35.
+- And, with the new work item form (available from Azure Boards and TFS 2017), you can [drive your git development from the work item](../backlogs/connect-work-items-to-git-dev-ops.md) as shown in the following image.
 
     <img src="../backlogs/media/drive-git-development-dev-section.png" alt="Work item form, Development section" style="border: 1px solid #C3C3C3;" />
 
@@ -250,7 +250,7 @@ The link types supported include <strong>GitHub Commit</strong> and <strong>GitH
 
 Team Foundation version control (TFVC) lets you link work items to version control changesets or versioned source code files by using the **Changeset** and **Versioned Item** link types. When you check in pending changes or use My Work to check in changes, [work items are automatically linked to your changes](../../repos/tfvc/check-your-work-team-codebase.md).
 
-<img src="../../repos/tfvc/media/check-your-work-team-codebase/ic593474.png" alt="Team Explorer, My Work, Pending Changes, check in" style="border: 1px solid #C3C3C3;" />  
+<img src="../../repos/tfvc/media/check-your-work-team-codebase/ic593474.png" alt="Team Explorer, My Work, Pending Changes, check in" style="border: 1px solid #C3C3C3;" />
 
 <a id="links-attachments"></a>
 
@@ -307,11 +307,11 @@ Once you've formed a link relationship, you can't edit the link type of that rel
 
 For additional information, see these topics:
 
-* [Add link to multiple work items](../backlogs/add-link.md)
-* [Share plans, add attachments](share-plans.md)
-* [Use mapping to link backlog items to features and epics](../backlogs/organize-backlog.md)
-* [Bulk modify links using Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)
-* [Link types reference](link-type-reference.md)
+- [Add link to multiple work items](../backlogs/add-link.md)
+- [Share plans, add attachments](share-plans.md)
+- [Use mapping to link backlog items to features and epics](../backlogs/organize-backlog.md)
+- [Bulk modify links using Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)
+- [Link types reference](link-type-reference.md)
 
 ::: moniker range=">= tfs-2015"
 

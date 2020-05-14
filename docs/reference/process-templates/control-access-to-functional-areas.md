@@ -16,10 +16,10 @@ ms.date: 09/08/2017
 
 You can configure the initial security settings for the following functional areas for a project:
 
-* Work item queries
-* Team Foundation version control (TFVC)
-* Team Foundation Build
-* Visual Studio Lab Management.
+- Work item queries
+- Team Foundation version control (TFVC)
+- Team Foundation Build
+- Visual Studio Lab Management.
 
 The default process templates assign several permissions to default security groups. You can modify these assignments by customizing the plug-in file for the corresponding functional area.
 
@@ -34,9 +34,9 @@ You can use the functional **permission** element to allow or deny permissions f
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <permission allow="PermissionName" identity="GroupName"/>  
-> <permission deny="PermissionName" identity="GroupName"/>  
-> <permission allow="PermissionName" deny="PermissionName" identity="GroupName"/>  
+> <permission allow="PermissionName" identity="GroupName"/>
+> <permission deny="PermissionName" identity="GroupName"/>
+> <permission allow="PermissionName" deny="PermissionName" identity="GroupName"/>
 > ```
 
 The following example shows how to grant permissions to allow the **Contributors** group to view builds and build definitions and to queue builds and edit build quality.
@@ -44,9 +44,9 @@ The following example shows how to grant permissions to allow the **Contributors
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <taskXml>  
->    <permission allow="Read, PendChange, Checkin, Label, Lock" identity="[$$PROJECTNAME$$]\Contributors"/>  
-> </taskXml>  
+> <taskXml>
+>    <permission allow="Read, PendChange, Checkin, Label, Lock" identity="[$$PROJECTNAME$$]\Contributors"/>
+> </taskXml>
 > ```
 >
 > [!NOTE]
@@ -80,7 +80,7 @@ You assign these permissions by using the functional **permission** element, as 
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <permission allow="Read, PendChange, Checkin, Label, Lock, Merge" identity="[$$PROJECTNAME$$]\@@Contributors@@" />  
+> <permission allow="Read, PendChange, Checkin, Label, Lock, Merge" identity="[$$PROJECTNAME$$]\@@Contributors@@" />
 > ```
 
 <a name="Build"></a>
@@ -94,7 +94,7 @@ You assign these permissions by using the functional **permission** element, as 
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <Permission allow="ViewBuildDefinition, QueueBuilds, ViewBuilds, EditBuildQuality" identity="[$$PROJECTNAME$$]\@@Contributors@@" />  
+> <Permission allow="ViewBuildDefinition, QueueBuilds, ViewBuilds, EditBuildQuality" identity="[$$PROJECTNAME$$]\@@Contributors@@" />
 > ```
 >
 > [!NOTE]
@@ -109,11 +109,11 @@ You can control access to activities in Lab Management by changing the Lab plug-
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <permission allow="Read, Create, Write, Edit, Start, Stop, ManageSnapshots, Pause" identity="[$$PROJECTNAME$$]\@@Contributors@@" />  
+> <permission allow="Read, Create, Write, Edit, Start, Stop, ManageSnapshots, Pause" identity="[$$PROJECTNAME$$]\@@Contributors@@" />
 > ```
 
 ## Related articles
 
-* [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md)
-* [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md)
-* [Configure Lab Management with TFSLabConfig, Permissions](/azure/devops/server/command-line/tfslabconfig-cmd)
+- [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md)
+- [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md)
+- [Configure Lab Management with TFSLabConfig, Permissions](/azure/devops/server/command-line/tfslabconfig-cmd)

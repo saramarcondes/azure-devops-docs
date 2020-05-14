@@ -22,15 +22,15 @@ Productivity for developers relies on the ability of tests to find real problems
 A flaky test is a test that provides different outcomes, such as pass or fail, even when there are no changes in the source code or execution environment.
 The goal of bringing flaky test management in-product is to reduce developer pain cause by flaky tests and cater to the whole workflow. Flaky test management provides the following benefits.
 
-* **Detection** - Auto detection of flaky test with rerun or extensibility to plug in your own custom detection method
+- **Detection** - Auto detection of flaky test with rerun or extensibility to plug in your own custom detection method
 
-* **Management of flakiness** - Once a test is marked as flaky, the data is available for all pipelines for that branch
+- **Management of flakiness** - Once a test is marked as flaky, the data is available for all pipelines for that branch
 
-* **Report on flaky tests** - Ability to choose if you want to prevent build failures caused by flaky tests, or use the flaky tag only for troubleshooting
+- **Report on flaky tests** - Ability to choose if you want to prevent build failures caused by flaky tests, or use the flaky tag only for troubleshooting
 
-* **Resolution** - Manual bug-creation or manual marking and unmarking test as flaky based on your analysis
+- **Resolution** - Manual bug-creation or manual marking and unmarking test as flaky based on your analysis
 
-* **Close the loop** - Reset flaky test as a result of bug resolution / manual input
+- **Close the loop** - Reset flaky test as a result of bug resolution / manual input
 
 ![Flaky lifecycle](media/flaky-test-management/flaky.png)
 
@@ -46,12 +46,12 @@ The default setting for all projects is to use flaky tests for troubleshooting.
 
 Flaky test management supports system and custom detection.
 
-* System detection - The in-product flaky detection uses test rerun data. The detection is via VSTest task rerunning of failed tests capability or retry of stage in the pipeline. You can select specific pipelines in the project for which you would like to detect flaky tests.
+- System detection - The in-product flaky detection uses test rerun data. The detection is via VSTest task rerunning of failed tests capability or retry of stage in the pipeline. You can select specific pipelines in the project for which you would like to detect flaky tests.
 
   > [!Note]
   > Once a test is marked as flaky, the data is available for all pipelines for that branch aiding troubleshooting in every pipeline.
 
-* Custom detection - You can integrate your own flaky detection mechanism with Azure Pipelines and utilize the reporting capability. <!---API details are available ![here]()-->
+- Custom detection - You can integrate your own flaky detection mechanism with Azure Pipelines and utilize the reporting capability. <!---API details are available ![here]()-->
 
 ### Flaky test options
 

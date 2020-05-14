@@ -16,9 +16,9 @@ monikerRange: '>= tfs-2013'
 
 > [!div class="op_single_selector"]
 >
-> * [Visual Studio 2017](share-your-code-in-git-vs-2017.md)
-> * [Visual Studio 2015 Update 2](share-your-code-in-git-vs.md)
-> * [Visual Studio 2013](share-your-code-in-git-vs-2013.md)
+> - [Visual Studio 2017](share-your-code-in-git-vs-2017.md)
+> - [Visual Studio 2015 Update 2](share-your-code-in-git-vs.md)
+> - [Visual Studio 2013](share-your-code-in-git-vs-2013.md)
 
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015
 

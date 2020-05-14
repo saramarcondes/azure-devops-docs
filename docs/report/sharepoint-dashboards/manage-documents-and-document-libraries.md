@@ -27,11 +27,11 @@ You can use Team Explorer or your project portal to manage documents and documen
 
 **Requirements**
 
-* Your team project has a project portal enabled and is associated with a SharePoint site. The **Documents** page appears in Team Explorer only when these conditions are met. See [Configure or redirect process guidance](../../project/configure-or-redirect-process-guidance.md).
+- Your team project has a project portal enabled and is associated with a SharePoint site. The **Documents** page appears in Team Explorer only when these conditions are met. See [Configure or redirect process guidance](../../project/configure-or-redirect-process-guidance.md).
 
-* You must be a member of the **Team Foundation Valid Users** security group. If the necessary security permissions are set explicitly, your **View project-level information** permission on the team project must be set to **Allow**.
+- You must be a member of the **Team Foundation Valid Users** security group. If the necessary security permissions are set explicitly, your **View project-level information** permission on the team project must be set to **Allow**.
 
-* You must also have **Contribute** permissions set for the project portal in SharePoint Products.
+- You must also have **Contribute** permissions set for the project portal in SharePoint Products.
 
   For more information, see [Add users to team projects](../../organizations/security/set-sharepoint-permissions.md).
 

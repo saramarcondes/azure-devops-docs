@@ -15,14 +15,14 @@ Learn about the key concepts and components that are used in Azure Pipelines. Un
 
 ![key concepts graphic](media/key-concepts-overview.svg)
 
-* A [trigger](#trigger) tells a Pipeline to run.
-* A [pipeline](#pipeline) is made up of one or more [stages](#stage). A pipeline can deploy to one or more [environments](#environment).
-* A [stage](#stage) is a way of organizing [jobs](#job) in a pipeline and each stage can have one or more jobs.
-* Each [job](#job) runs on one [agent](#agent). A job can also be agentless.
-* Each [agent](#agent) runs a job that contains one or more [steps](#step).
-* A [step](#step) can be a [task](#task) or [script](#script) and is the smallest building block of a pipeline.
-* A [task](#task) is a pre-packaged script that performs an action, such as invoking a REST API or publishing a build artifact.
-* An [artifact](#artifact) is a collection of files or packages published by a [run](#run).
+- A [trigger](#trigger) tells a Pipeline to run.
+- A [pipeline](#pipeline) is made up of one or more [stages](#stage). A pipeline can deploy to one or more [environments](#environment).
+- A [stage](#stage) is a way of organizing [jobs](#job) in a pipeline and each stage can have one or more jobs.
+- Each [job](#job) runs on one [agent](#agent). A job can also be agentless.
+- Each [agent](#agent) runs a job that contains one or more [steps](#step).
+- A [step](#step) can be a [task](#task) or [script](#script) and is the smallest building block of a pipeline.
+- A [task](#task) is a pre-packaged script that performs an action, such as invoking a REST API or publishing a build artifact.
+- An [artifact](#artifact) is a collection of files or packages published by a [run](#run).
 
 **Azure Pipelines terms**
 
@@ -90,4 +90,4 @@ A trigger is something that's set up to tell the pipeline when to run. You can c
 
 ### About the authors
 
-* [Dave Jarvis](https://github.com/DaveJarvis) contributed to the key concepts overview graphic.
+- [Dave Jarvis](https://github.com/DaveJarvis) contributed to the key concepts overview graphic.

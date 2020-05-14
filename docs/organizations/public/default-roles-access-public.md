@@ -143,7 +143,7 @@ From the web portal, you can set permissions for all or individual build pipelin
 
 ## Related articles
 
-* [Private-to-public migration checklist](migration-checklist.md)
-* [About permissions and groups](../security/about-permissions.md)
-* [About security roles](../security/about-security-roles.md)
-* [About access levels](../security/access-levels.md)
+- [Private-to-public migration checklist](migration-checklist.md)
+- [About permissions and groups](../security/about-permissions.md)
+- [About security roles](../security/about-security-roles.md)
+- [About access levels](../security/access-levels.md)

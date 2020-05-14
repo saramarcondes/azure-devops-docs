@@ -12,12 +12,12 @@ The **Test result trend (Advanced) widget** helps you find outliers in your test
 
 To help you answer these questions, the widget provides these features:
 
-* Displays a trend of pass rate, and count of test results or test duration
-* Presents test results based on multiple build pipelines or release pipelines
-* Uses combined charting options to display two metrics over the same trend
-* Filters the test count over time by test outcome
-* Filters all your test results by branch or test
-* Stacks your metrics by test attributes such as **Priority** or **Environment**
-* Group you data on Test files, owner or pipelines
+- Displays a trend of pass rate, and count of test results or test duration
+- Presents test results based on multiple build pipelines or release pipelines
+- Uses combined charting options to display two metrics over the same trend
+- Filters the test count over time by test outcome
+- Filters all your test results by branch or test
+- Stacks your metrics by test attributes such as **Priority** or **Environment**
+- Group you data on Test files, owner or pipelines
 
 The widget is highly configurable allowing you to use it for a wide variety of scenarios.

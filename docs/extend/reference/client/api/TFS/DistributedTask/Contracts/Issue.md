@@ -16,10 +16,10 @@ Module path: `TFS/DistributedTask/Contracts`
 
 ### Members
 
-* `category`: string.
+- `category`: string.
 
-* `data`: {[key: string]: string}.
+- `data`: {[key: string]: string}.
 
-* `message`: string.
+- `message`: string.
 
-* `type`: [IssueType](../../../TFS/DistributedTask/Contracts/IssueType.md).
+- `type`: [IssueType](../../../TFS/DistributedTask/Contracts/IssueType.md).

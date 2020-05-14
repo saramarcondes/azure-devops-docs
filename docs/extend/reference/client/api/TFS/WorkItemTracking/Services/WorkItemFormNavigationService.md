@@ -31,8 +31,8 @@ See a [full example](https://github.com/Microsoft/vsts-extension-samples/blob/ma
 
 ## Methods
 
-* [openWorkItem()](#method_openWorkItem)
-* [openNewWorkItem()](#method_openNewWorkItem)
+- [openWorkItem()](#method_openWorkItem)
+- [openNewWorkItem()](#method_openNewWorkItem)
 
 <a name="method_openWorkItem"></a>
 
@@ -48,12 +48,12 @@ Opens the specified work item. The host page displays the work item in a dialog.
 
 #### Parameters
 
-* `workItemId`: number. The id of the work item to open.
-* `openInNewTab`: boolean. Optional. If true, opens the work item in a new tab. Default is false.
+- `workItemId`: number. The id of the work item to open.
+- `openInNewTab`: boolean. Optional. If true, opens the work item in a new tab. Default is false.
 
 #### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[WorkItem](../Contracts/WorkItem.md)&gt;. A promise that returns a work item when the work item dialog is closed. If openInNewTab is true, the promise returns null.
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[WorkItem](../Contracts/WorkItem.md)&gt;. A promise that returns a work item when the work item dialog is closed. If openInNewTab is true, the promise returns null.
 
 <a name="method_openNewWorkItem"></a>
 
@@ -69,9 +69,9 @@ Opens a new work item of the specified type. The host page displays the new work
 
 #### Parameters
 
-* `workItemTypeName`: string. The name of the work item type to open.
-* `initialValues`: IDictionaryStringTo<Object>. Optional. A dictionary of any initial field values (field reference name to value pairs) to set after opening the new work item.
+- `workItemTypeName`: string. The name of the work item type to open.
+- `initialValues`: IDictionaryStringTo<Object>. Optional. A dictionary of any initial field values (field reference name to value pairs) to set after opening the new work item.
 
 #### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[WorkItem](../Contracts/WorkItem.md)&gt;. A promise that returns a work item when the work item dialog is closed. If the workitem was not saved before closing the dialog, the promise returns null.
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[WorkItem](../Contracts/WorkItem.md)&gt;. A promise that returns a work item when the work item dialog is closed. If the workitem was not saved before closing the dialog, the promise returns null.

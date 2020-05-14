@@ -19,10 +19,10 @@ Represents a single collection for extension data documents
 
 ### Members
 
-* `collectionName`: string. The name of the collection
+- `collectionName`: string. The name of the collection
 
-* `documents`: any[]. A list of documents belonging to the collection
+- `documents`: any[]. A list of documents belonging to the collection
 
-* `scopeType`: string. The type of the collection&#x27;s scope, such as Default or User
+- `scopeType`: string. The type of the collection&#x27;s scope, such as Default or User
 
-* `scopeValue`: string. The value of the collection&#x27;s scope, such as Current or Me
+- `scopeValue`: string. The value of the collection&#x27;s scope, such as Current or Me

@@ -19,32 +19,32 @@ You can [link work items to track related work and dependencies](link-work-items
 
 ::: moniker range="azure-devops"
 
-* Attachment File Count
-* (Discussion) Comment Count
-* External Link count
-* Hyperlink Count
-* Link Comment
-* Related Link Count
-* Remote Link Count
+- Attachment File Count
+- (Discussion) Comment Count
+- External Link count
+- Hyperlink Count
+- Link Comment
+- Related Link Count
+- Remote Link Count
   ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
-* Attachment File Count
-* (Discussion) Comment Count
-* External Link count
-* Hyperlink Count
-* Link Comment
-* Related Link Count
+- Attachment File Count
+- (Discussion) Comment Count
+- External Link count
+- Hyperlink Count
+- Link Comment
+- Related Link Count
   ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
-* Attachment File Count
-* External Link count
-* Hyperlink Count
-* Link Comment
-* Related Link Count
+- Attachment File Count
+- External Link count
+- Hyperlink Count
+- Link Comment
+- Related Link Count
   ::: moniker-end
 
 For descriptions of each of these fields, see the [table provided later in this article](#table-field).
@@ -53,10 +53,10 @@ For descriptions of each of these fields, see the [table provided later in this 
 
 Query clauses that specify an integer field can use the operators listed below.
 
-* = , <> , > , < , >= , <= ,
-* =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field],
-* In, Not In,
-* Was Ever
+- = , <> , > , < , >= , <= ,
+- =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field],
+- In, Not In,
+- Was Ever
 
 ## Link or attachment count queries
 
@@ -172,7 +172,7 @@ Change Filter options to <strong>Match linked work items first</strong><br/>Add 
 </tr>
 
 </tbody>
-</table>  
+</table>
 
 <a id="dependents" />
 
@@ -184,15 +184,15 @@ The following example shows a dependent linked query that returns items with dep
 
 **Why this works:**
 
-* Removing the <strong>Team Project = @Project</strong> clause enables all dependent linked work items that match the filter criteria to be listed, no matter which project they belong to in the collection.
+- Removing the <strong>Team Project = @Project</strong> clause enables all dependent linked work items that match the filter criteria to be listed, no matter which project they belong to in the collection.
 
-* Grouping each of two clauses returns all **Product Backlog Item**s on the backlog or in progress, and the second grouped clause returns all **Bug**s on the backlog or in progress.
+- Grouping each of two clauses returns all **Product Backlog Item**s on the backlog or in progress, and the second grouped clause returns all **Bug**s on the backlog or in progress.
 
-* Grouping the two clauses with the **OR** operator at the start of the second clause returns work items that match either of the two filter criteria.
+- Grouping the two clauses with the **OR** operator at the start of the second clause returns work items that match either of the two filter criteria.
 
-* Choosing the **Only return items that have the specified links** returns only top-level work items that have dependencies.
+- Choosing the **Only return items that have the specified links** returns only top-level work items that have dependencies.
 
-* Choosing **Return links of any type** returns all linked work items that match the filter criteria for linked work items, in this case, returning all work items that are not under the **Phone Saver\\Phone Customers** area path, and aren't completed or removed.
+- Choosing **Return links of any type** returns all linked work items that match the filter criteria for linked work items, in this case, returning all work items that are not under the **Phone Saver\\Phone Customers** area path, and aren't completed or removed.
 
 The following image shows the query results that are returned.
 
@@ -294,13 +294,13 @@ For Azure Boards (cloud service), you can add up to 100 attachments to a work it
 
 ## Related articles
 
-* [Add a link to multiple work items](../backlogs/add-link.md)
-* [Linking, traceability, and managing dependencies](link-work-items-support-traceability.md)
-* [Query quick reference](query-index-quick-ref.md)
-* [Query editor](using-queries.md)
-* [Query fields, operators, and macros](query-operators-variables.md)
-* [Add work items](../backlogs/add-work-items.md)
-* [Work item field index](../work-items/guidance/work-item-field.md)
+- [Add a link to multiple work items](../backlogs/add-link.md)
+- [Linking, traceability, and managing dependencies](link-work-items-support-traceability.md)
+- [Query quick reference](query-index-quick-ref.md)
+- [Query editor](using-queries.md)
+- [Query fields, operators, and macros](query-operators-variables.md)
+- [Add work items](../backlogs/add-work-items.md)
+- [Work item field index](../work-items/guidance/work-item-field.md)
 
 ::: moniker range=">= tfs-2015 <= azure-devops-2019"
 

@@ -40,7 +40,7 @@ Personal access tokens (PATs) give you access to Azure DevOps and Team Foundatio
 These tokens have an expiration date from when they're created. You can restrict the scope of the data they can access.
 Use PATs to authenticate if you don't already have SSH keys set up on your system or if you need to restrict the permissions that are granted by the credential.
 
-* [Learn more about personal access tokens and how to create one](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
+- [Learn more about personal access tokens and how to create one](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
 
 ### <a name="use-credential-managers-to-generate-tokens"></a>Use Git Credential Manager to generate tokens
 

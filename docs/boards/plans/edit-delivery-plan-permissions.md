@@ -30,8 +30,8 @@ By default all members of an organization or project collection can view Deliver
 
 ## Prerequisites
 
-* In order to edit the permissions for a Delivery Plan, you must be the creator of the plan, a member of the Project Administrators or Project Collection Administrators group, or granted explicit permission through the plan's Security dialog.
-* Even if you grant view permissions to a user who has Stakeholder access for a public project, they won't be able to view the plan.
+- In order to edit the permissions for a Delivery Plan, you must be the creator of the plan, a member of the Project Administrators or Project Collection Administrators group, or granted explicit permission through the plan's Security dialog.
+- Even if you grant view permissions to a user who has Stakeholder access for a public project, they won't be able to view the plan.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -81,6 +81,6 @@ By default all members of an organization or project collection can view Deliver
 
 ## Related articles
 
-* [Review team delivery plans](review-team-plans.md)
-* [About permissions and groups](../../organizations/security/about-permissions.md)
-* [About access levels](../../organizations/security/access-levels.md)
+- [Review team delivery plans](review-team-plans.md)
+- [About permissions and groups](../../organizations/security/about-permissions.md)
+- [About access levels](../../organizations/security/access-levels.md)

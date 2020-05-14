@@ -29,9 +29,9 @@
 
     For each contribution in your extension, the manifest defines
 
-    * the type of contribution (hub in this case),
-    * the contribution target (the work hub group),
-    * and the properties that are specific to each type of contribution. For a hub, we have
+    - the type of contribution (hub in this case),
+    - the contribution target (the work hub group),
+    - and the properties that are specific to each type of contribution. For a hub, we have
 
 | Property | Description                                                                   |
 | -------- | ----------------------------------------------------------------------------- |

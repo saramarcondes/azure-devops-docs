@@ -16,6 +16,6 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Members
 
-* `groupByField`: string.
+- `groupByField`: string.
 
-* `resultsForGroup`: [TestResultsDetailsForGroup](../../../TFS/TestManagement/Contracts/TestResultsDetailsForGroup.md)[].
+- `resultsForGroup`: [TestResultsDetailsForGroup](../../../TFS/TestManagement/Contracts/TestResultsDetailsForGroup.md)[].

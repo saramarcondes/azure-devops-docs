@@ -15,8 +15,8 @@ Module path: `TFS/VersionControl/Contracts`
 
 ### Members
 
-* `deleteSourceBranch`: boolean.
+- `deleteSourceBranch`: boolean.
 
-* `mergeCommitMessage`: string.
+- `mergeCommitMessage`: string.
 
-* `squashMerge`: boolean.
+- `squashMerge`: boolean.

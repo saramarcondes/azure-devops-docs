@@ -59,7 +59,7 @@ To add an existing solution to version control, move all the solution files into
 
 2.  Choose **View**, **Other Windows**, **Source Control Explorer**.
 
-3.  In Source Control Explorer, navigate to a logical parent folder for your solution, such as **$/SiteApp/Main**, where SiteApp is the name of your project. [Why is this a good parent folder?](optimize-your-workspace.md)
+3.  In Source Control Explorer, navigate to a logical parent folder for your solution, such as **\$/SiteApp/Main**, where SiteApp is the name of your project. [Why is this a good parent folder?](optimize-your-workspace.md)
 
 4.  Choose the link next to **Local Path** to open the parent folder in Windows Explorer (File Explorer in Windows 8).
 
@@ -77,9 +77,9 @@ To add an existing solution to version control, move all the solution files into
 
 10. Are there any **Detected** items shown in the **Excluded Changes** section?
 
-    * **No:** Skip to the next step.
+    - **No:** Skip to the next step.
 
-    * **Yes:** Choose the **Detected** link. The **Promote Candidate Changes** dialog box appears. The files in listed in this dialog box are not referenced by any code projects in your solution. If your team will need these files, make sure they are selected and then choose **Promote** to move them into the **Included Changes** section of the **Pending Changes** page. For more information, see [Check in your work to the team's codebase](check-your-work-team-codebase.md).
+    - **Yes:** Choose the **Detected** link. The **Promote Candidate Changes** dialog box appears. The files in listed in this dialog box are not referenced by any code projects in your solution. If your team will need these files, make sure they are selected and then choose **Promote** to move them into the **Included Changes** section of the **Pending Changes** page. For more information, see [Check in your work to the team's codebase](check-your-work-team-codebase.md).
 
 11. When you're ready, [submit your pending changes](check-your-work-team-codebase.md).
 
@@ -181,9 +181,9 @@ Raisa sets up her dev machine with two workspaces for two different efforts, eac
 
 By default certain types of files (for example, .dll files) are ignored by version control. As a result:
 
-* When you add ignored files to folders that are mapped in a [local workspace](decide-between-using-local-server-workspace.md), they do not appear in the **Pending Changes** page in Team Explorer.
+- When you add ignored files to folders that are mapped in a [local workspace](decide-between-using-local-server-workspace.md), they do not appear in the **Pending Changes** page in Team Explorer.
 
-* When you try to add ignored files using the Add to Source Control dialog box (for example by dragging them into Source Control Explorer), they automatically appear in the **Excluded items** tab.
+- When you try to add ignored files using the Add to Source Control dialog box (for example by dragging them into Source Control Explorer), they automatically appear in the **Excluded items** tab.
 
 You can configure which kinds of files are ignored by placing text file called **.tfignore** in the folder where you want rules to apply. The effects of the .tfignore file are recursive. However, you can create .tfignore files in sub-folders to override the effects of a .tfignore file in a parent folder.
 
@@ -191,13 +191,13 @@ You can configure which kinds of files are ignored by placing text file called *
 
 The following rules apply to a .tfignore file:
 
-* `#` begins a comment line
+- `#` begins a comment line
 
-* The `*` and `?` wildcards are supported.
+- The `*` and `?` wildcards are supported.
 
-* A filespec is recursive unless prefixed by the `\` character.
+- A filespec is recursive unless prefixed by the `\` character.
 
-* `!` negates a filespec (files that match the pattern are not ignored)
+- `!` negates a filespec (files that match the pattern are not ignored)
 
 ### .tfignore file example
 
@@ -243,7 +243,7 @@ The .tfignore file is automatically added as an included pending change so that 
 
 ## Work from the command prompt
 
-* [Add command](add-command.md) Upload files from the workspace on your dev machine to your server.
+- [Add command](add-command.md) Upload files from the workspace on your dev machine to your server.
 
 ## See Also
 

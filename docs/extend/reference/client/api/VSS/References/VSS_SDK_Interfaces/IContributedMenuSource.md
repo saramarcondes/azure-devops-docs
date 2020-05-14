@@ -19,7 +19,7 @@ Interface for a registered object that contributes menu item(s)
 
 ### Members
 
-* `getMenuItems`: (context: any): [IContributedMenuItem](../../../VSS/References/VSS_SDK_Interfaces/IContributedMenuItem.md)[] or IPromise&lt;IContributedMenuItem[]&gt;. Get an array of menu items for the given context
+- `getMenuItems`: (context: any): [IContributedMenuItem](../../../VSS/References/VSS_SDK_Interfaces/IContributedMenuItem.md)[] or IPromise&lt;IContributedMenuItem[]&gt;. Get an array of menu items for the given context
 
-* `execute`: (actionContext: any): any. Handle a menu item from this menu source being clicked. This is only invoked when the
+- `execute`: (actionContext: any): any. Handle a menu item from this menu source being clicked. This is only invoked when the
   contributed menu item doesn't have an &quot;action&quot; method.

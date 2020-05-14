@@ -116,5 +116,5 @@ Your project and associated data are restored.
 
 ## Related articles
 
-* [Save project data](save-project-data.md)
-* [Create a project](create-project.md)
+- [Save project data](save-project-data.md)
+- [Create a project](create-project.md)

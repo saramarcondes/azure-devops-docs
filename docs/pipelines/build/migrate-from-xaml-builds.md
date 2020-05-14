@@ -132,15 +132,15 @@ The new build pipeline offers you some new options. The specific extra options y
 
 The new build pipeline offers you some new options. For example:
 
-* You can potentially create fewer build pipelines to replace a larger number of XAML build pipelines. This is because you can use a single new build pipeline with multiple triggers. And if you're using Azure Pipelines, then you can add multiple scheduled times.
+- You can potentially create fewer build pipelines to replace a larger number of XAML build pipelines. This is because you can use a single new build pipeline with multiple triggers. And if you're using Azure Pipelines, then you can add multiple scheduled times.
 
-* The **Rolling builds** option is replaced by the **Batch changes** option. You can't specify minimum time between builds. But if you're using Azure Pipelines, you can specify the maximum number of parallel jobs per branch.
+- The **Rolling builds** option is replaced by the **Batch changes** option. You can't specify minimum time between builds. But if you're using Azure Pipelines, you can specify the maximum number of parallel jobs per branch.
 
-* If your code is in TFVC, you can add folder path filters to include or exclude certain sets of files from triggering a CI build.
+- If your code is in TFVC, you can add folder path filters to include or exclude certain sets of files from triggering a CI build.
 
-* If your code is in TFVC and you're using the gated check-in trigger, you've got the option to also run CI builds or not. You can also use the same workspace mappings as your repository settings, or specify different mappings.
+- If your code is in TFVC and you're using the gated check-in trigger, you've got the option to also run CI builds or not. You can also use the same workspace mappings as your repository settings, or specify different mappings.
 
-* If your code is in Git, then you specify the branch filters directly on the **Triggers** tab. And you can add folder path filters to include or exclude certain sets of files from triggering a CI build.
+- If your code is in Git, then you specify the branch filters directly on the **Triggers** tab. And you can add folder path filters to include or exclude certain sets of files from triggering a CI build.
 
 The specific extra options you'll see depend on the version you're using of TFS or Azure Pipelines. See [Build pipeline triggers](../build/triggers.md)
 
@@ -157,9 +157,9 @@ We don't yet support the **Build even if nothing has changed since the previous 
 
 The new build pipeline offers you some new options. For example:
 
-* You don't need a controller, and the new agents are easier to set up and maintain. See [Build and release agents](../agents/agents.md).
+- You don't need a controller, and the new agents are easier to set up and maintain. See [Build and release agents](../agents/agents.md).
 
-* You can exactly specify which sets of files you want to publish as build artifacts. See [Build artifacts](../artifacts/pipeline-artifacts.md).
+- You can exactly specify which sets of files you want to publish as build artifacts. See [Build artifacts](../artifacts/pipeline-artifacts.md).
 
 ### Process tab
 
@@ -240,9 +240,9 @@ See [continuous testing](../ecosystems/dotnet-core.md#run-your-tests) and [Visua
 
 The new build pipeline offers you some new options. See:
 
-* [Agent capabilities](../agents/agents.md#capabilities)
+- [Agent capabilities](../agents/agents.md#capabilities)
 
-* [Build number format](../process/run-number.md)
+- [Build number format](../process/run-number.md)
 
 ### Retention Policy tab
 
@@ -262,31 +262,31 @@ In XAML builds you had to create your own custom templates to build different ty
 
 Here are a few examples of the kinds of apps you can build:
 
-* [Build your ASP.NET 4 app](../apps/aspnet/build-aspnet-4.md).
+- [Build your ASP.NET 4 app](../apps/aspnet/build-aspnet-4.md).
 
-* Build your ASP.NET Core app
+- Build your ASP.NET Core app
 
-* [Build your Universal Windows Platform app](../apps/windows/universal.md)
+- [Build your Universal Windows Platform app](../apps/windows/universal.md)
 
-* [Build your Xamarin app](../apps/mobile/xamarin.md)
+- [Build your Xamarin app](../apps/mobile/xamarin.md)
 
-* [C++ apps for Windows](../apps/windows/cpp.md)
+- [C++ apps for Windows](../apps/windows/cpp.md)
 
 ### Release
 
 The new build system is tightly integrated with Azure Pipelines. So it's easier then ever to automatically kick off a deployment after a successful build. Learn more:
 
-* [Create your first pipeline](../create-first-pipeline.md)
+- [Create your first pipeline](../create-first-pipeline.md)
 
-* [Release pipelines](../release/index.md)
+- [Release pipelines](../release/index.md)
 
-* [Triggers](../release/triggers.md)
+- [Triggers](../release/triggers.md)
 
 A few examples include:
 
-* [Continuous deployment of your app to an Azure web site](../apps/cd/deploy-webdeploy-webapps.md)
+- [Continuous deployment of your app to an Azure web site](../apps/cd/deploy-webdeploy-webapps.md)
 
-* [IIS using deployment groups](../apps/cd/deploy-webdeploy-iis-deploygroups.md)
+- [IIS using deployment groups](../apps/cd/deploy-webdeploy-iis-deploygroups.md)
 
 ### Other apps and tasks
 
@@ -307,10 +307,10 @@ offers hundreds of extensions that you can install to add tasks that extend your
 
 A major feature of the new build system is its emphasis on using scripts to customize your build pipeline. You can check your scripts into version control and customize your build using any of these methods:
 
-* [PowerShell scripts](../tasks/utility/powershell.md) (Windows)
-* [Batch scripts](../tasks/utility/batch-script.md) (Windows)
-* [Command prompt](../tasks/utility/command-line.md)
-* [Shell scripts](../tasks/utility/shell-script.md) (macOS and Linux)
+- [PowerShell scripts](../tasks/utility/powershell.md) (Windows)
+- [Batch scripts](../tasks/utility/batch-script.md) (Windows)
+- [Command prompt](../tasks/utility/command-line.md)
+- [Shell scripts](../tasks/utility/shell-script.md) (macOS and Linux)
 
 > [!TIP]
 >

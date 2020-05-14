@@ -116,8 +116,8 @@ Here, we've added the _Ticket_ WIT which is tracked along with tasks.
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
-* [Add a custom work item type](add-custom-wit.md)
-* [Customize a project using an inherited process](customize-process.md)
-* [Backlogs, boards, and plans](../../../boards/backlogs/backlogs-boards-plans.md)
-* [Create your backlog](../../../boards/backlogs/create-your-backlog.md)
-* [Organize your backlog, work with portfolio backlogs](../../../boards/backlogs/organize-backlog.md)
+- [Add a custom work item type](add-custom-wit.md)
+- [Customize a project using an inherited process](customize-process.md)
+- [Backlogs, boards, and plans](../../../boards/backlogs/backlogs-boards-plans.md)
+- [Create your backlog](../../../boards/backlogs/create-your-backlog.md)
+- [Organize your backlog, work with portfolio backlogs](../../../boards/backlogs/organize-backlog.md)

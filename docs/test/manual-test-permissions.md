@@ -27,13 +27,13 @@ For more information, see [Compare Visual Studio subscriptions](https://www.visu
 
 **Notes:**
 
-* Manual testers do not need this extension and can
+- Manual testers do not need this extension and can
   [execute tests as a Basic user](https://docs.microsoft.com/azure/devops/test/manual-test-permissions?view=azure-devops#license-requirements)
   in an Azure DevOps organization or collection.
 
-* This extension can't be used by Stakeholders.
+- This extension can't be used by Stakeholders.
 
-* Licenses for this extension also gives users rights to use [Microsoft Test Manager](https://docs.microsoft.com/azure/devops/test/mtm/guidance-mtm-usage?view=azure-devops) (a deprecated on-premises client).
+- Licenses for this extension also gives users rights to use [Microsoft Test Manager](https://docs.microsoft.com/azure/devops/test/mtm/guidance-mtm-usage?view=azure-devops) (a deprecated on-premises client).
 
 This table describes the license requirements in more detail:
 
@@ -66,4 +66,4 @@ Permissions can be applied on area paths and at the project-level. To learn how,
 
 ## Related articles
 
-* [Set permissions and access for manual testing](../organizations/security/set-permissions-access-test.md)
+- [Set permissions and access for manual testing](../organizations/security/set-permissions-access-test.md)

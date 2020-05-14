@@ -73,7 +73,7 @@ Here's how the default, inherited states map to the state categories for all thr
 <td>n/a</td>
 <td>n/a</td>
 </tr>
-</table>  
+</table>
 
 #### [Agile process](#tab/agile-process)
 
@@ -109,7 +109,7 @@ Here's how the default, inherited states map to the state categories for all thr
 <td>Removed (Epic, Feature, User Story)</td>
 <td>n/a</td>
 </tr>
-</table>  
+</table>
 
 #### [Scrum process](#tab/scrum-process)
 
@@ -207,10 +207,10 @@ When you link a work item to a pull request (PR), you have the option to automat
 
 In the following circumstances the system won't automatically update the work item state to Done, Closed, or the state that belongs to the Closed category for the WIT:
 
-* The work item, whose WIT is managed with the Inheritance process model, is already in a State that belongs to the Resolved category. In this instance the system won't update the State. For example, if a bug derived from the Agile process is in a Resolved state, the system won't transition it to Closed.
-* The work item is already in a State that belongs to the Completed category. No further transition is required.
-* The WIT associated with the work item contains one or more workflow field rules that prevent the work item being saved to a next state. For example, a rule requires that another field must be defined as part of closing the work item.
-* For on-premises deployments and Azure Boards Hosted process model, you must modify the workflow to specify actions (**ACTION** element) to take place when transitioning the workflow. See [Change the workflow for a work item type, Specify Actions](../../reference/xml/change-workflow-wit.md#Actions).
+- The work item, whose WIT is managed with the Inheritance process model, is already in a State that belongs to the Resolved category. In this instance the system won't update the State. For example, if a bug derived from the Agile process is in a Resolved state, the system won't transition it to Closed.
+- The work item is already in a State that belongs to the Completed category. No further transition is required.
+- The WIT associated with the work item contains one or more workflow field rules that prevent the work item being saved to a next state. For example, a rule requires that another field must be defined as part of closing the work item.
+- For on-premises deployments and Azure Boards Hosted process model, you must modify the workflow to specify actions (**ACTION** element) to take place when transitioning the workflow. See [Change the workflow for a work item type, Specify Actions](../../reference/xml/change-workflow-wit.md#Actions).
 
 To learn more about process models, see [Customize your work tracking experience](../../reference/customize-work.md).
 
@@ -220,21 +220,21 @@ To learn more about process models, see [Customize your work tracking experience
 
 ::: moniker range="azure-devops"
 
-* [Lead Time and Cycle Time control charts (widgets)](../../report/dashboards/cycle-time-and-lead-time.md)
-* [Customize a workflow for a process](../../organizations/settings/work/customize-process-workflow.md)
+- [Lead Time and Cycle Time control charts (widgets)](../../report/dashboards/cycle-time-and-lead-time.md)
+- [Customize a workflow for a process](../../organizations/settings/work/customize-process-workflow.md)
   ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-* [Lead Time and Cycle Time control charts (widgets)](../../report/dashboards/cycle-time-and-lead-time.md)
-* [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md)
-* [ProcessConfiguration XML element reference](../../reference/xml/process-configuration-xml-element.md)
-* [Customize your work tracking experience](../../reference/on-premises-xml-process-model.md)
+- [Lead Time and Cycle Time control charts (widgets)](../../report/dashboards/cycle-time-and-lead-time.md)
+- [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md)
+- [ProcessConfiguration XML element reference](../../reference/xml/process-configuration-xml-element.md)
+- [Customize your work tracking experience](../../reference/on-premises-xml-process-model.md)
   ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-* [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md)
-* [ProcessConfiguration XML element reference](../../reference/xml/process-configuration-xml-element.md)
-* [Customize your work tracking experience](../../reference/on-premises-xml-process-model.md)
+- [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md)
+- [ProcessConfiguration XML element reference](../../reference/xml/process-configuration-xml-element.md)
+- [Customize your work tracking experience](../../reference/on-premises-xml-process-model.md)
   ::: moniker-end

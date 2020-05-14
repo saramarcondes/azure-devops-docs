@@ -108,9 +108,9 @@ The **Scheduled runs** windows displays the times converted to the local time zo
 
 Scheduled triggers are evaluated for a branch when the following events occur.
 
-* A pipeline is created.
-* A pipeline's YAML file is updated, either from a push, or by editing it in the pipeline editor.
-* A new branch is created.
+- A pipeline is created.
+- A pipeline's YAML file is updated, either from a push, or by editing it in the pipeline editor.
+- A new branch is created.
 
 After one of these events occurs in a branch, any scheduled runs for that branch are added, if that branch matches the branch filters for the scheduled triggers contained in the YAML file in that branch.
 
@@ -232,18 +232,18 @@ There are certain limits on how often you can schedule a pipeline to run. These 
 
 The following examples show you how to migrate your schedules from the classic editor to YAML.
 
-* [Example: Nightly build of Git repo in multiple time zones](#example-nightly-build-of-git-repo-in-multiple-time-zones)
-* [Example: Nightly build with different frequencies](#example-nightly-build-with-different-frequencies)
+- [Example: Nightly build of Git repo in multiple time zones](#example-nightly-build-of-git-repo-in-multiple-time-zones)
+- [Example: Nightly build with different frequencies](#example-nightly-build-with-different-frequencies)
 
 ### Example: Nightly build of Git repo in multiple time zones
 
 In this example, the classic editor scheduled trigger has two entries, producing the following builds.
 
-* Every Monday - Friday at 3:00 AM (UTC + 5:30 time zone), build branches that meet the `features/india/*` branch filter criteria
+- Every Monday - Friday at 3:00 AM (UTC + 5:30 time zone), build branches that meet the `features/india/*` branch filter criteria
 
   ![Scheduled trigger UTC + 5:30 time zone](media/triggers/scheduled-trigger-git-india.png)
 
-* Every Monday - Friday at 3:00 AM (UTC - 5:00 time zone), build branches that meet the `features/nc/*` branch filter criteria
+- Every Monday - Friday at 3:00 AM (UTC - 5:00 time zone), build branches that meet the `features/nc/*` branch filter criteria
 
   ![Scheduled trigger UTC -5:00 time zone](media/triggers/scheduled-trigger-git-nc.png)
 
@@ -265,15 +265,15 @@ schedules:
 
 In the first schedule, **M-F 3:00 AM (UTC + 5:30) India daily build**, the cron syntax (`mm HH DD MM DW`) is `30 21 * * Sun-Thu`.
 
-* Minutes and Hours - `30 21` - This maps to `21:30 UTC` (`9:30 PM UTC`). Since the specified time zone in the classic editor is **UTC + 5:30**, we need to subtract 5 hours and 30 minutes from the desired build time of 3:00 AM to arrive at the desired UTC time to specify for the YAML trigger.
-* Days and Months are specified as wildcards since this schedule doesn't specify to run only on certain days of the month or on a specific month.
-* Days of the week - `Sun-Thu` - because of the timezone conversion, for our builds to run at 3:00 AM in the UTC + 5:30 India time zone, we need to specify starting them the previous day in UTC time. We could also specify the days of the week as `0-4` or `0,1,2,3,4`.
+- Minutes and Hours - `30 21` - This maps to `21:30 UTC` (`9:30 PM UTC`). Since the specified time zone in the classic editor is **UTC + 5:30**, we need to subtract 5 hours and 30 minutes from the desired build time of 3:00 AM to arrive at the desired UTC time to specify for the YAML trigger.
+- Days and Months are specified as wildcards since this schedule doesn't specify to run only on certain days of the month or on a specific month.
+- Days of the week - `Sun-Thu` - because of the timezone conversion, for our builds to run at 3:00 AM in the UTC + 5:30 India time zone, we need to specify starting them the previous day in UTC time. We could also specify the days of the week as `0-4` or `0,1,2,3,4`.
 
 In the second schedule, **M-F 3:00 AM (UTC - 5) NC daily build**, the cron syntax is `0 8 * * Mon-Fri`.
 
-* Minutes and Hours - `0 8` - This maps to `8:00 AM UTC`. Since the specified time zone in the classic editor is **UTC - 5:00**, we need to add 5 hours from the desired build time of 3:00 AM to arrive at the desired UTC time to specify for the YAML trigger.
-* Days and Months are specified as wildcards since this schedule doesn't specify to run only on certain days of the month or on a specific month.
-* Days of the week - `Mon-Fri` - Because our timezone conversions don't span multiple days of the week for our desired schedule, we don't need to do any conversion here. We could also specify the days of the week as `1-5` or `1,2,3,4,5`.
+- Minutes and Hours - `0 8` - This maps to `8:00 AM UTC`. Since the specified time zone in the classic editor is **UTC - 5:00**, we need to add 5 hours from the desired build time of 3:00 AM to arrive at the desired UTC time to specify for the YAML trigger.
+- Days and Months are specified as wildcards since this schedule doesn't specify to run only on certain days of the month or on a specific month.
+- Days of the week - `Mon-Fri` - Because our timezone conversions don't span multiple days of the week for our desired schedule, we don't need to do any conversion here. We could also specify the days of the week as `1-5` or `1,2,3,4,5`.
 
 > [!IMPORTANT]
 > The UTC time zones in YAML scheduled triggers don't account for daylight savings time.
@@ -282,11 +282,11 @@ In the second schedule, **M-F 3:00 AM (UTC - 5) NC daily build**, the cron synta
 
 In this example, the classic editor scheduled trigger has two entries, producing the following builds.
 
-* Every Monday - Friday at 3:00 AM UTC, build branches that meet the `master` and `releases/*` branch filter criteria
+- Every Monday - Friday at 3:00 AM UTC, build branches that meet the `master` and `releases/*` branch filter criteria
 
   ![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-week-day-night.png)
 
-* Every Sunday at 3:00 AM UTC, build the `releases/lastversion` branch, even if the source or pipeline hasn't changed
+- Every Sunday at 3:00 AM UTC, build the `releases/lastversion` branch, even if the source or pipeline hasn't changed
 
   ![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-weekly-night.png)
 
@@ -310,16 +310,16 @@ schedules:
 
 In the first schedule, **M-F 3:00 AM (UTC) daily build**, the cron syntax is `0 3 * * Mon-Fri`.
 
-* Minutes and Hours - `0 3` - This maps to `3:00 AM UTC`. Since the specified time zone in the classic editor is **UTC**, we don't need to do any time zone conversions.
-* Days and Months are specified as wildcards since this schedule doesn't specify to run only on certain days of the month or on a specific month.
-* Days of the week - `Mon-Fri` - because there is no timezone conversion, the days of the week map directly from the classic editor schedule. We could also specify the days of the week as `1,2,3,4,5`.
+- Minutes and Hours - `0 3` - This maps to `3:00 AM UTC`. Since the specified time zone in the classic editor is **UTC**, we don't need to do any time zone conversions.
+- Days and Months are specified as wildcards since this schedule doesn't specify to run only on certain days of the month or on a specific month.
+- Days of the week - `Mon-Fri` - because there is no timezone conversion, the days of the week map directly from the classic editor schedule. We could also specify the days of the week as `1,2,3,4,5`.
 
 In the second schedule, **Sunday 3:00 AM (UTC) weekly latest version build**, the cron syntax is `0 3 * * Sun`.
 
-* Minutes and Hours - `0 3` - This maps to `3:00 AM UTC`. Since the specified time zone in the classic editor is **UTC**, we don't need to do any time zone conversions.
-* Days and Months are specified as wildcards since this schedule doesn't specify to run only on certain days of the month or on a specific month.
-* Days of the week - `Sun` - Because our timezone conversions don't span multiple days of the week for our desired schedule, we don't need to do any conversion here. We could also specify the days of the week as `0`.
-* We also specify `always: true` since this build is scheduled to run whether or not the source code has been updated.
+- Minutes and Hours - `0 3` - This maps to `3:00 AM UTC`. Since the specified time zone in the classic editor is **UTC**, we don't need to do any time zone conversions.
+- Days and Months are specified as wildcards since this schedule doesn't specify to run only on certain days of the month or on a specific month.
+- Days of the week - `Sun` - Because our timezone conversions don't span multiple days of the week for our desired schedule, we don't need to do any conversion here. We could also specify the days of the week as `0`.
+- We also specify `always: true` since this build is scheduled to run whether or not the source code has been updated.
 
 ::: moniker-end
 
@@ -348,11 +348,11 @@ If your repository is Azure Repos Git, GitHub, or Other Git, then you can also s
 
 In this example, the classic editor scheduled trigger has two entries, producing the following builds.
 
-* Every Monday - Friday at 3:00 AM (UTC + 5:30 time zone), build branches that meet the `features/india/*` branch filter criteria
+- Every Monday - Friday at 3:00 AM (UTC + 5:30 time zone), build branches that meet the `features/india/*` branch filter criteria
 
   ![Scheduled trigger UTC + 5:30 time zone](media/triggers/scheduled-trigger-git-india.png)
 
-* Every Monday - Friday at 3:00 AM (UTC - 5:00 time zone), build branches that meet the `features/nc/*` branch filter criteria
+- Every Monday - Friday at 3:00 AM (UTC - 5:00 time zone), build branches that meet the `features/nc/*` branch filter criteria
 
   ![Scheduled trigger UTC -5:00 time zone](media/triggers/scheduled-trigger-git-nc.png)
 
@@ -378,11 +378,11 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 In this example, the classic editor scheduled trigger has two entries, producing the following builds.
 
-* Every Monday - Friday at 3:00 AM UTC, build branches that meet the `master` and `releases/*` branch filter criteria
+- Every Monday - Friday at 3:00 AM UTC, build branches that meet the `master` and `releases/*` branch filter criteria
 
   ![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-week-day-night.png)
 
-* Every Sunday at 3:00 AM UTC, build the `releases/lastversion` branch, even if the source or pipeline hasn't changed
+- Every Sunday at 3:00 AM UTC, build the `releases/lastversion` branch, even if the source or pipeline hasn't changed
 
   ![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-weekly-night.png)
 
@@ -412,13 +412,13 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 ### I defined a schedule in the YAML file. But it didn't run. What happened?
 
-* Check the next few runs that Azure Pipelines has scheduled for your pipeline. You can find these by selecting the **Scheduled runs** action in your pipeline. You need to have the **Multi-stage pipelines** preview feature enabled to see this action. The list is filtered down to only show you the upcoming few runs over the next few days. If this does not meet your expectation, it is probably the case that you have mistyped your cron schedule, or you do not have the schedule defined in the correct branch. Read the topic above to understand how to configure schedules. Reevaluate your cron syntax. All the times for cron schedules are in UTC.
+- Check the next few runs that Azure Pipelines has scheduled for your pipeline. You can find these by selecting the **Scheduled runs** action in your pipeline. You need to have the **Multi-stage pipelines** preview feature enabled to see this action. The list is filtered down to only show you the upcoming few runs over the next few days. If this does not meet your expectation, it is probably the case that you have mistyped your cron schedule, or you do not have the schedule defined in the correct branch. Read the topic above to understand how to configure schedules. Reevaluate your cron syntax. All the times for cron schedules are in UTC.
 
-* If you have any schedules defined in the UI, then your YAML schedules are not honored. Ensure that you do not have any UI schedules by navigating to the editor for your pipeline and then selecting **Triggers**.
+- If you have any schedules defined in the UI, then your YAML schedules are not honored. Ensure that you do not have any UI schedules by navigating to the editor for your pipeline and then selecting **Triggers**.
 
-* There is a limit on the number of runs you can schedule for a pipeline. Read more about [limits](#limits).
+- There is a limit on the number of runs you can schedule for a pipeline. Read more about [limits](#limits).
 
-* If there are no changes to your code, they Azure Pipelines may not start new runs. Learn how to [override](#always) this behavior.
+- If there are no changes to your code, they Azure Pipelines may not start new runs. Learn how to [override](#always) this behavior.
 
 ### Schedules defined in YAML pipeline work for one branch but not the other. How do I fix this?
 
@@ -429,17 +429,17 @@ schedules:
 - cron: "0 12 * * 0"   # replace with your schedule
   branches:
     include:
-    - features/X  
+    - features/X
 ```
 
 ### My YAML schedules were working fine. But, they stopped working now. How do I debug this?
 
-* If you did not specify `always:true`, your pipeline won't be scheduled unless there are any updates made to your code. Check whether there have been any code changes and how you [configured the schedules](#always).
+- If you did not specify `always:true`, your pipeline won't be scheduled unless there are any updates made to your code. Check whether there have been any code changes and how you [configured the schedules](#always).
 
-* There is a [limit](#limits) on how many times you can schedule your pipeline. Check if you have exceeded those limits.
+- There is a [limit](#limits) on how many times you can schedule your pipeline. Check if you have exceeded those limits.
 
-* Check if someone enabled additional schedules in the UI. Open the editor for your pipeline, and select **Triggers**. If they defined schedules in the UI, then your YAML schedules won't be honored.
+- Check if someone enabled additional schedules in the UI. Open the editor for your pipeline, and select **Triggers**. If they defined schedules in the UI, then your YAML schedules won't be honored.
 
-* Check if your pipeline is paused or disabled. Select **Settings** for your pipeline.
+- Check if your pipeline is paused or disabled. Select **Settings** for your pipeline.
 
 ::: moniker-end

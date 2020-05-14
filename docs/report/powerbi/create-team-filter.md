@@ -149,7 +149,7 @@ Now you can filter all visualization on a report using a slicer or any other sup
 
 ## Related articles
 
-* [Power BI integration overview](overview.md)
-* [Create Analytics views](analytics-views-create.md)
-* [Get started with Power BI Desktop](/power-bi/desktop-getting-started)
-* [Bidirectional cross-filtering using DirectQuery in Power BI Desktop](/power-bi/desktop-bidirectional-filtering)
+- [Power BI integration overview](overview.md)
+- [Create Analytics views](analytics-views-create.md)
+- [Get started with Power BI Desktop](/power-bi/desktop-getting-started)
+- [Bidirectional cross-filtering using DirectQuery in Power BI Desktop](/power-bi/desktop-bidirectional-filtering)

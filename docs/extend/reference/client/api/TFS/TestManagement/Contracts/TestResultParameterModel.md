@@ -16,12 +16,12 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Members
 
-* `actionPath`: string.
+- `actionPath`: string.
 
-* `iterationId`: number.
+- `iterationId`: number.
 
-* `parameterName`: string.
+- `parameterName`: string.
 
-* `url`: string.
+- `url`: string.
 
-* `value`: string.
+- `value`: string.

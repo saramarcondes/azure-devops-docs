@@ -29,8 +29,8 @@ Visual Studio subscribers get access included with their subscription, and their
 
 Ensure the following is true:
 
-* [Billing is set up for your organization](set-up-billing-for-your-organization-vs.md)
-* You have [Project Collection Administrator or organization Owner permissions](../security/lookup-organization-owner-admin.md)
+- [Billing is set up for your organization](set-up-billing-for-your-organization-vs.md)
+- You have [Project Collection Administrator or organization Owner permissions](../security/lookup-organization-owner-admin.md)
 
 <a name="buy-access-vs-marketplace"></a>
 
@@ -40,10 +40,10 @@ The simplest way to control paid access is by manually assigning an access level
 
 Keep the following information in mind:
 
-* **Visual Studio subscribers** are detected automatically when they sign in. There's no additional charge for users with a Visual Studio subscription.
-* **Stakeholder** is a [free access level with limited functionality](../security/get-started-stakeholder.md).
-* **Basic** is free for the first 5 users, and paid for 6 or more users.
-* **Basic + Test Plans** is paid only, but is [free to try for 30 days](try-additional-features-vs.md).
+- **Visual Studio subscribers** are detected automatically when they sign in. There's no additional charge for users with a Visual Studio subscription.
+- **Stakeholder** is a [free access level with limited functionality](../security/get-started-stakeholder.md).
+- **Basic** is free for the first 5 users, and paid for 6 or more users.
+- **Basic + Test Plans** is paid only, but is [free to try for 30 days](try-additional-features-vs.md).
 
 ## Select the default access level for new users
 

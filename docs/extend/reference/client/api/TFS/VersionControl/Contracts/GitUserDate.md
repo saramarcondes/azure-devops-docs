@@ -15,8 +15,8 @@ Module path: `TFS/VersionControl/Contracts`
 
 ### Members
 
-* `date`: Date.
+- `date`: Date.
 
-* `email`: string.
+- `email`: string.
 
-* `name`: string.
+- `name`: string.

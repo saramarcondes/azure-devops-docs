@@ -62,4 +62,4 @@ To learn more about **Options**, see [Options Dialog Box (Visual Studio)](/visua
 
 ## Related articles
 
-* [View and add work items using the Work Items page](view-add-work-items.md)
+- [View and add work items using the Work Items page](view-add-work-items.md)

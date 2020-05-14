@@ -101,10 +101,10 @@ See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-man
 
     The quick filters you can use are:
 
-    * `a:` for **Assigned to:**
-    * `c:` for **Created by:**
-    * `s:` for **State**
-    * `t:` for **Work item type**<p />
+    - `a:` for **Assigned to:**
+    - `c:` for **Created by:**
+    - `s:` for **State**
+    - `t:` for **Work item type**<p />
 
 1.  Start typing the name of a field in your work items; for example, type `ta`.
 

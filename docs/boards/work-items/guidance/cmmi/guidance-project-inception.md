@@ -91,6 +91,6 @@ Collect the commitments, and archive the details in the project portal.
 
 For more information, see the following Web resources:
 
-* [A Practical Guide to Feature Driven Development](https://go.microsoft.com/fwlink/?LinkId=179021), Stephen R. Palmer and John Malcolm Felsing; Prentice Hall PTR, 2002.
+- [A Practical Guide to Feature Driven Development](https://go.microsoft.com/fwlink/?LinkId=179021), Stephen R. Palmer and John Malcolm Felsing; Prentice Hall PTR, 2002.
 
-* [The IT Measurement Compendium: Estimating and Benchmarking Success with Functional Size Measurement](https://go.microsoft.com/fwlink/?LinkId=179022), Manfred Bundschuh and Carol Dekkers; Springer, 2008.
+- [The IT Measurement Compendium: Estimating and Benchmarking Success with Functional Size Measurement](https://go.microsoft.com/fwlink/?LinkId=179022), Manfred Bundschuh and Carol Dekkers; Springer, 2008.

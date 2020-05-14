@@ -163,10 +163,10 @@ To filter on items assigned to someone who belongs to a team or security group, 
 
 You can use the **In Group** or **Not In Group** operators to filter a query based on several values that are members of a group, or that are not members of a group. Examples of groups you can specify include the following items:
 
-* teams
-* built-in and custom security groups
-* Azure Active Directory and Active Directory security groups
-* work item categories.
+- teams
+- built-in and custom security groups
+- Azure Active Directory and Active Directory security groups
+- work item categories.
 
 <a id="workflow-change"/>
 
@@ -289,7 +289,7 @@ Using the Kanban query fields&mdash;Board Column, Board Column Done, and Board L
 
 For example, you can list items based on the team area path, and if they are in a specific custom Kanban column and swimlane. If you rename a column or swimlane, you'll need to update the query filters to reflect the new name. For more ideas, see this blog post: [New fields bring Kanban goodness to queries, and more](https://blogs.msdn.microsoft.com/devops/2015/10/19/new-fields-bring-kanban-goodness-to-queries-and-more/)
 
-<img src="media/query-kanban-fields.png" alt="Query filter on Kanban board fields" style="border: 1px solid #C3C3C3;" />  
+<img src="media/query-kanban-fields.png" alt="Query filter on Kanban board fields" style="border: 1px solid #C3C3C3;" />
 
 > [!NOTE]  
 > Queries are now scoped to the current project by default. Check the **Query across projects** to find work items defined in other projects within the collection.
@@ -775,9 +775,9 @@ Then the Activated By and Activated Date fields are set to `READONLY`.
 
 ## Related articles
 
-* [Query by date or current iteration](query-by-date-or-current-iteration.md)
-* [Query quick reference](query-index-quick-ref.md)
-* [Work item fields and attributes](../work-items/work-item-fields.md)
-* [Query permissions](set-query-permissions.md)
+- [Query by date or current iteration](query-by-date-or-current-iteration.md)
+- [Query quick reference](query-index-quick-ref.md)
+- [Work item fields and attributes](../work-items/work-item-fields.md)
+- [Query permissions](set-query-permissions.md)
 
 [!INCLUDE [temp](../includes/rest-apis-queries.md)]

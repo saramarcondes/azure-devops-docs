@@ -77,12 +77,12 @@ Continuous integration (CI) triggers cause a pipeline to run whenever you push a
 
 You can also tell Azure Pipelines to skip running a pipeline that a commit would normally trigger. Just include `[skip ci]` in the commit message or description of the HEAD commit and Azure Pipelines will skip running CI. You can also use any of the variations below.
 
-* `[skip ci]` or `[ci skip]`
-* `skip-checks: true` or `skip-checks:true`
-* `[skip azurepipelines]` or `[azurepipelines skip]`
-* `[skip azpipelines]` or `[azpipelines skip]`
-* `[skip azp]` or `[azp skip]`
-* `***NO_CI***`
+- `[skip ci]` or `[ci skip]`
+- `skip-checks: true` or `skip-checks:true`
+- `[skip azurepipelines]` or `[azurepipelines skip]`
+- `[skip azpipelines]` or `[azpipelines skip]`
+- `[skip azp]` or `[azp skip]`
+- `***NO_CI***`
 
 [!INCLUDE [ci-triggers](includes/ci-triggers5.md)]
 

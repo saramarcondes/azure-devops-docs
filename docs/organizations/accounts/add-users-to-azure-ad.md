@@ -26,9 +26,9 @@ For more information, see the [conceptual overview](access-with-azure-ad.md) for
 
 1.  Sign in to the [Azure portal](https://portal.azure.com) as global administrator for your organization's directory. See the following topics for information about signing in:
 
-    * [Add users in the Azure portal](/azure/active-directory/active-directory-create-users)
-    * [Add users in the Azure portal](/azure/active-directory/active-directory-users-create-azure-portal)
-    * [Why am I asked to choose between a "work or school account" and a "personal account"?](faq-user-and-permissions-management.md#ChooseOrgAcctMSAcct)
+    - [Add users in the Azure portal](/azure/active-directory/active-directory-create-users)
+    - [Add users in the Azure portal](/azure/active-directory/active-directory-users-create-azure-portal)
+    - [Why am I asked to choose between a "work or school account" and a "personal account"?](faq-user-and-permissions-management.md#ChooseOrgAcctMSAcct)
 
 2.  Add the sign-in addresses for all of your organization users to your directory. Include yourself as the organization Owner, if you're not already in the directory.
 
@@ -48,8 +48,8 @@ For more information, see the [conceptual overview](access-with-azure-ad.md) for
 
 ## Related articles
 
-* [Add users to your organization](add-organization-users.md)
-* [Add users to your team](add-team-members.md)
-* [Add external users](add-external-user.md)
+- [Add users to your organization](add-organization-users.md)
+- [Add users to your team](add-team-members.md)
+- [Add external users](add-external-user.md)
 
-- [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
+* [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)

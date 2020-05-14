@@ -21,8 +21,8 @@ For an overview of built-in security groups and default permission assignments, 
 
 ## Prerequisites
 
-* You must have a project. If you don't have a project yet, [create one](../projects/create-project.md).
-* You must be a member of the Project Valid Users Group or Project Collection Valid Users Group to view permissions. Users added to a project are automatically added to these security groups.
+- You must have a project. If you don't have a project yet, [create one](../projects/create-project.md).
+- You must be a member of the Project Valid Users Group or Project Collection Valid Users Group to view permissions. Users added to a project are automatically added to these security groups.
 
 ## Show members of the Project Administrators group
 

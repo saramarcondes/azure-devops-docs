@@ -26,13 +26,13 @@ For more information about manual testing, see [Planned manual testing](overview
 These elements are stored in your work repository as special types of work items.
 You can export and share them with your team, and benefit from close integration for all of your DevOps tasks.
 
-* **Test plans** group test suites and individual test cases together.
+- **Test plans** group test suites and individual test cases together.
   Test plans include static test suites, requirement-based suites, and [query-based suites](reference-qa.md#query-based-suites).
 
-* **Test suites** group test cases into separate testing scenarios within a single test plan.
+- **Test suites** group test cases into separate testing scenarios within a single test plan.
   Grouping test cases makes it easier to see which scenarios are complete.
 
-* **Test cases** validate individual parts of your code or app deployment.
+- **Test cases** validate individual parts of your code or app deployment.
   You can ensure your code works correctly, has no errors, and meets business and customer requirements.
   You can add individual test cases to a test plan without creating a test suite, if you wish.
   More than one test suite or test plan can refer to a test case.
@@ -81,9 +81,9 @@ These artifacts include test plan, test suite, test case, test configuration, sh
 
 To create and edit a test artifact, you must have one of the following access levels:
 
-* [Basic + Test plans](../organizations/security/access-levels.md)
-* [Visual Studio Enterprise](../organizations/security/access-levels.md)
-* [Basic](../organizations/security/access-levels.md) edit test cases, but not create them or other types of test artifacts
+- [Basic + Test plans](../organizations/security/access-levels.md)
+- [Visual Studio Enterprise](../organizations/security/access-levels.md)
+- [Basic](../organizations/security/access-levels.md) edit test cases, but not create them or other types of test artifacts
 
 Test artifacts include test plan, test suite, test case, test configuration, shared step, and shared parameter.
 
@@ -158,5 +158,5 @@ Or filter the list of tests using **Outcome**, **Tester**, and **Configuration**
 
 ## See also
 
-* [FAQs for manual testing](reference-qa.md#testplans)
-* [Link test cases to work items](../boards/queries/link-work-items-support-traceability.md)
+- [FAQs for manual testing](reference-qa.md#testplans)
+- [Link test cases to work items](../boards/queries/link-work-items-support-traceability.md)

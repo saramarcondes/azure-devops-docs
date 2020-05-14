@@ -43,9 +43,9 @@ If you are currently on Hosted XML and looking to move your process to Inherited
 
 ## Related articles
 
-* [About process customization and inherited processes](./inheritance-process-model.md)
+- [About process customization and inherited processes](./inheritance-process-model.md)
 
 ## Next steps
 
-* [Clone a Hosted process to an inheritance process](./upgrade-hosted-to-inherited.md)
-* [Change a projects from Hosted XML to an inherited process](./change-process-from-hosted-to-inherited.md)
+- [Clone a Hosted process to an inheritance process](./upgrade-hosted-to-inherited.md)
+- [Change a projects from Hosted XML to an inherited process](./change-process-from-hosted-to-inherited.md)

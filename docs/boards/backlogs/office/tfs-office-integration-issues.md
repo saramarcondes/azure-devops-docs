@@ -49,9 +49,9 @@ If the Team ribbon does not appear at next launch, the load behavior of the add-
     > [!NOTE]  
     > If there are multiple folders with the same name, select the one with the highest version number.
 
-    * HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\Excel\Addins (if this key does not exist, try one of the options below)
-    * HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\Excel\Addins
-    * HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Office\Excel\Addins
+    - HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\Excel\Addins (if this key does not exist, try one of the options below)
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\Excel\Addins
+    - HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Office\Excel\Addins
 
     > [!div class="mx-imgBorder"] > ![LoadBehavior entry](media/tfs-office-issues-regedit-loadbehavior-key.png)
 
@@ -114,5 +114,5 @@ If the above steps are unsuccessful, try the following steps:
 
 ## Related articles
 
-* [FAQs: Work in Excel connected to Azure Boards](faqs.md)
-* [Add or remove add-ins](https://support.office.com/article/Add-or-remove-add-ins-0af570c4-5cf3-4fa9-9b88-403625a0b460)
+- [FAQs: Work in Excel connected to Azure Boards](faqs.md)
+- [Add or remove add-ins](https://support.office.com/article/Add-or-remove-add-ins-0af570c4-5cf3-4fa9-9b88-403625a0b460)

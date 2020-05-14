@@ -80,7 +80,7 @@ The `uri` property references a page that is rendered within the content area of
                     return {
                         name: name.value,
                         dateOfBirth: dateOfBirth.value,
-                        email: email.value  
+                        email: email.value
                     };
                 }
 
@@ -260,6 +260,6 @@ var dialogOptions = {
 
 If you have a question or are looking for more information, consider going to one of the following areas:
 
-* [Azure DevOps on Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops)
-* [Azure DevOps Support Bot](https://azuredevopsvirtualagent.azurewebsites.net/)
-* [Developer Community](https://developercommunity.visualstudio.com/content/problem/post.html?space=21)
+- [Azure DevOps on Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops)
+- [Azure DevOps Support Bot](https://azuredevopsvirtualagent.azurewebsites.net/)
+- [Developer Community](https://developercommunity.visualstudio.com/content/problem/post.html?space=21)

@@ -22,18 +22,18 @@ For information about the measures and dimensions that are associated with these
 
 FactCurrentWorkItem is associated with the following dimension tables:
 
-* DimArea
+- DimArea
 
-* DimIteration
+- DimIteration
 
-* DimPerson
+- DimPerson
 
-* DimTeamProject
+- DimTeamProject
 
-* DimWorkItem
+- DimWorkItem
 
 ## Related notes
 
-* [Test cases and work items](perspective-test-analyze-report-work.md)
-* [Work Item History tables](work-item-history-tables.md)
-* [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)
+- [Test cases and work items](perspective-test-analyze-report-work.md)
+- [Work Item History tables](work-item-history-tables.md)
+- [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)

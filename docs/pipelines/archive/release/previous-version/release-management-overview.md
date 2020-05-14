@@ -25,9 +25,9 @@ releases as they move through your release path.
 
 **Set up and start a release**
 
-* [Set up the release management server, client, and deployment agents](install-release-management.md).
-* [Set up users and groups and control access to Release Management](add-users-and-groups.md).
-* [Create your release path and start a release](manage-your-release.md).
+- [Set up the release management server, client, and deployment agents](install-release-management.md).
+- [Set up users and groups and control access to Release Management](add-users-and-groups.md).
+- [Create your release path and start a release](manage-your-release.md).
 
 After you have created your release path, you can
 [trigger a release from a build](trigger-a-release.md).
@@ -40,11 +40,11 @@ To read a detailed user guide,
 
 ## Related topics
 
-* [Install Release Management](install-release-management.md)
-* [Manage your release](manage-your-release.md)
-* [Release your app with deployment agents](release-with-agents.md)
-* [Release your app without deployment agents](release-without-agents.md)
-* [Deploy continuously to Azure](deploy-continuously-to-azure.md)
+- [Install Release Management](install-release-management.md)
+- [Manage your release](manage-your-release.md)
+- [Release your app with deployment agents](release-with-agents.md)
+- [Release your app without deployment agents](release-without-agents.md)
+- [Deploy continuously to Azure](deploy-continuously-to-azure.md)
 
 [!INCLUDE [wpfver-back-to-index-shared](../includes/wpfver-back-to-index-shared.md)]
 

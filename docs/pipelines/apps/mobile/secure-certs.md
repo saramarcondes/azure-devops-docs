@@ -23,9 +23,9 @@ When developing an app for Android or iOS, you will eventually need to manage si
 
 This article covers:
 
-* [Using a certificate and mobile provisioning profile in your Xcode build](#iosfile)
-* [Using preinstalled signing identities and mobile provisioning profiles in your Xcode or Xamarin.iOS build](#iosinstall)
-* [Building and signing Android and Xamarin.Android projects](#android)
+- [Using a certificate and mobile provisioning profile in your Xcode build](#iosfile)
+- [Using preinstalled signing identities and mobile provisioning profiles in your Xcode or Xamarin.iOS build](#iosinstall)
+- [Building and signing Android and Xamarin.Android projects](#android)
 
 <a name="iosfile"></a>
 
@@ -53,18 +53,18 @@ This article covers:
 
 4.  Next, go to Azure Pipelines / TFS and open your Xcode or Xamarin.iOS build pipeline and go to the **Variables** tab. Here, enter the password for the .p12 file:
 
-    * **P12_PWD**: Password to the .p12 file in its unencrypted form. _Be sure to click the "lock" icon._ This will secure your password and obscure it in all logs.
+    - **P12_PWD**: Password to the .p12 file in its unencrypted form. _Be sure to click the "lock" icon._ This will secure your password and obscure it in all logs.
       ![Xcode Build settings](media/secure-certs/secure-certs-10.png)
 
 5.  Finally, update your Xcode or Xamarin.iOS step with references to these two files. The build step will automatically determine the correct "signing identity" based on the contents of the .p12, create a temporary keychain with the .p12 in it and use that exclusively for this build, install the mobile provisioning profile, determine the correct UUID based on the contents of the .mobileprovision profile, and then remove everything after the build.
 
     Enter the following values under the **Signing & Provisioning** category for the Xcode or Xamarin.iOS build task:
 
-    * **Override Using**: File Contents
-    * **P12 Certificate File**: Path to the .p12 file in the repository
-    * **P12 Password**: $(P12_PWD)
-    * **Provisioning Profile File**: Path to the .mobileprovision file in the repository
-    * **Remove Profile After Build**: Checked if you want the provisioning profile to be removed from the system after the build. Only check this if you will have one agent that only runs this build, as it is installed in a global location and could be accessed by other builds.
+    - **Override Using**: File Contents
+    - **P12 Certificate File**: Path to the .p12 file in the repository
+    - **P12 Password**: \$(P12_PWD)
+    - **Provisioning Profile File**: Path to the .mobileprovision file in the repository
+    - **Remove Profile After Build**: Checked if you want the provisioning profile to be removed from the system after the build. Only check this if you will have one agent that only runs this build, as it is installed in a global location and could be accessed by other builds.
 
       ![Xcode Build settings](media/secure-certs/secure-certs-11.png)
 
@@ -93,28 +93,28 @@ You can add an extra layer of security by to your project by encrypting your .p1
 
     1.  Open your Xcode or Xamarin.iOS build pipeline and go to the **Variables** tab and enter the following:
 
-        * **P12**: Path to your encrypted .p12 file in source control.
-        * **P12_PWD**: Password to the unencrypted .p12 file. _Be sure to click the "lock" icon._ This will secure your password and obscure it in all logs.
-        * **MOB_PROV**: Path to your encrypted mobile provisioning profile.
-        * **ENC_PWD**: The passphrase you used to encrypt the .p12 and .mobileprovision files. If you used two different passphrase you'll need two variables. Again, _be sure to click the "lock" icon._
+        - **P12**: Path to your encrypted .p12 file in source control.
+        - **P12_PWD**: Password to the unencrypted .p12 file. _Be sure to click the "lock" icon._ This will secure your password and obscure it in all logs.
+        - **MOB_PROV**: Path to your encrypted mobile provisioning profile.
+        - **ENC_PWD**: The passphrase you used to encrypt the .p12 and .mobileprovision files. If you used two different passphrase you'll need two variables. Again, _be sure to click the "lock" icon._
           ![Variables](media/secure-certs/secure-certs-3.png)
 
     2.  Under the **Build** tab in your build pipeline, add two **Decrypt File** (OpenSSL) steps and move these to the top of your build pipeline.
 
     3.  Now, enter the proper information using the variables you created above to decrypt the two files to a static filename.
-        * **Cypher**: The cypher you specified while encrypting. (Ex: des3)
-        * **Encrypted File**: $(P12) for one step and $(MOB_PROV) for the other
-        * **Passphrase**: $(ENC_PWD)
-        * **Decrypted File Path**: \_build.p12 for one step and \_build.mobileprovision for the other
+        - **Cypher**: The cypher you specified while encrypting. (Ex: des3)
+        - **Encrypted File**: $(P12) for one step and $(MOB_PROV) for the other
+        - **Passphrase**: \$(ENC_PWD)
+        - **Decrypted File Path**: \_build.p12 for one step and \_build.mobileprovision for the other
           ![Decrypt File settings](media/secure-certs/secure-certs-4.png)
 
 4.  Finally, update the Xcode Build step to reference the decrypted files.
 
-    * **Override Using**: File Contents
-    * **P12 Certificate File**: \_build.p12
-    * **P12 Password**: $(P12_PWD)
-    * **Provisioning Profile File**: \_build.mobileprovision
-    * **Remove Profile After Build**: Checked if you want the provisioning profile to be removed from the system after the build. Only check this if you will have one agent that only runs this build, as it is installed in a global location and could be accessed by other builds.
+    - **Override Using**: File Contents
+    - **P12 Certificate File**: \_build.p12
+    - **P12 Password**: \$(P12_PWD)
+    - **Provisioning Profile File**: \_build.mobileprovision
+    - **Remove Profile After Build**: Checked if you want the provisioning profile to be removed from the system after the build. Only check this if you will have one agent that only runs this build, as it is installed in a global location and could be accessed by other builds.
       ![Xcode Build settings](media/secure-certs/secure-certs-5.png)
 
     You are now all set! Any build agent that is running will now be able to securely build your app without any certificate management on the build machine itself. Simply repeat the process of adding different certificates and provisioning profiles to your source repository to enable separate dev, beta (ad hoc), and distribution builds.
@@ -152,20 +152,20 @@ Follow these steps:
 
 2.  Now update your Xcode or Xamarin.iOS build step with references to these two identifiers. Enter the following values under the **Signing & Provisioning** category for the Xcode or Xamarin.iOS build task:
 
-    * **Override Using**: Identifiers
-    * **Signing Identity**: Full signing identity you found using the security command above
-    * **Provisioning Profile UUID**: UUID of the provisioning profile from the filename above
+    - **Override Using**: Identifiers
+    - **Signing Identity**: Full signing identity you found using the security command above
+    - **Provisioning Profile UUID**: UUID of the provisioning profile from the filename above
 
 3)  Next, if you are running the build agent as a launch agent, you will need to set up the build to unlock the default keychain.
 
     1.  Go to the **Variables** tab and enter the following:
 
-        * **KEYCHAIN_PWD**: Password to your default keychain. This is normally the password for the user that is starting the agent. _Be sure to click the "lock" icon._
+        - **KEYCHAIN_PWD**: Password to your default keychain. This is normally the password for the user that is starting the agent. _Be sure to click the "lock" icon._
 
 2.  Update the Xcode step to unlock the keychain entering the following values under the **Signing & Provisioning** category for the Xcode or Xamarin.iOS build task:
 
-    * **Unlock Default Keychain**: Checked
-    * **Default Keychain Password**: $(KEYCHAIN_PWD)
+    - **Unlock Default Keychain**: Checked
+    - **Default Keychain Password**: \$(KEYCHAIN_PWD)
 
 <a name="android"></a>
 
@@ -195,11 +195,11 @@ Follow these steps:
 
     1.  Open your Android or Xamarin.iOS build pipeline and go to the **Variables** tab. Here we will enter the following:
 
-        * **KEYSTORE**: Path to your encrypted keystore file in source control.
-        * **KEYSTORE_PWD**: Password to the unencrypted keystore file. _Be sure to click the "lock" icon._ This will secure your password and obscure it in all logs.
-        * **KEY**: The key alias for the signing certificate you generated.
-        * **KEY_PWD**: The password for the key associated with the specified alias. _Again, be sure to click the "lock" icon._
-        * **ENC_PWD**: The passphrase you used to encrypt the keystore file. _Be sure to click the "lock" icon._
+        - **KEYSTORE**: Path to your encrypted keystore file in source control.
+        - **KEYSTORE_PWD**: Password to the unencrypted keystore file. _Be sure to click the "lock" icon._ This will secure your password and obscure it in all logs.
+        - **KEY**: The key alias for the signing certificate you generated.
+        - **KEY_PWD**: The password for the key associated with the specified alias. _Again, be sure to click the "lock" icon._
+        - **ENC_PWD**: The passphrase you used to encrypt the keystore file. _Be sure to click the "lock" icon._
 
         ![Android build vars](media/secure-certs/secure-certs-8.png)
 
@@ -207,10 +207,10 @@ Follow these steps:
 
 5.  Now, enter the proper information using the variables you created above to decrypt the file to a static filename.
 
-    * **Cypher**: The cypher you specified while encrypting. (Ex: des3)
-    * **Encrypted File**: $(KEYSTORE)
-    * **Passphrase**: $(ENC_PWD)
-    * **Decrypted File Path**: \_build.keystore
+    - **Cypher**: The cypher you specified while encrypting. (Ex: des3)
+    - **Encrypted File**: \$(KEYSTORE)
+    - **Passphrase**: \$(ENC_PWD)
+    - **Decrypted File Path**: \_build.keystore
 
       ![Decrypt keystore settings](media/secure-certs/secure-certs-9.png)
 
@@ -226,10 +226,10 @@ Follow these steps:
 
     2.  If you are using the **Android Signing** task, you can add the following under **Jarsign Options**:
 
-        * **Keystore File**: \_build.keystore
-        * **Keystore Password**: $(KEYSTORE_PWD)
-        * **Key Alias**: $(KEY)
-        * **KEY Password**: $(KEY_PWD)
+        - **Keystore File**: \_build.keystore
+        - **Keystore Password**: \$(KEYSTORE_PWD)
+        - **Key Alias**: \$(KEY)
+        - **KEY Password**: \$(KEY_PWD)
 
 You are now all set! Any build agent will now be able to securely build your app without any certificate management on the build machine itself.
 

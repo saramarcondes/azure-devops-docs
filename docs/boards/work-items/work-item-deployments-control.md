@@ -49,5 +49,5 @@ When opening the work item, you can see the stages the release is being deployed
 
 ## Related articles
 
-* [Create a release](../../pipelines/release/define-multistage-release-process.md)
-* [Associate work items to commits](../backlogs/connect-work-items-to-git-dev-ops.md)
+- [Create a release](../../pipelines/release/define-multistage-release-process.md)
+- [Associate work items to commits](../backlogs/connect-work-items-to-git-dev-ops.md)

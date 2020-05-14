@@ -15,12 +15,12 @@ Module path: `TFS/VersionControl/Contracts`
 
 ### Members
 
-* `aheadCount`: number.
+- `aheadCount`: number.
 
-* `behindCount`: number.
+- `behindCount`: number.
 
-* `commit`: [GitCommitRef](../../../TFS/VersionControl/Contracts/GitCommitRef.md).
+- `commit`: [GitCommitRef](../../../TFS/VersionControl/Contracts/GitCommitRef.md).
 
-* `isBaseVersion`: boolean.
+- `isBaseVersion`: boolean.
 
-* `name`: string.
+- `name`: string.

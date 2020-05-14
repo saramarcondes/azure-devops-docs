@@ -128,14 +128,14 @@ The answer is no. While this task itself will work behind a web proxy <a href="~
 
 To do so, you can either:
 
-* Set the environment variables `http_proxy`/`https_proxy` and optionally `no_proxy` to your proxy settings. See [npm config](https://docs.npmjs.com/misc/config#https-proxy) for details. Note that these are commonly used variables which other non-npm tools (e.g. curl) may also use.
+- Set the environment variables `http_proxy`/`https_proxy` and optionally `no_proxy` to your proxy settings. See [npm config](https://docs.npmjs.com/misc/config#https-proxy) for details. Note that these are commonly used variables which other non-npm tools (e.g. curl) may also use.
 
-* Add the proxy settings to the [npm configuration](https://docs.npmjs.com/misc/config), either manually, by using [npm config set](https://docs.npmjs.com/cli/config#set), or by setting [environment variables](https://docs.npmjs.com/misc/config#environment-variables) prefixed with `NPM_CONFIG_`.
+- Add the proxy settings to the [npm configuration](https://docs.npmjs.com/misc/config), either manually, by using [npm config set](https://docs.npmjs.com/cli/config#set), or by setting [environment variables](https://docs.npmjs.com/misc/config#environment-variables) prefixed with `NPM_CONFIG_`.
 
   > **Caution:**  
   > npm task runners may not be compatible with all methods of proxy configuration supported by npm.
 
-* Specify the proxy with a command line flag when calling npm
+- Specify the proxy with a command line flag when calling npm
   ```YAML
   - script: npm ci --https-proxy $(agent.proxyurl)
   ```

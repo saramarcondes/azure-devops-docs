@@ -15,6 +15,6 @@ Module path: `TFS/VersionControl/Contracts`
 
 ### Members
 
-* `message`: string.
+- `message`: string.
 
-* `policyName`: string.
+- `policyName`: string.

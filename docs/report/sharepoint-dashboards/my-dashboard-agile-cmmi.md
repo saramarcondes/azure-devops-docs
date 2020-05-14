@@ -17,9 +17,9 @@ ms.date: 12/30/2016
 
 You can monitor your tasks and quickly access work items that are assigned to you by using My Dashboard. You can use this dashboard to answer the following questions:
 
-* What is the next set of tasks, bugs, or test cases that I should act on?
+- What is the next set of tasks, bugs, or test cases that I should act on?
 
-* What is the status of the team's most recent builds?
+- What is the status of the team's most recent builds?
 
   **Requirements**
 
@@ -45,9 +45,9 @@ You can use My Dashboard to review and access your work items. To learn about th
 
 For the reports that My Dashboard shows to be useful and accurate, the team must perform the following activities:
 
-* Define tasks, bugs, and test cases, and assign each work item to the team member who is currently working to resolve or close it.
+- Define tasks, bugs, and test cases, and assign each work item to the team member who is currently working to resolve or close it.
 
-* Update the **State** of each work item the team fixes, verifies, and closes it.
+- Update the **State** of each work item the team fixes, verifies, and closes it.
 
 ## Related notes
 

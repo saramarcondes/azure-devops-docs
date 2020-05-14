@@ -25,7 +25,7 @@ You can use a self-signed Test Certificate. In this case, the
 automation agent will not validate the authenticity of the
 certificate as being issued by a trusted certification authority.
 
-* **Azure Classic Virtual Machines**. When you create a
+- **Azure Classic Virtual Machines**. When you create a
   [classic virtual machine](https://azure.microsoft.com/documentation/articles/virtual-machines-windows-tutorial-classic-portal/)
   from the Azure portal, the virtual machine is already set up for
   WinRM over HTTPS, with the default port 5986 already opened in the firewall
@@ -35,7 +35,7 @@ certificate as being issued by a trusted certification authority.
   [Azure Resource Group Deployment](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2)
   task.
 
-* **Azure Resource Group**. If you have an
+- **Azure Resource Group**. If you have an
   [Azure Resource Group](https://azure.microsoft.com/documentation/articles/virtual-machines-windows-hero-tutorial/)
   already defined in the Azure portal, you must configure it to use the WinRM HTTPS
   protocol. You need to open port 5986 in the firewall, and install a

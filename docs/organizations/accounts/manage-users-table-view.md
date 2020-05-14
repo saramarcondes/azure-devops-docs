@@ -19,9 +19,9 @@ Learn how to add users to your organization and specify the level of features th
 
 The following types of users can join your organization for free:
 
-* Five users who get [Basic features](https://azure.microsoft.com/services/devops/compare-features/), such as version control and tools for Agile, Java, and build and release management.
-* Unlimited users who get [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/), such as working with your backlog, work items, and queries.
-* Unlimited [Visual Studio subscribers](https://visualstudio.microsoft.com/team-services/compare-features/) who also get Basic features.
+- Five users who get [Basic features](https://azure.microsoft.com/services/devops/compare-features/), such as version control and tools for Agile, Java, and build and release management.
+- Unlimited users who get [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/), such as working with your backlog, work items, and queries.
+- Unlimited [Visual Studio subscribers](https://visualstudio.microsoft.com/team-services/compare-features/) who also get Basic features.
 
 Need [more users with Basic features or Visual Studio subscriptions](../billing/buy-basic-access-add-users.md)?
 
@@ -40,10 +40,10 @@ From your web browser you can view and edit certain user information. From the A
 
 The Users view shows key information per user in a table. In this view, you can do the following tasks:
 
-* See and modify assigned service extensions and access levels.
-* Multi-select users and bulk edit their extensions and access.
-* Filter by searching for partial user names, access level, or extension names.
-* See the last access date for each user. This can help you choose users to remove access from or lower access to stay within your license limits.
+- See and modify assigned service extensions and access levels.
+- Multi-select users and bulk edit their extensions and access.
+- Filter by searching for partial user names, access level, or extension names.
+- See the last access date for each user. This can help you choose users to remove access from or lower access to stay within your license limits.
 
 > [!NOTE]  
 > To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
@@ -64,11 +64,11 @@ The Users view shows key information per user in a table. In this view, you can 
 
     In the context menu, select one of the following options:
 
-    * **Change access level**
-    * **Manage user**
-    * **Resend invite**
-    * **Remove direct assignments**
-    * **Remove from organization** (deletes user)
+    - **Change access level**
+    - **Manage user**
+    - **Resend invite**
+    - **Remove direct assignments**
+    - **Remove from organization** (deletes user)
 
       ![Select Users, and then select an item in the context menu](media/manage-users/manage-users-show-context-menu-preview.png)
 
@@ -88,11 +88,11 @@ The Users view shows key information per user in a table. In this view, you can 
 
     In the context menu, select one of the following options:
 
-    * **Change access level**
-    * **Manage user**
-    * **Resend invite**
-    * **Remove direct assignments**
-    * **Remove from organization** (deletes user)
+    - **Change access level**
+    - **Manage user**
+    - **Resend invite**
+    - **Remove direct assignments**
+    - **Remove from organization** (deletes user)
 
       ![Select Users, and then select an item in the context menu](media/manage-users/manage-users-show-context-menu-vert.png)
 
@@ -115,9 +115,9 @@ az devops user update  --license-type {advanced, earlyAdopter, express, professi
 
 #### Parameters
 
-* **license-type**: License type for the user. Accepted values are advanced, earlyAdopter, express, professional, and stakeholder.
-* **user**: The email address or ID of the user.
-* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **license-type**: License type for the user. Accepted values are advanced, earlyAdopter, express, professional, and stakeholder.
+- **user**: The email address or ID of the user.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 
 #### Example
 
@@ -144,9 +144,9 @@ az devops user show --user [--org]
 
 #### Parameters
 
-* **user**: The email address or ID of the user.
-* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-*
+- **user**: The email address or ID of the user.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+-
 
 #### Example
 
@@ -169,8 +169,8 @@ Access levels control which features are available to users. Permissions control
 
 ## Related articles
 
-* [Connect to a project](../../organizations/projects/connect-to-projects.md)
-* [Change individual permissions or grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
-* [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
-* [Delete users from Azure DevOps](delete-organization-users.md)
-* [Export a list of users and their access levels](../security/export-users-audit-log.md)
+- [Connect to a project](../../organizations/projects/connect-to-projects.md)
+- [Change individual permissions or grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
+- [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
+- [Delete users from Azure DevOps](delete-organization-users.md)
+- [Export a list of users and their access levels](../security/export-users-audit-log.md)

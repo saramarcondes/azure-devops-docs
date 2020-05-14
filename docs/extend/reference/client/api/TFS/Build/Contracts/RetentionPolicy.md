@@ -16,14 +16,14 @@ Module path: `TFS/Build/Contracts`
 
 ### Members
 
-* `artifacts`: string[].
+- `artifacts`: string[].
 
-* `branches`: string[].
+- `branches`: string[].
 
-* `daysToKeep`: number.
+- `daysToKeep`: number.
 
-* `deleteBuildRecord`: boolean.
+- `deleteBuildRecord`: boolean.
 
-* `deleteTestResults`: boolean.
+- `deleteTestResults`: boolean.
 
-* `minimumToKeep`: number.
+- `minimumToKeep`: number.

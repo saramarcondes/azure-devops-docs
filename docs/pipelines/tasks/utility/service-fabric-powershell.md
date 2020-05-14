@@ -21,10 +21,10 @@ Runs any PowerShell command or script in a PowerShell session that has a Service
 
 ### Service Fabric
 
-* This task uses a Service Fabric installation to connect and
+- This task uses a Service Fabric installation to connect and
   deploy to a Service Fabric cluster.
 
-* [Azure Service Fabric Core SDK](https://www.microsoft.com/web/handlers/webpi.ashx?command=getinstallerredirect&appid=MicrosoftAzure-ServiceFabric-CoreSDK) on the build agent.
+- [Azure Service Fabric Core SDK](https://www.microsoft.com/web/handlers/webpi.ashx?command=getinstallerredirect&appid=MicrosoftAzure-ServiceFabric-CoreSDK) on the build agent.
 
 ::: moniker range="azure-devops"
 

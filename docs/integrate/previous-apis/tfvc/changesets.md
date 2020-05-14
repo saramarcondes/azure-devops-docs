@@ -32,7 +32,7 @@ GET https://{instance}/DefaultCollection/_apis/tfvc/changesets?api-version={vers
 | instance | string | | TFS server name ({server:port}).
 | Query
 | api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| searchCriteria.itemPath | string | $/ | Changesets for the item at this path.
+| searchCriteria.itemPath | string | \$/ | Changesets for the item at this path.
 | searchCriteria.version | string | | Changesets at this [version](./items.md#getaspecificversion) of the item.
 | searchCriteria.versionType | string | branch | If the version is specified, the [type of version](./items.md#getaspecificversion) that is used.
 | searchCriteria.versionOption | string | | If the version is specified, an [optional modifier for the version](./items.md#getaspecificversion).
@@ -43,7 +43,7 @@ GET https://{instance}/DefaultCollection/_apis/tfvc/changesets?api-version={vers
 | searchCriteria.toDate | [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) | | Date and time of the latest changesets to return.
 | $top | int | 100 | The maximum number of results to return.
 | $skip | int | 0 | Number of results to skip.
-| $orderby | "id asc" or "id desc" | id desc | Results are sorted by ID in descending order by default. Use `id asc` to sort by ID in ascending order.
+| \$orderby | "id asc" or "id desc" | id desc | Results are sorted by ID in descending order by default. Use `id asc` to sort by ID in ascending order.
 | maxCommentLength | int | full comment | Return up to this many characters of the comment.
 
 #### Sample request

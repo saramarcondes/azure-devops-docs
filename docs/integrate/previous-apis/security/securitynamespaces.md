@@ -20,8 +20,8 @@ Security namespaces are used to store [access control lists](./acls.md) (ACLs) o
 
 ### Local vs. remote
 
-* Security namespaces may have their data mastered in one microservice, but still be visible in other microservices.
-* If a security namespace's data is mastered in microservice X, it is said to be **local** to that microservice. Otherwise, it is said to be **remote**.
+- Security namespaces may have their data mastered in one microservice, but still be visible in other microservices.
+- If a security namespace's data is mastered in microservice X, it is said to be **local** to that microservice. Otherwise, it is said to be **remote**.
 
 ## Get a list of security namespaces
 

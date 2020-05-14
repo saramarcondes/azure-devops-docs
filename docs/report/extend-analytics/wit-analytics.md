@@ -50,19 +50,19 @@ All additional URL parts are specified as an additional part of the query string
 
 ::: moniker range="azure-devops"
 
-* You will need to have a project in Azure DevOps. If you don't have one, see [Sign up for free](../../boards/get-started/sign-up-invite-teammates.md).
-* If you haven't been added as a project member, [get added now](/azure/devops/organizations/accounts/add-organization-users).
-* Have the **View Analytics** permission set to **Allow**. See [Grant permissions to access Analytics](/azure/devops/report/powerbi/analytics-security).
-* You will have to have defined several work items. See [Plan and track work](../../boards/get-started/plan-track-work.md).  
+- You will need to have a project in Azure DevOps. If you don't have one, see [Sign up for free](../../boards/get-started/sign-up-invite-teammates.md).
+- If you haven't been added as a project member, [get added now](/azure/devops/organizations/accounts/add-organization-users).
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions to access Analytics](/azure/devops/report/powerbi/analytics-security).
+- You will have to have defined several work items. See [Plan and track work](../../boards/get-started/plan-track-work.md).  
   ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-* Have [enabled or installed Analytics](../dashboards/analytics-extension.md). You must be an account owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions or enable the service.
-* You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
-* If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project).
-* Have the **View Analytics** permission set to **Allow**. See [Grant permissions to access Analytics](/azure/devops/report/powerbi/analytics-security).
-* You will have to have defined several work items. See [Plan and track work](../../boards/get-started/plan-track-work.md).
+- Have [enabled or installed Analytics](../dashboards/analytics-extension.md). You must be an account owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions or enable the service.
+- You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
+- If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project).
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions to access Analytics](/azure/devops/report/powerbi/analytics-security).
+- You will have to have defined several work items. See [Plan and track work](../../boards/get-started/plan-track-work.md).
   ::: moniker-end
 
 <a id="basic-query" />
@@ -79,9 +79,9 @@ You construct a basic query by entering the OData URL into a [supported web brow
 
 You construct a basic query by entering the OData URL into a [supported web browser](/azure/devops/server/compatibility#supported-browsers). In the examples provided, make the following replacements:
 
-* `analytics.dev.azure.com` with `{ServerName}:{Port}/tfs/`
-* `{OrganizationName}` with your project collection name (default is DefaultCollection)
-* `{ProjectName}` with the name of the project that you want to query.
+- `analytics.dev.azure.com` with `{ServerName}:{Port}/tfs/`
+- `{OrganizationName}` with your project collection name (default is DefaultCollection)
+- `{ProjectName}` with the name of the project that you want to query.
 
 ::: moniker-end
 
@@ -425,7 +425,7 @@ Analytics forces paging when query results exceed 10000 records. In that case, y
 
 ## Related articles
 
-* [Query guidelines](odata-query-guidelines.md)
-* [Supported OData features](odata-supported-features.md)
-* [OData v4.0 specification](https://www.odata.org/documentation/)
-* [OData v4.0 Part 2: URL Conventions Plus Errata 02](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html)
+- [Query guidelines](odata-query-guidelines.md)
+- [Supported OData features](odata-supported-features.md)
+- [OData v4.0 specification](https://www.odata.org/documentation/)
+- [OData v4.0 Part 2: URL Conventions Plus Errata 02](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html)

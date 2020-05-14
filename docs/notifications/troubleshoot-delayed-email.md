@@ -23,7 +23,7 @@ An email is generated when an [event](oob-supported-event-types.md) occurs withi
 
 If you're not receiving an expected notification email, it could be for the following reason:
 
-* Your organization creates a high volume of notifications
+- Your organization creates a high volume of notifications
 
 Do the following step to determine if the issue resolves.
 

@@ -55,10 +55,10 @@ Also, machine-level caches and configuration persist from run to run, which can 
 
 You can install the agent on Linux, macOS, or Windows machines. You can also install an agent on a Docker container. For more information about installing a self-hosted agent, see:
 
-* [macOS agent](v2-osx.md)
-* [Linux agent](v2-linux.md) (x64, ARM, RHEL6)
-* [Windows agent](v2-windows.md) (x64, x86)
-* [Docker agent](docker.md)
+- [macOS agent](v2-osx.md)
+- [Linux agent](v2-linux.md) (x64, ARM, RHEL6)
+- [Windows agent](v2-windows.md) (x64, x86)
+- [Docker agent](docker.md)
 
 ::: moniker-end
 
@@ -66,11 +66,11 @@ You can install the agent on Linux, macOS, or Windows machines. You can also ins
 
 You can install the agent on Linux, macOS, or Windows machines. For more information about installing a self-hosted agent, see:
 
-* [macOS agent](v2-osx.md)
-* [Red Hat agent](v2-linux.md)
-* [Ubuntu 14.04 agent](v2-linux.md)
-* [Ubuntu 16.04 agent](v2-linux.md)
-* [Windows agent v1](v1-windows.md)
+- [macOS agent](v2-osx.md)
+- [Red Hat agent](v2-linux.md)
+- [Ubuntu 14.04 agent](v2-linux.md)
+- [Ubuntu 16.04 agent](v2-linux.md)
+- [Windows agent v1](v1-windows.md)
 
 ::: moniker-end
 
@@ -107,7 +107,7 @@ Microsoft provides a free tier of service by default in every organization that 
 
 You might need more parallel jobs to use multiple agents at the same time:
 
-* [Parallel jobs in TFS](../licensing/concurrent-pipelines-tfs.md)
+- [Parallel jobs in TFS](../licensing/concurrent-pipelines-tfs.md)
 
 ::: moniker-end
 
@@ -174,15 +174,15 @@ az pipelines agent list --pool-id
 
 #### Parameters
 
-* **pool-id**: (Required) The agent pool containing the agents.
-* **agent-name**: Filter on agent name.
-* **demands**: Filter by demands the agents can satisfy. Comma separated list.
-* **detect**: Automatically detect organization. Accepted values: **false**, **true**
-* **include-assigned-request**: Whether to include details about the agents' current work. Accepted values: **false**, **true**
-* **include-capabilities**: Whether to include the agents' capabilities in the response. Accepted values: **false**, **true**
-* **include-last-completed-request**: Whether to include details about the agents' most recent completed work. Accepted values: **false**, **true**
-* **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
-* **subscription**: Name or ID of subscription. You can configure the default subscription using az account set -s NAME_OR_ID.
+- **pool-id**: (Required) The agent pool containing the agents.
+- **agent-name**: Filter on agent name.
+- **demands**: Filter by demands the agents can satisfy. Comma separated list.
+- **detect**: Automatically detect organization. Accepted values: **false**, **true**
+- **include-assigned-request**: Whether to include details about the agents' current work. Accepted values: **false**, **true**
+- **include-capabilities**: Whether to include the agents' capabilities in the response. Accepted values: **false**, **true**
+- **include-last-completed-request**: Whether to include details about the agents' most recent completed work. Accepted values: **false**, **true**
+- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+- **subscription**: Name or ID of subscription. You can configure the default subscription using az account set -s NAME_OR_ID.
 
 #### Example
 
@@ -213,14 +213,14 @@ az pipelines agent show --agent-id
 
 #### Parameters
 
-* **agent-id** or **id**: (Required) The agent ID to get information about.
-* **pool-id**: (Required) The agent pool containing the agents.
-* **detect**: Automatically detect organization. Accepted values: **false**, **true**
-* **include-assigned-request**: Whether to include details about the agents' current work. Accepted values: **false**, **true**
-* **include-capabilities**: Whether to include the agents' capabilities in the response. Accepted values: **false**, **true**
-* **include-last-completed-request**: Whether to include details about the agents' most recent completed work. Accepted values: **false**, **true**
-* **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
-* **subscription**: Name or ID of subscription. You can configure the default subscription using az account set -s NAME_OR_ID.
+- **agent-id** or **id**: (Required) The agent ID to get information about.
+- **pool-id**: (Required) The agent pool containing the agents.
+- **detect**: Automatically detect organization. Accepted values: **false**, **true**
+- **include-assigned-request**: Whether to include details about the agents' current work. Accepted values: **false**, **true**
+- **include-capabilities**: Whether to include the agents' capabilities in the response. Accepted values: **false**, **true**
+- **include-last-completed-request**: Whether to include details about the agents' most recent completed work. Accepted values: **false**, **true**
+- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+- **subscription**: Name or ID of subscription. You can configure the default subscription using az account set -s NAME_OR_ID.
 
 #### Example
 
@@ -322,9 +322,9 @@ The payload of the messages exchanged between the agent and Azure Pipelines/TFS 
 
 Here is a common communication pattern between the agent and TFS.
 
-* An agent pool administrator joins the agent to an agent pool, and the credentials of the service account (for Windows) or the saved user name and password (for Linux and macOS) are used to initiate communication with TFS. The agent uses these credentials to listen to the job queue.
+- An agent pool administrator joins the agent to an agent pool, and the credentials of the service account (for Windows) or the saved user name and password (for Linux and macOS) are used to initiate communication with TFS. The agent uses these credentials to listen to the job queue.
 
-* The agent does not use asymmetric key encryption while communicating with the server. However, you can [use HTTPS to secure the communication](/azure/devops/server/admin/websitesettings) between the agent and TFS.
+- The agent does not use asymmetric key encryption while communicating with the server. However, you can [use HTTPS to secure the communication](/azure/devops/server/admin/websitesettings) between the agent and TFS.
 
 ::: moniker-end
 
@@ -539,9 +539,9 @@ You can view the version of an agent by navigating to **Agent pools** and select
 
 In many cases, yes. Specifically:
 
-* If you use a self-hosted agent, you can run incremental builds. For example, if you define a pipeline that does not clean the repo and does not perform a clean build, your builds will typically run faster. When you use a Microsoft-hosted agent, you don't get these benefits because the agent is destroyed after the build or release pipeline is completed.
+- If you use a self-hosted agent, you can run incremental builds. For example, if you define a pipeline that does not clean the repo and does not perform a clean build, your builds will typically run faster. When you use a Microsoft-hosted agent, you don't get these benefits because the agent is destroyed after the build or release pipeline is completed.
 
-* A Microsoft-hosted agent can take longer to start your build. While it often takes just a few seconds for your job to be assigned to a Microsoft-hosted agent, it can sometimes take several minutes for an agent to be allocated depending on the load on our system.
+- A Microsoft-hosted agent can take longer to start your build. While it often takes just a few seconds for your job to be assigned to a Microsoft-hosted agent, it can sometimes take several minutes for an agent to be allocated depending on the load on our system.
 
 ### Can I install multiple self-hosted agents on the same machine?
 
@@ -557,7 +557,7 @@ You might also run into problems if parallel build jobs are using the same singl
 
 For more information about agents, see the following modules from the [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops/) learning path.
 
-* [Choose a Microsoft-hosted or self-hosted build agent](/learn/modules/host-build-agent/2-choose-a-build-agent)
-* [Host your own build agent in Azure Pipelines](/learn/modules/host-build-agent/)
+- [Choose a Microsoft-hosted or self-hosted build agent](/learn/modules/host-build-agent/2-choose-a-build-agent)
+- [Host your own build agent in Azure Pipelines](/learn/modules/host-build-agent/)
 
 ::: moniker-end

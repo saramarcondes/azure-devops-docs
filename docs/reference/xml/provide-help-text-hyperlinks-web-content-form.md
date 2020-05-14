@@ -26,21 +26,21 @@ To modify an existing WIT, you modify the XML definition file for the WIT and th
 You can provide Help text in one of two ways. In the first method, you add the `HELPTEXT` element as a child to the `FIELD` element in the `FIELDS` section of the type definition. By using `HELPTEXT`, you create the tooltip for the field. You are limited to 255 characters with this method.
 
 ```xml
-<FIELD name="Sub-Title" refname="ACME.ACE.ImpactStatement" type="HTML" >  
-<HELPTEXT>Provide information about the impact to the ACE organization. </HELPTEXT>  
-</FIELD>  
+<FIELD name="Sub-Title" refname="ACME.ACE.ImpactStatement" type="HTML" >
+<HELPTEXT>Provide information about the impact to the ACE organization. </HELPTEXT>
+</FIELD>
 ```
 
 In the second method, you specify stand-alone text by using the `LabelText` and `Text` child elements. In this method, you can add as much information as you want, and the text is always present on the form. No user action is required. You can also add an optional link by using the `Link` element to more information, as shown in the following example.
 
 ```xml
 <Control FieldName=" ACME.ACE.ImpactStatement" Type="HTMLControl" Label="Impact" LabelPosition="Left">
-      <LabelText>  
-      <Text>Provide information about the impact to the ACE organization. Specifically address the following: customer segment, target strategic opportunity, resources required, and time dependencies. For more detailed information, see the Impact Statement specification at:  
-         <Link OpenInNewWindow="true" UrlRoot=http://ACE.ImpactStatement.aspx />  
-      </Text>  
-      </LabelText>  
-</Control>  
+      <LabelText>
+      <Text>Provide information about the impact to the ACE organization. Specifically address the following: customer segment, target strategic opportunity, resources required, and time dependencies. For more detailed information, see the Impact Statement specification at:
+         <Link OpenInNewWindow="true" UrlRoot=http://ACE.ImpactStatement.aspx />
+      </Text>
+      </LabelText>
+</Control>
 ```
 
 ## <a name="LabelControl"></a> Add stand-alone text and hyperlink field labels
@@ -52,7 +52,7 @@ You can add text to a work item form that is not associated with any work item f
 The following example adds the plain text "Fill in the details of the bug here. Fields that are not required are recommended to be filled in." to the work item field.
 
 ```xml
-<Control Type="LabelControl" Label="Fill in the details of the bug here. Fields that are not required are recommended to be filled in." />  
+<Control Type="LabelControl" Label="Fill in the details of the bug here. Fields that are not required are recommended to be filled in." />
 ```
 
 #### Example: hyperlink field label
@@ -60,14 +60,14 @@ The following example adds the plain text "Fill in the details of the bug here. 
 The following example illustrates how to add a hyperlink to a field label.
 
 ```xml
-<Control Type="FieldControl" FieldName="System.Title" LabelPosition="Left" Label="Title 1"  
-      <LabelText>  
-      <Text>  
-         <Link UrlRoot="http://www.live.com/" />  
-               Title 2  
-      </Text>  
-      </LabelText>  
-</Control>  
+<Control Type="FieldControl" FieldName="System.Title" LabelPosition="Left" Label="Title 1"
+      <LabelText>
+      <Text>
+         <Link UrlRoot="http://www.live.com/" />
+               Title 2
+      </Text>
+      </LabelText>
+</Control>
 ```
 
 > [!NOTE]
@@ -78,16 +78,16 @@ The following example illustrates how to add a hyperlink to a field label.
 The following example illustrates how to add a hyperlink to part of a field label. In this example, the URL is determined by the values that are assigned to the `Param` elements based on the specific work item.
 
 ```xml
-<Control Type="FieldControl" FieldName="System.IterationPath">  
-      <LabelText LabelPosition="Left">  
-      <Text>  
-         <Link UrlRoot="@ProcessGuidance" UrlPath="{0}.html">  
-               <Param Index="0" vValue"System.WorkItemType"/>         </Link>  
-               Iteration Path  
-      </Text>  
-      <Text> (must be 3 levels deep)</Text>  
-      </LabelText>  
-</Control>  
+<Control Type="FieldControl" FieldName="System.IterationPath">
+      <LabelText LabelPosition="Left">
+      <Text>
+         <Link UrlRoot="@ProcessGuidance" UrlPath="{0}.html">
+               <Param Index="0" vValue"System.WorkItemType"/>         </Link>
+               Iteration Path
+      </Text>
+      <Text> (must be 3 levels deep)</Text>
+      </LabelText>
+</Control>
 ```
 
 #### Example: hyperlink text label
@@ -98,14 +98,14 @@ Hyperlink Text Label
 The following example illustrates how to add a hyperlink to displayed text in a work item form.
 
 ```xml
-<Group>  
-      <Column PercentWidth="100">  
-      <!-- Standalone label control 2 -->  
-      <Control Type="LabelControl" Label="How do I use this work item?">  
-         <Link UrlRoot="http://www.live.com"></Link>  
-      </Control>  
-      </Column>  
-</Group>  
+<Group>
+      <Column PercentWidth="100">
+      <!-- Standalone label control 2 -->
+      <Control Type="LabelControl" Label="How do I use this work item?">
+         <Link UrlRoot="http://www.live.com"></Link>
+      </Control>
+      </Column>
+</Group>
 ```
 
 #### Example: combining text and hyperlinks in a single label
@@ -116,24 +116,24 @@ Combining Text and Hyperlinks in a Single Label
 The following example illustrates how to add two hyperlinks to parts of a label on a work item form.
 
 ```xml
-<Group>  
-      <Column PercentWidth="100">  
-      <!-- Standalone label control 3 -->  
-      <Control Type="LabelControl" Name="Microsoft.VSTS.Common.GuidanceLabel3">  
-         <LabelText>  
-               <Text>Click here for </Text>  
-               <Text>  
-               <Link UrlRoot="http://www.msn.com"></Link>  
-               work item guidance</Text>  
-               <Text> or here for </Text>  
-               <Text>  
-               <Link UrlRoot="http://www.msdn.com"></Link>  
-               process guidance  
-               </Text>  
-         </LabelText>  
-      </Control>  
-      </Column>  
-</Group>  
+<Group>
+      <Column PercentWidth="100">
+      <!-- Standalone label control 3 -->
+      <Control Type="LabelControl" Name="Microsoft.VSTS.Common.GuidanceLabel3">
+         <LabelText>
+               <Text>Click here for </Text>
+               <Text>
+               <Link UrlRoot="http://www.msn.com"></Link>
+               work item guidance</Text>
+               <Text> or here for </Text>
+               <Text>
+               <Link UrlRoot="http://www.msdn.com"></Link>
+               process guidance
+               </Text>
+         </LabelText>
+      </Control>
+      </Column>
+</Group>
 ```
 
 #### Example: parameter-generated hyperlink field label
@@ -141,10 +141,10 @@ The following example illustrates how to add two hyperlinks to parts of a label 
 The following example illustrates how to add a hyperlink to a field label that is generated from parameter values that are evaluated for the open work item.
 
 ```xml
-<Control Type="FieldControl" FieldName="System.State" Label="&State:" LabelPosition="Left">  
-      <Link OpenInNewWindow="true" UrlRoot="http://" UrlPath="myserver.com:8080/tfs/myproject/{0}/_workItems#_a=edit&id=">      <Param Index="0" Value="System.State" Type ="Original"/>  
-      </Link>  
-</Control>  
+<Control Type="FieldControl" FieldName="System.State" Label="&State:" LabelPosition="Left">
+      <Link OpenInNewWindow="true" UrlRoot="http://" UrlPath="myserver.com:8080/tfs/myproject/{0}/_workItems#_a=edit&id=">      <Param Index="0" Value="System.State" Type ="Original"/>
+      </Link>
+</Control>
 ```
 
 ## <a name="WebBrowserControl"></a> Displaying web content
@@ -156,17 +156,17 @@ You can use the `Type` attribute `WebpageControl` option to display Web content 
 The following example shows how you can embed the content from a Web page by providing the URL to the page by using the `WebpageControlOptions` and `Link` elements.
 
 ```xml
-<Tab Label="Web">  
-      <Group>  
-      <Column PercentWidth="100">  
-         <Control Type="WebpageControl" Name="WssPortalPage" Label="WssPortalPage" LabelPosition="Top" >  
-               <WebpageControlOptions AllowScript="true">  
-               <Link UrlRoot="http://www.msdn.com" />  
-               </WebpageControlOptions>  
-         </Control>  
-      </Column>  
-      </Group>  
-</Tab>  
+<Tab Label="Web">
+      <Group>
+      <Column PercentWidth="100">
+         <Control Type="WebpageControl" Name="WssPortalPage" Label="WssPortalPage" LabelPosition="Top" >
+               <WebpageControlOptions AllowScript="true">
+               <Link UrlRoot="http://www.msdn.com" />
+               </WebpageControlOptions>
+         </Control>
+      </Column>
+      </Group>
+</Tab>
 ```
 
 ### Example: display content provided in a CDATA tag
@@ -174,13 +174,13 @@ The following example shows how you can embed the content from a Web page by pro
 The following example shows how you can add HTML content to a work item form that is contained in a `CDATA` tag.
 
 ```xml
-<Control Type="WebpageControl">  
-      <WebpageControlOptions>  
+<Control Type="WebpageControl">
+      <WebpageControlOptions>
       <Content>
         <![CDATA[Place HTML Formatted Content Here ]]>
           </Content>
       </WebpageControlOptions>
-</Control>  
+</Control>
 ```
 
 ## <a name="ProcGuidance"></a> Embed process guidance
@@ -188,27 +188,27 @@ The following example shows how you can add HTML content to a work item form tha
 To make process guidance available on the work item form, you may want to add a tab that contains information about the workflow and usage of the work item type. You can do this by using the `Type` attribute `WebpageControl` option. This option provides support for embedding rich formatted text and images into the form by using the `WebpageControlOptions` and `Content` child elements.
 
 ```xml
-<FORM>  
-. . .  
-<TabGroup>  
+<FORM>
 . . .
-      <Tab Label="Process Guidance">  
-      <Group>  
-         <Column PercentWidth="100">  
-               <Control Type="WebpageControl">  
-                 <WebpageControlOptions>  
-                       <Content>  
-                       <![CDATA[Place HTML Formatted Process Guidance Content Here ]]>  
-                  </Content>  
-                  </WebpageControlOptions>  
-               </Control>  
-         </Column>  
-      </Group>  
-      </Tab>  
-. . .  
-</TabGroup>  
-. . .  
-</FORM>  
+<TabGroup>
+. . .
+      <Tab Label="Process Guidance">
+      <Group>
+         <Column PercentWidth="100">
+               <Control Type="WebpageControl">
+                 <WebpageControlOptions>
+                       <Content>
+                       <![CDATA[Place HTML Formatted Process Guidance Content Here ]]>
+                  </Content>
+                  </WebpageControlOptions>
+               </Control>
+         </Column>
+      </Group>
+      </Tab>
+. . .
+</TabGroup>
+. . .
+</FORM>
 ```
 
 ## Related articles

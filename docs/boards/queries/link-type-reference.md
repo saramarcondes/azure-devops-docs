@@ -23,11 +23,11 @@ You can link work items to other work items or artifacts using the following lin
 
 ::: moniker range="azure-devops"
 
-* [**Work link types**](#work-link-types): links work items including select test case management work items
-* [**Hyperlink**](#hyperlink): connects a work item to any URL or network share
-* [**External link types**](#external-link-types): connects a work item to an external object, such as a code object, build, or wiki page
-* [**Remote work link types**](#remote-work-link-types): connects work items that are defined in different organizations
-* [**GitHub link types**](#github-link-types): connects a work item to a GitHub repository commit, issue, or pull request.
+- [**Work link types**](#work-link-types): links work items including select test case management work items
+- [**Hyperlink**](#hyperlink): connects a work item to any URL or network share
+- [**External link types**](#external-link-types): connects a work item to an external object, such as a code object, build, or wiki page
+- [**Remote work link types**](#remote-work-link-types): connects work items that are defined in different organizations
+- [**GitHub link types**](#github-link-types): connects a work item to a GitHub repository commit, issue, or pull request.
 
 A specific field maintains a count of links for the first four link types, such as <em>Related Link Count</em>, <em>Hyperlink Count</em>, <em>External Link Count</em>, and <em>Remote Link Count</em>.
 
@@ -35,10 +35,10 @@ A specific field maintains a count of links for the first four link types, such 
 
 ::: moniker range="azure-devops-2019"
 
-* [**Work link types**](#work-link-types): links work items including select test case management work items
-* [**Hyperlink**](#hyperlink): connects a work item to any URL or network share
-* [**External link types**](#external-link-types): connects a work item to an external object, such as a code object, build, or wiki page
-* [**GitHub link types**](#github-link-types): connects a work item to a GitHub repository commit or pull request.
+- [**Work link types**](#work-link-types): links work items including select test case management work items
+- [**Hyperlink**](#hyperlink): connects a work item to any URL or network share
+- [**External link types**](#external-link-types): connects a work item to an external object, such as a code object, build, or wiki page
+- [**GitHub link types**](#github-link-types): connects a work item to a GitHub repository commit or pull request.
 
 A specific field maintains a count of links for the first three link types, such as <em>Related Link Count</em>, <em>Hyperlink Count</em>, and <em>External Link Count</em>.
 
@@ -46,9 +46,9 @@ A specific field maintains a count of links for the first three link types, such
 
 ::: moniker range="<= tfs-2018"
 
-* [**Work link types**](#work-link-types): links work items including select test case management work items
-* [**Hyperlink**](#hyperlink): connects a work item to any URL or network share
-* [**External link types**](#external-link-types): connects a work item to an external object, such as a code object, build, or storyboard.
+- [**Work link types**](#work-link-types): links work items including select test case management work items
+- [**Hyperlink**](#hyperlink): connects a work item to any URL or network share
+- [**External link types**](#external-link-types): connects a work item to an external object, such as a code object, build, or storyboard.
 
 A specific field maintains a count of links for each of these link types, such as <em>Related Link Count</em>, <em>Hyperlink Count</em>, and <em>External Link Count</em>.
 
@@ -681,8 +681,8 @@ Use this non-directional link to create links between work items defined in diff
 
 You can create custom link types; export and import definitions of link types; and delete, activate, deactivate, and reactivate types of links. See the following topics:
 
-* [Link type element reference](../../reference/xml/link-type-element-reference.md)
-* [Manage link types (witadmin)](../../reference/witadmin/manage-link-types.md)
+- [Link type element reference](../../reference/xml/link-type-element-reference.md)
+- [Manage link types (witadmin)](../../reference/witadmin/manage-link-types.md)
 
 ::: moniker-end
 
@@ -698,7 +698,7 @@ az boards work-item relation list-type [--org]
 
 #### Optional parameters
 
-* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 
 #### Example
 
@@ -927,9 +927,9 @@ Lists the attributes of the link type in json format.
 
 ## Related articles
 
-* [Link work items to track dependencies](link-work-items-support-traceability.md)
-* [Add link to multiple work items](../backlogs/add-link.md)
-* [Use mapping to link backlog items to features and epics](../backlogs/organize-backlog.md)
-* [Bulk modify links using Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)
-* [Link type topologies and restrictions](../../reference/xml/link-type-element-reference.md#topology)
-* [Artifact Link Types API](/rest/api/azure/devops/wit/artifact%20link%20types/list)
+- [Link work items to track dependencies](link-work-items-support-traceability.md)
+- [Add link to multiple work items](../backlogs/add-link.md)
+- [Use mapping to link backlog items to features and epics](../backlogs/organize-backlog.md)
+- [Bulk modify links using Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)
+- [Link type topologies and restrictions](../../reference/xml/link-type-element-reference.md#topology)
+- [Artifact Link Types API](/rest/api/azure/devops/wit/artifact%20link%20types/list)

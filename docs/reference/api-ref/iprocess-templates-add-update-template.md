@@ -95,11 +95,11 @@ API values for the name, description and metadata arguments are now overridden b
 These properties are defined in the [ProcessTemplate.xml file](https://msdn.microsoft.com/library/aa395261.aspx).
 
 ```xml
-<?xml version="1.0" encoding="utf-8"?>  
+<?xml version="1.0" encoding="utf-8"?>
 <ProcessTemplate>
   <metadata>
     <name>Agile</name>
-    <description>This template is flexible and will work great for most teams using Agile planning methods, including those practicing Scrum.</description>  
+    <description>This template is flexible and will work great for most teams using Agile planning methods, including those practicing Scrum.</description>
     <version type="ADCC42AB-9882-485E-A3ED-7678F01F66BC" major="14" minor="1" />
     <plugins>
       . . .

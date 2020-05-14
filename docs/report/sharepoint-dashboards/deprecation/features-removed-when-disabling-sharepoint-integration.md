@@ -64,9 +64,9 @@ Displaying Excel Charts on a SharePoint site is based on Excel, Office Online Se
 
 The TFS Extension for SharePoint did install a SharePoint timer job. When executed, this timer job would detect if:
 
-* The TFS Warehouse or Cube location or name had changed
-* The TFS collection name had changed
-* The name of the team project associated with a SharePoint site had changed
+- The TFS Warehouse or Cube location or name had changed
+- The TFS collection name had changed
+- The name of the team project associated with a SharePoint site had changed
 
 If any of these changes were made, then it would update the Excel workbook's filters and Data Connection string so the Excel Chart would continue to work. After disabling SharePoint integration, you'll need to update the Excel workbooks manually to reflect the changes. See [How to update an Excel chart on a SharePoint site](./update-excel-chart.md)
 
@@ -84,9 +84,9 @@ PATHTOCURRENTSITE/_layouts/TfsRedirect.aspx?tf:Type=Report&tf:ReportName=REPORTN
 
 The **tfsRedirect.aspx** looks up the location of the SQL Services Reporting Server and redirects the URL to display the report. After disabling TFS-SharePoint integration, this redirect functionality will continue to work until you do one of the following:
 
-* Move the location of your SQL Services Reporting Server
-* Rename your team project
-* Rename your collection
+- Move the location of your SQL Services Reporting Server
+- Rename your team project
+- Rename your collection
 
 If any of these changes are made, then you can replace the URL in the [Page Viewer web part](https://support.office.com/article/Display-a-Web-page-on-a-SharePoint-page-by-adding-the-Page-Viewer-Web-Part-7F61FEEC-9B3D-4805-A960-07636BA59527) with the full URL to the SSRS Report. See [How to update a SSRS report on a SharePoint site](./update-ssrs-report.md)
 
@@ -94,9 +94,9 @@ If any of these changes are made, then you can replace the URL in the [Page View
 
 Quick links are listed on the left side navigation pane of a TFS SharePoint site. Quick links were supported by **tfsRedirect.aspx**. TFS SharePoint sites were created with the following Quick Links:
 
-* Team Web Access&mdash;Links to the TFS web access URL
-* Reports&mdash;Links to the SQL Server Reporting Services (SSRS) Reports location
-* Process Guidance&mdash;Links to process guidance topic, based on the project's current process.
+- Team Web Access&mdash;Links to the TFS web access URL
+- Reports&mdash;Links to the SQL Server Reporting Services (SSRS) Reports location
+- Process Guidance&mdash;Links to process guidance topic, based on the project's current process.
 
 These links will no longer work after you disable the SharePoint integration. You will need to either edit the links to point to the correct location, or delete them.
 

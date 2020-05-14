@@ -80,15 +80,15 @@ Use the below structure and classes "title", "inner-title" and "subtitle" to get
 			<div class="subtitle">Widget subtitle</div>
 		</h2>
 		<div class="content">
-			Place widget content here.  
+			Place widget content here.
 		</div>
 	</div>
 ```
 
 You can use any html element for the title and subtitle combination. Here are some tips:
 
-* When you need the subtitle to appear in the same line as the title, use an inline element like `<span>`
-* When you need the subtitle to appear in the next line from the title, use a block element like `<div>`
+- When you need the subtitle to appear in the same line as the title, use an inline element like `<span>`
+- When you need the subtitle to appear in the next line from the title, use a block element like `<div>`
 
 ### Display hyperlinks, icons, text, and subtext in a widget
 
@@ -137,10 +137,10 @@ To use the same styles as these widgets, add the "big-count" class on the HTML e
 
 Clicking anywhere on some widgets redirects the user to another page. To have your widget do the same, you can:
 
-* Add an anchor tag as a child to the HTML element that acts as your widget container.
-* Put all your widget content inside the anchor tag.
-* Since your widget is hosted in an iframe, add the attribute "target" with value "\_blank" to the anchor tag so that the link opens in a new tab/window instead of inside the same iframe.
-* In addition to the "widget" class, add the "clickable" class to the widget container.
+- Add an anchor tag as a child to the HTML element that acts as your widget container.
+- Put all your widget content inside the anchor tag.
+- Since your widget is hosted in an iframe, add the attribute "target" with value "\_blank" to the anchor tag so that the link opens in a new tab/window instead of inside the same iframe.
+- In addition to the "widget" class, add the "clickable" class to the widget container.
 
 Your widget content gets the correct colors even though they are inside an anchor tag. Without the "clickable" class, the default blue color is forced on all text inside the widget.
 The widget also gets a custom visual cue on focus to help users who use the keyboard to navigate the dashboard.

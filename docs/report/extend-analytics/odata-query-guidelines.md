@@ -72,34 +72,34 @@ Queries that violate an OData error rule will result in a failed response with a
 
 ### Do's
 
-* [✔️ DO limit the query to those project(s) to which you have access](#restrict-query-project)
-* [✔️ DO specify project filter inside the `$expand` clause if your expansion could include data in other, potentially inaccessible projects](#restrict-project-filter)
-* [✔️ DO wait or stop the operation if your query exceeds usage limits](#restrict-wait-stop)
-* [✔️ DO wait or stop the operation if your query fails with a timeout](#question-41065)
-* [✔️ DO include `DateSK` or `DateValue` column in `groupby` clause when you aggregate over snapshot tables](#restrict-aggregate-snapshot)
-* [✔️ DO explicitly address entities with filter clauses](#restrict-explicit-address-entities)
-* [✔️ DO use `WorkItemRevisions` entity set to load all the revisions for a given work item](#restrict-workitem-revisions)
-* [✔️ DO use batch endpoint for long queries](#restrict-do-use-batch-endpoint)
-* [✔️ DO specify time zone when filtering on date columns](#restrict-time-zone)
+- [✔️ DO limit the query to those project(s) to which you have access](#restrict-query-project)
+- [✔️ DO specify project filter inside the `$expand` clause if your expansion could include data in other, potentially inaccessible projects](#restrict-project-filter)
+- [✔️ DO wait or stop the operation if your query exceeds usage limits](#restrict-wait-stop)
+- [✔️ DO wait or stop the operation if your query fails with a timeout](#question-41065)
+- [✔️ DO include `DateSK` or `DateValue` column in `groupby` clause when you aggregate over snapshot tables](#restrict-aggregate-snapshot)
+- [✔️ DO explicitly address entities with filter clauses](#restrict-explicit-address-entities)
+- [✔️ DO use `WorkItemRevisions` entity set to load all the revisions for a given work item](#restrict-workitem-revisions)
+- [✔️ DO use batch endpoint for long queries](#restrict-do-use-batch-endpoint)
+- [✔️ DO specify time zone when filtering on date columns](#restrict-time-zone)
 
 ### Consider
 
-* [✔️ CONSIDER querying using the project-scoped endpoint](#project-scoped-endpoint)
+- [✔️ CONSIDER querying using the project-scoped endpoint](#project-scoped-endpoint)
 
 ### Blocked
 
-* [❌ [BLOCKED] DO NOT use snapshot entities for anything other than aggregations](#odata_snapshot_without_aggregation)
-* [❌ [BLOCKED] DO NOT use entity keys in resource paths for entity addressing](#restrict-blocked-entity-keys)
-* [❌ [BLOCKED] DO NOT expand `Revisions` on `WorkItem` entity](#restrict-blocked-revisions)
-* [❌ [BLOCKED] DO NOT group on distinct columns](#odata_query_distinct_columns_in_last_groupby)
-* [❌ [BLOCKED] DO NOT use `countdistinct` aggregation](#odata_query_with_countdistinct_not_supported)
-* [❌ [BLOCKED] DO NOT use batch endpoint for sending multiple queries](#odata_batch_query_size_invalid)
-* [❌ [BLOCKED] DO NOT use queries that result in more than 800 colums](#odata_query_result_width_invalid)
+- [❌ [BLOCKED] DO NOT use snapshot entities for anything other than aggregations](#odata_snapshot_without_aggregation)
+- [❌ [BLOCKED] DO NOT use entity keys in resource paths for entity addressing](#restrict-blocked-entity-keys)
+- [❌ [BLOCKED] DO NOT expand `Revisions` on `WorkItem` entity](#restrict-blocked-revisions)
+- [❌ [BLOCKED] DO NOT group on distinct columns](#odata_query_distinct_columns_in_last_groupby)
+- [❌ [BLOCKED] DO NOT use `countdistinct` aggregation](#odata_query_with_countdistinct_not_supported)
+- [❌ [BLOCKED] DO NOT use batch endpoint for sending multiple queries](#odata_batch_query_size_invalid)
+- [❌ [BLOCKED] DO NOT use queries that result in more than 800 colums](#odata_query_result_width_invalid)
 
 ### Avoid
 
-* [❌ AVOID aggregations that can result in arithmetic overflow](#restrict-avoid-aggregations)
-* [❌ AVOID creating very long queries](#question-41401)
+- [❌ AVOID aggregations that can result in arithmetic overflow](#restrict-avoid-aggregations)
+- [❌ AVOID creating very long queries](#question-41401)
 
 <a id="restrict-query-project"> </a>
 
@@ -109,7 +109,7 @@ If your query targets data from a project you don't have access to, the query wi
 
 Here is the message you'll see if you don't have access to a project:
 
-> <em>The query results include data in one or more projects for which you do not have access. Add one or more projects filters to specify the project(s) you have access to in 'WorkItems' entity. If you are using $expand or navigation properties, project filter is required for those entities.</em>
+> <em>The query results include data in one or more projects for which you do not have access. Add one or more projects filters to specify the project(s) you have access to in 'WorkItems' entity. If you are using \$expand or navigation properties, project filter is required for those entities.</em>
 
 <!---One of the core principles of Analytics is that one query returns the same result for all users of fails in a user does not have permissions to the data. There are no implicit filters added based on who runs the query. One consequence is that you, the query author, have to pay attention to project filters to make sure that the target audience will be able to execute them.
 
@@ -168,8 +168,8 @@ You'll find that the `$filter` expand option is very useful when you use the exp
 
 You'll need to specify the filter if you expand one of the following properties:
 
-* `WorkItems` entity set: `Parent`, `Children`
-* `WorkItemLinks` entity set: `TargetWorkItem`.
+- `WorkItems` entity set: `Parent`, `Children`
+- `WorkItemLinks` entity set: `TargetWorkItem`.
 
 <a name="project-scoped-endpoint"></a>
 
@@ -293,7 +293,7 @@ If you're not sure which properties you should include in such a filter, you can
 
 The Analytics data model disallows certain types of expansions. One of them, which might be surprising to some, is the `Revisions` collection property on the `WorkItem` entity. If you try to expand this property you'll receive the following error message.
 
-> _The query specified in the URI is not valid. The property 'Revisions' cannot be used in the $expand query option._
+> _The query specified in the URI is not valid. The property 'Revisions' cannot be used in the \$expand query option._
 
 This restriction was put in place to encourage everyone to use the recommended solution, which is fetching revisions from `WorkItemRevisions` as explained in the following section.
 
@@ -446,34 +446,34 @@ An alternative approach is to use date surrogate key properties as they do not k
 
 ### Do's
 
-* [✔️ DO measure the impact of implementing a performance guideline](#measure-impact)
-* [✔️ DO use aggregation extensions](#use-aggregation)
-* [✔️ DO specify columns in the `$select` clause](#specify-columns)
-* [✔️ DO specify columns in the `$select` expand option inside the `$expand` clause](#specify-columns-select)
-* [✔️ DO define a filter on `RevisedDateSK` when you query for historical work items data (`WorkItemRevisions` or `WorkItemSnapshot` entity sets)](#perf-define-filter)
-* [✔️ DO use weekly or monthly snapshots for trend queries that span a long time period](#perf-snapshots)
-* [✔️ DO use `Tags` collection property on work items when filtering by tags](#perf-tags)
-* [✔️ DO use `TagNames` property if you want to display all the tags on a work item as text](#perf-tagnames)
-* [✔️ DO use server-driven paging](#perf-paging)
-* [✔️ DO use `$top` query option to limit the number of records](#perf-top)
+- [✔️ DO measure the impact of implementing a performance guideline](#measure-impact)
+- [✔️ DO use aggregation extensions](#use-aggregation)
+- [✔️ DO specify columns in the `$select` clause](#specify-columns)
+- [✔️ DO specify columns in the `$select` expand option inside the `$expand` clause](#specify-columns-select)
+- [✔️ DO define a filter on `RevisedDateSK` when you query for historical work items data (`WorkItemRevisions` or `WorkItemSnapshot` entity sets)](#perf-define-filter)
+- [✔️ DO use weekly or monthly snapshots for trend queries that span a long time period](#perf-snapshots)
+- [✔️ DO use `Tags` collection property on work items when filtering by tags](#perf-tags)
+- [✔️ DO use `TagNames` property if you want to display all the tags on a work item as text](#perf-tagnames)
+- [✔️ DO use server-driven paging](#perf-paging)
+- [✔️ DO use `$top` query option to limit the number of records](#perf-top)
 
 ### Don'ts
 
-* [❌ DO NOT use `tolower` and `toupper` functions to perform case-insensitive comparison](#perf-case-sensitive)
-* [❌ DO NOT use unbounded expansion with `$levels=max`](#perf-unbounded)
-* [❌ DO NOT use `$top` and `$skip` query options to implement client-driven paging](#perf-no-top-skip)
+- [❌ DO NOT use `tolower` and `toupper` functions to perform case-insensitive comparison](#perf-case-sensitive)
+- [❌ DO NOT use unbounded expansion with `$levels=max`](#perf-unbounded)
+- [❌ DO NOT use `$top` and `$skip` query options to implement client-driven paging](#perf-no-top-skip)
 
 ### Consider
 
-* [✔️ CONSIDER writing query to return small number of records](#perf-small-number)
-* [✔️ CONSIDER limiting the number of selected properties to minimum](#perf-limit-number)
-* [✔️ CONSIDER filtering on date surrogate key properties (`DateSK` suffix)](#perf-filter-date)
-* [✔️ CONSIDER filtering on surrogate key columns](#perf-filter-surrogate)
-* [✔️ CONSIDER passing `vsts.analytics.maxsize` preference in the header](#perf-max-size)
+- [✔️ CONSIDER writing query to return small number of records](#perf-small-number)
+- [✔️ CONSIDER limiting the number of selected properties to minimum](#perf-limit-number)
+- [✔️ CONSIDER filtering on date surrogate key properties (`DateSK` suffix)](#perf-filter-date)
+- [✔️ CONSIDER filtering on surrogate key columns](#perf-filter-surrogate)
+- [✔️ CONSIDER passing `vsts.analytics.maxsize` preference in the header](#perf-max-size)
 
 ### Avoid
 
-* [❌ AVOID using `Parent`, `Children` or `Revisions` properties in the `$filter` or `$expand` clauses](#perf-avoid-parent-child)
+- [❌ AVOID using `Parent`, `Children` or `Revisions` properties in the `$filter` or `$expand` clauses](#perf-avoid-parent-child)
 
 <a id="measure-impact"> </a>
 
@@ -799,12 +799,12 @@ If the dataset exceeds the limit of 1000 records the query will immediately fail
 
 ## Query style guidelines
 
-* [✔️ DO use `$count` virtual property in the aggregation methods](#style-count)
-* [❌ AVOID using `$count` virtual property in the URL segment](#style-avoid-count)
-* [❌ AVOID mixing `$apply` and `$filter` clauses in a single query](#style-avoid-mix)
-* [✔️ CONSIDER using parameter aliases to separate volatile parts of the query](#style-aliases)
-* [✔️ CONSIDER structuring your query to match the OData evaluation order](#style-match-order)
-* [✔️ CONSIDER reviewing OData capabilities described in the metadata annotations](#style-metadata)
+- [✔️ DO use `$count` virtual property in the aggregation methods](#style-count)
+- [❌ AVOID using `$count` virtual property in the URL segment](#style-avoid-count)
+- [❌ AVOID mixing `$apply` and `$filter` clauses in a single query](#style-avoid-mix)
+- [✔️ CONSIDER using parameter aliases to separate volatile parts of the query](#style-aliases)
+- [✔️ CONSIDER structuring your query to match the OData evaluation order](#style-match-order)
+- [✔️ CONSIDER reviewing OData capabilities described in the metadata annotations](#style-metadata)
 
 <a id="style-count"> </a>
 
@@ -932,9 +932,9 @@ Another useful annotation is `Org.OData.Capabilities.V1.ExpandRestrictions`, whi
 
 ## Related articles
 
-* [Query work item tracking data](wit-analytics.md)
-* [Aggregate data](aggregated-data-analytics.md)
-* [Query trend data](querying-for-trend-data.md)
-* [Query work item links](work-item-links.md)
-* [Explore the Analytics OData metadata](analytics-metadata.md)
-* [Supported functions & clauses](odata-supported-features.md)
+- [Query work item tracking data](wit-analytics.md)
+- [Aggregate data](aggregated-data-analytics.md)
+- [Query trend data](querying-for-trend-data.md)
+- [Query work item links](work-item-links.md)
+- [Explore the Analytics OData metadata](analytics-metadata.md)
+- [Supported functions & clauses](odata-supported-features.md)

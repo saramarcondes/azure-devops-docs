@@ -12,9 +12,9 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Values
 
-* `Unspecified`
-* `NotStarted`
-* `InProgress`
-* `Paused`
-* `Completed`
-* `Declined`
+- `Unspecified`
+- `NotStarted`
+- `InProgress`
+- `Paused`
+- `Completed`
+- `Declined`

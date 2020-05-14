@@ -30,16 +30,16 @@ Wikis and repository README files are great ways to share information with your 
 
 ::: moniker range=">= azure-devops-2019"
 
-* [Create a wiki for your project](wiki-create-repo.md)
-* [Add & edit wiki pages](add-edit-wiki.md)
-* [Publish code to a wiki](publish-repo-to-wiki.md)
+- [Create a wiki for your project](wiki-create-repo.md)
+- [Add & edit wiki pages](add-edit-wiki.md)
+- [Publish code to a wiki](publish-repo-to-wiki.md)
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 
-* [Create a wiki for your project](wiki-create-repo.md)
-* [Add & edit wiki pages](add-edit-wiki.md)
+- [Create a wiki for your project](wiki-create-repo.md)
+- [Add & edit wiki pages](add-edit-wiki.md)
 
 ::: moniker-end
 
@@ -47,14 +47,14 @@ Wikis and repository README files are great ways to share information with your 
 
 ::: moniker range=">= tfs-2018"
 
-* [Wiki Git repository files and file structure](wiki-file-structure.md)
-* [Create a README for your repo](../../repos/git/create-a-readme.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json)
+- [Wiki Git repository files and file structure](wiki-file-structure.md)
+- [Create a README for your repo](../../repos/git/create-a-readme.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json)
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 
-* [Create a README for your repo](../../repos/git/create-a-readme.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json)
+- [Create a README for your repo](../../repos/git/create-a-readme.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json)
 
 ::: moniker-end
 
@@ -62,40 +62,40 @@ Wikis and repository README files are great ways to share information with your 
 
 ::: moniker range=">= azure-devops-2019"
 
-* [View wiki history and revert](wiki-view-history.md)
-* [Filter or print wiki content](filter-print-wiki.md)
-* [Search wiki content](search-wiki.md)
-* [Follow wiki pages, get notifications](follow-notifications-wiki-pages.md)
-* [Create and embed a work item from wiki content](create-embed-wit-from-wiki.md)
-* [Version, select, or unpublish a wiki](wiki-select-unpublish-versions.md)
-* [Add comments to wiki](add-comments-wiki.md)
-* [Update wiki pages offline](wiki-update-offline.md)
-* [Manage README & Wiki permissions (security)](manage-readme-wiki-permissions.md)
-* [Markdown guidance](markdown-guidance.md)
-* [Wiki Markdown guidance](wiki-markdown-guidance.md)
+- [View wiki history and revert](wiki-view-history.md)
+- [Filter or print wiki content](filter-print-wiki.md)
+- [Search wiki content](search-wiki.md)
+- [Follow wiki pages, get notifications](follow-notifications-wiki-pages.md)
+- [Create and embed a work item from wiki content](create-embed-wit-from-wiki.md)
+- [Version, select, or unpublish a wiki](wiki-select-unpublish-versions.md)
+- [Add comments to wiki](add-comments-wiki.md)
+- [Update wiki pages offline](wiki-update-offline.md)
+- [Manage README & Wiki permissions (security)](manage-readme-wiki-permissions.md)
+- [Markdown guidance](markdown-guidance.md)
+- [Wiki Markdown guidance](wiki-markdown-guidance.md)
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 
-* [View wiki history and revert](wiki-view-history.md)
-* [Filter or print wiki content](filter-print-wiki.md)
-* [Search wiki content](search-wiki.md)
-* [Update wiki pages offline](wiki-update-offline.md)
-* [Manage README & Wiki permissions (security)](manage-readme-wiki-permissions.md)
+- [View wiki history and revert](wiki-view-history.md)
+- [Filter or print wiki content](filter-print-wiki.md)
+- [Search wiki content](search-wiki.md)
+- [Update wiki pages offline](wiki-update-offline.md)
+- [Manage README & Wiki permissions (security)](manage-readme-wiki-permissions.md)
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 
-* [Manage README & Wiki permissions (security)](manage-readme-wiki-permissions.md)
+- [Manage README & Wiki permissions (security)](manage-readme-wiki-permissions.md)
 
 ::: moniker-end
 
 ## Related articles
 
-* [Keyboard shortcuts to manage Wiki pages](markdown-guidance.md)
-* [Navigate in the web portal](..//navigation/index.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json)
-* [Dashboards](../../report/dashboards/index.md)
-* [Manage projects](../../organizations/projects/index.md)
-* [Azure DevOps data protection overview](../../organizations/security/data-protection.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json)
+- [Keyboard shortcuts to manage Wiki pages](markdown-guidance.md)
+- [Navigate in the web portal](..//navigation/index.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json)
+- [Dashboards](../../report/dashboards/index.md)
+- [Manage projects](../../organizations/projects/index.md)
+- [Azure DevOps data protection overview](../../organizations/security/data-protection.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json)

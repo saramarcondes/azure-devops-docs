@@ -16,6 +16,6 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Members
 
-* `environmentId`: string.
+- `environmentId`: string.
 
-* `environmentName`: string.
+- `environmentName`: string.

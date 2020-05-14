@@ -107,7 +107,7 @@ To re-enable the WIT, choose **Enable** from the WIT context menu.
 
 2.  To complete the delete operation, you must type the name of the WIT as shown.
 
-    <img src="media/process/cpit-destroy-wit-confirm.png" alt="Delete field, confirmation dialog" style="border: 1px solid #C3C3C3;" />  
+    <img src="media/process/cpit-destroy-wit-confirm.png" alt="Delete field, confirmation dialog" style="border: 1px solid #C3C3C3;" />
 
 ### WIT extensibility
 
@@ -117,7 +117,7 @@ To work with WITs programmatically, see [Work Item Types REST API](/rest/api/azu
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
-* [Add and manage fields](customize-process-field.md)
-* [Customize the layout](customize-process-form.md)
-* [Customize a workflow for a work item type](customize-process-workflow.md)
-* [Customize a project using an inherited process](customize-process.md)
+- [Add and manage fields](customize-process-field.md)
+- [Customize the layout](customize-process-form.md)
+- [Customize a workflow for a work item type](customize-process-workflow.md)
+- [Customize a project using an inherited process](customize-process.md)

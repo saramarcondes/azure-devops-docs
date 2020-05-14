@@ -25,18 +25,18 @@ Symbol servers enable debuggers to automatically retrieve the correct symbol fil
 To publish symbols to the symbol server in Azure Artifacts, include the [Index Sources and Publish Symbols](../tasks/build/index-sources-publish-symbols.md) task in your build pipeline. Configure the task as follows:
 ::: moniker range=">= tfs-2018"
 
-* For **Version**, select **2.\\\***.
+- For **Version**, select **2.\\\***.
 
 ::: moniker-end
 ::: moniker range="<= tfs-2017"
 
-* For **Version**, select **1.\\\***.
+- For **Version**, select **1.\\\***.
 
 ::: moniker-end
 
-* For **Symbol Server Type**, select **Symbol Server in this organization/collection (requires Azure Artifacts)**.
-* Use the **Path to symbols folder** argument to specify the root directory that contains the .pdb files to be published.
-* Use the **Search pattern** argument to specify search criteria to find the .pdb files in the folder that you specify in **Path to symbols folder**. You can use a single-folder wildcard (`*`) and recursive wildcards (`**`).
+- For **Symbol Server Type**, select **Symbol Server in this organization/collection (requires Azure Artifacts)**.
+- Use the **Path to symbols folder** argument to specify the root directory that contains the .pdb files to be published.
+- Use the **Search pattern** argument to specify search criteria to find the .pdb files in the folder that you specify in **Path to symbols folder**. You can use a single-folder wildcard (`*`) and recursive wildcards (`**`).
   For example, `**\bin\**\*.pdb` searches for all .pdb files in all subdirectories named _bin_.
 
 ### Publish symbols for NuGet packages
@@ -49,11 +49,11 @@ You can also publish symbols to a file share by using the [Index Sources and Pub
 
 Add the task to your build pipeline and configure it as follows:
 
-* For **Version**, select **2.\\\***.
-* For **Symbol Server Type**, select **File share**.
-  * When you select **File share** as **Symbol Server Type**, you get the **Compress Symbols** option. This option compresses your symbols to save space.
-* Use the **Path to symbols folder** argument to specify the root directory that contains the .pdb files to be published.
-* Use the **Search pattern** argument to specify search criteria to find the .pdb files in the folder that you specify in **Path to symbols folder**. You can use a single-folder wildcard (`*`) and recursive wildcards (`**`).
+- For **Version**, select **2.\\\***.
+- For **Symbol Server Type**, select **File share**.
+  - When you select **File share** as **Symbol Server Type**, you get the **Compress Symbols** option. This option compresses your symbols to save space.
+- Use the **Path to symbols folder** argument to specify the root directory that contains the .pdb files to be published.
+- Use the **Search pattern** argument to specify search criteria to find the .pdb files in the folder that you specify in **Path to symbols folder**. You can use a single-folder wildcard (`*`) and recursive wildcards (`**`).
   For example, `**\bin\**\*.pdb` searches for all .pdb files in all subdirectories named _bin_.
 
 ## Portable PDBs
@@ -68,16 +68,16 @@ You can use your indexed symbols to debug an app on a different machine from whe
 
 In Visual Studio, you might need to enable the following two options in **Debug** > **Options** > **Debugging** > **General**:
 
-* **Enable source server support**
-* **Allow source server for partial trust assemblies (Managed only)**
+- **Enable source server support**
+- **Allow source server for partial trust assemblies (Managed only)**
 
 ### Advanced usage: overriding at debug time
 
 The mapping information injected into the .pdb files contains variables that can be overridden at debugging time. Overriding the variables might be required if the collection URL has changed. When you're overriding the mapping information, the goals are to construct:
 
-* A command (SRCSRVCMD) that the debugger can use to retrieve the source file from the server.
+- A command (SRCSRVCMD) that the debugger can use to retrieve the source file from the server.
 
-* A location (SRCSRVTRG) where the debugger can find the retrieved source file.
+- A location (SRCSRVTRG) where the debugger can find the retrieved source file.
 
   The mapping information might look something like the following:
 

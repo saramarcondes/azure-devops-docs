@@ -41,8 +41,8 @@ In this article you'll learn:
 
 > [!div class="checklist"]
 >
-> * When to use issues versus tasks
-> * How to capture issues or impediments as a work item
+> - When to use issues versus tasks
+> - How to capture issues or impediments as a work item
 
 [!INCLUDE [temp](../includes/prerequisites-work-items.md)]
 
@@ -84,7 +84,7 @@ Choose the ![ ](../media/icons/pin-icon.png) pin icon to have it show up within 
 
 From **Work**, choose **Impediment** from the **New Work Item** list of options. Choose the ![ ](../media/icons/pin-icon.png) pin icon to have it show up within **Work** drop down menu.
 
-<img src="media/cyb-new-work-item-impediment.png" alt="TFS 2017 - Add an impediment" style="border: 1px solid #C3C3C3;" />  
+<img src="media/cyb-new-work-item-impediment.png" alt="TFS 2017 - Add an impediment" style="border: 1px solid #C3C3C3;" />
 
 ::: moniker-end
 
@@ -92,7 +92,7 @@ From **Work**, choose **Impediment** from the **New Work Item** list of options.
 
 From the Queries page, choose Impediment from the **New** drop down menu.
 
-<img src="media/ALM_CB_CreateImpediments.png" alt="TFS 2015, TFS 2013 - Add an impediment" style="border: 1px solid #C3C3C3;" />  
+<img src="media/ALM_CB_CreateImpediments.png" alt="TFS 2015, TFS 2013 - Add an impediment" style="border: 1px solid #C3C3C3;" />
 
 ::: moniker-end
 
@@ -122,7 +122,7 @@ Impediments and issues don't appear on your backlog. Instead, you track them usi
 
 ## Related articles
 
-* [Add work items](add-work-items.md)
-* [Work item form controls](../work-items/work-item-form-controls.md)
-* [Manage bugs or code defects](manage-bugs.md)
-* [Create your backlog](create-your-backlog.md)
+- [Add work items](add-work-items.md)
+- [Work item form controls](../work-items/work-item-form-controls.md)
+- [Manage bugs or code defects](manage-bugs.md)
+- [Create your backlog](create-your-backlog.md)

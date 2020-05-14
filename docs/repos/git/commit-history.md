@@ -24,33 +24,33 @@ The commit history view shows you the history of all the commits for a particula
 
 For each commit, you can view the following key elements:
 
-* Author details - You can view the author and committer of each commit along with the associated time.
+- Author details - You can view the author and committer of each commit along with the associated time.
 
   ![Author details for a commit](media/commit-history/2-AuthorDetails.png)
 
-* Complete commit message - If the commit message is too long, you can click on the down-arrow to expand the commit message to view the entire commit message.
+- Complete commit message - If the commit message is too long, you can click on the down-arrow to expand the commit message to view the entire commit message.
 
   ![Expanded commit message](media/commit-history/3-CommitMessage.png)
 
-* Copy commit SHA - You can copy the 40 character commit SHA by clicking on the **Copy full SHA to clipboard** button. You can click on a commit ID or commit message to open the commit details page.
+- Copy commit SHA - You can copy the 40 character commit SHA by clicking on the **Copy full SHA to clipboard** button. You can click on a commit ID or commit message to open the commit details page.
   ![Copy 40 character commit ID](media/commit-history/4-CopyCommitSHA.png)
-* Build and PR information - You can view the pull request that brought this commit to the branch selected on the page, and view the build status of the current commit.
+- Build and PR information - You can view the pull request that brought this commit to the branch selected on the page, and view the build status of the current commit.
 
   ![Build and PR details on commit history](media/commit-history/5-BuildandPRInfo.png)
 
-* You can select a repository from the repository picker to view the history of a particular repository.
+- You can select a repository from the repository picker to view the history of a particular repository.
 
   ![repository picker](media/commit-history/6-RepoPicker.png)
 
-* You can select a particular branch or tag from the branch picker to view associated history.
+- You can select a particular branch or tag from the branch picker to view associated history.
 
   ![Branch picker](media/commit-history/7-BranchPicker.png)
 
-* You can further filter the results by selecting a particular file from the code explorer.
+- You can further filter the results by selecting a particular file from the code explorer.
 
   ![Code explorer](media/commit-history/8-CodeExplorer.png)
 
-* You can also find a file or folder to view its history. In the following example, when you type "get", you see results of all files and folders in the repository that contain the word **src**.
+- You can also find a file or folder to view its history. In the following example, when you type "get", you see results of all files and folders in the repository that contain the word **src**.
 
   ![Find a file](media/commit-history/9-FindaFile.png)
 

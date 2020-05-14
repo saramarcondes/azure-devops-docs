@@ -67,19 +67,19 @@ To change the deployment option in designer task, expand Additional Deployment O
 
 Based on the type of Azure App Service and Azure Pipelines agent, the task chooses a suitable deployment technology. The different deployment technologies used by the task are:
 
-* Kudu REST APIs
+- Kudu REST APIs
 
-* Zip Deploy
+- Zip Deploy
 
-* RunFromPackage
+- RunFromPackage
 
 By default the task tries to select the appropriate deployment technology given the input package, app service type and agent OS.
 
-* When post deployment script is provided, use Zip Deploy
-* When the App Service type is Web App on Linux App, use Zip Deploy
-* If War file is provided, use War Deploy
-* If Jar file is provided, use Run From Zip
-* For all others, use Run From Package (via Zip Deploy)
+- When post deployment script is provided, use Zip Deploy
+- When the App Service type is Web App on Linux App, use Zip Deploy
+- If War file is provided, use War Deploy
+- If Jar file is provided, use Run From Zip
+- For all others, use Run From Package (via Zip Deploy)
 
 On non-Windows agent (for any App service type), the task relies on [Kudu REST APIs](https://github.com/projectkudu/kudu/wiki/REST-API) to deploy the Web App.
 
@@ -105,16 +105,16 @@ Creates the same deployment package as Zip Deploy. However, instead of deploying
 
 This may be because web.config is not present in your app. You can either add a web.config file to your source or auto-generate one using the Application and Configuration Settings of the task.
 
-* Click on the task and go to Generate web.config parameters for Python, Node.js, Go and Java apps.
+- Click on the task and go to Generate web.config parameters for Python, Node.js, Go and Java apps.
 
 ![Generate web.config parameters Dialog](media/azure-rm-function-app-01.png)
 
-* Click on the more button Generate web.config parameters for Python, Node.js, Go and Java apps to edit the parameters.
+- Click on the more button Generate web.config parameters for Python, Node.js, Go and Java apps to edit the parameters.
 
 ![Drop Down Dialog](media/azure-rm-web-app-deployment-02.png)
 
-* Select your application type from the drop down.
-* Click on OK. This will populate web.config parameters required to generate web.config.
+- Select your application type from the drop down.
+- Click on OK. This will populate web.config parameters required to generate web.config.
 
 ## FAQs
 

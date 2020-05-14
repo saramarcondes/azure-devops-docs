@@ -80,7 +80,7 @@ The following example displays information about all merge operations performed 
 c:\projects>tf merges /recursive Beta1_branch RTM_branch
 ```
 
-* Sample output:
+- Sample output:
 
   ```
   Changeset  Merged in Changeset   Author   Date

@@ -24,10 +24,10 @@ In this article you'll learn how to:
 
 > [!div class="checklist"]
 >
-> * Open your product backlog or portfolio backlog
-> * View the tree hierarchy
-> * Group backlog items using the Mapping pane
-> * Reparent items using drag-and-drop or the **Change parent** option
+> - Open your product backlog or portfolio backlog
+> - View the tree hierarchy
+> - Group backlog items using the Mapping pane
+> - Reparent items using drag-and-drop or the **Change parent** option
 
 ::: moniker-end
 
@@ -35,10 +35,10 @@ In this article you'll learn how to:
 
 > [!div class="checklist"]
 >
-> * Open your product backlog or portfolio backlog
-> * View the tree hierarchy
-> * Group backlog items using the Mapping pane
-> * Reparent items using drag-and-drop
+> - Open your product backlog or portfolio backlog
+> - View the tree hierarchy
+> - Group backlog items using the Mapping pane
+> - Reparent items using drag-and-drop
 
 ::: moniker-end
 
@@ -268,9 +268,9 @@ From the product backlog you can multi-select several work items and choose **Ch
 
 ## Related articles
 
-* [Define features and epics](define-features-epics.md)
-* [Work with multi-team ownership of backlog items](backlogs-overview.md#multi-team)
-* [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)
-* [Product backlog controls](product-backlog-controls.md)
-* [Filter product and portfolio backlogs](filter-backlogs.md)
-* [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
+- [Define features and epics](define-features-epics.md)
+- [Work with multi-team ownership of backlog items](backlogs-overview.md#multi-team)
+- [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)
+- [Product backlog controls](product-backlog-controls.md)
+- [Filter product and portfolio backlogs](filter-backlogs.md)
+- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)

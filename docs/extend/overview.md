@@ -27,9 +27,9 @@ where they can be kept privately for you and your team or shared with the millio
 <img alt="Components of an extension" src="./media/extension-components.png" style="padding-bottom:20px">
 </div>
 
-* A [JSON manifest file](./develop/manifest.md) contains basic info about the extension.
-* Discovery assets - the markdown and images that make up your extension's overview and aesthetics in the Marketplace.
-* Static files that contain the logic of your extension, including HTML, JS, and CSS files. Static files are only applicable to contribution-based extensions.
+- A [JSON manifest file](./develop/manifest.md) contains basic info about the extension.
+- Discovery assets - the markdown and images that make up your extension's overview and aesthetics in the Marketplace.
+- Static files that contain the logic of your extension, including HTML, JS, and CSS files. Static files are only applicable to contribution-based extensions.
 
 All of these are bundled up to make a Team Extensions Service Package (.vsix file) that is published to the Marketplace. From the Marketplace,
 extensions can be installed directly by Azure DevOps Services users.
@@ -38,11 +38,11 @@ extensions can be installed directly by Azure DevOps Services users.
 
 There are dozens of places where you can add to the Azure DevOps Services user interface, and we're adding more every sprint. Learn about all of the places where you can add a hub in the [contributions reference](./reference/targets/overview.md).
 
-* [Provide new Azure Pipelines tasks](./develop/add-build-task.md) that teams can use in their builds.
-* Use [dashboard widgets](./develop/add-dashboard-widget.md) to get custom views within Azure DevOps Services.
-* Extend the [work item form](./develop/add-workitem-extension.md) with new tabs, sections, and actions.
-* Create [your own hub](./develop/add-hub.md) to embed new capabilities within our Agile, code, build, and test experiences.
-* Develop [actions](./develop/add-action.md) that can be run on hubs, whether they're ours or ones you've created.
+- [Provide new Azure Pipelines tasks](./develop/add-build-task.md) that teams can use in their builds.
+- Use [dashboard widgets](./develop/add-dashboard-widget.md) to get custom views within Azure DevOps Services.
+- Extend the [work item form](./develop/add-workitem-extension.md) with new tabs, sections, and actions.
+- Create [your own hub](./develop/add-hub.md) to embed new capabilities within our Agile, code, build, and test experiences.
+- Develop [actions](./develop/add-action.md) that can be run on hubs, whether they're ours or ones you've created.
 
 ## Build an extension for your delivery pipeline
 
@@ -67,16 +67,16 @@ You can develop an Azure DevOps Services extension for your continuous delivery 
 
 ## Helpful links
 
-* [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops)
-* [Extension Publisher Page](https://marketplace.visualstudio.com/manage)
-* [Visual Studio Partner Program](https://vspartner.com/)
+- [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops)
+- [Extension Publisher Page](https://marketplace.visualstudio.com/manage)
+- [Visual Studio Partner Program](https://vspartner.com/)
 
 ## Next Steps
 
 ### Quickstarts
 
-* [Write your first extension (Add a hub)](./get-started/node.md)
+- [Write your first extension (Add a hub)](./get-started/node.md)
 
 ### Reference
 
-* [Extension manifest reference](./develop/manifest.md)
+- [Extension manifest reference](./develop/manifest.md)

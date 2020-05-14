@@ -26,15 +26,15 @@ You manage security groups and permissions from the web portal administration co
 
 Here's what you need to know about permission settings:
 
-* **Allow** or **Deny** explicitly grants or restricts users from performing specific tasks, and are usually inherited from group membership.
+- **Allow** or **Deny** explicitly grants or restricts users from performing specific tasks, and are usually inherited from group membership.
 
-* **Not set** implicitly denies users the ability to perform tasks that require that permission, but allows membership in a group that does have that permission set to take precedence, also known as **Allow (inherited)** or **Inherited allow** and **Deny (inherited)** or **Inherited deny**.
+- **Not set** implicitly denies users the ability to perform tasks that require that permission, but allows membership in a group that does have that permission set to take precedence, also known as **Allow (inherited)** or **Inherited allow** and **Deny (inherited)** or **Inherited deny**.
 
-* For most groups and almost all permissions, **Deny** overrides **Allow**. If a user belongs to two groups, and one of them has a specific permission set to **Deny**, that user is not able to perform tasks that require that permission even if they belong to a group that has that permission set to **Allow**.
+- For most groups and almost all permissions, **Deny** overrides **Allow**. If a user belongs to two groups, and one of them has a specific permission set to **Deny**, that user is not able to perform tasks that require that permission even if they belong to a group that has that permission set to **Allow**.
 
   For members of the **Project Collection Administrators** or **Team Foundation Administrators** groups, Deny doesn't trump Allow. Permissions assigned to these groups take precedent over any Deny set within any other group to which that member might belong. > **Project Collection Administrators** or **Team Foundation Administrators** permissions will not take precedence for work item operations, such as deletion. **Deny** will override **Allow** for these permissions.
 
-* Changing a permission for a group changes that permission for all users who are members of that group. In other words, depending on the size of the group, you might affect the ability of hundreds of users to do their jobs by changing just one permission. So make sure you understand the impact before you make a change.
+- Changing a permission for a group changes that permission for all users who are members of that group. In other words, depending on the size of the group, you might affect the ability of hundreds of users to do their jobs by changing just one permission. So make sure you understand the impact before you make a change.
 
 <a name="inheritance"></a>
 
@@ -45,7 +45,7 @@ permissions can be inherited from the parent or overridden. Security groups assi
 
 If a permission isn't directly allowed or denied for a user, then it may be inherited in two ways.
 
-* Users inherit permissions from the groups to which they belong.
+- Users inherit permissions from the groups to which they belong.
   When a permission is allowed for a user directly or through membership in a group that has that permission,
   and it is denied, either directly or through group membership,
   the permission is denied.
@@ -53,7 +53,7 @@ If a permission isn't directly allowed or denied for a user, then it may be inhe
       > Members of **Project Collection Administrators** or **Team Foundation Administrators**
       > retain most allowed permissions, even if they belong to other groups that deny those permissions. Work item operation permissions are the exception to this rule.
 
-* Object-level permissions that are assigned for nodes of a hierarchy -
+- Object-level permissions that are assigned for nodes of a hierarchy -
   areas, iterations, version control folders, work item query folders -
   are inherited down the hierarchy.
   That is, a user's permissions that are set at `area-1` are inherited by `area-1/sub-area-1`,
@@ -109,16 +109,16 @@ Use this option to disable inheritance for folders, shared queries, and other ob
 
 **Do:**
 
-* Use Windows groups when managing lots of users.
-* Consider granting the [work item query folders **Contribute**](../../boards/queries/set-query-permissions.md) permission to users or groups that require the ability to create and share work item queries for the project.
-* When adding many teams, consider creating a **Team Administrators** custom group where you allocate a subset of the permissions available to **Project Administrators**.
-* When adding teams, consider what permissions you want to assign to team leads, scrum masters, and other team members who may need to create and modify area paths, iteration paths, and queries.
+- Use Windows groups when managing lots of users.
+- Consider granting the [work item query folders **Contribute**](../../boards/queries/set-query-permissions.md) permission to users or groups that require the ability to create and share work item queries for the project.
+- When adding many teams, consider creating a **Team Administrators** custom group where you allocate a subset of the permissions available to **Project Administrators**.
+- When adding teams, consider what permissions you want to assign to team leads, scrum masters, and other team members who may need to create and modify area paths, iteration paths, and queries.
 
 **Don't:**
 
-* Don't add users to the project **Readers** group that you've added to the **Project Administrators** group. Because the Readers group denies several permissions that the Project Administrators group allows, and deny takes precedence.
-* Don't change the default assignments made to the valid users groups. If you remove or set the **View instance-level information** permission to Deny for one of the Valid Users groups, no users in the group are able to access the project, collection, or deployment, depending on the group you set.
-* Don't assign permissions that are noted as 'Assign only to service accounts' to user accounts.
+- Don't add users to the project **Readers** group that you've added to the **Project Administrators** group. Because the Readers group denies several permissions that the Project Administrators group allows, and deny takes precedence.
+- Don't change the default assignments made to the valid users groups. If you remove or set the **View instance-level information** permission to Deny for one of the Valid Users groups, no users in the group are able to access the project, collection, or deployment, depending on the group you set.
+- Don't assign permissions that are noted as 'Assign only to service accounts' to user accounts.
 
 <a id="grant-permissions"  > </a>
 
@@ -151,9 +151,9 @@ Of course, you don't need to grant permissions for reports or the project portal
 
 When you add accounts of users directly to a built-in group or through a Windows group, they are automatically added to one of the valid user groups.
 
-* _Server_\\Team Foundation Valid Users: All members added to server-level groups.
-* _ProjectCollectionName_\\Project Collection Valid Users: All members added to collection-level groups.
-* _TeamProjectName_\\Project Valid Users: All members added to project-level groups.
+- _Server_\\Team Foundation Valid Users: All members added to server-level groups.
+- _ProjectCollectionName_\\Project Collection Valid Users: All members added to collection-level groups.
+- _TeamProjectName_\\Project Valid Users: All members added to project-level groups.
 
 The default permissions assigned to these groups are primarily limited to
 read access, such as **View build resources**, **View project-level
@@ -254,19 +254,19 @@ For more information, see [Determine permission levels and groups in SharePoint 
 
 ::: moniker range="azure-devops"
 
-* [Permissions and groups reference](permissions.md)
-* [Add users to an organization](../accounts/add-team-members.md)
-* [Add users to a team or a project](../../organizations/security/add-users-team-project.md)
-* [Add and manage security groups](add-manage-security-groups.md)
-* [Manage tokens, namespaces, permissions](manage-tokens-namespaces.md)
-* [Make a user a team admin](../settings/manage-teams.md)  
+- [Permissions and groups reference](permissions.md)
+- [Add users to an organization](../accounts/add-team-members.md)
+- [Add users to a team or a project](../../organizations/security/add-users-team-project.md)
+- [Add and manage security groups](add-manage-security-groups.md)
+- [Manage tokens, namespaces, permissions](manage-tokens-namespaces.md)
+- [Make a user a team admin](../settings/manage-teams.md)  
   ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-* [Permissions and groups reference](permissions.md)
-* [Add users to a team or a project](../../organizations/security/add-users-team-project.md)
-* [Add users to an administrator role](/azure/devops/server/admin/add-administrator)
-* [Make a user a team admin](../settings/manage-teams.md)
-* [Change groups and permissions with TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd)
+- [Permissions and groups reference](permissions.md)
+- [Add users to a team or a project](../../organizations/security/add-users-team-project.md)
+- [Add users to an administrator role](/azure/devops/server/admin/add-administrator)
+- [Make a user a team admin](../settings/manage-teams.md)
+- [Change groups and permissions with TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd)
   ::: moniker-end

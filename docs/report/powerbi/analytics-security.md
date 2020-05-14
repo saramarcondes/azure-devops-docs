@@ -49,8 +49,8 @@ Analytics is designed to provide accurate data, not data trimmed by your securit
 
 For example, take the following scenario:
 
-* Project A has 200 work items
-* Project B has 100 work items
+- Project A has 200 work items
+- Project B has 100 work items
 
 If a user with access to both projects issues a query that says "give me the sum of all work items in Project A
 and Project B" the result will be 300 which is as expected. Now, say that another user who only has access to
@@ -65,5 +65,5 @@ a project level filter instead of using a global query. For information on provi
 
 ## Related articles
 
-* [Set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md)
-* [Power BI integration overview](overview.md)
+- [Set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md)
+- [Power BI integration overview](overview.md)

@@ -20,11 +20,11 @@ In this article, learn how to invite external users to your organization. If you
 
 ## Prerequisites
 
-* You must be a member of the Project Collection Administrators or Project Administrators group for the organization that you want to invite external users to.
+- You must be a member of the Project Collection Administrators or Project Administrators group for the organization that you want to invite external users to.
 
-* The Azure AD tenant, to which you want to invite external users, must allow adding new users, per your Azure AD guest policies. For more information, see [how to become eligible to invite external users on your Azure AD tenant](/azure/active-directory/active-directory-b2b-delegate-invitations).
+- The Azure AD tenant, to which you want to invite external users, must allow adding new users, per your Azure AD guest policies. For more information, see [how to become eligible to invite external users on your Azure AD tenant](/azure/active-directory/active-directory-b2b-delegate-invitations).
 
-* The **External guest access** policy must be **On** for the organization that you want to invite external users to. See the following image example.
+- The **External guest access** policy must be **On** for the organization that you want to invite external users to. See the following image example.
 
 > [!NOTE]  
 > To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
@@ -56,11 +56,11 @@ In this article, learn how to invite external users to your organization. If you
 
 4.  Complete the form based on the following guidance, and then select **Add**.
 
-    * **Users**: Enter the email address for the user. You can add several email addresses by separating them with a semicolon (;). For Microsoft accounts (MSAs), the email addresses display in red.
-    * **Access level**: You can add up to five users with _Basic_ access. You're included as one of the five users. Otherwise, you can add an unlimited number of users with _Stakeholder_ access. In public projects, both Stakeholder and Basic access levels grant full access to **Code**, **Work**, and **Build and Release**. But, Stakeholders only get partial access to **Test** and **Dashboards**. For more information, see [Default roles & access for public projects](../public/default-roles-access-public.md).
-    * **Add to projects**: Select each public project that you want to add the user to.
-    * **Azure DevOps Groups**: Leave this entry at Project Contributors, the default security group for people who contribute to your project. To learn more, see [Default permissions and access assignments](../security/permissions-access.md).
-    * **Send email invites**: Check the box next to "Send email invites" to invite your new users via their email addresses.
+    - **Users**: Enter the email address for the user. You can add several email addresses by separating them with a semicolon (;). For Microsoft accounts (MSAs), the email addresses display in red.
+    - **Access level**: You can add up to five users with _Basic_ access. You're included as one of the five users. Otherwise, you can add an unlimited number of users with _Stakeholder_ access. In public projects, both Stakeholder and Basic access levels grant full access to **Code**, **Work**, and **Build and Release**. But, Stakeholders only get partial access to **Test** and **Dashboards**. For more information, see [Default roles & access for public projects](../public/default-roles-access-public.md).
+    - **Add to projects**: Select each public project that you want to add the user to.
+    - **Azure DevOps Groups**: Leave this entry at Project Contributors, the default security group for people who contribute to your project. To learn more, see [Default permissions and access assignments](../security/permissions-access.md).
+    - **Send email invites**: Check the box next to "Send email invites" to invite your new users via their email addresses.
 
     :::image type="content" source="../public/media/invite-users/add-new-users-dialog.png" alt-text="Add new users dialog":::
 
@@ -75,8 +75,8 @@ The external user gets added to the organization to which they were invited and 
 
 ## Related articles
 
-* [What is Azure AD B2B collaboration?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)
+- [What is Azure AD B2B collaboration?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)
 
-* [Migrate to group-based resource management](migrate-to-group-based-resource-management-in-VSTS.md)
+- [Migrate to group-based resource management](migrate-to-group-based-resource-management-in-VSTS.md)
 
-* [Assign access levels and extensions to users by group membership](assign-access-levels-and-extensions-by-group-membership.md)
+- [Assign access levels and extensions to users by group membership](assign-access-levels-and-extensions-by-group-membership.md)

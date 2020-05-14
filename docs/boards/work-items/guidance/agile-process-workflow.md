@@ -109,10 +109,10 @@ By updating the workflow, teams know which items are new, in progress, or comple
 
 A typical workflow progression for a user story follows:
 
-* The product owner creates a user story in the **New** state with the default reason, **New user story**
-* The team updates the status to **Active** when they decide to complete the work during the sprint
-* A user story is moved to **Resolved** when the team has completed all its associated tasks and unit tests for the story pass
-* A user story is moved to the **Closed** state when the product owner agrees that the story has been implemented according to the Acceptance Criteria and acceptance tests pass.
+- The product owner creates a user story in the **New** state with the default reason, **New user story**
+- The team updates the status to **Active** when they decide to complete the work during the sprint
+- A user story is moved to **Resolved** when the team has completed all its associated tasks and unit tests for the story pass
+- A user story is moved to the **Closed** state when the product owner agrees that the story has been implemented according to the Acceptance Criteria and acceptance tests pass.
 
 ### Update status with Kanban or taskboards
 
@@ -164,7 +164,7 @@ When teams estimate work using hours or days, they define tasks and the **Remain
     <td><p><a href="../../queries/build-test-integration.md" data-raw-source="[Integrated in Build](../../queries/build-test-integration.md)">Integrated in Build</a></p></td>
 	<td><p>Product build number that incorporates the code or fixes a bug.</p></td>
 </tr></tbody>
-</table>  
+</table>
 
 If you use [Microsoft Project](../../backlogs/office/create-your-backlog-tasks-using-project.md) to assign resources and track a schedule, you can update these fields using Project.
 

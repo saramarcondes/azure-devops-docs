@@ -16,8 +16,8 @@ ms.date: 02/22/2017
 
 A data validation error occurs when a change in the work item list or project plan violates a rule of the work item type. The following examples show common data validation errors:
 
-* Someone assigns a work item to a team member whose name is not included in the list of allowed values
-* Someone creates a work item but forgets to complete a required field, such as the work item type.
+- Someone assigns a work item to a team member whose name is not included in the list of allowed values
+- Someone creates a work item but forgets to complete a required field, such as the work item type.
 
   If a data validation error occurs when you try to publish changes, the **Work Item Publishing Errors** dialog box appears, and in the **Unpublished work items** list the **Issue** column shows **Validation error** or another phrase that contains **Invalid**.
 
@@ -67,15 +67,15 @@ You can use the Office Excel tools to find and resolve an error in a work item l
 
 5.  In the **Error Checking** dialog box, click **Resume** to find the next data validation error.
 
-    * If the **Error Checking** dialog box shows another error, repeat the previous two steps to resolve the error.
+    - If the **Error Checking** dialog box shows another error, repeat the previous two steps to resolve the error.
 
-    * If a message appears that indicates error checking has completed, click **OK** to close both this message and the **Error Checking** dialog box.
+    - If a message appears that indicates error checking has completed, click **OK** to close both this message and the **Error Checking** dialog box.
 
 ## Related articles
 
-* [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md)
-* [Resolve invalid links](resolve-excel-invalid-links-tree-list.md)
-* [Work in Excel and Project](track-work.md)
+- [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md)
+- [Resolve invalid links](resolve-excel-invalid-links-tree-list.md)
+- [Work in Excel and Project](track-work.md)
 
 ### Required permissions
 

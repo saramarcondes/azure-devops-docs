@@ -59,11 +59,11 @@ If you want to develop your own widget based on Analytics, see [Create an Analyt
 
 Work tracking in-context reports are now based on Analytics data. These reports appear on the **Analytics** tab of the product and portfolio backlogs and Kanban boards. In addition, there are some pipelines and test in-context reports. To learn more, see the following articles:
 
-* [Cumulative flow](../dashboards/cumulative-flow.md)
-* [Team velocity](../dashboards/team-velocity.md)
-* [View/configure sprint burndown](../dashboards/configure-sprint-burndown.md)
-* [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-pass-rate-report)
-* [Test failures report](../../pipelines/test/test-analytics.md#test-failures)
+- [Cumulative flow](../dashboards/cumulative-flow.md)
+- [Team velocity](../dashboards/team-velocity.md)
+- [View/configure sprint burndown](../dashboards/configure-sprint-burndown.md)
+- [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-pass-rate-report)
+- [Test failures report](../../pipelines/test/test-analytics.md#test-failures)
 
 Also, you can add rollup columns to product and portfolio backlogs which provide progress bars, counts of work items, or sums of selected fields. For details, see [Display rollup progress or totals](../../boards/backlogs/display-rollup.md).
 

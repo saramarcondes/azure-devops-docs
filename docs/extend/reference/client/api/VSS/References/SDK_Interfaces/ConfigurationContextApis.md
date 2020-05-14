@@ -19,8 +19,8 @@ MVC api configuration
 
 ### Members
 
-* `areaPrefix`: string. Specifies the path prefix for the area
+- `areaPrefix`: string. Specifies the path prefix for the area
 
-* `controllerPrefix`: string. Specifies the path prefix for the controller
+- `controllerPrefix`: string. Specifies the path prefix for the controller
 
-* `webApiVersion`: string. Api-version for legacy rpc-style web access api controllers See WebApiVersionClient for the version coming from the client/browser. The return value is a positive whole number &gt;= 1.
+- `webApiVersion`: string. Api-version for legacy rpc-style web access api controllers See WebApiVersionClient for the version coming from the client/browser. The return value is a positive whole number &gt;= 1.

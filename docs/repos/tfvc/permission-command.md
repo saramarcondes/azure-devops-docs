@@ -157,31 +157,31 @@ The following example displays the ACL information that relates to the group "de
 c:\projects>tf permission /group:[teamproject]\developers /collection: http://myserver:8080/tfs/DefaultCollection/
 ```
 
-The following example enables members of the "leads" group to change their local copies of all items in the $/baseobjects Team Foundation version control server folder.
+The following example enables members of the "leads" group to change their local copies of all items in the \$/baseobjects Team Foundation version control server folder.
 
 ```
 c:\projects>tf permission /allow:PendChange /group:[teamproject]\leads $/baseobjects
 ```
 
-The following example removes all permission-related settings from the $/baseobjects folder for members of the "developers" group.
+The following example removes all permission-related settings from the \$/baseobjects folder for members of the "developers" group.
 
 ```
 c:\projects>tf permission /remove:* /group:developers $/baseobjects
 ```
 
-The following example enables the group "testers" to change their local copies of all items in $/testproject.
+The following example enables the group "testers" to change their local copies of all items in \$/testproject.
 
 ```
 c:\projects>tf permission /allow:PendChange /group:testers$/testproject
 ```
 
-The following example enables user somealias to make pending changes to his local copy of $/testtproject/314.cs in his workspace.
+The following example enables user somealias to make pending changes to his local copy of \$/testtproject/314.cs in his workspace.
 
 ```
 c:\projects>tf permission /allow:PendChange /user:somealias $/testproject/314.cs.
 ```
 
-The following example denies user somealias the ability to make pending changes to his local copy of $/testproject/1256.cs.
+The following example denies user somealias the ability to make pending changes to his local copy of \$/testproject/1256.cs.
 
 ```
 c:\projects>tf permission /deny:PendChange /user:somealias $/testproject/1256.cs

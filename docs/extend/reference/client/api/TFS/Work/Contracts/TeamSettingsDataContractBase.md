@@ -16,6 +16,6 @@ Module path: `TFS/Work/Contracts`
 
 ### Members
 
-* `_links`: any. Collection of links relevant to resource
+- `_links`: any. Collection of links relevant to resource
 
-* `url`: string. Full http link to the resource
+- `url`: string. Full http link to the resource

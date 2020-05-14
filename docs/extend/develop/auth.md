@@ -21,8 +21,8 @@ ms.date: 08/29/2016
 
 Most extensions have a need to call Azure DevOps Services REST APIs on behalf of the current user.
 
-* If you are using the provided `JavaScript REST clients`, authentication is automatically handled for you. These clients automatically request an access token from the core SDK and set it in the Authorization header of the request.
-* If you are not using the provided clients, you need to request a token from the `Core SDK` and set it in the Authorization header of your request:
+- If you are using the provided `JavaScript REST clients`, authentication is automatically handled for you. These clients automatically request an access token from the core SDK and set it in the Authorization header of the request.
+- If you are not using the provided clients, you need to request a token from the `Core SDK` and set it in the Authorization header of your request:
 
   ```javascript
   VSS.require(["VSS/Authentication/Services"], function(VSS_Auth_Service) {

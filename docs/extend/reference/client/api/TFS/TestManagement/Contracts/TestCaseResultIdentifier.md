@@ -16,6 +16,6 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Members
 
-* `testResultId`: number.
+- `testResultId`: number.
 
-* `testRunId`: number.
+- `testRunId`: number.

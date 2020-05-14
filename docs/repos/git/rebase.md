@@ -30,8 +30,8 @@ In this tutorial you learn how to:
 
 > [!div class="checklist"]
 >
-> * Force push to update your remote branch
-> * Squash local commits
+> - Force push to update your remote branch
+> - Squash local commits
 
 ### Video overview
 

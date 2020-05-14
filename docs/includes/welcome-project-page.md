@@ -14,16 +14,16 @@ When your project has been created, the welcome page appears.
 
 Select one of the following tasks to get started:
 
-* **Boards** to begin [adding work items](/azure/devops/boards/work-items/view-add-work-items).
-* **Repos** to open the [Repos > Files](/azure/devops/repos/git/clone) page. There, you can clone or import a repository or [initialize a README file](/azure/devops/project/wiki/project-vision-status) for your project summary page.
-* **Pipelines** to start [defining a pipeline](/azure/devops/pipelines/index).
-* **Test Plans** to start [defining test plans and test suites](/azure/devops/test/create-a-test-plan).
-* [Manage your services](/azure/devops/settings/set-services) to disable the visibility of one or more services.
+- **Boards** to begin [adding work items](/azure/devops/boards/work-items/view-add-work-items).
+- **Repos** to open the [Repos > Files](/azure/devops/repos/git/clone) page. There, you can clone or import a repository or [initialize a README file](/azure/devops/project/wiki/project-vision-status) for your project summary page.
+- **Pipelines** to start [defining a pipeline](/azure/devops/pipelines/index).
+- **Test Plans** to start [defining test plans and test suites](/azure/devops/test/create-a-test-plan).
+- [Manage your services](/azure/devops/settings/set-services) to disable the visibility of one or more services.
 
 To get started managing your project, see [Get started as an administrator](/azure/devops/user-guide/project-admin-tutorial).
 
 For more information about organizations and projects, see these articles:
 
-* [Define organizations and projects](/azure/devops/user-guide/define-organizations-and-projects)
-* [About projects and scaling your organization](/azure/devops//organizations/about-projects)
-* [Manage projects](/azure/devops/organizations/projects/index)
+- [Define organizations and projects](/azure/devops/user-guide/define-organizations-and-projects)
+- [About projects and scaling your organization](/azure/devops//organizations/about-projects)
+- [Manage projects](/azure/devops/organizations/projects/index)

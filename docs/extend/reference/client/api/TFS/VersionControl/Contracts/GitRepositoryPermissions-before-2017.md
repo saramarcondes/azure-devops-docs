@@ -18,14 +18,14 @@ the [current list of permissions](GitRepositoryPermissions.md)._
 
 ### Values
 
-* `None`
-* `Administer`
-* `GenericRead`
-* `GenericContribute`
-* `ForcePush`
-* `CreateBranch`
-* `CreateTag`
-* `ManageNote`
-* `PolicyExempt`
-* `All` This defines the set of bits that are valid for the git permission space. When reading or writing git permissions, these are the only bits paid attention too.
-* `BranchLevelPermissions`
+- `None`
+- `Administer`
+- `GenericRead`
+- `GenericContribute`
+- `ForcePush`
+- `CreateBranch`
+- `CreateTag`
+- `ManageNote`
+- `PolicyExempt`
+- `All` This defines the set of bits that are valid for the git permission space. When reading or writing git permissions, these are the only bits paid attention too.
+- `BranchLevelPermissions`

@@ -287,8 +287,8 @@ To update your existing projects hosted on an on-premises Azure DevOps to access
 
 See the following resources as they relate to updating your project:
 
-* [Update a customized process template to access new features](../../../reference/update-customized-process-template.md)
-* [Add features using a manual update process](../../../reference/add-features-manually.md)
-* [Before you upgrade TFS](../../../reference/upgrade-tfs-2008-or-2010.md)
-* [Additional configuration options](../../../reference/additional-configuration-options.md)
-* [Upload reports to a project](../../../Report/admin/upload-reports.md)
+- [Update a customized process template to access new features](../../../reference/update-customized-process-template.md)
+- [Add features using a manual update process](../../../reference/add-features-manually.md)
+- [Before you upgrade TFS](../../../reference/upgrade-tfs-2008-or-2010.md)
+- [Additional configuration options](../../../reference/additional-configuration-options.md)
+- [Upload reports to a project](../../../Report/admin/upload-reports.md)

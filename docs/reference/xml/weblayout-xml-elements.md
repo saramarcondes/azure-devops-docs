@@ -35,10 +35,10 @@ When the new form roll out is enabled, the XML definitions for all work item typ
 
 The new form makes available several new features as described in [New work item experience](../process/new-work-item-experience.md). Your account or project collection administrator manages the [switch to the new form](../manage-new-form-rollout.md).
 
-* For the [Inheritance process model](../../organizations/settings/work/manage-process.md), the switch to the new form is automatic for all user accounts.
-* For the [Hosted XML process model](../../organizations/settings/work/import-process/import-process.md), an admin must [enable the new form](../manage-new-form-rollout.md). <br/>
-* For TFS 2017, the new form is automatically available when you add projects to a new collection. For existing projects, an admin must [enable the new form](../manage-new-form-rollout.md). <br/>
-* For TFS 2015 the new form isn't available. You must [upgrade to TFS 2017 or a later version](https://visualstudio.microsoft.com/downloads/) to access the new form.
+- For the [Inheritance process model](../../organizations/settings/work/manage-process.md), the switch to the new form is automatic for all user accounts.
+- For the [Hosted XML process model](../../organizations/settings/work/import-process/import-process.md), an admin must [enable the new form](../manage-new-form-rollout.md). <br/>
+- For TFS 2017, the new form is automatically available when you add projects to a new collection. For existing projects, an admin must [enable the new form](../manage-new-form-rollout.md). <br/>
+- For TFS 2015 the new form isn't available. You must [upgrade to TFS 2017 or a later version](https://visualstudio.microsoft.com/downloads/) to access the new form.
 
 ## Element and attribute summary
 
@@ -58,8 +58,8 @@ The **WebLayout** and updated **Control** elements introduce several new element
 
 In the new web form layout, the system manages several header elements within the **SystemControls** element. These include:
 
-* **Fields**: Work item ID, Title, Assigned To, State, Reason, Area Path, Iteration Path, and tags
-* **Pages**: ![History page icon](../../boards/media/icons/icon-history-tab-wi.png) History, ![Links page icon](../../boards/media/icons/icon-links-tab-wi.png) Links, and ![Attachments page icon](../../boards/media/icons/icon-attachments-tab-wi.png) Attachments.
+- **Fields**: Work item ID, Title, Assigned To, State, Reason, Area Path, Iteration Path, and tags
+- **Pages**: ![History page icon](../../boards/media/icons/icon-history-tab-wi.png) History, ![Links page icon](../../boards/media/icons/icon-links-tab-wi.png) Links, and ![Attachments page icon](../../boards/media/icons/icon-attachments-tab-wi.png) Attachments.
 
 <img src="media/weblayout-system-controls-details-page.png" alt="Header element within web form" style="border: 2px solid #C3C3C3;" />
 
@@ -211,15 +211,15 @@ You can specify how information and work item fields are grouped and appear in a
 
 Within a **Page** element within the **WebLayout** element, you can nest the following elements:
 
-* **Page** elements within a single **WebLayout** element
-* **Section** elements within a **Page** element, limit the number of **Section** elements to four within a **Page**
-* **Group** elements within a **Section** element
-* **Control** elements within a **Group** element.
+- **Page** elements within a single **WebLayout** element
+- **Section** elements within a **Page** element, limit the number of **Section** elements to four within a **Page**
+- **Group** elements within a **Section** element
+- **Control** elements within a **Group** element.
 
 Within a **PinnedControls** element within the WebLayout element, you can nest the following elements (requires TFS 2018 (RC2) or Hosted XML process model):
 
-* **Section** elements within a single **PinnedControls** element, limit the number of **Section** elements to three
-* **Control** elements within a **Section** element, limit the number of **Control** elements to three
+- **Section** elements within a single **PinnedControls** element, limit the number of **Section** elements to three
+- **Control** elements within a **Section** element, limit the number of **Control** elements to three
 
 > [!TIP]  
 > The schema definition for work item tracking defines all **FORM** child elements as camel case and all other elements as all capitalized. If you encounter errors when validating your type definition files, check the case structure of your elements. Also, the case structure of opening and closing tags must match according to the rules for XML syntax. For more information, see [Control XML element reference](control-xml-element-reference.md).
@@ -567,10 +567,10 @@ Label=&quot;Release Notes&quot; Dock=&quot;Fill&quot; /&gt;
 
 If you're just getting started with the new form, see these additional topics to manage the roll out or customize it:
 
-* [Manage new form rollout](../manage-new-form-rollout.md)
-* [New work item experience](../process/new-work-item-experience.md)
-* [Customize the new form](../customize-wit-form.md) (Hosted XML and On-premises XML process models)
-* [LinksControlOptions elements](linkscontroloptions-xml-elements.md)
+- [Manage new form rollout](../manage-new-form-rollout.md)
+- [New work item experience](../process/new-work-item-experience.md)
+- [Customize the new form](../customize-wit-form.md) (Hosted XML and On-premises XML process models)
+- [LinksControlOptions elements](linkscontroloptions-xml-elements.md)
 
 To learn more about process models and what's supported with each, see [Customize your work tracking experience](../customize-work.md).
 
@@ -610,13 +610,13 @@ Extension:
             Id: Colors
             Description: The field associated with the control.
             Type: String
-            IsRequired: false  
+            IsRequired: false
 Extension:
     Name: vsts-workitem-recentlyviewed
-    Id: mmanela.vsts-workitem-recentlyviewed  
+    Id: mmanela.vsts-workitem-recentlyviewed
     Group contribution:
         Id: mmanela.vsts-workitem-recentlyviewed.recently-viewed-form-group
-        Description: Recently viewed work item form group  
+        Description: Recently viewed work item form group
 Extension:
     Name: vsts-extensions-multi-values-control
     Id: ms-devlabs.vsts-extensions-multi-values-control

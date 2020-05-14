@@ -106,7 +106,7 @@ If you want to collect more diagnostic data for your desktop application, run yo
 
 ## See also
 
-* [FAQs for manual testing](reference-qa.md#runtests)
+- [FAQs for manual testing](reference-qa.md#runtests)
 
 ## Next step
 

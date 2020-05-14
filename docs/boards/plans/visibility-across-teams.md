@@ -19,9 +19,9 @@ Agile tools provide each team a wealth of ways to gain visibility into their wor
 
 You have three main ways to track progress across several teams.
 
-* Management teams can define [Delivery Plans](#plans) that provide visibility into the deliverables several teams have scheduled
-* Each management team can use their Agile tools, and in particular [portfolio backlogs](#portfolio-backlogs), to gain visibility of the feature teams defined under their area path
-* Management teams can create [dashboards](#dashboards) that monitor status, progress, and trends across several teams.
+- Management teams can define [Delivery Plans](#plans) that provide visibility into the deliverables several teams have scheduled
+- Each management team can use their Agile tools, and in particular [portfolio backlogs](#portfolio-backlogs), to gain visibility of the feature teams defined under their area path
+- Management teams can create [dashboards](#dashboards) that monitor status, progress, and trends across several teams.
 
 For an overview of all team tools, see [Manage teams and configure team tools](../../organizations/settings/manage-teams.md).
 
@@ -46,8 +46,8 @@ The first level of gaining visibility across several teams is to configure your 
 
 We recommend that you structure your teams as follows:
 
-* Add a management team for a group of feature teams; these teams own epics and turn on only the Epic portfolio backlog level
-* Add feature teams to manage features, stories and tasks, and turn on the stories and features backlog levels
+- Add a management team for a group of feature teams; these teams own epics and turn on only the Epic portfolio backlog level
+- Add feature teams to manage features, stories and tasks, and turn on the stories and features backlog levels
 
 The management team creates the epics, and then they or their feature teams break the epics down into features and then [map their features to the epics](../backlogs/organize-backlog.md) on the management backlog.
 
@@ -58,10 +58,10 @@ Limiting the backlog levels for each team&mdash;Epics for management teams and F
 
 With the multi-team portfolio backlog view, you can:
 
-* Review priorities with your team and reorder features to support current priorities
-* You can drill down to see the status of each feature's child user stories or PBIs
-* Filter the backlog based on keyword or tag to focus on specific teams or categorized items
-* (Optional) You can use the [mapping feature](../backlogs/organize-backlog.md) to map user stories or PBIs to features
+- Review priorities with your team and reorder features to support current priorities
+- You can drill down to see the status of each feature's child user stories or PBIs
+- Filter the backlog based on keyword or tag to focus on specific teams or categorized items
+- (Optional) You can use the [mapping feature](../backlogs/organize-backlog.md) to map user stories or PBIs to features
 
 ### View child items owned by other teams
 
@@ -144,8 +144,8 @@ For example, here we've added three query-based charts, one for each team, to a 
 
 When defining multi-team dashboards, consider the following:
 
-* What are you wanting to learn and how will it drive your organization's actions
-* What time frame is of interest.
+- What are you wanting to learn and how will it drive your organization's actions
+- What time frame is of interest.
 
 Review [Agile culture](agile-culture.md) and [Practices that scale](practices-that-scale.md) for guidance on team autonomy and organizational alignment.
 
@@ -155,9 +155,9 @@ Review [Agile culture](agile-culture.md) and [Practices that scale](practices-th
 
 Use the [Query Results widget](../../report/dashboards/widget-catalog.md#query-results-widget) to provide a list of features by state:
 
-* Completed features (Done or Closed)
-* New features (New or Proposed)
-* Features being actively worked (In Progress or Active)
+- Completed features (Done or Closed)
+- New features (New or Proposed)
+- Features being actively worked (In Progress or Active)
 
 Use the [Chart for work items widget](../../report/dashboards/widget-catalog.md#chart-wit-widget) to add query-based charts. To learn more about creating query-based charts, see [Charts](../../report/dashboards/charts.md).
 
@@ -178,10 +178,10 @@ Active bug trends
 
 Another measure of project health and the health of the teams is to monitor bug activity and bug debt. Consider the charts you can create that will help you answer these questions:
 
-* Are bugs getting fixed? at a rate that's acceptable?
-* How stale are bugs?
-* Is the bug debt per team being maintained?
-* Is the ratio of high priority bugs being kept within organizational goals?
+- Are bugs getting fixed? at a rate that's acceptable?
+- How stale are bugs?
+- Is the bug debt per team being maintained?
+- Is the ratio of high priority bugs being kept within organizational goals?
 
 For tips on creating queries based on counts or numeric fields, see [Query by numeric field](../queries/query-numeric.md).
 
@@ -211,7 +211,7 @@ As you can see, there are a number of ways you can monitor progress and trends a
 
 Here are some additional topics that address working with multiple teams:
 
-* [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md)
-* [Review team plans](review-team-plans.md)
-* [Add teams](../../organizations/settings/add-teams.md)
-* [Portfolio management](portfolio-management.md)
+- [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md)
+- [Review team plans](review-team-plans.md)
+- [Add teams](../../organizations/settings/add-teams.md)
+- [Portfolio management](portfolio-management.md)

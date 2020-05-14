@@ -25,12 +25,12 @@ The Work Item perspective is based on the relational tables that enable reportin
 
 By using the Work Item perspective, you can create reports that answer the following questions:
 
-* What was the total count of active bugs each day in the last iteration?
-* How many scenarios were active each month during the last year?
-* How many bugs of each priority have been active each day in the last month?
-* How much outstanding and remaining work has a set of work items had over the last month?
-* How much work did a particular group of developers finish?
-* How much additional work was created after a particular date?
+- What was the total count of active bugs each day in the last iteration?
+- How many scenarios were active each month during the last year?
+- How many bugs of each priority have been active each day in the last month?
+- How much outstanding and remaining work has a set of work items had over the last month?
+- How much work did a particular group of developers finish?
+- How much additional work was created after a particular date?
 
 > [!NOTE]  
 > If your data warehouse is using SQL Server Enterprise Edition, the list of cubes will include Team System and a set of perspectives. The perspectives provide a focused view of the data so that you do not have to scroll through all of the dimensions and measure groups in the whole Team System cube.
@@ -59,15 +59,15 @@ You can create a bug reactivations report by performing the following steps:
 
 3.  For each report filter, open the shortcut menu for each of the following fields, specify the hierarchies, weeks, or other elements of interest, and then drag the field to the **Report Filter** area.
 
-    * **Team Project Hierarchy** from the **Team Project** dimension.
+    - **Team Project Hierarchy** from the **Team Project** dimension.
 
-    * **Work Item.Iteration Hierarchy** from the **Work Item** dimension.
+    - **Work Item.Iteration Hierarchy** from the **Work Item** dimension.
 
-    * **Work Item.Area Hierarchy** from the **Work Item** dimension.
+    - **Work Item.Area Hierarchy** from the **Work Item** dimension.
 
-    * **Work Item.Work Item Type** from the **Work Item** dimension. Select the **Bug** check box as the only type to display.
+    - **Work Item.Work Item Type** from the **Work Item** dimension. Select the **Bug** check box as the only type to display.
 
-    * **Year Week Date** from the **Date** dimension.
+    - **Year Week Date** from the **Date** dimension.
 
 4.  In the **Date** dimension, expand **More fields**, and drag the **Date**, **Week**, or **Month** fields to the **Axis Fields (Categories)** area to specify how granular a report you want to generate.
 
@@ -170,9 +170,9 @@ The Work Item and Test Case dimensions contain all attributes that are specific 
 
 Attributes appear under display folders in the Test Case and Work Item dimensions. Dimension attributes are organized into folders that are based on the reporting reference name that is assigned in the definition of each type of work item. The following types of mapping occur:
 
-* Intrinsic fields, which have the "System" prefix, appear directly under the Test Case or Work Item dimension.
+- Intrinsic fields, which have the "System" prefix, appear directly under the Test Case or Work Item dimension.
 
-* Other fields appear under folders whose names correspond to the prefixes in the reference names of the fields. For example, fields that have the "Microsoft.VSTS.Common" prefix appear under the folder that is labeled "Microsoft.VSTS.Common."
+- Other fields appear under folders whose names correspond to the prefixes in the reference names of the fields. For example, fields that have the "Microsoft.VSTS.Common" prefix appear under the folder that is labeled "Microsoft.VSTS.Common."
 
   For example, work item fields appear under the Work Item dimension, as the following illustration shows. The Linked Work Item and Test Case dimensions have similar structures.
 
@@ -304,21 +304,21 @@ You can use the Work Item Count measure not only to determine how many work item
 
 To create reports that contain useful data about the status, progress, and trends about work items, team members must perform the following activities:
 
-* **Create work items**. Team members must create work items to manage the backlog of user stories or bugs, to track work by using tasks, and to manage test cases. Update the state of work items based on the process guidance for each type of work item.
+- **Create work items**. Team members must create work items to manage the backlog of user stories or bugs, to track work by using tasks, and to manage test cases. Update the state of work items based on the process guidance for each type of work item.
 
   For more information, see [Agile work items and workflow](../../boards/work-items/guidance/agile-process-workflow.md), [CMMI work items and workflow](../../boards/work-items/guidance/cmmi-process-workflow.md), or [Scrum work items and workflow](../../boards/work-items/guidance/scrum-process-workflow.md).
 
-* **Link work items to other work items or changesets**. To track relationships between work items, team members must create links between, for example, user stories and tasks. Team members can create other useful links such as those between user stories and test cases, bugs and test cases, and changesets and user stories, tasks, and bugs. Team members can show relatedness, dependency, or hierarchy by specifying the appropriate type of link.
+- **Link work items to other work items or changesets**. To track relationships between work items, team members must create links between, for example, user stories and tasks. Team members can create other useful links such as those between user stories and test cases, bugs and test cases, and changesets and user stories, tasks, and bugs. Team members can show relatedness, dependency, or hierarchy by specifying the appropriate type of link.
 
   For more information, see [Manage dependencies, link work items](../../boards/queries/link-work-items-support-traceability.md).
 
-* **Specify area and iteration paths**. To monitor status or trends on product areas or milestones by filtering reports, team members must set the Area and Iteration fields for each work item.
+- **Specify area and iteration paths**. To monitor status or trends on product areas or milestones by filtering reports, team members must set the Area and Iteration fields for each work item.
 
-* **Assign work to owners and update the work item State**. As work progresses, team members must change the State of the work items that are assigned to them as the work items move from a new or proposed state, to active or in progress, to closed or done
+- **Assign work to owners and update the work item State**. As work progresses, team members must change the State of the work items that are assigned to them as the work items move from a new or proposed state, to active or in progress, to closed or done
 
-* **Update the work effort**. To monitor progress that a team has made in completing work for an iteration or other interval of time, team members must update the amount of completed and remaining work for the work items that are assigned to them.
+- **Update the work effort**. To monitor progress that a team has made in completing work for an iteration or other interval of time, team members must update the amount of completed and remaining work for the work items that are assigned to them.
 
 ## Related notes
 
-* [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)
-* [Perspectives and measure groups in the Analysis Services cube](perspective-measure-groups-cube.md)
+- [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)
+- [Perspectives and measure groups in the Analysis Services cube](perspective-measure-groups-cube.md)

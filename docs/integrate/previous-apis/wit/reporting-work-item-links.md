@@ -25,7 +25,7 @@ The workflow for building your warehouse is as follows:
 1.  Make a request to the API without providing a watermark parameter
 2.  Process the work item links returned by the API
 3.  Persist "nextLink" and check "isLastBatch"
-    * If "isLastBatch" is true, pause for a period of time (varies depending on your target latency)
+    - If "isLastBatch" is true, pause for a period of time (varies depending on your target latency)
 4.  Make the next request using the URL from "nextLink"
 5.  Go to step 2
 

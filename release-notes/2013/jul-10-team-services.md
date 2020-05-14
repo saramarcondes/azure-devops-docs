@@ -31,9 +31,9 @@ Finally, the “Ticket administration” feature is now pulled into my view as i
 
 We also made a change today to “who can do what” at the team level. Before today’s changes, all team members could perform the following actions:
 
-* Editing team areas (the area path where the team backlog is stored)
-* Editing team iterations (the iterations the team is participating in)
-* Editing Kanban columns including WIP limits
+- Editing team areas (the area path where the team backlog is stored)
+- Editing team iterations (the iterations the team is participating in)
+- Editing Kanban columns including WIP limits
 
 With today’s change, we’ve restricted these permissions to only team administrators. To add new team administrators, you’ll need to go to the administration page for your team. There you can select users you’d like to grant these permissions to.
 

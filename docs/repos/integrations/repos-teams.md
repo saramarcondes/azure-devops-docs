@@ -25,22 +25,22 @@ Read this article to learn how to:
 
 > [!div class="checklist"]
 >
-> * Add the Azure Repos app to your team in Microsoft Teams
-> * Connect the Azure Repos app to your repositories
-> * Manage subscriptions to repository related events in your channel
-> * Using filters effectively to customize subscriptions
+> - Add the Azure Repos app to your team in Microsoft Teams
+> - Connect the Azure Repos app to your repositories
+> - Manage subscriptions to repository related events in your channel
+> - Using filters effectively to customize subscriptions
 
 ## Prerequisites
 
-* To create subscriptions for repository-related events, you must be a member of the Azure DevOps Project Administrators group or Team Administrators group. To get added, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md) or [Add Team Administrator](../../organizations/settings/add-team-administrator.md).
+- To create subscriptions for repository-related events, you must be a member of the Azure DevOps Project Administrators group or Team Administrators group. To get added, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md) or [Add Team Administrator](../../organizations/settings/add-team-administrator.md).
   To get added, see [Set permissions at the project or collection level](../../organizations/security/set-project-collection-level-permissions.md).
-* To receive notifications, the **Third-party application access via OAuth** setting must be enabled for the Azure DevOps organization. See [Change application
+- To receive notifications, the **Third-party application access via OAuth** setting must be enabled for the Azure DevOps organization. See [Change application
   access policies for your organization](../../organizations/accounts/change-application-access-policies.md).
 
 > [!NOTE]
 >
-> * Notifications are currently not supported inside direct messages.
-> * You can only link the Azure Repos app for Microsoft Teams to a project hosted on Azure DevOps Services at this time.
+> - Notifications are currently not supported inside direct messages.
+> - You can only link the Azure Repos app for Microsoft Teams to a project hosted on Azure DevOps Services at this time.
 
 ## Add the Azure Repos app to your team in Microsoft Teams
 
@@ -137,8 +137,8 @@ The following steps demonstrate how to customize subscriptions.
 
 > [!NOTE]
 >
-> * All the filters are typically drop-downs. However if the drop-down were to have greater than 100 items, then you will need to enter the values manually.
-> * For the TFVC **Code Checked in** event, the filter **Under path** must be of the format `$/myproject/path`.
+> - All the filters are typically drop-downs. However if the drop-down were to have greater than 100 items, then you will need to enter the values manually.
+> - For the TFVC **Code Checked in** event, the filter **Under path** must be of the format `$/myproject/path`.
 
 ## Search and share pull request information using compose extension
 
@@ -156,7 +156,7 @@ For this feature to work, users have to be signed-in. Once they are signed in, t
 
 ## Remove subscriptions and repositories from a channel
 
-* Many a time, users want to clean up their channel by removing repositories and subscriptions. Use the below command to achieve the same.
+- Many a time, users want to clean up their channel by removing repositories and subscriptions. Use the below command to achieve the same.
 
       ```
       @azure repos unsubscribe all [project url]
@@ -172,7 +172,7 @@ For this feature to work, users have to be signed-in. Once they are signed in, t
 
 ## Threaded notifications
 
-* To logically link a set of related notifications and also to reduce the space occupied by notifications in a channel, notifications are threaded. All notifications linked to a particular pull request will be linked together.
+- To logically link a set of related notifications and also to reduce the space occupied by notifications in a channel, notifications are threaded. All notifications linked to a particular pull request will be linked together.
 
 ### Compact view of threaded notifications
 
@@ -211,5 +211,5 @@ If these steps don't resolve your authentication issue, please out to us at [Dev
 
 ## Related articles
 
-* [Azure Boards with Teams](https://aka.ms/AzureBoardsTeamsIntegration)
-* [Azure Pipelines with Teams](https://aka.ms/AzurePipelinesTeamsIntegration)
+- [Azure Boards with Teams](https://aka.ms/AzureBoardsTeamsIntegration)
+- [Azure Pipelines with Teams](https://aka.ms/AzurePipelinesTeamsIntegration)

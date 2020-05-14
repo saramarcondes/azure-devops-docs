@@ -16,37 +16,37 @@ monikerRange: '>= tfs-2017'
 
 Automate test cases in your test plans and run them directly from [!INCLUDE [test-hub-include-nolink](includes/test-hub-include-nolink.md)]:
 
-* Provides a user-friendly process for testers who may not be well
+- Provides a user-friendly process for testers who may not be well
   versed with running tests in Build or Release workflows.
 
-* Gives you the flexibility to run selected tests on demand,
+- Gives you the flexibility to run selected tests on demand,
   rather than scheduled testing in Build or Release workflows
   where all tests meeting the filter criteria are run.
 
-* Useful when you want to rerun a few tests that failed due
+- Useful when you want to rerun a few tests that failed due
   to test infrastructure issues, or you have a new build that
   includes fixes for failed tests.
 
 <a name="prerequisites"></a>
 You will need:
 
-* A [test plan](create-a-test-plan.md)
+- A [test plan](create-a-test-plan.md)
   containing your automated tests, which you have associated with automated test methods using
   [Visual Studio 2017](associate-automated-test-with-test-case.md),
   or [Visual Studio 2015 or earlier](https://msdn.microsoft.com/library/dd380741%28v=vs.120%29.aspx).
 
-* A [Team Build pipeline](../pipelines/apps/windows/dot-net.md)
+- A [Team Build pipeline](../pipelines/apps/windows/dot-net.md)
   that generates builds containing the test binaries.
 
-* The app to test. You can deploy the app as part of the
+- The app to test. You can deploy the app as part of the
   [build and release workflow](../pipelines/overview.md) and also use it for on-demand testing.
 
 You must also be a Project Contributor, or have the following permissions:
 
-* Create releases
-* Manage releases
-* Edit release environment
-* Manage deployment
+- Create releases
+- Manage releases
+- Edit release environment
+- Manage deployment
 
 For more information, see [Set permissions for release pipelines](../pipelines/policies/set-permissions.md) and
 [Release permissions](../pipelines/policies/permissions.md#release-permissions).
@@ -86,22 +86,22 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
 
 6.  Add the [Visual Studio Test task](../pipelines/tasks/test/vstest.md) to the release pipeline and configure it as follows:
 
-    * Verify that version 2 of the Visual Studio Test task is selected.
+    - Verify that version 2 of the Visual Studio Test task is selected.
       The version number is shown in the drop-down list at the top left
       of the task settings panel.
 
       ![Checking the task version number setting](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-03.png)
 
-    * Verify that **Select tests using** is set to **Test run**.
+    - Verify that **Select tests using** is set to **Test run**.
       [What does this setting mean?](#faq-ondemandruns)
 
       ![Checking the test selection method setting](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-02.png)
 
-    * For the **Test platform version** setting, select **Installed by Tools Installer**.
+    - For the **Test platform version** setting, select **Installed by Tools Installer**.
 
       ![Setting the installer option](media/run-automated-tests-from-test-hub/set-installer.png)
 
-    * If you have UI tests that run on **physical browsers** or **thick clients**,
+    - If you have UI tests that run on **physical browsers** or **thick clients**,
       ensure that the agent is set to run as an interactive process with
       auto-logon enabled. Setting up an agent to run interactively must be
       done before queueing the build or release (setting the **Test mix
@@ -109,14 +109,14 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
       mode automatically - it is used only as a reminder to configure
       the agent appropriately to avoid failures).
 
-    * If you are running UI tests on a **headless browser**, the interactive process
+    - If you are running UI tests on a **headless browser**, the interactive process
       configuration is not required.
 
-    * Select how is the test platform is provisioned, and the version of
+    - Select how is the test platform is provisioned, and the version of
       Visual Studio or the location of the test platform that is installed
       on the test machines
 
-    * If your tests need **input parameters** such as app URLs or database
+    - If your tests need **input parameters** such as app URLs or database
       connection strings, select the relevant settings file from the
       build artifacts. You can use the **Publish build artifacts** tasks
       in you build pipeline to publish the settings file in a drop
@@ -221,10 +221,10 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
 
 You must be a Project Contributor, or have the following permissions:
 
-* Create releases
-* Manage releases
-* Edit release stage
-* Manage deployment
+- Create releases
+- Manage releases
+- Edit release stage
+- Manage deployment
 
 For more information, see [Set permissions for release pipelines](../pipelines/policies/set-permissions.md) and
 [Release permissions](../pipelines/policies/permissions.md#release-permissions).
@@ -239,13 +239,13 @@ Open the shortcut menu for the test suite in the left column and choose
 
 Enter the following values in the Run with options dialog and then choose **OK**:
 
-* **Test type and runner**: Select **Automated tests using Release Stage**.
+- **Test type and runner**: Select **Automated tests using Release Stage**.
 
-* **Build**: Select the build that has the test binaries. The test results will be associated this build.
+- **Build**: Select the build that has the test binaries. The test results will be associated this build.
 
-* **Release Pipeline**: Select a pipeline from the list of release pipelines that can consume the selected build artifact.
+- **Release Pipeline**: Select a pipeline from the list of release pipelines that can consume the selected build artifact.
 
-* **Release Stage**: Select the name of the stage configured in your release pipeline.<p />
+- **Release Stage**: Select the name of the stage configured in your release pipeline.<p />
 
 ![Configuring the Run with options dialog](media/run-auto-tests-from-hub-09a.png)
 
@@ -312,16 +312,16 @@ non-Azure Pipelines artifacts such as Jenkins, based on user feedback.
 
 **A:** We recommend you use a separate release pipeline and stage for on-demand automated testing from Azure Test Plans because:
 
-* You may not want to deploy the app every time you want to run a few on-demand tests.
+- You may not want to deploy the app every time you want to run a few on-demand tests.
   Scheduled testing stages are typically set up to deploy the product and then run tests.
 
-* New releases are triggered for every on-demand run. If you have many
+- New releases are triggered for every on-demand run. If you have many
   testers executing a few on-demand test runs every day, your scheduled
   testing release pipeline could be overloaded with releases for these
   runs, making it difficult to find releases that were triggered for the
   pipeline that contains scheduled testing and deployment to production.
 
-* You may want to configure the Visual Studio Test task with a Test run
+- You may want to configure the Visual Studio Test task with a Test run
   identifier as an input so that you can trace what triggered the release.
   See [How does selecting "Test run (for on-demand runs)" in the Visual Studio Test task work?](#faq-ondemandruns).
 
@@ -338,27 +338,27 @@ in the web-based interface. No further development is planned for Microsoft Test
 **A:** They can use the same release pipeline to trigger multiple
 test runs in parallel if:
 
-* The agent pool associated with the stage has sufficient agents
+- The agent pool associated with the stage has sufficient agents
   to cater for parallel requests. If sufficient agents are not available,
   runs can still be triggered but releases will be queued for processing
   until agents are available.
 
-* You have sufficient jobs to enable parallel jobs.
+- You have sufficient jobs to enable parallel jobs.
   See [Parallel jobs in Azure Pipelines](../pipelines/licensing/concurrent-jobs.md)
   or [Parallel jobs in TFS](../pipelines/licensing/concurrent-pipelines-tfs.md) for more information.
 
-* Testers do not run the same tests in parallel. Doing so may cause
+- Testers do not run the same tests in parallel. Doing so may cause
   results to be overwritten depending on the order of execution.
 
 To enable multiple different test runs to execute in parallel, set the Azure Pipelines stage trigger option for
 [behavior when multiple releases are waiting to be deployed](../pipelines/release/triggers.md#env-triggers)
 as follows:
 
-* If your application supports tests running in parallel from different
+- If your application supports tests running in parallel from different
   sources, set this option to
   **Allow multiple releases to be deployed at the same time**.
 
-* If your application does not support tests running in parallel
+- If your application does not support tests running in parallel
   from different sources, set this option to
   **Allow only one active deployment at a time**.
 
@@ -379,39 +379,39 @@ must be specified in the [Visual Studio Test task](../pipelines/tasks/test/vstes
 
 **A:** Check and resolve issues as follows:
 
-* The release pipeline and stage in which I want to run tests
+- The release pipeline and stage in which I want to run tests
   are not shown after I select the build.
 
-  * Make sure the build pipeline that is generating the build is linked
+  - Make sure the build pipeline that is generating the build is linked
     as the primary artifact in the **Artifacts** tab of the release pipeline.<p />
 
-* I get an error that I don't have sufficient permission to trigger a release.
-  * Configure **Create releases** and **Manage deployments** permissions for
+- I get an error that I don't have sufficient permission to trigger a release.
+  - Configure **Create releases** and **Manage deployments** permissions for
     the user in the **Security** menu of the release pipeline.
     See [Release permissions](../pipelines/policies/permissions.md#release-permissions).<p />
-* I get an error that no automated tests were found.
+- I get an error that no automated tests were found.
 
-  * Check the automation status of the selected tests. Do this in the work item
+  - Check the automation status of the selected tests. Do this in the work item
     for the test case, or use the **Column options** link in **Azure Test Plans**
     to add the **Automation status** column to the list
     of tests. See the [pre-requisites section](run-automated-tests-from-test-hub.md#prerequisites) for information
     about automating manual tests.<p />
 
-* My tests didn't execute, and I suspect the release pipeline is incorrect.
+- My tests didn't execute, and I suspect the release pipeline is incorrect.
 
-  * Use the link in the **Run summary** page to access the release instance
+  - Use the link in the **Run summary** page to access the release instance
     used to run the tests, and view the release logs.<p />
 
-* My tests go into the error state, or remain "in-progress" even after release to the stage is triggered.
-  * Check if the release stage that you selected has the correct task
+- My tests go into the error state, or remain "in-progress" even after release to the stage is triggered.
+  - Check if the release stage that you selected has the correct task
     and version selected. You must use version 2 or higher of the **Visual Studio
     Test** task. Version 1 of the task, and the **Run Functional Tests** task,
     are not supported.<p />
 
 ## See Also
 
-* [Associate automated tests with test cases](associate-automated-test-with-test-case.md)
-* [Associate automated test results with requirements](associate-automated-results-with-requirements.md)
-* [Continuous testing scenarios and capabilities](index.yml)
+- [Associate automated tests with test cases](associate-automated-test-with-test-case.md)
+- [Associate automated test results with requirements](associate-automated-results-with-requirements.md)
+- [Continuous testing scenarios and capabilities](index.yml)
 
 [!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

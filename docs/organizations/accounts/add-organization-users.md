@@ -20,9 +20,9 @@ This article describes how to add and manage user access through Direct assignme
 
 The following types of users can join your organization for free:
 
-* Five users who get [Basic features](https://azure.microsoft.com/services/devops/compare-features/), such as version control, tools for Agile, Java, build, release, and more
-* Unlimited users who get [Stakeholder features](https://azure.microsoft.com/services/devops/compare-features/), such as working with your backlog, work items, and queries
-* Unlimited [Visual Studio subscribers](https://azure.microsoft.com/services/devops/compare-features/) who also get Basic features. Additional features, such as [Azure Test Plans](https://azure.microsoft.com/services/devops/test-plans/), can be assigned to users by access level, Basic + Test Plans.
+- Five users who get [Basic features](https://azure.microsoft.com/services/devops/compare-features/), such as version control, tools for Agile, Java, build, release, and more
+- Unlimited users who get [Stakeholder features](https://azure.microsoft.com/services/devops/compare-features/), such as working with your backlog, work items, and queries
+- Unlimited [Visual Studio subscribers](https://azure.microsoft.com/services/devops/compare-features/) who also get Basic features. Additional features, such as [Azure Test Plans](https://azure.microsoft.com/services/devops/test-plans/), can be assigned to users by access level, Basic + Test Plans.
 
 [Need more users with Basic features?](../billing/buy-basic-access-add-users.md)
 
@@ -60,14 +60,14 @@ To give other users access to your organization, add their email addresses.
     > [!div class="mx-imgBorder"]  
     > ![Web portal, organization admin context, Add new users dialog box](media/add-organization-users-from-user-hub/add-new-users-dialog.png)
 
-    * **Users:** Enter the email addresses (Microsoft accounts) or GitHub usernames for the users. You can add several email addresses by separating them with a semicolon (;). An email address appears in red when it's accepted. For more information about GitHub authentication, see [FAQs](../security/faq-github-authentication.md).
-    * **Access level:** Leave the access level as **Basic** for users who will contribute to the code base. To learn more, see [About access levels](/azure/devops/organizations/security/access-levels).
-    * **Add to projects:** Select the project you want to add them to.
-    * **Azure DevOps Groups:** Leave as **Project Contributors**, the default security group for users who will contribute to your project. To learn more, see [Default permissions and access assignments](/azure/devops/organizations/security/permissions-access).
+    - **Users:** Enter the email addresses (Microsoft accounts) or GitHub usernames for the users. You can add several email addresses by separating them with a semicolon (;). An email address appears in red when it's accepted. For more information about GitHub authentication, see [FAQs](../security/faq-github-authentication.md).
+    - **Access level:** Leave the access level as **Basic** for users who will contribute to the code base. To learn more, see [About access levels](/azure/devops/organizations/security/access-levels).
+    - **Add to projects:** Select the project you want to add them to.
+    - **Azure DevOps Groups:** Leave as **Project Contributors**, the default security group for users who will contribute to your project. To learn more, see [Default permissions and access assignments](/azure/devops/organizations/security/permissions-access).
 
       ```
-      		> [!NOTE]  
-      		> Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask the user to [sign up](https://signup.live.com/) for a Microsoft account or a GitHub account.  
+      		> [!NOTE]
+      		> Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask the user to [sign up](https://signup.live.com/) for a Microsoft account or a GitHub account.
       ```
 
 5.  Select **Add** to complete your invitation.
@@ -107,10 +107,10 @@ az devops user add –-email-id
 
 #### Parameters
 
-* **email-id**: Required. Enter the Microsoft account's email address for the user organization.
-* **license-type**: Required. Enter stakeholder, express, professional, or advanced based on the mapping provided in the following table. For Users who contribute to the code base require express or higher level of license-type. To learn more, see [About access levels](../../organizations/security/access-levels.md).
-* **send-email-invite**: Optional. Specify whether to send email invite for new user or not.
-* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **email-id**: Required. Enter the Microsoft account's email address for the user organization.
+- **license-type**: Required. Enter stakeholder, express, professional, or advanced based on the mapping provided in the following table. For Users who contribute to the code base require express or higher level of license-type. To learn more, see [About access levels](../../organizations/security/access-levels.md).
+- **send-email-invite**: Optional. Specify whether to send email invite for new user or not.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 
 The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType` parameter.
 
@@ -146,8 +146,8 @@ You can see all security groups in a project using the [az devops security group
 
 ## Related articles
 
-* [Connect to a project](../../organizations/projects/connect-to-projects.md)
-* [Change individual permissions, grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
-* [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
-* [Delete users from Azure DevOps](delete-organization-users.md)
-* [Export a list of users and their access levels](../security/export-users-audit-log.md)
+- [Connect to a project](../../organizations/projects/connect-to-projects.md)
+- [Change individual permissions, grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
+- [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
+- [Delete users from Azure DevOps](delete-organization-users.md)
+- [Export a list of users and their access levels](../security/export-users-audit-log.md)

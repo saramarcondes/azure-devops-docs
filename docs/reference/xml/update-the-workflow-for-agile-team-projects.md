@@ -42,15 +42,15 @@ To run the **witadmin** command-line tool, you must be a member of one of the fo
 
 You will need to perform the following steps:
 
-* Export the definitions for the User Story and Task types and for process configuration.
+- Export the definitions for the User Story and Task types and for process configuration.
 
-* Insert code snippets to the workflow section for both User Story and Task.
+- Insert code snippets to the workflow section for both User Story and Task.
 
-* Update the metastate mappings for the process configuration.
+- Update the metastate mappings for the process configuration.
 
-* Import the updated definitions for the work item types and process configuration.
+- Import the updated definitions for the work item types and process configuration.
 
-* Verify that the changes appear on the task board.
+- Verify that the changes appear on the task board.
 
 > [!IMPORTANT]
 > For the following procedures to work, the **Active** state must be specified in the workflow defined for the User Story and Task types of work items.
@@ -62,7 +62,7 @@ You will need to perform the following steps:
 1.  To export the type definition for **User Story**, enter the following command, substituting your data for the arguments that are shown here, where _CollectionURL_ specifies the URL of a project collection, _ProjectName_ specifies the name of a project defined within the collection, and "_DirectoryPath_\\_FileName_.xml" specifies the name and location for the file to export. Then press Enter.
 
     ```
-    witadmin exportwitd /collection:CollectionURL /p:"ProjectName" /n:"User Story" /f:"DirectoryPath\FileName.xml"  
+    witadmin exportwitd /collection:CollectionURL /p:"ProjectName" /n:"User Story" /f:"DirectoryPath\FileName.xml"
     ```
 
     Use this format for the URL: **http://**<em>ServerName:Port/VirtualDirectoryName/CollectionName</em>, for example: `http://srvalm:8080/tfs/DefaultCollection`.
@@ -74,29 +74,29 @@ You will need to perform the following steps:
     > [!div class="tabbedCodeSnippets"]
     >
     > ```XML
-    > <STATE value="New">  
-    >       <FIELDS>  
-    >       <FIELD refname="Microsoft.VSTS.Common.ResolvedDate">  
-    >          <EMPTY />  
-    >       </FIELD>  
-    >       <FIELD refname="Microsoft.VSTS.Common.ResolvedBy">  
-    >          <EMPTY />  
-    >       </FIELD>  
-    >       <FIELD refname="Microsoft.VSTS.Common.ClosedDate">  
-    >          <EMPTY />  
-    >       </FIELD>  
-    >       <FIELD refname="Microsoft.VSTS.Common.ClosedBy">  
-    >          <EMPTY />  
-    >       </FIELD>  
-    >       <FIELD refname="Microsoft.VSTS.Common.ActivatedDate">  
-    >          <EMPTY />  
-    >       </FIELD>  
-    >       <FIELD refname="Microsoft.VSTS.Common.ActivatedBy">  
-    >          <EMPTY />  
-    >       </FIELD>  
-    >       </FIELDS>  
-    > </STATE>  
-    > <STATE value="Removed" />  
+    > <STATE value="New">
+    >       <FIELDS>
+    >       <FIELD refname="Microsoft.VSTS.Common.ResolvedDate">
+    >          <EMPTY />
+    >       </FIELD>
+    >       <FIELD refname="Microsoft.VSTS.Common.ResolvedBy">
+    >          <EMPTY />
+    >       </FIELD>
+    >       <FIELD refname="Microsoft.VSTS.Common.ClosedDate">
+    >          <EMPTY />
+    >       </FIELD>
+    >       <FIELD refname="Microsoft.VSTS.Common.ClosedBy">
+    >          <EMPTY />
+    >       </FIELD>
+    >       <FIELD refname="Microsoft.VSTS.Common.ActivatedDate">
+    >          <EMPTY />
+    >       </FIELD>
+    >       <FIELD refname="Microsoft.VSTS.Common.ActivatedBy">
+    >          <EMPTY />
+    >       </FIELD>
+    >       </FIELDS>
+    > </STATE>
+    > <STATE value="Removed" />
     > ```
 
 1.  Replace the section that begins with `<TRANSITION from=" " to="Active">` and ends with `<TRANSITION>` with this code snippet:
@@ -104,49 +104,49 @@ You will need to perform the following steps:
     > [!div class="tabbedCodeSnippets"]
     >
     > ```XML
-    > <TRANSITION from="" to="New">  
-    >       <REASONS>  
-    >       <DEFAULTREASON value="New" />  
-    >       </REASONS>  
-    >       <FIELDS>  
-    >       <FIELD refname="System.Description">  
-    >          <DEFAULT from="value" value="As a &lt;type of user&gt; I want &lt;some goal&gt; so that &lt;some reason&gt;" />  
-    >       </FIELD>  
-    >       </FIELDS>  
-    > </TRANSITION>  
-    > <TRANSITION from="New" to="Active">  
-    >       <REASONS>  
-    >       <DEFAULTREASON value="Implementation started" />  
-    >       </REASONS>  
-    >       <FIELDS>  
-    >       <FIELD refname="Microsoft.VSTS.Common.ActivatedBy">  
-    >          <COPY from="currentuser" />  
-    >          <VALIDUSER />  
-    >          <REQUIRED />  
-    >       </FIELD>  
-    >       <FIELD refname="Microsoft.VSTS.Common.ActivatedDate">  
-    >          <SERVERDEFAULT from="clock" />  
-    >       </FIELD>  
-    >       <FIELD refname="System.AssignedTo">  
-    >          <DEFAULT from="currentuser" />  
-    >       </FIELD>  
-    >       </FIELDS>  
-    > </TRANSITION>  
-    > <TRANSITION from="New" to="Removed">  
-    >       <REASONS>  
-    >       <DEFAULTREASON value="Removed from the backlog" />  
-    >       </REASONS>  
-    > </TRANSITION>  
-    > <TRANSITION from="Active" to="New">  
-    >       <REASONS>  
-    >       <DEFAULTREASON value="Implementation halted" />  
-    >       </REASONS>  
-    > </TRANSITION>  
-    > <TRANSITION from="Removed" to="New">  
-    >       <REASONS>  
-    >       <DEFAULTREASON value="Reconsidering the User Story" />  
-    >       </REASONS>  
-    > </TRANSITION>  
+    > <TRANSITION from="" to="New">
+    >       <REASONS>
+    >       <DEFAULTREASON value="New" />
+    >       </REASONS>
+    >       <FIELDS>
+    >       <FIELD refname="System.Description">
+    >          <DEFAULT from="value" value="As a &lt;type of user&gt; I want &lt;some goal&gt; so that &lt;some reason&gt;" />
+    >       </FIELD>
+    >       </FIELDS>
+    > </TRANSITION>
+    > <TRANSITION from="New" to="Active">
+    >       <REASONS>
+    >       <DEFAULTREASON value="Implementation started" />
+    >       </REASONS>
+    >       <FIELDS>
+    >       <FIELD refname="Microsoft.VSTS.Common.ActivatedBy">
+    >          <COPY from="currentuser" />
+    >          <VALIDUSER />
+    >          <REQUIRED />
+    >       </FIELD>
+    >       <FIELD refname="Microsoft.VSTS.Common.ActivatedDate">
+    >          <SERVERDEFAULT from="clock" />
+    >       </FIELD>
+    >       <FIELD refname="System.AssignedTo">
+    >          <DEFAULT from="currentuser" />
+    >       </FIELD>
+    >       </FIELDS>
+    > </TRANSITION>
+    > <TRANSITION from="New" to="Removed">
+    >       <REASONS>
+    >       <DEFAULTREASON value="Removed from the backlog" />
+    >       </REASONS>
+    > </TRANSITION>
+    > <TRANSITION from="Active" to="New">
+    >       <REASONS>
+    >       <DEFAULTREASON value="Implementation halted" />
+    >       </REASONS>
+    > </TRANSITION>
+    > <TRANSITION from="Removed" to="New">
+    >       <REASONS>
+    >       <DEFAULTREASON value="Reconsidering the User Story" />
+    >       </REASONS>
+    > </TRANSITION>
     > ```
 
 1.  Save and close the file.
@@ -154,7 +154,7 @@ You will need to perform the following steps:
 1.  Import the file, substituting your data for the arguments that are shown.
 
     ```
-    witadmin importwitd /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\FileName.xml"  
+    witadmin importwitd /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\FileName.xml"
     ```
 
 #### To update the workflow states and transitions for Task
@@ -162,7 +162,7 @@ You will need to perform the following steps:
 1.  Export the type definition for **Task**, substituting your data for the arguments that are shown.
 
     ```
-    witadmin exportwitd /collection:CollectionURL /p:"ProjectName" /n:"Task" /f:"DirectoryPath\FileName.xml"  
+    witadmin exportwitd /collection:CollectionURL /p:"ProjectName" /n:"Task" /f:"DirectoryPath\FileName.xml"
     ```
 
 2.  In a text editor or in Visual Studio, open the file you exported.
@@ -172,23 +172,23 @@ You will need to perform the following steps:
     > [!div class="tabbedCodeSnippets"]
     >
     > ```XML
-    > <STATE value="New">  
-    >       <FIELDS>  
-    >       <FIELD refname="Microsoft.VSTS.Common.ClosedDate">  
-    >          <EMPTY />  
-    >       </FIELD>  
-    >       <FIELD refname="Microsoft.VSTS.Common.ClosedBy">  
-    >          <EMPTY />  
-    >       </FIELD>  
-    >       <FIELD refname="Microsoft.VSTS.Common.ActivatedDate">  
-    >          <EMPTY />  
-    >       </FIELD>  
-    >       <FIELD refname="Microsoft.VSTS.Common.ActivatedBy">  
-    >          <EMPTY />  
-    >       </FIELD>  
-    >       </FIELDS>  
-    > </STATE>  
-    > <STATE value="Removed" />  
+    > <STATE value="New">
+    >       <FIELDS>
+    >       <FIELD refname="Microsoft.VSTS.Common.ClosedDate">
+    >          <EMPTY />
+    >       </FIELD>
+    >       <FIELD refname="Microsoft.VSTS.Common.ClosedBy">
+    >          <EMPTY />
+    >       </FIELD>
+    >       <FIELD refname="Microsoft.VSTS.Common.ActivatedDate">
+    >          <EMPTY />
+    >       </FIELD>
+    >       <FIELD refname="Microsoft.VSTS.Common.ActivatedBy">
+    >          <EMPTY />
+    >       </FIELD>
+    >       </FIELDS>
+    > </STATE>
+    > <STATE value="Removed" />
     > ```
 
 4.  Replace the first transition block, corresponding to the lines that fall between `<TRANSITION from="" to="Active">` and its closing `</TRANSITION>` tag, with this code snippet:
@@ -196,92 +196,92 @@ You will need to perform the following steps:
     > [!div class="tabbedCodeSnippets"]
     >
     > ```XML
-    > <TRANSITION from="" to="New">  
-    >       <REASONS>  
-    >       <DEFAULTREASON value="New" />  
-    >       </REASONS>  
-    > </TRANSITION>  
-    > <TRANSITION from="New" to="Active">  
-    >       <ACTIONS>  
-    >       <ACTION value="Microsoft.VSTS.Actions.StartWork" />  
-    >       </ACTIONS>  
-    >       <REASONS>  
-    >       <DEFAULTREASON value="Work started" />  
-    >       </REASONS>  
-    >       <FIELDS>  
-    >       <FIELD refname="Microsoft.VSTS.Common.ActivatedBy">  
-    >          <COPY from="currentuser" />  
-    >          <VALIDUSER />  
-    >          <REQUIRED />  
-    >       </FIELD>  
-    >       <FIELD refname="Microsoft.VSTS.Common.ActivatedDate">  
-    >          <SERVERDEFAULT from="clock" />  
-    >       </FIELD>  
-    >       <FIELD refname="System.AssignedTo">  
-    >          <DEFAULT from="currentuser" />  
-    >       </FIELD>  
-    >       </FIELDS>  
-    > </TRANSITION>  
-    > <TRANSITION from="Active" to="New">  
-    >       <ACTIONS>  
-    >       <ACTION value="Microsoft.VSTS.Actions.StopWork" />  
-    >       </ACTIONS>  
-    >       <REASONS>  
-    >       <DEFAULTREASON value="Work halted" />  
-    >       </REASONS>  
-    > </TRANSITION>  
-    > <TRANSITION from="New" to="Closed">  
-    >       <ACTIONS>  
-    >       <ACTION value="Microsoft.VSTS.Actions.Checkin" />  
-    >       </ACTIONS>  
-    >       <REASONS>  
-    >       <DEFAULTREASON value="Completed" />  
-    >       <REASON value="Cut" />  
-    >       <REASON value="Deferred" />  
-    >       <REASON value="Obsolete" />  
-    >       </REASONS>  
-    >       <FIELDS>  
-    >       <FIELD refname="Microsoft.VSTS.Common.ActivatedDate">  
-    >          <READONLY />  
-    >       </FIELD>  
-    >       <FIELD refname="Microsoft.VSTS.Common.ActivatedBy">  
-    >          <READONLY />  
-    >       </FIELD>  
-    >       <FIELD refname="Microsoft.VSTS.Common.ClosedDate">  
-    >          <SERVERDEFAULT from="clock" />  
-    >       </FIELD>  
-    >       <FIELD refname="Microsoft.VSTS.Common.ClosedBy">  
-    >       <COPY from="currentuser" />  
-    >          <VALIDUSER />  
-    >          <REQUIRED />  
-    >       </FIELD>  
-    >       </FIELDS>  
-    > </TRANSITION>  
-    > <TRANSITION from="Closed" to="New">  
-    >       <REASONS>  
-    >       <DEFAULTREASON value="Reactivated" />  
-    >       </REASONS>  
-    >       <FIELDS>  
-    >       <FIELD refname="System.AssignedTo">  
-    >          <COPY from="field" field="Microsoft.VSTS.Common.ClosedBy" />  
-    >       </FIELD>  
-    >       </FIELDS>  
-    > </TRANSITION>  
-    > <TRANSITION from="New" to="Removed">  
-    >       <REASONS>  
-    >       <DEFAULTREASON value="Removed from the backlog" />  
-    >       </REASONS>  
-    > </TRANSITION>  
-    > <TRANSITION from="Active" to="Removed">  
-    >       <REASONS>  
-    >       <DEFAULTREASON value="Removed from the backlog" />  
-    >       </REASONS>  
-    > </TRANSITION>  
-    > <TRANSITION from="Removed" to="New">  
-    >       <REASONS>  
-    >       <DEFAULTREASON value="Reconsidering the Task" />  
-    >       </REASONS>  
-    > </TRANSITION>  
+    > <TRANSITION from="" to="New">
+    >       <REASONS>
+    >       <DEFAULTREASON value="New" />
+    >       </REASONS>
+    > </TRANSITION>
+    > <TRANSITION from="New" to="Active">
+    >       <ACTIONS>
+    >       <ACTION value="Microsoft.VSTS.Actions.StartWork" />
+    >       </ACTIONS>
+    >       <REASONS>
+    >       <DEFAULTREASON value="Work started" />
+    >       </REASONS>
+    >       <FIELDS>
+    >       <FIELD refname="Microsoft.VSTS.Common.ActivatedBy">
+    >          <COPY from="currentuser" />
+    >          <VALIDUSER />
+    >          <REQUIRED />
+    >       </FIELD>
+    >       <FIELD refname="Microsoft.VSTS.Common.ActivatedDate">
+    >          <SERVERDEFAULT from="clock" />
+    >       </FIELD>
+    >       <FIELD refname="System.AssignedTo">
+    >          <DEFAULT from="currentuser" />
+    >       </FIELD>
+    >       </FIELDS>
+    > </TRANSITION>
+    > <TRANSITION from="Active" to="New">
+    >       <ACTIONS>
+    >       <ACTION value="Microsoft.VSTS.Actions.StopWork" />
+    >       </ACTIONS>
+    >       <REASONS>
+    >       <DEFAULTREASON value="Work halted" />
+    >       </REASONS>
+    > </TRANSITION>
+    > <TRANSITION from="New" to="Closed">
+    >       <ACTIONS>
+    >       <ACTION value="Microsoft.VSTS.Actions.Checkin" />
+    >       </ACTIONS>
+    >       <REASONS>
+    >       <DEFAULTREASON value="Completed" />
+    >       <REASON value="Cut" />
+    >       <REASON value="Deferred" />
+    >       <REASON value="Obsolete" />
+    >       </REASONS>
+    >       <FIELDS>
+    >       <FIELD refname="Microsoft.VSTS.Common.ActivatedDate">
+    >          <READONLY />
+    >       </FIELD>
+    >       <FIELD refname="Microsoft.VSTS.Common.ActivatedBy">
+    >          <READONLY />
+    >       </FIELD>
+    >       <FIELD refname="Microsoft.VSTS.Common.ClosedDate">
+    >          <SERVERDEFAULT from="clock" />
+    >       </FIELD>
+    >       <FIELD refname="Microsoft.VSTS.Common.ClosedBy">
+    >       <COPY from="currentuser" />
+    >          <VALIDUSER />
+    >          <REQUIRED />
+    >       </FIELD>
+    >       </FIELDS>
+    > </TRANSITION>
+    > <TRANSITION from="Closed" to="New">
+    >       <REASONS>
+    >       <DEFAULTREASON value="Reactivated" />
+    >       </REASONS>
+    >       <FIELDS>
+    >       <FIELD refname="System.AssignedTo">
+    >          <COPY from="field" field="Microsoft.VSTS.Common.ClosedBy" />
+    >       </FIELD>
+    >       </FIELDS>
+    > </TRANSITION>
+    > <TRANSITION from="New" to="Removed">
+    >       <REASONS>
+    >       <DEFAULTREASON value="Removed from the backlog" />
+    >       </REASONS>
+    > </TRANSITION>
+    > <TRANSITION from="Active" to="Removed">
+    >       <REASONS>
+    >       <DEFAULTREASON value="Removed from the backlog" />
+    >       </REASONS>
+    > </TRANSITION>
+    > <TRANSITION from="Removed" to="New">
+    >       <REASONS>
+    >       <DEFAULTREASON value="Reconsidering the Task" />
+    >       </REASONS>
+    > </TRANSITION>
     > ```
 
 5.  Save and close the file.
@@ -289,7 +289,7 @@ You will need to perform the following steps:
 6.  Import the file, substituting your data for the arguments that are shown.
 
     ```
-    witadmin importwitd /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\FileName.xml"  
+    witadmin importwitd /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\FileName.xml"
     ```
 
 #### To update the metastate mappings for process configuration
@@ -297,7 +297,7 @@ You will need to perform the following steps:
 1.  Type the following command to export the ProcessConfiguration file, substituting your data for the arguments that are shown.
 
     ```
-    witadmin exportprocessconfig /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\ ProcessConfiguration.xml"  
+    witadmin exportprocessconfig /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\ ProcessConfiguration.xml"
     ```
 
     Where, _CollectionURL_ specifies the URL of the project collection and _ProjectName_ specifies the name of your project. Use this format for the URL: **http://**<em>ServerName:Port/VirtualDirectoryName/CollectionName</em>, for example: `http://srvalm:8080/tfs/DefaultCollection`.
@@ -312,7 +312,7 @@ You will need to perform the following steps:
     >
     > ```XML
     > <State type="Proposed" value="New" />
-    > <State type="InProgress" value="Active" />  
+    > <State type="InProgress" value="Active" />
     > ```
 
     ```
@@ -324,8 +324,8 @@ You will need to perform the following steps:
     > [!div class="tabbedCodeSnippets"]
     >
     > ```XML
-    > <State type="Proposed" value="New" />  
-    > <State type="InProgress" value="Active" />  
+    > <State type="Proposed" value="New" />
+    > <State type="InProgress" value="Active" />
     > ```
 
 6.  Verify that you have the following mappings:
@@ -333,21 +333,21 @@ You will need to perform the following steps:
     > [!div class="tabbedCodeSnippets"]
     >
     > ```XML
-    > <RequirementWorkItems category="Microsoft.RequirementCategory" plural="Stories">  
-    >       <States>  
-    >       <State type="Proposed" value="New"/>  
-    >       <State type="InProgress" value="Active" />  
-    >       <State type="InProgress" value="Resolved" />  
-    >       <State type="Complete" value="Closed" />  
-    >       </States>  
-    > </RequirementWorkItems>  
-    > <TaskWorkItems category="Microsoft.TaskCategory">  
-    >       <States>  
-    >       <State type="Proposed" value="New" />  
-    >       <State type="InProgress" value="Active" />  
-    >       <State type="Complete" value="Closed" />  
-    >       </States>  
-    > </TaskWorkItems>  
+    > <RequirementWorkItems category="Microsoft.RequirementCategory" plural="Stories">
+    >       <States>
+    >       <State type="Proposed" value="New"/>
+    >       <State type="InProgress" value="Active" />
+    >       <State type="InProgress" value="Resolved" />
+    >       <State type="Complete" value="Closed" />
+    >       </States>
+    > </RequirementWorkItems>
+    > <TaskWorkItems category="Microsoft.TaskCategory">
+    >       <States>
+    >       <State type="Proposed" value="New" />
+    >       <State type="InProgress" value="Active" />
+    >       <State type="Complete" value="Closed" />
+    >       </States>
+    > </TaskWorkItems>
     > ```
 
 7.  Save and close the file.
@@ -355,7 +355,7 @@ You will need to perform the following steps:
 8.  Import the configuration file.
 
     ```
-    witadmin importprocessconfig /collection:CollectionURL /p:ProjectName /f:"DirectoryPath\ProcessConfiguration.xml"  
+    witadmin importprocessconfig /collection:CollectionURL /p:ProjectName /f:"DirectoryPath\ProcessConfiguration.xml"
     ```
 
 #### To verify that the changes appear on the task board
@@ -363,12 +363,12 @@ You will need to perform the following steps:
 1.  Open the web portal and then connect to your project using a URL that has the following format:
 
     ```
-    http://MyServer:8080/tfs/TeamProjectCollectionName/MyProject  
+    http://MyServer:8080/tfs/TeamProjectCollectionName/MyProject
     ```
 
     If TWA is already open, then refresh your browser to refresh the cache.
 
 2.  Verify that the task board columns now display **New**, **Active**, and **Closed**.
-         ![Agile task board with updated workflow](media/alm_vrf_taskboard_agile_v6.png "ALM_VRF_TaskBoard_Agile_V6")  
+    ![Agile task board with updated workflow](media/alm_vrf_taskboard_agile_v6.png "ALM_VRF_TaskBoard_Agile_V6")  
     Task board for an Agile project with the updated workflow states
-         To learn more about using the task board, see [Sprint planning](../../boards/sprints//assign-work-sprint.md).
+    To learn more about using the task board, see [Sprint planning](../../boards/sprints//assign-work-sprint.md).

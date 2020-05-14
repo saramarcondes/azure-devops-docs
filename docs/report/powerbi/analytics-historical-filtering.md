@@ -38,8 +38,8 @@ When reporting on history, we could potentially be pulling in revisions 1 throug
 
 Let's say when creating an Analytics View or configuring the Burndown widget, you set these two filters:
 
-* Area Path = /Admirals
-* Tags contains Customer
+- Area Path = /Admirals
+- Tags contains Customer
 
 Applying these filters to the set of work item revisions yields the following matches:
 

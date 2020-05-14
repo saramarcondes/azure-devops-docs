@@ -22,8 +22,8 @@ Once you've completed your sprint plan, you can easily share it with other membe
 
 > [!div class="checklist"]
 >
-> * Create a query from your sprint plan
-> * Email your sprint plan
+> - Create a query from your sprint plan
+> - Email your sprint plan
 
 Any stakeholder on your team (someone with permissions to connect to your project) can view your sprint plan. Simply send them the URL of your sprint backlog page. But also, you can share it with them through email or print a version.
 
@@ -145,5 +145,5 @@ Or, you can select all the items in the list, choose **Copy as HTML**, and paste
 
 ## Related articles
 
-* [Email or print work items](../work-items/email-work-items.md)
-* [Share information in work items and social tools](../queries/share-plans.md)
+- [Email or print work items](../work-items/email-work-items.md)
+- [Share information in work items and social tools](../queries/share-plans.md)

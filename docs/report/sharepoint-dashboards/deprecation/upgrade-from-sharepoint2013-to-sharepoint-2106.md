@@ -131,9 +131,9 @@ After the upgrade, your TFS SharePoint sites will display, but all integration f
 ## References for configuring Office Online Server for SharePoint 2016
 Deploying Office Online Server requires a considerable amount of configuration. We recommend you familiarize yourself with the topics below to ensure a successful deployment.
 
-* [Deploy Office Online Server](https://technet.microsoft.com/library/jj219455%28v=office.16%29.aspx)
-* [Configure Office Online Server for SharePoint Server 2016](https://technet.microsoft.com/library/ff431687%28v=office.16%29.aspx)
-* [Configure server-to-server authentication between Office Online Server and SharePoint Server 2016](https://technet.microsoft.com/library/mt346470%28v=office.16%29.aspx)
-* [Configure an Analysis Services (data model) server for Excel Online](https://technet.microsoft.com/library/jj219698%28v=office.16%29.aspx#SSAS)
-* [Configure Analysis Services and Kerberos Constrained Delegation (KCD)](/sql/analysis-services/instances/install-windows/configure-analysis-services-and-kerberos-constrained-delegation-kcd)
-* [ExcelWarnOnDataRefresh](https://technet.microsoft.com/library/jj219442.aspx)
+- [Deploy Office Online Server](https://technet.microsoft.com/library/jj219455%28v=office.16%29.aspx)
+- [Configure Office Online Server for SharePoint Server 2016](https://technet.microsoft.com/library/ff431687%28v=office.16%29.aspx)
+- [Configure server-to-server authentication between Office Online Server and SharePoint Server 2016](https://technet.microsoft.com/library/mt346470%28v=office.16%29.aspx)
+- [Configure an Analysis Services (data model) server for Excel Online](https://technet.microsoft.com/library/jj219698%28v=office.16%29.aspx#SSAS)
+- [Configure Analysis Services and Kerberos Constrained Delegation (KCD)](/sql/analysis-services/instances/install-windows/configure-analysis-services-and-kerberos-constrained-delegation-kcd)
+- [ExcelWarnOnDataRefresh](https://technet.microsoft.com/library/jj219442.aspx)

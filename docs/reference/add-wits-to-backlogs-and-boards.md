@@ -30,9 +30,9 @@ For example, you may want to track different types of requirements based on thei
 
 To add a WIT to track as requirements, tasks, or as bugs perform the corresponding steps:
 
-* [Add a WIT to track as requirements](#wits-as-requirements)
-* [Add a WIT to track as tasks](#wits-as-tasks)
-* [Add a WIT to the Bug Category](#wits-as-bugs)
+- [Add a WIT to track as requirements](#wits-as-requirements)
+- [Add a WIT to track as tasks](#wits-as-tasks)
+- [Add a WIT to the Bug Category](#wits-as-bugs)
 
 > [!NOTE]  
 > We recommend that you add a WIT to one and only one of the following categories: Requirement Category, Task Category, or Bug Category. The system prevents you from adding the same WIT to both the Requirement Category and Task Category. WITs that you add to the Bug Category will follow the [bug behavior set for the team](../organizations/settings/show-bugs-on-backlog.md).
@@ -48,22 +48,22 @@ To add a WIT to track as requirements, tasks, or as bugs perform the correspondi
 
 You'll make your changes to your process definition files, and then import that process to either update existing projects or use the process to create a project.
 
-* If you aren't the organization owner or a member of the Project Collection Administrator's group, [get added](../organizations/security/set-project-collection-level-permissions.md).
-* [Export the process you want to update](../organizations/settings/work/import-process/import-process.md)
-* If you're new to customizing a process, read [Customize a process for import](../organizations/settings/work/import-process/customize-process.md).
+- If you aren't the organization owner or a member of the Project Collection Administrator's group, [get added](../organizations/security/set-project-collection-level-permissions.md).
+- [Export the process you want to update](../organizations/settings/work/import-process/import-process.md)
+- If you're new to customizing a process, read [Customize a process for import](../organizations/settings/work/import-process/customize-process.md).
 
 ### On-premises XML process model customization sequence
 
 You'll first export your work tracking definition files, update them, and then import them to your project.
 
-* If you aren't a member of the Project Administrator or Project Collection Administrator's group, [get added](../organizations/security/set-project-collection-level-permissions.md).
-* Update your project to [enable the latest features](configure-features-after-upgrade.md)
-* [Export the following objects from your project](#import-export): - WIT you want to add to backlogs and boards (if you haven't created it, [do that now](customize-work.md)) - [Categories definition](xml/apply-rule-work-item-field.md#apply-ignore)  
-   - ProcessConfiguration
-* If you're new to customizing work tracking objects, familiarize yourself with the following resources:  
-   - [Add or modify a field](add-modify-field.md)  
-   - [Add or modify a work item type](add-modify-wit.md)  
-   - [ProcessConfiguration XML reference](xml/process-configuration-xml-element.md).
+- If you aren't a member of the Project Administrator or Project Collection Administrator's group, [get added](../organizations/security/set-project-collection-level-permissions.md).
+- Update your project to [enable the latest features](configure-features-after-upgrade.md)
+- [Export the following objects from your project](#import-export): - WIT you want to add to backlogs and boards (if you haven't created it, [do that now](customize-work.md)) - [Categories definition](xml/apply-rule-work-item-field.md#apply-ignore)
+  - ProcessConfiguration
+- If you're new to customizing work tracking objects, familiarize yourself with the following resources:
+  - [Add or modify a field](add-modify-field.md)
+  - [Add or modify a work item type](add-modify-wit.md)
+  - [ProcessConfiguration XML reference](xml/process-configuration-xml-element.md).
 
 <a id="wits-as-requirements"> </a>
 
@@ -180,7 +180,7 @@ WITs that you add to the Requirement Category show up on the product backlog and
     </td>
     </tr>
     </tbody>
-    </table>  
+    </table>
 
 3.  Edit the Categories definition. Add the WIT to the Requirement category. Here we add Service App.
 
@@ -215,8 +215,8 @@ WITs that you add to the Requirement Category show up on the product backlog and
     ```
 
 6.  Update your project:
-    * **Hosted XML:** [Import your process](../organizations/settings/work/import-process/import-process.md).
-    * **On-premises XML:** [Import the definition files you updated](#import-export) in this order:  
+    - **Hosted XML:** [Import your process](../organizations/settings/work/import-process/import-process.md).
+    - **On-premises XML:** [Import the definition files you updated](#import-export) in this order:  
        a. WIT
       b. Categories  
        c. ProcessConfiguration
@@ -358,7 +358,7 @@ WITs that you add to the Task Category show up on the sprint backlogs and task b
     </td>
     </tr>
     </tbody>
-    </table>  
+    </table>
 
 3.  Edit the Categories definition. Add the WIT to the Task category. Here we add Service Task.
 
@@ -398,8 +398,8 @@ WITs that you add to the Task Category show up on the sprint backlogs and task b
 
 6.  Update your project:
 
-    * **Hosted XML:** [Import your process](../organizations/settings/work/import-process/import-process.md).
-    * **On-premises XML:** [Import the definition files you updated](#import-export) in this order:  
+    - **Hosted XML:** [Import your process](../organizations/settings/work/import-process/import-process.md).
+    - **On-premises XML:** [Import the definition files you updated](#import-export) in this order:  
        a. WIT  
        b. Categories  
        c. ProcessConfiguration
@@ -422,10 +422,10 @@ WITs that you add to the Bug Category will be treated based on the [team setting
 3.  Edit the Categories definition. Add the WIT to the Bug Category. Here we add two WITs.
 
     ```xml
-     <CATEGORY name="Bug Category" refname="Microsoft.BugCategory">  
-        <DEFAULTWORKITEMTYPE name="Bug" />  
-        <WORKITEMTYPE name="Service Bug" />  
-        <WORKITEMTYPE name="Feedback" />  
+     <CATEGORY name="Bug Category" refname="Microsoft.BugCategory">
+        <DEFAULTWORKITEMTYPE name="Bug" />
+        <WORKITEMTYPE name="Service Bug" />
+        <WORKITEMTYPE name="Feedback" />
      </CATEGORY>
     ```
 
@@ -453,13 +453,13 @@ WITs that you add to the Bug Category will be treated based on the [team setting
 5.  Add the WIT color definition to the ProcessConfiguration `WorkItemColors` section. For example:
 
     ```xml
-    <WorkItemColor primary="FFF2CB1D" secondary="FFF6F5D2" name="Service Bug" />  
-    <WorkItemColor primary="FFFF00FF" secondary="FFFFCCFF" name="Feedback" />  
+    <WorkItemColor primary="FFF2CB1D" secondary="FFF6F5D2" name="Service Bug" />
+    <WorkItemColor primary="FFFF00FF" secondary="FFFFCCFF" name="Feedback" />
     ```
 
 6.  Update your project:
-    * **Hosted XML:** [Import your process](../organizations/settings/work/import-process/import-process.md).
-    * **On-premises XML:** [Import the definition files you updated](#import-export) in this order:  
+    - **Hosted XML:** [Import your process](../organizations/settings/work/import-process/import-process.md).
+    - **On-premises XML:** [Import the definition files you updated](#import-export) in this order:  
        a. WIT  
        b. Categories  
        c. ProcessConfiguration
@@ -496,12 +496,12 @@ Use the **witadmin** commands to import and export definition files. For details
 Use these commands to export and import WITs, categories, and process configuration:
 
 ```
-witadmin exportwitd /collection:CollectionURL /p:"ProjectName" /n:TypeName /f:"DirectoryPath\WITDefinitionFile.xml"  
-witadmin importwitd /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\WITDefinitionFile.xml"  
-witadmin exportcategories /collection:"CollectionURL" /p:"ProjectName" /f:"DirectoryPath/categories.xml"  
+witadmin exportwitd /collection:CollectionURL /p:"ProjectName" /n:TypeName /f:"DirectoryPath\WITDefinitionFile.xml"
+witadmin importwitd /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\WITDefinitionFile.xml"
+witadmin exportcategories /collection:"CollectionURL" /p:"ProjectName" /f:"DirectoryPath/categories.xml"
 witadmin importcategories /collection:"CollectionURL" /p:"ProjectName" /f:"DirectoryPath/categories.xml"
-witadmin exportprocessconfig /collection:"CollectionURL" /p:"ProjectName" /f:"DirectoryPath/ProcessConfiguration.xml"  
-witadmin importprocessconfig /collection:"CollectionURL" /p:"ProjectName" /f:"DirectoryPath/ProcessConfiguration.xml"  
+witadmin exportprocessconfig /collection:"CollectionURL" /p:"ProjectName" /f:"DirectoryPath/ProcessConfiguration.xml"
+witadmin importprocessconfig /collection:"CollectionURL" /p:"ProjectName" /f:"DirectoryPath/ProcessConfiguration.xml"
 ```
 
 ## Related articles

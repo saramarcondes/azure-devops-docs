@@ -21,4 +21,4 @@ A Contribution with its containing extension
 
 ### Members
 
-* `extension`: [Extension](../../../VSS/References/SDK_Interfaces/Extension.md). The extension that owns this contribution
+- `extension`: [Extension](../../../VSS/References/SDK_Interfaces/Extension.md). The extension that owns this contribution

@@ -47,8 +47,8 @@ Use this task in a pipeline to install an SSH key prior to a build or release st
 
 You now have all necessary values for the "Install SSH Key" task:
 
-* 'Known Hosts Entry' - Enter the line copied in step 6
-* 'SSH Key (Secure File)', 'SSH Public Key', and 'SSH Passphrase' - Enter these values that were created in step 1
+- 'Known Hosts Entry' - Enter the line copied in step 6
+- 'SSH Key (Secure File)', 'SSH Public Key', and 'SSH Passphrase' - Enter these values that were created in step 1
 
 ## Open source
 

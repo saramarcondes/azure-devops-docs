@@ -8,16 +8,16 @@ We are performing a front-end routing migration that will increase availability 
 
 **IPv4 ranges**
 
-* 13.107.6.0/24
-* 13.107.9.0/24
-* 13.107.42.0/24
-* 13.107.43.0/24
+- 13.107.6.0/24
+- 13.107.9.0/24
+- 13.107.42.0/24
+- 13.107.43.0/24
 
 **IPv6 ranges**
 
-* 2620:1ec:4::/48
-* 2620:1ec:a92::/48
-* 2620:1ec:21::/48
+- 2620:1ec:4::/48
+- 2620:1ec:a92::/48
+- 2620:1ec:21::/48
 
 For more details about this update, see the blog post with the announcement [here](https://devblogs.microsoft.com/devops/new-ip-firewall-rules-for-azure-devops/).
 

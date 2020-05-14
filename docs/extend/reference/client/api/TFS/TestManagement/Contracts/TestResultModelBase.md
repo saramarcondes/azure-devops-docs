@@ -16,14 +16,14 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Members
 
-* `comment`: string.
+- `comment`: string.
 
-* `completedDate`: Date.
+- `completedDate`: Date.
 
-* `durationInMs`: number.
+- `durationInMs`: number.
 
-* `errorMessage`: string.
+- `errorMessage`: string.
 
-* `outcome`: string.
+- `outcome`: string.
 
-* `startedDate`: Date.
+- `startedDate`: Date.

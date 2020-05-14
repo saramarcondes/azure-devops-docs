@@ -24,8 +24,8 @@ Use this task to build an Android app using Gradle and optionally start the emul
 
 The build agent must have the following capabilities:
 
-* Android SDK (with the version number you will build against)
-* Android Support Repository (if referenced by Gradle file)
+- Android SDK (with the version number you will build against)
+- Android Support Repository (if referenced by Gradle file)
 
   ## Arguments
 

@@ -41,8 +41,8 @@ Use this article to learn how to:
 
 > [!div class="checklist"]
 >
-> * Configure the Cumulative Flow Diagram widget (Analytics)
-> * View and configure the CFD in-context report (Analytics)
+> - Configure the Cumulative Flow Diagram widget (Analytics)
+> - View and configure the CFD in-context report (Analytics)
 
 ::: moniker-end
 
@@ -52,8 +52,8 @@ Use this article to learn how to:
 
 > [!div class="checklist"]
 >
-> * Configure the Cumulative Flow Diagram widget (Analytics)
-> * View and configure the CFD in-context report (work tracking data store)
+> - Configure the Cumulative Flow Diagram widget (Analytics)
+> - View and configure the CFD in-context report (work tracking data store)
 
 ::: moniker-end
 
@@ -65,7 +65,7 @@ Use this article to learn how to:
 
 > [!div class="checklist"]
 >
-> * View and configure the CFD in-context report (work tracking data store)
+> - View and configure the CFD in-context report (work tracking data store)
 
 ::: moniker-end
 
@@ -250,13 +250,13 @@ Each team can set their preferences for the in-context cumulative flow charts.
 
 1.  Open the backlog level for which you want to configure and then open the common configuration dialog. Choose the ![ ](../../boards/media/icons/team-settings-gear-icon.png) gear icon.
 
-    <img src="../../boards/boards/media/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 2px solid #C3C3C3;" />  
+    <img src="../../boards/boards/media/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 2px solid #C3C3C3;" />
 
     If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the team Kanban boards and CFD charts.
 
 2.  Choose **Cumulative flow** and specify the team's preferences.
 
-    <img src="media/cfd-configure-common-settings.png" alt="Kanban board, Common configuration dialog, Cumulative flow" style="border: 2px solid #C3C3C3;" />  
+    <img src="media/cfd-configure-common-settings.png" alt="Kanban board, Common configuration dialog, Cumulative flow" style="border: 2px solid #C3C3C3;" />
 
 ::: moniker-end
 
@@ -325,8 +325,8 @@ Each team can set their preferences for the in-context cumulative flow charts.
 
 ## Related articles
 
-* [Add columns](../../boards/boards/add-columns.md)
-* [Add swimlanes](../../boards/boards/expedite-work.md)
-* [Define sprint iterations](../../boards/sprints/define-sprints.md)
-* [Widget catalog](widget-catalog.md)
-* [Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)
+- [Add columns](../../boards/boards/add-columns.md)
+- [Add swimlanes](../../boards/boards/expedite-work.md)
+- [Define sprint iterations](../../boards/sprints/define-sprints.md)
+- [Widget catalog](widget-catalog.md)
+- [Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)

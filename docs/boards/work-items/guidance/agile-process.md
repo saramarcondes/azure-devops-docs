@@ -224,8 +224,8 @@ The **Work Items With Summary Values** shared query, which is located in the **T
 You can use the following Excel workbooks to review open issues and to rank and assign untriaged work items. Workbooks are only available when your project has been configured with a SharePoint portal.
 Each workbook references a shared query.
 
-* The [Issues workbook](../../../report/sharepoint-dashboards/workbooks.md) uses the Open Issues shared query
-* The [Triage workbook](../../../report/sharepoint-dashboards/workbooks.md) uses the Untriaged Work Items shared query
+- The [Issues workbook](../../../report/sharepoint-dashboards/workbooks.md) uses the Open Issues shared query
+- The [Triage workbook](../../../report/sharepoint-dashboards/workbooks.md) uses the Untriaged Work Items shared query
 
 Because these queries support workbooks, if you change these queries, it will affect those workbooks that use them.
 

@@ -16,6 +16,6 @@ Module path: `VSS/WebApi/Contracts`
 
 ### Members
 
-* `name`: string. Name of the publishing service.
+- `name`: string. Name of the publishing service.
 
-* `serviceOwnerId`: string. Service Owner Guid Eg. Tfs : 00025394-6065-48CA-87D9-7F5672854EF7
+- `serviceOwnerId`: string. Service Owner Guid Eg. Tfs : 00025394-6065-48CA-87D9-7F5672854EF7

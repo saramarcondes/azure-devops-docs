@@ -29,21 +29,21 @@ There are numerous differences between Travis and Azure
 Pipelines, including version control configuration, environment variables,
 and virtual machine environments, but at a higher level:
 
-* Azure Pipelines configuration is more precise and relies less on shorthand configuration and implied steps. You'll see this in places like language selection and in the way Azure Pipelines allows flow to be controlled.
+- Azure Pipelines configuration is more precise and relies less on shorthand configuration and implied steps. You'll see this in places like language selection and in the way Azure Pipelines allows flow to be controlled.
 
-* Travis builds have _stages_, _jobs_ and _phases_, while Azure Pipelines simply has steps that can be arranged and executed in an arbitrary order or grouping that you choose. This gives you flexibility over the way that your steps are executed, including the way they're executed in parallel.
+- Travis builds have _stages_, _jobs_ and _phases_, while Azure Pipelines simply has steps that can be arranged and executed in an arbitrary order or grouping that you choose. This gives you flexibility over the way that your steps are executed, including the way they're executed in parallel.
 
-* Azure Pipelines allows job definitions and steps to be stored in separate YAML files in the same or a different repository, enabling steps to be shared across multiple pipelines.
+- Azure Pipelines allows job definitions and steps to be stored in separate YAML files in the same or a different repository, enabling steps to be shared across multiple pipelines.
 
-* Azure Pipelines provides full support for building and testing on Microsoft-managed Linux, Windows, and macOS images. See [Microsoft-hosted agents](../agents/hosted.md) for more details.
+- Azure Pipelines provides full support for building and testing on Microsoft-managed Linux, Windows, and macOS images. See [Microsoft-hosted agents](../agents/hosted.md) for more details.
 
 ## Before starting your migration
 
 If you are new to Azure Pipelines, see the following to learn more about Azure Pipelines and how it works prior to starting your migration:
 
-* [Create your first pipeline](../create-first-pipeline.md)
-* [Key concepts for new Azure Pipelines users](../get-started/key-pipelines-concepts.md)
-* [Building GitHub repositories](../repos/github.md)
+- [Create your first pipeline](../create-first-pipeline.md)
+- [Key concepts for new Azure Pipelines users](../get-started/key-pipelines-concepts.md)
+- [Building GitHub repositories](../repos/github.md)
 
 ## Language
 

@@ -52,9 +52,9 @@ The daily results of runs of build definitions appear in the colors that the fol
 
 You can filter the report in the following ways:
 
-* Change the start and end dates for the report.
+- Change the start and end dates for the report.
 
-* Filter the build definitions by specifying the platforms, configurations, and build definitions to include in the report.
+- Filter the build definitions by specifying the platforms, configurations, and build definitions to include in the report.
 
   For more information, see [Filtering the Report](#Changing) later in this article.
 
@@ -62,15 +62,15 @@ You can filter the report in the following ways:
 
 For the Build Success Over Time report to be useful, team members must perform the following activities to manage builds:
 
-* **Configure a build system**. To use Team Foundation Build, you must set up a build system.
+- **Configure a build system**. To use Team Foundation Build, you must set up a build system.
 
   For more information, see [Build and Release agents](../../pipelines/agents/agents.md).
 
-* **Create build definitions**. You can create several build definitions, each of which can be run to produce code for a different platform. Also, you can run each build for a different configuration.
+- **Create build definitions**. You can create several build definitions, each of which can be run to produce code for a different platform. Also, you can run each build for a different configuration.
 
   For more information, see [Get started with CI/CD](../../pipelines/get-started-designer.md).
 
-* **Run builds regularly**. You can run builds can be run at set intervals or after every check-in. You can schedule regular builds when you use the schedule trigger. For more information, see [Build triggers](../../pipelines/build/triggers.md).
+- **Run builds regularly**. You can run builds can be run at set intervals or after every check-in. You can schedule regular builds when you use the schedule trigger. For more information, see [Build triggers](../../pipelines/build/triggers.md).
 
   > [!NOTE]
   > Although a team member can manually rate a build by using Build Explorer, this rating is not reflected in the Build Success Over Time report. The build rating appears in the Build Summary report. For more information, see [Rate the quality of a completed build](https://msdn.microsoft.com/library/ms181734.aspx) and [Build Summary](build-summary-report.md).
@@ -93,15 +93,15 @@ You should expect the Build Success Over Time report to vary based on where you 
 
 You can review the Build Success Over Time report to find answers to these questions:
 
-* How high is the quality of the builds?
+- How high is the quality of the builds?
 
-* Is the quality improving, deteriorating, or staying constant?
+- Is the quality improving, deteriorating, or staying constant?
 
-* What parts of the project are ready to test?
+- What parts of the project are ready to test?
 
-* What parts of the project are having trouble with regressions or bad checkins?
+- What parts of the project are having trouble with regressions or bad checkins?
 
-* How well is the code tested?
+- How well is the code tested?
 
   Team members should review the last column of the Build Success Over Time report to determine whether the most recent builds have passed. If long sections in the report are not green, project managers and development leads should determine the root of persistent problems.
 
@@ -115,9 +115,9 @@ A healthy Build Success Over Time report will show successive days of green, whi
 
 You can filter the Build Success Over Time report in the following ways:
 
-* Change the start and end dates for the report.
+- Change the start and end dates for the report.
 
-* Filter the builds that appear in the report by specifying the platform, configuration, and build definitions to include.
+- Filter the builds that appear in the report by specifying the platform, configuration, and build definitions to include.
 
   > [!NOTE]
   > You can configure build definition to run no tests, some tests, or all tests. The report will vary greatly based on the configuration of the build definitions.

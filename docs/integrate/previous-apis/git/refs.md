@@ -213,10 +213,10 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
 
 Creating, updating, and deleting refs (branches) are all done by the same endpoint.
 
-* Updating a ref means making it point at a different commit than it used to.
+- Updating a ref means making it point at a different commit than it used to.
   You must specify both the old and new commit to avoid race conditions.
-* Creating a ref is the represented by updating the ref from the nil commit (represented by 40 `0`s) to a different commit.
-* Deleting a ref is represented by updating the ref from its current commit to the nil commit.
+- Creating a ref is the represented by updating the ref from the nil commit (represented by 40 `0`s) to a different commit.
+- Deleting a ref is represented by updating the ref from its current commit to the nil commit.
 
 ```
 POST https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/refs?api-version={version}

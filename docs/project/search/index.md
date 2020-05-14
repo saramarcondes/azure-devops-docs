@@ -31,16 +31,16 @@ using just a web browser.
 
 ## How-to guides
 
-* [Use Code Search](advanced-code-search-syntax.md)
-* [Use Work Item Search](advanced-work-item-search-syntax.md)
-* [Use Wiki Search](../wiki/search-wiki.md)
-* [Use Package Search](advanced-package-syntax.md)
-* [Administer Search](administration.md)
+- [Use Code Search](advanced-code-search-syntax.md)
+- [Use Work Item Search](advanced-work-item-search-syntax.md)
+- [Use Wiki Search](../wiki/search-wiki.md)
+- [Use Package Search](advanced-package-syntax.md)
+- [Administer Search](administration.md)
 
 ## Resources
 
-* [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-managed-queries.md?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
-* [Search your Wiki](https://blogs.msdn.microsoft.com/devops/2017/12/01/announcing-public-preview-of-wiki-search/)
-* [Code Search blog posts](https://devblogs.microsoft.com/devops/?s=code+search&submit=%EE%9C%A1)
-* [Code Search on Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search)
-* [Work Item Search blog posts](https://devblogs.microsoft.com/devops/?s=work+item+search&submit=%EE%9C%A1)
+- [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-managed-queries.md?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
+- [Search your Wiki](https://blogs.msdn.microsoft.com/devops/2017/12/01/announcing-public-preview-of-wiki-search/)
+- [Code Search blog posts](https://devblogs.microsoft.com/devops/?s=code+search&submit=%EE%9C%A1)
+- [Code Search on Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search)
+- [Work Item Search blog posts](https://devblogs.microsoft.com/devops/?s=work+item+search&submit=%EE%9C%A1)

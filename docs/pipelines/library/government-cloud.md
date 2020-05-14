@@ -35,7 +35,7 @@ You can then use the service connection in your [build and release pipeline task
 
 ### Next
 
-* [Deploy an Azure Web App](../apps/cd/deploy-webdeploy-webapps.md)
-* [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md)
+- [Deploy an Azure Web App](../apps/cd/deploy-webdeploy-webapps.md)
+- [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md)
 
 [!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

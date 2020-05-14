@@ -19,4 +19,4 @@ Information about a control interface that is exposed across iframe boundaries
 
 ### Members
 
-* `methodNames`: string[].
+- `methodNames`: string[].

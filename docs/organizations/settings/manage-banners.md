@@ -26,16 +26,16 @@ You can only manage banners using the Azure DevOps Command Line Interface (CLI),
 
 <!--- QUESTIONS
 Is there a limit to the message text string?
-Is there any way to show multiple banners?  
+Is there any way to show multiple banners?
 Could not update the expiration date to a null value
 -->
 
 ## Prerequisites
 
-* To add or manage banners, you must be a member of the Project Collection Administrators security group.
-* You must have installed the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](../../cli/index.md).
-* Sign into Azure DevOps using `az login`.
-* For the examples in this article, set the default organization using `az devops configure --defaults organization=YourOrganizationURL`.
+- To add or manage banners, you must be a member of the Project Collection Administrators security group.
+- You must have installed the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](../../cli/index.md).
+- Sign into Azure DevOps using `az login`.
+- For the examples in this article, set the default organization using `az devops configure --defaults organization=YourOrganizationURL`.
 
 ## admin banner commands
 
@@ -50,8 +50,8 @@ Could not update the expiration date to a null value
 
 The following parameters are optional for all commands, and not listed in the examples provided in this article.
 
-* **detect**: Automatically detect organization. Accepted values: false, true. Default is true.
-* **org**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **detect**: Automatically detect organization. Accepted values: false, true. Default is true.
+- **org**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 
 ## Add a banner
 
@@ -68,10 +68,10 @@ az devops admin banner add --message
 
 ### Parameters
 
-* **message**: Required. Text string that specifies the banner message to display.
-* **expiration**: Optional. Date/time when the banner should no longer be displayed to users. For example, "2019-06-10 17:21:00 UTC", "2019-06-10".
-* **id**: Optional. ID of the banner to update. This identifier is needed to change or remove the message later. A unique identifier is automatically created if one is not specified.
-* **type**: Optional. Type of banner to display. Valid values: **error**, **info**, **warning**. Default is **info**.
+- **message**: Required. Text string that specifies the banner message to display.
+- **expiration**: Optional. Date/time when the banner should no longer be displayed to users. For example, "2019-06-10 17:21:00 UTC", "2019-06-10".
+- **id**: Optional. ID of the banner to update. This identifier is needed to change or remove the message later. A unique identifier is automatically created if one is not specified.
+- **type**: Optional. Type of banner to display. Valid values: **error**, **info**, **warning**. Default is **info**.
 
 ### Example
 
@@ -150,7 +150,7 @@ az devops admin banner remove --id
 
 ### Parameters
 
-* **id**: Required. ID of the banner to remove.
+- **id**: Required. ID of the banner to remove.
 
 ### Example
 
@@ -174,7 +174,7 @@ az devops admin banner show --id
 
 ### Parameters
 
-* **id**: Required. ID of the banner to list details.
+- **id**: Required. ID of the banner to list details.
 
 ### Example
 
@@ -208,10 +208,10 @@ az devops admin banner update --id
 
 ### Parameters
 
-* **id**: Required. ID of the banner to update.
-* **expiration**: Optional. Date/time when the banner should no longer be displayed to users. To unset the expiration for the banner, supply an empty value to this argument, for example, "2019-06-10 17:21:00 UTC", "2019-06-10".
-* **message**: Text string that specifies the banner message to display.
-* **type**: Optional. Type of banner to display. Valid values: **error**, **info**, **warning**. Default is **info**.
+- **id**: Required. ID of the banner to update.
+- **expiration**: Optional. Date/time when the banner should no longer be displayed to users. To unset the expiration for the banner, supply an empty value to this argument, for example, "2019-06-10 17:21:00 UTC", "2019-06-10".
+- **message**: Text string that specifies the banner message to display.
+- **type**: Optional. Type of banner to display. Valid values: **error**, **info**, **warning**. Default is **info**.
 
 ### Example
 
@@ -232,6 +232,6 @@ C:\WINDOWS\system32>az devops admin banner update --id 7653f414-3c01-424f-8f84-e
 
 ## Related articles
 
-* [Get started with Azure DevOps CLI](../../cli/index.md)
-* [`az devops admin banner commands`](/cli/azure/ext/azure-devops/devops/admin/banner)
-* [About projects and scaling your organization](../projects/about-projects.md)
+- [Get started with Azure DevOps CLI](../../cli/index.md)
+- [`az devops admin banner commands`](/cli/azure/ext/azure-devops/devops/admin/banner)
+- [About projects and scaling your organization](../projects/about-projects.md)

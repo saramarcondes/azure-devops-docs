@@ -96,22 +96,22 @@ For more information, see [Install an extension](../../marketplace/install-exten
 
     ![Search from title bar](media/code-search-get-started/title-bar-search-functions-azure-devops.png)
 
-    * You can find all instances of "ToDo" comments in your code simply by selecting `comment:` and typing `todo`.
+    - You can find all instances of "ToDo" comments in your code simply by selecting `comment:` and typing `todo`.
 
-    * You can search in specific locations, such as within a particular path, by using a search string such as `Driver path:MyShuttle/Server`.
+    - You can search in specific locations, such as within a particular path, by using a search string such as `Driver path:MyShuttle/Server`.
 
-    * You can search for files by name, such as `Driver file:GreenCabs.cs`, or just by file extension. For example, the search string
+    - You can search for files by name, such as `Driver file:GreenCabs.cs`, or just by file extension. For example, the search string
       `error ext:resx` could be useful when you want to review all error strings in your code.
       But, even if your plain text search string (without specific file-type functions)
       matches part of a filename, the file appears in the list of found files.
 
-    * You can combine two or more words by using Boolean operators; for example, `validate OR release`.
+    - You can combine two or more words by using Boolean operators; for example, `validate OR release`.
 
-    * You can find an exact match to a set of words by enclosing your search terms in double-quotes. For example, `"Client not found"`.
+    - You can find an exact match to a set of words by enclosing your search terms in double-quotes. For example, `"Client not found"`.
 
-    * You can use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET.
+    - You can use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET.
 
-    * See also [full details of the search syntax](advanced-code-search-syntax.md#syntaxdetails).
+    - See also [full details of the search syntax](advanced-code-search-syntax.md#syntaxdetails).
 
 ::: moniker-end
 
@@ -140,22 +140,22 @@ For more information, see [Install an extension](../../marketplace/install-exten
 
     ![Search from title bar](media/code-search-get-started/title-bar-search-functionlist.png)
 
-    * You can find all instances of "ToDo" comments in your code simply by selecting `comment:` and typing `todo`.
+    - You can find all instances of "ToDo" comments in your code simply by selecting `comment:` and typing `todo`.
 
-    * You can search in specific locations, such as within a particular path, by using a search string such as `Driver path:MyShuttle/Server`.
+    - You can search in specific locations, such as within a particular path, by using a search string such as `Driver path:MyShuttle/Server`.
 
-    * You can search for files by name, such as `Driver file:GreenCabs.cs`, or just by file extension. For example, the search string
+    - You can search for files by name, such as `Driver file:GreenCabs.cs`, or just by file extension. For example, the search string
       `error ext:resx` could be useful when you want to review all error strings in your code.
       But, even if your plain text search string (without specific file-type functions)
       matches part of a filename, the file appears in the list of found files.
 
-    * You can combine two or more words by using Boolean operators; for example, `validate OR release`.
+    - You can combine two or more words by using Boolean operators; for example, `validate OR release`.
 
-    * You can find an exact match to a set of words by enclosing your search terms in double-quotes. For example, `"Client not found"`.
+    - You can find an exact match to a set of words by enclosing your search terms in double-quotes. For example, `"Client not found"`.
 
-    * You can use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET.
+    - You can use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET.
 
-    * See also [full details of the search syntax](advanced-code-search-syntax.md#syntaxdetails).
+    - See also [full details of the search syntax](advanced-code-search-syntax.md#syntaxdetails).
 
 ::: moniker-end
 
@@ -184,22 +184,22 @@ For more information, see [Install an extension](../../marketplace/install-exten
 
     ![Search from title bar](media/code-search-get-started/title-bar-search-functionlist.png)
 
-    * You can find all instances of "ToDo" comments in your code simply by selecting `comment:` and typing `todo`.
+    - You can find all instances of "ToDo" comments in your code simply by selecting `comment:` and typing `todo`.
 
-    * You can search in specific locations, such as within a particular path, by using a search string such as `Driver path:MyShuttle/Server`.
+    - You can search in specific locations, such as within a particular path, by using a search string such as `Driver path:MyShuttle/Server`.
 
-    * You can search for files by name, such as `Driver file:GreenCabs.cs`, or just by file extension. For example, the search string
+    - You can search for files by name, such as `Driver file:GreenCabs.cs`, or just by file extension. For example, the search string
       `error ext:resx` could be useful when you want to review all error strings in your code.
       But, even if your plain text search string (without specific file-type functions)
       matches part of a filename, the file appears in the list of found files.
 
-    * You can combine two or more words by using Boolean operators; for example, `validate OR release`.
+    - You can combine two or more words by using Boolean operators; for example, `validate OR release`.
 
-    * You can find an exact match to a set of words by enclosing your search terms in double-quotes. For example, `"Client not found"`.
+    - You can find an exact match to a set of words by enclosing your search terms in double-quotes. For example, `"Client not found"`.
 
-    * You can use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET.
+    - You can use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET.
 
-    * See also [full details of the search syntax](advanced-code-search-syntax.md#syntaxdetails).
+    - See also [full details of the search syntax](advanced-code-search-syntax.md#syntaxdetails).
 
 ::: moniker-end
 

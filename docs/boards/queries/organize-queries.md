@@ -119,6 +119,6 @@ In Team Explorer Everywhere (a plugin for Eclipse), choose **Move** from the con
 
 ## Related articles
 
-* [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
-* [Set query permissions](set-query-permissions.md)
-* [Set project-level permissions](../../organizations/security/set-project-collection-level-permissions.md)
+- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
+- [Set query permissions](set-query-permissions.md)
+- [Set project-level permissions](../../organizations/security/set-project-collection-level-permissions.md)

@@ -29,9 +29,9 @@ In this article you'll learn:
 
 > [!div class="checklist"]
 >
-> * The type of insights you can get by monitoring Test Results Trend charts
-> * Prerequisites for gaining actionable insights from the Test Results Trend charts
-> * How to install and configure the Test Results Trend widget
+> - The type of insights you can get by monitoring Test Results Trend charts
+> - Prerequisites for gaining actionable insights from the Test Results Trend charts
+> - How to install and configure the Test Results Trend widget
 
 > [!NOTE]  
 > The Test Results Trend (Advanced) widget is based on Analytics. Analytics is generally available for Azure DevOps Services and in preview as an extension for Azure DevOps Server 2019. For TFS 2017 and TFS 2018, you can use the Test Results Trend widget.
@@ -40,11 +40,11 @@ In this article you'll learn:
 
 With the Test Results Trend charts, you can gain the following insights:
 
-* Identify if test health is improving over time by monitoring trends of failures and average pass rate on each day
-* Identify long running tests which are impacting a pipeline's efficiency by monitoring the average test duration on each day
-* Identify patterns in test outcomes. _Has the test recently started to fail? Or, has the test always failed for the selected period? Or, is the test showing non-deterministic behavior?_
-* Obtain insights into specific areas of interest to you based on test file, branch, or stage you own by configuring specific filters.
-* Obtain insights into a specific area you test by configuring the widget to focus on a test file, branch or stage.
+- Identify if test health is improving over time by monitoring trends of failures and average pass rate on each day
+- Identify long running tests which are impacting a pipeline's efficiency by monitoring the average test duration on each day
+- Identify patterns in test outcomes. _Has the test recently started to fail? Or, has the test always failed for the selected period? Or, is the test showing non-deterministic behavior?_
+- Obtain insights into specific areas of interest to you based on test file, branch, or stage you own by configuring specific filters.
+- Obtain insights into a specific area you test by configuring the widget to focus on a test file, branch or stage.
 
 Test Results Trend charts require that you set up continuous testing in your build pipeline. To get deeper insights and data you can view the Test Failure report in the pipeline. To learn more, see details [Analyze test results](../../pipelines/test/test-analytics.md#view-test-analytics-for-builds).
 
@@ -54,20 +54,20 @@ In order to configure the Test Results Trend widget, you must have the following
 
 ::: moniker range="azure-devops"
 
-* You must be a member of a project. If you haven't been added as a project member, [get added now](/azure/devops/organizations/accounts/add-organization-users).
-* Set up continuous testing for your build pipeline. For details, see [Run unit tests with your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).
-* To add a widget to a team dashboard, you need to be a member of the team. You must have **Basic** access or greater, have [dashboard permissions](/azure/devops/report/dashboards/dashboard-permissions), or be a [team admin](/azure/devops/organizations/settings/add-team-administrator) or project admin. Default settings provide all team members with permissions.
-* **Pipelines** must be enabled. If disabled, none of the Analytics widgets for pipelines will display. To re-enable it, see [Turn an Azure DevOps service on or off](/azure/devops/organizations/settings/set-services).
+- You must be a member of a project. If you haven't been added as a project member, [get added now](/azure/devops/organizations/accounts/add-organization-users).
+- Set up continuous testing for your build pipeline. For details, see [Run unit tests with your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).
+- To add a widget to a team dashboard, you need to be a member of the team. You must have **Basic** access or greater, have [dashboard permissions](/azure/devops/report/dashboards/dashboard-permissions), or be a [team admin](/azure/devops/organizations/settings/add-team-administrator) or project admin. Default settings provide all team members with permissions.
+- **Pipelines** must be enabled. If disabled, none of the Analytics widgets for pipelines will display. To re-enable it, see [Turn an Azure DevOps service on or off](/azure/devops/organizations/settings/set-services).
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-* You must be a member of a project. If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project).
-* Set up continuous testing for your build pipeline. For details, see [Run unit tests with your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).
-* Have installed the [Analytics Marketplace extension](../dashboards/analytics-extension.md). You must be a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions.
-* To add a widget to a team dashboard, you need to be a member of the team. You must have **Basic** access or greater, have [dashboard permissions](/azure/devops/report/dashboards/dashboard-permissions), or be a [team admin](/azure/devops/organizations/settings/add-team-administrator) or project admin.
-* **Pipelines** must be enabled. If disabled, none of the Analytics widgets for pipelines will display. To re-enable it, see [Turn an Azure DevOps service on or off](/azure/devops/organizations/settings/set-services).
+- You must be a member of a project. If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project).
+- Set up continuous testing for your build pipeline. For details, see [Run unit tests with your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).
+- Have installed the [Analytics Marketplace extension](../dashboards/analytics-extension.md). You must be a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions.
+- To add a widget to a team dashboard, you need to be a member of the team. You must have **Basic** access or greater, have [dashboard permissions](/azure/devops/report/dashboards/dashboard-permissions), or be a [team admin](/azure/devops/organizations/settings/add-team-administrator) or project admin.
+- **Pipelines** must be enabled. If disabled, none of the Analytics widgets for pipelines will display. To re-enable it, see [Turn an Azure DevOps service on or off](/azure/devops/organizations/settings/set-services).
 
 ::: moniker-end
 

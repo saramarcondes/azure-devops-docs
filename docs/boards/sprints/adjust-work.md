@@ -28,9 +28,9 @@ Use this article to learn how to:
 
 > [!div class="checklist"]
 >
-> * Adjust your sprint plan if your team is over or under capacity
-> * Load balance work across your team
-> * Quickly reassign tasks to another team member
+> - Adjust your sprint plan if your team is over or under capacity
+> - Load balance work across your team
+> - Quickly reassign tasks to another team member
 
 [!INCLUDE [temp](../includes/prerequisites.md)]
 

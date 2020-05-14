@@ -16,13 +16,13 @@ This tutorial walks you through setting up a CI/CD pipeline for deploying Node.j
 
 ## Prerequisites
 
-* An Azure account. If you don't have one, you can [create for free](https://azure.microsoft.com/free/?utm_source=campaign&utm_campaign=vscode-tutorial-app-service-extension&mktingSource=vscode-tutorial-app-service-extension).
+- An Azure account. If you don't have one, you can [create for free](https://azure.microsoft.com/free/?utm_source=campaign&utm_campaign=vscode-tutorial-app-service-extension&mktingSource=vscode-tutorial-app-service-extension).
 
-* You need [Visual Studio Code](https://code.visualstudio.com/)  installed along with the [Node.js and npm the Node.js package manager](https://nodejs.org/download) and the below extensions:
+- You need [Visual Studio Code](https://code.visualstudio.com/)  installed along with the [Node.js and npm the Node.js package manager](https://nodejs.org/download) and the below extensions:
 
-* You need [Azure Account extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account) and [Deploy to Azure extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-deploy-azure.azure-deploy)
+- You need [Azure Account extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account) and [Deploy to Azure extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-deploy-azure.azure-deploy)
 
-* A GitHub account, where you can create a repository. If you don't have one, you can [create one for free](https://github.com/).
+- A GitHub account, where you can create a repository. If you don't have one, you can [create one for free](https://github.com/).
 
 > [!IMPORTANT]
 > Ensure that you have all the prerequisites installed and configured.
@@ -147,8 +147,8 @@ We support GitHub Actions and Azure Pipelines for GitHub & Azure Repos correspon
 
 To open your user and workspace settings, use the following VS Code menu command:
 
-* On Windows/Linux - **File > Preferences > Settings**
-* On macOS - **Code > Preferences > Settings**
+- On Windows/Linux - **File > Preferences > Settings**
+- On macOS - **Code > Preferences > Settings**
 
 You can also open the Settings editor from the Command Palette (`Ctrl+Shift+P`) with Preferences: Open Settings or use the keyboard shortcut (`Ctrl+,`).
 

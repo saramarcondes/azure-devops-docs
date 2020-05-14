@@ -19,8 +19,8 @@ Model to represent a public access uri
 
 ### Members
 
-* `authority`: string. Host name and port number of the url
+- `authority`: string. Host name and port number of the url
 
-* `scheme`: string. Url scheme (http, https, ...)
+- `scheme`: string. Url scheme (http, https, ...)
 
-* `uri`: string. Full url
+- `uri`: string. Full url

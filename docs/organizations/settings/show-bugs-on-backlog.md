@@ -33,11 +33,11 @@ You can change the setting from a backlog or board view. Here we show how to cha
 
 In the **Working with bugs** dialog, you can select from the following three options.
 
-* Choose the first option when your team wants to manage bugs similar to requirements. Bugs can be estimated and tracked against team velocity and cumulative flow. Bugs are associated with the Requirements category.
+- Choose the first option when your team wants to manage bugs similar to requirements. Bugs can be estimated and tracked against team velocity and cumulative flow. Bugs are associated with the Requirements category.
 
-* Choose the second option when your team wants to manage bugs similar to tasks. Remaining work can be tracked for bugs and tracked against the sprint capacity and burndown. Bugs are associated with the Task category.
+- Choose the second option when your team wants to manage bugs similar to tasks. Remaining work can be tracked for bugs and tracked against the sprint capacity and burndown. Bugs are associated with the Task category.
 
-* Choose the last option if your team manages bugs separate from requirements or tasks. Bugs are associated with the Bugs category and won't appear on either backlogs or boards.
+- Choose the last option if your team manages bugs separate from requirements or tasks. Bugs are associated with the Bugs category and won't appear on either backlogs or boards.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -87,7 +87,7 @@ Requires TFS 2013.4 or later version.
 
 3.  From the **Overview** tab, choose the team whose settings you want to configure, and then choose **Settings**. Select the option you want. Your changes are automatically saved.
 
-    <img src="media/team-settings.png" alt="TFS 2015, web portal, team settings admin page, Working with bugs" style="border: 2px solid #C3C3C3;" />  
+    <img src="media/team-settings.png" alt="TFS 2015, web portal, team settings admin page, Working with bugs" style="border: 2px solid #C3C3C3;" />
 
 4.  To see the changes, open or refresh the team's [backlog](../../boards/backlogs/create-your-backlog.md) or [Kanban board](../../boards/boards/kanban-basics.md).
 
@@ -112,8 +112,8 @@ However, what if you want to track other work item types (WITs) on your backlogs
 
 You can add other WITs&#8212;such as change requests, issues, or impediments&#8212; by customizing your process or project, based on the process model you use. For details,
 
-* For the Inheritance process model, see [Customize your backlogs or boards for a process](work/customize-process-backlogs-boards.md).
-* For Hosted XML and On-premises XML process models, see [Add a work item type to a backlog and board](../../reference/add-wits-to-backlogs-and-boards.md).
+- For the Inheritance process model, see [Customize your backlogs or boards for a process](work/customize-process-backlogs-boards.md).
+- For Hosted XML and On-premises XML process models, see [Add a work item type to a backlog and board](../../reference/add-wits-to-backlogs-and-boards.md).
 
 ::: moniker-end
 
@@ -133,22 +133,22 @@ You can review bugs defined for your project by creating a query and specifying 
 
 ::: moniker range=">= azure-devops-2019"
 
-* [View, run, or email a work item query](../../boards/queries/view-run-query.md)
-* [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md)
-* [Triage work items](../../boards/queries/triage-work-items.md)
-* [Query by assignment or workflow changes](../../boards/queries/query-by-workflow-changes.md)
+- [View, run, or email a work item query](../../boards/queries/view-run-query.md)
+- [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md)
+- [Triage work items](../../boards/queries/triage-work-items.md)
+- [Query by assignment or workflow changes](../../boards/queries/query-by-workflow-changes.md)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-* [View, run, or email a work item query](../../boards/queries/view-run-query.md)
-* [Triage work items](../../boards/queries/triage-work-items.md)
-* [Query by assignment or workflow changes](../../boards/queries/query-by-workflow-changes.md)
+- [View, run, or email a work item query](../../boards/queries/view-run-query.md)
+- [Triage work items](../../boards/queries/triage-work-items.md)
+- [Query by assignment or workflow changes](../../boards/queries/query-by-workflow-changes.md)
 
 ::: moniker-end
 
 ## Related articles
 
-* [Enable backlog levels of interest to your team](select-backlog-navigation-levels.md)
-* [Manage teams and configure team tools](manage-teams.md)
+- [Enable backlog levels of interest to your team](select-backlog-navigation-levels.md)
+- [Manage teams and configure team tools](manage-teams.md)

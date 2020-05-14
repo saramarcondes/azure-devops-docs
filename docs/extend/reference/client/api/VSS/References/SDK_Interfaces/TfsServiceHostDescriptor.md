@@ -19,12 +19,12 @@ Internal structure to describe IVssServiceHost
 
 ### Members
 
-* `hostType`: any.
+- `hostType`: any.
 
-* `id`: string.
+- `id`: string.
 
-* `name`: string.
+- `name`: string.
 
-* `relVdir`: string.
+- `relVdir`: string.
 
-* `vdir`: string.
+- `vdir`: string.

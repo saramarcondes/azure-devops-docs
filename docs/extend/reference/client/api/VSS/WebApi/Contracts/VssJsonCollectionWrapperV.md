@@ -18,4 +18,4 @@ Extends: [VssJsonCollectionWrapperBase](../../../VSS/WebApi/Contracts/VssJsonCol
 
 ### Members
 
-* `value`: T.
+- `value`: T.

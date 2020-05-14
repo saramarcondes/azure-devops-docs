@@ -15,6 +15,6 @@ Module path: `TFS/VersionControl/Contracts`
 
 ### Members
 
-* `refUpdateRequests`: [GitRefUpdate](../../../TFS/VersionControl/Contracts/GitRefUpdate.md)[].
+- `refUpdateRequests`: [GitRefUpdate](../../../TFS/VersionControl/Contracts/GitRefUpdate.md)[].
 
-* `updateMode`: [GitRefUpdateMode](../../../TFS/VersionControl/Contracts/GitRefUpdateMode.md).
+- `updateMode`: [GitRefUpdateMode](../../../TFS/VersionControl/Contracts/GitRefUpdateMode.md).

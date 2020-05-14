@@ -23,8 +23,8 @@ When developing an app for Android or Apple operating systems, you will eventual
 
 This article covers:
 
-* [Sign your Android app](#android)
-* [Sign your Apple iOS, macOS, tvOS, or watchOS app](#apple)
+- [Sign your Android app](#android)
+- [Sign your Apple iOS, macOS, tvOS, or watchOS app](#apple)
 
 <a name="android"></a>
 
@@ -44,9 +44,9 @@ Follow these steps to sign your Android app while keeping your signing certifica
 
 1.  Go to the **Variables** tab and add the following variables. In their **Value** column, enter your **Keystore password**, **Key alias**, and **Key password**.
 
-    * **keystore-password**: Password to the unencrypted keystore file. _Be sure to click the **lock** icon._ This will secure your password and obscure it in logs.
-    * **key-alias**: The key alias for the signing certificate you generated.
-    * **key-password**: The password for the key associated with the specified alias. _Again, be sure to click the **lock** icon._
+    - **keystore-password**: Password to the unencrypted keystore file. _Be sure to click the **lock** icon._ This will secure your password and obscure it in logs.
+    - **key-alias**: The key alias for the signing certificate you generated.
+    - **key-password**: The password for the key associated with the specified alias. _Again, be sure to click the **lock** icon._
 
       ![Android signing variables](media/secure-certs/android-signing-variables.png)
 

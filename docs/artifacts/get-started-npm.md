@@ -64,9 +64,9 @@ If you aren't sure, you can select **Start 30 day free trial**. Every user in yo
 
 1.  Select **Assign**, enter the users you want to assign licenses, and then select **Ok**.
 
-    * Users with Visual Studio Enterprise subscriptions get Azure Artifacts for free. [Ensure that your Visual Studio Enterprise subscribers are assigned the Visual Studio Enterprise access level](../organizations/security/change-access-levels.md).
+    - Users with Visual Studio Enterprise subscriptions get Azure Artifacts for free. [Ensure that your Visual Studio Enterprise subscribers are assigned the Visual Studio Enterprise access level](../organizations/security/change-access-levels.md).
 
-    * Users who are using an instance of TFS that's disconnected from the internet (and thus can't purchase licenses from the Marketplace) can still assign licenses purchased through an enterprise agreement.
+    - Users who are using an instance of TFS that's disconnected from the internet (and thus can't purchase licenses from the Marketplace) can still assign licenses purchased through an enterprise agreement.
 
 ::: moniker-end
 
@@ -76,15 +76,14 @@ On your first visit to **Azure Artifacts**, you're welcomed with an image that p
 
 In the dialog box:
 
-* Give the feed a name.
-* **Visibility**: Choose who can read and contribute (or update) packages in your feed. An organization-visible feed is created with permissions that allow all users in the organization to see and use your feed (recommended). A private feed is created with permissions such that only you have access.
-* **Upstream sources**: Selecting **Use packages from public sources through this feed** will add both the public npm (registry.npmjs.org) and NuGet (packages.nuget.org) packages as upstreams to your feed. When upstreams are enabled, your client (that is, npm and NuGet) can fetch packages from the public registry through your private feed, and your private feed will cache those packages for you. If you select **Use packages published to this feed**, your feed is created without connectivity to public registries. You can connect them later if you want.
-* When you're done, select **Create**.
+- Give the feed a name.
+- **Visibility**: Choose who can read and contribute (or update) packages in your feed. An organization-visible feed is created with permissions that allow all users in the organization to see and use your feed (recommended). A private feed is created with permissions such that only you have access.
+- **Upstream sources**: Selecting **Use packages from public sources through this feed** will add both the public npm (registry.npmjs.org) and NuGet (packages.nuget.org) packages as upstreams to your feed. When upstreams are enabled, your client (that is, npm and NuGet) can fetch packages from the public registry through your private feed, and your private feed will cache those packages for you. If you select **Use packages published to this feed**, your feed is created without connectivity to public registries. You can connect them later if you want.
+- When you're done, select **Create**.
 
 ::: moniker range=">= azure-devops-2019"
 
-> [!div class="mx-imgBorder"]
-> ![New feed dialog box](media/new-feed-dialog.png)
+> [!div class="mx-imgBorder"] > ![New feed dialog box](media/new-feed-dialog.png)
 
 ::: moniker-end
 
@@ -112,8 +111,7 @@ We recommend that you use two .npmrc files:
 
         ::: moniker range=">= azure-devops-2019"
 
-        > [!div class="mx-imgBorder"]
-        > ![Connect to feed button in Azure Artifacts](media/connect-to-feed-azure-devops-newnav.png)
+        > [!div class="mx-imgBorder"] > ![Connect to feed button in Azure Artifacts](media/connect-to-feed-azure-devops-newnav.png)
 
         ::: moniker-end
 
@@ -141,8 +139,7 @@ We recommend that you use two .npmrc files:
 
         ::: moniker range=">= azure-devops-2019"
 
-        > [!div class="mx-imgBorder"]
-        > ![Connect to feed from Azure Artifacts](media/npm-azure-devops-newnav.png)
+        > [!div class="mx-imgBorder"] > ![Connect to feed from Azure Artifacts](media/npm-azure-devops-newnav.png)
 
         ::: moniker-end
 
@@ -181,7 +178,7 @@ If you're developing on Windows, we recommend that you use `vsts-npm-auth` to fe
 
 #### Linux or Mac
 
-If you're developing on Linux or Mac, `vsts-npm-auth` is not supported. We recommend generating a token in the following manner for your $HOME/.npmrc file.
+If you're developing on Linux or Mac, `vsts-npm-auth` is not supported. We recommend generating a token in the following manner for your \$HOME/.npmrc file.
 
 [!INCLUDE [](./includes/npm/npmrc.md)]
 

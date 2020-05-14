@@ -110,10 +110,10 @@ The default reportable type is none. Area ID and Iteration ID are indexed, Node 
 
 ## Related articles
 
-* [Query quick reference](query-index-quick-ref.md)
-* [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
-* [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
-* [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md)
+- [Query quick reference](query-index-quick-ref.md)
+- [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
+- [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
+- [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md)
 
 ::: moniker range="<= azure-devops-2019"
 <a name="field-rules"></a>

@@ -64,6 +64,6 @@ To record audio from your local computer, you must set a microphone device as th
 
 ## Related articles
 
-* [Exploratory testing](../../test/perform-exploratory-tests.md)
-* [Run your tests](../../test/run-manual-tests.md)
-* [Provide feedback using the Microsoft Feedback Manager](give-feedback.md)
+- [Exploratory testing](../../test/perform-exploratory-tests.md)
+- [Run your tests](../../test/run-manual-tests.md)
+- [Provide feedback using the Microsoft Feedback Manager](give-feedback.md)

@@ -164,11 +164,11 @@ Post that, you can set up and manage your notifications the same way as you woul
 
 > [!NOTE]
 >
-> * You can use the Azure Pipelines app for Slack only with a project hosted on Azure DevOps Services at this time.
-> * The user has to be an admin of the project containing the pipeline to set up the subscriptions
-> * Notifications are currently not supported inside direct messages
-> * Deployment approvals which have 'Revalidate identity of approver before completing the approval' policy applied, are not supported
-> * 'Third party application access via OAuth' must be enabled to receive notifications for the organization in Azure DevOps (Organization Settings -> Security -> Policies)
+> - You can use the Azure Pipelines app for Slack only with a project hosted on Azure DevOps Services at this time.
+> - The user has to be an admin of the project containing the pipeline to set up the subscriptions
+> - Notifications are currently not supported inside direct messages
+> - Deployment approvals which have 'Revalidate identity of approver before completing the approval' policy applied, are not supported
+> - 'Third party application access via OAuth' must be enabled to receive notifications for the organization in Azure DevOps (Organization Settings -> Security -> Policies)
 
 ## Troubleshooting
 
@@ -186,6 +186,6 @@ If these steps don't resolve your authentication issue, reach out to us at [Deve
 
 ## Related articles
 
-* [Azure Boards with Slack](https://aka.ms/AzureBoardsSlackIntegration)
-* [Azure Repos with Slack](https://aka.ms/AzureReposSlackIntegration)
-* [Create a service hook for Azure DevOps with Slack](../../service-hooks/services/slack.md)
+- [Azure Boards with Slack](https://aka.ms/AzureBoardsSlackIntegration)
+- [Azure Repos with Slack](https://aka.ms/AzureReposSlackIntegration)
+- [Create a service hook for Azure DevOps with Slack](../../service-hooks/services/slack.md)

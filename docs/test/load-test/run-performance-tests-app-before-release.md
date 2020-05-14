@@ -25,11 +25,11 @@ In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]
 >
-> * [Create a web performance and load test project](#createtests)
-> * [Record a web performance test](#recordtests)
-> * [Create a load test](#createload)
-> * [Run and analyze your load test](#runanalyze)
-> * [Improve your load tests](#improvetests)
+> - [Create a web performance and load test project](#createtests)
+> - [Record a web performance test](#recordtests)
+> - [Create a load test](#createload)
+> - [Run and analyze your load test](#runanalyze)
+> - [Improve your load tests](#improvetests)
 
 <a name="createtests"></a>
 

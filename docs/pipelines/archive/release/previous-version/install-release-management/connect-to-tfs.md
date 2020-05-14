@@ -95,13 +95,13 @@ permissions.
 
 ## Related topics
 
-* [Overview of Release Management](../release-management-overview.md)
-* [System requirements for Release Management](system-requirements.md)
-* [Install Release Management](../install-release-management.md)
-* [Install Release Management server and client](install-server-and-client.md)
-* [Install deployment agents](install-deployment-agent.md)
-* [Manage users, groups, and permissions](../add-users-and-groups.md)
-* [Manage your release](../manage-your-release.md)
+- [Overview of Release Management](../release-management-overview.md)
+- [System requirements for Release Management](system-requirements.md)
+- [Install Release Management](../install-release-management.md)
+- [Install Release Management server and client](install-server-and-client.md)
+- [Install deployment agents](install-deployment-agent.md)
+- [Manage users, groups, and permissions](../add-users-and-groups.md)
+- [Manage your release](../manage-your-release.md)
 
 [!INCLUDE [wpfver-back-to-index-shared](../../includes/wpfver-back-to-index-shared.md)]
 

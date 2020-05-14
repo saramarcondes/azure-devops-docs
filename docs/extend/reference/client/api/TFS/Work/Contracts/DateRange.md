@@ -15,6 +15,6 @@ Module path: `TFS/Work/Contracts`
 
 ### Members
 
-* `end`: Date. End of the date range.
+- `end`: Date. End of the date range.
 
-* `start`: Date. Start of the date range.
+- `start`: Date. Start of the date range.

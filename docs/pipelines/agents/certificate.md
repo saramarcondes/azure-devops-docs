@@ -100,21 +100,21 @@ IIS has a SSL setting that requires all incoming requests to TFS must present cl
 
 When that IIS SSL setting enabled, you need to use `2.125.0` or above version agent and follow these extra steps in order to configure the build machine against your TFS server.
 
-* Prepare all required certificate information
+- Prepare all required certificate information
 
-  * CA certificate(s) in `.pem` format (This should contains the public key and signature of the CA certificate, you need put the root ca certificate and all your intermediate ca certificates into one `.pem` file)
-  * Client certificate in `.pem` format (This should contains the public key and signature of the Client certificate)
-  * Client certificate private key in `.pem` format (This should contains only the private key of the Client certificate)
-  * Client certificate archive package in `.pfx` format (This should contains the signature, public key and private key of the Client certificate)
-  * Use `SAME` password to protect Client certificate private key and Client certificate archive package, since they both have client certificate's private key
+  - CA certificate(s) in `.pem` format (This should contains the public key and signature of the CA certificate, you need put the root ca certificate and all your intermediate ca certificates into one `.pem` file)
+  - Client certificate in `.pem` format (This should contains the public key and signature of the Client certificate)
+  - Client certificate private key in `.pem` format (This should contains only the private key of the Client certificate)
+  - Client certificate archive package in `.pfx` format (This should contains the signature, public key and private key of the Client certificate)
+  - Use `SAME` password to protect Client certificate private key and Client certificate archive package, since they both have client certificate's private key
 
-* Install CA certificate(s) into machine certificate store
+- Install CA certificate(s) into machine certificate store
 
-  * Linux: OpenSSL certificate store
-  * macOS: System or User Keychain
-  * Windows: Windows certificate store
+  - Linux: OpenSSL certificate store
+  - macOS: System or User Keychain
+  - Windows: Windows certificate store
 
-* Pass `--sslcacert`, `--sslclientcert`, `--sslclientcertkey`. `--sslclientcertarchive` and `--sslclientcertpassword` during agent configuration.
+- Pass `--sslcacert`, `--sslclientcert`, `--sslclientcertkey`. `--sslclientcertarchive` and `--sslclientcertpassword` during agent configuration.
 
   ```
   .\config.cmd/sh --sslcacert ca.pem --sslclientcert clientcert.pem --sslclientcertkey clientcert-key-pass.pem --sslclientcertarchive clientcert-archive.pfx --sslclientcertpassword "mypassword"

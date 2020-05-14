@@ -19,18 +19,18 @@ In this article, we'll show you how to start working with your code in Azure Rep
 
 > [!div class="checklist"]
 >
-> * Installing Git command line tools
-> * Cloning a Git repository
-> * Working in a branch
-> * Sharing your changes
-> * Creating a pull request
+> - Installing Git command line tools
+> - Cloning a Git repository
+> - Working in a branch
+> - Sharing your changes
+> - Creating a pull request
 
 ## Install Git command-line tools
 
 Install one of the following Git command-line tools:
 
-* To install Git for Windows, including Git Credential Manager, see [Install Git Credential Manager for Windows](../git/set-up-credential-managers.md#windows).
-* To install on macOS or Linux, check out the [Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) chapter in the open-source _Pro Git_ book. For macOS and Linux, we recommend [configuring SSH authentication](../git/use-ssh-keys-to-authenticate.md)
+- To install Git for Windows, including Git Credential Manager, see [Install Git Credential Manager for Windows](../git/set-up-credential-managers.md#windows).
+- To install on macOS or Linux, check out the [Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) chapter in the open-source _Pro Git_ book. For macOS and Linux, we recommend [configuring SSH authentication](../git/use-ssh-keys-to-authenticate.md)
 
 ## Get your code
 
@@ -38,10 +38,10 @@ To get a copy of the source code, you clone the Git repo that contains the code.
 
 If you're just getting started with Azure Repos, your code might be in one of several places:
 
-* [I just created my organization in Azure DevOps, so I don't have any code](#i-just-created-my-organization-in-azure-devops-so-i-dont-have-any-code)
-* [The code is in my (or my organization's) Azure Repos Git repo](#the-code-is-in-my-or-my-organizations-azure-repos-git-repo)
-* [The code is in another Git repo such as GitHub or another Azure Repos Git repo](#the-code-is-in-another-git-repo)
-* [The code is on my local computer and not yet in version control](#the-code-is-on-my-local-computer-and-not-yet-in-version-control)
+- [I just created my organization in Azure DevOps, so I don't have any code](#i-just-created-my-organization-in-azure-devops-so-i-dont-have-any-code)
+- [The code is in my (or my organization's) Azure Repos Git repo](#the-code-is-in-my-or-my-organizations-azure-repos-git-repo)
+- [The code is in another Git repo such as GitHub or another Azure Repos Git repo](#the-code-is-in-another-git-repo)
+- [The code is on my local computer and not yet in version control](#the-code-is-on-my-local-computer-and-not-yet-in-version-control)
 
 ### I just created my organization in Azure DevOps, so I don't have any code
 
@@ -61,8 +61,8 @@ If the code is in another Git repo, such as a GitHub repo or a different Azure R
 
 If your code is not yet in version control, you have a couple of options:
 
-* Create a new repository and add your code there. To do this, follow the steps in [Create a new Git repo in your project](../git/create-new-repo.md#create-a-repo-using-the-web-portal) and then come back to this article and jump down to [Clone the repo](#clone-the-repo).
-* Add your code to an existing repository. To do this, jump down to [Clone the repo](#clone-the-repo).
+- Create a new repository and add your code there. To do this, follow the steps in [Create a new Git repo in your project](../git/create-new-repo.md#create-a-repo-using-the-web-portal) and then come back to this article and jump down to [Clone the repo](#clone-the-repo).
+- Add your code to an existing repository. To do this, jump down to [Clone the repo](#clone-the-repo).
 
 After the repository is cloned, we'll show you how to add your existing code to the repo.
 

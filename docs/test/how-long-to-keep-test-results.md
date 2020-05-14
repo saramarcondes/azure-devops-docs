@@ -74,6 +74,6 @@ set the retention limits at the project level as shown [here](#manual-test-resul
 
 ## See also
 
-* [FAQs for manual testing](reference-qa.md#manageresults)
+- [FAQs for manual testing](reference-qa.md#manageresults)
 
 [!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

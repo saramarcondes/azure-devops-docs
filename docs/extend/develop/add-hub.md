@@ -31,7 +31,7 @@ We'll create a new hub that displays in the Work hub group, after the Backlogs a
 |--- images
 	|--- icon.png
 |--- scripts                        	// not used in this tutorial
-|--- hello-world.html				// html page to be used for your hub  
+|--- hello-world.html				// html page to be used for your hub
 |--- vss-extension.json				// extension's manifest
 ```
 
@@ -50,8 +50,8 @@ npm install vss-web-extension-sdk
 
 ## Your hub page: `hello-world.html`
 
-* Every hub displays a web page
-* Check out the targetable hub groups in the [extension points reference](../reference/targets/overview.md#hubs)
+- Every hub displays a web page
+- Check out the targetable hub groups in the [extension points reference](../reference/targets/overview.md#hubs)
 
 Create a `hello-world.html` file in the `home` directory of your extension.
 Reference the SDK and call _init()_ and _notifyLoadSucceeded()_.
@@ -73,9 +73,9 @@ Reference the SDK and call _init()_ and _notifyLoadSucceeded()_.
 
 ## Your extension's manifest file: `vss-extension.json`
 
-* **_Every_** extension must have an extension manifest file
-* Read the [extension manifest reference](../develop/manifest.md)
-* Find out more about the contribution points in the [extension points reference](../reference/targets/overview.md)
+- **_Every_** extension must have an extension manifest file
+- Read the [extension manifest reference](../develop/manifest.md)
+- Find out more about the contribution points in the [extension points reference](../reference/targets/overview.md)
 
 Create a json file (`vss-extension.json`, for example) in the `home` directory with the following contents:
 
@@ -143,9 +143,9 @@ The **contributions** stanza adds your contribution - the Hello hub - to your ex
 
 For each contribution in your extension, the manifest defines
 
-* the type of contribution, hub,
-* the contribution target, the work hub group (check out all of the [targetable hub groups](../reference/targets/overview.md#targetable-hub-groups)),
-* and the properties that are specific to each type of contribution. For a hub, there are the following properties:
+- the type of contribution, hub,
+- the contribution target, the work hub group (check out all of the [targetable hub groups](../reference/targets/overview.md#targetable-hub-groups)),
+- and the properties that are specific to each type of contribution. For a hub, there are the following properties:
 
 | Property | Description                                                                 |
 | -------- | --------------------------------------------------------------------------- |
@@ -170,5 +170,5 @@ Set `addressable` to `true` unless you include other files that don't need to be
 
 Package, Publish, and Install your extension. You can also check out the following articles for Testing and Debugging your extension.
 
-* [Package, publish, and install extensions](../publish/overview.md)
-* [Testing and debugging extensions](../test/debug-in-browser.md)
+- [Package, publish, and install extensions](../publish/overview.md)
+- [Testing and debugging extensions](../test/debug-in-browser.md)

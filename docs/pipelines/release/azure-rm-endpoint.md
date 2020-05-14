@@ -47,10 +47,10 @@ When you choose **OK**, the system:
 
 Errors that may occur when the system attempts to create the service connection include:
 
-* [Insufficient privileges to complete the operation](#privileges)
-* [Failed to obtain an access token](#sessionexpired)
-* [A valid refresh token was not found](#sessionexpired)
-* [Failed to assign contributor role](#contributorrole)
+- [Insufficient privileges to complete the operation](#privileges)
+- [Failed to obtain an access token](#sessionexpired)
+- [A valid refresh token was not found](#sessionexpired)
+- [Failed to assign contributor role](#contributorrole)
 
 <a name="privileges"></a>
 
@@ -61,8 +61,8 @@ application in Azure AD on your behalf.
 
 This is a permission issue that may be due to the following causes:
 
-* [The user has only guest permission in the directory](#guestonly)
-* [The user is not authorized to add applications in the directory](#notauthtoadd)
+- [The user has only guest permission in the directory](#guestonly)
+- [The user is not authorized to add applications in the directory](#notauthtoadd)
 
 <a name="guestonly"></a>
 

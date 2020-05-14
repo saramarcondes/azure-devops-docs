@@ -19,4 +19,4 @@ Represents a query to receive a set of extension data collections
 
 ### Members
 
-* `collections`: [ExtensionDataCollection](../../../VSS/References/SDK_Interfaces/ExtensionDataCollection.md)[]. A list of collections to query
+- `collections`: [ExtensionDataCollection](../../../VSS/References/SDK_Interfaces/ExtensionDataCollection.md)[]. A list of collections to query

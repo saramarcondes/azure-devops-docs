@@ -33,19 +33,19 @@ password used for deploying your app on the server.
 Configuration variables can be set at the global, server, component, and
 action levels.
 
-* Global configuration variables: Set from **Administration**, **Settings**,
+- Global configuration variables: Set from **Administration**, **Settings**,
   **Configuration Variables**. Available everywhere.
 
-* Server configuration variables: Set from **Configure Paths**, **Server**,
+- Server configuration variables: Set from **Configure Paths**, **Server**,
   select a server, **Configuration Variables**. Available to actions that
   deploy your app to the server. Use for server-specific variables, such
   as for a UserName and a Password.
 
-* Component configuration variables: Set from **Configure Apps**,
+- Component configuration variables: Set from **Configure Apps**,
   **Component**, select a component, **Configuration Variables**. Available
   to actions that use the component.
 
-* Action configuration variables: Set within the **Release Template** designer,
+- Action configuration variables: Set within the **Release Template** designer,
   available to the actions.
 
 The order of precedence, from highest to lowest, when a configuration
@@ -94,52 +94,52 @@ action when you deploy your app to a Production environment, the script can
 examine the Environment variable. The following system variables are
 available:
 
-* **ApplicationPath**: Destination path, including the component name,
+- **ApplicationPath**: Destination path, including the component name,
   where the component is copied.
 
-* **ApplicationPathRoot**: Destination path where the component is copied.
+- **ApplicationPathRoot**: Destination path where the component is copied.
   The default is C:\\Windows\\dtlDownloads. You can over-ride this value to
   specify an alternative destination path.
 
-* **BuildDefinition**: Build definition for the component.
+- **BuildDefinition**: Build definition for the component.
 
-* **BuildNumber**: Build number for the component.
+- **BuildNumber**: Build number for the component.
 
-* **Environment**: The environment for the release.
+- **Environment**: The environment for the release.
 
-* **PackageLocation**: The source path from which the component is copied.
+- **PackageLocation**: The source path from which the component is copied.
   For builds dropped to a Standard server, the path points to the
   container-id. For builds dropped to Azure, the path points to the storage
   blob GUID.
 
-* **ReleaseId**: The ID of the release; this is assigned by Release Management.
+- **ReleaseId**: The ID of the release; this is assigned by Release Management.
 
-* **ReleaseNumber**: The number of the release.
+- **ReleaseNumber**: The number of the release.
 
-* **Stage**: The stage of the release.
+- **Stage**: The stage of the release.
 
-* **Tag**: Tag used to group the server which is running the action.
+- **Tag**: Tag used to group the server which is running the action.
 
-* **TeamProject**: Project for the component.
+- **TeamProject**: Project for the component.
 
-* **TFSUrl**: TFS URL for the component.
+- **TFSUrl**: TFS URL for the component.
 
 When using configuration or system variables in scripts, prefix the variable
-name with a dollar sign (**$**). For example: **$Stage**.
+name with a dollar sign (**\$**). For example: **\$Stage**.
 
 Note a value could be unassigned. For example, if you are deploying your
-app to a server that wasn't grouped by a tag, the value of the **$Tag**
+app to a server that wasn't grouped by a tag, the value of the **\$Tag**
 variable will be unassigned.
 
 ## Related topics
 
-* [Overview of Release Management](release-management-overview.md)
-* [Install Release Management](install-release-management.md)
-* [Manage your release](manage-your-release.md)
-* [Release without deployment agents](release-without-agents.md)
-* [Release with deployment agents](release-with-agents.md)
-* [Trigger a release from a build](trigger-a-release.md)
-* [Deploy continuously to Azure](deploy-continuously-to-azure.md)
+- [Overview of Release Management](release-management-overview.md)
+- [Install Release Management](install-release-management.md)
+- [Manage your release](manage-your-release.md)
+- [Release without deployment agents](release-without-agents.md)
+- [Release with deployment agents](release-with-agents.md)
+- [Trigger a release from a build](trigger-a-release.md)
+- [Deploy continuously to Azure](deploy-continuously-to-azure.md)
 
 [!INCLUDE [wpfver-back-to-index-shared](../includes/wpfver-back-to-index-shared.md)]
 

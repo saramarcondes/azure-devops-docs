@@ -89,9 +89,9 @@ After you confirm that you have an edition of SQL Server that supports reporting
 
 3.  In **Feature Selection**, add these features:
 
-    * Analysis Services
-    * Reporting Services - Native
-    * Management Tools - Complete (not pictured)
+    - Analysis Services
+    - Reporting Services - Native
+    - Management Tools - Complete (not pictured)
 
     ![Add features to your instance](media/feature-selection.png)
 
@@ -192,16 +192,16 @@ Now that you've added reporting to the server and to the team project collection
 
 You can learn more about installing and configuring SQL Server for use with on-premises TFS from these topics:
 
-* [Supported versions and edition](/azure/devops/server/requirements#sql-server)
-* [Working with named instances](/azure/devops/server/install/sql-server/install-sql-server)
-* [Using SQL Server 2012 AlwaysOn](/azure/devops/server/install/sql-server/use-always-on-groups)
-* [Understanding how TFS, SQL Server, and Reporting all work together](/azure/devops/server/architecture/sql-server-databases)
+- [Supported versions and edition](/azure/devops/server/requirements#sql-server)
+- [Working with named instances](/azure/devops/server/install/sql-server/install-sql-server)
+- [Using SQL Server 2012 AlwaysOn](/azure/devops/server/install/sql-server/use-always-on-groups)
+- [Understanding how TFS, SQL Server, and Reporting all work together](/azure/devops/server/architecture/sql-server-databases)
 
 ### Set permissions
 
-* [Set administrator permissions](/azure/devops/server/admin/add-administrator)
+- [Set administrator permissions](/azure/devops/server/admin/add-administrator)
 
 ### Change the data reader account
 
-* [Change the service account or password for SQL Server Reporting](/azure/devops/server/admin/change-service-account-or-password-sql-reporting)
-* [Service accounts and dependencies in Team Foundation Server](/azure/devops/server/admin/service-accounts-dependencies)
+- [Change the service account or password for SQL Server Reporting](/azure/devops/server/admin/change-service-account-or-password-sql-reporting)
+- [Service accounts and dependencies in Team Foundation Server](/azure/devops/server/admin/service-accounts-dependencies)

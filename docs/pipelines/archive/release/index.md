@@ -17,11 +17,11 @@ monikerRange: '>= tfs-2013'
 **Release Management** helps you support a rapid release cadence and manage simultaneous releases.
 You can:
 
-* Set up release pipelines that represent your environments from development to production.
-* Run automations to deploy your app to each environment.
-* Add approvers to sign off that the app has been successfully deployed in an environment.
-* Create your release manually or automatically from a build.
-* Track your releases as they are deployed to various environments.
+- Set up release pipelines that represent your environments from development to production.
+- Run automations to deploy your app to each environment.
+- Add approvers to sign off that the app has been successfully deployed in an environment.
+- Create your release manually or automatically from a build.
+- Track your releases as they are deployed to various environments.
 
 ... and much more.
 
@@ -31,7 +31,7 @@ For more information, see **[Build and Release in Azure Pipelines and TFS](../..
 
 The **previous versions** of Release Management are deprecated. No new features will be added to these versions:
 
-* **[Server and client version for Visual Studio 2015](overview-rm2015.md)**
-* **[Server and client version for Visual Studio 2013](https://msdn.microsoft.com/library/dn217874%28v%3Dvs.120%29.aspx)**
+- **[Server and client version for Visual Studio 2015](overview-rm2015.md)**
+- **[Server and client version for Visual Studio 2013](https://msdn.microsoft.com/library/dn217874%28v%3Dvs.120%29.aspx)**
 
 > New to DevOps? **[Learn More](https://visualstudio.microsoft.com/devops)** about how implementing DevOps helps you continuously deliver value to your customers.

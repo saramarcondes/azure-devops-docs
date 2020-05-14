@@ -20,9 +20,9 @@ Review your sprint burndown chart throughout your sprint cycle to check for thes
 
 > [!div class="checklist"]
 >
-> * Is remaining work getting updated regularly? Flat spaces within the blue area indicate a lack of updates.
-> * Is remaining work increasing instead of decreasing? Increases can indicate work that wasn't estimated or planned. Both signal a need for the team to discuss how they'll complete the sprint tasks on time.
-> * Based on the actual burn rate, does the team feel confident that they'll complete the work by the end of the sprint?
+> - Is remaining work getting updated regularly? Flat spaces within the blue area indicate a lack of updates.
+> - Is remaining work increasing instead of decreasing? Increases can indicate work that wasn't estimated or planned. Both signal a need for the team to discuss how they'll complete the sprint tasks on time.
+> - Based on the actual burn rate, does the team feel confident that they'll complete the work by the end of the sprint?
 
 To configure or view sprint burndown charts, see [Sprint burndown](configure-sprint-burndown.md).
 
@@ -41,9 +41,9 @@ As the team makes progress, divergences from the ideal trend line help the team 
 
 Increases instead of decreases within the blue graph may indicate:
 
-* Poor estimates made to tasks
-* Discovery of new work not accounted for in sprint planning
-* Scope creep, additional work not agreed to by the team.
+- Poor estimates made to tasks
+- Discovery of new work not accounted for in sprint planning
+- Scope creep, additional work not agreed to by the team.
 
 Whatever the cause, teams should come together quickly to determine how to remedy the increased workload.
 
@@ -120,9 +120,9 @@ You can use your team [velocity](team-velocity.md) as input into the [forecast](
 
 ### Industry resources
 
-* [Understanding the Scrum Burndown Chart](https://www.methodsandtools.com/archive/scrumburndown.php)
-* [Task sizing in Agile software development](https://www.solutionsiq.com/task-sizing-in-agile-software-development/)
+- [Understanding the Scrum Burndown Chart](https://www.methodsandtools.com/archive/scrumburndown.php)
+- [Task sizing in Agile software development](https://www.solutionsiq.com/task-sizing-in-agile-software-development/)
 
 <!---
-For on-premises TFS deployments, you can [specify the format that appears&mdash;**h** for hours or **d** for days&mdash;for the remaining work field](../../reference/xml/process-configuration-xml-element.md#fields).  
+For on-premises TFS deployments, you can [specify the format that appears&mdash;**h** for hours or **d** for days&mdash;for the remaining work field](../../reference/xml/process-configuration-xml-element.md#fields).
 -->

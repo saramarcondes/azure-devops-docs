@@ -127,11 +127,11 @@ This example shows how to add the Velocity widget available from Analytics to a 
 1.  Choose the widget, then **Add** to add it to the dashboard. Or, you can drag-and-drop it onto the dashboard.
 
 1.  Next, configure the widget. For details, see the following articles:
-    * [Configure burndown or burnup](configure-burndown-burnup-widgets.md)
-    * [Configure cumulative flow](cumulative-flow.md)
-    * [Configure lead/cycle time](cycle-time-and-lead-time.md)
-    * [Configure velocity](team-velocity.md)
-    * [Configure test trend results](configure-test-results-trend.md)
+    - [Configure burndown or burnup](configure-burndown-burnup-widgets.md)
+    - [Configure cumulative flow](cumulative-flow.md)
+    - [Configure lead/cycle time](cycle-time-and-lead-time.md)
+    - [Configure velocity](team-velocity.md)
+    - [Configure test trend results](configure-test-results-trend.md)
 
 ::: moniker-end
 
@@ -154,11 +154,11 @@ To configure a widget, add the widget to a dashboard, choose open the ![actions 
 
 Additional information is provided to configure the following widgets:
 
-* [Burndown/burnup](configure-burndown-burnup-widgets.md)
-* [Cumulative flow](cumulative-flow.md)
-* [Lead time or cycle time](cycle-time-and-lead-time.md)
-* [Velocity widget](team-velocity.md)
-* [Test trend results](configure-test-results-trend.md)
+- [Burndown/burnup](configure-burndown-burnup-widgets.md)
+- [Cumulative flow](cumulative-flow.md)
+- [Lead time or cycle time](cycle-time-and-lead-time.md)
+- [Velocity widget](team-velocity.md)
+- [Test trend results](configure-test-results-trend.md)
 
 ::: moniker-end
 
@@ -166,10 +166,10 @@ Additional information is provided to configure the following widgets:
 
 Additional information is provided to configure the following widgets:
 
-* [Burndown/burnup](configure-burndown-burnup-widgets.md)
-* [Cumulative flow](cumulative-flow.md)
-* [Lead time or cycle time](cycle-time-and-lead-time.md)
-* [Velocity widget](team-velocity.md)
+- [Burndown/burnup](configure-burndown-burnup-widgets.md)
+- [Cumulative flow](cumulative-flow.md)
+- [Lead time or cycle time](cycle-time-and-lead-time.md)
+- [Velocity widget](team-velocity.md)
 
 ::: moniker-end
 
@@ -262,7 +262,7 @@ Some widgets are pre-sized and can't be changed. Others are configurable through
 
 For example, the Chart for work items widget allows you to select an area size ranging from 2 x 2 to 4 x 4 (tiles).
 
-<img src="media/add-widget-size.png" alt="Change widget size" style="border: 2px solid #C3C3C3;" />  
+<img src="media/add-widget-size.png" alt="Change widget size" style="border: 2px solid #C3C3C3;" />
 
 ## Extensibility and Marketplace widgets
 
@@ -286,16 +286,16 @@ To regain access to it, request your admin to reinstate or reinstall the widget.
 
 ::: moniker range=">= azure-devops-2019"
 
-* [Analytics-based widgets](../dashboards/analytics-widgets.md)
-* [What is Analytics?](../powerbi/what-is-analytics.md)
-* [Burndown guidance](burndown-guidance.md)
-* [Cumulative flow & lead/cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)
-* [Velocity guidance](velocity-guidance.md)
+- [Analytics-based widgets](../dashboards/analytics-widgets.md)
+- [What is Analytics?](../powerbi/what-is-analytics.md)
+- [Burndown guidance](burndown-guidance.md)
+- [Cumulative flow & lead/cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)
+- [Velocity guidance](velocity-guidance.md)
   ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
-* [Burndown guidance](burndown-guidance.md)
-* [Cumulative flow & lead/cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)
-* [Velocity guidance](velocity-guidance.md)
+- [Burndown guidance](burndown-guidance.md)
+- [Cumulative flow & lead/cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)
+- [Velocity guidance](velocity-guidance.md)
   ::: moniker-end

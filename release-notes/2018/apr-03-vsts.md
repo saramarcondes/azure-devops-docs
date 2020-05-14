@@ -13,8 +13,8 @@ The **Sprint 132 Update** of Visual Studio Team Services (VSTS) brings a few key
 
 Other highlights include:
 
-* [Integrate Power BI with VSTS Analytics using views](#integrate-power-bi-with-vsts-analytics-using-views)
-* [Publish markdown files from a Git repository as a Wiki](#publish-markdown-files-from-a-git-repository-as-a-wiki)
+- [Integrate Power BI with VSTS Analytics using views](#integrate-power-bi-with-vsts-analytics-using-views)
+- [Publish markdown files from a Git repository as a Wiki](#publish-markdown-files-from-a-git-repository-as-a-wiki)
 
 ## What's new in VSTS
 
@@ -24,30 +24,30 @@ Other highlights include:
 
 ### Code
 
-* [Quickly describe pull requests using commit messages](#quickly-describe-pull-requests-using-commit-messages)
-* [Perform TFVC commands right from Windows Explorer](#perform-tfvc-commands-right-from-windows-explorer)
+- [Quickly describe pull requests using commit messages](#quickly-describe-pull-requests-using-commit-messages)
+- [Perform TFVC commands right from Windows Explorer](#perform-tfvc-commands-right-from-windows-explorer)
 
 ### Build and Release
 
-* [Chain related builds together using build completion triggers](#chain-related-builds-together-using-build-completion-triggers)
-* [Scale deployments to VMs using Deployment Groups](#scale-deployments-to-vms-using-deployment-groups)
-* [Build applications written in Go](#build-applications-written-in-go)
-* [Extend release gates with task extensions](#extend-release-gates-with-task-extensions)
+- [Chain related builds together using build completion triggers](#chain-related-builds-together-using-build-completion-triggers)
+- [Scale deployments to VMs using Deployment Groups](#scale-deployments-to-vms-using-deployment-groups)
+- [Build applications written in Go](#build-applications-written-in-go)
+- [Extend release gates with task extensions](#extend-release-gates-with-task-extensions)
 
 ### Package
 
-* [Use upstream npm packages from elsewhere in VSTS](#use-upstream-npm-packages-from-elsewhere-in-vsts)
-* [Maintain feed query speed with retention policies](#maintain-feed-query-speed-with-retention-policies)
+- [Use upstream npm packages from elsewhere in VSTS](#use-upstream-npm-packages-from-elsewhere-in-vsts)
+- [Maintain feed query speed with retention policies](#maintain-feed-query-speed-with-retention-policies)
 
 ### Wiki
 
-* [Publish markdown files from a Git repository as a Wiki](#publish-markdown-files-from-a-git-repository-as-a-wiki)
-* [Retain special characters in Wiki page titles](#retain-special-characters-in-wiki-page-titles)
-* [Extend Wiki using REST APIs](#extend-wiki-using-rest-apis)
+- [Publish markdown files from a Git repository as a Wiki](#publish-markdown-files-from-a-git-repository-as-a-wiki)
+- [Retain special characters in Wiki page titles](#retain-special-characters-in-wiki-page-titles)
+- [Extend Wiki using REST APIs](#extend-wiki-using-rest-apis)
 
 ### Reporting
 
-* [Integrate Power BI with VSTS Analytics using views](#integrate-power-bi-with-vsts-analytics-using-views)
+- [Integrate Power BI with VSTS Analytics using views](#integrate-power-bi-with-vsts-analytics-using-views)
 
 ## Code
 

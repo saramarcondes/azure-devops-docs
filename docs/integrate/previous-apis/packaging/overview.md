@@ -26,14 +26,14 @@ Feeds have [permissions](./permissions.md) which control who can read from, push
 
 You can also access [NuGet specific operations](./nuget.md) such as delete and delist.
 
-* [Feeds](./feeds.md)
-* [Packages](./packages.md)
-* [Feed Polling](./polling.md)
-* [NuGet](./nuget.md)
-* [npm](./npm.md)
-* [Maven](./maven.md)
-* [Permissions](./permissions.md)
-* [Release Views](./views.md)
+- [Feeds](./feeds.md)
+- [Packages](./packages.md)
+- [Feed Polling](./polling.md)
+- [NuGet](./nuget.md)
+- [npm](./npm.md)
+- [Maven](./maven.md)
+- [Permissions](./permissions.md)
+- [Release Views](./views.md)
 
 ## Common tasks
 

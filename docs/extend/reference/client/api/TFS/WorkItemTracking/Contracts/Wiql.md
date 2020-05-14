@@ -15,4 +15,4 @@ Module path: `TFS/WorkItemTracking/Contracts`
 
 ### Members
 
-* `query`: string.
+- `query`: string.

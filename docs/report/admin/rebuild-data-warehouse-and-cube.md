@@ -31,27 +31,27 @@ To rebuild the TFS data warehouse, perform this sequence of steps:
 
 You must be a member of these security groups or have the corresponding permissions:
 
-* **sysadmin** security group on the server or servers that are running the instance of SQL Server that hosts the databases for Team Foundation Server
+- **sysadmin** security group on the server or servers that are running the instance of SQL Server that hosts the databases for Team Foundation Server
 
-* **sysadmin** security group on the server for the Analysis Services database for Team Foundation
+- **sysadmin** security group on the server for the Analysis Services database for Team Foundation
 
-* Tfs_Warehouse relational database and **TFSEXECROLE** database role
+- Tfs_Warehouse relational database and **TFSEXECROLE** database role
 
-* **Team Foundation Administrators** security group and the **Administrators** security group on the server or servers that are running the administration console for Team Foundation
+- **Team Foundation Administrators** security group and the **Administrators** security group on the server or servers that are running the administration console for Team Foundation
 
-* Your server-level **Administer warehouse** permission must be set to **Allow**
+- Your server-level **Administer warehouse** permission must be set to **Allow**
 
-* Your **View project-level information** permission on the team project must be set to **Allow** to run and view a report. Also, you must be a member of the **Browser** role in SQL Server Reporting Services
+- Your **View project-level information** permission on the team project must be set to **Allow** to run and view a report. Also, you must be a member of the **Browser** role in SQL Server Reporting Services
 
 For more information, see [Add accounts to administer TFS](/azure/devops/server/admin/add-administrator).
 
 In addition to these permissions, you might need to address these requirements on a computer that is running Windows Server 2008 or Windows Vista:
 
-* To follow a command-line procedure, you might need to open an elevated Command Prompt by choosing **Start**, opening the context menu for **Command Prompt**, and choosing **Run as Administrator**.
+- To follow a command-line procedure, you might need to open an elevated Command Prompt by choosing **Start**, opening the context menu for **Command Prompt**, and choosing **Run as Administrator**.
 
-* To follow a procedure that requires Internet Explorer, you might need to start it as an administrator by choosing **Start**, **All Programs**, opening the context menu for **Internet Explorer**, and then choosing **Run as administrator**.
+- To follow a procedure that requires Internet Explorer, you might need to start it as an administrator by choosing **Start**, **All Programs**, opening the context menu for **Internet Explorer**, and then choosing **Run as administrator**.
 
-* To access Report Manager, reports, or websites for Reporting Services, you might need to add these sites to the list of trusted sites in Internet Explorer or start Internet Explorer as an administrator.
+- To access Report Manager, reports, or websites for Reporting Services, you might need to add these sites to the list of trusted sites in Internet Explorer or start Internet Explorer as an administrator.
 
 For more information, see [User Account Control](</previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772207(v=ws.10)>).
 
@@ -112,12 +112,12 @@ By default, TCP/IP is disabled when you install SQL Server.
 
     When you rebuild the warehouse or cube, TFS performs this sequence of actions:
 
-    * Takes the databases offline.
-    * Drops the schema for both databases.
-    * Re-creates the schema for both databases.
-    * Brings both databases back online.
-    * Restarts the warehouse adapter jobs.
-    * Processes the cube according to its regular processing interval.
+    - Takes the databases offline.
+    - Drops the schema for both databases.
+    - Re-creates the schema for both databases.
+    - Brings both databases back online.
+    - Restarts the warehouse adapter jobs.
+    - Processes the cube according to its regular processing interval.
 
       The rebuild process starts first for the warehouse and then for the cube. The time that is required to rebuild the databases is based on the amount of data that is stored in the data warehouse. When the databases have been rebuilt, the jobs for processing the databases are automatically started.
 
@@ -162,11 +162,11 @@ By default, TCP/IP is disabled when you install SQL Server.
 
 **A:** The following actions can cause failure errors to occur.
 
-* You manually modified a TFS database or edited a SQL table. You should not manually modify any of the TFS databases unless you're either instructed to do so by Microsoft Support or when you're following the procedures described for manually backing up the databases ([Manually back up Team Foundation Server](/azure/devops/server/admin/backup/manually-backup-tfs)). Any other modifications can invalidate your service agreement, block upgrades and patches, and result in data loss or corruption.
+- You manually modified a TFS database or edited a SQL table. You should not manually modify any of the TFS databases unless you're either instructed to do so by Microsoft Support or when you're following the procedures described for manually backing up the databases ([Manually back up Team Foundation Server](/azure/devops/server/admin/backup/manually-backup-tfs)). Any other modifications can invalidate your service agreement, block upgrades and patches, and result in data loss or corruption.
 
-* A detach/attach operation resulted in a misconfiguration of a team project collection. For example, a collection has become attached to two different data-tier servers, which is an unsupported scenario. Correcting the configuration and then rebuilding the data warehouse should resolve the errors.
+- A detach/attach operation resulted in a misconfiguration of a team project collection. For example, a collection has become attached to two different data-tier servers, which is an unsupported scenario. Correcting the configuration and then rebuilding the data warehouse should resolve the errors.
 
-* You've performed an unsupported backup or restore operation as described in [Back up and restore TFS](/azure/devops/server/admin/backup/back-up-restore).
+- You've performed an unsupported backup or restore operation as described in [Back up and restore TFS](/azure/devops/server/admin/backup/back-up-restore).
 
 #### Q: How do I modify the reporting configuration?
 
@@ -188,7 +188,7 @@ Deleting builds doesn't remove all associated data from the database. To do that
 
 ## Related content
 
-* [RebuildWarehouse Command](</previous-versions/visualstudio/visual-studio-2013/ee349264(v=vs.120)>)
-* [Components of the TFS data warehouse](../dashboards/choose-source-data-authoring-tool.md)
-* [Manage TFS reports, data warehouse, and analysis services cube](manage-reports-data-warehouse-cube.md)
-* [Add reports to a team project](add-reports-to-a-team-project.md).
+- [RebuildWarehouse Command](</previous-versions/visualstudio/visual-studio-2013/ee349264(v=vs.120)>)
+- [Components of the TFS data warehouse](../dashboards/choose-source-data-authoring-tool.md)
+- [Manage TFS reports, data warehouse, and analysis services cube](manage-reports-data-warehouse-cube.md)
+- [Add reports to a team project](add-reports-to-a-team-project.md).

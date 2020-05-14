@@ -23,13 +23,13 @@ The procedures in this topic advise how you can use the graphical user interface
 
 To perform these procedures, you must have the following permissions set:
 
-* You must have the **Read** permission for the item in the source tree and your **Check out** permission for the item in the target tree set to **Allow**.
+- You must have the **Read** permission for the item in the source tree and your **Check out** permission for the item in the target tree set to **Allow**.
 
-* You must have the **Merge** permission set for the target path.
+- You must have the **Merge** permission set for the target path.
 
-* If the item in the target tree is being renamed, you must have the **Check out** permission for both the source tree and the target tree set to **Allow**.
+- If the item in the target tree is being renamed, you must have the **Check out** permission for both the source tree and the target tree set to **Allow**.
 
-* If any files affected by the operation are locked, you must have the **Lock** permission set to **Allow**. For more information about permissions, see [Permissions and groups reference](../../organizations/security/permissions.md).
+- If any files affected by the operation are locked, you must have the **Lock** permission set to **Allow**. For more information about permissions, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
 ## Initiate a Merge from the Source Control Window
 
@@ -124,7 +124,7 @@ After you complete one of the above procedures, the **Source Control Merge Wizar
     > [!TIP]
     > If possible, click **All changes up to a specific version**, as it will reduce the risk of conflicts in future merges.
 
-    * If you selected **All changes up to a specific version**, then the **Select the versions of the source items** page appears. Select the version of the items that you want to use.
+    - If you selected **All changes up to a specific version**, then the **Select the versions of the source items** page appears. Select the version of the items that you want to use.
 
       <table>
               <tbody>
@@ -151,7 +151,7 @@ After you complete one of the above procedures, the **Source Control Merge Wizar
       </tbody>
       </table>
 
-    * If you selected **Selected changesets**, then the **Select changesets to merge into the target branch **page appears. Select the changeset you want to merge.
+    - If you selected **Selected changesets**, then the **Select changesets to merge into the target branch **page appears. Select the changeset you want to merge.
 
       > [!TIP]
       > You can press and hold the CONTROL or SHIFT keys and then select multiple items in a continuous range.

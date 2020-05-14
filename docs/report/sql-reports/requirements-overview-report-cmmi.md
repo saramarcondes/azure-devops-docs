@@ -35,29 +35,29 @@ This report displays the following information for each user story that it lists
 
 **Work Progress**
 
-* **% Hours Completed**: A numeric value and visual representation that shows the percentage of completed work based on the rollup of baseline and completed hours for all tasks that are linked to the requirement or its child requirements.
+- **% Hours Completed**: A numeric value and visual representation that shows the percentage of completed work based on the rollup of baseline and completed hours for all tasks that are linked to the requirement or its child requirements.
 
-* **Hours Remaining**: A numeric value for the rollup of all remaining hours for all tasks that are linked to the requirement or its child requirements.
+- **Hours Remaining**: A numeric value for the rollup of all remaining hours for all tasks that are linked to the requirement or its child requirements.
 
   **Test Status**
 
-* **Tests**: A numeric value that represents the number of test cases that are linked to the requirement or its child requirements.
+- **Tests**: A numeric value that represents the number of test cases that are linked to the requirement or its child requirements.
 
-* **Test Results**: A numeric value and visual representation that shows the percentage of test cases, grouped according to the status of their most recent test run, where the options are **Passed** (green), **Failed** (red), or **Not Run** (black).
+- **Test Results**: A numeric value and visual representation that shows the percentage of test cases, grouped according to the status of their most recent test run, where the options are **Passed** (green), **Failed** (red), or **Not Run** (black).
 
-* **Bugs**: A numeric value and visual representation that shows the number of bugs that are linked to the test case or requirement, where the options are **Active** (blue) and **Resolved** (gold). If a requirement is linked to one or more child requirements, the values represent a rollup of all bugs for the requirement and its child requirements.
+- **Bugs**: A numeric value and visual representation that shows the number of bugs that are linked to the test case or requirement, where the options are **Active** (blue) and **Resolved** (gold). If a requirement is linked to one or more child requirements, the values represent a rollup of all bugs for the requirement and its child requirements.
 
 ### Requirements that Appear in the Report
 
 The Requirements Overview report lists and highlights requirements according to the following criteria:
 
-* Requirements appear in order of their importance, based on their assigned ranking.
+- Requirements appear in order of their importance, based on their assigned ranking.
 
-* Requirements appear in bold type when they are in the active or resolved state.
+- Requirements appear in bold type when they are in the active or resolved state.
 
-* Requirements appear in normal type when they are in the closed state.
+- Requirements appear in normal type when they are in the closed state.
 
-* Requirements appear in gray type when their assigned iteration or area is outside the filtered set, but they have Tasks or child Requirements that are within the filtered set of iterations or product areas.
+- Requirements appear in gray type when their assigned iteration or area is outside the filtered set, but they have Tasks or child Requirements that are within the filtered set of iterations or product areas.
 
   > [!NOTE]
   > For information about how to define iteration and area paths, see [Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) .
@@ -66,20 +66,20 @@ The Requirements Overview report lists and highlights requirements according to 
 
 For the Requirements Overview report to be useful and accurate, the team must perform the following activities to track work items:
 
-* Define requirements and tasks, create a **Child** link from each task to a requirement, and create a **Child** link from any subtasks to its parent task.
+- Define requirements and tasks, create a **Child** link from each task to a requirement, and create a **Child** link from any subtasks to its parent task.
 
-* Define and update the **Completed** and **Remaining** fields for each task or subtask during the iteration or release.
+- Define and update the **Completed** and **Remaining** fields for each task or subtask during the iteration or release.
 
   > [!IMPORTANT]
   > If you subdivide a task into subtasks, team members should specify hours only for the subtasks. These hours are rolled up as summary values for the parent task and requirement.
 
-* Define test cases, and create a **Tested By** link from each test case to a requirement.
+- Define test cases, and create a **Tested By** link from each test case to a requirement.
 
-* For each bug, create either a **Tested By** link to the test case that identified the code defect or a **Related** link to the requirement to which the bug relates.
+- For each bug, create either a **Tested By** link to the test case that identified the code defect or a **Related** link to the requirement to which the bug relates.
 
-* Set the **State** of each bug to **Resolved** when it is fixed.
+- Set the **State** of each bug to **Resolved** when it is fixed.
 
-* Specify the **Iteration** and **Area** paths for each requirement, task, test case, and bug.
+- Specify the **Iteration** and **Area** paths for each requirement, task, test case, and bug.
 
   > [!NOTE]
   > For information about how to define iteration and area paths, see [Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) .
@@ -88,19 +88,19 @@ For the Requirements Overview report to be useful and accurate, the team must pe
 
 The Requirements Overview report shows overall work progress in the three areas that are important to completing and closing a Requirement:
 
-* Tasks implemented to complete each requirement.
+- Tasks implemented to complete each requirement.
 
-* Tests run to ensure the quality of the implemented requirements.
+- Tests run to ensure the quality of the implemented requirements.
 
-* Bugs identified that indicate problems with the quality of the requirements.
+- Bugs identified that indicate problems with the quality of the requirements.
 
   Depending on your area of focus, you can filter the report in the following ways:
 
-* Specify the **Iteration** and **Area** paths of interest.
+- Specify the **Iteration** and **Area** paths of interest.
 
   For more information, see [Filtering the Report](#Changing) later in this article.
 
-* Click ![Expand](media/icon_expand.gif "Icon_Expand") or ![Collapse](media/icon_collapse.gif "Icon_Collapse") to expand or collapse a requirement and display child requirements. Parent requirements display a rollup of all task hours that are assigned to it and its child requirements.
+- Click ![Expand](media/icon_expand.gif "Icon_Expand") or ![Collapse](media/icon_collapse.gif "Icon_Collapse") to expand or collapse a requirement and display child requirements. Parent requirements display a rollup of all task hours that are assigned to it and its child requirements.
 
 ### Questions That the Report Answers
 
@@ -108,31 +108,31 @@ You can review the report to determine the overall progress for each requirement
 
 #### Work Progress
 
-* Does the amount of work that remains for each requirement correspond to your expectations?
+- Does the amount of work that remains for each requirement correspond to your expectations?
 
-* Are top-ranked requirements being implemented first?
+- Are top-ranked requirements being implemented first?
 
-* How many test cases are defined for each requirement? How many tests are passing?
+- How many test cases are defined for each requirement? How many tests are passing?
 
-* What requirements are being implemented that have no test cases defined for them?
+- What requirements are being implemented that have no test cases defined for them?
 
 #### Quality Progress
 
-* How many tests have run for each requirement, and how many have passed?
+- How many tests have run for each requirement, and how many have passed?
 
-* How many active bugs does each requirement have?
+- How many active bugs does each requirement have?
 
-* Are bugs being found for requirements that are being tested?
+- Are bugs being found for requirements that are being tested?
 
-* Are bugs being resolved or are they remaining active?
+- Are bugs being resolved or are they remaining active?
 
 #### Risk Assessment
 
-* Which requirements are at risk?
+- Which requirements are at risk?
 
-* Which requirements are not stable enough for release?
+- Which requirements are not stable enough for release?
 
-* Which requirements can the team ship today?
+- Which requirements can the team ship today?
 
 ### Healthy Version of the Report
 
@@ -144,11 +144,11 @@ A healthy Requirements Overview report shows more progress on requirements that 
 
 An unhealthy Requirements Overview report shows one or more of the following indications:
 
-* The team is making more progress on requirements that have a lower rank than on requirements that have a higher rank.
+- The team is making more progress on requirements that have a lower rank than on requirements that have a higher rank.
 
-* More tests are failing than are passing.
+- More tests are failing than are passing.
 
-* Tests are failing for a requirement, but no bug work items are being created.
+- Tests are failing for a requirement, but no bug work items are being created.
 
 ## <a name="Changing"></a> Filtering the Report
 

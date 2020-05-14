@@ -16,8 +16,8 @@ Module path: `TFS/DistributedTask/Contracts`
 
 ### Members
 
-* `type`: string. Gets the name of the package.
+- `type`: string. Gets the name of the package.
 
-* `url`: string. Gets the url of the package.
+- `url`: string. Gets the url of the package.
 
-* `version`: string. Gets the version of the package.
+- `version`: string. Gets the version of the package.

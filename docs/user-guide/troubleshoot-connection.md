@@ -42,8 +42,8 @@ Two types of identities can sign in: Microsoft accounts and Azure Active Directo
 
 The most common error page is the _401 Not Authorized_ error, which occurs when your identity doesn't have permissions to enter an organization. Common reasons for the error include:
 
-* Your identity isn't a member of the organization.
-* Your identity has an invalid or missing license assignment.
+- Your identity isn't a member of the organization.
+- Your identity has an invalid or missing license assignment.
 
 If you think you're a member of the organization but are blocked by this error page, [contact customer support](https://support.microsoft.com/).
 
@@ -134,13 +134,13 @@ When the on-premises TFS configuration changes, such as when you move or split a
 
 3.  Open a browser and go to one of the following folders, depending on the operating system that's running on your computer:
 
-    * **Windows 10**
+    - **Windows 10**
       _Drive_:\\Users\<i>UserName</i>\AppData\Local\Microsoft\Team Foundation\6.0\Cache
 
-    * **Windows 8**
+    - **Windows 8**
       _Drive_:\\Users\<i>UserName</i>\AppData\Local\Microsoft\Team Foundation\4.0\Cache
 
-    * **Windows 7 or Windows Vista**
+    - **Windows 7 or Windows Vista**
       _Drive_:\\Users\<i>UserName</i>\AppData\Local\Microsoft\Team Foundation\2.0\Cache
 
 4.  Delete the contents of the Cache directory, including all subfolders.

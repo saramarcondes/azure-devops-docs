@@ -182,8 +182,8 @@ The thing about history simplification is that most of the time you will never n
 
 Now, instead of panicking, you know that:
 
-* History simplification for files is turned on by default
-* The `--full-history` flag will give you a more comprehensive file history
+- History simplification for files is turned on by default
+- The `--full-history` flag will give you a more comprehensive file history
 
 **Update**: Since I wrote this article, [Azure DevOps Services has introduced a number of awesome history viewing options on the web](https://devblogs.microsoft.com/devops/announcing-git-graph-and-advanced-filters-to-visualize-commit-history/).
 What this means is that if you don't want to go slogging through the command line, you can simply pull up the file you wish to view history for in our explorer and you will be presented with the below history filter where you can specify simple or non-simple history views:

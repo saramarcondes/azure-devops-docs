@@ -23,11 +23,11 @@ In this quickstart, learn how to access, export, and filter audit logs. Audit lo
 
 Audit events can be the following occurrences:
 
-* permissions changes
-* deleted resources
-* branch policy changes
-* accessing the auditing feature
-* and much more
+- permissions changes
+- deleted resources
+- branch policy changes
+- accessing the auditing feature
+- and much more
 
 Auditing is turned on by default for all Azure DevOps organizations. You can't turn auditing off, which ensures that you never miss an actionable event. Events get stored for 90 days and then they’re deleted. However, you can back up audit events to an external location to keep the data for longer than the 90-day period.
 
@@ -179,5 +179,5 @@ When an audit event ID matches its correlation ID, it indicates that the audit e
 
 The following limitations exist for what can be audited.
 
-* Azure AD group membership changes – In the future, auditing will include changes to Azure DevOps groups, such as adding or removing a group or user. However, if you manage membership via Azure AD groups, additions and removals of users from those Azure AD groups aren't audited by Azure DevOps. Review the Azure AD audit logs to see when a user or group was added or removed from an Azure AD group.
-* Signing in – We don't track sign in events for Azure DevOps. View the Azure AD audit logs to review sign in events to your Azure AD.
+- Azure AD group membership changes – In the future, auditing will include changes to Azure DevOps groups, such as adding or removing a group or user. However, if you manage membership via Azure AD groups, additions and removals of users from those Azure AD groups aren't audited by Azure DevOps. Review the Azure AD audit logs to see when a user or group was added or removed from an Azure AD group.
+- Signing in – We don't track sign in events for Azure DevOps. View the Azure AD audit logs to review sign in events to your Azure AD.

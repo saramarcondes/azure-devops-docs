@@ -78,7 +78,7 @@ All work items you import are created in a new state. This rule means that you c
 
 1.  To update work items, create a query that contains all the columns you want to export and possibly edit. Save your query and select **Export to CSV** to save the data.csv file to your local machine.
 
-        	> [!div class="mx-imgBorder"]  
+        	> [!div class="mx-imgBorder"]
         	> ![Export work items, CSV](media/import-csv/import-update-1.png)
 
     The exported file should look similar to the following syntax:
@@ -199,5 +199,5 @@ The work items results always lists the data errors found for individual work it
 
 ## Related articles
 
-* [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)
-* [FAQs: Work in Excel connected to Azure Boards](../backlogs/office/faqs.md)
+- [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)
+- [FAQs: Work in Excel connected to Azure Boards](../backlogs/office/faqs.md)

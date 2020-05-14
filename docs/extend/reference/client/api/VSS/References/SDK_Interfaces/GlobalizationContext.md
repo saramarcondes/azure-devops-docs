@@ -17,10 +17,10 @@ Defined in vss.d.ts
 
 ### Members
 
-* `culture`: string.
+- `culture`: string.
 
-* `theme`: string.
+- `theme`: string.
 
-* `timeZoneId`: string.
+- `timeZoneId`: string.
 
-* `timezoneOffset`: number.
+- `timezoneOffset`: number.

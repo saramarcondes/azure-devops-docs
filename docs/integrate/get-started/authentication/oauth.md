@@ -137,9 +137,9 @@ client_assertion_type=urn:ietf:params:oauth:client-assertion-type:jwt-bearer&cli
 <br>
 Replace the placeholder values in the sample request body above:
 
-* **{0}**: URL encoded client secret acquired when the app was registered
-* **{1}**: URL encoded "code" provided via the `code` query parameter to your callback URL
-* **{2}**: callback URL registered with the app
+- **{0}**: URL encoded client secret acquired when the app was registered
+- **{1}**: URL encoded "code" provided via the `code` query parameter to your callback URL
+- **{2}**: callback URL registered with the app
 
 #### C# example to form the request body
 
@@ -214,9 +214,9 @@ client_assertion_type=urn:ietf:params:oauth:client-assertion-type:jwt-bearer&cli
 <br>
 Replace the placeholder values in the sample request body above:
 
-* **{0}**: URL encoded client secret acquired when the app was registered
-* **{1}**: URL encoded refresh token for the user
-* **{2}**: callback URL registered with the app
+- **{0}**: URL encoded client secret acquired when the app was registered
+- **{1}**: URL encoded refresh token for the user
+- **{2}**: callback URL registered with the app
 
 ### Response
 
@@ -262,8 +262,8 @@ so there's no way to implement OAuth, as you can't securely store the app secret
 
 A: Make sure that you handle the following conditions:
 
-* If your user denies your app access, no authorization code gets returned. Don't use the authorization code without checking for denial.
-* If your user revokes your app's authorization, the access token is no longer valid. When your app uses the token to access data, a 401 error returns. Request authorization again.
+- If your user denies your app access, no authorization code gets returned. Don't use the authorization code without checking for denial.
+- If your user revokes your app's authorization, the access token is no longer valid. When your app uses the token to access data, a 401 error returns. Request authorization again.
 
 ### Q: I want to debug my web app locally. Can I use localhost for the callback URL when I register my app?
 
@@ -281,5 +281,5 @@ A: No. OAuth is only supported in the REST APIs at this point.
 
 ## Related articles
 
-* [Choosing the right authentication method](authentication-guidance.md)
-* [Default permissions and access for Azure DevOps](../../../organizations/security/permissions-access.md)
+- [Choosing the right authentication method](authentication-guidance.md)
+- [Default permissions and access for Azure DevOps](../../../organizations/security/permissions-access.md)

@@ -107,15 +107,15 @@ The Command Prompt window displays the output if you specify **/noprompt**. Othe
 
 The output displayed in the Command Prompt window lists all the files in the folders in the following five sections:
 
-* Items that exist only in the server folder.
+- Items that exist only in the server folder.
 
-* Items that exist only in the local folder.
+- Items that exist only in the local folder.
 
-* Items that have different contents.
+- Items that have different contents.
 
-* Items that have identical contents (you must specify the same argument with the **/view** option).
+- Items that have identical contents (you must specify the same argument with the **/view** option).
 
-* Summary.
+- Summary.
 
 ### File and Folder Filters
 
@@ -123,17 +123,17 @@ A filter is an ordered list of name masks used to match the name of files and fo
 
 The filter is applied to the file and folder names using the following rules:
 
-* When both file and folder masks are specified together in a filter, the file masks are separated into a file mask list and the folder masks are separated into the folder mask list. File masks are applied only to file names. Folder masks are applied only to folder names.
+- When both file and folder masks are specified together in a filter, the file masks are separated into a file mask list and the folder masks are separated into the folder mask list. File masks are applied only to file names. Folder masks are applied only to folder names.
 
-* When the command matches a file or folder name, it compares the name to each mask in the filter in the order it was specified. As soon as the name matches a mask, the name is considered to be a match.
+- When the command matches a file or folder name, it compares the name to each mask in the filter in the order it was specified. As soon as the name matches a mask, the name is considered to be a match.
 
-* If the file masks in the filter contain an inclusion mask, files that do not match any of the file masks are excluded.
+- If the file masks in the filter contain an inclusion mask, files that do not match any of the file masks are excluded.
 
-* If the file masks in the filter contain only exclusion masks, files that do not match any of the file masks are included.
+- If the file masks in the filter contain only exclusion masks, files that do not match any of the file masks are included.
 
-* If the folder masks in the filter contain an inclusion mask, folders that do not match any of the folder masks are excluded.
+- If the folder masks in the filter contain an inclusion mask, folders that do not match any of the folder masks are excluded.
 
-* If the folder masks in the filter contain only exclusion masks, folders that do not match any of the folder masks are included.
+- If the folder masks in the filter contain only exclusion masks, folders that do not match any of the folder masks are included.
 
 The following table lists filter name mask examples.
 

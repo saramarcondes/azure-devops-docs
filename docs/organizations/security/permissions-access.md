@@ -22,10 +22,10 @@ The most common built-in security groups&mdash;**Readers**, **Contributors**, an
 
 In general, use the following guidance when assigning users to an access level and security group:
 
-* Grant **Basic** access or higher and add to the **Contributors** security group full-time workers who contribute to the code base or manage projects.
-* Grant **Stakeholder** access and add to the **Contributors** security group managers or users who don't actively contribute to the code base but want to check project status and provide direction, feedback, feature ideas, and business alignment to a team.
-* Grant **Stakeholder** access and add to the **Project Administrators** security group users tasked with managing project resources. If they also need to contribute to the code base, then you must assign them **Basic** or higher-level access.
-* Grant **Stakeholder** access and add to the **Project Collection Administrators** security group users tasked with managing organization or collection resources. If they also need to contribute to the code base, then you must assign them **Basic** or higher-level access.
+- Grant **Basic** access or higher and add to the **Contributors** security group full-time workers who contribute to the code base or manage projects.
+- Grant **Stakeholder** access and add to the **Contributors** security group managers or users who don't actively contribute to the code base but want to check project status and provide direction, feedback, feature ideas, and business alignment to a team.
+- Grant **Stakeholder** access and add to the **Project Administrators** security group users tasked with managing project resources. If they also need to contribute to the code base, then you must assign them **Basic** or higher-level access.
+- Grant **Stakeholder** access and add to the **Project Collection Administrators** security group users tasked with managing organization or collection resources. If they also need to contribute to the code base, then you must assign them **Basic** or higher-level access.
 
 To learn more about administrative tasks see [About user, team, project, and organization-level settings](../settings/about-settings.md). For a complete reference of all built-in groups and permissions, see [Permissions and groups](permissions.md). For information about access levels, see [About access levels](access-levels.md).
 
@@ -152,10 +152,10 @@ You use sprint tools to implement Scrum methods. The [**Sprints**](../../boards/
 In addition to the permissions set at the [project level via the built-in groups](set-project-collection-level-permissions.md), you can set permissions for the following objects: [area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md) and individual [queries and query folders](../../boards/queries/set-query-permissions.md).
 
 <!---
-::: moniker range=">= tfs-2013 <= tfs-2018"  
-> [!NOTE]  
+::: moniker range=">= tfs-2013 <= tfs-2018"
+> [!NOTE]
 > There are no UI permissions associated with [managing tags](../../boards/queries/add-tags-to-work-items.md). Instead, you can manage them using the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions).
-::: moniker-end  
+::: moniker-end
 -->
 
 ::: moniker range=">= azure-devops-2019"
@@ -328,7 +328,7 @@ To manage notifications, see [Manage personal notifications](../../notifications
 
 ## Related notes
 
-* [Add users to a project or team](../../organizations/security/add-users-team-project.md)
-* [Permissions and groups reference](permissions.md)
-* [About access levels](access-levels.md)
-* [Web portal navigation](../../project/navigation/index.md)
+- [Add users to a project or team](../../organizations/security/add-users-team-project.md)
+- [Permissions and groups reference](permissions.md)
+- [About access levels](access-levels.md)
+- [Web portal navigation](../../project/navigation/index.md)

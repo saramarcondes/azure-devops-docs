@@ -182,8 +182,8 @@ To reorder your backlog, drag the work items. Or, if you prefer to use the keybo
 
 Backlogs that participate in portfolio management or that contain nested same-type child items might not allow you to reorder the items. For more information, see these articles:
 
-* [Backlogs, portfolios, and Agile project management, Work with multi-team ownership of backlog items](backlogs-overview.md#multi-team)
-* [Fix re-ordering and nesting issues](resolve-backlog-reorder-issues.md)
+- [Backlogs, portfolios, and Agile project management, Work with multi-team ownership of backlog items](backlogs-overview.md#multi-team)
+- [Fix re-ordering and nesting issues](resolve-backlog-reorder-issues.md)
 
 <a id="estimates"> </a>
 
@@ -195,10 +195,10 @@ To open each item, double-click or press Enter. Then add all the information you
 
 Enter as much detail as the team needs to:
 
-* Understand the scope.
-* Estimate the work required.
-* Develop tests.
-* Ensure that the end product meets acceptance criteria.
+- Understand the scope.
+- Estimate the work required.
+- Develop tests.
+- Ensure that the end product meets acceptance criteria.
 
 [!INCLUDE [temp](../includes/note-user-assigned.md)]
 
@@ -306,25 +306,25 @@ Teams that want the least overhead in terms of tracking and estimating might pre
 
 ::: moniker range="azure-devops"
 
-* [Bulk modify work items](bulk-modify-work-items.md)
-* [Copy or clone work items](copy-clone-work-items.md)
-* [Refine your backlog](best-practices-product-backlog.md)
-* [Display rollup progress bars or counts](display-rollup.md)
-* [Product backlog controls](product-backlog-controls.md)
-* [Filter product and portfolio backlogs](filter-backlogs.md)
-* [Backlog priority or stack rank order](backlogs-overview.md#stack-rank)
-* [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
+- [Bulk modify work items](bulk-modify-work-items.md)
+- [Copy or clone work items](copy-clone-work-items.md)
+- [Refine your backlog](best-practices-product-backlog.md)
+- [Display rollup progress bars or counts](display-rollup.md)
+- [Product backlog controls](product-backlog-controls.md)
+- [Filter product and portfolio backlogs](filter-backlogs.md)
+- [Backlog priority or stack rank order](backlogs-overview.md#stack-rank)
+- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-* [Bulk modify work items](bulk-modify-work-items.md)
-* [Copy or clone work items](copy-clone-work-items.md)
-* [Refine your backlog](best-practices-product-backlog.md)
-* [Product backlog controls](product-backlog-controls.md)
-* [Filter product and portfolio backlogs](filter-backlogs.md)
-* [Backlog priority or stack rank order](backlogs-overview.md#stack-rank)
-* [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
+- [Bulk modify work items](bulk-modify-work-items.md)
+- [Copy or clone work items](copy-clone-work-items.md)
+- [Refine your backlog](best-practices-product-backlog.md)
+- [Product backlog controls](product-backlog-controls.md)
+- [Filter product and portfolio backlogs](filter-backlogs.md)
+- [Backlog priority or stack rank order](backlogs-overview.md#stack-rank)
+- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
 
 ::: moniker-end

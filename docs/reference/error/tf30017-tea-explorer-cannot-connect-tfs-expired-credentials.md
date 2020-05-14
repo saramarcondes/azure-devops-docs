@@ -18,11 +18,11 @@ A security certificate associates an identity with a public key, and only the ow
 
 Team Explorer will not connect to a server that does not have a valid CA certificate. This error indicates there is a problem with the CA certificate on the application-tier server. When Team Explorer connects with the application-tier server, it reads the CA certificate on the server to determine whether the server is authentic and is safe to connect to. There are at least three conditions that can cause Team Explorer to avoid connecting to the server:
 
-* The CA certificate is not from a trusted authority, is not installed correctly, or is missing.
+- The CA certificate is not from a trusted authority, is not installed correctly, or is missing.
 
-* The CA certificate has expired and the certificate must be re-issued with an unexpired date.
+- The CA certificate has expired and the certificate must be re-issued with an unexpired date.
 
-* The name on the CA certificate is not correct or does not match the URL of the page used by Team Explorer. For example, if the certificate is issued to AdventureWorks.com, but the URL used by Team Explorer is www.AdventureWorks.com, the mismatch will cause this error. The certificate must be reissued using the correct name, or the URL must be changed to match the name on the certificate.
+- The name on the CA certificate is not correct or does not match the URL of the page used by Team Explorer. For example, if the certificate is issued to AdventureWorks.com, but the URL used by Team Explorer is www.AdventureWorks.com, the mismatch will cause this error. The certificate must be reissued using the correct name, or the URL must be changed to match the name on the certificate.
 
 ### To determine the specific cause of this error
 

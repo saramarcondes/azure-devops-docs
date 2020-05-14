@@ -28,10 +28,10 @@ In this article you'll learn:
 
 > [!div class="checklist"]
 >
-> * How to multi-select work items from a list and open the context menu
-> * Edit one or more fields of several work items
-> * Assign work from a backlog to a sprint using drag-and-drop
-> * Add or remove tags from several work items
+> - How to multi-select work items from a list and open the context menu
+> - Edit one or more fields of several work items
+> - Assign work from a backlog to a sprint using drag-and-drop
+> - Add or remove tags from several work items
 
 ::: moniker-end
 
@@ -39,9 +39,9 @@ In this article you'll learn:
 
 > [!div class="checklist"]
 >
-> * How to multi-select work items from a list and open the context menu
-> * Edit one or more fields of several work items
-> * Assign work from a backlog to a sprint using drag-and-drop
+> - How to multi-select work items from a list and open the context menu
+> - Edit one or more fields of several work items
+> - Assign work from a backlog to a sprint using drag-and-drop
 
 ::: moniker-end
 

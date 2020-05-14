@@ -111,12 +111,12 @@ and use its shortcut menu to **Paste Deployment Sequence**.
 
 ## Related topics
 
-* [Overview of Release Management](release-management-overview.md)
-* [Install Release Management](install-release-management.md)
-* [Manage your release](manage-your-release.md)
-* [Release without deployment agents](release-without-agents.md)
-* [Trigger a release from a build](trigger-a-release.md)
-* [Deploy continuously to Azure](deploy-continuously-to-azure.md)
+- [Overview of Release Management](release-management-overview.md)
+- [Install Release Management](install-release-management.md)
+- [Manage your release](manage-your-release.md)
+- [Release without deployment agents](release-without-agents.md)
+- [Trigger a release from a build](trigger-a-release.md)
+- [Deploy continuously to Azure](deploy-continuously-to-azure.md)
 
 [!INCLUDE [wpfver-back-to-index-shared](../includes/wpfver-back-to-index-shared.md)]
 

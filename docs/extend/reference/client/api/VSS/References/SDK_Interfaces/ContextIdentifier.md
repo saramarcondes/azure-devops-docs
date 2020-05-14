@@ -17,6 +17,6 @@ Defined in vss.d.ts
 
 ### Members
 
-* `id`: string.
+- `id`: string.
 
-* `name`: string.
+- `name`: string.

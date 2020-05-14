@@ -19,6 +19,6 @@ Base class shared by contributions and contribution types
 
 ### Members
 
-* `description`: string. Description of the contribution/type
+- `description`: string. Description of the contribution/type
 
-* `id`: string. Extension-relative identifier of the contribution/type
+- `id`: string. Extension-relative identifier of the contribution/type

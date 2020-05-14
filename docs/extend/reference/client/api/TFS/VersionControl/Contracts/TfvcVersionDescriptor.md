@@ -15,8 +15,8 @@ Module path: `TFS/VersionControl/Contracts`
 
 ### Members
 
-* `version`: string.
+- `version`: string.
 
-* `versionOption`: [TfvcVersionOption](../../../TFS/VersionControl/Contracts/TfvcVersionOption.md).
+- `versionOption`: [TfvcVersionOption](../../../TFS/VersionControl/Contracts/TfvcVersionOption.md).
 
-* `versionType`: [TfvcVersionType](../../../TFS/VersionControl/Contracts/TfvcVersionType.md).
+- `versionType`: [TfvcVersionType](../../../TFS/VersionControl/Contracts/TfvcVersionType.md).

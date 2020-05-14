@@ -286,8 +286,8 @@ The following table lists common query fields and their data type for which samp
 
 ## Related articles
 
-* [Query by field value comparisons](query-field-value.md)
-* [Guidance to create high-performing queries](high-performing-queries.md)
-* [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
-* [Define a managed query](using-queries.md)
-* [Work item field index](../work-items/guidance/work-item-field.md)
+- [Query by field value comparisons](query-field-value.md)
+- [Guidance to create high-performing queries](high-performing-queries.md)
+- [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
+- [Define a managed query](using-queries.md)
+- [Work item field index](../work-items/guidance/work-item-field.md)

@@ -148,7 +148,7 @@ Use this quick reference to access information and sample queries using OData an
 </table>
 
 <!---
-## Sample queries and reports  
+## Sample queries and reports
 
 <table valign="top">
 <tbody valign="top">
@@ -198,6 +198,6 @@ Use this quick reference to access information and sample queries using OData an
 
 ## Related articles
 
-* [PowerBI](../powerbi/overview.md)
-* [Dashboards, charts, reports, & widgets](../dashboards/overview.md)
-* [OData Extension for Data Aggregation Version 4.0](https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)
+- [PowerBI](../powerbi/overview.md)
+- [Dashboards, charts, reports, & widgets](../dashboards/overview.md)
+- [OData Extension for Data Aggregation Version 4.0](https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)

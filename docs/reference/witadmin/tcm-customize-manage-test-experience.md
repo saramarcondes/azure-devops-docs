@@ -60,9 +60,9 @@ To run the **tcm** command-line tool, open a Command Prompt window where Visual 
 ## Syntax
 
 ```
-tcm fieldmapping /export /collection:CollectionURL /teamproject:Project /type:resolutiontype|bug|failuretype /mappingfile:path [/login:username,[password]]  
+tcm fieldmapping /export /collection:CollectionURL /teamproject:Project /type:resolutiontype|bug|failuretype /mappingfile:path [/login:username,[password]]
 
-tcm fieldmapping /import /collection:CollectionURL /teamproject:Project /type:resolutiontype|bug|failuretype /mappingfile:path [/login:username,[password]]  
+tcm fieldmapping /import /collection:CollectionURL /teamproject:Project /type:resolutiontype|bug|failuretype /mappingfile:path [/login:username,[password]]
 ```
 
 #### Parameters
@@ -93,12 +93,12 @@ You can define only one type of work item to be created when you run tests that 
 The following XML syntax lists the default contents of the bug field mappings file. All three fields must be specified when you import a bug field mappings file.
 
 ```xml
-<?xml version="1.0" encoding="utf-16"?>  
-<BugFilerMappings workitemtypetocreate="Bug">  
-   <ReproSteps>Microsoft.VSTS.TCM.ReproSteps</ReproSteps>  
-   <SystemInformation>Microsoft.VSTS.TCM.SystemInfo</SystemInformation>  
-   <BuildFoundIn>Microsoft.VSTS.Build.FoundIn</BuildFoundIn>  
-</BugFilerMappings>  
+<?xml version="1.0" encoding="utf-16"?>
+<BugFilerMappings workitemtypetocreate="Bug">
+   <ReproSteps>Microsoft.VSTS.TCM.ReproSteps</ReproSteps>
+   <SystemInformation>Microsoft.VSTS.TCM.SystemInfo</SystemInformation>
+   <BuildFoundIn>Microsoft.VSTS.Build.FoundIn</BuildFoundIn>
+</BugFilerMappings>
 ```
 
 For more information about fields that are used to track information that Test Manager finds, see [Build and test integration fields](../../boards/queries/build-test-integration.md).
@@ -108,13 +108,13 @@ For more information about fields that are used to track information that Test M
 The following XML syntax lists the default contents of the resolution states defined for the default process templates.
 
 ```xml
-<?xml version="1.0" encoding="utf-8"?>  
-<TestResolutionStates>  
-    <TestResolutionState name="Needs investigation" />  
-    <TestResolutionState name="Test issue" />  
-    <TestResolutionState name="Product issue" />  
-    <TestResolutionState name="Configuration issue" />  
-</TestResolutionStates>  
+<?xml version="1.0" encoding="utf-8"?>
+<TestResolutionStates>
+    <TestResolutionState name="Needs investigation" />
+    <TestResolutionState name="Test issue" />
+    <TestResolutionState name="Product issue" />
+    <TestResolutionState name="Configuration issue" />
+</TestResolutionStates>
 ```
 
 Before you create a project, you can [customize the resolution states defined in the process template](../process-templates/define-initial-configuration-test-manager.md).
@@ -128,23 +128,23 @@ Before you create a project, you can [customize the resolution states defined in
 The following XML syntax lists the default failure types defined for a project.
 
 ```xml
-<?xml version="1.0" encoding="utf-16"?>  
-<TestFailureTypes>  
-  <TestFailureType name="Regression" />  
-  <TestFailureType name="New Issue" />  
-  <TestFailureType name="Known Issue" />  
-  <TestFailureType name="Unknown" />  
-</TestFailureTypes>  
+<?xml version="1.0" encoding="utf-16"?>
+<TestFailureTypes>
+  <TestFailureType name="Regression" />
+  <TestFailureType name="New Issue" />
+  <TestFailureType name="Known Issue" />
+  <TestFailureType name="Unknown" />
+</TestFailureTypes>
 ```
 
 ## Examples
 
 Unless otherwise specified, the following values apply in each example:
 
-* URI for the project collection: http://AdventureWorksServer:8080/tfs/Collection1
-* Project name: AdventureWorks
-* Bug field mapping file name: bugfieldmappings.xml
-* Folder location: "C:\Users\AdminUser\Documents\\"
+- URI for the project collection: http://AdventureWorksServer:8080/tfs/Collection1
+- Project name: AdventureWorks
+- Bug field mapping file name: bugfieldmappings.xml
+- Folder location: "C:\Users\AdminUser\Documents\\"
 
 ### Import the bug field mappings file
 
@@ -156,4 +156,4 @@ tcm fieldmapping /import /type:bug /mappingfile:"C:\Users\AdminUser\Documents\bu
 
 ## Related articles
 
-* [Using TCM from the command line](https://msdn.microsoft.com/library/jj155799.aspx)
+- [Using TCM from the command line](https://msdn.microsoft.com/library/jj155799.aspx)

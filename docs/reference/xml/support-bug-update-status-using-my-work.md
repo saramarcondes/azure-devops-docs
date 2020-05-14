@@ -19,9 +19,9 @@ You specify all the WITs that you use to track bugs in the definition for the Bu
 
 **Requirements**
 
-* To access **My Work**, you must use Team Foundation Version Control (TFVC) for your source control.
+- To access **My Work**, you must use Team Foundation Version Control (TFVC) for your source control.
 
-* To run the **witadmin** command-line tool, you must be a member of the **Team Foundation Administrators** group or a member of the **Project Administrators** group for the project. For more information, see [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md).
+- To run the **witadmin** command-line tool, you must be a member of the **Team Foundation Administrators** group or a member of the **Project Administrators** group for the project. For more information, see [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md).
 
 <a name="default"></a>
 
@@ -73,16 +73,16 @@ You add WITs to a category by updating the [Categories definition file](categori
     > [!div class="tabbedCodeSnippets"]
     >
     > ```XML
-    > <CATEGORY name="Bug Category" refname="Microsoft.BugCategory">  
-    >       <DEFAULTWORKITEMTYPE name="Bug" />  
-    >       <WORKITEMTYPE name="Performance Bug" />  
-    > </CATEGORY>  
+    > <CATEGORY name="Bug Category" refname="Microsoft.BugCategory">
+    >       <DEFAULTWORKITEMTYPE name="Bug" />
+    >       <WORKITEMTYPE name="Performance Bug" />
+    > </CATEGORY>
     > ```
 
 1.  Import the modified definition file.
 
     ```
-    witadmin importcategories /collection:CollectionURL /p:ProjectName /f:"DirectoryPath\categories.xml"  
+    witadmin importcategories /collection:CollectionURL /p:ProjectName /f:"DirectoryPath\categories.xml"
     ```
 
 <a name="assign"></a>
@@ -102,14 +102,14 @@ You assign metastates to the workflow states of bugs within the `BugWorkItems` e
     > [!div class="tabbedCodeSnippets"]
     >
     > ```XML
-    > <BugWorkItems category="Microsoft.BugCategory">  
-    >       <States>  
-    >       <State value="Active" type="InProgress" />  
-    >       <State value="Investigating" type="InProgress" />  
-    >       <State value="Resolved" type="Resolved" />  
-    >       <State value="Closed" type="Complete" />  
-    >       </States>  
-    > </BugWorkItems>  
+    > <BugWorkItems category="Microsoft.BugCategory">
+    >       <States>
+    >       <State value="Active" type="InProgress" />
+    >       <State value="Investigating" type="InProgress" />
+    >       <State value="Resolved" type="Resolved" />
+    >       <State value="Closed" type="Complete" />
+    >       </States>
+    > </BugWorkItems>
     > ```
     >
     > [!IMPORTANT]
@@ -119,7 +119,7 @@ You assign metastates to the workflow states of bugs within the `BugWorkItems` e
 
 ## Related articles
 
-* [ProcessConfiguration](process-configuration-xml-element.md)
-* [Use categories to group work item types](use-categories-to-group-work-item-types.md)
-* [Import and export process configuration](../witadmin/witadmin-import-export-process-configuration.md)
-* [Import and export categories](../witadmin/witadmin-import-export-categories.md)
+- [ProcessConfiguration](process-configuration-xml-element.md)
+- [Use categories to group work item types](use-categories-to-group-work-item-types.md)
+- [Import and export process configuration](../witadmin/witadmin-import-export-process-configuration.md)
+- [Import and export categories](../witadmin/witadmin-import-export-categories.md)

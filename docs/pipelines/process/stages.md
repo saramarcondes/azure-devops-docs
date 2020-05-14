@@ -141,16 +141,16 @@ While the most important part of defining a stage is the
 automation tasks, you can also configure several properties and options
 for a stage in a release pipeline. You can:
 
-* Edit the name of the stage here if required.
-* Designate a single user or a single
+- Edit the name of the stage here if required.
+- Designate a single user or a single
   group to be the stage owner. Stage owners are
   notified whenever a deployment to that
   stage fails. Stage owners are not automatically assigned
   any additional permissions.
-* Delete the stage from the pipeline.
-* Change the order of stages.
-* Save a copy of the stage as a template.
-* Manage the security settings for the stage.
+- Delete the stage from the pipeline.
+- Change the order of stages.
+- Save a copy of the stage as a template.
+- Manage the security settings for the stage.
 
 ![Defining options and policies](../release/media/environments-03.png)
 
@@ -237,9 +237,9 @@ YAML is not supported in this version of TFS.
 
 You control the dependencies by setting the triggers on each stage of the release pipeline:
 
-* Without a trigger, a stage will not start unless it is started manually.
-* With an **After release** trigger, a stage will start as soon as the release is started, in parallel with other stages that have **After release** trigger.
-* With an **After stage** trigger, a stage will start after all the dependent stages are completed. Using this, you can model fan-out and fan-in behavior for stages.
+- Without a trigger, a stage will not start unless it is started manually.
+- With an **After release** trigger, a stage will start as soon as the release is started, in parallel with other stages that have **After release** trigger.
+- With an **After stage** trigger, a stage will start after all the dependent stages are completed. Using this, you can model fan-out and fan-in behavior for stages.
 
 ---
 
@@ -328,15 +328,15 @@ stage. **Queuing policies** give you that control.
 
 The options you can choose for a queuing policy are:
 
-* **Number of parallel deployments**:
+- **Number of parallel deployments**:
   Use this option if you dynamically provision new resources
   in your stage and it is physically capable of handling
   the deployment of multiple releases in parallel, but you want
   to limit the number of parallel deployments.
 
-* If you specify a maximum number of deployments, two more options appear:
+- If you specify a maximum number of deployments, two more options appear:
 
-  * **Deploy all in sequence**:
+  - **Deploy all in sequence**:
     Use this option if you want to deploy all the releases
     sequentially into the same shared physical resources.
     By deploying them in turn, one after the other, you
@@ -346,7 +346,7 @@ The options you can choose for a queuing policy are:
     also ensure that pre-deployment approval requests for the
     stage are sent out in sequence.
 
-  * **Deploy latest and cancel the others**:
+  - **Deploy latest and cancel the others**:
     Use this option if you are producing releases faster
     than builds, and you only want to deploy the latest build.
 
@@ -358,7 +358,7 @@ the first stage in this pipeline is named **QA**
 and has both pre-deployment and post-deployment approvers
 defined.
 
-* If you do not specify a limit for the number of parallel deployments,
+- If you do not specify a limit for the number of parallel deployments,
   all five approval requests will be sent out as soon as
   the releases are created. If the approvers grant approval for all of the
   releases, they will all be deployed to the **QA** stage in parallel.
@@ -366,7 +366,7 @@ defined.
   approvers defined, all the five releases will automatically
   be deployed in parallel to this stage).
 
-* If you specify a limit and **Deploy all in sequence**,
+- If you specify a limit and **Deploy all in sequence**,
   and the limit has already been reached, the pre-deployment approval for
   release **R1** will be sent out first. After this
   approval is completed, the deployment of release **R1** to the
@@ -377,7 +377,7 @@ defined.
   approval is sent out. The process continues like this for
   all of the releases in turn.
 
-* If you specify a limit and **Deploy latest and cancel the others**,
+- If you specify a limit and **Deploy latest and cancel the others**,
   and the limit has already been reached, releases **R2**, **R3**, and **R4** will be
   skipped, and the pre-deployment approval for **R5** in
   the **QA** stage will be sent out immediately

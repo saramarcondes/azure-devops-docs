@@ -15,9 +15,9 @@ monikerRange: '>= tfs-2015'
 
 > [!div class="op_single_selector"]
 >
-> * [Visual Studio 2017](gitquickstart.md)
-> * [Visual Studio 2015 Update 2](gitquickstart-vs2015.md)
-> * [Visual Studio 2013 and Visual Studio 2015 RTM/Update 1](get-started-vs2013.md)
+> - [Visual Studio 2017](gitquickstart.md)
+> - [Visual Studio 2015 Update 2](gitquickstart-vs2015.md)
+> - [Visual Studio 2013 and Visual Studio 2015 RTM/Update 1](get-started-vs2013.md)
 
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015
 

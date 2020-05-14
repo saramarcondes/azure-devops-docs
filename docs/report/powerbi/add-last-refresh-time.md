@@ -74,6 +74,6 @@ The steps below show how to add a column to your model which will contain the la
 
 ## Related articles
 
-* [Power BI integration overview](overview.md)
-* [Create Analytics views](analytics-views-create.md)
-* [Get started with Power BI Desktop](/power-bi/desktop-getting-started)
+- [Power BI integration overview](overview.md)
+- [Create Analytics views](analytics-views-create.md)
+- [Get started with Power BI Desktop](/power-bi/desktop-getting-started)

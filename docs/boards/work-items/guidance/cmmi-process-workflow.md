@@ -296,10 +296,10 @@ These diagrams show the main progression and regression states for the Requireme
 
 The typical workflow progression for a requirement is:
 
-* The product owner creates a requirement in the **Proposed** state with the default reason, **New requirement**.
-* The product owner updates the status to **Active** when they begin work to implement it.
-* The team updates the status to **Resolved** when code development is finished and system tests have passed.
-* Lastly, the team or product owner moves the requirement to **Closed** when the product owner agrees that it has been implemented according to the Acceptance Criteria and passed all validation tests.
+- The product owner creates a requirement in the **Proposed** state with the default reason, **New requirement**.
+- The product owner updates the status to **Active** when they begin work to implement it.
+- The team updates the status to **Resolved** when code development is finished and system tests have passed.
+- Lastly, the team or product owner moves the requirement to **Closed** when the product owner agrees that it has been implemented according to the Acceptance Criteria and passed all validation tests.
 
 ### Update status with Kanban or taskboards
 
@@ -398,10 +398,10 @@ You can [create bugs from the web portal web portal, Visual Studio, or when test
 
 In addition to the requirement, feature, task, and bug WITs, you can track information recommended by the CMMI process with the following WITS.
 
-* [Change request](cmmi/guidance-change-request-field-reference-cmmi.md) to [manage proposed changes](cmmi/guidance-manage-change.md) to any work product that is under change control.
-* [Issue](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) to track an event or situation that might block work or is blocking work on the product. [Issues differ from risks](cmmi/guidance-manage-issues-cmmi.md) in that teams identify issues spontaneously, generally during daily team meetings.
-* [Risk](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) to track the probability and degree of variance between actual and desired outcomes. When you [manage risks](cmmi/guidance-manage-risks.md), you strategically minimize the variance between the outcome that you want and the actual outcome.
-* [Review](cmmi/guidance-review-meeting-field-reference-cmmi.md) to document the results of a design or code review. Team members can [capture the details of how the design or code meets standards](cmmi/guidance-implement-development-tasks.md) in areas of name correctness, code relevance, extensibility, code complexity, algorithmic complexity, and code security.  
+- [Change request](cmmi/guidance-change-request-field-reference-cmmi.md) to [manage proposed changes](cmmi/guidance-manage-change.md) to any work product that is under change control.
+- [Issue](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) to track an event or situation that might block work or is blocking work on the product. [Issues differ from risks](cmmi/guidance-manage-issues-cmmi.md) in that teams identify issues spontaneously, generally during daily team meetings.
+- [Risk](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) to track the probability and degree of variance between actual and desired outcomes. When you [manage risks](cmmi/guidance-manage-risks.md), you strategically minimize the variance between the outcome that you want and the actual outcome.
+- [Review](cmmi/guidance-review-meeting-field-reference-cmmi.md) to document the results of a design or code review. Team members can [capture the details of how the design or code meets standards](cmmi/guidance-implement-development-tasks.md) in areas of name correctness, code relevance, extensibility, code complexity, algorithmic complexity, and code security.  
   <br/>
   You can add an issue from the [New work item widget](../../../report/dashboards/widget-catalog.md#new-work-item-widget) added to a [team dashboard](../../../Report/dashboards.md), or from the **New** menu on the Queries page.
 

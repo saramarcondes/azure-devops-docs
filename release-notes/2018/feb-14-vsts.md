@@ -16,10 +16,10 @@ In the **Sprint 130 Update** of Visual Studio Team Services (VSTS), we continue 
 
 Other highlights include:
 
-* [Mention a group in work item and pull request discussions](#mention-a-group-in-work-item-and-pull-request-discussions)
-* [Release automatically from Azure Container Registry and Docker Hub](#release-automatically-from-azure-container-registry-and-docker-hub) and [only certain branches of builds from GitHub](#filter-branches-for-github-artifacts)
-* Leverage what you may have in Jenkins with [finer control](#specify-a-default-version-for-jenkins-artifacts) and [efficiency using Azure Storage](#propagate-jenkins-artifacts-to-azure-storage)
-* [Manage access and extensions for large numbers of users using groups](#manage-access-and-extensions-for-large-numbers-of-users-using-groups)
+- [Mention a group in work item and pull request discussions](#mention-a-group-in-work-item-and-pull-request-discussions)
+- [Release automatically from Azure Container Registry and Docker Hub](#release-automatically-from-azure-container-registry-and-docker-hub) and [only certain branches of builds from GitHub](#filter-branches-for-github-artifacts)
+- Leverage what you may have in Jenkins with [finer control](#specify-a-default-version-for-jenkins-artifacts) and [efficiency using Azure Storage](#propagate-jenkins-artifacts-to-azure-storage)
+- [Manage access and extensions for large numbers of users using groups](#manage-access-and-extensions-for-large-numbers-of-users-using-groups)
 
 ## What’s new in VSTS
 
@@ -85,9 +85,9 @@ When a release with multiple artifacts is auto-triggered, default versions saved
 
 Now, you can specify a default version for Jenkins artifacts, with the options you’re familiar with:
 
-* Latest
-* Specify at the time of release creation
-* Specific version
+- Latest
+- Specify at the time of release creation
+- Specific version
 
 > [!div class="mx-imgBorder"] > ![Default version for Jenkins artifacts](media/130_10.png)
 

@@ -19,10 +19,10 @@ Model that can be used to customize the values sent to AppInsights via &quot;tra
 
 ### Members
 
-* `alias`: string.
+- `alias`: string.
 
-* `metrics`: {[key: string]: number}.
+- `metrics`: {[key: string]: number}.
 
-* `pageName`: string.
+- `pageName`: string.
 
-* `properties`: {[key: string]: string}.
+- `properties`: {[key: string]: string}.

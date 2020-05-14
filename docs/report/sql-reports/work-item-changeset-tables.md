@@ -20,14 +20,14 @@ You can query for data about work items that are linked to changesets by using F
 
 FactWorkItemChangeset is associated with the following dimension tables:
 
-* DimChangeset
+- DimChangeset
 
-* DimPerson
+- DimPerson
 
-* DimWorkItem
+- DimWorkItem
 
 ## Related notes
 
-* [Test cases and work items](perspective-test-analyze-report-work.md)
-* [Find and view changesets](../../repos/tfvc/find-view-changesets.md)
-* [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)
+- [Test cases and work items](perspective-test-analyze-report-work.md)
+- [Find and view changesets](../../repos/tfvc/find-view-changesets.md)
+- [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)

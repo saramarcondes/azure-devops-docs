@@ -18,10 +18,10 @@ ms.date: 11/19/2018
 
 The Microsoft Agile glossary is a short dictionary of terms used in tracking work using Azure Boards. Additional terms are defined in the following articles:
 
-* [Kanban key concepts](../boards/kanban-key-concepts.md)
-* [Sprints and Scrum key concepts](../sprints/scrum-key-concepts.md)
-* [Work item field index](guidance/work-item-field.md)
-* [Project management and navigation glossary](../../project/navigation/glossary.md)
+- [Kanban key concepts](../boards/kanban-key-concepts.md)
+- [Sprints and Scrum key concepts](../sprints/scrum-key-concepts.md)
+- [Work item field index](guidance/work-item-field.md)
+- [Project management and navigation glossary](../../project/navigation/glossary.md)
 
 <!---
 <a id="object-definitions"></a>
@@ -72,10 +72,10 @@ Specifies both work item fields and global lists that multiple projects and type
 
 Specifies the set of work item types that you don't want users to create manually. By default this set includes:
 
-* [Code Review Request and Code Review Response](../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)
-* [Feedback Request and Feedback Response](../../project/feedback/get-feedback.md)
-* [Shared Steps and Shared Parameter](../../test/create-test-cases.md)
-* [Test Plan and Test Suite](../../test/create-a-test-plan.md)
+- [Code Review Request and Code Review Response](../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)
+- [Feedback Request and Feedback Response](../../project/feedback/get-feedback.md)
+- [Shared Steps and Shared Parameter](../../test/create-test-cases.md)
+- [Test Plan and Test Suite](../../test/create-a-test-plan.md)
 
 You can use [TFS Team Project Manager](https://github.com/jelledruyts/TfsTeamProjectManager), an open-source client available from GitHub to quickly determine which WITs belong to the Hidden Types Category.
 
@@ -162,6 +162,6 @@ The workflow also specifies the values that appear in the State and Reason drop-
 
 ## Related articles
 
-* [Refine your backlog](../backlogs/best-practices-product-backlog.md)
-* [Kanban best practices](../boards/best-practices-kanban.md)
-* [Scrum best practices](../sprints/best-practices-scrum.md).
+- [Refine your backlog](../backlogs/best-practices-product-backlog.md)
+- [Kanban best practices](../boards/best-practices-kanban.md)
+- [Scrum best practices](../sprints/best-practices-scrum.md).

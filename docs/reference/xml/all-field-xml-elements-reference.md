@@ -30,30 +30,30 @@ You use the following syntax to define the data fields for a type of work item. 
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <FIELD name="fieldDisplayName" refname="fieldReferenceName" type="String | Integer | Double | DateTime | PlainText | HTML | History | TreePath | GUID | Boolean"  
-> syncnamechanges="true | false" reportingname="reportingDisplayName" reportingrefname="reportingReferenceName"  
-> reportable="Dimension | Detail | Measure" formula="avg" >  
->       <ALLOWEDVALUES> . . . </ALLOWEDVALUES>  
->       <ALLOWEXISTINGVALUE />  
->       <CANNOTLOSEVALUE />  
->       <COPY />  
->       <DEFAULT />  
->       <EMPTY />  
->       <FROZEN />  
->       <HELPTEXT> . . . </HELPTEXT>  
->       <MATCH />  
->       <NOTSAMEAS />  
->       <PROHIBITEDVALUES /> . . . </PROHIBITEDVALUES>  
->       <READONLY />  
->       <REQUIRED />  
->       <SERVERDEFAULT />  
->       <SUGGESTEDVALUES /> . . . </SUGGESTEDVALUES>  
->       <VALIDUSER />  
->       <WHEN>> . . . </WHEN>  
->       <WHENNOT> . . . </WHENNOT>  
->       <WHENCHANGED> . . . </WHENCHANGED>  
->       <WHENNOTCHANGED> . . . </WHENNOTCHANGED>  
-> </FIELD>  
+> <FIELD name="fieldDisplayName" refname="fieldReferenceName" type="String | Integer | Double | DateTime | PlainText | HTML | History | TreePath | GUID | Boolean"
+> syncnamechanges="true | false" reportingname="reportingDisplayName" reportingrefname="reportingReferenceName"
+> reportable="Dimension | Detail | Measure" formula="avg" >
+>       <ALLOWEDVALUES> . . . </ALLOWEDVALUES>
+>       <ALLOWEXISTINGVALUE />
+>       <CANNOTLOSEVALUE />
+>       <COPY />
+>       <DEFAULT />
+>       <EMPTY />
+>       <FROZEN />
+>       <HELPTEXT> . . . </HELPTEXT>
+>       <MATCH />
+>       <NOTSAMEAS />
+>       <PROHIBITEDVALUES /> . . . </PROHIBITEDVALUES>
+>       <READONLY />
+>       <REQUIRED />
+>       <SERVERDEFAULT />
+>       <SUGGESTEDVALUES /> . . . </SUGGESTEDVALUES>
+>       <VALIDUSER />
+>       <WHEN>> . . . </WHEN>
+>       <WHENNOT> . . . </WHENNOT>
+>       <WHENCHANGED> . . . </WHENCHANGED>
+>       <WHENNOTCHANGED> . . . </WHENNOTCHANGED>
+> </FIELD>
 > ```
 
 <a name="CHILDElements"></a>
@@ -255,11 +255,11 @@ You can qualify most **FIELD** rules to apply or not apply to a set of groups or
 | `not`         | not="_userGroupName_"                                     | Optional. Specifies the name of a user or group in Team Foundation to whom the rule does not apply. Valid values consist of a string of text that contains between 1 and 255 characters.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | `from`        | from="value &#124; field &#124; clock &#124; currentuser" | Required. Specifies the source of the value from which to copy a value or specify a default value. The following values are valid:<br /><br /> - `clock`: Copies the current date and time from the system clock to DateTime fields. No additional attributes are required. For **COPY** and **DEFAULT** rules, this value comes from the local computer clock time. For **SERVERDEFAULT**, the value comes from the server clock when a user saves the work item.<br /><br /> - `currentuser`: Copies the name of the user who is currently logged on. Use the short username of the current user as the value. No additional attributes are required. Used for string fields.<br /><br /> - `field`: Copies the value of the `field` attribute that you specify. Requires a `field="abc"` attribute. By default, if the specified "from" field is empty, nothing is performed. The `field` attribute is used only for \<COPY> and \<DEFAULT> rules.<br / - `value`: Copies the value of the `value` attribute that you specify. Use the value of a string constant that you specify. Requires a `value="abc"` attribute. `value` is used only for \<COPY> and \<DEFAULT> rules.<br /><br /> If you specify "value" or "field," you must also include the value or field attribute, respectively. |
 | `field`       | field="_fieldReferenceName_"                              | Optional. Specifies the name of the field whose value is to be copied into the field when `field` is specified for the `from` attribute.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| `pattern`     | pattern="_patternValue_"                                  | Required. Enforces basic pattern matching for strings only. _patternValue_ is a string that consists of between 1 and 255 characters, inclusive. That string must not contain a backslash character (\\). Each character in the string is interpreted as a literal, unless it is one of the following six metacharacters:<br /><br /> - "A" or "a" represent a single alphabetical character.<br /> - "N" or "n" represent a single numeric character.<br /> - "X" or "x" represent a single alphanumeric character.<br /><br /> Pattern value: ^[^\\\\]\*$<br /><br /> For example, `pattern="xxxxx.nn.nn"` matches any five alphanumeric characters, then a period, then two numeric characters, then a period, then two more numeric characters.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| `pattern`     | pattern="_patternValue_"                                  | Required. Enforces basic pattern matching for strings only. _patternValue_ is a string that consists of between 1 and 255 characters, inclusive. That string must not contain a backslash character (\\). Each character in the string is interpreted as a literal, unless it is one of the following six metacharacters:<br /><br /> - "A" or "a" represent a single alphabetical character.<br /> - "N" or "n" represent a single numeric character.<br /> - "X" or "x" represent a single alphanumeric character.<br /><br /> Pattern value: ^[^\\\\]\*\$<br /><br /> For example, `pattern="xxxxx.nn.nn"` matches any five alphanumeric characters, then a period, then two numeric characters, then a period, then two more numeric characters.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | `value`       | value="_valueToCopy_"                                     | Optional. Specifies the value to be copied into the field when `value` is specified for the `from` attribute.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
 ## Related articles
 
-* [About work item fields and attributes](../../boards/work-items/work-item-fields.md)
-* [Change the workflow](change-workflow-wit.md)
-* [Customize your work tracking experience](../customize-work.md)
+- [About work item fields and attributes](../../boards/work-items/work-item-fields.md)
+- [Change the workflow](change-workflow-wit.md)
+- [Customize your work tracking experience](../customize-work.md)

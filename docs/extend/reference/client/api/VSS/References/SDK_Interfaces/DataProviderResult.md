@@ -19,6 +19,6 @@ Result structure from calls to GetDataProviderData
 
 ### Members
 
-* `data`: {[key: string]: number}. Property bag of data keyed off of the data provider contribution ID
+- `data`: {[key: string]: number}. Property bag of data keyed off of the data provider contribution ID
 
-* `resolvedProviders`: [ResolvedDataProvider](../../../VSS/References/SDK_Interfaces/ResolvedDataProvider.md)[]. List of data providers resolved in the data-provider query
+- `resolvedProviders`: [ResolvedDataProvider](../../../VSS/References/SDK_Interfaces/ResolvedDataProvider.md)[]. List of data providers resolved in the data-provider query

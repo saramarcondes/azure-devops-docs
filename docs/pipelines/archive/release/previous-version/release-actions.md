@@ -96,11 +96,11 @@ when the option **No Tool** is selected.
 
 ## Actions and Configuration Variables for Release Actions
 
-* [Manage application pools and websites](#iis)
-* [Create or modify .ini files](#ini)
-* [Manage SQL Server databases](#sql)
-* [Set up your servers](#winos)
-* [Manage Windows services](#winsvc)
+- [Manage application pools and websites](#iis)
+- [Create or modify .ini files](#ini)
+- [Manage SQL Server databases](#sql)
+- [Set up your servers](#winos)
+- [Manage Windows services](#winsvc)
 
 <a name="iis"></a>
 
@@ -304,13 +304,13 @@ about this tool, go **[here](release-actions/release-action-tools.md)**.
 
 ## Related topics
 
-* [Overview of Release Management](release-management-overview.md)
-* [Install Release Management](install-release-management.md)
-* [Manage your release](manage-your-release.md)
-* [Release without deployment agents](release-without-agents.md)
-* [Release with deployment agents](release-with-agents.md)
-* [Trigger a release from a build](trigger-a-release.md)
-* [Deploy continuously to Azure](deploy-continuously-to-azure.md)
+- [Overview of Release Management](release-management-overview.md)
+- [Install Release Management](install-release-management.md)
+- [Manage your release](manage-your-release.md)
+- [Release without deployment agents](release-without-agents.md)
+- [Release with deployment agents](release-with-agents.md)
+- [Trigger a release from a build](trigger-a-release.md)
+- [Deploy continuously to Azure](deploy-continuously-to-azure.md)
 
 [!INCLUDE [wpfver-back-to-index-shared](../includes/wpfver-back-to-index-shared.md)]
 

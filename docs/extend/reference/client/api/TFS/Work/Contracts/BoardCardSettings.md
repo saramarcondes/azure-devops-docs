@@ -15,4 +15,4 @@ Module path: `TFS/Work/Contracts`
 
 ### Members
 
-* `cards`: {[key: string]: [FieldSetting](../../../TFS/Work/Contracts/FieldSetting.md)[]}.
+- `cards`: {[key: string]: [FieldSetting](../../../TFS/Work/Contracts/FieldSetting.md)[]}.

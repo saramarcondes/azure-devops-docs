@@ -20,9 +20,9 @@ Work item fields are used to track information. Each work item type (WIT) defini
 
 Each field is defined by the following three attributes.
 
-* **Data type**: Specifies the type of data that can be entered into the field, such as Boolean, Double, Integer, HTML, and String. For descriptions of each data type, see [Query fields, operators, and macros](../queries/query-operators-variables.md#field-values).
-* **Friendly name**: Specifies the name assigned to the field and that you select for a **Field** in a query clause. This name may differ from that displayed on the work item form.
-* **Reference name**: Specifies the name that you use when creating [WIQL query](../queries/wiql-syntax.md) or an [ad hoc work item template](../backlogs/work-item-template.md), using [REST API commands](/rest/api/azure/devops/wit/), or defining [XML work item type definitions](../../reference/xml/field-definition-element-reference.md). Once defined, the reference name cannot be changed.
+- **Data type**: Specifies the type of data that can be entered into the field, such as Boolean, Double, Integer, HTML, and String. For descriptions of each data type, see [Query fields, operators, and macros](../queries/query-operators-variables.md#field-values).
+- **Friendly name**: Specifies the name assigned to the field and that you select for a **Field** in a query clause. This name may differ from that displayed on the work item form.
+- **Reference name**: Specifies the name that you use when creating [WIQL query](../queries/wiql-syntax.md) or an [ad hoc work item template](../backlogs/work-item-template.md), using [REST API commands](/rest/api/azure/devops/wit/), or defining [XML work item type definitions](../../reference/xml/field-definition-element-reference.md). Once defined, the reference name cannot be changed.
 
 For a description of each field attribute and how you can list them, see [Field attributes](#field-attributes) and [List field attributes](#list-attributes) later in this article. For an overview of WITs and work items, see [Track work with user stories, issues, bugs, features, and epics](about-work-items.md).
 
@@ -30,11 +30,11 @@ For a description of each field attribute and how you can list them, see [Field 
 
 The field friendly name identifies each work item field. When adding a custom field, make sure the friendly name falls within these guidelines:
 
-* Must be unique within the organization or project collection
-* Must be 128 or fewer Unicode characters
-* Can't contain any leading or trailing spaces, nor two or more consecutive spaces
-* Must contain at least one alphabetic character
-* Can't contain the following characters: `` .,;'`:~\/\*|?"&%$!+=()[]{}<> ``.
+- Must be unique within the organization or project collection
+- Must be 128 or fewer Unicode characters
+- Can't contain any leading or trailing spaces, nor two or more consecutive spaces
+- Must contain at least one alphabetic character
+- Can't contain the following characters: `` .,;'`:~\/\*|?"&%$!+=()[]{}<> ``.
 
 For additional information, see [Naming restrictions and conventions](../../organizations/settings/naming-restrictions.md#work-items-work-item-types-and-customizations).
 
@@ -44,10 +44,10 @@ All system defined fields have reference names that begin with _System_, for exa
 
 Predefined fields defined by the default process begin with Microsoft.VSTS and then further differ based on their usage. Examples of predefined fields that are used in common, for scheduling purposes and integration with Office Project, for integration with Team Foundation Build, and integration with test case management (TCM) are as follows:
 
-* Microsoft.VSTS.Common.Priority
-* Microsoft.VSTS.Scheduling.DueDate
-* Microsoft.VSTS.Build.FoundIn
-* Microsoft.VSTS.TCM.Steps
+- Microsoft.VSTS.Common.Priority
+- Microsoft.VSTS.Scheduling.DueDate
+- Microsoft.VSTS.Build.FoundIn
+- Microsoft.VSTS.TCM.Steps
 
 For an overview of all system and predefined fields that are defined for the default processes/process templates, see [Work item field index](guidance/work-item-field.md). For more information about specifying field names, see [Naming restrictions](../../organizations/settings/naming-restrictions.md).
 
@@ -57,8 +57,8 @@ Because custom fields are defined for an organization or project collection, you
 
 When adding custom fields, note the following limits:
 
-* A maximum of 256 fields can be defined for each WIT
-* A maximum of 512 fields can be defined per process
+- A maximum of 256 fields can be defined for each WIT
+- A maximum of 512 fields can be defined per process
 
 The field data type determines the kind and size of data that you can store in the field. A field can have only one type defined within a project collection. This restriction encourages organizations to use common fields across projects and work item types.
 
@@ -501,7 +501,7 @@ For example, you can enter the following command to list the attributes defined 
 > [!div class="tabbedCodeSnippets"]
 >
 > ```CMD
-> witadmin listfields /collection:http://fabrikam:8080/tfs/DefaultCollection /n:Microsoft.VSTS.Common.Issue  
+> witadmin listfields /collection:http://fabrikam:8080/tfs/DefaultCollection /n:Microsoft.VSTS.Common.Issue
 > ```
 
 Field and attribute information appears for the named field, as shown in this example.
@@ -509,12 +509,12 @@ Field and attribute information appears for the named field, as shown in this ex
 > [!div class="tabbedCodeSnippets"]
 >
 > ```CMD
-> Field: Microsoft.VSTS.Common.Issue  
-> Name: Issue  
-> Type: String  
-> Reportable As: dimension  
-> Use: Adventure Works (Shared Steps), AW Future (Shared Steps), AW Current (Shared Steps)  
-> Indexed: False  
+> Field: Microsoft.VSTS.Common.Issue
+> Name: Issue
+> Type: String
+> Reportable As: dimension
+> Use: Adventure Works (Shared Steps), AW Future (Shared Steps), AW Current (Shared Steps)
+> Indexed: False
 > ```
 
 The **Use** parameter indicates the name of each project and the work item type where the field is used.
@@ -561,8 +561,8 @@ To add fields to a process, you add them to one or more work item types. To lear
 
 You can add or modify the fields contained within a WIT or add a custom WIT. To learn more, see:
 
-* For project collections that use the Inheritance process model: [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md).
-* For project collections that use the On-premises XML process model: [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md).
+- For project collections that use the Inheritance process model: [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md).
+- For project collections that use the On-premises XML process model: [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md).
 
 You can change the field name, the index, and the report attributes for any field except system fields by using the **witadmin** command-line tool. For more information, see [Manage work item fields-witadmin](../../reference/witadmin/manage-work-item-fields.md).
 
@@ -580,28 +580,28 @@ You can change the field name, the index, and the report attributes for any fiel
 
 ::: moniker range="azure-devops"
 
-* [Query quick reference](../queries/query-index-quick-ref.md)
-* [Work item field index](guidance/work-item-field.md)
-* [Add and manage fields for an inherited process](../../organizations/settings/work/customize-process-field.md)
+- [Query quick reference](../queries/query-index-quick-ref.md)
+- [Work item field index](guidance/work-item-field.md)
+- [Add and manage fields for an inherited process](../../organizations/settings/work/customize-process-field.md)
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-* [Query quick reference](../queries/query-index-quick-ref.md)
-* [Work item field index](guidance/work-item-field.md)
-* [Choose the process model for your project collection](/azure/devops/reference/customize-work?view=azure-devops-2019#choose-process-model)
-* [Add or modify a field to track work](../../reference/add-modify-field.md)
-* [Manage work item fields-witadmin](../../reference/witadmin/manage-work-item-fields.md)
+- [Query quick reference](../queries/query-index-quick-ref.md)
+- [Work item field index](guidance/work-item-field.md)
+- [Choose the process model for your project collection](/azure/devops/reference/customize-work?view=azure-devops-2019#choose-process-model)
+- [Add or modify a field to track work](../../reference/add-modify-field.md)
+- [Manage work item fields-witadmin](../../reference/witadmin/manage-work-item-fields.md)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-* [Query quick reference](../queries/query-index-quick-ref.md)
-* [Work item field index](guidance/work-item-field.md)
-* [Add or modify a field to track work](../../reference/add-modify-field.md)
-* [Manage work item fields-witadmin](../../reference/witadmin/manage-work-item-fields.md)
+- [Query quick reference](../queries/query-index-quick-ref.md)
+- [Work item field index](guidance/work-item-field.md)
+- [Add or modify a field to track work](../../reference/add-modify-field.md)
+- [Manage work item fields-witadmin](../../reference/witadmin/manage-work-item-fields.md)
 
 ::: moniker-end
 

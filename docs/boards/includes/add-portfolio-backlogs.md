@@ -18,14 +18,14 @@ You can add them by either customizing your inherited process or modifying your 
 
 **Inheritance process model:**
 
-* [Customize your backlogs or boards for a process](/azure/devops/organizations/settings/work/customize-process-backlogs-boards).
-* [Customize an inheritance process](/azure/devops/organizations/settings/work/inheritance-process-model).
+- [Customize your backlogs or boards for a process](/azure/devops/organizations/settings/work/customize-process-backlogs-boards).
+- [Customize an inheritance process](/azure/devops/organizations/settings/work/inheritance-process-model).
 
 **On-premises XML process model:**
 
-* [Customize work tracking](/azure/devops/reference/customize-work)
-* [Add portfolio backlogs](/azure/devops/reference/add-portfolio-backlogs)
-* [Customize the On-premises XML process model](/azure/devops/reference/on-premises-xml-process-model)
+- [Customize work tracking](/azure/devops/reference/customize-work)
+- [Add portfolio backlogs](/azure/devops/reference/add-portfolio-backlogs)
+- [Customize the On-premises XML process model](/azure/devops/reference/on-premises-xml-process-model)
 
 ::: moniker-end
 

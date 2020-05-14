@@ -34,11 +34,11 @@ The following example shows the structure of the root **ProcessTemplate** elemen
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <?xml version="1.0" encoding="utf-8"?>  
-> <ProcessTemplate>  
->       <metadata> . . . </metadata>  
->       <groups> . . .</groups>  
-> </ProcessTemplate>  
+> <?xml version="1.0" encoding="utf-8"?>
+> <ProcessTemplate>
+>       <metadata> . . . </metadata>
+>       <groups> . . .</groups>
+> </ProcessTemplate>
 > ```
 
 ## <a name="metadata"></a> Metadata element reference
@@ -48,15 +48,15 @@ The following syntax shows the structure of the **metadata** element and its chi
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <metadata>  
->     <name>ProcessTemplateName</name>  
->     <description>ProcessTemplateDescription </description>  
->     <version type="ID" major="Number1" minor="Number2" />  
->     <plugins>  
->       <plugin name="Microsoft.ProjectCreationWizard.pluginID" wizardPage="true | false" />  
-> . . .  
->     </plugins>  
-> </metadata>  
+> <metadata>
+>     <name>ProcessTemplateName</name>
+>     <description>ProcessTemplateDescription </description>
+>     <version type="ID" major="Number1" minor="Number2" />
+>     <plugins>
+>       <plugin name="Microsoft.ProjectCreationWizard.pluginID" wizardPage="true | false" />
+> . . .
+>     </plugins>
+> </metadata>
 > ```
 
 | Element         | Description and syntax                                                                                                                                                                                                                                                                                                                                                           |
@@ -75,16 +75,16 @@ The following syntax shows the structure of the **groups** element and its child
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <groups>  
->       <group id="groupId" description="GroupDescription" completionMessage="SuccessMessage">  
+> <groups>
+>       <group id="groupId" description="GroupDescription" completionMessage="SuccessMessage">
 >       <dependencies>
->          <dependency groupId="dependentGroupId" />  
-> . . .  
->       </dependencies>  
->       <taskList filename="RelativePathAndFileName" />  
->       </group>  
-> . . .  
-> </groups>  
+>          <dependency groupId="dependentGroupId" />
+> . . .
+>       </dependencies>
+>       <taskList filename="RelativePathAndFileName" />
+>       </group>
+> . . .
+> </groups>
 > ```
 
 | Element          | Description and syntax                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
@@ -97,8 +97,8 @@ The following syntax shows the structure of the **groups** element and its child
 
 ## Related articles
 
-* [Overview of process template files](overview-process-template-files.md)
-* [Define the tasks to process a plug-in](define-tasks-to-process-a-plug-in.md)
-* [Define dependencies for task groups and tasks](define-dependencies-plug-ins-groups-tasks.md)
-* [Customize a process](customize-process.md)
-* [Define the root tasks](define-root-tasks-process-template-plug-in.md)
+- [Overview of process template files](overview-process-template-files.md)
+- [Define the tasks to process a plug-in](define-tasks-to-process-a-plug-in.md)
+- [Define dependencies for task groups and tasks](define-dependencies-plug-ins-groups-tasks.md)
+- [Customize a process](customize-process.md)
+- [Define the root tasks](define-root-tasks-process-template-plug-in.md)

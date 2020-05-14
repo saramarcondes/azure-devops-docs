@@ -22,8 +22,8 @@ Use this article to learn:
 
 > [!div class="checklist"]
 >
-> * How to forecast upcoming sprints
-> * Required and recommended team activities to support forecasting
+> - How to forecast upcoming sprints
+> - Required and recommended team activities to support forecasting
 
 [!INCLUDE [temp](../includes/setup-backlogs-boards.md)]
 
@@ -31,9 +31,9 @@ Use this article to learn:
 
 ::: moniker range="azure-devops"
 
-* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/boards/get-started/sign-up-invite-teammates).
-* You must be added to a project as a member of the **Contributors** security group. If you're not on a project or team, [get added now](/azure/devops/organizations/security/add-users-team-project).
-* You must be granted **Basic** access or higher to use the forecast feature. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+- You must connect to a project. If you don't have a project yet, [create one](/azure/devops/boards/get-started/sign-up-invite-teammates).
+- You must be added to a project as a member of the **Contributors** security group. If you're not on a project or team, [get added now](/azure/devops/organizations/security/add-users-team-project).
+- You must be granted **Basic** access or higher to use the forecast feature. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
 
 > [!NOTE]  
 > Users with **Stakeholder** access for a public project have full access to backlog and board features just like users with **Basic** access. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
@@ -42,9 +42,9 @@ Use this article to learn:
 
 ::: moniker range="<= azure-devops-2019"
 
-* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
-* You must be added to a project as a member of the **Contributors** security group. If you're not on a project or team, [get added now](/azure/devops/organizations/security/add-users-team-project).
-* You must be granted **Basic** access or higher to add or modify work items. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+- You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
+- You must be added to a project as a member of the **Contributors** security group. If you're not on a project or team, [get added now](/azure/devops/organizations/security/add-users-team-project).
+- You must be granted **Basic** access or higher to add or modify work items. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
 
 ::: moniker-end
 
@@ -54,19 +54,19 @@ Here's what you need to have in place before you attempt to forecast your team's
 
 **Required:**
 
-* [Define iteration paths (sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
-  * Sprints should be of the same duration.
-  * Select enough future sprints to forecast your entire product backlog.
-* [Define and estimate backlog items](../backlogs/create-your-backlog.md#estimates). If you work from your team's backlog, the items you create will automatically be assigned to the current sprint (Iteration) and to your team's default Area Path.
-* Update the status of backlog items once work starts and when completed. Only backlog items whose State maps to a state category of _Proposed_ or _In Progress_ show up on the velocity chart. (for details, see [Workflow states and state categories](../work-items/workflow-and-state-categories.md)).
+- [Define iteration paths (sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
+  - Sprints should be of the same duration.
+  - Select enough future sprints to forecast your entire product backlog.
+- [Define and estimate backlog items](../backlogs/create-your-backlog.md#estimates). If you work from your team's backlog, the items you create will automatically be assigned to the current sprint (Iteration) and to your team's default Area Path.
+- Update the status of backlog items once work starts and when completed. Only backlog items whose State maps to a state category of _Proposed_ or _In Progress_ show up on the velocity chart. (for details, see [Workflow states and state categories](../work-items/workflow-and-state-categories.md)).
 
 **Recommended:**
 
-* Define and size backlog items to [minimize variability](../../report/dashboards/velocity-guidance.md#minimize-variability).
-* Determine how your team wants to [treat bugs](../../organizations/settings/show-bugs-on-backlog.md). If your team chooses to treat bugs like requirements, bugs will show up on the backlog and be counted within the Velocity chart and forecasting.
-* [Set your team's area path](../../organizations/settings/set-area-paths.md). The forecast tool will forecast those items based on your team's default settings. These settings can specify to include items in area paths under the team's default or exclude them.
-* Don't create a hierarchy of backlog items and bugs. The display of the leaf node, the last node in a same-category hierarchy, may only appear on Kanban boards, sprint backlogs, and taskboards. To learn more, see [Fix re-ordering and nesting issues, How backlogs and boards display hierarchical (nested) items](/azure/devops/boards/backlogs/resolve-backlog-reorder-issues#leaf-nodes).<br/>Instead of nesting requirements, bugs, and tasks, maintain a flat list&mdash;only creating parent-child links one level deep between different-category items. Use [Features to group requirements or user stories](../backlogs/organize-backlog.md). You can quickly map stories to features, which creates parent-child links in the background.
-* At the end of the sprint, update the status of those backlog items that the team has fully completed. Incomplete items should be moved back to the product backlog and considered in a future sprint planning meeting.
+- Define and size backlog items to [minimize variability](../../report/dashboards/velocity-guidance.md#minimize-variability).
+- Determine how your team wants to [treat bugs](../../organizations/settings/show-bugs-on-backlog.md). If your team chooses to treat bugs like requirements, bugs will show up on the backlog and be counted within the Velocity chart and forecasting.
+- [Set your team's area path](../../organizations/settings/set-area-paths.md). The forecast tool will forecast those items based on your team's default settings. These settings can specify to include items in area paths under the team's default or exclude them.
+- Don't create a hierarchy of backlog items and bugs. The display of the leaf node, the last node in a same-category hierarchy, may only appear on Kanban boards, sprint backlogs, and taskboards. To learn more, see [Fix re-ordering and nesting issues, How backlogs and boards display hierarchical (nested) items](/azure/devops/boards/backlogs/resolve-backlog-reorder-issues#leaf-nodes).<br/>Instead of nesting requirements, bugs, and tasks, maintain a flat list&mdash;only creating parent-child links one level deep between different-category items. Use [Features to group requirements or user stories](../backlogs/organize-backlog.md). You can quickly map stories to features, which creates parent-child links in the background.
+- At the end of the sprint, update the status of those backlog items that the team has fully completed. Incomplete items should be moved back to the product backlog and considered in a future sprint planning meeting.
 
 > [!NOTE]
 > If you work with several teams, and each team wants to work with their own backlog, velocity chart, and forecast tool, you can [create additional teams](../../organizations/settings/add-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those whose assigned area paths and iteration paths meet those set for the team.
@@ -192,9 +192,9 @@ To forecast your product backlog, perform the following actions.
 
 ## Review the forecast results
 
-* Check the results manually to understand discrepancies in what you expect and what the forecast tool displays.
-* Check the amount of effort (Effort, Story Points, or Size) forecasted per sprint.
-* Question forecast results where the effort of an item is near to, or greater than, team velocity.
+- Check the results manually to understand discrepancies in what you expect and what the forecast tool displays.
+- Check the amount of effort (Effort, Story Points, or Size) forecasted per sprint.
+- Question forecast results where the effort of an item is near to, or greater than, team velocity.
 
 ::: moniker range=">= tfs-2018"
 
@@ -202,13 +202,13 @@ In this example, a Velocity of 20 is used. The forecast tool limits the number o
 
 The forecast tool shows between two and four items can be worked on during Iterations 2 through 6 based on the amount of Story Points assigned to each user story or bug. The forecast logic carries over velocity points from one sprint to the next.
 
-* **Iteration 2**: 13 Story Points, items 1 and 2 can be completed; 7 velocity points are carried over to the next sprint
-* **Iteration 3**: 24 Story Points, items 3 through 5 can be completed; 3 (=20+7-24) velocity points are carried over to the next sprint
-* **Iteration 4**: 21 Story points, items 6 through 8 can be completed; 2 (=20+3-21) velocity points are carried over to the next sprint
-* **Iteration 5**: 16 Story points, items 9 through 12 can be completed; 6 (=20+2-16) velocity points are carried over to the next sprint
-* **Iteration 6**: 23 Story points, items 13 through 16 can be completed; 3 (=20+6-23) velocity points are carried over to the next sprint
+- **Iteration 2**: 13 Story Points, items 1 and 2 can be completed; 7 velocity points are carried over to the next sprint
+- **Iteration 3**: 24 Story Points, items 3 through 5 can be completed; 3 (=20+7-24) velocity points are carried over to the next sprint
+- **Iteration 4**: 21 Story points, items 6 through 8 can be completed; 2 (=20+3-21) velocity points are carried over to the next sprint
+- **Iteration 5**: 16 Story points, items 9 through 12 can be completed; 6 (=20+2-16) velocity points are carried over to the next sprint
+- **Iteration 6**: 23 Story points, items 13 through 16 can be completed; 3 (=20+6-23) velocity points are carried over to the next sprint
 
-      	> [!div class="mx-imgBorder"]  
+      	> [!div class="mx-imgBorder"]
       	> ![Boards>Backlog, Forecast results for 6 sprints](media/forecast-s125.png)
 
 ::: moniker-end
@@ -224,11 +224,11 @@ The forecast tool shows between two and four items can be worked on during Itera
 
 In this example, a Velocity of 15 is used. The forecast tool shows between two and four items can be started or completed during the first six sprints based on the amount of Effort assigned to each work item. The forecast logic carries over effort points from one sprint to the next.
 
-* **Sprint 1**: 19 Effort points, items 1 and 2 can be completed and item 3 can be started; 4 Effort points are carried over into the next sprint.
-* **Sprint 2**: 13 Effort points, item 3 from the previous sprint can be completed, item 4 can be completed, and item 5 can be started; 2 Effort points are carried over into the next sprint.
-* **Sprint 3**: 15 Effort points, item 5 from the previous sprint and items 6 through 8 can be completed, and item 9 can be started; 2 Effort points are carried over into the next sprint.
-* **Sprint 4**: 13 Effort points, item 9 from the previous sprint and items 10 and 11 can be completed; no Effort points are carried over into the next sprint.
-* **Sprint 5**: 19 Effort points, items 12 and 13 can be completed and item 14 can be started; 4 Effort points are carried over into the next sprint.
+- **Sprint 1**: 19 Effort points, items 1 and 2 can be completed and item 3 can be started; 4 Effort points are carried over into the next sprint.
+- **Sprint 2**: 13 Effort points, item 3 from the previous sprint can be completed, item 4 can be completed, and item 5 can be started; 2 Effort points are carried over into the next sprint.
+- **Sprint 3**: 15 Effort points, item 5 from the previous sprint and items 6 through 8 can be completed, and item 9 can be started; 2 Effort points are carried over into the next sprint.
+- **Sprint 4**: 13 Effort points, item 9 from the previous sprint and items 10 and 11 can be completed; no Effort points are carried over into the next sprint.
+- **Sprint 5**: 19 Effort points, items 12 and 13 can be completed and item 14 can be started; 4 Effort points are carried over into the next sprint.
 
 ![Web portal, Backlog, Forecast On](media/vel-forecast-forecast-ts.png)
 
@@ -244,11 +244,11 @@ In this example, a velocity of 20 is used. The first two items with a total of 1
 
 In summary:
 
-* **Sprint 2**: 13 Effort points, items 1 and 2 can be completed; 7 velocity points are carried over to the next sprint
-* **Sprint 3**: 24 Effort points, items 3 through 5 can be completed; 3 (=20+7-24) velocity points are carried over to the next sprint
-* **Sprint 4**: 21 Effort points, items 6 through 8 can be completed; 2 (=20+3-21) velocity points are carried over to the next sprint
-* **Sprint 5**: 16 Effort points, items 9 through 12 can be completed; 6 (=20+2-16) velocity points are carried over to the next sprint
-* **Sprint 6**: 19 Effort points, items 13 through 15 can be completed; 3 (=20+6-23) velocity points are carried over to the next sprint
+- **Sprint 2**: 13 Effort points, items 1 and 2 can be completed; 7 velocity points are carried over to the next sprint
+- **Sprint 3**: 24 Effort points, items 3 through 5 can be completed; 3 (=20+7-24) velocity points are carried over to the next sprint
+- **Sprint 4**: 21 Effort points, items 6 through 8 can be completed; 2 (=20+3-21) velocity points are carried over to the next sprint
+- **Sprint 5**: 16 Effort points, items 9 through 12 can be completed; 6 (=20+2-16) velocity points are carried over to the next sprint
+- **Sprint 6**: 19 Effort points, items 13 through 15 can be completed; 3 (=20+6-23) velocity points are carried over to the next sprint
 
 ![Web portal, Enter a velocity to show forecast lines](media/ALM_VF_Forecast_1.png)
 
@@ -266,7 +266,7 @@ Now that you understand how to work with forecasting, you can use this tool to s
 
 ## Related articles
 
-* [Team velocity](../../report/dashboards/team-velocity.md)
-* [Define iteration paths (sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
-* Use the [taskboard](task-board.md) to track work during your sprint
-* Monitor the [sprint burndown chart](task-board.md) to determine if your team is on track to complete the sprint plan
+- [Team velocity](../../report/dashboards/team-velocity.md)
+- [Define iteration paths (sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
+- Use the [taskboard](task-board.md) to track work during your sprint
+- Monitor the [sprint burndown chart](task-board.md) to determine if your team is on track to complete the sprint plan

@@ -95,9 +95,9 @@ The **Manual Intervention** task can now be automatically rejected or resumed af
 
 In this deployment, we have improved the release logs page experience:
 
-* You can directly click the URLs in the log viewer.
-* You can search for keywords in the logs.
-* You can view large log files without downloading them.
+- You can directly click the URLs in the log viewer.
+- You can search for keywords in the logs.
+- You can view large log files without downloading them.
 
 ## Azure App Service task enhancements and templates for Python and PHP applications
 

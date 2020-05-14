@@ -49,7 +49,7 @@ in the firewall, and install the test certificate.
 
 > [!NOTE]
 > If you are deploying to Azure Static Websites as a container in blob storage,
-> you must use **Version 2** or higher of the task in order to preserve the **$web**
+> you must use **Version 2** or higher of the task in order to preserve the **\$web**
 > container name.
 
 The task supports authentication based on Azure Active Directory. Authentication using a service principal and managed identity are available. For managed identities, only system-wide managed identity is supported.
@@ -81,8 +81,8 @@ The task supports authentication based on Azure Active Directory. Authentication
 | **Admin Login**                            | Required if you select **Azure VMs** for the **Destination Type** parameter. The user name of an account that has administrative permissions for all the target VMs.<br />- Formats such as **username**, **domain\username**, **machine-name\username**, and **.\username** are supported.<br />- UPN formats such as <strong>username@domain.com</strong> and built-in system accounts such as **NT Authority\System** are not supported.                                                                                                                                                                                                                                                                     |
 | **Password**                               | Required if you select **Azure VMs** for the **Destination Type** parameter. The password for the account specified as the **Admin Login** parameter. Use the padlock icon for a variable defined in the **Variables** tab to protect the value, and insert the variable name here.                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | **Destination Folder**                     | Required if you select **Azure VMs** for the **Destination Type** parameter. The folder in the Azure VMs to which the files will be copied. Environment variables such as `$env:windir` and `$env:systemroot` are supported. Examples: `$env:windir\FabrikamFiber\Web` and `c:\FabrikamFiber`                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| **Additional Arguments**                   | Optional. Any arguments you want to pass to the **AzCopy.exe** program for use when uploading to the blob and downloading to the VMs. See [Transfer data with the AzCopy Command-Line Utility](https://azure.microsoft.com/documentation/articles/storage-use-azcopy/) for more details. If you are using a Premium storage account, which supports only Azure page blobs, the pass '--blob-type=PageBlob' as an additional argument. The default arguments are --log-level=INFO (default) and --recursive (only if container name is not $root).                                                                                                                                                               |
-|  |
+| **Additional Arguments**                   | Optional. Any arguments you want to pass to the **AzCopy.exe** program for use when uploading to the blob and downloading to the VMs. See [Transfer data with the AzCopy Command-Line Utility](https://azure.microsoft.com/documentation/articles/storage-use-azcopy/) for more details. If you are using a Premium storage account, which supports only Azure page blobs, the pass '--blob-type=PageBlob' as an additional argument. The default arguments are --log-level=INFO (default) and --recursive (only if container name is not \$root).                                                                                                                                                              |
+|                                            |
 | **Enable Copy Prerequisites**              | Available if you select **Azure Resource Manager** for the **Azure Connection Type** parameter and **Azure VMs** for the **Destination Type** parameter. Setting this option configures the Windows Remote Management (WinRM) listener over HTTPS protocol on port 5986, using a self-signed certificate. This configuration is required for performing copy operation on Azure virtual machines.<br />- If the target virtual machines are accessed through a load balancer, ensure an inbound NAT rule is configured to allow access on port 5986.<br />- If the target virtual machines are associated with a Network Security Group (NSG), configure an inbound security rule to allow access on port 5986. |
 | **Copy in Parallel**                       | Available if you select **Azure VMs** for the **Destination Type** parameter. Setting this option causes the process to execute in parallel for the copied files. This can considerably reduce the overall time taken.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | **Clean Target**                           | Available if you select **Azure VMs** for the **Destination Type** parameter. Setting this option causes all of the files in the destination folder to be deleted before the copy process starts.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
@@ -92,9 +92,9 @@ The task supports authentication based on Azure Active Directory. Authentication
 
 ## Related tasks
 
-* [Azure Resource Group Deployment](azure-resource-group-deployment.md)
-* [Azure Cloud Service Deployment](azure-cloud-powershell-deployment.md)
-* [Azure Web App Deployment](azure-rm-web-app-deployment.md)
+- [Azure Resource Group Deployment](azure-resource-group-deployment.md)
+- [Azure Cloud Service Deployment](azure-cloud-powershell-deployment.md)
+- [Azure Web App Deployment](azure-rm-web-app-deployment.md)
 
 ## Q & A
 
@@ -127,9 +127,9 @@ WinRM HTTPS ports, follow these steps:
 
 #### What type of service connection should I choose?
 
-* For Azure Resource Manager storage accounts and Azure Resource Manager VMs, use an **Azure Resource Manager** service connection type. See more details at [Automating Azure Resource Group deployment using a Service Principal](https://devblogs.microsoft.com/devops/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-buildrelease-management/).
+- For Azure Resource Manager storage accounts and Azure Resource Manager VMs, use an **Azure Resource Manager** service connection type. See more details at [Automating Azure Resource Group deployment using a Service Principal](https://devblogs.microsoft.com/devops/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-buildrelease-management/).
 
-* While using an **Azure Resource Manager**
+- While using an **Azure Resource Manager**
   service connection type, the task
   automatically filters appropriate newer Azure Resource Manager storage
   accounts, and other fields. For example, the Resource

@@ -22,10 +22,10 @@ You can run a load test on your web app or site directly using Azure DevOps.
 
 ## Prepare your environment
 
-* You will need a [Visual Studio Enterprise subscription](https://visualstudio.microsoft.com/products/visual-studio-enterprise-vs)
+- You will need a [Visual Studio Enterprise subscription](https://visualstudio.microsoft.com/products/visual-studio-enterprise-vs)
   (monthly, annual, or MSDN) to run URL-based load tests.
 
-* Create your Azure DevOps subscription if you don't have one already.
+- Create your Azure DevOps subscription if you don't have one already.
 
 <a name="runtests"></a>
 
@@ -117,16 +117,16 @@ You can run a load test on your web app or site directly using Azure DevOps.
 
 ### Key metrics
 
-* **Response Time**. The time it takes for your app to respond to requests
+- **Response Time**. The time it takes for your app to respond to requests
   is one of the key metrics for measuring app performance.
   Most apps perform well when a single user is accessing them, but the response
   time can increase dramatically when the app is under load. This can happen
   if resources such as CPU, database or other services are at peak capacity,
   resulting in longer response times.
 
-* **User Load**. The peak user load encountered during the load test run.
+- **User Load**. The peak user load encountered during the load test run.
 
-* **Failed Requests**. The number of requests that failed, either because
+- **Failed Requests**. The number of requests that failed, either because
   the app did not respond or due to other issues such as connectivity errors.
   Your app might start throttling requests when under load by discarding new
   requests in order to allow existing requests to be processed.

@@ -19,9 +19,9 @@ To set up Team Foundation Version Control (TFVC) on your dev machine, you just n
 
 **Before you start**
 
-* If you don't have Visual Studio, [get it here](https://visualstudio.microsoft.com/).
+- If you don't have Visual Studio, [get it here](https://visualstudio.microsoft.com/).
 
-* If you don't have a project, [create](../../organizations/projects/create-project.md) or [get access](../../organizations/public/invite-users-public.md) to one.
+- If you don't have a project, [create](../../organizations/projects/create-project.md) or [get access](../../organizations/public/invite-users-public.md) to one.
 
 ## Create a workspace and get the code
 
@@ -99,11 +99,11 @@ You've already got an app in progress and you want to begin working on it under 
 
 ## Q & A
 
-* **Q: I'm really new to all this; can I get more help?**
+- **Q: I'm really new to all this; can I get more help?**
 
   **A:** Yes, [let us walk you step by step to get started](share-your-code-in-tfvc-vs.md).
 
-* **Q: Is your folder structure complex or do you use branches?**
+- **Q: Is your folder structure complex or do you use branches?**
 
   **A:** If so, you can [create one or more workspaces](create-work-workspaces.md) and then [optimize them to meet your needs](optimize-your-workspace.md).
 

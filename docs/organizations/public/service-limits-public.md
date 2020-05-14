@@ -27,11 +27,11 @@ TBD
 
 ## Work items
 
-* A long text field can contain 1M characters.
-* You can't assign more than 100 tags to a work item.
-* You can't add more than 1,000 links to a work item.
-* You can't add more than 100 attachments to a work item.
-* You can't add an attachment size larger than 60 MB to a work item.
+- A long text field can contain 1M characters.
+- You can't assign more than 100 tags to a work item.
+- You can't add more than 1,000 links to a work item.
+- You can't add more than 100 attachments to a work item.
+- You can't add an attachment size larger than 60 MB to a work item.
 
 ## Custom work tracking
 
@@ -62,4 +62,4 @@ Wikis defined for a project are limited to 1 GB per git repository.
 
 > [!div class="nextstepaction"]
 >
-> * [Review work tracking object limits](../settings/work/object-limits.md)
+> - [Review work tracking object limits](../settings/work/object-limits.md)

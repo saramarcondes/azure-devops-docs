@@ -26,10 +26,10 @@ Azure DevOps Server is the **on-premises offering** that's built on a SQL Server
 
 Although both offerings provide the same [essential services](services.md), compared with Azure DevOps Server, Azure DevOps Services offers the following added benefits:
 
-* Simplified server management.
-* Immediate access to the latest and greatest features
-* Improved connectivity with remote sites.
-* A transition from capital expenditures (servers and the like) to operational expenditures (subscriptions).
+- Simplified server management.
+- Immediate access to the latest and greatest features
+- Improved connectivity with remote sites.
+- A transition from capital expenditures (servers and the like) to operational expenditures (subscriptions).
 
 To determine which offering&mdash;cloud or on-premises&mdash;meets your needs, consider the following key differences.
 
@@ -37,19 +37,19 @@ To determine which offering&mdash;cloud or on-premises&mdash;meets your needs, c
 
 When you're choosing which platform you want, or if you're considering a move from on-premises to the cloud, consider the following areas:
 
-* [Scope and scale data](#scope-scale-data)
-* [Authentication](#authentication)
-* [Users and groups](#users-groups)
-* [Manage user access](#manage-user-access)
-* [Security and data protection](#security-data)
+- [Scope and scale data](#scope-scale-data)
+- [Authentication](#authentication)
+- [Users and groups](#users-groups)
+- [Manage user access](#manage-user-access)
+- [Security and data protection](#security-data)
 
 **Differences in specific feature areas**  
 Although Azure DevOps Services is a hosted version of Azure DevOps Server, there are some differences between features. Some Azure DevOps Server features aren't supported in Azure DevOps Services. For example, Azure DevOps Services doesn't support integration with SQL Server Analysis Services to support reporting.
 
 Two of the following additional areas differ in their support:
 
-* [Process customization](#process-customization)
-* [Reporting](#reporting)
+- [Process customization](#process-customization)
+- [Reporting](#reporting)
 
 <!--- For each area, we discuss both the current state of the world and the expected impacts from short- and medium-term plans. Check back here for updates, because this information can change frequently.  -->
 
@@ -82,8 +82,8 @@ See also https://github.com/MicrosoftDocs/vsts-docs/issues/1611
 
 We recommend that you create organizations in Azure DevOps Services wherever you would create collections in Azure DevOps Server. The following scenarios apply:
 
-* You can purchase Azure DevOps Services users per organization - Paid users can access only the organization in which the payment is made. If you have users who need access to many organizations, Visual Studio subscriptions can be an attractive option. Visual Studio subscribers can be added to any number of organizations at no charge. We're also considering other ways to make access available to many organizations that are grouped into a single organization.
-* You currently have to administer organizations one at a time. This process can be cumbersome when you have many organizations.
+- You can purchase Azure DevOps Services users per organization - Paid users can access only the organization in which the payment is made. If you have users who need access to many organizations, Visual Studio subscriptions can be an attractive option. Visual Studio subscribers can be added to any number of organizations at no charge. We're also considering other ways to make access available to many organizations that are grouped into a single organization.
+- You currently have to administer organizations one at a time. This process can be cumbersome when you have many organizations.
 
 <!---We're working to support enterprise-wide policies.-->
 
@@ -96,8 +96,8 @@ project collections, and projects. In the simplest case, deployments are just se
 
 Deployments can be more complicated, however, which could include:
 
-* Two-server deployment where SQL is split out on a separate machine
-* High-availability farms with lots of servers
+- Two-server deployment where SQL is split out on a separate machine
+- High-availability farms with lots of servers
 
 Project collections serve as containers for security and administration, and physical database boundaries. They're also used to group related projects.
 
@@ -163,9 +163,9 @@ Many entities want to know more about data protection when they consider moving 
 
 You customize the work-tracking experience in two different ways, depending on the supported process model:
 
-* For Azure DevOps Services, you use the **Inheritance** process model, which supports WYSIWYG customization.
-* For Azure DevOps Server, you can choose the **Inheritance** process model or the **On-premises XML** process model, which supports customization through import or export of XML definition files for work-tracking objects.
-* For Azure DevOps Server 2018 and earlier versions, you only have access to the **On-premises XML** process model.
+- For Azure DevOps Services, you use the **Inheritance** process model, which supports WYSIWYG customization.
+- For Azure DevOps Server, you can choose the **Inheritance** process model or the **On-premises XML** process model, which supports customization through import or export of XML definition files for work-tracking objects.
+- For Azure DevOps Server 2018 and earlier versions, you only have access to the **On-premises XML** process model.
 
 Although the **On-premises XML** process model option is powerful, it can cause various issues. The main issue is that processes for existing projects aren't automatically updated.
 
@@ -204,13 +204,13 @@ Projects in organizations that participate in this process-customization private
 
 Azure DevOps Services and Azure DevOps Server offer a many tools that give you insight into the progress and quality of your software projects. Included are the following tools:
 
-* [Dashboards](../report/dashboards/dashboards.md) and lightweight [charts](../report/dashboards/charts.md) that are available in both the cloud and on-premises platforms. These tools are easy to set up and use.
+- [Dashboards](../report/dashboards/dashboards.md) and lightweight [charts](../report/dashboards/charts.md) that are available in both the cloud and on-premises platforms. These tools are easy to set up and use.
 
 Azure DevOps Services and Azure DevOps Server 2019 also provide access to the following services:
 
-* [The Analytics service](../report/powerbi/what-is-analytics.md) and [Analytics widgets](../report/dashboards/analytics-widgets.md). The Analytics service is optimized for fast read-access and server-based aggregations.
-* [Microsoft Power BI integration](../report/powerbi/overview.md), which supports getting Analytics data into Power BI reports and provides a combination of simplicity and power.
-* [OData support](../report/extend-analytics/index.md), which allows you to directly query the Analytics service from a supported browser, and then use the returned JSON data as you want. You can generate queries that span many projects or your entire organization.
+- [The Analytics service](../report/powerbi/what-is-analytics.md) and [Analytics widgets](../report/dashboards/analytics-widgets.md). The Analytics service is optimized for fast read-access and server-based aggregations.
+- [Microsoft Power BI integration](../report/powerbi/overview.md), which supports getting Analytics data into Power BI reports and provides a combination of simplicity and power.
+- [OData support](../report/extend-analytics/index.md), which allows you to directly query the Analytics service from a supported browser, and then use the returned JSON data as you want. You can generate queries that span many projects or your entire organization.
 
 To learn more about the Analytics service and future releases, see our [Reporting roadmap](../report/powerbi/reporting-roadmap.md).
 
@@ -218,11 +218,11 @@ To learn more about the Analytics service and future releases, see our [Reportin
 
 ## Related articles
 
-* [Essential services](services.md)
-* [Client-server tools](tools.md)
-* [Software development roles](roles.md)
-* [Azure DevOps Services - pricing](https://visualstudio.microsoft.com/team-services/pricing/)
-* [Azure DevOps Server - pricing](https://visualstudio.microsoft.com/team-services/tfs-pricing/)
+- [Essential services](services.md)
+- [Client-server tools](tools.md)
+- [Software development roles](roles.md)
+- [Azure DevOps Services - pricing](https://visualstudio.microsoft.com/team-services/pricing/)
+- [Azure DevOps Server - pricing](https://visualstudio.microsoft.com/team-services/tfs-pricing/)
 
 <!---
 *(c) 2016 Microsoft Corporation. All rights reserved. This document is

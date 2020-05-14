@@ -16,8 +16,8 @@ Module path: `TFS/Build/Contracts`
 
 ### Members
 
-* `localPath`: string.
+- `localPath`: string.
 
-* `mappingType`: string.
+- `mappingType`: string.
 
-* `serverPath`: string.
+- `serverPath`: string.

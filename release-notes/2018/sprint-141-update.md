@@ -17,26 +17,26 @@ Check out the [Features](#features) list below for more.
 
 General:
 
-* [Navigation update](#navigation-update)
-* [Expanded search box](#expanded-search-box)
+- [Navigation update](#navigation-update)
+- [Expanded search box](#expanded-search-box)
 
 Azure Pipelines:
 
-* [Azure Policy compliance and security validations in Pipelines](#azure-policy-compliance-and-security-validations-in-pipelines)
-* [Simplified continuous delivery to Azure VMs](#simplified-continuous-delivery-to-azure-vms)
-* [The Xcode task supports newly released Xcode 10](#the-xcode-task-supports-newly-released-xcode-10)
-* [Performance improvements when queuing a build](#performance-improvements-when-queuing-a-build)
-* [Create Azure service connection with service principal that authenticates with a certificate](#create-azure-service-connection-with-service-principal-that-authenticates-with-a-certificate)
-* [View test analytics in Pipelines](#view-test-analytics-in-pipelines)
+- [Azure Policy compliance and security validations in Pipelines](#azure-policy-compliance-and-security-validations-in-pipelines)
+- [Simplified continuous delivery to Azure VMs](#simplified-continuous-delivery-to-azure-vms)
+- [The Xcode task supports newly released Xcode 10](#the-xcode-task-supports-newly-released-xcode-10)
+- [Performance improvements when queuing a build](#performance-improvements-when-queuing-a-build)
+- [Create Azure service connection with service principal that authenticates with a certificate](#create-azure-service-connection-with-service-principal-that-authenticates-with-a-certificate)
+- [View test analytics in Pipelines](#view-test-analytics-in-pipelines)
 
 Azure Repos:
 
-* [Change the target branch of a pull request](#change-the-target-branch-of-a-pull-request)- [Protect Git repos with cross platform compatibility settings](#protect-git-repos-with-cross-platform-compatibility-settings)
-* [Protect Git repos with cross platform compatibility settings](#protect-git-repos-with-cross-platform-compatibility-settings)
+- [Change the target branch of a pull request](#change-the-target-branch-of-a-pull-request)- [Protect Git repos with cross platform compatibility settings](#protect-git-repos-with-cross-platform-compatibility-settings)
+- [Protect Git repos with cross platform compatibility settings](#protect-git-repos-with-cross-platform-compatibility-settings)
 
 Administration:
 
-* [Support AAD users in MSA accounts](#support-aad-users-in-msa-accounts)
+- [Support AAD users in MSA accounts](#support-aad-users-in-msa-accounts)
 
 ## Next steps
 

@@ -24,9 +24,9 @@ These are the software requirements for the Release Management server.
 
 **Operating systems:**
 
-* Windows Server 2012 R2
-* Windows Server 2012
-* Windows Server 2008 R2, Service Pack 1
+- Windows Server 2012 R2
+- Windows Server 2012
+- Windows Server 2008 R2, Service Pack 1
 
 > [!TIP] > _You must install Release Management server on server-class
 > operating system._
@@ -37,11 +37,11 @@ Release Management is typically used with TFS to deploy builds produced by
 TFS and to synchronize users managed in TFS. Release Management can be used
 with the following versions of TFS:
 
-* Team Foundation Server 2017
-* Team Foundation Server 2015
-* Team Foundation Server 2013
-* Team Foundation Server 2012
-* Team Foundation Server 2010
+- Team Foundation Server 2017
+- Team Foundation Server 2015
+- Team Foundation Server 2013
+- Team Foundation Server 2012
+- Team Foundation Server 2010
 
 > [!NOTE] > _TFS is not a mandatory requirement. Release Management can be
 > used in a standalone mode to deploy applications._
@@ -52,11 +52,11 @@ You can use the same SQL Server instance you used for TFS,
 **[install a new instance](/azure/devops/server/install/sql-server/install-sql-server)**,
 or use an instance that matches the following requirements:
 
-* SQL Server 2016
-* SQL Server 2014
-* SQL Server 2012
-* SQL Server 2008 R2
-* SQL Server 2008
+- SQL Server 2016
+- SQL Server 2014
+- SQL Server 2012
+- SQL Server 2008 R2
+- SQL Server 2008
 
 These are the hardware requirements for the Release Management server.
 
@@ -73,23 +73,23 @@ These are the software requirements for the Release Management client.
 
 **Operating systems:**
 
-* Windows 10
-* Windows 8.1
-* Windows 8
-* Windows 7, Service Pack 1
-* Windows Server 2012 R2
-* Windows Server 2012
-* Windows Server 2008 R2, Service Pack 1
+- Windows 10
+- Windows 8.1
+- Windows 8
+- Windows 7, Service Pack 1
+- Windows Server 2012 R2
+- Windows Server 2012
+- Windows Server 2008 R2, Service Pack 1
 
 **Team Foundation Server (TFS)**
 
 Release Management client can connect to the following versions of TFS:
 
-* Team Foundation Server 2017
-* Team Foundation Server 2015
-* Team Foundation Server 2013
-* Team Foundation Server 2012
-* Team Foundation Server 2010
+- Team Foundation Server 2017
+- Team Foundation Server 2015
+- Team Foundation Server 2013
+- Team Foundation Server 2012
+- Team Foundation Server 2010
 
 > [!NOTE] > _TFS is not a mandatory requirement. Release Management Client
 > can connect to Azure Pipelines to deploy applications._
@@ -109,20 +109,20 @@ These are the software requirements for all the agents in your environment.
 
 **Operating systems:**
 
-* Windows 10
-* Windows 8.1
-* Windows 8
-* Windows 7, Service Pack 1
-* Vista, Service Pack 2 and [PowerShell 2.0](https://www.microsoft.com/download/details.aspx?id=9864)
-* Windows Server 2016
-* Windows Server 2012 R2
-* Windows Server 2012
-* Windows Server 2008 R2, Service Pack 1
-* Windows Server 2008, Service Pack 2 and [PowerShell 2.0](https://support.microsoft.com/kb/968930)
+- Windows 10
+- Windows 8.1
+- Windows 8
+- Windows 7, Service Pack 1
+- Vista, Service Pack 2 and [PowerShell 2.0](https://www.microsoft.com/download/details.aspx?id=9864)
+- Windows Server 2016
+- Windows Server 2012 R2
+- Windows Server 2012
+- Windows Server 2008 R2, Service Pack 1
+- Windows Server 2008, Service Pack 2 and [PowerShell 2.0](https://support.microsoft.com/kb/968930)
 
 **The .NET Framework:**
 
-* The .NET 3.5 Framework. If this is not present, we automatically install
+- The .NET 3.5 Framework. If this is not present, we automatically install
   the latest appropriate version such as 4.6 or higher.
 
 These are the hardware requirements for all the agents in your environment.
@@ -136,13 +136,13 @@ These are the hardware requirements for all the agents in your environment.
 
 ## Related topics
 
-* [Overview of Release Management](../release-management-overview.md)
-* [Install Release Management](../install-release-management.md)
-* [Install Release Management server and client](install-server-and-client.md)
-* [Install deployment agents](install-deployment-agent.md)
-* [Connect Release Management to TFS](connect-to-tfs.md)
-* [Manage users, groups, and permissions](../add-users-and-groups.md)
-* [Manage your release](../manage-your-release.md)
+- [Overview of Release Management](../release-management-overview.md)
+- [Install Release Management](../install-release-management.md)
+- [Install Release Management server and client](install-server-and-client.md)
+- [Install deployment agents](install-deployment-agent.md)
+- [Connect Release Management to TFS](connect-to-tfs.md)
+- [Manage users, groups, and permissions](../add-users-and-groups.md)
+- [Manage your release](../manage-your-release.md)
 
 [!INCLUDE [wpfver-back-to-index-shared](../../includes/wpfver-back-to-index-shared.md)]
 

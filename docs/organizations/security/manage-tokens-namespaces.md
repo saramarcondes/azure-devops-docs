@@ -23,19 +23,19 @@ Each family of resources (such as work items or Git repositories) is secured thr
 
 You can manage tokens and namespaces for your organization with the [az devops security permission](/cli/azure/ext/azure-devops/devops/security/permission) commands. Use this command to:
 
-* View the permissions associated with tokens and namespaces
-* View details about those permissions
-* Update or reset permissions
+- View the permissions associated with tokens and namespaces
+- View details about those permissions
+- Update or reset permissions
 
 > [!NOTE]
 > For Azure DevOps Services, you can manage tokens and namespaces using the az devops security permission documented in this article, or using the TFSSecurity command. To use the TFSSecurity command, you must install Azure DevOps Server 2019 to get access to the command line tool. To learn more, see [TFSSecurity command](/azure/devops/server/command-line/tfssecurity-cmd).
 
 ## Prerequisites
 
-* To manage tokens and namespaces, you must be a member of the Project Collection Administrators security group.
-* You must have installed the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](../../cli/index.md).
-* Sign into Azure DevOps using `az login`.
-* For the examples in this article, set the default organization using `az devops configure --defaults organization=YourOrganizationURL`.
+- To manage tokens and namespaces, you must be a member of the Project Collection Administrators security group.
+- You must have installed the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](../../cli/index.md).
+- Sign into Azure DevOps using `az login`.
+- For the examples in this article, set the default organization using `az devops configure --defaults organization=YourOrganizationURL`.
 
 ## Security permission commands
 
@@ -52,8 +52,8 @@ You can manage tokens and namespaces for your organization with the [az devops s
 
 The following parameters are optional for all commands, and not listed in the examples provided in this article.
 
-* **detect**: Automatically detect organization. Accepted values: false, true. Default is true.
-* **org**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **detect**: Automatically detect organization. Accepted values: false, true. Default is true.
+- **org**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 
 ## List tokens
 
@@ -70,10 +70,10 @@ az devops security permission list --id
 
 ### Parameters
 
-* **id**: Required. ID of security namespace. To obtain the ID, use the [az devops security permission namespace list](#list-namespaces) command.
-* **subject**: Required. The email address or group descriptor of the user.
-* **recurse**: Optional. If true, and the namespace is hierarchical, this parameter returns the child ACLs of the tokens.
-* **token**: Optional. Specify an individual security token.
+- **id**: Required. ID of security namespace. To obtain the ID, use the [az devops security permission namespace list](#list-namespaces) command.
+- **subject**: Required. The email address or group descriptor of the user.
+- **recurse**: Optional. If true, and the namespace is hierarchical, this parameter returns the child ACLs of the tokens.
+- **token**: Optional. Specify an individual security token.
 
 ### Example
 
@@ -110,7 +110,7 @@ az devops security permission namespace list [--local-only]
 
 ### Parameters
 
-* **local-only**: Optional. If true, retrieve only local security namespaces.
+- **local-only**: Optional. If true, retrieve only local security namespaces.
 
   Security namespaces may have their data mastered in one microservice, but still be visible in other microservices. If a security namespace's data is mastered in microservice X, it is said to be local to that microservice. Otherwise, it is said to be remote.
 
@@ -151,7 +151,7 @@ az devops security permission namespace show --id
 
 ### Parameters
 
-* **id**: Required. ID of security namespace.
+- **id**: Required. ID of security namespace.
 
 ### Example
 
@@ -186,10 +186,10 @@ az devops security permission reset --id
 
 ### Parameters
 
-* **id**: Required. ID of security namespace.
-* **permission-bit**: Required. Permission bit or addition of permission bits which needs to be reset for given user or group and token.
-* **subject**: Required. The email address or group descriptor of the user.
-* **token**: Required. Individual security token.
+- **id**: Required. ID of security namespace.
+- **permission-bit**: Required. Permission bit or addition of permission bits which needs to be reset for given user or group and token.
+- **subject**: Required. The email address or group descriptor of the user.
+- **token**: Required. Individual security token.
 
 ### Example
 
@@ -220,10 +220,10 @@ az devops security permission reset-all --id
 
 ### Parameters
 
-* **id**: Required. ID of security namespace.
-* **subject**: Required. The email address or group descriptor of the user.
-* **token**: Required. Individual security token.
-* **yes**: Optional. Don't prompt for confirmation.
+- **id**: Required. ID of security namespace.
+- **subject**: Required. The email address or group descriptor of the user.
+- **token**: Required. Individual security token.
+- **yes**: Optional. Don't prompt for confirmation.
 
 ### Example
 
@@ -253,9 +253,9 @@ az devops security permission show --id
 
 ### Parameters
 
-* **id**: Required. ID of security namespace.
-* **subject**: Required. The email address or group descriptor of the user.
-* **token**: Required. Individual security token.
+- **id**: Required. ID of security namespace.
+- **subject**: Required. The email address or group descriptor of the user.
+- **token**: Required. Individual security token.
 
 ### Example
 
@@ -292,12 +292,12 @@ az devops security permission update --id
 
 ### Parameters
 
-* **id**: Required. ID of security namespace.
-* **subject**: Required. The email address or group descriptor of the user.
-* **token**: Required. Individual security token.
-* **allow-bit**: Optional. Allow bit or addition of bits. Required if --deny-bit is missing.
-* **deny-bit**: Optional. Deny bit or addition of bits. Required if --allow-bit is missing.
-* **merge**: Optional. If set, the existing access control entry (ACE) has its allow and deny merged with the incoming ACE's allow and deny. If unset, the existing ACE is displaced. The accepted values are _false_ or _true_.
+- **id**: Required. ID of security namespace.
+- **subject**: Required. The email address or group descriptor of the user.
+- **token**: Required. Individual security token.
+- **allow-bit**: Optional. Allow bit or addition of bits. Required if --deny-bit is missing.
+- **deny-bit**: Optional. Deny bit or addition of bits. Required if --allow-bit is missing.
+- **merge**: Optional. If set, the existing access control entry (ACE) has its allow and deny merged with the incoming ACE's allow and deny. If unset, the existing ACE is displaced. The accepted values are _false_ or _true_.
 
 ### Example
 
@@ -382,6 +382,6 @@ The following table lists the IDs for the security namespaces.
 
 ## Related articles
 
-* [Security REST API](/rest/api/azure/devops/security/)
-* [TFSSecurity command](/azure/devops/server/command-line/tfssecurity-cmd)
-* [Security glossary](security-glossary.md)
+- [Security REST API](/rest/api/azure/devops/security/)
+- [TFSSecurity command](/azure/devops/server/command-line/tfssecurity-cmd)
+- [Security glossary](security-glossary.md)

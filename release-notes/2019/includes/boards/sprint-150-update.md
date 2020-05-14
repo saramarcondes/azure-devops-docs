@@ -24,10 +24,10 @@ If your README is based on Markdown you can simply copy the sample Markdown from
 
 While teams often focus on work within the context of what’s coming up next or based on sprint iterations, it’s often interesting to look back at work through the lens of the calendar to report on all the work that happened last month or in the first quarter of the year. Now you can use the following new set of <strong>@StartOf</strong> macros along with any date-based field to query based on the start of the day, week, month or year:
 
-* @StartOfYear
-* @StartOfMonth
-* @StartOfWeek
-* @StartOfDay
+- @StartOfYear
+- @StartOfMonth
+- @StartOfWeek
+- @StartOfDay
 
 Each of these macros also accepts a new modifier string that lets you shift the data by different date units. For example, you can write a query to find all work items completed in the first quarter of this year by querying on State Change Date >= @StartOfYear and State Change Date <= @StartOfYear(“+3M”). See the [query macros](https://docs.microsoft.com/azure/devops/boards/queries/query-operators-variables?view=azure-devops#query-macros-or-variables) documentation for more information.
 

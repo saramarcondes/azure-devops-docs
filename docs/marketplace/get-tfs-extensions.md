@@ -25,7 +25,7 @@ install extensions from the
 
 ## Prerequisites
 
-* You must be a [Project Collection Administrator](../organizations/security/set-project-collection-level-permissions.md)
+- You must be a [Project Collection Administrator](../organizations/security/set-project-collection-level-permissions.md)
   and have [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection).
   If you don't have permissions, you can [request extensions](request-extensions.md) instead.
 
@@ -52,13 +52,13 @@ for future Marketplace purchases.
 
 ::: moniker range="tfs-2017"
 
-* [Connect to TFS](#connected-tfs), so you can install extensions.
+- [Connect to TFS](#connected-tfs), so you can install extensions.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
 
-* Working with TFS 2015 Update 3, or disconnected from TFS 2017?
+- Working with TFS 2015 Update 3, or disconnected from TFS 2017?
   [Download extensions, then upload them to TFS](#disconnected-tfs) to
   [install free and preview extensions](faq-extensions.md#difference).
 

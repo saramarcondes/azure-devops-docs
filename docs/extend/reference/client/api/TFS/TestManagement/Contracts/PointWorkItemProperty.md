@@ -16,4 +16,4 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Members
 
-* `workItem`: string:any.
+- `workItem`: string:any.

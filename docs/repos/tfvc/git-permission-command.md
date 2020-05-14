@@ -19,8 +19,8 @@ Modifies the user access control list (ACL) and displays authorization settings 
 
 **Requirements:**
 
-* To view permissions, you must be able to view the artifact for the type of information you are requesting: **View collection-level information** for project collections, **View project-level information** for projects, and **Read** for repository (and branch if you are viewing branch permissions).
-* To manage permissions, you must have **Manage permissions** for the desired artifact.
+- To view permissions, you must be able to view the artifact for the type of information you are requesting: **View collection-level information** for project collections, **View project-level information** for projects, and **Read** for repository (and branch if you are viewing branch permissions).
+- To manage permissions, you must have **Manage permissions** for the desired artifact.
 
   For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
@@ -93,15 +93,15 @@ tf git permission /collection:https://dev.azure.com/fabrikam-fiber
 
 The following examples show how to create a branch policy that enforces the following constraints:
 
-* Only `master` can exist at the repository root.
-* All users will be allowed to create branches under the `features/` and `users/` folders.
-* Administrators will be able to create branches under the `releases/` folder.
+- Only `master` can exist at the repository root.
+- All users will be allowed to create branches under the `features/` and `users/` folders.
+- Administrators will be able to create branches under the `releases/` folder.
 
 In this example we'll use the following collection, project, and repository:
 
-* **/collection:\***<https://fabrikam-fiber.visualstudio.com>\*
-* **/teamproject:**<em>FabrikamProject</em>
-* **/repository:**<em>FabrikamRepo</em>
+- **/collection:\***<https://fabrikam-fiber.visualstudio.com>\*
+- **/teamproject:**<em>FabrikamProject</em>
+- **/repository:**<em>FabrikamRepo</em>
 
 First, block the Create Branch permission at the repository root for the project's contributors.
 

@@ -15,6 +15,6 @@ Module path: `TFS/Work/Contracts`
 
 ### Members
 
-* `finishDate`: Date.
+- `finishDate`: Date.
 
-* `startDate`: Date.
+- `startDate`: Date.

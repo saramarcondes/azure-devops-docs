@@ -77,20 +77,20 @@ You can configure the **Submodules** setting from the properties of the **Get so
 
 The build pipeline will check out your Git submodules as long as they are:
 
-* **Unauthenticated:** A public, unauthenticated repo with no credentials required to clone or fetch.
+- **Unauthenticated:** A public, unauthenticated repo with no credentials required to clone or fetch.
 
-* **Authenticated:**
+- **Authenticated:**
 
-  * Contained in the same project as the Azure Repos Git repo specified above. The same credentials that are used by the agent to get the sources from the main repository are also used to get the sources for submodules.
+  - Contained in the same project as the Azure Repos Git repo specified above. The same credentials that are used by the agent to get the sources from the main repository are also used to get the sources for submodules.
 
-  * Added by using a URL relative to the main repository. For example
+  - Added by using a URL relative to the main repository. For example
 
-    * This one would be checked out:
+    - This one would be checked out:
       `git submodule add ../../../FabrikamFiberProject/_git/FabrikamFiber FabrikamFiber`
 
       In this example the submodule refers to a repo (FabrikamFiber) in the same Azure DevOps organization, but in a different project (FabrikamFiberProject). The same credentials that are used by the agent to get the sources from the main repository are also used to get the sources for submodules. This requires that the job access token has access to the repository in the second project. If you restricted the job access token as explained in the section above, then you won't be able to do this.
 
-    * This one would not be checked out:
+    - This one would not be checked out:
       `git submodule add https://fabrikam-fiber@dev.azure.com/fabrikam-fiber/FabrikamFiberProject/_git/FabrikamFiber FabrikamFiber`
 
 #### Alternative to using the Checkout submodules option
@@ -155,9 +155,9 @@ In these cases this option can help you conserve network and storage resources. 
 
 You may want to skip fetching new commits. This option can be useful in cases when you want to:
 
-* Git init, config, and fetch using your own custom options.
+- Git init, config, and fetch using your own custom options.
 
-* Use a build pipeline to just run automation (for example some scripts) that do not depend on code in version control.
+- Use a build pipeline to just run automation (for example some scripts) that do not depend on code in version control.
 
 # [YAML](#tab/yaml/)
 
@@ -220,11 +220,11 @@ jobs:
 
 This gives the following clean options.
 
-* **outputs**: Same operation as the clean setting described in the previous the checkout task, plus: Deletes and recreates `$(Build.BinariesDirectory)`. Note that the `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
+- **outputs**: Same operation as the clean setting described in the previous the checkout task, plus: Deletes and recreates `$(Build.BinariesDirectory)`. Note that the `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
 
-* **resources**: Deletes and recreates `$(Build.SourcesDirectory)`. This results in initializing a new, local Git repository for every build.
+- **resources**: Deletes and recreates `$(Build.SourcesDirectory)`. This results in initializing a new, local Git repository for every build.
 
-* **all**: Deletes and recreates `$(Agent.BuildDirectory)`. This results in initializing a new, local Git repository for every build.
+- **all**: Deletes and recreates `$(Agent.BuildDirectory)`. This results in initializing a new, local Git repository for every build.
 
 # [Classic](#tab/classic/)
 
@@ -232,18 +232,18 @@ Select the **Clean** setting from the properties of the **Get sources** task in 
 
 ![GitHub options](../media/github/github-clean-sources.png)
 
-* **Sources**: The build pipeline performs an undo of any changes in `$(Build.SourcesDirectory)`. More specifically, the following Git commands are executed prior to fetching the source.
+- **Sources**: The build pipeline performs an undo of any changes in `$(Build.SourcesDirectory)`. More specifically, the following Git commands are executed prior to fetching the source.
 
   ```
   git clean -ffdx
   git reset --hard HEAD
   ```
 
-* **Sources and output directory**: Same operation as **Sources** option above, plus: Deletes and recreates `$(Build.BinariesDirectory)`. Note that the `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
+- **Sources and output directory**: Same operation as **Sources** option above, plus: Deletes and recreates `$(Build.BinariesDirectory)`. Note that the `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
 
-* **Sources directory**: Deletes and recreates `$(Build.SourcesDirectory)`. This results in initializing a new, local Git repository for every build.
+- **Sources directory**: Deletes and recreates `$(Build.SourcesDirectory)`. This results in initializing a new, local Git repository for every build.
 
-* **All build directories**: Deletes and recreates `$(Agent.BuildDirectory)`. This results in initializing a new, local Git repository for every build.
+- **All build directories**: Deletes and recreates `$(Agent.BuildDirectory)`. This results in initializing a new, local Git repository for every build.
 
 ---
 

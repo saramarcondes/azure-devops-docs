@@ -24,15 +24,15 @@ this article provides a summary of the OData features and functions supported or
 
 ## Supported clauses
 
-* `$apply`
-* `$compute`
-* `$count`
-* `$expand`
-* `$filter`
-* `$orderby`
-* `$select`
-* `$skip`
-* `$top`
+- `$apply`
+- `$compute`
+- `$count`
+- `$expand`
+- `$filter`
+- `$orderby`
+- `$select`
+- `$skip`
+- `$top`
 
 When multiple clauses are used in query they will be applied in the order specified above. Order of clauses in query string ignored. For example, in the following query, first work items are grouped and aggregated. Next, the groups are filtered. After that, the filtered groups are sorted. Finally, the first 5 records are returned. This means the query returns the top 5 work item types used at least 100 times.
 
@@ -44,13 +44,13 @@ WorkItems?$filter=Count ge 100$apply=groupby((WorkItemType), aggregate($count as
 
 ### Aggregation extensions support
 
-$apply triggers aggregation behavior. It takes a sequence of set transformations, separated by forward slashes to express that they are consecutively applied, i.e. the result of each transformation is the input to the next transformation. For example in the following query, first work item are filtered. Next, grouped by work item type and state. Then groups are filtered and grouped again.
+\$apply triggers aggregation behavior. It takes a sequence of set transformations, separated by forward slashes to express that they are consecutively applied, i.e. the result of each transformation is the input to the next transformation. For example in the following query, first work item are filtered. Next, grouped by work item type and state. Then groups are filtered and grouped again.
 
 > [!NOTE]  
 > OData aggregation extensions are relatively new and not yet fully supported by some client tools.
 
 ```
-Workitems?$apply=filter(State ne 'Closed')/groupby((WorkItemType, State), aggregate($count as Count))/filter(Count gt 100)/groupby((State),aggregate(Count with max as MaxCount))  
+Workitems?$apply=filter(State ne 'Closed')/groupby((WorkItemType, State), aggregate($count as Count))/filter(Count gt 100)/groupby((State),aggregate(Count with max as MaxCount))
 ```
 
 The following transformations are supported:
@@ -109,24 +109,24 @@ However, you can't enter the following:
 
 ## Not supported features
 
-* `bottomcount`
-* `bottomsum`
-* `bottompercent`
-* `$crossjoin`
-* `concat`
-* `countdistinct`
-* `from`
-* `isdefined`
-* `$rollup`
-* `$search`
-* `topcount`
-* `topsum`
-* `toppercent`
+- `bottomcount`
+- `bottomsum`
+- `bottompercent`
+- `$crossjoin`
+- `concat`
+- `countdistinct`
+- `from`
+- `isdefined`
+- `$rollup`
+- `$search`
+- `topcount`
+- `topsum`
+- `toppercent`
 
 ## Related articles
 
-* [Query your work tracking data](wit-analytics.md)
-* [Aggregate data](aggregated-data-analytics.md)
-* [OData v4.0 specification](https://www.odata.org/documentation/)
-* [OData v4.0 Part 2: URL Conventions Plus Errata 02](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html)
-* [OData v4.0 Aggregation Extension](https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/odata-data-aggregation-ext-v4.0.html)
+- [Query your work tracking data](wit-analytics.md)
+- [Aggregate data](aggregated-data-analytics.md)
+- [OData v4.0 specification](https://www.odata.org/documentation/)
+- [OData v4.0 Part 2: URL Conventions Plus Errata 02](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html)
+- [OData v4.0 Aggregation Extension](https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/odata-data-aggregation-ext-v4.0.html)

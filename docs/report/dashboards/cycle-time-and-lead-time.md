@@ -29,9 +29,9 @@ In this article you'll learn:
 
 > [!div class="checklist"]
 >
-> * How to install and configure the Lead Time and Cycle Time widgets (Analytics)
-> * How to interpret the scatter-plot control charts
-> * How moving average and standard deviation are calculated in the charts
+> - How to install and configure the Lead Time and Cycle Time widgets (Analytics)
+> - How to interpret the scatter-plot control charts
+> - How moving average and standard deviation are calculated in the charts
 
 To learn more, see [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md).
 
@@ -124,22 +124,22 @@ Both Lead Time and Cycle Time widgets display as scatter-plot control charts. Th
 
 The chart dots represent completed work items where their position on the horizontal axis represents the date they were completed. Their position on the vertical axis represents the calculated lead time or cycle time.
 
-* Larger dots represent multiple work items with the same lead/cycle time
-* Dot color corresponds to the work item type displayed in the legend
-* Dark gray dots correspond to a mix of work item types.
+- Larger dots represent multiple work items with the same lead/cycle time
+- Dot color corresponds to the work item type displayed in the legend
+- Dark gray dots correspond to a mix of work item types.
 
 #### Summary elements include:
 
-* Days on average (average lead time or cycle time) for the main work item types configured for the chart
-* The number of backlog work items used in the chart calculations; if there are more than three types of work items, you'll see a summary for Other
-* The black trend line indicates the moving average
-* The band around the trend line shows the standard deviation.
+- Days on average (average lead time or cycle time) for the main work item types configured for the chart
+- The number of backlog work items used in the chart calculations; if there are more than three types of work items, you'll see a summary for Other
+- The black trend line indicates the moving average
+- The band around the trend line shows the standard deviation.
 
 #### Interactive elements include:
 
-* Hover over any dot to see which work items contributed to the data point and the lead/cycle time for those items
-* Choose a dot to open the work item or query that lists the work items
-* To filter the chart, choose a work item type in the legend (![backlog item icon](../../media/icons/user-story-icon.png),![bug item icon](../../media/icons/bug-icon.png), or other icon) to filter on that type; to return to the original chart, refresh the dashboard.
+- Hover over any dot to see which work items contributed to the data point and the lead/cycle time for those items
+- Choose a dot to open the work item or query that lists the work items
+- To filter the chart, choose a work item type in the legend (![backlog item icon](../../media/icons/user-story-icon.png),![bug item icon](../../media/icons/bug-icon.png), or other icon) to filter on that type; to return to the original chart, refresh the dashboard.
 
 ## Moving average and standard deviation calculations
 
@@ -156,8 +156,8 @@ The standard deviation appears as a band that encompasses the moving average. St
 
 We recommend your team review the lead/cycle time charts before or during each retrospective. Use lead time to help estimate delivery times and track service level agreements (SLAs). Use cycle time to identify potential process issues, spot variations in trends, and help with planning.
 
-* [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)
-* [Kanban basics](../../boards/boards/kanban-basics.md)
-* [Cumulative flow diagram](cumulative-flow.md)
-* [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md)
-* [Agile](../../boards/work-items/guidance/agile-process.md), [Scrum](../../boards/work-items/guidance/scrum-process.md), and [CMMI](../../boards/work-items/guidance/cmmi-process.md) processes
+- [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)
+- [Kanban basics](../../boards/boards/kanban-basics.md)
+- [Cumulative flow diagram](cumulative-flow.md)
+- [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md)
+- [Agile](../../boards/work-items/guidance/agile-process.md), [Scrum](../../boards/work-items/guidance/scrum-process.md), and [CMMI](../../boards/work-items/guidance/cmmi-process.md) processes

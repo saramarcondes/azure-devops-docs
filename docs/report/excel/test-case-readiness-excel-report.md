@@ -43,8 +43,8 @@ The report is based on a PivotChart report that shows the data that is stored in
 
 For the Test Case Readiness report to be useful and accurate, the team must perform the following activities:
 
-* Define [test cases](../../test/create-test-cases.md), and update their **State** from **Design** to **Ready**.
-* (Optional) To support filtering, assign **Iteration** and **Area** paths to Test Cases.
+- Define [test cases](../../test/create-test-cases.md), and update their **State** from **Design** to **Ready**.
+- (Optional) To support filtering, assign **Iteration** and **Area** paths to Test Cases.
 
 <a name="Interpreting"></a>
 
@@ -54,12 +54,12 @@ You should expect the Test Case Readiness report to vary depending on where you 
 
 You can review the report to find answers to the following questions:
 
-* How many Test Cases is the test team defining?
-* How many Tests Cases are ready to run today?
-* How many Test Cases must the team still write and review?
-* Does the overall number of Test Cases appear to be enough for the number of User Stories that the team is implementing?
-* What is the percentage of Test Cases that the test team can run today?
-* Will the team be able to have all the Tests Cases ready by the end of the iteration?
+- How many Test Cases is the test team defining?
+- How many Tests Cases are ready to run today?
+- How many Test Cases must the team still write and review?
+- Does the overall number of Test Cases appear to be enough for the number of User Stories that the team is implementing?
+- What is the percentage of Test Cases that the test team can run today?
+- Will the team be able to have all the Tests Cases ready by the end of the iteration?
 
 <a name="Updating"></a>
 
@@ -75,5 +75,5 @@ You can update the Test Case Readiness report by opening it in Office Excel and 
 
 ## Related articles
 
-* [Excel reports](excel-reports.md)
-* [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)
+- [Excel reports](excel-reports.md)
+- [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)

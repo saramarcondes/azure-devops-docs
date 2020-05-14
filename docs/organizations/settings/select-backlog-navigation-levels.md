@@ -20,8 +20,8 @@ Each team can determine the backlog levels that they use. For example, feature t
 ::: moniker range="azure-devops"
 If you want additional portfolio backlogs, see the following topics based on the process model you use:
 
-* **Inheritance**: [Customize your backlogs or boards for a process](work/customize-process-backlogs-boards.md)
-* **Hosted XML**: [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).
+- **Inheritance**: [Customize your backlogs or boards for a process](work/customize-process-backlogs-boards.md)
+- **Hosted XML**: [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).
 
 For an overview of process models, see [Customize your work tracking experience](../../reference/customize-work.md).
 
@@ -103,8 +103,8 @@ Requires TFS 2015.1 or later version.
 
 ## Related articles
 
-* [Get started with Agile tools to plan and track work](../../boards/get-started/what-is-azure-boards.md)
-* [Backlogs, boards, and plans](../../boards/backlogs/backlogs-boards-plans.md)
-* [Create your backlog](../../boards/backlogs/create-your-backlog.md)
-* [Define features and epics](../../boards/backlogs/define-features-epics.md)
-* [Organize your backlog](../../boards/backlogs/organize-backlog.md)
+- [Get started with Agile tools to plan and track work](../../boards/get-started/what-is-azure-boards.md)
+- [Backlogs, boards, and plans](../../boards/backlogs/backlogs-boards-plans.md)
+- [Create your backlog](../../boards/backlogs/create-your-backlog.md)
+- [Define features and epics](../../boards/backlogs/define-features-epics.md)
+- [Organize your backlog](../../boards/backlogs/organize-backlog.md)

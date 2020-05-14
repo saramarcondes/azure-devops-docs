@@ -21,4 +21,4 @@ Options passed to the host management service
 
 ### Members
 
-* `registrationId`: string. The registered VSS auth application ID
+- `registrationId`: string. The registered VSS auth application ID

@@ -37,7 +37,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/plans/{plan}/suite
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | $skip | int | Number of test suites to skip.
 | $top | int | Number of test suites to return.
-| $asTreeView | bool | If the suites returned should be in a tree structure.
+| \$asTreeView | bool | If the suites returned should be in a tree structure.
 
 #### Sample request
 

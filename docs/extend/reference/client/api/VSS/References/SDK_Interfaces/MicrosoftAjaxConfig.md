@@ -17,4 +17,4 @@ Defined in vss.d.ts
 
 ### Members
 
-* `cultureInfo`: any.
+- `cultureInfo`: any.

@@ -29,55 +29,55 @@ To ensure your organization works with any existing firewall or IP restrictions,
 
 ### URLs to support sign in and licensing connections
 
-* `https://management.core.windows.net`
-* `https://login.microsoftonline.com`
-* `https://login.live.com`
-* `https://go.microsoft.com`
-* `https://graph.windows.net`
-* `https://app.vssps.dev.azure.com`
-* `https://app.vssps.visualstudio.com`
-* `https://aadcdn.msauth.net`
-* `https://aadcdn.msftauth.net`
+- `https://management.core.windows.net`
+- `https://login.microsoftonline.com`
+- `https://login.live.com`
+- `https://go.microsoft.com`
+- `https://graph.windows.net`
+- `https://app.vssps.dev.azure.com`
+- `https://app.vssps.visualstudio.com`
+- `https://aadcdn.msauth.net`
+- `https://aadcdn.msftauth.net`
 
 ### Additional URLs for signing into Azure DevOps and Azure
 
-* `https://amcdn.msftauth.net`
-* `https://windows.net`
-* `https://microsoftonline.com`
-* `https://visualstudio.com`
-* `https://microsoft.com`
-* `https://live.com`
-* `https://dev.azure.com`
-* `https://management.core.windows.net`
-* `https://aex.dev.azure.com`
-* `https://app.vssps.dev.azure.com`
-* `https://app.vssps.visualstudio.com`
-* `https://vstsagentpackage.azureedge.net`
-* `https://cdn.vsassets.io` (hosts Azure DevOps Content Delivery Networks (CDNs) content)
-* `https://gallerycdn.vsassets.io` (hosts Azure DevOps extensions)
-* `https://static2.sharepointonline.com` (hosts some resources that Azure DevOps uses in "office fabric" UI kit for fonts, and so on)
-* `https://*.vstmrblob.vsassets.io` (hosts Azure DevOps TCM log data)
+- `https://amcdn.msftauth.net`
+- `https://windows.net`
+- `https://microsoftonline.com`
+- `https://visualstudio.com`
+- `https://microsoft.com`
+- `https://live.com`
+- `https://dev.azure.com`
+- `https://management.core.windows.net`
+- `https://aex.dev.azure.com`
+- `https://app.vssps.dev.azure.com`
+- `https://app.vssps.visualstudio.com`
+- `https://vstsagentpackage.azureedge.net`
+- `https://cdn.vsassets.io` (hosts Azure DevOps Content Delivery Networks (CDNs) content)
+- `https://gallerycdn.vsassets.io` (hosts Azure DevOps extensions)
+- `https://static2.sharepointonline.com` (hosts some resources that Azure DevOps uses in "office fabric" UI kit for fonts, and so on)
+- `https://*.vstmrblob.vsassets.io` (hosts Azure DevOps TCM log data)
 
 ## Additional domains
 
 Azure DevOps leverages CDNs to serve static content. Ensure the following CDNs are allowed.
 
-* `*.vsassets.io`
-* `*.vsassetscdn.azure.cn`
-* `*.gallerycdn.vsassets.io` (Marketplace)
-* `*.gallerycdn.azure.cn` (Marketplace)
+- `*.vsassets.io`
+- `*.vsassetscdn.azure.cn`
+- `*.gallerycdn.vsassets.io` (Marketplace)
+- `*.gallerycdn.azure.cn` (Marketplace)
 
 We recommend you open port 443 to all traffic on these IP addresses and domains. We also recommend you open port 22 to a smaller subset of targeted IP addresses.
 
 ### Azure Artifacts
 
-* `*.blob.core.windows.net`
-* all IP addresses in the "name": "Storage.{your region}" section of this file (updated weekly): [Azure IP ranges and Service Tags - Public Cloud](https://www.microsoft.com/en-us/download/details.aspx?id=56519)
+- `*.blob.core.windows.net`
+- all IP addresses in the "name": "Storage.{your region}" section of this file (updated weekly): [Azure IP ranges and Service Tags - Public Cloud](https://www.microsoft.com/en-us/download/details.aspx?id=56519)
 
 ## NuGet connections
 
-* `https://azurewebsites.net`
-* `https://nuget.org`
+- `https://azurewebsites.net`
+- `https://nuget.org`
 
 > [!NOTE]
 > Privately owned NuGet server URLs may not be included in the list above. You can check the NuGet servers you are using by opening up `%APPData%\Nuget\NuGet.Config`.
@@ -99,9 +99,9 @@ If you're currently allow-listing the `13.107.6.183` and `13.107.9.183` IP addre
 
 If you need to connect to Git repositories on Azure DevOps with SSH, you need to allow requests to port 22 for the following IP addresses:
 
-* `ssh.dev.azure.com`
-* `vs-ssh.visualstudio.com`
-* all IP addresses in the "name": "AzureCloud" section of [this file](https://www.microsoft.com/download/details.aspx?id=56519) (updated weekly): Azure IP ranges and Service Tags - Public Cloud
+- `ssh.dev.azure.com`
+- `vs-ssh.visualstudio.com`
+- all IP addresses in the "name": "AzureCloud" section of [this file](https://www.microsoft.com/download/details.aspx?id=56519) (updated weekly): Azure IP ranges and Service Tags - Public Cloud
 
 ## Azure DevOps ExpressRoute connections
 

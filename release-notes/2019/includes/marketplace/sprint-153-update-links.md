@@ -2,4 +2,4 @@
 ms.topic: include
 ---
 
-* [Top publisher certification program](#top-publisher-certification-program)
+- [Top publisher certification program](#top-publisher-certification-program)

@@ -26,8 +26,7 @@ Azure DevOps Services recommends using two **_.npmrc_** files:
 
         ::: moniker range=">= azure-devops-2019"
 
-        > [!div class="mx-imgBorder"]
-        > ![Connect to feed button in Azure Artifacts](../media/connect-to-feed-azure-devops-newnav.png)
+        > [!div class="mx-imgBorder"] > ![Connect to feed button in Azure Artifacts](../media/connect-to-feed-azure-devops-newnav.png)
 
         ::: moniker-end
 
@@ -53,8 +52,7 @@ Azure DevOps Services recommends using two **_.npmrc_** files:
 
         ::: moniker range=">= azure-devops-2019"
 
-        > [!div class="mx-imgBorder"]
-        > ![Connect to feed from Azure Artifacts](../media/npm-azure-devops-newnav.png)
+        > [!div class="mx-imgBorder"] > ![Connect to feed from Azure Artifacts](../media/npm-azure-devops-newnav.png)
 
         ::: moniker-end
 
@@ -95,7 +93,7 @@ If you are developing on Windows, we recommend that you use `vsts-npm-auth` to f
 
 ### Linux or Mac
 
-If you are developing on Linux or Mac, `vsts-npm-auth` is not supported and we recommend generating a token in the following manner for your **_$HOME/.npmrc_**
+If you are developing on Linux or Mac, `vsts-npm-auth` is not supported and we recommend generating a token in the following manner for your **_\$HOME/.npmrc_**
 
 [!INCLUDE [](../includes/npm/npmrc.md)]
 
@@ -107,8 +105,8 @@ If you are developing on Linux or Mac, `vsts-npm-auth` is not supported and we r
 
 There are two options for setting up authentication in a build task:
 
-* [Without a task runner](#without-a-task-runner)
-* [With a task runner (e.g. gulp)](#with-a-task-runner-eg-make-gulp-work)
+- [Without a task runner](#without-a-task-runner)
+- [With a task runner (e.g. gulp)](#with-a-task-runner-eg-make-gulp-work)
 
 ### Without a Task Runner
 
@@ -118,13 +116,11 @@ To set up **npm** authentication in a build task _without_ a task runner, follow
 
 1.  Select **Azure Pipelines**, it should automatically take you to the **Builds** page.
 
-    > [!div class="mx-imgBorder"]
-    > ![navigate to builds tab](../../pipelines/media/get-started-designer/navigate-to-builds-tab-newnav-tfs-2018-2.png)
+    > [!div class="mx-imgBorder"] > ![navigate to builds tab](../../pipelines/media/get-started-designer/navigate-to-builds-tab-newnav-tfs-2018-2.png)
 
 1.  Create a new pipeline.
 
-    > [!div class="mx-imgBorder"]
-    > ![builds-tab-mine-new-button](../../pipelines/media/get-started-designer/builds-tab-mine-new-button-vsts-newnavon.png)
+    > [!div class="mx-imgBorder"] > ![builds-tab-mine-new-button](../../pipelines/media/get-started-designer/builds-tab-mine-new-button-vsts-newnavon.png)
 
 1.  Choose your source **Project**, **Repository**, and **Default branch** and select _Continue_.
 
@@ -132,23 +128,21 @@ To set up **npm** authentication in a build task _without_ a task runner, follow
 
 1.  On the left side, select the plus sign **( + )** to add a task to **Job 1**. On the right side, select the **Package** category, select the **npm** task from the list, and then choose **Add**.
 
-    > [!div class="mx-imgBorder"]
-    > ![builds-tab-add-task-to-job](../../pipelines/media/get-started-designer/builds-tab-add-task-azure-devops-newnavon.png)
+    > [!div class="mx-imgBorder"] > ![builds-tab-add-task-to-job](../../pipelines/media/get-started-designer/builds-tab-add-task-azure-devops-newnavon.png)
 
 1.  Select the **npm install** task, then browse to and select your **Working folder with package.json**:
 
-    > [!div class="mx-imgBorder"]
-    > ![Add task to build pipeline](../media/build-definition/build-definition-npm-install-newnav.png)
+    > [!div class="mx-imgBorder"] > ![Add task to build pipeline](../media/build-definition/build-definition-npm-install-newnav.png)
 
 1.  Expand **Custom registries and authentication**, here you have a few options:
 
-    * Registries in my **_.npmrc_**
+    - Registries in my **_.npmrc_**
 
       ![Add task to build pipeline](../media/build-definition/registries-in-my-npmrc.png)
 
       > You can choose credentials to authenticate to outside of your current organization/collection by setting up [service connections.](../../pipelines/library/service-endpoints.md#sep-npm)
 
-    * Registry I select here
+    - Registry I select here
 
       ![Add task to build pipeline](../media/build-definition/registry-i-select-here.png)
 
@@ -187,13 +181,13 @@ To set up **npm** authentication in a build task _without_ a task runner, follow
 
 1.  Expand **Custom registries and authentication**, here you have a few options:
 
-    * Registries in my **_.npmrc_**
+    - Registries in my **_.npmrc_**
 
       ![Add task to build pipeline](../media/build-definition/registries-in-my-npmrc.png)
 
       > You can choose credentials to authenticate to outside of your current organization/collection by setting up [service connections.](../../pipelines/library/service-endpoints.md#sep-npm)
 
-    * Registry I select here
+    - Registry I select here
 
       ![Add task to build pipeline](../media/build-definition/registry-i-select-here.png)
 
@@ -211,13 +205,11 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 
 1.  Select **Azure Pipelines**, it should automatically take you to the **Builds** page.
 
-    > [!div class="mx-imgBorder"]
-    > ![navigate to builds tab](../../pipelines/media/get-started-designer/navigate-to-builds-tab-newnav-tfs-2018-2.png)
+    > [!div class="mx-imgBorder"] > ![navigate to builds tab](../../pipelines/media/get-started-designer/navigate-to-builds-tab-newnav-tfs-2018-2.png)
 
 1.  Create a new pipeline.
 
-    > [!div class="mx-imgBorder"]
-    > ![builds-tab-mine-new-button](../../pipelines/media/get-started-designer/builds-tab-mine-new-button-vsts-newnavon.png)
+    > [!div class="mx-imgBorder"] > ![builds-tab-mine-new-button](../../pipelines/media/get-started-designer/builds-tab-mine-new-button-vsts-newnavon.png)
 
 1.  Choose your source **Project**, **Repository**, and **Default branch** and select _Continue_.
 
@@ -225,13 +217,11 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 
 1.  On the left side, select the plus sign **( + )** to add a task to **Job 1**. On the right side, select the **Package** category, select the **npm Authenticate** task from the list, and then choose **Add**.
 
-    > [!div class="mx-imgBorder"]
-    > ![builds-tab-add-task-to-job](../../pipelines/media/get-started-designer/builds-tab-add-task-azure-devops-newnavon.png)
+    > [!div class="mx-imgBorder"] > ![builds-tab-add-task-to-job](../../pipelines/media/get-started-designer/builds-tab-add-task-azure-devops-newnavon.png)
 
 1.  Select the **npm Authenticate** task underneath **Phase 1**:
 
-    > [!div class="mx-imgBorder"]
-    > ![Add task to build pipeline](../media/build-definition/build-definition-npm-auth-task-phase-newnav.png)
+    > [!div class="mx-imgBorder"] > ![Add task to build pipeline](../media/build-definition/build-definition-npm-auth-task-phase-newnav.png)
 
 1.  Browse to and select your **.npmrc file to authenticate**:
 
@@ -279,8 +269,8 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 
 If you receive an error like:
 
-* Command Prompt: `'vsts-npm-auth' is not recognized as an internal or external command, operable program or batch file.`
-* PowerShell: `vsts-npm-auth : The term 'vsts-npm-auth' is not recognized as the name of a cmdlet, function, script file, or operable program.`
+- Command Prompt: `'vsts-npm-auth' is not recognized as an internal or external command, operable program or batch file.`
+- PowerShell: `vsts-npm-auth : The term 'vsts-npm-auth' is not recognized as the name of a cmdlet, function, script file, or operable program.`
 
 then it's likely that the npm modules folder is not in your path.
 

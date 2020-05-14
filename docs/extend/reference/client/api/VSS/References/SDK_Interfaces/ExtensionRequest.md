@@ -19,16 +19,16 @@ A request for an extension (to be installed or have a license assigned)
 
 ### Members
 
-* `rejectMessage`: string. Required message supplied if the request is rejected
+- `rejectMessage`: string. Required message supplied if the request is rejected
 
-* `requestDate`: Date. Date at which the request was made
+- `requestDate`: Date. Date at which the request was made
 
-* `requestedBy`: any. Represents the user who made the request
+- `requestedBy`: any. Represents the user who made the request
 
-* `requestMessage`: string. Optional message supplied by the requester justifying the request
+- `requestMessage`: string. Optional message supplied by the requester justifying the request
 
-* `requestState`: [ExtensionRequestState](../../../VSS/References/SDK_Interfaces/ExtensionRequestState.md). Represents the state of the request
+- `requestState`: [ExtensionRequestState](../../../VSS/References/SDK_Interfaces/ExtensionRequestState.md). Represents the state of the request
 
-* `resolveDate`: Date. Date at which the request was resolved
+- `resolveDate`: Date. Date at which the request was resolved
 
-* `resolvedBy`: any. Represents the user who resolved the request
+- `resolvedBy`: any. Represents the user who resolved the request

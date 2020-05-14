@@ -48,10 +48,10 @@ To resolve this error, [edit your view](analytics-views-manage.md#edit-an-existi
 
 This error occurs when you try to refresh a view in Power BI that is no longer available in Azure DevOps. One or more of the following actions may have occurred:
 
-* The view was renamed
-* The view was deleted
-* Your permissions to access the view were explicitly removed
-* The view has been modified from a **Shared** view to a **Private** view.
+- The view was renamed
+- The view was deleted
+- Your permissions to access the view were explicitly removed
+- The view has been modified from a **Shared** view to a **Private** view.
 
 ![Refresh fail - view does not exists](media/editable-views/pbi-refresh-fail.png)
 
@@ -67,8 +67,8 @@ To resolve this collision, remove the duplicate column from the view's fields. Y
 
 ## Related articles
 
-* [Create an Analytics view](analytics-views-create.md)
-* [Manage Analytics views](analytics-views-manage.md).
-* [Data available from Analytics](data-available-in-analytics.md)
-* [Grant permissions to access Analytics](./analytics-security.md)
-* [Power BI integration overview](overview.md)
+- [Create an Analytics view](analytics-views-create.md)
+- [Manage Analytics views](analytics-views-manage.md).
+- [Data available from Analytics](data-available-in-analytics.md)
+- [Grant permissions to access Analytics](./analytics-security.md)
+- [Power BI integration overview](overview.md)

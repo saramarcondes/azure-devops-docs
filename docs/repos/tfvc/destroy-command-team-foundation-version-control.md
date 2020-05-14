@@ -95,9 +95,9 @@ Destroyed: ...
 
 If you specified the _versionspec_ value as a tip, the server paths displayed in the Command Prompt window include deletion IDs. For example, X123 might appear in the Command Prompt window.
 
-If you use the **/preview** option, the files are not destroyed, but the command-line text displays the files that would be destroyed. For example, if, at the command-line, you type **tf destroy /preview $/Test1/MyProject/MyProject/Program.cs**, the command window displays this text:
+If you use the **/preview** option, the files are not destroyed, but the command-line text displays the files that would be destroyed. For example, if, at the command-line, you type **tf destroy /preview \$/Test1/MyProject/MyProject/Program.cs**, the command window displays this text:
 
-Destroyed: $/Test1/MyProject/MyProject/Program.cs
+Destroyed: \$/Test1/MyProject/MyProject/Program.cs
 
 However, the file is actually not destroyed because you used the **/preview** option.
 
@@ -107,9 +107,9 @@ For more information about how to find the **tf** command-line utility, see [Tf 
 
 If you specify the **/keephistory** option to retain the history of destroyed files, the files are treated as destroyed by the following Team Foundation version control operations:
 
-* **Change content **If you try to change the content of a destroyed file, for example edit or branch, the system issues an error message that states the content has been destroyed.
+- **Change content **If you try to change the content of a destroyed file, for example edit or branch, the system issues an error message that states the content has been destroyed.
 
-* **Branch, merge, or unshelve **If you try to branch, merge, or unshelve destroyed items, the system issues an error message that states the content of the items has been destroyed.
+- **Branch, merge, or unshelve **If you try to branch, merge, or unshelve destroyed items, the system issues an error message that states the content of the items has been destroyed.
 
 ### Destroying Previously Deleted Items
 

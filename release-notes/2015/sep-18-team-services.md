@@ -33,10 +33,10 @@ I’m happy to report that UserVoice item #121579 has been marked as completed.
 
 [Last month](aug-07-team-services.md) we enabled multi-select on the product backlog… we’re back this sprint with some additional capabilities including:
 
-* Drag-and-drop reordering and re-parenting
-* Dragging items to an iteration
-* Dragging items to the mapping pane
-* Support for "move to top" and "move to position" on the context menu
+- Drag-and-drop reordering and re-parenting
+- Dragging items to an iteration
+- Dragging items to the mapping pane
+- Support for "move to top" and "move to position" on the context menu
 
 ![Dragging multiple items on the backlog](media/9_18_03.png)
 

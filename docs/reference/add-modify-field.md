@@ -35,15 +35,15 @@ You use work item fields to track data for a work item type and to define the fi
 
 Work item fields are maintained for a project collection. You add fields when you perform one of the following tasks:
 
-* **Create a project**. All fields that are defined within the definitions for work item types or global workflow and that are defined for the selected process template are created. The core system fields are automatically defined for every work item type that is defined for a project. For a list of these fields, see [Work item field index](../boards/work-items/guidance/work-item-field.md).
+- **Create a project**. All fields that are defined within the definitions for work item types or global workflow and that are defined for the selected process template are created. The core system fields are automatically defined for every work item type that is defined for a project. For a list of these fields, see [Work item field index](../boards/work-items/guidance/work-item-field.md).
 
-* **Import a WIT definition**. All new fields that are defined within the definition for a type of work item are added to the collection. For more information, see [All WITD XML elements reference](xml/all-witd-xml-elements-reference.md).
+- **Import a WIT definition**. All new fields that are defined within the definition for a type of work item are added to the collection. For more information, see [All WITD XML elements reference](xml/all-witd-xml-elements-reference.md).
 
-* **Import a global workflow definition**. All new fields that are defined within the global workflow are added to the collection. You define a global workflow when you want to maintain a set of work item fields that several types of work items share. For more information, see [Customize global workflow](xml/global-workflow-xml-element-reference.md).
+- **Import a global workflow definition**. All new fields that are defined within the global workflow are added to the collection. You define a global workflow when you want to maintain a set of work item fields that several types of work items share. For more information, see [Customize global workflow](xml/global-workflow-xml-element-reference.md).
 
 ::: moniker range="< tfs-2017"
 
-* **Map a project collection to an instance of Project Web App (PWA)**. After you install the Team Foundation Server Extensions for Project Server, configure the integration by mapping various components of Team Foundation. When you map a collection, a global workflow definition that supports several fields in Project Server fields is imported. For more information, see [Project Server fields added to TFS to support data synchronization](./tfs-ps-sync/project-server-fields-added-to-tfs.md).
+- **Map a project collection to an instance of Project Web App (PWA)**. After you install the Team Foundation Server Extensions for Project Server, configure the integration by mapping various components of Team Foundation. When you map a collection, a global workflow definition that supports several fields in Project Server fields is imported. For more information, see [Project Server fields added to TFS to support data synchronization](./tfs-ps-sync/project-server-fields-added-to-tfs.md).
   ::: moniker-end
 
 All fields that are defined in all WITs and all global workflows for all projects make up the complete set of fields defined within the collection. You can change the attribute of, rename, and delete existing fields. However, you incur certain costs when you make these kinds of changes, specifically for on-premises server and reporting.
@@ -145,10 +145,10 @@ To add a custom field or add rules to a field, edit the WIT definition. You can 
 For example, with the following code snippet, you can enforce the rule that only members of the Management Team, a customer defined TFS group, can modify the Stack Rank field once a work item has been created.
 
 ```XML
-<FIELD name="Stack Rank" refname="Microsoft.VSTS.Common.StackRank" type="Double" reportable="dimension">  
-   <FROZEN not="[project]\Management Team" />  
+<FIELD name="Stack Rank" refname="Microsoft.VSTS.Common.StackRank" type="Double" reportable="dimension">
+   <FROZEN not="[project]\Management Team" />
    <HELPTEXT>Work first on items with lower-valued stack rank. Set in triage.</HELPTEXT>
-</FIELD>  
+</FIELD>
 ```
 
 You apply rules to accomplish the following actions:
@@ -237,16 +237,16 @@ To modify the field label, change the value assigned to the `Control` element `L
 1.  In the `FORM` and `Layout` sections, find the definition of the field you want to modify. This example modifies the label for the **Title** field:
 
     ```XML
-    <Column PercentWidth="70">  
-       <Control Type="FieldControl" FieldName="System.Title" Label="Title" LabelPosition="Left" />  
+    <Column PercentWidth="70">
+       <Control Type="FieldControl" FieldName="System.Title" Label="Title" LabelPosition="Left" />
     </Column>
     ```
 
 1.  Change the label for the field so that the Portuguese branch office working on this particular project can read the name of the **Title** field when they work with the work item form. Include the Portuguese word for title (Titulo) in the Title field.
 
     ```XML
-    <Column PercentWidth="70">  
-       <Control Type="FieldControl" FieldName="System.Title" Label="Title (Titulo):" LabelPosition="Left" />  
+    <Column PercentWidth="70">
+       <Control Type="FieldControl" FieldName="System.Title" Label="Title (Titulo):" LabelPosition="Left" />
     </Column>
     ```
 
@@ -264,9 +264,9 @@ Using [REST APIs for tracking work items](/rest/api/azure/devops/wit/work%20item
 
 Or, you can add a custom control which is available through the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?term=custom%20controls&target=AzureDevOps&category=All%20categories&visibilityQuery=all&sortBy=Relevance). For example:
 
-* [Multi-value control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control) that supports the input of multiple values for a field by showing a list of check boxes
-* [Color picklist control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.color-form-control) that supports adding color to pick list items
-* [Work item form one click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions) that provides a group extension with a customizable set of rules which support one-click action.
+- [Multi-value control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control) that supports the input of multiple values for a field by showing a list of check boxes
+- [Color picklist control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.color-form-control) that supports adding color to pick list items
+- [Work item form one click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions) that provides a group extension with a customizable set of rules which support one-click action.
 
 To add a custom control to the new web form, see [WebLayout and Control elements](xml/weblayout-xml-elements.md).
 
@@ -310,18 +310,18 @@ This topic addressed how to add and customize fields for Hosted XML and On-premi
 
 Other related topics or resources:
 
-* [Work tracking object limits](../organizations/settings/work/object-limits.md)
-* [Customize the work tracking experience](customize-work.md)
-* [About work item fields and attributes](../boards/work-items/work-item-fields.md)
-* [WebLayout and Control elements](xml/weblayout-xml-elements.md)
-* [Guide to administrative tasks](../organizations/accounts/organization-management.md)
-* [Import, export, and manage work item fields (witadmin)](witadmin/manage-work-item-fields.md).
+- [Work tracking object limits](../organizations/settings/work/object-limits.md)
+- [Customize the work tracking experience](customize-work.md)
+- [About work item fields and attributes](../boards/work-items/work-item-fields.md)
+- [WebLayout and Control elements](xml/weblayout-xml-elements.md)
+- [Guide to administrative tasks](../organizations/accounts/organization-management.md)
+- [Import, export, and manage work item fields (witadmin)](witadmin/manage-work-item-fields.md).
 
 ### Required permissions
 
-* To list fields, you must have your **View project-level information** permission for the project in the collection set to **Allow**.
-* (TFS) To add or customize a field, you must be a member of the Project Administrators group or have your **Edit project-level information** permission set to Allow.
-* (TFS) To delete or rename fields or change an attribute of a field, you must be a member of the **Team Foundation Administrators** security group or the **Project Collection Administrators** security group.
+- To list fields, you must have your **View project-level information** permission for the project in the collection set to **Allow**.
+- (TFS) To add or customize a field, you must be a member of the Project Administrators group or have your **Edit project-level information** permission set to Allow.
+- (TFS) To delete or rename fields or change an attribute of a field, you must be a member of the **Team Foundation Administrators** security group or the **Project Collection Administrators** security group.
 
 To get added as an administrator, [Add administrators](../organizations/security/set-project-collection-level-permissions.md).
 

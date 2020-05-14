@@ -51,58 +51,58 @@ All **witadmin** commands can be run against an on-premises TFS. If you are new 
 
 ## [Work item types](witadmin-import-export-manage-wits.md)
 
-* **destroywitd**: Delete a WIT
-* **exportwitd**: Export a WIT file
-* **importwitd**: Import a WIT file
-* **listwitd**: List WIT names
-* **renamewitd**: Change a WIT display name
+- **destroywitd**: Delete a WIT
+- **exportwitd**: Export a WIT file
+- **importwitd**: Import a WIT file
+- **listwitd**: List WIT names
+- **renamewitd**: Change a WIT display name
 
 ## [Fields](manage-work-item-fields.md)
 
-* **deletefield**: Delete a field
-* **listfields**: List field attributes
-* **indexfield**: Turn field indexing on/off
-* **changefield**: Change a field attribute
+- **deletefield**: Delete a field
+- **listfields**: List field attributes
+- **indexfield**: Turn field indexing on/off
+- **changefield**: Change a field attribute
 
 ## [Process configuration](witadmin-import-export-process-configuration.md)
 
-* **exportprocessconfig**: Export the ProcessConfiguration file
-* **importprocessconfig**: Import the ProcessConfiguration file
+- **exportprocessconfig**: Export the ProcessConfiguration file
+- **importprocessconfig**: Import the ProcessConfiguration file
 
 ## [Link types](manage-link-types.md)
 
-* **deletelinktype**: Delete a link type
-* **exportlinktype**: Export a link type file
-* **importlinktype**: Import a link type file
-* **listlinktypes**: List the defined link types
-* **reactivatelinktype**: Reactivate or rename a link type
+- **deletelinktype**: Delete a link type
+- **exportlinktype**: Export a link type file
+- **importlinktype**: Import a link type file
+- **listlinktypes**: List the defined link types
+- **reactivatelinktype**: Reactivate or rename a link type
 
 ## [Global lists](manage-global-lists-for-work-item-types.md)
 
-* **destroygloballist**: Delete a global list
-* **exportgloballist**: Export the global list
-* **importgloballist**: Import the global list
-* **listgloballist**: List all global list names
+- **destroygloballist**: Delete a global list
+- **exportgloballist**: Export the global list
+- **importgloballist**: Import the global list
+- **listgloballist**: List all global list names
 
 ## [Global workflow](witadmin-import-export-global-workflow.md)
 
-* **exportglobalworkflow**: Export the global workflow file
-* **importglobalworkflow**: Import the global workflow file
+- **exportglobalworkflow**: Export the global workflow file
+- **importglobalworkflow**: Import the global workflow file
 
 ## [Work items](remove-work-items-permanently.md)
 
-* **destroywi**: Permanently delete work items
+- **destroywi**: Permanently delete work items
 
 ## [Client cache](rebuild-client-cache.md)
 
-* **rebuildcache**: Rebuild the client cache
+- **rebuildcache**: Rebuild the client cache
 
 ## [Categories](witadmin-import-export-categories.md)
 
-* **exportcategories**: Export the Categories file
-* **importcategories**: Import the Categories file
+- **exportcategories**: Export the Categories file
+- **importcategories**: Import the Categories file
 
 ## Related articles
 
-* [Customize your work tracking experience](../customize-work.md)
-* [On-premises XML process model](../on-premises-xml-process-model.md)
+- [Customize your work tracking experience](../customize-work.md)
+- [On-premises XML process model](../on-premises-xml-process-model.md)

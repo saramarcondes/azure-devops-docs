@@ -49,9 +49,9 @@ You can create your own views or rename and delete existing ones in the feed set
 
 In the feed settings view:
 
-* Select **Views**
-* Make your changes (Add view, Edit, or Delete)
-* Select **Ok**
+- Select **Views**
+- Make your changes (Add view, Edit, or Delete)
+- Select **Ok**
 
 > [!div class="mx-imgBorder"] > ![Managing views](media/feed-settings-views.png)
 

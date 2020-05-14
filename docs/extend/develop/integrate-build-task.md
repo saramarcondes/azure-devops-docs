@@ -35,35 +35,35 @@ multiple versions in one extension.
 
 ### Traditional extension layout
 
-* extensionManifest.json
-* extensionIcon.png
-* Task1
-  * task.json
-  * icon.png
-  * taskScript.ps1
+- extensionManifest.json
+- extensionIcon.png
+- Task1
+  - task.json
+  - icon.png
+  - taskScript.ps1
 
 ### Multiple version layout
 
-* extensionManifest.json
-* extensionIcon.png
-* Task1
-  * Task1V1
-    * task.json
-    * icon.png
-    * taskScript.ps1
-  * Task1V2
-    * task.json
-    * icon.png
-    * taskScript.ps1
-* Task2
-  * Task2V1
-    * task.json
-    * icon.png
-    * taskScript.ps1
-  * Task2V2
-    * task.json
-    * icon.png
-    * taskScript.ps1
+- extensionManifest.json
+- extensionIcon.png
+- Task1
+  - Task1V1
+    - task.json
+    - icon.png
+    - taskScript.ps1
+  - Task1V2
+    - task.json
+    - icon.png
+    - taskScript.ps1
+- Task2
+  - Task2V1
+    - task.json
+    - icon.png
+    - taskScript.ps1
+  - Task2V2
+    - task.json
+    - icon.png
+    - taskScript.ps1
 
 > [!NOTE]
 > The code looks for the `task.json` file inside the task folder. If one is not found, it looks just _one_ level deeper.

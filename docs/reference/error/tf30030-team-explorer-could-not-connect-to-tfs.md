@@ -16,13 +16,13 @@ ms.date: 02/22/2017
 
 This error occurs when Team Explorer is not synchronized with or cannot establish a connection to the server that hosts SharePoint Products. This error may occur under the following conditions, listed in the most likely order of occurrence:
 
-* Team Explorer that is running on the local computer has not been refreshed to reflect recent changes.
+- Team Explorer that is running on the local computer has not been refreshed to reflect recent changes.
 
-* You do not have sufficient user permissions to connect to the server that hosts SharePoint Products.
+- You do not have sufficient user permissions to connect to the server that hosts SharePoint Products.
 
-* The network is not operational.
+- The network is not operational.
 
-* The application-tier server is offline.
+- The application-tier server is offline.
 
   You can use the procedures in the following table to correct the problem.
 
@@ -36,7 +36,7 @@ This error occurs when Team Explorer is not synchronized with or cannot establis
 
 ### To correct this error when caused by insufficient permissions
 
-* Contact your Team Foundation Server administrator and request that they add the necessary permissions to your user account.
+- Contact your Team Foundation Server administrator and request that they add the necessary permissions to your user account.
 
 ### To correct this error when caused by network problems
 
@@ -46,9 +46,9 @@ This error occurs when Team Explorer is not synchronized with or cannot establis
 
 ### To correct this error when caused by Team Foundation Server being offline
 
-* Contact the Team Foundation Server administrator and ask that the application-tier server be restarted.
+- Contact the Team Foundation Server administrator and ask that the application-tier server be restarted.
 
 ## Related articles
 
-* [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md)
-* [Connect to projects](../../organizations/projects/connect-to-projects.md)
+- [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md)
+- [Connect to projects](../../organizations/projects/connect-to-projects.md)

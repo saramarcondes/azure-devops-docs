@@ -44,12 +44,12 @@ The Search extensions make it easy to search for information across all
 your projects, from anywhere and any computer or mobile device, using just a web browser.
 You can narrow down your results and focus in on what you need by using filters.
 
-* **[Code Search](code-search.md)**
-* **[Work Item Search](work-item-search.md)**
-* **[Wiki Search](../wiki/search-wiki.md)**
-* **[Package Search](package-search.md)**
+- **[Code Search](code-search.md)**
+- **[Work Item Search](work-item-search.md)**
+- **[Wiki Search](../wiki/search-wiki.md)**
+- **[Package Search](package-search.md)**
 
 ## Related articles
 
-* [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-managed-queries.md?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
-* [Search your Wiki](https://blogs.msdn.microsoft.com/devops/2017/12/01/announcing-public-preview-of-wiki-search/)
+- [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-managed-queries.md?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
+- [Search your Wiki](https://blogs.msdn.microsoft.com/devops/2017/12/01/announcing-public-preview-of-wiki-search/)

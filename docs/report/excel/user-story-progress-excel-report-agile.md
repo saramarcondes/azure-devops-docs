@@ -37,9 +37,9 @@ You can use the User Stories Progress report to understand how well the team is 
 
 For the User Stories Progress report to be useful and accurate, the team must perform the following activities:
 
-* Define user stories.
-* Update the **State** of each user story as it transitions from **Active** to **Resolved** to **Closed**.
-* (optional) Specify the **Iteration** path, **Area** path, or both of each user story if you want to filter by those fields.
+- Define user stories.
+- Update the **State** of each user story as it transitions from **Active** to **Resolved** to **Closed**.
+- (optional) Specify the **Iteration** path, **Area** path, or both of each user story if you want to filter by those fields.
 
 <a name="Interpreting"></a>
 
@@ -63,5 +63,5 @@ You can update the User Stories Progress report by opening the report in Office 
 
 ## Related articles
 
-* [Excel reports](excel-reports.md)
-* [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)
+- [Excel reports](excel-reports.md)
+- [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)

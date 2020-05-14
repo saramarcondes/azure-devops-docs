@@ -39,17 +39,17 @@ Each team project wiki is powered by a Git repository in the back-end. When you 
 
 ::: moniker range="azure-devops"
 
-* You must have a team project. If you don't have a team project yet, create one in [Azure DevOps](../../organizations/accounts/set-up-vs.md).
-* You must have the permission **Create Repository** to publish code as wiki. By default, this permissions is set for members of the [Project Administrators group](../../organizations/security/set-git-tfvc-repository-permissions.md).
-* Anyone who is a member of the Contributors security group can add or edit wiki pages. Anyone with access to the team project, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view the wiki.
+- You must have a team project. If you don't have a team project yet, create one in [Azure DevOps](../../organizations/accounts/set-up-vs.md).
+- You must have the permission **Create Repository** to publish code as wiki. By default, this permissions is set for members of the [Project Administrators group](../../organizations/security/set-git-tfvc-repository-permissions.md).
+- Anyone who is a member of the Contributors security group can add or edit wiki pages. Anyone with access to the team project, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view the wiki.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018 || azure-devops-2019"
 
-* You must have a team project. If you don't have a team project yet, create one [on-premises](../../organizations/projects/create-project.md).
-* You must have the permission **Create Repository** to publish code as wiki. By default, this permissions is set for members of the [Project Administrators group](../../organizations/security/set-git-tfvc-repository-permissions.md).
-* Anyone who is a member of the Contributors security group can add or edit wiki pages. Anyone with access to the team project, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view the wiki.
+- You must have a team project. If you don't have a team project yet, create one [on-premises](../../organizations/projects/create-project.md).
+- You must have the permission **Create Repository** to publish code as wiki. By default, this permissions is set for members of the [Project Administrators group](../../organizations/security/set-git-tfvc-repository-permissions.md).
+- Anyone who is a member of the Contributors security group can add or edit wiki pages. Anyone with access to the team project, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view the wiki.
 
 ::: moniker-end
 
@@ -125,13 +125,13 @@ az devops wiki create [--mapped-path]
 
 #### Parameters
 
-* **mapped-path**: (Required for the **codewiki** type). Mapped path of the new wiki. For example, you can specify "/" to publish from the root of the repository.
-* **name**: (Required for the **codewiki** type). Name of the new wiki. If you don't specify a name for type **projectwiki**, then the new wiki will be named _TeamProjectName_.wiki.
-* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-* **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
-* **repository**: (Required for the **codewiki** type). Name or ID of the repository to publish the wiki from.
-* **type**: Type of wiki to create. The accepted values are **projectwiki** (default) and **codewiki**.
-* **version**: (Required for the **codewiki** type). Repository branch name to publish the code wiki from.
+- **mapped-path**: (Required for the **codewiki** type). Mapped path of the new wiki. For example, you can specify "/" to publish from the root of the repository.
+- **name**: (Required for the **codewiki** type). Name of the new wiki. If you don't specify a name for type **projectwiki**, then the new wiki will be named _TeamProjectName_.wiki.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **repository**: (Required for the **codewiki** type). Name or ID of the repository to publish the wiki from.
+- **type**: Type of wiki to create. The accepted values are **projectwiki** (default) and **codewiki**.
+- **version**: (Required for the **codewiki** type). Repository branch name to publish the code wiki from.
 
 #### Example
 

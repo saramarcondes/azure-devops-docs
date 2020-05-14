@@ -48,18 +48,18 @@ Steps can be tasks, scripts, or references to external templates.
 
 This hierarchy is reflected in the structure of a YAML file like:
 
-* Pipeline
-  * Stage A
-    * Job 1
-      * Step 1.1
-      * Step 1.2
-      * ...
-    * Job 2
-      * Step 2.1
-      * Step 2.2
-      * ...
-  * Stage B
-    * ...
+- Pipeline
+  - Stage A
+    - Job 1
+      - Step 1.1
+      - Step 1.2
+      - ...
+    - Job 2
+      - Step 2.1
+      - Step 2.2
+      - ...
+  - Stage B
+    - ...
 
 Simple pipelines don't require all of these levels.
 For example, in a single-job build you can omit the containers for stages and jobs because there are only steps.
@@ -78,15 +78,15 @@ Steps can be tasks, scripts, or references to external templates.
 
 This hierarchy is reflected in the structure of a YAML file like:
 
-* Pipeline
-  * Job 1
-    * Step 1.1
-    * Step 1.2
-    * ...
-  * Job 2
-    * Step 2.1
-    * Step 2.2
-    * ...
+- Pipeline
+  - Job 1
+    - Step 1.1
+    - Step 1.2
+    - ...
+  - Job 2
+    - Step 2.1
+    - Step 2.2
+    - ...
 
 For single-job pipelines, you can omit the jobs container because there are only steps.
 And because many options shown in this article aren't required and have good defaults, your YAML definitions are unlikely to include all of them.
@@ -97,14 +97,14 @@ And because many options shown in this article aren't required and have good def
 
 Here are the syntax conventions used in this article:
 
-* To the left of `:` is a literal keyword used in pipeline definitions.
-* To the right of `:` is a data type.
+- To the left of `:` is a literal keyword used in pipeline definitions.
+- To the right of `:` is a data type.
   The data type can be a primitive type like **string** or a reference to a rich structure defined elsewhere in this article.
-* The notation `[` _datatype_ `]` indicates an array of the mentioned data type.
+- The notation `[` _datatype_ `]` indicates an array of the mentioned data type.
   For instance, `[ string ]` is an array of strings.
-* The notation `{` _datatype_ `:` _datatype_ `}` indicates a mapping of one data type to another.
+- The notation `{` _datatype_ `:` _datatype_ `}` indicates a mapping of one data type to another.
   For instance, `{ string: string }` is a mapping of strings to strings.
-* The symbol `|` indicates there are multiple data types available for the keyword.
+- The symbol `|` indicates there are multiple data types available for the keyword.
   For instance, `job | templateReference` means either a job definition or a template reference is allowed.
 
 ### YAML basics
@@ -187,11 +187,11 @@ jobs:
 
 Learn more about:
 
-* [Pipelines with multiple jobs](process/phases.md?tabs=yaml)
-* [Containers](#container-resource) and [repositories](#repository-resource) in pipelines
-* [Triggers](#triggers)
-* [Variables](process/variables.md?tabs=yaml)
-* [Build number formats](process/run-number.md)
+- [Pipelines with multiple jobs](process/phases.md?tabs=yaml)
+- [Containers](#container-resource) and [repositories](#repository-resource) in pipelines
+- [Triggers](#triggers)
+- [Variables](process/variables.md?tabs=yaml)
+- [Build number formats](process/run-number.md)
 
 ::: moniker range="> azure-devops-2019"
 
@@ -551,23 +551,23 @@ steps:
 
 For more information about steps, see the schema references for:
 
-* [Script](#script)
-* [Bash](#bash)
-* [Pwsh](#pwsh)
-* [PowerShell](#powershell)
-* [Checkout](#checkout)
-* [Task](#task)
-* [Step templates](#step-templates)
+- [Script](#script)
+- [Bash](#bash)
+- [Pwsh](#pwsh)
+- [PowerShell](#powershell)
+- [Checkout](#checkout)
+- [Task](#task)
+- [Step templates](#step-templates)
 
 All steps, regardless of whether they're documented in this article, support the following properties:
 
-* **displayName**
-* **name**
-* **condition**
-* **continueOnError**
-* **enabled**
-* **env**
-* **timeoutInMinutes**
+- **displayName**
+- **name**
+- **condition**
+- **continueOnError**
+- **enabled**
+- **env**
+- **timeoutInMinutes**
 
 ## Variables
 
@@ -676,14 +676,14 @@ Azure Pipelines supports four kinds of templates:
 
 Azure Pipelines supports four kinds of templates:
 
-* [Stage](#stage-templates)
-* [Job](#job-templates)
-* [Step](#step-templates)
-* [Variable](#variable-templates)
+- [Stage](#stage-templates)
+- [Job](#job-templates)
+- [Step](#step-templates)
+- [Variable](#variable-templates)
 
 You can also use templates to control what is allowed in a pipeline and to define how parameters can be used.
 
-* [Parameter](#parameters)
+- [Parameter](#parameters)
 
 ::: moniker-end
 
@@ -693,8 +693,8 @@ You can export reusable sections of your pipeline to separate files.
 These separate files are known as templates.
 Azure DevOps Server 2019 supports these two kinds of templates:
 
-* [Job](#job-templates)
-* [Step](#step-templates)
+- [Job](#job-templates)
+- [Step](#step-templates)
 
 ::: moniker-end
 
@@ -1054,9 +1054,9 @@ See [templates](process/templates.md) for more about working with templates.
 A resource is any external service that is consumed as part of your pipeline.
 An example of a resource is another CI/CD pipeline that produces:
 
-* Artifacts like Azure Pipelines or Jenkins.
-* Code repositories like GitHub, Azure Repos, or Git.
-* Container-image registries like Azure Container Registry or Docker hub.
+- Artifacts like Azure Pipelines or Jenkins.
+- Code repositories like GitHub, Azure Repos, or Git.
+- Container-image registries like Azure Container Registry or Docker hub.
 
 Resources in YAML represent sources of pipelines, containers, repositories, and types. For more information on Resources, [see here](process/resources.md).
 
@@ -1231,24 +1231,24 @@ resources:
 Pipelines support the following values for the repository type: `git`, `github`, and `bitbucket`.
 The `git` type refers to Azure Repos Git repos.
 
-* If you specify `type: git`, the `name` value refers to another repository in the same project.
+- If you specify `type: git`, the `name` value refers to another repository in the same project.
   An example is `name: otherRepo`.
   To refer to a repo in another project within the same organization, prefix the name with that project's name.
   An example is `name: OtherProject/otherRepo`.
 
-* If you specify `type: github`, the `name` value is the full name of the GitHub repo and includes the user or organization.
+- If you specify `type: github`, the `name` value is the full name of the GitHub repo and includes the user or organization.
   An example is `name: Microsoft/vscode`.
   GitHub repos require a [GitHub service connection](library/service-endpoints.md) for authorization.
 
-* If you specify `type: bitbucket`, the `name` value is the full name of the Bitbucket Cloud repo and includes the user or organization.
+- If you specify `type: bitbucket`, the `name` value is the full name of the Bitbucket Cloud repo and includes the user or organization.
   An example is `name: MyBitBucket/vscode`.
   Bitbucket Cloud repos require a [Bitbucket Cloud service connection](library/service-endpoints.md#sep-bbucket) for authorization.
 
 ## Triggers
 
-* [Push trigger](#push-trigger)
-* [Pull request trigger](#pr-trigger)
-* [Scheduled trigger](#scheduled-trigger)
+- [Push trigger](#push-trigger)
+- [Pull request trigger](#pr-trigger)
+- [Scheduled trigger](#scheduled-trigger)
 
 > [!NOTE]
 > Trigger blocks can't contain variables or template expressions.
@@ -1924,9 +1924,9 @@ steps:
 
 ### Artifact download location
 
-Artifacts from the current pipeline are downloaded to $(**Pipeline.Workspace**)/<artifact name>.
+Artifacts from the current pipeline are downloaded to \$(**Pipeline.Workspace**)/<artifact name>.
 
-Artifacts from the associated pipeline resource are downloaded to $(**Pipeline.Workspace**)/\<pipeline resource identifier\>/<artifact name>.
+Artifacts from the associated pipeline resource are downloaded to \$(**Pipeline.Workspace**)/\<pipeline resource identifier\>/<artifact name>.
 
 ### Automatic download in deployment jobs
 
@@ -2031,9 +2031,9 @@ steps:
 
 In the following example, three repositories are checked out:
 
-* A GitHub repository named `tools` declared in repository resources.
-* An Azure Repos Git repository named `resources` declared inline with the `checkout` step.
-* The repository represented by `self`.
+- A GitHub repository named `tools` declared in repository resources.
+- An Azure Repos Git repository named `resources` declared inline with the `checkout` step.
+- The repository represented by `self`.
 
 ```yaml
 resources:

@@ -139,7 +139,7 @@ To view and update the test results:
 
 ## See Also
 
-* [Run automated tests from test plans](../run-automated-tests-from-test-hub.md)
-* [Continuous testing scenarios and capabilities](../../pipelines/index.yml)
+- [Run automated tests from test plans](../run-automated-tests-from-test-hub.md)
+- [Continuous testing scenarios and capabilities](../../pipelines/index.yml)
 
 [!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)]

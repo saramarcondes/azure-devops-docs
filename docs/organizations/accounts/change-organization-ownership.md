@@ -31,8 +31,8 @@ If no one in the organization has these permissions, contact
 
 Make sure the new owner has completed the following tasks:
 
-* Signed in to your organization, created a profile, and agreed to the Terms of Service.
-* Accessed the organization at least once after creating an initial profile.
+- Signed in to your organization, created a profile, and agreed to the Terms of Service.
+- Accessed the organization at least once after creating an initial profile.
 
   ![Last access date](media/change-organization-ownership/user-last-access.png)
 
@@ -56,6 +56,6 @@ Make sure the new owner has completed the following tasks:
 
 ## Related articles
 
-* [Assign a new owner to your orphaned organization](resolve-orphaned-organization.md)
-* [Change organization location](change-organization-location.md)
-* [Connect your organization to Azure AD](connect-organization-to-azure-ad.md)
+- [Assign a new owner to your orphaned organization](resolve-orphaned-organization.md)
+- [Change organization location](change-organization-location.md)
+- [Connect your organization to Azure AD](connect-organization-to-azure-ad.md)

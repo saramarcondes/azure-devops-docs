@@ -47,12 +47,12 @@ A: You can't install extensions for one of the following reasons.
 
 <a name="no-permissions"></a>
 
-* You must have [Project Collection Administrator or organization Owner permissions](../organizations/security/lookup-organization-owner-admin.md).
+- You must have [Project Collection Administrator or organization Owner permissions](../organizations/security/lookup-organization-owner-admin.md).
   If you don't have permissions, but you're an organization member, you can [request extensions](request-extensions.md) instead.
 
 <a name="no-assignment"></a>
 
-* If you get an "already installed or requested" error check with your Project Collection Administrator
+- If you get an "already installed or requested" error check with your Project Collection Administrator
   or organization Owner, and ask them to assign the extension to you.
 
 ::: moniker-end
@@ -81,10 +81,10 @@ or try [Azure Support](https://azure.microsoft.com/support/options/).
 
 A: You can't install extensions for TFS for one of the following reasons:
 
-* You must be a member of the [Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md)
+- You must be a member of the [Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md)
   with [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection) in the project collection where you want to install extensions. If you don't have permissions, you can [request extensions](./how-to/request-tfs-extensions.md) instead.
 
-* If you get an error that your extension is already installed or requested, check with your Project Collection Administrator and ask them to assign the extension to you.
+- If you get an error that your extension is already installed or requested, check with your Project Collection Administrator and ask them to assign the extension to you.
 
     <!-- image placeholder -->
 
@@ -123,10 +123,10 @@ to sign in to the Marketplace.
 
 A: Some extensions work only with Azure DevOps, not TFS, for one of the following reasons:
 
-* The extension uses Azure DevOps features that aren't released yet for TFS.
-* The [extension manifest](../extend/develop/manifest.md) indicates that the extension
+- The extension uses Azure DevOps features that aren't released yet for TFS.
+- The [extension manifest](../extend/develop/manifest.md) indicates that the extension
   is available only for Azure DevOps Services (targets = Microsoft.Visualstudio.Services.Cloud).
-* The extension manifest indicates that the extension is an integration (targets = Microsoft.Visualstudio.Services.Integration).
+- The extension manifest indicates that the extension is an integration (targets = Microsoft.Visualstudio.Services.Integration).
 
 <a name="no-upload"></a>
 
@@ -152,16 +152,16 @@ for the Team Foundation Server where you want to upload extensions.
 
 A: Depending on the support you need, choose from the following links:
 
-* Billing questions - [Azure billing support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)
-* Visual Studio subscriptions - [subscriptions support](https://visualstudio.microsoft.com/subscriptions/support)
-* Help with Azure DevOps - [Azure DevOps support](https://azure.microsoft.com/support/devops/)
-* Help with Team Foundation Server - [TFS support](https://visualstudio.microsoft.com/team-services/tfs_support)
-* General Marketplace help - [Contact the Marketplace team](mailto:vsmarketplace@microsoft.com)
+- Billing questions - [Azure billing support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)
+- Visual Studio subscriptions - [subscriptions support](https://visualstudio.microsoft.com/subscriptions/support)
+- Help with Azure DevOps - [Azure DevOps support](https://azure.microsoft.com/support/devops/)
+- Help with Team Foundation Server - [TFS support](https://visualstudio.microsoft.com/team-services/tfs_support)
+- General Marketplace help - [Contact the Marketplace team](mailto:vsmarketplace@microsoft.com)
 
 ## Related articles
 
-* [Azure DevOps billing overview](../organizations/billing/overview.md)
-* [Azure DevOps billing FAQ](../organizations/billing/billing-faq.md)
-* [How to pay for TFS users](../organizations/billing/buy-access-tfs-test-hub.md)
-* [How to buy Visual Studio cloud subscriptions](/visualstudio/subscriptions/vscloud-overview)
-* [Visual Studio cloud subscription billing FAQ](/visualstudio/subscriptions/vscloud-billing-faq)
+- [Azure DevOps billing overview](../organizations/billing/overview.md)
+- [Azure DevOps billing FAQ](../organizations/billing/billing-faq.md)
+- [How to pay for TFS users](../organizations/billing/buy-access-tfs-test-hub.md)
+- [How to buy Visual Studio cloud subscriptions](/visualstudio/subscriptions/vscloud-overview)
+- [Visual Studio cloud subscription billing FAQ](/visualstudio/subscriptions/vscloud-billing-faq)

@@ -23,7 +23,7 @@ You can customize a project's initial build permissions that are used by Team Fo
 > Instead, default permissions are set for project-level and collection-level  
 >  security groups for [build pipelines (object-level)](../../organizations/security/permissions.md#build).
 
-The names of the file, the folder, and the plug-in for the default process templates are as follows:  
+The names of the file, the folder, and the plug-in for the default process templates are as follows:
 
 **File name**: Build.xml  
 **Folder name**: Build
@@ -39,25 +39,25 @@ The following code represents the default build.xml file that is defined for all
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <?xml version="1.0" encoding="utf-8"?>  
-> <tasks>  
->   <task id="BuildTask" name="Add Build Permissions" plugin="Microsoft.ProjectCreationWizard.Build" completionMessage="Build tasks completed.">  
->     <dependencies />  
->     <taskXml>  
->       <!-- Project-level groups -->  
->       <Permission allow="ViewBuilds, ViewBuildDefinition" identity="[$$PROJECTNAME$$]\Readers" />  
->       <Permission allow="EditBuildQuality, ViewBuilds, QueueBuilds, ViewBuildDefinition" identity="[$$PROJECTNAME$$]\Contributors" />  
->       <Permission allow="DeleteBuilds, DestroyBuilds, EditBuildQuality, ManageBuildQualities, RetainIndefinitely, ViewBuilds, ManageBuildQueue, QueueBuilds, StopBuilds, DeleteBuildDefinition, EditBuildDefinition, ViewBuildDefinition, AdministerBuildPermissions" identity="[$$PROJECTNAME$$]\Build Administrators" />  
+> <?xml version="1.0" encoding="utf-8"?>
+> <tasks>
+>   <task id="BuildTask" name="Add Build Permissions" plugin="Microsoft.ProjectCreationWizard.Build" completionMessage="Build tasks completed.">
+>     <dependencies />
+>     <taskXml>
+>       <!-- Project-level groups -->
+>       <Permission allow="ViewBuilds, ViewBuildDefinition" identity="[$$PROJECTNAME$$]\Readers" />
+>       <Permission allow="EditBuildQuality, ViewBuilds, QueueBuilds, ViewBuildDefinition" identity="[$$PROJECTNAME$$]\Contributors" />
+>       <Permission allow="DeleteBuilds, DestroyBuilds, EditBuildQuality, ManageBuildQualities, RetainIndefinitely, ViewBuilds, ManageBuildQueue, QueueBuilds, StopBuilds, DeleteBuildDefinition, EditBuildDefinition, ViewBuildDefinition, AdministerBuildPermissions" identity="[$$PROJECTNAME$$]\Build Administrators" />
 >       <Permission allow="DeleteBuilds, DestroyBuilds, EditBuildQuality, ManageBuildQualities, RetainIndefinitely, ViewBuilds, ManageBuildQueue, QueueBuilds, StopBuilds, DeleteBuildDefinition, EditBuildDefinition, ViewBuildDefinition, AdministerBuildPermissions" identity="[$$PROJECTNAME$$]\$$PROJECTADMINGROUP$$" />
->       <!-- Collection-level groups -->  
->       <Permission allow="EditBuildQuality, ManageBuildQueue, OverrideBuildCheckInValidation, QueueBuilds, UpdateBuildInformation, ViewBuildDefinition, ViewBuilds" identity="$$PROJECTCOLLECTIONBUILDSERVICESGROUP$$" />  
->       <Permission allow="ViewBuildDefinition, EditBuildDefinition, DeleteBuildDefinition, QueueBuilds, ManageBuildQueue, StopBuilds, ViewBuilds, EditBuildQuality, RetainIndefinitely, DeleteBuilds, ManageBuildQualities, DestroyBuilds, AdministerBuildPermissions" identity="$$PROJECTCOLLECTIONBUILDADMINSGROUP$$" />  
->       <Permission allow="DeleteBuilds, DestroyBuilds, EditBuildQuality, ManageBuildQualities, RetainIndefinitely, ViewBuilds, ManageBuildQueue, QueueBuilds, StopBuilds, DeleteBuildDefinition, EditBuildDefinition, ViewBuildDefinition, AdministerBuildPermissions, OverrideBuildCheckInValidation" identity="$$PROJECTCOLLECTIONADMINGROUP$$" />  
->     </taskXml>  
->   </task>  
-> </tasks>  
+>       <!-- Collection-level groups -->
+>       <Permission allow="EditBuildQuality, ManageBuildQueue, OverrideBuildCheckInValidation, QueueBuilds, UpdateBuildInformation, ViewBuildDefinition, ViewBuilds" identity="$$PROJECTCOLLECTIONBUILDSERVICESGROUP$$" />
+>       <Permission allow="ViewBuildDefinition, EditBuildDefinition, DeleteBuildDefinition, QueueBuilds, ManageBuildQueue, StopBuilds, ViewBuilds, EditBuildQuality, RetainIndefinitely, DeleteBuilds, ManageBuildQualities, DestroyBuilds, AdministerBuildPermissions" identity="$$PROJECTCOLLECTIONBUILDADMINSGROUP$$" />
+>       <Permission allow="DeleteBuilds, DestroyBuilds, EditBuildQuality, ManageBuildQualities, RetainIndefinitely, ViewBuilds, ManageBuildQueue, QueueBuilds, StopBuilds, DeleteBuildDefinition, EditBuildDefinition, ViewBuildDefinition, AdministerBuildPermissions, OverrideBuildCheckInValidation" identity="$$PROJECTCOLLECTIONADMINGROUP$$" />
+>     </taskXml>
+>   </task>
+> </tasks>
 > ```
 
 ## Related articles
 
-* [Control access to functional areas](control-access-to-functional-areas.md)
+- [Control access to functional areas](control-access-to-functional-areas.md)

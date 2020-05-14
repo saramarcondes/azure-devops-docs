@@ -20,11 +20,11 @@ You can query for data about work items that are linked to test results by using
 
 FactWorkItemTestResult is associated with the following dimension tables:
 
-* DimTeamProject
+- DimTeamProject
 
-* DimTestResult
+- DimTestResult
 
-* DimWorkItem
+- DimWorkItem
 
 ## Related notes
 

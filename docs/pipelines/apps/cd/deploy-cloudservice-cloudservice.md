@@ -30,7 +30,7 @@ or to [Azure Stack](../../targets/azure-stack.md).
 
 Before you begin, you'll need a CI build that publishes your Cloud Service package. To set up CI, see:
 
-* [Build your Azure Cloud Service](../aspnet/build-aspnet-cloudservice.md)
+- [Build your Azure Cloud Service](../aspnet/build-aspnet-cloudservice.md)
 
 ### Azure storage
 
@@ -47,10 +47,10 @@ Carry out the following steps in the Azure portal to create one.
 
 1.  In the **Create Storage Account** blade:
 
-    * Enter a name for the new storage account.
-    * Select an existing Resource Group, or create a new one.
-    * Select a location for the new storage account.
-    * Leave all the other settings at their default values, and choose **Create**.<p />
+    - Enter a name for the new storage account.
+    - Select an existing Resource Group, or create a new one.
+    - Select a location for the new storage account.
+    - Leave all the other settings at their default values, and choose **Create**.<p />
 
 1.  After the storage account has been created, open its
     blade and choose the **Blobs** tile. In the
@@ -66,11 +66,11 @@ Continuous deployment (CD) means starting an automated release pipeline whenever
 
 1.  Do one of the following:
 
-    * If you've just completed a CI build (see above) then, in the build's
+    - If you've just completed a CI build (see above) then, in the build's
       **Summary** tab under **Deployments**, choose **Create release** followed by **Yes**.
       This starts a new release pipeline that's automatically linked to the build pipeline.
 
-    * Open the **Releases** tab of **Azure Pipelines**, open the **+** drop-down
+    - Open the **Releases** tab of **Azure Pipelines**, open the **+** drop-down
       in the list of release pipelines, and choose **Create release pipeline**.
 
 1.  Select the **Azure Cloud Service Deployment** template and choose **Apply**.
@@ -88,11 +88,11 @@ Continuous deployment (CD) means starting an automated release pipeline whenever
 
 1.  Open the **Tasks** tab and select the **Stage 1** item. Configure the task variables as follows:
 
-    * **Azure Subscription (Classic)**: Select an Azure Classic service connection. If you have not created one already, create one now by choosing **Add**. Then return to your release pipeline, refresh the **Azure Subscription** list, and select the connection you just created.
+    - **Azure Subscription (Classic)**: Select an Azure Classic service connection. If you have not created one already, create one now by choosing **Add**. Then return to your release pipeline, refresh the **Azure Subscription** list, and select the connection you just created.
 
-    * **Storage account**: Select the storage account you created earlier.
+    - **Storage account**: Select the storage account you created earlier.
 
-    * **Service name**: Select the name of an existing cloud service, or enter the name of a new cloud service.<p />
+    - **Service name**: Select the name of an existing cloud service, or enter the name of a new cloud service.<p />
 
     > If your Azure subscription is defined in an Azure Government Cloud, ensure your deployment pipeline meets the relevant compliance requirements. For more details, see [Azure Government Cloud deployments](../../library/government-cloud.md).
 

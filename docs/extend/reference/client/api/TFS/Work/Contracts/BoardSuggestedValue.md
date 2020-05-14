@@ -15,4 +15,4 @@ Module path: `TFS/Work/Contracts`
 
 ### Members
 
-* `name`: string.
+- `name`: string.

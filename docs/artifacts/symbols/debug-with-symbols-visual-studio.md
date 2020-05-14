@@ -34,8 +34,8 @@ If you're debugging an optimized module (e.g. something that was built with the 
 
 To debug the module, you can either:
 
-* Open the Modules window, right-click the module, and choose "Load Symbols" (recommended)
-* In Options > Debugging > General, uncheck "Enable Just My Code"
+- Open the Modules window, right-click the module, and choose "Load Symbols" (recommended)
+- In Options > Debugging > General, uncheck "Enable Just My Code"
 
 ## Source Link support
 

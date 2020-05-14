@@ -27,7 +27,7 @@ Symbol servers enables your debugger to automatically retrieve the correct symbo
 > [!NOTE]
 > This build task works only:
 >
-> * For code in Git or TFVC stored in Team Foundation Server (TFS) or Azure Repos. It does not work for any other type of repository.
+> - For code in Git or TFVC stored in Team Foundation Server (TFS) or Azure Repos. It does not work for any other type of repository.
 
 ## Demands
 

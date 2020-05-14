@@ -22,13 +22,13 @@ This walkthrough assumes that you're using Azure DevOps Services Team Build (not
 
 Azure DevOps Services NuGet service provides a number of benefits compared to file shares. However, some of these benefits may require changes to your existing workflows.
 
-* **Indexing:** Azure DevOps Services maintains an index of all the packages in each feed, which enables fast `nuget list` operations.
+- **Indexing:** Azure DevOps Services maintains an index of all the packages in each feed, which enables fast `nuget list` operations.
   List operations on your file shares require the client to open every `nupkg` and examine the `nuspec` for metadata unless your
   file share has been configured to provide an index that the NuGet client understands.
-* **Immutability:** A package version (e.g. `MyPackage.1.0.0.0.nupkg`) can only be pushed to a feed once.
+- **Immutability:** A package version (e.g. `MyPackage.1.0.0.0.nupkg`) can only be pushed to a feed once.
   This ensures that any dependencies on that version are guaranteed to remain valid.
   However, if you have workflows that publish packages with newer binaries without changing the version number, those workflows will break when moved to Azure DevOps Services NuGet feeds. Learn more about [Immutability in Azure DevOps Services](../artifacts-key-concepts.md#immutability).
-* **Well-formedness:** Azure DevOps Services validates all pushed packages to ensure they're well-formed.
+- **Well-formedness:** Azure DevOps Services validates all pushed packages to ensure they're well-formed.
   This prevents invalid packages from entering your development and build environments.
   However, any workflow that publishes malformed packages will break when moving to Azure DevOps Services NuGet feeds.
 
@@ -41,12 +41,12 @@ Azure DevOps Services NuGet service provides a number of benefits compared to fi
 If you're using Active Directory-backed file shares, you and your on-prem build agents are likely authenticating automatically using Windows NTLM.
 Moving your packages to Azure DevOps Services will require a few changes:
 
-* **Authentication:** You need to provide the NuGet client with credentials in order to restore and push packages.
-  * **Visual Studio 2015 users**: Credential acquisition happens automatically, as long as you've updated the
+- **Authentication:** You need to provide the NuGet client with credentials in order to restore and push packages.
+  - **Visual Studio 2015 users**: Credential acquisition happens automatically, as long as you've updated the
     [NuGet Package Manager](../nuget/consume.md) extension to version 3.3 or higher by going to the Tools menu and using the Extensions and Updates window.
-  * **nuget.exe 3.x users**: Credential acquisition happens automatically after you install the
+  - **nuget.exe 3.x users**: Credential acquisition happens automatically after you install the
     [Azure DevOps Services Credential Provider](../nuget/nuget-exe.md).
-* **Authorization:** Ensure that any principal (user, service organization, group, etc.) that needs access to your packages has the appropriate permissions. See the [permissions](#make-a-plan-for-permissions) section for details.
+- **Authorization:** Ensure that any principal (user, service organization, group, etc.) that needs access to your packages has the appropriate permissions. See the [permissions](#make-a-plan-for-permissions) section for details.
 
 ## Move your packages
 
@@ -63,10 +63,10 @@ Moving your packages to the cloud is a 4-step process:
 
 Before making any configuration changes, find your existing NuGet file shares by checking:
 
-* Any nuget.config files in your codebase, likely in the same folder as your .sln file
-* The global nuget.config file at
-  * Command Prompt: `%APPDATA%\NuGet\NuGet.Config`
-  * PowerShell: `$env:APPDATA\NuGet\NuGet.Config`
+- Any nuget.config files in your codebase, likely in the same folder as your .sln file
+- The global nuget.config file at
+  - Command Prompt: `%APPDATA%\NuGet\NuGet.Config`
+  - PowerShell: `$env:APPDATA\NuGet\NuGet.Config`
 
 Look for any lines with a UNC path (like `<add key="SMBNuGetServer" value="\\server\share\NuGet" />`) and note the path. You'll use the list of paths in the [migrate](#migrate-your-packages) section later.
 
@@ -76,15 +76,15 @@ Look for any lines with a UNC path (like `<add key="SMBNuGetServer" value="\\ser
 
 When setting up your new feeds, you can either:
 
-* Set up your feed permissions to match your existing file share permissions
-* Align your feed permissions with existing Azure DevOps Services teams and groups
+- Set up your feed permissions to match your existing file share permissions
+- Align your feed permissions with existing Azure DevOps Services teams and groups
 
 If you want to match your existing file share permissions, note the permissions on each share that contains packages.
 Specifically, note the principals with:
 
-* **Full control**
-* **Modify** or **write**
-* **Read & execute**, **List folder contents**, or **Read**
+- **Full control**
+- **Modify** or **write**
+- **Read & execute**, **List folder contents**, or **Read**
 
 <a name="set-up-your-feeds"></a>
 
@@ -99,8 +99,8 @@ For this walkthrough, we'll assume a 1:1 mapping of feeds to SMB shares.
 
 For each SMB share, create a feed using the [instructions here](../feeds/create-feed.md). In the create dialog:
 
-* Use the name of the SMB share folder as the **Feed name**
-* Leave the defaults for **Who can read** and **Who can contribute**
+- Use the name of the SMB share folder as the **Feed name**
+- Leave the defaults for **Who can read** and **Who can contribute**
 
 For each feed you've created, [edit the feed and set permissions](../feeds/feed-permissions.md). There are a set of
 [common identities](../feeds/feed-permissions.md) that you should consider when setting up feed permissions.

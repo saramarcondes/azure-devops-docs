@@ -18,13 +18,13 @@ monikerRange: '>= tfs-2013'
 
 In this article, learn the answers to the following frequently asked questions (FAQs) about user and permissions management in Azure DevOps. FAQs are grouped by the following subjects:
 
-* [General permissions](#general-permissions)
-* [Visual Studio subscriptions](#visual-studio-subscriptions)
-* [User access](#user-access)
-* [Change app access policies](#change-app-access-policies)
-* [Leave your organization](#leave-organization)
-* [Group-based licensing](#group-based-licensing)
-* [Add members to projects](#add-members-to-projects)
+- [General permissions](#general-permissions)
+- [Visual Studio subscriptions](#visual-studio-subscriptions)
+- [User access](#user-access)
+- [Change app access policies](#change-app-access-policies)
+- [Leave your organization](#leave-organization)
+- [Group-based licensing](#group-based-licensing)
+- [Add members to projects](#add-members-to-projects)
 
 <a name="general-permissions"></a>
 
@@ -46,11 +46,9 @@ If you have at least Basic access, you can find the current owner in your organi
 
 1.  Go to your **Organization settings**.
 
-
     ![Open Organization settings](/azure/devops/media/settings/open-admin-settings-vert.png)
 
 2.  Find the current owner.
-
 
     ![Find the current owner in organization information](/azure/devops/media/find-organization-owner.png)
 
@@ -153,9 +151,9 @@ A: No, a user can join only the organization for which the user has paid for Bas
 
 A: Make sure that users have the correct [access level](https://visualstudio.microsoft.com/team-services/compare-features/) assigned to them.
 
-* Learn [how to manage users and access levels for Azure DevOps](/azure/devops/organizations/accounts/add-organization-users).
+- Learn [how to manage users and access levels for Azure DevOps](/azure/devops/organizations/accounts/add-organization-users).
 
-* Learn [how to change access levels for Team Foundation Server](/azure/devops/organizations/security/change-access-levels).
+- Learn [how to change access levels for Team Foundation Server](/azure/devops/organizations/security/change-access-levels).
 
 Some features are available only as [extensions](https://visualstudio.microsoft.com/team-services/compare-features/). You need to install these extensions. Most extensions require you to have at least Basic access, not Stakeholder access. Check the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab.
 
@@ -165,9 +163,9 @@ To help your team improve app quality, you can install the free [Test & Feedback
 
 Some [Visual Studio subscribers](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) can use this feature for free, but Basic users need to upgrade to Basic + Test Plans access before they can create test plans.
 
-* Learn [how to get extensions for Azure DevOps](/azure/devops/marketplace/install-extension).
-* Learn [how to get extensions for TFS](/azure/devops/marketplace/get-tfs-extensions).
-* Learn [how to buy access to TFS Test](/azure/devops/organizations/billing/buy-access-tfs-test-hub).
+- Learn [how to get extensions for Azure DevOps](/azure/devops/marketplace/install-extension).
+- Learn [how to get extensions for TFS](/azure/devops/marketplace/get-tfs-extensions).
+- Learn [how to buy access to TFS Test](/azure/devops/organizations/billing/buy-access-tfs-test-hub).
 
 <a name="stopped-features"></a>
 
@@ -175,16 +173,15 @@ Some [Visual Studio subscribers](https://marketplace.visualstudio.com/items?item
 
 A: A user can lose access for the following reasons (although the user can continue to [work as a Stakeholder](../../organizations/security/get-started-stakeholder.md)):
 
-* The user's Visual Studio subscription has expired. Meanwhile, the user can [work as a Stakeholder](../../organizations/security/get-started-stakeholder.md), or you can give the user Basic access until the user renews their subscription. After the user signs in, Azure DevOps restores access automatically.
+- The user's Visual Studio subscription has expired. Meanwhile, the user can [work as a Stakeholder](../../organizations/security/get-started-stakeholder.md), or you can give the user Basic access until the user renews their subscription. After the user signs in, Azure DevOps restores access automatically.
 
-* The Azure subscription used for billing is no longer active. All purchases made with this subscription are affected, including Visual Studio subscriptions. To fix this issue, visit the [Azure account portal](https://portal.azure.com).
+- The Azure subscription used for billing is no longer active. All purchases made with this subscription are affected, including Visual Studio subscriptions. To fix this issue, visit the [Azure account portal](https://portal.azure.com).
 
-* The Azure subscription used for billing was removed from your organization. Learn more about [linking your organization](../../billing/set-up-billing-for-your-organization-vs.md).
+- The Azure subscription used for billing was removed from your organization. Learn more about [linking your organization](../../billing/set-up-billing-for-your-organization-vs.md).
 
-* Your organization has more users with Basic access than the number of users that you're paying for in Azure. Your organization includes five free users with Basic access. If you need to add more users with Basic access, you can [pay for these users](../../billing/buy-basic-access-add-users.md).
+- Your organization has more users with Basic access than the number of users that you're paying for in Azure. Your organization includes five free users with Basic access. If you need to add more users with Basic access, you can [pay for these users](../../billing/buy-basic-access-add-users.md).
 
-
-    Otherwise, on the first day of the calendar month, users who haven't signed in to your organization for the longest time lose access first. If your organization has users who don't need access anymore, [remove them from your organization](delete-organization-users.md).
+  Otherwise, on the first day of the calendar month, users who haven't signed in to your organization for the longest time lose access first. If your organization has users who don't need access anymore, [remove them from your organization](delete-organization-users.md).
 
 <a name="change-app-access-policies"></a>
 
@@ -303,9 +300,9 @@ First, check to see if you're an Azure AD guest:
 
 If you're an Azure AD guest, do one of the following steps:
 
-* Have another Azure DevOps admin, who isn't an Azure AD guest, manage the users in Azure DevOps for you. Members of the Project Collection Administrators group inside Azure DevOps can administer users.
-* Have the Azure AD admin remove you from the connected Azure AD and readd you. The admin needs to make you an Azure AD member rather than a guest. See **Can Azure AD B2B users be added as members instead of guests?**
-* Change the **User Type** of the Azure AD guest by using Azure AD PowerShell. We don't advise using the following process, but it works and allows the user to query Azure AD from Azure DevOps thereafter.
+- Have another Azure DevOps admin, who isn't an Azure AD guest, manage the users in Azure DevOps for you. Members of the Project Collection Administrators group inside Azure DevOps can administer users.
+- Have the Azure AD admin remove you from the connected Azure AD and readd you. The admin needs to make you an Azure AD member rather than a guest. See **Can Azure AD B2B users be added as members instead of guests?**
+- Change the **User Type** of the Azure AD guest by using Azure AD PowerShell. We don't advise using the following process, but it works and allows the user to query Azure AD from Azure DevOps thereafter.
 
 1.  [Download and install Azure AD PowerShell module](/powershell/module/azuread/?view=azureadps-2.0).
     ```
@@ -357,6 +354,6 @@ A: If you experience delays finding new users or having deleted users promptly r
 
 ## Related articles
 
-* [Access with Azure AD FAQs](faq-azure-access.md)
-* [Configure and customize organization FAQs](faq-configure-customize-organization.md)
-* [Set up Visual Studio FAQs](faq-set-up-vs.md)
+- [Access with Azure AD FAQs](faq-azure-access.md)
+- [Configure and customize organization FAQs](faq-configure-customize-organization.md)
+- [Set up Visual Studio FAQs](faq-set-up-vs.md)

@@ -22,10 +22,10 @@ In this article, you'll learn:
 
 > [!div class="checklist"]
 >
-> * How to add inline tests to a backlog item from your Kanban board
-> * How to run tests and update the status of tests
-> * How to expand or collapse inline tests
-> * How to reorder or reparent inline tests
+> - How to add inline tests to a backlog item from your Kanban board
+> - How to run tests and update the status of tests
+> - How to expand or collapse inline tests
+> - How to reorder or reparent inline tests
 
 <img src="media/i-test-board-intro.png" alt="Web portal, Kanban board with several inline tests defined" style="border: 1px solid #C3C3C3;" />
 
@@ -102,7 +102,7 @@ Prior to running the test, you must add details.
 
 Run the test by selecting ![Run icon](../media/icons/run_query.png) Run test from the ![Actions icon](../media/icons/actions-icon.png) actions menu for the inline test.
 
-<img src="media/i-test-run-test.png" alt="Run a test" style="border: 1px solid #C3C3C3;" />  
+<img src="media/i-test-run-test.png" alt="Run a test" style="border: 1px solid #C3C3C3;" />
 
 Microsoft Test Runner starts in a new browser instance. For details on running a test, see [Run manual tests](../../test/run-manual-tests.md).
 
@@ -112,7 +112,7 @@ You can update the status of the test from the ![Actions icon](../media/icons/ac
 
 <img src="media/i-test-update-status.png" alt="Check tasks that are complete" style="border: 1px solid #C3C3C3;" />
 
-Updating the status of tests enable you to <a href="../../test/track-test-status.md" data-raw-source="[track test results](../../test/track-test-status.md)">track test results</a>.  
+Updating the status of tests enable you to <a href="../../test/track-test-status.md" data-raw-source="[track test results](../../test/track-test-status.md)">track test results</a>.
 
 [Why doesn't the Kanban board show the status for test suites and plans already created in **Test**?](#test-status-kanban)
 
@@ -144,8 +144,8 @@ If you find that you don't use this feature, you can disable it from the [common
 
 Additional ways you can quickly add linked items and objects to user stories from the Kanban board:
 
-* [Add inline tasks](add-task-checklists.md)
-* [Create a new branch, drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md)
+- [Add inline tasks](add-task-checklists.md)
+- [Create a new branch, drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md)
 
 To initiate web-based exploratory testing for a user story, you need to install the [Test & Feedback Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web). For details, see [Install the Test & Feedback extension](../../test/perform-exploratory-tests.md).
 

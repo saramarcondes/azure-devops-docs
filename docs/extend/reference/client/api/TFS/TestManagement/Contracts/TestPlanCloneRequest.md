@@ -16,8 +16,8 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Members
 
-* `cloneOptions`: [CloneOptions](../../../TFS/TestManagement/Contracts/CloneOptions.md).
+- `cloneOptions`: [CloneOptions](../../../TFS/TestManagement/Contracts/CloneOptions.md).
 
-* `destinationTestPlan`: [TestPlan](../../../TFS/TestManagement/Contracts/TestPlan.md).
+- `destinationTestPlan`: [TestPlan](../../../TFS/TestManagement/Contracts/TestPlan.md).
 
-* `suiteIds`: number[].
+- `suiteIds`: number[].

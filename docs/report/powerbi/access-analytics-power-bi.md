@@ -46,7 +46,7 @@ You can access Analytics data through the Power BI Desktop OData feed.
 
     For example, if {_OrganizationName_} is **fabrikam** and {_version_} is **v1.0**, the URL is `https://analytics.dev.azure.com/fabrikam/_odata/v1.0/`.
 
-        ![Enter OData Feed URL](media/pbi3.png)  
+        ![Enter OData Feed URL](media/pbi3.png)
 
     > [!NOTE]  
     > Alternatively, you can enter the URL with the _ProjectName_ specified, as shown in the following example:  
@@ -69,8 +69,8 @@ You can access Analytics data through the Power BI Desktop OData feed.
     >
     > To prevent this issue:
     >
-    > * Instruct Power BI to reference OData v4.
-    > * Instruct the Analytics service to omit any values that are null, which improves query performance.
+    > - Instruct Power BI to reference OData v4.
+    > - Instruct the Analytics service to omit any values that are null, which improves query performance.
 
 1.  For each entity that you've selected in the preceding steps, do the following:
 
@@ -95,5 +95,5 @@ You can access Analytics data through the Power BI Desktop OData feed.
 
 ## Related articles
 
-* [Dataset design for the Power BI Connector for Azure DevOps](data-connector-dataset.md)
-* [Data Connector - Example reports](data-connector-examples.md)
+- [Dataset design for the Power BI Connector for Azure DevOps](data-connector-dataset.md)
+- [Data Connector - Example reports](data-connector-examples.md)

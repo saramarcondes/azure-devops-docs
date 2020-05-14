@@ -27,9 +27,9 @@ The Windows, macOS, and Linux file systems each have limitations and behaviors t
 
 Azure Repos offers [three cross-platform compatibility settings](repository-settings.md) that help protect your repo from people pushing commits that are incompatible with one or more platforms. The three file system limitations these settings are related to are:
 
-* Case Sensitivity
-* Restricted File and Folder Names
-* Path Length Restrictions
+- Case Sensitivity
+- Restricted File and Folder Names
+- Path Length Restrictions
 
 ## Case Sensitivity
 

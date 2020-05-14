@@ -70,12 +70,12 @@ We're happy to let you know that Release and Pipeline events are now available i
 
 The following events are available now:
 
-* Agent pool - create, delete, adding an agent (private agents) and removing and agent
-* Service Connection - execution, create, delete, and update
-* Variable Group - create, delete and update
-* Release - deleted, approval completed and definition update
-* RM stage completed
-* Deployment job completed
+- Agent pool - create, delete, adding an agent (private agents) and removing and agent
+- Service Connection - execution, create, delete, and update
+- Variable Group - create, delete and update
+- Release - deleted, approval completed and definition update
+- RM stage completed
+- Deployment job completed
 
 ### Enhancements to evaluate artifacts checks policy in pipelines
 

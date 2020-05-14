@@ -19,7 +19,7 @@ Each team's sprint planning and tracking tools automatically consider days off w
 
 [!INCLUDE [temp](includes/prerequisites-team-settings.md)]
 
-<a id="team-services-work-days" />  
+<a id="team-services-work-days" />
 
 ## Configure working days
 
@@ -54,7 +54,7 @@ Each team's sprint planning and tracking tools automatically consider days off w
 
 ::: moniker range="tfs-2015"
 
-<a  id="tfs-2015-work-days" />  
+<a  id="tfs-2015-work-days" />
 
 Open your team settings from the **Overview** tab of your team's admin context. Check or uncheck one or more days. Your changes are automatically saved.
 
@@ -70,6 +70,6 @@ To set non-working days, modify the **ProcessConfiguration** file. For details, 
 
 ## Related articles
 
-* [About Sprints, Scrum and project management](../../boards/sprints/scrum-overview.md)
-* [Scrum and sprint planning tools](../../boards/sprints/scrum-key-concepts.md)
-* [Manage teams and configure team tools](manage-teams.md)
+- [About Sprints, Scrum and project management](../../boards/sprints/scrum-overview.md)
+- [Scrum and sprint planning tools](../../boards/sprints/scrum-key-concepts.md)
+- [Manage teams and configure team tools](manage-teams.md)

@@ -104,9 +104,9 @@ You now have a pipeline that's ready to train your model!
 
 There are two primary ways to use automation with the Azure Machine Learning service:
 
-* The [Machine Learning CLI](/azure/machine-learning/service/reference-azure-machine-learning-cli) is an extension to the Azure CLI. It provides commands for working with the Azure Machine Learning service.
-* The [Azure Machine Learning SDK](/python/api/overview/azure/ml/intro?view=azure-ml-py) is Python package that provides programmatic access to the Azure Machine Learning service.
-  * The Python SDK includes [automated machine learning](/azure/machine-learning/service/concept-automated-ml) to assist in automating the time consuming, iterative tasks of machine learning model development.
+- The [Machine Learning CLI](/azure/machine-learning/service/reference-azure-machine-learning-cli) is an extension to the Azure CLI. It provides commands for working with the Azure Machine Learning service.
+- The [Azure Machine Learning SDK](/python/api/overview/azure/ml/intro?view=azure-ml-py) is Python package that provides programmatic access to the Azure Machine Learning service.
+  - The Python SDK includes [automated machine learning](/azure/machine-learning/service/concept-automated-ml) to assist in automating the time consuming, iterative tasks of machine learning model development.
 
 The example with this document uses the Machine Learning CLI.
 
@@ -118,12 +118,12 @@ Before you using Azure Pipelines to automate model training and deployment, you 
 
 In most cases, your data science team will provide the files and resources needed to train the machine learning model. The following files in the example project would be provided by the data scientists:
 
-* **Training script** (`train.py`): The training script contains logic specific to the model that you are training.
-* **Scoring file** (`score.py`): When the model is deployed as a web service, the scoring file receives data from clients and scores it against the model. The output is then returned to the client.
-* **RunConfig settings** (`sklearn.runconfig`): Defines how the training script is ran on the compute target that is used for training.
-* **Training environment** (`myenv.yml`): Defines the packages needed to run the training script.
-* **Deployment environment** (`deploymentConfig.yml`): Defines the resources and compute needed for the deployment environment.
-* **Deployment environment** (`inferenceConfig.yml`): Defines the packages needed to run and score the model in the deployment environment.
+- **Training script** (`train.py`): The training script contains logic specific to the model that you are training.
+- **Scoring file** (`score.py`): When the model is deployed as a web service, the scoring file receives data from clients and scores it against the model. The output is then returned to the client.
+- **RunConfig settings** (`sklearn.runconfig`): Defines how the training script is ran on the compute target that is used for training.
+- **Training environment** (`myenv.yml`): Defines the packages needed to run the training script.
+- **Deployment environment** (`deploymentConfig.yml`): Defines the resources and compute needed for the deployment environment.
+- **Deployment environment** (`inferenceConfig.yml`): Defines the packages needed to run and score the model in the deployment environment.
 
 Some of these files are directly used when developing a model. For example, the `train.py` and `score.py` files. However the data scientist may be programmatically creating the run configuration and environment settings. If so, they can create the `.runconfig` and training environment files, by using [RunConfiguration.save()](https://docs.microsoft.com/python/api/azureml-core/azureml.core.runconfiguration?view=azure-ml-py#save-path-none--name-none--separate-environment-yaml-false-). Alternatively, default run configuration files will be created for all compute targets already in the workspace when running the following command.
 
@@ -182,5 +182,5 @@ Learn how you can further integrate machine learning into your pipelines with th
 
 For more examples of using Azure Pipelines with Azure Machine Learning service, see the following repos:
 
-* [MLOps (CLI focused)](https://github.com/Microsoft/MLOps)
-* [MLOps (Python focused)](https://github.com/Microsoft/MLOpsPython)
+- [MLOps (CLI focused)](https://github.com/Microsoft/MLOps)
+- [MLOps (Python focused)](https://github.com/Microsoft/MLOpsPython)

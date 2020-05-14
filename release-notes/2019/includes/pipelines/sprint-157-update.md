@@ -21,9 +21,9 @@ Azure App Service now supports **Swap with preview** on its deployment slots. Th
 
 Azure App Service task now supports this multi-phase swap through the following new actions:
 
-* **Start Swap with Preview** - Initiates a swap with a preview (multi-phase swap) and applies target slot (for example, the production slot) configuration to the source slot.
-* **Complete Swap with Preview** - When you're ready to complete the pending swap, select the Complete Swap with Preview action.
-* **Cancel Swap with Preview** - To cancel a pending swap, select Cancel Swap with Preview.
+- **Start Swap with Preview** - Initiates a swap with a preview (multi-phase swap) and applies target slot (for example, the production slot) configuration to the source slot.
+- **Complete Swap with Preview** - When you're ready to complete the pending swap, select the Complete Swap with Preview action.
+- **Cancel Swap with Preview** - To cancel a pending swap, select Cancel Swap with Preview.
 
 > [!div class="mx-imgBorder"] > ![Badge](../../media/157_05.png)
 
@@ -71,13 +71,13 @@ Previously, it was possible to use the service account option to setup Kubernete
 
 We've made updates to several of the Azure Pipelines hosted VM images. The following are some the highlights in this update:
 
-* Added AWS, Google Cloud, and Zeit CLIs to Ubuntu 16.04
-* Updated Rust 1.36 to 1.37 on Ubuntu 16.04, VS2017, and VS2019
-* Updated Ruby 2.6.2 to 2.6.3 on Ubuntu 16.04
-* Updated Ruby 2.4.5 to 2.4.6, 2.5.3 to 2.5.5, and 2.6.1 to 2.6.3 on VS2017 and VS2019
-* Updated Google Chrome and web driver from 75 to 76
-* Added WIX Toolset Visual Studio Extension to VS 2019
-* Various bug fixes
+- Added AWS, Google Cloud, and Zeit CLIs to Ubuntu 16.04
+- Updated Rust 1.36 to 1.37 on Ubuntu 16.04, VS2017, and VS2019
+- Updated Ruby 2.6.2 to 2.6.3 on Ubuntu 16.04
+- Updated Ruby 2.4.5 to 2.4.6, 2.5.3 to 2.5.5, and 2.6.1 to 2.6.3 on VS2017 and VS2019
+- Updated Google Chrome and web driver from 75 to 76
+- Added WIX Toolset Visual Studio Extension to VS 2019
+- Various bug fixes
 
 You can find more details about the latest releases [here](https://github.com/microsoft/azure-pipelines-image-generation/releases).
 

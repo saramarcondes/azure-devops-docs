@@ -60,8 +60,8 @@ The commit list view also supports a context menu. No need to go to the **commit
 
 Coming soon:
 
-* **Tags** page that shows all tags in a repository
-* Ability to delete tags
+- **Tags** page that shows all tags in a repository
+- Ability to delete tags
 
 ## Updated Changeset and Shelveset pages
 

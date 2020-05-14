@@ -19,12 +19,12 @@ Context information containing the relevant hubs and hub groups for a given cont
 
 ### Members
 
-* `hubGroups`: [HubGroup](../../../VSS/References/SDK_Interfaces/HubGroup.md)[].
+- `hubGroups`: [HubGroup](../../../VSS/References/SDK_Interfaces/HubGroup.md)[].
 
-* `hubGroupsCollectionContributionId`: string.
+- `hubGroupsCollectionContributionId`: string.
 
-* `hubs`: [Hub](../../../VSS/References/SDK_Interfaces/Hub.md)[].
+- `hubs`: [Hub](../../../VSS/References/SDK_Interfaces/Hub.md)[].
 
-* `selectedHubGroupId`: string.
+- `selectedHubGroupId`: string.
 
-* `selectedHubId`: string.
+- `selectedHubId`: string.

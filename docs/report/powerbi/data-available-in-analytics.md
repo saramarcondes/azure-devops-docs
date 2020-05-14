@@ -84,4 +84,4 @@ As more data types come online, we will update this page. Look for announcements
 
 ## Related articles
 
-* [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)
+- [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)

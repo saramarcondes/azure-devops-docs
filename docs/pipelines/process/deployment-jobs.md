@@ -18,8 +18,8 @@ In YAML pipelines, we recommend that you put your deployment steps in a deployme
 
 Deployment jobs provide the following benefits:
 
-* **Deployment history**: You get end-to-end deployment history across pipelines, down to a specific resource and status of the deployments for auditing.
-* **Apply deployment strategy**: You define how your application is rolled out.
+- **Deployment history**: You get end-to-end deployment history across pipelines, down to a specific resource and status of the deployments for auditing.
+- **Apply deployment strategy**: You define how your application is rolled out.
 
   > [!NOTE]
   > We currently only support the _runOnce_, _rolling_, and the _canary_ strategies.
@@ -42,7 +42,7 @@ jobs:
   services: { string: string | container } # container resources to run as a service container
   timeoutInMinutes: nonEmptyString        # how long to run the job before automatically cancelling
   cancelTimeoutInMinutes: nonEmptyString  # how much time to give 'run always even if cancelled tasks' before killing them
-  variables: { string: string } | [ variable | variableReference ]  
+  variables: { string: string } | [ variable | variableReference ]
   environment: string  # target environment name and optionally a resource-name to record the deployment history; format: <environment-name>.<resource-name>
   strategy: [ deployment strategy ] # see deployment strategy schema
 ```
@@ -51,11 +51,11 @@ jobs:
 
 When you're deploying application updates, it's important that the technique you use to deliver the update will:
 
-* Enable initialization.
-* Deploy the update.
-* Route traffic to the updated version.
-* Test the updated version after routing traffic.
-* In case of failure, run steps to restore to the last known good version.
+- Enable initialization.
+- Deploy the update.
+- Route traffic to the updated version.
+- Test the updated version after routing traffic.
+- In case of failure, run steps to restore to the last known good version.
 
 We achieve this by using lifecycle hooks that can run steps during deployment. Each of the lifecycle hooks resolves into an agent job or a [server job](phases.md#server-jobs) (or a container or validation job in the future), depending on the `pool` attribute. By default, the lifecycle hooks will inherit the `pool` specified by the `deployment` job.
 
@@ -225,7 +225,7 @@ With each run of this job, deployment history is recorded against the `smarthote
 
 > [!NOTE]
 >
-> * It's also possible to create an environment with empty resources and use that as an abstract shell to record deployment history, as shown in the previous example.
+> - It's also possible to create an environment with empty resources and use that as an abstract shell to record deployment history, as shown in the previous example.
 
 The next example demonstrates how a pipeline can refer both an environment and a resource to be used as the target for a deployment job.
 
@@ -257,8 +257,8 @@ jobs:
 
 This approach has the following benefits:
 
-* Records deployment history on a specific resource within the environment, as opposed to recording the history on all resources within the environment.
-* Steps in the deployment job **automatically inherit** the connection details of the resource (in this case, a Kubernetes namespace, `smarthotel-dev.bookings`), because the deployment job is linked to the environment.
+- Records deployment history on a specific resource within the environment, as opposed to recording the history on all resources within the environment.
+- Steps in the deployment job **automatically inherit** the connection details of the resource (in this case, a Kubernetes namespace, `smarthotel-dev.bookings`), because the deployment job is linked to the environment.
   This is particularly useful in the cases where the same connection detail is set for multiple steps of the job.
 
 ### Rolling deployment strategy
@@ -314,7 +314,7 @@ jobs:
     name: smarthotel-devPool
   strategy:
     canary:
-      increments: [10,20]  
+      increments: [10,20]
       preDeploy:
         steps:
         - script: initialize, cleanup....
@@ -353,9 +353,9 @@ Define output variables in a deployment job's [lifecycle hooks](#descriptions-of
 
 While executing deployment strategies, you can access output variables across jobs using the following syntax.
 
-* For **runOnce** strategy: `$[dependencies.<job-name>.outputs['<job-name>.<step-name>.<variable-name>']]`
-* For **canary** strategy: `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<increment-value>.<step-name>.<variable-name>']]`
-* For **rolling** strategy: `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<resource-name>.<step-name>.<variable-name>']]`
+- For **runOnce** strategy: `$[dependencies.<job-name>.outputs['<job-name>.<step-name>.<variable-name>']]`
+- For **canary** strategy: `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<increment-value>.<step-name>.<variable-name>']]`
+- For **rolling** strategy: `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<resource-name>.<step-name>.<variable-name>']]`
 
 ```yaml
 # Set an output variable in a lifecycle hook of a deployment job executing canary strategy

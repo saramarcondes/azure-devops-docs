@@ -28,23 +28,23 @@ To learn more about the new cross-platform build/release system, see [Team Found
 
 To create extensions for Azure DevOps, you need the following prerequisite software and tools:
 
-* An **organization** in Azure DevOps, more information can be found [here](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)
-* **A text editor**. For many of the tutorials, we used **Visual Studio Code**, which provides intellisense and debugging support and can be downloaded [here](https://code.visualstudio.com/).
-* The latest version of **node**, which can be downloaded [here](https://nodejs.org/en/download/).
+- An **organization** in Azure DevOps, more information can be found [here](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)
+- **A text editor**. For many of the tutorials, we used **Visual Studio Code**, which provides intellisense and debugging support and can be downloaded [here](https://code.visualstudio.com/).
+- The latest version of **node**, which can be downloaded [here](https://nodejs.org/en/download/).
 
   But note that the production Environment only uses [Node10](http://blog.majcica.com/2018/12/04/node10-provider-available-for-agent-v2-144-0/) or Node6 (by using the `"Node"` in the `"execution"` object instead of `Node10`).
 
-* **Typescript Compiler** 2.2.0 or greater, which can be downloaded [here](https://www.npmjs.com/package/typescript)
+- **Typescript Compiler** 2.2.0 or greater, which can be downloaded [here](https://www.npmjs.com/package/typescript)
   <a name="cli" />
-* **TFS Cross Platform Command Line Interface (tfx-cli)** to package your extensions.
-  * **tfx-cli** can be installed using `npm`, a component of Node.js by running `npm i -g tfx-cli`
-* A `home` directory for your project.
-  * The `home` directory of a build or release task extension should look like the following example after you complete the steps in this tutorial:
+- **TFS Cross Platform Command Line Interface (tfx-cli)** to package your extensions.
+  - **tfx-cli** can be installed using `npm`, a component of Node.js by running `npm i -g tfx-cli`
+- A `home` directory for your project.
+  - The `home` directory of a build or release task extension should look like the following example after you complete the steps in this tutorial:
 
 ```
 |--- README.md
 |--- images
-    |--- extension-icon.png  
+    |--- extension-icon.png
 |--- buildAndReleaseTask            // where your task scripts are placed
 |--- vss-extension.json             // extension's manifest
 ```
@@ -59,12 +59,12 @@ If using a Mac or Linux, replace any instances of `$env:<var>=<val>` with `expor
 
 Below are the steps to create a build or release task extension and put it on the Marketplace:
 
-* [Step 1: Create a custom task](#createtask)
-* [Step 2: Unit test the task scripts](#testscripts)
-* [Step 3: Create the extension manifest file](#extensionmanifest)
-* [Step 4: Package your extension](#packageext)
-* [Step 5: Publish your extension](#publishext)
-* [Optional: Install and test your extension](#installandtest)
+- [Step 1: Create a custom task](#createtask)
+- [Step 2: Unit test the task scripts](#testscripts)
+- [Step 3: Create the extension manifest file](#extensionmanifest)
+- [Step 4: Package your extension](#packageext)
+- [Step 5: Publish your extension](#publishext)
+- [Optional: Install and test your extension](#installandtest)
 
 <a name="createtask" />
 
@@ -172,17 +172,17 @@ Copy the code below and replace the `{{placeholders}}` with your tasks informati
 **task.json components**<br>
 Here is a description of some of the components of the `task.json` file:
 
-| Property             | Description                                                                                                                |
-| -------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| `id`                 | A unique guid for your task                                                                                                |
-| `name`               | Name with no spaces                                                                                                        |
-| `friendlyName`       | Descriptive name (spaces allowed)                                                                                          |
-| `description`        | Detailed description of what your task does                                                                                |
-| `author`             | Short string describing the entity developing the build or release task, for example: "Microsoft Corporation"              |
-| `instanceNameFormat` | How the task is displayed within the build or release step list - you can use variable values by using **$(variablename)** |
-| `groups`             | Describes groups that task properties may be logically grouped by in the UI.                                               |
-| `inputs`             | Inputs to be used when your build or release task runs. This task expects an input with the name "samplestring"            |
-| `execution`          | Execution options for this task, including scripts                                                                         |
+| Property             | Description                                                                                                                 |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| `id`                 | A unique guid for your task                                                                                                 |
+| `name`               | Name with no spaces                                                                                                         |
+| `friendlyName`       | Descriptive name (spaces allowed)                                                                                           |
+| `description`        | Detailed description of what your task does                                                                                 |
+| `author`             | Short string describing the entity developing the build or release task, for example: "Microsoft Corporation"               |
+| `instanceNameFormat` | How the task is displayed within the build or release step list - you can use variable values by using **\$(variablename)** |
+| `groups`             | Describes groups that task properties may be logically grouped by in the UI.                                                |
+| `inputs`             | Inputs to be used when your build or release task runs. This task expects an input with the name "samplestring"             |
+| `execution`          | Execution options for this task, including scripts                                                                          |
 
 > [!NOTE]
 > For a more in-depth look into the task.json file, or to learn how to bundle multiple versions in your extension, check out the **[build/release task reference](./integrate-build-task.md)**.
@@ -464,9 +464,9 @@ If you aren't already a member of an existing publisher, you'll create one.
 
 1.  Sign in to the [Visual Studio Marketplace Publishing Portal](https://marketplace.visualstudio.com/manage)
 2.  If you aren't already a member of an existing publisher, you're prompted to create a publisher. If you're not prompted to create a publisher, scroll down to the bottom of the page and select <i>Publish Extensions</i> underneath <b>Related Sites</b>.
-    * Specify an identifier for your publisher, for example: `mycompany-myteam`
-      * This identifier is used as the value for the `publisher` attribute in your extensions' manifest file.
-    * Specify a display name for your publisher, for example: `My Team`
+    - Specify an identifier for your publisher, for example: `mycompany-myteam`
+      - This identifier is used as the value for the `publisher` attribute in your extensions' manifest file.
+    - Specify a display name for your publisher, for example: `My Team`
 3.  Review the [Marketplace Publisher Agreement](https://aka.ms/vsmarketplace-agreement) and select **Create**
 
 Your publisher is defined. In a future release, you can grant permissions to view and manage your publisher's extensions.
@@ -518,6 +518,6 @@ For build and release tasks for packaging and publishing Azure DevOps Extensions
 
 ## Helpful links
 
-* [Extension Manifest Reference](./manifest.md)
-* [Build/Release Task JSON Schema](./integrate-build-task.md)
-* [Build/Release Task Examples](https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks)
+- [Extension Manifest Reference](./manifest.md)
+- [Build/Release Task JSON Schema](./integrate-build-task.md)
+- [Build/Release Task Examples](https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks)

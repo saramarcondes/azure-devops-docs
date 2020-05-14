@@ -29,15 +29,15 @@ The following example shows the high-level structure of a WIT definition.
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <witd:WITD application="Work item type editor" version="1.0" xmlns:witd="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/typedef">  
->        <WORKITEMTYPE name="bug" refname="Microsoft.VSTS.WorkItemTypes.Bug">  
->           <DESCRIPTION> Describes a divergence between required and actual behavior, and tracks the work done to correct the defect and verify the correction.</DESCRIPTION>  
->           <GLOBALLISTS> . . . </GLOBALLISTS>  
->           <FIELDS> . . . </FIELDS>  
->           <WORKFLOW> . . . </WORKFLOW>  
->           <FORM> . . . </FORM>  
->        </WORKITEMTYPE>  
-> </witd:WITD>  
+> <witd:WITD application="Work item type editor" version="1.0" xmlns:witd="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/typedef">
+>        <WORKITEMTYPE name="bug" refname="Microsoft.VSTS.WorkItemTypes.Bug">
+>           <DESCRIPTION> Describes a divergence between required and actual behavior, and tracks the work done to correct the defect and verify the correction.</DESCRIPTION>
+>           <GLOBALLISTS> . . . </GLOBALLISTS>
+>           <FIELDS> . . . </FIELDS>
+>           <WORKFLOW> . . . </WORKFLOW>
+>           <FORM> . . . </FORM>
+>        </WORKITEMTYPE>
+> </witd:WITD>
 > ```
 
 <a name="ChildElements"></a>
@@ -150,6 +150,6 @@ To learn how to create or customize a WIT, see [Modify or add a custom work item
 
 ## Related articles
 
-* [Customize the work tracking experience](../customize-work.md)
-* [witAdmin: Customize and manage objects for tracking work](../witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
-* [Naming restrictions, Work item tracking objects](../../organizations/settings/naming-restrictions.md)
+- [Customize the work tracking experience](../customize-work.md)
+- [witAdmin: Customize and manage objects for tracking work](../witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
+- [Naming restrictions, Work item tracking objects](../../organizations/settings/naming-restrictions.md)

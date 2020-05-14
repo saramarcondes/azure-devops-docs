@@ -20,16 +20,14 @@ This API provides access to all work item revisions in your project or collectio
 
 The response of the API contains a batch of work item revisions ("values"), a URL to the next batch of work item revisions ("nextLink") and a boolean that tells you whether you have read all currently available work item revisions ("isLastBatch").
 
-> The results of this API are impacted when using Move Work Item and/or Change Work Item Type features in conjunction with "project" in the url and/or "types" in the query string.<br/>
-> &nbsp;&nbsp;&nbsp;&nbsp;- Project-scoped requests will only return work item revisions from the specified project.<br/>
-> &nbsp;&nbsp;&nbsp;&nbsp;- Types-scoped requests will only return work item revisions of the specified type(s).
+> The results of this API are impacted when using Move Work Item and/or Change Work Item Type features in conjunction with "project" in the url and/or "types" in the query string.<br/> > &nbsp;&nbsp;&nbsp;&nbsp;- Project-scoped requests will only return work item revisions from the specified project.<br/> > &nbsp;&nbsp;&nbsp;&nbsp;- Types-scoped requests will only return work item revisions of the specified type(s).
 
 The workflow for building your warehouse is as follows:
 
 1.  Make a request to the API without providing a continuationToken parameter
 2.  Process the work item revisions returned by the API
 3.  Persist "nextLink" and check "isLastBatch"
-    * If "isLastBatch" is true, pause for a period of time (varies depending on your target latency)
+    - If "isLastBatch" is true, pause for a period of time (varies depending on your target latency)
 4.  Make the next request using the URL from "nextLink"
 5.  Go to step 2
 
@@ -59,7 +57,7 @@ GET https://{instance}/DefaultCollection/[{project}/]_apis/wit/reporting/workIte
 | includeTagRef | boolean | Return a tag reference instead of a string value for the System.Tags field.
 | includeLatestOnly | boolean | Return only the latest revision of work items.  
 | startDateTime | datetime | Date/time to use as a starting point for revisions, all revisions will occur after this date/time. Cannot be used in conjunction with 'continuationToken' parameter.
-| $expand | enum { fields, none } | Fields will return all fields. Cannot be used in conjunction with the 'fields' parameter.
+| \$expand | enum { fields, none } | Fields will return all fields. Cannot be used in conjunction with the 'fields' parameter.
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
 ### Example: get the first batch of work item revisions
@@ -263,7 +261,7 @@ Content-type: Application/json
 | Query
 | continuationToken | string | Specifies the continuationToken to start the batch from. Omit this parameter to get the first batch of revisions.
 | startDateTime | datetime | Date/time to use as a starting point for revisions, all revisions will occur after this date/time. Cannot be used in conjunction with 'continuationToken' parameter.
-| $expand | enum { fields, none } | Fields will return all fields. Cannot be used in conjunction with the 'fields' parameter.
+| \$expand | enum { fields, none } | Fields will return all fields. Cannot be used in conjunction with the 'fields' parameter.
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
 | fields | array of strings | Fields to return in work item revisions. Omit this parameter to get all reportable fields.

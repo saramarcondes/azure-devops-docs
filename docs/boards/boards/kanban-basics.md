@@ -26,12 +26,12 @@ Review this article to gain an understanding of how to configure and start worki
 
 > [!div class="checklist"]
 >
-> * View your Kanban board
-> * Customize the columns shown on your Kanban board to support how your team works
-> * Set WIP limits to constrain work in progress
-> * Update the status of work via drag-and-drop
-> * View the Cumulative flow chart
-> * How to turn live updates on or off
+> - View your Kanban board
+> - Customize the columns shown on your Kanban board to support how your team works
+> - Set WIP limits to constrain work in progress
+> - Update the status of work via drag-and-drop
+> - View the Cumulative flow chart
+> - How to turn live updates on or off
 
 > [!NOTE]  
 > Both Kanban boards and Taskboards support visualizing the flow of work and monitoring metrics to optimize that flow. Kanban boards track requirements, are sprint-independent, and provide a cumulative flow chart for monitoring progress. Each sprint is associated with a Taskboard that supports tracking tasks defined for the sprint. You can monitor progress through capacity charts and the sprint burndown chart. For guidance on using the Taskboard, see [Update and monitor your Taskboard](../sprints/task-board.md).
@@ -161,9 +161,9 @@ By monitoring these metrics, you can gain insight into how to optimize your proc
 
 In addition to the above chart, you can add Analytics widgets to your dashboard. The Analytics Service is in preview and provides access to several widgets. To learn more, see these topics:
 
-* [Widgets based on the Analytics Service](../../report/dashboards/analytics-widgets.md)
-* [Add a widget to a dashboard](../../report/dashboards/add-widget-to-dashboard.md)
-* [What is the Analytics Service?](../../report/powerbi/what-is-analytics.md)
+- [Widgets based on the Analytics Service](../../report/dashboards/analytics-widgets.md)
+- [Add a widget to a dashboard](../../report/dashboards/add-widget-to-dashboard.md)
+- [What is the Analytics Service?](../../report/powerbi/what-is-analytics.md)
 
 ::: moniker-end
 
@@ -171,11 +171,11 @@ In addition to the above chart, you can add Analytics widgets to your dashboard.
 
 Here are some useful tips when working with the Kanban board:
 
-* To focus on select work items, [filter your Kanban board](filter-kanban-board.md)
-* To quickly assign items to a team member, add the Assign To field to display on the cards, see [Customize cards](../../boards/boards/customize-cards.md)
-* Add a swimlane to track high-priority work or track work which falls into different service level agreements, see [Swimlanes](expedite-work.md)
-* Highlight specific work items by color coding cards based on a field value or tag, (see [Customize cards](../../boards/boards/customize-cards.md))
-* If you use Scrumban, drag-and-drop cards onto a sprint to quickly assign them to a sprint.
+- To focus on select work items, [filter your Kanban board](filter-kanban-board.md)
+- To quickly assign items to a team member, add the Assign To field to display on the cards, see [Customize cards](../../boards/boards/customize-cards.md)
+- Add a swimlane to track high-priority work or track work which falls into different service level agreements, see [Swimlanes](expedite-work.md)
+- Highlight specific work items by color coding cards based on a field value or tag, (see [Customize cards](../../boards/boards/customize-cards.md))
+- If you use Scrumban, drag-and-drop cards onto a sprint to quickly assign them to a sprint.
 
 Each team can manage their backlog and customize their Kanban board. [Add teams](../../organizations/settings/add-teams.md) when you assign specific feature areas to different teams for development. Each team can then manage their backlog and focus on how they will develop their deliverables.
 
@@ -189,7 +189,7 @@ If you're new to tracking work with Agile tools and want to understand what you 
 
 ## Related articles
 
-* [Kanban key concepts](kanban-key-concepts.md)
-* [Kanban best practices](best-practices-kanban.md)
-* [Cumulative flow diagram](../../report/dashboards/cumulative-flow.md)
-* [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow-cycle-lead-time-guidance.md)
+- [Kanban key concepts](kanban-key-concepts.md)
+- [Kanban best practices](best-practices-kanban.md)
+- [Cumulative flow diagram](../../report/dashboards/cumulative-flow.md)
+- [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow-cycle-lead-time-guidance.md)

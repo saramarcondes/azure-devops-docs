@@ -15,12 +15,12 @@ monikerRange: '>= tfs-2017'
 
 Use a pipeline to automatically build and test your .NET Core projects. Learn how to:
 
-* Set up your build environment with [Microsoft-hosted](../agents/hosted.md) or [self-hosted](../agents/agents.md) agents.
-* Restore dependencies, build your project, and test with the [.NET Core CLI task](../tasks/build/dotnet-core-cli.md) or a [script](../scripts/cross-platform-scripting.md).
-* Use the [publish code coverage task](../tasks/test/publish-code-coverage-results.md) to publish code coverage results.
-* Package and deliver your code with the [.NET Core CLI task](../tasks/build/dotnet-core-cli.md) and the [publish build artifacts task](../tasks/utility/publish-build-artifacts.md).
-* Publish to a [NuGet feed](../artifacts/nuget.md).
-* Deploy your [web app to Azure](../targets/webapp.md).
+- Set up your build environment with [Microsoft-hosted](../agents/hosted.md) or [self-hosted](../agents/agents.md) agents.
+- Restore dependencies, build your project, and test with the [.NET Core CLI task](../tasks/build/dotnet-core-cli.md) or a [script](../scripts/cross-platform-scripting.md).
+- Use the [publish code coverage task](../tasks/test/publish-code-coverage-results.md) to publish code coverage results.
+- Package and deliver your code with the [.NET Core CLI task](../tasks/build/dotnet-core-cli.md) and the [publish build artifacts task](../tasks/utility/publish-build-artifacts.md).
+- Publish to a [NuGet feed](../artifacts/nuget.md).
+- Deploy your [web app to Azure](../targets/webapp.md).
 
 > [!NOTE]
 > For help with .NET Framework projects, see [Build ASP.NET apps with .NET Framework](../apps/aspnet/build-aspnet-4.md).
@@ -87,8 +87,7 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core
 
 1.  When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
+    > [!div class="mx-imgBorder"] > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
 
 2.  You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
 
@@ -388,13 +387,13 @@ To install a .NET Core global tool like [dotnetsay](https://www.nuget.org/packag
 
 1.  Add the **.NET Core** task and set the following properties:
 
-    * **Command**: custom.
-      * **Path to projects**: _leave empty_.
-    * **Custom command**: tool.
-    * **Arguments**: `install -g dotnetsay`.
+    - **Command**: custom.
+      - **Path to projects**: _leave empty_.
+    - **Custom command**: tool.
+    - **Arguments**: `install -g dotnetsay`.
 
 2.  Add a **Command Line** task and set the following properties:
-    * **Script:** `dotnetsay`.
+    - **Script:** `dotnetsay`.
 
 ::: moniker-end
 
@@ -480,9 +479,9 @@ steps:
 
 1.  Add the .NET Core task to your build job and set the following properties:
 
-    * **Command**: test.
-    * **Path to projects**: _Should refer to the test projects in your solution_.
-    * **Arguments**: `--configuration $(BuildConfiguration) --collect "Code coverage"`.
+    - **Command**: test.
+    - **Path to projects**: _Should refer to the test projects in your solution_.
+    - **Arguments**: `--configuration $(BuildConfiguration) --collect "Code coverage"`.
 
 2.  Ensure that the **Publish test results** option remains selected.
 
@@ -523,8 +522,8 @@ or package the build output into a .zip file to be deployed to a web application
 
 To publish the output of your .NET **build**,
 
-* Run `dotnet publish --output $(Build.ArtifactStagingDirectory)` on CLI or add the DotNetCoreCLI@2 task with publish command.
-* Publish the artifact by using Publish artifact task.
+- Run `dotnet publish --output $(Build.ArtifactStagingDirectory)` on CLI or add the DotNetCoreCLI@2 task with publish command.
+- Publish the artifact by using Publish artifact task.
 
 Add the following snippet to your `azure-pipelines.yml` file:
 
@@ -630,32 +629,32 @@ If you're able to build your project on your development machine, but you're hav
 
 ::: moniker range="azure-devops"
 
-* We don't install prerelease versions of the .NET Core SDK on Microsoft-hosted agents. After a new version of the .NET Core SDK is released,
+- We don't install prerelease versions of the .NET Core SDK on Microsoft-hosted agents. After a new version of the .NET Core SDK is released,
   it can take a few weeks for us to roll it out to all the datacenters that Azure Pipelines runs on. You don't have to wait for us to finish
   this rollout. You can use the **.NET Core Tool Installer**, as explained in this guidance, to install the desired version of the .NET Core SDK
   on Microsoft-hosted agents.
 
 ::: moniker-end
 
-* Check that the versions of the .NET Core SDK and runtime on your development machine match those on the agent.
+- Check that the versions of the .NET Core SDK and runtime on your development machine match those on the agent.
   You can include a command-line script `dotnet --version` in your pipeline to print the version of the .NET Core SDK.
   Either use the **.NET Core Tool Installer**, as explained in this guidance, to deploy the same version on the agent,
   or update your projects and development machine to the newer version of the .NET Core SDK.
 
-* You might be using some logic in the Visual Studio IDE that isn't encoded in your pipeline.
+- You might be using some logic in the Visual Studio IDE that isn't encoded in your pipeline.
   Azure Pipelines or TFS runs each of the commands you specify in the tasks one after the other in a new process.
   Look at the logs from the Azure Pipelines or TFS build to see the exact commands that ran as part of the build.
   Repeat the same commands in the same order on your development machine to locate the problem.
 
-* If you have a mixed solution that includes some .NET Core projects and some .NET Framework projects,
+- If you have a mixed solution that includes some .NET Core projects and some .NET Framework projects,
   you should also use the **NuGet** task to restore packages specified in `packages.config` files.
   Similarly, you should add **MSBuild** or **Visual Studio Build** tasks to build the .NET Framework projects.
 
-* If your builds fail intermittently while restoring packages, either NuGet.org is having issues, or there are
+- If your builds fail intermittently while restoring packages, either NuGet.org is having issues, or there are
   networking problems between the Azure datacenter and NuGet.org. These aren't under our control, and you might
   need to explore whether using Azure Artifacts with NuGet.org as an upstream source improves the reliability of your builds.
 
-* Occasionally, when we roll out an update to the hosted images with a new version of the .NET Core SDK or Visual Studio,
+- Occasionally, when we roll out an update to the hosted images with a new version of the .NET Core SDK or Visual Studio,
   something might break your build. This can happen, for example, if a newer version or feature of the NuGet tool
   is shipped with the SDK. To isolate these problems, use the **.NET Core Tool Installer** task to specify the version
   of the .NET Core SDK that's used in your build.

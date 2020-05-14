@@ -94,7 +94,7 @@ The following example displays branch history for the header.h item in the Team 
 c:\projects>tf branches $/applications/header.h
 ```
 
-The following example displays the branch history of the folder $/rel30/math.
+The following example displays the branch history of the folder \$/rel30/math.
 
 ```
 c:\projects>tf branches $/rel30/math/

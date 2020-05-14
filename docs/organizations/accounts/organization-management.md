@@ -18,12 +18,12 @@ monikerRange: '>= tfs-2013'
 
 With an organization, you gain access to the platform in which you can do the following tasks:
 
-* Collaborate with others to develop applications by using our cloud service
-* Plan and track your work and code defects and issues
-* Set up continuous integration and deployment
-* Integrate with other services by using service hooks
-* Obtain additional features and extensions
-* Create one or more projects to segment work.
+- Collaborate with others to develop applications by using our cloud service
+- Plan and track your work and code defects and issues
+- Set up continuous integration and deployment
+- Integrate with other services by using service hooks
+- Obtain additional features and extensions
+- Create one or more projects to segment work.
 
 > [!NOTE]  
 > This article applies to the Azure DevOps cloud service. If you manage an on-premises Azure DevOps Server, refer to [Administrative tasks quick reference](/azure/devops/server/admin/admin-quick-ref) for details on managing the server.
@@ -66,9 +66,9 @@ Also, if you manage your users with Azure Active Directory (Azure AD), you can c
 
 Three key definitions to understand when managing your user base are as follows:
 
-* **Access** indicates a user can sign into your organization, and at a minimum view information about your organization.
-* **Access levels** grant or restrict access to select web portal features. Access levels enable administrators to provide their user base access to the features they need and only pay for those features.
-* **Permissions**, granted through security groups, provide and restrict users from completing specific tasks.
+- **Access** indicates a user can sign into your organization, and at a minimum view information about your organization.
+- **Access levels** grant or restrict access to select web portal features. Access levels enable administrators to provide their user base access to the features they need and only pay for those features.
+- **Permissions**, granted through security groups, provide and restrict users from completing specific tasks.
 
 For an overview of default assignments, see [Default permissions and access for Azure DevOps](../security/permissions-access.md).
 
@@ -82,11 +82,11 @@ You can add and assign an access level to users one-by-one, which is referred to
 
 If you don't use Azure AD, as described in the next section, to manage your user base, then you can add them through the following ways to collaborate on your project.
 
-* Add users to your organization from the **Organization settings > Users** page. Only organization owners or members of the Project Collection Administration group can add users at this level.
+- Add users to your organization from the **Organization settings > Users** page. Only organization owners or members of the Project Collection Administration group can add users at this level.
 
   Specify the access level and the project(s) the user is added to. For more information, see [Add users to your organization or project](add-organization-users.md).
 
-* Add users to one or more teams from the **Project > Summary** page or to a specific team from the **Project settings > Teams > Team** page. Members of the Project Collection Administration or Project Administration groups, or a team administrator can add users to teams.
+- Add users to one or more teams from the **Project > Summary** page or to a specific team from the **Project settings > Teams > Team** page. Members of the Project Collection Administration or Project Administration groups, or a team administrator can add users to teams.
 
   > [!div class="mx-imgBorder"]  
   > ![Web portal, Project Overview page, Invite new users dialog box](media/org-manage/invite-members-dialog.png)
@@ -95,8 +95,8 @@ If you don't use Azure AD, as described in the next section, to manage your user
 
 For details, see the following articles:
 
-* [Add users to your organization or project](add-organization-users.md)
-* [Add members to teams or projects](add-team-members.md)
+- [Add users to your organization or project](add-organization-users.md)
+- [Add members to teams or projects](add-team-members.md)
 
 <a id="access-azure-ad" />
 
@@ -128,8 +128,8 @@ A best practice to use when managing users is to manage them through security gr
 
 The following notes address details specific to adding users at different levels&mdash;such as to a team, project, or organization.
 
-* All users added at the organization or collection level can be assigned to work items of all projects. However, if the user doesn't have access to the project, then they can't view or edit the work item.
-* All users invited or added as a member at the project level can be assigned to work items of the project.
+- All users added at the organization or collection level can be assigned to work items of all projects. However, if the user doesn't have access to the project, then they can't view or edit the work item.
+- All users invited or added as a member at the project level can be assigned to work items of the project.
 
 ## Set up billing
 
@@ -197,9 +197,9 @@ You can then pay for more users with Basic access, buy more services, and purcha
 
 ## Related articles
 
-* [About access levels](../security/access-levels.md)
-* [Default permissions and access](../security/permissions-access.md)
-* [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md)
-* [Add a user as a team administrator](../settings/add-team-administrator.md)
-* [About using Azure AD to authenticate access to Azure DevOps Services](access-with-azure-ad.md)
-* [Troubleshoot permissions and access with Azure AD](faq-azure-access.md)
+- [About access levels](../security/access-levels.md)
+- [Default permissions and access](../security/permissions-access.md)
+- [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md)
+- [Add a user as a team administrator](../settings/add-team-administrator.md)
+- [About using Azure AD to authenticate access to Azure DevOps Services](access-with-azure-ad.md)
+- [Troubleshoot permissions and access with Azure AD](faq-azure-access.md)

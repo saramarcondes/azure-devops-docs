@@ -16,8 +16,8 @@ Module path: `TFS/Build/Contracts`
 
 ### Members
 
-* `allowOverride`: boolean.
+- `allowOverride`: boolean.
 
-* `isSecret`: boolean.
+- `isSecret`: boolean.
 
-* `value`: string.
+- `value`: string.

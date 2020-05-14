@@ -15,4 +15,4 @@ Module path: `TFS/WorkItemTracking/Contracts`
 
 ### Members
 
-* `template`: string.
+- `template`: string.

@@ -30,10 +30,10 @@ Newly created projects contain a single, root Area Path that corresponds to the 
 
 <a name="permissions"></a>
 
-* You add Iteration Paths to a project. If you don't have a project yet, [create one now](../projects/create-project.md).
-* To add an Iteration Path under the root node or edit or delete any child node, you must be a member of the **Project Administrators** group. To acquire these permissions, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
-* Or, to add, edit, and manage Iteration Paths under a node, you must have one or more of the following permissions set to **Allow** for the node you want to manage: **Create child nodes**, **Delete this node**, and **Edit this node**, and **View permissions for this node**. By default, the user who created the project has these permissions set. To learn more, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md#set-permissions-area-path).
-* To set team Iteration Paths, you must be [added as the team administrator](add-team-administrator.md) or be a member of the **Project Administrators** group.
+- You add Iteration Paths to a project. If you don't have a project yet, [create one now](../projects/create-project.md).
+- To add an Iteration Path under the root node or edit or delete any child node, you must be a member of the **Project Administrators** group. To acquire these permissions, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
+- Or, to add, edit, and manage Iteration Paths under a node, you must have one or more of the following permissions set to **Allow** for the node you want to manage: **Create child nodes**, **Delete this node**, and **Edit this node**, and **View permissions for this node**. By default, the user who created the project has these permissions set. To learn more, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md#set-permissions-area-path).
+- To set team Iteration Paths, you must be [added as the team administrator](add-team-administrator.md) or be a member of the **Project Administrators** group.
 
 For naming restrictions on Iteration Paths, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#name-restrictions).
 
@@ -73,7 +73,7 @@ For TFS 2015 and earlier versions, the default iteration is the same as the back
 ::: moniker-end
 
 <a id="open-project-settings" />
-<a id="open-admin-context" />  
+<a id="open-admin-context" />
 
 ## Open Project Settings, list project iterations
 
@@ -122,9 +122,9 @@ az boards iteration project list [--depth]
 
 #### Parameters
 
-* **depth**: Optional. Depth of child nodes to be listed. Example: --depth 3.
-* **path**: Optional. Absolute path of an iteration. Example: \ProjectName\Iteration\IterationName. When not specified, lists iteration paths from the root level.
-* **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".
+- **depth**: Optional. Depth of child nodes to be listed. Example: --depth 3.
+- **path**: Optional. Absolute path of an iteration. Example: \ProjectName\Iteration\IterationName. When not specified, lists iteration paths from the root level.
+- **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".
 
 #### Example
 
@@ -267,11 +267,11 @@ az boards iteration project create --name
 
 #### Parameters
 
-* **name**: Required. Enter the name of the iteration path.
-* **finish-date**: Optional. Finish date of the iteration. Example: "2019-06-21".
-* **path**: Optional. Absolute path of an iteration. Example: \ProjectName\Iteration\IterationName. When not specified, adds an iteration at the root level.
-* **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".
-* **start-date**: Optional. Enter the start date of the iteration path. Example: "2019-06-03". Must be earlier than the finish-date.
+- **name**: Required. Enter the name of the iteration path.
+- **finish-date**: Optional. Finish date of the iteration. Example: "2019-06-21".
+- **path**: Optional. Absolute path of an iteration. Example: \ProjectName\Iteration\IterationName. When not specified, adds an iteration at the root level.
+- **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".
+- **start-date**: Optional. Enter the start date of the iteration path. Example: "2019-06-03". Must be earlier than the finish-date.
 
 #### Example
 
@@ -338,13 +338,13 @@ For Scrum-based projects, you see the following set of sprints.
 
     For Scrum-based projects, you'll see these set of sprints.
 
-    <img src="../../boards/sprints/media/activate-team-sprints.png" alt="Example Iterations for a Team" style="border: 1px solid #C3C3C3;" />  
+    <img src="../../boards/sprints/media/activate-team-sprints.png" alt="Example Iterations for a Team" style="border: 1px solid #C3C3C3;" />
 
     You can change the name, location within the tree hierarchy, or set dates for any sprint. Simply open it (double-click or press Enter key) and specify the info you want.
 
 2.  Schedule the start and end dates for those sprints you plan to use.
 
-    <img src="../../boards/sprints/media/set-sprint-start-end-dates.png" alt="Define start and end dates for a sprint" style="border: 1px solid #C3C3C3;" />  
+    <img src="../../boards/sprints/media/set-sprint-start-end-dates.png" alt="Define start and end dates for a sprint" style="border: 1px solid #C3C3C3;" />
 
     After you set the start and end dates for one iteration, the calendar tool automatically attempts to set the next set of dates, based on the same iteration length you specified for the first. For example, if you set a three week sprint for Sprint 1, then when you select the start date for Sprint 2, the calendar tool automatically determines the start and end dates based on the next three weeks. You can accept or change these dates.
 
@@ -425,9 +425,9 @@ az boards iteration team list --team
 
 #### Parameters
 
-* **team**: Required. Name or ID of the team.
-* **project**: Optional. Name or ID of the project.
-* **timeframe**: Optional. A filter for which iterations are returned based on relative time. Only _Current_ is supported.
+- **team**: Required. Name or ID of the team.
+- **project**: Optional. Name or ID of the project.
+- **timeframe**: Optional. A filter for which iterations are returned based on relative time. Only _Current_ is supported.
 
 #### Example
 
@@ -582,10 +582,10 @@ az boards iteration team set-backlog-iteration --id --team
 
 #### Parameters
 
-* **team**: Required. Name or ID of the team.
-* **default-iteration-macro**: Optional. Default iteration macro, the only valid entry is @CurrentIteration.
-* **id**: Optional. Enter the ID of an iteration path. To determine the ID, list the iteration paths using [az boards iteration project list](#iteration-project-list).
-* **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".
+- **team**: Required. Name or ID of the team.
+- **default-iteration-macro**: Optional. Default iteration macro, the only valid entry is @CurrentIteration.
+- **id**: Optional. Enter the ID of an iteration path. To determine the ID, list the iteration paths using [az boards iteration project list](#iteration-project-list).
+- **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".
 
 #### Example
 
@@ -794,13 +794,13 @@ az boards iteration project update --path
 
 #### Parameters
 
-* **path**: Required. Absolute path of an iteration. Example: \ProjectName\Iteration\IterationName.
-* **child-id**: Optional. Moves an existing iteration path and adds it as a child node for the specified path name or path ID.
-* **name**: Optional. New name of the iteration path.
-* **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".
-* **finish-date**: Optional. Finish date of the iteration. Example : "2019-06-21".
-* **start-date**: Optional. Start date of the iteration path. Example: "2019-06-03". Must be earlier than the finish-date.
-* **yes**: Optional. Do not prompt for confirmation.
+- **path**: Required. Absolute path of an iteration. Example: \ProjectName\Iteration\IterationName.
+- **child-id**: Optional. Moves an existing iteration path and adds it as a child node for the specified path name or path ID.
+- **name**: Optional. New name of the iteration path.
+- **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".
+- **finish-date**: Optional. Finish date of the iteration. Example : "2019-06-21".
+- **start-date**: Optional. Start date of the iteration path. Example: "2019-06-03". Must be earlier than the finish-date.
+- **yes**: Optional. Do not prompt for confirmation.
 
 #### Example
 
@@ -870,29 +870,29 @@ You can quickly generate [queries](../../boards/queries/using-queries.md) to vie
 
 As you can see, iterations play a major role in supporting Agile tools and managing work items. You can learn more about working with these fields from these articles:
 
-* [About areas and iterations](about-areas-iterations.md)
-* [Add another team](../../organizations/settings/add-teams.md)
-* [Configure team settings and add team administrators](manage-teams.md)
-* [Assign backlog items to a sprint](../../boards/sprints/assign-work-sprint.md)
-* [Agile tools that rely on areas or iterations](about-teams-and-settings.md)
-* [Query by date or current iteration](../../boards/queries/query-by-date-or-current-iteration.md)
-* [Query by area or iteration path](../../boards/queries/query-by-area-iteration-path.md)
-* [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md)
+- [About areas and iterations](about-areas-iterations.md)
+- [Add another team](../../organizations/settings/add-teams.md)
+- [Configure team settings and add team administrators](manage-teams.md)
+- [Assign backlog items to a sprint](../../boards/sprints/assign-work-sprint.md)
+- [Agile tools that rely on areas or iterations](about-teams-and-settings.md)
+- [Query by date or current iteration](../../boards/queries/query-by-date-or-current-iteration.md)
+- [Query by area or iteration path](../../boards/queries/query-by-area-iteration-path.md)
+- [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md)
 
 ### Programmatic resources
 
 ::: moniker range="azure-devops"
 
-* [az boards iteration (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/iteration)
-* [Teams (REST API)](/rest/api/azure/devops/core/teams)
-* [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes)
+- [az boards iteration (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/iteration)
+- [Teams (REST API)](/rest/api/azure/devops/core/teams)
+- [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes)
 
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
 
-* [Teams (REST API)](/rest/api/azure/devops/core/teams)
-* [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes)
-* [Define the classification plug-in (Process Template)](../../reference/process-templates/define-classification-plug-in.md)
+- [Teams (REST API)](/rest/api/azure/devops/core/teams)
+- [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes)
+- [Define the classification plug-in (Process Template)](../../reference/process-templates/define-classification-plug-in.md)
 
 ::: moniker-end

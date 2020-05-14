@@ -50,11 +50,11 @@ Log an error or warning message in the timeline record of the current task.
 
 #### Properties
 
-* `type` = `error` or `warning` (Required)
-* `sourcepath` = source file location
-* `linenumber` = line number
-* `columnnumber` = column number
-* `code` = error or warning code
+- `type` = `error` or `warning` (Required)
+- `sourcepath` = source file location
+- `linenumber` = line number
+- `columnnumber` = column number
+- `code` = error or warning code
 
 #### Example: Log an error
 
@@ -106,7 +106,7 @@ Set progress and current operation for the current task.
 
 #### Properties
 
-* `value` = percentage of completion
+- `value` = percentage of completion
 
 #### Example
 
@@ -150,10 +150,10 @@ Finish the timeline record for the current task, set task result and current ope
 
 #### Properties
 
-* `result` =
-  * `Succeeded` The task succeeded.
-  * `SucceededWithIssues` The task ran into problems. The build will be completed as partially succeeded at best.
-  * `Failed` The build will be completed as failed. (If the **Control Options: Continue on error** option is selected, the build will be completed as partially succeeded at best.)
+- `result` =
+  - `Succeeded` The task succeeded.
+  - `SucceededWithIssues` The task ran into problems. The build will be completed as partially succeeded at best.
+  - `Failed` The build will be completed as failed. (If the **Control Options: Continue on error** option is selected, the build will be completed as partially succeeded at best.)
 
 #### Example
 
@@ -176,16 +176,16 @@ The logging system will keep tracking the GUID for each timeline records that be
 
 #### Properties
 
-* `id` = Timeline record GUID (Required)
-* `parentid` = Parent timeline record GUID
-* `type` = Record type (Required for first time, can't overwrite)
-* `name` = Record name (Required for first time, can't overwrite)
-* `order` = order of timeline record (Required for first time, can't overwrite)
-* `starttime` = `Datetime`
-* `finishtime` = `Datetime`
-* `progress` = percentage of completion
-* `state` = `Unknown` | `Initialized` | `InProgress` | `Completed`
-* `result` = `Succeeded` | `SucceededWithIssues` | `Failed`
+- `id` = Timeline record GUID (Required)
+- `parentid` = Parent timeline record GUID
+- `type` = Record type (Required for first time, can't overwrite)
+- `name` = Record name (Required for first time, can't overwrite)
+- `order` = order of timeline record (Required for first time, can't overwrite)
+- `starttime` = `Datetime`
+- `finishtime` = `Datetime`
+- `progress` = percentage of completion
+- `state` = `Unknown` | `Initialized` | `InProgress` | `Completed`
+- `result` = `Succeeded` | `SucceededWithIssues` | `Failed`
 
 #### Examples
 
@@ -219,10 +219,10 @@ When `issecret` is set to `true`, the value of the variable will be saved as sec
 
 #### Properties
 
-* `variable` = variable name (Required)
-* `issecret` = boolean (Optional, defaults to false)
-* `isoutput` = boolean (Optional, defaults to false)
-* `isreadonly` = boolean (Optional, defaults to false)
+- `variable` = variable name (Required)
+- `issecret` = boolean (Optional, defaults to false)
+- `isoutput` = boolean (Optional, defaults to false)
+- `isreadonly` = boolean (Optional, defaults to false)
 
 #### Examples
 
@@ -286,9 +286,9 @@ Value updated will be retained in the endpoint for the subsequent tasks that exe
 
 #### Properties
 
-* `id` = service connection ID (Required)
-* `field` = field type, one of `authParameter`, `dataParameter`, or `url` (Required)
-* `key` = key (Required, unless `field` = `url`)
+- `id` = service connection ID (Required)
+- `field` = field type, one of `authParameter`, `dataParameter`, or `url` (Required)
+- `key` = key (Required, unless `field` = `url`)
 
 #### Examples
 
@@ -308,8 +308,8 @@ Upload and attach attachment to current timeline record. These files are not ava
 
 #### Properties
 
-* `type` = attachment type (Required)
-* `name` = attachment name (Required)
+- `type` = attachment type (Required)
+- `name` = attachment name (Required)
 
 #### Example
 
@@ -378,8 +378,8 @@ Create an artifact link. Artifact location must be a file container path, VC pat
 
 #### Properties
 
-* `artifactname` = artifact name (Required)
-* `type` = `container` | `filepath` | `versioncontrol` | `gitref` | `tfvclabel`, artifact type (Required)
+- `artifactname` = artifact name (Required)
+- `type` = `container` | `filepath` | `versioncontrol` | `gitref` | `tfvclabel`, artifact type (Required)
 
 #### Examples
 
@@ -413,8 +413,8 @@ Upload a local file into a file container folder, and optionally publish an arti
 
 #### Properties
 
-* `containerfolder` = folder that the file will upload to, folder will be created if needed. (Required)
-* `artifactname` = artifact name
+- `containerfolder` = folder that the file will upload to, folder will be created if needed. (Required)
+- `artifactname` = artifact name
 
 #### Example
 

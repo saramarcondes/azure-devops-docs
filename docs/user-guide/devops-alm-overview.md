@@ -57,7 +57,7 @@ Git is a distributed version control system. Each developer has a copy of the so
 [![Android Studio](media/overview/code-git-android-studio-1.png)](../java/download-android-studio-plug-in.md)&#160;&#160;&#160;&#160;&#160;&#160;[![Eclipse](media/overview/code-git-eclipse-2.png)](../repos/git/share-your-code-in-git-eclipse.md)&#160;&#160;&#160;&#160;&#160;&#160;[![IntelliJ](media/overview/code-git-intellij-3.png)](../java/download-intellij-plug-in.md)
 
 <br/>
-<a href="../repos/git/share-your-code-in-git-vs.md" data-raw-source="[![Visual Studio](media/overview/code-git-visual-studio.png)](../repos/git/share-your-code-in-git-vs.md)"><img src="media/overview/code-git-visual-studio.png" alt="Visual Studio"/></a>&#160;&#160;&#160;&#160;&#160;&#160;<a href="https://code.visualstudio.com/docs/editor/versioncontrol" data-raw-source="[![Visual Studio Code](media/overview/code-git-visual-studio-code.png)](https://code.visualstudio.com/docs/editor/versioncontrol)"><img src="media/overview/code-git-visual-studio-code.png" alt="Visual Studio Code"/></a>&#160;&#160;&#160;&#160;&#160;&#160;<a href="../repos/git/share-your-code-in-git-xcode.md" data-raw-source="[![Xcode](media/overview/code-git-xcode.png)](../repos/git/share-your-code-in-git-xcode.md)"><img src="media/overview/code-git-xcode.png" alt="Xcode"/></a>  
+<a href="../repos/git/share-your-code-in-git-vs.md" data-raw-source="[![Visual Studio](media/overview/code-git-visual-studio.png)](../repos/git/share-your-code-in-git-vs.md)"><img src="media/overview/code-git-visual-studio.png" alt="Visual Studio"/></a>&#160;&#160;&#160;&#160;&#160;&#160;<a href="https://code.visualstudio.com/docs/editor/versioncontrol" data-raw-source="[![Visual Studio Code](media/overview/code-git-visual-studio-code.png)](https://code.visualstudio.com/docs/editor/versioncontrol)"><img src="media/overview/code-git-visual-studio-code.png" alt="Visual Studio Code"/></a>&#160;&#160;&#160;&#160;&#160;&#160;<a href="../repos/git/share-your-code-in-git-xcode.md" data-raw-source="[![Xcode](media/overview/code-git-xcode.png)](../repos/git/share-your-code-in-git-xcode.md)"><img src="media/overview/code-git-xcode.png" alt="Xcode"/></a>
 
 ### TFVC
 
@@ -71,8 +71,8 @@ You can use TFVC to scale from small to large projects, and by using server work
 
 Software development teams often rely on re-using libraries or providing libraries for others to re-use. Package management supports code sharing as binary components across organizations and within teams. With it, you can build projects to produce packages and update projects that consume updated packages. Our Azure Artifacts extension enables plugging in existing package management services you already use, such as local NuGet servers for IP protection, NuGet, MyGet, or Artifactory.
 
-* [Azure Artifacts overview](../artifacts/overview.md)
-* [Search across all your code](../project/search/overview.md)
+- [Azure Artifacts overview](../artifacts/overview.md)
+- [Search across all your code](../project/search/overview.md)
 
 Code Search provides a comprehensive solution to all your code exploration and troubleshooting needs. From discovering examples of API implementation to searching for error text, Code Search offers a fast and powerful way to find code. Search across one or more projects, with semantic ranking and rich search results to ensure you find what you need and can focus in to understand your code. Code Search lets you filter your results based on code types such as definitions, comments, and references; filter by path, file extension, or repository; and use logical operators such as AND, OR, NOT to refine your query and get the results you need.
 
@@ -96,7 +96,7 @@ Help your team continuously deliver software at a faster pace and with lower ris
 
 Agile methodologies speed up the development and test cycle and make sure that you can deliver real value to your customers on a regular basis.
 
-No matter what platform you target or language you use, you can simplify the continuous integration of your apps that build on Linux, macOS, or Windows. And, you can seamless integrate information about your builds with work, code, test, and release.  
+No matter what platform you target or language you use, you can simplify the continuous integration of your apps that build on Linux, macOS, or Windows. And, you can seamless integrate information about your builds with work, code, test, and release.
 -->
 
 In addition to continuous integration testing, you can create [test plans](../test/create-a-test-plan.md), [perform manual testing](../test/index.yml), and [run unit tests](/visualstudio/test/developer-testing-scenarios).
@@ -113,15 +113,15 @@ As your team grows, your tools grow. You can easily add teams which can focus on
 
 Once you've signed up for Azure DevOps Services or installed Azure DevOps Server, get familiar with the [web portal and working in the user and admin contexts](../project/navigation/index.md).
 
-* [About Azure DevOps](about-azure-devops-services-tfs.md)
-* [Essential services](services.md)
-* [Client-server tools](tools.md)
-* [Software development roles](roles.md)
+- [About Azure DevOps](about-azure-devops-services-tfs.md)
+- [Essential services](services.md)
+- [Client-server tools](tools.md)
+- [Software development roles](roles.md)
 
 ### Azure DevOps Server updates
 
-* [What's new](/azure/devops/server/whats-new)
-* [Migrate data from TFS to Azure DevOps Services](../migrate/migrate-from-tfs.md)
+- [What's new](/azure/devops/server/whats-new)
+- [Migrate data from TFS to Azure DevOps Services](../migrate/migrate-from-tfs.md)
 
 ### Pricing, costs, and licenses</span>
 
@@ -135,10 +135,10 @@ Our extensibility framework enables you to build integrations directly within Az
 
 With Marketplace extensions (currently in private preview), you can create first-class integration experiences, such as a simple context menu or toolbar action. Or, you can create a complex, powerful full UI experience that seamlessly lights up within the Azure DevOps Services web portal.
 
-* [Find marketplace extensions](../marketplace/index.md)
-* [Get extensions](../marketplace/install-extension.md)</li>
-* [Using service hooks](../service-hooks/index.md)
-* [Get started with REST APIs](../integrate/get-started/rest/basics.md)
+- [Find marketplace extensions](../marketplace/index.md)
+- [Get extensions](../marketplace/install-extension.md)</li>
+- [Using service hooks](../service-hooks/index.md)
+- [Get started with REST APIs](../integrate/get-started/rest/basics.md)
 
 Service hooks enable integration scenarios between other applications and Azure DevOps by subscribing to events instead of constantly polling for them. Service hooks provide a more efficient way to drive activities when events happen in your projects. For example, you can send a push notification to your team's mobile devices when a build fails, or create a card in Trello when a work item is created. Some of the services you can easily integrate with are UserVoice, Zendesk, Trello, Slack, and HipChat.
 

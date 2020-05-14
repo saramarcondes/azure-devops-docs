@@ -16,8 +16,8 @@ Module path: `TFS/Build/Contracts`
 
 ### Members
 
-* `id`: number. ID of the resource
+- `id`: number. ID of the resource
 
-* `requestedFor`: [VSS_Common_Contracts.IdentityRef](../../../VSS/WebApi/Contracts/IdentityRef.md). Name of the requestor
+- `requestedFor`: [VSS_Common_Contracts.IdentityRef](../../../VSS/WebApi/Contracts/IdentityRef.md). Name of the requestor
 
-* `url`: string. Full http link to the resource
+- `url`: string. Full http link to the resource

@@ -19,9 +19,9 @@ ms.date: 11/19/2018
 
 Use the Markdown widget to support your team and stakeholders by adding information such as:
 
-* Team goals
-* Links to team backlogs or boards, metrics, or other items located in a network share such as a OneNote, SharePoint site or wiki pages
-* Important dates or target deadlines
+- Team goals
+- Links to team backlogs or boards, metrics, or other items located in a network share such as a OneNote, SharePoint site or wiki pages
+- Important dates or target deadlines
 
 Here's an example:  
 <img src="../../project/wiki/media/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" />
@@ -32,27 +32,27 @@ Here's an example:
 
 The Markdown widget supports CommonMark standard features, such as:
 
-* Headings
-* Paragraphs and line breaks
-* Blockquotes
-* Horizontal rule
-* Emphasis (bold, italics, strikethrough)
-* Tables
-* Lists, both ordered and unordered
-* Links
-* Images
-* Escaping characters
+- Headings
+- Paragraphs and line breaks
+- Blockquotes
+- Horizontal rule
+- Emphasis (bold, italics, strikethrough)
+- Tables
+- Lists, both ordered and unordered
+- Links
+- Images
+- Escaping characters
 
 For details on usage, see [Syntax guidance for basic Markdown usage](../../project/wiki/markdown-guidance.md).
 
 For performance reasons, the Markdown widget doesn't add support for a number of extended features, many of which are supported in the wiki. Extended capabilities would impede widget load time. For example, the following extended markdown features aren't supported in the Markdown widget:
 
-* Emdedded HTML syntax
-* Code highlighting (wiki/others support language-syntax aware color coding, CommonMark just renders code as plain preformatted text)
-* Checklists
-* Emoji characters
-* Attachments
-* Math formulas
+- Emdedded HTML syntax
+- Code highlighting (wiki/others support language-syntax aware color coding, CommonMark just renders code as plain preformatted text)
+- Checklists
+- Emoji characters
+- Attachments
+- Math formulas
 
 ## Connect to your project
 
@@ -93,7 +93,7 @@ To add the markdown widget to the dashboard, choose ![ ](media/icons/edit-icon.p
 
 1.  Add or drag the Markdown widget onto the dashboard where you want it located.
 
-    <img src="media/widget-markdown-tile.png" alt="Markdown widget" style="border: 2px solid #C3C3C3;" />  
+    <img src="media/widget-markdown-tile.png" alt="Markdown widget" style="border: 2px solid #C3C3C3;" />
 
 1.  Choose **Done Editing** to exit dashboard editing. This will dismiss the widget catalog. You can then configure the markdown widget as needed.
 
@@ -103,7 +103,7 @@ To add the markdown widget to the dashboard, choose ![ ](media/icons/edit-icon.p
 
 1.  Adjust the widget size as needed to fit the contents of the markdown you'll enter. The largest size is 10 tiles wide by 10 tiles tall. You can always adjust this later.
 
-    <img src="media/add-markdown-size.png" alt="Change markdown widget size" style="border: 1px solid #C3C3C3;" />  
+    <img src="media/add-markdown-size.png" alt="Change markdown widget size" style="border: 1px solid #C3C3C3;" />
 
 1.  Enter the text and markdown syntax into the configuration the configuration dialog. For supported syntax, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../project/wiki/markdown-guidance.md).
 
@@ -137,7 +137,7 @@ To add the markdown widget to the dashboard, choose ![ ](media/icons/edit-icon.p
 
 1.  Drag the Markdown widget onto the dashboard where you want it located.
 
-    <img src="media/widget-markdown-tile.png" alt="Markdown widget" style="border: 2px solid #C3C3C3;" />  
+    <img src="media/widget-markdown-tile.png" alt="Markdown widget" style="border: 2px solid #C3C3C3;" />
 
 1.  Choose the ![gear icon](../../media/icons/gear-icon.png) gear icon to open the configuration dialog for the widget.
 
@@ -145,7 +145,7 @@ To add the markdown widget to the dashboard, choose ![ ](media/icons/edit-icon.p
 
 1.  Adjust the widget size as needed to fit the contents of the markdown you'll enter. The largest size is 10 tiles wide by 10 tiles tall. You can always adjust this later.
 
-    <img src="media/add-markdown-size.png" alt="Change markdown widget size" style="border: 1px solid #C3C3C3;" />  
+    <img src="media/add-markdown-size.png" alt="Change markdown widget size" style="border: 1px solid #C3C3C3;" />
 
 1.  Enter the text and markdown syntax into the configuration the configuration dialog. For supported syntax, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../project/wiki/markdown-guidance.md).
 
@@ -179,7 +179,7 @@ To add the markdown widget to the dashboard, choose ![ ](media/icons/edit-icon.p
 
 ## Related articles
 
-* [Add and manage dashboards](dashboards.md)
-* [Add a widget to a dashboard](add-widget-to-dashboard.md)
-* [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../project/wiki/markdown-guidance.md)
-* [Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)
+- [Add and manage dashboards](dashboards.md)
+- [Add a widget to a dashboard](add-widget-to-dashboard.md)
+- [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../project/wiki/markdown-guidance.md)
+- [Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)

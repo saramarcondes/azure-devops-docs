@@ -74,9 +74,9 @@ The **contributions** stanza contains information about your tasks.
 
 For each contribution in your extension, the manifest defines
 
-* the type of contribution (tab in this case),
-* the contribution target (the product or iteration backlog tabs in this case),
-* and the properties that are specific to each type of contribution. For a tab, we have
+- the type of contribution (tab in this case),
+- the contribution target (the product or iteration backlog tabs in this case),
+- and the properties that are specific to each type of contribution. For a tab, we have
 
 | Property           | Description                                                                                                                                                    |
 | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -18,8 +18,8 @@ ms.date: 03/16/2017
 > [!IMPORTANT]  
 > **Feature availability:** The new form and its corresponding features are available for the web portal for TFS 2017 and later versions.
 >
-> * For on-premises TFS 2017 and later versions, the new form is automatically available when you add projects to a collection. For existing projects, an admin is required to enable the new form as described in this article. (The reason the new form isn't automatically enabled for existing projects is to prevent overwriting customizations made to existing work item types.)
-> * For TFS 2015 and earlier versions, the new form isn't available. You must [upgrade to TFS 2017 or a later version](https://visualstudio.microsoft.com/downloads) to access the new form.
+> - For on-premises TFS 2017 and later versions, the new form is automatically available when you add projects to a collection. For existing projects, an admin is required to enable the new form as described in this article. (The reason the new form isn't automatically enabled for existing projects is to prevent overwriting customizations made to existing work item types.)
+> - For TFS 2015 and earlier versions, the new form isn't available. You must [upgrade to TFS 2017 or a later version](https://visualstudio.microsoft.com/downloads) to access the new form.
 
 Enabling the new form initiates a transformation of the form definitions for all work item types (WITs) defined in your project collection.
 
@@ -50,19 +50,19 @@ You enable the new form from the project collection admin page.
 <!---
 You enable the new form from the project collection admin page.
 
-1. To start, open the admin context for the project.  
+1. To start, open the admin context for the project.
 
-	![Open admin context](../organizations/settings/work/media/team-services-open-admin-context.png)  
+	![Open admin context](../organizations/settings/work/media/team-services-open-admin-context.png)
 
 2. From the collection admin page, click **Enable the new work item form**.
 
 	![Process tab](media/m-new-form-admin-enable.png)
 
-	If you don't see the option to enable, you aren't a member of the Project Collection Administrators group. To get added as one, see [Add an administrator](../organizations/security/set-project-collection-level-permissions.md).  
+	If you don't see the option to enable, you aren't a member of the Project Collection Administrators group. To get added as one, see [Add an administrator](../organizations/security/set-project-collection-level-permissions.md).
 
-4. Click Create new layout to initiate the process of transforming the WIT definitions.  
+4. Click Create new layout to initiate the process of transforming the WIT definitions.
 
-	![Process tab](media/m_new-form-enable.png)  
+	![Process tab](media/m_new-form-enable.png)
 -->
 
 <a id="review"></a>
@@ -91,8 +91,8 @@ Once the new form layouts preview as expected, you can begin rollout.
 
 Choose the opt-in model that supports your needs.
 
-* Choose **Enable opt-in for all users** when you want to enable the opt-in feature and allow users to switch back to the old form
-* Choose the **New form only** option when you want all users to begin using the new form immediately.
+- Choose **Enable opt-in for all users** when you want to enable the opt-in feature and allow users to switch back to the old form
+- Choose the **New form only** option when you want all users to begin using the new form immediately.
 
 <img src="media/manage-new-form-choose-opt-in-dialog.png" alt="Choose the opt-in mode for the new form dialog" style="border: 2px solid #C3C3C3;" />
 
@@ -120,9 +120,9 @@ Disabling the new form will remove the **WebLayout** section from the XML defini
 
 ## Related articles
 
-* [New work item experience](process/new-work-item-experience.md)
-* [Customize the new form](customize-wit-form.md)
-* [WebLayout XML elements reference](xml/weblayout-xml-elements.md)
+- [New work item experience](process/new-work-item-experience.md)
+- [Customize the new form](customize-wit-form.md)
+- [WebLayout XML elements reference](xml/weblayout-xml-elements.md)
 
 ### Best-effort transformation
 

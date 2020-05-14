@@ -26,8 +26,8 @@ Before you start to add or modify a link type, you should assess the link types 
 
 You may want to modify or create a link type for one of the following reasons:
 
-* Change the link labels that are used to match your team's naming conventions.
-* Add a link type to track a particular relationship that is unique to your team's process.
+- Change the link labels that are used to match your team's naming conventions.
+- Add a link type to track a particular relationship that is unique to your team's process.
 
 The link type is specified in a type definition XML file that you import to a project collection. See [LinkTypes](link-type-element-reference.md).
 
@@ -39,5 +39,5 @@ In addition to defining link types, you can customize the work item type definit
 
 ## Related articles
 
-* [Link work items to track dependencies](../../boards/queries/link-work-items-support-traceability.md)
-* [Customize your work tracking experience](../customize-work.md)
+- [Link work items to track dependencies](../../boards/queries/link-work-items-support-traceability.md)
+- [Customize your work tracking experience](../customize-work.md)

@@ -47,13 +47,13 @@ arise during the support lifecycle of the product. See [Product Lifecycle and Se
 
 1.  Existing customers of CLT:
 
-    * For existing Azure DevOps customers using cloud-load testing functionality in the Azure DevOps portal,
+    - For existing Azure DevOps customers using cloud-load testing functionality in the Azure DevOps portal,
       this feature will no longer be available as of March 31, 2020.
 
-    * For existing Azure customers using the performance test feature in App Services or Application Insights,
+    - For existing Azure customers using the performance test feature in App Services or Application Insights,
       this feature will no longer be available as of March 31, 2020.
 
-    * For Visual Studio users leveraging cloud-based load testing, this feature will no longer be supported
+    - For Visual Studio users leveraging cloud-based load testing, this feature will no longer be supported
       as of March 31, 2020. Visual Studio Enterprise customers can, however, continue to run load tests on-premises
       using Test Controller/Test Agent and will be supported for any issues that may arise during the
       [support lifecycle](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs) of the Visual Studio version.
@@ -107,9 +107,9 @@ by using the **Export test to Visual Studio** option and use the test through Vi
 If you are using the cloud-based load testing service and want to access to results of any
 existing runs after the service goes offline, you can download the reports:
 
-* If you use Visual Studio load tests, URL-based load tests, or HAR-based load tests, download the reports in Visual Studio Enterprise for offline viewing.
+- If you use Visual Studio load tests, URL-based load tests, or HAR-based load tests, download the reports in Visual Studio Enterprise for offline viewing.
 
-* If you use Apache JMeter, download the results file (.csv) for offline viewing using the reporters in JMeter.
+- If you use Apache JMeter, download the results file (.csv) for offline viewing using the reporters in JMeter.
 
 ## Visual Studio web performance test (.webtest file)
 

@@ -22,11 +22,11 @@ To modify the workflow, you modify the definition for a work item type. See [Mod
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <TRANSITION from="NameOfStartingState" to="NameOfEndingState" for="UserGroupName" not="UserGroupName">  
->        <ACTIONS> . . . </ACTIONS>  
->        <REASONS> . . . </REASONS>  
->        <FIELDS> . . . </FIELDS>  
-> </TRANSITION>  
+> <TRANSITION from="NameOfStartingState" to="NameOfEndingState" for="UserGroupName" not="UserGroupName">
+>        <ACTIONS> . . . </ACTIONS>
+>        <REASONS> . . . </REASONS>
+>        <FIELDS> . . . </FIELDS>
+> </TRANSITION>
 > ```
 
 ## Attributes and elements
@@ -78,18 +78,18 @@ In the following example, the reasons are defined for the transition from the **
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <TRANSITION from="Active" to="Resolved">  
->    . . .  
->    <REASONS>  
->       <DEFAULTREASON value="Fixed"/>  
->       <REASON value="Deferred"/>  
->       <REASON value="Duplicate"/>  
->       <REASON value="As Designed"/>  
->       <REASON value="Unable to Reproduce"/>  
->       <REASON value="Obsolete"/>  
->    </REASONS>  
->    . . .  
-> </TRANSITION>  
+> <TRANSITION from="Active" to="Resolved">
+>    . . .
+>    <REASONS>
+>       <DEFAULTREASON value="Fixed"/>
+>       <REASON value="Deferred"/>
+>       <REASON value="Duplicate"/>
+>       <REASON value="As Designed"/>
+>       <REASON value="Unable to Reproduce"/>
+>       <REASON value="Obsolete"/>
+>    </REASONS>
+>    . . .
+> </TRANSITION>
 > ```
 
 ## Example
@@ -99,8 +99,8 @@ In the following rule, the ability to transition a work item from the **Resolved
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <TRANSITION from="Resolved" to="Complete" for="[project]\AllTesters" not="[project]\NewTesters">  
-> </TRANSITION>  
+> <TRANSITION from="Resolved" to="Complete" for="[project]\AllTesters" not="[project]\NewTesters">
+> </TRANSITION>
 > ```
 
 ::: moniker range=">= tfs-2018"
@@ -118,5 +118,5 @@ To learn more, see [Workflow states & state categories](../../boards/work-items/
 
 ## Related articles
 
-* [Change the workflow](change-workflow-wit.md)
-* [Customize your work tracking experience](../customize-work.md)
+- [Change the workflow](change-workflow-wit.md)
+- [Customize your work tracking experience](../customize-work.md)

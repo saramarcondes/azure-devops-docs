@@ -70,13 +70,13 @@ When the wizard can't update a project, it returns a message indicating that the
 
 When this occurs, you'll need to perform some manual updates according to one of the following options:
 
-* If your project is based on a process template other than those that TFS provides, [update the customized process template used to create the project](update-customized-process-template.md), and then run the Configure Features wizard.
+- If your project is based on a process template other than those that TFS provides, [update the customized process template used to create the project](update-customized-process-template.md), and then run the Configure Features wizard.
 
   TFS process templates correspond to Scrum, Agile, and CMMI as described in [Choose a process](../boards/work-items/guidance/choose-process.md).
 
-* If your project has been heavily customized, but not the process template, [add the new features manually](add-features-manually.md).
+- If your project has been heavily customized, but not the process template, [add the new features manually](add-features-manually.md).
 
-* If your project was based on a v4.2 or earlier process template version, first [apply the updates to comply with TFS 2012 manually](xml/update-a-team-project-v4-dot-2-process-template.md). Then run the Configure Features wizard.
+- If your project was based on a v4.2 or earlier process template version, first [apply the updates to comply with TFS 2012 manually](xml/update-a-team-project-v4-dot-2-process-template.md). Then run the Configure Features wizard.
 
 ## Try this next
 
@@ -84,11 +84,11 @@ You'll be able to start using several of the new features after they've been ena
 
 In particular:
 
-* To view and work with Epic and Feature portfolio backlogs, you may need to [select them for your team](../organizations/settings/select-backlog-navigation-levels.md)
-* To add the Epic portfolio backlog to your project or additional portfolio backlog levels, you can [add them manually](add-portfolio-backlogs.md).
-* To use Code Review and Feedback Request, you need to [configure an SMTP server for TFS](/azure/devops/server/admin/setup-customize-alerts).
-* To use Bugs Behavior, you must configure this option as described in [Show bugs on backlogs and boards feature](../organizations/settings/show-bugs-on-backlog.md).
-* To fully manage Epic and Feature portfolio backlogs or web-based test plans, you need to have [Advanced access](../organizations/security/change-access-levels.md).
+- To view and work with Epic and Feature portfolio backlogs, you may need to [select them for your team](../organizations/settings/select-backlog-navigation-levels.md)
+- To add the Epic portfolio backlog to your project or additional portfolio backlog levels, you can [add them manually](add-portfolio-backlogs.md).
+- To use Code Review and Feedback Request, you need to [configure an SMTP server for TFS](/azure/devops/server/admin/setup-customize-alerts).
+- To use Bugs Behavior, you must configure this option as described in [Show bugs on backlogs and boards feature](../organizations/settings/show-bugs-on-backlog.md).
+- To fully manage Epic and Feature portfolio backlogs or web-based test plans, you need to have [Advanced access](../organizations/security/change-access-levels.md).
 
 <a id="related-notes"> </a>
 
@@ -98,12 +98,12 @@ The Configure Features wizard will work in most cases to update your project. In
 
 See the following resources as they relate to updating your project:
 
-* [New features added when you update TFS](new-features-added.md)
-* [Update a customized process template to access new features](update-customized-process-template.md)
-* [Add features using a manual update process](add-features-manually.md)
-* [Before you upgrade TFS](upgrade-tfs-2008-or-2010.md)
-* [Additional configuration options](additional-configuration-options.md)
-* [Changes made to process templates to support new features](../boards/work-items/guidance/changes-to-process-templates.md)
+- [New features added when you update TFS](new-features-added.md)
+- [Update a customized process template to access new features](update-customized-process-template.md)
+- [Add features using a manual update process](add-features-manually.md)
+- [Before you upgrade TFS](upgrade-tfs-2008-or-2010.md)
+- [Additional configuration options](additional-configuration-options.md)
+- [Changes made to process templates to support new features](../boards/work-items/guidance/changes-to-process-templates.md)
 
 If you have additional questions, you can post one or search for answers in the [Team Foundation Server - work tracking](https://social.msdn.microsoft.com/Forums/tfsworkitemtracking/threads) forum.
 
@@ -113,9 +113,9 @@ If you have additional questions, you can post one or search for answers in the 
 
 If the projects were created from the same process template, you should be able to modify the source process template, upload it, and then batch update all projects defined for a project collection. Review the following resources:
 
-* [Update a customized process template to access new features](update-customized-process-template.md)
-* [How to Configure Features for dozens of projects](https://devblogs.microsoft.com/devops/how-to-configure-features-for-dozens-of-team-projects/)
-* [Features4tfs CodePlex solution](https://features4tfs.codeplex.com/).
+- [Update a customized process template to access new features](update-customized-process-template.md)
+- [How to Configure Features for dozens of projects](https://devblogs.microsoft.com/devops/how-to-configure-features-for-dozens-of-team-projects/)
+- [Features4tfs CodePlex solution](https://features4tfs.codeplex.com/).
 
 ### Resolve warning or error messages related to the update of test management artifacts
 
@@ -135,18 +135,18 @@ Here's what the Configure Features wizard does:
 
 The Configure Features wizard depends on the following objects to run and to successfully update your projects:
 
-* The ProcessTemplate file must include the version statement. If the version statement is not present, the Configure Features wizard cannot select the process template for updating a project. Also, the highest version number must be unique for each template ID. If more than one process template that specifies the same highest version number for the same template ID has been uploaded to TFS, then none of the process templates can be selected for updating a project.
+- The ProcessTemplate file must include the version statement. If the version statement is not present, the Configure Features wizard cannot select the process template for updating a project. Also, the highest version number must be unique for each template ID. If more than one process template that specifies the same highest version number for the same template ID has been uploaded to TFS, then none of the process templates can be selected for updating a project.
 
-- For each field defined for a project collection, the following attributes must match:
+* For each field defined for a project collection, the following attributes must match:
 
-  * Friendly name
-  * Data type
-  * Assignment to synchronize personal names with Active Directory (syncnamechanges).
-  * Reporting attributes: reporting reference name, reporting name, reporting type, and reporting format
+  - Friendly name
+  - Data type
+  - Assignment to synchronize personal names with Active Directory (syncnamechanges).
+  - Reporting attributes: reporting reference name, reporting name, reporting type, and reporting format
 
-- Reference names assigned to fields and link types must be unique within a project collection.
-- Friendly names of the categories must be unique within a project.
-- Certain work item types (WITs) and categories are required for the wizard to configure a feature. If you have renamed or deleted any of these WITs or categories, the wizard will return the following messages:
+* Reference names assigned to fields and link types must be unique within a project collection.
+* Friendly names of the categories must be unique within a project.
+* Certain work item types (WITs) and categories are required for the wizard to configure a feature. If you have renamed or deleted any of these WITs or categories, the wizard will return the following messages:
 
   `There are no process templates available with valid configuration settings for this project.`
 

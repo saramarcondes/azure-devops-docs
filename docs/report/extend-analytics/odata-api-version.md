@@ -142,5 +142,5 @@ Since removal of the `UserType` field is a breaking change, the field won't be r
 
 ## Related articles
 
-* [Data model for Analytics](data-model-analytics-service.md)
-* [OData Version 4.0 Part 5: Versioning](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752208)
+- [Data model for Analytics](data-model-analytics-service.md)
+- [OData Version 4.0 Part 5: Versioning](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752208)

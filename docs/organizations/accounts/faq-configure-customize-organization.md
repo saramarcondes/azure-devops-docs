@@ -18,10 +18,10 @@ monikerRange: '>= tfs-2013'
 
 In this article, learn the answers to frequently asked questions (FAQs) about creating and configuring an organization in Azure DevOps. FAQs are grouped by the following subjects:
 
-* [General](#general-organization-faqs)
-* [Create an organization](#create-organization-faqs)
-* [Configure an organization](#configure-organization-faqs)
-* [Delete or restore an organization](#delete-restore-organization-faqs)
+- [General](#general-organization-faqs)
+- [Create an organization](#create-organization-faqs)
+- [Configure an organization](#configure-organization-faqs)
+- [Delete or restore an organization](#delete-restore-organization-faqs)
 
 For more information about user and permissions management, see [User and permissions management FAQs](faq-user-and-permissions-management.md).
 
@@ -35,11 +35,11 @@ For more information about user and permissions management, see [User and permis
 
 A: Azure DevOps is free for these users to join:
 
-* Five users who get [Basic features](https://visualstudio.microsoft.com/team-services/compare-features/), like version control and tools for Agile, Java, and build and release management.
+- Five users who get [Basic features](https://visualstudio.microsoft.com/team-services/compare-features/), like version control and tools for Agile, Java, and build and release management.
 
-* Unlimited users who get [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/), like working with your backlog, work items, and queries.
+- Unlimited users who get [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/), like working with your backlog, work items, and queries.
 
-* Unlimited [Visual Studio subscribers](https://visualstudio.microsoft.com/team-services/compare-features/) who also get Basic features.
+- Unlimited [Visual Studio subscribers](https://visualstudio.microsoft.com/team-services/compare-features/) who also get Basic features.
 
   [Learn what else you get with Azure DevOps](https://visualstudio.microsoft.com/team-services/pricing/).
 
@@ -59,11 +59,9 @@ A: If you're a new user, you can change your profile details. Change your profil
 
 1.  Confirm your profile details.
 
-
     ![Confirm profile details](media/sign-up-visual-studio-team-services/create-profile-msa.png)
 
 2.  Continue creating your organization.
-
 
     ![Create your organization](media/sign-up-visual-studio-team-services/my-info-new-organization.png)
 
@@ -143,15 +141,15 @@ A: Your choice of account type affects how you control access and authenticate u
 
 When you sign up with a Microsoft account:
 
-* You're solely responsible for managing access to your organization.
-* All users must sign in with Microsoft accounts.
+- You're solely responsible for managing access to your organization.
+- All users must sign in with Microsoft accounts.
 
 When you sign up with a work or school account:
 
-* Your organization is automatically connected to your directory in Azure Active Directory.
-* All users must be members in the connected directory to get access to your organization.
-* The directory administrator has control over who can join the directory.
-* You sign in with work or school accounts, or with Microsoft accounts if your company allows that.
+- Your organization is automatically connected to your directory in Azure Active Directory.
+- All users must be members in the connected directory to get access to your organization.
+- The directory administrator has control over who can join the directory.
+- You sign in with work or school accounts, or with Microsoft accounts if your company allows that.
 
 To [add users to the directory](/azure/active-directory/active-directory-create-users), you must be a directory administrator. If you can't access, work with your directory administrator to add users. Learn more about [work or school accounts for your organization](/azure/active-directory/sign-up-organization).
 
@@ -165,9 +163,9 @@ A: Yes, see [Disconnect your organization from Azure Active Directory](disconnec
 
 [!INCLUDE [choose-msa-azuread-account](../../includes/qa-choose-msa-azuread-account.md)]
 
-* Choose **Work or school account** if you want to use your directory to authenticate users and control organization access. This option limits access to members in your organization's directory. In this case, all other users also must sign in with work or school accounts.
+- Choose **Work or school account** if you want to use your directory to authenticate users and control organization access. This option limits access to members in your organization's directory. In this case, all other users also must sign in with work or school accounts.
 
-* Choose **Personal account** if you want to use your Microsoft account with Azure DevOps. In this case, all other users also must sign in with Microsoft accounts.
+- Choose **Personal account** if you want to use your Microsoft account with Azure DevOps. In this case, all other users also must sign in with Microsoft accounts.
 
 [!INCLUDE [why-cant-sign-in-msa-azuread-account](../../includes/qa-why-cant-sign-in-msa-azuread-account.md)]
 
@@ -201,10 +199,10 @@ A: You can try [Subscription Support](https://visualstudio.microsoft.com/support
 
 A: You may not find the user for one of the following reasons:
 
-* The user isn't in your organization, or the user doesn't have organization access. Learn how to [add a user to your organization](add-organization-users.md).
-* The user hasn't created a Visual Studio profile and agreed to the Terms of Service.
-* If you recently added this person to your organization, you might experience a delay before the user appears in the possible organization owners list.
-* If your organization uses Azure Active Directory to control access, directory members don't appear in the possible organization owners list until they meet the requirements. For more information, see [Access Azure AD FAQs](faq-azure-access.md).
+- The user isn't in your organization, or the user doesn't have organization access. Learn how to [add a user to your organization](add-organization-users.md).
+- The user hasn't created a Visual Studio profile and agreed to the Terms of Service.
+- If you recently added this person to your organization, you might experience a delay before the user appears in the possible organization owners list.
+- If your organization uses Azure Active Directory to control access, directory members don't appear in the possible organization owners list until they meet the requirements. For more information, see [Access Azure AD FAQs](faq-azure-access.md).
 
 ### Q: What if the owner of my organization has left the company/isn't active?
 
@@ -246,10 +244,10 @@ A: The organization Owner manages payments and access for organization users. Th
 
 Organization Owners also have permissions to do the following tasks:
 
-* Pay for users to access the organization
-* Pay for additional organization services
-* Rename the organization URL
-* Change the organization Owner
+- Pay for users to access the organization
+- Pay for additional organization services
+- Rename the organization URL
+- Change the organization Owner
 
 Project collection administrators can manage user access and change the organization Owner, but they can't rename the organization URL.
 
@@ -296,6 +294,6 @@ A: See [Recover your organization](recover-your-vsts-organization.md).
 
 ## Related articles
 
-* [Access with Azure AD FAQs](faq-azure-access.md)
-* [Set up Visual Studio FAQs](faq-set-up-vs.md)
-* [User and permissions management FAQs](faq-user-and-permissions-management.md)
+- [Access with Azure AD FAQs](faq-azure-access.md)
+- [Set up Visual Studio FAQs](faq-set-up-vs.md)
+- [User and permissions management FAQs](faq-user-and-permissions-management.md)

@@ -47,7 +47,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/builds?api-versio
 | tagFilters | string | A comma-delimited list of tags. Only builds with these tags will be returned.
 | properties | string | A comma-delimited list of extended properties to retrieve.
 | maxBuildsPerDefinition | int | The maximum number of builds to retrieve for each definition. This is only valid when definitions is also specified.
-| $top | int | Maximum number of builds to return.
+| \$top | int | Maximum number of builds to return.
 | continuationToken | string | A continuation token for paging through builds
 
 ### For a build definition
@@ -2963,7 +2963,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/builds/{buildId}/
 | buildId | int | ID of the build.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| $top | int | Maximum number of changes to return.
+| \$top | int | Maximum number of changes to return.
 
 #### Sample request
 
@@ -3101,7 +3101,7 @@ POST https://{instance}/DefaultCollection/{project}/_apis/build/builds/{buildId}
 | buildId | int | ID of the build.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| $top | int | Maximum number of work items to return.
+| \$top | int | Maximum number of work items to return.
 
 #### Sample request
 

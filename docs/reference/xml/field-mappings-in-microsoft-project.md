@@ -67,5 +67,5 @@ In Project you can map any field name that starts with **pjtask** to a field in 
 
 ## Related articles
 
-* [Create your backlog and tasks using Project](../../boards/backlogs/office/create-your-backlog-tasks-using-project.md)
-* [TFSFieldMapping](upload-or-download-the-microsoft-project-mapping-file.md)
+- [Create your backlog and tasks using Project](../../boards/backlogs/office/create-your-backlog-tasks-using-project.md)
+- [TFSFieldMapping](upload-or-download-the-microsoft-project-mapping-file.md)

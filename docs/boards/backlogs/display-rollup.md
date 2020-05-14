@@ -89,8 +89,8 @@ Each user can set their own column options which persist for each backlog across
 
 1.  Choose from the menu provided.
 
-    * **Progress bar** displays progress bars based on the percentage of associated descendant work items which have been completed or closed.
-    * **Total number** displays the sum of descendant items or the associated fields of descendant items. Totals provide a measure of the size of a Feature or Epic based on the number of its child items. For example, **Count of Tasks** shows the sum of all tasks that are linked to parent items. The active or closed state is ignored.
+    - **Progress bar** displays progress bars based on the percentage of associated descendant work items which have been completed or closed.
+    - **Total number** displays the sum of descendant items or the associated fields of descendant items. Totals provide a measure of the size of a Feature or Epic based on the number of its child items. For example, **Count of Tasks** shows the sum of all tasks that are linked to parent items. The active or closed state is ignored.
 
     > [!div class="mx-imgBorder"]  
     > ![Rollup column menu](media/rollup/rollup-menu.png)
@@ -146,12 +146,12 @@ If you add a custom work item type or field to a backlog level, you can view rol
 
 You can change the column order, column size, or sort options by using the following keyboard commands:
 
-* To change the column order, click the field and drag it to a new location
-* To re-size a column, choose the column divider to the right of the field and drag to a new location
+- To change the column order, click the field and drag it to a new location
+- To re-size a column, choose the column divider to the right of the field and drag to a new location
 
 ## Related articles
 
-* [Change column options](set-column-options.md)
-* [Work item field index](../work-items/guidance/work-item-field.md)
-* [Backlogs, boards, and plans](backlogs-boards-plans.md)
-* [Create managed queries](../queries/using-queries.md)
+- [Change column options](set-column-options.md)
+- [Work item field index](../work-items/guidance/work-item-field.md)
+- [Backlogs, boards, and plans](backlogs-boards-plans.md)
+- [Create managed queries](../queries/using-queries.md)

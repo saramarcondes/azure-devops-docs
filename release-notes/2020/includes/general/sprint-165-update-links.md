@@ -2,4 +2,4 @@
 ms.topic: include
 ---
 
-* [Disable Request Access policy](#disable-request-access-policy)
+- [Disable Request Access policy](#disable-request-access-policy)

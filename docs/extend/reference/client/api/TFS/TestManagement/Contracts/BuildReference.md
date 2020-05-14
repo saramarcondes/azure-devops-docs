@@ -16,14 +16,14 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Members
 
-* `branchName`: string.
+- `branchName`: string.
 
-* `buildSystem`: string.
+- `buildSystem`: string.
 
-* `definitionId`: number.
+- `definitionId`: number.
 
-* `id`: number.
+- `id`: number.
 
-* `number`: string.
+- `number`: string.
 
-* `uri`: string.
+- `uri`: string.

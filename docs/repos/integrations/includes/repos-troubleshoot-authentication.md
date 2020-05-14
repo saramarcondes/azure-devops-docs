@@ -2,8 +2,8 @@
 ms.topic: include
 ---
 
-* [Sorry, something went wrong. Please try again.](#sorry-something-went-wrong-please-try-again)
-* [Configuration failed. Please make sure that the organization '{organization name}' exists and that you have sufficient
+- [Sorry, something went wrong. Please try again.](#sorry-something-went-wrong-please-try-again)
+- [Configuration failed. Please make sure that the organization '{organization name}' exists and that you have sufficient
   permissions.](#configuration-failed-please-make-sure-that-the-organization-organization-name-exists-and-that-you-have-sufficient-permissions)
 
 ### Sorry, something went wrong. Please try again.

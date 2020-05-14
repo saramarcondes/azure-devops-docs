@@ -156,8 +156,8 @@ Team members can use the reports in the following table to obtain an overview of
 
 ## Related notes
 
-* [Charts](../charts.md)
-  * [Create Excel reports from a work item query](create-status-and-trend-excel-reports.md)
+- [Charts](../charts.md)
+  - [Create Excel reports from a work item query](create-status-and-trend-excel-reports.md)
 
 <a name="RequiredPermissions"></a>
 
@@ -165,11 +165,11 @@ Team members can use the reports in the following table to obtain an overview of
 
 To access and use the Microsoft Excel reports, the following configurations must be met:
 
-* To access an Excel report, your team project must have been provisioned with a project portal.
+- To access an Excel report, your team project must have been provisioned with a project portal.
 
   Excel reports are stored on the server that hosts SharePoint Products for your team project. If a project portal has not been enabled for your team project, you cannot access the workbook. For more information, see [Configure or add a project portal](../../project/configure-or-add-a-project-portal.md).
 
-* To open a report in Excel that connects to the operational data store for Team Foundation, you must have the Team Foundation Office Integration add-in installed on your client computer. This add-in is installed when you install any version of Visual Studio or Team Explorer.
+- To open a report in Excel that connects to the operational data store for Team Foundation, you must have the Team Foundation Office Integration add-in installed on your client computer. This add-in is installed when you install any version of Visual Studio or Team Explorer.
 
   To view or modify an Excel report that is stored under the Documents node for a team project, you must be assigned or belong to a group that has been assigned **Read** permissions for Team Foundation. You must also have **Visitors** or **Members** permissions, respectively, in SharePoint Products for the team project.
 
@@ -179,21 +179,21 @@ To access and use the Microsoft Excel reports, the following configurations must
 
   You must configure the SharePoint web application for Single Sign-On if you do not want to add users as members of the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services. In addition, you must configure the application for Single Sign-on if the team project portal is configured to use NTLM authentication and is not installed on the data-tier server.
 
-* **For Single Sign-On Authentication (Recommended)**
+- **For Single Sign-On Authentication (Recommended)**
 
   To authenticate viewers of enterprise dashboards by using Single Sign-On, you must perform the following actions:
 
-  * You must configure the SharePoint web application to use Single Sign-on. For more information about how to configure Single Sign-on, see [Configure authentication infrastructure in SharePoint 2013](https://msdn.microsoft.com/library/jj219795.aspx).
+  - You must configure the SharePoint web application to use Single Sign-on. For more information about how to configure Single Sign-on, see [Configure authentication infrastructure in SharePoint 2013](https://msdn.microsoft.com/library/jj219795.aspx).
 
-  * You must add dashboard viewers to a group that is granted access to the Single Sign-on enterprise application definition.
+  - You must add dashboard viewers to a group that is granted access to the Single Sign-on enterprise application definition.
 
-* **For Windows Authentication**
+- **For Windows Authentication**
 
   To authenticate viewers of enterprise dashboards by using Windows Authentication, you must perform the following actions:
 
-  * You must either host the team project portal on the data-tier server, or you must configure the SharePoint web application to use Kerberos authentication.
+  - You must either host the team project portal on the data-tier server, or you must configure the SharePoint web application to use Kerberos authentication.
 
-  * You must add users as members of the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services.
+  - You must add users as members of the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services.
 
   The following table summarizes the required permissions based on activity. For information about how to grant these permissions to team members, see [Add users to team projects](../../organizations/security/add-users-team-project.md). For information about permissions that are required to work with Excel reports in general, see [Grant permissions to view and manage reports](../admin/grant-permissions-to-reports.md).
 

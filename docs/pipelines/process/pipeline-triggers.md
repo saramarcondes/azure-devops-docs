@@ -68,9 +68,9 @@ If the triggering pipeline and the triggered pipeline use the same repository, t
 
 When you specify both CI triggers and pipeline triggers, you can expect new runs to be started every time (a) an update is made to the repository and (b) a run of the upstream pipeline is completed. Consider an example of a pipeline `B` that depends on `A`. Let us also assume that both of these pipelines use the same repository for the source code, and that both of them also have CI triggers configured. When you push an update to the repository, then:
 
-* A new run of `A` is started.
-* At the same time, a new run of `B` is started. This run will consume the previously produced artifacts from `A`.
-* As `A` completes, it will trigger another run of `B`.
+- A new run of `A` is started.
+- At the same time, a new run of `B` is started. This run will consume the previously produced artifacts from `A`.
+- As `A` completes, it will trigger another run of `B`.
 
 To prevent triggering two runs of `B` in this example, you must remove its CI trigger or pipeline trigger.
 

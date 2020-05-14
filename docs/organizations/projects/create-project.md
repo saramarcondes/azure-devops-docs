@@ -21,7 +21,7 @@ This article describes how to use Azure DevOps to create a project and establish
 > [!NOTE]
 > This article is about creating a project in Azure DevOps or a Team Foundation Server. If instead you want to create Azure DevOps Projects, see [Azure DevOps Projects](/azure/devops-project/).
 
-<!---Projects differ from [software application projects or solutions](https://msdn.microsoft.com/library/zfzh36t7.aspx). -->  
+<!---Projects differ from [software application projects or solutions](https://msdn.microsoft.com/library/zfzh36t7.aspx). -->
 
 If you have a project already, see [Get Started with Azure Repos and Visual Studio](../../repos/git/gitquickstart.md).
 
@@ -35,29 +35,29 @@ If you have a project already, see [Get Started with Azure Repos and Visual Stud
 
 ::: moniker range="azure-devops"
 
-* You create a project within an organization. If you haven't created an organization yet, create one by following the instructions in [Sign up, sign in to Azure DevOps](../../user-guide/sign-up-invite-teammates.md), which also creates a project. Or see [Quickstart: Create an organization or project collection](../accounts/create-organization.md).
-* You must be a member of the Project Collection Administrators group or have the **Create new projects** permission set to **Allow**. If you're the Organization Owner, you're automatically added to the Project Collection Administrators group. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
+- You create a project within an organization. If you haven't created an organization yet, create one by following the instructions in [Sign up, sign in to Azure DevOps](../../user-guide/sign-up-invite-teammates.md), which also creates a project. Or see [Quickstart: Create an organization or project collection](../accounts/create-organization.md).
+- You must be a member of the Project Collection Administrators group or have the **Create new projects** permission set to **Allow**. If you're the Organization Owner, you're automatically added to the Project Collection Administrators group. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018 < azure-devops"
 
-* You create a project within a project collection. If you haven't created a project collection yet, do that now. See [Create a project collection](/azure/devops/server/admin/manage-project-collections?view=azure-devops#create-a-project-collection).
-* You must be a member of the Project Collection Administrators group or have the **Create new projects** permission set to **Allow**. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
+- You create a project within a project collection. If you haven't created a project collection yet, do that now. See [Create a project collection](/azure/devops/server/admin/manage-project-collections?view=azure-devops#create-a-project-collection).
+- You must be a member of the Project Collection Administrators group or have the **Create new projects** permission set to **Allow**. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2017"
 
-* You create a project within a project collection. If you haven't created a project collection yet, do that now. See [Create a project collection](/azure/devops/server/admin/manage-project-collections?view=azure-devops#create-a-project-collection).
-* You must be a member of the Project Collection Administrators group or have the **Create new projects** permission set to **Allow**. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](/azure/devops/organizations/security/set-project-collection-level-permissions).
-* Ask your TFS administrator about the following resources and get additional permissions as needed:
+- You create a project within a project collection. If you haven't created a project collection yet, do that now. See [Create a project collection](/azure/devops/server/admin/manage-project-collections?view=azure-devops#create-a-project-collection).
+- You must be a member of the Project Collection Administrators group or have the **Create new projects** permission set to **Allow**. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](/azure/devops/organizations/security/set-project-collection-level-permissions).
+- Ask your TFS administrator about the following resources and get additional permissions as needed:
 
-  * Which project collection should you connect to when you create your project? If you installed TFS using the Basic Server Configuration Wizard, you have only one project collection named **DefaultCollection**. Unless you support hundreds of projects, you should create all your projects within a single project collection. If you need to create additional collections, see [Manage project collections](/azure/devops/server/admin/manage-project-collections).
+  - Which project collection should you connect to when you create your project? If you installed TFS using the Basic Server Configuration Wizard, you have only one project collection named **DefaultCollection**. Unless you support hundreds of projects, you should create all your projects within a single project collection. If you need to create additional collections, see [Manage project collections](/azure/devops/server/admin/manage-project-collections).
 
-  * Have you configured SQL Server Analysis Services and SQL Server Reporting Services for the deployment? If so, ask your administrator to add you as a member of the Team Foundation Content Managers group. You must be a member of this group on the server that hosts SQL Server Reporting Services. Without these permissions, you can't create a project. For more information, see [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md).
+  - Have you configured SQL Server Analysis Services and SQL Server Reporting Services for the deployment? If so, ask your administrator to add you as a member of the Team Foundation Content Managers group. You must be a member of this group on the server that hosts SQL Server Reporting Services. Without these permissions, you can't create a project. For more information, see [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md).
 
-  * Have you configured a SharePoint Web application for your deployment? You can configure a SharePoint portal when you create your project. To do so, contact your SharePoint administrator to give you Full Control permissions on the server that hosts SharePoint Products. Otherwise, you can skip this step and configure a portal at a later time.
+  - Have you configured a SharePoint Web application for your deployment? You can configure a SharePoint portal when you create your project. To do so, contact your SharePoint administrator to give you Full Control permissions on the server that hosts SharePoint Products. Otherwise, you can skip this step and configure a portal at a later time.
 
 ::: moniker-end
 
@@ -72,11 +72,11 @@ If you have a project already, see [Get Started with Azure Repos and Visual Stud
 
 When you create a project, specify the following options:
 
-* The organization or project collection where the project is defined. For guidance, see [About projects and scaling your organization](about-projects.md).
-* A project name. Your project name can't contain special characters, such as `/ : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ]`, can't begin with an underscore, can't begin or end with a period, and must be 64 or fewer characters.
-* An optional project description.
-* The type of repository used for initial source control, either Git or Team Foundation version control (TFVC). Git is the default. You can add any type of repository later to your project. For guidance, see [Choosing the right source control for your project](../../repos/tfvc/comparison-git-tfvc.md).
-* The process that determines the work item types available for tracking work using Azure Boards. If you don't specify a process, the default is Agile. For guidance, see [Choose a process](../../boards/work-items/guidance/choose-process.md).
+- The organization or project collection where the project is defined. For guidance, see [About projects and scaling your organization](about-projects.md).
+- A project name. Your project name can't contain special characters, such as `/ : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ]`, can't begin with an underscore, can't begin or end with a period, and must be 64 or fewer characters.
+- An optional project description.
+- The type of repository used for initial source control, either Git or Team Foundation version control (TFVC). Git is the default. You can add any type of repository later to your project. For guidance, see [Choosing the right source control for your project](../../repos/tfvc/comparison-git-tfvc.md).
+- The process that determines the work item types available for tracking work using Azure Boards. If you don't specify a process, the default is Agile. For guidance, see [Choose a process](../../boards/work-items/guidance/choose-process.md).
 
 ::: moniker range="azure-devops"
 
@@ -106,13 +106,13 @@ When you create a project, specify the following options:
 
     Select one of the following options to get started:
 
-    * **Invite** to add others to your project. See [Add users to a project or team](../security/add-users-team-project.md). You can only invite users who are already in your organization. For more information, see [Add members to projects](../accounts/add-team-members.md).
-    * **Boards** to add work items. See [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md).
-    * **Repos** to clone or import a repository, or initialize a _README_ file for your project summary page. See [Clone an existing Git repo](../../repos/git/clone.md).
-    * **Pipelines** to define a pipeline. See [Azure Pipelines documentation](../../pipelines/index.yml).
-    * **Test Plans** to define test plans and test suites. See [Create test plans and test suites](../../test/create-a-test-plan.md).
-    * **Artifacts** to discover, install, and publish NuGet, npm, and Maven packages. See the [Azure Artifacts overview](../../artifacts/overview.md).
-    * **manage your services** to disable the visibility of services. See [Turn a service on or off](../settings/set-services.md).
+    - **Invite** to add others to your project. See [Add users to a project or team](../security/add-users-team-project.md). You can only invite users who are already in your organization. For more information, see [Add members to projects](../accounts/add-team-members.md).
+    - **Boards** to add work items. See [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md).
+    - **Repos** to clone or import a repository, or initialize a _README_ file for your project summary page. See [Clone an existing Git repo](../../repos/git/clone.md).
+    - **Pipelines** to define a pipeline. See [Azure Pipelines documentation](../../pipelines/index.yml).
+    - **Test Plans** to define test plans and test suites. See [Create test plans and test suites](../../test/create-a-test-plan.md).
+    - **Artifacts** to discover, install, and publish NuGet, npm, and Maven packages. See the [Azure Artifacts overview](../../artifacts/overview.md).
+    - **manage your services** to disable the visibility of services. See [Turn a service on or off](../settings/set-services.md).
 
 #### [Current page](#tab/current-page)
 
@@ -137,12 +137,12 @@ When you create a project, specify the following options:
 
     Select one of the following options to get started:
 
-    * **Invite** to add others to your project. See [Add users to a project or team](../security/add-users-team-project.md). You can only invite users who are already in your organization. For more information, see [Add members to projects](../accounts/add-team-members.md).
-    * **Boards** to add work items. See [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md).
-    * **Repos** to clone or import a repository, or initialize a _README_ file for your project summary page. See [Clone an existing Git repo](../../repos/git/clone.md).
-    * **Pipelines** to define a pipeline. See [Azure Pipelines documentation](../../pipelines/index.yml).
-    * **Test Plans** to define test plans and test suites. See [Create test plans and test suites](../../test/create-a-test-plan.md).
-    * **Manage your services** to disable the visibility of services. See [Turn a service on or off](../settings/set-services.md).
+    - **Invite** to add others to your project. See [Add users to a project or team](../security/add-users-team-project.md). You can only invite users who are already in your organization. For more information, see [Add members to projects](../accounts/add-team-members.md).
+    - **Boards** to add work items. See [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md).
+    - **Repos** to clone or import a repository, or initialize a _README_ file for your project summary page. See [Clone an existing Git repo](../../repos/git/clone.md).
+    - **Pipelines** to define a pipeline. See [Azure Pipelines documentation](../../pipelines/index.yml).
+    - **Test Plans** to define test plans and test suites. See [Create test plans and test suites](../../test/create-a-test-plan.md).
+    - **Manage your services** to disable the visibility of services. See [Turn a service on or off](../settings/set-services.md).
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -164,13 +164,13 @@ az devops project create --name
 
 #### Parameters
 
-* **name**: Required. Name of the project to create.
-* **description**: Optional. Short description of the project. Enclose the description in quotes.
-* **open**: Optional. Once the command creates a project, it opens in the default web browser.
-* **org**: Optional. Azure DevOps organization URL. Required if not configured as default or picked up by using `git config`. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Example: `https://dev.azure.com/MyOrganizationName/`.
-* **process**: Optional. The process model to use, such as _Agile_, _Basic_, _Scrum_, _CMMI_, or other custom process model. Agile is the default. To learn more, see [About process customization and inherited processes](../settings/work/inheritance-process-model.md).
-* **source-control**: Optional. Type of source control repository to create for the project: _git_ (default) or _tfvc_. If not, name or ID of the project. Example: `--project "Fabrikam Fiber"`.
-* **visibility**: Optional. Project visibility. Accepted values: _private_ (default), _public_.
+- **name**: Required. Name of the project to create.
+- **description**: Optional. Short description of the project. Enclose the description in quotes.
+- **open**: Optional. Once the command creates a project, it opens in the default web browser.
+- **org**: Optional. Azure DevOps organization URL. Required if not configured as default or picked up by using `git config`. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Example: `https://dev.azure.com/MyOrganizationName/`.
+- **process**: Optional. The process model to use, such as _Agile_, _Basic_, _Scrum_, _CMMI_, or other custom process model. Agile is the default. To learn more, see [About process customization and inherited processes](../settings/work/inheritance-process-model.md).
+- **source-control**: Optional. Type of source control repository to create for the project: _git_ (default) or _tfvc_. If not, name or ID of the project. Example: `--project "Fabrikam Fiber"`.
+- **visibility**: Optional. Project visibility. Accepted values: _private_ (default), _public_.
 
 #### Example
 
@@ -216,11 +216,11 @@ Creating a project from Team Explorer isn't supported for Azure DevOps Services.
 
     Select one of the following options to get started:
 
-    * **Boards** to add work items. See [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md).
-    * **Repos** to clone or import a repository, or initialize a _README_ file for your project summary page. See [Clone an existing Git repo](../../repos/git/clone.md).
-    * **Pipelines** to define a pipeline. See [Azure Pipelines documentation](../../pipelines/index.yml).
-    * **Test Plans** to define test plans and test suites. See [Create test plans and test suites](../../test/create-a-test-plan.md).
-    * **Manage your services** to disable the visibility of services. See [Turn a service on or off](../settings/set-services.md).
+    - **Boards** to add work items. See [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md).
+    - **Repos** to clone or import a repository, or initialize a _README_ file for your project summary page. See [Clone an existing Git repo](../../repos/git/clone.md).
+    - **Pipelines** to define a pipeline. See [Azure Pipelines documentation](../../pipelines/index.yml).
+    - **Test Plans** to define test plans and test suites. See [Create test plans and test suites](../../test/create-a-test-plan.md).
+    - **Manage your services** to disable the visibility of services. See [Turn a service on or off](../settings/set-services.md).
 
 ::: moniker-end
 
@@ -420,9 +420,9 @@ az devops project list [--org]
 
 #### Parameters
 
-* **org**: Optional. Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up via `git config`. Example: `https://dev.azure.com/MyOrganizationName/`.
-* **skip**: Optional. Number of results to skip.
-* **top**: Optional. Maximum number of results to list.
+- **org**: Optional. Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up via `git config`. Example: `https://dev.azure.com/MyOrganizationName/`.
+- **skip**: Optional. Number of results to skip.
+- **top**: Optional. Maximum number of results to list.
 
 #### Example
 
@@ -460,9 +460,9 @@ az devops project show --project
 
 #### Parameters
 
-* **project**: Required. Name or ID of the project. Example: `--project "Fabrikam Fiber"`.
-* **open**: Optional. Open the project in the default web browser.
-* **org**: Optional. Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up by using `git config`. Example: `https://dev.azure.com/MyOrganizationName/`.
+- **project**: Required. Name or ID of the project. Example: `--project "Fabrikam Fiber"`.
+- **open**: Optional. Open the project in the default web browser.
+- **org**: Optional. Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up by using `git config`. Example: `https://dev.azure.com/MyOrganizationName/`.
 
 #### Example
 
@@ -569,6 +569,6 @@ From the admin context of the web portal, you can add additional repositories to
 
 ## Related articles
 
-* [Git and Azure Repos](../../repos/git/index.yml)
-* [Team Foundation version control](../../repos/tfvc/index.md)
-* [Structure your project](about-projects.md#project-structure)
+- [Git and Azure Repos](../../repos/git/index.yml)
+- [Team Foundation version control](../../repos/tfvc/index.md)
+- [Structure your project](about-projects.md#project-structure)

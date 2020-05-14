@@ -26,9 +26,9 @@ monikerRange: '>= tfs-2013 <= tfs-2017'
 
     ![Choose the SharePoint group and add users](../accounts/media/add-users-team-project/invite-people.png)
 
-    * To add users who require minimal access to the project, choose **Readers**.
-    * To add users who contribute fully to this project, choose **Contributors**.
-    * To add users who act as project leads, choose **Full Control**.
+    - To add users who require minimal access to the project, choose **Readers**.
+    - To add users who contribute fully to this project, choose **Contributors**.
+    - To add users who act as project leads, choose **Full Control**.
 
 For more information about users and groups in SharePoint Products,
 [go here](https://technet.microsoft.com/library/cc262690.aspx).
@@ -46,8 +46,8 @@ or they won't be able to view or edit those reports.
     For optimum interoperability, consider adding users of the **Team Foundation Administrators** group
     to the following groups in SharePoint Products:
 
-    * **Farm Administrators**
+    - **Farm Administrators**
 
-    * **Site Collection Administrators** group for all site collections that the deployment of Team Foundation Server uses
+    - **Site Collection Administrators** group for all site collections that the deployment of Team Foundation Server uses
 
     ![Follow instructions for your version of SharePoint](media/people-and-groups.png)

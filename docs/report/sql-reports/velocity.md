@@ -16,9 +16,9 @@ ms.date: 10/17/2017
 
 If your team has completed multiple sprints, you can forecast release and product completion dates and plan future projects more accurately by reviewing the velocity report. Based on the velocity of previous sprints that the report illustrates, you can accomplish the following goals:
 
-* Track how much effort your team has reported as complete for each sprint.
+- Track how much effort your team has reported as complete for each sprint.
 
-* Estimate how much backlog effort your team can handle in future sprints if your team composition and sprint duration stay constant.
+- Estimate how much backlog effort your team can handle in future sprints if your team composition and sprint duration stay constant.
 
   You can access similar information from the [velocity chart](../guidance/team-velocity.md) provided in the web portal.
 
@@ -43,13 +43,13 @@ You can filter the report by selecting the **Iteration** or **Area**.
 
 For the velocity graph to be useful and accurate, your team must perform the following activities for tracking work items:
 
-* [Define sprints](../../boards/sprints/define-sprints.md) for your team.
+- [Define sprints](../../boards/sprints/define-sprints.md) for your team.
 
-* Define product backlog items and bugs, and assign them to an **Iteration** and to your team's **Area** path.
+- Define product backlog items and bugs, and assign them to an **Iteration** and to your team's **Area** path.
 
-* Specify and update the **Effort** for each product backlog item and each bug that is active.
+- Specify and update the **Effort** for each product backlog item and each bug that is active.
 
-* Update the **State** of each product backlog item and each bug as it progresses from **New** to **Done**.
+- Update the **State** of each product backlog item and each bug as it progresses from **New** to **Done**.
 
 <a name="Interpreting"></a>
 
@@ -57,13 +57,13 @@ For the velocity graph to be useful and accurate, your team must perform the fol
 
 You can review the report to determine how much progress your team has made and to answer the following questions:
 
-* How much effort has your team completed in each sprint?
+- How much effort has your team completed in each sprint?
 
-* What is the maximum velocity of your team?
+- What is the maximum velocity of your team?
 
-* What is the minimum velocity of your team?
+- What is the minimum velocity of your team?
 
-* What is the average velocity of your team?
+- What is the average velocity of your team?
 
 ## Related notes
 

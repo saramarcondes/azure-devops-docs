@@ -19,12 +19,12 @@ Data contract to represent a given team foundation service host (organization, c
 
 ### Members
 
-* `hostType`: any. Type of host (deployment, organization, collection)
+- `hostType`: any. Type of host (deployment, organization, collection)
 
-* `instanceId`: string. Unique ID of the host (collection id, organization id, etc.)
+- `instanceId`: string. Unique ID of the host (collection id, organization id, etc.)
 
-* `name`: string. Name of the host (collection name, organization name, etc.)
+- `name`: string. Name of the host (collection name, organization name, etc.)
 
-* `relVDir`: string. Path of the service host, relative to the root virtual directory (e.g. DefaultCollection)
+- `relVDir`: string. Path of the service host, relative to the root virtual directory (e.g. DefaultCollection)
 
-* `vDir`: string. Path of the service host relative to the web application root (e.g. /tfs/DefaultCollection)
+- `vDir`: string. Path of the service host relative to the web application root (e.g. /tfs/DefaultCollection)

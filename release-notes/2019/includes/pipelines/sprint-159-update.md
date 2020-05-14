@@ -10,13 +10,13 @@ Previously, we supported deployments only to the Resource Group level. With this
 
 We've made updates to several of the Azure Pipelines hosted VM images. The following are some the highlights in this update:
 
-* Upgraded Visual Studio 16.2 to 16.3 for VS2019.
-* Upgraded VS for Mac 8.2.6.26 to 8.3.0.1805 for macOS 10.13 and 10.14.
-* Added Java 13 to macOS 10.13 and 10.14.
-* Added Mono 6.4.0 to macOS 10.13 and 10.14.
-* Upgraded Xcode 11-beta to 11.0 GA.
-* Reduced the disk size to increase operational efficiency, resulting in a decrease of approximately 40GB of free space for Ubuntu 16.04.
-* Various bug fixes.
+- Upgraded Visual Studio 16.2 to 16.3 for VS2019.
+- Upgraded VS for Mac 8.2.6.26 to 8.3.0.1805 for macOS 10.13 and 10.14.
+- Added Java 13 to macOS 10.13 and 10.14.
+- Added Mono 6.4.0 to macOS 10.13 and 10.14.
+- Upgraded Xcode 11-beta to 11.0 GA.
+- Reduced the disk size to increase operational efficiency, resulting in a decrease of approximately 40GB of free space for Ubuntu 16.04.
+- Various bug fixes.
 
 You can find more details about the latest releases [here](https://github.com/microsoft/azure-pipelines-image-generation/releases).
 
@@ -38,12 +38,12 @@ resources:
     branch: releases/M159  # branch to pick the artifact, optional; defaults to all branches
     version: 20190718.2 # pipeline run number to pick artifact; optional; defaults to last successfully completed run
     trigger:     # Optional; Triggers are not enabled by default.
-      branches:  
+      branches:
         include:  # branches to consider the trigger events, optional; defaults to all branches.
         - master
         - releases/*
         exclude:   # branches to discard the trigger events, optional; defaults to none.
-        - users/*  
+        - users/*
 ```
 
 In addition, you can download the artifacts published by your pipeline resource using the `- download` task.

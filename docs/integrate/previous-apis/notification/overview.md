@@ -32,7 +32,7 @@ The Notification APIs primarily provide the ability to create and manage subscri
 
 ## Resources
 
-* [Event types](./EventTypes.md)
-* [Subscriptions](./Subscriptions.md)
-* [Contracts](./contracts.md)
+- [Event types](./EventTypes.md)
+- [Subscriptions](./Subscriptions.md)
+- [Contracts](./contracts.md)
   <!-- toc end -->

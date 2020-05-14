@@ -16,8 +16,8 @@ Module path: `TFS/DistributedTask/Contracts`
 
 ### Members
 
-* `mask`: [MaskHint](../../../TFS/DistributedTask/Contracts/MaskHint.md)[].
+- `mask`: [MaskHint](../../../TFS/DistributedTask/Contracts/MaskHint.md)[].
 
-* `options`: {[key: number]: [JobOption](../../../TFS/DistributedTask/Contracts/JobOption.md)}.
+- `options`: {[key: number]: [JobOption](../../../TFS/DistributedTask/Contracts/JobOption.md)}.
 
-* `variables`: {[key: string]: string}.
+- `variables`: {[key: string]: string}.

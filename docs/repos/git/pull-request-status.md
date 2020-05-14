@@ -21,10 +21,10 @@ These policies enable teams to enforce many best practices related to reviewing 
 
 Integrating into the PR workflow involves a few different concepts:
 
-* [Service hooks](#service-hooks) - this is how services that want to integrate with a pull request know when a pull request has been created or updated.
-* [Pull request status](#pull-request-status) - provides a way for services to associate success/failure information with a pull request.
-* [Status policy](#status-policy) - provides a mechanism to block pull request completion until the pull request status indicates success.
-* [Custom actions](#custom-actions) - provides a way to extend the status menu using Azure DevOps Services extensions.
+- [Service hooks](#service-hooks) - this is how services that want to integrate with a pull request know when a pull request has been created or updated.
+- [Pull request status](#pull-request-status) - provides a way for services to associate success/failure information with a pull request.
+- [Status policy](#status-policy) - provides a mechanism to block pull request completion until the pull request status indicates success.
+- [Custom actions](#custom-actions) - provides a way to extend the status menu using Azure DevOps Services extensions.
 
 In this topic, you'll learn about pull request statuses and how they can be used to integrate in the PR workflow.
 
@@ -40,15 +40,15 @@ Ensure that there are subscriptions for both of these events to receive notifica
 Pull request status provides a way for services to associate simple success/failure type information with a pull request, using the [Status API](https://go.microsoft.com/fwlink/?linkid=854107).
 A status consists of four key pieces of data:
 
-* **State**. One of the following predefined states: `succeeded`, `failed`, `pending`, `notSet`, `notApplicable`, or `error`.
-* **Description**. A string that describes the status to the end user.
-* **Context**. A name for the status - typically describing the entity posting the status.
-* **URL**. A link where users can get more information specific to the status.
+- **State**. One of the following predefined states: `succeeded`, `failed`, `pending`, `notSet`, `notApplicable`, or `error`.
+- **Description**. A string that describes the status to the end user.
+- **Context**. A name for the status - typically describing the entity posting the status.
+- **URL**. A link where users can get more information specific to the status.
 
 Essentially, status is the way a user or service posts their evaluation about a pull request and provides the answer to questions such as:
 
-* Did the changes meet the requirements?
-* Where can I learn more about what I need to do to meet the requirements?
+- Did the changes meet the requirements?
+- Where can I learn more about what I need to do to meet the requirements?
 
 Let's look at an example.
 Consider a [CI service](../../pipelines/index.yml) that is required to build all code changes in a project.
@@ -71,9 +71,9 @@ This status would be displayed to the end user in the PR Details view:
 
 ![Pull request status](media/pull-request-status/pull-request-status.png)
 
-* The `state` is shown to the user using an icon (green check for `succeeded`, red X for `failed`, a clock for `pending`, and a red ! for `error`).
-* The `description` is displayed next to the icon, and the `context` is available in a tooltip.
-* When a `targetUrl` is applied, the description will be rendered as a link to the URL.
+- The `state` is shown to the user using an icon (green check for `succeeded`, red X for `failed`, a clock for `pending`, and a red ! for `error`).
+- The `description` is displayed next to the icon, and the `context` is available in a tooltip.
+- When a `targetUrl` is applied, the description will be rendered as a link to the URL.
 
 ### Updating status
 
@@ -82,9 +82,9 @@ Posting multiple statuses helps users manage expectations.
 For example, posting a `pending` status is a good way to acknowledge to the user that a system has received an event and is starting work.
 Using an informative `description` such as the following examples can further help the user understand how the system is working:
 
-* "Build queued"
-* "Build in progress"
-* "Build succeeded"
+- "Build queued"
+- "Build in progress"
+- "Build succeeded"
 
 ### Iteration status
 
@@ -142,6 +142,6 @@ In addition to predefined service hook events that can trigger the service to up
 
 Learn more about the [PR Status API](https://go.microsoft.com/fwlink/?linkid=854107) and check out the how-to guides:
 
-* [Create a pull request status server with Node.js](create-pr-status-server.md)
-* [Use Azure Functions to create custom branch policies](create-pr-status-server-with-azure-functions.md)
-* [Configure a branch policy for an external service](pr-status-policy.md)
+- [Create a pull request status server with Node.js](create-pr-status-server.md)
+- [Use Azure Functions to create custom branch policies](create-pr-status-server-with-azure-functions.md)
+- [Configure a branch policy for an external service](pr-status-policy.md)

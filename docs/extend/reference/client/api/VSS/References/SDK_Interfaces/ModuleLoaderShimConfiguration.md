@@ -19,6 +19,6 @@ AMD javascript module loader shim configuration
 
 ### Members
 
-* `deps`: string[].
+- `deps`: string[].
 
-* `exports`: string.
+- `exports`: string.

@@ -22,8 +22,7 @@ This article provides instructions on how to track the quality of work items tha
 
 An example is shown in the following image.
 
-> [!div class="mx-imgBorder"]
-> ![Sample - Stories Overview Report](media/odatapowerbi-storiesoverview.png)
+> [!div class="mx-imgBorder"] > ![Sample - Stories Overview Report](media/odatapowerbi-storiesoverview.png)
 
 [!INCLUDE [stories-overview-info](includes/sample-stories-overview-info.md)]
 
@@ -211,7 +210,7 @@ in
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
     $filter=(
-        IterationSK eq {iterationSK}  
+        IterationSK eq {iterationSK}
         and AreaSK eq {areaSK}
         and Processes/any(p:p/BacklogType eq 'RequirementBacklog')
         and Processes/all(p:p/IsBugType eq false)
@@ -249,13 +248,11 @@ To create the report, perform the following steps:
 1.  Create a Power BI visualization **Table**.
 1.  Add the columns you are interested in from the three Power BI queries.
 1.  Select **Sum** as aggregation for additive columns like **Passed tests** etc.
-    > [!div class="mx-imgBorder"]
-    > ![Power BI select Sum as aggregation](/azure/devops/report/powerbi/media/powerbi-sum-aggregation.png)
+    > [!div class="mx-imgBorder"] > ![Power BI select Sum as aggregation](/azure/devops/report/powerbi/media/powerbi-sum-aggregation.png)
 
 Your report should look similar to the following image.
 
-> [!div class="mx-imgBorder"]
-> ![Sample - Requirements tracking report](media/odatapowerbi-storiesoverview.png)
+> [!div class="mx-imgBorder"] > ![Sample - Requirements tracking report](media/odatapowerbi-storiesoverview.png)
 
 ## Related articles
 

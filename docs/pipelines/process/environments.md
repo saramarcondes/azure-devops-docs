@@ -15,10 +15,10 @@ An environment is a collection of resources that can be targeted by deployments 
 
 The advantages of using environments include the following.
 
-* **Deployment history** - Pipeline name and run details are recorded for deployments to an environment and its resources. In the context of multiple pipelines targeting the same environment or resource, [deployment history](#deployment-history) of an environment is useful to identify the source of changes.
-* **Traceability of commits and work items** - View jobs within the pipeline run that target an environment. You can also view the [commits and work items](#deployment-history) that were newly deployed to the environment. Traceability also allows one to track whether a code change (commit) or feature/bug-fix (work items) reached an environment.
-* **Diagnose resource health** - Validate whether the application is functioning at its desired state.
-* **Permissions** - Secure environments by specifying which users and pipelines are allowed to target an environment.
+- **Deployment history** - Pipeline name and run details are recorded for deployments to an environment and its resources. In the context of multiple pipelines targeting the same environment or resource, [deployment history](#deployment-history) of an environment is useful to identify the source of changes.
+- **Traceability of commits and work items** - View jobs within the pipeline run that target an environment. You can also view the [commits and work items](#deployment-history) that were newly deployed to the environment. Traceability also allows one to track whether a code change (commit) or feature/bug-fix (work items) reached an environment.
+- **Diagnose resource health** - Validate whether the application is functioning at its desired state.
+- **Permissions** - Secure environments by specifying which users and pipelines are allowed to target an environment.
 
 ## Resources
 
@@ -125,9 +125,9 @@ The deployment history view within environments provides the following advantage
 
 You can control who can create, view, use, and manage the environments with user permissions. There are four roles - Creator (scope: all environments), Reader, User, and Administrator. In the specific environment's **user permissions** panel, you can set the permissions that are inherited and you can override the roles for each environment.
 
-* Navigate to the specific **Environment** that you would like to authorize.
-* Click on overflow menu button located at the top-right part of the page next to "Add resource" and choose **Security** to view the settings.
-* In the **User permissions** blade, click on **+Add** to add a **User or group** and select a suitable **Role**.
+- Navigate to the specific **Environment** that you would like to authorize.
+- Click on overflow menu button located at the top-right part of the page next to "Add resource" and choose **Security** to view the settings.
+- In the **User permissions** blade, click on **+Add** to add a **User or group** and select a suitable **Role**.
 
 | Role on an environment | Purpose                                                                                                                                                                                                                                      |
 | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -138,12 +138,12 @@ You can control who can create, view, use, and manage the environments with user
 
 > [!NOTE]
 >
-> * If you create an environment within a YAML, contributors and project administrators will be granted **Administrator** role. This is typically used in provisioning Dev/Test environments.
-> * If you create an environment through the UI, only the creator will be granted the **Administrator** role. You should use the UI to create protected environments like for a production environment.
+> - If you create an environment within a YAML, contributors and project administrators will be granted **Administrator** role. This is typically used in provisioning Dev/Test environments.
+> - If you create an environment through the UI, only the creator will be granted the **Administrator** role. You should use the UI to create protected environments like for a production environment.
 
 ### Pipeline permissions
 
 Pipeline permissions can be used to authorize all or selected pipelines for deployment to the environment.
 
-* To remove **Open access** on the environment or resource, click the **Restrict permission** in **Pipeline permissions**.
-* To allow specific pipelines to deploy to an environment or a specific resource, click **+** and choose from the list of pipelines.
+- To remove **Open access** on the environment or resource, click the **Restrict permission** in **Pipeline permissions**.
+- To allow specific pipelines to deploy to an environment or a specific resource, click **+** and choose from the list of pipelines.

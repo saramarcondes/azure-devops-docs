@@ -64,13 +64,13 @@ With this update, we have added support for [step references](https://docs.micro
 
 We have also added support for additional properties to the deployment job. For example, here are few properties of a deployment job that you can now set,
 
-* **timeoutInMinutes** - how long to run the job before automatically cancelling
-* **cancelTimeoutInMinutes** - how much time to give 'run always even if cancelled tasks' before terminating them
-* **condition** - run job conditionally
-* **variables** - Hardcoded values can be added directly, or [variable groups](https://docs.microsoft.com/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=yaml),
+- **timeoutInMinutes** - how long to run the job before automatically cancelling
+- **cancelTimeoutInMinutes** - how much time to give 'run always even if cancelled tasks' before terminating them
+- **condition** - run job conditionally
+- **variables** - Hardcoded values can be added directly, or [variable groups](https://docs.microsoft.com/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=yaml),
   [variable group backed by an Azure key vault](https://docs.microsoft.com/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=yaml#link-secrets-from-an-azure-key-vault) can be referenced
   or you can refer to a set of [variables defined in a file](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema#variable-templates).
-* **continueOnError** - if future jobs should run even if this deployment job fails; defaults to 'false'
+- **continueOnError** - if future jobs should run even if this deployment job fails; defaults to 'false'
 
 For more details about deployment jobs and the full syntax to specify a deployment job, see [Deployment job](https://docs.microsoft.com/azure/devops/pipelines/process/deployment-jobs?view=azure-devops).
 

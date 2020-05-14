@@ -63,7 +63,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/comments/2?api
 
 #### Sample code
 
-* [C# (GetSingleWorkItemComment method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/CommentsSample.cs#L13)
+- [C# (GetSingleWorkItemComment method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/CommentsSample.cs#L13)
 
 ## Get a page of comments
 
@@ -81,7 +81,7 @@ GET https://{instance}/DefaultCollection/_apis/wit/workitems/{id}/comments?api-v
 | Query
 | api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | fromRevision | integer | 1 | Starting revision ID to fetch comments from.
-| $top | integer | 200 | Number of comments to fetch.
+| \$top | integer | 200 | Number of comments to fetch.
 | order | enum { asc, desc} | asc | Revision number sort order.
 
 #### Sample request
@@ -130,4 +130,4 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/comments?fromR
 
 #### Sample code
 
-* [C# (GetPageOfWorkItemComments method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/CommentsSample.cs#L30)
+- [C# (GetPageOfWorkItemComments method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/CommentsSample.cs#L30)

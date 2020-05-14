@@ -151,7 +151,7 @@ In this example, you can use a wildcard, "\*", to map a server folder and its im
 tf workfold $/projects/MyTeamProject/* C:\MyLocalWorkfold\MyTeamProject
 ```
 
-In this example, you can override the automatically-created mapping between $/projects/project_one and C:\\projects\\project_one by using the **workfold** command as follows:
+In this example, you can override the automatically-created mapping between \$/projects/project_one and C:\\projects\\project_one by using the **workfold** command as follows:
 
 ```
 tf workfold $/projects/project_one C:\DifferentWorkfold

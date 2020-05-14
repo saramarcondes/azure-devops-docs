@@ -30,53 +30,53 @@ Module path: `TFS/Build/RestClient`
 
 ### Methods
 
-* [addBuildTag()](#method_addBuildTag)
-* [addBuildTags()](#method_addBuildTags)
-* [createArtifact()](#method_createArtifact)
-* [createDefinition()](#method_createDefinition)
-* [createQueue()](#method_createQueue)
-* [deleteBuild()](#method_deleteBuild)
-* [deleteBuildTag()](#method_deleteBuildTag)
-* [deleteDefinition()](#method_deleteDefinition)
-* [deleteQueue()](#method_deleteQueue)
-* [deleteTemplate()](#method_deleteTemplate)
-* [getAgentPoolQueue()](#method_getAgentPoolQueue)
-* [getArtifact()](#method_getArtifact)
-* [getArtifactContentZip()](#method_getArtifactContentZip)
-* [getArtifacts()](#method_getArtifacts)
-* [getBadge()](#method_getBadge)
-* [getBuild()](#method_getBuild)
-* [getBuildBadge()](#method_getBuildBadge)
-* [getBuildBadgeData()](#method_getBuildBadgeData)
-* [getBuildChanges()](#method_getBuildChanges)
-* [getBuildController()](#method_getBuildController)
-* [getBuildControllers()](#method_getBuildControllers)
-* [getBuildDeployments()](#method_getBuildDeployments)
-* [getBuildLog()](#method_getBuildLog)
-* [getBuildLogs()](#method_getBuildLogs)
-* [getBuildLogsZip()](#method_getBuildLogsZip)
-* [getBuildOptionDefinitions()](#method_getBuildOptionDefinitions)
-* [getBuilds()](#method_getBuilds)
-* [getBuildSettings()](#method_getBuildSettings)
-* [getBuildTags()](#method_getBuildTags)
-* [getBuildTimeline()](#method_getBuildTimeline)
-* [getBuildWorkItemsRefs()](#method_getBuildWorkItemsRefs)
-* [getBuildWorkItemsRefsFromCommits()](#method_getBuildWorkItemsRefsFromCommits)
-* [getChangesBetweenBuilds()](#method_getChangesBetweenBuilds)
-* [getDefinition()](#method_getDefinition)
-* [getDefinitionRevisions()](#method_getDefinitionRevisions)
-* [getDefinitions()](#method_getDefinitions)
-* [getQueues()](#method_getQueues)
-* [getResourceUsage()](#method_getResourceUsage)
-* [getTags()](#method_getTags)
-* [getTemplate()](#method_getTemplate)
-* [getTemplates()](#method_getTemplates)
-* [getWorkItemsBetweenBuilds()](#method_getWorkItemsBetweenBuilds)
-* [queueBuild()](#method_queueBuild)
-* [saveTemplate()](#method_saveTemplate)
-* [updateBuild()](#method_updateBuild)
-* [updateBuildSettings()](#method_updateBuildSettings)
-* [updateDefinition()](#method_updateDefinition)
+- [addBuildTag()](#method_addBuildTag)
+- [addBuildTags()](#method_addBuildTags)
+- [createArtifact()](#method_createArtifact)
+- [createDefinition()](#method_createDefinition)
+- [createQueue()](#method_createQueue)
+- [deleteBuild()](#method_deleteBuild)
+- [deleteBuildTag()](#method_deleteBuildTag)
+- [deleteDefinition()](#method_deleteDefinition)
+- [deleteQueue()](#method_deleteQueue)
+- [deleteTemplate()](#method_deleteTemplate)
+- [getAgentPoolQueue()](#method_getAgentPoolQueue)
+- [getArtifact()](#method_getArtifact)
+- [getArtifactContentZip()](#method_getArtifactContentZip)
+- [getArtifacts()](#method_getArtifacts)
+- [getBadge()](#method_getBadge)
+- [getBuild()](#method_getBuild)
+- [getBuildBadge()](#method_getBuildBadge)
+- [getBuildBadgeData()](#method_getBuildBadgeData)
+- [getBuildChanges()](#method_getBuildChanges)
+- [getBuildController()](#method_getBuildController)
+- [getBuildControllers()](#method_getBuildControllers)
+- [getBuildDeployments()](#method_getBuildDeployments)
+- [getBuildLog()](#method_getBuildLog)
+- [getBuildLogs()](#method_getBuildLogs)
+- [getBuildLogsZip()](#method_getBuildLogsZip)
+- [getBuildOptionDefinitions()](#method_getBuildOptionDefinitions)
+- [getBuilds()](#method_getBuilds)
+- [getBuildSettings()](#method_getBuildSettings)
+- [getBuildTags()](#method_getBuildTags)
+- [getBuildTimeline()](#method_getBuildTimeline)
+- [getBuildWorkItemsRefs()](#method_getBuildWorkItemsRefs)
+- [getBuildWorkItemsRefsFromCommits()](#method_getBuildWorkItemsRefsFromCommits)
+- [getChangesBetweenBuilds()](#method_getChangesBetweenBuilds)
+- [getDefinition()](#method_getDefinition)
+- [getDefinitionRevisions()](#method_getDefinitionRevisions)
+- [getDefinitions()](#method_getDefinitions)
+- [getQueues()](#method_getQueues)
+- [getResourceUsage()](#method_getResourceUsage)
+- [getTags()](#method_getTags)
+- [getTemplate()](#method_getTemplate)
+- [getTemplates()](#method_getTemplates)
+- [getWorkItemsBetweenBuilds()](#method_getWorkItemsBetweenBuilds)
+- [queueBuild()](#method_queueBuild)
+- [saveTemplate()](#method_saveTemplate)
+- [updateBuild()](#method_updateBuild)
+- [updateBuildSettings()](#method_updateBuildSettings)
+- [updateDefinition()](#method_updateDefinition)
 
 <a name="method_addBuildTag"></a>
 
@@ -92,13 +92,13 @@ Adds a tag to a build
 
 ### Parameters
 
-* `project`: string. Project ID or project name
-* `buildId`: number.
-* `tag`: string.
+- `project`: string. Project ID or project name
+- `buildId`: number.
+- `tag`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;string[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;string[]&gt;
 
 <a name="method_addBuildTags"></a>
 
@@ -114,13 +114,13 @@ Adds tag to a build
 
 ### Parameters
 
-* `tags`: string[].
-* `project`: string.
-* `buildId`: number.
+- `tags`: string[].
+- `project`: string.
+- `buildId`: number.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;string[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;string[]&gt;
 
 <a name="method_createArtifact"></a>
 
@@ -136,13 +136,13 @@ Associates an artifact with a build
 
 ### Parameters
 
-* `artifact`: [Contracts.BuildArtifact](../../../TFS/Build/Contracts/BuildArtifact.md).
-* `buildId`: number.
-* `project`: string. Optional.
+- `artifact`: [Contracts.BuildArtifact](../../../TFS/Build/Contracts/BuildArtifact.md).
+- `buildId`: number.
+- `project`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildArtifact](../../../TFS/Build/Contracts/BuildArtifact.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildArtifact](../../../TFS/Build/Contracts/BuildArtifact.md)&gt;
 
 <a name="method_createDefinition"></a>
 
@@ -158,14 +158,14 @@ Creates a new definition
 
 ### Parameters
 
-* `definition`: [Contracts.BuildDefinition](../../../TFS/Build/Contracts/BuildDefinition.md).
-* `project`: string. Optional.
-* `definitionToCloneId`: number. Optional.
-* `definitionToCloneRevision`: number. Optional.
+- `definition`: [Contracts.BuildDefinition](../../../TFS/Build/Contracts/BuildDefinition.md).
+- `project`: string. Optional.
+- `definitionToCloneId`: number. Optional.
+- `definitionToCloneRevision`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildDefinition](../../../TFS/Build/Contracts/BuildDefinition.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildDefinition](../../../TFS/Build/Contracts/BuildDefinition.md)&gt;
 
 <a name="method_createQueue"></a>
 
@@ -181,11 +181,11 @@ Creates a build queue
 
 ### Parameters
 
-* `queue`: [Contracts.AgentPoolQueue](../../../TFS/Build/Contracts/AgentPoolQueue.md).
+- `queue`: [Contracts.AgentPoolQueue](../../../TFS/Build/Contracts/AgentPoolQueue.md).
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.AgentPoolQueue](../../../TFS/Build/Contracts/AgentPoolQueue.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.AgentPoolQueue](../../../TFS/Build/Contracts/AgentPoolQueue.md)&gt;
 
 <a name="method_deleteBuild"></a>
 
@@ -201,12 +201,12 @@ Deletes a build
 
 ### Parameters
 
-* `buildId`: number.
-* `project`: string. Optional.
+- `buildId`: number.
+- `project`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
 
 <a name="method_deleteBuildTag"></a>
 
@@ -222,13 +222,13 @@ Deletes a tag from a build
 
 ### Parameters
 
-* `project`: string. Project ID or project name
-* `buildId`: number.
-* `tag`: string.
+- `project`: string. Project ID or project name
+- `buildId`: number.
+- `tag`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;string[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;string[]&gt;
 
 <a name="method_deleteDefinition"></a>
 
@@ -244,12 +244,12 @@ Deletes a definition and all associated builds
 
 ### Parameters
 
-* `definitionId`: number.
-* `project`: string. Optional.
+- `definitionId`: number.
+- `project`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
 
 <a name="method_deleteQueue"></a>
 
@@ -265,11 +265,11 @@ Deletes a build queue
 
 ### Parameters
 
-* `id`: number.
+- `id`: number.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
 
 <a name="method_deleteTemplate"></a>
 
@@ -285,12 +285,12 @@ Deletes a definition template
 
 ### Parameters
 
-* `project`: string. Project ID or project name
-* `templateId`: string.
+- `project`: string. Project ID or project name
+- `templateId`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;void&gt;
 
 <a name="method_getAgentPoolQueue"></a>
 
@@ -306,11 +306,11 @@ Gets a queue
 
 ### Parameters
 
-* `controllerId`: number.
+- `controllerId`: number.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.AgentPoolQueue](../../../TFS/Build/Contracts/AgentPoolQueue.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.AgentPoolQueue](../../../TFS/Build/Contracts/AgentPoolQueue.md)&gt;
 
 <a name="method_getArtifact"></a>
 
@@ -326,13 +326,13 @@ Gets a specific artifact for a build
 
 ### Parameters
 
-* `buildId`: number.
-* `artifactName`: string.
-* `project`: string. Optional.
+- `buildId`: number.
+- `artifactName`: string.
+- `project`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildArtifact](../../../TFS/Build/Contracts/BuildArtifact.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildArtifact](../../../TFS/Build/Contracts/BuildArtifact.md)&gt;
 
 <a name="method_getArtifactContentZip"></a>
 
@@ -348,13 +348,13 @@ Gets a specific artifact for a build
 
 ### Parameters
 
-* `buildId`: number.
-* `artifactName`: string.
-* `project`: string. Optional.
+- `buildId`: number.
+- `artifactName`: string.
+- `project`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
 
 <a name="method_getArtifacts"></a>
 
@@ -370,12 +370,12 @@ Gets all artifacts for a build
 
 ### Parameters
 
-* `buildId`: number.
-* `project`: string. Optional.
+- `buildId`: number.
+- `project`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildArtifact](../../../TFS/Build/Contracts/BuildArtifact.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildArtifact](../../../TFS/Build/Contracts/BuildArtifact.md)[]&gt;
 
 <a name="method_getBadge"></a>
 
@@ -389,13 +389,13 @@ Gets all artifacts for a build
 
 ### Parameters
 
-* `project`: string.
-* `definitionId`: number.
-* `branchName`: string. Optional.
+- `project`: string.
+- `definitionId`: number.
+- `branchName`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;string&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;string&gt;
 
 <a name="method_getBuild"></a>
 
@@ -411,13 +411,13 @@ Gets a build
 
 ### Parameters
 
-* `buildId`: number.
-* `project`: string. Optional.
-* `propertyFilters`: string. Optional.
+- `buildId`: number.
+- `project`: string. Optional.
+- `propertyFilters`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Build](../../../TFS/Build/Contracts/Build.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Build](../../../TFS/Build/Contracts/Build.md)&gt;
 
 <a name="method_getBuildBadge"></a>
 
@@ -431,14 +431,14 @@ Gets a build
 
 ### Parameters
 
-* `project`: string. Project ID or project name
-* `repoType`: string.
-* `repoId`: string. Optional.
-* `branchName`: string. Optional.
+- `project`: string. Project ID or project name
+- `repoType`: string.
+- `repoId`: string. Optional.
+- `branchName`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildBadge](../../../TFS/Build/Contracts/BuildBadge.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildBadge](../../../TFS/Build/Contracts/BuildBadge.md)&gt;
 
 <a name="method_getBuildBadgeData"></a>
 
@@ -452,14 +452,14 @@ Gets a build
 
 ### Parameters
 
-* `project`: string. Project ID or project name
-* `repoType`: string.
-* `repoId`: string. Optional.
-* `branchName`: string. Optional.
+- `project`: string. Project ID or project name
+- `repoType`: string.
+- `repoId`: string. Optional.
+- `branchName`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;string&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;string&gt;
 
 <a name="method_getBuildChanges"></a>
 
@@ -475,14 +475,14 @@ Gets the changes associated with a build
 
 ### Parameters
 
-* `project`: string. Project ID or project name
-* `buildId`: number.
-* `continuationToken`: string. Optional.
-* `top`: number. Optional.
+- `project`: string. Project ID or project name
+- `buildId`: number.
+- `continuationToken`: string. Optional.
+- `top`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Change](../../../TFS/Build/Contracts/Change.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Change](../../../TFS/Build/Contracts/Change.md)[]&gt;
 
 <a name="method_getBuildController"></a>
 
@@ -498,11 +498,11 @@ Gets a controller
 
 ### Parameters
 
-* `controllerId`: number.
+- `controllerId`: number.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildController](../../../TFS/Build/Contracts/BuildController.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildController](../../../TFS/Build/Contracts/BuildController.md)&gt;
 
 <a name="method_getBuildControllers"></a>
 
@@ -518,11 +518,11 @@ Gets controller, optionally filtered by name
 
 ### Parameters
 
-* `name`: string. Optional.
+- `name`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildController](../../../TFS/Build/Contracts/BuildController.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildController](../../../TFS/Build/Contracts/BuildController.md)[]&gt;
 
 <a name="method_getBuildDeployments"></a>
 
@@ -538,12 +538,12 @@ Gets the deployment information associated with a build
 
 ### Parameters
 
-* `project`: string. Project ID or project name
-* `buildId`: number.
+- `project`: string. Project ID or project name
+- `buildId`: number.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Deployment](../../../TFS/Build/Contracts/Deployment.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Deployment](../../../TFS/Build/Contracts/Deployment.md)[]&gt;
 
 <a name="method_getBuildLog"></a>
 
@@ -559,15 +559,15 @@ Gets a log
 
 ### Parameters
 
-* `project`: string. Project ID or project name
-* `buildId`: number.
-* `logId`: number.
-* `startLine`: number. Optional.
-* `endLine`: number. Optional.
+- `project`: string. Project ID or project name
+- `buildId`: number.
+- `logId`: number.
+- `startLine`: number. Optional.
+- `endLine`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
 
 <a name="method_getBuildLogs"></a>
 
@@ -583,12 +583,12 @@ Gets logs for a build
 
 ### Parameters
 
-* `project`: string. Project ID or project name
-* `buildId`: number.
+- `project`: string. Project ID or project name
+- `buildId`: number.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildLog](../../../TFS/Build/Contracts/BuildLog.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildLog](../../../TFS/Build/Contracts/BuildLog.md)[]&gt;
 
 <a name="method_getBuildLogsZip"></a>
 
@@ -604,12 +604,12 @@ Gets logs for a build
 
 ### Parameters
 
-* `project`: string. Project ID or project name
-* `buildId`: number.
+- `project`: string. Project ID or project name
+- `buildId`: number.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;ArrayBuffer&gt;
 
 <a name="method_getBuildOptionDefinitions"></a>
 
@@ -623,11 +623,11 @@ Gets logs for a build
 
 ### Parameters
 
-* `project`: string. Optional. Project ID or project name
+- `project`: string. Optional. Project ID or project name
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildOptionDefinition](../../../TFS/Build/Contracts/BuildOptionDefinition.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildOptionDefinition](../../../TFS/Build/Contracts/BuildOptionDefinition.md)[]&gt;
 
 <a name="method_getBuilds"></a>
 
@@ -643,29 +643,29 @@ Gets builds
 
 ### Parameters
 
-* `project`: string. Optional. Project ID or project name
-* `definitions`: number[]. Optional. A comma-delimited list of definition IDs
-* `queues`: number[]. Optional. A comma-delimited list of queue IDs
-* `buildNumber`: string. Optional.
-* `minFinishTime`: Date. Optional.
-* `maxFinishTime`: Date. Optional.
-* `requestedFor`: string. Optional.
-* `reasonFilter`: [Contracts.BuildReason](../../../TFS/Build/Contracts/BuildReason.md). Optional.
-* `statusFilter`: [Contracts.BuildStatus](../../../TFS/Build/Contracts/BuildStatus.md). Optional.
-* `resultFilter`: [Contracts.BuildResult](../../../TFS/Build/Contracts/BuildResult.md). Optional.
-* `tagFilters`: string[]. Optional.
-* `properties`: string[]. Optional.
-* `type`: [Contracts.DefinitionType](../../../TFS/Build/Contracts/DefinitionType.md). Optional.
-* `top`: number. Optional.
-* `continuationToken`: string. Optional.
-* `maxBuildsPerDefinition`: number. Optional.
-* `deletedFilter`: [Contracts.QueryDeletedOption](../../../TFS/Build/Contracts/QueryDeletedOption.md). Optional.
-* `queryOrder`: [Contracts.BuildQueryOrder](../../../TFS/Build/Contracts/BuildQueryOrder.md). Optional.
-* `branchName`: string. Optional.
+- `project`: string. Optional. Project ID or project name
+- `definitions`: number[]. Optional. A comma-delimited list of definition IDs
+- `queues`: number[]. Optional. A comma-delimited list of queue IDs
+- `buildNumber`: string. Optional.
+- `minFinishTime`: Date. Optional.
+- `maxFinishTime`: Date. Optional.
+- `requestedFor`: string. Optional.
+- `reasonFilter`: [Contracts.BuildReason](../../../TFS/Build/Contracts/BuildReason.md). Optional.
+- `statusFilter`: [Contracts.BuildStatus](../../../TFS/Build/Contracts/BuildStatus.md). Optional.
+- `resultFilter`: [Contracts.BuildResult](../../../TFS/Build/Contracts/BuildResult.md). Optional.
+- `tagFilters`: string[]. Optional.
+- `properties`: string[]. Optional.
+- `type`: [Contracts.DefinitionType](../../../TFS/Build/Contracts/DefinitionType.md). Optional.
+- `top`: number. Optional.
+- `continuationToken`: string. Optional.
+- `maxBuildsPerDefinition`: number. Optional.
+- `deletedFilter`: [Contracts.QueryDeletedOption](../../../TFS/Build/Contracts/QueryDeletedOption.md). Optional.
+- `queryOrder`: [Contracts.BuildQueryOrder](../../../TFS/Build/Contracts/BuildQueryOrder.md). Optional.
+- `branchName`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Build](../../../TFS/Build/Contracts/Build.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Build](../../../TFS/Build/Contracts/Build.md)[]&gt;
 
 <a name="method_getBuildSettings"></a>
 
@@ -681,7 +681,7 @@ Gets builds
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildSettings](../../../TFS/Build/Contracts/BuildSettings.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildSettings](../../../TFS/Build/Contracts/BuildSettings.md)&gt;
 
 <a name="method_getBuildTags"></a>
 
@@ -697,12 +697,12 @@ Gets the tags for a build
 
 ### Parameters
 
-* `project`: string. Project ID or project name
-* `buildId`: number.
+- `project`: string. Project ID or project name
+- `buildId`: number.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;string[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;string[]&gt;
 
 <a name="method_getBuildTimeline"></a>
 
@@ -718,14 +718,14 @@ Gets details for a build
 
 ### Parameters
 
-* `project`: string. Project ID or project name
-* `buildId`: number.
-* `timelineId`: string. Optional.
-* `changeId`: number. Optional.
+- `project`: string. Project ID or project name
+- `buildId`: number.
+- `timelineId`: string. Optional.
+- `changeId`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Timeline](../../DistributedTask/Contracts/Timeline.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Timeline](../../DistributedTask/Contracts/Timeline.md)&gt;
 
 <a name="method_getBuildWorkItemsRefs"></a>
 
@@ -741,13 +741,13 @@ Gets the work item IDs associated with a build
 
 ### Parameters
 
-* `project`: string. Project ID or project name
-* `buildId`: number.
-* `top`: number. Optional.
+- `project`: string. Project ID or project name
+- `buildId`: number.
+- `top`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[VSS_Common_Contracts.ResourceRef](../../../VSS/WebApi/Contracts/ResourceRef.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[VSS_Common_Contracts.ResourceRef](../../../VSS/WebApi/Contracts/ResourceRef.md)[]&gt;
 
 <a name="method_getBuildWorkItemsRefsFromCommits"></a>
 
@@ -763,14 +763,14 @@ Gets the work item IDs associated with build commits
 
 ### Parameters
 
-* `commitIds`: string[].
-* `project`: string.
-* `buildId`: number.
-* `top`: number. Optional.
+- `commitIds`: string[].
+- `project`: string.
+- `buildId`: number.
+- `top`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[VSS_Common_Contracts.ResourceRef](../../../VSS/WebApi/Contracts/ResourceRef.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[VSS_Common_Contracts.ResourceRef](../../../VSS/WebApi/Contracts/ResourceRef.md)[]&gt;
 
 <a name="method_getChangesBetweenBuilds"></a>
 
@@ -786,14 +786,14 @@ Gets the changes associated between given builds
 
 ### Parameters
 
-* `project`: string. Project ID or project name
-* `fromBuildId`: number. Optional.
-* `toBuildId`: number. Optional.
-* `top`: number. Optional.
+- `project`: string. Project ID or project name
+- `fromBuildId`: number. Optional.
+- `toBuildId`: number. Optional.
+- `top`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Change](../../../TFS/Build/Contracts/Change.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Change](../../../TFS/Build/Contracts/Change.md)[]&gt;
 
 <a name="method_getDefinition"></a>
 
@@ -809,14 +809,14 @@ Gets a definition, optionally at a specific revision
 
 ### Parameters
 
-* `definitionId`: number.
-* `project`: string. Optional.
-* `revision`: number. Optional.
-* `propertyFilters`: string[]. Optional.
+- `definitionId`: number.
+- `project`: string. Optional.
+- `revision`: number. Optional.
+- `propertyFilters`: string[]. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.DefinitionReference](../../../TFS/Build/Contracts/DefinitionReference.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.DefinitionReference](../../../TFS/Build/Contracts/DefinitionReference.md)&gt;
 
 <a name="method_getDefinitionRevisions"></a>
 
@@ -832,12 +832,12 @@ Gets revisions of a definition
 
 ### Parameters
 
-* `project`: string. Project ID or project name
-* `definitionId`: number.
+- `project`: string. Project ID or project name
+- `definitionId`: number.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildDefinitionRevision](../../../TFS/Build/Contracts/BuildDefinitionRevision.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildDefinitionRevision](../../../TFS/Build/Contracts/BuildDefinitionRevision.md)[]&gt;
 
 <a name="method_getDefinitions"></a>
 
@@ -853,17 +853,17 @@ Gets definitions, optionally filtered by name
 
 ### Parameters
 
-* `project`: string. Optional. Project ID or project name
-* `name`: string. Optional.
-* `type`: [Contracts.DefinitionType](../../../TFS/Build/Contracts/DefinitionType.md). Optional.
-* `repositoryId`: string. Optional.
-* `repositoryType`: string. Optional.
-* `queryOrder`: [Contracts.DefinitionQueryOrder](../../../TFS/Build/Contracts/DefinitionQueryOrder.md). Optional.
-* `top`: number. Optional.
+- `project`: string. Optional. Project ID or project name
+- `name`: string. Optional.
+- `type`: [Contracts.DefinitionType](../../../TFS/Build/Contracts/DefinitionType.md). Optional.
+- `repositoryId`: string. Optional.
+- `repositoryType`: string. Optional.
+- `queryOrder`: [Contracts.DefinitionQueryOrder](../../../TFS/Build/Contracts/DefinitionQueryOrder.md). Optional.
+- `top`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.DefinitionReference](../../../TFS/Build/Contracts/DefinitionReference.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.DefinitionReference](../../../TFS/Build/Contracts/DefinitionReference.md)[]&gt;
 
 <a name="method_getQueues"></a>
 
@@ -879,11 +879,11 @@ Gets queues, optionally filtered by name
 
 ### Parameters
 
-* `name`: string. Optional.
+- `name`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.AgentPoolQueue](../../../TFS/Build/Contracts/AgentPoolQueue.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.AgentPoolQueue](../../../TFS/Build/Contracts/AgentPoolQueue.md)[]&gt;
 
 <a name="method_getResourceUsage"></a>
 
@@ -899,7 +899,7 @@ Gets queues, optionally filtered by name
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildResourceUsage](../../../TFS/Build/Contracts/BuildResourceUsage.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildResourceUsage](../../../TFS/Build/Contracts/BuildResourceUsage.md)&gt;
 
 <a name="method_getTags"></a>
 
@@ -913,11 +913,11 @@ Gets queues, optionally filtered by name
 
 ### Parameters
 
-* `project`: string. Project ID or project name
+- `project`: string. Project ID or project name
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;string[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;string[]&gt;
 
 <a name="method_getTemplate"></a>
 
@@ -933,12 +933,12 @@ Gets definition template filtered by id
 
 ### Parameters
 
-* `project`: string. Project ID or project name
-* `templateId`: string.
+- `project`: string. Project ID or project name
+- `templateId`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildDefinitionTemplate](../../../TFS/Build/Contracts/BuildDefinitionTemplate.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildDefinitionTemplate](../../../TFS/Build/Contracts/BuildDefinitionTemplate.md)&gt;
 
 <a name="method_getTemplates"></a>
 
@@ -952,11 +952,11 @@ Gets definition template filtered by id
 
 ### Parameters
 
-* `project`: string. Project ID or project name
+- `project`: string. Project ID or project name
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildDefinitionTemplate](../../../TFS/Build/Contracts/BuildDefinitionTemplate.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildDefinitionTemplate](../../../TFS/Build/Contracts/BuildDefinitionTemplate.md)[]&gt;
 
 <a name="method_getWorkItemsBetweenBuilds"></a>
 
@@ -972,14 +972,14 @@ Gets all the work item IDs in-between fromBuildId to toBuildId
 
 ### Parameters
 
-* `project`: string. Project ID or project name
-* `fromBuildId`: number.
-* `toBuildId`: number.
-* `top`: number. Optional.
+- `project`: string. Project ID or project name
+- `fromBuildId`: number.
+- `toBuildId`: number.
+- `top`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[VSS_Common_Contracts.ResourceRef](../../../VSS/WebApi/Contracts/ResourceRef.md)[]&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[VSS_Common_Contracts.ResourceRef](../../../VSS/WebApi/Contracts/ResourceRef.md)[]&gt;
 
 <a name="method_queueBuild"></a>
 
@@ -995,13 +995,13 @@ Queues a build
 
 ### Parameters
 
-* `build`: [Contracts.Build](../../../TFS/Build/Contracts/Build.md).
-* `project`: string. Optional.
-* `ignoreWarnings`: boolean. Optional.
+- `build`: [Contracts.Build](../../../TFS/Build/Contracts/Build.md).
+- `project`: string. Optional.
+- `ignoreWarnings`: boolean. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Build](../../../TFS/Build/Contracts/Build.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Build](../../../TFS/Build/Contracts/Build.md)&gt;
 
 <a name="method_saveTemplate"></a>
 
@@ -1017,13 +1017,13 @@ Saves a definition template
 
 ### Parameters
 
-* `template`: [Contracts.BuildDefinitionTemplate](../../../TFS/Build/Contracts/BuildDefinitionTemplate.md).
-* `project`: string.
-* `templateId`: string.
+- `template`: [Contracts.BuildDefinitionTemplate](../../../TFS/Build/Contracts/BuildDefinitionTemplate.md).
+- `project`: string.
+- `templateId`: string.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildDefinitionTemplate](../../../TFS/Build/Contracts/BuildDefinitionTemplate.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildDefinitionTemplate](../../../TFS/Build/Contracts/BuildDefinitionTemplate.md)&gt;
 
 <a name="method_updateBuild"></a>
 
@@ -1039,13 +1039,13 @@ Updates a build
 
 ### Parameters
 
-* `build`: [Contracts.Build](../../../TFS/Build/Contracts/Build.md).
-* `buildId`: number.
-* `project`: string. Optional.
+- `build`: [Contracts.Build](../../../TFS/Build/Contracts/Build.md).
+- `buildId`: number.
+- `project`: string. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Build](../../../TFS/Build/Contracts/Build.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Build](../../../TFS/Build/Contracts/Build.md)&gt;
 
 <a name="method_updateBuildSettings"></a>
 
@@ -1061,11 +1061,11 @@ Updates the build settings
 
 ### Parameters
 
-* `settings`: [Contracts.BuildSettings](../../../TFS/Build/Contracts/BuildSettings.md).
+- `settings`: [Contracts.BuildSettings](../../../TFS/Build/Contracts/BuildSettings.md).
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildSettings](../../../TFS/Build/Contracts/BuildSettings.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildSettings](../../../TFS/Build/Contracts/BuildSettings.md)&gt;
 
 <a name="method_updateDefinition"></a>
 
@@ -1081,12 +1081,12 @@ Updates an existing definition
 
 ### Parameters
 
-* `definition`: [Contracts.BuildDefinition](../../../TFS/Build/Contracts/BuildDefinition.md).
-* `definitionId`: number.
-* `project`: string. Optional.
-* `secretsSourceDefinitionId`: number. Optional.
-* `secretsSourceDefinitionRevision`: number. Optional.
+- `definition`: [Contracts.BuildDefinition](../../../TFS/Build/Contracts/BuildDefinition.md).
+- `definitionId`: number.
+- `project`: string. Optional.
+- `secretsSourceDefinitionId`: number. Optional.
+- `secretsSourceDefinitionRevision`: number. Optional.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildDefinition](../../../TFS/Build/Contracts/BuildDefinition.md)&gt;
+- [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildDefinition](../../../TFS/Build/Contracts/BuildDefinition.md)&gt;

@@ -17,14 +17,14 @@ ms.date: 10/10/2019
 
 By using Code Search you can do the following tasks:
 
-* **Search across all of your projects**:
+- **Search across all of your projects**:
   Search in your own codebase and your partner teams' code bases. Use cross-project
   searches over all the code in your Azure DevOps or TFS instance to search
   across your enterprise's entire codebase. Narrow your search by using project, repository,
   path, file name, and other filter operators. Use wildcards to widen your search and
   Boolean operators to fine-tune it.
 
-* **Find specific types of code**: Use code type filters
+- **Find specific types of code**: Use code type filters
   to search for specific kinds of code such as definitions, references, functions,
   comments, strings, namespaces, and more. You can use Code Search to narrow
   down your results to exact code type matches. Navigate quickly to a method
@@ -32,7 +32,7 @@ By using Code Search you can do the following tasks:
   filter, or scope the search to references in order to view calls and maximize
   code reuse.
 
-* **Easily drill down or widen your search**: When you find an item of interest,
+- **Easily drill down or widen your search**: When you find an item of interest,
   simply place the cursor on it and use the shortcut menu to quickly search for
   that text across all your projects and files. Easily trace how your code works
   by using the shortcut menu to search for related items such as definitions and
@@ -100,12 +100,12 @@ words you entered.
 
 For example:
 
-* `validate AND revisit` finds files that contain both the words **validate** and
+- `validate AND revisit` finds files that contain both the words **validate** and
   **revisit**. Note that `AND` is the default operator, and so this is equivalent to
   the search string `validate revisit`.
-* `validate OR revisit` finds files that contain either of the words **validate** or **revisit**.
-* `validate NOT revisit` finds files that contain the word **validate** but not the word **revisit**.
-* `(validate NOT revisit) OR "release delayed"` finds files that contain the word **validate**
+- `validate OR revisit` finds files that contain either of the words **validate** or **revisit**.
+- `validate NOT revisit` finds files that contain the word **validate** but not the word **revisit**.
+- `(validate NOT revisit) OR "release delayed"` finds files that contain the word **validate**
   but not the word **revisit** or files that contain the phrase **release delayed**.
 
 ### Broaden your search by using wildcards
@@ -113,9 +113,9 @@ For example:
 Use the wildcard characters `*` and `?` to broaden your search criteria. For
 example:
 
-* `CodeSenseHttp*` finds files containing words that start with **CodeSenseHttp**,
+- `CodeSenseHttp*` finds files containing words that start with **CodeSenseHttp**,
   such as **CodeSenseHttpClient** and **CodeSenseHttpClientTest**.
-* `CodeA23?R` finds files containing words that start with **CodeA23**, have any
+- `CodeA23?R` finds files containing words that start with **CodeA23**, have any
   alphanumeric character next, and end with **R**. For example, **CodeA234R** and **CodeA23QR**.
 
 You can use wildcard characters anywhere in your search string **except** as
@@ -146,9 +146,9 @@ to perform a _phrase search_. For example, `"Client not found"`.
 
 Within a phrase:
 
-* Boolean operators are treated as literal text.
-* The query language characters `:()[]*?` are treated as literal text.
-* You need to escape only the special characters `\` and `"`.
+- Boolean operators are treated as literal text.
+- The query language characters `:()[]*?` are treated as literal text.
+- You need to escape only the special characters `\` and `"`.
 
 ### Search for special characters
 
@@ -158,15 +158,15 @@ Within a phrase:
 You can include special characters in a search string, or search specifically for special characters,
 according to the following rules:
 
-* Search for any special character that is not a part of the query language,
+- Search for any special character that is not a part of the query language,
   (for example, excluding the characters `: ( )[ ]*?`) as either a simple search string
   or a phrase search string. For example, `react-redux` or `"react-redux"` will produce the same results.
 
-* Search for a special character that is a part of the query language (`: ( )[ ]*?`)
+- Search for a special character that is a part of the query language (`: ( )[ ]*?`)
   by enclosing the search string within double-quotes. For example, `"flatten()"` will
   find the literal string `flatten()`.
 
-* Search for a literal occurrence of the double-quote character `"` by preceding it with the
+- Search for a literal occurrence of the double-quote character `"` by preceding it with the
   escape character `\` and enclosing the search string in double-quotes.
   For example, `"\"react-redux\""` will find the literal string `"react-redux"`.
 
@@ -176,16 +176,16 @@ You can search for files based on the term _vicinity_ using proximity operators:
 
 For example:
 
-* BEFORE: `term1` BEFORE `term2` - returns all files where `term1` occurs BEFORE `term2` within a distance of five tokens between them.
-* AFTER: `term1` AFTER `term2`: returns the same results as `term2` BEFORE `term1`.
-* NEAR: `term1` NEAR `term2`: returns all files where `term1` is within five token distance from `term2` in any direction. `term1` NEAR `term2` returns the same results as `term1` BEFORE `term2` OR `term2` BEFORE `term1`.
+- BEFORE: `term1` BEFORE `term2` - returns all files where `term1` occurs BEFORE `term2` within a distance of five tokens between them.
+- AFTER: `term1` AFTER `term2`: returns the same results as `term2` BEFORE `term1`.
+- NEAR: `term1` NEAR `term2`: returns all files where `term1` is within five token distance from `term2` in any direction. `term1` NEAR `term2` returns the same results as `term1` BEFORE `term2` OR `term2` BEFORE `term1`.
 
 > [!NOTE]
 >
-> * This feature is currently available only for Azure DevOps Services customers and not TFS.
-> * Wildcards and composite proximity searches, such as `term1` BEFORE `term2` AFTER `term3` aren't supported.
-> * You can combine proximity operators with other filters and operators to narrow your search.
-> * There isn't support to customize the token distance, which defaults to five.
+> - This feature is currently available only for Azure DevOps Services customers and not TFS.
+> - Wildcards and composite proximity searches, such as `term1` BEFORE `term2` AFTER `term3` aren't supported.
+> - You can combine proximity operators with other filters and operators to narrow your search.
+> - There isn't support to customize the token distance, which defaults to five.
 
 <a name="codefunctions"></a>
 
@@ -254,20 +254,20 @@ Mix and match the functions as required.
 
 Narrow the search to a specific location using the `proj`, `repo`, or `path` filters:
 
-* `QueueJobsNow proj:Fabrikam` finds all occurrences of the word **QueueJobsNow** in the **Fabrikam** project.
-* `QueueJobsNow repo:Contoso` finds all occurrences of the word **QueueJobsNow** in the **Contoso** repository.
-* `QueueJobsNow path:VisualStudio/Services/Framework` finds all occurrences of the word **QueueJobsNow**
+- `QueueJobsNow proj:Fabrikam` finds all occurrences of the word **QueueJobsNow** in the **Fabrikam** project.
+- `QueueJobsNow repo:Contoso` finds all occurrences of the word **QueueJobsNow** in the **Contoso** repository.
+- `QueueJobsNow path:VisualStudio/Services/Framework` finds all occurrences of the word **QueueJobsNow**
   in the path **VisualStudio/Services/Framework** and its sub-paths.
-* Enclose the argument to the filter in double-quotes if it contains a space.
+- Enclose the argument to the filter in double-quotes if it contains a space.
   For example: `QueueJobsNow path:"VisualStudio/Windows Phones and Devices/Services"`.
 
 Narrow the search to specific files using the `file` or `ext` filters:
 
-* `QueueJobsNow file:queueRegister*` finds all occurrences of the word **QueueJobsNow** in all
+- `QueueJobsNow file:queueRegister*` finds all occurrences of the word **QueueJobsNow** in all
   files where the filename starts with **queueRegister**.
   Use quotes to find files without extensions: file:"queueRegister" finds all files with the name QueueRegister without an extension.
-* `QueueJobsNow ext:cs` finds all occurrences of the word **QueueJobsNow** in only C# source files.
-* A plain text search string that does not include file type functions
+- `QueueJobsNow ext:cs` finds all occurrences of the word **QueueJobsNow** in only C# source files.
+- A plain text search string that does not include file type functions
   will also find files where the string matches part of the filename.
 
 <a name="findrelatedfiles"></a>
@@ -286,20 +286,20 @@ the definition if you select an object name, or for references to a selected obj
 
 Some more examples of search strings are:
 
-* You can find all instances of "ToDo" comments in your code simply by selecting `comment:` and typing `todo`.
+- You can find all instances of "ToDo" comments in your code simply by selecting `comment:` and typing `todo`.
 
-* You can search in specific locations, such as within a particular path, by using a search string such as `Driver path:MyShuttle/Server`.
+- You can search in specific locations, such as within a particular path, by using a search string such as `Driver path:MyShuttle/Server`.
 
-* You can search for files by name, such as `Driver file:GreenCabs.cs`, or just by file extension. For example, the search string
+- You can search for files by name, such as `Driver file:GreenCabs.cs`, or just by file extension. For example, the search string
   `error ext:resx` could be useful when you want to review all error strings in your code.
   But even if your plain text search string (without specific file type functions)
   matches part of a filename, the file appears in the list of found files.
 
-* You can combine two or more words by using Boolean operators; for example, `validate OR release`.
+- You can combine two or more words by using Boolean operators; for example, `validate OR release`.
 
-* You can find an exact match to a set of words by enclosing your search terms in double-quotes. For example, `"Client not found"`.
+- You can find an exact match to a set of words by enclosing your search terms in double-quotes. For example, `"Client not found"`.
 
-* You can use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET.
+- You can use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET.
 
 Open the search results in a new browser tab from either search box by
 pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking the

@@ -102,7 +102,7 @@ Only split columns where clear hand-offs exist and you want teams to pull the it
 1.  When done with your changes, choose **Save**.
 
         	> [!TIP]
-        	> You can filter queries and create charts using the [Board Column Done field](../queries/query-by-workflow-changes.md#kanban_query_fields).  
+        	> You can filter queries and create charts using the [Board Column Done field](../queries/query-by-workflow-changes.md#kanban_query_fields).
 
     ::: moniker-end
 
@@ -135,8 +135,8 @@ Only split columns where clear hand-offs exist and you want teams to pull the it
 
 ## Related articles
 
-* [Add columns](add-columns.md)
-* [Work in Progress limits](wip-limits.md)
-* [Add swimlanes, expedite work](expedite-work.md)
-* [Definition of Done](definition-of-done.md)
-* [Customize cards](../../boards/boards/customize-cards.md)
+- [Add columns](add-columns.md)
+- [Work in Progress limits](wip-limits.md)
+- [Add swimlanes, expedite work](expedite-work.md)
+- [Definition of Done](definition-of-done.md)
+- [Customize cards](../../boards/boards/customize-cards.md)

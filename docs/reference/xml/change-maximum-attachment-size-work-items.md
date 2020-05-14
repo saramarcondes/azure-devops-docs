@@ -64,4 +64,4 @@ Exception Info: System.Reflection.TargetInvocationException
 
 ## Related articles
 
-* [Requirements and compatibility, Supported web browsers](/azure/devops/server/compatibility#supported-browsers)
+- [Requirements and compatibility, Supported web browsers](/azure/devops/server/compatibility#supported-browsers)

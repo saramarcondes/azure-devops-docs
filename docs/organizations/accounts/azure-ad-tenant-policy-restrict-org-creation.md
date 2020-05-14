@@ -80,7 +80,7 @@ The error message is customized.
 
 ## Related articles
 
-* [Connect your organization to Azure Active Directory](connect-organization-to-azure-ad.md)
-* [About access with Azure AD](access-with-azure-ad.md)
-* [Get a list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md)
-* [Resolve orphaned organization](resolve-orphaned-organization.md)
+- [Connect your organization to Azure Active Directory](connect-organization-to-azure-ad.md)
+- [About access with Azure AD](access-with-azure-ad.md)
+- [Get a list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md)
+- [Resolve orphaned organization](resolve-orphaned-organization.md)

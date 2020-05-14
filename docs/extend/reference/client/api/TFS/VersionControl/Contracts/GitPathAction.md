@@ -15,12 +15,12 @@ Module path: `TFS/VersionControl/Contracts`
 
 ### Members
 
-* `action`: [GitPathActions](../../../TFS/VersionControl/Contracts/GitPathActions.md).
+- `action`: [GitPathActions](../../../TFS/VersionControl/Contracts/GitPathActions.md).
 
-* `base64Content`: string.
+- `base64Content`: string.
 
-* `path`: string.
+- `path`: string.
 
-* `rawTextContent`: string.
+- `rawTextContent`: string.
 
-* `targetPath`: string.
+- `targetPath`: string.

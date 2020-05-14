@@ -17,7 +17,7 @@ ms.date: 11/19/2018
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
-<a id="define-query-hyperlink" />  
+<a id="define-query-hyperlink" />
 
 The easiest way to define a hyperlink is to create a query that matches what you want and then copy the URL for the query. The hyperlink uses the work item query language (WIQL), which resembles Transact-SQL. For details about constructing WIQLs, see [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md).
 
@@ -129,6 +129,6 @@ SELECT [System.ID], [System.Title], [System.State]
 
 ## Related articles:
 
-* [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)
-* [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)
-* [REST API, Wiql](/rest/api/azure/devops/wit/wiql)
+- [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)
+- [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)
+- [REST API, Wiql](/rest/api/azure/devops/wit/wiql)

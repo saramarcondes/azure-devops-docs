@@ -6,11 +6,11 @@ ms.topic: include
 
 We've made many additions and updates to several of the Azure Pipelines hosted VM images. The following changes were added as part of this update:
 
-* Added Rust 1.34.1 to VS2017, VS2019, and Ubuntu 16.04
-* Added .NET Framework 4.8 to VS2017 and VS2019
-* Added Windows SDK 16299 to VS2019
-* Initialized the Visual Studio experimental instance (VSIX) for VS2017 and VS2019
-* Updated versions of Go, Maven, Ruby, Python, and DAV Fx
+- Added Rust 1.34.1 to VS2017, VS2019, and Ubuntu 16.04
+- Added .NET Framework 4.8 to VS2017 and VS2019
+- Added Windows SDK 16299 to VS2019
+- Initialized the Visual Studio experimental instance (VSIX) for VS2017 and VS2019
+- Updated versions of Go, Maven, Ruby, Python, and DAV Fx
 
 You can find more details about the latest releases [here](https://github.com/microsoft/azure-pipelines-image-generation/releases).
 
@@ -34,9 +34,9 @@ You can configure automated tests to run as part of a build or release. The publ
 
 The sharing levels include:
 
-* Run level
-* Result level
-* Individual tab selected within test run
-* Sharing is also compatible with any extension tabs configured
+- Run level
+- Result level
+- Individual tab selected within test run
+- Sharing is also compatible with any extension tabs configured
 
 When you share the URL, viewers will see the test run results in the full screen view.

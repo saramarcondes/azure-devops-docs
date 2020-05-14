@@ -16,8 +16,8 @@ monikerRange: '>= tfs-2015'
 
 Are you planning Azure DevOps continuous integration and deployment pipelines? You probably have a few questions, such as:
 
-* How do you ensure your application is safe?
-* How do you add continuous security validation to your CI/CD pipeline?
+- How do you ensure your application is safe?
+- How do you add continuous security validation to your CI/CD pipeline?
 
 DevOps practices are allowing businesses to stay ahead of the competition by delivering new features faster than ever before. As the frequency of production deployments increases, this business agility cannot come at the expense of security. With continuous delivery, how do you ensure your applications are secure and stay secure? How can you find and fix security issues early in the process? This begins with practices commonly referred to as DevSecOps. DevSecOps incorporates the security team and their capabilities into your DevOps practices making security a responsibility of everyone on the team. This article will walk you through how to help ensure your application is secure by adding continuous security validation to your CI/CD pipeline.
 
@@ -37,13 +37,13 @@ Validation in the CI/CD begins before the developer commits his or her code. Sta
 
 The CI build should be executed as part of the pull request (PR-CI) process discussed above and once the merge is complete. Typically, the primary difference between the two runs is that the PR-CI process doesn't need to do any of the packaging/staging that is done in the CI build. These CI builds should run static code analysis tests to ensure that the code is following all rules for both maintenance and security. Several tools can be used for this.
 
-* [Visual Studio Code Analysis and the Roslyn Security Analyzers](https://blogs.msdn.microsoft.com/secdevblog/2016/03/30/roslyn-diagnostics-security-analyzers-overview/)
+- [Visual Studio Code Analysis and the Roslyn Security Analyzers](https://blogs.msdn.microsoft.com/secdevblog/2016/03/30/roslyn-diagnostics-security-analyzers-overview/)
 
-* [Checkmarx](https://www.checkmarx.com/) - A Static Application Security Testing (SAST) tool
+- [Checkmarx](https://www.checkmarx.com/) - A Static Application Security Testing (SAST) tool
 
-* [BinSkim](https://github.com/Microsoft/binskim) - A binary static analysis tool that provides security and correctness results for Windows portable executables
+- [BinSkim](https://github.com/Microsoft/binskim) - A binary static analysis tool that provides security and correctness results for Windows portable executables
 
-* [Other 3rd party tools](https://blogs.msdn.microsoft.com/devops/2016/10/11/team-services-october-extensions-roundup-rugged-devops/)
+- [Other 3rd party tools](https://blogs.msdn.microsoft.com/devops/2016/10/11/team-services-october-extensions-roundup-rugged-devops/)
 
 Many of the tools seamlessly integrate into the Azure Pipelines build process. Visit the VSTS Marketplace for more information on the integration capabilities of these tools.
 
@@ -75,13 +75,13 @@ Minimize security vulnerabilities by taking a holistic and layered approach to s
 
 ## Reference information
 
-* [BinSkim](https://github.com/Microsoft/binskim) - A binary static analysis tool that provides security and correctness results for Windows portable executables
-* [Checkmarx](https://www.checkmarx.com/) - A Static Application Security Testing (SAST) tool
-* [Manage your open source usage and security as reported by your CI/CD pipeline](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/06/08/manage-your-open-source-usage-and-security-as-reported-by-your-cicd-pipeline/)
-* [OWASP](https://www.owasp.org)
-* [OWASP ZAP VSTS extension](https://github.com/deliveron/owasp-zap-vsts-extension)
-* [WhiteSource Software](https://www.whitesourcesoftware.com/)
-* [Visual Studio Code Analysis and the Roslyn Security Analyzers](https://blogs.msdn.microsoft.com/secdevblog/2016/03/30/roslyn-diagnostics-security-analyzers-overview/)
+- [BinSkim](https://github.com/Microsoft/binskim) - A binary static analysis tool that provides security and correctness results for Windows portable executables
+- [Checkmarx](https://www.checkmarx.com/) - A Static Application Security Testing (SAST) tool
+- [Manage your open source usage and security as reported by your CI/CD pipeline](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/06/08/manage-your-open-source-usage-and-security-as-reported-by-your-cicd-pipeline/)
+- [OWASP](https://www.owasp.org)
+- [OWASP ZAP VSTS extension](https://github.com/deliveron/owasp-zap-vsts-extension)
+- [WhiteSource Software](https://www.whitesourcesoftware.com/)
+- [Visual Studio Code Analysis and the Roslyn Security Analyzers](https://blogs.msdn.microsoft.com/secdevblog/2016/03/30/roslyn-diagnostics-security-analyzers-overview/)
 
 > Authors: Mike Douglas | Find the origin of this article and connect with the ALM | DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
 

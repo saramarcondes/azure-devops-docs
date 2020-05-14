@@ -39,15 +39,15 @@ You can use the Test Activity report to understand how well the team is completi
 
 For the Test Activity report to be useful and accurate, the team must perform the following activities:
 
-* Define test cases and test pans, and assign test cases to test plans.
-* For manual tests, mark the results of each validation step in the test case as passed or failed.
+- Define test cases and test pans, and assign test cases to test plans.
+- For manual tests, mark the results of each validation step in the test case as passed or failed.
 
   > [!IMPORTANT]
   > Testers must mark a test step with a status if it is a validation test step. The overall result for a test case reflects the status of all the test steps that were marked. Therefore, the test case will have a status of failed if any test step is marked as failed or not marked.
 
   For automated tests, each test case is automatically marked as passed or failed.
 
-* (Optional) To support filtering, assign **Iteration** and **Area** paths to each test case.
+- (Optional) To support filtering, assign **Iteration** and **Area** paths to each test case.
 
 <a name="Interpreting"></a>
 
@@ -57,9 +57,9 @@ You should expect the Test Activity report to vary depending on where you are in
 
 You can review the report to answer to the following questions:
 
-* Is the trend of manual tests that the team is running consistently increasing?
+- Is the trend of manual tests that the team is running consistently increasing?
 
-* Do you identify any spikes in the test activity that you cannot account for?
+- Do you identify any spikes in the test activity that you cannot account for?
 
   The Test Activity report indicates the results for each test case run for each test configuration and for all test plans. Spikes that might occur may be early indicators of problems in either the test activity or the quality of code that is being checked in.
 
@@ -81,5 +81,5 @@ You can update the Test Activity report by opening it in Microsoft Excel and cha
 
 ## Related articles
 
-* [Excel reports](excel-reports.md)
-* [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)
+- [Excel reports](excel-reports.md)
+- [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)

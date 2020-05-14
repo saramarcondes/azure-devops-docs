@@ -30,18 +30,18 @@ Use this checklist to help decide if you should make your extension available to
 
 > [!div class="checklist"]
 >
-> * Data presented by your extension is relevant to non-member users
-> * Your extension contributes capabilities at the project level
-> * Your extension contributes to areas of the product that are accessible by non-member users
-> * Your extension doesn't extend or rely on features that are unavailable to non-member users, for example the Data Service or certain Azure DevOps Services REST APIs. See the [Limitations](#limitations) section below for more details.
+> - Data presented by your extension is relevant to non-member users
+> - Your extension contributes capabilities at the project level
+> - Your extension contributes to areas of the product that are accessible by non-member users
+> - Your extension doesn't extend or rely on features that are unavailable to non-member users, for example the Data Service or certain Azure DevOps Services REST APIs. See the [Limitations](#limitations) section below for more details.
 
 ## Contribution visibility
 
 By default, contributions are only visible to organization members. To give non-member users visibility to a contribution, set the `restrictedTo` attribute on that contribution. The value is a string array that lists which types of users should have visibility to the contribution. The possible values are:
 
-* `member` an authenticated user that is a member of the organization
-* `public` an authenticated user that is **not** a member of the organization
-* `anonymous` an un-authenticated user
+- `member` an authenticated user that is a member of the organization
+- `public` an authenticated user that is **not** a member of the organization
+- `anonymous` an un-authenticated user
 
 ### Example: make a hub visible to anonymous, public, and member users
 
@@ -99,7 +99,7 @@ You can also set the default visibility for all contributions in your extension 
             "targets": [
                 "ms.vss-code-web.code-hub-group"
             ],
-            "properties": {  
+            "properties": {
                 ...
             }
         },
@@ -109,7 +109,7 @@ You can also set the default visibility for all contributions in your extension 
             "targets": [
                 "ms.vss-work-web.work-hub-group"
             ],
-            "properties": {  
+            "properties": {
                 ...
             }
         }
@@ -127,8 +127,8 @@ If you want to make some or all aspects of your contribution available to public
 
 The core SDK script, VSS.SDK.js, allows web extensions to communicate with the parent frame to perform operations like initializing communication and getting context information about the current user. The following VSS SDK methods are not supported for non-member users:
 
-* `VSS.getAccessToken()`
-* `VSS.getAppToken()`
+- `VSS.getAccessToken()`
+- `VSS.getAppToken()`
 
 ### Extension data service
 
@@ -284,6 +284,6 @@ Only project-scoped REST APIs can be invoked by an extension when the current us
 
 There are limitations for non-member users related to work item queries:
 
-* non-member users can only execute know queries (by ID or path)
-* Queries must be scoped to the current project. Any work items not belonging to the current project are excluded.
-* non-member user can't create new queries or execute WIQL queries
+- non-member users can only execute know queries (by ID or path)
+- Queries must be scoped to the current project. Any work items not belonging to the current project are excluded.
+- non-member user can't create new queries or execute WIQL queries

@@ -36,29 +36,29 @@ After a team has worked with WIP limits for several weeks, discuss the challenge
 
 ### Challenges
 
-* **Social dynamics.** When it comes to following rules, team members can feel challenged. Some naturally want to rebel, others don't see that the rule applies to them, or don't see what they do as breaking the rules. Some team members may take on extra work that's outside the scope of what's been agreed to. And, still others don't want to give up multitasking as they believe it's the key to their productivity and individual achievement.
+- **Social dynamics.** When it comes to following rules, team members can feel challenged. Some naturally want to rebel, others don't see that the rule applies to them, or don't see what they do as breaking the rules. Some team members may take on extra work that's outside the scope of what's been agreed to. And, still others don't want to give up multitasking as they believe it's the key to their productivity and individual achievement.
 
-* **Variability of work in progress.** Wide variability in the size of work items&mdash;users stories and bugs&mdash; can negatively impact the overall workflow. For example, items with estimates that vary in size from 4 hours to 14 days, or 2 to 55 story points, can't be counted the same when it comes to constraining work in progress.
+- **Variability of work in progress.** Wide variability in the size of work items&mdash;users stories and bugs&mdash; can negatively impact the overall workflow. For example, items with estimates that vary in size from 4 hours to 14 days, or 2 to 55 story points, can't be counted the same when it comes to constraining work in progress.
 
-* **Ignoring systemic problems.** Instead of addressing workflow problems when bottlenecks occur, teams soldier on, putting in more time to overcome the bottleneck.
+- **Ignoring systemic problems.** Instead of addressing workflow problems when bottlenecks occur, teams soldier on, putting in more time to overcome the bottleneck.
 
-* **Culture change.** Adopting WIP limits introduces changes to the system, culture, and team.
+- **Culture change.** Adopting WIP limits introduces changes to the system, culture, and team.
 
 ### Solutions
 
-* **Build a culture of team productivity.** Address the natural tension that exists between individual productivity versus team productivity. Identify ways in which team members can enhance the overall productivity of the team and workflow process.
+- **Build a culture of team productivity.** Address the natural tension that exists between individual productivity versus team productivity. Identify ways in which team members can enhance the overall productivity of the team and workflow process.
 
-* **Size work to minimize variability.** Before work starts on any item, the team should discuss the overall size of work required and determine if it can be broken down into smaller tasks.
+- **Size work to minimize variability.** Before work starts on any item, the team should discuss the overall size of work required and determine if it can be broken down into smaller tasks.
 
-* **Focus on the flow of high priority items.** When idle, team members ask how they can help move an upstream item forward. When blocked or challenged to deliver an item on time, team members ask for help to complete an item.
+- **Focus on the flow of high priority items.** When idle, team members ask how they can help move an upstream item forward. When blocked or challenged to deliver an item on time, team members ask for help to complete an item.
 
-* **Resource team capacity for each work stage.** Bottlenecks can occur when there aren't enough specialists who work in a particular stage. Determine ways to either increase team skills within each work stage, or add resources as needed to meet an understaffed work stage.
+- **Resource team capacity for each work stage.** Bottlenecks can occur when there aren't enough specialists who work in a particular stage. Determine ways to either increase team skills within each work stage, or add resources as needed to meet an understaffed work stage.
 
-* **Build shared understanding.** Continuously strive to increase the team's understanding of how to work using Kanban practices. Take actions that allow team members to contribute to process changes. Consider scheduling regular retrospectives or team meetings to discuss what works well and what needs changing. Document team policies to limit ambiguity.
+- **Build shared understanding.** Continuously strive to increase the team's understanding of how to work using Kanban practices. Take actions that allow team members to contribute to process changes. Consider scheduling regular retrospectives or team meetings to discuss what works well and what needs changing. Document team policies to limit ambiguity.
 
-* **Use metrics to adjust processes.** Periodically check Kanban metrics of work in progress and lead time to determine when changes need to be made.
+- **Use metrics to adjust processes.** Periodically check Kanban metrics of work in progress and lead time to determine when changes need to be made.
 
-* **Manage culture changes mindfully.** People want to do their best work&mdash;a core tenant underlying Kanban and its associated disciplines. Apply change management principles as you adopt new practices. Create greater ownership within the team for the success of implementing WIP limits.
+- **Manage culture changes mindfully.** People want to do their best work&mdash;a core tenant underlying Kanban and its associated disciplines. Apply change management principles as you adopt new practices. Create greater ownership within the team for the success of implementing WIP limits.
 
 <a id="dod" />
 
@@ -141,7 +141,7 @@ Acceptance criteria corresponds to what a customer should expect when a user sto
 
 Acceptance criteria defines when a feature is shippable. Capture the criteria for each backlog item in the Acceptance Criteria field (for Scrum product backlog items) or the Description field (for Agile user stories and CMMI requirements).
 
-<img src="media/vso-product-backlog-work-item-form-acceptance-criteria.png" alt="Acceptance criteria field on work item form]" style="border: 1px solid #C3C3C3;" />  
+<img src="media/vso-product-backlog-work-item-form-acceptance-criteria.png" alt="Acceptance criteria field on work item form]" style="border: 1px solid #C3C3C3;" />
 
 The Definition of Done, on the other hand, is about delivering an incremental piece of a feature as it moves from not started to complete. Agile teams meet with greater success when each handoff made is in a ready state for the recipient to begin their work.
 
@@ -149,9 +149,9 @@ The Definition of Done, on the other hand, is about delivering an incremental pi
 
 ## Additional resources
 
-* [DoD Goes Agile](https://www.scruminc.com/dod-goes-agile/)
-* [Walking Through a Definition of Done](https://www.scrum.org/resources/blog/walking-through-definition-done)
-* [Agile Culture](/azure/devops/learn/agile/agile-culture)
-* [What is Kanban?](https://kanbanblog.com/explained/)
-* [Kanban: Successful Evolutionary Change for Your Technology Business by David J. Anderson](https://www.amazon.com/Kanban-Successful-Evolutionary-Technology-Business/dp/0984521402/)
-* [Agile Project Management with Kanban by Eric Brechner](https://www.amazon.com/Project-Management-Kanban-Developer-Practices/dp/0735698953/)
+- [DoD Goes Agile](https://www.scruminc.com/dod-goes-agile/)
+- [Walking Through a Definition of Done](https://www.scrum.org/resources/blog/walking-through-definition-done)
+- [Agile Culture](/azure/devops/learn/agile/agile-culture)
+- [What is Kanban?](https://kanbanblog.com/explained/)
+- [Kanban: Successful Evolutionary Change for Your Technology Business by David J. Anderson](https://www.amazon.com/Kanban-Successful-Evolutionary-Technology-Business/dp/0984521402/)
+- [Agile Project Management with Kanban by Eric Brechner](https://www.amazon.com/Project-Management-Kanban-Developer-Practices/dp/0735698953/)

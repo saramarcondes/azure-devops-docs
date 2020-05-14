@@ -24,6 +24,6 @@ VSS.getService(serviceId).then(function(svc) {
 
 ### Available services
 
-* [Dialog](./api/VSS/SDK/Services/Dialogs/HostDialogService.md)
-* [ExtensionData](./api/VSS/SDK/Services/ExtensionData/ExtensionDataService.md)
-* [Navigation](./api/VSS/SDK/Services/Navigation/HostNavigationService.md)
+- [Dialog](./api/VSS/SDK/Services/Dialogs/HostDialogService.md)
+- [ExtensionData](./api/VSS/SDK/Services/ExtensionData/ExtensionDataService.md)
+- [Navigation](./api/VSS/SDK/Services/Navigation/HostNavigationService.md)

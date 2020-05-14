@@ -45,7 +45,7 @@ You use the **group** element to specify a new security group in Team Foundation
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <group name="GroupName" description="GroupDescription"></group>  
+> <group name="GroupName" description="GroupDescription"></group>
 > ```
 
 The following example shows how to create a group that is named Reader:
@@ -56,18 +56,18 @@ The following example shows how to create a group that is named Reader:
 > <task id="GroupCreation1"
 >       name="Create Groups and Permissions"
 >       plugin="Microsoft.ProjectCreationWizard.Groups"
->       completionMessage="Groups and Permissions created.">  
->    <taskXml>  
->       <groups>  
->          <group name="Readers"  
->                 description="A group for users who have read access across the project">  
->             <permissions>  
->                <!-- permissions -->  
->             </permissions>  
->          </group>  
->       </groups>  
->    </taskXml>  
-> </task>  
+>       completionMessage="Groups and Permissions created.">
+>    <taskXml>
+>       <groups>
+>          <group name="Readers"
+>                 description="A group for users who have read access across the project">
+>             <permissions>
+>                <!-- permissions -->
+>             </permissions>
+>          </group>
+>       </groups>
+>    </taskXml>
+> </task>
 > ```
 
 <a name="members"></a>
@@ -79,7 +79,7 @@ You use the **member** element to assign a group as a member of a security group
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <member name="MemberName" ></member>  
+> <member name="MemberName" ></member>
 > ```
 >
 > [!NOTE]
@@ -91,25 +91,25 @@ The following example shows how to add TestGroup1 as a member of TestGroup2.
 >
 > ```XML
 > <task id="GroupCreation1"
->     <taskXml>  
->       <groups>  
->         <group name="TestGroup1" description="Test group 1.  Contains no members out of the box.">  
->           <permissions>  
->             <permission name="GENERIC_READ" class="PROJECT" allow="true" />  
->           </permissions>  
->         </group>  
->         <group name="TestGroup2" description="Test group 2.  Contains TestGroup1 and Project Administrators.">  
->           <permissions>  
->             <permission name="GENERIC_READ" class="PROJECT" allow="true" />  
->           </permissions>  
->           <members>  
->             <member name="TestGroup1" />  
->             <member name="$$PROJECTADMINGROUP$$" />  
->           </members>  
->         </group>  
->       </groups>  
->     </taskXml>  
-> </task>  
+>     <taskXml>
+>       <groups>
+>         <group name="TestGroup1" description="Test group 1.  Contains no members out of the box.">
+>           <permissions>
+>             <permission name="GENERIC_READ" class="PROJECT" allow="true" />
+>           </permissions>
+>         </group>
+>         <group name="TestGroup2" description="Test group 2.  Contains TestGroup1 and Project Administrators.">
+>           <permissions>
+>             <permission name="GENERIC_READ" class="PROJECT" allow="true" />
+>           </permissions>
+>           <members>
+>             <member name="TestGroup1" />
+>             <member name="$$PROJECTADMINGROUP$$" />
+>           </members>
+>         </group>
+>       </groups>
+>     </taskXml>
+> </task>
 > ```
 
 <a name="team_settings"></a>
@@ -124,21 +124,21 @@ Within the default Groups and Permissions plug-in file, the `@defaultTeam` macro
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <group name="@defaultTeam">  
->       <permissions>  
->       <permission name="GENERIC_READ" class="PROJECT" allow="true" />  
->       </permissions>  
->       <members>  
->       <member name="@creator"/>  
->       </members>  
->       <teamSettings areaPath="Area">  
->       <iterationPaths backlogPath="Iteration">  
->          <iterationPath path="Iteration 1" />  
->          <iterationPath path="Iteration 2" />  
->          <iterationPath path="Iteration 3" />  
->       </iterationPaths>  
->       </teamSettings>  
-> </group>  
+> <group name="@defaultTeam">
+>       <permissions>
+>       <permission name="GENERIC_READ" class="PROJECT" allow="true" />
+>       </permissions>
+>       <members>
+>       <member name="@creator"/>
+>       </members>
+>       <teamSettings areaPath="Area">
+>       <iterationPaths backlogPath="Iteration">
+>          <iterationPath path="Iteration 1" />
+>          <iterationPath path="Iteration 2" />
+>          <iterationPath path="Iteration 3" />
+>       </iterationPaths>
+>       </teamSettings>
+> </group>
 > ```
 
 You can also define additional teams within a project. You do this by defining a group and assigning the `isTeam` attribute to `true`. The following example shows how to define a team and its permissions, members, and initial sprint assignments. Specify the default team settings for a project.
@@ -146,20 +146,20 @@ You can also define additional teams within a project. You do this by defining a
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <group name="Dream Team" isTeam="true" description="Next generation work">  
->    <permissions>  
->       <permission name="GENERIC_READ" class="PROJECT" allow="true" />  
->    </permissions>  
->    <members>  
->       <member name="@creator"/>  
->    </members>  
->       <teamSettings areaPath="Area">  
->       <iterationPaths backlogPath="Iteration">  
->          <iterationPath path="Iteration 1" />  
->          <iterationPath path="Iteration 2" />  
->          <iterationPath path="Iteration 3" />  
->       </iterationPaths>  
->       </teamSettings>  
+> <group name="Dream Team" isTeam="true" description="Next generation work">
+>    <permissions>
+>       <permission name="GENERIC_READ" class="PROJECT" allow="true" />
+>    </permissions>
+>    <members>
+>       <member name="@creator"/>
+>    </members>
+>       <teamSettings areaPath="Area">
+>       <iterationPaths backlogPath="Iteration">
+>          <iterationPath path="Iteration 1" />
+>          <iterationPath path="Iteration 2" />
+>          <iterationPath path="Iteration 3" />
+>       </iterationPaths>
+>       </teamSettings>
 > </group>
 > ```
 
@@ -172,7 +172,7 @@ You must specify permissions for each group that you create. You use the **permi
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <permission name="PermissionName" class="ClassName" allow="true | false"/>  
+> <permission name="PermissionName" class="ClassName" allow="true | false"/>
 > ```
 
 The following example shows how to grant permissions to the Reader security group so that members can view information about a project, but they cannot modify that information.
@@ -180,13 +180,13 @@ The following example shows how to grant permissions to the Reader security grou
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <group name="Readers" description="A group for users who have read access across the project">  
->    <permissions>  
->      <permission name="GENERIC_READ" class="PROJECT" allow="true" />  
->      <permission name="GENERIC_READ" class="CSS_NODE" allow="true" />  
->      <permission name="WORK_ITEM_READ" class="CSS_NODE" allow="true" />  
->    </permissions>  
-> </group>  
+> <group name="Readers" description="A group for users who have read access across the project">
+>    <permissions>
+>      <permission name="GENERIC_READ" class="PROJECT" allow="true" />
+>      <permission name="GENERIC_READ" class="CSS_NODE" allow="true" />
+>      <permission name="WORK_ITEM_READ" class="CSS_NODE" allow="true" />
+>    </permissions>
+> </group>
 > ```
 
 <a name="elements"></a>
@@ -214,8 +214,8 @@ The following table describes the elements that you use to define the initial gr
 
 ## Related articles
 
-* [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md)
-* [Control access to functional areas](control-access-to-functional-areas.md)
-* [Apply a field rule](../xml/apply-rule-work-item-field.md)
-* [Set up groups for use in TFS deployments](/azure/devops/server/admin/setup-ad-groups)
-* [Customize a process](customize-process.md)
+- [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md)
+- [Control access to functional areas](control-access-to-functional-areas.md)
+- [Apply a field rule](../xml/apply-rule-work-item-field.md)
+- [Set up groups for use in TFS deployments](/azure/devops/server/admin/setup-ad-groups)
+- [Customize a process](customize-process.md)

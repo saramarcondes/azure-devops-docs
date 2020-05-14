@@ -40,8 +40,8 @@ By using the index of elements in this topic, you can look up the syntax structu
 
 The ProcessTemplate file contains two main parent elements within the **ProcessTemplate** root element: **metadata** and **groups**. The syntax for each of the following elements and their child elements is described in [Process template XML elements reference](process-template-xml-elements-reference.md).
 
-* **metadata**: **description, name, plugin, plugins**
-* **groups: dependencies, dependency, group, tasklist**
+- **metadata**: **description, name, plugin, plugins**
+- **groups: dependencies, dependency, group, tasklist**
 
 <a name="tasks"></a>
 
@@ -76,6 +76,6 @@ In the Work Item Tracking plug-in, you can specify several type definition files
 
 ## Related articles
 
-* [Support global teams](../xml/localization-and-globalization-of-witd-child-elements.md)
-* [All WITD elements](../xml/all-witd-xml-elements-reference.md)
-* [Customize your work tracking experience](../customize-work.md)
+- [Support global teams](../xml/localization-and-globalization-of-witd-child-elements.md)
+- [All WITD elements](../xml/all-witd-xml-elements-reference.md)
+- [Customize your work tracking experience](../customize-work.md)

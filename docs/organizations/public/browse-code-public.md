@@ -54,8 +54,8 @@ In the following example, we view **Commits**.
 
 ## Related articles
 
-* [Find a file or folder in a Git repository](../../repos/git/find-a-file.md)
-* [Commit details](../../repos/git/commit-details.md)
-* [Manage branches](../../repos/git/manage-your-branches.md)
-* [Working with tags](../../repos/git/git-tags.md)
-* [Review code with pull requests](../../repos/git/pull-requests.md)
+- [Find a file or folder in a Git repository](../../repos/git/find-a-file.md)
+- [Commit details](../../repos/git/commit-details.md)
+- [Manage branches](../../repos/git/manage-your-branches.md)
+- [Working with tags](../../repos/git/git-tags.md)
+- [Review code with pull requests](../../repos/git/pull-requests.md)

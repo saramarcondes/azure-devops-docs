@@ -19,6 +19,6 @@ A query that can be issued for data provider data
 
 ### Members
 
-* `context`: [DataProviderContext](../../../VSS/References/SDK_Interfaces/DataProviderContext.md). Contextual information to pass to the data providers
+- `context`: [DataProviderContext](../../../VSS/References/SDK_Interfaces/DataProviderContext.md). Contextual information to pass to the data providers
 
-* `contributionIds`: string[]. The contribution IDs of the data providers to resolve
+- `contributionIds`: string[]. The contribution IDs of the data providers to resolve

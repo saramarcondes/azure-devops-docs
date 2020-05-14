@@ -16,9 +16,9 @@ monikerRange: '>= tfs-2013'
 Git tracks two dates in commits: author date and commit date.
 In addition, Azure DevOps Services and TFS track when a commit was first pushed to the server.
 
-* **Author date**: when a commit was originally authored. Typically, when someone first ran `git commit`.
-* **Commit date**: when a commit was applied to the branch. In many cases it is the same as the author date. Sometimes it differs: if a commit was amended, rebased, or applied by someone other than the author as part of a patch. In those cases, the date will be when the rebase happened or the patch was applied.
-* **Push date**: when a commit was pushed to the remote repository in question. This date is specific to the remote version control system you are using, and won't be available in your local repository.
+- **Author date**: when a commit was originally authored. Typically, when someone first ran `git commit`.
+- **Commit date**: when a commit was applied to the branch. In many cases it is the same as the author date. Sometimes it differs: if a commit was amended, rebased, or applied by someone other than the author as part of a patch. In those cases, the date will be when the rebase happened or the patch was applied.
+- **Push date**: when a commit was pushed to the remote repository in question. This date is specific to the remote version control system you are using, and won't be available in your local repository.
 
 When you run `git log`, by default you will see the _author date_.
 If you want to see commit date, you can use one of the many command line options, such as `--pretty=fuller`.

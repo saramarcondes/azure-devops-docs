@@ -27,17 +27,17 @@ To provide feedback about Azure DevOps Services or TFS, see [Provide product and
 
 ## How-to Guides
 
-* [Request feedback (Test & Feedback extension)](/azure/devops/test/request-stakeholder-feedback?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json)
-* [Get feedback (Work tracking)](get-feedback.md)
-* [Provide feedback with the Test & Feedback extension](/azure/devops/test/provide-stakeholder-feedback?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json)
-* [Provide feedback with the Feedback client](give-feedback.md)
-* [Set feedback permissions](give-permissions-feedback.md)
+- [Request feedback (Test & Feedback extension)](/azure/devops/test/request-stakeholder-feedback?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json)
+- [Get feedback (Work tracking)](get-feedback.md)
+- [Provide feedback with the Test & Feedback extension](/azure/devops/test/provide-stakeholder-feedback?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json)
+- [Provide feedback with the Feedback client](give-feedback.md)
+- [Set feedback permissions](give-permissions-feedback.md)
 
 ## Reference
 
-* [Default permissions and access set for collaboration tools](..//wiki/wiki-readme-permissions.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/notifications/project/feedback/toc.json)
-* [Give us feedback, get support](../../user-guide/provide-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json)
+- [Default permissions and access set for collaboration tools](..//wiki/wiki-readme-permissions.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/notifications/project/feedback/toc.json)
+- [Give us feedback, get support](../../user-guide/provide-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json)
 
 ## Resources
 
-* [Uservoice Integration (Marketplace extension)](https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-uservoice)
+- [Uservoice Integration (Marketplace extension)](https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-uservoice)

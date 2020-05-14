@@ -19,17 +19,17 @@ monikerRange: '>= tfs-2013'
 Your Git repo should have a readme file so that viewers know what your code does and how they can get started using it.
 Your readme should speak to the following audiences:
 
-* Users that just want to run your code
-* Developers that want to build and test your code. Developers are also users.
-* Contributors that want to submit changes to your code. Contributors are both developers and users.
+- Users that just want to run your code
+- Developers that want to build and test your code. Developers are also users.
+- Contributors that want to submit changes to your code. Contributors are both developers and users.
 
 Write your readme in [Markdown](../../project/wiki/markdown-guidance.md) instead of plain text. Markdown makes it easy to format text, include images, and link as needed to additional documentation from your readme.
 
 Here are some great readmes that use this format and speak to all three audiences, for reference and inspiration:
 
-* [ASP.NET Core](https://github.com/aspnet/Home)
-* [Visual Studio Code](https://github.com/Microsoft/vscode)
-* [Chakra Core](https://github.com/Microsoft/ChakraCore)
+- [ASP.NET Core](https://github.com/aspnet/Home)
+- [Visual Studio Code](https://github.com/Microsoft/vscode)
+- [Chakra Core](https://github.com/Microsoft/ChakraCore)
 
 ## Create an intro
 

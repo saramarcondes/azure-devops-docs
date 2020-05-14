@@ -11,10 +11,10 @@ ms.topic: include
 Azure Pipelines has supported deployments controlled with manual approvals for some time now. With the latest enhancements, you now have additional control over your deployments. In addition to approvals, resource owners can now add automated `checks` to verify security and quality policies. These checks can be used to trigger operations and then wait for them to complete. Using the additional checks, you can now define health criteria based on multiple sources and be assured that all deployments targeting your resources are safe, regardless of the YAML pipeline performing the deployment. Evaluation of each check can be repeated periodically based on the specified **Retry Interval** for the check.
 The following additional checks are now available:
 
-* Invoke any REST API and perform validation based on response body or a callback from the external service
-* Invoke an Azure function and perform validation based on response or a callback from the function
-* Query Azure Monitor rules for active alerts
-* Ensure the pipeline extends one or more YAML templates
+- Invoke any REST API and perform validation based on response body or a callback from the external service
+- Invoke an Azure function and perform validation based on response or a callback from the function
+- Query Azure Monitor rules for active alerts
+- Ensure the pipeline extends one or more YAML templates
 
 > [!div class="mx-imgBorder"] > ![Badge](../../media/167-1.png)
 

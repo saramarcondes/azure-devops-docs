@@ -53,20 +53,20 @@ It's best if you involve the entire team to identify an initial set of workflow 
 
 To get started, ask your team these questions:
 
-* _What types of activities do we regularly perform?_
-* _What natural hand offs occur within our team? Or, from our team to other teams?_
-* _What activities will help reinforce our team policies, such as analysis, code review, or design acceptance?_
-* _What work needs to occur at each stage?_
+- _What types of activities do we regularly perform?_
+- _What natural hand offs occur within our team? Or, from our team to other teams?_
+- _What activities will help reinforce our team policies, such as analysis, code review, or design acceptance?_
+- _What work needs to occur at each stage?_
 
 Our example development team came up with these stages as essential to their process:
 
 ![Example workflow stages ](media/ALM_AC_Workflow.png)
 
-* **Backlog**: Prioritized list of items which aren't yet ready to work on
-* **Analyze**: Well understood and shared acceptance criteria identified and overall work required to develop and test item
-* **Develop**: Code and run unit tests for the item
-* **Test**: Perform exploratory, automated, integration, and other tests
-* **Done**: Item ready to handoff to production.
+- **Backlog**: Prioritized list of items which aren't yet ready to work on
+- **Analyze**: Well understood and shared acceptance criteria identified and overall work required to develop and test item
+- **Develop**: Code and run unit tests for the item
+- **Test**: Perform exploratory, automated, integration, and other tests
+- **Done**: Item ready to handoff to production.
 
 You can always revisit these initial stages later and adjust.
 
@@ -311,9 +311,9 @@ Another "under the hood" item that impacts Kanban column-to-State mappings is ca
 
 What does this mean for Kanban board users? First, only work items whose WITs belong to the Requirement Category show up on the Kanban board. Second, if you add bugs or other WITs to appear on the Kanban board, you potentially introduce additional workflow states. This means that you may need to adjust the Kanban column-to-State mappings when you perform one of these additional customizations:
 
-* Your team admin chooses to [show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)
-* Your project admin [adds WITs to backlogs and boards](../../reference/add-wits-to-backlogs-and-boards.md)
-* Your project collection or project admin customizes the workflow for a WIT in the Requirement Category: [Azure Boards](../../organizations/settings/work/customize-process-workflow.md) or [TFS](../../reference/xml/change-workflow-wit.md)
+- Your team admin chooses to [show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)
+- Your project admin [adds WITs to backlogs and boards](../../reference/add-wits-to-backlogs-and-boards.md)
+- Your project collection or project admin customizes the workflow for a WIT in the Requirement Category: [Azure Boards](../../organizations/settings/work/customize-process-workflow.md) or [TFS](../../reference/xml/change-workflow-wit.md)
 
 For example, if you change the team setting and add bugs to the Requirements Category, the bug WIT will now appear in the Columns dialog. You'll want to make sure that the Kanban column-to-State mappings match what you want. For more information, see [Workflow states and state categories](../work-items/workflow-and-state-categories.md).
 
@@ -329,7 +329,7 @@ In this example two new states have been added, Triaged for bug, and Investigate
 **TFS 2015.1**
 In this example two new states have been added, Triaged for bug, and Investigate for user story. Each needs to be mapped to an existing or new column in order for the Kanban board to display work items assigned to these states.
 
-<img src="media/add-columns-custom-states-mapping.png" alt="Kanban board settings, Columns" style="border: 1px solid #C3C3C3;" />  
+<img src="media/add-columns-custom-states-mapping.png" alt="Kanban board settings, Columns" style="border: 1px solid #C3C3C3;" />
 
 **TFS 2015**
 In this example, bugs have been added to show on the Kanban board. You need to map the bug state for each column on the Kanban board.
@@ -374,13 +374,13 @@ Kanban columns may correspond to an actual workflow state or a pseudo state. For
 
 That's about all you need to know about working with Kanban columns. Here are a few more options you have for customizing the look and feel of the board.
 
-* [Workflow states & state categories](../work-items/workflow-and-state-categories.md)
-* [Set up your backlogs and boards](../backlogs/set-up-your-backlog.md)
-* [Show bug on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)
-* [Work in Progress limits](wip-limits.md)
-* [Add swimlanes, expedite work](expedite-work.md)
-* [Split columns](split-columns.md)
-* [Definition of Done](definition-of-done.md)
+- [Workflow states & state categories](../work-items/workflow-and-state-categories.md)
+- [Set up your backlogs and boards](../backlogs/set-up-your-backlog.md)
+- [Show bug on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)
+- [Work in Progress limits](wip-limits.md)
+- [Add swimlanes, expedite work](expedite-work.md)
+- [Split columns](split-columns.md)
+- [Definition of Done](definition-of-done.md)
 
 ### REST API resources
 

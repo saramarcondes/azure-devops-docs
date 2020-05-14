@@ -368,10 +368,10 @@ For more information, see [Full-Text Search Queries and Collation Settings](/azu
 
 ## Related articles
 
-* [Query quick reference](query-index-quick-ref.md)
-* [About managed queries](example-queries.md)
-* [Work item field index](../work-items/guidance/work-item-field.md)
-* [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)
+- [Query quick reference](query-index-quick-ref.md)
+- [About managed queries](example-queries.md)
+- [Work item field index](../work-items/guidance/work-item-field.md)
+- [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)
 
 [!INCLUDE [temp](../includes/rest-apis-queries.md)]
 

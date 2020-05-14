@@ -15,6 +15,6 @@ Module path: `TFS/Work/Contracts`
 
 ### Members
 
-* `name`: string. Name of the resource
+- `name`: string. Name of the resource
 
-* `url`: string. Full http link to the resource
+- `url`: string. Full http link to the resource

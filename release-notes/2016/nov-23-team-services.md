@@ -58,8 +58,8 @@ If you select a version named something such as **1.\* (preview)**, keep in mind
 
 > **Tip:** In a build definition you’ve got a few options to test a new major version of a task:
 >
-> * If you change the version and have problems, you can revert the change from the history tab.
-> * Clone the build definition and test the cloned definition with the new major task version.
+> - If you change the version and have problems, you can revert the change from the history tab.
+> - Clone the build definition and test the cloned definition with the new major task version.
 
 ## Hosted Linux pool preview
 
@@ -69,8 +69,8 @@ The agents in the hosted Linux pool run on an Ubuntu Linux host inside the [vsts
 
 To use the Hosted Linux pool:
 
-* In your build definition, go to the **General** tab, open the **Default agent queue** menu, and then select **Hosted Linux**.
-* In your release definition, go to the **Environments** tab, select your **Run on agent** task, open the **Deployment queue** menu, and then select **Hosted Linux**.
+- In your build definition, go to the **General** tab, open the **Default agent queue** menu, and then select **Hosted Linux**.
+- In your release definition, go to the **Environments** tab, select your **Run on agent** task, open the **Deployment queue** menu, and then select **Hosted Linux**.
 
 If you don’t see the option yet, just give it a little time. We’re rolling this option out to accounts over the next few weeks.
 
@@ -78,9 +78,9 @@ If you don’t see the option yet, just give it a little time. We’re rolling t
 
 To make continuous integration and deployment (CI/CD) of Docker apps a whole lot simpler for you, we’ve:
 
-* Updated the [Docker extension](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.docker) with support for Azure Container Service and Azure Container Registry.
-* Begun a preview of the Hosted Linux pool preview so that you don’t have to set up your own Docker hosts.
-* Released [Visual Studio 2017 RC](https://visualstudio.microsoft.com/vs/visual-studio-2017-rc/) and included [new continuous delivery tools](/azure/devops/pipelines/archive/apps/aspnet/aspnetcore-docker-to-azure?view=azure-devops) for ASP.NET Core Preview apps. You can use these tools to configure a CI/CD process quickly in Team Services. Any ASP.NET Core project with Docker support enabled can be set up to run an automated build and deployment to Azure Container Service with every Git push.
+- Updated the [Docker extension](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.docker) with support for Azure Container Service and Azure Container Registry.
+- Begun a preview of the Hosted Linux pool preview so that you don’t have to set up your own Docker hosts.
+- Released [Visual Studio 2017 RC](https://visualstudio.microsoft.com/vs/visual-studio-2017-rc/) and included [new continuous delivery tools](/azure/devops/pipelines/archive/apps/aspnet/aspnetcore-docker-to-azure?view=azure-devops) for ASP.NET Core Preview apps. You can use these tools to configure a CI/CD process quickly in Team Services. Any ASP.NET Core project with Docker support enabled can be set up to run an automated build and deployment to Azure Container Service with every Git push.
 
 ## New licensing model for Build and Release Management
 
@@ -88,8 +88,8 @@ Over the next two weeks, Build and Release Management will move from the current
 
 Your Team Services account includes these free amounts:
 
-* **One free Hosted Pipeline:** With this free hosted pipeline, you get 4 hours (240 minutes) per month and a maximum duration of 30 minutes per build or deployment. If you just need more build time for once concurrent build or release, [buy another hosted pipeline](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines) without the 4-hour limit to increase your maximum duration per build or deployment up to 6 hours. For more concurrent builds or releases, [buy more hosted pipelines](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines).
-* **One free Private Pipeline:** With this free private pipeline, run unlimited concurrent builds or deploy one release at a time in Team Foundation Server 2017, or run one build or deploy one release at a time in Team Services on agent software from Microsoft. Private agents are now free and unlimited. In TFS, each Visual Studio Enterprise subscriber also contributes a private pipeline that you can use. You can also [buy more private pipelines](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines).
+- **One free Hosted Pipeline:** With this free hosted pipeline, you get 4 hours (240 minutes) per month and a maximum duration of 30 minutes per build or deployment. If you just need more build time for once concurrent build or release, [buy another hosted pipeline](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines) without the 4-hour limit to increase your maximum duration per build or deployment up to 6 hours. For more concurrent builds or releases, [buy more hosted pipelines](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines).
+- **One free Private Pipeline:** With this free private pipeline, run unlimited concurrent builds or deploy one release at a time in Team Foundation Server 2017, or run one build or deploy one release at a time in Team Services on agent software from Microsoft. Private agents are now free and unlimited. In TFS, each Visual Studio Enterprise subscriber also contributes a private pipeline that you can use. You can also [buy more private pipelines](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines).
 
 For more information, see [Concurrent build and release pipelines in Team Services](/azure/devops/pipelines/licensing/concurrent-jobs-vsts) and [Concurrent release pipelines in TFS](/azure/devops/pipelines/licensing/concurrent-pipelines-tfs).
 

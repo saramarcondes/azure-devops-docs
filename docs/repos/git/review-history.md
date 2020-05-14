@@ -26,9 +26,9 @@ In this tutorial you learn how to:
 
 > [!div class="checklist"]
 >
-> * Compare files
-> * Retrieve files
-> * Compare branches
+> - Compare files
+> - Retrieve files
+> - Compare branches
 
 ## Compare files
 

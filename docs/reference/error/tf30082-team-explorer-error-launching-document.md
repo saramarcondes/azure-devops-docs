@@ -18,9 +18,9 @@ This error occurs when Team Explorer tries to open a document for editing with a
 
 When you use the **Open** command to read a project document, Team Explorer calls Internet Explorer (or some other Internet browser) to open and display the document. When you use the **Edit** command to make changes in a project document, Team Explorer calls the Web Client service to open the application associated with the document file type. When using the **Edit** command, one of the following conditions can cause this error:
 
-* There is no application configured in Windows Explorer (or File Explorer) to handle the file name extension of the document that you are trying to open.
+- There is no application configured in Windows Explorer (or File Explorer) to handle the file name extension of the document that you are trying to open.
 
-* The associated application is not installed or is not available on the computer.
+- The associated application is not installed or is not available on the computer.
 
 ### To correct this error when there is no application associated with the file type
 

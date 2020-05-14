@@ -34,10 +34,10 @@ A fundamental aspect of requirements traceability is association of the requirem
 
 Agile teams have characteristics including, but not limited to the following
 
-* Faster release cycles
-* Continuous testing in a pipeline
-* Negligible manual testing footprint; limited to exploratory testing
-* High degree of automation
+- Faster release cycles
+- Continuous testing in a pipeline
+- Negligible manual testing footprint; limited to exploratory testing
+- High degree of automation
 
 The following sections explore traceability from **Quality**, **Bug** and **Source** standpoints for Agile teams.
 
@@ -57,9 +57,9 @@ To link automated tests with requirements, visit [test report](review-continuous
 
 2.  Choose a work item to be linked to the selected test(s) in one of the specified way:
 
-    * Choose an applicable work item from the list of suggested work items. The list is based on the most recently viewed and updated work items.
-    * Specify a work item ID.
-    * Search for a work item based on the title text.
+    - Choose an applicable work item from the list of suggested work items. The list is based on the most recently viewed and updated work items.
+    - Specify a work item ID.
+    - Search for a work item based on the title text.
 
     ![Select requirements work item](media/requirements-traceability/select-workitem.png)
 
@@ -78,8 +78,8 @@ To link automated tests with requirements, visit [test report](review-continuous
 
 5.  Configure the **Requirements quality** widget with the required options and save it.
 
-    * **Requirements query**: Select a work item query that captures the requirements, such as the user stories in the current iteration.
-    * **Quality data**: Specify the stage of the pipeline for which the requirements quality should be traced.
+    - **Requirements query**: Select a work item query that captures the requirements, such as the user stories in the current iteration.
+    - **Quality data**: Specify the stage of the pipeline for which the requirements quality should be traced.
 
     ![Configure widget](media/requirements-traceability/configure-widget.png)
 

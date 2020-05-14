@@ -18,14 +18,14 @@ To use the Test &amp; Feedback extension in **Connected** mode you must connect
 to Azure DevOps or TFS 2015 and later.
 This automatically configures the extension based on your access level:
 
-* Users with **Basic** access can use the extension to perform exploratory
+- Users with **Basic** access can use the extension to perform exploratory
   testing, as described below.
 
-* Users with **Stakeholder** access can use the extension to respond to
+- Users with **Stakeholder** access can use the extension to respond to
   feedback requests or to provide feedback voluntarily.
   [More details](provide-stakeholder-feedback.md#direct).
 
-* Users with **Basic** or **Stakeholder** access can use extension to respond to feedback requests sent
+- Users with **Basic** or **Stakeholder** access can use extension to respond to feedback requests sent
   by the team by choosing the **Provide feedback** link in the email.
   [More details](provide-stakeholder-feedback.md#email).
 
@@ -176,6 +176,6 @@ The extension lets you create test cases as you explore your application.
 
 After you file bugs, create tasks, or create test cases, all these show up in the "Recent exploratory sessions" page in Azure Test Plans or TFS.
 
-* See how you can [view your sessions and get insights](insights-exploratory-testing.md).
+- See how you can [view your sessions and get insights](insights-exploratory-testing.md).
 
 [How do I play the video recordings I created with the extension?](reference-qa.md#recording-playback)

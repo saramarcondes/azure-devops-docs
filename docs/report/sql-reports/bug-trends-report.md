@@ -38,9 +38,9 @@ This report displays up to three line graphs, and each graph represents the roll
 
 You can filter the report in the following ways:
 
-* Change the start and end dates for the report.
+- Change the start and end dates for the report.
 
-* Filter the bugs that are counted in the report by specifying iteration and area paths or bug state, priority, or severity.
+- Filter the bugs that are counted in the report by specifying iteration and area paths or bug state, priority, or severity.
 
   For more information, see [Filtering the Report](#Changing) later in this article.
 
@@ -48,11 +48,11 @@ You can filter the report in the following ways:
 
 For the Bug Trends report to be useful and accurate, the team must perform the following activities:
 
-* Define bugs, and specify their **Iteration** and **Area** paths.
+- Define bugs, and specify their **Iteration** and **Area** paths.
 
-* Update the **State** of each bug as it is fixed, verified, and then closed.
+- Update the **State** of each bug as it is fixed, verified, and then closed.
 
-* Specify the **Priority** and **Severity** of each bug during triage.
+- Specify the **Priority** and **Severity** of each bug during triage.
 
   You can use the Triage workbook to quickly update the iteration, area, state, priority, and severity of bugs. For more information, see [Workbooks](../sharepoint-dashboards/workbooks.md).
 
@@ -100,9 +100,9 @@ An unhealthy Bug Trends report might show that the team is finding bugs more qui
 
 You can filter the Bug Trends report or change its display in the following ways:
 
-* Change the start and end dates for the report.
+- Change the start and end dates for the report.
 
-* Filter the bugs that are counted in the report by specifying iteration and area paths, state, priority, or severity.
+- Filter the bugs that are counted in the report by specifying iteration and area paths, state, priority, or severity.
 
   The following illustration shows the available filters.
 
@@ -112,9 +112,9 @@ You can filter the Bug Trends report or change its display in the following ways
 
 1.  Perform one or both of the following actions:
 
-    * In the **Iteration** and **Area** lists, select the check box of each iteration or product area to include.
+    - In the **Iteration** and **Area** lists, select the check box of each iteration or product area to include.
 
-    * In the **State**, **Priority**, or **Severity** lists, select the check box of each state, priority, and severity to include.
+    - In the **State**, **Priority**, or **Severity** lists, select the check box of each state, priority, and severity to include.
 
 2.  Click **View Report**.
 

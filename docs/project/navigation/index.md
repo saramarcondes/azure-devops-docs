@@ -43,28 +43,28 @@ Here's what you need to know to get up and running using the web portal.
 
 ::: moniker range=">= azure-devops-2019"
 
-* [**Open a service, page, or settings**](go-to-service-page.md): use to switch to a different [service or functional area](../../user-guide/services.md)
-* [**Add an artifact or team**](add-artifact-team.md): use to quickly add a work item, Git repo, build or release pipelines, or a new team
-* [**Open another project or repo**](work-across-projects.md): use to switch to a different project or access work items and pull requests defined in different projects, or items you've favorited
-* [**Open team artifacts, use breadcrumbs, selectors and directories**](use-breadcrumbs-selectors.md): use to navigate within a service, to open other artifacts or return to a root function
-* [**Work with favorites**](set-favorites.md): favorite artifacts to support quick navigation
-* [**Search box**](search-basics.md): use to find code, work items, or wiki content
-* [**Your profile menu**](../../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json): use to set personal preferences, notifications, and enable preview features
-* [**Settings**](../../organizations/settings/index.md): use to add teams, manage security, and configure other project and organization-level resources.
+- [**Open a service, page, or settings**](go-to-service-page.md): use to switch to a different [service or functional area](../../user-guide/services.md)
+- [**Add an artifact or team**](add-artifact-team.md): use to quickly add a work item, Git repo, build or release pipelines, or a new team
+- [**Open another project or repo**](work-across-projects.md): use to switch to a different project or access work items and pull requests defined in different projects, or items you've favorited
+- [**Open team artifacts, use breadcrumbs, selectors and directories**](use-breadcrumbs-selectors.md): use to navigate within a service, to open other artifacts or return to a root function
+- [**Work with favorites**](set-favorites.md): favorite artifacts to support quick navigation
+- [**Search box**](search-basics.md): use to find code, work items, or wiki content
+- [**Your profile menu**](../../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json): use to set personal preferences, notifications, and enable preview features
+- [**Settings**](../../organizations/settings/index.md): use to add teams, manage security, and configure other project and organization-level resources.
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-* [**Open a service, page, or settings**](go-to-service-page.md): use to switch to a different service or functional area
-* [**Add an artifact or team**](add-artifact-team.md): use to quickly add a work item, Git repo, build or release pipelines, or a new team
-* [**Open another project or repo, or switch to a different team**](work-across-projects.md): use to switch to a different project or browse teams
-* [**Work across projects**](work-across-projects.md): use to quickly open work assigned to you, your active pull requests, or items you've favorited
-* [**Open team artifacts, use breadcrumbs & selectors**](use-breadcrumbs-selectors.md): use to navigate within a service, to open other artifacts or return to a root function
-* [**Work with favorites**](set-favorites.md): favorite artifacts to support quick navigation
-* [**Search box**](search-basics.md): use to find code, work items, or wiki content
-* [**Your profile menu**](../../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json): use to set personal preferences, notifications, and enable preview features
-* [**Settings**](../../organizations/settings/index.md): use to add teams, manage security, and configure other project and organization-level resources.
+- [**Open a service, page, or settings**](go-to-service-page.md): use to switch to a different service or functional area
+- [**Add an artifact or team**](add-artifact-team.md): use to quickly add a work item, Git repo, build or release pipelines, or a new team
+- [**Open another project or repo, or switch to a different team**](work-across-projects.md): use to switch to a different project or browse teams
+- [**Work across projects**](work-across-projects.md): use to quickly open work assigned to you, your active pull requests, or items you've favorited
+- [**Open team artifacts, use breadcrumbs & selectors**](use-breadcrumbs-selectors.md): use to navigate within a service, to open other artifacts or return to a root function
+- [**Work with favorites**](set-favorites.md): favorite artifacts to support quick navigation
+- [**Search box**](search-basics.md): use to find code, work items, or wiki content
+- [**Your profile menu**](../../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json): use to set personal preferences, notifications, and enable preview features
+- [**Settings**](../../organizations/settings/index.md): use to add teams, manage security, and configure other project and organization-level resources.
 
 ::: moniker-end
 
@@ -160,8 +160,8 @@ Although you can access source code, work items, and builds from both clients, s
 
 ## Resources
 
-* [Manage projects](../../organizations/projects/index.md)
-* [Project & Organizational Settings](../../organizations/settings/index.md)
+- [Manage projects](../../organizations/projects/index.md)
+- [Project & Organizational Settings](../../organizations/settings/index.md)
 
 <!---
 **Help**: use to quickly access the most relevant topics for the page you're on.

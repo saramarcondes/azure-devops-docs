@@ -14,9 +14,9 @@ When you have many pull requests to review, understanding where you should take 
 
 We have added more filters to the pull request details page so you review them faster:
 
-* Comment status: Active (default), All, Pending, Resolved, As designed, Won't fix, and Closed.
-* Commented by: Filter to comments left by a specific person.
-* File types: Show all files (default), and Show only the files that have been commented on.
+- Comment status: Active (default), All, Pending, Resolved, As designed, Won't fix, and Closed.
+- Commented by: Filter to comments left by a specific person.
+- File types: Show all files (default), and Show only the files that have been commented on.
 
 > [!div class="mx-imgBorder"] > ![img](../../media/167-repos-1-0.png)
 

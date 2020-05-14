@@ -77,6 +77,6 @@ You can create subscriptions using the following templates for yourself, a team,
 
 ## Related articles
 
-* [About notifications](about-notifications.md)
-* [Manage personal notifications](manage-team-notifications.md)
-* [Unsubscribe from a notification](unsubscribe-default-notification.md)
+- [About notifications](about-notifications.md)
+- [Manage personal notifications](manage-team-notifications.md)
+- [Unsubscribe from a notification](unsubscribe-default-notification.md)

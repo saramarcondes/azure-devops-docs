@@ -25,9 +25,9 @@ The `Control` element `AttachmentsControl` `Type` attribute lets you enable user
 **Attachments control**
 
 ```xml
-<Tab Label="Attachments">  
-      <Control Type="AttachmentsControl" LabelPosition="Top" />  
-</Tab>  
+<Tab Label="Attachments">
+      <Control Type="AttachmentsControl" LabelPosition="Top" />
+</Tab>
 ```
 
 ![Attach files to a work item](media/procguid_attachment.png "ProcGuid_Attachment")
@@ -45,6 +45,6 @@ You can control the spacing and size of the attachment control by specifying the
 
 ## Related articles
 
-* [Customize your work tracking experience](../customize-work.md)
-* [Control](control-xml-element-reference.md)
-* [WebLayout and Control elements](weblayout-xml-elements.md)
+- [Customize your work tracking experience](../customize-work.md)
+- [Control](control-xml-element-reference.md)
+- [WebLayout and Control elements](weblayout-xml-elements.md)

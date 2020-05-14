@@ -21,4 +21,4 @@ Information about an individual contribution that contributes one or more servic
 
 ### Members
 
-* `getInstance`: (objectId: string, context: any): IPromise&lt;T&gt;. Get the instance of an object registered by this contribution
+- `getInstance`: (objectId: string, context: any): IPromise&lt;T&gt;. Get the instance of an object registered by this contribution

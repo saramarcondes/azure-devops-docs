@@ -20,11 +20,11 @@ In this article you'll learn:
 
 > [!div class="checklist"]
 >
-> * About the OData Aggregation Extension
-> * How to generate a simple count of work items
-> * How to use the Aggregation Extension for OData
-> * How to group and filter aggregated results
-> * How to aggregate data to generate a Cumulative Flow diagram
+> - About the OData Aggregation Extension
+> - How to generate a simple count of work items
+> - How to use the Aggregation Extension for OData
+> - How to group and filter aggregated results
+> - How to aggregate data to generate a Cumulative Flow diagram
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
@@ -135,10 +135,10 @@ Now that you've seen how to do simple counts, let's review how to trigger aggreg
 
 Where:
 
-* {entitySetName} is the entity that needs to be queried for
-* {columnToAggregate} is the aggregation column
-* {aggregationType} will specify the type of aggregation used
-* {newColumnName} specifies the name of the column having values after aggregation.
+- {entitySetName} is the entity that needs to be queried for
+- {columnToAggregate} is the aggregation column
+- {aggregationType} will specify the type of aggregation used
+- {newColumnName} specifies the name of the column having values after aggregation.
 
 <a id="apply-extension" />
 
@@ -386,9 +386,9 @@ This returns a result similar to the following, which you can then use directly 
 
 Let's take a look at what this query actually does:
 
-* Filters the data to a specific team
-* Filters the data to a specific backlog
-* Returns a count of work items.
+- Filters the data to a specific team
+- Filters the data to a specific backlog
+- Returns a count of work items.
 
 When refreshing Power BI or Excel, the fewer rows required, the faster the refresh occurs.
 
@@ -398,5 +398,5 @@ When refreshing Power BI or Excel, the fewer rows required, the faster the refre
 
 ## Related articles
 
-* [Query your work tracking data using OData Analytics](wit-analytics.md)
-* [OData Extension for Data Aggregation Version 4.0](https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)
+- [Query your work tracking data using OData Analytics](wit-analytics.md)
+- [OData Extension for Data Aggregation Version 4.0](https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)

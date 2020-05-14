@@ -22,8 +22,7 @@ This article shows you how to create a report that shows a pipeline's daily pass
 
 The following image shows an example of such a trend.
 
-> [!div class="mx-imgBorder"]
-> ![Sample - Pipelines Pass rate trend - Report](media/odatapowerbi-pipelines/passratetrend-report.png)
+> [!div class="mx-imgBorder"] > ![Sample - Pipelines Pass rate trend - Report](media/odatapowerbi-pipelines/passratetrend-report.png)
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
@@ -163,18 +162,15 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 
 1.  Choose the expand button
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI + OData - Choose expand button](media/odatapowerbi-pipelines/passratetrend-expand1.png)
+    > [!div class="mx-imgBorder"] > ![Power BI + OData - Choose expand button](media/odatapowerbi-pipelines/passratetrend-expand1.png)
 
 1.  Select the checkbox "(Select All Columns)" to expand
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI + OData - Select all columns](media/odatapowerbi-pipelines/passratetrend-expand2.png)
+    > [!div class="mx-imgBorder"] > ![Power BI + OData - Select all columns](media/odatapowerbi-pipelines/passratetrend-expand2.png)
 
 1.  The table now contains the expanded entity **CompletedOn.Date**
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI + OData - Expanded entity](media/odatapowerbi-pipelines/passratetrend-expand3.png)
+    > [!div class="mx-imgBorder"] > ![Power BI + OData - Expanded entity](media/odatapowerbi-pipelines/passratetrend-expand3.png)
 
 ### Change column type
 
@@ -182,13 +178,11 @@ The query doesn't return all the columns in the format in which you can directly
 
 1.  Change the type of columns **PassRate, FailRate** and **PartiallySuccessfulRate** to **Decimal Number**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI + OData - change column type](media/odatapowerbi-pipelines/passratetrend-changecolumntype1.png)
+    > [!div class="mx-imgBorder"] > ![Power BI + OData - change column type](media/odatapowerbi-pipelines/passratetrend-changecolumntype1.png)
 
 1.  Change the type of column **TotalCount** to **Whole Number**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI + OData - change column type](media/odatapowerbi-pipelines/passratetrend-changecolumntype2.png)
+    > [!div class="mx-imgBorder"] > ![Power BI + OData - change column type](media/odatapowerbi-pipelines/passratetrend-changecolumntype2.png)
 
 ### Rename fields and query, then Close & Apply
 
@@ -196,18 +190,15 @@ When finished, you may choose to rename columns.
 
 1.  Right-click a column header and select **Rename...**
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI Rename Columns](media/odatapowerbi-pipelines/passratetrend-renamerightclick.png)
+    > [!div class="mx-imgBorder"] > ![Power BI Rename Columns](media/odatapowerbi-pipelines/passratetrend-renamerightclick.png)
 
 1.  You also may want to rename the query from the default **Query1**, to something more meaningful.
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI Rename Query](media/odatapowerbi-pipelines/renamequery.png)
+    > [!div class="mx-imgBorder"] > ![Power BI Rename Query](media/odatapowerbi-pipelines/renamequery.png)
 
 1.  Once done, choose **Close & Apply** to save the query and return to Power BI.
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI Close & Apply](media/odatapowerbi-pipelines/closeandapply.png)
+    > [!div class="mx-imgBorder"] > ![Power BI Close & Apply](media/odatapowerbi-pipelines/closeandapply.png)
 
 ## Create the report
 
@@ -215,21 +206,19 @@ Power BI shows you the fields you can report on.
 
 > [!NOTE]  
 > The example below assumes that no one renamed any columns.
-> [!div class="mx-imgBorder"]
-> ![Sample - Pipelines pass rate trend - Fields](media/odatapowerbi-pipelines/passratetrend-fields.png)
+> [!div class="mx-imgBorder"] > ![Sample - Pipelines pass rate trend - Fields](media/odatapowerbi-pipelines/passratetrend-fields.png)
 
 For a simple report, do the following steps:
 
 1.  Select Power BI Visualization **Line Chart**.
 1.  Add the field "CompletedOn.Date" to **Axis**.
-    * Right-click "CompletedOn.Date" and select "CompletedOn.Date", rather than Date Hierarchy.
+    - Right-click "CompletedOn.Date" and select "CompletedOn.Date", rather than Date Hierarchy.
 1.  Add the field "PassRate" to **Values**.
-    * Right-click "PassRate" field and ensure **Sum** is selected.
+    - Right-click "PassRate" field and ensure **Sum** is selected.
 
 Your report should look like this.
 
-> [!div class="mx-imgBorder"]
-> ![Sample - Pipelines Pass rate trend - Report](media/odatapowerbi-pipelines/passratetrend-report.png)
+> [!div class="mx-imgBorder"] > ![Sample - Pipelines Pass rate trend - Report](media/odatapowerbi-pipelines/passratetrend-report.png)
 
 ## Additional queries
 
@@ -301,9 +290,9 @@ PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)
 
 You may want to view the pass rate trend of a pipeline for a particular **branch** only. To create the report, follow the below additional steps along with what is defined previously in this article.
 
-* Expand Branch into Branch.BranchName
-* Select Power BI Visualization **Slicer** and add the field Branch.BranchName to the slicer's **Field**
-* Select the pipeline from the slicer for which you need to see the outcome summary
+- Expand Branch into Branch.BranchName
+- Select Power BI Visualization **Slicer** and add the field Branch.BranchName to the slicer's **Field**
+- Select the pipeline from the slicer for which you need to see the outcome summary
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -365,8 +354,8 @@ PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)
 
 You may want to view the pass rate trend of a pipeline for a particular **Build Reason** (Manual / BatchedCI, Pull Request etc.) only. To create the report, follow these additional steps along with what is defined previously in this article.
 
-* Select Power BI Visualization **Slicer** and add the field RunReason to the slicer's **Field**
-* Select the pipeline from the slicer for which you need to see the outcome summary.
+- Select Power BI Visualization **Slicer** and add the field RunReason to the slicer's **Field**
+- Select the pipeline from the slicer for which you need to see the outcome summary.
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -428,9 +417,9 @@ PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)
 
 You may want to view the pass rate trend for all the pipelines of the project in a single report. To create the report, follow the below additional steps along with what is defined previously in this article.
 
-* Expand Pipeline into Pipeline.PipelineName
-* Select Power BI Visualization **Slicer** and add the field Pipeline.PipelineName to the slicer's **Field**
-* Select the Build pipeline from the slicer for which you need to see the outcome summary
+- Expand Pipeline into Pipeline.PipelineName
+- Select Power BI Visualization **Slicer** and add the field Pipeline.PipelineName to the slicer's **Field**
+- Select the Build pipeline from the slicer for which you need to see the outcome summary
 
 Refer [Outcome summary for all pipelines](sample-pipelines-allpipelines.md) sample report which has detailed similar steps as required here.
 

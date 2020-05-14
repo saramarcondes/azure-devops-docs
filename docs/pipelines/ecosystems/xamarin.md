@@ -72,12 +72,12 @@ See [Sign your mobile Android app during CI](../apps/mobile/app-signing.md#sign-
 
 See [Android](android.md) guidance for information about:
 
-* Signing and aligning an Android APK
-* Testing on the Android Emulator
-* Testing on Azure-hosted devices
-* Retaining build artifacts with the build record
-* Distributing through App Center
-* Distributing through Google Play
+- Signing and aligning an Android APK
+- Testing on the Android Emulator
+- Testing on Azure-hosted devices
+- Retaining build artifacts with the build record
+- Distributing through App Center
+- Distributing through Google Play
 
 ## Build a Xamarin.iOS app
 
@@ -192,7 +192,7 @@ jobs:
 
 See [Xcode](xcode.md) guidance for information about:
 
-* Testing on Azure-hosted devices
-* Retaining build artifacts with the build record
-* Distributing through App Center
-* Distributing through the Apple App Store
+- Testing on Azure-hosted devices
+- Retaining build artifacts with the build record
+- Distributing through App Center
+- Distributing through the Apple App Store

@@ -25,22 +25,22 @@ Read this article to learn how to:
 
 > [!div class="checklist"]
 >
-> * Add the Azure Boards app to your team in Microsoft Teams
-> * Link and unlink your Azure Boards project to the Azure Boards app
-> * Set up subscriptions to work item related events in your Teams channel
-> * Create work items from your Teams channel
-> * Monitor work item activity in your Teams channel
+> - Add the Azure Boards app to your team in Microsoft Teams
+> - Link and unlink your Azure Boards project to the Azure Boards app
+> - Set up subscriptions to work item related events in your Teams channel
+> - Create work items from your Teams channel
+> - Monitor work item activity in your Teams channel
 
 ## Prerequisites
 
-* To create a work item, you must be a contributor to the Azure Boards project. If you don't have a project yet, you can sign up and create a project. For details, see [Start using Azure Boards](../get-started/index.md).
-* To create subscriptions in a Teams channel for work item events, you must be a member of the Azure Boards Project Administrators group or Team Administrators group. To get added, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md) or [Add Team Administrator](../../organizations/settings/add-team-administrator.md).
-* To receive notifications, the **Third party application access via OAuth** setting must be enabled for the organization. See [Change application access policies for your organization](../../organizations/accounts/change-application-access-policies.md)
+- To create a work item, you must be a contributor to the Azure Boards project. If you don't have a project yet, you can sign up and create a project. For details, see [Start using Azure Boards](../get-started/index.md).
+- To create subscriptions in a Teams channel for work item events, you must be a member of the Azure Boards Project Administrators group or Team Administrators group. To get added, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md) or [Add Team Administrator](../../organizations/settings/add-team-administrator.md).
+- To receive notifications, the **Third party application access via OAuth** setting must be enabled for the organization. See [Change application access policies for your organization](../../organizations/accounts/change-application-access-policies.md)
 
 > [!NOTE]
 >
-> * You can link the Azure Boards app for Microsoft Teams only to a project hosted on Azure DevOps Services at this time.
-> * Notifications are currently not supported inside direct messages.
+> - You can link the Azure Boards app for Microsoft Teams only to a project hosted on Azure DevOps Services at this time.
+> - Notifications are currently not supported inside direct messages.
 
 ## Add the Azure Boards app to Microsoft Teams
 
@@ -91,7 +91,7 @@ In case the desired area path doesn't appear in the Area path dropdown menu, fol
 
 You can add areas that your team works on to the channel so that they are always available for creating work items and subscriptions.
 
-* Use the following command to add area paths from your project to the Teams channel.
+- Use the following command to add area paths from your project to the Teams channel.
 
       	```
       	@azure boards addAreapath [area path]
@@ -105,13 +105,13 @@ You can add areas that your team works on to the channel so that they are always
 
       	![add areapath success message](./media/integrations-teams/add-areapath.png)
 
-* If you choose project name as your area path, then you will receive notifications for all the area paths in the project. It is logically equivalent to choosing 'Any' area path.
+- If you choose project name as your area path, then you will receive notifications for all the area paths in the project. It is logically equivalent to choosing 'Any' area path.
 
 ## Create a work item with a command
 
 With Azure Boards app you can create work items from your channel. The app supports custom work items as well.
 
-* To create a work item, use `@azure boards create`.
+- To create a work item, use `@azure boards create`.
 
       	![Create work item using command](./media/integrations-teams/create-work-item-command.png)
 
@@ -119,9 +119,9 @@ With Azure Boards app you can create work items from your channel. The app suppo
 
 Often, discussions in a channel necessitates creation of work items. You can use message actions to create a work item. The selected message is prefilled in the description section of the work item. A link back to the conversation in the channel is stored in the Discussion section of the newly created work item, giving users access to the discussion that led to the creation of the work item.
 
-* To create work items using message actions
+- To create work items using message actions
 
-      	> [!div class="mx-imgBorder"]  
+      	> [!div class="mx-imgBorder"]
       	> ![Create work item using message action](./media/integrations-teams/message-action-1.png)
 
       	> ![Create work item using message action](./media/integrations-teams/message-action-2.png)
@@ -161,7 +161,7 @@ Unlinking a project deletes all the subscriptions along with added area paths fr
 
 ## Threaded notifications
 
-* To logically link a set of related notifications and also to reduce the space occupied by notifications in a channel, notifications are threaded. All notifications linked to a particular work item will be linked together.
+- To logically link a set of related notifications and also to reduce the space occupied by notifications in a channel, notifications are threaded. All notifications linked to a particular work item will be linked together.
 
 ### Compact view of threaded notifications
 
@@ -202,6 +202,6 @@ If these steps don't resolve your authentication issue, reach out to us at [Deve
 
 ## Related articles
 
-* [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
-* [Azure Pipelines with Microsoft Teams](https://aka.ms/AzurePipelinesTeamsIntegration)
-* [Azure Repos with Microsoft Teams](https://aka.ms/AzureReposTeamsIntegration)
+- [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
+- [Azure Pipelines with Microsoft Teams](https://aka.ms/AzurePipelinesTeamsIntegration)
+- [Azure Repos with Microsoft Teams](https://aka.ms/AzureReposTeamsIntegration)

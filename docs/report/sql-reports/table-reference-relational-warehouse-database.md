@@ -23,9 +23,9 @@ The data in the warehouse is stored in fact and dimension tables. This pattern f
 
 Some other common patterns occur in the warehouse:
 
-* All fact tables reference DimTeamProject, because all data in Azure DevOps is organized by projects and project collections. Some dimensions also reference the DimTeamProject so that you can more easily use them as project-filter parameters in your reports.
-* All fact tables reference DimDate to indicate the date on which the fact occurred.
-* Many fact tables reference DimPerson, sometimes more than once. For example, the work item facts reference DimPerson to indicate to whom a work item is assigned to and who changed it most recently.
+- All fact tables reference DimTeamProject, because all data in Azure DevOps is organized by projects and project collections. Some dimensions also reference the DimTeamProject so that you can more easily use them as project-filter parameters in your reports.
+- All fact tables reference DimDate to indicate the date on which the fact occurred.
+- Many fact tables reference DimPerson, sometimes more than once. For example, the work item facts reference DimPerson to indicate to whom a work item is assigned to and who changed it most recently.
 
 <a name="Builds"></a>
 

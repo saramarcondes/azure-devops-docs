@@ -70,11 +70,11 @@ You can view all of your pull requests in your organization, across all projects
 
 Create a new pull request from:
 
-* [Pushed feature branches to your Git repo](#after-pushing-a-branch)
-* [The **Development** section in a linked work item](#from-a-linked-work-item)
-* [From the Pull Requests page on the web](#from-the-pull-requests-page-on-the-web)
-* [Team Explorer in Visual Studio](#from-visual-studio)
-* [Using the Azure DevOps Services CLI](#from-the-azure-devops-services-cli)
+- [Pushed feature branches to your Git repo](#after-pushing-a-branch)
+- [The **Development** section in a linked work item](#from-a-linked-work-item)
+- [From the Pull Requests page on the web](#from-the-pull-requests-page-on-the-web)
+- [Team Explorer in Visual Studio](#from-visual-studio)
+- [Using the Azure DevOps Services CLI](#from-the-azure-devops-services-cli)
 
 ### After pushing a branch
 
@@ -162,20 +162,20 @@ For more information about working with the Azure DevOps Services CLI, see [Get 
 
 Sometimes you may want to create a pull request but you aren't ready to send it to the entire team for review. A draft pull request indicates that a pull request is a work in progress. You don't have to resort to title prefixes such as WIP or DO NOT MERGE. When the pull request is ready for review, you can publish it, and begin or resume the full review process.
 
-* [Draft pull request differences](#draft-pull-request-differences)
-* [Create a draft pull request](#create-a-draft-pull-request)
-* [Publish a draft pull request](#publish-a-draft-pull-request)
-* [Mark as draft](#mark-as-draft)
+- [Draft pull request differences](#draft-pull-request-differences)
+- [Create a draft pull request](#create-a-draft-pull-request)
+- [Publish a draft pull request](#publish-a-draft-pull-request)
+- [Mark as draft](#mark-as-draft)
 
 ### Draft pull request differences
 
 Draft pull requests have the following differences from published pull requests:
 
-* Build validation policies are enabled but not run automatically. They can be manually queued by selecting the **...** menu beside the build in the pull request.
-* Voting is disabled while in draft mode.
-* Required reviewers aren't automatically added.
-* Notifications are sent while in draft mode, but only to reviewers that you explicitly add to the draft pull request.
-* Draft pull requests are displayed in the pull requests list with a special badge.
+- Build validation policies are enabled but not run automatically. They can be manually queued by selecting the **...** menu beside the build in the pull request.
+- Voting is disabled while in draft mode.
+- Required reviewers aren't automatically added.
+- Notifications are sent while in draft mode, but only to reviewers that you explicitly add to the draft pull request.
+- Draft pull requests are displayed in the pull requests list with a special badge.
 
   ![Draft PRs in list](media/pull-requests/draft-pull-request-badge.png)
 
@@ -371,11 +371,11 @@ Additional options are available in the comment resolution drop-down list.
 
 ![Reviewing comments in Azure Repos pull requests](./media/pull-requests/pr-comment-resolution.png)
 
-* **Active**: Comment is still under review.
-* **Pending**: The issue in this comment will be addressed, but isn't fixed yet.
-* **Resolved**: The issue brought up in this comment has been fixed.
-* **Won't Fix**: The suggestion in the comment is noted, but won't make changes in this pull request to address it.
-* **Closed**: Discussion for this comment is closed.
+- **Active**: Comment is still under review.
+- **Pending**: The issue in this comment will be addressed, but isn't fixed yet.
+- **Resolved**: The issue brought up in this comment has been fixed.
+- **Won't Fix**: The suggestion in the comment is noted, but won't make changes in this pull request to address it.
+- **Closed**: Discussion for this comment is closed.
 
 ### Vote on the changes
 
@@ -384,11 +384,11 @@ The default option is **Approve**, but you can select other options from the dro
 
 ![Pull request voting options](./media/pull-requests/pr-voting-options.png)
 
-* **Approve**: Agree with the proposed changes in the pull request as-is.
-* **Approve with suggestions**: Agree with the pull request, but provide optional suggestions to improve the code.
-* **Wait for author**: Don't approve the changes, and ask the author to review your comments. The author should let you know to review the code again after they address your concerns.
-* **Reject**: The changes aren't acceptable. If you vote this way, leave a comment in the pull request to explain why.
-* **Reset feedback**: Choose **Reset feedback** to remove your vote.
+- **Approve**: Agree with the proposed changes in the pull request as-is.
+- **Approve with suggestions**: Agree with the pull request, but provide optional suggestions to improve the code.
+- **Wait for author**: Don't approve the changes, and ask the author to review your comments. The author should let you know to review the code again after they address your concerns.
+- **Reject**: The changes aren't acceptable. If you vote this way, leave a comment in the pull request to explain why.
+- **Reset feedback**: Choose **Reset feedback** to remove your vote.
 
 The number of required approvals in a pull request can be set from the [branch policy](branch-policies.md) for the branch. A pull request that meets the required number of approvals can be completed. Even if other reviewers reject the changes, the pull request is completed.
 
@@ -417,9 +417,9 @@ For most teams, nearly all pull requests target the same branch, such as `master
 
     ![Complete button for the pull request with its drop-down options](./media/pull-requests/complete_pr_options.png)
 
-    * **Complete**: Complete the pull request now and merge the changes to the target branch.
-    * **Set auto-complete**: If you have branch policies, you can choose **Set auto-complete** to configure the pull request to close once it meets all branch policies.
-    * **Abandon**: Close the pull request without merging the changes.
+    - **Complete**: Complete the pull request now and merge the changes to the target branch.
+    - **Set auto-complete**: If you have branch policies, you can choose **Set auto-complete** to configure the pull request to close once it meets all branch policies.
+    - **Abandon**: Close the pull request without merging the changes.
 
 1.  In **Complete pull request**, enter the message for the [merge commit](merging.md) and update the pull request description.
 
@@ -427,10 +427,10 @@ For most teams, nearly all pull requests target the same branch, such as `master
 
 1.  Select any of the following options:
 
-    * **Complete linked work items after merging** to complete any linked work items.
-    * **Delete `<branch name>` after merging** to delete the source branch from the pull request.
-    * **Squash changes when merging** to [squash merge](merging-with-squash.md) your pull request.
-    * **Override branch policies and enable merge** to force a branch to merge even if it doesn't satisfy all branch policies. This option is only available if you have [Exempt from policy enforcement](branch-policies.md#bypass-branch-policies) permissions.
+    - **Complete linked work items after merging** to complete any linked work items.
+    - **Delete `<branch name>` after merging** to delete the source branch from the pull request.
+    - **Squash changes when merging** to [squash merge](merging-with-squash.md) your pull request.
+    - **Override branch policies and enable merge** to force a branch to merge even if it doesn't satisfy all branch policies. This option is only available if you have [Exempt from policy enforcement](branch-policies.md#bypass-branch-policies) permissions.
 
 1.  Select **Complete merge**.
 
@@ -478,15 +478,15 @@ Subscribe to email alerts to get notified for changes to your pull requests.
 
 ![Settings for pull request emails](./media/pull-requests/pr-notifications-new-nav.png)
 
-* Choose **New subscription** to subscribe to additional notifications.
+- Choose **New subscription** to subscribe to additional notifications.
 
   ![Subscribe to emails](./media/pull-requests/new-subscription-new-nav.png)
 
-* To edit a notification, select **...** for the notification and choose **View** to edit the subscription.
+- To edit a notification, select **...** for the notification and choose **View** to edit the subscription.
 
   ![Change subscription](./media/pull-requests/view-pr-notifications.png)
 
-* To opt-out of a notification, set the **State** to **Off**.
+- To opt-out of a notification, set the **State** to **Off**.
 
   ![Opt out of emails](./media/pull-requests/opt-out-notifications.png)
 
@@ -498,15 +498,15 @@ Select the settings button while you have your project open to bring up the proj
 
 ![Open up the administrative area of the web portal for your project](media/pull-requests/gear_icon_settings.png)
 
-* Select the **Notifications** tab to view your notification settings, and choose **New subscription** to subscribe to additional notifications.
+- Select the **Notifications** tab to view your notification settings, and choose **New subscription** to subscribe to additional notifications.
 
   ![Subscribe to emails](./media/pull-requests/pr-notifications.png)
 
-* To edit a notification, select **...** for the notification and choose **View** to edit the subscription.
+- To edit a notification, select **...** for the notification and choose **View** to edit the subscription.
 
   ![Change subscription](./media/pull-requests/view-pr-notifications.png)
 
-* To opt-out of a notification, set the **State** to **Off**.
+- To opt-out of a notification, set the **State** to **Off**.
 
   ![Opt out of emails](./media/pull-requests/opt-out-notifications.png)
 

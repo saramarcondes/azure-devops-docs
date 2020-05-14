@@ -15,12 +15,12 @@ Module path: `TFS/Work/Contracts`
 
 ### Members
 
-* `clauses`: [FilterClause](../../../TFS/Work/Contracts/FilterClause.md)[].
+- `clauses`: [FilterClause](../../../TFS/Work/Contracts/FilterClause.md)[].
 
-* `filter`: string.
+- `filter`: string.
 
-* `isEnabled`: string.
+- `isEnabled`: string.
 
-* `name`: string.
+- `name`: string.
 
-* `settings`: [attribute](../../../TFS/Work/Contracts/attribute.md).
+- `settings`: [attribute](../../../TFS/Work/Contracts/attribute.md).

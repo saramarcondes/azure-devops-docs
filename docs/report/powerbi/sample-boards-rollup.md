@@ -18,8 +18,7 @@ ms.date: 08/07/2019
 
 This article shows you how to generate the rollup count of User Stories and total Story Points for a given set of Features. An example is shown in the following image.
 
-> [!div class="mx-imgBorder"]
-> ![Sample - Boards - Rollup - Report](media/odatapowerbi-featurerollup-report.png)
+> [!div class="mx-imgBorder"] > ![Sample - Boards - Rollup - Report](media/odatapowerbi-featurerollup-report.png)
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
@@ -42,7 +41,7 @@ let
                 &"$apply=filter(WorkItemType eq 'User Story')"
                 &"/aggregate($count as CountOfUserStories, StoryPoints with sum as TotalStoryPoints)"
             &")",
-        null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4])  
+        null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4])
 in
     Source
 ```
@@ -71,7 +70,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
-* {areapath} - Your Area Path. Example format: Project\Level1\Level2
+- {areapath} - Your Area Path. Example format: Project\Level1\Level2
 
 ### Query breakdown
 
@@ -101,18 +100,15 @@ The following table describes each part of the query.
 
 1.  Choose the expand button, and select the columns to report on:
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI + OData - expanding an entity column](media/odatapowerbi-expanddescendants.png)
+    > [!div class="mx-imgBorder"] > ![Power BI + OData - expanding an entity column](media/odatapowerbi-expanddescendants.png)
 
 2.  Check all the columns and choose **OK**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI + OData - expanding Descendants](media/odatapowerbi-expandrollup.png)
+    > [!div class="mx-imgBorder"] > ![Power BI + OData - expanding Descendants](media/odatapowerbi-expandrollup.png)
 
 3.  The Descendants entity is flattened to the selected columns:
 
-    > [!div class="mx-imgBorder"]
-    > ![Power BI + OData - expanded Descendants](media/odatapowerbi-expandedrollup.png)
+    > [!div class="mx-imgBorder"] > ![Power BI + OData - expanded Descendants](media/odatapowerbi-expandedrollup.png)
 
 ### Replace null values in rollup fields
 
@@ -133,24 +129,22 @@ Power BI shows you the fields you can report on.
 > [!NOTE]  
 > The example below assumes that no one renamed any columns.
 
-> [!div class="mx-imgBorder"]
-> ![Sample - Boards - Rollup - Fields](media/odatapowerbi-featurerollup-fields.png)
+> [!div class="mx-imgBorder"] > ![Sample - Boards - Rollup - Fields](media/odatapowerbi-featurerollup-fields.png)
 
 For a simple report, do the following steps:
 
 1.  Choose the Power BI Visualization **Table**.
 1.  Add the following fields to **Values**
-    * WorkItemId
-    * WorkItemType
-    * Title
-    * State
-    * Descendants.CountOfUserStories
-    * Descendants.TotalStoryPoints
+    - WorkItemId
+    - WorkItemType
+    - Title
+    - State
+    - Descendants.CountOfUserStories
+    - Descendants.TotalStoryPoints
 
 The example report displays:
 
-> [!div class="mx-imgBorder"]
-> ![Sample - Boards - Rollup - Report](media/odatapowerbi-featurerollup-report.png)
+> [!div class="mx-imgBorder"] > ![Sample - Boards - Rollup - Report](media/odatapowerbi-featurerollup-report.png)
 
 [!INCLUDE [temp](includes/sample-multipleteams.md)]
 
@@ -179,7 +173,7 @@ let
                 &"$apply=filter(WorkItemType eq 'User Story')"
                 &"/aggregate($count as CountOfUserStories, StoryPoints with sum as TotalStoryPoints)"
             &")",
-        null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4])  
+        null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4])
 in
     Source
 ```
@@ -225,7 +219,7 @@ let
                 &"$apply=filter(WorkItemType eq 'User Story')"
                 &"/aggregate(StoryPoints with sum as TotalStoryPoints)"
             &")",
-        null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4])  
+        null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4])
 in
     Source
 ```
@@ -269,7 +263,7 @@ let
                 &"$apply=filter(WorkItemType eq 'Task')"
                 &"/aggregate(RemainingWork with sum as TotalRemainingWork)"
             &")",
-        null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4])  
+        null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4])
 in
     Source
 ```
@@ -313,7 +307,7 @@ let
                 &"$apply=filter(WorkItemType eq 'Bug')"
                 &"/aggregate($count as CountOfBugs)"
             &")",
-        null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4])  
+        null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4])
 in
     Source
 ```

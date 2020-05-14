@@ -55,9 +55,9 @@ To learn more, see [Add and manage dashboards](../../report/dashboards/dashboard
 
 ## Related articles
 
-* [Visibility across teams](visibility-across-teams.md)
-* [Agile culture and scale](agile-culture.md)
-* [Practices that scale](practices-that-scale.md)
-* [Agile culture](/azure/devops/learn/agile/agile-culture)
-* [Scale Agile to large teams](/azure/devops/learn/agile/scale-agile-large-teams)
-* [Creating productive teams](/azure/devops/learn/agile/productive-teams)
+- [Visibility across teams](visibility-across-teams.md)
+- [Agile culture and scale](agile-culture.md)
+- [Practices that scale](practices-that-scale.md)
+- [Agile culture](/azure/devops/learn/agile/agile-culture)
+- [Scale Agile to large teams](/azure/devops/learn/agile/scale-agile-large-teams)
+- [Creating productive teams](/azure/devops/learn/agile/productive-teams)

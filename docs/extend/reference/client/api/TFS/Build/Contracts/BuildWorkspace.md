@@ -16,4 +16,4 @@ Module path: `TFS/Build/Contracts`
 
 ### Members
 
-* `mappings`: [MappingDetails](./MappingDetails.md)[].
+- `mappings`: [MappingDetails](./MappingDetails.md)[].

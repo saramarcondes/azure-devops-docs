@@ -42,9 +42,9 @@ The data that appears in the report is derived from the data warehouse. The repo
 
 You can filter the report in the following ways:
 
-* Change the start and end dates for the report.
+- Change the start and end dates for the report.
 
-* Filter the test cases that are counted in the report by specifying area paths, priority, and state.
+- Filter the test cases that are counted in the report by specifying area paths, priority, and state.
 
   For more information, see [Filtering the Report](#Changing) later in this article.
 
@@ -52,9 +52,9 @@ You can filter the report in the following ways:
 
 For the Test Case Readiness report to be useful and accurate, the team must perform the following activities:
 
-* Define test cases, and specify the **Iteration** and **Area** paths for each test case.
+- Define test cases, and specify the **Iteration** and **Area** paths for each test case.
 
-* Update the state of each test case as it progresses from **Design** to **Ready** to **Closed**.
+- Update the state of each test case as it progresses from **Design** to **Ready** to **Closed**.
 
 ## <a name="Interpreting"></a> Interpreting the report
 
@@ -64,13 +64,13 @@ The Test Case Readiness report displays the number of all test cases, grouped by
 
 You can review the report to determine the team's progress within an iteration or over time. For example, you can answer these questions:
 
-* How many test cases are ready to be run?
+- How many test cases are ready to be run?
 
-* How many test cases must the team still write and review?
+- How many test cases must the team still write and review?
 
-* When will all the test cases be ready to run?
+- When will all the test cases be ready to run?
 
-* Will all the test cases be ready to run by the end of the iteration?
+- Will all the test cases be ready to run by the end of the iteration?
 
 ### Healthy version of report
 
@@ -86,11 +86,11 @@ The following illustration shows an unhealthy version of the Test Case Readiness
 
 An unhealthy Test Case Readiness report shows one or more of the following indicators:
 
-* **No test cases are ready to be run**.
+- **No test cases are ready to be run**.
 
   When all test cases remain in a design state for a long time, some issue is blocking progress. You might want to investigate the cause of the blockage.
 
-* **The number of test cases does not appear sufficient**.
+- **The number of test cases does not appear sufficient**.
 
   The number of test cases that are defined for a project should be equal to or larger than the number of user stories that the team is implementing.
 
@@ -110,12 +110,12 @@ You can filter the Test Case Readiness report to show only those test cases that
 
 1.  Perform one or both of the following actions:
 
-    * In the **Area** list, select the check box of each product area to include.
+    - In the **Area** list, select the check box of each product area to include.
 
-    * In the **State** and **Priority** lists, select the check box of each state and priority to include.
+    - In the **State** and **Priority** lists, select the check box of each state and priority to include.
 
 2.  Click **View Report**.
 
 ## Related notes
 
-* [Reporting Services Reports](reporting-services-reports.md)
+- [Reporting Services Reports](reporting-services-reports.md)

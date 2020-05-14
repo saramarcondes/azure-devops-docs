@@ -25,13 +25,13 @@ The `Control` element provides several data-type values for the `Type` attribute
 
 You can control the label name, position, size of text box, and other display controls of plain text, integer, number, date, and tree path work item fields on your work item form. To display these fields, you must specify the correct `Control` element `Type` attribute, from the following options:
 
-* `FieldControl`: Used to display plain textual or numeric fields and lists of values for fields that have a field type of `Boolean`, `String`, `Identity`, `Integer`, `Double`, and `PlainText`.
+- `FieldControl`: Used to display plain textual or numeric fields and lists of values for fields that have a field type of `Boolean`, `String`, `Identity`, `Integer`, `Double`, and `PlainText`.
 
-* `HtmlFieldControl`: Used to display multiline, rich-text format of fields that have a field data type of `HTML`.
+- `HtmlFieldControl`: Used to display multiline, rich-text format of fields that have a field data type of `HTML`.
 
-* `DateTimeControl`: Used to display formatted date fields that have a field type of `DateTime`.
+- `DateTimeControl`: Used to display formatted date fields that have a field type of `DateTime`.
 
-* `WorkItemClassificationControl` Used to display the hierarchical path fields that have a field type of `TreePath`.
+- `WorkItemClassificationControl` Used to display the hierarchical path fields that have a field type of `TreePath`.
 
 <a name="fields"></a>
 
@@ -107,10 +107,10 @@ You use the `DateTimeControl` type to give users a calendar picker to select a d
 For example, you can specify a preferred start date or a review date that is in the future.
 
 ```xml
-<Control Type="DateTimeControl" FieldName="MyCompany.EnvironmentCR.PreferredStart"  
-Label="Preferred Start Date:" LabelPosition="Left" Format="Short" />  
-<Control Type="DateTimeControl" FieldName="MyCompany.EnvironmentCR.PreferredStartTime"  
-Label="Preferred Start Time:" LabelPosition="Left" Format="Time" />  
+<Control Type="DateTimeControl" FieldName="MyCompany.EnvironmentCR.PreferredStart"
+Label="Preferred Start Date:" LabelPosition="Left" Format="Short" />
+<Control Type="DateTimeControl" FieldName="MyCompany.EnvironmentCR.PreferredStartTime"
+Label="Preferred Start Time:" LabelPosition="Left" Format="Time" />
 ```
 
 You can control the format of the `DateTime` field by using the optional attributes that are described in the following table.
@@ -185,7 +185,7 @@ To add the `StoryboardsControl` to the `FORM` section, add the following code sn
 You use the `WorkItemClassificationControl` type to add fields whose data type is `TreePath`. This control provides support to display area path fields and iteration path fields in a hierarchical, nested tree format. The tree shows hierarchical nodes that you can expand and collapse.
 
 ```xml
-<Control Type="WorkItemClassificationControl" FieldName="System.AreaPath" Label="Area"LabelPosition="Left" />  
+<Control Type="WorkItemClassificationControl" FieldName="System.AreaPath" Label="Area"LabelPosition="Left" />
 ```
 
 > [!NOTE]  
@@ -216,13 +216,13 @@ For more information, see [Add the Attachments control](add-the-attachments-cont
 <a name="custom"></a>
 In addition to the built-in controls provided, you may find additional controls you can use from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Boards&visibilityQuery=all&sortBy=Downloads). Or, you can create your own control. See [Extend the work item form](../../extend/develop/add-workitem-extension.md).
 
-* [Control XML element reference](control-xml-element-reference.md)
-* [WebLayout and Control elements](weblayout-xml-elements.md)
-* [Change the work item form layout](change-work-item-form-layout.md)
-* [Edit a WIT definition to add web content to a work item form](edit-wit-definition-add-web-content-form.md)
-* [Provide help text, hyperlinks, or web content](provide-help-text-hyperlinks-web-content-form.md)
-* [Define link controls to restrict link relationships](define-link-controls.md)
-* [Add the Attachments control](add-the-attachments-control.md)
+- [Control XML element reference](control-xml-element-reference.md)
+- [WebLayout and Control elements](weblayout-xml-elements.md)
+- [Change the work item form layout](change-work-item-form-layout.md)
+- [Edit a WIT definition to add web content to a work item form](edit-wit-definition-add-web-content-form.md)
+- [Provide help text, hyperlinks, or web content](provide-help-text-hyperlinks-web-content-form.md)
+- [Define link controls to restrict link relationships](define-link-controls.md)
+- [Add the Attachments control](add-the-attachments-control.md)
 
 <a name="Labeling"> </a>
 
@@ -242,15 +242,15 @@ If you want to add the field in more than one area of the form, such as on the t
 You can mark a field as read-only in one of two ways. In the first method, you add the `READONLY` element as a child to the `FIELD` element in the `FIELDS` section of the type definition. By using the `READONLY` element, you can specify whether certain users can modify the field. As shown in the following example, only program managers can modify a Sub-Title field.
 
 ```xml
-<FIELD name="Sub-Title" refname="ACME.ACE.SubTitle" type="String" >  
-<READONLY for="[Global]\Team Foundation Valid Users" not="Program Managers"/>  
-</FIELD>  
+<FIELD name="Sub-Title" refname="ACME.ACE.SubTitle" type="String" >
+<READONLY for="[Global]\Team Foundation Valid Users" not="Program Managers"/>
+</FIELD>
 ```
 
 In the second method, you specify the `ReadOnly` attribute for the `CONTROL` element. In this method, all users are restricted from modifying the field.
 
 ```xml
-<Control FieldName=" ACME.ACE.SubTitle" Type="FieldControl" Label="Sub-Title" LabelPosition="Left" ReadOnly="True" />  
+<Control FieldName=" ACME.ACE.SubTitle" Type="FieldControl" Label="Sub-Title" LabelPosition="Left" ReadOnly="True" />
 ```
 
 <a name="Size"></a>

@@ -37,5 +37,5 @@ You can [delete the user from each organization](delete-organization-users.md) w
 
 ## Related articles
 
-* [Add users to your organization in Azure DevOps](add-organization-users.md)
-* [Add users to Azure AD](add-users-to-azure-ad.md)
+- [Add users to your organization in Azure DevOps](add-organization-users.md)
+- [Add users to Azure AD](add-users-to-azure-ad.md)

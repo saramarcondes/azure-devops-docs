@@ -30,5 +30,5 @@ To maintain history for a report, you can save a copy of it every time that you 
 
 ## Related notes
 
-* [Create Excel reports from a work item query](../create-status-and-trend-excel-reports.md)
-* [Perspectives and measure groups provided in the Analysis Services cube](../sql-reports/perspective-measure-groups-cube.md)
+- [Create Excel reports from a work item query](../create-status-and-trend-excel-reports.md)
+- [Perspectives and measure groups provided in the Analysis Services cube](../sql-reports/perspective-measure-groups-cube.md)

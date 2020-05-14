@@ -49,7 +49,7 @@ in the firewall, and install the test certificate.
 
 > [!NOTE]
 > If you are deploying to Azure Static Websites as a container in blob storage,
-> you must use **Version 2** or higher of the task in order to preserve the **$web**
+> you must use **Version 2** or higher of the task in order to preserve the **\$web**
 > container name.
 
 ::: moniker range="> tfs-2018"
@@ -91,9 +91,9 @@ in the firewall, and install the test certificate.
 
 ## Related tasks
 
-* [Azure Resource Group Deployment](azure-resource-group-deployment.md)
-* [Azure Cloud Service Deployment](azure-cloud-powershell-deployment.md)
-* [Azure Web App Deployment](azure-rm-web-app-deployment.md)
+- [Azure Resource Group Deployment](azure-resource-group-deployment.md)
+- [Azure Cloud Service Deployment](azure-cloud-powershell-deployment.md)
+- [Azure Web App Deployment](azure-rm-web-app-deployment.md)
 
 ## Open source
 
@@ -143,7 +143,7 @@ and browse for **Storage accounts (Classic)** or
 | Resource Manager     | Azure Resource Manager service connection                                                                          |
 | Classic              | Azure service connection with certificate-based or credentials-based authentication using a school or work account |
 
-* For Azure classic resources, use an **Azure** service connection
+- For Azure classic resources, use an **Azure** service connection
   type with certificate or credentials-based authentication.
   If you are using credentials-based authentication,
   ensure that the credentials are for a
@@ -151,9 +151,9 @@ and browse for **Storage accounts (Classic)** or
   Microsoft accounts such as <strong>joe@live.com</strong> and
   <strong>joe@hotmail.com</strong> are not supported.
 
-* For Azure Resource Manager VMs, use an **Azure Resource Manager** service connection type. See more details at [Automating Azure Resource Group deployment using a Service Principal](https://devblogs.microsoft.com/devops/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-buildrelease-management/).
+- For Azure Resource Manager VMs, use an **Azure Resource Manager** service connection type. See more details at [Automating Azure Resource Group deployment using a Service Principal](https://devblogs.microsoft.com/devops/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-buildrelease-management/).
 
-* If you are using an **Azure Resource Manager**
+- If you are using an **Azure Resource Manager**
   service connection type, or an **Azure** service connection
   type with certificate-based authentication, the task
   automatically filters appropriate classic storage
@@ -161,7 +161,7 @@ and browse for **Storage accounts (Classic)** or
   accounts, and other fields. For example, the Resource
   Group or cloud service, and the virtual machines.
 
-* **Note**: Currently an **Azure** service connection type with
+- **Note**: Currently an **Azure** service connection type with
   credentials-based authentication does not filter
   the storage, Resource Group or cloud service, and
   virtual machine fields.

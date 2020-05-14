@@ -39,8 +39,7 @@ https://github.com/MicrosoftDocs/pipelines-go
 
 7.  When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
+    > [!div class="mx-imgBorder"] > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
 
 8.  You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
 
@@ -110,9 +109,9 @@ steps:
 
 As the Go documentation [describes](https://golang.org/doc/code.html#Workspaces), a Go workspace consists of a root directory to which the `$GOPATH` environment variable points. Within that directory are standard subdirectories:
 
-* `bin` to contain executable commands
-* `pkg` to contain compiled packages (`.a` files)
-* `src` to contain Go source files (`.go`, `.c`, `.g`, `.s`)
+- `bin` to contain executable commands
+- `pkg` to contain compiled packages (`.a` files)
+- `src` to contain Go source files (`.go`, `.c`, `.g`, `.s`)
 
 When an Azure Pipelines build fetches code from a remote repository, it places the code in the default working directory of the build. This doesn't match the expected structure of a Go workspace. To address this, add the following snippet to your `azure-pipelines.yml` file. Note: this script runs in bash on Linux and macOS agents, but must be modified for Windows.
 

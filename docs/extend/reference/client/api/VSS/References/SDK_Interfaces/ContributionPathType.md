@@ -17,6 +17,6 @@ Defined in vss.d.ts
 
 ### Values
 
-* `Default`
+- `Default`
 
-* `Resource`
+- `Resource`

@@ -20,8 +20,8 @@ The Team Foundation Server APIs are based on REST, JSON and service hooks - all 
 
 This article walks you through:
 
-* The basic components of a REST API request/response pair.
-* Overviews of creating and sending a REST request, and handling the response.
+- The basic components of a REST API request/response pair.
+- Overviews of creating and sending a REST request, and handling the response.
 
 ## Components of a REST API request/response pair
 
@@ -29,26 +29,26 @@ A REST API request/response pair can be separated into five components:
 
 1.  The **request URI**, in the following form: `VERB https://{server:port}/tfs[/{collection}[/{team-project}]/_apis[/{area}]/{resource}?api-version={version}`
 
-    * _collection_: The name of the collection, like `DefaultCollection`.
-    * _resource path_: The collection should be followed by `_apis/{area}/{resource}`. For example, `_apis/wit/workitems`.
-    * _api-version_: Every API request should include an api-version to avoid having your app or service break as APIs evolve. api-versions are in the following format: `{major}.{minor}[-{stage}[.{resource-version}]]`, for example:
+    - _collection_: The name of the collection, like `DefaultCollection`.
+    - _resource path_: The collection should be followed by `_apis/{area}/{resource}`. For example, `_apis/wit/workitems`.
+    - _api-version_: Every API request should include an api-version to avoid having your app or service break as APIs evolve. api-versions are in the following format: `{major}.{minor}[-{stage}[.{resource-version}]]`, for example:
 
-      * `api-version=1.0`
-      * `api-version=1.2-preview`
-      * `api-version=2.0-preview.1`
+      - `api-version=1.0`
+      - `api-version=1.2-preview`
+      - `api-version=2.0-preview.1`
 
       > Note: _area_ and _team-project_ are optional, depending on the API request. Check out the [TFS to REST API version mapping matrix](#api-and-tfs-version-mapping) below to find which REST API versions apply to your version of TFS.
 
 2.  HTTP **request message header** fields:
-    * A required [HTTP method](https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html) (also known as an operation or verb), which tells the service what type of operation you are requesting. Azure REST APIs support GET, HEAD, PUT, POST, and PATCH methods.
-    * Optional additional header fields, as required by the specified URI and HTTP method. For example, an Authorization header that provides a bearer token containing client authorization information for the request.
+    - A required [HTTP method](https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html) (also known as an operation or verb), which tells the service what type of operation you are requesting. Azure REST APIs support GET, HEAD, PUT, POST, and PATCH methods.
+    - Optional additional header fields, as required by the specified URI and HTTP method. For example, an Authorization header that provides a bearer token containing client authorization information for the request.
 3.  Optional HTTP **request message body** fields, to support the URI and HTTP operation. For example, POST operations contain MIME-encoded objects that are passed as complex parameters.
-    * For POST or PUT operations, the MIME-encoding type for the body should be specified in the Content-type request header as well. Some services require you to use a specific MIME type, such as `application/json`.
+    - For POST or PUT operations, the MIME-encoding type for the body should be specified in the Content-type request header as well. Some services require you to use a specific MIME type, such as `application/json`.
 4.  HTTP **response message header** fields:
-    * An [HTTP status code](https://www.w3.org/Protocols/HTTP/HTRESP.html), ranging from 2xx success codes to 4xx or 5xx error codes. Alternatively, a service-defined status code may be returned, as indicated in the API documentation.
-    * Optional additional header fields, as required to support the request's response, such as a `Content-type` response header.
+    - An [HTTP status code](https://www.w3.org/Protocols/HTTP/HTRESP.html), ranging from 2xx success codes to 4xx or 5xx error codes. Alternatively, a service-defined status code may be returned, as indicated in the API documentation.
+    - Optional additional header fields, as required to support the request's response, such as a `Content-type` response header.
 5.  Optional HTTP **response message body** fields:
-    * MIME-encoded response objects may be returned in the HTTP response body, such as a response from a GET method that is returning data. Typically, these objects are returned in a structured format such as JSON or XML, as indicated by the `Content-type` response header. For example, when you request an access token from Azure AD, it will be returned in the response body as the `access_token` element, one of several name/value paired objects in a data collection. In this example, a response header of `Content-Type: application/json` is also included.
+    - MIME-encoded response objects may be returned in the HTTP response body, such as a response from a GET method that is returning data. Typically, these objects are returned in a structured format such as JSON or XML, as indicated by the `Content-type` response header. For example, when you request an access token from Azure AD, it will be returned in the response body as the `access_token` element, one of several name/value paired objects in a data collection. In this example, a response header of `Content-Type: application/json` is also included.
 
 ## Create the request
 
@@ -329,15 +329,15 @@ items that your team uses every day.</td>
 
 ## Related Content
 
-* Check out the [Integrate documentation](https://docs.microsoft.com/azure/devops/integrate/) for REST API samples and use cases.
-  * [Authentication guidance](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/authentication-guidance)
-  * [Samples](https://docs.microsoft.com/azure/devops/integrate/get-started/client-libraries/samples)
+- Check out the [Integrate documentation](https://docs.microsoft.com/azure/devops/integrate/) for REST API samples and use cases.
+  - [Authentication guidance](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/authentication-guidance)
+  - [Samples](https://docs.microsoft.com/azure/devops/integrate/get-started/client-libraries/samples)
 
 ## Client Libraries
 
-* Discover the client libraries for these REST APIs.
-  * [.Net](https://docs.microsoft.com/azure/devops/integrate/concepts/dotnet-client-libraries)
-  * [Node.js](https://github.com/Microsoft/vsts-node-api)
-  * [Python](https://github.com/Microsoft/vsts-python-api)
-  * [Swagger 2.0](https://github.com/MicrosoftDocs/vsts-rest-api-specs)
-  * [Web Extensions SDK](https://github.com/Microsoft/vss-web-extension-sdk)
+- Discover the client libraries for these REST APIs.
+  - [.Net](https://docs.microsoft.com/azure/devops/integrate/concepts/dotnet-client-libraries)
+  - [Node.js](https://github.com/Microsoft/vsts-node-api)
+  - [Python](https://github.com/Microsoft/vsts-python-api)
+  - [Swagger 2.0](https://github.com/MicrosoftDocs/vsts-rest-api-specs)
+  - [Web Extensions SDK](https://github.com/Microsoft/vss-web-extension-sdk)

@@ -45,17 +45,17 @@ To perform these procedures, you must have the **Read** permission set to **Allo
 
 7.  Under **View Options**, select which items that you want shown in the comparison results. You can select a combination of view options by checking or clearing the following boxes:
 
-    * **Show items that exist only in source path**.
-    * **Show items that exist only in target path**.
-    * **Show items that are different**.
-    * **Show items that are the same**.
+    - **Show items that exist only in source path**.
+    - **Show items that exist only in target path**.
+    - **Show items that are different**.
+    - **Show items that are the same**.
 
 8.  Choose **OK**.
 
     The **Folder Difference** window displays a list of items that are compared in the source and target folders.
 
-    * You can compare the differences between two versions of a file by opening its shortcut menu and choosing **Compare**. The [Diff window](compare-files.md) appears.
-    * If there are differences between a server folder and your local folder, you can [reconcile them](reconcile-differences-between-two-folders.md).
+    - You can compare the differences between two versions of a file by opening its shortcut menu and choosing **Compare**. The [Diff window](compare-files.md) appears.
+    - If there are differences between a server folder and your local folder, you can [reconcile them](reconcile-differences-between-two-folders.md).
 
 ## See Also
 

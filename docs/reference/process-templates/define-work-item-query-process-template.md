@@ -18,9 +18,9 @@ ms.date: 02/24/2017
 
 **Requirements**
 
-* To create a query, you must be a member of the **Readers** group, or your **View work items in this node** permission must be set to **Allow** for each project in the query.
+- To create a query, you must be a member of the **Readers** group, or your **View work items in this node** permission must be set to **Allow** for each project in the query.
 
-* To save a query as a team query, you must have the appropriate permissions described in [Set permissions on queries](../../boards/queries/set-query-permissions.md).
+- To save a query as a team query, you must have the appropriate permissions described in [Set permissions on queries](../../boards/queries/set-query-permissions.md).
 
 <a name="create"></a>
 
@@ -36,8 +36,8 @@ ms.date: 02/24/2017
     > [!div class="tabbedCodeSnippets"]
     >
     > ```XML
-    > <TeamFoundationServer>CollectionURL</TeamFoundationServer>  
-    > <TeamProject>ProjectName</TeamProject>  
+    > <TeamFoundationServer>CollectionURL</TeamFoundationServer>
+    > <TeamProject>ProjectName</TeamProject>
     > ```
     >
     > [!NOTE]
@@ -54,7 +54,7 @@ You can define a query that references a specific iteration path by including th
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> AND  [Source].[System.IterationPath] UNDER '$$PROJECTNAME$$\Iteration 1'  
+> AND  [Source].[System.IterationPath] UNDER '$$PROJECTNAME$$\Iteration 1'
 > ```
 
 When the project is created, the macro is replaced with the name of the project.
@@ -72,37 +72,37 @@ The following example shows the Iteration1Backlog work item query, which support
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <?xml version="1.0" encoding="utf-8"?>  
-> <WorkItemQuery Version="1">  
->   <Wiql>  
->     SELECT [System.Id],  
->            [System.WorkItemType],  
->            [System.Title],  
->            [System.State],  
->            [System.AssignedTo],  
->            [Microsoft.VSTS.Scheduling.RemainingWork],  
->            [Microsoft.VSTS.Scheduling.CompletedWork],  
->            [Microsoft.VSTS.Scheduling.StoryPoints],  
->            [Microsoft.VSTS.Common.StackRank],  
->            [Microsoft.VSTS.Common.Priority],  
->            [Microsoft.VSTS.Common.Activity],  
->            [System.IterationPath],  
->            [System.AreaPath]  
->       FROM WorkItemLinks  
+> <?xml version="1.0" encoding="utf-8"?>
+> <WorkItemQuery Version="1">
+>   <Wiql>
+>     SELECT [System.Id],
+>            [System.WorkItemType],
+>            [System.Title],
+>            [System.State],
+>            [System.AssignedTo],
+>            [Microsoft.VSTS.Scheduling.RemainingWork],
+>            [Microsoft.VSTS.Scheduling.CompletedWork],
+>            [Microsoft.VSTS.Scheduling.StoryPoints],
+>            [Microsoft.VSTS.Common.StackRank],
+>            [Microsoft.VSTS.Common.Priority],
+>            [Microsoft.VSTS.Common.Activity],
+>            [System.IterationPath],
+>            [System.AreaPath]
+>       FROM WorkItemLinks
 >      WHERE (Source.[System.TeamProject] = @project
->        AND  [Source].[System.AreaPath] UNDER @project  
->        AND  [Source].[System.IterationPath] UNDER '$$PROJECTNAME$$\Iteration 1'  
->        AND (  
+>        AND  [Source].[System.AreaPath] UNDER @project
+>        AND  [Source].[System.IterationPath] UNDER '$$PROJECTNAME$$\Iteration 1'
+>        AND (
 >                Source.[System.WorkItemType] = 'User Story'
->             OR Source.[System.WorkItemType] = 'Task'  
->            )  
->            )  
->        AND [System.Links.LinkType] = 'System.LinkTypes.Hierarchy-Forward'  
->        AND [Target].[System.WorkItemType] = 'Task'  
->        ORDER BY [Microsoft.VSTS.Common.StackRank], [Microsoft.VSTS.Common.Priority]  
->        mode(Recursive)  
->   </Wiql>  
-> </WorkItemQuery>  
+>             OR Source.[System.WorkItemType] = 'Task'
+>            )
+>            )
+>        AND [System.Links.LinkType] = 'System.LinkTypes.Hierarchy-Forward'
+>        AND [Target].[System.WorkItemType] = 'Task'
+>        ORDER BY [Microsoft.VSTS.Common.StackRank], [Microsoft.VSTS.Common.Priority]
+>        mode(Recursive)
+>   </Wiql>
+> </WorkItemQuery>
 > ```
 
 <a name="elements"></a>
@@ -114,13 +114,13 @@ The following syntax shows the structure of the **WorkItemQuery** element and it
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <WorkItemQuery Version="1">  
->       <TeamFoundationServer>collectionURL </TeamFoundationServer>  
->       <TeamProject>TeamProjectName </TeamProject>  
->       <Wiql>  
->       WorkItemQueryLanguage  
->       </Wiql>  
-> </WorkItemQuery>  
+> <WorkItemQuery Version="1">
+>       <TeamFoundationServer>collectionURL </TeamFoundationServer>
+>       <TeamProject>TeamProjectName </TeamProject>
+>       <Wiql>
+>       WorkItemQueryLanguage
+>       </Wiql>
+> </WorkItemQuery>
 > ```
 >
 > [!NOTE]
@@ -134,8 +134,8 @@ The following syntax shows the structure of the **WorkItemQuery** element and it
 
 ## Related articles
 
-* [Create managed queries](../../boards/queries/example-queries.md)
-* [Use the query editor to list and manage queries](../../boards/queries/using-queries.md)
-* [Define objects for tracking work items](define-objects-track-work-items-plug-in.md)
-* [Work Item Query Language](../../boards/queries/wiql-syntax.md)
-* [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)
+- [Create managed queries](../../boards/queries/example-queries.md)
+- [Use the query editor to list and manage queries](../../boards/queries/using-queries.md)
+- [Define objects for tracking work items](define-objects-track-work-items-plug-in.md)
+- [Work Item Query Language](../../boards/queries/wiql-syntax.md)
+- [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)

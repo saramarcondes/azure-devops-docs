@@ -47,8 +47,8 @@ To connect Azure Boards to a GitHub Enterprise Server, see [connect from Azure B
 
 Once you've configured the connection, you can then exercise these features:
 
-* [Link GitHub commits and pull requests to work items](link-to-from-github.md)
-* [Configure status badges](configure-status-badges.md)
+- [Link GitHub commits and pull requests to work items](link-to-from-github.md)
+- [Configure status badges](configure-status-badges.md)
 
 ::: moniker-end
 
@@ -56,9 +56,9 @@ Once you've configured the connection, you can then exercise these features:
 
 Integration steps include:
 
-* [Connect Azure Boards to GitHub Enterprise Server](connect-to-github.md)
-* [Link GitHub commits and pull requests to work items](link-to-from-github.md)
-* [Configure status badges](configure-status-badges.md)
+- [Connect Azure Boards to GitHub Enterprise Server](connect-to-github.md)
+- [Link GitHub commits and pull requests to work items](link-to-from-github.md)
+- [Configure status badges](configure-status-badges.md)
 
 ::: moniker-end
 
@@ -68,7 +68,7 @@ Integration steps include:
 
 ## Additional resources
 
-* [Web portal navigation](../../project/navigation/index.md)
-* [Link work items](../backlogs/add-link.md)
-* [About work items](../work-items/about-work-items.md)
-* [Process customization](../../organizations/settings/work/inheritance-process-model.md)
+- [Web portal navigation](../../project/navigation/index.md)
+- [Link work items](../backlogs/add-link.md)
+- [About work items](../work-items/about-work-items.md)
+- [Process customization](../../organizations/settings/work/inheritance-process-model.md)

@@ -25,20 +25,20 @@ If you want to make a single update to one work item, you can do that from withi
 
 **Best tool for**:
 
-* [Updating a work item field for a single work item](../backlogs/add-work-items.md)
-* [Adding to the discussion, mentioning others in the discussion](view-add-work-items.md#capture-comments-in-the-discussion-section)
-* [Choosing to follow or unfollow a work item](follow-work-items.md)
-* [Driving Git development, creating a branch](../backlogs/connect-work-items-to-git-dev-ops.md)
-* [Adding a link to another work item or external object](../backlogs/add-link.md)
-* [Copying or cloning a work item](../backlogs/copy-clone-work-items.md)
-* [Deleting the work item](../backlogs/remove-delete-work-items.md#delete-work-items)
+- [Updating a work item field for a single work item](../backlogs/add-work-items.md)
+- [Adding to the discussion, mentioning others in the discussion](view-add-work-items.md#capture-comments-in-the-discussion-section)
+- [Choosing to follow or unfollow a work item](follow-work-items.md)
+- [Driving Git development, creating a branch](../backlogs/connect-work-items-to-git-dev-ops.md)
+- [Adding a link to another work item or external object](../backlogs/add-link.md)
+- [Copying or cloning a work item](../backlogs/copy-clone-work-items.md)
+- [Deleting the work item](../backlogs/remove-delete-work-items.md#delete-work-items)
 
 **Additional supported tasks**:
 
-* [Share information](../queries/share-plans.md)
-* [Copy the work item URL](../backlogs/copy-clone-work-items.md#copy-the-url)
-* [Capturing the work item to use as a template](../backlogs/work-item-template.md#capture)
-* [Updating fields of the work item by applying an existing template](../backlogs/work-item-template.md#apply)
+- [Share information](../queries/share-plans.md)
+- [Copy the work item URL](../backlogs/copy-clone-work-items.md#copy-the-url)
+- [Capturing the work item to use as a template](../backlogs/work-item-template.md#capture)
+- [Updating fields of the work item by applying an existing template](../backlogs/work-item-template.md#apply)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -48,13 +48,13 @@ Use the [Work Items](view-add-work-items.md) page to quickly focus on work items
 
 **Best tool for**:
 
-* Listing and filtering work items of interest to you, specifically work items that meet the following criteria: - That are assigned to you - That you chose to follow - Where you were mentioned - That you've recently viewed or updated - That has been recently updated, completed, or created for the project.
+- Listing and filtering work items of interest to you, specifically work items that meet the following criteria: - That are assigned to you - That you chose to follow - Where you were mentioned - That you've recently viewed or updated - That has been recently updated, completed, or created for the project.
 
 #### Additional supported tasks:
 
-* [Add a work item](view-add-work-items.md)
-* [Restore work items from the recycle bin](../backlogs/remove-delete-work-items.md#restore-work-items)
-* [View work items through a mobile browser](../..//project/navigation/mobile-work.md)
+- [Add a work item](view-add-work-items.md)
+- [Restore work items from the recycle bin](../backlogs/remove-delete-work-items.md#restore-work-items)
+- [View work items through a mobile browser](../..//project/navigation/mobile-work.md)
 
 ::: moniker-end
 
@@ -69,26 +69,26 @@ The two types of Kanban boards, product backlog and portfolio backlogs, provide 
 
 **Best tool for**:
 
-* [Implementing Kanban methods](../boards/best-practices-kanban.md)
-* Viewing the flow of work from inception to completion
-* Quickly adding [product backlog](../boards/kanban-quickstart.md) and [portfolio backlog](../boards/kanban-epics-features-stories.md) items
-* Updating the status of backlog items
-* Adding linked child items ([task checklists](../boards/add-task-checklists.md), [user stories or features](../boards/kanban-epics-features-stories.md))
-* [Focusing the view based on assignment, tags, or other filter criteria](../boards/filter-kanban-board.md)
-* Adding, running, and updating [inline test cases](../boards/add-run-update-tests.md))
+- [Implementing Kanban methods](../boards/best-practices-kanban.md)
+- Viewing the flow of work from inception to completion
+- Quickly adding [product backlog](../boards/kanban-quickstart.md) and [portfolio backlog](../boards/kanban-epics-features-stories.md) items
+- Updating the status of backlog items
+- Adding linked child items ([task checklists](../boards/add-task-checklists.md), [user stories or features](../boards/kanban-epics-features-stories.md))
+- [Focusing the view based on assignment, tags, or other filter criteria](../boards/filter-kanban-board.md)
+- Adding, running, and updating [inline test cases](../boards/add-run-update-tests.md))
 
 **Additional supported tasks**:  
 ::: moniker range=">= azure-devops-2019"
 
-* [Assigning a work item, updating a field displayed on a card](../boards/kanban-quickstart.md#update-fields-from-the-card)
-* [Monitoring cumulative flow](../../report/dashboards/cumulative-flow.md)
-* [Monitoring lead time and cycle time control charts](../..//report/dashboards/cycle-time-and-lead-time.md)  
+- [Assigning a work item, updating a field displayed on a card](../boards/kanban-quickstart.md#update-fields-from-the-card)
+- [Monitoring cumulative flow](../../report/dashboards/cumulative-flow.md)
+- [Monitoring lead time and cycle time control charts](../..//report/dashboards/cycle-time-and-lead-time.md)  
   ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-* [Assigning a work item, updating a field displayed on a card](../boards/kanban-quickstart.md)
-* [Monitoring cumulative flow](../../report/dashboards/cumulative-flow.md)  
+- [Assigning a work item, updating a field displayed on a card](../boards/kanban-quickstart.md)
+- [Monitoring cumulative flow](../../report/dashboards/cumulative-flow.md)  
   ::: moniker-end
 
 [!INCLUDE [temp](../includes/setup-backlogs-boards.md)]
@@ -101,52 +101,52 @@ You can quickly add and prioritize your product and portfolio backlogs, which li
 
 **Best tool for**:
 
-* [Managing your product backlog, developing your project plan](../backlogs/best-practices-product-backlog.md)
-* Quickly adding [product](../backlogs/create-your-backlog.md) and [portfolio backlog items](../backlogs/define-features-epics.md)
-* [Moving backlog items in priority order](../backlogs/create-your-backlog.md#move-items-priority-order)
-* [Creating, viewing, and modifying a hierarchy of backlog items](../backlogs/define-features-epics.md)
-* [Organizing your backlog, linking or mapping backlog items to portfolio backlog items](../backlogs/organize-backlog.md)
-* [Planning a sprint](../sprints/assign-work-sprint.md)
-* [Forecasting work](../sprints/forecast.md)
-* [Emailing a list of backlog items](email-work-items.md)
-* [Focusing the list based on assignment, tags, or other filter criteria](../backlogs/filter-backlogs.md)
+- [Managing your product backlog, developing your project plan](../backlogs/best-practices-product-backlog.md)
+- Quickly adding [product](../backlogs/create-your-backlog.md) and [portfolio backlog items](../backlogs/define-features-epics.md)
+- [Moving backlog items in priority order](../backlogs/create-your-backlog.md#move-items-priority-order)
+- [Creating, viewing, and modifying a hierarchy of backlog items](../backlogs/define-features-epics.md)
+- [Organizing your backlog, linking or mapping backlog items to portfolio backlog items](../backlogs/organize-backlog.md)
+- [Planning a sprint](../sprints/assign-work-sprint.md)
+- [Forecasting work](../sprints/forecast.md)
+- [Emailing a list of backlog items](email-work-items.md)
+- [Focusing the list based on assignment, tags, or other filter criteria](../backlogs/filter-backlogs.md)
 
 **Additional supported tasks**:  
 ::: moniker range=">= azure-devops-2019"
 
-* [Bulk modifying work items](../backlogs/bulk-modify-work-items.md)  
-   - [Change work item type](../backlogs/move-change-type.md#change-type)  
-   - [Move work item to a different project](../backlogs/move-change-type.md#move)  
-   - [Assign work items, change the iteration](../backlogs/bulk-modify-work-items.md#assign-to)  
-   - [Add or remove tags](../queries/add-tags-to-work-items.md#bulk-add-or-remove-tags) - [Delete work items](../backlogs/remove-delete-work-items.md#delete)
-* [Creating a Git branch from one or more work items](../backlogs/connect-work-items-to-git-dev-ops.md)
-* [Monitoring team velocity](../../report/dashboards/team-velocity.md)  
+- [Bulk modifying work items](../backlogs/bulk-modify-work-items.md)
+  - [Change work item type](../backlogs/move-change-type.md#change-type)
+  - [Move work item to a different project](../backlogs/move-change-type.md#move)
+  - [Assign work items, change the iteration](../backlogs/bulk-modify-work-items.md#assign-to)
+  - [Add or remove tags](../queries/add-tags-to-work-items.md#bulk-add-or-remove-tags) - [Delete work items](../backlogs/remove-delete-work-items.md#delete)
+- [Creating a Git branch from one or more work items](../backlogs/connect-work-items-to-git-dev-ops.md)
+- [Monitoring team velocity](../../report/dashboards/team-velocity.md)  
   ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-* [Bulk modifying work items](../backlogs/bulk-modify-work-items.md) - [Assign work items, change the iteration](../backlogs/bulk-modify-work-items.md#assign-to) - [Delete work items](../backlogs/remove-delete-work-items.md#delete)  
-   - [Add or remove tags](../queries/add-tags-to-work-items.md#bulk-add-or-remove-tags)
-* [Creating a Git branch from one or more work items](../backlogs/connect-work-items-to-git-dev-ops.md)
-* [Restoring work items from the recycle bin](../backlogs/remove-delete-work-items.md#restore-work-items)
-* [Monitoring team velocity](../../report/dashboards/team-velocity.md)
+- [Bulk modifying work items](../backlogs/bulk-modify-work-items.md) - [Assign work items, change the iteration](../backlogs/bulk-modify-work-items.md#assign-to) - [Delete work items](../backlogs/remove-delete-work-items.md#delete)
+  - [Add or remove tags](../queries/add-tags-to-work-items.md#bulk-add-or-remove-tags)
+- [Creating a Git branch from one or more work items](../backlogs/connect-work-items-to-git-dev-ops.md)
+- [Restoring work items from the recycle bin](../backlogs/remove-delete-work-items.md#restore-work-items)
+- [Monitoring team velocity](../../report/dashboards/team-velocity.md)
   ::: moniker-end
 
 ::: moniker range="tfs-2015"
 
-* [Bulk modifying work items](../backlogs/bulk-modify-work-items.md)
-* [Assigning work items, change the iteration](../backlogs/bulk-modify-work-items.md#assign-to)
-* [Adding or removing tags](../queries/add-tags-to-work-items.md#bulk-add-or-remove-tags)
-* [Restoring work items from the recycle bin](../backlogs/remove-delete-work-items.md#restore-work-items)
-* [Monitoring team velocity](../../report/dashboards/team-velocity.md)  
+- [Bulk modifying work items](../backlogs/bulk-modify-work-items.md)
+- [Assigning work items, change the iteration](../backlogs/bulk-modify-work-items.md#assign-to)
+- [Adding or removing tags](../queries/add-tags-to-work-items.md#bulk-add-or-remove-tags)
+- [Restoring work items from the recycle bin](../backlogs/remove-delete-work-items.md#restore-work-items)
+- [Monitoring team velocity](../../report/dashboards/team-velocity.md)  
   ::: moniker-end
 
 ::: moniker range="tfs-2013"
 
-* [Bulk modifying work items](../backlogs/bulk-modify-work-items.md)
-* [Assigning work items, change the iteration](../backlogs/bulk-modify-work-items.md#assign-to)
-* [Adding or removing tags](../queries/add-tags-to-work-items.md#bulk-add-or-remove-tags)
-* [Monitoring team velocity](../../report/dashboards/team-velocity.md)
+- [Bulk modifying work items](../backlogs/bulk-modify-work-items.md)
+- [Assigning work items, change the iteration](../backlogs/bulk-modify-work-items.md#assign-to)
+- [Adding or removing tags](../queries/add-tags-to-work-items.md#bulk-add-or-remove-tags)
+- [Monitoring team velocity](../../report/dashboards/team-velocity.md)
   ::: moniker-end
 
 ## Sprints
@@ -157,37 +157,37 @@ Sprint tools provide teams a focused view of work items they've assigned to a sp
 
 **Best set of tools for**:
 
-* [Implementing Scrum methods](../sprints/best-practices-scrum.md)
-* [Adding tasks to backlog items](../sprints/add-tasks.md)
-* [Configuring team capacity](../sprints/set-capacity.md)
-* [Monitoring and adjusting team capacity](../sprints/adjust-work.md)
-* [Updating remaining work, and task status](../sprints/task-board.md)
-* [Emailing or sharing a sprint plan](../sprints/share-plan.md)
+- [Implementing Scrum methods](../sprints/best-practices-scrum.md)
+- [Adding tasks to backlog items](../sprints/add-tasks.md)
+- [Configuring team capacity](../sprints/set-capacity.md)
+- [Monitoring and adjusting team capacity](../sprints/adjust-work.md)
+- [Updating remaining work, and task status](../sprints/task-board.md)
+- [Emailing or sharing a sprint plan](../sprints/share-plan.md)
 
 **Additional supported tasks**:
 
-* [Monitoring sprint burndown](../../report/dashboards/configure-sprint-burndown.md)
-* [Bulk modifying work items](../backlogs/bulk-modify-work-items.md)
+- [Monitoring sprint burndown](../../report/dashboards/configure-sprint-burndown.md)
+- [Bulk modifying work items](../backlogs/bulk-modify-work-items.md)
 
 ## Queries
 
 Queries enable you to filter work items within or across projects for the purposes of listing, updating, or sharing work items.
 
-* [Queries](../queries/view-run-query.md) | [Query operators](../queries/query-operators-variables.md)
+- [Queries](../queries/view-run-query.md) | [Query operators](../queries/query-operators-variables.md)
 
 **Best tool for**:
 
-* [Listing items to perform bulk updates, assign or reassign](../backlogs/bulk-modify-work-items.md)
-* Listing a [tree of parent-child related work item](../queries/linking-attachments.md#tree) or [dependent work items](../queries/linking-attachments.md#dependents)
-* [Triaging work items (review, set priority, update)](../queries/triage-work-items.md)
-* [Creating simple progress and trend charts](../../report/dashboards/charts.md)
-* [Emailing a list work items](email-work-items.md)
+- [Listing items to perform bulk updates, assign or reassign](../backlogs/bulk-modify-work-items.md)
+- Listing a [tree of parent-child related work item](../queries/linking-attachments.md#tree) or [dependent work items](../queries/linking-attachments.md#dependents)
+- [Triaging work items (review, set priority, update)](../queries/triage-work-items.md)
+- [Creating simple progress and trend charts](../../report/dashboards/charts.md)
+- [Emailing a list work items](email-work-items.md)
 
 **Additional supported tasks**:
 
-* Create a chart and add it to a dashboard
-* Create a chart to get a count of items or sum a field
-* Create a chart that shows a burndown or burnup over time
+- Create a chart and add it to a dashboard
+- Create a chart to get a count of items or sum a field
+- Create a chart that shows a burndown or burnup over time
 
 ## Plans
 
@@ -195,11 +195,11 @@ When you want to review the schedule of stories or features your teams plan to d
 
 **Best tool for**:
 
-* [Viewing product or portfolio work items assigned to several teams against a calendar schedule](../plans/review-team-plans.md)
+- [Viewing product or portfolio work items assigned to several teams against a calendar schedule](../plans/review-team-plans.md)
 
 **Additional supported tasks**:
 
-* [Moving a work item to a different iteration](../plans/review-team-plans.md)
+- [Moving a work item to a different iteration](../plans/review-team-plans.md)
 
 ## Office integration tools
 
@@ -374,16 +374,16 @@ A number of additional tools become available when you install one of the [Exten
 
 Provides you access to these additional tools through the Team Explorer plug-in for Visual Studio. Additional requirements may apply.
 
-* Process Template Editor
-* Additional check-in policies for Team Foundation Version Control
-* Team Explorer enhancements including Team Members
-* Team Foundation Power Tool Command Line
-* Test Attachment Cleaner
-* Work Item Templates
+- Process Template Editor
+- Additional check-in policies for Team Foundation Version Control
+- Team Explorer enhancements including Team Members
+- Team Foundation Power Tool Command Line
+- Test Attachment Cleaner
+- Work Item Templates
 
 ## Related articles
 
-* [Set up your Backlogs and Boards](../backlogs/set-up-your-backlog.md)
-* [Navigate in the web portal](../../project/navigation/index.md)
-* [Navigate in Team Explorer](../../user-guide/work-team-explorer.md)
-* [Why use Azure Boards?](../get-started/why-use-azure-boards.md)
+- [Set up your Backlogs and Boards](../backlogs/set-up-your-backlog.md)
+- [Navigate in the web portal](../../project/navigation/index.md)
+- [Navigate in Team Explorer](../../user-guide/work-team-explorer.md)
+- [Why use Azure Boards?](../get-started/why-use-azure-boards.md)

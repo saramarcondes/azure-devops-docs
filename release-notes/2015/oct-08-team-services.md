@@ -39,9 +39,9 @@ With this week’s deployment you now can perform a SonarQube analysis simply by
 
 And finally, we’ve turned on a preview of our new work item experience that we’d like you to try out. The new form doesn’t just bring a new look and feel, but is one of the key building blocks toward:
 
-* Work item customization, including states, fields, and types
-* A rich work item discussion experience
-* Improved code and build integration
+- Work item customization, including states, fields, and types
+- A rich work item discussion experience
+- Improved code and build integration
 
 ![New work item form (preview)](media/10_8_04.png)
 

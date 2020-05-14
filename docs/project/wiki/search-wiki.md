@@ -44,5 +44,5 @@ English language stemming support helps you find the most relevant wiki pages. F
 
 ## Related articles
 
-* [Search code](..//search/code-search.md)
-* [Search work items](..//search/work-item-search.md)
+- [Search code](..//search/code-search.md)
+- [Search work items](..//search/work-item-search.md)

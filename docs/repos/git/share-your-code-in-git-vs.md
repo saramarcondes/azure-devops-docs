@@ -16,9 +16,9 @@ monikerRange: '>= tfs-2015'
 
 > [!div class="op_single_selector"]
 >
-> * [Visual Studio 2017](share-your-code-in-git-vs-2017.md)
-> * [Visual Studio 2015 Update 2](share-your-code-in-git-vs.md)
-> * [Visual Studio 2013](share-your-code-in-git-vs-2013.md)
+> - [Visual Studio 2017](share-your-code-in-git-vs-2017.md)
+> - [Visual Studio 2015 Update 2](share-your-code-in-git-vs.md)
+> - [Visual Studio 2013](share-your-code-in-git-vs-2013.md)
 
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015
 
@@ -38,10 +38,10 @@ Once you have a local repo, select items in the status bar to quickly navigate b
 
 ---
 
-* ![Visual Studio Unpublished Changes Status Bar icon](media/share-your-code-in-git-vs/vs_unpublished_changes.png) shows the number of unpublished commits in your local branch. Selecting this will open the **Sync** view in Team Explorer.
-* ![Visual Studio Pending Changes Status Bar icon](media/share-your-code-in-git-vs/vs_pending_changes.png) shows the number of uncommitted file changes. Selecting this will open the **Changes** view in Team Explorer.
-* ![Visual Studio Repo Status Bar icon](media/share-your-code-in-git-vs/vs_current_repo.png) shows the current Git repo. Selecting this will open the **Connect** view in Team Explorer.
-* ![Visual Studio branch status bar icon](media/share-your-code-in-git-vs/vs_branch_picker.png) shows your current Git branch. Selecting this displays a branch picker to quickly switch between Git branches or create new branches.
+- ![Visual Studio Unpublished Changes Status Bar icon](media/share-your-code-in-git-vs/vs_unpublished_changes.png) shows the number of unpublished commits in your local branch. Selecting this will open the **Sync** view in Team Explorer.
+- ![Visual Studio Pending Changes Status Bar icon](media/share-your-code-in-git-vs/vs_pending_changes.png) shows the number of uncommitted file changes. Selecting this will open the **Changes** view in Team Explorer.
+- ![Visual Studio Repo Status Bar icon](media/share-your-code-in-git-vs/vs_current_repo.png) shows the current Git repo. Selecting this will open the **Connect** view in Team Explorer.
+- ![Visual Studio branch status bar icon](media/share-your-code-in-git-vs/vs_branch_picker.png) shows your current Git branch. Selecting this displays a branch picker to quickly switch between Git branches or create new branches.
 
 ---
 

@@ -19,8 +19,8 @@ Session token whose value can be added to the Authorization header in requests t
 
 ### Members
 
-* `appId`: string. The registered VSS auth application ID
+- `appId`: string. The registered VSS auth application ID
 
-* `name`: string. Name describing the token
+- `name`: string. Name describing the token
 
-* `token`: string. Token value
+- `token`: string. Token value

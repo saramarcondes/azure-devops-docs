@@ -27,32 +27,32 @@ Most WIT customizations are made to the WIT definition, however, other customiza
 
 #### WIT definition
 
-* [Add or modify a field to an existing WIT](#modify-field)
-* [Add a custom WIT, modify a WIT](#add-wit)
-* [Change the workflow (states, reasons, transitions)](#modify-workflow)
-* [Modify the work item form](xml/change-work-item-form-layout.md)
+- [Add or modify a field to an existing WIT](#modify-field)
+- [Add a custom WIT, modify a WIT](#add-wit)
+- [Change the workflow (states, reasons, transitions)](#modify-workflow)
+- [Modify the work item form](xml/change-work-item-form-layout.md)
 
 #### ProcessConfiguration definition
 
-* [Specify the WIT color](#change-wit-color)
-* [Specify the WIT icon](#change-wit-color) (TFS 2017.2 and later versions)
-* [Specify the workflow state color](#change-wit-color)
-* [Add or remove a WIT from the backlog or task board](#change-wit-backlog-board)
-* [Add a custom WIT to a backlog or board](add-wits-to-backlogs-and-boards.md)
-* [Add a portfolio backlog](add-portfolio-backlogs.md)
+- [Specify the WIT color](#change-wit-color)
+- [Specify the WIT icon](#change-wit-color) (TFS 2017.2 and later versions)
+- [Specify the workflow state color](#change-wit-color)
+- [Add or remove a WIT from the backlog or task board](#change-wit-backlog-board)
+- [Add a custom WIT to a backlog or board](add-wits-to-backlogs-and-boards.md)
+- [Add a portfolio backlog](add-portfolio-backlogs.md)
 
 #### Command line change
 
-* [List WITs](witadmin/witadmin-import-export-manage-wits.md)
-* [Deactivate or disable a WIT](#deactivate-wit)
-* [Rename a WIT](#rename-wit) (on-premises deployments only)
-* [Delete a WIT](#delete-wit) (on-premises deployments only)
+- [List WITs](witadmin/witadmin-import-export-manage-wits.md)
+- [Deactivate or disable a WIT](#deactivate-wit)
+- [Rename a WIT](#rename-wit) (on-premises deployments only)
+- [Delete a WIT](#delete-wit) (on-premises deployments only)
 
 ## Prerequisites
 
-* To list work item types, you must have your **View project-level information** permission for the project in the collection set to **Allow**.
-* (TFS) To add or customize a WIT, you must be a member of the Project Administrators group or have your **Edit project-level information** permission set to **Allow**.
-* (Azure DevOps Services, Hosted XML) To add or customize a WIT by customizing a process template, you must be a member of the Project Collection Administrators group or have your **Edit process** permission set to **Allow**.
+- To list work item types, you must have your **View project-level information** permission for the project in the collection set to **Allow**.
+- (TFS) To add or customize a WIT, you must be a member of the Project Administrators group or have your **Edit project-level information** permission set to **Allow**.
+- (Azure DevOps Services, Hosted XML) To add or customize a WIT by customizing a process template, you must be a member of the Project Collection Administrators group or have your **Edit process** permission set to **Allow**.
 
 To get added as an administrator, see [Add administrators](../organizations/security/set-project-collection-level-permissions.md).
 
@@ -120,9 +120,9 @@ To learn more about defining fields, see [Add or modify a field](add-modify-fiel
 
 You change the workflow to accomplish the following objectives:
 
-* Add or remove a state, reason, or transition
-* Specify a value for field to be applied during a change in state, reason, or transition
-* Specify a custom **ACTION** to automate field assignments based on a change in state, reason, or transition.
+- Add or remove a state, reason, or transition
+- Specify a value for field to be applied during a change in state, reason, or transition
+- Specify a custom **ACTION** to automate field assignments based on a change in state, reason, or transition.
 
 When you customize the workflow, follow these two steps:
 
@@ -147,17 +147,17 @@ For example, by adding the **EMPTY** rule when the state is set to Active, you c
       <FIELD refname="Microsoft.VSTS.Common.ClosedDate"><EMPTY/></FIELD>
       <FIELD refname="Microsoft.VSTS.Common.ClosedBy"><EMPTY/></FIELD>
    </FIELDS>
-</STATE>  
+</STATE>
 ```
 
 Apply workflow field rules to accomplish the following actions:
 
-* Qualify the value a field can have by specifying **CANNOTLOSEVALUE**, **EMPTY**, **FROZEN**, **NOTSAMEAS**, **READONLY**, and **REQUIRED**
-* Copy a value into a field by using **COPY**, **DEFAULT**, and **SERVERDEFAULT**
-* Restrict who can modify a field
-* Enforce pattern matching on a string field by using **MATCH**
-* Conditionally apply rules based on values in other fields using **WHEN**, **WHENNOT**, **WHENCHANGED**, and **WHENNOTCHANGED**
-* Limit rules to apply to specific users or groups. Most rules support the **for** or **not** attributes to focus who the rule does and doesn't apply to.
+- Qualify the value a field can have by specifying **CANNOTLOSEVALUE**, **EMPTY**, **FROZEN**, **NOTSAMEAS**, **READONLY**, and **REQUIRED**
+- Copy a value into a field by using **COPY**, **DEFAULT**, and **SERVERDEFAULT**
+- Restrict who can modify a field
+- Enforce pattern matching on a string field by using **MATCH**
+- Conditionally apply rules based on values in other fields using **WHEN**, **WHENNOT**, **WHENCHANGED**, and **WHENNOTCHANGED**
+- Limit rules to apply to specific users or groups. Most rules support the **for** or **not** attributes to focus who the rule does and doesn't apply to.
 
 For more information about applying workflow field rules, see [FIELD (Workflow) element reference](https://msdn.microsoft.com/library/aa337626.aspx).
 
@@ -205,7 +205,7 @@ In the web portal, work items appear in query results and on the backlog and boa
 > [!NOTE]  
 > **Feature availability:** <!---For Hosted XML process model, you can customize the WIT color, icon, and workflow state color. -->For On-premises XML, you can customize the workflow state color for TFS 2015.2 or later versions, and you can customize the WIT icon for TFS 2017.2 and later versions.
 
-<img src="media/add-modiy-wit-color-icon-state-color.png" alt="Query results showing wit color, icon, and state color" style="border: 1px solid #C3C3C3;" />  
+<img src="media/add-modiy-wit-color-icon-state-color.png" alt="Query results showing wit color, icon, and state color" style="border: 1px solid #C3C3C3;" />
 
 ## Change the type of an existing work item
 
@@ -237,9 +237,9 @@ If you have a WIT that you want to retire, but maintain the work items that have
 
 If you want to restrict creation of a specific WIT to a group of users, there are two ways to restrict access:
 
-* [Add the WIT to the Hidden Categories group](xml/use-categories-to-group-work-item-types.md) to prevent the majority of contributors from creating them. If you want to allow a group of users access, you [can create a hyperlink to a template](../boards/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them.
+- [Add the WIT to the Hidden Categories group](xml/use-categories-to-group-work-item-types.md) to prevent the majority of contributors from creating them. If you want to allow a group of users access, you [can create a hyperlink to a template](../boards/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them.
 
-* Add [a field rule to the workflow](xml/apply-rule-work-item-field.md) for the System.CreatedBy field to effectively restrict a group of users from creating a work item of a specific type. As the following example shows, the user who creates the work item must belong to the `Allowed Group` in order to save the work item.
+- Add [a field rule to the workflow](xml/apply-rule-work-item-field.md) for the System.CreatedBy field to effectively restrict a group of users from creating a work item of a specific type. As the following example shows, the user who creates the work item must belong to the `Allowed Group` in order to save the work item.
 
   ```xml
   <TRANSITION from=" " to="New">
@@ -269,12 +269,12 @@ This topic addressed how to add and customize WITs and process configuration for
 
 Other related topics or resources:
 
-* [Guide to administrative tasks](../organizations/accounts/organization-management.md)
-* [ProcessConfiguration XML elements](xml/process-configuration-xml-element.md)
-* [**witadmin** command-line tools](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
-* [Customize the work tracking experience](customize-work.md)
-* [Customize cards on boards](../boards/boards/customize-cards.md)
-* [Team Foundation Server - Project Management & Work Item forum](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsworkitemtracking)
+- [Guide to administrative tasks](../organizations/accounts/organization-management.md)
+- [ProcessConfiguration XML elements](xml/process-configuration-xml-element.md)
+- [**witadmin** command-line tools](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
+- [Customize the work tracking experience](customize-work.md)
+- [Customize cards on boards](../boards/boards/customize-cards.md)
+- [Team Foundation Server - Project Management & Work Item forum](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsworkitemtracking)
 
 ## Rename a WIT (On-premises XML)
 

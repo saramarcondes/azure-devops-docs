@@ -12,19 +12,19 @@ You can integrate your on-premises GitHub Enterprise server, BitBucket server or
 
 If your on-premises server is reachable from the servers that run Azure Pipelines service, then:
 
-* you can set up classic build pipelines and configure CI and scheduled triggers
+- you can set up classic build pipelines and configure CI and scheduled triggers
 
 If your on-premises server is not reachable from the servers that run Azure Pipelines service, then:
 
-* you can set up classic build pipelines and start manual builds
-* you cannot configure CI or scheduled triggers for your classic build pipelines
+- you can set up classic build pipelines and start manual builds
+- you cannot configure CI or scheduled triggers for your classic build pipelines
 
 If your on-premises server is reachable from the hosted agents, then you can use the hosted agents to run manual, scheduled, or CI builds. Otherwise, you must set up self-hosted agents that can access your on-premises server and fetch the code.
 
 If you use GitHub Enterprise server that is reachable from the servers that run Azure Pipelines, then
 
-* you can also set up YAML pipelines
-* you can also configure PR triggers for your classic or YAML pipelines
+- you can also set up YAML pipelines
+- you can also configure PR triggers for your classic or YAML pipelines
 
 ### CI triggers
 

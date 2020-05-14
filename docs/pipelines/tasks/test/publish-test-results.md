@@ -52,7 +52,7 @@ and [JaCoCo](https://www.eclemma.org/jacoco/).
 
 If you're using a Windows self-hosted agent, be sure that your machine has this prerequisite installed:
 
-* [.NET Framework](https://docs.microsoft.com/dotnet/framework/install/) 4.6.2 or a later version
+- [.NET Framework](https://docs.microsoft.com/dotnet/framework/install/) 4.6.2 or a later version
 
 <a name="demands"></a>
 
@@ -142,9 +142,9 @@ in a build or release summary, and the corresponding mapping with the attributes
 
 For Docker based apps there are many ways to build your application and run tests:
 
-* Build and test in a build pipeline: build and tests execute in the pipeline and test results are published using the **Publish Test Results** task.
-* Build and test with a multi-stage Dockerfile: build and tests execute inside the container using a multi-stage Docker file, as such test results are not published back to the pipeline.
-* Build, test, and publish results with a Dockerfile: build and tests execute inside the container and results are published back to the pipeline. See the example below.
+- Build and test in a build pipeline: build and tests execute in the pipeline and test results are published using the **Publish Test Results** task.
+- Build and test with a multi-stage Dockerfile: build and tests execute inside the container using a multi-stage Docker file, as such test results are not published back to the pipeline.
+- Build, test, and publish results with a Dockerfile: build and tests execute inside the container and results are published back to the pipeline. See the example below.
 
 <a name="publishtestindocker"></a>
 
@@ -275,10 +275,10 @@ The final image will be published to Docker or Azure Container Registry
 
 1.  Update your build pipeline with the following
 
-    * **Agent pool**: `Hosted Ubuntu 1604`
-      * **dockerId**: Set the value to your Docker ID for DockerHub or the admin user name for Azure Container Registry.
-      * **dockerPassword**: Set the value to your password for DockerHub or the admin password Azure Container Registry.
-    * **YAML file path**: `/.vsts-ci.docker.yml`
+    - **Agent pool**: `Hosted Ubuntu 1604`
+      - **dockerId**: Set the value to your Docker ID for DockerHub or the admin user name for Azure Container Registry.
+      - **dockerPassword**: Set the value to your password for DockerHub or the admin password Azure Container Registry.
+    - **YAML file path**: `/.vsts-ci.docker.yml`
 
 1.  Queue a new build and watch it create and push a Docker image to your registry and the test results to Azure DevOps.
 
@@ -294,12 +294,12 @@ YAML builds are not yet available on TFS.
 
 1.  Select **Pipeline** on the **Tasks** page of the build pipeline editor and edit its properties as follows
 
-    * **Agent queue**: `Hosted Ubuntu 1604`
+    - **Agent queue**: `Hosted Ubuntu 1604`
 
 1.  Add a [Bash task](../utility/bash.md) and configure it as follows to build and copy artifacts to the host:
 
-    * **Type**: Inline
-    * **Script**: To build, test and copy artifacts to host, use the following script:
+    - **Type**: Inline
+    - **Script**: To build, test and copy artifacts to host, use the following script:
 
       ```Bash
       docker build -f Dockerfile.build -t $(dockerId)/dotnetcore-build:$BUILD_BUILDID .
@@ -311,15 +311,15 @@ YAML builds are not yet available on TFS.
 
 1.  Add a **Publish Test Results** task to publish results to the pipeline, and edit the its properties as follows:
 
-    * **Test result format**: `VSTest`
-    * **Test results files**: `**/*.trx`
+    - **Test result format**: `VSTest`
+    - **Test results files**: `**/*.trx`
 
 1.  Add a [Bash task](../utility/bash.md) to publish the final image to the repository, and edit the its properties as follows:
 
-    * **Type**: `Inline`
-    * **Script**:
+    - **Type**: `Inline`
+    - **Script**:
 
-      * To push to Docker Hub, use the following script:
+      - To push to Docker Hub, use the following script:
 
         ```Bash
         docker build -f Dockerfile -t $(dockerId)/dotnetcore-sample:$BUILD_BUILDID .
@@ -327,7 +327,7 @@ YAML builds are not yet available on TFS.
         docker push $(dockerId)/dotnetcore-sample:$BUILD_BUILDID
         ```
 
-      * To push to Azure Container Registry, use the following script:
+      - To push to Azure Container Registry, use the following script:
 
         ```Bash
         docker build -t $(dockerId).azurecr.io/dotnetcore-sample:$BUILD_BUILDID .
@@ -341,8 +341,8 @@ YAML builds are not yet available on TFS.
 
 1.  In the **Variables** tab of the build pipeline, define two variables:
 
-    * **dockerId**: Set the value to your Docker ID for DockerHub or the admin user name for Azure Container Registry.
-    * **dockerPassword**: Set the value to your password for DockerHub or the admin password Azure Container Registry, and mark it as secure.
+    - **dockerId**: Set the value to your Docker ID for DockerHub or the admin user name for Azure Container Registry.
+    - **dockerPassword**: Set the value to your password for DockerHub or the admin password Azure Container Registry, and mark it as secure.
 
 1.  Save the pipeline and queue a build. Watch it create and push a Docker image to your registry and the test results to Azure DevOps.
 
@@ -376,8 +376,8 @@ The Publish Test Results task provides support for attachments for both test run
 
 ## Related tasks
 
-* [Visual Studio Test](./vstest.md)
-* [Publish Code Coverage Results](publish-code-coverage-results.md)
+- [Visual Studio Test](./vstest.md)
+- [Publish Code Coverage Results](publish-code-coverage-results.md)
 
 ## Frequently Asked Questions
 

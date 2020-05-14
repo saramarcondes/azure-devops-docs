@@ -22,11 +22,11 @@ ms.date: 02/02/2017
 
 You use the `LinksControlOptions` element to define the options for controlling what links can be added to a work item and the default columns that you want to appear for the list of links in a work item. When you add a links control to a work item form, you can specify filters that restrict the types of links that users can be view and create and the types of work items to which users can create links. Specifically, you use the following elements as indicated:
 
-* `WorkItemLinkFilters`: Use to restrict the types of links between work items in the current project.
+- `WorkItemLinkFilters`: Use to restrict the types of links between work items in the current project.
 
-* `ExternalLinkFilters`: Use to restrict the types of links that can be created between work items and other objects, such as changesets, hyperlinks, or version controlled files.
+- `ExternalLinkFilters`: Use to restrict the types of links that can be created between work items and other objects, such as changesets, hyperlinks, or version controlled files.
 
-* `WorkItemTypeFilters`: Use to restrict the link relationships that users can create based on work item type and whether the work item is defined in the current project.
+- `WorkItemTypeFilters`: Use to restrict the link relationships that users can create based on work item type and whether the work item is defined in the current project.
 
 In each of these elements, you can specify `Filter` elements to specify the link types or work item types that you want to include or exclude. For more information about how to use these elements, see [Define link controls to restrict link relationships](define-link-controls.md).
 
@@ -37,20 +37,20 @@ The `LinksControlOptions` element is a child element of the `CONTROL` element.
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <LinksControlOptions>  
->    <WorkItemLinkFilters FilterType="include | exclude | includeAll | excludeAll">  
->        <Filter LinkType="linkTypeRefName" FilterOn="reversename | forwardname" />  
->    </WorkItemLinkFilters>  
->    <ExternalLinkFilters FilterType ="include | exclude | includeAll | excludeAll">  
->        <Filter LinkType="externalLinkName"/>  
->    </ExternalLinkFilters>  
->    <WorkItemTypeFilters Scope=" project | all" FilterType=" include | exclude | includeAll" />  
->        <Filter WorkItemType="workItemTypeReferenceName"/>  
->    </WorkItemTypeFilters>  
->    <LinkColumns>  
->       <LinkColumn RefName="reference name" | LinkAttribute="link attribute name"/>  
->    </LinkColumns>  
-> </LinksControlOptions>  
+> <LinksControlOptions>
+>    <WorkItemLinkFilters FilterType="include | exclude | includeAll | excludeAll">
+>        <Filter LinkType="linkTypeRefName" FilterOn="reversename | forwardname" />
+>    </WorkItemLinkFilters>
+>    <ExternalLinkFilters FilterType ="include | exclude | includeAll | excludeAll">
+>        <Filter LinkType="externalLinkName"/>
+>    </ExternalLinkFilters>
+>    <WorkItemTypeFilters Scope=" project | all" FilterType=" include | exclude | includeAll" />
+>        <Filter WorkItemType="workItemTypeReferenceName"/>
+>    </WorkItemTypeFilters>
+>    <LinkColumns>
+>       <LinkColumn RefName="reference name" | LinkAttribute="link attribute name"/>
+>    </LinkColumns>
+> </LinksControlOptions>
 > ```
 
 ## Attributes and elements
@@ -75,7 +75,7 @@ The following sections describe attributes, child elements, and parent elements.
 |                       | `Scope`         | Optional `WorkItemTypeFilters` attribute.<br /><br /> Defines the scope of the filter applied to the set of work item types provided in the set of `Filter` elements.<br /><br /> Valid values that you can use are:<br /><br /> - `all`: Use to allow links to be created to all work item types specified in the `Filter` tags.<br />- `project`: Use to allow links to be created only to those work item types that are defined for the current project.<br /><br /> If unspecified, links to all types of work items are allowed.                                                                                                   |
 |                       | `FilterType`    | Required `WorkItemTypeFilters` attribute.<br /><br /> Defines the method that is used to filter the set of work item types provided in the set of `Filter` elements.<br /><br /> You can use the following values:<br /><br /> - `exclude`: Use to disallow the work item types in the `Filter` elements.<br />- `excludeAll`: Use to disallow all work item types.<br />- `include`: Use to allow the work item types in the `Filter` elements.<br />- `includeAll`: Use to allow all work item types.<br /><br /> If you do not specify any of these values, links to all work item types are allowed.                                 |
 | `Filter`              |                 | Optional `WorkItemTypeFilters` element when the `FilterType` is `exclude` or `include`.<br /><br /> When the `FilterType` is `excludeAll` or `includeAll`, you should not specify any `Filter` elements.<br /><br /> Specifies the types of work items that are to be included or excluded from the set of work item types that can be linked to.                                                                                                                                                                                                                                                                                        |
-|                       | `WorkItemType`  | Required `Filter` attribute.<br /><br /> Specifies the reference name of a work item type to be filtered. The attribute type is: `typelib:NonEmptyPlainConstant`.<br /><br /> Minimum length: 1; maximum length: 255.<br /><br /> Pattern value: ^[^\\\\]\*$<br /><br /> Pattern value example: Task                                                                                                                                                                                                                                                                                                                                     |
+|                       | `WorkItemType`  | Required `Filter` attribute.<br /><br /> Specifies the reference name of a work item type to be filtered. The attribute type is: `typelib:NonEmptyPlainConstant`.<br /><br /> Minimum length: 1; maximum length: 255.<br /><br /> Pattern value: ^[^\\\\]\*\$<br /><br /> Pattern value example: Task                                                                                                                                                                                                                                                                                                                                    |
 | `LinkColumns`         |                 | Optional `LinksControlOptions` element.<br /><br /> Provides a container for one or more `LinkColumn` elements.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | `LinkColumn`          |                 | Required `LinkColumns` element.<br /><br /> Specifies the work item fields and link type attributes displayed for the list of links defined for a work item.<br /><br /> This column list is the default display. The user can add and remove columns from the link list.<br /><br /> The order in which the `LinkColumn` elements are listed defines the order in which the column fields are displayed in the work item form.                                                                                                                                                                                                          |
 |                       | `RefName`       | Optional `LinkColumn` attribute. Specify `RefName` or `LinkAttribute`, but not both.<br /><br /> Specifies the reference name corresponding to a valid work item field for the project collection. The attribute type is `typelib:ReferenceFieldName`.                                                                                                                                                                                                                                                                                                                                                                                   |
@@ -91,10 +91,10 @@ The following sections describe attributes, child elements, and parent elements.
 
 `LinksControlOptions` is an optional child element of `Control` element where `ControlType="LinksControl"`. You can use the `LinksControlOptions` element to support the following actions:
 
-* Specify the restrictions that govern the creation of relationships to other work items based on the link type and, optionally, the forward and reverse names of the link types.
-* Specify the restrictions that govern the creation of relationships to objects other than work items, such as changeset, hyperlink, and so on, based on external link types.
-* Specify the restrictions that govern the creation of relationships to other work items based on work item type and, optionally, the project where those work items are defined.
-* Specify the default column fields that you want to display information for the link list.
+- Specify the restrictions that govern the creation of relationships to other work items based on the link type and, optionally, the forward and reverse names of the link types.
+- Specify the restrictions that govern the creation of relationships to objects other than work items, such as changeset, hyperlink, and so on, based on external link types.
+- Specify the restrictions that govern the creation of relationships to other work items based on work item type and, optionally, the project where those work items are defined.
+- Specify the default column fields that you want to display information for the link list.
 
 ## Example
 
@@ -103,25 +103,25 @@ The following example specifies how to enable the creation of links whose type i
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <Control Type="LinksControl" Name="TestedBy" Label="&Work items testing this bug:" LabelPosition="Top">  
->    <LinksControlOptions>  
->       <WorkItemLinkFilters FilterType="include">  
->          <Filter LinkType="Microsoft.VSTS.Common.TestedBy" FilterOn="forwardname" />  
->       </WorkItemLinkFilters>  
->       <WorkItemTypeFilters FilterType="include">  
->           <Filter WorkItemType="Test Case" />  
->       </WorkItemTypeFilters>  
->           <ExternalLinkFilters FilterType="excludeAll"/>  
->       <LinkColumns>  
->           <LinkColumn RefName="System.ID" />  
->           <LinkColumn RefName="System.WorkItemType" />  
->           <LinkColumn RefName="System.Title" />  
->           <LinkColumn RefName="System.AssignedTo" />  
->           <LinkColumn RefName="System.State" />  
->           <LinkColumn LinkAttribute="System.Links.Comment" />  
->       </LinkColumns>  
->    </LinksControlOptions>  
-> </Control>  
+> <Control Type="LinksControl" Name="TestedBy" Label="&Work items testing this bug:" LabelPosition="Top">
+>    <LinksControlOptions>
+>       <WorkItemLinkFilters FilterType="include">
+>          <Filter LinkType="Microsoft.VSTS.Common.TestedBy" FilterOn="forwardname" />
+>       </WorkItemLinkFilters>
+>       <WorkItemTypeFilters FilterType="include">
+>           <Filter WorkItemType="Test Case" />
+>       </WorkItemTypeFilters>
+>           <ExternalLinkFilters FilterType="excludeAll"/>
+>       <LinkColumns>
+>           <LinkColumn RefName="System.ID" />
+>           <LinkColumn RefName="System.WorkItemType" />
+>           <LinkColumn RefName="System.Title" />
+>           <LinkColumn RefName="System.AssignedTo" />
+>           <LinkColumn RefName="System.State" />
+>           <LinkColumn LinkAttribute="System.Links.Comment" />
+>       </LinkColumns>
+>    </LinksControlOptions>
+> </Control>
 > ```
 
 <a name="Toolbar"></a>
@@ -134,9 +134,9 @@ Each `Control` element of Type=LinksControl provides a toolbar, which contains t
 
 These buttons become available only after you perform a specific action:
 
-* The button to create a work item that is linked to the open work item (![Add New Linked Work Item icon](media/icon_addnewlinkedworkitem.png "Icon_addNewLinkedWorkItem")) becomes available only after you save the open work item.
-* The buttons to open the list of work items in a query (![Open in Query](media/icon_openinquery.png "Icon_openInQuery")) and in a Microsoft Office client (![Open in Office](media/wit_iconoffice.png "WIT_IconOffice")) become available only when at least one work item is listed in the links control tab.
-* The buttons to open a work item (![Open Work Item](media/icon_openworkitem.png "Icon_openWorkItem")), edit a link (![Edit link](media/icon_witlinkedit.png "Icon_WITLinkEdit")), and delete a link (![Delete link](media/icon_witlinkdelete.png "Icon_WITLinkDelete")) become available only after you click one or more work items listed in the links control tab.
+- The button to create a work item that is linked to the open work item (![Add New Linked Work Item icon](media/icon_addnewlinkedworkitem.png "Icon_addNewLinkedWorkItem")) becomes available only after you save the open work item.
+- The buttons to open the list of work items in a query (![Open in Query](media/icon_openinquery.png "Icon_openInQuery")) and in a Microsoft Office client (![Open in Office](media/wit_iconoffice.png "WIT_IconOffice")) become available only when at least one work item is listed in the links control tab.
+- The buttons to open a work item (![Open Work Item](media/icon_openworkitem.png "Icon_openWorkItem")), edit a link (![Edit link](media/icon_witlinkedit.png "Icon_WITLinkEdit")), and delete a link (![Delete link](media/icon_witlinkdelete.png "Icon_WITLinkDelete")) become available only after you click one or more work items listed in the links control tab.
 
 The links control that is displayed is the same for both the web portal and Team Explorer, except when it is configured to only render `Storyboard` links. In that case, the toolbar only contains those controls to add a new link, open the linked item, and delete the link. Also, the web portal version displays the **Start Storyboarding** link within the control menu.
 
@@ -144,6 +144,6 @@ The links control that is displayed is the same for both the web portal and Team
 
 ## Related articles
 
-* [LinkTypes elements reference, Define a custom link type](link-type-element-reference.md)
-* [Define link controls to restrict link relationships](define-link-controls.md)
-* [Specify work item form controls](specify-work-item-form-controls.md)
+- [LinkTypes elements reference, Define a custom link type](link-type-element-reference.md)
+- [Define link controls to restrict link relationships](define-link-controls.md)
+- [Specify work item form controls](specify-work-item-form-controls.md)

@@ -29,9 +29,9 @@ Team Foundation together with the MSF for CMMI process template supports iterati
 
 The project schedule is organized into a series of iterations that are typically four to six weeks long. Each iteration ends with a demonstration of usable, tested software. To schedule sprints, see [Schedule sprints](../../../sprints/define-sprints.md).
 
-* The _project plan_ states what feature requirements will be developed in each iteration. The project plan is developed in Iteration 0 and reviewed at the start of each iteration. To create and view the project plan, see [Create backlog](../../../backlogs/create-your-backlog.md).
+- The _project plan_ states what feature requirements will be developed in each iteration. The project plan is developed in Iteration 0 and reviewed at the start of each iteration. To create and view the project plan, see [Create backlog](../../../backlogs/create-your-backlog.md).
 
-* Each _iteration plan_ states what tasks will be performed during that iteration. Most tasks are development and test work that is needed to fulfill the feature requirements that are scheduled for that iteration. The iteration plan can be viewed through the [sprint backlog page](../../../sprints/assign-work-sprint.md).
+- Each _iteration plan_ states what tasks will be performed during that iteration. Most tasks are development and test work that is needed to fulfill the feature requirements that are scheduled for that iteration. The iteration plan can be viewed through the [sprint backlog page](../../../sprints/assign-work-sprint.md).
 
   Iterative work does not automatically manage risks. To minimize risk, you must arrange the project plan in increments. Early iterations should provide an "end-to-end thin slice," that is, a minimal version of the most important behaviors of the product. Later iterations add more functionality.
 
@@ -39,11 +39,11 @@ The project schedule is organized into a series of iterations that are typically
 
   Incremental development has the following benefits:
 
-* Meets the true requirements. Stakeholders have the opportunity to try out the product, which always results in improvements to their stated requirements.
+- Meets the true requirements. Stakeholders have the opportunity to try out the product, which always results in improvements to their stated requirements.
 
-* Tunes the architecture. Allows the development team to discover and address any difficulties that occur with their platform or potential improvements to their design.
+- Tunes the architecture. Allows the development team to discover and address any difficulties that occur with their platform or potential improvements to their design.
 
-* Ensures results. Stakeholders know that, even if project resources are cut part-way through, the expenditure to date has not been not wasted. The same is true if the development estimates prove to have been optimistic and you must drop the less important features.
+- Ensures results. Stakeholders know that, even if project resources are cut part-way through, the expenditure to date has not been not wasted. The same is true if the development estimates prove to have been optimistic and you must drop the less important features.
 
   For more information about how to express the requirements in an appropriate form for incremental development, see [Develop requirements](guidance-develop-requirements.md).
 
@@ -67,6 +67,6 @@ The teams can share a series of integrations, but this is not always necessary. 
 
 ## Related articles
 
-* **The Project Cycle/[Project activities](guidance-project-activities.md):** Start the project, gather requirements, create a project plan, divide it into iterations, and deliver releases. Manage risks, and manage changes to the plan.
-* **The Iteration Cycle/[Iteration activities](guidance-iteration-activities.md):** Review and update requirements, plan the tasks to implement requirements, and manage issues as they occur.
-* [CMMI process](../cmmi-process.md)
+- **The Project Cycle/[Project activities](guidance-project-activities.md):** Start the project, gather requirements, create a project plan, divide it into iterations, and deliver releases. Manage risks, and manage changes to the plan.
+- **The Iteration Cycle/[Iteration activities](guidance-iteration-activities.md):** Review and update requirements, plan the tasks to implement requirements, and manage issues as they occur.
+- [CMMI process](../cmmi-process.md)

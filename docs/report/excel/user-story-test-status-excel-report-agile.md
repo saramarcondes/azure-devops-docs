@@ -41,18 +41,18 @@ The report is based on a PivotChart report that shows the most recent data that 
 
 For the User Story Test Status report to be useful and accurate, the team must perform the following activities:
 
-* Define test cases and user stories, and link test cases to user stories by using the **Tested By** link type.
+- Define test cases and user stories, and link test cases to user stories by using the **Tested By** link type.
 
-* Define test plans, and assign test cases to them.
+- Define test plans, and assign test cases to them.
 
-* For manual tests, mark the results of each validation step in the test case as passed or failed.
+- For manual tests, mark the results of each validation step in the test case as passed or failed.
 
   > [!IMPORTANT]
   > Testers must mark a test step with a status if it is a validation test step. The overall result for a test case reflects the status of all the test steps that the tester marked. Therefore, the test case will have a status of failed if the tester marked any test step as failed or not marked.
 
   For automated tests, each test case is automatically marked as passed or failed.
 
-* (Optional) To support filtering, assign **Iteration** and **Area** paths to each test case.
+- (Optional) To support filtering, assign **Iteration** and **Area** paths to each test case.
 
 <a name="Interpreting"></a>
 
@@ -62,14 +62,14 @@ You should expect the User Story Test Status report to vary depending on where y
 
 You can review the report to find answers to the following questions:
 
-* Which user stories have a low overall count of test cases?
-* Which user stories have a high overall count of test cases that are blocked or have never been run?
-* Does the test case coverage for each user story meet expectations?
-* Which user stories have a high rate of test failures?
-* What is the average number of test cases that are defined per user story?
-* Which user stories have a high rate of test failures?
-* Is the team running test cases for each user story?
-* If test cases are blocked or not being run, does the team understand the blocking issues, and is the team addressing them?
+- Which user stories have a low overall count of test cases?
+- Which user stories have a high overall count of test cases that are blocked or have never been run?
+- Does the test case coverage for each user story meet expectations?
+- Which user stories have a high rate of test failures?
+- What is the average number of test cases that are defined per user story?
+- Which user stories have a high rate of test failures?
+- Is the team running test cases for each user story?
+- If test cases are blocked or not being run, does the team understand the blocking issues, and is the team addressing them?
 
 <a name="Updating"></a>
 
@@ -84,5 +84,5 @@ You can update the User Story Test Status report by opening it in Office Excel a
 
 ## Related articles
 
-* [Excel reports](excel-reports.md)
-* [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)
+- [Excel reports](excel-reports.md)
+- [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)

@@ -18,11 +18,11 @@ This error occurs when the permissions granted to your user account on the SQL S
 
 ### To correct this error
 
-* Contact the administrator for the SQL Server Reporting Services server {_name_} and ask that your user account be assigned the role of **Content Manager**. See also [Grant permissions to view or create reports](../../report/admin/grant-permissions-to-reports.md)
+- Contact the administrator for the SQL Server Reporting Services server {_name_} and ask that your user account be assigned the role of **Content Manager**. See also [Grant permissions to view or create reports](../../report/admin/grant-permissions-to-reports.md)
 
 You must also have the **Full Control** permission set on the server that hosts SharePoint Products. Your Team Foundation Server administrator may also be able to grant you the required permissions.
 
 ## Related articles
 
-* [Create a project](../../organizations/projects/create-project.md)
-* [Grant permissions to view or create reports](../../report/admin/grant-permissions-to-reports.md)
+- [Create a project](../../organizations/projects/create-project.md)
+- [Grant permissions to view or create reports](../../report/admin/grant-permissions-to-reports.md)

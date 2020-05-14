@@ -27,7 +27,7 @@ You must be one of the **Contributors** for your project. See [Team Foundation S
 
 ## Find a changeset by ID
 
-* In [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md), press Ctrl + G.
+- In [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md), press Ctrl + G.
 
   The **Go to Changeset** dialog box appears.
 
@@ -78,11 +78,11 @@ You must be one of the **Contributors** for your project. See [Team Foundation S
 
 4.  (Optional) In the **Range** section, choose one of the following options:
 
-    * **All changes** Retrieves all changesets that were applied to that file or folder.
+    - **All changes** Retrieves all changesets that were applied to that file or folder.
 
-    * **Changeset number** Retrieves changesets from a range of numbers. In the **from** and **to** boxes, type the range.
+    - **Changeset number** Retrieves changesets from a range of numbers. In the **from** and **to** boxes, type the range.
 
-    * **Created date** Retrieves changesets from a range of dates. In the **between** and **and** boxes, use the calendars to specify start and end dates.
+    - **Created date** Retrieves changesets from a range of dates. In the **between** and **and** boxes, use the calendars to specify start and end dates.
 
 5.  Choose **Find**.
 
@@ -104,13 +104,13 @@ You must be one of the **Contributors** for your project. See [Team Foundation S
 
 The **Changeset Details** view in Team Explorer has links to perform the following tasks:
 
-* **Rollback** to remove the effects of the changeset. See [Roll back changesets](roll-back-changesets.md).
+- **Rollback** to remove the effects of the changeset. See [Roll back changesets](roll-back-changesets.md).
 
-* **Track** to determine which branches have and have not received a set of changes. See [View where and when changesets have been merged](view-where-when-changesets-have-been-merged.md).
+- **Track** to determine which branches have and have not received a set of changes. See [View where and when changesets have been merged](view-where-when-changesets-have-been-merged.md).
 
-* **Actions**, **Request Review** to request a code review.
+- **Actions**, **Request Review** to request a code review.
 
-* **Actions**, **Open in Browser** to view the changeset in your browser (for example, if you want to copy the URL into an email to discuss the change with your team).
+- **Actions**, **Open in Browser** to view the changeset in your browser (for example, if you want to copy the URL into an email to discuss the change with your team).
 
 ## Work from the command prompt
 
@@ -124,6 +124,6 @@ To view or modify changesets and to learn about other options, see [Changeset Co
 
 ## Tips
 
-* ![Tip](media/find-view-changesets/IC572374.png) You can download the version of a file in a changeset. See [Download (get) files from the Server](download-get-files-from-server.md).
+- ![Tip](media/find-view-changesets/IC572374.png) You can download the version of a file in a changeset. See [Download (get) files from the Server](download-get-files-from-server.md).
 
-* ![Tip](media/find-view-changesets/IC572374.png) You can add a link between a changeset and one or more work items. See [Manage dependencies, link work items to support traceability](../../boards/queries/link-work-items-support-traceability.md).
+- ![Tip](media/find-view-changesets/IC572374.png) You can add a link between a changeset and one or more work items. See [Manage dependencies, link work items to support traceability](../../boards/queries/link-work-items-support-traceability.md).

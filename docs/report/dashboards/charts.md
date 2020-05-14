@@ -44,10 +44,10 @@ By default, users with **Basic** access or higher can create charts from a flat 
 
 ::: moniker range="azure-devops"
 
-* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/boards/get-started/sign-up-invite-teammates).
-* To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).
-* To add a chart to a team dashboard, you must be a member of the team, be a team administrator, or be a member of the **Project Administrators** security group.
-* You can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md), which is another way to add charts to a dashboard.
+- You must connect to a project. If you don't have a project yet, [create one](/azure/devops/boards/get-started/sign-up-invite-teammates).
+- To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).
+- To add a chart to a team dashboard, you must be a member of the team, be a team administrator, or be a member of the **Project Administrators** security group.
+- You can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md), which is another way to add charts to a dashboard.
 
 > [!NOTE]  
 > Users with **Stakeholder** access for a public project have full access to query chart features just like users with **Basic** access. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
@@ -56,26 +56,26 @@ By default, users with **Basic** access or higher can create charts from a flat 
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
-* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
-* To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).
-* To add a chart to a team dashboard, you must be a member of the team, be a team administrator, or be a member of the **Project Administrators** security group.
-* You can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md), which is another way to add charts to a dashboard.
+- You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
+- To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).
+- To add a chart to a team dashboard, you must be a member of the team, be a team administrator, or be a member of the **Project Administrators** security group.
+- You can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md), which is another way to add charts to a dashboard.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
 
-* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
-* To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).
-* To add a chart to a team dashboard, you must be a member of the team, be a team administrator, or be a member of the **Project Administrators** security group.
-* You can pin charts to a team homepage, and with TFS 2015.1 and later versions, you can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md)
+- You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
+- To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).
+- To add a chart to a team dashboard, you must be a member of the team, be a team administrator, or be a member of the **Project Administrators** security group.
+- You can pin charts to a team homepage, and with TFS 2015.1 and later versions, you can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md)
 
 ::: moniker-end
 
 ::: moniker range="tfs-2013"
 
-* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
-* To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).
+- You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
+- To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).
 
 ::: moniker-end
 
@@ -110,10 +110,10 @@ To learn more about default groups, see [About permissions and groups](../../org
 
     You can group by any field except date-time and free-form text fields. For example:
 
-    * To group by work assignments, include the **Assigned To** in the query or column options
-    * To group by sprints or iterations, include the **Iteration Path** in the query or column options
-    * To group by team, include the **Area Path** or **Node Name** in the query or column options
-    * To group by a custom field, include it in a query clause or column options.
+    - To group by work assignments, include the **Assigned To** in the query or column options
+    - To group by sprints or iterations, include the **Iteration Path** in the query or column options
+    - To group by team, include the **Area Path** or **Node Name** in the query or column options
+    - To group by a custom field, include it in a query clause or column options.
 
     If you receive an error message when you close the chart editor, you need to request [Basic access](../../organizations/security/change-access-levels.md).
 
@@ -288,20 +288,20 @@ The widget requires TFS 2015.2 or a later version. You add it to a team dashboar
 
 Now you know how to create status and trend charts for work items. A few things to keep in mind...
 
-* To create similar charts for tests, see [Track your test results](../../test/track-test-status.md)
-* Charts you create for queries that are saved under Shared Queries are viewable by all team members and can be added to team dashboards or pinned to a team homepage
-* Charts that you create for queries under your My Queries folder are visible only to you
-* You can copy and email the URL of any chart page to share it with a team member
-* For additional examples of charts created from numeric fields, see [Query by a numeric field](../../boards/queries/query-numeric.md).
+- To create similar charts for tests, see [Track your test results](../../test/track-test-status.md)
+- Charts you create for queries that are saved under Shared Queries are viewable by all team members and can be added to team dashboards or pinned to a team homepage
+- Charts that you create for queries under your My Queries folder are visible only to you
+- You can copy and email the URL of any chart page to share it with a team member
+- For additional examples of charts created from numeric fields, see [Query by a numeric field](../../boards/queries/query-numeric.md).
 
 Also, from the web portal, you can view the following charts:
 
-* [Cumulative flow diagram](cumulative-flow.md)
-* [Team velocity](team-velocity.md)
-* [View/configure sprint burndown](configure-sprint-burndown.md)
-* [Test progress and test results](../../test/track-test-status.md)
-* [Add widgets and chart to a dashboard](add-widget-to-dashboard.md)
-* [Widget catalog charts](widget-catalog.md)
+- [Cumulative flow diagram](cumulative-flow.md)
+- [Team velocity](team-velocity.md)
+- [View/configure sprint burndown](configure-sprint-burndown.md)
+- [Test progress and test results](../../test/track-test-status.md)
+- [Add widgets and chart to a dashboard](add-widget-to-dashboard.md)
+- [Widget catalog charts](widget-catalog.md)
 
 [!INCLUDE [temp](../../boards/includes/image-differences-with-wits.md)]
 

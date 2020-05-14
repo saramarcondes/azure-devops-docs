@@ -22,12 +22,12 @@ For more information about using Azure AD with Azure DevOps, see the [conceptual
 
 ## Prerequisites
 
-* Ensure you're a Project Collection Administrator or [owner of the organization](../security/lookup-organization-owner-admin.md) to make the connection.
-* Ensure that you exist in Azure AD as a _member_. For more information, see [how you can convert an Azure AD _guest_ into a _member_](faq-azure-access.md#q-how-can-i-convert-an-azure-ad-guest-into-a-member).
-* Inform users of the upcoming change.
+- Ensure you're a Project Collection Administrator or [owner of the organization](../security/lookup-organization-owner-admin.md) to make the connection.
+- Ensure that you exist in Azure AD as a _member_. For more information, see [how you can convert an Azure AD _guest_ into a _member_](faq-azure-access.md#q-how-can-i-convert-an-azure-ad-guest-into-a-member).
+- Inform users of the upcoming change.
   There's no downtime during this change, but users are affected. Let them know before you begin that there's a short series of steps to complete. As your company transitions from Microsoft account (MSA) to Azure AD identities, your users' benefits continue with their new identity, as long as their emails match.
-* Delete unwanted users from your organization. For example, you can remove a user who left the company and is no longer an employee.
-* Prepare your mapping list for inviting users to Azure AD.
+- Delete unwanted users from your organization. For example, you can remove a user who left the company and is no longer an employee.
+- Prepare your mapping list for inviting users to Azure AD.
 
   1.  Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
   2.  Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
@@ -78,8 +78,8 @@ For more information about using Azure AD with Azure DevOps, see the [conceptual
 
 When you inform your users of the completed change, include the following tasks for each user in the organization to complete:
 
-* Clear the cache for the [Git Credential Manager](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/blob/master/Docs/Faq.md#q-why-is-gitexe-failing-to-authenticate-after-linkingunlinking-your-visual-studio-team-services-organization-from-azure-active-directory) if you use Visual Studio or the Git command-line tool. Delete the _%LocalAppData%\GitCredentialManager\tenant.cache_ file on each client machine.
-* [Regenerate new personal access tokens](use-personal-access-tokens-to-authenticate.md). Complete the following steps:
+- Clear the cache for the [Git Credential Manager](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/blob/master/Docs/Faq.md#q-why-is-gitexe-failing-to-authenticate-after-linkingunlinking-your-visual-studio-team-services-organization-from-azure-active-directory) if you use Visual Studio or the Git command-line tool. Delete the _%LocalAppData%\GitCredentialManager\tenant.cache_ file on each client machine.
+- [Regenerate new personal access tokens](use-personal-access-tokens-to-authenticate.md). Complete the following steps:
 
   a. In Azure DevOps, select your profile icon, and then select **Security** from the resulting dropdown menu.
 
@@ -95,7 +95,7 @@ When you inform your users of the completed change, include the following tasks 
 
   d. When the token is created, copy it, as it can't be viewed again.
 
-* Request that SSH keys be manually cleared by [Support](https://azure.microsoft.com/support/devops/), and then recreate SSH keys. Complete the following steps.
+- Request that SSH keys be manually cleared by [Support](https://azure.microsoft.com/support/devops/), and then recreate SSH keys. Complete the following steps.
 
   a. In Azure DevOps, select your profile icon, and then select **Security** from the resulting dropdown menu.
 
@@ -111,13 +111,13 @@ When you inform your users of the completed change, include the following tasks 
 
   d. When the token's created, copy it, as it can't be viewed again.
 
-* [Rename your Microsoft account](https://support.microsoft.com/help/11545/microsoft-account-rename-your-personal-account) to a different email that doesn't conflict with your Azure AD identity. Doing so ensures that you won't be prompted to choose between accounts.
-* Adjust your Visual Studio subscription if the UPN used inside your Azure DevOps Services organization has changed. You can have it reassigned to your new UPN, or set that UPN as the alternate account inside the subscription. For more information, see [how to add an alternate account to your subscription](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity#add-an-alternate-account-to-your-subscription).
+- [Rename your Microsoft account](https://support.microsoft.com/help/11545/microsoft-account-rename-your-personal-account) to a different email that doesn't conflict with your Azure AD identity. Doing so ensures that you won't be prompted to choose between accounts.
+- Adjust your Visual Studio subscription if the UPN used inside your Azure DevOps Services organization has changed. You can have it reassigned to your new UPN, or set that UPN as the alternate account inside the subscription. For more information, see [how to add an alternate account to your subscription](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity#add-an-alternate-account-to-your-subscription).
 
 ## Related articles
 
-* [Get a list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md)
-* [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
-* [Disconnect from Azure AD](disconnect-organization-from-azure-ad.md)
-* [Change Azure AD connection](change-azure-ad-connection.md)
-* [Frequently asked questions (FAQs) about connecting, disconnecting, or changing your Azure AD](faq-azure-access.md#connect-to-disconnect-from-or-change-azure-ad-connection)
+- [Get a list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md)
+- [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
+- [Disconnect from Azure AD](disconnect-organization-from-azure-ad.md)
+- [Change Azure AD connection](change-azure-ad-connection.md)
+- [Frequently asked questions (FAQs) about connecting, disconnecting, or changing your Azure AD](faq-azure-access.md#connect-to-disconnect-from-or-change-azure-ad-connection)

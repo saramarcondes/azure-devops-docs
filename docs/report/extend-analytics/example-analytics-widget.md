@@ -19,9 +19,9 @@ You can build your own Analytics widget to display in a [Dashboard](../dashboard
 
 > [!div class="checklist"]
 >
-> * How to render trend lines associated with work item states
-> * How to query a dataset, whe a user will configure through the widget configuration view
-> * How to build and publish the widget to the Azure DevOps marketplace
+> - How to render trend lines associated with work item states
+> - How to query a dataset, whe a user will configure through the widget configuration view
+> - How to build and publish the widget to the Azure DevOps marketplace
 >   With this information, you'll be able to create your own Analytics widget.
 
 ![View of Configuration with Preview of Widget](./media/extend-analytics-widget.png)
@@ -56,5 +56,5 @@ To avoid excess complexity in the sample, we omitted certain technologies and pr
 
 ## Related articles
 
-* [What is Analytics?](../powerbi/what-is-analytics.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json)
-* [Widgets based on Analytics](../dashboards/analytics-widgets.md)
+- [What is Analytics?](../powerbi/what-is-analytics.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json)
+- [Widgets based on Analytics](../dashboards/analytics-widgets.md)

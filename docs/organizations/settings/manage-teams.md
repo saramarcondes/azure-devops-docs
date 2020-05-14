@@ -23,15 +23,15 @@ Most permissions are governed by security groups or defined at the object level.
 
 Then, those team admins should look at doing the following specific tasks:
 
-* Add team members
-* Subscribe to area and iteration paths
-* Configure backlogs and other common team settings
-* Configure Kanban boards
+- Add team members
+- Subscribe to area and iteration paths
+- Configure backlogs and other common team settings
+- Configure Kanban boards
 
 Optional tasks to consider include:
 
-* Configure and manage team dashboards
-* Configure team notifications
+- Configure and manage team dashboards
+- Configure team notifications
 
 > [!NOTE]  
 > In addition to team administrators, all members of the Project Administrators and Project Collection Administrators groups can manage settings for all teams. To add a team, see [Add teams](add-teams.md).
@@ -40,27 +40,27 @@ Optional tasks to consider include:
 
 ## Open the team profile and access team tools
 
-* Open a team profile to quickly access items defined for a team. The team profile is available from the **Overview>Dashboards**, **Boards>Boards**, **Boards>Backlogs**, and **Boards>Sprints** pages.
+- Open a team profile to quickly access items defined for a team. The team profile is available from the **Overview>Dashboards**, **Boards>Boards**, **Boards>Backlogs**, and **Boards>Sprints** pages.
 
-      	> [!div class="mx-imgBorder"]  
+      	> [!div class="mx-imgBorder"]
       	> ![Open team profile](../../project/navigation/media/breadcrumbs/open-team-profile.png)
 
       	A panel opens that shows all items defined for the team.
 
-      	> [!div class="mx-imgBorder"]  
+      	> [!div class="mx-imgBorder"]
       	> ![Team profile all items](../../project/navigation/media/breadcrumbs/team-profile-all-items.png)
 
-* You can filter the list to show only **Dashboards**, **Boards**, **Backlogs**, or **Sprints** by choosing from the menu.
+- You can filter the list to show only **Dashboards**, **Boards**, **Backlogs**, or **Sprints** by choosing from the menu.
 
-      	> [!div class="mx-imgBorder"]  
+      	> [!div class="mx-imgBorder"]
       	> ![Filter team tools](../../project/navigation/media/breadcrumbs/filter-team-profile.png)
 
-* To view the team admins and members of the team, choose **Members**.
+- To view the team admins and members of the team, choose **Members**.
 
-      	> [!div class="mx-imgBorder"]  
+      	> [!div class="mx-imgBorder"]
       	> ![Team members](../../project/navigation/media/breadcrumbs/team-profile-members.png)
 
-* To view or change the team configuration, choose **Team Settings**.  
+- To view or change the team configuration, choose **Team Settings**.  
    You can then complete the following tasks: - Add [team members](../security/add-users-team-project.md#add-team-members) - Add [team admins](add-team-administrator.md) - Navigate to [team notifications](../../notifications/howto-manage-team-notifications.md) - Navigate to team [iterations](set-iteration-paths-sprints.md#open-team-settings) and [area paths](set-area-paths.md#open-team-settings). - Update the [team description or profile picture](#team-description).
 
 ::: moniker-end
@@ -73,8 +73,8 @@ To add users to a team, see [Add users to a project or specific team](../securit
 
 All members of a team can favorite team artifacts and define work item templates. For details, see:
 
-* [Set personal or team favorites](../../project/navigation/set-favorites.md)
-* [Use templates to add and update work items](../../boards/backlogs/work-item-template.md).
+- [Set personal or team favorites](../../project/navigation/set-favorites.md)
+- [Use templates to add and update work items](../../boards/backlogs/work-item-template.md).
 
 If team members don't have access to all the features they want, check that they have [the permissions needed for those features](../security/set-permissions-access-work-tracking.md).
 
@@ -86,9 +86,9 @@ Once project administrators have [added Area Paths](set-area-paths.md) and [Iter
 
 These include making the following associations for each team:
 
-* **Select team area paths**  
+- **Select team area paths**  
    Can select the default area path(s) associated with the team. These settings affect a number of Agile tools available to the team.
-* **Select team iteration paths or sprints**
+- **Select team iteration paths or sprints**
   Can select the default area path(s) associated with the team. These settings affect a number of Agile tools available to the team.
 
 To learn more, see [Define area paths and assign to a team](set-area-paths.md) and
@@ -345,17 +345,17 @@ For details on each configuration option, see one of the following articles:
 
 Team administrators can fully customize the team's Kanban boards associate with the product and portfolio backlogs. You configure a Kanban board by first defining the columns and WIP limits from the common configuration dialog. For guidance, see [Kanban basics](../../boards/boards/kanban-basics.md).
 
-* [Columns](../../boards/boards/add-columns.md)
-* [WIP limits](../../boards/boards/wip-limits.md)
-* [Definition of Done](../../boards/boards/definition-of-done.md)
+- [Columns](../../boards/boards/add-columns.md)
+- [WIP limits](../../boards/boards/wip-limits.md)
+- [Definition of Done](../../boards/boards/definition-of-done.md)
 
 ::: moniker range=">= tfs-2015"
 
 Additional elements you can configure include:
 
-* [Split columns](../../boards/boards/split-columns.md)
-* [Swimlanes](../../boards/boards/expedite-work.md)
-* [Card fields, styles, tag colors, annotations, and card reordering](../../boards/boards/customize-cards.md#kanban-board)
+- [Split columns](../../boards/boards/split-columns.md)
+- [Swimlanes](../../boards/boards/expedite-work.md)
+- [Card fields, styles, tag colors, annotations, and card reordering](../../boards/boards/customize-cards.md#kanban-board)
 
 ::: moniker-end
 
@@ -429,7 +429,7 @@ Team administrators can add users and events to team rooms, and add team rooms. 
 
 ## Related articles
 
-* [About projects and scaling your organization](../projects/about-projects.md)
-* [About teams and Agile tools](about-teams-and-settings.md)
-* [Add teams](add-teams.md)
-* [Add a team administrator](add-team-administrator.md)
+- [About projects and scaling your organization](../projects/about-projects.md)
+- [About teams and Agile tools](about-teams-and-settings.md)
+- [Add teams](add-teams.md)
+- [Add a team administrator](add-team-administrator.md)

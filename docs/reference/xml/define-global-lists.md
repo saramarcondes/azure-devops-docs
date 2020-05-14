@@ -34,9 +34,9 @@ You can manage global lists for a collection as an XML file that you can list, i
 
 For the project collection where the global lists are defined, you must have the following permissions set:
 
-* To export or list global lists, you must be a member of the **Project Collection Valid Users** group or have your **View collection-level information** permission set to **Allow**.
+- To export or list global lists, you must be a member of the **Project Collection Valid Users** group or have your **View collection-level information** permission set to **Allow**.
 
-* To import global lists, you must be a member of the **Project Collection Administrators** security group.
+- To import global lists, you must be a member of the **Project Collection Administrators** security group.
 
 To add or modify a global list, use the **witadmin** command-line tool to import and export the definition for global lists. See [Manage global lists](../witadmin/manage-global-lists-for-work-item-types.md). To use a global list, add it to the `FIELD` definition within a work item type. See [All FIELD elements](field-definition-element-reference.md).
 
@@ -48,16 +48,16 @@ A global list is a set of `LISTITEM` elements that is stored and used globally b
 
 You can define one or more global lists and their items by using one of the following methods in the following ways based on the process model you use:
 
-* Within a WIT XML definition that you add to a project or process template (Hosted XML and On-premises XML)
-* Within a global list XML definition file that you import to a project collection (On-premises XML)
-* Within a [global workflow XML definition file](global-workflow-xml-element-reference.md) that you import to a project collection (On-premises XML).
+- Within a WIT XML definition that you add to a project or process template (Hosted XML and On-premises XML)
+- Within a global list XML definition file that you import to a project collection (On-premises XML)
+- Within a [global workflow XML definition file](global-workflow-xml-element-reference.md) that you import to a project collection (On-premises XML).
 
 > [!NOTE]  
 > For the Hosted XML process model, the following limits are placed on global list import:
 >
-> * Total of 64 global lists
-> * Total of 512 items per list
-> * Approximately 10K items can be defined total within all global lists specified across all WITs.
+> - Total of 64 global lists
+> - Total of 512 items per list
+> - Approximately 10K items can be defined total within all global lists specified across all WITs.
 
 <a name="SyntaxDefine"></a>
 
@@ -108,16 +108,16 @@ By adding the following syntax, you can define a global list within an XML defin
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <GLOBALLISTS>  
->        <GLOBALLIST name="name of global list">  
->           <LISTITEM value="List item 1" />  
->           <LISTITEM value="List item 2" />  
->           <LISTITEM value="List item 3" />  
->           <LISTITEM value="List item 4" />  
->           . . .  
->           <LISTITEM value="List item n" />  
->        </GLOBALLIST>  
-> </GLOBALLISTS>  
+> <GLOBALLISTS>
+>        <GLOBALLIST name="name of global list">
+>           <LISTITEM value="List item 1" />
+>           <LISTITEM value="List item 2" />
+>           <LISTITEM value="List item 3" />
+>           <LISTITEM value="List item 4" />
+>           . . .
+>           <LISTITEM value="List item n" />
+>        </GLOBALLIST>
+> </GLOBALLISTS>
 > ```
 
 By using the following syntax, you can reference a global list within an XML definition file for a type of work item:
@@ -125,12 +125,12 @@ By using the following syntax, you can reference a global list within an XML def
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <GLOBALLISTS>  
->       <GLOBALLIST name=" name of global list 1" />  
->       <GLOBALLIST name=" name of global list 2" />  
->       . . .  
->       <GLOBALLIST name=" name of global list n" />  
-> </GLOBALLISTS>  
+> <GLOBALLISTS>
+>       <GLOBALLIST name=" name of global list 1" />
+>       <GLOBALLIST name=" name of global list 2" />
+>       . . .
+>       <GLOBALLIST name=" name of global list n" />
+> </GLOBALLISTS>
 > ```
 
 For information about the structure and location of definition files for types of work items or global workflow, see [All WITD elements](all-witd-xml-elements-reference.md) or [GLOBALWORKFLOW](global-workflow-xml-element-reference.md), respectively.
@@ -144,24 +144,24 @@ To add a global list to a project collection, you can import the following synta
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <gl:GLOBALLISTS xmlns:gl="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/globallists">  
->        <GLOBALLIST name="NameOfGlobalList">  
->        <LISTITEM value="ListItem1" />  
->        <LISTITEM value="ListItem2" />  
->        <LISTITEM value="ListItem3" />  
->        <LISTITEM value="ListItem4" />  
->   . . .  
->        <LISTITEM value="ListItemN" />  
->        </GLOBALLIST>  
-> </gl:GLOBALLISTS>  
+> <gl:GLOBALLISTS xmlns:gl="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/globallists">
+>        <GLOBALLIST name="NameOfGlobalList">
+>        <LISTITEM value="ListItem1" />
+>        <LISTITEM value="ListItem2" />
+>        <LISTITEM value="ListItem3" />
+>        <LISTITEM value="ListItem4" />
+>   . . .
+>        <LISTITEM value="ListItemN" />
+>        </GLOBALLIST>
+> </gl:GLOBALLISTS>
 > ```
 
 A global list cannot be empty. Each `GLOBALLIST` element must have at least one `LISTITEM` element defined.
 
 ## Related articles
 
-* [Manage global lists](../witadmin/manage-global-lists-for-work-item-types.md)
-* [Customize work tracking](../customize-work.md)
+- [Manage global lists](../witadmin/manage-global-lists-for-work-item-types.md)
+- [Customize work tracking](../customize-work.md)
 
 ### Are any global lists auto-populated with data?
 

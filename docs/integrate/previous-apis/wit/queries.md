@@ -20,8 +20,8 @@ The queries in a project are organized in folders.
 
 A sample structure of queries and folders might appear as shown here.
 
-* **My Queries**
-* **Shared Queries**
+- **My Queries**
+- **Shared Queries**
   _ Feedback (Query)
   _ **Current Sprint**
   _ Blocked Tasks (Query)
@@ -49,7 +49,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/wit/queries[/{folderPat
 | api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | $depth | int | 0 | In the folder of queries, return child queries and folders to this depth. The maximum depth you can query is 2.
 | $expand | enum { none, all, clauses, wiql } | none | Include the query string (wiql), clauses, query result columns, and sort options in the results.
-| $includeDeleted={ true, false } | boolean | | Include deleted queries and folders
+| \$includeDeleted={ true, false } | boolean | | Include deleted queries and folders
 
 #### Sample request
 
@@ -227,8 +227,8 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/queries?$
 
 #### Sample code
 
-* [C# (GetListOfQueries method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L187)
-* [C# (GetListOfQueriesAndFoldersWithOptions method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L223)
+- [C# (GetListOfQueries method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L187)
+- [C# (GetListOfQueriesAndFoldersWithOptions method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L223)
 
 ### By folder path
 
@@ -5021,7 +5021,7 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/queries?$
 
 #### Sample code
 
-* [C# (GetListOfQueriesAndFoldersIncludeDeleted method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L187)
+- [C# (GetListOfQueriesAndFoldersIncludeDeleted method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L187)
 
 ## Get a query or folder
 
@@ -5041,7 +5041,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/wit/queries/{folderPath
 | api-version | string | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | $depth | int | 0 | In the folder of queries, return child queries and folders to this depth.  
 | $expand | enum { none, all, clauses, wiql } | none | Include the query string (wiql), clauses, query result columns, and sort options in the results.
-| $includeDeleted={ true, false } | boolean | | Include deleted queries and folders
+| \$includeDeleted={ true, false } | boolean | | Include deleted queries and folders
 
 ### Query by ID
 
@@ -5094,7 +5094,7 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/queries/3
 
 #### Sample code
 
-* [C# (GetQueryOrFolderById method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L160)
+- [C# (GetQueryOrFolderById method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L160)
 
 ### Query by Name
 
@@ -5147,7 +5147,7 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/queries/S
 
 #### Sample code
 
-* [C# (GetQueryByName method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L130)
+- [C# (GetQueryByName method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L130)
 
 ### Folder by ID
 
@@ -5198,7 +5198,7 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/queries/8
 
 #### Sample code
 
-* [C# (GetQueryOrFolderById method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L160)
+- [C# (GetQueryOrFolderById method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L160)
 
 ### Folder by Name
 
@@ -5249,7 +5249,7 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/queries/S
 
 #### Sample code
 
-* [C# (GetFolderByName method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L100)
+- [C# (GetFolderByName method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L100)
 
 ### Deleted query by ID
 
@@ -5303,7 +5303,7 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/queries/3
 
 #### Sample code
 
-* [C# (GetDeletedQueryById method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L440)
+- [C# (GetDeletedQueryById method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L440)
 
 ### Flat query with expanded clauses
 
@@ -5702,7 +5702,7 @@ POST https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/queries/
 
 #### Sample code
 
-* [C# (CreateQuery method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L59)
+- [C# (CreateQuery method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L59)
 
 ## Create a folder
 
@@ -5789,7 +5789,7 @@ POST https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/queries/
 
 #### Sample code
 
-* [C# (CreateFolder method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L18)
+- [C# (CreateFolder method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L18)
 
 ## Update a query
 
@@ -5946,7 +5946,7 @@ PATCH https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/queries
 
 #### Sample code
 
-* [C# (UpdateQuery method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L259)
+- [C# (UpdateQuery method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L259)
 
 ## Rename a query
 
@@ -6083,7 +6083,7 @@ PATCH https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/queries
 
 #### Sample code
 
-* [C# (RenameQueryOrFolder method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L291)
+- [C# (RenameQueryOrFolder method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L291)
 
 ## Rename a folder
 
@@ -6163,7 +6163,7 @@ PATCH https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/queries
 
 #### Sample code
 
-* [C# (RenameQueryOrFolder method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L291)
+- [C# (RenameQueryOrFolder method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L291)
 
 ## Move a query or folder
 
@@ -6272,7 +6272,7 @@ DELETE https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/querie
 
 #### Sample code
 
-* [C# (DeleteQueryById method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L363)
+- [C# (DeleteQueryById method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L363)
 
 ### By folder path
 
@@ -6284,7 +6284,7 @@ DELETE https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/querie
 
 #### Sample code
 
-* [C# (DeleteQueryByPath method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L383)
+- [C# (DeleteQueryByPath method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L383)
 
 ## Undelete a query or folder
 
@@ -6312,7 +6312,7 @@ Content-type: Application/json
 | id | string | ID of the folder or query to undelete.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| $undeleteDescendants={ true, false } | boolean | Undelete the children of this folder.
+| \$undeleteDescendants={ true, false } | boolean | Undelete the children of this folder.
 | Request body
 | isDeleted | boolean | Archival state of the folder or query.
 
@@ -6481,5 +6481,5 @@ PATCH https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/queries
 
 #### Sample code
 
-* [C# (UnDeleteFolder method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L467)
-* [C# (UnDeleteQuery method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L486)
+- [C# (UnDeleteFolder method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L467)
+- [C# (UnDeleteQuery method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/QueriesSample.cs#L486)

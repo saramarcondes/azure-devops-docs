@@ -66,8 +66,7 @@ https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 
 7.  When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
+    > [!div class="mx-imgBorder"] > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
 
 8.  You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
 
@@ -327,7 +326,7 @@ You can also use Azure Pipelines to [build an image](containers/build-image.md) 
 
 ## Related extensions
 
-* [PyLint Checker](https://marketplace.visualstudio.com/items?itemName=dazfuller.pylint-task) (Darren Fuller)
-* [Python Test](https://marketplace.visualstudio.com/items?itemName=dazfuller.pyunittest-task) (Darren Fuller)
-* [Azure DevOps plugin for PyCharm (IntelliJ)](https://plugins.jetbrains.com/plugin/7981) (Microsoft)
-* [Python in Visual Studio Code](https://code.visualstudio.com/docs/python) (Microsoft)
+- [PyLint Checker](https://marketplace.visualstudio.com/items?itemName=dazfuller.pylint-task) (Darren Fuller)
+- [Python Test](https://marketplace.visualstudio.com/items?itemName=dazfuller.pyunittest-task) (Darren Fuller)
+- [Azure DevOps plugin for PyCharm (IntelliJ)](https://plugins.jetbrains.com/plugin/7981) (Microsoft)
+- [Python in Visual Studio Code](https://code.visualstudio.com/docs/python) (Microsoft)

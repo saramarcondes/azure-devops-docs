@@ -61,7 +61,7 @@ Specify the root node of areas by using the following syntax:
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <Node StructureType="ProjectModelHierarchy" Name="Area" xmlns="">  
+> <Node StructureType="ProjectModelHierarchy" Name="Area" xmlns="">
 > ```
 
 Specify zero or more children nodes for as many areas as you want for your process. Use the `Node` element to specify each area and set the `StructureType` attribute to `ProjectModelHierarchy`.
@@ -69,7 +69,7 @@ Specify zero or more children nodes for as many areas as you want for your proce
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <Node StructureType="ProjectModelHierarchy" Name="NodeName" xmlns=""></Node>  
+> <Node StructureType="ProjectModelHierarchy" Name="NodeName" xmlns=""></Node>
 > ```
 
 The following example shows how to specify two areas, Client and Server:
@@ -77,25 +77,25 @@ The following example shows how to specify two areas, Client and Server:
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <?xml version="1.0" encoding="utf-8" ?>  
-> <tasks>  
->    <task  
->       id="UploadStructure"  
->       name="Creating project structure"  
->       plugin="Microsoft.ProjectCreationWizard.Classification"  
->       completionMessage="Portfolio project structure created.">  
->       <taskXml>  
->          <Nodes>  
->             <Node StructureType="ProjectModelHierarchy" Name="Teams" xmlns="">  
->                <Children>  
->                   <Node StructureType="ProjectModelHierarchy" Name="Client"></Node>  
->                   <Node StructureType="ProjectModelHierarchy" Name="Server"></Node>  
->                </Children>  
->             </Node>  
->          </Nodes>  
->       </taskXml>  
->    </task>  
-> </tasks>  
+> <?xml version="1.0" encoding="utf-8" ?>
+> <tasks>
+>    <task
+>       id="UploadStructure"
+>       name="Creating project structure"
+>       plugin="Microsoft.ProjectCreationWizard.Classification"
+>       completionMessage="Portfolio project structure created.">
+>       <taskXml>
+>          <Nodes>
+>             <Node StructureType="ProjectModelHierarchy" Name="Teams" xmlns="">
+>                <Children>
+>                   <Node StructureType="ProjectModelHierarchy" Name="Client"></Node>
+>                   <Node StructureType="ProjectModelHierarchy" Name="Server"></Node>
+>                </Children>
+>             </Node>
+>          </Nodes>
+>       </taskXml>
+>    </task>
+> </tasks>
 > ```
 
 <a name="iterations"></a>
@@ -107,7 +107,7 @@ Specify the root node for iterations by using the following syntax:
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <Node StructureType="ProjectLifecycle" Name="NodeName" xmlns="">  
+> <Node StructureType="ProjectLifecycle" Name="NodeName" xmlns="">
 > ```
 
 Specify zero or more children nodes for as many iterations as you want for your process. Use the **Node** element to specify each iteration and set the `StructureType` attribute to `ProjectLifecycle`.
@@ -119,27 +119,27 @@ The following example shows how to specify four iterations: Milestone 1, Milesto
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <?xml version="1.0" encoding="utf-8" ?>  
-> <tasks>  
->    <task  
->       id="UploadStructure"  
->       name="Creating project structure"  
->       plugin="Microsoft.ProjectCreationWizard.Classification"  
->       completionMessage="Project structure created.">  
->       <taskXml>  
->          <Nodes>  
->             <Node StructureType="ProjectLifecycle" Name="Iteration" xmlns="">  
->                <Children>  
->                   <Node StructureType="ProjectLifecycle" Name="Sprint 1"></Node>  
->                   <Node StructureType="ProjectLifecycle" Name="Sprint 2"></Node>  
->                   <Node StructureType="ProjectLifecycle" Name="Sprint 3"></Node>  
->                   <Node StructureType="ProjectLifecycle" Name="Sprint 4"></Node>  
->                </Children>  
->             </Node>  
->          </Nodes>  
->       </taskXml>  
->    </task>  
-> </tasks>  
+> <?xml version="1.0" encoding="utf-8" ?>
+> <tasks>
+>    <task
+>       id="UploadStructure"
+>       name="Creating project structure"
+>       plugin="Microsoft.ProjectCreationWizard.Classification"
+>       completionMessage="Project structure created.">
+>       <taskXml>
+>          <Nodes>
+>             <Node StructureType="ProjectLifecycle" Name="Iteration" xmlns="">
+>                <Children>
+>                   <Node StructureType="ProjectLifecycle" Name="Sprint 1"></Node>
+>                   <Node StructureType="ProjectLifecycle" Name="Sprint 2"></Node>
+>                   <Node StructureType="ProjectLifecycle" Name="Sprint 3"></Node>
+>                   <Node StructureType="ProjectLifecycle" Name="Sprint 4"></Node>
+>                </Children>
+>             </Node>
+>          </Nodes>
+>       </taskXml>
+>    </task>
+> </tasks>
 > ```
 
 ## <a name="msproj"></a> Specifying process template properties
@@ -149,12 +149,12 @@ This section specifies two properties: the Project-to-TFS field mapping file and
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <properties>  
+> <properties>
 >    <property name="MSPROJ"
 >              value="Classification\FileMapping.xml"
->              isFile="true" />  
->    <property name="Process Template" value="Agile"/>  
-> </properties>  
+>              isFile="true" />
+>    <property name="Process Template" value="Agile"/>
+> </properties>
 > ```
 
 To customize the FileMapping.xml file, see [Map Microsoft Project fields](../xml/map-microsoft-project-fields-to-tf-fields.md).
@@ -219,5 +219,5 @@ Required child element of <strong>properties</strong>. Defines project-related d
 
 ## Related articles
 
-* [Set project-level area paths](../../organizations/settings/set-area-paths.md)
-* [Set project-level iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)
+- [Set project-level area paths](../../organizations/settings/set-area-paths.md)
+- [Set project-level iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)

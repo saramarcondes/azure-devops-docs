@@ -28,12 +28,12 @@ The first thing you need to understand is that your product **Backlog** and **Bo
 
 ::: moniker range=">= azure-devops-2019"
 
-* Work item type belongs to the Requirements category. The types differ depending on the process selected for your project:  
-   - [Basic](../get-started/plan-track-work.md) : Issue, Backlog name=<strong>Issues</strong>  
-   - [Agile](../work-items/guidance/agile-process.md): User Story, Backlog name=<strong>Stories</strong>  
-   - [Scrum](../work-items/guidance/scrum-process.md): Product Backlog Item, Backlog name=<strong>Backlog items</strong> - [CMMI](../work-items/guidance/cmmi-process.md): Requirement, Backlog name=<strong>Requirements</strong>
-* Work item <strong>Area Path</strong> matches one of the selected team's Area Paths
-* Work item <strong>Iteration Path</strong> is under the team's Default Iteration Path
+- Work item type belongs to the Requirements category. The types differ depending on the process selected for your project:
+  - [Basic](../get-started/plan-track-work.md) : Issue, Backlog name=<strong>Issues</strong>
+  - [Agile](../work-items/guidance/agile-process.md): User Story, Backlog name=<strong>Stories</strong>
+  - [Scrum](../work-items/guidance/scrum-process.md): Product Backlog Item, Backlog name=<strong>Backlog items</strong> - [CMMI](../work-items/guidance/cmmi-process.md): Requirement, Backlog name=<strong>Requirements</strong>
+- Work item <strong>Area Path</strong> matches one of the selected team's Area Paths
+- Work item <strong>Iteration Path</strong> is under the team's Default Iteration Path
 
 ::: moniker-end
 
@@ -41,10 +41,10 @@ The first thing you need to understand is that your product **Backlog** and **Bo
 
 ::: moniker range="<= tfs-2018"
 
-* Work item type belongs to the Requirements category. The types differ depending on the process selected for your project: - [Agile](../work-items/guidance/agile-process.md): User Story, Backlog name=<strong>Stories</strong>  
-   - [Scrum](../work-items/guidance/scrum-process.md): Product Backlog Item, Backlog name=<strong>Backlog items</strong> - [CMMI](../work-items/guidance/cmmi-process.md): Requirement, Backlog name=<strong>Requirements</strong>
-* Work item <strong>Area Path</strong> matches one of the selected team's Area Paths
-* Work item <strong>Iteration Path</strong> is under the team's Default Iteration Path
+- Work item type belongs to the Requirements category. The types differ depending on the process selected for your project: - [Agile](../work-items/guidance/agile-process.md): User Story, Backlog name=<strong>Stories</strong>
+  - [Scrum](../work-items/guidance/scrum-process.md): Product Backlog Item, Backlog name=<strong>Backlog items</strong> - [CMMI](../work-items/guidance/cmmi-process.md): Requirement, Backlog name=<strong>Requirements</strong>
+- Work item <strong>Area Path</strong> matches one of the selected team's Area Paths
+- Work item <strong>Iteration Path</strong> is under the team's Default Iteration Path
   ::: moniker-end
 
 You can determine the work item types that belong to your Requirements category by [opening your product Backlog](create-your-backlog.md) and checking the product backlog name.
@@ -88,9 +88,9 @@ If you don't see the work items you expect on your [product Backlog](create-your
 3.  Add the <strong>State</strong>, <strong>Area Path</strong> and <strong>Iteration Path</strong> fields to the [column options](set-column-options.md).
 
 4.  Check the query results and that the values of the work items you expect to show up on your backlog meet these criteria:
-    * <strong>Area Path</strong> belongs to your team's area path(s)
-    * <strong>Iteration Path</strong> belongs under your team's default iteration path
-    * <strong>State</strong> isn't Closed, Completed, Done, or Removed.
+    - <strong>Area Path</strong> belongs to your team's area path(s)
+    - <strong>Iteration Path</strong> belongs under your team's default iteration path
+    - <strong>State</strong> isn't Closed, Completed, Done, or Removed.
 
 > [!NOTE]
 > You can also filter your product backlog to show or hide work items that are in an **In Progress** state category, corresponding to an Active, Resolved, Committed, Doing workflow state.
@@ -152,9 +152,9 @@ For example, here we've chosen to track bugs along with tasks, and enable Task, 
 
 To learn more about checklists, see the following articles:
 
-* [Add task checklists](../boards/add-task-checklists.md)
-* [Add, run, and update inline tests](../boards/add-run-update-tests.md)
-* [Link GitHub commits, pull requests, and issues to work items](../github/link-to-from-github.md)
+- [Add task checklists](../boards/add-task-checklists.md)
+- [Add, run, and update inline tests](../boards/add-run-update-tests.md)
+- [Link GitHub commits, pull requests, and issues to work items](../github/link-to-from-github.md)
 
 ::: moniker-end
 
@@ -166,8 +166,8 @@ For example, here we've chosen to track bugs along with tasks, and enable Task a
 
 To learn more about checklists, see the following articles:
 
-* [Add task checklists](../boards/add-task-checklists.md)
-* [Add, run, and update inline tests](../boards/add-run-update-tests.md)
+- [Add task checklists](../boards/add-task-checklists.md)
+- [Add, run, and update inline tests](../boards/add-run-update-tests.md)
 
 ::: moniker-end
 
@@ -207,9 +207,9 @@ For details, see the following resources:
 
 ::: moniker range="azure-devops"
 
-* [Add and manage work item types](../../organizations/settings/work/customize-process-wit.md)
-* [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)
-* [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md)
+- [Add and manage work item types](../../organizations/settings/work/customize-process-wit.md)
+- [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)
+- [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md)
 
 ::: moniker-end
 
@@ -217,24 +217,24 @@ For details, see the following resources:
 
 **Inheritance process model:**
 
-* [Add and manage work item types](../../organizations/settings/work/customize-process-wit.md)
-* [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)
-* [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md)
+- [Add and manage work item types](../../organizations/settings/work/customize-process-wit.md)
+- [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)
+- [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md)
 
 **On-premises XML process model:**
 
-* [Add a work item type to a backlog and board](../../reference/add-wits-to-backlogs-and-boards.md)
-* [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md)
-* [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md)
+- [Add a work item type to a backlog and board](../../reference/add-wits-to-backlogs-and-boards.md)
+- [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md)
+- [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-* [Add a work item type to a backlog and board](../../reference/add-wits-to-backlogs-and-boards.md)
-* [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md)
-* [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md)
-* [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md)
+- [Add a work item type to a backlog and board](../../reference/add-wits-to-backlogs-and-boards.md)
+- [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md)
+- [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md)
+- [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md)
 
 ::: moniker-end
 
@@ -293,45 +293,45 @@ For on-premises deployments that use the On-premises XML process model to custom
 
 The following settings can impact on the type and number of work items that will appear in your backlogs and boards.
 
-* In your Kanban board, newly added work items may not appear if they are stack ranked lower within the product backlog. By choosing the <strong>Show more items</strong> link, you can cause the board to refresh and display these additional items.
+- In your Kanban board, newly added work items may not appear if they are stack ranked lower within the product backlog. By choosing the <strong>Show more items</strong> link, you can cause the board to refresh and display these additional items.
 
-      	> [!div class="mx-imgBorder"]  
+      	> [!div class="mx-imgBorder"]
       	> ![Boards, Show more items](media/setup-backlog/show-more-items.png)
 
-* If you have nested work items that belong to the same category, only leaf nodes may appear on the Kanban board (for TFS 2018.1 and earlier versions). For this reason, we recommend that you don't nest work items of the same work item type or belonging to the same category. To learn more, see [Fix re-ordering and nesting issues, How backlogs and boards display hierarchical (nested) items](resolve-backlog-reorder-issues.md#leaf-nodes).
+- If you have nested work items that belong to the same category, only leaf nodes may appear on the Kanban board (for TFS 2018.1 and earlier versions). For this reason, we recommend that you don't nest work items of the same work item type or belonging to the same category. To learn more, see [Fix re-ordering and nesting issues, How backlogs and boards display hierarchical (nested) items](resolve-backlog-reorder-issues.md#leaf-nodes).
 
-* If you have turned off the **In Progress** view, then those work items where work has started won't appear in the backlog list.
+- If you have turned off the **In Progress** view, then those work items where work has started won't appear in the backlog list.
 
       	::: moniker range="azure-devops"
-      	> [!div class="mx-imgBorder"]  
-      	> ![Backlogs, View Options, Hide In Progress](media/setup-backlog/hide-in-progress-s155.png)  
+      	> [!div class="mx-imgBorder"]
+      	> ![Backlogs, View Options, Hide In Progress](media/setup-backlog/hide-in-progress-s155.png)
       	::: moniker-end
 
       	::: moniker range="azure-devops-2019"
-      	> [!div class="mx-imgBorder"]  
-      	> ![Backlogs, View Options, Hide In Progress](media/setup-backlog/hide-in-progress.png)  
+      	> [!div class="mx-imgBorder"]
+      	> ![Backlogs, View Options, Hide In Progress](media/setup-backlog/hide-in-progress.png)
       	::: moniker-end
 
-      	::: moniker range="<= tfs-2018"  
-      	> [!div class="mx-imgBorder"]  
-      	> ![Backlogs, Hide In Progress](media/setup-backlog/hide-in-progress-prev.png)  
+      	::: moniker range="<= tfs-2018"
+      	> [!div class="mx-imgBorder"]
+      	> ![Backlogs, Hide In Progress](media/setup-backlog/hide-in-progress-prev.png)
       	::: moniker-end
 
-* Work items appear in the priority order in which they are added or moved to. This order or sequence is managed by the **Stack Rank** (Basic, Agile, and CMMI processes) or **Backlog Priority** (Scrum) field. To learn more, see [Backlogs, portfolios, and Agile project management, Backlog priority or stack rank order](backlogs-overview.md#stack-rank).
+- Work items appear in the priority order in which they are added or moved to. This order or sequence is managed by the **Stack Rank** (Basic, Agile, and CMMI processes) or **Backlog Priority** (Scrum) field. To learn more, see [Backlogs, portfolios, and Agile project management, Backlog priority or stack rank order](backlogs-overview.md#stack-rank).
 
-* Each backlog can display up to 999 work items. If your backlog exceeds this limit, then you may want to consider adding a team and moving some of the work items to the other team's backlog.
+- Each backlog can display up to 999 work items. If your backlog exceeds this limit, then you may want to consider adding a team and moving some of the work items to the other team's backlog.
 
-* Sprint backlogs show only those work items that meet the team's area path and the **Iteration Path** defined for the sprint.
+- Sprint backlogs show only those work items that meet the team's area path and the **Iteration Path** defined for the sprint.
 
-* (Inheritance process model) If an administrator [disables or deletes a work item type](../../organizations/settings/work/customize-process-wit.md#enable-disable), it will no longer appear on backlogs and boards.
+- (Inheritance process model) If an administrator [disables or deletes a work item type](../../organizations/settings/work/customize-process-wit.md#enable-disable), it will no longer appear on backlogs and boards.
 
-* (On-premises XML process model) If an administrator [deletes or destroys a work item type](../../reference/witadmin/witadmin-import-export-manage-wits.md), it will no longer appear on backlogs and boards.
+- (On-premises XML process model) If an administrator [deletes or destroys a work item type](../../reference/witadmin/witadmin-import-export-manage-wits.md), it will no longer appear on backlogs and boards.
 
 ## Related articles
 
-* [Add a team, move from one default team to several teams](../../organizations/settings/add-teams.md)
-* [Refine your backlog](best-practices-product-backlog.md)
-* [Create your backlog](create-your-backlog.md)
-* [Backlog priority or stack rank order](backlogs-overview.md#stack-rank)
-* [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md)
-* [Workflow states & state categories](../work-items/workflow-and-state-categories.md)
+- [Add a team, move from one default team to several teams](../../organizations/settings/add-teams.md)
+- [Refine your backlog](best-practices-product-backlog.md)
+- [Create your backlog](create-your-backlog.md)
+- [Backlog priority or stack rank order](backlogs-overview.md#stack-rank)
+- [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md)
+- [Workflow states & state categories](../work-items/workflow-and-state-categories.md)

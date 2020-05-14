@@ -25,9 +25,9 @@ The following branching strategies are based on the way we use Git here at Micro
 
 Keep your branch strategy simple. Build your strategy from these three concepts:
 
-* Use feature branches for all new features and bug fixes.
-* Merge feature branches into the master branch using pull requests.
-* Keep a high quality, up-to-date master branch.
+- Use feature branches for all new features and bug fixes.
+- Merge feature branches into the master branch using pull requests.
+- Keep a high quality, up-to-date master branch.
 
 A strategy that extends these concepts and avoids contradictions will result in a version control workflow for your team that is consistent and easy to follow.
 
@@ -48,12 +48,12 @@ You can also include other information in the branch name, such as who created t
 
 Some suggestions for naming your feature branches:
 
-* users/username/description
-* users/username/workitem
-* bugfix/description
-* features/feature-name
-* features/feature-area/feature-name
-* hotfix/description
+- users/username/description
+- users/username/workitem
+- bugfix/description
+- features/feature-name
+- features/feature-area/feature-name
+- hotfix/description
 
 ::: moniker range=">= tfs-2018"
 
@@ -77,11 +77,11 @@ Distribute reviewer responsibilities to share ideas across your team and spread 
 
 Some suggestions for successful pull requests:
 
-* Two reviewers is an optimal number [based on research](https://www.microsoft.com/research/publication/convergent-software-peer-review-practices/).
-* If your team already has a code review process, bring pull requests into what you're already doing.
-* Take care assigning the same reviewers to a large number of pull requests. Pull requests work better when reviewer responsibilities are shared across the team.
-* Provide enough detail in the description to quickly bring reviewers up to speed with your changes.
-* Include a build or linked version of your changes running in a staged environment with your pull request. Others can easily test the changes.
+- Two reviewers is an optimal number [based on research](https://www.microsoft.com/research/publication/convergent-software-peer-review-practices/).
+- If your team already has a code review process, bring pull requests into what you're already doing.
+- Take care assigning the same reviewers to a large number of pull requests. Pull requests work better when reviewer responsibilities are shared across the team.
+- Provide enough detail in the description to quickly bring reviewers up to speed with your changes.
+- Include a build or linked version of your changes running in a staged environment with your pull request. Others can easily test the changes.
 
 ### Keep a high quality, up-to-date master branch
 
@@ -92,9 +92,9 @@ Your master branch needs these qualities so that feature branches created by you
 
 Set up a [branch policy](branch-policies.md) for your master branch that:
 
-* Requires a pull request to merge code. This approach prevents direct pushes to the master branch and ensures discussion of proposed changes.
-* Automatically adds reviewers when a pull request is created. The added team members review the code and comment on the changes in the pull request.
-* Requires a successful build to complete a pull request. Code merged into the master branch should build cleanly.
+- Requires a pull request to merge code. This approach prevents direct pushes to the master branch and ensures discussion of proposed changes.
+- Automatically adds reviewers when a pull request is created. The added team members review the code and comment on the changes in the pull request.
+- Requires a successful build to complete a pull request. Code merged into the master branch should build cleanly.
 
 > [!TIP]
 > The build pipeline for your pull requests should be quick to complete, so it doesn't interfere with the review process.

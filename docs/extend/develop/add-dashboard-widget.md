@@ -26,12 +26,12 @@ To create extensions for Azure DevOps Services, there are some prerequisite soft
 **Knowledge:**
 Some knowledge of JavaScript, HTML, CSS is required for widget development.
 
-* An **organization** in Azure DevOps Services for installing and testing your widget, more information can be found [here](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)
-* **A text editor**. For many of the tutorials, we used `Visual Studio Code`, which can be downloaded [here](https://code.visualstudio.com/)
-* The latest version of **node**, which can be downloaded [here](https://nodejs.org/download/)
-* **TFS Cross Platform Command Line Interface (tfx-cli)** to package your extensions.
-  * **tfx-cli** can be installed using `npm`, a component of Node.js by running `npm i -g tfx-cli`
-* A home directory for your project. This directory is referred to as `home` throughout the tutorial.
+- An **organization** in Azure DevOps Services for installing and testing your widget, more information can be found [here](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)
+- **A text editor**. For many of the tutorials, we used `Visual Studio Code`, which can be downloaded [here](https://code.visualstudio.com/)
+- The latest version of **node**, which can be downloaded [here](https://nodejs.org/download/)
+- **TFS Cross Platform Command Line Interface (tfx-cli)** to package your extensions.
+  - **tfx-cli** can be installed using `npm`, a component of Node.js by running `npm i -g tfx-cli`
+- A home directory for your project. This directory is referred to as `home` throughout the tutorial.
 
 **Extension File Structure:**
 
@@ -44,7 +44,7 @@ Some knowledge of JavaScript, HTML, CSS is required for widget development.
 |--- img
     |--- logo.png
 |--- scripts
-|--- hello-world.html               // html page to be used for your widget  
+|--- hello-world.html               // html page to be used for your widget
 |--- vss-extension.json             // extension's manifest
 ```
 
@@ -176,9 +176,9 @@ You can name these images however you want as long as the extension manifest in 
 
 ### Step 5: Your extension&#39;s manifest: <code>vss-extension.json</code>
 
-* **_Every_** extension must have an extension manifest file
-* Read the [extension manifest reference](./manifest.md)
-* Find out more about the contribution points in the [extension points reference](../reference/targets/overview.md)
+- **_Every_** extension must have an extension manifest file
+- Read the [extension manifest reference](./manifest.md)
+- Find out more about the contribution points in the [extension points reference](../reference/targets/overview.md)
 
 Create a json file (`vss-extension.json`, for example) in the `home` directory with the following contents:
 
@@ -250,10 +250,10 @@ The **icons** stanza specifies the path to your extension's icon in your manifes
 
 Each contribution entry defines [properties](./manifest.md#contributions).
 
-* The **ID** to identify your contribution. This should be unique within an extension. This ID should match with the name you used in [Step 3](#widget-javascript) to register your widget.
-* The **type** of contribution. For all widgets, this should be `ms.vss-dashboards-web.widget`.
-* The array of **targets** to which the contribution is contributing. For all widgets, this should be `[ms.vss-dashboards-web.widget-catalog]`.
-* The **properties** is an object that includes properties for the contribution type. For widgets, the below properties are mandatory.
+- The **ID** to identify your contribution. This should be unique within an extension. This ID should match with the name you used in [Step 3](#widget-javascript) to register your widget.
+- The **type** of contribution. For all widgets, this should be `ms.vss-dashboards-web.widget`.
+- The array of **targets** to which the contribution is contributing. For all widgets, this should be `[ms.vss-dashboards-web.widget-catalog]`.
+- The **properties** is an object that includes properties for the contribution type. For widgets, the below properties are mandatory.
 
 | Property        | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -311,9 +311,9 @@ If you aren't already a member of an existing publisher, you'll create one.
 
 1.  Sign in to the [Visual Studio Marketplace Publishing Portal](https://marketplace.visualstudio.com/manage/createpublisher)
 2.  If you aren't already a member of an existing publisher, you'll be prompted to create a publisher. If you're not prompted to create a publisher, scroll down to the bottom of the page and select <i>Publish Extensions</i> underneath <b>Related Sites</b>.
-    * Specify an identifier for your publisher, for example: `mycompany-myteam`
-      * This is used as the value for the `publisher` attribute in your extensions' manifest file.
-    * Specify a display name for your publisher, for example: `My Team`
+    - Specify an identifier for your publisher, for example: `mycompany-myteam`
+      - This is used as the value for the `publisher` attribute in your extensions' manifest file.
+    - Specify a display name for your publisher, for example: `My Team`
 3.  Review the [Marketplace Publisher Agreement](https://aka.ms/vsmarketplace-agreement) and select **Create**
 
 Now your publisher is defined. In a future release, you can grant permissions to view and manage your publisher's extensions.
@@ -373,7 +373,7 @@ Copy the file `hello-world.html` from the previous example, and rename the copy 
 |--- img
     |--- logo.png
 |--- scripts
-|--- hello-world.html               // html page to be used for your widget  
+|--- hello-world.html               // html page to be used for your widget
 |--- hello-world2.html              // renamed copy of hello-world.html
 |--- vss-extension.json             // extension's manifest
 ```
@@ -670,7 +670,7 @@ Your folder now looks like the following example:
     |--- logo.png
 |--- scripts
 |--- configuration.html
-|--- hello-world.html               // html page to be used for your widget  
+|--- hello-world.html               // html page to be used for your widget
 |--- hello-world2.html              // renamed copy of hello-world.html
 |--- hello-world3.html              // renamed copy of hello-world2.html
 |--- vss-extension.json             // extension's manifest
@@ -964,10 +964,10 @@ Update the array in the `files` property to include the two new HTML files we ha
 Note the contribution for widget configuration follows a slightly different model than the widget itself.
 A contribution entry for widget configuration has:
 
-* The **ID** to identify your contribution. This should be unique within an extension.
-* The **type** of contribution. For all widget configurations, this should be `ms.vss-dashboards-web.widget-configuration`
-* The array of **targets** to which the contribution is contributing. For all widget configurations, this has a single entry: `ms.vss-dashboards-web.widget-configuration`.
-* The **properties** that contain a set of properties that includes name, description, and the URI of the HTML file used for configuration.
+- The **ID** to identify your contribution. This should be unique within an extension.
+- The **type** of contribution. For all widget configurations, this should be `ms.vss-dashboards-web.widget-configuration`
+- The array of **targets** to which the contribution is contributing. For all widget configurations, this has a single entry: `ms.vss-dashboards-web.widget-configuration`.
+- The **properties** that contain a set of properties that includes name, description, and the URI of the HTML file used for configuration.
 
 To support configuration, the widget contribution needs to be changed as well. The array of **targets** for the widget needs to be updated to include the ID for the configuration in the form
 <`publisher`>.<`id for the extension`>.<`id for the configuration contribution`> which in this case is `fabrikam.vsts-extensions-myExtensions.HelloWorldWidget.Configuration`.

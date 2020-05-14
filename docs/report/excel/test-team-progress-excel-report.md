@@ -16,12 +16,12 @@ ms.date: 12/30/2016
 
 Teams who are responsible for testing software can use the Test Team Progress report to help monitor test activities and report on the progress of the team in authoring and automating tests and performing regression testing. The Test Team Progress report provides the following six reports based on data that was collected for test cases that were defined for the team project and test results:
 
-* **Test Plan Progress**: Helps the team determine how much testing the team has completed and whether it is likely to finish test activities on time.
-* **Test Case Authoring Status**: Helps the team track the status of completing the definition of test cases so that they can be run.
-* **Test Status by Suite**: Helps the team determine how much testing the team has completed within each test suite.
-* **Test Status by Area**: Helps the team determine how much testing the team has completed within each product area.
-* **Failure Analysis**: Helps the team monitor how many regressions they are finding.
-* **Automation Design Status**: Supports the team in tracking the number of test cases that still must be automated.
+- **Test Plan Progress**: Helps the team determine how much testing the team has completed and whether it is likely to finish test activities on time.
+- **Test Case Authoring Status**: Helps the team track the status of completing the definition of test cases so that they can be run.
+- **Test Status by Suite**: Helps the team determine how much testing the team has completed within each test suite.
+- **Test Status by Area**: Helps the team determine how much testing the team has completed within each product area.
+- **Failure Analysis**: Helps the team monitor how many regressions they are finding.
+- **Automation Design Status**: Supports the team in tracking the number of test cases that still must be automated.
 
   This Test Team Progress report is available only when the team creates test plans and starts to run tests by using Microsoft Test Manager. For more information, see [Testing overview](../../test/index.yml).
 
@@ -64,12 +64,12 @@ The Test Plan Progress report provides a stacked area graph of the test results 
 
 The team can review this report to determine the progress in a sprint or iteration or over time. For example, the team can answer these questions:
 
-* How much testing has the team completed?
-* Is the team likely to finish the testing on time?
-* How many tests are left to be run?
-* How many tests are passing?
-* How many tests are failing?
-* How many tests are blocked?
+- How much testing has the team completed?
+- Is the team likely to finish the testing on time?
+- How many tests are left to be run?
+- How many tests are passing?
+- How many tests are failing?
+- How many tests are blocked?
 
 ### Test results by test suite or product area
 
@@ -87,21 +87,21 @@ The Failure Analysis report provides a stacked area graph that shows the cumulat
 
 The system examines each test configuration for which the test case was executed and tries to identify the predecessor result for the same configuration for the test case. The failure type that is assigned to the test case/configuration is determined based on the following criteria:
 
-* **Regression**: When the immediate predecessor result had an outcome of **Passed**.
+- **Regression**: When the immediate predecessor result had an outcome of **Passed**.
 
-* **None**: When the immediate predecessor result had an outcome that was not **Passed** or **Failed**.
+- **None**: When the immediate predecessor result had an outcome that was not **Passed** or **Failed**.
 
-* **New Issue**: When no immediate predecessor result can be found.
+- **New Issue**: When no immediate predecessor result can be found.
 
-* **Known Issue**: When the immediate predecessor result had an outcome of **Failed**.
+- **Known Issue**: When the immediate predecessor result had an outcome of **Failed**.
 
   The team can review the report to find answers to the following questions:
 
-* How many tests overall are regressing?
+- How many tests overall are regressing?
 
-* Is the team keeping the overall number of regressions or test failures within expected ranges or team goals?
+- Is the team keeping the overall number of regressions or test failures within expected ranges or team goals?
 
-* Is the team addressing issues as they are identified? Are the known issues addressed in a timely manner?
+- Is the team addressing issues as they are identified? Are the known issues addressed in a timely manner?
 
   A healthy Failure Analysis report will show moderate numbers of new issues, known issues, and regressions. If spikes occur in one or more of these areas, the team might want to investigate this issue more. Spikes may indicate problems in either the test activity or the quality of code that the team checks in. Also, the team might want to check the status of recent builds, bug status, and code churn to determine whether the metrics for each of these factors can help explain the changes in the test activity lines.
 
@@ -119,16 +119,16 @@ The following table describes the report filters and fields that are used in the
 
 For the Test Team Progress reports to be useful and accurate, the team must perform the following activities:
 
-* [Define test cases and test plans](../../test/create-test-cases.md), and assign test cases to the test plans.
-* [Run tests](../../test/run-manual-tests.md).
-* For manual tests, mark the results of each validation step in the test case as passed or failed.
+- [Define test cases and test plans](../../test/create-test-cases.md), and assign test cases to the test plans.
+- [Run tests](../../test/run-manual-tests.md).
+- For manual tests, mark the results of each validation step in the test case as passed or failed.
 
   > [!IMPORTANT]
   > Testers must mark a test step with a status if it is a validation test step. The overall result for a test case reflects the status of all the test steps that the tester marked. Therefore, the test case will have a status of failed if the tester marked any test step as failed or not marked.
 
   For automated tests, each test case is automatically marked as passed or failed.
 
-* (Optional) To filter the reports by product area and iteration, specify the **Area** and **Iteration** paths of each test case.
+- (Optional) To filter the reports by product area and iteration, specify the **Area** and **Iteration** paths of each test case.
 
 For the Testing Gaps reports to be useful and accurate, the team must perform the activities that are described in the following table:
 
@@ -154,5 +154,5 @@ You can update the Test Team Progress report by opening it in Office Excel and c
 
 ## Related articles
 
-* [Excel reports](excel-reports.md)
-* [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)
+- [Excel reports](excel-reports.md)
+- [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)

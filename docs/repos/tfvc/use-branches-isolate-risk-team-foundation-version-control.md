@@ -17,11 +17,11 @@ monikerRange: '>= tfs-2015'
 
 Consider some challenges team members typically face when they work on a software project that is staffed by more than five or ten people:
 
-* The group has a few (or maybe several) different feature teams, each working on a set of functionality that is reasonably discrete. But each team also depends on functionality built by other teams. You need to isolate the risk of the changes introduced by the work done in each of these teams, and yet eventually, you need to merge all their efforts together into one product.
+- The group has a few (or maybe several) different feature teams, each working on a set of functionality that is reasonably discrete. But each team also depends on functionality built by other teams. You need to isolate the risk of the changes introduced by the work done in each of these teams, and yet eventually, you need to merge all their efforts together into one product.
 
-* The test team needs a stable version of the code to test, and yet simultaneously, the developers need to continue moving forward with new features that will occasionally destabilize the product.
+- The test team needs a stable version of the code to test, and yet simultaneously, the developers need to continue moving forward with new features that will occasionally destabilize the product.
 
-* The software has two previous versions and one current version in progress. Even though most of the development effort is invested in the current version, the previous versions must still be supported with occasional releases of service packs, critical fixes and security patches, and other changes.
+- The software has two previous versions and one current version in progress. Even though most of the development effort is invested in the current version, the previous versions must still be supported with occasional releases of service packs, critical fixes and security patches, and other changes.
 
 ## In This Section
 

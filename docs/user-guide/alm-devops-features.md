@@ -23,8 +23,8 @@ If you're new to Azure DevOps, see our overview articles that are designed to gi
 > [!NOTE]  
 > Some features are platform-dependent, based on the following two platforms:
 >
-> * **Azure DevOps Services** - cloud service
-> * **Azure DevOps Server** - on-premises
+> - **Azure DevOps Services** - cloud service
+> - **Azure DevOps Server** - on-premises
 
 ## Access and supported clients
 
@@ -66,7 +66,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p><b>Permissions</b></p>
 <p>Control access to specific features by setting permissions for a user or group.</p>
 
-* <a href="../organizations/security/set-permissions-access-work-tracking.md" data-raw-source="[Area and iteration paths](../organizations/security/set-permissions-access-work-tracking.md)">Area and iteration paths</a><br/>- <a href="../pipelines/policies/set-permissions.md" data-raw-source="[Build &amp; Release](../pipelines/policies/set-permissions.md)">Build &amp; Release</a><br/>- <a href="../organizations/security/set-git-tfvc-repository-permissions.md" data-raw-source="[Git](../organizations/security/set-git-tfvc-repository-permissions.md)">Git</a><br/>- <a href="../organizations/security/set-git-tfvc-repository-permissions.md" data-raw-source="[TFVC](../organizations/security/set-git-tfvc-repository-permissions.md)">TFVC</a><br/>- <a href="../report/dashboard-permissions.md" data-raw-source="[Dashboards](../report/dashboard-permissions.md)">Dashboards</a><br/>- <a href="../boards/queries/set-query-permissions.md" data-raw-source="[Queries](../boards/queries/set-query-permissions.md)">Queries</a><br/>- <a href="../organizations/settings/manage-teams.md" data-raw-source="[Manage teams and configure team tools](../organizations/settings/manage-teams.md)">Manage teams and configure team tools</a><br/>- <a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Test](../organizations/security/set-project-collection-level-permissions.md)">Test</a><br/>- <a href="../organizations/security/permissions.md#tags" data-raw-source="[Work item tags](../organizations/security/permissions.md#tags)">Work item tags</a><br/>
+- <a href="../organizations/security/set-permissions-access-work-tracking.md" data-raw-source="[Area and iteration paths](../organizations/security/set-permissions-access-work-tracking.md)">Area and iteration paths</a><br/>- <a href="../pipelines/policies/set-permissions.md" data-raw-source="[Build &amp; Release](../pipelines/policies/set-permissions.md)">Build &amp; Release</a><br/>- <a href="../organizations/security/set-git-tfvc-repository-permissions.md" data-raw-source="[Git](../organizations/security/set-git-tfvc-repository-permissions.md)">Git</a><br/>- <a href="../organizations/security/set-git-tfvc-repository-permissions.md" data-raw-source="[TFVC](../organizations/security/set-git-tfvc-repository-permissions.md)">TFVC</a><br/>- <a href="../report/dashboard-permissions.md" data-raw-source="[Dashboards](../report/dashboard-permissions.md)">Dashboards</a><br/>- <a href="../boards/queries/set-query-permissions.md" data-raw-source="[Queries](../boards/queries/set-query-permissions.md)">Queries</a><br/>- <a href="../organizations/settings/manage-teams.md" data-raw-source="[Manage teams and configure team tools](../organizations/settings/manage-teams.md)">Manage teams and configure team tools</a><br/>- <a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Test](../organizations/security/set-project-collection-level-permissions.md)">Test</a><br/>- <a href="../organizations/security/permissions.md#tags" data-raw-source="[Work item tags](../organizations/security/permissions.md#tags)">Work item tags</a><br/>
 
 </td>
 </tr>
@@ -497,7 +497,7 @@ Use features supported by these familiar clients to manage your project and illu
 </td>
 </tr>
 </tbody>
-</table>  
+</table>
 
 <a id="scrum"></a>
 
@@ -600,7 +600,7 @@ Use features supported by these familiar clients to manage your project and illu
 </td>
 </tr>
 </tbody>
-</table>  
+</table>
 
 <a id="alerts"></a>
 
@@ -1228,20 +1228,20 @@ pipelines\tasks\build\media
 <p><b>Manage the data warehouse</b></p>
 <p>The reporting warehouse is a traditional data warehouse that consists of a <a href="../report/admin/manage-reports-data-warehouse-cube.md" data-raw-source="[relational database and an Analysis Services database](../report/admin/manage-reports-data-warehouse-cube.md)">relational database and an Analysis Services database</a>. You manage it through the following activities:</p>
 
-* <a href="../report/admin/manually-process-data-warehouse-and-cube.md" data-raw-source="[Manually process the data warehouse](../report/admin/manually-process-data-warehouse-and-cube.md)">Manually process the data warehouse</a><br/>- <a href="../report/admin/rebuild-data-warehouse-and-cube.md" data-raw-source="[Rebuild the data warehouse](../report/admin/rebuild-data-warehouse-and-cube.md)">Rebuild the data warehouse</a><br/>- <a href="../report/admin/resolve-schema-conflicts.md" data-raw-source="[Resolve schema conflicts](../report/admin/resolve-schema-conflicts.md)">Resolve schema conflicts</a><br/>- <a href="../report/admin/change-a-process-control-setting.md" data-raw-source="[Change a process control setting](../report/admin/change-a-process-control-setting.md)">Change a process control setting</a><br/><br/>
+- <a href="../report/admin/manually-process-data-warehouse-and-cube.md" data-raw-source="[Manually process the data warehouse](../report/admin/manually-process-data-warehouse-and-cube.md)">Manually process the data warehouse</a><br/>- <a href="../report/admin/rebuild-data-warehouse-and-cube.md" data-raw-source="[Rebuild the data warehouse](../report/admin/rebuild-data-warehouse-and-cube.md)">Rebuild the data warehouse</a><br/>- <a href="../report/admin/resolve-schema-conflicts.md" data-raw-source="[Resolve schema conflicts](../report/admin/resolve-schema-conflicts.md)">Resolve schema conflicts</a><br/>- <a href="../report/admin/change-a-process-control-setting.md" data-raw-source="[Change a process control setting](../report/admin/change-a-process-control-setting.md)">Change a process control setting</a><br/><br/>
   </td>
   <td width="33%">
 
 <p><b>Build reports</b></p>
 <p>Build reports track the quality of software under development. By defining tests to run automatically as part of each build definition and instrumenting tests to gather code coverage data, you can gain insight about the quality of the builds, tests, and code.</p>
 
-* <a href="https://msdn.microsoft.com/library/dd380683.aspx" data-raw-source="[Build Quality Indicators](https://msdn.microsoft.com/library/dd380683.aspx)">Build Quality Indicators</a> (Agile &amp; CMMI)<br/>- <a href="https://msdn.microsoft.com/library/dd380643.aspx" data-raw-source="[Build Success Over Time](https://msdn.microsoft.com/library/dd380643.aspx)">Build Success Over Time</a><br/>- <a href="https://msdn.microsoft.com/library/dd380708.aspx" data-raw-source="[Build Summary](https://msdn.microsoft.com/library/dd380708.aspx)">Build Summary</a><br/>
+- <a href="https://msdn.microsoft.com/library/dd380683.aspx" data-raw-source="[Build Quality Indicators](https://msdn.microsoft.com/library/dd380683.aspx)">Build Quality Indicators</a> (Agile &amp; CMMI)<br/>- <a href="https://msdn.microsoft.com/library/dd380643.aspx" data-raw-source="[Build Success Over Time](https://msdn.microsoft.com/library/dd380643.aspx)">Build Success Over Time</a><br/>- <a href="https://msdn.microsoft.com/library/dd380708.aspx" data-raw-source="[Build Summary](https://msdn.microsoft.com/library/dd380708.aspx)">Build Summary</a><br/>
   <br/>
 
 <p><b>Test and bug reports</b></p>
 <p>Test planning reports support monitoring the test progress and coverage of backlog items or user stories. Bug tracking reports illustrate the team&#39;s capacity to find and resolve bugs.</p>
 
-* <a href="https://msdn.microsoft.com/library/dd380713.aspx" data-raw-source="[Test Case Readiness](https://msdn.microsoft.com/library/dd380713.aspx)">Test Case Readiness</a><br/>- <a href="https://msdn.microsoft.com/library/dd380702.aspx" data-raw-source="[Test Plan Progress](https://msdn.microsoft.com/library/dd380702.aspx)">Test Plan Progress</a><br/>- <a href="https://msdn.microsoft.com/library/dd380736.aspx" data-raw-source="[Bug Status](https://msdn.microsoft.com/library/dd380736.aspx)">Bug Status</a> (Agile &amp; CMMI)<br/>- <a href="https://msdn.microsoft.com/library/dd380674.aspx" data-raw-source="[Bug Trends](https://msdn.microsoft.com/library/dd380674.aspx)">Bug Trends</a> (Agile &amp; CMMI)<br/>- <a href="https://msdn.microsoft.com/library/dd380731.aspx" data-raw-source="[Reactivations](https://msdn.microsoft.com/library/dd380731.aspx)">Reactivations</a> (Agile &amp; CMMI)<br/>
+- <a href="https://msdn.microsoft.com/library/dd380713.aspx" data-raw-source="[Test Case Readiness](https://msdn.microsoft.com/library/dd380713.aspx)">Test Case Readiness</a><br/>- <a href="https://msdn.microsoft.com/library/dd380702.aspx" data-raw-source="[Test Plan Progress](https://msdn.microsoft.com/library/dd380702.aspx)">Test Plan Progress</a><br/>- <a href="https://msdn.microsoft.com/library/dd380736.aspx" data-raw-source="[Bug Status](https://msdn.microsoft.com/library/dd380736.aspx)">Bug Status</a> (Agile &amp; CMMI)<br/>- <a href="https://msdn.microsoft.com/library/dd380674.aspx" data-raw-source="[Bug Trends](https://msdn.microsoft.com/library/dd380674.aspx)">Bug Trends</a> (Agile &amp; CMMI)<br/>- <a href="https://msdn.microsoft.com/library/dd380731.aspx" data-raw-source="[Reactivations](https://msdn.microsoft.com/library/dd380731.aspx)">Reactivations</a> (Agile &amp; CMMI)<br/>
   <br/>
 
 <p><b>Required team activities to generate useful reports</b></p>
@@ -1257,7 +1257,7 @@ pipelines\tasks\build\media
 - <a href="https://msdn.microsoft.com/library/dn641200.aspx">Backlog Overview</a><br/>- <a href="https://msdn.microsoft.com/library/ff731579.aspx">Release Burndown</a><br/>- <a href="https://msdn.microsoft.com/library/ff731588.aspx">Sprint Burndown</a><br/>- <a href="https://msdn.microsoft.com/library/ff731575.aspx">Velocity</a><br/><br/>
 <p><em>Agile and CMMI</em></p>
 
-* <a href="https://msdn.microsoft.com/library/dd380678.aspx">Burndown and Burn Rate</a><br/>- <a href="https://msdn.microsoft.com/library/dd380673.aspx">Remaining Work</a><br/>- <a href="https://msdn.microsoft.com/library/ee461517.aspx">Requirements Overview</a> (CMMI)<br/>- <a href="https://msdn.microsoft.com/library/ee461582.aspx">Requirements Progress</a> (CMMI)<br/>- <a href="https://msdn.microsoft.com/library/dd380706.aspx">Status of All Iterations</a> (similar to Velocity)<br/>- <a href="https://msdn.microsoft.com/library/dd380641.aspx">Stories Overview</a> (Agile)<br/>- <a href="https://msdn.microsoft.com/library/dd380641.aspx">Stories Progress</a> (Agile)<br/>- <a href="https://msdn.microsoft.com/library/ee707132.aspx">Unplanned Work</a><br/>
+- <a href="https://msdn.microsoft.com/library/dd380678.aspx">Burndown and Burn Rate</a><br/>- <a href="https://msdn.microsoft.com/library/dd380673.aspx">Remaining Work</a><br/>- <a href="https://msdn.microsoft.com/library/ee461517.aspx">Requirements Overview</a> (CMMI)<br/>- <a href="https://msdn.microsoft.com/library/ee461582.aspx">Requirements Progress</a> (CMMI)<br/>- <a href="https://msdn.microsoft.com/library/dd380706.aspx">Status of All Iterations</a> (similar to Velocity)<br/>- <a href="https://msdn.microsoft.com/library/dd380641.aspx">Stories Overview</a> (Agile)<br/>- <a href="https://msdn.microsoft.com/library/dd380641.aspx">Stories Progress</a> (Agile)<br/>- <a href="https://msdn.microsoft.com/library/ee707132.aspx">Unplanned Work</a><br/>
   <br/>
 
 <p><b>Set permissions to view or create reports</b></p>
@@ -2302,11 +2302,11 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 We add new features frequently. We'll work to keep this list up-to-date. Other resources you might want to bookmark:
 
-* [Azure DevOps Services - Features update](https://aka.ms/azuredevops/releasenotes)
-* [Azure DevOps Blog](https://devblogs.microsoft.com/devops/)
+- [Azure DevOps Services - Features update](https://aka.ms/azuredevops/releasenotes)
+- [Azure DevOps Blog](https://devblogs.microsoft.com/devops/)
 
 <br/>
-Get started today using our cloud offering, <a href="https://visualstudio.microsoft.com/team-services/" data-raw-source="[Azure DevOps Services](https://visualstudio.microsoft.com/team-services/)">Azure DevOps Services</a>, or our <a href="https://visualstudio.microsoft.com/downloads/" data-raw-source="[on-premises TFS server](https://visualstudio.microsoft.com/downloads/)">on-premises TFS server</a>.  
+Get started today using our cloud offering, <a href="https://visualstudio.microsoft.com/team-services/" data-raw-source="[Azure DevOps Services](https://visualstudio.microsoft.com/team-services/)">Azure DevOps Services</a>, or our <a href="https://visualstudio.microsoft.com/downloads/" data-raw-source="[on-premises TFS server](https://visualstudio.microsoft.com/downloads/)">on-premises TFS server</a>.
 
 <!---
 ### We welcome your feedback

@@ -182,8 +182,8 @@ To deploy to Azure App Service from Azure Pipelines, you need to establish a _se
 
     Your new pipeline appears. When prompted, select the Azure subscription in which you created your Web App.
 
-    * Select the Web App
-    * Select Validate and configure
+    - Select the Web App
+    - Select Validate and configure
 
     Azure Pipelines creates an **azure-pipelines.yml** file that defines your CI/CD pipeline as a series of _stages_, _Jobs_, and _steps_, where each step contains the details for different _tasks_ and _scripts_. Take a look at the pipeline to see what it does. Make sure all the default inputs are appropriate for your code.
 
@@ -191,17 +191,17 @@ To deploy to Azure App Service from Azure Pipelines, you need to establish a _se
 
 The YAML file contains the following key elements:
 
-* The `trigger` at the top indicates the commits that trigger the pipeline, such as commits to the `master` branch.
-* The `variables` that parameterize the YAML template
+- The `trigger` at the top indicates the commits that trigger the pipeline, such as commits to the `master` branch.
+- The `variables` that parameterize the YAML template
   > [!TIP]
   > To avoid hard-coding specific variable values in your YAML file, you can define variables in the pipeline's web interface instead. For more information, see [Variables - Secrets](../process/variables.md#secret-variables).
-* The `stages`
-  * Build `stage`, which builds your project, and a Deploy stage, which deploys it to Azure as a Linux web app.
-  * Deploy `stage` that also creates an Environment with default name same as the Web App. You can choose to modify the environment name.
-* Each stage has a `pool` element that specifies one or more virtual machines (VMs) in which the pipeline runs the `steps`. By default, the `pool` element contains only a single entry for an Ubuntu VM. You can use a pool to run tests in multiple environments as part of the build, such as using different Python versions for creating a package.
-* The `steps` element can contain children like `task`, which runs a specific task as defined in the Azure Pipelines [task reference](../tasks/index.md?view=azure-devops), and `script`, which runs an arbitrary set of commands.
+- The `stages`
+  - Build `stage`, which builds your project, and a Deploy stage, which deploys it to Azure as a Linux web app.
+  - Deploy `stage` that also creates an Environment with default name same as the Web App. You can choose to modify the environment name.
+- Each stage has a `pool` element that specifies one or more virtual machines (VMs) in which the pipeline runs the `steps`. By default, the `pool` element contains only a single entry for an Ubuntu VM. You can use a pool to run tests in multiple environments as part of the build, such as using different Python versions for creating a package.
+- The `steps` element can contain children like `task`, which runs a specific task as defined in the Azure Pipelines [task reference](../tasks/index.md?view=azure-devops), and `script`, which runs an arbitrary set of commands.
 
-* The first task under Build stage is [UsePythonVersion](../tasks/tool/use-python-version.md?view=azure-devops), which specifies the version of Python to use on the build agent. The `@<n>` suffix indicates the version of the task. The `@0` indicates preview version.
+- The first task under Build stage is [UsePythonVersion](../tasks/tool/use-python-version.md?view=azure-devops), which specifies the version of Python to use on the build agent. The `@<n>` suffix indicates the version of the task. The `@0` indicates preview version.
   Then we have script-based task that creates a virtual environment and installs dependencies from file (requirements.txt).
 
   ````yaml
@@ -221,7 +221,7 @@ The YAML file contains the following key elements:
      ```
   ````
 
-- Next step creates the _.zip_ file that the steps under deploy stage of the pipeline deploys. To create the _.zip_ file, add an [ArchiveFiles](../tasks/utility/archive-files.md?view=azure-devops) task to the end of the YAML file:
+* Next step creates the _.zip_ file that the steps under deploy stage of the pipeline deploys. To create the _.zip_ file, add an [ArchiveFiles](../tasks/utility/archive-files.md?view=azure-devops) task to the end of the YAML file:
 
   ```yaml
   - task: ArchiveFiles@2
@@ -242,12 +242,12 @@ The YAML file contains the following key elements:
   > [!IMPORTANT]
   > When deploying to Azure App Service, be sure to use `includeRootFolder: false`. Otherwise, the contents of the _.zip_ file are put in a folder named _s_, for "sources," which is replicated on the App Service. The App Service on Linux container then can't find the app code.
 
-- Then we have the task to upload the artifacts.
+* Then we have the task to upload the artifacts.
 
-- In the Deploy stage, we use the `deployment` keyword to define a [deployment job](../process/deployment-jobs.md) targeting an [environment](../process/environments.md). By using the template, an environment with same name as the Web app is automatically created if it doesn't already exist. Alternatively you can pre-create the environment and provide the `environmentName`
+* In the Deploy stage, we use the `deployment` keyword to define a [deployment job](../process/deployment-jobs.md) targeting an [environment](../process/environments.md). By using the template, an environment with same name as the Web app is automatically created if it doesn't already exist. Alternatively you can pre-create the environment and provide the `environmentName`
 
-- Within the deployment job, first task is [UsePythonVersion](../tasks/tool/use-python-version.md?view=azure-devops), which specifies the version of Python to use on the build agent.
-- We then use the [AzureWebApp](../tasks/deploy/azure-rm-web-app.md) task to deploy the _.zip_ file to the App Service you identified by the `azureServiceConnectionId` and `webAppName` variables at the beginning of the pipeline file. Paste the following code at the end of the file:
+* Within the deployment job, first task is [UsePythonVersion](../tasks/tool/use-python-version.md?view=azure-devops), which specifies the version of Python to use on the build agent.
+* We then use the [AzureWebApp](../tasks/deploy/azure-rm-web-app.md) task to deploy the _.zip_ file to the App Service you identified by the `azureServiceConnectionId` and `webAppName` variables at the beginning of the pipeline file. Paste the following code at the end of the file:
 
   ```yaml
   jobs:
@@ -418,6 +418,6 @@ To delete the storage account that maintains the file system for Cloud Shell, wh
 
 ## Next steps
 
-* [Build Python apps](python.md)
-* [Learn about build agents](../agents/agents.md)
-* [Configure Python app on App Service](/azure/app-service/containers/how-to-configure-python)
+- [Build Python apps](python.md)
+- [Learn about build agents](../agents/agents.md)
+- [Configure Python app on App Service](/azure/app-service/containers/how-to-configure-python)

@@ -32,18 +32,18 @@ To understand how the system uses area paths, see [About area and iteration path
 
 <a name="permissions"></a>
 
-* Add Area Paths to a project. If you don't have a project yet, [create one now](../projects/create-project.md).
-* Ensure you're a member of the **Project Administrators** group to add an Area Path under the root node or edit or delete any child node. To acquire these permissions, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
-* Have one or more of the following permissions set to **Allow**, to add, edit, and manage Area Paths under a node:
+- Add Area Paths to a project. If you don't have a project yet, [create one now](../projects/create-project.md).
+- Ensure you're a member of the **Project Administrators** group to add an Area Path under the root node or edit or delete any child node. To acquire these permissions, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
+- Have one or more of the following permissions set to **Allow**, to add, edit, and manage Area Paths under a node:
 
-  * **Create child nodes**
-  * **Delete this node**
-  * **Edit this node**
-  * **View permissions in this node**
+  - **Create child nodes**
+  - **Delete this node**
+  - **Edit this node**
+  - **View permissions in this node**
 
   By default, the user who created the project has these permissions set. To learn more, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md#set-permissions-area-path).
 
-* Ensure you're [added as a team administrator](add-team-administrator.md) or are a member of the **Project Administrators** group to set team Area Paths.
+- Ensure you're [added as a team administrator](add-team-administrator.md) or are a member of the **Project Administrators** group to set team Area Paths.
 
 For naming restrictions on Area Paths, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#name-restrictions).
 
@@ -69,12 +69,12 @@ If you're new to managing projects and teams, the most straight forward sequence
 
 As needed, you can do the following actions at any time:
 
-* Add additional child nodes
-* Rename an Area Path (except the root area path)
-* Move a child node under another node
-* Delete a child node
-* Rename a team
-* Change the Area Path assignments made to a team
+- Add additional child nodes
+- Rename an Area Path (except the root area path)
+- Move a child node under another node
+- Delete a child node
+- Rename a team
+- Change the Area Path assignments made to a team
 
 <a id="open-project-settings" />
 
@@ -122,9 +122,9 @@ az boards area project list [--depth]
 
 #### Parameters
 
-* **depth**: Optional. Depth of child nodes to be listed. Example: --depth 3. When not specified, only the top-level area paths are returned.
-* **path**: Optional. Absolute path of an area. Example: --path \ProjectName\Area\AreaName. When not specified, lists area paths from the root level.
-* **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".
+- **depth**: Optional. Depth of child nodes to be listed. Example: --depth 3. When not specified, only the top-level area paths are returned.
+- **path**: Optional. Absolute path of an area. Example: --path \ProjectName\Area\AreaName. When not specified, lists area paths from the root level.
+- **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".
 
 #### Example
 
@@ -219,7 +219,7 @@ If you haven't added any areas or teams, you'll see that only one area is define
 > [!div class="mx-imgBorder"]  
 > ![Areas, defaults defined for project](media/areas/modify-areas-its-areas-ts.png)
 
-* To add a child node, highlight the area path and then choose **New child**. Optionally, you can open the ![ ](../../media/icons/actions-icon.png) context menu for the area path and choose **New child**.
+- To add a child node, highlight the area path and then choose **New child**. Optionally, you can open the ![ ](../../media/icons/actions-icon.png) context menu for the area path and choose **New child**.
 
   Enter a name (255 characters or less) for the node. For additional name restrictions, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions).
 
@@ -233,7 +233,7 @@ If you haven't added any areas or teams, you'll see that only one area is define
 > [!div class="mx-imgBorder"]  
 > ![Areas, defaults defined for project](media/areas/modify-areas-its-areas-ts.png)
 
-* To add a child node, highlight the area path and then choose **New child**. Optionally, you can open the ![ ](../../media/icons/actions-icon.png) context menu for the area path and choose **New child**.
+- To add a child node, highlight the area path and then choose **New child**. Optionally, you can open the ![ ](../../media/icons/actions-icon.png) context menu for the area path and choose **New child**.
 
   Enter a name (255 characters or less) for the node. For additional name restrictions, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions).
 
@@ -256,9 +256,9 @@ az boards area project create --name
 
 #### Parameters
 
-* **name**: Required. Area path name.
-* **path**: Optional. Absolute path of an area. Example: --path \ProjectName\Area\AreaName. When not specified, adds an area at the root level.
-* **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".
+- **name**: Required. Area path name.
+- **path**: Optional. Absolute path of an area. Example: --path \ProjectName\Area\AreaName. When not specified, adds an area at the root level.
+- **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".
 
 #### Example: JSON format
 
@@ -305,7 +305,7 @@ ID     Identifier                            Name    Path                       
 > [!div class="mx-imgBorder"]  
 > ![Areas, defaults defined for project](media/areas/modify-areas-its-areas-ts.png)
 
-* To add a child node, highlight the area path and then choose **New child**. Optionally, you can open the ![ ](../../media/icons/actions-icon.png) context menu for the area path and choose **New child**.
+- To add a child node, highlight the area path and then choose **New child**. Optionally, you can open the ![ ](../../media/icons/actions-icon.png) context menu for the area path and choose **New child**.
 
   Enter a name (255 characters or less) for the node. For additional name restrictions, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions).
 
@@ -319,7 +319,7 @@ ID     Identifier                            Name    Path                       
 > [!div class="mx-imgBorder"]  
 > ![Areas, defaults defined for project](media/areas/modify-areas-its-areas-ts.png)
 
-* To add a child node, highlight the area path and then choose **New child**. Optionally, you can open the ![ ](../../media/icons/actions-icon.png) context menu for the area path and choose **New child**.
+- To add a child node, highlight the area path and then choose **New child**. Optionally, you can open the ![ ](../../media/icons/actions-icon.png) context menu for the area path and choose **New child**.
 
   Enter a name (255 characters or less) for the node. For additional name restrictions, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions).
 
@@ -402,8 +402,8 @@ az boards area team list --team
 
 #### Parameters
 
-* **team**: Required. Name or ID of the team.
-* **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".
+- **team**: Required. Name or ID of the team.
+- **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".
 
 For example, the following command lists the area paths for the Service Delivery team. For other output format options, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli)
 
@@ -541,11 +541,11 @@ az boards area team add --path  --team
 
 #### Parameters
 
-* **path**: Required. Absolute path of an area. Example: --path \ProjectName\Area\AreaName.
-* **team**: Required. Name or ID of the team.
-* **include-sub-areas**: Optional. Include child nodes of the area path. Accepted values: false, true.
-* **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".
-* **set-as-default**: Optional. Specify as the default area path for the team. Default: False.
+- **path**: Required. Absolute path of an area. Example: --path \ProjectName\Area\AreaName.
+- **team**: Required. Name or ID of the team.
+- **include-sub-areas**: Optional. Include child nodes of the area path. Accepted values: false, true.
+- **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".
+- **set-as-default**: Optional. Specify as the default area path for the team. Default: False.
 
 #### Example
 
@@ -669,10 +669,10 @@ az boards area project update --path
                               [--project]
 ```
 
-* **path**: Required. Absolute path of an area. Example: --path \ProjectName\Area\AreaName.
-* **child-id**: Optional. Moves an existing area path and adds it as a child node for the specified path name or ID.
-* **name**: Optional. Specifies the new name of the area path.
-* **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".
+- **path**: Required. Absolute path of an area. Example: --path \ProjectName\Area\AreaName.
+- **child-id**: Optional. Moves an existing area path and adds it as a child node for the specified path name or ID.
+- **name**: Optional. Specifies the new name of the area path.
+- **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".
 
 #### Example
 
@@ -703,9 +703,9 @@ az boards area team remove --path
 
 #### Parameters
 
-* **path**: Required. Absolute path of an area. Example: --path \ProjectName\Area\AreaName.
-* **team**: Required. Name or ID of the team.
-* **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".
+- **path**: Required. Absolute path of an area. Example: --path \ProjectName\Area\AreaName.
+- **team**: Required. Name or ID of the team.
+- **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".
 
 #### Example
 
@@ -764,28 +764,28 @@ You can quickly generate [queries](../../boards/queries/using-queries.md) to vie
 
 As you can see, Area Paths play a major role in supporting Agile tools, teams, and managing work items. Learn more about working with these fields from the following articles:
 
-* [About areas and iterations](about-areas-iterations.md)
-* [Add another team](../../organizations/settings/add-teams.md)
-* [Configure team settings and add team administrators](manage-teams.md)
-* [Agile tools that rely on areas or iterations](about-teams-and-settings.md)
-* [Query by area or iteration path](../../boards/queries/query-by-area-iteration-path.md)
-* [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md)
+- [About areas and iterations](about-areas-iterations.md)
+- [Add another team](../../organizations/settings/add-teams.md)
+- [Configure team settings and add team administrators](manage-teams.md)
+- [Agile tools that rely on areas or iterations](about-teams-and-settings.md)
+- [Query by area or iteration path](../../boards/queries/query-by-area-iteration-path.md)
+- [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md)
 
 ### Programmatic resources
 
 ::: moniker range="azure-devops"
 
-* [az boards area (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/area)
-* [Teams (REST API)](/rest/api/azure/devops/core/teams)
-* [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes)
+- [az boards area (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/area)
+- [Teams (REST API)](/rest/api/azure/devops/core/teams)
+- [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes)
 
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
 
-* [az boards area (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/area)
-* [Teams (REST API)](/rest/api/azure/devops/core/teams)
-* [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes)
-* [Define the classification plug-in (Process Template)](../../reference/process-templates/define-classification-plug-in.md)
+- [az boards area (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/area)
+- [Teams (REST API)](/rest/api/azure/devops/core/teams)
+- [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes)
+- [Define the classification plug-in (Process Template)](../../reference/process-templates/define-classification-plug-in.md)
 
 ::: moniker-end

@@ -10,16 +10,16 @@ With this update we are migrating the test entity sets to version 3.0-preview. I
 
 The following list includes the entity sets that will be migrated to version 3.0-preview:
 
-* TestRuns
-* TestResults
-* Tests
-* Builds
-* Branches
-* Releases
-* ReleaseEnvironments
-* TestResultsDaily
-* ReleasePipelines
-* ReleaseStages
-* BuildPipelines
+- TestRuns
+- TestResults
+- Tests
+- Builds
+- Branches
+- Releases
+- ReleaseEnvironments
+- TestResultsDaily
+- ReleasePipelines
+- ReleaseStages
+- BuildPipelines
 
 For more information on using the OData endpoint with the Analytics service see the documentation [here](https://docs.microsoft.com/azure/devops/report/extend-analytics/odata-api-version?view=azure-devops).

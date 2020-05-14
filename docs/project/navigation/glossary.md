@@ -18,8 +18,8 @@ ms.date: 02/08/2019
 
 This glossary describes terms used when navigating in the web portal for Azure DevOps. See also:
 
-* [Agile glossary](../../boards/work-items/agile-glossary.md)
-* [Security glossary](../../organizations/security/security-glossary.md)
+- [Agile glossary](../../boards/work-items/agile-glossary.md)
+- [Security glossary](../../organizations/security/security-glossary.md)
 
 ## Backlogs
 

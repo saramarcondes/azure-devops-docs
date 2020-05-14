@@ -23,26 +23,26 @@ There are a number of other features across Work, Code, Build, Release, and even
 
 ### Work
 
-* [Import and export Inherited Processes](#import-and-export-inherited-processes)
-* [Customize column options in the Work Items hub](#customize-column-options-in-the-work-items-hub)
+- [Import and export Inherited Processes](#import-and-export-inherited-processes)
+- [Customize column options in the Work Items hub](#customize-column-options-in-the-work-items-hub)
 
 ### Code
 
-* [Receive notifications when pull request policies are bypassed](#receive-notifications-when-pull-request-policies-are-bypassed)
-* [Favorite a branch from within a pull request](#favorite-a-branch-from-within-a-pull-request)
+- [Receive notifications when pull request policies are bypassed](#receive-notifications-when-pull-request-policies-are-bypassed)
+- [Favorite a branch from within a pull request](#favorite-a-branch-from-within-a-pull-request)
 
 ### Build and Release
 
-* [Visualize release progress](#visualize-release-progress)
-* [Run inline or file-based Python scripts in your pipeline](#run-inline-or-file-based-python-scripts-in-your-pipeline)
-* [Use Anaconda tools for data science in your pipeline](#use-anaconda-tools-for-data-science-in-your-pipeline)
-* [Simplify definitions with multiple agentless tasks](#simplify-definitions-with-multiple-agentless-tasks)
-* [Manage limits on self-hosted, concurrent CI/CD jobs](#manage-limits-on-self-hosted-concurrent-cicd-jobs)
-* [Streamline authentication from agent VMs in Azure to Azure Resource Manager](#streamline-authentication-from-agent-vms-in-azure-to-azure-resource-manager)
+- [Visualize release progress](#visualize-release-progress)
+- [Run inline or file-based Python scripts in your pipeline](#run-inline-or-file-based-python-scripts-in-your-pipeline)
+- [Use Anaconda tools for data science in your pipeline](#use-anaconda-tools-for-data-science-in-your-pipeline)
+- [Simplify definitions with multiple agentless tasks](#simplify-definitions-with-multiple-agentless-tasks)
+- [Manage limits on self-hosted, concurrent CI/CD jobs](#manage-limits-on-self-hosted-concurrent-cicd-jobs)
+- [Streamline authentication from agent VMs in Azure to Azure Resource Manager](#streamline-authentication-from-agent-vms-in-azure-to-azure-resource-manager)
 
 ### Authentication
 
-* [Guard your user account using alternate authentication notifications](#guard-your-user-account-using-alternate-authentication-notifications)
+- [Guard your user account using alternate authentication notifications](#guard-your-user-account-using-alternate-authentication-notifications)
 
 ## Work
 

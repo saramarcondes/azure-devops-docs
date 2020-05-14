@@ -16,12 +16,12 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Members
 
-* `name`: string.
+- `name`: string.
 
-* `parent`: [ShallowReference](../../../TFS/TestManagement/Contracts/ShallowReference.md).
+- `parent`: [ShallowReference](../../../TFS/TestManagement/Contracts/ShallowReference.md).
 
-* `queryString`: string.
+- `queryString`: string.
 
-* `inheritDefaultConfigurations`: boolean.
+- `inheritDefaultConfigurations`: boolean.
 
-* `defaultConfigurations`: [ShallowReference](../../../TFS/TestManagement/Contracts/ShallowReference.md)[].
+- `defaultConfigurations`: [ShallowReference](../../../TFS/TestManagement/Contracts/ShallowReference.md)[].

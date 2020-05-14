@@ -19,12 +19,12 @@ Web Access configuration data. This information is used to process requests on t
 
 ### Members
 
-* `api`: [ConfigurationContextApis](../../../VSS/References/SDK_Interfaces/ConfigurationContextApis.md). MVC api configuration
+- `api`: [ConfigurationContextApis](../../../VSS/References/SDK_Interfaces/ConfigurationContextApis.md). MVC api configuration
 
-* `clientHost`: string. Optional name of the client (e.g. TEE) hosting the page
+- `clientHost`: string. Optional name of the client (e.g. TEE) hosting the page
 
-* `isHosted`: boolean.
+- `isHosted`: boolean.
 
-* `mailSettings`: [TfsMailSettings](../../../VSS/References/SDK_Interfaces/TfsMailSettings.md). Current mail settings for TFS
+- `mailSettings`: [TfsMailSettings](../../../VSS/References/SDK_Interfaces/TfsMailSettings.md). Current mail settings for TFS
 
-* `paths`: [ConfigurationContextPaths](../../../VSS/References/SDK_Interfaces/ConfigurationContextPaths.md). Server resource paths
+- `paths`: [ConfigurationContextPaths](../../../VSS/References/SDK_Interfaces/ConfigurationContextPaths.md). Server resource paths

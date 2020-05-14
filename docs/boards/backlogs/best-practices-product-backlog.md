@@ -28,12 +28,12 @@ To get started, see [Create your backlog](create-your-backlog.md).
 
 Product owners play an important role in Scrum, primarily as the interface between customers and the team. To enable product owners to perform the following responsibilities, they need to be added to the Contributors group.
 
-* Analyzing customer requirements and articulate them as user stories, features, or requirements
-* Building, prioritizing, and refining the product backlog
-* Representing customer and stakeholder requirements to the team and responding to questions your team has about them
-* Meeting regularly with stakeholders to address their needs and keep them informed
-* Helping stakeholders understand the decisions underlying the priority order of your backlog
-* Responding to any and all requests from your team for more information concerning backlog priorities and requirements
+- Analyzing customer requirements and articulate them as user stories, features, or requirements
+- Building, prioritizing, and refining the product backlog
+- Representing customer and stakeholder requirements to the team and responding to questions your team has about them
+- Meeting regularly with stakeholders to address their needs and keep them informed
+- Helping stakeholders understand the decisions underlying the priority order of your backlog
+- Responding to any and all requests from your team for more information concerning backlog priorities and requirements
 
 If they will also be responsible for configuring team settings, [add them as a team administrator](../../organizations/settings/add-team-administrator.md).
 
@@ -87,20 +87,20 @@ Product owners are the ultimate deciders of the criteria that create customer va
 
 Backlog refinement supports your sprint planning efforts and helps minimize these often seen challenges:
 
-* Long, unfocused, and ineffective sprint planning meetings
-* Insufficient thought given to design requirements
-* Poor sprint planning and execution
-* Defocus on the business value team wants to achieve
-* Inability to forecast
+- Long, unfocused, and ineffective sprint planning meetings
+- Insufficient thought given to design requirements
+- Poor sprint planning and execution
+- Defocus on the business value team wants to achieve
+- Inability to forecast
 
 A meeting to refine the backlog should occur separate from the sprint planning meeting. Use this meeting to perform these activities:
 
-* Right-size backlog items by splitting larger items into smaller items. No backlog item should be larger than it will take to complete in a single sprint.
-* Identify and fill in gaps in the product backlog. Capture new ideas and stories, architecture and design requirements, and other spikes.
-* Reorder the backlog to represent today's priorities and business value focus.
-* Ensure well defined acceptance criteria has been added to each item.
-* Revisit estimates made to backlog items and adjust upwards or downwards based on recent understanding about scope and acceptance criteria.
-* Review all potential backlog items to consider for the upcoming sprint to make sure they are well understood and that any additional work required to support their development is well understood by both product owner and the team.
+- Right-size backlog items by splitting larger items into smaller items. No backlog item should be larger than it will take to complete in a single sprint.
+- Identify and fill in gaps in the product backlog. Capture new ideas and stories, architecture and design requirements, and other spikes.
+- Reorder the backlog to represent today's priorities and business value focus.
+- Ensure well defined acceptance criteria has been added to each item.
+- Revisit estimates made to backlog items and adjust upwards or downwards based on recent understanding about scope and acceptance criteria.
+- Review all potential backlog items to consider for the upcoming sprint to make sure they are well understood and that any additional work required to support their development is well understood by both product owner and the team.
 
 You'll know that you've done a good job refining your backlog when your sprint planning meetings run smoothly and efficiently. Such meetings shouldn't contain a lot of surprises, and your team should feel they can contribute fully.
 
@@ -116,5 +116,5 @@ As the need to perform this work arises, capture it along with other items on yo
 
 ## Additional resources
 
-* [What is Agile?](/azure/devops/learn/agile/what-is-agile)
-* [Building productive, customer focused teams](/azure/devops/learn/agile/productive-teams)
+- [What is Agile?](/azure/devops/learn/agile/what-is-agile)
+- [Building productive, customer focused teams](/azure/devops/learn/agile/productive-teams)

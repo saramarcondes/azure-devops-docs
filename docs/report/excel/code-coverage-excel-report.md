@@ -37,21 +37,21 @@ This report is based on a PivotChart report that shows the most recent four week
 
 For the Code Coverage report to be useful and accurate, team members must perform the following activities:
 
-* **Configure a build system**. To use Team Foundation Build, you must set up a build system.
+- **Configure a build system**. To use Team Foundation Build, you must set up a build system.
 
   For more information, see [Build and Release agents](../../pipelines/agents/agents.md).
 
-* **Create build pipelines**. You can create several build pipelines and then run each of them to produce code for a different platform. Also, you can run each build for a different configuration.
+- **Create build pipelines**. You can create several build pipelines and then run each of them to produce code for a different platform. Also, you can run each build for a different configuration.
 
   For more information, see [Get started with CI/CD](../../pipelines/get-started-designer.md).
 
-* **Define tests to run automatically as part of the build**. As part of the build pipeline, you can define tests to run as part of the build or to fail if the tests fail.
+- **Define tests to run automatically as part of the build**. As part of the build pipeline, you can define tests to run as part of the build or to fail if the tests fail.
 
   For more information, see [Set up continuous testing for your builds](../../pipelines/test/set-up-continuous-testing-builds.md).
 
-* **Configure tests to gather code coverage data**. For code coverage data to appear in the report, team members must instrument tests to gather that data.
+- **Configure tests to gather code coverage data**. For code coverage data to appear in the report, team members must instrument tests to gather that data.
 
-* **Run builds regularly**. You can run builds at set intervals or after every check-in. You can create regular builds when you use the schedule trigger.
+- **Run builds regularly**. You can run builds at set intervals or after every check-in. You can create regular builds when you use the schedule trigger.
 
   For more information, see [Build triggers](../../pipelines/build/triggers.md).
 
@@ -64,11 +64,11 @@ If the team practices test-driven development or similar techniques, the code co
 
 You can review the Code Coverage report to answer these questions:
 
-* How much of the code is the team testing?
+- How much of the code is the team testing?
 
-* Does the team have sufficient code coverage?
+- Does the team have sufficient code coverage?
 
-* Is code coverage increasing or decreasing over time?
+- Is code coverage increasing or decreasing over time?
 
   For more information about how code coverage impacts quality, see [Quality](../sharepoint-dashboards/quality-dashboard-agile-cmmi.md) and [Build Quality Indicators](../sql-reports/build-quality-indicators-report.md).
 
@@ -84,5 +84,5 @@ You can customize the Code Coverage report by opening it in Office Excel and cha
 
 ## Related articles
 
-* [Excel reports](excel-reports.md)
-* [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)
+- [Excel reports](excel-reports.md)
+- [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)

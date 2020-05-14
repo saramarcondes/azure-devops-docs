@@ -33,12 +33,12 @@ From the project home page, share your project with your team, add project membe
 
 ## Prerequisites
 
-* You must be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) or have your **Edit project-level information** permission set to **Allow** to do the following:
-  * Edit information on the project page
-  * Change the repository that you use to share your project mission
-  * Manage project membership
-* To edit a page, you must be a contributor to the repository or branch or have the **Contribute** permissions set to **Allow**.
-* To view the project page, you must be a valid member of the project. For more information, see [Permissions and groups, Valid user groups](../../organizations/security/about-permissions.md#validusers).
+- You must be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) or have your **Edit project-level information** permission set to **Allow** to do the following:
+  - Edit information on the project page
+  - Change the repository that you use to share your project mission
+  - Manage project membership
+- To edit a page, you must be a contributor to the repository or branch or have the **Contribute** permissions set to **Allow**.
+- To view the project page, you must be a valid member of the project. For more information, see [Permissions and groups, Valid user groups](../../organizations/security/about-permissions.md#validusers).
 
 ## Open project summary
 
@@ -51,12 +51,12 @@ If you haven't set up your project summary yet, you'll see this welcome page:
 
 Select one of the following tasks to get started:
 
-* **Invite** to begin [adding others to your project](../../organizations/security/add-users-team-project.md). Note, you can only invite users who have already been [added to your organization](../../organizations/accounts/add-team-members.md).
-* **Boards** to begin [adding work items](../../boards/work-items/view-add-work-items.md).
-* **Repos** to open [Repos>Files](../../repos/git/clone.md) page where you can clone or import a repository, or [initialize a README file](#initialize-a-readme-file-for-a-git-repo) for your project summary page.
-* **Pipelines** to start [defining a pipeline](../../pipelines/index.yml).
-* **Test Plans** to start [defining test plans and test suites](../../test/create-a-test-plan.md).
-* [Manage your services](../../organizations/settings/set-services.md) to disable the visibility of one or more services.
+- **Invite** to begin [adding others to your project](../../organizations/security/add-users-team-project.md). Note, you can only invite users who have already been [added to your organization](../../organizations/accounts/add-team-members.md).
+- **Boards** to begin [adding work items](../../boards/work-items/view-add-work-items.md).
+- **Repos** to open [Repos>Files](../../repos/git/clone.md) page where you can clone or import a repository, or [initialize a README file](#initialize-a-readme-file-for-a-git-repo) for your project summary page.
+- **Pipelines** to start [defining a pipeline](../../pipelines/index.yml).
+- **Test Plans** to start [defining test plans and test suites](../../test/create-a-test-plan.md).
+- [Manage your services](../../organizations/settings/set-services.md) to disable the visibility of one or more services.
 
 To support your project mission, choose a README file that you maintain in a project repository, or the [project Wiki](../../project/wiki/wiki-create-repo.md). To choose between a README file or a Wiki, see [Change the repository](#change-repo). To define a README file for your project, see [Initialize a README file for your Git repo](#initialize-git) or [Initialize a README file for your TFVC repo](#initialize-tfvc).
 ::: moniker-end
@@ -155,7 +155,7 @@ You can share your project and objective, as well as ways for team members to co
 
 ## Initialize a README file for a TFVC repo
 
-For projects that selected TFVC for version control, the README.md file needs to be at the root of your team project folder (i.e. $/TeamProject/README.md).
+For projects that selected TFVC for version control, the README.md file needs to be at the root of your team project folder (i.e. \$/TeamProject/README.md).
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -247,8 +247,8 @@ You can change the repository used to support your project vision, including poi
 
 2.  Choose the ![ ](../../media/icons/edit.png) edit icon.
 
-        	> [!div class="mx-imgBorder"]  
-        	> ![Choose README file, new nav](media/share-project/choose-readme-file-new-nav.png)  
+        	> [!div class="mx-imgBorder"]
+        	> ![Choose README file, new nav](media/share-project/choose-readme-file-new-nav.png)
 
     If you don't see the **Edit** icon, then you're not a member of the Project Administrators group. [Get added as an admin](../../organizations/security/set-project-collection-level-permissions.md) to proceed.
 
@@ -288,16 +288,16 @@ You can change the repository used to support your project vision, including poi
 ### Git repository
 
 <img src="media/project-home-page-get-started-info.png" alt="Git new project" style="border: 1px solid #C3C3C3;" />
-> [!div class="mx-imgBorder"]  
+> [!div class="mx-imgBorder"]
 > ![Git new project summary page](media/share-project/git-start-page-readme.png)
 
-> [!div class="mx-imgBorder"]  
+> [!div class="mx-imgBorder"]
 > ![Initialize README file, new nav](media/share-project/initialize-readme-prev-nav.png)
 
 Use this page to leverage all the built-in DevOps functionality of Azure DevOps and to perform the following activities.
 
 > [!div class="mx-tdCol2BreakAll"]
-> |Git repository   |TFVC repository   |  
+> |Git repository   |TFVC repository   |
 > |-------------|----------|
 > |- Clone your project to your client computer<br/>- Push an existing repository from the command line<br/>- Import a repository<br/>- Initialize a README or gitignore<br/>- Setup a build from an external repository<br/>- [Add team members](#cross-project-activity)<br/>- [View code, build, and work activity](#cross-project-activity) |- Setup a build<br/>- Add a README for your project<br/>- [Add team members](#cross-project-activity)<br/>- [View code, build, and work activity](#cross-project-activity) |
 

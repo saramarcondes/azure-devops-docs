@@ -18,9 +18,9 @@ ms.date: 11/19/2018
 
 With extensions, you can add rich functionality to your work item forms. An extension comes in four flavors, or contribution types. The following controls appear on the web form layout for all inherited and customizable work item types (WITs):
 
-* Field-level contribution (custom controls)
-* Group-level contribution
-* Page-level contribution
+- Field-level contribution (custom controls)
+- Group-level contribution
+- Page-level contribution
 
 The fourth type, action-level contributions, on the other hand, appear in the context menu of the web form.
 
@@ -141,14 +141,14 @@ For example, the following image shows nine action-level contributions have been
 
 You can use these REST APIs to work with extensions:
 
-* [Extend the work item form](../../../extend/develop/add-workitem-extension.md)
-* [Add a custom control to the work item form](../../../extend/develop/custom-control.md)
+- [Extend the work item form](../../../extend/develop/add-workitem-extension.md)
+- [Add a custom control to the work item form](../../../extend/develop/custom-control.md)
 
 ## Related articles
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
-* [Add a custom field to a work item type](customize-process-field.md)
-* [Customize a work item type](customize-process-wit.md)
-* [Customize the web layout](customize-process-form.md)
-* [Customize a project using an inherited process](customize-process.md)
+- [Add a custom field to a work item type](customize-process-field.md)
+- [Customize a work item type](customize-process-wit.md)
+- [Customize the web layout](customize-process-form.md)
+- [Customize a project using an inherited process](customize-process.md)

@@ -56,9 +56,9 @@ tfx extension create --manifest-globs vss-extension.json
 
 Check the size of the vsix after it is packaged. If greater than 50 MB then it needs to be optimized. To do so, consider the following:
 
-* De-duplicate the common dependences, if any, by stating them once in the extension package.
-* Fetch things at runtime or during install time rather than providing it within the package. Consider using the tool installer lib to pull tool dependencies at runtime. Using the lib offers benefits where the tool is cached by version so for private agents, it won't get downloaded every build. We made it a lib so it can be used outside of tool installer tasks. The one consideration, is the task will not work in disconnected scenarios (no internet). That should just be in the description / docs for the task.
-* Some customers have had good success with WebPack to tree shake their dependencies in their tasks.
+- De-duplicate the common dependences, if any, by stating them once in the extension package.
+- Fetch things at runtime or during install time rather than providing it within the package. Consider using the tool installer lib to pull tool dependencies at runtime. Using the lib offers benefits where the tool is cached by version so for private agents, it won't get downloaded every build. We made it a lib so it can be used outside of tool installer tasks. The one consideration, is the task will not work in disconnected scenarios (no internet). That should just be in the description / docs for the task.
+- Some customers have had good success with WebPack to tree shake their dependencies in their tasks.
 
 <a id="upload"></a>
 
@@ -80,7 +80,7 @@ To share an extension so it can be installed:
     ![Share Extensions](../media/share-extension.png)
 
 3.  Specify the name of the organization to make this extension visible to
-    * For example, to make an extension visible to the **dev.azure.com/fabrikam-fiber-inc** organization, specify `fabrikam-fiber-inc`.
+    - For example, to make an extension visible to the **dev.azure.com/fabrikam-fiber-inc** organization, specify `fabrikam-fiber-inc`.
 
 ## Install
 
@@ -112,9 +112,9 @@ You can unpublish/delist free extensions, if you no longer want to offer them in
 
 Here are some scenarios where you might want to remove your extension from the Marketplace:
 
-* You developed another extension and no longer want to offer the current one.
-* Your extension has a problem, so you want to remove your extension from the Marketplace until you have resolved the problem.
-* You published your extension as public by mistake.
+- You developed another extension and no longer want to offer the current one.
+- Your extension has a problem, so you want to remove your extension from the Marketplace until you have resolved the problem.
+- You published your extension as public by mistake.
 
 To unpublish, select the extension on your [publisher page](https://aka.ms/vsmarketplace-manage) and choose **Unpublish** on the menu.
 Your extension is unpublished immediately from the Marketplace, and new users won't be able to install it. Ratings and reviews for your extension stays intact.

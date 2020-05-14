@@ -34,8 +34,8 @@ Special considerations that apply when running UI tests are discussed in
 
 For more information about Selenium browser automation, see:
 
-* [Selenium HQ](https://www.seleniumhq.org/)
-* [Selenium documentation](https://www.seleniumhq.org/docs/)
+- [Selenium HQ](https://www.seleniumhq.org/)
+- [Selenium documentation](https://www.seleniumhq.org/docs/)
 
 <a name="create-project"></a>
 
@@ -59,10 +59,10 @@ from Visual Studio Test Explorer.
     Unit Test project and choose **Manage NuGet
     Packages**. Add the following packages to your project:
 
-    * Selenium.WebDriver
-    * Selenium.Firefox.WebDriver
-    * Selenium.WebDriver.ChromeDriver
-    * Selenium.WebDriver.IEDriver<p />
+    - Selenium.WebDriver
+    - Selenium.Firefox.WebDriver
+    - Selenium.WebDriver.ChromeDriver
+    - Selenium.WebDriver.IEDriver<p />
 
     ![Adding the browser driver packages to your solution](media/continuous-test-selenium/continuous-test-selenium-02.png)
 
@@ -174,7 +174,7 @@ to deploy a web app, see [Deploy to Azure Web Apps](../targets/webapp.md).
 
 You can deploy and test your app using either the Microsoft-hosted agent in Azure, or a self-hosted agent that you install on the target servers.
 
-* When using the **Microsoft-hosted agent**, you should use the Selenium web drivers that are
+- When using the **Microsoft-hosted agent**, you should use the Selenium web drivers that are
   pre-installed on the Windows agents (agents named **Hosted VS 20xx**) because they are compatible with the browser versions installed on the Microsoft-hosted agent images.
   The paths to the folders containing these drivers can be obtained from the environment variables named `IEWebDriver` (Internet Explorer),
   `ChromeWebDriver` (Google Chrome), and `GeckoWebDriver` (Firefox).
@@ -182,13 +182,13 @@ You can deploy and test your app using either the Microsoft-hosted agent in Azur
   Also see [UI testing considerations](ui-testing-considerations.md).
 
   <!--
-  For example,  
+  For example,
   ```csharp
   driver = new ChromeDriver(Environment.GetEnvironmentVariable("ChromeWebDriver"));
   ```
   -->
 
-* When using a **self-hosted agent** that you deploy on your target servers, agents must be configured to run interactively with auto-logon enabled.
+- When using a **self-hosted agent** that you deploy on your target servers, agents must be configured to run interactively with auto-logon enabled.
   See [Build and release agents](../agents/agents.md#interactive-or-service) and [UI testing considerations](ui-testing-considerations.md).
 
 <a name="include-test"></a>
@@ -207,25 +207,25 @@ and [Run Functional Tests](../tasks/test/run-functional-tests.md) tasks instead.
 
 1.  If you don't have an existing release pipeline that deploys your web app:
 
-    * Open the **Releases** page in the [!INCLUDE [pipelines-hub-include](includes/pipelines-hub-include.md)] and choose the **+** icon, then choose
+    - Open the **Releases** page in the [!INCLUDE [pipelines-hub-include](includes/pipelines-hub-include.md)] and choose the **+** icon, then choose
       **Create release pipeline**.
 
       ![Creating a new release pipeline](media/continuous-test-selenium/continuous-test-selenium-06.png)
 
-    * Select the **Azure App Service Deployment** template and choose **Apply**.
+    - Select the **Azure App Service Deployment** template and choose **Apply**.
 
-    * In the **Artifacts** section of the **Pipeline** tab, choose **+ Add**. Select your build artifacts
+    - In the **Artifacts** section of the **Pipeline** tab, choose **+ Add**. Select your build artifacts
       and choose **Add**.
 
       ![Selecting the artifacts](media/continuous-test-selenium/continuous-test-selenium-07.png)
 
-    * Choose the **Continuous deployment trigger** icon in the **Artifacts** section of the **Pipeline** tab.
+    - Choose the **Continuous deployment trigger** icon in the **Artifacts** section of the **Pipeline** tab.
       In the Continuous deployment trigger pane, enable the trigger so that a new release is created from every build.
       Add a filter for the default branch.
 
       ![Configuring continuous deployment](media/continuous-test-selenium/continuous-test-selenium-08.png)
 
-    * Open the **Tasks** tab, select the **Stage 1** section, and enter your subscription
+    - Open the **Tasks** tab, select the **Stage 1** section, and enter your subscription
       information and the name of the web app where you want to deploy the app and tests.
       These settings are applied to the **Deploy Azure App Service** task.
 
@@ -233,7 +233,7 @@ and [Run Functional Tests](../tasks/test/run-functional-tests.md) tasks instead.
 
 2.  If you are deploying your app and tests to environments where the target machines that host the agents do not have Visual Studio installed:
 
-    * In the **Tasks** tab of the release pipeline, choose the **+** icon in the **Run on agent** section.
+    - In the **Tasks** tab of the release pipeline, choose the **+** icon in the **Run on agent** section.
       Select the **Visual Studio Test Platform Installer** task and choose **Add**. Leave all the settings
       at the default values.<p />
 

@@ -101,9 +101,9 @@ add the following snippet to your azure-pipelines.yml file:
     package: $(System.DefaultWorkingDirectory)/**/*.zip
 ```
 
-* **azureSubscription**: your Azure subscription.
-* **appName**: the name of your existing app service.
-* **package**: the file path to the package or a folder containing your app service contents. Wildcards are supported.
+- **azureSubscription**: your Azure subscription.
+- **appName**: the name of your existing app service.
+- **package**: the file path to the package or a folder containing your app service contents. Wildcards are supported.
 
 The snippet assumes that the build steps in your YAML file produce the zip archive in the `$(System.DefaultWorkingDirectory)` folder on your agent.
 
@@ -122,10 +122,10 @@ If you're building a [Java app](../apps/java/build-gradle.md), use the following
     package: '$(System.DefaultWorkingDirectory)/**/*.war'
 ```
 
-* **azureSubscription**: your Azure subscription.
-* **appType**: your Web App type.
-* **appName**: the name of your existing app service.
-* **package**: the file path to the package or a folder containing your app service contents. Wildcards are supported.
+- **azureSubscription**: your Azure subscription.
+- **appType**: your Web App type.
+- **appName**: the name of your existing app service.
+- **package**: the file path to the package or a folder containing your app service contents. Wildcards are supported.
 
 The snippet assumes that the build steps in your YAML file produce the .war archive in one of the folders in your source code folder structure;
 for example, under `<project root>/build/libs`. If your build steps copy the .war file to `$(System.DefaultWorkingDirectory)`
@@ -148,10 +148,10 @@ the iisnode handler on the Azure Web App:
     customWebConfig: '-Handler iisnode -NodeStartFile server.js -appType node'
 ```
 
-* **azureSubscription**: your Azure subscription.
-* **appName**: the name of your existing app service.
-* **package**: the file path to the package or a folder containing your app service contents. Wildcards are supported.
-* **customWebConfig**: generate web.config parameters for Python, Node.js, Go and Java apps. A standard `web.config` file will be generated and deployed to Azure App Service if the application does not have one.
+- **azureSubscription**: your Azure subscription.
+- **appName**: the name of your existing app service.
+- **package**: the file path to the package or a folder containing your app service contents. Wildcards are supported.
+- **customWebConfig**: generate web.config parameters for Python, Node.js, Go and Java apps. A standard `web.config` file will be generated and deployed to Azure App Service if the application does not have one.
 
 For information on Azure service connections, see the [following section](#endpoint).
 
@@ -232,7 +232,7 @@ By default, your deployment happens to the root application in the Azure Web App
     VirtualApplication: '<name of virtual application>'
 ```
 
-* **VirtualApplication**: the name of the Virtual Application that has been configured in the Azure portal. See [Configure an App Service app in the Azure portal
+- **VirtualApplication**: the name of the Virtual Application that has been configured in the Azure portal. See [Configure an App Service app in the Azure portal
   ](https://azure.microsoft.com/documentation/articles/web-sites-configure/) for more details.
 
 ::: moniker-end
@@ -440,8 +440,8 @@ You can choose to deploy only certain builds to your Azure Web App.
 
 To do this in YAML, you can use one of these techniques:
 
-* Isolate the deployment steps into a separate job, and add a condition to that job.
-* Add a condition to the step.
+- Isolate the deployment steps into a separate job, and add a condition to that job.
+- Add a condition to the step.
 
 The following example shows how to use step conditions to deploy only builds that originate from the master branch:
 
@@ -467,10 +467,10 @@ YAML pipelines aren't available on TFS.
 
 In your release pipeline, you can implement various checks and conditions to control the deployment:
 
-* Set _branch filters_ to configure the _continuous deployment trigger_ on the artifact of the release pipeline.
-* Set _pre-deployment approvals_ as a pre-condition for deployment to a stage.
-* Configure _gates_ as a pre-condition for deployment to a stage.
-* Specify conditions for a task to run.
+- Set _branch filters_ to configure the _continuous deployment trigger_ on the artifact of the release pipeline.
+- Set _pre-deployment approvals_ as a pre-condition for deployment to a stage.
+- Configure _gates_ as a pre-condition for deployment to a stage.
+- Specify conditions for a task to run.
 
 To learn more, see [Release, branch, and stage triggers](../release/triggers.md), [Release deployment control using approvals](../release/approvals/approvals.md), [Release deployment control using gates](../release/approvals/gates.md), and [Specify conditions for running a task](../process/conditions.md).
 

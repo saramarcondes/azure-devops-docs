@@ -16,6 +16,6 @@ Module path: `TFS/Build/Contracts`
 
 ### Members
 
-* `buildId`: number. Build id, if exists that this badge corresponds to
+- `buildId`: number. Build id, if exists that this badge corresponds to
 
-* `imageUrl`: string. Self Url that generates SVG
+- `imageUrl`: string. Self Url that generates SVG

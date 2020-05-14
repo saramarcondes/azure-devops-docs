@@ -37,11 +37,11 @@ It's most likely that, during project planning, it was agreed that product incre
 
 The template provides the following reports, which are useful when estimating how much work to plan for an iteration.
 
-* **Status on All Iterations** This report helps you track team performance over successive iterations. Use the report to see how many requirements and how many hours were completed in an iteration.
+- **Status on All Iterations** This report helps you track team performance over successive iterations. Use the report to see how many requirements and how many hours were completed in an iteration.
 
-* **Requirements Overview** This report lists all requirements, filtered by area and iteration and sorted in order of importance. This report can show you how much work was completed by the team in an iteration.
+- **Requirements Overview** This report lists all requirements, filtered by area and iteration and sorted in order of importance. This report can show you how much work was completed by the team in an iteration.
 
-* **Burndown and Burn Rate** Burndown shows the trend of completed and remaining work over a specified time period. The burn rate shows the completed and required rate of work based on the length of the iteration.
+- **Burndown and Burn Rate** Burndown shows the trend of completed and remaining work over a specified time period. The burn rate shows the completed and required rate of work based on the length of the iteration.
 
 ## <a name="Handoff"></a> Schedule an iteration demonstration and handoff
 

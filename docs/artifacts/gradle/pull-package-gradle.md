@@ -95,7 +95,7 @@ Now, add the following code to the end of your **build.gradle** file. Use the `g
 
 ```groovy
 dependencies {
-    compile(group: '{your-group-ID-here}', name: '{your-artifact-ID-here}', version: '{your-version-number-here}')  
+    compile(group: '{your-group-ID-here}', name: '{your-artifact-ID-here}', version: '{your-version-number-here}')
 }
 ```
 

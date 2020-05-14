@@ -77,16 +77,16 @@ This task must be preceded by a **Visual Studio Test Agent Deployment** task.
 
 Typical scenarios include:
 
-* Tests that require additional installations on the test machines, such as different browsers for Selenium tests
-* Coded UI tests
-* Tests that require a specific operating system configuration
-* To execute a large number of unit tests more quickly by using multiple test machines
+- Tests that require additional installations on the test machines, such as different browsers for Selenium tests
+- Coded UI tests
+- Tests that require a specific operating system configuration
+- To execute a large number of unit tests more quickly by using multiple test machines
 
 Use this task to:
 
-* Run automated tests against on-premises standard environments
-* Run automated tests against existing Azure environments
-* Run automated tests against newly provisioned azure environments
+- Run automated tests against on-premises standard environments
+- Run automated tests against existing Azure environments
+- Run automated tests against newly provisioned azure environments
 
 You can run unit tests, integration tests, functional tests -
 in fact any test that you can execute using the Visual Studio
@@ -99,59 +99,59 @@ test level.
 
 These scenarios are supported for:
 
-* **TFS on-premises and Azure Pipelines**
+- **TFS on-premises and Azure Pipelines**
 
-* **Build agents**
+- **Build agents**
 
-  * [Hosted](../../agents/hosted.md) and [on-premises](../../agents/agents.md) agents.
-  * The build agent must be able to communicate with all test machines. If the test machines
+  - [Hosted](../../agents/hosted.md) and [on-premises](../../agents/agents.md) agents.
+  - The build agent must be able to communicate with all test machines. If the test machines
     are on-premises behind a firewall, the hosted build agents cannot be used.
-  * The build agent must have access to the Internet to download test agents. If this
+  - The build agent must have access to the Internet to download test agents. If this
     is not the case, the test agent must be manually downloaded and deployed to a network
     location that is accessible by the build agent, and a **Visual Studio Test Agent Deployment**
     task used with an appropriate path for the **Test Agent Location** parameter.
     Automatic checking for new test agent versions is not supported in this topology.
 
-* **CI/CD workflow**
+- **CI/CD workflow**
 
-  * The Build-Deploy-Test (BDT) tasks are supported in both build and release pipelines.
+  - The Build-Deploy-Test (BDT) tasks are supported in both build and release pipelines.
 
-* **Machine group configuration**
+- **Machine group configuration**
 
-  * Only Windows machines are supported when using BDT tasks inside a Machine Group. Using
+  - Only Windows machines are supported when using BDT tasks inside a Machine Group. Using
     Linux, macOS, or other platforms inside a Machine Group with BDT tasks is not supported.
-  * Installing any version or release of Visual Studio on any of the test machines is not supported.
-  * Installing an older version of the test agent on any of the test machines is not supported.
+  - Installing any version or release of Visual Studio on any of the test machines is not supported.
+  - Installing an older version of the test agent on any of the test machines is not supported.
 
-* **Test machine topologies**
+- **Test machine topologies**
 
-  * Azure-based test machines are fully supported, both existing test machines and newly provisioned machines.
-  * Domain-joined test machines are supported.
-  * Workgroup-joined test machines must have HTTPS authentication enabled and configured during creation of the Machine Group.
-  * Test agent machines must have network access to the Team Foundation Server instance. Test machines isolated on the network are not supported.
+  - Azure-based test machines are fully supported, both existing test machines and newly provisioned machines.
+  - Domain-joined test machines are supported.
+  - Workgroup-joined test machines must have HTTPS authentication enabled and configured during creation of the Machine Group.
+  - Test agent machines must have network access to the Team Foundation Server instance. Test machines isolated on the network are not supported.
 
-* **Usage Error Conditions**
-  * Running tests across different Machine Groups, and running builds
+- **Usage Error Conditions**
+  - Running tests across different Machine Groups, and running builds
     (with any BDT tasks) in parallel against these Machine Groups is not supported.
-  * Cancelling an in-progress build or release with BDT tasks is not
+  - Cancelling an in-progress build or release with BDT tasks is not
     supported. If you do so, subsequent builds may not behave as expected.
-  * Cancelling an in-progress test run queued through BDT tasks is not supported.
-  * Configuring a test agent and running tests under a non-administrative
+  - Cancelling an in-progress test run queued through BDT tasks is not supported.
+  - Configuring a test agent and running tests under a non-administrative
     account or under a service account is not supported.
 
 ### More information
 
-* [Using the Visual Studio Agent Deployment task on machines not connected to the internet](https://devblogs.microsoft.com/devops/using-visual-studio-agent-deployment-task-on-machines-not-connected-to-the-internet/)
-* [Run continuous tests with your builds](../../ecosystems/dotnet-core.md#run-your-tests)
-* [Testing in Continuous Integration and Continuous Deployment Workflows](https://devblogs.microsoft.com/devops/testing-in-continuous-integration-and-continuous-deployment-workflows/)
+- [Using the Visual Studio Agent Deployment task on machines not connected to the internet](https://devblogs.microsoft.com/devops/using-visual-studio-agent-deployment-task-on-machines-not-connected-to-the-internet/)
+- [Run continuous tests with your builds](../../ecosystems/dotnet-core.md#run-your-tests)
+- [Testing in Continuous Integration and Continuous Deployment Workflows](https://devblogs.microsoft.com/devops/testing-in-continuous-integration-and-continuous-deployment-workflows/)
 
 ### Related tasks
 
-* [Deploy Azure Resource Group](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2)
-* [Azure File Copy](https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks/AzureFileCopyV1)
-* [Windows Machine File Copy](../deploy/windows-machine-file-copy.md)
-* [PowerShell on Target Machines](../deploy/powershell-on-target-machines.md)
-* [Visual Studio Test Agent Deployment](visual-studio-test-agent-deployment.md)
+- [Deploy Azure Resource Group](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2)
+- [Azure File Copy](https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks/AzureFileCopyV1)
+- [Windows Machine File Copy](../deploy/windows-machine-file-copy.md)
+- [PowerShell on Target Machines](../deploy/powershell-on-target-machines.md)
+- [Visual Studio Test Agent Deployment](visual-studio-test-agent-deployment.md)
 
 ### Open source
 

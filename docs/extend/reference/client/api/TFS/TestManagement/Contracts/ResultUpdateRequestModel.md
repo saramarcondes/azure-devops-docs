@@ -16,12 +16,12 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Members
 
-* `actionResultDeletes`: [TestActionResultModel](../../../TFS/TestManagement/Contracts/TestActionResultModel.md)[].
+- `actionResultDeletes`: [TestActionResultModel](../../../TFS/TestManagement/Contracts/TestActionResultModel.md)[].
 
-* `actionResults`: [TestActionResultModel](../../../TFS/TestManagement/Contracts/TestActionResultModel.md)[].
+- `actionResults`: [TestActionResultModel](../../../TFS/TestManagement/Contracts/TestActionResultModel.md)[].
 
-* `parameterDeletes`: [TestResultParameterModel](../../../TFS/TestManagement/Contracts/TestResultParameterModel.md)[].
+- `parameterDeletes`: [TestResultParameterModel](../../../TFS/TestManagement/Contracts/TestResultParameterModel.md)[].
 
-* `parameters`: [TestResultParameterModel](../../../TFS/TestManagement/Contracts/TestResultParameterModel.md)[].
+- `parameters`: [TestResultParameterModel](../../../TFS/TestManagement/Contracts/TestResultParameterModel.md)[].
 
-* `testCaseResult`: [TestCaseResultUpdateModel](../../../TFS/TestManagement/Contracts/TestCaseResultUpdateModel.md).
+- `testCaseResult`: [TestCaseResultUpdateModel](../../../TFS/TestManagement/Contracts/TestCaseResultUpdateModel.md).

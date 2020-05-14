@@ -14,9 +14,9 @@ monikerRange: '>= tfs-2015'
 
 Are you planning to implement [Team Foundation Version Control](overview.md)'s feature isolation strategy in Team Foundation Server (TFS) or Azure DevOps Services? You probably have a few questions, such as:
 
-* Is it practical with large development teams?
-* Does it align well with your agile process(es)?
-* What's the proper lifetime of isolated feature branches?
+- Is it practical with large development teams?
+- Does it align well with your agile process(es)?
+- What's the proper lifetime of isolated feature branches?
 
 This article aims to answer those questions, and give you a clear perspective on feature isolation in TFVC. (For guidance on TFVC branch strategies overall, read [Branching Strategies with TFVC](effective-tfvc-branching-strategies-for-devops.md).)
 
@@ -28,9 +28,9 @@ This article aims to answer those questions, and give you a clear perspective on
 
 The feature isolation strategy allows you to work on features or fix bugs in **feature** branches (also known as "topic branches") based off parent branch. It isolates your changes from the rest of your team to:
 
-* Experiment with a feature
-* Roll back your changes easily
-* Merge your changes with your parent branch
+- Experiment with a feature
+- Roll back your changes easily
+- Merge your changes with your parent branch
 
 > [!NOTE]
 >
@@ -50,10 +50,10 @@ Unlike Git branches, which are repository-scoped, TFVC branches are path-scoped 
 
 Use a consistent naming convention for your feature branches. Branches should be self-describing and easily identified by your users. Some suggestions:
 
-* features/username/description for work performed by an individual. For example, _features/sandra/sdk-java_.
-* features/workitem for feature work associated with a specific work item. For example, _features/115673_.
-* sprint/username/description for work done by an individual in a specific sprint. For example, _S53/bill/dictionary-refactor_.
-* bugfix/username/bugid for work done specific to an engineering bug. For example, _bugfix/takashi/707_.
+- features/username/description for work performed by an individual. For example, _features/sandra/sdk-java_.
+- features/workitem for feature work associated with a specific work item. For example, _features/115673_.
+- sprint/username/description for work done by an individual in a specific sprint. For example, _S53/bill/dictionary-refactor_.
+- bugfix/username/bugid for work done specific to an engineering bug. For example, _bugfix/takashi/707_.
 
 ## Creating feature branches
 
@@ -91,8 +91,8 @@ By [deleting](delete-restore-files-folders.md#delete-an-item) feature branches, 
 
 Remember it's a soft delete and your history isn't lost. Deleted branches can be unhidden:
 
-* Select **Tools > Options > Visual Studio Team Foundation Server**.
-* From the submenu, select **Show deleted items in the Source Control Explorer** to view the deleted branch(es).
+- Select **Tools > Options > Visual Studio Team Foundation Server**.
+- From the submenu, select **Show deleted items in the Source Control Explorer** to view the deleted branch(es).
 
 If needed, you can also [restore](delete-restore-files-folders.md#restore-items-deleted-from-visual-studio) deleted branches and associated items.
 
@@ -110,11 +110,11 @@ Now that you're using feature isolation, you should explore continuous integrati
 
 ## Reference information
 
-* [Branching Strategies with TFVC (new guidance)](./effective-tfvc-branching-strategies-for-devops.md)
-* [Branching and Merging Guidance (latest copy of classic guidance)](https://vsardata.blob.core.windows.net/projects/TFS%20Version%20Control%20Part%201%20-%20Branching%20Strategies.pdf)
-* [Continuous Integration](/azure/devops/learn/what-is-continuous-integration)
-* [Feature Toggles](https://msdn.microsoft.com/magazine/dn683796.aspx)
-* [Team Foundation Version Control (TFVC)](overview.md)
+- [Branching Strategies with TFVC (new guidance)](./effective-tfvc-branching-strategies-for-devops.md)
+- [Branching and Merging Guidance (latest copy of classic guidance)](https://vsardata.blob.core.windows.net/projects/TFS%20Version%20Control%20Part%201%20-%20Branching%20Strategies.pdf)
+- [Continuous Integration](/azure/devops/learn/what-is-continuous-integration)
+- [Feature Toggles](https://msdn.microsoft.com/magazine/dn683796.aspx)
+- [Team Foundation Version Control (TFVC)](overview.md)
 
 > Author: Willy Schaub | Find the origin of this article and connect with the ALM | DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
 

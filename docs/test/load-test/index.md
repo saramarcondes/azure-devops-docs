@@ -40,33 +40,33 @@ Load test from your preferred UI, and compare the results.
 
 Learn how to run performance and load tests against your app.
 
-* [Run load tests before release](run-performance-tests-app-before-release.md)
+- [Run load tests before release](run-performance-tests-app-before-release.md)
 
 ## How-to Guides
 
-* [Add app performance data](get-performance-data-for-load-tests.md)
-* [Run Apache JMeter load tests](get-started-jmeter-test.md)
-* [Record and replay tests](record-and-replay-cloud-load-tests.md)
-* [Load test private and intranet apps](clt-behind-firewall.md)
-* [Load test using your own servers](clt-with-private-machines.md)
-* [Install certificates and software](install-certs-and-software.md)
+- [Add app performance data](get-performance-data-for-load-tests.md)
+- [Run Apache JMeter load tests](get-started-jmeter-test.md)
+- [Record and replay tests](record-and-replay-cloud-load-tests.md)
+- [Load test private and intranet apps](clt-behind-firewall.md)
+- [Load test using your own servers](clt-with-private-machines.md)
+- [Install certificates and software](install-certs-and-software.md)
 
 ## Troubleshooting
 
-* [Azure DevOps connectivity](reference-qa.md#qaconnectts)
-* [Visual Studio connectivity](reference-qa.md#troubleshooting)
+- [Azure DevOps connectivity](reference-qa.md#qaconnectts)
+- [Visual Studio connectivity](reference-qa.md#troubleshooting)
 
 ## Reference
 
-* [FAQs](reference-qa.md)
+- [FAQs](reference-qa.md)
 
 ## Resources
 
-* [Load test with Visual Studio](/visualstudio/test/quickstart-create-a-load-test-project)
-* [Edit load tests](/visualstudio/test/edit-load-tests)
-* [Create custom code &amp; plug-ins](/visualstudio/test/create-custom-code-and-plug-ins-for-load-tests)
-* [Analyze load test results](/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
-* [Web Performance Test API](/visualstudio/test/how-to-use-the-web-performance-test-api)
-* [Manual and exploratory testing](../index.yml)
-* [Continuous testing](../../pipelines/index.yml)
-* [Unit testing](/visualstudio/test/developer-testing-scenarios)
+- [Load test with Visual Studio](/visualstudio/test/quickstart-create-a-load-test-project)
+- [Edit load tests](/visualstudio/test/edit-load-tests)
+- [Create custom code &amp; plug-ins](/visualstudio/test/create-custom-code-and-plug-ins-for-load-tests)
+- [Analyze load test results](/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
+- [Web Performance Test API](/visualstudio/test/how-to-use-the-web-performance-test-api)
+- [Manual and exploratory testing](../index.yml)
+- [Continuous testing](../../pipelines/index.yml)
+- [Unit testing](/visualstudio/test/developer-testing-scenarios)

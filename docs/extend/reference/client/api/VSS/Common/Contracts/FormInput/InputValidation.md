@@ -16,18 +16,18 @@ Module path: `VSS/Common/Contracts/FormInput`
 
 ### Members
 
-* `dataType`: [InputDataType](../../../../VSS/Common/Contracts/FormInput/InputDataType.md).
+- `dataType`: [InputDataType](../../../../VSS/Common/Contracts/FormInput/InputDataType.md).
 
-* `isRequired`: boolean.
+- `isRequired`: boolean.
 
-* `maxLength`: number.
+- `maxLength`: number.
 
-* `maxValue`: number.
+- `maxValue`: number.
 
-* `minLength`: number.
+- `minLength`: number.
 
-* `minValue`: number.
+- `minValue`: number.
 
-* `pattern`: string.
+- `pattern`: string.
 
-* `patternMismatchErrorMessage`: string.
+- `patternMismatchErrorMessage`: string.

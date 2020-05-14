@@ -53,10 +53,10 @@ A subscription lets you control what your team should be notified about and how 
 
     You can choose one of the following delivery options:
 
-    * **Team members by role**: only certain team members associated with the event are notified. For example, for work item changes, you might only want the current assignee of the work item to receive a notification.
-    * **Team preference**: use the team's default delivery preference. Learn how to [manage delivery settings below.](#manage)
-    * **Custom email address**: send an email to a specified email address.
-    * **All team members**: send an individual email to each member of the team.
+    - **Team members by role**: only certain team members associated with the event are notified. For example, for work item changes, you might only want the current assignee of the work item to receive a notification.
+    - **Team preference**: use the team's default delivery preference. Learn how to [manage delivery settings below.](#manage)
+    - **Custom email address**: send an email to a specified email address.
+    - **All team members**: send an individual email to each member of the team.
 
     For certain activities and when **Team members by role** is selected, you can choose to have the user that initiated the activity receive a notification. This is controlled by the **Skip initiator** checkbox. By default, this box is checked meaning the user that initiates the change is not notified about it.
 
@@ -96,10 +96,10 @@ A subscription lets you control what your team should be notified about and how 
 
     You can choose one of the following delivery options:
 
-    * **Team members by role**: only certain team members associated with the event are notified. For example, for work item changes, you might only want the current assignee of the work item to receive a notification.
-    * **Team preference**: use the team's default delivery preference. Learn how to [manage delivery settings below.](#manage)
-    * **Custom email address**: send an email to a specified email address.
-    * **All team members**: send an individual email to each member of the team.
+    - **Team members by role**: only certain team members associated with the event are notified. For example, for work item changes, you might only want the current assignee of the work item to receive a notification.
+    - **Team preference**: use the team's default delivery preference. Learn how to [manage delivery settings below.](#manage)
+    - **Custom email address**: send an email to a specified email address.
+    - **All team members**: send an individual email to each member of the team.
 
     For certain activities and when **Team members by role** is selected, you can choose to have the user that initiated the activity receive a notification. This is controlled by the **Skip initiator** checkbox. By default, this box is checked meaning the user that initiates the change is not notified about it.
 
@@ -119,8 +119,7 @@ A subscription lets you control what your team should be notified about and how 
 
 1.  Open the Notifications page under team settings: `https://dev.azure.com/{organization}/{project}/_admin/_notifications?view=contents`
 
-    > [!div class="mx-imgBorder"]
-    > ![Navigate to team notifications page](media/nav-team-notifications-hub.png)
+    > [!div class="mx-imgBorder"] > ![Navigate to team notifications page](media/nav-team-notifications-hub.png)
 
 2.  Select **New subscription**. If you're not a team administrator, [get added as one](../organizations/settings/add-team-administrator.md). You need to be a team, project, or project collection administrator to create team alerts.
 
@@ -140,10 +139,10 @@ A subscription lets you control what your team should be notified about and how 
 
     You can choose one of the following delivery options:
 
-    * **Team members by role**: only certain team members associated with the event are notified. For example, for work item changes, you might only want the current assignee of the work item to receive a notification.
-    * **Team preference**: use the team's default delivery preference. Learn how to [manage delivery settings below.](#manage)
-    * **Custom email address**: send an email to a specified email address.
-    * **All team members**: send an individual email to each member of the team.
+    - **Team members by role**: only certain team members associated with the event are notified. For example, for work item changes, you might only want the current assignee of the work item to receive a notification.
+    - **Team preference**: use the team's default delivery preference. Learn how to [manage delivery settings below.](#manage)
+    - **Custom email address**: send an email to a specified email address.
+    - **All team members**: send an individual email to each member of the team.
 
     For certain activities and when **Team members by role** is selected, you can choose to have the user that initiated the activity receive a notification. This is controlled by the **Skip initiator** checkbox. By default, this box is checked meaning the user that initiates the change is not notified about it.
 
@@ -247,13 +246,13 @@ As an administrator, you can view, create, edit, and delete alerts for team memb
 
 ### View alerts set for a project
 
-* From the web admin page for a project, open the Alerts tab and expand All alerts.
+- From the web admin page for a project, open the Alerts tab and expand All alerts.
 
       	![Expand All Alerts](media/administer/ALM_AN_Administer.png)
 
 ### Find alerts set for a team member or team
 
-* Choose the name of the team member from the drop down list, or type the name in the search box.
+- Choose the name of the team member from the drop down list, or type the name in the search box.
 
       	![Choose the team member whose alerts you want to edit](media/administer/ALM_AN_TeamMember.png)
 
@@ -275,4 +274,4 @@ As an administrator, you can view, create, edit, and delete alerts for team memb
 
 ## Related articles
 
-* [Manage personal notification settings](manage-your-personal-notifications.md)
+- [Manage personal notification settings](manage-your-personal-notifications.md)

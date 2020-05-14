@@ -20,9 +20,9 @@ Azure Pipelines and Team Foundation Server (TFS) provide a highly customizable c
 
 ## Prerequisites
 
-* You need an Azure DevOps organization. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137). If your team already has one, then make sure you're an administrator of the Azure DevOps project that you want to use. (An Azure DevOps organization is different from your GitHub organization. Give them the same name if you want alignment between them.)
+- You need an Azure DevOps organization. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137). If your team already has one, then make sure you're an administrator of the Azure DevOps project that you want to use. (An Azure DevOps organization is different from your GitHub organization. Give them the same name if you want alignment between them.)
 
-* While the simplest way to try this quickstart is to use an Azure DevOps organization, you can also use a TFS server instead of an Azure DevOps organization. Make sure that you have [configured a build agent](../../agents/v2-windows.md) for your project, and that you have a version of Visual Studio matching your development machine installed on the agent machine.
+- While the simplest way to try this quickstart is to use an Azure DevOps organization, you can also use a TFS server instead of an Azure DevOps organization. Make sure that you have [configured a build agent](../../agents/v2-windows.md) for your project, and that you have a version of Visual Studio matching your development machine installed on the agent machine.
 
 ## Get sample app code
 
@@ -98,7 +98,7 @@ This quickstart works for apps targeting the .NET Framework 4 or newer. The samp
 
     Navigate to the **Builds** tab in Azure Pipelines or TFS, and then click **+ New**. You are asked to **Select a template** for the new build pipeline.
 
-    ---
+    ***
 
 2.  In the right panel, select **.NET Desktop**, and then click **Apply**.
 
@@ -106,9 +106,9 @@ This quickstart works for apps targeting the .NET Framework 4 or newer. The samp
 
 3.  For the **Agent pool**:
 
-    * **Azure Pipelines:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
+    - **Azure Pipelines:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
 
-    * **TFS:** Select a pool that includes a [Windows build agent](../../agents/v2-windows.md).
+    - **TFS:** Select a pool that includes a [Windows build agent](../../agents/v2-windows.md).
 
 4.  Click **Get sources** and then:
 
@@ -120,7 +120,7 @@ This quickstart works for apps targeting the .NET Framework 4 or newer. The samp
 
     Select your version control repository. You'll need to authorize access to your repo.
 
-    ---
+    ***
 
 5.  Click the **Triggers** tab in the build pipeline. Enable the **Continuous Integration** trigger. This will ensure that the build pipeline is automatically triggered every time you commit a change to your repository.
 

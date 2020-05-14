@@ -18,7 +18,7 @@ ms.date: 08/02/2019
 
 With the mobile browser and work item form, you gain on-the-go features to stay on top of the latest updates made to work tracking. When you click any work item link on your mobile device, it will open a mobile-friendly version of the work item. From there, you can update the work item or access all work items assigned to you or that you're following.
 
-<img src="media/mobile-work-intro-1.png" alt="Mobile work item form" style="border: 1px solid #C3C3C3;" />  
+<img src="media/mobile-work-intro-1.png" alt="Mobile work item form" style="border: 1px solid #C3C3C3;" />
 
 ::: moniker range="azure-devops"
 
@@ -40,43 +40,43 @@ With the mobile browser and work item form, you gain on-the-go features to stay 
 
 The mobile work item form will open when you click **View work item** from an email you receive from your mobile device. You'll receive this type of email under these circumstances:
 
-* Changes were made to a work item you're following
-* You were <strong>@mentioned</strong> in a discussion
-* A notification is sent based on the work item alerts you've set using [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md).
+- Changes were made to a work item you're following
+- You were <strong>@mentioned</strong> in a discussion
+- A notification is sent based on the work item alerts you've set using [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md).
 
-<img src="media/mobile-work-email-notice.png" alt="Email received in your mobile client" style="border: 1px solid #C3C3C3;" />  
+<img src="media/mobile-work-email-notice.png" alt="Email received in your mobile client" style="border: 1px solid #C3C3C3;" />
 
 ## Update a work item
 
 Within the mobile form, you can do almost everything you can do from the [web portal form](../../boards/backlogs/add-work-items.md). Here are the actions you can take in the order they appear in the mobile form:
 
-* Add and remove tags
-* View and add to the discussion, click on the comment to add to the discussion
-* View and update any field within the form (Assign to, State, Area, Iteration, Description, and more)
-* View and open a link within the Development section
-* View History
-* View and open a link from the Links tab
-* Open and add an attachment from the Attachments tab
+- Add and remove tags
+- View and add to the discussion, click on the comment to add to the discussion
+- View and update any field within the form (Assign to, State, Area, Iteration, Description, and more)
+- View and open a link within the Development section
+- View History
+- View and open a link from the Links tab
+- Open and add an attachment from the Attachments tab
 
 Actions not available to you within the mobile work item form:
 
-* You can't create or add new work items
-* You can't initiate a development operation
-* You can't add a link
+- You can't create or add new work items
+- You can't initiate a development operation
+- You can't add a link
 
 ### Interact with mobile form controls
 
 Mobile form controls operate as follows:
 
-* Click any field to edit it and the form changes to a full-screen experience. For example, some of the most common actions such as changing the state of an item, moving to a different area path, adding an attachment, and creating/removing tags are all supported.
-* When done, click the ![return icon](media/mobile-work-return.png) return option.
-* Remember to click the ![save icon](../../boards/media/icons/icon-save-wi.png) save icon to save your changes!
+- Click any field to edit it and the form changes to a full-screen experience. For example, some of the most common actions such as changing the state of an item, moving to a different area path, adding an attachment, and creating/removing tags are all supported.
+- When done, click the ![return icon](media/mobile-work-return.png) return option.
+- Remember to click the ![save icon](../../boards/media/icons/icon-save-wi.png) save icon to save your changes!
 
 ### Update status (change State)
 
 To update the state, click the state you want.
 
-<img src="media/mobile-work-change-state.png" alt="Mobile work item form, Change State action" style="border: 1px solid #C3C3C3;" />  
+<img src="media/mobile-work-change-state.png" alt="Mobile work item form, Change State action" style="border: 1px solid #C3C3C3;" />
 
 ### Add or remove tags
 
@@ -88,15 +88,15 @@ To add a tag, type the text you want.
 
 Click the History tab to view history.
 
-<img src="media/mobile-work-view-history.png" alt="Mobile work item form, View history" style="border: 1px solid #C3C3C3;" />  
+<img src="media/mobile-work-view-history.png" alt="Mobile work item form, View history" style="border: 1px solid #C3C3C3;" />
 
 ## View and open work items in your activity lists
 
 From within the mobile work item form, you can access your work items. The mobile browser allows you to view and open work items which fall into these categories:
 
-* **Assigned to me**: lists all work items assigned to you
-* **Following**: lists all work items that you have elected to follow
-* **My activity**: lists all work items that you have recently viewed or updated.
+- **Assigned to me**: lists all work items assigned to you
+- **Following**: lists all work items that you have elected to follow
+- **My activity**: lists all work items that you have recently viewed or updated.
 
 The lists available from each page span all team projects that you work in.
 
@@ -116,9 +116,9 @@ The browser opens to the **Assigned to me** page. From there, you can choose **F
 
 Additional experiences are in the works to improve and expand on the mobile experience. For more information, see the blog post: [The mobile work item form (preview)](https://devblogs.microsoft.com/devops/the-mobile-work-item-form/).
 
-* [Set personal notifications](../../notifications/howto-manage-personal-notifications.md)
-* [Set team notifications](../../notifications/howto-manage-team-notifications.md)
-* [Follow a work item](../../boards/work-items/follow-work-items.md)
+- [Set personal notifications](../../notifications/howto-manage-personal-notifications.md)
+- [Set team notifications](../../notifications/howto-manage-team-notifications.md)
+- [Follow a work item](../../boards/work-items/follow-work-items.md)
 
 ### Provide feedback for the mobile experience
 

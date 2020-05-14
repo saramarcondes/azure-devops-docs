@@ -15,6 +15,6 @@ Module path: `TFS/WorkItemTracking/Contracts`
 
 ### Members
 
-* `id`: string.
+- `id`: string.
 
-* `url`: string.
+- `url`: string.

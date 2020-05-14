@@ -41,8 +41,8 @@ This limit delays requests from individual users beyond a threshold when shared 
 This limit is focused exclusively on avoiding outages when shared resources are close to being overwhelmed.
 Individual users will typically only have their requests delayed when:
 
-* One of their shared resources is at risk of being overwhelmed, and
-* Their personal usage exceeds 200 times the consumption of a typical user within a (sliding) five-minute window.
+- One of their shared resources is at risk of being overwhelmed, and
+- Their personal usage exceeds 200 times the consumption of a typical user within a (sliding) five-minute window.
 
 The amount of the delay will depend on the user's sustained level of consumption.
 Delays range from a few milliseconds per request up to 30 seconds.
@@ -53,18 +53,18 @@ If consumption remains high, delays may continue indefinitely to protect the res
 
 Azure DevOps Services users consume many shared resources, and consumption depends on many factors. For example:
 
-* Uploading a large number of files to version control creates a large amount of load on databases and storage accounts.
-* Complex work item tracking queries create database load based on the number of work items they search through.
-* Builds drive load by downloading files from version control, producing log output, and so on.
-* All operations consume CPU and memory on various parts of the service.
+- Uploading a large number of files to version control creates a large amount of load on databases and storage accounts.
+- Complex work item tracking queries create database load based on the number of work items they search through.
+- Builds drive load by downloading files from version control, producing log output, and so on.
+- All operations consume CPU and memory on various parts of the service.
 
 To accommodate all of this, Azure DevOps Services resource consumption is expressed in abstract units called Azure DevOps Services Throughput Units, or TSTUs.
 
 TSTUs will eventually incorporate a blend of:
 
-* [Azure SQL Database DTUs](https://azure.microsoft.com/documentation/articles/sql-database-service-tiers) as a measure of database consumption
-* Application tier and job agent CPU, memory, and I/O as a measure of compute consumption
-* Azure Storage bandwidth as a measure of storage consumption.
+- [Azure SQL Database DTUs](https://azure.microsoft.com/documentation/articles/sql-database-service-tiers) as a measure of database consumption
+- Application tier and job agent CPU, memory, and I/O as a measure of compute consumption
+- Azure Storage bandwidth as a measure of storage consumption.
 
 For now, TSTUs are primarily focused on Azure SQL Database DTUs, since Azure SQL Databases are the shared resources most commonly overwhelmed by excessive consumption.
 
@@ -99,7 +99,7 @@ To avoid hitting these limits, we recommend:
 - Saving work item changes in batches, rather than one at a time.
 - Reducing the frequency of running applications which make many WIT requests.
 
-As discussed above, we expect to add additional rate limits over time. And we always reserve the right to slow down or block usage which we believe to be abusive.  
+As discussed above, we expect to add additional rate limits over time. And we always reserve the right to slow down or block usage which we believe to be abusive.
 -->
 
 ## User experience

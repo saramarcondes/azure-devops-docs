@@ -57,11 +57,11 @@ Using the administration console, you can delete a project from a project collec
 
 1.  If you're not a member of one or more of the following administrator groups, [get permissions now](/azure/devops/server/admin/add-administrator):
 
-    * Team Foundation Administrators group (required).
+    - Team Foundation Administrators group (required).
 
-    * SQL Server System Administrators group (required).
+    - SQL Server System Administrators group (required).
 
-    * Farm Administrators group for SharePoint Products (required when your deployment uses SharePoint Products).
+    - Farm Administrators group for SharePoint Products (required when your deployment uses SharePoint Products).
 
 2.  Open the administration console for TFS and delete the project from its project collection.
 
@@ -101,13 +101,13 @@ If your on-premises project had a project portal, all links to that portal are r
 
 Review the status and log files for the delete action. Open the **Status** tab and for **Deleted**, review the additional information in parentheses, and take the indicated action.
 
-* (**Processing**) means that the process has started and is in progress.
+- (**Processing**) means that the process has started and is in progress.
 
-* (**Pending**) means that the deletion process has started from a client application. The deletion might be in progress or might have failed. Because the process was started from a client application, the server cannot accurately report the status of the deletion.
+- (**Pending**) means that the deletion process has started from a client application. The deletion might be in progress or might have failed. Because the process was started from a client application, the server cannot accurately report the status of the deletion.
 
   If a project deletion remains pending for a long time, try to delete the project again from the administration console.
 
-* (**Failed**) means that the deletion process started but did not successfully finish. The log file contains specific information about the failure.
+- (**Failed**) means that the deletion process started but did not successfully finish. The log file contains specific information about the failure.
 
   Review the information about the failure, and then try to delete the project again.
 
@@ -129,9 +129,9 @@ az devops project delete --id
 
 #### Parameters
 
-* **id**: Required. The ID of the project you want to delete. To determine the ID of a project, use the [az devops project list](/cli/azure/ext/azure-devops/devops/project#ext-azure-devops-az-devops-project-list) command.
-* **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-* **yes**: Do not prompt for confirmation.
+- **id**: Required. The ID of the project you want to delete. To determine the ID of a project, use the [az devops project list](/cli/azure/ext/azure-devops/devops/project#ext-azure-devops-az-devops-project-list) command.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **yes**: Do not prompt for confirmation.
 
 #### Example
 
@@ -149,5 +149,5 @@ az devops project delete --id 9a61d475-b1a7-4da7-b9db-80df15ac985c --yes
 
 ## Related articles
 
-* [Create project](/azure/devops/organizations/projects/create-project)
-* [TFSDeleteProject command line tool](/azure/devops/server/command-line/tfsdeleteproject-cmd)
+- [Create project](/azure/devops/organizations/projects/create-project)
+- [TFSDeleteProject command line tool](/azure/devops/server/command-line/tfsdeleteproject-cmd)

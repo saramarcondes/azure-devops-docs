@@ -26,8 +26,7 @@ As the following image shows, each work item form comes with a number of control
 ::: moniker range="azure-devops"
 
 > [!NOTE]  
-> Depending on the process chosen when the project was created&mdash;
-> [Agile](./guidance/agile-process.md), [Basic](../get-started/plan-track-work.md), [Scrum](./guidance/scrum-process.md), or [CMMI](./guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called user stories (Agile), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
+> Depending on the process chosen when the project was created&mdash; > [Agile](./guidance/agile-process.md), [Basic](../get-started/plan-track-work.md), [Scrum](./guidance/scrum-process.md), or [CMMI](./guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called user stories (Agile), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 >
 > For an overview of these processes, see [Choose a process](./guidance/choose-process.md).
 
@@ -36,8 +35,7 @@ As the following image shows, each work item form comes with a number of control
 ::: moniker range="<= azure-devops-2019"
 
 > [!NOTE]  
-> Depending on the process chosen when the project was created&mdash;
-> [Agile](./guidance/agile-process.md), [Scrum](./guidance/scrum-process.md), or [CMMI](./guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called user stories (Agile), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
+> Depending on the process chosen when the project was created&mdash; > [Agile](./guidance/agile-process.md), [Scrum](./guidance/scrum-process.md), or [CMMI](./guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called user stories (Agile), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 >
 > For an overview of the three default processes, see [Choose a process](./guidance/choose-process.md).
 
@@ -73,7 +71,7 @@ As the following image shows, each work item form comes with a number of control
 
 As work progresses, team members can update the state and reassign it as needed.
 
-<img src="../backlogs/media/add-work-item-vsts-update-state.png" alt="Product backlog item workflow, Scrum process" style="border: 1px solid #C3C3C3;" />  
+<img src="../backlogs/media/add-work-item-vsts-update-state.png" alt="Product backlog item workflow, Scrum process" style="border: 1px solid #C3C3C3;" />
 
 While the workflow states differ for different work item types, they usually follow a progression from New or Active to Closed or Done. The following image shows the work flow states for the Agile process user story. If you want to discard a work item, change the state to Removed.
 
@@ -108,7 +106,7 @@ Removed work items remain in the data store and can be reactivated by changing t
 
 With each update, the Reason field also updates and changes are recorded in the History field which you can view through the ![history tab icon](../media/icons/icon-history-tab-wi.png) **History** tab. To find work items based on their history, see [History & auditing](../queries/history-and-auditing.md).
 
-<img src="../backlogs/media/add-work-item-history.png" alt="View change history" style="border: 1px solid #C3C3C3;" />  
+<img src="../backlogs/media/add-work-item-history.png" alt="View change history" style="border: 1px solid #C3C3C3;" />
 
 <a id="link-wi"> </a>
 
@@ -118,17 +116,17 @@ By linking work items using Related or Dependent link types, you can track work 
 
 There are three links controls provided on most forms. The Development and Related Work scoped links controls appear on the Details tab. The ![Links page icon](../media/icons/icon-links-tab-wi.png) Links tab provides access to all links made to the work item.
 
-<img src="../../reference/xml/media/linkscontrol-bug-form-dev-related-links.png" alt="Bug work item form, Agile process, Development and Related links controls" style="border: 1px solid #C3C3C3;" />  
+<img src="../../reference/xml/media/linkscontrol-bug-form-dev-related-links.png" alt="Bug work item form, Agile process, Development and Related links controls" style="border: 1px solid #C3C3C3;" />
 
 ## Add links
 
 From each links control, you can perform these actions:
 
-* To open an associated item or object, click the linked item
-* To delete a link, highlight it and click the ![delete icon](../media/icons/delete_icon.png) delete icon
-* To link to an existing item, or create and link a new work item, select one of the menu options.
+- To open an associated item or object, click the linked item
+- To delete a link, highlight it and click the ![delete icon](../media/icons/delete_icon.png) delete icon
+- To link to an existing item, or create and link a new work item, select one of the menu options.
 
-<img src="../../reference/xml/media/linkscontrol-related-work-menu-options.png" alt="Links control menu of options" style="border: 1px solid #C3C3C3;" />  
+<img src="../../reference/xml/media/linkscontrol-related-work-menu-options.png" alt="Links control menu of options" style="border: 1px solid #C3C3C3;" />
 
 To learn more, see [Add links to work items](../backlogs/add-link.md).
 
@@ -176,7 +174,7 @@ From the web portal, simply copy the URL from the web browser address or hover o
 
 ## Related articles
 
-* [Perform a semantic or ad hoc work item search](../queries/search-box-queries.md)
-* [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
-* [Customize your work tracking experience](../../reference/customize-work.md)
-* [Bulk add or modify work items using Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)
+- [Perform a semantic or ad hoc work item search](../queries/search-box-queries.md)
+- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
+- [Customize your work tracking experience](../../reference/customize-work.md)
+- [Bulk add or modify work items using Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)

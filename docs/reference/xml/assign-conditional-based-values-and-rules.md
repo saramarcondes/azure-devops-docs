@@ -24,7 +24,7 @@ The following code is a simple example of the **WHEN** clause:
 >
 > ```XML
 > <FIELD  . . .  >
-> <WHEN field="referenceName" value="yyy">  
+> <WHEN field="referenceName" value="yyy">
 > </FIELD>
 > ```
 
@@ -39,8 +39,8 @@ This clause means that anything within this FIELD element is applicable as long 
 
 The following table describes conditional rules that you can specify as child elements of the `FIELD` (Definition) element or `FIELD` (Workflow) element. These elements accept one or more of the following attributes:
 
-* `field`: A string that describes the field. Must contain 1 to 255 characters.
-* `value`: When the specified field has this value, the rules in the `WHEN` and `WHENNOT` elements are applied to the current field.
+- `field`: A string that describes the field. Must contain 1 to 255 characters.
+- `value`: When the specified field has this value, the rules in the `WHEN` and `WHENNOT` elements are applied to the current field.
 
 <table Responsive="true" summary="table">
 <tr Responsive="true">
@@ -159,16 +159,16 @@ You can specify that a field is required only when another field contains a spec
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <FIELD refname="MyCorp.Severity" name="Customer Severity" type="String">  
->        <ALLOWEDVALUES>  
->            <LISTITEM value="Blocking" />  
->            <LISTITEM value="Major" />  
->            <LISTITEM value="Minor" />  
->        </ALLOWEDVALUES>  
->        <WHEN field="MyCorp.CustomerReported" value="true">  
->            <REQUIRED />  
->        </WHEN>  
-> </FIELD>  
+> <FIELD refname="MyCorp.Severity" name="Customer Severity" type="String">
+>        <ALLOWEDVALUES>
+>            <LISTITEM value="Blocking" />
+>            <LISTITEM value="Major" />
+>            <LISTITEM value="Minor" />
+>        </ALLOWEDVALUES>
+>        <WHEN field="MyCorp.CustomerReported" value="true">
+>            <REQUIRED />
+>        </WHEN>
+> </FIELD>
 > ```
 >
 > <a name="DependentPickList"></a>
@@ -180,15 +180,15 @@ The following example demonstrates a conditional pick list in which the allowed 
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <FIELD refname="MyCorp.ProblemType" name="Problem Type" type="String">  
->        <WHEN field="MyCorp.ProblemCharacteristic" value="Documentation">  
->            <ALLOWEDVALUES>  
->                <LISTITEM value="Spelling Error" />  
->                <LISTITEM value="Bad Format" />  
->                <LISTITEM value="Missing Info" />  
->            </ALLOWEDVALUES>  
->        </WHEN>  
-> </FIELD>  
+> <FIELD refname="MyCorp.ProblemType" name="Problem Type" type="String">
+>        <WHEN field="MyCorp.ProblemCharacteristic" value="Documentation">
+>            <ALLOWEDVALUES>
+>                <LISTITEM value="Spelling Error" />
+>                <LISTITEM value="Bad Format" />
+>                <LISTITEM value="Missing Info" />
+>            </ALLOWEDVALUES>
+>        </WHEN>
+> </FIELD>
 > ```
 
 <a name="WhenChanged"></a>
@@ -200,10 +200,10 @@ In the following example, when a user changes the value of the MyCorp.State fiel
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <FIELD refname="MyCorp.StateDate" name="Date Of Last State Change" type="DateTime">  
->        <WHENCHANGED field="MyCorp.State">  
->            <COPY from="clock" />  
->        </WHENCHANGED>  
+> <FIELD refname="MyCorp.StateDate" name="Date Of Last State Change" type="DateTime">
+>        <WHENCHANGED field="MyCorp.State">
+>            <COPY from="clock" />
+>        </WHENCHANGED>
 > </FIELD>
 > ```
 
@@ -212,12 +212,12 @@ In the following example, when a user changes the value of the MyCorp.State fiel
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <!-- Clear the status field whenever someone changes the state -->  
-> <FIELD refname="MyCorp.Status" name="Status" type="String">  
->        <WHENCHANGED field="MyCorp.State">  
->            <COPY from="value" value="">  
->        </WHENCHANGED>  
-> </FIELD>  
+> <!-- Clear the status field whenever someone changes the state -->
+> <FIELD refname="MyCorp.Status" name="Status" type="String">
+>        <WHENCHANGED field="MyCorp.State">
+>            <COPY from="value" value="">
+>        </WHENCHANGED>
+> </FIELD>
 > ```
 >
 > <a name="WhenNotChanged"></a>
@@ -229,14 +229,14 @@ In the following example, when a user changes the value of the MyCorp.State fiel
 > [!div class="tabbedCodeSnippets"]
 >
 > ```XML
-> <FIELD refname="MyCorp.StateDate" name="Date Of Last State Change" type="DateTime">  
-> <!-- Make the StateDate field read-only when the State field is not changed -->  
->        <WHENNOTCHANGED field="MyCorp.State">  
->            <READONLY />  
->        </WHENNOTCHANGED>  
-> </FIELD>  
+> <FIELD refname="MyCorp.StateDate" name="Date Of Last State Change" type="DateTime">
+> <!-- Make the StateDate field read-only when the State field is not changed -->
+>        <WHENNOTCHANGED field="MyCorp.State">
+>            <READONLY />
+>        </WHENNOTCHANGED>
+> </FIELD>
 > ```
 
 ## Related articles
 
-* [Apply a field rule](apply-rule-work-item-field.md)
+- [Apply a field rule](apply-rule-work-item-field.md)

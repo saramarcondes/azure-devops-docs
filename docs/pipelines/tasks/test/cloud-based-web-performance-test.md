@@ -30,7 +30,7 @@ using the Azure Pipelines Cloud-based Load Test Service based in Microsoft Azure
 
 The agent must have the following capability:
 
-* Azure PowerShell
+- Azure PowerShell
 
 ::: moniker range="> tfs-2018"
 
@@ -56,7 +56,7 @@ The agent must have the following capability:
 
 ## More Information
 
-* [Cloud-based Load Testing](https://visualstudio.microsoft.com/features/vso-cloud-load-testing-vs)
+- [Cloud-based Load Testing](https://visualstudio.microsoft.com/features/vso-cloud-load-testing-vs)
 
 ## Open source
 

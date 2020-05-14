@@ -25,7 +25,7 @@ However, to successfully scale Agile requires addressing both the culture and to
 ## Alignment enables autonomy
 
 <meta name="keywords" content="Agile culture,alignment,autonomy" />
-Organizations that aspire to be agile need to consider the twin obligations of creating alignment across the enterprise and supporting team autonomy. Teams need autonomy to be efficient. And, enterprises need alignment across teams and the organization to be efficient.  
+Organizations that aspire to be agile need to consider the twin obligations of creating alignment across the enterprise and supporting team autonomy. Teams need autonomy to be efficient. And, enterprises need alignment across teams and the organization to be efficient.
 
 Too much alignment with insufficient team autonomy leads doesn't support innovation or agility of teams to get things done. Too little alignment with each team running their own program as they want doesn't provide the insight and coordination required to meet business objectives.
 
@@ -110,7 +110,7 @@ Beyond meeting the needs set by the organization, teams determine any additional
 
 ## Feature teams
 
-<meta name="keywords" content="Agile culture,feature teams,agile teams, horizontal team structure" /><br/>As you scale, one of the most important tasks to consider is how you structure your teams. Traditionally, horizontal team structures divide teams according to the software architecture: user interface, service-oriented architecture, and data teams.  
+<meta name="keywords" content="Agile culture,feature teams,agile teams, horizontal team structure" /><br/>As you scale, one of the most important tasks to consider is how you structure your teams. Traditionally, horizontal team structures divide teams according to the software architecture: user interface, service-oriented architecture, and data teams.
 
 ![Horizontal vs vertical teams](media/horizontal-vs-vertical-teams.png)
 
@@ -126,23 +126,23 @@ Each team plans the features they'll deliver. They have the autonomy to determin
 
 <meta name="keywords" content="Agile culture,scaling agile" /><br/>As your organization grows, you can scale your Agile tools in the following ways.
 
-* **[Add teams and filtered backlog views](../../organizations/settings/add-teams.md):** You add teams to support team autonomy and provide them with the tools they can configure and manage that supports how they want to work. These tools include product backlogs, Kanban boards, sprint backlogs and taskboards, and many others.
+- **[Add teams and filtered backlog views](../../organizations/settings/add-teams.md):** You add teams to support team autonomy and provide them with the tools they can configure and manage that supports how they want to work. These tools include product backlogs, Kanban boards, sprint backlogs and taskboards, and many others.
 
   In addition, you can configure teams to support a hierarchy of backlogs and portfolio backlogs so that portfolio managers can review priority and progress across several teams.
 
-* **[Set up sprints and releases](../sprints/define-sprints.md):** You can structure your iterations to support a flat set of sprints, or a set of sprints embedded within scheduled releases. Each team activates the set of sprints and releases that they need to participate in.
+- **[Set up sprints and releases](../sprints/define-sprints.md):** You can structure your iterations to support a flat set of sprints, or a set of sprints embedded within scheduled releases. Each team activates the set of sprints and releases that they need to participate in.
 
-* **[Manage portfolios](portfolio-management.md):** by setting up a hierarchy of teams and backlogs and [activating portfolio backlogs](../../organizations/settings/select-backlog-navigation-levels.md). Feature teams focused on a subset of the product backlog can remain focused on just their backlog. Portfolio managers who want to view and organize backlogs to track progress and dependencies can manage portfolio backlogs of Features and Epics.
+- **[Manage portfolios](portfolio-management.md):** by setting up a hierarchy of teams and backlogs and [activating portfolio backlogs](../../organizations/settings/select-backlog-navigation-levels.md). Feature teams focused on a subset of the product backlog can remain focused on just their backlog. Portfolio managers who want to view and organize backlogs to track progress and dependencies can manage portfolio backlogs of Features and Epics.
 
   If additional portfolio backlogs are needed --for example, Scenarios or Initiatives--you can [add them as well](../../reference/add-portfolio-backlogs.md).
 
-* **[Configure dashboards](../../report/dashboards/dashboards.md):** With team dashboards, you can configure a number of charts that track progress within a team or across teams. Specifically, you can add status and trend charts based on queries you create.
+- **[Configure dashboards](../../report/dashboards/dashboards.md):** With team dashboards, you can configure a number of charts that track progress within a team or across teams. Specifically, you can add status and trend charts based on queries you create.
 
-* **Group or categorize work:** There are several ways to group work that you want to track. Backlogs filter work items based on team area assignments. And, portfolio backlogs allow you to [group backlog items under Features and Epics](../backlogs/organize-backlog.md).
+- **Group or categorize work:** There are several ways to group work that you want to track. Backlogs filter work items based on team area assignments. And, portfolio backlogs allow you to [group backlog items under Features and Epics](../backlogs/organize-backlog.md).
 
   However, if you want to track and report on work items based on other groupings, you can. You can [add tags to work items and then filter backlogs or queries based on tags](../queries/add-tags-to-work-items.md). Also, you can [add sub-area paths](../../organizations/settings/set-area-paths.md) to represent more granular feature areas.
 
-* **Add folders and use team favorites:** As your teams grow, you'll see a growing list of work item queries, build definitions, and source code folders. By using folders, sub-folders, and team favorites, you can manage many of these lists more easily. You can add team favorites for shared queries, source code, and build definitions.
+- **Add folders and use team favorites:** As your teams grow, you'll see a growing list of work item queries, build definitions, and source code folders. By using folders, sub-folders, and team favorites, you can manage many of these lists more easily. You can add team favorites for shared queries, source code, and build definitions.
 
 ## Related articles
 
@@ -152,18 +152,18 @@ If you're ready to move from one team to two teams, or configure several teams, 
 
 For additional guidance, see these topics:
 
-* [Practices that scale](practices-that-scale.md)
-* [Visibility across teams](visibility-across-teams.md)
-* [Review team delivery plans](review-team-plans.md)
-* [Implement Scaled Agile Framework&reg; to support epics, release trains, and multiple backlogs](scaled-agile-framework.md).
+- [Practices that scale](practices-that-scale.md)
+- [Visibility across teams](visibility-across-teams.md)
+- [Review team delivery plans](review-team-plans.md)
+- [Implement Scaled Agile Framework&reg; to support epics, release trains, and multiple backlogs](scaled-agile-framework.md).
 
 ### Agile culture industry resources
 
-* [Nexus, the Exoskeleton of Scaled Scrum](https://www.scrum.org/resources/nexus-guide)
-* [Culture over process](https://blog.crisp.se/wp-content/uploads/2013/09/culture-over-process.pdf) by Henrik Kniberg
-* [The Culture Game - Tools for the Agile Manager](https://www.amazon.com/The-Culture-Game-Tools-Manager/dp/0984875301) by Daniel Mezick
-* [Scaled Agile Framework (SAFe)](https://www.scaledagileframework.com/)
-* [Scaling Agile Software Development, - Disciplined Agility at Scale (White Paper)](https://disciplinedagileconsortium.org/Resources/Documents/ScalingAgileSoftwareDevelopment.pdf)
+- [Nexus, the Exoskeleton of Scaled Scrum](https://www.scrum.org/resources/nexus-guide)
+- [Culture over process](https://blog.crisp.se/wp-content/uploads/2013/09/culture-over-process.pdf) by Henrik Kniberg
+- [The Culture Game - Tools for the Agile Manager](https://www.amazon.com/The-Culture-Game-Tools-Manager/dp/0984875301) by Daniel Mezick
+- [Scaled Agile Framework (SAFe)](https://www.scaledagileframework.com/)
+- [Scaling Agile Software Development, - Disciplined Agility at Scale (White Paper)](https://disciplinedagileconsortium.org/Resources/Documents/ScalingAgileSoftwareDevelopment.pdf)
 
 ### Scale with teams and not projects
 
@@ -171,9 +171,9 @@ Often times, organizations look at adding a project for each software developmen
 
 Adding teams to scale your tools rather than adding projects is recommended for the following reasons:
 
-* **Visibility:** It's much easier to view progress across all teams
-* **Tracking and auditing:** It's easier to [link work items and other objects](../queries/link-work-items-support-traceability.md) for tracking and auditing purposes
-* **Maintainability:** You minimize the maintenance of security groups and process updates.
+- **Visibility:** It's much easier to view progress across all teams
+- **Tracking and auditing:** It's easier to [link work items and other objects](../queries/link-work-items-support-traceability.md) for tracking and auditing purposes
+- **Maintainability:** You minimize the maintenance of security groups and process updates.
 
 To learn more, see [About projects and scaling your organization](../../organizations/projects/about-projects.md).
 

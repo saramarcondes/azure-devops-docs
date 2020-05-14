@@ -41,4 +41,4 @@ Static method that returns failure as [WidgetStatus](./WidgetStatus.md) wrapped 
 
 ### Parameters
 
-* `message`: string. The error message for the failure.
+- `message`: string. The error message for the failure.

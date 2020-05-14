@@ -776,7 +776,7 @@ Content-Type: application/json
 
 ```json
 [
-  {  
+  {
     "id": { int },
     "state": {
 	enum { Pending, Queued, InProgress, Paused, Completed }

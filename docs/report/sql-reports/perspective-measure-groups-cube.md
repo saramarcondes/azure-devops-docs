@@ -68,7 +68,7 @@ The following table describes the terms and definitions that are used when refer
 
 ## Related notes
 
-* [Resolve schema conflicts occurring in the data warehouse](../admin/resolve-schema-conflicts.md)
-* [Create status and trend reports in Excel](../create-status-and-trend-excel-reports.md)
-* [Manage reports, data warehouse, and cube](../admin/manage-reports-data-warehouse-cube.md)
-* [Dashboards and reports](../overview.md)
+- [Resolve schema conflicts occurring in the data warehouse](../admin/resolve-schema-conflicts.md)
+- [Create status and trend reports in Excel](../create-status-and-trend-excel-reports.md)
+- [Manage reports, data warehouse, and cube](../admin/manage-reports-data-warehouse-cube.md)
+- [Dashboards and reports](../overview.md)

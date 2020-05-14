@@ -26,11 +26,11 @@ The SQL script can be specified either as an artifact or as an inline script.
 
 ## Requirements
 
-* The utility **SqlPackage.exe** must be installed on the computer or VM.
+- The utility **SqlPackage.exe** must be installed on the computer or VM.
 
-* You cannot use the Hosted agent, you must install an agent on the target computer or VM.
+- You cannot use the Hosted agent, you must install an agent on the target computer or VM.
 
-* If you execute **SQLPackage** from the folder where it is installed, you must prefix the path with `&` and wrap it in double-quotes.
+- If you execute **SQLPackage** from the folder where it is installed, you must prefix the path with `&` and wrap it in double-quotes.
 
 ## Basic Syntax
 
@@ -217,7 +217,7 @@ sqlpackage.exe /Action:Script /?
 
 ## See also
 
-* [Deploy your database to Azure SQL Database](../../targets/azure-sqldb.md)
-* [SQL Azure Dacpac Deployment task on GitHub](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/SqlAzureDacpacDeploymentV1)
+- [Deploy your database to Azure SQL Database](../../targets/azure-sqldb.md)
+- [SQL Azure Dacpac Deployment task on GitHub](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/SqlAzureDacpacDeploymentV1)
 
 [!INCLUDE [rm-help-support-shared](../../includes/rm-help-support-shared.md)]

@@ -37,7 +37,7 @@ semi-automated processes with **approvals** and **on-demand deployments**.
 
 [What's the difference between a release pipeline and a release?](releases.md)
 
-* **[Watch this video](https://channel9.msdn.com/events/Microsoft-Azure/Azure-DevOps-Launch-2018/A101)** - see Azure Pipelines releases in action.
+- **[Watch this video](https://channel9.msdn.com/events/Microsoft-Azure/Azure-DevOps-Launch-2018/A101)** - see Azure Pipelines releases in action.
 
   <p><iframe src="https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A101/player" width="640" height="360" allowFullScreen="true" frameBorder="0"></iframe></p>
 
@@ -126,10 +126,10 @@ After all those deployments are successful, a second job is used to switch traff
 
 **Next:**
 
-* **[Create your first pipeline](../create-first-pipeline.md)**
+- **[Create your first pipeline](../create-first-pipeline.md)**
 
-* **[Set up a multi-stage managed release pipeline](define-multistage-release-process.md)**
-* **[Manage deployments by using approvals and gates](deploy-using-approvals.md)**
+- **[Set up a multi-stage managed release pipeline](define-multistage-release-process.md)**
+- **[Manage deployments by using approvals and gates](deploy-using-approvals.md)**
 
 <a name="draftrelease"></a>
 
@@ -192,9 +192,9 @@ This improves the traceability from code commit to deployment.
 
 The deployment status is displayed in the following sections of Azure Repos:
 
-* **Files**: Indicates the status of the latest deployment for the selected branch.
-* **Commits**: Indicates the deployment status for each commit (this requires the continuous integration (CD) trigger to be enabled for your release).
-* **Branches**: Indicates the status of the latest deployment for each branch.
+- **Files**: Indicates the status of the latest deployment for the selected branch.
+- **Commits**: Indicates the deployment status for each commit (this requires the continuous integration (CD) trigger to be enabled for your release).
+- **Branches**: Indicates the status of the latest deployment for each branch.
 
 If a commit is deployed to multiple release pipelines (with multiple stages), each has an entry in the badge
 with the status shown for each stage. By default, when you create a release pipeline, deployment status is
@@ -278,18 +278,18 @@ edit the **Release name format** property in the **General** page.
 
 When specifying the format mask, you can use the following pre-defined variables.
 
-| Variable                   | Description                                                                                                                                                                                                                                                                                                                                                          |
-| -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Rev:rr**                 | An auto-incremented number with at least the specified number of digits.                                                                                                                                                                                                                                                                                             |
-| **Date / Date:MMddyy**     | The current date, with the default format **MMddyy**. Any combinations of M/MM/MMM/MMMM, d/dd/ddd/dddd, y/yy/yyyy/yyyy, h/hh/H/HH, m/mm, s/ss are supported.                                                                                                                                                                                                         |
-| **System.TeamProject**     | The name of the project to which this build belongs.                                                                                                                                                                                                                                                                                                                 |
-| **Release.ReleaseId**      | The ID of the release, which is unique across all releases in the project.                                                                                                                                                                                                                                                                                           |
-| **Release.DefinitionName** | The name of the release pipeline to which the current release belongs.                                                                                                                                                                                                                                                                                               |
-| **Build.BuildNumber**      | The number of the build contained in the release. If a release has multiple builds, this is the number of the [primary build](artifacts.md#primary-source).                                                                                                                                                                                                          |
-| **Build.DefinitionName**   | The pipeline name of the build contained in the release. If a release has multiple builds, this is the pipeline name of the [primary build](artifacts.md#primary-source).                                                                                                                                                                                            |
-| **Artifact.ArtifactType**  | The type of the artifact source linked with the release. For example, this can be **Azure Pipelines** or **Jenkins**.                                                                                                                                                                                                                                                |
-| **Build.SourceBranch**     | The branch of the [primary artifact source](artifacts.md#primary-source). For Git, this is of the form **master** if the branch is **refs/heads/master**. For Team Foundation Version Control, this is of the form **branch** if the root server path for the workspace is **$/teamproject/branch**. This variable is not set for Jenkins or other artifact sources. |
-| _Custom variable_          | The value of a global configuration property defined in the release pipeline.                                                                                                                                                                                                                                                                                        |
+| Variable                   | Description                                                                                                                                                                                                                                                                                                                                                           |
+| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Rev:rr**                 | An auto-incremented number with at least the specified number of digits.                                                                                                                                                                                                                                                                                              |
+| **Date / Date:MMddyy**     | The current date, with the default format **MMddyy**. Any combinations of M/MM/MMM/MMMM, d/dd/ddd/dddd, y/yy/yyyy/yyyy, h/hh/H/HH, m/mm, s/ss are supported.                                                                                                                                                                                                          |
+| **System.TeamProject**     | The name of the project to which this build belongs.                                                                                                                                                                                                                                                                                                                  |
+| **Release.ReleaseId**      | The ID of the release, which is unique across all releases in the project.                                                                                                                                                                                                                                                                                            |
+| **Release.DefinitionName** | The name of the release pipeline to which the current release belongs.                                                                                                                                                                                                                                                                                                |
+| **Build.BuildNumber**      | The number of the build contained in the release. If a release has multiple builds, this is the number of the [primary build](artifacts.md#primary-source).                                                                                                                                                                                                           |
+| **Build.DefinitionName**   | The pipeline name of the build contained in the release. If a release has multiple builds, this is the pipeline name of the [primary build](artifacts.md#primary-source).                                                                                                                                                                                             |
+| **Artifact.ArtifactType**  | The type of the artifact source linked with the release. For example, this can be **Azure Pipelines** or **Jenkins**.                                                                                                                                                                                                                                                 |
+| **Build.SourceBranch**     | The branch of the [primary artifact source](artifacts.md#primary-source). For Git, this is of the form **master** if the branch is **refs/heads/master**. For Team Foundation Version Control, this is of the form **branch** if the root server path for the workspace is **\$/teamproject/branch**. This variable is not set for Jenkins or other artifact sources. |
+| _Custom variable_          | The value of a global configuration property defined in the release pipeline.                                                                                                                                                                                                                                                                                         |
 
 For example, the release name format `Release $(Rev:rrr) for build $(Build.BuildNumber) $(Build.DefinitionName)` will create releases with names such as **Release 002 for build 20170213.2 MySampleAppBuild**.
 
@@ -313,4 +313,4 @@ Follow these steps:
 
 ## Related topics
 
-* [Sign up for Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs)
+- [Sign up for Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs)

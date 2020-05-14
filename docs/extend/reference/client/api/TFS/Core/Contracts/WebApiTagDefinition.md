@@ -16,10 +16,10 @@ Module path: `TFS/Core/Contracts`
 
 ### Members
 
-* `active`: boolean.
+- `active`: boolean.
 
-* `id`: string.
+- `id`: string.
 
-* `name`: string.
+- `name`: string.
 
-* `url`: string.
+- `url`: string.

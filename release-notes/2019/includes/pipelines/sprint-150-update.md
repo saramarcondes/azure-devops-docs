@@ -6,15 +6,15 @@ ms.topic: include
 
 We added a new task to our release pipelines to simplify the process of deploying to Kubernetes clusters using manifest files. This task will provide the following benefits in comparison to the usage of kubectl binary in scripts:
 
-* Artifact substitution - The deploy action takes as input a list of container images which can be specified along with their tags or digests. This is substituted into the non-template version of the manifest files before applying it to the cluster to ensure that the right version of the image is pulled by the cluster's nodes.
+- Artifact substitution - The deploy action takes as input a list of container images which can be specified along with their tags or digests. This is substituted into the non-template version of the manifest files before applying it to the cluster to ensure that the right version of the image is pulled by the cluster's nodes.
 
-* Manifest stability - Rollout status is checked for the Kubernetes objects deployed to incorporate stability checks while computing the task status as success/failure.
+- Manifest stability - Rollout status is checked for the Kubernetes objects deployed to incorporate stability checks while computing the task status as success/failure.
 
-* Traceability annotations - Annotations are added to the deployed Kubernetes objects to superimpose traceability information about originating organization, project, pipeline, and run.
+- Traceability annotations - Annotations are added to the deployed Kubernetes objects to superimpose traceability information about originating organization, project, pipeline, and run.
 
-* Bake manifest - The bake action of the task allows for baking Helm charts into Kubernetes manifest files so that they can be applied to the cluster.
+- Bake manifest - The bake action of the task allows for baking Helm charts into Kubernetes manifest files so that they can be applied to the cluster.
 
-* Deployment strategy - Choosing canary strategy with deploy action leads to creation of desired percentage of workloads suffixed with **-baseline** and **-canary** so that they can be compared during a `ManualIntervention` task before utilizing the promote/reject action of the task to finalize the version to be retained.
+- Deployment strategy - Choosing canary strategy with deploy action leads to creation of desired percentage of workloads suffixed with **-baseline** and **-canary** so that they can be compared during a `ManualIntervention` task before utilizing the promote/reject action of the task to finalize the version to be retained.
 
 ```yaml
 steps:
@@ -104,19 +104,19 @@ We're excited to announce updates to the hosted **macOS pool** to **OS X Mojave*
 
 If you are using YAML, the new vmImage labels that you can use are the following:
 
-* Image label that will always point to the latest version of macOS, currently 10.4
+- Image label that will always point to the latest version of macOS, currently 10.4
 
 ```yaml
 vmImage: 'macOS-latest'
 ```
 
-* This image label specifically targets mac OS 10.4 if you want to be sure your pipeline runs against Mojave
+- This image label specifically targets mac OS 10.4 if you want to be sure your pipeline runs against Mojave
 
 ```yaml
 vmImage: 'macOS-10.14'
 ```
 
-* Image label that will specifically target mac OS 10.3 if you want to be sure your pipeline runs against High Sierra
+- Image label that will specifically target mac OS 10.3 if you want to be sure your pipeline runs against High Sierra
 
 ```yaml
 vmImage: 'macOS-10.14'

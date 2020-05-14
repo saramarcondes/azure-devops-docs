@@ -57,24 +57,24 @@ Artifacts are central to a number of features in
 Azure Pipelines. Some of the features that depend
 on the linking of artifacts to a release pipeline are:
 
-* **Auto-trigger releases**. You can configure new
+- **Auto-trigger releases**. You can configure new
   releases to be automatically created whenever a new
   version of an artifact is produced. For more details, see
   [Continuous deployment triggers](triggers.md#release-triggers).
   Note that the ability to automatically create releases
   is available for only some artifact sources.
 
-* **Trigger conditions**. You can configure a release to be created
+- **Trigger conditions**. You can configure a release to be created
   automatically, or the deployment of a release to a stage
   to be triggered automatically, when only specific conditions on the
   artifacts are met. For example, you can configure releases to be
   automatically created only when a new build is produced from a certain branch.
 
-* **Artifact versions**. You can configure a release to automatically use a specific
+- **Artifact versions**. You can configure a release to automatically use a specific
   version of the build artifacts, to always use the latest version, or to allow you
   to specify the version when the release is created.
 
-* **Artifact variables**. Every artifact that is part
+- **Artifact variables**. Every artifact that is part
   of a release has metadata associated with it, exposed to [tasks](../tasks/index.md) through [variables](#art-vars).
   This metadata includes the version number of the artifact,
   the branch of code from which the artifact was produced
@@ -84,7 +84,7 @@ on the linking of artifacts to a release pipeline are:
   in the deployment tasks. For more details, see
   [Artifact variables](variables.md#artifact-variables).
 
-* **Work items and commits**. The work items or commits
+- **Work items and commits**. The work items or commits
   that are part of a release are computed from the
   versions of artifacts. For example, each build in
   Azure Pipelines is associated with a set of work items and
@@ -96,7 +96,7 @@ on the linking of artifacts to a release pipeline are:
   able to compute work items and commits for only
   certain artifact sources.
 
-* **Artifact download**. Whenever a release is
+- **Artifact download**. Whenever a release is
   deployed to a stage, by default Azure Pipelines
   automatically downloads all the artifacts in that
   release to the [agent](../agents/agents.md) where the deployment job runs.
@@ -136,23 +136,23 @@ If you link more than one set of artifacts, you can specify which is the primary
 > [!IMPORTANT]
 > The Artifacts `Default version` drop down list items depends on the `repository type` of the linked build definition.
 
-* The following options are supported by all the repository types: `Specify at the time of release creation`, `Specific version`, and `Latest`.
+- The following options are supported by all the repository types: `Specify at the time of release creation`, `Specific version`, and `Latest`.
 
-* `Latest from a specific branch with tags` and `Latest from the build pipeline default branch with tags` options are supported by the following repository types: `TfsGit`, `GitHub`, `Bitbucket`, and `GitHubEnterprise`.
+- `Latest from a specific branch with tags` and `Latest from the build pipeline default branch with tags` options are supported by the following repository types: `TfsGit`, `GitHub`, `Bitbucket`, and `GitHubEnterprise`.
 
-* `Latest from the build pipeline default branch with tags` is not supported by `XAML` build definitions.
+- `Latest from the build pipeline default branch with tags` is not supported by `XAML` build definitions.
 
 The following sections describe how to work with the different types of artifact
 sources.
 
-* [Azure Pipelines](#teambuild)
-* [TFVC, Git, and GitHub](#tfvc)
-* [Jenkins](#jenkins)
-* [Azure Container Registry, Docker, and Kubernetes](#container)
-* [Azure Artifacts (NuGet, Maven, npm, Python, and Universal Packages)](#artifacts)
-* [External or on-premises TFS](#externaltfs)
-* [TeamCity](#teamcity)
-* [Other sources](#others)
+- [Azure Pipelines](#teambuild)
+- [TFVC, Git, and GitHub](#tfvc)
+- [Jenkins](#jenkins)
+- [Azure Container Registry, Docker, and Kubernetes](#container)
+- [Azure Artifacts (NuGet, Maven, npm, Python, and Universal Packages)](#artifacts)
+- [External or on-premises TFS](#externaltfs)
+- [TeamCity](#teamcity)
+- [Other sources](#others)
 
 ---
 
@@ -170,11 +170,11 @@ the build pipelines in Azure Pipelines or TFS project collection.
 
 Some of the differences in capabilities between different versions of TFS and Azure Pipelines are:
 
-* **TFS 2015**: You can link build pipelines only from the same project of your collection.
+- **TFS 2015**: You can link build pipelines only from the same project of your collection.
   You can link multiple definitions, but you cannot specify default versions. You can set up a continuous deployment trigger on only one of the definitions.
   When multiple build pipelines are linked, the latest builds of all the other definitions are used, along with the build that triggered the release creation.
 
-* **TFS 2017 and newer** and **Azure Pipelines**: You can link build pipelines from any of the projects in Azure Pipelines or TFS.
+- **TFS 2017 and newer** and **Azure Pipelines**: You can link build pipelines from any of the projects in Azure Pipelines or TFS.
   You can link multiple build pipelines and specify default values for each of them. You can set up continuous deployment triggers on
   multiple build sources. When any of the builds completes, it will trigger the creation of a release.
 
@@ -199,14 +199,14 @@ consume artifacts stored in a version control system
 directly, without passing them through a build pipeline.
 For example:
 
-* You are developing a PHP or a JavaScript application
+- You are developing a PHP or a JavaScript application
   that does not require an explicit build pipeline.
 
-* You manage configurations for various stages
+- You manage configurations for various stages
   in different version control repositories, and you want
   to consume these configuration files directly from version control as part of the deployment pipeline.
 
-* You manage your infrastructure and configuration as
+- You manage your infrastructure and configuration as
   code (such as Azure Resource Manager templates) and
   you want to manage these files in a version control
   repository.
@@ -567,14 +567,14 @@ information about each of these. For a list of all pre-defined artifact variable
 
 ## Contributed links and additional information
 
-* [Code repo sources in Azure Pipelines](https://www.youtube.com/watch?v=-JDlE_MHl1s)
-* [TeamCity extension for Azure Pipelines](https://www.youtube.com/watch?v=zDZRvc_6UiU)
-* [Jenkins artifacts in Azure Pipelines](https://www.youtube.com/watch?v=ZC4hWYqdP_o)
-* [External TFS artifacts for Azure Pipelines](https://www.youtube.com/watch?v=cR8NzcEmstw)
+- [Code repo sources in Azure Pipelines](https://www.youtube.com/watch?v=-JDlE_MHl1s)
+- [TeamCity extension for Azure Pipelines](https://www.youtube.com/watch?v=zDZRvc_6UiU)
+- [Jenkins artifacts in Azure Pipelines](https://www.youtube.com/watch?v=ZC4hWYqdP_o)
+- [External TFS artifacts for Azure Pipelines](https://www.youtube.com/watch?v=cR8NzcEmstw)
 
 ## Related topics
 
-* [Release pipelines](index.md)
-* [Stages](../process/stages.md)
+- [Release pipelines](index.md)
+- [Stages](../process/stages.md)
 
 [!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

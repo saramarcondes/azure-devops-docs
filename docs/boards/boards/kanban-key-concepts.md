@@ -18,9 +18,9 @@ ms.date: 07/22/2019
 
 This article provides a short dictionary of terms and available tools used in tracking work using Kanban boards and Kanban methods. See also:
 
-* [Agile glossary](../work-items/agile-glossary.md)
-* [Work item field index](../work-items/guidance/work-item-field.md)
-* [Project management and navigation glossary](../../project/navigation/glossary.md)
+- [Agile glossary](../work-items/agile-glossary.md)
+- [Work item field index](../work-items/guidance/work-item-field.md)
+- [Project management and navigation glossary](../../project/navigation/glossary.md)
 
 ## Blocker
 
@@ -171,6 +171,6 @@ State categories determine how the Kanban board treat each workflow state. The s
 
 ## Related articles
 
-* [Refine your backlog](../backlogs/best-practices-product-backlog.md)
-* [Kanban best practices](best-practices-kanban.md)
-* [About boards and Kanban](kanban-overview.md)
+- [Refine your backlog](../backlogs/best-practices-product-backlog.md)
+- [Kanban best practices](best-practices-kanban.md)
+- [About boards and Kanban](kanban-overview.md)

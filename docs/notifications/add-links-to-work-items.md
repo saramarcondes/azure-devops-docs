@@ -22,28 +22,28 @@ Use the **#ID** control within the following areas:
 
 ::: moniker range="azure-devops"
 
-* A work item discussion or any rich-text field
-* A pull request discussion
-* Commit comments
-* Changeset or shelveset comments
-* Wiki page.
+- A work item discussion or any rich-text field
+- A pull request discussion
+- Commit comments
+- Changeset or shelveset comments
+- Wiki page.
   ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-* A work item discussion
-* A pull request discussion
-* Commit comments
-* Changeset or shelveset comments
-* Wiki page.
+- A work item discussion
+- A pull request discussion
+- Commit comments
+- Changeset or shelveset comments
+- Wiki page.
   ::: moniker-end
 
 ::: moniker range=">= tfs-2015 < tfs-2018"
 
-* A work item discussion
-* A pull request discussion
-* Commit comments
-* Changeset or shelveset comments.
+- A work item discussion
+- A pull request discussion
+- Commit comments
+- Changeset or shelveset comments.
   ::: moniker-end
 
 <a id="mention-wit-id"> </a>
@@ -85,7 +85,7 @@ For more information about the built-in wiki, see [Add & edit wiki pages](../pro
 
 ## Related articles
 
-* [Link work items](../boards/backlogs/add-link.md)
-* [Save work with commits](../repos/git/commits.md)
-* [Pull requests](../repos/git/pullrequest.md)
-* [Check in your work to the team code base](../repos/tfvc/check-your-work-team-codebase.md)
+- [Link work items](../boards/backlogs/add-link.md)
+- [Save work with commits](../repos/git/commits.md)
+- [Pull requests](../repos/git/pullrequest.md)
+- [Check in your work to the team code base](../repos/tfvc/check-your-work-team-codebase.md)

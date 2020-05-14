@@ -38,7 +38,7 @@ Learn more about packages here: [Azure Artifacts in Azure DevOps Services](../..
 
 1.  Search results are displayed with matches to user query shown in bold.
 
-        	> [!div class="mx-imgBorder"]  
+        	> [!div class="mx-imgBorder"]
         	> ![Search results](media/shared/pkgsrch-results.png)
 
     This is a full text search that uses simple search strings for words or phrases.
@@ -54,7 +54,7 @@ Learn more about packages here: [Azure Artifacts in Azure DevOps Services](../..
     and package types. Note that Views filter would only appear if a single feed is selected from Feeds filter.
     Use the "filter" icon to show the selector lists.
 
-        	> [!div class="mx-imgBorder"]  
+        	> [!div class="mx-imgBorder"]
         	> ![Showing the filter lists](media/shared/pkgsrch-results-filtericon.png)
 
 1.  Select the criteria you want in the drop-down selector lists, or search across the entire organization.

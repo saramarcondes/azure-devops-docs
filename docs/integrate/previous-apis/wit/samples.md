@@ -396,7 +396,7 @@ If you don't know the query you want to execute, you can use the [work item quer
 >            fields[2] = "System.State";
 >
 >            var workItems = workItemTrackingHttpClient.GetWorkItemsAsync(arr, fields, workItemQueryResult.AsOf).Result;
->        }  
+>        }
 >    }
 > }
 > ```
@@ -616,9 +616,9 @@ There are a few things happening in the code sample below:
 
 Often, when migrating work items from another source, organizations want to retain all the original properties of the work item. For example, you may want to create a bug that retains the original created date and created by values from the system where it originated. By using the basic REST example above, this is not possible since the Created and Changed date fields are automatically calculated by the system. Luckily, there is a solution - you may optionally choose to bypass the rules engine on a work item update. This allows you to modify the work item fields without any restrictions. There are some limitations on what's supported:
 
-* To modify the System.CreatedBy or System.ChangedBy fields, you must be a member of the "Project Collection Service Accounts" group.
-* Created Date and Created By can ONLY be set on the initial revision
-* Changed Date must always be increasing, meaning you can't have a revision
+- To modify the System.CreatedBy or System.ChangedBy fields, you must be a member of the "Project Collection Service Accounts" group.
+- Created Date and Created By can ONLY be set on the initial revision
+- Changed Date must always be increasing, meaning you can't have a revision
 
 The code is the same as Create Bug. However, we pass the bypassRules=true parameter to the REST endpoint.
 

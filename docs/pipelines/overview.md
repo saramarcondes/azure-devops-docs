@@ -40,9 +40,9 @@ Once you have continuous integration in place, the next step is to create a rele
 
 Whether your app is on-premises or in the cloud, you can automate build-deploy-test workflows and choose the technologies and frameworks, then [test your changes continuously](ecosystems/dotnet-core.md#run-your-tests) in a fast, scalable, and efficient manner.
 
-* Maintain quality and find problems as you develop. Continuous testing with TFS ensures your app still works after every check-in and build, enabling you to find problems earlier by running tests automatically with each build.
-* Any test type and any test framework. Choose the test technologies and frameworks you prefer to use.
-* Rich analytics and reporting. When your build is done, review your test results to start resolving the problems you find. Rich and actionable build-on-build reports
+- Maintain quality and find problems as you develop. Continuous testing with TFS ensures your app still works after every check-in and build, enabling you to find problems earlier by running tests automatically with each build.
+- Any test type and any test framework. Choose the test technologies and frameworks you prefer to use.
+- Rich analytics and reporting. When your build is done, review your test results to start resolving the problems you find. Rich and actionable build-on-build reports
   let you instantly see if your builds are getting healthier. But it's not just about speed - detailed and customizable test results measure the quality of your app.
 
 Now that you understand the basics, follow the quickstart to [create your first pipeline](create-first-pipeline.md).

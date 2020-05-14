@@ -20,9 +20,9 @@ As your organization changes, you may have a need to rename a team or remove it.
 
 When you rename a team, the new name propagates throughout Azure DevOps. The following team artifacts are automatically renamed:
 
-* Team security group
-* Team backlogs and boards
-* Team dashboards
+- Team security group
+- Team backlogs and boards
+- Team dashboards
 
 > [!TIP]  
 > You will need to update any queries that reference the old team security group name.
@@ -31,8 +31,8 @@ When you remove or delete a team, you delete all team configuration settings, in
 
 ## Prerequisites
 
-* To rename a team, you must be a team administrator or a member of the [Project Administrators group](../security/set-project-collection-level-permissions.md).
-* To remove or delete a team, you must be a member of the [Project Administrators group](../security/set-project-collection-level-permissions.md).
+- To rename a team, you must be a team administrator or a member of the [Project Administrators group](../security/set-project-collection-level-permissions.md).
+- To remove or delete a team, you must be a member of the [Project Administrators group](../security/set-project-collection-level-permissions.md).
 
 ## Rename a team
 
@@ -85,11 +85,11 @@ az devops team update --team
 
 #### Parameters
 
-* **team**: Optional. Name or ID of a team.
-* **description**: Optional. Description to apply to the team.
-* **name**: Optional. Name to apply to rename the team.
-* **org**: Optional. URL of organization. You can configure the default organization using `az devops configure -d org=URL`. Required if not configured as default or picked up via git config.
-* **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber". You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
+- **team**: Optional. Name or ID of a team.
+- **description**: Optional. Description to apply to the team.
+- **name**: Optional. Name to apply to rename the team.
+- **org**: Optional. URL of organization. You can configure the default organization using `az devops configure -d org=URL`. Required if not configured as default or picked up via git config.
+- **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber". You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
 
 #### Example
 
@@ -276,9 +276,9 @@ az devops team delete --id
 
 #### Parameters
 
-* **id**: Required. The ID of the team to delete.
-* **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".
-* **yes**: Optional. Specify to not prompt for confirmation.
+- **id**: Required. The ID of the team to delete.
+- **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".
+- **yes**: Optional. Specify to not prompt for confirmation.
 
 #### Example
 
@@ -323,8 +323,8 @@ Are you sure you want to delete this team? (y/n): y
 
 ## Related articles
 
-* [Add teams](add-teams.md)
-* [About teams and Agile tools](about-teams-and-settings.md)
-* [Azure DevOps Teams CLI](/cli/azure/ext/azure-devops/devops/team)
-* [Teams (REST API)](/rest/api/azure/devops/core/teams)
-* [Work Items (REST API)](/rest/api/azure/devops/wit)
+- [Add teams](add-teams.md)
+- [About teams and Agile tools](about-teams-and-settings.md)
+- [Azure DevOps Teams CLI](/cli/azure/ext/azure-devops/devops/team)
+- [Teams (REST API)](/rest/api/azure/devops/core/teams)
+- [Work Items (REST API)](/rest/api/azure/devops/wit)

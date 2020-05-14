@@ -72,18 +72,18 @@ Once you set the column options for a specific view, your settings persist until
 
 ::: moniker range=">= azure-devops-2019"
 
-* Column options you set for a backlog apply only to the active team and backlog. Options you set for the product backlog differ from the options you set for a portfolio backlog.
-* Column options you set for a Sprint backlog persist for all sprints you select until you change them.
-* Column options you set for a query persist when you save the query.
-* Column options you set for one of the supported Work items views persists for a specific view only, such as **Assigned to me**, **Following**, **Mentioned**, and so on.
+- Column options you set for a backlog apply only to the active team and backlog. Options you set for the product backlog differ from the options you set for a portfolio backlog.
+- Column options you set for a Sprint backlog persist for all sprints you select until you change them.
+- Column options you set for a query persist when you save the query.
+- Column options you set for one of the supported Work items views persists for a specific view only, such as **Assigned to me**, **Following**, **Mentioned**, and so on.
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-* Column options you set for a backlog apply only to the active team and backlog. Options set for the product backlog differ from those you set for a portfolio backlog.
-* Column options you set for a Sprint backlog persist for all sprints you select until you change them.
-* Column options you set for a query persist when you save the query. For Shared queries, your settings can get overwritten when someone else saves different column option settings.
+- Column options you set for a backlog apply only to the active team and backlog. Options set for the product backlog differ from those you set for a portfolio backlog.
+- Column options you set for a Sprint backlog persist for all sprints you select until you change them.
+- Column options you set for a query persist when you save the query. For Shared queries, your settings can get overwritten when someone else saves different column option settings.
   ::: moniker-end
 
 ## Open Column options
@@ -151,9 +151,9 @@ You can sort query results and Work items views. From the Column options dialog,
 
 You can change the column order, column size, or sort options by using the following keyboard commands:
 
-* To change the column order, choose the field and drag it to a new location
-* To resize a column, choose the column divider to the right of the field and drag to a new location
-* For query results: - Add the field as a column in order to sort by that field - To sort by a column, hold down the shift key and click on the field - To reverse the sort order, shift-click on the field - To sort by multiple columns, shift-click on each column in the order you want to sort
+- To change the column order, choose the field and drag it to a new location
+- To resize a column, choose the column divider to the right of the field and drag to a new location
+- For query results: - Add the field as a column in order to sort by that field - To sort by a column, hold down the shift key and click on the field - To reverse the sort order, shift-click on the field - To sort by multiple columns, shift-click on each column in the order you want to sort
 
 ::: moniker range=">= tfs-2015"
 
@@ -164,17 +164,17 @@ For additional keyboard shortcuts, enter **?** to display available shortcuts ba
 
 ::: moniker range="azure-devops"
 
-* [Display rollup progress or totals](display-rollup.md)
-* [Work item field index](../work-items/guidance/work-item-field.md)
-* [Backlogs, boards, and plans](backlogs-boards-plans.md)
-* [Create managed queries](../queries/using-queries.md)
+- [Display rollup progress or totals](display-rollup.md)
+- [Work item field index](../work-items/guidance/work-item-field.md)
+- [Backlogs, boards, and plans](backlogs-boards-plans.md)
+- [Create managed queries](../queries/using-queries.md)
 
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
 
-* [Work item field index](../work-items/guidance/work-item-field.md)
-* [Backlogs, boards, and plans](backlogs-boards-plans.md)
-* [Create managed queries](../queries/using-queries.md)
+- [Work item field index](../work-items/guidance/work-item-field.md)
+- [Backlogs, boards, and plans](backlogs-boards-plans.md)
+- [Create managed queries](../queries/using-queries.md)
 
 ::: moniker-end

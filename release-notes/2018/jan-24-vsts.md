@@ -16,11 +16,11 @@ Since we skipped the deployment of an update over the recent holidays, we now re
 
 Other feature highlights include:
 
-* [View Analytics Widgets as a Stakeholder](#view-analytics-widgets-as-a-stakeholder) - Bring Stakeholders into the analytics conversation.
-* [View pull request merge commit](#view-pull-request-merge-commit) - See exactly what the merged commit would look like in the PR.
-* [Move work using suggested Areas and Iterations](#move-work-using-suggested-areas-and-iterations) - Get work to the proper area and iteration. Fast.
-* [Wiki Search is now Generally Available](#wiki-search-now-generally-available) and [printable](#print-wiki-pages) - With search and print, Wiki is ready to help you retain your team’s knowledge.
-* [Manage permissions directly on Azure AD groups](#manage-permissions-directly-on-azure-ad-groups) - Simplify your permissions using existing groups from Azure AD.
+- [View Analytics Widgets as a Stakeholder](#view-analytics-widgets-as-a-stakeholder) - Bring Stakeholders into the analytics conversation.
+- [View pull request merge commit](#view-pull-request-merge-commit) - See exactly what the merged commit would look like in the PR.
+- [Move work using suggested Areas and Iterations](#move-work-using-suggested-areas-and-iterations) - Get work to the proper area and iteration. Fast.
+- [Wiki Search is now Generally Available](#wiki-search-now-generally-available) and [printable](#print-wiki-pages) - With search and print, Wiki is ready to help you retain your team’s knowledge.
+- [Manage permissions directly on Azure AD groups](#manage-permissions-directly-on-azure-ad-groups) - Simplify your permissions using existing groups from Azure AD.
 
 ## What’s new in VSTS
 
@@ -133,12 +133,12 @@ Over time, test assets accrue. For large applications, they can easily grow to t
 Last year, we started on the journey to [unify agents across build, release, and test](https://blogs.msdn.microsoft.com/devops/2017/03/26/vstest-task-dons-a-new-avatar-testing-with-unified-agents-and-phases/).
 This was intended to address various pain points associated with using WinRM based **Deploy Test Agent** and **Run Functional Tests** tasks. It also enables you to use the **Visual Studio Test** (VSTest) task for all your testing needs, including:
 
-* Unit tests
-* Functional (UI/non-UI) tests
-* MSTest based tests
-* 3rd party framework-based tests
-* Assembly-based test specification or running tests with Test Plan/Test Suite
-* Single agent test execution as well as distributing tests over multiple agents
+- Unit tests
+- Functional (UI/non-UI) tests
+- MSTest based tests
+- 3rd party framework-based tests
+- Assembly-based test specification or running tests with Test Plan/Test Suite
+- Single agent test execution as well as distributing tests over multiple agents
 
 The unified agents approach also allows admins to manage all machines being used for CI/CD in a uniform manner.
 
@@ -146,10 +146,10 @@ The unified agents approach also allows admins to manage all machines being used
 
 Over the course of the last several sprints, we delivered several crucial pieces to enable this capability, including:
 
-* Agents can be [configured for UI testing](/azure/devops/pipelines/agents/agents#account)
-* [Visual Studio Test Platform Installer](/azure/devops/release-notes/2017/nov-28-vsts#test) allows VSTest task to run without needing Visual Studio pre-installed
-* Both Build and Release definitions can be created with [multiple phases and have the ability to use different agent queues](/azure/devops/release-notes/2017/dec-11-vsts#enhancements-to-multi-phase-builds) for each phase
-* Automated test cases can be [run from the Test hub](/azure/devops/pipelines/test/run-automated-tests-from-test-hub) using the VSTest task
+- Agents can be [configured for UI testing](/azure/devops/pipelines/agents/agents#account)
+- [Visual Studio Test Platform Installer](/azure/devops/release-notes/2017/nov-28-vsts#test) allows VSTest task to run without needing Visual Studio pre-installed
+- Both Build and Release definitions can be created with [multiple phases and have the ability to use different agent queues](/azure/devops/release-notes/2017/dec-11-vsts#enhancements-to-multi-phase-builds) for each phase
+- Automated test cases can be [run from the Test hub](/azure/devops/pipelines/test/run-automated-tests-from-test-hub) using the VSTest task
 
 With all the above now in place, we are ready to deprecate these two tasks. While existing definitions that use the deprecated tasks will continue to work, we encourage you to move to using VSTest to take advantage of continued enhancement over time.
 
@@ -157,8 +157,8 @@ With all the above now in place, we are ready to deprecate these two tasks. Whil
 
 Users can now delete Test Plans / Test suites if they the following permissions
 
-* Test suite delete: View test runs + Delete test runs + Manage test suites
-* Test plan delete: View test runs + Delete test runs + Manage plan suites
+- Test suite delete: View test runs + Delete test runs + Manage test suites
+- Test plan delete: View test runs + Delete test runs + Manage plan suites
 
 ## Wiki
 

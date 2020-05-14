@@ -21,10 +21,10 @@ When using GitHub with Azure Boards, it's easy to keep all of your work connecte
 
 ## Prerequisites
 
-* Your Azure Boards project must be connected to the GitHub repository where the commits and pull requests you want to link to/from exist. For details, see [Connect Azure Boards to GitHub](connect-to-github.md).
-* You must be a Contributor to Azure Boards.
-* You must be a Contributor to the GitHub repository.
-* If your organization uses the Hosted XML process model to customize the work tracking experience, you'll need to update the work item types to link to and view the GitHub link types from the Development section in the work item form. For details, see [Update XML definitions for select work item types](troubleshoot-github-connection.md#update-wits).
+- Your Azure Boards project must be connected to the GitHub repository where the commits and pull requests you want to link to/from exist. For details, see [Connect Azure Boards to GitHub](connect-to-github.md).
+- You must be a Contributor to Azure Boards.
+- You must be a Contributor to the GitHub repository.
+- If your organization uses the Hosted XML process model to customize the work tracking experience, you'll need to update the work item types to link to and view the GitHub link types from the Development section in the work item form. For details, see [Update XML definitions for select work item types](troubleshoot-github-connection.md#update-wits).
 
 ## Use AB# mention to link from GitHub to Azure Boards work items
 
@@ -130,6 +130,6 @@ For details on enabling annotations, see [Customize cards](../boards/customize-c
 
 ## Related articles
 
-* [Connect Azure Boards to GitHub](connect-to-github.md)
-* [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md)
-* [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md)
+- [Connect Azure Boards to GitHub](connect-to-github.md)
+- [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md)
+- [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md)

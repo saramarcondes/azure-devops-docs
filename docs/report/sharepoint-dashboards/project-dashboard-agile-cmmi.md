@@ -47,16 +47,16 @@ For more information about how to interpret, update, or customize the charts tha
 
 For the reports that appear in the Project dashboard to be useful and accurate, the team must perform the following activities:
 
-* Define tasks.
+- Define tasks.
 
-* Specify and update the **Completed** and **Remaining** fields for each task as the team works on it.
+- Specify and update the **Completed** and **Remaining** fields for each task as the team works on it.
 
   > [!IMPORTANT]
   > If you subdivide a task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent task and the user story.
 
-* Update the **State** of each task as it progresses from **Active** to **Closed**.
+- Update the **State** of each task as it progresses from **Active** to **Closed**.
 
-* (optional) Specify the **Iteration** and **Area** paths for each work item if you want to filter by those fields.
+- (optional) Specify the **Iteration** and **Area** paths for each work item if you want to filter by those fields.
 
 ## <a name="Using"></a> Track an iteration
 
@@ -98,9 +98,9 @@ To track an iteration by using the Project Dashboard, you must modify the parame
 
 4.  In the **YAxis** list, choose one of the following options:
 
-    * **Hours of Work** displays the cumulative number of work hours for all tasks that are defined for the iteration.
+    - **Hours of Work** displays the cumulative number of work hours for all tasks that are defined for the iteration.
 
-    * **Number of Work Items** displays the cumulative number of work items, grouped by state, that are defined for the iteration.
+    - **Number of Work Items** displays the cumulative number of work items, grouped by state, that are defined for the iteration.
 
 5.  Choose **Apply**.
 
@@ -114,13 +114,13 @@ To track an iteration by using the Project Dashboard, you must modify the parame
 
 4.  In the **TrendLineParameter** list, choose one of the following options:
 
-    * **Display Actual** displays a band that is based on the actual burndown. The band intersects the x-axis when the iteration is expected to finish.
+    - **Display Actual** displays a band that is based on the actual burndown. The band intersects the x-axis when the iteration is expected to finish.
 
-    * **Display Ideal** displays a straight line from the remaining work at the start date to the x-axis on the end date.
+    - **Display Ideal** displays a straight line from the remaining work at the start date to the x-axis on the end date.
 
-    * **Display Both** displays both the actual and ideal trend lines.
+    - **Display Both** displays both the actual and ideal trend lines.
 
-    * **None** does not display a trend line.
+    - **None** does not display a trend line.
 
 5.  Choose **Apply**.
 
@@ -130,15 +130,15 @@ To track an iteration by using the Project Dashboard, you must modify the parame
 
 To monitor team progress, you can review the **Task Burndown (hours)** report for the following types of indicators:
 
-* **Has Completed Work stopped increasing in the Task Burndown (hours) report?**
+- **Has Completed Work stopped increasing in the Task Burndown (hours) report?**
 
   One or more issues might be blocking progress or the team might not be resolving and closing work items that it has completed, fixed, and verified.
 
-* **Is the team adding or expanding the scope of work during the iteration?**
+- **Is the team adding or expanding the scope of work during the iteration?**
 
   Significant increases over time to the amount of Remaining Work may indicate poor estimations or scope creep. That is, either the team did not accurately estimate the work at the start of the iteration or the team added features after the iteration started. When required effort is larger than estimated effort, team members might be underestimating the difficulty, time, or other factors. You should investigate the root causes. For example, you might want to determine how granular the Tasks are.
 
-* **Do changes in the reports match your expectations?**
+- **Do changes in the reports match your expectations?**
 
   Dashboard reports reflect work that the team is tracking. You should expect the reports to change according to the decisions and changes that the team makes about the work. If the team reallocates work to another iteration or decides to add work for an iteration, those one or more reports on the Project dashboard should reflect those decisions.
 

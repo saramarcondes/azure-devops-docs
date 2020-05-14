@@ -18,8 +18,7 @@ ms.date: 08/07/2019
 
 This article shows you how to display the Stories CFD for a specified team. An example is shown in the following image.
 
-> [!div class="mx-imgBorder"]
-> ![Sample - CFD - Report](media/odatapowerbi-cfd-report.png)
+> [!div class="mx-imgBorder"] > ![Sample - CFD - Report](media/odatapowerbi-cfd-report.png)
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
@@ -69,8 +68,8 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/V3.0-preview/Wor
 
 [!INCLUDE [temp](includes/sample-query-substitutions.md)]
 
-* {teamname} - The name of the team to display the CFD for
-* {startdate} - The date to start the CFD chart from. Format: YYYY-MM-DDZ. Example: 2019-04-01Z represents 2019-April-01. Do not enclose in quotes.
+- {teamname} - The name of the team to display the CFD for
+- {startdate} - The date to start the CFD chart from. Format: YYYY-MM-DDZ. Example: 2019-04-01Z represents 2019-April-01. Do not enclose in quotes.
 
 ### Query breakdown
 
@@ -104,22 +103,20 @@ Power BI shows you the fields you can report on.
 > [!NOTE]  
 > The example below assumes that no one renamed any columns.
 
-> [!div class="mx-imgBorder"]
-> ![Sample -Release Burndown - Fields](media/odatapowerbi-cfd-fields.png)
+> [!div class="mx-imgBorder"] > ![Sample -Release Burndown - Fields](media/odatapowerbi-cfd-fields.png)
 
 For a simple report, do the following steps:
 
 1.  Select Power BI Visualization **Stacked Area Chart**.
 1.  Add the field "DateValue" to **Axis**
-    * Right-click "DateValue" and select "DateValue", rather than Date Hierarchy
+    - Right-click "DateValue" and select "DateValue", rather than Date Hierarchy
 1.  Add the field "ColumnName" to **Legend**
 1.  Add the field "Count" to **Values**
 1.  On the Filter for "ColumnName", select only the values you want to appear on the chart. For example, you may want to unselect "New" and "Done"
 
 The example report:
 
-> [!div class="mx-imgBorder"]
-> ![Sample - CFD - Report](media/odatapowerbi-cfd-report.png)
+> [!div class="mx-imgBorder"] > ![Sample - CFD - Report](media/odatapowerbi-cfd-report.png)
 
 ### Sorting columns in correct order
 
@@ -167,13 +164,12 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/V3.0-preview/Boa
 1.  Select **Modeling** menu.
 1.  Select **Sort by Column** and choose "ColumnOrder".
 1.  Select **Manage Relationships** and ensure there is a relationship between "CFD.ColumnName" and "ColumnOrder.ColumnName".
-    * It is likely that the relationship was auto-detected.
+    - It is likely that the relationship was auto-detected.
 1.  In the report created above, add "ColumnOrder.ColumnName" to **Legend**, replacing "CFD.ColumnName".
 
 The report will now be sorted by correct column order:
 
-> [!div class="mx-imgBorder"]
-> ![Sample - Release Burndown - Report](media/odatapowerbi-cfd-report2.png)
+> [!div class="mx-imgBorder"] > ![Sample - Release Burndown - Report](media/odatapowerbi-cfd-report2.png)
 
 > [!NOTE]
 > If any work items were in a column that has since been deleted, they will appear as "Blank" in the above report.

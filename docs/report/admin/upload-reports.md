@@ -40,9 +40,9 @@ You use the **TFSConfig addProjectReports** command line tool to upload reports.
 
 1.  Verify that you have the following tools, configurations, and permissions.
 
-    * If you aren't an administrator for the team project, [get added now](/azure/devops/server/admin/add-administrator).
-    * If you haven't been added to the Content Manager or Team Foundation Content Manager role for SQL Server Reporting Services, [get added now](grant-permissions-to-reports.md).
-    * If you haven't installed [Team Foundation Server](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs), install it now. This is the only way to obtain the latest version of the default process templates, which contains the latest version of the reports.
+    - If you aren't an administrator for the team project, [get added now](/azure/devops/server/admin/add-administrator).
+    - If you haven't been added to the Content Manager or Team Foundation Content Manager role for SQL Server Reporting Services, [get added now](grant-permissions-to-reports.md).
+    - If you haven't installed [Team Foundation Server](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs), install it now. This is the only way to obtain the latest version of the default process templates, which contains the latest version of the reports.
 
 2.  Open a Command Prompt in administrative mode and change to the following directory:
 
@@ -60,9 +60,9 @@ You use the **TFSConfig addProjectReports** command line tool to upload reports.
 
     To overwrite reports that were previously uploaded, specify the **/force** option. These are the names of the default process templates available with TFS 2017:
 
-    * Agile
-    * CMMI
-    * Scrum
+    - Agile
+    - CMMI
+    - Scrum
 
 ## Upload reports to your team project (TFS 2015 and earlier versions)
 
@@ -70,11 +70,11 @@ You use the **tfpt** command line tool that TFS Power Tools provides.
 
 1.  Verify that you have the following tools, configurations, and permissions.
 
-    * If you haven't installed TFS power tools, [install them now](https://go.microsoft.com/fwlink/?LinkId=320602).
-    * If you haven't installed Visual Studio, [install a version of them now](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs). You can download Visual Studio Community for free. Each version of Visual Studio installs Team Explorer, which must be present on the same machine where you run the **tfpt** command line tool.
-    * If you aren't an administrator for the team project, [get added now](/azure/devops/server/admin/add-administrator).
-    * If you haven't been added to the Content Manager or Team Foundation Content Manager role for SQL Server Reporting Services, [get added now](grant-permissions-to-reports.md).
-    * If you haven't installed [Team Foundation Server](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs), install it now. This is the only way to obtain the latest version of the default process templates, which contains the latest version of the reports.
+    - If you haven't installed TFS power tools, [install them now](https://go.microsoft.com/fwlink/?LinkId=320602).
+    - If you haven't installed Visual Studio, [install a version of them now](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs). You can download Visual Studio Community for free. Each version of Visual Studio installs Team Explorer, which must be present on the same machine where you run the **tfpt** command line tool.
+    - If you aren't an administrator for the team project, [get added now](/azure/devops/server/admin/add-administrator).
+    - If you haven't been added to the Content Manager or Team Foundation Content Manager role for SQL Server Reporting Services, [get added now](grant-permissions-to-reports.md).
+    - If you haven't installed [Team Foundation Server](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs), install it now. This is the only way to obtain the latest version of the default process templates, which contains the latest version of the reports.
 
 2.  From Team Explorer, download the latest process template that is compatible with the one used to create your team project.
 
@@ -103,9 +103,9 @@ On a 64-bit edition of Windows, replace **%programfiles%** with **%programfiles(
 
         	These are the names of the process templates uploaded with TFS 2015:
 
-    * Agile
-    * CMMI
-    * Scrum  
+    - Agile
+    - CMMI
+    - Scrum
 
       To overwrite reports that were previously uploaded, specify the **/force** option.
 

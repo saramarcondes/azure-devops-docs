@@ -18,11 +18,11 @@ The New Team Project Wizard was unable to connect to {_name_}, the server that h
 
 Possible causes of this error include:
 
-* You do not have the required permissions to create a project.
+- You do not have the required permissions to create a project.
 
-* A server in the Team Foundation deployment is incorrectly configured. This problem is especially common after a server move, failover, or other maintenance activity.
+- A server in the Team Foundation deployment is incorrectly configured. This problem is especially common after a server move, failover, or other maintenance activity.
 
-* The server that hosts SQL Server Reporting Services is offline.
+- The server that hosts SQL Server Reporting Services is offline.
 
   Because the wizard could not connect to the server that hosts SQL Server Reporting Services, the wizard was unable to create the SQL Server Reporting Services site on that server.
 
@@ -42,7 +42,7 @@ Possible causes of this error include:
 
     2.  On the **File** menu, click **Open**.
 
-    3.  Navigate to $:\Documents and Settings\\_user name_\Local Settings\Temp\Team Services_TeamProjectCreation_yyyy_mm_dd_hh_mm_ss.log.
+    3.  Navigate to \$:\Documents and Settings\\_user name_\Local Settings\Temp\Team Services_TeamProjectCreation_yyyy_mm_dd_hh_mm_ss.log.
 
     4.  Click **Open**.
 
@@ -56,4 +56,4 @@ Possible causes of this error include:
 
 ## Related articles
 
-* [Create a project](../../organizations/projects/create-project.md)
+- [Create a project](../../organizations/projects/create-project.md)

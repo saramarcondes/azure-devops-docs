@@ -45,9 +45,9 @@ A data conflict occurs when you try to publish a work item from [Excel](bulk-add
 
 ## Related articles
 
-* [Resolve invalid links](resolve-excel-invalid-links-tree-list.md)
-* [Resolve data validation errors](resolve-excel-data-validation-errors.md)
-* [Work in Excel and Project](track-work.md)
+- [Resolve invalid links](resolve-excel-invalid-links-tree-list.md)
+- [Resolve data validation errors](resolve-excel-data-validation-errors.md)
+- [Work in Excel and Project](track-work.md)
 
 ### Required permissions
 

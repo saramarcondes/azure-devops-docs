@@ -90,6 +90,6 @@ For details, see [Manage teams and configure team tools](../settings/manage-team
 
 ## Related articles
 
-* [About permissions and groups](about-permissions.md)
-* [Permissions and groups reference](permissions.md)
-* [Access with Azure Active Directory (Azure AD)](../accounts/add-users-to-azure-ad.md).
+- [About permissions and groups](about-permissions.md)
+- [Permissions and groups reference](permissions.md)
+- [Access with Azure Active Directory (Azure AD)](../accounts/add-users-to-azure-ad.md).

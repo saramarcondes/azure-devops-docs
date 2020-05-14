@@ -16,6 +16,6 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Members
 
-* `build`: [BuildReference](../../../TFS/TestManagement/Contracts/BuildReference.md).
+- `build`: [BuildReference](../../../TFS/TestManagement/Contracts/BuildReference.md).
 
-* `date`: Date.
+- `date`: Date.

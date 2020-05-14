@@ -57,9 +57,9 @@ Follow the additional steps described below based on the runtime stack used for 
 
 #### [Java](#tab/java)
 
-* For deploying Java Spring Boot and Spring Cloud based apps, create a Linux VM in Azure using [this](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu8-ubuntu-1804) template, which provides a fully supported OpenJDK-based runtime.
-* For deploying Java servlets on Tomcat server, create a Linux VM with Java 8 using [this](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu8-ubuntu-1804) Azure template and [configure Tomcat 9.x as a service](https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-ubuntu-16-04#step-5-create-a-systemd-service-file).
-* For deploying Java EE based app, use an Azure template to create a [Linux VM + Java + WebSphere 9.x](https://azuremarketplace.microsoft.com/marketplace/apps/midvision.websphere-application-server-nde-90) or a [Linux VM + Java + WebLogic 12.x](https://azuremarketplace.microsoft.com/marketplace/apps/oracle.20191009-arm-oraclelinux-wls-admin) or a [Linux VM +Java](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu8-ubuntu-1804) + WildFly/JBoss 14
+- For deploying Java Spring Boot and Spring Cloud based apps, create a Linux VM in Azure using [this](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu8-ubuntu-1804) template, which provides a fully supported OpenJDK-based runtime.
+- For deploying Java servlets on Tomcat server, create a Linux VM with Java 8 using [this](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu8-ubuntu-1804) Azure template and [configure Tomcat 9.x as a service](https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-ubuntu-16-04#step-5-create-a-systemd-service-file).
+- For deploying Java EE based app, use an Azure template to create a [Linux VM + Java + WebSphere 9.x](https://azuremarketplace.microsoft.com/marketplace/apps/midvision.websphere-application-server-nde-90) or a [Linux VM + Java + WebLogic 12.x](https://azuremarketplace.microsoft.com/marketplace/apps/oracle.20191009-arm-oraclelinux-wls-admin) or a [Linux VM +Java](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu8-ubuntu-1804) + WildFly/JBoss 14
 
 #### [JavaScript](#tab/java-script)
 
@@ -77,12 +77,12 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
 
 1.  Do one of the following to start creating a release pipeline:
 
-    * If you've just completed a CI build, in the build's **Summary** tab under **Deployments**,
+    - If you've just completed a CI build, in the build's **Summary** tab under **Deployments**,
       choose **Create release** followed by **Yes**. This starts a new release pipeline that's automatically linked to the build pipeline.
 
       ![Creating a new release pipeline from the build summary](../media/release-from-build-summary.png)
 
-    * Open the **Releases** tab of **Azure Pipelines**, open the **+** drop-down
+    - Open the **Releases** tab of **Azure Pipelines**, open the **+** drop-down
       in the list of release pipelines, and choose **Create release pipeline**.
 
       ![Creating a new release pipeline in the Releases page](../media/release-from-release-page.png)
@@ -141,7 +141,7 @@ with the artifacts produced by a specific build. This will result in deploying t
 
 ## Next steps
 
-* [Dynamically create and remove a deployment group](howto-webdeploy-iis-deploygroups.md#depgroup)
-* [Apply stage-specific configurations](howto-webdeploy-iis-deploygroups.md#envirconfig)
-* [Perform a safe rolling deployment](howto-webdeploy-iis-deploygroups.md#rolling)
-* [Deploy a database with your app](howto-webdeploy-iis-deploygroups.md#database)
+- [Dynamically create and remove a deployment group](howto-webdeploy-iis-deploygroups.md#depgroup)
+- [Apply stage-specific configurations](howto-webdeploy-iis-deploygroups.md#envirconfig)
+- [Perform a safe rolling deployment](howto-webdeploy-iis-deploygroups.md#rolling)
+- [Deploy a database with your app](howto-webdeploy-iis-deploygroups.md#database)

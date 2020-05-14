@@ -54,17 +54,17 @@ Choose **GetProcessingStatus**.
 
 A new browser window opens. It indicates the following job's processing status:
 
-* **Common Structures Warehouse Sync**
-* **Full Analysis Database Sync**
-* **Incremental Analysis Database Sync**
+- **Common Structures Warehouse Sync**
+- **Full Analysis Database Sync**
+- **Incremental Analysis Database Sync**
 
 And, the status for the following jobs for each team project collection are provided:
 
-* **Build Warehouse Sync**
-* **Common Structures Warehouse Sync**
-* **Test Management Warehouse Sync**
-* **Version Control Warehouse Sync**
-* **Work Item Tracking Warehouse Sync**
+- **Build Warehouse Sync**
+- **Common Structures Warehouse Sync**
+- **Test Management Warehouse Sync**
+- **Version Control Warehouse Sync**
+- **Work Item Tracking Warehouse Sync**
 
 A value of **Idle** indicates that the synchronization job is currently not running. You should process the data warehouse or the cube only when the processing status for these jobs is **Idle**. If a different value is returned, repeat this step until **Idle** is returned for the job that you want to process.
 
@@ -94,8 +94,8 @@ A value of **Idle** indicates that the synchronization job is currently not runn
 
     Cube processing is completed when the **GetProcessingStatus** service returns a value of **Idle**, and a value of **Succeeded** for the following jobs.
 
-    * **Full Analysis Database Sync**
-    * **Incremental Analysis Database Sync**
+    - **Full Analysis Database Sync**
+    - **Incremental Analysis Database Sync**
 
 ## Process dimensions for expanded capacity
 
@@ -128,9 +128,9 @@ This service changes the StringStoresCompatibilityLevel to 1100 for the **Work I
 # [Version Control (dimFile)](#tab/dim-file)
 
 ```
-Microsoft.TeamFoundation.Warehouse.WarehouseException: TF221122: An error occurred running job Full Analysis Database Sync for team project collection or Team Foundation server TEAM FOUNDATION.  
+Microsoft.TeamFoundation.Warehouse.WarehouseException: TF221122: An error occurred running job Full Analysis Database Sync for team project collection or Team Foundation server TEAM FOUNDATION.
 
-Microsoft.TeamFoundation.Warehouse.WarehouseException: Failed to Process Analysis Database 'Tfs_Analysis'.  
+Microsoft.TeamFoundation.Warehouse.WarehouseException: Failed to Process Analysis Database 'Tfs_Analysis'.
 
 You should run the ProcessDimensionsForExpandedCapacity web service when you receive the following error message:
 Microsoft.TeamFoundation.Warehouse.WarehouseException: TF221122: An error occurred running job Full Analysis Database Sync for team project collection or Team Foundation server TEAM FOUNDATION.
@@ -155,9 +155,9 @@ This service changes the StringStoresCompatibilityLevel to 1100 for the **Versio
 
 You should process a database manually for one of the following reasons:
 
-* Incrementally process the cube when reports don't show the latest data and you need them up-to-date for an upcoming meeting.
-* Process each team project collection within the data warehouse to verify resolution of all [schema conflicts](resolve-schema-conflicts.md).
-* Process each team project collection within the data warehouse to collect information to diagnose issues appearing in the event viewer related to warehouse jobs.
+- Incrementally process the cube when reports don't show the latest data and you need them up-to-date for an upcoming meeting.
+- Process each team project collection within the data warehouse to verify resolution of all [schema conflicts](resolve-schema-conflicts.md).
+- Process each team project collection within the data warehouse to collect information to diagnose issues appearing in the event viewer related to warehouse jobs.
 
 Perform a [full rebuild of the warehouse and cube](rebuild-data-warehouse-and-cube.md) when you move, restore, rename, or fail over the TFS data-tier server.
 

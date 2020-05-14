@@ -20,9 +20,9 @@ monikerRange: '>= tfs-2017'
 
 You can publish NuGet packages from your build to NuGet feeds. You can publish these packages to:
 
-* Azure Artifacts or the TFS Package Management service.
-* Other NuGet services such as NuGet.org.
-* Your internal NuGet repository.
+- Azure Artifacts or the TFS Package Management service.
+- Other NuGet services such as NuGet.org.
+- Your internal NuGet repository.
 
 ## Create a NuGet package
 
@@ -42,9 +42,9 @@ To create a package, add the following snippet to your azure-pipelines.yml file.
 
 The NuGet task supports a number of options. The following list describes some of the key ones. The [task documentation](../tasks/package/nuget.md) describes the rest.
 
-* **packagesToPack**: The path to the files that describe the package you want to create. If you don't have these, see the [NuGet documentation](/nuget/create-packages/creating-a-package) to get started.
-* **configuration**: The default is `$(BuildConfiguration)` unless you want to always build either `Debug` or `Release` packages, or unless you have a custom build configuration.
-* **packDestination**: The default is `$(Build.ArtifactStagingDirectory)`. If you set this, make a note of the location so you can use it in the [publish task](#publish-packages).
+- **packagesToPack**: The path to the files that describe the package you want to create. If you don't have these, see the [NuGet documentation](/nuget/create-packages/creating-a-package) to get started.
+- **configuration**: The default is `$(BuildConfiguration)` unless you want to always build either `Debug` or `Release` packages, or unless you have a custom build configuration.
+- **packDestination**: The default is `$(Build.ArtifactStagingDirectory)`. If you set this, make a note of the location so you can use it in the [publish task](#publish-packages).
 
 ::: moniker-end
 
@@ -60,11 +60,11 @@ The NuGetAuthenticate task will use the build credentials by default so you won'
 
 The NuGet task supports a number of options. The following list describes some of the key ones. The [task documentation](../tasks/package/nuget.md) describes the rest.
 
-* **Command:** pack
-* **Path to csproj or nuspec file(s) to pack**: The path to the files that describe the package you want to create. If you don't have these, see the [NuGet documentation](/nuget/create-packages/creating-a-package) to get started.
-* **Configuration to package**: Leave this as `$(BuildConfiguration)` unless you want to always build either `Debug` or `Release` packages, or unless you have a custom build configuration.
-* **Package folder**: Leave this as `$(Build.ArtifactStagingDirectory)`. If you change this, make a note of the location so you can use it in the [publish task](#publish-packages).
-* **Pack options** > **Use Build number to version package**: See the
+- **Command:** pack
+- **Path to csproj or nuspec file(s) to pack**: The path to the files that describe the package you want to create. If you don't have these, see the [NuGet documentation](/nuget/create-packages/creating-a-package) to get started.
+- **Configuration to package**: Leave this as `$(BuildConfiguration)` unless you want to always build either `Debug` or `Release` packages, or unless you have a custom build configuration.
+- **Package folder**: Leave this as `$(Build.ArtifactStagingDirectory)`. If you change this, make a note of the location so you can use it in the [publish task](#publish-packages).
+- **Pack options** > **Use Build number to version package**: See the
   [next section](#package-versioning).
 
 ![A screenshot of the NuGet task configured as outlined above](media/nuget/create-packages-in-team-build.png)
@@ -83,14 +83,14 @@ In addition to `Major.Minor.Patch`, Semantic Versioning provides for a prereleas
 
 When you create a package in continuous integration (CI), you can use Semantic Versioning with prerelease labels. You can use the **NuGet** task for this purpose. It supports the following formats:
 
-* Use the same versioning scheme for your builds and packages, if that scheme has at least three parts separated by periods. The following build pipeline formats are examples of versioning schemes that are compatible with NuGet:
+- Use the same versioning scheme for your builds and packages, if that scheme has at least three parts separated by periods. The following build pipeline formats are examples of versioning schemes that are compatible with NuGet:
 
-  * `$(Major).$(Minor).$(rev:.r)`, where `Major` and `Minor` are two variables defined in the build pipeline. This format will automatically increment the build number and the package version with a new patch number. It will keep the major and minor versions constant, until you change them manually in the build pipeline.
-  * `$(Major).$(Minor).$(Patch).$(date:yyyyMMdd)`, where `Major`, `Minor`, and `Patch` are variables defined in the build pipeline. This format will create a new prerelease label for the build and package while keeping the major, minor, and patch versions constant.
+  - `$(Major).$(Minor).$(rev:.r)`, where `Major` and `Minor` are two variables defined in the build pipeline. This format will automatically increment the build number and the package version with a new patch number. It will keep the major and minor versions constant, until you change them manually in the build pipeline.
+  - `$(Major).$(Minor).$(Patch).$(date:yyyyMMdd)`, where `Major`, `Minor`, and `Patch` are variables defined in the build pipeline. This format will create a new prerelease label for the build and package while keeping the major, minor, and patch versions constant.
 
-* Use a version that's different from the build number. You can customize the major, minor, and patch versions for your packages in the NuGet task, and let the task generate a unique prerelease label based on date and time.
+- Use a version that's different from the build number. You can customize the major, minor, and patch versions for your packages in the NuGet task, and let the task generate a unique prerelease label based on date and time.
 
-* Use a script in your build pipeline to generate the version.
+- Use a script in your build pipeline to generate the version.
 
 #### [YAML](#tab/yaml/)
 
@@ -131,9 +131,9 @@ Although Semantic Versioning with prerelease labels is a good solution for packa
 
 When you're producing a package in a build, you can't know whether it will be the version that you aim to release to your users or just a step along the way toward that release. Although none of the following solutions are ideal, you can use one of these depending on your preference:
 
-* After you validate a package and decide to release it, produce another package without the prerelease label and publish it. The drawback of this approach is that you have to validate the new package again, and it might uncover new issues.
+- After you validate a package and decide to release it, produce another package without the prerelease label and publish it. The drawback of this approach is that you have to validate the new package again, and it might uncover new issues.
 
-* Publish only packages that you want to release. In this case, you won't use a prerelease label for every build. Instead, you'll reuse the same package version for all packages. Because you do not publish packages from every build, you do not cause a conflict.
+- Publish only packages that you want to release. In this case, you won't use a prerelease label for every build. Instead, you'll reuse the same package version for all packages. Because you do not publish packages from every build, you do not cause a conflict.
 
 <a name="publish-packages"></a>
 
@@ -187,10 +187,10 @@ YAML is not supported in TFS.
 
 To publish NuGet packages created by your build, add the **NuGet** task and configure these options:
 
-* **Command**: push
-* **Path to NuGet package(s) to publish**: Leave this set to `$(Build.ArtifactStagingDirectory)` unless you decided earlier to pack your packages in another location in the last task.
-* **Target feed location**: You can publish to an Azure Artifacts or TFS Package Management feed in this organization or collection, to NuGet.org, or to an internal NuGet repository.
-* **Target feed**: Select the feed that you want to publish to.
+- **Command**: push
+- **Path to NuGet package(s) to publish**: Leave this set to `$(Build.ArtifactStagingDirectory)` unless you decided earlier to pack your packages in another location in the last task.
+- **Target feed location**: You can publish to an Azure Artifacts or TFS Package Management feed in this organization or collection, to NuGet.org, or to an internal NuGet repository.
+- **Target feed**: Select the feed that you want to publish to.
 
 ![Publish packages from team build](media/nuget/publish-packages-from-team-build.png)
 

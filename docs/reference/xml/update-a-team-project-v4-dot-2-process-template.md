@@ -40,9 +40,9 @@ These procedures will only support access to new features available with TFS 201
 
 **Requirements**
 
-* To download a process template, you must be a member of the **Project Collection Administrators** group. If the required security permissions are set explicitly, your **Manage process template** permission for the project collection must be set to **Allow**.
-* To run the **witadmin** and **tcm** command-line tools, you must be a member of one of the following groups: **Team Foundation Administrators**, **Project Collection Administrators**, or **Project Administrators** for the project.
-* To grant permissions, you must be a member of the administrative group at the level of the group that you want to change. For example, if you want to change permissions for a group or user at the project collection level, you must be a member of the **Project Collection Administrators** group for that collection, or your **Edit Collection-Level Information** permission must be set to **Allow**.
+- To download a process template, you must be a member of the **Project Collection Administrators** group. If the required security permissions are set explicitly, your **Manage process template** permission for the project collection must be set to **Allow**.
+- To run the **witadmin** and **tcm** command-line tools, you must be a member of one of the following groups: **Team Foundation Administrators**, **Project Collection Administrators**, or **Project Administrators** for the project.
+- To grant permissions, you must be a member of the administrative group at the level of the group that you want to change. For example, if you want to change permissions for a group or user at the project collection level, you must be a member of the **Project Collection Administrators** group for that collection, or your **Edit Collection-Level Information** permission must be set to **Allow**.
 
 For more information, see [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md).
 
@@ -57,11 +57,11 @@ Perform this task for each project collection defined on the application-tier se
 1.  Type each of the following commands, substituting your data for the arguments that are shown, and then choose the **ENTER** key.
 
     ```
-    witadmin changefield /collection:CollectionURL /n:System.AreaId /name:"Area Id"  
-    witadmin changefield /collection:CollectionURL /n:System.AttachedFileCount /name:"Attached File Count"  
-    witadmin changefield /collection:CollectionURL /n:System.ExternalLinkCount /name:"External Link Count"  
-    witadmin changefield /collection:CollectionURL /n:System.HyperLinkCount /name:"Hyperlink Count"  
-    witadmin changefield /collection:CollectionURL /n:System.RelatedLinkCount /name:"Related Link Count"  
+    witadmin changefield /collection:CollectionURL /n:System.AreaId /name:"Area Id"
+    witadmin changefield /collection:CollectionURL /n:System.AttachedFileCount /name:"Attached File Count"
+    witadmin changefield /collection:CollectionURL /n:System.ExternalLinkCount /name:"External Link Count"
+    witadmin changefield /collection:CollectionURL /n:System.HyperLinkCount /name:"Hyperlink Count"
+    witadmin changefield /collection:CollectionURL /n:System.RelatedLinkCount /name:"Related Link Count"
     ```
 
     Use this format for _CollectionURL_: `http://ServerName:Port/VirtualDirectoryName/CollectionName`, for example: `http://srvalm:8080/tfs/DefaultCollection`.
@@ -75,10 +75,10 @@ To minimize the amount of customizations you need to make, and to comply with fu
 
 Perform this task for each project that you want to update.
 
-* Type the following command, substituting your data for the arguments that are shown, and then choose the **ENTER** key.
+- Type the following command, substituting your data for the arguments that are shown, and then choose the **ENTER** key.
 
   ```
-  witadmin renamewitd /collection:CollectionURL /p:projectName /n:Scenario /new:"User Story"  
+  witadmin renamewitd /collection:CollectionURL /p:projectName /n:Scenario /new:"User Story"
   ```
 
   > [!TIP]
@@ -88,7 +88,7 @@ Perform this task for each project that you want to update.
 
 ## 3. Download the latest version of MSF process template
 
-* See [Download the latest process template](../../boards/work-items/guidance/manage-process-templates.md).
+- See [Download the latest process template](../../boards/work-items/guidance/manage-process-templates.md).
 
 > [!TIP]  
 >  To get access to the latest versions of the default process templates, install the latest update for TFS. TFS 2012.1 provided significant updates that were made to the workflow for several work item types. These changes support backward transitions so that when you inadvertently drag a work item on the Kanban board or the task board to a resolved or closed state, you can drag it back to an earlier workflow state.
@@ -101,11 +101,11 @@ Import the link types, SharedSteps and TestedBy, located in the LinkTypes folder
 
 Perform this task for each project collection defined on your upgraded application-tier server.
 
-* Type the following two commands, substituting your data for the arguments that are shown, and then choose the **ENTER** key.
+- Type the following two commands, substituting your data for the arguments that are shown, and then choose the **ENTER** key.
 
   ```
-  witadmin importlinktype /collection:CollectionURL /f:"DirectoryPath\TestedBy.xml"  
-  witadmin importlinktype /collection:CollectionURL /f:"DirectoryPath\SharedStep.xml"  
+  witadmin importlinktype /collection:CollectionURL /f:"DirectoryPath\TestedBy.xml"
+  witadmin importlinktype /collection:CollectionURL /f:"DirectoryPath\SharedStep.xml"
   ```
 
   For _DirectoryPath_, specify the location of the LinkTypes folder for the process template that you downloaded. The directory path should follow this structure: _Drive_:\\_MSFTemplateFolder_\WorkItem Tracking\LinkTypes.
@@ -140,16 +140,16 @@ To learn more about working with the artifacts that these process templates prov
 
 Import the following work item types based on the process template you are working with.
 
-* **Agile**: Bug, Task, User Story, Test Case, Shared Steps, Code Review Request, Code Review Response, Feedback Request, Feedback Response
+- **Agile**: Bug, Task, User Story, Test Case, Shared Steps, Code Review Request, Code Review Response, Feedback Request, Feedback Response
 
-* **CMMI**: Bug, Task, Requirement, Test Case, Shared Steps, Code Review Request, Code Review Response, Feedback Request, Feedback Response
+- **CMMI**: Bug, Task, Requirement, Test Case, Shared Steps, Code Review Request, Code Review Response, Feedback Request, Feedback Response
 
   Perform this task for each project that you want to update.
 
-* Type the following command for each work item type that you need to import, substituting your data for the arguments that are shown, and then choose the **ENTER** key.
+- Type the following command for each work item type that you need to import, substituting your data for the arguments that are shown, and then choose the **ENTER** key.
 
   ```
-  witadmin importwitd /collection:CollectionURL /p:projectName /f:"DirectoryPath\WITName"  
+  witadmin importwitd /collection:CollectionURL /p:projectName /f:"DirectoryPath\WITName"
   ```
 
   > [!TIP]
@@ -157,16 +157,16 @@ Import the following work item types based on the process template you are worki
 
   For _DirectoryPath_, specify the directory location of the TypeDefinitions folder for the process template that you downloaded. The directory path should follow this structure: _Drive_:_MSFTemplateFolder_ WorkItem TrackingTypeDefinitions.
 
-* (Optional) Verify the work item types are accessible by opening Team Explorer or the web portal. You might have to [refresh the cache](../../project/navigation/index.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json#refresh-web-portal) to see the changes.
+- (Optional) Verify the work item types are accessible by opening Team Explorer or the web portal. You might have to [refresh the cache](../../project/navigation/index.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json#refresh-web-portal) to see the changes.
 
 ## 7. Import the categories file
 
 Import the category file located in the WorkItem Tracking folder of the process template that you downloaded. Categories support intelligent grouping of work item types. To learn more, see [Use categories to group work item types](use-categories-to-group-work-item-types.md).
 
-* In the Command Prompt window, type the following command, substituting your data for the arguments that are shown, and then choose the **ENTER** key.
+- In the Command Prompt window, type the following command, substituting your data for the arguments that are shown, and then choose the **ENTER** key.
 
   ```
-  witadmin importcategories /collection:CollectionURL /p:projectName /f:"DirectoryPath\categories.xml"  
+  witadmin importcategories /collection:CollectionURL /p:projectName /f:"DirectoryPath\categories.xml"
   ```
 
   For _DirectoryPath_, specify the path to the WorkItem Tracking folder for the process template that you downloaded. The directory path should follow this structure: _Drive_:\\_MSFTemplateFolder_\WorkItem Tracking.
@@ -177,7 +177,7 @@ Import the category file located in the WorkItem Tracking folder of the process 
 
 The process configuration file determines the layout and features available through the backlog and board pages of the web portal. To use these pages, you must import the process configuration file.
 
-* Import the definition file for process configuration.<br/>
+- Import the definition file for process configuration.<br/>
   <code>witadmin importprocessconfig /collection:CollectionURL /p:&quot; ProjectName&quot; /f:&quot;DirectoryPath\ProcessConfiguration.xml&quot;</code><br/>
   For <em>DirectoryPath</em>, specify the path to the Process folder for the process template that you downloaded. The directory path should follow this structure: <em>Drive</em>:\<em>TemplateFolder</em>\WorkItem Tracking\Process.<br/>
 
@@ -202,11 +202,11 @@ To support the automatic creation of a work item to track code defects or bugs t
 
     ```xml
     <?xml version="1.0" encoding="utf-16"?>
-    <BugFilerMappings workitemtypetocreate="Bug">  
-          <ReproSteps>Microsoft.VSTS.TCM.ReproSteps</ReproSteps>  
-          <SystemInformation>Microsoft.VSTS.TCM.SystemInfo</SystemInformation>  
-          <BuildFoundIn>Microsoft.VSTS.Build.FoundIn</BuildFoundIn>  
-    </BugFilerMappings>  
+    <BugFilerMappings workitemtypetocreate="Bug">
+          <ReproSteps>Microsoft.VSTS.TCM.ReproSteps</ReproSteps>
+          <SystemInformation>Microsoft.VSTS.TCM.SystemInfo</SystemInformation>
+          <BuildFoundIn>Microsoft.VSTS.Build.FoundIn</BuildFoundIn>
+    </BugFilerMappings>
     ```
 
     > [!NOTE]
@@ -217,7 +217,7 @@ To support the automatic creation of a work item to track code defects or bugs t
 3.  In the Command Prompt window, type the following command, substituting your data for the arguments that are shown, and then choose the **ENTER** key.
 
     ```
-    tcm bugfieldmapping /import /mappingfile:"DirectoryPath\bugfieldmappings.xml" /collection:CollectionURL /teamproject:projectName  
+    tcm bugfieldmapping /import /mappingfile:"DirectoryPath\bugfieldmappings.xml" /collection:CollectionURL /teamproject:projectName
     ```
 
     For _DirectoryPath_, specify the folder where you saved the bugfieldmappings.xml file.
@@ -235,9 +235,9 @@ The following table describes the permissions that control access to test functi
 |<strong>Permission</strong>|<strong>Description</strong>|Scope|Readers|Contributors|Builders|Recommended for manual testers|Recommended for test leads|<br/>|--------------------|---------------------|-----------|-------------|------------------|--------------|------------------------------------|--------------------------------|<br/>|<strong>View project-level information</strong>|Can view membership of project-level groups and the permissions of those members.|Project-level|<img src="media/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="media/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="media/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="media/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="media/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<br/>|<strong>View test runs</strong>|Can view test plans in this node.|Project-level|<img src="media/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="media/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="media/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="media/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="media/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<br/>|<strong>Create test runs</strong>|Can add and remove test results and add or modify test runs for the project.|Project-level||<img src="media/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="media/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="media/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="media/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<br/>|<strong>Manage test configurations</strong>|Can create and delete test configurations for the project.|Project-level||<img src="media/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="media/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>||<img src="media/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<br/>|<strong>Manage test environments</strong>|Can create and delete test environments for the project.|Project-level||<img src="media/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="media/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>||<img src="media/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<br/>|<strong>Delete test runs</strong>|Can delete a scheduled test for the project.|Project-level||<img src="media/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="media/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>||<img src="media/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<br/>|<strong>View this node</strong>|Can view the security settings for an area node.|Area node|<img src="media/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="media/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="media/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>||<img src="media/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<br/>|<strong>Manage test plans</strong>|Can create and edit test plans that are assigned to an area node. If test plans have not been run, you can also delete them.|Area node||<img src="media/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="media/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="media/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="media/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<br/>|<strong>Manage test controllers</strong>|Can register and unregister test controllers for the project collection.|Project collection|||||<img src="media/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<br/>
 You can grant permissions by following the procedures that are indicated for the specific scope area:<br/>
 
-* You can set project-level permissions or area node permissions from the administration page of web portal. See <a href="../../organizations/security/permissions.md" data-raw-source="[Permissions reference](../../organizations/security/permissions.md)">Permissions reference</a> and <a href="../../organizations/settings/set-area-paths.md" data-raw-source="[Customize your area or iteration paths](../../organizations/settings/set-area-paths.md)">Customize your area or iteration paths</a>. update-a-team-project-manually-to-support-test-management.md
+- You can set project-level permissions or area node permissions from the administration page of web portal. See <a href="../../organizations/security/permissions.md" data-raw-source="[Permissions reference](../../organizations/security/permissions.md)">Permissions reference</a> and <a href="../../organizations/settings/set-area-paths.md" data-raw-source="[Customize your area or iteration paths](../../organizations/settings/set-area-paths.md)">Customize your area or iteration paths</a>. update-a-team-project-manually-to-support-test-management.md
 
-* You can set project collection permissions from Team Explorer by choosing <strong>Team, Team Project Collection Settings, Security</strong>, by opening and using the administration console for Team Foundation, or by using the <strong>TFSSecurity</strong> and <strong>tf</strong> command-line tools. For more information, see <a href="../../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Add an administrator](../../organizations/security/set-project-collection-level-permissions.md)">Add an administrator</a>.<br/>
+- You can set project collection permissions from Team Explorer by choosing <strong>Team, Team Project Collection Settings, Security</strong>, by opening and using the administration console for Team Foundation, or by using the <strong>TFSSecurity</strong> and <strong>tf</strong> command-line tools. For more information, see <a href="../../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Add an administrator](../../organizations/security/set-project-collection-level-permissions.md)">Add an administrator</a>.<br/>
 
 <a id="launch_mtm" />
 
@@ -254,13 +254,13 @@ After you have completed the upgrade tasks that are described earlier in this to
 
 When you upgrade from Visual Studio Team System 2008 Team Foundation Server to TFS 2012, you receive updates made to both TFS 2010 and TFS 2012. There were a number of architectural changes made with the release of TFS 2011. To learn more about the changes made by upgrading to the latest version of TFS from Visual Studio Team System 2008 Team Foundation Server, see the following resources:
 
-* [Team Foundation Server 2010 Key Concepts](https://devblogs.microsoft.com/bharry/team-foundation-server-2010-key-concepts/) (blog post)
-* [Update a customized process template to access new features](../update-customized-process-template.md)
-* [Locating reports after the upgrade to TFS 2010](../../report/admin/locate-reports-after-upgrade.md)
-* [Changes and Additions to the Schema for the Analysis Services Cube](https://msdn.microsoft.com/library/ff472574%28v=vs.100%29.aspx)
-* [Changes made to process templates](../../boards/work-items/guidance/changes-to-process-templates.md)
+- [Team Foundation Server 2010 Key Concepts](https://devblogs.microsoft.com/bharry/team-foundation-server-2010-key-concepts/) (blog post)
+- [Update a customized process template to access new features](../update-customized-process-template.md)
+- [Locating reports after the upgrade to TFS 2010](../../report/admin/locate-reports-after-upgrade.md)
+- [Changes and Additions to the Schema for the Analysis Services Cube](https://msdn.microsoft.com/library/ff472574%28v=vs.100%29.aspx)
+- [Changes made to process templates](../../boards/work-items/guidance/changes-to-process-templates.md)
 
 ## Related articles
 
-* [witAdmin: Customize and manage objects for tracking work](../witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
-* [Configure features after an upgrade](../configure-features-after-upgrade.md)
+- [witAdmin: Customize and manage objects for tracking work](../witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
+- [Configure features after an upgrade](../configure-features-after-upgrade.md)

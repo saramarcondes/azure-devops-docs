@@ -20,8 +20,8 @@ monikerRange: '>= tfs-2015'
 
 Azure Pipelines provides integration with Jenkins so that you can:
 
-* Continue to use your existing investments in Jenkins.
-* Create a single release pipeline using Azure Pipelines that deploys to a variety of Azure targets.
+- Continue to use your existing investments in Jenkins.
+- Create a single release pipeline using Azure Pipelines that deploys to a variety of Azure targets.
 
 In this tutorial, you use Jenkins for Continuous Integration (CI) and Azure Pipelines for Continuous Delivery (CD) to deploy a **Spring Boot app** to an **Azure Container Service (AKS) Kubernetes cluster**.
 
@@ -29,38 +29,38 @@ You will:
 
 > [!div class="checklist"]
 >
-> * Get the sample app
-> * Configure the sample app to build and push a Docker image to your ACR
-> * Configure the sample app to include a YAML file used for deploying to your AKS cluster
-> * Configure Jenkins credentials to connect to Azure Pipelines
-> * Configure Jenkins Maven global settings
-> * Create Jenkins Service Hooks in Azure Pipelines
-> * Configure a Jenkins CI build with Azure Pipelines integration
-> * Install the Release Management Utility tasks Azure Pipelines extension
-> * Create an Azure Pipelines release pipeline for CD to Azure
-> * Test the CI/CD pipeline with a pull request
-> * View the deployed sample app
-> * Delete your AKS cluster
+> - Get the sample app
+> - Configure the sample app to build and push a Docker image to your ACR
+> - Configure the sample app to include a YAML file used for deploying to your AKS cluster
+> - Configure Jenkins credentials to connect to Azure Pipelines
+> - Configure Jenkins Maven global settings
+> - Create Jenkins Service Hooks in Azure Pipelines
+> - Configure a Jenkins CI build with Azure Pipelines integration
+> - Install the Release Management Utility tasks Azure Pipelines extension
+> - Create an Azure Pipelines release pipeline for CD to Azure
+> - Test the CI/CD pipeline with a pull request
+> - View the deployed sample app
+> - Delete your AKS cluster
 
 ## Prerequisites
 
-* An Azure DevOps organization. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137). If your team already has one, then make sure you are an administrator of the project you want to use.
+- An Azure DevOps organization. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137). If your team already has one, then make sure you are an administrator of the project you want to use.
 
-* An Azure subscription. You can get one free from [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
+- An Azure subscription. You can get one free from [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 
-* The [Azure Command-Line Interface (CLI)](/cli/azure/index?view=azure-cli-latest).
+- The [Azure Command-Line Interface (CLI)](/cli/azure/index?view=azure-cli-latest).
 
-* You need a Spring Boot app. You can fork the sample app found [here](https://github.com/spring-guides/gs-spring-boot-docker.git).
+- You need a Spring Boot app. You can fork the sample app found [here](https://github.com/spring-guides/gs-spring-boot-docker.git).
 
-* You need an Azure Container Registry (ACR). You can follow steps to deploy an ACR and login to the registry using the Azure CLI via the steps [here](/azure/aks/tutorial-kubernetes-prepare-acr).
+- You need an Azure Container Registry (ACR). You can follow steps to deploy an ACR and login to the registry using the Azure CLI via the steps [here](/azure/aks/tutorial-kubernetes-prepare-acr).
 
-* An AKS cluster. You can follow the steps for creating this [here](/azure/aks/tutorial-kubernetes-deploy-cluster).
+- An AKS cluster. You can follow the steps for creating this [here](/azure/aks/tutorial-kubernetes-deploy-cluster).
 
-* Access to a Jenkins server with Maven and the VSTS plugin configured. If you have not yet created a Jenkins server,
+- Access to a Jenkins server with Maven and the VSTS plugin configured. If you have not yet created a Jenkins server,
   see [Create a Jenkins master on an Azure Virtual Machine](/azure/developer/jenkins/configure-on-linux-vm). Also, the following Jenkins plugins must be installed:
-  * **VS Team Services Continuous Deployment** plugin. You can find additional information about the **TFS plugin** [here](https://github.com/jenkinsci/tfs-plugin).
-  * **Config File Provider** plugin. You can find additional information about the **Config File plugin** [here](https://wiki.jenkins.io/display/JENKINS/Config+File+Provider+Plugin).
-  * **Maven Integration** plugin. You can find additional information about the **Maven Integration plugin** [here](https://plugins.jenkins.io/maven-plugin).
+  - **VS Team Services Continuous Deployment** plugin. You can find additional information about the **TFS plugin** [here](https://github.com/jenkinsci/tfs-plugin).
+  - **Config File Provider** plugin. You can find additional information about the **Config File plugin** [here](https://wiki.jenkins.io/display/JENKINS/Config+File+Provider+Plugin).
+  - **Maven Integration** plugin. You can find additional information about the **Maven Integration plugin** [here](https://plugins.jenkins.io/maven-plugin).
 
 ## Get the sample app
 
@@ -133,7 +133,7 @@ The YAML file contains deployment settings for pulling the docker image from the
 
 1.  Name the file **K8sDeploy.yaml** and select **Create**.
 
-1.  Copy and paste the following contents into the **K8sDeploy.yaml** file. Ensure the image prefix `<yourACRName>` is replaced with the name of your ACR appended with _.azurecr.io_. Also, notice that the image is tagged with ****Build.BuildId****. This is a token that will be automatically replaced during the Azure Pipelines release so that it's set to the current Jenkins build id. For example, if the current Jenkins build id is 5, the full name of an image that will be pulled during the Azure Pipelines release will look similar to: yourACRName.azurecr.io/gs-spring-boot-docker:5.
+1.  Copy and paste the following contents into the **K8sDeploy.yaml** file. Ensure the image prefix `<yourACRName>` is replaced with the name of your ACR appended with _.azurecr.io_. Also, notice that the image is tagged with \***\*Build.BuildId\*\***. This is a token that will be automatically replaced during the Azure Pipelines release so that it's set to the current Jenkins build id. For example, if the current Jenkins build id is 5, the full name of an image that will be pulled during the Azure Pipelines release will look similar to: yourACRName.azurecr.io/gs-spring-boot-docker:5.
 
     ```yaml
     apiVersion: extensions/v1beta1
@@ -322,7 +322,7 @@ You must also configure two Jenkins service hooks so you can execute CI builds v
 
 A release pipeline specifies the steps that Azure Pipelines executes to deploy the app. In this example, you deploy your app that originates from the Jenkins CI system. You deploy to a Docker image running Tomcat and a Spring Boot app to an AKS cluster.
 
-Before you create the release pipeline, you need to install an Azure Pipelines extension that will be used to replace the **K8sDeploy.yaml** file's ****Build.BuildId**** token with the current Jenkins build id.
+Before you create the release pipeline, you need to install an Azure Pipelines extension that will be used to replace the **K8sDeploy.yaml** file's \***\*Build.BuildId\*\*** token with the current Jenkins build id.
 
 1.  In your Azure DevOps organization, on the top right-hand side of the browser, Select the **Browse Marketplace** menu item. (The icon appears as a shopping bag.)
 
@@ -348,7 +348,7 @@ Add two tasks to the release pipeline. The first task updates the **K8sDeploy.ya
 
 1.  Search for the **Tokenize with XPath/Regular expressions** task which was added with the extension that was installed in the previous step. Select **Add** to add the task.
 
-1.  Set the **Source filename** to the **K8sDeploy.yaml** that is archived by the Jenkins job during the build. This task automatically replaces the ****Build.BuildId**** token with the current Jenkins build id.
+1.  Set the **Source filename** to the **K8sDeploy.yaml** that is archived by the Jenkins job during the build. This task automatically replaces the \***\*Build.BuildId\*\*** token with the current Jenkins build id.
 
 The second task deploys to the AKS cluster:
 
@@ -428,18 +428,18 @@ In this tutorial, you automated the deployment of an app to Azure using Jenkins 
 
 > [!div class="checklist"]
 >
-> * Get the sample app
-> * Configure the sample app to build and push a Docker image to your ACR
-> * Configure the sample app to include a YAML file used for deploying to your AKS cluster
-> * Configure Jenkins credentials to connect to Azure Pipelines
-> * Configure Jenkins Maven global settings
-> * Create Jenkins Service Hooks in Azure Pipelines
-> * Configure a Jenkins CI build with Azure Pipelines integration
-> * Install the Release Management Utility tasks Azure Pipelines extension
-> * Create an Azure Pipelines release pipeline for CD to Azure
-> * Test the CI/CD pipeline with a pull request
-> * View the deployed sample app
-> * Delete your AKS cluster
+> - Get the sample app
+> - Configure the sample app to build and push a Docker image to your ACR
+> - Configure the sample app to include a YAML file used for deploying to your AKS cluster
+> - Configure Jenkins credentials to connect to Azure Pipelines
+> - Configure Jenkins Maven global settings
+> - Create Jenkins Service Hooks in Azure Pipelines
+> - Configure a Jenkins CI build with Azure Pipelines integration
+> - Install the Release Management Utility tasks Azure Pipelines extension
+> - Create an Azure Pipelines release pipeline for CD to Azure
+> - Test the CI/CD pipeline with a pull request
+> - View the deployed sample app
+> - Delete your AKS cluster
 
 > [!div class="nextstepaction"][integrate your jenkins ci jobs with azure pipelines](integrate-jenkins-pipelines-cicd.md)
 > [Deploy to Kubernetes with Fabric8](/java/azure/spring-framework/deploy-spring-boot-java-app-using-fabric8-maven-plugin)

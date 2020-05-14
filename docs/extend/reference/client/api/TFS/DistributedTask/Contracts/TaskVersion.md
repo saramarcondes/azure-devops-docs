@@ -16,10 +16,10 @@ Module path: `TFS/DistributedTask/Contracts`
 
 ### Members
 
-* `isTest`: boolean.
+- `isTest`: boolean.
 
-* `major`: number.
+- `major`: number.
 
-* `minor`: number.
+- `minor`: number.
 
-* `patch`: number.
+- `patch`: number.

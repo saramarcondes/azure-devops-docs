@@ -44,10 +44,10 @@ Or, you can open one of the pages&mdash;**Boards**, **Backlogs**, **Queries**, o
 
 To add other work tracking artifacts, see one of the following articles:
 
-* To add a board, backlog, or sprint backlog, first [add a team](../../organizations/settings/add-teams.md) which will be associated with those artifacts
-* [Add a delivery plan](../../boards/plans/review-team-plans.md)
-* [Add a managed work item query](../../boards/queries/using-queries.md)
-* [Add work items](../../boards/work-items/view-add-work-items.md).
+- To add a board, backlog, or sprint backlog, first [add a team](../../organizations/settings/add-teams.md) which will be associated with those artifacts
+- [Add a delivery plan](../../boards/plans/review-team-plans.md)
+- [Add a managed work item query](../../boards/queries/using-queries.md)
+- [Add work items](../../boards/work-items/view-add-work-items.md).
 
 ## Add a pull request or Git repository
 
@@ -75,10 +75,10 @@ From one of the other **Code** pages, you can add files or folders, a new branch
 
 Note that you can only add one TFVC repository per project, but an unlimited number of Git repositories. To learn more about Git artifacts, see one of the following articles:
 
-* [Git repository](../../repos/git/creatingrepo.md)
-* [Git branch](../../repos/git/create-branch.md)
-* [Git pull request](../../repos/git/pullrequest.md)
-* [Add work items](../../boards/work-items/view-add-work-items.md)
+- [Git repository](../../repos/git/creatingrepo.md)
+- [Git branch](../../repos/git/create-branch.md)
+- [Git pull request](../../repos/git/pullrequest.md)
+- [Add work items](../../boards/work-items/view-add-work-items.md)
 
 ## Add build and release pipelines
 
@@ -100,10 +100,10 @@ From **Build and Release**, choose **Builds**, **Releases**, or other page to ad
 
 To learn more about adding other pipeline related artifacts, see the following articles:
 
-* [Deployment groups](../../pipelines/release/deployment-groups/index.md)
-* [Task groups](../../pipelines/library/task-groups.md)
-* [Variable groups](../../pipelines/library/variable-groups.md)
-* [Secure files](../../pipelines/library/secure-files.md)
+- [Deployment groups](../../pipelines/release/deployment-groups/index.md)
+- [Task groups](../../pipelines/library/task-groups.md)
+- [Variable groups](../../pipelines/library/variable-groups.md)
+- [Secure files](../../pipelines/library/secure-files.md)
 
 ## Add a team
 
@@ -147,20 +147,20 @@ If you don't have a wiki yet, you can add one. Once added, you can add and updat
 
 ::: moniker range=">= azure-devops-2019"
 
-* [Create a wiki](../wiki/wiki-create-repo.md)
-* [Add and edit wiki pages](../wiki/add-edit-wiki.md)
-* [Publish a Git repository to a wiki](../wiki/publish-repo-to-wiki.md)
+- [Create a wiki](../wiki/wiki-create-repo.md)
+- [Add and edit wiki pages](../wiki/add-edit-wiki.md)
+- [Publish a Git repository to a wiki](../wiki/publish-repo-to-wiki.md)
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 
-* [Create a wiki](../wiki/wiki-create-repo.md)
-* [Add and edit wiki pages](../wiki/add-edit-wiki.md)
+- [Create a wiki](../wiki/wiki-create-repo.md)
+- [Add and edit wiki pages](../wiki/add-edit-wiki.md)
 
 ::: moniker-end
 
 ## Related articles
 
-* [Azure Artifacts](../../artifacts/index.yml)
-* [Exploratory & Manual Testing](../../test/index.yml)
+- [Azure Artifacts](../../artifacts/index.yml)
+- [Exploratory & Manual Testing](../../test/index.yml)

@@ -28,9 +28,9 @@ Use PATs for non-Microsoft tools integrated with Azure DevOps but that don't sup
 
 ## Related articles
 
-* For more information about how security and identity are managed, see [About security and identity](../security/about-security-identity.md).
-* For more information about permissions and access levels for common user tasks, see [Default permissions and access for Azure DevOps](../security/permissions-access.md).
-* For more information about how administrators can revoke organization user PATs, see [Revoke other users' personal access tokens](admin-revoke-user-pats.md).
+- For more information about how security and identity are managed, see [About security and identity](../security/about-security-identity.md).
+- For more information about permissions and access levels for common user tasks, see [Default permissions and access for Azure DevOps](../security/permissions-access.md).
+- For more information about how administrators can revoke organization user PATs, see [Revoke other users' personal access tokens](admin-revoke-user-pats.md).
 
 ## Frequently asked questions (FAQs)
 
@@ -78,10 +78,10 @@ A: The user has all access.
 
 A: An administrator or a tool might have created a PAT on your behalf. See the following examples:
 
-* When you connect to an Azure DevOps Git repo through git.exe. it creates a token with a display name like "git: `https://MyOrganization.visualstudio.com/` on MyMachine."
-* When you or an admin sets up an Azure App Service web app deployment, it creates a token with a display name like "Service Hooks: : Azure App Service: : Deploy web app."
-* When you or an admin sets up web load testing, as part of a pipeline, it creates a token with a display name like "WebAppLoadTestCDIntToken".
-* When a Microsoft Teams Integration Messaging Extension is set up, it creates a token with a display name like "Microsoft Teams Integration".
+- When you connect to an Azure DevOps Git repo through git.exe. it creates a token with a display name like "git: `https://MyOrganization.visualstudio.com/` on MyMachine."
+- When you or an admin sets up an Azure App Service web app deployment, it creates a token with a display name like "Service Hooks: : Azure App Service: : Deploy web app."
+- When you or an admin sets up web load testing, as part of a pipeline, it creates a token with a display name like "WebAppLoadTestCDIntToken".
+- When a Microsoft Teams Integration Messaging Extension is set up, it creates a token with a display name like "Microsoft Teams Integration".
 
 If you still believe that a PAT exists in error, we suggest that you [revoke the PAT](admin-revoke-user-pats.md#revoke-pats). Next, change your password. As an Azure Active Directory user, check with your administrator to see if your organization was used from an unknown source or location.
 
@@ -139,7 +139,7 @@ public static async void GetBuilds()
 <br/>
 
 > [!TIP]
-> When you're using variables, add a "$" at the beginning of the string, like the following example.
+> When you're using variables, add a "\$" at the beginning of the string, like the following example.
 
 ```cs
 public static async void GetBuilds()

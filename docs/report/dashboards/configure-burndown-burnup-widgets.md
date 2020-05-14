@@ -23,11 +23,11 @@ Use this article to learn how to:
 
 > [!div class="checklist"]
 >
-> * Interpret a Burndown or Burnup widget
-> * Configure the Burndown or Burnup widgets
-> * Use burndown metrics
-> * Work with a burndown chart
-> * Configure a sprint burndown
+> - Interpret a Burndown or Burnup widget
+> - Configure the Burndown or Burnup widgets
+> - Use burndown metrics
+> - Work with a burndown chart
+> - Configure a sprint burndown
 
 Use the burndown chart to track completion of a predefined scope of work over a predefined period of time. For example, a sprint burndown tracks the sprint backlog completion by end of the sprint. A release burndown tracks the release backlog completion by the end of the release. You can define a bug burndown chart to track completion of a set of bugs by a certain date.
 
@@ -45,20 +45,20 @@ Based on historical burndown and scope increase, the Burndown chart shows a proj
 
 These charts provide the following useful metrics:
 
-* Percentage work complete
-* Average burndown rate
-* Total scope increase
-* Number of work items not estimated with Story Points, or whichever field you are burning down on
-* Projected burndown, based on historical burndown rate
-* Projected scope increase, based on historical scope increase rate
-* Projected completion date, based on historical burndown and scope increase rates.
+- Percentage work complete
+- Average burndown rate
+- Total scope increase
+- Number of work items not estimated with Story Points, or whichever field you are burning down on
+- Projected burndown, based on historical burndown rate
+- Projected scope increase, based on historical scope increase rate
+- Projected completion date, based on historical burndown and scope increase rates.
 
 ## Interpret a Burndown or Burnup chart
 
 Looking at the burndown chart, a team can not only get immediate insight as to their progress, but also learn about their rhythm and behavior. Most burndown lines aren't straight lines. The team never moves at exactly one fixed velocity. Scope increases occur over time. For example, if your projected completion date moves, you may want to ask one of these questions:
 
-* _Are we adding too much scope?_
-* _Is the average burnrate changing, and if so, why?_
+- _Are we adding too much scope?_
+- _Is the average burnrate changing, and if so, why?_
 
 Burndown charts also help teams understand risks to their release. If the projected end date exceeds the release target date, teams may need to reduce scope or lengthen the project. Burndown can also indicate that progress is greater than anticipated, providing the uncommon, but wonderful option of adding scope.
 
@@ -120,13 +120,13 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
      If you select the Stories backlog, you have an additional option: **Include bugs on the Stories backlog**. Place a checkmark in the box to include bugs along with user stories in your burndown.
 
         	This option is presented for the PBI Backlog for Scrum projects, and the Requirements backlog for CMMI projects.
-        	![Burndown Widget - Configuration - Select work item types](./media/burndown-widget/burndownup-config-select-backlog.png)  
+        	![Burndown Widget - Configuration - Select work item types](./media/burndown-widget/burndownup-config-select-backlog.png)
 
     > [!NOTE]  
     > If your project has been customized using a [Hosted XML process](../../organizations/settings/work/hosted-xml-process-model.md) and has created a customized bug work item category name, then the Burndown and Burnup widgets won't be able to query for work items within that category. To query for bugs, the customized bug work item type must belong to the default **Bug Category**, reference name `Microsoft.BugCategory`.
 
         	You can also select **Work item type** to burndown on a specific work item type. In the list, you will find all the project's work item types including [custom work item types](../../organizations/settings/work/customize-process-wit.md).
-        	![Burndown Widget - Configuration - Select work item types](./media/burndown-widget/burndownup-config-select-work-item-type.png)  
+        	![Burndown Widget - Configuration - Select work item types](./media/burndown-widget/burndownup-config-select-work-item-type.png)
 
     > [!NOTE]  
     > When setting filters in this step or the following step, it is important to understand how filters are applied to historical data. Read [Filters applied to historical data](../powerbi/analytics-historical-filtering.md) for more information.
@@ -165,14 +165,14 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 
         	### Plot based on an iteration schedule
 
-        	After selecting the **Start Date**, set **Plot burndown by** to **Iteration**. You can select iterations from your current project.  
+        	After selecting the **Start Date**, set **Plot burndown by** to **Iteration**. You can select iterations from your current project.
         	![Burndown Widget - Configuration - select time period iterations](./media/burndown-widget/burndownup-config-select-iterations.png)
 
         	Add multiple iterations by selecting **Add iterations**.
 
         	![Burndown Widget - Configuration - Select iterations](./media/burndown-widget/burndownup-config-select-iterations-search.png)
 
-        	The iteration selection box supports search. Type a partial name of an iteration and the closest match appears.  
+        	The iteration selection box supports search. Type a partial name of an iteration and the closest match appears.
         	![Burndown Widget - Configuration - Select iterations search](./media/burndown-widget/burndownup-config-select-iterations-search.png)
 
         	Iterations you can select are based on the **current project**, even if you selected teams from other projects. The burndown chart plots remaining work based on the end date of the iteration. It calculates remaining work across all teams and projects, based on that iteration end date. For example, if an iteration ends on 11/10/2017, the burndown chart calculates remaining work as of 11/10/2017, counting or summing all work items for every team or project. Therefore, a cross-project burndown works when plotting by iterations, as long as all the teams have selected the same iteration schedule.
@@ -186,13 +186,13 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 
         	### Plot based on a daily, weekly, or monthly interval
         	After selecting the **Start Date**, set **Plot burndown by** to **Date**. Specify the **End Date** for your burndown.
-        	You can set **Plot interval** to Days, Weeks, or Months.  
+        	You can set **Plot interval** to Days, Weeks, or Months.
         	![Burndown Widget - Configuration - select time period daily](./media/burndown-widget/burndownup-config-select-time-period-daily.png)
 
-        	If you select **Weeks**, then you'll be able to select the **Last day of week**. The remaining work for each interval will be calculated based on that day.  
+        	If you select **Weeks**, then you'll be able to select the **Last day of week**. The remaining work for each interval will be calculated based on that day.
         	![Burndown Widget - Configuration - select time period daily](./media/burndown-widget/burndownup-config-select-time-period-weekly.png)
 
-        	If you select **Months**, then burndown will be calculated based the last day of each month.  
+        	If you select **Months**, then burndown will be calculated based the last day of each month.
 
         	> [!NOTE]
         	> The **Average Burndown** assumes that every interval is the same length. It does not consider months that are different lengths. Additionally, it assumes that the interval between the **Start Date** and the first month is a full month, even if the length of time between **Start Date** and the first month's end date does not match your typical length of a month. For example, a **Start Date** of 11/15/2017, would plot the first month as 10/31/2017, but would be counted as a full month for your **Average Burndown**. For best results, enter a **Start Date** that is the same as the first month's start date. **This is also true when plotting by weekly intervals.**
@@ -201,10 +201,10 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 
 Check the boxes of the following options that you want to add to your chart.
 
-* **Show burndown**: Displays both the historical and projected future burndown
-* **Show total scope**: Displays both the historical and projected scope increase
-* **Show completed work**: In addition to remaining work, it also displays completed work as stack bar
-* **Plot remaining using work item type color**: Displays remaining work based on the work item type color, rather than the default blue color. If multiple work items are included, then it stacks colors by work item type.
+- **Show burndown**: Displays both the historical and projected future burndown
+- **Show total scope**: Displays both the historical and projected scope increase
+- **Show completed work**: In addition to remaining work, it also displays completed work as stack bar
+- **Plot remaining using work item type color**: Displays remaining work based on the work item type color, rather than the default blue color. If multiple work items are included, then it stacks colors by work item type.
 
 ## Example: Configuring the Burndown widget to act as a Sprint Burndown
 
@@ -249,7 +249,7 @@ Configuring the Burnup widget is exactly like configuring the Burndown widget, e
 
 ## Related articles
 
-* [Configure and monitor sprint burndown](configure-sprint-burndown.md)
-* [Define iteration paths or sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
-* [Add a custom field to a work item type](../../organizations/settings/work/customize-process-field.md)
-* [Applying filters to historical data](../powerbi/analytics-historical-filtering.md)
+- [Configure and monitor sprint burndown](configure-sprint-burndown.md)
+- [Define iteration paths or sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
+- [Add a custom field to a work item type](../../organizations/settings/work/customize-process-field.md)
+- [Applying filters to historical data](../powerbi/analytics-historical-filtering.md)

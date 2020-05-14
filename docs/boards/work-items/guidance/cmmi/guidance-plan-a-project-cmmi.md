@@ -59,11 +59,11 @@ Representatives of the business stakeholders and the development team should wor
 
 The assignment is completed by using the following pieces of information:
 
-* The priority of the requirement. See the notes in the following subsection.
+- The priority of the requirement. See the notes in the following subsection.
 
-* The estimated cost. Given the number of team members and the length of the iteration, each iteration has only a fixed number of hours that are available for development. Furthermore, a significant number of those hours will be used for iteration planning and other tasks that do not directly involve development.
+- The estimated cost. Given the number of team members and the length of the iteration, each iteration has only a fixed number of hours that are available for development. Furthermore, a significant number of those hours will be used for iteration planning and other tasks that do not directly involve development.
 
-* Dependencies among the product requirements. In an incremental series of requirements, the simplest requirements must be tackled before enhancements in the same area.
+- Dependencies among the product requirements. In an incremental series of requirements, the simplest requirements must be tackled before enhancements in the same area.
 
   You can define the requirement in a work item by specifying a variety of information, as the following illustrations show:
 
@@ -117,5 +117,5 @@ After the first few iterations, members of the development team will be more con
 
 ## Related articles
 
-* [Background to CMMI](guidance-background-to-cmmi.md)
-* [CMMI process](../cmmi-process.md)
+- [Background to CMMI](guidance-background-to-cmmi.md)
+- [CMMI process](../cmmi-process.md)

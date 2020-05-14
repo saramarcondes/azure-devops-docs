@@ -19,11 +19,11 @@ To visit the extension hub, browse to your [publisher page](https://aka.ms/vsmar
 
 You can view acquisition related data in this tab for the selected period.
 
-* Aggregated acquisition in the selected period with respect to overall acquisition
-* Aggregated acquisition split by extension downloads, Azure DevOps Services and TFS connected install for free extension
-* Aggregated acquisition split by trials, Azure DevOps Services and TFS connected buy for paid extension
-* Daily trend of extension page views with acquisition for Azure DevOps Services and TFS connected server
-* Conversion percentage from page views to acquisition
+- Aggregated acquisition in the selected period with respect to overall acquisition
+- Aggregated acquisition split by extension downloads, Azure DevOps Services and TFS connected install for free extension
+- Aggregated acquisition split by trials, Azure DevOps Services and TFS connected buy for paid extension
+- Daily trend of extension page views with acquisition for Azure DevOps Services and TFS connected server
+- Conversion percentage from page views to acquisition
 
 For paid extension, all transactional details for buy and trials is available with date, organization name, trial end date, and quantity. You can use the **Contact** action to reach out to your users for transactional communication. See the [Contact](#contact) section provided later in this article for more details.
 
@@ -66,6 +66,6 @@ Refer the [Marketplace Publisher Agreement](https://aka.ms/vsmarketplace-agreeme
 
 ## Terminology
 
-* **Page views** is total number of extension detail page views. Repeated views are counted.
-* **Azure DevOps Services install** is the total number of organizations the extension is installed. Repeated installs on the same organization are counted.
-* **TFS install** is the total number of TFS connected accounts the extension is installed. Repeated installs on the same organization are counted. TFS disconnected server data isn't available.
+- **Page views** is total number of extension detail page views. Repeated views are counted.
+- **Azure DevOps Services install** is the total number of organizations the extension is installed. Repeated installs on the same organization are counted.
+- **TFS install** is the total number of TFS connected accounts the extension is installed. Repeated installs on the same organization are counted. TFS disconnected server data isn't available.

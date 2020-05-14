@@ -19,6 +19,6 @@ Item representing a contribution path. Can be of type default, resource or bundl
 
 ### Members
 
-* `pathType`: [ContributionPathType](../../../VSS/References/SDK_Interfaces/ContributionPathType.md). Type if this contribution path
+- `pathType`: [ContributionPathType](../../../VSS/References/SDK_Interfaces/ContributionPathType.md). Type if this contribution path
 
-* `value`: string. Replace value for this contribution path
+- `value`: string. Replace value for this contribution path

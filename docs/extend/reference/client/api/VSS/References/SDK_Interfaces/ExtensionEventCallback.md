@@ -19,4 +19,4 @@ Base class for an event callback for an extension
 
 ### Members
 
-* `uri`: string. The uri of the endpoint that is hit when an event occurs
+- `uri`: string. The uri of the endpoint that is hit when an event occurs

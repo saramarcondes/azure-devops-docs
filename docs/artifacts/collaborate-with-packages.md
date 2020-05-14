@@ -16,9 +16,9 @@ _If you're familiar with componentization and composition, you can learn more ab
 
 Your product is successful, your organization is growing, and it's time to scale up your codebase to match. As you scale out past 2-3 teams working in a single codebase on a single product, you may find yourself asking questions like:
 
-* How do my teams effectively share reusable components?
-* How do I enable my feature teams to iterate rapidly without stepping on other teams' work?
-* How do I give my teams autonomy to iterate at the pace that's right for them?
+- How do my teams effectively share reusable components?
+- How do I enable my feature teams to iterate rapidly without stepping on other teams' work?
+- How do I give my teams autonomy to iterate at the pace that's right for them?
 
 These questions aren't just applicable to newly growing teams.
 If you're an established team with a legacy codebase, you may be asking these same questions as you're being asked to deliver more value, ever faster. Regardless of your situation, componentization can help you build a codebase that scales to the size of your team and the speed of today's development.
@@ -45,10 +45,10 @@ At this point, when solution A depends on solution B it must refer to the built 
 
 Accordingly, these binaries now need to be built and made available to A before A can build successfully. There are a few ways to do that:
 
-* You can check them into source control.
+- You can check them into source control.
   Depending on your source control system, binaries can quickly balloon the size of your repo, slowing check-out times and general repo performance.
   If you start to work in branches, multiple teams can end up introducing the same binary at different versions, creating nasty merge conflicts at the root of the tree.
-* You can put them on a file share somewhere.
+- You can put them on a file share somewhere.
   File shares have a few limitations: there's no index for quick lookups, and there's no protection against overwriting a version later.
 
 ## Package componentization
@@ -57,14 +57,14 @@ Packages address many of the challenges of referencing binaries. Instead of chec
 
 Package composition isn't without its challenges though. Thus far, we've looked at a simple example. However, scaling package composition up to the size of a large codebase (something like Windows or Bing) can cause a series of challenges:
 
-* Understanding the impact of breaking changes in a component low in the dependency graph becomes very challenging
-* _Diamond dependencies_ can become a significant roadblock to agility.
+- Understanding the impact of breaking changes in a component low in the dependency graph becomes very challenging
+- _Diamond dependencies_ can become a significant roadblock to agility.
   In a diamond dependency, components B and C both depend on a shared component A, and D depends on B and C.
   A releases a new version with breaking changes.
   If B updates, but C does not, D cannot take B's updates without introducing a dependency conflict.
   In this simple example, a conversation with C may be all that's needed to resolve the conflict.
   However, in a complex graph, diamonds can quickly become unresolvable.
-* If changes must be made across two components that are composed with packages, the dev inner loop is much slower. When A is updated, it must be re-built, re-packaged, and re-published.
+- If changes must be made across two components that are composed with packages, the dev inner loop is much slower. When A is updated, it must be re-built, re-packaged, and re-published.
   B must then update to the newly-published version to validate A's change.
   Source composition, which can build A and B simultaneously, will always provide a faster inner loop for developers.
 
@@ -75,9 +75,9 @@ To help determine what's right for your codebase, first draw your product's depe
 For example, you may have a set of components that make up your framework, including common controls, etc., and a set of components that make up your user-facing service.
 Then, for each set of related components, ask these questions:
 
-* Will my teams often make spanning check-ins across the sets I've created?
-* Is a single team responsible for the entire set?
-* For a single set, is there a shared release cadence?
+- Will my teams often make spanning check-ins across the sets I've created?
+- Is a single team responsible for the entire set?
+- For a single set, is there a shared release cadence?
 
 At a high level, we've found the most success when source composition is used for related projects that are worked on by a single team (or a group of related teams) and binary composition is used for OSS, externals (components from faraway or isolated teams), and isolated shared components.
 

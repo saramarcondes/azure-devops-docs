@@ -29,8 +29,8 @@ In addition to Linux, macOS is partially supported (see [Q&A](#is-this-task-supp
 
 ## Prerequisites
 
-* The task supports use of an SSH key pair to connect to the remote machine(s).
-* The public key must be pre-installed or copied to the remote machine(s).
+- The task supports use of an SSH key pair to connect to the remote machine(s).
+- The public key must be pre-installed or copied to the remote machine(s).
 
 ::: moniker range="> tfs-2018"
 
@@ -55,11 +55,11 @@ In addition to Linux, macOS is partially supported (see [Q&A](#is-this-task-supp
 
 ## See also
 
-* [Install SSH Key task](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/install-ssh-key?view=azure-devops)
+- [Install SSH Key task](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/install-ssh-key?view=azure-devops)
 
-* [SSH task](ssh.md)
+- [SSH task](ssh.md)
 
-* Blog post [SSH build task](https://devblogs.microsoft.com/devops/ssh-build-task/)
+- Blog post [SSH build task](https://devblogs.microsoft.com/devops/ssh-build-task/)
 
 ## Open source
 
@@ -77,8 +77,8 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 This task is intended for target machines running Linux.
 
-* For copying files to a macOS machine, this task may be used, but authenticating with a password is not supported.
-* For copying files to a Windows machine, consider using [Windows Machine File Copy](windows-machine-file-copy.md).
+- For copying files to a macOS machine, this task may be used, but authenticating with a password is not supported.
+- For copying files to a Windows machine, consider using [Windows Machine File Copy](windows-machine-file-copy.md).
 
 ::: moniker range="<= tfs-2018"
 

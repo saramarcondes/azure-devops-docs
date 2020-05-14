@@ -20,9 +20,9 @@ You can create [team rooms](./rooms.md) where [users](./users.md) can post [mess
 
 ![Team room resources](./media/team-room-resources.png)
 
-* [Messages](./messages.md)
-* [Rooms](./rooms.md)
-* [Users](./users.md)
+- [Messages](./messages.md)
+- [Rooms](./rooms.md)
+- [Users](./users.md)
 
 ## Common tasks
 

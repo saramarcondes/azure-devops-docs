@@ -33,8 +33,8 @@ Larger enterprises may want to consider using Azure Active Directory to manage p
 
 The first task is to ensure that all members of your organization or group are added to your organization and project. Larger organizations may want to consider using Azure Active Directory to keep the maintenance of managing permissions and user access. Typically, you should install Azure Active Directory prior to installing TFS. To learn more, see these articles:
 
-* [Install Azure Active Directory Domain Services (Level 100)](/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)
-* [Step-By-Step: Setting up Azure Active Directory in Windows Server 2016](https://blogs.technet.microsoft.com/canitpro/2017/02/22/step-by-step-setting-up-active-directory-in-windows-server-2016/)
+- [Install Azure Active Directory Domain Services (Level 100)](/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)
+- [Step-By-Step: Setting up Azure Active Directory in Windows Server 2016](https://blogs.technet.microsoft.com/canitpro/2017/02/22/step-by-step-setting-up-active-directory-in-windows-server-2016/)
 
 ::: moniker-end
 
@@ -46,15 +46,15 @@ Access to features and functions is controlled by access-level assignments, perm
 
 If you decide that you want to delegate specific tasks to others, then you'll want to add them to a built-in or custom security group. Or, add them to a specific role. To learn more, see the following articles:
 
-* [Grant or restrict access to select features and functions](../organizations/security/restrict-access.md)
-* [Set permissions at the project level or project collection level](../organizations/security/set-project-collection-level-permissions.md)
+- [Grant or restrict access to select features and functions](../organizations/security/restrict-access.md)
+- [Set permissions at the project level or project collection level](../organizations/security/set-project-collection-level-permissions.md)
 
 To learn more about permissions and security, review the following articles:
 
-* [About security and identity](../organizations/security/about-security-identity.md)
-* [About permissions and groups](../organizations/security/about-permissions.md)
-* [About security roles](../organizations/security/about-security-roles.md)
-* [About access levels](../organizations/security/access-levels.md)
+- [About security and identity](../organizations/security/about-security-identity.md)
+- [About permissions and groups](../organizations/security/about-permissions.md)
+- [About security roles](../organizations/security/about-security-roles.md)
+- [About access levels](../organizations/security/access-levels.md)
 
 ::: moniker range=">= tfs-2015"
 
@@ -95,19 +95,19 @@ Set policies to support collaboration across your teams, secure your projects, a
 
 ::: moniker range="azure-devops"
 
-* [Change application access policies for your organization](../organizations/accounts/change-application-access-policies.md)
-* [Manage branch policies](../repos/git/branch-policies.md)
-* [Add Team Foundation Version Control (TFVC) check-in policies](../repos/tfvc/add-check-policies.md)
-* [Set build and release pipeline retention policies](../pipelines/policies/retention.md)
-* [Set test retention policies](../test/how-long-to-keep-test-results.md)
+- [Change application access policies for your organization](../organizations/accounts/change-application-access-policies.md)
+- [Manage branch policies](../repos/git/branch-policies.md)
+- [Add Team Foundation Version Control (TFVC) check-in policies](../repos/tfvc/add-check-policies.md)
+- [Set build and release pipeline retention policies](../pipelines/policies/retention.md)
+- [Set test retention policies](../test/how-long-to-keep-test-results.md)
   ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
-* [Manage branch policies](../repos/git/branch-policies.md)
-* [Add TFVC check-in policies](../repos/tfvc/add-check-policies.md)
-* [Set build and release pipeline retention policies](../pipelines/policies/retention.md)
-* [Set test retention policies](../test/how-long-to-keep-test-results.md)
+- [Manage branch policies](../repos/git/branch-policies.md)
+- [Add TFVC check-in policies](../repos/tfvc/add-check-policies.md)
+- [Set build and release pipeline retention policies](../pipelines/policies/retention.md)
+- [Set test retention policies](../test/how-long-to-keep-test-results.md)
   ::: moniker-end
 
 ## Define area and iteration paths for work tracking
@@ -127,9 +127,9 @@ All work-tracking tools are available immediately after you create a project. Of
 
 To learn more, see the following articles:
 
-* [About process customization and inherited processes](../organizations/settings/work/inheritance-process-model.md)
-* [Customize a project](../organizations/settings/work/customize-process.md)
-* [Add and manage processes](../organizations/settings/work/manage-process.md)
+- [About process customization and inherited processes](../organizations/settings/work/inheritance-process-model.md)
+- [Customize a project](../organizations/settings/work/customize-process.md)
+- [Add and manage processes](../organizations/settings/work/manage-process.md)
 
 ::: moniker-end
 
@@ -145,10 +145,10 @@ To learn more, see [On-premises XML process model](../reference/on-premises-xml-
 
 A number of notifications are predefined for each project you add. Notifications are based on subscription rules. Subscriptions arise from the following areas:
 
-* [Out-of-the-box or default subscriptions](../notifications/oob-built-in-notifications.md).
-* [Team notifications](../notifications/howto-manage-team-notifications.md), managed by a team administrator.
-* Project notifications, managed by a member of the Project Administrators group.
-* [Organization and collection level notifications](../notifications/howto-manage-organization-notifications.md), managed by a member of the Project Collection Administrators group.
+- [Out-of-the-box or default subscriptions](../notifications/oob-built-in-notifications.md).
+- [Team notifications](../notifications/howto-manage-team-notifications.md), managed by a team administrator.
+- Project notifications, managed by a member of the Project Administrators group.
+- [Organization and collection level notifications](../notifications/howto-manage-organization-notifications.md), managed by a member of the Project Collection Administrators group.
 
 If users believe they're getting too many notifications, direct them to [opt out of a subscription](../notifications/howto-manage-personal-notifications.md).
 
@@ -171,9 +171,9 @@ We recommend that you add teams as your organization grows. Each team gets [acce
 
 To learn more, see the following articles:
 
-* [About projects and scaling your organization](../organizations/projects/about-projects.md)
-* [Add a team, move from one default team to several teams](../organizations/settings/add-teams.md)
-* [Add a team administrator](../organizations/settings/add-team-administrator.md)
+- [About projects and scaling your organization](../organizations/projects/about-projects.md)
+- [Add a team, move from one default team to several teams](../organizations/settings/add-teams.md)
+- [Add a team administrator](../organizations/settings/add-team-administrator.md)
 
 ::: moniker range=">= tfs-2015"
 
@@ -181,10 +181,10 @@ To learn more, see the following articles:
 
 An extension is an installable unit that adds new capabilities to your projects. Azure DevOps extensions support the following functions:
 
-* Planning and tracking of work items, sprints, scrums, etc.
-* Build and release flows.
-* Code testing and tracking.
-* Collaboration among team members.
+- Planning and tracking of work items, sprints, scrums, etc.
+- Build and release flows.
+- Code testing and tracking.
+- Collaboration among team members.
 
 ::: moniker-end
 
@@ -216,19 +216,19 @@ All organizations can add up to five users with Basic access and unlimited users
 
 ::: moniker range="azure-devops"
 
-* [Project and team quick reference](../organizations/projects/project-team-quick-reference.md)
-* [Security & identity](../organizations/security/index.md)
-* [Organization management](../organizations/accounts/organization-management.md)
-* [About user, team, project, and organization-level settings](../organizations/settings/about-settings.md)
+- [Project and team quick reference](../organizations/projects/project-team-quick-reference.md)
+- [Security & identity](../organizations/security/index.md)
+- [Organization management](../organizations/accounts/organization-management.md)
+- [About user, team, project, and organization-level settings](../organizations/settings/about-settings.md)
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-* [Project and team quick reference](../organizations/projects/project-team-quick-reference.md)
-* [Security & identity](../organizations/security/index.md)
-* [Organization management](../organizations/accounts/organization-management.md)
-* [About user, team, project, and organization-level settings](../organizations/settings/about-settings.md)
-* [TFS administration](/azure/devops/server/index)
+- [Project and team quick reference](../organizations/projects/project-team-quick-reference.md)
+- [Security & identity](../organizations/security/index.md)
+- [Organization management](../organizations/accounts/organization-management.md)
+- [About user, team, project, and organization-level settings](../organizations/settings/about-settings.md)
+- [TFS administration](/azure/devops/server/index)
 
 ::: moniker-end

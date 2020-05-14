@@ -35,21 +35,21 @@ You can filter the report by selecting the **Release Path** or **Area**.
 
 For the burndown graph to be useful and accurate, your team must perform the following activities for tracking work items:
 
-* Specify the number of releases you want to track and [define the start and end dates for each sprint](https://msdn.microsoft.com/f292f3bc-b472-4399-a7e4-49151d4c0484).
+- Specify the number of releases you want to track and [define the start and end dates for each sprint](https://msdn.microsoft.com/f292f3bc-b472-4399-a7e4-49151d4c0484).
 
-* Define product backlog items and bugs, and assign each to a sprint or iteration. (**Iteration** field). Make sure that all backlog items are assigned to your team's area path or subarea.
+- Define product backlog items and bugs, and assign each to a sprint or iteration. (**Iteration** field). Make sure that all backlog items are assigned to your team's area path or subarea.
 
-* At the start of a release, estimate the **Effort** for each product backlog item and each bug that your team will work on.
+- At the start of a release, estimate the **Effort** for each product backlog item and each bug that your team will work on.
 
-* During the sprint or at the close of each sprint, for each product backlog item and each bug that the team completed, change the **State** to **Done**.
+- During the sprint or at the close of each sprint, for each product backlog item and each bug that the team completed, change the **State** to **Done**.
 
 ## <a name="Interpreting"></a> Interpreting the report
 
 You can review the report to determine the progress that your team has made in a release and to answer the following questions:
 
-* How much work remains in the release?
+- How much work remains in the release?
 
-* How quickly is your team working through the product backlog?
+- How quickly is your team working through the product backlog?
 
 ## Related notes
 

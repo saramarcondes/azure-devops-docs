@@ -24,8 +24,8 @@ For more information about using Azure AD with Azure DevOps, see the [Conceptual
 
 Before you switch your organization directory, make sure the following statements are true:
 
-* You're in the Project Collection Administrator group (in Organization settings) for the organization
-* You're a member or a guest in the source Azure AD and in the destination Azure AD
+- You're in the Project Collection Administrator group (in Organization settings) for the organization
+- You're a member or a guest in the source Azure AD and in the destination Azure AD
 
 ## Change the Azure AD connection
 
@@ -62,8 +62,8 @@ Before you switch your organization directory, make sure the following statement
 
 When you inform your users of the completed change, include the following tasks for each user in the organization to complete:
 
-* Clear the cache for the [Git Credential Manager](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/blob/master/Docs/Faq.md#q-why-is-gitexe-failing-to-authenticate-after-linkingunlinking-your-visual-studio-team-services-organization-from-azure-active-directory) if you use Visual Studio or the Git command-line tool. Delete the _%LocalAppData%\GitCredentialManager\tenant.cache_ file on each client machine.
-* [Regenerate new personal access tokens](use-personal-access-tokens-to-authenticate.md). Complete the following steps:
+- Clear the cache for the [Git Credential Manager](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/blob/master/Docs/Faq.md#q-why-is-gitexe-failing-to-authenticate-after-linkingunlinking-your-visual-studio-team-services-organization-from-azure-active-directory) if you use Visual Studio or the Git command-line tool. Delete the _%LocalAppData%\GitCredentialManager\tenant.cache_ file on each client machine.
+- [Regenerate new personal access tokens](use-personal-access-tokens-to-authenticate.md). Complete the following steps:
 
   a. In Azure DevOps, select your profile icon, and then select **Security** from the resulting dropdown menu.
 
@@ -79,7 +79,7 @@ When you inform your users of the completed change, include the following tasks 
 
   d. When the token is created, copy it, as it can't be viewed again.
 
-* Request that SSH keys be manually cleared by [Support](https://azure.microsoft.com/support/devops/), and then recreate SSH keys. Complete the following steps.
+- Request that SSH keys be manually cleared by [Support](https://azure.microsoft.com/support/devops/), and then recreate SSH keys. Complete the following steps.
 
   a. In Azure DevOps, select your profile icon, and then select **Security** from the resulting dropdown menu.
 
@@ -95,13 +95,13 @@ When you inform your users of the completed change, include the following tasks 
 
   d. When the token is created, copy it, as it can't be viewed again.
 
-* [Rename your Microsoft account](https://support.microsoft.com/help/11545/microsoft-account-rename-your-personal-account) to a different email that doesn't conflict with your Azure AD identity. Doing so ensures that you won't be prompted to choose between accounts.
-* Adjust your Visual Studio subscription if the UPN used inside your Azure DevOps Services organization has changed. You can have it reassigned to your new UPN, or set that UPN as the alternate account inside the subscription. For more information, see [how to add an alternate account to your subscription](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity#add-an-alternate-account-to-your-subscription).
+- [Rename your Microsoft account](https://support.microsoft.com/help/11545/microsoft-account-rename-your-personal-account) to a different email that doesn't conflict with your Azure AD identity. Doing so ensures that you won't be prompted to choose between accounts.
+- Adjust your Visual Studio subscription if the UPN used inside your Azure DevOps Services organization has changed. You can have it reassigned to your new UPN, or set that UPN as the alternate account inside the subscription. For more information, see [how to add an alternate account to your subscription](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity#add-an-alternate-account-to-your-subscription).
 
 ## Related articles
 
-* [Get a list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md)
-* [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
-* [Disconnect your organization from Azure AD](disconnect-organization-from-azure-ad.md)
-* [Connect your organization to Azure AD](connect-organization-to-azure-ad.md)
-* [Frequently asked questions (FAQs) about connecting, disconnecting, or changing your Azure AD](faq-azure-access.md#connect-to-disconnect-from-or-change-azure-ad-connection)
+- [Get a list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md)
+- [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
+- [Disconnect your organization from Azure AD](disconnect-organization-from-azure-ad.md)
+- [Connect your organization to Azure AD](connect-organization-to-azure-ad.md)
+- [Frequently asked questions (FAQs) about connecting, disconnecting, or changing your Azure AD](faq-azure-access.md#connect-to-disconnect-from-or-change-azure-ad-connection)

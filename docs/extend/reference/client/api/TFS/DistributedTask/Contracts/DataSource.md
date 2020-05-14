@@ -16,8 +16,8 @@ Module path: `TFS/DistributedTask/Contracts`
 
 ### Members
 
-* `endpointUrl`: string.
+- `endpointUrl`: string.
 
-* `name`: string.
+- `name`: string.
 
-* `resultSelector`: string.
+- `resultSelector`: string.
